@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: oklch(98% 0.004 240);
+  --color-surface: oklch(100% 0 0);
+  --color-fg: oklch(20% 0.02 240);
+  --color-muted: oklch(50% 0.018 240);
+  --color-border: oklch(90% 0.006 240);
+  --color-accent: oklch(56% 0.18 255);
+  --color-accent-light: oklch(56% 0.18 255 / 0.08);
+  --color-accent-mid: oklch(56% 0.18 255 / 0.15);
+
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+  --ease-ios: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-ios-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(180deg, #5046E5 0%, var(--color-accent) 100%);
+    box-shadow: 0 4px 14px 0 oklch(56% 0.18 255 / 0.39);
+    border: none;
+    cursor: pointer;
+    letter-spacing: -0.01em;
+    transition: all 300ms var(--ease-ios);
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(180deg, #6366F1 0%, oklch(52% 0.18 255) 100%);
+    box-shadow: 0 6px 20px oklch(56% 0.18 255 / 0.4);
+    transform: scale(0.98);
+  }
+
+  .btn-primary:active {
+    background: oklch(48% 0.18 255);
+    transform: scale(0.95);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: var(--color-muted);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    letter-spacing: -0.01em;
+    transition: all 300ms var(--ease-ios);
+  }
+
+  .btn-secondary:hover {
+    color: var(--color-fg);
+    border-color: oklch(80% 0.006 240);
+    background: rgba(255,255,255,0.8);
+  }
+
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--color-accent-light);
+    border: 1px solid oklch(56% 0.18 255 / 0.2);
+    color: var(--color-accent);
+    letter-spacing: -0.01em;
+  }
+
+  .ktu-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    transition: all 300ms var(--ease-ios);
+  }
+
+  .ktu-card:hover {
+    border-color: oklch(85% 0.005 240);
+    box-shadow: 0 4px 12px oklch(0% 0 0 / 0.04);
+  }
+
+  .ktu-card-elevated {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    box-shadow: 0 4px 20px oklch(0% 0 0 / 0.04);
+    transition: all 300ms var(--ease-ios);
+  }
+
+  .ktu-card-elevated:hover {
+    border-color: oklch(85% 0.005 240);
+    box-shadow: 0 8px 30px oklch(0% 0 0 / 0.06);
+    transform: translateY(-2px);
+  }
+
+  .dot-grid {
+    background-image: radial-gradient(circle, oklch(56% 0.18 255 / 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+/* Animations */
+@keyframes shimmer {
+  0% { transform: translateX(-100%) rotate(35deg); }
+  100% { transform: translateX(100%) rotate(35deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px oklch(56% 0.18 255 / 0.1); }
+  50% { box-shadow: 0 0 40px oklch(56% 0.18 255 / 0.2); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s var(--ease-ios) both;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s var(--ease-ios) both;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.7s var(--ease-ios) both;
+}
+
+.bento-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+  transition: all 400ms var(--ease-ios);
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  border-color: oklch(85% 0.005 240);
+  box-shadow: 0 12px 40px oklch(0% 0 0 / 0.06);
+  transform: translateY(-3px);
+}
+
+.bento-card-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 28px;
+}
+
+@media (min-width: 768px) {
+  .bento-card-inner {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-card-inner {
+    padding: 36px;
+  }
+}

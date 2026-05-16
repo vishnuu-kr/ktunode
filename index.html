@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTU Hub - Your Study Partner</title>
+    <link rel="stylesheet" href="src/app/globals.css">
+    <style>
+        /* Adapted FolioSync Design System for a Human/Approachable Light Theme */
+        :root {
+            --bg: oklch(98% 0.004 240);       /* Light background, subtly cool */
+            --surface: oklch(100% 0 0);      /* Pure white for card surfaces */
+            --fg: oklch(20% 0.02 240);       /* Dark foreground for primary text */
+            --muted: oklch(50% 0.018 240);   /* Muted grey for secondary text */
+            --border: oklch(90% 0.006 240);   /* Light border color */
+            --accent: oklch(56% 0.18 255);   /* Primary accent blue */
+
+            --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            --font-body: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+            /* FolioSync Spacing & Layout */
+            --max-w-7xl: 1280px;
+            --max-w-5xl: 1024px;
+            --max-w-4xl: 896px;
+            --max-w-3xl: 768px;
+            --px-6: 24px; /* horizontal padding */
+            --py-24: 96px; /* section vertical padding standard */
+            --py-32: 128px; /* section vertical padding hero & cta */
+            --mb-20: 80px; /* section header to content gap standard */
+            --mb-16: 64px; /* section header to content gap showcase */
+            --gap-6: 24px; /* card grid gap standard */
+            --gap-4: 16px; /* card grid gap integrations */
+
+            /* FolioSync Radii */
+            --rounded-full: 9999px;
+            --rounded-32px: 32px;
+            --rounded-ios-lg: 28px;
+            --rounded-ios: 24px;
+            --rounded-20px: 20px;
+            --rounded-18px: 18px;
+            --rounded-2xl: 16px;
+            --rounded-xl: 12px;
+            --rounded-lg: 8px;
+            --rounded-10px: 10px;
+
+            /* FolioSync Typography Scale (simplified for prototype) */
+            --text-4xl: 36px;
+            --text-5xl: 48px;
+            --text-3xl: 30px;
+            --text-64px: 64px;
+            --text-88px: 88px;
+            --text-lg: 18px;
+            --text-17px: 17px;
+            --text-19px: 19px;
+            --text-15px: 15px;
+            --text-14px: 14px;
+            --text-13px: 13px;
+            --text-12px: 12px;
+            --text-32px: 32px;
+            --text-48px: 48px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--fg);
+            background-color: var(--bg);
+            margin: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            color: var(--fg);
+            font-weight: 600; /* semibold from FolioSync */
+            letter-spacing: -0.04em; /* from FolioSync Headings */
+            line-height: 1.1;
+        }
+
+        .container {
+            max-width: var(--max-w-7xl);
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: var(--px-6);
+            padding-right: var(--px-6);
+        }
+
+        .section-padding {
+            padding-top: var(--py-24);
+            padding-bottom: var(--py-24);
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 2.5rem; /* px-8 py-3.5 from FolioSync Hero CTA */
+            border-radius: var(--rounded-full);
+            background: linear-gradient(180deg, #2E95FF 0%, #007AFF 100%);
+            color: white;
+            font-weight: 500;
+            font-size: var(--text-16px);
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(0.25, 1, 0.5, 1);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 14px 0 rgba(0,122,255,0.39), inset 0 1px 0 rgba(255,255,255,0.2);
+            letter-spacing: -0.01em;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(180deg, #44A2FF 0%, #0A84FF 100%);
+            box-shadow: 0 6px 20px rgba(0,122,255,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: scale(0.98);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.95);
+        }
+
+        .section-title {
+            font-size: var(--text-5xl); /* H2 desktop */
+            text-align: center;
+            margin-bottom: var(--mb-20);
+            line-height: 1.05;
+        }
+
+        /* Card styling */
+        .card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--rounded-ios);
+            padding: var(--px-6);
+            transition: all 400ms cubic-bezier(0.25, 1, 0.5, 1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            border-color: color-mix(in oklch, var(--border) 80%, var(--fg));
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Feature icons/illustrations */
+        .feature-icon {
+            width: 48px; /* w-12 from FolioSync */
+            height: 48px;
+            border-radius: var(--rounded-xl);
+            background-color: color-mix(in oklch, var(--accent) 10%, transparent);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem; /* Placeholder icon size */
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767px) { /* md breakpoint from FolioSync */
+            .section-title {
+                font-size: var(--text-4xl); /* H2 mobile */
+                margin-bottom: var(--mb-16);
+            }
+            .btn-primary {
+                font-size: var(--text-15px); /* Mobile menu button size */
+                padding: 1rem 1.5rem; /* Adjust for mobile touch targets */
+            }
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .features-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: var(--gap-6);
+            }
+            .testimonials-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: var(--gap-6);
+            }
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container" style="padding-top: 2rem; padding-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; color: var(--fg);">KTU Hub</div>
+        <nav>
+            <a href="#features" style="margin-left: 1.5rem; text-decoration: none; color: var(--fg); font-size: var(--text-14px);">Features</a>
+            <a href="#testimonials" style="margin-left: 1.5rem; text-decoration: none; color: var(--fg); font-size: var(--text-14px);">Testimonials</a>
+            <a href="#contact" style="margin-left: 1.5rem; text-decoration: none; color: var(--fg); font-size: var(--text-14px);">Contact</a>
+            <a href="#get-started" class="btn-primary" style="margin-left: 2rem; padding: 0.5rem 1.2rem; font-size: var(--text-14px);">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section-padding" style="text-align: center; padding-top: var(--py-32); padding-bottom: var(--py-32);">
+            <div class="container">
+                <h1 style="font-size: var(--text-88px); line-height: 1.05; margin-bottom: 1rem; color: var(--fg);">
+                    Unlock Your KTU Potential
+                </h1>
+                <p style="font-size: var(--text-lg); color: var(--muted); max-width: 800px; margin: 0 auto 2.5rem;">
+                    Premium Notes, PYQs & Syllabus Tracking for the 2024 Scheme. Get better grades, with less stress.
+                </p>
+                <a href="#get-started" class="btn-primary">Get Started Free</a>
+                <div style="margin-top: 3rem;">
+                    <img src="public/hero-bg.png" alt="KTU Study Hub Interface" style="max-width: 100%; height: auto; border-radius: var(--rounded-32px); box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="features-grid">
+                    <div class="card" style="text-align: center;">
+                        <div class="feature-icon">📝</div>
+                        <h3 style="font-size: var(--text-20px); margin-bottom: 0.5rem; color: var(--fg);">Premium Study Notes</h3>
+                        <p style="font-size: var(--text-15px); color: var(--muted);">Concise, exam-focused notes prepared by top educators for the 2024 scheme.</p>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <div class="feature-icon">📚</div>
+                        <h3 style="font-size: var(--text-20px); margin-bottom: 0.5rem; color: var(--fg);">Extensive PYQ Bank</h3>
+                        <p style="font-size: var(--text-15px); color: var(--muted);">Solved Previous Year Questions with detailed explanations and trend analysis.</p>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <div class="feature-icon">📊</div>
+                        <h3 style="font-size: var(--text-20px); margin-bottom: 0.5rem; color: var(--fg);">Syllabus Tracker (2024)</h3>
+                        <p style="font-size: var(--text-15px); color: var(--muted);">Personalized progress monitoring for the latest KTU 2024 syllabus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-padding" style="background-color: oklch(95% 0.005 240);">
+            <div class="container">
+                <h2 class="section-title">What Our Students Say</h2>
+                <div class="testimonials-grid">
+                    <div class="card">
+                        <p style="font-size: var(--text-17px); color: var(--fg); margin-bottom: 1rem;">"KTU Hub transformed my study routine. The notes are incredibly helpful, and the PYQs are a game-changer! Highly recommend to all KTU students."</p>
+                        <p style="font-size: var(--text-14px); color: var(--muted); font-weight: 500;">- Arya S., B.Tech Student</p>
+                    </div>
+                    <div class="card">
+                        <p style="font-size: var(--text-17px); color: var(--fg); margin-bottom: 1rem;">"Finding 2024 scheme resources was tough until I found KTU Hub. The syllabus tracker keeps me on track, and I feel much more prepared."</p>
+                        <p style="font-size: var(--text-14px); color: var(--muted); font-weight: 500;">- Rahul M., Engineering Aspirant</p>
+                    </div>
+                    <div class="card">
+                        <p style="font-size: var(--text-17px); color: var(--fg); margin-bottom: 1rem;">"The quality of notes is superior, and the PYQ solutions are easy to understand. It's like having a personal tutor 24/7."</p>
+                        <p style="font-size: var(--text-14px); color: var(--muted); font-weight: 500;">- Swetha K., College Scholar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div style="display: flex; flex-direction: column; gap: var(--gap-6); max-width: var(--max-w-3xl); margin: 0 auto;">
+                    <div class="card" style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
+                        <div class="feature-icon" style="flex-shrink: 0;">1️⃣</div>
+                        <div>
+                            <h3 style="font-size: var(--text-20px); margin-bottom: 0.25rem; color: var(--fg);">Browse & Sign Up</h3>
+                            <p style="font-size: var(--text-15px); color: var(--muted);">Easily navigate through our course offerings and create your free account.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
+                        <div class="feature-icon" style="flex-shrink: 0;">2️⃣</div>
+                        <div>
+                            <h3 style="font-size: var(--text-20px); margin-bottom: 0.25rem; color: var(--fg);">Access Premium Resources</h3>
+                            <p style="font-size: var(--text-15px); color: var(--muted);">Unlock thousands of notes, PYQs, and activate your personalized syllabus tracker.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
+                        <div class="feature-icon" style="flex-shrink: 0;">3️⃣</div>
+                        <div>
+                            <h3 style="font-size: var(--text-20px); margin-bottom: 0.25rem; color: var(--fg);">Excel in Your Exams</h3>
+                            <p style="font-size: var(--text-15px); color: var(--muted);">Utilize our tools to study smarter, perform better, and achieve academic success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary CTA Section -->
+        <section id="get-started" class="section-padding" style="text-align: center; background-color: oklch(95% 0.005 240);">
+            <div class="container" style="max-width: var(--max-w-4xl);">
+                <h2 style="font-size: var(--text-64px); line-height: 1.05; margin-bottom: 1rem; color: var(--fg);">
+                    Ready to Ace Your Exams?
+                </h2>
+                <p style="font-size: var(--text-lg); color: var(--muted); margin-bottom: 2.5rem;">
+                    Join thousands of KTU students who are already succeeding with KTU Hub.
+                </p>
+                <a href="#" class="btn-primary">Start Your Free Trial</a>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: oklch(90% 0.006 240); padding-top: var(--py-24); padding-bottom: var(--py-24); color: var(--fg); font-size: var(--text-14px);">
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+            <div style="flex: 1 1 200px;">
+                <div style="font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; color: var(--fg); margin-bottom: 1rem;">KTU Hub</div>
+                <p style="color: var(--muted);">Your ultimate partner for KTU academic success.</p>
+            </div>
+            <div style="flex: 1 1 150px;">
+                <h4 style="font-size: var(--text-14px); font-weight: 600; margin-bottom: 1rem; color: var(--fg);">Company</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">About Us</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">Contact</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">Careers</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1 1 150px;">
+                <h4 style="font-size: var(--text-14px); font-weight: 600; margin-bottom: 1rem; color: var(--fg);">Resources</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">Notes</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">PYQs</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">Syllabus Tracker</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1 1 150px;">
+                <h4 style="font-size: var(--text-14px); font-weight: 600; margin-bottom: 1rem; color: var(--fg);">Legal</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">Privacy Policy</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#" style="text-decoration: none; color: var(--muted);">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 3rem; color: var(--muted);">
+            © 2024 KTU Hub. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
