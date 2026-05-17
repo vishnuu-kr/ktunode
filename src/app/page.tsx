@@ -218,6 +218,15 @@ export default function Home() {
           aria-hidden="true"
         />
 
+        {/* ── Fade Overlay for Smooth Section Blending ── */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-48 z-0 pointer-events-none"
+          style={{
+            background: "linear-gradient(to bottom, transparent 0%, #f3f8ff 100%)",
+          }}
+          aria-hidden="true"
+        />
+
         {/* ── Navbar ── */}
         <div className="pt-4 z-50 relative w-full">
           <Navbar />
