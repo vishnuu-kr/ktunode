@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Reveal Typography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Variables & Reset */
+    :root {
+      --bg: #f9f8f6;
+      --text-ghost: rgba(10, 10, 10, 0.07);
+      --text-full: #0a0a0a;
+      --accent-ghost: rgba(67, 97, 238, 0.12);
+      --accent-full: #4361ee;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+      margin: 0;
+      font-family: 'Syne', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Dots Canvas */
+    #ambient-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* The Scroll Section */
+    .scroll-container {
+      height: 300vh;
+      position: relative;
+    }
+
+    /* The Sticky Content */
+    .sticky-wrapper {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Decorative Circle */
+    .decorative-circle {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid rgba(67, 97, 238, 0.3);
+      background-color: rgba(67, 97, 238, 0.08);
+      border-radius: 50%;
+      left: calc(50% - 25vw);
+      bottom: 30%;
+      opacity: 0;
+      animation: fadeIn 1s ease-out 1.4s forwards;
+      z-index: 10;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Text Layer Base Styles */
+    .text-layer {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: clamp(52px, 7.5vw, 100px);
+      letter-spacing: -3px;
+      line-height: 0.96;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .line {
+      display: block;
+    }
+
+    /* Layer 1 - Ghost */
+    .layer-ghost {
+      color: var(--text-ghost);
+      z-index: 1;
+    }
+
+    .layer-ghost .accent {
+      color: var(--accent-ghost);
+    }
+
+    /* Layer 2 - Reveal */
+    .layer-reveal {
+      color: var(--text-full);
+      z-index: 2;
+      clip-path: inset(0 0 100% 0);
+      /* will be updated by JS */
+    }
+
+    .layer-reveal .accent {
+      color: var(--accent-full);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient scattered dots -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <div class="scroll-container" id="scroll-section">
+    <div class="sticky-wrapper">
+      
+      <!-- Decorative circle -->
+      <div class="decorative-circle"></div>
+
+      <!-- Layer 1: Ghost Text -->
+      <div class="text-layer layer-ghost">
+        <span class="line">Notes. PYQs.</span>
+        <span class="line">Everything you need</span>
+        <span class="line">to <span class="accent">succeed</span> in</span>
+        <span class="line">every exam.</span>
+      </div>
+
+      <!-- Layer 2: Reveal Text -->
+      <div class="text-layer layer-reveal" id="reveal-layer">
+        <span class="line">Notes. PYQs.</span>
+        <span class="line">Everything you need</span>
+        <span class="line">to <span class="accent">succeed</span> in</span>
+        <span class="line">every exam.</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // 1. Setup ambient scattered dots on canvas
+    const canvas = document.getElementById('ambient-canvas');
+    const ctx = canvas.getContext('2d');
+    
+    function drawDots() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'rgba(10, 10, 10, 0.1)';
+      
+      for (let i = 0; i < 35; i++) {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const radius = Math.random() * 1 + 1; // 1-2px radius
+        
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    
+    // Initial draw and redraw on resize
+    drawDots();
+    window.addEventListener('resize', drawDots);
+
+    // 2. Scroll-driven clip-path logic
+    const scrollSection = document.getElementById('scroll-section');
+    const revealLayer = document.getElementById('reveal-layer');
+
+    function updateClipPath() {
+      // Calculate scroll progress relative to this section
+      const sectionTop = scrollSection.offsetTop;
+      const scrollY = window.scrollY - sectionTop;
+      const maxScroll = scrollSection.offsetHeight - window.innerHeight;
+      
+      // Calculate progress (0 to 1)
+      let progress = scrollY / maxScroll;
+      
+      // Clamp between 0 and 1
+      progress = Math.max(0, Math.min(1, progress));
+      
+      // Calculate inset bottom percentage (100% to 0%)
+      const insetBottom = (1 - progress) * 100;
+      
+      // Apply clip-path
+      revealLayer.style.clipPath = `inset(0 0 ${insetBottom}% 0)`;
+    }
+
+    // Update on scroll and initial load
+    window.addEventListener('scroll', updateClipPath, { passive: true });
+    window.addEventListener('resize', updateClipPath);
+    updateClipPath();
+  </script>
+</body>
+</html>

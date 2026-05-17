@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type IS Layout Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Variables & Reset */
+    :root {
+      --bg: #ffffff;
+      --text: #0a0a0a;
+      --text-muted: #888888;
+      --font-family: 'Space Grotesk', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-family);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Layout Structure */
+    .hero-container {
+      display: grid;
+      grid-template-columns: 120px 1fr 30%;
+      min-height: 100vh;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      position: relative;
+    }
+
+    /* Left Sidebar */
+    .sidebar-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .rotated-label {
+      transform: rotate(-90deg);
+      transform-origin: center;
+      white-space: nowrap;
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      font-weight: 400;
+      margin-top: 100px;
+      margin-bottom: 120px;
+    }
+
+    .partner-logos {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .partner {
+      font-size: 16px;
+      color: #666;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      letter-spacing: 0.05em;
+    }
+
+    .partner:nth-child(1) { font-weight: 900; color: #333; }
+    .partner:nth-child(2) { font-weight: 400; color: #888; }
+    .partner:nth-child(3) { font-weight: 700; color: #111; }
+    .partner:nth-child(4) { font-weight: 400; color: #999; }
+
+    /* Main Type Area */
+    .main-type {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .headline {
+      font-weight: 900;
+      font-size: clamp(40px, 6.5vw, 120px);
+      line-height: 1.0;
+      letter-spacing: -3px;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .headline-line {
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
+      flex-wrap: wrap;
+    }
+
+    .inline-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 0.85em;
+      width: 0.85em;
+      vertical-align: middle;
+      background: #f4f4f4;
+      border-radius: 50%;
+      font-size: 0.5em; /* relative to headline */
+    }
+
+    .inline-icon-rect {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 0.8em;
+      width: 1.5em;
+      vertical-align: middle;
+      background: #e0f2fe; /* light blue */
+      border-radius: 100px;
+      font-size: 0.4em;
+      color: #0284c7;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    /* Right Image Zone */
+    .image-zone {
+      position: relative;
+      z-index: 5;
+    }
+
+    .floating-img {
+      position: absolute;
+      object-fit: cover;
+    }
+
+    .img-1 {
+      top: 0;
+      left: -20%;
+      width: 350px;
+      height: auto;
+      z-index: 20; /* Overlaps text */
+      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+    }
+
+    .img-2 {
+      bottom: 20%;
+      right: -10%;
+      width: 400px;
+      height: auto;
+      z-index: 4;
+      opacity: 0.9;
+    }
+
+    .color-block {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 250px;
+      height: 350px;
+      background-color: #fef08a; /* pastel yellow */
+      z-index: 3;
+    }
+
+    /* Right Column Annotations */
+    .annotation-zone {
+      position: absolute;
+      right: 24px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      z-index: 30;
+    }
+
+    .annotation {
+      transform: rotate(-90deg);
+      transform-origin: right center;
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      text-align: left;
+      width: 200px; /* Gives it physical space before rotation */
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* Bottom Stats Row */
+    .stats-row {
+      margin-top: 80px;
+      display: flex;
+      gap: 60px;
+      padding-left: 120px; /* align with main type */
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      position: relative;
+    }
+
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: -30px;
+      top: 10%;
+      height: 80%;
+      width: 1px;
+      background-color: #eee;
+    }
+
+    .stat-value {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .hero-container {
+        grid-template-columns: 80px 1fr 20%;
+      }
+      .stats-row {
+        padding-left: 80px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+      }
+      .sidebar-left, .annotation-zone {
+        display: none;
+      }
+      .image-zone {
+        position: static;
+        height: 300px;
+        margin-top: 40px;
+        overflow: hidden;
+      }
+      .img-1 {
+        left: auto;
+        right: 0;
+        width: 250px;
+      }
+      .img-2 {
+        display: none;
+      }
+      .color-block {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .stats-row {
+        padding-left: 20px;
+        margin-top: 40px;
+      }
+      .headline {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-container">
+    
+    <!-- Left Sidebar -->
+    <div class="sidebar-left">
+      <div class="rotated-label">PARTNERS WITH INDUSTRY</div>
+      <div class="partner-logos">
+        <div class="partner">KTU OFFICIAL</div>
+        <div class="partner">TELEGRAM</div>
+        <div class="partner">STUDOCU</div>
+        <div class="partner">YOUTUBE</div>
+      </div>
+    </div>
+
+    <!-- Main Type Area -->
+    <div class="main-type">
+      <h1 class="headline">
+        <span class="headline-line">
+          PLATFORM THAT 
+          <span class="inline-icon">📄</span> 
+          HELPS
+        </span>
+        <span class="headline-line">
+          KTU <span class="inline-icon">✦</span> MINDS LEARN
+        </span>
+        <span class="headline-line">
+          FASTER BUILD SKILLS AND
+        </span>
+        <span class="headline-line">
+          SUCCEED <span class="inline-icon-rect">NEW</span> ANYWHERE
+        </span>
+      </h1>
+
+      <!-- Bottom Stats Row -->
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-value">12K+</div>
+          <div class="stat-label">Active Students</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">98%</div>
+          <div class="stat-label">Exam Coverage</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image Zone -->
+    <div class="image-zone">
+      <div class="color-block"></div>
+      <!-- Placeholder images using transparent SVG illustrations -->
+      <img src="https://api.dicebear.com/7.x/notionists/svg?seed=KTU1&backgroundColor=transparent" alt="Student" class="floating-img img-1">
+      <img src="https://api.dicebear.com/7.x/notionists/svg?seed=KTU2&backgroundColor=transparent" alt="Books" class="floating-img img-2">
+    </div>
+
+    <!-- Right Column Annotations -->
+    <div class="annotation-zone">
+      <div class="annotation">
+        Chapter-wise PYQs and structural syllabus tracking for 2024 scheme.
+      </div>
+      <div class="annotation">
+        Learn concepts faster with premium notes and visual guides.
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

@@ -21,7 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={plusJakartaSans.variable} suppressHydrationWarning>
+      {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
+      <body className={`${plusJakartaSans.variable} font-sans`} suppressHydrationWarning>
         {children}
       </body>
     </html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Hero Section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9f8f6;
+      --accent: #4361ee;
+      --text-dark: #1a1a1a;
+      --text-muted: #666;
+      --text-light: #888;
+      --border: rgba(0, 0, 0, 0.07);
+      --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --accent-shadow: 0 8px 24px rgba(67, 97, 238, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text-dark);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Typography */
+    h1, h2, h3, .serif {
+      font-family: 'DM Serif Display', serif;
+      font-weight: 400;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      background: rgba(249, 248, 246, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: var(--text-dark);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-dark);
+    }
+
+    .nav-cta {
+      background: var(--text-dark);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Hero Layout */
+    .hero {
+      padding: 160px 5% 80px;
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    /* Left Column */
+    .hero-left {
+      max-width: 600px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-light);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .eyebrow::before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      border-radius: 50%;
+    }
+
+    .headline {
+      font-size: clamp(40px, 5vw, 72px);
+      line-height: 1.04;
+      letter-spacing: -1.5px;
+      margin-bottom: 24px;
+      color: var(--text-dark);
+    }
+
+    .headline .accent-italic {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    /* Ticker */
+    .ticker-container {
+      display: inline-grid;
+      height: 1.04em;
+      overflow: hidden;
+      vertical-align: bottom;
+      position: relative;
+    }
+
+    .ticker-words {
+      display: flex;
+      flex-direction: column;
+      animation: ticker 6s infinite cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .ticker-words span {
+      height: 1.04em;
+      display: flex;
+      align-items: center;
+    }
+
+    @keyframes ticker {
+      0%, 25% { transform: translateY(0); }
+      33%, 58% { transform: translateY(-1.04em); }
+      66%, 91% { transform: translateY(-2.08em); }
+      100% { transform: translateY(-3.12em); }
+    }
+
+    .body-text {
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+
+    /* CTA Row */
+    .cta-row {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--text-dark);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .btn-primary svg {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-primary:hover svg {
+      transform: translateX(4px);
+    }
+
+    .social-proof {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatars {
+      display: flex;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid var(--bg);
+      background-color: #ddd;
+      margin-left: -6px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .avatar:first-child {
+      margin-left: 0;
+    }
+
+    .proof-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .proof-text strong {
+      color: var(--text-dark);
+      display: block;
+    }
+
+    /* Right Column (Cards) */
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--card-shadow-hover);
+    }
+
+    .card-inverted {
+      background: var(--accent);
+      color: white;
+      border: none;
+      box-shadow: var(--accent-shadow);
+    }
+
+    .card-inverted:hover {
+      box-shadow: 0 12px 32px rgba(67, 97, 238, 0.35);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      background: rgba(67, 97, 238, 0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+    }
+
+    .card-inverted .icon-box {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    .tag {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 700;
+      background: rgba(67, 97, 238, 0.05);
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .card-inverted .tag {
+      color: white;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .card-title {
+      font-size: 22px;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+
+    .card-inverted .card-title {
+      color: white;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .card-inverted .card-desc {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Stats Row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .stat-card {
+      background: white;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 20px;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--card-shadow-hover);
+    }
+
+    .stat-number {
+      font-family: 'DM Serif Display', serif;
+      font-size: 32px;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stat-suffix {
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    /* Trusted By Divider */
+    .trusted-by {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 40px 5% 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .trusted-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-light);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .platforms {
+      display: flex;
+      gap: 48px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .platform {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: #b0b0b0;
+      transition: color 0.3s;
+    }
+
+    .platform:hover {
+      color: var(--text-muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 64px;
+        padding-top: 120px;
+      }
+      .hero-left {
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta-row {
+        justify-content: center;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .cta-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .stats-row {
+        grid-template-columns: 1fr;
+      }
+      .platforms {
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">Nexus.</a>
+    <div class="nav-links">
+      <a href="#">Platform</a>
+      <a href="#">Solutions</a>
+      <a href="#">Resources</a>
+      <a href="#">Pricing</a>
+    </div>
+    <a href="#" class="nav-cta">Get Started</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    
+    <!-- Left Column: Copy & CTA -->
+    <div class="hero-left">
+      <div class="eyebrow">Next-Gen Publishing</div>
+      <h1 class="headline">
+        Craft editorial experiences that 
+        <div class="ticker-container">
+          <div class="ticker-words accent-italic">
+            <span>captivate.</span>
+            <span>inspire.</span>
+            <span>convert.</span>
+            <span>captivate.</span> <!-- Duplicate first word for seamless loop -->
+          </div>
+        </div>
+      </h1>
+      <p class="body-text">
+        Transform your static content into immersive, high-fidelity digital publications. Designed for modern creators who demand pixel-perfect control and seamless delivery.
+      </p>
+      
+      <div class="cta-row">
+        <a href="#" class="btn-primary">
+          Start Publishing
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        
+        <div class="social-proof">
+          <div class="avatars">
+            <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=1')"></div>
+            <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=2')"></div>
+            <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=3')"></div>
+            <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=4')"></div>
+          </div>
+          <div class="proof-text">
+            <strong>4,500+</strong> creators onboard
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Cards -->
+    <div class="hero-right">
+      
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <line x1="10" y1="9" x2="8" y2="9"></line>
+            </svg>
+          </div>
+          <span class="tag">Typography</span>
+        </div>
+        <div>
+          <h3 class="card-title serif">Flawless Rendering</h3>
+          <p class="card-desc">Advanced sub-pixel anti-aliasing ensures your carefully selected typefaces read beautifully on any screen size.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 (Inverted) -->
+      <div class="card card-inverted">
+        <div class="card-header">
+          <div class="icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <span class="tag">Performance</span>
+        </div>
+        <div>
+          <h3 class="card-title serif">Zero Layout Shift</h3>
+          <p class="card-desc">Engineered for absolute stability. Pre-calculated aspect ratios mean your content never jumps while loading.</p>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-number">
+            99<span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">Uptime SLA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">
+            15<span class="stat-suffix">k+</span>
+          </div>
+          <div class="stat-label">Publications</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trusted By Row -->
+  <div class="trusted-by">
+    <div class="trusted-label">Trusted by industry leaders</div>
+    <div class="platforms">
+      <div class="platform">Vogue</div>
+      <div class="platform">Kinfolk</div>
+      <div class="platform">Monocle</div>
+      <div class="platform">Wired</div>
+      <div class="platform">The Atlantic</div>
+    </div>
+  </div>
+
+</body>
+</html>
