@@ -80,16 +80,7 @@ export default function HowItWorksSection() {
         {/* Steps — vertical timeline on mobile, horizontal on desktop */}
         <div className="flex flex-col md:flex-row gap-0 md:gap-6 relative">
 
-          {/* Desktop connector line */}
-          <div className="hidden md:block absolute top-10 left-[calc(16.67%)] right-[calc(16.67%)] h-px z-0">
-            <motion.div
-              className="w-full h-full"
-              style={{ borderTop: "2px dashed rgba(46,149,255,0.25)" }}
-              initial={{ scaleX: 0, originX: 0 }}
-              animate={isInView ? { scaleX: 1 } : {}}
-              transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] as any }}
-            />
-          </div>
+          {/* Desktop connector line removed as requested */}
 
           {steps.map((step, i) => {
             const Icon = step.icon;
@@ -101,10 +92,7 @@ export default function HowItWorksSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.15, duration: 0.65, ease: [0.16, 1, 0.3, 1] as any }}
               >
-                {/* Mobile: left border line */}
-                {i < steps.length - 1 && (
-                  <div className="md:hidden absolute left-[19px] top-[52px] bottom-0 w-px bg-blue-100" />
-                )}
+                {/* Mobile left border line removed as requested */}
 
                 <div className="flex md:flex-col md:items-center gap-5 md:gap-4 p-6 md:p-0">
                   {/* Icon circle */}

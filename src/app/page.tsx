@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import { CinematicFooter } from "@/components/ui/motion-footer";
 import { Features } from "@/components/ui/features-8";
@@ -71,6 +71,87 @@ const floatingCards = [
   },
 ];
 
+function PremiumSelect({
+  value,
+  onChange,
+  options,
+  placeholder,
+  icon: Icon
+}: {
+  value: string | number;
+  onChange: (val: any) => void;
+  options: { label: string; value: string | number }[];
+  placeholder: string;
+  icon: any;
+}) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const selectedOption = options.find((o) => o.value === value);
+
+  return (
+    <div className="relative w-full" ref={ref}>
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between bg-white/70 hover:bg-white/95 border border-slate-200/80 hover:border-blue-300 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 rounded-2xl px-4 py-4 pl-11 text-sm font-bold text-slate-700 cursor-pointer focus:outline-none transition-all duration-200 shadow-sm"
+      >
+        <span className={selectedOption ? "text-slate-800" : "text-slate-400 font-semibold"}>
+          {selectedOption ? selectedOption.label : placeholder}
+        </span>
+        <ChevronDown
+          className={`w-4 h-4 text-slate-400 transition-transform duration-300 ${
+            open ? "rotate-180 text-blue-500" : ""
+          }`}
+        />
+      </button>
+      <Icon className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500 pointer-events-none" />
+      
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -8, scale: 0.98 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
+            className="absolute z-50 w-full mt-2 bg-white/95 backdrop-blur-2xl border border-blue-100 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] py-2 overflow-hidden"
+          >
+            <div className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200">
+              {options.map((opt) => (
+                <button
+                  key={opt.value}
+                  type="button"
+                  className={`w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors duration-150 ${
+                    value === opt.value
+                      ? "bg-blue-50 text-blue-600"
+                      : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                  }`}
+                  onClick={() => {
+                    onChange(opt.value);
+                    setOpen(false);
+                  }}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 export default function Home() {
   const router = useRouter();
   const [selectedBranch, setSelectedBranch] = useState("");
@@ -123,33 +204,33 @@ export default function Home() {
         aria-hidden="true"
       />
 
-      {/* ── Navbar ── */}
-      <div className="pt-4 z-50 relative w-full">
-        <Navbar />
-      </div>
+      {/* Wrapper for Hero + Navbar to perfectly contain the background */}
+      <div className="relative w-full">
+        {/* ── Global Hero Background Image ── */}
+        <div
+          className="absolute inset-0 z-0 pointer-events-none"
+          style={{
+            backgroundImage: "url('/hero-bg.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center bottom",
+          }}
+          aria-hidden="true"
+        />
 
-      {/* ══════════════════════════════════════
-          HERO
-      ══════════════════════════════════════ */}
-      <main
+        {/* ── Navbar ── */}
+        <div className="pt-4 z-50 relative w-full">
+          <Navbar />
+        </div>
+
+        {/* ══════════════════════════════════════
+            HERO
+        ══════════════════════════════════════ */}
+        <main
         ref={heroRef}
         className="relative flex-1 flex flex-col items-center pt-14 md:pt-20 pb-16 text-center px-4 overflow-hidden"
         style={{ minHeight: "100vh" }}
       >
-        {/* ── Hero background image — extends above into navbar area ── */}
-        <div
-          className="absolute left-0 right-0 z-0 pointer-events-none"
-          aria-hidden="true"
-          style={{
-            top: "-80px",
-            bottom: 0,
-            backgroundImage: "url('/hero-bg.png')",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "top center",
-          }}
-        />
-
         {/* ── Dot grid overlay ── */}
         <div className="absolute inset-0 z-0 dot-grid opacity-[0.10] pointer-events-none" />
 
@@ -278,41 +359,25 @@ export default function Home() {
           }}
         >
           {/* Branch */}
-          <div className="flex-1 w-full relative">
-            <label htmlFor="branch-select" className="sr-only">Select Branch</label>
-            <select
-              id="branch-select"
+          <div className="flex-1 w-full z-30">
+            <PremiumSelect
               value={selectedBranch}
-              onChange={(e) => setSelectedBranch(e.target.value)}
-              className="w-full appearance-none bg-slate-50 hover:bg-blue-50/50 border border-slate-200 hover:border-blue-300 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 rounded-2xl px-4 py-4 pl-11 text-sm font-semibold text-slate-700 cursor-pointer focus:outline-none transition-all duration-200"
-            >
-              <option value="">Select Branch</option>
-              {branches.map((b) => (
-                <option key={b.id} value={b.id}>{b.label}</option>
-              ))}
-            </select>
-            <BookOpen className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500 pointer-events-none" />
-            <ChevronDown className="absolute right-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+              onChange={setSelectedBranch}
+              options={branches.map(b => ({ label: b.label, value: b.id }))}
+              placeholder="Select Branch"
+              icon={BookOpen}
+            />
           </div>
 
           {/* Semester */}
-          <div className="flex-1 w-full relative">
-            <label htmlFor="semester-select" className="sr-only">Select Semester</label>
-            <select
-              id="semester-select"
+          <div className="flex-1 w-full z-20">
+            <PremiumSelect
               value={selectedSemester}
-              onChange={(e) =>
-                setSelectedSemester(e.target.value ? Number(e.target.value) : "")
-              }
-              className="w-full appearance-none bg-slate-50 hover:bg-blue-50/50 border border-slate-200 hover:border-blue-300 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 rounded-2xl px-4 py-4 pl-11 text-sm font-semibold text-slate-700 cursor-pointer focus:outline-none transition-all duration-200"
-            >
-              <option value="">Select Semester</option>
-              {semesters.map((s) => (
-                <option key={s} value={s}>Semester {s}</option>
-              ))}
-            </select>
-            <Calendar className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500 pointer-events-none" />
-            <ChevronDown className="absolute right-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+              onChange={setSelectedSemester}
+              options={semesters.map(s => ({ label: `Semester ${s}`, value: s }))}
+              placeholder="Select Semester"
+              icon={Calendar}
+            />
           </div>
 
           <MagneticButton
@@ -363,6 +428,7 @@ export default function Home() {
         </motion.div>
 
       </main>
+      </div>
 
       {/* ══════════════════════════════════════
           SECTIONS
