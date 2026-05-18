@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   --color-bg: #e8f3ff;
@@ -67,6 +68,45 @@
 .dot-grid {
   background-image: radial-gradient(circle, rgba(37,99,235,0.09) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+.noise-overlay {
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(15,23,42,0.035) 0 1px, transparent 1px),
+    radial-gradient(circle at 72% 44%, rgba(37,99,235,0.025) 0 1px, transparent 1px),
+    radial-gradient(circle at 38% 82%, rgba(15,23,42,0.025) 0 1px, transparent 1px);
+  background-size: 19px 19px, 23px 23px, 29px 29px;
+}
+
+.spotlight-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    transform 260ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 220ms ease;
+}
+
+.spotlight-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255,255,255,0.45);
+  pointer-events: none;
+}
+
+.spotlight-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.lift-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(147,197,253,0.75);
+  box-shadow: 0 24px 70px rgba(37,99,235,0.18), 0 10px 24px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.95) !important;
 }
 
 /* ══════════════════════════════════════════
@@ -259,20 +299,8 @@
 }
 
 /* ══════════════════════════════════════════
-   CURSOR GLOW
+   CURSOR GLOW (Removed)
 ══════════════════════════════════════════ */
-.cursor-glow {
-  pointer-events: none;
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(37,99,235,0.055) 0%, transparent 65%);
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  transition: left 0.08s linear, top 0.08s linear;
-  will-change: left, top;
-}
 
 /* ══════════════════════════════════════════
    HOVER LIFT
@@ -288,25 +316,11 @@
 }
 
 /* ══════════════════════════════════════════
-   RIPPLE CARD (mouse-follow glow)
+   RIPPLE CARD (mouse-follow glow removed)
 ══════════════════════════════════════════ */
 .ripple-card {
   position: relative;
   overflow: hidden;
-}
-
-.ripple-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(37,99,235,0.05) 0%, transparent 55%);
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  pointer-events: none;
-}
-
-.ripple-card:hover::after {
-  opacity: 1;
 }
 
 /* ══════════════════════════════════════════

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ArrowRight, BookOpen, FileText, Calendar, LayoutDashboard } from "lucide-react";
+import { Menu, X, ArrowRight, LayoutDashboard, UserRound } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
 
@@ -30,7 +30,9 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => { setMobileOpen(false); }, [pathname]);
+  useEffect(() => {
+    queueMicrotask(() => setMobileOpen(false));
+  }, [pathname]);
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -59,12 +61,23 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop CTA only */}
         <div className="hidden items-center gap-3 md:flex">
-          <MagneticButton href="/dashboard" className="!py-2 !px-4 !text-xs">
-            Open Dashboard
-            <ArrowRight className="w-3 h-3" />
-          </MagneticButton>
+          {isActive("/dashboard") ? (
+            <button
+              type="button"
+              className="inline-flex h-10 items-center gap-2 rounded-full border border-blue-100 bg-white/70 px-3 text-xs font-black text-slate-600 shadow-sm"
+              aria-label="Dashboard user menu"
+            >
+              <LayoutDashboard className="h-3.5 w-3.5 text-blue-500" />
+              Dashboard
+              <UserRound className="h-3.5 w-3.5 text-slate-400" />
+            </button>
+          ) : (
+            <MagneticButton href="/dashboard" className="!py-2 !px-4 !text-xs">
+              Open Dashboard
+              <ArrowRight className="w-3 h-3" />
+            </MagneticButton>
+          )}
         </div>
 
         {/* Mobile toggle */}

@@ -67,6 +67,9 @@ export const MagneticButton = ({ children, className = "", onClick, href }: Magn
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ x: springX, y: springY }}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
+      transition={{ type: "spring", stiffness: 360, damping: 22, mass: 0.45 }}
       className="relative z-20 group inline-block"
     >
       {href ? (
