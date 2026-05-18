@@ -397,10 +397,25 @@
 .animate-scroll-x   { animation: scroll-x 40s linear infinite; }
 
 /* ══════════════════════════════════════════
-   SHADCN OVERRIDES
+   REDUCED MOTION
 ══════════════════════════════════════════ */
-.bg-card              { background-color: #ffffff; }
-.text-card-foreground { color: #0f172a; }
-.text-muted-foreground{ color: #64748b; }
-.text-foreground      { color: #0f172a; }
-.border-border        { border-color: #dde8f5; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-fade-up,
+  .animate-fade-in,
+  .animate-scale-in,
+  .animate-slide-right,
+  .animate-scroll-x,
+  .animate-shimmer,
+  .cursor-glow,
+  .dot-grid,
+  .scroll-progress {
+    animation: none !important;
+  }
+}

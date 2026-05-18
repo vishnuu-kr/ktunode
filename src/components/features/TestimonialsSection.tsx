@@ -134,23 +134,9 @@ export default function TestimonialsSection() {
           {doubled.map((t, i) => (
             <div
               key={i}
-              className="w-[340px] flex-shrink-0 bg-white border border-blue-100 rounded-3xl p-7 cursor-default group ripple-card"
+              className="w-[340px] flex-shrink-0 bg-white border border-blue-100 rounded-3xl p-7 cursor-default group ripple-card hover:-translate-y-2.5 hover:shadow-[0_24px_56px_rgba(37,99,235,0.14)] transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
               style={{
                 boxShadow: "0 2px 16px rgba(37,99,235,0.06)",
-                transition:
-                  "transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1)",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLDivElement).style.transform =
-                  "translateY(-10px)";
-                (e.currentTarget as HTMLDivElement).style.boxShadow =
-                  "0 24px 56px rgba(37,99,235,0.14)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLDivElement).style.transform =
-                  "translateY(0)";
-                (e.currentTarget as HTMLDivElement).style.boxShadow =
-                  "0 2px 16px rgba(37,99,235,0.06)";
               }}
             >
               {/* Quote + icon */}

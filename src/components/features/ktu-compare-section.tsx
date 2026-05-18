@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Compare } from "@/components/ui/compare";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const bullets = [
   "Module-by-module structure",
@@ -13,7 +13,6 @@ const bullets = [
 ];
 
 export default function KtuCompareSection() {
-  const router = useRouter();
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-8%" });
 
@@ -75,11 +74,9 @@ export default function KtuCompareSection() {
               ))}
             </div>
 
-            <motion.button
-              onClick={() => router.push("/notes")}
-              className="pill-btn pill-btn-primary group"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
+            <Link
+              href="/notes"
+              className="pill-btn pill-btn-primary group inline-flex"
             >
               Browse Notes
               <motion.span
@@ -89,18 +86,18 @@ export default function KtuCompareSection() {
               >
                 <ArrowRight className="w-4 h-4" />
               </motion.span>
-            </motion.button>
+            </Link>
           </motion.div>
 
           {/* ── Right compare widget ── */}
           <motion.div
-            className="flex-1 flex flex-col items-center gap-4"
+            className="flex-1 flex flex-col items-center gap-4 w-full"
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.div
-              className="p-3 rounded-3xl border border-blue-100 bg-white/80 backdrop-blur-sm"
+              className="p-2 md:p-3 w-full max-w-[760px] rounded-3xl border border-blue-100 bg-white/80 backdrop-blur-sm"
               style={{
                 boxShadow:
                   "0 20px 60px rgba(37,99,235,0.12), 0 4px 16px rgba(0,0,0,0.06)",
@@ -116,7 +113,7 @@ export default function KtuCompareSection() {
                 secondImage="/assets/ktu-structured.png"
                 firstImageClassName="object-cover object-top"
                 secondImageClassname="object-cover object-top"
-                className="h-[320px] w-[280px] md:h-[520px] md:w-[760px] rounded-[20px]"
+                className="w-full aspect-[4/5] sm:aspect-square md:aspect-video rounded-[20px]"
                 slideMode="hover"
                 autoplay={true}
               />

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useRef } from "react";
-import { useRouter } from "next/navigation";
 import { motion, useInView } from "framer-motion";
 import { ArrowRight, BookOpen, FileText, GraduationCap, Sparkles } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import Link from "next/link";
 
 const floatingCards = [
   {
@@ -46,7 +46,6 @@ const stats = [
 ];
 
 export default function CtaBanner() {
-  const router = useRouter();
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-10%" });
 
@@ -153,18 +152,18 @@ export default function CtaBanner() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <MagneticButton onClick={() => router.push("/dashboard")}>
+          <MagneticButton href="/dashboard">
             Open Dashboard
             <ArrowRight className="w-4 h-4" />
           </MagneticButton>
 
-          <button
-            onClick={() => router.push("/notes")}
-            className="pill-btn pill-btn-outline !bg-white/10 !text-white !border-white/18 hover:!bg-white/16 hover:!border-white/30 hover:!text-white"
+          <Link
+            href="/notes"
+            className="pill-btn pill-btn-outline !bg-white/10 !text-white !border-white/18 hover:!bg-white/16 hover:!border-white/30 hover:!text-white inline-flex"
           >
             Browse Notes
             <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
         </motion.div>
 
         {/* Stats */}

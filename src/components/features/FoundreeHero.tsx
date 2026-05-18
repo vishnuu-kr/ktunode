@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const words = ["clarity", "structure", "focus", "precision", "mastery"];
 
@@ -31,7 +31,6 @@ const particles = [
 ];
 
 export default function FoundreeHero() {
-  const router = useRouter();
   const [wordIndex, setWordIndex] = useState(0);
   const [mouse, setMouse] = useState({ x: 0.5, y: 0.5 });
   const sectionRef = useRef<HTMLElement>(null);
@@ -211,14 +210,9 @@ export default function FoundreeHero() {
         </div>
 
         {/* CTA */}
-        <motion.button
-          onClick={() => router.push("/dashboard")}
+        <Link
+          href="/dashboard"
           className="group flex items-center gap-2 px-7 py-3.5 rounded-full bg-white/8 hover:bg-white/14 border border-white/12 hover:border-white/22 text-white font-bold text-sm backdrop-blur-sm"
-          initial={{ opacity: 0, y: 16 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.6, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          whileHover={{ scale: 1.05, boxShadow: "0 16px 40px rgba(46,149,255,0.18)" }}
-          whileTap={{ scale: 0.97 }}
         >
           Start Studying Free
           <motion.span
@@ -228,7 +222,7 @@ export default function FoundreeHero() {
           >
             <ArrowRight className="w-4 h-4" />
           </motion.span>
-        </motion.button>
+        </Link>
       </div>
 
       {/* Bottom brand */}

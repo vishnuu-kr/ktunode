@@ -13,6 +13,9 @@ import TestimonialsSection from "@/components/features/TestimonialsSection";
 import FaqSection from "@/components/features/FaqSection";
 import CtaBanner from "@/components/features/CtaBanner";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import useSessionPersistence from "@/hooks/useSessionPersistence";
+import { ContinueSessionButton } from "@/components/features/ContinueSessionButton";
+import { SEMESTERS } from "@/lib/constants";
 import {
   Sparkles, BookOpen, Calendar, ArrowRight, ShieldCheck,
   FileText, ChevronDown,
@@ -26,7 +29,7 @@ const branches = [
   { id: "ee", label: "Electrical & Electronics" },
 ];
 
-const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
+const semesters = SEMESTERS;
 
 // Floating card data
 const floatingCards = [
@@ -76,50 +79,106 @@ function PremiumSelect({
   onChange,
   options,
   placeholder,
-  icon: Icon
+  icon: Icon,
+  hasError
 }: {
   value: string | number;
   onChange: (val: any) => void;
   options: { label: string; value: string | number }[];
   placeholder: string;
   icon: any;
+  hasError?: boolean;
 }) {
   const [open, setOpen] = useState(false);
+  const [focusedIndex, setFocusedIndex] = useState(-1);
   const ref = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (ref.current && !ref.current.contains(event.target as Node)) {
         setOpen(false);
+        setFocusedIndex(-1);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (open) {
+      setFocusedIndex(options.findIndex((o) => o.value === value));
+    }
+  }, [open, options, value]);
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!open) {
+      if (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        setOpen(true);
+      }
+      return;
+    }
+    switch (e.key) {
+      case "ArrowDown":
+        e.preventDefault();
+        setFocusedIndex((prev) => (prev < options.length - 1 ? prev + 1 : 0));
+        break;
+      case "ArrowUp":
+        e.preventDefault();
+        setFocusedIndex((prev) => (prev > 0 ? prev - 1 : options.length - 1));
+        break;
+      case "Enter":
+      case " ":
+        e.preventDefault();
+        if (focusedIndex >= 0) {
+          onChange(options[focusedIndex].value);
+          setOpen(false);
+          triggerRef.current?.focus();
+        }
+        break;
+      case "Escape":
+        e.preventDefault();
+        setOpen(false);
+        setFocusedIndex(-1);
+        triggerRef.current?.focus();
+        break;
+    }
+  };
+
   const selectedOption = options.find((o) => o.value === value);
 
   return (
     <div className="relative w-full" ref={ref}>
-      <button
+      <motion.button
+        ref={triggerRef as any}
         type="button"
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between bg-white/70 hover:bg-white/95 border border-slate-200/80 hover:border-blue-300 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 rounded-2xl px-4 py-4 pl-11 text-sm font-bold text-slate-700 cursor-pointer focus:outline-none transition-all duration-200 shadow-sm"
+        onKeyDown={handleKeyDown}
+        role="combobox"
+        aria-expanded={open}
+        aria-haspopup="listbox"
+        aria-controls={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
+        className={`w-full flex items-center justify-between bg-white/70 hover:bg-white/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 hover:border-blue-300 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700'} rounded-2xl px-4 py-4 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
+        animate={hasError ? { x: [-6, 6, -5, 5, -3, 3, 0] } : { x: 0 }}
+        transition={{ duration: 0.4 }}
       >
-        <span className={selectedOption ? "text-slate-800" : "text-slate-400 font-semibold"}>
+        <span className={selectedOption ? "text-slate-800" : hasError ? "text-red-500 font-semibold" : "text-slate-400 font-semibold"}>
           {selectedOption ? selectedOption.label : placeholder}
         </span>
         <ChevronDown
-          className={`w-4 h-4 text-slate-400 transition-transform duration-300 ${
-            open ? "rotate-180 text-blue-500" : ""
+          className={`w-4 h-4 transition-transform duration-300 ${
+            open ? "rotate-180 text-blue-500" : hasError ? "text-red-400" : "text-slate-400"
           }`}
         />
-      </button>
-      <Icon className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500 pointer-events-none" />
+      </motion.button>
+      <Icon className={`absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none transition-colors ${hasError ? 'text-red-400' : 'text-blue-500'}`} />
       
       <AnimatePresence>
         {open && (
           <motion.div
+            id={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
+            role="listbox"
             initial={{ opacity: 0, y: -8, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.98 }}
@@ -127,19 +186,24 @@ function PremiumSelect({
             className="absolute z-50 w-full mt-2 bg-white/95 backdrop-blur-2xl border border-blue-100 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] py-2 overflow-hidden"
           >
             <div className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200">
-              {options.map((opt) => (
+              {options.map((opt, index) => (
                 <button
                   key={opt.value}
                   type="button"
+                  role="option"
+                  aria-selected={value === opt.value}
                   className={`w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors duration-150 ${
                     value === opt.value
                       ? "bg-blue-50 text-blue-600"
                       : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-                  }`}
+                  } ${focusedIndex === index ? "bg-blue-50 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
                   onClick={() => {
                     onChange(opt.value);
                     setOpen(false);
+                    setFocusedIndex(-1);
+                    triggerRef.current?.focus();
                   }}
+                  onMouseEnter={() => setFocusedIndex(index)}
                 >
                   {opt.label}
                 </button>
@@ -154,12 +218,15 @@ function PremiumSelect({
 
 export default function Home() {
   const router = useRouter();
+  const { savedSession, saveSession, clearSession } = useSessionPersistence();
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSemester, setSelectedSemester] = useState<number | "">("");
   const [mounted, setMounted] = useState(false);
   const [scrollPct, setScrollPct] = useState(0);
   const [mousePos, setMousePos] = useState({ x: -999, y: -999 });
   const heroRef = useRef<HTMLDivElement>(null);
+
+  const [errorState, setErrorState] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -179,16 +246,39 @@ export default function Home() {
   }, []);
 
   const handleLaunch = () => {
+    if (!selectedBranch || !selectedSemester) {
+      setErrorState(true);
+      setTimeout(() => setErrorState(false), 500);
+      return;
+    }
+
     const p = new URLSearchParams();
     if (selectedBranch) p.set("branch", selectedBranch);
     if (selectedSemester) p.set("sem", String(selectedSemester));
+
+    // Save session before navigating (only when both are selected)
+    if (selectedBranch && selectedSemester) {
+      saveSession(selectedBranch, selectedSemester as number);
+    }
+
     router.push(`/dashboard${p.toString() ? `?${p.toString()}` : ""}`);
   };
 
+  const handleContinue = () => {
+    if (!savedSession) return;
+    router.push(`/dashboard?branch=${savedSession.branch}&sem=${savedSession.semester}`);
+  };
+
+  const handleDismiss = () => {
+    clearSession();
+  };
+
   return (
-    <div
+    <main
+      id="main-content"
       className="relative w-full min-h-screen flex flex-col font-sans overflow-x-hidden"
       style={{ background: "#cfe3f8" }}
+      tabIndex={-1}
     >
       {/* ── Scroll progress ── */}
       <div
@@ -235,7 +325,7 @@ export default function Home() {
         {/* ══════════════════════════════════════
             HERO
         ══════════════════════════════════════ */}
-        <main
+        <section
         ref={heroRef}
         className="relative flex-1 flex flex-col items-center pt-14 md:pt-20 pb-16 text-center px-4 overflow-hidden"
         style={{ minHeight: "100vh" }}
@@ -375,6 +465,7 @@ export default function Home() {
               options={branches.map(b => ({ label: b.label, value: b.id }))}
               placeholder="Select Branch"
               icon={BookOpen}
+              hasError={errorState && !selectedBranch}
             />
           </div>
 
@@ -386,6 +477,7 @@ export default function Home() {
               options={semesters.map(s => ({ label: `Semester ${s}`, value: s }))}
               placeholder="Select Semester"
               icon={Calendar}
+              hasError={errorState && !selectedSemester}
             />
           </div>
 
@@ -397,6 +489,17 @@ export default function Home() {
             <ArrowRight className="w-4 h-4" />
           </MagneticButton>
         </motion.div>
+
+        {/* ── Continue Session Button (below selector card) ── */}
+        <AnimatePresence>
+          {savedSession && (
+            <ContinueSessionButton
+              session={savedSession}
+              onContinue={handleContinue}
+              onDismiss={handleDismiss}
+            />
+          )}
+        </AnimatePresence>
 
         {/* ── Quick trust line ── */}
         <motion.div
@@ -436,7 +539,7 @@ export default function Home() {
           </div>
         </motion.div>
 
-      </main>
+      </section>
       </div>
 
       {/* ══════════════════════════════════════
@@ -454,6 +557,6 @@ export default function Home() {
       <FaqSection />
       <CtaBanner />
       <CinematicFooter />
-    </div>
+    </main>
   );
 }

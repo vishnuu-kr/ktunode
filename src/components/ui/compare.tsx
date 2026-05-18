@@ -111,9 +111,41 @@ export const Compare: React.FC<CompareProps> = ({
     }
   }, [slideMode, handleMouseUp]);
 
+  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLDivElement>) => {
+    const step = e.shiftKey ? 10 : 2;
+    switch (e.key) {
+      case "ArrowLeft":
+        e.preventDefault();
+        setIsInteracted(true);
+        setSliderPosition((prev) => Math.max(0, prev - step));
+        break;
+      case "ArrowRight":
+        e.preventDefault();
+        setIsInteracted(true);
+        setSliderPosition((prev) => Math.min(100, prev + step));
+        break;
+      case "Home":
+        e.preventDefault();
+        setIsInteracted(true);
+        setSliderPosition(0);
+        break;
+      case "End":
+        e.preventDefault();
+        setIsInteracted(true);
+        setSliderPosition(100);
+        break;
+    }
+  }, []);
+
   return (
     <div
       ref={containerRef}
+      role="slider"
+      tabIndex={0}
+      aria-label="Image comparison slider"
+      aria-valuenow={Math.round(sliderPosition)}
+      aria-valuemin={0}
+      aria-valuemax={100}
       className={cn(
         "relative select-none overflow-hidden touch-none cursor-ew-resize",
         className
@@ -125,6 +157,7 @@ export const Compare: React.FC<CompareProps> = ({
       onMouseEnter={() => {
         if (slideMode === "hover") setIsInteracted(true);
       }}
+      onKeyDown={handleKeyDown}
     >
       {/* First (Bottom) Image - Chaos */}
       <div className="absolute inset-0 w-full h-full bg-neutral-200 dark:bg-neutral-800">

@@ -271,21 +271,6 @@ export function CinematicFooter() {
                 <LayoutDashboard className="w-5 h-5 text-blue-500 group-hover:text-blue-700 transition-colors" />
                 Dashboard
               </MagneticButton>
-              
-              <MagneticButton as="a" href="/notes" className="footer-glass-pill px-6 py-4 rounded-xl text-slate-700 font-semibold text-sm md:text-base flex items-center gap-3 group">
-                <BookOpen className="w-5 h-5 text-blue-500 group-hover:text-blue-700 transition-colors" />
-                Notes
-              </MagneticButton>
-
-              <MagneticButton as="a" href="/pyqs" className="footer-glass-pill px-6 py-4 rounded-xl text-slate-700 font-semibold text-sm md:text-base flex items-center gap-3 group">
-                <FileText className="w-5 h-5 text-blue-500 group-hover:text-blue-700 transition-colors" />
-                PYQs
-              </MagneticButton>
-
-              <MagneticButton as="a" href="/syllabus" className="footer-glass-pill px-6 py-4 rounded-xl text-slate-700 font-semibold text-sm md:text-base flex items-center gap-3 group">
-                <Zap className="w-5 h-5 text-blue-500 group-hover:text-blue-700 transition-colors" />
-                Syllabus
-              </MagneticButton>
             </div>
           </div>
 
@@ -304,7 +289,7 @@ export function CinematicFooter() {
             </a>
 
             {/* Bottom row */}
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-slate-400 text-xs font-semibold tracking-wider uppercase">
                 © 2026 KTU NODE. ALL RIGHTS RESERVED.
               </div>

@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MousePointerClick, BookMarked, TrendingUp, ArrowRight } from "lucide-react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const steps = [
   {
@@ -39,7 +39,6 @@ const steps = [
 ];
 
 export default function HowItWorksSection() {
-  const router = useRouter();
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-10%" });
 
@@ -138,9 +137,9 @@ export default function HowItWorksSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.6, duration: 0.6, ease: [0.16, 1, 0.3, 1] as any }}
         >
-          <button
-            onClick={() => router.push("/dashboard")}
-            className="pill-btn pill-btn-primary group"
+          <Link
+            href="/dashboard"
+            className="pill-btn pill-btn-primary group inline-flex"
           >
             Start Now — It&apos;s Free
             <motion.span
@@ -150,7 +149,7 @@ export default function HowItWorksSection() {
             >
               <ArrowRight className="w-4 h-4" />
             </motion.span>
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

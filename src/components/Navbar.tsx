@@ -2,15 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight, BookOpen, FileText, Calendar, LayoutDashboard } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 
 const mobileLinks = [
   { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard, accent: "blue" },
-  { label: "Notes",     href: "/notes",     icon: BookOpen,        accent: "violet" },
-  { label: "PYQs",      href: "/pyqs",      icon: FileText,        accent: "emerald" },
-  { label: "Syllabus",  href: "/syllabus",  icon: Calendar,        accent: "amber" },
 ];
 
 const accentMap: Record<string, { text: string; bg: string; dot: string }> = {
@@ -22,9 +20,9 @@ const accentMap: Record<string, { text: string; bg: string; dot: string }> = {
 
 export default function Navbar() {
   const pathname = usePathname();
-  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const drawerRef = useFocusTrap(mobileOpen);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -40,7 +38,7 @@ export default function Navbar() {
   return (
     <div className="w-full flex justify-center px-4">
       <nav
-        className={`flex w-full max-w-6xl items-center justify-between rounded-full px-6 py-3 transition-all duration-300 ${
+        className={`flex w-full max-w-6xl items-center justify-between rounded-full px-6 py-3 transition-all duration-300 overflow-visible ${
           scrolled
             ? "bg-white/97 backdrop-blur-xl border border-blue-100/80"
             : "bg-white/82 backdrop-blur-md border border-white/60"
@@ -63,17 +61,15 @@ export default function Navbar() {
 
         {/* Desktop CTA only */}
         <div className="hidden items-center gap-3 md:flex">
-          <MagneticButton
-            onClick={() => router.push("/dashboard")}
-            className="!py-2.5 !px-5 !text-sm"
-          >
+          <MagneticButton href="/dashboard" className="!py-2 !px-4 !text-xs">
             Open Dashboard
-            <ArrowRight className="w-3.5 h-3.5" />
+            <ArrowRight className="w-3 h-3" />
           </MagneticButton>
         </div>
 
         {/* Mobile toggle */}
         <button
+          type="button"
           onClick={() => setMobileOpen((v) => !v)}
           className="flex md:hidden items-center justify-center w-9 h-9 rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all duration-200 active:scale-95"
           aria-label="Toggle menu"
@@ -89,8 +85,9 @@ export default function Navbar() {
           <div
             className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
             onClick={() => setMobileOpen(false)}
+            aria-hidden="true"
           />
-          <div className="relative ml-auto w-80 h-full bg-white shadow-2xl flex flex-col">
+          <div ref={drawerRef} role="dialog" aria-modal="true" aria-label="Mobile navigation" className="relative ml-auto w-80 h-full bg-white shadow-2xl flex flex-col">
             {/* Drawer header */}
             <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
@@ -100,8 +97,10 @@ export default function Navbar() {
                 <span className="text-base font-black tracking-tight text-slate-900">KTU NODE</span>
               </div>
               <button
+                type="button"
                 onClick={() => setMobileOpen(false)}
                 className="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-slate-700 transition-colors"
+                aria-label="Close menu"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -145,13 +144,14 @@ export default function Navbar() {
 
             {/* CTA */}
             <div className="p-4 border-t border-slate-100">
-              <button
-                onClick={() => { router.push("/dashboard"); setMobileOpen(false); }}
+              <Link
+                href="/dashboard"
+                onClick={() => setMobileOpen(false)}
                 className="pill-btn pill-btn-primary w-full justify-center"
               >
                 Open Dashboard
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
