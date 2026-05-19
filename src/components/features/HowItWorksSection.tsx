@@ -69,7 +69,7 @@ export default function HowItWorksSection() {
             className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4 leading-[1.05]"
           >
             Study smarter{" "}
-            <span className="gradient-text">in 3 steps.</span>
+            <span className="gradient-text-animated">in 3 steps.</span>
           </h2>
           <p className="text-slate-500 text-lg max-w-md mx-auto leading-relaxed">
             From setup to exam-ready in minutes. No account, no clutter.

@@ -54,8 +54,10 @@ export default function CtaBanner() {
       ref={sectionRef}
       className="relative py-32 overflow-hidden"
       style={{
-        background:
-          "linear-gradient(135deg, #080f1e 0%, #0d1f3c 50%, #162d5e 100%)",
+        backgroundImage: "radial-gradient(circle at center, rgba(8, 15, 30, 0.75) 0%, rgba(8, 15, 30, 0) 65%), url('/bg-ready.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
       aria-labelledby="cta-heading"
     >
@@ -129,7 +131,11 @@ export default function CtaBanner() {
           Ready to ace your
           <br />
           <span
-            style={{ color: "#60b8ff", textShadow: "0 0 40px rgba(96,184,255,0.28)" }}
+            className="gradient-text-animated"
+            style={{
+              textShadow: "0 0 40px rgba(96,184,255,0.28)",
+              "--mobile-gradient-fallback": "#60b8ff",
+            } as React.CSSProperties}
           >
             next semester?
           </span>

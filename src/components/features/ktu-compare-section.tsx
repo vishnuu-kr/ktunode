@@ -48,7 +48,7 @@ export default function KtuCompareSection() {
             >
               From Chaos
               <br />
-              <span className="gradient-text">to Clarity.</span>
+              <span className="gradient-text-animated">to Clarity.</span>
             </h2>
 
             <p className="text-lg text-slate-500 leading-relaxed mb-8 max-w-md">

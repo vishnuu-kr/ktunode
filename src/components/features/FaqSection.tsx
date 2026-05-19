@@ -85,7 +85,7 @@ export default function FaqSection() {
               >
                 Common
                 <br />
-                <span className="gradient-text">questions.</span>
+                <span className="gradient-text-animated">questions.</span>
               </h2>
               <p className="text-slate-500 text-base leading-relaxed mb-8">
                 Everything you need to know about KTUNODE. Can&apos;t find the

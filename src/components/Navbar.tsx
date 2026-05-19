@@ -7,6 +7,8 @@ import { Menu, X, ArrowRight, LayoutDashboard, UserRound } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
 
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+
 const mobileLinks = [
   { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard, accent: "blue" },
 ];
@@ -23,12 +25,11 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const drawerRef = useFocusTrap(mobileOpen);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 24);
+  });
 
   useEffect(() => {
     queueMicrotask(() => setMobileOpen(false));
@@ -38,16 +39,18 @@ export default function Navbar() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <div className="w-full flex justify-center px-4">
-      <nav
-        className={`flex w-full max-w-6xl items-center justify-between rounded-full px-6 py-3 transition-all duration-300 overflow-visible ${
+    <>
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className={`fixed left-1/2 top-4 z-50 flex w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2 items-center justify-between rounded-full px-6 py-3 transition-all duration-300 overflow-visible ${
           scrolled
-            ? "bg-white/97 backdrop-blur-xl border border-blue-100/80"
-            : "bg-white/82 backdrop-blur-md border border-white/60"
+            ? "bg-white/80 backdrop-blur-lg border border-white/40"
+            : "bg-white/90 backdrop-blur-md border border-white/60"
         }`}
         style={{
           boxShadow: scrolled
-            ? "0 8px 32px rgba(37,99,235,0.1), 0 2px 6px rgba(0,0,0,0.05)"
+            ? "0 12px 40px rgba(37,99,235,0.15), 0 4px 12px rgba(0,0,0,0.05)"
             : "0 4px 16px rgba(37,99,235,0.07), 0 1px 3px rgba(0,0,0,0.04)",
         }}
       >
@@ -90,7 +93,7 @@ export default function Navbar() {
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
-      </nav>
+      </motion.header>
 
       {/* Mobile drawer */}
       {mobileOpen && (
@@ -169,6 +172,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

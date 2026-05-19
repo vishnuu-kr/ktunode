@@ -327,7 +327,7 @@ export default function Home() {
         ══════════════════════════════════════ */}
         <section
         ref={heroRef}
-        className="relative flex-1 flex flex-col items-center pt-14 md:pt-20 pb-16 text-center px-4 overflow-hidden"
+        className="relative flex-1 flex flex-col items-center pt-28 md:pt-32 pb-16 text-center px-4 overflow-hidden"
         style={{ minHeight: "100vh" }}
       >
         {/* ── Dot grid overlay ── */}

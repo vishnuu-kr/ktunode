@@ -106,7 +106,7 @@ export default function TestimonialsSection() {
         >
           Loved by KTU
           <br />
-          <span className="gradient-text">students.</span>
+          <span className="gradient-text-animated">students.</span>
         </h2>
         <p className="text-slate-500 text-lg max-w-lg mx-auto leading-relaxed">
           KTU students across every branch use KTUNODE to study smarter

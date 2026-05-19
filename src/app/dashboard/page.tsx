@@ -277,7 +277,7 @@ function DashboardContent() {
         <Navbar />
       </div>
 
-      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 py-8 md:py-12 flex z-10">
+      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 pt-24 pb-8 md:pt-28 md:pb-12 flex z-10">
         <AnimatePresence mode="wait">
           {view === "dashboard" && (
             <motion.div

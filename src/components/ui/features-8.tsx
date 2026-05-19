@@ -23,7 +23,7 @@ const branches = [
 
 export function Features() {
   const sectionRef = useRef<HTMLElement>(null);
-  const isInView = useInView(sectionRef, { once: true, margin: "-8%" });
+  const isInView = useInView(sectionRef, { once: true, margin: "0px" });
 
   return (
     <section
@@ -44,10 +44,10 @@ export function Features() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="section-badge mb-5">What you get</div>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-5 leading-[1.05]">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tight text-black mb-5 leading-[1.05]">
             Everything you need
             <br />
-            <span className="gradient-text">to ace KTU.</span>
+            <span className="gradient-text-animated">to ace KTU.</span>
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
             Built specifically for the 2024 KTU scheme — no fluff, just the

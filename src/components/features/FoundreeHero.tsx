@@ -55,7 +55,7 @@ export default function FoundreeHero() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative w-full min-h-[100dvh] py-24 md:py-0 flex items-center justify-center overflow-hidden"
       style={{
         background:
           "linear-gradient(160deg, #040912 0%, #07111e 50%, #0b1828 100%)",
@@ -145,12 +145,12 @@ export default function FoundreeHero() {
           <AnimatePresence mode="wait">
             <motion.span
               key={wordIndex}
-              className="inline-block"
+              className="inline-block gradient-text-animated"
               style={{
-                color: "#60b8ff",
                 textShadow: "0 0 40px rgba(46,149,255,0.4)",
                 minWidth: "220px",
-              }}
+                "--mobile-gradient-fallback": "#60b8ff",
+              } as React.CSSProperties}
               initial={{ opacity: 0, y: 16, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               exit={{ opacity: 0, y: -16, filter: "blur(8px)" }}
