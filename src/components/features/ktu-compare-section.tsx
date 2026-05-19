@@ -109,8 +109,8 @@ export default function KtuCompareSection() {
               }}
             >
               <Compare
-                firstImage="/assets/ktu-cluttered.png"
-                secondImage="/assets/ktu-structured.png"
+                firstImage="/assets/ktu-cluttered.webp"
+                secondImage="/assets/ktu-structured.webp"
                 firstImageClassName="object-cover object-top"
                 secondImageClassname="object-cover object-top"
                 className="w-full aspect-[4/5] sm:aspect-square md:aspect-video rounded-[20px]"

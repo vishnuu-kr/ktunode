@@ -54,7 +54,7 @@ export default function CtaBanner() {
       ref={sectionRef}
       className="relative py-32 overflow-hidden"
       style={{
-        backgroundImage: "radial-gradient(circle at center, rgba(8, 15, 30, 0.75) 0%, rgba(8, 15, 30, 0) 65%), url('/bg-ready.png')",
+        backgroundImage: "radial-gradient(circle at center, rgba(8, 15, 30, 0.75) 0%, rgba(8, 15, 30, 0) 65%), url('/bg-ready.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

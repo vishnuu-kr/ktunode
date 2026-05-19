@@ -300,7 +300,7 @@ export default function Home() {
         <div
           className="absolute inset-0 z-0 pointer-events-none"
           style={{
-            backgroundImage: "url('/hero-bg.png')",
+            backgroundImage: "url('/hero-bg.webp')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center bottom",
