@@ -227,8 +227,9 @@ export default function FoundreeHero() {
 
       {/* Bottom brand */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-20">
-        <span className="font-black text-sm tracking-[0.15em] text-white/22 uppercase">
-          KTU NODE
+        <span className="font-logo text-sm tracking-wide">
+          <span className="font-extrabold text-white">KTU</span>{" "}
+          <span className="font-medium text-white/60">node</span>
         </span>
         <div className="w-8 h-[2px] bg-blue-400/22 rounded-full" />
       </div>

@@ -294,7 +294,7 @@ export function CinematicFooter() {
             {/* Bottom row */}
             <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-slate-400 text-xs font-semibold tracking-wider uppercase">
-                © 2026 KTU NODE. ALL RIGHTS RESERVED.
+                © 2026 KTU node. All rights reserved.
               </div>
               <MagneticButton as="button" onClick={scrollToTop} className="footer-glass-pill w-10 h-10 rounded-full flex items-center justify-center text-slate-500 hover:text-blue-600 group">
                 <ArrowUp className="w-4 h-4 transform group-hover:-translate-y-1 transition-transform duration-300" />

@@ -9,6 +9,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import useSessionPersistence from "@/hooks/useSessionPersistence";
 import { ContinueSessionButton } from "@/components/features/ContinueSessionButton";
 import { SEMESTERS } from "@/lib/constants";
+import { ScrambleText } from "@/components/ui/ScrambleText";
 
 // Dynamically import below-the-fold components to optimize LCP and bundle payloads
 const KtuCompareSection = dynamic(() => import("@/components/features/ktu-compare-section"), { ssr: false });
@@ -45,10 +46,10 @@ function PremiumSelect({
   hasError
 }: {
   value: string | number;
-  onChange: (val: any) => void;
+  onChange: (val: string | number) => void;
   options: { label: string; value: string | number }[];
   placeholder: string;
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   hasError?: boolean;
 }) {
   const [open, setOpen] = useState(false);
@@ -69,7 +70,9 @@ function PremiumSelect({
 
   useEffect(() => {
     if (open) {
-      setFocusedIndex(options.findIndex((o) => o.value === value));
+      queueMicrotask(() => {
+        setFocusedIndex(options.findIndex((o) => o.value === value));
+      });
     }
   }, [open, options, value]);
 
@@ -113,7 +116,7 @@ function PremiumSelect({
   return (
     <div className="relative w-full" ref={ref}>
       <motion.button
-        ref={triggerRef as any}
+        ref={triggerRef}
         type="button"
         onClick={() => setOpen(!open)}
         onKeyDown={handleKeyDown}
@@ -145,7 +148,7 @@ function PremiumSelect({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.98 }}
             transition={{ duration: 0.15, ease: "easeOut" }}
-            className="absolute z-50 w-full mt-2 bg-white/95 backdrop-blur-2xl border border-blue-100 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] py-2 overflow-hidden"
+            className="absolute z-50 w-full mt-2 top-full left-0 bg-white/95 backdrop-blur-2xl border border-blue-100 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] py-2 overflow-hidden"
           >
             <div className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200">
               {options.map((opt, index) => (
@@ -184,25 +187,22 @@ export default function Home() {
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSemester, setSelectedSemester] = useState<number | "">("");
   const [mounted, setMounted] = useState(false);
-  const [scrollPct, setScrollPct] = useState(0);
+
   const [mousePos, setMousePos] = useState({ x: -999, y: -999 });
   const heroRef = useRef<HTMLDivElement>(null);
 
   const [errorState, setErrorState] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    queueMicrotask(() => setMounted(true));
 
-    const onScroll = () => {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      setScrollPct(max > 0 ? (window.scrollY / max) * 100 : 0);
-    };
+
     const onMouse = (e: MouseEvent) => setMousePos({ x: e.clientX, y: e.clientY });
 
-    window.addEventListener("scroll", onScroll, { passive: true });
+
     window.addEventListener("mousemove", onMouse, { passive: true });
     return () => {
-      window.removeEventListener("scroll", onScroll);
+
       window.removeEventListener("mousemove", onMouse);
     };
   }, []);
@@ -239,15 +239,10 @@ export default function Home() {
     <main
       id="main-content"
       className="relative w-full min-h-screen flex flex-col font-sans overflow-x-hidden"
-      style={{ background: "#cfe3f8" }}
+      style={{ background: "var(--color-bg)" }}
       tabIndex={-1}
     >
-      {/* ── Scroll progress ── */}
-      <div
-        className="scroll-progress"
-        style={{ width: `${scrollPct}%` }}
-        aria-hidden="true"
-      />
+
 
       {/* ── Cursor glow (desktop) ── */}
       <div
@@ -310,7 +305,7 @@ export default function Home() {
           </span>
           <Sparkles className="w-3.5 h-3.5 text-blue-500" />
           <span className="text-sm font-bold text-blue-600 tracking-wide">
-            Built for KTU 2024 Scheme
+            <ScrambleText text="Built for KTU 2024 Scheme" duration={1000} delay={150} />
           </span>
         </motion.div>
 
@@ -373,7 +368,7 @@ export default function Home() {
           <div className="flex-1 w-full z-30">
             <PremiumSelect
               value={selectedBranch}
-              onChange={setSelectedBranch}
+              onChange={(val) => setSelectedBranch(String(val))}
               options={branches.map(b => ({ label: b.label, value: b.id }))}
               placeholder="Select Branch"
               icon={BookOpen}
@@ -385,7 +380,7 @@ export default function Home() {
           <div className="flex-1 w-full z-20">
             <PremiumSelect
               value={selectedSemester}
-              onChange={setSelectedSemester}
+              onChange={(val) => setSelectedSemester(val === "" ? "" : Number(val))}
               options={semesters.map(s => ({ label: `Semester ${s}`, value: s }))}
               placeholder="Select Semester"
               icon={Calendar}

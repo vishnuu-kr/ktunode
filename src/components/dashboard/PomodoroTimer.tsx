@@ -68,7 +68,7 @@ export default function PomodoroTimer({
 
       <div className="flex items-center justify-between gap-3 mb-3 relative z-10">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-slate-950/[0.04] border border-slate-950/[0.06] flex items-center justify-center text-slate-800">
+          <div className="w-10 h-10 rounded-xl bg-[#2E95FF]/10 border border-[#2E95FF]/20 flex items-center justify-center text-[#2E95FF]">
             <Timer className="w-5 h-5" />
           </div>
           <div>
@@ -95,7 +95,7 @@ export default function PomodoroTimer({
             onClick={() => handlePresetSelect(preset.val)}
             className={`flex-1 text-[11px] font-black py-1.5 rounded-lg transition-all ${
               sessionMinutes === preset.val
-                ? "bg-white text-slate-900 shadow-[0_2px_6px_rgba(0,0,0,0.02)] border border-slate-950/[0.04]"
+                ? "bg-[#2E95FF] text-white shadow-[0_2px_6px_rgba(46,149,255,0.25)] border border-[#2E95FF]/30"
                 : "text-slate-400 hover:text-slate-800"
             }`}
           >
@@ -118,7 +118,8 @@ export default function PomodoroTimer({
             cx="68"
             cy="68"
             r={radius}
-            className="stroke-slate-900 fill-none"
+            className="fill-none"
+            style={{ stroke: "#2E95FF" }}
             strokeWidth="8"
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}

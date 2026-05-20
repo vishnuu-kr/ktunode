@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Calendar, Clock, Download, Plus, AlertCircle } from "lucide-react";
+import { Calendar, Clock, AlertCircle } from "lucide-react";
 import { format, parseISO } from "date-fns";
 
 export interface ExamSlot {
@@ -72,54 +72,6 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
     };
   }, [nextExam]);
 
-  // Google Calendar URL Generator
-  const getGoogleCalendarUrl = (exam: ExamSlot & { parsedDate: Date }) => {
-    const title = encodeURIComponent(`KTU Exam: ${exam.subjectName} (${exam.subjectCode})`);
-    
-    // Parse time
-    const startStr = exam.parsedDate.toISOString().replace(/-|:|\.\d\d\d/g, "");
-    
-    // Set end date to +3 hours (KTU exams are typically 3 hours)
-    const end = new Date(exam.parsedDate.getTime() + 3 * 60 * 60 * 1000);
-    const endStr = end.toISOString().replace(/-|:|\.\d\d\d/g, "");
-    
-    const details = encodeURIComponent(`KTU Semester ${sem} - ${branch.toUpperCase()} Exam\nSubject Code: ${exam.subjectCode}\nTime: ${exam.time}\n\nSynced via KTUNODE.`);
-    
-    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startStr}/${endStr}&details=${details}&sf=true&output=xml`;
-  };
-
-  // Client-Side iCalendar (.ics) File Generator
-  const downloadIcsFile = (exam: ExamSlot & { parsedDate: Date }) => {
-    const startStr = exam.parsedDate.toISOString().replace(/-|:|\.\d\d\d/g, "");
-    const end = new Date(exam.parsedDate.getTime() + 3 * 60 * 60 * 1000);
-    const endStr = end.toISOString().replace(/-|:|\.\d\d\d/g, "");
-    
-    const icsContent = [
-      "BEGIN:VCALENDAR",
-      "VERSION:2.0",
-      "PRODID:-//KTUNODE//Exam Schedule//EN",
-      "BEGIN:VEVENT",
-      `UID:ktu-exam-${exam.subjectCode}-${exam.date}@ktunode`,
-      `DTSTAMP:${new Date().toISOString().replace(/-|:|\.\d\d\d/g, "")}`,
-      `DTSTART:${startStr}`,
-      `DTEND:${endStr}`,
-      `SUMMARY:KTU Exam: ${exam.subjectName} (${exam.subjectCode})`,
-      `DESCRIPTION:KTU Semester ${sem} - ${branch.toUpperCase()} Exam\\nCode: ${exam.subjectCode}\\nTime: ${exam.time}`,
-      "END:VEVENT",
-      "END:VCALENDAR"
-    ].join("\r\n");
-
-    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `KTU_Exam_${exam.subjectCode}.ics`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  };
-
   // Sort timetable: Upcoming exams (ascending) first, then Past exams (descending) at the bottom
   const sortedTimetable = React.useMemo(() => {
     const todayStart = new Date().setHours(0, 0, 0, 0);
@@ -151,7 +103,7 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
         <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
         
         <div className="flex items-center gap-3 mb-5 relative z-10">
-          <div className="w-10 h-10 rounded-xl bg-slate-950/[0.04] border border-slate-950/[0.06] flex items-center justify-center text-slate-800">
+          <div className="w-10 h-10 rounded-xl bg-[#2E95FF]/10 border border-[#2E95FF]/20 flex items-center justify-center text-[#2E95FF]">
             <Clock className="w-5 h-5" />
           </div>
           <div>
@@ -204,7 +156,7 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
         <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
         
         <div className="flex items-center gap-3 mb-4 md:mb-5">
-          <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-slate-950/[0.04] border border-slate-950/[0.06] flex items-center justify-center text-slate-800 shrink-0">
+          <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-[#2E95FF]/10 border border-[#2E95FF]/20 flex items-center justify-center text-[#2E95FF] shrink-0">
             <Calendar className="w-4.5 h-4.5 md:w-5 md:h-5" />
           </div>
           <div>

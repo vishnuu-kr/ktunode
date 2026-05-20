@@ -2,10 +2,11 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, PanInfo } from "framer-motion";
-import { ChevronUp, Focus, Flame, CalendarRange, Clock } from "lucide-react";
+import { ChevronUp } from "lucide-react";
 
 interface BottomSheetProps {
   isOpen: boolean;
+  onOpen: () => void;
   onClose: () => void;
   children: React.ReactNode;
   titleSummary?: string;
@@ -13,26 +14,32 @@ interface BottomSheetProps {
 
 export const BottomSheet: React.FC<BottomSheetProps> = ({
   isOpen,
+  onOpen,
   onClose,
   children,
   titleSummary = "Focus Timer & Tools",
 }) => {
   const controls = useAnimation();
   const sheetRef = useRef<HTMLDivElement>(null);
-  const [sheetHeight, setSheetHeight] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(800);
 
-  // Screen height reference
-  const windowHeight = typeof window !== "undefined" ? window.innerHeight : 800;
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      queueMicrotask(() => {
+        setWindowHeight(window.innerHeight);
+      });
+      
+      const handleResize = () => {
+        setWindowHeight(window.innerHeight);
+      };
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
   
   // Snap states: 0 = collapsed, 1 = expanded
   const collapsedY = windowHeight - 72; // Show peek bar of height 72px
   const expandedY = 80; // Top margin when fully expanded
-
-  useEffect(() => {
-    if (sheetRef.current) {
-      setSheetHeight(sheetRef.current.offsetHeight);
-    }
-  }, [children]);
 
   useEffect(() => {
     if (isOpen) {
@@ -42,7 +49,10 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
     }
   }, [isOpen, collapsedY, controls]);
 
-  const handleDragEnd = (event: any, info: PanInfo) => {
+  const handleDragEnd = (
+    event: MouseEvent | TouchEvent | PointerEvent,
+    info: PanInfo
+  ) => {
     const swipeThreshold = 50;
     const velocityThreshold = 400;
     const isSwipingUp = info.velocity.y < -velocityThreshold || info.offset.y < -swipeThreshold;
@@ -57,10 +67,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
       }
     } else {
       if (isSwipingUp) {
-        // expand
-        controls.start({ y: expandedY, transition: { type: "spring", damping: 25, stiffness: 220 } });
-        // Trigger status open change in parent indirectly by running a click callback or similar if desired.
-        // For simplicity, we just toggle.
+        onOpen(); // expand
       } else {
         // stay collapsed
         controls.start({ y: collapsedY, transition: { type: "spring", damping: 25, stiffness: 220 } });
@@ -72,8 +79,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
     if (isOpen) {
       onClose();
     } else {
-      // open
-      controls.start({ y: expandedY, transition: { type: "spring", damping: 25, stiffness: 220 } });
+      onOpen();
     }
   };
 

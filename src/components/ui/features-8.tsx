@@ -3,7 +3,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-  BookOpen, FileText, GraduationCap, CheckCircle2,
+  BookOpen, FileText, GraduationCap,
   Check, ShieldCheck, ArrowRight, HelpCircle,
   Clock, RotateCcw, Play, Pause
 } from "lucide-react";

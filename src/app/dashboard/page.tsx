@@ -21,16 +21,11 @@ import {
   Globe,
   FlaskConical,
   PenTool,
-  FileText,
-  Download,
-  Target,
   Code,
   HardDrive,
   MonitorPlay,
   Play,
-  Flame,
   Clock,
-  Plus,
   Timer,
   Pause,
   RotateCcw,
@@ -44,6 +39,8 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import MarkdownRenderer from "@/components/ui/MarkdownRenderer";
 import PomodoroTimer from "@/components/dashboard/PomodoroTimer";
 import TimetableWidget from "@/components/dashboard/TimetableWidget";
+
+import { BottomSheet } from "@/components/dashboard/BottomSheet";
 
 type ViewState = "dashboard" | "subject" | "topic";
 
@@ -222,8 +219,9 @@ function DashboardContent() {
   const [commandOpen, setCommandOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [toast, setToast] = useState<string | null>(null);
-  const [topicScrollPct, setTopicScrollPct] = useState(0);
+
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [mobileSheetOpen, setMobileSheetOpen] = useState(false);
 
   // Dynamic theme accents depending on selected subject
   const theme = getSubjectTheme(view === "dashboard" ? null : selectedSubject);
@@ -235,6 +233,7 @@ function DashboardContent() {
   const [isTimerMuted, setIsTimerMuted] = useState(false);
   
   const timerRef = React.useRef<NodeJS.Timeout | null>(null);
+
 
   const playChime = React.useCallback(() => {
     if (isTimerMuted || typeof window === "undefined") return;
@@ -286,8 +285,10 @@ function DashboardContent() {
   useEffect(() => {
     if (isTimerRunning && secondsLeft === 0) {
       if (timerRef.current) clearInterval(timerRef.current);
-      setToast("Focus session completed! Take a break.");
-      setIsTimerRunning(false);
+      queueMicrotask(() => {
+        setToast("Focus session completed! Take a break.");
+        setIsTimerRunning(false);
+      });
       playChime();
     }
   }, [secondsLeft, isTimerRunning, playChime]);
@@ -299,8 +300,8 @@ function DashboardContent() {
     headingRef.current?.focus();
   }, [view, selectedSubject, selectedTopic]);
 
-  const subjects = getSubjectsForSession(branch, sem);
-  const timetable = getTimetable(branch, sem);
+  const subjects = React.useMemo(() => getSubjectsForSession(branch, sem), [branch, sem]);
+  const timetable = React.useMemo(() => getTimetable(branch, sem), [branch, sem]);
   const { completedTopics, toggleTopic, isCompleted, getModuleProgress, getSubjectProgress, isLoaded } = useProgress();
 
   // Next exam calculation
@@ -322,37 +323,35 @@ function DashboardContent() {
       .sort((a, b) => a.parsedDate.getTime() - b.parsedDate.getTime())[0] || null;
   }, [timetable]);
 
-  const [countdownText, setCountdownText] = useState("");
+  const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; mins: number; secs: number } | null>(null);
 
   useEffect(() => {
     if (!nextExam) {
-      setCountdownText("");
+      queueMicrotask(() => {
+        setTimeLeft(null);
+      });
       return;
     }
     const updateCountdown = () => {
       const diff = nextExam.parsedDate.getTime() - new Date().getTime();
       if (diff <= 0) {
-        setCountdownText("Started");
+        setTimeLeft(null);
       } else {
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        
-        let text = "";
-        if (days > 0) {
-          text = `in ${days}d ${hours}h`;
-        } else if (hours > 0) {
-          text = `in ${hours}h ${mins}m`;
-        } else {
-          text = `in ${mins}m`;
-        }
-        setCountdownText(text);
+        const secs = Math.floor((diff % (1000 * 60)) / 1000);
+        setTimeLeft({ days, hours, mins, secs });
       }
     };
-    updateCountdown();
-    const interval = setInterval(updateCountdown, 60000);
+    queueMicrotask(() => {
+      updateCountdown();
+    });
+    const interval = setInterval(updateCountdown, 1000);
     return () => clearInterval(interval);
   }, [nextExam]);
+
+
 
   const topicIndex: TopicIndexItem[] = subjects.flatMap((subject, subjectIndex) =>
     subject.modules.flatMap((module, moduleIndex) =>
@@ -449,21 +448,12 @@ function DashboardContent() {
       setLastTopicId(topic.id);
       localStorage.setItem("ktunode_last_topic", topic.id);
       setView("topic");
-      setTopicScrollPct(0);
     });
     setCommandOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleTopicScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    const target = e.currentTarget;
-    const scrollHeight = target.scrollHeight - target.clientHeight;
-    if (scrollHeight > 0) {
-      setTopicScrollPct((target.scrollTop / scrollHeight) * 105); // slightly extra padding for visual satisfaction
-    } else {
-      setTopicScrollPct(0);
-    }
-  };
+
 
   const togglePinnedTopic = (topicId: string) => {
     setPinnedTopicIds((current) =>
@@ -578,7 +568,7 @@ function DashboardContent() {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 h-auto lg:h-full items-start"
             >
-              <div className="lg:col-span-8 space-y-5 md:space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-6 lg:pb-32 pr-1 md:pr-2 scrollbar-none">
+              <div className="lg:col-span-8 space-y-5 md:space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-6 lg:pb-32 pr-1 md:pr-2">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex flex-col gap-1.5">
                     <div className="flex items-center gap-2">
@@ -623,38 +613,49 @@ function DashboardContent() {
                   </div>
                 </div>
 
-                {/* Quick Stats Strip (mobile only) */}
-                <div className="flex overflow-x-auto gap-3 pb-1 -mx-4 px-4 scrollbar-none lg:hidden z-10 select-none">
-                  {/* Topics Completed Stat */}
-                  <div className="flex items-center gap-2.5 px-3 py-2 bg-white/70 border border-slate-950/[0.04] rounded-xl shrink-0 backdrop-blur-md shadow-sm">
-                    <div className="w-7.5 h-7.5 rounded-lg bg-blue-500/[0.06] border border-blue-500/[0.1] flex items-center justify-center text-blue-600">
-                      <Target className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <span className="block text-[8px] font-black tracking-wider uppercase text-slate-400 leading-none">Completed</span>
-                      <span className="text-[11px] font-black text-slate-800 leading-tight">
-                        {completedTopics.length}/{totalTopics}
-                      </span>
+                {/* Next Exam Card (mobile only) */}
+                {nextExam && (
+                  <div className="w-full lg:hidden z-10">
+                    <div className="w-full flex items-center justify-between gap-3 px-4 py-3 bg-white/70 border border-slate-950/[0.04] rounded-[20px] backdrop-blur-md shadow-sm">
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
+                        <div className="w-9 h-9 rounded-xl bg-indigo-500/[0.06] border border-indigo-500/[0.1] flex items-center justify-center text-indigo-600 shrink-0">
+                          <Clock className="w-4 h-4" />
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <span className="block text-[9px] font-black tracking-wider uppercase text-slate-400 leading-none">Next Exam</span>
+                          <span className="text-xs font-black text-slate-800 leading-tight block truncate mt-1">
+                            {nextExam.subjectName}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Real-time Countdown Blocks */}
+                      <div className="flex items-center gap-1 shrink-0 select-none">
+                        {timeLeft ? (
+                          [
+                            { val: timeLeft.days, unit: "d" },
+                            { val: timeLeft.hours, unit: "h" },
+                            { val: timeLeft.mins, unit: "m" },
+                            { val: timeLeft.secs, unit: "s" }
+                          ].map((item, idx) => (
+                            <div key={idx} className="flex items-baseline bg-slate-950/[0.03] border border-slate-950/[0.04] px-1.5 py-1 rounded-lg">
+                              <span className="text-xs font-black text-slate-800 tabular-nums leading-none">
+                                {String(item.val).padStart(2, "0")}
+                              </span>
+                              <span className="text-[8px] font-black text-indigo-500/90 ml-0.5 lowercase leading-none">
+                                {item.unit}
+                              </span>
+                            </div>
+                          ))
+                        ) : (
+                          <span className="text-xs font-black text-rose-500 bg-rose-50 border border-rose-100 px-2.5 py-1 rounded-lg">
+                            Started
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
-
-                  {/* Next Exam Stat */}
-                  {nextExam && (
-                    <div className="flex items-center gap-2.5 px-3 py-2 bg-white/70 border border-slate-950/[0.04] rounded-xl shrink-0 backdrop-blur-md shadow-sm">
-                      <div className="w-7.5 h-7.5 rounded-lg bg-indigo-500/[0.06] border border-indigo-500/[0.1] flex items-center justify-center text-indigo-600">
-                        <Clock className="w-4 h-4" />
-                      </div>
-                      <div>
-                        <span className="block text-[8px] font-black tracking-wider uppercase text-slate-400 leading-none">
-                          Next Exam • {countdownText}
-                        </span>
-                        <span className="text-[11px] font-black text-slate-800 leading-tight block max-w-[120px] truncate">
-                          {nextExam.subjectName}
-                        </span>
-                      </div>
-                    </div>
-                  )}
-                </div>
+                )}
 
                 <button
                   type="button"
@@ -733,7 +734,7 @@ function DashboardContent() {
                                 scale: { type: "spring", stiffness: 300, damping: 20 }
                               }}
                               onClick={() => goSubject(subject)}
-                              className={`group relative flex flex-col justify-between p-6 rounded-[20px] text-left transition-all duration-300 cursor-pointer backdrop-blur-md overflow-hidden ${scheme.bg} w-full`}
+                              className={`group relative flex flex-col justify-between p-6 border rounded-[20px] text-left transition-all duration-300 cursor-pointer backdrop-blur-md overflow-hidden ${scheme.bg} w-full`}
                             >
                               {/* Dynamic Background Watermark */}
                               <div className="absolute -bottom-6 -right-6 opacity-[0.03] pointer-events-none transform -rotate-12 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-700 ease-out text-slate-900">
@@ -780,10 +781,13 @@ function DashboardContent() {
                         })}
                   </div>
                 </div>
+
+
               </div>
 
-              {/* Right column sidebar (Unified for desktop and mobile) */}
-              <div className="lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 pr-1 md:pr-2 scrollbar-none">
+              {/* Right column sidebar (Desktop only) */}
+              <div className="hidden lg:block lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 pr-1 md:pr-2">
+
                 <PomodoroTimer
                   sessionMinutes={sessionMinutes}
                   setSessionMinutes={setSessionMinutes}
@@ -842,7 +846,7 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-full overflow-y-auto pb-32 scrollbar-none px-1"
+              className="w-full max-w-4xl mx-auto h-full overflow-y-auto pb-32 px-1"
             >
               <button onClick={goHome} className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 transition-colors mb-8 group">
                 <div className="w-8 h-8 rounded-full bg-white/80 backdrop-blur-md border border-slate-200 flex items-center justify-center group-hover:border-slate-300 shadow-sm">
@@ -853,7 +857,7 @@ function DashboardContent() {
 
               <div className="mb-10 text-center md:text-left">
                 <span className="text-sm font-bold text-blue-600 tracking-wider uppercase mb-2 block">{selectedSubject.code}</span>
-                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 leading-[1.05]">
+                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 leading-[1.2]">
                   <span className="gradient-text">{selectedSubject.name}</span>
                 </h1>
               </div>
@@ -960,16 +964,9 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              onScroll={handleTopicScroll}
-              className="w-full max-w-4xl mx-auto h-full overflow-y-auto pb-48 scrollbar-none px-1 relative"
+              className="w-full max-w-4xl mx-auto h-full overflow-y-auto pb-48 px-1 relative"
             >
-              {/* Sticky Scroll Progress Bar */}
-              <div className="sticky top-0 left-0 right-0 z-50 h-1 bg-slate-950/[0.03] rounded-full overflow-hidden mb-6">
-                <div
-                  className={`h-full bg-gradient-to-r ${theme.accent === 'green' ? 'from-emerald-400 to-teal-500' : theme.accent === 'purple' ? 'from-purple-400 to-fuchsia-500' : theme.accent === 'amber' ? 'from-amber-400 to-orange-500' : theme.accent === 'emerald' ? 'from-teal-400 to-emerald-500' : 'from-blue-400 to-indigo-500'} transition-all duration-75`}
-                  style={{ width: `${Math.min(topicScrollPct, 100)}%` }}
-                />
-              </div>
+
               <button 
                 onClick={() => goSubject(selectedSubject!)} 
                 className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 transition-colors mb-6 md:mb-8 group"
@@ -994,9 +991,9 @@ function DashboardContent() {
                     goTopic(prevTopic, selectedSubject!);
                   }
                 }}
-                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 border border-white/70 overflow-hidden min-h-[60vh] relative cursor-grab active:cursor-grabbing select-none"
+                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 border border-white/70 overflow-hidden min-h-[60vh] relative"
               >
-                <div className="mb-6 md:mb-8 border-b border-slate-100 pb-6 md:pb-8 flex items-start justify-between gap-4 max-w-3xl mx-auto px-4 md:px-0">
+                <div className="mb-6 md:mb-8 border-b border-slate-100 pb-6 md:pb-8 pt-6 md:pt-8 flex items-start justify-between gap-4 max-w-3xl mx-auto px-4 md:px-0">
                   <h1 
                     id="topic-heading"
                     ref={headingRef}
@@ -1292,6 +1289,81 @@ function DashboardContent() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Mobile Bottom Sheet for Study Tools */}
+      <BottomSheet
+        isOpen={mobileSheetOpen}
+        onOpen={() => setMobileSheetOpen(true)}
+        onClose={() => setMobileSheetOpen(false)}
+      >
+
+        <PomodoroTimer
+          sessionMinutes={sessionMinutes}
+          setSessionMinutes={setSessionMinutes}
+          secondsLeft={secondsLeft}
+          setSecondsLeft={setSecondsLeft}
+          isRunning={isTimerRunning}
+          setIsRunning={setIsTimerRunning}
+          isMuted={isTimerMuted}
+          setIsMuted={setIsTimerMuted}
+        />
+
+        <TimetableWidget timetable={timetable} sem={sem} branch={branch} />
+
+        {pinnedTopicIds.length > 0 && (
+          <div className="bg-white/65 backdrop-blur-md border border-slate-950/[0.06] rounded-[20px] p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)]">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/[0.06] border border-amber-500/[0.15] flex items-center justify-center text-amber-600">
+                <Star className="w-4 h-4 fill-current" />
+              </div>
+              <div>
+                <h3 className="font-black text-slate-900 text-base leading-tight">Pinned Topics</h3>
+                <p className="text-xs text-slate-400/80 font-bold">Star tough items to pin here</p>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              {pinnedTopicIds.map((id) => {
+                const item = topicIndex.find((t) => t.topic.id === id);
+                if (!item) return null;
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    onClick={() => {
+                      setMobileSheetOpen(false);
+                      goTopic(item.topic, item.subject);
+                    }}
+                    className="w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] hover:bg-amber-500/[0.04] border border-transparent hover:border-amber-500/[0.15] transition-all text-left group"
+                  >
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-xs font-black text-slate-800 truncate">{item.topic.title}</span>
+                      <span className="block text-[10px] font-bold text-slate-400/80 truncate">{item.subject.code}</span>
+                    </span>
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition-all shrink-0 ml-2" />
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </BottomSheet>
+
+      {/* Floating Sticky Mobile Study Tools FAB */}
+      {!mobileSheetOpen && (
+        <div className="fixed bottom-6 right-6 z-[40] lg:hidden">
+          <motion.button
+            type="button"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setMobileSheetOpen(true)}
+            className="flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-b from-[#2E95FF] to-[#007AFF] hover:brightness-110 text-white font-black text-xs shadow-lg shadow-blue-500/25 border border-blue-400/20 cursor-pointer"
+          >
+            <Timer className="w-4 h-4 animate-pulse" />
+            <span>Study Tools</span>
+          </motion.button>
+        </div>
+      )}
     </div>
   );
 }
