@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight, LayoutDashboard, UserRound } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
+import confetti from "canvas-confetti";
 
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
@@ -35,6 +36,51 @@ export default function Navbar() {
     queueMicrotask(() => setMobileOpen(false));
   }, [pathname]);
 
+  const fireConfetti = useCallback(() => {
+    const colors = ["#2E95FF", "#007AFF", "#60a5fa", "#818cf8", "#a78bfa", "#f472b6", "#facc15", "#ffffff"];
+
+    // Central cannon pop — shoots straight up and fans out
+    confetti({
+      particleCount: 180,
+      angle: 90,
+      spread: 100,
+      origin: { x: 0.5, y: 0.55 },
+      colors,
+      startVelocity: 65,
+      gravity: 0.9,
+      scalar: 1.1,
+      ticks: 200,
+    });
+
+    // Left popper
+    setTimeout(() => {
+      confetti({
+        particleCount: 80,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0.25, y: 0.6 },
+        colors,
+        startVelocity: 55,
+        gravity: 1.0,
+        scalar: 0.9,
+      });
+    }, 120);
+
+    // Right popper
+    setTimeout(() => {
+      confetti({
+        particleCount: 80,
+        angle: 120,
+        spread: 55,
+        origin: { x: 0.75, y: 0.6 },
+        colors,
+        startVelocity: 55,
+        gravity: 1.0,
+        scalar: 0.9,
+      });
+    }, 240);
+  }, []);
+
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
@@ -55,8 +101,8 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-slate-800 to-slate-950 text-white text-sm font-black transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-slate-900/25">
+        <Link href="/" onClick={fireConfetti} className="flex items-center gap-2.5 group">
+          <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-slate-800 to-slate-950 text-white text-sm font-black transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-slate-900/25 group-hover:rotate-3">
             K
           </div>
           <span className="text-base font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors duration-200">

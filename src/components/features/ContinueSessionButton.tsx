@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight, X } from "lucide-react";
 import { type SavedSession, getBranchShortLabel } from "@/types/session";
 import { MagneticButton } from "@/components/ui/MagneticButton";

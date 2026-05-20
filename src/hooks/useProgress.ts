@@ -8,15 +8,18 @@ export function useProgress() {
 
   // Load from local storage on mount
   useEffect(() => {
-    const saved = localStorage.getItem("ktunode_progress");
-    if (saved) {
-      try {
-        setCompletedTopics(JSON.parse(saved));
-      } catch (e) {
-        console.error("Failed to parse progress", e);
+    const timer = setTimeout(() => {
+      const saved = localStorage.getItem("ktunode_progress");
+      if (saved) {
+        try {
+          setCompletedTopics(JSON.parse(saved));
+        } catch (e) {
+          console.error("Failed to parse progress", e);
+        }
       }
-    }
-    setIsLoaded(true);
+      setIsLoaded(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   // Save to local storage whenever it changes

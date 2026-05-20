@@ -61,6 +61,9 @@ export const MagneticButton = ({ children, className = "", onClick, href }: Magn
     </>
   );
 
+  const widthClasses = className.split(" ").filter(c => c.startsWith("w-") || c.includes(":w-") || c.includes("shrink-")).join(" ");
+  const otherClasses = className.split(" ").filter(c => !(c.startsWith("w-") || c.includes(":w-") || c.includes("shrink-"))).join(" ");
+
   return (
     <motion.div
       ref={ref}
@@ -70,14 +73,14 @@ export const MagneticButton = ({ children, className = "", onClick, href }: Magn
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.97 }}
       transition={{ type: "spring", stiffness: 360, damping: 22, mass: 0.45 }}
-      className="relative z-20 group inline-block"
+      className={`relative group ${widthClasses || "inline-block"}`}
     >
       {href ? (
-        <Link href={href} className={`${buttonBaseClasses} ${className}`}>
+        <Link href={href} className={`${buttonBaseClasses} w-full ${otherClasses}`}>
           {content}
         </Link>
       ) : (
-        <button type="button" onClick={onClick} className={`${buttonBaseClasses} ${className}`}>
+        <button type="button" onClick={onClick} className={`${buttonBaseClasses} w-full ${otherClasses}`}>
           {content}
         </button>
       )}

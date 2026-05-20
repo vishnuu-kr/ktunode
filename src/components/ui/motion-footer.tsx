@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, BookOpen, FileText, Zap, ArrowUp } from "lucide-react";
+import { LayoutDashboard, ArrowUp } from "lucide-react";
 
 // Register ScrollTrigger safely for Next.js SSR
 if (typeof window !== "undefined") {
@@ -131,11 +131,11 @@ const MagneticButton = React.forwardRef<HTMLElement, MagneticButtonProps>(
           });
         };
 
-        element.addEventListener("mousemove", handleMouseMove as any);
+        element.addEventListener("mousemove", handleMouseMove as EventListener);
         element.addEventListener("mouseleave", handleMouseLeave);
 
         return () => {
-          element.removeEventListener("mousemove", handleMouseMove as any);
+          element.removeEventListener("mousemove", handleMouseMove as EventListener);
           element.removeEventListener("mouseleave", handleMouseLeave);
         };
       }, element);
@@ -145,10 +145,13 @@ const MagneticButton = React.forwardRef<HTMLElement, MagneticButtonProps>(
 
     return (
       <Component
-        ref={(node: HTMLElement) => {
-          (localRef as any).current = node;
-          if (typeof forwardedRef === "function") forwardedRef(node);
-          else if (forwardedRef) (forwardedRef as any).current = node;
+        ref={(node: HTMLElement | null) => {
+          (localRef as React.MutableRefObject<HTMLElement | null>).current = node;
+          if (typeof forwardedRef === "function") {
+            forwardedRef(node);
+          } else if (forwardedRef && "current" in forwardedRef) {
+            (forwardedRef as React.MutableRefObject<HTMLElement | null>).current = node;
+          }
         }}
         className={cn("cursor-pointer", className)}
         {...props}

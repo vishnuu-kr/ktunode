@@ -31,30 +31,33 @@ export default function useSessionPersistence(): UseSessionPersistenceReturn {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) {
-        setSavedSession(null);
-        return;
-      }
-
-      const parsed = JSON.parse(raw);
-      if (validateSession(parsed)) {
-        setSavedSession(parsed);
-      } else {
-        // Invalid data — clean up
-        localStorage.removeItem(STORAGE_KEY);
-        setSavedSession(null);
-      }
-    } catch {
-      // Corrupted JSON or localStorage unavailable — clean up
+    const timer = setTimeout(() => {
       try {
-        localStorage.removeItem(STORAGE_KEY);
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) {
+          setSavedSession(null);
+          return;
+        }
+
+        const parsed = JSON.parse(raw);
+        if (validateSession(parsed)) {
+          setSavedSession(parsed);
+        } else {
+          // Invalid data — clean up
+          localStorage.removeItem(STORAGE_KEY);
+          setSavedSession(null);
+        }
       } catch {
-        // Fail silently if removeItem also throws
+        // Corrupted JSON or localStorage unavailable — clean up
+        try {
+          localStorage.removeItem(STORAGE_KEY);
+        } catch {
+          // Fail silently if removeItem also throws
+        }
+        setSavedSession(null);
       }
-      setSavedSession(null);
-    }
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   /**

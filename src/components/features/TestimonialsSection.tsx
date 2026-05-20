@@ -1,66 +1,66 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, Heart } from "lucide-react";
 
 const testimonials = [
   {
     name: "Arjun Menon",
-    branch: "CS — Semester 6",
+    branch: "Computer Science — Sem 6",
     avatar: "AM",
-    color: "from-blue-400 to-indigo-500",
+    color: "bg-blue-50 text-blue-600 border-blue-100",
     rating: 5,
-    quote: "This platform changed how I learn.",
+    quote: "This platform changed how I study.",
     text: "KTUNODE completely changed how I study. The chapter-wise notes are so clean — I stopped wasting time on dense textbooks and scored my best semester yet.",
   },
   {
     name: "Priya Krishnan",
-    branch: "EC — Semester 4",
+    branch: "Electronics — Sem 4",
     avatar: "PK",
-    color: "from-violet-400 to-purple-500",
+    color: "bg-violet-50 text-violet-600 border-violet-100",
     rating: 5,
-    quote: "Helped me build real skills, not just theory.",
-    text: "The PYQs are organized exactly how I needed them. I could see patterns in questions across years and walked into the exam feeling genuinely prepared.",
+    quote: "Helped me build real exam confidence.",
+    text: "The PYQs are organized exactly how I needed them. I could see patterns in questions across years and walked into the exam prepared.",
   },
   {
     name: "Rahul Suresh",
-    branch: "ME — Semester 8",
+    branch: "Mechanical — Sem 8",
     avatar: "RS",
-    color: "from-emerald-400 to-teal-500",
+    color: "bg-emerald-50 text-emerald-600 border-emerald-100",
     rating: 5,
-    quote: "I finally feel confident applying what I learn.",
+    quote: "I finally study with absolute clarity.",
     text: "The syllabus tracker is a game changer. I could see exactly what I'd covered and what was left. No more last-minute panic about missing modules.",
   },
   {
     name: "Anjali Nair",
-    branch: "CE — Semester 5",
+    branch: "Civil — Sem 5",
     avatar: "AN",
-    color: "from-rose-400 to-pink-500",
+    color: "bg-rose-50 text-rose-600 border-rose-100",
     rating: 5,
     quote: "Finally built for the 2024 scheme.",
     text: "Finally a platform built for the 2024 scheme. Everything is up to date and the notes actually match what our professors teach. Highly recommend.",
   },
   {
     name: "Vishnu Das",
-    branch: "EE — Semester 3",
+    branch: "Electrical — Sem 3",
     avatar: "VD",
-    color: "from-amber-400 to-orange-500",
+    color: "bg-amber-50 text-amber-600 border-amber-100",
     rating: 5,
-    quote: "Saves me hours every single week.",
+    quote: "Saves me hours every study week.",
     text: "I used to spend hours searching for good notes. Now I just open KTUNODE and everything is right there. Saves me so much time every week.",
   },
   {
     name: "Sneha Pillai",
-    branch: "CS — Semester 7",
+    branch: "Computer Science — Sem 7",
     avatar: "SP",
-    color: "from-cyan-400 to-blue-500",
+    color: "bg-cyan-50 text-cyan-600 border-cyan-100",
     rating: 5,
     quote: "My grades improved noticeably.",
     text: "The compare feature showed me exactly how cluttered my old notes were. The structured format here is just on another level. My grades improved noticeably.",
   },
 ];
 
-const doubled = [...testimonials, ...testimonials];
+const doubled = [...testimonials, ...testimonials, ...testimonials];
 
 export default function TestimonialsSection() {
   const [paused, setPaused] = useState(false);
@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([e]) => { if (e.isIntersecting) setVisible(true); },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     );
     if (sectionRef.current) obs.observe(sectionRef.current);
     return () => obs.disconnect();
@@ -79,16 +79,19 @@ export default function TestimonialsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(180deg, #eef6ff 0%, #e5f1ff 100%)",
-      }}
+      className="relative py-28 overflow-hidden bg-gradient-to-b from-slate-50 via-[#f5f9ff] to-slate-50 border-t border-slate-100"
       aria-labelledby="testimonials-heading"
     >
-      {/* Blobs */}
-      <div className="absolute top-0 left-1/3 w-96 h-64 bg-blue-100/45 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-80 h-64 bg-indigo-100/35 rounded-full blur-3xl pointer-events-none" />
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes scroll-left {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); }
+        }
+      ` }} />
+
+      {/* Soft Glow Orbs */}
+      <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-blue-300/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-indigo-300/8 rounded-full blur-3xl pointer-events-none" />
 
       {/* Header */}
       <div
@@ -96,19 +99,19 @@ export default function TestimonialsSection() {
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
-        <div className="section-badge mb-5">
-          <Star className="w-3 h-3 fill-current" />
-          Student Reviews
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 border border-blue-100/60 text-blue-600 text-xs font-bold tracking-wide uppercase shadow-sm">
+          <Heart className="w-3 h-3 fill-current text-blue-500" />
+          Loved by students
         </div>
         <h2
           id="testimonials-heading"
-          className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-5 leading-[1.05]"
+          className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-5 leading-[1.05]"
         >
           Loved by KTU
           <br />
           <span className="gradient-text-animated">students.</span>
         </h2>
-        <p className="text-slate-500 text-lg max-w-lg mx-auto leading-relaxed">
+        <p className="text-slate-500 text-base md:text-lg max-w-lg mx-auto leading-relaxed font-medium">
           KTU students across every branch use KTUNODE to study smarter
           and walk into exams prepared.
         </p>
@@ -121,52 +124,54 @@ export default function TestimonialsSection() {
         onMouseLeave={() => setPaused(false)}
       >
         {/* Fade edges */}
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-[#e5f1ff] to-transparent" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-[#e5f1ff] to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-[#f5f9ff] to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-[#f5f9ff] to-transparent" />
 
         <div
-          className="flex gap-5 w-max"
+          className="flex gap-6 w-max py-4"
           style={{
-            animation: "scroll-x 48s linear infinite",
+            animation: "scroll-left 50s linear infinite",
             animationPlayState: paused ? "paused" : "running",
           }}
         >
           {doubled.map((t, i) => (
             <div
               key={i}
-              className="w-[340px] flex-shrink-0 bg-white border border-blue-100 rounded-3xl p-7 cursor-default group ripple-card hover:-translate-y-2.5 hover:shadow-[0_24px_56px_rgba(37,99,235,0.14)] transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              className="w-[360px] flex-shrink-0 bg-white border border-slate-200/50 rounded-3xl p-7 cursor-default group hover:-translate-y-2 hover:border-blue-300 hover:shadow-[0_20px_40px_rgba(37,99,235,0.06),inset_0_1px_0_rgba(255,255,255,0.95)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
               style={{
-                boxShadow: "0 2px 16px rgba(37,99,235,0.06)",
+                boxShadow: "0 2px 16px rgba(0,0,0,0.01), inset 0 1px 0 rgba(255,255,255,0.9)",
               }}
             >
-              {/* Quote + icon */}
-              <div className="flex items-start justify-between mb-4">
-                <p className="text-xl font-black text-slate-900 leading-snug group-hover:text-blue-700 transition-colors flex-1 pr-3">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <Quote className="w-6 h-6 text-blue-100 flex-shrink-0 mt-0.5 group-hover:text-blue-200 transition-colors" />
+              {/* Rating stars & Quote mark */}
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: t.rating }).map((_, s) => (
+                    <Star key={s} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <Quote className="w-5 h-5 text-blue-500/10 group-hover:text-blue-500/20 transition-colors" />
               </div>
 
-              {/* Stars */}
-              <div className="flex gap-0.5 mb-4">
-                {Array.from({ length: t.rating }).map((_, s) => (
-                  <Star key={s} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                ))}
-              </div>
+              {/* Quote Title */}
+              <h3 className="text-lg font-extrabold text-slate-800 leading-snug mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                &ldquo;{t.quote}&rdquo;
+              </h3>
 
-              {/* Body */}
-              <p className="text-sm text-slate-500 leading-relaxed mb-6">{t.text}</p>
+              {/* Description */}
+              <p className="text-sm text-slate-500/95 leading-relaxed mb-6 font-medium">
+                {t.text}
+              </p>
 
-              {/* Author */}
+              {/* Profile */}
               <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
                 <div
-                  className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.color} flex items-center justify-center text-white text-xs font-black flex-shrink-0 shadow-md`}
+                  className={`w-9 h-9 rounded-xl border flex items-center justify-center text-xs font-bold ${t.color}`}
                 >
                   {t.avatar}
                 </div>
                 <div>
-                  <div className="text-sm font-black text-slate-800">{t.name}</div>
-                  <div className="text-xs text-slate-400 font-medium">{t.branch}</div>
+                  <div className="text-sm font-bold text-slate-800">{t.name}</div>
+                  <div className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">{t.branch}</div>
                 </div>
               </div>
             </div>

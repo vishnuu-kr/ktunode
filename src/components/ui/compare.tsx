@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 interface CompareProps {
@@ -80,7 +81,7 @@ export const Compare: React.FC<CompareProps> = ({
   useEffect(() => {
     if (!autoplay || isInteracted) return;
 
-    let startTime = Date.now();
+    const startTime = Date.now();
     let animationFrameId: number;
 
     const animate = () => {
@@ -162,11 +163,14 @@ export const Compare: React.FC<CompareProps> = ({
       {/* First (Bottom) Image - Chaos */}
       <div className="absolute inset-0 w-full h-full bg-neutral-200 dark:bg-neutral-800">
         {firstImage && (
-          <img
+          <Image
             src={firstImage}
             alt="Cluttered, unstructured KTU study material"
-            className={cn("w-full h-full select-none pointer-events-none", firstImageClassName)}
+            className={cn("w-full h-full select-none pointer-events-none object-cover", firstImageClassName)}
             draggable={false}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
           />
         )}
       </div>
@@ -179,11 +183,14 @@ export const Compare: React.FC<CompareProps> = ({
         }}
       >
         {secondImage && (
-          <img
+          <Image
             src={secondImage}
             alt="Clean, structured KTUNODE study notes"
-            className={cn("w-full h-full select-none pointer-events-none", secondImageClassname)}
+            className={cn("w-full h-full select-none pointer-events-none object-cover", secondImageClassname)}
             draggable={false}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
           />
         )}
       </div>

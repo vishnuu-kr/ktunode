@@ -56,6 +56,12 @@ export const ktuTimetableData: TimetableData[] = [
         time: "1:30 PM - 4:30 PM",
         subjectCode: "PCCST403",
         subjectName: "Operating Systems"
+      },
+      {
+        date: "2026-05-21",
+        time: "9:30 AM - 12:30 PM",
+        subjectCode: "PCCSL401",
+        subjectName: "Database Management Systems Lab"
       }
     ]
   },

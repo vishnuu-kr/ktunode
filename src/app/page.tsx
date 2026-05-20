@@ -3,19 +3,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
-import { CinematicFooter } from "@/components/ui/motion-footer";
-import { Features } from "@/components/ui/features-8";
-import KtuCompareSection from "@/components/features/ktu-compare-section";
-import FoundreeHero from "@/components/features/FoundreeHero";
-import HowItWorksSection from "@/components/features/HowItWorksSection";
-import TestimonialsSection from "@/components/features/TestimonialsSection";
-import FaqSection from "@/components/features/FaqSection";
-import CtaBanner from "@/components/features/CtaBanner";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import useSessionPersistence from "@/hooks/useSessionPersistence";
 import { ContinueSessionButton } from "@/components/features/ContinueSessionButton";
 import { SEMESTERS } from "@/lib/constants";
+
+// Dynamically import below-the-fold components to optimize LCP and bundle payloads
+const KtuCompareSection = dynamic(() => import("@/components/features/ktu-compare-section"), { ssr: false });
+const HowItWorksSection = dynamic(() => import("@/components/features/HowItWorksSection"), { ssr: false });
+const FoundreeHero = dynamic(() => import("@/components/features/FoundreeHero"), { ssr: false });
+const Features = dynamic(() => import("@/components/ui/features-8").then(mod => mod.Features), { ssr: false });
+const TestimonialsSection = dynamic(() => import("@/components/features/TestimonialsSection"), { ssr: false });
+const FaqSection = dynamic(() => import("@/components/features/FaqSection"), { ssr: false });
+const CtaBanner = dynamic(() => import("@/components/features/CtaBanner"), { ssr: false });
+const CinematicFooter = dynamic(() => import("@/components/ui/motion-footer").then(mod => mod.CinematicFooter), { ssr: false });
 import {
   Sparkles, BookOpen, Calendar, ArrowRight, ShieldCheck,
   FileText, ChevronDown,
@@ -31,48 +34,7 @@ const branches = [
 
 const semesters = SEMESTERS;
 
-// Floating card data
-const floatingCards = [
-  {
-    icon: BookOpen,
-    title: "Syllabus",
-    sub: "2024 Scheme",
-    iconBg: "bg-blue-50",
-    iconColor: "text-blue-600",
-    border: "border-blue-100",
-    rotate: -4,
-    x: -1,
-    y: 0,
-    side: "left" as const,
-    top: "28%",
-  },
-  {
-    icon: FileText,
-    title: "PYQs",
-    sub: "Chapter-wise",
-    iconBg: "bg-violet-50",
-    iconColor: "text-violet-600",
-    border: "border-violet-100",
-    rotate: 3,
-    x: 1,
-    y: 0,
-    side: "right" as const,
-    top: "32%",
-  },
-  {
-    icon: ShieldCheck,
-    title: "98% Coverage",
-    sub: "All modules",
-    iconBg: "bg-emerald-50",
-    iconColor: "text-emerald-600",
-    border: "border-emerald-100",
-    rotate: 2,
-    x: 1,
-    y: 0,
-    side: "right" as const,
-    top: "52%",
-  },
-];
+
 
 function PremiumSelect({
   value,
@@ -333,57 +295,7 @@ export default function Home() {
         {/* ── Dot grid overlay ── */}
         <div className="absolute inset-0 z-0 dot-grid opacity-[0.10] pointer-events-none" />
 
-        {/* ── Floating info cards (Framer Motion) ── */}
-        {floatingCards.map((card, i) => {
-          const Icon = card.icon;
-          const isLeft = card.side === "left";
-          return (
-            <motion.div
-              key={i}
-              className={`hidden lg:flex absolute ${isLeft ? "left-8" : "right-8"} bg-white/95 backdrop-blur-xl p-4 rounded-2xl border ${card.border} items-center gap-3 z-20 cursor-default`}
-              style={{ top: card.top }}
-              initial={{ opacity: 0, x: isLeft ? -40 : 40, rotate: card.rotate }}
-              animate={{
-                opacity: mounted ? 1 : 0,
-                x: 0,
-                rotate: card.rotate,
-              }}
-              transition={{
-                delay: 0.4 + i * 0.15,
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1] as any,
-              }}
-              whileHover={{
-                y: -6,
-                scale: 1.04,
-                boxShadow: "0 20px 48px rgba(37,99,235,0.18)",
-                transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] as any },
-              }}
-            >
-              {/* Subtle float loop */}
-              <motion.div
-                className="flex items-center gap-3"
-                animate={{ y: [0, -5, 0] }}
-                transition={{
-                  duration: 4 + i,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: i * 0.8,
-                }}
-              >
-                <div
-                  className={`w-10 h-10 flex items-center justify-center ${card.iconBg} ${card.iconColor} rounded-xl`}
-                >
-                  <Icon className="w-5 h-5" />
-                </div>
-                <div className="text-left">
-                  <div className="text-sm font-bold text-slate-800">{card.title}</div>
-                  <div className="text-xs font-medium text-slate-400">{card.sub}</div>
-                </div>
-              </motion.div>
-            </motion.div>
-          );
-        })}
+
 
         {/* ── Badge ── */}
         <motion.div

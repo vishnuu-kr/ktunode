@@ -1,287 +1,509 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import {
   BookOpen, FileText, GraduationCap, CheckCircle2,
+  Check, ShieldCheck, ArrowRight, HelpCircle,
+  Clock, RotateCcw, Play, Pause
 } from "lucide-react";
 
-const modules = [
-  { name: "Module 1 — Introduction",    done: true },
-  { name: "Module 2 — Core Concepts",   done: true },
-  { name: "Module 3 — Advanced Topics", done: false },
-  { name: "Module 4 — Applications",    done: false },
+// Branches configuration
+const branchesData = [
+  { label: "CS", pct: 98, name: "Computer Science", activeColor: "text-blue-500 bg-blue-50 border-blue-200" },
+  { label: "EC", pct: 96, name: "Electronics & Comm.", activeColor: "text-violet-500 bg-violet-50 border-violet-200" },
+  { label: "ME", pct: 95, name: "Mechanical Eng.", activeColor: "text-emerald-500 bg-emerald-50 border-emerald-200" },
 ];
 
-const branches = [
-  { label: "CS", pct: 98 },
-  { label: "EC", pct: 96 },
-  { label: "ME", pct: 95 },
-];
+const mockNotes = {
+  DBMS: {
+    title: "Database Systems — Module 1",
+    content: "A relational database consists of a collection of tables, each assigned a unique name. Tables are composed of tuples (rows) and attributes (columns).",
+    keywords: ["relational database", "tables", "tuples", "attributes"]
+  },
+  OS: {
+    title: "Operating Systems — Module 2",
+    content: "A process is a program in execution. The scheduler manages process states (Ready, Running, Blocked) to optimize CPU utilization.",
+    keywords: ["process", "scheduler", "CPU utilization"]
+  },
+  Math: {
+    title: "Linear Algebra — Module 1",
+    content: "Eigenvalues and eigenvectors represent scaling transformations. Ax = λx, where A is the transformation matrix.",
+    keywords: ["Eigenvalues", "eigenvectors", "scaling transformations"]
+  }
+};
 
+const modelPapersData = {
+  "Sem 1": [
+    "Linear Algebra & Calculus",
+    "Engineering Chemistry",
+    "Programming in C"
+  ],
+  "Sem 2": [
+    "Vector Calculus & Diff Eq",
+    "Engineering Physics",
+    "Basic Electrical Eng."
+  ],
+  "Sem 3": [
+    "Discrete Math Structures",
+    "Data Structures",
+    "Digital System Design"
+  ]
+};
 
+type NoteKey = keyof typeof mockNotes;
+type SemKey = keyof typeof modelPapersData;
 
 export function Features() {
   const sectionRef = useRef<HTMLElement>(null);
-  const isInView = useInView(sectionRef, { once: true, margin: "0px" });
+  const isInView = useInView(sectionRef, { once: true, margin: "-10%" });
+
+  // 1. Branch Dial State
+  const [selectedBranchIdx, setSelectedBranchIdx] = useState(0);
+  const currentBranch = branchesData[selectedBranchIdx];
+
+  // 2. Interactive Note State
+  const [activeNoteTag, setActiveNoteTag] = useState<NoteKey>("DBMS");
+  const noteData = mockNotes[activeNoteTag];
+
+  // 3. Interactive Pomodoro Study Timer State
+  const [timerSeconds, setTimerSeconds] = useState(1500); // 25:00
+  const [timerRunning, setTimerRunning] = useState(false);
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout | null = null;
+    if (timerRunning) {
+      interval = setInterval(() => {
+        setTimerSeconds((prev) => {
+          if (prev <= 1) {
+            setTimerRunning(false);
+            return 1500; // Reset
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [timerRunning]);
+
+  const formatTime = (secs: number) => {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+  };
+
+  const handleTimerReset = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setTimerRunning(false);
+    setTimerSeconds(1500);
+  };
+
+  // 4. Interactive Syllabus Tracker State
+  const [modules, setModules] = useState([
+    { name: "Module 1 — Relational Model", done: true },
+    { name: "Module 2 — SQL Queries", done: true },
+    { name: "Module 3 — Normalization", done: false },
+    { name: "Module 4 — Indexing & Hashing", done: false },
+  ]);
+
+  const toggleModule = (idx: number) => {
+    setModules(prev => prev.map((m, i) => i === idx ? { ...m, done: !m.done } : m));
+  };
+
+  const completedCount = modules.filter(m => m.done).length;
+  const isFullyComplete = completedCount === modules.length;
+
+  // 5. Model Question Papers State
+  const [selectedSem, setSelectedSem] = useState<SemKey>("Sem 1");
+  const currentPapers = modelPapersData[selectedSem];
+
+  // 6. Zero-Friction Launch State
+  const [launchStep, setLaunchStep] = useState<"idle" | "launching" | "ready">("idle");
+  const handleSimulatedLaunch = () => {
+    if (launchStep !== "idle") return;
+    setLaunchStep("launching");
+    setTimeout(() => {
+      setLaunchStep("ready");
+    }, 1200);
+  };
 
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 overflow-hidden"
-      style={{ background: "linear-gradient(180deg, #ffffff 0%, #eef6ff 100%)" }}
+      className="relative py-32 overflow-hidden bg-gradient-to-b from-white to-slate-50 border-t border-slate-100"
     >
-      {/* Decorative blobs */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50/60 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-sky-50/40 rounded-full blur-3xl pointer-events-none" />
+      {/* Premium Ambient Background Blur */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
+        <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-blue-100/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-sky-100/10 rounded-full blur-3xl" />
+      </div>
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="relative z-10 mx-auto max-w-6xl px-6">
         {/* Header */}
         <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 24 }}
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="section-badge mb-5">What you get</div>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight text-black mb-5 leading-[1.05]">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 border border-blue-100/50 text-blue-600 text-xs font-bold tracking-wide uppercase select-none">
+            Features
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-5 leading-[1.06]">
             Everything you need
             <br />
             <span className="gradient-text-animated">to ace KTU.</span>
           </h2>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-slate-500 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-medium">
             Built specifically for the 2024 KTU scheme — no fluff, just the
             resources that actually matter for your exams.
           </p>
         </motion.div>
 
-        {/* Bento grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+        {/* Bento grid - Symmetric 3x2 Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {/* ── Coverage stat — tall left card ── */}
+          {/* ── 1. Coverage dial ── */}
           <motion.div
-            className="lg:col-span-4 lg:row-span-2 premium-card p-8 flex flex-col items-center justify-center text-center gap-5 cursor-default"
-            initial={{ opacity: 0, y: 32 }}
+            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.015)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0, duration: 0.65, ease: [0.16, 1, 0.3, 1] as any }}
-            whileHover={{ y: -6, boxShadow: "0 24px 60px rgba(46,149,255,0.16)" }}
-            style={{
-              background: "linear-gradient(160deg, #eff6ff 0%, #ffffff 60%)",
-              borderColor: "#dbeafe",
-            }}
+            transition={{ delay: 0, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
           >
-            <div className="relative flex flex-col items-center">
-              <motion.div
-                className="text-8xl font-black text-slate-900 leading-none tabular-nums"
-                initial={{ opacity: 0, scale: 0.7 }}
-                animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              >
-                98
-              </motion.div>
-              <div className="text-4xl font-black leading-none" style={{ color: "#2E95FF" }}>%</div>
-              <motion.div
-                className="absolute -inset-6 rounded-full opacity-10 pointer-events-none"
-                animate={{ scale: [1, 1.15, 1], opacity: [0.1, 0.18, 0.1] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                style={{ background: "radial-gradient(circle, #2E95FF 0%, transparent 70%)" }}
-              />
-            </div>
             <div>
-              <div className="text-xl font-black text-slate-900">Exam Coverage</div>
-              <div className="text-sm text-slate-400 mt-1 leading-relaxed">
-                Topics mapped to the 2024 KTU scheme across all branches
+              <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4">Exam Coverage</div>
+              
+              {/* Branch Selector Tabs */}
+              <div className="flex gap-1.5 p-1 bg-slate-100/70 rounded-2xl border border-slate-200/30 mb-4 select-none">
+                {branchesData.map((b, idx) => (
+                  <button
+                    key={b.label}
+                    onClick={() => setSelectedBranchIdx(idx)}
+                    className={`flex-1 py-1.5 text-xs font-extrabold rounded-xl transition-all duration-300 ${
+                      selectedBranchIdx === idx
+                        ? `${b.activeColor} border shadow-sm`
+                        : "text-slate-500 hover:text-slate-800 hover:bg-slate-200/40 border border-transparent"
+                    }`}
+                  >
+                    {b.label}
+                  </button>
+                ))}
               </div>
-            </div>
 
-            {/* Progress bars */}
-            <div className="w-full space-y-3 mt-2">
-              {branches.map((b, i) => (
-                <div key={b.label} className="flex items-center gap-3">
-                  <span className="text-xs font-bold text-slate-400 w-6">{b.label}</span>
-                  <div className="flex-1 h-2 bg-blue-50 rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full rounded-full"
-                      style={{ background: "linear-gradient(90deg, #2E95FF, #60b8ff)" }}
-                      initial={{ width: 0 }}
-                      animate={isInView ? { width: `${b.pct}%` } : {}}
-                      transition={{ delay: 0.5 + i * 0.1, duration: 1, ease: "easeOut" }}
-                    />
-                  </div>
-                  <span className="text-xs font-bold text-slate-500">{b.pct}%</span>
+              {/* Dial Gauge SVG */}
+              <div className="relative flex flex-col items-center justify-center my-2">
+                <svg className="w-36 h-36 transform -rotate-90">
+                  <circle cx="72" cy="72" r="56" className="stroke-slate-100" strokeWidth="7" fill="transparent" />
+                  <circle cx="72" cy="72" r="56" className="stroke-blue-500 transition-all duration-700 ease-out" strokeWidth="7" fill="transparent" strokeDasharray="351.86" strokeDashoffset={351.86 - (351.86 * currentBranch.pct) / 100} strokeLinecap="round" />
+                </svg>
+                <div className="absolute flex flex-col items-center justify-center">
+                  <span className="text-3xl font-black text-slate-900 leading-none">{currentBranch.pct}%</span>
+                  <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1">Coverage</span>
                 </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* ── Chapter-wise Notes ── */}
-          <motion.div
-            className="lg:col-span-4 premium-card p-7 flex flex-col gap-5 cursor-default"
-            initial={{ opacity: 0, y: 32 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.1, duration: 0.65, ease: [0.16, 1, 0.3, 1] as any }}
-            whileHover={{ y: -6, boxShadow: "0 24px 60px rgba(46,149,255,0.16)" }}
-            style={{
-              background: "linear-gradient(145deg, #eff6ff 0%, #ffffff 55%)",
-              borderColor: "#dbeafe",
-            }}
-          >
-            <div className="flex items-start justify-between">
-              <motion.div
-                className="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center"
-                whileHover={{ scale: 1.12, rotate: 6 }}
-                transition={{ type: "spring", stiffness: 300, damping: 15 }}
-              >
-                <BookOpen className="w-6 h-6 text-blue-500" strokeWidth={1.5} />
-              </motion.div>
-              <span className="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-600">
-                Most Used
-              </span>
-            </div>
-            <div>
-              <h3 className="text-lg font-black text-slate-900 mb-2">Chapter-wise Notes</h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                Module-by-module notes for every subject, stripped of filler and focused on what examiners actually ask.
-              </p>
-            </div>
-            <div className="mt-auto pt-4 border-t border-slate-100">
-              <span className="text-xs font-bold text-slate-400 uppercase tracking-wide">
-                500+ subjects covered
-              </span>
-            </div>
-          </motion.div>
-
-          {/* ── PYQs ── */}
-          <motion.div
-            className="lg:col-span-4 premium-card p-7 flex flex-col gap-5 cursor-default"
-            initial={{ opacity: 0, y: 32 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.2, duration: 0.65, ease: [0.16, 1, 0.3, 1] as any }}
-            whileHover={{ y: -6, boxShadow: "0 24px 60px rgba(124,58,237,0.14)" }}
-            style={{
-              background: "linear-gradient(145deg, #f5f3ff 0%, #ffffff 55%)",
-              borderColor: "#ede9fe",
-            }}
-          >
-            <div className="flex items-start justify-between">
-              <motion.div
-                className="w-12 h-12 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center"
-                whileHover={{ scale: 1.12, rotate: -6 }}
-                transition={{ type: "spring", stiffness: 300, damping: 15 }}
-              >
-                <FileText className="w-6 h-6 text-violet-500" strokeWidth={1.5} />
-              </motion.div>
-              <span className="text-xs font-bold px-3 py-1 rounded-full bg-violet-50 text-violet-600">
-                Exam Ready
-              </span>
-            </div>
-            <div>
-              <h3 className="text-lg font-black text-slate-900 mb-2">Previous Year Questions</h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                Real KTU exam papers from 2019–2024, organized by subject and semester so you can practice exactly what comes up.
-              </p>
-            </div>
-            <div className="mt-auto pt-4 border-t border-slate-100">
-              <span className="text-xs font-bold text-slate-400 uppercase tracking-wide">
-                6 years of PYQs
-              </span>
-            </div>
-          </motion.div>
-
-          {/* ── Syllabus Tracker ── */}
-          <motion.div
-            className="lg:col-span-4 premium-card p-7 flex flex-col gap-5 cursor-default"
-            initial={{ opacity: 0, y: 32 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.65, ease: [0.16, 1, 0.3, 1] as any }}
-            whileHover={{ y: -6, boxShadow: "0 24px 60px rgba(5,150,105,0.14)" }}
-            style={{
-              background: "linear-gradient(145deg, #ecfdf5 0%, #ffffff 60%)",
-              borderColor: "#d1fae5",
-            }}
-          >
-            <div className="flex items-start justify-between">
-              <motion.div
-                className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center"
-                whileHover={{ scale: 1.12, rotate: 6 }}
-                transition={{ type: "spring", stiffness: 300, damping: 15 }}
-              >
-                <GraduationCap className="w-6 h-6 text-emerald-600" strokeWidth={1.5} />
-              </motion.div>
-              <span className="text-xs font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-600">
-                Live Tracker
-              </span>
-            </div>
-            <div>
-              <h3 className="text-lg font-black text-slate-900 mb-2">Syllabus Tracker</h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                Mark modules complete and track your exam prep in real time. Know exactly what's left before every exam.
-              </p>
-            </div>
-            <div className="space-y-2.5">
-              {modules.map((m, i) => (
-                <motion.div
-                  key={i}
-                  className="flex items-center gap-3"
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ delay: 0.5 + i * 0.07, duration: 0.4, ease: "easeOut" }}
-                >
-                  <div
-                    className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-200 ${
-                      m.done ? "bg-emerald-500" : "bg-slate-100 border-2 border-slate-200"
-                    }`}
-                  >
-                    {m.done && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
-                  </div>
-                  <span
-                    className={`text-xs font-semibold ${
-                      m.done ? "text-slate-400 line-through" : "text-slate-600"
-                    }`}
-                  >
-                    {m.name}
-                  </span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* ── No account needed — wide card ── */}
-          <motion.div
-            className="lg:col-span-4 premium-card p-7 flex flex-col justify-between gap-4 cursor-default overflow-hidden"
-            initial={{ opacity: 0, y: 32 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.4, duration: 0.65, ease: [0.16, 1, 0.3, 1] as any }}
-            whileHover={{ y: -6, boxShadow: "0 24px 60px rgba(46,149,255,0.14)" }}
-            style={{
-              background: "linear-gradient(145deg, #f0f9ff 0%, #ffffff 60%)",
-              borderColor: "#bae6fd",
-            }}
-          >
-            <div>
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-                <span className="text-xs font-bold text-sky-600 uppercase tracking-widest">Zero friction</span>
               </div>
-              <h3 className="text-2xl font-black text-slate-900 leading-snug mb-2">
-                No account.<br />No payment.<br />Just study.
-              </h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                Pick your branch and semester — you're in. Everything is free, forever.
+            </div>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-slate-800 mb-1">{currentBranch.name}</h3>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Meticulously structured chapter notes and syllabus checkpoints matching the latest 2024 regulations.
               </p>
             </div>
-            {/* Decorative dots */}
-            <div className="flex gap-2 mt-2">
-              {["bg-sky-200", "bg-blue-200", "bg-indigo-200"].map((c, i) => (
-                <motion.div
-                  key={i}
-                  className={`w-3 h-3 rounded-full ${c}`}
-                  animate={{ scale: [1, 1.3, 1] }}
-                  transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.3 }}
-                />
-              ))}
+          </motion.div>
+
+          {/* ── 2. Chapter-wise Notes ── */}
+          <motion.div
+            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.015)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.1, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-9 h-9 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center">
+                  <BookOpen className="w-4.5 h-4.5 text-blue-500" strokeWidth={1.8} />
+                </div>
+                <span className="text-[9px] font-bold px-2.5 py-1 rounded-full bg-blue-50 text-blue-600 uppercase tracking-wider">
+                  Live Preview
+                </span>
+              </div>
+              <h3 className="text-lg font-extrabold text-slate-800 mb-1">Chapter-wise Notes</h3>
+              <p className="text-xs text-slate-500 leading-relaxed mb-4">
+                Syllabus topics stripped of filler and packed with the diagrams and equations examiners actually grade on.
+              </p>
+
+              {/* Tag Switcher widget */}
+              <div className="flex gap-1.5 mb-3 select-none">
+                {(Object.keys(mockNotes) as NoteKey[]).map(tag => (
+                  <button
+                    key={tag}
+                    onClick={() => setActiveNoteTag(tag)}
+                    className={`px-3 py-1 text-xs font-bold rounded-lg border transition-all duration-200 ${
+                      activeNoteTag === tag
+                        ? "bg-blue-600 text-white border-blue-600"
+                        : "bg-slate-50 text-slate-500 border-slate-200 hover:bg-slate-100"
+                    }`}
+                  >
+                    {tag}
+                  </button>
+                ))}
+              </div>
+
+              {/* Mock note preview card (Fixed Height to prevent Layout Shifts) */}
+              <div className="p-3.5 bg-slate-50/70 border border-slate-200/50 rounded-2xl h-[105px] overflow-y-auto">
+                <div className="text-[10px] font-bold text-blue-600 uppercase tracking-wider mb-1">
+                  {noteData.title}
+                </div>
+                <p className="text-[11px] text-slate-600 leading-relaxed">
+                  {noteData.content.split(" ").map((word, i) => {
+                    const cleanWord = word.replace(/[.,()]/g, "");
+                    const isKey = noteData.keywords.some(k => k.toLowerCase().includes(cleanWord.toLowerCase()));
+                    return (
+                      <span key={i} className={isKey ? "text-blue-600 font-bold bg-blue-50 px-0.5 rounded" : ""}>
+                        {word}{" "}
+                      </span>
+                    );
+                  })}
+                </p>
+              </div>
             </div>
           </motion.div>
+
+          {/* ── 3. Interactive Pomodoro Study Timer (Replaces Flashcards) ── */}
+          <motion.div
+            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.015)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.2, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-9 h-9 rounded-2xl bg-amber-50 border border-amber-100 flex items-center justify-center">
+                  <Clock className="w-4.5 h-4.5 text-amber-500" strokeWidth={1.8} />
+                </div>
+                <span className="text-[9px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-600 uppercase tracking-wider">
+                  Study Tool
+                </span>
+              </div>
+              <h3 className="text-lg font-extrabold text-slate-800 mb-1">Focus Study Timer</h3>
+              <p className="text-xs text-slate-500 leading-relaxed mb-4">
+                Engage learning sessions with the integrated Pomodoro clock to maximize revision focus and track milestones.
+              </p>
+
+              {/* Pomodoro Timer display */}
+              <div className="flex flex-col items-center justify-center p-4 bg-amber-50/20 border border-amber-100/40 rounded-2xl h-[105px]">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className={`w-2 h-2 rounded-full bg-amber-500 ${timerRunning ? "animate-ping" : ""}`} />
+                  <span className="text-2xl font-mono font-black text-slate-800 tracking-tight">
+                    {formatTime(timerSeconds)}
+                  </span>
+                </div>
+                
+                <div className="flex gap-2 w-full max-w-[180px] select-none">
+                  <button
+                    onClick={() => setTimerRunning(!timerRunning)}
+                    className="flex-1 py-1.5 flex items-center justify-center gap-1.5 text-[10px] font-bold bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors"
+                  >
+                    {timerRunning ? (
+                      <>
+                        <Pause className="w-3 h-3 fill-current" />
+                        Pause
+                      </>
+                    ) : (
+                      <>
+                        <Play className="w-3 h-3 fill-current" />
+                        Start
+                      </>
+                    )}
+                  </button>
+                  <button
+                    onClick={handleTimerReset}
+                    className="p-1.5 border border-slate-200 hover:bg-slate-50 text-slate-600 rounded-lg transition-colors"
+                    title="Reset timer"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                Sticky Widget — syncs in dashboard
+              </p>
+            </div>
+          </motion.div>
+
+          {/* ── 4. Syllabus Tracker ── */}
+          <motion.div
+            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.015)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-9 h-9 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center">
+                  <GraduationCap className="w-4.5 h-4.5 text-emerald-500" strokeWidth={1.8} />
+                </div>
+                
+                {/* Dynamic Status Pill */}
+                <span className={`text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider transition-colors duration-300 ${
+                  isFullyComplete ? "bg-emerald-500 text-white shadow-sm" : "bg-emerald-50 text-emerald-600"
+                }`}>
+                  {isFullyComplete ? "Ready! 🎉" : `${completedCount}/4 Done`}
+                </span>
+              </div>
+              <h3 className="text-lg font-extrabold text-slate-800 mb-1">Live Progress Tracker</h3>
+              <p className="text-xs text-slate-500 leading-relaxed mb-4">
+                Mark modules complete as you learn. Visually audit exactly what topics remain before your exam.
+              </p>
+
+              {/* Interactive Modules Checklist */}
+              <div className="space-y-1.5 select-none">
+                {modules.map((m, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => toggleModule(idx)}
+                    className={`flex items-center gap-3 p-2 border rounded-xl cursor-pointer hover:bg-slate-50 transition-all ${
+                      m.done ? "border-emerald-100 bg-emerald-50/10" : "border-slate-100 bg-white"
+                    }`}
+                  >
+                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center border transition-all ${
+                      m.done ? "bg-emerald-500 border-emerald-500" : "border-slate-300 bg-white"
+                    }`}>
+                      {m.done && <Check className="w-2.5 h-2.5 text-white" strokeWidth={3} />}
+                    </div>
+                    <span className={`text-[11px] font-bold transition-all ${
+                      m.done ? "text-slate-400 line-through font-medium" : "text-slate-700"
+                    }`}>
+                      {m.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* ── 5. Model Question Papers (Previously PYQs) ── */}
+          <motion.div
+            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.015)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-9 h-9 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center">
+                  <FileText className="w-4.5 h-4.5 text-violet-500" strokeWidth={1.8} />
+                </div>
+                <span className="text-[9px] font-bold px-2.5 py-1 rounded-full bg-violet-50 text-violet-600 uppercase tracking-wider">
+                  2024 Scheme
+                </span>
+              </div>
+              <h3 className="text-lg font-extrabold text-slate-800 mb-1">Model Question Papers</h3>
+              <p className="text-xs text-slate-500 leading-relaxed mb-4">
+                Get ready for exams using dedicated, syllabus-matched model question papers tailored for the 2024 scheme.
+              </p>
+
+              {/* Semester tab container */}
+              <div className="flex gap-1.5 mb-3 select-none">
+                {(Object.keys(modelPapersData) as SemKey[]).map((sem) => (
+                  <button
+                    key={sem}
+                    onClick={() => setSelectedSem(sem)}
+                    className={`flex-1 py-1 text-[10px] font-bold rounded-lg border transition-all duration-200 ${
+                      selectedSem === sem
+                        ? "bg-violet-600 text-white border-violet-600"
+                        : "bg-slate-50 text-slate-500 border-slate-200 hover:bg-slate-100"
+                    }`}
+                  >
+                    {sem}
+                  </button>
+                ))}
+              </div>
+
+              {/* Papers list card */}
+              <div className="p-3 bg-violet-50/20 border border-violet-100/40 rounded-2xl h-[105px] overflow-y-auto">
+                <div className="text-[9px] font-bold text-violet-600 uppercase tracking-wider mb-1.5 flex items-center gap-1 select-none">
+                  <HelpCircle className="w-2.5 h-2.5" />
+                  Available Model Papers:
+                </div>
+                <ul className="space-y-1">
+                  {currentPapers.map((paper, idx) => (
+                    <li key={idx} className="text-[11px] text-slate-700 font-extrabold flex items-center gap-1.5">
+                      <div className="w-1 h-1 rounded-full bg-violet-500" />
+                      {paper}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* ── 6. Zero friction launch ── */}
+          <motion.div
+            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.015)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.5, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center gap-2 mb-4 select-none">
+                <div className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
+                <span className="text-[9px] font-bold text-blue-600 uppercase tracking-widest">Instant access</span>
+              </div>
+              <h3 className="text-xl font-extrabold text-slate-800 leading-snug mb-2">
+                No Accounts.<br />No payments.<br />Just learn.
+              </h3>
+              <p className="text-xs text-slate-500 leading-relaxed mb-4">
+                We believe learning resources should be open and friction-free. Pick your semester and jump straight in.
+              </p>
+            </div>
+
+            {/* Launch Simulator Sandbox Widget */}
+            <div className="mt-auto select-none">
+              <div className="p-3 border border-slate-200/60 rounded-2xl bg-slate-50/50">
+                <div className="space-y-1 mb-2 opacity-50">
+                  <div className="h-5 bg-slate-200 rounded-lg w-3/4 line-through text-[9px] font-bold flex items-center px-2 text-slate-500">Email Address</div>
+                  <div className="h-5 bg-slate-200 rounded-lg w-1/2 line-through text-[9px] font-bold flex items-center px-2 text-slate-500">Choose Password</div>
+                </div>
+
+                <button
+                  onClick={handleSimulatedLaunch}
+                  disabled={launchStep !== "idle"}
+                  className={`w-full py-2 text-center text-[10px] font-bold rounded-xl transition-all shadow-sm flex items-center justify-center gap-1.5 ${
+                    launchStep === "idle" ? "bg-slate-900 hover:bg-slate-800 text-white" :
+                    launchStep === "launching" ? "bg-slate-200 text-slate-500 cursor-not-allowed" :
+                    "bg-emerald-500 text-white shadow-[0_4px_12px_rgba(16,185,129,0.2)]"
+                  }`}
+                >
+                  {launchStep === "idle" && (
+                    <>
+                      Skip Signup & Launch
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </>
+                  )}
+                  {launchStep === "launching" && "Simulating access..."}
+                  {launchStep === "ready" && (
+                    <>
+                      <ShieldCheck className="w-3.5 h-3.5" />
+                      Welcome to KTUNode!
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </motion.div>
+
         </div>
       </div>
     </section>

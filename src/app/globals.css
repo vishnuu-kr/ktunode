@@ -442,3 +442,43 @@
     animation: none !important;
   }
 }
+
+/* ══════════════════════════════════════════
+   MOBILE BOTTOM SHEET & WIDGET UTILITIES
+   ══════════════════════════════════════════ */
+.bottom-sheet-handle {
+  width: 36px;
+  height: 4px;
+  background-color: rgba(15, 23, 42, 0.15);
+  border-radius: 9999px;
+  margin: 0 auto;
+}
+
+.bottom-sheet-backdrop {
+  background-color: rgba(15, 23, 42, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.ios-safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+.ios-safe-bottom-margin {
+  margin-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* Custom premium card elevation/ring */
+.premium-card-ring {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.01), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

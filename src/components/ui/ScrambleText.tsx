@@ -13,6 +13,22 @@ interface ScrambleTextProps {
 
 const chars = "!<>-_\\/[]{}—=+*^?#________";
 
+const getRandomChar = () => chars[Math.floor(Math.random() * chars.length)];
+
+const generateScrambledText = (target: string, progress: number) => {
+  let scrambled = "";
+  for (let i = 0; i < target.length; i++) {
+    if (target[i] === " ") {
+      scrambled += " ";
+    } else if (Math.random() > progress * 1.5) {
+      scrambled += getRandomChar();
+    } else {
+      scrambled += target[i];
+    }
+  }
+  return scrambled;
+};
+
 export const ScrambleText: React.FC<ScrambleTextProps> = ({
   text,
   delay = 0,
@@ -24,22 +40,12 @@ export const ScrambleText: React.FC<ScrambleTextProps> = ({
   const [isScrambling, setIsScrambling] = useState(!onHover);
   const frameRef = useRef<number | undefined>(undefined);
 
-  const scramble = (startTime: number, target: string) => {
-    const now = Date.now();
-    const progress = Math.min((now - startTime) / duration, 1);
+  const scramble = (startTime: number, target: string, timestamp: number) => {
+    const progress = Math.min((timestamp - startTime) / duration, 1);
     if (progress < 1) {
-      let scrambled = "";
-      for (let i = 0; i < target.length; i++) {
-        if (target[i] === " ") {
-          scrambled += " ";
-        } else if (Math.random() > progress * 1.5) {
-          scrambled += chars[Math.floor(Math.random() * chars.length)];
-        } else {
-          scrambled += target[i];
-        }
-      }
+      const scrambled = generateScrambledText(target, progress);
       setDisplayText(scrambled);
-      frameRef.current = requestAnimationFrame(() => scramble(startTime, target));
+      frameRef.current = requestAnimationFrame((t) => scramble(startTime, target, t));
     } else {
       setDisplayText(target);
       setIsScrambling(false);
@@ -50,7 +56,7 @@ export const ScrambleText: React.FC<ScrambleTextProps> = ({
     if (!onHover) {
       const id = setTimeout(() => {
         setIsScrambling(true);
-        frameRef.current = requestAnimationFrame(() => scramble(Date.now(), text));
+        frameRef.current = requestAnimationFrame((t) => scramble(t, text, t));
       }, delay);
       return () => {
         clearTimeout(id);
@@ -64,7 +70,7 @@ export const ScrambleText: React.FC<ScrambleTextProps> = ({
     if (onHover && !isScrambling) {
       setIsScrambling(true);
       if (frameRef.current) cancelAnimationFrame(frameRef.current);
-      frameRef.current = requestAnimationFrame(() => scramble(Date.now(), text));
+      frameRef.current = requestAnimationFrame((t) => scramble(t, text, t));
     }
   };
 

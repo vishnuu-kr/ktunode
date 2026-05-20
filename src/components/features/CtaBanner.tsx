@@ -2,42 +2,9 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight, BookOpen, FileText, GraduationCap, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import Link from "next/link";
-
-const floatingCards = [
-  {
-    icon: BookOpen,
-    title: "Chapter Notes",
-    sub: "2024 Scheme",
-    gradient: "from-blue-500 to-blue-600",
-    x: -1,
-    y: -1,
-    rotate: -6,
-    pos: { left: "6%", top: "18%" },
-  },
-  {
-    icon: FileText,
-    title: "PYQs",
-    sub: "2019–2024",
-    gradient: "from-violet-500 to-violet-600",
-    x: 1,
-    y: -1,
-    rotate: 4,
-    pos: { right: "8%", top: "12%" },
-  },
-  {
-    icon: GraduationCap,
-    title: "Syllabus",
-    sub: "Live Tracker",
-    gradient: "from-emerald-500 to-emerald-600",
-    x: 1,
-    y: 1,
-    rotate: -3,
-    pos: { right: "6%", bottom: "18%" },
-  },
-];
 
 const stats = [
   { value: "Free",  label: "Always free" },
@@ -73,39 +40,6 @@ export default function CtaBanner() {
       {/* Glow orbs */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
-
-      {/* Floating cards */}
-      {floatingCards.map((card, i) => {
-        const Icon = card.icon;
-        return (
-          <motion.div
-            key={i}
-            className="hidden lg:flex absolute bg-white/8 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 items-center gap-3 shadow-xl cursor-default"
-            style={card.pos as React.CSSProperties}
-            initial={{ opacity: 0, x: card.x * 40, y: card.y * 20, rotate: card.rotate }}
-            animate={isInView ? { opacity: 1, x: 0, y: 0, rotate: card.rotate } : {}}
-            transition={{ delay: 0.3 + i * 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            whileHover={{ scale: 1.06, backgroundColor: "rgba(255,255,255,0.12)" }}
-            aria-hidden="true"
-          >
-            <motion.div
-              animate={{ y: [0, -6, 0] }}
-              transition={{ duration: 4 + i, repeat: Infinity, ease: "easeInOut", delay: i * 0.7 }}
-              className="flex items-center gap-3"
-            >
-              <div
-                className={`w-9 h-9 bg-gradient-to-br ${card.gradient} rounded-xl flex items-center justify-center shadow-lg`}
-              >
-                <Icon className="w-4 h-4 text-white" />
-              </div>
-              <div>
-                <div className="text-white text-sm font-bold">{card.title}</div>
-                <div className="text-white/45 text-xs">{card.sub}</div>
-              </div>
-            </motion.div>
-          </motion.div>
-        );
-      })}
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
@@ -179,7 +113,7 @@ export default function CtaBanner() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.4, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          {stats.map((stat, i) => (
+          {stats.map((stat) => (
             <motion.div
               key={stat.label}
               className="text-center cursor-default group"
