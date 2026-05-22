@@ -29,6 +29,12 @@ import {
   Timer,
   Pause,
   RotateCcw,
+  Lock,
+  Mail,
+  UserRound,
+  Loader2,
+  LogOut,
+  Cloud,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import confetti from "canvas-confetti";
@@ -97,6 +103,7 @@ interface SubjectTheme {
   glowCircle1: string;
   glowCircle2: string;
   glowCircle3: string;
+  buttonShadow: string;
 }
 
 const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
@@ -112,6 +119,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       glowCircle1: "bg-blue-400/20",
       glowCircle2: "bg-indigo-300/15",
       glowCircle3: "bg-blue-100/40",
+      buttonShadow: "shadow-subject-blue",
     };
   }
   
@@ -130,6 +138,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       glowCircle1: "bg-emerald-400/20",
       glowCircle2: "bg-teal-300/15",
       glowCircle3: "bg-emerald-100/40",
+      buttonShadow: "shadow-subject-green",
     };
   }
   
@@ -145,6 +154,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       glowCircle1: "bg-purple-400/20",
       glowCircle2: "bg-fuchsia-300/15",
       glowCircle3: "bg-purple-100/40",
+      buttonShadow: "shadow-subject-purple",
     };
   }
 
@@ -160,6 +170,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       glowCircle1: "bg-blue-400/20",
       glowCircle2: "bg-indigo-300/15",
       glowCircle3: "bg-blue-100/40",
+      buttonShadow: "shadow-subject-blue",
     };
   }
   
@@ -175,6 +186,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       glowCircle1: "bg-amber-400/20",
       glowCircle2: "bg-orange-300/15",
       glowCircle3: "bg-amber-100/40",
+      buttonShadow: "shadow-subject-amber",
     };
   }
   
@@ -189,6 +201,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
     glowCircle1: "bg-teal-400/20",
     glowCircle2: "bg-emerald-300/15",
     glowCircle3: "bg-teal-100/40",
+    buttonShadow: "shadow-subject-emerald",
   };
 };
 
@@ -217,6 +230,160 @@ function DashboardContent() {
   const [lastTopicId, setLastTopicId] = useState<string | null>(null);
   const [pinnedTopicIds, setPinnedTopicIds] = useState<string[]>([]);
   const [commandOpen, setCommandOpen] = useState(false);
+
+  // User Authentication & Cloud Sync states
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [authModalOpen, setAuthModalOpen] = useState(false);
+  const [authTab, setAuthTab] = useState<"signin" | "signup">("signin");
+  const [profilePanelOpen, setProfilePanelOpen] = useState(false);
+  const [syncing, setSyncing] = useState(false);
+  const [lastSynced, setLastSynced] = useState<string | null>(null);
+
+  // Authentication Fields
+  const [authName, setAuthName] = useState("");
+  const [authEmail, setAuthEmail] = useState("");
+  const [authPassword, setAuthPassword] = useState("");
+  const [authError, setAuthError] = useState("");
+  const [authLoading, setAuthLoading] = useState(false);
+
+  // Haptic Feedback Engine supporting dynamic pressure & synthesized Web Audio
+  const triggerHaptic = React.useCallback((
+    type: "light" | "medium" | "heavy" | "success" | "warning",
+    pressure?: number | React.PointerEvent | React.MouseEvent | React.TouchEvent | PointerEvent | MouseEvent
+  ) => {
+    if (typeof window === "undefined") return;
+
+    // Extract pressure value (between 0.0 and 1.0)
+    let pressureVal = 0.5; // default center weight
+    if (typeof pressure === "number") {
+      pressureVal = pressure;
+    } else if (pressure && "nativeEvent" in pressure) {
+      const nativeEvent = pressure.nativeEvent;
+      if (nativeEvent instanceof PointerEvent) {
+        pressureVal = nativeEvent.pressure > 0 ? nativeEvent.pressure : 0.5;
+      }
+    } else if (pressure && pressure instanceof PointerEvent) {
+      pressureVal = pressure.pressure > 0 ? pressure.pressure : 0.5;
+    }
+
+    // Ensure pressure ranges between 0.1 and 1.0 to avoid silent or overly prolonged haptics
+    pressureVal = Math.max(0.15, Math.min(1.0, pressureVal));
+
+    // 1. Device Vibration
+    if (navigator.vibrate) {
+      try {
+        let duration = 0;
+        switch (type) {
+          case "light":
+            duration = 8;
+            break;
+          case "medium":
+            duration = 15;
+            break;
+          case "heavy":
+            duration = 30;
+            break;
+          case "success":
+            navigator.vibrate([
+              Math.round(12 * (0.5 + pressureVal)), 
+              Math.round(45 * (0.5 + pressureVal)), 
+              Math.round(12 * (0.5 + pressureVal))
+            ]);
+            break;
+          case "warning":
+            navigator.vibrate([
+              Math.round(45 * (0.5 + pressureVal)), 
+              Math.round(75 * (0.5 + pressureVal))
+            ]);
+            break;
+        }
+        if (duration > 0) {
+          // Scale vibration duration by pressure (between 50% and 150% of base duration)
+          const scaledDuration = Math.round(duration * (0.5 + pressureVal));
+          navigator.vibrate(scaledDuration);
+        }
+      } catch (e) {
+        // Silently block
+      }
+    }
+
+    // 2. Synthesized Web Audio Tones
+    try {
+      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+      if (!AudioContextClass) return;
+      const audioCtx = new AudioContextClass();
+
+      const sweepTone = (startFreq: number, endFreq: number, baseDuration: number, baseGain: number) => {
+        const osc = audioCtx.createOscillator();
+        const gainNode = audioCtx.createGain();
+        osc.type = "triangle";
+        
+        // Dynamically scale pitch and volume using touch pressure
+        const scaledStartFreq = startFreq * (0.7 + 0.6 * pressureVal);
+        const scaledEndFreq = endFreq * (0.7 + 0.6 * pressureVal);
+        const scaledGainVal = baseGain * (0.5 + pressureVal);
+        const scaledDuration = baseDuration * (0.8 + 0.4 * pressureVal);
+        
+        osc.frequency.setValueAtTime(scaledStartFreq, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(scaledEndFreq, audioCtx.currentTime + scaledDuration);
+        
+        gainNode.gain.setValueAtTime(scaledGainVal, audioCtx.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + scaledDuration);
+        
+        osc.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + scaledDuration);
+      };
+
+      const playTone = (freq: number, start: number, baseDuration: number, oscType: "sine" | "triangle" = "sine", baseGain = 0.15) => {
+        const osc = audioCtx.createOscillator();
+        const gainNode = audioCtx.createGain();
+        osc.type = oscType;
+        
+        const scaledFreq = freq * (0.8 + 0.4 * pressureVal);
+        const scaledGainVal = baseGain * (0.5 + pressureVal);
+        const scaledDuration = baseDuration * (0.8 + 0.4 * pressureVal);
+        
+        osc.frequency.setValueAtTime(scaledFreq, audioCtx.currentTime + start);
+        gainNode.gain.setValueAtTime(scaledGainVal, audioCtx.currentTime + start);
+        gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + start + scaledDuration);
+        
+        osc.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        osc.start(audioCtx.currentTime + start);
+        osc.stop(audioCtx.currentTime + start + scaledDuration);
+      };
+
+      switch (type) {
+        case "light":
+          sweepTone(850, 180, 0.04, 0.08);
+          break;
+        case "medium":
+          sweepTone(700, 120, 0.06, 0.12);
+          break;
+        case "heavy":
+          sweepTone(550, 80, 0.09, 0.18);
+          break;
+        case "success":
+          playTone(587.33, 0, 0.12, "triangle", 0.08); 
+          playTone(880.00, 0.06, 0.32, "sine", 0.1);
+          break;
+        case "warning":
+          sweepTone(220, 130, 0.12, 0.15);
+          setTimeout(() => {
+            try {
+              sweepTone(220, 130, 0.12, 0.15);
+            } catch {}
+          }, 140);
+          break;
+      }
+    } catch (e) {
+      console.warn("Audio Context haptic failed or blocked", e);
+    }
+  }, []);
   const [searchTerm, setSearchTerm] = useState("");
   const [toast, setToast] = useState<string | null>(null);
 
@@ -393,8 +560,224 @@ function DashboardContent() {
           setPinnedTopicIds([]);
         }
       }
+
+      // Load Auth Session
+      const savedLoggedIn = localStorage.getItem("ktunode_logged_in") === "true";
+      if (savedLoggedIn) {
+        setIsLoggedIn(true);
+        setUserName(localStorage.getItem("ktunode_user_name") || "KTU Student");
+        setUserEmail(localStorage.getItem("ktunode_user_email") || "student@ktu.edu");
+        setLastSynced(localStorage.getItem("ktunode_last_synced"));
+      }
     });
   }, []);
+
+  // Listen to cross-component UI events from Navbar
+  useEffect(() => {
+    const handleOpenAuth = () => {
+      setAuthTab("signin");
+      setAuthModalOpen(true);
+    };
+    const handleOpenProfile = () => {
+      setProfilePanelOpen(true);
+    };
+
+    window.addEventListener("ktunode-open-auth", handleOpenAuth);
+    window.addEventListener("ktunode-open-profile", handleOpenProfile);
+
+    return () => {
+      window.removeEventListener("ktunode-open-auth", handleOpenAuth);
+      window.removeEventListener("ktunode-open-profile", handleOpenProfile);
+    };
+  }, []);
+
+  // Sync initial query params deep linking
+  useEffect(() => {
+    if (!isLoaded) return;
+    const params = new URLSearchParams(window.location.search);
+    const subjectId = params.get("subject");
+    const topicId = params.get("topic");
+    const openAuth = params.get("auth");
+    const openProfile = params.get("profile");
+
+    if (openAuth === "open") {
+      setAuthTab("signin");
+      setAuthModalOpen(true);
+      const newParams = new URLSearchParams(window.location.search);
+      newParams.delete("auth");
+      window.history.replaceState({}, "", `${window.location.pathname}?${newParams.toString()}`);
+    } else if (openProfile === "open") {
+      setProfilePanelOpen(true);
+      const newParams = new URLSearchParams(window.location.search);
+      newParams.delete("profile");
+      window.history.replaceState({}, "", `${window.location.pathname}?${newParams.toString()}`);
+    }
+
+    if (topicId && subjectId) {
+      const targetSub = subjects.find(s => s.id === subjectId);
+      if (targetSub) {
+        const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id === topicId);
+        if (targetTop) {
+          setSelectedSubject(targetSub);
+          setSelectedTopic(targetTop);
+          setView("topic");
+        }
+      }
+    } else if (subjectId) {
+      const targetSub = subjects.find(s => s.id === subjectId);
+      if (targetSub) {
+        setSelectedSubject(targetSub);
+        setView("subject");
+      }
+    }
+  }, [isLoaded, subjects]);
+
+  // Listen to popstate for browser back button syncing
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const subjectId = params.get("subject");
+      const topicId = params.get("topic");
+
+      if (topicId && subjectId) {
+        const targetSub = subjects.find(s => s.id === subjectId);
+        if (targetSub) {
+          const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id === topicId);
+          if (targetTop) {
+            setSelectedSubject(targetSub);
+            setSelectedTopic(targetTop);
+            setView("topic");
+            triggerHaptic("light");
+            return;
+          }
+        }
+      }
+
+      if (subjectId) {
+        const targetSub = subjects.find(s => s.id === subjectId);
+        if (targetSub) {
+          setSelectedSubject(targetSub);
+          setSelectedTopic(null);
+          setView("subject");
+          triggerHaptic("light");
+          return;
+        }
+      }
+
+      setSelectedSubject(null);
+      setSelectedTopic(null);
+      setView("dashboard");
+      triggerHaptic("light");
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [subjects, triggerHaptic]);
+
+  // Handle Sign In / Sign Up submission
+  const handleAuthSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setAuthError("");
+
+    if (authTab === "signup" && !authName.trim()) {
+      setAuthError("Name is required");
+      triggerHaptic("warning");
+      return;
+    }
+    if (!authEmail.trim() || !authEmail.includes("@")) {
+      setAuthError("Please enter a valid email");
+      triggerHaptic("warning");
+      return;
+    }
+    if (authPassword.length < 6) {
+      setAuthError("Password must be at least 6 characters");
+      triggerHaptic("warning");
+      return;
+    }
+
+    setAuthLoading(true);
+    triggerHaptic("medium");
+
+    setTimeout(() => {
+      setAuthLoading(false);
+      setIsLoggedIn(true);
+      const computedName = authTab === "signup" ? authName : authEmail.split("@")[0];
+      setUserName(computedName);
+      setUserEmail(authEmail);
+      
+      localStorage.setItem("ktunode_logged_in", "true");
+      localStorage.setItem("ktunode_user_name", computedName);
+      localStorage.setItem("ktunode_user_email", authEmail);
+
+      window.dispatchEvent(new CustomEvent("ktunode-auth-change", {
+        detail: { isLoggedIn: true, userName: computedName }
+      }));
+
+      // Log JSON payload to console prepare for backend
+      console.log("Ready for backend:", {
+        action: authTab,
+        data: {
+          name: computedName,
+          email: authEmail,
+          password: authPassword,
+          completedTopics,
+        }
+      });
+
+      setAuthModalOpen(false);
+      showToast(authTab === "signup" ? "Account created successfully!" : "Signed in successfully!");
+      triggerHaptic("success");
+
+      // Reset form fields
+      setAuthName("");
+      setAuthEmail("");
+      setAuthPassword("");
+    }, 1200);
+  };
+
+  // Handle Cloud Syncing
+  const handleCloudSync = () => {
+    if (syncing) return;
+    setSyncing(true);
+    triggerHaptic("medium");
+
+    setTimeout(() => {
+      setSyncing(false);
+      const now = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      setLastSynced(now);
+      localStorage.setItem("ktunode_last_synced", now);
+
+      // Log sync data payload to console
+      console.log("Syncing to Cloud backend:", {
+        email: userEmail,
+        completedTopics,
+        syncedAt: new Date().toISOString()
+      });
+
+      showToast("Progress synced to cloud!");
+      triggerHaptic("success");
+    }, 1500);
+  };
+
+  // Handle Logout
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setUserName("");
+    setUserEmail("");
+    setLastSynced(null);
+    localStorage.removeItem("ktunode_logged_in");
+    localStorage.removeItem("ktunode_user_name");
+    localStorage.removeItem("ktunode_user_email");
+    localStorage.removeItem("ktunode_last_synced");
+
+    window.dispatchEvent(new CustomEvent("ktunode-auth-change", {
+      detail: { isLoggedIn: false, userName: "" }
+    }));
+    
+    setProfilePanelOpen(false);
+    showToast("Logged out successfully.");
+    triggerHaptic("light");
+  };
 
   useEffect(() => {
     localStorage.setItem("ktunode_pinned_topics", JSON.stringify(pinnedTopicIds));
@@ -423,24 +806,37 @@ function DashboardContent() {
     }, 400);
   };
 
-  const goHome = () => {
+  const goHome = (event?: React.MouseEvent | React.PointerEvent) => {
     startTransition(() => {
       setView("dashboard");
       setSelectedSubject(null);
       setSelectedTopic(null);
+      // Push history state preserving sem/branch
+      const params = new URLSearchParams(window.location.search);
+      params.delete("subject");
+      params.delete("topic");
+      const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+      window.history.pushState({ view: "dashboard" }, "", newUrl);
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
+    triggerHaptic("light", event);
   };
 
-  const goSubject = (subject: Subject) => {
+  const goSubject = (subject: Subject, event?: React.MouseEvent | React.PointerEvent) => {
     startTransition(() => {
       setSelectedSubject(subject);
       setView("subject");
+      // Push history state preserving sem/branch
+      const params = new URLSearchParams(window.location.search);
+      params.set("subject", subject.id);
+      params.delete("topic");
+      window.history.pushState({ view: "subject", subjectId: subject.id }, "", `?${params.toString()}`);
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
+    triggerHaptic("medium", event);
   };
 
-  const goTopic = (topic: Topic, subject?: Subject) => {
+  const goTopic = (topic: Topic, subject?: Subject, event?: React.MouseEvent | React.PointerEvent) => {
     const owner = subject ?? topicIndex.find((item) => item.topic.id === topic.id)?.subject ?? selectedSubject;
     startTransition(() => {
       if (owner) setSelectedSubject(owner);
@@ -448,14 +844,19 @@ function DashboardContent() {
       setLastTopicId(topic.id);
       localStorage.setItem("ktunode_last_topic", topic.id);
       setView("topic");
+      // Push history state preserving sem/branch
+      const params = new URLSearchParams(window.location.search);
+      if (owner) params.set("subject", owner.id);
+      params.set("topic", topic.id);
+      window.history.pushState({ view: "topic", subjectId: owner?.id, topicId: topic.id }, "", `?${params.toString()}`);
     });
     setCommandOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
+    triggerHaptic("medium", event);
   };
 
-
-
   const togglePinnedTopic = (topicId: string) => {
+    triggerHaptic("light");
     setPinnedTopicIds((current) =>
       current.includes(topicId) ? current.filter((id) => id !== topicId) : [topicId, ...current].slice(0, 4)
     );
@@ -466,25 +867,62 @@ function DashboardContent() {
     window.setTimeout(() => setToast(null), 2600);
   };
 
-  const fireConfettiReward = () => {
+  const playCheckChime = React.useCallback(() => {
+    if (typeof window === "undefined") return;
+    try {
+      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+      if (!AudioContextClass) return;
+      const audioCtx = new AudioContextClass();
+      
+      const playTone = (freq: number, start: number, duration: number, type: "sine" | "triangle" = "sine", gainVal = 0.15) => {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime + start);
+        gain.gain.setValueAtTime(gainVal, audioCtx.currentTime + start);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + start + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(audioCtx.currentTime + start);
+        osc.stop(audioCtx.currentTime + start + duration);
+      };
+
+      // Satisfying pop double chime (D5 pop then gentle A5 shine tone)
+      playTone(587.33, 0, 0.12, "triangle", 0.08); 
+      playTone(880.00, 0.06, 0.32, "sine", 0.1);
+    } catch (e) {
+      console.warn("Audio Context check chime failed", e);
+    }
+  }, []);
+
+  const fireConfettiReward = (originX = 0.5, originY = 0.85) => {
     const colors = ["#2E95FF", "#10B981", "#60A5FA", "#34D399", "#818CF8", "#A78BFA"];
     confetti({
-      particleCount: 80,
-      spread: 70,
-      origin: { y: 0.85 },
+      particleCount: 45,
+      spread: 55,
+      origin: { x: originX, y: originY },
       colors,
       disableForReducedMotion: true,
     });
   };
 
-  const handleToggleTopic = (item: TopicIndexItem | Topic) => {
+  const handleToggleTopic = (item: TopicIndexItem | Topic, event?: React.MouseEvent | React.PointerEvent) => {
     const topic = "topic" in item ? item.topic : item;
     const indexItem = "topic" in item ? item : topicIndex.find((entry) => entry.topic.id === topic.id);
     const wasCompleted = isCompleted(topic.id);
     const nextState = wasCompleted ? "marked incomplete" : "marked complete";
     toggleTopic(topic.id);
     if (!wasCompleted) {
-      fireConfettiReward();
+      triggerHaptic("success", event);
+      let originX = 0.5;
+      let originY = 0.85;
+      if (event) {
+        originX = event.clientX / window.innerWidth;
+        originY = event.clientY / window.innerHeight;
+      }
+      fireConfettiReward(originX, originY);
+    } else {
+      triggerHaptic("medium", event);
     }
     showToast(`${indexItem?.module.title ?? "Topic"}: ${topic.title} ${nextState}.`);
   };
@@ -504,9 +942,9 @@ function DashboardContent() {
     >
       <div className="absolute inset-0 z-0 dot-grid opacity-[0.08] pointer-events-none" />
       <div className="absolute inset-0 z-0 noise-overlay opacity-[0.25] pointer-events-none" />
-      <div className={`absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full ${theme.glowCircle1} blur-[160px] pointer-events-none z-0 transition-colors duration-500`} />
-      <div className={`absolute bottom-[-60px] left-[-60px] w-[600px] h-[600px] rounded-full ${theme.glowCircle2} blur-[140px] pointer-events-none z-0 transition-colors duration-500`} />
-      <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full ${theme.glowCircle3} blur-[120px] pointer-events-none z-0 transition-colors duration-500`} />
+      <div className={`absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full ${theme.glowCircle1} blur-[160px] pointer-events-none z-0 bg-orb-1 transition-colors duration-500`} />
+      <div className={`absolute bottom-[-60px] left-[-60px] w-[600px] h-[600px] rounded-full ${theme.glowCircle2} blur-[140px] pointer-events-none z-0 bg-orb-2 transition-colors duration-500`} />
+      <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full ${theme.glowCircle3} blur-[120px] pointer-events-none z-0 bg-orb-3 transition-colors duration-500`} />
 
       <a href="#dashboard-heading" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg focus:shadow-md">
         Skip to main content
@@ -590,25 +1028,28 @@ function DashboardContent() {
                     </p>
                   </div>
 
-                  {/* Unified Progress Card for Mobile and Desktop */}
-                  <div className="flex flex-col gap-2 bg-white/65 border border-slate-950/[0.06] p-4.5 rounded-[20px] shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] min-w-[200px] backdrop-blur-md relative overflow-hidden group self-stretch md:self-auto shrink-0">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-slate-900/[0.01] rounded-full blur-xl pointer-events-none" />
-                    <div className="flex items-center justify-between gap-4 w-full">
-                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Overall Progress</span>
-                      <span className="px-1.5 py-0.5 rounded bg-slate-900 text-white text-[9px] font-black leading-none">
-                        {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}%
-                      </span>
-                    </div>
-                    
-                    <div className="text-base font-black text-slate-800 tracking-tight leading-none mt-1">
-                      {completedTopics.length} <span className="text-xs text-slate-400/80 font-bold">/ {totalTopics} topics</span>
-                    </div>
+                  <div className="flex items-center gap-3 self-stretch md:self-auto shrink-0 justify-between md:justify-end">
 
-                    <div className="w-full h-2 bg-slate-950/[0.06] rounded-full overflow-hidden mt-1 relative">
-                      <div
-                        className="h-full bg-slate-900 transition-all duration-500 rounded-full"
-                        style={{ width: `${totalTopics > 0 ? (completedTopics.length / totalTopics) * 100 : 0}%` }}
-                      />
+                    {/* Unified Progress Card for Mobile and Desktop */}
+                    <div className="flex flex-col gap-2 bg-white/65 border border-slate-950/[0.06] p-4.5 rounded-[20px] shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] min-w-[160px] md:min-w-[180px] backdrop-blur-md relative overflow-hidden group self-stretch shrink-0">
+                      <div className="absolute top-0 right-0 w-24 h-24 bg-slate-900/[0.01] rounded-full blur-xl pointer-events-none" />
+                      <div className="flex items-center justify-between gap-4 w-full">
+                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Overall Progress</span>
+                        <span className="px-1.5 py-0.5 rounded bg-slate-900 text-white text-[9px] font-black leading-none">
+                          {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}%
+                        </span>
+                      </div>
+                      
+                      <div className="text-base font-black text-slate-800 tracking-tight leading-none mt-1">
+                        {completedTopics.length} <span className="text-xs text-slate-400/80 font-bold">/ {totalTopics} topics</span>
+                      </div>
+
+                      <div className="w-full h-2 bg-slate-950/[0.06] rounded-full overflow-hidden mt-1 relative">
+                        <div
+                          className="h-full bg-slate-900 transition-all duration-500 rounded-full"
+                          style={{ width: `${totalTopics > 0 ? (completedTopics.length / totalTopics) * 100 : 0}%` }}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -638,7 +1079,12 @@ function DashboardContent() {
                             { val: timeLeft.mins, unit: "m" },
                             { val: timeLeft.secs, unit: "s" }
                           ].map((item, idx) => (
-                            <div key={idx} className="flex items-baseline bg-slate-950/[0.03] border border-slate-950/[0.04] px-1.5 py-1 rounded-lg">
+                            <div
+                              key={idx}
+                              className={`flex items-baseline bg-slate-950/[0.03] border border-slate-950/[0.04] px-1.5 py-1 rounded-lg ${
+                                idx === 3 ? "max-[359px]:hidden" : ""
+                              }`}
+                            >
                               <span className="text-xs font-black text-slate-800 tabular-nums leading-none">
                                 {String(item.val).padStart(2, "0")}
                               </span>
@@ -878,37 +1324,36 @@ function DashboardContent() {
                         className={`bg-white/96 backdrop-blur-xl rounded-3xl border overflow-hidden transition-colors duration-500 ${isModuleComplete ? 'border-emerald-500/30 shadow-[0_4px_20px_rgba(16,185,129,0.05)]' : 'border-blue-100/80'}`}
                       >
                         <div className={`px-6 py-5 border-b flex flex-col md:flex-row md:items-center justify-between gap-4 transition-colors duration-500 ${isModuleComplete ? 'bg-emerald-50/30 border-emerald-500/20' : 'bg-white/50 border-blue-50/50'}`}>
-                          <h2 className="text-xl font-black text-slate-800 flex items-center gap-2">
-                            {module.title}
+                          <h2 className="text-xl font-black text-slate-800 flex items-start gap-2 leading-snug">
+                            <span className="flex-1 min-w-0 break-words">{module.title}</span>
                             {isModuleComplete && (
-                              <BadgeCheck className="w-5 h-5 text-emerald-500" />
+                              <BadgeCheck className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />
                             )}
                           </h2>
                           {isLoaded && (
-                            <div className="flex items-center gap-3">
+                            <div className="flex flex-wrap items-center gap-3">
                               {isModuleComplete ? (
-                                <span className="px-3 py-1 rounded-lg bg-emerald-100 text-emerald-700 text-[10px] font-black tracking-widest uppercase flex items-center gap-1.5">
-                                  <Sparkles className="w-3 h-3" />
+                                <span className="px-3 py-1 rounded-lg bg-emerald-100 text-emerald-700 text-[10px] font-black tracking-widest uppercase flex items-center gap-1.5 shrink-0">
+                                  <Sparkles className="w-3 h-3 animate-pulse" />
                                   Mastery Achieved
                                 </span>
                               ) : (
-                                <>
-                                  <span className="text-xs font-black text-slate-400">MODULE PROGRESS</span>
-                                  <div className="w-24 h-2 bg-slate-100 rounded-full overflow-hidden">
+                                <div className="flex items-center gap-3 shrink-0">
+                                  <span className="text-[10px] font-black text-slate-400 tracking-wider">MODULE PROGRESS</span>
+                                  <div className="w-20 sm:w-24 h-2 bg-slate-100 rounded-full overflow-hidden">
                                     <div className="h-full bg-emerald-500 transition-all duration-500" style={{ width: `${progress}%` }} />
                                   </div>
                                   <span className="text-xs font-black text-emerald-600 w-8 text-right">{progress}%</span>
-                                </>
+                                </div>
                               )}
                               
                               <button 
                                 onClick={() => {
-                                  // Bulk toggle logic (placeholder for UI, realistically we'd toggle all uncompleted)
                                   module.topics.forEach(t => {
                                     if (!isCompleted(t.id)) toggleTopic(t.id);
                                   });
                                 }}
-                                className={`ml-2 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-black transition-all ${isModuleComplete ? 'bg-slate-100 text-slate-400 opacity-50 cursor-not-allowed' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'}`}
+                                className={`ml-2 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-black transition-all shrink-0 ${isModuleComplete ? 'bg-slate-100 text-slate-400 opacity-50 cursor-not-allowed' : 'bg-blue-50 text-blue-600 hover:bg-blue-100 active:scale-95'}`}
                                 disabled={isModuleComplete}
                               >
                                 <CheckCircle2 className="w-3.5 h-3.5" />
@@ -922,19 +1367,19 @@ function DashboardContent() {
                             const done = isCompleted(topic.id);
                             const pinned = pinnedTopicIds.includes(topic.id);
                             return (
-                              <div key={topic.id} className="px-4 py-4 mx-2 rounded-2xl flex items-center justify-between hover:bg-blue-50/50 transition-colors group">
-                                <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-center gap-3 text-left">
-                                  <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border ${done ? "bg-emerald-100 border-emerald-200 text-emerald-600" : "bg-slate-50 border-slate-200 text-slate-300"}`}>
+                              <div key={topic.id} className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 transition-colors group gap-3">
+                                <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
+                                  <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 border-emerald-200 text-emerald-600" : "bg-slate-50 border-slate-200 text-slate-300 group-hover:border-blue-300"}`}>
                                     {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200" />}
                                   </div>
-                                  <span className={`text-sm font-black transition-colors ${done ? "text-slate-500" : "text-slate-700 group-hover:text-blue-600"}`}>
+                                  <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 line-through decoration-slate-300" : "text-slate-700 group-hover:text-blue-600"}`}>
                                     {topic.title}
                                   </span>
                                 </button>
                                 <button
                                   type="button"
                                   onClick={() => togglePinnedTopic(topic.id)}
-                                  className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors ${pinned ? "bg-amber-100 text-amber-600" : "text-slate-300 hover:bg-amber-50 hover:text-amber-500"}`}
+                                  className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 text-amber-600" : "text-slate-300 hover:bg-amber-50 hover:text-amber-500"}`}
                                   aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
                                 >
                                   <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
@@ -1108,10 +1553,9 @@ function DashboardContent() {
 
                   <div className="flex-1 flex justify-center">
                     <MagneticButton
-                      onClick={() => handleToggleTopic(selectedTopic)}
-                      className={`w-full md:w-auto px-5 md:px-6 py-2.5 md:py-3.5 rounded-xl md:rounded-2xl text-xs md:text-sm font-black flex items-center justify-center gap-2 transition-all duration-300 ${
-                        isCompleted(selectedTopic.id) ? "!from-emerald-400 !to-emerald-500 !shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)]" : ""
-                      }`}
+                      onClick={(e) => handleToggleTopic(selectedTopic, e)}
+                      customShadow={isCompleted(selectedTopic.id) ? "shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)]" : theme.buttonShadow}
+                      className="w-full md:w-auto px-5 md:px-6 py-2.5 md:py-3.5 rounded-xl md:rounded-2xl text-xs md:text-sm font-black flex items-center justify-center gap-2 transition-all duration-300"
                     >
                       {isCompleted(selectedTopic.id) ? (
                         <>
@@ -1145,16 +1589,23 @@ function DashboardContent() {
 
       <AnimatePresence>
         {commandOpen && (
-          <motion.div className="fixed inset-0 z-[80] bg-slate-950/35 backdrop-blur-sm px-4 pt-24" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+          <motion.div
+            className="fixed inset-0 z-[80] bg-slate-950/35 backdrop-blur-sm px-4 pt-24 cursor-pointer"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setCommandOpen(false)}
+          >
             <motion.div
               role="dialog"
               aria-modal="true"
               aria-label="Search syllabus"
-              className="mx-auto w-full max-w-2xl rounded-[1.75rem] bg-white shadow-2xl border border-blue-100 overflow-hidden"
+              className="mx-auto w-full max-w-2xl rounded-[1.75rem] bg-white shadow-2xl border border-blue-100 overflow-hidden cursor-default"
               initial={{ opacity: 0, y: 24, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 16, scale: 0.98 }}
               transition={{ type: "spring", stiffness: 330, damping: 30, mass: 0.55 }}
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="p-4 border-b border-slate-100 flex items-center gap-3">
                 <Search className="w-5 h-5 text-slate-400" />
@@ -1241,38 +1692,47 @@ function DashboardContent() {
 
       {/* Floating Sticky Focus Timer */}
       <AnimatePresence>
-        {view !== "dashboard" && (isTimerRunning || secondsLeft < sessionMinutes * 60) && (
+        {(isTimerRunning || secondsLeft < sessionMinutes * 60) && (
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: 50 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 30 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="fixed bottom-6 right-6 z-[80] flex items-center gap-3 bg-slate-900/95 text-white border border-white/10 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md"
+            className="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-[80] flex items-center gap-3 bg-white/80 border border-slate-200/50 rounded-2xl p-2.5 md:p-3 shadow-xl backdrop-blur-xl text-slate-800 shadow-slate-200/30"
           >
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-white shrink-0">
-                <Timer className={`w-4 h-4 ${isTimerRunning ? "animate-pulse text-blue-400" : ""}`} />
+            <div 
+              onClick={() => {
+                if (window.innerWidth < 1024) {
+                  setMobileSheetOpen(true);
+                  triggerHaptic("light");
+                }
+              }}
+              className="flex items-center gap-2 cursor-pointer select-none active:opacity-80 group"
+              title="Click to open Study Tools"
+            >
+              <div className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-[#2E95FF]/10 flex items-center justify-center text-[#2E95FF] shrink-0 border border-[#2E95FF]/10 transition-transform group-hover:scale-105">
+                <Timer className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isTimerRunning ? "animate-pulse" : ""}`} />
               </div>
-              <div className="flex flex-col min-w-[55px]">
-                <span className="text-[14px] font-black tracking-tight tabular-nums leading-none">
+              <div className="flex flex-col min-w-[50px] md:min-w-[55px]">
+                <span className="text-[13px] md:text-[14px] font-black tracking-tight tabular-nums leading-none text-slate-800">
                   {Math.floor(secondsLeft / 60)}:{String(secondsLeft % 60).padStart(2, "0")}
                 </span>
-                <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest mt-0.5 leading-none">
+                <span className="text-[7.5px] md:text-[8px] font-black text-slate-400 uppercase tracking-widest mt-0.5 leading-none">
                   {isTimerRunning ? "Focus" : "Paused"}
                 </span>
               </div>
             </div>
 
-            <div className="h-6 w-px bg-white/15" />
+            <div className="h-5 md:h-6 w-px bg-slate-200" />
 
             <div className="flex items-center gap-1.5">
               <button
                 type="button"
                 onClick={() => setIsTimerRunning(!isTimerRunning)}
-                className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors active:scale-95 cursor-pointer"
+                className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-slate-100 hover:bg-slate-200/80 text-slate-600 hover:text-slate-800 flex items-center justify-center transition-colors border border-slate-200/40 active:scale-95 cursor-pointer"
                 aria-label={isTimerRunning ? "Pause" : "Start"}
               >
-                {isTimerRunning ? <Pause className="w-3.5 h-3.5 fill-current" /> : <Play className="w-3.5 h-3.5 fill-current" />}
+                {isTimerRunning ? <Pause className="w-3 h-3 md:w-3.5 md:h-3.5 fill-current" /> : <Play className="w-3 h-3 md:w-3.5 md:h-3.5 fill-current" />}
               </button>
               <button
                 type="button"
@@ -1280,10 +1740,10 @@ function DashboardContent() {
                   setIsTimerRunning(false);
                   setSecondsLeft(sessionMinutes * 60);
                 }}
-                className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white/70 hover:text-white flex items-center justify-center transition-colors active:scale-95 cursor-pointer"
+                className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-slate-100 hover:bg-slate-200/80 text-slate-500 hover:text-slate-700 flex items-center justify-center transition-colors border border-slate-200/40 active:scale-95 cursor-pointer"
                 aria-label="Reset"
               >
-                <RotateCcw className="w-3.5 h-3.5" />
+                <RotateCcw className="w-3 h-3 md:w-3.5 md:h-3.5" />
               </button>
             </div>
           </motion.div>
@@ -1350,13 +1810,16 @@ function DashboardContent() {
       </BottomSheet>
 
       {/* Floating Sticky Mobile Study Tools FAB */}
-      {!mobileSheetOpen && (
+      {!mobileSheetOpen && !(isTimerRunning || secondsLeft < sessionMinutes * 60) && (
         <div className="fixed bottom-6 right-6 z-[40] lg:hidden">
           <motion.button
             type="button"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => setMobileSheetOpen(true)}
+            onClick={() => {
+              setMobileSheetOpen(true);
+              triggerHaptic("light");
+            }}
             className="flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-b from-[#2E95FF] to-[#007AFF] hover:brightness-110 text-white font-black text-xs shadow-lg shadow-blue-500/25 border border-blue-400/20 cursor-pointer"
           >
             <Timer className="w-4 h-4 animate-pulse" />
@@ -1364,6 +1827,281 @@ function DashboardContent() {
           </motion.button>
         </div>
       )}
+
+      {/* AUTHENTICATION GLASS MODAL */}
+      <AnimatePresence>
+        {authModalOpen && (
+          <motion.div
+            className="fixed inset-0 z-[100] bg-slate-950/45 backdrop-blur-md flex items-center justify-center p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => {
+              setAuthModalOpen(false);
+              triggerHaptic("light");
+            }}
+          >
+            <motion.div
+              initial={{ scale: 0.9, y: 20, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.9, y: 20, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 350, damping: 28 }}
+              className="bg-white/90 backdrop-blur-xl border border-white/60 w-full max-w-md rounded-[2rem] pt-16 pb-6 px-6 shadow-[0_24px_80px_rgba(0,0,0,0.15)] relative overflow-hidden"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button
+                type="button"
+                onClick={() => {
+                  setAuthModalOpen(false);
+                  triggerHaptic("light");
+                }}
+                className="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100/80 hover:bg-slate-200 border border-slate-200/50 flex items-center justify-center text-slate-500 cursor-pointer z-50 transition-colors shadow-sm"
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              {/* Tabs */}
+              <div className="flex bg-slate-950/[0.04] p-1 rounded-xl mb-6 relative">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAuthTab("signin");
+                    setAuthError("");
+                    triggerHaptic("light");
+                  }}
+                  className={`flex-1 py-2 text-xs font-black rounded-lg transition-all relative z-10 ${authTab === "signin" ? "text-slate-800" : "text-slate-400"}`}
+                >
+                  Sign In
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAuthTab("signup");
+                    setAuthError("");
+                    triggerHaptic("light");
+                  }}
+                  className={`flex-1 py-2 text-xs font-black rounded-lg transition-all relative z-10 ${authTab === "signup" ? "text-slate-800" : "text-slate-400"}`}
+                >
+                  Create Account
+                </button>
+                <motion.div
+                  layoutId="auth-tab-pill"
+                  className="absolute inset-y-1 bg-white rounded-lg shadow-sm border border-slate-950/[0.03]"
+                  style={{
+                    width: "calc(50% - 4px)",
+                    left: authTab === "signin" ? "4px" : "calc(50%)",
+                  }}
+                  transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                />
+              </div>
+
+              {/* Form header */}
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-black text-slate-900 tracking-tight">
+                  {authTab === "signin" ? "Welcome Back" : "Start Syncing"}
+                </h3>
+                <p className="text-xs text-slate-400/80 font-bold mt-1">
+                  {authTab === "signin"
+                    ? "Log in to sync your study progress to your devices"
+                    : "Create a free account to back up and track your syllabus checklist"}
+                </p>
+              </div>
+
+              {/* Error block */}
+              {authError && (
+                <div className="bg-rose-50 border border-rose-100 text-rose-600 px-4 py-2.5 rounded-xl text-xs font-bold mb-4 animate-shake">
+                  {authError}
+                </div>
+              )}
+
+              <form onSubmit={handleAuthSubmit} className="space-y-4">
+                {authTab === "signup" && (
+                  <div className="relative">
+                    <UserRound className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      value={authName}
+                      onChange={(e) => setAuthName(e.target.value)}
+                      className="w-full bg-slate-950/[0.03] border border-slate-950/[0.06] hover:border-slate-950/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 outline-none transition-all"
+                    />
+                  </div>
+                )}
+                <div className="relative">
+                  <Mail className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    value={authEmail}
+                    onChange={(e) => setAuthEmail(e.target.value)}
+                    className="w-full bg-slate-950/[0.03] border border-slate-950/[0.06] hover:border-slate-950/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 outline-none transition-all"
+                  />
+                </div>
+                <div className="relative">
+                  <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    value={authPassword}
+                    onChange={(e) => setAuthPassword(e.target.value)}
+                    className="w-full bg-slate-950/[0.03] border border-slate-950/[0.06] hover:border-slate-950/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 outline-none transition-all"
+                  />
+                </div>
+
+                <motion.button
+                  type="submit"
+                  disabled={authLoading}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="w-full relative overflow-hidden block px-8 py-3.5 rounded-xl font-black text-sm text-white bg-gradient-to-b from-[#2E95FF] to-[#007AFF] shadow-[0_8px_20px_-4px_rgba(0,122,255,0.4),inset_0_1px_0_rgba(255,255,255,0.3)] border border-blue-400/20 active:scale-[0.97] active:brightness-90 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:pointer-events-none mt-2"
+                >
+                  {authLoading ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Connecting...
+                    </>
+                  ) : authTab === "signin" ? (
+                    "Sign In"
+                  ) : (
+                    "Create Account"
+                  )}
+                </motion.button>
+              </form>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* USER PROFILE & CLOUD SYNC DRAWER */}
+      <AnimatePresence>
+        {profilePanelOpen && (
+          <motion.div
+            className="fixed inset-0 z-[100] bg-slate-950/45 backdrop-blur-md flex justify-end"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => {
+              setProfilePanelOpen(false);
+              triggerHaptic("light");
+            }}
+          >
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", stiffness: 300, damping: 28 }}
+              className="bg-white/95 backdrop-blur-2xl border-l border-white/50 w-full max-w-sm h-full p-6 shadow-2xl flex flex-col justify-between"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div>
+                {/* Header */}
+                <div className="flex items-center justify-between pb-6 border-b border-slate-100">
+                  <h3 className="text-lg font-black text-slate-900">Your Profile</h3>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setProfilePanelOpen(false);
+                      triggerHaptic("light");
+                    }}
+                    className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 cursor-pointer"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+
+                {/* Profile Card */}
+                <div className="flex items-center gap-4 py-6">
+                  <div className="w-16 h-16 rounded-[20px] bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl font-black shadow-lg shadow-blue-500/20">
+                    {userName ? userName.slice(0, 2).toUpperCase() : "KT"}
+                  </div>
+                  <div>
+                    <h4 className="text-base font-black text-slate-900">{userName}</h4>
+                    <p className="text-xs text-slate-400/80 font-bold">{userEmail}</p>
+                    <div className="flex items-center gap-1.5 mt-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                      <span className="text-[10px] font-black text-emerald-600 uppercase tracking-wider leading-none">Cloud Connected</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Progress Details */}
+                <div className="bg-slate-950/[0.02] border border-slate-950/[0.04] p-4.5 rounded-2xl space-y-4 mb-6">
+                  <div>
+                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none block mb-1">Syllabus Completion</span>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-2xl font-black text-slate-800 leading-none">{completedTopics.length}</span>
+                      <span className="text-xs text-slate-400/80 font-bold">/ {totalTopics} topics</span>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-1.5">
+                    <div className="flex justify-between text-[10px] font-black text-slate-500 uppercase tracking-wider">
+                      <span>Sync Status</span>
+                      <span>
+                        {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}% Done
+                      </span>
+                    </div>
+                    <div className="w-full h-2 bg-slate-950/[0.06] rounded-full overflow-hidden relative">
+                      <div
+                        className="h-full bg-slate-900 transition-all duration-500 rounded-full"
+                        style={{ width: `${totalTopics > 0 ? (completedTopics.length / totalTopics) * 100 : 0}%` }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Cloud Sync Section */}
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between text-xs text-slate-400/80 font-bold">
+                    <span>Cloud Backup</span>
+                    {lastSynced && (
+                      <span className="text-[10px] text-slate-400 font-medium">Last synced: {lastSynced}</span>
+                    )}
+                  </div>
+                  
+                  <motion.button
+                    type="button"
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.99 }}
+                    onClick={handleCloudSync}
+                    disabled={syncing}
+                    className={`w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-black border transition-all cursor-pointer ${
+                      syncing 
+                        ? "bg-slate-50 border-slate-100 text-slate-400 cursor-not-allowed"
+                        : "bg-blue-50 border-blue-100/50 hover:bg-blue-100 hover:border-blue-200 text-blue-600 shadow-sm"
+                    }`}
+                  >
+                    {syncing ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Syncing progress...
+                      </>
+                    ) : (
+                      <>
+                        <Cloud className="w-4 h-4" />
+                        Sync Progress to Cloud
+                      </>
+                    )}
+                  </motion.button>
+                </div>
+              </div>
+
+              {/* Logout Area */}
+              <div className="border-t border-slate-100 pt-4 mt-auto">
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className="w-full flex items-center justify-center gap-2 py-3 border border-rose-100 bg-rose-50/50 hover:bg-rose-50 text-rose-600 rounded-xl text-xs font-black transition-all cursor-pointer"
+                >
+                  <LogOut className="w-4 h-4" />
+                  Log Out Session
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

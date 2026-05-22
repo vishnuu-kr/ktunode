@@ -8,8 +8,8 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 
 interface ContinueSessionButtonProps {
   session: SavedSession;
-  onContinue: () => void;
-  onDismiss: () => void;
+  onContinue: (event?: React.MouseEvent<HTMLButtonElement>) => void;
+  onDismiss: (event?: React.MouseEvent<HTMLButtonElement> | React.MouseEvent<any> | any) => void;
 }
 
 export function ContinueSessionButton({
@@ -22,14 +22,14 @@ export function ContinueSessionButton({
   return (
     <motion.div
       key="continue-session-button"
-      initial={{ opacity: 0, y: 16, scale: 0.97 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: -8, scale: 0.97 }}
-      transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-      className="relative z-20 flex items-center justify-center gap-3 mt-4 w-full"
+      initial={{ opacity: 0, y: 16, scale: 0.97, height: "auto", marginTop: 0 }}
+      animate={{ opacity: 1, y: 0, scale: 1, height: "auto", marginTop: 16 }}
+      exit={{ opacity: 0, y: -20, scale: 0.95, height: 0, marginTop: 0, overflow: "hidden" }}
+      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+      className="relative z-10 flex items-center justify-center gap-3 w-full"
     >
       <MagneticButton
-        onClick={onContinue}
+        onClick={(e) => onContinue(e)}
         className="!w-auto !py-4 !px-8 !text-sm flex-1 md:flex-none"
       >
         {label}
@@ -42,10 +42,11 @@ export function ContinueSessionButton({
         aria-label="Dismiss session"
         onClick={(event) => {
           event.stopPropagation();
-          onDismiss();
+          onDismiss(event);
         }}
         className="flex flex-shrink-0 items-center justify-center w-[52px] h-[52px] rounded-full bg-white/70 backdrop-blur-md hover:bg-white border border-white/60 shadow-[0_4px_16px_rgba(0,0,0,0.04)] text-slate-500 hover:text-slate-800 transition-all duration-200"
       >
+        <span className="sr-only">Dismiss session</span>
         <X className="w-5 h-5" />
       </button>
     </motion.div>

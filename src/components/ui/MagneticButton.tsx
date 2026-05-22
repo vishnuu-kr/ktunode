@@ -7,24 +7,12 @@ import Link from "next/link";
 interface MagneticButtonProps {
   children: React.ReactNode;
   className?: string;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   href?: string;
+  customShadow?: string;
 }
 
-const buttonBaseClasses = `
-  relative overflow-hidden block
-  px-8 py-4 rounded-full font-semibold text-white
-  bg-gradient-to-b from-[#2E95FF] to-[#007AFF]
-  shadow-[0_8px_20px_-4px_rgba(0,122,255,0.4),inset_0_1px_0_rgba(255,255,255,0.3)]
-  border border-blue-400/20
-  transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]
-  group-hover:shadow-[0_12px_30px_-4px_rgba(0,122,255,0.6),inset_0_1px_0_rgba(255,255,255,0.4)]
-  group-hover:scale-[1.02]
-  active:scale-[0.96]
-  active:brightness-90
-`;
-
-export const MagneticButton = ({ children, className = "", onClick, href }: MagneticButtonProps) => {
+export const MagneticButton = ({ children, className = "", onClick, href, customShadow }: MagneticButtonProps) => {
   const ref = useRef<HTMLDivElement>(null);
   
   const x = useMotionValue(0);
@@ -48,6 +36,20 @@ export const MagneticButton = ({ children, className = "", onClick, href }: Magn
     x.set(0);
     y.set(0);
   };
+
+  const defaultShadowClasses = "shadow-[0_8px_20px_-4px_rgba(0,122,255,0.4),inset_0_1px_0_rgba(255,255,255,0.3)] border border-blue-400/20 group-hover:shadow-[0_12px_30px_-4px_rgba(0,122,255,0.6),inset_0_1px_0_rgba(255,255,255,0.4)]";
+  const shadowClasses = customShadow || defaultShadowClasses;
+
+  const buttonBaseClasses = `
+    relative overflow-hidden block
+    px-8 py-4 rounded-full font-semibold text-white
+    bg-gradient-to-b from-[#2E95FF] to-[#007AFF]
+    ${shadowClasses}
+    transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]
+    group-hover:scale-[1.02]
+    active:scale-[0.96]
+    active:brightness-90
+  `;
 
   const content = (
     <>

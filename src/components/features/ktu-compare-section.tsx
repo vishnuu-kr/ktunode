@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { Compare } from "@/components/ui/compare";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -15,6 +15,19 @@ const bullets = [
 export default function KtuCompareSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-8%" });
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const checkTouch = () => {
+        setIsTouchDevice(
+          "ontouchstart" in window ||
+            navigator.maxTouchPoints > 0
+        );
+      };
+      checkTouch();
+    }
+  }, []);
 
   return (
     <section
@@ -114,7 +127,7 @@ export default function KtuCompareSection() {
                 firstImageClassName="object-cover object-top"
                 secondImageClassname="object-cover object-top"
                 className="w-full aspect-[4/5] sm:aspect-square md:aspect-video rounded-[20px]"
-                slideMode="hover"
+                slideMode={isTouchDevice ? "drag" : "hover"}
                 autoplay={true}
               />
             </motion.div>

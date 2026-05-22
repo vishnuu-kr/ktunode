@@ -61,6 +61,9 @@ export default function PomodoroTimer({
     { label: "Break", val: 5 },
   ];
 
+  const activeIndex = presets.findIndex((p) => p.val === sessionMinutes);
+  const presetLefts = ["4px", "calc(33.333% + 3px)", "calc(66.666% + 2px)"];
+
   return (
     <div className="bg-white/65 backdrop-blur-xl border border-slate-950/[0.06] rounded-[20px] p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] transition-all duration-300 relative overflow-hidden group">
       {/* Glow background accent */}
@@ -88,20 +91,33 @@ export default function PomodoroTimer({
 
       {/* Preset select pills */}
       <div className="flex gap-1.5 p-1 bg-slate-950/[0.03] border border-slate-950/[0.03] rounded-xl mb-3 relative z-10">
-        {presets.map((preset) => (
-          <button
-            key={preset.val}
-            type="button"
-            onClick={() => handlePresetSelect(preset.val)}
-            className={`flex-1 text-[11px] font-black py-1.5 rounded-lg transition-all ${
-              sessionMinutes === preset.val
-                ? "bg-[#2E95FF] text-white shadow-[0_2px_6px_rgba(46,149,255,0.25)] border border-[#2E95FF]/30"
-                : "text-slate-400 hover:text-slate-800"
-            }`}
-          >
-            {preset.label}
-          </button>
-        ))}
+        <motion.div
+          className="absolute bg-[#2E95FF] rounded-lg -z-10 shadow-[0_2px_6px_rgba(46,149,255,0.25)] border border-[#2E95FF]/30"
+          style={{
+            top: "4px",
+            bottom: "4px",
+            width: "calc(33.333% - 6px)",
+          }}
+          animate={{
+            left: activeIndex >= 0 ? presetLefts[activeIndex] : "4px",
+          }}
+          transition={{ type: "spring", stiffness: 350, damping: 28 }}
+        />
+        {presets.map((preset) => {
+          const isActive = sessionMinutes === preset.val;
+          return (
+            <button
+              key={preset.val}
+              type="button"
+              onClick={() => handlePresetSelect(preset.val)}
+              className={`relative flex-1 text-[11px] font-black py-1.5 rounded-lg transition-colors duration-200 z-10 ${
+                isActive ? "text-white" : "text-slate-400 hover:text-slate-800"
+              }`}
+            >
+              <span className="relative z-10">{preset.label}</span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Timer Circle */}

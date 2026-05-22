@@ -17,11 +17,64 @@ const outfit = Outfit({
   display: "swap",
 });
 
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#f8fafc",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ktunode.com"),
   title: "KTUNODE | Ace KTU Exams. Faster.",
   description: "Select your branch and semester to instantly unlock premium notes, interactive checklists, and PYQs designed for the 2024 KTU scheme.",
+  keywords: [
+    "KTU",
+    "KTUNODE",
+    "KTU Notes",
+    "KTU Syllabus",
+    "KTU 2024 Scheme",
+    "KTU PYQ",
+    "B.Tech Notes",
+    "Kerala Technological University",
+    "KTU study materials",
+    "KTU checklist",
+    "KTU exams"
+  ],
+  authors: [{ name: "KTUNODE Team" }],
+  creator: "KTUNODE",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "KTUNODE",
+  },
   icons: {
     icon: "/logo.webp",
+    apple: "/logo.webp",
+  },
+  openGraph: {
+    title: "KTUNODE | Ace KTU Exams. Faster.",
+    description: "Unlock premium notes, syllabus checklists, and PYQs designed specifically for the 2024 KTU scheme. Ace your semesters with ease.",
+    url: "https://ktunode.com",
+    siteName: "KTUNODE",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/logo.webp",
+        width: 512,
+        height: 512,
+        alt: "KTUNODE Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "KTUNODE | Ace KTU Exams. Faster.",
+    description: "Unlock premium notes, syllabus checklists, and PYQs designed specifically for the 2024 KTU scheme.",
+    images: ["/logo.webp"],
   },
 };
 

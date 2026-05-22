@@ -9,7 +9,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import useSessionPersistence from "@/hooks/useSessionPersistence";
 import { ContinueSessionButton } from "@/components/features/ContinueSessionButton";
 import { SEMESTERS } from "@/lib/constants";
-import { ScrambleText } from "@/components/ui/ScrambleText";
+import { UpgradeBanner } from "@/components/ui/upgrade-banner";
 
 // Dynamically import below-the-fold components to optimize LCP and bundle payloads
 const KtuCompareSection = dynamic(() => import("@/components/features/ktu-compare-section"), { ssr: false });
@@ -36,6 +36,137 @@ const branches = [
 const semesters = SEMESTERS;
 
 
+
+// Global landing haptic driver with pointer pressure & Web Audio API
+export function triggerLandingHaptic(
+  type: "light" | "medium" | "heavy" | "success" | "warning",
+  pressure?: number | React.PointerEvent | React.MouseEvent | React.TouchEvent | PointerEvent | MouseEvent
+) {
+  if (typeof window === "undefined") return;
+
+  // Extract pressure value (between 0.0 and 1.0)
+  let pressureVal = 0.5; // default center weight
+  if (typeof pressure === "number") {
+    pressureVal = pressure;
+  } else if (pressure && "nativeEvent" in pressure) {
+    const nativeEvent = pressure.nativeEvent;
+    if (nativeEvent instanceof PointerEvent) {
+      pressureVal = nativeEvent.pressure > 0 ? nativeEvent.pressure : 0.5;
+    }
+  } else if (pressure && pressure instanceof PointerEvent) {
+    pressureVal = pressure.pressure > 0 ? pressure.pressure : 0.5;
+  }
+
+  // Ensure pressure ranges between 0.15 and 1.0
+  pressureVal = Math.max(0.15, Math.min(1.0, pressureVal));
+
+  // 1. Device Vibration
+  if (navigator.vibrate) {
+    try {
+      let duration = 0;
+      switch (type) {
+        case "light":
+          duration = 8;
+          break;
+        case "medium":
+          duration = 15;
+          break;
+        case "heavy":
+          duration = 30;
+          break;
+        case "success":
+          navigator.vibrate([
+            Math.round(12 * (0.5 + pressureVal)), 
+            Math.round(45 * (0.5 + pressureVal)), 
+            Math.round(12 * (0.5 + pressureVal))
+          ]);
+          break;
+        case "warning":
+          navigator.vibrate([
+            Math.round(45 * (0.5 + pressureVal)), 
+            Math.round(75 * (0.5 + pressureVal))
+          ]);
+          break;
+      }
+      if (duration > 0) {
+        const scaledDuration = Math.round(duration * (0.5 + pressureVal));
+        navigator.vibrate(scaledDuration);
+      }
+    } catch (e) {}
+  }
+
+  // 2. Synthesized Web Audio Tones
+  try {
+    const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+    if (!AudioContextClass) return;
+    const audioCtx = new AudioContextClass();
+
+    const sweepTone = (startFreq: number, endFreq: number, baseDuration: number, baseGain: number) => {
+      const osc = audioCtx.createOscillator();
+      const gainNode = audioCtx.createGain();
+      osc.type = "triangle";
+      
+      const scaledStartFreq = startFreq * (0.7 + 0.6 * pressureVal);
+      const scaledEndFreq = endFreq * (0.7 + 0.6 * pressureVal);
+      const scaledGainVal = baseGain * (0.5 + pressureVal);
+      const scaledDuration = baseDuration * (0.8 + 0.4 * pressureVal);
+      
+      osc.frequency.setValueAtTime(scaledStartFreq, audioCtx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(scaledEndFreq, audioCtx.currentTime + scaledDuration);
+      
+      gainNode.gain.setValueAtTime(scaledGainVal, audioCtx.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + scaledDuration);
+      
+      osc.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + scaledDuration);
+    };
+
+    const playTone = (freq: number, start: number, baseDuration: number, oscType: "sine" | "triangle" = "sine", baseGain = 0.15) => {
+      const osc = audioCtx.createOscillator();
+      const gainNode = audioCtx.createGain();
+      osc.type = oscType;
+      
+      const scaledFreq = freq * (0.8 + 0.4 * pressureVal);
+      const scaledGainVal = baseGain * (0.5 + pressureVal);
+      const scaledDuration = baseDuration * (0.8 + 0.4 * pressureVal);
+      
+      osc.frequency.setValueAtTime(scaledFreq, audioCtx.currentTime + start);
+      gainNode.gain.setValueAtTime(scaledGainVal, audioCtx.currentTime + start);
+      gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + start + scaledDuration);
+      
+      osc.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+      osc.start(audioCtx.currentTime + start);
+      osc.stop(audioCtx.currentTime + start + scaledDuration);
+    };
+
+    switch (type) {
+      case "light":
+        sweepTone(850, 180, 0.04, 0.08);
+        break;
+      case "medium":
+        sweepTone(700, 120, 0.06, 0.12);
+        break;
+      case "heavy":
+        sweepTone(550, 80, 0.09, 0.18);
+        break;
+      case "success":
+        playTone(587.33, 0, 0.12, "triangle", 0.08); 
+        playTone(880.00, 0.06, 0.32, "sine", 0.1);
+        break;
+      case "warning":
+        sweepTone(220, 130, 0.12, 0.15);
+        setTimeout(() => {
+          try {
+            sweepTone(220, 130, 0.12, 0.15);
+          } catch {}
+        }, 140);
+        break;
+    }
+  } catch (e) {}
+}
 
 function PremiumSelect({
   value,
@@ -118,7 +249,10 @@ function PremiumSelect({
       <motion.button
         ref={triggerRef}
         type="button"
-        onClick={() => setOpen(!open)}
+        onClick={(e) => {
+          setOpen(!open);
+          triggerLandingHaptic("light", e);
+        }}
         onKeyDown={handleKeyDown}
         role="combobox"
         aria-expanded={open}
@@ -162,11 +296,12 @@ function PremiumSelect({
                       ? "bg-blue-50 text-blue-600"
                       : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                   } ${focusedIndex === index ? "bg-blue-50 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
-                  onClick={() => {
+                  onClick={(e) => {
                     onChange(opt.value);
                     setOpen(false);
                     setFocusedIndex(-1);
                     triggerRef.current?.focus();
+                    triggerLandingHaptic("medium", e);
                   }}
                   onMouseEnter={() => setFocusedIndex(index)}
                 >
@@ -188,6 +323,7 @@ export default function Home() {
   const [selectedSemester, setSelectedSemester] = useState<number | "">("");
   const [mounted, setMounted] = useState(false);
 
+
   const [mousePos, setMousePos] = useState({ x: -999, y: -999 });
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -207,12 +343,15 @@ export default function Home() {
     };
   }, []);
 
-  const handleLaunch = () => {
+  const handleLaunch = (event?: React.MouseEvent | React.PointerEvent) => {
     if (!selectedBranch || !selectedSemester) {
       setErrorState(true);
       setTimeout(() => setErrorState(false), 500);
+      triggerLandingHaptic("warning", event);
       return;
     }
+
+    triggerLandingHaptic("success", event);
 
     const p = new URLSearchParams();
     if (selectedBranch) p.set("branch", selectedBranch);
@@ -226,12 +365,14 @@ export default function Home() {
     router.push(`/dashboard${p.toString() ? `?${p.toString()}` : ""}`);
   };
 
-  const handleContinue = () => {
+  const handleContinue = (event?: React.MouseEvent | React.PointerEvent) => {
     if (!savedSession) return;
+    triggerLandingHaptic("success", event);
     router.push(`/dashboard?branch=${savedSession.branch}&sem=${savedSession.semester}`);
   };
 
-  const handleDismiss = () => {
+  const handleDismiss = (event?: React.MouseEvent | React.PointerEvent) => {
+    triggerLandingHaptic("light", event);
     clearSession();
   };
 
@@ -250,6 +391,13 @@ export default function Home() {
         style={{ left: mousePos.x, top: mousePos.y }}
         aria-hidden="true"
       />
+
+      {/* Drifting mesh glows matching dashboard for high-fidelity unity */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
+        <div className="absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full bg-blue-400/20 blur-[160px] bg-orb-1" />
+        <div className="absolute bottom-[20%] left-[-60px] w-[600px] h-[600px] rounded-full bg-indigo-300/15 blur-[140px] bg-orb-2" />
+        <div className="absolute top-[45%] left-[65%] -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-blue-100/40 blur-[120px] bg-orb-3" />
+      </div>
 
       {/* Wrapper for Hero + Navbar to perfectly contain the background */}
       <div className="relative w-full">
@@ -292,22 +440,12 @@ export default function Home() {
 
 
 
-        {/* ── Badge ── */}
-        <motion.div
-          className="relative z-10 flex items-center gap-2 px-5 py-2 mb-6 bg-white/88 backdrop-blur-md border border-blue-200/70 rounded-full shadow-lg cursor-default select-none"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 20 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-60" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
-          </span>
-          <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-          <span className="text-sm font-bold text-blue-600 tracking-wide">
-            <ScrambleText text="Built for KTU 2024 Scheme" duration={1000} delay={150} />
-          </span>
-        </motion.div>
+        <UpgradeBanner
+          variant="pill"
+          buttonText="Built for KTU"
+          description="2024 Scheme"
+          className="mb-6 z-10 relative select-none animate-fade-in"
+        />
 
         {/* ── Headline ── */}
         <motion.h1
@@ -355,7 +493,7 @@ export default function Home() {
 
         {/* ── Selector card ── */}
         <motion.div
-          className="relative z-20 bg-white/96 backdrop-blur-xl border border-blue-100/80 rounded-3xl p-3 flex flex-col md:flex-row items-center gap-3 max-w-3xl w-full"
+          className="relative z-30 bg-white/96 backdrop-blur-xl border border-blue-100/80 rounded-3xl p-3 flex flex-col md:flex-row items-center gap-3 max-w-3xl w-full"
           initial={{ opacity: 0, y: 24, scale: 0.97 }}
           animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 24, scale: mounted ? 1 : 0.97 }}
           transition={{ delay: 0.24, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}

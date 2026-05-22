@@ -38,7 +38,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
   }, []);
   
   // Snap states: 0 = collapsed, 1 = expanded
-  const collapsedY = windowHeight - 72; // Show peek bar of height 72px
+  const collapsedY = windowHeight; // Hide completely off-screen
   const expandedY = 80; // Top margin when fully expanded
 
   useEffect(() => {
@@ -99,7 +99,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
       {/* Floating Bottom Sheet */}
       <motion.div
         ref={sheetRef}
-        drag="y"
+        drag={isOpen ? "y" : false}
         dragDirectionLock
         dragConstraints={{ top: expandedY, bottom: collapsedY }}
         dragElastic={0.15}
@@ -130,7 +130,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
             </div>
             
             <div className="flex items-center gap-1.5 text-slate-400 font-bold text-xs">
-              <span>Swipe up for widgets</span>
+              <span>Swipe down to close</span>
               <motion.div
                 animate={{ y: isOpen ? 0 : [0, -3, 0] }}
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
