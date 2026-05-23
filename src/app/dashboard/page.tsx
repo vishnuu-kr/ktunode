@@ -237,6 +237,11 @@ function DashboardContent() {
   const sem = parseInt(searchParams.get("sem") || "4", 10);
   const { resolvedTheme } = useTheme();
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const [view, setView] = useState<ViewState>("dashboard");
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
@@ -968,7 +973,7 @@ function DashboardContent() {
     <div
       className="h-screen overflow-hidden relative flex flex-col font-sans transition-colors duration-500 text-slate-900 dark:text-slate-100 bg-background"
       style={{
-        background: resolvedTheme === "dark"
+        background: mounted && resolvedTheme === "dark"
           ? `radial-gradient(ellipse at 70% 10%, oklch(18% 0.035 ${accentHue}) 0%, oklch(14% 0.015 250) 45%, oklch(12% 0.01 250) 80%)`
           : theme.background
       }}
