@@ -9,7 +9,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 interface ContinueSessionButtonProps {
   session: SavedSession;
   onContinue: (event?: React.MouseEvent<HTMLButtonElement>) => void;
-  onDismiss: (event?: React.MouseEvent<HTMLButtonElement> | React.MouseEvent<any> | any) => void;
+  onDismiss: (event?: React.MouseEvent) => void;
 }
 
 export function ContinueSessionButton({

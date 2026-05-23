@@ -202,7 +202,7 @@ export default function FoundreeHero() {
               >
                 {s.value}
               </div>
-              <div className="text-xs font-semibold text-white/38 uppercase tracking-widest mt-1 group-hover:text-white/55 transition-colors duration-300">
+              <div className="text-xs font-semibold text-white/60 uppercase tracking-widest mt-1 group-hover:text-white/80 transition-colors duration-300">
                 {s.label}
               </div>
             </motion.div>

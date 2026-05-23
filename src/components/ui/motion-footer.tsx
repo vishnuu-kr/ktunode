@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "@/lib/utils";
 import { LayoutDashboard, ArrowUp } from "lucide-react";
+import Link from "next/link";
 
 // Register ScrollTrigger safely for Next.js SSR
 if (typeof window !== "undefined") {
@@ -16,12 +17,12 @@ if (typeof window !== "undefined") {
 // 1. THEME-ADAPTIVE INLINE STYLES (KTUNODE Light Theme)
 // -------------------------------------------------------------------------
 const STYLES = `
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
 .cinematic-footer-wrapper {
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
+  background-color: var(--color-bg);
+  transition: background-color 0.5s ease;
 }
 
 @keyframes footer-scroll-marquee {
@@ -43,6 +44,12 @@ const STYLES = `
   -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
 }
 
+.dark .footer-bg-grid {
+  background-image: 
+    linear-gradient(to right, rgba(96, 165, 250, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(96, 165, 250, 0.03) 1px, transparent 1px);
+}
+
 /* Light Aurora Glow */
 .footer-aurora {
   background: radial-gradient(
@@ -52,20 +59,28 @@ const STYLES = `
   );
 }
 
+.dark .footer-aurora {
+  background: radial-gradient(
+    circle at 50% 50%, 
+    rgba(96, 165, 250, 0.08) 0%, 
+    transparent 60%
+  );
+}
+
 /* White Glass Pill Theming */
 .footer-glass-pill {
-  background: #ffffff;
+  background: var(--color-surface);
   box-shadow: 
     0 4px 20px -2px rgba(37, 99, 235, 0.06), 
-    inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+    inset 0 0 0 1px var(--color-border);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .footer-glass-pill:hover {
-  background: #f8fafc;
+  background: var(--color-sky);
   box-shadow: 
     0 8px 30px -4px rgba(37, 99, 235, 0.12), 
-    inset 0 0 0 1px rgba(37, 99, 235, 0.2);
+    inset 0 0 0 1px var(--color-accent);
   transform: translateY(-2px);
 }
 
@@ -76,8 +91,16 @@ const STYLES = `
   font-weight: 900;
   letter-spacing: -0.05em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(37, 99, 235, 0.04);
-  background: linear-gradient(180deg, rgba(37, 99, 235, 0.06) 0%, transparent 60%);
+  -webkit-text-stroke: 1px rgba(37, 99, 235, 0.09);
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: -webkit-text-stroke 0.5s ease;
+}
+
+.dark .footer-giant-bg-text {
+  -webkit-text-stroke: 1px rgba(96, 165, 250, 0.16);
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.22) 0%, transparent 70%);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -103,8 +126,8 @@ const MagneticButton = React.forwardRef<HTMLElement, MagneticButtonProps>(
       const ctx = gsap.context(() => {
         const handleMouseMove = (e: MouseEvent) => {
           const rect = element.getBoundingClientRect();
-          const h = rect.width / 2;
-          const w = rect.height / 2;
+          const w = rect.width / 2;
+          const h = rect.height / 2;
           const x = e.clientX - rect.left - h;
           const y = e.clientY - rect.top - w;
 
@@ -237,10 +260,10 @@ export function CinematicFooter() {
       
       <div
         ref={wrapperRef}
-        className="relative h-screen w-full bg-slate-50"
+        className="relative h-screen w-full bg-background"
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
-        <footer className="fixed bottom-0 left-0 flex h-screen w-full flex-col justify-between overflow-hidden text-slate-900 cinematic-footer-wrapper">
+        <footer className="fixed bottom-0 left-0 flex h-screen w-full flex-col justify-between overflow-hidden text-slate-900 dark:text-slate-100 cinematic-footer-wrapper">
           
           <div className="footer-aurora absolute left-1/2 top-1/2 h-[60vh] w-[80vw] -translate-x-1/2 -translate-y-1/2 rounded-[50%] blur-[100px] pointer-events-none z-0" />
           <div className="footer-bg-grid absolute inset-0 z-0 pointer-events-none" />
@@ -253,8 +276,8 @@ export function CinematicFooter() {
           </div>
 
           {/* Slanted Marquee to match your screenshot */}
-          <div className="absolute top-12 left-0 w-full overflow-hidden border-y border-blue-100 bg-white/90 backdrop-blur-md py-4 z-10 -rotate-2 scale-110 shadow-sm">
-            <div className="flex w-max animate-footer-scroll-marquee text-xs md:text-sm font-bold tracking-[0.2em] text-slate-500 uppercase">
+          <div aria-hidden="true" className="absolute top-12 left-0 w-full overflow-hidden border-y border-blue-100 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md py-4 z-10 -rotate-2 scale-110 shadow-sm">
+            <div className="flex w-max animate-footer-scroll-marquee text-xs md:text-sm font-bold tracking-[0.2em] text-slate-500 dark:text-slate-400 uppercase">
               <MarqueeItem />
               <MarqueeItem />
             </div>
@@ -264,13 +287,13 @@ export function CinematicFooter() {
           <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 mt-16 w-full max-w-5xl mx-auto">
             <h2
               ref={headingRef}
-              className="text-5xl md:text-7xl lg:text-8xl font-black text-[#1d4ed8] tracking-tighter mb-10 text-center"
+              className="text-5xl md:text-7xl lg:text-8xl font-black text-[#1d4ed8] dark:text-blue-400 tracking-tighter mb-10 text-center"
             >
               Ace KTU Exams<br />with KTU Node.
             </h2>
 
             <div ref={linksRef} className="flex flex-wrap justify-center items-center gap-4 w-full max-w-3xl">
-              <MagneticButton as="a" href="/dashboard" className="footer-glass-pill px-6 py-4 rounded-xl text-slate-700 font-semibold text-sm md:text-base flex items-center gap-3 group">
+              <MagneticButton as={Link} href="/dashboard" className="footer-glass-pill px-6 py-4 rounded-xl text-slate-700 dark:text-slate-300 font-semibold text-sm md:text-base flex items-center gap-3 group">
                 <LayoutDashboard className="w-5 h-5 text-blue-500 group-hover:text-blue-700 transition-colors" />
                 Dashboard
               </MagneticButton>
@@ -280,23 +303,24 @@ export function CinematicFooter() {
           {/* Bottom Bar */}
           <div className="relative z-20 w-full pb-8 px-8 flex flex-col items-center gap-4">
             {/* Built by foundree — centered, clickable */}
+            {/* Built by foundree — centered, clickable */}
             <a
               href="https://foundree.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-glass-pill px-5 py-2.5 rounded-full flex items-center gap-2 group"
             >
-              <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest group-hover:text-slate-500 transition-colors">Built by</span>
-              <span className="text-slate-800 font-black text-sm group-hover:text-blue-600 transition-colors">foundree</span>
-              <span className="text-slate-300 text-[10px] font-bold">.dev</span>
+              <span className="text-slate-400 dark:text-slate-500 text-[10px] font-bold uppercase tracking-widest group-hover:text-slate-500 transition-colors">Built by</span>
+              <span className="text-slate-800 dark:text-slate-200 font-black text-sm group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">foundree</span>
+              <span className="text-slate-300 dark:text-slate-600 text-[10px] font-bold">.dev</span>
             </a>
 
             {/* Bottom row */}
             <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className="text-slate-400 text-xs font-semibold tracking-wider uppercase">
-                © 2026 KTU node. All rights reserved.
+              <div className="text-slate-400 dark:text-slate-500 text-xs font-semibold tracking-wider uppercase">
+                © {new Date().getFullYear()} KTU node. All rights reserved.
               </div>
-              <MagneticButton as="button" onClick={scrollToTop} className="footer-glass-pill w-10 h-10 rounded-full flex items-center justify-center text-slate-500 hover:text-blue-600 group">
+              <MagneticButton as="button" onClick={scrollToTop} aria-label="Scroll to top" className="footer-glass-pill w-10 h-10 rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 group">
                 <ArrowUp className="w-4 h-4 transform group-hover:-translate-y-1 transition-transform duration-300" />
               </MagneticButton>
             </div>

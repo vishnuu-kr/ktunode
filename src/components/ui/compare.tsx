@@ -57,11 +57,11 @@ export const Compare: React.FC<CompareProps> = ({
 
   const handleTouchMove = useCallback(
     (e: React.TouchEvent<HTMLDivElement>) => {
-      if (e.touches.length > 0) {
+      if (isDragging && e.touches.length > 0) {
         handlePositionChange(e.touches[0].clientX);
       }
     },
-    [handlePositionChange]
+    [isDragging, handlePositionChange]
   );
 
   // Mouse Actions
@@ -102,15 +102,20 @@ export const Compare: React.FC<CompareProps> = ({
     };
   }, [autoplay, autoplayDuration, isInteracted]);
 
-  // Global mouse up to stop dragging if cursor leaves window
+  // Global mouse up & touch release to stop dragging anywhere
   useEffect(() => {
     if (slideMode === "drag") {
-      window.addEventListener("mouseup", handleMouseUp);
+      const release = () => setIsDragging(false);
+      window.addEventListener("mouseup", release);
+      window.addEventListener("touchend", release);
+      window.addEventListener("touchcancel", release);
       return () => {
-        window.removeEventListener("mouseup", handleMouseUp);
+        window.removeEventListener("mouseup", release);
+        window.removeEventListener("touchend", release);
+        window.removeEventListener("touchcancel", release);
       };
     }
-  }, [slideMode, handleMouseUp]);
+  }, [slideMode]);
 
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLDivElement>) => {
     const step = e.shiftKey ? 10 : 2;
@@ -148,13 +153,12 @@ export const Compare: React.FC<CompareProps> = ({
       aria-valuemin={0}
       aria-valuemax={100}
       className={cn(
-        "relative select-none overflow-hidden touch-none cursor-ew-resize",
+        "relative select-none overflow-hidden touch-pan-y cursor-ew-resize",
         className
       )}
       onMouseMove={handleMouseMove}
       onMouseDown={handleMouseDown}
       onTouchMove={handleTouchMove}
-      onTouchStart={() => setIsInteracted(true)}
       onMouseEnter={() => {
         if (slideMode === "hover") setIsInteracted(true);
       }}
@@ -198,11 +202,26 @@ export const Compare: React.FC<CompareProps> = ({
       {/* Handlebar / Slider Divider */}
       {showHandlebar && (
         <div
-          className="absolute inset-y-0 z-20 w-1 bg-white/80 dark:bg-neutral-800/80 cursor-ew-resize flex items-center justify-center pointer-events-none"
+          className="absolute inset-y-0 z-20 w-10 -ml-5 cursor-ew-resize flex items-center justify-center pointer-events-auto bg-transparent select-none"
           style={{ left: `${sliderPosition}%` }}
+          onMouseDown={(e) => {
+            setIsDragging(true);
+            setIsInteracted(true);
+            handlePositionChange(e.clientX);
+          }}
+          onTouchStart={(e) => {
+            setIsDragging(true);
+            setIsInteracted(true);
+            if (e.touches.length > 0) {
+              handlePositionChange(e.touches[0].clientX);
+            }
+          }}
         >
+          {/* Visual Thin Divider Line */}
+          <div className="absolute inset-y-0 w-0.5 bg-white/80 dark:bg-neutral-800/80 pointer-events-none" />
+
           {/* Centered Grab Pill */}
-          <div className="h-10 w-6 rounded-full bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 shadow-lg flex items-center justify-center gap-[2px]">
+          <div className="h-10 w-6 rounded-full bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 shadow-lg flex items-center justify-center gap-[2px] pointer-events-none z-30">
             <div className="w-[2px] h-4 bg-neutral-400 dark:bg-neutral-600 rounded-full" />
             <div className="w-[2px] h-4 bg-neutral-400 dark:bg-neutral-600 rounded-full" />
           </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, PanInfo } from "framer-motion";
+import { AnimatePresence, motion, useAnimation, PanInfo } from "framer-motion";
 import { ChevronUp } from "lucide-react";
 
 interface BottomSheetProps {
@@ -86,15 +86,18 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
   return (
     <>
       {/* Backdrop blur overlay only when sheet is expanded */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={onClose}
-          className="fixed inset-0 z-[45] bg-slate-950/20 backdrop-blur-[2px] lg:hidden"
-        />
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            key="bottom-sheet-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="fixed inset-0 z-[45] bg-slate-950/20 backdrop-blur-[2px] lg:hidden"
+          />
+        )}
+      </AnimatePresence>
 
       {/* Floating Bottom Sheet */}
       <motion.div

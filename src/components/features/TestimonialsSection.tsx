@@ -79,19 +79,14 @@ export default function TestimonialsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 overflow-hidden bg-gradient-to-b from-slate-50 via-[#f5f9ff] to-slate-50 border-t border-slate-100"
+      className="relative py-28 overflow-hidden bg-gradient-to-b from-slate-50 via-[#f5f9ff] to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 border-t border-slate-100 dark:border-slate-800"
       aria-labelledby="testimonials-heading"
     >
-      <style dangerouslySetInnerHTML={{ __html: `
-        @keyframes scroll-left {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); }
-        }
-      ` }} />
+
 
       {/* Soft Glow Orbs */}
-      <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-blue-300/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-indigo-300/8 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-blue-300/10 dark:bg-blue-900/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-indigo-300/8 dark:bg-indigo-900/5 rounded-full blur-3xl pointer-events-none" />
 
       {/* Header */}
       <div
@@ -99,19 +94,19 @@ export default function TestimonialsSection() {
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 border border-blue-100/60 text-blue-600 text-xs font-bold tracking-wide uppercase shadow-sm">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-100/60 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-wide uppercase shadow-sm">
           <Heart className="w-3 h-3 fill-current text-blue-500" />
           Loved by students
         </div>
         <h2
           id="testimonials-heading"
-          className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-5 leading-[1.05]"
+          className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-5 leading-[1.05]"
         >
           Loved by KTU
           <br />
           <span className="gradient-text-animated">students.</span>
         </h2>
-        <p className="text-slate-500 text-base md:text-lg max-w-lg mx-auto leading-relaxed font-medium">
+        <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-lg mx-auto leading-relaxed font-medium">
           KTU students across every branch use KTUNODE to study smarter
           and walk into exams prepared.
         </p>
@@ -124,8 +119,8 @@ export default function TestimonialsSection() {
         onMouseLeave={() => setPaused(false)}
       >
         {/* Fade edges */}
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-[#f5f9ff] to-transparent" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-[#f5f9ff] to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-slate-50 dark:from-slate-950 to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-slate-50 dark:from-slate-950 to-transparent" />
 
         <div
           className="flex gap-6 w-max py-4"
@@ -137,9 +132,9 @@ export default function TestimonialsSection() {
           {doubled.map((t, i) => (
             <div
               key={i}
-              className="w-[360px] flex-shrink-0 bg-white border border-slate-200/50 rounded-3xl p-7 cursor-default group hover:-translate-y-2 hover:border-blue-300 hover:shadow-[0_20px_40px_rgba(37,99,235,0.06),inset_0_1px_0_rgba(255,255,255,0.95)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              className="w-[360px] flex-shrink-0 bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800 rounded-3xl p-7 cursor-default group hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-800 hover:shadow-[0_20px_40px_rgba(37,99,235,0.06)] hover:dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
               style={{
-                boxShadow: "0 2px 16px rgba(0,0,0,0.01), inset 0 1px 0 rgba(255,255,255,0.9)",
+                boxShadow: "0 2px 16px rgba(0,0,0,0.01), inset 0 1px 0 rgba(255,255,255,0.05)",
               }}
             >
               {/* Rating stars & Quote mark */}
@@ -153,25 +148,25 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote Title */}
-              <h3 className="text-lg font-extrabold text-slate-800 leading-snug mb-2 group-hover:text-blue-600 transition-colors duration-300">
+              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 leading-snug mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                 &ldquo;{t.quote}&rdquo;
               </h3>
 
               {/* Description */}
-              <p className="text-sm text-slate-500/95 leading-relaxed mb-6 font-medium">
+              <p className="text-sm text-slate-500/95 dark:text-slate-400 leading-relaxed mb-6 font-medium">
                 {t.text}
               </p>
 
               {/* Profile */}
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <div className="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
                 <div
                   className={`w-9 h-9 rounded-xl border flex items-center justify-center text-xs font-bold ${t.color}`}
                 >
                   {t.avatar}
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-slate-800">{t.name}</div>
-                  <div className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">{t.branch}</div>
+                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200">{t.name}</div>
+                  <div className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider">{t.branch}</div>
                 </div>
               </div>
             </div>

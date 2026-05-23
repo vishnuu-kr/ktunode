@@ -63,8 +63,9 @@ export const MagneticButton = ({ children, className = "", onClick, href, custom
     </>
   );
 
-  const widthClasses = className.split(" ").filter(c => c.startsWith("w-") || c.includes(":w-") || c.includes("shrink-")).join(" ");
-  const otherClasses = className.split(" ").filter(c => !(c.startsWith("w-") || c.includes(":w-") || c.includes("shrink-"))).join(" ");
+  const classTokens = className.split(/\s+/).filter(Boolean);
+  const widthClasses = classTokens.filter(c => c.startsWith("w-") || c.includes(":w-") || c.includes("shrink-")).join(" ");
+  const otherClasses = classTokens.filter(c => !(c.startsWith("w-") || c.includes(":w-") || c.includes("shrink-"))).join(" ");
 
   return (
     <motion.div

@@ -29,7 +29,7 @@ export default function Error({
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={reset}
-            className="px-6 py-3 bg-[var(--color-accent)] text-white rounded-xl font-semibold hover:bg-[var(--color-accent)]/90 transition-colors"
+            className="px-6 py-3 bg-[var(--color-accent)] text-white rounded-xl font-semibold hover:opacity-90 hover:bg-[var(--color-accent)] transition-colors"
           >
             Try again
           </button>

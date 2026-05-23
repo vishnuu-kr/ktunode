@@ -1,17 +1,19 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme inline {
-  --color-bg: oklch(98% 0.004 240);
-  --color-surface: oklch(100% 0 0);
-  --color-fg: oklch(20% 0.02 240);
-  --color-muted: oklch(50% 0.018 240);
-  --color-border: oklch(90% 0.006 240);
-  --color-accent: oklch(56% 0.18 255);
-  --color-accent-light: oklch(56% 0.18 255 / 8%);
-  --color-accent-mid: oklch(56% 0.18 255 / 15%);
-  --color-sky: oklch(93% 0.018 240);
-  --color-sky-deep: oklch(88% 0.035 240);
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-fg: var(--color-fg);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-mid: var(--color-accent-mid);
+  --color-sky: var(--color-sky);
+  --color-sky-deep: var(--color-sky-deep);
 
   --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-logo: var(--font-outfit), ui-sans-serif, system-ui;
@@ -30,6 +32,47 @@
   --ease-ios: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --color-bg: oklch(98% 0.004 240);
+  --color-surface: oklch(100% 0 0);
+  --color-fg: oklch(20% 0.02 240);
+  --color-muted: oklch(50% 0.018 240);
+  --color-border: oklch(90% 0.006 240);
+  --color-accent: oklch(56% 0.18 255);
+  --color-accent-light: oklch(56% 0.18 255 / 8%);
+  --color-accent-mid: oklch(56% 0.18 255 / 15%);
+  --color-sky: oklch(93% 0.018 240);
+  --color-sky-deep: oklch(88% 0.035 240);
+  color-scheme: light;
+}
+
+.dark {
+  --color-bg: oklch(14% 0.015 250);       /* Soft premium midnight background */
+  --color-surface: oklch(17% 0.016 250);  /* Slightly lighter midnight-card surface */
+  --color-fg: oklch(96% 0.006 250);       /* High contrast off-white text */
+  --color-muted: oklch(74% 0.01 250);     /* Soft secondary gray text */
+  --color-border: oklch(24% 0.012 250);   /* Soft subtle dark borders */
+  --color-accent: oklch(68% 0.2 250);     /* Glowing neon blue accent */
+  --color-accent-light: oklch(68% 0.2 250 / 12%);
+  --color-accent-mid: oklch(68% 0.2 250 / 22%);
+  --color-sky: oklch(20% 0.015 250);      /* Slate alternate card background */
+  --color-sky-deep: oklch(23% 0.015 250);
+  color-scheme: dark;
+}
+
+/* Custom View Transitions API support for gorgeous theme reveal */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
 }
 
 /* ─── Base ─── */
@@ -73,9 +116,7 @@
 /* ══════════════════════════════════════════
    BACKGROUNDS
 ══════════════════════════════════════════ */
-.sky-bg {
-  background: linear-gradient(180deg, #d6ecff 0%, #e8f3ff 60%, #f4f9ff 100%);
-}
+
 
 .dot-grid {
   background-image: radial-gradient(circle, rgba(37,99,235,0.09) 1px, transparent 1px);
@@ -115,30 +156,11 @@
   z-index: 1;
 }
 
-.lift-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(147,197,253,0.75);
-  box-shadow: 0 24px 70px rgba(37,99,235,0.18), 0 10px 24px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.95) !important;
-}
+
 
 /* ══════════════════════════════════════════
    CARDS
-══════════════════════════════════════════ */
-.premium-card {
-  background: #ffffff;
-  border: 1px solid rgba(37,99,235,0.1);
-  border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(37,99,235,0.06), 0 1px 3px rgba(0,0,0,0.04);
-  transition: transform 0.4s cubic-bezier(0.16,1,0.3,1),
-              box-shadow 0.4s cubic-bezier(0.16,1,0.3,1),
-              border-color 0.3s ease;
-}
-
-.premium-card:hover {
-  border-color: rgba(37,99,235,0.2);
-  box-shadow: 0 20px 56px rgba(37,99,235,0.13), 0 4px 12px rgba(0,0,0,0.06);
-  transform: translateY(-6px);
-}
+   ══════════════════════════════════════════ */
 
 /* ══════════════════════════════════════════
    BUTTONS
@@ -247,11 +269,7 @@
   100% { background-position: 0% 50%; }
 }
 
-@keyframes blue-gradient-shift {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 
 @media (min-width: 768px) {
   .gradient-text {
@@ -267,43 +285,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: blue-gradient-shift 4s ease infinite;
+    animation: gradient-shift 4s ease infinite;
   }
 }
 
-/* ══════════════════════════════════════════
-   FLOATING CARDS
-══════════════════════════════════════════ */
-.float-card {
-  animation: float-gentle 5s ease-in-out infinite;
-}
 
-.float-card-delayed {
-  animation: float-gentle 5s ease-in-out 1.6s infinite;
-}
 
-@keyframes float-gentle {
-  0%, 100% { transform: translateY(0px) rotate(var(--card-rotate, 0deg)); }
-  50%       { transform: translateY(-10px) rotate(var(--card-rotate, 0deg)); }
-}
 
-/* ══════════════════════════════════════════
-   HIGHLIGHT UNDERLINE
-══════════════════════════════════════════ */
-.highlight-underline {
-  position: relative;
-  display: inline-block;
-}
-
-.highlight-underline::after {
-  content: '';
-  position: absolute;
-  bottom: -2px; left: 0; right: 0;
-  height: 6px;
-  background: rgba(37,99,235,0.18);
-  border-radius: 3px;
-  z-index: -1;
-}
 
 /* ══════════════════════════════════════════
    SCROLL PROGRESS BAR
@@ -362,23 +350,7 @@
   animation: pulse-ring 1.8s ease-out infinite;
 }
 
-/* ══════════════════════════════════════════
-   BENTO CARDS
-══════════════════════════════════════════ */
-.bento-card {
-  background: #ffffff;
-  border: 1px solid rgba(37,99,235,0.08);
-  border-radius: 28px;
-  box-shadow: 0 2px 16px rgba(37,99,235,0.05);
-  transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
-  overflow: hidden;
-}
 
-.bento-card:hover {
-  border-color: rgba(37,99,235,0.18);
-  box-shadow: 0 12px 40px rgba(37,99,235,0.1);
-  transform: translateY(-3px);
-}
 
 /* ══════════════════════════════════════════
    KEYFRAMES
@@ -413,10 +385,7 @@
   100% { transform: translateX(-50%); }
 }
 
-@keyframes pulse-ring {
-  0%   { transform: scale(1); opacity: 0.35; }
-  100% { transform: scale(1.7); opacity: 0; }
-}
+
 
 @keyframes bounce-subtle {
   0%, 100% { transform: translateY(0); }
@@ -448,10 +417,7 @@
   .animate-scale-in,
   .animate-slide-right,
   .animate-scroll-x,
-  .animate-shimmer,
-  .cursor-glow,
-  .dot-grid,
-  .scroll-progress {
+  .dot-grid {
     animation: none !important;
   }
 }
@@ -467,34 +433,8 @@
   margin: 0 auto;
 }
 
-.bottom-sheet-backdrop {
-  background-color: rgba(15, 23, 42, 0.3);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
 .ios-safe-bottom {
   padding-bottom: env(safe-area-inset-bottom, 16px);
-}
-
-.ios-safe-bottom-margin {
-  margin-bottom: env(safe-area-inset-bottom, 16px);
-}
-
-/* Custom premium card elevation/ring */
-.premium-card-ring {
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.01), inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(15, 23, 42, 0.05);
-}
-
-.scrollbar-none::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-.scrollbar-none {
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
 }
 
 /* ══════════════════════════════════════════
@@ -566,6 +506,11 @@
 }
 .shadow-subject-emerald:hover {
   box-shadow: 0 16px 36px -4px rgba(20, 184, 166, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
 }
 
 

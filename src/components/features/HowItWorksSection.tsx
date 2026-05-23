@@ -12,8 +12,8 @@ const steps = [
     title: "Pick branch & semester",
     description:
       "Select CS, EC, ME, CE, or EE and your semester. KTUNODE filters everything to exactly what you need instantly.",
-    textColor: "text-blue-600",
-    bgColor: "bg-blue-50/70 border-blue-100/50",
+    textColor: "text-blue-600 dark:text-blue-400",
+    bgColor: "bg-blue-50/70 dark:bg-blue-950/20 border-blue-100/50 dark:border-blue-900/30",
     hoverStyle: "hover:border-blue-300/80 hover:shadow-[0_24px_48px_rgba(59,130,246,0.06)]",
   },
   {
@@ -22,8 +22,8 @@ const steps = [
     title: "Access core resources",
     description:
       "Chapter-wise notes, model papers, and a live syllabus tracker — all in one place, always updated for the 2024 scheme.",
-    textColor: "text-emerald-600",
-    bgColor: "bg-emerald-50/70 border-emerald-100/50",
+    textColor: "text-emerald-600 dark:text-emerald-400",
+    bgColor: "bg-emerald-50/70 dark:bg-emerald-950/20 border-emerald-100/50 dark:border-emerald-900/30",
     hoverStyle: "hover:border-emerald-300/80 hover:shadow-[0_24px_48px_rgba(16,185,129,0.06)]",
   },
   {
@@ -32,8 +32,8 @@ const steps = [
     title: "Track & ace exams",
     description:
       "Mark modules complete, audit what's left, and walk into every exam knowing you've covered exactly what the examiner expects.",
-    textColor: "text-violet-600",
-    bgColor: "bg-violet-50/70 border-violet-100/50",
+    textColor: "text-violet-600 dark:text-violet-400",
+    bgColor: "bg-violet-50/70 dark:bg-violet-950/20 border-violet-100/50 dark:border-violet-900/30",
     hoverStyle: "hover:border-violet-300/80 hover:shadow-[0_24px_48px_rgba(139,92,246,0.06)]",
   },
 ];
@@ -45,13 +45,13 @@ export default function HowItWorksSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 overflow-hidden bg-gradient-to-b from-white via-slate-50/40 to-white border-t border-slate-100"
+      className="relative py-32 overflow-hidden bg-gradient-to-b from-white via-slate-50/40 to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 border-t border-slate-100 dark:border-slate-800"
       aria-labelledby="how-it-works-heading"
     >
       {/* Soft Ambient Background Glows */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
-        <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-tr from-blue-100/10 via-sky-100/5 to-transparent blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-bl from-indigo-100/10 via-purple-100/3 to-transparent blur-3xl" />
+        <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-tr from-blue-100/10 dark:from-blue-900/5 via-sky-100/5 to-transparent blur-3xl" />
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-bl from-indigo-100/10 dark:from-indigo-900/5 via-purple-100/3 to-transparent blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -62,17 +62,17 @@ export default function HowItWorksSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 border border-blue-100/50 text-blue-600 text-xs font-bold tracking-wide uppercase select-none">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-100/50 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-wide uppercase select-none">
             How it works
           </div>
           <h2
             id="how-it-works-heading"
-            className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-5 leading-[1.06]"
+            className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-5 leading-[1.06]"
           >
             Study smarter{" "}
             <span className="gradient-text-animated">in 3 steps.</span>
           </h2>
-          <p className="text-slate-500 text-base md:text-lg max-w-md mx-auto leading-relaxed font-medium">
+          <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-md mx-auto leading-relaxed font-medium">
             From setup to exam-ready in minutes. No account, no clutter.
           </p>
         </motion.div>
@@ -81,7 +81,7 @@ export default function HowItWorksSection() {
         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Desktop Animated Connector Line */}
-          <div className="absolute top-[54px] left-[15%] right-[15%] h-[2px] bg-slate-100/80 hidden md:block z-0" aria-hidden="true">
+          <div className="absolute top-[54px] left-[15%] right-[15%] h-[2px] bg-slate-100/80 dark:bg-slate-800 hidden md:block z-0" aria-hidden="true">
             <motion.div
               className="h-full bg-gradient-to-r from-blue-500 via-emerald-500 to-violet-500 w-[20%]"
               animate={{
@@ -100,13 +100,13 @@ export default function HowItWorksSection() {
             return (
               <motion.div
                 key={i}
-                className={`relative z-10 h-[325px] p-6 flex flex-col justify-between rounded-3xl border border-slate-200/50 bg-white/70 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 group ${step.hoverStyle}`}
+                className={`relative z-10 h-[325px] p-6 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 group ${step.hoverStyle}`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.15, duration: 0.65, ease: [0.16, 1, 0.3, 1] as const }}
               >
                 {/* Large Background Step Number Watermark */}
-                <div className="absolute bottom-[-16px] right-[-10px] text-[10rem] font-sans font-black text-slate-950/[0.03] select-none pointer-events-none z-0 leading-none group-hover:text-slate-950/[0.06] transition-colors duration-500">
+                <div className="absolute bottom-[-16px] right-[-10px] text-[10rem] font-sans font-black text-slate-950/[0.03] dark:text-white/[0.03] select-none pointer-events-none z-0 leading-none group-hover:text-slate-950/[0.06] group-hover:dark:text-white/[0.06] transition-colors duration-500">
                   {step.number}
                 </div>
 
@@ -120,10 +120,10 @@ export default function HowItWorksSection() {
                   </div>
 
                   {/* Title & Description */}
-                  <h3 className="text-base md:text-lg font-extrabold text-slate-900 mb-1.5 leading-snug">
+                  <h3 className="text-base md:text-lg font-extrabold text-slate-900 dark:text-slate-100 mb-1.5 leading-snug">
                     {step.title}
                   </h3>
-                  <p className="text-xs text-slate-500 leading-relaxed font-semibold">
+                  <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-semibold">
                     {step.description}
                   </p>
                 </div>
@@ -131,9 +131,9 @@ export default function HowItWorksSection() {
                 {/* Integrated Visual Micro-Graphic (Bottom Row) */}
                 <div className="relative z-10">
                   {i === 0 && (
-                    <div className="pt-3 border-t border-slate-100 flex gap-1.5 select-none justify-center">
+                    <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex gap-1.5 select-none justify-center">
                       <div className="relative inline-block transition-transform duration-300 group-hover:scale-105">
-                        <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-blue-50 border border-blue-100 text-blue-600 shadow-sm">
+                        <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-blue-50 dark:bg-blue-950 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-400 shadow-sm">
                           CS
                         </span>
                         {/* Simulated cursor arrow */}
@@ -143,32 +143,32 @@ export default function HowItWorksSection() {
                           </svg>
                         </div>
                       </div>
-                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-slate-50 border border-slate-100/60 text-slate-400">
+                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-100/60 dark:border-slate-800/60 text-slate-400 dark:text-slate-500">
                         EC
                       </span>
-                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-slate-50 border border-slate-100/60 text-slate-400">
+                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-100/60 dark:border-slate-800/60 text-slate-400 dark:text-slate-500">
                         ME
                       </span>
                     </div>
                   )}
 
                   {i === 1 && (
-                    <div className="pt-3 border-t border-slate-100 flex gap-2 select-none justify-center">
-                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-emerald-50 border border-emerald-100 text-emerald-600 flex items-center gap-1 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                    <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex gap-2 select-none justify-center">
+                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-emerald-50 dark:bg-emerald-950 border border-emerald-100 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400 flex items-center gap-1 shadow-sm transition-transform duration-300 group-hover:scale-105">
                         <BookOpen className="w-3.5 h-3.5" /> Notes
                       </span>
-                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-violet-50 border border-violet-100 text-violet-600 flex items-center gap-1 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                      <span className="text-[10px] font-black px-2.5 py-1 rounded-xl bg-violet-50 dark:bg-violet-950 border border-violet-100 dark:border-violet-800 text-violet-600 dark:text-violet-400 flex items-center gap-1 shadow-sm transition-transform duration-300 group-hover:scale-105">
                         <FileText className="w-3.5 h-3.5" /> Papers
                       </span>
                     </div>
                   )}
 
                   {i === 2 && (
-                    <div className="pt-3 border-t border-slate-100 flex flex-col gap-1.5 select-none items-center">
-                      <div className="w-28 bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                    <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-1.5 select-none items-center">
+                      <div className="w-28 bg-slate-100 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
                         <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-full w-[80%] rounded-full transition-all duration-700 group-hover:w-[100%]" />
                       </div>
-                      <span className="text-[9px] font-black text-slate-400 uppercase tracking-wider">
+                      <span className="text-[9px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-wider">
                         Progress tracker
                       </span>
                     </div>

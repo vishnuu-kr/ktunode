@@ -21,6 +21,7 @@ export default function CtaBanner() {
       ref={sectionRef}
       className="relative py-32 overflow-hidden"
       style={{
+        backgroundColor: "#0f172a",
         backgroundImage: "radial-gradient(circle at center, rgba(8, 15, 30, 0.75) 0%, rgba(8, 15, 30, 0) 65%), url('/bg-ready.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -76,7 +77,7 @@ export default function CtaBanner() {
         </motion.h2>
 
         <motion.p
-          className="text-white/52 text-lg mb-12 max-w-xl mx-auto leading-relaxed"
+          className="text-white/70 text-lg mb-12 max-w-xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -122,7 +123,7 @@ export default function CtaBanner() {
               <div className="text-3xl font-black text-white group-hover:text-blue-300 transition-colors duration-300">
                 {stat.value}
               </div>
-              <div className="text-xs text-white/38 font-semibold mt-1 uppercase tracking-widest group-hover:text-white/55 transition-colors duration-300">
+              <div className="text-xs text-white/60 font-semibold mt-1 uppercase tracking-widest group-hover:text-white/80 transition-colors duration-300">
                 {stat.label}
               </div>
             </motion.div>

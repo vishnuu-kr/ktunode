@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
 export default function NotesPage() {
-  redirect("/dashboard?tab=notes");
+  redirect("/dashboard");
 }

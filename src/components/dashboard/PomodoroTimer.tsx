@@ -62,12 +62,12 @@ export default function PomodoroTimer({
   ];
 
   const activeIndex = presets.findIndex((p) => p.val === sessionMinutes);
-  const presetLefts = ["4px", "calc(33.333% + 3px)", "calc(66.666% + 2px)"];
+  const presetLefts = ["1%", "34%", "67%"];
 
   return (
-    <div className="bg-white/65 backdrop-blur-xl border border-slate-950/[0.06] rounded-[20px] p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] transition-all duration-300 relative overflow-hidden group">
+    <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] transition-all duration-300 relative overflow-hidden group">
       {/* Glow background accent */}
-      <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
+      <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] dark:bg-white/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
 
       <div className="flex items-center justify-between gap-3 mb-3 relative z-10">
         <div className="flex items-center gap-3">
@@ -75,14 +75,14 @@ export default function PomodoroTimer({
             <Timer className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="font-black text-slate-900 text-base leading-tight">Focus Timer</h3>
+            <h3 className="font-black text-slate-900 dark:text-slate-100 text-base leading-tight">Focus Timer</h3>
             <p className="text-[11px] text-slate-400/80 font-bold">Boost productivity</p>
           </div>
         </div>
         <button
           type="button"
           onClick={() => setIsMuted(!isMuted)}
-          className="w-8 h-8 rounded-lg bg-slate-950/[0.04] hover:bg-slate-950/[0.08] text-slate-500 flex items-center justify-center transition-colors shrink-0"
+          className="w-8 h-8 rounded-lg bg-slate-950/[0.04] dark:bg-white/[0.04] hover:bg-slate-950/[0.08] dark:hover:bg-white/[0.08] text-slate-500 dark:text-slate-400 flex items-center justify-center transition-colors shrink-0"
           aria-label={isMuted ? "Unmute timer alert" : "Mute timer alert"}
         >
           {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
@@ -90,16 +90,17 @@ export default function PomodoroTimer({
       </div>
 
       {/* Preset select pills */}
-      <div className="flex gap-1.5 p-1 bg-slate-950/[0.03] border border-slate-950/[0.03] rounded-xl mb-3 relative z-10">
+      <div className="flex gap-1.5 p-1 bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.03] dark:border-white/[0.03] rounded-xl mb-3 relative z-10">
         <motion.div
           className="absolute bg-[#2E95FF] rounded-lg -z-10 shadow-[0_2px_6px_rgba(46,149,255,0.25)] border border-[#2E95FF]/30"
           style={{
             top: "4px",
             bottom: "4px",
-            width: "calc(33.333% - 6px)",
+            width: "31%",
           }}
           animate={{
-            left: activeIndex >= 0 ? presetLefts[activeIndex] : "4px",
+            left: activeIndex >= 0 ? presetLefts[activeIndex] : "1%",
+            opacity: activeIndex >= 0 ? 1 : 0,
           }}
           transition={{ type: "spring", stiffness: 350, damping: 28 }}
         />
@@ -110,8 +111,8 @@ export default function PomodoroTimer({
               key={preset.val}
               type="button"
               onClick={() => handlePresetSelect(preset.val)}
-              className={`relative flex-1 text-[11px] font-black py-1.5 rounded-lg transition-colors duration-200 z-10 ${
-                isActive ? "text-white" : "text-slate-400 hover:text-slate-800"
+              className={`relative flex-1 text-[11px] font-black py-1.5 rounded-lg transition-colors duration-200 z-10 cursor-pointer ${
+                isActive ? "text-white" : "text-slate-400 hover:text-slate-800 hover:dark:text-slate-200"
               }`}
             >
               <span className="relative z-10">{preset.label}</span>
@@ -127,7 +128,7 @@ export default function PomodoroTimer({
             cx="68"
             cy="68"
             r={radius}
-            className="stroke-slate-950/[0.03] fill-none"
+            className="stroke-slate-950/[0.03] dark:stroke-white/[0.03] fill-none"
             strokeWidth="8"
           />
           <motion.circle
@@ -148,7 +149,7 @@ export default function PomodoroTimer({
           aria-live="polite"
           aria-atomic="true"
         >
-          <span className="text-3xl font-black tracking-tight text-slate-900 tabular-nums leading-none">
+          <span className="text-3xl font-black tracking-tight text-slate-900 dark:text-slate-100 tabular-nums leading-none">
             {formatTime(secondsLeft)}
           </span>
           <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest mt-1">
@@ -180,7 +181,7 @@ export default function PomodoroTimer({
         <button
           type="button"
           onClick={handleReset}
-          className="flex-[2] h-[48px] rounded-xl border border-slate-950/[0.06] bg-white/60 text-slate-700 hover:text-slate-900 text-[13px] font-black hover:bg-slate-950/[0.02] flex items-center justify-center gap-1.5 transition-all shadow-sm active:scale-[0.97]"
+          className="flex-[2] h-[48px] rounded-xl border border-slate-950/[0.06] dark:border-white/[0.06] bg-white/60 dark:bg-slate-800/60 text-slate-700 dark:text-slate-350 hover:text-slate-900 hover:dark:text-slate-100 hover:bg-slate-950/[0.02] hover:dark:bg-white/[0.02] text-[13px] font-black flex items-center justify-center gap-1.5 transition-all shadow-sm active:scale-[0.97] cursor-pointer"
         >
           <RotateCcw className="w-4 h-4" />
           Reset

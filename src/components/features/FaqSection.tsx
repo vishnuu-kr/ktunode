@@ -57,16 +57,16 @@ export default function FaqSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 overflow-hidden"
+      className="relative py-28 overflow-hidden bg-background"
       style={{
         background:
-          "linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%)",
+          "linear-gradient(180deg, var(--color-bg) 0%, var(--color-sky) 100%)",
       }}
       aria-labelledby="faq-heading"
     >
       {/* Blobs */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-blue-50/55 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-50/35 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-blue-50/55 dark:bg-blue-900/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-50/35 dark:bg-indigo-900/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
@@ -81,13 +81,13 @@ export default function FaqSection() {
               <div className="section-badge mb-5">FAQ</div>
               <h2
                 id="faq-heading"
-                className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-5 leading-[1.05]"
+                className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-5 leading-[1.05]"
               >
                 Common
                 <br />
                 <span className="gradient-text-animated">questions.</span>
               </h2>
-              <p className="text-slate-500 text-base leading-relaxed mb-8">
+              <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed mb-8">
                 Everything you need to know about KTUNODE. Can&apos;t find the
                 answer? Reach out to us.
               </p>
@@ -97,13 +97,13 @@ export default function FaqSection() {
                 {quickStats.map((s, i) => (
                   <div
                     key={s.label}
-                    className={`flex items-center gap-4 p-4 bg-white rounded-2xl border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default ${
+                    className={`flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-blue-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default ${
                       visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
                     }`}
                     style={{ transitionDelay: `${200 + i * 80}ms` }}
                   >
-                    <div className="text-xl font-black text-blue-600">{s.value}</div>
-                    <div className="text-sm font-semibold text-slate-500">{s.label}</div>
+                    <div className="text-xl font-black text-blue-600 dark:text-blue-400">{s.value}</div>
+                    <div className="text-sm font-semibold text-slate-500 dark:text-slate-450">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -124,22 +124,23 @@ export default function FaqSection() {
                     style={{ transitionDelay: `${i * 55}ms` }}
                   >
                     <div
-                      className={`bg-white rounded-2xl border overflow-hidden transition-all duration-300 ${
+                      className={`bg-white dark:bg-slate-900 rounded-2xl border dark:border-slate-800 overflow-hidden transition-all duration-300 ${
                         isOpen
-                          ? "border-blue-200 shadow-lg shadow-blue-50"
-                          : "border-slate-100 hover:border-blue-100 shadow-sm hover:shadow-md"
+                          ? "border-blue-200 dark:border-blue-800 shadow-lg shadow-blue-50 dark:shadow-none"
+                          : "border-slate-100 dark:border-slate-800 hover:border-blue-100 shadow-sm hover:shadow-md"
                       }`}
                     >
                       <button
                         onClick={() => setOpenIndex(isOpen ? null : i)}
                         className="w-full flex items-center justify-between px-6 py-5 text-left gap-4 group"
                         aria-expanded={isOpen}
+                        aria-controls={`faq-answer-${i}`}
                       >
                         <span
                           className={`text-sm md:text-base font-bold leading-snug transition-colors ${
                             isOpen
-                              ? "text-blue-700"
-                              : "text-slate-800 group-hover:text-blue-600"
+                              ? "text-blue-700 dark:text-blue-450"
+                              : "text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-450"
                           }`}
                         >
                           {faq.q}
@@ -148,7 +149,7 @@ export default function FaqSection() {
                           className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-200 ${
                             isOpen
                               ? "bg-blue-600 text-white"
-                              : "bg-slate-100 text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600"
+                              : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-450 group-hover:bg-blue-50 group-hover:text-blue-600 dark:group-hover:text-blue-400"
                           }`}
                         >
                           {isOpen ? (
@@ -160,11 +161,12 @@ export default function FaqSection() {
                       </button>
 
                       <div
+                        id={`faq-answer-${i}`}
                         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                          isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
+                          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                         }`}
                       >
-                        <p className="px-6 pb-6 text-sm text-slate-500 leading-relaxed">
+                        <p className="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                           {faq.a}
                         </p>
                       </div>

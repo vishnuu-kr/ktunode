@@ -159,6 +159,7 @@ export function UpgradeBanner({
             {onClose && (
               <button 
                 onClick={onClose}
+                aria-label="Close banner"
                 className="m-0 flex h-6 !w-6 shrink-0 cursor-pointer items-center justify-center rounded-[4px] border-0 bg-transparent p-0 text-[#005FF2] hover:bg-[#CAE7FF] dark:hover:bg-[#012F61]"
               >
                 <X size={16} className="text-[#005FF2] dark:text-[#47A8FF]" />

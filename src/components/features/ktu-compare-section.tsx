@@ -32,16 +32,16 @@ export default function KtuCompareSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 overflow-hidden"
+      className="relative py-28 overflow-hidden bg-background"
       style={{
         background:
-          "linear-gradient(180deg, #f3f8ff 0%, #eaf3ff 50%, #ddeeff 100%)",
+          "linear-gradient(180deg, var(--color-bg) 0%, var(--color-sky) 50%, var(--color-sky-deep) 100%)",
       }}
       aria-labelledby="compare-heading"
     >
       {/* Blobs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100/35 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-sky-100/25 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100/35 dark:bg-blue-900/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-sky-100/25 dark:bg-sky-900/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
@@ -57,14 +57,14 @@ export default function KtuCompareSection() {
 
             <h2
               id="compare-heading"
-              className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.05] mb-6"
+              className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.05] mb-6"
             >
               From Chaos
               <br />
               <span className="gradient-text-animated">to Clarity.</span>
             </h2>
 
-            <p className="text-lg text-slate-500 leading-relaxed mb-8 max-w-md">
+            <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed mb-8 max-w-md">
               Stop digging through dense, cluttered university material. Our
               structured notes strip away the noise so you can focus on exactly
               what you need to pass.
@@ -79,10 +79,10 @@ export default function KtuCompareSection() {
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.2 + i * 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950 flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 className="w-3.5 h-3.5 text-blue-500" />
                   </div>
-                  <span className="text-sm font-semibold text-slate-600">{item}</span>
+                  <span className="text-sm font-semibold text-slate-600 dark:text-slate-350">{item}</span>
                 </motion.div>
               ))}
             </div>
@@ -110,7 +110,7 @@ export default function KtuCompareSection() {
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.div
-              className="p-2 md:p-3 w-full max-w-[760px] rounded-3xl border border-blue-100 bg-white/80 backdrop-blur-sm"
+              className="p-2 md:p-3 w-full max-w-[760px] rounded-3xl border border-blue-100 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm"
               style={{
                 boxShadow:
                   "0 20px 60px rgba(37,99,235,0.12), 0 4px 16px rgba(0,0,0,0.06)",
@@ -131,7 +131,7 @@ export default function KtuCompareSection() {
                 autoplay={true}
               />
             </motion.div>
-            <p className="text-xs font-semibold text-slate-400 tracking-wide uppercase">
+            <p className="text-xs font-semibold text-slate-400 dark:text-slate-500 tracking-wide uppercase">
               ← Drag or hover to compare →
             </p>
           </motion.div>

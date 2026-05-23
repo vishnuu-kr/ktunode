@@ -30,17 +30,17 @@ function parseInline(text: string): React.ReactNode[] {
       nodes.push(text.slice(lastIndex, match.index));
     }
     if (match[2]) {
-      nodes.push(<strong key={match.index} className="font-black text-slate-900">{match[2]}</strong>);
+      nodes.push(<strong key={match.index} className="font-black text-slate-900 dark:text-slate-100">{match[2]}</strong>);
     } else if (match[3]) {
-      nodes.push(<em key={match.index} className="italic text-slate-700">{match[3]}</em>);
+      nodes.push(<em key={match.index} className="italic text-slate-700 dark:text-slate-300">{match[3]}</em>);
     } else if (match[4]) {
-      nodes.push(<code key={match.index} className="px-1.5 py-0.5 rounded-md bg-slate-100 text-slate-800 text-sm font-mono font-semibold">{match[4]}</code>);
+      nodes.push(<code key={match.index} className="px-1.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-sm font-mono font-semibold">{match[4]}</code>);
     } else if (match[5]) {
       // Block math ($$...$$) inline
-      nodes.push(<span key={match.index} className="block my-4 text-center font-mono text-base text-slate-800 bg-slate-50 rounded-xl py-3 px-4 border border-slate-200/60">{match[5]}</span>);
+      nodes.push(<span key={match.index} className="block my-4 text-center font-mono text-base text-slate-800 dark:text-slate-200 bg-slate-50 dark:bg-slate-800/80 rounded-xl py-3 px-4 border border-slate-200/60 dark:border-slate-700/60">{match[5]}</span>);
     } else if (match[6]) {
       // Inline math ($...$)
-      nodes.push(<span key={match.index} className="font-mono text-sm text-slate-800 bg-slate-50 px-1 py-0.5 rounded">{match[6]}</span>);
+      nodes.push(<span key={match.index} className="font-mono text-sm text-slate-800 dark:text-slate-200 bg-slate-50 dark:bg-slate-800 px-1 py-0.5 rounded">{match[6]}</span>);
     }
     lastIndex = match.index + match[0].length;
   }
@@ -185,38 +185,38 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
         switch (block.type) {
           case "h2":
             return (
-              <h2 key={idx} className="text-2xl font-black text-slate-900 mt-12 mb-4 tracking-tight">
+              <h2 key={idx} className="text-2xl font-black text-slate-900 dark:text-slate-100 mt-12 mb-4 tracking-tight">
                 {parseInline(block.text)}
               </h2>
             );
           case "h3":
             return (
-              <h3 key={idx} className="text-xl font-bold text-slate-800 mt-8 mb-3 tracking-tight">
+              <h3 key={idx} className="text-xl font-bold text-slate-800 dark:text-slate-200 mt-8 mb-3 tracking-tight">
                 {parseInline(block.text)}
               </h3>
             );
           case "hr":
             return (
               <div key={idx} className="my-10 flex items-center gap-4">
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
-                <div className="w-1.5 h-1.5 rounded-full bg-slate-300" />
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-800 to-transparent" />
+                <div className="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-slate-700" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-800 to-transparent" />
               </div>
             );
           case "math":
             return (
-              <div key={idx} className="my-6 text-center font-mono text-base text-slate-800 bg-slate-50/80 rounded-2xl py-4 px-6 border border-slate-200/60">
+              <div key={idx} className="my-6 text-center font-mono text-base text-slate-855 dark:text-slate-200 bg-slate-50/80 dark:bg-slate-800/80 rounded-2xl py-4 px-6 border border-slate-200/60 dark:border-slate-700/60">
                 {block.text}
               </div>
             );
           case "blockquote":
             return (
-              <div key={idx} className="my-8 rounded-2xl bg-blue-50/80 border border-blue-200/60 border-l-4 border-l-blue-500 p-5">
+              <div key={idx} className="my-8 rounded-2xl bg-blue-50/80 dark:bg-blue-950/20 border border-blue-200/60 dark:border-blue-900/40 border-l-4 border-l-blue-500 p-5">
                 <div className="flex items-start gap-3">
                   <div className="shrink-0 w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-black mt-0.5">
                     !
                   </div>
-                  <div className="text-sm font-semibold text-slate-700 leading-relaxed space-y-1">
+                  <div className="text-sm font-semibold text-slate-700 dark:text-slate-300 leading-relaxed space-y-1">
                     {block.lines.map((line, i) => (
                       <p key={i}>{parseInline(line)}</p>
                     ))}
@@ -226,12 +226,12 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
             );
           case "table":
             return (
-              <div key={idx} className="my-8 overflow-hidden rounded-2xl border border-slate-200/80">
+              <div key={idx} className="my-8 overflow-hidden rounded-2xl border border-slate-200/80 dark:border-slate-800">
                 <table className="w-full text-sm">
-                  <thead className="bg-slate-50/80">
+                  <thead className="bg-slate-50/80 dark:bg-slate-800/80">
                     <tr>
                       {block.headers.map((h, i) => (
-                        <th key={i} className="px-4 py-3 text-left text-xs font-black text-slate-600 uppercase tracking-wider border-b border-slate-200/80">
+                        <th key={i} className="px-4 py-3 text-left text-xs font-black text-slate-600 dark:text-slate-400 uppercase tracking-wider border-b border-slate-200/80 dark:border-slate-800">
                           {parseInline(h)}
                         </th>
                       ))}
@@ -241,7 +241,7 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
                     {block.rows.map((row, ri) => (
                       <tr key={ri}>
                         {row.map((cell, ci) => (
-                          <td key={ci} className="px-4 py-3 text-sm font-medium text-slate-700 border-b border-slate-100">
+                          <td key={ci} className="px-4 py-3 text-sm font-medium text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800">
                             {parseInline(cell)}
                           </td>
                         ))}
@@ -255,7 +255,7 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
             return (
               <ul key={idx} className="space-y-2 my-4 ml-1">
                 {block.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-slate-700 font-medium leading-relaxed">
+                  <li key={i} className="flex items-start gap-2.5 text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
                     <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5" />
                     <span>{parseInline(item)}</span>
                   </li>
@@ -266,8 +266,8 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
             return (
               <ol key={idx} className="space-y-2 my-4 ml-1">
                 {block.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-slate-700 font-medium leading-relaxed">
-                    <span className="shrink-0 w-5 h-5 rounded-full bg-blue-50 text-blue-600 text-xs font-black flex items-center justify-center mt-0.5">{i + 1}</span>
+                  <li key={i} className="flex items-start gap-2.5 text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
+                    <span className="shrink-0 w-5 h-5 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 text-xs font-black flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{parseInline(item)}</span>
                   </li>
                 ))}
@@ -275,7 +275,7 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
             );
           case "p":
             return (
-              <p key={idx} className="mb-5 text-slate-600 font-medium leading-relaxed">
+              <p key={idx} className="mb-5 text-slate-600 dark:text-slate-300 font-medium leading-relaxed">
                 {parseInline(block.text)}
               </p>
             );

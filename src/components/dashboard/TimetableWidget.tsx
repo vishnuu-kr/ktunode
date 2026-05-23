@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Calendar, Clock, AlertCircle } from "lucide-react";
 import { format, parseISO } from "date-fns";
 
@@ -20,24 +20,26 @@ interface TimetableWidgetProps {
 export default function TimetableWidget({ timetable, sem, branch }: TimetableWidgetProps) {
   const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; mins: number; secs: number } | null>(null);
 
-  // Compute nextExam directly during render
-  const now = new Date();
-  const sortedExams = [...timetable]
-    .map((slot) => {
-      const parsedDate = parseISO(slot.date);
-      let hour = 13;
-      let minute = 30;
-      if (slot.time.toLowerCase().includes("9:30 am")) {
-        hour = 9;
-        minute = 30;
-      }
-      parsedDate.setHours(hour, minute, 0, 0);
-      return { ...slot, parsedDate };
-    })
-    .filter((exam) => exam.parsedDate.getTime() > now.getTime())
-    .sort((a, b) => a.parsedDate.getTime() - b.parsedDate.getTime());
+  // Memoize sorted exams and next exam to stabilize references across renders
+  const { sortedExams, nextExam } = useMemo(() => {
+    const now = new Date();
+    const sorted = [...timetable]
+      .map((slot) => {
+        const parsedDate = parseISO(slot.date);
+        let hour = 13;
+        let minute = 30;
+        if (slot.time.toLowerCase().includes("9:30 am")) {
+          hour = 9;
+          minute = 30;
+        }
+        parsedDate.setHours(hour, minute, 0, 0);
+        return { ...slot, parsedDate };
+      })
+      .filter((exam) => exam.parsedDate.getTime() > now.getTime())
+      .sort((a, b) => a.parsedDate.getTime() - b.parsedDate.getTime());
 
-  const nextExam = sortedExams.length > 0 ? sortedExams[0] : null;
+    return { sortedExams: sorted, nextExam: sorted[0] || null };
+  }, [timetable]);
 
   // Live timer countdown ticker
   useEffect(() => {
@@ -99,15 +101,15 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
   return (
     <div className="space-y-6">
       {/* Live Countdown Card */}
-      <div className="hidden lg:block bg-white/65 backdrop-blur-md border border-slate-950/[0.06] rounded-[20px] p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] transition-all duration-300 relative overflow-hidden group">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
+      <div className="hidden lg:block bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] dark:bg-white/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
         
         <div className="flex items-center gap-3 mb-5 relative z-10">
           <div className="w-10 h-10 rounded-xl bg-[#2E95FF]/10 border border-[#2E95FF]/20 flex items-center justify-center text-[#2E95FF]">
             <Clock className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="font-black text-slate-900 text-base leading-tight">Exam Countdown</h3>
+            <h3 className="font-black text-slate-900 dark:text-slate-100 text-base leading-tight">Exam Countdown</h3>
             <p className="text-xs text-slate-400/80 font-bold">Preparation window ticking</p>
           </div>
         </div>
@@ -122,8 +124,8 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
                 { val: timeLeft.mins, label: "Mins" },
                 { val: timeLeft.secs, label: "Secs" }
               ].map((slot, idx) => (
-                <div key={idx} className="bg-slate-950/[0.02] border border-slate-950/[0.04] p-2 sm:p-2.5 rounded-xl">
-                  <div className="text-lg sm:text-2xl font-black text-slate-900 tabular-nums leading-none mb-1">
+                <div key={idx} className="bg-slate-950/[0.02] dark:bg-white/[0.02] border border-slate-950/[0.04] dark:border-white/[0.04] p-2 sm:p-2.5 rounded-xl">
+                  <div className="text-lg sm:text-2xl font-black text-slate-900 dark:text-slate-100 tabular-nums leading-none mb-1">
                     {String(slot.val).padStart(2, "0")}
                   </div>
                   <div className="text-[8px] sm:text-[9px] font-black text-slate-400/80 uppercase tracking-widest">{slot.label}</div>
@@ -132,7 +134,7 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
             </div>
 
             <div className="pt-2">
-              <div className="text-sm font-black text-slate-900 mb-0.5 leading-snug">{nextExam.subjectName}</div>
+              <div className="text-sm font-black text-slate-900 dark:text-slate-100 mb-0.5 leading-snug">{nextExam.subjectName}</div>
               <div className="text-xs text-slate-400/80 font-bold">
                 <time dateTime={nextExam.parsedDate.toISOString()}>
                   {format(nextExam.parsedDate, "EEEE, MMMM do yyyy")}
@@ -143,7 +145,7 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
         ) : (
           <div className="relative z-10 flex flex-col items-center justify-center py-6 text-center">
             <AlertCircle className="w-8 h-8 text-slate-300 mb-2" />
-            <p className="text-sm font-black text-slate-700">Exam window complete</p>
+            <p className="text-sm font-black text-slate-700 dark:text-slate-300">Exam window complete</p>
             <p className="text-xs font-bold text-slate-400/80 max-w-[200px] mt-1 leading-snug">
               No upcoming exams found in this timetable. Ready to party?
             </p>
@@ -152,15 +154,15 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
       </div>
 
       {/* TIMETABLE CARD */}
-      <div className="bg-white/65 backdrop-blur-md border border-slate-950/[0.06] rounded-[20px] p-5 md:p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] transition-all duration-300 relative overflow-hidden group">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-5 md:p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] dark:bg-white/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
         
         <div className="flex items-center gap-3 mb-4 md:mb-5">
           <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-[#2E95FF]/10 border border-[#2E95FF]/20 flex items-center justify-center text-[#2E95FF] shrink-0">
-            <Calendar className="w-4.5 h-4.5 md:w-5 md:h-5" />
+            <Calendar className="w-[18px] h-[18px] md:w-5 md:h-5" />
           </div>
           <div>
-            <h3 className="font-black text-slate-900 text-sm md:text-base leading-tight">Semester Schedule</h3>
+            <h3 className="font-black text-slate-900 dark:text-slate-100 text-sm md:text-base leading-tight">Semester Schedule</h3>
             <p className="text-[10px] md:text-xs text-slate-400/80 font-bold">S{sem} {branch.toUpperCase()} timetable</p>
           </div>
         </div>
@@ -177,29 +179,29 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
                   key={`${slot.subjectCode}-${slot.date}`}
                   className={`flex gap-4 p-3 rounded-xl transition-all border ${
                     isPast
-                      ? "bg-slate-950/[0.01] border-slate-950/[0.02] opacity-50"
-                      : "bg-white/50 hover:bg-white border-slate-950/[0.04] hover:border-slate-950/[0.08] shadow-[0_2px_4px_rgba(0,0,0,0.005)]"
+                      ? "bg-slate-950/[0.01] dark:bg-white/[0.01] border-slate-950/[0.02] dark:border-white/[0.02] opacity-50"
+                      : "bg-white/50 dark:bg-slate-800/50 hover:bg-white hover:dark:bg-slate-800 border-slate-950/[0.04] dark:border-white/[0.04] hover:border-slate-950/[0.08] hover:dark:border-white/[0.08] shadow-[0_2px_4px_rgba(0,0,0,0.005)]"
                   }`}
                 >
                   <time 
                     dateTime={slot.date}
-                    className="shrink-0 flex flex-col items-center justify-center w-12 h-12 bg-slate-950/[0.02] border border-slate-950/[0.06] rounded-xl text-center"
+                    className="shrink-0 flex flex-col items-center justify-center w-12 h-12 bg-slate-950/[0.02] dark:bg-white/[0.02] border border-slate-950/[0.06] dark:border-white/[0.06] rounded-xl text-center"
                   >
                     <span className="text-[9px] font-black uppercase text-slate-400/80 leading-none mb-1">
                       {format(dateObj, "MMM")}
                     </span>
-                    <span className="text-sm font-black text-slate-900 leading-none">{format(dateObj, "dd")}</span>
+                    <span className="text-sm font-black text-slate-900 dark:text-slate-100 leading-none">{format(dateObj, "dd")}</span>
                   </time>
                   <div className="flex flex-col justify-center min-w-0 flex-1">
-                    <h4 className="text-xs font-black text-slate-900 leading-tight mb-0.5 truncate">
+                    <h4 className="text-xs font-black text-slate-900 dark:text-slate-100 leading-tight mb-0.5 truncate">
                       {slot.subjectName}
                     </h4>
                     <p className="text-[10px] font-bold text-slate-400/80">
-                      {slot.time} • <span className="font-black text-slate-800">{slot.subjectCode}</span>
+                      {slot.time} • <span className="font-black text-slate-800 dark:text-slate-350">{slot.subjectCode}</span>
                     </p>
                   </div>
                   {isPast && (
-                    <span className="text-[9px] font-black text-slate-400 bg-slate-950/[0.04] px-2 py-1 rounded-md self-center">
+                    <span className="text-[9px] font-black text-slate-400 bg-slate-950/[0.04] dark:bg-white/[0.04] px-2 py-1 rounded-md self-center">
                       Done
                     </span>
                   )}
@@ -221,21 +223,21 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
               return (
                 <div
                   key={`${slot.subjectCode}-${slot.date}`}
-                  className={`relative pl-5 pb-3.5 border-l border-slate-200 last:pb-0 ${
+                  className={`relative pl-5 pb-3.5 border-l border-slate-200 dark:border-slate-800 last:pb-0 ${
                     isPast ? "opacity-45" : ""
                   }`}
                 >
                   {/* Timeline node dot */}
-                  <div className={`absolute left-[-4.5px] top-1.5 w-2 h-2 rounded-full border border-white shadow-sm transition-colors ${isPast ? 'bg-slate-300' : 'bg-indigo-600 ring-2 ring-indigo-50'}`} />
+                  <div className={`absolute left-[-4.5px] top-1.5 w-2 h-2 rounded-full border border-white dark:border-slate-900 shadow-sm transition-colors ${isPast ? 'bg-slate-300 dark:bg-slate-700' : 'bg-indigo-600 ring-2 ring-indigo-950'}`} />
                   
                   <div className="flex flex-col gap-0.5">
-                    <div className="flex items-center justify-between text-[11px] font-black text-slate-800">
+                    <div className="flex items-center justify-between text-[11px] font-black text-slate-800 dark:text-slate-200">
                       <time dateTime={slot.date} className="text-[10px] text-indigo-600 font-black tracking-wide uppercase tabular-nums">
                         {format(dateObj, "MMM dd, EEE")}
                       </time>
                       <span className="text-[10px] text-slate-400 font-bold uppercase">{slot.subjectCode}</span>
                     </div>
-                    <span className="text-xs font-black text-slate-700 truncate leading-snug">
+                    <span className="text-xs font-black text-slate-700 dark:text-slate-300 truncate leading-snug">
                       {slot.subjectName}
                     </span>
                     <span className="text-[9px] font-bold text-slate-400/80 leading-none">
