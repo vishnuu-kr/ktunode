@@ -73,7 +73,7 @@ export default function HowItWorksSection() {
             <span className="gradient-text-animated">in 3 steps.</span>
           </h2>
           <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-md mx-auto leading-relaxed font-medium">
-            From setup to exam-ready in minutes. No account, no clutter.
+            Instant access to exam-ready resources. No account, no clutter.
           </p>
         </motion.div>
 

@@ -64,31 +64,31 @@ const colorSchemes = [
   { 
     dot: "bg-blue-600", 
     stroke: "stroke-blue-500",
-    bg: "bg-blue-50/15 hover:bg-blue-50/25 border-blue-500/10 hover:border-blue-500/30 hover:shadow-[0_12px_40px_-12px_rgba(59,130,246,0.15)]",
+    bg: "bg-white/65 dark:bg-slate-900/65 hover:bg-blue-50/80 dark:hover:bg-blue-900/40 border-slate-200/60 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/40 hover:shadow-[0_12px_40px_-12px_rgba(59,130,246,0.15)]",
     text: "text-blue-600"
   },
   { 
     dot: "bg-violet-600", 
     stroke: "stroke-violet-500",
-    bg: "bg-violet-50/15 hover:bg-violet-50/25 border-violet-500/10 hover:border-violet-500/30 hover:shadow-[0_12px_40px_-12px_rgba(139,92,246,0.15)]",
+    bg: "bg-white/65 dark:bg-slate-900/65 hover:bg-violet-50/80 dark:hover:bg-violet-900/40 border-slate-200/60 dark:border-slate-800 hover:border-violet-500/30 dark:hover:border-violet-500/40 hover:shadow-[0_12px_40px_-12px_rgba(139,92,246,0.15)]",
     text: "text-violet-600"
   },
   { 
     dot: "bg-emerald-600", 
     stroke: "stroke-emerald-500",
-    bg: "bg-emerald-50/15 hover:bg-emerald-50/25 border-emerald-500/10 hover:border-emerald-500/30 hover:shadow-[0_12px_40px_-12px_rgba(16,185,129,0.15)]",
+    bg: "bg-white/65 dark:bg-slate-900/65 hover:bg-emerald-50/80 dark:hover:bg-emerald-900/40 border-slate-200/60 dark:border-slate-800 hover:border-emerald-500/30 dark:hover:border-emerald-500/40 hover:shadow-[0_12px_40px_-12px_rgba(16,185,129,0.15)]",
     text: "text-emerald-600"
   },
   { 
     dot: "bg-rose-600", 
     stroke: "stroke-rose-500",
-    bg: "bg-rose-50/15 hover:bg-rose-50/25 border-rose-500/10 hover:border-rose-500/30 hover:shadow-[0_12px_40px_-12px_rgba(244,63,94,0.15)]",
+    bg: "bg-white/65 dark:bg-slate-900/65 hover:bg-rose-50/80 dark:hover:bg-rose-900/40 border-slate-200/60 dark:border-slate-800 hover:border-rose-500/30 dark:hover:border-rose-500/40 hover:shadow-[0_12px_40px_-12px_rgba(244,63,94,0.15)]",
     text: "text-rose-600"
   },
   { 
     dot: "bg-amber-600", 
     stroke: "stroke-amber-500",
-    bg: "bg-amber-50/15 hover:bg-amber-50/25 border-amber-500/10 hover:border-amber-500/30 hover:shadow-[0_12px_40px_-12px_rgba(245,158,11,0.15)]",
+    bg: "bg-white/65 dark:bg-slate-900/65 hover:bg-amber-50/80 dark:hover:bg-amber-900/40 border-slate-200/60 dark:border-slate-800 hover:border-amber-500/30 dark:hover:border-amber-500/40 hover:shadow-[0_12px_40px_-12px_rgba(245,158,11,0.15)]",
     text: "text-amber-600"
   },
 ];
@@ -142,7 +142,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
     return {
       accent: "green",
       glow: "from-emerald-500/10 via-teal-500/5 to-transparent",
-      border: "border-emerald-100/80 focus-within:border-emerald-400",
+      border: "border-emerald-200/60 dark:border-emerald-500/20 focus-within:border-emerald-400",
       text: "text-emerald-600",
       badgeBg: "bg-emerald-50",
       accentColor: "#10b981",
@@ -158,7 +158,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
     return {
       accent: "purple",
       glow: "from-purple-500/10 via-fuchsia-500/5 to-transparent",
-      border: "border-purple-100/80 focus-within:border-purple-400",
+      border: "border-purple-200/60 dark:border-purple-500/20 focus-within:border-purple-400",
       text: "text-purple-600",
       badgeBg: "bg-purple-50",
       accentColor: "#a855f7",
@@ -174,7 +174,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
     return {
       accent: "blue",
       glow: "from-blue-500/10 via-sky-500/5 to-transparent",
-      border: "border-blue-100/80 focus-within:border-blue-400",
+      border: "border-blue-200/60 dark:border-blue-500/20 focus-within:border-blue-400",
       text: "text-blue-600",
       badgeBg: "bg-blue-50",
       accentColor: "#3b82f6",
@@ -190,7 +190,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
     return {
       accent: "amber",
       glow: "from-amber-500/10 via-orange-500/5 to-transparent",
-      border: "border-amber-100/80 focus-within:border-amber-400",
+      border: "border-amber-200/60 dark:border-amber-500/20 focus-within:border-amber-400",
       text: "text-amber-600",
       badgeBg: "bg-amber-50",
       accentColor: "#f59e0b",
@@ -205,7 +205,7 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
   return {
     accent: "emerald",
     glow: "from-teal-500/10 via-emerald-500/5 to-transparent",
-    border: "border-teal-100/80 focus-within:border-teal-400",
+    border: "border-teal-200/60 dark:border-teal-500/20 focus-within:border-teal-400",
     text: "text-teal-600",
     badgeBg: "bg-teal-50",
     accentColor: "#14b8a6",
@@ -1400,7 +1400,7 @@ function DashboardContent() {
                             const done = isCompleted(topic.id);
                             const pinned = pinnedTopicIds.includes(topic.id);
                             return (
-                              <div key={topic.id} className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-850/50 transition-all duration-200 group gap-3">
+                              <div key={topic.id} className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3">
                                 <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
                                   <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-450" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
                                     {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
@@ -1710,7 +1710,7 @@ function DashboardContent() {
           <motion.div
             role="alert"
             aria-live="polite"
-            className="fixed bottom-6 left-1/2 z-[100] max-w-[calc(100vw-2rem)] -translate-x-1/2 rounded-full border border-white/60 bg-slate-950/92 px-5 py-3 text-sm font-black text-white shadow-[0_18px_50px_rgba(15,23,42,0.28)] backdrop-blur-xl"
+            className="fixed bottom-6 left-1/2 z-[100] max-w-[calc(100vw-2rem)] w-[max-content] -translate-x-1/2 rounded-full border border-white/60 dark:border-slate-800 bg-slate-950/92 dark:bg-slate-100/95 px-4 md:px-5 py-2.5 md:py-3 text-xs md:text-sm font-bold text-white dark:text-slate-900 shadow-[0_18px_50px_rgba(15,23,42,0.28)] backdrop-blur-xl"
             initial={{ opacity: 0, y: 18, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}

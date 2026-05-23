@@ -272,7 +272,7 @@ function PremiumSelect({
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-controls={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
-        className={`w-full flex items-center justify-between bg-white/70 dark:bg-slate-900/70 hover:bg-white/95 dark:hover:bg-slate-900/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-850 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700 dark:text-slate-200'} rounded-2xl px-4 py-4 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
+        className={`w-full flex items-center justify-between bg-white/70 dark:bg-slate-900/70 hover:bg-white/95 dark:hover:bg-slate-900/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700 dark:text-slate-200'} rounded-2xl px-4 py-4 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
         animate={hasError ? { x: [-6, 6, -5, 5, -3, 3, 0] } : { x: 0 }}
         transition={{ duration: 0.4 }}
       >
@@ -308,7 +308,7 @@ function PremiumSelect({
                   className={`w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors duration-150 ${
                     value === opt.value
                       ? "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400"
-                      : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 hover:dark:bg-slate-850 hover:text-slate-900 hover:dark:text-slate-100"
+                      : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 hover:dark:bg-slate-800 hover:text-slate-900 hover:dark:text-slate-100"
                   } ${focusedIndex === index ? "bg-blue-50 dark:bg-blue-950/40 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
                   onClick={(e) => {
                     onChange(opt.value);

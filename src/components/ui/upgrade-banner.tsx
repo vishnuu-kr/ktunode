@@ -100,7 +100,7 @@ export function UpgradeBanner({
             {/* Pill Container */}
             <div 
               style={{ border: "none", outline: "none" }}
-              className="relative flex h-[38px] items-center gap-2 rounded-full bg-white pl-4 pr-5 text-sm font-bold text-blue-600 shadow-lg cursor-pointer select-none transition-shadow hover:shadow-xl dark:bg-white dark:text-blue-600"
+              className="relative flex h-[38px] items-center gap-2 rounded-full bg-white pl-4 pr-5 text-sm font-bold text-blue-600 shadow-lg cursor-pointer select-none transition-shadow hover:shadow-xl dark:bg-slate-900/80 dark:text-blue-400 dark:border dark:border-slate-800"
             >
               <span className="relative flex h-2 w-2 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-60" />

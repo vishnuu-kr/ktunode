@@ -44,7 +44,7 @@ export function ContinueSessionButton({
           event.stopPropagation();
           onDismiss(event);
         }}
-        className="flex flex-shrink-0 items-center justify-center w-[52px] h-[52px] rounded-full bg-white/70 backdrop-blur-md hover:bg-white border border-white/60 shadow-[0_4px_16px_rgba(0,0,0,0.04)] text-slate-500 hover:text-slate-800 transition-all duration-200"
+        className="flex flex-shrink-0 items-center justify-center w-[52px] h-[52px] rounded-full bg-white/70 dark:bg-slate-800/70 backdrop-blur-md hover:bg-white dark:hover:bg-slate-700 border border-white/60 dark:border-slate-700/60 shadow-[0_4px_16px_rgba(0,0,0,0.04)] text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-all duration-200"
       >
         <span className="sr-only">Dismiss session</span>
         <X className="w-5 h-5" />

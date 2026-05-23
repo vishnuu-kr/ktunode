@@ -9,7 +9,7 @@ import Link from "next/link";
 const stats = [
   { value: "Free",  label: "Always free" },
   { value: "2024",  label: "Scheme updated" },
-  { value: "5 min", label: "To get started" },
+  { value: "Instant", label: "To get started" },
 ];
 
 export default function CtaBanner() {

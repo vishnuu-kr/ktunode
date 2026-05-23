@@ -110,7 +110,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
         onDragEnd={handleDragEnd}
         animate={controls}
         initial={{ y: collapsedY }}
-        className="fixed inset-x-0 bottom-0 z-[50] lg:hidden bg-white/95 backdrop-blur-2xl border-t border-slate-900/[0.04] rounded-t-[2rem] shadow-[0_-12px_40px_rgba(0,0,0,0.08)] flex flex-col overflow-hidden"
+        className="fixed inset-x-0 bottom-0 z-[50] lg:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl border-t border-slate-900/[0.04] dark:border-white/[0.04] rounded-t-[2rem] shadow-[0_-12px_40px_rgba(0,0,0,0.08)] flex flex-col overflow-hidden"
         style={{
           height: `calc(100vh - ${expandedY}px)`,
           touchAction: "none",
@@ -119,7 +119,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
         {/* Drag Handle & Header */}
         <div
           onClick={handleToggle}
-          className="w-full py-3 px-6 flex flex-col items-center justify-center cursor-pointer border-b border-slate-900/[0.02] bg-white/50 active:bg-slate-50 transition-colors"
+          className="w-full py-3 px-6 flex flex-col items-center justify-center cursor-pointer border-b border-slate-900/[0.02] dark:border-white/[0.02] bg-white/50 dark:bg-slate-800/50 active:bg-slate-50 dark:active:bg-slate-800 transition-colors"
           style={{ touchAction: "none" }}
         >
           <div className="bottom-sheet-handle mb-3" />

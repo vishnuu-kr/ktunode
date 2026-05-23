@@ -321,7 +321,7 @@ export default function Navbar() {
           </button>
         ) : (
           <MagneticButton href="/dashboard" className="!py-2 !px-4 !text-xs whitespace-nowrap">
-            <span className="hidden sm:inline">Open </span>Dashboard
+            Dashboard
             <ArrowRight className="w-3 h-3" />
           </MagneticButton>
         )}

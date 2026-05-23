@@ -37,7 +37,7 @@ const faqs = [
 const quickStats = [
   { value: "Free",  label: "Always free" },
   { value: "2024",  label: "Scheme updated" },
-  { value: "5 min", label: "Setup time" },
+  { value: "1-Click", label: "Dashboard access" },
 ];
 
 export default function FaqSection() {
