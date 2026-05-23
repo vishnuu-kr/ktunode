@@ -10,32 +10,43 @@ import useSessionPersistence from "@/hooks/useSessionPersistence";
 import { ContinueSessionButton } from "@/components/features/ContinueSessionButton";
 import { SEMESTERS } from "@/lib/constants";
 import { UpgradeBanner } from "@/components/ui/upgrade-banner";
+import { VALID_BRANCHES } from "@/types/session";
+import { useTheme } from "next-themes";
 
 // Dynamically import below-the-fold components to optimize LCP and bundle payloads
-const KtuCompareSection = dynamic(() => import("@/components/features/ktu-compare-section"), { ssr: false });
-const HowItWorksSection = dynamic(() => import("@/components/features/HowItWorksSection"), { ssr: false });
+// SSR enabled for content-heavy sections (SEO crawlability)
+const KtuCompareSection = dynamic(() => import("@/components/features/ktu-compare-section"));
+const HowItWorksSection = dynamic(() => import("@/components/features/HowItWorksSection"));
 const FoundreeHero = dynamic(() => import("@/components/features/FoundreeHero"), { ssr: false });
-const Features = dynamic(() => import("@/components/ui/features-8").then(mod => mod.Features), { ssr: false });
-const TestimonialsSection = dynamic(() => import("@/components/features/TestimonialsSection"), { ssr: false });
-const FaqSection = dynamic(() => import("@/components/features/FaqSection"), { ssr: false });
-const CtaBanner = dynamic(() => import("@/components/features/CtaBanner"), { ssr: false });
+const Features = dynamic(() => import("@/components/ui/features-8").then(mod => mod.Features));
+const TestimonialsSection = dynamic(() => import("@/components/features/TestimonialsSection"));
+const FaqSection = dynamic(() => import("@/components/features/FaqSection"));
+const CtaBanner = dynamic(() => import("@/components/features/CtaBanner"));
 const CinematicFooter = dynamic(() => import("@/components/ui/motion-footer").then(mod => mod.CinematicFooter), { ssr: false });
 import {
   Sparkles, BookOpen, Calendar, ArrowRight, ShieldCheck,
   FileText, ChevronDown,
 } from "lucide-react";
 
-const branches = [
-  { id: "cs", label: "Computer Science" },
-  { id: "ec", label: "Electronics & Comm." },
-  { id: "me", label: "Mechanical" },
-  { id: "ce", label: "Civil" },
-  { id: "ee", label: "Electrical & Electronics" },
-];
+const branchLabels: Record<string, string> = {
+  cs: "Computer Science",
+  ec: "Electronics & Comm.",
+  me: "Mechanical",
+  ce: "Civil",
+  ee: "Electrical & Electronics",
+};
+
+const branches = VALID_BRANCHES.map((id) => ({
+  id,
+  label: branchLabels[id] ?? id.toUpperCase(),
+}));
 
 const semesters = SEMESTERS;
 
 
+
+// Cached AudioContext instance to avoid creating new contexts on every haptic call
+let cachedAudioCtx: AudioContext | null = null;
 
 // Global landing haptic driver with pointer pressure & Web Audio API
 export function triggerLandingHaptic(
@@ -99,7 +110,10 @@ export function triggerLandingHaptic(
   try {
     const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
     if (!AudioContextClass) return;
-    const audioCtx = new AudioContextClass();
+    if (!cachedAudioCtx || cachedAudioCtx.state === 'closed') {
+      cachedAudioCtx = new AudioContextClass();
+    }
+    const audioCtx = cachedAudioCtx;
 
     const sweepTone = (startFreq: number, endFreq: number, baseDuration: number, baseGain: number) => {
       const osc = audioCtx.createOscillator();
@@ -258,16 +272,16 @@ function PremiumSelect({
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-controls={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
-        className={`w-full flex items-center justify-between bg-white/70 hover:bg-white/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 hover:border-blue-300 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700'} rounded-2xl px-4 py-4 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
+        className={`w-full flex items-center justify-between bg-white/70 dark:bg-slate-900/70 hover:bg-white/95 dark:hover:bg-slate-900/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-850 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700 dark:text-slate-200'} rounded-2xl px-4 py-4 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
         animate={hasError ? { x: [-6, 6, -5, 5, -3, 3, 0] } : { x: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <span className={selectedOption ? "text-slate-800" : hasError ? "text-red-500 font-semibold" : "text-slate-400 font-semibold"}>
+        <span className={selectedOption ? "text-slate-800 dark:text-slate-100" : hasError ? "text-red-500 font-semibold" : "text-slate-400 dark:text-slate-500 font-semibold"}>
           {selectedOption ? selectedOption.label : placeholder}
         </span>
         <ChevronDown
           className={`w-4 h-4 transition-transform duration-300 ${
-            open ? "rotate-180 text-blue-500" : hasError ? "text-red-400" : "text-slate-400"
+            open ? "rotate-180 text-blue-500" : hasError ? "text-red-400" : "text-slate-400 dark:text-slate-500"
           }`}
         />
       </motion.button>
@@ -282,9 +296,9 @@ function PremiumSelect({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.98 }}
             transition={{ duration: 0.15, ease: "easeOut" }}
-            className="absolute z-50 w-full mt-2 top-full left-0 bg-white/95 backdrop-blur-2xl border border-blue-100 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] py-2 overflow-hidden"
+            className="absolute z-50 w-full mt-2 top-full left-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl border border-blue-100 dark:border-slate-800 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] dark:shadow-[0_16px_48px_rgba(0,0,0,0.4)] py-2 overflow-hidden"
           >
-            <div className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200">
+            <div className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-800">
               {options.map((opt, index) => (
                 <button
                   key={opt.value}
@@ -293,9 +307,9 @@ function PremiumSelect({
                   aria-selected={value === opt.value}
                   className={`w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors duration-150 ${
                     value === opt.value
-                      ? "bg-blue-50 text-blue-600"
-                      : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-                  } ${focusedIndex === index ? "bg-blue-50 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
+                      ? "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400"
+                      : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 hover:dark:bg-slate-850 hover:text-slate-900 hover:dark:text-slate-100"
+                  } ${focusedIndex === index ? "bg-blue-50 dark:bg-blue-950/40 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
                   onClick={(e) => {
                     onChange(opt.value);
                     setOpen(false);
@@ -318,29 +332,19 @@ function PremiumSelect({
 
 export default function Home() {
   const router = useRouter();
+  const { resolvedTheme } = useTheme();
   const { savedSession, saveSession, clearSession } = useSessionPersistence();
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSemester, setSelectedSemester] = useState<number | "">("");
   const [mounted, setMounted] = useState(false);
 
 
-  const [mousePos, setMousePos] = useState({ x: -999, y: -999 });
   const heroRef = useRef<HTMLDivElement>(null);
 
   const [errorState, setErrorState] = useState(false);
 
   useEffect(() => {
     queueMicrotask(() => setMounted(true));
-
-
-    const onMouse = (e: MouseEvent) => setMousePos({ x: e.clientX, y: e.clientY });
-
-
-    window.addEventListener("mousemove", onMouse, { passive: true });
-    return () => {
-
-      window.removeEventListener("mousemove", onMouse);
-    };
   }, []);
 
   const handleLaunch = (event?: React.MouseEvent | React.PointerEvent) => {
@@ -385,12 +389,7 @@ export default function Home() {
     >
 
 
-      {/* ── Cursor glow (desktop) ── */}
-      <div
-        className="cursor-glow hidden lg:block"
-        style={{ left: mousePos.x, top: mousePos.y }}
-        aria-hidden="true"
-      />
+
 
       {/* Drifting mesh glows matching dashboard for high-fidelity unity */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
@@ -401,11 +400,23 @@ export default function Home() {
 
       {/* Wrapper for Hero + Navbar to perfectly contain the background */}
       <div className="relative w-full">
-        {/* ── Global Hero Background Image ── */}
+        {/* ── Global Hero Background Image (Light Mode) ── */}
         <div
-          className="absolute inset-0 z-0 pointer-events-none"
+          className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-100 dark:opacity-0"
           style={{
             backgroundImage: "url('/hero-bg.webp')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center bottom",
+          }}
+          aria-hidden="true"
+        />
+
+        {/* ── Global Hero Background Image (Dark Mode) ── */}
+        <div
+          className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-0 dark:opacity-100"
+          style={{
+            backgroundImage: "url('/hero-bg-dark.webp')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center bottom",
@@ -417,7 +428,7 @@ export default function Home() {
         <div
           className="absolute bottom-0 left-0 right-0 h-48 z-0 pointer-events-none"
           style={{
-            background: "linear-gradient(to bottom, transparent 0%, #f3f8ff 100%)",
+            background: "linear-gradient(to bottom, transparent 0%, var(--color-bg) 100%)",
           }}
           aria-hidden="true"
         />
@@ -449,7 +460,7 @@ export default function Home() {
 
         {/* ── Headline ── */}
         <motion.h1
-          className="relative z-10 text-5xl sm:text-6xl md:text-7xl lg:text-[82px] font-black tracking-tight text-slate-900 leading-[1.03] mb-5 max-w-4xl"
+          className="relative z-10 text-5xl sm:text-6xl md:text-7xl lg:text-[82px] font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.03] mb-5 max-w-4xl"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 28 }}
           transition={{ delay: 0.08, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -480,7 +491,7 @@ export default function Home() {
 
         {/* ── Subtitle ── */}
         <motion.p
-          className="relative z-10 text-base md:text-xl text-slate-600 mb-9 max-w-xl font-medium leading-relaxed"
+          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-9 max-w-xl font-medium leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 20 }}
           transition={{ delay: 0.16, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -493,13 +504,16 @@ export default function Home() {
 
         {/* ── Selector card ── */}
         <motion.div
-          className="relative z-30 bg-white/96 backdrop-blur-xl border border-blue-100/80 rounded-3xl p-3 flex flex-col md:flex-row items-center gap-3 max-w-3xl w-full"
+          className="relative z-30 bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-3xl p-3 flex flex-col md:flex-row items-center gap-3 max-w-3xl w-full"
           initial={{ opacity: 0, y: 24, scale: 0.97 }}
           animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 24, scale: mounted ? 1 : 0.97 }}
           transition={{ delay: 0.24, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           style={{
-            boxShadow:
-              "0 16px 56px rgba(37,99,235,0.14), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)",
+            boxShadow: !mounted
+              ? undefined
+              : resolvedTheme === "dark"
+                ? "0 16px 56px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)"
+                : "0 16px 56px rgba(37,99,235,0.14), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)",
           }}
         >
           {/* Branch */}
@@ -535,6 +549,11 @@ export default function Home() {
           </MagneticButton>
         </motion.div>
 
+        {/* ── Accessibility: announce validation errors to screen readers ── */}
+        <div aria-live="assertive" className="sr-only">
+          {errorState ? "Please select both a branch and semester before continuing" : ""}
+        </div>
+
         {/* ── Continue Session Button (below selector card) ── */}
         <AnimatePresence>
           {savedSession && (
@@ -558,7 +577,7 @@ export default function Home() {
             { icon: BookOpen, text: "Free, always" },
             { icon: FileText, text: "No account needed" },
           ].map(({ icon: Icon, text }) => (
-            <div key={text} className="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+            <div key={text} className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 text-sm font-medium">
               <Icon className="w-3.5 h-3.5 text-blue-500" />
               {text}
             </div>
@@ -572,12 +591,12 @@ export default function Home() {
           animate={{ opacity: mounted ? 0.5 : 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase">
+          <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-[0.2em] uppercase">
             Scroll
           </span>
-          <div className="w-5 h-8 border-2 border-slate-400/70 rounded-full flex items-start justify-center pt-1.5">
+          <div className="w-5 h-8 border-2 border-slate-400/70 dark:border-slate-700/70 rounded-full flex items-start justify-center pt-1.5">
             <motion.div
-              className="w-1 h-2 bg-slate-500 rounded-full"
+              className="w-1 h-2 bg-slate-500 dark:bg-slate-400 rounded-full"
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
             />
@@ -594,7 +613,7 @@ export default function Home() {
       <HowItWorksSection />
       <FoundreeHero />
 
-      <section className="relative z-10 w-full bg-white border-y border-blue-50">
+      <section className="relative z-10 w-full bg-white dark:bg-slate-900 border-y border-blue-50 dark:border-slate-800">
         <Features />
       </section>
 
