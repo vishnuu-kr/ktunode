@@ -1710,7 +1710,7 @@ function DashboardContent() {
           <motion.div
             role="alert"
             aria-live="polite"
-            className="fixed bottom-6 left-1/2 z-[100] max-w-[calc(100vw-2rem)] w-[max-content] -translate-x-1/2 rounded-full border border-white/60 dark:border-slate-800 bg-slate-950/92 dark:bg-slate-100/95 px-4 md:px-5 py-2.5 md:py-3 text-xs md:text-sm font-bold text-white dark:text-slate-900 shadow-[0_18px_50px_rgba(15,23,42,0.28)] backdrop-blur-xl"
+            className="fixed bottom-6 left-1/2 z-[100] max-w-[calc(100vw-2rem)] w-[max-content] -translate-x-1/2 rounded-full border border-slate-200/60 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 px-4 md:px-5 py-2.5 md:py-3 text-xs md:text-sm font-bold text-slate-900 dark:text-white shadow-[0_18px_50px_rgba(15,23,42,0.1)] dark:shadow-[0_18px_50px_rgba(0,0,0,0.4)] backdrop-blur-xl"
             initial={{ opacity: 0, y: 18, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}

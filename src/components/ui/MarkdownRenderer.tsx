@@ -211,7 +211,7 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
             );
           case "blockquote":
             return (
-              <div key={idx} className="my-8 rounded-2xl bg-blue-50/50 dark:bg-blue-950/20 border-l-4 border-l-blue-500 p-5">
+              <div key={idx} className="my-8 rounded-2xl bg-blue-50/80 dark:bg-blue-950/20 border border-blue-200/60 dark:border-blue-900/40 border-l-4 border-l-blue-500 p-5">
                 <div className="flex items-start gap-3">
                   <div className="shrink-0 w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-black mt-0.5">
                     !
