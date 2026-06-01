@@ -24,6 +24,8 @@ export const MagneticButton = ({ children, className = "", onClick, href, custom
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;
+    // Skip magnetic effect on touch devices to prevent jitter
+    if (window.matchMedia("(hover: none)").matches) return;
     const { clientX, clientY } = e;
     const { left, top, width, height } = ref.current.getBoundingClientRect();
     const centerX = left + width / 2;

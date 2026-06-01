@@ -153,7 +153,8 @@ export const Compare: React.FC<CompareProps> = ({
       aria-valuemin={0}
       aria-valuemax={100}
       className={cn(
-        "relative select-none overflow-hidden touch-pan-y cursor-ew-resize",
+        "relative select-none overflow-hidden cursor-ew-resize",
+        isDragging ? "touch-none" : "touch-pan-y",
         className
       )}
       onMouseMove={handleMouseMove}
