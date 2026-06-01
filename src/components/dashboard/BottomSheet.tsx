@@ -25,15 +25,20 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      const getHeight = () => window.visualViewport?.height ?? window.innerHeight;
       queueMicrotask(() => {
-        setWindowHeight(window.innerHeight);
+        setWindowHeight(getHeight());
       });
       
       const handleResize = () => {
-        setWindowHeight(window.innerHeight);
+        setWindowHeight(getHeight());
       };
       window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
+      window.visualViewport?.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+        window.visualViewport?.removeEventListener("resize", handleResize);
+      };
     }
   }, []);
   
@@ -112,7 +117,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
         initial={{ y: collapsedY }}
         className="fixed inset-x-0 bottom-0 z-[50] lg:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl border-t border-slate-900/[0.04] dark:border-white/[0.04] rounded-t-[2rem] shadow-[0_-12px_40px_rgba(0,0,0,0.08)] flex flex-col overflow-hidden"
         style={{
-          height: `calc(100vh - ${expandedY}px)`,
+          height: `calc(100dvh - ${expandedY}px)`,
           touchAction: "none",
         }}
       >

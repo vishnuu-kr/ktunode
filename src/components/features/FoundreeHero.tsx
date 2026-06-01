@@ -148,7 +148,7 @@ export default function FoundreeHero() {
               className="inline-block gradient-text-animated"
               style={{
                 textShadow: "0 0 40px rgba(46,149,255,0.4)",
-                minWidth: "220px",
+                minWidth: "min(220px, 55vw)",
                 "--mobile-gradient-fallback": "#60b8ff",
               } as React.CSSProperties}
               initial={{ opacity: 0, y: 16, filter: "blur(8px)" }}

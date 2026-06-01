@@ -86,11 +86,13 @@ const STYLES = `
 
 /* Giant Background Text Masking */
 .footer-giant-bg-text {
-  font-size: 24vw;
+  font-size: clamp(4rem, 24vw, 18rem);
   line-height: 0.75;
   font-weight: 900;
   letter-spacing: -0.05em;
   color: transparent;
+  overflow: hidden;
+  max-width: 100vw;
   -webkit-text-stroke: 1px rgba(37, 99, 235, 0.09);
   background: linear-gradient(180deg, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
   -webkit-background-clip: text;
@@ -260,7 +262,7 @@ export function CinematicFooter() {
       
       <div
         ref={wrapperRef}
-        className="relative h-screen w-full bg-background"
+        className="relative h-screen w-full bg-background overflow-hidden"
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
         <footer className="fixed bottom-0 left-0 flex h-screen w-full flex-col justify-between overflow-hidden text-slate-900 dark:text-slate-100 cinematic-footer-wrapper">
@@ -275,8 +277,8 @@ export function CinematicFooter() {
             KTUNODE
           </div>
 
-          {/* Slanted Marquee to match your screenshot */}
-          <div aria-hidden="true" className="absolute top-12 left-0 w-full overflow-hidden border-y border-blue-100 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md py-4 z-10 -rotate-2 scale-110 shadow-sm">
+          {/* Marquee strip */}
+          <div aria-hidden="true" className="absolute top-12 left-0 w-full overflow-hidden border-y border-blue-100 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md py-4 z-10 -rotate-2 scale-x-110 shadow-sm">
             <div className="flex w-max animate-footer-scroll-marquee text-xs md:text-sm font-bold tracking-[0.2em] text-slate-500 dark:text-slate-400 uppercase">
               <MarqueeItem />
               <MarqueeItem />
@@ -287,7 +289,7 @@ export function CinematicFooter() {
           <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 mt-16 w-full max-w-5xl mx-auto">
             <h2
               ref={headingRef}
-              className="text-5xl md:text-7xl lg:text-8xl font-black text-[#1d4ed8] dark:text-blue-400 tracking-tighter mb-10 text-center"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-[#1d4ed8] dark:text-blue-400 tracking-tighter mb-10 text-center"
             >
               Ace KTU Exams<br />with KTU Node.
             </h2>

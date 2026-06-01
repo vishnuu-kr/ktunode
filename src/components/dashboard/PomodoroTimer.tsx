@@ -62,7 +62,8 @@ export default function PomodoroTimer({
   ];
 
   const activeIndex = presets.findIndex((p) => p.val === sessionMinutes);
-  const presetLefts = ["1%", "34%", "67%"];
+  // Calculate left offset as a percentage of the container (3 equal slots)
+  const activePillLeft = activeIndex >= 0 ? `calc(${activeIndex} * (100% / 3) + 2px)` : "2px";
 
   return (
     <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] transition-all duration-300 relative overflow-hidden group">
@@ -82,7 +83,7 @@ export default function PomodoroTimer({
         <button
           type="button"
           onClick={() => setIsMuted(!isMuted)}
-          className="w-8 h-8 rounded-lg bg-slate-950/[0.04] dark:bg-white/[0.04] hover:bg-slate-950/[0.08] dark:hover:bg-white/[0.08] text-slate-500 dark:text-slate-400 flex items-center justify-center transition-colors shrink-0"
+          className="w-11 h-11 rounded-lg bg-slate-950/[0.04] dark:bg-white/[0.04] hover:bg-slate-950/[0.08] dark:hover:bg-white/[0.08] text-slate-500 dark:text-slate-400 flex items-center justify-center transition-colors shrink-0"
           aria-label={isMuted ? "Unmute timer alert" : "Mute timer alert"}
         >
           {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
@@ -96,10 +97,10 @@ export default function PomodoroTimer({
           style={{
             top: "4px",
             bottom: "4px",
-            width: "31%",
+            width: "calc(33.333% - 4px)",
           }}
           animate={{
-            left: activeIndex >= 0 ? presetLefts[activeIndex] : "1%",
+            left: activePillLeft,
             opacity: activeIndex >= 0 ? 1 : 0,
           }}
           transition={{ type: "spring", stiffness: 350, damping: 28 }}

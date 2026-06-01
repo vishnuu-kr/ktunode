@@ -167,7 +167,7 @@ export function Features() {
 
           {/* ── 1. Coverage dial ── */}
           <motion.div
-            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -216,7 +216,7 @@ export function Features() {
 
           {/* ── 2. Chapter-wise Notes ── */}
           <motion.div
-            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -275,7 +275,7 @@ export function Features() {
 
           {/* ── 3. Interactive Pomodoro Study Timer (Replaces Flashcards) ── */}
           <motion.div
-            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -341,7 +341,7 @@ export function Features() {
 
           {/* ── 4. Syllabus Tracker ── */}
           <motion.div
-            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -395,7 +395,7 @@ export function Features() {
 
           {/* ── 5. Model Question Papers (Previously PYQs) ── */}
           <motion.div
-            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -452,7 +452,7 @@ export function Features() {
 
           {/* ── 6. Zero friction launch ── */}
           <motion.div
-            className="h-[400px] p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -511,3 +511,4 @@ export function Features() {
     </section>
   );
 }
+

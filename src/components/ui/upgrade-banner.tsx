@@ -107,7 +107,7 @@ export function UpgradeBanner({
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
               </span>
               <Sparkles className="w-3.5 h-3.5 text-blue-500 shrink-0" />
-              <span className="tracking-wide font-bold">
+              <span className="tracking-wide font-bold truncate max-w-[200px] sm:max-w-none">
                 {buttonText} {description}
               </span>
             </div>

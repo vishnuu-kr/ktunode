@@ -132,7 +132,7 @@ export default function FaqSection() {
                     >
                       <button
                         onClick={() => setOpenIndex(isOpen ? null : i)}
-                        className="w-full flex items-center justify-between px-6 py-5 text-left gap-4 group"
+                        className="w-full flex items-center justify-between px-5 py-4 md:px-6 md:py-5 text-left gap-4 group min-h-[52px]"
                         aria-expanded={isOpen}
                         aria-controls={`faq-answer-${i}`}
                       >
@@ -163,7 +163,7 @@ export default function FaqSection() {
                       <div
                         id={`faq-answer-${i}`}
                         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                         }`}
                       >
                         <p className="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">

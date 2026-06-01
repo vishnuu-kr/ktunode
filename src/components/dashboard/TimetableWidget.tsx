@@ -100,8 +100,8 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
 
   return (
     <div className="space-y-6">
-      {/* Live Countdown Card */}
-      <div className="hidden lg:block bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] transition-all duration-300 relative overflow-hidden group">
+      {/* Live Countdown Card — visible on all screen sizes */}
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-5 md:p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] transition-all duration-300 relative overflow-hidden group">
         <div className="absolute top-0 right-0 w-32 h-32 bg-slate-950/[0.02] dark:bg-white/[0.02] rounded-full blur-2xl pointer-events-none transition-all duration-300" />
         
         <div className="flex items-center gap-3 mb-5 relative z-10">
