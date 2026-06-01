@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowRight,
@@ -46,6 +46,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import MarkdownRenderer from "@/components/ui/MarkdownRenderer";
 import PomodoroTimer from "@/components/dashboard/PomodoroTimer";
 import TimetableWidget from "@/components/dashboard/TimetableWidget";
+import ShareButton from "@/components/ui/ShareButton";
 
 import { BottomSheet } from "@/components/dashboard/BottomSheet";
 
@@ -233,8 +234,31 @@ function getSubjectIcon(name: string) {
 
 function DashboardContent() {
   const searchParams = useSearchParams();
-  const branch = searchParams.get("branch") || "cs";
-  const sem = parseInt(searchParams.get("sem") || "4", 10);
+  const router = useRouter();
+  const parsedParams = React.useMemo(() => {
+    if (typeof window === "undefined") {
+      return { branch: "cs", sem: 4 };
+    }
+    const pathname = window.location.pathname;
+    const normalizedPathname = pathname.replace(/\/$/, "");
+    const isCleanUrl = normalizedPathname !== "/dashboard" && normalizedPathname !== "";
+    if (isCleanUrl) {
+      const parts = pathname.split("/").filter(Boolean);
+      const branchVal = parts[0] || "cs";
+      const semStr = parts[1] || "sem-4";
+      const semVal = parseInt(semStr.replace("sem-", ""), 10) || 4;
+      return { branch: branchVal, sem: semVal };
+    } else {
+      const branchVal = searchParams.get("branch") || "cs";
+      const semParam = searchParams.get("sem") || "4";
+      const semNumeric = semParam.startsWith("sem-") ? semParam.replace("sem-", "") : semParam;
+      const semVal = parseInt(semNumeric, 10) || 4;
+      return { branch: branchVal, sem: semVal };
+    }
+  }, [searchParams]);
+
+  const branch = parsedParams.branch;
+  const sem = parsedParams.sem;
   const { resolvedTheme } = useTheme();
 
   const [mounted, setMounted] = useState(false);
@@ -622,11 +646,25 @@ function DashboardContent() {
   // Sync initial query params deep linking
   useEffect(() => {
     if (!isLoaded) return;
-    const params = new URLSearchParams(window.location.search);
-    const subjectId = params.get("subject");
-    const topicId = params.get("topic");
-    const openAuth = params.get("auth");
-    const openProfile = params.get("profile");
+    const pathname = window.location.pathname;
+    const normalizedPathname = pathname.replace(/\/$/, "");
+    const isCleanUrl = normalizedPathname !== "/dashboard" && normalizedPathname !== "";
+    let subjectId = null;
+    let topicId = null;
+
+    if (isCleanUrl) {
+      const parts = pathname.split("/").filter(Boolean);
+      subjectId = parts[2] || null;
+      const search = new URLSearchParams(window.location.search);
+      topicId = parts[3] || search.get("topic") || null;
+    } else {
+      const params = new URLSearchParams(window.location.search);
+      subjectId = params.get("subject");
+      topicId = params.get("topic");
+    }
+
+    const openAuth = new URLSearchParams(window.location.search).get("auth");
+    const openProfile = new URLSearchParams(window.location.search).get("profile");
 
     if (openAuth === "open") {
       setAuthTab("signin");
@@ -642,7 +680,7 @@ function DashboardContent() {
     }
 
     if (topicId && subjectId) {
-      const targetSub = subjects.find(s => s.id === subjectId);
+      const targetSub = subjects.find(s => s.id === subjectId || s.code.toLowerCase() === subjectId.toLowerCase());
       if (targetSub) {
         const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id === topicId);
         if (targetTop) {
@@ -652,7 +690,7 @@ function DashboardContent() {
         }
       }
     } else if (subjectId) {
-      const targetSub = subjects.find(s => s.id === subjectId);
+      const targetSub = subjects.find(s => s.id === subjectId || s.code.toLowerCase() === subjectId.toLowerCase());
       if (targetSub) {
         setSelectedSubject(targetSub);
         setView("subject");
@@ -660,15 +698,66 @@ function DashboardContent() {
     }
   }, [isLoaded, subjects]);
 
-  // Listen to popstate for browser back button syncing
+  // Canonicalize address bar to clean URL if accessed via query params
   useEffect(() => {
-    const handlePopState = () => {
+    if (!mounted) return;
+    const pathname = window.location.pathname;
+    const normalizedPathname = pathname.replace(/\/$/, "");
+    const isCleanUrl = normalizedPathname !== "/dashboard" && normalizedPathname !== "";
+
+    if (!isCleanUrl) {
       const params = new URLSearchParams(window.location.search);
+      const branchVal = params.get("branch") || "cs";
+      const semParam = params.get("sem") || "4";
+      const semNumeric = semParam.startsWith("sem-") ? semParam.replace("sem-", "") : semParam;
+      const semVal = parseInt(semNumeric, 10) || 4;
       const subjectId = params.get("subject");
       const topicId = params.get("topic");
 
+      let cleanPath = `/${branchVal}/sem-${semVal}`;
+      if (subjectId) {
+        const targetSub = subjects.find(s => s.id === subjectId || s.code.toLowerCase() === subjectId.toLowerCase());
+        const subSlug = targetSub ? targetSub.code.toLowerCase() : subjectId.toLowerCase();
+        cleanPath += `/${subSlug}`;
+        if (topicId) {
+          cleanPath += `/${topicId.toLowerCase()}`;
+        }
+      }
+      
+      const search = new URLSearchParams(window.location.search);
+      search.delete("branch");
+      search.delete("sem");
+      search.delete("subject");
+      search.delete("topic");
+      const queryStr = search.toString();
+      const finalUrl = queryStr ? `${cleanPath}?${queryStr}` : cleanPath;
+      
+      window.location.replace(finalUrl);
+    }
+  }, [mounted, subjects]);
+
+  // Listen to popstate for browser back button syncing
+  useEffect(() => {
+    const handlePopState = () => {
+      const pathname = window.location.pathname;
+      const normalizedPathname = pathname.replace(/\/$/, "");
+      const isCleanUrl = normalizedPathname !== "/dashboard" && normalizedPathname !== "";
+      let subjectId = null;
+      let topicId = null;
+
+      if (isCleanUrl) {
+        const parts = pathname.split("/").filter(Boolean);
+        subjectId = parts[2] || null;
+        const search = new URLSearchParams(window.location.search);
+        topicId = parts[3] || search.get("topic") || null;
+      } else {
+        const params = new URLSearchParams(window.location.search);
+        subjectId = params.get("subject");
+        topicId = params.get("topic");
+      }
+
       if (topicId && subjectId) {
-        const targetSub = subjects.find(s => s.id === subjectId);
+        const targetSub = subjects.find(s => s.id === subjectId || s.code.toLowerCase() === subjectId.toLowerCase());
         if (targetSub) {
           const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id === topicId);
           if (targetTop) {
@@ -682,7 +771,7 @@ function DashboardContent() {
       }
 
       if (subjectId) {
-        const targetSub = subjects.find(s => s.id === subjectId);
+        const targetSub = subjects.find(s => s.id === subjectId || s.code.toLowerCase() === subjectId.toLowerCase());
         if (targetSub) {
           setSelectedSubject(targetSub);
           setSelectedTopic(null);
@@ -846,11 +935,7 @@ function DashboardContent() {
       setView("dashboard");
       setSelectedSubject(null);
       setSelectedTopic(null);
-      // Push history state preserving sem/branch
-      const params = new URLSearchParams(window.location.search);
-      params.delete("subject");
-      params.delete("topic");
-      const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+      const newUrl = getNavigationUrl(window.location.pathname, branch, sem);
       window.history.pushState({ view: "dashboard" }, "", newUrl);
     });
     triggerHaptic("light", event);
@@ -861,11 +946,8 @@ function DashboardContent() {
       window.scrollTo({ top: 0, behavior: "smooth" });
       setSelectedSubject(subject);
       setView("subject");
-      // Push history state preserving sem/branch
-      const params = new URLSearchParams(window.location.search);
-      params.set("subject", subject.id);
-      params.delete("topic");
-      window.history.pushState({ view: "subject", subjectId: subject.id }, "", `?${params.toString()}`);
+      const newUrl = getNavigationUrl(window.location.pathname, branch, sem, subject.code || subject.id);
+      window.history.pushState({ view: "subject", subjectId: subject.id }, "", newUrl);
     });
     triggerHaptic("medium", event);
   };
@@ -879,11 +961,14 @@ function DashboardContent() {
       setLastTopicId(topic.id);
       localStorage.setItem("ktunode_last_topic", topic.id);
       setView("topic");
-      // Push history state preserving sem/branch
-      const params = new URLSearchParams(window.location.search);
-      if (owner) params.set("subject", owner.id);
-      params.set("topic", topic.id);
-      window.history.pushState({ view: "topic", subjectId: owner?.id, topicId: topic.id }, "", `?${params.toString()}`);
+      const newUrl = getNavigationUrl(
+        window.location.pathname,
+        branch,
+        sem,
+        owner ? (owner.code || owner.id) : undefined,
+        topic.id
+      );
+      window.history.pushState({ view: "topic", subjectId: owner?.id, topicId: topic.id }, "", newUrl);
     });
     setCommandOpen(false);
     triggerHaptic("medium", event);
@@ -969,6 +1054,47 @@ function DashboardContent() {
   const nextTopic = currentTopicIndex < flattenedTopics.length - 1 ? flattenedTopics[currentTopicIndex + 1] : null;
   const skeletonCards = Array.from({ length: 4 }, (_, index) => index);
 
+  const getNavigationUrl = React.useCallback((
+    currentPath: string,
+    branchVal: string,
+    semVal: number,
+    subjectCodeOrId?: string,
+    topicId?: string
+  ) => {
+    let url = `/${branchVal}/sem-${semVal}`;
+    if (subjectCodeOrId) {
+      url += `/${subjectCodeOrId.toLowerCase()}`;
+      if (topicId) {
+        url += `/${topicId.toLowerCase()}`;
+      }
+    }
+    return url;
+  }, []);
+
+  const canonicalUrl = React.useMemo(() => {
+    if (typeof window === "undefined") return "";
+    let path = `https://ktunode.com/${branch}/sem-${sem}`;
+    if (selectedSubject) {
+      path += `/${(selectedSubject.code || selectedSubject.id).toLowerCase()}`;
+      if (selectedTopic) {
+        path += `/${selectedTopic.id.toLowerCase()}`;
+      }
+    }
+    return path;
+  }, [branch, sem, selectedSubject, selectedTopic]);
+
+  const subjectShareUrl = React.useMemo(() => {
+    if (typeof window === "undefined") return "";
+    if (!selectedSubject) return "";
+    return `${window.location.origin}/${branch}/sem-${sem}/${(selectedSubject.code || selectedSubject.id).toLowerCase()}`;
+  }, [branch, sem, selectedSubject]);
+
+  const topicShareUrl = React.useMemo(() => {
+    if (typeof window === "undefined") return "";
+    if (!selectedSubject || !selectedTopic) return "";
+    return `${window.location.origin}/${branch}/sem-${sem}/${(selectedSubject.code || selectedSubject.id).toLowerCase()}/${selectedTopic.id.toLowerCase()}`;
+  }, [branch, sem, selectedSubject, selectedTopic]);
+
   return (
     <div
       className="h-screen overflow-hidden relative flex flex-col font-sans transition-colors duration-500 text-slate-900 dark:text-slate-100 bg-background"
@@ -978,6 +1104,7 @@ function DashboardContent() {
           : theme.background
       }}
     >
+      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       <div className="absolute inset-0 z-0 dot-grid opacity-[0.08] pointer-events-none" />
       <div className="absolute inset-0 z-0 noise-overlay opacity-[0.25] pointer-events-none" />
       <div className={`absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full ${theme.glowCircle1} dark:bg-blue-500/5 blur-[160px] pointer-events-none z-0 bg-orb-1 transition-colors duration-500`} />
@@ -1339,11 +1466,22 @@ function DashboardContent() {
                 Back to Dashboard
               </button>
  
-              <div className="mb-10 text-center md:text-left">
-                <span className="text-sm font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-2 block">{selectedSubject.code}</span>
-                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.2]">
-                  <span className="gradient-text">{selectedSubject.name}</span>
-                </h1>
+              <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4 text-center md:text-left">
+                <div>
+                  <span className="text-sm font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-2 block">{selectedSubject.code}</span>
+                  <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.2]">
+                    <span className="gradient-text">{selectedSubject.name}</span>
+                  </h1>
+                </div>
+                {subjectShareUrl && (
+                  <div className="flex justify-center md:justify-start gap-2 self-center md:self-end">
+                    <ShareButton
+                      url={subjectShareUrl}
+                      triggerHaptic={triggerHaptic}
+                      onShareSuccess={showToast}
+                    />
+                  </div>
+                )}
               </div>
  
               {selectedSubject.modules.length > 0 ? (
@@ -1484,14 +1622,23 @@ function DashboardContent() {
                   >
                     {selectedTopic.title}
                   </h1>
-                  <button
-                    type="button"
-                    onClick={() => togglePinnedTopic(selectedTopic.id)}
-                    className={`h-10 w-10 md:h-12 md:w-12 rounded-xl md:rounded-2xl flex items-center justify-center shrink-0 transition-colors ${pinnedTopicIds.includes(selectedTopic.id) ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-450 border border-amber-200/50 dark:border-amber-900/30" : "bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
-                    aria-label={pinnedTopicIds.includes(selectedTopic.id) ? "Unpin tough topic" : "Pin tough topic"}
-                  >
-                    <Star className={`w-4.5 h-4.5 md:w-5 md:h-5 ${pinnedTopicIds.includes(selectedTopic.id) ? "fill-current" : ""}`} />
-                  </button>
+                  <div className="flex items-center gap-2 shrink-0">
+                    {topicShareUrl && (
+                      <ShareButton
+                        url={topicShareUrl}
+                        triggerHaptic={triggerHaptic}
+                        onShareSuccess={showToast}
+                      />
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => togglePinnedTopic(selectedTopic.id)}
+                      className={`h-10 w-10 md:h-12 md:w-12 rounded-xl md:rounded-2xl flex items-center justify-center transition-colors ${pinnedTopicIds.includes(selectedTopic.id) ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-450 border border-amber-200/50 dark:border-amber-900/30" : "bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
+                      aria-label={pinnedTopicIds.includes(selectedTopic.id) ? "Unpin tough topic" : "Pin tough topic"}
+                    >
+                      <Star className={`w-4.5 h-4.5 md:w-5 md:h-5 ${pinnedTopicIds.includes(selectedTopic.id) ? "fill-current" : ""}`} />
+                    </button>
+                  </div>
                 </div>
 
                 <div className="px-4 md:px-0">
