@@ -12,35 +12,50 @@ def check_for_updates():
         response = requests.get(URL, timeout=15)
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Target the first announcement link on the page
-        link_element = soup.select_one('.announcement-list a')
-        if not link_element: 
-            print("Could not find the announcement element.")
-            return
+        # KTU utilizes classic tables. Let's pull all links on the page.
+        links = soup.find_all('a', href=True)
         
+        # Filter for genuine announcement attachments or portal links
+        announcement_links = [l for l in links if 'attachments' in l['href'].lower() or 'eu' in l['href'].lower()]
+        
+        # Fallback if the layout variations hide the keywords
+        if not announcement_links:
+            announcement_links = [l for l in links if not l['href'].startswith('#') and 'home' not in l['href'].lower()]
+
+        if not announcement_links:
+            print("Could not parse any layout links from the portal page.")
+            return
+            
+        # Target the top-most link element
+        link_element = announcement_links[0]
         latest_link = link_element['href']
         
-        # Read the last link we saved to see if it changed
+        # Form absolute URL structure if relative
+        if latest_link.startswith('/'):
+            latest_link = f"https://ktu.edu.in{latest_link}"
+            
+        print(f"Latest parsed portal link: {latest_link}")
+        
+        # Load the previous state check
         last_link = ""
         if os.path.exists(STATE_FILE):
             with open(STATE_FILE, 'r') as f:
                 last_link = f.read().strip()
 
-        # If it's a new link, ping your Telegram phone
+        # Execute alert logic on matching differences
         if latest_link != last_link:
             msg = f"🔔 New KTU Update Detected!\n\nLink: {latest_link}"
             requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage", 
                           data={"chat_id": CHAT_ID, "text": msg})
             
-            # Save it so we don't spam notifications
             with open(STATE_FILE, 'w') as f:
                 f.write(latest_link)
-            print("New link found! Telegram notification sent.")
+            print("State modified. Notification dispatched to device.")
         else:
-            print("No new updates found on KTU site.")
+            print("State matches. No recent updates found.")
             
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"Exception encountered during runtime: {e}")
 
 if __name__ == "__main__":
     check_for_updates()

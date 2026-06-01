@@ -1,18 +1,18 @@
 name: KTU Monitor
 on:
   schedule:
-    - cron: '0 0,12 * * *' # Automatically runs twice a day (Midnight and Noon)
-  workflow_dispatch: # Lets you run it manually whenever you want
+    - cron: '0 0,12 * * *' # Automatically runs twice a day
+  workflow_dispatch: # Lets you trigger it manually
 
 jobs:
   check:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Allows the bot to save progress back to your repo
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: main # 👈 THIS IS THE FIX: Tells Git exactly which branch to target
+          ref: main
       
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -30,8 +30,12 @@ jobs:
         
       - name: Save State
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add last_link.txt
-          git commit -m "Update last seen link [skip ci]" || echo "No changes to save"
-          git push origin main # 👈 Explicitly pushing to main branch
+          if [ -f last_link.txt ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add last_link.txt
+            git commit -m "Update last seen link [skip ci]" || echo "No changes to save"
+            git push origin main
+          else
+            echo "Tracking file not generated yet. Skipping Git commit."
+          fi
