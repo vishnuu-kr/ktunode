@@ -1626,6 +1626,8 @@ function DashboardContent() {
                     {topicShareUrl && (
                       <ShareButton
                         url={topicShareUrl}
+                        title={`${selectedTopic.title} — ${selectedSubject?.name}`}
+                        text={`📚 Studying "${selectedTopic.title}" from ${selectedSubject?.name} (${selectedSubject?.code}) — KTU ${branch.toUpperCase()} Sem ${sem}, 2024 Scheme.\n\nCheck it out on KTUNODE (free, no login):`}
                         triggerHaptic={triggerHaptic}
                         onShareSuccess={showToast}
                       />
