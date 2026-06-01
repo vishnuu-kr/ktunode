@@ -357,22 +357,18 @@ export default function Home() {
 
     triggerLandingHaptic("success", event);
 
-    const p = new URLSearchParams();
-    if (selectedBranch) p.set("branch", selectedBranch);
-    if (selectedSemester) p.set("sem", String(selectedSemester));
-
     // Save session before navigating (only when both are selected)
     if (selectedBranch && selectedSemester) {
       saveSession(selectedBranch, selectedSemester as number);
     }
 
-    router.push(`/dashboard${p.toString() ? `?${p.toString()}` : ""}`);
+    router.push(`/${selectedBranch}/sem-${selectedSemester}`);
   };
 
   const handleContinue = (event?: React.MouseEvent | React.PointerEvent) => {
     if (!savedSession) return;
     triggerLandingHaptic("success", event);
-    router.push(`/dashboard?branch=${savedSession.branch}&sem=${savedSession.semester}`);
+    router.push(`/${savedSession.branch}/sem-${savedSession.semester}`);
   };
 
   const handleDismiss = (event?: React.MouseEvent | React.PointerEvent) => {
