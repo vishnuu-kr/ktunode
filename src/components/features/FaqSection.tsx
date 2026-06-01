@@ -97,7 +97,7 @@ export default function FaqSection() {
                 {quickStats.map((s, i) => (
                   <div
                     key={s.label}
-                    className={`flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-blue-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default ${
+                    className={`flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-blue-100 dark:border-slate-800 shadow-sm md:hover:shadow-md md:hover:-translate-y-0.5 transition-all duration-300 cursor-default ${
                       visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
                     }`}
                     style={{ transitionDelay: `${200 + i * 80}ms` }}

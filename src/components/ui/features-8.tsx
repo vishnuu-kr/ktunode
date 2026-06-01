@@ -182,7 +182,7 @@ export function Features() {
                   <button
                     key={b.label}
                     onClick={() => setSelectedBranchIdx(idx)}
-                    className={`flex-1 py-1.5 text-xs font-extrabold rounded-xl transition-all duration-300 ${
+                    className={`flex-1 py-2.5 text-xs font-extrabold rounded-xl transition-all duration-300 ${
                       selectedBranchIdx === idx
                         ? `${b.activeColor} border shadow-sm`
                         : "text-slate-500 dark:text-slate-400 hover:text-slate-800 hover:dark:text-slate-200 hover:bg-slate-200/40 hover:dark:bg-slate-800/40 border border-transparent"
@@ -421,7 +421,7 @@ export function Features() {
                   <button
                     key={sem}
                     onClick={() => setSelectedSem(sem)}
-                    className={`flex-1 py-1 text-[10px] font-bold rounded-lg border transition-all duration-200 cursor-pointer ${
+                    className={`flex-1 py-2 text-[10px] font-bold rounded-lg border transition-all duration-200 cursor-pointer ${
                       selectedSem === sem
                         ? "bg-violet-600 dark:bg-violet-500 text-white border-violet-600 dark:border-violet-500"
                         : "bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700/80"

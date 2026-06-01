@@ -132,12 +132,12 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
           <div className="w-full flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
-              <span className="text-xs font-black text-slate-800 tracking-wide uppercase">
+              <span className="text-xs font-black text-slate-800 dark:text-slate-200 tracking-wide">
                 {titleSummary}
               </span>
             </div>
             
-            <div className="flex items-center gap-1.5 text-slate-400 font-bold text-xs">
+            <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-500 font-bold text-xs">
               <span>Swipe down to close</span>
               <motion.div
                 animate={{ y: isOpen ? 0 : [0, -3, 0] }}

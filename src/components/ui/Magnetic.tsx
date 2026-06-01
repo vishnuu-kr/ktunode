@@ -9,6 +9,7 @@ export default function Magnetic({ children }: { children: React.ReactNode }) {
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!ref.current) return;
+    if (window.matchMedia("(hover: none)").matches) return;
     const { height, width, left, top } = ref.current.getBoundingClientRect();
     const middleX = e.clientX - (left + width / 2);
     const middleY = e.clientY - (top + height / 2);

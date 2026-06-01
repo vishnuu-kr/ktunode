@@ -1776,7 +1776,7 @@ function DashboardContent() {
       <AnimatePresence>
         {commandOpen && (
           <motion.div
-            className="fixed inset-0 z-[80] bg-slate-950/35 dark:bg-slate-950/60 backdrop-blur-sm px-4 pt-24 cursor-pointer"
+            className="fixed inset-0 z-[80] bg-slate-950/35 dark:bg-slate-950/60 backdrop-blur-sm px-4 pt-16 md:pt-24 cursor-pointer"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -1806,7 +1806,7 @@ function DashboardContent() {
                   <X className="w-4 h-4" />
                 </button>
               </div>
-              <div className="max-h-[420px] overflow-y-auto p-3">
+              <div className="max-h-[55dvh] md:max-h-[420px] overflow-y-auto p-3">
                 {searchTerm.trim() === "" && (
                   <p className="px-3 pb-2 text-[10px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-widest">All Topics</p>
                 )}
@@ -2049,7 +2049,7 @@ function DashboardContent() {
                   setAuthModalOpen(false);
                   triggerHaptic("light");
                 }}
-                className="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100/80 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 border border-slate-200/50 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer z-50 transition-colors shadow-sm"
+                className="absolute top-4 right-4 w-11 h-11 rounded-full bg-slate-100/80 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 border border-slate-200/50 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer z-50 transition-colors shadow-sm"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -2116,7 +2116,7 @@ function DashboardContent() {
                       placeholder="Your Name"
                       value={authName}
                       onChange={(e) => setAuthName(e.target.value)}
-                      className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
+                      className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-base font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
                     />
                   </div>
                 )}
@@ -2127,7 +2127,7 @@ function DashboardContent() {
                     placeholder="Email Address"
                     value={authEmail}
                     onChange={(e) => setAuthEmail(e.target.value)}
-                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
+                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-base font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
                   />
                 </div>
                 <div className="relative">
@@ -2137,7 +2137,7 @@ function DashboardContent() {
                     placeholder="Password"
                     value={authPassword}
                     onChange={(e) => setAuthPassword(e.target.value)}
-                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
+                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-base font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
                   />
                 </div>
 
@@ -2196,7 +2196,7 @@ function DashboardContent() {
                       setProfilePanelOpen(false);
                       triggerHaptic("light");
                     }}
-                    className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer"
+                    className="w-11 h-11 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer"
                   >
                     <X className="w-4 h-4" />
                   </button>
