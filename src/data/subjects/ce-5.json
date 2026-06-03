@@ -1,0 +1,2521 @@
+[
+  {
+    "id": "ce-5-advanced-structural-analysis",
+    "code": "PECET521",
+    "name": "ADVANCED STRUCTURAL ANALYSIS",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches",
+        "title": "Module 1: Two hinged arches analysis of two hinged arches",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e6b",
+            "title": "Two hinged Arches:  Analysis of two hinged arches - Support reactions normal thrust and radial shear at any section of a parabolic arch due to simple cases of loading, influence line for horizontal thrust, bending moment, normal thrust, and radial shear.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e6c",
+            "title": "Matrix Analysis of Structures:  Reviewing the definition of flexibility and stiffness influence coefficients, and concepts of physical approach",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-advanced-structural-analysis-02-module-2-direct-stiffness-method-introduction-to-direct-stiffness-method",
+        "title": "Module 2: Direct stiffness method introduction to direct stiffness method",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e6e",
+            "title": "Direct stiffness method:  Introduction to direct stiffness method-Rotation of axes in two dimensions, stiffness matrix of elements in global co- ordinates from element co-ordinates- assembly of load vector and stiffness matrix, solution of two span continuous beam-single bay single storey portal frame.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-advanced-structural-analysis-03-module-3-structural-dynamics-introduction",
+        "title": "Module 3: Structural dynamics introduction",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e70",
+            "title": "Structural dynamics:  Introduction - degrees of freedom - equation of motion, D’Alembert’s principle-damping- free response of damped and undamped systems- logarithmic decrement-- single degree of freedom systems subjected to harmonic load - transient and steady state responses, simple portal frame problems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim",
+        "title": "Module 4: Finite element methods boundary value problems introduction to approxim",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e72",
+            "title": "Finite Element Methods:  Boundary value problems; Introduction to approximate numerical solutions for solving differential equations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e73",
+            "title": "Formulation techniques: Element equations using weighted residual approach - the axial element example.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-applied-hydrology-and-climatology",
+    "code": "PECET526",
+    "name": "APPLIED HYDROLOGY AND CLIMATOLOGY",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-applied-hydrology-and-climatology-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ef5",
+            "title": "Introduction - weather and climate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ef6",
+            "title": "hydrometeorology- variables affecting precipitation- humidity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ef7",
+            "title": "vapor pressure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ef8",
+            "title": "saturation vapor pressure–temperature relation (simple problems)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ef9",
+            "title": "perceptible water",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810efa",
+            "title": "forms and types of precipitation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810efb",
+            "title": "cloud - types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810efc",
+            "title": "Monsoon- characteristics of Indian summer monsoon rainfall- climate oscillations and Indian monsoon rainfall",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810efd",
+            "title": "Evapotranspiration - methods of estimation-Blaney Criddle method (problem)- penman method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810efe",
+            "title": "Penmann-Montieth method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change",
+        "title": "Module 2: Causes and effects of climate change",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f00",
+            "title": "Causes and effects of climate change",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f01",
+            "title": "modeling of hydrologic impact of climate change on water resources-typical framework",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f02",
+            "title": "general circulation models and regional climate models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f03",
+            "title": "Downscaling-concept and types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f04",
+            "title": "Catchment characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f05",
+            "title": "classification of streams - stream pattern and stream order",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-applied-hydrology-and-climatology-03-module-3-statistical-methods-in-hydro",
+        "title": "Module 3: Statistical methods in hydro",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f07",
+            "title": "Statistical methods in hydro-climatology: principal component analysis and its use in climate change studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f08",
+            "title": "methods for change point analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f09",
+            "title": "methods for trend analysis-statistical and graphical methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f0a",
+            "title": "stationary and non-stationary series- determination of non-stationarity of hydro-climatic series (no problems)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-applied-hydrology-and-climatology-04-module-4-design-flood-and-their-estimation",
+        "title": "Module 4: Design flood and their estimation",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f0c",
+            "title": "Design flood and their Estimation - Different methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f0d",
+            "title": "Flood frequency studies -Gumbel’s method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f0e",
+            "title": "Flood Routing-Hydrologic and Hydraulic routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f0f",
+            "title": "Flood routing through reservoirs – concept only",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f10",
+            "title": "Flood routing through channels - Muskingum method, determination of Muskingum parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f11",
+            "title": "Flood control methods - Flood forecasting and warning (Brief descriptions only)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cd56b5e963ba810f11-q-1",
+                "year": "2024",
+                "question": "What are the three main categories of flood forecasting methods? Briefly describe the core principle of each.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810f11-q-2",
+                "year": "2024",
+                "question": "Imagine you are responsible for issuing flood warnings for a major river basin. What are at least three essential data types you would need to collect and why?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810f11-q-3",
+                "year": "2024",
+                "question": "Discuss one significant challenge faced by flood forecasting and warning systems and suggest a potential mitigation strategy.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810f11-q-4",
+                "year": "2024",
+                "question": "Why is it important for flood warnings to be disseminated through multiple channels?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-concrete-lab-mt-2",
+    "code": "PCCEL508",
+    "name": "CONCRETE LAB (MT-2)",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-concrete-lab-mt-2-01-module-1-test-on-cement-fineness-normal-consistency-initial-final-setting-time",
+        "title": "Module 1: Test on cement fineness normal consistency initial final setting time",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81103e",
+            "title": "Test on Cement: Fineness, normal consistency, initial & final setting time.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-02-module-2-test-on-cement-specific-gravity-and-compressive-strength",
+        "title": "Module 2: Test on cement specific gravity and compressive strength",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811040",
+            "title": "Test on Cement: Specific gravity and compressive strength",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-03-module-3-study-on-soundness-of-cement",
+        "title": "Module 3: Study on soundness of cement",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811042",
+            "title": "Study on soundness of cement.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-04-module-4-test-on-coarse-and-fine-aggregate-sieve-analysis",
+        "title": "Module 4: Test on coarse and fine aggregate sieve analysis",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811044",
+            "title": "Test on Coarse and Fine Aggregate: Sieve analysis.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-05-module-5-test-on-coarse-and-fine-aggregate-water-absorption-bulk-density-void-ra",
+        "title": "Module 5: Test on coarse and fine aggregate water absorption bulk density void ra",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811046",
+            "title": "Test on Coarse and Fine Aggregate: Water absorption, bulk density, void ratio, porosity and specific gravity.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-06-module-6-test-on-bulking-of-sand",
+        "title": "Module 6: Test on bulking of sand",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811048",
+            "title": "Test on bulking of sand.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-07-module-7-test-on-coarse-aggregate-crushing-value",
+        "title": "Module 7: Test on coarse aggregate crushing value",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81104a",
+            "title": "Test on coarse aggregate crushing value",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-08-module-8-tests-on-fresh-concrete-measurement-of-workability-of-concrete-by-slump",
+        "title": "Module 8: Tests on fresh concrete measurement of workability of concrete by slump",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81104c",
+            "title": "Tests on fresh concrete: Measurement of workability of concrete by slump cone test and compacting factor test.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-09-module-9-study-on-workability-of-concrete-by-vee",
+        "title": "Module 9: Study on workability of concrete by vee",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81104e",
+            "title": "Study on workability of concrete by Vee-Bee test and flow test.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-10-module-10-concrete-mix-design-by-is-code-method-and-casting-of-cubes-cylinders-w",
+        "title": "Module 10: Concrete mix design by is code method and casting of cubes cylinders w",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811050",
+            "title": "Concrete mix design by IS code method and casting of cubes, cylinders with designed concrete mixes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-11-module-11-tests-on-hardened-properties-of-concrete-compressive-split-and-flexura",
+        "title": "Module 11: Tests on hardened properties of concrete compressive split and flexura",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811052",
+            "title": "Tests on hardened properties of concrete: Compressive, split and flexural strength.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-12-module-12-tests-on-hardened-properties-of-concrete-modulus-of-elasticity-of-conc",
+        "title": "Module 12: Tests on hardened properties of concrete modulus of elasticity of conc",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811054",
+            "title": "Tests on hardened properties of concrete: Modulus of elasticity of concrete",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-13-module-13-tests-on-brick-floor-and-roof-tiles-as-per-is-code-provision",
+        "title": "Module 13: Tests on brick floor and roof tiles as per is code provision",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811056",
+            "title": "Tests on brick, floor and roof tiles as per IS code provision.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-14-module-14-study-on-non",
+        "title": "Module 14: Study on non",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811058",
+            "title": "Study on Non-destructive tests on hardened concrete (Rebound hammer, ultrasonic pulse velocity and Rebar locator).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-concrete-lab-mt-2-15-module-15-study-on-concrete-core-cutter-concrete-penetrometer-and-crack-detectio",
+        "title": "Module 15: Study on concrete core cutter concrete penetrometer and crack detectio",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81105a",
+            "title": "Study on concrete core cutter, concrete penetrometer and crack detection microscope.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-design-of-prestressed-concrete",
+    "code": "PECET525",
+    "name": "DESIGN OF PRESTRESSED CONCRETE",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing",
+        "title": "Module 1: Introduction and analysis of members concept of prestressing",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fda",
+            "title": "Introduction and Analysis of Members: Concept of Prestressing - Types of Pre-stressing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fdb",
+            "title": "Advantages - Limitations –Prestressing systems - Anchoring devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fdc",
+            "title": "Materials - Mechanical Properties of high strength concrete - high strength steel - Stress-Strain curve for High strength concrete",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fdd",
+            "title": "Losses in Prestress: Loss of Pre stress due to Elastic shortening, Friction, Anchorage slip, Creep of concrete, Shrinkage of concrete and Relaxation of steel - Total Loss.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-design-of-prestressed-concrete-02-module-2-design-of-sections-for-flexure-analysis-of-members-at-ultimate-strength",
+        "title": "Module 2: Design of sections for flexure analysis of members at ultimate strength",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fdf",
+            "title": "Design of Sections for Flexure: Analysis of members at ultimate strength - Preliminary Design - Final Design for Type 1members.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fe0",
+            "title": "Deflection due to gravity loads - Deflection due to prestressing force-Total deflection - Limits of deflection - Limits of span-to-effective depth ratio",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-design-of-prestressed-concrete-03-module-3-design-of-sections-for-flexure-analysis-of-members-at-ultimate-strength",
+        "title": "Module 3: Design of sections for flexure analysis of members at ultimate strength",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fe2",
+            "title": "Design of Sections for Flexure: Analysis of members at ultimate strength - Preliminary Design - Final Design for Type 1 members.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fe3",
+            "title": "Design for Shear: Analysis for shear - Components of shear resistance - Modes of Failure - Limit State of collapse for shear - Design of transverse reinforcement.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes",
+        "title": "Module 4: Different anchorage system and design of end block by latest is codes",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fe5",
+            "title": "Different anchorage system and design of end block by latest IS codes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fe6",
+            "title": "Conceptual design and detailing of Prestressed deck",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fe7",
+            "title": "Prestressed beam – cast in situ slab composite Sections- Analysis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-disaster-management",
+    "code": "PECET524",
+    "name": "DISASTER MANAGEMENT",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-disaster-management-01-module-1-hazards-and-disasters-introduction-to-key-concepts-and-terminology-haza",
+        "title": "Module 1: Hazards and disasters introduction to key concepts and terminology haza",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ed4",
+            "title": "Hazards and disasters: Introduction to key concepts and terminology: hazard, disasters and types of classifications, vulnerability, exposure, risk, crisis, emergency, capacity, resilience, Carbon footprint.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ed5",
+            "title": "Effect of subsystems of earth.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ed6",
+            "title": "Extent and nature of natural hazards, implications of climate change: Earth quakes, Volcanoes, Floods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ed7",
+            "title": "Coastal disasters- Storm surges, Tsunamis, mitigation methods.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-disaster-management-02-module-2-landslides-causes-and-prediction",
+        "title": "Module 2: Landslides causes and prediction",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ed9",
+            "title": "Landslides, Causes and prediction,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eda",
+            "title": "Soil and soil degradation, erosion and Desertification, Forest fires, their mitigation methods.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana",
+        "title": "Module 3: Impacts and assessment risk management and assessment and disaster mana",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810edc",
+            "title": "Impacts and assessment: Risk Management and Assessment and Disaster Management cycle.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810edd",
+            "title": "SWOT Analysis- basic concepts, uses, limitations and advantages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ede",
+            "title": "Disaster management plan and reports, participation of community in disaster management.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides",
+        "title": "Module 4: Hazard and disaster management plans for floods storm surges landslides",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ee0",
+            "title": "Hazard and disaster management plans for floods, storm surges, landslides, earthquakes, forest fires: pre-disaster phase, actual disaster phase, post- disaster phase",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ee1",
+            "title": "Relief and Amenities, Relief camps, organization, individual and community participation, camp layout, food requirement, water needs, sanitation, security, information administration.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ee2",
+            "title": "Technology in disaster management.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-environmental-engineering",
+    "code": "PCCET503",
+    "name": "ENVIRONMENTAL ENGINEERING",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-environmental-engineering-01-module-1-introduction-to-environmental-engineering",
+        "title": "Module 1: Introduction to environmental engineering",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810dfd",
+            "title": "Introduction to environmental engineering- Population forecast- water demand estimation-types of demand- demand fluctuation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dfe",
+            "title": "Systems of sewerage: separate and combined",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dff",
+            "title": "Layout plan of a conventional water treatment plant- site selection-Intakes- Screening-types of screens -aeration -aerator types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e00",
+            "title": "Theory and principles of sedimentation-Stoke’s Law-Types of settling - Design of plain sedimentation tanks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e01",
+            "title": "Mechanisms of coagulation and flocculation, popular coagulants and feeding devices",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cd56b5e963ba810e01-q-1",
+                "year": "2024",
+                "question": "Explain the difference between coagulation and flocculation in water treatment, highlighting the primary mechanisms involved in each process.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e01-q-2",
+                "year": "2024",
+                "question": "A water treatment plant uses Aluminum Sulfate (Alum) as a coagulant. What are the main advantages and disadvantages of using Alum?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e01-q-3",
+                "year": "2024",
+                "question": "Describe the mechanism of \"sweep flocculation.\" When is this mechanism most effective?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e01-q-4",
+                "year": "2024",
+                "question": "What is the role of a coagulant aid? Provide an example of a common type of coagulant aid.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e01-q-5",
+                "year": "2024",
+                "question": "Compare and contrast volumetric and gravimetric feeders for solid coagulants. Which is generally more accurate and why?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e01-q-6",
+                "year": "2024",
+                "question": "If you were to feed a liquid coagulant like ferric chloride, what type of feeding device would you most likely use, and why?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ce-5-environmental-engineering-02-module-2-filtration-of-water",
+        "title": "Module 2: Filtration of water",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e03",
+            "title": "Filtration of water-theory of filtration-types of filters - design of a slow sand and rapid sand filter.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e04",
+            "title": "Disinfection of water - various methods - advantages and limitations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e05",
+            "title": "Lay out of water distribution network-types-methods of distribution.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e06",
+            "title": "Network analysis –Hardy cross and equivalent pipe methods.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-environmental-engineering-03-module-3-layout-plan-of-a-conventional-waste-water-treatment-plant",
+        "title": "Module 3: Layout plan of a conventional waste water treatment plant",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e08",
+            "title": "Layout plan of a conventional waste water treatment plant- site selection- concept of primary, secondary and tertiary treatment, equalization of flow.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e09",
+            "title": "Secondary treatment methods-basic concepts of biological unit processes- aerobic and anaerobic- attached and suspended growth processes (Concepts only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e0a",
+            "title": "Trickling filter (Concept only)- types- construction & operation-design of trickling filter.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e0b",
+            "title": "Activated sludge process- basic concepts-design of a conventional Activated Sludge Plant.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only",
+        "title": "Module 4: Up flow anaerobic sludge blanket uasb reactor concept only",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e0d",
+            "title": "Up flow Anaerobic Sludge Blanket (UASB) reactor (Concept only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e0e",
+            "title": "Natural waste water treatment systems-Oxidation Ponds and Lagoons- Wetlands and Rootzone systems (Concepts only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e0f",
+            "title": "Low-cost sanitation systems- Design of a septic tank and soak-pit.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e10",
+            "title": "Sludge treatment (concepts only) -thickening- digestion- dewatering- drying- composting.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-foundation-engineering",
+    "code": "PBCET504",
+    "name": "FOUNDATION ENGINEERING",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-foundation-engineering-01-module-1-earth-pressure",
+        "title": "Module 1: Earth pressure",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e28",
+            "title": "Earth pressure - At rest, active and passive earth pressures - Rankine’s theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e29",
+            "title": "Earth pressure and point of application for cohesionless and cohesive soils",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e2a",
+            "title": "Influence of surcharge and water table on earth pressure - Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e2b",
+            "title": "Earth pressure with layered backfill - Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e2c",
+            "title": "Coulomb’s theory [concept only]",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e2d",
+            "title": "Stability of finite slopes - Toe failure, base failure, slip failure - Swedish Circle Method (Procedure only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e2e",
+            "title": "Friction circle method (Procedure only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e2f",
+            "title": "Taylor’s Stability number",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e30",
+            "title": "Stability charts (Demo only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-foundation-engineering-02-module-2-general-considerations-functions-of-foundations",
+        "title": "Module 2: General considerations functions of foundations",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e32",
+            "title": "General Considerations: Functions of foundations - definition of shallow and deep foundation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e33",
+            "title": "Site investigation and soil exploration: objectives - planning - reconnaissance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e34",
+            "title": "Guidelines for choosing spacing and depth of borings [I.S. guidelines only].",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e35",
+            "title": "Standard Penetration Test – Procedure and correlations - Corrections for SPT value – Numerical Problems - Boring log - Soil profile.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e36",
+            "title": "Plate load test –",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e37",
+            "title": "Procedure, uses and limitations-Field test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e38",
+            "title": "Plate load test – Procedure, uses and limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e39",
+            "title": "Failure mechanism (General, local and punching shear failure) – situations in which each of them can be expected.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cd56b5e963ba810e39-q-1",
+                "year": "2024",
+                "question": "A footing is to be placed on a deposit of dense sand. Which type of shear failure mechanism is most likely to occur if the footing is relatively wide?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e39-q-2",
+                "year": "2024",
+                "question": "Describe the key difference between local shear failure and punching shear failure in terms of the soil movement and the load-settlement behavior.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e39-q-3",
+                "year": "2024",
+                "question": "Under what soil conditions would you expect punching shear failure to be a significant concern for a shallow foundation? Provide an example.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e39-q-4",
+                "year": "2024",
+                "question": "Differentiate between general shear failure and local shear failure by their characteristic load-settlement curves.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cd56b5e963ba810e3a",
+            "title": "Terzaghi’s bearing capacity theory for strip footing [no derivation required] – Assumptions -Gross and Net bearing pressure - Ultimate and Safe bearing capacity - -Allowable soil pressure -Bearing capacity factors- Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e3b",
+            "title": "Terzaghi’s formulae for circular and square footings - Numerical problems - Factors affecting bearing capacity - Effect of water table on bearing capacity - Numerical problems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-foundation-engineering-03-module-3-settlement-analysis-introduction",
+        "title": "Module 3: Settlement analysis introduction",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e3d",
+            "title": "Settlement analysis: Introduction- causes of settlement – estimation immediate settlement (I.S. Code) Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e3e",
+            "title": "Design of Isolated Footing-Combined footings- Rectangular and Trapezoidal combined footings - Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e3f",
+            "title": "Raft foundations: Types – Design Principles of raft foundation- Bearing capacity equations for raft on sand (Teng’s equation based on SPT value) and for raft on clay (Skempton’s formula) - Floating foundations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles",
+        "title": "Module 4: Pile foundations uses and classification of piles",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e41",
+            "title": "Pile foundations: Uses and classification of piles - Selection of type and length of piles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e42",
+            "title": "Bearing capacity of single pile in clay and sand [I.S. Static formulae]",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e43",
+            "title": "Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e44",
+            "title": "Dynamic formulae (Modified Hiley formulae only) – Numerical Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e45",
+            "title": "I.S. Pile load test [conventional]",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e46",
+            "title": "Negative skin friction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e47",
+            "title": "Group action - Group efficiency - Capacity of Pile groups - Numerical problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-geotechnical-engineering-lab",
+    "code": "PCCEL507",
+    "name": "GEOTECHNICAL ENGINEERING LAB",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-geotechnical-engineering-lab-01-module-1-sieve-analysis",
+        "title": "Module 1: Sieve analysis",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ff9",
+            "title": "Sieve Analysis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-02-module-2-determination-of-specific-gravity",
+        "title": "Module 2: Determination of specific gravity",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ffb",
+            "title": "Determination of Specific Gravity-Pycnometer & Specific Gravity bottle",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-03-module-3-determination-of-water-content",
+        "title": "Module 3: Determination of water content",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ffd",
+            "title": "Determination of Water Content-Oven Drying Method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-04-module-4-swelling-test",
+        "title": "Module 4: Swelling test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fff",
+            "title": "Swelling Test-Free Swell",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-05-module-5-hydrometer-analysis",
+        "title": "Module 5: Hydrometer analysis",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811001",
+            "title": "Hydrometer analysis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-06-module-6-atterberg-limits",
+        "title": "Module 6: Atterberg limits",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811003",
+            "title": "Atterberg Limits - Liquid Limit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba811004",
+            "title": "Plastic Limit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba811005",
+            "title": "Shrinkage Limit",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-07-module-7-field-density-test-i-core-cutter",
+        "title": "Module 7: Field density test i core cutter",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811007",
+            "title": "Field Density Test – (i) Core Cutter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba811008",
+            "title": "(ii) Sand Replacement Method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-08-module-8-light-compaction-test-standard-proctor-test",
+        "title": "Module 8: Light compaction test standard proctor test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba81100a",
+            "title": "Light Compaction Test (Standard Proctor Test)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-09-module-9-direct-shear-test",
+        "title": "Module 9: Direct shear test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba81100c",
+            "title": "Direct Shear Test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-10-module-10-unconfined-compression-test",
+        "title": "Module 10: Unconfined compression test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba81100e",
+            "title": "Unconfined Compression Test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-11-module-11-consolidation-test",
+        "title": "Module 11: Consolidation test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811010",
+            "title": "Consolidation Test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-12-module-12-permeability-test",
+        "title": "Module 12: Permeability test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811012",
+            "title": "Permeability Test- Constant Head Permeability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba811013",
+            "title": "Variable Head Permeability",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-13-module-13-triaxial-shear-strength-test",
+        "title": "Module 13: Triaxial shear strength test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811015",
+            "title": "Triaxial Shear strength Test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-14-module-14-flexible-wall-permeability-test",
+        "title": "Module 14: Flexible wall permeability test",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811017",
+            "title": "Flexible wall Permeability Test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-geotechnical-engineering-lab-15-module-15-determination-of-relative-density-of-cohesionless-soil",
+        "title": "Module 15: Determination of relative density of cohesionless soil",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba811019",
+            "title": "Determination of Relative Density of Cohesionless soil",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-hydrology-and-water-resources-engineering",
+    "code": "PCCET501",
+    "name": "HYDROLOGY AND WATER RESOURCES ENGINEERING",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle",
+        "title": "Module 1: Hydrologic cycle",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d7f",
+            "title": "Hydrologic cycle-precipitation-mechanism, types, forms and measurement using rain gauges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d80",
+            "title": "Optimum number of rain gauges",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cd56b5e963ba810d80-q-1",
+                "year": "2024",
+                "question": "Explain why a single rain gauge is usually insufficient to represent the rainfall over an entire river catchment.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810d80-q-2",
+                "year": "2024",
+                "question": "A hydrologist wants to estimate the mean areal rainfall for a basin with a coefficient of variation of 30%. If they want to be 95% confident and limit the acceptable error to 15% of the mean, how many rain gauges are theoretically needed?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810d80-q-3",
+                "year": "2024",
+                "question": "List three factors that would necessitate a higher number of rain gauges in a region compared to another region.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810d80-q-4",
+                "year": "2024",
+                "question": "Discuss the trade-off between the accuracy of rainfall data and the cost of establishing and maintaining a rain gauge network.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810d80-q-5",
+                "year": "2024",
+                "question": "If you are using the Thiessen polygon method and find that your average polygon area is very large, what does this imply about the number of gauges and the accuracy of your areal rainfall estimate?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cd56b5e963ba810d81",
+            "title": "representation of rainfall data-mass curve and hyetograph",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d82",
+            "title": "computation of mean precipitation over a catchment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d83",
+            "title": "Design rainfall - probable maximum rainfall",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d84",
+            "title": "IDF curves (conceptual idea only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d85",
+            "title": "Infiltration-measurement by double ring, infiltrometer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d86",
+            "title": "Horton’s model, infiltration indices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d87",
+            "title": "Evaporation –measurement and control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-hydrology-and-water-resources-engineering-02-module-2-runoff",
+        "title": "Module 2: Runoff",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d89",
+            "title": "Runoff-components of runoff- Hydrograph analysis-Hydrograph from isolated storm-Base flow, separation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d8a",
+            "title": "Unit hydrograph – uses, assumptions and limitations of unit hydrograph theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d8b",
+            "title": "Computation of storm/flood hydrograph of different duration by method of superposition and by development of S– Hydrograph",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d8c",
+            "title": "Floods-methods of design flood estimation –Empirical methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d8d",
+            "title": "SPF and PMF, Return period (conceptual ideas only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d8e",
+            "title": "Streamflow measurement-area velocity method of stream gauging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d8f",
+            "title": "selection of site for stream gauging station",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d90",
+            "title": "Stage-discharge curve, flow duration curve-uses and characteristics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects",
+        "title": "Module 3: Irrigation necessity benefits and ill effects",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d92",
+            "title": "Irrigation– Necessity, Benefits and ill effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d93",
+            "title": "Types: flow and lift irrigation - perennial and inundation irrigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d94",
+            "title": "Soil-water –plant relationships",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d95",
+            "title": "Irrigation efficiencies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d96",
+            "title": "Computation o crop water requirement: depth and frequency of Irrigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d97",
+            "title": "Duty and delta, duty-factors affecting and method of improving duty",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d98",
+            "title": "Computation of crop water requirement by using the concept of duty and delta",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d99",
+            "title": "Irrigation structures – storage   structures –Reservoirs - types, zones, yield of reservoir",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d9a",
+            "title": "determination of storage capacity and yield by mass curve method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d9b",
+            "title": "Reservoir sedimentation and control - trap efficiency- computation of life of reservoir – river training - diversion structures - layout",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water",
+        "title": "Module 4: Vertical distribution of ground water",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d9d",
+            "title": "Vertical distribution of ground water- classification of saturated formation (review)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d9e",
+            "title": "Aquifer properties, Darcy’s law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d9f",
+            "title": "Well hydraulics-Steady radial flow into a fully penetrating well in Confined and Unconfined aquifers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810da0",
+            "title": "Types of wells, Types of tube wells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810da1",
+            "title": "well losses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810da2",
+            "title": "Yield of open wells-pumping test and recuperation test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810da3",
+            "title": "Pollution of ground water- sources, distribution and evaluation of ground water pollution (Brief description only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810da4",
+            "title": "Artificial recharge of ground water- different techniques",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-modern-construction-technology",
+    "code": "PECET522",
+    "name": "MODERN CONSTRUCTION TECHNOLOGY",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate",
+        "title": "Module 1: Sustainable construction materials wood bamboo straw bales earthen mate",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e80",
+            "title": "Sustainable Construction  Materials : Wood, bamboo, straw bales, earthen materials, recycled aggregates, recycled plastic products, sustainable concretes, bio composites",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e81",
+            "title": "Smart & Intelligent materials : Types - Neoprene, Bridge pads, thermocol - Smart and Intelligent Materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e82",
+            "title": "Special features: - Shape Memory Alloys (SMAs), Magneto strictive materials, Piezoelectric materials, Electrochromic materials",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cd56b5e963ba810e82-q-1",
+                "year": "2024",
+                "question": "Explain the core principle behind Shape Memory Alloys (SMAs) and provide one application in sustainable construction that leverages this principle.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e82-q-2",
+                "year": "2024",
+                "question": "Describe the phenomenon of magnetostriction and its potential use in controlling building vibrations.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e82-q-3",
+                "year": "2024",
+                "question": "What is the direct piezoelectric effect, and how can it be utilized for energy generation in buildings?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e82-q-4",
+                "year": "2024",
+                "question": "How do electrochromic materials contribute to energy savings in buildings, and what is a common application of this technology?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cd56b5e963ba810e82-q-5",
+                "year": "2024",
+                "question": "Differentiate between the direct piezoelectric effect and inverse piezoelectricity (electrostriction).",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cd56b5e963ba810e83",
+            "title": "Green materials including biomaterials, biopolymers, bioplastics – Case studies showing the applications of smart and intelligent materials.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations",
+        "title": "Module 2: Equipment for earth work fundamentals of earth work operations",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e85",
+            "title": "Equipment for Earth Work:  Fundamentals of earth work operations - earth moving operations - types of earth work equipment - tractors, motor graders, scrapers, front end waders – excavating and earth moving equipment- dozer, excavators, rippers, loaders - trucks and hauling equipment, compacting equipment, finishing equipment.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e86",
+            "title": "Erection Equipment : Cranes, Derrick Cranes, Mobile cranes, Overhead cranes, Traveller cranes, Tower cranes",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-modern-construction-technology-03-module-3-construction-techniques-construction-joints",
+        "title": "Module 3: Construction techniques construction joints",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e88",
+            "title": "Construction techniques : Construction joints - movement and expansion joints –Vacuum Dewatering of Concrete Flooring – Techniques of construction for continuous concreting operation in Tall buildings – Slip Form techniques—Erection techniques of Tall structures, large Span Structures -",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e89",
+            "title": "Bridge Construction - Construction sequence and methods - Bow string bridges, cable stayed bridges - Launching techniques for heavy decks.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-modern-construction-technology-04-module-4-cost",
+        "title": "Module 4: Cost",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810e8b",
+            "title": "Cost-effective construction : Rapid wall construction, soil-cement block masonry, voided slab, filler slab, rat-trap bond, cavity wall, ferrocement and ferro concrete constructions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e8c",
+            "title": "Prefabricated construction : Advantages and disadvantages, prefabricated components.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e8d",
+            "title": "Pre-Engineered Buildings : Introduction – Advantages - Pre-Engineered Buildings Vs Conventional Steel Buildings – Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e8e",
+            "title": "Basic concept of prestressing : Fundamental understanding of pre-tensioned and post-tensioned construction.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810e8f",
+            "title": "Construction 3D printing .",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-open-channel-hydraulics",
+    "code": "PECET523",
+    "name": "OPEN CHANNEL HYDRAULICS",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-open-channel-hydraulics-01-module-1-open-channel-flow",
+        "title": "Module 1: Open channel flow",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ea3",
+            "title": "Open channel flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ea4",
+            "title": "Uniform flow - Conveyance and section factor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ea5",
+            "title": "Hydraulic exponents Computation of discharge through compound channels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ea6",
+            "title": "Design of channels for uniform flow-Non erodible channel- Minimum permissible velocity-best hydraulic section",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ea7",
+            "title": "Erodible channels which scour but do not silt- Tractive force approach, stable hydraulic section",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ea8",
+            "title": "Velocity distribution in open channels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ea9",
+            "title": "Pressure distribution in curvilinear flows- flows through spillway crest and spillway bucket",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-open-channel-hydraulics-02-module-2-specific-energy",
+        "title": "Module 2: Specific energy",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810eab",
+            "title": "Specific energy- specific energy diagram and discharge diagram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eac",
+            "title": "Critical flow and its computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ead",
+            "title": "-Hydraulic exponents  Application of Specific energy for channel transitions- hump and reduction in channel width",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-open-channel-hydraulics-03-module-3-gradually-varied-flow",
+        "title": "Module 3: Gradually varied flow",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810eaf",
+            "title": "Gradually varied flow- Dynamic equation of gradually varied flow- different forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb0",
+            "title": "Computation of length of water surface profiles - direct step method, Bresse’s method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb1",
+            "title": "Standard step method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb2",
+            "title": "Rapidly varied flow-Hydraulic jump - sloping and exponential channels, types based on tail water conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb3",
+            "title": "Uses of hydraulic jumps for energy dissipation below spillways- jump height curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb4",
+            "title": "tail water rating curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb5",
+            "title": "Design features of USBR stilling basins, Standing wave flume, Parshall flume",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-open-channel-hydraulics-04-module-4-unsteady-flow-through-open-channels-surges",
+        "title": "Module 4: Unsteady flow through open channels surges",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810eb7",
+            "title": "Unsteady flow through open channels – Surges- positive surges (problems) and concept of negative surges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb8",
+            "title": "Spatially varied flow, dynamic equation of spatially varied flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810eb9",
+            "title": "Analysis of spatially varied flow profile",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-optimization-techniques-and-operational-research-for-civil-engineers",
+    "code": "PECET528",
+    "name": "OPTIMIZATION TECHNIQUES AND OPERATIONAL RESEARCH FOR CIVIL ENGINEERS",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-optimization-techniques-and-operational-research-for-civil-engineers-01-module-1-linear-programming-introduction-and-formulation-of-models",
+        "title": "Module 1: Linear programming introduction and formulation of models",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f95",
+            "title": "Linear Programming: Introduction and formulation of models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f96",
+            "title": "Convexity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f97",
+            "title": "simplex method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f98",
+            "title": "Two phase method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f99",
+            "title": "Degeneracy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f9a",
+            "title": "non - existent and unbounded solutions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f9b",
+            "title": "Duality in L.P.P.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f9c",
+            "title": "Dual simplex method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f9d",
+            "title": "Sensitivity analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f9e",
+            "title": "Revised simplex method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f9f",
+            "title": "transportation and assignment problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-optimization-techniques-and-operational-research-for-civil-engineers-02-module-2-non",
+        "title": "Module 2: Non",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fa1",
+            "title": "Non-Linear Programming: Classical optimisation methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fa2",
+            "title": "Equality and inequality constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fa3",
+            "title": "Lagrange multipliers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fa4",
+            "title": "& KuhnTucker conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fa5",
+            "title": "Quadratic forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fa6",
+            "title": "Quadratic programming.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-optimization-techniques-and-operational-research-for-civil-engineers-03-module-3-search-methods-one-dimensional-optimisation",
+        "title": "Module 3: Search methods one dimensional optimisation",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fa9",
+            "title": "Fibonacci search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810faa",
+            "title": "multi-dimensional search methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fab",
+            "title": "Univariate search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fac",
+            "title": "gradient methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fad",
+            "title": "steepest descent/ascent methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fae",
+            "title": "Conjugate Gradient method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810faf",
+            "title": "Penalty function approach.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-optimization-techniques-and-operational-research-for-civil-engineers-04-module-4-dynamic-programming-principle-of-optimality",
+        "title": "Module 4: Dynamic programming principle of optimality",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810fb1",
+            "title": "Dynamic Programming: Principle of optimality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fb2",
+            "title": "Recursive relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fb3",
+            "title": "solution of L.P.Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fb4",
+            "title": "simple examples",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810fb5",
+            "title": "Integer Linear Programming: travelling salesman problem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-town-planning",
+    "code": "PECET527",
+    "name": "TOWN PLANNING",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-town-planning-01-module-1-definition-of-town-planning",
+        "title": "Module 1: Definition of town planning",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f32",
+            "title": "Definition of town planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f33",
+            "title": "Evolution of towns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f34",
+            "title": "Objective of town planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f35",
+            "title": "Economic Justification for town planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f36",
+            "title": "Principles of town planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f37",
+            "title": "Necessity of town planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f38",
+            "title": "Origin, Growth and patterns of town development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f39",
+            "title": "distribution of land use",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f3a",
+            "title": "site for ideal town.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f3b",
+            "title": "Migration trends and impacts on urban and rural development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f3c",
+            "title": "Problems of urban growth-beginning of town planning acts- concept of new towns - comprehensive planning of towns.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-town-planning-02-module-2-surveys-definition",
+        "title": "Module 2: Surveys definition",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f3e",
+            "title": "Surveys: Definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f3f",
+            "title": "Necessity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f40",
+            "title": "collection of data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f41",
+            "title": "Types of surveys",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f42",
+            "title": "methods adopted to collect data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f43",
+            "title": "Drawings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f44",
+            "title": "reports.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f45",
+            "title": "Zoning: Definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f46",
+            "title": "Use of land",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f47",
+            "title": "Objects of zoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f48",
+            "title": "Principles of zoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f49",
+            "title": "Aspects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f4a",
+            "title": "Advantages & Importance zoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f4b",
+            "title": "Transition zone",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f4c",
+            "title": "Economy of zoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f4d",
+            "title": "Zoning powers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f4e",
+            "title": "Maps for zoning",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-town-planning-03-module-3-housing-classification-of-residential-buildings",
+        "title": "Module 3: Housing classification of residential buildings",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f50",
+            "title": "Housing: Classification of residential buildings- Agencies for housing- Housing finance agencies- problems of housing in India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f51",
+            "title": "Slums: Causes, characteristics and effects of slums, Slum clearance.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f52",
+            "title": "Industries: Classification of industry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f53",
+            "title": "Concentration of industry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f54",
+            "title": "requirements of the industry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f55",
+            "title": "Industrial townships.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f56",
+            "title": "Public Buildings: Location",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f57",
+            "title": "classification principle of design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f58",
+            "title": "town centre",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f59",
+            "title": "grouping of public buildings.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-town-planning-04-module-4-town-planning-legislations-laws-relating-to-land-acquisition-urban-land",
+        "title": "Module 4: Town planning legislations laws relating to land acquisition urban land",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810f5b",
+            "title": "Town Planning Legislations: Laws relating to land acquisition; urban land ceiling, UDPFI guidelines, disaster mitigation management; Environmental and Pollution Control Acts.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f5c",
+            "title": "Re-planning of existing towns: Objects of re-planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f5d",
+            "title": "defects of existing town",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f5e",
+            "title": "data required for re- planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f5f",
+            "title": "Urban Renewal projects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f60",
+            "title": "De-centralization and Re-centralized",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810f61",
+            "title": "Garden city concept overview.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-5-transportation-engineering",
+    "code": "PCCET502",
+    "name": "TRANSPORTATION ENGINEERING",
+    "branchId": "ce",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ce-5-transportation-engineering-01-module-1-introduction-classification-of-roads",
+        "title": "Module 1: Introduction classification of roads",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810dce",
+            "title": "Introduction:  Classification of roads- based on material, function.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dcf",
+            "title": "Typical cross sections of roads in urban and rural area, Requirements and factors controlling alignment of roads.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dd0",
+            "title": "Geometric design of highways:  Design controls and criteria, Design of highway cross section elements.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dd1",
+            "title": "Design of horizontal alignment - Stopping sight distance, Overtaking sight distance, super elevation, extra widening, transition curve, length and shift of transition curve, - worked out problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dd2",
+            "title": "Design of vertical alignment - gradient - grade compensation – summit curves and valley curves",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b",
+        "title": "Module 2: Highway materials desirable properties and testing of road aggregates b",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810dd4",
+            "title": "Highway materials:  Desirable properties and testing of road aggregates, bituminous materials and sub grade soil",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dd5",
+            "title": "Introduction to Pavements and Pavement Design:  Flexible and rigid pavements, Functions of individual layers, Factors influencing pavement design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dd6",
+            "title": "Flexible pavements:  Design of flexible pavements by CBR method and IRC 37: 2018* - worked out problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dd7",
+            "title": "Rigid pavements:  Types of stresses: wheel load stresses, temperature stresses, Critical combination of stresses - worked out problem, Functions of longitudinal, contraction and expansion joints (Design not expected)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum",
+        "title": "Module 3: Traffic engineering road user vehicle characteristics macroscopic volum",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810dd9",
+            "title": "Traffic engineering:   Road user, vehicle characteristics, Macroscopic (Volume, Density and speed) and Microscopic (time and space headway) characteristics of traffic stream- Fundamental diagrams of traffic flow- Greenshield’s model (derivation not required), Capacity and Level of Service (Concept only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810dda",
+            "title": "Traffic Surveys:  Data collection and Analysis - Volume, speed, O&D, parking studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ddb",
+            "title": "Types of intersections - At grade and grade separated intersections.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ddc",
+            "title": "Traffic signal systems:  Types, Design of isolated signals by Webster’s method- Warrants for traffic signal installation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810ddd",
+            "title": "Railway Engineering:  Component parts of a railway track - functions, concept of Gauges, sleeper density, coning of wheels, cant deficiency, compensation of gradients",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-5-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-",
+        "title": "Module 4: Introduction to airport engineering components of airport selection of ",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810ddf",
+            "title": "Introduction to Airport Engineering:  Components of airport, selection of site for airport.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810de0",
+            "title": "Runway orientation, basic runway length and corrections required, Design of taxiways.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810de1",
+            "title": "Harbours:  classification, features, requirements. Break waters - necessity and functions, classification.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810de2",
+            "title": "Docks – Functions and types - dry docks, wet docks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810de3",
+            "title": "Tunnel Engineering: Tunnel  – sections, tunnel surveying - alignment, transferring centre grade into tunnel.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

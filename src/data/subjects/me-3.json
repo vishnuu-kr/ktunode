@@ -1,0 +1,2136 @@
+[
+  {
+    "id": "me-3-computer-aided-machine-drawing-modelling",
+    "code": "PCMEL307",
+    "name": "COMPUTER AIDED MACHINE DRAWING & \nMODELLING",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-computer-aided-machine-drawing-modelling-01-module-1-understand-the-basics-of-machine-drawing-including-bis-code-of-practice",
+        "title": "Module 1: Understand the basics of machine drawing including bis code of practice",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e57",
+            "title": "Understand the basics of machine drawing, including BIS code of practice, types of lines, dimensioning, scales of drawing, sectional views, geometric tolerances, and the importance of GD&T.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e58",
+            "title": "Additionally, to practice, simple 2D sketches to familiarize with these concepts.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e59",
+            "title": "Learn and practice drawing different types of rigid shaft couplings used for connecting shafts with collinear axes using 2D drafting software (Flange Coupling, Protected Flange Coupling etc).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e5a",
+            "title": "Understanding Basics of Assembly Drawings using 2D drafting software and creating a 2D Assembled Drawing with required Sectional Views (Universal coupling or Knuckle joint).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e5b",
+            "title": "Understanding Basics of Assembly Drawings using 2D drafting software and creating a 2D Assembled Drawing with required Sectional Views and prepare BOM (Stuffing Box).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e5c",
+            "title": "Use of geometrical dimensioning and tolerancing (GD & T) in drawing. (Minimum 5 Nos.)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-computer-aided-machine-drawing-modelling-02-module-2-creating-3d-machine-components-minimum-4-nos",
+        "title": "Module 2: Creating 3d machine components minimum 4 nos",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e5e",
+            "title": "Creating 3D machine components (Minimum 4 Nos).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e5f",
+            "title": "Creating 3D assembly models of Socket and spigot joint, Knuckle Joint, Rigid flange couplings, Bushed Pin flexible coupling, Plummer block, Screw jack etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e60",
+            "title": "Modeling of surfaces of the given geometry like helmet, mouse, fender of automobiles etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e61",
+            "title": "Parametric modeling of standard parts such as nuts, bolts, rivets, washers etc (Minimum 3 Nos).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-economics-for-engineers",
+    "code": "UCHUT346",
+    "name": "ECONOMICS FOR ENGINEERS",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-economics-for-engineers-01-module-1-basic-economic-problems",
+        "title": "Module 1: Basic economic problems",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462dd2",
+            "title": "Basic economic problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dd3",
+            "title": "Production Possibility Curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dd4",
+            "title": "Utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dd5",
+            "title": "Law of diminishing marginal utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dd6",
+            "title": "Law of Demand",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dd7",
+            "title": "Law of supply",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dd8",
+            "title": "Elasticity",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1351d0cf4804462dd8-q-1",
+                "year": "2024",
+                "question": "A company is considering increasing the price of its engineering software from $200 to $220. They estimate that this will reduce the number of units sold from 10,000 to 9,000.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462dd8-q-2",
+                "year": "2024",
+                "question": "During a recession, consumer income falls by 5%. The demand for economy cars increases by 2%, while the demand for luxury electric vehicles decreases by 8%.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462dd8-q-3",
+                "year": "2024",
+                "question": "The price of a specific type of sensor used in industrial automation increases by 15%. As a result, the demand for complementary control systems decreases by 10%.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462dd8-q-4",
+                "year": "2024",
+                "question": "A manufacturing plant can increase its production of a particular component by 20% in response to a 10% price increase. What is the Price Elasticity of Supply (PES) for this component? Is the supply elastic or inelastic?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462dd8-q-5",
+                "year": "2024",
+                "question": "A civil engineering firm is analyzing the demand for its design services. They believe demand is highly elastic. If they want to increase their total revenue, should they increase or decrease their prices? Explain your reasoning.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dd9",
+            "title": "measurement of elasticity and its applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dda",
+            "title": "Equilibrium",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462ddb",
+            "title": "Changes in demand and supply and its effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462ddc",
+            "title": "Production function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462ddd",
+            "title": "Law of variable proportion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dde",
+            "title": "Economies of Scale",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462ddf",
+            "title": "Internal and External Economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de0",
+            "title": "Cobb-Douglas Production Function",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-economics-for-engineers-02-module-2-cost-concepts",
+        "title": "Module 2: Cost concepts",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462de2",
+            "title": "Cost concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de3",
+            "title": "Social cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de4",
+            "title": "private cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de5",
+            "title": "Explicit and implicit cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de6",
+            "title": "Sunk cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de7",
+            "title": "Opportunity cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de8",
+            "title": "short run cost curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462de9",
+            "title": "Revenue concepts Firms and their objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dea",
+            "title": "Types of firms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462deb",
+            "title": "Markets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dec",
+            "title": "Perfect Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462ded",
+            "title": "Monopoly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dee",
+            "title": "Monopolistic Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462def",
+            "title": "Oligopoly (features and equilibrium of a firm)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-economics-for-engineers-03-module-3-monetary-system",
+        "title": "Module 3: Monetary system",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462df1",
+            "title": "Monetary System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df2",
+            "title": "Money",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df3",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df4",
+            "title": "Central Banking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df5",
+            "title": "Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df6",
+            "title": "Causes and Effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df7",
+            "title": "Measures to Control Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df8",
+            "title": "Monetary and Fiscal policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462df9",
+            "title": "Deflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dfa",
+            "title": "Taxation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dfb",
+            "title": "Direct and Indirect taxes (merits and demerits)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dfc",
+            "title": "GST",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dfd",
+            "title": "National income",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dfe",
+            "title": "Concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462dff",
+            "title": "Circular Flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e00",
+            "title": "Methods of Estimation and Difficulties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e01",
+            "title": "Stock Market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e02",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e03",
+            "title": "Problems faced by the Indian stock market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e04",
+            "title": "Demat Account and Trading Account",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e05",
+            "title": "Stock market Indicators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e06",
+            "title": "SENSEX and NIFTY",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-economics-for-engineers-04-module-4-value-analysis-and-value-engineering",
+        "title": "Module 4: Value analysis and value engineering",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e08",
+            "title": "Value Analysis and value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e09",
+            "title": "Cost Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e0a",
+            "title": "Exchange Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e0b",
+            "title": "Use Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e0c",
+            "title": "Esteem Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e0d",
+            "title": "Aims, Advantages and Application areas of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e0e",
+            "title": "Value Engineering Procedure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e0f",
+            "title": "Break-even Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e10",
+            "title": "Cost-Benefit Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e11",
+            "title": "Capital Budgeting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462e12",
+            "title": "Process planning",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-engineering-ethics-and-sustainable-development",
+    "code": "UCHUT347",
+    "name": "ENGINEERING ETHICS AND SUSTAINABLE DEVELOPMENT",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics",
+        "title": "Module 1: Fundamentals of ethics",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044632fe",
+            "title": "Fundamentals of ethics  - Personal vs. professional ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044632ff",
+            "title": "Civic  Virtue",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463300",
+            "title": "Respect for others",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463301",
+            "title": "Profession and Professionalism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463302",
+            "title": "Ingenuity, diligence and responsibility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463303",
+            "title": "Integrity in design, development, and research domains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463304",
+            "title": "Plagiarism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463305",
+            "title": "a balanced outlook on law - challenges - case studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463306",
+            "title": "Technology and digital revolution -Data, information, and knowledge",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463307",
+            "title": "Cybertrust and cybersecurity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463308",
+            "title": "Data collection & management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463309",
+            "title": "High technologies: connecting people and places -accessibility and social impacts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446330a",
+            "title": "Managing conflict",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446330b",
+            "title": "Collective bargaining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446330c",
+            "title": "Confidentiality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446330d",
+            "title": "Role of confidentiality in moral integrity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446330e",
+            "title": "Codes of Ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446330f",
+            "title": "Basic concepts in Gender Studies  - sex, gender, sexuality, gender spectrum: beyond the binary, gender identity, gender expression, gender stereotypes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463310",
+            "title": "Gender disparity and discrimination in education",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463311",
+            "title": "employment and everyday life",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463312",
+            "title": "History of women in Science & Technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463313",
+            "title": "Gendered technologies & innovations",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1451d0cf4804463313-q-1",
+                "year": "2024",
+                "question": "Define \"gendered technologies\" and provide one example.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-2",
+                "year": "2024",
+                "question": "How does the concept of \"gender\" differ from \"sex\" in the context of technology?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-3",
+                "year": "2024",
+                "question": "Explain how a lack of diversity in engineering teams can contribute to gendered technologies. (Relates to LO2, CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-4",
+                "year": "2024",
+                "question": "Provide an example of how data bias can lead to gendered technological outcomes. (Relates to LO2, CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-5",
+                "year": "2024",
+                "question": "Critically evaluate a widely used technology (e.g., a social media platform or a virtual assistant) from a gender perspective. What potential gendered impacts does it have? (Relates to LO3, CO2, CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-6",
+                "year": "2024",
+                "question": "What is \"co-creation\" in the context of technology development, and why is it important for gender inclusivity? (Relates to LO4, CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-7",
+                "year": "2024",
+                "question": "Suggest two specific strategies engineers can employ to mitigate gender bias in AI systems. (Relates to LO4, CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-8",
+                "year": "2024",
+                "question": "How can the development of gender-inclusive technologies contribute to achieving Sustainable Development Goal 5 (Gender Equality)? (Relates to LO5, CO2, CO3, CO4)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463313-q-9",
+                "year": "2024",
+                "question": "What is the ethical responsibility of an engineer regarding the potential gendered impacts of their innovations? (Relates to LO1, LO5, CO1, CO4)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1451d0cf4804463314",
+            "title": "Ethical values and practices in connection with gender  - equity, diversity & gender justice",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463315",
+            "title": "Gender policy and women/transgender empowerment initiatives",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic",
+        "title": "Module 2: Introduction to environmental ethics definition importance and historic",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463317",
+            "title": "Introduction to Environmental Ethics:  Definition, importance and historical development of environmental ethics, key philosophical theories (anthropocentrism, biocentrism, ecocentrism)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463318",
+            "title": "Sustainable Engineering Principles:  Definition and scope, triple bottom line (economic, social and environmental sustainability), life cycle analysis and sustainability metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463319",
+            "title": "Ecosystems and Biodiversity:  Basics of ecosystems and their functions, Importance of biodiversity and its conservation, Human impact on ecosystems and biodiversity loss, An overview of various ecosystems in Kerala/India, and its significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446331a",
+            "title": "Landscape and Urban Ecology:  Principles of landscape ecology, Urbanization and its environmental impact, Sustainable urban planning and green infrastructure",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate",
+        "title": "Module 3: Hydrology and water management basics of hydrology and water cycle wate",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446331c",
+            "title": "Hydrology and Water Management:  Basics of hydrology and water cycle, Water scarcity and pollution issues, Sustainable water management practices, Environmental flow, disruptions and disasters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446331d",
+            "title": "Zero Waste Concepts and Practices:  Definition of zero waste and its principles, Strategies for waste reduction, reuse, reduce and recycling, Case studies of successful zero waste initiatives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446331e",
+            "title": "Circular Economy and Degrowth:  Introduction to the circular economy model, Differences between linear and circular economies, degrowth principles, Strategies for implementing circular economy practices and degrowth principles in engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446331f",
+            "title": "Mobility and Sustainable Transportation:  Impacts of transportation on the environment and climate, Basic tenets of a Sustainable Transportation design, Sustainable urban mobility solutions, Integrated mobility systems, E-Mobility, Existing and upcoming models of sustainable mobility solutions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene",
+        "title": "Module 4: Renewable energy and sustainable technologies overview of renewable ene",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463321",
+            "title": "Renewable Energy and Sustainable Technologies:  Overview of renewable energy sources (solar, wind, hydro, biomass), Sustainable technologies in energy production and consumption, Challenges and opportunities in renewable energy adoption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463322",
+            "title": "Climate Change and Engineering Solutions:  Basics of climate change science, Impact of climate change on natural and human systems, Kerala/India and the Climate crisis, Engineering solutions to mitigate, adapt and build resilience to climate change",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463323",
+            "title": "Environmental Policies and Regulations:  Overview of key environmental policies and regulations (national and international), Role of engineers in policy implementation and compliance, Ethical considerations in environmental policy-making",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463324",
+            "title": "Case Studies and Future Directions:  Analysis of real-world case studies, Emerging trends and future directions in environmental ethics and sustainability, Discussion on the role of engineers in promoting a sustainable future",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-fluid-mechanics-and-machinery",
+    "code": "PCMET303",
+    "name": "FLUID MECHANICS AND MACHINERY",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-fluid-mechanics-and-machinery-01-module-1-prerequisite-properties-of-fluid-specific-gravity-specific-weight-speci",
+        "title": "Module 1: Prerequisite properties of fluid specific gravity specific weight speci",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462d13",
+            "title": "Prerequisite: Properties of fluid: Specific gravity, Specific Weight, Specific Volume, Dynamic and Kinematic Viscosity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d14",
+            "title": "Introduction to fluid mechanics - Types of fluids, Newton’s law of viscosity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d15",
+            "title": "Pressure Measurement: Fluid pressure, Pressure head, types of pressures.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d16",
+            "title": "Piezometer, Simple, differential Manometers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d17",
+            "title": "Fluid statics: Pressure, density, height relationship.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d18",
+            "title": "Hydrostatic force and pressure on plane and inclined surfaces, Centre of pressure.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d19",
+            "title": "Buoyancy and Metacentre.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d1a",
+            "title": "Stability of immersed and floating bodies.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-fluid-mechanics-and-machinery-02-module-2-fluid-kinematics-description-of-fluid-motion-types-of-flows-material-de",
+        "title": "Module 2: Fluid kinematics description of fluid motion types of flows material de",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462d1c",
+            "title": "Fluid kinematics: Description of fluid motion – Types of flows, Material derivative velocity and acceleration – Streamlines, path lines and streak lines, Stream function and velocity potential function, flow net .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d1d",
+            "title": "Fluid dynamics: Continuity equation, Euler’s, and Bernoulli’s equations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d1e",
+            "title": "– Measuring instruments – Pitot tube, Orificemeter, Venturimeter, Rectangular and Triangular Notches-(notches Problems not required).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-fluid-mechanics-and-machinery-03-module-3-pipe-flow-laminar-and-turbulent-flows-significance-of-reynolds-number-s",
+        "title": "Module 3: Pipe flow laminar and turbulent flows significance of reynolds number s",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462d20",
+            "title": "Pipe flow – laminar and turbulent flows, significance of Reynolds number, shear stress and velocity distribution in a pipe flow.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d21",
+            "title": "– Hagen-Poiseullie equation, Darcy-Weisbach equation and Chezy’s equation , Moody’s chart for estimating frictional losses, Major and minor energy losses, hydraulic gradient, and total energy line.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d22",
+            "title": "Navier-Stokes equation and explanation (without proof) .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d23",
+            "title": "Dimensional analysis using Buckingham’s π theorem.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d24",
+            "title": "Boundary layer theory: Qualitative comparison between laminar and turbulent boundary layer.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d25",
+            "title": "Boundary layer separation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-fluid-mechanics-and-machinery-04-module-4-impact-of-jets-impact-of-jet-on-fixed-vertical-moving-vertical-flat-pla",
+        "title": "Module 4: Impact of jets impact of jet on fixed vertical moving vertical flat pla",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462d27",
+            "title": "Impact of jets: Impact of jet on fixed vertical, moving vertical flat plates.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d28",
+            "title": "Impact of jet on curved vanes – fixed and moving.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d29",
+            "title": "Velocity triangles.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d2a",
+            "title": "Classification of Turbines and pumps Comparison and examples.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d2b",
+            "title": "Pelton, Francis and Kaplan Turbines: Principle and working, head, work done, efficiencies (Problems using velocity triangles not required).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d2c",
+            "title": "Centrifugal Pumps: Principle and working, head, work required, efficiencies, Priming and cavitation.(Problems using velocity triangles not required) .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462d2d",
+            "title": "Reciprocating Pump: Principle and working – slip,negative slip, work required and efficiency.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-introduction-to-artificial-intelligence-and-data-science",
+    "code": "GNEST305",
+    "name": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning",
+        "title": "Module 1: Introduction to ai and machine learning basics of machine learning",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d7b",
+            "title": "Introduction to AI and Machine Learning : Basics of Machine Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d7c",
+            "title": "types of Machine Learning systems",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1351d0cf4804462d7c-q-1",
+                "year": "2024",
+                "question": "You are tasked with building a system that predicts whether a customer will click on an online advertisement. What type of machine learning problem is this, and why?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d7c-q-2",
+                "year": "2024",
+                "question": "A company wants to group its customers into different segments based on their purchasing habits without any prior knowledge of what these segments should be. What type of machine learning approach would be most suitable?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d7c-q-3",
+                "year": "2024",
+                "question": "An AI agent is learning to play a game by trying different moves. It gets a positive reward when it scores points and a negative reward when it loses a life. What type of machine learning is being used?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d7c-q-4",
+                "year": "2024",
+                "question": "You have a dataset of thousands of images of cats and dogs, but only 100 of them are labeled with \"cat\" or \"dog.\" How might you approach building an image classifier?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d7c-q-5",
+                "year": "2024",
+                "question": "Explain the difference between classification and regression in supervised learning.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d7d",
+            "title": "challenges in ML",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d7e",
+            "title": "Supervised learning model example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d7f",
+            "title": "regression models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d80",
+            "title": "Classification model example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d81",
+            "title": "Logistic regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d82",
+            "title": "unsupervised model example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d83",
+            "title": "K-means clustering.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d84",
+            "title": "Artificial Neural Network",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d85",
+            "title": "Perceptron",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d86",
+            "title": "Universal Approximation Theorem (statement only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d87",
+            "title": "Multi-Layer Perceptron",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d88",
+            "title": "Deep Neural Network",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d89",
+            "title": "demonstration of regression and classification problems using MLP.(Text-2)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-",
+        "title": "Module 2: Mathematical foundations of ai and data science role of linear algebra ",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d8b",
+            "title": "Mathematical Foundations of AI and Data science : Role of linear algebra in Data representation and analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d8c",
+            "title": "Matrix decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d8d",
+            "title": "Singular Value Decomposition (SVD)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d8e",
+            "title": "Spectral decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d8f",
+            "title": "Dimensionality reduction technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d90",
+            "title": "Principal Component Analysis (PCA). (Text-1)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr",
+        "title": "Module 3: Applied probability and statistics for ai and data science basics of pr",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d92",
+            "title": "Applied Probability and Statistics for AI and Data Science : Basics of probability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d93",
+            "title": "random variables and statistical measures ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d94",
+            "title": "rules in probability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d95",
+            "title": "Bayes theorem and its applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d96",
+            "title": "statistical estimation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d97",
+            "title": "Maximum Likelihood Estimator (MLE) ",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1351d0cf4804462d97-q-1",
+                "year": "2024",
+                "question": "Suppose we have $n$ independent observations $x_1, \\ldots, x_n$ from a geometric distribution with parameter $p$ (probability of success on a single trial). The PMF is $P(X=k) = (1-p)^{k-1}p$ for $k=1, 2, 3, \\ldots$. Find the MLE for $p$.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d97-q-2",
+                "year": "2024",
+                "question": "If we have data $x_1, \\ldots, x_n$ assumed to be from an exponential distribution with rate parameter $\\lambda$, where $P(x|\\lambda) = \\lambda e^{-\\lambda x}$ for $x \\ge 0$. Find the MLE for $\\lambda$.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d97-q-3",
+                "year": "2024",
+                "question": "What is the main difference between a likelihood function and a probability mass/density function?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d98",
+            "title": "statistical summaries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d99",
+            "title": "Correlation analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d9a",
+            "title": "linear correlation (direct problems only)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1351d0cf4804462d9a-q-1",
+                "year": "2024",
+                "question": "Calculate the Pearson correlation coefficient ($r$) for the following pairs of data:",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d9a-q-2",
+                "year": "2024",
+                "question": "A marketing team analyzes the relationship between advertising expenditure (in thousands of dollars) and monthly sales (in thousands of dollars). They find a Pearson correlation coefficient of $r = 0.88$. Describe what this correlation coefficient implies about the relationship between advertising expenditure and monthly sales.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d9a-q-3",
+                "year": "2024",
+                "question": "You are given the following data points for two variables, A and B: (1, 10), (2, 8), (3, 6), (4, 4), (5, 2). Calculate the Pearson correlation coefficient ($r$) and interpret the result.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462d9a-q-4",
+                "year": "2024",
+                "question": "If the Pearson correlation coefficient between a student's attendance percentage and their final exam score is $r = 0.05$, what can you conclude about the linear relationship between these two variables?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d9b",
+            "title": "regression analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d9c",
+            "title": "linear regression (using least square method) (Text book 4 )",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science",
+        "title": "Module 4: Basics of data science benefits of data science",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d9e",
+            "title": "Basics of Data Science : Benefits of data science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d9f",
+            "title": "use of statistics and Machine Learning in Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462da0",
+            "title": "data science process ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462da1",
+            "title": "applications of Machine Learning in Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462da2",
+            "title": "modelling process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462da3",
+            "title": "demonstration of ML applications in data science",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1351d0cf4804462da3-q-1",
+                "year": "2024",
+                "question": "A company wants to predict the sales of its new product for the next quarter based on historical sales data, marketing spend, and competitor activity. Which type of ML problem is this, and what are some relevant ML algorithms?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462da3-q-2",
+                "year": "2024",
+                "question": "You are tasked with categorizing customer reviews of a hotel into \"positive,\" \"negative,\" or \"neutral.\" Which type of ML problem is this, and what ML techniques could you use?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462da3-q-3",
+                "year": "2024",
+                "question": "Explain how customer segmentation using clustering can lead to business benefits.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462da3-q-4",
+                "year": "2024",
+                "question": "What is the role of Principal Component Analysis (PCA) in data science, and which textbook would be a good resource to understand its mathematical basis?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1351d0cf4804462da3-q-5",
+                "year": "2024",
+                "question": "Give an example of anomaly detection in a real-world scenario.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1351d0cf4804462da4",
+            "title": "Big Data and Data Science. (For visualization the software tools like Tableau, PowerBI, R or Python can be used. For Machine Learning implementation, Python, MATLAB or R can be used.)(Text book-5)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-manufacturing-processes",
+    "code": "PBMET304",
+    "name": "MANUFACTURING PROCESSES",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-manufacturing-processes-01-module-1-general-classification-of-manufacturing-processes",
+        "title": "Module 1: General classification of manufacturing processes",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d4c",
+            "title": "General Classification of Manufacturing Processes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d4d",
+            "title": "Casting-Characteristics of sand, design of patterns, cores, chaplets, solidification of metals and Chvorinov's rule, elements of gating system, risers, chills, numerical problems, defects in castings.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d4e",
+            "title": "Special casting process- Shell moulding, precision investment, die casting, centrifugal casting, continuous casting and squeeze casting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d4f",
+            "title": "Powder Metallurgy- Powder Production, powder characteristics, mixing, compaction methods, sintering.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-manufacturing-processes-02-module-2-welding-classification-fusion-and-solid",
+        "title": "Module 2: Welding classification fusion and solid",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d51",
+            "title": "Welding: Classification, Fusion and Solid-state welding processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d52",
+            "title": "Gas Welding - Oxyacetylene welding-chemistry, types of flame and its applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d53",
+            "title": "Arc welding- applications, process parameters, numerical problems, consumable and non-consumable arc welding, SMAW; GTAW; GMAW; SAW; AHW; PAW.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d54",
+            "title": "Thermit welding, friction welding, electro slag welding, ultrasonic welding, electron beam welding, laser beam welding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d55",
+            "title": "Resistance welding-applications, process parameters, numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d56",
+            "title": "Heat Affected Zone, weldability of ferrous and non-ferrous metals, residual stresses and distortion, defects in welding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d57",
+            "title": "Brazing - soldering - adhesive bonding",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-manufacturing-processes-03-module-3-metal-forming-plastic-deformation-and-yield-criteria-hot-and-cold-worki",
+        "title": "Module 3: Metal forming plastic deformation and yield criteria hot and cold worki",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d59",
+            "title": "Metal Forming: Plastic deformation and yield criteria − hot and cold working processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d5a",
+            "title": "Rolling- Flat-rolling process, rolling force and power, numerical problems, types of rolling mills, rolling defects, miscellaneous rolling processes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d5b",
+            "title": "Sheet metal operations- Press tool operations- Shearing, Tension, Compression, Tension and compression operations, applications, numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d5c",
+            "title": "Types of die-Progressive dies, Compound dies, and Combination dies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-manufacturing-processes-04-module-4-forging",
+        "title": "Module 4: Forging",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462d5e",
+            "title": "Forging-Forging load, numerical problems, Various methods, applications, defects in forging -",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d5f",
+            "title": "Wire, Rod, and tube drawing - mechanics of rod and wire drawing,drawing force and power, numerical problems, drawing defects – Deep drawing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d60",
+            "title": "Bending – Details of bending, Determinatio n of work load, estimation of spring back, numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1351d0cf4804462d61",
+            "title": "Extrusion- Metal flow, mechanics of extrusion, numerical problems, miscellaneous processes, defects in extrusion, applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-materials-testing-lab",
+    "code": "PCMEL308",
+    "name": "MATERIALS TESTING LAB",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-materials-testing-lab-01-module-1-evaluate-the-tensile-properties-of-a-ductile-material-mild-steel-high",
+        "title": "Module 1: Evaluate the tensile properties of a ductile material mild steel high",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e70",
+            "title": "Evaluate the tensile properties of a ductile material (mild steel, high-strength steel, or tor- steel) using a Universal Testing Machine (UTM) equipped with an extensometer.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-02-module-2-conduct-compressions-test-on-a-ductile-material-mild-steel-tor",
+        "title": "Module 2: Conduct compressions test on a ductile material mild steel tor",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e72",
+            "title": "Conduct compressions test on a ductile material (mild steel, tor-steel, or high-strength steel) using a Universal Testing Machine (UTM) equipped with an extensometer.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-03-module-3-determine-the-tensile-properties-of-cast-iron-a-brittle-material-using-",
+        "title": "Module 3: Determine the tensile properties of cast iron a brittle material using ",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e74",
+            "title": "Determine the tensile properties of cast iron (a brittle material) using a Universal Testing Machine (UTM) equipped with an extensometer.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-04-module-4-determine-the-shear-strength-of-a-mild-steel-rod-using-a-shear-test",
+        "title": "Module 4: Determine the shear strength of a mild steel rod using a shear test",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e76",
+            "title": "Determine the shear strength of a mild steel rod using a shear test.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-05-module-5-perform-brinellvickersrockwell-hardness-tests-on-a-given-material",
+        "title": "Module 5: Perform brinellvickersrockwell hardness tests on a given material",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e78",
+            "title": "Perform Brinell/Vickers/Rockwell hardness tests on a given material",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-06-module-6-determine-the-torsional-rigidity-of-mild-steelcopperbrass-rods",
+        "title": "Module 6: Determine the torsional rigidity of mild steelcopperbrass rods",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e7a",
+            "title": "Determine the torsional rigidity of mild steel/copper/brass rods.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-07-module-7-evaluate-the-flexural-stiffness-flexural-rigidity-of-mild-steelcopperbr",
+        "title": "Module 7: Evaluate the flexural stiffness flexural rigidity of mild steelcopperbr",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e7c",
+            "title": "Evaluate the flexural stiffness (flexural rigidity) of mild steel/copper/brass specimens using a three-point bend test on a Universal Testing Machine (UTM)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-08-module-8-determine-the-notch-toughness-of-the-material-at-room-temperature-using",
+        "title": "Module 8: Determine the notch toughness of the material at room temperature using",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e7e",
+            "title": "Determine the notch toughness of the material at room temperature using Izod and Charpy impact testing.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-09-module-9-investigate-the-effect-of-coil-type-close",
+        "title": "Module 9: Investigate the effect of coil type close",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e80",
+            "title": "Investigate the effect of coil type (close-coiled vs. open-coiled) and arrangement (series vs. parallel) on spring stiffness.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-10-module-10-microstructure-of-mild-steelcopper-brassaluminium-using-opticalmicrosc",
+        "title": "Module 10: Microstructure of mild steelcopper brassaluminium using opticalmicrosc",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e82",
+            "title": "Microstructure of mild steel/copper/ brass/aluminium using opticalmicroscope, double disc polishing machine, emery papers and etchant.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-11-module-11-analyse-the-fracture-surface-morphology-of-a-ductile-or-brittle-materi",
+        "title": "Module 11: Analyse the fracture surface morphology of a ductile or brittle materi",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e84",
+            "title": "Analyse the fracture surface morphology of a ductile or brittle material using an optical microscope for fractographic characterisation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-12-module-12-evaluate-the-fracture-toughness-of-a-material-with-a-universal-testing",
+        "title": "Module 12: Evaluate the fracture toughness of a material with a universal testing",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e86",
+            "title": "Evaluate the fracture toughness of a material with a Universal Testing Machine (UTM)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-13-module-13-to-study-the-procedure-for-plotting-s",
+        "title": "Module 13: To study the procedure for plotting s",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e88",
+            "title": "To study the procedure for plotting S-N curve using Fatigue testing machine",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-14-module-14-perform-stress-analysis-using-photoelasticity",
+        "title": "Module 14: Perform stress analysis using photoelasticity",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e8a",
+            "title": "Perform stress analysis using photoelasticity.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-15-module-15-measure-the-deformation-strain-of-an-object-using-strain-gauges",
+        "title": "Module 15: Measure the deformation strain of an object using strain gauges",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e8c",
+            "title": "Measure the deformation (strain) of an object using strain gauges.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-materials-testing-lab-16-module-16-perform-a-bending-test-on-a-wooden-beam-to-assess-its-load",
+        "title": "Module 16: Perform a bending test on a wooden beam to assess its load",
+        "topics": [
+          {
+            "id": "68a3fd1351d0cf4804462e8e",
+            "title": "Perform a bending test on a wooden beam to assess its load-carrying capacity.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-mathematics-for-electrical-science-and-physical-science-3",
+    "code": "GYMAT301",
+    "name": "MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE – 3",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral",
+        "title": "Module 1: Fourier integral",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462c92",
+            "title": "Fourier Integral",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c93",
+            "title": "From Fourier series to Fourier Integral",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c94",
+            "title": "Fourier Cosine and Sine integrals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c95",
+            "title": "Fourier Cosine and Sine Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c96",
+            "title": "Linearity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c97",
+            "title": "Transforms of Derivatives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c98",
+            "title": "Fourier Transform and its inverse",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c99",
+            "title": "Linearity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c9a",
+            "title": "Transforms of Derivative",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function",
+        "title": "Module 2: Complex function",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462c9c",
+            "title": "Complex Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c9d",
+            "title": "Limit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c9e",
+            "title": "Continuity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462c9f",
+            "title": "Derivative",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca0",
+            "title": "Analytic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca1",
+            "title": "Cauchy-Riemann Equations (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca2",
+            "title": "Laplace’s Equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca3",
+            "title": "Harmonic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca4",
+            "title": "Finding harmonic conjugate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca5",
+            "title": "Conformal mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca6",
+            "title": "Mappings of w= 𝑧2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca7",
+            "title": "𝑤=𝑒𝑧",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca8",
+            "title": "w=",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ca9",
+            "title": " 𝑤= 𝑠𝑖𝑛𝑧",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-line-integrals-in-the-complex-plane-definition-basi",
+        "title": "Module 3: Complex integration line integrals in the complex plane definition basi",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462cab",
+            "title": "Complex Integration: Line integrals in the complex plane (Definition & Basic properties)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cac",
+            "title": "First evaluation method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cad",
+            "title": "Second evaluation method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cae",
+            "title": "Cauchy’s integral theorem (without proof) on simply connected domain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462caf",
+            "title": "Independence of path",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb0",
+            "title": "Cauchy integral theorem on multiply connected domain (without proof)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1251d0cf4804462cb0-q-1",
+                "year": "2024",
+                "question": "Let $f(z) = e^z$. Consider the domain $D$ which is the region between the circle $C_0: |z|=3$ (outer boundary) and the circle $C_1: |z|=1$ (inner boundary). Evaluate $\\oint_{C_0} f(z) dz$ and $\\oint_{C_1} f(z) dz$, assuming both are traversed counterclockwise. State how Cauchy's Integral Theorem for multiply connected domains applies here.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1251d0cf4804462cb0-q-2",
+                "year": "2024",
+                "question": "Let $f(z) = \\frac{1}{z-2}$. Consider the region between the circle $C_0: |z|=1$ and the circle $C_1: |z|=3$.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1251d0cf4804462cb0-q-3",
+                "year": "2024",
+                "question": "Let $f(z) = z^3 + 2z$. Consider the domain $D$ which is the region between the circle $C_0: |z|=2$ (outer) and the union of two disjoint circles $C_1: |z-1|=0.5$ and $C_2: |z+1|=0.5$ (inner). Let $C_0$ be traversed counterclockwise, and $C_1$ and $C_2$ be traversed counterclockwise. What is the relationship between the integrals $\\oint_{C_0} f(z) dz$, $\\oint_{C_1} f(z) dz$, and $\\oint_{C_2} f(z) dz$?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb1",
+            "title": "Cauchy Integral formula (without proof)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series",
+        "title": "Module 4: Taylor series and maclaurin series",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462cb3",
+            "title": "Taylor series and Maclaurin series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb4",
+            "title": "Laurent series (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb5",
+            "title": "Singularities and Zeros – Isolated Singularity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb6",
+            "title": "Poles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb7",
+            "title": "Essential Singularities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb8",
+            "title": "Removable singularities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cb9",
+            "title": "Zeros of Analytic functions – Poles and Zeros",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cba",
+            "title": "Formulas for Residues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cbb",
+            "title": "Residue theorem (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cbc",
+            "title": "Residue Integration- Integral of Rational Functions of cosθ and sinθ",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-3-mechanics-of-solids",
+    "code": "PCMET302",
+    "name": "MECHANICS OF SOLIDS",
+    "branchId": "me",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "me-3-mechanics-of-solids-01-module-1-introduction-to-analysis-of-deformable-bodies",
+        "title": "Module 1: Introduction to analysis of deformable bodies",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462cec",
+            "title": "Introduction to analysis of deformable bodies.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462ced",
+            "title": "Types of external loads -",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cee",
+            "title": "Hooke’s law - Stress-Strain diagrams - concepts of Isotropy, Orthotropy,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cef",
+            "title": "Young’s Modulus, Bulk Modulus and Rigidity Modulus.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cf0",
+            "title": "Poisson’s ratio - Relationship between elastic constants.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cf1",
+            "title": "Deformation in axially loaded bars –uniform cross section, varying cross",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cf2",
+            "title": "Thermal effects – simple, composite bars.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-mechanics-of-solids-02-module-2-torsion-shafts",
+        "title": "Module 2: Torsion shafts",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462cf4",
+            "title": "Torsion: Shafts - torsion theory of elastic circular bars – assumptions and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cf5",
+            "title": "Beams- Classification - Diagrammatic conventions for supports and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cf6",
+            "title": "Point of",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-mechanics-of-solids-03-module-3-stresses-in-beams-pure-bending-flexure-formula-for-beams",
+        "title": "Module 3: Stresses in beams pure bending flexure formula for beams",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462cf8",
+            "title": "Stresses in Beams: Pure Bending – Flexure formula for beams -",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cf9",
+            "title": "Deflection of Beams: Moment-Curvature relation – assumptions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-3-mechanics-of-solids-04-module-4-stress-on-an-inclined-plane-due-to-uniaxial-stress",
+        "title": "Module 4: Stress on an inclined plane due to uniaxial stress",
+        "topics": [
+          {
+            "id": "68a3fd1251d0cf4804462cfb",
+            "title": "Stress on an inclined plane due to Uniaxial stress- Stress on an inclined",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cfc",
+            "title": "Mohr’s circle of stress.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1251d0cf4804462cfd",
+            "title": "Buckling and stability of long columns-Euler’s buckling/crippling load for",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,3376 @@
+[
+  {
+    "id": "ee-4-computer-organization",
+    "code": "PEEET416",
+    "name": "COMPUTER ORGANIZATION",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-computer-organization-01-module-1-basic-structure-of-computers-functional-units",
+        "title": "Module 1: Basic structure of computers functional units",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f50",
+            "title": "Basic Structure of computers –functional units - basic operational concepts - bus structures.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f51",
+            "title": "Memory locations and addresses -memory operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f52",
+            "title": "Instructions and instruction sequencing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f53",
+            "title": "addressing modes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f54",
+            "title": "Basic processing unit – fundamental concepts – instruction cycle – execution of a complete instruction -single bus and multiple bus organization.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-computer-organization-02-module-2-register-transfer-logic-inter-register-transfer-arithmetic-logic-and-sh",
+        "title": "Module 2: Register transfer logic inter register transfer arithmetic logic and sh",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f56",
+            "title": "Register transfer logic: Inter register transfer – arithmetic, logic and shift micro-operations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f57",
+            "title": "Processor logic design: - processor organization – Arithmetic logic unit - design of arithmetic circuit - design of logic circuit – Design of arithmetic logic unit - status register – design of shifter - processor unit – design of accumulator(Basic Concept Only).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-computer-organization-03-module-3-control-logic-design-hardwired-control",
+        "title": "Module 3: Control logic design hardwired control",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f59",
+            "title": "Control Logic Design: Hardwired control-microprogrammed control- Microinstructions, Microprogram Sequencing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f5a",
+            "title": "Arithmetic algorithms: Signed-Operand multiplication, Booth Algorithm, fast multiplication-bit pair recoding of multipliers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f5b",
+            "title": "Pipelining: Basic principles , classification of pipeline processors, instruction and arithmetic pipelines (Design examples not required), hazard detection and resolution.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-computer-organization-04-module-4-memory-system-types-of-memory-concepts-only-virtual-memory-content-addr",
+        "title": "Module 4: Memory system types of memory concepts only virtual memory content addr",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f5d",
+            "title": "Memory system: Types of memory( Concepts only), Virtual memory , Content addressable memory, cache memories - mapping functions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f5e",
+            "title": "I/O organization: Characteristics of I/O devices, Data transfer schemes - Programmed controlled I/O transfer, Interrupt controlled I/O transfer.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f5f",
+            "title": "Organization of interrupts - vectored interrupts – Servicing of multiple input/output devices – Polling and daisy chaining schemes. Direct memory accessing (DMA)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-dc-machines-transformers-lab",
+    "code": "PCEEL407",
+    "name": "DC MACHINES & TRANSFORMERS LAB",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-dc-machines-transformers-lab-01-module-1-open-circuit-characteristics-of-dc-shunt-generator-co1",
+        "title": "Module 1: Open circuit characteristics of dc shunt generator co1",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360a2",
+            "title": "Open circuit characteristics of DC shunt generator (CO1)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360a3",
+            "title": "Predetermine the OCC at different speeds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360a4",
+            "title": "Determine the critical field resistance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360a5",
+            "title": "Determine the maximum voltage built up with given shunt field resistance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360a6",
+            "title": "Determine the critical speed for a given shunt field resistance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-02-module-2-load-test-on-dc-shunt-generator-co1",
+        "title": "Module 2: Load test on dc shunt generator co1",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360a8",
+            "title": "Load test on DC shunt generator (CO1)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360a9",
+            "title": "Determine the external and internal characteristics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-03-module-3-brake-test-on-dc-shunt-motor-co2",
+        "title": "Module 3: Brake test on dc shunt motor co2",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360ab",
+            "title": "Brake test on DC shunt motor (CO2)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360ac",
+            "title": "Plot the following characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360ad",
+            "title": "Performance characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360ae",
+            "title": "Electrical characteristics",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f360ae-q-1",
+                "year": "2024",
+                "question": "A DC shunt motor has a lever arm of 0.3 m. During a brake test, the spring balance reads 30 N and the motor speed is 1200 RPM. Calculate the shaft torque and output power (in Watts) if the input voltage is 230 V and input current is 5 A.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360ae-q-2",
+                "year": "2024",
+                "question": "Explain why the speed of a DC shunt motor decreases slightly with an increase in load. Refer to the relevant equations.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360ae-q-3",
+                "year": "2024",
+                "question": "What are the typical losses in a DC motor, and how do they affect the efficiency curve?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360ae-q-4",
+                "year": "2024",
+                "question": "Sketch the expected shapes of the following characteristics for a DC shunt motor and briefly explain why:",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f360af",
+            "title": "Mechanical characteristics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-04-module-4-brake-test-on-dc-series-motor-co2",
+        "title": "Module 4: Brake test on dc series motor co2",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360b1",
+            "title": "Brake test on DC series motor (CO2)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f360b1-q-1",
+                "year": "2024",
+                "question": "Why is a DC series motor not started on no-load?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360b1-q-2",
+                "year": "2024",
+                "question": "What is the relationship between torque and armature current for a DC series motor?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360b1-q-3",
+                "year": "2024",
+                "question": "Describe the torque-speed characteristic of a DC series motor.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360b1-q-4",
+                "year": "2024",
+                "question": "If the brake drum diameter is 0.2 m and the spring balance reads 50 N, what is the shaft torque developed by the motor?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360b1-q-5",
+                "year": "2024",
+                "question": "What are the primary applications of DC series motors, and why?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f360b1-q-6",
+                "year": "2024",
+                "question": "How do you calculate the efficiency of the motor during the brake test?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f360b2",
+            "title": "Plot the following characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360b3",
+            "title": "Performance characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360b4",
+            "title": "Electrical characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360b5",
+            "title": "Mechanical characteristics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-05-module-5-load-test-on-dc-compound-generator-co1",
+        "title": "Module 5: Load test on dc compound generator co1",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360b7",
+            "title": "Load test on DC compound generator (CO1)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360b8",
+            "title": "Plot the load characteristics when cumulatively compounded",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360b9",
+            "title": "Plot the load characteristics when differentially compounded",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-06-module-6-swinburnes-test-on-a-dc-shunt-machine-co3",
+        "title": "Module 6: Swinburnes test on a dc shunt machine co3",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360bb",
+            "title": "Swinburne’s test on a DC shunt machine (CO3)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360bc",
+            "title": "Predetermine the efficiency while DC machine is acting as generator and motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360bd",
+            "title": "Plot the efficiency curves while DC machine is acting as generator and motor",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-07-module-7-hopkinsons-test-on-a-pair-of-dc-machines-co3",
+        "title": "Module 7: Hopkinsons test on a pair of dc machines co3",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360bf",
+            "title": "Hopkinson’s test on a pair of DC machines (CO3)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360c0",
+            "title": "Determine the efficiency the DC machine while working as a motor and generator under various load conditions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-08-module-8-retardation-test-on-a-dc-machine-co3",
+        "title": "Module 8: Retardation test on a dc machine co3",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360c2",
+            "title": "Retardation test on a DC machine (CO3)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360c3",
+            "title": "Separate the hysteresis, eddy current, friction and windage losses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360c4",
+            "title": "Find the moment of inertia of the rotating system",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-09-module-9-separation-of-losses-in-a-dc-shunt-motor-co3",
+        "title": "Module 9: Separation of losses in a dc shunt motor co3",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360c6",
+            "title": "Separation of losses in a DC shunt motor (CO3)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360c7",
+            "title": "Separate the hysteresis, eddy current, friction and windage losses by conducting no-load tests at different excitations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-10-module-10-oc-and-sc-tests-on-single",
+        "title": "Module 10: Oc and sc tests on single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360c9",
+            "title": "OC and SC tests on single-phase transformer (CO4)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360ca",
+            "title": "Predetermine the voltage regulation and efficiency at different loads and power factors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360cb",
+            "title": "Determine the equivalent circuit referred to LV side and HV side",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360cc",
+            "title": "Plot the voltage regulation vs power factor curves at full-load and half full-load.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360cd",
+            "title": "Plot the efficiency curve at unity p.f. and 0.5 p.f.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360ce",
+            "title": "Determine the power factor at which the voltage regulation is zero",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360cf",
+            "title": "Determine the load at which maximum efficiency occurs and the maximum efficiency.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-11-module-11-load-test-on-single",
+        "title": "Module 11: Load test on single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360d1",
+            "title": "Load test on single-phase transformer (CO4)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360d2",
+            "title": "Determine the voltage regulation and efficiency at different loads and at unity power factor.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-12-module-12-separation-of-losses-in-a-single",
+        "title": "Module 12: Separation of losses in a single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360d4",
+            "title": "Separation of losses in a single-phase transformer (CO4)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360d5",
+            "title": "Separate the hysteresis and eddy current losses using voltage and frequency control.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360d6",
+            "title": "Plot losses Vs frequency curves at normal voltage and different frequencies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360d7",
+            "title": "Plot losses Vs frequency curves at different frequencies keeping V/f constant",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-13-module-13-sumpners-test-co4",
+        "title": "Module 13: Sumpners test co4",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360d9",
+            "title": "Sumpner’s test (CO4)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360da",
+            "title": "Predetermine the voltage regulation and efficiency at different loads (full-load and half full-load) and power factors (unity, 0.8 lag and lead)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360db",
+            "title": "Determine the equivalent circuit referred to LV side and HV side",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-14-module-14-parallel-operation-of-two-dissimilar-single",
+        "title": "Module 14: Parallel operation of two dissimilar single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360dd",
+            "title": "Parallel operation of two dissimilar single-phase transformers (CO4)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360de",
+            "title": "Determine the load sharing while two dissimilar transformers are operating in parallel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360df",
+            "title": "Verify the load sharing by using the impedances of the two transformers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-15-module-15-oc-and-sc-tests-on-3",
+        "title": "Module 15: Oc and sc tests on 3",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360e1",
+            "title": "OC and SC tests on 3-phase transformer (CO5)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360e2",
+            "title": "Predetermine the voltage regulation and efficiency at different loads (full-load and half full-load) and power factors (unity, 0.8 lag and lead)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360e3",
+            "title": "Determine the per phase equivalent circuit",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-dc-machines-transformers-lab-16-module-16-scott-connections-co4",
+        "title": "Module 16: Scott connections co4",
+        "topics": [
+          {
+            "id": "68a200852b85456187f360e5",
+            "title": "Scott Connections (CO4)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f360e6",
+            "title": "Convert 3-phase AC supply into 2-phase AC by means of Scott connection and to conduct the load test for finding the performance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-digital-electronics",
+    "code": "PBEET404",
+    "name": "DIGITAL ELECTRONICS",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii",
+        "title": "Module 1: Number systems and codes binary octal and hexadecimal conversions ascii",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e49",
+            "title": "Number Systems and Codes – binary, octal and hexadecimal – conversions – ASCII code, Excess – 3 code, Gray code, BCD code Signed numbers – 1’s complement and 2’s complement – addition and subtraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e4a",
+            "title": "Basic logic gates – universal gates – TTL – CMOS – Internal diagram of TTL NAND gate and CMOS NOR gate – comparison of CMOS and TTL performance.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e4b",
+            "title": "Boolean laws and theorems – Sum of products and Product of sums forms – K map representation and simplification (up to four variables) – pairs, quads, octets – don’t care conditions.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-digital-electronics-02-module-2-combinational-circuits-half-adder-and-full-adder-half-subtractor-and-fu",
+        "title": "Module 2: Combinational circuits half adder and full adder half subtractor and fu",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e4d",
+            "title": "Combinational circuits – half adder and full adder, half subtractor and full subtractor – 4-bit parallel binary adder/subtractor.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e4e",
+            "title": "Comparators – parity generators and checkers – encoders – decoders – BCD to seven segment decoder.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e4f",
+            "title": "Multiplexers – implementation of boolean expressions using multiplexers – demultiplexers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-digital-electronics-03-module-3-flip",
+        "title": "Module 3: Flip",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e51",
+            "title": "Flip-Flops – SR, JK, D and T flip-flops – characteristic table and excitation table – JK Master Slave Flip-flop – Conversion of flip- flops – SR to JK and JK to SR only.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e52",
+            "title": "Up/Down counters – asynchronous counters – mod-6 and mod-10 counters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e53",
+            "title": "Synchronous counters – design of synchronous counters – Ring counter – Johnson Counter.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e54",
+            "title": "Shift registers - SISO, SIPO, PISO, PIPO.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-digital-electronics-04-module-4-state-machines-state-transition-diagram-moore-and-mealy-machines",
+        "title": "Module 4: State machines state transition diagram moore and mealy machines",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e56",
+            "title": "State Machines – state transition diagram – Moore and Mealy machines.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e57",
+            "title": "Digital to Analog converter –weighted resistor type, R-2R Ladder type.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e58",
+            "title": "Analog to Digital Converter – flash type, successive approximation type.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e59",
+            "title": "Introduction to Verilog – Implementation of AND, OR, half adder and full adder.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-economics-for-engineers",
+    "code": "UCHUT346",
+    "name": "ECONOMICS FOR ENGINEERS",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-economics-for-engineers-01-module-1-basic-economics-concepts",
+        "title": "Module 1: Basic economics concepts",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36032",
+            "title": "Basic Economics Concepts - Basic economic problems – Production Possibility Curve – Utility – Law of diminishing marginal utility – Law of Demand - Law of supply – Elasticity - measurement of elasticity and its applications – Equilibrium- Changes in demand and supply and its effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36033",
+            "title": "Production function - Law of variable proportion – Economies of Scale – Internal and External Economies – Cobb-Douglas Production Function",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost-explicit-and-implicit-cost-sunk-",
+        "title": "Module 2: Cost concepts social cost private cost explicit and implicit cost sunk ",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36035",
+            "title": "Cost concepts – Social cost, private cost – Explicit and implicit cost – Sunk cost - Opportunity cost - short run cost curves - Revenue concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36036",
+            "title": "Firms and their objectives – Types of firms – Markets - Perfect Competition – Monopoly - Monopolistic Competition - Oligopoly (features and  equilibrium of a firm)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-economics-for-engineers-03-module-3-monetary-system-money-functions",
+        "title": "Module 3: Monetary system money functions",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36038",
+            "title": "Monetary System – Money – Functions - Central Banking –Inflation - Causes and Effects – Measures to Control Inflation - Monetary and Fiscal policies – Deflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36039",
+            "title": "Taxation – Direct and Indirect taxes (merits and demerits) - GST",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3603a",
+            "title": "National income – Concepts - Circular Flow – Methods of Estimation and Difficulties - Stock Market – Functions- Problems faced by the Indian stock market-Demat Account and Trading Account – Stock market Indicators- SENSEX and NIFTY",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-economics-for-engineers-04-module-4-value-analysis-and-value-engineering",
+        "title": "Module 4: Value analysis and value engineering",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3603c",
+            "title": "Value Analysis and value Engineering - Cost Value, Exchange Value, Use Value, Esteem Value - Aims, Advantages and Application areas of Value Engineering - Value Engineering Procedure - Break-even Analysis - Cost- Benefit Analysis - Capital Budgeting - Process planning",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-electronic-instrumentation",
+    "code": "PEEET411",
+    "name": "ELECTRONIC INSTRUMENTATION",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me",
+        "title": "Module 1: Functional elements of electronic instrumentation system calibration me",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e6e",
+            "title": "Functional elements of electronic instrumentation system – Calibration methods: Static, Dynamic, Field, Traceable, Master.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e6f",
+            "title": "Transducers- Classification-Criteria for selection- Static and dynamic characteristics- Zeroth and first order instruments and time responses.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e70",
+            "title": "Resistive transducers for liquid level and humidity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e71",
+            "title": "Inductive transducers- types and basic principles- LVDT- synchro",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e72",
+            "title": "Capacitive transducers- types and basic principles- Thickness measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e73",
+            "title": "Piezoelectric transducers- Hall effect transducers-Basic principle and applications",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35e73-q-1",
+                "year": "2024",
+                "question": "Differentiate between static and dynamic calibration, providing an example of an instrument that would typically undergo each.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-2",
+                "year": "2024",
+                "question": "What is the primary purpose of traceable calibration?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-3",
+                "year": "2024",
+                "question": "Explain the role of a \"master calibration\" in a calibration hierarchy.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-4",
+                "year": "2024",
+                "question": "Describe the fundamental principle of the piezoelectric effect.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-5",
+                "year": "2024",
+                "question": "Why are piezoelectric transducers generally not suitable for measuring static pressure?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-6",
+                "year": "2024",
+                "question": "List three common applications of piezoelectric transducers.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-7",
+                "year": "2024",
+                "question": "State the Hall effect principle.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-8",
+                "year": "2024",
+                "question": "How can a Hall effect transducer be used to measure electric current without direct electrical contact?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e73-q-9",
+                "year": "2024",
+                "question": "Name a semiconductor material commonly used in Hall effect sensors and explain why semiconductors are preferred over metals for this application.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35e74",
+            "title": "Electronic IC for sensor applications, Micro Electromechanical system (MEMS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e75",
+            "title": "Advantages and Applications, MEMS micro sensors and actuators,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e76",
+            "title": "MEMS accelerometers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv",
+        "title": "Module 2: Signal conditioning for instrumentation systems voltage to current conv",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e78",
+            "title": "Signal conditioning for instrumentation systems: Voltage to Current Converter, Transducer bridges: null type and deflection bridges, AC bridges using push pull transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e79",
+            "title": "Amplifiers: Instrumentation amplifiers- charge amplifiers- isolation amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e7a",
+            "title": "Role of filters: Low pass, high pass, band pass and band rejection filters, Introduction to digital filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e7b",
+            "title": "Data Transmission- Types of Telemetry System- Modulation methods: Pulse modulation, Pulse amplitude modulation, Pulse code modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e7c",
+            "title": "General telemetry systems- Cable transmission of analog and digital data- Fibre optic data transmission",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e7d",
+            "title": "Principles of time division and frequency division multiplexing-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e7e",
+            "title": "Radio-wireless communication, WLAN architecture. Protocols: Field Bus, Profibus , HART",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35e7e-q-1",
+                "year": "2024",
+                "question": "Explain the primary advantages of using a Voltage-to-Current (V/I) converter for signal transmission in industrial environments. (CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e7e-q-2",
+                "year": "2024",
+                "question": "Describe the working principle of a Wheatstone bridge used in a null-type measurement. If a strain gauge with an unstrained resistance of $120 \\, \\Omega$ and a gauge factor of 2 is used, and it experiences a strain of $1000 \\, \\mu\\epsilon$, what would be the approximate change in resistance? (CO1, CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e7e-q-3",
+                "year": "2024",
+                "question": "Differentiate between null type and deflection type bridges. For what kind of application would a deflection type bridge be preferred? (CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e7e-q-4",
+                "year": "2024",
+                "question": "What is the role of an Access Point (AP) in a WLAN infrastructure mode? (CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e7e-q-5",
+                "year": "2024",
+                "question": "List two key IEEE 802.11 standards and briefly describe their main characteristics. (CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e7e-q-6",
+                "year": "2024",
+                "question": "What are the main benefits of using a Field Bus protocol like PROFIBUS DP compared to traditional analog 4-20mA instrumentation? (CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e7e-q-7",
+                "year": "2024",
+                "question": "Explain how the HART protocol allows for digital communication over a 4-20mA loop. (CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e7e-q-8",
+                "year": "2024",
+                "question": "For a process control application in a hazardous area (e.g., a refinery), which PROFIBUS variant would typically be used, and why? (CO3)",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-4-electronic-instrumentation-03-module-3-display-methods-and-devices-different-types-of-display-display-system-b",
+        "title": "Module 3: Display methods and devices different types of display display system b",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e80",
+            "title": "Display methods and devices: Different types of display –display system building blocks.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e81",
+            "title": "Data Presentation Element: Recorders-Strip Chart Recorder,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e82",
+            "title": "Potentiometric Recorder, X-Y Recorder. Magnetic recorder, Digital recorders- Data logger",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e83",
+            "title": "Experiments and statistical analysis: Performance of experiment-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e84",
+            "title": "characteristics of experimental data- description of dispensed data- type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e85",
+            "title": "of probability distribution-probability error",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-electronic-instrumentation-04-module-4-introduction-to-process-control",
+        "title": "Module 4: Introduction to process control",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e87",
+            "title": "Introduction to Process Control - Block diagram of the process control loop.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e88",
+            "title": "Analog and Digital DAS:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e89",
+            "title": "Programmable logic controllers (PLC), Organization- Hardware details-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e8a",
+            "title": "I/O- Power supply- CPU- Standards Programming aspects- Ladder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e8b",
+            "title": "programming- realization of AND, OR, NAND, NOR and XOR logic,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e8c",
+            "title": "the concept of latching, Introduction to Timer/Counters, Numerical",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e8d",
+            "title": "Exercises based on Timers and Counters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e8e",
+            "title": "SCADA and DCS systems:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e8f",
+            "title": "SCADA: Introduction, SCADA Architecture, Common System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e90",
+            "title": "Components,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e91",
+            "title": "Supervision and Control, HMI, RTU and Supervisory Stations,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e92",
+            "title": "Protocols-IEC 60870-5-101 and DNP3.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e93",
+            "title": "Distributed Control System: Introduction, DCS Architecture, Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e94",
+            "title": "modes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-illumination-technology",
+    "code": "PEEET418",
+    "name": "ILLUMINATION TECHNOLOGY",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-illumination-technology-01-module-1-introduction-to-light-electromagnetic-radiation-visible-spectrum-human-",
+        "title": "Module 1: Introduction to light electromagnetic radiation visible spectrum human ",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35fda",
+            "title": "Introduction to Light: Electromagnetic radiation, Visible spectrum, Human eye and light perception, Visible light production by black body radiation and emission spectrum, Day lighting, Artificial lighting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fdb",
+            "title": "Qualities of good lighting, Factor affecting the lighting – Glare (Discomfort and disability glare), Visual comfort probability (VCP) and Unified glare rating (UGR) to measure glare, Shadow, Colour rendering and Colour rendering index (CRI), Stroboscopic effect and method to reduce it.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fdc",
+            "title": "Methods of artificial lighting schemes – Direct, indirect, semi -direct, semi- indirect and diffused lighting, General lighting and task lighting, Areas of usage of such lighting schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fdd",
+            "title": "Definition of lamp and luminaire, Working of Incandescent and Halogen lamps, fluorescent lamps, Vapour lamps (LPSV, HPSV, Mercury), metal halide lamps, LED lamps.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-illumination-technology-02-module-2-measurements-of-light-definitions-and-units-luminous-flux-lumen-luminou",
+        "title": "Module 2: Measurements of light definitions and units luminous flux lumen luminou",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35fdf",
+            "title": "Measurements of Light : Definitions and units – Luminous flux & Lumen, luminous intensity & Candela, illuminance& Lux, Luminance &Candela/m2, luminous efficacy, colour temperature, Candle power.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fe0",
+            "title": "M.H.C.P., M.S.C.P. and M.H.S.C.P. of lamp, Efficiency of a lamp, Concept of CIE 1931 colour space",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fe1",
+            "title": "Laws of illumination – Inverse square law of illumination, Lambert’s cosine law of illumination, Numerical problems based of laws of illumination, Practical application of the laws, Polar curve in illumination, Rousseau’s construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fe2",
+            "title": "Calculation of luminance and illumination in case of linear source, round source and flat source. Measuring apparatus- Goniophotometer, Integrating sphere, luxmeter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-illumination-technology-03-module-3-design-of-interior-lighting-definitions-of-maintenance-factor-uniformit",
+        "title": "Module 3: Design of interior lighting definitions of maintenance factor uniformit",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35fe4",
+            "title": "Design of Interior Lighting: Definitions of maintenance factor, Uniformity ratio, Direct ratio, Coefficients of utilisation and factors affecting it, Illumination required for various work planes, Types of fixtures and relative terms used for interior illumination such as DLOR and ULOR, Selection of lamp and luminance, Selection of utilisation factor, reflection factor and maintenance factor.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fe5",
+            "title": "Calculation of wattage of each lamp and no of lamps needed, Layout of lamp luminaire, Calculation of space to mounting height ratio, Indian standard recommendation and standard practices for illumination levels in various areas, Numerical problems from design of interior lighting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fe6",
+            "title": "Installation aspects for lighting (mechanical and electrical) Special feature for entrance, staircase, corridor lighting, industrial building and hospital lighting, Emergency lighting, Lighting maintenance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-illumination-technology-04-module-4-design-of-outdoor-lighting-street-lighting",
+        "title": "Module 4: Design of outdoor lighting street lighting",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35fe8",
+            "title": "Design of Outdoor Lighting: Street Lighting - Types of street and their level of illumination required, Terms related to street lighting, Types of fixtures used and their suitable application, Various arrangements in street lighting, Requirements of good street lighting , Selection of lamp and luminaire, Calculation of illumination level available on road.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fe9",
+            "title": "Flood Lighting: Terms related to flood lighting, Types of fixtures and their suitable applications, Selection of lamp and projector, recommended method for aiming of lamp, Calculation of their wattage and number and their arrangement.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fea",
+            "title": "Tunnel lighting zones and schemes, Special Features of aesthetic lighting - decorative lighting of monuments, parks and streets, Safety considerations in public lighting, Sports lighting, lighting for hazardous area.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35feb",
+            "title": "Energy efficient lighting systems strategies and controls like dimmers, motion and occupancy sensors, photo sensors and timers. Introduction to software used for lighting design, DIALux and Relux(Self study)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-mathematics-for-electrical-science-4",
+    "code": "GBMAT401",
+    "name": "MATHEMATICS FOR ELECTRICAL SCIENCE– 4",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-mathematics-for-electrical-science-4-01-module-1-random-variables",
+        "title": "Module 1: Random variables",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35d90",
+            "title": "Random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d91",
+            "title": "Discrete random variables and their probability distributions",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35d91-q-1",
+                "year": "2024",
+                "question": "A technician is responsible for debugging a new software module. The probability of finding a bug in any given hour of work is 0.3. If the technician works for 4 hours, and each hour is independent, what is the probability that they find exactly 2 bugs?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35d91-q-2",
+                "year": "2024",
+                "question": "In a manufacturing process for integrated circuits, the average number of defects per wafer is 5. Assuming the number of defects follows a Poisson distribution, what is the probability that a randomly selected wafer has no defects?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35d91-q-3",
+                "year": "2024",
+                "question": "A fair six-sided die is rolled repeatedly. Let $Y$ be the number of rolls required to obtain the first '6'.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35d92",
+            "title": "Cumulative distribution function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d93",
+            "title": "Expectation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d94",
+            "title": "Mean and variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d95",
+            "title": "Binomial distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d96",
+            "title": "Poisson distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d97",
+            "title": "Poisson distribution as a limit of the binomial distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d98",
+            "title": "Joint pmf of two discrete random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d99",
+            "title": "Marginal pmf",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35d99-q-1",
+                "year": "2024",
+                "question": "Two dice are rolled, and their outcomes are recorded. Let $X$ be the number on the first die and $Y$ be the number on the second die. The joint pmf is given by $p_{X,Y}(x, y) = \\frac{1}{36}$ for $x, y \\in \\{1, 2, 3, 4, 5, 6\\}$.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35d99-q-2",
+                "year": "2024",
+                "question": "Consider a system with two components. Let $X$ be the number of failures in the first component in a day (0, 1, or 2) and $Y$ be the number of failures in the second component in a day (0 or 1). Their joint pmf is given by the following table:",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35d99-q-3",
+                "year": "2024",
+                "question": "Let $X$ and $Y$ be discrete random variables with joint pmf $p_{X,Y}(x, y) = c \\cdot (x+y)$ for $x, y \\in \\{1, 2\\}$. Find the value of $c$ and then determine the marginal pmfs of $X$ and $Y$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35d9a",
+            "title": "Independent random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d9b",
+            "title": "Expected value of a function of two discrete variables.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions",
+        "title": "Module 2: Continuous random variables and their probability distributions",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35d9d",
+            "title": "Continuous random variables and their probability distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d9e",
+            "title": "Cumulative distribution function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35d9f",
+            "title": "Expectation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da0",
+            "title": "Mean and variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da1",
+            "title": "Uniform, Normal and Exponential distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da2",
+            "title": "Joint pdf of two Continuous random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da3",
+            "title": "Marginal pdf",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da4",
+            "title": "Independent random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da5",
+            "title": "Expectation value of a function of two continuous variables.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-mathematics-for-electrical-science-4-03-module-3-confidence-intervals",
+        "title": "Module 3: Confidence intervals",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35da7",
+            "title": "Confidence Intervals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da8",
+            "title": "Confidence Level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35da9",
+            "title": "Confidence Intervals and One-side confidence intervals for a Population Mean for large and small samples (normal distribution and t-distribution)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35da9-q-1",
+                "year": "2024",
+                "question": "A researcher measures the inductance of a coil and obtains the following values (in mH): 15.2, 16.1, 15.5, 15.8, 16.3, 15.9.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35da9-q-2",
+                "year": "2024",
+                "question": "A power utility company monitors the voltage of electricity supplied. A sample of 64 readings shows a mean voltage of 238.5 V with a population standard deviation of 5.0 V.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35da9-q-3",
+                "year": "2024",
+                "question": "An engineer needs to estimate the mean thermal conductivity of a new composite material. She wants a margin of error of 0.5 W/(m·K) with 95% confidence. Previous research suggests the standard deviation is around 4.0 W/(m·K). How many samples are needed?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35da9-q-4",
+                "year": "2024",
+                "question": "A manufacturing process for optical fibers aims for a mean tensile strength of at least 3.0 GPa. A sample of 15 fibers yields a mean tensile strength of 2.8 GPa with a sample standard deviation of 0.3 GPa. Construct a 90% *lower* confidence bound for the mean tensile strength. Can the manufacturer be 90% confident that the process meets its target?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35daa",
+            "title": "Hypotheses and Test Procedures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dab",
+            "title": "Type I and Type II error",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dac",
+            "title": "z Tests for Hypotheses about a Population Mean (for large sample)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dad",
+            "title": "t Test for Hypotheses about a Population Mean (for small sample)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dae",
+            "title": "Tests concerning a population proportion for large and small samples.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-mathematics-for-electrical-science-4-04-module-4-random-process-concept",
+        "title": "Module 4: Random process concept",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35db0",
+            "title": "Random process concept",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db1",
+            "title": "classification of process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db2",
+            "title": "Methods of Description of Random process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db3",
+            "title": "Special classes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db4",
+            "title": "Average Values of Random Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db5",
+            "title": "Stationarity- SSS, WSS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db6",
+            "title": "Autocorrelation functions and its properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db7",
+            "title": "Ergodicity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db8",
+            "title": "Mean-Ergodic Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35db9",
+            "title": "Mean-Ergodic Theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dba",
+            "title": "Correlation Ergodic Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dbb",
+            "title": "Distribution Ergodic Process.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-mathematics-for-machine-learning",
+    "code": "PEEET413",
+    "name": "MATHEMATICS FOR MACHINE LEARNING",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-mathematics-for-machine-learning-01-module-1-linear-algebra-systems-of-linear-equations-matrices-solving-systems-of-",
+        "title": "Module 1: Linear algebra systems of linear equations matrices solving systems of ",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35ee8",
+            "title": "LINEAR ALGEBRA: Systems of Linear Equations – Matrices, Solving Systems of Linear Equations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ee9",
+            "title": "Vector Spaces –Vector Spaces, Linear Independence, Basis and Rank.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35eea",
+            "title": "Linear Mappings – Matrix Representation of Linear Mappings, Basis Change, Image and Kernel.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an",
+        "title": "Module 2: Analytic geometry matrix decompositions norms inner products lengths an",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35eec",
+            "title": "ANALYTIC GEOMETRY, MATRIX DECOMPOSITIONS: Norms, Inner Products, Lengths and Distances, Angles and Orthogonality, Orthonormal Basis, Orthogonal Complement, Orthogonal Projections – Projection into One Dimensional Subspaces, Projection onto General Subspaces, Gram-Schmidt Orthogonalization.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35eed",
+            "title": "Determinant and Trace, Eigenvalues and Eigenvectors, Cholesky",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35eee",
+            "title": "Decomposition, Eigen decomposition and Diagonalization, Singular Value Decomposition, Matrix Approximation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions",
+        "title": "Module 3: Vector calculus differentiation of univariate functions",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35ef0",
+            "title": "VECTOR CALCULUS: Differentiation of Univariate Functions - Partial Differentiation and Gradients, Gradients of Vector Valued Functions, Gradients of Matrices, Useful Identities for Computing Gradients.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ef1",
+            "title": "Back propagation and Automatic Differentiation – Gradients in Deep Network, Automatic Differentiation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ef2",
+            "title": "Higher Order Derivatives- Linearization and Multivariate Taylor Series.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space",
+        "title": "Module 4: Probability and distributions construction of a probability space",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35ef4",
+            "title": "Probability and Distributions: Construction of a Probability Space - Discrete and Continuous Probabilities, Bayes’ Theorem.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ef5",
+            "title": "Summary Statistics and Independence – Gaussian Distribution - Conjugacy and the Exponential Family - Change of Variables/Inverse Transform.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ef6",
+            "title": "Optimization: Optimization Using Gradient Descent - Gradient Descent With Momentum.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ef7",
+            "title": "Constrained Optimization and Lagrange Multipliers - Convex Optimization - Linear Programming - Quadratic Programming.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-object-oriented-programming",
+    "code": "PEEET419",
+    "name": "OBJECT ORIENTED PROGRAMMING",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-object-oriented-programming-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36001",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36002",
+            "title": "Approaches to Software Design - Functional Oriented Design, Object Oriented Design, Case Study of Automated Fire Alarm System.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36003",
+            "title": "Object Modeling Using Unified Modeling Language (UML) – Basic Object-Oriented concepts, UML diagrams, Use case Diagram, Class diagram.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36004",
+            "title": "Introduction to Java - Java Buzzwords, Java program structure, Java compiler, Bytecode, Java Virtual Machine (JVM), Comments, Lexical Issues.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-object-oriented-programming-02-module-2-core-java-fundamentals",
+        "title": "Module 2: Core java fundamentals",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36006",
+            "title": "Core Java Fundamentals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36007",
+            "title": "Primitive Data types - Integers, Floating Point Types, Characters, Boolean.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36008",
+            "title": "Type Conversion and Casting, Variables, Arrays, Strings.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36009",
+            "title": "Operators - Arithmetic Operators, Bitwise Operators, Relational Operators, Boolean Logical Operators, Assignment Operator, Conditional (Ternary) Operator, Operator Precedence.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3600a",
+            "title": "Control Statements - Selection Statements, Iteration Statements and Jump Statements.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3600b",
+            "title": "Object Oriented Programming in Java - Class Fundamentals, Declaring Objects, Object Reference, Introduction to Methods, Constructors, this Keyword, Method Overloading. Inheritance - Super Class, Sub Class, Method Overriding-super Keyword.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3600c",
+            "title": "Input/Output - I/O Basics, Reading Console Input, Writing Console Output.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-object-oriented-programming-03-module-3-more-features-of-java",
+        "title": "Module 3: More features of java",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3600e",
+            "title": "More features of Java",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3600f",
+            "title": "Packages - Defining Package, Importing Packages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36010",
+            "title": "Access Control -public, private, protected.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36011",
+            "title": "Exception Handling - Checked Exceptions, Unchecked Exceptions, try Block and catch Clause, Multiple catch Clauses, Nested try Statements, throw, throws and finally.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36012",
+            "title": "Multithreaded programming -Thread model, Creating threads, Creating multiple threads, thread synchronization.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java",
+        "title": "Module 4: Graphical user interface and database support of java",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36014",
+            "title": "Graphical User Interface and Database support of Java",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36015",
+            "title": "Swings fundamentals - Swing Key Features, Model View Controller (MVC), Components and Containers, Swing Packages, Swing Layout Managers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36016",
+            "title": "Event Handling in Swings: Delegation event model, event handling using swing components-JFrame, JLabel, JButton, JTextField.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36017",
+            "title": "Java DataBase Connectivity (JDBC)- JDBC architecture, Creating and Executing Queries – create table, delete, insert, select.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36017-q-1",
+                "year": "2024",
+                "question": "What is the primary purpose of JDBC?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36017-q-2",
+                "year": "2024",
+                "question": "Name the four types of JDBC drivers and briefly describe their characteristics.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36017-q-3",
+                "year": "2024",
+                "question": "What is the significance of the `PreparedStatement` interface over the `Statement` interface in JDBC?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36017-q-4",
+                "year": "2024",
+                "question": "Explain the importance of closing JDBC resources. What is the recommended way to ensure resources are closed?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36017-q-5",
+                "year": "2024",
+                "question": "Write a Java JDBC code snippet to connect to a PostgreSQL database named `mydatabase` on `localhost:5432` with username `postgres` and password `mypassword`, and then execute a `SELECT * FROM products` query, printing the `product_name` and `price`. Assume the `products` table has `product_id`, `product_name`, and `price` columns.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36017-q-6",
+                "year": "2024",
+                "question": "How would you use `PreparedStatement` to insert a new record into an `Employees` table with columns `name` (VARCHAR) and `department` (VARCHAR)?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-power-electronics-and-drives",
+    "code": "PCEET403",
+    "name": "POWER ELECTRONICS AND DRIVES",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges",
+        "title": "Module 1: Role of power electronics motivation objectives and challenges",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e1a",
+            "title": "Role of Power Electronics, Motivation, Objectives and Challenges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e1b",
+            "title": "Power Electronics Vs Linear Electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e1c",
+            "title": "Ideal and real switches- Static and dynamic Performance – Power losses- Temperature rise- Thermal Analogy- Use of Heat sinks- Need for high efficiency, small size, high reliability and low cost- Overview of Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e1d",
+            "title": "Uncontrolled Switch: Power Diodes – Types- Characteristics (Static and Dynamic) –Effects of Reverse Recovery Transient- Ratings-Schottky Diodes – Features & Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e1e",
+            "title": "Semi-controlled switch: SCR (Thyristor) – Symbol, Structure, Characteristics (Static and dynamic) – Turn-on and Turn-off phenomena – Ratings- Gate control of SCR – Gate pulse magnitude and duration requirements- Typical gate drive circuits – Gate synchronisation – Isolated gate drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e1f",
+            "title": "Fully-controlled switches: MOSFETS and IGBTs: Symbol, Structure, Characteristics (Static and Dynamic) -Device ratings -Gate drive requirements–Typical gate drive circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e20",
+            "title": "Modern power devices: Introduction to Wide Bandgap Devices – SiC MOSFET and GaN HEMT – Features and advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e21",
+            "title": "Suggestions: Reading and interpreting datasheets are to be encouraged [To be tested through assignments] –Possibility of simulation assignments/homework may be explored- Design of MOSFET/IGBT gate drives – need/requirement of isolation in certain circuits- Use of pulse transformers/opto-isolators – sample circuits [Design assignments may be given using popular driver ICs for MOSFETs/SCRs – not to be tested in ESE]",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half",
+        "title": "Module 2: Controlled rectifiers single phase fully controlled and half",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e23",
+            "title": "Controlled Rectifiers (Single Phase) – Fully controlled and half-controlled rectifiers (semi-converter)with RL and RLE loads- Rectifier and inverter modes of operation- waveforms (continuous & discontinuous conduction)– Output voltage, Input line current, Real Power, Power factor and THD(Continuous conduction, ripple free current)- Effect of source inductance(Full converter in continuous conduction, ripple free current)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35e23-q-1",
+                "year": "2024",
+                "question": "A single-phase fully controlled rectifier is connected to a highly inductive load of 10A. The AC supply voltage is 230V (RMS). If the firing angle is $60^\\circ$, calculate:",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e23-q-2",
+                "year": "2024",
+                "question": "What is the primary difference in operation between a half-controlled rectifier and a fully controlled rectifier in terms of device count and control capability?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e23-q-3",
+                "year": "2024",
+                "question": "How does the presence of source inductance affect the output voltage of a full converter? Explain the concept of commutation overlap.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35e23-q-4",
+                "year": "2024",
+                "question": "For a single-phase half-controlled rectifier with an RLE load operating in discontinuous conduction mode, what parameter defines the point at which the current stops flowing?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35e24",
+            "title": "Controlled Rectifiers (3-Phase) - Fully controlled & Half-controlled bridge converter with RLE load (continuous conduction, ripple free current)– Waveforms- Output voltage equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e25",
+            "title": "AC voltage controllers (ACVC) – 1-phase full-wave ACVC with R & RL loads – waveforms – RMS output voltage - applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e26",
+            "title": "DC-DC Switching Regulators- Buck, Boost & Buck-Boost– Operation with Continuous conduction Waveforms– Effect of non-idealities such as capacitor ESR and inductor resistance (qualitative treatment only)- Design of filter inductance and capacitance- Selection of power devices",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-03-module-3-switch-mode-dc",
+        "title": "Module 3: Switch mode dc",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e28",
+            "title": "Switch mode DC-AC Voltage Source Inverters (VSI)- Single phase Half- Bridge and Full-Bridge configurations- Sinusoidal Pulse Width Modulation (PWM) - Control of Fundamental output voltage- Harmonic spectrum- Bipolar and Unipolar PWM- Linear, Over Modulation and Square wave modes -Merits and demerits- Need for blanking time (dead-time)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e29",
+            "title": "Three-Phase Pulse Width Modulated VSI - Fundamental Output voltage- Linear, Over Modulation and Square wave modes – Third harmonic Injection PWM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e2a",
+            "title": "Single phase current regulated VSI –Tolerance band current control- Fixed  frequency operation - Single phase current source Inverters (IGBT based)- Comparison",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e2b",
+            "title": "Need for improved utility interface- Generation of current harmonics- Power factor- Harmonics and IEEE 519 standard- Active shaping of the input line current- Single-phase front end boost converter(circuit diagram, operation, block diagram of the control scheme)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric",
+        "title": "Module 4: Introduction to electric drives advantages of adjustable speed electric",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35e2d",
+            "title": "Introduction to Electric Drives– Advantages of adjustable speed electric drives –Block diagram, Types of loads – Classification of load torque- Motor torque-load combination: characteristics and dynamic equation- Steady state stability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e2e",
+            "title": "DC Drives- Chopper control of Separately Excited DC drives (SEDC) –One quadrant, Two quadrant and four quadrant Chopper fed drives(Continuous conduction only)- Motoring and Regenerative braking – Speed-Torque characteristics – Speed control- Controlled rectifier fed separately excited DC motor drive- Single phase and three phase (Continuous conduction only)- Speed-Torque characteristics- Speed control –Dual converter drives (single phase) - Circulating current Type and Non-circulating current - Static four-quadrant operation with SEDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e2f",
+            "title": "Three-phase VSI fed induction motor drives: Stator Voltage control - V/F speed control– Speed-Torque characteristics- Speed control – operation below and above base speed – Braking: dynamic and regenerative",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-power-electronics-and-drives-lab",
+    "code": "PCEEL408",
+    "name": "POWER ELECTRONICS AND DRIVES LAB",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-01-module-1",
+        "title": "Module 1: 01 module 1",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3612f",
+            "title": "Testing and Troubleshooting- Power diodes, SCR, Power Transistors, MOSFETS, IGBTs, OP-Amps, MOSFET drivers etc – Use of Multimeter, DSO, and Data sheets",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f3612f-q-1",
+                "year": "2024",
+                "question": "You are testing a power diode using a multimeter in diode test mode. What readings would you expect for a good diode in forward bias and reverse bias? What would indicate a short-circuited diode?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3612f-q-2",
+                "year": "2024",
+                "question": "Explain the primary difference in control mechanism between a BJT (Base Current controlled) and a MOSFET (Gate-Source Voltage controlled). How would this difference affect the testing approach using a DSO?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3612f-q-3",
+                "year": "2024",
+                "question": "You are troubleshooting a switching circuit using an IGBT. The output voltage at the collector is always zero, even though you can measure the correct gate drive voltage. What are two likely reasons for this failure, and how would you test for them?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3612f-q-4",
+                "year": "2024",
+                "question": "Why is an oscilloscope generally a better tool than a multimeter for testing the performance of a MOSFET driver circuit?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3612f-q-5",
+                "year": "2024",
+                "question": "When using a DSO to examine the switching waveform of a power MOSFET, what critical parameter from the MOSFET's datasheet would you try to correlate with your DSO measurements to assess the efficiency of the switching process?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f36130",
+            "title": "Simulation of any Power Electronic circuit using a SPICE based software such as LTSpice, ORCAD, PSpice, and Proteus",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-02-module-2",
+        "title": "Module 2: 02 module 2",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36132",
+            "title": "PCB routing using any standard PCB layout software such as ORCAD, Proteus, KiCAD, Altium, Eagle etc. ensuring good PCB routing practices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36133",
+            "title": "Soldering and desoldering Practice – Through-Hole/SMD",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36133-q-1",
+                "year": "2024",
+                "question": "Describe the primary function of flux in the soldering process. (Aligns with CO1 - understanding device operation relies on good connections)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36133-q-2",
+                "year": "2024",
+                "question": "What are the key differences between leaded solder and lead-free solder in terms of melting point and soldering technique? (Aligns with CO1 - selection of materials for reliable circuits)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36133-q-3",
+                "year": "2024",
+                "question": "Explain the characteristics of a \"cold solder joint\" and why it is detrimental to electrical connections. (Aligns with CO1 - impact on device performance)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36133-q-4",
+                "year": "2024",
+                "question": "Describe the process of desoldering a through-hole component using desoldering wick. (Aligns with CO1 - practical skill for repair/modification)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36133-q-5",
+                "year": "2024",
+                "question": "For soldering SMD components, which technique is generally preferred for components with multiple pins on one side, like an SOIC package, and why? (Aligns with CO1 - practical skill for modern circuits)",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-03-module-1-static-vi-characteristics-of-power-devices",
+        "title": "Module 1: Static vi characteristics of power devices",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36135",
+            "title": "Static VI characteristics of Power Devices",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-04-module-2-high-frequency-diode",
+        "title": "Module 2: High frequency diode",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36137",
+            "title": "High frequency diode - Measurement of power loss and reverse recovery time",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-05-module-3-single",
+        "title": "Module 3: Single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36139",
+            "title": "Single-Phase half-wave-controlled rectifier feeding R/RL load",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-06-module-4-single",
+        "title": "Module 4: Single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3613b",
+            "title": "Single-Phase half-controlled(semi-converter)/fully-controlled rectifier feeding R/RL loads",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f3613b-q-1",
+                "year": "2024",
+                "question": "A single-phase half-controlled rectifier uses two diodes and two SCRs. If it feeds a purely resistive load and the firing angle $\\alpha = 60^\\circ$, what is the average DC output voltage if the RMS input voltage is 230V?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3613b-q-2",
+                "year": "2024",
+                "question": "How does the presence of inductance in the load affect the operation of a single-phase fully-controlled rectifier? Explain the concept of continuous and discontinuous conduction modes.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3613b-q-3",
+                "year": "2024",
+                "question": "What is the primary advantage of using a fully-controlled rectifier over a half-controlled rectifier when feeding a DC motor for speed control?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3613b-q-4",
+                "year": "2024",
+                "question": "For a single-phase fully-controlled rectifier feeding an RL load, what happens to the average DC output voltage as the firing angle $\\alpha$ increases from $0^\\circ$ to $90^\\circ$?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3613b-q-5",
+                "year": "2024",
+                "question": "List two important parameters to consider when selecting SCRs for a single-phase rectifier circuit.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-07-module-5-effect-of-source-inductance-in-single",
+        "title": "Module 5: Effect of source inductance in single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3613d",
+            "title": "Effect of source inductance in single-phase controlled rectifier feeding highly inductive loads",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-08-module-6-single",
+        "title": "Module 6: Single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3613f",
+            "title": "Single-Phase half-controlled/fully-controlled Rectifier fed PMDC/Separately excited DC motor drive",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-09-module-7-ac-voltage-controller-feeding-rrl-loads",
+        "title": "Module 7: Ac voltage controller feeding rrl loads",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36141",
+            "title": "AC Voltage controller feeding R/RL loads",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-10-module-8-isolated-gate-driver-circuit-for-single",
+        "title": "Module 8: Isolated gate driver circuit for single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36143",
+            "title": "Isolated Gate Driver Circuit for Single-phase half-Bridge IGBT/MOSFET Inverter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-11-module-9-gate-drive-using-bootstrap-technique",
+        "title": "Module 9: Gate drive using bootstrap technique",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36145",
+            "title": "Gate drive using Bootstrap technique",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-12-module-10-single",
+        "title": "Module 10: Single",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36147",
+            "title": "Single-phase half-bridge/full-bridge IGBT/MOSFET inverter feeding RL load",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-13-module-11-inductor-design-and-fabrication",
+        "title": "Module 11: Inductor design and fabrication",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36149",
+            "title": "Inductor design and Fabrication",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-14-module-12-design-and-set",
+        "title": "Module 12: Design and set",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3614b",
+            "title": "Design and set-up a buck/ boost /buck-boost converter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-15-module-13-speed-control-of-permanent-magnetseparately",
+        "title": "Module 13: Speed control of permanent magnetseparately",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3614d",
+            "title": "Speed control of Permanent Magnet/Separately-Excited DC motor using chopper drive",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-16-module-14-three",
+        "title": "Module 14: Three",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3614f",
+            "title": "Three-phase IGBT/MOSFET inverter feeding RL Load",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-17-module-15-stator-voltage-control-of-three",
+        "title": "Module 15: Stator voltage control of three",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36151",
+            "title": "Stator Voltage control of Three-Phase Induction Motor",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-18-module-16-single-phase-unidirectionalbidirectional-interface-boost-pwm-rectifier",
+        "title": "Module 16: Single phase unidirectionalbidirectional interface boost pwm rectifier",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36153",
+            "title": "Single phase unidirectional/bidirectional interface – boost PWM rectifier",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-power-electronics-and-drives-lab-19-module-17-vf-control-of-three",
+        "title": "Module 17: Vf control of three",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36155",
+            "title": "V/F control of Three-Phase Induction Motor",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36155-q-1",
+                "year": "2024",
+                "question": "What is the primary goal of V/F control in induction motor drives?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36155-q-2",
+                "year": "2024",
+                "question": "Explain why voltage boost is necessary at low frequencies in V/F control.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36155-q-3",
+                "year": "2024",
+                "question": "If an induction motor is rated at 415V, 50Hz, what would be the ideal output voltage for a V/F controller set to 25Hz (assuming no voltage boost)?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36155-q-4",
+                "year": "2024",
+                "question": "How does slip compensation improve the performance of a V/F controlled induction motor?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36155-q-5",
+                "year": "2024",
+                "question": "List two advantages and two disadvantages of V/F control compared to Field-Oriented Control (FOC).",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-renewable-energy-sources",
+    "code": "PEEET412",
+    "name": "RENEWABLE ENERGY SOURCES",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve",
+        "title": "Module 1: Introduction principles of renewable energy energy and sustainable deve",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35ebf",
+            "title": "Introduction: Principles of renewable energy; energy and sustainable development, fundamentals and social implications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ec0",
+            "title": "Worldwide renewable energy availability, renewable energy availability in India, types of renewable energy.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ec1",
+            "title": "Wind Energy: Properties of wind, availability of wind energy in India, wind velocity and power from wind (numerical problems); major problems associated with wind power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ec2",
+            "title": "Basic components of wind energy conversion system (WECS); Classification of WECS- Horizontal axis- single, double and multi-blade system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ec3",
+            "title": "Vertical axis - Savonius and Darrieus types.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation",
+        "title": "Module 2: Solar energy fundamentals solar radiation estimation of solar radiation",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35ec5",
+            "title": "Solar Energy: Fundamentals; Solar Radiation; Estimation of solar radiation on horizontal and inclined surfaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ec6",
+            "title": "Solar radiation Measurements - Pyrheliometers, Pyranometer, Sunshine Recorder.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ec7",
+            "title": "Solar Thermal systems: concentrating and non-concentrating collectors - Flat plate collectors; Solar tower electric power plant.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35ec7-q-1",
+                "year": "2024",
+                "question": "What is the primary advantage of using a selective surface coating on the absorber plate of a flat plate collector?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ec7-q-2",
+                "year": "2024",
+                "question": "Explain why parabolic dish collectors are often paired with Stirling engines for power generation.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ec7-q-3",
+                "year": "2024",
+                "question": "Discuss the limitations of flat plate collectors in the context of electricity generation compared to concentrating solar power (CSP) systems.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35ec8",
+            "title": "Photovoltaic system for electric power generation – Classification of PV system - Principle of Solar cell, advantages, disadvantages and applications of solar photovoltaic system.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation",
+        "title": "Module 3: Biomass energy introduction principle of biomass energy generation",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35eca",
+            "title": "Biomass Energy: Introduction; Principle of biomass energy generation - Biofuels; Biomass Resources; Biomass conversion technologies-fixed dome type biogas plant",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ecb",
+            "title": "Urban waste to energy conversion; Biomass gasification (Downdraft).",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35ecb-q-1",
+                "year": "2024",
+                "question": "What are the primary environmental concerns associated with unmanaged urban waste?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ecb-q-2",
+                "year": "2024",
+                "question": "Briefly describe the process of incineration for waste-to-energy conversion.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ecb-q-3",
+                "year": "2024",
+                "question": "What is the main difference in the output of gasification compared to incineration?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ecb-q-4",
+                "year": "2024",
+                "question": "Define syngas and list its main components.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ecb-q-5",
+                "year": "2024",
+                "question": "In a downdraft gasifier, what is the primary mechanism for reducing tar content in the syngas?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ecb-q-6",
+                "year": "2024",
+                "question": "List the four main zones found in a downdraft gasifier and their primary function.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35ecb-q-7",
+                "year": "2024",
+                "question": "What is the Boudouard reaction in gasification, and why is it important?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35ecc",
+            "title": "Tidal Power: Tides and waves as energy suppliers and their mechanics; fundamental characteristics of tidal power, classification of tidal power plants - harnessing tidal energy, advantages and limitations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-renewable-energy-sources-04-module-4-ocean-thermal-energy-conversion-principle-of-working-classification-ote",
+        "title": "Module 4: Ocean thermal energy conversion principle of working classification ote",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35ece",
+            "title": "Ocean Thermal Energy Conversion: Principle of working, classification, OTEC power stations in the world, environmental impacts associated with OTEC.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ecf",
+            "title": "Introduction to geothermal energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ed0",
+            "title": "Green Energy: Introduction, Fuel cells: Classification of fuel cells – Hydrogen energy; Operating principles, Zero-energy Concepts.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ed1",
+            "title": "Benefits of hydrogen energy, hydrogen production technologies (electrolysis method only), hydrogen energy storage, applications of hydrogen energy, problem associated with hydrogen energy.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-solid-state-devices",
+    "code": "PEEET417",
+    "name": "SOLID STATE DEVICES",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-solid-state-devices-01-module-1-wave-shaping-circuits-first-order-rc-low-pass-and-high-pass-filters",
+        "title": "Module 1: Wave shaping circuits first order rc low pass and high pass filters",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35f73",
+            "title": "Wave shaping circuits : First order RC low pass and high pass filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f74",
+            "title": "Differentiator and Integrator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f75",
+            "title": "Diode clipping circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f76",
+            "title": "Diode clamping circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f77",
+            "title": "Voltage multipliers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f78",
+            "title": "Transistor biasing: Concept of DC and AC load lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f79",
+            "title": "Types -Fixed bias circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f7a",
+            "title": "Self-bias",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f7b",
+            "title": "voltage divider bias",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f7c",
+            "title": "Bias stabilization.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f7d",
+            "title": "Switching Circuits: Astable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f7e",
+            "title": "Bistable and Monostable multivibrators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f7f",
+            "title": "Schmitt Trigger.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-solid-state-devices-02-module-2-bjt-amplifiers-rc-coupled-amplifier-design",
+        "title": "Module 2: Bjt amplifiers rc coupled amplifier design",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35f81",
+            "title": "BJT amplifiers: RC coupled amplifier –Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f82",
+            "title": "Voltage gain and frequency response",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f83",
+            "title": "Small signal analysis of CE configuration - small signal hybrid-pi model for mid and low frequency (Gain, Input and output impedance)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f84",
+            "title": "High frequency equivalent circuits of BJT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f85",
+            "title": "Miller effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f86",
+            "title": "Analysis of high frequency response of CE amplifier.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f87",
+            "title": "Multistage amplifiers - Cascade and Cascode amplifiers: Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f88",
+            "title": "Effect on gain and bandwidth.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-solid-state-devices-03-module-3-mosfets",
+        "title": "Module 3: Mosfets",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35f8a",
+            "title": "MOSFETs - MOSFET as an amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f8b",
+            "title": "Biasing of p-channel and n-channel MOSFET circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f8c",
+            "title": "Small signal equivalent circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f8d",
+            "title": "Small signal Voltage gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f8e",
+            "title": "current gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f8f",
+            "title": "input and output impedances of CS configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f90",
+            "title": "CS stage with diode connected load.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f91",
+            "title": "Feedback topologies: Effect of positive and negative feedback on gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f92",
+            "title": "frequency response and distortion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f93",
+            "title": "Feedback topologies and its effect on input and output impedance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f94",
+            "title": "Feedback amplifier circuits using BJT in each feedback topologies (Analysis of only Voltage series feedback circuit is required)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-solid-state-devices-04-module-4-oscillators-introduction",
+        "title": "Module 4: Oscillators introduction",
+        "topics": [
+          {
+            "id": "68a200852b85456187f35f96",
+            "title": "Oscillators: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f97",
+            "title": "Barkhausen criterion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f98",
+            "title": "Classification of oscillators - RC phase shift",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f99",
+            "title": "Wien bridge",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f9a",
+            "title": "Hartley",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f9b",
+            "title": "Colpitts and Crystal oscillators (working principle and design equations of the circuits only). Analysis of RC phase shift oscillator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f9c",
+            "title": "Power amplifiers: Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f9d",
+            "title": "Transformer coupled class A power amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f9e",
+            "title": "push pull class B and class AB power amplifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35f9f",
+            "title": "complementary symmetry class B and class AB power amplifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fa0",
+            "title": "Class C power amplifier efficiency and distortion (no analysis required).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fa1",
+            "title": "Regulated power supplies: Load and line regulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fa2",
+            "title": "Series voltage regulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fa3",
+            "title": "shunt voltage regulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f35fa4",
+            "title": "Short circuit protection and fold back protection.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-synchronous-induction-machines",
+    "code": "PCEET402",
+    "name": "SYNCHRONOUS & INDUCTION MACHINES",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-synchronous-induction-machines-01-module-1-principle-of-operation-of-3",
+        "title": "Module 1: Principle of operation of 3",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35deb",
+            "title": "Principle of Operation of 3-phase alternators – classification - constructional features - types of armature windings – winding diagram of a 3-phase, 12 slot, 2-pole, single layer full-pitched armature winding (winding diagram not for evaluation) – coil-span factor and distribution factor (sinusoidal flux distribution only) - EMF equation – numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dec",
+            "title": "Cylindrical-rotor type synchronous generator on no-load – open circuit characteristics - Synchronous generator on load – armature reaction – effect of armature reaction - synchronous impedance - Equivalent circuit - phasor diagram – numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35ded",
+            "title": "Voltage regulation – OC and SC tests – emf and mmf methods – ZPF test - Potier method – numerical problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-synchronous-induction-machines-02-module-2-power-flow-equations-in-cylindrical",
+        "title": "Module 2: Power flow equations in cylindrical",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35def",
+            "title": "Power flow equations in cylindrical-rotor type synchronous generator – numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df0",
+            "title": "Parallel operation - synchronous generator on infinite bus-bar – conditions – methods of synchronisation – effect of change of mechanical input – effect of change of excitation - V-curves and inverted V curves – numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df1",
+            "title": "Salient-pole synchronous generator - two reaction theory – phasor diagram – slip test for determination of X d and X q - numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df2",
+            "title": "Synchronous motor – rotating magnetic field - principle of operation – starting methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df3",
+            "title": "Power developed (both cylindrical rotor type and salient-pole type) – excitation power & reluctance power – power angle characteristics - losses and efficiency – numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df4",
+            "title": "V-curves and inverted V curves",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-synchronous-induction-machines-03-module-3-3",
+        "title": "Module 3: 3",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35df6",
+            "title": "3-phase Induction motor – principle of operation - classification - constructional features – torque equation - torque-slip characteristics – relation between starting torque, maximum torque and full-load torque - numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df7",
+            "title": "Phasor diagram - equivalent circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df8",
+            "title": "Power flow diagram - losses and efficiency – numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35df9",
+            "title": "No-load and blocked-rotor tests – circle diagram – numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dfa",
+            "title": "Starting of induction motors – types of starters – DOL starter, autotransformer starter, star-delta starter – numerical problems - rotor resistance starter (no design)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-synchronous-induction-machines-04-module-4-braking-of-induction-motors-plugging-dynamic-braking-regenerative-braki",
+        "title": "Module 4: Braking of induction motors plugging dynamic braking regenerative braki",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35dfc",
+            "title": "Braking of Induction motors – plugging, dynamic braking, regenerative braking (concepts only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dfd",
+            "title": "Speed control – stator voltage control, V/f control, rotor resistance control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dfe",
+            "title": "Induction generator – line excited and self-excited induction generators (principle of operation only) – torque-slip characteristics for braking, motoring and regeneration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35dff",
+            "title": "Single-phase induction motors – double revolving field theory – equivalent circuit – torque slip characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35e00",
+            "title": "Types of 1-phase inductions motors – split-phase, capacitor-start induction-run, permanent capacitor types – applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-4-theory-of-computation",
+    "code": "PEEET414",
+    "name": "THEORY OF COMPUTATION",
+    "branchId": "ee",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ee-4-theory-of-computation-01-module-1-introduction-to-formal-language-theory-alphabets",
+        "title": "Module 1: Introduction to formal language theory alphabets",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f0b",
+            "title": "Introduction to formal language theory– Alphabets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f0c",
+            "title": "Strings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f0d",
+            "title": "Concatenation of strings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f0e",
+            "title": "Languages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f0f",
+            "title": "Regular Languages - Deterministic Finite State Automata",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f10",
+            "title": "Nondeterministic Finite State Automata (NFA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f11",
+            "title": "Equivalence of DFA and NFA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f12",
+            "title": "Regular Grammar (RG)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f13",
+            "title": "Equivalence of RGs and DFA.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-theory-of-computation-02-module-2-regular-languages",
+        "title": "Module 2: Regular languages",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f15",
+            "title": "Regular Languages -Regular Expression (RE)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f16",
+            "title": "Equivalence of REs and DFA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f17",
+            "title": "Homomorphisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f18",
+            "title": "Necessary conditions for regular languages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f19",
+            "title": "Closure Properties of Regular Languages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f1a",
+            "title": "DFA state minimization (No proof required).Context Free Grammar (CFG)- CFG representation of Context Free Languages (proof of correctness is required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f1b",
+            "title": "derivation trees and ambiguity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f1c",
+            "title": "Normal forms for CFGs",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-4-theory-of-computation-03-module-3-context",
+        "title": "Module 3: Context",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f1e",
+            "title": "Context-Free Languages -Nondeterministic Pushdown Automata (PDA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f1f",
+            "title": "Deterministic Pushdown Automata (DPDA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f20",
+            "title": "Equivalence of PDAs and CFGs (Proof not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f21",
+            "title": "Pumping Lemma for Context-Free Languages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f22",
+            "title": "Closure Properties of Context Free Languages",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35f22-q-1",
+                "year": "2024",
+                "question": "Is the language $L = \\{w \\in \\{a, b\\}^* \\mid \\text{the number of a's in } w \\text{ is equal to the number of b's in } w \\}$ a Context-Free Language? Justify your answer using closure properties.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35f22-q-2",
+                "year": "2024",
+                "question": "Prove that the set of Context-Free Languages is NOT closed under intersection.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35f22-q-3",
+                "year": "2024",
+                "question": "If $L$ is a CFL and $R$ is a regular language, is $L \\cup R$ always a CFL? Justify your answer using closure properties.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35f22-q-4",
+                "year": "2024",
+                "question": "Let $L = \\{w \\mid w \\text{ is a palindrome over } \\{a, b\\}\\}$. Is $L$ a CFL? If not, why not? If yes, how can closure properties be used to demonstrate this (or a related fact)?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-4-theory-of-computation-04-module-4-context-sensitive-languages",
+        "title": "Module 4: Context sensitive languages",
+        "topics": [
+          {
+            "id": "68a200842b85456187f35f24",
+            "title": "Context Sensitive Languages - Context Sensitive Grammar (CSG)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f25",
+            "title": "Linear Bounded Automata.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200842b85456187f35f25-q-1",
+                "year": "2024",
+                "question": "Is the language $L = \\{a^n b^{2n} \\mid n \\ge 0\\}$ a context-sensitive language? Justify your answer by either providing a CSG or an LBA argument, or explaining why it's not.",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35f25-q-2",
+                "year": "2024",
+                "question": "Explain why the language $L = \\{ww \\mid w \\in \\{a, b\\}^*\\}$ (concatenation of a string with itself) is a context-sensitive language. What is a potential challenge in designing a Pushdown Automaton for this language?",
+                "marks": 3
+              },
+              {
+                "id": "68a200842b85456187f35f25-q-3",
+                "year": "2024",
+                "question": "Consider the Chomsky Hierarchy. Where do Context-Sensitive Languages and LBAs fit in relation to Regular Languages, Context-Free Languages, and Turing Machines?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200842b85456187f35f26",
+            "title": "Turing Machines - Standard Turing Machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f27",
+            "title": "Robustness of Turing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f28",
+            "title": "Universal Turing Machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f29",
+            "title": "Halting Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f2a",
+            "title": "Recursive and Recursively Enumerable Languages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200842b85456187f35f2b",
+            "title": "Chomsky classification of",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

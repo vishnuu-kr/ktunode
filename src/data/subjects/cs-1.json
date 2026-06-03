@@ -1,0 +1,1781 @@
+[
+  {
+    "id": "cs-1-algorithmic-thinking-with-python",
+    "code": "UCEST105",
+    "name": "ALGORITHMIC THINKING WITH PYTHON",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-algorithmic-thinking-with-python-01-module-1-problem",
+        "title": "Module 1: Problem",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5ca1",
+            "title": "PROBLEM-SOLVING STRATEGIES:- Problem-solving strategies defined, Importance of understanding multiple problem-solving strategies, Trial and Error, Heuristics, Means-Ends Analysis, and Backtracking (Working backward).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5ca2",
+            "title": "THE PROBLEM-SOLVING PROCESS:- Computer as a model of computation, Understanding the problem, Formulating a model, Developing an algorithm, Writing the program, Testing the program, and Evaluating the solution.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5ca3",
+            "title": "ESSENTIALS OF PYTHON PROGRAMMING:- Creating and using variables in Python, Numeric and String data types in Python, Using the math module, Using the Python Standard Library for handling basic I/O - print, input, Python operators and their precedence.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5ca3-q-1",
+                "year": "2024",
+                "question": "Explain the difference between an integer and a float in Python, and provide an example of when you might use each.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ca3-q-2",
+                "year": "2024",
+                "question": "Why is it important to remember that the `input()` function always returns a string?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ca3-q-3",
+                "year": "2024",
+                "question": "What is operator precedence, and how can you control it in a Python expression?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ca3-q-4",
+                "year": "2024",
+                "question": "What will be the output of the following Python code?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ca3-q-5",
+                "year": "2024",
+                "question": "Write a Python snippet that prompts the user for their favorite number, converts it to a float, and then prints a message showing the number squared, using an f-string.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ca3-q-6",
+                "year": "2024",
+                "question": "Evaluate the following expression and determine its output: `print(10 * (4 + 5) // 3)`",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cs-1-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation",
+        "title": "Module 2: Algorithm and pseudocode representation",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5ca5",
+            "title": "ALGORITHM AND   PSEUDOCODE   REPRESENTATION:-   Meaning and Definition of Pseudocode, Reasons for using pseudocode, The main constructs of pseudocode - Sequencing, selection (if-else structure, case structure) and repetition (for, while, repeat-until loops), Sample problems *",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5ca6",
+            "title": "FLOWCHARTS** :- Symbols used in creating a Flowchart - start and end, arithmetic calculations, input/output operation, decision (selection), module name (call), for loop (Hexagon), flow-lines, on-page connector, off-page connector.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python",
+        "title": "Module 3: Selection and iteration using python",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5ca8",
+            "title": "SELECTION AND ITERATION USING PYTHON:- if-else, elif, for loop, range, while loop.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5ca9",
+            "title": "Sequence data types in Python - list, tuple, set, strings, dictionary, Creating and using Arrays in Python (using Numpy library).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5caa",
+            "title": "DECOMPOSITION AND MODULARIZATION* :- Problem decomposition as a strategy for solving complex problems, Modularization, Motivation for modularization, Defining and using functions in Python, Functions with multiple return values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cab",
+            "title": "RECURSION:- Recursion Defined, Reasons for using Recursion, The Call Stack, Recursion and the Stack, Avoiding Circularity in Recursion, Sample problems - Finding the nth Fibonacci number, greatest common divisor of two positive integers, the factorial of a positive integer, adding two positive integers, the sum of digits of a positive number **.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-algorithmic-thinking-with-python-04-module-4-computational-approaches-to-problem",
+        "title": "Module 4: Computational approaches to problem",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5cad",
+            "title": "COMPUTATIONAL APPROACHES TO PROBLEM-SOLVING (Introductory diagrammatic/algorithmic explanations only. Analysis not required ) :-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cae",
+            "title": "Brute-force Approach -  - Example: Padlock, Password guessing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5caf",
+            "title": "Divide-and-conquer Approach - - Example: The Merge Sort Algorithm - Advantages of Divide and Conquer Approach - Disadvantages of Divide and Conquer Approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cb0",
+            "title": "Dynamic Programming Approach - Example: Fibonacci series - Recursion vs Dynamic Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cb1",
+            "title": "Greedy Algorithm Approach - Example: Given an array of positive integers each indicating the completion time for a task, find the maximum number of tasks that can be completed in the limited amount of time that you have. - Motivations for the Greedy Approach - Characteristics of the Greedy Algorithm - Greedy Algorithms vs Dynamic Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cb2",
+            "title": "Randomized Approach - Example 1: A company selling jeans gives a coupon for each pair of jeans. There are n different coupons. Collecting n different coupons would give you free jeans. How many jeans do you expect to buy before getting a free  one?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cb3",
+            "title": "Example 2: n people go to a party and drop off their hats to a hat-check person. When the party is over, a different hat-check person is on duty and returns the n hats randomly back to each person. What is the expected number of people who get back their hats?   - Motivations for the Randomized Approach",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-1-basic-electrical-and-electronics-engineering-workshop",
+    "code": "BASIC-ELECTRICAL-AND-ELECTRONICS-ENGINEERING-WORKSHOP",
+    "name": "BASIC ELECTRICAL AND ELECTRONICS  ENGINEERING WORKSHOP",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-01-module-1-familiarizationidentification-of-electronic-components-with-specificati",
+        "title": "Module 1: Familiarizationidentification of electronic components with specificati",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5cca",
+            "title": "Familiarization/Identification of electronic components with specification (Functionality, type, size, colour coding, package, symbol and cost of -Active, Passive, Electrical, Electronic, Electro-mechanical, Wires, Cables, Connectors, Fuses, Switches, Relays, Crystals, Displays, Fasteners, Heat sink etc.)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-02-module-2-drawing-of-electronic-circuit-diagrams-using-bisieee-symbols-and-interp",
+        "title": "Module 2: Drawing of electronic circuit diagrams using bisieee symbols and interp",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5ccc",
+            "title": "Drawing of electronic circuit diagrams using BIS/IEEE symbols and Interpret data sheets of discrete components and IC’s",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-03-module-3-familiarizationapplication-of-testing-instruments-and-commonly-used-too",
+        "title": "Module 3: Familiarizationapplication of testing instruments and commonly used too",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5cce",
+            "title": "Familiarization/Application of testing instruments and commonly used tools. - Multimeter, Function generator, Power supply, CRO, DSO.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5ccf",
+            "title": "Soldering iron, Desoldering pump, Pliers, Cutters, Wire strippers, Screw drivers, Tweezers, Crimping tool, Hot air soldering and de- soldering station",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5ccf-q-1",
+                "year": "2024",
+                "question": "Why is it important to clean the tip of a soldering iron regularly?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ccf-q-2",
+                "year": "2024",
+                "question": "What is the difference between a Phillips-head screwdriver and a Flat-head screwdriver, and why is using the correct one important?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ccf-q-3",
+                "year": "2024",
+                "question": "Explain the primary function of a desoldering pump.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ccf-q-4",
+                "year": "2024",
+                "question": "When preparing to solder a component onto a PCB, you find that the wire leads are too long. Which tool would you use to trim these excess leads, and why is the choice of tool important? (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ccf-q-5",
+                "year": "2024",
+                "question": "You are tasked with replacing a small surface-mount resistor on a circuit board. Describe the suitable tool and method you would employ for removing the old resistor without damaging the board. (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5ccf-q-6",
+                "year": "2024",
+                "question": "Which tool is used to remove the insulating layer from the end of an electrical wire to expose the conductor, and why is it crucial to select the correct size setting on this tool? (Knowledge Level: K3)",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-04-module-4-testing-of-electronic-components-using-multimeter",
+        "title": "Module 4: Testing of electronic components using multimeter",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5cd1",
+            "title": "Testing of electronic components using multimeter - Resistor, Capacitor, Diode, Transistor and JFET.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-05-module-5-printed-circuit-boards-pcb",
+        "title": "Module 5: Printed circuit boards pcb",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5cd3",
+            "title": "Printed circuit boards (PCB) - Types, Single sided, Double sided, PTH, Processing methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cd4",
+            "title": "Design and fabrication of a single sided PCB for a simple circuit.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-06-module-6-inter",
+        "title": "Module 6: Inter",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5cd6",
+            "title": "Inter-connection methods and soldering practice.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cd7",
+            "title": "Bread board, Wrapping, Crimping, Soldering - types - selection of materials and safety precautions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cd8",
+            "title": "Soldering practice in connectors and general-purpose PCB, Crimping.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-07-module-7-assembling-of-electronic-circuitsystem-on-general-purpose-pcb-test-and-",
+        "title": "Module 7: Assembling of electronic circuitsystem on general purpose pcb test and ",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5cda",
+            "title": "Assembling of electronic circuit/system on general purpose PCB, test and show the functioning (Any two)-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cdb",
+            "title": "Fixed voltage power supply with transformer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cdc",
+            "title": "Rectifier diode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cdd",
+            "title": "Capacitor filter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cde",
+            "title": "Zener/IC regulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5cdf",
+            "title": "Square wave generation using IC 555 timer in IC base.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-08-module-8-assembling-of-electronic-circuits-using-smt-surface-mount-technology-st",
+        "title": "Module 8: Assembling of electronic circuits using smt surface mount technology st",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5ce1",
+            "title": "Assembling of electronic circuits using SMT (Surface Mount Technology) stations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-09-module-9-introduction-to-eda-tools-such-as-kicad-or-xcircuit",
+        "title": "Module 9: Introduction to eda tools such as kicad or xcircuit",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5ce3",
+            "title": "Introduction to EDA tools (such as KiCad or XCircuit)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-basic-electrical-and-electronics-engineering-workshop-10-module-10-identify-battery-specifications-using-different-types-of-batteries-lea",
+        "title": "Module 10: Identify battery specifications using different types of batteries lea",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5ce5",
+            "title": "Identify battery specifications using different types of batteries. (Lead acid, Li Ion, NiCd etc.)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5ce6",
+            "title": "Familiarize different types of earthing (Pipe, Plate Earthing, Mat Schemes) and ground enhancing materials (GEM).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-1-chemistry-for-information-science-and-electrical-science",
+    "code": "GXCYT122",
+    "name": "CHEMISTRY FOR INFORMATION SCIENCE AND ELECTRICAL SCIENCE",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science",
+        "title": "Module 1: Electrochemistry and corrosion science",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5dc6",
+            "title": "Electrochemistry and Corrosion Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dc7",
+            "title": "Electrochemical Cell - Electrode potential- Nernst equation for single electrode and cell (Numerical problems)- Reference electrodes – SHE & Calomel electrode –Construction and Working - Electrochemical series - Applications – Glass Electrode & pH Measurement-Conductivity- Measurement using Digital conductivity meter. Li-ion battery & H 2-O2 fuel cell (acid electrolyte only) construction and working.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dc8",
+            "title": "Corrosion –Electrochemical corrosion mechanism (acidic & alkaline medium) - Galvanic series - Corrosion control methods - Cathodic Protection - Sacrificial anodic protection and impressed current cathodic protection – Electroplating of copper - Electroless plating of copper.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications",
+        "title": "Module 2: Materials for electronic applications",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5dca",
+            "title": "Materials for Electronic Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dcb",
+            "title": "Nanomaterials - Classification based on Dimension & Materials- Synthesis – Sol gel & Chemical Reduction - Applications of nanomaterials – Carbon Nanotubes, Fullerenes, Graphene & Carbon Quantum Dots – structure, properties & application.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dcc",
+            "title": "Polymers - Fire Retardant Polymers- Halogenated & Non-halogenated polymers (Examples only)- Conducting Polymers-Classification- Polyaniline & Polypyrrole-synthesis, properties and applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dcd",
+            "title": "Organic electronic materials and devices - construction, working and applications of Organic Light Emitting Diode (OLED) & Dye-Sensitized Solar Cells (DSSC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dce",
+            "title": "Materials used in Quantum computing Technology , Super capacitors, Spintronics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques",
+        "title": "Module 3: Molecular spectroscopy and analytical techniques",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5dd0",
+            "title": "Molecular Spectroscopy and Analytical Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dd1",
+            "title": "Spectroscopy -Types of spectra- Molecular energy levels - Beer Lambert’s law – Numerical problems - Electronic Spectroscopy – Principle, Types of electronic transitions –Role of conjugation in absorption maxima- Instrumentation-Applications – Vibrational spectroscopy – Principle- Number of vibrational modes - Vibrational modes of CO 2 and H 2O – Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dd2",
+            "title": "Thermal Analysis : Dielectric Thermal Analysis (DETA) of Polymers- Working and Application.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dd3",
+            "title": "Electron Microscopic Techniques: SEM - Principle, instrumentation and Applications.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry",
+        "title": "Module 4: Environmental chemistry",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5dd5",
+            "title": "Environmental Chemistry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dd6",
+            "title": "Water characteristics - Hardness - Types of hardness- Temporary and Permanent - Disadvantages of hard water -Degree of hardness (Numericals)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dd7",
+            "title": "Water softening methods-Ion exchange process- Principle, procedure and advantages. Reverse osmosis – principle, process and advantages. – Water disinfection methods – chlorination-Break point chlorination, ozone and UV irradiation. Dissolved oxygen (DO), BOD and COD- Definition & Significance.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dd8",
+            "title": "Waste Management : Sewage water treatment- Primary, Secondary and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dd9",
+            "title": "Tertiary - Flow diagram -Trickling filter and UASB process. E Waste, Methods of disposal – recycle, recovery and reuse. Chemistry of climate change- Greenhouse Gases- Ozone Depletion-Sustainable Development- an introduction to Sustainable Development Goals.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-1-engineering-graphics-and-computer-aided-drawing",
+    "code": "GMEST103",
+    "name": "ENGINEERING GRAPHICS AND COMPUTER AIDED DRAWING",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-engineering-graphics-and-computer-aided-drawing-01-module-1-introduction-relevance-of-technical-drawing-in-engineering-field",
+        "title": "Module 1: Introduction relevance of technical drawing in engineering field",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c39",
+            "title": "Introduction: Relevance of technical drawing in engineering field.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c3a",
+            "title": "Types of lines, Dimensioning, BIS code of practice for technical drawing. (No questions for the end semester examination)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c3b",
+            "title": "Projection of points in different quadrants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c3c",
+            "title": "Projection of straight lines inclined to one plane and inclined to both planes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c3d",
+            "title": "Trace of a line.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c3e",
+            "title": "Inclination of lines with reference planes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c3f",
+            "title": "True length and true inclinations of line inclined to both the reference planes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago",
+        "title": "Module 2: Projection of simple solids such as triangular rectangle square pentago",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c41",
+            "title": "Projection of Simple solids such as Triangular, Rectangle, Square, Pentagonal and Hexagonal Prisms, Pyramids, Cone and Cylinder only.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c42",
+            "title": "Projection of solids in simple position including profile view.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c43",
+            "title": "Projection of solids with axis inclined to one of the reference planes and with axis inclined to both reference planes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-engineering-graphics-and-computer-aided-drawing-03-module-3-sections-of-solids-sections-of-prisms-pyramids-cone-and-cylinder-only-w",
+        "title": "Module 3: Sections of solids sections of prisms pyramids cone and cylinder only w",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c45",
+            "title": "Sections of Solids: Sections of Prisms, Pyramids, Cone and Cylinder only, with axis in vertical position and cut by different section planes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c46",
+            "title": "True shape of the sections. (Exclude true shape given problems)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c47",
+            "title": "Development of Surfaces: Development of surfaces of the solids and solids cut by different section planes. (Exclude problems with through holes)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale",
+        "title": "Module 4: Isometric projection isometric scale",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c49",
+            "title": "Isometric Projection: Isometric scale- Isometric View and Projections of Prisms, Pyramids, Cone, Cylinder, Sphere, Hemisphere and their combinations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c4a",
+            "title": "Computer Aided Drawing (CAD): Introduction, Role of CAD in design and development of new products, Advantages of CAD.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c4b",
+            "title": "Creating two-dimensional drawing with dimensions using suitable software. (CAD, only internal evaluation)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-1-health-and-wellness",
+    "code": "UCHWT127",
+    "name": "HEALTH AND WELLNESS",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-health-and-wellness-01-module-1-human-body-systems-related-to-physical-activity-and-its-functions-respi",
+        "title": "Module 1: Human body systems related to physical activity and its functions respi",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5f4c",
+            "title": "Human Body Systems related to Physical activity and its functions: Respiratory System - Cardiovascular System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f4d",
+            "title": "Musculoskeletal System and the Major Muscle groups of the Human Body",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f4e",
+            "title": "Quantifying Physical Activity Energy Expenditure and Metabolic equivalent of task (MET)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f4f",
+            "title": "Exercise Continuum: Light-intensity physical activity, Moderate - intensity physical activity, Vigorous -intensity physical activity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f50",
+            "title": "Defining Physical Activity, Aerobic Physical Activity, Anaerobic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f51",
+            "title": "Physical Activity, Exercise and Health-Related Physical Fitness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f52",
+            "title": "FITT principle to design an Exercise programme",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f53",
+            "title": "Components of Health-related Physical Fitness: - Cardiorespiratory Fitness- Muscular strength- Muscular endurance- Flexibility- Body composition",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-health-and-wellness-02-module-2-concept-of-health-and-wellness-health-and-wellness-differentiation-fact",
+        "title": "Module 2: Concept of health and wellness health and wellness differentiation fact",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5f55",
+            "title": "Concept of Health and Wellness: Health and wellness differentiation, Factors affecting health and wellness. Mental health and Factors affecting mental health",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f56",
+            "title": "Sports and Socialization: Sports and character building - Leadership through Physical Activity and Sports",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f57",
+            "title": "Diet and nutrition: Exploring Micro and Macronutrients: Concept of Balanced diet Carbohydrate & the Glycemic Index",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f58",
+            "title": "Animal & Plant - based Proteins and their Effects on Human Health",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f59",
+            "title": "Dietary Fats & their Effects on Human Health",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6f58474a0b135b5f59-q-1",
+                "year": "2024",
+                "question": "Differentiate between monounsaturated and polyunsaturated fats, providing at least one common food source for each.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5f59-q-2",
+                "year": "2024",
+                "question": "Explain the dual negative impact of trans fats on cholesterol levels and why they are generally advised to be avoided.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5f59-q-3",
+                "year": "2024",
+                "question": "How does the consumption of omega-3 fatty acids contribute to overall health and potentially mental wellness?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5f59-q-4",
+                "year": "2024",
+                "question": "Which type of dietary fat is typically solid at room temperature, and what is a key health consideration when consuming it in large quantities?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f5a",
+            "title": "Essential Vitamins and Minerals",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di",
+        "title": "Module 3: Lifestyle management strategies to prevent manage common hypokinetic di",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5f5c",
+            "title": "Lifestyle management strategies to prevent / manage common hypokinetic diseases and disorders - Obesity - Cardiovascular diseases (e.g., coronary artery disease, hypertension) - Diabetes - Osteoporosis - Musculoskeletal disorders (e.g., osteoarthritis, Low back pain, Kyphosis, lordosis , flat foot, Knock knee )",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f5d",
+            "title": "Meaning, Aims and objectives of yoga - Classification and importance of of Yogic Asanas (Sitting, Standing, lying) Pranayama and Its Types - Active Lifestyle and Stress Management Through Yoga",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f5e",
+            "title": "Understanding on substance abuse and addiction - Psychoactive substances & its ill effects- Alcohol- Opioids- Cannabis -Sedative - Cocaine -Other stimulants, including caffeine -Hallucinogens - Tobacco -Volatile solvents",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-health-and-wellness-04-module-4-first-aid-and-principles-of-first-aid-primary-survey-abc-airway-breathi",
+        "title": "Module 4: First aid and principles of first aid primary survey abc airway breathi",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5f60",
+            "title": "First aid and principles of First Aid: Primary survey: ABC (Airway, Breathing, Circulation). Qualities of a Good First Aider",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f61",
+            "title": "First aid measures for: - Cuts and scrapes - Bruises - Sprains - Strains - Fractures - Burns - Nosebleeds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f62",
+            "title": "First Aid Procedures: Cardiopulmonary   Resuscitation (CPR) - Heimlich Maneuver - Applying a sling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f63",
+            "title": "Sports injuries: Classification (Soft Tissue Injuries - Abrasion, Contusion, Laceration, Incision, Sprain & Strain)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-1-introduction-to-electrical-and-electronics-engineering",
+    "code": "GXEST104",
+    "name": "INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-current-and-voltage-divisio",
+        "title": "Module 1: Elementary concepts of dc electric circuits current and voltage divisio",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c62",
+            "title": "Elementary concepts of DC electric circuits: Current and Voltage Division Rule - Relative potential",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c63",
+            "title": "Capacitors & Inductors: V-I relations and Energy stored.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c64",
+            "title": "Ohms Law and Kirchhoff's laws - numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c65",
+            "title": "Star-delta conversion (resistive networks only - derivation not required) - numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c66",
+            "title": "Analysis of DC Electric circuits: Mesh current method - matrix representation - Solution of network equations.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5c66-q-1",
+                "year": "2024",
+                "question": "What is the primary advantage of using the Mesh Current Method over directly applying Kirchhoff's laws to every node and branch in a complex circuit?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c66-q-2",
+                "year": "2024",
+                "question": "In the resistance matrix $[R]$ for the Mesh Current Method, why are the off-diagonal elements typically negative?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c66-q-3",
+                "year": "2024",
+                "question": "For the following circuit (imagine a diagram similar to the example used above, but with specific component values), derive the matrix equation $[R][I] = [V]$ for the mesh currents $I_1$ and $I_2$.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c66-q-4",
+                "year": "2024",
+                "question": "Given the matrix equation for a circuit:",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c67",
+            "title": "Node voltage methods-matrix representation-solution of network equations by matrix methods - numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c68",
+            "title": "Elementary Concepts of Magnetic circuits: Magnetic Circuits: Basic Terminology: MMF, field strength, flux density, reluctance - Comparison between electric and magnetic circuits - Series and parallel magnetic circuits with composite materials ( numerical problems not needed )",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-faradays-laws-lenzs-law",
+        "title": "Module 2: Electromagnetic induction faradays laws lenzs law",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c6a",
+            "title": "Electromagnetic Induction : Faraday's laws, Lenz's law- statically induced and dynamically induced emf – Self-inductance and mutual inductance, coefficient of coupling (numerical problems not needed)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c6b",
+            "title": "Alternating Current fundamentals: Generation of alternating voltages - Representation of sinusoidal waveforms: frequency, period, average value, RMS value and form factor - numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c6c",
+            "title": "AC Circuits: Phasor representation of sinusoidal quantities, Trigonometric, Rectangular, Polar and complex forms.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c6d",
+            "title": "Analysis of simple AC circuits: Purely resistive, inductive & capacitive circuits; Inductive and capacitive reactance, concept of impedance - numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c6e",
+            "title": "RL, RC and RLC series circuits- power factor, active, reactive and apparent power. Simple numerical problems.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5c6e-q-1",
+                "year": "2024",
+                "question": "What is the difference between resistance and reactance in an AC circuit?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c6e-q-2",
+                "year": "2024",
+                "question": "Explain why a low power factor is undesirable in an AC power system.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c6e-q-3",
+                "year": "2024",
+                "question": "In an AC circuit, if the voltage and current are in phase, what is the power factor, and what type of circuit is it likely to be?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c6e-q-4",
+                "year": "2024",
+                "question": "A $20 \\Omega$ resistor and a capacitor of $100 \\mu$F are connected in series to a $220$ V, $50$ Hz supply. Calculate the impedance of the circuit.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c6e-q-5",
+                "year": "2024",
+                "question": "An inductor has a resistance of $15 \\Omega$ and an inductive reactance of $25 \\Omega$ at $60$ Hz. If it is connected to a $120$ V, $60$ Hz supply, what is the power factor of the inductor?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c6f",
+            "title": "Three phase AC systems: Generation of three phase voltages, advantages of three phase systems, star and delta connections (balanced only), relation between line and phase voltages, line and phase currents- numerical problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-passive-and-active-components-in-ele",
+        "title": "Module 3: Introduction to electronic devices passive and active components in ele",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c71",
+            "title": "Introduction to Electronic devices: Passive and active components in electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c72",
+            "title": "Working of PN junction diode, V-I characteristics of PN Junction diode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c73",
+            "title": "Zener diode and avalanche breakdown. Basics of Zener voltage regulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c74",
+            "title": "Block diagram of DC power supply, circuit and working of half wave, full wave and bridge rectifiers, ripple factor (with and without capacitor filters)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c75",
+            "title": "Construction, working and V-I Characteristics of BJT, Input output characteristics of CE configuration, Comparison of CE, CB and CC configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c76",
+            "title": "Concept of biasing and load line",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c77",
+            "title": "Transistor as a switch, Transistor as an amplifier (Circuit Diagram and working)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c78",
+            "title": "RC coupled amplifier - Circuit diagram and frequency response Introduction to FET, Construction and working of N-channel and P- Channel MOSFETs",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5c78-q-1",
+                "year": "2024",
+                "question": "Explain why a coupling capacitor is used in an RC coupled amplifier.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c78-q-2",
+                "year": "2024",
+                "question": "What are the main reasons for the decrease in gain of an RC coupled amplifier at very low and very high frequencies?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c78-q-3",
+                "year": "2024",
+                "question": "How does the gate voltage control the current in an N-channel enhancement-mode MOSFET?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c78-q-4",
+                "year": "2024",
+                "question": "Sketch the frequency response curve of an RC coupled amplifier and label the important frequencies. What is bandwidth?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5c78-q-5",
+                "year": "2024",
+                "question": "Describe the construction of a P-channel MOSFET. What polarity of gate-source voltage is required to turn it ON?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cs-1-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-general-block-diagram-of-a-comm",
+        "title": "Module 4: Modern electronics and its applications general block diagram of a comm",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5c7a",
+            "title": "Modern Electronics and its applications: General block diagram of a Communication system, Block diagram of Fiber optic Communication system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c7b",
+            "title": "Concept of AM and FM (No derivation required), Block diagram of AM and FM super-heterodyne receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c7c",
+            "title": "Basic concepts of Wired and Wireless communication, Block diagram of GSM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c7d",
+            "title": "Comparison of 3G, 4G, 5G and 6G communication technologies Block diagrams of Electronic instrumentation system, Digital Multimeter, Function generator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c7e",
+            "title": "Introduction to CRO and Lissajous patterns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5c7f",
+            "title": "Applications of modern electronics – IoT based smart homes, healthcare and agriculture (Case study only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-1-mathematics-for-information-science-1",
+    "code": "GAMAT101",
+    "name": "MATHEMATICS FOR INFORMATION SCIENCE – 1",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-mathematics-for-information-science-1-01-module-1-limits-of-function-values",
+        "title": "Module 1: Limits of function values",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5bbc",
+            "title": "Limits of Function Values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bbd",
+            "title": "Continuity at a point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bbe",
+            "title": "Continuous Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bbf",
+            "title": "Rates of Change: Derivative at a Point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc0",
+            "title": "Derivative as a Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc1",
+            "title": "Second- and Higher-Order Derivatives",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5bc1-q-1",
+                "year": "2024",
+                "question": "What does the sign of the second derivative, $f''(x)$, tell you about the graph of the function $f(x)$?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc1-q-2",
+                "year": "2024",
+                "question": "What is an inflection point, and how is it related to the second derivative?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc1-q-3",
+                "year": "2024",
+                "question": "Briefly explain why higher-order derivatives are important in the context of Taylor series approximations.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc1-q-4",
+                "year": "2024",
+                "question": "Find the second derivative of $f(x) = \\frac{1}{x+1}$. Then, determine the intervals where $f(x)$ is concave up and concave down, and find any inflection points.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc1-q-5",
+                "year": "2024",
+                "question": "Use Leibniz's Rule to find the third derivative of $y = x^3 \\sin(x)$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc2",
+            "title": "Instantaneous Rates of Change",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc3",
+            "title": "Chain Rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc4",
+            "title": "Implicit Differentiation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc5",
+            "title": "Tangents and Normal Lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc6",
+            "title": "Linearization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bc7",
+            "title": "Concavity: The Second Derivative Test for Concavity",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-mathematics-for-information-science-1-02-module-2-functions-of-several-variables-domains-and-ranges",
+        "title": "Module 2: Functions of several variables domains and ranges",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5bc9",
+            "title": "Functions of Several Variables: Domains and Ranges",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5bc9-q-1",
+                "year": "2024",
+                "question": "What is the primary difference between finding the domain of $f(x, y) = \\sqrt{x^2 - y^2}$ and $g(x, y) = \\frac{1}{\\sqrt{x^2 - y^2}}$?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc9-q-2",
+                "year": "2024",
+                "question": "Explain why determining the range of a function of several variables is often more challenging than finding its domain.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc9-q-3",
+                "year": "2024",
+                "question": "Find the domain of the function $f(x, y) = \\frac{\\ln(x+y)}{x-y}$.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc9-q-4",
+                "year": "2024",
+                "question": "Determine the range of the function $g(x, y) = e^{-(x^2+y^2)}$.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5bc9-q-5",
+                "year": "2024",
+                "question": "For the function $h(x, y) = \\frac{x^2 - y^2}{x^2 + y^2}$, find its domain and discuss its range.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bca",
+            "title": "Level curves of two variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bcb",
+            "title": "Limits for functions of two variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bcc",
+            "title": "Continuity for functions of two variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bcd",
+            "title": "Partial derivatives of a functions of more than two variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bce",
+            "title": "Partial derivatives and continuity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bcf",
+            "title": "Second- Order partial derivatives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd0",
+            "title": "The mixed derivative theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd1",
+            "title": "The Chain Rule: Functions of two variables",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-mathematics-for-information-science-1-03-module-3-the-chain-rule-functions-of-three-variables",
+        "title": "Module 3: The chain rule functions of three variables",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5bd3",
+            "title": "The Chain Rule: Functions of three Variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd4",
+            "title": "Directional Derivatives in the Plane",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd5",
+            "title": "Interpretation of the Directional Derivative",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd6",
+            "title": "Gradient",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd7",
+            "title": "Properties of the Directional Derivative",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd8",
+            "title": "Local Extreme Values for Functions of Two Variables: Relative extrema",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bd9",
+            "title": "First derivative theorem for local extreme values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bda",
+            "title": "Critical point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bdb",
+            "title": "saddle point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bdc",
+            "title": "Second Derivative Test for Local Extreme Values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5bdd",
+            "title": "Absolute Maxima and Minima on Closed Bounded Regions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-mathematics-for-information-science-1-04-module-4-constrained-maxima-and-minima",
+        "title": "Module 4: Constrained maxima and minima",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5bdf",
+            "title": "Constrained Maxima and Minima",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5be0",
+            "title": "The Method of Lagrange Multipliers with one constraint",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5be1",
+            "title": "The Method of Lagrange Multipliers with two constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5be2",
+            "title": "Method of Steepest Descent (only two variables)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5be2-q-1",
+                "year": "2024",
+                "question": "In the Method of Steepest Descent, why do we use the *negative* of the gradient as the direction of movement?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5be2-q-2",
+                "year": "2024",
+                "question": "What is the role of the \"line search\" in the Method of Steepest Descent?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5be2-q-3",
+                "year": "2024",
+                "question": "Can the Method of Steepest Descent guarantee finding a global minimum for any function? Explain why or why not.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5be2-q-4",
+                "year": "2024",
+                "question": "Consider the function $f(x, y) = x^2 - 4x + y^2 - 6y + 15$. Use the Method of Steepest Descent to find the minimum, starting from $(x_0, y_0) = (0, 0)$. Perform two iterations.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5be2-q-5",
+                "year": "2024",
+                "question": "For the function $f(x, y) = e^{-(x^2+y^2)}$, what is the direction of steepest descent at the point $(1, 1)$?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5be3",
+            "title": "LPP- Formation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5be4",
+            "title": "Solution of LPP using graphic method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-1-physics-for-information-science",
+    "code": "GAPHT121",
+    "name": "PHYSICS FOR INFORMATION SCIENCE",
+    "branchId": "cs",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "cs-1-physics-for-information-science-01-module-1-electrical-conductivity",
+        "title": "Module 1: Electrical conductivity",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5d63",
+            "title": "Electrical conductivity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d64",
+            "title": "Classical free electron theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d65",
+            "title": "Electrical conductivity in metals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d66",
+            "title": "Fermi Dirac distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d67",
+            "title": "Variation of Fermi function with temperature",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d68",
+            "title": "Fermi Energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d69",
+            "title": "Energy bands",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d6a",
+            "title": "Classification of materials into conductor, semiconductor and insulator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d6b",
+            "title": "Superconductivity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d6c",
+            "title": "Transition temperature",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d6d",
+            "title": "Critical field",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d6e",
+            "title": "Meissner effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d6f",
+            "title": "Type I and Type II Super conductors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d70",
+            "title": "BCS Theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d71",
+            "title": "Applications of superconductors.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-physics-for-information-science-02-module-2-quantum-mechanics",
+        "title": "Module 2: Quantum mechanics",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5d73",
+            "title": "Quantum Mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d74",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d75",
+            "title": "Concept of uncertainty and conjugate observables (qualitative)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d76",
+            "title": "Uncertainty principle (statement only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d77",
+            "title": "Application of uncertainty principle- Absence of electron inside nucleus - Natural line broadening",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d78",
+            "title": "Wave function – properties - physical interpretation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d79",
+            "title": "Formulation of time dependent and time independent Schrodinger equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d7a",
+            "title": "Particle in a one- dimensional box - Derivation of energy eigen values and normalized wave function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d7b",
+            "title": "Quantum Mechanical Tunnelling (Qualitative)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-physics-for-information-science-03-module-3-semiconductor-physics",
+        "title": "Module 3: Semiconductor physics",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5d7d",
+            "title": "Semiconductor Physics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d7e",
+            "title": "Intrinsic semiconductor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d7f",
+            "title": "Derivation of density of electrons in conduction band and density of holes in valence band",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d80",
+            "title": "Intrinsic carrier concentration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d81",
+            "title": "Variation of Intrinsic carrier concentration with temperature",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d82",
+            "title": "Extrinsic semiconductor (qualitative)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d83",
+            "title": "Formation of p-n junction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d84",
+            "title": "Fermi level in semiconductors-intrinsic and extrinsic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d85",
+            "title": "Energy band diagram of p-n junction - Qualitative description of charge flow across a p-n junction - Forward and reverse biased p-n junctions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d86",
+            "title": "Diode equation (Derivation)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d87",
+            "title": "I-V Characteristics of p-n junction",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-1-physics-for-information-science-04-module-4-semiconductor-devices",
+        "title": "Module 4: Semiconductor devices",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5d89",
+            "title": "Semiconductor Devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d8a",
+            "title": "Semiconductor devices- Rectifiers- Full wave and Half wave.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d8b",
+            "title": "Zener diode-VI characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d8c",
+            "title": "Tunnel diode-VI characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d8d",
+            "title": "Semiconductor Laser (Construction and working)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d8e",
+            "title": "Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d8f",
+            "title": "Photonic devices (Qualitative treatment only) - Photo detectors (Junction and PIN photodiodes)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d90",
+            "title": "Solar cells- IV Characteristics, Efficiency, Stringing of Solar cells to solar panel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d91",
+            "title": "Light Emitting Diode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5d92",
+            "title": "Applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

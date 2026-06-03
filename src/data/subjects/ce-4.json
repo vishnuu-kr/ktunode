@@ -1,0 +1,3263 @@
+[
+  {
+    "id": "ce-4-advanced-solid-mechanics",
+    "code": "PECET411",
+    "name": "ADVANCED SOLID MECHANICS",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-advanced-solid-mechanics-01-module-1-elementary-concept-of-elasticity",
+        "title": "Module 1: Elementary concept of elasticity",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba8109e9",
+            "title": "Elementary concept of elasticity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ea",
+            "title": "stresses in three dimensions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109eb",
+            "title": "Principal Stresses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ec",
+            "title": "Stress Invariants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ed",
+            "title": "Mohr's Circle for 3-D state of stress",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ee",
+            "title": "Octahedral Stresses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ef",
+            "title": "State of pure shear",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f0",
+            "title": "plane stress",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f1",
+            "title": "Differential equations of equilibrium",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f2",
+            "title": "plane stress problems and plane strain problems comparison",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-advanced-solid-mechanics-02-module-2-analysis-of-strain",
+        "title": "Module 2: Analysis of strain",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba8109f4",
+            "title": "Analysis of strain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f5",
+            "title": "State of strain at a point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f6",
+            "title": "Strain Invariant",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f7",
+            "title": "Principal Strains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f8",
+            "title": "Plane state of strain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109f9",
+            "title": "Strain measurements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109fa",
+            "title": "Compatibility conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109fb",
+            "title": "Energy Methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109fc",
+            "title": "Work done by forces and elastic strain energy stored",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109fd",
+            "title": "Reciprocal relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109fe",
+            "title": "Theorem of virtual work",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-advanced-solid-mechanics-03-module-3-bending-of-beams",
+        "title": "Module 3: Bending of beams",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810a00",
+            "title": "Bending of beams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a01",
+            "title": "Asymmetrical bending",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a02",
+            "title": "Shear centre",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a03",
+            "title": "Bending of curved beams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a04",
+            "title": "Stress distribution in beam with rectangular, circular and trapezoidal cross- section",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a05",
+            "title": "Deflection of thick curved bars",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a06",
+            "title": "Axisymmetric problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a07",
+            "title": "Thick walled cylinder subjected to internal and external pressures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a08",
+            "title": "Compound cylinders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a09",
+            "title": "Shrink fit",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-advanced-solid-mechanics-04-module-4-introduction-to-mechanics-of-composite-materials",
+        "title": "Module 4: Introduction to mechanics of composite materials",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810a0b",
+            "title": "Introduction to Mechanics of Composite Materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a0c",
+            "title": "Lamina and Laminates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a0d",
+            "title": "Micromechanics of FRP Composites",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a0e",
+            "title": "Introduction to Fracture Mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a0f",
+            "title": "Basic modes of fracture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810a10",
+            "title": "Fracture toughness evaluation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-architectural-engineering",
+    "code": "PECET415",
+    "name": "ARCHITECTURAL ENGINEERING",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-architectural-engineering-01-module-1-definition-of-architecture-historical-development-of-architecture",
+        "title": "Module 1: Definition of architecture historical development of architecture",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810bb6",
+            "title": "Definition of architecture –Historical development of architecture.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bb7",
+            "title": "Principles of architectural composition – Unity/ harmony – character– balance – proportion – scale –rhythm –– Accentuation and contrast.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bb8",
+            "title": "Organising principles in architecture – Symmetry – hierarchy – axis – linear – concentric, radial – and asymmetric grouping – primary and secondary masses.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bb9",
+            "title": "Form and Space in architecture – Positive and negative space – Defining space with horizontal and vertical elements -qualities of architectural space",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bba",
+            "title": "Architecture Design Process: The 7 phases : The pre-design phase: The schematic design phase: The design development phase: The construction documents phase: The building permit phase: The bidding and negotiation phase: The construction administration phase.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-architectural-engineering-02-module-2-acoustics-fundamentals-intensity-of-sound",
+        "title": "Module 2: Acoustics fundamentals intensity of sound",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810bbc",
+            "title": "Acoustics, fundamentals: Intensity of sound- Watts/m2- Bel- Decibel scales- dBA-Phon. Addition of sound levels.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bbd",
+            "title": "Acoustical Defects- Echoes, Reverberation, Foci and Dead Spots, Loudness, Noise",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bbe",
+            "title": "Acoustics, applications: Recommended sound levels for interiors - Air and structure born noises-Measures of noise control- Source-path and receiving end. TL value and computation of TL value, Flanking paths.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bbf",
+            "title": "Sound absorption-materials and fixings. Reverberation-Sabines formula-Eyrings modification.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc0",
+            "title": "Natural lighting: Visual task requirements, Units of Light, Light, Vision and Buildings, Standards of Lighting and Visual comfort-The sky as a source of light, Daylight factor, Recommended daylight factors for interiors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc1",
+            "title": "Design of side-lit windows using Daylight factor graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc2",
+            "title": "Artificial lighting: Artificial lighting- illumination requirements-lux meter – lamps and luminaries – polar distribution curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc3",
+            "title": "Design of artificial lighting – lumen method – point by point method.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-architectural-engineering-03-module-3-thermal-comfort-factors-affecting-thermal-comfort",
+        "title": "Module 3: Thermal comfort factors affecting thermal comfort",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810bc5",
+            "title": "Thermal comfort: Factors affecting thermal comfort- effective Temperature",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc6",
+            "title": "Thermal comfort indices-ET-CET Charts- Bioclimatic chart- Psychrometry and Psycrometric chart.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc7",
+            "title": "Earth-Sun relationship: Sun’s apparent movement with respect to the earth. Solar angles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc8",
+            "title": "Computation of solar radiation on different surfaces-solar path diagram-shadow-throw concept and design of shading devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bc9",
+            "title": "Thermal design of buildings: Thermo physical properties of building materials and thermal control-.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bca",
+            "title": "Concept for electrical load calculation of structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bcb",
+            "title": "Basic concept of HVAC load calculation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bcc",
+            "title": "Functional protection: Causes of fire, Mechanism of fire spread in buildings, classification of fire-High temperature effects and combustibility of building materials and structure- Fire alarm system, and means of escape. Firefighting installations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-architectural-engineering-04-module-4-architecture-design-aspect-basic-anthropometrics",
+        "title": "Module 4: Architecture design aspect basic anthropometrics",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810bce",
+            "title": "Architecture Design aspect: basic anthropometrics- human functions and their implications for space requirements- movement and circulation diagrams- special interpretations- various activities and their relationship with spaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bcf",
+            "title": "Perspective views of form: 2-point perspective and 3-point perspective",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bd0",
+            "title": "Climate responsive architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bd1",
+            "title": "Traditional Architecture of Kerala- Scope of Vastuvidya",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bd2",
+            "title": "Dimensional system in Vastuvidya – concept of selection of perimeter - proportions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bd3",
+            "title": "Energy efficiency in buildings – Energy assessment in buildings – Green building rating guidelines – case studies.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-cartography-and-gis",
+    "code": "PECET414",
+    "name": "CARTOGRAPHY AND GIS",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-cartography-and-gis-01-module-1-maps-and-scale-map",
+        "title": "Module 1: Maps and scale map",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810ab0",
+            "title": "Maps and Scale: Map - types of maps - interpreting maps - map scale: plain linear, statement, diagonal and comparative, representative fraction.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ab1",
+            "title": "Map Projections: General principles of map projections – classification – cylindrical, conical, and zenithally projections – coordinate systems - UTM – choice of projections.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-cartography-and-gis-02-module-2-map-layout-and-map-production-data-acquisition-spatial-and-non",
+        "title": "Module 2: Map layout and map production data acquisition spatial and non",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810ab3",
+            "title": "Map Layout and Map Production: Data acquisition –Spatial and Non-Spatial Data -Mechanics of map construction -Map design and layout - map reproduction methods: tradition and modern - Cartographic Publication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ab4",
+            "title": "Modern Cartography: Theories - Geodata Infrastructures - Geovisualization – Visual Data Analytics - Location based services - Multimedia Cartography - Georelief – Mobile Cartography",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-cartography-and-gis-03-module-3-introduction-nature-of-gis-real-world-and-representations-modelling-map",
+        "title": "Module 3: Introduction nature of gis real world and representations modelling map",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810ab6",
+            "title": "Introduction: Nature of GIS – Real world and representations: Modelling, Maps, Databases and Spatial Databases - Geographic phenomena: fields, objects and boundaries - Data types: nominal, ordinal, interval and ratio - Attribute data.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ab7",
+            "title": "Data Representation: Tessellations and vector approaches - Topology and spatial relationships - Scale and resolution - Representations of geographic fields and objects - Temporal dimension.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-cartography-and-gis-04-module-4-data-management-gis-software",
+        "title": "Module 4: Data management gis software",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810ab9",
+            "title": "Data Management: GIS software - Spatial Data Infrastructure - Spatial data handling - Database management systems – GIS and spatial databases - Data Input: Spatial data input –Data quality - Data preparation – Point data transformation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-civil-engineering-modelling-lab",
+    "code": "PCCEL408",
+    "name": "CIVIL ENGINEERING MODELLING LAB",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-01-module-1-review-of-drafting-software",
+        "title": "Module 1: Review of drafting software",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d46",
+            "title": "Review of drafting software:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d47",
+            "title": "Plan a single storeyed residential building with flat roof for given requirements and draw the site plan, plan, section and elevation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-02-module-2-plan-a-double-storeyed-residential-building-with-sloped-roof-for-a-set-",
+        "title": "Module 2: Plan a double storeyed residential building with sloped roof for a set ",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d49",
+            "title": "Plan a double storeyed residential building with sloped roof for a set of given requirements for a given plot and draw the site plan, plan, section and elevation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d4a",
+            "title": "Prepare a file with hardcopies of drawings ready to submit for approval from the authorities.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-03-module-3-plan-a-public-buildingoffice-complex-public-health-centre-commercial-ed",
+        "title": "Module 3: Plan a public buildingoffice complex public health centre commercial ed",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d4c",
+            "title": "Plan a public building–office complex, public health centre, commercial, educational, post office, bank and draw the plan, section and elevation: Any two.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-04-module-4-plan-a-public-buildingoffice-complex-public-health-centre-commercial-ed",
+        "title": "Module 4: Plan a public buildingoffice complex public health centre commercial ed",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d4e",
+            "title": "Plan a public building–office complex, public health centre, commercial, educational, post office, bank and draw the plan, section and elevation: Any two.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-05-module-5-plan-and-prepare-plumbing-and-sanitary-drawings-of-a-building",
+        "title": "Module 5: Plan and prepare plumbing and sanitary drawings of a building",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d50",
+            "title": "Plan and prepare plumbing and sanitary drawings of a building.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-06-module-6-plan-and-prepare-electrical-drawings-of-a-building",
+        "title": "Module 6: Plan and prepare electrical drawings of a building",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d52",
+            "title": "Plan and prepare electrical drawings of a building.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-07-module-7-introduction-to-bim-software",
+        "title": "Module 7: Introduction to bim software",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d54",
+            "title": "Introduction to BIM Software:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d55",
+            "title": "Draw plan, section & elevation of a single storied residential building (Expt 1or 2 )",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-08-module-8-introduction-to-project-planning-software",
+        "title": "Module 8: Introduction to project planning software",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d57",
+            "title": "Introduction to Project Planning Software:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cd56b5e963ba810d58",
+            "title": "Schedule the construction sequence of a single storied residential building",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-09-module-9-preparation-of-a-contour-map-of-a-site-from-the-provided-total-station-",
+        "title": "Module 9: Preparation of a contour map of a site from the provided total station ",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d5a",
+            "title": "Preparation of a contour map of a site from the provided total station survey data",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-10-module-10-earthwork-estimation-from-the-provided-total-station-survey-data",
+        "title": "Module 10: Earthwork estimation from the provided total station survey data",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d5c",
+            "title": "Earthwork estimation from the provided total station survey data",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-11-module-11-simulation-of-a-small-water-supply-pipe-network-using-epanet",
+        "title": "Module 11: Simulation of a small water supply pipe network using epanet",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d5e",
+            "title": "Simulation of a small water supply pipe network using EPANET",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-civil-engineering-modelling-lab-12-module-12-land-use-data-preparation-using-gis",
+        "title": "Module 12: Land use data preparation using gis",
+        "topics": [
+          {
+            "id": "689f15cd56b5e963ba810d60",
+            "title": "Land use data preparation using GIS",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-concrete-technology",
+    "code": "PECET412",
+    "name": "CONCRETE TECHNOLOGY",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-concrete-technology-01-module-1-cement",
+        "title": "Module 1: Cement",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a3c",
+            "title": "Cement - chemical composition, Bogue’s compounds, hydration, hydrated structure, various types of cement, testing of cement as per Indian standard – standard consistency, setting times, fineness, specific gravity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a3d",
+            "title": "Aggregates - Utility in concrete, fine and coarse aggregates, effect of geometry & texture, strength, mechanical properties, moisture content, water absorption, bulking of sand, deleterious substances, sieve analysis, aggregate grading and gradation curves - testing as per Indian Standards",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-1",
+                "year": "2024",
+                "question": "Briefly explain the role of aggregates in concrete.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-2",
+                "year": "2024",
+                "question": "Differentiate between fine and coarse aggregates.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-3",
+                "year": "2024",
+                "question": "How does the shape of an aggregate affect concrete properties? Give an example of a desirable shape and an undesirable shape.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-4",
+                "year": "2024",
+                "question": "What is the significance of aggregate crushing value, and what is a typical acceptable value for concrete used in pavements?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-5",
+                "year": "2024",
+                "question": "Explain the phenomenon of bulking of sand.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-6",
+                "year": "2024",
+                "question": "What is the danger of using aggregates containing organic impurities? How is this tested?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-7",
+                "year": "2024",
+                "question": "A batch of concrete is made with 1000 kg of sand, which is found to have 6% moisture content. If the sand needs to be at SSD condition (which has 2% water absorption), what is the effective dry weight of sand in the batch? (Assume the moisture content is surface moisture).",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-8",
+                "year": "2024",
+                "question": "What information can be obtained from a sieve analysis, and why is it important for concrete mix design?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-9",
+                "year": "2024",
+                "question": "What is the difference between a well-graded aggregate and a single-sized aggregate, as shown on a gradation curve?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a3d-q-10",
+                "year": "2024",
+                "question": "List three important properties of aggregates and their corresponding Indian Standard test codes.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cc56b5e963ba810a3e",
+            "title": "Admixtures - types, necessity and benefit . Mineral admixture - Fly ash, silica fume, blast furnace slag, and agro waste based pozzolans. Chemical admixtures - Accelerator, retarder, plasticizer and superplasticizer, their functions and dosage.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-concrete-technology-02-module-2-properties-of-fresh-concrete",
+        "title": "Module 2: Properties of fresh concrete",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a40",
+            "title": "Properties of fresh concrete - factors affecting workability , slump test compacting factor test,Vee Bee consistometer test, flow test.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a41",
+            "title": "Properties of hardened concrete – modulus of elasticity, compressive strength, split tensile strength, flexural strength. effect of water cement ratio on properties of concrete.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a42",
+            "title": "Maturity of concrete (concept only). Creep - factors affecting creep - effect of creep Shrinkage- factors affecting and types.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a43",
+            "title": "Non-destructive testing of concrete - surface hardness test- ultrasonic pulse velocity method, pull-out test- core test, measuring reinforcement cover.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-concrete-technology-03-module-3-mix-proportioning",
+        "title": "Module 3: Mix proportioning",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a45",
+            "title": "Mix proportioning- Mix design ,nominal mix, design mix , concept of mix design, variables of proportioning - general considerations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a46",
+            "title": "Various methods of mix design - design of concrete mix as per IS 10262- 2019 Statistical quality control of concrete, mean strength, standard deviation, coefficient of variation, sampling and testing, acceptance criteria.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a47",
+            "title": "Special concrete - lightweight concrete, heavy weight concrete ,high strength concrete, high performance concrete, self compacting concrete, roller compacted concrete, fibre reinforced concrete - polymer concrete- pumped concrete - ready mix concrete -geopolymer/alkali activated concrete.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-concrete-technology-04-module-4-durability-of-concrete-factors-affecting-durability-permeability-cracki",
+        "title": "Module 4: Durability of concrete factors affecting durability permeability cracki",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a49",
+            "title": "Durability of concrete, factors affecting durability, permeability, cracking, reinforcement corrosion, carbonation, chloride penetration, sulphate attack, acid attack, fire resistance, frost damage, alkali silica reaction.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a4a",
+            "title": "3D concrete printing, underwater concrete, mass concrete; slip form construction, Sprayed Concrete.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cc56b5e963ba810a4a-q-1",
+                "year": "2024",
+                "question": "What is the primary concern when placing mass concrete, and what are two common methods used to mitigate this concern?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a4a-q-2",
+                "year": "2024",
+                "question": "Explain the role of anti-washout admixtures (AWAs) in underwater concrete.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a4a-q-3",
+                "year": "2024",
+                "question": "Compare and contrast the dry-mix and wet-mix processes for sprayed concrete (shotcrete).",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a4a-q-4",
+                "year": "2024",
+                "question": "What is \"buildability\" in the context of 3D concrete printing, and what factors influence it?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a4a-q-5",
+                "year": "2024",
+                "question": "For slip form construction, why is a consistent and plastic concrete mix crucial?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a4a-q-6",
+                "year": "2024",
+                "question": "Imagine you are designing a large concrete dam. Which specific challenges related to durability would you prioritize, and how would you address them?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-design-of-concrete-structures",
+    "code": "PBCET404",
+    "name": "DESIGN OF CONCRETE STRUCTURES",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-design-of-concrete-structures-01-module-1-properties-of-concrete-and-steel",
+        "title": "Module 1: Properties of concrete and steel",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba8109b8",
+            "title": "Properties of Concrete and Steel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109b9",
+            "title": "Philosophies of Design by Limit State Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ba",
+            "title": "Introduction of IS 456:2000 design provisions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109bb",
+            "title": "Limit State of Collapse in Flexure - Singly Reinforced Rectangular Beams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109bc",
+            "title": "Computation of Parameters of Governing Equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109bd",
+            "title": "Determination of Neutral Axis Depth and Computation of Moment of Resistance- Numerical Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109be",
+            "title": "Limit State of Collapse in Shear - Numerical Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109bf",
+            "title": "Bond, Anchorage, Development Length and Splicing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109c0",
+            "title": "Torsion in Beams - Limit State of Collapse",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109c1",
+            "title": "Numerical Problems on design and analysis of Singly Reinforced Rectangular Beams",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-design-of-concrete-structures-02-module-2-doubly-reinforced-beams",
+        "title": "Module 2: Doubly reinforced beams",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba8109c3",
+            "title": "Doubly Reinforced Beams - Theory and Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109c4",
+            "title": "Flanged Beams - Theory and IS Code provisions only",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109c5",
+            "title": "One-way slabs - Basic Principles, Theory and design - Numerical Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109c6",
+            "title": "Design of Two-way Slabs - Numerical Problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-design-of-concrete-structures-03-module-3-limit-state-of-serviceability",
+        "title": "Module 3: Limit state of serviceability",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba8109c8",
+            "title": "Limit State of Serviceability - Introduction to IS code provisions only",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109c9",
+            "title": "Compression members - Definitions, Classifications, Guidelines and Assumptions - modes of failure.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ca",
+            "title": "Analysis of Short Axially Loaded Compression Members under Axial Load with Uniaxial Bending & Biaxial bending - Numerical Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109cb",
+            "title": "Design of Short Columns under Axial Load with Uniaxial Bending & Biaxial bending - Numerical Problems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-design-of-concrete-structures-04-module-4-foundations",
+        "title": "Module 4: Foundations",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba8109cd",
+            "title": "Foundations - Shallow foundations- isolated foundations – Design of square and rectangular foundation.- Numerical Problems ( Only axially loaded condition is expected)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109ce",
+            "title": "Modelling and design of a simple framed structure in any structural analysis and design software. (Example: A double storied structure with three rooms in GF and FF)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-economics-for-engineers",
+    "code": "UCHUT346",
+    "name": "ECONOMICS FOR ENGINEERS",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-economics-for-engineers-01-module-1-basic-economics-concepts",
+        "title": "Module 1: Basic economics concepts",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810bf5",
+            "title": "Basic Economics Concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bf6",
+            "title": "Basic economic problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bf7",
+            "title": "Production Possibility Curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bf8",
+            "title": "Utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bf9",
+            "title": "Law of diminishing marginal utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bfa",
+            "title": "Law of Demand",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bfb",
+            "title": "Law of supply",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bfc",
+            "title": "Elasticity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bfd",
+            "title": "measurement of elasticity and its applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bfe",
+            "title": "Equilibrium",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810bff",
+            "title": "Changes in demand and supply and its effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c00",
+            "title": "Production function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c01",
+            "title": "Law of variable proportion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c02",
+            "title": "Economies of Scale",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c03",
+            "title": "Internal and External Economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c04",
+            "title": "Cobb-Douglas Production Function",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-economics-for-engineers-02-module-2-cost-concepts",
+        "title": "Module 2: Cost concepts",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810c06",
+            "title": "Cost concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c07",
+            "title": "Social cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c08",
+            "title": "private cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c09",
+            "title": "Explicit and implicit cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c0a",
+            "title": "Sunk cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c0b",
+            "title": "Opportunity cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c0c",
+            "title": "short run cost curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c0d",
+            "title": "Revenue concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c0e",
+            "title": "Firms and their objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c0f",
+            "title": "Types of firms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c10",
+            "title": "Markets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c11",
+            "title": "Perfect Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c12",
+            "title": "Monopoly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c13",
+            "title": "Monopolistic Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c14",
+            "title": "Oligopoly (features and equilibrium of a firm)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-economics-for-engineers-03-module-3-monetary-system",
+        "title": "Module 3: Monetary system",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810c16",
+            "title": "Monetary System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c17",
+            "title": "Money",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c18",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c19",
+            "title": "Central Banking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c1a",
+            "title": "Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c1b",
+            "title": "Causes and Effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c1c",
+            "title": "Measures to Control Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c1d",
+            "title": "Monetary and Fiscal policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c1e",
+            "title": "Deflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c1f",
+            "title": "Taxation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c20",
+            "title": "Direct and Indirect taxes (merits and demerits)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c21",
+            "title": "GST",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c22",
+            "title": "National income",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c23",
+            "title": "Concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c24",
+            "title": "Circular Flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c25",
+            "title": "Methods of Estimation and Difficulties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c26",
+            "title": "Stock Market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c27",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c28",
+            "title": "Problems faced by the Indian stock market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c29",
+            "title": "Demat Account and Trading Account",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c2a",
+            "title": "Stock market Indicators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c2b",
+            "title": "SENSEX and NIFTY",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-economics-for-engineers-04-module-4-value-analysis-and-value-engineering",
+        "title": "Module 4: Value analysis and value engineering",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810c2d",
+            "title": "Value Analysis and value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c2e",
+            "title": "Cost Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c2f",
+            "title": "Exchange Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c30",
+            "title": "Use Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c31",
+            "title": "Esteem Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c32",
+            "title": "Aims, Advantages and Application areas of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c33",
+            "title": "Value Engineering Procedure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c34",
+            "title": "Break-even Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c35",
+            "title": "Cost-Benefit Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c36",
+            "title": "Capital Budgeting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810c37",
+            "title": "Process planning",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-engineering-geology",
+    "code": "PECET416",
+    "name": "ENGINEERING GEOLOGY",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-engineering-geology-01-module-1-relevance-of-geology-in-civil-engineering",
+        "title": "Module 1: Relevance of geology in civil engineering",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810ac7",
+            "title": "Relevance of Geology in Civil Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ac8",
+            "title": "Branches of Geology.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ac9",
+            "title": "Surface Processes of the earth -Weathering -Types of weathering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810aca",
+            "title": "Products of weathering.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810acb",
+            "title": "Geological processes by rivers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810acc",
+            "title": "Geological work by Sea waves and currents and coastal protection measures.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810acd",
+            "title": "Landslides-types, causes and controlling measures.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ace",
+            "title": "Internal Processes of the earth- Earthquakes- Causes and effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810acf",
+            "title": "Seismic waves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad0",
+            "title": "concept of intensity and magnitude of earthquake",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad1",
+            "title": "Seismic zones of India.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad2",
+            "title": "Basics of seismic safety factor.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-engineering-geology-02-module-2-mineralogy",
+        "title": "Module 2: Mineralogy",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810ad4",
+            "title": "Mineralogy- Physical properties of minerals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad5",
+            "title": "physical properties and chemical composition of minerals like quartz",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad6",
+            "title": "orthoclase",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad7",
+            "title": "plagioclase",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad8",
+            "title": "biotite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ad9",
+            "title": "muscovite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ada",
+            "title": "hornblende",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810adb",
+            "title": "augite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810adc",
+            "title": "hypersthene",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810add",
+            "title": "calcite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ade",
+            "title": "gypsum.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810adf",
+            "title": "Petrology- Igneous rocks - Chemical and mineralogical classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae0",
+            "title": "structures & textures.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae1",
+            "title": "Sedimentary rocks-types based on mode of formation and structures.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae2",
+            "title": "Metamorphic rocks-structures only.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae3",
+            "title": "Megascopic study of granite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae4",
+            "title": "dolerite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae5",
+            "title": "basalt",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cc56b5e963ba810ae5-q-1",
+                "year": "2024",
+                "question": "What are the two primary minerals that make up the majority of basalt?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810ae5-q-2",
+                "year": "2024",
+                "question": "Describe the texture of basalt and explain what it indicates about its formation.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810ae5-q-3",
+                "year": "2024",
+                "question": "Name one engineering application where basalt's high hardness and durability are advantageous.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810ae5-q-4",
+                "year": "2024",
+                "question": "What is a vesicular texture, and what is its engineering significance?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810ae5-q-5",
+                "year": "2024",
+                "question": "Identify a potential geotechnical problem associated with basalt flows that contain interflow sediments.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810ae5-q-6",
+                "year": "2024",
+                "question": "If you encountered basalt with large, visible crystals embedded in a fine-grained matrix, what texture would you describe it as? What does this texture imply about the cooling history of the lava?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae6",
+            "title": "sandstone",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae7",
+            "title": "limestone",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae8",
+            "title": "shale",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810ae9",
+            "title": "gneiss",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810aea",
+            "title": "marble and charnockite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810aeb",
+            "title": "Rock types of Kerala.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-engineering-geology-03-module-3-hydrogeology",
+        "title": "Module 3: Hydrogeology",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810aed",
+            "title": "Hydrogeology- Origin & Occurrence of groundwater",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810aee",
+            "title": "vertical distribution of groundwater.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810aef",
+            "title": "Aquifers and types of aquifers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af0",
+            "title": "Porosity and Permeability/hydraulic conductivity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af1",
+            "title": "Darcy's Law.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af2",
+            "title": "Electrical resistivity survey for groundwater exploration.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af3",
+            "title": "Seawater intrusion in Coastal area",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af4",
+            "title": "Ghyben-Herzberg relation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af5",
+            "title": "Problems created by groundwater to civil engineering structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af6",
+            "title": "Methods to control groundwater problems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-engineering-geology-04-module-4-structural-geology-attitude-of-rocks-dip-and-strike",
+        "title": "Module 4: Structural geology attitude of rocks dip and strike",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810af8",
+            "title": "Structural Geology– Attitude of rocks – Dip and Strike.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810af9",
+            "title": "Terminology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810afa",
+            "title": "brief classification and engineering significance of folds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810afb",
+            "title": "faults and joints.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810afc",
+            "title": "Engineering Geology -Significance of geological Investigations for civil engineering projects.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810afd",
+            "title": "Geological part of site investigation for the construction of dams & reservoirs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810afe",
+            "title": "tunnels and highways.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-environmental-law-and-policy",
+    "code": "PECET418",
+    "name": "ENVIRONMENTAL LAW AND POLICY",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-environmental-law-and-policy-01-module-1-basic-concepts-in-environmental-law-an-introduction-to-the-legal-system",
+        "title": "Module 1: Basic concepts in environmental law an introduction to the legal system",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b61",
+            "title": "Basic Concepts in Environmental Law: An introduction to the legal system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b62",
+            "title": "Constitution, Acts, Rules, Regulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b63",
+            "title": "Indian Judiciary, Doctrine of precedents, judicial review, Writ petitions, PIL–liberalization of the rule of locus standi, Judicial activism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b64",
+            "title": "Introduction to environmental laws in India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b65",
+            "title": "Constitutional provisions, Stockholm conference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b66",
+            "title": "Bhopal gas tragedy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b67",
+            "title": "Rio conference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b68",
+            "title": "General principles in Environmental law: Precautionary principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b69",
+            "title": "Polluter pays principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b6a",
+            "title": "Sustainable development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b6b",
+            "title": "Public trust doctrine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b6c",
+            "title": "Overview of legislations and basic concepts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-environmental-law-and-policy-02-module-2-forest-wildlife-and-biodiversity-related-laws-evolution-and-jurispruden",
+        "title": "Module 2: Forest wildlife and biodiversity related laws evolution and jurispruden",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b6e",
+            "title": "Forest, Wildlife and Biodiversity related laws :Evolution and Jurisprudence of Forest and Wildlife laws",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b6f",
+            "title": "Colonial forest policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b70",
+            "title": "Forest policies after independence 2 Statutory framework on Forests, Wildlife and Biodiversity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b71",
+            "title": "IFA, 1927",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b72",
+            "title": "WLPA, 1972",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b73",
+            "title": "FCA, 1980",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b74",
+            "title": "Biological Diversity Act, 2002",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b75",
+            "title": "Forest Rights Act, 2006",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b76",
+            "title": "Strategies for conservation–Project Tiger, Elephant, Rhino, Modulew leopard",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-environmental-law-and-policy-03-module-3-air-water-and-marine-laws-national-water-policy-and-some-state-policies",
+        "title": "Module 3: Air water and marine laws national water policy and some state policies",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b78",
+            "title": "Air, Water and Marine Laws: National Water Policy and some state policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b79",
+            "title": "Laws relating to prevention of pollution, access and management of water and institutional mechanism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b7a",
+            "title": "Water Act, 1974",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b7b",
+            "title": "Water Cess Act, 1977, EPA, 1986",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b7c",
+            "title": "Pollution Control Boards Ground water and law Judicial remedies and procedures Marine laws of India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b7d",
+            "title": "Coastal zone regulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b7e",
+            "title": "Legal framework on Air pollution: Air Act,1981",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b7f",
+            "title": "EPA, 1986",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-environmental-law-and-policy-04-module-4-hazardous-substances-and-activities-legal-framework-epa-and-rules-made-",
+        "title": "Module 4: Hazardous substances and activities legal framework epa and rules made ",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b81",
+            "title": "Hazardous Substances and Activities Legal framework: EPA and rules made thereunder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b82",
+            "title": "PLI Act, 191 Principles of strict and absolute liability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b83",
+            "title": "International Environmental law : An introduction to International law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b84",
+            "title": "sources of international law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b85",
+            "title": "law of treaties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b86",
+            "title": "signature, ratification Evolution of international environmental law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b87",
+            "title": "Customary principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b88",
+            "title": "Common but differentiated responsibility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b89",
+            "title": "Polluter pays",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-materials-testing-lab",
+    "code": "PCCEL407",
+    "name": "MATERIALS TESTING LAB",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-materials-testing-lab-01-module-1-test-on-stress",
+        "title": "Module 1: Test on stress",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d01",
+            "title": "Test on stress-strain characteristics of mild steel and Tor Steel by conducting uniaxial tension test on rod specimens",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-02-module-2-shear-test-on-mild-steel-rod-compression-testing-machine-and-shear-shac",
+        "title": "Module 2: Shear test on mild steel rod compression testing machine and shear shac",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d03",
+            "title": "Shear test on mild steel rod (Compression Testing Machine and Shear Shackle)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-03-module-3-flexural-behaviour-of-steel-by-conducting-a-bending-test-on-rolled-stee",
+        "title": "Module 3: Flexural behaviour of steel by conducting a bending test on rolled stee",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d05",
+            "title": "Flexural behaviour of steel by conducting a bending test on Rolled steel sections (I cross section)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-04-module-4-torsional-behaviour-and-estimation-of-modulus-of-rigidity-of-steel-by-c",
+        "title": "Module 4: Torsional behaviour and estimation of modulus of rigidity of steel by c",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d07",
+            "title": "Torsional behaviour and estimation of modulus of rigidity of steel by conducting torsion test on rod specimens",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-05-module-5-estimation-of-modulus-of-rigidity-of-steel-and-brass-copper-materials-u",
+        "title": "Module 5: Estimation of modulus of rigidity of steel and brass copper materials u",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d09",
+            "title": "Estimation of modulus of rigidity of steel and brass / copper materials utilizing the principles of torsional vibrations – Torsion Pendulum.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-06-module-6-estimation-of-toughness-of-steel-specimens-by-conducting-a-izod-b-charp",
+        "title": "Module 6: Estimation of toughness of steel specimens by conducting a izod b charp",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d0b",
+            "title": "Estimation of toughness of steel specimens by conducting (a) Izod & (b) Charpy impact tests.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-07-module-7-estimation-of-hardness-properties-of-engineering-materials-such-as-bras",
+        "title": "Module 7: Estimation of hardness properties of engineering materials such as bras",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d0d",
+            "title": "Estimation of hardness properties of engineering materials such as brass, aluminium, copper, steel etc.by performing Brinell hardness test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-08-module-8-estimation-of-hardness-properties-of-engineering-materials-such-as-bras",
+        "title": "Module 8: Estimation of hardness properties of engineering materials such as bras",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d0f",
+            "title": "Estimation of Hardness properties of engineering materials such as brass, aluminium, copper, steel etc.by performing (a) Rockwell hardness test (b) Vicker’s hardness test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-09-module-9-estimation-of-modulus-of-rigidity-of-steel-by-performing-tension-and-co",
+        "title": "Module 9: Estimation of modulus of rigidity of steel by performing tension and co",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d11",
+            "title": "Estimation of modulus of rigidity of steel by performing tension and compression tests on spring specimens.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-10-module-10-flexural-behaviour-of-timber-material-by-performing-bending-tests-on-b",
+        "title": "Module 10: Flexural behaviour of timber material by performing bending tests on b",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d13",
+            "title": "Flexural behaviour of timber material by performing bending tests on beam specimens.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-11-module-11-estimation-of-compressive-strength-of-timber-specimen",
+        "title": "Module 11: Estimation of compressive strength of timber specimen",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d15",
+            "title": "Estimation of compressive strength of timber specimen.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-12-module-12-experiment-on-verification-of-maxwells-reciprocal-theorem",
+        "title": "Module 12: Experiment on verification of maxwells reciprocal theorem",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d17",
+            "title": "Experiment on verification of Maxwell’s reciprocal theorem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-13-module-13-demonstration-of-fatigue-test",
+        "title": "Module 13: Demonstration of fatigue test",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d19",
+            "title": "Demonstration of Fatigue Test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-14-module-14-studydemonstration-of-strain-gauges-and-load-cells",
+        "title": "Module 14: Studydemonstration of strain gauges and load cells",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d1b",
+            "title": "Study/demonstration of Strain Gauges and load cells",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-15-module-15-bend-rebend-test-on-m-s-rods",
+        "title": "Module 15: Bend rebend test on m s rods",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d1d",
+            "title": "Bend & Rebend test on M S Rods",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-16-module-16-tensile-behaviour-of-polymeric-membranes-textiles-fibres-etc",
+        "title": "Module 16: Tensile behaviour of polymeric membranes textiles fibres etc",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d1f",
+            "title": "Tensile behaviour of polymeric membranes, textiles, fibres etc.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-materials-testing-lab-17-module-17-digital-image-correlation-techniques-for-the-study-of-material-behavio",
+        "title": "Module 17: Digital image correlation techniques for the study of material behavio",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810d21",
+            "title": "Digital Image Correlation Techniques for the study of material behaviour under various loading conditions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-mathematics-for-physical-science-4",
+    "code": "GCMAT401",
+    "name": "MATHEMATICS FOR PHYSICAL SCIENCE –  4",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-mathematics-for-physical-science-4-01-module-1-random-variables",
+        "title": "Module 1: Random variables",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba81091b",
+            "title": "Random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81091c",
+            "title": "Discrete random variables and their probability distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81091d",
+            "title": "Cumulative distribution function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81091e",
+            "title": "Expectation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81091f",
+            "title": "Mean and variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810920",
+            "title": "Binomial distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810921",
+            "title": "Poisson distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810922",
+            "title": "Poisson distribution as a limit of the binomial distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810923",
+            "title": "Joint pmf of two discrete random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810924",
+            "title": "Marginal pmf",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810925",
+            "title": "Independent random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810926",
+            "title": "Expected value of a function of two discrete variables.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-mathematics-for-physical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions",
+        "title": "Module 2: Continuous random variables and their probability distributions",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810928",
+            "title": "Continuous random variables and their probability distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810929",
+            "title": "Cumulative distribution function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81092a",
+            "title": "Expectation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81092b",
+            "title": "Mean and variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81092c",
+            "title": "Uniform, Normal and Exponential distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81092d",
+            "title": "Joint pdf of two Continuous random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81092e",
+            "title": "Marginal pdf",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81092f",
+            "title": "Independent random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810930",
+            "title": "Expectation value of a function of two continuous variables.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-mathematics-for-physical-science-4-03-module-3-confidence-intervals",
+        "title": "Module 3: Confidence intervals",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810932",
+            "title": "Confidence Intervals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810933",
+            "title": "Confidence Level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810934",
+            "title": "Confidence Intervals and One-side confidence intervals for a Population Mean for large and small samples (normal distribution and t-distribution)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810935",
+            "title": "Hypotheses and Test Procedures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810936",
+            "title": "Type I and Type II error",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810937",
+            "title": "z Tests for Hypotheses about a Population Mean (for large sample)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810938",
+            "title": "t Test for Hypotheses about a Population Mean (for small sample)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810939",
+            "title": "Tests concerning a population proportion for large and small samples.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-mathematics-for-physical-science-4-04-module-4-newton",
+        "title": "Module 4: Newton",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba81093b",
+            "title": "Newton-Raphson Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81093c",
+            "title": "Gauss Elimination Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81093d",
+            "title": "Gauss - Jordan Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81093e",
+            "title": "Numerical solution of ordinary differential equations-Euler’s method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81093f",
+            "title": "Modified Euler’s method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810940",
+            "title": "Runge - Kutta method of 2nd Order",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810941",
+            "title": "Numerical solution of Laplace equation –Jacobi’s Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810942",
+            "title": "Curve Fitting by Method of Least Squares - Straight lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810943",
+            "title": "Parabola.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-mechanics-of-fluid-flow",
+    "code": "PECET413",
+    "name": "MECHANICS OF FLUID FLOW",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-mechanics-of-fluid-flow-01-module-1-basic-concepts-and-fundamentals-fluid-statics",
+        "title": "Module 1: Basic concepts and fundamentals fluid statics",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a5d",
+            "title": "Basic Concepts and Fundamentals: Fluid statics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a5e",
+            "title": "Cartesian Tensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a5f",
+            "title": "Fluid Kinematics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a60",
+            "title": "Description of fluid motion –Types of motion of fluid elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a61",
+            "title": "Vorticity and circulation– Concept of rotational and irrotational flows",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a62",
+            "title": "Equation of motion of forced and free vortex flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a63",
+            "title": "Stream function and its relation with velocity field",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a64",
+            "title": "`1 – Relation between stream function and velocity potential for a 2-D irrotational and incompressible flow",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-mechanics-of-fluid-flow-02-module-2-pipe-flow-viscous-flow-reynolds-experiment-to-classify-laminar-and-turb",
+        "title": "Module 2: Pipe flow viscous flow reynolds experiment to classify laminar and turb",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a66",
+            "title": "Pipe Flow: Viscous flow: Reynolds experiment to classify laminar and turbulent flows",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a67",
+            "title": "significance of Reynolds number",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a68",
+            "title": "critical Reynolds number",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a69",
+            "title": "shear stress and velocity distribution in a pipe",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a6a",
+            "title": "Hagen Poiseuille equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a6b",
+            "title": "Turbulent flow:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a6c",
+            "title": "Chezy’s equation Moody’s chart",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a6d",
+            "title": "siphon",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a6e",
+            "title": "transmission of power through pipes",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cc56b5e963ba810a6e-q-1",
+                "year": "2024",
+                "question": "A pump supplies water at a head of 50 m to a hydraulic motor located 20 m below the pump. The pipe is 100 m long, with a diameter of 0.1 m. The flow rate is 0.05 m³/s. The kinematic viscosity of water is $1 \\times 10^{-6} \\text{ m}^2/\\text{s}$, and the pipe is smooth. Neglect minor losses.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a6e-q-2",
+                "year": "2024",
+                "question": "For a given head of 40 m and a pipe length of 200 m, what is the diameter of the pipe required to transmit the maximum possible power if the pipe is made of concrete ($\\epsilon = 0.0012$ m) and the kinematic viscosity of the fluid is $1.3 \\times 10^{-6} \\text{ m}^2/\\text{s}$? (Hint: You will need to iterate.)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cc56b5e963ba810a6f",
+            "title": "efficiency of transmission",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cc56b5e963ba810a6f-q-1",
+                "year": "2024",
+                "question": "Explain the fundamental difference in energy loss behavior between laminar and turbulent flow in pipes concerning flow velocity. How does this difference affect transmission efficiency?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a6f-q-2",
+                "year": "2024",
+                "question": "A pump delivers water at a rate of $0.1 \\, \\text{m}^3/\\text{s}$ through a pipe of diameter $0.2 \\, \\text{m}$. If the average flow velocity is $3.18 \\, \\text{m/s}$, and the Reynolds number is calculated to be $6000$, what is the likely nature of the flow? How would you expect the transmission efficiency to compare if the flow were laminar at the same flow rate?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a6f-q-3",
+                "year": "2024",
+                "question": "List at least three factors, other than the flow regime, that significantly impact the efficiency of fluid transmission through a pipe. For each factor, briefly explain its effect.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cc56b5e963ba810a6f-q-4",
+                "year": "2024",
+                "question": "Imagine you are designing a new water distribution system for a city. What considerations regarding pipe material and diameter would you prioritize to maximize transmission efficiency?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cc56b5e963ba810a70",
+            "title": "Water hammer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a71",
+            "title": "real life problems causing water hammer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a72",
+            "title": "Cavitation.on",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-mechanics-of-fluid-flow-03-module-3-concept-of-boundary-layer-growth-of-boundary-layer-over-a-flat-plate-an",
+        "title": "Module 3: Concept of boundary layer growth of boundary layer over a flat plate an",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a74",
+            "title": "Concept of Boundary Layer : Growth of boundary layer over a flat plate and definition of boundary layer thickness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a75",
+            "title": "displacement thickness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a76",
+            "title": "momentum thickness and energy thickness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a77",
+            "title": "laminar and turbulent boundary layers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a78",
+            "title": "laminar sub layer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a79",
+            "title": "velocity profile",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a7a",
+            "title": "Von- Karman momentum integral equations for the boundary layers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a7b",
+            "title": "calculation of drag",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a7c",
+            "title": "separation of boundary and methods of control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-mechanics-of-fluid-flow-04-module-4-dimensional-analysis-and-hydraulic-similitude-dimensional-analysis",
+        "title": "Module 4: Dimensional analysis and hydraulic similitude dimensional analysis",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810a7e",
+            "title": "Dimensional  Analysis and Hydraulic similitude: Dimensional  analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a7f",
+            "title": "Buckingham’s theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a80",
+            "title": "important dimensional numbers and their significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a81",
+            "title": "geometric, Kinematic and dynamic similarity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a82",
+            "title": "model studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a83",
+            "title": "Froude, Reynold, Weber, Cauchy and Mach laws- Applications and limitations of model testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810a84",
+            "title": "simple problems only",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-numerical-methods-for-engineers",
+    "code": "PECET417",
+    "name": "NUMERICAL METHODS FOR ENGINEERS",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-numerical-methods-for-engineers-01-module-1-introduction-to-numerical-methods",
+        "title": "Module 1: Introduction to numerical methods",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b3a",
+            "title": "Introduction to numerical methods - Errors in numerical computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b3b",
+            "title": "System of linear algebraic equations –Ill-conditioned systems – Symmetric and Banded systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b3c",
+            "title": "Elimination methods –Gauss Elimination (review), Gauss Seidel iteration, Factorization method-Choleski’s method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b3d",
+            "title": "System of non-linear equations – Newton-Raphson method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b3e",
+            "title": "Eigen value problems - largest and smallest Eigen values- Power method, Jacobi’s transformation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-numerical-methods-for-engineers-02-module-2-approximation",
+        "title": "Module 2: Approximation",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b40",
+            "title": "Approximation - Lagrangian and Hermite interpolation, Spline interpolation - Quadratic and Cubic splines (example of equal intervals).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b41",
+            "title": "Data smoothing by least squares criterion- non-polynomial models like exponential model and power equation, Multiple linear regression.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b42",
+            "title": "Numerical integration - Newton–Cotes open quadrature formulae, Trapezoidal rule, Simpson’s rules (Review).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-numerical-methods-for-engineers-03-module-3-solution-of-first",
+        "title": "Module 3: Solution of first",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b44",
+            "title": "Solution of first-order ordinary differential equations - stability of solution, Use of Taylor series, Euler’s method, Modified Euler’s method, Fourth order Runge-Kutta method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b45",
+            "title": "Higher order equations of initial value type by Runge-Kutta method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b46",
+            "title": "Ordinary differential equations of the boundary value type – Finite difference solution.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-numerical-methods-for-engineers-04-module-4-partial-differential-equations-in-two",
+        "title": "Module 4: Partial differential equations in two",
+        "topics": [
+          {
+            "id": "689f15cc56b5e963ba810b48",
+            "title": "Partial differential equations in two-dimension - types, Laplace Equation and Poisson’s equation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b49",
+            "title": "Parabolic equations – Explicit finite difference method – Bender-Schmidt method. Crank-Nicholson implicit method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b4a",
+            "title": "Elliptic equations - Finite difference method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cc56b5e963ba810b4b",
+            "title": "Weighted residual methods for initial value problems and boundary value problems – Collocation method, Method of least squares, Galerkin’s method.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-soil-mechanics",
+    "code": "PCCET402",
+    "name": "SOIL MECHANICS",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-soil-mechanics-01-module-1-nature-of-soil-and-functional-relationships-introduction-to-geotechnica",
+        "title": "Module 1: Nature of soil and functional relationships introduction to geotechnica",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810970",
+            "title": "Nature of soil and functional relationships : Introduction to geotechnical engineering– Soil types – Major soil deposits of India - 3 phase system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810971",
+            "title": "Basic soil properties : Void ratio, porosity, degree of saturation, air content, water content, specific gravity, unit weight - Relationship between basic soil properties, Relative Density- Numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810972",
+            "title": "Determination of Water content by oven drying, Specific gravity using pycnometer & specific gravity bottle - Determination of Field density by sand replacement method and Core Cutter method - Numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810973",
+            "title": "Soil Structure and their effects on the basic soil properties –Basic structural units of clay minerals (introduction only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-soil-mechanics-02-module-2-index-properties-sieve-analysis-hydrometer-analysis",
+        "title": "Module 2: Index properties sieve analysis hydrometer analysis",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810975",
+            "title": "Index properties : Sieve analysis, Hydrometer analysis-strokes law, calibration of hydrometer, corrections to hydrometer readings, gradation of soil, combined sieve and hydrometer analysis, limitations, [no derivation required for percentage finer and diameter].",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810976",
+            "title": "Consistency – Atterberg Limits and indices – Plasticity charts – activity of soil-laboratory tests for Liquid Limit (Casagrande’s apparatus and cone penetrometer), Plastic Limit and Shrinkage Limit - Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810977",
+            "title": "IS classification of soil .",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cb56b5e963ba810977-q-1",
+                "year": "2024",
+                "question": "A sieve analysis of a soil sample gave the following results:",
+                "marks": 3
+              },
+              {
+                "id": "689f15cb56b5e963ba810977-q-2",
+                "year": "2024",
+                "question": "A soil sample has the following properties:",
+                "marks": 3
+              },
+              {
+                "id": "689f15cb56b5e963ba810977-q-3",
+                "year": "2024",
+                "question": "Differentiate between Sieve Analysis and Hydrometer Analysis.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cb56b5e963ba810978",
+            "title": "Permeability of soils : Darcy’s law – Factors affecting permeability –Laboratory tests: Constant head and variable head permeability tests -Average permeability of stratified deposits - Numerical problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-soil-mechanics-03-module-3-principle-of-effective-stress",
+        "title": "Module 3: Principle of effective stress",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba81097a",
+            "title": "Principle of effective stress - Total, neutral and effective stress – Pressure diagrams in layered soil with water table, saturated by capillary action, subjected to surcharge load – Numerical problems- Quick sand condition – Critical hydraulic gradient",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81097b",
+            "title": "Stress distribution : Introduction - Boussinesq’s equations for vertical pressure due to point loads and line loads – Assumptions and Limitations - Numerical problems - Vertical pressure due to uniformly distributed loads beneath strip, circular [no derivation required] - Numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81097c",
+            "title": "Vertical pressure due to loading on rectangular area and Fadum’s chart (Brief description only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81097d",
+            "title": "Approximate methods for vertical stress: Equivalent Point Load method & 2:1 Distribution Method - Numerical problems - Pressure Isobars - Pressure bulbs. distribution of contact pressure beneath footings :",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81097e",
+            "title": "Compaction Tests – OMC and MDD, Zero Air voids line, IS Light & Heavy- Factors affecting compaction-Numerical problems - Field compaction methods-compaction control –Proctor needle.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-soil-mechanics-04-module-4-consolidation",
+        "title": "Module 4: Consolidation",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810980",
+            "title": "Consolidation - Definition – Concepts of Coefficient of compressibility and volume compressibility - e-log p curve - Compression index, Recompression index and Pre-consolidation Pressure - Normally consolidated, over consolidated and under consolidated soils - Terzaghi’s theory of one- dimensional consolidation with its assumptions (no derivation required) - average degree of consolidation – Time factor - Coefficient of consolidation - Numerical problems - Laboratory consolidation test – Determination of Coefficient of Consolidation - Difference between consolidation and compaction .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810981",
+            "title": "Shear strength of soils - Practical Applications - Mohr-Coulomb failure criterion - Mohr circle method for determination of principal planes and stresses– relationship between shear parameters and principal stresses - Numerical problems - Brief discussion of Laboratory tests - Triaxial compression test - UU, CU and CD tests - Total and effective stress strength parameters - Unconfined compression test, Direct shear test and vane shear test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-4-structural-analysis-ii",
+    "code": "PCCET403",
+    "name": "STRUCTURAL ANALYSIS - II",
+    "branchId": "ce",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ce-4-structural-analysis-ii-01-module-1-concept-of-displacement-approach-to-structural-analysis-introduction-to",
+        "title": "Module 1: Concept of displacement approach to structural analysis introduction to",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba810997",
+            "title": "Concept of displacement approach to structural analysis: Introduction to displacement methods of analysis. Kinematic indeterminacy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810998",
+            "title": "Slope Deflection Method: Introduction, sign convention, development of slope deflection equation; Analysis of continuous beams including settlement of supports; Analysis of orthogonal rigid plane frames including sway frames with kinematic indeterminacy up to 2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba810999",
+            "title": "Moment Distribution method: Concept and derivation of basic equation, Analysis of beams and non-sway frames; analysis of sway frames (Illustration only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-structural-analysis-ii-02-module-2-approximate-methods-of-analysis-of-multi",
+        "title": "Module 2: Approximate methods of analysis of multi",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba81099b",
+            "title": "Approximate Methods of Analysis of Multi-storeyed Frames: Analysis for vertical loads-substitute frames-loading condition for maximum hogging and sagging moments in beams and maximum bending moment in columns.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81099c",
+            "title": "Analysis for lateral loads – portal method, cantilever method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba81099d",
+            "title": "Plastic Theory: Introduction – plastic hinge concepts – plastic modulus – shape factor – redistribution of moments – collapse mechanisms – Plastic analysis of beams and portal frames by equilibrium and mechanism methods. (single storey and single bay frames only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-structural-analysis-ii-03-module-3-matrix-analysis-of-structures-flexibility-method",
+        "title": "Module 3: Matrix analysis of structures flexibility method",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba81099f",
+            "title": "Matrix analysis of structures: Flexibility method:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109a0",
+            "title": "Definition of flexibility influence coefficients - Concepts of physical approach.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109a1",
+            "title": "Flexibility matrices for truss and frame elements-load transformation matrix- development of total flexibility matrix of the structure-analysis of simple structures (determinate & indeterminate)-plane truss and plane frame-nodal loads and element loads",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-4-structural-analysis-ii-04-module-4-stiffness-method-definition-of-stiffness-influence-coefficients",
+        "title": "Module 4: Stiffness method definition of stiffness influence coefficients",
+        "topics": [
+          {
+            "id": "689f15cb56b5e963ba8109a3",
+            "title": "Stiffness method: Definition of stiffness influence coefficients - Concepts of physical approach.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109a4",
+            "title": "Development of stiffness matrices by physical approach-stiffness matrices for truss and frame elements-displacement transformation matrix-analysis of simple indeterminate structures-plane truss and plane frame-nodal loads and element loads.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cb56b5e963ba8109a5",
+            "title": "Introduction to direct stiffness method- stiffness matrix of beam elements, assembly of load vector and stiffness matrix, solution of two span continuous beams.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

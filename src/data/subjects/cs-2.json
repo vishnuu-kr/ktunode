@@ -1,0 +1,2113 @@
+[
+  {
+    "id": "cs-2-discrete-mathematical-structures",
+    "code": "PCITT205",
+    "name": "DISCRETE MATHEMATICAL STRUCTURES",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic",
+        "title": "Module 1: Introduction to logic propositional logic",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5ff3",
+            "title": "Introduction to Logic: Propositional Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ff4",
+            "title": "Truth tables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ff5",
+            "title": "Conditional propositions and Logical Equivalence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ff6",
+            "title": "The laws of Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ff7",
+            "title": "The Principle of Duality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ff8",
+            "title": "Resolution proofs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ff9",
+            "title": "Predicates and Quantifiers: Universal quantifier and Existential quantifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ffa",
+            "title": "Negation of Quantifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ffb",
+            "title": "The Rule of Universal Specification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ffc",
+            "title": "The Rule of Universal Generalizations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ffd",
+            "title": "The implications of Quantifiers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product",
+        "title": "Module 2: Fundamental principles of counting the rules of sum and product",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5fff",
+            "title": "Fundamental Principles of Counting: The Rules of Sum and Product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6000",
+            "title": "Permutations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6001",
+            "title": "Combinations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6002",
+            "title": "The Binomial Theorem (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6003",
+            "title": "Combinations with Repetition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6005",
+            "title": "Principle of Inclusion and Exclusion (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6006",
+            "title": "Derangements",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets",
+        "title": "Module 3: Relations functions and algebraic structures sets",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b6008",
+            "title": "Relations, Functions and Algebraic Structures: Sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6009",
+            "title": "Relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b600a",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b600b",
+            "title": "Equivalence Relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b600c",
+            "title": "Posets and Lattices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b600d",
+            "title": "Hasse Diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b600e",
+            "title": "Complimented and Distributive lattices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b600f",
+            "title": "Structured sets for binary operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6010",
+            "title": "Semigroups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6011",
+            "title": "Monoids",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6012",
+            "title": "Groups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6013",
+            "title": "Rings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6014",
+            "title": "Fields",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples",
+        "title": "Module 4: Generating function definitions and examples",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b6016",
+            "title": "Generating Function: Definitions and Examples",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6017",
+            "title": "Calculation Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6018",
+            "title": "Exponential Generating Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b6019",
+            "title": "Recurrence Relations: First-order linear recurrence relations with constant coefficients – homogeneous, non-homogeneous Solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b601a",
+            "title": "Second-order linear recurrence relations with constant coefficients",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b601b",
+            "title": "homogeneous",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b601c",
+            "title": "non-homogeneous Solution",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-discrete-mathematics",
+    "code": "PCCST205",
+    "name": "DISCRETE MATHEMATICS",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-discrete-mathematics-01-module-1-sets-and-subsets",
+        "title": "Module 1: Sets and subsets",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5f80",
+            "title": "Sets and Subsets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f81",
+            "title": "Venn Diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f82",
+            "title": "Set Operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f83",
+            "title": "Set Identities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f84",
+            "title": "Generalized Unions and Intersections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f85",
+            "title": "The Principle of Inclusion-Exclusion (Basic and Generalized versions), and applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f86",
+            "title": "Function definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f87",
+            "title": "Injections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f88",
+            "title": "Surjections and Bijections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f89",
+            "title": "Inverse Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f8a",
+            "title": "Compositions of Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f8b",
+            "title": "Cardinality of Sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f8c",
+            "title": "Cantor diagonalization argument",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f8d",
+            "title": "Relations and Their Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f8e",
+            "title": "Composition of relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f8f",
+            "title": "n-ary Relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f90",
+            "title": "Representing Relations Using Matrices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f91",
+            "title": "Equivalence Relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f92",
+            "title": "Equivalence Classes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f93",
+            "title": "Partial Orderings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f94",
+            "title": "Hasse Diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f95",
+            "title": "Maximal and Minimal Elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f96",
+            "title": "Lattices",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-discrete-mathematics-02-module-2-mathematical-logic-and-proofs",
+        "title": "Module 2: Mathematical logic and proofs",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5f98",
+            "title": "Mathematical logic and proofs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f99",
+            "title": "Propositional Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f9a",
+            "title": "Applications of Propositional Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f9b",
+            "title": "Propositional Equivalences",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f9c",
+            "title": "Predicates and Quantifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f9d",
+            "title": "Nested Quantifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f9e",
+            "title": "Rules of Inference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f9f",
+            "title": "Introduction to Proofs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa0",
+            "title": "Methods of Proving Theorems - Direct proof",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa1",
+            "title": "Indirect proof (Proof by Contraposition)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa2",
+            "title": "Proof by Contradiction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa3",
+            "title": "Proof by counter examples",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa4",
+            "title": "The Pigeonhole Principle.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-discrete-mathematics-03-module-3-induction-and-recurrences",
+        "title": "Module 3: Induction and recurrences",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5fa6",
+            "title": "Induction and Recurrences",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa7",
+            "title": "Mathematical Induction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa8",
+            "title": "Weak and Strong induction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fa9",
+            "title": "Recursive (Inductive) definitions and recurrence relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5faa",
+            "title": "Modeling with Recurrence Relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fab",
+            "title": "Solving Linear Recurrence Relations (homogeneous and nonhomogeneous)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fac",
+            "title": "Generating Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fad",
+            "title": "Using Generating Functions to Solve Recurrence Relations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-discrete-mathematics-04-module-4-group-theory",
+        "title": "Module 4: Group theory",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5faf",
+            "title": "Group theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb0",
+            "title": "Groups - Definition, Examples, and Elementary Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb1",
+            "title": "Abelian group",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb2",
+            "title": "Permutation group",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb3",
+            "title": "Subgroup",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb4",
+            "title": "Homomorphisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb5",
+            "title": "Isomorphisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb6",
+            "title": "Cyclic Groups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5fb7",
+            "title": "Cosets and Lagrange's Theorem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-engineering-entrepreneurship-and-ipr",
+    "code": "UCEST206",
+    "name": "ENGINEERING ENTREPRENEURSHIP AND IPR",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship",
+        "title": "Module 1: Introduction to ideation innovation entrepreneurship",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5ebb",
+            "title": "Introduction to Ideation, Innovation & Entrepreneurship",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ebc",
+            "title": "What is Ideation?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ebd",
+            "title": "Understanding Innovation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ebe",
+            "title": "Frameworks for Innovation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ebf",
+            "title": "The Entrepreneurial Mindset",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec0",
+            "title": "Starting a Business, types formation statutory compliances.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec1",
+            "title": "Resources for Aspiring Entrepreneurs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec2",
+            "title": "Introduction to Intellectual Property Rights (IPR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec3",
+            "title": "Types of IPR: Patents, trademarks, copyrights, trade secrets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec4",
+            "title": "Strategies for protecting intellectual property based on the type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec5",
+            "title": "Role of IPR in securing funding and competitive advantage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec6",
+            "title": "Importance of building a strong team",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec7",
+            "title": "Identifying roles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec8",
+            "title": "Skill sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ec9",
+            "title": "Team dynamics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eca",
+            "title": "Identifying Pain Points and problem statement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ecb",
+            "title": "Idea Generation Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ecc",
+            "title": "Developing and Refining Ideas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ecd",
+            "title": "Develop strategies for bringing your innovation to life",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation",
+        "title": "Module 2: Problem and solution canvas preparation",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5ecf",
+            "title": "Problem and  solution canvas preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed0",
+            "title": "Orientation and canvas introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed1",
+            "title": "Customer needs assessment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed2",
+            "title": "Market segmentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed3",
+            "title": "Value proposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed4",
+            "title": "Competitive analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed5",
+            "title": "Market entry strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed6",
+            "title": "Market validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed7",
+            "title": "Regulatory and legal considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed8",
+            "title": "Customer profiling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ed9",
+            "title": "Review of market research",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eda",
+            "title": "Customer segmentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5edb",
+            "title": "Customer profiling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5edc",
+            "title": "Persona development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5edd",
+            "title": "Validation and feedback",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ede",
+            "title": "Prioritization and selection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5edf",
+            "title": "Communication and messaging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee0",
+            "title": "Competitor analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee1",
+            "title": "Identify competitors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee2",
+            "title": "Competitor profiling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee3",
+            "title": "SWOT analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee4",
+            "title": "Market positioning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee5",
+            "title": "Customer feedback and reviews",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee6",
+            "title": "Pricing analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee7",
+            "title": "Differentiation strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ee8",
+            "title": "Benchmarking and improvement",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation",
+        "title": "Module 3: Business plan preparation",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5eea",
+            "title": "Business plan preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eeb",
+            "title": "Business plan framework",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eec",
+            "title": "Market analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eed",
+            "title": "Product/ service description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eee",
+            "title": "Marketing and sales strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eef",
+            "title": "Operations plan",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef0",
+            "title": "Financial projections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef1",
+            "title": "Risk management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef2",
+            "title": "Prototype development plan preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef3",
+            "title": "Prototype requirements analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef4",
+            "title": "Technical specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef5",
+            "title": "Development approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef6",
+            "title": "Development timeline",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef7",
+            "title": "Resource allocation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef8",
+            "title": "Testing and quality assurance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5ef9",
+            "title": "Iterative development and feedback loop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5efa",
+            "title": "Documentation and version control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development",
+        "title": "Module 4: Prototype development",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5efc",
+            "title": "Prototype development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5efd",
+            "title": "Stakeholder engagement strategies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5efe",
+            "title": "Investors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5eff",
+            "title": "Partners",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f00",
+            "title": "Customers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5f01",
+            "title": "Advisors & Mentors",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-foundations-of-computing-from-hardware-essentials-to-web-design",
+    "code": "GXEST203",
+    "name": "FOUNDATIONS OF COMPUTING: FROM HARDWARE ESSENTIALS TO WEB DESIGN",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu",
+        "title": "Module 1: Computer hardware cpu",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5df1",
+            "title": "Computer Hardware – CPU",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5df2",
+            "title": "Memory - Memory hierarchy: registers, cache, RAM, virtual memory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5df3",
+            "title": "Motherboard - Computer Peripherals - I/O devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5df4",
+            "title": "Storage devices- HDDs, SSDs, optical drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5df5",
+            "title": "I/O communication and device management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5df6",
+            "title": "Interface cards – Buses – Firmware - Boot process",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers",
+        "title": "Module 2: Binary representation of data and numbers",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5df8",
+            "title": "Binary representation of data and numbers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5df9",
+            "title": "Integer Representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dfa",
+            "title": "Data storage units - bits, bytes, kilobytes, etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dfb",
+            "title": "ASCII and Unicode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dfc",
+            "title": "CPU Architecture and Instruction Set: Basic CPU architecture - ALU, registers, control unit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5dfd",
+            "title": "Instruction format and assembly language (basics only) Fetch-execute cycle and instruction execution.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software",
+        "title": "Module 3: Computer system software",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5dff",
+            "title": "Computer System Software - Operating Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e00",
+            "title": "Basic commands in Linux / Windows",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e01",
+            "title": "Shell scripting (bash)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6f58474a0b135b5e01-q-1",
+                "year": "2024",
+                "question": "What is the primary role of a shell in a computer system?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e01-q-2",
+                "year": "2024",
+                "question": "Explain the purpose of the shebang line (`#!/bin/bash`) in a shell script.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e01-q-3",
+                "year": "2024",
+                "question": "Differentiate between single quotes (`'`) and double quotes (`\"`) when used with variables in Bash.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e01-q-4",
+                "year": "2024",
+                "question": "Analyze the following Bash script and predict its output.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e01-q-5",
+                "year": "2024",
+                "question": "Write a Bash script that prompts the user for a number, checks if it's an even number, and prints a message indicating whether it's even or odd.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e02",
+            "title": "Computer Communications – LAN, MAN, WAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e03",
+            "title": "Client/Server networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e04",
+            "title": "Peer-to-Peer networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e05",
+            "title": "Topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e06",
+            "title": "Basics of IP addresses, DHCP, NAT, Network Security (Desktop & Perimeter), DNS, VPN, Routers, Client-Server, Internet, WWW, Web servers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont",
+        "title": "Module 4: Web design basics of html css and javascript understanding the web cont",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5e08",
+            "title": "Web Design (Basics of HTML, CSS, and JavaScript) – Understanding the web content delivery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e09",
+            "title": "Understanding HTML and XHTML Connections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e0a",
+            "title": "Understanding Cascading Style Sheets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e0b",
+            "title": "Understanding JavaScript",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-mathematics-for-information-science-2",
+    "code": "GAMAT201",
+    "name": "MATHEMATICS FOR INFORMATION SCIENCE – 2",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations",
+        "title": "Module 1: Linear systems of equations",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5d08",
+            "title": "Linear systems of equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d09",
+            "title": "Solution by Gauss elimination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d0a",
+            "title": "Row echelon form and rank of a matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d0b",
+            "title": "Fundamental theorem for linear systems - homogeneous and non-homogeneous (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d0c",
+            "title": "Eigen values and Eigen vectors of matrices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d0d",
+            "title": "Diagonalization of matrices.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-mathematics-for-information-science-2-02-module-2-vector-spaces",
+        "title": "Module 2: Vector spaces",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5d0f",
+            "title": "Vector Spaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d10",
+            "title": "Examples of vector space – Rn and Mmxn only",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d11",
+            "title": "Subspaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d12",
+            "title": "Examples as subspaces of Rn and Mmxn",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d13",
+            "title": "Linear combinations of vectors in a vector space",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d14",
+            "title": "Spanning sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d15",
+            "title": "Linear dependence and independence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d16",
+            "title": "Basis for a vector space",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d17",
+            "title": "The dimension of vector space",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d18",
+            "title": "Coordinate representation in Rn",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d19",
+            "title": "Change of basis in Rn : Transition Matrix (without proof).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector",
+        "title": "Module 3: Vector length and unit vector",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5d1b",
+            "title": "Vector length and unit vector",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d1c",
+            "title": "Dot product and angle between two vectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d1d",
+            "title": "The Cauchy- Schwarz Inequality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d1e",
+            "title": "Inner product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d1f",
+            "title": "Examples as Rn and M2x2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d20",
+            "title": "Properties of inner products",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d21",
+            "title": "Definitions of length, distance and angle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d22",
+            "title": "Orthogonal projections in inner product spaces",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5d22-q-1",
+                "year": "2024",
+                "question": "What is the geometric interpretation of projecting a vector $\\mathbf{v}$ onto a vector $\\mathbf{u}$?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d22-q-2",
+                "year": "2024",
+                "question": "Why is it important for the basis vectors to be orthogonal when projecting onto a subspace using the summation method?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d22-q-3",
+                "year": "2024",
+                "question": "If $P$ is a projection matrix, what can you say about $P^2$?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d22-q-4",
+                "year": "2024",
+                "question": "Let $\\mathbf{v} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ and $\\mathbf{u} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ in $\\mathbb{R}^3$. Find the orthogonal projection of $\\mathbf{v}$ onto $\\mathbf{u}$.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d22-q-5",
+                "year": "2024",
+                "question": "Let $W$ be the subspace of $\\mathbb{R}^2$ spanned by the vector $\\mathbf{w} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$. Find the projection matrix $P$ that projects any vector in $\\mathbb{R}^2$ onto $W$. Then, use it to find the projection of $\\mathbf{v} = \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$ onto $W$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d23",
+            "title": "Orthogonal and orthonormal sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d24",
+            "title": "Orthogonal and orthonormal basis",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5d24-q-1",
+                "year": "2024",
+                "question": "What is the geometric interpretation of two vectors being orthogonal?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d24-q-2",
+                "year": "2024",
+                "question": "Explain the difference between an orthogonal set and an orthonormal set of vectors.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d24-q-3",
+                "year": "2024",
+                "question": "Why are orthonormal bases preferred over non-orthonormal bases for many applications in information science?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d24-q-4",
+                "year": "2024",
+                "question": "Let $\\mathbf{u} = [2, -1, 3]$ and $\\mathbf{v} = [1, 4, 0]$. Are these vectors orthogonal? Justify your answer.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d24-q-5",
+                "year": "2024",
+                "question": "Given the vector $\\mathbf{v}_1 = [3, 0, 0]$ and $\\mathbf{v}_2 = [0, 2, 0]$.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d24-q-6",
+                "year": "2024",
+                "question": "Apply the Gram-Schmidt process to the set of vectors $\\{\\mathbf{v}_1 = [1, 1], \\mathbf{v}_2 = [2, 3]\\}$ to obtain an orthonormal basis for $\\mathbb{R}^2$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d25",
+            "title": "Gram-Schmidt orthonormalization process (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d26",
+            "title": "The least squares problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d27",
+            "title": "Projection onto a Subspace",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d28",
+            "title": "Solving the least square problems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-mathematics-for-information-science-2-04-module-4-linear-transformations",
+        "title": "Module 4: Linear transformations",
+        "topics": [
+          {
+            "id": "68b45b6e58474a0b135b5d2a",
+            "title": "Linear Transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d2b",
+            "title": "Properties of linear transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d2c",
+            "title": "Linear Transformation given by a matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d2d",
+            "title": "Rotation in R2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d2e",
+            "title": "Projection in R3",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d2f",
+            "title": "Kernel of a Linear Transformation and its basis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d30",
+            "title": "Range of a Linear Transformation and its basis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d31",
+            "title": "Rank and Nullity of a Linear Transformation",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6e58474a0b135b5d31-q-1",
+                "year": "2024",
+                "question": "What does the nullity of a linear transformation tell us about the input vectors?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d31-q-2",
+                "year": "2024",
+                "question": "State the Rank-Nullity Theorem and explain its significance.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d31-q-3",
+                "year": "2024",
+                "question": "Let $T: \\mathbb{R}^4 \\to \\mathbb{R}^3$ be a linear transformation with the matrix representation $A = \\begin{pmatrix} 1 & 2 & 0 & -1 \\\\ 2 & 4 & 1 & 0 \\\\ 0 & 0 & 1 & 1 \\end{pmatrix}$. Find the rank and nullity of $T$.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6e58474a0b135b5d31-q-4",
+                "year": "2024",
+                "question": "For the system of linear equations $A\\mathbf{x} = \\mathbf{b}$, determine if there is no solution, exactly one solution, or infinitely many solutions. Justify your answer using ranks.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d32",
+            "title": "Sum of Rank and Nullity (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6e58474a0b135b5d33",
+            "title": "Matrices for Linear Transformations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-programming-in-c",
+    "code": "GXEST204",
+    "name": "PROGRAMMING IN C",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-programming-in-c-01-module-1-c-fundamentals",
+        "title": "Module 1: C fundamentals",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5e2a",
+            "title": "C Fundamentals -  Character Set",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e2b",
+            "title": "Constants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e2c",
+            "title": "Identifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e2d",
+            "title": "Keywords",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e2e",
+            "title": "Basic Data types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e2f",
+            "title": "Variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e30",
+            "title": "Operators and its precedence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e31",
+            "title": "Bit-wise operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e32",
+            "title": "Expressions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e33",
+            "title": "Statements - Input and Output statements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e34",
+            "title": "Structure of a C program",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e35",
+            "title": "Simple programs.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e36",
+            "title": "Control Statements - if",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e37",
+            "title": "if-else",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e38",
+            "title": "nested if",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e39",
+            "title": "switch",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e3a",
+            "title": "while",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e3b",
+            "title": "do-while",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e3c",
+            "title": "for",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e3d",
+            "title": "break & continue",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e3e",
+            "title": "nested loops.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-programming-in-c-02-module-2-arrays",
+        "title": "Module 2: Arrays",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5e40",
+            "title": "Arrays - Single dimensional arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e41",
+            "title": "Defining an array",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e42",
+            "title": "Array initialization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e43",
+            "title": "Accessing array elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e44",
+            "title": "Enumerated data type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e45",
+            "title": "Type Definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e46",
+            "title": "Two-dimensional arrays – Defining a two-dimensional array",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e47",
+            "title": "Programs for matrix processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e48",
+            "title": "Programs for sequential search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e49",
+            "title": "Bubble sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e4a",
+            "title": "Strings - Declaring a string variable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e4b",
+            "title": "Reading and displaying strings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e4c",
+            "title": "String related library functions – Programs for string matching.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-programming-in-c-03-module-3-functions",
+        "title": "Module 3: Functions",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5e4e",
+            "title": "Functions - Function definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e4f",
+            "title": "Function call",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e50",
+            "title": "Function prototype",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e51",
+            "title": "Parameter passing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e52",
+            "title": "Recursion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e53",
+            "title": "Passing array to function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e54",
+            "title": "Macros - Defining and calling macros",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e55",
+            "title": "Command line Arguments.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e56",
+            "title": "Structures - Defining a Structure variable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e57",
+            "title": "Accessing members",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e58",
+            "title": "Array of structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e59",
+            "title": "Passing structure to function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e5a",
+            "title": "Union.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e5b",
+            "title": "Storage Class - Storage Classes associated with variables: automatic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e5c",
+            "title": "static",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e5d",
+            "title": "external and register.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-programming-in-c-04-module-4-pointers",
+        "title": "Module 4: Pointers",
+        "topics": [
+          {
+            "id": "68b45b6f58474a0b135b5e5f",
+            "title": "Pointers - Declaration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e60",
+            "title": "Operations on pointers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e61",
+            "title": "Passing pointer to a function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e62",
+            "title": "Accessing array elements using pointers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e63",
+            "title": "Processing strings using pointers",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68b45b6f58474a0b135b5e63-q-1",
+                "year": "2024",
+                "question": "What is the role of the null terminator (`\\0`) in a C string? Why is it crucial when processing strings with pointers?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e63-q-2",
+                "year": "2024",
+                "question": "Explain the difference between a string literal (e.g., `\"hello\"`) and a character array initialized with a string (e.g., `char s[] = \"hello\";`) in terms of modifiability and memory storage.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e63-q-3",
+                "year": "2024",
+                "question": "What is pointer arithmetic in the context of character pointers? Provide an example.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e63-q-4",
+                "year": "2024",
+                "question": "Write a C function `mystrlen(const char *str)` that calculates the length of a string using pointers. Do not use array indexing.",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e63-q-5",
+                "year": "2024",
+                "question": "What is the output of the following C code snippet, and explain why?",
+                "marks": 3
+              },
+              {
+                "id": "68b45b6f58474a0b135b5e63-q-6",
+                "year": "2024",
+                "question": "Consider the following code. What could be a potential issue, and how would you fix it?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e64",
+            "title": "Pointer to pointer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e65",
+            "title": "Array of pointers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e66",
+            "title": "Pointer to function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e67",
+            "title": "Pointer to structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e68",
+            "title": "Dynamic Memory Allocation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e69",
+            "title": "Files- Different types of files in C",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e6a",
+            "title": "Opening & Closing a file",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e6b",
+            "title": "Writing to and Reading from a file",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e6c",
+            "title": "Processing files",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e6d",
+            "title": "Library functions related to file – fseek()",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e6e",
+            "title": "ftell()",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e6f",
+            "title": "fread()",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68b45b6f58474a0b135b5e70",
+            "title": "fwrite().",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

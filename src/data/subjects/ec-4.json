@@ -1,0 +1,3441 @@
+[
+  {
+    "id": "ec-4-digital-system-design",
+    "code": "PEECT416",
+    "name": "DIGITAL SYSTEM DESIGN",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-digital-system-design-01-module-1-clocked-synchronous-networks",
+        "title": "Module 1: Clocked synchronous networks",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe70b",
+            "title": "Clocked Synchronous Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe70c",
+            "title": "Analysis of Clocked Synchronous Sequential Networks (CSSN)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe70d",
+            "title": "Modeling of CSSN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe70e",
+            "title": "State assignment and reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe70f",
+            "title": "Design of CSSN",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe70f-q-1",
+                "year": "2024",
+                "question": "Differentiate between Mealy and Moore state machines, providing a block diagram and an example scenario for each.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe70f-q-2",
+                "year": "2024",
+                "question": "Minimise the following state table using the implication table method. Assume a Moore machine.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe70f-q-3",
+                "year": "2024",
+                "question": "Explain why state assignment is important in the design of CSSMs and mention at least two methods of state assignment.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe70f-q-4",
+                "year": "2024",
+                "question": "Design a synchronous circuit using D flip-flops that counts up when an input 'A' is 1, and stays in the same state when 'A' is 0. It should have states corresponding to binary counts 00, 01, 10, and 11.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec-4-digital-system-design-02-module-2-asm-chart-and-its-realization",
+        "title": "Module 2: Asm chart and its realization",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe711",
+            "title": "ASM Chart and its realization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe712",
+            "title": "Asynchronous Sequential Circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe713",
+            "title": "Analysis of Asynchronous Sequential Circuits (ASC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe714",
+            "title": "Flow table reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe715",
+            "title": "Races in ASC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe716",
+            "title": "State assignment problem and the transition table",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks",
+        "title": "Module 3: Hazards static and dynamic hazards in combinational networks",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe718",
+            "title": "Hazards – static and dynamic hazards in combinational networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe719",
+            "title": "Essential Hazards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe71a",
+            "title": "Design of Hazard free circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe71b",
+            "title": "Data synchronizers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe71c",
+            "title": "Mixed operating mode asynchronous circuits",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe71c-q-1",
+                "year": "2024",
+                "question": "What is the fundamental difference between a static-1 hazard and a static-0 hazard in a combinational circuit?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe71c-q-2",
+                "year": "2024",
+                "question": "Explain how propagation delays can lead to dynamic hazards in a multi-level logic circuit.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe71c-q-3",
+                "year": "2024",
+                "question": "Consider the following Boolean function: $F(A, B, C) = A\\overline{B} + \\overline{B}C$.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe71c-q-4",
+                "year": "2024",
+                "question": "How can VHDL be used to synthesize hazard-free combinational logic? Give a simple example.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe71d",
+            "title": "Practical issues- clock skew and jitter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe71e",
+            "title": "Synchronous and asynchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe71f",
+            "title": "Faults: Fault table method – path sensitization method – Boolean difference method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-digital-system-design-04-module-4-vlsi-design-flow",
+        "title": "Module 4: Vlsi design flow",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe721",
+            "title": "VLSI Design flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe722",
+            "title": "Design entry: Schematic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe723",
+            "title": "Data types and objects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe724",
+            "title": "different modelling styles in VHDL - Dataflow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe725",
+            "title": "Behavioural and Structural Modelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe726",
+            "title": "VHDL constructs and codes for combinational and sequential circuits",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-digital-systems-and-vlsi-design",
+    "code": "PEECT415",
+    "name": "DIGITAL SYSTEMS AND VLSI DESIGN",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-digital-systems-and-vlsi-design-01-module-1-clocked-synchronous-networks",
+        "title": "Module 1: Clocked synchronous networks",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe746",
+            "title": "Clocked Synchronous Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe747",
+            "title": "Analysis of Clocked Synchronous Sequential Networks (CSSN)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe748",
+            "title": "Mealy machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe749",
+            "title": "Moore machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe74a",
+            "title": "Modelling of CSSN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe74b",
+            "title": "State assignment and reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe74c",
+            "title": "Design of CSSN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe74d",
+            "title": "ASM Chart and its realization.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-digital-systems-and-vlsi-design-02-module-2-asynchronous-sequential-circuits",
+        "title": "Module 2: Asynchronous sequential circuits",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe74f",
+            "title": "Asynchronous Sequential Circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe750",
+            "title": "Analysis of Asynchronous Sequential Circuits (ASC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe751",
+            "title": "Flow table reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe752",
+            "title": "Races in ASC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe753",
+            "title": "State assignment problem and the transition table",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe754",
+            "title": "Design of Asynchronous Sequential Circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe755",
+            "title": "Design of ALU.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks",
+        "title": "Module 3: Hazards static and dynamic hazards in combinational networks",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe757",
+            "title": "Hazards – static and dynamic hazards in combinational networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe758",
+            "title": "Essential Hazards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe759",
+            "title": "Design of Hazard free circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe75a",
+            "title": "Data synchronizers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe75b",
+            "title": "Mixed operating mode asynchronous circuits",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe75b-q-1",
+                "year": "2024",
+                "question": "Explain why a combinational logic block with static hazards can be problematic when its output is used to trigger a state transition in an asynchronous sequential circuit.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe75b-q-2",
+                "year": "2024",
+                "question": "Describe the fundamental challenge in interfacing an asynchronous signal to a synchronous circuit and what common technique is used to mitigate it.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe75b-q-3",
+                "year": "2024",
+                "question": "Consider a combinational circuit that needs to be hazard-free. If its K-map simplification yields `F = AB + BC`, and it's found to have a static hazard when `B` changes from 0 to 1 while `A=0` and `C=1`, what is the consensus term that can be added to make it hazard-free?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe75b-q-4",
+                "year": "2024",
+                "question": "Briefly describe the purpose of a handshake protocol in mixed-mode asynchronous-synchronous communication.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe75b-q-5",
+                "year": "2024",
+                "question": "Imagine you have an asynchronous sensor providing a \"data ready\" signal. You want to use this to trigger a synchronous counter. What are the key design steps and concerns?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe75c",
+            "title": "Practical issues- clock skew and jitter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe75d",
+            "title": "Synchronous and asynchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe75e",
+            "title": "Flip-Flops and Simple Flip-Flop Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe75f",
+            "title": "switch debouncer.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe760",
+            "title": "Faults",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe761",
+            "title": "Fault table method – path sensitization method – Boolean difference method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe762",
+            "title": "Kohavi algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe763",
+            "title": "Automatic test pattern generation – Built in Self-Test (BIST)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow",
+        "title": "Module 4: Vlsi design flow",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe765",
+            "title": "VLSI Design flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe766",
+            "title": "Design entry: Schematic, FSM & HDL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe767",
+            "title": "VHDL Hardware Description Language",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe768",
+            "title": "VHDL Modules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe769",
+            "title": "VHDL Processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe76a",
+            "title": "Different modeling styles in VHDL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe76b",
+            "title": "Data types and operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe76c",
+            "title": "Objects",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe76c-q-1",
+                "year": "2024",
+                "question": "What is a \"netlist\" in the context of VLSI design, and what are its two main types?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe76c-q-2",
+                "year": "2024",
+                "question": "How is an HDL source code file transformed during the synthesis process?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe76c-q-3",
+                "year": "2024",
+                "question": "Name at least three types of \"objects\" that are involved in the physical design stage of the VLSI flow.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe76c-q-4",
+                "year": "2024",
+                "question": "What is the role of a \"testbench\" as an object in the VLSI design flow?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe76c-q-5",
+                "year": "2024",
+                "question": "Differentiate between behavioral and structural modeling in VHDL, providing an example of an object used in each.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe76d",
+            "title": "Dataflow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe76e",
+            "title": "Behavioral and Structural Modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe76f",
+            "title": "Synthesis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe770",
+            "title": "Simulation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe771",
+            "title": "VHDL constructs and codes for combinational and sequential circuits.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-economics-for-engineers",
+    "code": "UCHUT346",
+    "name": "ECONOMICS FOR ENGINEERS",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-economics-for-engineers-01-module-1-basic-economics-concepts",
+        "title": "Module 1: Basic economics concepts",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe7a1",
+            "title": "Basic Economics Concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a2",
+            "title": "Basic economic problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a3",
+            "title": "Production Possibility Curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a4",
+            "title": "Utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a5",
+            "title": "Law of diminishing marginal utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a6",
+            "title": "Law of Demand",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a7",
+            "title": "Law of supply",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a8",
+            "title": "Elasticity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7a9",
+            "title": "measurement of elasticity and its applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7aa",
+            "title": "Equilibrium",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7ab",
+            "title": "Changes in demand and supply and its effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7ac",
+            "title": "Production function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7ad",
+            "title": "Law of variable proportion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7ae",
+            "title": "Economies of Scale",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7af",
+            "title": "Internal and External Economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b0",
+            "title": "Cobb-Douglas Production Function",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-economics-for-engineers-02-module-2-cost-concepts",
+        "title": "Module 2: Cost concepts",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe7b2",
+            "title": "Cost concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b3",
+            "title": "Social cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b4",
+            "title": "private cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b5",
+            "title": "Explicit and implicit cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b6",
+            "title": "Sunk cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b7",
+            "title": "Opportunity cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b8",
+            "title": "short run cost curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7b9",
+            "title": "Revenue concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7ba",
+            "title": "Firms and their objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7bb",
+            "title": "Types of firms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7bc",
+            "title": "Markets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7bd",
+            "title": "Perfect Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7be",
+            "title": "Monopoly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7bf",
+            "title": "Monopolistic Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c0",
+            "title": "Oligopoly (features and equilibrium of a firm)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-economics-for-engineers-03-module-3-monetary-system",
+        "title": "Module 3: Monetary system",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe7c2",
+            "title": "Monetary System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c3",
+            "title": "Money",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c4",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c5",
+            "title": "Central Banking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c6",
+            "title": "Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c7",
+            "title": "Causes and Effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c8",
+            "title": "Measures to Control Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7c9",
+            "title": "Monetary and Fiscal policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7ca",
+            "title": "Deflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7cb",
+            "title": "Taxation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7cc",
+            "title": "Direct and Indirect taxes (merits and demerits)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7cd",
+            "title": "GST",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7ce",
+            "title": "National income",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7cf",
+            "title": "Concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d0",
+            "title": "Circular Flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d1",
+            "title": "Methods of Estimation and Difficulties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d2",
+            "title": "Stock Market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d3",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d4",
+            "title": "Problems faced by the Indian stock market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d5",
+            "title": "Demat Account and Trading Account",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d6",
+            "title": "Stock market Indicators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7d7",
+            "title": "SENSEX and NIFTY",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-economics-for-engineers-04-module-4-value-analysis-and-value-engineering",
+        "title": "Module 4: Value analysis and value engineering",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe7d9",
+            "title": "Value Analysis and value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7da",
+            "title": "Cost Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7db",
+            "title": "Exchange Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7dc",
+            "title": "Use Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7dd",
+            "title": "Esteem Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7de",
+            "title": "Aims, Advantages and Application areas of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7df",
+            "title": "Value Engineering Procedure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7e0",
+            "title": "Break-even Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7e1",
+            "title": "Cost-Benefit Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7e2",
+            "title": "Capital Budgeting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe7e3",
+            "title": "Process planning",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-instrumentation",
+    "code": "PEECT 411",
+    "name": "INSTRUMENTATION",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-instrumentation-01-module-1-introduction-to-measuring-instruments",
+        "title": "Module 1: Introduction to measuring instruments",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5b5",
+            "title": "Introduction to measuring instruments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5b6",
+            "title": "Generalized Configurations and Functional elements of Instrumentation systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5b7",
+            "title": "Need for Measurement Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5b8",
+            "title": "Classification of Types of Measuring instruments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5b9",
+            "title": "Static and Dynamic characteristics of measuring instruments.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-instrumentation-02-module-2-sensors-and-transducers",
+        "title": "Module 2: Sensors and transducers",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5bb",
+            "title": "Sensors and Transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5bc",
+            "title": "Classification and selection criteria of Transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5bd",
+            "title": "Principles of operation, construction, theory, advantages and disadvantages, applications of",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5be",
+            "title": "Resistive Transducers: Potentiometers, strain gauges, (metallic and semi-conductor type), Resistance Thermometer, Thermistors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5bf",
+            "title": "Inductive Transducers: LVDT (Linear variable differential transformer).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5c0",
+            "title": "Capacitive Transducers: various capacitive transducers based upon familiar equation of capacitance (capacitive microphone)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-instrumentation-03-module-3-electronic-measuring-instruments",
+        "title": "Module 3: Electronic measuring instruments",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5c2",
+            "title": "Electronic Measuring Instruments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5c3",
+            "title": "Digital storage oscilloscope",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5c4",
+            "title": "Working principle and applications of waveform analyser, digital frequency meter, harmonic distortion meter, harmonic analyser, spectrum analyser and logic state analyser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5c5",
+            "title": "IEEE - 488 General Purpose Interface Bus (GPIB) Instruments with application.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5c6",
+            "title": "EMI,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5c7",
+            "title": "Grounding and Shielding",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-instrumentation-04-module-4-plc-programming",
+        "title": "Module 4: Plc programming",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5c9",
+            "title": "PLC Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5ca",
+            "title": "Basic PLC Programming: Programming ON/OFF Inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5cb",
+            "title": "Creating Ladder diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5cc",
+            "title": "Register Basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5cd",
+            "title": "PLC Timers and Counters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5ce",
+            "title": "PLC Arithmetic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5cf",
+            "title": "Number comparison functions",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe5cf-q-1",
+                "year": "2024",
+                "question": "A PLC is used to control a bottling machine. A sensor detects when a bottle is in place (Input `I:1/0`). A timer (`TMR0`) starts when the bottle is detected. The timer is set to 2 seconds. We want to activate a filling solenoid (`Output O:2/0`) only if the timer has completed (i.e., 2 seconds have elapsed).",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe5cf-q-2",
+                "year": "2024",
+                "question": "In a batch process, a recipe calls for adding 500 liters of a liquid. A flow meter measures the liquid flow and its cumulative value is stored in Data Register `N7:5`. The process should stop adding liquid when the accumulated flow reaches exactly 500 liters.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe5cf-q-3",
+                "year": "2024",
+                "question": "You have a PLC controlling a conveyor belt. The conveyor motor should run as long as the speed is *less than* 100 RPM (stored in `N7:10`) and the emergency stop button (`I:1/1`) is *not* pressed. The conveyor motor is `O:2/1`.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe5cf-q-4",
+                "year": "2024",
+                "question": "A temperature in a kiln (`AI_TEMP`) must be kept between 800°C and 1200°C.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5d0",
+            "title": "Data handling Functions: Skip function and applications; master control relay function and applications; jump with non-return and return; data table, register and other move functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5d1",
+            "title": "PLC functions with BITS.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-linear-integrated-circuits",
+    "code": "PCECT403",
+    "name": "LINEAR INTEGRATED CIRCUITS",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt",
+        "title": "Module 1: Differential amplifiers differential amplifier configurations using bjt",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe561",
+            "title": "Differential Amplifiers:  Differential amplifier configurations using BJT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe562",
+            "title": "DC Analysis - transfer characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe563",
+            "title": "AC analysis - differential and common mode gains, CMRR, input and output resistance, voltage gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe564",
+            "title": "constant current bias",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe565",
+            "title": "constant current source.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe566",
+            "title": "Concept of current mirror : two-transistor current mirror, Wilson and Widlar current mirrors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe567",
+            "title": "Operational amplifiers (Op Amps):  The 741 Op Amp, Block diagram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe568",
+            "title": "Ideal Op Amp parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe569",
+            "title": "typical parameter values for 741, equivalent circuit, open loop configurations, voltage transfer curve",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe569-q-1",
+                "year": "2024",
+                "question": "What is the primary advantage of using a constant current source in the emitter leg of a BJT differential amplifier compared to a simple emitter resistor?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe569-q-2",
+                "year": "2024",
+                "question": "For a 741 op-amp with an open-loop gain of $2 \\times 10^5$ V/V and output saturation voltages of $\\pm 13$ V, what is the range of differential input voltage over which the op-amp operates in its linear region?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe569-q-3",
+                "year": "2024",
+                "question": "Draw the small-signal equivalent circuit of a single BJT in a differential pair, assuming the emitter is connected to an ideal constant current source. Label all components.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe569-q-4",
+                "year": "2024",
+                "question": "Explain why an op-amp in open-loop configuration is generally not suitable for linear amplification applications but is useful as a comparator.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe569-q-5",
+                "year": "2024",
+                "question": "If a differential amplifier has an open-loop gain of $10^5$ and an input offset voltage of 2 mV, what will be the output offset voltage?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe56a",
+            "title": "frequency response curve.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage",
+        "title": "Module 2: Op amp with negative feedback general concept of voltage series voltage",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe56c",
+            "title": "Op Amp with negative feedback:  General concept of Voltage Series, Voltage Shunt, Current Series and Current Shunt negative feedback, Op Amp circuits with Voltage Series and Voltage Shunt feedback, Virtual ground concept.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe56d",
+            "title": "Analysis of inverting and non-inverting amplifier for closed loop gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe56e",
+            "title": "Input Resistance and Output Resistance.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe56f",
+            "title": "Op Amp applications:  Summer, Voltage Follower, Differential and Instrumentation Amplifiers, Voltage to Current and Current to Voltage converters, Integrator, Differentiator, Precision Rectifiers, Comparators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe570",
+            "title": "Schmitt Triggers, Log and Antilog amplifiers.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe570-q-1",
+                "year": "2024",
+                "question": "Design an inverting Schmitt trigger circuit using an op-amp with $\\pm 15V$ supply. Assume $V_{sat} \\approx \\pm 13V$. The desired upper threshold voltage is $+4V$ and the lower threshold voltage is $-4V$. Choose $R_1 = 10 k\\Omega$ and $R_1' = 10 k\\Omega$. Calculate the value of the positive feedback resistor $R_f$.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe570-q-2",
+                "year": "2024",
+                "question": "For a non-inverting Schmitt trigger with $R_1 = 10 k\\Omega$, $R_f = 50 k\\Omega$, and $V_{sat} = \\pm 13V$, calculate the upper and lower threshold voltages and the hysteresis voltage.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe570-q-3",
+                "year": "2024",
+                "question": "A diode-based log amplifier uses an input resistor $R_1 = 100 k\\Omega$ and a silicon diode ($n=1$). The reverse saturation current $I_S = 10^{-12}A$. The thermal voltage at room temperature is $V_T = 26mV$. If the input voltage is $1V$, calculate the output voltage.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe570-q-4",
+                "year": "2024",
+                "question": "Explain the primary limitation of a simple diode-based log amplifier and how a transistor-based design can potentially overcome it.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe570-q-5",
+                "year": "2024",
+                "question": "Design a basic antilog amplifier circuit using an NPN transistor and an op-amp. Draw the circuit diagram and explain its operation.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe570-q-6",
+                "year": "2024",
+                "question": "If a log amplifier has the relationship $V_{out\\_log} = 50mV \\ln(V_{in}/1\\mu A)$, and it is followed by an antilog amplifier with the relationship $V_{out\\_antilog} = 1\\mu A \\times e^{V_{out\\_log}/50mV}$, what is the overall transfer function of the combined circuit?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec-4-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien",
+        "title": "Module 3: Oscillators and multivibrators phase shift and wien",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe572",
+            "title": "Oscillators and Multivibrators:  Phase Shift and Wien-bridge Oscillators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe573",
+            "title": "Triangular and Sawtooth waveform generators, Astable and Monostable multivibrators.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe574",
+            "title": "Active filters:  Comparison with passive filters, First and Second order Low pass, High pass, Band pass and Band Reject active filters, State Variable filters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe575",
+            "title": "Voltage Regulators:  Fixed and Adjustable voltage regulators, IC 723 – Low voltage and High voltage configurations, Current boosting, Current limiting, Short circuit and Fold-back protection.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555",
+        "title": "Module 4: Timer and vco timer ic 555",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe577",
+            "title": "Timer and VCO:  Timer IC 555 - Functional diagram, Astable and monostable operations, Basic concepts of Voltage Controlled Oscillator and application of VCO IC LM566.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe578",
+            "title": "Phase Locked Loop :  Basic building block, Operation, Closed loop analysis, Lock and capture range, Applications of PLL, PLL IC565.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe579",
+            "title": "Data Converters:  Digital to Analog converters, Specifications, Weighted resistor type and R-2R Ladder type.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe57a",
+            "title": "Analog to Digital Converters: Specifications, Flash type and Successive approximation type.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-linear-integrated-circuits-lab",
+    "code": "PCECL407",
+    "name": "LINEAR INTEGRATED CIRCUITS LAB",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers",
+        "title": "Module 1: Familiarization of operational amplifiers",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe89d",
+            "title": "Familiarization of Operational amplifiers - Inverting and Non inverting amplifiers, Integrator, Differentiator - frequency response, Adder, Comparators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe89e",
+            "title": "Measurement of Op-Amp parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe89f",
+            "title": "Difference Amplifier and Instrumentation amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a0",
+            "title": "Schmitt trigger circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a1",
+            "title": "Astable and Monostable multivibrators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a2",
+            "title": "Waveform generators using Op Amps - Triangular and Sawtooth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a3",
+            "title": "Wien bridge oscillator - without & with amplitude stabilization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a4",
+            "title": "RC Phase shift Oscillator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a5",
+            "title": "Active first and second order filters (LPF, HPF, BPF and BRF)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a6",
+            "title": "Active Notch filter to eliminate the 50Hz power line frequency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8a7",
+            "title": "Precision rectifiers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555",
+        "title": "Module 2: Astable and monostable multivibrator using timer ic ne555",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe8a9",
+            "title": "Astable and Monostable multivibrator using Timer IC NE555",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8aa",
+            "title": "DC power supply using IC 723: Low voltage and high voltage configurations, Short circuit and Fold-back protection.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8ab",
+            "title": "A/D converters- counter ramp and flash type.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8ac",
+            "title": "D/A Converters - R-2R ladder circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8ad",
+            "title": "Study of PLL IC: free running, frequency lock range and capture range",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-linear-integrated-circuits-lab-03-module-3-simulation-of-any-three-circuits-from-experiments-3-5-6-7-8-9-10-and-11",
+        "title": "Module 3: Simulation of any three circuits from experiments 3 5 6 7 8 9 10 and 11",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe8af",
+            "title": "Simulation of any three circuits from experiments 3, 5, 6, 7, 8, 9, 10 and 11 of section I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe8b0",
+            "title": "Simulation of experiments 3 or 4 from section II",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-machine-learning",
+    "code": "PEECT413",
+    "name": "MACHINE LEARNING",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques",
+        "title": "Module 1: Review supervised unsupervised machine learning techniques",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe619",
+            "title": "Review: supervised, unsupervised machine learning techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe61a",
+            "title": "dimensionality reduction techniques-PCA, SVD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe61b",
+            "title": "Instance-Based vs   Model-Based Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe61c",
+            "title": "Machine Learning models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe61d",
+            "title": "Hyper parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe61e",
+            "title": "regularization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe61f",
+            "title": "Training - Batch and Online Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe620",
+            "title": "Challenges of Machine Learning: Data Issues-Quality, Relevancy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe621",
+            "title": "Over fitting, under fitting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe622",
+            "title": "Bias, variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe623",
+            "title": "Performance metrics: Accuracy Recall, Precision, ROC curve",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg",
+        "title": "Module 2: Regression linear regression logistic regression error functions in reg",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe625",
+            "title": "Regression: linear regression, logistic regression error functions in regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe626",
+            "title": "MSE, L1, L2, Cross entropy multivariate regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe627",
+            "title": "Classification: Naive Bayes classifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe628",
+            "title": "Support Vector machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe629",
+            "title": "Decision trees -random forests",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe62a",
+            "title": "Ensemble methods: boosting, bagging",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-machine-learning-03-module-3-unsupervised-learning-clustering",
+        "title": "Module 3: Unsupervised learning clustering",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe62c",
+            "title": "Unsupervised learning: Clustering-K-means, High, Hierarchical clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe62d",
+            "title": "criterion functions for clustering",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe62d-q-1",
+                "year": "2024",
+                "question": "What is the primary objective of a criterion function in clustering?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe62d-q-2",
+                "year": "2024",
+                "question": "Explain the concept of Within-Cluster Sum of Squares (WCSS) and which algorithm is famously associated with its minimization.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe62d-q-3",
+                "year": "2024",
+                "question": "How does the Davies-Bouldin Index (DBI) differ from WCSS in its approach to evaluating clustering quality?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe62d-q-4",
+                "year": "2024",
+                "question": "Why is the Silhouette Score considered a good metric for assessing clustering quality, particularly regarding cluster separation?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe62d-q-5",
+                "year": "2024",
+                "question": "Briefly describe the criterion function used in Gaussian Mixture Models (GMMs).",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe62e",
+            "title": "proximity measures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe62f",
+            "title": "Euclidean, Manhattan, Minkowski Distances",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe62f-q-1",
+                "year": "2024",
+                "question": "Calculate the Euclidean and Manhattan distances between the following two 3D points:",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe62f-q-2",
+                "year": "2024",
+                "question": "If you have a dataset with a significant number of outliers in one or more features, which distance metric (Euclidean or Manhattan) would likely be more robust and why?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe62f-q-3",
+                "year": "2024",
+                "question": "Explain the relationship between Minkowski distance and Euclidean distance. For what value of 'p' does Minkowski distance become Euclidean distance?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe630",
+            "title": "Cosine Similarity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe631",
+            "title": "Reinforcement Learning: Agent based learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe632",
+            "title": "Q-learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe633",
+            "title": "Introduction to HMM models",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron",
+        "title": "Module 4: Introduction to artificial neural networks biological neuron",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe635",
+            "title": "Introduction to Artificial Neural Networks: Biological Neuron",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe636",
+            "title": "Perceptron",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe637",
+            "title": "Training",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe638",
+            "title": "limitations",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe638-q-1",
+                "year": "2024",
+                "question": "What is a key difference in how biological neurons process multiple inputs compared to a basic artificial neuron?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe638-q-2",
+                "year": "2024",
+                "question": "The human brain is highly energy-efficient. Why do artificial neural networks, particularly during training, consume significantly more power?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe638-q-3",
+                "year": "2024",
+                "question": "Explain the concept of synaptic plasticity in biological neurons and how it differs from the primary learning mechanism in most artificial neural networks.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe638-q-4",
+                "year": "2024",
+                "question": "The text mentions \"dendritic computation\" as a biological feature not fully captured by artificial neurons. Briefly explain what this implies.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe639",
+            "title": "XOR problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe63a",
+            "title": "Multilayer perceptron",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe63a-q-1",
+                "year": "2024",
+                "question": "What is the primary role of activation functions in a Multilayer Perceptron?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe63a-q-2",
+                "year": "2024",
+                "question": "Describe the three main types of layers in an MLP and their functions.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe63a-q-3",
+                "year": "2024",
+                "question": "Explain the basic idea behind backpropagation.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe63a-q-4",
+                "year": "2024",
+                "question": "Name two common activation functions and briefly describe their characteristics.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe63a-q-5",
+                "year": "2024",
+                "question": "If you are building an MLP for a binary classification task, what activation function would you typically use in the output layer and why?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe63b",
+            "title": "Gradient based learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe63c",
+            "title": "stochastic gradient descent",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe63d",
+            "title": "Activation Functions-Sigmoid, ReLU, tanh",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe63e",
+            "title": "Back propagation- Chain rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe63f",
+            "title": "Regularization- L1, L2",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-mathematics-for-electrical-science-4",
+    "code": "GBMAT401",
+    "name": "MATHEMATICS FOR ELECTRICAL SCIENCE – 4",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-mathematics-for-electrical-science-4-01-module-1-random-variables",
+        "title": "Module 1: Random variables",
+        "topics": [
+          {
+            "id": "68a5c45db09ce205780fe4b3",
+            "title": "Random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4b4",
+            "title": "Discrete random variables and their probability distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4b5",
+            "title": "Cumulative distribution function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4b6",
+            "title": "Expectation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4b7",
+            "title": "Mean and variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4b8",
+            "title": "Binomial distribution",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45db09ce205780fe4b8-q-1",
+                "year": "2024",
+                "question": "A communication system transmits packets of data. Each packet has an independent probability of being corrupted as $p = 0.02$. If a transmission consists of 50 packets, what is the probability that exactly 3 packets are corrupted?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45db09ce205780fe4b8-q-2",
+                "year": "2024",
+                "question": "An electrical component has a reliability of 0.95 (i.e., the probability of not failing is 0.95). If 10 such components are used in a system, and the system fails if at least two components fail, what is the probability that the system fails?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45db09ce205780fe4b8-q-3",
+                "year": "2024",
+                "question": "In a manufacturing process, 1% of the items produced are defective. If a sample of 300 items is taken, what is the approximate probability that exactly 5 items are defective? Use the Poisson approximation.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45db09ce205780fe4b8-q-4",
+                "year": "2024",
+                "question": "A quality control engineer randomly samples 20 resistors from a production line. The probability that a resistor meets the specified tolerance is 0.8. What is the probability that at least 18 resistors meet the tolerance?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45db09ce205780fe4b9",
+            "title": "Poisson distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4ba",
+            "title": "Poisson distribution as a limit of the binomial distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4bb",
+            "title": "Joint pmf of two discrete random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4bc",
+            "title": "Marginal pmf",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4bd",
+            "title": "Independent random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4be",
+            "title": "Expected value of a function of two discrete variables.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions",
+        "title": "Module 2: Continuous random variables and their probability distributions",
+        "topics": [
+          {
+            "id": "68a5c45db09ce205780fe4c0",
+            "title": "Continuous random variables and their probability distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c1",
+            "title": "Cumulative distribution function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c2",
+            "title": "Expectation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c3",
+            "title": "Mean and variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c4",
+            "title": "Uniform, Normal and Exponential distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c5",
+            "title": "Joint pdf of two Continuous random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c6",
+            "title": "Marginal pdf",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c7",
+            "title": "Independent random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4c8",
+            "title": "Expectation value of a function of two continuous variables.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-mathematics-for-electrical-science-4-03-module-3-confidence-intervals",
+        "title": "Module 3: Confidence intervals",
+        "topics": [
+          {
+            "id": "68a5c45db09ce205780fe4ca",
+            "title": "Confidence Intervals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4cb",
+            "title": "Confidence Level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4cc",
+            "title": "Confidence Intervals and One-side confidence intervals for a Population Mean for large and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4cd",
+            "title": "small samples (normal distribution and  t-distribution)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4ce",
+            "title": "Hypotheses and Test Procedures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4cf",
+            "title": "Type I and Type II error",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d0",
+            "title": "z Tests for Hypotheses about a Population Mean (for large sample)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d1",
+            "title": "t Test for Hypotheses about a Population Mean (for small sample)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d2",
+            "title": "Tests concerning a population proportion for large and small samples.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-mathematics-for-electrical-science-4-04-module-4-random-process-concept",
+        "title": "Module 4: Random process concept",
+        "topics": [
+          {
+            "id": "68a5c45db09ce205780fe4d4",
+            "title": "Random process concept",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d5",
+            "title": "classification of process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d6",
+            "title": "Methods of Description of Random process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d7",
+            "title": "Special classes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d8",
+            "title": "Average Values of Random Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4d9",
+            "title": "Stationarity- SSS, WSS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4da",
+            "title": "Autocorrelation functions and its properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4db",
+            "title": "Ergodicity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4dc",
+            "title": "Mean-Ergodic Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4dd",
+            "title": "Mean-Ergodic Theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4de",
+            "title": "Correlation Ergodic Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45db09ce205780fe4df",
+            "title": "Distribution Ergodic Process.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-microcontrollers",
+    "code": "PBECT404",
+    "name": "MICROCONTROLLERS",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-microcontrollers-01-module-1-microcontroller-architecture-general-internal-architecture-address-bus-",
+        "title": "Module 1: Microcontroller architecture general internal architecture address bus ",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe598",
+            "title": "Microcontroller Architecture – General internal architecture, Address",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe599",
+            "title": "The Microcontroller 8051: Features of 8051 microcontroller, Block",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-",
+        "title": "Module 2: Instruction set of 8051 addressing modes classification of instruction ",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe59b",
+            "title": "Instruction Set of 8051 & Addressing modes: Classification of",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe59b-q-1",
+                "year": "2024",
+                "question": "Explain the difference between `MOV A, 30H` and `MOV A, @R0` in terms of addressing modes and where the data is being fetched from.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe59b-q-2",
+                "year": "2024",
+                "question": "What is the primary function of the `DA A` instruction, and when would you typically use it?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe59b-q-3",
+                "year": "2024",
+                "question": "Write an assembly program to add two 16-bit numbers stored in internal RAM. The first number is at `20H` and `21H` (LSB at `20H`), and the second number is at `22H` and `23H` (LSB at `22H`). Store the 16-bit result at `24H` and `25H` (LSB at `24H`).",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe59b-q-4",
+                "year": "2024",
+                "question": "What is the difference between `RL A` and `RLC A`?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe59b-q-5",
+                "year": "2024",
+                "question": "What is the purpose of `RETI` and how does it differ from `RET`?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe59c",
+            "title": "Addressing modes - Types. Accessing the data from internal and external",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-microcontrollers-03-module-3-programming-8051-using-assembly-language-introduction-to-8051-assembly-",
+        "title": "Module 3: Programming 8051 using assembly language introduction to 8051 assembly ",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe59e",
+            "title": "Programming 8051 Using Assembly Language: Introduction to 8051",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe59f",
+            "title": "Programming 8051 Using Embedded C Language: Introduction to",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers",
+        "title": "Module 4: Timer counter in 8051 timer registers",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5a1",
+            "title": "Timer / Counter in 8051: Timer registers - Timer0, Timer1.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5a2",
+            "title": "Configuration of timer registers. Timer mode programming. Counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5a3",
+            "title": "Serial Communication in 8051: Serial communication – modes and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5a4",
+            "title": "Programming the interrupts: Use external, timer and serial port",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-object-oriented-programming",
+    "code": "PEECT414",
+    "name": "OBJECT ORIENTED PROGRAMMING",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-object-oriented-programming-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe66a",
+            "title": "Introduction:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe66b",
+            "title": "Approaches to Software Design  - Functional Oriented Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe66c",
+            "title": "Object Oriented Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe66d",
+            "title": "Case Study of Automated Fire Alarm System.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe66e",
+            "title": "Introduction to Java - Java Buzzwords",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe66f",
+            "title": "Java program structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe670",
+            "title": "Java compiler",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe671",
+            "title": "Bytecode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe672",
+            "title": "Java Virtual Machine (JVM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe673",
+            "title": "Comments",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe673-q-1",
+                "year": "2024",
+                "question": "What is the primary purpose of comments in a programming language?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe673-q-2",
+                "year": "2024",
+                "question": "Differentiate between single-line comments and multi-line comments in Java. Provide an example of each.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe673-q-3",
+                "year": "2024",
+                "question": "When would you use Javadoc comments over single-line or multi-line comments?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe673-q-4",
+                "year": "2024",
+                "question": "Write a Javadoc comment for a simple Java method that calculates the square of an integer.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe673-q-5",
+                "year": "2024",
+                "question": "Identify a potential problem with using comments to disable code during debugging and suggest a better alternative.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe674",
+            "title": "Lexical Issues.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-object-oriented-programming-02-module-2-core-java-fundamentals",
+        "title": "Module 2: Core java fundamentals",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe676",
+            "title": "Core Java Fundamentals:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe677",
+            "title": "Primitive Data types - Integers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe678",
+            "title": "Floating Point Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe679",
+            "title": "Characters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe67a",
+            "title": "Boolean.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe67b",
+            "title": "Literals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe67c",
+            "title": "Variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe67d",
+            "title": "Type Conversion and Casting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe67e",
+            "title": "Arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe67f",
+            "title": "Strings- String Handling functions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe680",
+            "title": "Operators  - Arithmetic Operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe681",
+            "title": "Bitwise Operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe682",
+            "title": "Relational Operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe683",
+            "title": "Boolean Logical Operators",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe683-q-1",
+                "year": "2024",
+                "question": "What will be the output of the following Java code snippet?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe683-q-2",
+                "year": "2024",
+                "question": "What will be the output of the following Java code snippet?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe683-q-3",
+                "year": "2024",
+                "question": "What will be the output of the following Java code snippet?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe683-q-4",
+                "year": "2024",
+                "question": "Write a Java `if` statement that checks if a variable `score` is between 70 and 80 (inclusive). Use logical AND operator.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe683-q-5",
+                "year": "2024",
+                "question": "Explain the difference between `&` and `&&` in Java.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe684",
+            "title": "Assignment Operator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe685",
+            "title": "Conditional (Ternary) Operator",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe685-q-1",
+                "year": "2024",
+                "question": "What will be the output of the following Java code snippet?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe685-q-2",
+                "year": "2024",
+                "question": "Rewrite the following `if-else` statement using the ternary operator:",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe685-q-3",
+                "year": "2024",
+                "question": "Identify the potential error in the following code:",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe685-q-4",
+                "year": "2024",
+                "question": "Is the following code snippet a good practice? Why or why not?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe686",
+            "title": "Operator Precedence.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe687",
+            "title": "Control Statements  - Selection Statements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe688",
+            "title": "Iteration Statements and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe689",
+            "title": "Object Oriented Programming in Java  - Class Fundamentals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe68a",
+            "title": "Declaring Objects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe68b",
+            "title": "Object Reference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe68c",
+            "title": "Access Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe68d",
+            "title": "Introduction to Methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe68e",
+            "title": "Constructors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe68f",
+            "title": "this Keyword",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe690",
+            "title": "Method Overloading.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe691",
+            "title": "Inheritance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe692",
+            "title": "Sub Class",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe693",
+            "title": "The Keyword super",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe694",
+            "title": "protected Members",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe695",
+            "title": "Method Overriding.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-object-oriented-programming-03-module-3-more-features-of-java",
+        "title": "Module 3: More features of java",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe697",
+            "title": "More features of Java:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe698",
+            "title": "Packages  - Defining Package",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe699",
+            "title": "CLASSPATH",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe69a",
+            "title": "Importing Packages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe69b",
+            "title": "Exception Handling  - Checked Exceptions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe69c",
+            "title": "Unchecked Exceptions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe69d",
+            "title": "try Block and catch Clause",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe69e",
+            "title": "Multiple catch Clauses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe69f",
+            "title": "Nested try Statements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a0",
+            "title": "throw",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a1",
+            "title": "throws and finally.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a2",
+            "title": "Input/output  - I/O Basics",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe6a2-q-1",
+                "year": "2024",
+                "question": "What is the primary difference between `InputStream` and `Reader` in Java's I/O hierarchy?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a2-q-2",
+                "year": "2024",
+                "question": "Explain the purpose of `System.in` and `System.out`.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a2-q-3",
+                "year": "2024",
+                "question": "Why is it important to close I/O streams?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a2-q-4",
+                "year": "2024",
+                "question": "Write a Java program that prompts the user to enter their age, reads the age as a String, converts it to an integer, and prints a message like \"You will be X years old next year.\" Handle potential `NumberFormatException` if the user enters non-numeric input.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a2-q-5",
+                "year": "2024",
+                "question": "What is the advantage of using `BufferedReader` over `System.in.read()` for reading multiple characters or lines?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a3",
+            "title": "Reading Console Input",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe6a3-q-1",
+                "year": "2024",
+                "question": "Write a Java program that prompts the user to enter their name and their age. Then, it should print a message like \"Hello, [Name]! You are [Age] years old.\" Use the `Scanner` class for input.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a3-q-2",
+                "year": "2024",
+                "question": "Modify the previous program to include error handling. If the user enters non-integer input for age, the program should prompt them again until a valid integer is entered.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a3-q-3",
+                "year": "2024",
+                "question": "Write a Java program using `BufferedReader` that asks the user for their favorite programming language. Handle potential `IOException`.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a3-q-4",
+                "year": "2024",
+                "question": "Explain the difference between `scanner.next()` and `scanner.nextLine()` and the common issue when mixing them with methods like `scanner.nextInt()`.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a4",
+            "title": "Writing Console Output",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a5",
+            "title": "Print Writer Class",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a6",
+            "title": "Working with Files.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-object-oriented-programming-04-module-4-advanced-features-of-java",
+        "title": "Module 4: Advanced features of java",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe6a8",
+            "title": "Advanced features of Java:",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-1",
+                "year": "2024",
+                "question": "Create a package named `com.utility` and put a class `Calculator` inside it with a method `add(int a, int b)` that returns the sum of `a` and `b`. Then, write a `main` method in a separate class (outside the `com.utility` package) that imports and uses the `Calculator` class.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-2",
+                "year": "2024",
+                "question": "Explain the difference between `import package.ClassName;` and `import package.*;`. When would you use each?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-3",
+                "year": "2024",
+                "question": "Write a Java program that attempts to divide a number by zero and catches the `ArithmeticException`. Use a `finally` block to print a message indicating that the operation is complete.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-4",
+                "year": "2024",
+                "question": "What is the difference between a checked exception and an unchecked exception? Give an example of each.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-5",
+                "year": "2024",
+                "question": "How would you declare that a method `processFile(String filePath)` might throw a `FileNotFoundException`?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-6",
+                "year": "2024",
+                "question": "Write a Java program that creates a new text file named `myoutput.txt` and writes the following lines to it: \"Hello, Java I/O!\", \"This is a test.\"",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-7",
+                "year": "2024",
+                "question": "Modify the program from Question 1 to read the content of `myoutput.txt` and print it to the console. Use `try-with-resources`.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-8",
+                "year": "2024",
+                "question": "What is the purpose of the `File` class?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-9",
+                "year": "2024",
+                "question": "Create a simple Swing application with a `JFrame`, a `JLabel` displaying \"Enter your age:\", a `JTextField` for age input, and a `JButton` labeled \"Submit\". When the button is clicked, retrieve the text from the `JTextField` and display it in a new `JLabel` below the text field.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-10",
+                "year": "2024",
+                "question": "What is the role of `SwingUtilities.invokeLater()`? Why is it important in Swing applications?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c45eb09ce205780fe6a8-q-11",
+                "year": "2024",
+                "question": "Name three common Swing layout managers and briefly describe their behavior.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6a9",
+            "title": "Swings fundamentals - Swing Key Features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6aa",
+            "title": "Model View Controller",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6ab",
+            "title": "Swing Controls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6ac",
+            "title": "Components and Containers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6ad",
+            "title": "Swing Packages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6ae",
+            "title": "Event Handling in Swings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6af",
+            "title": "Swing Layout Managers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b0",
+            "title": "Exploring Swings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b1",
+            "title": "JLabel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b2",
+            "title": "The Swing Buttons",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b3",
+            "title": "JtextField..",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b4",
+            "title": "Java DataBase Connectivity (JDBC)  - JDBC overview",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b5",
+            "title": "Creating and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b6",
+            "title": "delete",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b7",
+            "title": "insert",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe6b8",
+            "title": "select.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-power-electronics",
+    "code": "PEECT 412",
+    "name": "POWER ELECTRONICS",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics",
+        "title": "Module 1: Introduction scope and applications of power electronics",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5f2",
+            "title": "Introduction:  Scope and applications of Power Electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5f3",
+            "title": "Properties of ideal switch.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5f4",
+            "title": "Structure and static characteristics:  Power diodes, Power BJT, Power MOSFET & IGBT – comparison.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5f5",
+            "title": "Basic principles of wide band gap devices – SiC & GaN.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5f6",
+            "title": "Safe Operating Area:  Power BJT, Power MOSFET & IGBT.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5f7",
+            "title": "Drive Circuits:  Power BJT and Power MOSFET (any two example circuits – no analysis).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics",
+        "title": "Module 2: Scr structure two transistor analogy static characteristics",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5f9",
+            "title": "SCR: Structure, two transistor analogy, static characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5fa",
+            "title": "Rectifiers:  Three phase diode bridge rectifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5fb",
+            "title": "Single phase half-controlled rectifier with R load – Single phase fully controlled bridge rectifier (continuous conduction) – output voltage equation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5fc",
+            "title": "Principle of three phase half wave controlled rectifier– (average output voltage equation for continuous load current) – related simple problems (1-phase & 3-phase).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck",
+        "title": "Module 3: Dc dc switch mode converters buck boost and buck",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe5fe",
+            "title": "DC – DC Switch Mode Converters:  Buck, Boost and Buck-boost DC-DC converters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe5ff",
+            "title": "Waveforms and expression of DC-DC converters for output voltage, voltage and current ripple under continuous conduction mode.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe600",
+            "title": "Isolated converters:  Flyback, Forward, Push Pull, Half bridge and Full bridge converters – Waveforms and governing equations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-power-electronics-04-module-4-dc",
+        "title": "Module 4: Dc",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe602",
+            "title": "DC-AC Switch Mode Inverters: Inverter topologies, Driven Inverters: Push-Pull, Half bridge and Full bridge configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe603",
+            "title": "Single phase PWM inverters (Single pulse width and sinusoidal pulse width modulation) – rms output voltage equation and output voltage waveforms.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-4-signals-and-systems",
+    "code": "PCECT402",
+    "name": "SIGNALS AND SYSTEMS",
+    "branchId": "ec",
+    "semester": 4,
+    "modules": [
+      {
+        "id": "ec-4-signals-and-systems-01-module-1-introduction-to-signals-and-systems",
+        "title": "Module 1: Introduction to signals and systems",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe510",
+            "title": "Introduction to signals and systems:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe511",
+            "title": "Continuous time and discrete time signals - Elementary signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe512",
+            "title": "Classification of signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe513",
+            "title": "Basic signal operations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe514",
+            "title": "Continuous time and discrete time systems – Representation and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe515",
+            "title": "Convolution integral and convolution sum operations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe516",
+            "title": "Continuous time and discrete time LTI systems-Stability and causality",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals",
+        "title": "Module 2: Frequency domain representation of continuous time signals",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe518",
+            "title": "Frequency domain representation of continuous time signals:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe519",
+            "title": "Continuous time Fourier series - E xponential Fourier series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe51a",
+            "title": "Continuous time Fourier transform - Convergence and Gibbs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe51b",
+            "title": "Continuous time Fourier transform of standard signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe51c",
+            "title": "Properties of Continuous time Fourier transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe51d",
+            "title": "Inverse Transform.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe51e",
+            "title": "Bilateral Laplace Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe51f",
+            "title": "Concept of ROC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe520",
+            "title": "Relation of Laplace",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d",
+        "title": "Module 3: Sampling of continuous time signals to discrete signals and frequency d",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe522",
+            "title": "Sampling of continuous time signals to discrete signals and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe523",
+            "title": "Conversion of continuous time signal to discrete time signal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe524",
+            "title": "Sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe525",
+            "title": "Nyquist criteria",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe526",
+            "title": "Aliasing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe527",
+            "title": "Discrete time Fourier series for discrete periodic signals.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe528",
+            "title": "Discrete time Fourier transform (DTFT)-Convergence condition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe529",
+            "title": "DTFT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe52a",
+            "title": "Properties of DTFT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe52b",
+            "title": "Inverse transform.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe52c",
+            "title": "Z transform- ROC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe52d",
+            "title": "Properties (Proof not needed)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe52e",
+            "title": "Inverse transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe52f",
+            "title": "Relation between DTFT and Z-Transform.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-4-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms",
+        "title": "Module 4: Analysis of lti systems using transforms",
+        "topics": [
+          {
+            "id": "68a5c45eb09ce205780fe531",
+            "title": "Analysis of LTI systems using Transforms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe532",
+            "title": "Concept of transfer function-Frequency response",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe533",
+            "title": "Magnitude response",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe534",
+            "title": "Analysis of Continuous time LTI systems using Laplace and Fourier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe535",
+            "title": "Analysis of discrete time LTI systems using DTFT and Z transforms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c45eb09ce205780fe536",
+            "title": "Stability and causality using Z transform.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

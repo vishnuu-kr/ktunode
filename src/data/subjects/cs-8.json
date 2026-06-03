@@ -1,0 +1,3671 @@
+[
+  {
+    "id": "cs-8-computational-complexity",
+    "code": "PECST864",
+    "name": "COMPUTATIONAL COMPLEXITY",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-computational-complexity-01-module-1-introduction-to-complexity-theory",
+        "title": "Module 1: Introduction to complexity theory",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca07",
+            "title": "Introduction to Complexity Theory - Basic concepts and motivations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca08",
+            "title": "Deterministic and nondeterministic models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca09",
+            "title": "Turing machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca0a",
+            "title": "computational models.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8ca0a-q-1",
+                "year": "2024",
+                "question": "Describe the main components of a Turing Machine and explain its role as a fundamental model of computation.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ca0a-q-2",
+                "year": "2024",
+                "question": "What is the key difference between a Deterministic Turing Machine (DTM) and a Nondeterministic Turing Machine (NTM)?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ca0a-q-3",
+                "year": "2024",
+                "question": "How does the RAM model differ from the Turing Machine model in terms of memory access?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ca0a-q-4",
+                "year": "2024",
+                "question": "What are the two primary measures of complexity used when analyzing computational models?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ca0a-q-5",
+                "year": "2024",
+                "question": "If a problem can be solved by a circuit of depth $d$, what does this imply about its parallel computation time?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca0b",
+            "title": "Complexity Classes P and NP - Definitions and examples of P and NP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca0c",
+            "title": "Polynomial-time algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca0d",
+            "title": "NP-completeness and the Cook-Levin theorem.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca0e",
+            "title": "Reductions and Completeness - Polynomial-time reductions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca0f",
+            "title": "NP-complete problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca10",
+            "title": "their significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca11",
+            "title": "Examples of NP-complete problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computational-complexity-02-module-2-space-complexity",
+        "title": "Module 2: Space complexity",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca13",
+            "title": "Space Complexity - Space complexity classes: L, NL, PSPACE",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca14",
+            "title": "Savitch's theorem and NL-completeness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca15",
+            "title": "PSPACE-completeness.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca16",
+            "title": "Polynomial Hierarchy and Alternation - Definition of the polynomial hierarchy (PH)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca17",
+            "title": "Complete problems for each level of PH",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca18",
+            "title": "Relationship between PH and other classes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computational-complexity-03-module-3-interactive-proofs",
+        "title": "Module 3: Interactive proofs",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca1a",
+            "title": "Interactive Proofs - Definition and examples of interactive proofs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca1b",
+            "title": "IP = PSPACE theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca1c",
+            "title": "Zero-knowledge proofs.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca1d",
+            "title": "Probabilistically Checkable Proofs (PCPs) - Introduction to PCPs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca1e",
+            "title": "PCP theorem and implications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca1f",
+            "title": "Applications in hardness of approximation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computational-complexity-04-module-4-circuit-complexity",
+        "title": "Module 4: Circuit complexity",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca21",
+            "title": "Circuit Complexity - Boolean circuits and circuit complexity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca22",
+            "title": "Circuit lower bounds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca23",
+            "title": "Complexity of specific functions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca24",
+            "title": "Quantum Complexity - Basics of quantum computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca25",
+            "title": "Quantum complexity classes: BQP, QMA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca26",
+            "title": "Quantum algorithms and their complexity.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-computational-number-theory",
+    "code": "PECST869",
+    "name": "COMPUTATIONAL NUMBER THEORY",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-computational-number-theory-01-module-1-introduction-to-number-theory",
+        "title": "Module 1: Introduction to number theory",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb31",
+            "title": "Introduction to Number Theory - Basic concepts and definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb32",
+            "title": "Greatest common divisor (GCD) and Euclidean algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb33",
+            "title": "Modular Arithmetic - Congruences and modular arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb34",
+            "title": "Applications of modular arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb35",
+            "title": "Integer Factorization - Prime numbers and factorization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb36",
+            "title": "Algorithms for integer factorization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb37",
+            "title": "Basic Algorithms - Algorithms for modular arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb38",
+            "title": "Fast exponentiation techniques",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computational-number-theory-02-module-2-advanced-factorization-algorithms",
+        "title": "Module 2: Advanced factorization algorithms",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb3a",
+            "title": "Advanced Factorization Algorithms - Pollard’s rho algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb3b",
+            "title": "Elliptic curve factorization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb3c",
+            "title": "Public-Key Cryptography - RSA algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb3d",
+            "title": "Security analysis of RSA",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cb3d-q-1",
+                "year": "2024",
+                "question": "Explain why the difficulty of integer factorization is central to RSA's security.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb3d-q-2",
+                "year": "2024",
+                "question": "Briefly describe how Fermat's factorization method works and for what type of numbers it is most effective.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb3d-q-3",
+                "year": "2024",
+                "question": "What is the primary security concern with using a very small public exponent like $e=3$ in RSA? How can this be mitigated?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb3d-q-4",
+                "year": "2024",
+                "question": "Name one type of side-channel attack that could be used against RSA and explain its basic principle.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb3d-q-5",
+                "year": "2024",
+                "question": "Why is PKCS#1 v1.5 padding considered less secure than OAEP for RSA encryption?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb3d-q-6",
+                "year": "2024",
+                "question": "What is the significance of Shor's algorithm for the future security of RSA?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb3e",
+            "title": "Elliptic Curve Cryptography - Introduction to elliptic curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb3f",
+            "title": "Algorithms for elliptic curve cryptosystems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computational-number-theory-03-module-3-public-key-cryptography",
+        "title": "Module 3: Public key cryptography",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb41",
+            "title": "Public Key Cryptography - RSA algorithm and its implementation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb42",
+            "title": "Security aspects and cryptanalysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb43",
+            "title": "Elliptic Curve Cryptography - Basics of elliptic curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb44",
+            "title": "Elliptic curve cryptosystems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb45",
+            "title": "Cryptographic Protocols - Key exchange protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb46",
+            "title": "Digital signatures and authentication",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computational-number-theory-04-module-4-algebraic-number-theory",
+        "title": "Module 4: Algebraic number theory",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb48",
+            "title": "Algebraic Number Theory - Algebraic integers and number fields",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb49",
+            "title": "Factorization in number fields",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb4a",
+            "title": "Computational Methods - Algorithms for solving Diophantine equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb4b",
+            "title": "Applications in computational algebra",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb4c",
+            "title": "Recent Developments and Applications - Applications in modern cryptography and coding theory",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-computer-graphics",
+    "code": "OECST835",
+    "name": "COMPUTER GRAPHICS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-computer-graphics-01-module-1-basics-of-computer-graphics",
+        "title": "Module 1: Basics of computer graphics",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cd4d",
+            "title": "Basics of Computer graphics - Basics of Computer Graphics and its applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd4e",
+            "title": "Video Display devices - LED, OLED, LCD, PDP and FED and reflective displays.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd4f",
+            "title": "Random and  Raster scan displays and systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd50",
+            "title": "Line and Circle drawing Algorithms - Line drawing algorithms- Bresenham’s algorithm, Liang-Barsky Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd51",
+            "title": "Circle drawing algorithms - Midpoint Circle generation algorithm, Bresenham’s Circle drawing algorithm.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computer-graphics-02-module-2-geometric-transformations",
+        "title": "Module 2: Geometric transformations",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cd53",
+            "title": "Geometric transformations - 2D and 3D basic transformations - Translation, Rotation, Scaling, Reflection and Shearing, Matrix representations and homogeneous coordinates.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd54",
+            "title": "Filled Area Primitives - Scan line polygon filling, Boundary filling and flood filling.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computer-graphics-03-module-3-transformations-and-clipping-algorithms",
+        "title": "Module 3: Transformations and clipping algorithms",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cd56",
+            "title": "Transformations and Clipping Algorithms - Window to viewport transformation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd57",
+            "title": "Cohen Sutherland and Midpoint subdivision line clipping algorithms, Sutherland Hodgeman and Weiler Atherton Polygon clipping algorithms.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-computer-graphics-04-module-4-three-dimensional-graphics",
+        "title": "Module 4: Three dimensional graphics",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cd59",
+            "title": "Three dimensional graphics - Three dimensional viewing pipeline.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd5a",
+            "title": "Projections- Parallel and Perspective projections.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd5b",
+            "title": "Visible surface detection algorithms- Back face detection, Depth buffer algorithm, Scan line algorithm, A buffer algorithm.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-internet-of-things",
+    "code": "OECST834",
+    "name": "INTERNET OF THINGS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-internet-of-things-01-module-1-introduction-to-iot",
+        "title": "Module 1: Introduction to iot",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ccf8",
+            "title": "Introduction to IoT - Physical Design of IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccf9",
+            "title": "Logical Design of IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccfa",
+            "title": "IoT levels and Deployment templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccfb",
+            "title": "Domain Specific IoT- Home automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccfc",
+            "title": "Energy",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8ccfc-q-1",
+                "year": "2024",
+                "question": "Why is energy management a critical consideration for IoT devices compared to traditional computing devices like laptops?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccfc-q-2",
+                "year": "2024",
+                "question": "Describe two different energy harvesting techniques and suggest a suitable IoT application for each.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccfc-q-3",
+                "year": "2024",
+                "question": "A company is developing a network of environmental monitoring sensors for a remote national park. The sensors need to measure temperature, humidity, and air quality and transmit data daily. What power management strategy would you recommend to maximize the battery life of these sensors?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccfc-q-4",
+                "year": "2024",
+                "question": "How does the choice of communication protocol impact the energy consumption of an IoT device?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccfd",
+            "title": "Agriculture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccfe",
+            "title": "Health and lifestyle",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-internet-of-things-02-module-2-iot-and-m2m",
+        "title": "Module 2: Iot and m2m",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cd00",
+            "title": "IoT and M2M-M2M",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd01",
+            "title": "Difference between IoT and M2M",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd02",
+            "title": "Software Defined Networking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd03",
+            "title": "Network Function virtualization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd04",
+            "title": "Need for IoT System Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd05",
+            "title": "Simple Network Management Protocol (SNMP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd06",
+            "title": "NETCONF",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd07",
+            "title": "YANG",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd08",
+            "title": "LPWAN -  LPWAN applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd09",
+            "title": "LPWAN technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd0a",
+            "title": "Cellular (3GPP) and Non 3GPP standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd0b",
+            "title": "Comparison of various protocols like Sigfox",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd0c",
+            "title": "LoRA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd0d",
+            "title": "LoRAWAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd0e",
+            "title": "Weightless",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd0f",
+            "title": "NB-IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd10",
+            "title": "LTE-M",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-internet-of-things-03-module-3-developing-iot",
+        "title": "Module 3: Developing iot",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cd12",
+            "title": "Developing IoT - IoT design methodology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd13",
+            "title": "Case study on IoT system for weather monitoring",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd14",
+            "title": "Motivations for using python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd15",
+            "title": "IoT-system Logical design using python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd16",
+            "title": "Python Packages of Interest for IoT - JSON",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cd16-q-1",
+                "year": "2024",
+                "question": "You have a Python dictionary representing sensor data. Convert this dictionary into a compact JSON string and then into a pretty-printed JSON string with an indent of 2 spaces.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cd16-q-2",
+                "year": "2024",
+                "question": "You receive the following JSON string from a device. Parse this string into a Python object and then print the \"device_type\" and the \"battery_level\".",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cd16-q-3",
+                "year": "2024",
+                "question": "Create a Python list of dictionaries representing a few devices. Write this list to a JSON file named `devices.json`. Then, read the data back from `devices.json` and print the name of the second device.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cd16-q-4",
+                "year": "2024",
+                "question": "What is the main difference between `json.dumps()` and `json.dump()`? When would you use each?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd17",
+            "title": "XML",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd18",
+            "title": "HTTPlib & URLLib",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd19",
+            "title": "SMTPLib",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-internet-of-things-04-module-4-programming-raspberry-pi-with-python",
+        "title": "Module 4: Programming raspberry pi with python",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cd1b",
+            "title": "Programming Raspberry Pi with Python-Controlling LED with Raspberry Pi",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd1c",
+            "title": "Interfacing an LED and switch with Raspberry Pi",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd1d",
+            "title": "Other IoT devices- PcDino",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd1e",
+            "title": "Beagle bone Black",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd1f",
+            "title": "Cubieboard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cd20",
+            "title": "Data Analytics for IoT",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cd20-q-1",
+                "year": "2024",
+                "question": "Why is data cleaning crucial before performing analysis on IoT data?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cd20-q-2",
+                "year": "2024",
+                "question": "What is the primary advantage of using `pandas` for data manipulation in Python?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cd20-q-3",
+                "year": "2024",
+                "question": "What is the purpose of `time.sleep()` in sensor reading scripts?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cd20-q-4",
+                "year": "2024",
+                "question": "Briefly describe the challenge of \"latency\" in real-time data processing for IoT.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cd20-q-5",
+                "year": "2024",
+                "question": "What is the role of `scikit-learn` in IoT data analysis?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-introduction-to-algorithm",
+    "code": "OECST831",
+    "name": "INTRODUCTION TO ALGORITHM",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis",
+        "title": "Module 1: Introduction to algorithm analysis",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cbbf",
+            "title": "Introduction to Algorithm Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc0",
+            "title": "Time and Space Complexity- Asymptotic notation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc1",
+            "title": "Elementary operations and Computation of Time Complexity-Best, worst and Average Case Complexities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc2",
+            "title": "Complexity Calculation of simple algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc3",
+            "title": "Recurrence Equations: Solution of Recurrence Equations – Iteration Method and Recursion Tree Methods",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-introduction-to-algorithm-02-module-2-trees",
+        "title": "Module 2: Trees",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc5",
+            "title": "Trees - Binary Trees – level and height of the tree",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc6",
+            "title": "complete-binary tree representation using array",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc7",
+            "title": "tree traversals (Recursive and non-recursive), applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc8",
+            "title": "Binary search tree – creation, insertion and deletion and search operations, applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbc9",
+            "title": "Graphs – representation of graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbca",
+            "title": "BFS and DFS (analysis not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbcb",
+            "title": "Topological Sorting",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-introduction-to-algorithm-03-module-3-divide-and-conquer",
+        "title": "Module 3: Divide and conquer",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cbcd",
+            "title": "Divide and Conquer - Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbce",
+            "title": "Finding Maximum and Minimum",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbcf",
+            "title": "Costs associated element comparisons and index comparisons",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd0",
+            "title": "Binary Search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd1",
+            "title": "Quick Sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd2",
+            "title": "Merge Sort - Refinements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd3",
+            "title": "Greedy Strategy - Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd4",
+            "title": "Fractional Knapsack Problem",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cbd4-q-1",
+                "year": "2024",
+                "question": "You have a knapsack with a capacity of 10 kg. You are given the following items:",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbd4-q-2",
+                "year": "2024",
+                "question": "Explain why sorting items by value-to-weight ratio is the correct greedy strategy for the Fractional Knapsack Problem.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbd4-q-3",
+                "year": "2024",
+                "question": "What is the time complexity of the Fractional Knapsack algorithm, and which step contributes the most to it?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd5",
+            "title": "Minimum Cost Spanning Trees – PRIM’s Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd6",
+            "title": "Kruskal’s Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd7",
+            "title": "Single Source Shortest Path Algorithm - Dijkstra’s Algorithm",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cbd7-q-1",
+                "year": "2024",
+                "question": "Consider a directed graph with 4 vertices (S, A, B, T) and the following edge weights:",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbd7-q-2",
+                "year": "2024",
+                "question": "What is the fundamental reason why Dijkstra's algorithm fails if the graph contains negative edge weights?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbd7-q-3",
+                "year": "2024",
+                "question": "If a graph has $V$ vertices and $E$ edges, what is the time complexity of Dijkstra's algorithm using a binary heap as the priority queue? Explain why.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbd7-q-4",
+                "year": "2024",
+                "question": "How would you reconstruct the shortest path from source S to vertex T if you have the `prev` array from Dijkstra's algorithm?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cs-8-introduction-to-algorithm-04-module-4-dynamic-programming",
+        "title": "Module 4: Dynamic programming",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cbd9",
+            "title": "Dynamic Programming - The Control Abstraction- The Optimality Principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbda",
+            "title": "Matrix Chain Multiplication, Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbdb",
+            "title": "All Pairs Shortest Path Algorithm - Floyd-Warshall Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbdc",
+            "title": "The Control Abstraction of Backtracking – The N-Queens Problem",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cbdc-q-1",
+                "year": "2024",
+                "question": "Explain the core idea behind backtracking in your own words.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbdc-q-2",
+                "year": "2024",
+                "question": "For the N-Queens problem, what are the three types of conflicts a queen can cause?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbdc-q-3",
+                "year": "2024",
+                "question": "If we represent a solution to the N-Queens problem as an array `board[N]` where `board[i]` is the column of the queen in row `i`, how would the `is_safe` function check for column conflicts?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cbdc-q-4",
+                "year": "2024",
+                "question": "What is the time complexity of the backtracking algorithm for the N-Queens problem, and why is it not simply $O(N^N)$?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cbdd",
+            "title": "Branch and Bound Algorithm for Travelling Salesman Problem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-natural-language-processing",
+    "code": "PECST862",
+    "name": "NATURAL LANGUAGE PROCESSING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-natural-language-processing-01-module-1-introduction-to-natural-language-processing",
+        "title": "Module 1: Introduction to natural language processing",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9d9",
+            "title": "Introduction to Natural Language Processing - Various stages of traditional NLP – Challenges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9da",
+            "title": "Basic Text Processing techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9db",
+            "title": "Common NLP Tasks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9dc",
+            "title": "N-gram Language Models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9dd",
+            "title": "Naive Bayes for Text Classification, and Sentiment Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9de",
+            "title": "Evaluation-Precision, Recall and F-measure-Test sets and cross validation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-natural-language-processing-02-module-2-annotating-linguistic-structures",
+        "title": "Module 2: Annotating linguistic structures",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e0",
+            "title": "Annotating Linguistic Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e1",
+            "title": "Context-Free Grammars, Constituency Parsing, Ambiguity, CYK Parsing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e2",
+            "title": "Dependency Parsing - Transition-Based Dependency Parsing, Graph-Based Dependency Parsing, Evaluation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-natural-language-processing-03-module-3-word-representations",
+        "title": "Module 3: Word representations",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e4",
+            "title": "Word representations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e5",
+            "title": "Lexical Semantics, Vector Semantics, TF-IDF, Pointwise Mutual Information (PMI)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e6",
+            "title": "Neural Word embeddings - Word2vec, GloVe, Contextual Word Embeddings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e7",
+            "title": "Evaluating Vector Models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9e8",
+            "title": "Feedforward Neural Networks for Text Classification",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-natural-language-processing-04-module-4-sequence-modelling",
+        "title": "Module 4: Sequence modelling",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9ea",
+            "title": "Sequence Modelling - Recurrent Neural Networks, RNNs as Language Models, RNNs for NLP tasks, Stacked and Bidirectional RNN architectures, Recursive Neural Networks, LSTM & GRU, Common RNN NLP Architectures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9eb",
+            "title": "Encoder-Decoder Model with RNNs, Attention models, Transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9ec",
+            "title": "NLP Applications - Machine Translation, Question Answering and Information Retrieval",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9ed",
+            "title": "Introduction to Large Language Models",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-next-generation-interaction-design",
+    "code": "PECST865",
+    "name": "NEXT GENERATION INTERACTION DESIGN",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr",
+        "title": "Module 1: Introduction to interaction design and arvr",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb6c",
+            "title": "Introduction to Interaction Design and AR/VR :- Fundamentals of Interaction Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb6d",
+            "title": "Principles of interaction design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb6e",
+            "title": "Human-computer interaction (HCI) basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb6f",
+            "title": "User experience (UX) design principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb70",
+            "title": "Introduction to AR and VR - Overview of AR and VR technologies (Key differences and Application)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb71",
+            "title": "Overview of AR/VR hardware (headsets, controllers, sensors)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb72",
+            "title": "Software tools and platforms for AR/VR development",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-next-generation-interaction-design-02-module-2-user",
+        "title": "Module 2: User",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb74",
+            "title": "User-Centered Design and Prototyping :- Understanding User Needs and Context - User research methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb75",
+            "title": "Personas and user journey mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb76",
+            "title": "Contextual inquiry for AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb77",
+            "title": "Designing for AR/VR Environments",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cb77-q-1",
+                "year": "2024",
+                "question": "Briefly explain the difference between immersion and presence in the context of VR.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb78",
+            "title": "Spatial design principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb79",
+            "title": "Immersion and presence in AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb7a",
+            "title": "User interface (UI) design for AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb7b",
+            "title": "Prototyping and Testing - Rapid prototyping technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb7c",
+            "title": "Usability testing methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb7d",
+            "title": "Iterative design and feedback loops",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-next-generation-interaction-design-03-module-3-advanced-interaction-techniques",
+        "title": "Module 3: Advanced interaction techniques",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb7f",
+            "title": "Advanced Interaction Techniques :- Gesture - Designing for gesture-based interaction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb80",
+            "title": "Implementing gesture controls in AR/VR applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb81",
+            "title": "Voice - Voice recognition technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb82",
+            "title": "Integrating voice commands in AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb83",
+            "title": "Haptic Feedback and Sensory Augmentation - Understanding haptic feedback and tactile interactions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb84",
+            "title": "Eye Gaze - Designing and integrating Eye Gaze in VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb85",
+            "title": "Spatial Audio",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb86",
+            "title": "Microinteraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb87",
+            "title": "Motion capture and tracking technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb88",
+            "title": "Natural Language Interaction and conversational interfaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb89",
+            "title": "Type of IoT sensors and uses",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends",
+        "title": "Module 4: Implementation evaluation and future trends",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb8b",
+            "title": "Implementation, Evaluation, and Future Trends :- Developing AR/VR Projects - Project planning and management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb8c",
+            "title": "Collaborative design and development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb8d",
+            "title": "Case studies of successful AR/VR projects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb8e",
+            "title": "Evaluating AR/VR Experiences - Evaluation methods and metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb8f",
+            "title": "Analyzing user feedback",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb90",
+            "title": "Refining and improving AR/VR applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb91",
+            "title": "Future Trends and Ethical Considerations- Emerging technologies in AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb92",
+            "title": "Ethical implications of AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb93",
+            "title": "Future directions in interaction design for AR/VR",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-prompt-engineering",
+    "code": "PECST868",
+    "name": "PROMPT ENGINEERING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-prompt-engineering-01-module-1-introduction-to-prompt-engineering-and-language-models",
+        "title": "Module 1: Introduction to prompt engineering and language models",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb10",
+            "title": "Introduction to Prompt Engineering and Language Models :-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb11",
+            "title": "Fundamentals of Natural Language Processing (NLP) - Overview of Language Models: From Rule-Based Systems to Transformer Architectures (e.g., GPT, BERT) - Understanding Prompts: Definition, Importance, and Applications - Introduction to Prompt Engineering: Techniques and Use Cases - Ethical Considerations in Prompt Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb12",
+            "title": "Explore various language models using platforms like OpenAI, Hugging Face, or Google Colab; Experimenting with basic prompts to understand the impact of phrasing and context on model outputs.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-prompt-engineering-02-module-2-techniques-and-strategies-in-prompt-engineering",
+        "title": "Module 2: Techniques and strategies in prompt engineering",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb14",
+            "title": "Techniques and Strategies in Prompt Engineering :-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb15",
+            "title": "Designing Effective Prompts - Best Practices and Common Pitfalls; Prompt Tuning and Fine-Tuning Language Model; Using Zero-Shot, Few-Shot, and Multi-Shot Learning in Prompts; Exploring the Role of Context, Repetition, and Specificity in Prompt Responses; Advanced Prompt Engineering Techniques: Prompt Chaining, Iterative Prompting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb16",
+            "title": "Crafting and optimizing prompts for specific tasks (e.g., text generation, summarization, Q&A); Using prompt engineering to fine-tune pre-trained models on specific datasets or tasks.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-prompt-engineering-03-module-3-applications-of-prompt-engineering",
+        "title": "Module 3: Applications of prompt engineering",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb18",
+            "title": "Applications of Prompt Engineering :-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb19",
+            "title": "Prompt Engineering in Chatbots and Conversational AI; Content Generation: Creative Writing, Code Generation, and Data Augmentation; Prompt Engineering for Sentiment Analysis, Classification, and Translation; Integration of Prompt Engineering with Other AI Technologies (e.g., Computer Vision, Data Science); Real-World Case Studies and Industry Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb1a",
+            "title": "Developing a simple chatbot using prompt engineering techniques, Case study analysis and reproduction of real-world prompt engineering applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-prompt-engineering-04-module-4-challenges-future-trends-and-research-in-prompt-engineering",
+        "title": "Module 4: Challenges future trends and research in prompt engineering",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cb1c",
+            "title": "Challenges, Future Trends, and Research in Prompt Engineering :-",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-1",
+                "year": "2024",
+                "question": "Explain the concept of \"prompt brittleness\" in your own words and provide an example of how a slight change in a prompt could lead to a significantly different output from an LLM.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-2",
+                "year": "2024",
+                "question": "Why is it important for prompt engineers to be aware of and address potential biases in LLMs?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-3",
+                "year": "2024",
+                "question": "What is the core idea behind Automated Prompt Optimization (APO), and why is it likely to become important in prompt engineering?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-4",
+                "year": "2024",
+                "question": "How might multi-modal prompting change the way we interact with AI? Provide an example.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-5",
+                "year": "2024",
+                "question": "Imagine you are a prompt engineer in the near future. What is one emerging trend you are most excited about, and why?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-6",
+                "year": "2024",
+                "question": "Explain what \"Prompt Tuning\" (or PEFT) is and why it is a significant area of research in prompt engineering.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-7",
+                "year": "2024",
+                "question": "How does Reinforcement Learning from Human Feedback (RLHF) relate to prompt engineering?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cb1c-q-8",
+                "year": "2024",
+                "question": "You've been asked to research prompt engineering for medical diagnosis. What are some key considerations and potential research avenues you would explore?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb1d",
+            "title": "Challenges in Prompt Engineering: Ambiguity, Bias, and Misinterpretation; Evaluating and Improving Prompt Performance: Metrics and Benchmarks; Future Trends: Emerging Techniques and the Evolution of Language Models;",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cb1e",
+            "title": "Working on a capstone project to solve a real-world problem using prompt engineering",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-software-architectures",
+    "code": "PECST861",
+    "name": "SOFTWARE ARCHITECTURES",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-software-architectures-01-module-1-introduction-to-software-architecture-definition-and-importance",
+        "title": "Module 1: Introduction to software architecture definition and importance",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b0",
+            "title": "Introduction to Software Architecture:  Definition and Importance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b1",
+            "title": "Architecture in the Life Cycle",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8c9b1-q-1",
+                "year": "2024",
+                "question": "Imagine you are developing a new social media platform. Which phases of the SDLC would be most heavily influenced by architectural decisions related to scalability and real-time data processing? Explain why.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8c9b1-q-2",
+                "year": "2024",
+                "question": "What is the primary advantage of considering architecture early in the SDLC compared to addressing it later?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8c9b1-q-3",
+                "year": "2024",
+                "question": "If a software project experiences significant scope changes during the implementation phase, how can a well-defined architecture help the team manage these changes?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b2",
+            "title": "Role of the Architect vs. Engineer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b3",
+            "title": "Requirements engineering: Stakeholders, Concerns, and Types of Requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b4",
+            "title": "Use Cases and Tactics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-software-architectures-02-module-2-architectural-patterns-and-styles-architectural-patterns",
+        "title": "Module 2: Architectural patterns and styles architectural patterns",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b6",
+            "title": "Architectural Patterns and Styles:   Architectural Patterns- Overview of Patterns and Styles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b7",
+            "title": "Applying Patterns and Choosing a Style",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b8",
+            "title": "Patterns for Enterprise Applications: Enterprise Applications and Layered Patterns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9b9",
+            "title": "Concurrency Problems",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8c9b9-q-1",
+                "year": "2024",
+                "question": "How can using **immutable data structures** help prevent concurrency problems?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8c9b9-q-2",
+                "year": "2024",
+                "question": "What is the difference between deadlock and livelock?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cs-8-software-architectures-03-module-3-components-contracts-and-service",
+        "title": "Module 3: Components contracts and service",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9bb",
+            "title": "Components, Contracts, and Service-Oriented Architectures:  Component Software- Nature of Components and Reuse",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9bc",
+            "title": "UML and Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9bd",
+            "title": "Design by Contract- Contracts, Polymorphism, Inheritance, and Delegation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9be",
+            "title": "Service-Oriented Architectures- Standards, Technologies, and Security",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-software-architectures-04-module-4-architecture-evaluation-and-description-describing-architectures-and-vi",
+        "title": "Module 4: Architecture evaluation and description describing architectures and vi",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8c9c0",
+            "title": "Architecture Evaluation and Description:  Describing Architectures and Viewpoints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9c1",
+            "title": "Evaluating Architectures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8c9c2",
+            "title": "Architectural Description Languages (ADLs)- Overview and Applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-software-testing",
+    "code": "OECST833",
+    "name": "SOFTWARE TESTING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-software-testing-01-module-1-introduction-to-software-testing-automation",
+        "title": "Module 1: Introduction to software testing automation",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb1",
+            "title": "Introduction to Software Testing & Automation:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb2",
+            "title": "Introduction to Software Testing - Concepts, importance of testing, software quality, and real-world failures (e.g., Ariane 5, Therac 25)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb3",
+            "title": "Software Testing Processes - Levels of thinking in testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb4",
+            "title": "Testing Terminologies - Verification, validation, fault, error, bug, test cases, and coverage criteria",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb4-q-1",
+                "year": "2024",
+                "question": "A developer writes code that has a logical error in a calculation. Later, when the software is used, it produces the wrong financial report.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb4-q-2",
+                "year": "2024",
+                "question": "Differentiate between Verification and Validation. Which one focuses on \"building the product right\" and which one on \"building the right product\"?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb4-q-3",
+                "year": "2024",
+                "question": "Imagine you are testing a simple \"Add to Cart\" feature on an e-commerce website. Write a basic test case for a successful \"Add to Cart\" scenario. Include at least: Test Case ID, Title, Prerequisites, Test Steps, Test Data, and Expected Result.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb4-q-4",
+                "year": "2024",
+                "question": "Consider the following pseudo-code snippet:",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb5",
+            "title": "Types of Testing - Unit, Integration, System, Acceptance, Performance (stress, usability, regression), and Security Testing",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb5-q-1",
+                "year": "2024",
+                "question": "A new feature for uploading user profiles is added to a web application. Which type of testing is crucial to ensure this new feature doesn't break existing functionalities like user login or product search?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb5-q-2",
+                "year": "2024",
+                "question": "What is the primary goal of **Stress Testing**?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb5-q-3",
+                "year": "2024",
+                "question": "Who is typically responsible for performing **Acceptance Testing**?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccb5-q-4",
+                "year": "2024",
+                "question": "Explain the difference between **Verification** and **Validation** in the context of software testing.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb6",
+            "title": "Industry Trends - AI in test case automation, Introduction to GenAI in testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb7",
+            "title": "Testing Methods - Black-Box, White-Box, and Grey-Box Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb8",
+            "title": "Automation in Testing - Introduction to automation tools (e.g., Selenium, Cypress, JUnit)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccb9",
+            "title": "Case Study- Automation of Unit Testing and Mutation Testing using JUnit.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-software-testing-02-module-2-unit-testing-mutation-testing-ai",
+        "title": "Module 2: Unit testing mutation testing ai",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ccbb",
+            "title": "Unit Testing, Mutation Testing & AI-Driven Automation:-",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-1",
+                "year": "2024",
+                "question": "Explain the Arrange-Act-Assert (AAA) pattern and provide a simple conceptual example of its application in unit testing.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-2",
+                "year": "2024",
+                "question": "What is Test-Driven Development (TDD)? Describe its core cycle.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-3",
+                "year": "2024",
+                "question": "Differentiate between mocks and stubs in the context of unit testing.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-4",
+                "year": "2024",
+                "question": "Define mutation testing and explain its primary purpose.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-5",
+                "year": "2024",
+                "question": "What is a \"killed mutant\" and a \"survived mutant\"? What does each signify?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-6",
+                "year": "2024",
+                "question": "Briefly describe two common mutation operators.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-7",
+                "year": "2024",
+                "question": "How can AI be used to improve test case generation?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-8",
+                "year": "2024",
+                "question": "What does \"self-healing tests\" mean in AI-driven test automation?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbb-q-9",
+                "year": "2024",
+                "question": "List one advantage and one challenge of using AI in software testing.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccbc",
+            "title": "Unit Testing- Static and Dynamic Unit Testing, control flow testing, data flow testing, domain testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccbd",
+            "title": "Mutation Testing- Mutation operators, mutants, mutation score, and modern mutation testing tools (e.g., Muclipse)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccbe",
+            "title": "JUnit Framework - Automation of unit testing, frameworks for testing in real-world projects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccbf",
+            "title": "AI in Testing - GenAI for test case generation and optimization, impact on automation",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbf-q-1",
+                "year": "2024",
+                "question": "Describe three ways Generative AI can be used to improve the efficiency of a software testing team.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbf-q-2",
+                "year": "2024",
+                "question": "You are given a new feature requirement: \"Users should be able to upload profile pictures up to 5MB in JPG or PNG format. The system should reject files larger than 5MB or in unsupported formats.\"",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbf-q-3",
+                "year": "2024",
+                "question": "How does AI-powered test optimization differ from traditional test suite optimization techniques?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccbf-q-4",
+                "year": "2024",
+                "question": "Discuss one significant benefit and one significant challenge of integrating AI into test automation.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc0",
+            "title": "Industry Tools - Application of AI-driven testing tools in automation and predictive testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc1",
+            "title": "Case Study - Mutation testing using JUnit, AI-enhanced test case automation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-software-testing-03-module-3-advanced-white-box-testing-security-testing",
+        "title": "Module 3: Advanced white box testing security testing",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc3",
+            "title": "Advanced White Box Testing & Security Testing:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc4",
+            "title": "Graph Coverage Criteria - Node, edge, and path coverage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc5",
+            "title": "prime path and round trip coverage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc6",
+            "title": "Data Flow Criteria - du paths, du pairs, subsumption relationships",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc7",
+            "title": "Graph Coverage for Code - Control flow graphs (CFGs) for complex structures (e.g., loops, exceptions)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc8",
+            "title": "Graph Coverage for Design Elements - Call graphs, class inheritance testing, and coupling data-flow pairs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccc9",
+            "title": "Security Testing - Fundamentals, tools (OWASP, Burp Suite), and their role in protecting modern applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccca",
+            "title": "Case Study - Application of graph based testing and security testing using industry standard tools.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing",
+        "title": "Module 4: Black box testing grey box testing and responsive testing",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cccc",
+            "title": "Black Box Testing, Grey Box Testing, and Responsive Testing:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cccd",
+            "title": "Black Box Testing - Input space partitioning, domain testing, functional testing (equivalence class partitioning, boundary value analysis, decision tables, random testing)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccce",
+            "title": "Grey Box Testing - Introduction, advantages, and methodologies (matrix testing, regression testing, orthogonal array testing)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cccf",
+            "title": "Performance Testing - Network latency testing, browser compatibility, responsive testing across multiple devices (e.g., BrowserStack, LambdaTest)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccd0",
+            "title": "Introduction to PEX - Symbolic execution, parameterized unit testing, symbolic execution trees, and their application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccd1",
+            "title": "GenAI in Testing - Advanced use cases for predictive and responsive testing across devices and environments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ccd2",
+            "title": "Case Study- Implementation of black-box, grey-box, and responsive testing using PEX and AI-driven tools.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8ccd2-q-1",
+                "year": "2024",
+                "question": "A banking application has a feature to transfer money between accounts. Describe how you would apply Black Box, Grey Box, and Responsive testing principles to test this feature. Mention specific test techniques for each.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccd2-q-2",
+                "year": "2024",
+                "question": "You are using a PEX-like tool to test a function that sorts a list of integers. What would be a good \"property\" to define for this sorting function?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccd2-q-3",
+                "year": "2024",
+                "question": "A key benefit of AI-driven testing for responsive design is \"self-healing.\" Explain what this means and why it's valuable.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8ccd2-q-4",
+                "year": "2024",
+                "question": "Imagine an AI tool is used for responsive testing of an e-commerce website. It flags a visual difference on the mobile version of the product page: the \"Add to Cart\" button is slightly lower than on the desktop. Is this necessarily a bug? Explain your reasoning.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-speech-and-audio-processing",
+    "code": "PECST866",
+    "name": "SPEECH AND AUDIO PROCESSING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-speech-and-audio-processing-01-module-1-speech-production",
+        "title": "Module 1: Speech production",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca4a",
+            "title": "Speech Production :- Acoustic theory of speech production",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca4b",
+            "title": "Source/Filter model - Pitch, Formant",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca4c",
+            "title": "Spectrogram- Wide and narrow band spectrogram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca4d",
+            "title": "Discrete model for speech production",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca4e",
+            "title": "Short-Time Speech Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca4f",
+            "title": "Windowing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca50",
+            "title": "STFT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca51",
+            "title": "Time domain parameters (Short time energy, short time zero crossing Rate, ACF)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca52",
+            "title": "Frequency domain parameters - Filter bank analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca53",
+            "title": "STFT Analysis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-speech-and-audio-processing-02-module-2-mel",
+        "title": "Module 2: Mel",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca55",
+            "title": "Mel-frequency cepstral coefficient (MFCC)- Computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca56",
+            "title": "Pitch Estimation ACF/AMDF approaches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca57",
+            "title": "Cepstral analysis - Pitch and Formant estimation using cepstral analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca58",
+            "title": "LPC Analysis  - LPC model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca59",
+            "title": "Auto correlation method - Levinson Durbin Algorithm",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-speech-and-audio-processing-03-module-3-speech-enhancement",
+        "title": "Module 3: Speech enhancement",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca5b",
+            "title": "Speech Enhancement :-   Spectral subtraction and Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca5c",
+            "title": "Harmonic filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca5d",
+            "title": "Parametric resynthesis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca5e",
+            "title": "Speech coding - fundamentals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca5f",
+            "title": "class of coders : Time domain/spectral domain/vocoders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca60",
+            "title": "Sub band coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca61",
+            "title": "adaptive transform coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca62",
+            "title": "phase vocoder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca63",
+            "title": "Speaker Recognition :- Speaker verification and speaker identification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca64",
+            "title": "log-likelihood",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca65",
+            "title": "Language identification - Implicit and explicit models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca66",
+            "title": "Machine learning models in Speaker Recognition",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception",
+        "title": "Module 4: Signal processing models of audio perception",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca68",
+            "title": "Signal Processing models of audio perception - Basic anatomy of hearing System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca69",
+            "title": "Basilar membrane behaviour",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca6a",
+            "title": "Sound perception -  Auditory Filter Banks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca6b",
+            "title": "Critical Band Structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca6c",
+            "title": "Absolute Threshold of Hearing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca6d",
+            "title": "Masking - Simultaneous Masking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca6e",
+            "title": "Temporal Masking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca6f",
+            "title": "Models of speech perception",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-storage-systems",
+    "code": "PECST867",
+    "name": "STORAGE SYSTEMS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-storage-systems-01-module-1-storage-technologies",
+        "title": "Module 1: Storage technologies",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8ca99",
+            "title": "Storage technologies:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca9a",
+            "title": "Computer storage technologies-Magnetic bubble memories",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca9b",
+            "title": "Charged Coupled Devices - CCDs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca9c",
+            "title": "Micro-Electro-Mechanical Systems - MEMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca9d",
+            "title": "Flash memories",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca9e",
+            "title": "Processing In Memory - PIM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8ca9f",
+            "title": "Optical storage - Data deduplication in storage systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa0",
+            "title": "Storage Arrays- Architectural Principles",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-1",
+                "year": "2024",
+                "question": "A storage array controller fails. What mechanism ensures that data access continues uninterrupted?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-2",
+                "year": "2024",
+                "question": "You have an application that performs very frequent, small writes. Which component of the storage array is most critical for achieving good write performance for this application?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-3",
+                "year": "2024",
+                "question": "Explain the primary difference between RAID 5 and RAID 6 in terms of data protection.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-4",
+                "year": "2024",
+                "question": "Your organization needs to store large archives of historical data that are accessed very infrequently. Which tier of storage would be most appropriate, and what type of media would typically be used?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-5",
+                "year": "2024",
+                "question": "A server needs to access storage as if it were a local disk. Which storage architecture is most suitable for this scenario?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-6",
+                "year": "2024",
+                "question": "What is the main advantage of thin provisioning?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-7",
+                "year": "2024",
+                "question": "Describe a scenario where NAS would be a better choice than SAN, and vice-versa.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8caa0-q-8",
+                "year": "2024",
+                "question": "What is the disk overhead percentage for RAID 10?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa1",
+            "title": "Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa2",
+            "title": "Local Snapshot Redundant Arrays of Independent Disks (RAID) - RAID0",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa3",
+            "title": "RAID2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa4",
+            "title": "RAID3",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa5",
+            "title": "RAID4",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa6",
+            "title": "RAID5",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa7",
+            "title": "RAID6",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caa8",
+            "title": "Hybrid RAID.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-storage-systems-02-module-2-data-storage-networking",
+        "title": "Module 2: Data storage networking",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8caaa",
+            "title": "Data Storage Networking:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caab",
+            "title": "Fibre Channel SAN- FC SAN Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caac",
+            "title": "SAN Topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caad",
+            "title": "iSCSI SAN- iSCSI names",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caae",
+            "title": "Sessions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caaf",
+            "title": "iSNS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab0",
+            "title": "Network Attached Storage - NAS Protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab1",
+            "title": "NAS Arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab2",
+            "title": "NAS Performance Object Storage - Objects and Object IDs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab3",
+            "title": "metadata",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab4",
+            "title": "API Access",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-storage-systems-03-module-3-business-continuity-backup-and-recovery",
+        "title": "Module 3: Business continuity backup and recovery",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cab6",
+            "title": "Business Continuity, Backup and Recovery:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab7",
+            "title": "Replication- Synchronous Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab8",
+            "title": "Asynchronous Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cab9",
+            "title": "Application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caba",
+            "title": "Layer Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cabb",
+            "title": "Logical Volume Manager–Based Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cabc",
+            "title": "Backup Methods- Hot Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cabd",
+            "title": "Offline Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cabe",
+            "title": "LAN-Based Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cabf",
+            "title": "LAN-Free Backups (SAN Based)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac0",
+            "title": "Serverless Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac1",
+            "title": "NDMP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac2",
+            "title": "Backup Types- Full Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac3",
+            "title": "Incremental Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac4",
+            "title": "Differential Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac5",
+            "title": "Synthetic Full Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac6",
+            "title": "Application-Aware Backups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-storage-systems-04-module-4-storage-management",
+        "title": "Module 4: Storage management",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cac8",
+            "title": "Storage Management:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cac9",
+            "title": "Capacity Management- Capacity Reporting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8caca",
+            "title": "Thin Provisioning Considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cacb",
+            "title": "Deduplication and Compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cacc",
+            "title": "Quotas and Archiving",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-1",
+                "year": "2024",
+                "question": "What is the primary purpose of implementing storage quotas?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-2",
+                "year": "2024",
+                "question": "Differentiate between a hard quota and a soft quota. Provide an example for each.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-3",
+                "year": "2024",
+                "question": "Name two types of quota scopes and explain when each might be used.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-4",
+                "year": "2024",
+                "question": "A storage administrator wants to ensure that no single user exceeds 50GB of storage and also wants to be alerted if any user uses more than 40GB. What types of quotas should they consider implementing?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-5",
+                "year": "2024",
+                "question": "Define data archiving and explain its main benefits.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-6",
+                "year": "2024",
+                "question": "What is the key difference between primary storage and secondary storage in the context of archiving?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-7",
+                "year": "2024",
+                "question": "Explain the concept of \"stub files\" in archiving.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-8",
+                "year": "2024",
+                "question": "You have a regulatory requirement to keep financial transaction data for 10 years. What storage management technique is most appropriate for this, and what factors would you consider?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacc-q-9",
+                "year": "2024",
+                "question": "Which type of storage is generally more expensive per gigabyte: primary storage or archival storage?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cacd",
+            "title": "Showback and Chargeback",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cace",
+            "title": "Performance Management- Latency/Response Time",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cacf",
+            "title": "IOPS",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cacf-q-1",
+                "year": "2024",
+                "question": "What is the fundamental difference between IOPS and Throughput?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacf-q-2",
+                "year": "2024",
+                "question": "You have a database application that performs 8,000 random 4KB read operations per second. What is the approximate throughput of this application in MB/s?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacf-q-3",
+                "year": "2024",
+                "question": "Why do SSDs generally offer significantly higher IOPS than HDDs?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacf-q-4",
+                "year": "2024",
+                "question": "Explain the impact of a small block size (e.g., 4KB) versus a large block size (e.g., 1MB) on IOPS and Throughput.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cacf-q-5",
+                "year": "2024",
+                "question": "What is the role of write-back cache with a BBU in improving write IOPS?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cad0",
+            "title": "MBps and Transfer Rate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cad1",
+            "title": "Factors Affecting Storage Performance",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cad1-q-1",
+                "year": "2024",
+                "question": "Explain the concept of \"write penalty\" and how it affects the performance of RAID 5 and RAID 6 compared to RAID 0 and RAID 1.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cad1-q-2",
+                "year": "2024",
+                "question": "You have a system that is experiencing slow application load times. You suspect a storage bottleneck. What are three key factors you would investigate to diagnose the issue?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cad2",
+            "title": "Management Protocols and Interfaces.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-web-programming",
+    "code": "OECST832",
+    "name": "WEB PROGRAMMING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-web-programming-01-module-1-creating-web-page-using-html5",
+        "title": "Module 1: Creating web page using html5",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cc00",
+            "title": "Creating Web Page using HTML5  - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc01",
+            "title": "First HTML5 example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc02",
+            "title": "Headings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc03",
+            "title": "Linking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc04",
+            "title": "Images",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc05",
+            "title": "Special Characters and Horizontal Rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc06",
+            "title": "Lists",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc07",
+            "title": "Tables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc08",
+            "title": "Forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc09",
+            "title": "Internal Linking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc0a",
+            "title": "meta Elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc0b",
+            "title": "HTML5 Form input Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc0c",
+            "title": "Input and datalist Elements and autocomplete Attribute",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc0d",
+            "title": "Page-Structure Elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc0e",
+            "title": "Styling Web Page using CSS  - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc0f",
+            "title": "Inline Styles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc10",
+            "title": "Embedded Style Sheets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc11",
+            "title": "Linking External Style Sheets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc12",
+            "title": "Positioning Elements:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc13",
+            "title": "Absolute Positioning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc14",
+            "title": "z-index",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc15",
+            "title": "Positioning Elements: Relative Positioning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc16",
+            "title": "span",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc17",
+            "title": "Backgrounds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc18",
+            "title": "Element Dimensions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc19",
+            "title": "Box Model and Text Flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc1a",
+            "title": "Media Types and Media Queries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc1b",
+            "title": "Drop-Down Menus",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc1c",
+            "title": "Extensible Markup Language  - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc1d",
+            "title": "XML Basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc1e",
+            "title": "Structuring Data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc1f",
+            "title": "XML Namespaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc20",
+            "title": "Document Type Definitions (DTDs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc21",
+            "title": "XML Vocabularies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-web-programming-02-module-2-scripting-language",
+        "title": "Module 2: Scripting language",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cc23",
+            "title": "Scripting language  - Client-Side Scripting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc24",
+            "title": "Data Types",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cc24-q-1",
+                "year": "2024",
+                "question": "What will be the output of the following code snippet?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc24-q-2",
+                "year": "2024",
+                "question": "What will be the output of the following code snippet?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc24-q-3",
+                "year": "2024",
+                "question": "Write a JavaScript code snippet that declares a variable `userAge`, assigns it the value `28`, and then checks if `userAge` is greater than `18` using a boolean variable `isAdult`. Print `isAdult` to the console.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc24-q-4",
+                "year": "2024",
+                "question": "What is the difference between `null` and `undefined` in terms of their meaning and how they are assigned?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc24-q-5",
+                "year": "2024",
+                "question": "Create an array named `fruits` containing the strings \"apple\", \"banana\", and \"cherry\". Then, add \"date\" to the end of the array and print the second element of the array to the console.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc24-q-6",
+                "year": "2024",
+                "question": "What will `typeof []` return in JavaScript?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc25",
+            "title": "Conditionals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc26",
+            "title": "Loops",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cc26-q-1",
+                "year": "2024",
+                "question": "Write a `for` loop that prints the numbers from 10 down to 1.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc26-q-2",
+                "year": "2024",
+                "question": "Write a `while` loop that continues to prompt the user for a number until they enter a number greater than 100.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc26-q-3",
+                "year": "2024",
+                "question": "Use a `do...while` loop to calculate the sum of numbers entered by the user until they enter 0.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc26-q-4",
+                "year": "2024",
+                "question": "Given an object `student = { name: \"Bob\", grade: \"A\", course: \"Math\" }`, use a `for...in` loop to display each property and its value.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc26-q-5",
+                "year": "2024",
+                "question": "Write a `for...of` loop to print each character of the string \"JavaScript\" on a new line.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc26-q-6",
+                "year": "2024",
+                "question": "Write a `for` loop that prints numbers from 1 to 20, but skips any number that is divisible by both 3 and 5. Use `continue`.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc26-q-7",
+                "year": "2024",
+                "question": "In a nested loop, when does the inner loop complete all its iterations?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc27",
+            "title": "Arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc28",
+            "title": "Objects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc29",
+            "title": "Function Declarations vs. Function Expressions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc2a",
+            "title": "Nested Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc2b",
+            "title": "The Document Object Model (DOM) - Nodes and NodeLists",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc2c",
+            "title": "Document Object",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc2d",
+            "title": "Selection Methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc2e",
+            "title": "Element Node Object",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc2f",
+            "title": "Event Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc30",
+            "title": "Asynchronous JavaScript and XML - AJAX : Making Asynchronous Requests",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc31",
+            "title": "Complete Control over AJAX",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc32",
+            "title": "Cross-Origin Resource Sharing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc33",
+            "title": "JavaScript library - jQuery - jQuery Foundations - Including jQuery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc34",
+            "title": "jQuery Selectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc35",
+            "title": "Common Element Manipulations in jQuery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc36",
+            "title": "Event Handling in jQuery",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-web-programming-03-module-3-javascript-runtime-environment-nodejs",
+        "title": "Module 3: Javascript runtime environment nodejs",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cc38",
+            "title": "JavaScript runtime environment : Node.js -  The Architecture of Node.js",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc39",
+            "title": "Working with Node.js",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc3a",
+            "title": "Adding Express to Node.js",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc3b",
+            "title": "Server-side programming language : PHP  - What Is Server-Side Development?",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "6841627a0fc9aa1fdbc8cc3b-q-1",
+                "year": "2024",
+                "question": "Briefly explain the client-server model in web programming.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc3b-q-2",
+                "year": "2024",
+                "question": "List at least three key responsibilities of a server-side programming language.",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc3b-q-3",
+                "year": "2024",
+                "question": "What is the primary difference between client-side and server-side programming?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc3b-q-4",
+                "year": "2024",
+                "question": "In the context of PHP, what does the `<?php ... ?>` tag signify?",
+                "marks": 3
+              },
+              {
+                "id": "6841627a0fc9aa1fdbc8cc3b-q-5",
+                "year": "2024",
+                "question": "Imagine you are building a blog. Which tasks would typically be handled by server-side code and which by client-side code?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc3c",
+            "title": "Quick tour of PHP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc3d",
+            "title": "Program Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc3e",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc3f",
+            "title": "Arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc40",
+            "title": "Classes and Objects in PHP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc41",
+            "title": "Object-Oriented Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc42",
+            "title": "Rendering HTML :  React - ReactJS Foundations : The Philosophy of React",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc43",
+            "title": "What is a component?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc44",
+            "title": "Built- in components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc45",
+            "title": "User- defined components - Types of components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc46",
+            "title": "Function Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc47",
+            "title": "Differences between Function and Class Components",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-web-programming-04-module-4-spa-basics",
+        "title": "Module 4: Spa basics",
+        "topics": [
+          {
+            "id": "6841627a0fc9aa1fdbc8cc49",
+            "title": "SPA – Basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc4a",
+            "title": "Angular JS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc4b",
+            "title": "Working with databases  - Databases and Web Development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc4c",
+            "title": "SQL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc4d",
+            "title": "Database APIs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc4e",
+            "title": "Accessing MySQL in PHP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc4f",
+            "title": "Web Application Design  - Real World Web Software Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc50",
+            "title": "Principle of Layering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc51",
+            "title": "Software Design Patterns in the Web Context",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc52",
+            "title": "Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc53",
+            "title": "Web services   - Overview of Web Services - SOAP Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc54",
+            "title": "REST Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc55",
+            "title": "An Example Web Service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "6841627a0fc9aa1fdbc8cc56",
+            "title": "Web server - hosting options",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

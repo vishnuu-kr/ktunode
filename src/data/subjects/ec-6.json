@@ -1,0 +1,3327 @@
+[
+  {
+    "id": "ec-6-advanced-communication-theory",
+    "code": "PCECT 601",
+    "name": "ADVANCED COMMUNICATION THEORY",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-advanced-communication-theory-01-module-1-entropy",
+        "title": "Module 1: Entropy",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fecec",
+            "title": "Entropy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feced",
+            "title": "Properties of Entropy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecee",
+            "title": "Joint and Conditional Entropy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecef",
+            "title": "Mutual Information",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf0",
+            "title": "Properties of Mutual Information",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf1",
+            "title": "Discrete memoryless sources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf2",
+            "title": "Source code",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf3",
+            "title": "Average length of source code",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf4",
+            "title": "Bounds on average length",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf5",
+            "title": "uniquely decodable and prefix-free source codes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf6",
+            "title": "Kraft Inequality (with proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf7",
+            "title": "Shannon’s source coding theorem (both achievability and converse)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf8",
+            "title": "Huffman code",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecf9",
+            "title": "operational meaning of entropy.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecfa",
+            "title": "Channel capacity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecfb",
+            "title": "Capacity of discrete memoryless channels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecfc",
+            "title": "Binary symmetric channels (BSC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecfd",
+            "title": "Binary Erasure channels (BEC).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecfe",
+            "title": "Capacity of BSC and BEC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fecff",
+            "title": "Shannon’s channel coding theorem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel",
+        "title": "Module 2: Channel capacity of awgn channel",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fed01",
+            "title": "Channel Capacity of AWGN Channel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed02",
+            "title": "Differential entropy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed03",
+            "title": "Differential Entropy of Gaussian random variable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed04",
+            "title": "Shannon-Hartley theorem (with proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed05",
+            "title": "Shannon limit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed06",
+            "title": "Block codes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed07",
+            "title": "Error detecting and correcting capability.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed08",
+            "title": "Linear block codes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed09",
+            "title": "Generator and parity-check matrix. (Systematic form only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed0a",
+            "title": "Encoding circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed0b",
+            "title": "Maximum likelihood decoding of linear block codes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed0c",
+            "title": "Bounded distance decoding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed0d",
+            "title": "Syndrome",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed0e",
+            "title": "Standard array decoding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed0f",
+            "title": "Convolutional Codes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed10",
+            "title": "State diagram.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed11",
+            "title": "Trellis diagram.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed12",
+            "title": "Maximum likelihood decoding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed13",
+            "title": "Viterbi algorithm.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-advanced-communication-theory-03-module-3-introduction-to-wireless-communication",
+        "title": "Module 3: Introduction to wireless communication",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fed15",
+            "title": "Introduction to Wireless Communication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed16",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed17",
+            "title": "Evolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed18",
+            "title": "Paging.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed19",
+            "title": "Wireless LAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed1a",
+            "title": "Bluetooth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed1b",
+            "title": "Zig-Bee and Personal Area networks.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed1c",
+            "title": "Broadband Wireless Access-WiMax Technology.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed1d",
+            "title": "Wireless Spectrum allocation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed1e",
+            "title": "Standards.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed1f",
+            "title": "Cellular System Design Fundamentals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed20",
+            "title": "Frequency Reuse",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed21",
+            "title": "channel assignment strategies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed22",
+            "title": "Handoff strategies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed23",
+            "title": "Interference and system capacity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed24",
+            "title": "trunking and grade off service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed25",
+            "title": "improving coverage and capacity – cell splitting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed26",
+            "title": "sectoring",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed27",
+            "title": "microcells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed28",
+            "title": "Introduction to Multiple Access techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed29",
+            "title": "FDMA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed2a",
+            "title": "TDMA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed2b",
+            "title": "Code-Division Multiple Access (CDMA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed2c",
+            "title": "Orthogonal Frequency-Division Multiple Access (OFDMA)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-advanced-communication-theory-04-module-4-path-loss-and-shadowing",
+        "title": "Module 4: Path loss and shadowing",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fed2e",
+            "title": "Path loss and shadowing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed2f",
+            "title": "Free space path loss",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed30",
+            "title": "Two-Ray model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed31",
+            "title": "Shadowing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed32",
+            "title": "Statistical Multipath Channel Models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed33",
+            "title": "Time-varying channel impulse response (Analysis not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed34",
+            "title": "Narrowband fading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed35",
+            "title": "Wideband fading models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed36",
+            "title": "Delay spread and Coherence bandwidth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed37",
+            "title": "Doppler spread and Coherence time",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed38",
+            "title": "Flat fading versus frequency selective fading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed39",
+            "title": "Slow fading versus fast fading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed3a",
+            "title": "Multi-carrier Modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed3b",
+            "title": "Data transmission using multicarrier modulation for frequency-selective fading channels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed3c",
+            "title": "overlapping subchannels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed3d",
+            "title": "Mitigation of Subcarrier Fading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed3e",
+            "title": "Discrete Implementation of multicarrier – OFDM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed3f",
+            "title": "Diversity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed40",
+            "title": "Receiver diversity – selection combining and maximal ratio combining.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed41",
+            "title": "Transmitter diversity – Alamouti scheme for 2x2 MIMO.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed42",
+            "title": "Equalization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed43",
+            "title": "Equalization – Linear and non-linear equalization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fed44",
+            "title": "MMSE equalizers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-biomedical-engineering",
+    "code": "OEECT613",
+    "name": "BIOMEDICAL ENGINEERING",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-biomedical-engineering-01-module-1-introduction-to-bio",
+        "title": "Module 1: Introduction to bio",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff08a",
+            "title": "Introduction to bio-medical engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff08b",
+            "title": "Sources of bio-electric potential: Resting and action potential, propagation of action potentials. Various bioelectric potentials (ECG, EEG, EMG, ERG, EOG, EGG concept only.)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff08c",
+            "title": "Electrode theory: Nernst equation, Electrode skin interface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff08d",
+            "title": "Bio-potential electrodes: Microelectrodes, skin surface electrodes, needle electrodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff08e",
+            "title": "Bio-potential amplifiers: instrumentation amplifiers, carrier amplifiers, isolation amplifiers, chopper amplifiers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-biomedical-engineering-02-module-2-heart-and-cardiovascular-system-electro-conduction-system-of-the-heart-",
+        "title": "Module 2: Heart and cardiovascular system electro conduction system of the heart ",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff090",
+            "title": "Heart and cardiovascular system: electro conduction system of the heart, ECG lead configurations, Einthoven triangle, Electrocardiography, ECG machine - block diagram, ECG recording system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff091",
+            "title": "The human nervous system: Neurons, action potential of brain, brain waves, placement of electrodes,  EEG recording, evoked potential",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff092",
+            "title": "Electrical activity of muscles: EMG signal acquisition and analysis.Myoelectric control system. Electrical stimulation of the muscle and nerve, Applications of EMG",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-biomedical-engineering-03-module-3-instruments-for-clinical-laboratory-oxymeters-blood-cell-counter-flame-",
+        "title": "Module 3: Instruments for clinical laboratory oxymeters blood cell counter flame ",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff094",
+            "title": "Instruments for clinical laboratory: Oxymeters, blood cell counter, flame photometer, Spectrophotometer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff095",
+            "title": "Therapeutic Equipments: Principles, block schematic diagram, working and applications of pacemakers, cardiac defibrillators, heart–lung machine, dialyzers, surgical diathermy equipment, ventilators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff096",
+            "title": "Biomedical Telemetry system: Components of biotelemetry system, application of telemetry in medicine, single channel telemetry system for ECG.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x",
+        "title": "Module 4: Medical imaging systems basic principle only x",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff098",
+            "title": "Medical Imaging systems (Basic Principle only): X-ray imaging - X-ray machine, applications of X-rays in medicine.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff099",
+            "title": "Computed Tomograpy: Principle, image reconstruction, scanning system and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff09a",
+            "title": "Ultrasonic imaging systems: Basic pulse echo system, Different  types of Ultrasonics systems:, A-Scan, B-Scan, M-Scan, applications, real-time ultrasonic imaging systems and probes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff09b",
+            "title": "Magnetic Resonance Imaging – Basic NMR components, Biological effects and advantages of NMR imaging",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-communication-lab-ii",
+    "code": "PCECL607",
+    "name": "COMMUNICATION LAB II",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-communication-lab-ii-01-module-1-reflex-klystron-mode-characteristics",
+        "title": "Module 1: Reflex klystron mode characteristics",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff0b1",
+            "title": "Reflex Klystron Mode Characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0b2",
+            "title": "GUNN diode characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0b3",
+            "title": "VSWR and Frequency measurement.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0b4",
+            "title": "Verify the relation between Guide wave length, free space wave length and cut off wave length for rectangular wave guide.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0b5",
+            "title": "Unknown load impedance measurement using smith chart and verification using transmission line equation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0b6",
+            "title": "Measurement of Magic Tee characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0b7",
+            "title": "Directional Coupler Characteristics.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-communication-lab-ii-02-module-2-setting-up-of-fiber-optic-digital-link",
+        "title": "Module 2: Setting up of fiber optic digital link",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff0b9",
+            "title": "Setting up of Fiber optic Digital link.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0ba",
+            "title": "Measurement of Numerical Aperture of an Optical fiber",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0bb",
+            "title": "Study of losses in Optical fiber",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0bc",
+            "title": "Voltage vs. Current (V-I) characteristics of Laser Diode.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0bd",
+            "title": "Voltage vs. Current (V-I) characteristics of LED.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0be",
+            "title": "Characteristics of Photodiode",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-communication-lab-ii-03-module-3-familiarization-of-any-antenna-simulation-software",
+        "title": "Module 3: Familiarization of any antenna simulation software",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff0c0",
+            "title": "Familiarization of any antenna simulation software",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0c1",
+            "title": "Simulation of Dipole Antenna",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0c2",
+            "title": "Simulation of Patch Antenna",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0c3",
+            "title": "Simulation of Antenna Array.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0c4",
+            "title": "Study of Vector Network Analyzer.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff0c5",
+            "title": "Antenna Pattern Measurement",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-computer-networks",
+    "code": "OEECT 612",
+    "name": "COMPUTER NETWORKS",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-computer-networks-01-module-1-introduction-to-computer-networks",
+        "title": "Module 1: Introduction to computer networks",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff037",
+            "title": "Introduction to Computer Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff038",
+            "title": "Components of computer networks.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff039",
+            "title": "Transmission modes - serial and parallel transmission, asynchronous, synchronous, simplex, half duplex, full duplex communication.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff03a",
+            "title": "Switching: circuit switching and packet switching.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff03b",
+            "title": "Networks: Network criteria, physical structures, network models, categories of networks, Interconnection of Networks.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff03c",
+            "title": "Delay and loss in packet-switched networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff03d",
+            "title": "Types of delay",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c461b09ce205780ff03d-q-1",
+                "year": "2024",
+                "question": "A packet of 1500 bytes is transmitted over a link with a bandwidth of 10 Mbps. The propagation delay across this link is 5 ms. What is the transmission delay and the total delay across this single link?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff03d-q-2",
+                "year": "2024",
+                "question": "Explain the difference between transmission delay and propagation delay. Which one depends on the packet size, and which one depends on the distance?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff03d-q-3",
+                "year": "2024",
+                "question": "What is the primary cause of queuing delay, and why is it the most variable type of delay?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff03d-q-4",
+                "year": "2024",
+                "question": "A sender transmits a large file over a path of two routers. List all the types of delays the file's packets will experience from the moment the first bit leaves the source to the moment the last bit arrives at the destination.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c461b09ce205780ff03e",
+            "title": "Packet loss.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff03f",
+            "title": "Layered Architecture: OSI model",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-computer-networks-02-module-2-tcpip-protocol-suite-introduction",
+        "title": "Module 2: Tcpip protocol suite introduction",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff041",
+            "title": "TCP/IP protocol suite: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff042",
+            "title": "Application Layer: Communication between processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff043",
+            "title": "Web application: HTTP, Message format",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff044",
+            "title": "Email application: SMTP, Message format, MIME, POP3",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff045",
+            "title": "Domain Name System (DNS).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff046",
+            "title": "Transport Layer connectionless and connection-oriented protocols.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff047",
+            "title": "UDP- Protocols for reliable data transfer: ARQ protocols, stop-and-wait protocol, alternating-bit protocol, Go-back- N",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff048",
+            "title": "Selective Repeat.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff049",
+            "title": "TCP  Connection, segment structure, RTT estimate, Flow control.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff04a",
+            "title": "Congestion Control General approaches.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff04b",
+            "title": "TCP congestion control.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-computer-networks-03-module-3-network-layer-datagram-versus-virtual",
+        "title": "Module 3: Network layer datagram versus virtual",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff04d",
+            "title": "Network Layer: Datagram versus virtual-circuit network service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff04e",
+            "title": "Router architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff04f",
+            "title": "Routing and Forwarding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff050",
+            "title": "Static routing and Dynamic routing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff051",
+            "title": "Address Resolution protocols (ARP, RARP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff052",
+            "title": "Subnetting, Classless Routing(CIDR), ICMP.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff053",
+            "title": "IPv4: Datagram format, Fragmentation and reassembly, addressing, address assignment – manual and DHCP.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff054",
+            "title": "IPv6- Datagram format, Transitioning from IPv4 to IPv6, IP security.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff055",
+            "title": "Routing Algorithms Link-State (Dijkstra’s) Algorithm, Distance vector algorithm.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff056",
+            "title": "Routing in Internet – RIP, OSPF, BGP.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-computer-networks-04-module-4-link-layer-services-of-link-layer",
+        "title": "Module 4: Link layer services of link layer",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff058",
+            "title": "Link Layer Services of link layer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff059",
+            "title": "Error detection and correction – checksum, CRC.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff05a",
+            "title": "Multiple access protocols – Channel partitioning, random access.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff05b",
+            "title": "ALOHA – pure and slotted, efficiency, CSMA, CSMA/CA, CSMA/CD.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff05c",
+            "title": "Link layer addressing: MAC address, Ethernet.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff05d",
+            "title": "Wireless Networks IEEE 802.11 wireless LAN.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff05e",
+            "title": "Physical Layer : Guided and unguided transmission media (Co-axial cable, UTP,STP, Fiber optic cable)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-digital-image-processing",
+    "code": "PEECT 632",
+    "name": "DIGITAL IMAGE PROCESSING",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-digital-image-processing-01-module-1-digital-image-fundamentals-image-representation",
+        "title": "Module 1: Digital image fundamentals image representation",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee01",
+            "title": "Digital Image Fundamentals: Image representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee02",
+            "title": "Types of images",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee03",
+            "title": "Elements of DIP system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee04",
+            "title": "Basic relationship between pixels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee05",
+            "title": "Distance Measures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee06",
+            "title": "Simple image formation model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee07",
+            "title": "Brightness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee08",
+            "title": "contrast",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee09",
+            "title": "hue",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee0a",
+            "title": "saturation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee0b",
+            "title": "Mach band effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee0c",
+            "title": "Colour image fundamentals-RGB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee0d",
+            "title": "CMY",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee0e",
+            "title": "HIS models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee0f",
+            "title": "2D sampling and quantization",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-digital-image-processing-02-module-2-2d-image-transforms-dft",
+        "title": "Module 2: 2d image transforms dft",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee11",
+            "title": "2D Image transforms: DFT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee12",
+            "title": "Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee13",
+            "title": "Walsh transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee14",
+            "title": "Hadamard transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee15",
+            "title": "Haar transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee16",
+            "title": "DCT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee17",
+            "title": "KL transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee18",
+            "title": "Singular Value Decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee19",
+            "title": "Image Compression: Image compression model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee1a",
+            "title": "Lossy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee1b",
+            "title": "lossless compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee1c",
+            "title": "Concept of transform coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee1d",
+            "title": "JPEG Image compression standard",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-digital-image-processing-03-module-3-image-enhancement-spatial-domain-methods-basic-gray-level-transformatio",
+        "title": "Module 3: Image enhancement spatial domain methods basic gray level transformatio",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee1f",
+            "title": "Image Enhancement: Spatial domain methods: Basic Gray Level Transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee20",
+            "title": "Histogram Processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee21",
+            "title": "Enhancement Using Arithmetic/Logic Operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee22",
+            "title": "Basics of Spatial Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee23",
+            "title": "Smoothing spatial Filters",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c460b09ce205780fee23-q-1",
+                "year": "2024",
+                "question": "You are given an image with fine-grained, random noise that appears uniformly distributed across the intensity range. Which smoothing filter would you likely choose, and why?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee23-q-2",
+                "year": "2024",
+                "question": "An image contains isolated bright pixels (salt noise) and isolated dark pixels (pepper noise). What is the most appropriate smoothing filter for this scenario?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee23-q-3",
+                "year": "2024",
+                "question": "Explain the trade-off between filter size and image smoothing/detail preservation.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee23-q-4",
+                "year": "2024",
+                "question": "What is the primary mechanism by which a Gaussian filter achieves smoothing?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee23-q-5",
+                "year": "2024",
+                "question": "Consider the following 3x3 neighborhood and a median filter. What will be the new value of the center pixel?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c460b09ce205780fee24",
+            "title": "Sharpening spatial Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee25",
+            "title": "Frequency domain methods: low pass filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee26",
+            "title": "high pass filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee27",
+            "title": "homomorphic filtering",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-digital-image-processing-04-module-4-image-restoration-degradation-model",
+        "title": "Module 4: Image restoration degradation model",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee29",
+            "title": "Image Restoration: Degradation model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee2a",
+            "title": "Inverse filtering- removal of blur caused by uniform linear motion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee2b",
+            "title": "Minimum Mean Square Error (Wiener) Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee2c",
+            "title": "Image segmentation: Region based approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee2d",
+            "title": "clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee2e",
+            "title": "Segmentation based on thresholding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee2f",
+            "title": "edge based segmentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee30",
+            "title": "Hough Transform",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-entertainment-electronics",
+    "code": "OEECT611",
+    "name": "ENTERTAINMENT ELECTRONICS",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-entertainment-electronics-01-module-1-review-of-analog-television-scanning-horizontal-and-vertical-synchroniz",
+        "title": "Module 1: Review of analog television scanning horizontal and vertical synchroniz",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff012",
+            "title": "Review of Analog Television: Scanning, Horizontal and Vertical Synchronization, Color information, Transmission methods. NTSC and PAL standards.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff013",
+            "title": "Digital media streaming: Packetized elementary stream of audio- video data, MPEG data stream, MPEG-2 transport stream packet, Accessing a program, scrambled programs, program synchronization.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff014",
+            "title": "PSI, Additional (Network information and service description) information in data streams for set-top boxes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-entertainment-electronics-02-module-2-digital-video-broadcasting-dvb-satellite-tv-broadcasting-dvb",
+        "title": "Module 2: Digital video broadcasting dvb satellite tv broadcasting dvb",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff016",
+            "title": "Digital Video Broadcasting (DVB): Satellite TV broadcasting – DVB-S Parameters, DVB-S Modulator, DVB-S set-top box, DVB-S2.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff017",
+            "title": "Cable TV broadcasting – DVB-C Standard, DVB-C Modulator, DVB- C set-top box.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff018",
+            "title": "Terrestrial TV broadcasting – DVB-T Standard, DVB-T Modulator, DVB-T Carriers and System Parameters, DVB-T receiver.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff019",
+            "title": "Broadcasting for Handheld devices – DVB-H Standard DVB tele-text, DVB subtitling system.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c461b09ce205780ff019-q-1",
+                "year": "2024",
+                "question": "What is the primary challenge that DVB-H aims to address for handheld devices?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-2",
+                "year": "2024",
+                "question": "Explain the role of MPE-FF in DVB-H.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-3",
+                "year": "2024",
+                "question": "How does DVB-H achieve better robustness against mobile channel conditions compared to standard DVB-T?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-4",
+                "year": "2024",
+                "question": "What is the fundamental difference between DVB Teletext and analog teletext?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-5",
+                "year": "2024",
+                "question": "How does a user typically access DVB Teletext on a television?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-6",
+                "year": "2024",
+                "question": "What is the main purpose of DVB Subtitling?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-7",
+                "year": "2024",
+                "question": "What critical aspect must DVB Subtitling maintain for an effective user experience?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-8",
+                "year": "2024",
+                "question": "Imagine you are a broadcaster planning a mobile TV service. Why would you consider using DVB-H?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff019-q-9",
+                "year": "2024",
+                "question": "How could DVB Teletext and DVB Subtitling be used together in a DVB-H broadcast?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c461b09ce205780ff01a",
+            "title": "Digital Audio Broadcasting (DAB): Comparison of DAB with DVB. Physical layer of DAB.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff01b",
+            "title": "DAB Modulator, DAB Data Structure, DAB single frequency networks, Data broad casting using DAB.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-entertainment-electronics-03-module-3-high-definition-video-and-audio-pixel-resolution-comparison-with-standa",
+        "title": "Module 3: High definition video and audio pixel resolution comparison with standa",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff01d",
+            "title": "High Definition Video and Audio: Pixel resolution, Comparison with Standard Definition TV, Review of Discrete Cosine Transforms (DCT).",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c461b09ce205780ff01d-q-1",
+                "year": "2024",
+                "question": "What is the primary advantage of High Definition (HD) video over Standard Definition (SD) TV in terms of picture quality?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff01d-q-2",
+                "year": "2024",
+                "question": "Explain the concept of \"energy compaction\" as it relates to the Discrete Cosine Transform (DCT) in video compression.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff01d-q-3",
+                "year": "2024",
+                "question": "A digital camera captures an image with a resolution of 1920 pixels horizontally and 1080 pixels vertically. What is this resolution commonly known as, and what is its aspect ratio?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff01d-q-4",
+                "year": "2024",
+                "question": "If a video compression system uses 8x8 pixel blocks and applies DCT, what is the typical number of coefficients generated for each block? What is the next crucial step after the DCT for compression?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780ff01d-q-5",
+                "year": "2024",
+                "question": "Briefly compare the pixel count of a 720p HD image with a Full HD (1080p) image.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c461b09ce205780ff01e",
+            "title": "Video Compression - Quantization levels, Horizontal/Vertical blanking interval, Vertical Color resolution, DPCM of moving pictures, DCT, Run-length coding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff01f",
+            "title": "MPEG-4 Video coding.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-entertainment-electronics-04-module-4-display-technology-block-diagram-of-video-reproduction-system-in-a-tv-c",
+        "title": "Module 4: Display technology block diagram of video reproduction system in a tv c",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780ff021",
+            "title": "Display Technology: Block diagram of video reproduction system in a TV, Cathode Ray tubes, Basic principle of Plasma displays, LC displays, Light-emitting diode displays, Field emission displays, Organic light emitting device displays.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780ff022",
+            "title": "Television of future: Holographic TV, Virtual Reality, Augmented Reality.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-image-processing-applications",
+    "code": "PEECT 635",
+    "name": "IMAGE PROCESSING APPLICATIONS",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation",
+        "title": "Module 1: Digital image fundamentals image representation",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fef52",
+            "title": "Digital Image Fundamentals: Image representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef53",
+            "title": "Types of images",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef54",
+            "title": "Elements of DIP system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef55",
+            "title": "Basic relationship between pixels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef56",
+            "title": "Distance Measures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef57",
+            "title": "Simple image formation model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef58",
+            "title": "Brightness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef59",
+            "title": "contrast",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef5a",
+            "title": "hue",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef5b",
+            "title": "saturation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef5c",
+            "title": "Mach band effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef5d",
+            "title": "Colour image fundamentals-RGB, CMY, HIS models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef5e",
+            "title": "2D sampling and quantization",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-image-processing-applications-02-module-2-2d-image-transforms-dft-properties",
+        "title": "Module 2: 2d image transforms dft properties",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fef60",
+            "title": "2D Image transforms: DFT, Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef61",
+            "title": "Walsh transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef62",
+            "title": "Hadamard transform",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c461b09ce205780fef62-q-1",
+                "year": "2024",
+                "question": "Explain why the Hadamard transform is computationally efficient. (Aligns with CO2, K4)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780fef62-q-2",
+                "year": "2024",
+                "question": "Given a $2 \\times 2$ image matrix $f = \\begin{bmatrix} 10 & 20 \\\\ 30 & 40 \\end{bmatrix}$, calculate its 2D WHT. (Aligns with CO2, K4)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780fef62-q-3",
+                "year": "2024",
+                "question": "Discuss the advantages of using the Hadamard transform over the DFT for image compression, and vice versa. (Aligns with CO2, K4)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780fef62-q-4",
+                "year": "2024",
+                "question": "What is meant by \"sequency\" in the context of Walsh functions? How does it relate to the interpretation of WHT coefficients? (Aligns with CO2, K4)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c461b09ce205780fef63",
+            "title": "Haar transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef64",
+            "title": "DCT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef65",
+            "title": "KL transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef66",
+            "title": "Singular Value Decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef67",
+            "title": "Image Compression: Image compression model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef68",
+            "title": "Lossy, lossless compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef69",
+            "title": "Concept of transform coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef6a",
+            "title": "JPEG Image compression standard",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-image-processing-applications-03-module-3-image-enhancement-spatial-domain-methods-basic-gray-level-transformatio",
+        "title": "Module 3: Image enhancement spatial domain methods basic gray level transformatio",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fef6c",
+            "title": "Image Enhancement: Spatial domain methods: Basic Gray Level Transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef6d",
+            "title": "Histogram Processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef6e",
+            "title": "Enhancement Using Arithmetic/Logic Operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef6f",
+            "title": "Basics of Spatial Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef70",
+            "title": "Smoothing spatial Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef71",
+            "title": "Sharpening spatial Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef72",
+            "title": "Frequency domain methods: low pass filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef73",
+            "title": "high pass filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef74",
+            "title": "homomorphic filtering",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-image-processing-applications-04-module-4-image-restoration-degradation-model",
+        "title": "Module 4: Image restoration degradation model",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fef76",
+            "title": "Image Restoration: Degradation model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef77",
+            "title": "Inverse filtering- removal of blur caused by uniform linear motion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef78",
+            "title": "Minimum Mean Square Error (Wiener) Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef79",
+            "title": "Constrained Least square filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef7a",
+            "title": "geometric mean filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef7b",
+            "title": "Image segmentation: Region based approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef7c",
+            "title": "clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef7d",
+            "title": "Segmentation based on thresholding",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c461b09ce205780fef7d-q-1",
+                "year": "2024",
+                "question": "Explain the basic principle of thresholding for image segmentation. What is the general formula used?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780fef7d-q-2",
+                "year": "2024",
+                "question": "What is the main advantage of adaptive thresholding over global thresholding?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780fef7d-q-3",
+                "year": "2024",
+                "question": "Briefly describe the objective of Otsu's method in thresholding.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780fef7d-q-4",
+                "year": "2024",
+                "question": "Consider a simple 3x3 grayscale image with the following intensity values:",
+                "marks": 3
+              },
+              {
+                "id": "68a5c461b09ce205780fef7d-q-5",
+                "year": "2024",
+                "question": "How can thresholding be considered a rudimentary form of \"restoration\" in the context of image processing, especially when dealing with degraded images?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c461b09ce205780fef7e",
+            "title": "edge based segmentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fef7f",
+            "title": "Hough Transform",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-microwaves-antennas",
+    "code": "PCECT602",
+    "name": "MICROWAVES & ANTENNAS",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-microwaves-antennas-01-module-1-microwaves-electromagnetic-spectrum-frequency-bands-features-of-microwa",
+        "title": "Module 1: Microwaves electromagnetic spectrum frequency bands features of microwa",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780feda1",
+            "title": "Microwaves: Electromagnetic spectrum, Frequency Bands, Features of microwaves, advantages & disadvantages, Applications, Atmospheric propagation effects.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feda2",
+            "title": "Cavity Resonator : TE and TM modes in waveguides (Review only)- Rectangular Cavity Resonator- Resonance frequency, Q factor, Excitation and Tuning, Re-entrant cavity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feda3",
+            "title": "Microwave Hybrid Circuits:  E plane Tee, H plane Tee, Hybrid Tee, Hybrid Ring, Two-hole directional coupler, Isolator, Circulator, Phase shifter, Attenuator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feda4",
+            "title": "Scattering parameters : Properties of S matrix, S matrix formulation of E plane Tee, H plane Tee, Magic Tee, Directional coupler.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feda5",
+            "title": "Microwave Semiconductor Devices : Principle of operation of Tunnel diode, Gunn diode- Different modes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-microwaves-antennas-02-module-2-microwave-tubes-types-structure-and-principles-of-operation-of-two-cavi",
+        "title": "Module 2: Microwave tubes types structure and principles of operation of two cavi",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780feda7",
+            "title": "Microwave tubes:  Types, Structure and Principles of operation of  Two Cavity Klystron- Velocity Modulation, Bunching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feda8",
+            "title": "Reflex Klystron- Velocity Modulation, Power output and efficiency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feda9",
+            "title": "Traveling Wave Tube Amplifier- Slow wave structures, Helix TWT amplification process.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedaa",
+            "title": "Magnetron Oscillator- Cylindrical magnetron, Cyclotron angular frequency,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedab",
+            "title": "Microwave measurements:  Measurement of Power, VSWR, frequency, wavelength, insertion loss, impedance and attenuation; Basic concept of Network Analyzer and Anechoic chamber",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications",
+        "title": "Module 3: Antennas definition radiation mechanism polarisation types applications",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fedad",
+            "title": "Antennas : Definition, Radiation mechanism, Polarisation, Types, Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedae",
+            "title": "Basic antenna parameters : Radiation Pattern, Radiation Power Density, Radiation Intensity, Radiation resistance, Beamwidth, Directivity, Antenna Efficiency, Gain, Beam Efficiency, Bandwidth, Input Impedance, Antenna Radiation Efficiency, Effective aperture area, Effective height, Antenna noise temperature",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedaf",
+            "title": "Reciprocity theorem, Helmholtz theorem, Duality Theorem (No proof required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedb0",
+            "title": "Field, directivity and radiation resistance of a short dipole and half wave dipole (far field derivation).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter",
+        "title": "Module 4: Antenna arrays field of two isotropic point sources principle of patter",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fedb2",
+            "title": "Antenna arrays : Field of two isotropic point sources, Principle of pattern multiplication, Array factor, Linear arrays of ‘n’ isotropic point sources with equal amplitude, Grating lobes, Design of Broadside and End fire arrays, Phased array principle, Adaptive antenna array principle.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedb3",
+            "title": "Broad band antennas : Log periodic antenna array – Principle and design equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedb4",
+            "title": "Helical antenna: Design equations, modes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedb5",
+            "title": "Micro strip Rectangular Patch Antennas -Design equations, important feeding methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedb6",
+            "title": "Horn antenna- Types, principles, expressions for E, H and gain (no derivation required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedb7",
+            "title": "Parabolic dish antenna –Principle, Cassegrain feed, expression for E, H and Gain without derivation,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fedb8",
+            "title": "Mobile phone antenna – Inverted F antenna.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-nanoelectronics",
+    "code": "PEECT634",
+    "name": "NANOELECTRONICS",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-nanoelectronics-01-module-1-introduction-to-nano-electronics",
+        "title": "Module 1: Introduction to nano electronics",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780feecd",
+            "title": "Introduction to Nano electronics-Review of MOSFETs - Band diagram-operation-threshold voltage- current-MOSFET parameters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feece",
+            "title": "Challenges going to sub-100 nm MOSFETs -  Technological and physical limits of Nano electronic systems, characteristic lengths",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feecf",
+            "title": "Scaling and short channel effects -Channel length, Oxide layer thickness, tunneling, power density, non-uniform dopant concentration, threshold voltage scaling, hot electron effects, sub threshold current, velocity saturation, DIBL, channel length modulation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feed0",
+            "title": "High-K gate dielectrics - Effective oxide thickness, Effects of high-K gate dielectrics on MOSFET performance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization",
+        "title": "Module 2: Novel mos devices and performance optimization",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780feed2",
+            "title": "Novel MOS Devices and Performance Optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feed3",
+            "title": "Silicon-on-insulator devices --FD SOI, PD SOI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feed4",
+            "title": "Multiple gate MOSFETs --Double gate MOSFETs, FinFETs, Nanowires- Multi gate MOSFET physics-natural length and short channel effects.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feed5",
+            "title": "Multi Gate MOSFET performance optimization : Fins, Fin Width, Fin Height and Fin Pitch, Fin Surface Crystal Orientation, Fins on Bulk Silicon, Nano-wires. Gate Stack, Gate Patterning, Threshold Voltage and Gate Work function requirements, Poly silicon Gate, Metal Gate, Tunable Work function metal gate, Mobility and Strain Engineering, Nitride Stress Liners, Embedded SiGe and SiC Source and Drain, Local Strain from Gate Electrode, Substrate Strain, Strained Silicon on Insulator.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-nanoelectronics-03-module-3-quantum-transport",
+        "title": "Module 3: Quantum transport",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780feed7",
+            "title": "Quantum Transport",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feed8",
+            "title": "Atomistic view of electrical Resistance -Energy level diagram- What makes electrons flow- The quantum of conductance - Potential profile- Coulomb blockade - Towards Ohm’s law",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c460b09ce205780feed8-q-1",
+                "year": "2024",
+                "question": "What is the quantum of conductance and what are its units?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feed8-q-2",
+                "year": "2024",
+                "question": "Explain how Coulomb blockade arises in a quantum dot.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feed8-q-3",
+                "year": "2024",
+                "question": "In the context of quantum transport, what is the primary factor determining the resistance of a very short, clean conductor?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feed8-q-4",
+                "year": "2024",
+                "question": "Draw a schematic energy level diagram for a conductor showing the Fermi levels of a source and drain when a small positive voltage bias is applied. Indicate the direction of electron flow.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feed8-q-5",
+                "year": "2024",
+                "question": "How does the validity of Ohm's Law ($V=IR$) change as we move from bulk semiconductors to nanoscale devices?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c460b09ce205780feed9",
+            "title": "Schrodinger equation - Method of finite differences – Examples (particle in a box only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feeda",
+            "title": "Band structure - 1-D examples- General result with basis- 2-D example",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c460b09ce205780feeda-q-1",
+                "year": "2024",
+                "question": "In the Kronig-Penney model, how does increasing the height of the potential barriers affect the band gap?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feeda-q-2",
+                "year": "2024",
+                "question": "Explain the significance of the linear dispersion relation found in graphene near the Dirac points. How does it differ from the parabolic dispersion in conventional semiconductors?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feeda-q-3",
+                "year": "2024",
+                "question": "What is the role of the \"basis\" in determining the band structure of a crystal, using the example of Silicon (diamond structure)?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feeda-q-4",
+                "year": "2024",
+                "question": "How is the effective mass of an electron related to the band structure? Why is it important in nanoelectronic devices?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feeda-q-5",
+                "year": "2024",
+                "question": "Sketch the band structure (E-k diagram) for a semiconductor and an insulator. What is the key difference?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c460b09ce205780feedb",
+            "title": "Sub bands - Quantum wells, wires, dots, graphene and “carbon nanotubes” -- Density of states-Minimum resistance of a wire",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c460b09ce205780feedb-q-1",
+                "year": "2024",
+                "question": "Explain why quantum confinement occurs in nanoscale devices and what are its consequences for the energy levels of charge carriers?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feedb-q-2",
+                "year": "2024",
+                "question": "How does the density of states (DOS) of a quantum wire differ from that of a bulk semiconductor? What is the mathematical form of the DOS for a quantum wire?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feedb-q-3",
+                "year": "2024",
+                "question": "What determines whether a carbon nanotube is metallic or semiconducting?",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feedb-q-4",
+                "year": "2024",
+                "question": "Calculate the minimum resistance of a nanoscale wire that can support two independent conducting channels with perfect transmission.",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780feedb-q-5",
+                "year": "2024",
+                "question": "Briefly describe the concept of a quantum dot and how its electronic properties differ from a quantum well.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c460b09ce205780feedc",
+            "title": "Ballistic to Diffusive Transport -Landauer formula, Landauer-Buttiker formula.  Ballistic and Diffusive transport – transmission.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-nanoelectronics-04-module-4-applications-of-quantum-mechanics-and-quantum-devices",
+        "title": "Module 4: Applications of quantum mechanics and quantum devices",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780feede",
+            "title": "Applications of Quantum mechanics and Quantum devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feedf",
+            "title": "Tunneling and applications of quantum mechanics - solution of Schrodinger equation: Free space, Potential well, tunneling through a potential barrier. Potential energy profiles for material interfaces, Applications of tunneling.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feee0",
+            "title": "Hetero junctions  -Modulation-doped hetero junctions- SiGe strained hetero structures- MODFET- Resonant tunnelling-Resonant tunnelling transistor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feee1",
+            "title": "Single electron devices  –Coulomb blockade in a Nano capacitor, tunnel junctions, Double tunnel junction--Coulomb staircase, Single electron transistor.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feee2",
+            "title": "Spintronics -Transport of spin, GMR-TMR,applications, Spin Transistor",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-optical-communication",
+    "code": "PEECT636",
+    "name": "OPTICAL COMMUNICATION",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener",
+        "title": "Module 1: Optical fiber communications structure of optical fiber materials gener",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780feefc",
+            "title": "Optical fiber Communications: Structure of Optical fiber , materials, General block diagram of optical communication system, Advantages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feefd",
+            "title": "Optical fiber waveguides: Principle of light guidance, Numerical Aperture, V number, Step and Graded index fibers, Single and Multi mode fibers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feefe",
+            "title": "Transmission Characteristics: Attenuation, Absorption losses, Linear and Non linear scattering losses, bend losses.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780feeff",
+            "title": "Dispersion- Intermodal dispersion, Chromatic dispersion, Dispersion modified fibers, Photonic crystal fibers, Polarization mode dispersion, Nonlinear effects, Solitons.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques",
+        "title": "Module 2: Optical fibers and cables fabrication techniques",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fef01",
+            "title": "Optical fibers and Cables – Fabrication Techniques- Double crucible method, Outside Vapour phase oxidation, Modified Chemical Vapour Deposition.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef02",
+            "title": "Optical Fiber Cables- Single and Multi fiber cables.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef03",
+            "title": "Optical Fiber Connections: splices, connectors & couplers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef04",
+            "title": "Optical Fiber Measurements:- Attenuation and dispersion measurements , MZ interferometer, Optical Time Domain Reflectometer – Applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat",
+        "title": "Module 3: Optical sources leds and lds general structures characteristics modulat",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fef06",
+            "title": "Optical sources: LEDs and LDs, general structures, characteristics , modulators using LEDs and LDs. coupling with fibres,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef07",
+            "title": "Optical detectors: Quantum efficiency and Responsivity, Structure and working of PIN and APD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef08",
+            "title": "Optical Receivers: - Direct detection- noise in detectors, SNR, BER analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef09",
+            "title": "Coherent detection principles.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef0a",
+            "title": "Optical Amplifiers: EDFA - Principle, structure and working, Raman amplifiers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com",
+        "title": "Module 4: Multiplexing strategies otdm scm ofdm wdm and optical cdma concepts com",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fef0c",
+            "title": "Multiplexing Strategies: OTDM, SCM, OFDM, WDM and Optical CDMA: concepts, components - couplers, splitters, Add/ Drop multiplexers, Fiber grating filters, tunable filters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef0d",
+            "title": "Optical networks – General description of SONET/SDH",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef0e",
+            "title": "Free space optics: Principle of LiFi technology. Visible Light Communication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef0f",
+            "title": "Other applications of optical fibers : Entertainment, Sensors – Types & principles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-optimization-techniques",
+    "code": "PEECT637",
+    "name": "OPTIMIZATION TECHNIQUES",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr",
+        "title": "Module 1: Engineering application of optimization statement of an optimization pr",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fef27",
+            "title": "Engineering application of Optimization – Statement of an Optimization problem–Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef28",
+            "title": "Review of basic calculus concepts –Stationary points",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef29",
+            "title": "Functions of single and two variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef2a",
+            "title": "Convexity and concavity of functions –Definition of Global and Local optima – Optimality criteria",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef2b",
+            "title": "Linear programming methods for optimum design – Standard form of linear programming (LP) problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef2c",
+            "title": "Canonical form of LP problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef2d",
+            "title": "Simplex Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef2e",
+            "title": "Duality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef2f",
+            "title": "Application of LPP models in engineering",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-optimization-techniques-02-module-2-optimization-algorithms-for-solving-unconstrained-nonlinear-optimizatio",
+        "title": "Module 2: Optimization algorithms for solving unconstrained nonlinear optimizatio",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fef31",
+            "title": "Optimization algorithms for solving unconstrained nonlinear optimization problems – Search based techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef32",
+            "title": "Direct search: Fibonacci and golden section search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef33",
+            "title": "Hookes and Jeeves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef34",
+            "title": "Gradient based method: Newton’s method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-optimization-techniques-03-module-3-optimization-algorithms-for-solving-constrained-optimization-problems-d",
+        "title": "Module 3: Optimization algorithms for solving constrained optimization problems d",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fef36",
+            "title": "Optimization algorithms for solving constrained optimization problems– direct methods – penalty function methods, barrier method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef37",
+            "title": "-Optimization of function of multiple variables subject to equality constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fef38",
+            "title": "Lagrangian function– Inequality constrained techniques-KKT conditions-constrained steepest descent method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-optimization-techniques-04-module-4-modern-methods-of-optimization-metaheuristic-techniques-genetic-algorit",
+        "title": "Module 4: Modern methods of optimization metaheuristic techniques genetic algorit",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fef3a",
+            "title": "Modern methods of Optimization– Metaheuristic techniques: Genetic Algorithms – Simulated Annealing – Particle Swarm optimization –Ant colony optimization– :  Use of Matlab/Scilab  to solve optimization problem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-secure-communication",
+    "code": "PEECT 633",
+    "name": "SECURE COMMUNICATION",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-secure-communication-01-module-1-introduction-and-classic-encryption-techniques",
+        "title": "Module 1: Introduction and classic encryption techniques",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee64",
+            "title": "Introduction and Classic Encryption Techniques:-OSI security architecture",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a5c460b09ce205780fee64-q-1",
+                "year": "2024",
+                "question": "What are the primary goals of secure communication? (CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-2",
+                "year": "2024",
+                "question": "Differentiate between passive and active attacks. Provide an example of each. (CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-3",
+                "year": "2024",
+                "question": "Which security service is primarily achieved through encryption? (CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-4",
+                "year": "2024",
+                "question": "What is the purpose of Data Origin Authentication? (CO4)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-5",
+                "year": "2024",
+                "question": "Name two mechanisms that can be used to provide Data Integrity. (CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-6",
+                "year": "2024",
+                "question": "Encrypt the message \"HELLO\" using a Caesar cipher with a key of 3. (CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-7",
+                "year": "2024",
+                "question": "Decrypt the message \"KHOOR\" using a Caesar cipher with a key of 3. (CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-8",
+                "year": "2024",
+                "question": "What is the main weakness of a monoalphabetic substitution cipher? (CO2 - contextually relevant for contrast)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-9",
+                "year": "2024",
+                "question": "Consider the Vigenère cipher with the keyword \"KEY\" and the plaintext \"MEETMEATTHEFOUNTAIN\". Encrypt the message. (CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a5c460b09ce205780fee64-q-10",
+                "year": "2024",
+                "question": "Explain how a columnar transposition cipher works. (CO2 - contextually relevant for contrast)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a5c460b09ce205780fee65",
+            "title": "Security attacks – Passive attacks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee66",
+            "title": "Active attacks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee67",
+            "title": "Security services- Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee68",
+            "title": "Access Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee69",
+            "title": "Data Confidentiality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee6a",
+            "title": "Data integrity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee6b",
+            "title": "Nonrepudiation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee6c",
+            "title": "Availability service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee6d",
+            "title": "Model for network security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee6e",
+            "title": "Symmetric cipher model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee6f",
+            "title": "Cryptography",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee70",
+            "title": "Substitution techniques- Hill Cipher",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee71",
+            "title": "Transposition Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee72",
+            "title": "Finite Fields: -Groups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee73",
+            "title": "Rings and Fields",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee74",
+            "title": "Modular arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee75",
+            "title": "Euclidian algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee76",
+            "title": "Finite Fields of the form GF(p)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee77",
+            "title": "Polynomial arithmetic",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-secure-communication-02-module-2-block-ciphers",
+        "title": "Module 2: Block ciphers",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee79",
+            "title": "Block Ciphers: - Data Encryption Standard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee7a",
+            "title": "Block Cipher Principles – Stream Ciphers and Block Ciphers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee7b",
+            "title": "Feistel Cipher",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee7c",
+            "title": "Feistel Decryption algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee7d",
+            "title": "The Data encryption standard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee7e",
+            "title": "DES Decryption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee7f",
+            "title": "The AES Cipher",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee80",
+            "title": "substitute bytes transformation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee81",
+            "title": "Shift row transformation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee82",
+            "title": "Mix Column transformation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-secure-communication-03-module-3-public-key-cryptography",
+        "title": "Module 3: Public key cryptography",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee84",
+            "title": "Public Key Cryptography: -RSA and Key Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee85",
+            "title": "Principles of public key cryptosystems-Public key cryptosystems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee86",
+            "title": "Application for Public key cryptosystem requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee87",
+            "title": "Fermat’s theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee88",
+            "title": "Euler’s Totient Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee89",
+            "title": "Euler’s theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee8a",
+            "title": "RSA algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee8b",
+            "title": "Key management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee8c",
+            "title": "Distribution of public keys",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee8d",
+            "title": "Publicly available directory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee8e",
+            "title": "Public key authority",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee8f",
+            "title": "public key certificates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee90",
+            "title": "Distribution of secret keys using public key cryptography",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-secure-communication-04-module-4-message-authentication-and-hash-function",
+        "title": "Module 4: Message authentication and hash function",
+        "topics": [
+          {
+            "id": "68a5c460b09ce205780fee92",
+            "title": "Message Authentication and Hash Function: - Authentication requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee93",
+            "title": "Authentication functions- Message Encryption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee94",
+            "title": "Public Key Encryption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee95",
+            "title": "Message Authentication Code",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c460b09ce205780fee96",
+            "title": "Hash function",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-6-vlsi-circuit-design",
+    "code": "PBECT604",
+    "name": "VLSI CIRCUIT DESIGN",
+    "branchId": "ec",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ec-6-vlsi-circuit-design-01-module-1-vlsi-design-methodologies-introduction",
+        "title": "Module 1: Vlsi design methodologies introduction",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fefb1",
+            "title": "VLSI Design Methodologies : Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb2",
+            "title": "Moore’s law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb3",
+            "title": "ASIC design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb4",
+            "title": "Full custom ASICs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb5",
+            "title": "Standard cell based ASICs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb6",
+            "title": "Gate array based ASICs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb7",
+            "title": "SoCs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb8",
+            "title": "FPGA devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefb9",
+            "title": "ASIC and FPGA Design flows",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefba",
+            "title": "Top-Down and Bottom-Up design methodologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefbb",
+            "title": "Logical and Physical design.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-vlsi-circuit-design-02-module-2-fabrication-techniques-material-preparation-purification-and-crystal-gr",
+        "title": "Module 2: Fabrication techniques material preparation purification and crystal gr",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fefbd",
+            "title": "Fabrication techniques:  Material Preparation Purification and Crystal growth (CZ process)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefbe",
+            "title": "Wafer preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefbf",
+            "title": "Epitaxy - molecular beam epitaxy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc0",
+            "title": "Thermal Oxidation- Dry and Wet oxidation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc1",
+            "title": "Diffusion and ion implantation techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc2",
+            "title": "Lithography - Photo lithographic sequence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc3",
+            "title": "Electron Beam Lithography",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc4",
+            "title": "Etching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc5",
+            "title": "Chemical Vapor Deposition and Physical Vapor Deposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc6",
+            "title": "MOSFET Fabrication techniques : Twin-Tub fabrication sequence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefc7",
+            "title": "Fabrication process flow.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-vlsi-circuit-design-03-module-3-static-cmos-logic-design-mosfet-logic-design",
+        "title": "Module 3: Static cmos logic design mosfet logic design",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fefc9",
+            "title": "Static CMOS Logic Design : MOSFET Logic Design - NMOS Inverter (Static analysis only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefca",
+            "title": "basic logic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefcb",
+            "title": "CMOS logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefcc",
+            "title": "Static and transient analysis of CMOS inverter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefcd",
+            "title": "Static and dynamic power dissipation (detailed analysis not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefce",
+            "title": "Propagation delays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefcf",
+            "title": "Realization of logic functions with static CMOS logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd0",
+            "title": "Layout Design and Design rules:  Stick Diagram and Design rules-micron rules and Lambda rules. (definitions only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd1",
+            "title": "Layout of CMOS Inverter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd2",
+            "title": "two input NAND and NOR gates.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-6-vlsi-circuit-design-04-module-4-pass-transistors-and-transmission-gate-logic-basic-concepts",
+        "title": "Module 4: Pass transistors and transmission gate logic basic concepts",
+        "topics": [
+          {
+            "id": "68a5c461b09ce205780fefd4",
+            "title": "Pass transistors and Transmission gate logic:  Basic concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd5",
+            "title": "Realisation of logic gates using pass transistors and complementary pass transistors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd6",
+            "title": "Dynamic logic Design:  Pre charge, Logic evaluation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd7",
+            "title": "Issues in dynamic logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd8",
+            "title": "Domino Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefd9",
+            "title": "NP domino logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefda",
+            "title": "Realisation of logic gates circuits using dynamic logic (NAND and NOR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefdb",
+            "title": "Sequential Logic and Memory design:  Behaviour of bistable elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefdc",
+            "title": "CMOS D latch and edge triggered flip flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefdd",
+            "title": "Read Only Memory- 4x4 MOS ROM Cell Arrays (NOR, NAND)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefde",
+            "title": "Random Access Memory- SRAM-Six transistor CMOS SRAM cell",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a5c461b09ce205780fefdf",
+            "title": "DRAM-Three transistor and One transistor Dynamic Memory Cell.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,3584 @@
+[
+  {
+    "id": "me-8-3d-printing-and-tooling",
+    "code": "OEMET832",
+    "name": "3D PRINTING AND TOOLING",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-3d-printing-and-tooling-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am",
+        "title": "Module 1: Introduction to additive manufacturing am basic principle of am",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464683",
+            "title": "Introduction to Additive Manufacturing (AM) – Basic principle of AM- Procedure of product development in AM process chain.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464684",
+            "title": "Classification of additive manufacturing processes, Basic concept, Digitization techniques, Benefits and challenges in AM.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464685",
+            "title": "Data processing for AM- CAD model preparation, Part orientation and support generation, Slicing methods, Tool path generation, STL Formats.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464686",
+            "title": "Demonstration of slicing software packages.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-3d-printing-and-tooling-02-module-2-common-am-technologies-principle-materials-process-parameters-advantage",
+        "title": "Module 2: Common am technologies principle materials process parameters advantage",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464688",
+            "title": "Common AM technologies: Principle, materials, process parameters, advantages and applications of: Stereo Lithography (SLA), Digital Light Processing (DLP), Continuous Liquid Interface Production (CLIP), Laminated Object Manufacturing (LOM), Ultrasonic AM (UAM), 3D printing, Binder Jetting, Material Jetting, Fused Deposition Modelling (FDM), Direct Ink Writing (DIW).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-3d-printing-and-tooling-03-module-3-common-am-technologies-principle-materials-process-parameters-advantage",
+        "title": "Module 3: Common am technologies principle materials process parameters advantage",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446468a",
+            "title": "Common AM technologies: Principle, materials, process parameters, advantages and applications of: Selective Laser Sintering (SLS), Selection Laser Melting (SLM), Electron Beam Melting (EBM), Wire Arc Additive Manufacturing (WAAM), Laser Engineering Net Shaping (LENS).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-3d-printing-and-tooling-04-module-4-indirect-methods-for-rapid-tool-production",
+        "title": "Module 4: Indirect methods for rapid tool production",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446468c",
+            "title": "Indirect methods for Rapid Tool Production- Role of indirect methods in tool production, Metal deposition Tools, RTV Tools, Eoxy Tools, Ceramic Tools, Cast Metal Tools, Investment Casting, Fusible Metallic Core and Sand casting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446468d",
+            "title": "Direct Methods for Rapid Tool Production- Classification of Direct Rapid Tool Methods, Laminated Object Manufactured Tools, Vacuum Forming Tools, Paper Pulp Molding Tools, Framework for Composite Manufacture.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-advanced-numerical-control-in-manufacturing",
+    "code": "PEMET866",
+    "name": "ADVANCED NUMERICAL CONTROL IN MANUFACTURING",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems",
+        "title": "Module 1: Principles of numerical control structure of nc systems",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464506",
+            "title": "Principles of Numerical Control Structure of NC systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464507",
+            "title": "Applications of CNC machines in manufacturing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464508",
+            "title": "Advantages of CNC machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464509",
+            "title": "Historical developments and future trends",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446450a",
+            "title": "Future of NC Machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446450b",
+            "title": "Difference between ordinary and NC Machine tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446450c",
+            "title": "Machining Capabilities of a CNC Machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446450d",
+            "title": "Methods for improving accuracy and productivity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446450e",
+            "title": "Control of NC Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446450f",
+            "title": "Classification of CNC control systems Open and Closed loop systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464510",
+            "title": "Types of CNC Machine Tools systems devices",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators",
+        "title": "Module 2: Encoders and interpolators",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464512",
+            "title": "Encoders and interpolators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464513",
+            "title": "Features of CNC Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464514",
+            "title": "Direct Numerical Control (DNC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464515",
+            "title": "Standard Controllers and General Programming features available in CNC Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464516",
+            "title": "Computer Process monitoring and Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464517",
+            "title": "Adaptive control systems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming",
+        "title": "Module 3: Nc part programming",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464519",
+            "title": "NC Part Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446451a",
+            "title": "Axis identification and coordinate systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446451b",
+            "title": "Structure of CNC part program",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446451c",
+            "title": "Programming codes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446451d",
+            "title": "Programming for 2 and 3 axis control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446451e",
+            "title": "Manual part programming for a turning center",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446451f",
+            "title": "Programming using tool nose radius compensation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464520",
+            "title": "Tools offsets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464521",
+            "title": "Do loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464522",
+            "title": "sub routines and fixed cycles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464523",
+            "title": "Manual Programming for simple parts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming",
+        "title": "Module 4: Computer aided part programming",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464525",
+            "title": "Computer aided part programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464526",
+            "title": "Tools for computer aided part programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464527",
+            "title": "Computer aided NC Programming in APT language",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464528",
+            "title": "use of canned cycles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464529",
+            "title": "Generation of NC Programmes through CAD/CAM systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446452a",
+            "title": "Design and implementation of post processors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446452b",
+            "title": "Constructional Details of CNC Machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446452c",
+            "title": "Machine structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446452d",
+            "title": "Slide –ways",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446452e",
+            "title": "Motion transmission elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446452f",
+            "title": "Swarf removal and safety considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464530",
+            "title": "Automatic tool changers and multiple pallet systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464531",
+            "title": "Sensors and feedback devices in CNC machines",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-aircraft-design",
+    "code": "PEMET865",
+    "name": "AIRCRAFT DESIGN",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-aircraft-design-01-module-1-phases-of-the-design-process",
+        "title": "Module 1: Phases of the design process",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446461b",
+            "title": "Phases of the design process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446461c",
+            "title": "conceptual design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446461d",
+            "title": "preliminary design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446461e",
+            "title": "detailed design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446461f",
+            "title": "Typical program organization and personnel responsibilities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464620",
+            "title": "Role of aircraft design engineer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464621",
+            "title": "Major difference between manned and unmanned air vehicle design",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions",
+        "title": "Module 2: Basic aircraft terminology and conventions",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464623",
+            "title": "Basic aircraft terminology and conventions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464624",
+            "title": "Coordinate systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464625",
+            "title": "forces and moments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464626",
+            "title": "aerodynamic coefficient",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464627",
+            "title": "Significance of aerodynamic center",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464628",
+            "title": "Aircraft weight breakdown and definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464629",
+            "title": "Basic aircraft performance terminology( flight in the horizontal and vertical planes)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446462a",
+            "title": "Aircraft sizing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446462b",
+            "title": "Factors influencing the aircraft configuration, size, weight",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446462c",
+            "title": "Weight breakdown",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446462d",
+            "title": "Historical weight data",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf480446462d-q-1",
+                "year": "2024",
+                "question": "Briefly explain why the introduction of aluminum alloys in the interwar period was a significant milestone in the history of aircraft weight management.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446462d-q-2",
+                "year": "2024",
+                "question": "Compare and contrast the primary drivers for aircraft weight in the Jet Age versus the Modern Era.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446462d-q-3",
+                "year": "2024",
+                "question": "From a historical perspective, what type of aircraft would you expect to have a higher percentage of its MTOW dedicated to fuel? A long-range bomber from WWII or a modern short-haul airliner? Justify your answer.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446462d-q-4",
+                "year": "2024",
+                "question": "How can studying the weight evolution of aircraft from historical data be directly applied to the conceptual design phase of a new aircraft, aligning with Course Outcome CO1?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf480446462e",
+            "title": "The lift curve and parabolic drag polar",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates",
+        "title": "Module 3: Aircraft performance and fuel fraction estimates",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464630",
+            "title": "Aircraft performance and fuel fraction estimates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464631",
+            "title": "Range",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464632",
+            "title": "Endurance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464633",
+            "title": "Manoeuvring flight in the vertical and horizontal planes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464634",
+            "title": "Climbing flight",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464635",
+            "title": "Descend/ Glide",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464636",
+            "title": "Field Performance- Take-off and Landing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464637",
+            "title": "Special performance requirements like accelerated flight",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-aircraft-design-04-module-4-propulsion-system-selection",
+        "title": "Module 4: Propulsion system selection",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464639",
+            "title": "Propulsion system selection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446463a",
+            "title": "Flight regimes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446463b",
+            "title": "Refined performance estimating methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446463c",
+            "title": "Installation factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446463d",
+            "title": "Configuration trade studies- Configuration types(tailless, canard, conventional)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446463e",
+            "title": "wing location design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446463f",
+            "title": "Empennage configurations( cruciform, T, H, V, cathedral)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464640",
+            "title": "Engine placements(single or multi engine)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464641",
+            "title": "Landing gear type and placement(tail dragger, tricycle, tandem)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464642",
+            "title": "Airofoil selection,packaging for storage/transport",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-business-organization-and-development",
+    "code": "OEMET834",
+    "name": "BUSINESS ORGANIZATION AND DEVELOPMENT",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-business-organization-and-development-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044646fb",
+            "title": "INTRODUCTION :-Business-Concept-Objectives-Characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646fc",
+            "title": "Business plan- Structure of Business plan-Major Financial decisions in Business-External and Internal factors affecting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646fd",
+            "title": "Distinction of Business, Commerce and Trade.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646fe",
+            "title": "Industrialization- Globalization and Modern day Business.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646ff",
+            "title": "Need of Business Ethics and Business Responsibility.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-business-organization-and-development-02-module-2-business-organizations",
+        "title": "Module 2: Business organizations",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464701",
+            "title": "BUSINESS ORGANIZATIONS:- Forms of Business Organizations- Sole proprietor – Partnership- Types- One person Company- Joint stock Company- Private & Public  limited Companies.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464702",
+            "title": "Limited liability Partnership (LLP).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464703",
+            "title": "Co-operative Organizations, Multi National Companies (MNC).Entrepreneurship -Forms of Entrepreneurship -Indian Scenario- Skill India- Make in India-Start up India .",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-business-organization-and-development-03-module-3-development-establishment-of-business",
+        "title": "Module 3: Development establishment of business",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464705",
+            "title": "DEVELOPMENT & ESTABLISHMENT OF BUSINESS:- Business Formation stages- Promotion- Incorporation and registration -Capital-Sources of Capital-Commencement-Documentation- Memorandum and articles of association-Prospectus.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464706",
+            "title": "Establishing- Alternative identification -expansion-Market feasibility -Market Assessment-Technology in Business-Financial allocation- HR upgradation.Supporting Organisations- Chamber of Commerce.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-business-organization-and-development-04-module-4-business-channels",
+        "title": "Module 4: Business channels",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464708",
+            "title": "BUSINESS CHANNELS  : - Distribution Channels- Functions- Types- Internal and external trades.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464709",
+            "title": "Import and export.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446470a",
+            "title": "Whole sale and retail system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446470b",
+            "title": "Theory of retailing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446470c",
+            "title": "Business channel Intermediaries.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446470d",
+            "title": "Franchising – Branding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446470e",
+            "title": "Business Insurance system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446470f",
+            "title": "Business Combination systems- Needs- Acquisition-Merging- Takeover.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-cryogenic-engineering",
+    "code": "PEMET861",
+    "name": "CRYOGENIC ENGINEERING",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-cryogenic-engineering-01-module-1-introduction-to-cryogenic-engineering",
+        "title": "Module 1: Introduction to cryogenic engineering",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044643d0",
+            "title": "Introduction to cryogenic engineering - Historical background - Major events in the development of cryogenic engineering.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643d1",
+            "title": "Low Temperature Properties of Engineering Materials - Mechanical properties, Thermal properties, Electric and magnetic properties.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643d2",
+            "title": "Cryogenic fluids (N 2, O2, H2, He, Ar, Ne, CH 4) and their properties.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643d3",
+            "title": "Applications of cryogenics - Applications in space, food processing, superconductivity, electrical power, biology, medicine, electronics, quantum computing, and manufacturing industry.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-cryogenic-engineering-02-module-2-cryogenic-liquefaction-systems-system-performance-parameters-ideal-liqu",
+        "title": "Module 2: Cryogenic liquefaction systems system performance parameters ideal liqu",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044643d5",
+            "title": "Cryogenic Liquefaction systems – System performance parameters, ideal liquefaction system, Joule-Thomson expansion, Adiabatic expansion.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643d6",
+            "title": "Liquefaction systems for gases other than Neon, Hydrogen and Helium- Simple Linde - Hampson system, Claude, Cascade System, and Auto-cascade system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643d7",
+            "title": "Liquefaction systems for Neon, Hydrogen and Helium – LN 2 precooled Linde Hampson and Claude systems, Ortho to Para conversion arrangement in hydrogen liquefaction system, Simon Helium liquefaction system, Collins Helium liquefaction system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643d8",
+            "title": "Critical components of Liquefaction systems – critical components, types of heat exchanger used in cryogenic systems and their effect on system performance.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-cryogenic-engineering-03-module-3-cryogenic-refrigeration-systems",
+        "title": "Module 3: Cryogenic refrigeration systems",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044643da",
+            "title": "Cryogenic Refrigeration systems- Ideal isothermal and isobaric refrigeration systems,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643db",
+            "title": "Refrigeration using liquids as refrigerant- Linde-Hampson refrigerator, Claude refrigerator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643dc",
+            "title": "Refrigeration using gases as refrigerant- Stirling cycle cryocoolers, Philips refrigerator, Effect of regenerator effectiveness on performance of the Philips refrigerator, Gifford McMahon refrigerators, Pulse tube cryocoolers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643dd",
+            "title": "Refrigerators using solids as working media-Magnetic refrigerators – Thermodynamics of magnetic refrigerators, dilution refrigerators.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-cryogenic-engineering-04-module-4-cryogenic-fluid-storage-and-transfer-systems",
+        "title": "Module 4: Cryogenic fluid storage and transfer systems",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044643df",
+            "title": "Cryogenic fluid storage and transfer systems-Cryogenic fluid storage vessel, Thermal insulations and their performance at cryogenic temperatures, Super Insulations, Vacuum insulation, Powder insulation, Cryogenic fluid transfer systems, Cryo pumping.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643e0",
+            "title": "Cryogenic instrumentation, Pressure measurement – Mc Leod gauge, Pirani gauge, and Penning gauge, Flow measurement – Orifice meter, Venturi meter, and Turbine flow meter.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643e1",
+            "title": "Liquid level gauges- hydrostatic, resistance gauge, capacitance gauge, and thermodynamic gauge, Temperature measurements- ITS-90, Thermocouple, RTD, magnetic thermometers, and vapor pressure thermometers,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643e2",
+            "title": "Safety in cryogenic fluid handling, storage and use.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-hybrid-and-electric-vehicles",
+    "code": "PEMET863",
+    "name": "HYBRID AND ELECTRIC VEHICLES",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description",
+        "title": "Module 1: Vehicle fundamentals general description",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446441c",
+            "title": "Vehicle fundamentals – general description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446441d",
+            "title": "vehicle resistances",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446441e",
+            "title": "tractive effort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446441f",
+            "title": "vehicle performance - maximum speed",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464420",
+            "title": "power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464421",
+            "title": "gradability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464422",
+            "title": "etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464423",
+            "title": "Electric vehicles – introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464424",
+            "title": "history",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464425",
+            "title": "social and environmental importance of hybrid and electric vehicles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464426",
+            "title": "Types of EVs.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464427",
+            "title": "EV transmission – configurations – front wheel drive and rear-wheel drive.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464428",
+            "title": "Traction motor characteristics and comparison with IC engine characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464429",
+            "title": "Hybrid electric vehicles – concept",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446442a",
+            "title": "architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446442b",
+            "title": "classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446442c",
+            "title": "series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446442d",
+            "title": "parallel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446442e",
+            "title": "series-parallel and complex",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446442f",
+            "title": "hybrid drivetrains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464430",
+            "title": "the configuration of the series hybrid electric drive train",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464431",
+            "title": "the configuration of the parallel hybrid electric drive train.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics",
+        "title": "Module 2: Energy storage battery basics",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464433",
+            "title": "Energy storage – Battery basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464434",
+            "title": "battery parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464435",
+            "title": "battery technologies - Lead-Acid Battery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464436",
+            "title": "Nickel-Cadmium Battery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464437",
+            "title": "Nickel-Metal-Hydride (NiMH) Battery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464438",
+            "title": "Li-Ion Battery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464439",
+            "title": "Li-Polymer Battery.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446443a",
+            "title": "Alternative energy sources – fuel cell",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446443b",
+            "title": "supercapacitors and ultracapacitors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446443c",
+            "title": "flywheel (Overview only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446443d",
+            "title": "Battery pack design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446443e",
+            "title": "battery management system (BMS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446443f",
+            "title": "sensors used in BMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464440",
+            "title": "thermal management systems of battery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464441",
+            "title": "battery safety standards in India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464442",
+            "title": "AIS 156 (2020) and AIS 038 Rev (2020).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464443",
+            "title": "EV charging – types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464444",
+            "title": "layout of AC and DC chargers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464445",
+            "title": "different charging protocols-CHAdeMO",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464446",
+            "title": "CCS2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464447",
+            "title": "GB/T",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464448",
+            "title": "battery swapping.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors",
+        "title": "Module 3: Electric propulsion system electric motors",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446444a",
+            "title": "Electric propulsion system – electric motors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446444b",
+            "title": "classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446444c",
+            "title": "induction motors",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf480446444c-q-1",
+                "year": "2024",
+                "question": "Explain the fundamental principle behind the operation of an induction motor, including the concept of a rotating magnetic field and slip.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446444c-q-2",
+                "year": "2024",
+                "question": "Differentiate between a squirrel cage induction motor and a wound rotor induction motor, and state which is more commonly used in EVs and why.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446444c-q-3",
+                "year": "2024",
+                "question": "What is the primary role of a Variable Frequency Drive (VFD) in controlling an induction motor in an EV?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446444c-q-4",
+                "year": "2024",
+                "question": "Briefly describe Volts-per-Hertz (V/f) control and Vector Control (FOC) for induction motors, and state which is preferred for EV applications.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446444c-q-5",
+                "year": "2024",
+                "question": "List two advantages and two disadvantages of using induction motors in electric vehicles compared to other motor types (e.g., Permanent Magnet Synchronous Motors).",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf480446444d",
+            "title": "basic principles and construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446444e",
+            "title": "torque–slip characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446444f",
+            "title": "Permanent magnets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464450",
+            "title": "ferrite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464451",
+            "title": "SmCo and NdFeB types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464452",
+            "title": "PM motors-BLDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464453",
+            "title": "PMSM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464454",
+            "title": "basic principles and construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464455",
+            "title": "switched reluctance motors (SRM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464456",
+            "title": "basic principles and construction.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464457",
+            "title": "Regenerative braking – principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464458",
+            "title": "block diagram.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464459",
+            "title": "Gearbox",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446445a",
+            "title": "selection of gear ratio",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446445b",
+            "title": "Different kinds of gearboxes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446445c",
+            "title": "EV motor sizing – need of gearbox.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components",
+        "title": "Module 4: Motor controllers motor drive components",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446445e",
+            "title": "Motor controllers – motor drive components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446445f",
+            "title": "power electronic switches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464460",
+            "title": "MOSFET and IGBT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464461",
+            "title": "bidirectional switch.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464462",
+            "title": "Induction motor controls – constant speed/frequency control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464463",
+            "title": "variable DC/AC inverter with sinusoidal PWM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464464",
+            "title": "field orientation control.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464465",
+            "title": "BLDC motor controls – torque control and speed control methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464466",
+            "title": "principles and block diagrams.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464467",
+            "title": "SRM drive converter - classical half-bridge converter.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464468",
+            "title": "Vehicle Sensors specific to EV sensors interfaced to the ECU’s in the vehicle network.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464469",
+            "title": "Controller Area Networking (CAN) – frame types of CAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446446a",
+            "title": "layered architecture of CAN.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446446b",
+            "title": "Vehicle Validation - 6 levels of EV validations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446446c",
+            "title": "Advances in electric and hybrid vehicle technology – autonomous driving",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446446d",
+            "title": "connected vehicles (overview only).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-industrial-hydraulics-and-automation",
+    "code": "OEMET831",
+    "name": "INDUSTRIAL HYDRAULICS AND AUTOMATION",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch",
+        "title": "Module 1: Hydraulic power generators selection and specification of pumps pump ch",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446466e",
+            "title": "Hydraulic Power Generators – Selection and specification of pumps, pump characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446466f",
+            "title": "Linear and Rotary Actuators –election, specification and characteristics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-industrial-hydraulics-and-automation-02-module-2-control-and-regulation-elements-pressure",
+        "title": "Module 2: Control and regulation elements pressure",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464671",
+            "title": "Control and regulation elements: Pressure - direction and flow control valves -relief valves, non-return and safety valves - actuation systems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-industrial-hydraulics-and-automation-03-module-3-hydraulic-system-for-industrial-equipment-eg-counter-balance-circuit-se",
+        "title": "Module 3: Hydraulic system for industrial equipment eg counter balance circuit se",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464673",
+            "title": "Hydraulic system for industrial equipment. e.g. Counter balance circuit, sequencing circuit, the tandem actuator of hydraulic actuators, steering circuit used in automobiles, Hydraulic press circuit operation, closed-circuit and open-circuit hydrostatic transmission, Accumulator circuit for intermittent operation of actuators",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-industrial-hydraulics-and-automation-04-module-4-circuits-sequential-circuits",
+        "title": "Module 4: Circuits sequential circuits",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464675",
+            "title": "Circuits: sequential circuits - cascade methods - mapping methods – step counter method, compound circuit design - combination circuit design.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464676",
+            "title": "-fault finding of circuits - use of microprocessors for sequencing Introduction to different types of industrial controllers- Types of  automation system ,PLC, Low cost automation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-metal-additive-manufacturing",
+    "code": "PEMET867",
+    "name": "METAL ADDITIVE MANUFACTURING",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process",
+        "title": "Module 1: Introduction to additive manufacturing am process",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464561",
+            "title": "Introduction to Additive Manufacturing (AM)– Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464562",
+            "title": "Materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464563",
+            "title": "Applications- Modular Design and Topology–Customization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464564",
+            "title": "Efficiency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464565",
+            "title": "Scalability - Design freedom in AM– Complex Geometries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464566",
+            "title": "Lightweight Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464567",
+            "title": "Material Efficiency -Benefits of Topology Design Freedom– Performance Enhancement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464568",
+            "title": "Innovation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464569",
+            "title": "Sustainability",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-metal-additive-manufacturing-02-module-2-cad-for-am",
+        "title": "Module 2: Cad for am",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446456b",
+            "title": "CAD for AM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446456c",
+            "title": "Integration of CAD with Additive Manufacturing",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf480446456c-q-1",
+                "year": "2024",
+                "question": "What is the primary file format used to transfer CAD data to AM machines, and what are its limitations?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446456c-q-2",
+                "year": "2024",
+                "question": "Explain why build orientation is a critical consideration when preparing a CAD model for Metal Additive Manufacturing.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446456c-q-3",
+                "year": "2024",
+                "question": "Describe two strategies for optimizing a CAD model to reduce the amount of support material needed during Metal Additive Manufacturing.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446456c-q-4",
+                "year": "2024",
+                "question": "How can CAD be used to exploit the advantage of part consolidation in Metal Additive Manufacturing?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf480446456d",
+            "title": "Design for AM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446456e",
+            "title": "Topology Optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446456f",
+            "title": "Metal AM physics and processes – PBF",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464570",
+            "title": "DED",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464571",
+            "title": "Binder Jetting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464572",
+            "title": "Sheet Lamination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464573",
+            "title": "Laser and Extrusion – SLS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464574",
+            "title": "SLM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464575",
+            "title": "DMLS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464576",
+            "title": "FDM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464577",
+            "title": "Robocasting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464578",
+            "title": "Metal AM processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464579",
+            "title": "Filament",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446457a",
+            "title": "Powder and Sheet Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446457b",
+            "title": "Metal AM as an Extension of Welding Techniques (GTAW/GMAW).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes",
+        "title": "Module 3: Metal am physics and processes",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446457d",
+            "title": "Metal AM physics and processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446457e",
+            "title": "Directed Energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446457f",
+            "title": "Binder and Material Jetting Feedstocks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464580",
+            "title": "Metallurgy and properties of materials– Microstructure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464581",
+            "title": "Mechanical",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464582",
+            "title": "Thermal and Chemical Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464583",
+            "title": "Post processing and testing – Heat Treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464584",
+            "title": "Hot Isostatic Pressing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464585",
+            "title": "Machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464586",
+            "title": "Surface Treatment and NDT Methods.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am",
+        "title": "Module 4: Reverse engineering for metal am",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464588",
+            "title": "Reverse Engineering for metal AM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464589",
+            "title": "Data Handling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446458a",
+            "title": "Simulation and Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446458b",
+            "title": "Modelling for AM –Support Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446458c",
+            "title": "Functional Integration",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf480446458c-q-1",
+                "year": "2024",
+                "question": "A reverse engineering study of an existing hydraulic pump component reveals significant thermal buildup in a specific region due to inefficient heat dissipation. How could Metal Additive Manufacturing be used to address this, leveraging insights from the RE process? (Relates to CO4, CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446458c-q-2",
+                "year": "2024",
+                "question": "Explain the concept of part consolidation in MAM and how it can lead to enhanced functionality compared to a traditionally manufactured multi-part assembly. (Relates to CO4, CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446458c-q-3",
+                "year": "2024",
+                "question": "What are the potential trade-offs when redesigning a legacy component for functional enhancement using topology optimization in MAM? (Relates to CO4)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446458c-q-4",
+                "year": "2024",
+                "question": "Discuss the importance of material characterization and metallurgical understanding (CO3) when reverse engineering a part for functional integration in MAM. (Relates to CO4, CO3)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf480446458d",
+            "title": "Value analysis – Cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446458e",
+            "title": "Time",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446458f",
+            "title": "Performance and Sustainability -Future of metal AM",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-micro-and-nano-manufacturing",
+    "code": "PEMET864",
+    "name": "MICRO AND NANO MANUFACTURING",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering",
+        "title": "Module 1: Introduction to precision engineering",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044644c3",
+            "title": "Introduction to Precision engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644c4",
+            "title": "Introduction to macro, meso, micro, and nano manufacturing - Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644c5",
+            "title": "Traditional Mechanical Micromachining Process : Micro Turning, Micro Drilling, Micro Grinding, High-Speed Machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644c6",
+            "title": "Micro tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644c7",
+            "title": "Diamond micro turning- principle, process, description and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644c8",
+            "title": "Mechanical type micromachining processes  - Abrasive based nano finishing process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644c9",
+            "title": "Introduction to beam energy based micro machining processes - Ultrasonic micro machining, Focused Ion Beam machining, Laser Beam micro machining.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644ca",
+            "title": "Thermo-Electric type micromachining processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644cb",
+            "title": "Chemical and Electro-Chemical Type Advanced Machining Processes",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro",
+        "title": "Module 2: Micro forming techniques laser micro",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044644cd",
+            "title": "Micro forming techniques : laser micro-bending, micro-deep drawing, and micro-extrusion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644ce",
+            "title": "Micro moulding processes: Injection moulding, hot embossing - micromolding tools-applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644cf",
+            "title": "Micro welding and joining techniques: Laser micro welding- Electron Beam Micro welding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d0",
+            "title": "Micro/ Nano finishing processes - Abrasive Flow Machining, Magnetic Abrasive Finishing, Magneto Rheological Abrasive Flow Machining, Magneto Rheological Finishing. Elastic Emission machining (EEM), IonBeam Machining (IBM), Chemical Mechanical Polishing (CMP)- principle, equipment and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d1",
+            "title": "Hybrid micro/nano machining  – Electro Chemical Spark Micro Machining, Electro Discharge Grinding, Electrolytic in Process Dressing Grinding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d2",
+            "title": "Laser technology in micro manufacturing - Practical Lasers, application of technology fundamentals.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining",
+        "title": "Module 3: Characterizing etching processes in bulk micromachining",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044644d4",
+            "title": "Characterizing etching processes in bulk micromachining",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf48044644d4-q-1",
+                "year": "2024",
+                "question": "Explain the difference between isotropic and anisotropic etching in the context of bulk micromachining. Provide an example of each process.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044644d4-q-2",
+                "year": "2024",
+                "question": "What are the primary advantages of Reactive Ion Etching (RIE) over isotropic wet etching for fabricating MEMS devices?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044644d4-q-3",
+                "year": "2024",
+                "question": "Describe the basic principle of the Bosch process used in Deep Reactive Ion Etching (DRIE). What are its key benefits and drawbacks?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044644d4-q-4",
+                "year": "2024",
+                "question": "You are fabricating a micro-channel with a specific depth and width in silicon using anisotropic wet etching with KOH. Which crystallographic planes would you need to consider for achieving specific sidewall profiles, and what metrology techniques would be most suitable for verifying the etched depth and sidewall angle?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044644d4-q-5",
+                "year": "2024",
+                "question": "Define etch selectivity and explain why it is an important parameter in bulk micromachining.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d5",
+            "title": "basics of micro-fabrication, integrated circuit fabrication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d6",
+            "title": "crystallography and its effects, silicon as substrate and structural material, stress and strain, crystal plane effects on etching, wet etching process, reaction phenomena, anisotropic etching, isotropic etch curves, masking for anisotropic etchants, etching control, fusion bonding of silicon on an insulator, deep reactive ion etching, fabrication of a cantilever probe, manufacture, microprocessors and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d7",
+            "title": "problems with etching in bulk micromachining.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d8",
+            "title": "Micro fabrication Techniques:  Lithography, Thin Film Deposition and Doping, Etching and Substrate Removal, Substrate Bonding, MEMS Fabrication Techniques, Micro-fabrication using deposition techniques: epitaxial, sputtering, chemical vapour deposition (CVD) techniques.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644d9",
+            "title": "Bulk Micromachining, Surface Micromachining, High- Aspect- Ratio Micromachining, Photolithography, LIGA process",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication",
+        "title": "Module 4: Introduction to nanofabrication",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044644db",
+            "title": "Introduction to Nanofabrication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644dc",
+            "title": "Nanofabrication using soft lithography – principle, applications – Examples (Field Effect Transistor, Elastic Stamp) e-Beam Nanolithography – important techniques, Introduction to Nanotechnology.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644dd",
+            "title": "Principle of the soft lithography and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644de",
+            "title": "principle of micro contact printing and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644df",
+            "title": "characterizing the surface micromachining process, isolation layer, sacrificial layer, structural material, selective etching – properties, stress, stress measurement, friction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644e0",
+            "title": "wafer bonding: anodic and fusion, bonding.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644e1",
+            "title": "Manipulative techniques  – process principle, applications. Introduction toCarbon nano materials  –– properties and applications, Carbon Nanotubes Transistors – (Description only) Diamond - Properties and applications, CVD Diamond Technology.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044644e2",
+            "title": "Introduction to micro-nano inspection and metrology - Scanning electron microscopy- principle and description, Scanning white light interferometry- principle and description. Optical microscopy- principle and description. Scanning probe microscopy, Scanning tunnelling microscopy- principle, description and applications. Confocal microscopy, Atomic force microscopy- principle and description. Introduction to On-machine metrology.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-micro-electro-mechanical-systems",
+    "code": "OEMET836",
+    "name": "MICRO ELECTRO MECHANICAL SYSTEMS",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-micro-electro-mechanical-systems-01-module-1-definition-of-mems",
+        "title": "Module 1: Definition of mems",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf480446477d",
+            "title": "Definition of MEMS.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf480446477e",
+            "title": "MEMS devices.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf480446477f",
+            "title": "Silicon as a MEMS material – mechanical properties of silicon.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf4804464780",
+            "title": "Mechanical components in MEMS.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf4804464781",
+            "title": "Design concepts of mechanical components.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf4804464782",
+            "title": "Working Principles of Microsystems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-micro-electro-mechanical-systems-02-module-2-engineering-science-for-microsystems-design-and-fabrication",
+        "title": "Module 2: Engineering science for microsystems design and fabrication",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf4804464784",
+            "title": "Engineering Science for Microsystems design and Fabrication.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf4804464785",
+            "title": "Scaling laws – Scaling in geometry, rigid body dynamics, electrostatic forces, electromagnetic forces, electricity-fluid mechanics and heat transfer",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-micro-electro-mechanical-systems-03-module-3-materials-for-mems-and-microsystems",
+        "title": "Module 3: Materials for mems and microsystems",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf4804464787",
+            "title": "Materials for MEMS and Microsystems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf4804464788",
+            "title": "Fabrication technologies – Photolithography – Ion implantation – diffusion – oxidation – CVD – Physical Vapour Deposition – Etching.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf4804464789",
+            "title": "Micro manufacturing – Bulk and surface micro machining – LIGA",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-micro-electro-mechanical-systems-04-module-4-microsystems-design-design-considerations-process-design-mechanical-des",
+        "title": "Module 4: Microsystems design design considerations process design mechanical des",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf480446478b",
+            "title": "Microsystems Design – Design considerations – Process design – Mechanical Design – CAD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf480446478c",
+            "title": "Micro system packaging – Levels – Bonding – Interfaces – Assembly – Selection of Packaging Materials.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-nanotechnology",
+    "code": "PEMET868",
+    "name": "NANOTECHNOLOGY",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-nanotechnology-01-module-1-nanoscience-and-technology-introduction",
+        "title": "Module 1: Nanoscience and technology introduction",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044645c2",
+            "title": "Nanoscience and technology: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645c3",
+            "title": "brief history",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645c4",
+            "title": "Discussion on Fayman’s talk",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645c5",
+            "title": "size effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645c6",
+            "title": "anomalous behavior of materials at nanoscale",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645c7",
+            "title": "impact of nanoscale on various  properties of materials (structural, mechanical, thermal, optical, electronic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645c8",
+            "title": "applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645c9",
+            "title": "examples from nature",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-nanotechnology-02-module-2-fabrication-of-nanomaterials",
+        "title": "Module 2: Fabrication of nanomaterials",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044645cb",
+            "title": "Fabrication of Nanomaterials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645cc",
+            "title": "Top-down and Bottom-up approaches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645cd",
+            "title": "Top-down fabrication: Mechanical methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645ce",
+            "title": "thermal methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645cf",
+            "title": "High energy methods",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf48044645cf-q-1",
+                "year": "2024",
+                "question": "Which high-energy fabrication method is characterized by the repeated impact of grinding media to reduce particle size?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645cf-q-2",
+                "year": "2024",
+                "question": "What is a key advantage of laser ablation for nanoparticle synthesis compared to plasma arc discharge, particularly regarding contamination?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645cf-q-3",
+                "year": "2024",
+                "question": "Briefly explain the primary mechanism by which plasma arc discharge leads to nanoparticle formation.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645cf-q-4",
+                "year": "2024",
+                "question": "What is a significant limitation of electron beam lithography for large-scale manufacturing?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645cf-q-5",
+                "year": "2024",
+                "question": "Ion implantation can lead to the formation of nanoscale precipitates. What is the driving force for this precipitation within a host matrix?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d0",
+            "title": "Chemical and lithographic methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d1",
+            "title": "Bottom-up methods: gaseous phase methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d2",
+            "title": "liquid phase methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d3",
+            "title": "solid bottom-up methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d4",
+            "title": "Template synthesis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-nanotechnology-03-module-3-carbon",
+        "title": "Module 3: Carbon",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044645d6",
+            "title": "Carbon-based nanomaterials: Bonding in C materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d7",
+            "title": "Synthesis and properties of fullerene, graphene, and CNT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d8",
+            "title": "Diamondoid nanomaterials,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645d9",
+            "title": "Carbon dots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645da",
+            "title": "Pyrolyzed nanocarbon materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645db",
+            "title": "Emerging 2D materials: Transition metal dichalcogenides",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645dc",
+            "title": "Hexagonal Boron nitride",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645dd",
+            "title": "M-Xenes synthesis, properties, and applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-nanotechnology-04-module-4-nanomaterials-for-energy-and-environment-electrochemical-energy-storage",
+        "title": "Module 4: Nanomaterials for energy and environment electrochemical energy storage",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044645df",
+            "title": "Nanomaterials for Energy and Environment:  Electrochemical energy storage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e0",
+            "title": "hydrogen storage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e1",
+            "title": "solar cells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e2",
+            "title": "organic solar cells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e3",
+            "title": "photocatalysis",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf48044645e3-q-1",
+                "year": "2024",
+                "question": "Explain the fundamental process of photocatalysis in semiconductor nanomaterials. (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645e3-q-2",
+                "year": "2024",
+                "question": "What are the primary advantages of using nanomaterials in photocatalytic applications compared to bulk materials? (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645e3-q-3",
+                "year": "2024",
+                "question": "Describe the role of graphene or graphene oxide in $TiO_2$/graphene composite photocatalysts. (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645e3-q-4",
+                "year": "2024",
+                "question": "Discuss two key factors that can limit the efficiency of a photocatalytic reaction. (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645e3-q-5",
+                "year": "2024",
+                "question": "Provide an example of an environmental application of photocatalysis and explain the underlying mechanism. (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044645e3-q-6",
+                "year": "2024",
+                "question": "How can the band gap of a semiconductor nanomaterial be tuned for better photocatalytic performance? (Knowledge Level: K3)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e4",
+            "title": "water purifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e5",
+            "title": "desalination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e6",
+            "title": "solid waste removal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e7",
+            "title": "Nanobiotechnology: micro and nanofluidics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e8",
+            "title": "biochips",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645e9",
+            "title": "lab-on chips and integrated systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645ea",
+            "title": "Nanoparticle-based drug delivery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645eb",
+            "title": "nanostructures in diagnostics Nanocomposites",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044645ec",
+            "title": "biodegradable nanocomposites",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-numerical-techniques-engineering",
+    "code": "OEMET833",
+    "name": "NUMERICAL TECHNIQUES ENGINEERING",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-numerical-techniques-engineering-01-module-1-motivation-and-applications-of-numerical-methods",
+        "title": "Module 1: Motivation and applications of numerical methods",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446469c",
+            "title": "Motivation and Applications of numerical methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446469d",
+            "title": "Significant digits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446469e",
+            "title": "Accuracy and precision",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446469f",
+            "title": "Truncation and round-off errors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a0",
+            "title": "Roots of nonlinear equations-Bisection method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a1",
+            "title": "Newton Raphson method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a2",
+            "title": "Solution of system of linear equations-Gauss elimination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a3",
+            "title": "Gauss Jordan",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a4",
+            "title": "Gauss Siedel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a5",
+            "title": "LU decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a6",
+            "title": "Curve fitting:Least square regression-Linear regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a7",
+            "title": "linearization of nonlinear relationships",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646a8",
+            "title": "Polynomial and multiple linear regression",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-numerical-techniques-engineering-02-module-2-curve-fitting-interpolation",
+        "title": "Module 2: Curve fitting interpolation",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044646aa",
+            "title": "Curve fitting: Interpolation-Newton’s forward",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646ab",
+            "title": "backward",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646ac",
+            "title": "divided difference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646ad",
+            "title": "Lagrange’s interpolation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646ae",
+            "title": "cubic spline",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646af",
+            "title": "Numerical differentiation-Difference formula",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b0",
+            "title": "Newton’s forward",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b1",
+            "title": "backward and divided difference method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b2",
+            "title": "Sterling’s formula",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b3",
+            "title": "Numerical integration-Trapezoidal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b4",
+            "title": "Simpson’s one-third rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b5",
+            "title": "Simpson’s three-eight rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b6",
+            "title": "Gauss Quadrature",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-numerical-techniques-engineering-03-module-3-numerical-solution-of-ordinary-differential-equations",
+        "title": "Module 3: Numerical solution of ordinary differential equations",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044646b8",
+            "title": "Numerical solution of ordinary differential equations-Initial value and boundary value problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646b9",
+            "title": "Taylor’s method",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf48044646b9-q-1",
+                "year": "2024",
+                "question": "Solve the ODE $\\frac{dy}{dx} = x^2 + y$ with $y(0) = 1$ from $x=0$ to $x=0.2$ using Taylor's method of order 2 with a step size of $h=0.2$.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044646b9-q-2",
+                "year": "2024",
+                "question": "Consider the ODE $\\frac{dy}{dx} = y - x^2$. Use Taylor's method of order 3 to find $y(0.2)$, given $y(0) = 2$ and $h=0.2$.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf48044646b9-q-3",
+                "year": "2024",
+                "question": "For the ODE $\\frac{dy}{dx} = y$, use Taylor's method of order 2 to approximate $y(0.2)$ starting from $y(0) = 1$. Use $h=0.1$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf48044646ba",
+            "title": "Euler method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646bb",
+            "title": "Modified Euler method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646bc",
+            "title": "Runge Kutta fourth order method for first order, second order and simultaneous first order differential equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646bd",
+            "title": "Predictor corrector method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646be",
+            "title": "Shooting method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646bf",
+            "title": "finite difference method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-numerical-techniques-engineering-04-module-4-numerical-solution-of-partial-differential-equation",
+        "title": "Module 4: Numerical solution of partial differential equation",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044646c1",
+            "title": "Numerical solution of partial differential equation-Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c2",
+            "title": "Difference equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c3",
+            "title": "Elliptic equation-Laplace equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c4",
+            "title": "Poisson’s equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c5",
+            "title": "Liebmann’s iterative method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c6",
+            "title": "Parabolic equation-explicit and implicit method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c7",
+            "title": "convergence and stability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c8",
+            "title": "Crank Nicolson method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044646c9",
+            "title": "Hyperbolic equation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-pressure-vessel-and-piping-design",
+    "code": "PEMET862",
+    "name": "PRESSURE VESSEL AND PIPING DESIGN",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-pressure-vessel-and-piping-design-01-module-1-pressure-vessel-terminology-types-of-loads-types-of-pressure",
+        "title": "Module 1: Pressure vessel terminology types of loads types of pressure",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044643f9",
+            "title": "Pressure vessel – Terminology – Types of loads – Types of pressure- Types of supports",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643fa",
+            "title": "Stresses in pressure vessels – Dilation of pressure vessels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643fb",
+            "title": "Membrane stress analysis of vessel shell components- cylindrical shells, spherical shells, torus, conical head, elliptical head, (Familiarisation of corresponding ASME section 8 codes for membrane stress equations))",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643fc",
+            "title": "Discontinuity stress analysis in pressure vessels",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-pressure-vessel-and-piping-design-02-module-2-stresses-in-thick",
+        "title": "Module 2: Stresses in thick",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf48044643fe",
+            "title": "Stresses in thick-walled cylinders –Lame’s equation for internal and external pressure, Shrink-fit stresses in Built up cylinders, auto frettage of thick cylinders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf48044643ff",
+            "title": "Theory of reinforced opening (Familiarisation of corresponding ASME section 8 codes for reinforcement analysis)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-pressure-vessel-and-piping-design-03-module-3-design-of-tall-vessel-under-wind-and-seismic-load",
+        "title": "Module 3: Design of tall vessel under wind and seismic load",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464401",
+            "title": "Design of tall vessel under wind and seismic load",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464402",
+            "title": "Design of leg, lug and saddle supports",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464403",
+            "title": "Buckling -Analysis of Elastic buckling of cylinders or pipes under external pressure- Design of Stiffeners for pressure vessel (Use relevant ASME codes and standard practices in pressure vessel design for the entire third module)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-pressure-vessel-and-piping-design-04-module-4-pipes",
+        "title": "Module 4: Pipes",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464405",
+            "title": "Pipes- Size and wall thickness specification, Type of pipes based on manufacturing technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464406",
+            "title": "Piping components - bends, tees, elbows, reducers, bellows, flanges and valves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464407",
+            "title": "Stress Analysis, sizing and thickness calculation of pipes (Familiarise with ASME B31.3)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464408",
+            "title": "Allowable and displacement stress range for expected cyclic life-stress intensification factor- Flexibility Analysis (Analysis as per clause 119.7.1 in Code ASME B31.1/clause 319.4.1 in ASME B31.3 only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-product-design-and-innovation",
+    "code": "PEMET837",
+    "name": "PRODUCT DESIGN AND INNOVATION",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-product-design-and-innovation-01-module-1-introduction-classification-specifications-of-products",
+        "title": "Module 1: Introduction classification specifications of products",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf48044647a0",
+            "title": "Introduction: Classification/ Specifications of Products",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a1",
+            "title": "Product life cycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a2",
+            "title": "product mix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a3",
+            "title": "Introduction to product design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a4",
+            "title": "Modern product development process Design by evolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a5",
+            "title": "Design by innovation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a6",
+            "title": "Morphology of design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a7",
+            "title": "Ethics in product design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647a8",
+            "title": "legal factors and social issues",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-product-design-and-innovation-02-module-2-creativity-techniques-creative-thinking",
+        "title": "Module 2: Creativity techniques creative thinking",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf48044647aa",
+            "title": "Creativity Techniques: Creative thinking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647ab",
+            "title": "conceptualization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647ac",
+            "title": "brain storming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647ad",
+            "title": "primary design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647ae",
+            "title": "drawing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647af",
+            "title": "simulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b0",
+            "title": "detail design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b1",
+            "title": "Conceptual Design: Generation, selection & embodiment of concept",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b2",
+            "title": "Product architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b3",
+            "title": "Industrial design: process, need",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b4",
+            "title": "Robust Design: Taguchi Designs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b5",
+            "title": "Design of experiments",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-product-design-and-innovation-03-module-3-design-for-manufacturing-and-assembly-methods-of-designing-for-manufact",
+        "title": "Module 3: Design for manufacturing and assembly methods of designing for manufact",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf48044647b7",
+            "title": "Design for Manufacturing and Assembly: Methods of designing for Manufacturing and Assembly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b8",
+            "title": "Design for Maintenance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647b9",
+            "title": "Design for Environment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647ba",
+            "title": "Ergonomics in product design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647bb",
+            "title": "Aesthetics in product design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647bc",
+            "title": "Concepts of size and texture colour",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647bd",
+            "title": "Value Engineering - Definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647be",
+            "title": "Methodology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647bf",
+            "title": "Case studies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-product-design-and-innovation-04-module-4-product-costing",
+        "title": "Module 4: Product costing",
+        "topics": [
+          {
+            "id": "68a3fd1a51d0cf48044647c1",
+            "title": "Product costing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c2",
+            "title": "Economic analysis: Qualitative & Quantitative",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c3",
+            "title": "Psychological and Physiological considerations Concurrent Engineering - Elements of concurrent engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c4",
+            "title": "Benefits Rapid prototyping: concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c5",
+            "title": "processes and advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c6",
+            "title": "Reverse engineering: steps in reverse engineering- hardware and software in reverse engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c7",
+            "title": "Tools for product design – Drafting / Modelling software",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c8",
+            "title": "Patents & IP Acts- Overview",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1a51d0cf48044647c9",
+            "title": "Disclosure preparation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-8-world-class-manufacturing",
+    "code": "OEMET835",
+    "name": "WORLD CLASS MANUFACTURING",
+    "branchId": "me",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "me-8-world-class-manufacturing-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf4804464728",
+            "title": "INTRODUCTION:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464729",
+            "title": "World class manufacturing-Definition-Historic Journey- Five levels led to WCM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446472a",
+            "title": "characteristics of WCM-Pillars of WCM-Control Techniques of World class Manufactures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446472b",
+            "title": "Principles of WCM- JIT-Zero waste Concept- TQM- TPM.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-world-class-manufacturing-02-module-2-planning-hrd-practices-in-wcm",
+        "title": "Module 2: Planning hrd practices in wcm",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446472d",
+            "title": "PLANNING& HRD PRACTICES IN WCM:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446472e",
+            "title": "Manufacturing strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446472f",
+            "title": "Strategy Procedure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464730",
+            "title": "Types of strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464731",
+            "title": "Competitive priorities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464732",
+            "title": "Aggregate planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464733",
+            "title": "Master Production schedule.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464734",
+            "title": "Employee Morale",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464735",
+            "title": "Team work",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464736",
+            "title": "Employee Involvement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464737",
+            "title": "Cross functional teams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464738",
+            "title": "Motivation &Appraisal.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464739",
+            "title": "Work study methods",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-world-class-manufacturing-03-module-3-wcm-concepts-tools",
+        "title": "Module 3: Wcm concepts tools",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446473b",
+            "title": "WCM CONCEPTS & TOOLS :",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1951d0cf480446473b-q-1",
+                "year": "2024",
+                "question": "According to Richard Schonberger, what is the primary lesson that simplicity offers in World Class Manufacturing?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-2",
+                "year": "2024",
+                "question": "Briefly explain the concept of \"competitive priorities\" in WCM strategy planning. Provide an example.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-3",
+                "year": "2024",
+                "question": "How does the concept of Kaizen relate to achieving World Class Manufacturing?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-4",
+                "year": "2024",
+                "question": "List three key practices that foster employee involvement in WCM.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-5",
+                "year": "2024",
+                "question": "Imagine you are a plant manager. How would you encourage your employees to actively participate in quality improvement initiatives?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-6",
+                "year": "2024",
+                "question": "What is the primary purpose of a Pareto Chart in WCM?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-7",
+                "year": "2024",
+                "question": "Explain the difference between a process flowchart and a value stream map (VSM).",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-8",
+                "year": "2024",
+                "question": "Define Poka-Yoke and provide an example.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-9",
+                "year": "2024",
+                "question": "Which WCM tool is used to distinguish between common cause variation and special cause variation in a process?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-10",
+                "year": "2024",
+                "question": "Name three key technologies associated with Industry 4.0.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-11",
+                "year": "2024",
+                "question": "What is \"Mass Customization\" in modern manufacturing?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-12",
+                "year": "2024",
+                "question": "Discuss one major challenge faced by Indian SMEs in adopting WCM principles.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1951d0cf480446473b-q-13",
+                "year": "2024",
+                "question": "How can concepts like IoT and Big Data Analytics contribute to achieving WCM goals?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1951d0cf480446473c",
+            "title": "concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446473d",
+            "title": "AMBITE",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446473e",
+            "title": "MRP II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446473f",
+            "title": "TOPP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464740",
+            "title": "Automation systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464741",
+            "title": "Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464742",
+            "title": "Modern Manufacturing systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464743",
+            "title": "Flexible Manufacturing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464744",
+            "title": "Lean Mnufacturing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464745",
+            "title": "5S",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464746",
+            "title": "Agile Manufacturing Six Sigma",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464747",
+            "title": "Automated Material Handling systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464748",
+            "title": "Process Design & Proc ess design tools.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464749",
+            "title": "Bar code systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446474a",
+            "title": "IOT in manufacturing.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-8-world-class-manufacturing-04-module-4-world-class-manufacturing",
+        "title": "Module 4: World class manufacturing",
+        "topics": [
+          {
+            "id": "68a3fd1951d0cf480446474c",
+            "title": "WORLD CLASS MANUFACTURING -RECENT TRENDS &INDIA :",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446474d",
+            "title": "World class manufacturing Companies in INDIA-Production 4.0-Industry 4.0-Digitalization process in India-AI-Robotics-3D Printing-Extended Realities- VR& AR –Digital Twins .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446474e",
+            "title": "Automation in Industries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf480446474f",
+            "title": "Case studies.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1951d0cf4804464750",
+            "title": "Reshoring-Make in INDIA-Sustainable Manufacturing.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

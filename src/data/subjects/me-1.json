@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "me-1-algorithmic-thinking-with-python",
+    "code": "UCEST105",
+    "name": "ALGORITHMIC THINKING WITH PYTHON",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-algorithmic-thinking-with-python-01-module-1-problem",
+        "title": "Module 1: Problem",
+        "topics": [
+          {
+            "id": "68bd1e0bca560598cfa34a77",
+            "title": "PROBLEM-SOLVING STRATEGIES:- Problem-solving strategies defined",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a78",
+            "title": "Importance of understanding multiple problem-solving strategies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a79",
+            "title": "Trial and Error",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a7a",
+            "title": "Heuristics",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1e0bca560598cfa34a7a-q-1",
+                "year": "2024",
+                "question": "Explain the concept of a heuristic and why it is often used in problem-solving.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a7a-q-2",
+                "year": "2024",
+                "question": "Describe one heuristic strategy and provide a real-world example of its application.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a7a-q-3",
+                "year": "2024",
+                "question": "How does the heuristic of \"Working Backwards\" contribute to fulfilling Course Outcome CO2: \"Articulate a problem before attempting to solve it and prepare a clear and accurate model to represent the problem\"?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a7a-q-4",
+                "year": "2024",
+                "question": "If you were tasked with finding the most efficient route for a delivery truck in a large city with constantly changing traffic conditions, would you primarily rely on a guaranteed optimal algorithm or a heuristic approach? Justify your answer, referencing the nature of heuristics and their suitability for such problems.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a7b",
+            "title": "Means-Ends Analysis",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1e0bca560598cfa34a7b-q-1",
+                "year": "2024",
+                "question": "Explain the core components of Means-Ends Analysis.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a7b-q-2",
+                "year": "2024",
+                "question": "How does Means-Ends Analysis relate to the concept of \"subgoaling\"?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a7b-q-3",
+                "year": "2024",
+                "question": "You are tasked with writing a Python program to calculate the average of a list of numbers. Using the principles of Means-Ends Analysis, describe the steps you might take to develop the algorithm. (Connect to CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a7b-q-4",
+                "year": "2024",
+                "question": "A student wants to learn a new programming language. They have no prior programming experience. Describe how they might use Means-Ends Analysis to approach this goal. (Connect to CO2, CO4)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a7c",
+            "title": "and Backtracking (Working backward).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a7d",
+            "title": "THE PROBLEM-SOLVING PROCESS:- Computer as a model of computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a7e",
+            "title": "Understanding the problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a7f",
+            "title": "Formulating a model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a80",
+            "title": "Developing an algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a81",
+            "title": "Writing the program",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a82",
+            "title": "Testing the program",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a83",
+            "title": "and Evaluating the solution.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a84",
+            "title": "ESSENTIALS OF PYTHON PROGRAMMING:- Creating and using variables in Python",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1e0bca560598cfa34a84-q-1",
+                "year": "2024",
+                "question": "What is a variable in the context of programming, and why is it called \"variable\"?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a84-q-2",
+                "year": "2024",
+                "question": "Explain the importance of descriptive variable names. How does this relate to problem-solving?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a84-q-3",
+                "year": "2024",
+                "question": "Provide examples of at least three different data types in Python and one operation that is valid for each.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a84-q-4",
+                "year": "2024",
+                "question": "Which of the following are valid variable names in Python? (Select all that apply)",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a84-q-5",
+                "year": "2024",
+                "question": "Consider the following Python code snippet:",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a84-q-6",
+                "year": "2024",
+                "question": "If you want to store the price of an item which could have cents (e.g., $9.99), which data type would be most appropriate in Python, and why? If you later wanted to add a fixed tax of 5% to this price, how would you approach it using variables?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a85",
+            "title": "Numeric and String data types in Python",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1e0bca560598cfa34a85-q-1",
+                "year": "2024",
+                "question": "Why is it important to understand data types in programming, even though Python is dynamically typed?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a85-q-2",
+                "year": "2024",
+                "question": "You have a user input that is expected to be a whole number, but you want to ensure it's treated as a numerical value for calculations. What Python type should you convert it to, and what function would you use?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a85-q-3",
+                "year": "2024",
+                "question": "Consider the following Python code snippet:",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a85-q-4",
+                "year": "2024",
+                "question": "You have a string `\"Programming is fun!\"`. How would you extract the word `\"fun\"` from this string using Python?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a85-q-5",
+                "year": "2024",
+                "question": "What is the difference between `/` and `//` operators in Python when dividing two integers? Provide an example.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a86",
+            "title": "Using the math module",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a87",
+            "title": "Using the Python Standard Library for handling basic I/O - print, input, Python operators and their precedence.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation",
+        "title": "Module 2: Algorithm and pseudocode representation",
+        "topics": [
+          {
+            "id": "68bd1e0bca560598cfa34a88",
+            "title": "ALGORITHM AND   PSEUDOCODE   REPRESENTATION:-   Meaning   and Definition of Pseudocode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a89",
+            "title": "Reasons for using pseudocode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a8a",
+            "title": "The main constructs of pseudocode - Sequencing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a8b",
+            "title": "selection (if-else structure, case structure) and repetition (for, while, repeat-until loops)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a8c",
+            "title": "Sample problems *",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a8d",
+            "title": "FLOWCHARTS** :- Symbols used in creating a Flowchart - start and end",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a8e",
+            "title": "arithmetic calculations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a8f",
+            "title": "input/output operation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a90",
+            "title": "decision (selection)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a91",
+            "title": "module name (call)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a92",
+            "title": "for loop (Hexagon)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a93",
+            "title": "flow-lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a94",
+            "title": "on-page connector",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a95",
+            "title": "off-page connector.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python",
+        "title": "Module 3: Selection and iteration using python",
+        "topics": [
+          {
+            "id": "68bd1e0bca560598cfa34a96",
+            "title": "SELECTION AND ITERATION USING PYTHON:- if-else, elif, for loop, range, while loop.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a97",
+            "title": "Sequence data types in Python - list, tuple, set, strings, dictionary, Creating and using Arrays in Python (using Numpy library).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a98",
+            "title": "DECOMPOSITION AND MODULARIZATION* :- Problem decomposition as a strategy for solving complex problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a99",
+            "title": "Modularization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a9a",
+            "title": "Motivation for modularization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a9b",
+            "title": "Defining and using functions in Python",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1e0bca560598cfa34a9b-q-1",
+                "year": "2024",
+                "question": "What is the primary benefit of using functions in programming, especially when dealing with large or complex tasks?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a9b-q-2",
+                "year": "2024",
+                "question": "Explain the difference between a parameter and an argument in the context of a Python function. Provide a simple code example to illustrate.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a9b-q-3",
+                "year": "2024",
+                "question": "What is variable scope, and why is it important to understand when using functions?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a9b-q-4",
+                "year": "2024",
+                "question": "Consider the following Python code. What will be the output, and why?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34a9b-q-5",
+                "year": "2024",
+                "question": "Write a Python function called `calculate_discount` that takes two arguments: `price` and `discount_percentage`. The function should calculate the discounted price and return it. If the `discount_percentage` is not between 0 and 100 (inclusive), the function should return the original price.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a9c",
+            "title": "Functions with multiple return values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a9d",
+            "title": "RECURSION:- Recursion Defined",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a9e",
+            "title": "Reasons for using Recursion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34a9f",
+            "title": "The Call Stack",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa0",
+            "title": "Recursion and the Stack",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa1",
+            "title": "Avoiding Circularity in Recursion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa2",
+            "title": "Sample problems - Finding the nth Fibonacci number",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa3",
+            "title": "greatest common divisor of two positive integers",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1e0bca560598cfa34aa3-q-1",
+                "year": "2024",
+                "question": "What is the definition of the Greatest Common Divisor (GCD) of two positive integers?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34aa3-q-2",
+                "year": "2024",
+                "question": "Explain the core principle behind the Euclidean Algorithm for finding the GCD.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34aa3-q-3",
+                "year": "2024",
+                "question": "Why is the Euclidean Algorithm generally preferred over the brute-force method for finding the GCD, especially for large numbers?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34aa3-q-4",
+                "year": "2024",
+                "question": "Write a Python function named `find_gcd` that takes two positive integers, `num1` and `num2`, as input and returns their Greatest Common Divisor using the Euclidean Algorithm.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34aa3-q-5",
+                "year": "2024",
+                "question": "Trace the execution of the Euclidean Algorithm for finding GCD(56, 21) and show the values of the variables `a` and `b` in each step.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa4",
+            "title": "the factorial of a positive integer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa5",
+            "title": "adding two positive integers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa6",
+            "title": "the sum of digits of a positive number **.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-algorithmic-thinking-with-python-04-module-4-computational-approaches-to-problem",
+        "title": "Module 4: Computational approaches to problem",
+        "topics": [
+          {
+            "id": "68bd1e0bca560598cfa34aa7",
+            "title": "COMPUTATIONAL APPROACHES TO PROBLEM-SOLVING",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa8",
+            "title": "(Introductory diagrammatic/algorithmic explanations only. Analysis not required ) :-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aa9",
+            "title": "Brute-force Approach -",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aaa",
+            "title": "- Example: Padlock, Password guessing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aab",
+            "title": "Divide-and-conquer Approach -",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aac",
+            "title": "- Example: The Merge Sort Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aad",
+            "title": "- Advantages of Divide and Conquer Approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aae",
+            "title": "- Disadvantages of Divide and Conquer Approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aaf",
+            "title": "Dynamic Programming Approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab0",
+            "title": "- Example: Fibonacci series",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1e0bca560598cfa34ab0-q-1",
+                "year": "2024",
+                "question": "What is the mathematical definition of the Fibonacci series, including its base cases?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34ab0-q-2",
+                "year": "2024",
+                "question": "Explain why the naive recursive approach to calculating Fibonacci numbers can be inefficient.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34ab0-q-3",
+                "year": "2024",
+                "question": "Provide one real-world example where the Fibonacci sequence or the golden ratio (related to Fibonacci) appears.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34ab0-q-4",
+                "year": "2024",
+                "question": "Write a Python function `generate_fibonacci_iterative(n)` that takes an integer `n` and returns a list containing the first `n` Fibonacci numbers using an iterative approach.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1e0bca560598cfa34ab0-q-5",
+                "year": "2024",
+                "question": "Write a Python function `get_nth_fibonacci_recursive(n)` that returns the Nth Fibonacci number (0-indexed) using a recursive approach. What is the expected output for `get_nth_fibonacci_recursive(6)`?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab1",
+            "title": "- Recursion vs Dynamic Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab2",
+            "title": "Greedy Algorithm Approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab3",
+            "title": "- Example: Given an array of positive integers each indicating the completion time for a task, find the maximum number of tasks that can be completed in the limited amount of time that you have.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab4",
+            "title": "- Motivations for the Greedy Approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab5",
+            "title": "- Characteristics of the Greedy Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab6",
+            "title": "- Greedy Algorithms vs Dynamic Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab7",
+            "title": "Randomized Approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab8",
+            "title": "- Example 1: A company selling jeans gives a coupon for each pair of jeans. There are n different coupons. Collecting n different coupons would give you free jeans. How many jeans do you expect to buy before getting a free one?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34ab9",
+            "title": "- Example 2: n people go to a party and drop off their hats to a hat-check person. When the party is over, a different hat-check person is on duty and returns the n hats randomly back to each person. What is the expected number of people who get back their hats",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1e0bca560598cfa34aba",
+            "title": "- Motivations for the Randomized Approach",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-1-chemistry-for-physical-science",
+    "code": "GCCYT122",
+    "name": "CHEMISTRY FOR PHYSICAL SCIENCE",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-chemistry-for-physical-science-01-module-1-engineering-materials",
+        "title": "Module 1: Engineering materials",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833a6",
+            "title": "Engineering Materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833a7",
+            "title": "Fuels: Calorific value – HCV and LCV – Experimental determination of calorific value of solid fuels.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833a8",
+            "title": "Analysis of coal – Proximate analysis- Octane & Cetane Number.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833a9",
+            "title": "Biofuels- Biodiesel-Green Hydrogen.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833aa",
+            "title": "Lubricants : Classification - Solid, Semisolid and Liquid lubricants.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ab",
+            "title": "Properties of lubricants - Viscosity Index, Flash point, Fire point, Cloud Point, Pour Point & Aniline Point.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ac",
+            "title": "Cement: Manufacture of Portland cement – Theory of setting and hardening of cement.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ad",
+            "title": "Nanomaterials: Classification based on Dimension & Materials-Synthesis –  Sol   gel   & Chemical Reduction - Applications of nanomaterials –Supercapacitor Materials - Carbon Nanotubes, Fullerenes & Graphene – structure, properties & application.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ae",
+            "title": "Polymers: ABS & Kevlar -Synthesis, properties and applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833af",
+            "title": "Conducting Polymers- Classification – Application",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-chemistry-for-physical-science-02-module-2-electrochemistry-and-corrosion-science",
+        "title": "Module 2: Electrochemistry and corrosion science",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833b0",
+            "title": "Electrochemistry and Corrosion Science",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1eddfeb4799d95e833b0-q-1",
+                "year": "2024",
+                "question": "In a galvanic cell, oxidation occurs at the ______, which is the ______ terminal.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e833b0-q-2",
+                "year": "2024",
+                "question": "Explain why painting steel is a form of corrosion protection, but if the paint is scratched and the steel is exposed, it can lead to faster localized corrosion compared to unpainted steel.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e833b0-q-3",
+                "year": "2024",
+                "question": "You are designing a system that involves both steel and copper components in a saltwater environment. Which metal will corrode preferentially, and what is the term for this phenomenon?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e833b0-q-4",
+                "year": "2024",
+                "question": "Briefly describe how impressed current cathodic protection (ICCP) works.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e833b0-q-5",
+                "year": "2024",
+                "question": "What is the role of a salt bridge in a galvanic cell?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b1",
+            "title": "Electrochemical Cell- Electrode potential- Nernst equation for single electrode and cell (Numerical problems)- Reference electrodes – SHE & Calomel electrode –Construction and Working",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b2",
+            "title": "Electrochemical series - Applications – Glass Electrode & pH Measurement-Conductivity- Measurement using Digital conductivity meter.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b3",
+            "title": "Li-ion battery & H 2-O2 fuel cell (acid electrolyte only) construction and working.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b4",
+            "title": "Corrosion –Electrochemical corrosion mechanism (acidic & alkaline medium).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b5",
+            "title": "Galvanic series - Corrosion control methods - Cathodic Protection - Sacrificial anodic protection and impressed current cathodic protection –Electroplating of copper - Electroless plating of copper",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-chemistry-for-physical-science-03-module-3-instrumental-methods-of-analysis",
+        "title": "Module 3: Instrumental methods of analysis",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833b6",
+            "title": "Instrumental Methods of Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b7",
+            "title": "Molecular Spectroscopy: Types of spectra- Molecular energy levels - Beer Lambert’s law – Numerical problems - Electronic Spectroscopy – Principle, Types of electronic transitions –Role of Conjugation in absorption maxima - Instrumentation-Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b8",
+            "title": "Vibrational spectroscopy – Principle- Number of vibrational modes - Vibrational modes of CO 2 and H 2O – Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833b9",
+            "title": "Thermal analysis: –TGA- Principle, instrumentation (block diagram) and applications – TGA of CaC 2O4.H2O and polymers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ba",
+            "title": "DTA-Principle, instrumentation (block diagram) and applications - DTA of CaC 2O4.H2O.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833bb",
+            "title": "Chromatography- Gas Chromatography-Principle-Instrumentation- Application – Analysis of chemical composition of exhaust gases.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833bc",
+            "title": "Electron Microscopic Techniques: SEM - Principle, instrumentation and  Applications.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-chemistry-for-physical-science-04-module-4-environmental-chemistry",
+        "title": "Module 4: Environmental chemistry",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833bd",
+            "title": "Environmental Chemistry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833be",
+            "title": "Water characteristics - Hardness - Types of hardness- Temporary and Permanent - Disadvantages of hard water -Degree of hardness (Numericals) Water softening methods-Ion exchange process-Principle, procedure and advantages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833bf",
+            "title": "Reverse osmosis – principle, process and advantages. – Water disinfection methods – chlorination-Break point chlorination, ozone and UV irradiation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833c0",
+            "title": "Dissolved oxygen (DO), BOD and COD-Definition & Significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833c1",
+            "title": "Waste Management : Air Pollution- Sources & Effects- Greenhouse Gases- Ozone depletion.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833c2",
+            "title": "Control methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833c3",
+            "title": "Sewage water treatment- Primary, Secondary and Tertiary - Flow diagram -Trickling filter and UASB process.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833c4",
+            "title": "Solid waste-disposal methods- Composting, Landfill & Incineration.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-1-engineering-mechanics",
+    "code": "GCEST103",
+    "name": "ENGINEERING MECHANICS",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-engineering-mechanics-01-module-1-introduction-to-statics-introduction-to-branches-of-mechanics",
+        "title": "Module 1: Introduction to statics introduction to branches of mechanics",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833e0",
+            "title": "Introduction to statics: introduction to branches of mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e1",
+            "title": "concept of rigid body scalars and vectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e2",
+            "title": "vector operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e3",
+            "title": "forces in space.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e4",
+            "title": "Support reactions of beams (point load and UDL only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e5",
+            "title": "Force systems: rectangular components in 2D and 3D",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e6",
+            "title": "moment and couple",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e7",
+            "title": "resultants Equilibrium: system isolation and the free-body diagram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833e8",
+            "title": "equilibrium conditions 2D and 3D",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-mechanics-02-module-2-friction",
+        "title": "Module 2: Friction",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833e9",
+            "title": "Friction: -laws of friction – analysis of blocks and ladder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ea",
+            "title": "Centroid of composite areas- – moment of inertia- parallel axis and perpendicular axis theorems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833eb",
+            "title": "Polar moment of inertia",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ec",
+            "title": "radius of gyration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ed",
+            "title": "mass moment of inertia-ring and disc",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-mechanics-03-module-3-dynamics-rectilinear-translation",
+        "title": "Module 3: Dynamics rectilinear translation",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833ee",
+            "title": "Dynamics – rectilinear translation - equations of motion in kinematics and kinetics – D’Alembert’s principle.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833ef",
+            "title": "–motion on horizontal and inclined surfaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833f0",
+            "title": "motion of connected bodies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-mechanics-04-module-4-curvilinear-translation",
+        "title": "Module 4: Curvilinear translation",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e833f1",
+            "title": "Curvilinear translation - equations of kinematics projectile motion (solution starting from differential equations)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e833f2",
+            "title": "Rotation – kinematics of rotation- equation of motion for a rigid body rotating about a fixed axis –rotation under a constant moment",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-1-engineering-workshop",
+    "code": "GCESL106",
+    "name": "ENGINEERING WORKSHOP",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-engineering-workshop-01-module-1-general-introduction-to-workshop-practice",
+        "title": "Module 1: General introduction to workshop practice",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8344b",
+            "title": "General: Introduction to workshop practice",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1eddfeb4799d95e8344b-q-1",
+                "year": "2024",
+                "question": "Why is practical experience in a workshop considered essential for an engineering student, even with advancements in simulation software?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e8344b-q-2",
+                "year": "2024",
+                "question": "What is the primary purpose of a center punch in a workshop?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e8344b-q-3",
+                "year": "2024",
+                "question": "Explain the difference between a thermoplastic and a thermosetting plastic, providing an example for each.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e8344b-q-4",
+                "year": "2024",
+                "question": "You need to measure the external diameter of a shaft to an accuracy of 0.01 mm. Which measuring instrument would you choose, and why? (Relates to CO1, CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e8344b-q-5",
+                "year": "2024",
+                "question": "When working near a lathe machine, why is it important to avoid wearing loose clothing or gloves? (Relates to CO3 - safety practices)",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e8344b-q-6",
+                "year": "2024",
+                "question": "List three essential Personal Protective Equipment (PPE) items required when performing metal filing in a workshop and explain their importance. (Relates to CO3)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8344c",
+            "title": "Safety precautions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8344d",
+            "title": "Shop floor ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8344e",
+            "title": "Basic First Aid knowledge",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8344f",
+            "title": "Study of mechanical and measurement tools, components and their applications: (a) Tools: screw drivers, spanners, Allen keys, cutting pliers etc. and accessories (b) bearings, seals, O-rings, circlips, keys etc.(c)Vernier Calipers, Height Gauge, Depth Gauge, Micrometers, Bevel Protractor etc.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-02-module-2-carpentry-understanding-carpentry-tools-and-knowledge-of-at-least-one-m",
+        "title": "Module 2: Carpentry understanding carpentry tools and knowledge of at least one m",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83450",
+            "title": "Carpentry: Understanding carpentry tools and knowledge of at least one model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83451",
+            "title": "T –Lap joint",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83452",
+            "title": "Cross lap joint",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83453",
+            "title": "Dovetail joint",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83454",
+            "title": "Mortise joints",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-03-module-3-foundry-understanding-of-foundry-tools-and-knowledge-of-at-least-one-mo",
+        "title": "Module 3: Foundry understanding of foundry tools and knowledge of at least one mo",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83455",
+            "title": "Foundry: Understanding of foundry tools and knowledge of at least one model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83456",
+            "title": "Bench Moulding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83457",
+            "title": "Floor Moulding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83458",
+            "title": "Core making",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83459",
+            "title": "Pattern making",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-04-module-4-sheet-metal-understanding-sheet-metal-working-tools-and-knowledge-of-at",
+        "title": "Module 4: Sheet metal understanding sheet metal working tools and knowledge of at",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8345a",
+            "title": "Sheet Metal: Understanding sheet metal working tools and knowledge of at least one model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8345b",
+            "title": "Cylindrical shape",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8345c",
+            "title": "Conical shape",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8345d",
+            "title": "Prismatic shaped job from sheet metal",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-05-module-5-fitting-understanding-the-tools-used-for-fitting-and-knowledge-of-at-le",
+        "title": "Module 5: Fitting understanding the tools used for fitting and knowledge of at le",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8345e",
+            "title": "Fitting: Understanding the tools used for fitting and knowledge of at least one model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8345f",
+            "title": "Square Joint",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83460",
+            "title": "V- Joint",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83461",
+            "title": "Male and female fitting",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-06-module-6-plumbing",
+        "title": "Module 6: Plumbing",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83462",
+            "title": "Plumbing: - Understanding plumbing tools and pipe joints, along with practicing one exercise on joining pipes using a minimum of three types of pipe joints",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-07-module-7-smithy",
+        "title": "Module 7: Smithy",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83463",
+            "title": "Smithy: - Understanding the tools used in smithy. Demonstrating the forge- ability of different materials (MS, Al, alloy steel and cast steels) in both cold and hot states. Observing the qualitative difference in the hardness of these materials. One exercise on smithy (Square prism ).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-08-module-8-welding-understanding-welding-equipment-and-practicing-at-least-one-wel",
+        "title": "Module 8: Welding understanding welding equipment and practicing at least one wel",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83464",
+            "title": "Welding: Understanding welding equipment and practicing at least one welding technique, such as making joints using electric arc welding. Bead formation in horizontal, vertical and overhead positions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-09-module-9-rolling",
+        "title": "Module 9: Rolling",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83465",
+            "title": "Rolling: - Objective of rolling, rolling process, practical on two high rolling mill",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-10-module-10-electroplating",
+        "title": "Module 10: Electroplating",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83466",
+            "title": "Electroplating: -Electroplating a given job",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-11-module-11-metrology-common-measuring-instruments-used-in-workshop-experiments-to",
+        "title": "Module 11: Metrology common measuring instruments used in workshop experiments to",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83467",
+            "title": "Metrology: Common measuring instruments used in workshop, experiments to find the angle of a dovetail, angle of a taper and the radius of a circular surface. Introduction to instruments Vernier Bevel Protractor, Vernier Depth Gauge, Vernier Height Gauge.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-12-module-12-assembly-demonstration-only-dissembling-and-assembling-of",
+        "title": "Module 12: Assembly demonstration only dissembling and assembling of",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83468",
+            "title": "Assembly: Demonstration only Dissembling and assembling of",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83469",
+            "title": "Cylinder and piston assembly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8346a",
+            "title": "Tail stock assembly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8346b",
+            "title": "Bicycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8346c",
+            "title": "Pump or any other machine",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-13-module-13-machines-demonstration-of-the-following-machines",
+        "title": "Module 13: Machines demonstration of the following machines",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8346d",
+            "title": "Machines: Demonstration of the following machines:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8346e",
+            "title": "Shaping and slotting machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e8346f",
+            "title": "Milling machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83470",
+            "title": "Grinding Machine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83471",
+            "title": "Lathe",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83472",
+            "title": "Drilling Machine",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-14-module-14-modern-manufacturing-methods-fab-labidea-lab",
+        "title": "Module 14: Modern manufacturing methods fab labidea lab",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83473",
+            "title": "Modern manufacturing methods ( Fab lab/IDEA Lab - Demonstration only):",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83474",
+            "title": "Power tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83475",
+            "title": "CNC machine tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83476",
+            "title": "3D printing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83477",
+            "title": "Soft Materials cutting using special machines",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-15-module-15-use-of-proper-personal-protective-equipments",
+        "title": "Module 15: Use of proper personal protective equipments",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83478",
+            "title": "Use of proper Personal Protective Equipments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e83479",
+            "title": "Measurements using Tape, Ruler, Vernier calipers, screw gauge",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-16-module-16-measuring-the-area-of-a-plot-with-an-irregular-boundary-using-a-chain-",
+        "title": "Module 16: Measuring the area of a plot with an irregular boundary using a chain ",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8347a",
+            "title": "Measuring the area of a plot with an irregular boundary using a chain and cross staff",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-17-module-17-measuring-the-area-of-a-building-using-distomat",
+        "title": "Module 17: Measuring the area of a building using distomat",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8347b",
+            "title": "Measuring the area of a building using Distomat",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-18-module-18-finding-the-level-difference-between-two-points-using-dumpy-level",
+        "title": "Module 18: Finding the level difference between two points using dumpy level",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8347c",
+            "title": "Finding the level difference between two points using dumpy level",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-19-module-19-onsite-quality-assessment-of-brick-and-cement",
+        "title": "Module 19: Onsite quality assessment of brick and cement",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8347d",
+            "title": "Onsite quality assessment of brick, and cement",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-20-module-20-construct-a-1-and-1-thick-brick-wall-with-a-height-of-50-cm-and-a-mini",
+        "title": "Module 20: Construct a 1 and 1 thick brick wall with a height of 50 cm and a mini",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8347e",
+            "title": "Construct a 1 and 1 ½ thick brick wall with a height of 50 cm and a minimum length of 60 cm using English bond. Check the verticality of the wall",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-21-module-21-construct-a-1-and-1-thick-brick-wall-with-a-height-of-50-cm-and-a-mini",
+        "title": "Module 21: Construct a 1 and 1 thick brick wall with a height of 50 cm and a mini",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e8347f",
+            "title": "Construct a 1 and 1 ½ thick brick wall with a height of 50 cm and a minimum length of 60 cm using Flemish bond. Check the verticality of the wall",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-22-module-22-estimate-the-number-of-different-types-of-building-blocks-needed-to-co",
+        "title": "Module 22: Estimate the number of different types of building blocks needed to co",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83480",
+            "title": "Estimate the number of different types of building blocks needed to construct the walls of a room measuring 2m x 3m, accounting for standard-sized doors and windows.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-23-module-23-setting-out-of-a-two-roomed-building-using-thread-tape-and-water-tube-",
+        "title": "Module 23: Setting out of a two roomed building using thread tape and water tube ",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83481",
+            "title": "Setting out of a two roomed building using thread, tape and water tube levelling.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-24-module-24-conduct-a-market-study-to-understand-the-types-prices-and-general-spec",
+        "title": "Module 24: Conduct a market study to understand the types prices and general spec",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83482",
+            "title": "Conduct a market study to understand the types, prices, and general specifications of at least three materials available in the market (such as bricks, cement, aggregates, steel, plumbing items, fixtures, welding rods, fasteners etc.).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-25-module-25-studying-the-tools-and-testing-instruments-for-electrical-works-wiring",
+        "title": "Module 25: Studying the tools and testing instruments for electrical works wiring",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83483",
+            "title": "Studying the tools and testing instruments for electrical works. Wiring a light or a fan circuit using one way and two-way switch.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-engineering-workshop-26-module-26-familiarizationapplication-of-testing-instruments-and-commonly-used-to",
+        "title": "Module 26: Familiarizationapplication of testing instruments and commonly used to",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e83484",
+            "title": "Familiarization/Application of testing instruments and commonly used tools in electronic works. [Multimeter, Soldering iron, De-soldering pump, Pliers, Cutters, Wire strippers, Screw drivers, Tweezers, Crimping tool, Hot air soldering and desoldering station etc.]",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-1-health-and-wellness",
+    "code": "UCHWT127",
+    "name": "HEALTH AND WELLNESS",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-health-and-wellness-01-module-1-human-body-systems-related-to-physical-activity-and-its-functions-respi",
+        "title": "Module 1: Human body systems related to physical activity and its functions respi",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e834a6",
+            "title": "Human Body Systems related to Physical activity and its functions: Respiratory System - Cardiovascular System.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834a7",
+            "title": "Musculoskeletal System and the Major Muscle groups of the Human Body.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834a8",
+            "title": "Quantifying Physical Activity Energy Expenditure and Metabolic equivalent of task (MET)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834a9",
+            "title": "Exercise Continuum: Light-intensity physical activity, Moderate -intensity physical activity, Vigorous -intensity physical activity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834aa",
+            "title": "Defining Physical Activity, Aerobic Physical Activity, Anaerobic Physical Activity, Exercise and Health-Related Physical Fitness.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834ab",
+            "title": "FITT principle to design an Exercise programme",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834ac",
+            "title": "Components of Health-related Physical Fitness: - Cardiorespiratory Fitness- Muscular strength- Muscular endurance- Flexibility- Body composition.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-health-and-wellness-02-module-2-concept-of-health-and-wellness-health-and-wellness-differentiation-fact",
+        "title": "Module 2: Concept of health and wellness health and wellness differentiation fact",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e834ad",
+            "title": "Concept of Health and Wellness: Health and wellness differentiation, Factors affecting health and wellness. Mental health and Factors affecting mental health.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834ae",
+            "title": "Sports and Socialization: Sports and character building - Leadership through Physical Activity and Sports",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834af",
+            "title": "Diet and nutrition: Exploring Micro and Macronutrients: Concept of Balanced diet",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b0",
+            "title": "Carbohydrate & the Glycemic Index",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b1",
+            "title": "Animal & Plant - based Proteins and their Effects on Human Health",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b2",
+            "title": "Dietary Fats & their Effects on Human Health",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b3",
+            "title": "Essential Vitamins and Minerals",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di",
+        "title": "Module 3: Lifestyle management strategies to prevent manage common hypokinetic di",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e834b4",
+            "title": "Lifestyle management strategies to prevent / manage common hypokinetic diseases and disorders - Obesity - Cardiovascular diseases (e.g., coronary artery disease, hypertension) - Diabetes - Osteoporosis - Musculoskeletal disorders (e.g., osteoarthritis, Low back pain, Kyphosis, lordosis , flat foot, Knock knee )",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b5",
+            "title": "Meaning, Aims and objectives of yoga - Classification and importance of of Yogic Asanas (Sitting, Standing, lying)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1eddfeb4799d95e834b5-q-1",
+                "year": "2024",
+                "question": "What is the primary meaning of the Sanskrit word \"yoga\" and how does this concept relate to its overall aims and objectives in promoting health and wellness?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e834b5-q-2",
+                "year": "2024",
+                "question": "Describe the importance of sitting asanas in a yoga practice, providing at least two specific examples and their benefits.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e834b5-q-3",
+                "year": "2024",
+                "question": "How do standing yoga asanas contribute to the prevention and management of hypokinetic diseases? Discuss with reference to their impact on physical health.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e834b5-q-4",
+                "year": "2024",
+                "question": "You are advising a sedentary individual experiencing lower back stiffness and poor posture. Which category of yoga asanas would be most beneficial for them, and why? Provide specific examples.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b6",
+            "title": "Pranayama and Its Types - Active Lifestyle and Stress Management Through Yoga",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b7",
+            "title": "Understanding on substance abuse and addiction - Psychoactive substances & its ill effects- Alcohol- Opioids- Cannabis -Sedative -Cocaine -Other",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834b8",
+            "title": "stimulants, including caffeine -Hallucinogens -Tobacco -Volatile solvents.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-health-and-wellness-04-module-4-first-aid-and-principles-of-first-aid-primary-survey-abc-airway-breathi",
+        "title": "Module 4: First aid and principles of first aid primary survey abc airway breathi",
+        "topics": [
+          {
+            "id": "68bd1eddfeb4799d95e834b9",
+            "title": "First aid and principles of First Aid: Primary survey: ABC (Airway, Breathing, Circulation). Qualities of a Good First Aider",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834ba",
+            "title": "First aid measures for: - Cuts and scrapes - Bruises - Sprains - Strains - Fractures - Burns - Nosebleeds.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834bb",
+            "title": "First Aid Procedures: Cardiopulmonary Resuscitation (CPR) - Heimlich Maneuver - Applying a sling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834bc",
+            "title": "Sports injuries: Classification (Soft Tissue Injuries - Abrasion,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834bd",
+            "title": "Contusion,",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1eddfeb4799d95e834bd-q-1",
+                "year": "2024",
+                "question": "What are the three essential components of the primary survey in first aid, and in what order should they be assessed?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e834bd-q-2",
+                "year": "2024",
+                "question": "Describe a common everyday situation where the qualities of a good first aider, such as calmness and reassurance, would be particularly important when dealing with a minor injury like a contusion.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e834bd-q-3",
+                "year": "2024",
+                "question": "A person has sustained a significant contusion to their forearm during a fall. What are the basic first aid steps (using the RICE acronym) you would recommend, and why is each step important?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1eddfeb4799d95e834bd-q-4",
+                "year": "2024",
+                "question": "When assessing the primary survey, if you find a person is unconscious but breathing, what would be your immediate next step regarding their breathing and circulation?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1eddfeb4799d95e834be",
+            "title": "Laceration, Incision, Sprain & Strain)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-1-introduction-to-mechanical-engineering-civil-engineering",
+    "code": "GCEST104",
+    "name": "INTRODUCTION TO MECHANICAL ENGINEERING & CIVIL ENGINEERING",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-introduction-to-mechanical-engineering-civil-engineering-01-module-1-general-introduction-to-mechanical-engineering",
+        "title": "Module 1: General introduction to mechanical engineering",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e834e9",
+            "title": "General introduction to Mechanical Engineering :",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834ea",
+            "title": "Thermodynamic cycles -Carnot Cycle -Derivation of efficiency (problems on efficiency)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834eb",
+            "title": "Otto, Diesel cycles (no derivation of efficiency and problems).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834ec",
+            "title": "IC Engines: CI & SI Engines, working of 2-Stroke & 4-Stroke engines.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834ed",
+            "title": "Listing the parts of IC Engines.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1edefeb4799d95e834ed-q-1",
+                "year": "2024",
+                "question": "What is the primary function of the piston rings, and why are they divided into different types?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ed-q-2",
+                "year": "2024",
+                "question": "Explain the role of the crankshaft and connecting rod in converting reciprocating motion to rotary motion.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ed-q-3",
+                "year": "2024",
+                "question": "How does the operation of a spark plug in a petrol engine differ from a fuel injector in a diesel engine, and what is the significance of this difference?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ed-q-4",
+                "year": "2024",
+                "question": "Why is precise timing between the crankshaft and camshaft essential in an IC engine?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ed-q-5",
+                "year": "2024",
+                "question": "(Exam oriented) Identify and briefly describe the function of any three major components of the cylinder head.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1edefeb4799d95e834ee",
+            "title": "Concept of CRDI, MPFI and hybrid engines.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834ef",
+            "title": "Refrigeration: Unit of refrigeration, reversed Carnot cycle, COP, vapour compression cycle (only description and no problems);",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1edefeb4799d95e834ef-q-1",
+                "year": "2024",
+                "question": "What is the fundamental difference between natural heat transfer and the process of refrigeration?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ef-q-2",
+                "year": "2024",
+                "question": "Explain why the Coefficient of Performance (COP) for a refrigerator can be greater than 1.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ef-q-3",
+                "year": "2024",
+                "question": "Briefly describe the role of the compressor in a Vapour Compression Refrigeration cycle.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ef-q-4",
+                "year": "2024",
+                "question": "A refrigeration system has a cooling capacity of 5 TR. Convert this capacity to kilowatts (kW).",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ef-q-5",
+                "year": "2024",
+                "question": "In a Reversed Carnot Cycle, if the temperature of the cold reservoir ($T_L$) is 270 K and the temperature of the hot reservoir ($T_H$) is 310 K, calculate the COP of the refrigerator.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834ef-q-6",
+                "year": "2024",
+                "question": "List the four main components of a Vapour Compression Refrigeration cycle and briefly state their function.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f0",
+            "title": "Definitions of dry, wet & dew point temperatures, specific humidity and relative humidity,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f1",
+            "title": "Psychrometric chart,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f2",
+            "title": "Cooling and dehumidification,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f3",
+            "title": "Layout of central air conditioning systems.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1edefeb4799d95e834f3-q-1",
+                "year": "2024",
+                "question": "Describe the primary function of an Air Handling Unit (AHU) in a central air conditioning system and list its main internal components.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834f3-q-2",
+                "year": "2024",
+                "question": "Explain why the location of the plant room is a crucial consideration in the overall design of a building's HVAC system, highlighting both mechanical and civil engineering perspectives.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834f3-q-3",
+                "year": "2024",
+                "question": "Differentiate between supply ducts and return ducts in a central AC system, and briefly mention a material commonly used for ductwork.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e834f3-q-4",
+                "year": "2024",
+                "question": "A new office building is being designed, and the mechanical engineers propose a central chilled water system. Briefly explain what this entails and where the major components would likely be located.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "me-1-introduction-to-mechanical-engineering-civil-engineering-02-module-2-classification-of-pumps",
+        "title": "Module 2: Classification of pumps",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e834f4",
+            "title": "Classification of pumps,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f5",
+            "title": "Description about working with sketches of: Reciprocating pump, Centrifugal pump.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f6",
+            "title": "Classification of Hydraulic Turbines.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f7",
+            "title": "Different type of gears and its applications (spur, helical, bevel, worm and worm wheel),",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f8",
+            "title": "List types of clutches and their use,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834f9",
+            "title": "Bearings and their classification (Journal bearing and ball bearing)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834fa",
+            "title": "Manufacturing Process : Sand Casting, Forging, Rolling, Extrusion.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834fb",
+            "title": "Metal Joining Processes: List types of welding,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834fc",
+            "title": "Description with sketches of Arc Welding, SMAW, Soldering and Brazing and their applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834fd",
+            "title": "Machining processes: Description and operations performed on Lathe, Drilling machine, Milling machine, CNC machine, 3D printing.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-introduction-to-mechanical-engineering-civil-engineering-03-module-3-general-introduction-to-civil-engineering",
+        "title": "Module 3: General introduction to civil engineering",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e834fe",
+            "title": "General Introduction to Civil Engineering :",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e834ff",
+            "title": "Relevance of Civil Engineering in the overall infrastructural development of the country.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83500",
+            "title": "Brief introduction to major disciplines of Civil Engineering like Structural Engineering, Geo-technical Engineering, Transportation Engineering, Water Resources Engineering and Environmental Engineering.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83501",
+            "title": "Introduction to buildings: Types of buildings according to character of occupancy as per NBC,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83502",
+            "title": "Load bearing and non-load bearing building structures, components of a residential building and their functions (concept only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83503",
+            "title": "Selection of site for a residential building.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83504",
+            "title": "Building Area Definitions: Built up area, Plinth area, Floor area, Carpet area and Floor area ratio of a building as per KBR.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83505",
+            "title": "Building rules and regulations: Relevance of NBC, KBR & CRZ norms (brief discussion of relevance only).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-introduction-to-mechanical-engineering-civil-engineering-04-module-4-conventional-construction-materials-brick-stone-sand-cement-and-timber",
+        "title": "Module 4: Conventional construction materials brick stone sand cement and timber",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e83506",
+            "title": "Conventional construction materials: Brick, stone, sand, cement and timber- Classifications, Qualities, Tests and Uses of construction materials.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83507",
+            "title": "Cement concrete : Constituent materials, properties and types.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83508",
+            "title": "Tests on fresh and hardened concrete - slump test, cube compressive strength as per IS Codes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83509",
+            "title": "Steel: Structural steel sections and steel reinforcements – types and uses.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8350a",
+            "title": "Soil-Origin of soil-weathering of rocks, types of weathering",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1edefeb4799d95e8350a-q-1",
+                "year": "2024",
+                "question": "Briefly explain the difference between physical and chemical weathering, providing one example for each.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e8350a-q-2",
+                "year": "2024",
+                "question": "How does frost action contribute to the formation of soil?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e8350a-q-3",
+                "year": "2024",
+                "question": "What is exfoliation, and what geological factor typically causes it?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e8350a-q-4",
+                "year": "2024",
+                "question": "A civil engineer is designing a foundation in a region that experiences frequent freezing and thawing cycles. Which type of weathering should they be particularly concerned about, and why?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-1-mathematics-for-electrical-science-and-physical-science-1",
+    "code": "GYMAT101",
+    "name": "MATHEMATICS FOR ELECTRICAL SCIENCE AND \nPHYSICAL  SCIENCE - 1",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-mathematics-for-electrical-science-and-physical-science-1-01-module-1-linear-systems-of-equations-gauss-elimination",
+        "title": "Module 1: Linear systems of equations gauss elimination",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e8353f",
+            "title": "Linear systems of equations: Gauss elimination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83540",
+            "title": "Row echelon form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83541",
+            "title": "Linear Independence: rank of a matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83542",
+            "title": "Solutions of linear systems: Existence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83543",
+            "title": "Uniqueness (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83544",
+            "title": "The matrix Eigen Value Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83545",
+            "title": "Determining Eigen values and Eigen vector",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83546",
+            "title": "Diagonalization of matrices.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-mathematics-for-electrical-science-and-physical-science-1-02-module-2-homogeneous-linear-odes-of-second-order",
+        "title": "Module 2: Homogeneous linear odes of second order",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e83547",
+            "title": "Homogeneous linear ODEs of second order",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83548",
+            "title": "Superposition principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83549",
+            "title": "General solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8354a",
+            "title": "Homogeneous linear ODEs of second order with constant coefficients (Method to find general solution, solution of linear Initial Value Problem)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8354b",
+            "title": "Non homogenous ODEs (with constant coefficients) - General solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8354c",
+            "title": "Particular solution by the method of undetermined coefficients (Particular solutions for the functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8354d",
+            "title": "𝑘𝑥n",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8354e",
+            "title": "𝑘𝑐𝑜𝑠𝜔𝑥",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8354f",
+            "title": "𝑘𝑠𝑖𝑛𝜔𝑥",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83550",
+            "title": "𝑘𝑒αx𝑐𝑜𝑠𝜔𝑥",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83551",
+            "title": "𝑘𝑒αx𝑠𝑖𝑛𝜔𝑥)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83552",
+            "title": "Initial value Problem for Non-Homogeneous Second order linear ODE(with constant coefficients)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83553",
+            "title": "Solution by variation of parameters (Second Order).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-mathematics-for-electrical-science-and-physical-science-1-03-module-3-laplace-transform",
+        "title": "Module 3: Laplace transform",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e83554",
+            "title": "Laplace Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83555",
+            "title": "Inverse Laplace Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83556",
+            "title": "Linearity property",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83557",
+            "title": "First shifting theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83558",
+            "title": "Transform of derivatives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83559",
+            "title": "Solution of Initial value problems by Laplace transform (Second order linear ODE with constant coefficients with initial conditions at t=0 only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8355a",
+            "title": "Unit step function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8355b",
+            "title": "Second shifting theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8355c",
+            "title": "Dirac delta function and its transform (Initial value problems involving unit step function and Dirac delta function are excluded)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8355d",
+            "title": "Convolution theorem (without proof) and its application to finding inverse Laplace transform of products of functions.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-mathematics-for-electrical-science-and-physical-science-1-04-module-4-taylor-series-representation-without-proof-assuming-the-possibility-of-",
+        "title": "Module 4: Taylor series representation without proof assuming the possibility of ",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e8355e",
+            "title": "Taylor series representation (without proof, assuming the possibility of power series expansion in appropriate domains)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e8355f",
+            "title": "Maclaurin series representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83560",
+            "title": "Fourier series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83561",
+            "title": "Euler formulas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83562",
+            "title": "Convergence of Fourier series (Dirichlet’s conditions)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83563",
+            "title": "Fourier series of 2 π periodic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83564",
+            "title": "Fourier series of 2 l periodic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83565",
+            "title": "Half range sine series expansion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e83566",
+            "title": "Half range cosine series expansion.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-1-physics-for-physical-science-and-life-science",
+    "code": "GZPHT121",
+    "name": "PHYSICS FOR PHYSICAL SCIENCE AND LIFE SCIENCE",
+    "branchId": "me",
+    "semester": 1,
+    "modules": [
+      {
+        "id": "me-1-physics-for-physical-science-and-life-science-01-module-1-laser-fiber-optics",
+        "title": "Module 1: Laser fiber optics",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e8359f",
+            "title": "Laser & Fiber Optics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a0",
+            "title": "Optical processes – Absorption-Spontaneous emission and stimulated emission",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a1",
+            "title": "Principle of laser - conditions for sustained lasing – Population inversion- Pumping- Metastable states",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a2",
+            "title": "Basic components of laser - Active medium - Optical resonant cavity",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1edefeb4799d95e835a2-q-1",
+                "year": "2024",
+                "question": "What is the most crucial condition required for a laser to operate, and why is it called \"population inversion\"?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a2-q-2",
+                "year": "2024",
+                "question": "How does the optical resonant cavity contribute to the directionality and monochromaticity of a laser beam?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a2-q-3",
+                "year": "2024",
+                "question": "What is the role of a \"metastable state\" in the context of an active medium?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a2-q-4",
+                "year": "2024",
+                "question": "A laser system comprises three main parts. Identify these parts and briefly describe the function of each.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a2-q-5",
+                "year": "2024",
+                "question": "Consider a simple two-mirror resonant cavity for a laser. If the distance between the mirrors is 'L', what condition must the wavelength (λ) of the light satisfy to be strongly amplified within the cavity? Explain your reasoning.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a2-q-6",
+                "year": "2024",
+                "question": "Explain why a \"population inversion\" is necessary for a laser, but not for a regular light bulb.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a3",
+            "title": "Construction and working of Ruby laser and CO2 laser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a4",
+            "title": "Construction and working Semiconductor laser (qualitative)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a5",
+            "title": "Properties of laser",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1edefeb4799d95e835a5-q-1",
+                "year": "2024",
+                "question": "Briefly explain why laser light is called \"coherent.\"",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a5-q-2",
+                "year": "2024",
+                "question": "How does the monochromatic property of a laser contribute to its applications?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a5-q-3",
+                "year": "2024",
+                "question": "What is divergence, and why is it minimal for laser light?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a5-q-4",
+                "year": "2024",
+                "question": "List and briefly describe the four main properties of laser light that distinguish it from ordinary light. (K2)",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a5-q-5",
+                "year": "2024",
+                "question": "A student observes that a laser pointer can illuminate a small spot on a wall very far away, while a regular LED flashlight spreads its light widely. Which property of laser light explains this observation? Explain this property in detail. (K2)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a6",
+            "title": "Applications of laser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a7",
+            "title": "Optic fiber-Principle of propagation of light",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68bd1edefeb4799d95e835a7-q-1",
+                "year": "2024",
+                "question": "What is the primary physical phenomenon responsible for guiding light through an optical fiber?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a7-q-2",
+                "year": "2024",
+                "question": "Why must the core of an optical fiber have a higher refractive index than its cladding?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a7-q-3",
+                "year": "2024",
+                "question": "How does the Numerical Aperture (NA) of an optical fiber relate to its ability to collect light?",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a7-q-4",
+                "year": "2024",
+                "question": "An optical fiber has a core refractive index of 1.46 and a cladding refractive index of 1.40. Calculate the critical angle for TIR at the core-cladding interface. If light enters the fiber from air (refractive index $\\approx$ 1.0) at an angle of 20 degrees to the fiber axis, will it propagate? Assume NA is approximately $\\sin(\\theta_a)$.",
+                "marks": 3
+              },
+              {
+                "id": "68bd1edefeb4799d95e835a7-q-5",
+                "year": "2024",
+                "question": "Explain why optical fibers are designed with a step-change in refractive index between the core and cladding, rather than a gradual change. What is the term for the phenomenon that allows light to be guided?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a8",
+            "title": "Types of fibers-Step index and Graded index fibers - Multimode and single mode fibers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835a9",
+            "title": "Acceptance angle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835aa",
+            "title": "Numerical aperture –Derivation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835ab",
+            "title": "Applications of optical fibers - Fiber optic communication system (block diagram)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-physics-for-physical-science-and-life-science-02-module-2-interference-and-diffraction",
+        "title": "Module 2: Interference and diffraction",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e835ac",
+            "title": "Interference and Diffraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835ad",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835ae",
+            "title": "Principle of super position",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835af",
+            "title": "Constructive and destructive interference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b0",
+            "title": "Optical path",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b1",
+            "title": "Phase difference and path difference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b2",
+            "title": "Cosine law- reflected system- Condition for constructive and destructive interference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b3",
+            "title": "Colours in thin films",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b4",
+            "title": "Newton’s Rings-Determination of refractive index of transparent liquids and wavelength",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b5",
+            "title": "Air wedge- Measurement of thickness of thin sheets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b6",
+            "title": "Diffraction-types of diffraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b7",
+            "title": "Diffraction due to a single slit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b8",
+            "title": "Diffraction  grating – Construction - grating equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835b9",
+            "title": "Dispersive and Resolving Power (qualitative)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-physics-for-physical-science-and-life-science-03-module-3-quantum-mechanics",
+        "title": "Module 3: Quantum mechanics",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e835ba",
+            "title": "Quantum Mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835bb",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835bc",
+            "title": "Concept of uncertainty and conjugate observables (qualitative)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835bd",
+            "title": "Uncertainty principle (statement only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835be",
+            "title": "Application of uncertainty principle- Absence of electron inside nucleus - Natural line broadening",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835bf",
+            "title": "Wave function – properties - physical interpretation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c0",
+            "title": "Formulation of time dependent and time independent Schrodinger equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c1",
+            "title": "Particle in a one- dimensional box - Derivation of energy eigen values and normalized wave function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c2",
+            "title": "Quantum Mechanical Tunnelling  (qualitative)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-1-physics-for-physical-science-and-life-science-04-module-4-waves-acoustics",
+        "title": "Module 4: Waves acoustics",
+        "topics": [
+          {
+            "id": "68bd1edefeb4799d95e835c3",
+            "title": "Waves & Acoustics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c4",
+            "title": "Waves- transverse and longitudinal waves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c5",
+            "title": "Concept of frequency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c6",
+            "title": "wavelength and time period (no derivation)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c7",
+            "title": "Transverse vibrations in a stretched string- derivation of velocity and frequency - laws of transverse vibration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c8",
+            "title": "Acoustics- Reverberation and echo",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835c9",
+            "title": "Reverberation time and its significance - Sabine’s Formula",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835ca",
+            "title": "Factors affecting acoustics of a building",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835cb",
+            "title": "Ultrasonics- Piezoelectric oscillator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835cc",
+            "title": "Ultrasonic diffractometer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835cd",
+            "title": "SONAR, NDT-Pulse echo method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68bd1edefeb4799d95e835ce",
+            "title": "medical application- Ultrasound scanning (qualitative)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

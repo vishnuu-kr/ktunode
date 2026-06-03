@@ -1,0 +1,2312 @@
+[
+  {
+    "id": "ee-7-computer-vision",
+    "code": "PEEET754",
+    "name": "COMPUTER VISION",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-computer-vision-01-module-1-review-of-image-processing-techniques",
+        "title": "Module 1: Review of image processing techniques",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a1e",
+            "title": "Review of image processing techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a1f",
+            "title": "Digital filters",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36a1f-q-1",
+                "year": "2024",
+                "question": "What is the primary difference between convolution and correlation? When do they produce the same result?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a1f-q-2",
+                "year": "2024",
+                "question": "You are given an image corrupted with \"salt-and-pepper\" noise (random black and white pixels). Which type of spatial filter would be most effective for removing this noise while preserving edges? Explain why.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a1f-q-3",
+                "year": "2024",
+                "question": "Explain the concept of a Gaussian filter kernel and how its parameters affect the resulting image.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a1f-q-4",
+                "year": "2024",
+                "question": "How can you use a sharpening filter to improve an image that appears slightly out of focus?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a1f-q-5",
+                "year": "2024",
+                "question": "Briefly describe the steps involved in frequency domain filtering for image smoothing.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36a20",
+            "title": "linear filters-Homomorphic filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a21",
+            "title": "Point operators- Histogram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a22",
+            "title": "neighbourhood operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a23",
+            "title": "thresholding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a24",
+            "title": "Mathematical morphology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a25",
+            "title": "Binary shape analysis",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36a25-q-1",
+                "year": "2024",
+                "question": "Consider a 5x5 binary image and a 3x3 square structuring element.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a25-q-2",
+                "year": "2024",
+                "question": "What is the primary difference in effect between the morphological operations of Opening and Closing? When would you prefer one over the other?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a25-q-3",
+                "year": "2024",
+                "question": "A shape has an Area of 100 pixels and its Convex Hull has an area of 120 pixels. Calculate its Solidity. What does this value suggest about the shape?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a25-q-4",
+                "year": "2024",
+                "question": "How would you extract the boundary of a binary object using morphological operations? Provide the conceptual formula.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a25-q-5",
+                "year": "2024",
+                "question": "If you want to thicken an object's boundary, which morphological operation would you use?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36a26",
+            "title": "Binary shape analysis",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36a26-q-1",
+                "year": "2024",
+                "question": "What is the difference between 4-connectivity and 8-connectivity in connected components labeling? Which one is generally preferred for shape analysis and why?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a26-q-2",
+                "year": "2024",
+                "question": "Explain how erosion and dilation affect the area and perimeter of a binary object.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a26-q-3",
+                "year": "2024",
+                "question": "You are given a binary image containing several circular objects. Which shape descriptor would be most suitable to differentiate between a perfect circle and an ellipse with a slightly elongated shape?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a26-q-4",
+                "year": "2024",
+                "question": "What is the purpose of opening and closing operations in binary shape analysis?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a26-q-5",
+                "year": "2024",
+                "question": "If a binary object has a solidity of 0.8, what does this imply about its shape?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a26-q-6",
+                "year": "2024",
+                "question": "How can you make shape descriptors invariant to rotation?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36a27",
+            "title": "Erosion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a28",
+            "title": "Dilation",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36a28-q-1",
+                "year": "2024",
+                "question": "What is the primary effect of dilation on foreground objects in a binary image?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a28-q-2",
+                "year": "2024",
+                "question": "How does the structuring element influence the dilation process?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a28-q-3",
+                "year": "2024",
+                "question": "Consider a binary image with a small, thin foreground line segment. If you apply dilation with a large square structuring element, what is the likely outcome?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a28-q-4",
+                "year": "2024",
+                "question": "If you have a binary image with small \"speckles\" of foreground pixels (salt noise), which morphological operation would you primarily use to remove them, and how would dilation play a role in that scenario (if at all)?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a28-q-5",
+                "year": "2024",
+                "question": "What does it mean for a structuring element to be \"centered\"? Why is this important for dilation?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36a29",
+            "title": "Opening and Closing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a2a",
+            "title": "Hit-or-Miss Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a2b",
+            "title": "connectedness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a2c",
+            "title": "object labelling and counting",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36a2c-q-1",
+                "year": "2024",
+                "question": "Explain the difference between 4-connectivity and 8-connectivity in the context of connected components analysis. How might this difference affect the outcome of object labelling and counting?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a2c-q-2",
+                "year": "2024",
+                "question": "Describe the two main passes of the standard connected components labelling algorithm. What is the purpose of the equivalence list?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a2c-q-3",
+                "year": "2024",
+                "question": "You are given a binary image with several small white dots (noise) and a few larger white blobs. How would you use morphological operations to clean up the image before counting the blobs?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36a2c-q-4",
+                "year": "2024",
+                "question": "Consider a scenario where you need to count people in a crowded street scene captured by a fixed camera. What are some challenges, and what techniques might you employ beyond simple thresholding and connected components?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36a2d",
+            "title": "Boundary descriptors – Chain codes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a2e",
+            "title": "Properties of Binary Regions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a2f",
+            "title": "Geometric Features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a30",
+            "title": "Statistical Shape Properties",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-computer-vision-02-module-2-feature-detection-and-image-synthesis",
+        "title": "Module 2: Feature detection and image synthesis",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a32",
+            "title": "Feature Detection and Image Synthesis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a33",
+            "title": "Edge detection – edges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a34",
+            "title": "lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a35",
+            "title": "active contours",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a36",
+            "title": "Split and merge",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a37",
+            "title": "Mean shift and mode finding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a38",
+            "title": "Normalized cuts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a39",
+            "title": "Graph cuts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a3a",
+            "title": "energy- based methods- Cranny’s Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a3b",
+            "title": "Corner detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a3c",
+            "title": "Harris corner detection algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a3d",
+            "title": "Hough transform-Line and curve detection",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-computer-vision-03-module-3-shape-from-x",
+        "title": "Module 3: Shape from x",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a3f",
+            "title": "Shape from X - Shape from shading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a40",
+            "title": "Photometric stereo",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a41",
+            "title": "Texture Occluding contour detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a42",
+            "title": "Motion Analysis- Regularization theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a43",
+            "title": "Optical Flow: brightness constancy equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a44",
+            "title": "aperture problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a45",
+            "title": "Horn-Shunck method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a46",
+            "title": "Lucas-Kanade method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a47",
+            "title": "Structure from motion",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-computer-vision-04-module-4-object-recognition",
+        "title": "Module 4: Object recognition",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a49",
+            "title": "Object recognition-Shape correspondence and shape matching PCA,SVM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a4a",
+            "title": "LDA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a4b",
+            "title": "Bayes rule andML methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a4c",
+            "title": "Eigen faces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a4d",
+            "title": "Face detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a4e",
+            "title": "Face recognition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a4f",
+            "title": "Application: Scene analysis Examples of real time applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a50",
+            "title": "In-vehicle vision system",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-deep-learning",
+    "code": "PEEET753",
+    "name": "DEEP LEARNING",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-deep-learning-01-module-1-neural-network-introduction-to-neural-networks",
+        "title": "Module 1: Neural network introduction to neural networks",
+        "topics": [
+          {
+            "id": "68a200872b85456187f369d3",
+            "title": "Neural Network: Introduction to neural networks -Single layer perceptrons",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369d4",
+            "title": "Multi Layer Perceptrons (MLPs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369d5",
+            "title": "Activation functions - Sigmoid, Tanh, ReLU, Softmax",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369d6",
+            "title": "Risk minimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369d7",
+            "title": "Loss function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369d8",
+            "title": "Training MLPs with Backpropagation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369d9",
+            "title": "Practical issues in neural network training - The problem of Overfitting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369da",
+            "title": "Vanishing and Exploding gradient problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369db",
+            "title": "Difficulties in convergence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369dc",
+            "title": "Local and spurious Optima",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369dd",
+            "title": "Computational challenges.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369de",
+            "title": "Applications of neural networks",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-deep-learning-02-module-2-deep-learning-introduction-to-deep-learning",
+        "title": "Module 2: Deep learning introduction to deep learning",
+        "topics": [
+          {
+            "id": "68a200872b85456187f369e0",
+            "title": "Deep Learning: Introduction to Deep Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e1",
+            "title": "Deep Feed Forward network",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e2",
+            "title": "Training deep learning models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e3",
+            "title": "Optimization techniques - Gradient Descent (GD)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e4",
+            "title": "GD with momentum",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e5",
+            "title": "Nesterov accelerated GD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e6",
+            "title": "Batch, Mini-batch and Stochastic GD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e7",
+            "title": "AdaGrad",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e8",
+            "title": "RMSProp",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369e9",
+            "title": "Adam",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-deep-learning-03-module-3-convolutional-neural-network-cnn-introduction-to-cnn",
+        "title": "Module 3: Convolutional neural network cnn introduction to cnn",
+        "topics": [
+          {
+            "id": "68a200872b85456187f369eb",
+            "title": "Convolutional Neural Network (CNN): Introduction to CNN - Convolution and Pooling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369ec",
+            "title": "Convolution and Pooling as an infinitely strong prior",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369ed",
+            "title": "variants of convolution functions",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f369ed-q-1",
+                "year": "2024",
+                "question": "What is the primary advantage of using dilated convolution compared to standard convolution for capturing context in an image?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f369ed-q-2",
+                "year": "2024",
+                "question": "Explain the two main steps involved in a depthwise separable convolution and why it's computationally efficient.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f369ed-q-3",
+                "year": "2024",
+                "question": "When would you consider using transposed convolution in a CNN architecture? Provide an example application.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f369ed-q-4",
+                "year": "2024",
+                "question": "How does grouped convolution differ from standard convolution, and what is a potential benefit beyond computational reduction?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f369ee",
+            "title": "Efficient convolution algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369ef",
+            "title": "Applications - Computer Vision",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-deep-learning-04-module-4-recurrent-neural-network-rnn-introduction-to-rnn",
+        "title": "Module 4: Recurrent neural network rnn introduction to rnn",
+        "topics": [
+          {
+            "id": "68a200872b85456187f369f1",
+            "title": "Recurrent Neural Network (RNN): Introduction to RNN - Computational graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369f2",
+            "title": "RNN design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369f3",
+            "title": "Encoder-decoder sequence to sequence architectures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369f4",
+            "title": "Deep RNNs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369f5",
+            "title": "Modern RNN - LSTM and GRU",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369f6",
+            "title": "Applications - Natural Language Processing (NLP)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-design-of-solar-pv-systems",
+    "code": "OEEET721",
+    "name": "DESIGN OF SOLAR PV SYSTEMS",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-design-of-solar-pv-systems-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a87",
+            "title": "Introduction  - Basic Concept of Energy -Source of Solar Energy -Formation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a88",
+            "title": "Solar Constant -Air Mass -Solar Time-Sun‒Earth Angles-Solar Radiation-Instruments to Measure Solar Radiation-Pyrheliometer –Pyranometer - Sunshine Recorder -Solar Radiation on a Horizontal Surface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a89",
+            "title": "Extra-terrestrial Region.- Terrestrial Region -Solar Radiation on an Inclined Surface -Conversion Factors -Total Solar Radiation on an Inclined/Tilted Surface -Monthly Average Daily Solar Radiation on Inclined Surfaces .",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-design-of-solar-pv-systems-02-module-2-solar-thermal-system",
+        "title": "Module 2: Solar thermal system",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a8b",
+            "title": "Solar Thermal system -Principle of Conversion of Solar Radiation into Heat",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a8c",
+            "title": "Solar thermal collectors –General description and characteristics –Flat plate collectors –Heat transfer processes –Solar concentrators (parabolic trough, parabolic dish, Central Tower Collector) – performance evaluation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a8d",
+            "title": "Applications -Solar heating system, Air conditioning and Refrigeration system, Pumping system, solar cooker, Solar Furnace, Solar Greenhouse - Design of solar water heater",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-design-of-solar-pv-systems-03-module-3-solar-pv-systems",
+        "title": "Module 3: Solar pv systems",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a8f",
+            "title": "Solar PV Systems -Introduction -Fundamentals of Semiconductor and Solar Cells - Photovoltaic Effect -Solar Cell (Photovoltaic) Materials - Basic Parameters of the Solar Cell - Generation of Solar Cell (Photovoltaic) Materials-.Photovoltaic (PV) Module and PV Array - Single-Crystal Solar",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a90",
+            "title": "Cell Module, Thin-Film PV Modules, III–V Single Junction and Multifunction PV Modules-Emerging and New PV Systems -Packing Factor of the PV Module - Efficiency of the PV Module -Energy Balance Equations for PV Modules -Series and Parallel Combination of PV Modules.- Effect of shadowing-MPPT Techniques-P&O , incremental conductance method-Maximum Power Point Tracker (MPPT) using buck-boost converter.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-design-of-solar-pv-systems-04-module-4-solar-pv-systems-stand",
+        "title": "Module 4: Solar pv systems stand",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36a92",
+            "title": "Solar PV Systems  –stand-alone and grid connected -Design steps for a Stand-Alone system – Storage batteries and Ultra capacitors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a93",
+            "title": "Design PV powered DC fan and pump without battery-Design of Standalone System with Battery and AC or DC Load.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a94",
+            "title": "Life cycle costing, Growth models, Annual payment and present worth factor, payback period, LCC with examples.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36a95",
+            "title": "Introduction to simulation software for solar PV system design",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-digital-image-processing",
+    "code": "PEEET746",
+    "name": "DIGITAL IMAGE PROCESSING",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-digital-image-processing-01-module-1-digital-image-fundamentals-image-representation",
+        "title": "Module 1: Digital image fundamentals image representation",
+        "topics": [
+          {
+            "id": "68a200872b85456187f3690c",
+            "title": "Digital Image Fundamentals: Image representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3690d",
+            "title": "Types of images",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3690e",
+            "title": "Elements of DIP system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3690f",
+            "title": "Basic relationship between pixels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36910",
+            "title": "Distance Measures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36911",
+            "title": "Simple image formation model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36912",
+            "title": "Brightness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36913",
+            "title": "contrast",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36914",
+            "title": "hue",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36915",
+            "title": "saturation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36916",
+            "title": "Mach band effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36917",
+            "title": "Colour image fundamentals-RGB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36918",
+            "title": "CMY",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36919",
+            "title": "HIS models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3691a",
+            "title": "2D sampling and quantization",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-digital-image-processing-02-module-2-2d-image-transforms-dft",
+        "title": "Module 2: 2d image transforms dft",
+        "topics": [
+          {
+            "id": "68a200872b85456187f3691c",
+            "title": "2D Image transforms: DFT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3691d",
+            "title": "Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3691e",
+            "title": "Walsh transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3691f",
+            "title": "Hadamard transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36920",
+            "title": "Haar transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36921",
+            "title": "DCT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36922",
+            "title": "KL transform and Singular Value Decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36923",
+            "title": "Image Compression: Image compression model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36924",
+            "title": "Lossy, lossless compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36925",
+            "title": "Concept of transform coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36926",
+            "title": "JPEG Image compression standard",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-digital-image-processing-03-module-3-image-enhancement-spatial-domain-methods-basic-gray-level-transformatio",
+        "title": "Module 3: Image enhancement spatial domain methods basic gray level transformatio",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36928",
+            "title": "Image Enhancement: Spatial domain methods: Basic Gray Level Transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36929",
+            "title": "Histogram Processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3692a",
+            "title": "Enhancement Using Arithmetic/Logic Operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3692b",
+            "title": "Basics of Spatial Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3692c",
+            "title": "Smoothing spatial Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3692d",
+            "title": "Sharpening spatial Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3692e",
+            "title": "Frequency domain methods: low pass filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3692f",
+            "title": "high pass filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36930",
+            "title": "homomorphic filtering",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-digital-image-processing-04-module-4-image-restoration-degradation-model",
+        "title": "Module 4: Image restoration degradation model",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36932",
+            "title": "Image Restoration: Degradation model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36933",
+            "title": "Inverse filtering- removal of blur caused by uniform linear motion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36934",
+            "title": "Minimum Mean Square Error (Wiener) Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36935",
+            "title": "Image segmentation: Region based approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36936",
+            "title": "clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36937",
+            "title": "Segmentation based on thresholding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36938",
+            "title": "edge based segmentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36939",
+            "title": "Hough Transform",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-discrete-time-control-systems",
+    "code": "PEEET744",
+    "name": "DISCRETE TIME CONTROL SYSTEMS",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems",
+        "title": "Module 1: Analysis of sampled data systems",
+        "topics": [
+          {
+            "id": "68a200872b85456187f368c1",
+            "title": "Analysis of Sampled Data Systems:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c2",
+            "title": "Review of Z Transforms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c3",
+            "title": "Sampling Theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c4",
+            "title": "Impulse Sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c5",
+            "title": "Sampling Rate Selection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c6",
+            "title": "Data Hold – ZOH, FOH, Pulse Transfer Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c7",
+            "title": "Control configurations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c8",
+            "title": "Mapping between the s-plane and the z-plane.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368c9",
+            "title": "Stability analysis of closed-loop system in the z-plane",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368ca",
+            "title": "Jury’s test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368cb",
+            "title": "Schur-Cohn test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368cc",
+            "title": "Bilinear Transformation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368cd",
+            "title": "Routh-Hurwitz method in w-plane.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-discrete-time-control-systems-02-module-2-design-of-compensators",
+        "title": "Module 2: Design of compensators",
+        "topics": [
+          {
+            "id": "68a200872b85456187f368cf",
+            "title": "Design of Compensators:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368d0",
+            "title": "Direct design based on root locus: Design of Lag Compensator, Design of Lead Compensator, Design of Lead-Lag Compensator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368d1",
+            "title": "Digital Controller Design in Frequency Domain: Direct design based on frequency response",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368d2",
+            "title": "Design of Lag Compensator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368d3",
+            "title": "Design of Lead Compensator",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f368d3-q-1",
+                "year": "2024",
+                "question": "What is the primary purpose of a lead compensator in a discrete-time control system?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f368d3-q-2",
+                "year": "2024",
+                "question": "A digital lead compensator of the form $G_c(z) = K_c \\frac{z-z_1}{z-p_1}$ is desired to provide a maximum phase lead of $40^\\circ$. What is the ratio $\\beta = |z_1|/|p_1|$?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f368d3-q-3",
+                "year": "2024",
+                "question": "Does a lead compensator improve steady-state accuracy? Explain why or why not.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f368d3-q-4",
+                "year": "2024",
+                "question": "For the discrete-time plant $G_p(z) = \\frac{0.1z}{z-0.9}$ with $T=1$ second, design a lead compensator $G_c(z) = K_c \\frac{z-z_1}{z-p_1}$ to achieve a phase margin of $60^\\circ$, assuming the uncompensated system has a phase margin of $30^\\circ$ at $\\omega_c T = \\pi/4$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f368d4",
+            "title": "Design of Lag-Lead Compensator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368d5",
+            "title": "Realization of digital controllers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-discrete-time-control-systems-03-module-3-discrete",
+        "title": "Module 3: Discrete",
+        "topics": [
+          {
+            "id": "68a200872b85456187f368d7",
+            "title": "Discrete-time State Space System:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368d8",
+            "title": "State variable model of discrete data systems with S/H devices - State transition equations, state diagrams.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368d9",
+            "title": "Relationship between state space representation and pulse transfer function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368da",
+            "title": "Transformation to canonical forms and phase variable form.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368db",
+            "title": "Solution of state equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368dc",
+            "title": "Computation of state transition matrix using",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368dd",
+            "title": "Cayley-Hamilton theorem and z-transform method.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-discrete-time-control-systems-04-module-4-design-using-state-space-approach",
+        "title": "Module 4: Design using state space approach",
+        "topics": [
+          {
+            "id": "68a200872b85456187f368df",
+            "title": "Design using State Space approach:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368e0",
+            "title": "Discretization of continuous time state-space equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368e1",
+            "title": "Controllability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368e2",
+            "title": "Observability.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368e3",
+            "title": "State feedback controller design via Pole Placement.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368e4",
+            "title": "State Observer Design: Full order observers and Reduced order observers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-energy-management-and-auditing",
+    "code": "PEEET742",
+    "name": "ENERGY MANAGEMENT AND AUDITING",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-energy-management-and-auditing-01-module-1-general-aspects-of-energy-management-and-energy-audit-energy-management",
+        "title": "Module 1: General aspects of energy management and energy audit energy management",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36871",
+            "title": "General aspects of energy management and energy audit: Energy Management – Definition, General principles of energy management and energy management planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36872",
+            "title": "Energy Audit:  Definition, need, types and methodologies. Instruments for energy audit, Energy audit report - Power quality audit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36873",
+            "title": "Energy conservation in buildings: ECBC code (basic aspects), Building Management System (BMS).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-energy-management-and-auditing-02-module-2-energy-efficiency-in-electrical-utilities-electricity-transmission-and-",
+        "title": "Module 2: Energy efficiency in electrical utilities electricity transmission and ",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36875",
+            "title": "Energy Efficiency in Electrical Utilities: Electricity transmission and distribution system, cascade efficiency.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36876",
+            "title": "Lighting: Modern energy efficient light sources, life and efficacy comparison with older light sources, energy conservation in lighting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36877",
+            "title": "Motors: Development of energy efficient motors and the present status, techniques for improving energy efficiency, necessity for load matching and selection of motors for constant and variable loads.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36878",
+            "title": "Demand side Management:  Introduction to DSM, benefits of DSM, different techniques of DSM.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36879",
+            "title": "Power factor improvement, numerical examples.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3687a",
+            "title": "Ancillary services:  Introduction of ancillary services – Types of Ancillary services",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-energy-management-and-auditing-03-module-3-energy-management-in-electrical-utilities-boilers-working-principle",
+        "title": "Module 3: Energy management in electrical utilities boilers working principle",
+        "topics": [
+          {
+            "id": "68a200872b85456187f3687c",
+            "title": "Energy Management in Electrical Utilities: Boilers: working principle - blow down, energy conservation opportunities in boiler.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3687d",
+            "title": "Steam: properties of steam, distribution losses, steam trapping. Identifying opportunities for energy savings in steam distribution.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3687e",
+            "title": "Furnace:  General fuel economy measures, energy conservation opportunities in furnaces.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3687f",
+            "title": "HVAC system:  Performance and saving opportunities in Refrigeration and Air conditioning systems .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36880",
+            "title": "Heat Recovery Systems:  Waste heat recovery system - Energy saving opportunities.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36881",
+            "title": "Cogeneration:  Types and schemes, optimal operation of cogeneration plants, combined cycle electricity generation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-energy-management-and-auditing-04-module-4-energy-economics-economic-analysis-methods-cash-flow-model-time-value-o",
+        "title": "Module 4: Energy economics economic analysis methods cash flow model time value o",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36883",
+            "title": "Energy Economics:  Economic analysis: methods, cash flow model, time value of money, evaluation of proposals, pay-back period, average rate of return method, internal rate of return method, present value method, life cycle costing approach. Computer aided Energy Management Systems (EMS).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-introduction-to-energy-storage-systems",
+    "code": "OEEET723",
+    "name": "INTRODUCTION TO ENERGY STORAGE SYSTEMS",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system",
+        "title": "Module 1: Need and role of energy storage systems in power system",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36aa8",
+            "title": "Need and role of energy storage systems in power system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aa9",
+            "title": "General considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aaa",
+            "title": "Energy and power balance in a storage unit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aab",
+            "title": "Mathematical model of storage system: modelling of power transformation system (PTS)-Central store (CS) and charge–discharge control system (CDCS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aac",
+            "title": "Econometric model of storage system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aad",
+            "title": "Thermal energy: General considerations -Storage media- Containment-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aae",
+            "title": "Thermal energy storage in a power plant",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aaf",
+            "title": "Potential energy: Pumped hydro-Compressed Air.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical",
+        "title": "Module 2: Kinetic energy mechanical",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36ab1",
+            "title": "Kinetic energy: Mechanical- Flywheel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ab2",
+            "title": "Power to Gas: Hydrogen- Synthetic methane.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ab3",
+            "title": "Electro chemical energy: Batteries-Battery parameters: C-rating– SoC – DoD -Specific Energy- Specific power (numerical examples)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ab4",
+            "title": "Fuel cells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ab5",
+            "title": "Electrostatic energy (Super Capacitors)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ab6",
+            "title": "Electromagnetic energy (Superconducting Magnetic Energy Storage)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ab7",
+            "title": "Comparative analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ab8",
+            "title": "Environmental impacts of different technologies.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-introduction-to-energy-storage-systems-03-module-3-types-of-renewable-energy-sources-wave",
+        "title": "Module 3: Types of renewable energy sources wave",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36aba",
+            "title": "Types of renewable energy sources: Wave - Wind – Tidal – Hydroelectric - Solar thermal technologies and Photovoltaics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36abb",
+            "title": "Storage role in isolated power systems with renewable powersources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36abc",
+            "title": "Storage role in an integrated power system with grid-connected renewablepowersources.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-introduction-to-energy-storage-systems-04-module-4-smart-grid",
+        "title": "Module 4: Smart grid",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36abe",
+            "title": "Smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36abf",
+            "title": "Smart micro grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ac0",
+            "title": "Smart house",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ac1",
+            "title": "Mobile storage system: Electric vehicles – Grid to Vehicle (G2V)-Vehicle to Grid (V2G)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ac2",
+            "title": "Management and control hierarchy of storage systems.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36ac2-q-1",
+                "year": "2024",
+                "question": "Describe the primary functions of the Battery Management System (BMS) at Level 0 of the ESS control hierarchy.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36ac2-q-2",
+                "year": "2024",
+                "question": "How does the concept of a Virtual Power Plant (VPP) fit into the management and control hierarchy of distributed ESS?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36ac2-q-3",
+                "year": "2024",
+                "question": "Explain why cybersecurity is a critical concern at all levels of the ESS control hierarchy.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36ac2-q-4",
+                "year": "2024",
+                "question": "What are some key differences in the control focus between Level 2 (Site Controller) and Level 3 (Network/Grid Operator Control)?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36ac2-q-5",
+                "year": "2024",
+                "question": "Provide an example of how an ESS at Level 3 might provide a specific grid service.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36ac3",
+            "title": "Aggregating energy storage systems and distributed generation (Virtual Power Plant Energy Management with storage systems)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ac4",
+            "title": "Battery SCADA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ac5",
+            "title": "Hybrid energy storage systems: configurations and applications.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-nonlinear-control-systems",
+    "code": "PEEET752",
+    "name": "NONLINEAR CONTROL SYSTEMS",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-nonlinear-control-systems-01-module-1-introduction-to-nonlinear-systems",
+        "title": "Module 1: Introduction to nonlinear systems",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36998",
+            "title": "Introduction to nonlinear systems:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36999",
+            "title": "Basic characteristics of nonlinear systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3699a",
+            "title": "Examples.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3699b",
+            "title": "State-space representation of nonlinear systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3699c",
+            "title": "Classification of nonlinearities.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3699d",
+            "title": "Phase plane analysis: Concept of phase plane, singular points.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3699e",
+            "title": "Definition of stability – asymptotic stability, instability;",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3699f",
+            "title": "Construction using isocline method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369a0",
+            "title": "Classification of equilibrium points;",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369a1",
+            "title": "Systems with multiple equilibria.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369a2",
+            "title": "Periodic orbits - limit cycles.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-nonlinear-control-systems-02-module-2-lyapunov-stability-theory",
+        "title": "Module 2: Lyapunov stability theory",
+        "topics": [
+          {
+            "id": "68a200872b85456187f369a4",
+            "title": "Lyapunov Stability Theory:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369a5",
+            "title": "Lyapunov's direct method - Definite functions - Stability theorems;",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369a6",
+            "title": "- Variable gradient method – La-Salle theorems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369a7",
+            "title": "Stability of linear systems - Lyapunov equation for time-invariant systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369a8",
+            "title": "- Lyapunov’s linearization (indirect) method - Region of attraction (concept only).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-nonlinear-control-systems-03-module-3-frequency-domain-analysis-of-feedback-systems",
+        "title": "Module 3: Frequency domain analysis of feedback systems",
+        "topics": [
+          {
+            "id": "68a200872b85456187f369aa",
+            "title": "Frequency domain Analysis of Feedback systems:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369ab",
+            "title": "Describing function method: Analysis through harmonic linearization- Determination of describing function of nonlinearities.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369ac",
+            "title": "Application of describing function for stability analysis of autonomous system with",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369ad",
+            "title": "single nonlinearity (relay, dead zone and saturation only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369ae",
+            "title": "Feedback Stabilisation, Kalman-Yakubovitch-Popov lemma (Concept only); Stability Analysis of feedback systems, Circle Criterion.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-nonlinear-control-systems-04-module-4-nonlinear-control-design",
+        "title": "Module 4: Nonlinear control design",
+        "topics": [
+          {
+            "id": "68a200872b85456187f369b0",
+            "title": "Nonlinear Control Design:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369b1",
+            "title": "Lie Derivatives and Lie Brackets; Feedback linearization, Input state linearization and input – output linearization of SISO systems. (3 hours)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369b2",
+            "title": "Design via linearization - regulation via integral control; gain scheduling, tracking.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f369b3",
+            "title": "Concepts of other nonlinear controllers – sliding mode, backstepping.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-power-quality",
+    "code": "PEEET751",
+    "name": "POWER QUALITY",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-power-quality-01-module-1-power-quality-phenomenon",
+        "title": "Module 1: Power quality phenomenon",
+        "topics": [
+          {
+            "id": "68a200872b85456187f3696b",
+            "title": "Power quality phenomenon  - Sources and effects of power quality problems, Need for concern of Power quality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3696c",
+            "title": "Types of power quality disturbances  –Transients – classification and origin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3696d",
+            "title": "Short duration voltage variation – interruption, sag, swell",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3696e",
+            "title": "Long duration voltage variation, voltage unbalance, waveform distortion - notching, harmonics and voltage flicker",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3696f",
+            "title": "Power Quality issues of Grid connected Renewable Energy Systems  – operating conflicts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-power-quality-02-module-2-harmonics",
+        "title": "Module 2: Harmonics",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36971",
+            "title": "Harmonics  - mechanism of harmonic generation, Triplen harmonics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36972",
+            "title": "Harmonic sources  – switching devices, arcing devices and saturable devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36973",
+            "title": "Effects of harmonics on power system equipment and loads – transformers, capacitor banks, motors and telecommunication systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36974",
+            "title": "Effect of triplen harmonics on neutral current, line and phase voltages",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36974-q-1",
+                "year": "2024",
+                "question": "What are triplen harmonics? List the first three triplen harmonic orders.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36974-q-2",
+                "year": "2024",
+                "question": "Explain why triplen harmonic currents sum up in the neutral conductor of a three-phase four-wire system.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36974-q-3",
+                "year": "2024",
+                "question": "What is the primary concern associated with high neutral currents caused by triplen harmonics?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36974-q-4",
+                "year": "2024",
+                "question": "How do triplen harmonics affect line voltages in a balanced three-phase system? Justify your answer.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36974-q-5",
+                "year": "2024",
+                "question": "Provide two common sources of triplen harmonics.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36975",
+            "title": "Harmonic analysis using Fourier series and Fourier transforms  – simple numerical problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights",
+        "title": "Module 3: Harmonic indices cf df thd tdd tif din c message weights",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36977",
+            "title": "Harmonic indices  (CF, DF, THD, TDD, TIF, DIN, C – message weights)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36978",
+            "title": "Displacement and total power factor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36979",
+            "title": "Overview of power quality standards : IEEE 519, IEEE 1433 and IEC 61000",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3697a",
+            "title": "Power quality Monitoring: Objectives and measurement issues, different monitoring instruments – Power quality analyzer, harmonic spectrum analyzer, flicker meters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-power-quality-04-module-4-mitigation-of-power-quality-problems",
+        "title": "Module 4: Mitigation of power quality problems",
+        "topics": [
+          {
+            "id": "68a200872b85456187f3697c",
+            "title": "Mitigation of Power quality problems  - Harmonic elimination - Design simple problems and analysis of passive filters to reduce harmonic distortion – demerits of passive filters – description of active filters - shunt, series, hybrid filters, sag and swell correction using DVR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3697d",
+            "title": "Power quality conditioners - DSTATCOM and UPQC - Configuration and working",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3697e",
+            "title": "Power factor correction  – Single phase active power factor converter – circuit schematic and control block diagram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3697f",
+            "title": "Grounding and wiring – reasons for grounding – wiring and grounding problems - solutions to these problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-power-system-operation-and-control",
+    "code": "PEEET741",
+    "name": "POWER SYSTEM OPERATION AND CONTROL",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-power-system-operation-and-control-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36854",
+            "title": "Introduction- Optimum load dispatch - First order gradient method base point and participation factors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36855",
+            "title": "Economic dispatch versus unit commitment.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36856",
+            "title": "Unit Commitment Solution Methods - Priority-List Methods – Security Constrained Unit Commitment.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-power-system-operation-and-control-02-module-2-generation-with-limited-supply",
+        "title": "Module 2: Generation with limited supply",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36858",
+            "title": "Generation with limited supply-Take or pay fuel supply contract- Introduction to Hydrothermal coordination-Long range and short range scheduling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36859",
+            "title": "Hydro-electric plant models-scheduling energy problems - types of scheduling problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3685a",
+            "title": "Scheduling energy - The Hydrothermal Scheduling Problem - Hydro scheduling with storage limitation - Introduction to Pumped storage hydro plants.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-power-system-operation-and-control-03-module-3-inter-change-evaluation-and-power-pools",
+        "title": "Module 3: Inter change evaluation and power pools",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3685c",
+            "title": "Inter change evaluation and power pools- Interchange contracts – Energy interchange between utilities - Interchange evaluation with unit commitment - Energy banking- power pools.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3685d",
+            "title": "Power system security- Factors Affecting Power System Security - Contingency Analysis: Detection of Network Problems - Generation Outages - Transmission Outages - An Overview of Security Analysis.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-power-system-operation-and-control-04-module-4-introduction-to-state-estimation-in-power-system-maximum-likelihood-wei",
+        "title": "Module 4: Introduction to state estimation in power system maximum likelihood wei",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3685f",
+            "title": "Introduction to State estimation in power system, Maximum Likelihood Weighted Least Squares Estimation - State Estimation of an AC Network - Sources of Error in State Estimation - Detection and Identification of Bad",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36860",
+            "title": "Measurements - Estimation of Quantities Not Being Measured - Network Observability and Pseudo-measurements - The Use of Phasor Measurement Units (PMUs) - Application of Power Systems State Estimation - Importance of Data Verification and Validation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-7-special-electrical-machines",
+    "code": "PEEET743",
+    "name": "SPECIAL ELECTRICAL MACHINES",
+    "branchId": "ee",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ee-7-special-electrical-machines-01-module-1-stepper-motors-basic-principle",
+        "title": "Module 1: Stepper motors basic principle",
+        "topics": [
+          {
+            "id": "68a200872b85456187f3689a",
+            "title": "Stepper motors – basic principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3689b",
+            "title": "types - variable reluctance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3689c",
+            "title": "permanent magnet",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3689d",
+            "title": "hybrid types – constructional features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3689e",
+            "title": "principle of operation – comparison",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f3689f",
+            "title": "modes of operation – monofilar and bifilar windings – modes of excitation – one phase ON mode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368a0",
+            "title": "two phase ON mode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368a1",
+            "title": "half-step mode – micro-stepping - static and dynamic characteristics – open-loop and closed loop control - applications – numerical problems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details",
+        "title": "Module 2: Synchronous reluctance motor constructional details",
+        "topics": [
+          {
+            "id": "68a200872b85456187f368a3",
+            "title": "Synchronous Reluctance Motor – Constructional details - principle of operation - phasor diagram - torque equation - applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368a4",
+            "title": "Switched reluctance motors – constructional details - principle of operation - torque equation – characteristics - power converter circuits - control of SRM - rotor position sensors- torque pulsations – sources of noise - noise mitigation techniques - applications.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-special-electrical-machines-03-module-3-pm-brushless-dc-motor",
+        "title": "Module 3: Pm brushless dc motor",
+        "topics": [
+          {
+            "id": "68a200872b85456187f368a6",
+            "title": "PM Brushless DC motor- constructional details - permanent magnets – different types - demagnetization characteristics – arrangement of permanent magnets – magnetization of permanent magnets – axial and parallel magnetizations- principle of operation – Control of BLDC motor - applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368a7",
+            "title": "Permanent Magnet Synchronous Motors - construction - principle of operation – Control of PMSM – self-control – sensor-less control– applications - comparison with BLDC motors",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-7-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc",
+        "title": "Module 4: Linear electric machines linear motors different types linear reluctanc",
+        "topics": [
+          {
+            "id": "68a200872b85456187f368a9",
+            "title": "Linear Electric Machines: Linear motors – different types – linear reluctance motor - linear synchronous motors – construction – comparison.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368aa",
+            "title": "Linear Induction Motor – Construction- Thrust Equation, Transverse edge and end effects- Equivalent Circuit, Thrust-Speed characteristics, Applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f368ab",
+            "title": "Single Phase Special Electrical Machines- AC series Motor, Repulsion Motor, Hysteresis Motor, Universal Motor- Construction - principle of operation - applications.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

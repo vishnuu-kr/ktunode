@@ -1,0 +1,3418 @@
+[
+  {
+    "id": "ee-5-computer-network-systems",
+    "code": "PEEET528",
+    "name": "COMPUTER NETWORK SYSTEMS",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-computer-network-systems-01-module-1-introduction-uses-of-computer-networks",
+        "title": "Module 1: Introduction uses of computer networks",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36460",
+            "title": "Introduction – Uses of computer networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36461",
+            "title": "Network hardware",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36462",
+            "title": "Network software - Protocol hierarchies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36463",
+            "title": "Design issues for the layers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36464",
+            "title": "Connection oriented versus connectionless service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36465",
+            "title": "Reference models – The OSI reference model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36466",
+            "title": "The TCP/IP reference model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36467",
+            "title": "Comparison of OSI and TCP/IP reference models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36468",
+            "title": "Physical Layer –Transmission media overview – Twisted pair and fiber optics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36469",
+            "title": "Performance indicators – Bandwidth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3646a",
+            "title": "Throughput",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f3646a-q-1",
+                "year": "2024",
+                "question": "Define throughput and explain how it differs from bandwidth.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3646a-q-2",
+                "year": "2024",
+                "question": "List three factors that can negatively impact the throughput of a network.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3646a-q-3",
+                "year": "2024",
+                "question": "Imagine you are downloading a large file from a server. You observe that your download speed is consistently much lower than what your internet service provider advertises (e.g., 50 Mbps download speed advertised, but you're only getting 20 Mbps). What are two possible reasons for this discrepancy?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3646a-q-4",
+                "year": "2024",
+                "question": "How does packet loss affect throughput?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3646a-q-5",
+                "year": "2024",
+                "question": "Give an example of a network application where high throughput is crucial for a good user experience.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f3646b",
+            "title": "Latency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3646c",
+            "title": "Bandwidth–Delay product",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-computer-network-systems-02-module-2-data-link-layer",
+        "title": "Module 2: Data link layer",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3646e",
+            "title": "Data link layer - Data link layer design issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3646f",
+            "title": "Error detection and correction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36470",
+            "title": "Sliding window protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36471",
+            "title": "Medium Access Control (MAC) sublayer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36472",
+            "title": "Channel allocation problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36473",
+            "title": "Multiple access protocols – CSMA, Collision free protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36474",
+            "title": "Ethernet – Switched Ethernet, fast Ethernet and gigabit Ethernet",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36475",
+            "title": "Wireless LANs - 802.11 – Architecture and protocol stack",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36476",
+            "title": "Use of Bridges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36477",
+            "title": "Repeaters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36478",
+            "title": "Hubs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36479",
+            "title": "Switches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3647a",
+            "title": "Routers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3647b",
+            "title": "Gateways",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-computer-network-systems-03-module-3-network-layer-design-issues",
+        "title": "Module 3: Network layer design issues",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3647d",
+            "title": "Network layer design issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3647e",
+            "title": "Routing algorithms - The Optimality Principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3647f",
+            "title": "Shortest path routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36480",
+            "title": "Flooding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36481",
+            "title": "Distance Vector Routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36482",
+            "title": "Link State Routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36483",
+            "title": "Routing for mobile hosts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36484",
+            "title": "Congestion control algorithms – Approaches to congestion control (Details not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36485",
+            "title": "Quality of Service (QoS) - Requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36486",
+            "title": "Techniques for achieving good QoS – Traffic shaping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36487",
+            "title": "Packet scheduling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36488",
+            "title": "IPv4 protocol",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36489",
+            "title": "IP addresses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3648a",
+            "title": "IPv6",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3648b",
+            "title": "Internet Control Protocols - Internet Control Message Protocol (ICMP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3648c",
+            "title": "Address Resolution Protocol (ARP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3648d",
+            "title": "Dynamic Host Configuration Protocol (DHCP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3648e",
+            "title": "Open Shortest Path First (OSPF) Protocol",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3648f",
+            "title": "Border Gateway Protocol (BGP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36490",
+            "title": "Internet multicasting",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers",
+        "title": "Module 4: Transport service services provided to the upper layers",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36492",
+            "title": "Transport service – Services provided to the upper layers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36493",
+            "title": "Transport service primitives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36494",
+            "title": "User Datagram Protocol (UDP) – Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36495",
+            "title": "Remote procedure call",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36496",
+            "title": "ELECTRICAL AND ELECTRONICS Transmission Control Protocol (TCP) – Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36497",
+            "title": "TCP service model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36498",
+            "title": "TCP protocol",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36499",
+            "title": "TCP segment header",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3649a",
+            "title": "Connection establishment & release",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3649b",
+            "title": "Application Layer –Domain Name System (DNS) – overview of DNS name space and Name servers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3649c",
+            "title": "Electronic mail – Architecture and services- SMTP – IMAP - POP3",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3649d",
+            "title": "World Wide Web (WWW) - Architectural overview",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3649e",
+            "title": "HTTP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3649f",
+            "title": "File Transfer Protocol (FTP)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-data-structures",
+    "code": "PEEET526",
+    "name": "DATA STRUCTURES",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-data-structures-01-module-1-basic-concepts-of-data-structures-algorithms-performance-analysis-space",
+        "title": "Module 1: Basic concepts of data structures algorithms performance analysis space",
+        "topics": [
+          {
+            "id": "68a200852b85456187f363da",
+            "title": "Basic Concepts of Data Structures: Algorithms, Performance Analysis, Space Complexity, Time Complexity, Asymptotic Notations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363db",
+            "title": "Arrays:  Linear Search and Binary Search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363dc",
+            "title": "Stacks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363dd",
+            "title": "Queues-Circular Queues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363de",
+            "title": "Priority Queues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363df",
+            "title": "Double Ended Queues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363e0",
+            "title": "Evaluation of Expressions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-data-structures-02-module-2-linked-list-self",
+        "title": "Module 2: Linked list self",
+        "topics": [
+          {
+            "id": "68a200852b85456187f363e2",
+            "title": "Linked List: Self-Referential Structures, Dynamic Memory Allocation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363e3",
+            "title": "Singly Linked List- Operations on Linked List",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363e4",
+            "title": "Doubly Linked List",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363e5",
+            "title": "Circular Linked List",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363e6",
+            "title": "Stacks and Queues using Linked List",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363e7",
+            "title": "Polynomial representation using Linked List",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-data-structures-03-module-3-trees-and-graphs-trees",
+        "title": "Module 3: Trees and graphs trees",
+        "topics": [
+          {
+            "id": "68a200852b85456187f363e9",
+            "title": "Trees and Graphs: Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363ea",
+            "title": "Binary Trees-Tree Operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363eb",
+            "title": "Binary Tree Representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363ec",
+            "title": "Tree Traversals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363ed",
+            "title": "Binary Search Trees- Binary Search Tree Operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363ee",
+            "title": "Graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363ef",
+            "title": "Representation of Graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f0",
+            "title": "Depth First Search and Breadth First Search on Graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f1",
+            "title": "Applications of Graphs",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-data-structures-04-module-4-sorting-and-hashing-sorting-techniques-selection-sort",
+        "title": "Module 4: Sorting and hashing sorting techniques selection sort",
+        "topics": [
+          {
+            "id": "68a200852b85456187f363f3",
+            "title": "Sorting and Hashing: Sorting Techniques – Selection Sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f4",
+            "title": "Insertion Sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f5",
+            "title": "Quick Sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f6",
+            "title": "Merge Sort and Heap Sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f7",
+            "title": "Hashing- Hashing Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f8",
+            "title": "Collision Resolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363f9",
+            "title": "Overflow handling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363fa",
+            "title": "Hashing functions – Mid square",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363fb",
+            "title": "Division",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363fc",
+            "title": "Folding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f363fd",
+            "title": "Digit Analysis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-digital-system-design",
+    "code": "PEEET523",
+    "name": "DIGITAL SYSTEM DESIGN",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-digital-system-design-01-module-1-clocked-synchronous-networks",
+        "title": "Module 1: Clocked synchronous networks",
+        "topics": [
+          {
+            "id": "68a200852b85456187f362ec",
+            "title": "Clocked Synchronous Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362ed",
+            "title": "Analysis of Clocked Synchronous Sequential Networks (CSSN)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362ee",
+            "title": "Modelling of CSSN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362ef",
+            "title": "State assignment and reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362f0",
+            "title": "Design of CSSN",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-digital-system-design-02-module-2-asm-chart-and-its-realization",
+        "title": "Module 2: Asm chart and its realization",
+        "topics": [
+          {
+            "id": "68a200852b85456187f362f2",
+            "title": "ASM Chart and its realization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362f3",
+            "title": "Asynchronous Sequential Circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362f4",
+            "title": "Analysis of Asynchronous Sequential Circuits (ASC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362f5",
+            "title": "Flow table reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362f6",
+            "title": "Races in ASC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362f7",
+            "title": "State assignment problem and the transition table",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks",
+        "title": "Module 3: Hazards static and dynamic hazards in combinational networks",
+        "topics": [
+          {
+            "id": "68a200852b85456187f362f9",
+            "title": "Hazards – static and dynamic hazards in combinational networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362fa",
+            "title": "Essential Hazards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362fb",
+            "title": "Design of Hazard free circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362fc",
+            "title": "Data synchronizers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362fd",
+            "title": "Mixed operating mode asynchronous circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362fe",
+            "title": "Practical issues- clock skew and jitter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362ff",
+            "title": "Synchronous and asynchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36300",
+            "title": "Faults: Fault table method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36301",
+            "title": "path sensitization method",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36301-q-1",
+                "year": "2024",
+                "question": "Consider the function $F = AB + B'C$. Determine if there is a static hazard for the input transition $A=0, B=1, C=0 \\rightarrow A=1, B=1, C=0$. If so, identify the sensitizing input conditions and the nature of the hazard.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36301-q-2",
+                "year": "2024",
+                "question": "For the function $F = X'Y + XY'$, determine if a hazard exists for the transition $X=0, Y=0 \\rightarrow X=1, Y=1$. Identify the conditions for sensitization.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f36302",
+            "title": "Boolean difference method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic",
+        "title": "Module 4: Vlsi design flow design entry schematic",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36304",
+            "title": "VLSI Design flow: Design entry: Schematic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36305",
+            "title": "Data types and objects",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36305-q-1",
+                "year": "2024",
+                "question": "What is the primary difference between a net and a port in schematic design?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36305-q-2",
+                "year": "2024",
+                "question": "In a circuit with multiple devices sharing a common bus, what data type is essential to represent the disconnected state of a bus driver?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36305-q-3",
+                "year": "2024",
+                "question": "You are designing a system that processes 16-bit audio data. How would you represent this data on a schematic?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36305-q-4",
+                "year": "2024",
+                "question": "Identify the data type and object type for each of the following in a schematic:",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36305-q-5",
+                "year": "2024",
+                "question": "Why is the `X` data type important during simulation, even though it doesn't directly map to a physical wire state in a stable circuit?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f36306",
+            "title": "different modelling styles in VHDL - Dataflow, Behavioural and Structural Modelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36307",
+            "title": "VHDL constructs and codes for combinational and sequential circuits",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-electric-vehicles",
+    "code": "PEEET522",
+    "name": "ELECTRIC VEHICLES",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-electric-vehicles-01-module-1-conventional-vehicles-basics-of-vehicle-performance",
+        "title": "Module 1: Conventional vehicles basics of vehicle performance",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3628f",
+            "title": "Conventional Vehicles : Basics of vehicle performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36290",
+            "title": "Vehicle power source characterization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36291",
+            "title": "Transmission characteristics (1hr)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36292",
+            "title": "Introduction to Electric Vehicles : History of electric vehicles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36293",
+            "title": "Classification of electric vehicles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36294",
+            "title": "Overview of EV challenges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36295",
+            "title": "Overview of EV technologies- motor drive technology  ",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36295-q-1",
+                "year": "2024",
+                "question": "Briefly explain the primary advantage of an electric motor's torque delivery compared to an internal combustion engine. (CO1, K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36295-q-2",
+                "year": "2024",
+                "question": "List three common types of electric motors used in electric vehicles and briefly state one key advantage of each. (CO3, K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36295-q-3",
+                "year": "2024",
+                "question": "What is the role of the inverter in an electric vehicle's motor drive system? (CO3, K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36295-q-4",
+                "year": "2024",
+                "question": "If you were designing an EV for maximum range and performance, which motor technology would you likely lean towards, and why? (CO3, K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36295-q-5",
+                "year": "2024",
+                "question": "What are the main disadvantages of brushed DC motors that have led to their limited use in modern EVs? (CO1, K2)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f36296",
+            "title": "energy source technology  ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36297",
+            "title": "battery charging technology  ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36298",
+            "title": "vehicle-to-grid technology (2hr)  ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36299",
+            "title": "Vehicle Dynamics & Load Forces: Mathematical models to describe vehicle performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3629a",
+            "title": "vehicle load forces: aerodynamic drag",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3629b",
+            "title": "rolling resistance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3629c",
+            "title": "grading resistance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3629d",
+            "title": "vehicle acceleration",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f3629d-q-1",
+                "year": "2024",
+                "question": "What are the primary resistive forces that an electric vehicle must overcome to accelerate on a level road?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3629d-q-2",
+                "year": "2024",
+                "question": "Explain why electric vehicles typically have better acceleration from a standstill compared to conventional internal combustion engine vehicles, assuming similar peak power ratings.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3629d-q-3",
+                "year": "2024",
+                "question": "If a vehicle's mass increases by 50%, how would its acceleration change if the net force remained the same?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3629d-q-4",
+                "year": "2024",
+                "question": "Which resistive force becomes more dominant as a vehicle's speed increases?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3629d-q-5",
+                "year": "2024",
+                "question": "Define \"traction limit\" in the context of vehicle acceleration.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f3629e",
+            "title": "Calculation of motor power from traction torque",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3629f",
+            "title": "Numerical problems. (4 hrs)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-electric-vehicles-02-module-2-electric-drive",
+        "title": "Module 2: Electric drive",
+        "topics": [
+          {
+            "id": "68a200852b85456187f362a1",
+            "title": "Electric Drive-trains : Basic concept of electric traction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362a2",
+            "title": "Introduction to various electric drive-train topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362a3",
+            "title": "Power flow control in electric drive-train topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362a4",
+            "title": "Fuel efficiency analysis.(2 hrs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362a5",
+            "title": "DC Drives: Motoring using a PM DC Machine - DC motor electric drive using DC-DC converter - Generating/Braking using a PM DC Machine. (3hrs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362a6",
+            "title": "PMSM Drives :  Review of PMSM motor basics – Independent control of orthogonal flux and torque (concept only)- Field Oriented Control (FOC) – Sensored and sensorless control (block diagram only). (4hrs)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f362a6-q-1",
+                "year": "2024",
+                "question": "What are the two main components of torque in a PMSM, and which current components in the d-q frame are primarily responsible for them? (Knowledge Level: K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f362a6-q-2",
+                "year": "2024",
+                "question": "Explain the fundamental goal of Field-Oriented Control (FOC) in PMSM drives. (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f362a6-q-3",
+                "year": "2024",
+                "question": "What is the main difference in the block diagrams between sensored and sensorless FOC for PMSMs? (Knowledge Level: K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f362a6-q-4",
+                "year": "2024",
+                "question": "At high speeds, why is a negative $i_d$ current applied in a PMSM drive controlled by FOC? (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f362a6-q-5",
+                "year": "2024",
+                "question": "For a surface-mounted PMSM (SPM), what is the typical reference value for $i_d^*$ to achieve Maximum Torque Per Ampere (MTPA)? (Knowledge Level: K2)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f362a7",
+            "title": "Sizing the drive system : Matching the electric machine and the Internal Combustion Engine (ICE) ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362a8",
+            "title": "Sizing the propulsion motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362a9",
+            "title": "Sizing the power electronics-Switch technology selection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362aa",
+            "title": "Ripple capacitor design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362ab",
+            "title": "Switching frequency and PWM. (2hrs)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery",
+        "title": "Module 3: Battery based energy storage systems types of battery",
+        "topics": [
+          {
+            "id": "68a200852b85456187f362ad",
+            "title": "Battery based energy storage systems : Types of battery-battery parameters-units of battery energy storage - capacity rate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362ae",
+            "title": "- cell voltage - specific energy - cycle life - self-discharge- static battery equivalent circuit model - series-parallel battery pack equivalent circuits.(3hrs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362af",
+            "title": "Other storage topologies : Fuel Cell based energy storage systems- Supercapacitors- Flywheel- Hybridization of different energy storage devices. (2 hrs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b0",
+            "title": "Sizing considerations of battery -Time and charge/discharge cycles - Lifetime – Beginning of life (BOL) - End of life (EOL) - DOD - Efficiency of Battery Pack - Determination of pack Voltage, range for EV - Determination of Cell/Pack Voltage for a Given Output\\Input Power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b1",
+            "title": "Battery management system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b2",
+            "title": "Numerical problems.(4hrs)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers",
+        "title": "Module 4: Overview of electric vehicle battery chargers types of chargers",
+        "topics": [
+          {
+            "id": "68a200852b85456187f362b4",
+            "title": "Overview of Electric Vehicle Battery Chargers –Types of chargers-On-board chargers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b5",
+            "title": "Off- board chargers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b6",
+            "title": "Wireless charger",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b7",
+            "title": "Electric Vehicle Supply Equipment (EVSE) - Grid to EVSE to On-board chargers to battery pack power flow block schematic diagrams –  V2G concept(3hrs)  ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b8",
+            "title": "Types of charging stations - AC Level 1 & 2, DC - Level 3 -Types of Connectors - CHAdeMO, CCS Type1 and 2, GB/T - PIN diagrams and differences (2hrs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362b9",
+            "title": "Autonomous Vehicles : Levels of automation, significance, functional architecture-sensors, actuators,  path planning& effects of automation in vehicles (2hrs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362ba",
+            "title": "Vehicle Communication protocols  : Need & requirements - Functions of Control Pilot (CP) and Proximity Pilot (PP) pins",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f362bb",
+            "title": "Communication Protocols - CAN, LIN, FLEXRAY (Basics only)- Power line communication (PLC) in EV (2 hrs)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-electromagnetic-theory",
+    "code": "PCEET502",
+    "name": "ELECTROMAGNETIC THEORY",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-electromagnetic-theory-01-module-1-mathematical-preliminaries-rectangular-cylindrical-and-spherical-coordi",
+        "title": "Module 1: Mathematical preliminaries rectangular cylindrical and spherical coordi",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361af",
+            "title": "Mathematical Preliminaries : Rectangular, Cylindrical and Spherical Coordinate Systems - Representation of Point, Unit vector, Vector, Constant surfaces, Transformation of points, unit vectors and vectors among the three coordinate systems - Transformation matrices, Del operator - Representation in the three coordinate systems, Gradient of scalar field - Physical meaning of gradient, Divergence of a vector field - Physical significance of divergence - Divergence Theorem -, Curl of a vector field - Physical significance of curl - Stoke’s Theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361b0",
+            "title": "Electrostatic Fields : Coulomb’s Law, Electric Field Intensity, Force and Field due to system of charges, Gauss’s Law - integral form, Electric Flux Density, Field due to line of charge, surface and volume charge distributions.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-electromagnetic-theory-02-module-2-electrostatic-fields-in-material-media-gausss-law",
+        "title": "Module 2: Electrostatic fields in material media gausss law",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361b2",
+            "title": "Electrostatic Fields in material media : Gauss’s law - point form, Electric potential, Relation between E and V, Field due to electric dipole, Energy density in static electric fields, Conduction and Convection Current, Ohm’s law in point form, Resistance,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361b3",
+            "title": "Capacitance of parallel plate capacitor, Coaxial and Spherical capacitors, Continuity equation, Boundary conditions, Poisson’s and Laplace’s Equations (solution not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361b4",
+            "title": "Magnetostatics :  Biot Savart’s Law, Ampere’s Circuital Law in integral and point form, Magnetic field due to infinite line current, infinite sheet of current, Coaxial cable, Non conservativeness of magnetic field, Magnetic scalar potential, Magnetic vector potential.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-electromagnetic-theory-03-module-3-magnetostatics-in-material-media-force-on-a-charged-particle-due-to-a-m",
+        "title": "Module 3: Magnetostatics in material media force on a charged particle due to a m",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361b6",
+            "title": "Magnetostatics in Material Media : Force on a charged particle due to a magnetic field, Force between two current carrying conductors, Magnetic Torque and Moment, Magnetization in materials, Magnetic boundary conditions, Inductance, Energy stored in magnetostatic fields.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361b7",
+            "title": "Electromagnetic Induction and Maxwell- Heaviside Equations:  Faraday’s law, Transformer emf and Motional emf, Displacement Current, Maxwell-Heaviside equations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-electromagnetic-theory-04-module-4-electromagnetic-waves-time-varying-potentials-waves-in-general-electrom",
+        "title": "Module 4: Electromagnetic waves time varying potentials waves in general electrom",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361b9",
+            "title": "Electromagnetic Waves : Time varying potentials, Waves in general, Electromagnetic waves, Wave propagation in lossy dielectrics, Plane waves in free space, conductors, skin effect, Power, Poynting theorem, Reflection of plane wave at normal incidence.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361ba",
+            "title": "Transmission Lines:  Transmission line equations, Characteristic impedance, Input impedance, Standing wave ratio.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-energy-storage-systems",
+    "code": "PEEET521",
+    "name": "ENERGY STORAGE SYSTEMS",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system",
+        "title": "Module 1: Need and role of energy storage systems in power system",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36252",
+            "title": "Need and role of energy storage systems in power system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36253",
+            "title": "General considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36254",
+            "title": "Energy and power balance in a storage unit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36255",
+            "title": "Mathematical model of storage system: modelling of power transformation system (PTS)-Central store (CS) and charge–discharge control system (CDCS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36256",
+            "title": "Econometric model of storage system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36257",
+            "title": "Thermal energy: General considerations -Storage media- Containment- Thermal energy storage in a power plant",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36258",
+            "title": "Potential energy: Pumped hydro-Compressed Air.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-energy-storage-systems-02-module-2-kinetic-energy-mechanical",
+        "title": "Module 2: Kinetic energy mechanical",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3625a",
+            "title": "Kinetic energy: Mechanical- Flywheel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3625b",
+            "title": "Power to Gas: Hydrogen- Synthetic methane.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3625c",
+            "title": "Electro chemical energy: Batteries-Battery parameters: C-rating– SoC – DoD -Specific Energy- Specific power (numerical examples)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3625d",
+            "title": "Fuel cells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3625e",
+            "title": "Electrostatic energy (Super Capacitors)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3625f",
+            "title": "Electromagnetic energy (Superconducting Magnetic Energy Storage)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36260",
+            "title": "Comparative analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36261",
+            "title": "Environmental impacts of different technologies.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-energy-storage-systems-03-module-3-types-of-renewable-energy-sources-wave",
+        "title": "Module 3: Types of renewable energy sources wave",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36263",
+            "title": "Types of renewable energy sources: Wave - Wind – Tidal – Hydroelectric - Solar thermal technologies and Photovoltaics",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36263-q-1",
+                "year": "2024",
+                "question": "Describe how an Oscillating Water Column (OWC) converts wave energy into electricity and explain why energy storage is essential for such a system.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36263-q-2",
+                "year": "2024",
+                "question": "Discuss the primary challenges associated with integrating large-scale wind power into the grid and explain how energy storage can help overcome these challenges.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36263-q-3",
+                "year": "2024",
+                "question": "Explain the difference between tidal barrages and tidal stream generators and discuss the role of energy storage in improving the reliability of tidal energy generation.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36263-q-4",
+                "year": "2024",
+                "question": "Explain how Pumped Storage Hydropower (PSH) functions as both a generator of electricity and an energy storage system.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36263-q-5",
+                "year": "2024",
+                "question": "Explain the concept of Thermal Energy Storage (TES) in the context of Concentrating Solar Power (CSP) and its advantages.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36263-q-6",
+                "year": "2024",
+                "question": "Why is battery energy storage particularly well-suited for mitigating the intermittency of photovoltaic (PV) power generation, and what are the key benefits it provides to the grid?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36263-q-7",
+                "year": "2024",
+                "question": "Compare the storage needs for wind energy versus tidal energy.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36263-q-8",
+                "year": "2024",
+                "question": "Which renewable energy source discussed in this module inherently includes a form of energy storage within its generation process, and what is that storage method?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f36264",
+            "title": "Storage role in isolated power systems with renewable powersources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36265",
+            "title": "Storage role in an integrated power system with grid-connected renewablepowersources.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-energy-storage-systems-04-module-4-smart-grid",
+        "title": "Module 4: Smart grid",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36267",
+            "title": "Smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36268",
+            "title": "Smart micro grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36269",
+            "title": "Smart house",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3626a",
+            "title": "Mobile storage system: Electric vehicles – Grid to Vehicle (G2V)-Vehicle to Grid (V2G)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3626b",
+            "title": "Management and control hierarchy of storage systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3626c",
+            "title": "Aggregating energy storage systems and distributed generation (Virtual Power Plant Energy Management with storage systems)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3626d",
+            "title": "Battery SCADA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3626e",
+            "title": "Hybrid energy storage systems: configurations and applications.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-introduction-to-machine-learning",
+    "code": "PEEET527",
+    "name": "INTRODUCTION TO MACHINE LEARNING",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-introduction-to-machine-learning-01-module-1-mathematics-for-machine-learning",
+        "title": "Module 1: Mathematics for machine learning",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36425",
+            "title": "Mathematics for Machine Learning.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36426",
+            "title": "Association of two variables - Discrete variables, Ordinal and Continuous variable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36427",
+            "title": "Probability calculus - Summary Statistics, probability distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36428",
+            "title": "Inductive statistics - Point estimation, Interval estimation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36429",
+            "title": "Hypothesis Testing - Basic definitions, t-test, F-test, ANOVA",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f36429-q-1",
+                "year": "2024",
+                "question": "A new marketing campaign is launched for a product. The company wants to know if the average daily sales have increased after the campaign. They have sales data for 30 days before the campaign and 30 days after.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36429-q-2",
+                "year": "2024",
+                "question": "A data scientist is comparing the error rates of three different regression models. They collect the error rates for 10 runs of each model.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36429-q-3",
+                "year": "2024",
+                "question": "You are testing a new feature for a recommendation system. You hypothesize that the click-through rate (CTR) will increase. You compare the CTR of users who saw the new feature versus a control group.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-5-introduction-to-machine-learning-02-module-2-introduction-to-machine-learning-algorithms",
+        "title": "Module 2: Introduction to machine learning algorithms",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3642b",
+            "title": "Introduction to machine learning algorithms - supervised vs. unsupervised learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3642c",
+            "title": "regression and classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3642d",
+            "title": "linear discriminant analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3642e",
+            "title": "decision trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3642f",
+            "title": "random forests, and bagging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36430",
+            "title": "Unsupervised - Principal Component Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36431",
+            "title": "clustering algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36432",
+            "title": "SVMs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36433",
+            "title": "re-sampling methods: cross-validation and bootstrapping",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f36433-q-1",
+                "year": "2024",
+                "question": "What is the primary goal of using cross-validation?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36433-q-2",
+                "year": "2024",
+                "question": "In k-Fold Cross-Validation, how many times is a specific data point used for testing?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36433-q-3",
+                "year": "2024",
+                "question": "When is Stratified k-Fold Cross-Validation particularly important?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36433-q-4",
+                "year": "2024",
+                "question": "What is the key difference between standard k-fold sampling and bootstrapping sampling?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36433-q-5",
+                "year": "2024",
+                "question": "Explain the concept of \"Out-of-Bag\" (OOB) samples in the context of bootstrapping.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-5-introduction-to-machine-learning-03-module-3-introduction-to-python-for-ml",
+        "title": "Module 3: Introduction to python for ml",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36435",
+            "title": "Introduction to python for ML - essential python libraries and ML functions (NumPy, pandas, Matplotlib, SciKit-Learn)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36436",
+            "title": "working with data sets – data cleaning and pre-processing functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36437",
+            "title": "Data visualization- bar, scatter, histogram, heatmaps.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-introduction-to-machine-learning-04-module-4-ml-algorithm-implementation-with-python",
+        "title": "Module 4: Ml algorithm implementation with python",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36439",
+            "title": "ML algorithm implementation with python - Linear Regression Simple and multiple linear regression",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f36439-q-1",
+                "year": "2024",
+                "question": "What type of machine learning problem does Linear Regression solve?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36439-q-2",
+                "year": "2024",
+                "question": "What is the primary goal of the Ordinary Least Squares (OLS) method in Linear Regression?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36439-q-3",
+                "year": "2024",
+                "question": "In simple linear regression ($y = \\beta_0 + \\beta_1 X + \\epsilon$), what does $\\beta_1$ represent?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36439-q-4",
+                "year": "2024",
+                "question": "You are building a model to predict student scores based on study hours and previous exam performance. What type of linear regression would you use?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36439-q-5",
+                "year": "2024",
+                "question": "You observe a very high R-squared value for your multiple linear regression model, but the model's predictions on unseen data are poor. What might be the problem?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36439-q-6",
+                "year": "2024",
+                "question": "What is multicollinearity, and why is it a concern in multiple linear regression?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36439-q-7",
+                "year": "2024",
+                "question": "Which Python library is commonly used for implementing linear regression in machine learning tasks?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36439-q-8",
+                "year": "2024",
+                "question": "For a dataset with 'Age', 'Income', and 'PurchaseAmount' (target), how would you prepare the 'Age' and 'Income' features if they have very different scales (e.g., age in years, income in thousands of dollars) before fitting a linear regression model? (Hint: Think about feature scaling).",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f3643a",
+            "title": "Model evaluation metrics: MSE, RMSE, R²",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3643b",
+            "title": "Classification Algorithms - Logistic regression, k-Nearest Neighbours (k-NN), Decision Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3643c",
+            "title": "Model evaluation metrics: accuracy, precision, recall, F1-score",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3643d",
+            "title": "Support Vector Machines (SVM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3643e",
+            "title": "Ensemble methods (Random Forest, Gradient Boosting)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3643f",
+            "title": "Clustering Algorithms -K-means clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36440",
+            "title": "Hierarchical clustering.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-microprocessors-and-embedded-systems",
+    "code": "PBEET504",
+    "name": "MICROPROCESSORS AND EMBEDDED SYSTEMS",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-01-module-1-introduction-to-microprocessors",
+        "title": "Module 1: Introduction to microprocessors",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3620b",
+            "title": "Introduction to microprocessors - Features and Architecture of 8085",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3620c",
+            "title": "Registers of 8085",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3620d",
+            "title": "Flags",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3620e",
+            "title": "8085 Pin diagram- Pins, Signals and functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3620f",
+            "title": "Assembly language programming- Basic Instruction set to write Simple programs - Arithmetic, Logical, Branching instructions, Opcodes, hand coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36210",
+            "title": "Programs involving 8 and 16bit Addition, Subtraction, Memory Reading and writing, Sorting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36211",
+            "title": "Addressing modes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36212",
+            "title": "Classification of instructions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines",
+        "title": "Module 2: Stack and subroutines",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36214",
+            "title": "Stack and Subroutines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36215",
+            "title": "CALL and RETURN instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36216",
+            "title": "Timing and control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36217",
+            "title": "Machine cycles, instruction cycle and T states",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36218",
+            "title": "fetch and execute cycles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36219",
+            "title": "Timing diagram for instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3621a",
+            "title": "Delay subroutines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3621b",
+            "title": "Interrupts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3621c",
+            "title": "Interrupt service Routines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3621d",
+            "title": "Interfacing ADC and DAC",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems",
+        "title": "Module 3: Introduction to embedded systems",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3621f",
+            "title": "Introduction to Embedded Systems -Application domain, features and characteristics, Microprocessors and Micro controllers– Choice and suitability for applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36220",
+            "title": "Introduction to Arduino UNO(8bit)- Hardware fundamentals of ATmega328Pmicrocontroller based Board.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36221",
+            "title": "Arduino Architecture, Pin diagram and functions of Pins- Overview of main features such as I/O Ports, Timers, interrupts, PWM, ADC (Introduction only).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36222",
+            "title": "Introduction to Arduino IDE- Arduino Libraries, Steps for creating an Arduino program- Arduino Sketch Structure and Flow- Setup and loop functions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36223",
+            "title": "Programming in Embedded C. Data types- operators, conditional statements- Loops, Arrays and functions- Built in functions in Arduino",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36224",
+            "title": "Program to blink an LED and its control., Interfacing LCD, Seven Segment LED, switch Interface, Binary counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36225",
+            "title": "Working with LED Controlled by Switch/ Potentiometer, Interfacing with Relays, Buzzer, Working with Basic sensors and actuators using Arduino.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-04-module-4-arm-advanced-risc-machines-based-embedded-system-design-classification-",
+        "title": "Module 4: Arm advanced risc machines based embedded system design classification ",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36227",
+            "title": "ARM (Advanced RISC Machines) based Embedded System Design : Classification of Microprocessors based on the word length, architecture and  Instruction Set-  Reduced Instruction Set Computer (RISC) and Complex Instruction Set Computer (CISC).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36228",
+            "title": "Features and characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36229",
+            "title": "Introduction to Arduino due(32bit) - micro controller board (based on the atmel sam3x-- arm cortex- m3 cpu)- Features, General Specifications Overview, General architecture- Features OF Microcontroller, INPUTS,OUTPUTS, Ratings, Functional Overview, Pinout- familiarization of the ports of the board.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36229-q-1",
+                "year": "2024",
+                "question": "What is the primary microcontroller used on the Arduino Due board, and what is its core architecture?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36229-q-2",
+                "year": "2024",
+                "question": "What is the recommended operating voltage for the Arduino Due's I/O pins? Why is this important?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36229-q-3",
+                "year": "2024",
+                "question": "List three key differences between the Arduino Due and a typical 5V Arduino board like the Arduino Uno.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36229-q-4",
+                "year": "2024",
+                "question": "Explain the significance of the 12-bit resolution for the analog inputs and outputs on the Arduino Due.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36229-q-5",
+                "year": "2024",
+                "question": "You want to connect a sensor that outputs a 5V signal to one of the Arduino Due's digital input pins. What precautions should you take?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36229-q-6",
+                "year": "2024",
+                "question": "What is the purpose of the USB Host port on the Arduino Due?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f3622a",
+            "title": "Programming Basics- Arduino IDE-Use of Timer, Interfacing of ADC and DAC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3622b",
+            "title": "PWM implementation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3622c",
+            "title": "Introduction to Arduino Cloud Editor",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-microprocessors-and-embedded-systems-lab",
+    "code": "PCEEL508",
+    "name": "MICROPROCESSORS AND EMBEDDED SYSTEMS LAB",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement",
+        "title": "Module 1: Data transfer block data movement",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364e3",
+            "title": "Data transfer: Block data movement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364e4",
+            "title": "exchanging data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364e5",
+            "title": "sorting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364e6",
+            "title": "finding largest element in an array.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364e7",
+            "title": "Arithmetic operations: Addition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364e8",
+            "title": "Subtraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364e9",
+            "title": "Multiplication and Division.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364ea",
+            "title": "Comparing square and cube of 16 bit numbers.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f364ea-q-1",
+                "year": "2024",
+                "question": "What are the maximum and minimum values that can be represented by a 16-bit unsigned integer? How might this affect the calculation of squares and cubes?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f364ea-q-2",
+                "year": "2024",
+                "question": "Briefly explain the process of multiplying two 8-bit numbers in the 8051 using the `MUL AB` instruction. Where is the result stored?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f364ea-q-3",
+                "year": "2024",
+                "question": "If you are comparing a 16-bit number `n` with its square `n²`, and you know that `n` is an unsigned integer, under what conditions will `n²` be equal to `n`?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f364ea-q-4",
+                "year": "2024",
+                "question": "Outline an approach in assembly language to compare if a 16-bit number stored in `R0R1` (R0=MSB, R1=LSB) is equal to another 16-bit number stored in `R2R3` (R2=MSB, R3=LSB).",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-02-module-2-alp-programming-for-the-implementation-of-counters-hex-up-and-down-coun",
+        "title": "Module 2: Alp programming for the implementation of counters hex up and down coun",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364ec",
+            "title": "ALP programming for the implementation of counters: Hex up and down counters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364ed",
+            "title": "BCD up/down counters.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-03-module-3-alp-programming-for-implementing-boolean-and-logical-instructions-bit-m",
+        "title": "Module 3: Alp programming for implementing boolean and logical instructions bit m",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364ef",
+            "title": "ALP programming for implementing Boolean and logical instructions: bit manipulation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364f0",
+            "title": "ALP programming for implementing conditional call and return instructions: Toggle the bits of port 1 by sending the values of 55H and AAH continuously",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364f1",
+            "title": "Factorial of a number.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-04-module-4-alp-program-for-generation-of-delay",
+        "title": "Module 4: Alp program for generation of delay",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364f3",
+            "title": "ALP program for Generation of delay.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-05-module-5-c-program-for-stepper-motor-control",
+        "title": "Module 5: C program for stepper motor control",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364f5",
+            "title": "C program for stepper motor control.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-06-module-6-c-program-for-dc-motor-direction-and-speed-control-using-pwm",
+        "title": "Module 6: C program for dc motor direction and speed control using pwm",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364f7",
+            "title": "C program for DC motor direction and speed control using PWM.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-07-module-7-c-program-for-alphanumerical-lcd-panelkeyboard-interface",
+        "title": "Module 7: C program for alphanumerical lcd panelkeyboard interface",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364f9",
+            "title": "C program for alphanumerical LCD panel/keyboard interface.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-08-module-8-c-program-for-adc-interfacing",
+        "title": "Module 8: C program for adc interfacing",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364fb",
+            "title": "C program for ADC interfacing.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-09-module-9-demo-experiment-using-8051-microcontroller-programming",
+        "title": "Module 9: Demo experiment using 8051 microcontroller programming",
+        "topics": [
+          {
+            "id": "68a200862b85456187f364fd",
+            "title": "Demo experiment using 8051 Microcontroller programming.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364fe",
+            "title": "ALP programming for implementation code conversion- BCD to ASCII ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f364ff",
+            "title": "ASCII to BCD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36500",
+            "title": "ASCII to Decimal ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36501",
+            "title": "Decimal to ASCII",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36502",
+            "title": "Hexadecimal to Decimal and Decimal to Hexadecimal",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-10-module-10-familiarization-of-aurdino-ide",
+        "title": "Module 10: Familiarization of aurdino ide",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36504",
+            "title": "Familiarization of Aurdino IDE.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36505",
+            "title": "LED blinking with different ON/OFF delay timings with (i) inbuilt LED (ii) externally interfaced LED.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-11-module-11-arduino-based-voltage-measurement-of-12-v-solar-pv-module-12-v-battery",
+        "title": "Module 11: Arduino based voltage measurement of 12 v solar pv module 12 v battery",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36507",
+            "title": "Arduino based voltage measurement of 12 V solar PV module /12 V battery and displaying the measured value using 12C LCD display..",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-12-module-12-demo-experiments-on-arduino-raspberry-pi-to-upload-retrieve-temperatur",
+        "title": "Module 12: Demo experiments on arduino raspberry pi to upload retrieve temperatur",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36509",
+            "title": "Demo experiments on Arduino / Raspberry Pi to upload /retrieve temperature and humidity data to thing speak cloud.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-13-module-13-arduino-based-dc-current-measurement-using-hall-effect-current-sensor-",
+        "title": "Module 13: Arduino based dc current measurement using hall effect current sensor ",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3650b",
+            "title": "Arduino based DC current measurement using Hall effect current sensor displaying the value using 12C LCD module.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-14-module-14-directional-control-of-the-dc-motor-using-arduino",
+        "title": "Module 14: Directional control of the dc motor using arduino",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3650d",
+            "title": "Directional control of the DC motor using Arduino.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-15-module-15-interfacing-of-the-relay-with-arduino",
+        "title": "Module 15: Interfacing of the relay with arduino",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3650f",
+            "title": "Interfacing of the relay with Arduino.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-microprocessors-and-embedded-systems-lab-16-module-16-building-intrusion-detection-system-with-arduino-and-ultrasonic-sensor",
+        "title": "Module 16: Building intrusion detection system with arduino and ultrasonic sensor",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36511",
+            "title": "Building intrusion detection system with Arduino and Ultrasonic sensor.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-power-generation-transmission-and-protection",
+    "code": "PCEET501",
+    "name": "POWER GENERATION, TRANSMISSION AND PROTECTION",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non",
+        "title": "Module 1: Generation from renewable and non",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36180",
+            "title": "Generation from renewable and non-renewable sources – Hydro, thermal, nuclear- (block schematic details, environmental and ethical factors, advantages, disadvantages)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36181",
+            "title": "Solar and wind - (block schematic details, environmental factors, regulations, advantages, disadvantages)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36182",
+            "title": "Energy storage systems as alternative energy sources – BESS, CESS, thermal SS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36183",
+            "title": "Load curve – Load duration curve, Load factor, diversity factor, demand factor, Plant capacity factor, plant use factor - Numerical Problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-power-generation-transmission-and-protection-02-module-2-power-transmission-system",
+        "title": "Module 2: Power transmission system",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36185",
+            "title": "Power Transmission System - (Electrical Model)- Line parameters – resistance - inductance and capacitance (Derivation of three phase double circuit)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36186",
+            "title": "Transmission line modelling - classifications (concept only) – transmission line as two port network – derivation and calculation of ABCD parameters (derivation and numerical problems)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36187",
+            "title": "Skin Effect & Ferranti Effect – Corona (qualitative study only) – Surge Impedance Loading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36188",
+            "title": "Insulators – string efficiency – grading (numerical problems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages",
+        "title": "Module 3: Introduction to ehvac and hvdc principle advantagesdisadvantages",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3618a",
+            "title": "Introduction to EHVAC and HVDC: Principle, advantages/disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3618b",
+            "title": "Underground cables – ratings - classification - Capacitance of cables – grading – 2 types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3618c",
+            "title": "AC Distribution systems – connection schemes – radial and ring main systems – single phase only (numerical problems)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3618d",
+            "title": "Method of power factor improvement using capacitors (numerical problems)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3618e",
+            "title": "Tariff - different types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3618f",
+            "title": "Introduction to energy markets (regulated and deregulated systems)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-power-generation-transmission-and-protection-04-module-4-need-for-protection",
+        "title": "Module 4: Need for protection",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36191",
+            "title": "Need for protection- Types of protection schemes – primary and back-up",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36192",
+            "title": "Protective relays –  Basics of typical electromechanical relay – induction type only Static (block diagrams of o/c and instantaneous o/c relays) Microprocessor (block diagram and flow chart of o/c relay) Fundamentals of Numerical relay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36193",
+            "title": "Principles of overcurrent, directional, distance and differential",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36194",
+            "title": "Circuit breakers – operating principle – arc phenomenon – arc extinction – principle & methods – Important terms in arc extinction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36195",
+            "title": "Problems of circuit interruption – capacitive current chopping – ratings of CBs Circuit breaker classification based on medium of arc extinction – SF6 & VCB Introduction to GIS",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-signals-and-systems",
+    "code": "PCEET503",
+    "name": "SIGNALS AND SYSTEMS",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals",
+        "title": "Module 1: Introduction to signals and systems elementary signals",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361ca",
+            "title": "Introduction to Signals and Systems: Elementary Signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361cb",
+            "title": "Classification and representation of continuous time and discrete time signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361cc",
+            "title": "Signal operations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361cd",
+            "title": "Concept of system: Continuous time and discrete time systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361ce",
+            "title": "Properties of systems:  Time invariance, Linearity, Causality, Systems with and without memory, Stability.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361cf",
+            "title": "Convolution Integral and sum.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d0",
+            "title": "Impulse and step response.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-signals-and-systems-02-module-2-frequency-domain-characterization-of-signals-and-systems-fourier-transf",
+        "title": "Module 2: Frequency domain characterization of signals and systems fourier transf",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361d2",
+            "title": "Frequency domain characterization of Signals and Systems: Fourier transform: Existence - Properties of Continuous time Fourier transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d3",
+            "title": "Concept of Frequency response",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d4",
+            "title": "Significance of Fourier transform and difference from Fourier series.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d5",
+            "title": "Review of Laplace Transforms.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d6",
+            "title": "Characterization of LTI systems: Differential equation representation of continuous time LTI systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d7",
+            "title": "Transfer function representation of differential equation in Laplace domain.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d8",
+            "title": "Modeling of LTI systems:  Electrical, translational and rotational mechanical systems, DC servo-motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361d9",
+            "title": "Force voltage, Force current analogy.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-signals-and-systems-03-module-3-sampled-data-systems-and-z",
+        "title": "Module 3: Sampled data systems and z",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361db",
+            "title": "Sampled Data Systems and Z-Transform: Sampling process - Impulse train sampling-sampling theorem- Aliasing effect.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361dc",
+            "title": "Zero-order and First-order hold circuits - Signal reconstruction.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361dd",
+            "title": "Z-Transform:  Region of convergence- Properties of Z-Transform Inverse Z-Transform.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361de",
+            "title": "Pulse transfer function.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361df",
+            "title": "Difference equations representation using Z-transform and it’s solution using inverse Z-Transform.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361e0",
+            "title": "Impulse and step response of discrete-time systems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-signals-and-systems-04-module-4-dynamic-system-representation-and-stability-open-loop-and-closed-loop-s",
+        "title": "Module 4: Dynamic system representation and stability open loop and closed loop s",
+        "topics": [
+          {
+            "id": "68a200852b85456187f361e2",
+            "title": "Dynamic System Representation and Stability: Open loop and closed loop systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361e3",
+            "title": "Effect of feedback in  systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361e4",
+            "title": "Block diagram representation - block diagram reduction.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361e5",
+            "title": "Signal flow graph - Mason's gain formula.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361e6",
+            "title": "Type and Order of the systems - Pole-Zero representation of systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361e7",
+            "title": "Characteristic equation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f361e8",
+            "title": "Routh stability criterion.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-5-software-engineering",
+    "code": "PEEET524",
+    "name": "SOFTWARE ENGINEERING",
+    "branchId": "ee",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "ee-5-software-engineering-01-module-1-introduction-to-software-engineering",
+        "title": "Module 1: Introduction to software engineering",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36327",
+            "title": "Introduction to Software Engineering - Professional software development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36328",
+            "title": "Software engineering ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36329",
+            "title": "Software process models - The waterfall model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3632a",
+            "title": "Incremental development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3632b",
+            "title": "Process activities - Software specification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3632c",
+            "title": "Software design and implementation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3632d",
+            "title": "Software validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3632e",
+            "title": "Software evolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3632f",
+            "title": "Coping with change - Prototyping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36330",
+            "title": "Incremental delivery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36331",
+            "title": "Boehm's Spiral Model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36332",
+            "title": "Agile software development - Agile methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36333",
+            "title": "agile manifesto - values and principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36334",
+            "title": "Agile development techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36335",
+            "title": "Agile Project Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36336",
+            "title": "Case studies : An insulin pump control system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36337",
+            "title": "Mentcare - a patient information system for mental health care",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-software-engineering-02-module-2-requirement-analysis-and-design-functional-and-non",
+        "title": "Module 2: Requirement analysis and design functional and non",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36339",
+            "title": "Requirement Analysis and Design: Functional and non-functional requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3633a",
+            "title": "Requirements engineering processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3633b",
+            "title": "Requirements elicitation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3633c",
+            "title": "Requirements validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3633d",
+            "title": "Requirements change",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3633e",
+            "title": "Traceability Matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3633f",
+            "title": "Developing use cases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36340",
+            "title": "Software Requirements Specification Template",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36341",
+            "title": "Personas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36342",
+            "title": "Scenarios",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36343",
+            "title": "User stories",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36344",
+            "title": "Feature identification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36345",
+            "title": "Design concepts - Design within the context of software engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36346",
+            "title": "Design Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36347",
+            "title": "Design concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36348",
+            "title": "Design Model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36349",
+            "title": "Architectural Design - Software Architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3634a",
+            "title": "Architectural Styles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3634b",
+            "title": "Architectural considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3634c",
+            "title": "Architectural Design Component level design - What is a component?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3634d",
+            "title": "Designing Class-Based Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3634e",
+            "title": "Conducting Component level design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3634f",
+            "title": "Component level design for web-apps",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-software-engineering-03-module-3-implementation-and-testing",
+        "title": "Module 3: Implementation and testing",
+        "topics": [
+          {
+            "id": "68a200852b85456187f36351",
+            "title": "Implementation and Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36352",
+            "title": "Object-oriented design using the UML",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f36352-q-1",
+                "year": "2024",
+                "question": "Explain the difference between aggregation and composition in UML and provide an example for each.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-2",
+                "year": "2024",
+                "question": "What is the primary purpose of a Use Case Diagram?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-3",
+                "year": "2024",
+                "question": "Draw a simplified UML Class Diagram for a system where a `Customer` can place multiple `Order`s, and each `Order` consists of multiple `OrderItem`s, with each `OrderItem` referencing a `Product`. Assume `Product` can exist independently, but `OrderItem` and `Order` are tightly coupled to the `Customer` and `Product`.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-4",
+                "year": "2024",
+                "question": "Which design pattern would you use if you need to ensure that a class has only one instance and provide a global point of access to it?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-5",
+                "year": "2024",
+                "question": "You are designing a system where users can choose different notification methods (e.g., Email, SMS, Push Notification). Each method has a different way of sending the notification. Which design pattern would be most suitable to encapsulate these different notification algorithms and make them interchangeable?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-6",
+                "year": "2024",
+                "question": "What is the key difference between Top-Down and Bottom-Up integration testing?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-7",
+                "year": "2024",
+                "question": "Why is Unit Testing important in object-oriented development?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-8",
+                "year": "2024",
+                "question": "Explain the core principle of \"copyleft\" as it applies to open-source licenses like the GPL.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f36352-q-9",
+                "year": "2024",
+                "question": "What is the primary difference between the GPL and LGPL licenses?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f36353",
+            "title": "Design patterns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36354",
+            "title": "Implementation issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36355",
+            "title": "Open-source development - Open-source licensing - GPL, LGPL, BSD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36356",
+            "title": "Review Techniques - Cost impact of Software Defects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36357",
+            "title": "Code review and statistical analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36358",
+            "title": "Informal Review",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36359",
+            "title": "Formal Technical Reviews",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3635a",
+            "title": "Post-mortem evaluations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3635b",
+            "title": "Software testing strategies - Unit Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3635c",
+            "title": "Integration Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3635d",
+            "title": "Validation testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3635e",
+            "title": "System testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3635f",
+            "title": "Debugging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36360",
+            "title": "White box testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36361",
+            "title": "Path testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36362",
+            "title": "Control Structure testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36363",
+            "title": "Black box testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36364",
+            "title": "Testing Documentation and Help facilities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36365",
+            "title": "Test automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36366",
+            "title": "Test-driven development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36367",
+            "title": "Security testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36368",
+            "title": "Overview of DevOps and Code Management - Code management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36369",
+            "title": "DevOps automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3636a",
+            "title": "CI/CD/CD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3636b",
+            "title": "Software Evolution - Evolution processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3636c",
+            "title": "Software maintenance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-5-software-engineering-04-module-4-software-project-management-software-project-management",
+        "title": "Module 4: Software project management software project management",
+        "topics": [
+          {
+            "id": "68a200852b85456187f3636e",
+            "title": "Software Project Management: Software Project Management - Risk management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3636f",
+            "title": "Managing people",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200852b85456187f3636f-q-1",
+                "year": "2024",
+                "question": "What are the key differences between hygiene factors and motivators according to Herzberg's Two-Factor Theory, and how can a project manager leverage this understanding?",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3636f-q-2",
+                "year": "2024",
+                "question": "Describe two communication challenges faced by distributed software development teams and propose a strategy to mitigate each.",
+                "marks": 3
+              },
+              {
+                "id": "68a200852b85456187f3636f-q-3",
+                "year": "2024",
+                "question": "How does the Agile Manifesto's emphasis on \"Individuals and interactions over processes and tools\" influence people management in software projects?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200852b85456187f36370",
+            "title": "Teamwork",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36371",
+            "title": "Project Planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36372",
+            "title": "Software pricing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36373",
+            "title": "Plan-driven development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36374",
+            "title": "Project scheduling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36375",
+            "title": "Agile planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36376",
+            "title": "Estimation techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36377",
+            "title": "COCOMO cost modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36378",
+            "title": "Configuration management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f36379",
+            "title": "Version management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3637a",
+            "title": "System building",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3637b",
+            "title": "Change management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3637c",
+            "title": "Release management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3637d",
+            "title": "Agile software management - SCRUM framework",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200852b85456187f3637e",
+            "title": "Kanban methodology and lean approaches",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

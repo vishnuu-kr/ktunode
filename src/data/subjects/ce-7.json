@@ -1,0 +1,3617 @@
+[
+  {
+    "id": "ce-7-advanced-geotechnical-investigation",
+    "code": "PECET753",
+    "name": "ADVANCED GEOTECHNICAL INVESTIGATION",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-advanced-geotechnical-investigation-01-module-1-planning-an-investigation-programme",
+        "title": "Module 1: Planning an investigation programme",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8115aa",
+            "title": "Planning an Investigation Programme",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ab",
+            "title": "Geotechnical Investigation – Necessity, Scope and Objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ac",
+            "title": "Planning of a sub-surface   exploration program -Factors to be considered",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ad",
+            "title": "Reconnaissance, preliminary and detailed investigation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ae",
+            "title": "I.S guidelines for deciding the number, size, spacing and depth of boreholes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115af",
+            "title": "Exploration techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115b0",
+            "title": "Methods of exploration- open pits, trenches, shafts, boreholes. Methods of boring – Auger boring, wash boring, percussion drilling, rotary drilling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115b1",
+            "title": "Sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115b2",
+            "title": "Soil Sampling- disturbed and undisturbed soil samples- representative and non-representative samples , chunk and tube samples,",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-advanced-geotechnical-investigation-02-module-2-sounding-methods",
+        "title": "Module 2: Sounding methods",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8115b4",
+            "title": "Sounding Methods",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cf56b5e963ba8115b4-q-1",
+                "year": "2024",
+                "question": "What is the main advantage of using a Piezocone (CPTU) over a standard Electric CPT?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba8115b4-q-2",
+                "year": "2024",
+                "question": "Explain the difference in the procedure and output between an SPT and a VST.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba8115b4-q-3",
+                "year": "2024",
+                "question": "List two advantages and two limitations of the Standard Penetration Test (SPT).",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cf56b5e963ba8115b5",
+            "title": "Standard Penetration Test- procedure, Factors influencing the SPT results and precautions to obtain reliable results– corrections to be applied to observed N values– correlations of N value with various engineering and index properties of soils-Field study from sites-Field visit and analysis of data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115b6",
+            "title": "Static cone penetration test-procedure-merits/drawbacks. Correlation of static CPT results with properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115b7",
+            "title": "Dynamic Cone penetration test-Procedure-merits/drawbacks-Critical comparison of SPT, Static CPT and dynamic CPT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115b8",
+            "title": "Plate load test –Procedure, uses, limitations-Design of foundation from the analysis of data",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-advanced-geotechnical-investigation-03-module-3-field-tests",
+        "title": "Module 3: Field tests",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8115ba",
+            "title": "Field Tests",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115bb",
+            "title": "Geophysical methods -Seismic refraction method- procedure,  use, limitations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115bc",
+            "title": "Electrical resistivity method-Electrical profiling and electrical sounding-procedure, uses, limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115bd",
+            "title": "Field tests – Pressure meter Test procedure, uses -limitations,              correlations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115be",
+            "title": "Pile load tests- Procedure- analysis of results of data",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-advanced-geotechnical-investigation-04-module-4-sampling-report-geosynthetics",
+        "title": "Module 4: Sampling report geosynthetics",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8115c0",
+            "title": "Sampling, Report & Geosynthetics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115c1",
+            "title": "Soil Sampling- disturbed and undisturbed soil samples- representative and non-representative samples, chunk and tube samples, Area ratio clearance, outside clearance-recovery ratio, Handling and transportation of sample, Types of samplers-Thin walled sampler, Piston sampler-Split spoon sampler. Methods for collection of sand samples from beneath the water table",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115c2",
+            "title": "Soil Investigation report",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115c3",
+            "title": "Presentation of soil exploration data – Bore log and soil profile.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115c4",
+            "title": "Geosynthetics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115c5",
+            "title": "Geosynthetics- Functions and applications from case studies – any field visit - Pavements, Embankments, Railways, Erosion control from Kerala state.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-air-and-noise-pollution-control-engineering",
+    "code": "PECET756",
+    "name": "AIR AND NOISE POLLUTION CONTROL ENGINEERING",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-air-and-noise-pollution-control-engineering-01-module-1-air-pollutants",
+        "title": "Module 1: Air pollutants",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811664",
+            "title": "Air pollutants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811665",
+            "title": "Sources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811666",
+            "title": "classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811667",
+            "title": "Combustion Processes and pollutant emission",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811668",
+            "title": "Effects on Health",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811669",
+            "title": "vegetation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81166a",
+            "title": "materials and atmosphere",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81166b",
+            "title": "Reactions of pollutants in the atmosphere and their effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81166c",
+            "title": "Smoke",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81166d",
+            "title": "smog and ozone layer disturbance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81166e",
+            "title": "Greenhouse effect",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-air-and-noise-pollution-control-engineering-02-module-2-air-sampling-and-pollution-measurement-methods",
+        "title": "Module 2: Air sampling and pollution measurement methods",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811670",
+            "title": "Air sampling and pollution measurement methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811671",
+            "title": "principles and instruments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811672",
+            "title": "ambient air quality and emission standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811673",
+            "title": "Air pollution indices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811674",
+            "title": "Air Act",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811675",
+            "title": "legislation and regulations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-air-and-noise-pollution-control-engineering-03-module-3-control-principles",
+        "title": "Module 3: Control principles",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811677",
+            "title": "Control principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811678",
+            "title": "Removal of gaseous pollutants by adsorption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811679",
+            "title": "absorption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81167a",
+            "title": "reaction and other methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81167b",
+            "title": "Particulate emission control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81167c",
+            "title": "settling chambers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81167d",
+            "title": "cyclone separation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81167e",
+            "title": "Wet collectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81167f",
+            "title": "fabric filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811680",
+            "title": "electrostatic precipitators and other removal methods like absorption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811681",
+            "title": "adsorption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811682",
+            "title": "precipitation etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811683",
+            "title": "Biological air pollution control technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811684",
+            "title": "Indoor air quality",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-air-and-noise-pollution-control-engineering-04-module-4-noise-pollution-basics-of-acoustics-and-specification-of-sound-sound-po",
+        "title": "Module 4: Noise pollution basics of acoustics and specification of sound sound po",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811686",
+            "title": "Noise pollution: Basics of acoustics and specification of sound; sound power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811687",
+            "title": "sound intensity and sound pressure levels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811688",
+            "title": "plane, point and line sources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811689",
+            "title": "multiple sources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81168a",
+            "title": "outdoor and indoor noise propagation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81168b",
+            "title": "psychoacoustics and noise criteria",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81168c",
+            "title": "effects of noise on health",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81168d",
+            "title": "annoyance rating schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81168e",
+            "title": "special",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81168f",
+            "title": "noise standards and limit values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811690",
+            "title": "noise instrumentation and monitoring procedure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811691",
+            "title": "Noise indices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811692",
+            "title": "Noise control methods",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-airport-planning-and-design",
+    "code": "PECET744",
+    "name": "AIRPORT PLANNING AND DESIGN",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-airport-planning-and-design-01-module-1-general",
+        "title": "Module 1: General",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114b4",
+            "title": "General - History, development, policy of air transport, aircrafts, aerodromes, air transport authorities, air transport activities, air craft characteristics, airport classifications as per ICAO.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114b5",
+            "title": "Regional planning - concepts and advantages, location and planning of airport as per ICAO and F.A.A. recommendations, airport Elements -airfield, terminal area, obstructions, approach zone, zoning laws, airport capacity, size and site selection, estimation of future air traffic, development of new airport, requirements of an ideal airport layout.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-airport-planning-and-design-02-module-2-runway-design",
+        "title": "Module 2: Runway design",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114b7",
+            "title": "Runway design - Wind rose and orientation of runway, wind coverage and crosswind component, factors affecting runway length, basic runway length, and corrections to runway length, runway configurations. threshold limits cross section of runway.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114b8",
+            "title": "Taxiway design  - Controlling factors, layout, exit taxiway, location and geometrics, holding apron, turn around facility.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114b9",
+            "title": "Aprons -locations, size, gate positions, aircraft parking configurations and parking systems, hanger-site selection, planning and design considerations, Fuel storage area, blast pads. wind direction indicator.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-airport-planning-and-design-03-module-3-landside-planning-terminal-area-elements-and-requirements-termina-conce",
+        "title": "Module 3: Landside planning terminal area elements and requirements termina conce",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114bb",
+            "title": "Landside Planning : Terminal area elements and requirements, Termina concepts & types, Passenger requirements at terminal building, space requirements-design peak hour demand, standards, location planning concepts of other landside elements.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114bc",
+            "title": "Airport Geometrics : Runway and taxiway geometric elements: Length, width, Safety Area, Grade & grade changes, Sight distance, Turning radius.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cf56b5e963ba8114bc-q-1",
+                "year": "2024",
+                "question": "What are the primary reasons for providing a safety area at the ends of a runway?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba8114bc-q-2",
+                "year": "2024",
+                "question": "List three key factors that influence the required length of a runway.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba8114bc-q-3",
+                "year": "2024",
+                "question": "Why is adequate sight distance crucial for taxiway design?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba8114bc-q-4",
+                "year": "2024",
+                "question": "An airport is planning to accommodate larger commercial jets like the Boeing 777. What geometric elements of the runways and taxiways would likely need to be increased compared to an airport primarily serving smaller regional aircraft?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cf56b5e963ba8114bd",
+            "title": "Grading and Drainage : Airport grading-importance - operations, airport drainage aims, functions, special characteristics, basic requirements, surface and subsurface drainage systems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-airport-planning-and-design-04-module-4-visual-aids-objectives-runway-marking-taxiway-marking-shoulder-marking-",
+        "title": "Module 4: Visual aids objectives runway marking taxiway marking shoulder marking ",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114bf",
+            "title": "Visual Aids : Objectives, Runway Marking, Taxiway Marking, Shoulder marking, Apron marking.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114c0",
+            "title": "Airport Lighting: Beacon, Obstruction lighting, Approach lighting, Runway lighting. Taxiway Lighting,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114c1",
+            "title": "Airfield Signage system: Runway and taxiway signages, Signing standards.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114c2",
+            "title": "Air traffic control: Air traffic control-objectives, rules, control system, control network-visual aids-landing information system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114c3",
+            "title": "Air Travel demand forecast: Macro & Micro Analysis (Intro only), Air field capacity: factors,  (Intro only).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-design-of-hydraulic-structures",
+    "code": "PECET755",
+    "name": "DESIGN OF HYDRAULIC STRUCTURES",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-design-of-hydraulic-structures-01-module-1-diversion-head-works",
+        "title": "Module 1: Diversion head works",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811702",
+            "title": "Diversion head works- layout and functions of components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811703",
+            "title": "Weir and barrage- Causes of failure of weirs on permeable soils - Bligh’s theory and Khosla’s theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811704",
+            "title": "Design of vertical drop weir",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811705",
+            "title": "Design of impervious floor of hydraulic structures by Khosla’s theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811706",
+            "title": "Cross drainage works-Types, selection of suitable type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811707",
+            "title": "Type of aqueducts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811708",
+            "title": "Regulation Works - Canal falls-necessity, classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811709",
+            "title": "Canal regulators- Regulator cum road bridge- Head regulators and cross regulators",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-design-of-hydraulic-structures-02-module-2-hydraulic-design-and-drawing-of-the-following-hydraulic-structures",
+        "title": "Module 2: Hydraulic design and drawing of the following hydraulic structures",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba81170b",
+            "title": "Hydraulic design   and Drawing of the following hydraulic structures:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81170c",
+            "title": "Tank sluice",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81170d",
+            "title": "Canal Fall (Trapezoidal Notch type)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81170e",
+            "title": "Syphon Aqueduct (Type III)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81170f",
+            "title": "Syphon Well Drop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811710",
+            "title": "Canal Regulator (Using Khosla’s Theory",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-design-of-hydraulic-structures-03-module-3-dams",
+        "title": "Module 3: Dams",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811712",
+            "title": "Dams-Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811713",
+            "title": "Gravity dam – selection of site- forces acting - stability analysis and modes of failure – Principal and shear stresses Problems - Elementary profile –limiting height of gravity dams high and low dams- Practical profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811714",
+            "title": "Functions of various components shafts, keys, water stops, and different types of galleries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811715",
+            "title": "Grouting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811716",
+            "title": "Instrumentation in dams (Concept only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-design-of-hydraulic-structures-04-module-4-earth-dams",
+        "title": "Module 4: Earth dams",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811718",
+            "title": "Earth dams-types, causes of failure and design criteria",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811719",
+            "title": "Arch dams- thin cylinder theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81171a",
+            "title": "Spillways-types-Ogee spillway profile",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81171b",
+            "title": "Energy dissipation- stilling basins-Indian standard Type I and Type II (description only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81171c",
+            "title": "Arch dams-types, methods for design (list only)-Thin cylinder theory",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-environmental-geotechnology",
+    "code": "PECET743",
+    "name": "ENVIRONMENTAL GEOTECHNOLOGY",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-environmental-geotechnology-01-module-1-scope-of-geoenvironmental-engineering",
+        "title": "Module 1: Scope of geoenvironmental engineering",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81149b",
+            "title": "Scope of geoenvironmental engineering - multiphase behaviour of soil – importance of soil physics, soil chemistry, hydrogeology, biological process-Geochemical Attenuation-Quantification of attenuation capacities-Laboratory evaluation, sequential batch-contact testing and Column percolation testing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81149c",
+            "title": "Soil-water-contaminant interaction and concepts of double layer –Change in properties of soil due to change in environment;- Atterberg limits, shear strength, volume change, and permeability.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-environmental-geotechnology-02-module-2-contaminant-transport-in-soil",
+        "title": "Module 2: Contaminant transport in soil",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81149e",
+            "title": "Contaminant transport in soil -Transport process- Advection, Diffusion, Dispersion and sorption-Fick’s equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81149f",
+            "title": "Characteristics of Municipal solid waste, Physical, Chemical and geotechnical characteristics-Identification of Hazardous and Non-Hazardous waste.- waste dump and its impact on environment-Regulatory requirement -Solid waste management rules (brief introduction only) –MOEF&CC Guidelines-duties of waste generator and local authority -Evolution of waste containment facilities and disposal practices – Site selection based on environmental impact assessment",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-environmental-geotechnology-03-module-3-landfill-types",
+        "title": "Module 3: Landfill types",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114a1",
+            "title": "Landfill Types-Landfill layout and capacity, Planning of landfills-Liner and Cover system, its components and its functions-natural clay liner- compacted clay liner selection of soil for barrier layer- Methods to find permeability of clay barrier layer -Primary and secondary leachate collection and removal systems -Gas Management, Gas extraction systems-passive and active system Closure and post closure monitoring system (brief introduction)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-environmental-geotechnology-04-module-4-application-of-geosynthetics-in-landfills",
+        "title": "Module 4: Application of geosynthetics in landfills",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114a3",
+            "title": "Application of geosynthetics in landfills-Geotextile, geomembrane, geosynthetic clay liners, Geocomposites. methodology of construction, testing and design aspects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114a4",
+            "title": "Contaminated site- Soil exploration at contaminated site (brief introduction)-risk assessment of contaminated site - remediation methods for soil and groundwater –selection and planning of remediation methods–in-situ/exitu remediation, bioremediation, thermal remediation, pump and treat method, phyto remediation and electrokinetic remediation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114a5",
+            "title": "Stability of landfill (brief introduction)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-environmental-health-and-safety",
+    "code": "OECET722",
+    "name": "ENVIRONMENTAL HEALTH AND SAFETY",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-environmental-health-and-safety-01-module-1-introduction-to-occupational-health-and-toxicology",
+        "title": "Module 1: Introduction to occupational health and toxicology",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba81176c",
+            "title": "Introduction to Occupational Health And Toxicology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81176d",
+            "title": "Safety at work – Socio – Economic reasons.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81176e",
+            "title": "Introduction to health and safety at various industries.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81176f",
+            "title": "occupational related diseases-Musculoskeletal disorders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811770",
+            "title": "hearing impairment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811771",
+            "title": "carcinogens",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811772",
+            "title": "silicosis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811773",
+            "title": "asbestosis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811774",
+            "title": "pneumoconiosis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811775",
+            "title": "Toxic materials and substances used in work",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811776",
+            "title": "exposure limits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811777",
+            "title": "toxicological investigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811778",
+            "title": "Industrial Hygiene",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811779",
+            "title": "Arrangements by organisations to protect the workers.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15d056b5e963ba811779-q-1",
+                "year": "2024",
+                "question": "Briefly explain the concept of the Hierarchy of Controls and list the five levels in order of effectiveness. Provide one example for each level.",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba811779-q-2",
+                "year": "2024",
+                "question": "Why is worker consultation important in an OHS management system? Name at least three benefits.",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba811779-q-3",
+                "year": "2024",
+                "question": "Identify the primary responsibility of an employer regarding occupational health and safety.",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba811779-q-4",
+                "year": "2024",
+                "question": "A company is experiencing frequent minor cuts and abrasions in its warehouse due to sharp edges on shelving units. Outline a risk assessment process for this scenario and suggest at least two control measures from different levels of the hierarchy.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ce-7-environmental-health-and-safety-02-module-2-chemical-hazards",
+        "title": "Module 2: Chemical hazards",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba81177b",
+            "title": "Chemical hazards - Dust, fumes, vapour, fog, gases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81177c",
+            "title": "Methods of Control.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81177d",
+            "title": "Biological hazards - Classification of Biohazardous agents– bacterial agents",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81177e",
+            "title": "viral agents",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81177f",
+            "title": "fungal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811780",
+            "title": "parasitic agents",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811781",
+            "title": "infectious diseases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811782",
+            "title": "control of biological agents at workplaces.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811783",
+            "title": "Noise, noise exposure regulation and control.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811784",
+            "title": "Radiation Hazards, Types and effects of radiation on human body",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811785",
+            "title": "disposal of radioactive waste.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-environmental-health-and-safety-03-module-3-safety-in-construction-industry",
+        "title": "Module 3: Safety in construction industry",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811787",
+            "title": "Safety in Construction industry  - Scaffolding and Working platform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811788",
+            "title": "Welding and Cutting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811789",
+            "title": "Excavation Work",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81178a",
+            "title": "Concreting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81178b",
+            "title": "control measures to reduce the risk.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81178c",
+            "title": "Electrical Hazards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81178d",
+            "title": "Protection against voltage fluctuations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81178e",
+            "title": "Effects of shock on human body.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-environmental-health-and-safety-04-module-4-safe-working-environment",
+        "title": "Module 4: Safe working environment",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811790",
+            "title": "Safe working environment  - The basic purpose and benefits of safety inspection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811791",
+            "title": "First-aid appliances",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811792",
+            "title": "shelters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811793",
+            "title": "rest rooms and lunch rooms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811794",
+            "title": "use of personal protective equipment",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15d056b5e963ba811794-q-1",
+                "year": "2024",
+                "question": "Why is PPE considered the \"last line of defense\" in the hierarchy of controls?",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba811794-q-2",
+                "year": "2024",
+                "question": "List at least three responsibilities of an employer regarding PPE.",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba811794-q-3",
+                "year": "2024",
+                "question": "What is the importance of fit testing for respiratory protection?",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba811794-q-4",
+                "year": "2024",
+                "question": "A worker is handling a corrosive chemical. Which type of glove material would be most appropriate, and why?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15d056b5e963ba811795",
+            "title": "Role of an individual in conservation of natural resources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811796",
+            "title": "Methods for controlling water pollution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811797",
+            "title": "role of individual in prevention of pollution.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-finance-for-engineering",
+    "code": "OECET725",
+    "name": "FINANCE FOR ENGINEERING",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-finance-for-engineering-01-module-1-introduction-to-book-keeping-and-accounting-accounting-process",
+        "title": "Module 1: Introduction to book keeping and accounting accounting process",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811821",
+            "title": "Introduction to Book keeping and Accounting –– Accounting Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811822",
+            "title": "Purpose of accounting – Classification of accounting – Generally Accepted Accounting Principles – Conventions and Concepts – Double entry system of accounting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811823",
+            "title": "Preparation of Journal, Ledger and Trial Balance. (Illustrative problem)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811824",
+            "title": "Introduction to financial statements – Preparation of Profit & Loss Account and Balance Sheet. (Simple problems)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-finance-for-engineering-02-module-2-rate-of-return-method-minimum-attractive-rate-of-return-marr",
+        "title": "Module 2: Rate of return method minimum attractive rate of return marr",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811826",
+            "title": "Rate of Return method – Minimum attractive rate of return (MARR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811827",
+            "title": "Internal Rate of Return (IRR) – Economic Decision Making using Incremental Rate of Return (IRoR) Analysis of public projects – Benefit cost analysis – applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811828",
+            "title": "Breakeven analysis – Fixed and variable cost – Total cost – Breakeven point and breakeven chart– Interpretation, limitations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-finance-for-engineering-03-module-3-working-capital-operating-cycle-working-capital-management-sources-of-f",
+        "title": "Module 3: Working capital operating cycle working capital management sources of f",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba81182a",
+            "title": "Working capital – Operating cycle – Working capital management – Sources of finance - long term and short term financing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81182b",
+            "title": "Financing of PPP projects – Sources of project finance – Providers of finance – Financial structure – Financial indicators – Special nature of infrastructure financing need.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-finance-for-engineering-04-module-4-construction-economics-definition-and-scope",
+        "title": "Module 4: Construction economics definition and scope",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba81182d",
+            "title": "Construction Economics – Definition and scope.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81182e",
+            "title": "Time value of money – Simple and Compound interest – Time value equivalence –Cash flow diagrams – Interest calculations – Compound interest factors – Interest tables.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81182f",
+            "title": "Evaluating alternatives by equivalence – Present worth comparison – Future worth comparison – Annual cost and worth comparison.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-finite-element-method",
+    "code": "PECET757",
+    "name": "FINITE ELEMENT METHOD",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-finite-element-method-01-module-1-general-introduction-introduction-to-boundary-value-problems",
+        "title": "Module 1: General introduction introduction to boundary value problems",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8116c5",
+            "title": "General Introduction –introduction to boundary value problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116c6",
+            "title": "approximate numerical solutions for solving differential equations",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15d056b5e963ba8116c6-q-1",
+                "year": "2024",
+                "question": "For the 1D BVP: $-\\frac{d^2u}{dx^2} = 0$ on $[0, 1]$ with $u(0)=1$ and $u(1)=2$.",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8116c6-q-2",
+                "year": "2024",
+                "question": "Explain why weak formulation is considered \"weaker\" than the original differential equation.",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8116c6-q-3",
+                "year": "2024",
+                "question": "Consider the BVP: $\\frac{du}{dx} = 2x$ for $x \\in [0, 2]$ with $u(0) = 0$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15d056b5e963ba8116c7",
+            "title": "least square method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116c8",
+            "title": "collocation method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116c9",
+            "title": "Galerkin method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116ca",
+            "title": "introduction to finite element method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116cb",
+            "title": "advantages and disadvantages.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-finite-element-method-02-module-2-brief-review-of-matrix-methods",
+        "title": "Module 2: Brief review of matrix methods",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8116cd",
+            "title": "Brief review of matrix methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116ce",
+            "title": "Direct stiffness method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116cf",
+            "title": "truss and beam element",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d0",
+            "title": "Coordinate transformation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d1",
+            "title": "global assembly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d2",
+            "title": "Estimation of element forces.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d3",
+            "title": "Interpolation and shape functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d4",
+            "title": "polynomial approximations for 1D and 2D  elements using Lagrange polynomials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d5",
+            "title": "CST, LST and bilinear rectangular elements",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-finite-element-method-03-module-3-formulation-techniques",
+        "title": "Module 3: Formulation techniques",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8116d7",
+            "title": "Formulation techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d8",
+            "title": "Variational approach and weighted residual approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116d9",
+            "title": "formulation of element equations for 1D bar element, 1D beam element and CST element.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116da",
+            "title": "Isoparametric, sub-parametric and super-parametric elements",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-finite-element-method-04-module-4-development-of-stiffness-matrix-for-bar-element-and-beam-element",
+        "title": "Module 4: Development of stiffness matrix for bar element and beam element",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8116dc",
+            "title": "Development of stiffness matrix for bar element and beam element",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116dd",
+            "title": "Introduction to higher order elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116de",
+            "title": "introduction to axisymmetric elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116df",
+            "title": "Numerical Integration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116e0",
+            "title": "Gauss quadrature.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8116e1",
+            "title": "Discussion of modelling and analysis using recent commercial finite element software packages",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-forensic-engineering",
+    "code": "OECET724",
+    "name": "FORENSIC ENGINEERING",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-forensic-engineering-01-module-1-introduction-to-forensic-engineering",
+        "title": "Module 1: Introduction to forensic engineering",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117e8",
+            "title": "Introduction to Forensic Engineering - Forensic Engineering – Definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117e9",
+            "title": "Investigation Pyramid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117ea",
+            "title": "Eyewitness Information",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117eb",
+            "title": "Role in Legal system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117ec",
+            "title": "Scientific Method – Applying scientific method in forensic engineering – engineer as expert witness – scientific methods and legal system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117ed",
+            "title": "Qualification of forensic engineer – Technical knowledge – oral and written communication – other skills – personality characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117ee",
+            "title": "Ethics and professional responsibilities",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-forensic-engineering-02-module-2-forensic-engineering-workflow-and-investigation-methods",
+        "title": "Module 2: Forensic engineering workflow and investigation methods",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117f0",
+            "title": "Forensic Engineering Workflow and Investigation Methods - Forensic Engineering Workflow-Team &planning-preliminary onsite investigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117f1",
+            "title": "Sampling-selection of sample-collection- packing-sealing of samples",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15d056b5e963ba8117f1-q-1",
+                "year": "2024",
+                "question": "Why is it important to use paper bags for certain types of evidence (like fibers) instead of plastic bags?",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8117f1-q-2",
+                "year": "2024",
+                "question": "What are the two critical components of sealing a sample that contribute to the chain of custody?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15d056b5e963ba8117f2",
+            "title": "Source and type of evidence - Paper documentation- digital documentation- electronic data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117f3",
+            "title": "Physical Evidence-Collection of photograph-cataloguing - Recognizing the Evidence-organizing Evidence Analysis –Reporting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117f4",
+            "title": "Investigation Methods- Cause and Causal mechanism analysis-Time and event sequence-STEP method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117f5",
+            "title": "Human Factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117f6",
+            "title": "Human errors - Analysis of Operative Instruction and working Procedures",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-forensic-engineering-03-module-3-physical-product-failure-analytical-methods",
+        "title": "Module 3: Physical product failure analytical methods",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117f8",
+            "title": "Physical Product Failure & Analytical Methods - Introduction to typical Forensic Engineering Tool box-NDT, Crack detection and human eye - Hardness testing- and Destructive testing Methods with case studies",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15d056b5e963ba8117f8-q-1",
+                "year": "2024",
+                "question": "A metal component fails after prolonged use. You suspect fatigue. Which NDT method would be most effective for identifying surface cracks that might have initiated the fatigue process?",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8117f8-q-2",
+                "year": "2024",
+                "question": "You are investigating the failure of a steel structural beam. You want to quickly assess the material's strength and its consistency. Which type of testing would be most appropriate?",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8117f8-q-3",
+                "year": "2024",
+                "question": "Explain the fundamental difference between Non-Destructive Testing (NDT) and Destructive Testing (DT) in the context of forensic engineering. Why is it often preferable to use NDT methods first?",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8117f8-q-4",
+                "year": "2024",
+                "question": "Describe the basic principle of Magnetic Particle Testing (MT) and what types of materials it is suitable for.",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8117f8-q-5",
+                "year": "2024",
+                "question": "A bridge cable made of steel wires shows signs of corrosion. You want to assess if the corrosion has significantly reduced the load-carrying capacity of the individual wires. Which destructive testing method would be most informative?",
+                "marks": 3
+              },
+              {
+                "id": "689f15d056b5e963ba8117f8-q-6",
+                "year": "2024",
+                "question": "Imagine you are examining a fractured engine piston made of aluminum alloy. You observe a rough fracture surface. What could metallography and microstructural analysis reveal about the failure?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15d056b5e963ba8117f9",
+            "title": "Indirect stress strain Analysis-Brittle lacquer technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117fa",
+            "title": "Contact Radiography-Metallography-EDAX method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117fb",
+            "title": "Forensic Optical Microscopy-Examination- Magnification-USB Microscopy -Wifi Enabled microscopy -Reflected microscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117fc",
+            "title": "Novel Tools and System -Contour Method-Flash Thermography",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117fd",
+            "title": "Thermographic signal reconstruction (TSR)- Electromagnetically induced acoustic Emission (EMAE)-Pulsed Eddy Current (PEA)-Theory only",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-forensic-engineering-04-module-4-engineer-in-the-court-room-criminal-cases",
+        "title": "Module 4: Engineer in the court room criminal cases",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117ff",
+            "title": "Engineer in the Court room & Criminal Cases - Role of an Engineering Expert-Report-pre trial meetings-Alternative dispute resolution-Single joint expert",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811800",
+            "title": "Engineer in the court room",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811801",
+            "title": "Criminal Cases-Introduction-Counterfeit coins-fraudulent road accidents-Fraudulent Insurance claims",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811802",
+            "title": "Cyber Crimes and Cases- SIM Swapping -ATM Cloning-Microsoft Internal Spam- Intellectual property cases",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-formwork-engineering",
+    "code": "PECET742",
+    "name": "FORMWORK ENGINEERING",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-formwork-engineering-01-module-1-introduction-to-formwork-engineering",
+        "title": "Module 1: Introduction to formwork engineering",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811434",
+            "title": "Introduction to Formwork Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811435",
+            "title": "Definition and importance of formwork",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811436",
+            "title": "Historical development of formwork systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811437",
+            "title": "Formwork Materials : Timber, steel, aluminum, and plastic formwork",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811438",
+            "title": "Properties and selection criteria",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811439",
+            "title": "Advantages and disadvantages of different materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81143a",
+            "title": "Modern Formwork Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81143b",
+            "title": "Modular, prefabricated, and reusable formwork",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81143c",
+            "title": "Advancements in formwork materials and technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81143d",
+            "title": "Environmental Considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81143e",
+            "title": "Sustainable formwork practices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81143f",
+            "title": "Reducing waste and recycling materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811440",
+            "title": "Environmental impact assessment",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-formwork-engineering-02-module-2-basic-principles-of-formwork-design",
+        "title": "Module 2: Basic principles of formwork design",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811442",
+            "title": "Basic Principles of Formwork Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811443",
+            "title": "Load considerations and calculations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811444",
+            "title": "Structural analysis of formwork systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811445",
+            "title": "Formwork for Different Concrete Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811446",
+            "title": "Foundations, walls, columns, beams, and slabs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811447",
+            "title": "Special considerations for high-rise buildings and bridges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811448",
+            "title": "Formwork for architectural concrete",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cf56b5e963ba811448-q-1",
+                "year": "2024",
+                "question": "What is the primary difference in requirements between formwork for structural concrete and formwork for architectural concrete?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811448-q-2",
+                "year": "2024",
+                "question": "You are designing formwork for a building facade that features a smooth, polished concrete finish. Which form lining material would be most appropriate and why?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811448-q-3",
+                "year": "2024",
+                "question": "What are the potential problems associated with tie rod holes in architectural concrete, and how can they be mitigated?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811448-q-4",
+                "year": "2024",
+                "question": "Explain the role of specialty form liners in achieving specific architectural concrete finishes. Provide an example.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811448-q-5",
+                "year": "2024",
+                "question": "Why is controlled vibration important when pouring architectural concrete, and what can happen if vibration is excessive?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cf56b5e963ba811449",
+            "title": "Assembling and Dismantling Formwork",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81144a",
+            "title": "Erection and alignment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81144b",
+            "title": "Shoring and reshoring practices",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-formwork-engineering-03-module-3-formwork-safety",
+        "title": "Module 3: Formwork safety",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81144d",
+            "title": "Formwork Safety",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81144e",
+            "title": "Safety regulations and standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81144f",
+            "title": "Common hazards and risk management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811450",
+            "title": "Inspection and maintenance of formwork systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811451",
+            "title": "Formwork Quality Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811452",
+            "title": "Ensuring accuracy and quality in construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811453",
+            "title": "Testing and inspection methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811454",
+            "title": "Quality assurance protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811455",
+            "title": "Case Studies and Practical Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811456",
+            "title": "Analysis of real-world formwork projects",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cf56b5e963ba811456-q-1",
+                "year": "2024",
+                "question": "List at least three reasons why safety is paramount in formwork engineering, beyond just avoiding injuries.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811456-q-2",
+                "year": "2024",
+                "question": "A formwork collapse occurred during concrete pouring on a high-rise building. Investigations revealed that the vertical shores were not adequately braced against lateral movement. Which learning outcome does this scenario primarily relate to, and what is a likely contributing factor?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811456-q-3",
+                "year": "2024",
+                "question": "Describe one safety measure that should be implemented during the \"stripping and dismantling\" phase of formwork and explain its importance.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811456-q-4",
+                "year": "2024",
+                "question": "Imagine you are a site supervisor. You notice a team of workers installing formwork for a large beam. They are using a few pieces of timber that appear to be cracked. What is the immediate action you should take based on the principles of formwork safety?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811456-q-5",
+                "year": "2024",
+                "question": "How can analyzing real-world formwork project failures contribute to improving safety protocols in future projects?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cf56b5e963ba811457",
+            "title": "Lessons learned from successful and failed systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811458",
+            "title": "Guest lectures from industry professionals",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-formwork-engineering-04-module-4-project-planning-and-management",
+        "title": "Module 4: Project planning and management",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81145a",
+            "title": "Project Planning and Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81145b",
+            "title": "Estimating formwork costs and labor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81145c",
+            "title": "Scheduling and sequencing operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81145d",
+            "title": "Project management tools and techniques",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cf56b5e963ba81145d-q-1",
+                "year": "2024",
+                "question": "Define the Critical Path Method (CPM) and explain its significance in formwork engineering projects. Provide an example of a formwork activity that is likely to be on the critical path.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba81145d-q-2",
+                "year": "2024",
+                "question": "What is Earned Value Management (EVM), and why is it a valuable tool for monitoring the performance of formwork activities? Calculate the Schedule Variance (SV) and Cost Variance (CV) given the following data:",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba81145d-q-3",
+                "year": "2024",
+                "question": "Identify two key technological advancements that have significantly improved formwork project management and explain their specific benefits.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba81145d-q-4",
+                "year": "2024",
+                "question": "You discover that a critical formwork element has been fabricated with incorrect dimensions. Which project management process would you initiate, and what are the essential steps involved?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cf56b5e963ba81145e",
+            "title": "Formwork in Special Conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81145f",
+            "title": "Extreme weather conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811460",
+            "title": "Underwater formwork",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811461",
+            "title": "Unusual shapes and complex geometries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811462",
+            "title": "Formwork for Repair and Rehabilitation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811463",
+            "title": "Techniques for concrete repair works",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cf56b5e963ba811463-q-1",
+                "year": "2024",
+                "question": "Differentiate between epoxy injection and cementitious grouting for crack repair. When would you choose one over the other?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba811463-q-2",
+                "year": "2024",
+                "question": "What are the critical factors to consider when selecting a repair material for concrete?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15cf56b5e963ba811464",
+            "title": "Strengthening and retrofitting existing structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811465",
+            "title": "Case studies of rehabilitation projects",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-ground-water-engineering",
+    "code": "PECET751",
+    "name": "GROUND WATER ENGINEERING",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-ground-water-engineering-01-module-1-vertical-distribution-of-groundwater",
+        "title": "Module 1: Vertical distribution of groundwater",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811530",
+            "title": "Vertical distribution of groundwater- Types of geologic formations, aquifer and their types, Properties of aquifer related to storage and transmissivity of water, Darcy’s law (Review)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811531",
+            "title": "Steady unidirectional flow- steady flow in a homogenous aquifer- aquifer with recharge- flow into infiltration galleries. (Problems from unidirectional flow)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811532",
+            "title": "Evaluation of aquifer parameters by Theis, Jacob’s and Chow’s method. (Problems from evaluation of aquifer parameters)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-ground-water-engineering-02-module-2-modelling-of-ground-water-flow",
+        "title": "Module 2: Modelling of ground water flow",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811534",
+            "title": "Modelling of ground water flow- governing equations of ground water flow and boundary conditions (basic ideas only), solution of partial differential equation of ground water flow for 1D steady ground water flow in homogenous aquifers (confined and unconfined) using finite difference method (uniform mesh interval only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811535",
+            "title": "Partial differential equation governing unsteady groundwater flow- unsteady radial flow towards well.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-ground-water-engineering-03-module-3-well-hydraulics",
+        "title": "Module 3: Well hydraulics",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811537",
+            "title": "Well hydraulics -Well flow near aquifer boundaries- Image well system. Method of images- Practical cases (Problems from method of images)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811538",
+            "title": "Method of constructing shallow wells- Method of constructing shallow wells -cable tool method, rotary method and reverse rotary method-well completion-design of gravel packed well-well development-different methods, well rehabilitation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-ground-water-engineering-04-module-4-surface-investigation-of-groundwater",
+        "title": "Module 4: Surface investigation of groundwater",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81153a",
+            "title": "Surface investigation of groundwater- different methods-electrical resistivity method, seismic refraction method- determination of aquifer thickness of horizontal aquifers (Problems from resistivity method, seismic refraction)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81153b",
+            "title": "Groundwater Contamination, Quality of Ground Water- Graphical Representations. Reducing Groundwater Contamination.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81153c",
+            "title": "Sea water intrusion- Ghyben-Herzberg equation, sea water-fresh water interface, length of intrusion, upconing, preventive measures.( Problems from sea water intrusion)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-highway-materials-and-design",
+    "code": "PECET746",
+    "name": "HIGHWAY MATERIALS AND DESIGN",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-highway-materials-and-design-01-module-1-pavements-and-materials-desirable-properties-and-testing-of-materials",
+        "title": "Module 1: Pavements and materials desirable properties and testing of materials",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114d7",
+            "title": "Pavements and materials: Desirable properties and testing of materials:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114d8",
+            "title": "Introduction to highway pavements-Flexible and rigid pavements- component parts - Functions and significance of layers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114d9",
+            "title": "Pavement Materials – Desirable properties, principle and procedure of tests for assessment of subgrade soil,  road aggregates and bitumen.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-highway-materials-and-design-02-module-2-bituminous-mixes-requirements-and-design-materials-for-durable-pavement",
+        "title": "Module 2: Bituminous mixes requirements and design materials for durable pavement",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114db",
+            "title": "Bituminous mixes requirements and design:  Materials for durable pavements- Artificial aggregates, types of binders, -emulsions, cut backs and modified binders-grading, characteristics and uses.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114dc",
+            "title": "Aging of bitumen and aging tests.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114dd",
+            "title": "Requirements of bituminous mixes, Specifications for bituminous pavement layers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114de",
+            "title": "Grading of aggregates, design of bituminous mixes using Marshall Method.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-highway-materials-and-design-03-module-3-design-of-flexible-pavements-introduction-to-analysis-and-design-of-fle",
+        "title": "Module 3: Design of flexible pavements introduction to analysis and design of fle",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114e0",
+            "title": "Design of flexible pavements: Introduction to analysis and design of flexible pavements: Factors affecting design and performance of pavements, ESWL of multiple wheels, Repeated loads and EWL factors, stresses and deflections in homogeneous masses and layered system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114e1",
+            "title": "Design of flexible pavements: Empirical, semi - empirical and theoretical approaches for flexible pavement design- Design of pavement using CBR method, Triaxial method, Burmister’s two-layer theory and IRC method.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-highway-materials-and-design-04-module-4-design-of-rigid-pavements-introduction-to-analysis-and-design-of-rigid-",
+        "title": "Module 4: Design of rigid pavements introduction to analysis and design of rigid ",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114e3",
+            "title": "Design of rigid pavements: Introduction to analysis and design of rigid pavements: Types of stresses -wheel load stress, warping stress, frictional stress and critical combination of stresses, Westergaard’s Analysis.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114e4",
+            "title": "Joints in cement concrete pavements: Types of joints and functions, Joint spacings, design of tie bar and dowel bar using IRC method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114e5",
+            "title": "Design of slab thickness- IRC methods of design of cement concrete slab.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-intelligent-transportation-systems",
+    "code": "OECET721",
+    "name": "INTELLIGENT TRANSPORTATION SYSTEMS",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-intelligent-transportation-systems-01-module-1-introduction-to-intelligent-transportation-systems",
+        "title": "Module 1: Introduction to intelligent transportation systems",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba81173b",
+            "title": "Introduction to Intelligent Transportation Systems:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81173c",
+            "title": "Basics of ITS:  History of ITS, Urbanisation and motorisation, Transport system characteristics and problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81173d",
+            "title": "ITS- components, importance, need, challenges.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81173e",
+            "title": "ITS initiatives in India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81173f",
+            "title": "Understanding ITS:  Functionalities required for user service, ITS architecture, ITS technology building blocks (introduction only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-intelligent-transportation-systems-02-module-2-traffic-management-and-its-traffic-management-objectives-measures-appli",
+        "title": "Module 2: Traffic management and its traffic management objectives measures appli",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811741",
+            "title": "Traffic management and ITS: Traffic management – objectives, measures, application of ITS for traffic management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811742",
+            "title": "ITS user services and applications: (introduction only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811743",
+            "title": "ATIS advanced traveller information system- Introduction, Functional areas, components.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811744",
+            "title": "AVCS-advanced vehicle control system, APTS- advanced public transportation system, CVOS-commercial vehicle operation system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811745",
+            "title": "Application of ITS- Emergency management- objectives, components, benefits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811746",
+            "title": "Electronic toll collection- objectives, components.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811747",
+            "title": "Fleet management and operations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-intelligent-transportation-systems-03-module-3-transport-demand-management-and-its-introduction-application-of-its-for",
+        "title": "Module 3: Transport demand management and its introduction application of its for",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba811749",
+            "title": "Transport Demand management and ITS : Introduction, Application of ITS for TDM- Promotion of Public transport, Road pricing, parking management, High occupancy lanes, Bicycle rentals, carpooling, integrated fare, traffic rule enforcement, Incentive schemes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81174a",
+            "title": "Use of GPS and GIS in ITS : Introduction to GPS and GIS, Automatic vehicle location and identification, real time passenger information, GSM Technologies.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-intelligent-transportation-systems-04-module-4-automated-highway-systems",
+        "title": "Module 4: Automated highway systems",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba81174c",
+            "title": "Automated Highway systems :",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81174d",
+            "title": "AHS: Introduction, Concepts and technologies of AHS, Connected vehicle system, Vehicle automation, Benefits, goals, challenges with AHS.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81174e",
+            "title": "Sensing Technologies : In vehicle- categories, examples, Issues, In road- intrusive, non-intrusive, application, uses.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba81174f",
+            "title": "Smart Roads : concepts and technologies, smart street lights, smart intersection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811750",
+            "title": "Self driving car : Technology, examples",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba811751",
+            "title": "ITS case studies : world examples, Indian examples.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-pavement-design-and-construction",
+    "code": "PECET745",
+    "name": "PAVEMENT DESIGN AND CONSTRUCTION",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-pavement-design-and-construction-01-module-1-pavement-functions-and-characteristics",
+        "title": "Module 1: Pavement functions and characteristics",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811513",
+            "title": "Pavement: Functions and characteristics - types of pavement: flexible pavement, rigid pavement, comparison - Different layers of flexible and rigid pavement, functions and characteristics of layers.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811514",
+            "title": "Pavement materials:  Properties of  aggregates, bitumen and subgrade soil.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811515",
+            "title": "Requirements and tests on aggregates, bitumen and subgrade soil (CBR value). Types of bitumen and uses, bituminous emulsion and cutback.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811516",
+            "title": "Methods of grading of bitumen.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-pavement-design-and-construction-02-module-2-bituminous-pavement-types-penetration-layer-system-and-premixed-system",
+        "title": "Module 2: Bituminous pavement types penetration layer system and premixed system",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811518",
+            "title": "Bituminous pavement types: Penetration layer system and premixed system- Types and specification of materials used. Special types of bituminous layers (stone mastic asphalt and mastic asphalt).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811519",
+            "title": "Mix design : physical and volumetric properties of bituminous mix, Marshall method of mix design, Super pave mix design.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-pavement-design-and-construction-03-module-3-construction-of-flexible-pavement",
+        "title": "Module 3: Construction of flexible pavement",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81151b",
+            "title": "Construction of Flexible Pavement-  Construction steps, equipment used and quality control checks of subgrade, granular sub base (GSB),WBM, WMM, Bituminous Macadam and Bituminous Concrete layers of flexible pavement.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81151c",
+            "title": "Construction of Cement concrete pavement: material characterization, preparation of subgrade and base,  presetting reinforcement in joints and PCC slab construction. Methods of construction of concrete pavements.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-pavement-design-and-construction-04-module-4-introduction-to-pavement-evaluation",
+        "title": "Module 4: Introduction to pavement evaluation",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81151e",
+            "title": "Introduction to Pavement Evaluation- Structural and functional requirements of pavements. Functional evaluation of pavements- pavement condition survey, pavement distress rating indices,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81151f",
+            "title": "Structural evaluation of flexible pavements by Benkelman Beam Deflection technique.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-railway-port-and-harbor-engineering",
+    "code": "PECET754",
+    "name": "RAILWAY, PORT AND HARBOR ENGINEERING",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-railway-port-and-harbor-engineering-01-module-1-role-of-railways-in-the-development-of-a-nation",
+        "title": "Module 1: Role of railways in the development of a nation",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8115e5",
+            "title": "Role of Railways in the development of a Nation- Development of railways in India-Track Alignment - Basic requirements- Factors in selection of suitable alignment-Surveys for track alignment- Permanent way and Railway track components- Functions of various  components - Rails",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115e6",
+            "title": "Sleepers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115e7",
+            "title": "Ballast",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115e8",
+            "title": "Rails - types of rails",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115e9",
+            "title": "rail sections- defects in rails",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ea",
+            "title": "creep of rails",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115eb",
+            "title": "theories- Measurement of creep- Prevention of creep",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ec",
+            "title": "Rail fixtures and fastenings ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ed",
+            "title": "rail joints and welding of rails ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ee",
+            "title": "Sleepers – types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ef",
+            "title": "spacing and density",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f0",
+            "title": "Ballast – types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f1",
+            "title": "advantages and disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f2",
+            "title": "Subgrade  – Functions- Material and its improvement (brief description only) - Concept of Gauges- Selection of Gauge-Uniformity of gauge . Coning of wheels-Theory of coning- advantages and disadvantages.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-railway-port-and-harbor-engineering-02-module-2-geometric-design-of-track-gradients",
+        "title": "Module 2: Geometric design of track gradients",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8115f4",
+            "title": "Geometric design of track : gradients",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f5",
+            "title": "grade compensation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f6",
+            "title": "speed of trains on curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f7",
+            "title": "super elevation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f8",
+            "title": "cant deficiency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115f9",
+            "title": "negative super elevation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115fa",
+            "title": "curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115fb",
+            "title": "types (brief description)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115fc",
+            "title": "necessity of providing transition curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115fd",
+            "title": "length of transition curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115fe",
+            "title": "widening on curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8115ff",
+            "title": "Points and crossings -Necessity – Turnout- components- Crossings- Components- Design features of turnout- Types of Track Junctions -Construction of Railway Track - Earthwork and consolidation- Plate laying- Laying of ballast.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-railway-port-and-harbor-engineering-03-module-3-water-transportation-advantages-and-disadvantages",
+        "title": "Module 3: Water transportation advantages and disadvantages",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811601",
+            "title": "Water Transportation : Advantages and disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811602",
+            "title": "Harbours - Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811603",
+            "title": "requirements and characteristics of good harbour",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811604",
+            "title": "principles of harbour planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811605",
+            "title": "site selection- Layout of harbour-Shape of harbour",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811606",
+            "title": "harbour depth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811607",
+            "title": "Ship characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811608",
+            "title": "Effects of natural phenomena on marine structures - Tides",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811609",
+            "title": "Wind",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81160a",
+            "title": "Water waves Littoral drift",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81160b",
+            "title": "Marine Structure - General design aspects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81160c",
+            "title": "Breakwaters - function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81160d",
+            "title": "types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81160e",
+            "title": "general design principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81160f",
+            "title": "construction methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811610",
+            "title": "Wharves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811611",
+            "title": "Quays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811612",
+            "title": "Jetties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811613",
+            "title": "Piers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811614",
+            "title": "Pier heads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811615",
+            "title": "Dolphin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811616",
+            "title": "Fenders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811617",
+            "title": "Mooring Accessories.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-railway-port-and-harbor-engineering-04-module-4-navigational-aids",
+        "title": "Module 4: Navigational aids",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811619",
+            "title": "Navigational Aids - Necessity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81161a",
+            "title": "Types of navigation aids",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81161b",
+            "title": "Requirement of signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81161c",
+            "title": "Fixed and floating navigation aid- Docking and Repair Facilities - wet dock",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81161d",
+            "title": "classification-different types-design considerations- operation of lock gates and passage- Dry dock- Graving dry dock- design aspects- floating dry dock- design aspects- Port Facilities- Port building facilities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81161e",
+            "title": "Transit sheds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81161f",
+            "title": "Warehouses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811620",
+            "title": "Cargo handling facility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811621",
+            "title": "Services for shipping terminals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811622",
+            "title": "Inland port facilities planning.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-river-engineering",
+    "code": "PECET747",
+    "name": "RIVER ENGINEERING",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-river-engineering-01-module-1-introduction-river-morphology",
+        "title": "Module 1: Introduction river morphology",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114f8",
+            "title": "Introduction – river morphology- classification of rivers - systems of stream classification.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114f9",
+            "title": "Behaviour of rivers, channel geometry, effects of long contraction.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114fa",
+            "title": "Super critical flow, Stream profiles and bed material bank erosion, degradation, aggradation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8114fb",
+            "title": "River basin management plans, inter basin river water transfers and river water disputes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-river-engineering-02-module-2-river-training-works-classification-of-river-training-works",
+        "title": "Module 2: River training works classification of river training works",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114fd",
+            "title": "River training works – classification of river training works-objectives - methods – planning – design parameters-embankment as river training works-  design of guide banks- artificial cut off– pitched island – river diversions -  examples of river training works.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-river-engineering-03-module-3-properties-of-the-sediment-settling-velocity",
+        "title": "Module 3: Properties of the sediment settling velocity",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8114ff",
+            "title": "Properties of the sediment settling velocity, - incipient motion critical tractive force, empirical equations- scour criteria, Shield’s analysis –White’s analysis Regimes of flow and resistance;",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811500",
+            "title": "Bed form mechanics design of stable channels – Garret’s method Bed load transport and its estimation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-river-engineering-04-module-4-suspended-load-transport-diffusion-in-turbulent-flow-differential-equat",
+        "title": "Module 4: Suspended load transport diffusion in turbulent flow differential equat",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811502",
+            "title": "Suspended load transport, Diffusion in turbulent flow, differential equation for suspension of sediment, estimation of suspended load,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811503",
+            "title": "Sediment samplers – bed load samplers – suspended load samplers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-structural-dynamics",
+    "code": "PECET741",
+    "name": "STRUCTURAL DYNAMICS",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-structural-dynamics-01-module-1-introduction-classification-of-dynamic-loads-essential-characteristics-",
+        "title": "Module 1: Introduction classification of dynamic loads essential characteristics ",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811415",
+            "title": "Introduction  – Classification of dynamic loads – essential characteristics of a dynamic problem – methods of discretization– single degree of freedom systems – basic components of a dynamic system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811416",
+            "title": "Formulation of equation of motion – Newton’s 2nd law and D’ Alembert’s principle; influence of gravitational forces – generalized SDOF systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811417",
+            "title": "Solution of the equation of motion – undamped free vibration – damped free vibration- critically damped under damped and over damped SDOF systems, Logarithmic decrement.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-structural-dynamics-02-module-2-response-to-harmonic-loading-steady-state-and-transient-states-steady-s",
+        "title": "Module 2: Response to harmonic loading steady state and transient states steady s",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811419",
+            "title": "Response to harmonic loading  – steady state and transient states steady sate amplitude, Dynamic magnification factor, force transmissibility and vibration isolation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81141a",
+            "title": "Response to periodic loading – Fourier series representation of periodic loads in time domain. Response of SDOF systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81141b",
+            "title": "Response to impulse loading  – half-sine, rectangular and triangular pulses",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15cf56b5e963ba81141b-q-1",
+                "year": "2024",
+                "question": "A single-degree-of-freedom system with mass $m = 1000$ kg and stiffness $k = 50000$ N/m is subjected to harmonic force $F(t) = 500 \\sin(5t)$ N.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba81141b-q-2",
+                "year": "2024",
+                "question": "A structure has a natural frequency of 10 Hz and a damping ratio of $\\zeta = 0.02$. If it's subjected to harmonic excitation at 9.5 Hz, what is the Dynamic Magnification Factor (DMF)?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba81141b-q-3",
+                "year": "2024",
+                "question": "An engine operating at 3000 RPM is mounted on a flexible support with a natural frequency of 500 RPM. The damping ratio of the support is 0.05. Calculate the Force Transmissibility (FT). Is this system suitable for vibration isolation?",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba81141b-q-4",
+                "year": "2024",
+                "question": "An undamped SDOF system with $m=2$ kg and $k=18$ N/m is subjected to an impulse of $I = 6$ N-s at $t=0$.",
+                "marks": 3
+              },
+              {
+                "id": "689f15cf56b5e963ba81141b-q-5",
+                "year": "2024",
+                "question": "A mass of 5 kg is subjected to a rectangular impulse force of 100 N acting for 0.1 seconds. The system is undamped with a natural frequency of 2 Hz.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ce-7-structural-dynamics-03-module-3-response-to-general-loading-duhamel-integral-damped-and-undamped-system",
+        "title": "Module 3: Response to general loading duhamel integral damped and undamped system",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81141d",
+            "title": "Response to general loading  – Duhamel Integral, damped and undamped systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81141e",
+            "title": "Multi degree of freedom systems – Lumped mass systems, shear building frame, Equation of motion.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81141f",
+            "title": "Free vibration analysis: Natural frequencies and mode shapes, orthogonality of normal mode s.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-structural-dynamics-04-module-4-approximate-methods-rayleighs-method-dunkarleys-method-stodolas-method",
+        "title": "Module 4: Approximate methods rayleighs method dunkarleys method stodolas method",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811421",
+            "title": "Approximate methods : Rayleigh’s method Dunkarley’s method, Stodola’s method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811422",
+            "title": "Distributed mass (continuous) systems  – differential equation of motion – Axial vibration of rods. Flexural vibration of beams, natural frequencies and mode shapes of simply supported beam. Evaluation of frequencies and mode shapes of cantilever beam and fixed beam (formulation only).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-sustainable-construction-practices",
+    "code": "PECET752",
+    "name": "SUSTAINABLE CONSTRUCTION PRACTICES",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-sustainable-construction-practices-01-module-1-introduction-to-sustainable-practices-building-life-cycle",
+        "title": "Module 1: Introduction to sustainable practices building life cycle",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81154d",
+            "title": "Introduction to sustainable practices : Building life cycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81154e",
+            "title": "resource use in the built environment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81154f",
+            "title": "major environmental issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811550",
+            "title": "three dimensions of sustainability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811551",
+            "title": "environment, economy and social aspects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811552",
+            "title": "construction ecology and principles of green engineering.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811553",
+            "title": "Indoor Environmental Quality : Day lighting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811554",
+            "title": "air ventilation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811555",
+            "title": "exhaust systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811556",
+            "title": "low VOC paints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811557",
+            "title": "materials & adhesives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811558",
+            "title": "building acoustics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811559",
+            "title": "Codes related to green buildings: NBC, ECBC, ASHRAE, UPC, etc.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-sustainable-construction-practices-02-module-2-energy-efficiency-environmental-impact-of-building-constructions",
+        "title": "Module 2: Energy efficiency environmental impact of building constructions",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81155b",
+            "title": "Energy Efficiency : Environmental impact of building constructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81155c",
+            "title": "Concepts of embodied energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81155d",
+            "title": "operational energy and life cycle energy.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81155e",
+            "title": "Methods to reduce operational energy : Energy efficient building envelopes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81155f",
+            "title": "Solar Heat Gain Coefficient",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811560",
+            "title": "U-Values for facade materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811561",
+            "title": "efficient lighting technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811562",
+            "title": "energy efficient and BEE rated appliances for heating and air-conditioning systems in buildings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811563",
+            "title": "zero ozone depleting potential (ODP) materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811564",
+            "title": "wind and solar energy harvesting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811565",
+            "title": "energy metering and monitoring",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811566",
+            "title": "concept of NET ZERO buildings.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-sustainable-construction-practices-03-module-3-water-conservation-and-efficiency-rainwater-harvesting-methods-for-roof",
+        "title": "Module 3: Water conservation and efficiency rainwater harvesting methods for roof",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811568",
+            "title": "Water conservation and efficiency : Rainwater harvesting methods for roof & non-roof",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811569",
+            "title": "reducing landscape water demand by proper irrigation systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81156a",
+            "title": "water efficient plumbing systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81156b",
+            "title": "water metering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81156c",
+            "title": "waste water treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81156d",
+            "title": "recycle and reuse systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81156e",
+            "title": "Waste Management : Handling of construction & demolition waste materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81156f",
+            "title": "separation of household waste",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811570",
+            "title": "handling e-waste",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811571",
+            "title": "on-site and off-site organic waste management",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-sustainable-construction-practices-04-module-4-introduction-to-green-buildings-definition-of-green-buildings",
+        "title": "Module 4: Introduction to green buildings definition of green buildings",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811573",
+            "title": "Introduction to Green Buildings : Definition of green buildings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811574",
+            "title": "definition of sustainability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811575",
+            "title": "typical features of green buildings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811576",
+            "title": "benefits of green buildings towards sustainable development.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811577",
+            "title": "Green building rating systems – GRIHA, IGBC and LEED",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811578",
+            "title": "overview of the criteria as per these rating systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811579",
+            "title": "Case studies.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-7-watershed-conservation-and-mangement",
+    "code": "OECET723",
+    "name": "WATERSHED CONSERVATION AND MANGEMENT",
+    "branchId": "ce",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "ce-7-watershed-conservation-and-mangement-01-module-1-introduction-to-watershed-management-definition-and-importance-of-water",
+        "title": "Module 1: Introduction to watershed management definition and importance of water",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117c7",
+            "title": "Introduction to Watershed Management:  Definition and importance of watersheds - Watershed functions and processes -Watershed management objectives and principles- Integrated and multidisciplinary approach for watershed management.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117c8",
+            "title": "Hydrological Cycle and Watershed Characteristics: Components of the hydrological cycle - Watershed characteristics (size, shape, slope, drainage pattern -Hydrological processes in watersheds (precipitation, infiltration, runoff)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117c9",
+            "title": "Importance of Watershed Properties: Effect of Physical Properties, Effect of Geomorphologic Factors & Associated Processes",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-watershed-conservation-and-mangement-02-module-2-soil-and-water-conservation-techniques-soil-erosion",
+        "title": "Module 2: Soil and water conservation techniques soil erosion",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117cb",
+            "title": "Soil and Water Conservation Techniques : Soil erosion- types, causes, and effects, Soil conservation methods (contour plowing, terracing, strip cropping), Water conservation techniques (rainwater harvesting, check dams, recharge pits)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117cc",
+            "title": "Role of Vegetation in Watershed Management : Importance of vegetation in soil and water conservation - Types of vegetation and their roles in watershed health - Afforestation and reforestation practices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117cd",
+            "title": "Drought management - Drought assessment, Drought analysis- Drought mitigation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-watershed-conservation-and-mangement-03-module-3-watershed-management-planning-and-implementation-steps-in-watershed-man",
+        "title": "Module 3: Watershed management planning and implementation steps in watershed man",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117cf",
+            "title": "Watershed Management Planning and Implementation:  Steps in watershed management planning - Community involvement in watershed management - Case studies of successful watershed management projects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117d0",
+            "title": "Environmental and Socio-Economic Considerations: Environmental impact assessment of watershed projects - Social and economic benefits of watershed management - Policy and legal frameworks for watershed management - Watershed management for conservation of resources and enhancing productivity in problem lands",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-7-watershed-conservation-and-mangement-04-module-4-watershed-modeling-and-geographic-information-systems-gis-introduction-",
+        "title": "Module 4: Watershed modeling and geographic information systems gis introduction ",
+        "topics": [
+          {
+            "id": "689f15d056b5e963ba8117d2",
+            "title": "Watershed Modeling and Geographic Information Systems (GIS):  Introduction to watershed modelling- Use of GIS in watershed management - Applications of remote sensing in watershed analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117d3",
+            "title": "Delineation and Prioritization-Concept of Topographic or Contour Map, Boundary Delineation, GIS for Delineation, Accuracy in Delineation, Concept of Priority, Factors, Basics & Methods, Purpose & Benefits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117d4",
+            "title": "Land Management: Land use and Land capability classification, management of forest, agricultural, grassland and wild land. Reclamation of saline and alkaline soils",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15d056b5e963ba8117d5",
+            "title": "Integrated watershed modelling – basic concepts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

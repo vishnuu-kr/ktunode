@@ -1,0 +1,3119 @@
+[
+  {
+    "id": "me-5-additive-manufacturing",
+    "code": "PEMET524",
+    "name": "ADDITIVE MANUFACTURING",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am",
+        "title": "Module 1: Introduction to additive manufacturing am basic principle of am",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446355e",
+            "title": "Introduction to Additive Manufacturing (AM)  –Basic principle of AM-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446355f",
+            "title": "Procedure of product development in AM process chain.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463560",
+            "title": "Classification of additive manufacturing processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463561",
+            "title": "Basic concept",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463562",
+            "title": "Digitization techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463563",
+            "title": "Benefits and challenges in AM.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463564",
+            "title": "Data processing for AM- CAD model preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463565",
+            "title": "Part orientation and support generation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463566",
+            "title": "Slicing methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463567",
+            "title": "Tool path generation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463568",
+            "title": "STL Formats.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463569",
+            "title": "Demonstration of slicing software packages.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-additive-manufacturing-02-module-2-common-am-technologies-principle-materials-process-parameters-advantage",
+        "title": "Module 2: Common am technologies principle materials process parameters advantage",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446356b",
+            "title": "Common AM technologies: Principle, materials, process parameters, advantages and applications of: Stereo Lithography (SLA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446356c",
+            "title": "Digital Light Processing (DLP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446356d",
+            "title": "Continuous Liquid Interface Production (CLIP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446356e",
+            "title": "Laminated Object Manufacturing (LOM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446356f",
+            "title": "Ultrasonic AM (UAM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463570",
+            "title": "3D printing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463571",
+            "title": "Binder Jetting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463572",
+            "title": "Material Jetting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463573",
+            "title": "Fused Deposition Modelling  (FDM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463574",
+            "title": "Direct Ink Writing (DIW).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-additive-manufacturing-03-module-3-common-am-technologies-principle-materials-process-parameters-advantage",
+        "title": "Module 3: Common am technologies principle materials process parameters advantage",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463576",
+            "title": "Common AM technologies:  Principle, materials, process parameters, advantages and applications of: Selective Laser Sintering (SLS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463577",
+            "title": "Selection Laser Melting (SLM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463578",
+            "title": "Electron Beam Melting (EBM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463579",
+            "title": "Wire Arc Additive Manufacturing (WAAM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446357a",
+            "title": "Laser Engineering Net Shaping(LENS).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-additive-manufacturing-04-module-4-design-for-am-dfam",
+        "title": "Module 4: Design for am dfam",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446357c",
+            "title": "Design for AM (DFAM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446357d",
+            "title": "AM unique capabilities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446357e",
+            "title": "DFAM concepts and objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446357f",
+            "title": "Design freedom and synthesis methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463580",
+            "title": "Applications for AM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463581",
+            "title": "Applications: Prototyping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463582",
+            "title": "Industrial tooling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463583",
+            "title": "Aerospace",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463584",
+            "title": "Automobile",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463585",
+            "title": "Medical etc.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-advanced-manufacturing-engineering",
+    "code": "PCMET502",
+    "name": "ADVANCED MANUFACTURING ENGINEERING",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-advanced-manufacturing-engineering-01-module-1-cnc-systems-principle-of-operation-components-of-cnc-system-coordinate-",
+        "title": "Module 1: Cnc systems principle of operation components of cnc system coordinate ",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446337c",
+            "title": "CNC: systems – Principle of operation, components of CNC system, coordinate systems, classification of CNC systems, point-to-point and contouring systems, incremental and absolute programming methods, open loop and closed loop systems, feedback devices.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446337d",
+            "title": "Interpolators:  liner, circular and complete interpolator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446337e",
+            "title": "Manual part programming - Computer aided part programming - APT.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446337f",
+            "title": "Programming exercises in turning, drilling and milling operations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463380",
+            "title": "(At least one programming exercise must be included in the end -semester",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-advanced-manufacturing-engineering-02-module-2-programmable-logic-controllers-plc-input-and-output-devices-ladder-logi",
+        "title": "Module 2: Programmable logic controllers plc input and output devices ladder logi",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463382",
+            "title": "Programmable Logic Controllers (PLC) – input and output devices, ladder logic programming, simple problems only.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1451d0cf4804463382-q-1",
+                "year": "2024",
+                "question": "Describe the role of the CPU in a PLC. (Knowledge Level: K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463382-q-2",
+                "year": "2024",
+                "question": "Differentiate between inductive and capacitive proximity sensors. (Knowledge Level: K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463382-q-3",
+                "year": "2024",
+                "question": "Write the ladder logic for a simple system where a motor (`O:0/5`) turns ON when a sensor (`I:0/6`) detects an object, and turns OFF when another sensor (`I:0/7`) detects the object leaving. (Knowledge Level: K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463382-q-4",
+                "year": "2024",
+                "question": "Explain the function of an \"On-Delay Timer\" (TON) in ladder logic and provide a scenario where it would be used. (Knowledge Level: K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463382-q-5",
+                "year": "2024",
+                "question": "A conveyor belt needs to transport 50 items to a collection point. Use a counter to track the items. When 50 items have passed, activate a \"Conveyor Stop\" output (`O:0/8`). Assume a sensor (`I:0/9`) pulses once for each item. (Knowledge Level: K3)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1451d0cf4804463383",
+            "title": "Advanced Machining Processes: ultrasonic machining (USM), Abrasive jet machining (AJM), Water jet machining (WJM), Abrasive water jet machining (AWJM), Electrochemical machining (ECM), Electro discharge machining (EDM), Electron beam machining (EBM), Laser beam machining (LBM), Plasma arc machining (PAM), Ion beam machining (IBM).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-advanced-manufacturing-engineering-03-module-3-advanced-metal-forming-processes-high-velocity-forming-of-metals",
+        "title": "Module 3: Advanced metal forming processes high velocity forming of metals",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463385",
+            "title": "Advanced Metal Forming Processes: High velocity forming of metals - Sheet metal forming - explosive forming - Electro hydraulic forming - Electro Magnetic Forming.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463386",
+            "title": "Stress waves and deformation in solids – types of elastic body waves- relation at free boundaries- relative particle velocity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463387",
+            "title": "Microfabrication process: CVD, PVD, LIGA process.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463388",
+            "title": "Micromachining: Diamond turn mechanism.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-advanced-manufacturing-engineering-04-module-4-advanced-finishing-processes",
+        "title": "Module 4: Advanced finishing processes",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446338a",
+            "title": "Advanced finishing processes: - Abrasive Flow Machining, Magnetic Abrasive Finishing. - Magnetorheological Finishing, Magnetorheological Abrasive Flow Finishing, Magnetic Float Polishing, Elastic Emission Machining.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446338b",
+            "title": "Material addition processes: - stereo-lithography, selective laser sintering, fused deposition modeling, laminated object manufacturing, laser-engineered net-shaping.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-computational-fluid-dynamics",
+    "code": "PEMET521",
+    "name": "COMPUTATIONAL FLUID DYNAMICS",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-computational-fluid-dynamics-01-module-1-introduction-to-computational-fluid-dynamics",
+        "title": "Module 1: Introduction to computational fluid dynamics",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463425",
+            "title": "Introduction to Computational Fluid Dynamics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463426",
+            "title": "Governing Equations of fluid flow and heat transfer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463427",
+            "title": "Conservative form of Navier-Stokes equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463428",
+            "title": "General transport equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463429",
+            "title": "Physical and mathematical classifications of partial differential equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446342a",
+            "title": "Elliptic, parabolic and hyperbolic equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446342b",
+            "title": "Comparison of experimental, theoretical and numerical approaches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446342c",
+            "title": "applications of CFD.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-computational-fluid-dynamics-02-module-2-discretization",
+        "title": "Module 2: Discretization",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446342e",
+            "title": "Discretization-converting derivatives to their finite difference forms-Taylor’s series approach and polynomial fitting approach.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446342f",
+            "title": "Central difference, backward difference, and forward difference of first and second order derivatives.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463430",
+            "title": "Solution of partial differential equations using finite difference equations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463431",
+            "title": "Discretization error, truncation error, round off error.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463432",
+            "title": "Consistency and numerical stability.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463433",
+            "title": "Iterative convergence, condition for convergence, rate of convergence.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463434",
+            "title": "Termination of iteration.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1451d0cf4804463434-q-1",
+                "year": "2024",
+                "question": "What are the two primary types of termination criteria used in iterative CFD solvers? Briefly explain each.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463434-q-2",
+                "year": "2024",
+                "question": "Why is a maximum number of iterations typically set in an iterative CFD simulation?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463434-q-3",
+                "year": "2024",
+                "question": "For a steady-state simulation of laminar flow in a pipe, which termination criterion is crucial to ensure physical accuracy, and why?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463434-q-4",
+                "year": "2024",
+                "question": "How does the choice of tolerance affect the outcome of an iterative CFD simulation?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf4804463434-q-5",
+                "year": "2024",
+                "question": "Consider a simple 1D convection-diffusion equation discretized using FDM. If the discretized equation at node 'i' is $a_i \\phi_i = \\sum_{nb} a_{nb} \\phi_{nb} + b$, how would you calculate the residual at node 'i'?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1451d0cf4804463435",
+            "title": "Boundary and Initial conditions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-computational-fluid-dynamics-03-module-3-introduction-to-finite-volume-method",
+        "title": "Module 3: Introduction to finite volume method",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463437",
+            "title": "Introduction to finite volume method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463438",
+            "title": "Finite volume method for steady one–dimensional conduction problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463439",
+            "title": "one–dimensional transient heat conduction problems -explicit, implicit, Crank- Nicholson schemes, under and over relaxations, handling of boundary conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446343a",
+            "title": "dealing with Dirichlet, Neumann, and Robins type boundary conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446343b",
+            "title": "two-dimensional steady state conduction problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446343c",
+            "title": "point-by-point and line-by-line method of solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446343d",
+            "title": "tri-diagonal matrix algorithm.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-computational-fluid-dynamics-04-module-4-finite-volume-method-for-steady",
+        "title": "Module 4: Finite volume method for steady",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446343f",
+            "title": "Finite volume method for steady-state diffusion and convection-diffusion problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463440",
+            "title": "Central difference and Upwind schemes for convection and diffusion problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463441",
+            "title": "Two dimensional incompressible viscous flows.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463442",
+            "title": "Staggered grid.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463443",
+            "title": "Pressure correction methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463444",
+            "title": "Solution algorithm for pressure-velocity coupling in steady flows- SIMPLE algorithm to solve Navier - Stokes equations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463445",
+            "title": "Computer graphics techniques to present CFD results.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-computer-aided-design-and-analysis",
+    "code": "PEMET523",
+    "name": "COMPUTER AIDED DESIGN AND ANALYSIS",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-computer-aided-design-and-analysis-01-module-1-introduction-to-cad",
+        "title": "Module 1: Introduction to cad",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044634db",
+            "title": "Introduction to CAD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634dc",
+            "title": "historical developments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634dd",
+            "title": "industrial look at CAD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634de",
+            "title": "comparison of CAD with traditional designing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634df",
+            "title": "application of computers in design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e0",
+            "title": "basics of geometric and solid modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e1",
+            "title": "packages for CAD/CAM/CAE/CAPP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e2",
+            "title": "hardware in CAD components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e3",
+            "title": "user interaction devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e4",
+            "title": "design database",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e5",
+            "title": "graphic standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e6",
+            "title": "data exchange formats",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e7",
+            "title": "raster scan",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e8",
+            "title": "random scan",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634e9",
+            "title": "various display systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634ea",
+            "title": "CAD software",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634eb",
+            "title": "latest developments in the area",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634ec",
+            "title": "PDM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634ed",
+            "title": "PLM and CAD",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-computer-aided-design-and-analysis-02-module-2-transformation-of-points-and-lines",
+        "title": "Module 2: Transformation of points and lines",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044634ef",
+            "title": "Transformation of points and lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f0",
+            "title": "2-D rotation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f1",
+            "title": "reflection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f2",
+            "title": "scaling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f3",
+            "title": "combined transformation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f4",
+            "title": "homogeneous coordinates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f5",
+            "title": "shearing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f6",
+            "title": "orthographic and perspective projections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f7",
+            "title": "simple problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f8",
+            "title": "line drawing algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634f9",
+            "title": "DDA algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634fa",
+            "title": "Bresenham’s line algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634fb",
+            "title": "circle drawing algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634fc",
+            "title": "Bresenham's circle algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634fd",
+            "title": "curve drawing algorithms",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-computer-aided-design-and-analysis-03-module-3-3d-graphics",
+        "title": "Module 3: 3d graphics",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044634ff",
+            "title": "3D graphics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463500",
+            "title": "algebraic and geometric forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463501",
+            "title": "tangents and normals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463502",
+            "title": "blending functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463503",
+            "title": "straight lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463504",
+            "title": "conics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463505",
+            "title": "cubic splines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463506",
+            "title": "Bezier curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463507",
+            "title": "B-spline curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463508",
+            "title": "solid models and representation scheme",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463509",
+            "title": "boundary representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446350a",
+            "title": "constructive solid geometry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446350b",
+            "title": "sweep representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446350c",
+            "title": "cell decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446350d",
+            "title": "spatial occupancy enumeration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446350e",
+            "title": "coordinate systems for solid modelling",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-computer-aided-design-and-analysis-04-module-4-introduction-to-finite-element-analysis",
+        "title": "Module 4: Introduction to finite element analysis",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463510",
+            "title": "Introduction to finite element analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463511",
+            "title": "steps involved in FEM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463512",
+            "title": "pre-processing phase",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463513",
+            "title": "discretization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463514",
+            "title": "types of elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463515",
+            "title": "stiffness matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463516",
+            "title": "Fundamentals of Finite volume methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463517",
+            "title": "different types of finite volume grids",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463518",
+            "title": "approximation of surface and volume integrals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463519",
+            "title": "interpolation methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446351a",
+            "title": "Review of governing equations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-design-for-manufacture-and-assembly",
+    "code": "PEMET522",
+    "name": "DESIGN FOR MANUFACTURE AND ASSEMBLY",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-design-for-manufacture-and-assembly-01-module-1-introduction-to-dfma-history-of-dfma",
+        "title": "Module 1: Introduction to dfma history of dfma",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446346a",
+            "title": "Introduction to DFMA: History of DFMA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446346b",
+            "title": "Steps for applying DFMA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446346c",
+            "title": "Advantages of applying DFMA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446346d",
+            "title": "Reasons for not implementing DFMA.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446346e",
+            "title": "Introduction to Manufacturing Process: Classification of manufacturing process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446346f",
+            "title": "Basic manufacturing processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463470",
+            "title": "Mechanical properties of materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463471",
+            "title": "Introduction to materials and material selection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463472",
+            "title": "Classification of engineering materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463473",
+            "title": "Material selection for product design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463474",
+            "title": "Process capability analysis.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-design-for-manufacture-and-assembly-02-module-2-introduction-to-assembly-the-assembly-process",
+        "title": "Module 2: Introduction to assembly the assembly process",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463476",
+            "title": "Introduction to Assembly: The assembly process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463477",
+            "title": "Characteristics and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463478",
+            "title": "Economic significance of assembly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463479",
+            "title": "General taxonomies of assembly operation and systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446347a",
+            "title": "assembling a product.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1451d0cf480446347a-q-1",
+                "year": "2024",
+                "question": "List three key design principles for facilitating manual assembly.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf480446347a-q-2",
+                "year": "2024",
+                "question": "A product requires the assembly of a small circuit board into a plastic housing. Discuss two design features in the housing that would improve the manual assembly process.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf480446347a-q-3",
+                "year": "2024",
+                "question": "How can the number of fasteners used in a product be reduced, and what is the benefit of doing so?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf480446347a-q-4",
+                "year": "2024",
+                "question": "Explain the trade-offs when choosing between manual and automated assembly for a new product.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1451d0cf480446347b",
+            "title": "Design for Assembly: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446347c",
+            "title": "Design consideration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446347d",
+            "title": "DFA methodology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446347e",
+            "title": "General Design Guidelines for Manual Assembly for Part Handling and for Insertion and Fastening",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446347f",
+            "title": "General Rules for Product Design for Automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463480",
+            "title": "Design for Fasteners: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463481",
+            "title": "Design recommendation for fasteners.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463482",
+            "title": "Design for disassembly.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-design-for-manufacture-and-assembly-03-module-3-design-for-machining-introduction-to-machining",
+        "title": "Module 3: Design for machining introduction to machining",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463484",
+            "title": "Design for machining: Introduction to machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463485",
+            "title": "Recommended materials for machinability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463486",
+            "title": "Machining Using Single-Point Cutting Tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463487",
+            "title": "Machining Using Multipoint Tools.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463488",
+            "title": "Design for tuning operation: Process description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463489",
+            "title": "typical characteristics and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446348a",
+            "title": "Suitable materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446348b",
+            "title": "Design recommendations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446348c",
+            "title": "Design for machining round holes: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446348d",
+            "title": "Suitable materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446348e",
+            "title": "Design recommendations.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1451d0cf480446348e-q-1",
+                "year": "2024",
+                "question": "A part requires a deep, narrow slot to be milled. What are the potential machining challenges, and how could the design be modified to improve machinability?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf480446348e-q-2",
+                "year": "2024",
+                "question": "You are designing a component with several mounting holes. What design considerations will ensure these holes are easy to machine and contribute to efficient assembly? (Relates to CO3 and CO2)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf480446348e-q-3",
+                "year": "2024",
+                "question": "Explain why sharp internal corners are problematic in machining and suggest a design recommendation to mitigate this issue. (Relates to CO3)",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf480446348e-q-4",
+                "year": "2024",
+                "question": "How does material selection impact the design for machining, and what is a general recommendation regarding machinable materials? (Relates to CO3)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1451d0cf480446348f",
+            "title": "Design for milling: Process description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463490",
+            "title": "Characteristics and applications of parts produced on milling machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463491",
+            "title": "Design recommendations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-design-for-manufacture-and-assembly-04-module-4-sand-casting-introduction-to-sand-casting",
+        "title": "Module 4: Sand casting introduction to sand casting",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf4804463493",
+            "title": "Sand casting: Introduction to sand casting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463494",
+            "title": "typical characteristics of sand cast part",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463495",
+            "title": "Design recommendations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463496",
+            "title": "Die casting: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463497",
+            "title": "Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463498",
+            "title": "Suitable material consideration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf4804463499",
+            "title": "Design recommendations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446349a",
+            "title": "Injection moulding: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446349b",
+            "title": "Typical characteristics of injection moulded parts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446349c",
+            "title": "Effect of shrinkage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446349d",
+            "title": "Suitable materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446349e",
+            "title": "Design recommendations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf480446349f",
+            "title": "Welding process: Different types of welding processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044634a0",
+            "title": "Design recommendations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-energy-economics-and-policy",
+    "code": "PEMET526",
+    "name": "ENERGY ECONOMICS AND POLICY",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-energy-economics-and-policy-01-module-1-energy-as-a-resource-and-its-accounting-government-role-in-innovation",
+        "title": "Module 1: Energy as a resource and its accounting government role in innovation",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635b1",
+            "title": "Energy as a resource and its accounting, Government role in innovation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635b2",
+            "title": "Introduction, Energy as a system,What is the System of Economic Accounting for Energy, Government’s role in mobilising investment and innovation in energy, The importance of the investment environment.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635b3",
+            "title": "Energy Efficiency Characteristics, energy supply and demand analysis.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635b4",
+            "title": "A review of energy efficiency measures (EEM) characteristics, Adoption and measures of EEM, Supply and Demand Analyses, Energy demand science for a decarbonized society.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635b5",
+            "title": "Energy statistics influence on energy consumption for oil rich countries.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635b6",
+            "title": "Global Influence of Oil-Rich Countries, Oil-Rich Countries Statistics, Geo-Political Influence, Energy Transitions, Energy Policy Shifts.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-energy-economics-and-policy-02-module-2-behaviour-change-approach-to-promote-and-sustain-energy-efficiency",
+        "title": "Module 2: Behaviour change approach to promote and sustain energy efficiency",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635b8",
+            "title": "Behaviour Change Approach to Promote and Sustain Energy Efficiency.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635b9",
+            "title": "Behaviour gaps, Biases, design thinking methodology, Ripple effect.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635ba",
+            "title": "Drivers of human behaviour to meet UN SDGs in relation with Energy.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635bb",
+            "title": "Role of individuals in attaining SDGs, Behavioural aspects in energy modelling, Behaviour changes for sustainable development.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635bc",
+            "title": "Energy efficiency and emission abatement relations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635bd",
+            "title": "Abatement of emissions through energy efficiency, Sector wise analysis, Harnessing Renewable Energy Potential (Some country case studies).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-energy-economics-and-policy-03-module-3-energy-market-analysis-regulations-by-government-of-india",
+        "title": "Module 3: Energy market analysis regulations by government of india",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635bf",
+            "title": "Energy Market Analysis, Regulations by Government of India.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c0",
+            "title": "Scenario analyses, feasible options for developing an energy future, the impacts, costs, and financial risks of the various scenarios for transitioning to the energy future, market penetration pathways.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c1",
+            "title": "The Economics of Depleting Resources & The Oil Sector Examples.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c2",
+            "title": "Resource depletion and overuse, combating resource depletion and Misuse and pollution, The Prospects for Greener Growth-Policies and Politics of Low-Carbon Growth.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c3",
+            "title": "Unregulated Markets and Technological Change: oil and natural gas sector examples.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c4",
+            "title": "The Emergence of Markets, Natural Gas Market, Transportation Market, Markets in Other Segments of the Gas Industry,  Trading Models in the Deregulated Natural Gas Industry, Under development and unregulated markets: Reasons why unregulated markets reproduce underdevelopment.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-energy-economics-and-policy-04-module-4-carbon-emission-recent-trends-and-shift-in-policies-in-india-case-studi",
+        "title": "Module 4: Carbon emission recent trends and shift in policies in india case studi",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635c6",
+            "title": "Carbon Emission: Recent Trends and Shift in Policies in India, case studies of different countries.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c7",
+            "title": "Sector wise emission trends in India, electricity, industry, transportation, buildings, agriculture, policies, case study of other countries.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c8",
+            "title": "Hydrogen: A Pathway to Carbon Neutral Economy, possibilities and approaches.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635c9",
+            "title": "Hydrogen production and potential utilization, technical challenges, codes and standards development-Public awareness and social acceptance.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635ca",
+            "title": "Energy efficient policies to achieve SDGs for countries, Importance of Conference of parties (COP).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635cb",
+            "title": "Energy Policy: A Foundation for Transition-Energy Transition: A Paradigm Shift, Future Prospects and Emerging Trends, The Link Between Energy Policy, Energy Transition, and Sustainability in Oil-Rich Countries, Energy Policy Research A Pathway to Achieve UN (SDGs).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635cc",
+            "title": "The Role of COP in Emission Abatement, COP Goals, Agenda, Major Outcomes of COP",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-heat-and-mass-transfer",
+    "code": "PCMET503",
+    "name": "HEAT AND MASS TRANSFER",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-heat-and-mass-transfer-01-module-1-conduction-heat-transfer",
+        "title": "Module 1: Conduction heat transfer",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf480446339f",
+            "title": "Conduction heat transfer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a0",
+            "title": "Modes of heat transfer – Mechanisms and laws of heat transfer – thermal conductivity, convective heat transfer coefficient, overall heat transfer coefficient",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a1",
+            "title": "General heat conduction equation in three dimension through plane (derivation needed) cylindrical and spherical (only equation) walls –initial and boundary conditions - One Dimensional Steady state heat conduction - Thermal Conductivity – concept of thermal resistance – critical radius – conduction with heat generation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a2",
+            "title": "Transient heat conduction – Lumped system analysis – transient heat conduction analysis of bodies with non-negligible internal temperature gradient.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a3",
+            "title": "Heat transfer through extended surfaces – classification of fins – heat transfer rate from a fin (rectangular fin, pin fin) – boundary conditions – fin effectiveness and fin efficiency.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a4",
+            "title": "Introduction to finite difference method for steady state heat conduction analysis.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-heat-and-mass-transfer-02-module-2-convection-heat-transfer",
+        "title": "Module 2: Convection heat transfer",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044633a6",
+            "title": "Convection heat transfer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a7",
+            "title": "Forced convection – concept of thermal and hydrodynamic boundary layers (internal and external flows) –thermal diffusivity – momentum diffusivity – fluid friction and heat transfer relationship – developing and developed flows (hydrodynamic and thermal). Non dimensional number in heat transfer.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a8",
+            "title": "External heat convection from flat plate/cylinder/ sphere during laminar and turbulent flow. Internal heat transfer in a circular pipe during laminar and turbulent flow.  Analogy between heat and momentum transfer.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633a9",
+            "title": "Natural convection – natural convection heat transfer from vertical plate, horizontal and vertical cylinder.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633aa",
+            "title": "Heat exchanger – classification – design considerations and parameters – compact heat exchangers – effect of fouling- heat exchanger analysis – LMTD and NTU methods. Introduction to heat pipes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-heat-and-mass-transfer-03-module-3-radiation-heat-transfer",
+        "title": "Module 3: Radiation heat transfer",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044633ac",
+            "title": "Radiation heat transfer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633ad",
+            "title": "Basic laws of radiation heat transfer – Black, gray, diffuse and real surfaces - emission characteristics and laws of black body radiation -  solid angle and radiation intensity – radiation heat exchange between two infinite and finite back surfaces – shape factors- radiation heat exchange between two infinite parallel diffuse gray surfaces. Electrical network analogy for radiation heat exchange.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633ae",
+            "title": "Radiation shields. Conduction shape factor.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1451d0cf48044633ae-q-1",
+                "year": "2024",
+                "question": "Why are radiation shields effective in reducing heat transfer? What are the ideal properties of a radiation shield?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf48044633ae-q-2",
+                "year": "2024",
+                "question": "Two large parallel plates are at temperatures $T_1 = 800 \\, K$ and $T_2 = 300 \\, K$. The emissivities are $\\epsilon_1 = 0.9$ and $\\epsilon_2 = 0.7$. Calculate the heat transfer rate per unit area between the plates. If a radiation shield with emissivity $\\epsilon_s = 0.03$ is placed between them, calculate the new heat transfer rate per unit area.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf48044633ae-q-3",
+                "year": "2024",
+                "question": "What happens to the effectiveness of radiation shields as the emissivity of the shields decreases?",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf48044633ae-q-4",
+                "year": "2024",
+                "question": "Define conduction shape factor and state its units.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf48044633ae-q-5",
+                "year": "2024",
+                "question": "A copper sphere of radius $r = 0.05 \\, m$ is buried in a large block of material with $k = 0.2 \\, W/m \\cdot K$. The sphere is at $100^\\circ C$ and the surroundings are at $25^\\circ C$. Calculate the heat transfer rate from the sphere.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1451d0cf48044633ae-q-6",
+                "year": "2024",
+                "question": "A long, thin electrical wire of radius $r = 1 \\, mm$ is embedded in a large insulating block ($k = 0.1 \\, W/m \\cdot K$). The wire is at $120^\\circ C$ and the block is at $30^\\circ C$. Calculate the heat transfer per meter length of the wire.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "me-5-heat-and-mass-transfer-04-module-4-mass-transfer",
+        "title": "Module 4: Mass transfer",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044633b0",
+            "title": "Mass Transfer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633b1",
+            "title": "Introduction to mass transfer – diffusion coefficient – Fick’s law of diffusion- steady state diffusion in stationary medium- diffusion in moving medium- diffusion through a membrane.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633b2",
+            "title": "Convective mass transfer – non dimensional numbers – analogy between heat and mass transfer – correlations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633b3",
+            "title": "Cooling of electronic equipments – need – various methods – influencing factors. Electric battery cooling – various methods - phase change material, fin cooling, air cooling, liquid cooling. (description only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-human-resources-management",
+    "code": "PEMET527",
+    "name": "HUMAN RESOURCES MANAGEMENT",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-human-resources-management-01-module-1-human-resource-management-concept-of-human-management-in-a-system",
+        "title": "Module 1: Human resource management concept of human management in a system",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635ec",
+            "title": "HUMAN RESOURCE MANAGEMENT : Concept of Human Management in a system-Organisation and Function of the HR.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635ed",
+            "title": "Objectives and Characteristics of HRM.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635ee",
+            "title": "Role of HR manager-Responsibility- Competitiveness- HR policies -HRM Concepts.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635ef",
+            "title": "JOB ANALYSIS & JOB DESIGN : Job Analysis- Job title- duties & essential functions- job specification -Techniques & Approaches in Job Analysis .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635f0",
+            "title": "Job design -considerations in job design-Types of Job design approaches.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-human-resources-management-02-module-2-hr-planning-definition",
+        "title": "Module 2: Hr planning definition",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635f2",
+            "title": "HR PLANNING: Definition-HR planning system- HR forecasting—Importance of HR Planning- Human resource information system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635f3",
+            "title": "RECURITMENT & SELECTION : Concept of Recruitment- objectives-Sources of Recruitment- Internal & External sources-Recruitment process-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635f4",
+            "title": "Common constraints in recruitment.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635f5",
+            "title": "Selection- Selection Process-Screening- Employment Test-Interview- Physical Examination-Job offer, Various Approaches in Hiring Decisions.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-human-resources-management-03-module-3-training-training",
+        "title": "Module 3: Training training",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635f7",
+            "title": "TRAINING: Training- Need for training- Induction training-Effective training Programme process-Structural issues in Training.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635f8",
+            "title": "CAREER DEVELOPMENT: Employee development methods- performance management -Components of effective performance management -performance appraisal- purposes of appraisal – methods of performance appraisal- promotion -transfers.-Incentive systems- Employee Benefits.-Types of Benefit schemes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-human-resources-management-04-module-4-labour-relations-relation-between-management-and-labours",
+        "title": "Module 4: Labour relations relation between management and labours",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044635fa",
+            "title": "LABOUR RELATIONS : Relation between management and labours- Labour unions -objectives- Collective Bargaining -Negotiations-Strikes-Grievance Handling-Grievance redressal methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044635fb",
+            "title": "EMPLOYEE SAFETY AND HEALTH:  Employee safety- awareness – Accident prevention -creating safe environment -employee health problems and preventive measures-job stress – employee assistance programmes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-instrumentation-and-control-systems",
+    "code": "PEMET525",
+    "name": "INSTRUMENTATION AND CONTROL SYSTEMS",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-instrumentation-and-control-systems-01-module-1-industrial-measurement-systems-different-types-of-industrial-variables-",
+        "title": "Module 1: Industrial measurement systems different types of industrial variables ",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf4804463666",
+            "title": "Industrial measurement systems – different types of industrial variables and measurement systems elements.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463667",
+            "title": "Sensors– Sensor components - Resistive sensors - Inductive sensors - Capacitive sensors - Thermoelectric sensors - Piezoelectric sensors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463668",
+            "title": "Transducers - Definition and classification.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463669",
+            "title": "LVDT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446366a",
+            "title": "Electromagnetic and Ultrasonic flow meters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446366b",
+            "title": "Piezoelectric transducers-modes of operation-force transducer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446366c",
+            "title": "Load cell",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446366d",
+            "title": "Strain gauge etc.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-instrumentation-and-control-systems-02-module-2-industrial-signal-conditioning-systems",
+        "title": "Module 2: Industrial signal conditioning systems",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf480446366f",
+            "title": "Industrial signal conditioning systems- Operational amplifiers - Amplifier circuits with ideal operational amplifiers - Current-to voltage converters - Inverting voltage amplifiers - Non-inverting voltage amplifiers - Differential amplifiers -Instrumentation amplifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463670",
+            "title": "Filters – Passive filters - First and second order RC-filters - Low-pass first-order RC-filter – High pass first-order RC-filter – Band pass filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463671",
+            "title": "A/D converters for industrial measurements systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463672",
+            "title": "Data Acquisition Systems(DAS) –Objectives of DAS.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-instrumentation-and-control-systems-03-module-3-system-modeling",
+        "title": "Module 3: System modeling",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf4804463674",
+            "title": "System Modeling- Open loop and closed loop control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463675",
+            "title": "Transfer function of LTI systems- Electrical, translational and rotational systems – Force voltage and force current analogy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463676",
+            "title": "Block diagram representation - block diagram reduction",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a3fd1551d0cf4804463676-q-1",
+                "year": "2024",
+                "question": "Find the overall transfer function $T(s) = C(s)/R(s)$ for the following block diagram:",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1551d0cf4804463676-q-2",
+                "year": "2024",
+                "question": "Simplify the given block diagram and find the overall transfer function $T(s) = C(s)/R(s)$.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1551d0cf4804463676-q-3",
+                "year": "2024",
+                "question": "For a unity feedback system with a forward path transfer function $G(s) = \\frac{10}{s(s+2)}$, calculate the closed-loop transfer function.",
+                "marks": 3
+              },
+              {
+                "id": "68a3fd1551d0cf4804463676-q-4",
+                "year": "2024",
+                "question": "Describe the purpose of a summing junction in a feedback control system.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a3fd1551d0cf4804463677",
+            "title": "Signal flow graph - Mason's gain formula.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463678",
+            "title": "Control system components: Transfer functions of DC and AC servo motors– Control applications of Tacho generator and Stepper motor.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463679",
+            "title": "Characteristic equation of Closed loop systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446367a",
+            "title": "Controllers- P, PI, and PID controllers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-instrumentation-and-control-systems-04-module-4-time-domain-analysis-of-control-systems-time-domain-specifications",
+        "title": "Module 4: Time domain analysis of control systems time domain specifications",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf480446367c",
+            "title": "Time domain analysis of control systems: Time domain specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446367d",
+            "title": "Impulse and Step responses of first order and second order systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446367e",
+            "title": "Error analysis: Steady state error analysis - static error coefficients of type 0,1,2 systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446367f",
+            "title": "Stability Analysis: Concept of stability— Routh's stability criterion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463680",
+            "title": "Root locus method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463681",
+            "title": "Frequency Domain Analysis: Frequency Domain Specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463682",
+            "title": "Stability in Frequency Domain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463683",
+            "title": "Gain Margin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463684",
+            "title": "Phase Margin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463685",
+            "title": "Bode Plot",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463686",
+            "title": "Polar Plot",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463687",
+            "title": "Nyquist Plot.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-management-for-engineers",
+    "code": "PBMET504",
+    "name": "MANAGEMENT FOR ENGINEERS",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-management-for-engineers-01-module-1-introduction-to-management-art-and-science-perspectives-external-enviro",
+        "title": "Module 1: Introduction to management art and science perspectives external enviro",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044633cc",
+            "title": "Introduction to Management: Art and science perspectives – External environment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633cd",
+            "title": "Classical, neo – classical and modern management theories",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633ce",
+            "title": "Levels of managers and skill required",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633cf",
+            "title": "Systems approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d0",
+            "title": "Planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d1",
+            "title": "Types of plans",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d2",
+            "title": "Mission, Goal, Strategy, Programme, Procedure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d3",
+            "title": "Organizing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d4",
+            "title": "Organization levels and span of control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d5",
+            "title": "Delegation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d6",
+            "title": "Organization structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633d7",
+            "title": "line and staff concepts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-management-for-engineers-02-module-2-leading-and-controlling-leading-vs-managing",
+        "title": "Module 2: Leading and controlling leading vs managing",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044633d9",
+            "title": "Leading and Controlling: Leading Vs Managing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633da",
+            "title": "Dimensions of Leadership",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633db",
+            "title": "Leadership Behaviour and styles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633dc",
+            "title": "Transactional and Transformational Leadership",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633dd",
+            "title": "Basic control process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633de",
+            "title": "Decision Making: Steps, Decision under certainty, risk and uncertainty: Decision trees, EMV method, EOL method, MaxiMin criterion, MiniMaxcriterion, MiniMax regret criterion.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-management-for-engineers-03-module-3-project-management-network-construction-aon-aoa-diagrams",
+        "title": "Module 3: Project management network construction aon aoa diagrams",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044633e0",
+            "title": "Project Management: Network construction, AON, AOA diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e1",
+            "title": "Redundancy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e2",
+            "title": "CPM and PERT networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e3",
+            "title": "Scheduling computations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e4",
+            "title": "PERT time estimates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e5",
+            "title": "Probability of completion of project",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e6",
+            "title": "crashing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e7",
+            "title": "Human resource management: Manpower planning, recruitment, selection, placement, training, development, performance management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e8",
+            "title": "Motivation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633e9",
+            "title": "mechanism and theories",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-management-for-engineers-04-module-4-operations-management-introduction",
+        "title": "Module 4: Operations management introduction",
+        "topics": [
+          {
+            "id": "68a3fd1451d0cf48044633eb",
+            "title": "Operations management – Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633ec",
+            "title": "Concept of Productivity and its measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633ed",
+            "title": "Forecasting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633ee",
+            "title": "moving average",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633ef",
+            "title": "weighted moving average",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633f0",
+            "title": "Marketing management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633f1",
+            "title": "Marketing mix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633f2",
+            "title": "Market segmentation, Market targeting and product positioning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633f3",
+            "title": "Product life cycle, Marketing strategies for different stages of product life cycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633f4",
+            "title": "Sales promotion and methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633f5",
+            "title": "Channels of distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1451d0cf48044633f6",
+            "title": "Corporate Social Responsibility",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-mechanical-engineering-lab",
+    "code": "PCMEL508",
+    "name": "MECHANICAL ENGINEERING LAB",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-mechanical-engineering-lab-01-module-1-calibration-of-vernier-caliper-micrometer-lvdt-and-dial-gauge",
+        "title": "Module 1: Calibration of vernier caliper micrometer lvdt and dial gauge",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636fe",
+            "title": "Calibration of vernier caliper, micrometer, LVDT and dial gauge.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf48044636ff",
+            "title": "Determine the class of fits between the given shaft and hole. etc",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463700",
+            "title": "Study and analysis of repeatability and reproducibility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463701",
+            "title": "Angular measurements using sine bar, bevel protractor, combination sets, clinometers, angle dekkor etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463702",
+            "title": "Measurement of straightness, flatness, squareness and roundness error using autocollimator, Laser interferometer, spirit level, dial gauge etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463703",
+            "title": "Measurement of displacement, velocity and acceleration of vibration.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463704",
+            "title": "Measurement of surface roughness of turned, milled, grounded, lapped surfaces and glass etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463705",
+            "title": "Measurement of strain using strain gauges and strain indicators using various bridge arrangements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463706",
+            "title": "Measurement of screw thread parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463707",
+            "title": "Measurement of gear profile error and other parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463708",
+            "title": "Bore diameter measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463709",
+            "title": "Use of Tool maker’s microscope",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446370a",
+            "title": "Analysis of automobile exhaust gas and flue gas.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446370b",
+            "title": "Demonstration of Coordinate Measuring Machine for the evaluation of form errors",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-mechanical-engineering-lab-02-module-2-experiment-on-whirling-of-shaft",
+        "title": "Module 2: Experiment on whirling of shaft",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf480446370d",
+            "title": "Experiment on Whirling of shaft",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446370e",
+            "title": "Experiment on Gyroscope",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446370f",
+            "title": "Experiment on Universal governor apparatus",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463710",
+            "title": "Experiment on Free and forced vibration analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463711",
+            "title": "Experiment on any Non-destructive testing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463712",
+            "title": "Exercises on hydraulic and pneumatic circuits using trainer units",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463713",
+            "title": "Exercises on electro-pneumatic and electro-hydraulic circuits using trainer units",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463714",
+            "title": "Exercises on Motion controller using AC/DC motor, servo motors and stepper motors with encoders to determine the operating characteristics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463715",
+            "title": "Exercises on PC-based data acquisition systems with any software.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463716",
+            "title": "Study of PLC programming, Controlling variable speed drive through PLC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463717",
+            "title": "Exercises on the robotic trainer units",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463718",
+            "title": "Exercises on 3-D printing",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-operations-research",
+    "code": "PEMET528",
+    "name": "OPERATIONS RESEARCH",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-operations-research-01-module-1-introduction-to-operations-research-or",
+        "title": "Module 1: Introduction to operations research or",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf480446360f",
+            "title": "Introduction to Operations Research (OR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463610",
+            "title": "Linear Programming: Basics of OR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463611",
+            "title": "Modelling approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463612",
+            "title": "Linear Programming (LP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463613",
+            "title": "Formulation of LP models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463614",
+            "title": "Graphical method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463615",
+            "title": "Simplex method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463616",
+            "title": "Big-M Method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463617",
+            "title": "Transportation Problem: Mathematical Formulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463618",
+            "title": "Initial Basic Feasible Solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463619",
+            "title": "North West Corner method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446361a",
+            "title": "Least Cost method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446361b",
+            "title": "Vogel’s Approximation Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446361c",
+            "title": "Optimality test by MODI method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446361d",
+            "title": "Assignment problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446361e",
+            "title": "Hungarian method.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-operations-research-02-module-2-sequencing-problem-basic-terminologies",
+        "title": "Module 2: Sequencing problem basic terminologies",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf4804463620",
+            "title": "Sequencing Problem: Basic terminologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463621",
+            "title": "Processing of n Jobs through 2machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463622",
+            "title": "Processing of n Jobs through 3 machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463623",
+            "title": "Processing n Jobs, through m machines.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463624",
+            "title": "Game Theory: Games with saddle points",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463625",
+            "title": "Games without saddle points – 2 x 2 games",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463626",
+            "title": "Graphical method for m x 2 & 2 x n games",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-operations-research-03-module-3-non",
+        "title": "Module 3: Non",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf4804463628",
+            "title": "Non-traditional Optimization Techniques: Genetic Algorithm (GA) – Working principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463629",
+            "title": "GA Operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446362a",
+            "title": "Parameters setting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446362b",
+            "title": "Constraints handling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446362c",
+            "title": "Solving simple problems using GA.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446362d",
+            "title": "Simulated Annealing and Particle Swarm Optimization (Theory only) - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446362e",
+            "title": "Key concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf480446362f",
+            "title": "Algorithm.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-operations-research-04-module-4-scope-of-queuing-theory",
+        "title": "Module 4: Scope of queuing theory",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf4804463631",
+            "title": "Scope of queuing theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463632",
+            "title": "Importance and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463633",
+            "title": "Kendall’s Notations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463634",
+            "title": "Characteristics of Queuing Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463635",
+            "title": "Performance Measures in Queuing Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463636",
+            "title": "Classic Queuing Models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463637",
+            "title": "Single-server exponential arrival and service times",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a3fd1551d0cf4804463638",
+            "title": "Two-server exponential arrival and service times.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "me-5-thermal-engineering-lab-1",
+    "code": "PCMEL507",
+    "name": "THERMAL ENGINEERING LAB-1",
+    "branchId": "me",
+    "semester": 5,
+    "modules": [
+      {
+        "id": "me-5-thermal-engineering-lab-1-01-module-1-determination-of-viscosity-of-lubricating-oils-and-fuels-and-its-variat",
+        "title": "Module 1: Determination of viscosity of lubricating oils and fuels and its variat",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636ad",
+            "title": "Determination of viscosity of lubricating oils and fuels and its variation with Temperature",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-02-module-2-determination-of-flash-and-fire-points-of-petroleum-fuels-and-oils",
+        "title": "Module 2: Determination of flash and fire points of petroleum fuels and oils",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636af",
+            "title": "Determination of flash and fire points of petroleum fuels and oils",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-03-module-3-determination-of-calorific-value-of-solid-and-liquid-fuels",
+        "title": "Module 3: Determination of calorific value of solid and liquid fuels",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636b1",
+            "title": "Determination of calorific value of solid and liquid fuels- Bomb Calorimeter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-04-module-4-determination-of-calorific-value-of-gaseous-fuels-gas-calorimeter",
+        "title": "Module 4: Determination of calorific value of gaseous fuels gas calorimeter",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636b3",
+            "title": "Determination of calorific value of gaseous fuels –Gas Calorimeter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-05-module-5-calibration-of-thermocouples",
+        "title": "Module 5: Calibration of thermocouples",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636b5",
+            "title": "Calibration of Thermocouples",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-06-module-6-determination-of-lmtd-and-effectiveness-of-parallel-flow-counter-flow-a",
+        "title": "Module 6: Determination of lmtd and effectiveness of parallel flow counter flow a",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636b7",
+            "title": "Determination of LMTD and effectiveness of parallel flow, Counter flow and cross flow heat exchangers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-07-module-7-performance-studies-on-a-shell-and-tube-heat-exchanger",
+        "title": "Module 7: Performance studies on a shell and tube heat exchanger",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636b9",
+            "title": "Performance studies on a shell and tube heat exchanger",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-08-module-8-development-of-heat-transfer-correlation-for-heat-exchangerscondenser-u",
+        "title": "Module 8: Development of heat transfer correlation for heat exchangerscondenser u",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636bb",
+            "title": "Development of heat transfer correlation for heat exchangers/condenser using modified Wilson Plot Method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-09-module-9-determination-of-heat-transfer-coefficients-in-free-convection",
+        "title": "Module 9: Determination of heat transfer coefficients in free convection",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636bd",
+            "title": "Determination of heat transfer coefficients in free convection",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-10-module-10-determination-of-heat-transfer-coefficients-in-forced-convection",
+        "title": "Module 10: Determination of heat transfer coefficients in forced convection",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636bf",
+            "title": "Determination of heat transfer coefficients in forced convection",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-11-module-11-determination-of-thermal-conductivity-of-solids-composite-wallmetal-ro",
+        "title": "Module 11: Determination of thermal conductivity of solids composite wallmetal ro",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636c1",
+            "title": "Determination of thermal conductivity of solids (composite wall/metal rod)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-12-module-12-determination-of-thermal-conductivity-of-powder",
+        "title": "Module 12: Determination of thermal conductivity of powder",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636c3",
+            "title": "Determination of thermal conductivity of powder",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-13-module-13-determination-of-thermal-conductivity-of-liquids",
+        "title": "Module 13: Determination of thermal conductivity of liquids",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636c5",
+            "title": "Determination of thermal conductivity of liquids",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-14-module-14-measurement-of-unsteady-state-conduction-heat-transfer",
+        "title": "Module 14: Measurement of unsteady state conduction heat transfer",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636c7",
+            "title": "Measurement of unsteady state conduction heat transfer",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-15-module-15-determination-of-emissivity-of-a-specimen",
+        "title": "Module 15: Determination of emissivity of a specimen",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636c9",
+            "title": "Determination of emissivity of a specimen",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-16-module-16-determination-of-stefan-boltzman-constant",
+        "title": "Module 16: Determination of stefan boltzman constant",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636cb",
+            "title": "Determination of Stefan Boltzman constant",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-17-module-17-measurement-of-solar-radiation",
+        "title": "Module 17: Measurement of solar radiation",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636cd",
+            "title": "Measurement of solar radiation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-18-module-18-experimental-study-of-dropwise-and-filmwise-condensation",
+        "title": "Module 18: Experimental study of dropwise and filmwise condensation",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636cf",
+            "title": "Experimental study of dropwise and filmwise condensation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-19-module-19-experiments-on-boiling-heat-transfer",
+        "title": "Module 19: Experiments on boiling heat transfer",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636d1",
+            "title": "Experiments on boiling heat transfer",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "me-5-thermal-engineering-lab-1-20-module-20-performance-study-on-heat-pipe",
+        "title": "Module 20: Performance study on heat pipe",
+        "topics": [
+          {
+            "id": "68a3fd1551d0cf48044636d3",
+            "title": "Performance study on heat pipe",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

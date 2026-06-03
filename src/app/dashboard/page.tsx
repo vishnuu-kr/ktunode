@@ -9,6 +9,7 @@ import {
   BookOpen,
   CheckCircle2,
   ChevronLeft,
+  ChevronDown,
   LayoutList,
   Search,
   Star,
@@ -231,6 +232,75 @@ function getSubjectIcon(name: string) {
   return BookOpen; // fallback
 }
 
+const verifiedVideos: Record<string, { concept: string[]; lecture: string[]; solved: string[] }> = {
+  cs: {
+    concept: ["RBSGKlAxfdI", "26QPDBe-qAE", "IPvYjXofLQY", "FR4QIeZaPeM"],
+    lecture: ["dbwY2e4-e0k", "vBURTt97EkA", "qiQR5rTSshw", "3EJlovevfcA"],
+    solved: ["0IAPZzGSbME", "5cKP4cfJ-NM", "ecCuyq-Wprc"]
+  },
+  math: {
+    concept: ["fNk_zzaMoEs", "WUvTyaaNkzM", "p_di4ateumM", "XZo4xyJXC2k"],
+    lecture: ["7UJ4CFR1894", "Kb3K1Ui4454", "tyDKR4FG3Yw"],
+    solved: ["S0hG_mS9bV4", "IYdiKeQ9xME", "jZ5z11sK0Mg"]
+  },
+  mech_civil: {
+    concept: ["uDlaoV2V-bU", "423c-v3_2X8", "clVwS3P9s84"],
+    lecture: ["A182z4Z_H3U", "9GMBpZZtjXM", "r_GkEaC4T70"],
+    solved: ["x1U7Hw4K0mU", "KzE_56Hk5B8", "e_Nl2Q2yK8c"]
+  },
+  ee_ec: {
+    concept: ["mc979OhitAg", "33vbFFFn04k", "gI-qXk7XojA"],
+    lecture: ["F_4HkL5r4n0", "Q-tL8_628gE", "M0mx8S05v60"],
+    solved: ["8XG7U5yN668", "p6Q9_e7_L1w", "APPIZ2S8YmY"]
+  },
+  chemistry: {
+    concept: ["QXT4OVM4vFk", "IV4IUsholjg"],
+    lecture: ["x00oX54G0Cg", "kYGDGvL4Xf8"],
+    solved: ["2G1410K0MQA", "l_a6hSj935s"]
+  },
+  general: {
+    concept: ["fNk_zzaMoEs", "uDlaoV2V-bU", "mc979OhitAg"],
+    lecture: ["7UJ4CFR1894", "A182z4Z_H3U", "F_4HkL5r4n0"],
+    solved: ["S0hG_mS9bV4", "x1U7Hw4K0mU", "8XG7U5yN668"]
+  }
+};
+
+const getSubjectDomain = (subject: Subject | null): string => {
+  if (!subject) return "general";
+  const name = subject.name.toLowerCase();
+  const id = subject.id.toLowerCase();
+  
+  if (name.includes("chemistry")) return "chemistry";
+  if (name.includes("math") || name.includes("mathematics") || name.includes("calculus") || name.includes("discrete")) return "math";
+  if (id.includes("-cs-") || name.includes("computer science") || name.includes("programming") || name.includes("data structure") || name.includes("algorithm")) return "cs";
+  if (id.includes("-ee-") || id.includes("-ec-") || name.includes("electrical") || name.includes("electronics") || name.includes("circuit") || name.includes("signal")) return "ee_ec";
+  if (id.includes("-me-") || id.includes("-ce-") || name.includes("mechanical") || name.includes("civil") || name.includes("mechanics") || name.includes("fluid") || name.includes("thermo")) return "mech_civil";
+  return "general";
+};
+
+const simpleHash = (str: string): number => {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+};
+
+const getVideoIdForCard = (
+  type: "concept" | "lecture" | "solved",
+  subject: Subject | null,
+  topicTitle: string
+): string => {
+  const domain = getSubjectDomain(subject);
+  const videos = verifiedVideos[domain] || verifiedVideos.general;
+  const list = videos[type] || verifiedVideos.general[type];
+  if (!list || list.length === 0) return "fNk_zzaMoEs";
+  const hash = simpleHash(topicTitle);
+  const index = hash % list.length;
+  return list[index];
+};
+
 function DashboardContent() {
   const searchParams = useSearchParams();
   const branch = searchParams.get("branch") || "cs";
@@ -238,16 +308,109 @@ function DashboardContent() {
   const { resolvedTheme } = useTheme();
 
   const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+  
+  // Dynamic subjects and notes loading
+  const [subjects, setSubjects] = useState<Subject[]>([]);
+  const [loadingSubjects, setLoadingSubjects] = useState(true);
+  const [noteContent, setNoteContent] = useState<string>("");
+  const [loadingNote, setLoadingNote] = useState(false);
 
   const [view, setView] = useState<ViewState>("dashboard");
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
   const [lastTopicId, setLastTopicId] = useState<string | null>(null);
   const [pinnedTopicIds, setPinnedTopicIds] = useState<string[]>([]);
+  const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>({});
   const [commandOpen, setCommandOpen] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    setLoadingSubjects(true);
+    fetch(`/api/subjects?branch=${branch}&sem=${sem}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (active) {
+          setSubjects(Array.isArray(data) ? data : []);
+          setLoadingSubjects(false);
+        }
+      })
+      .catch((err) => {
+        console.error("Failed to load subjects:", err);
+        if (active) {
+          setSubjects([]);
+          setLoadingSubjects(false);
+        }
+      });
+    return () => {
+      active = false;
+    };
+  }, [branch, sem]);
+
+  useEffect(() => {
+    if (!selectedTopic) {
+      setNoteContent("");
+      return;
+    }
+    
+    let active = true;
+    setLoadingNote(true);
+    fetch(`/api/notes?id=${selectedTopic.id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (active) {
+          setNoteContent(data.content || "");
+          setLoadingNote(false);
+        }
+      })
+      .catch((err) => {
+        console.error("Failed to load note content:", err);
+        if (active) {
+          setNoteContent("Error loading note content. Please try again.");
+          setLoadingNote(false);
+        }
+      });
+      
+    return () => {
+      active = false;
+    };
+  }, [selectedTopic]);
+
+  // Sync selectedSubject and selectedTopic on list reload
+  useEffect(() => {
+    if (selectedSubject && subjects.length > 0) {
+      const updated = subjects.find((s) => s.id === selectedSubject.id);
+      if (updated) {
+        setSelectedSubject(updated);
+        if (selectedTopic) {
+          const updatedTopic = updated.modules
+            .flatMap((m) => m.topics)
+            .find((t) => t.id === selectedTopic.id);
+          if (updatedTopic) {
+            setSelectedTopic(updatedTopic);
+          }
+        }
+      }
+    }
+  }, [subjects]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setActiveVideoId(null);
+      }
+    };
+    if (activeVideoId) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [activeVideoId]);
 
   // User Authentication & Cloud Sync states
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -495,7 +658,6 @@ function DashboardContent() {
     headingRef.current?.focus();
   }, [view, selectedSubject, selectedTopic]);
 
-  const subjects = React.useMemo(() => getSubjectsForSession(branch, sem), [branch, sem]);
   const timetable = React.useMemo(() => getTimetable(branch, sem), [branch, sem]);
   const { completedTopics, toggleTopic, isCompleted, getModuleProgress, getSubjectProgress, isLoaded } = useProgress();
 
@@ -1189,15 +1351,25 @@ function DashboardContent() {
                 <div className="space-y-5 md:space-y-6">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100 tracking-tight">Your Courses</h3>
-                    <span className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400">{subjects.length} active courses</span>
+                    <span className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400">
+                      {loadingSubjects ? "Loading" : subjects.length} active courses
+                    </span>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                    {!isLoaded
+                    {!isLoaded || loadingSubjects
                       ? skeletonCards.slice(0, 4).map((item) => (
                           <div key={item} className="h-36 rounded-[20px] bg-white/40 dark:bg-slate-850/40 animate-pulse border border-slate-950/[0.04] dark:border-white/[0.04] shadow-sm" />
                         ))
-                      : subjects.map((subject, index) => {
+                      : subjects.length === 0
+                        ? (
+                          <div className="col-span-full py-12 text-center bg-white/60 dark:bg-slate-900/60 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-[20px] backdrop-blur-md">
+                            <LayoutList className="w-12 h-12 text-slate-350 dark:text-slate-650 mx-auto mb-4" />
+                            <h3 className="text-lg font-black text-slate-700 dark:text-slate-200 mb-1">No Courses Found</h3>
+                            <p className="text-slate-500 dark:text-slate-400 font-medium">Please check your semester or branch selection.</p>
+                          </div>
+                        )
+                        : subjects.map((subject, index) => {
                           const allTopicIds = subject.modules.flatMap((module) => module.topics.map((topic) => topic.id));
                            const progress = getSubjectProgress(allTopicIds);
                            const scheme = colorSchemes[index % colorSchemes.length];
@@ -1344,14 +1516,13 @@ function DashboardContent() {
                 <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.2]">
                   <span className="gradient-text">{selectedSubject.name}</span>
                 </h1>
-              </div>
- 
-              {selectedSubject.modules.length > 0 ? (
+              </div>              {selectedSubject.modules.length > 0 ? (
                 <div className="space-y-6">
                   {selectedSubject.modules.map((module, index) => {
                     const moduleTopicIds = module.topics.map((topic) => topic.id);
                     const progress = getModuleProgress(moduleTopicIds);
                     const isModuleComplete = progress === 100;
+                    const isExpanded = expandedModules[module.id] === undefined ? index === 0 : expandedModules[module.id];
  
                     return (
                       <motion.div
@@ -1361,71 +1532,86 @@ function DashboardContent() {
                         transition={{ delay: index * 0.08, duration: 0.4 }}
                         className={`bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl rounded-3xl border overflow-hidden transition-all duration-500 ${isModuleComplete ? 'border-emerald-500/30 dark:border-emerald-500/20 shadow-[0_4px_20px_rgba(16,185,129,0.05)] dark:shadow-none' : 'border-blue-100/80 dark:border-slate-800'}`}
                       >
-                        <div className={`px-6 py-5 border-b flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-500 ${isModuleComplete ? 'bg-emerald-50/30 dark:bg-emerald-950/20 border-emerald-500/20 dark:border-emerald-900/30' : 'bg-white/50 dark:bg-slate-900/50 border-blue-50/50 dark:border-slate-800'}`}>
-                          <h2 className="text-xl font-black text-slate-800 dark:text-slate-100 flex items-start gap-2 leading-snug">
+                        <div 
+                          onClick={() => setExpandedModules(prev => ({ ...prev, [module.id]: !isExpanded }))}
+                          className={`px-6 py-5 flex flex-col md:flex-row md:items-center justify-between gap-4 cursor-pointer select-none hover:bg-slate-50/40 dark:hover:bg-slate-850/20 transition-all duration-300 ${isExpanded ? 'border-b' : ''} ${isModuleComplete ? 'bg-emerald-50/30 dark:bg-emerald-950/20 border-emerald-500/20 dark:border-emerald-900/30' : 'bg-white/50 dark:bg-slate-900/50 border-blue-50/50 dark:border-slate-800'}`}
+                        >
+                          <h2 className="text-xl font-black text-slate-800 dark:text-slate-100 flex items-center gap-2.5 leading-snug">
+                            <ChevronDown className={`w-5 h-5 text-slate-400 dark:text-slate-500 transition-transform duration-350 shrink-0 ${isExpanded ? 'rotate-180' : ''}`} />
                             <span className="flex-1 min-w-0 break-words">{module.title}</span>
                             {isModuleComplete && (
-                              <BadgeCheck className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />
+                              <BadgeCheck className="w-5 h-5 text-emerald-500 shrink-0" />
                             )}
                           </h2>
                           {isLoaded && (
-                            <div className="flex flex-wrap items-center gap-3">
+                            <div className="flex flex-col md:items-end items-start gap-2 shrink-0" onClick={(e) => e.stopPropagation()}>
                               {isModuleComplete ? (
                                 <span className="px-3 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 text-[10px] font-black tracking-widest uppercase flex items-center gap-1.5 shrink-0 border border-emerald-200/50 dark:border-emerald-900/30">
                                   <Sparkles className="w-3 h-3 animate-pulse" />
                                   Mastery Achieved
                                 </span>
                               ) : (
-                                <div className="flex items-center gap-3 shrink-0">
-                                  <span className="text-[10px] font-black text-slate-400 tracking-wider">MODULE PROGRESS</span>
-                                  <div className="w-20 sm:w-24 h-2 bg-slate-100 dark:bg-slate-850 rounded-full overflow-hidden">
-                                    <div className="h-full bg-emerald-500 transition-all duration-500" style={{ width: `${progress}%` }} />
+                                <>
+                                  <div className="flex items-center gap-3 shrink-0">
+                                    <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 tracking-wider">MODULE PROGRESS</span>
+                                    <div className="w-20 sm:w-24 h-2 bg-slate-100 dark:bg-slate-800/50 rounded-full overflow-hidden">
+                                      <div className="h-full bg-emerald-500 transition-all duration-500" style={{ width: `${progress}%` }} />
+                                    </div>
+                                    <span className="text-xs font-black text-emerald-600 dark:text-emerald-400 w-8 text-right">{progress}%</span>
                                   </div>
-                                  <span className="text-xs font-black text-emerald-600 dark:text-emerald-450 w-8 text-right">{progress}%</span>
-                                </div>
+                                  
+                                  <button 
+                                    onClick={() => {
+                                      module.topics.forEach(t => {
+                                        if (!isCompleted(t.id)) toggleTopic(t.id);
+                                      });
+                                    }}
+                                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-black transition-all shrink-0 bg-blue-50 dark:bg-slate-800 text-blue-600 dark:text-blue-400 hover:bg-blue-100 hover:dark:bg-slate-700 active:scale-95 border border-blue-100 dark:border-blue-900/30 shadow-sm"
+                                  >
+                                    <CheckCircle2 className="w-3.5 h-3.5" />
+                                    Complete All
+                                  </button>
+                                </>
                               )}
-                              
-                              <button 
-                                onClick={() => {
-                                  module.topics.forEach(t => {
-                                    if (!isCompleted(t.id)) toggleTopic(t.id);
-                                  });
-                                }}
-                                className={`ml-2 flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-black transition-all shrink-0 ${isModuleComplete ? 'bg-slate-100 dark:bg-slate-850 text-slate-400 dark:text-slate-500 opacity-50 cursor-not-allowed' : 'bg-blue-50 dark:bg-slate-800 text-blue-600 dark:text-blue-400 hover:bg-blue-100 hover:dark:bg-slate-700 active:scale-95'}`}
-                                disabled={isModuleComplete}
-                              >
-                                <CheckCircle2 className="w-3.5 h-3.5" />
-                                Complete All
-                              </button>
                             </div>
                           )}
                         </div>
-                        <div className="divide-y divide-blue-50/50 dark:divide-slate-850/50 p-2">
-                          {module.topics.map((topic) => {
-                            const done = isCompleted(topic.id);
-                            const pinned = pinnedTopicIds.includes(topic.id);
-                            return (
-                              <div key={topic.id} className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3">
-                                <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
-                                  <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-450" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
-                                    {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
+                        <AnimatePresence initial={false}>
+                          {isExpanded && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                              className="divide-y divide-blue-50/50 dark:divide-slate-850/50 p-2 overflow-hidden"
+                            >
+                              {module.topics.map((topic) => {
+                                const done = isCompleted(topic.id);
+                                const pinned = pinnedTopicIds.includes(topic.id);
+                                return (
+                                  <div key={topic.id} className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3">
+                                    <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
+                                      <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-455" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
+                                        {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
+                                      </div>
+                                      <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-455 line-through decoration-slate-300 dark:decoration-slate-700" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
+                                        {topic.title}
+                                      </span>
+                                    </button>
+                                    <button
+                                      type="button"
+                                      onClick={() => togglePinnedTopic(topic.id)}
+                                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
+                                      aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
+                                    >
+                                      <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
+                                    </button>
                                   </div>
-                                  <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-450 line-through decoration-slate-300 dark:decoration-slate-700" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
-                                    {topic.title}
-                                  </span>
-                                </button>
-                                <button
-                                  type="button"
-                                  onClick={() => togglePinnedTopic(topic.id)}
-                                  className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
-                                  aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
-                                >
-                                  <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
-                                </button>
-                              </div>
-                            );
-                          })}
-                        </div>
+                                );
+                              })}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
                       </motion.div>
                     );
                   })}
@@ -1495,7 +1681,21 @@ function DashboardContent() {
                 </div>
 
                 <div className="px-4 md:px-0">
-                  <MarkdownRenderer content={selectedTopic.content} stripH1={true} />
+                  {loadingNote ? (
+                    <div className="max-w-3xl mx-auto space-y-6 py-4 animate-pulse">
+                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-3/4"></div>
+                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-5/6"></div>
+                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-2/3"></div>
+                      <div className="space-y-3 pt-6">
+                        <div className="h-6 bg-slate-200 dark:bg-slate-800 rounded w-1/3 mb-2"></div>
+                        <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-full"></div>
+                        <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-5/6"></div>
+                      </div>
+                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-4/5 pt-4"></div>
+                    </div>
+                  ) : (
+                    <MarkdownRenderer content={noteContent} stripH1={true} />
+                  )}
                 </div>
 
                 {selectedTopic.pyqs && selectedTopic.pyqs.length > 0 && (
@@ -1530,45 +1730,56 @@ function DashboardContent() {
                     {[
                       {
                         label: "THE QUICK CONCEPT",
-                        query: `KTU ${selectedTopic.title} explained`,
-                        title: `${selectedTopic.title} – Quick Concept`,
-                        sub: "YouTube · KTU Lectures"
+                        type: "concept" as const,
+                        title: "Concept Summary & Animations",
+                        sub: "YouTube · Quick Concept"
                       },
                       {
                         label: "EXAM DEEP-DIVE",
-                        query: `${selectedTopic.title} ${selectedSubject?.name ?? ""} exam questions`,
-                        title: `${selectedTopic.title} – Exam Prep`,
+                        type: "lecture" as const,
+                        title: "Detailed Lectures & Exam Prep",
                         sub: "YouTube · Exam Deep Dive"
                       },
                       {
                         label: "PROBLEM SOLVING",
-                        query: `${selectedTopic.title} solved examples numericals`,
-                        title: `${selectedTopic.title} – Solved Problems`,
+                        type: "solved" as const,
+                        title: "Step-by-step Solved Numericals",
                         sub: "YouTube · Problem Solving"
                       }
                     ].map((card) => {
-                      const youtubeUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(card.query)}`;
+                      const videoId = getVideoIdForCard(card.type, selectedSubject, selectedTopic.title);
+                      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
                       return (
-                        <a
+                        <button
                           key={card.label}
-                          href={youtubeUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="min-w-[240px] md:min-w-[260px] max-w-[260px] snap-start group cursor-pointer no-underline"
+                          type="button"
+                          onClick={() => {
+                            setActiveVideoId(videoId);
+                            triggerHaptic("light");
+                          }}
+                          className="min-w-[240px] md:min-w-[260px] max-w-[260px] snap-start group cursor-pointer text-left focus:outline-none bg-transparent border-0 p-0"
                         >
-                          <div className="w-full h-[120px] md:h-[140px] rounded-xl md:rounded-2xl bg-gradient-to-br from-[#0f172a] to-[#1e3a8a] relative flex items-center justify-center mb-3 shadow-sm border border-slate-950/[0.04] overflow-hidden">
-                            <div className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 group-hover:bg-red-500/80 transition-all duration-300">
+                          <div className="w-full h-[120px] md:h-[140px] rounded-xl md:rounded-2xl relative flex items-center justify-center mb-3 shadow-sm border border-slate-950/[0.04] overflow-hidden bg-slate-950">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                              src={thumbnailUrl}
+                              alt={card.title}
+                              className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/20 to-slate-950/40" />
+                            <div className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 group-hover:bg-red-500/80 transition-all duration-300 relative z-10">
                               <Play className="w-4 h-4 md:w-5 md:h-5 text-white fill-current ml-1" />
                             </div>
-                            <span className="absolute bottom-3 left-3 text-[9px] md:text-[10px] font-black text-white tracking-wider">{card.label}</span>
-                            <span className="absolute top-3 right-3 text-[9px] md:text-[10px] font-black text-white bg-red-600 px-2 py-0.5 rounded-full flex items-center gap-1">
+                            <span className="absolute bottom-3 left-3 text-[9px] md:text-[10px] font-black text-white tracking-wider z-10">{card.label}</span>
+                            <span className="absolute top-3 right-3 text-[9px] md:text-[10px] font-black text-white bg-red-600 px-2 py-0.5 rounded-full flex items-center gap-1 z-10">
                               <svg className="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
                               YouTube
                             </span>
                           </div>
                           <h3 className="text-xs md:text-sm font-black text-slate-800 dark:text-slate-200 leading-tight mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors line-clamp-2">{card.title}</h3>
                           <p className="text-[10px] md:text-xs font-bold text-slate-400 dark:text-slate-500">{card.sub}</p>
-                        </a>
+                        </button>
                       );
                     })}
                   </div>
@@ -2140,6 +2351,61 @@ function DashboardContent() {
                   <LogOut className="w-4 h-4" />
                   Log Out Session
                 </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {activeVideoId && (
+          <motion.div
+            className="fixed inset-0 z-[110] bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 md:p-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => {
+              setActiveVideoId(null);
+              triggerHaptic("light");
+            }}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 350, damping: 25 }}
+              className="bg-slate-900 border border-slate-800/80 w-full max-w-4xl rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden flex flex-col relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Header */}
+              <div className="flex items-center justify-between p-4 md:p-6 border-b border-slate-800/60">
+                <div>
+                  <span className="text-[10px] font-black text-blue-500 uppercase tracking-widest block mb-1">RECOMMENDED WATCH</span>
+                  <h3 className="text-sm md:text-base font-black text-slate-100 leading-tight">
+                    {selectedTopic?.title ?? "Video Player"}
+                  </h3>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveVideoId(null);
+                    triggerHaptic("light");
+                  }}
+                  className="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-slate-200 cursor-pointer transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Video Player wrapper */}
+              <div className="relative w-full aspect-video bg-black">
+                <iframe
+                  className="absolute inset-0 w-full h-full border-0"
+                  src={`https://www.youtube.com/embed/${activeVideoId}?autoplay=1&rel=0&modestbranding=1`}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
               </div>
             </motion.div>
           </motion.div>

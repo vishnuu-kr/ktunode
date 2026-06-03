@@ -1,0 +1,2734 @@
+[
+  {
+    "id": "ee-6-control-system-lab",
+    "code": "PCEEL607",
+    "name": "CONTROL SYSTEM LAB",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-control-system-lab-01-module-1-transfer-function-and-state-space-modelling-of-armature-and-field-contr",
+        "title": "Module 1: Transfer function and state space modelling of armature and field contr",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36752",
+            "title": "Transfer Function and State Space Modelling of Armature and Field Controlled DC Motor.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36753",
+            "title": "Objective: Obtain the transfer function and state space model of the armature and field-controlled DC motor by experiment.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-02-module-2-transfer-function-of-ac-servo-motor",
+        "title": "Module 2: Transfer function of ac servo motor",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36755",
+            "title": "Transfer function of A.C. Servo motor.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36756",
+            "title": "Objective: Obtain the transfer function of AC Servo motor by experiment.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-03-module-3-synchro-transmitter-and-receiver-for-open-loop-position-control",
+        "title": "Module 3: Synchro transmitter and receiver for open loop position control",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36758",
+            "title": "Synchro Transmitter and Receiver for open loop position control.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36759",
+            "title": "Objective:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3675a",
+            "title": "a) Plot the characteristics of synchro.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3675b",
+            "title": "Error study of the synchro transmitter and receiver pair as a simple open loop position control in Direct mode and Differential mode.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-04-module-4-step-response-and-frequency-response-of-a-second-order-system-realised-",
+        "title": "Module 4: Step response and frequency response of a second order system realised ",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3675d",
+            "title": "Step response and frequency response of a second order system realised using passive components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3675e",
+            "title": "Objective : Design a second order   (RLC network)  system to analyse the following:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3675f",
+            "title": "a. The effect of damping factor (0<ξ <1, ξ = 1, ξ > 1) for a  step input .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36760",
+            "title": "b. Verification of the delay time, rise time, peak overshoot and settling time with the theoretical values for 0<ξ <1.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36761",
+            "title": "c. Effect of damping ratio on frequency response.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36762",
+            "title": "d. Verification of resonant peak,  resonant frequency and bandwidth for 0<ξ <1.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-05-module-5-realisation-of-lead-compensator",
+        "title": "Module 5: Realisation of lead compensator",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36764",
+            "title": "Realisation of lead compensator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36765",
+            "title": "Objective: Design, set up and analyse the gain and phase plots of a lead compensator by hardware experimentation using i) passive elements and ii) active components",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-06-module-6-realisation-of-lag-compensator",
+        "title": "Module 6: Realisation of lag compensator",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36767",
+            "title": "Realisation of lag compensator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36768",
+            "title": "Objective: Design, set up and analyse the gain and phase plots of a lag compensator by hardware experimentation using:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36769",
+            "title": "i) passive elements and ii) active components.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-07-module-7-performance-of-a-typical-process-control-system",
+        "title": "Module 7: Performance of a typical process control system",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3676b",
+            "title": "Performance of a typical process control system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3676c",
+            "title": "Objective: Study of performance characteristics and response analysis of a typical temperature/ Flow/ Level control system.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-08-module-8-system-identification-and-modeling",
+        "title": "Module 8: System identification and modeling",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3676e",
+            "title": "System Identification and Modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3676f",
+            "title": "Objective: Obtain the frequency response  and identify the transfer function of the given system(black box),",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-09-module-9-step-response-and-frequency-response-of-a-second-order-system-using-sim",
+        "title": "Module 9: Step response and frequency response of a second order system using sim",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36771",
+            "title": "Step response and frequency response of a second order system using simulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36772",
+            "title": "Objective:  To analyse the response of  the second order system (in experiment 1) using (MATLAB/SCILAB/similar softwares)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36773",
+            "title": "a. The effect of damping factor (0<ξ <1, ξ = 1, ξ > 1) for a  step input .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36774",
+            "title": "b. Comparison of the delay time, rise time, peak overshoot and settling time with the experimental values for 0<ξ <1.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36775",
+            "title": "c. The effect of damping ratio on frequency response.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36776",
+            "title": "d. Comparison of resonant peak, resonant frequency and bandwidth with the experimental values for 0<ξ <1.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-10-module-10-performance-analysis-using-root",
+        "title": "Module 10: Performance analysis using root",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36778",
+            "title": "Performance Analysis using Root-Locus and  frequency Response Methods in MATLAB/SCILAB/similar softwares.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36779",
+            "title": "Objective:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3677a",
+            "title": "1. Plot the i) root locus ii) Bode plot and iii) Nyquist plot and iv) Nichols chart for the given transfer functions and analyse the following:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3677b",
+            "title": "Root Locus:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3677c",
+            "title": "a. Determine the critical gain, frequency of oscillation at critical gain.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3677d",
+            "title": "b. The effect of gain, K on the stability.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3677e",
+            "title": "c. Determine the gain corresponding to a given damping ratio and obtain  the step response of the system for the corresponding gain.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3677f",
+            "title": "d. The effect of the addition of poles and zeros on the given system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36780",
+            "title": "Frequency response:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36781",
+            "title": "e.Determination of Gain Margin and Phase Margin (stable and unstable, minimum/non-minimum phase system)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36782",
+            "title": "f. The effect of controller gain K on the stability margin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36783",
+            "title": "g. The effect of the addition of poles and zeros on the given system (especially the poles at origin).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36784",
+            "title": "h. Determine the stability of a given minimum and non-minimum phase system using Nyquist stability criterion.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36785",
+            "title": "i. Determine the bandwidth of a given system from open loop frequency response using Nichols chart.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-11-module-11-design-of-lag-lead-and-lag",
+        "title": "Module 11: Design of lag lead and lag",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36787",
+            "title": "Design of lag, lead and lag-lead compensator using root locus.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36788",
+            "title": "Objective: Design a suitable compensator for the given system to satisfy the given time domain specifications using MATLAB/SCILAB/ similar software.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-12-module-12-design-of-lag-lead-and-lag",
+        "title": "Module 12: Design of lag lead and lag",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3678a",
+            "title": "Design of lag, lead and lag-lead  compensator using frequency response.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3678b",
+            "title": "Objective: Design a suitable compensator for the given system to satisfy the given frequency domain specifications using MATLAB/SCILAB/ similar software.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design",
+        "title": "Module 13: State space model analysis and controller design",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3678d",
+            "title": "State Space Model, Analysis and Controller Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3678e",
+            "title": "Objective: Analyse the given system (eg.  DC Servo motor modelled in experiment no.1  for speed control) in state space and design a controller by pole-placement technique using MATLAB/SCILAB/ similar software.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3678f",
+            "title": "a. Determine the open loop stability, controllability and observability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36790",
+            "title": "b. Design a state-feedback controller by pole-placement technique for a given specification.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-control-system-lab-14-module-14-pid-controller-design",
+        "title": "Module 14: Pid controller design",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36792",
+            "title": "PID Controller Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36793",
+            "title": "Objective: Design a PID controller for the given system (eg. DC Servo motor modelled in experiment no. 1 for position control) using SIMULINK/ MATLAB based tool boxes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36794",
+            "title": "a. Design of  P, PI, PD, PID controller using the Ziegler-Nichols method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36795",
+            "title": "b. Design of a suitable controller (P/PI/PD/PID) to meet the desired specifications using root locus/frequency response.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-digital-protection-of-power-systems",
+    "code": "PEEET631",
+    "name": "DIGITAL PROTECTION OF POWER SYSTEMS",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-digital-protection-of-power-systems-01-module-1-introduction-need-for-protective-systems",
+        "title": "Module 1: Introduction need for protective systems",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36571",
+            "title": "Introduction : Need for protective systems",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f36571-q-1",
+                "year": "2024",
+                "question": "What are the primary objectives of a power system protective relaying scheme?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36571-q-2",
+                "year": "2024",
+                "question": "List and briefly describe the main types of short-circuit faults in a power system.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36571-q-3",
+                "year": "2024",
+                "question": "Explain why rapid fault clearance is essential in a power system.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36571-q-4",
+                "year": "2024",
+                "question": "What are the advantages of digital/numerical relays over older electromechanical and static relays?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36571-q-5",
+                "year": "2024",
+                "question": "Briefly describe the concept of \"selectivity\" in power system protection.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f36572",
+            "title": "Zones of protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36573",
+            "title": "Current transformers and voltage transformers (Electromagnetic and Capacitive voltage transformers)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36574",
+            "title": "Principle of operation of magneto optic CT/ PT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36575",
+            "title": "effect on relaying philosophy.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36576",
+            "title": "Relays: Over current relays - time-current characteristics of over current relays: definite time over current relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36577",
+            "title": "inverse Definite Minimum time - directional over current relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36578",
+            "title": "current setting and time setting - Numerical Problems - Differential relays: Operating and restraining characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36579",
+            "title": "types of differential relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3657a",
+            "title": "Distance relays: impedance relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3657b",
+            "title": "reactance relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3657c",
+            "title": "mho relays (basic principles and characteristics only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection",
+        "title": "Module 2: Protection of transmission lines schemes of distance protection",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3657e",
+            "title": "Protection of Transmission Lines:  Schemes of distance protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3657f",
+            "title": "Differential line protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36580",
+            "title": "Phase comparison line protection.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36581",
+            "title": "Protection of Bus-bar",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36582",
+            "title": "Transformer and Generator & Motor : Types of faults",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36583",
+            "title": "differential protection: High impedance and low impedance differential protection schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36584",
+            "title": "harmonic restraint relay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36585",
+            "title": "Restricted Earth Fault Protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36586",
+            "title": "frame leakage protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36587",
+            "title": "stator and rotor protection against various types of faults.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-digital-protection-of-power-systems-03-module-3-digital-numerical-relays-basic-components-of-numerical-relays-with-bloc",
+        "title": "Module 3: Digital numerical relays basic components of numerical relays with bloc",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36589",
+            "title": "Digital (Numerical) Relays :  Basic Components of numerical Relays with block diagram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3658a",
+            "title": "Processing Unit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3658b",
+            "title": "Human machine Interface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3658c",
+            "title": "Principle of operation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3658d",
+            "title": "Comparison of numerical relays with electromechanical and static relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3658e",
+            "title": "Advantages of numerical relays - communication in protective relays (IEC 61850)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3658f",
+            "title": "Information handling with substation automation system (SAS) Signal Conditioning Subsystems: Surge Protection Circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36590",
+            "title": "Anti-aliasing filter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36591",
+            "title": "Conversion Subsystem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36592",
+            "title": "The Sampling Theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36593",
+            "title": "aliasing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36594",
+            "title": "Sample and Hold Circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36595",
+            "title": "Concept of analog to digital and digital to analog conversion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36596",
+            "title": "Idea of sliding window concept",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36597",
+            "title": "Fourier, Discrete and fast Fourier transforms",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-digital-protection-of-power-systems-04-module-4-signal-processing-techniques-sinusoidal-wave-based-algorithms",
+        "title": "Module 4: Signal processing techniques sinusoidal wave based algorithms",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36599",
+            "title": "Signal processing techniques:  Sinusoidal wave based algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3659a",
+            "title": "Fourier Analysis based algorithms (half cycle and full cycle)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3659b",
+            "title": "Least squares based algorithm.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3659c",
+            "title": "Digital filters – Fundamentals of Infinite Impulse Response Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3659d",
+            "title": "Finite Impulse Response filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3659e",
+            "title": "Filters with sine and cosine windows.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f3659e-q-1",
+                "year": "2024",
+                "question": "Explain why filtering is essential in digital protection relays. (CO4, K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3659e-q-2",
+                "year": "2024",
+                "question": "Describe the fundamental principle behind the sine and cosine window filters. (CO4, K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3659e-q-3",
+                "year": "2024",
+                "question": "What is the primary advantage of using a window length that is exactly one fundamental cycle for sine and cosine window filters? (CO4, K2)",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3659e-q-4",
+                "year": "2024",
+                "question": "A distance relay relies on the measurement of fundamental frequency voltage and current. How do sine and cosine window filters contribute to the accurate operation of a distance relay? (CO1, K3)",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3659e-q-5",
+                "year": "2024",
+                "question": "If a relay uses a window of $N=10$ samples, but the fundamental frequency dictates that $N_{cycle}=12$ samples per cycle, what potential issue might arise? (CO4, K2)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f3659f",
+            "title": "Wide Area Protection and Measurement:  Phasor Measurement Units",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365a0",
+            "title": "concept of synchronized sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365a1",
+            "title": "Definition of wide-area protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365a2",
+            "title": "Architectures of wide-area protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365a3",
+            "title": "concept of Adaptive relaying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365a4",
+            "title": "advantages of adaptive relaying and its application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365a5",
+            "title": "Adaptive Differential protective scheme.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-digital-signal-processing",
+    "code": "PEEET636",
+    "name": "DIGITAL SIGNAL PROCESSING",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-digital-signal-processing-01-module-1-introduction-to-dsp-and-discrete-fourier-transform",
+        "title": "Module 1: Introduction to dsp and discrete fourier transform",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36657",
+            "title": "Introduction to DSP and Discrete Fourier transform:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36658",
+            "title": "Basic elements of DSP system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36659",
+            "title": "Advantages and applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3665a",
+            "title": "Review of Discrete-Time Fourier transform (DTFT) and its properties.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3665b",
+            "title": "Frequency domain sampling, Discrete Fourier transform (DFT) - DFT pair, properties of DFT, frequency response analysis of signals using the DFT, circular convolution using DFT, linear filtering based on DFT.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3665c",
+            "title": "Fast Fourier transform (FFT): Introduction, Radix -2 decimation in time FFT algorithm, Radix-2 decimation in frequency algorithm, IDFT using FFT algorithm.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-digital-signal-processing-02-module-2-realisation-of-filters",
+        "title": "Module 2: Realisation of filters",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3665e",
+            "title": "Realisation of Filters:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3665f",
+            "title": "Introduction to IIR and FIR systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36660",
+            "title": "Structures for IIR Systems: Direct-Form Structures, Cascade-Form Structures, Parallel-Form Structures, Lattice Structures for IIR Systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36661",
+            "title": "Structures for FIR Systems:  Direct-Form Structure, Cascade-Form Structures, Lattice Structure. Linear Phase FIR filters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36662",
+            "title": "Signal Flow Graphs and Transposed Structures.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-digital-signal-processing-03-module-3-design-of-digital-filters",
+        "title": "Module 3: Design of digital filters",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36664",
+            "title": "Design of Digital Filters:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36665",
+            "title": "General considerations, Causality and its implications, characteristics of practical frequency selective filters.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36666",
+            "title": "IIR filter design: Discrete time IIR filter from analog filter (Butterworth), IIR filter (LPF, HPF, BPF, BRF) design by Impulse Invariance, Bilinear transformation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36667",
+            "title": "FIR filter design: Structures of FIR filter, Linear phase FIR filter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36668",
+            "title": "Filter design using windowing techniques (Rectangular, Hanning, Hamming), frequency sampling Techniques.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-digital-signal-processing-04-module-4-finite-word-length-effects-in-digital-filters",
+        "title": "Module 4: Finite word length effects in digital filters",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3666a",
+            "title": "Finite Word Length effects in Digital Filters:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3666b",
+            "title": "Fixed point and floating-point number representations, Comparison, Truncation and Rounding errors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3666c",
+            "title": "Quantization noise, Derivation for quantization noise power, coefficient quantization error, Product quantization error.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3666d",
+            "title": "Overflow error, Round-off noise power. Limit cycle oscillations due to product round-off and overflow errors, signal scaling.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3666e",
+            "title": "Introduction to TMS320 Family:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3666f",
+            "title": "Architecture, C24x CPU and other components; Assembly language Instructions, Instruction Set summary, simple programs.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36670",
+            "title": "Design & Implementation and Filter Structures: MATLAB functions and TMS320 Implementation (Demo/Assignment only)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f36670-q-1",
+                "year": "2024",
+                "question": "What are the main sources of quantization errors in a digital filter?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-2",
+                "year": "2024",
+                "question": "If a signal is uniformly quantized with a step size $Q$, what is the variance of the quantization error?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-3",
+                "year": "2024",
+                "question": "A digital signal is represented using 12 bits (signed integer). What is the approximate SQNR for this signal if it is quantized?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-4",
+                "year": "2024",
+                "question": "What are limit cycles, and in which type of digital filter are they most commonly observed?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-5",
+                "year": "2024",
+                "question": "How can using a cascade of second-order sections help reduce the impact of coefficient quantization in digital filters?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-6",
+                "year": "2024",
+                "question": "What is dithering, and how does it help mitigate quantization errors?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-7",
+                "year": "2024",
+                "question": "Compare the sensitivity to coefficient quantization between Direct Form I and Direct Form II structures.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-8",
+                "year": "2024",
+                "question": "What is a primary advantage of using a cascade structure for implementing digital filters on fixed-point DSPs?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-9",
+                "year": "2024",
+                "question": "Which MATLAB toolbox is essential for simulating precise fixed-point arithmetic and quantization effects?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-10",
+                "year": "2024",
+                "question": "Describe the general steps involved in simulating the effect of coefficient quantization on a digital filter using MATLAB.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-11",
+                "year": "2024",
+                "question": "Why is the accumulator in a TMS320 DSP often wider than the data registers?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36670-q-12",
+                "year": "2024",
+                "question": "What is saturation arithmetic, and how does it differ from wrap-around arithmetic in fixed-point systems?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-electrical-system-design-and-estimation",
+    "code": "PCEET602",
+    "name": "ELECTRICAL SYSTEM DESIGN AND ESTIMATION",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-electrical-system-design-and-estimation-01-module-1-awareness-on-is-codes",
+        "title": "Module 1: Awareness on is codes",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36544",
+            "title": "Awareness on IS Codes - IS 732, IS 3043, IS 2026- IS 3646-part 1 & 2 - IS 5216 part 1 & 2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36545",
+            "title": "Electricity supply code-2014, IE Act 1910, 2003, NEC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36546",
+            "title": "LT system wiring components, selection of cables, wires, switches, distribution box, metering system, basics of star rating and labelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36547",
+            "title": "Principle of operation of Fuse, MCB, MCCB, ELCB/RCCB, isolator.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-electrical-system-design-and-estimation-02-module-2-general-requirements-for-electrical-installations",
+        "title": "Module 2: General requirements for electrical installations",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36549",
+            "title": "General requirements for electrical installations- Residential/ Commercial/ High rise building, method of load survey for electrical installation, Diversity factor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3654a",
+            "title": "Sizing and selection of wires, MSB, SSB, DB and protection devices. Design steps in electrical wiring, material estimation and development of single line diagrams. Electrical CAD (optional). Pre-commissioning test applicable to domestic installation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3654b",
+            "title": "Lighting design calculations - Definitions of Luminous flux, Luminous intensity, Illuminance. Illumination calculation, factors affecting Coefficients of Utilisation (CoU) - Light Loss Factor (LLF).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3654c",
+            "title": "Design and Estimation the quantity of material required in Electrical Installation for - Small residential building/Flat/Factory (Micro-Project)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation",
+        "title": "Module 3: Indoor and outdoor substation",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3654e",
+            "title": "Indoor and Outdoor substation- selection of transformer, switch gears and protective devices, Procedure for HT connection, design and estimation the quantity of material required for substations, Pre-commissioning tests for transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3654f",
+            "title": "Industrial loads, selection of starters, cable and switchgears, Power factor improvement – kVAR calculation, correction methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36550",
+            "title": "Design of MSB & SSB including Motor Control Centre (MCC) - Selection of bus bars (CU & Al) and Switchgears",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36551",
+            "title": "Specifications of LT Breakers and other LT panel components (Basics only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36552",
+            "title": "Selection of industrial UG cables - Calculation of ampacity, voltage drop, short circuit withstand capacity",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-",
+        "title": "Module 4: Standby dg systems with amf panel essential protections ups system and ",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36554",
+            "title": "Standby DG Systems with AMF panel – Essential protections. UPS system and its design for residential application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36555",
+            "title": "Selection and installation of elevators and lifts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36556",
+            "title": "Earthing and Soil Resistivity calculation– Earth electrodes. Methods of earthing - Plate earthing - Pipe earthing - Rod earthing. Methods of improving earth resistance - Size of earth continuity conductor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36557",
+            "title": "Substation earthing and design (Theory only), substation lightning protection (Theory only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36558",
+            "title": "Solar PV Power generation – Design and installation of standalone and grid interactive Solar PV system -Smart meter/Net meter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-energy-management",
+    "code": "OEEET612",
+    "name": "ENERGY MANAGEMENT",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-energy-management-01-module-1-general-aspects-of-energy-management-and-energy-audit-energy-management",
+        "title": "Module 1: General aspects of energy management and energy audit energy management",
+        "topics": [
+          {
+            "id": "68a200862b85456187f366fc",
+            "title": "General aspects of energy management and energy audit: Energy Management – Definition, General principles of energy management and energy management planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366fd",
+            "title": "Energy Audit: Definition, need, types and methodologies.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366fe",
+            "title": "Instruments for energy audit, Energy audit report - Power quality audit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366ff",
+            "title": "Energy conservation in buildings: ECBC code (basic aspects), Building Management System (BMS).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-energy-management-02-module-2-energy-efficiency-in-electrical-utilities",
+        "title": "Module 2: Energy efficiency in electrical utilities",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36701",
+            "title": "Energy Efficiency in Electrical Utilities:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36702",
+            "title": "Electricity transmission and distribution system, cascade efficiency.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36703",
+            "title": "Lighting: Modern energy efficient light sources, life and efficacy comparison with older light sources, energy conservation in lighting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36704",
+            "title": "Motors: Development of energy efficient motors and the present status, techniques for improving energy efficiency, necessity for load matching and selection of motors for constant and variable loads.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36705",
+            "title": "Demand side Management: Introduction to DSM, benefits of DSM, different techniques of DSM.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36706",
+            "title": "Power factor improvement, numerical examples.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f36706-q-1",
+                "year": "2024",
+                "question": "A factory has a total load of 800 kW at a power factor of 0.75 lagging. Calculate the required reactive power (kVAR) of the load and the apparent power (kVA). If the factory wants to improve the power factor to 0.92 lagging, what size capacitor bank (in kVAR) is required?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36706-q-2",
+                "year": "2024",
+                "question": "An induction motor draws 100 kW and 50 kVAR lagging from the supply. If the supply voltage is 415 V, calculate the current drawn by the motor. If a capacitor bank of 30 kVAR is connected in parallel, what will be the new power factor and the new current drawn from the supply?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36706-q-3",
+                "year": "2024",
+                "question": "A large industrial facility has an average monthly electricity bill of ₹20,00,000. The power factor is consistently 0.7 lagging. The utility has a power factor penalty of 1% of the total bill for every 0.01 drop in power factor below 0.9. If the facility installs a capacitor bank of 300 kVAR, the power factor improves to 0.93 lagging. The capacitor bank costs ₹4,00,000. Calculate the annual savings and the payback period. Assume the monthly bill is constant throughout the year.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f36707",
+            "title": "Ancillary services: Introduction of ancillary services – Types of Ancillary services",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-energy-management-03-module-3-energy-management-in-electrical-utilities",
+        "title": "Module 3: Energy management in electrical utilities",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36709",
+            "title": "Energy Management in Electrical Utilities:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3670a",
+            "title": "Boilers: working principle - blow down, energy conservation opportunities in boiler.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3670b",
+            "title": "Steam: properties of steam, distribution losses, steam trapping. Identifying opportunities for energy savings in steam distribution.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3670c",
+            "title": "Furnace: General fuel economy measures, energy conservation opportunities in furnaces.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3670d",
+            "title": "HVAC system: Performance and saving opportunities in Refrigeration and Air conditioning systems .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3670e",
+            "title": "Heat Recovery Systems: Waste heat recovery system - Energy saving opportunities.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3670f",
+            "title": "Cogeneration: Types and schemes, optimal operation of cogeneration plants, combined cycle electricity generation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-energy-management-04-module-4-energy-economics-economic-analysis-methods-cash-flow-model-time-value-o",
+        "title": "Module 4: Energy economics economic analysis methods cash flow model time value o",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36711",
+            "title": "Energy Economics: Economic analysis: methods, cash flow model, time value of money, evaluation of proposals, pay-back period, average rate of return method, internal rate of return method, present value method, life cycle costing approach.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36712",
+            "title": "Computer aided Energy Management Systems (EMS).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-high-voltage-engineering",
+    "code": "PEEET633",
+    "name": "HIGH VOLTAGE ENGINEERING",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-high-voltage-engineering-01-module-1-generation-of-high-dc-and-ac-voltages",
+        "title": "Module 1: Generation of high dc and ac voltages",
+        "topics": [
+          {
+            "id": "68a200862b85456187f365f9",
+            "title": "Generation of High DC and AC Voltages- half-wave rectifier circuit- Cockroft-Walton voltage multiplier circuit- Electrostatic generator- Generation of high AC voltages-Cascaded Transformers- Series resonant circuit.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365fa",
+            "title": "Generation of Impulse Voltages and Currents- Impulse voltage- Impulse generator circuits- Multistage impulse generator circuit- Construction of impulse generator- Triggering of impulse generator-Impulse current generation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-high-voltage-engineering-02-module-2-high-voltage-measurement-techniques",
+        "title": "Module 2: High voltage measurement techniques",
+        "topics": [
+          {
+            "id": "68a200862b85456187f365fc",
+            "title": "High Voltage Measurement Techniques -Measuring Spark Gaps - Sphere-to-sphere Spark Gap -Rod-to-rod Spark Gap - Electrostatic Voltmeter- Field Sensors - Electrically Short Sensors, Electrically Long Sensors, Potential-free Probes, Generator-mode Sensors, Electro- optical and Magneto-optical Field Sensors - Voltage Dividers - Instrument Transformers - Measurements of R.M.S. Value, Peak Value and Harmonics - Current Measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365fd",
+            "title": "Dielectric measurements- Dissipation Factor and Capacitance, Insulation Resistance, Conductivity, Dielectric System Response-Partial discharge measuring technique- Requirements on a partial discharge measuring system - Measuring systems for apparent charge – Partial discharge measurements on high-voltage transformers, high-voltage cables, high-voltage gas-insulated substations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-high-voltage-engineering-03-module-3-classification-of-voltages-and-overvoltages",
+        "title": "Module 3: Classification of voltages and overvoltages",
+        "topics": [
+          {
+            "id": "68a200862b85456187f365ff",
+            "title": "Classification of Voltages and Overvoltages-Origin of Overvoltages – Representative Overvoltages- Performance Criterion –Withstand voltage.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36600",
+            "title": "Insulation Coordination Procedure- Determination of Representative Voltages and Overvoltages-Continuous Power Frequency Voltage, Temporary Overvoltages, Slow-Front Overvoltages, Fast-Front Overvoltages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36601",
+            "title": "Determination of Coordination Withstand Voltage (Ucw)-Deterministic Approach, Statistical Approach: Risk of Failure - Determination of Required Withstand Voltage (Urw)-Altitude Correction Factor, Safety Factor (Ks )- Selection of Standard Withstand Voltage (Uw)- Surge Arresters- Rated Voltage- Discharge Current- Impulse Current Tests- Residual Voltages- Arrester Durability Requirements.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-high-voltage-engineering-04-module-4-high-voltage-testing-of-insulators-bushings-isolators-circuit-breakers-",
+        "title": "Module 4: High voltage testing of insulators bushings isolators circuit breakers ",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36603",
+            "title": "High voltage Testing of insulators, bushings, isolators, circuit breakers, transformers, surge diverters, cables.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36604",
+            "title": "Insulation Systems for AC Voltages -Cables, bushings and transformers-Insulation Systems for DC Voltages- Capacitors, HVDC bushings and Cables-Insulation Systems for Impulse Voltages -Electrical Stress and Strength -Energy Storage -Impulse Capacitors (Energy Storage or Surge Capacitors)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36605",
+            "title": "Lightning Protection- Light and Laser Technology- X-ray Technology-Electrostatic Particle Precipitation, Ionization- Spark plugs.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-internet-of-things",
+    "code": "PEEET634",
+    "name": "INTERNET OF THINGS",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot",
+        "title": "Module 1: Introduction to iot technology definitions of iot",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36616",
+            "title": "Introduction to IoT technology: Definitions of IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36617",
+            "title": "Characteristics of IoT devices – power, computational constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36618",
+            "title": "IoT Architectural view – Middleware based architecture, Service oriented architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36619",
+            "title": "M2M Communication and IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3661a",
+            "title": "Typical application areas of IoT technology (case studies of at least four domains) - Energy management and Smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3661b",
+            "title": "IoT for Home, Cities, Environment monitoring, Agriculture, Supply chain and customer monitoring",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing",
+        "title": "Module 2: Components of iot technology identificationaddressing",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3661d",
+            "title": "Components of IoT technology: Identification/Addressing - Electronic Product Codes, RFID, ubiquitous code, IPv4, IPv6.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3661e",
+            "title": "Sensors and Actuators*",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3661f",
+            "title": "IoT Hardware**",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f3661f-q-1",
+                "year": "2024",
+                "question": "What is the primary function of a sensor in an IoT system?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3661f-q-2",
+                "year": "2024",
+                "question": "Name two common types of actuators and provide an example of their application in IoT.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3661f-q-3",
+                "year": "2024",
+                "question": "What are the key components typically found on a microcontroller like an Arduino?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3661f-q-4",
+                "year": "2024",
+                "question": "Which connectivity hardware would be most suitable for a battery-powered sensor that needs to transmit small amounts of data over several kilometers, with very infrequent transmissions?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3661f-q-5",
+                "year": "2024",
+                "question": "Differentiate between a microcontroller and a single-board computer like Raspberry Pi in the context of IoT hardware.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f3661f-q-6",
+                "year": "2024",
+                "question": "Why is power management crucial for IoT devices?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f36620",
+            "title": "IoT Software – overview of Operating systems, Firmware, Middle ware, Application software used in IoT.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36621",
+            "title": "Connectivity for IoT devices – characteristics.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee",
+        "title": "Module 3: Communication technologies for iot zigbee",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36623",
+            "title": "Communication technologies for IoT : Zigbee - key features, architecture, limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36624",
+            "title": "Bluetooth technology - bluetooth stack, piconet, scatternet, limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36625",
+            "title": "Bluetooth Low Energy (key features, architecture, limitations)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36626",
+            "title": "Wifi (IEEE 802.11) technology – key features, limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36627",
+            "title": "Cellular technology – GSM, 3G, 4GLTE (overview), features, limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36628",
+            "title": "LoRa technology – features, LoRaWAN architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36629",
+            "title": "6LoWPAN – features, protocol stack",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3662a",
+            "title": "Narrow Band (NB- IoT) – features, applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3662b",
+            "title": "Sigfox – features, applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non",
+        "title": "Module 4: Iot data management storage technologies for iot hardware volatile non",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3662d",
+            "title": "IoT Data Management : Storage technologies for IoT hardware – Volatile, Non-volatile, Embedded (MTP/OTP), external flash (NAND/NOR), DRAM, eflash, UFS, eMMC (overview of technologies).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3662e",
+            "title": "Cloud and IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3662f",
+            "title": "Cloud computing – architecture, advantages of cloud computing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36630",
+            "title": "Software as a Service (SaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36631",
+            "title": "Platform as a Service (PaaS)",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f36631-q-1",
+                "year": "2024",
+                "question": "Explain how PaaS simplifies the development and management of IoT solutions compared to building everything from scratch. (Knowledge Level: K2 - **CO4**)",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36631-q-2",
+                "year": "2024",
+                "question": "Identify two key components of an IoT PaaS and describe their function. (Knowledge Level: K3 - **CO2, CO4**)",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36631-q-3",
+                "year": "2024",
+                "question": "How does PaaS abstract the concepts of volatile and non-volatile storage for IoT data? Provide an example for each. (Knowledge Level: K2 - **CO4**)",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f36631-q-4",
+                "year": "2024",
+                "question": "Discuss one advantage and one potential challenge of using a PaaS model for an IoT project. (Knowledge Level: K2 - **CO4**)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f36632",
+            "title": "Infrastructure as a Service (IaaS).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36633",
+            "title": "Case study of commercial cloud computing platforms like - Microsoft Azure IoT Suite, Google Cloud's IoT Platform, IBM Watson IoT Platform.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36634",
+            "title": "IoT analytics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-introduction-to-control-systems",
+    "code": "OEEET611",
+    "name": "INTRODUCTION TO CONTROL SYSTEMS",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-introduction-to-control-systems-01-module-1-introduction-to-control-systems",
+        "title": "Module 1: Introduction to control systems",
+        "topics": [
+          {
+            "id": "68a200862b85456187f366ab",
+            "title": "Introduction to Control Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366ac",
+            "title": "mathematical modelling and Transfer function Based Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366ad",
+            "title": "Open loop and Closed loop control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366ae",
+            "title": "Automatic control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366af",
+            "title": "Necessity and significance. (1  hour)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b0",
+            "title": "Modelling of LTI systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b1",
+            "title": "LTI Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b2",
+            "title": "Transfer function representation of differential equation in Laplace domain.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b3",
+            "title": "Electrical, translational and rotational mechanical systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b4",
+            "title": "DC servo-motor modelling.  (4 hours).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b5",
+            "title": "Block diagram representation - block diagram reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b6",
+            "title": "Signal flow graph - Mason's gain formula. (4 hours)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems",
+        "title": "Module 2: Performance analysis of control systems",
+        "topics": [
+          {
+            "id": "68a200862b85456187f366b8",
+            "title": "Performance Analysis of Control Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366b9",
+            "title": "Time domain analysis of control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366ba",
+            "title": "Impulse and Step responses of first and second order systems - Pole dominance for higher order systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366bb",
+            "title": "Time domain specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366bc",
+            "title": "Steady state error analysis and static error constants (5 hours)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366bd",
+            "title": "Characteristic equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366be",
+            "title": "Routh stability criterion. (3 hours)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers",
+        "title": "Module 3: Root locus analysis and controllers",
+        "topics": [
+          {
+            "id": "68a200862b85456187f366c0",
+            "title": "Root Locus Analysis and Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366c1",
+            "title": "Root locus technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366c2",
+            "title": "Construction of Root locus - stability analysis- effect of addition of poles and zeros",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366c3",
+            "title": "Effect of positive feedback systems on Root locus.  (5 hours)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366c4",
+            "title": "Controller design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366c5",
+            "title": "Types of controllers and their control action-proportional (P), integral (I), derivative (D), PID control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366c6",
+            "title": "PID tuning using Ziegler-Nichols method. (3 hours)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-introduction-to-control-systems-04-module-4-frequency-domain-analysis",
+        "title": "Module 4: Frequency domain analysis",
+        "topics": [
+          {
+            "id": "68a200862b85456187f366c8",
+            "title": "Frequency domain analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366c9",
+            "title": "Bode Plot",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366ca",
+            "title": "Construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366cb",
+            "title": "Concept of gain margin and phase margin-stability analysis. (4 hours)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366cc",
+            "title": "Frequency domain specifications - correlation between time domain and frequency domain responses (Resonant peak and resonant frequency). (2 hours)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366cd",
+            "title": "Polar plot",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366ce",
+            "title": "Gain margin and phase margin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366cf",
+            "title": "Stability analysis.  (2 hours)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366d0",
+            "title": "Nyquist stability criterion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f366d1",
+            "title": "Concept of Nichols Chart. (3 hours)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-operating-systems",
+    "code": "PEEET632",
+    "name": "OPERATING SYSTEMS",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-operating-systems-01-module-1-introduction-operating-system-overview-functions-boot-process",
+        "title": "Module 1: Introduction operating system overview functions boot process",
+        "topics": [
+          {
+            "id": "68a200862b85456187f365de",
+            "title": "Introduction: Operating system overview – Functions, Boot Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365df",
+            "title": "Processes - Process states, Process control block, threads, scheduling, Operations on processes - process creation and termination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365e0",
+            "title": "Inter-process communication - shared memory systems, Message passing systems.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-operating-systems-02-module-2-process-scheduling-basic-concepts",
+        "title": "Module 2: Process scheduling basic concepts",
+        "topics": [
+          {
+            "id": "68a200862b85456187f365e2",
+            "title": "Process Scheduling – Basic concepts- Scheduling criteria -scheduling algorithms- First come First Served, Shortest Job Firs, Priority scheduling, Round robin scheduling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365e3",
+            "title": "Process synchronization- Race conditions – Critical section problem – Peterson’s solution, Synchronization hardware, Mutex Locks, Semaphores, Monitors – Synchronization problems - Producer Consumer, Dining Philosophers and Readers-Writers.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-operating-systems-03-module-3-deadlocks-necessary-conditions-resource-allocation-graphs-deadlock-prev",
+        "title": "Module 3: Deadlocks necessary conditions resource allocation graphs deadlock prev",
+        "topics": [
+          {
+            "id": "68a200862b85456187f365e5",
+            "title": "Deadlocks: Necessary conditions, Resource allocation graphs, Deadlock prevention, Deadlock avoidance – Banker’s algorithms, Deadlock detection, Recovery from deadlock.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365e6",
+            "title": "Memory Management: Concept of address spaces, Swapping, Contiguous memory allocation, fixed and variable partitions, Segmentation, Paging. Virtual memory, Demand paging, Page replacement algorithms.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f365e6-q-1",
+                "year": "2024",
+                "question": "List and briefly explain the four necessary conditions for a deadlock to occur.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f365e6-q-2",
+                "year": "2024",
+                "question": "Consider a system with two processes, P1 and P2, and two resources, R1 and R2. P1 holds R1 and requests R2. P2 holds R2 and requests R1. Draw the Resource Allocation Graph for this scenario. Does a deadlock exist? Explain.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f365e6-q-3",
+                "year": "2024",
+                "question": "What is the primary drawback of the \"prevent hold and wait\" strategy for deadlock prevention?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f365e6-q-4",
+                "year": "2024",
+                "question": "Differentiate between internal and external fragmentation. Give an example for each.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f365e6-q-5",
+                "year": "2024",
+                "question": "Explain the purpose of a Page Table in paging. How does it work?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f365e6-q-6",
+                "year": "2024",
+                "question": "What is the fundamental principle behind the LRU page replacement algorithm?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f365e6-q-7",
+                "year": "2024",
+                "question": "Describe the steps involved in handling a page fault in a demand paging system.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee-6-operating-systems-04-module-4-file-system-file-concept",
+        "title": "Module 4: File system file concept",
+        "topics": [
+          {
+            "id": "68a200862b85456187f365e8",
+            "title": "File System: File concept - Attributes, Operations, types, structure – Access methods, Protection. File-system implementation, Directory implementation. Allocation methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f365e9",
+            "title": "Storage Management: Magnetic disks, Solid-state disks, Disk Structure, Disk scheduling, Disk formatting.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-optimization-techniques",
+    "code": "PEEET638",
+    "name": "OPTIMIZATION TECHNIQUES",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-optimization-techniques-01-module-1-motivation-and-introduction-to-optimization-in-engineering-practice",
+        "title": "Module 1: Motivation and introduction to optimization in engineering practice",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3668e",
+            "title": "Motivation and introduction to optimization in engineering practice",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3668f",
+            "title": "Properties of single variable functions and optimality criteria, Region elimination methods, Polynomial estimation methods - quadratic estimation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36690",
+            "title": "Bisection method, Newton raphson method, Secant method, Cubic search method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36691",
+            "title": "Functions of several variables, optimality criteria, Direct search method, Hooke-Jeeves pattern search method, Powell’s method, Gradient search methods - Cauchy’s method, Newton’s method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-optimization-techniques-02-module-2-formulation-of-linear-programming-models-graphical-solution-in-two-vari",
+        "title": "Module 2: Formulation of linear programming models graphical solution in two vari",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36693",
+            "title": "Formulation of linear programming models, Graphical solution in two variables, Standard form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36694",
+            "title": "Simplex method, Duality, Dual simplex method - Karmarkar’s method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-optimization-techniques-03-module-3-equality-constrained-problems",
+        "title": "Module 3: Equality constrained problems",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36696",
+            "title": "Equality constrained problems - Lagrange multipliers - Kuhn Tucker conditions - Kuhn Tucker theorems - Saddlepoint conditions - Second order optimality conditions - Generalized Lagrangian multiplier method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36697",
+            "title": "Transformation methods - Concept of penalty - penalty functions - Method of Multipliers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-optimization-techniques-04-module-4-constrained-direct-search",
+        "title": "Module 4: Constrained direct search",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36699",
+            "title": "Constrained direct search - simple direct search method - Complex method - Random search methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3669a",
+            "title": "Linearization methods for constrained Problems - Successive linear problems - Separable programming - Method of feasible directions - Simplex extensions for linearly constrained problems - Generalized reduced gradient method",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-power-system-lab",
+    "code": "PCEEL609",
+    "name": "POWER SYSTEM LAB",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-power-system-lab-01-module-1-y",
+        "title": "Module 1: Y",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367dd",
+            "title": "Y-Bus formulation:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367de",
+            "title": "Aim: (i) To formulate the bus admittance matrix of the given power system from its single line diagram, using basic MATLAB programming.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367df",
+            "title": "(ii) To incorporate changes in basic topology.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants",
+        "title": "Module 2: Transmission line modelling abcd constants",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367e1",
+            "title": "Transmission Line Modelling: ABCD constants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367e2",
+            "title": "Aim: (i) To model the given medium transmission line using nominal T and nominal pi representation and to derive the ABCD constants using basic MATLAB programming.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-03-module-3-load-flow-analysis-gauss",
+        "title": "Module 3: Load flow analysis gauss",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367e4",
+            "title": "Load Flow Analysis – Gauss-Siedel Method, Newton - Raphson Method, Fast Decoupled Method – Aim: (i) To conduct load flow analysis using Gauss-Siedel method, Newton-Raphson method, Fast Decoupled method and to study the effect of change in load/generation schedule.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-04-module-4-load-flow-analysis-gauss",
+        "title": "Module 4: Load flow analysis gauss",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367e6",
+            "title": "Load Flow Analysis  – Gauss-Siedel Method, Newton - Raphson Method, Fast Decoupled Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367e7",
+            "title": "Aim: (i) To conduct load flow analysis using Gauss-Siedel method, Newton-Raphson method, Fast Decoupled method and to study the effect of change in real power/reactive power limits.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-05-module-5-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults",
+        "title": "Module 5: Short circuit analysis symmetrical faults and unsymmetrical faults",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367e9",
+            "title": "Short Circuit Analysis  – Symmetrical Faults and Unsymmetrical Faults",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367ea",
+            "title": "Aim: (i) To conduct short circuit analysis for symmetrical and unsymmetrical faults.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-06-module-6-transient-stability-analysis",
+        "title": "Module 6: Transient stability analysis",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367ec",
+            "title": "Transient Stability Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367ed",
+            "title": "Aim: To conduct transient stability analysis of a given system and plot suitable graphs using MATLAB Simulink or dedicated software (if available)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-07-module-7-automatic-generation-control-single-area-two-area",
+        "title": "Module 7: Automatic generation control single area two area",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367ef",
+            "title": "Automatic Generation Control –  Single Area, Two Area",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200862b85456187f367ef-q-1",
+                "year": "2024",
+                "question": "What are the two primary objectives of AGC in a single control area?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f367ef-q-2",
+                "year": "2024",
+                "question": "Define the Area Control Error (ACE) for a single control area, assuming no tie-lines.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f367ef-q-3",
+                "year": "2024",
+                "question": "Explain the concept of speed droop ($R$) for a governor. How does a smaller droop value affect the system's frequency response?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f367ef-q-4",
+                "year": "2024",
+                "question": "A single area system has a frequency deviation of -0.1 Hz and a frequency bias of 100 MW/Hz. Calculate the ACE.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f367ef-q-5",
+                "year": "2024",
+                "question": "What is the formula for ACE in a two-area interconnected system? Define each term.",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f367ef-q-6",
+                "year": "2024",
+                "question": "If Area 1's scheduled tie-line flow to Area 2 is 50 MW, and the actual flow is 60 MW, what is the $\\Delta P_{tie}$ term for Area 1's ACE calculation?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f367ef-q-7",
+                "year": "2024",
+                "question": "Consider two areas connected by a tie-line. A load increase occurs in Area 1. How will this disturbance affect the frequency in Area 2, assuming no AGC action initially?",
+                "marks": 3
+              },
+              {
+                "id": "68a200862b85456187f367ef-q-8",
+                "year": "2024",
+                "question": "In a two-area system, if $B_1 = 150 \\, \\text{MW/Hz}$, $B_2 = 120 \\, \\text{MW/Hz}$, $\\Delta f_1 = 0.05 \\, \\text{Hz}$, $\\Delta f_2 = -0.02 \\, \\text{Hz}$, and the tie-line flow from Area 1 to Area 2 is $\\Delta P_{tie12} = 20 \\, \\text{MW}$. Calculate $ACE_1$ and $ACE_2$.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200862b85456187f367f0",
+            "title": "Aim: To implement Automatic Generation Control in MATLAB Simulink.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-08-module-8-automatic-voltage-regulator",
+        "title": "Module 8: Automatic voltage regulator",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367f2",
+            "title": "Automatic Voltage Regulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367f3",
+            "title": "Aim: To implement Automatic Voltage Regulator in MATLAB Simulink.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation",
+        "title": "Module 9: Ferranti effect and reactive power compensation",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367f5",
+            "title": "Ferranti Effect and Reactive Power Compensation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367f6",
+            "title": "Aim: (i) To exhibit Ferranti effect in a lightly loaded long transmission line in MATLAB Simulink and to show the effect of reactive power compensation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367f7",
+            "title": "(ii) To calculate Surge Impedance Loading of the line",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-10-module-10-plot-the-iv-characteristics-of-a-pv-module-and-determine-maximum-power",
+        "title": "Module 10: Plot the iv characteristics of a pv module and determine maximum power",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367f9",
+            "title": "Plot the IV characteristics of a PV module and determine Maximum Power Point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f367fa",
+            "title": "Aim: To plot the IV characteristics of a PV module in MATLAB Simulink and determine the Maximum Power Point",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-11-module-11-high-voltage-testing-power-frequency-impulse",
+        "title": "Module 11: High voltage testing power frequency impulse",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367fc",
+            "title": "High Voltage Testing  – Power frequency /impulse",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-12-module-12-high-voltage-testing",
+        "title": "Module 12: High voltage testing",
+        "topics": [
+          {
+            "id": "68a200862b85456187f367fe",
+            "title": "High Voltage Testing - DC",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-",
+        "title": "Module 13: Relay testing over current relay earth fault electromechanical static ",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36800",
+            "title": "Relay Testing – Over current Relay / Earth Fault (Electromechanical / Static /Numerical)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36801",
+            "title": "Aim: To draw the characteristics of the given relay.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum",
+        "title": "Module 14: Relay testing voltage relay impedance relay electromechanicalstaticnum",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36803",
+            "title": "Relay Testing  –Voltage relay/ Impedance Relay (Electromechanical/Static/Numerical)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36804",
+            "title": "Aim: To draw the characteristics of the given relay.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-15-module-15-insulation-testing-lt-ht-cable",
+        "title": "Module 15: Insulation testing lt ht cable",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36806",
+            "title": "Insulation Testing – LT & HT Cable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36807",
+            "title": "Aim: To determine the insulation resistance of the given LT & HT cable.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-16-module-16-testing-of-ct-and-pt",
+        "title": "Module 16: Testing of ct and pt",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36809",
+            "title": "Testing of CT and PT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3680a",
+            "title": "Aim: To conduct ratio test of the given CT and PT.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-17-module-17-testing-of-transformer-oil",
+        "title": "Module 17: Testing of transformer oil",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3680c",
+            "title": "Testing of transformer oil",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3680d",
+            "title": "Aim: To determine the dielectric strength of the given sample of transformer oil.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-18-module-18-testing-of-dielectric-strength-of-solid-insulating-materials",
+        "title": "Module 18: Testing of dielectric strength of solid insulating materials",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3680f",
+            "title": "Testing of dielectric strength of solid insulating materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36810",
+            "title": "Aim: To determine the dielectric strength of the solid insulating material given.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-19-module-19-testing-of-dielectric-strength-of-air",
+        "title": "Module 19: Testing of dielectric strength of air",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36812",
+            "title": "Testing of dielectric strength of air",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36813",
+            "title": "Aim: To determine the dielectric strength of air.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-power-system-lab-20-module-20-power-factor-improvement",
+        "title": "Module 20: Power factor improvement",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36815",
+            "title": "Power factor improvement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36816",
+            "title": "Aim: To calculate the power factor of the given RL series circuit (transmission line) and design the capacitance required to improve the power factor to the desired value.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-6-renewable-energy-systems",
+    "code": "OEEET613",
+    "name": "RENEWABLE ENERGY SYSTEMS",
+    "branchId": "ee",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ee-6-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve",
+        "title": "Module 1: Introduction principles of renewable energy energy and sustainable deve",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3672d",
+            "title": "Introduction:  Principles of renewable energy; energy and sustainable development, fundamentals and social implications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3672e",
+            "title": "Worldwide renewable energy availability, renewable energy availability in India, types of renewable energy.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3672f",
+            "title": "Wind Energy: Properties of wind, availability of wind energy in India, wind velocity and power from wind (numerical problems); major problems associated with wind power,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36730",
+            "title": "Basic components of wind energy conversion system (WECS); Classification of WECS- Horizontal axis- single, double and multi-blade system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36731",
+            "title": "Vertical axis - Savonius and Darrieus types.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-renewable-energy-systems-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation",
+        "title": "Module 2: Solar energy fundamentals solar radiation estimation of solar radiation",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36733",
+            "title": "Solar Energy:  Fundamentals; Solar Radiation; Estimation of solar radiation on horizontal and inclined surfaces; Solar radiation Measurements - Pyrheliometers, Pyranometer, Sunshine Recorder.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36734",
+            "title": "Solar Thermal systems: concentrating and non-concentrating collectors - Flat plate collectors; Solar tower electric power plant.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36735",
+            "title": "Photovoltaic system for electric power generation – Classification of PV system - Principle of Solar cell, advantages, disadvantages and applications of solar photovoltaic system.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-renewable-energy-systems-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation",
+        "title": "Module 3: Biomass energy introduction principle of biomass energy generation",
+        "topics": [
+          {
+            "id": "68a200862b85456187f36737",
+            "title": "Biomass Energy: Introduction; Principle of biomass energy generation - Biofuels; Biomass Resources; Biomass conversion technologies-fixed dome type biogas plant; Urban waste to energy conversion; Biomass gasification (Downdraft).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f36738",
+            "title": "Tidal Power:  Tides and waves as energy suppliers and their mechanics; fundamental characteristics of tidal power, classification of tidal power plants - harnessing tidal energy, advantages and limitations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-6-renewable-energy-systems-04-module-4-ocean-thermal-energy-conversion-principle-of-working-classification-ote",
+        "title": "Module 4: Ocean thermal energy conversion principle of working classification ote",
+        "topics": [
+          {
+            "id": "68a200862b85456187f3673a",
+            "title": "Ocean Thermal Energy Conversion: Principle of working, classification, OTEC power stations in the world, environmental impacts associated with OTEC.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3673b",
+            "title": "Introduction to geothermal energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3673c",
+            "title": "Green Energy:  Introduction, Fuel cells: Classification of fuel cells – Hydrogen energy; Operating principles, Zero-energy Concepts.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200862b85456187f3673d",
+            "title": "Benefits of hydrogen energy, hydrogen production technologies (electrolysis method only), hydrogen energy storage, applications of hydrogen energy, problem associated with hydrogen energy.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

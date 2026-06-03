@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "ee-8-electronic-communication",
+    "code": "PEEET864",
+    "name": "ELECTRONIC COMMUNICATION",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-electronic-communication-01-module-1-analog-communication",
+        "title": "Module 1: Analog communication",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36be2",
+            "title": "Analog Communication:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36be3",
+            "title": "Introduction to communication systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36be4",
+            "title": "Classification of channels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36be5",
+            "title": "Need for modulation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36be6",
+            "title": "Amplitude modulation:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36be7",
+            "title": "Equation and frequency spectrum of AM signal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36be8",
+            "title": "Double-side band suppressed carrier (DSB-SC) modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36be9",
+            "title": "Sin-gle sideband modulation (SSB)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bea",
+            "title": "comparison of spectrum, power and effi-ciency of all the three variants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36beb",
+            "title": "Amplitude modulator circuits -balanced modulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bec",
+            "title": "AM demodulators – Envelope detector.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-electronic-communication-02-module-2-angle-modulation",
+        "title": "Module 2: Angle modulation",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36bee",
+            "title": "Angle Modulation:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bef",
+            "title": "Frequency and phase modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bf0",
+            "title": "Narrow and wide band FM and their spectra",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bf1",
+            "title": "Modulation and demodulation techniques for FM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bf2",
+            "title": "pre-emphasis and de-emphasis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bf3",
+            "title": "FM transmitter and receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bf4",
+            "title": "Noise in receivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bf5",
+            "title": "Noise figures",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36bf5-q-1",
+                "year": "2024",
+                "question": "An amplifier has a power gain of 100 and a noise figure of 4 dB. If the input signal is at room temperature (290 K) and has a noise power of $10^{-14}$ W, what is the output noise power?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36bf5-q-2",
+                "year": "2024",
+                "question": "A receiver consists of three cascaded stages with the following parameters:",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36bf5-q-3",
+                "year": "2024",
+                "question": "Explain why the first stage of a receiver typically has the lowest noise figure. (Relates to CO2 and general receiver design)",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36bf5-q-4",
+                "year": "2024",
+                "question": "How does the noise performance of FM differ from AM, particularly concerning the threshold effect and limiting? (Relates to CO2)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36bf6",
+            "title": "Performance of analog modulation schemes in AWGN: SNR and figure of merit for different schemes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-electronic-communication-03-module-3-digital-baseband-communication",
+        "title": "Module 3: Digital baseband communication",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36bf8",
+            "title": "Digital baseband communication:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bf9",
+            "title": "Elements of digital communication system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bfa",
+            "title": "Sources, channels and receivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bfb",
+            "title": "Sampling and Reconstruction of Analog Signals:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bfc",
+            "title": "Nyquist Sampling Theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bfd",
+            "title": "Ideal Reconstruction Filter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bfe",
+            "title": "Pulse Amplitude Modulation (PAM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bff",
+            "title": "Time division multiplexing with PAM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c00",
+            "title": "Pulse Code Modulation (PCM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c01",
+            "title": "A-law and mu-law quantization.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-electronic-communication-04-module-4-digital-bandpass-communication",
+        "title": "Module 4: Digital bandpass communication",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c03",
+            "title": "Digital bandpass communication :",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c04",
+            "title": "Digital bandpass communication system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c05",
+            "title": "Bandpass modulation techniques:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c06",
+            "title": "Amplitude shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c07",
+            "title": "Phase shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c08",
+            "title": "Frequency shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c09",
+            "title": "Methods of generation and detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c0a",
+            "title": "Signal constellations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c0b",
+            "title": "M-ary digital modulation schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c0c",
+            "title": "Quadrature phase shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c0d",
+            "title": "Minimum shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c0e",
+            "title": "Quadrature amplitude modulation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-hvdc-and-facts",
+    "code": "PEEET862",
+    "name": "HVDC AND FACTS",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission",
+        "title": "Module 1: Introduction to hvdc system comparison of ac and dc transmission",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b70",
+            "title": "Introduction to HVDC System: Comparison of AC and DC Transmission - Types of HVDC system - Current Source Converters - Analysis without and with overlap period.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b71",
+            "title": "Voltage Source Converters (VSC) - VSC with AC current control and VSC with AC voltage control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b72",
+            "title": "HVDC Controls  - Functions of HVDC Controls - Equivalent circuit for a two terminal DC Link - Control Basics for a two terminal DC Link - Current Margin Control Method - Current Control at the Rectifier - Inverter Extinction Angle Control - Hierarchy of Controls",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an",
+        "title": "Module 2: Introduction to facts power flow in power systems voltage regulation an",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b74",
+            "title": "Introduction to FACTS:  Power flow in Power Systems – Voltage regulation and reactive power flow control in Power Systems - Power flow control -Constraints of maximum transmission line loading - Needs and emergence of FACTS - Types of FACTS controllers-Advantages and disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b75",
+            "title": "Transmission line compensation- Uncompensated line -shunt compensation - Series compensation -Phase angle control.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator",
+        "title": "Module 3: Shunt and series facts devices static shunt compensator",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b77",
+            "title": "Shunt and Series Facts Devices: Static shunt Compensator - Objectives of shunt compensations - Variable impedance type VAR Generators -TCR, TSR, TSC, FC-TCR (Principle of operation and schematic) and - STATCOM (Principle of operation and schematic).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b78",
+            "title": "Static Series compensator - Objectives of series compensations-Variable impedance type series compensators - GCSC. TCSC, TSSC (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b79",
+            "title": "Switching converter type Series Compensators-(SSSC) (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati",
+        "title": "Module 4: Upfc and ipfc unified power flow controller circuit arrangement operati",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b7b",
+            "title": "UPFC AND IPFC: Unified Power Flow Controller: Circuit Arrangement, Operation of UPFC- Basic principle of P and Q control- independent real and reactive power flow control- Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b7c",
+            "title": "Introduction to interline power flow controller (IPFC) (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b7d",
+            "title": "Thyristor controlled Voltage and Phase angle Regulators (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-introduction-to-robotics",
+    "code": "OEEET831",
+    "name": "INTRODUCTION TO ROBOTICS",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-introduction-to-robotics-01-module-1-definitions",
+        "title": "Module 1: Definitions",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c3f",
+            "title": "Definitions-  Robots, Robotics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c40",
+            "title": "Types of Robots- Manipulators, Mobile Robots-wheeled & Legged Robots, Aerial Robots",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36c40-q-1",
+                "year": "2024",
+                "question": "A robot used for high-speed pick-and-place operations on an assembly line in a factory, where it needs to move objects horizontally with great precision, is most likely a:",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c40-q-2",
+                "year": "2024",
+                "question": "Which type of mobile robot is best suited for navigating a cluttered, uneven terrain like a collapsed building for search and rescue operations?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c40-q-3",
+                "year": "2024",
+                "question": "What are the primary advantages of a SCARA robot for assembly tasks compared to an articulated robot? (Relates to CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c40-q-4",
+                "year": "2024",
+                "question": "Identify two distinct applications for aerial robots and explain why their aerial capability is essential for those tasks. (Relates to CO1)",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c40-q-5",
+                "year": "2024",
+                "question": "Describe the key difference in locomotion mechanisms between a differential drive wheeled robot and a bipedal legged robot. (Relates to CO1)",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36c41",
+            "title": "Anatomy of a robotic manipulator-links, joints, actuators, sensors, controller",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36c41-q-1",
+                "year": "2024",
+                "question": "What are the two primary types of joints in a robotic manipulator, and what kind of motion does each allow?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c41-q-2",
+                "year": "2024",
+                "question": "Give an example of a robotic manipulator configuration that uses only prismatic joints.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c41-q-3",
+                "year": "2024",
+                "question": "Which component of a robotic manipulator is responsible for generating motion?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c41-q-4",
+                "year": "2024",
+                "question": "Differentiate between proprioceptive and exteroceptive sensors in robotics. Provide an example of each.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c41-q-5",
+                "year": "2024",
+                "question": "What is the fundamental role of the controller in a robotic system?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c41-q-6",
+                "year": "2024",
+                "question": "A robot arm has two revolute joints and one prismatic joint. How many degrees of freedom does this manipulator have? What type of configuration might this represent?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c41-q-7",
+                "year": "2024",
+                "question": "Briefly explain why closed-loop control is generally preferred over open-loop control in robotics.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36c42",
+            "title": "open kinematic vs closed kinematic chain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c43",
+            "title": "degrees of freedom",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c44",
+            "title": "Robot considerations for an application- number of axes, work volume, capacity & speed, stroke &reach, Repeatability, Precision and Accuracy, Operating environment, point to point control or continuous path control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-introduction-to-robotics-02-module-2-sensors-and-actuators",
+        "title": "Module 2: Sensors and actuators",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c46",
+            "title": "Sensors and Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c47",
+            "title": "Sensor classification- touch, force, proximity, vision sensors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c48",
+            "title": "Internal sensors-Position sensors, velocity sensors, acceleration sensors, Force sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c49",
+            "title": "External sensors-contact type, noncontact type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c4a",
+            "title": "Actuators for robots- classification-Electric, Hydraulic, Pneumatic actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c4b",
+            "title": "their advantages and disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c4c",
+            "title": "Electric actuators- Stepper motors, DC motors, DC servo motors and their drivers, AC motors, Linear actuators, selection of motors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c4d",
+            "title": "Robotic configurations and end effectors Robot configurations-PPP, RPP, RRP, RRR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c4e",
+            "title": "features of SCARA, PUMA Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c4f",
+            "title": "Classification of robots based on motion control methods and drive technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c50",
+            "title": "3R concurrent wrist",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c51",
+            "title": "Classification of End effectors - mechanical grippers, special tools, Magnetic grippers, Vacuum grippers, adhesive grippers, Active and passive grippers, selection and design considerations of grippers in robot.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-introduction-to-robotics-03-module-3-kinematics-and-motion-planning",
+        "title": "Module 3: Kinematics and motion planning",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c53",
+            "title": "Kinematics and Motion Planning",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200872b85456187f36c53-q-1",
+                "year": "2024",
+                "question": "For a revolute joint, which parameter describes the motion?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-2",
+                "year": "2024",
+                "question": "What is the primary purpose of the Denavit-Hartenberg (D-H) convention in robotics?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-3",
+                "year": "2024",
+                "question": "If you are given the lengths of the links of a 2-DOF planar robot and the desired position $(x, y)$ for its end-effector, what problem are you trying to solve to find the joint angles?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-4",
+                "year": "2024",
+                "question": "Briefly explain the difference between the reachability workspace and the orientation workspace.",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-5",
+                "year": "2024",
+                "question": "Consider a simple 2-DOF planar robot with link lengths $L_1$ and $L_2$. If $L_1 = 1m$ and $L_2 = 0.5m$, calculate the joint angles $(\\theta_1, \\theta_2)$ for the end-effector to be at $(x, y) = (1.2, 0.5)$. (Assume $\\theta_1$ is the angle of the first link with the x-axis and $\\theta_2$ is the angle of the second link relative to the first link).",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-6",
+                "year": "2024",
+                "question": "When generating a trajectory in joint space, what is being directly controlled as a function of time?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-7",
+                "year": "2024",
+                "question": "What is a key advantage of generating trajectories in joint space compared to Cartesian space?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-8",
+                "year": "2024",
+                "question": "What additional information does a trajectory have compared to a path?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-9",
+                "year": "2024",
+                "question": "Why are quintic polynomials often preferred for trajectory generation over linear or cubic polynomials?",
+                "marks": 3
+              },
+              {
+                "id": "68a200872b85456187f36c53-q-10",
+                "year": "2024",
+                "question": "If you need a robot to draw a perfectly straight line with its end-effector, in which space would you ideally plan the trajectory, and why?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200872b85456187f36c54",
+            "title": "Robot Coordinate Systems- Fundamental and composite rotations, homogeneous co-ordinates and transformations, Kinematic parameters, D-H representation, Direct Kinematics.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c55",
+            "title": "The Arm equation- forward Kinematic analysis of a typical robots upto 3 DOF.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c56",
+            "title": "Motion Planning- joint space trajectory planning-cubic polynomial, linear trajectory with parabolic blends",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c57",
+            "title": "Cartesian space planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c58",
+            "title": "Point to point vs continuous path planning.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots",
+        "title": "Module 4: Dynamics and control of robots",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c5a",
+            "title": "Dynamics and Control of Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c5b",
+            "title": "Building of a servo controlled robot – 1R two link chain, construction of link and joint and mounting of encoder, actuator, etc.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c5c",
+            "title": "Dynamics- Dynamic model of a robot using Lagrange’s equation, dynamic modelling of 1DOF robot, including motor and gearbox, 2R planar manipulator.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c5d",
+            "title": "Control Techniques- Transfer function and state space representation, Performance and stability of feedback control, PID control of a single link manipulator, selection of PID controller gains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c5e",
+            "title": "nonlinear nature of manipulators, and need for nonlinear control techniques.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-mechatronic-systems",
+    "code": "PEEET863",
+    "name": "MECHATRONIC SYSTEMS",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste",
+        "title": "Module 1: Introduction to mechatronics introduction examples of mechatronic syste",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b8f",
+            "title": "Introduction to Mechatronics: Introduction, Examples of Mechatronic systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b90",
+            "title": "Electric circuits and components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b91",
+            "title": "Semiconductor Electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b92",
+            "title": "Transistor Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b93",
+            "title": "Sensors and transducers: Performance terminology of sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b94",
+            "title": "Displacement, Position & Proximity Sensors-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b95",
+            "title": "Displacement, Position & Proximity Sensors-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b96",
+            "title": "Force, Fluid pressure, Liquid flow sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b97",
+            "title": "temperature, light sensor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b98",
+            "title": "Acceleration and Vibration measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b99",
+            "title": "Semiconductor sensor and MEMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b9a",
+            "title": "SAW",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system",
+        "title": "Module 2: Actuators and mechanisms mechanical actuation system",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b9c",
+            "title": "Actuators and mechanisms: Mechanical Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b9d",
+            "title": "Hydraulic & Pneumatic Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b9e",
+            "title": "Electrical Actuation System-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b9f",
+            "title": "Electrical Actuation System-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba0",
+            "title": "Data Presentation system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba1",
+            "title": "Signal conditioning: Introduction to signal processing & Op-Amp",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba2",
+            "title": "Op-Amp as signal conditioner",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba3",
+            "title": "Analogue to Digital Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba4",
+            "title": "Digital to Analogue Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba5",
+            "title": "Artificial intelligence",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits",
+        "title": "Module 3: Microprocessors and microcontrollers digital circuits",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36ba7",
+            "title": "Microprocessors and microcontrollers: Digital circuits-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba8",
+            "title": "Digital circuits-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ba9",
+            "title": "Microprocessor Micro Controller",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36baa",
+            "title": "Programming of Microcontrollers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bab",
+            "title": "Modeling and system response: Mechanical system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bac",
+            "title": "Electrical system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bad",
+            "title": "Fluid system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bae",
+            "title": "Dynamic response of systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36baf",
+            "title": "Transfer function and frequency response",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers",
+        "title": "Module 4: Closed loop controllers p i pid controllers",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36bb1",
+            "title": "Closed loop controllers:  P, I, PID Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bb2",
+            "title": "Digital Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bb3",
+            "title": "Program Logic Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bb4",
+            "title": "Input/output & Communication systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bb5",
+            "title": "Fault findings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36bb6",
+            "title": "Mechatronics designs, examples and case studies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-mechatronic-systems-and-control",
+    "code": "OEEET833",
+    "name": "MECHATRONIC SYSTEMS AND CONTROL",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction",
+        "title": "Module 1: Introduction to mechatronics introduction",
+        "topics": [
+          {
+            "id": "68a200882b85456187f36cab",
+            "title": "Introduction to Mechatronics: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cac",
+            "title": "Examples of Mechatronic systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cad",
+            "title": "Electric circuits and components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cae",
+            "title": "Semiconductor Electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36caf",
+            "title": "Transistor Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb0",
+            "title": "Sensors and transducers: Performance terminology of sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb1",
+            "title": "Displacement, Position & Proximity Sensors-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb2",
+            "title": "Displacement, Position & Proximity Sensors-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb3",
+            "title": "Force",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb4",
+            "title": "Fluid pressure",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200882b85456187f36cb4-q-1",
+                "year": "2024",
+                "question": "A hydraulic press has an input piston with an area of $0.01 \\text{ m}^2$ and an output piston with an area of $0.1 \\text{ m}^2$. If a force of $100 \\text{ N}$ is applied to the input piston, what is the force exerted by the output piston?",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cb4-q-2",
+                "year": "2024",
+                "question": "A tire gauge reads $35 \\text{ psi}$. If the local atmospheric pressure is $14.7 \\text{ psi}$, what is the absolute pressure inside the tire?",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cb4-q-3",
+                "year": "2024",
+                "question": "A pneumatic cylinder has a piston with a diameter of $50 \\text{ mm}$. If it operates at an air pressure of $6 \\text{ bar}$, what is the maximum force the cylinder can produce? (Assume atmospheric pressure is negligible for force calculation, i.e., use gauge pressure).",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cb4-q-4",
+                "year": "2024",
+                "question": "Briefly explain the difference between hydraulic and pneumatic actuators in terms of the fluid used and their typical force capabilities.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200882b85456187f36cb5",
+            "title": "Liquid flow sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb6",
+            "title": "temperature",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb7",
+            "title": "light sensor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb8",
+            "title": "Acceleration and Vibration measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cb9",
+            "title": "Semiconductor sensor and MEMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cba",
+            "title": "SAW",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system",
+        "title": "Module 2: Actuators and mechanisms mechanical actuation system",
+        "topics": [
+          {
+            "id": "68a200882b85456187f36cbc",
+            "title": "Actuators and mechanisms: Mechanical Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cbd",
+            "title": "Hydraulic & Pneumatic Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cbe",
+            "title": "Electrical Actuation System-I",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200882b85456187f36cbe-q-1",
+                "year": "2024",
+                "question": "A mechatronic system requires precise positioning with a step resolution of 1.8 degrees. What type of motor would be most suitable for this application, and what are its key advantages?",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cbe-q-2",
+                "year": "2024",
+                "question": "Explain the fundamental difference in how motion is generated in a brushed DC motor versus a brushless DC (BLDC) motor.",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cbe-q-3",
+                "year": "2024",
+                "question": "For a given torque requirement at low speed, which type of DC motor is generally preferred: a series DC motor or a shunt DC motor? Justify your answer.",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cbe-q-4",
+                "year": "2024",
+                "question": "What is the primary advantage of using microstepping in stepper motor control compared to full-stepping?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200882b85456187f36cbf",
+            "title": "Electrical Actuation System-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc0",
+            "title": "Data Presentation system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc1",
+            "title": "Signal conditioning: Introduction to signal processing & Op-Amp",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc2",
+            "title": "Op-Amp as signal conditioner",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc3",
+            "title": "Analogue to Digital Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc4",
+            "title": "Digital to Analogue Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc5",
+            "title": "Artificial intelligence",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits",
+        "title": "Module 3: Microprocessors and microcontrollers digital circuits",
+        "topics": [
+          {
+            "id": "68a200882b85456187f36cc7",
+            "title": "Microprocessors and microcontrollers: Digital circuits-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc8",
+            "title": "Digital circuits-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cc9",
+            "title": "Microprocessor Micro Controller",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cca",
+            "title": "Programming of Microcontrollers Model-ing and system response: Mechanical system model",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "68a200882b85456187f36cca-q-1",
+                "year": "2024",
+                "question": "A simple mass ($m=1$ kg) is attached to a spring ($k=100$ N/m) and a damper ($b=5$ Ns/m).",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cca-q-2",
+                "year": "2024",
+                "question": "Explain why Pulse Width Modulation (PWM) is a common technique used by microcontrollers to control the speed of a DC motor.",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cca-q-3",
+                "year": "2024",
+                "question": "A microcontroller is used to control the position of a robotic arm.",
+                "marks": 3
+              },
+              {
+                "id": "68a200882b85456187f36cca-q-4",
+                "year": "2024",
+                "question": "What is the primary advantage of using a PI controller over a P controller for a system with a constant external load?",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "68a200882b85456187f36ccb",
+            "title": "Electrical system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36ccc",
+            "title": "Fluid system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36ccd",
+            "title": "Dynamic response of systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cce",
+            "title": "Transfer function and frequency response.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers",
+        "title": "Module 4: Closed loop controllers p i pid controllers",
+        "topics": [
+          {
+            "id": "68a200882b85456187f36cd0",
+            "title": "Closed loop controllers:  P, I, PID Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cd1",
+            "title": "Digital Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cd2",
+            "title": "Program Logic Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cd3",
+            "title": "Input/output & Communication systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cd4",
+            "title": "Fault findings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200882b85456187f36cd5",
+            "title": "Mechatronics designs and case studies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-plc-and-automation",
+    "code": "OEEET832",
+    "name": "PLC AND AUTOMATION",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-plc-and-automation-01-module-1-introduction-to-computer-based-control-system",
+        "title": "Module 1: Introduction to computer based control system",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c82",
+            "title": "Introduction to computer based control system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c83",
+            "title": "-Role of computers in measurement and (process) control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c84",
+            "title": "Basic components of computer based measurement and control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c85",
+            "title": "Architecture – computer based process control system –Centralised, Distributed and Hierarchical.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c86",
+            "title": "Human Machine Interface (HMI)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c87",
+            "title": "Hardware for computer based process control system, Interfacing computer system with process.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c88",
+            "title": "Architecture of DDC, SCADA and DCS.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c89",
+            "title": "Programmable logic Controller (PLC ): Introduction, Evolution, Relay VS PLC VS Computer",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-plc-and-automation-02-module-2-plc",
+        "title": "Module 2: Plc",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c8b",
+            "title": "PLC- Hardware and Internal Architecture-Input –output devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c8c",
+            "title": "Basics of Ladder Programming, on/off instructions, internal relay, jump instructions, data handling instruction, data manipulation instructions, Arithmetic and Comparison ,PID and other important instructions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems",
+        "title": "Module 3: Timers and counters in plc problems",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c8e",
+            "title": "Timers and Counters in PLC. Problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c8f",
+            "title": "Design Development and Simulation of PLC Programme Program on Temperature control Valve sequencing, Conveyor belt control and Control of a process.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c90",
+            "title": "PLC Installation, trouble shooting and maintenance, Design of Alarms and Interlocks, Networks of PLC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c91",
+            "title": "Distributed Control System- DCS - Evolution– Various Architectures – Comparison – Local control unit",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-plc-and-automation-04-module-4-dcs",
+        "title": "Module 4: Dcs",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36c93",
+            "title": "DCS -LCU Languages-Process interfacing issues-communication facilities-Operator interface-Low level and High level Operator interface- Displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36c94",
+            "title": "Engineering interfaces – Low level and high level engineering interfaces – Factors to be considered in selecting DCS – Other key issues in DCS – Packaging and Power system issues.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-smart-grid-technologies",
+    "code": "PEEET861",
+    "name": "SMART GRID TECHNOLOGIES",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid",
+        "title": "Module 1: Introduction to smart grid evolution of electric grid",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36ae7",
+            "title": "Introduction to Smart Grid: Evolution of electric grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ae8",
+            "title": "Definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36ae9",
+            "title": "Need for smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aea",
+            "title": "Smart grid drivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aeb",
+            "title": "Functions of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aec",
+            "title": "Opportunities and barriers of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aed",
+            "title": "Difference between conventional grid and smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aee",
+            "title": "Concept of resilient and self- healing grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aef",
+            "title": "Components and architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af0",
+            "title": "Inter-operability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af1",
+            "title": "Impacts of smart grid on system reliability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af2",
+            "title": "Present development and international policies in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af3",
+            "title": "Smart grid standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af4",
+            "title": "Information and Communication Technology in Smart Grid: Wired and wireless communication -radio mesh, ZIGBEE, 3G, 4G and 5G",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af5",
+            "title": "Digital PLC, DSL, Wi-Max, LAN, NAN, HAN, Wi-Fi, Bluetooth, Bluetooth Low Energy (BLE), Li-Fi",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af6",
+            "title": "Communication Protocols in Smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af7",
+            "title": "Introduction to IEC 61850 standard and benefits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af8",
+            "title": "IEC Generic Object-Oriented Substation Event - GOOSE",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36af9",
+            "title": "Substation model",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters",
+        "title": "Module 2: Smart grid technologies part i introduction to smart meters",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36afb",
+            "title": "Smart grid Technologies Part I: Introduction to smart meters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36afc",
+            "title": "Electricity tariff",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36afd",
+            "title": "Real Time Pricing- Automatic Meter Reading (AMR) - System, Services and Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36afe",
+            "title": "Components of AMR Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36aff",
+            "title": "Advanced Metering Infrastructure (AMI)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b00",
+            "title": "Plug in Hybrid Electric Vehicles (PHEV)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b01",
+            "title": "Vehicle to Grid (V2G)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b02",
+            "title": "Grid to Vehicle (G2V)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b03",
+            "title": "Smart Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b04",
+            "title": "Smart energy efficient end use devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b05",
+            "title": "Home & Building Automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b06",
+            "title": "Intelligent Electronic Devices (IED) and their application for monitoring & protection: Digital Fault Recorder (DFR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b07",
+            "title": "Digital Protective Relay (DPR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b08",
+            "title": "Circuit Breaker Monitor (CBM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b09",
+            "title": "Phasor Measurement Unit (PMU)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b0a",
+            "title": "Standards for PMU",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b0b",
+            "title": "Time synchronization techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b0c",
+            "title": "Wide Area Monitoring System (WAMS), control and protection systems (Architecture, components of WAMS, and applications: Voltage stability assessment, frequency stability assessment, power oscillation assessment, communication needs of WAMS, remedial action scheme)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations",
+        "title": "Module 3: Smart grid technologies part ii smart substations",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b0e",
+            "title": "Smart grid Technologies Part II: Smart substations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b0f",
+            "title": "Substation automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b10",
+            "title": "Feeder automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b11",
+            "title": "Fault detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b12",
+            "title": "Isolation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b13",
+            "title": "and Service Restoration (FDISR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b14",
+            "title": "Geographic Information System (GIS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b15",
+            "title": "Outage Management System (OMS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b16",
+            "title": "Introduction to Smart distributed energy resources and their grid integration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b17",
+            "title": "Smart inverters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b18",
+            "title": "Concepts of microgrid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b19",
+            "title": "Need and application of microgrid – Energy Management- Role of technology in demand response- Demand side management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b1a",
+            "title": "Demand side Ancillary Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b1b",
+            "title": "Dynamic line rating",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud",
+        "title": "Module 4: Cloud computing in smart grid private public and hybrid cloud",
+        "topics": [
+          {
+            "id": "68a200872b85456187f36b1d",
+            "title": "Cloud computing in smart grid: Private, Public and hybrid cloud",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b1e",
+            "title": "Types of cloud computing services- Software as a Service (SaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b1f",
+            "title": "Platform as a service (PaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b20",
+            "title": "Infrastructure as a service (IaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b21",
+            "title": "Data as a service (DaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b22",
+            "title": "Cloud architecture for smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b23",
+            "title": "Cyber Security  - Cyber security challenges and solutions in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b24",
+            "title": "Cyber security risk assessment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b25",
+            "title": "Security index computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b26",
+            "title": "Power Quality Management in Smart Grid - Fundamentals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b27",
+            "title": "Power Quality (PQ) & Electromagnetic Compatibility (EMC) in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b28",
+            "title": "Power quality conditioners for smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "68a200872b85456187f36b29",
+            "title": "Case study of smart grid",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,3087 @@
+[
+  {
+    "id": "ce-6-advanced-design-of-concrete-structures",
+    "code": "PECET631",
+    "name": "ADVANCED DESIGN OF CONCRETE STRUCTURES",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-advanced-design-of-concrete-structures-01-module-1-design-of-continuous-beams-redistribution-of-moments",
+        "title": "Module 1: Design of continuous beams redistribution of moments",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110cf",
+            "title": "Design of continuous beams– Redistribution of moments- Detailing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110d0",
+            "title": "Reinforced concrete portal frames: Introduction - Analysis and design of rectangular portal frames for vertical loading",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15ce56b5e963ba8110d0-q-1",
+                "year": "2024",
+                "question": "Describe the typical distribution of bending moments in the beam and columns of a symmetrical rectangular portal frame subjected to a uniformly distributed vertical load on the beam. Sketch the bending moment diagrams for the beam and columns, indicating the locations of maximum moments and inflection points.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba8110d0-q-2",
+                "year": "2024",
+                "question": "A rectangular portal frame has a span of 12m and column height of 6m. It is subjected to a uniformly distributed load of $15 \\, kN/m$ on the beam. If the beam is $300 \\, mm \\times 600 \\, mm$ and the columns are $300 \\, mm \\times 300 \\, mm$, estimate the approximate magnitude of the maximum hogging moment at the eaves and the maximum sagging moment at the mid-span of the beam. (Assume $EI$ of beam is approximately $1.5$ times $EI$ of column per meter length).",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba8110d0-q-3",
+                "year": "2024",
+                "question": "A column of a portal frame experiences a maximum axial compressive force of $800 \\, kN$ and a maximum bending moment of $120 \\, kNm$. The column section is $350 \\, mm \\times 350 \\, mm$, concrete is M25, and steel is Fe415. Calculate the required area of longitudinal reinforcement for the column. (Assume the column is short and can be designed using interaction diagrams, or use a simplified lever arm approach if an interaction diagram is not available).",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15ce56b5e963ba8110d1",
+            "title": "Approximate methods for structural Analysis and design for vertical loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110d2",
+            "title": "Pattern loading, lateral loads",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-advanced-design-of-concrete-structures-02-module-2-retaining-structures",
+        "title": "Module 2: Retaining structures",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110d4",
+            "title": "Retaining Structures- Introduction- Functions and types of retaining walls-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110d5",
+            "title": "Structural analysis and design of RCC cantilever type of retaining wall for various types of backfill conditions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110d6",
+            "title": "Counterfort retaining wall- design principles of components and detailing (design not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110d7",
+            "title": "Introduction to Strut and Tie Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110d8",
+            "title": "Design of Deep beams, Corbels and Pile cap",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-advanced-design-of-concrete-structures-03-module-3-introduction-to-design-of-water-tanks",
+        "title": "Module 3: Introduction to design of water tanks",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110da",
+            "title": "Introduction to design of water tanks-design philosophy and requirements-joints- IS code recommendations- Design of rectangular circular water tanks using IS code coefficients (IS 3370- 2009).",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110db",
+            "title": "Yield line method of analysis of slabs – Characteristic features of yield lines– analysis by virtual work method –",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110dc",
+            "title": "Yield line analysis by equilibrium method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110dd",
+            "title": "Flat slabs – Introduction–components–IS Code recommendations– IS code method of design of interior panel (with and without column drop).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-advanced-design-of-concrete-structures-04-module-4-review-of-the-codes-is-8111987-is-8011975-sp-6",
+        "title": "Module 4: Review of the codes is 8111987 is 8011975 sp 6",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110df",
+            "title": "Review of the codes –IS 811(1987), IS 801(1975), SP 6-5(1980)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110e0",
+            "title": "Light gauge sections – Types of cross sections – Local buckling and post buckling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110e1",
+            "title": "Design of compression and Tension members",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110e2",
+            "title": "Design of flexural member - Types of connections and their design",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-advanced-foundation-engineering",
+    "code": "PECET635",
+    "name": "ADVANCED FOUNDATION ENGINEERING",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-advanced-foundation-engineering-01-module-1-bearing-capacity-of-shallow-foundations",
+        "title": "Module 1: Bearing capacity of shallow foundations",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811203",
+            "title": "Bearing capacity of shallow foundations-Review of technology-IS code",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811204",
+            "title": "Numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811205",
+            "title": "Footings subjected to moments-effective width concept-Numerical problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811206",
+            "title": "Allowable bearing pressure from N Value-Teng’s equations for safe bearing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811207",
+            "title": "Safe bearing pressure for a",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811208",
+            "title": "Numerical problem- Footings on layered soil concept",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-advanced-foundation-engineering-02-module-2-deep-foundations",
+        "title": "Module 2: Deep foundations",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81120a",
+            "title": "Deep foundations- Geotechnical Design of Piles from SPT and CPT -values-number and spacing-Numerical Problems-Settlement of pile groups in clay-equivalent raft concept-Numerical problem.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81120b",
+            "title": "Settlement of pile groups in sand-Skempton’s method-Meyerhof’s Method-Numerical problem.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81120c",
+            "title": "Uplift capacity",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-advanced-foundation-engineering-03-module-3-under-reamed-piles",
+        "title": "Module 3: Under reamed piles",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81120e",
+            "title": "Under reamed piles-ultimate load carrying capacity in sand and clay-design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81120f",
+            "title": "IS formula-single and double bulb -Numerical",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811210",
+            "title": "Drilled piers (straight shafted and belled) in clay- Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811211",
+            "title": "Vertical Bearing Capacity and",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811212",
+            "title": "Types of Sheet Pile Walls-Cantilever Sheet Pile Walls -",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811213",
+            "title": "Cantilever sheet pile walls with cohesive backfill-depth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811214",
+            "title": "Numerical problem- Anchored sheet pile walls-free earth",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-advanced-foundation-engineering-04-module-4-behavior-of-vertical-piles-under-lateral-loading-failure-mechanisms-of-",
+        "title": "Module 4: Behavior of vertical piles under lateral loading failure mechanisms of ",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811216",
+            "title": "Behavior of vertical piles under lateral loading – Failure mechanisms of short",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811217",
+            "title": "Failure mechanisms of long piles in sand and clay both free",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811218",
+            "title": "IS2911 method-concept",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811219",
+            "title": "Details of Broms Method- Chart for estimating the",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81121a",
+            "title": "Chart for estimating the",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81121b",
+            "title": "Chart for estimating the ultimate lateral resistance of short",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81121c",
+            "title": "Numerical problems using Brom’s charts alone.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-applied-earth-systems",
+    "code": "OECET616",
+    "name": "APPLIED EARTH SYSTEMS",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-applied-earth-systems-01-module-1-fundamental-concepts-of-equilibrium",
+        "title": "Module 1: Fundamental concepts of equilibrium",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811380",
+            "title": "Fundamental concepts of equilibrium.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811381",
+            "title": "Geomorphic agents and processes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811382",
+            "title": "Basic concept of Earth as a system and its component sub systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811383",
+            "title": "Climate Change vis-a-vis the interrelationships of the subsystems- Green House Effect and Global warming, basic ideas about their causes and effects.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-applied-earth-systems-02-module-2-weathering",
+        "title": "Module 2: Weathering",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811385",
+            "title": "Weathering- relevance, influence of and on earth systems, types and controlling factors.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811386",
+            "title": "Soil- formation and controls, soil profile, soil erosion and conservation methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811387",
+            "title": "Fluvial processes-hydrological cycle, fluvial erosion, transportation and deposition, fluvial landforms.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811388",
+            "title": "Stages of stream development;",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811389",
+            "title": "Drainage patterns.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-applied-earth-systems-03-module-3-wagners-ideas-of-continental-drift",
+        "title": "Module 3: Wagners ideas of continental drift",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81138b",
+            "title": "Wagner’s ideas of continental drift,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81138c",
+            "title": "Plate Tectonics- seafloor spreading.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81138d",
+            "title": "Plate boundaries and their features, mechanisms of plate movements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81138e",
+            "title": "Basics of oceanography: coastal upwelling and downwelling.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81138f",
+            "title": "Outlines of ocean floor topography, basic outlines of origin and circulation of deep sea surface currents (Atlantic and Pacific Oceans)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-applied-earth-systems-04-module-4-basics-of-atmosphere-and-atmospheric-processes-structure-and-compositio",
+        "title": "Module 4: Basics of atmosphere and atmospheric processes structure and compositio",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811391",
+            "title": "Basics of atmosphere and atmospheric processes: Structure and composition of the atmosphere.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811392",
+            "title": "Heat budget, factors affecting solar radiation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811393",
+            "title": "Fundamental concepts of precipitation, global wind patterns.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811394",
+            "title": "General weather systems of India, - Monsoon system, cyclone and jet stream",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-construction-project-management",
+    "code": "PBCET604",
+    "name": "CONSTRUCTION PROJECT MANAGEMENT",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-construction-project-management-01-module-1-construction-projects-life-cycle-of-a-project-phases-in-a-project",
+        "title": "Module 1: Construction projects life cycle of a project phases in a project",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81123a",
+            "title": "Construction projects, life cycle of a project – phases in a project.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81123b",
+            "title": "Tendering: types of tenders, stages in tendering.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81123c",
+            "title": "Process of development of plans and schedules – work break-down structure, estimating durations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81123d",
+            "title": "Types of Schedules – Construction schedule, Material schedule, labour schedule, equipment schedule, financial schedule.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81123e",
+            "title": "Techniques of planning – Bar charts, Mile Stone Charts.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81123f",
+            "title": "Network representation – Activity on Arrow (AoA) or Activity on Node (AoN) Diagram.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811240",
+            "title": "Network analysis – Critical Path Method (CPM), Programme Evaluation and Review Technique (PERT) – concepts and problems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811241",
+            "title": "Precedence Diagramming Method – types of relationships – concept of lead and lag. Concept only",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-construction-project-management-02-module-2-handling-resources-on-projects-resource-constraints-and-conflicts-resou",
+        "title": "Module 2: Handling resources on projects resource constraints and conflicts resou",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811243",
+            "title": "Handling resources on projects, resource constraints and conflicts, resource allocation and resource levelling. Concept only",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811244",
+            "title": "Time-Cost trade-off on construction projects – Classification of costs, compression of networks, cost optimization through the crashing of a network.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-construction-project-management-03-module-3-updating-project-schedules",
+        "title": "Module 3: Updating project schedules",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811246",
+            "title": "Updating project schedules.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811247",
+            "title": "Project control, Schedule/time/progress control, periodic progress reports.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811248",
+            "title": "Concept of Time-cost monitoring and control using S-curve, Earned value analysis – measures of performance.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-construction-project-management-04-module-4-introduction-to-bim-technology-define-bim-and-bim-model-describe-workfl",
+        "title": "Module 4: Introduction to bim technology define bim and bim model describe workfl",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81124a",
+            "title": "Introduction to BIM Technology: Define BIM and BIM model, describe workflow in using BIM in the building lifecycle, Model-Based cost estimating, Perform Simulations, Apply BIM to reduce error and change orders in projects, Evaluate and communicate ideas related to the use of BIM in the building life cycle, BIM Benefits: Case Studies, Organizational Maturity and Dimensions, Construction Management and Planning using BIM.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-design-of-steel-structures",
+    "code": "PCCET602",
+    "name": "DESIGN OF STEEL STRUCTURES",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-design-of-steel-structures-01-module-1-introduction-to-steel-and-steel-structures-properties-of-steel-structur",
+        "title": "Module 1: Introduction to steel and steel structures properties of steel structur",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110b0",
+            "title": "Introduction to steel and steel structures, properties of steel, structural steel sections.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110b1",
+            "title": "Introduction to design loads and load combinations, limit state design concepts.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110b2",
+            "title": "Type of Fasteners- Bolts and welds.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110b3",
+            "title": "Types of simple bolted and welded connections-Relative advantages and disadvantages-Modes of failure of bolted connection-Design of bearing type connection and friction connection–Prying forces- Design of bracket connection.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-design-of-steel-structures-02-module-2-welds",
+        "title": "Module 2: Welds",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110b5",
+            "title": "Welds-specifications and effective area of welds-Fillet and butt connections-Axially loaded connections for plate and angle truss members- Design of bracket connections.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110b6",
+            "title": "Tension Members - Types of sections -Modes of failure-Slenderness ratio- Net area- Concepts of Shear Lag- Design of tension Members-Connections in tension members - Use of lug angles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-design-of-steel-structures-03-module-3-types-of-compression-members-and-sectionsbehaviour-and-types-of-failure",
+        "title": "Module 3: Types of compression members and sectionsbehaviour and types of failure",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110b8",
+            "title": "Types of compression members and sections–Behaviour and types of failures-Effective Length-Slenderness ratio–Column formula and column curves- Design of solid and built-up columns - Design of Built up laced and battened type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110b9",
+            "title": "columns .",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110ba",
+            "title": "Design of column bases - Slab base and Gusset base",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-design-of-steel-structures-04-module-4-types-of-beam-sections",
+        "title": "Module 4: Types of beam sections",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110bc",
+            "title": "Types of beam sections- Flexural strength and lateral stability of beams- Design of laterally supported and laterally unsupported beams.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110bd",
+            "title": "Design of roof trusses-types-Design loads and load combination- Assessment of wind loads- Design of I section purlin",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-disaster-management",
+    "code": "OECET613",
+    "name": "DISASTER MANAGEMENT",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-disaster-management-01-module-1-hazards-and-disasters-introduction-to-key-concepts-and-terminology-haza",
+        "title": "Module 1: Hazards and disasters introduction to key concepts and terminology haza",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8112fb",
+            "title": "Hazards and disasters: Introduction to key concepts and terminology: hazard, disasters and types of classifications, vulnerability, exposure, risk, crisis, emergency, capacity, resilience, Carbon footprint.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112fc",
+            "title": "Effect of subsystems of earth.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112fd",
+            "title": "Extent and nature of natural hazards, implications of climate change: Earth quakes, Volcanoes, Floods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112fe",
+            "title": "Coastal disasters- Storm surges, Tsunamis, mitigation methods.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-disaster-management-02-module-2-landslides-causes-and-prediction-soil-and-soil-degradation-erosion-and-",
+        "title": "Module 2: Landslides causes and prediction soil and soil degradation erosion and ",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811300",
+            "title": "Landslides, Causes and prediction, Soil and soil degradation, erosion and Desertification, Forest fires, their mitigation methods.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana",
+        "title": "Module 3: Impacts and assessment risk management and assessment and disaster mana",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811302",
+            "title": "Impacts and assessment: Risk Management and Assessment and Disaster Management cycle.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811303",
+            "title": "SWOT Analysis- basic concepts, uses, limitations and advantages.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811304",
+            "title": "Disaster management plan and reports, participation of community in disaster management.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides",
+        "title": "Module 4: Hazard and disaster management plans for floods storm surges landslides",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811306",
+            "title": "Hazard and disaster management plans for floods, storm surges, landslides, earthquakes, forest fires: pre-disaster phase, actual disaster phase, post- disaster phase",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811307",
+            "title": "Relief and Amenities, Relief camps, organization, individual and community participation, camp layout, food requirement, water needs, sanitation, security, information administration.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811308",
+            "title": "Technology in disaster management.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15ce56b5e963ba811308-q-1",
+                "year": "2024",
+                "question": "Explain how GIS technology can be used to identify and map areas vulnerable to landslides.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811308-q-2",
+                "year": "2024",
+                "question": "What are the advantages of using drones in post-earthquake disaster response?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811308-q-3",
+                "year": "2024",
+                "question": "Name three different communication technologies used in early warning systems and briefly describe their role.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811308-q-4",
+                "year": "2024",
+                "question": "Discuss one challenge associated with the implementation of advanced technology in disaster management, particularly in developing countries.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811308-q-5",
+                "year": "2024",
+                "question": "How can AI contribute to optimizing resource allocation during a flood event?",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-environmental-engineering-lab",
+    "code": "PCCEL609",
+    "name": "ENVIRONMENTAL ENGINEERING LAB",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-environmental-engineering-lab-01-module-1-determination-of-ph-and-turbidity",
+        "title": "Module 1: Determination of ph and turbidity",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113d4",
+            "title": "Determination of pH and Turbidity",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-02-module-2-determination-of-conductivity-and-total-dissolved-solids",
+        "title": "Module 2: Determination of conductivity and total dissolved solids",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113d6",
+            "title": "Determination of Conductivity and Total dissolved solids",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-03-module-3-determination-of-alkalinity-acidity",
+        "title": "Module 3: Determination of alkalinity acidity",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113d8",
+            "title": "Determination of Alkalinity & Acidity",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-04-module-4-determination-of-chlorides",
+        "title": "Module 4: Determination of chlorides",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113da",
+            "title": "Determination of Chlorides",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-05-module-5-determination-and-estimation-of-total-solids-organic-solids-and-inorgan",
+        "title": "Module 5: Determination and estimation of total solids organic solids and inorgan",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113dc",
+            "title": "Determination and Estimation of total solids, organic solids and inorganic solids",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-06-module-6-determination-of-iron",
+        "title": "Module 6: Determination of iron",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113de",
+            "title": "Determination of iron",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-07-module-7-determination-of-dissolved-oxygen",
+        "title": "Module 7: Determination of dissolved oxygen",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113e0",
+            "title": "Determination of Dissolved Oxygen",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-08-module-8-determination-of-nitrogen",
+        "title": "Module 8: Determination of nitrogen",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113e2",
+            "title": "Determination of Nitrogen",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-09-module-9-determination-of-total-phosphorous",
+        "title": "Module 9: Determination of total phosphorous",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113e4",
+            "title": "Determination of total Phosphorous",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-10-module-10-determination-of-bod",
+        "title": "Module 10: Determination of bod",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113e6",
+            "title": "Determination of B.O.D",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-11-module-11-determination-of-cod",
+        "title": "Module 11: Determination of cod",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113e8",
+            "title": "Determination of C.O.D",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-12-module-12-determination-of-optimum-coagulant-dose",
+        "title": "Module 12: Determination of optimum coagulant dose",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113ea",
+            "title": "Determination of Optimum coagulant dose",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-13-module-13-determination-of-chlorine-demand",
+        "title": "Module 13: Determination of chlorine demand",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113ec",
+            "title": "Determination of Chlorine demand",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-14-module-14-determination-of-sulphate",
+        "title": "Module 14: Determination of sulphate",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113ee",
+            "title": "Determination of Sulphate",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-15-module-15-determination-of-hardness",
+        "title": "Module 15: Determination of hardness",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113f0",
+            "title": "Determination of Hardness",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-engineering-lab-16-module-16-presumptive-coli-form-test",
+        "title": "Module 16: Presumptive coli form test",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113f2",
+            "title": "Presumptive coli form test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-environmental-impact-assessment",
+    "code": "OECET614",
+    "name": "ENVIRONMENTAL IMPACT ASSESSMENT",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-environmental-impact-assessment-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81131a",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81131b",
+            "title": "Pollution and pollutants - general aspects, scale of impact-Global, local pollutants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81131c",
+            "title": "History of EIA - Global and Indian scenario, Need for EIA, EIA 2006 key features, General overview of Draft EIA 2020",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81131d",
+            "title": "EIA procedure in India, Public participation – Significance & steps",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81131e",
+            "title": "Environment management plan",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81131f",
+            "title": "Role of an Environmental Engineer",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-impact-assessment-02-module-2-impact-analysis",
+        "title": "Module 2: Impact analysis",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811321",
+            "title": "Impact analysis- Adhoc, checklists, matrix methods, overlay analysis,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811322",
+            "title": "Fault Tree Analysis method & Event Tree Analysis method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811323",
+            "title": "EIA case studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811324",
+            "title": "Water Pollution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811325",
+            "title": "Point and Non-point Source of Pollution, Major Pollutants of Water, Physical, chemical and biological characteristics of water, Water borne diseases, Water Quality standards (IS 10500-2012)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-impact-assessment-03-module-3-solid-waste",
+        "title": "Module 3: Solid waste",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811327",
+            "title": "Solid Waste",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811328",
+            "title": "Classification and sources of Solid Waste, Characteristics of Solid Waste,",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811329",
+            "title": "E-waste, & Radioactive wastes - Types, management/disposal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81132a",
+            "title": "Hazardous waste -waste identification process and characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81132b",
+            "title": "Solid Waste Management Rules 2016",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81132c",
+            "title": "Land/Soil Pollution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81132d",
+            "title": "Effects of urbanization on land degradation, Impact of Modern Agriculture on Soil, pesticide pollution, Effect on Environment",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-impact-assessment-04-module-4-air-pollution",
+        "title": "Module 4: Air pollution",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81132f",
+            "title": "Air Pollution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811330",
+            "title": "Classification of Pollution and Pollutants, Primary and Secondary Pollutants, Criteria Pollutants and their impacts on environment, human health, National Ambient Air Quality Standards by CPCB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811331",
+            "title": "Noise Pollution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811332",
+            "title": "Sources of Noise, Effects of Noise, measurement of noise, Equivalent sound pressure level, Control measures –Noise pollution (Regulation and control) Rule 2000",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-environmental-laws-and-policy",
+    "code": "OECET612",
+    "name": "ENVIRONMENTAL LAWS AND POLICY",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-environmental-laws-and-policy-01-module-1-basic-concepts-in-environmental-law",
+        "title": "Module 1: Basic concepts in environmental law",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81129c",
+            "title": "Basic Concepts in Environmental Law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81129d",
+            "title": "An introduction to the legal system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81129e",
+            "title": "Constitution, Acts, Rules, Regulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81129f",
+            "title": "Indian Judiciary, Doctrine of precedents, judicial review, Writ petitions, PIL–liberalization of the rule of locus standi, Judicial activism.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a0",
+            "title": "Introduction to environmental laws in India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a1",
+            "title": "Constitutional provisions, Stockholm conference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a2",
+            "title": "Bhopal gas tragedy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a3",
+            "title": "Rio conference.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a4",
+            "title": "General principles in Environmental law: Precautionary principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a5",
+            "title": "Polluter pays principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a6",
+            "title": "Sustainable development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a7",
+            "title": "Public trust doctrine.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112a8",
+            "title": "Overview of legislations and basic concepts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-laws-and-policy-02-module-2-forest-wildlife-and-biodiversity-related-laws",
+        "title": "Module 2: Forest wildlife and biodiversity related laws",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8112aa",
+            "title": "Forest, Wildlife and Biodiversity related laws",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112ab",
+            "title": "Evolution and Jurisprudence of Forest and Wildlife laws",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112ac",
+            "title": "Colonial forest policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112ad",
+            "title": "Forest policies after independence 2 Statutory framework on Forests, Wildlife and Biodiversity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112ae",
+            "title": "IFA, 1927",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112af",
+            "title": "WLPA, 1972",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b0",
+            "title": "FCA, 1980",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b1",
+            "title": "Biological Diversity Act, 2002",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b2",
+            "title": "Forest Rights Act, 2006.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b3",
+            "title": "Strategies for conservation–Project Tiger, Elephant, Rhino, Modulew leopard.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-laws-and-policy-03-module-3-air-water-and-marine-laws",
+        "title": "Module 3: Air water and marine laws",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8112b5",
+            "title": "Air, Water and Marine Laws",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b6",
+            "title": "National Water Policy and some state policies Laws relating to prevention of pollution, access and management of water and institutional mechanism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b7",
+            "title": "Water Act, 1974",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b8",
+            "title": "Water Cess Act, 1977, EPA, 1986.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112b9",
+            "title": "Pollution Control Boards Ground water and law Judicial remedies and procedures Marine laws of India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112ba",
+            "title": "Coastal zone regulations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112bb",
+            "title": "Legal framework on Air pollution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112bc",
+            "title": "Air Act,1981",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112bd",
+            "title": "EPA, 1986",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-environmental-laws-and-policy-04-module-4-hazardous-substances-and-activities-legal-framework",
+        "title": "Module 4: Hazardous substances and activities legal framework",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8112bf",
+            "title": "Hazardous Substances and Activities Legal framework",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c0",
+            "title": "EPA and rules made thereunder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c1",
+            "title": "PLI Act, 199 Principles of strict and absolute liability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c2",
+            "title": "International Environmental law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c3",
+            "title": "An introduction to international law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c4",
+            "title": "sources of international law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c5",
+            "title": "law of treaties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c6",
+            "title": "signature, ratification Evolution of international environmental law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c7",
+            "title": "Customary principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c8",
+            "title": "Common but differentiated responsibility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8112c9",
+            "title": "Polluter pays.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-ground-improvement-techniques",
+    "code": "PECET633",
+    "name": "GROUND IMPROVEMENT TECHNIQUES",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-ground-improvement-techniques-01-module-1-introduction-need-for-engineered-ground-improvement",
+        "title": "Module 1: Introduction need for engineered ground improvement",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811139",
+            "title": "Introduction Need for engineered ground improvement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81113a",
+            "title": "classification of ground modification techniques; suitability, feasibility and desirability of ground improvement technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81113b",
+            "title": "objectives of improving soil",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81113c",
+            "title": "Emerging trends in ground improvement-Different materials used for ground improvement and its property",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81113d",
+            "title": "Drainage and dewatering : - well point system, shallow & deep well system, vacuum method, electro osmosis method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81113e",
+            "title": "Comparison between methods",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-ground-improvement-techniques-02-module-2-compaction",
+        "title": "Module 2: Compaction",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811140",
+            "title": "Compaction- Introduction, compaction mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811141",
+            "title": "Field procedure, surface compaction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811142",
+            "title": "Dynamic Compaction, selection of field compaction procedures, compaction quality control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811143",
+            "title": "Drainage Methods- Introduction, Seepage, filter requirements, ground water and seepage control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811144",
+            "title": "methods of dewatering systems, Design of dewatering system including pipe line effects of dewatering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811145",
+            "title": "Drains, different types of drains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811146",
+            "title": "Pre-compression and Vertical Drains:  Importance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811147",
+            "title": "Vertical drains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811148",
+            "title": "Sand drains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811149",
+            "title": "Drainage of slopes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81114a",
+            "title": "Electro kinetic dewatering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81114b",
+            "title": "Preloading",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-ground-improvement-techniques-03-module-3-chemical-modification",
+        "title": "Module 3: Chemical modification",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81114d",
+            "title": "Chemical Modification-  Definition, cement stabilization, sandwich technique, admixtures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81114e",
+            "title": "Hydration – effect of cement stabilization on permeability, Swelling and shrinkage and strength and deformation characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81114f",
+            "title": "Criteria for cement stabilization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811150",
+            "title": "Stabilization using Fly ash",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811151",
+            "title": "Lime stabilization – suitability, process, criteria for lime stabilization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811152",
+            "title": "Bitumen, tar or asphalt in stabilization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811153",
+            "title": "Vibration Methods:  Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811154",
+            "title": "Vibro compaction – blasting, vibratory probe",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811155",
+            "title": "Vibro displacement compaction – displacement piles, vibro flotation, sand compaction piles, stone columns, heavy tamping",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15ce56b5e963ba811155-q-1",
+                "year": "2024",
+                "question": "What is the primary purpose of vibro-displacement compaction techniques?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811155-q-2",
+                "year": "2024",
+                "question": "Differentiate between vibroflotation and vibro-replacement.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811155-q-3",
+                "year": "2024",
+                "question": "Which vibro-displacement technique is most effective for improving soft clay soils while also providing load-carrying elements?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811155-q-4",
+                "year": "2024",
+                "question": "What is a significant environmental concern associated with heavy tamping?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811155-q-5",
+                "year": "2024",
+                "question": "Can vibroflotation be used effectively in saturated soft clays? Why or why not?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811155-q-6",
+                "year": "2024",
+                "question": "Describe the main components and the working principle of a vibroflot.",
+                "marks": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ce-6-ground-improvement-techniques-04-module-4-grouting-and-injection",
+        "title": "Module 4: Grouting and injection",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811157",
+            "title": "Grouting And Injection:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811158",
+            "title": "Introduction, Effect of grouting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811159",
+            "title": "Chemicals and materials used",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81115a",
+            "title": "Types of grouting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81115b",
+            "title": "Grouting procedure, Applications of grouting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81115c",
+            "title": "Reinforced earth : - mechanism- types of reinforcing elements- reinforcement-soil interaction – applications- reinforced soil structures with vertical faces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81115d",
+            "title": "Geosynthetics – types of geosynthetics – functions of geosynthetics – properties of geosynthetics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81115e",
+            "title": "Soil nailing & Micro pile-basic concept-construction sequence-areas of application-design considerations-merit and demerit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81115f",
+            "title": "Earth Reinforcement-Reinforcement materials-reinforced earth wall-design considerations-construction procedure",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-introduction-to-construction-engineering",
+    "code": "OECET611",
+    "name": "INTRODUCTION TO CONSTRUCTION ENGINEERING",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-introduction-to-construction-engineering-01-module-1-construction-materials",
+        "title": "Module 1: Construction materials",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81125f",
+            "title": "Construction Materials",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15ce56b5e963ba81125f-q-1",
+                "year": "2024",
+                "question": "A steel beam is used in a building frame. Which mechanical properties are most critical for its safe performance?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81125f-q-2",
+                "year": "2024",
+                "question": "You are designing a foundation for a building. Which of the following materials would be most suitable, and why?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81125f-q-3",
+                "year": "2024",
+                "question": "Explain the difference between ductility and brittleness using examples of construction materials.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81125f-q-4",
+                "year": "2024",
+                "question": "Name three common manufactured construction materials and their primary advantage in construction.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81125f-q-5",
+                "year": "2024",
+                "question": "Why is testing of construction materials like concrete and steel crucial in a construction project? Briefly describe one test performed on concrete.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15ce56b5e963ba811260",
+            "title": "Mortar – Types – properties – uses.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811261",
+            "title": "Timber products – properties & uses of plywood, fibre board, particle board.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811262",
+            "title": "Cement - Manufacturing, chemical composition, Tests on cement – specific gravity, standard consistency, initial and final setting time, fineness, soundness, compressive strength, IS specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811263",
+            "title": "Aggregates – types, Gradation, importance of gradation, bulking of fine aggregate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811264",
+            "title": "Iron and Steel –Reinforcing steel – types – specifications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811265",
+            "title": "Structural steel – specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811266",
+            "title": "Admixtures, uses – mineral admixtures – fly ash and ground granulated blast furnace slag and chemical admixtures – plasticizers, super plasticizers, accelerators, retarders (brief discussion only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-introduction-to-construction-engineering-02-module-2-concrete-technology",
+        "title": "Module 2: Concrete technology",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811268",
+            "title": "Concrete Technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811269",
+            "title": "Process of manufacturing concrete – batching, mixing, transportation, placing, compacting, finishing, curing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81126a",
+            "title": "Properties of fresh concrete: Workability, factors affecting workability, test on workability (slump test), segregation and bleeding (brief discussion)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81126b",
+            "title": "Properties of hardened concrete: Strength, factors affecting strength, tests for strength of concrete in compression, tension and flexure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81126c",
+            "title": "Concrete quality control – statistical analysis of results – standard deviation –acceptance criteria – mix proportioning (B.I.S method) – nominal mixes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-introduction-to-construction-engineering-03-module-3-building-construction",
+        "title": "Module 3: Building construction",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81126e",
+            "title": "Building Construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81126f",
+            "title": "Preliminary considerations for shallow and deep foundations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811270",
+            "title": "Masonry – Types of stone masonry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811271",
+            "title": "Lintels and arches – types and construction details.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811272",
+            "title": "Tall Buildings – Framed building – steel and concrete frame – structural systems –erection of steel work–concrete framed construction– formwork – construction and expansion. joints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811273",
+            "title": "Introduction to prefabricated construction – slip form construction",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-introduction-to-construction-engineering-04-module-4-construction-technology",
+        "title": "Module 4: Construction technology",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811275",
+            "title": "Construction Technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811276",
+            "title": "Cost-effective construction – rapid wall construction, soil-cement block masonry, voided slab technology, filler slab technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811277",
+            "title": "Basic concept of prestressing – fundamental understanding of pre-tensioned and post-tensioned construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811278",
+            "title": "Construction 3D printing (brief discussion only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811279",
+            "title": "Building failures – General reasons – classification – Causes of failures in RCC and Steel structures, Failure due to Fire, Wind and Earthquakes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81127a",
+            "title": "Foundation failure – failures by alteration, improper maintenance, overloading.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81127b",
+            "title": "Retrofitting of structural components - beams, columns and slabs",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-irrigation-and-drainage-engineering",
+    "code": "PECET632",
+    "name": "IRRIGATION AND DRAINAGE ENGINEERING",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-irrigation-and-drainage-engineering-01-module-1-surface-irrigation-methods-classification-border-irrigation-design-para",
+        "title": "Module 1: Surface irrigation methods classification border irrigation design para",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8110fa",
+            "title": "Surface Irrigation methods : Classification – Border irrigation: design parameters, evaluation and ideal wetting pattern",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110fb",
+            "title": "Furrow irrigation: design parameters, types of furrows, evaluation, ideal wetting pattern",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110fc",
+            "title": "Basin irrigation: types of basins, ideal wetting pattern, shapes and size",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110fd",
+            "title": "Efficiency of surface irrigation methods.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110fe",
+            "title": "Crop Water Requirements : Infiltration and movement of water in soil– Soil-water-plant relationship –Water requirement of crops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8110ff",
+            "title": "Evapo transpiration (ET) and consumptive use - Effective rainfall",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811100",
+            "title": "Irrigation requirement, Soil water balance, Yield response to water,Production functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811101",
+            "title": "Irrigation Water Distribution : Canal network and canal regulation",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15ce56b5e963ba811101-q-1",
+                "year": "2024",
+                "question": "What is the primary function of a cross-regulator in an irrigation canal network?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811101-q-2",
+                "year": "2024",
+                "question": "List the main components of a canal irrigation network in order of their typical hierarchy.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811101-q-3",
+                "year": "2024",
+                "question": "Explain why equitable water distribution is important in canal irrigation.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811101-q-4",
+                "year": "2024",
+                "question": "If the canal network upstream of a distributary is not properly regulated, what potential problems could arise at the field level for border irrigation?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811101-q-5",
+                "year": "2024",
+                "question": "Differentiate between a head regulator and an escape.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15ce56b5e963ba811102",
+            "title": "Methods of distribution: supply based and demand based",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811103",
+            "title": "Delivery of  water to farms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811104",
+            "title": "Measurement of water",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811105",
+            "title": "Scheduling of irrigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811106",
+            "title": "Criteria for scheduling, constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811107",
+            "title": "Frequency and interval of irrigation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-irrigation-and-drainage-engineering-02-module-2-irrigation-system-performance-indicators-systems-classification",
+        "title": "Module 2: Irrigation system performance indicators systems classification",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811109",
+            "title": "Irrigation System Performance Indicators : Systems classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81110a",
+            "title": "Rehabilitation and modernization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81110b",
+            "title": "Performance indicators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81110c",
+            "title": "Improving system performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81110d",
+            "title": "constraints.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81110e",
+            "title": "Land Drainage systems : necessity-types-surfaces and subsurface drainage-design considerations.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81110f",
+            "title": "SoilWater Zone : Description, Flow through soil water zone-Physical properties of soil-hydraulic conductivity-saturated thickness-drainable pore space-storativity, hydraulic resistance, leakage factor-Ground water data-concepts of ground water hydrograph, ground water maps, Isobath map, water table fluctuation maps etc.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-irrigation-and-drainage-engineering-03-module-3-drainage-studies",
+        "title": "Module 3: Drainage studies",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811111",
+            "title": "Drainage studies -continuity equation, Laplace equation, relaxation method of solution-Typical boundary conditions like impervious layer, plane of symmetry, free water surface, water at rest or slowly moving water, seepage surface- Dupit Forchheimer Theory steady low above an impervious horizontal boundary-Dupits equation-water table subject to recharge.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811112",
+            "title": "Flow into open drains -steady state equations-Hooghoudt equation, Principles, applications for design use of nomographs for homogeneous and layered soils– Earnst equation, concept of horizontal vertical and radial flow, application to layered soils.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811113",
+            "title": "Unsteady state drainage equations -Glover Dum equation, application, concept of Kraijenhoff Vande Leur Mass land equation, application- analysis for constant recharge, intermittent recharge cases.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-irrigation-and-drainage-engineering-04-module-4-layout-of-open-drainage-systems-types",
+        "title": "Module 4: Layout of open drainage systems types",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811115",
+            "title": "Layout of open drainage systems : types-Field drains, design considerations of ditch drains- Mole drains, design considerations, suitability- Sub-surface drainage systems- Pipe drainage systems design for uniform and non-uniform flow conditions-transport and dewatering situations. Patterns of drainage system- Drainage criteria formulation for off season drainage, crop season drainage, salt drainage- use of steady state and unsteady state approaches in formulation. - criteria for irrigated area. –incorporation of intentional and unavoidable losses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811116",
+            "title": "Salinity and drainage - cause of salinity, salt balance equation, leaching efficiency, salt equilibrium equation and leaching requirement – salt storage equation – expressing equations in electrical conductivity terms-Design of a drainage system for an irrigated area based on crop water requirement and leaching requirement- Dynamic equilibrium concept.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811117",
+            "title": "Gravity outlet structures - types, location.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-quantity-surveying-and-valuation",
+    "code": "PCCET601",
+    "name": "QUANTITY SURVEYING AND VALUATION",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-quantity-surveying-and-valuation-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81107b",
+            "title": "Introduction- Quantity Surveying- Basic principles, Role/responsibility of Quantity surveyor at various stages of construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81107c",
+            "title": "Estimate-Details required, Type of estimate, purposes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81107d",
+            "title": "Contingencies, Work-charge establishment, Tools and Plant, centage charge, Day work, Prime cost, Provisional sum & provisional Quantity, Overhead charges, Cost index, Contract documents (Brief description only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81107e",
+            "title": "Bill of Quantity -Typical format-use",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81107f",
+            "title": "Item of works- Identify various item of work from the drawings-units of measurement of various materials and works (focus may give to RCC residential building)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811080",
+            "title": "General rule & method of measurement with reference to Indian Standard Specifications-IS1200.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-quantity-surveying-and-valuation-02-module-2-introduction-to-the-use-of-cpwd-schedule-of-rates-as-per-latest-dsr-and",
+        "title": "Module 2: Introduction to the use of cpwd schedule of rates as per latest dsr and",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811082",
+            "title": "Introduction to the use of CPWD schedule of rates as per latest DSR and Analysis of rate as per latest DAR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811083",
+            "title": "Specifications-General specification of all items of a residential building.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811084",
+            "title": "Detailed specifications (CPWD specifications) of major item of work like Earth work excavation in foundation, masonry, Reinforced cement concrete, finishing of building work",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811085",
+            "title": "Analysis of rates for Earth work in excavation for foundation, mortars, reinforced cement concrete Works, finishing work, masonry work, stone works, flooring with reference to latest DSR and latest DAR (Data should be given).",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-quantity-surveying-and-valuation-03-module-3-detailed-estimate",
+        "title": "Module 3: Detailed estimate",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811087",
+            "title": "Detailed Estimate- Preparation of detailed measurement using Centre line method & Short wall long wall (separate wall) method for RCC single-storied building (Flat roof) including stair cabin- Residential/office/school building.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811088",
+            "title": "BOQ preparation of a single-storied RCC building work.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811089",
+            "title": "Material quantity calculation of the items of work (Rubble, Brick work, Concrete work, Plastering) in detailed estimate prepared for building work. (Data for unit quantity should be provided from DAR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81108a",
+            "title": "Bar Bending Schedule- Preparation of BBS of RCC beams, slabs, Column footings, Retaining wall.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81108b",
+            "title": "Road estimation-Estimation of earthwork from longitudinal section-metaled road.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81108c",
+            "title": "Estimation of sanitary and water supply work -Water tank, Septic tank, Manhole (No Detailed estimate needed- concept of item of work, its general specification and unit of measurement).",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15ce56b5e963ba81108c-q-1",
+                "year": "2024",
+                "question": "You are estimating the construction of the walls and base of a large underground reinforced concrete water tank.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81108c-q-2",
+                "year": "2024",
+                "question": "You are estimating the supply and installation of the concrete cover and frame for a septic tank.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81108c-q-3",
+                "year": "2024",
+                "question": "You need to quantify the steel bars required for the reinforcement of a septic tank's concrete structure.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81108c-q-4",
+                "year": "2024",
+                "question": "You are estimating the excavation required to create the space for a manhole.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba81108c-q-5",
+                "year": "2024",
+                "question": "You are estimating the cost of providing and fitting the cast iron steps inside a deep manhole.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15ce56b5e963ba81108d",
+            "title": "Introduction to software tools for quantity surveying",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-quantity-surveying-and-valuation-04-module-4-valuation-purpose-factor-affecting-introduction-to-terms",
+        "title": "Module 4: Valuation purpose factor affecting introduction to terms",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81108f",
+            "title": "Valuation – purpose, factor affecting, introduction to terms-Value, Cost, Price, kinds of values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811090",
+            "title": "Income- Gross income, net income, outgoings, annuity, sinking fund, Year’s purchase, Depreciation, obsolescence -Free hold and leasehold properties.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811091",
+            "title": "Methods of calculating depreciation – straight line method – constant percentage method, sinking fund method and quantity survey method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811092",
+            "title": "Methods of valuation– rental method, direct comparison of capital cost, valuation based on profit, depreciation method.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811093",
+            "title": "Valuation of land (Brief description only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-repair-and-rehabilitation-of-structures",
+    "code": "PECET634",
+    "name": "REPAIR AND REHABILITATION OF STRUCTURES",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-repair-and-rehabilitation-of-structures-01-module-1-introduction-maintenance-importance-of-maintenance-routine-and-preventi",
+        "title": "Module 1: Introduction maintenance importance of maintenance routine and preventi",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81118a",
+            "title": "Introduction – Maintenance, importance of maintenance, routine and preventive maintenance, rehabilitation, repair, retrofit and strengthening, need for rehabilitation of structures.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81118b",
+            "title": "Cracks in R.C. buildings  - Various cracks in R.C. structures, causes and effects.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81118c",
+            "title": "Damages to masonry structures  - Various damages to masonry structures and causes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-repair-and-rehabilitation-of-structures-02-module-2-damage-diagnosis-and-assessment",
+        "title": "Module 2: Damage diagnosis and assessment",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba81118e",
+            "title": "Damage diagnosis and assessment  - Various aspects of Inspection, Assessment procedure for evaluating a damaged structure, Visual inspection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81118f",
+            "title": "Non-Destructive Testing of structures:   Rebound hammer, Ultra sonic pulse velocity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811190",
+            "title": "Semi destructive testing of structures : Probe test, Pull out test, Chloride penetration test, Carbonation, Carbonation depth testing, Corrosion activity measurement, Core test.",
+            "content": "",
+            "pyqs": [
+              {
+                "id": "689f15ce56b5e963ba811190-q-1",
+                "year": "2024",
+                "question": "You are assessing a concrete bridge deck exposed to de-icing salts. Which semi-destructive tests would be most appropriate for determining the risk of reinforcement corrosion? Explain your reasoning.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811190-q-2",
+                "year": "2024",
+                "question": "Describe the principle behind the pull-out test and explain why it is considered semi-destructive.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811190-q-3",
+                "year": "2024",
+                "question": "What is the primary purpose of using phenolphthalein indicator in carbonation depth testing, and what color change indicates a carbonated zone?",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811190-q-4",
+                "year": "2024",
+                "question": "List three advantages and three limitations of the core test.",
+                "marks": 3
+              },
+              {
+                "id": "689f15ce56b5e963ba811190-q-5",
+                "year": "2024",
+                "question": "Explain the relationship between carbonation and reinforcement corrosion.",
+                "marks": 3
+              }
+            ]
+          },
+          {
+            "id": "689f15ce56b5e963ba811191",
+            "title": "Strength and Durability of Concrete structures  - Quality assurance for concrete – Strength, Durability and Thermal properties of concrete. Effects due to climate, temperature, Sustained elevated temperature, Corrosion - effects of cover thickness.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811192",
+            "title": "Substrate preparation  - Importance of substrate/ surface preparation, General surface preparation methods and procedure, reinforcing steel cleaning.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-repair-and-rehabilitation-of-structures-03-module-3-repair-materials",
+        "title": "Module 3: Repair materials",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811194",
+            "title": "Repair materials  -Various repair materials, Criteria for material selection, Methodology of Selection. Health and safety precautions for handling and applications of repair materials.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811195",
+            "title": "Special mortars and concretes-  Polymer concrete, Sulphur infiltrated concrete, Fibre reinforced concrete, High strength concrete, High performance concrete, Vacuum concrete, Self-compacting concrete, Self-healing concrete, Geopolymer concrete, Reactive powder concrete, Concrete made with industrial wastes, Polymer Concrete and Mortar, Quick setting compounds, Gunite and Shot Crete, Expansive cement, Ferro cement, Concrete chemicals.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811196",
+            "title": "Grouting materials  - Gas forming grouts, Salfoaluminate grouts, Polymer grouts, Acrylate and Urethane grouts. Protective coatings - Protective coatings for Concrete and Steel.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba811197",
+            "title": "FRP sheets",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-repair-and-rehabilitation-of-structures-04-module-4-crack-repair",
+        "title": "Module 4: Crack repair",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba811199",
+            "title": "Crack repair  - Various methods of crack repair, Grouting, Routing and sealing, Stitching, Dry packing, Autogenous healing, Overlays, Repair to active cracks, Repair to dormant cracks.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81119a",
+            "title": "Corrosion of embedded steel in concrete – Corrosion of embedded steel in concrete, Mechanism, Stages of corrosion damage. Repair of various corrosion damages of structural elements by Cathodic protection.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81119b",
+            "title": "Jacketing - Column jacketing, Beam jacketing, Beam-Column joint jacketing, Reinforced concrete jacketing, Steel jacketing, FRP jacketing.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81119c",
+            "title": "Strengthening of Structural elements  due to fire, Leakage, earthquake-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81119d",
+            "title": "Epoxy injection, Shoring, Underpinning.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba81119e",
+            "title": "Demolition Techniques  - Non-explosive and Explosive demolition, Engineered demolition techniques for dilapidated structures - Wrecking Ball Method, Concrete Sawing Method, Top down method, Hydraulic crusher, Implosion by delayed detonation technique.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-solid-and-hazardous-waste-management",
+    "code": "PECET636",
+    "name": "SOLID AND HAZARDOUS WASTE MANAGEMENT",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-solid-and-hazardous-waste-management-01-module-1-introduction",
+        "title": "Module 1: Introduction",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111b7",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111b8",
+            "title": "Wastes-Sources and characteristics - Categories of wastes- Municipal, Industrial, Bio-medical, Universal, Construction and demolition, Radioactive, e wastes, Agricultural waste.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111b9",
+            "title": "Functional elements of solid waste management",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-solid-and-hazardous-waste-management-02-module-2-functional-elements",
+        "title": "Module 2: Functional elements",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111bb",
+            "title": "Functional Elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111bc",
+            "title": "Characteristics of solid waste, Proximate and ultimate analysis, Generation and factors, Storage of solid waste- factors to be considered Collection systems, Routing, Need for transfer operation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111bd",
+            "title": "Processing techniques- Mechanical volume and size reduction, chemical volume reduction, component separation Resource conservation and recovery.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-solid-and-hazardous-waste-management-03-module-3-disposal-of-solid-waste",
+        "title": "Module 3: Disposal of solid waste",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111bf",
+            "title": "Disposal Of Solid Waste",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111c0",
+            "title": "Biochemical methods – Sanitary landfills, composting, anaerobic digesters Sanitary landfills- parts and their functions, design considerations, methods of landfilling advantages and disadvantages, Composting- Stages in aerobic composting, types of composting-Indore and Bangalore process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111c1",
+            "title": "Anaerobic digesters – Stages in anaerobic digestion, Parts of a digester",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111c2",
+            "title": "Thermo chemical methods -incineration, gasification and pyrolysis, types of incinerators -parts of an incinerator-incinerator effluent gas and composition, advantages and disadvantages",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-solid-and-hazardous-waste-management-04-module-4-hazardous-waste",
+        "title": "Module 4: Hazardous waste",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111c4",
+            "title": "Hazardous Waste",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111c5",
+            "title": "Hazardous waste –Definition and Identification, Classification, Handling and Storage, Collection, Transportation Treatment and remedial actions, Stabilization and Solidification, Thermal methods, Secure Landfill",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-structural-geology",
+    "code": "OECET 615",
+    "name": "STRUCTURAL GEOLOGY",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-structural-geology-01-module-1-introduction-to-structural-geology",
+        "title": "Module 1: Introduction to structural geology",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81134f",
+            "title": "Introduction to Structural Geology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811350",
+            "title": "Forces causing deformation in Earth’s lithosphere",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811351",
+            "title": "Concept of rock deformation: Stress and Strain in rocks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811352",
+            "title": "Strain ellipses of different types and their geological significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811353",
+            "title": "Rheology of rocks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811354",
+            "title": "Concept of dip and strike",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811355",
+            "title": "Outcrop patterns.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-structural-geology-02-module-2-foliation-and-lineation",
+        "title": "Module 2: Foliation and lineation",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811357",
+            "title": "Foliation and lineation- Description and origin of foliations, axial plane cleavage and its tectonic significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811358",
+            "title": "Description and origin of lineation and relationship with the major structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811359",
+            "title": "Neotectonics-Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81135a",
+            "title": "Neo tectonic activity in Kerala.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-structural-geology-03-module-3-folds",
+        "title": "Module 3: Folds",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba81135c",
+            "title": "Folds- Fold morphology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81135d",
+            "title": "Geometric and genetic classification of folds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81135e",
+            "title": "Introduction to the mechanics of folding: Buckling, Bending, Flexural slip and flow folding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba81135f",
+            "title": "Importance of structures in mineral, oil and gas deposits",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-structural-geology-04-module-4-fractures-and-faults-geometric-and-genetic-classification-of-fractures-",
+        "title": "Module 4: Fractures and faults geometric and genetic classification of fractures ",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba811361",
+            "title": "Fractures and faults: Geometric and genetic classification of fractures and faults",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811362",
+            "title": "Effects of faulting on the outcrops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811363",
+            "title": "Geologic/geomorphic criteria for recognition of faults and fault plane solutions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811364",
+            "title": "Lineaments- Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba811365",
+            "title": "Major lineaments in Kerala and its possible implications.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-traffic-engineering-and-management",
+    "code": "PECET637",
+    "name": "TRAFFIC ENGINEERING AND MANAGEMENT",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-traffic-engineering-and-management-01-module-1-fundamental-parameters",
+        "title": "Module 1: Fundamental parameters",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111d8",
+            "title": "Fundamental parameters- speed, density, volume, travel time, headway, spacing, time-space diagram, time mean speed, space mean speed and their relation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111d9",
+            "title": "Fundamental diagrams of traffic flow.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111da",
+            "title": "Single Regime models - Greenshields model, Greenberg logarithmic model.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111db",
+            "title": "Multi-Regime models – Two and three regime linear models.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111dc",
+            "title": "Need and scope of traffic regulations- Motor Vehicle Act – Regulation of speed- Regulation of vehicles – Regulations concerning driver- General rules concerning traffic- parking regulations- Enforcement of regulations.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-traffic-engineering-and-management-02-module-2-scope-of-traffic-management-measures-restrictions-to-turning-movements-",
+        "title": "Module 2: Scope of traffic management measures restrictions to turning movements ",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111de",
+            "title": "Scope of traffic management measures – restrictions to turning movements – one-way streets – tidal flow operations-Closing side streets –Exclusive bus lanes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111df",
+            "title": "Intersections: At-grade intersections- basic forms- conflict points -visibility triangle- design principles- Channelization.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111e0",
+            "title": "Grade separated intersection: Grade separated intersections without interchange, and with interchange- Three leg interchange, Four leg interchange and multileg interchange.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111e1",
+            "title": "Traffic Control Measures - Traffic Signs, Road Markings, Traffic control aids. General awareness only.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-traffic-engineering-and-management-03-module-3-capacity-and-level-of-service-los-concept",
+        "title": "Module 3: Capacity and level of service los concept",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111e3",
+            "title": "Capacity and Level of service (LOS): Concept- Base capacity, Adjusted capacity, LOS definition, Factors Affecting Capacity and LOS, Homogeneous and heterogeneous traffic conditions- vehicle types - Concept of PCU.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111e4",
+            "title": "Capacity and LOS analysis –Single lane, Intermediate lane and two lane interurban roads- Base capacity and adjustment factors- Indo HCM (2017) Approach.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111e5",
+            "title": "Capacity and LOS analysis of Urban roads - Base conditions -Adjustment factors- Indo HCM (2017) approach.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111e6",
+            "title": "Roundabouts- Geometric layout, types- design elements.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-traffic-engineering-and-management-04-module-4-traffic-signals",
+        "title": "Module 4: Traffic signals",
+        "topics": [
+          {
+            "id": "689f15ce56b5e963ba8111e8",
+            "title": "Traffic Signals - Warrants- pre-timed and traffic actuated.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111e9",
+            "title": "Design of signal timing at isolated intersections- Phase design- optimum cycle time (Webster’s approach), green splitting-pedestrian phase -phase diagrams, timing diagram.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111ea",
+            "title": "Traffic Safety: Road Safety Situation in India, Causes of road accidents – influence of road, vehicle, driver and environmental factors - Pedestrian Safety, Collection and statistical analysis of accident data, Collision and condition diagram.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15ce56b5e963ba8111eb",
+            "title": "Road safety audit- concept and need- organizations involved-stages of road safety audit (brief description only)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ce-6-transportation-engineering-lab",
+    "code": "PCCEL607",
+    "name": "TRANSPORTATION ENGINEERING LAB",
+    "branchId": "ce",
+    "semester": 6,
+    "modules": [
+      {
+        "id": "ce-6-transportation-engineering-lab-01-module-1-california-bearing-ratio-test",
+        "title": "Module 1: California bearing ratio test",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113ad",
+            "title": "California Bearing Ratio Test",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-transportation-engineering-lab-02-module-2-specific-gravity-and-water-absorption-test",
+        "title": "Module 2: Specific gravity and water absorption test",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113af",
+            "title": "Specific Gravity and Water Absorption Test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b0",
+            "title": "Aggregate Impact Test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b1",
+            "title": "Los Angeles Abrasion Test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b2",
+            "title": "Aggregate Crushing Value Test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b3",
+            "title": "Shape Test: Angularity number",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b4",
+            "title": "Combined flakiness and elongation index",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b5",
+            "title": "Stripping value of road aggregates.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-transportation-engineering-lab-03-module-3-determination-of-grade-of-bitumen-based-on-viscosity",
+        "title": "Module 3: Determination of grade of bitumen based on viscosity",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113b7",
+            "title": "Determination of grade of bitumen based on viscosity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b8",
+            "title": "Softening point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113b9",
+            "title": "Ductility of bitumen (Demonstration using Aged bitumen)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "689f15cf56b5e963ba8113ba",
+            "title": "Flash and fire point of bitumen",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-transportation-engineering-lab-04-module-4-design-of-bituminous-mix-by-marshall-method-of-mix-design",
+        "title": "Module 4: Design of bituminous mix by marshall method of mix design",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113bc",
+            "title": "Design of bituminous mix by Marshall method of mix design",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ce-6-transportation-engineering-lab-05-module-5-use-of-merlin-apparatus-to-determine-road-roughness",
+        "title": "Module 5: Use of merlin apparatus to determine road roughness",
+        "topics": [
+          {
+            "id": "689f15cf56b5e963ba8113be",
+            "title": "Use of MERLIN apparatus to determine road roughness",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]
