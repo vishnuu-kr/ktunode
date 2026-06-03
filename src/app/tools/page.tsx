@@ -2430,7 +2430,7 @@ export default function ToolsPage() {
 
     return {
       cie: cieTotal,
-      needed: Math.max(40, Math.ceil(needed)), 
+      needed: Math.max(0, Math.ceil(needed)), 
       impossible: needed > 100,
       readyPass: needed <= 40
     };
@@ -2500,28 +2500,28 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
         {/* Card Header with Live free marks badge */}
-        <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-400">
               <Activity className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-sm leading-none">Attendance Log</h3>
-              <span className="text-[9px] font-bold text-zinc-500 block mt-1">S{sem} Active Attendance Runway</span>
+              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Attendance Log</h3>
+              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">S{sem} Active Attendance Runway</span>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
             <button
               onClick={handleShareRunway}
-              className="px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-400 text-[8px] font-bold uppercase tracking-wider hover:bg-violet-500/20 transition-all cursor-pointer active:scale-95"
+              className="px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-600 dark:text-violet-400 text-[8px] font-bold uppercase tracking-wider hover:bg-violet-500/20 transition-all cursor-pointer active:scale-95"
             >
               Share Runway 📋
             </button>
             <div className="text-right">
-              <span className="text-[8px] font-bold text-zinc-500 uppercase tracking-widest block leading-none">Reward</span>
+              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block leading-none">Reward</span>
               <span className={`text-xs font-black ${freeMarksColor} block mt-1 font-mono`}>{freeMarksLabel.split(" ")[0]}</span>
             </div>
           </div>
@@ -2533,10 +2533,10 @@ export default function ToolsPage() {
             <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-zinc-800 rounded-2xl bg-zinc-950/20">
               <ListTodo className="w-8 h-8 text-zinc-600 mb-2.5" />
               <span className="text-[10px] font-bold text-zinc-550 uppercase tracking-widest mb-1">No Subjects Tracked</span>
-              <span className="text-[9px] font-semibold text-zinc-500 mb-3 text-center">Import your semester grid to start logging attendance data.</span>
+              <span className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mb-3 text-center">Import your semester grid to start logging attendance data.</span>
               <button
                 onClick={() => loadSemesterData(branch, sem)}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-violet-500/10 border border-violet-500/20 text-violet-400 text-[9px] font-bold uppercase tracking-wider hover:bg-violet-500/20 transition-all cursor-pointer active:scale-95"
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-violet-500/10 border border-violet-500/20 text-violet-600 dark:text-violet-400 text-[9px] font-bold uppercase tracking-wider hover:bg-violet-500/20 transition-all cursor-pointer active:scale-95"
               >
                 <Plus className="w-3.5 h-3.5" /> Import {branch.toUpperCase()} Semester {sem} Core Grid
               </button>
@@ -2560,18 +2560,18 @@ export default function ToolsPage() {
               else if (pct < 85) { color = "text-blue-450"; progressBg = "bg-blue-500"; }
 
               return (
-                <div key={sub.id} className="p-3.5 rounded-2xl bg-zinc-950/40 border border-white/[0.04] space-y-3">
+                <div key={sub.id} className="p-3.5 rounded-2xl bg-zinc-950/40 border border-slate-200/40 dark:border-white/[0.04] space-y-3">
                   <div className="flex justify-between items-center text-xs">
                     <div className="truncate pr-2">
-                      <span className="font-bold text-[10px] block text-white truncate leading-none font-mono">{sub.code}</span>
-                      <span className="text-[9px] font-semibold text-zinc-500 block truncate mt-1">{sub.name}</span>
+                      <span className="font-bold text-[10px] block text-slate-900 dark:text-white truncate leading-none font-mono">{sub.code}</span>
+                      <span className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 block truncate mt-1">{sub.name}</span>
                     </div>
                     <div className="text-right shrink-0">
                       <span className={`font-bold text-[10px] block ${color} font-mono`}>{pct}%</span>
                       {impossible ? (
                         <span className="text-[8px] font-bold text-rose-455 uppercase tracking-wider block mt-0.5 animate-pulse">Danger 🚨</span>
                       ) : (
-                        <span className="text-[8px] font-semibold text-zinc-500 block mt-0.5">Miss max: <strong className="text-emerald-450 font-mono">{canMiss}</strong></span>
+                        <span className="text-[8px] font-semibold text-slate-500 dark:text-slate-400 block mt-0.5">Miss max: <strong className="text-emerald-450 font-mono">{canMiss}</strong></span>
                       )}
                     </div>
                   </div>
@@ -2586,7 +2586,7 @@ export default function ToolsPage() {
                   {/* Attendance Controls & ProgressBar */}
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex-1">
-                      <div className="flex justify-between text-[9px] font-bold text-zinc-500 mb-1 font-mono">
+                      <div className="flex justify-between text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-1 font-mono">
                         <span>Attended: {sub.attended}</span>
                         <span>Total: {sub.total}</span>
                       </div>
@@ -2597,7 +2597,7 @@ export default function ToolsPage() {
                     
                     <div className="flex items-center gap-3 shrink-0">
                       <div className="flex flex-col items-center">
-                        <span className="text-[7px] font-bold text-zinc-500 uppercase tracking-widest leading-none mb-1">Present</span>
+                        <span className="text-[7px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none mb-1">Present</span>
                         <div className="flex gap-1">
                           <button
                             onClick={() => handleAttendanceChange(sub.id, "attended", 1)}
@@ -2615,7 +2615,7 @@ export default function ToolsPage() {
                       </div>
 
                       <div className="flex flex-col items-center">
-                        <span className="text-[7px] font-bold text-zinc-500 uppercase tracking-widest leading-none mb-1">Absent</span>
+                        <span className="text-[7px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none mb-1">Absent</span>
                         <div className="flex gap-1">
                           <button
                             onClick={() => handleAttendanceChange(sub.id, "total", 1)}
@@ -2633,7 +2633,7 @@ export default function ToolsPage() {
                       </div>
 
                       <div className="flex flex-col items-center">
-                        <span className="text-[7px] font-bold text-zinc-500 uppercase tracking-widest leading-none mb-1">Cancel</span>
+                        <span className="text-[7px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none mb-1">Cancel</span>
                         <div className="flex gap-1">
                           <button
                             onClick={() => handleAttendanceChange(sub.id, "cancelled", 1)}
@@ -2669,15 +2669,15 @@ export default function ToolsPage() {
     const safe = neededSeries2 <= 0;
 
     return (
-      <div className="bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
-        <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-400">
+            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
               <Calculator className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-sm leading-none">CIE & Damage Control</h3>
-              <span className="text-[9px] font-bold text-zinc-500 block mt-1">Calculate CIE internals and Series 2 targets</span>
+              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">CIE & Damage Control</h3>
+              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Calculate CIE internals and Series 2 targets</span>
             </div>
           </div>
         </div>
@@ -2696,7 +2696,7 @@ export default function ToolsPage() {
                 setMtAggSeries1(v);
                 setMtDmgSeries1(v);
               }}
-              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
             />
           </div>
           <div className="space-y-1.5">
@@ -2707,7 +2707,7 @@ export default function ToolsPage() {
               max="50"
               value={mtAggSeries2}
               onChange={(e) => setMtAggSeries2(Math.min(50, Math.max(0, Number(e.target.value))))}
-              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
             />
           </div>
           <div className="space-y-1.5">
@@ -2721,7 +2721,7 @@ export default function ToolsPage() {
                 const v = Math.min(10, Math.max(0, Number(e.target.value)));
                 setMtAggAssg(v);
               }}
-              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
             />
           </div>
           <div className="space-y-1.5">
@@ -2735,25 +2735,25 @@ export default function ToolsPage() {
                 const v = Math.min(5, Math.max(0, Number(e.target.value)));
                 setMtAggAtt(v);
               }}
-              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
             />
           </div>
         </div>
 
         {/* Aggregated CIE display */}
-        <div className="p-4 rounded-xl border border-white/[0.06] bg-zinc-950/40 text-center space-y-1">
-          <div className="text-[10px] font-bold tracking-widest text-zinc-500 uppercase">Aggregated CIE Score</div>
-          <div className="text-4xl font-light tracking-tight text-white font-mono">{totalCie.toFixed(1)} <span className="text-xs text-zinc-550">/ 50</span></div>
-          <div className="text-[9px] font-semibold text-zinc-400 mt-1">
+        <div className="p-4 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-zinc-950/40 text-center space-y-1">
+          <div className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase">Aggregated CIE Score</div>
+          <div className="text-4xl font-light tracking-tight text-slate-900 dark:text-white font-mono">{totalCie.toFixed(1)} <span className="text-xs text-zinc-550">/ 50</span></div>
+          <div className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mt-1">
             Formula: ((Series 1 + Series 2) / 2 × 0.7) + Assignments + Attendance
           </div>
         </div>
 
         {/* Series 2 Damage Control Target */}
-        <div className="pt-2 border-t border-white/[0.06] space-y-3">
+        <div className="pt-2 border-t border-slate-200/60 dark:border-white/[0.06] space-y-3">
           <div className="flex justify-between items-center text-xs font-bold text-zinc-350">
             <span>Target CIE Score (out of 50)</span>
-            <span className="text-violet-400 font-bold font-mono">{mtDmgTarget} / 50</span>
+            <span className="text-violet-600 dark:text-violet-400 font-bold font-mono">{mtDmgTarget} / 50</span>
           </div>
           <input
             type="range"
@@ -2766,7 +2766,7 @@ export default function ToolsPage() {
 
           {(() => {
             let desc = "";
-            let color = "text-violet-400 bg-violet-500/10 border-violet-500/20";
+            let color = "text-violet-600 dark:text-violet-400 bg-violet-500/10 border-violet-500/20";
             if (impossible) {
               desc = `Required Series 2 score is ${neededSeries2.toFixed(1)}, which is impossible (max 50). Try lowering target CIE.`;
               color = "text-rose-455 bg-rose-500/10 border-rose-500/20";
@@ -2804,14 +2804,14 @@ export default function ToolsPage() {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Credit Auditor Card */}
-        <div className="bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
-          <div className="flex items-center gap-2.5 border-b border-white/[0.06] pb-3">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-400">
+        <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+          <div className="flex items-center gap-2.5 border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
+            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-sm leading-none">Credit Year-Back Auditor</h3>
-              <span className="text-[9px] font-bold text-zinc-500 block mt-1">Check KTU promotion credit requirements</span>
+              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Credit Year-Back Auditor</h3>
+              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Check KTU promotion credit requirements</span>
             </div>
           </div>
 
@@ -2821,8 +2821,8 @@ export default function ToolsPage() {
                 onClick={() => setProgressionTarget("s5")}
                 className={`flex-1 py-1.5 rounded-lg border text-[9px] font-bold uppercase transition-all cursor-pointer ${
                   progressionTarget === "s5"
-                    ? "bg-violet-500/20 text-violet-400 border-violet-500/20"
-                    : "bg-[#121215] text-zinc-500 border-white/[0.02] hover:bg-white/[0.02]"
+                    ? "bg-violet-500/20 text-violet-600 dark:text-violet-400 border-violet-500/20"
+                    : "bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-white/[0.02] hover:bg-white/[0.02]"
                 }`}
               >
                 S5 Lock Check (Need 26)
@@ -2832,7 +2832,7 @@ export default function ToolsPage() {
                 className={`flex-1 py-1.5 rounded-lg border text-[9px] font-bold uppercase transition-all cursor-pointer ${
                   progressionTarget === "s7"
                     ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                    : "bg-[#121215] text-zinc-500 border-white/[0.02] hover:bg-white/[0.02]"
+                    : "bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-white/[0.02] hover:bg-white/[0.02]"
                 }`}
               >
                 S7 Lock Check (Need 52)
@@ -2841,49 +2841,49 @@ export default function ToolsPage() {
 
             <div className="grid grid-cols-2 gap-3.5">
               <div className="space-y-1">
-                <label className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">S1 Credits</label>
+                <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S1 Credits</label>
                 <input
                   type="number"
                   min="0"
                   max="22"
                   value={s1}
                   onChange={(e) => handleProgressionCreditChange("s1", Number(e.target.value))}
-                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">S2 Credits</label>
+                <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S2 Credits</label>
                 <input
                   type="number"
                   min="0"
                   max="22"
                   value={s2}
                   onChange={(e) => handleProgressionCreditChange("s2", Number(e.target.value))}
-                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
                 />
               </div>
               {progressionTarget === "s7" && (
                 <>
                   <div className="space-y-1">
-                    <label className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">S3 Credits</label>
+                    <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S3 Credits</label>
                     <input
                       type="number"
                       min="0"
                       max="22"
                       value={s3}
                       onChange={(e) => handleProgressionCreditChange("s3", Number(e.target.value))}
-                      className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
                     />
                   </div>
                   <div className="space-y-1">
-                    <label className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">S4 Credits</label>
+                    <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S4 Credits</label>
                     <input
                       type="number"
                       min="0"
                       max="22"
                       value={s4}
                       onChange={(e) => handleProgressionCreditChange("s4", Number(e.target.value))}
-                      className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
                     />
                   </div>
                 </>
@@ -2895,14 +2895,14 @@ export default function ToolsPage() {
                 ? "bg-emerald-500/[0.02] border-emerald-500/10 text-emerald-450"
                 : "bg-rose-500/[0.01] border-rose-500/10 text-rose-455 animate-pulse"
             }`}>
-              <div className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest leading-none font-mono">Promotion Audit Status</div>
-              <div className="text-xl font-light tracking-tight text-white py-1 font-mono">
-                {earned} <span className="text-xs text-zinc-500">/ {limit} Credits</span>
+              <div className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none font-mono">Promotion Audit Status</div>
+              <div className="text-xl font-light tracking-tight text-slate-900 dark:text-white py-1 font-mono">
+                {earned} <span className="text-xs text-slate-500 dark:text-slate-400">/ {limit} Credits</span>
               </div>
               <div className="text-[10px] font-bold uppercase tracking-wider block mt-1">
                 {passed ? "Clear for Promotion ✅" : `Year-Back Credit Lock Risk! 🚩`}
               </div>
-              <div className="text-[9px] font-semibold text-zinc-400 mt-1 leading-normal">
+              <div className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mt-1 leading-normal">
                 {progressionTarget === "s5" ? "S5 promotion" : "S7 promotion"} requires minimum <strong className="text-zinc-200">{limit} credits</strong>. You are {passed ? "safe" : `${limit - earned} credits short`}.
               </div>
             </div>
@@ -2910,22 +2910,22 @@ export default function ToolsPage() {
         </div>
 
         {/* Activity Points Auditor Card */}
-        <div className="bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
-          <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+        <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+          <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
             <div className="flex items-center gap-2.5">
               <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-400">
                 <Award className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-sm leading-none">Activity Points Auditor</h3>
-                <span className="text-[9px] font-bold text-zinc-500 block mt-1 font-mono">Earned: {totalActivityPoints} / {calculatedPoints.totalRequired} pts</span>
+                <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Activity Points Auditor</h3>
+                <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1 font-mono">Earned: {totalActivityPoints} / {calculatedPoints.totalRequired} pts</span>
               </div>
             </div>
             
             <select
               value={studentType}
               onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
-              className="bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black text-white focus:outline-none cursor-pointer"
+              className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black text-slate-900 dark:text-white focus:outline-none cursor-pointer"
             >
               <option value="regular">Regular</option>
               <option value="lateral">Lateral</option>
@@ -2948,25 +2948,25 @@ export default function ToolsPage() {
             {/* List of claims */}
             <div className="space-y-2 max-h-[140px] overflow-y-auto pr-1 scrollbar-thin">
               {selectedActivities.length === 0 ? (
-                <div className="text-[9.5px] font-bold text-zinc-500 text-center py-6">
+                <div className="text-[9.5px] font-bold text-slate-500 dark:text-slate-400 text-center py-6">
                   No activity claims logged. Add claims below.
                 </div>
               ) : (
                 selectedActivities.map((act) => {
                   const details = KTU_ACTIVITIES[act.activityCode];
                   return (
-                    <div key={act.id} className="p-2.5 rounded-xl bg-zinc-950/40 border border-white/[0.04] flex items-center justify-between text-[9px] text-zinc-300">
+                    <div key={act.id} className="p-2.5 rounded-xl bg-zinc-950/40 border border-slate-200/40 dark:border-white/[0.04] flex items-center justify-between text-[9px] text-zinc-300">
                       <div className="truncate pr-2">
-                        <span className="font-bold text-white font-mono">{act.activityCode}</span>
-                        {act.level && <span className="ml-1 text-zinc-500">[{act.level}]</span>}
-                        {act.quantity && <span className="ml-1 text-zinc-500">[{act.quantity} units]</span>}
-                        <span className="block text-[8px] text-zinc-500 truncate">{details?.name}</span>
+                        <span className="font-bold text-slate-900 dark:text-white font-mono">{act.activityCode}</span>
+                        {act.level && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.level}]</span>}
+                        {act.quantity && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.quantity} units]</span>}
+                        <span className="block text-[8px] text-slate-500 dark:text-slate-400 truncate">{details?.name}</span>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
                         <span className="font-bold text-emerald-450 font-mono">+{act.points} pts</span>
                         <button
                           onClick={() => handleDeleteActivity(act.id)}
-                          className="text-zinc-500 hover:text-rose-505 cursor-pointer p-0.5 active:scale-90 transition-all"
+                          className="text-slate-500 dark:text-slate-400 hover:text-rose-505 cursor-pointer p-0.5 active:scale-90 transition-all"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
@@ -2978,12 +2978,12 @@ export default function ToolsPage() {
             </div>
 
             {/* Add activity form */}
-            <div className="p-3 rounded-xl border border-white/[0.04] bg-zinc-950/30 space-y-2 text-[9px]">
+            <div className="p-3 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/30 space-y-2 text-[9px]">
               <div className="grid grid-cols-3 gap-2">
                 <select
                   value={actSelGroup}
                   onChange={(e) => handleGroupSelect(e.target.value as "I" | "II" | "III")}
-                  className="bg-[#121215] border border-white/[0.06] rounded-lg px-1.5 py-1 text-white font-mono cursor-pointer"
+                  className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono cursor-pointer"
                 >
                   <option value="I">Group I</option>
                   <option value="II">Group II</option>
@@ -2993,7 +2993,7 @@ export default function ToolsPage() {
                 <select
                   value={actSelCode}
                   onChange={(e) => handleCodeSelect(e.target.value)}
-                  className="bg-[#121215] border border-white/[0.06] rounded-lg px-1.5 py-1 col-span-2 text-white font-mono cursor-pointer"
+                  className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 col-span-2 text-slate-900 dark:text-white font-mono cursor-pointer"
                 >
                   {(() => {
                     const group = KTU_ACTIVITY_GROUPS.find(g => g.id === actSelGroup);
@@ -3018,7 +3018,7 @@ export default function ToolsPage() {
                       <select
                         value={actSelLevel}
                         onChange={(e) => handleLevelSelect(e.target.value)}
-                        className="bg-[#121215] border border-white/[0.06] rounded-lg px-1.5 py-1 text-white cursor-pointer"
+                        className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white cursor-pointer"
                       >
                         {Object.keys(details.levels).map(lvl => (
                           <option key={lvl} value={lvl}>{lvl} ({details.levels?.[lvl]} pts)</option>
@@ -3032,7 +3032,7 @@ export default function ToolsPage() {
                         placeholder="Quantity"
                         value={actSelQuantity}
                         onChange={(e) => handleQuantitySelect(Number(e.target.value))}
-                        className="bg-[#121215] border border-white/[0.06] rounded-lg px-1.5 py-1 text-white font-mono text-center"
+                        className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center"
                       />
                     )}
                     {details.type === "input" && (
@@ -3041,12 +3041,12 @@ export default function ToolsPage() {
                         placeholder={`Points (max ${details.maxPoints})`}
                         value={actSelPoints}
                         onChange={(e) => setActSelPoints(Number(e.target.value))}
-                        className="bg-[#121215] border border-white/[0.06] rounded-lg px-1.5 py-1 text-white font-mono text-center"
+                        className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center"
                       />
                     )}
                     <button
                       onClick={handleAddActivity}
-                      className="bg-violet-500/20 hover:bg-violet-500/30 text-violet-400 font-bold border border-violet-500/30 rounded-lg py-1 cursor-pointer active:scale-95 transition-all col-span-2 md:col-span-1"
+                      className="bg-violet-500/20 hover:bg-violet-500/30 text-violet-600 dark:text-violet-400 font-bold border border-violet-500/30 rounded-lg py-1 cursor-pointer active:scale-95 transition-all col-span-2 md:col-span-1"
                     >
                       Add Activity
                     </button>
@@ -3096,22 +3096,22 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
-        <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-400">
+            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-sm leading-none">Specialization Pathways</h3>
-              <span className="text-[9px] font-bold text-zinc-500 block mt-1">Honours & Minors eligibility checklist</span>
+              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Specialization Pathways</h3>
+              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Honours & Minors eligibility checklist</span>
             </div>
           </div>
         </div>
 
         <div className="space-y-4">
           {/* Honours Audit */}
-          <div className="p-3.5 rounded-xl border border-white/[0.04] bg-zinc-950/20 space-y-2">
+          <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/20 space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase">B.Tech Honours Path</span>
               <span className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider ${
@@ -3122,7 +3122,7 @@ export default function ToolsPage() {
                 {honoursElig ? "Eligible 🏆" : "Ineligible ❌"}
               </span>
             </div>
-            <div className="flex items-center justify-between text-[9px] text-zinc-400">
+            <div className="flex items-center justify-between text-[9px] text-slate-500 dark:text-slate-400">
               <span>Requires CGPA &gt;= 8.5 (Current: {cgpa})</span>
               <button
                 onClick={() => {
@@ -3139,18 +3139,18 @@ export default function ToolsPage() {
             </div>
             
             {!honoursElig && (
-              <div className="pt-2.5 border-t border-white/[0.04] text-[8.5px] font-semibold text-zinc-400 leading-normal">
+              <div className="pt-2.5 border-t border-slate-200/40 dark:border-white/[0.04] text-[8.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal">
                 {honoursImpossible ? (
                   <span className="text-rose-455">🚩 Recovery Target: Out of reach in 1 Sem (Requires SGPA: {neededHonoursSgpa.toFixed(2)}). Target multiple semesters.</span>
                 ) : (
-                  <span className="text-violet-400">💡 Recovery Target: Requires SGPA of <strong className="text-white font-mono">{neededHonoursSgpa.toFixed(2)}</strong> in next semester to restore eligibility standing.</span>
+                  <span className="text-violet-600 dark:text-violet-400">💡 Recovery Target: Requires SGPA of <strong className="text-white font-mono">{neededHonoursSgpa.toFixed(2)}</strong> in next semester to restore eligibility standing.</span>
                 )}
               </div>
             )}
           </div>
 
           {/* Minor Audit */}
-          <div className="p-3.5 rounded-xl border border-white/[0.04] bg-zinc-950/20 space-y-2">
+          <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/20 space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase">B.Tech Minor Path</span>
               <span className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider ${
@@ -3161,7 +3161,7 @@ export default function ToolsPage() {
                 {minorElig ? "Eligible 🎓" : "Ineligible ❌"}
               </span>
             </div>
-            <div className="flex items-center justify-between text-[9px] text-zinc-400">
+            <div className="flex items-center justify-between text-[9px] text-slate-500 dark:text-slate-400">
               <span>Requires CGPA &gt;= 7.5 (Current: {cgpa})</span>
               <div className="flex items-center gap-1.5">
                 <span>Backlogs:</span>
@@ -3174,17 +3174,17 @@ export default function ToolsPage() {
                     setMinorBacklogs(val);
                     localStorage.setItem("ktunode_tools_minor_backlogs", String(val));
                   }}
-                  className="w-8 bg-[#121215] border border-white/[0.06] rounded-md text-center text-white text-[9.5px] font-bold font-mono"
+                  className="w-8 bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-md text-center text-slate-900 dark:text-white text-[9.5px] font-bold font-mono"
                 />
               </div>
             </div>
             
             {!minorElig && (
-              <div className="pt-2.5 border-t border-white/[0.04] text-[8.5px] font-semibold text-zinc-400 leading-normal">
+              <div className="pt-2.5 border-t border-slate-200/40 dark:border-white/[0.04] text-[8.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal">
                 {minorImpossible ? (
                   <span className="text-rose-455">🚩 Recovery Target: Out of reach in 1 Sem (Requires SGPA: {neededMinorSgpa.toFixed(2)}). Target multiple semesters.</span>
                 ) : (
-                  <span className="text-violet-400">💡 Recovery Target: Requires SGPA of <strong className="text-white font-mono">{neededMinorSgpa.toFixed(2)}</strong> in next semester to restore eligibility standing.</span>
+                  <span className="text-violet-600 dark:text-violet-400">💡 Recovery Target: Requires SGPA of <strong className="text-white font-mono">{neededMinorSgpa.toFixed(2)}</strong> in next semester to restore eligibility standing.</span>
                 )}
               </div>
             )}
@@ -3192,7 +3192,7 @@ export default function ToolsPage() {
 
           <button
             onClick={handleShareStanding}
-            className="w-full py-2 rounded-xl bg-violet-500/10 hover:bg-violet-500/20 text-violet-400 border border-violet-500/20 text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98]"
+            className="w-full py-2 rounded-xl bg-violet-500/10 hover:bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/20 text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98]"
           >
             Share standing 📋
           </button>
@@ -3246,15 +3246,15 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
-        <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-400">
+            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
               <Notebook className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-sm leading-none">11th-Hour Study Sequencer</h3>
-              <span className="text-[9px] font-bold text-zinc-500 block mt-1">Modules checklist & strategic advice</span>
+              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">11th-Hour Study Sequencer</h3>
+              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Modules checklist & strategic advice</span>
             </div>
           </div>
 
@@ -3264,7 +3264,7 @@ export default function ToolsPage() {
               const selected = activeSemesterSubjects.find(s => s.code === e.target.value) || { code: e.target.value, name: "Selected Course" };
               setPlannerActiveSubject(selected);
             }}
-            className="bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-[10px] font-black text-white focus:outline-none cursor-pointer"
+            className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-[10px] font-black text-slate-900 dark:text-white focus:outline-none cursor-pointer"
           >
             {activeSemesterSubjects.map(sub => (
               <option key={sub.code} value={sub.code}>{sub.code}</option>
@@ -3274,7 +3274,7 @@ export default function ToolsPage() {
 
         {/* Modules Checklist */}
         <div className="space-y-2">
-          <span className="text-[9.5px] font-bold tracking-widest text-zinc-500 uppercase block">Prepared Syllabus Modules</span>
+          <span className="text-[9.5px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block">Prepared Syllabus Modules</span>
           <div className="grid grid-cols-5 gap-2">
             {[1, 2, 3, 4, 5].map((num, idx) => {
               const isDone = moduleToggles[idx];
@@ -3285,7 +3285,7 @@ export default function ToolsPage() {
                   className={`p-2.5 rounded-xl border text-[10px] font-bold uppercase transition-all cursor-pointer text-center active:scale-95 ${
                     isDone
                       ? "bg-emerald-500/10 text-emerald-450 border-emerald-500/20"
-                      : "bg-[#121215] text-zinc-550 border-white/[0.04] hover:bg-white/[0.02]"
+                      : "bg-slate-50 dark:bg-slate-900 text-zinc-550 border-slate-200/40 dark:border-white/[0.04] hover:bg-white/[0.02]"
                   }`}
                 >
                   Mod {num}
@@ -3296,10 +3296,10 @@ export default function ToolsPage() {
         </div>
 
         {/* Cram timer slider */}
-        <div className="p-3.5 rounded-xl border border-white/[0.04] bg-zinc-950/30 space-y-2.5">
+        <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/30 space-y-2.5">
           <div className="flex justify-between items-center text-xs font-bold text-zinc-350">
             <span>Remaining study window time</span>
-            <span className="text-violet-400 font-bold font-mono">{mtCramHours} Hours</span>
+            <span className="text-violet-600 dark:text-violet-400 font-bold font-mono">{mtCramHours} Hours</span>
           </div>
           <input
             type="range"
@@ -3312,8 +3312,8 @@ export default function ToolsPage() {
         </div>
 
         {/* Advisor recommendation text */}
-        <div className="p-4 rounded-xl border border-white/[0.06] bg-zinc-950/40 space-y-2">
-          <span className="text-[9px] font-bold tracking-widest text-zinc-500 uppercase block">Strategic Cram Recommendation</span>
+        <div className="p-4 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-zinc-950/40 space-y-2">
+          <span className="text-[9px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block">Strategic Cram Recommendation</span>
           <p className="text-[10px] leading-relaxed text-zinc-350 font-medium font-sans">
             {advice}
           </p>
@@ -3321,7 +3321,7 @@ export default function ToolsPage() {
 
         <button
           onClick={handleShareCramStrategy}
-          className="w-full py-2.5 rounded-xl bg-violet-500/10 hover:bg-violet-500/20 text-violet-400 border border-violet-500/20 text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98]"
+          className="w-full py-2.5 rounded-xl bg-violet-500/10 hover:bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/20 text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98]"
         >
           Share Cram Strategy 📋
         </button>
@@ -3343,22 +3343,22 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4 relative overflow-hidden w-full">
+      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4 relative overflow-hidden w-full">
         <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.02] blur-[40px] pointer-events-none" />
         
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/[0.06]">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/60 dark:border-white/[0.06]">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-400 animate-pulse">
+            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400 animate-pulse">
               <Sparkles className="w-4.5 h-4.5" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-sm leading-none">11th-Hour Revision Hub</h3>
-              <span className="text-[9px] font-bold text-zinc-500 block mt-1">Focus, recall, & compliance checks</span>
+              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">11th-Hour Revision Hub</h3>
+              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Focus, recall, & compliance checks</span>
             </div>
           </div>
 
           {/* Tab switcher */}
-          <div className="flex items-center flex-wrap gap-1 bg-white/[0.03] p-1 rounded-xl border border-white/[0.04] self-start sm:self-auto">
+          <div className="flex items-center flex-wrap gap-1 bg-white/[0.03] p-1 rounded-xl border border-slate-200/40 dark:border-white/[0.04] self-start sm:self-auto">
             {[
               { id: "pomodoro", label: "Timer" },
               { id: "flashcards", label: "Recall" },
@@ -3372,8 +3372,8 @@ export default function ToolsPage() {
                 onClick={() => setStudyConsoleTab(tab.id as typeof studyConsoleTab)}
                 className={`px-2 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 ${
                   studyConsoleTab === tab.id
-                    ? "bg-white/10 text-violet-400 border border-white/[0.08]"
-                    : "text-zinc-500 hover:text-zinc-300"
+                    ? "bg-white/10 text-violet-600 dark:text-violet-400 border border-white/[0.08]"
+                    : "text-slate-500 dark:text-slate-400 hover:text-zinc-300"
                 }`}
               >
                 {tab.label}
@@ -3408,10 +3408,10 @@ export default function ToolsPage() {
                 />
               </svg>
               <div className="absolute flex flex-col items-center text-center">
-                <span className="font-mono text-xl font-bold text-white tabular-nums">
+                <span className="font-mono text-xl font-bold text-slate-900 dark:text-white tabular-nums">
                   {Math.floor(pomodoroTime / 60)}:{(pomodoroTime % 60).toString().padStart(2, "0")}
                 </span>
-                <span className="text-[7.5px] font-bold tracking-widest text-zinc-500 uppercase mt-0.5">
+                <span className="text-[7.5px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
                   {pomodoroMode === "focus" ? "🔥 Focus" : "☕ Break"}
                 </span>
               </div>
@@ -3421,7 +3421,7 @@ export default function ToolsPage() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setPomodoroActive(!pomodoroActive)}
-                className="px-4 py-2 bg-violet-500/20 hover:bg-violet-500/30 text-violet-400 border border-violet-500/30 rounded-xl text-[9px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
+                className="px-4 py-2 bg-violet-500/20 hover:bg-violet-500/30 text-violet-600 dark:text-violet-400 border border-violet-500/30 rounded-xl text-[9px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
               >
                 {pomodoroActive ? "Pause" : "Start"}
               </button>
@@ -3430,7 +3430,7 @@ export default function ToolsPage() {
                   setPomodoroActive(false);
                   setPomodoroTime(pomodoroMode === "focus" ? 1500 : 300);
                 }}
-                className="w-8 h-8 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-zinc-400 hover:text-white cursor-pointer active:scale-95 transition-all"
+                className="w-8 h-8 rounded-xl bg-white/[0.03] border border-slate-200/60 dark:border-white/[0.06] flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95 transition-all"
                 title="Reset timer"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
@@ -3442,15 +3442,15 @@ export default function ToolsPage() {
                   setPomodoroMode(nextMode);
                   setPomodoroTime(nextMode === "focus" ? 1500 : 300);
                 }}
-                className="px-3 py-2 bg-white/[0.03] border border-white/[0.06] rounded-xl text-[9px] font-bold uppercase text-zinc-400 hover:text-white cursor-pointer active:scale-95 transition-all"
+                className="px-3 py-2 bg-white/[0.03] border border-slate-200/60 dark:border-white/[0.06] rounded-xl text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95 transition-all"
               >
                 Skip
               </button>
             </div>
 
             {/* Soundscapes */}
-            <div className="w-full space-y-2 border-t border-white/[0.06] pt-3">
-              <span className="text-[8px] font-bold tracking-widest text-zinc-500 uppercase block text-center">
+            <div className="w-full space-y-2 border-t border-slate-200/60 dark:border-white/[0.06] pt-3">
+              <span className="text-[8px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block text-center">
                 Study Ambient Soundscapes
               </span>
               <div className="grid grid-cols-4 gap-1.5 animate-fade-in">
@@ -3465,8 +3465,8 @@ export default function ToolsPage() {
                     onClick={() => setSelectedLofiSound(selectedLofiSound === snd.id ? null : snd.id)}
                     className={`py-1.5 rounded-lg border text-[8px] font-bold transition-all cursor-pointer flex flex-col items-center active:scale-[0.98] ${
                       selectedLofiSound === snd.id
-                        ? "bg-violet-500/10 text-violet-400 border-violet-500/20"
-                        : "bg-transparent text-zinc-500 border-white/[0.06]"
+                        ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20"
+                        : "bg-transparent text-slate-500 dark:text-slate-400 border-slate-200/60 dark:border-white/[0.06]"
                     }`}
                   >
                     <span>{snd.label.split(" ")[0]}</span>
@@ -3482,23 +3482,23 @@ export default function ToolsPage() {
         {studyConsoleTab === "flashcards" && (
           <div className="space-y-3">
             {flashcardsList.length === 0 ? (
-              <div className="text-[10px] font-bold text-zinc-500 text-center py-6">
+              <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 text-center py-6">
                 Select a theory subject on the left to load flashcards.
               </div>
             ) : (
               <div className="space-y-3 animate-fade-in">
-                <div className="flex justify-between items-center text-[9px] font-bold text-zinc-500 px-1">
+                <div className="flex justify-between items-center text-[9px] font-bold text-slate-500 dark:text-slate-400 px-1">
                   <span>Card {activeCardIndex + 1} of {flashcardsList.length}</span>
-                  <span className="bg-violet-500/10 text-violet-400 px-2 py-0.5 rounded-lg border border-violet-500/20">
+                  <span className="bg-violet-500/10 text-violet-600 dark:text-violet-400 px-2 py-0.5 rounded-lg border border-violet-500/20">
                     Retained: {flashcardScores.known} / {flashcardScores.total} Cards
                   </span>
                 </div>
 
                 <div
                   onClick={() => setIsCardFlipped(!isCardFlipped)}
-                  className="h-28 rounded-xl border border-white/[0.06] bg-zinc-955/20 p-3.5 flex flex-col items-center justify-center text-center cursor-pointer select-none relative overflow-hidden group hover:bg-zinc-955/30 active:scale-[0.99] transition-all"
+                  className="h-28 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-zinc-955/20 p-3.5 flex flex-col items-center justify-center text-center cursor-pointer select-none relative overflow-hidden group hover:bg-zinc-955/30 active:scale-[0.99] transition-all"
                 >
-                  <div className="absolute top-1.5 left-2 px-1.5 py-0.5 rounded bg-white/5 text-[7px] font-bold uppercase text-zinc-500">
+                  <div className="absolute top-1.5 left-2 px-1.5 py-0.5 rounded bg-white/5 text-[7px] font-bold uppercase text-slate-500 dark:text-slate-400">
                     {isCardFlipped ? "Answer (Click to flip back)" : "Question (Click to reveal)"}
                   </div>
                   <AnimatePresence mode="wait">
@@ -3524,7 +3524,7 @@ export default function ToolsPage() {
                         setIsCardFlipped(false);
                         setActiveCardIndex(prev => (prev > 0 ? prev - 1 : flashcardsList.length - 1));
                       }}
-                      className="px-2.5 py-1 bg-white/[0.02] border border-white/[0.06] rounded-lg text-[9px] font-bold uppercase text-zinc-400 hover:text-white cursor-pointer active:scale-95"
+                      className="px-2.5 py-1 bg-white/[0.02] border border-slate-200/60 dark:border-white/[0.06] rounded-lg text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95"
                     >
                       Prev
                     </button>
@@ -3533,7 +3533,7 @@ export default function ToolsPage() {
                         setIsCardFlipped(false);
                         setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
                       }}
-                      className="px-2.5 py-1 bg-white/[0.02] border border-white/[0.06] rounded-lg text-[9px] font-bold uppercase text-zinc-400 hover:text-white cursor-pointer active:scale-95"
+                      className="px-2.5 py-1 bg-white/[0.02] border border-slate-200/60 dark:border-white/[0.06] rounded-lg text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95"
                     >
                       Next
                     </button>
@@ -3571,17 +3571,17 @@ export default function ToolsPage() {
         {/* Tab 3: Checklist */}
         {studyConsoleTab === "checklist" && (
           <div className="space-y-3 animate-fade-in text-[10px] font-bold">
-            <span className="text-[9px] font-bold tracking-widest text-zinc-500 uppercase block pb-1 border-b border-white/[0.04]">Exam Hall Compliance Items</span>
+            <span className="text-[9px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block pb-1 border-b border-slate-200/40 dark:border-white/[0.04]">Exam Hall Compliance Items</span>
             <div className="grid grid-cols-1 gap-2 pt-1">
               {mtHallChecklist.map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-2.5 p-2 rounded-xl bg-zinc-955/10 border border-white/[0.04] text-zinc-300 hover:bg-zinc-955/20 transition-all"
+                  className="flex items-center gap-2.5 p-2 rounded-xl bg-zinc-955/10 border border-slate-200/40 dark:border-white/[0.04] text-zinc-300 hover:bg-zinc-955/20 transition-all"
                 >
                   <input
                     type="checkbox"
                     defaultChecked
-                    className="accent-violet-500 h-3.5 w-3.5 rounded bg-zinc-900 border-white/[0.06] cursor-pointer"
+                    className="accent-violet-500 h-3.5 w-3.5 rounded bg-zinc-900 border-slate-200/60 dark:border-white/[0.06] cursor-pointer"
                   />
                   <span>{item}</span>
                 </div>
@@ -3595,11 +3595,11 @@ export default function ToolsPage() {
           <div className="space-y-3 animate-fade-in text-[10px]">
             <div className="grid grid-cols-3 gap-2">
               <div className="space-y-1">
-                <label className="text-[8px] font-bold text-zinc-500 uppercase tracking-widest block">Original Grade</label>
+                <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">Original Grade</label>
                 <select
                   value={mtRevalGrade}
                   onChange={(e) => setMtRevalGrade(e.target.value)}
-                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1.5 text-[9px] font-bold text-white cursor-pointer"
+                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
                 >
                   <option value="F">Grade F</option>
                   <option value="D">Grade D</option>
@@ -3609,23 +3609,23 @@ export default function ToolsPage() {
               </div>
 
               <div className="space-y-1">
-                <label className="text-[8px] font-bold text-zinc-500 uppercase tracking-widest block">CIE (out of 50)</label>
+                <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">CIE (out of 50)</label>
                 <input
                   type="number"
                   min="0"
                   max="50"
                   value={mtRevalCie}
                   onChange={(e) => setMtRevalCie(Math.min(50, Math.max(0, Number(e.target.value))))}
-                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs text-white"
                 />
               </div>
 
               <div className="space-y-1">
-                <label className="text-[8px] font-bold text-zinc-500 uppercase tracking-widest block">Performance</label>
+                <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">Performance</label>
                 <select
                   value={mtRevalExpected}
                   onChange={(e) => setMtRevalExpected(e.target.value)}
-                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1.5 text-[9px] font-bold text-white cursor-pointer"
+                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
                 >
                   <option value="Excellent">Excellent (Expected B+)</option>
                   <option value="Moderate">Moderate (Expected C)</option>
@@ -3660,9 +3660,9 @@ export default function ToolsPage() {
 
               return (
                 <div className={`p-3.5 rounded-xl border text-center ${gambleTheme} space-y-1`}>
-                  <div className="text-[8px] font-bold tracking-widest text-zinc-500 uppercase leading-none">Revaluation Risk Assessment</div>
+                  <div className="text-[8px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase leading-none">Revaluation Risk Assessment</div>
                   <div className="text-sm font-bold py-1 leading-none">{gambleStatus}</div>
-                  <div className="text-[9px] font-medium leading-normal text-zinc-400 mt-1">{details}</div>
+                  <div className="text-[9px] font-medium leading-normal text-slate-500 dark:text-slate-400 mt-1">{details}</div>
                 </div>
               );
             })()}
@@ -3672,33 +3672,33 @@ export default function ToolsPage() {
         {/* Tab 5: Splits */}
         {studyConsoleTab === "splits" && (
           <div className="space-y-3.5 animate-fade-in text-[10px] text-zinc-350">
-            <div className="p-3 bg-zinc-955/10 border border-white/[0.04] rounded-xl space-y-1.5">
-              <span className="text-[8px] font-bold text-zinc-500 uppercase tracking-widest block mb-1">Seminar Split (max 100)</span>
-              <div className="flex justify-between border-b border-white/[0.04] pb-1">
+            <div className="p-3 bg-zinc-955/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
+              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Seminar Split (max 100)</span>
+              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                 <span>Report Quality Documentation</span>
-                <span className="font-bold text-white font-mono">30 Marks</span>
+                <span className="font-bold text-slate-900 dark:text-white font-mono">30 Marks</span>
               </div>
-              <div className="flex justify-between border-b border-white/[0.04] pb-1">
+              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                 <span>Technical Presentation / Slides</span>
-                <span className="font-bold text-white font-mono">40 Marks</span>
+                <span className="font-bold text-slate-900 dark:text-white font-mono">40 Marks</span>
               </div>
-              <div className="flex justify-between text-violet-400 font-bold">
+              <div className="flex justify-between text-violet-600 dark:text-violet-400 font-bold">
                 <span>Defense / Q&A Viva Session</span>
                 <span className="font-mono">30 Marks</span>
               </div>
             </div>
 
-            <div className="p-3 bg-zinc-955/10 border border-white/[0.04] rounded-xl space-y-1.5">
-              <span className="text-[8px] font-bold text-zinc-500 uppercase tracking-widest block mb-1">Project Split (max 100)</span>
-              <div className="flex justify-between border-b border-white/[0.04] pb-1">
+            <div className="p-3 bg-zinc-955/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
+              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Project Split (max 100)</span>
+              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                 <span>Supervisor / Faculty Guide</span>
-                <span className="font-bold text-white font-mono">30 Marks</span>
+                <span className="font-bold text-slate-900 dark:text-white font-mono">30 Marks</span>
               </div>
-              <div className="flex justify-between border-b border-white/[0.04] pb-1">
+              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                 <span>Internal Evaluation Committee</span>
-                <span className="font-bold text-white font-mono">40 Marks</span>
+                <span className="font-bold text-slate-900 dark:text-white font-mono">40 Marks</span>
               </div>
-              <div className="flex justify-between text-violet-400 font-bold">
+              <div className="flex justify-between text-violet-600 dark:text-violet-400 font-bold">
                 <span>Project Report & Viva ESE</span>
                 <span className="font-mono">30 Marks</span>
               </div>
@@ -3709,18 +3709,18 @@ export default function ToolsPage() {
         {/* Tab 6: Notes */}
         {studyConsoleTab === "notepad" && (
           <div className="space-y-3 animate-fade-in text-[10px]">
-            <div className="flex justify-between items-center text-[9px] font-bold text-zinc-500 px-1">
+            <div className="flex justify-between items-center text-[9px] font-bold text-slate-500 dark:text-slate-400 px-1">
               <span>Private Scratchpad</span>
-              <span className="text-violet-400 font-bold font-mono">{wordCount} Words</span>
+              <span className="text-violet-600 dark:text-violet-400 font-bold font-mono">{wordCount} Words</span>
             </div>
             <textarea
               value={notepadText}
               onChange={(e) => handleNotepadSave(e.target.value)}
               placeholder="Type formulas, notes, or cram slots here..."
-              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl p-3 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-violet-500/20 text-white min-h-[120px] resize-none"
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl p-3 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-violet-500/20 text-slate-900 dark:text-white min-h-[120px] resize-none"
             />
             <div className="flex items-center justify-between">
-              <span className="text-[8px] font-bold text-zinc-500">
+              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400">
                 {notepadSaved ? (
                   <span className="text-emerald-450 animate-pulse">Draft Saved! 💾</span>
                 ) : (
@@ -3729,7 +3729,7 @@ export default function ToolsPage() {
               </span>
               <button
                 onClick={handleDownloadNotes}
-                className="px-2.5 py-1 bg-violet-500/10 hover:bg-violet-500/15 border border-violet-500/15 text-violet-400 rounded-lg text-[8px] font-bold uppercase transition-all cursor-pointer active:scale-95"
+                className="px-2.5 py-1 bg-violet-500/10 hover:bg-violet-500/15 border border-violet-500/15 text-violet-600 dark:text-violet-400 rounded-lg text-[8px] font-bold uppercase transition-all cursor-pointer active:scale-95"
               >
                 Download .txt
               </button>
@@ -3765,7 +3765,7 @@ export default function ToolsPage() {
     const cieVal = plannerCieScore;
 
     return (
-      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4">
+      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-slate-800/20 pb-3">
           <div className="flex items-center gap-2.5">
@@ -3913,7 +3913,7 @@ export default function ToolsPage() {
     return (
       <div className="space-y-4">
         {/* Lab Checklist Card */}
-        <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4">
+        <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/20 dark:border-slate-800/20">
             <div className="flex items-center gap-2.5">
               <ListTodo className="w-4.5 h-4.5 text-violet-500" />
@@ -4070,7 +4070,7 @@ export default function ToolsPage() {
 
 
         {/* All-In-One Premium Study Console */}
-        <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4 relative overflow-hidden">
+        <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.02] blur-[40px] pointer-events-none" />
           
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/20 dark:border-slate-800/20">
@@ -4083,7 +4083,7 @@ export default function ToolsPage() {
             </div>
 
             {/* Premium Study Tabs switcher */}
-            <div className="flex items-center gap-1 bg-slate-955/[0.04] dark:bg-white/[0.03] p-1 rounded-xl border border-slate-950/[0.04] dark:border-white/[0.04] self-start sm:self-auto">
+            <div className="flex items-center gap-1 bg-slate-955/[0.04] dark:bg-white/[0.03] p-1 rounded-xl border border-slate-950/[0.04] dark:border-slate-200/40 dark:border-white/[0.04] self-start sm:self-auto">
               <button
                 onClick={() => setStudyConsoleTab("pomodoro")}
                 className={`px-2.5 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
@@ -4166,7 +4166,7 @@ export default function ToolsPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setPomodoroActive(!pomodoroActive)}
-                  className="px-3.5 py-1.5 bg-blue-500 hover:bg-blue-600 text-white rounded-xl text-[9px] font-black uppercase tracking-wider transition-all shadow-md cursor-pointer flex items-center gap-1"
+                  className="px-3.5 py-1.5 bg-blue-500 hover:bg-blue-600 text-slate-900 dark:text-white rounded-xl text-[9px] font-black uppercase tracking-wider transition-all shadow-md cursor-pointer flex items-center gap-1"
                 >
                   {pomodoroActive ? "Pause" : "Start"}
                 </button>
@@ -4391,7 +4391,7 @@ export default function ToolsPage() {
                 </span>
                 <button
                   onClick={handleDownloadNotes}
-                  className="px-2.5 py-1 bg-violet-500/10 hover:bg-violet-500/15 border border-violet-500/15 text-violet-650 dark:text-violet-400 rounded-lg text-[8.5px] font-black uppercase tracking-wider transition-all cursor-pointer"
+                  className="px-2.5 py-1 bg-violet-500/10 hover:bg-violet-500/15 border border-violet-500/15 text-violet-600 dark:text-violet-400 rounded-lg text-[8.5px] font-black uppercase tracking-wider transition-all cursor-pointer"
                 >
                   Download .txt Notes
                 </button>
@@ -4603,7 +4603,7 @@ export default function ToolsPage() {
         {/* Section Title Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400">
+            <div className="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-600 dark:text-violet-400">
               <Sparkles className="w-5.5 h-5.5 animate-pulse" />
             </div>
             <div>
@@ -4622,7 +4622,7 @@ export default function ToolsPage() {
               placeholder="🔍 Search all 24 tools (e.g. Bunk, Series, Decrypter)..."
               value={mtSearchQuery}
               onChange={(e) => setMtSearchQuery(e.target.value)}
-              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-4 py-2 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-violet-500/40 text-slate-200 placeholder-slate-500"
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-4 py-2 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-violet-500/40 text-slate-200 placeholder-slate-500"
             />
             {mtSearchQuery && (
               <button
@@ -4650,8 +4650,8 @@ export default function ToolsPage() {
                     }}
                     className={`px-3 py-1.5 rounded-xl border text-[9.5px] font-black uppercase tracking-wider shrink-0 transition-all cursor-pointer ${
                       isActive
-                        ? "bg-violet-500/10 text-violet-400 border-violet-500/20"
-                        : "bg-transparent text-slate-400 border-white/[0.04] hover:bg-white/[0.02]"
+                        ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20"
+                        : "bg-transparent text-slate-400 border-slate-200/40 dark:border-white/[0.04] hover:bg-white/[0.02]"
                     }`}
                   >
                     {cat.label}
@@ -4818,8 +4818,8 @@ export default function ToolsPage() {
                                   key={idx}
                                   className={`p-2 rounded-xl border text-[8px] font-black transition-all ${
                                     active
-                                      ? "bg-violet-500/10 text-violet-400 border-violet-500/20 shadow-md shadow-violet-500/[0.04]"
-                                      : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                      ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20 shadow-md shadow-violet-500/[0.04]"
+                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                                   }`}
                                 >
                                   <div className="opacity-80 block truncate leading-none mb-1">{tier.label}</div>
@@ -4896,9 +4896,9 @@ export default function ToolsPage() {
                           {(() => {
                             const totalCie = Math.min(50, ((mtAggSeries1 + mtAggSeries2) / 2 * 0.7) + mtAggAssg + mtAggAtt);
                             return (
-                              <div className="p-3.5 rounded-xl border border-white/[0.04] bg-[#121215] text-center space-y-1">
+                              <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-slate-50 dark:bg-slate-900 text-center space-y-1">
                                 <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Aggregated CIE Score</div>
-                                <div className="text-xl font-black text-violet-400 leading-none">{totalCie.toFixed(1)} / 50 Marks</div>
+                                <div className="text-xl font-black text-violet-600 dark:text-violet-400 leading-none">{totalCie.toFixed(1)} / 50 Marks</div>
                                 <div className="text-[8.5px] font-semibold text-slate-400 mt-1">
                                   Math: (({mtAggSeries1} + {mtAggSeries2}) / 2 × 0.7) + {mtAggAssg} + {mtAggAtt}
                                 </div>
@@ -4921,7 +4921,7 @@ export default function ToolsPage() {
                                   max="50"
                                   value={mtDmgSeries1}
                                   onChange={(e) => setMtDmgSeries1(Math.min(50, Number(e.target.value)))}
-                                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
+                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
                                 />
                               </div>
                             </div>
@@ -4934,7 +4934,7 @@ export default function ToolsPage() {
                                   max="50"
                                   value={mtDmgTarget}
                                   onChange={(e) => setMtDmgTarget(Math.min(50, Number(e.target.value)))}
-                                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
+                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
                                 />
                               </div>
                             </div>
@@ -4947,7 +4947,7 @@ export default function ToolsPage() {
                                   max="15"
                                   value={mtDmgAssgAtt}
                                   onChange={(e) => setMtDmgAssgAtt(Math.min(15, Number(e.target.value)))}
-                                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
+                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
                                 />
                               </div>
                             </div>
@@ -5014,8 +5014,8 @@ export default function ToolsPage() {
                                     onClick={() => setMtEseGrade(g)}
                                     className={`p-1 rounded text-[8px] font-black cursor-pointer transition-all ${
                                       mtEseGrade === g
-                                        ? "bg-violet-500/20 text-violet-400 border border-violet-500/30"
-                                        : "bg-[#121215] text-slate-500 border border-white/[0.02]"
+                                        ? "bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/30"
+                                        : "bg-slate-50 dark:bg-slate-900 text-slate-500 border border-white/[0.02]"
                                     }`}
                                   >
                                     {g}
@@ -5036,7 +5036,7 @@ export default function ToolsPage() {
                               <div className={`p-3.5 rounded-xl border text-center ${
                                 impossible
                                   ? "bg-rose-500/[0.01] border-rose-500/10 text-rose-450"
-                                  : "bg-[#121215] border-white/[0.04] text-violet-400"
+                                  : "bg-slate-50 dark:bg-slate-900 border-slate-200/40 dark:border-white/[0.04] text-violet-600 dark:text-violet-400"
                               }`}>
                                 <div className="text-[9px] font-black uppercase tracking-widest text-slate-400 leading-none">University ESE Pass Target</div>
                                 <div className="text-xl font-black leading-none py-1">
@@ -5060,7 +5060,7 @@ export default function ToolsPage() {
                               className={`flex-1 py-1.5 rounded-xl border text-[9px] font-black uppercase tracking-wider cursor-pointer ${
                                 mtPacerScheme === "abc"
                                   ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                  : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                  : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                               }`}
                             >
                               Scheme A (Part A + B + C)
@@ -5070,28 +5070,28 @@ export default function ToolsPage() {
                               className={`flex-1 py-1.5 rounded-xl border text-[9px] font-black uppercase tracking-wider cursor-pointer ${
                                 mtPacerScheme === "ab"
                                   ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                  : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                  : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                               }`}
                             >
                               Scheme B (Part A + B)
                             </button>
                           </div>
 
-                          <div className="p-3 bg-[#121215] rounded-2xl border border-white/[0.04] space-y-2.5">
+                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200/40 dark:border-white/[0.04] space-y-2.5">
                             <span className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Systematic Time Allocation</span>
                             {mtPacerScheme === "abc" ? (
                               <div className="space-y-1.5 font-bold text-[9.5px]">
                                 <div className="flex justify-between border-b border-white/[0.02] pb-1">
                                   <span>Part A (Short 3m Questions × 8)</span>
-                                  <span className="text-violet-400">30 mins (3.5m / qn)</span>
+                                  <span className="text-violet-600 dark:text-violet-400">30 mins (3.5m / qn)</span>
                                 </div>
                                 <div className="flex justify-between border-b border-white/[0.02] pb-1">
                                   <span>Part B (Concept 3m Questions × 8)</span>
-                                  <span className="text-violet-400">30 mins (3.5m / qn)</span>
+                                  <span className="text-violet-600 dark:text-violet-400">30 mins (3.5m / qn)</span>
                                 </div>
                                 <div className="flex justify-between border-b border-white/[0.02] pb-1">
                                   <span>Part C (Long Essay 13m Questions × 4)</span>
-                                  <span className="text-violet-400">100 mins (25m / qn)</span>
+                                  <span className="text-violet-600 dark:text-violet-400">100 mins (25m / qn)</span>
                                 </div>
                                 <div className="flex justify-between text-emerald-450">
                                   <span>Revision, Checking & Margin Buffer</span>
@@ -5102,11 +5102,11 @@ export default function ToolsPage() {
                               <div className="space-y-1.5 font-bold text-[9.5px]">
                                 <div className="flex justify-between border-b border-white/[0.02] pb-1">
                                   <span>Part A (Basic 3m Questions × 10)</span>
-                                  <span className="text-violet-400">40 mins (4m / qn)</span>
+                                  <span className="text-violet-600 dark:text-violet-400">40 mins (4m / qn)</span>
                                 </div>
                                 <div className="flex justify-between border-b border-white/[0.02] pb-1">
                                   <span>Part B (Heavy 14m Questions × 5)</span>
-                                  <span className="text-violet-400">120 mins (24m / qn)</span>
+                                  <span className="text-violet-600 dark:text-violet-400">120 mins (24m / qn)</span>
                                 </div>
                                 <div className="flex justify-between text-emerald-450">
                                   <span>Review & Final Equation Check</span>
@@ -5131,8 +5131,8 @@ export default function ToolsPage() {
                                   onClick={() => setMtRiskModules(prev => ({ ...prev, [mod]: !prev[mod] }))}
                                   className={`p-2.5 rounded-xl border font-black text-center cursor-pointer transition-all flex flex-col items-center gap-1.5 ${
                                     active
-                                      ? "bg-violet-500/10 text-violet-400 border-violet-500/25"
-                                      : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                      ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/25"
+                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                                   }`}
                                 >
                                   <span className="text-[8px] opacity-75 leading-none">MOD</span>
@@ -5152,7 +5152,7 @@ export default function ToolsPage() {
                             else if (count >= 3) { status = "Safe Pass Zone 🛡️"; color = "text-blue-450 border-blue-500/10"; }
                             
                             return (
-                              <div className={`p-3.5 rounded-xl border text-center ${color} bg-[#121215]`}>
+                              <div className={`p-3.5 rounded-xl border text-center ${color} bg-slate-50 dark:bg-slate-900`}>
                                 <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none">Max Reachable Marks</div>
                                 <div className="text-xl font-black leading-none py-1">{maxMarks} / 100 Marks</div>
                                 <div className="text-[9px] font-semibold text-slate-400">
@@ -5197,7 +5197,7 @@ export default function ToolsPage() {
                                       updated[idx] = Math.min(39, Number(e.target.value));
                                       setMtGraceMarks(updated);
                                     }}
-                                    className="w-full bg-[#121215] border border-white/[0.06] rounded-lg px-1.5 py-0.5 text-center font-bold text-slate-200 text-xs"
+                                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-0.5 text-center font-bold text-slate-200 text-xs"
                                   />
                                 ))}
                               </div>
@@ -5224,12 +5224,12 @@ export default function ToolsPage() {
                             const output = [...sorted].sort((a, b) => a.id - b.id);
 
                             return (
-                              <div className="p-3 bg-[#121215] rounded-xl border border-white/[0.04] space-y-2 text-[9.5px]">
+                              <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] space-y-2 text-[9.5px]">
                                 <span className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Greedy Allocation Pipeline</span>
                                 {output.map((sub, idx) => (
                                   <div key={idx} className="flex justify-between border-b border-white/[0.02] pb-1">
                                     <span>Subject #{sub.id} ({sub.original} marks)</span>
-                                    <span className="font-bold text-violet-400">
+                                    <span className="font-bold text-violet-600 dark:text-violet-400">
                                       {sub.applied > 0 ? `+${sub.applied} marks` : "0 marks applied"} → {sub.status}
                                     </span>
                                   </div>
@@ -5256,7 +5256,7 @@ export default function ToolsPage() {
                                   className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
                                     mtYbSlot === "s5"
                                       ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                                   }`}
                                 >
                                   Move to S5
@@ -5266,7 +5266,7 @@ export default function ToolsPage() {
                                   className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
                                     mtYbSlot === "s7"
                                       ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                                   }`}
                                 >
                                   Move to S7
@@ -5323,7 +5323,7 @@ export default function ToolsPage() {
                                   className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
                                     mtEligType === "honours"
                                       ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                                   }`}
                                 >
                                   B.Tech Honours
@@ -5333,7 +5333,7 @@ export default function ToolsPage() {
                                   className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
                                     mtEligType === "minor"
                                       ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-[#121215] text-slate-500 border-white/[0.02]"
+                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
                                   }`}
                                 >
                                   B.Tech Minor
@@ -5350,7 +5350,7 @@ export default function ToolsPage() {
                                   step="0.01"
                                   value={mtEligCgpa}
                                   onChange={(e) => setMtEligCgpa(Number(e.target.value))}
-                                  className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
+                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
                                 />
                               </div>
                               <div className="space-y-1">
@@ -5403,7 +5403,7 @@ export default function ToolsPage() {
                               <select
                                 value={mtImpAtt}
                                 onChange={(e) => setMtImpAtt(e.target.value as typeof mtImpAtt)}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
                               >
                                 <option value="regular">Regular (&gt;= 75%)</option>
                                 <option value="low">Low (60-74%)</option>
@@ -5418,7 +5418,7 @@ export default function ToolsPage() {
                                 max="50"
                                 value={mtImpCie}
                                 onChange={(e) => setMtImpCie(Number(e.target.value))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-[9px]"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-[9px]"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5426,7 +5426,7 @@ export default function ToolsPage() {
                               <select
                                 value={mtImpStatus}
                                 onChange={(e) => setMtImpStatus(e.target.value as typeof mtImpStatus)}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
                               >
                                 <option value="regular">Regular Subject</option>
                                 <option value="supple">Supplementary</option>
@@ -5473,7 +5473,7 @@ export default function ToolsPage() {
                             />
                           </div>
 
-                          <div className="p-3 bg-[#121215] rounded-xl border border-white/[0.04] grid grid-cols-3 gap-3 text-center">
+                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] grid grid-cols-3 gap-3 text-center">
                             <div>
                               <span className="text-[7.5px] font-black text-slate-450 uppercase block">Re-exam Fees</span>
                               <span className="text-xs font-black text-rose-450 block mt-1">₹{mtDebtBacklogs * 500}</span>
@@ -5502,7 +5502,7 @@ export default function ToolsPage() {
                                 max="45"
                                 value={mtLabCont}
                                 onChange={(e) => setMtLabCont(Math.min(45, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5513,7 +5513,7 @@ export default function ToolsPage() {
                                 max="15"
                                 value={mtLabViva}
                                 onChange={(e) => setMtLabViva(Math.min(15, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5524,14 +5524,14 @@ export default function ToolsPage() {
                                 max="15"
                                 value={mtLabExam}
                                 onChange={(e) => setMtLabExam(Math.min(15, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                           </div>
 
-                          <div className="p-3 bg-[#121215] rounded-xl border border-white/[0.04] text-center">
+                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center">
                             <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Total Lab CIE</div>
-                            <div className="text-lg font-black text-violet-400 mt-1">{mtLabCont + mtLabViva + mtLabExam} / 75 Marks</div>
+                            <div className="text-lg font-black text-violet-600 dark:text-violet-400 mt-1">{mtLabCont + mtLabViva + mtLabExam} / 75 Marks</div>
                           </div>
                         </div>
                       )}
@@ -5548,7 +5548,7 @@ export default function ToolsPage() {
                                 max="30"
                                 value={mtProjGuide}
                                 onChange={(e) => setMtProjGuide(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5559,7 +5559,7 @@ export default function ToolsPage() {
                                 max="40"
                                 value={mtProjCommittee}
                                 onChange={(e) => setMtProjCommittee(Math.min(40, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5570,14 +5570,14 @@ export default function ToolsPage() {
                                 max="30"
                                 value={mtProjReport}
                                 onChange={(e) => setMtProjReport(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                           </div>
 
-                          <div className="p-3 bg-[#121215] rounded-xl border border-white/[0.04] text-center">
+                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center">
                             <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Total Project Score</div>
-                            <div className="text-lg font-black text-violet-400 mt-1">{mtProjGuide + mtProjCommittee + mtProjReport} / 100 Marks</div>
+                            <div className="text-lg font-black text-violet-600 dark:text-violet-400 mt-1">{mtProjGuide + mtProjCommittee + mtProjReport} / 100 Marks</div>
                           </div>
                         </div>
                       )}
@@ -5594,7 +5594,7 @@ export default function ToolsPage() {
                                 max="40"
                                 value={mtSemPres}
                                 onChange={(e) => setMtSemPres(Math.min(40, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5605,7 +5605,7 @@ export default function ToolsPage() {
                                 max="30"
                                 value={mtSemRep}
                                 onChange={(e) => setMtSemRep(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5616,14 +5616,14 @@ export default function ToolsPage() {
                                 max="30"
                                 value={mtSemDef}
                                 onChange={(e) => setMtSemDef(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                           </div>
 
-                          <div className="p-3 bg-[#121215] rounded-xl border border-white/[0.04] text-center">
+                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center">
                             <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Seminar Final Standing</div>
-                            <div className="text-lg font-black text-violet-400 mt-1">{mtSemPres + mtSemRep + mtSemDef} / 100 Marks</div>
+                            <div className="text-lg font-black text-violet-600 dark:text-violet-400 mt-1">{mtSemPres + mtSemRep + mtSemDef} / 100 Marks</div>
                           </div>
                         </div>
                       )}
@@ -5638,7 +5638,7 @@ export default function ToolsPage() {
                               value={mtDecryptCode}
                               onChange={(e) => setMtDecryptCode(e.target.value)}
                               placeholder="e.g. CST202, ECT301"
-                              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-3 py-2 text-xs font-bold focus:outline-none"
+                              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-3 py-2 text-xs font-bold focus:outline-none"
                             />
                           </div>
 
@@ -5686,7 +5686,7 @@ export default function ToolsPage() {
                              }
 
                             return (
-                              <div className="p-3 bg-[#121215] rounded-xl border border-white/[0.04] space-y-1.5 text-[9.5px]">
+                              <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] space-y-1.5 text-[9.5px]">
                                 <div>Department: <strong className="text-slate-100">{dept}</strong></div>
                                 <div>Course Level: <strong className="text-slate-100">{year}</strong></div>
                                 <div>Course Type: <strong className="text-slate-100">{type}</strong></div>
@@ -5715,7 +5715,7 @@ export default function ToolsPage() {
                             />
                           </div>
 
-                          <div className="p-3.5 bg-[#121215] rounded-xl border border-white/[0.04] flex items-center justify-between">
+                          <div className="p-3.5 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] flex items-center justify-between">
                             <div>
                               <span className="text-[8.5px] font-black text-slate-450 uppercase block">US 4.0 GPA Scale Equivalent</span>
                               <span className="text-lg font-black text-emerald-450 block mt-1">{((mtUsGpa10 / 10) * 4).toFixed(3)} / 4.0</span>
@@ -5725,7 +5725,7 @@ export default function ToolsPage() {
                                 navigator.clipboard.writeText(((mtUsGpa10 / 10) * 4).toFixed(3));
                                 triggerNotification("Copied US GPA to clipboard! 📋");
                               }}
-                              className="px-3 py-1.5 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-400 text-[9px] font-black uppercase cursor-pointer hover:bg-violet-500/20"
+                              className="px-3 py-1.5 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-600 dark:text-violet-400 text-[9px] font-black uppercase cursor-pointer hover:bg-violet-500/20"
                             >
                               Copy Result
                             </button>
@@ -5746,7 +5746,7 @@ export default function ToolsPage() {
                                 step="0.01"
                                 value={mtForeCurrent}
                                 onChange={(e) => setMtForeCurrent(Number(e.target.value))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5757,7 +5757,7 @@ export default function ToolsPage() {
                                 max="7"
                                 value={mtForeSems}
                                 onChange={(e) => setMtForeSems(Math.min(7, Number(e.target.value)))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5769,7 +5769,7 @@ export default function ToolsPage() {
                                 step="0.01"
                                 value={mtForeTarget}
                                 onChange={(e) => setMtForeTarget(Number(e.target.value))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
                               />
                             </div>
                           </div>
@@ -5783,7 +5783,7 @@ export default function ToolsPage() {
 
                             return (
                               <div className={`p-3 rounded-xl border text-center ${
-                                impossible ? "bg-rose-500/[0.01] border-rose-500/10 text-rose-450" : "bg-[#121215] border-white/[0.04] text-violet-400"
+                                impossible ? "bg-rose-500/[0.01] border-rose-500/10 text-rose-450" : "bg-slate-50 dark:bg-slate-900 border-slate-200/40 dark:border-white/[0.04] text-violet-600 dark:text-violet-400"
                               }`}>
                                 <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Required Upcoming SGPA Average</div>
                                 <div className="text-lg font-black leading-none py-1">
@@ -5836,9 +5836,9 @@ export default function ToolsPage() {
                             const netHours = Math.max(0, mtCramHours - 2);
                             const perModule = mtCramModules > 0 ? netHours / mtCramModules : 0;
                             return (
-                              <div className="p-3 bg-[#121215] rounded-xl border border-white/[0.04] space-y-2">
+                              <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] space-y-2">
                                 <div className="text-[9px] font-black text-slate-455 uppercase tracking-widest text-center">Cramming Timeline Checklist</div>
-                                <div className="text-xs text-center font-black text-violet-400 py-0.5">
+                                <div className="text-xs text-center font-black text-violet-600 dark:text-violet-400 py-0.5">
                                   Spend {perModule.toFixed(1)} hours on each of the {mtCramModules} modules
                                 </div>
                                 <div className="text-[8.5px] font-bold text-slate-450 border-t border-white/[0.02] pt-1.5 flex justify-between">
@@ -5861,7 +5861,7 @@ export default function ToolsPage() {
                                 type="text"
                                 value={mtBunkSubject}
                                 onChange={(e) => setMtBunkSubject(e.target.value)}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
                               />
                             </div>
                             <div className="space-y-1 col-span-1">
@@ -5870,7 +5870,7 @@ export default function ToolsPage() {
                                 type="text"
                                 value={mtBunkDate}
                                 onChange={(e) => setMtBunkDate(e.target.value)}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
                               />
                             </div>
                             <div className="space-y-1 col-span-1">
@@ -5879,7 +5879,7 @@ export default function ToolsPage() {
                                 type="text"
                                 value={mtBunkReason}
                                 onChange={(e) => setMtBunkReason(e.target.value)}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
                               />
                             </div>
                           </div>
@@ -5919,9 +5919,9 @@ export default function ToolsPage() {
                                   // Simply trigger nice notification confirming item in check
                                   triggerNotification(`Confirmed: ${item}`);
                                 }}
-                                className="p-2.5 rounded-xl border border-white/[0.04] bg-[#121215] text-left font-bold text-slate-200 hover:border-violet-500/20 cursor-pointer flex items-center gap-2"
+                                className="p-2.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-slate-50 dark:bg-slate-900 text-left font-bold text-slate-200 hover:border-violet-500/20 cursor-pointer flex items-center gap-2"
                               >
-                                <CheckCircle2 className="w-3.5 h-3.5 text-violet-400 shrink-0" />
+                                <CheckCircle2 className="w-3.5 h-3.5 text-violet-600 dark:text-violet-400 shrink-0" />
                                 <span>{item}</span>
                               </button>
                             ))}
@@ -5938,7 +5938,7 @@ export default function ToolsPage() {
                               <select
                                 value={mtRevalGrade}
                                 onChange={(e) => setMtRevalGrade(e.target.value)}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
                               >
                                 {["F", "P", "C", "B", "B+", "A", "A+", "S"].map(g => (
                                   <option key={g} value={g}>{g} Grade</option>
@@ -5953,7 +5953,7 @@ export default function ToolsPage() {
                                 max="50"
                                 value={mtRevalCie}
                                 onChange={(e) => setMtRevalCie(Number(e.target.value))}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-[9px]"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-[9px]"
                               />
                             </div>
                             <div className="space-y-1">
@@ -5961,7 +5961,7 @@ export default function ToolsPage() {
                               <select
                                 value={mtRevalExpected}
                                 onChange={(e) => setMtRevalExpected(e.target.value)}
-                                className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
+                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
                               >
                                 <option value="Poor">Poor / Blanks left</option>
                                 <option value="Average">Average / Okay</option>
@@ -6010,10 +6010,10 @@ export default function ToolsPage() {
                               const checkedCount = list.filter(Boolean).length;
                               
                               return (
-                                <div key={course} className="p-2.5 bg-[#121215] border border-white/[0.03] rounded-xl space-y-2">
+                                <div key={course} className="p-2.5 bg-slate-50 dark:bg-slate-900 border border-white/[0.03] rounded-xl space-y-2">
                                   <div className="flex justify-between items-center text-[9px] font-bold">
                                     <span className="text-slate-100">{course} Progress</span>
-                                    <span className="text-violet-400 font-bold uppercase tracking-wider">{checkedCount * 20}% Finished</span>
+                                    <span className="text-violet-600 dark:text-violet-400 font-bold uppercase tracking-wider">{checkedCount * 20}% Finished</span>
                                   </div>
 
                                   <div className="flex gap-1.5">
@@ -6028,7 +6028,7 @@ export default function ToolsPage() {
                                         }}
                                         className={`flex-1 py-1 rounded border text-[8px] font-black cursor-pointer transition-all ${
                                           done
-                                            ? "bg-violet-500/20 text-violet-400 border-violet-500/20"
+                                            ? "bg-violet-500/20 text-violet-600 dark:text-violet-400 border-violet-500/20"
                                             : "bg-[#0A0A0C] text-slate-500 border-white/[0.02]"
                                         }`}
                                       >
@@ -6052,7 +6052,7 @@ export default function ToolsPage() {
                               type="date"
                               value={mtCountdownTarget}
                               onChange={(e) => setMtCountdownTarget(e.target.value)}
-                              className="w-full bg-[#121215] border border-white/[0.06] rounded-xl px-3 py-1.5 text-xs font-bold text-slate-100 focus:outline-none"
+                              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-3 py-1.5 text-xs font-bold text-slate-100 focus:outline-none"
                             />
                           </div>
 
@@ -6063,7 +6063,7 @@ export default function ToolsPage() {
                             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
                             return (
-                              <div className="p-3.5 bg-black/60 rounded-xl border border-white/[0.04] text-center font-mono space-y-1">
+                              <div className="p-3.5 bg-black/60 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center font-mono space-y-1">
                                 <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest font-sans leading-none">Days remaining ESE Exam</div>
                                 <div className="text-2xl font-black text-emerald-450 tabular-nums leading-none py-1">
                                   {days}d : {hours}h : {minutes}m
@@ -6112,7 +6112,7 @@ export default function ToolsPage() {
             initial={{ opacity: 0, y: 50, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 20, x: "-50%" }}
-            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-slate-900/90 dark:bg-white/90 text-white dark:text-slate-900 shadow-xl backdrop-blur-md border border-white/10 dark:border-slate-200/20 text-xs font-bold flex items-center gap-2"
+            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-slate-900/90 dark:bg-white/90 text-slate-900 dark:text-white dark:text-slate-900 shadow-xl backdrop-blur-md border border-white/10 dark:border-slate-200/20 text-xs font-bold flex items-center gap-2"
           >
             <Sparkles className="w-4 h-4 text-blue-400 dark:text-blue-600 animate-pulse" />
             {showNotification}
@@ -6127,35 +6127,35 @@ export default function ToolsPage() {
         <div className="absolute bottom-10 right-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
 
         {/* --- PREMIUM COCKPIT TELEMETRY DENSITY HEADER --- */}
-        <div className="w-full bg-[#07070A]/80 dark:bg-slate-950/85 backdrop-blur-3xl border border-white/[0.06] dark:border-white/[0.08] rounded-[32px] p-6 shadow-2xl relative overflow-hidden flex flex-col gap-6">
+        <div className="w-full bg-white/90 dark:bg-slate-950/85 backdrop-blur-3xl border border-slate-200/80 dark:border-white/[0.08] rounded-[32px] p-6 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-6">
           <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.03] blur-[40px] pointer-events-none" />
           
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 pb-5 border-b border-white/[0.06]">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 pb-5 border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06]">
             {/* Logo Badge & Titles */}
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-lg text-[9px] font-black tracking-widest uppercase bg-violet-500/10 text-violet-400 border border-violet-500/15 animate-pulse">
-                  APJ AKU Cockpit Terminal v2.5
+                <span className="px-2.5 py-0.5 rounded-lg text-[9px] font-black tracking-widest uppercase bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/15">
+                  KTU Tools
                 </span>
-                <span className="text-[10px] font-black text-slate-400">• Dynamic Connected Workspace</span>
+                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">• APJ Abdul Kalam University</span>
               </div>
               <h1 className="text-2xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight mt-1">
-                Academic Command Center
+                Study Tools
               </h1>
               <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-                A premium full-width student terminal designed to structure grades, track lecture streams, manage laboratory checklists, and synthesize concepts.
+                Track grades, attendance, labs, and exam prep — all in one place.
               </p>
             </div>
 
             {/* Selector Console */}
-            <div className="flex items-center gap-3 bg-white/[0.03] dark:bg-[#121215] p-2.5 rounded-2xl border border-white/[0.04] shrink-0 self-start md:self-auto shadow-inner">
+            <div className="flex items-center gap-3 bg-slate-50/80 dark:bg-slate-900/60 p-2.5 rounded-2xl border border-slate-200/60 dark:border-slate-200/40 dark:border-white/[0.04] shrink-0 self-start md:self-auto shadow-inner">
               <div className="flex flex-col">
-                <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest leading-none">Active Preset Configuration</span>
+                <span className="text-[8px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">Branch & Semester</span>
                 <div className="flex items-center gap-2 mt-1.5">
                   <select
                     value={branch}
                     onChange={(e) => handleBranchSemChange(e.target.value, sem)}
-                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/[0.08] rounded-xl px-2.5 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
                   >
                     <option value="cs">Computer Science (CS)</option>
                     <option value="ec">Electronics (EC)</option>
@@ -6166,7 +6166,7 @@ export default function ToolsPage() {
                   <select
                     value={sem}
                     onChange={(e) => handleBranchSemChange(branch, Number(e.target.value))}
-                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/[0.08] rounded-xl px-2.5 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
                   >
                     {Array.from({ length: 8 }, (_, idx) => (
                       <option key={idx} value={idx + 1}>Semester {idx + 1}</option>
@@ -6181,34 +6181,34 @@ export default function ToolsPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
               {
-                label: "GPA Scale Conversion",
-                val: `USScale: ${((Number(converterGpa) || 8.5) / 10 * 4).toFixed(2)}`,
-                badge: "Diagnostic Link 📊",
-                theme: "bg-blue-500/5 text-blue-500 dark:text-blue-400 border-blue-500/10"
+                label: "GPA Scale",
+                val: `US: ${((Number(converterGpa) || 8.5) / 10 * 4).toFixed(2)}`,
+                badge: "Live 📊",
+                theme: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15"
               },
               {
-                label: "Attendance Cushion",
-                val: `${sandboxAttPct}% Rate`,
-                badge: sandboxAttPct >= 75 ? "Safe Runway 🟢" : "Detention Risk 🔴",
-                theme: sandboxAttPct >= 75
-                  ? "bg-emerald-500/5 text-emerald-600 dark:text-emerald-450 border-emerald-500/10"
-                  : "bg-rose-500/5 text-rose-600 dark:text-rose-455 border-rose-500/10"
+                label: "Attendance",
+                val: `${getAverageAttendance()}%`,
+                badge: getAverageAttendance() >= 75 ? "Safe 🟢" : "At Risk 🔴",
+                theme: getAverageAttendance() >= 75
+                  ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/15"
+                  : "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/15"
               },
               {
-                label: "Active Laboratories Check",
-                val: `S${sem} Curriculums`,
-                badge: "Checklist Configured 🧪",
-                theme: "bg-violet-500/5 text-violet-500 dark:text-violet-400 border-violet-500/10"
+                label: "Lab Courses",
+                val: `${labCourses.length} Active`,
+                badge: "Tracked 🧪",
+                theme: "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/15"
               },
               {
-                label: "Night-Before Cram Buffer",
-                val: `${mtCramHours} Hours / ${mtCramModules} Mods`,
-                badge: "Study Console Active 🧠",
-                theme: "bg-amber-500/5 text-amber-600 dark:text-amber-450 border-amber-500/10"
+                label: "SGPA",
+                val: calculateSGPA(),
+                badge: "Current Sem",
+                theme: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/15"
               }
             ].map((stat, idx) => (
-              <div key={idx} className="p-3 bg-[#0D0D12]/40 dark:bg-[#121215]/50 border border-white/[0.04] rounded-2xl flex flex-col justify-between gap-1 shadow-sm">
-                <span className="text-[7.5px] font-black text-slate-400 uppercase tracking-widest leading-none block">{stat.label}</span>
+              <div key={idx} className="p-3 bg-slate-50/80 dark:bg-slate-900/50 border border-slate-200/60 dark:border-slate-200/40 dark:border-white/[0.04] rounded-2xl flex flex-col justify-between gap-1 shadow-sm">
+                <span className="text-[7.5px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none block">{stat.label}</span>
                 <span className="text-sm font-black text-slate-900 dark:text-slate-50 block mt-1 leading-none">{stat.val}</span>
                 <span className={`px-1.5 py-0.5 rounded text-[7px] font-black uppercase tracking-wider block mt-1.5 self-start border ${stat.theme}`}>
                   {stat.badge}
@@ -6219,12 +6219,12 @@ export default function ToolsPage() {
         </div>
 
         {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR --- */}
-        <div className="bg-[#09090C] border border-white/[0.06] backdrop-blur-2xl rounded-2xl p-1 flex flex-wrap items-center gap-1 shadow-md w-full">
+        <div className="bg-slate-100 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-200/60 dark:border-white/[0.06] backdrop-blur-2xl rounded-2xl p-1 flex flex-wrap items-center gap-1 shadow-md w-full">
           {[
-            { id: "attendance", label: "Attendance & CIE Runway", icon: Activity },
-            { id: "grades", label: "Grades & ESE Target Planner", icon: Calculator },
-            { id: "graduation", label: "Graduation Runway", icon: GraduationCap },
-            { id: "exam", label: "11th-Hour Command Panel", icon: Clock }
+            { id: "attendance", label: "Attendance & CIE", icon: Activity },
+            { id: "grades", label: "Grades & ESE", icon: Calculator },
+            { id: "graduation", label: "Graduation", icon: GraduationCap },
+            { id: "exam", label: "Exam Prep", icon: Clock }
           ].map((tabItem) => {
             const isActive = activeWorkspaceTab === tabItem.id;
             const Icon = tabItem.icon;
@@ -6235,8 +6235,8 @@ export default function ToolsPage() {
                 onClick={() => setActiveWorkspaceTab(tabItem.id as typeof activeWorkspaceTab)}
                 className={`px-4 py-2.5 rounded-xl text-[10px] font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 justify-center sm:flex-initial active:scale-[0.98] hover:scale-[1.01] ${
                   isActive
-                    ? "bg-violet-500/10 text-violet-400 border border-violet-500/20 shadow-lg shadow-violet-500/[0.02]"
-                    : "bg-transparent text-zinc-500 border border-transparent hover:bg-white/[0.01]"
+                    ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/20 shadow-lg shadow-violet-500/[0.02]"
+                    : "bg-transparent text-slate-500 dark:text-slate-400 border border-transparent hover:bg-slate-200/50 dark:hover:bg-white/[0.02]"
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -6265,17 +6265,17 @@ export default function ToolsPage() {
           {activeWorkspaceTab === "grades" && (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               {/* GPA Sheet Calculator */}
-              <div className="lg:col-span-7 bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] relative overflow-hidden space-y-5">
+              <div className="lg:col-span-7 bg-white/80 dark:bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-6 shadow-lg dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] relative overflow-hidden space-y-5">
                 <div className="absolute top-0 right-0 w-[240px] h-[240px] rounded-full bg-blue-500/[0.03] blur-[60px] pointer-events-none -z-10" />
                 
-                <div className="flex items-center justify-between border-b border-white/[0.06] pb-4">
+                <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] pb-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
                       <Calculator className="w-5.5 h-5.5" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-white text-base leading-none">GPA & CGPA Calculator</h3>
-                      <span className="text-[10px] font-bold text-zinc-500 block mt-1.5">{branch.toUpperCase()} S{sem} grading sheet & custom sandboxes</span>
+                      <h3 className="font-bold text-slate-900 dark:text-white text-base leading-none">GPA & CGPA Calculator</h3>
+                      <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 block mt-1.5">{branch.toUpperCase()} S{sem} grading sheet & custom sandboxes</span>
                     </div>
                   </div>
                 </div>
@@ -6284,7 +6284,7 @@ export default function ToolsPage() {
                 <GpaCalculator />
 
                 {/* Inline Converter Bar */}
-                <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-white/[0.06] text-[10px] font-bold text-zinc-500 uppercase tracking-wider">
+                <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                   <span>SGPA / CGPA Converter:</span>
                   <input
                     type="number"
@@ -6294,7 +6294,7 @@ export default function ToolsPage() {
                     placeholder="8.50"
                     value={converterGpa}
                     onChange={(e) => handleGpaConvert(e.target.value)}
-                    className="w-16 bg-[#121215] border border-white/[0.06] rounded-lg px-2 py-1 text-center font-bold text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
                   />
                   <span>Score ⇄</span>
                   <input
@@ -6305,7 +6305,7 @@ export default function ToolsPage() {
                     placeholder="80.0"
                     value={converterPercentage}
                     onChange={(e) => handlePercentageConvert(e.target.value)}
-                    className="w-16 bg-[#121215] border border-white/[0.06] rounded-lg px-2 py-1 text-center font-bold text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
                   />
                   <span>Percentage (%)</span>
                 </div>
@@ -6315,9 +6315,9 @@ export default function ToolsPage() {
               <div className="lg:col-span-5 space-y-6">
                 {renderTargetPlanner()}
                 
-                <div className="flex items-center gap-3 p-4 rounded-2xl border border-violet-500/10 dark:border-violet-500/5 bg-violet-500/[0.02] text-[9.5px] font-semibold text-zinc-400 leading-normal text-center justify-center">
+                <div className="flex items-center gap-3 p-4 rounded-2xl border border-violet-500/10 bg-violet-50/50 dark:bg-violet-500/[0.02] text-[9.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center">
                   <span>💡</span>
-                  <span>Preset GPA values compile in real-time. Target margins dynamically shift based on your active scores.</span>
+                  <span>GPA values update in real-time. Target margins shift based on your active scores.</span>
                 </div>
               </div>
             </div>
@@ -6350,9 +6350,9 @@ export default function ToolsPage() {
         </div>
 
         {/* Advice Info bottom bar */}
-        <div className="flex items-center gap-3 p-4.5 rounded-2xl border border-white/[0.06] dark:border-white/[0.08] bg-[#07070A]/40 text-[9.5px] font-bold text-zinc-400 leading-normal text-center justify-center shadow-sm">
+        <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] bg-slate-50/80 dark:bg-slate-900/40 text-[9.5px] font-bold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
           <span>🛡️</span>
-          <span>APJ AKU Cockpit Terminal workspace tracks metrics dynamically. Preset GPA shifts, attendance cancellations, and lab checklist logs update statistics in milliseconds.</span>
+          <span>All data is saved locally in your browser. GPA, attendance, and lab progress update in real-time as you make changes.</span>
         </div>
 
       </main>

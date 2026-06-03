@@ -5,7 +5,7 @@ import { flushSync } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { ArrowRight, LayoutDashboard, UserRound, Sun, Moon } from "lucide-react";
+import { ArrowRight, LayoutDashboard, UserRound, Sun, Moon, Wrench } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useTheme } from "next-themes";
 import confetti from "canvas-confetti";
@@ -307,6 +307,26 @@ export default function Navbar() {
 
             <div className="w-[1px] h-4 bg-slate-200/80 dark:bg-slate-800 mx-0.5" />
           </>
+        )}
+
+        {isActive("/tools") ? (
+          <button
+            type="button"
+            className="inline-flex h-8 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
+            aria-label="Tools"
+            aria-current="page"
+          >
+            <Wrench className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-violet-500" />
+            <span>Tools</span>
+          </button>
+        ) : (
+          <Link
+            href="/tools"
+            className="inline-flex h-8 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
+          >
+            <Wrench className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+            <span>Tools</span>
+          </Link>
         )}
 
         {isActive("/dashboard") ? (

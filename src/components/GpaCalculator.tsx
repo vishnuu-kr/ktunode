@@ -420,18 +420,18 @@ export default function GpaCalculator() {
     <div className="w-full space-y-6">
       
       {/* 1. Header / Clean Floating Stat Strip */}
-      <div className="w-full bg-zinc-900/[0.35] backdrop-blur-md border border-white/[0.06] rounded-2xl shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] p-4 md:p-5 flex flex-col sm:flex-row justify-between items-center gap-4 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]">
+      <div className="w-full bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl shadow-lg dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] p-4 md:p-5 flex flex-col sm:flex-row justify-between items-center gap-4 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+          <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 dark:text-blue-400 shrink-0">
             <Award className="w-5 h-5 animate-pulse" />
           </div>
           <div>
-            <span className="text-[10px] font-bold tracking-widest text-zinc-500 uppercase block leading-none">Cumulative CGPA</span>
+            <span className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block leading-none">Cumulative CGPA</span>
             <div className="flex items-baseline gap-1.5 mt-1">
-              <span className="text-4xl font-light tracking-tight text-white font-mono font-variant-numeric: tabular-nums">
+              <span className="text-4xl font-light tracking-tight text-slate-900 dark:text-white font-mono font-variant-numeric: tabular-nums">
                 {overallCalculations.cgpa}
               </span>
-              <span className="text-[10px] font-bold text-zinc-500 tracking-wider">/ 10.0</span>
+              <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-wider">/ 10.0</span>
             </div>
           </div>
         </div>
@@ -565,7 +565,7 @@ export default function GpaCalculator() {
           return (
             <div
               key={semNum}
-              className="bg-zinc-900/[0.18] border border-white/[0.04] rounded-xl overflow-hidden p-3.5 px-4 transition-all duration-200 hover:border-white/[0.08]"
+              className="bg-white/60 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.04] rounded-xl overflow-hidden p-3.5 px-4 transition-all duration-200 hover:border-slate-300/60 dark:hover:border-white/[0.08]"
             >
               
               {/* Semester strip trigger */}
@@ -769,12 +769,12 @@ export default function GpaCalculator() {
                   </div>
                 </div>
 
-                <div className="bg-zinc-900/[0.2] border border-white/[0.05] rounded-xl p-3.5 text-xs">
-                  <span className="text-[10px] font-bold tracking-widest text-zinc-500 uppercase block mb-2 leading-none">Percentage Formula</span>
+                <div className="bg-white/60 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.05] rounded-xl p-3.5 text-xs">
+                  <span className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block mb-2 leading-none">Percentage Formula</span>
                   <div className="flex justify-between items-baseline">
                     <span className="text-slate-400">(CGPA × 10) - 3.75 =</span>
-                    <span className="font-bold text-white font-mono">
-                      ({overallCalculations.cgpa} × 10) - 3.75 = <span className="text-violet-400 text-sm font-black">{overallCalculations.percentage}%</span>
+                    <span className="font-bold text-slate-900 dark:text-white font-mono">
+                      ({overallCalculations.cgpa} × 10) - 3.75 = <span className="text-violet-600 dark:text-violet-400 text-sm font-black">{overallCalculations.percentage}%</span>
                     </span>
                   </div>
                 </div>
