@@ -47,6 +47,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import MarkdownRenderer from "@/components/ui/MarkdownRenderer";
 import PomodoroTimer from "@/components/dashboard/PomodoroTimer";
 import TimetableWidget from "@/components/dashboard/TimetableWidget";
+import ShareButton from "@/components/ui/ShareButton";
 
 import { BottomSheet } from "@/components/dashboard/BottomSheet";
 
@@ -323,6 +324,18 @@ function DashboardContent() {
   const [pinnedTopicIds, setPinnedTopicIds] = useState<string[]>([]);
   const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>({});
   const [commandOpen, setCommandOpen] = useState(false);
+
+  const subjectShareUrl = React.useMemo(() => {
+    if (typeof window === "undefined") return "";
+    if (!selectedSubject) return "";
+    return `${window.location.origin}/${branch}/sem-${sem}/${(selectedSubject.code || selectedSubject.id).toLowerCase()}`;
+  }, [branch, sem, selectedSubject]);
+
+  const topicShareUrl = React.useMemo(() => {
+    if (typeof window === "undefined") return "";
+    if (!selectedSubject || !selectedTopic) return "";
+    return `${window.location.origin}/${branch}/sem-${sem}/${(selectedSubject.code || selectedSubject.id).toLowerCase()}/${selectedTopic.id.toLowerCase()}`;
+  }, [branch, sem, selectedSubject, selectedTopic]);
 
   useEffect(() => {
     setMounted(true);
@@ -1516,7 +1529,17 @@ function DashboardContent() {
                 <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.2]">
                   <span className="gradient-text">{selectedSubject.name}</span>
                 </h1>
-              </div>              {selectedSubject.modules.length > 0 ? (
+              </div>
+              {subjectShareUrl && (
+                <div className="flex justify-center md:justify-start gap-2 self-center md:self-end mb-6">
+                  <ShareButton
+                    url={subjectShareUrl}
+                    triggerHaptic={triggerHaptic}
+                    onShareSuccess={showToast}
+                  />
+                </div>
+              )}
+              {selectedSubject.modules.length > 0 ? (
                 <div className="space-y-6">
                   {selectedSubject.modules.map((module, index) => {
                     const moduleTopicIds = module.topics.map((topic) => topic.id);
@@ -1601,7 +1624,7 @@ function DashboardContent() {
                                     <button
                                       type="button"
                                       onClick={() => togglePinnedTopic(topic.id)}
-                                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
+                                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
                                       aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
                                     >
                                       <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
@@ -1670,14 +1693,25 @@ function DashboardContent() {
                   >
                     {selectedTopic.title}
                   </h1>
-                  <button
-                    type="button"
-                    onClick={() => togglePinnedTopic(selectedTopic.id)}
-                    className={`h-10 w-10 md:h-12 md:w-12 rounded-xl md:rounded-2xl flex items-center justify-center shrink-0 transition-colors ${pinnedTopicIds.includes(selectedTopic.id) ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-450 border border-amber-200/50 dark:border-amber-900/30" : "bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
-                    aria-label={pinnedTopicIds.includes(selectedTopic.id) ? "Unpin tough topic" : "Pin tough topic"}
-                  >
-                    <Star className={`w-4.5 h-4.5 md:w-5 md:h-5 ${pinnedTopicIds.includes(selectedTopic.id) ? "fill-current" : ""}`} />
-                  </button>
+                  <div className="flex items-center gap-2 shrink-0">
+                    {topicShareUrl && (
+                      <ShareButton
+                        url={topicShareUrl}
+                        title={`${selectedTopic.title} — ${selectedSubject?.name}`}
+                        text={`📚 Studying "${selectedTopic.title}" from ${selectedSubject?.name} (${selectedSubject?.code}) — KTU ${branch.toUpperCase()} Sem ${sem}, 2024 Scheme.\n\nCheck it out on KTUNODE (free, no login):`}
+                        triggerHaptic={triggerHaptic}
+                        onShareSuccess={showToast}
+                      />
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => togglePinnedTopic(selectedTopic.id)}
+                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinnedTopicIds.includes(selectedTopic.id) ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
+                      aria-label={pinnedTopicIds.includes(selectedTopic.id) ? "Unpin tough topic" : "Pin tough topic"}
+                    >
+                      <Star className={`w-4 h-4 ${pinnedTopicIds.includes(selectedTopic.id) ? "fill-current" : ""}`} />
+                    </button>
+                  </div>
                 </div>
 
                 <div className="px-4 md:px-0">
