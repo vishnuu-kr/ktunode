@@ -260,7 +260,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={toggleTheme}
-            className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer shrink-0"
+            className="flex h-11 w-11 sm:h-9 sm:w-9 items-center justify-center rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer shrink-0"
             aria-label="Toggle dark mode"
             title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
           >
@@ -271,7 +271,7 @@ export default function Navbar() {
             )}
           </motion.button>
         ) : (
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-slate-200 bg-slate-50/50 opacity-40 shrink-0" />
+          <div className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-200 bg-slate-50/50 opacity-40 shrink-0" />
         )}
 
         {pathname.startsWith("/dashboard") && (
@@ -281,7 +281,7 @@ export default function Navbar() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleAvatarClick}
-                className="relative flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 border border-white/20 shadow-md text-white font-bold text-xs select-none transition-all duration-300 hover:shadow-blue-500/20 cursor-pointer"
+                className="relative flex items-center justify-center w-11 h-11 sm:w-8 sm:h-8 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 border border-white/20 shadow-md text-white font-bold text-xs select-none transition-all duration-300 hover:shadow-blue-500/20 cursor-pointer"
                 title={`Logged in as ${userName}`}
               >
                 {getInitials(userName)}

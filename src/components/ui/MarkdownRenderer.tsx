@@ -555,7 +555,7 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
   const blocks = parseBlocks(processedContent);
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto px-1">
       {blocks.map((block, idx) => {
         switch (block.type) {
           case "code":
@@ -603,8 +603,8 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
             );
           case "table":
             return (
-              <div key={idx} className="my-8 overflow-x-auto rounded-2xl border border-slate-200/80 dark:border-slate-800 max-w-full">
-                <table className="w-full text-sm min-w-[500px]">
+              <div key={idx} className="my-8 overflow-x-auto rounded-2xl border border-slate-200/80 dark:border-slate-800 -mx-1 max-w-full">
+                <table className="w-full text-sm min-w-[400px]">
                   <thead className="bg-slate-50/80 dark:bg-slate-800/80">
                     <tr>
                       {block.headers.map((h, i) => (

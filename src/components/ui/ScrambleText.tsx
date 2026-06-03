@@ -74,8 +74,13 @@ export const ScrambleText: React.FC<ScrambleTextProps> = ({
     }
   };
 
+  const handlePointerEnter = (e: React.PointerEvent) => {
+    if (e.pointerType === "touch") return;
+    handleHover();
+  };
+
   return (
-    <motion.span className={className} onMouseEnter={handleHover} style={{ display: "inline-block" }}>
+    <motion.span className={className} onPointerEnter={handlePointerEnter} style={{ display: "inline-block" }}>
       {displayText}
     </motion.span>
   );

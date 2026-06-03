@@ -117,10 +117,12 @@ export default function TestimonialsSection() {
         className="relative w-full"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
+        onTouchStart={() => setPaused(true)}
+        onTouchEnd={() => setPaused(false)}
       >
         {/* Fade edges */}
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-slate-50 dark:from-slate-950 to-transparent" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-slate-50 dark:from-slate-950 to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 md:w-32 z-10 bg-gradient-to-r from-slate-50 dark:from-slate-950 to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 md:w-32 z-10 bg-gradient-to-l from-slate-50 dark:from-slate-950 to-transparent" />
 
         <div
           className="flex gap-6 w-max py-4"
@@ -132,7 +134,7 @@ export default function TestimonialsSection() {
           {doubled.map((t, i) => (
             <div
               key={i}
-              className="w-[360px] flex-shrink-0 bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800 rounded-3xl p-7 cursor-default group hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-800 hover:shadow-[0_20px_40px_rgba(37,99,235,0.06)] hover:dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              className="w-[300px] sm:w-[360px] flex-shrink-0 bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800 rounded-3xl p-6 sm:p-7 cursor-default group hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-800 hover:shadow-[0_20px_40px_rgba(37,99,235,0.06)] hover:dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
               style={{
                 boxShadow: "0 2px 16px rgba(0,0,0,0.01), inset 0 1px 0 rgba(255,255,255,0.05)",
               }}

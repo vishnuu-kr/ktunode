@@ -1526,7 +1526,7 @@ function DashboardContent() {
  
               <div className="mb-10 text-center md:text-left">
                 <span className="text-sm font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-2 block">{selectedSubject.code}</span>
-                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.2]">
+                <h1 className="text-3xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.2]">
                   <span className="gradient-text">{selectedSubject.name}</span>
                 </h1>
               </div>
@@ -1872,7 +1872,7 @@ function DashboardContent() {
       <AnimatePresence>
         {commandOpen && (
           <motion.div
-            className="fixed inset-0 z-[80] bg-slate-950/35 dark:bg-slate-950/60 backdrop-blur-sm px-4 pt-24 cursor-pointer"
+            className="fixed inset-0 z-[80] bg-slate-950/35 dark:bg-slate-950/60 backdrop-blur-sm px-4 pt-16 md:pt-24 cursor-pointer"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -1902,7 +1902,7 @@ function DashboardContent() {
                   <X className="w-4 h-4" />
                 </button>
               </div>
-              <div className="max-h-[420px] overflow-y-auto p-3">
+              <div className="max-h-[55dvh] md:max-h-[420px] overflow-y-auto p-3">
                 {searchTerm.trim() === "" && (
                   <p className="px-3 pb-2 text-[10px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-widest">All Topics</p>
                 )}
@@ -1960,7 +1960,7 @@ function DashboardContent() {
           <motion.div
             role="alert"
             aria-live="polite"
-            className="fixed bottom-6 left-1/2 z-[100] max-w-[calc(100vw-2rem)] w-[max-content] -translate-x-1/2 rounded-full border border-slate-200/60 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 px-4 md:px-5 py-2.5 md:py-3 text-xs md:text-sm font-bold text-slate-900 dark:text-white shadow-[0_18px_50px_rgba(15,23,42,0.1)] dark:shadow-[0_18px_50px_rgba(0,0,0,0.4)] backdrop-blur-xl"
+            className="fixed bottom-24 md:bottom-6 left-1/2 z-[100] max-w-[calc(100vw-2rem)] w-[max-content] max-w-xs sm:max-w-none sm:w-[max-content] -translate-x-1/2 rounded-full border border-slate-200/60 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 px-4 md:px-5 py-2.5 md:py-3 text-xs md:text-sm font-bold text-slate-900 dark:text-white shadow-[0_18px_50px_rgba(15,23,42,0.1)] dark:shadow-[0_18px_50px_rgba(0,0,0,0.4)] backdrop-blur-xl"
             initial={{ opacity: 0, y: 18, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
@@ -2010,10 +2010,10 @@ function DashboardContent() {
               <button
                 type="button"
                 onClick={() => setIsTimerRunning(!isTimerRunning)}
-                className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-slate-100 dark:bg-slate-850 hover:bg-slate-200/80 hover:dark:bg-slate-700/80 text-slate-600 dark:text-slate-350 hover:text-slate-800 hover:dark:text-slate-100 flex items-center justify-center transition-colors border border-slate-200/40 dark:border-slate-750 active:scale-95 cursor-pointer"
+                className="w-10 h-10 md:w-8 md:h-8 rounded-lg bg-slate-100 dark:bg-slate-850 hover:bg-slate-200/80 hover:dark:bg-slate-700/80 text-slate-600 dark:text-slate-350 hover:text-slate-800 hover:dark:text-slate-100 flex items-center justify-center transition-colors border border-slate-200/40 dark:border-slate-750 active:scale-95 cursor-pointer"
                 aria-label={isTimerRunning ? "Pause" : "Start"}
               >
-                {isTimerRunning ? <Pause className="w-3 h-3 md:w-3.5 md:h-3.5 fill-current" /> : <Play className="w-3 h-3 md:w-3.5 md:h-3.5 fill-current" />}
+                {isTimerRunning ? <Pause className="w-3.5 h-3.5 md:w-3.5 md:h-3.5 fill-current" /> : <Play className="w-3.5 h-3.5 md:w-3.5 md:h-3.5 fill-current" />}
               </button>
               <button
                 type="button"
@@ -2021,10 +2021,10 @@ function DashboardContent() {
                   setIsTimerRunning(false);
                   setSecondsLeft(sessionMinutes * 60);
                 }}
-                className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-slate-100 dark:bg-slate-850 hover:bg-slate-200/80 hover:dark:bg-slate-700/80 text-slate-500 dark:text-slate-400 hover:text-slate-700 hover:dark:text-slate-250 flex items-center justify-center transition-colors border border-slate-200/40 dark:border-slate-750 active:scale-95 cursor-pointer"
+                className="w-10 h-10 md:w-8 md:h-8 rounded-lg bg-slate-100 dark:bg-slate-850 hover:bg-slate-200/80 hover:dark:bg-slate-700/80 text-slate-500 dark:text-slate-400 hover:text-slate-700 hover:dark:text-slate-250 flex items-center justify-center transition-colors border border-slate-200/40 dark:border-slate-750 active:scale-95 cursor-pointer"
                 aria-label="Reset"
               >
-                <RotateCcw className="w-3 h-3 md:w-3.5 md:h-3.5" />
+                <RotateCcw className="w-3.5 h-3.5 md:w-3.5 md:h-3.5" />
               </button>
             </div>
           </motion.div>
@@ -2145,7 +2145,7 @@ function DashboardContent() {
                   setAuthModalOpen(false);
                   triggerHaptic("light");
                 }}
-                className="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100/80 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 border border-slate-200/50 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer z-50 transition-colors shadow-sm"
+                className="absolute top-4 right-4 w-11 h-11 rounded-full bg-slate-100/80 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 border border-slate-200/50 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer z-50 transition-colors shadow-sm"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -2212,7 +2212,7 @@ function DashboardContent() {
                       placeholder="Your Name"
                       value={authName}
                       onChange={(e) => setAuthName(e.target.value)}
-                      className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
+                      className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-base font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
                     />
                   </div>
                 )}
@@ -2223,7 +2223,7 @@ function DashboardContent() {
                     placeholder="Email Address"
                     value={authEmail}
                     onChange={(e) => setAuthEmail(e.target.value)}
-                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
+                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-base font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
                   />
                 </div>
                 <div className="relative">
@@ -2233,7 +2233,7 @@ function DashboardContent() {
                     placeholder="Password"
                     value={authPassword}
                     onChange={(e) => setAuthPassword(e.target.value)}
-                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
+                    className="w-full bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 text-base font-bold text-slate-800 dark:text-slate-200 outline-none transition-all"
                   />
                 </div>
 
@@ -2292,7 +2292,7 @@ function DashboardContent() {
                       setProfilePanelOpen(false);
                       triggerHaptic("light");
                     }}
-                    className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer"
+                    className="w-11 h-11 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 hover:dark:bg-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 cursor-pointer"
                   >
                     <X className="w-4 h-4" />
                   </button>

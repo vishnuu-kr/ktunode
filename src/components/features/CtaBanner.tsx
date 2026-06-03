@@ -109,7 +109,7 @@ export default function CtaBanner() {
 
         {/* Stats */}
         <motion.div
-          className="flex items-center justify-center gap-10 flex-wrap"
+          className="flex items-center justify-center gap-6 sm:gap-10 flex-wrap"
           initial={{ opacity: 0, y: 12 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.4, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}

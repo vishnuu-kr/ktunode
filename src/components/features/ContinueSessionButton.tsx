@@ -30,9 +30,9 @@ export function ContinueSessionButton({
     >
       <MagneticButton
         onClick={(e) => onContinue(e)}
-        className="!w-auto !py-4 !px-8 !text-sm flex-1 md:flex-none"
+        className="!w-auto !py-4 !px-6 !text-sm flex-1 md:flex-none min-w-0"
       >
-        {label}
+        <span className="truncate max-w-[200px] sm:max-w-none">{label}</span>
         <ArrowRight className="w-4 h-4" />
       </MagneticButton>
 

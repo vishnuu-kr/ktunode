@@ -97,7 +97,7 @@ export default function FaqSection() {
                 {quickStats.map((s, i) => (
                   <div
                     key={s.label}
-                    className={`flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-blue-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default ${
+                    className={`flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-blue-100 dark:border-slate-800 shadow-sm md:hover:shadow-md md:hover:-translate-y-0.5 transition-all duration-300 cursor-default ${
                       visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
                     }`}
                     style={{ transitionDelay: `${200 + i * 80}ms` }}
@@ -132,7 +132,7 @@ export default function FaqSection() {
                     >
                       <button
                         onClick={() => setOpenIndex(isOpen ? null : i)}
-                        className="w-full flex items-center justify-between px-6 py-5 text-left gap-4 group"
+                        className="w-full flex items-center justify-between px-5 py-4 md:px-6 md:py-5 text-left gap-4 group min-h-[52px]"
                         aria-expanded={isOpen}
                         aria-controls={`faq-answer-${i}`}
                       >
@@ -163,7 +163,7 @@ export default function FaqSection() {
                       <div
                         id={`faq-answer-${i}`}
                         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                         }`}
                       >
                         <p className="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">

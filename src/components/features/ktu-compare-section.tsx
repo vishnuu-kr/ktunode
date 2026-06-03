@@ -126,7 +126,7 @@ export default function KtuCompareSection() {
                 secondImage="/assets/ktu-structured.webp"
                 firstImageClassName="object-cover object-top"
                 secondImageClassname="object-cover object-top"
-                className="w-full aspect-[4/5] sm:aspect-square md:aspect-video rounded-[20px]"
+                className="w-full aspect-square sm:aspect-square md:aspect-video rounded-[20px]"
                 slideMode={isTouchDevice ? "drag" : "hover"}
                 autoplay={true}
               />
