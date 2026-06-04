@@ -357,6 +357,36 @@ function DashboardContent() {
   const [noteContent, setNoteContent] = useState<string>("");
   const [loadingNote, setLoadingNote] = useState(false);
 
+  const extractedVideos = React.useMemo(() => {
+    if (!noteContent) return { concept: undefined, lecture: undefined, solved: undefined };
+    
+    const conceptRegex = /(?:quick concept|summary|animation).*?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/i;
+    const lectureRegex = /(?:exam deep|lecture|comprehensive).*?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/i;
+    const solvedRegex = /(?:problem solving|solved|numerical).*?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/i;
+
+    const conceptMatch = noteContent.match(conceptRegex);
+    const lectureMatch = noteContent.match(lectureRegex);
+    const solvedMatch = noteContent.match(solvedRegex);
+
+    const videos: { concept?: string; lecture?: string; solved?: string } = {};
+    if (conceptMatch) videos.concept = conceptMatch[1];
+    if (lectureMatch) videos.lecture = lectureMatch[1];
+    if (solvedMatch) videos.solved = solvedMatch[1];
+
+    // If we didn't find them by labels, but there are YouTube links, let's collect all unique video IDs in order
+    const allRegex = /(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/gi;
+    const matches = [...noteContent.matchAll(allRegex)];
+    const uniqueIds = Array.from(new Set(matches.map(m => m[1])));
+
+    if (uniqueIds.length > 0) {
+      if (!videos.concept) videos.concept = uniqueIds[0];
+      if (!videos.lecture) videos.lecture = uniqueIds[1] || uniqueIds[0];
+      if (!videos.solved) videos.solved = uniqueIds[2] || uniqueIds[1] || uniqueIds[0];
+    }
+
+    return videos;
+  }, [noteContent]);
+
   const [view, setView] = useState<ViewState>("dashboard");
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
@@ -1741,7 +1771,7 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-24 px-1 relative"
+              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-36 px-1 relative"
             >
               <button 
                 onClick={() => goSubject(selectedSubject!)} 
@@ -1767,7 +1797,7 @@ function DashboardContent() {
                     goTopic(prevTopic, selectedSubject!);
                   }
                 }}
-                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 dark:bg-slate-900/96 overflow-hidden min-h-[60vh] relative shadow-sm dark:shadow-[0_16px_50px_rgba(0,0,0,0.3)] pb-28 md:pb-8"
+                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 dark:bg-slate-900/96 overflow-hidden min-h-[60vh] relative shadow-sm dark:shadow-[0_16px_50px_rgba(0,0,0,0.3)] pb-6 md:pb-8"
               >
                 <div className="mb-6 md:mb-8 border-b border-slate-100 dark:border-slate-800 pb-6 md:pb-8 pt-6 md:pt-8 flex items-start justify-between gap-4 max-w-3xl mx-auto px-4 md:px-0">
                   <h1 
@@ -1819,90 +1849,97 @@ function DashboardContent() {
 
                 {selectedTopic.pyqs && selectedTopic.pyqs.length > 0 && (
                   <div className="mt-10 md:mt-12 max-w-3xl mx-auto bg-gradient-to-br from-indigo-50 to-white dark:from-indigo-950/20 dark:to-slate-900/60 border border-indigo-200/70 dark:border-indigo-900/30 rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-[0_8px_30px_rgba(99,102,241,0.08)] dark:shadow-none relative overflow-hidden">
-                    <div className="flex items-center gap-2 mb-3 md:mb-4 relative z-10">
-                      <div className="w-8 h-8 rounded-full bg-indigo-500 text-white flex items-center justify-center shadow-md shadow-indigo-500/20">
-                        <BadgeCheck className="w-4 h-4" />
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 relative z-10 border-b border-indigo-100/50 dark:border-indigo-900/30 pb-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-6 h-6 rounded-lg bg-indigo-500 text-white flex items-center justify-center shadow-sm shrink-0">
+                          <BadgeCheck className="w-3.5 h-3.5" />
+                        </div>
+                        <span className="text-[10px] md:text-xs font-black text-indigo-600 dark:text-indigo-400 uppercase tracking-widest leading-none">Model Question (2024 Scheme)</span>
                       </div>
-                      <span className="text-[10px] md:text-xs font-black text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">Model Question (2024 Scheme)</span>
-                      <span className="ml-auto text-[10px] md:text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-950 px-3 py-1 rounded-full border border-indigo-200/50 dark:border-indigo-900/30">Model Paper</span>
+                      <div className="flex items-center justify-between sm:justify-end gap-2">
+                        <span className="text-[10px] md:text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-100/70 dark:bg-indigo-950 px-2.5 py-1 rounded-full border border-indigo-200/30 dark:border-indigo-900/20">Model Paper</span>
+                        <span className="text-[10px] md:text-xs font-black text-indigo-500 dark:text-indigo-400 px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-100 dark:border-indigo-900/30 shrink-0">{selectedTopic.pyqs[0].marks} Marks</span>
+                      </div>
                     </div>
-                    <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200 leading-snug mb-4 relative z-10">
+                    <p className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-200 leading-relaxed relative z-10 mt-3 font-mono">
                       &quot;{selectedTopic.pyqs[0].question}&quot;
                     </p>
-                    <div className="flex justify-end relative z-10">
-                      <span className="text-[10px] md:text-xs font-black text-indigo-500 dark:text-indigo-400 px-3 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-100 dark:border-indigo-900/30">{selectedTopic.pyqs[0].marks} Marks</span>
-                    </div>
                   </div>
                 )}
 
-                {/* Recommended Watch Section */}
-                <div className="mt-8 max-w-3xl mx-auto bg-white dark:bg-slate-900/50 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-sm dark:shadow-none relative overflow-hidden mb-8 md:mb-12">
-                  <div className="flex items-start justify-between mb-5 md:mb-6">
-                    <div>
-                      <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">RECOMMENDED WATCH</h4>
-                      <h2 className="text-xl md:text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight">Curated for you</h2>
+                {/* Recommended Watch Section (only render if there are actually links in the note markdown) */}
+                {extractedVideos && (extractedVideos.concept || extractedVideos.lecture || extractedVideos.solved) && (
+                  <div className="mt-8 max-w-3xl mx-auto bg-white dark:bg-slate-900/50 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-sm dark:shadow-none relative overflow-hidden mb-8 md:mb-12">
+                    <div className="flex items-start justify-between mb-5 md:mb-6">
+                      <div>
+                        <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">RECOMMENDED WATCH</h4>
+                        <h2 className="text-xl md:text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight">Curated for you</h2>
+                      </div>
+                      <MonitorPlay className="w-5.5 h-5.5 text-blue-500" />
                     </div>
-                    <MonitorPlay className="w-5.5 h-5.5 text-blue-500" />
-                  </div>
-                  
-                  <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-none -mx-2 px-2 snap-x">
-                    {[
-                      {
-                        label: "THE QUICK CONCEPT",
-                        type: "concept" as const,
-                        title: "Concept Summary & Animations",
-                        sub: "YouTube · Quick Concept"
-                      },
-                      {
-                        label: "EXAM DEEP-DIVE",
-                        type: "lecture" as const,
-                        title: "Detailed Lectures & Exam Prep",
-                        sub: "YouTube · Exam Deep Dive"
-                      },
-                      {
-                        label: "PROBLEM SOLVING",
-                        type: "solved" as const,
-                        title: "Step-by-step Solved Numericals",
-                        sub: "YouTube · Problem Solving"
-                      }
-                    ].map((card) => {
-                      const videoId = getVideoIdForCard(card.type, selectedSubject, selectedTopic.title);
-                      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
-                      return (
-                        <button
-                          key={card.label}
-                          type="button"
-                          onClick={() => {
-                            setActiveVideoId(videoId);
-                            triggerHaptic("light");
-                          }}
-                          className="min-w-[240px] md:min-w-[260px] max-w-[260px] snap-start group cursor-pointer text-left focus:outline-none bg-transparent border-0 p-0"
-                        >
-                          <div className="w-full h-[120px] md:h-[140px] rounded-xl md:rounded-2xl relative flex items-center justify-center mb-3 shadow-sm border border-slate-950/[0.04] overflow-hidden bg-slate-950">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                              src={thumbnailUrl}
-                              alt={card.title}
-                              className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
-                              loading="lazy"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/20 to-slate-950/40" />
-                            <div className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 group-hover:bg-red-500/80 transition-all duration-300 relative z-10">
-                              <Play className="w-4 h-4 md:w-5 md:h-5 text-white fill-current ml-1" />
+                    
+                    <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-none -mx-2 px-2 snap-x">
+                      {[
+                        ...(extractedVideos.concept ? [{
+                          label: "THE QUICK CONCEPT",
+                          type: "concept" as const,
+                          title: "Concept Summary & Animations",
+                          sub: "YouTube · Quick Concept",
+                          videoId: extractedVideos.concept
+                        }] : []),
+                        ...(extractedVideos.lecture ? [{
+                          label: "EXAM DEEP-DIVE",
+                          type: "lecture" as const,
+                          title: "Detailed Lectures & Exam Prep",
+                          sub: "YouTube · Exam Deep Dive",
+                          videoId: extractedVideos.lecture
+                        }] : []),
+                        ...(extractedVideos.solved ? [{
+                          label: "PROBLEM SOLVING",
+                          type: "solved" as const,
+                          title: "Step-by-step Solved Numericals",
+                          sub: "YouTube · Problem Solving",
+                          videoId: extractedVideos.solved
+                        }] : [])
+                      ].map((card) => {
+                        const videoId = card.videoId;
+                        const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+                        return (
+                          <button
+                            key={card.label}
+                            type="button"
+                            onClick={() => {
+                              setActiveVideoId(videoId);
+                              triggerHaptic("light");
+                            }}
+                            className="min-w-[240px] md:min-w-[260px] max-w-[260px] snap-start group cursor-pointer text-left focus:outline-none bg-transparent border-0 p-0"
+                          >
+                            <div className="w-full h-[120px] md:h-[140px] rounded-xl md:rounded-2xl relative flex items-center justify-center mb-3 shadow-sm border border-slate-950/[0.04] overflow-hidden bg-slate-950">
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                src={thumbnailUrl}
+                                alt={card.title}
+                                className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
+                                loading="lazy"
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/20 to-slate-950/40" />
+                              <div className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 group-hover:bg-red-500/80 transition-all duration-300 relative z-10">
+                                <Play className="w-4 h-4 md:w-5 md:h-5 text-white fill-current ml-1" />
+                              </div>
+                              <span className="absolute bottom-3 left-3 text-[9px] md:text-[10px] font-black text-white tracking-wider z-10">{card.label}</span>
+                              <span className="absolute top-3 right-3 text-[9px] md:text-[10px] font-black text-white bg-red-600 px-2 py-0.5 rounded-full flex items-center gap-1 z-10">
+                                <svg className="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+                                YouTube
+                              </span>
                             </div>
-                            <span className="absolute bottom-3 left-3 text-[9px] md:text-[10px] font-black text-white tracking-wider z-10">{card.label}</span>
-                            <span className="absolute top-3 right-3 text-[9px] md:text-[10px] font-black text-white bg-red-600 px-2 py-0.5 rounded-full flex items-center gap-1 z-10">
-                              <svg className="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 002.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
-                              YouTube
-                            </span>
-                          </div>
-                          <h3 className="text-xs md:text-sm font-black text-slate-800 dark:text-slate-200 leading-tight mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors line-clamp-2">{card.title}</h3>
-                          <p className="text-[10px] md:text-xs font-bold text-slate-400 dark:text-slate-500">{card.sub}</p>
-                        </button>
-                      );
-                    })}
+                            <h3 className="text-xs md:text-sm font-black text-slate-800 dark:text-slate-200 leading-tight mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors line-clamp-2">{card.title}</h3>
+                            <p className="text-[10px] md:text-xs font-bold text-slate-400 dark:text-slate-500">{card.sub}</p>
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
+                )}
               </motion.div>
 
               {/* Bottom navigation floating bar */}
