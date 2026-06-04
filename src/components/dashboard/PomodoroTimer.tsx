@@ -124,7 +124,12 @@ export default function PomodoroTimer({
 
       {/* Timer Circle */}
       <div className="flex items-center justify-center relative my-2 mx-auto w-32 h-32">
-        <svg className="w-full h-full transform -rotate-90" viewBox="0 0 136 136">
+        <motion.svg 
+          className="w-full h-full transform -rotate-90" 
+          viewBox="0 0 136 136"
+          animate={{ opacity: isRunning ? 1 : 0.3 }}
+          transition={{ duration: 0.3 }}
+        >
           <circle
             cx="68"
             cy="68"
@@ -144,15 +149,19 @@ export default function PomodoroTimer({
             strokeLinecap="round"
             transition={{ ease: "linear", duration: 0.2 }}
           />
-        </svg>
+        </motion.svg>
         <div 
           className="absolute flex flex-col items-center justify-center"
           aria-live="polite"
           aria-atomic="true"
         >
-          <span className="text-3xl font-black tracking-tight text-slate-900 dark:text-slate-100 tabular-nums leading-none">
+          <motion.span 
+            className="text-3xl font-black tracking-tight text-slate-900 dark:text-slate-100 tabular-nums leading-none origin-center inline-block"
+            animate={{ scale: isRunning ? 1 : 1.4 }}
+            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+          >
             {formatTime(secondsLeft)}
-          </span>
+          </motion.span>
           <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest mt-1">
             {isRunning ? "Focusing" : "Paused"}
           </span>

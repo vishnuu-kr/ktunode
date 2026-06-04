@@ -122,6 +122,7 @@ const MagneticButton = React.forwardRef<HTMLElement, MagneticButtonProps>(
 
     useEffect(() => {
       if (typeof window === "undefined") return;
+      if (window.innerWidth < 768 || window.matchMedia("(hover: none)").matches) return;
       const element = localRef.current;
       if (!element) return;
 

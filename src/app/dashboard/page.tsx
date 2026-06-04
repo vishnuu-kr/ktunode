@@ -107,7 +107,7 @@ const schemeHoverTextMap: Record<string, string> = {
 };
 
 interface SubjectTheme {
-  accent: "blue" | "purple" | "green" | "amber" | "emerald";
+  accent: "blue" | "purple" | "green" | "amber" | "emerald" | "rose";
   glow: string;
   border: string;
   text: string;
@@ -120,7 +120,7 @@ interface SubjectTheme {
   buttonShadow: string;
 }
 
-const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
+const getSubjectTheme = (subject: Subject | null, subjectsList: Subject[] = []): SubjectTheme => {
   if (!subject) {
     return {
       accent: "blue",
@@ -136,43 +136,11 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       buttonShadow: "shadow-subject-blue",
     };
   }
-  
-  const name = subject.name.toLowerCase();
-  const code = subject.code.toLowerCase();
-  
-  if (name.includes("math") || name.includes("gamat") || name.includes("algorithm") || name.includes("theory of computation") || name.includes("discrete")) {
-    return {
-      accent: "green",
-      glow: "from-emerald-500/10 via-teal-500/5 to-transparent",
-      border: "border-emerald-200/60 dark:border-emerald-500/20 focus-within:border-emerald-400",
-      text: "text-emerald-600",
-      badgeBg: "bg-emerald-50",
-      accentColor: "#10b981",
-      background: "radial-gradient(ellipse at 70% 10%, #d1fae5 0%, #ecfdf5 35%, #ffffff 70%)",
-      glowCircle1: "bg-emerald-400/20 dark:bg-emerald-500/5",
-      glowCircle2: "bg-teal-300/15 dark:bg-teal-500/5",
-      glowCircle3: "bg-emerald-100/40 dark:bg-emerald-400/5",
-      buttonShadow: "shadow-subject-green",
-    };
-  }
-  
-  if (name.includes("database") || name.includes("dbms") || name.includes("data structure") || name.includes("information")) {
-    return {
-      accent: "purple",
-      glow: "from-purple-500/10 via-fuchsia-500/5 to-transparent",
-      border: "border-purple-200/60 dark:border-purple-500/20 focus-within:border-purple-400",
-      text: "text-purple-600",
-      badgeBg: "bg-purple-50",
-      accentColor: "#a855f7",
-      background: "radial-gradient(ellipse at 70% 10%, #f3e8ff 0%, #faf5ff 35%, #ffffff 70%)",
-      glowCircle1: "bg-purple-400/20 dark:bg-purple-500/5",
-      glowCircle2: "bg-fuchsia-300/15 dark:bg-fuchsia-500/5",
-      glowCircle3: "bg-purple-100/40 dark:bg-purple-400/5",
-      buttonShadow: "shadow-subject-purple",
-    };
-  }
- 
-  if (name.includes("operating system") || name.includes("architecture") || name.includes("network") || name.includes("microprocessor") || name.includes("hardware") || name.includes("coa") || name.includes("sys") || code.includes("cst202") || code.includes("cst206")) {
+
+  const index = subjectsList.findIndex((s) => s.id === subject.id);
+  const themeIndex = index !== -1 ? index % 5 : 0;
+
+  if (themeIndex === 0) {
     return {
       accent: "blue",
       glow: "from-blue-500/10 via-sky-500/5 to-transparent",
@@ -188,34 +156,66 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
     };
   }
   
-  if (name.includes("engineering") || name.includes("professional") || name.includes("design") || name.includes("management")) {
+  if (themeIndex === 1) {
     return {
-      accent: "amber",
-      glow: "from-amber-500/10 via-orange-500/5 to-transparent",
-      border: "border-amber-200/60 dark:border-amber-500/20 focus-within:border-amber-400",
-      text: "text-amber-600",
-      badgeBg: "bg-amber-50",
-      accentColor: "#f59e0b",
-      background: "radial-gradient(ellipse at 70% 10%, #fef3c7 0%, #fffbeb 35%, #ffffff 70%)",
-      glowCircle1: "bg-amber-400/20 dark:bg-amber-500/5",
-      glowCircle2: "bg-orange-300/15 dark:bg-orange-500/5",
-      glowCircle3: "bg-amber-100/40 dark:bg-amber-400/5",
-      buttonShadow: "shadow-subject-amber",
+      accent: "purple",
+      glow: "from-purple-500/10 via-fuchsia-500/5 to-transparent",
+      border: "border-purple-200/60 dark:border-purple-500/20 focus-within:border-purple-400",
+      text: "text-purple-600",
+      badgeBg: "bg-purple-50",
+      accentColor: "#a855f7",
+      background: "radial-gradient(ellipse at 70% 10%, #f3e8ff 0%, #faf5ff 35%, #ffffff 70%)",
+      glowCircle1: "bg-purple-400/20 dark:bg-purple-500/5",
+      glowCircle2: "bg-fuchsia-300/15 dark:bg-fuchsia-500/5",
+      glowCircle3: "bg-purple-100/40 dark:bg-purple-400/5",
+      buttonShadow: "shadow-subject-purple",
+    };
+  }
+
+  if (themeIndex === 2) {
+    return {
+      accent: "emerald",
+      glow: "from-teal-500/10 via-emerald-500/5 to-transparent",
+      border: "border-teal-200/60 dark:border-teal-500/20 focus-within:border-teal-400",
+      text: "text-teal-600",
+      badgeBg: "bg-teal-50",
+      accentColor: "#14b8a6",
+      background: "radial-gradient(ellipse at 70% 10%, #ccfbf1 0%, #f0fdfa 35%, #ffffff 70%)",
+      glowCircle1: "bg-teal-400/20 dark:bg-teal-500/5",
+      glowCircle2: "bg-emerald-300/15 dark:bg-emerald-500/5",
+      glowCircle3: "bg-teal-100/40 dark:bg-teal-400/5",
+      buttonShadow: "shadow-subject-emerald",
+    };
+  }
+
+  if (themeIndex === 3) {
+    return {
+      accent: "rose",
+      glow: "from-rose-500/10 via-pink-500/5 to-transparent",
+      border: "border-rose-200/60 dark:border-rose-500/20 focus-within:border-rose-400",
+      text: "text-rose-600",
+      badgeBg: "bg-rose-50",
+      accentColor: "#f43f5e",
+      background: "radial-gradient(ellipse at 70% 10%, #ffe4e6 0%, #fff1f2 35%, #ffffff 70%)",
+      glowCircle1: "bg-rose-400/20 dark:bg-rose-500/5",
+      glowCircle2: "bg-pink-300/15 dark:bg-pink-500/5",
+      glowCircle3: "bg-rose-100/40 dark:bg-rose-400/5",
+      buttonShadow: "shadow-subject-rose",
     };
   }
   
   return {
-    accent: "emerald",
-    glow: "from-teal-500/10 via-emerald-500/5 to-transparent",
-    border: "border-teal-200/60 dark:border-teal-500/20 focus-within:border-teal-400",
-    text: "text-teal-600",
-    badgeBg: "bg-teal-50",
-    accentColor: "#14b8a6",
-    background: "radial-gradient(ellipse at 70% 10%, #ccfbf1 0%, #f0fdfa 35%, #ffffff 70%)",
-    glowCircle1: "bg-teal-400/20 dark:bg-teal-500/5",
-    glowCircle2: "bg-emerald-300/15 dark:bg-emerald-500/5",
-    glowCircle3: "bg-teal-100/40 dark:bg-teal-400/5",
-    buttonShadow: "shadow-subject-emerald",
+    accent: "amber",
+    glow: "from-amber-500/10 via-orange-500/5 to-transparent",
+    border: "border-amber-200/60 dark:border-amber-500/20 focus-within:border-amber-400",
+    text: "text-amber-600",
+    badgeBg: "bg-amber-50",
+    accentColor: "#f59e0b",
+    background: "radial-gradient(ellipse at 70% 10%, #fef3c7 0%, #fffbeb 35%, #ffffff 70%)",
+    glowCircle1: "bg-amber-400/20 dark:bg-amber-500/5",
+    glowCircle2: "bg-orange-300/15 dark:bg-orange-500/5",
+    glowCircle3: "bg-amber-100/40 dark:bg-amber-400/5",
+    buttonShadow: "shadow-subject-amber",
   };
 };
 
@@ -331,6 +331,22 @@ function DashboardContent() {
     }
   }
   const { resolvedTheme } = useTheme();
+
+  const audioContextRef = React.useRef<AudioContext | null>(null);
+
+  const getAudioContext = React.useCallback(() => {
+    if (typeof window === "undefined") return null;
+    const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+    if (!AudioContextClass) return null;
+    
+    if (!audioContextRef.current) {
+      audioContextRef.current = new AudioContextClass();
+    }
+    if (audioContextRef.current.state === "suspended") {
+      audioContextRef.current.resume();
+    }
+    return audioContextRef.current;
+  }, []);
 
   const [mounted, setMounted] = useState(false);
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
@@ -533,9 +549,8 @@ function DashboardContent() {
 
     // 2. Synthesized Web Audio Tones
     try {
-      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
-      if (!AudioContextClass) return;
-      const audioCtx = new AudioContextClass();
+      const audioCtx = getAudioContext();
+      if (!audioCtx) return;
 
       const sweepTone = (startFreq: number, endFreq: number, baseDuration: number, baseGain: number) => {
         const osc = audioCtx.createOscillator();
@@ -613,7 +628,7 @@ function DashboardContent() {
   const [mobileSheetOpen, setMobileSheetOpen] = useState(false);
 
   // Dynamic theme accents depending on selected subject
-  const theme = getSubjectTheme(view === "dashboard" ? null : selectedSubject);
+  const theme = getSubjectTheme(view === "dashboard" ? null : selectedSubject, subjects);
   
   const hueMap: Record<string, number> = {
     blue: 250,
@@ -630,6 +645,22 @@ function DashboardContent() {
   const [secondsLeft, setSecondsLeft] = useState(25 * 60);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [isTimerMuted, setIsTimerMuted] = useState(false);
+
+  // Wrappers to initialize and resume AudioContext on user interaction
+  const handleSetIsTimerRunning = React.useCallback((running: boolean) => {
+    setIsTimerRunning(running);
+    getAudioContext();
+  }, [getAudioContext]);
+
+  const handleSetSessionMinutes = React.useCallback((mins: number) => {
+    setSessionMinutes(mins);
+    getAudioContext();
+  }, [getAudioContext]);
+
+  const handleSetIsTimerMuted = React.useCallback((muted: boolean) => {
+    setIsTimerMuted(muted);
+    getAudioContext();
+  }, [getAudioContext]);
   
   const timerRef = React.useRef<NodeJS.Timeout | null>(null);
 
@@ -637,9 +668,8 @@ function DashboardContent() {
   const playChime = React.useCallback(() => {
     if (isTimerMuted || typeof window === "undefined") return;
     try {
-      const AudioContextClass = window.AudioContext || (window as Window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
-      if (!AudioContextClass) return;
-      const audioCtx = new AudioContextClass();
+      const audioCtx = getAudioContext();
+      if (!audioCtx) return;
       
       const playTone = (freq: number, start: number, duration: number) => {
         const osc = audioCtx.createOscillator();
@@ -660,7 +690,7 @@ function DashboardContent() {
     } catch (e) {
       console.warn("Audio Context alert blocked or failed", e);
     }
-  }, [isTimerMuted]);
+  }, [isTimerMuted, getAudioContext]);
 
   useEffect(() => {
     if (isTimerRunning) {
@@ -769,7 +799,7 @@ function DashboardContent() {
   const lastTopic = topicIndex.find((item) => item.topic.id === lastTopicId) ?? null;
   const upNext = topicIndex.find((item) => !completedTopics.includes(item.topic.id)) ?? topicIndex[0] ?? null;
   const resumeTarget = lastTopic ?? upNext;
-  const resumeTheme = getSubjectTheme(resumeTarget ? resumeTarget.subject : null);
+  const resumeTheme = getSubjectTheme(resumeTarget ? resumeTarget.subject : null, subjects);
 
   const filteredTopics = topicIndex.filter((item) => {
     const query = searchTerm.trim().toLowerCase();
@@ -1197,7 +1227,8 @@ function DashboardContent() {
       style={{
         background: mounted && resolvedTheme === "dark"
           ? `radial-gradient(ellipse at 70% 10%, oklch(18% 0.035 ${accentHue}) 0%, oklch(14% 0.015 ${accentHue}) 45%, oklch(12% 0.01 ${accentHue}) 80%)`
-          : theme.background
+          : theme.background,
+        ["--accent-color" as any]: theme.accentColor
       }}
     >
       <div className="absolute inset-0 z-0 dot-grid opacity-[0.08] pointer-events-none" />
@@ -1269,7 +1300,7 @@ function DashboardContent() {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 h-auto lg:h-full items-start"
             >
-              <div className="lg:col-span-8 space-y-5 md:space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-6 lg:pb-32 pr-1 md:pr-2">
+              <div className="lg:col-span-8 space-y-5 md:space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-6 lg:pb-32 px-1.5 md:px-2">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex flex-col gap-1.5">
                     <div className="flex items-center gap-2">
@@ -1505,17 +1536,17 @@ function DashboardContent() {
               </div>
 
               {/* Right column sidebar (Desktop only) */}
-              <div className="hidden lg:block lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 pr-1 md:pr-2">
+              <div className="hidden lg:block lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 px-1.5 md:px-2">
 
                 <PomodoroTimer
                   sessionMinutes={sessionMinutes}
-                  setSessionMinutes={setSessionMinutes}
+                  setSessionMinutes={handleSetSessionMinutes}
                   secondsLeft={secondsLeft}
                   setSecondsLeft={setSecondsLeft}
                   isRunning={isTimerRunning}
-                  setIsRunning={setIsTimerRunning}
+                  setIsRunning={handleSetIsTimerRunning}
                   isMuted={isTimerMuted}
-                  setIsMuted={setIsTimerMuted}
+                  setIsMuted={handleSetIsTimerMuted}
                 />
 
                 <TimetableWidget timetable={timetable} sem={sem} branch={branch} />
@@ -2090,13 +2121,13 @@ function DashboardContent() {
 
         <PomodoroTimer
           sessionMinutes={sessionMinutes}
-          setSessionMinutes={setSessionMinutes}
+          setSessionMinutes={handleSetSessionMinutes}
           secondsLeft={secondsLeft}
           setSecondsLeft={setSecondsLeft}
           isRunning={isTimerRunning}
-          setIsRunning={setIsTimerRunning}
+          setIsRunning={handleSetIsTimerRunning}
           isMuted={isTimerMuted}
-          setIsMuted={setIsTimerMuted}
+          setIsMuted={handleSetIsTimerMuted}
         />
 
         <TimetableWidget timetable={timetable} sem={sem} branch={branch} />

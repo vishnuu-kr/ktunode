@@ -51,7 +51,12 @@ import {
   Gamepad2,
   ExternalLink,
   ChevronRight,
-  User
+  User,
+  Shield,
+  X,
+  Download,
+  SkipForward,
+  Volume2
 } from "lucide-react";
 
 const branchNameMapping: Record<string, string> = {
@@ -1524,6 +1529,10 @@ export default function ToolsPage() {
   const [activeTool, setActiveTool] = useState<string | null>(null);
   const [activeConsoleSubTab, setActiveConsoleSubTab] = useState<string>("gpa");
 
+  // Drawer States
+  const [isCiePlannerOpen, setIsCiePlannerOpen] = useState(false);
+  const [isSgpaAllocatorOpen, setIsSgpaAllocatorOpen] = useState(false);
+
   // Collapsible cards state
   const [collapsedCards, setCollapsedCards] = useState<Record<string, boolean>>({
     gpa: true,
@@ -1613,6 +1622,7 @@ export default function ToolsPage() {
   // Notepad State
   const [notepadText, setNotepadText] = useState("");
   const [notepadSaved, setNotepadSaved] = useState(false);
+  const [notepadSaving, setNotepadSaving] = useState(false);
 
   // --- STUDY CONSOLE STATES ---
   const [pomodoroTime, setPomodoroTime] = useState(1500); // 25 mins focus
@@ -1626,7 +1636,8 @@ export default function ToolsPage() {
   const [flashcardScores, setFlashcardScores] = useState({ known: 0, total: 0 });
 
   const [spacedRepetitionData, setSpacedRepetitionData] = useState<Record<string, { level: "low" | "medium" | "high", date: string }>>({});
-  const [studyConsoleTab, setStudyConsoleTab] = useState<"pomodoro" | "flashcards" | "spaced" | "notepad" | "checklist" | "gamble" | "splits">("pomodoro");
+  const [studyConsoleTab, setStudyConsoleTab] = useState<"focus" | "utilities">("focus");
+  const [utilityConsoleTab, setUtilityConsoleTab] = useState<"checklist" | "gamble" | "splits">("checklist");
 
   // --- 24 MICRO-TOOLS SANDBOX STATES ---
   const [mtSearchQuery, setMtSearchQuery] = useState("");
@@ -1712,9 +1723,9 @@ export default function ToolsPage() {
   const [mtRevalExpected, setMtRevalExpected] = useState("Excellent");
   // Tool 23: Syllabus Milestone Tracker
   const [mtMilestones, setMtMilestones] = useState<Record<string, boolean[]>>({
-    "PCCST403": [true, true, false, false, false],
-    "CST204": [true, true, true, false, false],
-    "CST206": [true, false, false, false, false]
+    "PCCST403": [true, true, false, false],
+    "CST204": [true, true, true, false],
+    "CST206": [true, false, false, false]
   });
   // Tool 24: Countdown Dashboard Target
   const [mtCountdownTarget, setMtCountdownTarget] = useState("2026-07-15");
@@ -1732,6 +1743,7 @@ export default function ToolsPage() {
   const [activityMode, setActivityMode] = useState<"earn" | "calculator">("earn");
   const [activitySearchQuery, setActivitySearchQuery] = useState("");
   const [activityGuideGroup, setActivityGuideGroup] = useState<"All" | "I" | "II" | "III">("All");
+  const [gradSubTab, setGradSubTab] = useState<"activity" | "credits" | "backlogs">("activity");
 
   // Attendance streak
   const [attendanceStreak, setAttendanceStreak] = useState(0);
@@ -1761,7 +1773,10 @@ export default function ToolsPage() {
     // Load backlogs
     const savedBacklogs = localStorage.getItem("ktunode_tools_backlogs");
     if (savedBacklogs) {
-      try { setBacklogSubjects(JSON.parse(savedBacklogs)); } catch {}
+      try {
+        const parsed = JSON.parse(savedBacklogs);
+        if (Array.isArray(parsed)) setBacklogSubjects(parsed);
+      } catch {}
     }
   }, [mounted]);
 
@@ -2012,24 +2027,28 @@ export default function ToolsPage() {
 
     if (savedSgpa) {
       try {
-        const savedList: SGPACourse[] = JSON.parse(savedSgpa);
-        mergedSgpa = defaultSgpaMap.map(defSub => {
-          const match = savedList.find(saved => saved.code === defSub.code || saved.id === defSub.id);
-          if (match) {
-            return {
-              ...defSub,
-              credits: match.credits,
-              grade: match.grade
-            };
-          }
-          return defSub;
-        });
+        const savedList = JSON.parse(savedSgpa);
+        if (Array.isArray(savedList)) {
+          mergedSgpa = defaultSgpaMap.map(defSub => {
+            const match = savedList.find(saved => saved && (saved.code === defSub.code || saved.id === defSub.id));
+            if (match) {
+              return {
+                ...defSub,
+                credits: typeof match.credits === 'number' ? match.credits : defSub.credits,
+                grade: match.grade || "S"
+              };
+            }
+            return defSub;
+          });
 
-        // Retain custom courses
-        const customCourses = savedList.filter(saved => 
-          !defaultSubjects.some(def => def.code === saved.code || def.id === saved.id)
-        );
-        mergedSgpa.push(...customCourses);
+          // Retain custom courses
+          const customCourses = savedList.filter(saved => 
+            saved && !defaultSubjects.some(def => def.code === saved.code || def.id === saved.id)
+          );
+          mergedSgpa.push(...customCourses);
+        } else {
+          mergedSgpa = defaultSgpaMap;
+        }
       } catch {
         mergedSgpa = defaultSgpaMap;
       }
@@ -2052,24 +2071,28 @@ export default function ToolsPage() {
 
     if (savedAttendance) {
       try {
-        const savedList: AttendanceSubject[] = JSON.parse(savedAttendance);
-        mergedAttendance = defaultAttendanceMap.map(defSub => {
-          const match = savedList.find(saved => saved.code === defSub.code || saved.id === defSub.id);
-          if (match) {
-            return {
-              ...defSub,
-              attended: match.attended,
-              total: match.total
-            };
-          }
-          return defSub;
-        });
+        const savedList = JSON.parse(savedAttendance);
+        if (Array.isArray(savedList)) {
+          mergedAttendance = defaultAttendanceMap.map(defSub => {
+            const match = savedList.find(saved => saved && (saved.code === defSub.code || saved.id === defSub.id));
+            if (match) {
+              return {
+                ...defSub,
+                attended: typeof match.attended === 'number' ? match.attended : defSub.attended,
+                total: typeof match.total === 'number' ? match.total : defSub.total
+              };
+            }
+            return defSub;
+          });
 
-        // Retain custom subjects
-        const customSubjects = savedList.filter(saved => 
-          !defaultSubjects.some(def => def.code === saved.code || def.id === saved.id)
-        );
-        mergedAttendance.push(...customSubjects);
+          // Retain custom subjects
+          const customSubjects = savedList.filter(saved => 
+            saved && !defaultSubjects.some(def => def.code === saved.code || def.id === saved.id)
+          );
+          mergedAttendance.push(...customSubjects);
+        } else {
+          mergedAttendance = defaultAttendanceMap;
+        }
       } catch {
         mergedAttendance = defaultAttendanceMap;
       }
@@ -2084,9 +2107,19 @@ export default function ToolsPage() {
     if (savedLabs) {
       try {
         const parsed = JSON.parse(savedLabs);
-        setLabCourses(parsed);
-        if (parsed.length > 0) setActiveLabTab(parsed[0].id);
-      } catch {}
+        if (Array.isArray(parsed)) {
+          setLabCourses(parsed);
+          if (parsed.length > 0) setActiveLabTab(parsed[0].id);
+        } else {
+          const initialLabs = getDefaultLabsForSession(currentBranch, currentSem);
+          setLabCourses(initialLabs);
+          if (initialLabs.length > 0) setActiveLabTab(initialLabs[0].id);
+        }
+      } catch {
+        const initialLabs = getDefaultLabsForSession(currentBranch, currentSem);
+        setLabCourses(initialLabs);
+        if (initialLabs.length > 0) setActiveLabTab(initialLabs[0].id);
+      }
     } else {
       const initialLabs = getDefaultLabsForSession(currentBranch, currentSem);
       setLabCourses(initialLabs);
@@ -2098,6 +2131,7 @@ export default function ToolsPage() {
     if (defaultSubjects.length > 0) {
       setPredictorSubject({ name: defaultSubjects[0].name, code: defaultSubjects[0].code });
       setSandboxSubject({ name: defaultSubjects[0].name, code: defaultSubjects[0].code });
+      setPlannerActiveSubject({ name: defaultSubjects[0].name, code: defaultSubjects[0].code });
     } else {
       setPredictorSubject(null);
       setSandboxSubject(null);
@@ -2128,7 +2162,10 @@ export default function ToolsPage() {
       }
       try {
         const savedActivities = localStorage.getItem("ktunode_tools_activities");
-        if (savedActivities) setSelectedActivities(JSON.parse(savedActivities));
+        if (savedActivities) {
+          const parsed = JSON.parse(savedActivities);
+          if (Array.isArray(parsed)) setSelectedActivities(parsed);
+        }
       } catch {}
 
 
@@ -2136,13 +2173,39 @@ export default function ToolsPage() {
       // Load Year-Back Credits inputs
       try {
         const savedCredits = localStorage.getItem("ktunode_tools_progression_credits");
-        if (savedCredits) setProgressionCredits(JSON.parse(savedCredits));
+        if (savedCredits) {
+          const parsed = JSON.parse(savedCredits);
+          if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+            setProgressionCredits(prev => ({ ...prev, ...parsed }));
+          }
+        }
       } catch {}
 
       // Load CGPA semesters (Degree-wide - Global)
       const savedCgpa = localStorage.getItem("ktunode_tools_cgpa");
       if (savedCgpa) {
-        try { setCgpaSemesters(JSON.parse(savedCgpa)); } catch {}
+        try {
+          const parsed = JSON.parse(savedCgpa);
+          if (Array.isArray(parsed)) {
+            setCgpaSemesters(parsed);
+          } else {
+            const initialCgpa = Array.from({ length: 8 }, (_, i) => ({
+              semester: i + 1,
+              sgpa: savedSem > i + 1 ? 8.0 : 0.0,
+              credits: 22,
+              active: savedSem > i + 1
+            }));
+            setCgpaSemesters(initialCgpa);
+          }
+        } catch {
+          const initialCgpa = Array.from({ length: 8 }, (_, i) => ({
+            semester: i + 1,
+            sgpa: savedSem > i + 1 ? 8.0 : 0.0,
+            credits: 22,
+            active: savedSem > i + 1
+          }));
+          setCgpaSemesters(initialCgpa);
+        }
       } else {
         const initialCgpa = Array.from({ length: 8 }, (_, i) => ({
           semester: i + 1,
@@ -2180,12 +2243,18 @@ export default function ToolsPage() {
     triggerNotification(`Switched to ${newBranch.toUpperCase()} Sem ${newSem}. Scoped data loaded!`);
   };
 
-  // Study Notepad saving
+  // Study Notepad saving with a visual feedback cycle ("saving..." -> "auto-saved")
   const handleNotepadSave = (text: string) => {
     setNotepadText(text);
+    setNotepadSaving(true);
+    setNotepadSaved(false);
     localStorage.setItem("ktunode_tools_notepad", text);
-    setNotepadSaved(true);
-    setTimeout(() => setNotepadSaved(false), 1500);
+
+    // Simulate auto-save debounce feedback
+    const timer = setTimeout(() => {
+      setNotepadSaving(false);
+      setNotepadSaved(true);
+    }, 600);
   };
 
   // SGPA/CGPA calculations
@@ -2760,7 +2829,7 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
         {/* Card Header with Live free marks badge */}
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
@@ -2799,7 +2868,7 @@ export default function ToolsPage() {
         {/* Subjects list rows */}
         <div className="space-y-3 max-h-[300px] overflow-y-auto pr-1 scrollbar-thin">
           {isTrackerEmpty ? (
-            <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-slate-200/60 dark:border-zinc-800 rounded-2xl bg-slate-50/50 dark:bg-white/40 dark:bg-slate-900/20">
+            <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-slate-200/60 dark:border-[#2a2f38] rounded-2xl bg-slate-50/50 dark:bg-[#1a1f27]/20">
               <ListTodo className="w-8 h-8 text-zinc-600 mb-2.5" />
               <span className="text-[10px] font-bold text-zinc-550 uppercase tracking-widest mb-1">No Subjects Tracked</span>
               <span className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mb-3 text-center">Import your semester grid to start logging attendance data.</span>
@@ -2829,7 +2898,7 @@ export default function ToolsPage() {
               else if (pct < 85) { color = "text-blue-450"; progressBg = "bg-blue-500"; }
 
               return (
-                <div key={sub.id} className="p-3.5 rounded-2xl bg-slate-50/50 dark:bg-white/60 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.04] space-y-3">
+                <div key={sub.id} className="p-3.5 rounded-2xl bg-slate-50/50 dark:bg-[#1a1f27]/40 border border-slate-200/40 dark:border-[#2a2f38] space-y-3">
                   <div className="flex justify-between items-center text-xs">
                     <div className="truncate pr-2">
                       <span className="font-bold text-[10px] block text-slate-900 dark:text-white truncate leading-none font-mono">{sub.code}</span>
@@ -2853,7 +2922,7 @@ export default function ToolsPage() {
                       <div className="flex justify-between text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-1 font-mono">
                         <span>Attended: {sub.attended} / {sub.total}</span>
                       </div>
-                      <div className="h-1.5 bg-slate-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+                      <div className="h-1.5 bg-slate-100 dark:bg-[#262b33] rounded-full overflow-hidden">
                         <div className={`h-full ${progressBg} transition-all duration-300`} style={{ width: `${pct}%` }} />
                       </div>
                     </div>
@@ -2900,7 +2969,7 @@ export default function ToolsPage() {
     const allZero = mtAggSeries1 === 0 && mtAggSeries2 === 0 && mtAggAssg === 0 && mtAggAtt === 0;
 
     return (
-      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -2927,7 +2996,7 @@ export default function ToolsPage() {
                 setMtAggSeries1(v);
                 setMtDmgSeries1(v);
               }}
-              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
@@ -2938,7 +3007,7 @@ export default function ToolsPage() {
               max="50"
               value={mtAggSeries2}
               onChange={(e) => setMtAggSeries2(Math.min(50, Math.max(0, Number(e.target.value))))}
-              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
@@ -2952,7 +3021,7 @@ export default function ToolsPage() {
                 const v = Math.min(10, Math.max(0, Number(e.target.value)));
                 setMtAggAssg(v);
               }}
-              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
@@ -2966,13 +3035,13 @@ export default function ToolsPage() {
                 const v = Math.min(5, Math.max(0, Number(e.target.value)));
                 setMtAggAtt(v);
               }}
-              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
         </div>
 
         {/* Aggregated CIE display */}
-        <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-950/40 text-center space-y-1">
+        <div className="p-5 rounded-2xl border border-slate-200/60 dark:border-[#2a2f38] bg-slate-50/40 dark:bg-[#1a1f27]/40 text-center space-y-1">
           <div className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase">Aggregated CIE Score</div>
           <div className="text-4xl font-light tracking-tight text-slate-900 dark:text-white font-mono">{totalCie.toFixed(1)} <span className="text-xs text-zinc-550">/ 50</span></div>
           <div className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mt-1">
@@ -2992,7 +3061,7 @@ export default function ToolsPage() {
             max="50"
             value={mtDmgTarget}
             onChange={(e) => setMtDmgTarget(Number(e.target.value))}
-            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-zinc-800"
+            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-[#262b33]"
           />
 
           {(() => {
@@ -3064,7 +3133,7 @@ export default function ToolsPage() {
                 }
 
                 return (
-                  <div key={tg.grade} className="p-2 rounded-xl bg-slate-50/50 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.02] flex items-center justify-between">
+                  <div key={tg.grade} className="p-2 rounded-xl bg-slate-50/50 dark:bg-[#1a1f27]/20 border border-slate-200/40 dark:border-[#2a2f38] flex items-center justify-between">
                     <div>
                       <span className="font-bold text-slate-750 dark:text-slate-300 block">{tg.grade} Target</span>
                       <span className="text-[8px] text-slate-400 font-mono block mt-0.5">{tg.label}</span>
@@ -3091,527 +3160,7 @@ export default function ToolsPage() {
     const limit = progressionTarget === "s5" ? 26 : 52;
     const earned = progressionTarget === "s5" ? (s1 + s2) : (s1 + s2 + s3 + s4);
     const passed = earned >= limit;
-    
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-        {/* Credit Auditor Card */}
-        <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
-          <div className="flex items-center gap-2.5 border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
-              <ShieldCheck className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Credit Year-Back Auditor</h3>
-              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Check KTU promotion credit requirements</span>
-            </div>
-          </div>
 
-          <div className="space-y-3">
-            <div className="flex gap-2">
-              <button
-                onClick={() => setProgressionTarget("s5")}
-                className={`flex-1 py-1.5 rounded-lg border text-[9px] font-bold uppercase transition-all cursor-pointer ${
-                  progressionTarget === "s5"
-                    ? "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/20"
-                    : "bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-white/[0.02] hover:bg-white/[0.02]"
-                }`}
-              >
-                S5 Lock Check (Need 26)
-              </button>
-              <button
-                onClick={() => setProgressionTarget("s7")}
-                className={`flex-1 py-1.5 rounded-lg border text-[9px] font-bold uppercase transition-all cursor-pointer ${
-                  progressionTarget === "s7"
-                    ? "bg-blue-500/20 text-blue-450 border-blue-500/20"
-                    : "bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-white/[0.02] hover:bg-white/[0.02]"
-                }`}
-              >
-                S7 Lock Check (Need 52)
-              </button>
-            </div>
-
-            <div className="grid grid-cols-2 gap-3.5">
-              <div className="space-y-1">
-                <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S1 Credits</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="22"
-                  value={s1}
-                  onChange={(e) => handleProgressionCreditChange("s1", Number(e.target.value))}
-                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
-                />
-              </div>
-              <div className="space-y-1">
-                <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S2 Credits</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="22"
-                  value={s2}
-                  onChange={(e) => handleProgressionCreditChange("s2", Number(e.target.value))}
-                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
-                />
-              </div>
-              {progressionTarget === "s7" && (
-                <>
-                  <div className="space-y-1">
-                    <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S3 Credits</label>
-                    <input
-                      type="number"
-                      min="0"
-                      max="22"
-                      value={s3}
-                      onChange={(e) => handleProgressionCreditChange("s3", Number(e.target.value))}
-                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S4 Credits</label>
-                    <input
-                      type="number"
-                      min="0"
-                      max="22"
-                      value={s4}
-                      onChange={(e) => handleProgressionCreditChange("s4", Number(e.target.value))}
-                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
-                    />
-                  </div>
-                </>
-              )}
-            </div>
-
-            <div className={`p-3.5 rounded-xl border text-center flex flex-col items-center gap-1 ${
-              passed
-                ? "bg-emerald-500/[0.02] border-emerald-500/10 text-emerald-450"
-                : "bg-rose-500/[0.01] border-rose-500/10 text-rose-455 animate-pulse"
-            }`}>
-              <div className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none font-mono">Promotion Audit Status</div>
-              <div className="text-xl font-light tracking-tight text-slate-900 dark:text-white py-1 font-mono">
-                {earned} <span className="text-xs text-slate-500 dark:text-slate-400">/ {limit} Credits</span>
-              </div>
-              <div className="text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
-                {passed ? <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" /> : <ShieldAlert className="w-3.5 h-3.5 text-rose-500" />}
-                {passed ? "Clear for Promotion" : "Year-Back Credit Lock Risk!"}
-              </div>
-              <div className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mt-1 leading-normal">
-                {progressionTarget === "s5" ? "S5 promotion" : "S7 promotion"} requires minimum <strong className="text-slate-700 dark:text-slate-300">{limit} credits</strong>. You are {passed ? "safe" : `${limit - earned} credits short`}.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Activity Points Auditor Card */}
-        <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3 gap-2">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-450">
-                <Award className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Activity Points</h3>
-                <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1 font-mono">
-                  Earned: {totalActivityPoints} / {calculatedPoints.totalRequired} pts
-                </span>
-              </div>
-            </div>
-            
-            <div className="flex bg-slate-100 dark:bg-slate-800/80 p-0.5 rounded-lg border border-slate-200/60 dark:border-white/[0.04] self-start sm:self-center shrink-0">
-              <button
-                onClick={() => setActivityMode("earn")}
-                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all flex items-center gap-1 cursor-pointer ${
-                  activityMode === "earn"
-                    ? "bg-white dark:bg-slate-900 shadow-sm text-blue-600 dark:text-blue-400"
-                    : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
-                }`}
-              >
-                <BookOpen className="w-3 h-3" />
-                Guide
-              </button>
-              <button
-                onClick={() => setActivityMode("calculator")}
-                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all flex items-center gap-1 cursor-pointer ${
-                  activityMode === "calculator"
-                    ? "bg-white dark:bg-slate-900 shadow-sm text-blue-600 dark:text-blue-400"
-                    : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
-                }`}
-              >
-                <Calculator className="w-3 h-3" />
-                Calculator
-              </button>
-            </div>
-          </div>
-
-          {activityMode === "earn" ? (
-            /* Earning Guide Mode */
-            <div className="space-y-4">
-              {/* Manual & Rules Dashboard Summary */}
-              <div className="p-3.5 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-slate-50/50 dark:bg-zinc-950/20 space-y-2">
-                <div className="flex justify-between items-center text-[10px] font-bold text-slate-800 dark:text-slate-350">
-                  <span className="flex items-center gap-1"><Info className="w-3.5 h-3.5 text-blue-500" /> KTU Point System Guide</span>
-                  <div className="flex items-center gap-1.5 font-normal">
-                    <span>Target:</span>
-                    <select
-                      value={studentType}
-                      onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
-                      className="bg-transparent border-none text-[10px] font-bold text-slate-900 dark:text-slate-200 focus:outline-none cursor-pointer p-0"
-                    >
-                      <option value="regular">Regular (100 pts)</option>
-                      <option value="lateral">Lateral (75 pts)</option>
-                      <option value="pwd">PwD Mode (50 pts)</option>
-                    </select>
-                  </div>
-                </div>
-                <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed">
-                  Earn points across 3 groups. Max limit per group is <strong>60 points</strong>. You need {calculatedPoints.totalRequired} points total to qualify for graduation.
-                </p>
-
-                {/* Group Progress Bars */}
-                <div className="grid grid-cols-3 gap-2.5 pt-1.5 border-t border-slate-200/30 dark:border-white/[0.03]">
-                  {[
-                    { id: "1", name: "Group I", val: calculatedPoints.group1Raw, capped: calculatedPoints.group1Capped },
-                    { id: "2", name: "Group II", val: calculatedPoints.group2Raw, capped: calculatedPoints.group2Capped },
-                    { id: "3", name: "Group III", val: calculatedPoints.group3Raw, capped: calculatedPoints.group3Capped }
-                  ].map(grp => (
-                    <div key={grp.id} className="space-y-1">
-                      <div className="flex justify-between text-[8px] font-bold uppercase tracking-wider text-slate-400">
-                        <span>{grp.name}</span>
-                        <span>{grp.capped}/60</span>
-                      </div>
-                      <div className="h-1 bg-slate-250 dark:bg-slate-800 rounded-full overflow-hidden">
-                        <div 
-                          className={`h-full rounded-full ${
-                            grp.capped >= 60 ? "bg-emerald-500" : grp.capped >= 30 ? "bg-blue-500" : "bg-amber-500"
-                          }`}
-                          style={{ width: `${Math.min(100, (grp.capped / 60) * 100)}%` }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Search and Filters */}
-              <div className="flex gap-2">
-                <div className="relative flex-1">
-                  <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400" />
-                  <input
-                    type="text"
-                    placeholder="Search manual (e.g. NSS, sports, certification)..."
-                    value={activitySearchQuery}
-                    onChange={(e) => setActivitySearchQuery(e.target.value)}
-                    className="w-full pl-8 pr-2.5 py-1.5 bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl text-[11px] font-medium text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500/30 transition-all"
-                  />
-                </div>
-                <select
-                  value={activityGuideGroup}
-                  onChange={(e) => setActivityGuideGroup(e.target.value as typeof activityGuideGroup)}
-                  className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1.5 text-[10px] font-bold text-slate-800 dark:text-slate-200 focus:outline-none cursor-pointer shrink-0"
-                >
-                  <option value="All">All Groups</option>
-                  <option value="I">Group I Only</option>
-                  <option value="II">Group II Only</option>
-                  <option value="III">Group III Only</option>
-                </select>
-              </div>
-
-              {/* Scrollable list of activities with inline configuration */}
-              <div className="space-y-2.5 max-h-[180px] overflow-y-auto pr-1 scrollbar-thin">
-                {(() => {
-                  const query = activitySearchQuery.toLowerCase().trim();
-                  const filtered = Object.values(KTU_ACTIVITIES).filter(act => {
-                    const matchesGroup = activityGuideGroup === "All" || act.code.startsWith(activityGuideGroup === "I" ? "1" : activityGuideGroup === "II" ? "2" : "3");
-                    const matchesQuery = !query || 
-                      act.code.includes(query) || 
-                      act.name.toLowerCase().includes(query) || 
-                      (act.desc && act.desc.toLowerCase().includes(query)) ||
-                      act.proof.toLowerCase().includes(query);
-                    return matchesGroup && matchesQuery;
-                  });
-
-                  if (filtered.length === 0) {
-                    return (
-                      <div className="text-[10px] font-semibold text-slate-400 text-center py-8">
-                        No activities match your search.
-                      </div>
-                    );
-                  }
-
-                  return filtered.map(act => {
-                    const claimsList = selectedActivities.filter(sa => sa.activityCode === act.code);
-                    const isClaimed = claimsList.length > 0;
-                    const groupNum = act.code.split('.')[0];
-                    const groupColor = groupNum === "1" ? "border-emerald-500/20 text-emerald-500 bg-emerald-500/5" : groupNum === "2" ? "border-blue-500/20 text-blue-500 bg-blue-500/5" : "border-purple-500/20 text-purple-500 bg-purple-500/5";
-                    const isInlineAddActive = inlineAddCode === act.code;
-
-                    return (
-                      <div key={act.code} className="p-4 rounded-2xl bg-slate-50/50 dark:bg-slate-900/30 border border-slate-200/50 dark:border-slate-800/40 space-y-2 hover:border-slate-300 dark:hover:border-slate-700/60 hover:bg-slate-100/55 dark:hover:bg-slate-900/40 transition-all duration-300">
-                        <div className="flex justify-between items-start gap-2">
-                          <div className="flex items-center gap-1.5">
-                            <span className={`px-1.5 py-0.5 rounded text-[8px] font-bold border font-mono ${groupColor}`}>
-                              G{groupNum} • {act.code}
-                            </span>
-                            <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-                              Max {act.maxPoints} pts
-                            </span>
-                          </div>
-                          {isClaimed && (
-                            <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-500 border border-emerald-500/10 text-[8px] font-bold uppercase tracking-wider flex items-center gap-0.5">
-                              <Check className="w-2.5 h-2.5" /> {claimsList.reduce((acc, curr) => acc + curr.points, 0)} pts claimed
-                            </span>
-                          )}
-                        </div>
-                        <h4 className="text-xs font-semibold text-slate-900 dark:text-slate-100 leading-tight">
-                          {act.name}
-                        </h4>
-                        {act.desc && (
-                          <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-normal">
-                            {act.desc}
-                          </p>
-                        )}
-                        
-                        <div className="flex flex-col gap-2 pt-1 border-t border-slate-100 dark:border-white/[0.03]">
-                          <div className="flex flex-wrap items-center justify-between gap-2 text-[9px]">
-                            <span className="text-slate-500 dark:text-slate-400 flex items-center gap-1 shrink-0 font-medium font-sans">
-                              <FileText className="w-3 h-3 text-slate-400" /> Proof: <strong className="text-slate-700 dark:text-slate-300 font-semibold">{act.proof}</strong>
-                            </span>
-                            
-                            {!isInlineAddActive && (
-                              <button
-                                onClick={() => {
-                                  if (act.type === "fixed") {
-                                    handleDirectAddFixed(act);
-                                  } else {
-                                    handleStartInlineAdd(act);
-                                  }
-                                }}
-                                className="px-2 py-0.5 rounded bg-blue-500/10 hover:bg-blue-500/25 text-blue-600 dark:text-blue-400 border border-blue-500/15 text-[8.5px] font-bold uppercase tracking-wide cursor-pointer transition-all flex items-center gap-0.5 active:scale-95"
-                              >
-                                <Plus className="w-2.5 h-2.5" /> Add Claim
-                              </button>
-                            )}
-                          </div>
-
-                          {/* Inline adding config pane */}
-                          {isInlineAddActive && (
-                            <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200/50 dark:border-white/[0.04] grid grid-cols-1 sm:grid-cols-2 gap-2 items-center text-[10px] animate-fade-in">
-                              <div className="space-y-1">
-                                <span className="text-[8px] font-bold text-slate-400 block uppercase">Configure Details:</span>
-                                {act.type === "level" && act.levels && (
-                                  <select
-                                    value={inlineSelLevel}
-                                    onChange={(e) => setInlineSelLevel(e.target.value)}
-                                    className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded px-1.5 py-1 font-bold text-[9.5px] cursor-pointer text-slate-800 dark:text-slate-250 focus:outline-none"
-                                  >
-                                    {Object.keys(act.levels).map(lvl => (
-                                      <option key={lvl} value={lvl}>{lvl} ({act.levels?.[lvl]} pts)</option>
-                                    ))}
-                                  </select>
-                                )}
-                                {act.type === "count" && (
-                                  <div className="flex items-center gap-1">
-                                    <input
-                                      type="number"
-                                      min="1"
-                                      placeholder="Quantity"
-                                      value={inlineSelQuantity}
-                                      onChange={(e) => {
-                                        const q = Math.max(1, Number(e.target.value));
-                                        setInlineSelQuantity(q);
-                                      }}
-                                      className="w-16 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded px-1.5 py-0.5 text-center font-bold font-mono focus:outline-none"
-                                    />
-                                    <span className="text-[8.5px] text-slate-400">units ({act.pointsPerUnit || act.maxPoints} pts each)</span>
-                                  </div>
-                                )}
-                                {act.type === "input" && (
-                                  <div className="flex items-center gap-1">
-                                    <input
-                                      type="number"
-                                      min="1"
-                                      max={act.maxPoints}
-                                      placeholder={`Points`}
-                                      value={inlineSelPoints}
-                                      onChange={(e) => setInlineSelPoints(Math.min(act.maxPoints, Math.max(0, Number(e.target.value))))}
-                                      className="w-16 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded px-1.5 py-0.5 text-center font-bold font-mono focus:outline-none"
-                                    />
-                                    <span className="text-[8.5px] text-slate-400">pts (max {act.maxPoints})</span>
-                                  </div>
-                                )}
-                              </div>
-                              <div className="flex items-center justify-end gap-1.5">
-                                <button
-                                  onClick={() => setInlineAddCode(null)}
-                                  className="px-2 py-1 rounded bg-transparent border border-slate-200/60 dark:border-white/[0.04] text-slate-500 hover:text-slate-700 dark:hover:text-white cursor-pointer uppercase text-[8px] font-black tracking-wider transition-all active:scale-95"
-                                >
-                                  Cancel
-                                </button>
-                                <button
-                                  onClick={() => handleConfirmInlineAdd(act)}
-                                  className="px-2.5 py-1 rounded bg-blue-500 text-white hover:bg-blue-600 cursor-pointer uppercase text-[8px] font-black tracking-wider transition-all active:scale-95 border border-blue-500/10 shadow-sm"
-                                >
-                                  Confirm
-                                </button>
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  });
-                })()}
-              </div>
-            </div>
-          ) : (
-            /* Calculator Mode */
-            <div className="space-y-3">
-              {/* Tally Progress */}
-              <div className="space-y-1">
-                <div className="flex justify-between items-center text-[9px] font-bold uppercase tracking-wider text-zinc-450">
-                  <span>Portfolio Progress</span>
-                  <span className={`${tallyMeta.textClass} font-bold font-mono flex items-center gap-0.5`}>
-                    {totalActivityPoints} pts ({tallyMeta.label})
-                    {calculatedPoints.isQualified && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />}
-                  </span>
-                </div>
-                <div className="h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                  <div className={`h-full ${tallyMeta.barClass} transition-all duration-300`} style={{ width: `${Math.min(100, (totalActivityPoints / calculatedPoints.totalRequired) * 100)}%` }} />
-                </div>
-              </div>
-
-              {/* List of claims */}
-              <div className="space-y-2 max-h-[120px] overflow-y-auto pr-1 scrollbar-thin">
-                {selectedActivities.length === 0 ? (
-                  <div className="text-[9.5px] font-bold text-slate-500 dark:text-slate-400 text-center py-6 border border-dashed border-slate-200 dark:border-slate-700 rounded-xl">
-                    No activity claims logged. Add claims in Guide or form below.
-                  </div>
-                ) : (
-                  selectedActivities.map((act) => {
-                    const details = KTU_ACTIVITIES[act.activityCode];
-                    return (
-                      <div key={act.id} className="p-2.5 rounded-xl bg-white/60 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.04] flex items-center justify-between text-[9px] text-zinc-300">
-                        <div className="truncate pr-2">
-                          <span className="font-bold text-slate-900 dark:text-white font-mono">{act.activityCode}</span>
-                          {act.level && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.level}]</span>}
-                          {act.quantity && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.quantity} units]</span>}
-                          <span className="block text-[8px] text-slate-500 dark:text-slate-400 truncate">{details?.name}</span>
-                        </div>
-                        <div className="flex items-center gap-2 shrink-0">
-                          <span className="font-bold text-emerald-500 font-mono">+{act.points} pts</span>
-                          <button
-                            onClick={() => handleDeleteActivity(act.id)}
-                            className="text-slate-500 dark:text-slate-400 hover:text-rose-500 cursor-pointer p-0.5 active:scale-90 transition-all"
-                          >
-                            <Trash2 className="w-3.5 h-3.5" />
-                          </button>
-                        </div>
-                      </div>
-                    );
-                  })
-                )}
-              </div>
-
-              {/* Add activity form */}
-              <div className="p-3 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-white/50 dark:bg-slate-900/30 space-y-2 text-[9px]">
-                <div className="flex justify-between items-center pb-1 border-b border-slate-100 dark:border-white/[0.03]">
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Add New Claim Form</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[9px] text-slate-500 font-semibold">Target Type:</span>
-                    <select
-                      value={studentType}
-                      onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
-                      className="bg-transparent border-none text-[9px] font-bold text-slate-800 dark:text-slate-200 focus:outline-none cursor-pointer p-0"
-                    >
-                      <option value="regular">Regular</option>
-                      <option value="lateral">Lateral</option>
-                      <option value="pwd">PwD Mode</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-3 gap-2">
-                  <select
-                    value={actSelGroup}
-                    onChange={(e) => handleGroupSelect(e.target.value as "I" | "II" | "III")}
-                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono cursor-pointer"
-                  >
-                    <option value="I">Group I</option>
-                    <option value="II">Group II</option>
-                    <option value="III">Group III</option>
-                  </select>
-                  
-                  <select
-                    value={actSelCode}
-                    onChange={(e) => handleCodeSelect(e.target.value)}
-                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 col-span-2 text-slate-900 dark:text-white font-mono cursor-pointer"
-                  >
-                    {(() => {
-                      const group = KTU_ACTIVITY_GROUPS.find(g => g.id === actSelGroup);
-                      return group
-                        ? group.categories.flatMap(cat => 
-                            cat.activities.map(code => (
-                              <option key={code} value={code}>{code} - {KTU_ACTIVITIES[code]?.name.slice(0, 32)}...</option>
-                            ))
-                          )
-                        : null;
-                    })()}
-                  </select>
-                </div>
-
-                {/* Quantities/Levels if required */}
-                {(() => {
-                  const details = KTU_ACTIVITIES[actSelCode];
-                  if (!details) return null;
-                  return (
-                    <div className="grid grid-cols-2 gap-2 pt-1">
-                      {details.type === "level" && details.levels && (
-                        <select
-                          value={actSelLevel}
-                          onChange={(e) => handleLevelSelect(e.target.value)}
-                          className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white cursor-pointer"
-                        >
-                          {Object.keys(details.levels).map(lvl => (
-                            <option key={lvl} value={lvl}>{lvl} ({details.levels?.[lvl]} pts)</option>
-                          ))}
-                        </select>
-                      )}
-                      {details.type === "count" && (
-                        <input
-                          type="number"
-                          min="1"
-                          placeholder="Quantity"
-                          value={actSelQuantity}
-                          onChange={(e) => handleQuantitySelect(Number(e.target.value))}
-                          className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center font-bold"
-                        />
-                      )}
-                      {details.type === "input" && (
-                        <input
-                          type="number"
-                          placeholder={`Points (max ${details.maxPoints})`}
-                          value={actSelPoints}
-                          onChange={(e) => setActSelPoints(Number(e.target.value))}
-                          className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center font-bold"
-                        />
-                      )}
-                      <button
-                        onClick={handleAddActivity}
-                        className="bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 font-bold border border-blue-500/20 rounded-2xl py-2 cursor-pointer active:scale-[0.98] transition-all col-span-2 md:col-span-1"
-                      >
-                        Add Activity
-                      </button>
-                    </div>
-                  );
-                })()}
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  };
-
-  const renderBacklogTracker = () => {
     const handleAddBacklog = () => {
       if (!backlogCode.trim() || !backlogName.trim()) return;
       const newBacklog = {
@@ -3642,106 +3191,455 @@ export default function ToolsPage() {
       localStorage.setItem("ktunode_tools_backlogs", JSON.stringify(updated));
     };
 
+    // Activity filtering
+    const query = activitySearchQuery.toLowerCase().trim();
+    const filtered = Object.values(KTU_ACTIVITIES).filter(act => {
+      const matchesGroup = activityGuideGroup === "All" || act.code.startsWith(activityGuideGroup === "I" ? "1" : activityGuideGroup === "II" ? "2" : "3");
+      const matchesQuery = !query || 
+        act.code.includes(query) || 
+        act.name.toLowerCase().includes(query) || 
+        (act.desc && act.desc.toLowerCase().includes(query)) ||
+        act.proof.toLowerCase().includes(query);
+      return matchesGroup && matchesQuery;
+    });
+
+    const subTabs = [
+      { id: "activity" as const, label: "Activity Points", icon: <Award className="w-3.5 h-3.5" />, badge: `${totalActivityPoints}/${calculatedPoints.totalRequired}` },
+      { id: "credits" as const, label: "Credit Auditor", icon: <ShieldCheck className="w-3.5 h-3.5" />, badge: `${earned}/${limit}` },
+      { id: "backlogs" as const, label: "Backlogs", icon: <AlertTriangle className="w-3.5 h-3.5" />, badge: backlogSubjects.length > 0 ? `${backlogSubjects.length}` : undefined },
+    ];
+
     return (
-      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
-        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
-              <AlertTriangle className="w-5 h-5" />
+      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden">
+        {/* Unified Header */}
+        <div className="px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500/15 to-teal-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                <Award className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-50">Graduation Runway</h3>
+                <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">
+                  Activity points, credit checks & backlog tracking
+                </span>
+              </div>
             </div>
-            <div>
-              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Backlog Tracker</h3>
-              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">{backlogSubjects.length} backlog{backlogSubjects.length !== 1 ? "s" : ""} tracked</span>
+
+            {/* Sub-tab pills */}
+            <div className="flex items-center bg-slate-100/80 dark:bg-[#262b33] p-0.5 rounded-xl border border-slate-200/40 dark:border-[#363c46] self-start sm:self-center">
+              {subTabs.map(tab => (
+                <button
+                  key={tab.id}
+                  onClick={() => setGradSubTab(tab.id)}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer active:scale-95 ${
+                    gradSubTab === tab.id
+                      ? "bg-white dark:bg-[#2a2f38] text-blue-600 dark:text-blue-400 shadow-sm"
+                      : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
+                  }`}
+                >
+                  {tab.icon}
+                  <span className="hidden sm:inline">{tab.label}</span>
+                  {tab.badge && (
+                    <span className={`text-[8px] font-black px-1.5 py-0.5 rounded-md font-mono ${
+                      gradSubTab === tab.id
+                        ? "bg-blue-500/10 text-blue-600 dark:text-blue-400"
+                        : "bg-slate-200/60 dark:bg-[#1a1f27]/60 text-slate-500 dark:text-slate-400"
+                    }`}>{tab.badge}</span>
+                  )}
+                </button>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Backlog list */}
-        <div className="space-y-2 max-h-[200px] overflow-y-auto pr-1">
-          {backlogSubjects.length === 0 ? (
-            <div className="text-[11px] text-slate-400 text-center py-6 border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-xl">
-              No backlogs logged. Add failed subjects below to track clearance.
-            </div>
-          ) : (
-            backlogSubjects.map(bl => (
-              <div key={bl.id} className="p-3.5 rounded-2xl bg-slate-50/45 dark:bg-slate-900/10 border border-slate-200/50 dark:border-slate-800/40 flex items-center justify-between gap-2 hover:border-slate-350 dark:hover:border-slate-700/65 transition-all duration-300">
-                <div className="min-w-0">
-                  <span className="text-[11px] font-bold text-slate-900 dark:text-white font-mono block">{bl.code}</span>
-                  <span className="text-[10px] text-slate-500 dark:text-slate-400 truncate block">{bl.name} • S{bl.semester} • {bl.attempts} attempt{bl.attempts !== 1 ? "s" : ""}</span>
+        {/* â•â•â•â•â•â•â• ACTIVITY POINTS TAB â•â•â•â•â•â•â• */}
+        {gradSubTab === "activity" && (
+          <div>
+            {/* Score Overview + Group Breakdown */}
+            <div className="px-5 py-4 border-b border-slate-200/50 dark:border-white/[0.05]">
+              <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+                {/* Total Score */}
+                <div className="sm:col-span-3 text-center sm:text-left">
+                  <div className="flex items-baseline gap-1.5 justify-center sm:justify-start">
+                    <span className="text-3xl font-black text-slate-900 dark:text-white tabular-nums leading-none">
+                      {totalActivityPoints}
+                    </span>
+                    <span className="text-xs font-bold text-slate-400 dark:text-slate-500">/ {calculatedPoints.totalRequired}</span>
+                  </div>
+                  <div className="mt-2">
+                    <div className="h-2 bg-slate-200 dark:bg-[#262b33] rounded-full overflow-hidden">
+                      <div 
+                        className={`h-full rounded-full transition-all duration-500 ${
+                          calculatedPoints.isQualified ? "bg-emerald-500" : totalActivityPoints >= calculatedPoints.totalRequired * 0.5 ? "bg-blue-500" : "bg-amber-500"
+                        }`}
+                        style={{ width: `${Math.min(100, (totalActivityPoints / calculatedPoints.totalRequired) * 100)}%` }}
+                      />
+                    </div>
+                    <div className="text-[9px] font-bold mt-1">
+                      {calculatedPoints.isQualified ? (
+                        <span className="text-emerald-500 flex items-center gap-0.5 justify-center sm:justify-start"><CheckCircle2 className="w-3 h-3" /> Qualified for graduation</span>
+                      ) : (
+                        <span className="text-amber-500">{calculatedPoints.totalRequired - totalActivityPoints} pts to go</span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="mt-2">
+                    <select
+                      value={studentType}
+                      onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
+                      className="bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-[9px] font-bold text-slate-700 dark:text-slate-300 focus:outline-none cursor-pointer w-full"
+                    >
+                      <option value="regular">Regular (100 pts)</option>
+                      <option value="lateral">Lateral (75 pts)</option>
+                      <option value="pwd">PwD (50 pts)</option>
+                    </select>
+                  </div>
                 </div>
-                <div className="flex items-center gap-1.5 shrink-0">
-                  <select
-                    value={bl.status}
-                    onChange={(e) => handleStatusChange(bl.id, e.target.value as 'pending' | 'cleared' | 'registered')}
-                    className={`px-2 py-1 rounded-lg border text-[9px] font-bold cursor-pointer ${
-                      bl.status === "cleared" ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/20"
-                      : bl.status === "registered" ? "bg-blue-500/10 text-blue-500 border-blue-500/20"
-                      : "bg-amber-500/10 text-amber-500 border-amber-500/20"
-                    }`}
-                  >
-                    <option value="pending">Pending</option>
-                    <option value="registered">Registered</option>
-                    <option value="cleared">Cleared</option>
-                  </select>
-                  <button onClick={() => handleDeleteBacklog(bl.id)} className="text-slate-400 hover:text-rose-500 p-0.5 cursor-pointer">
-                    <Trash2 className="w-3.5 h-3.5" />
-                  </button>
+
+                {/* Group I, II, III Cards */}
+                <div className="sm:col-span-9 grid grid-cols-3 gap-3">
+                  {[
+                    { id: "1", name: "Group I", subtitle: "Sports, Arts & Community", capped: calculatedPoints.group1Capped, color: "emerald" },
+                    { id: "2", name: "Group II", subtitle: "Technical & Professional", capped: calculatedPoints.group2Capped, color: "blue" },
+                    { id: "3", name: "Group III", subtitle: "Entrepreneurship & MOOC", capped: calculatedPoints.group3Capped, color: "violet" }
+                  ].map(grp => {
+                    const pct = Math.min(100, (grp.capped / 60) * 100);
+                    const colors = {
+                      emerald: { bar: "bg-emerald-500", text: "text-emerald-500", bg: "bg-emerald-500/[0.04] dark:bg-emerald-500/[0.07]", border: "border-emerald-500/10 dark:border-emerald-500/15" },
+                      blue: { bar: "bg-blue-500", text: "text-blue-500", bg: "bg-blue-500/[0.04] dark:bg-blue-500/[0.07]", border: "border-blue-500/10 dark:border-blue-500/15" },
+                      violet: { bar: "bg-violet-500", text: "text-violet-500", bg: "bg-violet-500/[0.04] dark:bg-violet-500/[0.07]", border: "border-violet-500/10 dark:border-violet-500/15" },
+                    }[grp.color]!;
+                    return (
+                      <div key={grp.id} className={`p-3 rounded-xl border ${colors.border} ${colors.bg} space-y-2`}>
+                        <div className="flex justify-between items-center">
+                          <span className="text-[9px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">{grp.name}</span>
+                          <span className={`text-[10px] font-black font-mono tabular-nums ${colors.text}`}>{grp.capped}/60</span>
+                        </div>
+                        <div className="h-2 bg-slate-200/60 dark:bg-[#262b33] rounded-full overflow-hidden">
+                          <div className={`h-full rounded-full transition-all duration-500 ${colors.bar}`} style={{ width: `${pct}%` }} />
+                        </div>
+                        <div className="text-[8px] text-slate-400 dark:text-slate-500 font-medium leading-snug">{grp.subtitle}</div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            ))
-          )}
-        </div>
-
-        {/* Add backlog form */}
-        <div className="p-3 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-white/50 dark:bg-slate-900/30 space-y-2">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 block">Add Backlog</span>
-          <div className="grid grid-cols-3 gap-2">
-            <input
-              type="text"
-              placeholder="Code"
-              value={backlogCode}
-              onChange={(e) => setBacklogCode(e.target.value)}
-              className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-2 py-1 text-[10px] font-bold text-slate-900 dark:text-white uppercase placeholder-slate-400 focus:outline-none"
-            />
-            <input
-              type="text"
-              placeholder="Subject Name"
-              value={backlogName}
-              onChange={(e) => setBacklogName(e.target.value)}
-              className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-2 py-1 col-span-2 text-[10px] font-bold text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none"
-            />
-          </div>
-          <div className="flex gap-2 items-center">
-            <div className="flex items-center gap-1.5">
-              <span className="text-[9px] text-slate-500 uppercase tracking-widest">Sem:</span>
-              <select
-                value={backlogSemester}
-                onChange={(e) => setBacklogSemester(Number(e.target.value))}
-                className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-[10px] font-bold text-slate-900 dark:text-white focus:outline-none cursor-pointer font-mono"
-              >
-                {[1, 2, 3, 4, 5, 6, 7, 8].map(s => (
-                  <option key={s} value={s}>S{s}</option>
-                ))}
-              </select>
             </div>
-            <button
-              onClick={handleAddBacklog}
-              className="flex-1 py-1 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 flex items-center justify-center gap-1"
-            >
-              <Plus className="w-3 h-3" /> Log Backlog
-            </button>
+
+            {/* Claims pills */}
+            {selectedActivities.length > 0 && (
+              <div className="px-5 py-3 border-b border-slate-200/50 dark:border-white/[0.05]">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase">Your Claims ({selectedActivities.length})</span>
+                  <span className={`text-[10px] font-black font-mono ${tallyMeta.textClass}`}>{totalActivityPoints} pts</span>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {selectedActivities.map((act) => {
+                    const groupNum = act.activityCode.split('.')[0];
+                    const pillColor = groupNum === "1" 
+                      ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/15" 
+                      : groupNum === "2" 
+                        ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15" 
+                        : "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/15";
+                    return (
+                      <div key={act.id} className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-[9px] font-bold ${pillColor}`}>
+                        <span className="font-mono">{act.activityCode}</span>
+                        {act.level && <span className="opacity-70">({act.level})</span>}
+                        <span className="font-black">+{act.points}</span>
+                        <button
+                          onClick={() => handleDeleteActivity(act.id)}
+                          className="text-current opacity-40 hover:opacity-100 cursor-pointer ml-0.5 transition-opacity"
+                        >
+                          <X className="w-3 h-3" />
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Search + Group Filter */}
+            <div className="px-5 pt-4 pb-2">
+              <div className="flex gap-2">
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                  <input
+                    type="text"
+                    placeholder="Search activities (e.g. NSS, sports, certificate)..."
+                    value={activitySearchQuery}
+                    onChange={(e) => setActivitySearchQuery(e.target.value)}
+                    className="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl text-[11px] font-medium text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-all"
+                  />
+                </div>
+                <div className="flex items-center bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl p-0.5 shrink-0">
+                  {(["All", "I", "II", "III"] as const).map(grp => (
+                    <button
+                      key={grp}
+                      onClick={() => setActivityGuideGroup(grp)}
+                      className={`px-2.5 py-1.5 rounded-lg text-[9px] font-bold transition-all cursor-pointer active:scale-95 ${
+                        activityGuideGroup === grp
+                          ? "bg-white dark:bg-[#2a2f38] text-blue-600 dark:text-blue-400 shadow-sm"
+                          : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
+                      }`}
+                    >
+                      {grp}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Activity catalog */}
+            <div className="px-5 pb-5">
+              <div className="space-y-2 max-h-[360px] overflow-y-auto pr-1 scrollbar-thin">
+                {filtered.length === 0 ? (
+                  <div className="text-[11px] font-medium text-slate-400 text-center py-8 border border-dashed border-slate-200 dark:border-slate-700 rounded-xl">
+                    No activities match your search.
+                  </div>
+                ) : (
+                  filtered.map(act => {
+                    const claimsList = selectedActivities.filter(sa => sa.activityCode === act.code);
+                    const isClaimed = claimsList.length > 0;
+                    const claimedPoints = claimsList.reduce((acc, curr) => acc + curr.points, 0);
+                    const groupNum = act.code.split('.')[0];
+                    const groupBadge = groupNum === "1" 
+                      ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/15" 
+                      : groupNum === "2" 
+                        ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15" 
+                        : "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/15";
+                    const isInlineAddActive = inlineAddCode === act.code;
+
+                    return (
+                      <div key={act.code} className={`p-4 rounded-xl border transition-all duration-200 ${
+                        isClaimed 
+                          ? "bg-emerald-500/[0.03] dark:bg-emerald-500/[0.05] border-emerald-500/15 dark:border-emerald-500/15" 
+                          : "bg-slate-50 dark:bg-[#262b33] border-slate-200/60 dark:border-[#363c46] hover:border-slate-300 dark:hover:border-slate-500"
+                      }`}>
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <span className={`px-1.5 py-0.5 rounded-md text-[8px] font-bold border font-mono ${groupBadge}`}>
+                                {act.code}
+                              </span>
+                              <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                                Max {act.maxPoints} pts
+                              </span>
+                              {isClaimed && (
+                                <span className="px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/10 text-[8px] font-bold flex items-center gap-0.5">
+                                  <Check className="w-2.5 h-2.5" /> {claimedPoints} pts
+                                </span>
+                              )}
+                            </div>
+                            <h4 className="text-[11.5px] font-semibold text-slate-900 dark:text-slate-100 leading-snug mt-1.5">{act.name}</h4>
+                            {act.desc && <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed mt-0.5">{act.desc}</p>}
+                            <div className="flex items-center gap-1 mt-1.5 text-[9px] text-slate-400 dark:text-slate-500">
+                              <FileText className="w-3 h-3" />
+                              <span>Proof: <strong className="text-slate-600 dark:text-slate-300">{act.proof}</strong></span>
+                            </div>
+                          </div>
+
+                          {!isInlineAddActive && (
+                            <button
+                              onClick={() => {
+                                if (act.type === "fixed") { handleDirectAddFixed(act); } else { handleStartInlineAdd(act); }
+                              }}
+                              className="px-3 py-1.5 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 border border-blue-500/15 text-[9px] font-bold cursor-pointer transition-all flex items-center gap-1 active:scale-95 shrink-0"
+                            >
+                              <Plus className="w-3 h-3" /> Claim
+                            </button>
+                          )}
+                        </div>
+
+                        {/* Inline config */}
+                        {isInlineAddActive && (
+                          <div className="mt-3 p-3 rounded-xl bg-slate-100 dark:bg-[#1a1f27] border border-slate-200/60 dark:border-[#363c46] flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-fade-in">
+                            <div className="flex-1 space-y-1">
+                              <span className="text-[8px] font-bold text-slate-400 dark:text-slate-500 block uppercase tracking-wider">Configure:</span>
+                              {act.type === "level" && act.levels && (
+                                <select value={inlineSelLevel} onChange={(e) => setInlineSelLevel(e.target.value)} className="w-full bg-white dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-lg px-2 py-1.5 font-bold text-[10px] cursor-pointer text-slate-800 dark:text-slate-200 focus:outline-none">
+                                  {Object.keys(act.levels).map(lvl => (<option key={lvl} value={lvl}>{lvl} ({act.levels?.[lvl]} pts)</option>))}
+                                </select>
+                              )}
+                              {act.type === "count" && (
+                                <div className="flex items-center gap-2">
+                                  <input type="number" min="1" placeholder="Qty" value={inlineSelQuantity} onChange={(e) => setInlineSelQuantity(Math.max(1, Number(e.target.value)))} className="w-20 bg-white dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold font-mono text-[10px] focus:outline-none" />
+                                  <span className="text-[9px] text-slate-400">Ã— {act.pointsPerUnit || act.maxPoints} pts each</span>
+                                </div>
+                              )}
+                              {act.type === "input" && (
+                                <div className="flex items-center gap-2">
+                                  <input type="number" min="1" max={act.maxPoints} placeholder="Pts" value={inlineSelPoints} onChange={(e) => setInlineSelPoints(Math.min(act.maxPoints, Math.max(0, Number(e.target.value))))} className="w-20 bg-white dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold font-mono text-[10px] focus:outline-none" />
+                                  <span className="text-[9px] text-slate-400">pts (max {act.maxPoints})</span>
+                                </div>
+                              )}
+                            </div>
+                            <div className="flex items-center gap-1.5 shrink-0">
+                              <button onClick={() => setInlineAddCode(null)} className="px-3 py-1.5 rounded-lg bg-transparent border border-slate-200/60 dark:border-[#363c46] text-slate-500 hover:text-slate-700 dark:hover:text-white cursor-pointer text-[9px] font-bold transition-all active:scale-95">Cancel</button>
+                              <button onClick={() => handleConfirmInlineAdd(act)} className="px-4 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white cursor-pointer text-[9px] font-bold transition-all active:scale-95 shadow-sm">Confirm</button>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })
+                )}
+              </div>
+            </div>
           </div>
-        </div>
+        )}
+
+        {/* â•â•â•â•â•â•â• CREDIT AUDITOR TAB â•â•â•â•â•â•â• */}
+        {gradSubTab === "credits" && (
+          <div className="px-5 py-5 space-y-4">
+            {/* Target toggle */}
+            <div className="flex gap-2">
+              {([
+                { id: "s5" as const, label: "S5 Promotion Lock", need: 26 },
+                { id: "s7" as const, label: "S7 Promotion Lock", need: 52 }
+              ]).map(t => (
+                <button
+                  key={t.id}
+                  onClick={() => setProgressionTarget(t.id)}
+                  className={`flex-1 py-2 rounded-xl border text-[10px] font-bold transition-all cursor-pointer active:scale-[0.98] ${
+                    progressionTarget === t.id
+                      ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20"
+                      : "bg-slate-50 dark:bg-[#262b33] text-slate-500 dark:text-slate-400 border-slate-200/40 dark:border-[#363c46] hover:border-slate-300"
+                  }`}
+                >
+                  {t.label} (Need {t.need})
+                </button>
+              ))}
+            </div>
+
+            {/* Credit inputs */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {["s1", "s2", ...(progressionTarget === "s7" ? ["s3", "s4"] : [])].map((key) => (
+                <div key={key} className="space-y-1.5">
+                  <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">{key.toUpperCase()} Credits</label>
+                  <input
+                    type="number"
+                    min="0"
+                    max="22"
+                    value={progressionCredits[key as keyof typeof progressionCredits]}
+                    onChange={(e) => handleProgressionCreditChange(key as any, Number(e.target.value))}
+                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-2.5 text-center font-bold text-base text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-all"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Result box */}
+            <div className={`p-5 rounded-xl border text-center ${
+              passed
+                ? "bg-emerald-500/5 border-emerald-500/15"
+                : "bg-rose-500/5 border-rose-500/15"
+            }`}>
+              <div className={`text-3xl font-black tabular-nums leading-none ${passed ? "text-emerald-600 dark:text-emerald-400" : "text-rose-500"}`}>
+                {earned} <span className="text-base font-bold opacity-50">/ {limit} credits</span>
+              </div>
+              <div className={`text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5 justify-center mt-3 ${passed ? "text-emerald-600 dark:text-emerald-400" : "text-rose-500"}`}>
+                {passed ? <ShieldCheck className="w-4 h-4" /> : <ShieldAlert className="w-4 h-4" />}
+                {passed ? "Clear for Promotion âœ“" : `Year-Back Risk â€” ${limit - earned} credits short`}
+              </div>
+              <p className="text-[10px] text-slate-500 dark:text-slate-400 mt-2">
+                {progressionTarget === "s5" ? "S5 promotion" : "S7 promotion"} requires minimum <strong className="text-slate-700 dark:text-slate-300">{limit} credits</strong>.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* ——————— BACKLOG TRACKER TAB ——————— */}
+        {gradSubTab === "backlogs" && (
+          <div className="px-5 py-5 space-y-4">
+            {/* Backlog list */}
+            <div className="space-y-2 max-h-[280px] overflow-y-auto pr-0.5">
+              {backlogSubjects.length === 0 ? (
+                <div className="text-center py-10 border border-dashed border-slate-200/60 dark:border-[#363c46] rounded-xl">
+                  <AlertTriangle className="w-8 h-8 text-slate-300 dark:text-slate-500 mx-auto mb-2" />
+                  <div className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">No backlogs logged</div>
+                  <div className="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5">Add failed subjects below to track clearance progress.</div>
+                </div>
+              ) : (
+                backlogSubjects.map(bl => (
+                  <div key={bl.id} className="p-3.5 rounded-xl bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] flex items-center justify-between gap-3 hover:border-slate-300 dark:hover:border-slate-600 transition-all">
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[11px] font-bold text-slate-900 dark:text-white font-mono">{bl.code}</span>
+                        <span className="text-[9px] text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-[#1a1f27] px-1.5 py-0.5 rounded font-mono">S{bl.semester}</span>
+                      </div>
+                      <span className="text-[10px] text-slate-500 dark:text-slate-400 truncate block mt-0.5">{bl.name} • {bl.attempts} attempt{bl.attempts !== 1 ? "s" : ""}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <select
+                        value={bl.status}
+                        onChange={(e) => handleStatusChange(bl.id, e.target.value as 'pending' | 'cleared' | 'registered')}
+                        className={`px-2 py-1 rounded-lg border text-[9px] font-bold cursor-pointer ${
+                          bl.status === "cleared" ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/15"
+                          : bl.status === "registered" ? "bg-blue-500/10 text-blue-500 border-blue-500/15"
+                          : "bg-amber-500/10 text-amber-500 border-amber-500/15"
+                        }`}
+                      >
+                        <option value="pending">Pending</option>
+                        <option value="registered">Registered</option>
+                        <option value="cleared">Cleared</option>
+                      </select>
+                      <button onClick={() => handleDeleteBacklog(bl.id)} className="text-slate-400 hover:text-rose-500 p-1 cursor-pointer transition-colors">
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+
+            {/* Add backlog form */}
+            <div className="p-4 rounded-xl border border-slate-200/40 dark:border-[#363c46] bg-slate-50/50 dark:bg-[#262b33]/50 space-y-3">
+              <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-slate-400 dark:text-slate-500 block">Add Failed Subject</span>
+              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                <input
+                  type="text"
+                  placeholder="Code"
+                  value={backlogCode}
+                  onChange={(e) => setBacklogCode(e.target.value)}
+                  className="bg-white dark:bg-[#1e2228] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-2 text-[10px] font-bold text-slate-900 dark:text-white uppercase placeholder-slate-400 focus:outline-none sm:col-span-2"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject Name"
+                  value={backlogName}
+                  onChange={(e) => setBacklogName(e.target.value)}
+                  className="bg-white dark:bg-[#1e2228] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-2 col-span-2 sm:col-span-3 text-[10px] font-bold text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none"
+                />
+                <select
+                  value={backlogSemester}
+                  onChange={(e) => setBacklogSemester(Number(e.target.value))}
+                  className="bg-white dark:bg-[#1e2228] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-2 text-[10px] font-bold text-slate-900 dark:text-white focus:outline-none cursor-pointer font-mono"
+                >
+                  {[1, 2, 3, 4, 5, 6, 7, 8].map(s => (
+                    <option key={s} value={s}>S{s}</option>
+                  ))}
+                </select>
+              </div>
+              <button
+                onClick={handleAddBacklog}
+                className="w-full py-2 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 border border-blue-500/15 text-[10px] font-bold transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
+              >
+                <Plus className="w-3.5 h-3.5" /> Log Backlog
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     );
   };
 
-  const renderStudySequencer = () => {
+
+  const renderStudyHub = () => {
     const activeCode = plannerActiveSubject.code;
     const activeName = plannerActiveSubject.name;
-    // Dynamic module count from syllabus data (fallback to 5)
-    const subjectData = subjects.find(s => s.code === activeCode);
-    const moduleCount = subjectData?.modules?.length || 5;
+    const moduleCount = 4;
     const defaultToggles = Array(moduleCount).fill(false);
     const moduleToggles = mtMilestones[activeCode] || defaultToggles;
 
@@ -3750,6 +3648,10 @@ export default function ToolsPage() {
       return acc;
     }, []);
     const untouchedCount = untouchedIndices.length;
+    const doneCount = moduleCount - untouchedCount;
+
+    // Find first untouched module for "current" highlighting
+    const currentModuleIdx = untouchedIndices.length > 0 ? untouchedIndices[0] : -1;
 
     // Urgency classification
     const urgencyLevel = mtCramHours > 48 ? "calm" : mtCramHours > 12 ? "focused" : "critical";
@@ -3758,7 +3660,8 @@ export default function ToolsPage() {
     if (untouchedCount === 0) {
       advice = `All ${moduleCount} modules fully prepared! You are in the safest zone for an S grade. Dedicate time to reviewing old papers & coding structures.`;
     } else if (mtCramHours >= untouchedCount * 2.5) {
-      advice = `With ${mtCramHours} hours remaining, you can cover all ${untouchedCount} remaining modules. Dedicate ~2.5 hours to each untouched module (Module ${untouchedIndices.map(i => i + 1).join(", ")}) and leave the last 1-2 hours for key formula sheets.`;
+      const perModule = Math.floor((mtCramHours / untouchedCount) * 10) / 10;
+      advice = `With ${untouchedCount} modules untouched, dedicate ~${perModule}h each to Mod ${untouchedIndices.map(i => i + 1).join(" & ")}. Leave the last 2h for formula sheets and past papers.`;
     } else if (mtCramHours < untouchedCount * 1.5 && untouchedCount > 1) {
       const skipMod = untouchedIndices[untouchedIndices.length - 1] + 1;
       const focusMods = untouchedIndices.slice(0, -1).map(i => i + 1).join(", ");
@@ -3766,6 +3669,13 @@ export default function ToolsPage() {
     } else {
       advice = `With ${mtCramHours} hours remaining and ${untouchedCount} modules untouched, prioritize Module ${untouchedIndices[0] + 1} (usually carries 20% fundamental weight) before attempting the others.`;
     }
+
+    // Alert text based on urgency + hours
+    const alertTitle = urgencyLevel === "critical"
+      ? `${mtCramHours}h left — prioritise Mod ${currentModuleIdx >= 0 ? currentModuleIdx + 1 : "?"} first (20% weight), then Mod ${untouchedIndices.length > 1 ? untouchedIndices[1] + 1 : "—"}.`
+      : untouchedCount === 0
+        ? `All modules done! Revise formulas & past papers.`
+        : `${mtCramHours}h left — prioritise Mod ${currentModuleIdx >= 0 ? currentModuleIdx + 1 : "?"} first (20% weight), then Mod ${untouchedIndices.length > 1 ? untouchedIndices[1] + 1 : "—"}.`;
 
     const toggleModule = (idx: number) => {
       const currentArray = [...moduleToggles];
@@ -3777,527 +3687,451 @@ export default function ToolsPage() {
       setMtMilestones(updated);
     };
 
-    const handleShareCramStrategy = () => {
-      let msg = `My Cram Strategy for ${activeName} (${activeCode}):\n`;
-      msg += `- Preparation: ${moduleCount - untouchedCount}/${moduleCount} modules done\n`;
-      msg += `- Cram Window: ${mtCramHours} hours left\n`;
-      msg += `- Recom: ${advice}\n`;
-      msg += "\nBuild your cram strategy on KTU Node!";
-      navigator.clipboard.writeText(msg);
-      triggerNotification("Cram strategy copied to clipboard!");
-    };
-
-    return (
-      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
-        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
-              <Notebook className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">11th-Hour Study Sequencer</h3>
-              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Modules checklist & strategic advice</span>
-            </div>
-          </div>
-
-          <select
-            value={plannerActiveSubject.code}
-            onChange={(e) => {
-              const selected = activeSemesterSubjects.find(s => s.code === e.target.value) || { code: e.target.value, name: "Selected Course" };
-              setPlannerActiveSubject(selected);
-            }}
-            className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-[10px] font-black text-slate-900 dark:text-white focus:outline-none cursor-pointer"
-          >
-            {activeSemesterSubjects.map(sub => (
-              <option key={sub.code} value={sub.code}>{sub.code}</option>
-            ))}
-          </select>
-        </div>
-
-        {/* Modules Checklist */}
-        <div className="space-y-2">
-          <span className="text-[9.5px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block">Prepared Syllabus Modules</span>
-          <div className={`grid gap-2 ${moduleCount <= 5 ? "grid-cols-5" : moduleCount === 6 ? "grid-cols-6" : moduleCount === 7 ? "grid-cols-7" : "grid-cols-8"}`}>
-            {Array.from({ length: moduleCount }, (_, i) => i).map((idx) => {
-              const num = idx + 1;
-              const isDone = moduleToggles[idx];
-              return (
-                <button
-                  key={num}
-                  onClick={() => toggleModule(idx)}
-                  className={`py-2 rounded-xl border text-[9.5px] font-bold uppercase transition-all cursor-pointer text-center active:scale-95 ${
-                    isDone
-                      ? "bg-emerald-500/10 text-emerald-450 border-emerald-500/20"
-                      : "bg-slate-50 dark:bg-slate-900 text-zinc-550 border-slate-200/40 dark:border-white/[0.04] hover:bg-white/[0.02]"
-                  }`}
-                >
-                  Mod {num}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Cram timer slider */}
-        <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-slate-50/50 dark:bg-white/50 dark:bg-slate-900/30 space-y-2.5">
-          <div className="flex justify-between items-center text-xs font-bold text-zinc-350">
-            <span>Remaining study window time</span>
-            <span className="text-blue-600 dark:text-blue-400 font-bold font-mono">{mtCramHours} Hours</span>
-          </div>
-          <input
-            type="range"
-            min="1"
-            max="24"
-            value={mtCramHours}
-            onChange={(e) => setMtCramHours(Number(e.target.value))}
-            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-zinc-800"
-          />
-        </div>
-
-        {/* Advisor recommendation text */}
-        <div className="p-4 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-slate-50/50 dark:bg-white/60 dark:bg-slate-900/40 space-y-2">
-          {urgencyLevel === "critical" ? (
-            <div className="px-2.5 py-1.5 rounded-xl bg-rose-500/10 text-[9px] font-bold text-rose-500 border border-rose-500/20 flex items-center gap-1.5 animate-pulse">
-              <AlertCircle className="w-3.5 h-3.5 text-rose-500" />
-              <span>Critical: Only {mtCramHours}h remaining — focus on high-yield modules only</span>
-            </div>
-          ) : (
-            <div className="px-2.5 py-1.5 rounded-xl bg-amber-500/10 text-[9px] font-bold text-amber-500 border border-amber-500/20 flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-              <span>Focused mode: {mtCramHours}h study window — prioritize untouched modules</span>
-            </div>
-          )}
-          <p className="text-[10px] leading-relaxed text-slate-600 dark:text-zinc-300 font-medium font-sans">
-            {advice}
-          </p>
-        </div>
-
-        <button
-          onClick={handleShareCramStrategy}
-          className="w-full py-2.5 rounded-xl bg-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02] text-slate-600 dark:text-slate-400 border border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
-        >
-          <Share2 className="w-3.5 h-3.5" /> Share Cram Strategy
-        </button>
-      </div>
-    );
-  };
-
-  const renderRevisionHub = () => {
     const wordCount = notepadText.trim() ? notepadText.trim().split(/\s+/).length : 0;
 
     const handleDownloadNotes = () => {
       const element = document.createElement("a");
       const file = new Blob([notepadText], { type: "text/plain" });
       element.href = URL.createObjectURL(file);
-      element.download = `ktu_study_notes_s${sem}.txt`;
+      element.download = `ktu_study_notes_${activeCode}_s${sem}.txt`;
       document.body.appendChild(element);
       element.click();
       document.body.removeChild(element);
     };
 
+    const handleGenerateCramStrategy = () => {
+      let msg = `I'm studying for "${activeName}" (${activeCode}) and need a personalized cram strategy.\n\n`;
+      msg += `Current status:\n`;
+      msg += `• ${doneCount}/${moduleCount} modules completed (Modules: ${moduleToggles.map((d, i) => `Mod ${i+1}: ${d ? "✓ done" : "⬜ pending"}`).join(", ")})\n`;
+      msg += `• Study window remaining: ${mtCramHours} hours\n`;
+      msg += `• Urgency level: ${urgencyLevel}\n`;
+      if (notepadText.trim()) {
+        msg += `\nMy study notes so far:\n${notepadText.trim().slice(0, 500)}\n`;
+      }
+      msg += `\nPlease give me a step-by-step cram plan with time allocations for each remaining module, key topics to focus on, and exam tips.`;
+      navigator.clipboard.writeText(msg);
+      triggerNotification("Cram strategy prompt copied — paste into chat for personalized advice!");
+    };
+
     return (
-      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-4 sm:p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4 relative overflow-hidden w-full">
-        <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-blue-500/[0.02] blur-[40px] pointer-events-none" />
+      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden w-full">
         
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/60 dark:border-white/[0.06]">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400 animate-pulse">
-              <Sparkles className="w-4.5 h-4.5" />
+        {/* Ã¢â€â‚¬Ã¢â€â‚¬ UNIFIED HEADER Ã¢â€â‚¬Ã¢â€â‚¬ */}
+        <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/15 to-indigo-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+              <Notebook className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">11th-Hour Revision Hub</h3>
-              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Focus, recall, & compliance checks</span>
+              <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-50">11th-hour study hub</h3>
+              <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Sequencer, focus timer & exam tools</span>
             </div>
           </div>
-
-          {/* Tab switcher */}
-          <div className="flex items-center flex-wrap gap-1 bg-white/[0.03] p-1 rounded-xl border border-slate-200/40 dark:border-white/[0.04] self-start sm:self-auto">
-            {[
-              { id: "pomodoro", label: "Timer" },
-              { id: "flashcards", label: "Recall" },
-              { id: "checklist", label: "Checklist" },
-              { id: "gamble", label: "Gamble" },
-              { id: "splits", label: "Splits" },
-              { id: "notepad", label: "Notes" }
-            ].map(tab => (
-              <button
-                key={tab.id}
-                onClick={() => setStudyConsoleTab(tab.id as typeof studyConsoleTab)}
-                className={`px-2 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 ${
-                  studyConsoleTab === tab.id
-                    ? "bg-white/10 text-blue-600 dark:text-blue-400 border border-white/[0.08]"
-                    : "text-slate-500 dark:text-slate-400 hover:text-zinc-300"
-                }`}
-              >
-                {tab.label}
-              </button>
+          <select
+            value={plannerActiveSubject.code}
+            onChange={(e) => {
+              const selected = activeSemesterSubjects.find(s => s.code === e.target.value) || { code: e.target.value, name: "Selected Course" };
+              setPlannerActiveSubject(selected);
+            }}
+            className="bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-1.5 text-[10px] font-bold text-slate-800 dark:text-slate-200 focus:outline-none cursor-pointer max-w-[180px] sm:max-w-[240px] truncate"
+          >
+            {activeSemesterSubjects.map(sub => (
+              <option key={sub.code} value={sub.code}>{sub.name || sub.code}</option>
             ))}
-          </div>
+          </select>
         </div>
 
-        {/* Tab 1: Pomodoro */}
-        {studyConsoleTab === "pomodoro" && (
-          <div className="space-y-4 flex flex-col items-center">
-            {/* Circle progress */}
-            <div className="relative w-28 h-28 flex items-center justify-center">
-              <svg className="w-full h-full transform -rotate-90">
-                <circle
-                  cx="56"
-                  cy="56"
-                  r="48"
-                  className="stroke-slate-100 dark:stroke-zinc-800"
-                  strokeWidth="3.5"
-                  fill="transparent"
-                />
-                <circle
-                  cx="56"
-                  cy="56"
-                  r="48"
-                  className="stroke-violet-500 transition-all duration-1000"
-                  strokeWidth="4.5"
-                  fill="transparent"
-                  strokeDasharray={301.59}
-                  strokeDashoffset={301.59 - (301.59 * (pomodoroTime / (pomodoroMode === "focus" ? 1500 : 300)))}
-                />
-              </svg>
-              <div className="absolute flex flex-col items-center text-center">
-                <span className="font-mono text-xl font-bold text-slate-900 dark:text-white tabular-nums">
-                  {Math.floor(pomodoroTime / 60)}:{(pomodoroTime % 60).toString().padStart(2, "0")}
-                </span>
-                <span className="text-[7.5px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
-                  <span className="flex items-center gap-1">{pomodoroMode === "focus" ? <Flame className="w-3.5 h-3.5 text-orange-500" /> : <Coffee className="w-3.5 h-3.5 text-blue-400" />}{pomodoroMode === "focus" ? "Focus" : "Break"}</span>
-                </span>
-              </div>
-            </div>
-
-            {/* Play/Pause/Reset Controls */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setPomodoroActive(!pomodoroActive)}
-                className="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-600 dark:text-blue-400 border border-blue-500/30 rounded-xl text-[9px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
-              >
-                {pomodoroActive ? "Pause" : "Start"}
-              </button>
-              <button
-                onClick={() => {
-                  setPomodoroActive(false);
-                  setPomodoroTime(pomodoroMode === "focus" ? 1500 : 300);
-                }}
-                className="w-8 h-8 rounded-xl bg-white/[0.03] border border-slate-200/60 dark:border-white/[0.06] flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95 transition-all"
-                title="Reset timer"
-              >
-                <RotateCcw className="w-3.5 h-3.5" />
-              </button>
-              <button
-                onClick={() => {
-                  setPomodoroActive(false);
-                  const nextMode = pomodoroMode === "focus" ? "break" : "focus";
-                  setPomodoroMode(nextMode);
-                  setPomodoroTime(nextMode === "focus" ? 1500 : 300);
-                }}
-                className="px-3 py-2 bg-white/[0.03] border border-slate-200/60 dark:border-white/[0.06] rounded-xl text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95 transition-all"
-              >
-                Skip
-              </button>
-            </div>
-
-            {/* Soundscapes */}
-            <div className="w-full space-y-3.5 border-t border-slate-200 dark:border-slate-800/60 pt-4.5">
-              <span className="text-[8px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block text-center">
-                Study Ambient Soundscapes
-              </span>
-              <div className="grid grid-cols-4 gap-1.5 animate-fade-in">
-                {[
-                  { id: "rain", label: "Rain", icon: CloudRain },
-                  { id: "fire", label: "Fire", icon: Flame },
-                  { id: "cafe", label: "Cafe", icon: Coffee },
-                  { id: "lofi", label: "Beat", icon: Music }
-                ].map(snd => {
-                  const SndIcon = snd.icon;
+        {/* Ã¢â€â‚¬Ã¢â€â‚¬ TOP HALF: SEQUENCER Ã¢â€â‚¬Ã¢â€â‚¬ */}
+        <div className="px-5 py-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+            {/* Left: Modules + Slider */}
+            <div className="space-y-3">
+              <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase block">Syllabus Modules</span>
+              <div className="grid grid-cols-4 gap-2">
+                {Array.from({ length: moduleCount }, (_, i) => i).map((idx) => {
+                  const num = idx + 1;
+                  const isDone = moduleToggles[idx];
+                  const isCurrent = idx === currentModuleIdx;
                   return (
                     <button
-                      key={snd.id}
-                      onClick={() => setSelectedLofiSound(selectedLofiSound === snd.id ? null : snd.id)}
-                      className={`py-1.5 rounded-lg border text-[8px] font-bold transition-all cursor-pointer flex flex-col items-center active:scale-[0.98] ${
-                        selectedLofiSound === snd.id
-                          ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20"
-                          : "bg-transparent text-slate-500 dark:text-slate-400 border-slate-200/60 dark:border-white/[0.06]"
+                      key={num}
+                      onClick={() => toggleModule(idx)}
+                      className={`py-2.5 rounded-xl text-[10px] font-bold transition-all cursor-pointer text-center active:scale-95 ${
+                        isDone
+                          ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-2 border-emerald-500/25"
+                          : isCurrent
+                            ? "bg-slate-100 dark:bg-[#2a2f38] text-slate-900 dark:text-white border-2 border-blue-500/60"
+                            : "bg-slate-50/50 dark:bg-[#262b33]/40 text-slate-400 dark:text-slate-500 border border-slate-200/40 dark:border-[#2a2f38] opacity-60 hover:opacity-80"
                       }`}
                     >
-                      <SndIcon className="w-4 h-4 mb-0.5" />
-                      <span className="text-[6.5px] font-black uppercase tracking-wider text-zinc-405">{snd.label}</span>
+                      Mod {num}
                     </button>
                   );
                 })}
               </div>
-            </div>
-          </div>
-        )}
 
-        {/* Tab 2: Flashcards */}
-        {studyConsoleTab === "flashcards" && (
-          <div className="space-y-3">
-            {flashcardsList.length === 0 ? (
-              <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 text-center py-6">
-                Select a theory subject on the left to load flashcards.
-              </div>
-            ) : (
-              <div className="space-y-3 animate-fade-in">
-                <div className="flex justify-between items-center text-[9px] font-bold text-slate-500 dark:text-slate-400 px-1">
-                  <span>Card {activeCardIndex + 1} of {flashcardsList.length}</span>
-                  <span className="bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2 py-0.5 rounded-lg border border-blue-500/20">
-                    Retained: {flashcardScores.known} / {flashcardScores.total} Cards
-                  </span>
-                </div>
-
-                <div
-                  onClick={() => setIsCardFlipped(!isCardFlipped)}
-                  className="h-28 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-zinc-955/20 p-3.5 flex flex-col items-center justify-center text-center cursor-pointer select-none relative overflow-hidden group hover:bg-zinc-955/30 active:scale-[0.99] transition-all"
-                >
-                  <div className="absolute top-1.5 left-2 px-1.5 py-0.5 rounded bg-white/5 text-[7px] font-bold uppercase text-slate-500 dark:text-slate-400">
-                    {isCardFlipped ? "Answer (Click to flip back)" : "Question (Click to reveal)"}
-                  </div>
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={isCardFlipped ? "ans" : "que"}
-                      initial={{ opacity: 0, y: 3 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -3 }}
-                      transition={{ duration: 0.12 }}
-                      className="space-y-1 px-2"
-                    >
-                      <p className={`font-semibold leading-normal text-zinc-200 ${isCardFlipped ? "text-[9.5px]" : "text-xs font-bold"}`}>
-                        {isCardFlipped ? flashcardsList[activeCardIndex]?.a : flashcardsList[activeCardIndex]?.q}
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
-
-                <div className="flex items-center justify-between gap-3 pt-1">
-                  <div className="flex gap-1.5">
-                    <button
-                      onClick={() => {
-                        setIsCardFlipped(false);
-                        setActiveCardIndex(prev => (prev > 0 ? prev - 1 : flashcardsList.length - 1));
-                      }}
-                      className="px-2.5 py-1 bg-white/[0.02] border border-slate-200/60 dark:border-white/[0.06] rounded-lg text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95"
-                    >
-                      Prev
-                    </button>
-                    <button
-                      onClick={() => {
-                        setIsCardFlipped(false);
-                        setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
-                      }}
-                      className="px-2.5 py-1 bg-white/[0.02] border border-slate-200/60 dark:border-white/[0.06] rounded-lg text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400 hover:text-white cursor-pointer active:scale-95"
-                    >
-                      Next
-                    </button>
-                  </div>
-
-                  <div className="flex gap-1.5">
-                    <button
-                      onClick={() => {
-                        setFlashcardScores(prev => ({ ...prev, known: prev.known + 1 }));
-                        setIsCardFlipped(false);
-                        setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
-                        triggerNotification("Concept marked as known.");
-                      }}
-                      className="px-2.5 py-1 bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/15 text-emerald-450 rounded-lg text-[8.5px] font-bold uppercase transition-all cursor-pointer active:scale-95"
-                    >
-                      Known
-                    </button>
-                    <button
-                      onClick={() => {
-                        setIsCardFlipped(false);
-                        setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
-                        triggerNotification("Added to review list.");
-                      }}
-                      className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/15 text-amber-450 rounded-lg text-[8.5px] font-bold uppercase transition-all cursor-pointer active:scale-95"
-                    >
-                      Review
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* Tab 3: Checklist */}
-        {studyConsoleTab === "checklist" && (
-          <div className="space-y-3 animate-fade-in text-[10px] font-bold">
-            <span className="text-[9px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block pb-1 border-b border-slate-200/40 dark:border-white/[0.04]">Exam Hall Compliance Items</span>
-            <div className="grid grid-cols-1 gap-2 pt-1">
-              {mtHallChecklist.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center gap-2.5 p-2 rounded-xl bg-white/30 dark:bg-slate-900/10 border border-slate-200/40 dark:border-white/[0.04] text-zinc-300 hover:bg-zinc-955/20 transition-all"
-                >
+              {/* Study Window Slider */}
+              <div className="space-y-2 pt-1">
+                <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase block">Study Window Remaining</span>
+                <div className="flex items-center gap-3">
                   <input
-                    type="checkbox"
-                    defaultChecked
-                    className="accent-violet-500 h-3.5 w-3.5 rounded bg-white dark:bg-zinc-900 border border-slate-200/60 dark:border-white/[0.06] cursor-pointer"
+                    type="range"
+                    min="1"
+                    max="24"
+                    value={mtCramHours}
+                    onChange={(e) => setMtCramHours(Number(e.target.value))}
+                    className="flex-1 accent-blue-500 cursor-pointer h-1.5 rounded-lg bg-slate-200 dark:bg-[#262b33] appearance-none [&::-webkit-slider-thumb]:w-3.5 [&::-webkit-slider-thumb]:h-3.5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-blue-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:cursor-pointer"
                   />
-                  <span>{item}</span>
+                  <span className="text-sm font-bold font-mono text-slate-800 dark:text-slate-200 tabular-nums min-w-[52px] text-right">{mtCramHours} hrs</span>
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Tab 4: Gamble */}
-        {studyConsoleTab === "gamble" && (
-          <div className="space-y-3 animate-fade-in text-[10px]">
-            <div className="grid grid-cols-3 gap-2">
-              <div className="space-y-1">
-                <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">Original Grade</label>
-                <select
-                  value={mtRevalGrade}
-                  onChange={(e) => setMtRevalGrade(e.target.value)}
-                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
-                >
-                  <option value="F">Grade F</option>
-                  <option value="D">Grade D</option>
-                  <option value="C">Grade C</option>
-                  <option value="B">Grade B</option>
-                </select>
-              </div>
-
-              <div className="space-y-1">
-                <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">CIE (out of 50)</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="50"
-                  value={mtRevalCie}
-                  onChange={(e) => setMtRevalCie(Math.min(50, Math.max(0, Number(e.target.value))))}
-                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs text-white"
-                />
-              </div>
-
-              <div className="space-y-1">
-                <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">Performance</label>
-                <select
-                  value={mtRevalExpected}
-                  onChange={(e) => setMtRevalExpected(e.target.value)}
-                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
-                >
-                  <option value="Excellent">Excellent (Expected B+)</option>
-                  <option value="Moderate">Moderate (Expected C)</option>
-                  <option value="Poor">Poor (Expected Pass)</option>
-                </select>
               </div>
             </div>
 
-            {(() => {
-              const CIE = mtRevalCie;
-              let gambleStatus = "Low Probability";
-              let gambleTheme = "bg-rose-500/10 text-rose-455 border-rose-500/20";
-              let details = "Revaluation fee (Rs 600) is unlikely to yield results based on your low internal score.";
-
-              if (mtRevalGrade === "F") {
-                if (CIE >= 22 && mtRevalExpected === "Excellent") {
-                  gambleStatus = "High Chance";
-                  gambleTheme = "bg-emerald-500/10 text-emerald-455 border-emerald-500/20";
-                  details = "Strong recommendation: High internal score combined with a positive exam sentiment guarantees high revaluation success rates.";
-                } else if (CIE >= 18 && mtRevalExpected === "Excellent") {
-                  gambleStatus = "Moderate";
-                  gambleTheme = "bg-amber-500/10 text-amber-450 border-amber-500/20";
-                  details = "Decent CIE standing. Worth the gamble if you are confident your answers matched the key schema.";
-                }
-              } else {
-                if (mtRevalExpected === "Excellent") {
-                  gambleStatus = "Moderate";
-                  gambleTheme = "bg-amber-500/10 text-amber-450 border-amber-500/20";
-                  details = "Grade improvements are harder to verify than simple F-pass corrections. Proceed if your paper was highly structured.";
-                }
-              }
-
-              const GambleIcon = gambleStatus === "High Chance" ? Sparkles : gambleStatus === "Moderate" ? HelpCircle : AlertCircle;
-              return (
-                <div className={`p-3.5 rounded-xl border text-center ${gambleTheme} flex flex-col items-center justify-center space-y-1`}>
-                  <div className="text-[8px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase leading-none">Revaluation Risk Assessment</div>
-                  <div className="text-sm font-bold py-1 leading-none flex items-center gap-1 mt-1">
-                    <GambleIcon className="w-4 h-4 shrink-0" />
-                    {gambleStatus}
-                  </div>
-                  <div className="text-[9px] font-medium leading-normal text-slate-500 dark:text-slate-400 mt-1">{details}</div>
+            {/* Right: Alert + Advice */}
+            <div className="space-y-3 flex flex-col justify-center">
+              {/* Alert Box */}
+              <div className={`px-4 py-3 rounded-xl border-2 ${
+                urgencyLevel === "critical"
+                  ? "bg-rose-500/5 border-rose-500/25 text-rose-600 dark:text-rose-400"
+                  : urgencyLevel === "focused"
+                    ? "bg-amber-500/5 border-amber-500/25 text-amber-700 dark:text-amber-400"
+                    : "bg-emerald-500/5 border-emerald-500/25 text-emerald-700 dark:text-emerald-400"
+              }`}>
+                <div className="flex items-start gap-2">
+                  {urgencyLevel === "critical" ? (
+                    <AlertCircle className="w-4 h-4 mt-0.5 shrink-0" />
+                  ) : (
+                    <Sparkles className="w-4 h-4 mt-0.5 shrink-0" />
+                  )}
+                  <p className="text-[11px] font-semibold leading-relaxed">{alertTitle}</p>
                 </div>
-              );
-            })()}
-          </div>
-        )}
+              </div>
 
-        {/* Tab 5: Splits */}
-        {studyConsoleTab === "splits" && (
-          <div className="space-y-3.5 animate-fade-in text-[10px] text-slate-600 dark:text-zinc-400">
-            <div className="p-3 bg-white/30 dark:bg-slate-900/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
-              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Seminar Split (max 100)</span>
-              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
-                <span>Report Quality Documentation</span>
-                <span className="font-bold text-slate-900 dark:text-white font-mono">30 Marks</span>
-              </div>
-              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
-                <span>Technical Presentation / Slides</span>
-                <span className="font-bold text-slate-900 dark:text-white font-mono">40 Marks</span>
-              </div>
-              <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold">
-                <span>Defense / Q&A Viva Session</span>
-                <span className="font-mono">30 Marks</span>
-              </div>
-            </div>
-
-            <div className="p-3 bg-white/30 dark:bg-slate-900/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
-              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Project Split (max 100)</span>
-              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
-                <span>Supervisor / Faculty Guide</span>
-                <span className="font-bold text-slate-900 dark:text-white font-mono">30 Marks</span>
-              </div>
-              <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
-                <span>Internal Evaluation Committee</span>
-                <span className="font-bold text-slate-900 dark:text-white font-mono">40 Marks</span>
-              </div>
-              <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold">
-                <span>Project Report & Viva ESE</span>
-                <span className="font-mono">30 Marks</span>
-              </div>
+              {/* Advice text */}
+              <p className="text-[10.5px] leading-relaxed text-slate-600 dark:text-slate-400 font-medium">
+                {advice}
+              </p>
             </div>
           </div>
-        )}
+        </div>
 
-        {/* Tab 6: Notes */}
-        {studyConsoleTab === "notepad" && (
-          <div className="space-y-3 animate-fade-in text-[10px]">
-            <div className="flex justify-between items-center text-[9px] font-bold text-slate-500 dark:text-slate-400 px-1">
-              <span>Private Scratchpad</span>
-              <span className="text-blue-600 dark:text-blue-400 font-bold font-mono">{wordCount} Words</span>
+        {/* Ã¢â€â‚¬Ã¢â€â‚¬ DIVIDER Ã¢â€â‚¬Ã¢â€â‚¬ */}
+        <div className="border-t border-slate-200/50 dark:border-white/[0.05]" />
+
+        {/* Ã¢â€â‚¬Ã¢â€â‚¬ BOTTOM HALF: TIMER + SCRATCHPAD Ã¢â€â‚¬Ã¢â€â‚¬ */}
+        <div className="px-5 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            
+            {/* Left: Focus Timer + Ambient */}
+            <div className="space-y-4">
+              <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase block">Focus Timer</span>
+              
+              {/* Timer Display */}
+              <div className="text-center py-2">
+                <div className="font-mono text-4xl sm:text-5xl font-black text-slate-900 dark:text-white tabular-nums tracking-tight leading-none">
+                  {String(Math.floor(pomodoroTime / 60)).padStart(2, "0")}:{(pomodoroTime % 60).toString().padStart(2, "0")}
+                </div>
+                <span className={`text-[9px] font-bold uppercase tracking-[0.2em] mt-2 block ${
+                  pomodoroMode === "focus" ? "text-orange-500" : "text-blue-400"
+                }`}>
+                  {pomodoroMode === "focus" ? "Focus Session" : "Break Time"}
+                </span>
+              </div>
+
+              {/* Controls */}
+              <div className="flex items-center justify-center gap-2">
+                <button
+                  onClick={() => {
+                    setPomodoroActive(false);
+                    setPomodoroTime(pomodoroMode === "focus" ? 1500 : 300);
+                  }}
+                  className="w-9 h-9 rounded-xl bg-slate-100 dark:bg-[#2a2f38] text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 flex items-center justify-center transition-all cursor-pointer active:scale-95 border border-slate-200/50 dark:border-[#363c46]"
+                  title="Reset timer"
+                >
+                  <RotateCcw className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => setPomodoroActive(!pomodoroActive)}
+                  className={`px-5 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm ${
+                    pomodoroActive
+                      ? "bg-amber-500 hover:bg-amber-600 text-white"
+                      : "bg-blue-600 hover:bg-blue-700 text-white"
+                  }`}
+                >
+                  {pomodoroActive ? "Pause" : "Start"}
+                </button>
+                <button
+                  onClick={() => {
+                    setPomodoroActive(false);
+                    const nextMode = pomodoroMode === "focus" ? "break" : "focus";
+                    setPomodoroMode(nextMode);
+                    setPomodoroTime(nextMode === "focus" ? 1500 : 300);
+                  }}
+                  className="w-9 h-9 rounded-xl bg-slate-100 dark:bg-[#2a2f38] text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 flex items-center justify-center transition-all cursor-pointer active:scale-95 border border-slate-200/50 dark:border-[#363c46]"
+                  title="Skip to next phase"
+                >
+                  <SkipForward className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Ambient Sound Compact Pills */}
+              <div className="space-y-2 pt-1">
+                <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase block">Ambient Sound</span>
+                <div className="grid grid-cols-4 gap-1.5">
+                  {[
+                    { id: "rain", label: "Rain", icon: CloudRain },
+                    { id: "fire", label: "Fire", icon: Flame },
+                    { id: "cafe", label: "Cafe", icon: Coffee },
+                    { id: "lofi", label: "Beat", icon: Music }
+                  ].map(snd => {
+                    const SndIcon = snd.icon;
+                    const isActive = selectedLofiSound === snd.id;
+                    return (
+                      <button
+                        key={snd.id}
+                        onClick={() => setSelectedLofiSound(isActive ? null : snd.id)}
+                        className={`py-2 px-1 rounded-xl border text-[8px] font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 active:scale-[0.97] ${
+                          isActive
+                            ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/25"
+                            : "bg-slate-50/50 dark:bg-[#262b33]/40 text-slate-400 dark:text-slate-500 border-slate-200/60 dark:border-[#363c46] hover:text-slate-600 dark:hover:text-slate-300"
+                        }`}
+                      >
+                        <SndIcon className="w-3.5 h-3.5" />
+                        <span className="uppercase tracking-wider">{snd.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
-            <textarea
-              value={notepadText}
-              onChange={(e) => handleNotepadSave(e.target.value)}
-              placeholder="Type formulas, notes, or cram slots here..."
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl p-3 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500/20 text-slate-900 dark:text-white min-h-[120px] resize-none"
-            />
-            <div className="flex items-center justify-between">
-              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400">
-                {notepadSaved ? (
-                  <span className="text-emerald-450 animate-pulse flex items-center gap-1">
-                    <Save className="w-3.5 h-3.5 animate-pulse" /> Draft Saved!
-                  </span>
-                ) : (
-                  <span>Auto-saved in local storage</span>
-                )}
-              </span>
+
+            {/* Right: Scratchpad */}
+            <div className="space-y-3">
+              <div className="flex justify-between items-center">
+                <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase">Scratchpad</span>
+                <span className="text-[9px] font-mono font-bold text-slate-400 dark:text-slate-500 tabular-nums">{wordCount} words</span>
+              </div>
+              <textarea
+                value={notepadText}
+                onChange={(e) => handleNotepadSave(e.target.value)}
+                placeholder="Type formulas, notes, or ideas here..."
+                className="w-full bg-slate-50/80 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl p-3 text-[11px] font-medium focus:outline-none focus:ring-1 focus:ring-blue-500/30 text-slate-800 dark:text-slate-200 min-h-[140px] resize-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
+              />
+              <div className="flex items-center justify-between text-[9px] font-bold">
+                <span>
+                  {notepadSaving ? (
+                    <span className="text-amber-500 flex items-center gap-1">
+                      <Save className="w-3 h-3 animate-spin" /> Saving…
+                    </span>
+                  ) : notepadSaved ? (
+                    <span className="text-emerald-500 flex items-center gap-1">
+                      <CheckCircle2 className="w-3 h-3" /> Auto-saved
+                    </span>
+                  ) : (
+                    <span className="text-slate-400 dark:text-slate-500">Auto-saved</span>
+                  )}
+                </span>
+                <button
+                  onClick={handleDownloadNotes}
+                  className="flex items-center gap-1 px-2 py-0.5 bg-blue-500/10 hover:bg-blue-500/15 border border-blue-500/15 text-blue-600 dark:text-blue-400 rounded-lg text-[8px] font-bold uppercase transition-all cursor-pointer active:scale-95"
+                >
+                  <Download className="w-3 h-3" /> Download
+                </button>
+              </div>
+
+              {/* Generate Cram Strategy */}
               <button
-                onClick={handleDownloadNotes}
-                className="px-2.5 py-1 bg-blue-500/10 hover:bg-blue-500/15 border border-blue-500/15 text-blue-600 dark:text-blue-400 rounded-lg text-[8px] font-bold uppercase transition-all cursor-pointer active:scale-95"
+                onClick={handleGenerateCramStrategy}
+                className="w-full py-3 rounded-xl bg-slate-100 dark:bg-[#262b33] hover:bg-slate-200/80 dark:hover:bg-[#2d333b] text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-[#363c46] text-[10px] font-bold transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-2"
               >
-                Download .txt
+                <Sparkles className="w-4 h-4 text-blue-500" />
+                Generate cram strategy
+                <ExternalLink className="w-3 h-3 text-slate-400" />
               </button>
             </div>
           </div>
-        )}
+        </div>
+      </div>
+    );
+  };
+
+  const renderExamUtilities = () => {
+    return (
+      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden w-full">
+        {/* Header */}
+        <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500/15 to-purple-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
+              <Shield className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-50">Exam Utilities</h3>
+              <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Checklist, revaluation & splits</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-5 py-4 space-y-3">
+          {/* Sub-tab pills */}
+          <div className="flex items-center gap-1 bg-slate-50/50 dark:bg-[#262b33] p-1 rounded-xl border border-slate-200/40 dark:border-[#363c46] w-fit">
+            {[
+              { id: "checklist", label: "Checklist" },
+              { id: "gamble", label: "Revaluation" },
+              { id: "splits", label: "Splits" }
+            ].map(sub => (
+              <button
+                key={sub.id}
+                onClick={() => setUtilityConsoleTab(sub.id as typeof utilityConsoleTab)}
+                className={`px-3 py-1.5 rounded-lg text-[8.5px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 ${
+                  utilityConsoleTab === sub.id
+                    ? "bg-white dark:bg-[#2a2f38] text-blue-600 dark:text-blue-400 border border-slate-200/40 dark:border-[#363c46] shadow-sm"
+                    : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
+                }`}
+              >
+                {sub.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Checklist */}
+          {utilityConsoleTab === "checklist" && (
+            <div className="space-y-2 animate-fade-in">
+              <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase block pb-1 border-b border-slate-200/40 dark:border-white/[0.04]">Exam Hall Compliance</span>
+              <div className="grid grid-cols-1 gap-1.5 pt-1">
+                {mtHallChecklist.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-2.5 p-2 rounded-xl bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] text-[10px] font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-[#2a3038] transition-all"
+                  >
+                    <input
+                      type="checkbox"
+                      defaultChecked
+                      className="accent-violet-500 h-3.5 w-3.5 rounded cursor-pointer"
+                    />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Revaluation Gamble */}
+          {utilityConsoleTab === "gamble" && (
+            <div className="space-y-3 animate-fade-in text-[10px]">
+              <div className="grid grid-cols-3 gap-2">
+                <div className="space-y-1">
+                  <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">Grade</label>
+                  <select
+                    value={mtRevalGrade}
+                    onChange={(e) => setMtRevalGrade(e.target.value)}
+                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
+                  >
+                    <option value="F">F</option>
+                    <option value="D">D</option>
+                    <option value="C">C</option>
+                    <option value="B">B</option>
+                  </select>
+                </div>
+                <div className="space-y-1">
+                  <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">CIE (/50)</label>
+                  <input
+                    type="number"
+                    min="0" max="50"
+                    value={mtRevalCie}
+                    onChange={(e) => setMtRevalCie(Math.min(50, Math.max(0, Number(e.target.value))))}
+                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-1 text-center font-bold text-xs text-slate-900 dark:text-white focus:outline-none"
+                  />
+                </div>
+                <div className="space-y-1">
+                  <label className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">Confidence</label>
+                  <select
+                    value={mtRevalExpected}
+                    onChange={(e) => setMtRevalExpected(e.target.value)}
+                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
+                  >
+                    <option value="Excellent">High</option>
+                    <option value="Moderate">Medium</option>
+                    <option value="Poor">Low</option>
+                  </select>
+                </div>
+              </div>
+
+              {(() => {
+                const CIE = mtRevalCie;
+                let gambleStatus = "Low Probability";
+                let gambleTheme = "bg-rose-500/5 text-rose-500 border-rose-500/20";
+                let details = "Revaluation fee (Ã¢â€šÂ¹600) is unlikely to yield results based on your low internal score.";
+
+                if (mtRevalGrade === "F") {
+                  if (CIE >= 22 && mtRevalExpected === "Excellent") {
+                    gambleStatus = "High Chance";
+                    gambleTheme = "bg-emerald-500/5 text-emerald-600 dark:text-emerald-400 border-emerald-500/20";
+                    details = "High internal score + positive exam sentiment = strong revaluation success rate.";
+                  } else if (CIE >= 18 && mtRevalExpected === "Excellent") {
+                    gambleStatus = "Moderate";
+                    gambleTheme = "bg-amber-500/5 text-amber-600 dark:text-amber-400 border-amber-500/20";
+                    details = "Decent CIE. Worth the gamble if your answers matched the key schema.";
+                  }
+                } else {
+                  if (mtRevalExpected === "Excellent") {
+                    gambleStatus = "Moderate";
+                    gambleTheme = "bg-amber-500/5 text-amber-600 dark:text-amber-400 border-amber-500/20";
+                    details = "Grade improvements are harder to verify. Proceed if your paper was highly structured.";
+                  }
+                }
+
+                const GambleIcon = gambleStatus === "High Chance" ? Sparkles : gambleStatus === "Moderate" ? HelpCircle : AlertCircle;
+                return (
+                  <div className={`p-3.5 rounded-xl border text-center ${gambleTheme} flex flex-col items-center justify-center space-y-1`}>
+                    <div className="text-[8px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase">Risk Assessment</div>
+                    <div className="text-sm font-bold py-1 flex items-center gap-1 mt-1">
+                      <GambleIcon className="w-4 h-4 shrink-0" />
+                      {gambleStatus}
+                    </div>
+                    <div className="text-[9px] font-medium leading-normal text-slate-600 dark:text-slate-400 mt-1">{details}</div>
+                  </div>
+                );
+              })()}
+            </div>
+          )}
+
+          {/* Project Splits */}
+          {utilityConsoleTab === "splits" && (
+            <div className="space-y-3 animate-fade-in text-[10px] text-slate-600 dark:text-slate-400">
+              <div className="p-3 bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] rounded-xl space-y-1.5">
+                <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Seminar (max 100)</span>
+                <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
+                  <span>Report Quality</span>
+                  <span className="font-bold text-slate-900 dark:text-white font-mono">30</span>
+                </div>
+                <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
+                  <span>Presentation / Slides</span>
+                  <span className="font-bold text-slate-900 dark:text-white font-mono">40</span>
+                </div>
+                <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold">
+                  <span>Viva & Q&A</span>
+                  <span className="font-mono">30</span>
+                </div>
+              </div>
+
+              <div className="p-3 bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] rounded-xl space-y-1.5">
+                <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Project (max 100)</span>
+                <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
+                  <span>Faculty Guide</span>
+                  <span className="font-bold text-slate-900 dark:text-white font-mono">30</span>
+                </div>
+                <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
+                  <span>Internal Committee</span>
+                  <span className="font-bold text-slate-900 dark:text-white font-mono">40</span>
+                </div>
+                <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold">
+                  <span>Report & Viva ESE</span>
+                  <span className="font-mono">30</span>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     );
   };
@@ -4327,9 +4161,9 @@ export default function ToolsPage() {
     const cieVal = plannerCieScore;
 
     return (
-      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-4 sm:p-5 shadow-lg space-y-4">
+      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 shadow-lg space-y-4">
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-slate-800/20 pb-3">
+        <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-[#2a2f38]/40 pb-3">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-450">
               <Award className="w-5 h-5 animate-pulse" />
@@ -4346,16 +4180,16 @@ export default function ToolsPage() {
               const selected = availablePlannerSubjects.find(s => s.code === e.target.value);
               if (selected) setPlannerActiveSubject(selected);
             }}
-            className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1 text-[10px] font-black cursor-pointer text-slate-850 dark:text-slate-100 focus:outline-none"
+            className="bg-white dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2.5 py-1 text-[10px] font-black cursor-pointer text-slate-850 dark:text-slate-100 focus:outline-none max-w-[150px] sm:max-w-[220px] truncate"
           >
             {availablePlannerSubjects.map(sub => (
-              <option key={sub.code} value={sub.code}>{sub.code}</option>
+              <option key={sub.code} value={sub.code}>{sub.name || sub.code}</option>
             ))}
           </select>
         </div>
 
         {/* CIE Slider control */}
-        <div className="p-3.5 rounded-2xl bg-slate-950/[0.01] dark:bg-white/[0.01] border border-slate-200 dark:border-slate-800 space-y-3">
+        <div className="p-3.5 rounded-2xl bg-slate-950/[0.01] dark:bg-white/[0.01] border border-slate-200/60 dark:border-[#2a2f38] space-y-3">
           <div className="flex justify-between items-center text-xs font-bold">
             <span className="text-slate-450">Continuous Internal Evaluation (CIE) score</span>
             <span className="text-violet-500 text-sm font-black tabular-nums">{cieVal} / 50</span>
@@ -4366,7 +4200,7 @@ export default function ToolsPage() {
             max="50"
             value={cieVal}
             onChange={(e) => setPlannerCieScore(Number(e.target.value))}
-            className="w-full accent-violet-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-slate-800"
+            className="w-full accent-violet-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-[#262b33]"
           />
           <div className="flex justify-between text-[8px] font-black text-slate-400 uppercase tracking-wider">
             <span>Minimum to write exam: 0</span>
@@ -4398,8 +4232,8 @@ export default function ToolsPage() {
                 neededEse = Math.max(40, Math.ceil(neededEse)); // ESE must be >= 40 to pass exam
               }
 
-              let badgeColor = "bg-slate-100 text-slate-500 dark:bg-slate-800/40 dark:text-slate-400";
-              let borderStyle = "border-slate-200 dark:border-slate-800";
+              let badgeColor = "bg-slate-100 text-slate-500 dark:bg-[#262b33]/40 dark:text-slate-400";
+              let borderStyle = "border-slate-200 dark:border-[#2a2f38]";
               if (!impossible) {
                 if (targetItem.grade === "S") { badgeColor = "bg-emerald-500/10 text-emerald-500 border-emerald-500/10"; borderStyle = "hover:border-emerald-400"; }
                 else if (targetItem.grade === "A+") { badgeColor = "bg-blue-500/10 text-blue-500 border-blue-500/10"; borderStyle = "hover:border-blue-400"; }
@@ -4408,7 +4242,7 @@ export default function ToolsPage() {
               }
 
               return (
-                <div key={targetItem.grade} className={`p-3 rounded-2xl border bg-white dark:bg-slate-900 text-left flex items-center justify-between transition-all sm:${borderStyle}`}>
+                <div key={targetItem.grade} className={`p-3 rounded-2xl border bg-white dark:bg-[#1a1f27] text-left flex items-center justify-between transition-all sm:${borderStyle}`}>
                   <div className="truncate pr-1.5">
                     <span className="text-[8px] font-black text-slate-400 block uppercase tracking-wider">{targetItem.label}</span>
                     <span className="font-black text-xs text-slate-855 dark:text-slate-100 block mt-1">Needed:</span>
@@ -4423,7 +4257,7 @@ export default function ToolsPage() {
         </div>
 
         {/* Live Pass/Fail Sandbox Checklist */}
-        <div className="p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-950/[0.01] dark:bg-white/[0.01] space-y-2">
+        <div className="p-3.5 rounded-2xl border border-slate-200/60 dark:border-[#2a2f38] bg-slate-950/[0.01] dark:bg-white/[0.01] space-y-2">
           <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-1">Pass/Fail Sandbox Audit</span>
           <div className="space-y-1.5 text-[10px] font-bold text-slate-500">
             <div className="flex items-center gap-1.5">
@@ -4461,7 +4295,7 @@ export default function ToolsPage() {
     const currentAllocSgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0;
 
     return (
-      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-300 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
         {/* Header */}
         <div className="flex items-center gap-2.5 border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -4474,7 +4308,7 @@ export default function ToolsPage() {
         </div>
 
         {/* Target SGPA Slider */}
-        <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/40 border border-slate-200/60 dark:border-slate-800 space-y-3">
+        <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#1a1f27]/40 border border-slate-200/60 dark:border-[#2a2f38] space-y-3">
           <div className="flex justify-between items-center text-xs font-bold text-slate-700 dark:text-slate-300">
             <span>Target SGPA Goal</span>
             <span className="text-blue-600 dark:text-blue-400 text-sm font-black tabular-nums">{targetSgpa.toFixed(2)} / 10.00</span>
@@ -4486,7 +4320,7 @@ export default function ToolsPage() {
             step="0.1"
             value={targetSgpa}
             onChange={(e) => setTargetSgpa(Number(e.target.value))}
-            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-slate-800"
+            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-[#262b33]"
           />
           <div className="flex justify-between text-[8px] font-bold text-slate-400 uppercase tracking-widest leading-none">
             <span>Min (5.5)</span>
@@ -4505,16 +4339,16 @@ export default function ToolsPage() {
           ) : (
             <div className="space-y-1.5 max-h-[220px] overflow-y-auto pr-1">
               {allocated.map((item, idx) => {
-                let badgeColor = "bg-slate-105 text-slate-500 dark:bg-slate-800 dark:text-slate-400 border border-slate-250/20";
+                let badgeColor = "bg-slate-105 text-slate-500 dark:bg-[#262b33] dark:text-slate-400 border border-slate-250/20";
                 if (item.grade === "S") badgeColor = "bg-emerald-500/10 text-emerald-600 dark:text-emerald-450 border border-emerald-500/15";
                 else if (item.grade.startsWith("A")) badgeColor = "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15";
                 else if (item.grade.startsWith("B")) badgeColor = "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/15";
                 
                 return (
-                  <div key={idx} className="p-2.5 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.02] flex items-center justify-between text-[11px] hover:border-slate-350 dark:hover:border-slate-800 transition-all duration-200">
+                  <div key={idx} className="p-2.5 rounded-xl bg-slate-50/50 dark:bg-[#1a1f27]/40 border border-slate-200/40 dark:border-[#2a2f38] flex items-center justify-between text-[11px] hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-200">
                     <div className="truncate pr-2 min-w-0 flex-1">
                       <span className="font-bold text-slate-800 dark:text-slate-200 truncate block text-[11.5px]">{item.name}</span>
-                      <span className="text-[9px] text-slate-400 font-mono block mt-0.5">{item.code} • {item.credits} Credits</span>
+                      <span className="text-[9px] text-slate-400 font-mono block mt-0.5">{item.code} Ã¢â‚¬Â¢ {item.credits} Credits</span>
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
                       <span className="text-[10px] font-bold text-slate-400">{item.points.toFixed(1)} GP</span>
@@ -4536,6 +4370,46 @@ export default function ToolsPage() {
           </div>
         )}
       </div>
+    );
+  };
+
+  const renderDrawer = (isOpen: boolean, onClose: () => void, title: string, content: React.ReactNode) => {
+    return (
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={onClose}
+              className="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 cursor-pointer"
+            />
+            {/* Drawer Panel */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 30, stiffness: 300 }}
+              className="fixed right-0 top-0 bottom-0 w-full max-w-md bg-white dark:bg-[#1e2228] border-l border-slate-200 dark:border-[#2a2f38] shadow-2xl p-5 md:p-6 z-50 overflow-y-auto space-y-6 flex flex-col"
+            >
+              <div className="flex items-center justify-between border-b border-slate-200 dark:border-white/[0.06] pb-4 shrink-0">
+                <h3 className="text-sm font-black uppercase tracking-wider text-slate-900 dark:text-white">{title}</h3>
+                <button
+                  onClick={onClose}
+                  className="p-1 rounded-lg text-slate-400 hover:text-slate-650 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/[0.04] transition-all cursor-pointer"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+              <div className="flex-1 overflow-y-auto min-h-0 pr-1 scrollbar-thin">
+                {content}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     );
   };
 
@@ -4563,7 +4437,7 @@ export default function ToolsPage() {
             initial={{ opacity: 0, y: 50, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 20, x: "-50%" }}
-            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 text-slate-900 dark:text-slate-50 shadow-2xl backdrop-blur-xl border border-slate-200/80 dark:border-white/[0.08] text-xs font-bold flex items-center gap-2"
+            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-white/95 dark:bg-[#1e2228]/95 text-slate-900 dark:text-slate-50 shadow-2xl backdrop-blur-xl border border-slate-200/80 dark:border-[#2a2f38] text-xs font-bold flex items-center gap-2"
           >
             <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 animate-pulse" />
             {showNotification}
@@ -4578,35 +4452,35 @@ export default function ToolsPage() {
         <div className="absolute bottom-10 right-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
 
         {/* --- PREMIUM COCKPIT TELEMETRY DENSITY HEADER --- */}
-        <div className="w-full bg-white/90 dark:bg-slate-950/85 backdrop-blur-3xl border border-slate-200/80 dark:border-white/[0.08] rounded-2xl p-4 sm:p-5 md:p-6 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-4 sm:gap-6">
+        <div className="w-full bg-white/90 dark:bg-[#1e2228]/90 backdrop-blur-3xl border border-slate-200/80 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-3 sm:gap-4">
           <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.03] blur-[40px] pointer-events-none" />
           
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 pb-5 border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06]">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06]">
             {/* Logo Badge & Titles */}
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 <span className="px-2.5 py-0.5 rounded-lg text-[9px] font-black tracking-widest uppercase bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15">
                   KTU Tools
                 </span>
-                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">• APJ Abdul Kalam University</span>
+                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">Ã¢â‚¬Â¢ APJ Abdul Kalam University</span>
               </div>
-              <h1 className="text-2xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight mt-1">
+              <h1 className="text-xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight mt-1">
                 Study Tools
               </h1>
               <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-                Track grades, attendance, labs, and exam prep — all in one place.
+                Track grades, attendance, labs, and exam prep Ã¢â‚¬â€ all in one place.
               </p>
             </div>
 
             {/* Selector Console */}
-            <div className="flex items-center gap-3 bg-slate-50/80 dark:bg-slate-900/60 p-2.5 rounded-2xl border border-slate-200/60 dark:border-slate-200/40 dark:border-white/[0.04] shrink-0 self-start md:self-auto shadow-inner">
+            <div className="flex items-center gap-3 bg-slate-50/80 dark:bg-[#262b33]/60 p-2 rounded-xl border border-slate-200/60 dark:border-slate-200/40 dark:border-[#2a2f38] shrink-0 self-start md:self-auto shadow-inner">
               <div className="flex flex-col">
                 <span className="text-[8px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">Branch & Semester</span>
-                <div className="flex items-center gap-2 mt-1.5">
+                <div className="flex items-center gap-2 mt-1">
                   <select
-                    value={branch}
-                    onChange={(e) => handleBranchSemChange(e.target.value, sem)}
-                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                     value={branch}
+                     onChange={(e) => handleBranchSemChange(e.target.value, sem)}
+                     className="bg-white dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
                   >
                     <option value="cs">Computer Science (CS)</option>
                     <option value="ec">Electronics (EC)</option>
@@ -4617,7 +4491,7 @@ export default function ToolsPage() {
                   <select
                     value={sem}
                     onChange={(e) => handleBranchSemChange(branch, Number(e.target.value))}
-                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                    className="bg-white dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
                   >
                     {Array.from({ length: 8 }, (_, idx) => (
                       <option key={idx} value={idx + 1}>Semester {idx + 1}</option>
@@ -4628,43 +4502,40 @@ export default function ToolsPage() {
             </div>
           </div>
 
-          {/* Connected Live Telemetry Indicators Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {/* Connected Live Telemetry Indicators Row */}
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-1 text-xs font-semibold">
             {[
               {
-                label: "Cumulative CGPA",
+                label: "CGPA",
                 val: calculateCGPA(),
                 badge: "10.0 Scale",
-                icon: TrendingUp,
-                theme: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15"
+                theme: "text-blue-500 bg-blue-500/10 dark:text-blue-400 border border-blue-500/20"
               },
               {
                 label: "Attendance",
                 val: `${getAverageAttendance()}%`,
                 badge: getAverageAttendance() >= 75 ? "Safe" : "At Risk",
-                icon: getAverageAttendance() >= 75 ? Check : AlertCircle,
                 theme: getAverageAttendance() >= 75
-                  ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/15"
-                  : "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/15"
+                  ? "text-emerald-500 bg-emerald-500/10 dark:text-emerald-400 border border-emerald-500/20"
+                  : "text-rose-500 bg-rose-500/10 dark:text-rose-455 border border-rose-500/20"
               },
               {
-                label: "Lab Courses",
+                label: "Labs",
                 val: `${labCourses.length} Active`,
                 badge: "Tracked",
-                icon: FlaskConical,
-                theme: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15"
+                theme: "text-indigo-500 bg-indigo-500/10 dark:text-indigo-400 border border-indigo-500/20"
               },
               {
                 label: "SGPA",
                 val: calculateSGPA(),
                 badge: "Current Sem",
-                theme: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/15"
+                theme: "text-amber-550 bg-amber-500/10 dark:text-amber-450 border border-amber-500/20"
               }
             ].map((stat, idx) => (
-              <div key={idx} className="p-3 bg-slate-50/80 dark:bg-slate-900/50 border border-slate-200/60 dark:border-slate-200/40 dark:border-white/[0.04] rounded-2xl flex flex-col justify-between gap-1 shadow-sm">
-                <span className="text-[7.5px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none block">{stat.label}</span>
-                <span className="text-sm font-black text-slate-900 dark:text-slate-50 block mt-1 leading-none">{stat.val}</span>
-                <span className={`px-1.5 py-0.5 rounded text-[7px] font-black uppercase tracking-wider block mt-1.5 self-start border ${stat.theme}`}>
+              <div key={idx} className="flex items-center gap-2">
+                <span className="text-[9px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest leading-none">{stat.label}</span>
+                <span className="font-extrabold text-slate-900 dark:text-slate-100 font-mono text-[13px] leading-none">{stat.val}</span>
+                <span className={`px-1.5 py-0.5 rounded text-[8px] font-bold uppercase tracking-wider leading-none ${stat.theme}`}>
                   {stat.badge}
                 </span>
               </div>
@@ -4673,7 +4544,7 @@ export default function ToolsPage() {
         </div>
 
         {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR --- */}
-        <div className="bg-slate-100/80 dark:bg-slate-950/60 p-1.5 rounded-[22px] border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl flex flex-nowrap items-center gap-1 w-full overflow-x-auto scrollbar-none shadow-inner">
+        <div className="bg-slate-100/80 dark:bg-[#1e2228]/60 p-1.5 rounded-[22px] border border-slate-200/50 dark:border-[#2a2f38] backdrop-blur-xl flex flex-nowrap items-center gap-1.5 w-full overflow-x-auto scrollbar-none shadow-inner">
           {[
             { id: "attendance", label: "Attendance & CIE", icon: Activity },
             { id: "grades", label: "Grades & ESE", icon: Calculator },
@@ -4688,10 +4559,10 @@ export default function ToolsPage() {
               <button
                 key={tabItem.id}
                 onClick={() => setActiveWorkspaceTab(tabItem.id as typeof activeWorkspaceTab)}
-                className={`px-4 py-2.5 rounded-2xl text-[10px] font-semibold uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 justify-center min-w-0 active:scale-[0.98] hover:scale-[1.01] ${
+                className={`px-4 py-2.5 rounded-[16px] text-[10px] font-black uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 justify-center min-w-0 active:scale-[0.97] ${
                   isActive
-                    ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 shadow-lg shadow-blue-500/[0.02]"
-                    : "bg-transparent text-slate-500 dark:text-slate-400 border border-transparent hover:bg-slate-200/50 dark:hover:bg-white/[0.02]"
+                    ? "bg-[#2E95FF] text-white border border-[#2E95FF]/20 shadow-[0_4px_12px_rgba(46,149,255,0.25)]"
+                    : "bg-transparent text-slate-500/80 hover:text-slate-800 dark:text-slate-400/80 dark:hover:text-slate-200 hover:bg-slate-200/30 dark:hover:bg-white/[0.02]"
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -4718,76 +4589,71 @@ export default function ToolsPage() {
 
           {/* TAB 2: GRADES & ESE TARGET PLANNER */}
           {activeWorkspaceTab === "grades" && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
-              {/* GPA Sheet Calculator */}
-              <div className="lg:col-span-7 bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 relative overflow-hidden space-y-4 sm:space-y-5">
-                <div className="absolute top-0 right-0 w-[240px] h-[240px] rounded-full bg-blue-500/[0.03] blur-[60px] pointer-events-none -z-10" />
-                
-                <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] pb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
-                      <Calculator className="w-5.5 h-5.5" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-slate-900 dark:text-white text-base leading-none">GPA & CGPA Calculator</h3>
-                      <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 block mt-1.5">{branch.toUpperCase()} S{sem} grading sheet & custom sandboxes</span>
-                    </div>
+            <div className="w-full bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 relative overflow-hidden space-y-4 sm:space-y-5">
+              <div className="absolute top-0 right-0 w-[240px] h-[240px] rounded-full bg-blue-500/[0.03] blur-[60px] pointer-events-none -z-10" />
+              
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] pb-4 gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                    <Calculator className="w-5.5 h-5.5" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 dark:text-white text-base leading-none">GPA & CGPA Calculator</h3>
+                    <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 block mt-1.5">{branch.toUpperCase()} S{sem} grading sheet & custom sandboxes</span>
                   </div>
                 </div>
-
-                {/* Core GPA Component */}
-                <GpaCalculator />
-
-                {/* Inline Converter Bar */}
-                <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                  <span>SGPA / CGPA Converter:</span>
-                  <input
-                    type="number"
-                    min="0"
-                    max="10"
-                    step="0.01"
-                    placeholder="8.50"
-                    value={converterGpa}
-                    onChange={(e) => handleGpaConvert(e.target.value)}
-                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
-                  />
-                  <span>Score ⇄</span>
-                  <input
-                    type="number"
-                    min="0"
-                    max="100"
-                    step="0.1"
-                    placeholder="80.0"
-                    value={converterPercentage}
-                    onChange={(e) => handlePercentageConvert(e.target.value)}
-                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
-                  />
-                  <span>Percentage (%)</span>
+                <div className="flex items-center gap-2 self-end sm:self-auto">
+                  <button
+                    onClick={() => setIsCiePlannerOpen(true)}
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-[10px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-blue-500" /> Plan CIE & ESE
+                  </button>
+                  <button
+                    onClick={() => setIsSgpaAllocatorOpen(true)}
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-600 dark:text-amber-450 text-[10px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm"
+                  >
+                    <Calculator className="w-3.5 h-3.5 text-amber-500" /> SGPA Allocator
+                  </button>
                 </div>
               </div>
 
-              {/* Target ESE Predictor & SGPA Allocator Cards */}
-              <div className="lg:col-span-5 space-y-4 sm:space-y-6 flex flex-col justify-start">
-                {renderTargetPlanner()}
-                {renderSgpaGoalEstimator()}
-                
-                <div className="flex items-center gap-3 p-4 rounded-2xl border border-blue-500/10 bg-blue-50/50 dark:bg-blue-500/[0.02] text-[9.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center">
-                  <Lightbulb className="w-4 h-4 text-blue-500 shrink-0" />
-                  <span>GPA values update in real-time. Target margins shift based on your active scores.</span>
-                </div>
+              {/* Core GPA Component */}
+              <GpaCalculator />
+
+              {/* Inline Converter Bar */}
+              <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                <span>SGPA / CGPA Converter:</span>
+                <input
+                  type="number"
+                  min="0"
+                  max="10"
+                  step="0.01"
+                  placeholder="8.50"
+                  value={converterGpa}
+                  onChange={(e) => handleGpaConvert(e.target.value)}
+                  className="w-16 bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
+                />
+                <span>Score ⇌</span>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  placeholder="80.0"
+                  value={converterPercentage}
+                  onChange={(e) => handlePercentageConvert(e.target.value)}
+                  className="w-16 bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
+                />
+                <span>Percentage (%)</span>
               </div>
             </div>
           )}
 
           {/* TAB 3: GRADUATION RUNWAY & MILESTONE TRACKER */}
           {activeWorkspaceTab === "graduation" && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
-              <div className="lg:col-span-8 space-y-4 sm:space-y-6">
-                {renderGraduationAuditors()}
-              </div>
-              <div className="lg:col-span-4 space-y-4 sm:space-y-6">
-                {renderBacklogTracker()}
-              </div>
+            <div>
+              {renderGraduationAuditors()}
             </div>
           )}
 
@@ -4795,7 +4661,7 @@ export default function ToolsPage() {
           {/* TAB 5: LAB RECORD TRACKER */}
           {activeWorkspaceTab === "labs" && (
             <div className="grid grid-cols-1 gap-4 sm:gap-6">
-              <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+              <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
                 <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -4853,22 +4719,22 @@ export default function ToolsPage() {
                     {(() => {
                       const activeLab = labCourses.find(l => l.id === activeLabTab);
                       if (!activeLab) return null;
-                      const totalExercises = activeLab.exercises.length;
-                      const completedExercises = activeLab.exercises.filter(ex => ex.logic && ex.record && ex.signed).length;
+                      const totalExercises = activeLab!.exercises.length;
+                      const completedExercises = activeLab!.exercises.filter(ex => ex.logic && ex.record && ex.signed).length;
                       const progressPct = totalExercises > 0 ? Math.round((completedExercises / totalExercises) * 100) : 0;
 
                       return (
                         <div className="space-y-3">
                           <div className="flex items-center justify-between">
                             <div>
-                              <span className="text-[12px] font-semibold text-slate-900 dark:text-white block">{activeLab.name}</span>
+                              <span className="text-[12px] font-semibold text-slate-900 dark:text-white block">{activeLab!.name}</span>
                               <span className="text-[10px] text-slate-500 dark:text-slate-400">{completedExercises}/{totalExercises} fully complete</span>
                             </div>
                             <span className={`px-2.5 py-1 rounded-lg text-[10px] font-bold ${progressPct >= 80 ? "bg-emerald-500/10 text-emerald-500" : progressPct >= 50 ? "bg-blue-500/10 text-blue-500" : "bg-amber-500/10 text-amber-500"}`}>
                               {progressPct}%
                             </span>
                           </div>
-                          <div className="h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                          <div className="h-1.5 bg-slate-200 dark:bg-[#262b33] rounded-full overflow-hidden">
                             <div className={`h-full rounded-full transition-all duration-500 ${progressPct >= 80 ? "bg-emerald-500" : progressPct >= 50 ? "bg-blue-500" : "bg-amber-500"}`} style={{ width: `${progressPct}%` }} />
                           </div>
 
@@ -4881,10 +4747,10 @@ export default function ToolsPage() {
                               <div className="col-span-2 text-center">Signed</div>
                               <div className="col-span-1 text-center">Action</div>
                             </div>
-                            {activeLab.exercises.map((ex) => {
+                            {activeLab!.exercises.map((ex) => {
                               const allDone = ex.logic && ex.record && ex.signed;
                               return (
-                                <div key={ex.id} className={`grid grid-cols-12 gap-2 items-center px-4 py-2.5 rounded-2xl border transition-all duration-300 ${allDone ? "bg-emerald-500/[0.02] border-emerald-500/20 dark:border-emerald-500/15" : "bg-slate-50/40 dark:bg-slate-900/10 border-slate-200/55 dark:border-slate-800/40 hover:border-slate-350 dark:hover:border-slate-700/60"}`}>
+                                <div key={ex.id} className={`grid grid-cols-12 gap-2 items-center px-4 py-2.5 rounded-2xl border transition-all duration-300 ${allDone ? "bg-emerald-500/[0.02] border-emerald-500/20 dark:border-emerald-500/15" : "bg-slate-50/40 dark:bg-[#1a1f27]/10 border-slate-200/55 dark:border-[#2a2f38] hover:border-slate-300 dark:hover:border-[#363c46]"}`}>
                                   <div className="col-span-5">
                                     <input
                                       type="text"
@@ -4905,35 +4771,59 @@ export default function ToolsPage() {
                                       className="w-full bg-transparent border-none focus:outline-none focus:ring-1 focus:ring-blue-500/30 rounded px-1 text-[11px] font-medium text-slate-800 dark:text-slate-200 truncate"
                                     />
                                   </div>
-                                  {(["logic", "record", "signed"] as const).map(field => (
-                                    <div key={field} className="col-span-2 flex justify-center">
-                                      <button
-                                        onClick={() => {
-                                          const updatedCourses = labCourses.map(c => {
-                                            if (c.id !== activeLabTab) return c;
-                                            return {
-                                              ...c,
-                                              exercises: c.exercises.map(e =>
-                                                e.id === ex.id ? { ...e, [field]: !e[field] } : e
-                                              )
-                                            };
-                                          });
-                                          setLabCourses(updatedCourses);
-                                          localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updatedCourses));
-                                        }}
-                                        className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all cursor-pointer active:scale-90 ${
-                                          ex[field]
-                                            ? "bg-emerald-500/15 text-emerald-500 border border-emerald-500/20"
-                                            : "bg-slate-100 dark:bg-slate-800 text-slate-400 border border-slate-200/60 dark:border-white/[0.06]"
-                                        }`}
-                                      >
-                                        {ex[field] ? <Check className="w-3.5 h-3.5" /> : <span className="text-[10px]">—</span>}
-                                      </button>
-                                    </div>
-                                  ))}
+                                  {(["logic", "record", "signed"] as const).map(field => {
+                                    const isChecked = ex[field];
+                                    const isSigned = field === "signed";
+                                    
+                                    let buttonStyle = "";
+                                    let iconNode = null;
+                                    
+                                    if (isSigned) {
+                                      if (isChecked) {
+                                        buttonStyle = "bg-blue-500 text-white shadow-sm shadow-blue-500/20";
+                                        iconNode = <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />;
+                                      } else {
+                                        buttonStyle = "border border-slate-300 dark:border-[#363c46] hover:border-slate-405 dark:hover:border-[#2a2f38] bg-transparent text-slate-400 dark:text-slate-500";
+                                        iconNode = <Shield className="w-3.5 h-3.5 stroke-[2]" />;
+                                      }
+                                    } else {
+                                      if (isChecked) {
+                                        buttonStyle = "bg-emerald-550 text-white rounded-full shadow-sm shadow-emerald-500/20";
+                                        iconNode = <Check className="w-3 h-3 stroke-[3]" />;
+                                      } else {
+                                        buttonStyle = "border border-slate-300 dark:border-[#363c46] hover:border-slate-405 dark:hover:border-[#2a2f38] rounded-full bg-transparent";
+                                        iconNode = null;
+                                      }
+                                    }
+
+                                    return (
+                                      <div key={field} className="col-span-2 flex justify-center">
+                                        <button
+                                          onClick={() => {
+                                            const updatedCourses = labCourses.map(c => {
+                                              if (c.id !== activeLabTab) return c;
+                                              return {
+                                                ...c,
+                                                exercises: c.exercises.map(e =>
+                                                  e.id === ex.id ? { ...e, [field]: !e[field] } : e
+                                                )
+                                              };
+                                            });
+                                            setLabCourses(updatedCourses);
+                                            localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updatedCourses));
+                                          }}
+                                          className={`w-6 h-6 flex items-center justify-center transition-all cursor-pointer active:scale-90 ${
+                                            isSigned ? "rounded-lg" : "rounded-full"
+                                          } ${buttonStyle}`}
+                                        >
+                                          {iconNode}
+                                        </button>
+                                      </div>
+                                    );
+                                  })}
                                   <div className="col-span-1 flex justify-center">
                                     <button
-                                      onClick={() => removeLabExercise(activeLab.id, ex.id)}
+                                      onClick={() => removeLabExercise(activeLab!.id, ex.id)}
                                       className="text-slate-400 hover:text-rose-500 transition-all p-1 rounded-lg hover:bg-rose-500/10 cursor-pointer active:scale-90"
                                     >
                                       <Trash2 className="w-3.5 h-3.5" />
@@ -4947,7 +4837,7 @@ export default function ToolsPage() {
                           {/* Add exercise at bottom */}
                           <div className="pt-2 border-t border-slate-100 dark:border-white/[0.03] flex justify-end">
                             <button
-                              onClick={() => addLabExercise(activeLab.id)}
+                              onClick={() => addLabExercise(activeLab!.id)}
                               className="px-3 py-1.5 bg-blue-500/10 hover:bg-blue-500/15 border border-blue-500/15 text-blue-600 dark:text-blue-400 rounded-2xl text-[10px] font-semibold uppercase transition-all cursor-pointer flex items-center gap-1 active:scale-95"
                             >
                               <Plus className="w-3.5 h-3.5" /> Add Experiment
@@ -4964,12 +4854,12 @@ export default function ToolsPage() {
 
           {/* TAB 4: 11TH-HOUR EXAM COMMAND PANEL */}
           {activeWorkspaceTab === "exam" && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
-              <div className="lg:col-span-6 space-y-4 sm:space-y-6">
-                {renderStudySequencer()}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
+              <div className="lg:col-span-8">
+                {renderStudyHub()}
               </div>
-              <div className="lg:col-span-6 space-y-4 sm:space-y-6">
-                {renderRevisionHub()}
+              <div className="lg:col-span-4">
+                {renderExamUtilities()}
               </div>
             </div>
           )}
@@ -4977,12 +4867,15 @@ export default function ToolsPage() {
         </div>
 
         {/* Advice Info bottom bar */}
-        <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] bg-slate-50/80 dark:bg-slate-900/40 text-[9.5px] font-bold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
+        <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-[#2a2f38] bg-slate-50/80 dark:bg-[#1e2228]/45 text-[9.5px] font-bold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
           <ShieldCheck className="w-4 h-4 text-slate-400 dark:text-slate-500 shrink-0" />
           <span>All data is saved locally in your browser. GPA, attendance, and lab progress update in real-time as you make changes.</span>
         </div>
 
       </main>
+
+      {renderDrawer(isCiePlannerOpen, () => setIsCiePlannerOpen(false), "CIE Target Planner", renderTargetPlanner())}
+      {renderDrawer(isSgpaAllocatorOpen, () => setIsSgpaAllocatorOpen(false), "SGPA Goal Estimator", renderSgpaGoalEstimator())}
     </div>
   );
 }

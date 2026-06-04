@@ -15,6 +15,17 @@ interface MagneticButtonProps {
 export const MagneticButton = ({ children, className = "", onClick, href, customShadow }: MagneticButtonProps) => {
   const ref = useRef<HTMLDivElement>(null);
   
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768 || window.matchMedia("(hover: none)").matches);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -23,7 +34,7 @@ export const MagneticButton = ({ children, className = "", onClick, href, custom
   const springY = useSpring(y, springConfig);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
+    if (!ref.current || isMobile) return;
     // Skip magnetic effect on touch devices to prevent jitter
     if (window.matchMedia("(hover: none)").matches) return;
     const { clientX, clientY } = e;
@@ -35,6 +46,7 @@ export const MagneticButton = ({ children, className = "", onClick, href, custom
   };
 
   const handleMouseLeave = () => {
+    if (isMobile) return;
     x.set(0);
     y.set(0);
   };
@@ -74,8 +86,8 @@ export const MagneticButton = ({ children, className = "", onClick, href, custom
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ x: springX, y: springY }}
-      whileHover={{ scale: 1.03 }}
+      style={isMobile ? {} : { x: springX, y: springY }}
+      whileHover={isMobile ? {} : { scale: 1.03 }}
       whileTap={{ scale: 0.97 }}
       transition={{ type: "spring", stiffness: 360, damping: 22, mass: 0.45 }}
       className={`relative group ${widthClasses || "inline-block"}`}
