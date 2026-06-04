@@ -400,7 +400,11 @@ function DashboardContent() {
       .then((res) => res.json())
       .then((data) => {
         if (active) {
-          setNoteContent(data.content || "");
+          if (data.error) {
+            setNoteContent(`Error loading note: ${data.error}`);
+          } else {
+            setNoteContent(data.content || "");
+          }
           setLoadingNote(false);
         }
       })

@@ -19,7 +19,7 @@ const nextConfig = {
   outputFileTracingIncludes: {
     '/api/notes': ['./notes/**/*', './src/data/topic-path-map.json'],
     '/api/subjects': ['./src/data/subjects/**/*'],
-    '/*': ['./notes/**/*', './src/data/**/*'],
+    '/**': ['./notes/**/*', './src/data/**/*'],
   },
 };
 
