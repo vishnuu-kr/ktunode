@@ -21,7 +21,6 @@ const nextConfig = {
     '/api/notes/route': ['./src/notes/**/*', './src/data/topic-path-map.json'],
     '/api/subjects': ['./src/data/subjects/**/*'],
     '/api/subjects/route': ['./src/data/subjects/**/*'],
-    '/**': ['./src/notes/**/*', './src/data/**/*'],
   },
 };
 
