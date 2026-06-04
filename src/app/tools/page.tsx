@@ -4559,7 +4559,7 @@ export default function ToolsPage() {
               <button
                 key={tabItem.id}
                 onClick={() => setActiveWorkspaceTab(tabItem.id as typeof activeWorkspaceTab)}
-                className={`px-4 py-2.5 rounded-[16px] text-[10px] font-black uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 justify-center min-w-0 active:scale-[0.97] ${
+                className={`px-4 py-2.5 rounded-[16px] text-[10px] font-black uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 shrink-0 whitespace-nowrap justify-center min-w-max active:scale-[0.97] ${
                   isActive
                     ? "bg-[#2E95FF] text-white border border-[#2E95FF]/20 shadow-[0_4px_12px_rgba(46,149,255,0.25)]"
                     : "bg-transparent text-slate-500/80 hover:text-slate-800 dark:text-slate-400/80 dark:hover:text-slate-200 hover:bg-slate-200/30 dark:hover:bg-white/[0.02]"
