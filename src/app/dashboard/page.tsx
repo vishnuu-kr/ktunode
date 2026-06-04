@@ -1212,7 +1212,7 @@ function DashboardContent() {
 
       <Navbar />
 
-      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-28 md:pt-32 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none">
+      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 md:pt-24 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none">
         <AnimatePresence mode="wait">
           {isTransitioning && (
             <motion.div
