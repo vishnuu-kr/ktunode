@@ -3211,7 +3211,7 @@ export default function ToolsPage() {
 
     return (
       <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden">
-        {/* Unified Header */}
+                {/* ——————— UNIFIED HEADER ——————— */}
         <div className="px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center gap-3">
@@ -3465,7 +3465,7 @@ export default function ToolsPage() {
                               {act.type === "count" && (
                                 <div className="flex items-center gap-2">
                                   <input type="number" min="1" placeholder="Qty" value={inlineSelQuantity} onChange={(e) => setInlineSelQuantity(Math.max(1, Number(e.target.value)))} className="w-20 bg-white dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold font-mono text-[10px] focus:outline-none" />
-                                  <span className="text-[9px] text-slate-400">Ã— {act.pointsPerUnit || act.maxPoints} pts each</span>
+                                  <span className="text-[9px] text-slate-400">× {act.pointsPerUnit || act.maxPoints} pts each</span>
                                 </div>
                               )}
                               {act.type === "input" && (
@@ -3716,7 +3716,7 @@ export default function ToolsPage() {
     return (
       <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden w-full">
         
-        {/* Ã¢â€â‚¬Ã¢â€â‚¬ UNIFIED HEADER Ã¢â€â‚¬Ã¢â€â‚¬ */}
+                {/* ——————— UNIFIED HEADER ——————— */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/15 to-indigo-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -3741,7 +3741,7 @@ export default function ToolsPage() {
           </select>
         </div>
 
-        {/* Ã¢â€â‚¬Ã¢â€â‚¬ TOP HALF: SEQUENCER Ã¢â€â‚¬Ã¢â€â‚¬ */}
+        {/* ——————— TOP HALF: SEQUENCER ——————— */}
         <div className="px-5 py-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
             {/* Left: Modules + Slider */}
@@ -3815,10 +3815,10 @@ export default function ToolsPage() {
           </div>
         </div>
 
-        {/* Ã¢â€â‚¬Ã¢â€â‚¬ DIVIDER Ã¢â€â‚¬Ã¢â€â‚¬ */}
+        {/* ——————— DIVIDER ——————— */}
         <div className="border-t border-slate-200/50 dark:border-white/[0.05]" />
 
-        {/* Ã¢â€â‚¬Ã¢â€â‚¬ BOTTOM HALF: TIMER + SCRATCHPAD Ã¢â€â‚¬Ã¢â€â‚¬ */}
+        {/* ——————— BOTTOM HALF: TIMER + SCRATCHPAD ——————— */}
         <div className="px-5 py-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             
@@ -4060,7 +4060,7 @@ export default function ToolsPage() {
                 const CIE = mtRevalCie;
                 let gambleStatus = "Low Probability";
                 let gambleTheme = "bg-rose-500/5 text-rose-500 border-rose-500/20";
-                let details = "Revaluation fee (Ã¢â€šÂ¹600) is unlikely to yield results based on your low internal score.";
+                let details = "Revaluation fee (₹600) is unlikely to yield results based on your low internal score.";
 
                 if (mtRevalGrade === "F") {
                   if (CIE >= 22 && mtRevalExpected === "Excellent") {
@@ -4348,7 +4348,7 @@ export default function ToolsPage() {
                   <div key={idx} className="p-2.5 rounded-xl bg-slate-50/50 dark:bg-[#1a1f27]/40 border border-slate-200/40 dark:border-[#2a2f38] flex items-center justify-between text-[11px] hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-200">
                     <div className="truncate pr-2 min-w-0 flex-1">
                       <span className="font-bold text-slate-800 dark:text-slate-200 truncate block text-[11.5px]">{item.name}</span>
-                      <span className="text-[9px] text-slate-400 font-mono block mt-0.5">{item.code} Ã¢â‚¬Â¢ {item.credits} Credits</span>
+                      <span className="text-[9px] text-slate-400 font-mono block mt-0.5">{item.code} • {item.credits} Credits</span>
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
                       <span className="text-[10px] font-bold text-slate-400">{item.points.toFixed(1)} GP</span>
@@ -4462,13 +4462,13 @@ export default function ToolsPage() {
                 <span className="px-2.5 py-0.5 rounded-lg text-[9px] font-black tracking-widest uppercase bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15">
                   KTU Tools
                 </span>
-                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">Ã¢â‚¬Â¢ APJ Abdul Kalam University</span>
+                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">• APJ Abdul Kalam University</span>
               </div>
               <h1 className="text-xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight mt-1">
                 Study Tools
               </h1>
               <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-                Track grades, attendance, labs, and exam prep Ã¢â‚¬â€ all in one place.
+                Track grades, attendance, labs, and exam prep — all in one place.
               </p>
             </div>
 
@@ -4879,3 +4879,4 @@ export default function ToolsPage() {
     </div>
   );
 }
+
