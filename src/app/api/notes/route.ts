@@ -40,20 +40,18 @@ export async function GET(request: NextRequest) {
       return Response.json({ error: "Invalid path segment" }, { status: 400 });
     }
 
-    // Statically scope path for Turbopack NFT optimization
-    const filePath = path.join(process.cwd(), "src", "notes", relativePath.substring(6));
-    if (!fs.existsSync(filePath)) {
-      let rootFiles: string[] = [];
-      try { rootFiles = fs.readdirSync(process.cwd()); } catch(e) {}
-      let notesFiles: string[] = [];
-      try { notesFiles = fs.readdirSync(path.join(process.cwd(), "src", "notes")); } catch(e) {}
-      
+    const host = request.headers.get("host") || "localhost:3000";
+    const protocol = host.startsWith("localhost") || host.startsWith("127.0.0.1") ? "http" : "https";
+    const noteUrl = `${protocol}://${host}/${relativePath}`;
+
+    const cdnResponse = await fetch(noteUrl);
+    if (!cdnResponse.ok) {
       return Response.json({ 
-        error: `Not found: ${filePath}. Root: [${rootFiles.join(', ')}]. Notes dir: [${notesFiles.join(', ')}]` 
-      }, { status: 404 });
+        error: `Failed to fetch note from CDN (${cdnResponse.status}): ${noteUrl}` 
+      }, { status: cdnResponse.status });
     }
 
-    const fileContent = fs.readFileSync(filePath, "utf8");
+    const fileContent = await cdnResponse.text();
 
     // Clean/strip YAML frontmatter
     let markdown = fileContent;

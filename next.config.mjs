@@ -17,8 +17,8 @@ const nextConfig = {
     ];
   },
   outputFileTracingIncludes: {
-    '/api/notes': ['./src/notes/**/*', './src/data/topic-path-map.json'],
-    '/api/notes/route': ['./src/notes/**/*', './src/data/topic-path-map.json'],
+    '/api/notes': ['./src/data/topic-path-map.json'],
+    '/api/notes/route': ['./src/data/topic-path-map.json'],
     '/api/subjects': ['./src/data/subjects/**/*'],
     '/api/subjects/route': ['./src/data/subjects/**/*'],
   },
