@@ -43,9 +43,9 @@ export async function GET(request: NextRequest) {
     // Statically scope path for Turbopack NFT optimization
     const filePath = path.join(/*turbopackIgnore: true*/ process.cwd(), "notes", relativePath.substring(6));
     if (!fs.existsSync(filePath)) {
-      let rootFiles = [];
+      let rootFiles: string[] = [];
       try { rootFiles = fs.readdirSync(process.cwd()); } catch(e) {}
-      let notesFiles = [];
+      let notesFiles: string[] = [];
       try { notesFiles = fs.readdirSync(path.join(process.cwd(), "notes")); } catch(e) {}
       
       return Response.json({ 
