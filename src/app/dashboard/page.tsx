@@ -1797,7 +1797,7 @@ function DashboardContent() {
                     goTopic(prevTopic, selectedSubject!);
                   }
                 }}
-                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 dark:bg-slate-900/96 overflow-hidden min-h-[60vh] relative shadow-sm dark:shadow-[0_16px_50px_rgba(0,0,0,0.3)] pb-6 md:pb-8"
+                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 dark:bg-slate-900/96 overflow-hidden min-h-[60vh] relative shadow-sm dark:shadow-[0_16px_50px_rgba(0,0,0,0.3)] pb-28 md:pb-32"
               >
                 <div className="mb-6 md:mb-8 border-b border-slate-100 dark:border-slate-800 pb-6 md:pb-8 pt-6 md:pt-8 flex items-start justify-between gap-4 max-w-3xl mx-auto px-4 md:px-0">
                   <h1 
@@ -1848,7 +1848,7 @@ function DashboardContent() {
                 </div>
 
                 {selectedTopic.pyqs && selectedTopic.pyqs.length > 0 && (
-                  <div className="mt-10 md:mt-12 max-w-3xl mx-auto bg-gradient-to-br from-indigo-50 to-white dark:from-indigo-950/20 dark:to-slate-900/60 border border-indigo-200/70 dark:border-indigo-900/30 rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-[0_8px_30px_rgba(99,102,241,0.08)] dark:shadow-none relative overflow-hidden">
+                  <div className="mt-10 md:mt-12 mx-4 sm:mx-6 md:mx-auto max-w-3xl bg-gradient-to-br from-indigo-50 to-white dark:from-indigo-950/20 dark:to-slate-900/60 border border-indigo-200/70 dark:border-indigo-900/30 rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-[0_8px_30px_rgba(99,102,241,0.08)] dark:shadow-none relative overflow-hidden mb-6 md:mb-8">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 relative z-10 border-b border-indigo-100/50 dark:border-indigo-900/30 pb-3">
                       <div className="flex items-center gap-2">
                         <div className="w-6 h-6 rounded-lg bg-indigo-500 text-white flex items-center justify-center shadow-sm shrink-0">
@@ -1869,7 +1869,7 @@ function DashboardContent() {
 
                 {/* Recommended Watch Section (only render if there are actually links in the note markdown) */}
                 {extractedVideos && (extractedVideos.concept || extractedVideos.lecture || extractedVideos.solved) && (
-                  <div className="mt-8 max-w-3xl mx-auto bg-white dark:bg-slate-900/50 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-sm dark:shadow-none relative overflow-hidden mb-8 md:mb-12">
+                  <div className="mt-8 mx-4 sm:mx-6 md:mx-auto max-w-3xl bg-white dark:bg-slate-900/50 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-sm dark:shadow-none relative overflow-hidden mb-6 md:mb-8">
                     <div className="flex items-start justify-between mb-5 md:mb-6">
                       <div>
                         <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">RECOMMENDED WATCH</h4>
