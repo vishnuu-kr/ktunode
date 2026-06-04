@@ -1244,7 +1244,7 @@ function DashboardContent() {
       <Navbar />
 
       <main 
-        className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-16 md:pt-20 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
+        className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-24 md:pt-28 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
         style={{ clipPath: "inset(1.25rem 0px 0px 0px)" }}
       >
         <AnimatePresence mode="wait">
@@ -1598,12 +1598,23 @@ function DashboardContent() {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1"
             >
-              <button onClick={goHome} className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors mb-8 group">
-                <div className="w-8 h-8 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:border-slate-300 dark:group-hover:border-slate-700 shadow-sm">
-                  <ChevronLeft className="w-4 h-4 text-slate-500 dark:text-slate-400" />
-                </div>
-                Back to Dashboard
-              </button>
+              <div className="flex items-center justify-between mb-8">
+                <button onClick={goHome} className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors group">
+                  <div className="w-8 h-8 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:border-slate-300 dark:group-hover:border-slate-700 shadow-sm">
+                    <ChevronLeft className="w-4 h-4 text-slate-500 dark:text-slate-400" />
+                  </div>
+                  Back to Dashboard
+                </button>
+
+                {subjectShareUrl && (
+                  <ShareButton
+                    url={subjectShareUrl}
+                    triggerHaptic={triggerHaptic}
+                    onShareSuccess={showToast}
+                    className="!w-8 !h-8 !rounded-full"
+                  />
+                )}
+              </div>
  
               <div className="mb-10 text-center md:text-left">
                 <span className="text-sm font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-2 block">{selectedSubject.code}</span>
@@ -1611,15 +1622,6 @@ function DashboardContent() {
                   <span className="gradient-text">{selectedSubject.name}</span>
                 </h1>
               </div>
-              {subjectShareUrl && (
-                <div className="flex justify-center md:justify-start gap-2 self-center md:self-end mb-6">
-                  <ShareButton
-                    url={subjectShareUrl}
-                    triggerHaptic={triggerHaptic}
-                    onShareSuccess={showToast}
-                  />
-                </div>
-              )}
               {selectedSubject.modules.length > 0 ? (
                 <div className="space-y-4 sm:space-y-6">
                   {selectedSubject.modules.map((module, index) => {
