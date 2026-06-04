@@ -1234,7 +1234,7 @@ function DashboardContent() {
       <div className="absolute inset-0 z-0 dot-grid opacity-[0.08] pointer-events-none" />
       <div className="absolute inset-0 z-0 noise-overlay opacity-[0.25] pointer-events-none" />
       <div className={`absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full ${theme.glowCircle1} blur-[160px] pointer-events-none z-0 bg-orb-1 transition-colors duration-500`} />
-      <div className={`absolute bottom-[-60px] left-[-60px] w-[600px] h-[600px] rounded-full ${theme.glowCircle2} blur-[140px] pointer-events-none z-0 bg-orb-2 transition-colors duration-500`} />
+      <div className={`absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full ${theme.glowCircle2} blur-[140px] pointer-events-none z-0 bg-orb-2 transition-colors duration-500 -translate-x-[60px] translate-y-[60px]`} />
       <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full ${theme.glowCircle3} blur-[120px] pointer-events-none z-0 bg-orb-3 transition-colors duration-500`} />
 
       <a href="#dashboard-heading" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg focus:shadow-md">
