@@ -825,11 +825,9 @@ function DashboardContent() {
   // Sync initial query params deep linking
   useEffect(() => {
     if (!isLoaded) return;
-    const params = new URLSearchParams(window.location.search);
-    const subjectId = params.get("subject");
-    const topicId = params.get("topic");
-    const openAuth = params.get("auth");
-    const openProfile = params.get("profile");
+    const qParams = new URLSearchParams(window.location.search);
+    const openAuth = qParams.get("auth");
+    const openProfile = qParams.get("profile");
 
     const cleanPath = `/${branch}/sem-${sem}`;
     if (openAuth === "open") {
@@ -845,10 +843,27 @@ function DashboardContent() {
       window.history.replaceState({}, "", `${cleanPath}?${newParams.toString()}`);
     }
 
+    // Resolve IDs using query or path segments
+    let subjectId = qParams.get("subject");
+    let topicId = qParams.get("topic");
+    const segments = window.location.pathname.split("/").filter(Boolean);
+    if (segments[0] === "notes") {
+      if (segments.length === 4) {
+        if (!subjectId) subjectId = segments[3];
+      }
+    } else {
+      if (segments.length === 3) {
+        if (!subjectId) subjectId = segments[2];
+      } else if (segments.length === 4) {
+        if (!subjectId) subjectId = segments[2];
+        if (!topicId) topicId = segments[3];
+      }
+    }
+
     if (topicId && subjectId) {
-      const targetSub = subjects.find(s => s.id === subjectId);
+      const targetSub = subjects.find(s => s.id.toLowerCase() === subjectId.toLowerCase());
       if (targetSub) {
-        const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id === topicId);
+        const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id.toLowerCase() === topicId.toLowerCase());
         if (targetTop) {
           setSelectedSubject(targetSub);
           setSelectedTopic(targetTop);
@@ -856,25 +871,38 @@ function DashboardContent() {
         }
       }
     } else if (subjectId) {
-      const targetSub = subjects.find(s => s.id === subjectId);
+      const targetSub = subjects.find(s => s.id.toLowerCase() === subjectId.toLowerCase());
       if (targetSub) {
         setSelectedSubject(targetSub);
         setView("subject");
       }
     }
-  }, [isLoaded, subjects]);
+  }, [isLoaded, subjects, branch, sem, params]);
 
   // Listen to popstate for browser back button syncing
   useEffect(() => {
     const handlePopState = () => {
-      const params = new URLSearchParams(window.location.search);
-      const subjectId = params.get("subject");
-      const topicId = params.get("topic");
+      const qParams = new URLSearchParams(window.location.search);
+      let subjectId = qParams.get("subject");
+      let topicId = qParams.get("topic");
+      const segments = window.location.pathname.split("/").filter(Boolean);
+      if (segments[0] === "notes") {
+        if (segments.length === 4) {
+          if (!subjectId) subjectId = segments[3];
+        }
+      } else {
+        if (segments.length === 3) {
+          if (!subjectId) subjectId = segments[2];
+        } else if (segments.length === 4) {
+          if (!subjectId) subjectId = segments[2];
+          if (!topicId) topicId = segments[3];
+        }
+      }
 
       if (topicId && subjectId) {
-        const targetSub = subjects.find(s => s.id === subjectId);
+        const targetSub = subjects.find(s => s.id.toLowerCase() === subjectId.toLowerCase());
         if (targetSub) {
-          const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id === topicId);
+          const targetTop = targetSub.modules.flatMap(m => m.topics).find(t => t.id.toLowerCase() === topicId.toLowerCase());
           if (targetTop) {
             setSelectedSubject(targetSub);
             setSelectedTopic(targetTop);
@@ -886,7 +914,7 @@ function DashboardContent() {
       }
 
       if (subjectId) {
-        const targetSub = subjects.find(s => s.id === subjectId);
+        const targetSub = subjects.find(s => s.id.toLowerCase() === subjectId.toLowerCase());
         if (targetSub) {
           setSelectedSubject(targetSub);
           setSelectedTopic(null);
@@ -904,7 +932,7 @@ function DashboardContent() {
 
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
-  }, [subjects, triggerHaptic]);
+  }, [subjects, triggerHaptic, params, branch, sem]);
 
   // Handle Sign In / Sign Up submission
   const handleAuthSubmit = (e: React.FormEvent) => {
@@ -1050,13 +1078,8 @@ function DashboardContent() {
       setView("dashboard");
       setSelectedSubject(null);
       setSelectedTopic(null);
-      // Push history state preserving sem/branch
-      const params = new URLSearchParams(window.location.search);
-      params.delete("subject");
-      params.delete("topic");
       const cleanPath = `/${branch}/sem-${sem}`;
-      const newUrl = params.toString() ? `${cleanPath}?${params.toString()}` : cleanPath;
-      window.history.pushState({ view: "dashboard" }, "", newUrl);
+      window.history.pushState({ view: "dashboard" }, "", cleanPath);
     });
     triggerHaptic("light", event);
   };
@@ -1066,12 +1089,8 @@ function DashboardContent() {
       window.scrollTo({ top: 0, behavior: "smooth" });
       setSelectedSubject(subject);
       setView("subject");
-      // Push history state preserving sem/branch
-      const params = new URLSearchParams(window.location.search);
-      params.set("subject", subject.id);
-      params.delete("topic");
-      const cleanPath = `/${branch}/sem-${sem}`;
-      window.history.pushState({ view: "subject", subjectId: subject.id }, "", `${cleanPath}?${params.toString()}`);
+      const cleanPath = `/${branch}/sem-${sem}/${subject.id.toLowerCase()}`;
+      window.history.pushState({ view: "subject", subjectId: subject.id }, "", cleanPath);
     });
     triggerHaptic("medium", event);
   };
@@ -1085,12 +1104,8 @@ function DashboardContent() {
       setLastTopicId(topic.id);
       localStorage.setItem("ktunode_last_topic", topic.id);
       setView("topic");
-      // Push history state preserving sem/branch
-      const params = new URLSearchParams(window.location.search);
-      if (owner) params.set("subject", owner.id);
-      params.set("topic", topic.id);
-      const cleanPath = `/${branch}/sem-${sem}`;
-      window.history.pushState({ view: "topic", subjectId: owner?.id, topicId: topic.id }, "", `${cleanPath}?${params.toString()}`);
+      const cleanPath = `/${branch}/sem-${sem}/${owner ? owner.id.toLowerCase() : ""}/${topic.id.toLowerCase()}`;
+      window.history.pushState({ view: "topic", subjectId: owner?.id, topicId: topic.id }, "", cleanPath);
     });
     setCommandOpen(false);
     triggerHaptic("medium", event);
