@@ -552,6 +552,9 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
     processedContent = processedContent.replace(/^#\s+.+\n*/m, "");
   }
 
+  // Strip duplicate Topic headings
+  processedContent = processedContent.replace(/^#{2,3}\s+Topic:\s*.+\n*/gmi, "");
+
   const blocks = parseBlocks(processedContent);
 
   return (

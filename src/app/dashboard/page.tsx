@@ -273,9 +273,9 @@ const getSubjectDomain = (subject: Subject | null): string => {
   
   if (name.includes("chemistry")) return "chemistry";
   if (name.includes("math") || name.includes("mathematics") || name.includes("calculus") || name.includes("discrete")) return "math";
-  if (id.includes("-cs-") || name.includes("computer science") || name.includes("programming") || name.includes("data structure") || name.includes("algorithm")) return "cs";
-  if (id.includes("-ee-") || id.includes("-ec-") || name.includes("electrical") || name.includes("electronics") || name.includes("circuit") || name.includes("signal")) return "ee_ec";
-  if (id.includes("-me-") || id.includes("-ce-") || name.includes("mechanical") || name.includes("civil") || name.includes("mechanics") || name.includes("fluid") || name.includes("thermo")) return "mech_civil";
+  if (id.includes("-cs-") || id.includes("cst") || id.includes("cs-") || id.includes("cs") || name.includes("computer science") || name.includes("programming") || name.includes("data structure") || name.includes("algorithm") || name.includes("coding")) return "cs";
+  if (id.includes("-ee-") || id.includes("-ec-") || id.includes("ect") || name.includes("electrical") || name.includes("electronics") || name.includes("circuit") || name.includes("signal")) return "ee_ec";
+  if (id.includes("-me-") || id.includes("-ce-") || id.includes("met") || id.includes("cet") || name.includes("mechanical") || name.includes("civil") || name.includes("mechanics") || name.includes("fluid") || name.includes("thermo")) return "mech_civil";
   return "general";
 };
 
@@ -1325,7 +1325,7 @@ function DashboardContent() {
                   <div className="flex items-center gap-3 self-stretch md:self-auto shrink-0 justify-between md:justify-end">
 
                     {/* Unified Progress Card for Mobile and Desktop */}
-                    <div className="flex flex-col gap-2 bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] p-4.5 rounded-[20px] shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] dark:shadow-none min-w-[160px] md:min-w-[180px] backdrop-blur-md relative overflow-hidden group self-stretch shrink-0">
+                    <div className="flex flex-col gap-2 bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] p-4.5 rounded-3xl shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] dark:shadow-none min-w-[160px] md:min-w-[180px] backdrop-blur-md relative overflow-hidden group self-stretch shrink-0">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-slate-900/[0.01] dark:bg-white/[0.01] rounded-full blur-xl pointer-events-none" />
                       <div className="flex items-center justify-between gap-4 w-full">
                         <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Overall Progress</span>
@@ -1351,7 +1351,7 @@ function DashboardContent() {
                 {/* Next Exam Card (mobile only) */}
                 {nextExam && (
                   <div className="w-full lg:hidden z-10">
-                    <div className="w-full flex items-center justify-between gap-3 px-4 py-3 bg-white/70 dark:bg-slate-900/70 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-[20px] backdrop-blur-md shadow-sm">
+                    <div className="w-full flex items-center justify-between gap-3 px-4 py-3 bg-white/70 dark:bg-slate-900/70 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-3xl backdrop-blur-md shadow-sm">
                       <div className="flex items-center gap-3 min-w-0 flex-1">
                         <div className="w-9 h-9 rounded-xl bg-indigo-500/[0.06] border border-indigo-500/[0.1] flex items-center justify-center text-indigo-600 shrink-0">
                           <Clock className="w-4 h-4" />
@@ -1400,7 +1400,7 @@ function DashboardContent() {
                 <button
                   type="button"
                   onClick={() => setCommandOpen(true)}
-                  className="w-full flex items-center gap-3 px-4 md:px-5 py-3.5 md:py-4 rounded-xl md:rounded-[20px] bg-white/65 dark:bg-slate-900/65 hover:bg-white hover:dark:bg-slate-900 border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] hover:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] cursor-pointer transition-all duration-300 text-slate-400 font-medium backdrop-blur-md text-left"
+                  className="w-full flex items-center gap-3 px-4 md:px-5 py-3.5 md:py-4 rounded-2xl md:rounded-3xl bg-white/65 dark:bg-slate-900/65 hover:bg-white hover:dark:bg-slate-900 border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] hover:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] hover:dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] cursor-pointer transition-all duration-300 text-slate-400 font-medium backdrop-blur-md text-left"
                   aria-label="Search Syllabus (Press Ctrl K to search anytime)"
                 >
                   <Search className="w-5 h-5 text-slate-400 shrink-0" />
@@ -1412,7 +1412,7 @@ function DashboardContent() {
                 </button>
 
                 {resumeTarget && (
-                  <div className={`relative rounded-xl md:rounded-[20px] overflow-hidden bg-white/65 dark:bg-slate-900/65 border transition-all duration-300 backdrop-blur-md p-5 md:p-8 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] group hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] ${resumeTheme.border}`}>
+                  <div className={`relative rounded-2xl md:rounded-3xl overflow-hidden bg-white/65 dark:bg-slate-900/65 border transition-all duration-300 backdrop-blur-md p-5 md:p-8 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] group hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] ${resumeTheme.border}`}>
                     <div className="absolute inset-0 opacity-[0.01] bg-slate-950 pointer-events-none" />
                     
                     {/* Corner gradient glow matching subject theme */}
@@ -1484,7 +1484,7 @@ function DashboardContent() {
                                 scale: { type: "spring", stiffness: 300, damping: 20 }
                               }}
                               onClick={() => goSubject(subject)}
-                              className={`group relative flex flex-col justify-between p-6 border rounded-[20px] text-left transition-all duration-300 cursor-pointer backdrop-blur-md overflow-hidden ${scheme.bg} w-full`}
+                              className={`group relative flex flex-col justify-between p-6 border rounded-3xl text-left transition-all duration-300 cursor-pointer backdrop-blur-md overflow-hidden ${scheme.bg} w-full`}
                             >
                               {/* Dynamic Background Watermark */}
                               <div className="absolute -bottom-6 -right-6 opacity-[0.03] pointer-events-none transform -rotate-12 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-700 ease-out text-slate-900 dark:text-slate-100">
@@ -1552,7 +1552,7 @@ function DashboardContent() {
                 <TimetableWidget timetable={timetable} sem={sem} branch={branch} />
 
                 {pinnedTopicIds.length > 0 && (
-                  <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-4 sm:p-5 md:p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">
+                  <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-3xl p-4 sm:p-5 md:p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 rounded-xl bg-amber-500/[0.06] border border-amber-500/[0.15] flex items-center justify-center text-amber-600">
                         <Star className="w-4 h-4 fill-current animate-pulse" />
@@ -1596,7 +1596,7 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-full overflow-y-auto pb-32 px-1"
+              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1"
             >
               <button onClick={goHome} className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors mb-8 group">
                 <div className="w-8 h-8 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:border-slate-300 dark:group-hover:border-slate-700 shadow-sm">
@@ -1640,12 +1640,14 @@ function DashboardContent() {
                           onClick={() => setExpandedModules(prev => ({ ...prev, [module.id]: !isExpanded }))}
                           className={`px-6 py-5 flex flex-col md:flex-row md:items-center justify-between gap-4 cursor-pointer select-none hover:bg-slate-50/40 dark:hover:bg-slate-850/20 transition-all duration-300 ${isExpanded ? 'border-b' : ''} ${isModuleComplete ? 'bg-emerald-50/30 dark:bg-emerald-950/20 border-emerald-500/20 dark:border-emerald-900/30' : 'bg-white/50 dark:bg-slate-900/50 border-blue-50/50 dark:border-slate-800'}`}
                         >
-                          <h2 className="text-xl font-black text-slate-800 dark:text-slate-100 flex items-center gap-2.5 leading-snug">
-                            <ChevronDown className={`w-5 h-5 text-slate-400 dark:text-slate-500 transition-transform duration-350 shrink-0 ${isExpanded ? 'rotate-180' : ''}`} />
+                          <h2 className="text-xl font-black text-slate-800 dark:text-slate-100 flex items-start justify-between w-full gap-2.5 leading-snug">
                             <span className="flex-1 min-w-0 break-words">{module.title}</span>
-                            {isModuleComplete && (
-                              <BadgeCheck className="w-5 h-5 text-emerald-500 shrink-0" />
-                            )}
+                            <div className="flex items-center gap-2 shrink-0 mt-0.5">
+                              {isModuleComplete && (
+                                <BadgeCheck className="w-5 h-5 text-emerald-500 shrink-0" />
+                              )}
+                              <ChevronDown className={`w-5 h-5 text-slate-400 dark:text-slate-500 transition-transform duration-350 shrink-0 ${isExpanded ? 'rotate-180' : ''}`} />
+                            </div>
                           </h2>
                           {isLoaded && (
                             <div className="flex flex-col md:items-end items-start gap-2 shrink-0" onClick={(e) => e.stopPropagation()}>
@@ -1737,7 +1739,7 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-full overflow-y-auto pb-24 px-1 relative"
+              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-24 px-1 relative"
             >
               <button 
                 onClick={() => goSubject(selectedSubject!)} 
@@ -1763,7 +1765,7 @@ function DashboardContent() {
                     goTopic(prevTopic, selectedSubject!);
                   }
                 }}
-                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 dark:bg-slate-900/96 overflow-hidden min-h-[60vh] relative shadow-sm dark:shadow-[0_16px_50px_rgba(0,0,0,0.3)]"
+                className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 dark:bg-slate-900/96 overflow-hidden min-h-[60vh] relative shadow-sm dark:shadow-[0_16px_50px_rgba(0,0,0,0.3)] pb-28 md:pb-8"
               >
                 <div className="mb-6 md:mb-8 border-b border-slate-100 dark:border-slate-800 pb-6 md:pb-8 pt-6 md:pt-8 flex items-start justify-between gap-4 max-w-3xl mx-auto px-4 md:px-0">
                   <h1 
