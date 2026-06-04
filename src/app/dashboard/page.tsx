@@ -831,17 +831,18 @@ function DashboardContent() {
     const openAuth = params.get("auth");
     const openProfile = params.get("profile");
 
+    const cleanPath = `/${branch}/sem-${sem}`;
     if (openAuth === "open") {
       setAuthTab("signin");
       setAuthModalOpen(true);
       const newParams = new URLSearchParams(window.location.search);
       newParams.delete("auth");
-      window.history.replaceState({}, "", `${window.location.pathname}?${newParams.toString()}`);
+      window.history.replaceState({}, "", `${cleanPath}?${newParams.toString()}`);
     } else if (openProfile === "open") {
       setProfilePanelOpen(true);
       const newParams = new URLSearchParams(window.location.search);
       newParams.delete("profile");
-      window.history.replaceState({}, "", `${window.location.pathname}?${newParams.toString()}`);
+      window.history.replaceState({}, "", `${cleanPath}?${newParams.toString()}`);
     }
 
     if (topicId && subjectId) {
@@ -1053,7 +1054,8 @@ function DashboardContent() {
       const params = new URLSearchParams(window.location.search);
       params.delete("subject");
       params.delete("topic");
-      const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+      const cleanPath = `/${branch}/sem-${sem}`;
+      const newUrl = params.toString() ? `${cleanPath}?${params.toString()}` : cleanPath;
       window.history.pushState({ view: "dashboard" }, "", newUrl);
     });
     triggerHaptic("light", event);
@@ -1068,7 +1070,8 @@ function DashboardContent() {
       const params = new URLSearchParams(window.location.search);
       params.set("subject", subject.id);
       params.delete("topic");
-      window.history.pushState({ view: "subject", subjectId: subject.id }, "", `?${params.toString()}`);
+      const cleanPath = `/${branch}/sem-${sem}`;
+      window.history.pushState({ view: "subject", subjectId: subject.id }, "", `${cleanPath}?${params.toString()}`);
     });
     triggerHaptic("medium", event);
   };
@@ -1086,7 +1089,8 @@ function DashboardContent() {
       const params = new URLSearchParams(window.location.search);
       if (owner) params.set("subject", owner.id);
       params.set("topic", topic.id);
-      window.history.pushState({ view: "topic", subjectId: owner?.id, topicId: topic.id }, "", `?${params.toString()}`);
+      const cleanPath = `/${branch}/sem-${sem}`;
+      window.history.pushState({ view: "topic", subjectId: owner?.id, topicId: topic.id }, "", `${cleanPath}?${params.toString()}`);
     });
     setCommandOpen(false);
     triggerHaptic("medium", event);
