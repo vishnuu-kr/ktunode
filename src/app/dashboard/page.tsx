@@ -1212,7 +1212,10 @@ function DashboardContent() {
 
       <Navbar />
 
-      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 md:pt-24 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none">
+      <main 
+        className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-16 md:pt-20 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
+        style={{ clipPath: "inset(1.25rem 0px 0px 0px)" }}
+      >
         <AnimatePresence mode="wait">
           {isTransitioning && (
             <motion.div
