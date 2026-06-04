@@ -2829,7 +2829,7 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         {/* Card Header with Live free marks badge */}
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
@@ -2868,7 +2868,7 @@ export default function ToolsPage() {
         {/* Subjects list rows */}
         <div className="space-y-3 max-h-[300px] overflow-y-auto pr-1 scrollbar-thin">
           {isTrackerEmpty ? (
-            <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-slate-200/60 dark:border-[#2a2f38] rounded-2xl bg-slate-50/50 dark:bg-[#1a1f27]/20">
+            <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-slate-200/60 dark:border-slate-800 rounded-2xl bg-slate-50/50 dark:bg-slate-900/20">
               <ListTodo className="w-8 h-8 text-zinc-600 mb-2.5" />
               <span className="text-[10px] font-bold text-zinc-550 uppercase tracking-widest mb-1">No Subjects Tracked</span>
               <span className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mb-3 text-center">Import your semester grid to start logging attendance data.</span>
@@ -2898,7 +2898,7 @@ export default function ToolsPage() {
               else if (pct < 85) { color = "text-blue-450"; progressBg = "bg-blue-500"; }
 
               return (
-                <div key={sub.id} className="p-3.5 rounded-2xl bg-slate-50/50 dark:bg-[#1a1f27]/40 border border-slate-200/40 dark:border-[#2a2f38] space-y-3">
+                <div key={sub.id} className="p-3.5 rounded-2xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.04] space-y-3">
                   <div className="flex justify-between items-center text-xs">
                     <div className="truncate pr-2">
                       <span className="font-bold text-[10px] block text-slate-900 dark:text-white truncate leading-none font-mono">{sub.code}</span>
@@ -2922,7 +2922,7 @@ export default function ToolsPage() {
                       <div className="flex justify-between text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-1 font-mono">
                         <span>Attended: {sub.attended} / {sub.total}</span>
                       </div>
-                      <div className="h-1.5 bg-slate-100 dark:bg-[#262b33] rounded-full overflow-hidden">
+                      <div className="h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                         <div className={`h-full ${progressBg} transition-all duration-300`} style={{ width: `${pct}%` }} />
                       </div>
                     </div>
@@ -2969,7 +2969,7 @@ export default function ToolsPage() {
     const allZero = mtAggSeries1 === 0 && mtAggSeries2 === 0 && mtAggAssg === 0 && mtAggAtt === 0;
 
     return (
-      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -2996,7 +2996,7 @@ export default function ToolsPage() {
                 setMtAggSeries1(v);
                 setMtDmgSeries1(v);
               }}
-              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
@@ -3007,7 +3007,7 @@ export default function ToolsPage() {
               max="50"
               value={mtAggSeries2}
               onChange={(e) => setMtAggSeries2(Math.min(50, Math.max(0, Number(e.target.value))))}
-              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
@@ -3021,7 +3021,7 @@ export default function ToolsPage() {
                 const v = Math.min(10, Math.max(0, Number(e.target.value)));
                 setMtAggAssg(v);
               }}
-              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
@@ -3035,13 +3035,13 @@ export default function ToolsPage() {
                 const v = Math.min(5, Math.max(0, Number(e.target.value)));
                 setMtAggAtt(v);
               }}
-              className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
         </div>
 
         {/* Aggregated CIE display */}
-        <div className="p-5 rounded-2xl border border-slate-200/60 dark:border-[#2a2f38] bg-slate-50/40 dark:bg-[#1a1f27]/40 text-center space-y-1">
+        <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-950/40 text-center space-y-1">
           <div className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase">Aggregated CIE Score</div>
           <div className="text-4xl font-light tracking-tight text-slate-900 dark:text-white font-mono">{totalCie.toFixed(1)} <span className="text-xs text-zinc-550">/ 50</span></div>
           <div className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mt-1">
@@ -3061,7 +3061,7 @@ export default function ToolsPage() {
             max="50"
             value={mtDmgTarget}
             onChange={(e) => setMtDmgTarget(Number(e.target.value))}
-            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-[#262b33]"
+            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-slate-800"
           />
 
           {(() => {
@@ -3133,7 +3133,7 @@ export default function ToolsPage() {
                 }
 
                 return (
-                  <div key={tg.grade} className="p-2 rounded-xl bg-slate-50/50 dark:bg-[#1a1f27]/20 border border-slate-200/40 dark:border-[#2a2f38] flex items-center justify-between">
+                  <div key={tg.grade} className="p-2 rounded-xl bg-slate-50/50 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.02] flex items-center justify-between">
                     <div>
                       <span className="font-bold text-slate-750 dark:text-slate-300 block">{tg.grade} Target</span>
                       <span className="text-[8px] text-slate-400 font-mono block mt-0.5">{tg.label}</span>
@@ -3210,7 +3210,7 @@ export default function ToolsPage() {
     ];
 
     return (
-      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 overflow-hidden">
                 {/* ——————— UNIFIED HEADER ——————— */}
         <div className="px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -3227,14 +3227,14 @@ export default function ToolsPage() {
             </div>
 
             {/* Sub-tab pills */}
-            <div className="flex items-center bg-slate-100/80 dark:bg-[#262b33] p-0.5 rounded-xl border border-slate-200/40 dark:border-[#363c46] self-start sm:self-center">
+            <div className="flex items-center bg-slate-100/80 dark:bg-slate-950/50 p-0.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] self-start sm:self-center">
               {subTabs.map(tab => (
                 <button
                   key={tab.id}
                   onClick={() => setGradSubTab(tab.id)}
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer active:scale-95 ${
                     gradSubTab === tab.id
-                      ? "bg-white dark:bg-[#2a2f38] text-blue-600 dark:text-blue-400 shadow-sm"
+                      ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                       : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
                   }`}
                 >
@@ -3244,7 +3244,7 @@ export default function ToolsPage() {
                     <span className={`text-[8px] font-black px-1.5 py-0.5 rounded-md font-mono ${
                       gradSubTab === tab.id
                         ? "bg-blue-500/10 text-blue-600 dark:text-blue-400"
-                        : "bg-slate-200/60 dark:bg-[#1a1f27]/60 text-slate-500 dark:text-slate-400"
+                        : "bg-slate-200/60 dark:bg-slate-700/60 text-slate-500 dark:text-slate-400"
                     }`}>{tab.badge}</span>
                   )}
                 </button>
@@ -3268,7 +3268,7 @@ export default function ToolsPage() {
                     <span className="text-xs font-bold text-slate-400 dark:text-slate-500">/ {calculatedPoints.totalRequired}</span>
                   </div>
                   <div className="mt-2">
-                    <div className="h-2 bg-slate-200 dark:bg-[#262b33] rounded-full overflow-hidden">
+                    <div className="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                       <div 
                         className={`h-full rounded-full transition-all duration-500 ${
                           calculatedPoints.isQualified ? "bg-emerald-500" : totalActivityPoints >= calculatedPoints.totalRequired * 0.5 ? "bg-blue-500" : "bg-amber-500"
@@ -3288,7 +3288,7 @@ export default function ToolsPage() {
                     <select
                       value={studentType}
                       onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
-                      className="bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-[9px] font-bold text-slate-700 dark:text-slate-300 focus:outline-none cursor-pointer w-full"
+                      className="bg-slate-55 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-2 py-1 text-[9px] font-bold text-slate-700 dark:text-slate-300 focus:outline-none cursor-pointer w-full"
                     >
                       <option value="regular">Regular (100 pts)</option>
                       <option value="lateral">Lateral (75 pts)</option>
@@ -3316,7 +3316,7 @@ export default function ToolsPage() {
                           <span className="text-[9px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">{grp.name}</span>
                           <span className={`text-[10px] font-black font-mono tabular-nums ${colors.text}`}>{grp.capped}/60</span>
                         </div>
-                        <div className="h-2 bg-slate-200/60 dark:bg-[#262b33] rounded-full overflow-hidden">
+                        <div className="h-2 bg-slate-200/60 dark:bg-slate-700/60 rounded-full overflow-hidden">
                           <div className={`h-full rounded-full transition-all duration-500 ${colors.bar}`} style={{ width: `${pct}%` }} />
                         </div>
                         <div className="text-[8px] text-slate-400 dark:text-slate-500 font-medium leading-snug">{grp.subtitle}</div>
@@ -3370,17 +3370,17 @@ export default function ToolsPage() {
                     placeholder="Search activities (e.g. NSS, sports, certificate)..."
                     value={activitySearchQuery}
                     onChange={(e) => setActivitySearchQuery(e.target.value)}
-                    className="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl text-[11px] font-medium text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-all"
+                    className="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-[11px] font-medium text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-all"
                   />
                 </div>
-                <div className="flex items-center bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl p-0.5 shrink-0">
+                <div className="flex items-center bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-0.5 shrink-0">
                   {(["All", "I", "II", "III"] as const).map(grp => (
                     <button
                       key={grp}
                       onClick={() => setActivityGuideGroup(grp)}
                       className={`px-2.5 py-1.5 rounded-lg text-[9px] font-bold transition-all cursor-pointer active:scale-95 ${
                         activityGuideGroup === grp
-                          ? "bg-white dark:bg-[#2a2f38] text-blue-600 dark:text-blue-400 shadow-sm"
+                          ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                           : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
                       }`}
                     >
@@ -3415,7 +3415,7 @@ export default function ToolsPage() {
                       <div key={act.code} className={`p-4 rounded-xl border transition-all duration-200 ${
                         isClaimed 
                           ? "bg-emerald-500/[0.03] dark:bg-emerald-500/[0.05] border-emerald-500/15 dark:border-emerald-500/15" 
-                          : "bg-slate-50 dark:bg-[#262b33] border-slate-200/60 dark:border-[#363c46] hover:border-slate-300 dark:hover:border-slate-500"
+                          : "bg-slate-50 dark:bg-slate-900/40 border-slate-200/60 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-500"
                       }`}>
                         <div className="flex items-start justify-between gap-3">
                           <div className="min-w-0 flex-1">
@@ -3454,29 +3454,29 @@ export default function ToolsPage() {
 
                         {/* Inline config */}
                         {isInlineAddActive && (
-                          <div className="mt-3 p-3 rounded-xl bg-slate-100 dark:bg-[#1a1f27] border border-slate-200/60 dark:border-[#363c46] flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-fade-in">
+                          <div className="mt-3 p-3 rounded-xl bg-slate-100 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800 flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-fade-in">
                             <div className="flex-1 space-y-1">
                               <span className="text-[8px] font-bold text-slate-400 dark:text-slate-500 block uppercase tracking-wider">Configure:</span>
                               {act.type === "level" && act.levels && (
-                                <select value={inlineSelLevel} onChange={(e) => setInlineSelLevel(e.target.value)} className="w-full bg-white dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-lg px-2 py-1.5 font-bold text-[10px] cursor-pointer text-slate-800 dark:text-slate-200 focus:outline-none">
+                                <select value={inlineSelLevel} onChange={(e) => setInlineSelLevel(e.target.value)} className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-2 py-1.5 font-bold text-[10px] cursor-pointer text-slate-800 dark:text-slate-200 focus:outline-none">
                                   {Object.keys(act.levels).map(lvl => (<option key={lvl} value={lvl}>{lvl} ({act.levels?.[lvl]} pts)</option>))}
                                 </select>
                               )}
                               {act.type === "count" && (
                                 <div className="flex items-center gap-2">
-                                  <input type="number" min="1" placeholder="Qty" value={inlineSelQuantity} onChange={(e) => setInlineSelQuantity(Math.max(1, Number(e.target.value)))} className="w-20 bg-white dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold font-mono text-[10px] focus:outline-none" />
+                                  <input type="number" min="1" placeholder="Qty" value={inlineSelQuantity} onChange={(e) => setInlineSelQuantity(Math.max(1, Number(e.target.value)))} className="w-20 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-2 py-1 text-center font-bold font-mono text-[10px] focus:outline-none" />
                                   <span className="text-[9px] text-slate-400">× {act.pointsPerUnit || act.maxPoints} pts each</span>
                                 </div>
                               )}
                               {act.type === "input" && (
                                 <div className="flex items-center gap-2">
-                                  <input type="number" min="1" max={act.maxPoints} placeholder="Pts" value={inlineSelPoints} onChange={(e) => setInlineSelPoints(Math.min(act.maxPoints, Math.max(0, Number(e.target.value))))} className="w-20 bg-white dark:bg-[#262b33] border border-slate-200 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold font-mono text-[10px] focus:outline-none" />
+                                  <input type="number" min="1" max={act.maxPoints} placeholder="Pts" value={inlineSelPoints} onChange={(e) => setInlineSelPoints(Math.min(act.maxPoints, Math.max(0, Number(e.target.value))))} className="w-20 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-2 py-1 text-center font-bold font-mono text-[10px] focus:outline-none" />
                                   <span className="text-[9px] text-slate-400">pts (max {act.maxPoints})</span>
                                 </div>
                               )}
                             </div>
                             <div className="flex items-center gap-1.5 shrink-0">
-                              <button onClick={() => setInlineAddCode(null)} className="px-3 py-1.5 rounded-lg bg-transparent border border-slate-200/60 dark:border-[#363c46] text-slate-500 hover:text-slate-700 dark:hover:text-white cursor-pointer text-[9px] font-bold transition-all active:scale-95">Cancel</button>
+                              <button onClick={() => setInlineAddCode(null)} className="px-3 py-1.5 rounded-lg bg-transparent border border-slate-200/60 dark:border-slate-800 text-slate-500 hover:text-slate-700 dark:hover:text-white cursor-pointer text-[9px] font-bold transition-all active:scale-95">Cancel</button>
                               <button onClick={() => handleConfirmInlineAdd(act)} className="px-4 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white cursor-pointer text-[9px] font-bold transition-all active:scale-95 shadow-sm">Confirm</button>
                             </div>
                           </div>
@@ -3505,7 +3505,7 @@ export default function ToolsPage() {
                   className={`flex-1 py-2 rounded-xl border text-[10px] font-bold transition-all cursor-pointer active:scale-[0.98] ${
                     progressionTarget === t.id
                       ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20"
-                      : "bg-slate-50 dark:bg-[#262b33] text-slate-500 dark:text-slate-400 border-slate-200/40 dark:border-[#363c46] hover:border-slate-300"
+                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-slate-200/40 dark:border-slate-800 hover:border-slate-300"
                   }`}
                 >
                   {t.label} (Need {t.need})
@@ -3524,7 +3524,7 @@ export default function ToolsPage() {
                     max="22"
                     value={progressionCredits[key as keyof typeof progressionCredits]}
                     onChange={(e) => handleProgressionCreditChange(key as any, Number(e.target.value))}
-                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-2.5 text-center font-bold text-base text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-all"
+                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2.5 text-center font-bold text-base text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-all"
                   />
                 </div>
               ))}
@@ -3556,18 +3556,18 @@ export default function ToolsPage() {
             {/* Backlog list */}
             <div className="space-y-2 max-h-[280px] overflow-y-auto pr-0.5">
               {backlogSubjects.length === 0 ? (
-                <div className="text-center py-10 border border-dashed border-slate-200/60 dark:border-[#363c46] rounded-xl">
-                  <AlertTriangle className="w-8 h-8 text-slate-300 dark:text-slate-500 mx-auto mb-2" />
+                <div className="text-center py-10 border border-dashed border-slate-200 dark:border-slate-700 rounded-xl">
+                  <AlertTriangle className="w-8 h-8 text-slate-300 dark:text-slate-600 mx-auto mb-2" />
                   <div className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">No backlogs logged</div>
                   <div className="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5">Add failed subjects below to track clearance progress.</div>
                 </div>
               ) : (
                 backlogSubjects.map(bl => (
-                  <div key={bl.id} className="p-3.5 rounded-xl bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] flex items-center justify-between gap-3 hover:border-slate-300 dark:hover:border-slate-600 transition-all">
+                  <div key={bl.id} className="p-3.5 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 flex items-center justify-between gap-3 hover:border-slate-300 dark:hover:border-slate-600 transition-all">
                     <div className="min-w-0">
                       <div className="flex items-center gap-2">
                         <span className="text-[11px] font-bold text-slate-900 dark:text-white font-mono">{bl.code}</span>
-                        <span className="text-[9px] text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-[#1a1f27] px-1.5 py-0.5 rounded font-mono">S{bl.semester}</span>
+                        <span className="text-[9px] text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded font-mono">S{bl.semester}</span>
                       </div>
                       <span className="text-[10px] text-slate-500 dark:text-slate-400 truncate block mt-0.5">{bl.name} • {bl.attempts} attempt{bl.attempts !== 1 ? "s" : ""}</span>
                     </div>
@@ -3595,7 +3595,7 @@ export default function ToolsPage() {
             </div>
 
             {/* Add backlog form */}
-            <div className="p-4 rounded-xl border border-slate-200/40 dark:border-[#363c46] bg-slate-50/50 dark:bg-[#262b33]/50 space-y-3">
+            <div className="p-4 rounded-xl border border-slate-200/40 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/20 space-y-3">
               <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-slate-400 dark:text-slate-500 block">Add Failed Subject</span>
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
                 <input
@@ -3603,19 +3603,19 @@ export default function ToolsPage() {
                   placeholder="Code"
                   value={backlogCode}
                   onChange={(e) => setBacklogCode(e.target.value)}
-                  className="bg-white dark:bg-[#1e2228] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-2 text-[10px] font-bold text-slate-900 dark:text-white uppercase placeholder-slate-400 focus:outline-none sm:col-span-2"
+                  className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-[10px] font-bold text-slate-900 dark:text-white uppercase placeholder-slate-400 focus:outline-none sm:col-span-2"
                 />
                 <input
                   type="text"
                   placeholder="Subject Name"
                   value={backlogName}
                   onChange={(e) => setBacklogName(e.target.value)}
-                  className="bg-white dark:bg-[#1e2228] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-2 col-span-2 sm:col-span-3 text-[10px] font-bold text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none"
+                  className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 col-span-2 sm:col-span-3 text-[10px] font-bold text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none"
                 />
                 <select
                   value={backlogSemester}
                   onChange={(e) => setBacklogSemester(Number(e.target.value))}
-                  className="bg-white dark:bg-[#1e2228] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-2 text-[10px] font-bold text-slate-900 dark:text-white focus:outline-none cursor-pointer font-mono"
+                  className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-2 py-2 text-[10px] font-bold text-slate-900 dark:text-white focus:outline-none cursor-pointer font-mono"
                 >
                   {[1, 2, 3, 4, 5, 6, 7, 8].map(s => (
                     <option key={s} value={s}>S{s}</option>
@@ -3714,7 +3714,7 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden w-full">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 overflow-hidden w-full">
         
                 {/* ——————— UNIFIED HEADER ——————— */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
@@ -3733,7 +3733,7 @@ export default function ToolsPage() {
               const selected = activeSemesterSubjects.find(s => s.code === e.target.value) || { code: e.target.value, name: "Selected Course" };
               setPlannerActiveSubject(selected);
             }}
-            className="bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-3 py-1.5 text-[10px] font-bold text-slate-800 dark:text-slate-200 focus:outline-none cursor-pointer max-w-[180px] sm:max-w-[240px] truncate"
+            className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-1.5 text-[10px] font-bold text-slate-800 dark:text-slate-200 focus:outline-none cursor-pointer max-w-[180px] sm:max-w-[240px] truncate"
           >
             {activeSemesterSubjects.map(sub => (
               <option key={sub.code} value={sub.code}>{sub.name || sub.code}</option>
@@ -3760,8 +3760,8 @@ export default function ToolsPage() {
                         isDone
                           ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-2 border-emerald-500/25"
                           : isCurrent
-                            ? "bg-slate-100 dark:bg-[#2a2f38] text-slate-900 dark:text-white border-2 border-blue-500/60"
-                            : "bg-slate-50/50 dark:bg-[#262b33]/40 text-slate-400 dark:text-slate-500 border border-slate-200/40 dark:border-[#2a2f38] opacity-60 hover:opacity-80"
+                            ? "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-500/60"
+                            : "bg-slate-50/50 dark:bg-slate-800/30 text-slate-400 dark:text-slate-500 border border-slate-200/40 dark:border-white/[0.04] opacity-60 hover:opacity-80"
                       }`}
                     >
                       Mod {num}
@@ -3780,7 +3780,7 @@ export default function ToolsPage() {
                     max="24"
                     value={mtCramHours}
                     onChange={(e) => setMtCramHours(Number(e.target.value))}
-                    className="flex-1 accent-blue-500 cursor-pointer h-1.5 rounded-lg bg-slate-200 dark:bg-[#262b33] appearance-none [&::-webkit-slider-thumb]:w-3.5 [&::-webkit-slider-thumb]:h-3.5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-blue-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:cursor-pointer"
+                    className="flex-1 accent-blue-500 cursor-pointer h-1.5 rounded-lg bg-slate-200 dark:bg-slate-700 appearance-none [&::-webkit-slider-thumb]:w-3.5 [&::-webkit-slider-thumb]:h-3.5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-blue-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:cursor-pointer"
                   />
                   <span className="text-sm font-bold font-mono text-slate-800 dark:text-slate-200 tabular-nums min-w-[52px] text-right">{mtCramHours} hrs</span>
                 </div>
@@ -3845,7 +3845,7 @@ export default function ToolsPage() {
                     setPomodoroActive(false);
                     setPomodoroTime(pomodoroMode === "focus" ? 1500 : 300);
                   }}
-                  className="w-9 h-9 rounded-xl bg-slate-100 dark:bg-[#2a2f38] text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 flex items-center justify-center transition-all cursor-pointer active:scale-95 border border-slate-200/50 dark:border-[#363c46]"
+                  className="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 flex items-center justify-center transition-all cursor-pointer active:scale-95 border border-slate-200/50 dark:border-slate-800"
                   title="Reset timer"
                 >
                   <RotateCcw className="w-4 h-4" />
@@ -3867,7 +3867,7 @@ export default function ToolsPage() {
                     setPomodoroMode(nextMode);
                     setPomodoroTime(nextMode === "focus" ? 1500 : 300);
                   }}
-                  className="w-9 h-9 rounded-xl bg-slate-100 dark:bg-[#2a2f38] text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 flex items-center justify-center transition-all cursor-pointer active:scale-95 border border-slate-200/50 dark:border-[#363c46]"
+                  className="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 flex items-center justify-center transition-all cursor-pointer active:scale-95 border border-slate-200/50 dark:border-slate-800"
                   title="Skip to next phase"
                 >
                   <SkipForward className="w-4 h-4" />
@@ -3893,7 +3893,7 @@ export default function ToolsPage() {
                         className={`py-2 px-1 rounded-xl border text-[8px] font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 active:scale-[0.97] ${
                           isActive
                             ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/25"
-                            : "bg-slate-50/50 dark:bg-[#262b33]/40 text-slate-400 dark:text-slate-500 border-slate-200/60 dark:border-[#363c46] hover:text-slate-600 dark:hover:text-slate-300"
+                            : "bg-slate-50/50 dark:bg-slate-800/30 text-slate-400 dark:text-slate-500 border border-slate-200/40 dark:border-white/[0.04] hover:text-slate-600 dark:hover:text-slate-300"
                         }`}
                       >
                         <SndIcon className="w-3.5 h-3.5" />
@@ -3915,7 +3915,7 @@ export default function ToolsPage() {
                 value={notepadText}
                 onChange={(e) => handleNotepadSave(e.target.value)}
                 placeholder="Type formulas, notes, or ideas here..."
-                className="w-full bg-slate-50/80 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl p-3 text-[11px] font-medium focus:outline-none focus:ring-1 focus:ring-blue-500/30 text-slate-800 dark:text-slate-200 min-h-[140px] resize-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
+                className="w-full bg-slate-50/80 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 text-[11px] font-medium focus:outline-none focus:ring-1 focus:ring-blue-500/30 text-slate-800 dark:text-slate-200 min-h-[140px] resize-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
               />
               <div className="flex items-center justify-between text-[9px] font-bold">
                 <span>
@@ -3942,7 +3942,7 @@ export default function ToolsPage() {
               {/* Generate Cram Strategy */}
               <button
                 onClick={handleGenerateCramStrategy}
-                className="w-full py-3 rounded-xl bg-slate-100 dark:bg-[#262b33] hover:bg-slate-200/80 dark:hover:bg-[#2d333b] text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-[#363c46] text-[10px] font-bold transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-2"
+                className="w-full py-3 rounded-xl bg-slate-100 dark:bg-slate-900 hover:bg-slate-200/80 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 text-[10px] font-bold transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-2"
               >
                 <Sparkles className="w-4 h-4 text-blue-500" />
                 Generate cram strategy
@@ -3957,7 +3957,7 @@ export default function ToolsPage() {
 
   const renderExamUtilities = () => {
     return (
-      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 overflow-hidden w-full">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 overflow-hidden w-full">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
           <div className="flex items-center gap-3">
@@ -3973,7 +3973,7 @@ export default function ToolsPage() {
 
         <div className="px-5 py-4 space-y-3">
           {/* Sub-tab pills */}
-          <div className="flex items-center gap-1 bg-slate-50/50 dark:bg-[#262b33] p-1 rounded-xl border border-slate-200/40 dark:border-[#363c46] w-fit">
+          <div className="flex items-center gap-1 bg-slate-50/50 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200/40 dark:border-slate-800 w-fit">
             {[
               { id: "checklist", label: "Checklist" },
               { id: "gamble", label: "Revaluation" },
@@ -3984,7 +3984,7 @@ export default function ToolsPage() {
                 onClick={() => setUtilityConsoleTab(sub.id as typeof utilityConsoleTab)}
                 className={`px-3 py-1.5 rounded-lg text-[8.5px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 ${
                   utilityConsoleTab === sub.id
-                    ? "bg-white dark:bg-[#2a2f38] text-blue-600 dark:text-blue-400 border border-slate-200/40 dark:border-[#363c46] shadow-sm"
+                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 border border-slate-200/40 dark:border-slate-800 shadow-sm"
                     : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
                 }`}
               >
@@ -4001,7 +4001,7 @@ export default function ToolsPage() {
                 {mtHallChecklist.map((item, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-2.5 p-2 rounded-xl bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] text-[10px] font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-[#2a3038] transition-all"
+                    className="flex items-center gap-2.5 p-2 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 text-[10px] font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-slate-800/60 transition-all"
                   >
                     <input
                       type="checkbox"
@@ -4024,7 +4024,7 @@ export default function ToolsPage() {
                   <select
                     value={mtRevalGrade}
                     onChange={(e) => setMtRevalGrade(e.target.value)}
-                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
+                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
                   >
                     <option value="F">F</option>
                     <option value="D">D</option>
@@ -4039,7 +4039,7 @@ export default function ToolsPage() {
                     min="0" max="50"
                     value={mtRevalCie}
                     onChange={(e) => setMtRevalCie(Math.min(50, Math.max(0, Number(e.target.value))))}
-                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-1 text-center font-bold text-xs text-slate-900 dark:text-white focus:outline-none"
+                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-2 py-1 text-center font-bold text-xs text-slate-900 dark:text-white focus:outline-none"
                   />
                 </div>
                 <div className="space-y-1">
@@ -4047,7 +4047,7 @@ export default function ToolsPage() {
                   <select
                     value={mtRevalExpected}
                     onChange={(e) => setMtRevalExpected(e.target.value)}
-                    className="w-full bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
+                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-2 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
                   >
                     <option value="Excellent">High</option>
                     <option value="Moderate">Medium</option>
@@ -4098,7 +4098,7 @@ export default function ToolsPage() {
           {/* Project Splits */}
           {utilityConsoleTab === "splits" && (
             <div className="space-y-3 animate-fade-in text-[10px] text-slate-600 dark:text-slate-400">
-              <div className="p-3 bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] rounded-xl space-y-1.5">
+              <div className="p-3 bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-xl space-y-1.5">
                 <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Seminar (max 100)</span>
                 <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                   <span>Report Quality</span>
@@ -4114,7 +4114,7 @@ export default function ToolsPage() {
                 </div>
               </div>
 
-              <div className="p-3 bg-slate-50/50 dark:bg-[#262b33] border border-slate-200/40 dark:border-[#363c46] rounded-xl space-y-1.5">
+              <div className="p-3 bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-xl space-y-1.5">
                 <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Project (max 100)</span>
                 <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                   <span>Faculty Guide</span>
@@ -4161,9 +4161,9 @@ export default function ToolsPage() {
     const cieVal = plannerCieScore;
 
     return (
-      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 shadow-lg space-y-4">
+      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-4 sm:p-5 shadow-lg space-y-4">
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-[#2a2f38]/40 pb-3">
+        <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-slate-800/20 pb-3">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-450">
               <Award className="w-5 h-5 animate-pulse" />
@@ -4180,7 +4180,7 @@ export default function ToolsPage() {
               const selected = availablePlannerSubjects.find(s => s.code === e.target.value);
               if (selected) setPlannerActiveSubject(selected);
             }}
-            className="bg-white dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-xl px-2.5 py-1 text-[10px] font-black cursor-pointer text-slate-850 dark:text-slate-100 focus:outline-none max-w-[150px] sm:max-w-[220px] truncate"
+            className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1 text-[10px] font-black cursor-pointer text-slate-850 dark:text-slate-100 focus:outline-none max-w-[150px] sm:max-w-[220px] truncate"
           >
             {availablePlannerSubjects.map(sub => (
               <option key={sub.code} value={sub.code}>{sub.name || sub.code}</option>
@@ -4189,7 +4189,7 @@ export default function ToolsPage() {
         </div>
 
         {/* CIE Slider control */}
-        <div className="p-3.5 rounded-2xl bg-slate-950/[0.01] dark:bg-white/[0.01] border border-slate-200/60 dark:border-[#2a2f38] space-y-3">
+        <div className="p-3.5 rounded-2xl bg-slate-950/[0.01] dark:bg-white/[0.01] border border-slate-200 dark:border-slate-800 space-y-3">
           <div className="flex justify-between items-center text-xs font-bold">
             <span className="text-slate-450">Continuous Internal Evaluation (CIE) score</span>
             <span className="text-violet-500 text-sm font-black tabular-nums">{cieVal} / 50</span>
@@ -4200,7 +4200,7 @@ export default function ToolsPage() {
             max="50"
             value={cieVal}
             onChange={(e) => setPlannerCieScore(Number(e.target.value))}
-            className="w-full accent-violet-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-[#262b33]"
+            className="w-full accent-violet-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-slate-800"
           />
           <div className="flex justify-between text-[8px] font-black text-slate-400 uppercase tracking-wider">
             <span>Minimum to write exam: 0</span>
@@ -4232,8 +4232,8 @@ export default function ToolsPage() {
                 neededEse = Math.max(40, Math.ceil(neededEse)); // ESE must be >= 40 to pass exam
               }
 
-              let badgeColor = "bg-slate-100 text-slate-500 dark:bg-[#262b33]/40 dark:text-slate-400";
-              let borderStyle = "border-slate-200 dark:border-[#2a2f38]";
+              let badgeColor = "bg-slate-100 text-slate-500 dark:bg-slate-800/40 dark:text-slate-400";
+              let borderStyle = "border-slate-200 dark:border-slate-800";
               if (!impossible) {
                 if (targetItem.grade === "S") { badgeColor = "bg-emerald-500/10 text-emerald-500 border-emerald-500/10"; borderStyle = "hover:border-emerald-400"; }
                 else if (targetItem.grade === "A+") { badgeColor = "bg-blue-500/10 text-blue-500 border-blue-500/10"; borderStyle = "hover:border-blue-400"; }
@@ -4242,7 +4242,7 @@ export default function ToolsPage() {
               }
 
               return (
-                <div key={targetItem.grade} className={`p-3 rounded-2xl border bg-white dark:bg-[#1a1f27] text-left flex items-center justify-between transition-all sm:${borderStyle}`}>
+                <div key={targetItem.grade} className={`p-3 rounded-2xl border bg-white dark:bg-slate-900 text-left flex items-center justify-between transition-all sm:${borderStyle}`}>
                   <div className="truncate pr-1.5">
                     <span className="text-[8px] font-black text-slate-400 block uppercase tracking-wider">{targetItem.label}</span>
                     <span className="font-black text-xs text-slate-855 dark:text-slate-100 block mt-1">Needed:</span>
@@ -4257,7 +4257,7 @@ export default function ToolsPage() {
         </div>
 
         {/* Live Pass/Fail Sandbox Checklist */}
-        <div className="p-3.5 rounded-2xl border border-slate-200/60 dark:border-[#2a2f38] bg-slate-950/[0.01] dark:bg-white/[0.01] space-y-2">
+        <div className="p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-950/[0.01] dark:bg-white/[0.01] space-y-2">
           <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-1">Pass/Fail Sandbox Audit</span>
           <div className="space-y-1.5 text-[10px] font-bold text-slate-500">
             <div className="flex items-center gap-1.5">
@@ -4295,7 +4295,7 @@ export default function ToolsPage() {
     const currentAllocSgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0;
 
     return (
-      <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         {/* Header */}
         <div className="flex items-center gap-2.5 border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -4308,7 +4308,7 @@ export default function ToolsPage() {
         </div>
 
         {/* Target SGPA Slider */}
-        <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#1a1f27]/40 border border-slate-200/60 dark:border-[#2a2f38] space-y-3">
+        <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/40 border border-slate-200/60 dark:border-slate-800 space-y-3">
           <div className="flex justify-between items-center text-xs font-bold text-slate-700 dark:text-slate-300">
             <span>Target SGPA Goal</span>
             <span className="text-blue-600 dark:text-blue-400 text-sm font-black tabular-nums">{targetSgpa.toFixed(2)} / 10.00</span>
@@ -4320,7 +4320,7 @@ export default function ToolsPage() {
             step="0.1"
             value={targetSgpa}
             onChange={(e) => setTargetSgpa(Number(e.target.value))}
-            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-[#262b33]"
+            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-slate-800"
           />
           <div className="flex justify-between text-[8px] font-bold text-slate-400 uppercase tracking-widest leading-none">
             <span>Min (5.5)</span>
@@ -4339,13 +4339,13 @@ export default function ToolsPage() {
           ) : (
             <div className="space-y-1.5 max-h-[220px] overflow-y-auto pr-1">
               {allocated.map((item, idx) => {
-                let badgeColor = "bg-slate-105 text-slate-500 dark:bg-[#262b33] dark:text-slate-400 border border-slate-250/20";
+                let badgeColor = "bg-slate-105 text-slate-500 dark:bg-slate-800 dark:text-slate-400 border border-slate-250/20";
                 if (item.grade === "S") badgeColor = "bg-emerald-500/10 text-emerald-600 dark:text-emerald-450 border border-emerald-500/15";
                 else if (item.grade.startsWith("A")) badgeColor = "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15";
                 else if (item.grade.startsWith("B")) badgeColor = "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/15";
                 
                 return (
-                  <div key={idx} className="p-2.5 rounded-xl bg-slate-50/50 dark:bg-[#1a1f27]/40 border border-slate-200/40 dark:border-[#2a2f38] flex items-center justify-between text-[11px] hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-200">
+                  <div key={idx} className="p-2.5 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.02] flex items-center justify-between text-[11px] hover:border-slate-355 dark:hover:border-slate-800 transition-all duration-200">
                     <div className="truncate pr-2 min-w-0 flex-1">
                       <span className="font-bold text-slate-800 dark:text-slate-200 truncate block text-[11.5px]">{item.name}</span>
                       <span className="text-[9px] text-slate-400 font-mono block mt-0.5">{item.code} • {item.credits} Credits</span>
@@ -4392,7 +4392,7 @@ export default function ToolsPage() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="fixed right-0 top-0 bottom-0 w-full max-w-md bg-white dark:bg-[#1e2228] border-l border-slate-200 dark:border-[#2a2f38] shadow-2xl p-5 md:p-6 z-50 overflow-y-auto space-y-6 flex flex-col"
+              className="fixed right-0 top-0 bottom-0 w-full max-w-md bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 shadow-2xl p-5 md:p-6 z-50 overflow-y-auto space-y-6 flex flex-col"
             >
               <div className="flex items-center justify-between border-b border-slate-200 dark:border-white/[0.06] pb-4 shrink-0">
                 <h3 className="text-sm font-black uppercase tracking-wider text-slate-900 dark:text-white">{title}</h3>
@@ -4437,7 +4437,7 @@ export default function ToolsPage() {
             initial={{ opacity: 0, y: 50, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 20, x: "-50%" }}
-            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-white/95 dark:bg-[#1e2228]/95 text-slate-900 dark:text-slate-50 shadow-2xl backdrop-blur-xl border border-slate-200/80 dark:border-[#2a2f38] text-xs font-bold flex items-center gap-2"
+            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 text-slate-900 dark:text-slate-50 shadow-2xl backdrop-blur-xl border border-slate-200/80 dark:border-white/[0.08] text-xs font-bold flex items-center gap-2"
           >
             <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 animate-pulse" />
             {showNotification}
@@ -4452,7 +4452,7 @@ export default function ToolsPage() {
         <div className="absolute bottom-10 right-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
 
         {/* --- PREMIUM COCKPIT TELEMETRY DENSITY HEADER --- */}
-        <div className="w-full bg-white/90 dark:bg-[#1e2228]/90 backdrop-blur-3xl border border-slate-200/80 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-3 sm:gap-4">
+        <div className="w-full bg-white/90 dark:bg-slate-950/85 backdrop-blur-3xl border border-slate-200/80 dark:border-white/[0.08] rounded-2xl p-4 sm:p-5 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-3 sm:gap-4">
           <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.03] blur-[40px] pointer-events-none" />
           
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06]">
@@ -4473,14 +4473,14 @@ export default function ToolsPage() {
             </div>
 
             {/* Selector Console */}
-            <div className="flex items-center gap-3 bg-slate-50/80 dark:bg-[#262b33]/60 p-2 rounded-xl border border-slate-200/60 dark:border-slate-200/40 dark:border-[#2a2f38] shrink-0 self-start md:self-auto shadow-inner">
+            <div className="flex items-center gap-3 bg-slate-50/80 dark:bg-slate-900/60 p-2 rounded-xl border border-slate-200/60 dark:border-slate-200/40 dark:border-white/[0.04] shrink-0 self-start md:self-auto shadow-inner">
               <div className="flex flex-col">
                 <span className="text-[8px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">Branch & Semester</span>
                 <div className="flex items-center gap-2 mt-1">
                   <select
                      value={branch}
                      onChange={(e) => handleBranchSemChange(e.target.value, sem)}
-                     className="bg-white dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                     className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
                   >
                     <option value="cs">Computer Science (CS)</option>
                     <option value="ec">Electronics (EC)</option>
@@ -4491,7 +4491,7 @@ export default function ToolsPage() {
                   <select
                     value={sem}
                     onChange={(e) => handleBranchSemChange(branch, Number(e.target.value))}
-                    className="bg-white dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
                   >
                     {Array.from({ length: 8 }, (_, idx) => (
                       <option key={idx} value={idx + 1}>Semester {idx + 1}</option>
@@ -4544,7 +4544,7 @@ export default function ToolsPage() {
         </div>
 
         {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR --- */}
-        <div className="bg-slate-100/80 dark:bg-[#1e2228]/60 p-1.5 rounded-[22px] border border-slate-200/50 dark:border-[#2a2f38] backdrop-blur-xl flex flex-nowrap items-center gap-1.5 w-full overflow-x-auto scrollbar-none shadow-inner">
+        <div className="bg-slate-100/80 dark:bg-slate-950/60 p-1.5 rounded-[22px] border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl flex flex-nowrap items-center gap-1.5 w-full overflow-x-auto scrollbar-none shadow-inner">
           {[
             { id: "attendance", label: "Attendance & CIE", icon: Activity },
             { id: "grades", label: "Grades & ESE", icon: Calculator },
@@ -4589,7 +4589,7 @@ export default function ToolsPage() {
 
           {/* TAB 2: GRADES & ESE TARGET PLANNER */}
           {activeWorkspaceTab === "grades" && (
-            <div className="w-full bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 relative overflow-hidden space-y-4 sm:space-y-5">
+            <div className="w-full bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 relative overflow-hidden space-y-4 sm:space-y-5">
               <div className="absolute top-0 right-0 w-[240px] h-[240px] rounded-full bg-blue-500/[0.03] blur-[60px] pointer-events-none -z-10" />
               
               <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] pb-4 gap-3">
@@ -4632,7 +4632,7 @@ export default function ToolsPage() {
                   placeholder="8.50"
                   value={converterGpa}
                   onChange={(e) => handleGpaConvert(e.target.value)}
-                  className="w-16 bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
+                  className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
                 />
                 <span>Score ⇌</span>
                 <input
@@ -4643,7 +4643,7 @@ export default function ToolsPage() {
                   placeholder="80.0"
                   value={converterPercentage}
                   onChange={(e) => handlePercentageConvert(e.target.value)}
-                  className="w-16 bg-slate-50 dark:bg-[#262b33] border border-slate-200/60 dark:border-[#363c46] rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
+                  className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
                 />
                 <span>Percentage (%)</span>
               </div>
@@ -4661,7 +4661,7 @@ export default function ToolsPage() {
           {/* TAB 5: LAB RECORD TRACKER */}
           {activeWorkspaceTab === "labs" && (
             <div className="grid grid-cols-1 gap-4 sm:gap-6">
-              <div className="bg-white/80 dark:bg-[#1e2228] backdrop-blur-xl border border-slate-200/60 dark:border-[#2a2f38] rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg dark:shadow-2xl dark:shadow-black/30 hover:border-slate-300 dark:hover:border-[#363c46] transition-all duration-300 w-full space-y-4">
+              <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
                 <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -4734,7 +4734,7 @@ export default function ToolsPage() {
                               {progressPct}%
                             </span>
                           </div>
-                          <div className="h-1.5 bg-slate-200 dark:bg-[#262b33] rounded-full overflow-hidden">
+                          <div className="h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
                             <div className={`h-full rounded-full transition-all duration-500 ${progressPct >= 80 ? "bg-emerald-500" : progressPct >= 50 ? "bg-blue-500" : "bg-amber-500"}`} style={{ width: `${progressPct}%` }} />
                           </div>
 
@@ -4750,7 +4750,7 @@ export default function ToolsPage() {
                             {activeLab!.exercises.map((ex) => {
                               const allDone = ex.logic && ex.record && ex.signed;
                               return (
-                                <div key={ex.id} className={`grid grid-cols-12 gap-2 items-center px-4 py-2.5 rounded-2xl border transition-all duration-300 ${allDone ? "bg-emerald-500/[0.02] border-emerald-500/20 dark:border-emerald-500/15" : "bg-slate-50/40 dark:bg-[#1a1f27]/10 border-slate-200/55 dark:border-[#2a2f38] hover:border-slate-300 dark:hover:border-[#363c46]"}`}>
+                                <div key={ex.id} className={`grid grid-cols-12 gap-2 items-center px-4 py-2.5 rounded-2xl border transition-all duration-300 ${allDone ? "bg-emerald-500/[0.02] border-emerald-500/20 dark:border-emerald-500/15" : "bg-slate-50/40 dark:bg-slate-900/10 border-slate-200/55 dark:border-slate-800/40 hover:border-slate-350 dark:hover:border-slate-700/60"}`}>
                                   <div className="col-span-5">
                                     <input
                                       type="text"
@@ -4783,7 +4783,7 @@ export default function ToolsPage() {
                                         buttonStyle = "bg-blue-500 text-white shadow-sm shadow-blue-500/20";
                                         iconNode = <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />;
                                       } else {
-                                        buttonStyle = "border border-slate-300 dark:border-[#363c46] hover:border-slate-405 dark:hover:border-[#2a2f38] bg-transparent text-slate-400 dark:text-slate-500";
+                                        buttonStyle = "border border-slate-300 dark:border-slate-700 hover:border-slate-450 dark:hover:border-slate-500 bg-transparent text-slate-400 dark:text-slate-500";
                                         iconNode = <Shield className="w-3.5 h-3.5 stroke-[2]" />;
                                       }
                                     } else {
@@ -4791,7 +4791,7 @@ export default function ToolsPage() {
                                         buttonStyle = "bg-emerald-550 text-white rounded-full shadow-sm shadow-emerald-500/20";
                                         iconNode = <Check className="w-3 h-3 stroke-[3]" />;
                                       } else {
-                                        buttonStyle = "border border-slate-300 dark:border-[#363c46] hover:border-slate-405 dark:hover:border-[#2a2f38] rounded-full bg-transparent";
+                                        buttonStyle = "border border-slate-300 dark:border-slate-700 hover:border-slate-450 dark:hover:border-slate-500 rounded-full bg-transparent";
                                         iconNode = null;
                                       }
                                     }
@@ -4867,7 +4867,7 @@ export default function ToolsPage() {
         </div>
 
         {/* Advice Info bottom bar */}
-        <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-[#2a2f38] bg-slate-50/80 dark:bg-[#1e2228]/45 text-[9.5px] font-bold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
+        <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] bg-slate-50/80 dark:bg-slate-900/40 text-[9.5px] font-bold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
           <ShieldCheck className="w-4 h-4 text-slate-400 dark:text-slate-500 shrink-0" />
           <span>All data is saved locally in your browser. GPA, attendance, and lab progress update in real-time as you make changes.</span>
         </div>
