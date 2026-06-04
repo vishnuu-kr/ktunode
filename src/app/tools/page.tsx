@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import GpaCalculator from "@/components/GpaCalculator";
 import { useTheme } from "next-themes";
 import { mockSubjects, Subject } from "@/lib/mockData";
+import ktu2024Scheme from "@/data/ktu_2024_scheme.json";
 import {
   Calculator,
   Sparkles,
@@ -28,9 +29,149 @@ import {
   ChevronUp,
   Percent,
   Play,
-  Pause
+  Pause,
+  FlaskConical,
+  Flame,
+  Share2,
+  Copy,
+  AlertCircle,
+  ShieldAlert,
+  HelpCircle,
+  Lightbulb,
+  Music,
+  CloudRain,
+  Coffee,
+  FileText,
+  Smile,
+  BookOpen,
+  Search,
+  Dices,
+  TrendingUp,
+  Save,
+  Gamepad2,
+  ExternalLink,
+  ChevronRight,
+  User
 } from "lucide-react";
 
+const branchNameMapping: Record<string, string> = {
+  "cs": "Computer Science and Engineering",
+  "ce": "Civil Engineering",
+  "ec": "Electronics & Communication Engineering",
+  "ee": "Electrical and Electronics Engineering",
+  "me": "Mechanical Engineering"
+};
+
+const getCreditsForSubject = (subjCode: string, subjName: string, branch: string, sem: number): number => {
+  const fullBranchName = branchNameMapping[branch] || "Computer Science and Engineering";
+  const semData = (ktu2024Scheme as any)[fullBranchName]?.find((s: any) => s.semester === sem);
+  if (semData && semData.subjects) {
+    const matched = semData.subjects.find((s: any) => 
+      s.name.toLowerCase() === subjName.toLowerCase() ||
+      subjName.toLowerCase().includes(s.name.toLowerCase()) ||
+      s.name.toLowerCase().includes(subjName.toLowerCase())
+    );
+    if (matched) return matched.credits;
+  }
+  
+  const n = subjName.toLowerCase();
+  if (n.includes("lab") || n.includes("workshop") || n.includes("project") || n.includes("seminar") || n.includes("practical")) {
+    return 2;
+  }
+  if (n.includes("ethics") || n.includes("economics") || n.includes("constitution") || n.includes("life skills")) {
+    return 2;
+  }
+  if (subjCode.startsWith("PE") || subjCode.startsWith("OE")) {
+    return 3;
+  }
+  return 4;
+};
+
+const allocateGradesForTargetSgpa = (
+  subjectsList: Subject[],
+  target: number,
+  branch: string,
+  sem: number
+) => {
+  const gradesList = [
+    { grade: "S", gp: 10.0 },
+    { grade: "A+", gp: 9.0 },
+    { grade: "A", gp: 8.5 },
+    { grade: "B+", gp: 8.0 },
+    { grade: "B", gp: 7.5 },
+    { grade: "C+", gp: 7.0 },
+    { grade: "C", gp: 6.5 },
+    { grade: "D", gp: 6.0 },
+    { grade: "P", gp: 5.5 }
+  ];
+
+  if (subjectsList.length === 0) return [];
+
+  const allocated = subjectsList.map(sub => {
+    const cr = getCreditsForSubject(sub.code, sub.name, branch, sem);
+    return {
+      code: sub.code,
+      name: sub.name,
+      credits: cr,
+      gradeIdx: 5 // C+
+    };
+  });
+
+  const getSgpa = () => {
+    let pts = 0;
+    let totCr = 0;
+    allocated.forEach(item => {
+      pts += gradesList[item.gradeIdx].gp * item.credits;
+      totCr += item.credits;
+    });
+    return totCr > 0 ? pts / totCr : 0;
+  };
+
+  let iterations = 0;
+  while (getSgpa() < target && iterations < 100) {
+    let bestIdx = -1;
+    let maxCredits = -1;
+    for (let i = 0; i < allocated.length; i++) {
+      if (allocated[i].gradeIdx > 0 && allocated[i].credits > maxCredits) {
+        maxCredits = allocated[i].credits;
+        bestIdx = i;
+      }
+    }
+
+    if (bestIdx === -1) break;
+    allocated[bestIdx].gradeIdx--;
+    iterations++;
+  }
+
+  iterations = 0;
+  while (getSgpa() > target + 0.1 && iterations < 100) {
+    let bestIdx = -1;
+    let minCredits = 999;
+    for (let i = 0; i < allocated.length; i++) {
+      if (allocated[i].gradeIdx < gradesList.length - 1 && allocated[i].credits < minCredits) {
+        minCredits = allocated[i].credits;
+        bestIdx = i;
+      }
+    }
+
+    if (bestIdx === -1) break;
+    const prevIdx = allocated[bestIdx].gradeIdx;
+    allocated[bestIdx].gradeIdx++;
+    if (getSgpa() < target) {
+      allocated[bestIdx].gradeIdx = prevIdx;
+      break;
+    }
+    iterations++;
+  }
+
+  return allocated.map(item => ({
+    code: item.code,
+    name: item.name,
+    credits: item.credits,
+    grade: gradesList[item.gradeIdx].grade,
+    points: gradesList[item.gradeIdx].gp
+  }));
+};
 // Grade mappings to points
 const GRADE_POINTS: Record<string, number> = {
   "S": 10,
@@ -69,7 +210,6 @@ interface AttendanceSubject {
   name: string;
   attended: number;
   total: number;
-  cancelled?: number;
 }
 
 interface LabExercise {
@@ -1253,9 +1393,9 @@ const TOOLS = [
     category: "grades",
     icon: Award,
     color: "from-violet-500 to-purple-600 dark:from-violet-600/20 dark:to-purple-600/20",
-    iconColor: "text-violet-600 dark:text-violet-400",
-    bgColor: "bg-violet-500/10",
-    borderColor: "border-violet-500/15"
+    iconColor: "text-blue-600 dark:text-blue-400",
+    bgColor: "bg-blue-500/10",
+    borderColor: "border-blue-500/15"
   },
   {
     id: "sandbox",
@@ -1334,17 +1474,7 @@ const TOOLS = [
     bgColor: "bg-indigo-500/10",
     borderColor: "border-indigo-500/15"
   },
-  {
-    id: "honours",
-    title: "Honours & Minor Check",
-    kidDescription: "Verify if you can get special Honours or Minor degrees based on your grades and backlogs.",
-    category: "progression",
-    icon: GraduationCap,
-    color: "from-fuchsia-500 to-pink-600 dark:from-fuchsia-600/20 dark:to-pink-600/20",
-    iconColor: "text-fuchsia-600 dark:text-fuchsia-400",
-    bgColor: "bg-fuchsia-500/10",
-    borderColor: "border-fuchsia-500/15"
-  },
+
   {
     id: "timeline",
     title: "Working Days Timeline",
@@ -1443,22 +1573,25 @@ export default function ToolsPage() {
   const [sandboxCie, setSandboxCie] = useState("20");
   const [sandboxSubject, setSandboxSubject] = useState<{ name: string, code: string } | null>(null);
 
-  // Honours & Minor Tracker states
-  const [honoursBacklogs, setHonoursBacklogs] = useState(false);
-  const [minorBacklogs, setMinorBacklogs] = useState(0);
+  // Activity Guide inline config states
+  const [inlineAddCode, setInlineAddCode] = useState<string | null>(null);
+  const [inlineSelLevel, setInlineSelLevel] = useState<string>("");
+  const [inlineSelQuantity, setInlineSelQuantity] = useState<number>(1);
+  const [inlineSelPoints, setInlineSelPoints] = useState<number>(0);
 
   // Year-Back progression checks state
   const [progressionTarget, setProgressionTarget] = useState<"s5" | "s7">("s5");
   const [progressionCredits, setProgressionCredits] = useState({
-    s1: 22,
-    s2: 22,
-    s3: 22,
-    s4: 22
+    s1: 0,
+    s2: 0,
+    s3: 0,
+    s4: 0
   });
 
   // SGPA to Percentage Converter state
   const [converterGpa, setConverterGpa] = useState("8.50");
   const [converterPercentage, setConverterPercentage] = useState("80.0");
+  const [targetSgpa, setTargetSgpa] = useState<number>(8.5);
 
   // Attendance Marks check simulator state
   const [sandboxAttPct, setSandboxAttPct] = useState(85);
@@ -1506,13 +1639,13 @@ export default function ToolsPage() {
   // Tool 2: Attendance marks
   const [mtAttPct, setMtAttPct] = useState(82);
   // Tool 3: Internal Marks Aggregator
-  const [mtAggSeries1, setMtAggSeries1] = useState(38);
-  const [mtAggSeries2, setMtAggSeries2] = useState(35);
-  const [mtAggAssg, setMtAggAssg] = useState(8);
-  const [mtAggAtt, setMtAggAtt] = useState(4);
+  const [mtAggSeries1, setMtAggSeries1] = useState(0);
+  const [mtAggSeries2, setMtAggSeries2] = useState(0);
+  const [mtAggAssg, setMtAggAssg] = useState(0);
+  const [mtAggAtt, setMtAggAtt] = useState(0);
   // Tool 4: Series 2 Damage Control
   const [mtDmgSeries1, setMtDmgSeries1] = useState(25);
-  const [mtDmgTarget, setMtDmgTarget] = useState(35);
+  const [mtDmgTarget, setMtDmgTarget] = useState(25);
   const [mtDmgAssgAtt, setMtDmgAssgAtt] = useState(12);
   // Tool 5: ESE Target Finder
   const [mtEseInt, setMtEseInt] = useState(30);
@@ -1566,12 +1699,12 @@ export default function ToolsPage() {
   const [mtBunkReason, setMtBunkReason] = useState("heavy rain & syllabus completion buffer");
   // Tool 21: Exam Hall checklist
   const [mtHallChecklist, setMtHallChecklist] = useState<string[]>([
-    "Admit Card (Hall Ticket) 📄",
-    "University Approved Calculator (e.g. FX-991ES Plus) 🧮",
-    "College ID Card 🪪",
-    "Blue/Black Ballpoint Pens 🖋️",
-    "Pencil & Ruler 📐",
-    "Water Bottle 💧"
+    "Admit Card (Hall Ticket)",
+    "University Approved Calculator (e.g. FX-991ES Plus)",
+    "College ID Card",
+    "Blue/Black Ballpoint Pens",
+    "Pencil & Ruler",
+    "Water Bottle"
   ]);
   // Tool 22: Reval Gamble
   const [mtRevalGrade, setMtRevalGrade] = useState("C");
@@ -1587,8 +1720,50 @@ export default function ToolsPage() {
   const [mtCountdownTarget, setMtCountdownTarget] = useState("2026-07-15");
 
   // Redesign Master Navigation Workspace Tab State
-  const [activeWorkspaceTab, setActiveWorkspaceTab] = useState<"attendance" | "grades" | "graduation" | "exam">("attendance");
+  const [activeWorkspaceTab, setActiveWorkspaceTab] = useState<"attendance" | "grades" | "graduation" | "exam" | "labs">("attendance");
+  // --- NEW REDESIGN STATES ---
+  // Backlog tracker state
+  const [backlogSubjects, setBacklogSubjects] = useState<Array<{ id: string, code: string, name: string, semester: number, attempts: number, status: 'pending' | 'cleared' | 'registered' }>>([]);
+  const [backlogCode, setBacklogCode] = useState("");
+  const [backlogName, setBacklogName] = useState("");
+  const [backlogSemester, setBacklogSemester] = useState(1);
 
+  // Activity points dual-mode
+  const [activityMode, setActivityMode] = useState<"earn" | "calculator">("earn");
+  const [activitySearchQuery, setActivitySearchQuery] = useState("");
+  const [activityGuideGroup, setActivityGuideGroup] = useState<"All" | "I" | "II" | "III">("All");
+
+  // Attendance streak
+  const [attendanceStreak, setAttendanceStreak] = useState(0);
+
+  // Onboarding
+  const [showOnboarding, setShowOnboarding] = useState(false);
+
+
+
+
+  // Onboarding check
+  useEffect(() => {
+    if (!mounted) return;
+    const onboarded = localStorage.getItem("ktunode_tools_onboarded");
+    if (!onboarded) setShowOnboarding(true);
+    // Load streak
+    const streakData = localStorage.getItem("ktunode_attendance_streak");
+    if (streakData) {
+      try {
+        const parsed = JSON.parse(streakData);
+        const lastDate = new Date(parsed.lastDate);
+        const now = new Date();
+        const diffHours = (now.getTime() - lastDate.getTime()) / (1000 * 60 * 60);
+        if (diffHours < 48) setAttendanceStreak(parsed.count);
+      } catch {}
+    }
+    // Load backlogs
+    const savedBacklogs = localStorage.getItem("ktunode_tools_backlogs");
+    if (savedBacklogs) {
+      try { setBacklogSubjects(JSON.parse(savedBacklogs)); } catch {}
+    }
+  }, [mounted]);
 
   // Pomodoro timer ticking effect
   useEffect(() => {
@@ -1603,7 +1778,7 @@ export default function ToolsPage() {
         const nextMode = pomodoroMode === "focus" ? "break" : "focus";
         setPomodoroMode(nextMode);
         setPomodoroTime(nextMode === "focus" ? 1500 : 300);
-        triggerNotification(`Study Session Alert: ${nextMode === "focus" ? "Back to focus! 🚀" : "Time for a break! ☕"}`);
+        triggerNotification(`Study Session Alert: ${nextMode === "focus" ? "Back to focus! Time to concentrate." : "Time for a break! Rest up."}`);
       }, 0);
     }
     return () => {
@@ -1824,37 +1999,85 @@ export default function ToolsPage() {
       console.error("Failed to load subjects for tools:", err);
     }
 
-    // 1. SGPA Loading
+    // 1. SGPA Loading (Merged dynamically with database subjects)
     const savedSgpa = localStorage.getItem(`ktunode_tools_sgpa_${scopeKey}`);
-    if (savedSgpa) {
-      try { setSgpacourses(JSON.parse(savedSgpa)); } catch {}
-    } else {
-      const initial = defaultSubjects.map(s => ({
-        id: s.id,
-        name: s.name,
-        code: s.code,
-        credits: s.name.toLowerCase().includes("lab") ? 1 : 4,
-        grade: "S"
-      }));
-      setSgpacourses(initial);
-      localStorage.setItem(`ktunode_tools_sgpa_${scopeKey}`, JSON.stringify(initial));
-    }
+    let mergedSgpa: SGPACourse[] = [];
+    const defaultSgpaMap = defaultSubjects.map(s => ({
+      id: s.id,
+      name: s.name,
+      code: s.code,
+      credits: s.name.toLowerCase().includes("lab") ? 1 : 4,
+      grade: "S"
+    }));
 
-    // 2. Attendance Loading
-    const savedAttendance = localStorage.getItem(`ktunode_tools_attendance_${scopeKey}`);
-    if (savedAttendance) {
-      try { setAttendanceSubjects(JSON.parse(savedAttendance)); } catch {}
+    if (savedSgpa) {
+      try {
+        const savedList: SGPACourse[] = JSON.parse(savedSgpa);
+        mergedSgpa = defaultSgpaMap.map(defSub => {
+          const match = savedList.find(saved => saved.code === defSub.code || saved.id === defSub.id);
+          if (match) {
+            return {
+              ...defSub,
+              credits: match.credits,
+              grade: match.grade
+            };
+          }
+          return defSub;
+        });
+
+        // Retain custom courses
+        const customCourses = savedList.filter(saved => 
+          !defaultSubjects.some(def => def.code === saved.code || def.id === saved.id)
+        );
+        mergedSgpa.push(...customCourses);
+      } catch {
+        mergedSgpa = defaultSgpaMap;
+      }
     } else {
-      const initialAttendance = defaultSubjects.map(s => ({
-        id: s.id,
-        code: s.code,
-        name: s.name,
-        attended: 30,
-        total: 35
-      }));
-      setAttendanceSubjects(initialAttendance);
-      localStorage.setItem(`ktunode_tools_attendance_${scopeKey}`, JSON.stringify(initialAttendance));
+      mergedSgpa = defaultSgpaMap;
     }
+    setSgpacourses(mergedSgpa);
+    localStorage.setItem(`ktunode_tools_sgpa_${scopeKey}`, JSON.stringify(mergedSgpa));
+
+    // 2. Attendance Loading (Merged dynamically with database subjects)
+    const savedAttendance = localStorage.getItem(`ktunode_tools_attendance_${scopeKey}`);
+    let mergedAttendance: AttendanceSubject[] = [];
+    const defaultAttendanceMap = defaultSubjects.map(s => ({
+      id: s.id,
+      code: s.code,
+      name: s.name,
+      attended: 30,
+      total: 35
+    }));
+
+    if (savedAttendance) {
+      try {
+        const savedList: AttendanceSubject[] = JSON.parse(savedAttendance);
+        mergedAttendance = defaultAttendanceMap.map(defSub => {
+          const match = savedList.find(saved => saved.code === defSub.code || saved.id === defSub.id);
+          if (match) {
+            return {
+              ...defSub,
+              attended: match.attended,
+              total: match.total
+            };
+          }
+          return defSub;
+        });
+
+        // Retain custom subjects
+        const customSubjects = savedList.filter(saved => 
+          !defaultSubjects.some(def => def.code === saved.code || def.id === saved.id)
+        );
+        mergedAttendance.push(...customSubjects);
+      } catch {
+        mergedAttendance = defaultAttendanceMap;
+      }
+    } else {
+      mergedAttendance = defaultAttendanceMap;
+    }
+    setAttendanceSubjects(mergedAttendance);
+    localStorage.setItem(`ktunode_tools_attendance_${scopeKey}`, JSON.stringify(mergedAttendance));
 
     // 3. Labs Loading
     const savedLabs = localStorage.getItem(`ktunode_tools_labs_${scopeKey}`);
@@ -1908,9 +2131,7 @@ export default function ToolsPage() {
         if (savedActivities) setSelectedActivities(JSON.parse(savedActivities));
       } catch {}
 
-      // Load Honours / Minor Tracker inputs
-      setHonoursBacklogs(localStorage.getItem("ktunode_tools_honours_backlogs") === "true");
-      setMinorBacklogs(Number(localStorage.getItem("ktunode_tools_minor_backlogs")) || 0);
+
 
       // Load Year-Back Credits inputs
       try {
@@ -1941,6 +2162,7 @@ export default function ToolsPage() {
     setSem(newSem);
     localStorage.setItem("ktunode_branch", newBranch);
     localStorage.setItem("ktunode_semester", String(newSem));
+    triggerNotification(`Tools updated for ${newBranch.toUpperCase()} Semester ${newSem}`);
 
     // Scoped loader triggers
     loadSemesterData(newBranch, newSem);
@@ -2058,12 +2280,11 @@ export default function ToolsPage() {
     return totalClasses > 0 ? Math.round((totalAttended / totalClasses) * 100) : 100;
   };
 
-  const handleAttendanceChange = (id: string, type: "attended" | "total" | "cancelled", delta: number) => {
+  const handleAttendanceChange = (id: string, type: "attended" | "total", delta: number) => {
     const updated = attendanceSubjects.map(s => {
       if (s.id === id) {
         let newAttended = s.attended;
         let newTotal = s.total;
-        let newCancelled = s.cancelled || 0;
 
         if (type === "attended") {
           newAttended = Math.max(0, s.attended + delta);
@@ -2075,20 +2296,8 @@ export default function ToolsPage() {
           if (newAttended > newTotal) {
             newAttended = newTotal;
           }
-        } else if (type === "cancelled") {
-          newCancelled = Math.max(0, newCancelled + delta);
-          if (delta > 0) {
-            // Decrement total conducted classes
-            newTotal = Math.max(0, s.total - 1);
-            if (newAttended > newTotal) {
-              newAttended = newTotal;
-            }
-          } else if (delta < 0) {
-            // Revert conducted classes (increment total classes)
-            newTotal = s.total + 1;
-          }
         }
-        return { ...s, attended: newAttended, total: newTotal, cancelled: newCancelled };
+        return { ...s, attended: newAttended, total: newTotal };
       }
       return s;
     });
@@ -2281,6 +2490,57 @@ export default function ToolsPage() {
     triggerNotification("Activity removed.");
   };
 
+  const handleStartInlineAdd = (act: ActivityItem) => {
+    setInlineAddCode(act.code);
+    if (act.type === "level" && act.levels) {
+      setInlineSelLevel(Object.keys(act.levels)[0]);
+    } else {
+      setInlineSelQuantity(1);
+      setInlineSelPoints(act.pointsPerUnit || act.maxPoints);
+    }
+  };
+
+  const handleConfirmInlineAdd = (act: ActivityItem) => {
+    let pts = 0;
+    if (act.type === "level" && act.levels) {
+      pts = act.levels[inlineSelLevel] || 0;
+    } else if (act.type === "count" && act.pointsPerUnit) {
+      pts = Math.min(act.maxPoints, inlineSelQuantity * act.pointsPerUnit);
+    } else if (act.type === "input") {
+      pts = Math.min(act.maxPoints, inlineSelPoints);
+    } else if (act.type === "fixed" && act.pointsPerUnit) {
+      pts = act.pointsPerUnit;
+    }
+
+    const newClaim: ActivityClaim = {
+      id: "act_" + Math.random().toString(36).substring(2, 9),
+      activityCode: act.code,
+      level: act.type === "level" ? inlineSelLevel : undefined,
+      quantity: act.type === "count" ? inlineSelQuantity : undefined,
+      points: pts
+    };
+
+    const updated = [...selectedActivities, newClaim];
+    setSelectedActivities(updated);
+    localStorage.setItem("ktunode_tools_activities", JSON.stringify(updated));
+    setInlineAddCode(null);
+    triggerNotification(`Added ${act.code} (${pts} pts) successfully!`);
+  };
+
+  const handleDirectAddFixed = (act: ActivityItem) => {
+    const pts = act.pointsPerUnit || act.maxPoints;
+    const newClaim: ActivityClaim = {
+      id: "act_" + Math.random().toString(36).substring(2, 9),
+      activityCode: act.code,
+      points: pts
+    };
+
+    const updated = [...selectedActivities, newClaim];
+    setSelectedActivities(updated);
+    localStorage.setItem("ktunode_tools_activities", JSON.stringify(updated));
+    triggerNotification(`Added ${act.code} (${pts} pts) successfully!`);
+  };
+
   const handleStudentTypeChange = (type: "regular" | "lateral" | "pwd") => {
     setStudentType(type);
     localStorage.setItem("ktunode_tools_activity_student_type", type);
@@ -2304,7 +2564,7 @@ export default function ToolsPage() {
 
   const getActivityTallyTheme = (points: number, isQualified: boolean) => {
     const req = calculatedPoints.totalRequired;
-    if (isQualified) return { label: "Qualified ✅", barClass: "bg-gradient-to-r from-emerald-500 to-teal-500", textClass: "text-emerald-500" };
+    if (isQualified) return { label: "Qualified", barClass: "bg-gradient-to-r from-emerald-500 to-teal-500", textClass: "text-emerald-500" };
     if (points >= req * 0.75) return { label: "Total met (Check groups)", barClass: "bg-gradient-to-r from-amber-500 to-orange-500", textClass: "text-amber-500" };
     if (points >= req * 0.5) return { label: "Intermediate Progress", barClass: "bg-gradient-to-r from-indigo-500 to-violet-500", textClass: "text-indigo-500" };
     return { label: "Beginning Stage", barClass: "bg-gradient-to-r from-blue-500 to-sky-500", textClass: "text-blue-500" };
@@ -2480,7 +2740,7 @@ export default function ToolsPage() {
       let message = "My KTU Attendance Runway:\n";
       attendanceSubjects.forEach(sub => {
         const pct = sub.total > 0 ? Math.round((sub.attended / sub.total) * 100) : 0;
-        const totalSemDays = 90 - (sub.cancelled || 0);
+        const totalSemDays = 90;
         const target = 75;
         const totalNeededClasses = Math.ceil(totalSemDays * (target / 100));
         const remainingClasses = Math.max(0, totalSemDays - sub.total);
@@ -2489,54 +2749,63 @@ export default function ToolsPage() {
         const impossible = classesNeededToAttend > remainingClasses;
 
         if (impossible) {
-          message += `- ${sub.code}: ${pct}% (Danger of detention! 🚨)\n`;
+          message += `- ${sub.code}: ${pct}% (Danger of detention!)\n`;
         } else {
           message += `- ${sub.code}: ${pct}% (Safe to miss ${canMiss} more classes)\n`;
         }
       });
       message += "\nTrack your attendance runway on KTU Node!";
       navigator.clipboard.writeText(message);
-      triggerNotification("Attendance runway copied to clipboard! 📋");
+      triggerNotification("Attendance runway copied to clipboard!");
     };
 
     return (
-      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         {/* Card Header with Live free marks badge */}
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-400">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <Activity className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Attendance Log</h3>
-              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">S{sem} Active Attendance Runway</span>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Attendance Log</h3>
+                {attendanceStreak > 0 && (
+                  <span className="px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-500 border border-amber-500/15 text-[8.5px] font-bold uppercase tracking-wider flex items-center gap-0.5">
+                    <Flame className="w-3 h-3 text-amber-500 animate-pulse" /> {attendanceStreak}d streak
+                  </span>
+                )}
+              </div>
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">S{sem} Active Attendance Runway</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <button
-              onClick={handleShareRunway}
-              className="px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-600 dark:text-violet-400 text-[8px] font-bold uppercase tracking-wider hover:bg-violet-500/20 transition-all cursor-pointer active:scale-95"
-            >
-              Share Runway 📋
-            </button>
-            <div className="text-right">
-              <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block leading-none">Reward</span>
-              <span className={`text-xs font-black ${freeMarksColor} block mt-1 font-mono`}>{freeMarksLabel.split(" ")[0]}</span>
+          <div className="text-right relative group cursor-pointer shrink-0">
+            <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block leading-none">Reward</span>
+            <span className={`text-xs font-black ${freeMarksColor} block mt-1 font-mono`}>{freeMarksLabel.split(" ")[0]}</span>
+            <div className="absolute right-0 top-full mt-1.5 hidden group-hover:block w-48 p-2.5 bg-slate-800 text-white text-[9px] rounded-lg shadow-xl z-20 leading-relaxed text-left border border-slate-700">
+              <p className="font-bold border-b border-slate-700 pb-0.5 mb-1">KTU Attendance Marks:</p>
+              <ul className="space-y-0.5 font-mono text-[8.5px]">
+                <li>&ge; 90%: 5 marks</li>
+                <li>85% - 89%: 4 marks</li>
+                <li>80% - 84%: 3 marks</li>
+                <li>75% - 79%: 2 marks</li>
+                <li>&lt; 75%: Detention risk</li>
+              </ul>
             </div>
           </div>
         </div>
 
         {/* Subjects list rows */}
-        <div className="space-y-3 max-h-[260px] overflow-y-auto pr-1 scrollbar-thin">
+        <div className="space-y-3 max-h-[300px] overflow-y-auto pr-1 scrollbar-thin">
           {isTrackerEmpty ? (
-            <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-zinc-800 rounded-2xl bg-zinc-950/20">
+            <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-slate-200/60 dark:border-zinc-800 rounded-2xl bg-slate-50/50 dark:bg-white/40 dark:bg-slate-900/20">
               <ListTodo className="w-8 h-8 text-zinc-600 mb-2.5" />
               <span className="text-[10px] font-bold text-zinc-550 uppercase tracking-widest mb-1">No Subjects Tracked</span>
               <span className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mb-3 text-center">Import your semester grid to start logging attendance data.</span>
               <button
                 onClick={() => loadSemesterData(branch, sem)}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-violet-500/10 border border-violet-500/20 text-violet-600 dark:text-violet-400 text-[9px] font-bold uppercase tracking-wider hover:bg-violet-500/20 transition-all cursor-pointer active:scale-95"
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-[9px] font-bold uppercase tracking-wider hover:bg-blue-500/20 transition-all cursor-pointer active:scale-95"
               >
                 <Plus className="w-3.5 h-3.5" /> Import {branch.toUpperCase()} Semester {sem} Core Grid
               </button>
@@ -2546,7 +2815,7 @@ export default function ToolsPage() {
               const pct = sub.total > 0 ? Math.round((sub.attended / sub.total) * 100) : 0;
               
               // Safe cuts runway calculation
-              const totalSemDays = 90 - (sub.cancelled || 0);
+              const totalSemDays = 90;
               const target = 75; // KTU minimum requirement
               const totalNeededClasses = Math.ceil(totalSemDays * (target / 100));
               const remainingClasses = Math.max(0, totalSemDays - sub.total);
@@ -2560,7 +2829,7 @@ export default function ToolsPage() {
               else if (pct < 85) { color = "text-blue-450"; progressBg = "bg-blue-500"; }
 
               return (
-                <div key={sub.id} className="p-3.5 rounded-2xl bg-zinc-950/40 border border-slate-200/40 dark:border-white/[0.04] space-y-3">
+                <div key={sub.id} className="p-3.5 rounded-2xl bg-slate-50/50 dark:bg-white/60 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.04] space-y-3">
                   <div className="flex justify-between items-center text-xs">
                     <div className="truncate pr-2">
                       <span className="font-bold text-[10px] block text-slate-900 dark:text-white truncate leading-none font-mono">{sub.code}</span>
@@ -2569,87 +2838,39 @@ export default function ToolsPage() {
                     <div className="text-right shrink-0">
                       <span className={`font-bold text-[10px] block ${color} font-mono`}>{pct}%</span>
                       {impossible ? (
-                        <span className="text-[8px] font-bold text-rose-455 uppercase tracking-wider block mt-0.5 animate-pulse">Danger 🚨</span>
+                        <span className="text-[8px] font-bold text-rose-455 uppercase tracking-wider block mt-0.5 animate-pulse flex items-center gap-0.5 justify-end">
+                          <AlertCircle className="w-2.5 h-2.5 text-rose-500" /> Danger
+                        </span>
                       ) : (
                         <span className="text-[8px] font-semibold text-slate-500 dark:text-slate-400 block mt-0.5">Miss max: <strong className="text-emerald-450 font-mono">{canMiss}</strong></span>
                       )}
                     </div>
                   </div>
 
-                  {/* Cancelled class notification banner */}
-                  {(sub.cancelled || 0) > 0 && (
-                    <div className="px-2.5 py-1 rounded-xl bg-blue-500/5 text-[8.5px] font-bold text-blue-400 border border-blue-500/10 flex items-center gap-1.5 animate-pulse">
-                      <span>🎉 Cancelled: {sub.cancelled} classes (Woohoo! Free time! 🎮)</span>
-                    </div>
-                  )}
-
                   {/* Attendance Controls & ProgressBar */}
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
                     <div className="flex-1">
                       <div className="flex justify-between text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-1 font-mono">
-                        <span>Attended: {sub.attended}</span>
-                        <span>Total: {sub.total}</span>
+                        <span>Attended: {sub.attended} / {sub.total}</span>
                       </div>
-                      <div className="h-1 bg-zinc-800 rounded-full overflow-hidden">
+                      <div className="h-1.5 bg-slate-100 dark:bg-zinc-800 rounded-full overflow-hidden">
                         <div className={`h-full ${progressBg} transition-all duration-300`} style={{ width: `${pct}%` }} />
                       </div>
                     </div>
                     
-                    <div className="flex items-center gap-3 shrink-0">
-                      <div className="flex flex-col items-center">
-                        <span className="text-[7px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none mb-1">Present</span>
-                        <div className="flex gap-1">
-                          <button
-                            onClick={() => handleAttendanceChange(sub.id, "attended", 1)}
-                            className="w-5 h-5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-[10px] font-bold text-emerald-450 transition-all cursor-pointer flex items-center justify-center border border-emerald-500/10"
-                          >
-                            +
-                          </button>
-                          <button
-                            onClick={() => handleAttendanceChange(sub.id, "attended", -1)}
-                            className="w-5 h-5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-[10px] font-bold text-emerald-450 transition-all cursor-pointer flex items-center justify-center border border-emerald-500/10"
-                          >
-                            -
-                          </button>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-col items-center">
-                        <span className="text-[7px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none mb-1">Absent</span>
-                        <div className="flex gap-1">
-                          <button
-                            onClick={() => handleAttendanceChange(sub.id, "total", 1)}
-                            className="w-5 h-5 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 text-[10px] font-bold text-rose-455 transition-all cursor-pointer flex items-center justify-center border border-rose-500/10"
-                          >
-                            +
-                          </button>
-                          <button
-                            onClick={() => handleAttendanceChange(sub.id, "total", -1)}
-                            className="w-5 h-5 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 text-[10px] font-bold text-rose-455 transition-all cursor-pointer flex items-center justify-center border border-rose-500/10"
-                          >
-                            -
-                          </button>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-col items-center">
-                        <span className="text-[7px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none mb-1">Cancel</span>
-                        <div className="flex gap-1">
-                          <button
-                            onClick={() => handleAttendanceChange(sub.id, "cancelled", 1)}
-                            className="w-5 h-5 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-[10px] font-bold text-blue-450 transition-all cursor-pointer flex items-center justify-center border border-blue-500/10"
-                            title="Log class as cancelled (does not count towards total)"
-                          >
-                            +
-                          </button>
-                          <button
-                            onClick={() => handleAttendanceChange(sub.id, "cancelled", -1)}
-                            className="w-5 h-5 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-[10px] font-bold text-blue-450 transition-all cursor-pointer flex items-center justify-center border border-blue-500/10"
-                          >
-                            -
-                          </button>
-                        </div>
-                      </div>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <button
+                        onClick={() => handleAttendanceChange(sub.id, "attended", 1)}
+                        className="flex-1 min-w-[75px] h-[44px] rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-450 text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5 border border-emerald-500/20 active:scale-95"
+                      >
+                        Present
+                      </button>
+                      <button
+                        onClick={() => handleAttendanceChange(sub.id, "total", 1)}
+                        className="flex-1 min-w-[75px] h-[44px] rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5 border border-rose-500/20 active:scale-95"
+                      >
+                        Absent
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -2657,27 +2878,37 @@ export default function ToolsPage() {
             })
           )}
         </div>
+
+        {/* Share Runway - bottom of card */}
+        {!isTrackerEmpty && (
+          <button
+            onClick={handleShareRunway}
+            className="w-full py-2.5 rounded-xl bg-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02] text-slate-600 dark:text-slate-400 border border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
+          >
+            <Share2 className="w-3.5 h-3.5" /> Share Runway
+          </button>
+        )}
       </div>
     );
   };
 
-  // Helper renderers for Super-Tools consolidation
   const renderCieAggregatorPanel = () => {
     const totalCie = Math.min(50, ((mtAggSeries1 + mtAggSeries2) / 2 * 0.7) + mtAggAssg + mtAggAtt);
     const neededSeries2 = ((mtDmgTarget - (mtAggAssg + mtAggAtt)) / 0.7) * 2 - mtAggSeries1;
     const impossible = neededSeries2 > 50;
     const safe = neededSeries2 <= 0;
+    const allZero = mtAggSeries1 === 0 && mtAggSeries2 === 0 && mtAggAssg === 0 && mtAggAtt === 0;
 
     return (
-      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <Calculator className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">CIE & Damage Control</h3>
-              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Calculate CIE internals and Series 2 targets</span>
+              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">CIE & Damage Control</h3>
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Calculate CIE internals and Series 2 targets</span>
             </div>
           </div>
         </div>
@@ -2685,7 +2916,7 @@ export default function ToolsPage() {
         {/* Inputs */}
         <div className="grid grid-cols-2 gap-3">
           <div className="space-y-1.5">
-            <label className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase block">Series 1 (max 50)</label>
+            <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Series 1 (max 50)</label>
             <input
               type="number"
               min="0"
@@ -2696,22 +2927,22 @@ export default function ToolsPage() {
                 setMtAggSeries1(v);
                 setMtDmgSeries1(v);
               }}
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
-            <label className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase block">Series 2 (max 50)</label>
+            <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Series 2 (max 50)</label>
             <input
               type="number"
               min="0"
               max="50"
               value={mtAggSeries2}
               onChange={(e) => setMtAggSeries2(Math.min(50, Math.max(0, Number(e.target.value))))}
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
-            <label className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase block">Assignments (max 10)</label>
+            <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Assignments (max 10)</label>
             <input
               type="number"
               min="0"
@@ -2721,11 +2952,11 @@ export default function ToolsPage() {
                 const v = Math.min(10, Math.max(0, Number(e.target.value)));
                 setMtAggAssg(v);
               }}
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
           <div className="space-y-1.5">
-            <label className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase block">Attendance Marks (0-5)</label>
+            <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Attendance Marks (0-5)</label>
             <input
               type="number"
               min="0"
@@ -2735,17 +2966,17 @@ export default function ToolsPage() {
                 const v = Math.min(5, Math.max(0, Number(e.target.value)));
                 setMtAggAtt(v);
               }}
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1.5 font-mono text-center font-bold text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+              className="w-full bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/60 dark:focus:border-blue-500/50 text-slate-900 dark:text-slate-100 transition-all duration-200"
             />
           </div>
         </div>
 
         {/* Aggregated CIE display */}
-        <div className="p-4 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-zinc-950/40 text-center space-y-1">
+        <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-950/40 text-center space-y-1">
           <div className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase">Aggregated CIE Score</div>
           <div className="text-4xl font-light tracking-tight text-slate-900 dark:text-white font-mono">{totalCie.toFixed(1)} <span className="text-xs text-zinc-550">/ 50</span></div>
           <div className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mt-1">
-            Formula: ((Series 1 + Series 2) / 2 × 0.7) + Assignments + Attendance
+            Formula: ((Series 1 + Series 2) / 2 &times; 0.7) + Assignments + Attendance
           </div>
         </div>
 
@@ -2753,7 +2984,7 @@ export default function ToolsPage() {
         <div className="pt-2 border-t border-slate-200/60 dark:border-white/[0.06] space-y-3">
           <div className="flex justify-between items-center text-xs font-bold text-zinc-350">
             <span>Target CIE Score (out of 50)</span>
-            <span className="text-violet-600 dark:text-violet-400 font-bold font-mono">{mtDmgTarget} / 50</span>
+            <span className="text-blue-600 dark:text-blue-400 font-bold font-mono">{mtDmgTarget} / 50</span>
           </div>
           <input
             type="range"
@@ -2761,32 +2992,92 @@ export default function ToolsPage() {
             max="50"
             value={mtDmgTarget}
             onChange={(e) => setMtDmgTarget(Number(e.target.value))}
-            className="w-full accent-violet-500 cursor-pointer h-1 rounded-lg bg-zinc-800"
+            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-zinc-800"
           />
 
           {(() => {
             let desc = "";
-            let color = "text-violet-600 dark:text-violet-400 bg-violet-500/10 border-violet-500/20";
-            if (impossible) {
+            let color = "text-blue-600 dark:text-blue-400 bg-blue-500/10 border-blue-500/20";
+            let stateLabel = "Damage Control Action Required";
+            let StateIcon = AlertTriangle;
+            
+            if (allZero) {
+              stateLabel = "Enter Scores to Begin";
+              desc = "Enter your Series 1 and internal marks above to calculate target ESE scores.";
+              color = "text-blue-600 dark:text-blue-400 bg-blue-500/5 border-blue-500/10";
+              StateIcon = HelpCircle;
+            } else if (impossible) {
+              stateLabel = "Out of Reach";
               desc = `Required Series 2 score is ${neededSeries2.toFixed(1)}, which is impossible (max 50). Try lowering target CIE.`;
-              color = "text-rose-455 bg-rose-500/10 border-rose-500/20";
+              color = "text-rose-500 bg-rose-500/10 border-rose-500/20";
+              StateIcon = AlertCircle;
             } else if (safe) {
+              stateLabel = "Target Secured";
               desc = `You are fully on track! You need 0 marks in Series 2 to clear your target CIE.`;
-              color = "text-emerald-450 bg-emerald-500/10 border-emerald-500/20";
+              color = "text-emerald-500 bg-emerald-500/10 border-emerald-500/20";
+              StateIcon = CheckCircle2;
             } else {
               desc = `You need a score of at least ${neededSeries2.toFixed(1)} / 50 in Series 2 to secure your target CIE of ${mtDmgTarget}.`;
+              StateIcon = AlertTriangle;
             }
 
             return (
-              <div className={`p-3 rounded-xl border text-[10px] leading-relaxed text-center ${color}`}>
-                <span className="font-bold uppercase tracking-wider block mb-1">
-                  {impossible ? "Out of Reach 🚩" : safe ? "Target Secured ✅" : "Damage Control Action Required ⚠️"}
+              <div className={`p-3 rounded-xl border text-[10px] leading-relaxed text-center flex flex-col items-center gap-1.5 ${color}`}>
+                <span className="font-bold uppercase tracking-wider flex items-center gap-1">
+                  <StateIcon className="w-3.5 h-3.5" />
+                  {stateLabel}
                 </span>
-                {desc}
+                <span>{desc}</span>
               </div>
             );
           })()}
         </div>
+
+        {/* Dynamic ESE Grade Targets integrated */}
+        {!allZero && (
+          <div className="pt-3 border-t border-slate-200/60 dark:border-white/[0.06] space-y-2">
+            <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Required ESE Exam Targets</span>
+            <div className="grid grid-cols-2 gap-2 text-[10px]">
+              {[
+                { grade: "S", pct: 90, label: "S (90+)" },
+                { grade: "A+", pct: 85, label: "A+ (85+)" },
+                { grade: "A", pct: 80, label: "A (80+)" },
+                { grade: "B+", pct: 70, label: "B+ (70+)" },
+                { grade: "B", pct: 60, label: "B (60+)" },
+                { grade: "C+", pct: 50, label: "C+ (50+)" }
+              ].map(tg => {
+                let needed = (tg.pct - totalCie) * 2;
+                let impossible = needed > 100;
+                let finalEse = Math.max(40, Math.ceil(needed));
+                
+                let badge = "";
+                let badgeClass = "";
+                if (impossible) {
+                  badge = "Impossible";
+                  badgeClass = "bg-rose-500/10 text-rose-550 border-rose-500/15";
+                } else if (finalEse === 40 && needed <= 40) {
+                  badge = "40/100 (Min)";
+                  badgeClass = "bg-emerald-500/10 text-emerald-600 dark:text-emerald-450 border-emerald-500/15";
+                } else {
+                  badge = `${finalEse} / 100`;
+                  badgeClass = "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15";
+                }
+
+                return (
+                  <div key={tg.grade} className="p-2 rounded-xl bg-slate-50/50 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.02] flex items-center justify-between">
+                    <div>
+                      <span className="font-bold text-slate-750 dark:text-slate-300 block">{tg.grade} Target</span>
+                      <span className="text-[8px] text-slate-400 font-mono block mt-0.5">{tg.label}</span>
+                    </div>
+                    <span className={`px-2 py-0.5 rounded-lg text-[9px] font-bold uppercase ${badgeClass}`}>
+                      {badge}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
     );
   };
@@ -2802,16 +3093,16 @@ export default function ToolsPage() {
     const passed = earned >= limit;
     
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {/* Credit Auditor Card */}
-        <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+        <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
           <div className="flex items-center gap-2.5 border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Credit Year-Back Auditor</h3>
-              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Check KTU promotion credit requirements</span>
+              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Credit Year-Back Auditor</h3>
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Check KTU promotion credit requirements</span>
             </div>
           </div>
 
@@ -2821,7 +3112,7 @@ export default function ToolsPage() {
                 onClick={() => setProgressionTarget("s5")}
                 className={`flex-1 py-1.5 rounded-lg border text-[9px] font-bold uppercase transition-all cursor-pointer ${
                   progressionTarget === "s5"
-                    ? "bg-violet-500/20 text-violet-600 dark:text-violet-400 border-violet-500/20"
+                    ? "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/20"
                     : "bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-white/[0.02] hover:bg-white/[0.02]"
                 }`}
               >
@@ -2831,7 +3122,7 @@ export default function ToolsPage() {
                 onClick={() => setProgressionTarget("s7")}
                 className={`flex-1 py-1.5 rounded-lg border text-[9px] font-bold uppercase transition-all cursor-pointer ${
                   progressionTarget === "s7"
-                    ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
+                    ? "bg-blue-500/20 text-blue-450 border-blue-500/20"
                     : "bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-white/[0.02] hover:bg-white/[0.02]"
                 }`}
               >
@@ -2841,56 +3132,56 @@ export default function ToolsPage() {
 
             <div className="grid grid-cols-2 gap-3.5">
               <div className="space-y-1">
-                <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S1 Credits</label>
+                <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S1 Credits</label>
                 <input
                   type="number"
                   min="0"
                   max="22"
                   value={s1}
                   onChange={(e) => handleProgressionCreditChange("s1", Number(e.target.value))}
-                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S2 Credits</label>
+                <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S2 Credits</label>
                 <input
                   type="number"
                   min="0"
                   max="22"
                   value={s2}
                   onChange={(e) => handleProgressionCreditChange("s2", Number(e.target.value))}
-                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
                 />
               </div>
               {progressionTarget === "s7" && (
                 <>
                   <div className="space-y-1">
-                    <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S3 Credits</label>
+                    <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S3 Credits</label>
                     <input
                       type="number"
                       min="0"
                       max="22"
                       value={s3}
                       onChange={(e) => handleProgressionCreditChange("s3", Number(e.target.value))}
-                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
                     />
                   </div>
                   <div className="space-y-1">
-                    <label className="text-[9px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">S4 Credits</label>
+                    <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">S4 Credits</label>
                     <input
                       type="number"
                       min="0"
                       max="22"
                       value={s4}
                       onChange={(e) => handleProgressionCreditChange("s4", Number(e.target.value))}
-                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-white"
+                      className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs text-slate-900 dark:text-white"
                     />
                   </div>
                 </>
               )}
             </div>
 
-            <div className={`p-3.5 rounded-xl border text-center ${
+            <div className={`p-3.5 rounded-xl border text-center flex flex-col items-center gap-1 ${
               passed
                 ? "bg-emerald-500/[0.02] border-emerald-500/10 text-emerald-450"
                 : "bg-rose-500/[0.01] border-rose-500/10 text-rose-455 animate-pulse"
@@ -2899,303 +3190,547 @@ export default function ToolsPage() {
               <div className="text-xl font-light tracking-tight text-slate-900 dark:text-white py-1 font-mono">
                 {earned} <span className="text-xs text-slate-500 dark:text-slate-400">/ {limit} Credits</span>
               </div>
-              <div className="text-[10px] font-bold uppercase tracking-wider block mt-1">
-                {passed ? "Clear for Promotion ✅" : `Year-Back Credit Lock Risk! 🚩`}
+              <div className="text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                {passed ? <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" /> : <ShieldAlert className="w-3.5 h-3.5 text-rose-500" />}
+                {passed ? "Clear for Promotion" : "Year-Back Credit Lock Risk!"}
               </div>
               <div className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mt-1 leading-normal">
-                {progressionTarget === "s5" ? "S5 promotion" : "S7 promotion"} requires minimum <strong className="text-zinc-200">{limit} credits</strong>. You are {passed ? "safe" : `${limit - earned} credits short`}.
+                {progressionTarget === "s5" ? "S5 promotion" : "S7 promotion"} requires minimum <strong className="text-slate-700 dark:text-slate-300">{limit} credits</strong>. You are {passed ? "safe" : `${limit - earned} credits short`}.
               </div>
             </div>
           </div>
         </div>
 
         {/* Activity Points Auditor Card */}
-        <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
-          <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
+        <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3 gap-2">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-400">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-450">
                 <Award className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Activity Points Auditor</h3>
-                <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1 font-mono">Earned: {totalActivityPoints} / {calculatedPoints.totalRequired} pts</span>
+                <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Activity Points</h3>
+                <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1 font-mono">
+                  Earned: {totalActivityPoints} / {calculatedPoints.totalRequired} pts
+                </span>
               </div>
             </div>
             
-            <select
-              value={studentType}
-              onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
-              className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black text-slate-900 dark:text-white focus:outline-none cursor-pointer"
-            >
-              <option value="regular">Regular</option>
-              <option value="lateral">Lateral</option>
-              <option value="pwd">PwD Mode</option>
-            </select>
+            <div className="flex bg-slate-100 dark:bg-slate-800/80 p-0.5 rounded-lg border border-slate-200/60 dark:border-white/[0.04] self-start sm:self-center shrink-0">
+              <button
+                onClick={() => setActivityMode("earn")}
+                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all flex items-center gap-1 cursor-pointer ${
+                  activityMode === "earn"
+                    ? "bg-white dark:bg-slate-900 shadow-sm text-blue-600 dark:text-blue-400"
+                    : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
+                }`}
+              >
+                <BookOpen className="w-3 h-3" />
+                Guide
+              </button>
+              <button
+                onClick={() => setActivityMode("calculator")}
+                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all flex items-center gap-1 cursor-pointer ${
+                  activityMode === "calculator"
+                    ? "bg-white dark:bg-slate-900 shadow-sm text-blue-600 dark:text-blue-400"
+                    : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
+                }`}
+              >
+                <Calculator className="w-3 h-3" />
+                Calculator
+              </button>
+            </div>
           </div>
 
-          <div className="space-y-3">
-            {/* Tally Progress */}
-            <div className="space-y-1">
-              <div className="flex justify-between items-center text-[9px] font-bold uppercase tracking-wider text-zinc-450">
-                <span>Portfolio Progress</span>
-                <span className={`${tallyMeta.textClass} font-bold font-mono`}>{totalActivityPoints} pts ({tallyMeta.label})</span>
-              </div>
-              <div className="h-1 bg-zinc-800 rounded-full overflow-hidden">
-                <div className={`h-full ${tallyMeta.barClass} transition-all duration-300`} style={{ width: `${Math.min(100, (totalActivityPoints / calculatedPoints.totalRequired) * 100)}%` }} />
-              </div>
-            </div>
-
-            {/* List of claims */}
-            <div className="space-y-2 max-h-[140px] overflow-y-auto pr-1 scrollbar-thin">
-              {selectedActivities.length === 0 ? (
-                <div className="text-[9.5px] font-bold text-slate-500 dark:text-slate-400 text-center py-6">
-                  No activity claims logged. Add claims below.
+          {activityMode === "earn" ? (
+            /* Earning Guide Mode */
+            <div className="space-y-4">
+              {/* Manual & Rules Dashboard Summary */}
+              <div className="p-3.5 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-slate-50/50 dark:bg-zinc-950/20 space-y-2">
+                <div className="flex justify-between items-center text-[10px] font-bold text-slate-800 dark:text-slate-350">
+                  <span className="flex items-center gap-1"><Info className="w-3.5 h-3.5 text-blue-500" /> KTU Point System Guide</span>
+                  <div className="flex items-center gap-1.5 font-normal">
+                    <span>Target:</span>
+                    <select
+                      value={studentType}
+                      onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
+                      className="bg-transparent border-none text-[10px] font-bold text-slate-900 dark:text-slate-200 focus:outline-none cursor-pointer p-0"
+                    >
+                      <option value="regular">Regular (100 pts)</option>
+                      <option value="lateral">Lateral (75 pts)</option>
+                      <option value="pwd">PwD Mode (50 pts)</option>
+                    </select>
+                  </div>
                 </div>
-              ) : (
-                selectedActivities.map((act) => {
-                  const details = KTU_ACTIVITIES[act.activityCode];
-                  return (
-                    <div key={act.id} className="p-2.5 rounded-xl bg-zinc-950/40 border border-slate-200/40 dark:border-white/[0.04] flex items-center justify-between text-[9px] text-zinc-300">
-                      <div className="truncate pr-2">
-                        <span className="font-bold text-slate-900 dark:text-white font-mono">{act.activityCode}</span>
-                        {act.level && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.level}]</span>}
-                        {act.quantity && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.quantity} units]</span>}
-                        <span className="block text-[8px] text-slate-500 dark:text-slate-400 truncate">{details?.name}</span>
+                <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Earn points across 3 groups. Max limit per group is <strong>60 points</strong>. You need {calculatedPoints.totalRequired} points total to qualify for graduation.
+                </p>
+
+                {/* Group Progress Bars */}
+                <div className="grid grid-cols-3 gap-2.5 pt-1.5 border-t border-slate-200/30 dark:border-white/[0.03]">
+                  {[
+                    { id: "1", name: "Group I", val: calculatedPoints.group1Raw, capped: calculatedPoints.group1Capped },
+                    { id: "2", name: "Group II", val: calculatedPoints.group2Raw, capped: calculatedPoints.group2Capped },
+                    { id: "3", name: "Group III", val: calculatedPoints.group3Raw, capped: calculatedPoints.group3Capped }
+                  ].map(grp => (
+                    <div key={grp.id} className="space-y-1">
+                      <div className="flex justify-between text-[8px] font-bold uppercase tracking-wider text-slate-400">
+                        <span>{grp.name}</span>
+                        <span>{grp.capped}/60</span>
                       </div>
-                      <div className="flex items-center gap-2 shrink-0">
-                        <span className="font-bold text-emerald-450 font-mono">+{act.points} pts</span>
-                        <button
-                          onClick={() => handleDeleteActivity(act.id)}
-                          className="text-slate-500 dark:text-slate-400 hover:text-rose-505 cursor-pointer p-0.5 active:scale-90 transition-all"
-                        >
-                          <Trash2 className="w-3.5 h-3.5" />
-                        </button>
+                      <div className="h-1 bg-slate-250 dark:bg-slate-800 rounded-full overflow-hidden">
+                        <div 
+                          className={`h-full rounded-full ${
+                            grp.capped >= 60 ? "bg-emerald-500" : grp.capped >= 30 ? "bg-blue-500" : "bg-amber-500"
+                          }`}
+                          style={{ width: `${Math.min(100, (grp.capped / 60) * 100)}%` }}
+                        />
                       </div>
                     </div>
-                  );
-                })
-              )}
-            </div>
+                  ))}
+                </div>
+              </div>
 
-            {/* Add activity form */}
-            <div className="p-3 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/30 space-y-2 text-[9px]">
-              <div className="grid grid-cols-3 gap-2">
+              {/* Search and Filters */}
+              <div className="flex gap-2">
+                <div className="relative flex-1">
+                  <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400" />
+                  <input
+                    type="text"
+                    placeholder="Search manual (e.g. NSS, sports, certification)..."
+                    value={activitySearchQuery}
+                    onChange={(e) => setActivitySearchQuery(e.target.value)}
+                    className="w-full pl-8 pr-2.5 py-1.5 bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl text-[11px] font-medium text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500/30 transition-all"
+                  />
+                </div>
                 <select
-                  value={actSelGroup}
-                  onChange={(e) => handleGroupSelect(e.target.value as "I" | "II" | "III")}
-                  className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono cursor-pointer"
+                  value={activityGuideGroup}
+                  onChange={(e) => setActivityGuideGroup(e.target.value as typeof activityGuideGroup)}
+                  className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1.5 text-[10px] font-bold text-slate-800 dark:text-slate-200 focus:outline-none cursor-pointer shrink-0"
                 >
-                  <option value="I">Group I</option>
-                  <option value="II">Group II</option>
-                  <option value="III">Group III</option>
-                </select>
-                
-                <select
-                  value={actSelCode}
-                  onChange={(e) => handleCodeSelect(e.target.value)}
-                  className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 col-span-2 text-slate-900 dark:text-white font-mono cursor-pointer"
-                >
-                  {(() => {
-                    const group = KTU_ACTIVITY_GROUPS.find(g => g.id === actSelGroup);
-                    return group
-                      ? group.categories.flatMap(cat => 
-                          cat.activities.map(code => (
-                            <option key={code} value={code}>{code} - {KTU_ACTIVITIES[code]?.name.slice(0, 32)}...</option>
-                          ))
-                        )
-                      : null;
-                  })()}
+                  <option value="All">All Groups</option>
+                  <option value="I">Group I Only</option>
+                  <option value="II">Group II Only</option>
+                  <option value="III">Group III Only</option>
                 </select>
               </div>
 
-              {/* Quantities/Levels if required */}
-              {(() => {
-                const details = KTU_ACTIVITIES[actSelCode];
-                if (!details) return null;
-                return (
-                  <div className="grid grid-cols-2 gap-2">
-                    {details.type === "level" && details.levels && (
-                      <select
-                        value={actSelLevel}
-                        onChange={(e) => handleLevelSelect(e.target.value)}
-                        className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white cursor-pointer"
-                      >
-                        {Object.keys(details.levels).map(lvl => (
-                          <option key={lvl} value={lvl}>{lvl} ({details.levels?.[lvl]} pts)</option>
-                        ))}
-                      </select>
-                    )}
-                    {details.type === "count" && (
-                      <input
-                        type="number"
-                        min="1"
-                        placeholder="Quantity"
-                        value={actSelQuantity}
-                        onChange={(e) => handleQuantitySelect(Number(e.target.value))}
-                        className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center"
-                      />
-                    )}
-                    {details.type === "input" && (
-                      <input
-                        type="number"
-                        placeholder={`Points (max ${details.maxPoints})`}
-                        value={actSelPoints}
-                        onChange={(e) => setActSelPoints(Number(e.target.value))}
-                        className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center"
-                      />
-                    )}
-                    <button
-                      onClick={handleAddActivity}
-                      className="bg-violet-500/20 hover:bg-violet-500/30 text-violet-600 dark:text-violet-400 font-bold border border-violet-500/30 rounded-lg py-1 cursor-pointer active:scale-95 transition-all col-span-2 md:col-span-1"
-                    >
-                      Add Activity
-                    </button>
-                  </div>
-                );
-              })()}
+              {/* Scrollable list of activities with inline configuration */}
+              <div className="space-y-2.5 max-h-[180px] overflow-y-auto pr-1 scrollbar-thin">
+                {(() => {
+                  const query = activitySearchQuery.toLowerCase().trim();
+                  const filtered = Object.values(KTU_ACTIVITIES).filter(act => {
+                    const matchesGroup = activityGuideGroup === "All" || act.code.startsWith(activityGuideGroup === "I" ? "1" : activityGuideGroup === "II" ? "2" : "3");
+                    const matchesQuery = !query || 
+                      act.code.includes(query) || 
+                      act.name.toLowerCase().includes(query) || 
+                      (act.desc && act.desc.toLowerCase().includes(query)) ||
+                      act.proof.toLowerCase().includes(query);
+                    return matchesGroup && matchesQuery;
+                  });
+
+                  if (filtered.length === 0) {
+                    return (
+                      <div className="text-[10px] font-semibold text-slate-400 text-center py-8">
+                        No activities match your search.
+                      </div>
+                    );
+                  }
+
+                  return filtered.map(act => {
+                    const claimsList = selectedActivities.filter(sa => sa.activityCode === act.code);
+                    const isClaimed = claimsList.length > 0;
+                    const groupNum = act.code.split('.')[0];
+                    const groupColor = groupNum === "1" ? "border-emerald-500/20 text-emerald-500 bg-emerald-500/5" : groupNum === "2" ? "border-blue-500/20 text-blue-500 bg-blue-500/5" : "border-purple-500/20 text-purple-500 bg-purple-500/5";
+                    const isInlineAddActive = inlineAddCode === act.code;
+
+                    return (
+                      <div key={act.code} className="p-4 rounded-2xl bg-slate-50/50 dark:bg-slate-900/30 border border-slate-200/50 dark:border-slate-800/40 space-y-2 hover:border-slate-300 dark:hover:border-slate-700/60 hover:bg-slate-100/55 dark:hover:bg-slate-900/40 transition-all duration-300">
+                        <div className="flex justify-between items-start gap-2">
+                          <div className="flex items-center gap-1.5">
+                            <span className={`px-1.5 py-0.5 rounded text-[8px] font-bold border font-mono ${groupColor}`}>
+                              G{groupNum} • {act.code}
+                            </span>
+                            <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                              Max {act.maxPoints} pts
+                            </span>
+                          </div>
+                          {isClaimed && (
+                            <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-500 border border-emerald-500/10 text-[8px] font-bold uppercase tracking-wider flex items-center gap-0.5">
+                              <Check className="w-2.5 h-2.5" /> {claimsList.reduce((acc, curr) => acc + curr.points, 0)} pts claimed
+                            </span>
+                          )}
+                        </div>
+                        <h4 className="text-xs font-semibold text-slate-900 dark:text-slate-100 leading-tight">
+                          {act.name}
+                        </h4>
+                        {act.desc && (
+                          <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-normal">
+                            {act.desc}
+                          </p>
+                        )}
+                        
+                        <div className="flex flex-col gap-2 pt-1 border-t border-slate-100 dark:border-white/[0.03]">
+                          <div className="flex flex-wrap items-center justify-between gap-2 text-[9px]">
+                            <span className="text-slate-500 dark:text-slate-400 flex items-center gap-1 shrink-0 font-medium font-sans">
+                              <FileText className="w-3 h-3 text-slate-400" /> Proof: <strong className="text-slate-700 dark:text-slate-300 font-semibold">{act.proof}</strong>
+                            </span>
+                            
+                            {!isInlineAddActive && (
+                              <button
+                                onClick={() => {
+                                  if (act.type === "fixed") {
+                                    handleDirectAddFixed(act);
+                                  } else {
+                                    handleStartInlineAdd(act);
+                                  }
+                                }}
+                                className="px-2 py-0.5 rounded bg-blue-500/10 hover:bg-blue-500/25 text-blue-600 dark:text-blue-400 border border-blue-500/15 text-[8.5px] font-bold uppercase tracking-wide cursor-pointer transition-all flex items-center gap-0.5 active:scale-95"
+                              >
+                                <Plus className="w-2.5 h-2.5" /> Add Claim
+                              </button>
+                            )}
+                          </div>
+
+                          {/* Inline adding config pane */}
+                          {isInlineAddActive && (
+                            <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200/50 dark:border-white/[0.04] grid grid-cols-1 sm:grid-cols-2 gap-2 items-center text-[10px] animate-fade-in">
+                              <div className="space-y-1">
+                                <span className="text-[8px] font-bold text-slate-400 block uppercase">Configure Details:</span>
+                                {act.type === "level" && act.levels && (
+                                  <select
+                                    value={inlineSelLevel}
+                                    onChange={(e) => setInlineSelLevel(e.target.value)}
+                                    className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded px-1.5 py-1 font-bold text-[9.5px] cursor-pointer text-slate-800 dark:text-slate-250 focus:outline-none"
+                                  >
+                                    {Object.keys(act.levels).map(lvl => (
+                                      <option key={lvl} value={lvl}>{lvl} ({act.levels?.[lvl]} pts)</option>
+                                    ))}
+                                  </select>
+                                )}
+                                {act.type === "count" && (
+                                  <div className="flex items-center gap-1">
+                                    <input
+                                      type="number"
+                                      min="1"
+                                      placeholder="Quantity"
+                                      value={inlineSelQuantity}
+                                      onChange={(e) => {
+                                        const q = Math.max(1, Number(e.target.value));
+                                        setInlineSelQuantity(q);
+                                      }}
+                                      className="w-16 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded px-1.5 py-0.5 text-center font-bold font-mono focus:outline-none"
+                                    />
+                                    <span className="text-[8.5px] text-slate-400">units ({act.pointsPerUnit || act.maxPoints} pts each)</span>
+                                  </div>
+                                )}
+                                {act.type === "input" && (
+                                  <div className="flex items-center gap-1">
+                                    <input
+                                      type="number"
+                                      min="1"
+                                      max={act.maxPoints}
+                                      placeholder={`Points`}
+                                      value={inlineSelPoints}
+                                      onChange={(e) => setInlineSelPoints(Math.min(act.maxPoints, Math.max(0, Number(e.target.value))))}
+                                      className="w-16 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded px-1.5 py-0.5 text-center font-bold font-mono focus:outline-none"
+                                    />
+                                    <span className="text-[8.5px] text-slate-400">pts (max {act.maxPoints})</span>
+                                  </div>
+                                )}
+                              </div>
+                              <div className="flex items-center justify-end gap-1.5">
+                                <button
+                                  onClick={() => setInlineAddCode(null)}
+                                  className="px-2 py-1 rounded bg-transparent border border-slate-200/60 dark:border-white/[0.04] text-slate-500 hover:text-slate-700 dark:hover:text-white cursor-pointer uppercase text-[8px] font-black tracking-wider transition-all active:scale-95"
+                                >
+                                  Cancel
+                                </button>
+                                <button
+                                  onClick={() => handleConfirmInlineAdd(act)}
+                                  className="px-2.5 py-1 rounded bg-blue-500 text-white hover:bg-blue-600 cursor-pointer uppercase text-[8px] font-black tracking-wider transition-all active:scale-95 border border-blue-500/10 shadow-sm"
+                                >
+                                  Confirm
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  });
+                })()}
+              </div>
             </div>
-          </div>
+          ) : (
+            /* Calculator Mode */
+            <div className="space-y-3">
+              {/* Tally Progress */}
+              <div className="space-y-1">
+                <div className="flex justify-between items-center text-[9px] font-bold uppercase tracking-wider text-zinc-450">
+                  <span>Portfolio Progress</span>
+                  <span className={`${tallyMeta.textClass} font-bold font-mono flex items-center gap-0.5`}>
+                    {totalActivityPoints} pts ({tallyMeta.label})
+                    {calculatedPoints.isQualified && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />}
+                  </span>
+                </div>
+                <div className="h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div className={`h-full ${tallyMeta.barClass} transition-all duration-300`} style={{ width: `${Math.min(100, (totalActivityPoints / calculatedPoints.totalRequired) * 100)}%` }} />
+                </div>
+              </div>
+
+              {/* List of claims */}
+              <div className="space-y-2 max-h-[120px] overflow-y-auto pr-1 scrollbar-thin">
+                {selectedActivities.length === 0 ? (
+                  <div className="text-[9.5px] font-bold text-slate-500 dark:text-slate-400 text-center py-6 border border-dashed border-slate-200 dark:border-slate-700 rounded-xl">
+                    No activity claims logged. Add claims in Guide or form below.
+                  </div>
+                ) : (
+                  selectedActivities.map((act) => {
+                    const details = KTU_ACTIVITIES[act.activityCode];
+                    return (
+                      <div key={act.id} className="p-2.5 rounded-xl bg-white/60 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.04] flex items-center justify-between text-[9px] text-zinc-300">
+                        <div className="truncate pr-2">
+                          <span className="font-bold text-slate-900 dark:text-white font-mono">{act.activityCode}</span>
+                          {act.level && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.level}]</span>}
+                          {act.quantity && <span className="ml-1 text-slate-500 dark:text-slate-400">[{act.quantity} units]</span>}
+                          <span className="block text-[8px] text-slate-500 dark:text-slate-400 truncate">{details?.name}</span>
+                        </div>
+                        <div className="flex items-center gap-2 shrink-0">
+                          <span className="font-bold text-emerald-500 font-mono">+{act.points} pts</span>
+                          <button
+                            onClick={() => handleDeleteActivity(act.id)}
+                            className="text-slate-500 dark:text-slate-400 hover:text-rose-500 cursor-pointer p-0.5 active:scale-90 transition-all"
+                          >
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })
+                )}
+              </div>
+
+              {/* Add activity form */}
+              <div className="p-3 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-white/50 dark:bg-slate-900/30 space-y-2 text-[9px]">
+                <div className="flex justify-between items-center pb-1 border-b border-slate-100 dark:border-white/[0.03]">
+                  <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Add New Claim Form</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[9px] text-slate-500 font-semibold">Target Type:</span>
+                    <select
+                      value={studentType}
+                      onChange={(e) => handleStudentTypeChange(e.target.value as typeof studentType)}
+                      className="bg-transparent border-none text-[9px] font-bold text-slate-800 dark:text-slate-200 focus:outline-none cursor-pointer p-0"
+                    >
+                      <option value="regular">Regular</option>
+                      <option value="lateral">Lateral</option>
+                      <option value="pwd">PwD Mode</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-3 gap-2">
+                  <select
+                    value={actSelGroup}
+                    onChange={(e) => handleGroupSelect(e.target.value as "I" | "II" | "III")}
+                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono cursor-pointer"
+                  >
+                    <option value="I">Group I</option>
+                    <option value="II">Group II</option>
+                    <option value="III">Group III</option>
+                  </select>
+                  
+                  <select
+                    value={actSelCode}
+                    onChange={(e) => handleCodeSelect(e.target.value)}
+                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 col-span-2 text-slate-900 dark:text-white font-mono cursor-pointer"
+                  >
+                    {(() => {
+                      const group = KTU_ACTIVITY_GROUPS.find(g => g.id === actSelGroup);
+                      return group
+                        ? group.categories.flatMap(cat => 
+                            cat.activities.map(code => (
+                              <option key={code} value={code}>{code} - {KTU_ACTIVITIES[code]?.name.slice(0, 32)}...</option>
+                            ))
+                          )
+                        : null;
+                    })()}
+                  </select>
+                </div>
+
+                {/* Quantities/Levels if required */}
+                {(() => {
+                  const details = KTU_ACTIVITIES[actSelCode];
+                  if (!details) return null;
+                  return (
+                    <div className="grid grid-cols-2 gap-2 pt-1">
+                      {details.type === "level" && details.levels && (
+                        <select
+                          value={actSelLevel}
+                          onChange={(e) => handleLevelSelect(e.target.value)}
+                          className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white cursor-pointer"
+                        >
+                          {Object.keys(details.levels).map(lvl => (
+                            <option key={lvl} value={lvl}>{lvl} ({details.levels?.[lvl]} pts)</option>
+                          ))}
+                        </select>
+                      )}
+                      {details.type === "count" && (
+                        <input
+                          type="number"
+                          min="1"
+                          placeholder="Quantity"
+                          value={actSelQuantity}
+                          onChange={(e) => handleQuantitySelect(Number(e.target.value))}
+                          className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center font-bold"
+                        />
+                      )}
+                      {details.type === "input" && (
+                        <input
+                          type="number"
+                          placeholder={`Points (max ${details.maxPoints})`}
+                          value={actSelPoints}
+                          onChange={(e) => setActSelPoints(Number(e.target.value))}
+                          className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-slate-900 dark:text-white font-mono text-center font-bold"
+                        />
+                      )}
+                      <button
+                        onClick={handleAddActivity}
+                        className="bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 font-bold border border-blue-500/20 rounded-2xl py-2 cursor-pointer active:scale-[0.98] transition-all col-span-2 md:col-span-1"
+                      >
+                        Add Activity
+                      </button>
+                    </div>
+                  );
+                })()}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     );
   };
 
-  const renderSpecializationPathway = () => {
-    const cgpa = parseFloat(calculateCGPA()) || 8.2;
-    const honoursElig = cgpa >= 8.5 && !honoursBacklogs;
-    const minorElig = cgpa >= 7.5 && minorBacklogs === 0;
-    const completedSemesters = cgpaSemesters.filter(s => s.active && s.sgpa > 0).length || 3;
-    
-    // Honours target SGPA
-    const targetHonoursCGPA = 8.5;
-    const neededHonoursSgpa = targetHonoursCGPA + completedSemesters * (targetHonoursCGPA - cgpa);
-    const honoursImpossible = neededHonoursSgpa > 10.0;
-    
-    // Minor target SGPA
-    const targetMinorCGPA = 7.5;
-    const neededMinorSgpa = targetMinorCGPA + completedSemesters * (targetMinorCGPA - cgpa);
-    const minorImpossible = neededMinorSgpa > 10.0;
+  const renderBacklogTracker = () => {
+    const handleAddBacklog = () => {
+      if (!backlogCode.trim() || !backlogName.trim()) return;
+      const newBacklog = {
+        id: `bl_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+        code: backlogCode.trim(),
+        name: backlogName.trim(),
+        semester: backlogSemester,
+        attempts: 0,
+        status: "pending" as const
+      };
+      const updated = [...backlogSubjects, newBacklog];
+      setBacklogSubjects(updated);
+      localStorage.setItem("ktunode_tools_backlogs", JSON.stringify(updated));
+      setBacklogCode("");
+      setBacklogName("");
+      triggerNotification("Backlog subject added!");
+    };
 
-    const handleShareStanding = () => {
-      let msg = `My KTU Academic Standing:\n- CGPA: ${cgpa}\n`;
-      if (honoursElig) {
-        msg += `- Eligible for B.Tech Honours (Zero Backlogs) 🏆\n`;
-      } else {
-        msg += `- Ineligible for Honours (CGPA < 8.5 or has backlogs)\n`;
-      }
-      
-      if (minorElig) {
-        msg += `- Eligible for B.Tech Minor (Zero Backlogs) 🎓\n`;
-      } else {
-        msg += `- Ineligible for Minor (CGPA < 7.5 or has backlogs)\n`;
-      }
-      
-      msg += "\nCheck your graduation runway on KTU Node!";
-      navigator.clipboard.writeText(msg);
-      triggerNotification("Academic standing copied to clipboard! 📋");
+    const handleDeleteBacklog = (id: string) => {
+      const updated = backlogSubjects.filter(b => b.id !== id);
+      setBacklogSubjects(updated);
+      localStorage.setItem("ktunode_tools_backlogs", JSON.stringify(updated));
+    };
+
+    const handleStatusChange = (id: string, status: 'pending' | 'cleared' | 'registered') => {
+      const updated = backlogSubjects.map(b => b.id === id ? { ...b, status, attempts: status === 'registered' ? b.attempts + 1 : b.attempts } : b);
+      setBacklogSubjects(updated);
+      localStorage.setItem("ktunode_tools_backlogs", JSON.stringify(updated));
     };
 
     return (
-      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
-              <GraduationCap className="w-5 h-5" />
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+              <AlertTriangle className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">Specialization Pathways</h3>
-              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Honours & Minors eligibility checklist</span>
+              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Backlog Tracker</h3>
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">{backlogSubjects.length} backlog{backlogSubjects.length !== 1 ? "s" : ""} tracked</span>
             </div>
           </div>
         </div>
 
-        <div className="space-y-4">
-          {/* Honours Audit */}
-          <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/20 space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase">B.Tech Honours Path</span>
-              <span className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider ${
-                honoursElig
-                  ? "bg-emerald-500/10 text-emerald-450 border-emerald-500/20"
-                  : "bg-rose-500/10 text-rose-455 border-rose-500/20"
-              }`}>
-                {honoursElig ? "Eligible 🏆" : "Ineligible ❌"}
-              </span>
+        {/* Backlog list */}
+        <div className="space-y-2 max-h-[200px] overflow-y-auto pr-1">
+          {backlogSubjects.length === 0 ? (
+            <div className="text-[11px] text-slate-400 text-center py-6 border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-xl">
+              No backlogs logged. Add failed subjects below to track clearance.
             </div>
-            <div className="flex items-center justify-between text-[9px] text-slate-500 dark:text-slate-400">
-              <span>Requires CGPA &gt;= 8.5 (Current: {cgpa})</span>
-              <button
-                onClick={() => {
-                  const nextVal = !honoursBacklogs;
-                  setHonoursBacklogs(nextVal);
-                  localStorage.setItem("ktunode_tools_honours_backlogs", String(nextVal));
-                }}
-                className={`px-1.5 py-0.5 rounded-md border text-[8px] font-bold uppercase transition-all ${
-                  honoursBacklogs ? "bg-rose-500/10 text-rose-400 border-rose-500/25" : "bg-emerald-500/10 text-emerald-400 border-emerald-500/25"
-                }`}
+          ) : (
+            backlogSubjects.map(bl => (
+              <div key={bl.id} className="p-3.5 rounded-2xl bg-slate-50/45 dark:bg-slate-900/10 border border-slate-200/50 dark:border-slate-800/40 flex items-center justify-between gap-2 hover:border-slate-350 dark:hover:border-slate-700/65 transition-all duration-300">
+                <div className="min-w-0">
+                  <span className="text-[11px] font-bold text-slate-900 dark:text-white font-mono block">{bl.code}</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 truncate block">{bl.name} • S{bl.semester} • {bl.attempts} attempt{bl.attempts !== 1 ? "s" : ""}</span>
+                </div>
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <select
+                    value={bl.status}
+                    onChange={(e) => handleStatusChange(bl.id, e.target.value as 'pending' | 'cleared' | 'registered')}
+                    className={`px-2 py-1 rounded-lg border text-[9px] font-bold cursor-pointer ${
+                      bl.status === "cleared" ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/20"
+                      : bl.status === "registered" ? "bg-blue-500/10 text-blue-500 border-blue-500/20"
+                      : "bg-amber-500/10 text-amber-500 border-amber-500/20"
+                    }`}
+                  >
+                    <option value="pending">Pending</option>
+                    <option value="registered">Registered</option>
+                    <option value="cleared">Cleared</option>
+                  </select>
+                  <button onClick={() => handleDeleteBacklog(bl.id)} className="text-slate-400 hover:text-rose-500 p-0.5 cursor-pointer">
+                    <Trash2 className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+
+        {/* Add backlog form */}
+        <div className="p-3 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-white/50 dark:bg-slate-900/30 space-y-2">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 block">Add Backlog</span>
+          <div className="grid grid-cols-3 gap-2">
+            <input
+              type="text"
+              placeholder="Code"
+              value={backlogCode}
+              onChange={(e) => setBacklogCode(e.target.value)}
+              className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-2 py-1 text-[10px] font-bold text-slate-900 dark:text-white uppercase placeholder-slate-400 focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Subject Name"
+              value={backlogName}
+              onChange={(e) => setBacklogName(e.target.value)}
+              className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-2 py-1 col-span-2 text-[10px] font-bold text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none"
+            />
+          </div>
+          <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-1.5">
+              <span className="text-[9px] text-slate-500 uppercase tracking-widest">Sem:</span>
+              <select
+                value={backlogSemester}
+                onChange={(e) => setBacklogSemester(Number(e.target.value))}
+                className="bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-1 text-[10px] font-bold text-slate-900 dark:text-white focus:outline-none cursor-pointer font-mono"
               >
-                {honoursBacklogs ? "Has Backlogs" : "Zero Backlogs"}
-              </button>
+                {[1, 2, 3, 4, 5, 6, 7, 8].map(s => (
+                  <option key={s} value={s}>S{s}</option>
+                ))}
+              </select>
             </div>
-            
-            {!honoursElig && (
-              <div className="pt-2.5 border-t border-slate-200/40 dark:border-white/[0.04] text-[8.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal">
-                {honoursImpossible ? (
-                  <span className="text-rose-455">🚩 Recovery Target: Out of reach in 1 Sem (Requires SGPA: {neededHonoursSgpa.toFixed(2)}). Target multiple semesters.</span>
-                ) : (
-                  <span className="text-violet-600 dark:text-violet-400">💡 Recovery Target: Requires SGPA of <strong className="text-white font-mono">{neededHonoursSgpa.toFixed(2)}</strong> in next semester to restore eligibility standing.</span>
-                )}
-              </div>
-            )}
+            <button
+              onClick={handleAddBacklog}
+              className="flex-1 py-1 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 flex items-center justify-center gap-1"
+            >
+              <Plus className="w-3 h-3" /> Log Backlog
+            </button>
           </div>
-
-          {/* Minor Audit */}
-          <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/20 space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-[10px] font-bold tracking-widest text-zinc-550 uppercase">B.Tech Minor Path</span>
-              <span className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider ${
-                minorElig
-                  ? "bg-emerald-500/10 text-emerald-450 border-emerald-500/20"
-                  : "bg-rose-500/10 text-rose-455 border-rose-500/20"
-              }`}>
-                {minorElig ? "Eligible 🎓" : "Ineligible ❌"}
-              </span>
-            </div>
-            <div className="flex items-center justify-between text-[9px] text-slate-500 dark:text-slate-400">
-              <span>Requires CGPA &gt;= 7.5 (Current: {cgpa})</span>
-              <div className="flex items-center gap-1.5">
-                <span>Backlogs:</span>
-                <input
-                  type="number"
-                  min="0"
-                  value={minorBacklogs}
-                  onChange={(e) => {
-                    const val = Math.max(0, Number(e.target.value));
-                    setMinorBacklogs(val);
-                    localStorage.setItem("ktunode_tools_minor_backlogs", String(val));
-                  }}
-                  className="w-8 bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-md text-center text-slate-900 dark:text-white text-[9.5px] font-bold font-mono"
-                />
-              </div>
-            </div>
-            
-            {!minorElig && (
-              <div className="pt-2.5 border-t border-slate-200/40 dark:border-white/[0.04] text-[8.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal">
-                {minorImpossible ? (
-                  <span className="text-rose-455">🚩 Recovery Target: Out of reach in 1 Sem (Requires SGPA: {neededMinorSgpa.toFixed(2)}). Target multiple semesters.</span>
-                ) : (
-                  <span className="text-violet-600 dark:text-violet-400">💡 Recovery Target: Requires SGPA of <strong className="text-white font-mono">{neededMinorSgpa.toFixed(2)}</strong> in next semester to restore eligibility standing.</span>
-                )}
-              </div>
-            )}
-          </div>
-
-          <button
-            onClick={handleShareStanding}
-            className="w-full py-2 rounded-xl bg-violet-500/10 hover:bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/20 text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98]"
-          >
-            Share standing 📋
-          </button>
         </div>
       </div>
     );
@@ -3204,7 +3739,11 @@ export default function ToolsPage() {
   const renderStudySequencer = () => {
     const activeCode = plannerActiveSubject.code;
     const activeName = plannerActiveSubject.name;
-    const moduleToggles = mtMilestones[activeCode] || [false, false, false, false, false];
+    // Dynamic module count from syllabus data (fallback to 5)
+    const subjectData = subjects.find(s => s.code === activeCode);
+    const moduleCount = subjectData?.modules?.length || 5;
+    const defaultToggles = Array(moduleCount).fill(false);
+    const moduleToggles = mtMilestones[activeCode] || defaultToggles;
 
     const untouchedIndices = moduleToggles.reduce<number[]>((acc, val, idx) => {
       if (!val) acc.push(idx);
@@ -3212,15 +3751,18 @@ export default function ToolsPage() {
     }, []);
     const untouchedCount = untouchedIndices.length;
 
+    // Urgency classification
+    const urgencyLevel = mtCramHours > 48 ? "calm" : mtCramHours > 12 ? "focused" : "critical";
+
     let advice = "";
     if (untouchedCount === 0) {
-      advice = "All 5 modules fully prepared! You are in the safest zone for an S grade. Dedicate time to reviewing old papers & coding structures.";
+      advice = `All ${moduleCount} modules fully prepared! You are in the safest zone for an S grade. Dedicate time to reviewing old papers & coding structures.`;
     } else if (mtCramHours >= untouchedCount * 2.5) {
       advice = `With ${mtCramHours} hours remaining, you can cover all ${untouchedCount} remaining modules. Dedicate ~2.5 hours to each untouched module (Module ${untouchedIndices.map(i => i + 1).join(", ")}) and leave the last 1-2 hours for key formula sheets.`;
     } else if (mtCramHours < untouchedCount * 1.5 && untouchedCount > 1) {
       const skipMod = untouchedIndices[untouchedIndices.length - 1] + 1;
       const focusMods = untouchedIndices.slice(0, -1).map(i => i + 1).join(", ");
-      advice = `⚠️ Severe Time Crunch: Bypass Module ${skipMod} entirely. Focus your remaining ${mtCramHours} hours exclusively on high-yield Modules ${focusMods} to secure a safe pass limit.`;
+      advice = `Bypass Module ${skipMod} entirely. Focus your remaining ${mtCramHours} hours exclusively on high-yield Modules ${focusMods} to secure a safe pass limit.`;
     } else {
       advice = `With ${mtCramHours} hours remaining and ${untouchedCount} modules untouched, prioritize Module ${untouchedIndices[0] + 1} (usually carries 20% fundamental weight) before attempting the others.`;
     }
@@ -3237,24 +3779,24 @@ export default function ToolsPage() {
 
     const handleShareCramStrategy = () => {
       let msg = `My Cram Strategy for ${activeName} (${activeCode}):\n`;
-      msg += `- Preparation: ${5 - untouchedCount}/5 modules done\n`;
+      msg += `- Preparation: ${moduleCount - untouchedCount}/${moduleCount} modules done\n`;
       msg += `- Cram Window: ${mtCramHours} hours left\n`;
       msg += `- Recom: ${advice}\n`;
       msg += "\nBuild your cram strategy on KTU Node!";
       navigator.clipboard.writeText(msg);
-      triggerNotification("Cram strategy copied to clipboard! 📋");
+      triggerNotification("Cram strategy copied to clipboard!");
     };
 
     return (
-      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <Notebook className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 dark:text-white text-sm leading-none">11th-Hour Study Sequencer</h3>
-              <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 block mt-1">Modules checklist & strategic advice</span>
+              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">11th-Hour Study Sequencer</h3>
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Modules checklist & strategic advice</span>
             </div>
           </div>
 
@@ -3275,14 +3817,15 @@ export default function ToolsPage() {
         {/* Modules Checklist */}
         <div className="space-y-2">
           <span className="text-[9.5px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block">Prepared Syllabus Modules</span>
-          <div className="grid grid-cols-5 gap-2">
-            {[1, 2, 3, 4, 5].map((num, idx) => {
+          <div className={`grid gap-2 ${moduleCount <= 5 ? "grid-cols-5" : moduleCount === 6 ? "grid-cols-6" : moduleCount === 7 ? "grid-cols-7" : "grid-cols-8"}`}>
+            {Array.from({ length: moduleCount }, (_, i) => i).map((idx) => {
+              const num = idx + 1;
               const isDone = moduleToggles[idx];
               return (
                 <button
                   key={num}
                   onClick={() => toggleModule(idx)}
-                  className={`p-2.5 rounded-xl border text-[10px] font-bold uppercase transition-all cursor-pointer text-center active:scale-95 ${
+                  className={`py-2 rounded-xl border text-[9.5px] font-bold uppercase transition-all cursor-pointer text-center active:scale-95 ${
                     isDone
                       ? "bg-emerald-500/10 text-emerald-450 border-emerald-500/20"
                       : "bg-slate-50 dark:bg-slate-900 text-zinc-550 border-slate-200/40 dark:border-white/[0.04] hover:bg-white/[0.02]"
@@ -3296,10 +3839,10 @@ export default function ToolsPage() {
         </div>
 
         {/* Cram timer slider */}
-        <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-zinc-950/30 space-y-2.5">
+        <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-slate-50/50 dark:bg-white/50 dark:bg-slate-900/30 space-y-2.5">
           <div className="flex justify-between items-center text-xs font-bold text-zinc-350">
             <span>Remaining study window time</span>
-            <span className="text-violet-600 dark:text-violet-400 font-bold font-mono">{mtCramHours} Hours</span>
+            <span className="text-blue-600 dark:text-blue-400 font-bold font-mono">{mtCramHours} Hours</span>
           </div>
           <input
             type="range"
@@ -3307,23 +3850,33 @@ export default function ToolsPage() {
             max="24"
             value={mtCramHours}
             onChange={(e) => setMtCramHours(Number(e.target.value))}
-            className="w-full accent-violet-500 cursor-pointer h-1 rounded-lg bg-zinc-800"
+            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-zinc-800"
           />
         </div>
 
         {/* Advisor recommendation text */}
-        <div className="p-4 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-zinc-950/40 space-y-2">
-          <span className="text-[9px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block">Strategic Cram Recommendation</span>
-          <p className="text-[10px] leading-relaxed text-zinc-350 font-medium font-sans">
+        <div className="p-4 rounded-xl border border-slate-200/60 dark:border-white/[0.06] bg-slate-50/50 dark:bg-white/60 dark:bg-slate-900/40 space-y-2">
+          {urgencyLevel === "critical" ? (
+            <div className="px-2.5 py-1.5 rounded-xl bg-rose-500/10 text-[9px] font-bold text-rose-500 border border-rose-500/20 flex items-center gap-1.5 animate-pulse">
+              <AlertCircle className="w-3.5 h-3.5 text-rose-500" />
+              <span>Critical: Only {mtCramHours}h remaining — focus on high-yield modules only</span>
+            </div>
+          ) : (
+            <div className="px-2.5 py-1.5 rounded-xl bg-amber-500/10 text-[9px] font-bold text-amber-500 border border-amber-500/20 flex items-center gap-1.5">
+              <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+              <span>Focused mode: {mtCramHours}h study window — prioritize untouched modules</span>
+            </div>
+          )}
+          <p className="text-[10px] leading-relaxed text-slate-600 dark:text-zinc-300 font-medium font-sans">
             {advice}
           </p>
         </div>
 
         <button
           onClick={handleShareCramStrategy}
-          className="w-full py-2.5 rounded-xl bg-violet-500/10 hover:bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/20 text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98]"
+          className="w-full py-2.5 rounded-xl bg-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02] text-slate-600 dark:text-slate-400 border border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
         >
-          Share Cram Strategy 📋
+          <Share2 className="w-3.5 h-3.5" /> Share Cram Strategy
         </button>
       </div>
     );
@@ -3343,12 +3896,12 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4 relative overflow-hidden w-full">
-        <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.02] blur-[40px] pointer-events-none" />
+      <div className="bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-4 sm:p-5 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] space-y-4 relative overflow-hidden w-full">
+        <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-blue-500/[0.02] blur-[40px] pointer-events-none" />
         
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/60 dark:border-white/[0.06]">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-400 animate-pulse">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400 animate-pulse">
               <Sparkles className="w-4.5 h-4.5" />
             </div>
             <div>
@@ -3372,7 +3925,7 @@ export default function ToolsPage() {
                 onClick={() => setStudyConsoleTab(tab.id as typeof studyConsoleTab)}
                 className={`px-2 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 ${
                   studyConsoleTab === tab.id
-                    ? "bg-white/10 text-violet-600 dark:text-violet-400 border border-white/[0.08]"
+                    ? "bg-white/10 text-blue-600 dark:text-blue-400 border border-white/[0.08]"
                     : "text-slate-500 dark:text-slate-400 hover:text-zinc-300"
                 }`}
               >
@@ -3392,7 +3945,7 @@ export default function ToolsPage() {
                   cx="56"
                   cy="56"
                   r="48"
-                  className="stroke-zinc-800"
+                  className="stroke-slate-100 dark:stroke-zinc-800"
                   strokeWidth="3.5"
                   fill="transparent"
                 />
@@ -3412,7 +3965,7 @@ export default function ToolsPage() {
                   {Math.floor(pomodoroTime / 60)}:{(pomodoroTime % 60).toString().padStart(2, "0")}
                 </span>
                 <span className="text-[7.5px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
-                  {pomodoroMode === "focus" ? "🔥 Focus" : "☕ Break"}
+                  <span className="flex items-center gap-1">{pomodoroMode === "focus" ? <Flame className="w-3.5 h-3.5 text-orange-500" /> : <Coffee className="w-3.5 h-3.5 text-blue-400" />}{pomodoroMode === "focus" ? "Focus" : "Break"}</span>
                 </span>
               </div>
             </div>
@@ -3421,7 +3974,7 @@ export default function ToolsPage() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setPomodoroActive(!pomodoroActive)}
-                className="px-4 py-2 bg-violet-500/20 hover:bg-violet-500/30 text-violet-600 dark:text-violet-400 border border-violet-500/30 rounded-xl text-[9px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
+                className="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-600 dark:text-blue-400 border border-blue-500/30 rounded-xl text-[9px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
               >
                 {pomodoroActive ? "Pause" : "Start"}
               </button>
@@ -3449,30 +4002,33 @@ export default function ToolsPage() {
             </div>
 
             {/* Soundscapes */}
-            <div className="w-full space-y-2 border-t border-slate-200/60 dark:border-white/[0.06] pt-3">
+            <div className="w-full space-y-3.5 border-t border-slate-200 dark:border-slate-800/60 pt-4.5">
               <span className="text-[8px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block text-center">
                 Study Ambient Soundscapes
               </span>
               <div className="grid grid-cols-4 gap-1.5 animate-fade-in">
                 {[
-                  { id: "rain", label: "🌧️ Rain", desc: "Rain" },
-                  { id: "fire", label: "🔥 Fire", desc: "Fire" },
-                  { id: "cafe", label: "☕ Cafe", desc: "Cafe" },
-                  { id: "lofi", label: "🎵 Beat", desc: "Lofi" }
-                ].map(snd => (
-                  <button
-                    key={snd.id}
-                    onClick={() => setSelectedLofiSound(selectedLofiSound === snd.id ? null : snd.id)}
-                    className={`py-1.5 rounded-lg border text-[8px] font-bold transition-all cursor-pointer flex flex-col items-center active:scale-[0.98] ${
-                      selectedLofiSound === snd.id
-                        ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20"
-                        : "bg-transparent text-slate-500 dark:text-slate-400 border-slate-200/60 dark:border-white/[0.06]"
-                    }`}
-                  >
-                    <span>{snd.label.split(" ")[0]}</span>
-                    <span className="text-[6.5px] font-black uppercase tracking-wider text-zinc-450 mt-0.5">{snd.label.split(" ")[1]}</span>
-                  </button>
-                ))}
+                  { id: "rain", label: "Rain", icon: CloudRain },
+                  { id: "fire", label: "Fire", icon: Flame },
+                  { id: "cafe", label: "Cafe", icon: Coffee },
+                  { id: "lofi", label: "Beat", icon: Music }
+                ].map(snd => {
+                  const SndIcon = snd.icon;
+                  return (
+                    <button
+                      key={snd.id}
+                      onClick={() => setSelectedLofiSound(selectedLofiSound === snd.id ? null : snd.id)}
+                      className={`py-1.5 rounded-lg border text-[8px] font-bold transition-all cursor-pointer flex flex-col items-center active:scale-[0.98] ${
+                        selectedLofiSound === snd.id
+                          ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20"
+                          : "bg-transparent text-slate-500 dark:text-slate-400 border-slate-200/60 dark:border-white/[0.06]"
+                      }`}
+                    >
+                      <SndIcon className="w-4 h-4 mb-0.5" />
+                      <span className="text-[6.5px] font-black uppercase tracking-wider text-zinc-405">{snd.label}</span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -3489,7 +4045,7 @@ export default function ToolsPage() {
               <div className="space-y-3 animate-fade-in">
                 <div className="flex justify-between items-center text-[9px] font-bold text-slate-500 dark:text-slate-400 px-1">
                   <span>Card {activeCardIndex + 1} of {flashcardsList.length}</span>
-                  <span className="bg-violet-500/10 text-violet-600 dark:text-violet-400 px-2 py-0.5 rounded-lg border border-violet-500/20">
+                  <span className="bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2 py-0.5 rounded-lg border border-blue-500/20">
                     Retained: {flashcardScores.known} / {flashcardScores.total} Cards
                   </span>
                 </div>
@@ -3545,11 +4101,11 @@ export default function ToolsPage() {
                         setFlashcardScores(prev => ({ ...prev, known: prev.known + 1 }));
                         setIsCardFlipped(false);
                         setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
-                        triggerNotification("Concept marked as known! 👍");
+                        triggerNotification("Concept marked as known.");
                       }}
                       className="px-2.5 py-1 bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/15 text-emerald-450 rounded-lg text-[8.5px] font-bold uppercase transition-all cursor-pointer active:scale-95"
                     >
-                      Known 👍
+                      Known
                     </button>
                     <button
                       onClick={() => {
@@ -3559,7 +4115,7 @@ export default function ToolsPage() {
                       }}
                       className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/15 text-amber-450 rounded-lg text-[8.5px] font-bold uppercase transition-all cursor-pointer active:scale-95"
                     >
-                      Review 👎
+                      Review
                     </button>
                   </div>
                 </div>
@@ -3576,12 +4132,12 @@ export default function ToolsPage() {
               {mtHallChecklist.map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-2.5 p-2 rounded-xl bg-zinc-955/10 border border-slate-200/40 dark:border-white/[0.04] text-zinc-300 hover:bg-zinc-955/20 transition-all"
+                  className="flex items-center gap-2.5 p-2 rounded-xl bg-white/30 dark:bg-slate-900/10 border border-slate-200/40 dark:border-white/[0.04] text-zinc-300 hover:bg-zinc-955/20 transition-all"
                 >
                   <input
                     type="checkbox"
                     defaultChecked
-                    className="accent-violet-500 h-3.5 w-3.5 rounded bg-zinc-900 border-slate-200/60 dark:border-white/[0.06] cursor-pointer"
+                    className="accent-violet-500 h-3.5 w-3.5 rounded bg-white dark:bg-zinc-900 border border-slate-200/60 dark:border-white/[0.06] cursor-pointer"
                   />
                   <span>{item}</span>
                 </div>
@@ -3636,32 +4192,36 @@ export default function ToolsPage() {
 
             {(() => {
               const CIE = mtRevalCie;
-              let gambleStatus = "Low Probability ❌";
+              let gambleStatus = "Low Probability";
               let gambleTheme = "bg-rose-500/10 text-rose-455 border-rose-500/20";
               let details = "Revaluation fee (Rs 600) is unlikely to yield results based on your low internal score.";
 
               if (mtRevalGrade === "F") {
                 if (CIE >= 22 && mtRevalExpected === "Excellent") {
-                  gambleStatus = "High Chance 🚀";
+                  gambleStatus = "High Chance";
                   gambleTheme = "bg-emerald-500/10 text-emerald-455 border-emerald-500/20";
                   details = "Strong recommendation: High internal score combined with a positive exam sentiment guarantees high revaluation success rates.";
                 } else if (CIE >= 18 && mtRevalExpected === "Excellent") {
-                  gambleStatus = "Moderate ⚖️";
+                  gambleStatus = "Moderate";
                   gambleTheme = "bg-amber-500/10 text-amber-450 border-amber-500/20";
                   details = "Decent CIE standing. Worth the gamble if you are confident your answers matched the key schema.";
                 }
               } else {
                 if (mtRevalExpected === "Excellent") {
-                  gambleStatus = "Moderate ⚖️";
+                  gambleStatus = "Moderate";
                   gambleTheme = "bg-amber-500/10 text-amber-450 border-amber-500/20";
                   details = "Grade improvements are harder to verify than simple F-pass corrections. Proceed if your paper was highly structured.";
                 }
               }
 
+              const GambleIcon = gambleStatus === "High Chance" ? Sparkles : gambleStatus === "Moderate" ? HelpCircle : AlertCircle;
               return (
-                <div className={`p-3.5 rounded-xl border text-center ${gambleTheme} space-y-1`}>
+                <div className={`p-3.5 rounded-xl border text-center ${gambleTheme} flex flex-col items-center justify-center space-y-1`}>
                   <div className="text-[8px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase leading-none">Revaluation Risk Assessment</div>
-                  <div className="text-sm font-bold py-1 leading-none">{gambleStatus}</div>
+                  <div className="text-sm font-bold py-1 leading-none flex items-center gap-1 mt-1">
+                    <GambleIcon className="w-4 h-4 shrink-0" />
+                    {gambleStatus}
+                  </div>
                   <div className="text-[9px] font-medium leading-normal text-slate-500 dark:text-slate-400 mt-1">{details}</div>
                 </div>
               );
@@ -3671,8 +4231,8 @@ export default function ToolsPage() {
 
         {/* Tab 5: Splits */}
         {studyConsoleTab === "splits" && (
-          <div className="space-y-3.5 animate-fade-in text-[10px] text-zinc-350">
-            <div className="p-3 bg-zinc-955/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
+          <div className="space-y-3.5 animate-fade-in text-[10px] text-slate-600 dark:text-zinc-400">
+            <div className="p-3 bg-white/30 dark:bg-slate-900/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
               <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Seminar Split (max 100)</span>
               <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                 <span>Report Quality Documentation</span>
@@ -3682,13 +4242,13 @@ export default function ToolsPage() {
                 <span>Technical Presentation / Slides</span>
                 <span className="font-bold text-slate-900 dark:text-white font-mono">40 Marks</span>
               </div>
-              <div className="flex justify-between text-violet-600 dark:text-violet-400 font-bold">
+              <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold">
                 <span>Defense / Q&A Viva Session</span>
                 <span className="font-mono">30 Marks</span>
               </div>
             </div>
 
-            <div className="p-3 bg-zinc-955/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
+            <div className="p-3 bg-white/30 dark:bg-slate-900/10 border border-slate-200/40 dark:border-white/[0.04] rounded-xl space-y-1.5">
               <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1">Project Split (max 100)</span>
               <div className="flex justify-between border-b border-slate-200/40 dark:border-white/[0.04] pb-1">
                 <span>Supervisor / Faculty Guide</span>
@@ -3698,7 +4258,7 @@ export default function ToolsPage() {
                 <span>Internal Evaluation Committee</span>
                 <span className="font-bold text-slate-900 dark:text-white font-mono">40 Marks</span>
               </div>
-              <div className="flex justify-between text-violet-600 dark:text-violet-400 font-bold">
+              <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold">
                 <span>Project Report & Viva ESE</span>
                 <span className="font-mono">30 Marks</span>
               </div>
@@ -3711,25 +4271,27 @@ export default function ToolsPage() {
           <div className="space-y-3 animate-fade-in text-[10px]">
             <div className="flex justify-between items-center text-[9px] font-bold text-slate-500 dark:text-slate-400 px-1">
               <span>Private Scratchpad</span>
-              <span className="text-violet-600 dark:text-violet-400 font-bold font-mono">{wordCount} Words</span>
+              <span className="text-blue-600 dark:text-blue-400 font-bold font-mono">{wordCount} Words</span>
             </div>
             <textarea
               value={notepadText}
               onChange={(e) => handleNotepadSave(e.target.value)}
               placeholder="Type formulas, notes, or cram slots here..."
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl p-3 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-violet-500/20 text-slate-900 dark:text-white min-h-[120px] resize-none"
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl p-3 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500/20 text-slate-900 dark:text-white min-h-[120px] resize-none"
             />
             <div className="flex items-center justify-between">
               <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400">
                 {notepadSaved ? (
-                  <span className="text-emerald-450 animate-pulse">Draft Saved! 💾</span>
+                  <span className="text-emerald-450 animate-pulse flex items-center gap-1">
+                    <Save className="w-3.5 h-3.5 animate-pulse" /> Draft Saved!
+                  </span>
                 ) : (
                   <span>Auto-saved in local storage</span>
                 )}
               </span>
               <button
                 onClick={handleDownloadNotes}
-                className="px-2.5 py-1 bg-violet-500/10 hover:bg-violet-500/15 border border-violet-500/15 text-violet-600 dark:text-violet-400 rounded-lg text-[8px] font-bold uppercase transition-all cursor-pointer active:scale-95"
+                className="px-2.5 py-1 bg-blue-500/10 hover:bg-blue-500/15 border border-blue-500/15 text-blue-600 dark:text-blue-400 rounded-lg text-[8px] font-bold uppercase transition-all cursor-pointer active:scale-95"
               >
                 Download .txt
               </button>
@@ -3765,11 +4327,11 @@ export default function ToolsPage() {
     const cieVal = plannerCieScore;
 
     return (
-      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4">
+      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-4 sm:p-5 shadow-lg space-y-4">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-slate-800/20 pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-violet-600 dark:text-violet-450">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-450">
               <Award className="w-5 h-5 animate-pulse" />
             </div>
             <div>
@@ -3842,7 +4404,7 @@ export default function ToolsPage() {
                 if (targetItem.grade === "S") { badgeColor = "bg-emerald-500/10 text-emerald-500 border-emerald-500/10"; borderStyle = "hover:border-emerald-400"; }
                 else if (targetItem.grade === "A+") { badgeColor = "bg-blue-500/10 text-blue-500 border-blue-500/10"; borderStyle = "hover:border-blue-400"; }
                 else if (targetItem.grade === "A") { badgeColor = "bg-indigo-500/10 text-indigo-500 border-indigo-500/10"; borderStyle = "hover:border-indigo-400"; }
-                else { badgeColor = "bg-violet-500/10 text-violet-500 border-violet-500/10"; borderStyle = "hover:border-violet-400"; }
+                else { badgeColor = "bg-blue-500/10 text-violet-500 border-blue-500/10"; borderStyle = "hover:border-violet-400"; }
               }
 
               return (
@@ -3892,2198 +4454,87 @@ export default function ToolsPage() {
     );
   };
 
-  // 3. Lab Checklist & timeline notes board (Notes, timelines, and labs stacked side by side)
-  const renderLabsTimelineNotes = () => {
-    const isLabsEmpty = labCourses.length === 0;
-    const currentActiveLabId = activeLabTab || (labCourses[0] ? labCourses[0].id : "");
-    const activeLab = labCourses.find(l => l.id === currentActiveLabId);
-
-    const wordCount = notepadText.trim() ? notepadText.trim().split(/\s+/).length : 0;
-
-    const handleDownloadNotes = () => {
-      const element = document.createElement("a");
-      const file = new Blob([notepadText], { type: "text/plain" });
-      element.href = URL.createObjectURL(file);
-      element.download = `ktu_study_notes_s${sem}.txt`;
-      document.body.appendChild(element);
-      element.click();
-      document.body.removeChild(element);
-    };
+  const renderSgpaGoalEstimator = () => {
+    const allocated = allocateGradesForTargetSgpa(subjects, targetSgpa, branch, sem);
+    const totalCredits = allocated.reduce((acc, c) => acc + c.credits, 0);
+    const totalPoints = allocated.reduce((acc, c) => acc + c.points * c.credits, 0);
+    const currentAllocSgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0;
 
     return (
-      <div className="space-y-4">
-        {/* Lab Checklist Card */}
-        <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/20 dark:border-slate-800/20">
-            <div className="flex items-center gap-2.5">
-              <ListTodo className="w-4.5 h-4.5 text-violet-500" />
-              <div>
-                <h3 className="font-black text-slate-900 dark:text-slate-50 text-xs leading-none">Lab Work Checklist</h3>
-                <span className="text-[8px] font-bold text-slate-400 block mt-1">S{sem} Personalized Lab Experiments</span>
-              </div>
-            </div>
-
-            {/* Select active lab if multiple exist */}
-            {!isLabsEmpty && (
-              <select
-                value={currentActiveLabId}
-                onChange={(e) => setActiveLabTab(e.target.value)}
-                className="bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-850 rounded-xl px-2 py-0.5 text-[9px] font-black cursor-pointer focus:outline-none"
-              >
-                {labCourses.map(lab => (
-                  <option key={lab.id} value={lab.id}>{lab.code} - {lab.name.replace(" Laboratory", "").replace(" Lab", "")}</option>
-                ))}
-              </select>
-            )}
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-300 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+        {/* Header */}
+        <div className="flex items-center gap-2.5 border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
+          <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+            <GraduationCap className="w-5 h-5" />
           </div>
+          <div>
+            <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">SGPA Target Allocator</h3>
+            <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Determine grade requirements for your GPA goal</span>
+          </div>
+        </div>
 
-          {isLabsEmpty ? (
-            <div className="text-[10px] font-bold text-slate-400 text-center py-6">
-              No laboratory courses loaded for this semester.
+        {/* Target SGPA Slider */}
+        <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/40 border border-slate-200/60 dark:border-slate-800 space-y-3">
+          <div className="flex justify-between items-center text-xs font-bold text-slate-700 dark:text-slate-300">
+            <span>Target SGPA Goal</span>
+            <span className="text-blue-600 dark:text-blue-400 text-sm font-black tabular-nums">{targetSgpa.toFixed(2)} / 10.00</span>
+          </div>
+          <input
+            type="range"
+            min="5.5"
+            max="10.0"
+            step="0.1"
+            value={targetSgpa}
+            onChange={(e) => setTargetSgpa(Number(e.target.value))}
+            className="w-full accent-blue-500 cursor-pointer h-1 rounded-lg bg-slate-100 dark:bg-slate-800"
+          />
+          <div className="flex justify-between text-[8px] font-bold text-slate-400 uppercase tracking-widest leading-none">
+            <span>Min (5.5)</span>
+            <span className="text-blue-500/80">Estimated SGPA: {currentAllocSgpa.toFixed(2)}</span>
+            <span>Max (10.0)</span>
+          </div>
+        </div>
+
+        {/* Grades allocation list */}
+        <div className="space-y-2">
+          <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block mb-1">Grade Allocation Strategy</span>
+          {allocated.length === 0 ? (
+            <div className="text-[10px] text-slate-400 text-center py-4 border border-dashed border-slate-200 dark:border-slate-800 rounded-xl">
+              Select branch & semester above to load allocation template
             </div>
-          ) : activeLab ? (
-            <div className="space-y-4">
-              {/* Compute Lab progression & rank */}
-              {(() => {
-                let completedCheckboxes = 0;
-                let totalCheckboxes = 0;
-                let rankBadge = "🧪 Novice Cadet";
-                let badgeTheme = "bg-blue-500/10 text-blue-600 border-blue-500/15";
-                let progressPercent = 0;
-
-                activeLab.exercises.forEach(ex => {
-                  if (ex.logic) completedCheckboxes++;
-                  if (ex.record) completedCheckboxes++;
-                  if (ex.viva) completedCheckboxes++;
-                  if (ex.signed) completedCheckboxes++;
-                });
-                totalCheckboxes = activeLab.exercises.length * 4;
-                progressPercent = totalCheckboxes > 0 ? Math.round((completedCheckboxes / totalCheckboxes) * 100) : 0;
+          ) : (
+            <div className="space-y-1.5 max-h-[220px] overflow-y-auto pr-1">
+              {allocated.map((item, idx) => {
+                let badgeColor = "bg-slate-105 text-slate-500 dark:bg-slate-800 dark:text-slate-400 border border-slate-250/20";
+                if (item.grade === "S") badgeColor = "bg-emerald-500/10 text-emerald-600 dark:text-emerald-450 border border-emerald-500/15";
+                else if (item.grade.startsWith("A")) badgeColor = "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15";
+                else if (item.grade.startsWith("B")) badgeColor = "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/15";
                 
-                if (progressPercent === 100) {
-                  rankBadge = "🏆 Certified Genius";
-                  badgeTheme = "bg-emerald-500/15 text-emerald-600 border-emerald-500/20";
-                } else if (progressPercent >= 80) {
-                  rankBadge = "🧠 Lab Master";
-                  badgeTheme = "bg-purple-500/10 text-purple-600 border-purple-500/15";
-                } else if (progressPercent >= 50) {
-                  rankBadge = "🚀 Exam Ready";
-                  badgeTheme = "bg-indigo-500/10 text-indigo-600 border-indigo-500/15";
-                } else if (progressPercent >= 20) {
-                  rankBadge = "📈 Record Builder";
-                  badgeTheme = "bg-amber-500/10 text-amber-600 border-amber-500/15";
-                } else {
-                  rankBadge = "🧪 Novice Cadet";
-                  badgeTheme = "bg-blue-500/10 text-blue-600 border-blue-500/15";
-                }
-
                 return (
-                  <div className="space-y-2 pb-2 border-b border-slate-100 dark:border-slate-850">
-                    <div className="flex justify-between items-center text-[9px] font-bold text-slate-400">
-                      <span className="flex items-center gap-1.5">
-                        Lab Progress: <strong className="text-slate-800 dark:text-slate-200">{progressPercent}%</strong>
-                      </span>
-                      <span className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider shrink-0 ${badgeTheme}`}>
-                        {rankBadge}
+                  <div key={idx} className="p-2.5 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.02] flex items-center justify-between text-[11px] hover:border-slate-350 dark:hover:border-slate-800 transition-all duration-200">
+                    <div className="truncate pr-2 min-w-0 flex-1">
+                      <span className="font-bold text-slate-800 dark:text-slate-200 truncate block text-[11.5px]">{item.name}</span>
+                      <span className="text-[9px] text-slate-400 font-mono block mt-0.5">{item.code} • {item.credits} Credits</span>
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className="text-[10px] font-bold text-slate-400">{item.points.toFixed(1)} GP</span>
+                      <span className={`px-2 py-0.5 rounded-lg text-[10px] font-black uppercase font-mono tracking-wider ${badgeColor}`}>
+                        {item.grade}
                       </span>
                     </div>
-                    <div className="h-1 bg-slate-150 dark:bg-slate-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-violet-500 transition-all duration-300" style={{ width: `${progressPercent}%` }} />
-                    </div>
                   </div>
-                );
-              })()}
-
-              {/* Experiments list */}
-              <div className="space-y-2 max-h-[160px] overflow-y-auto pr-1 scrollbar-thin">
-                {activeLab.exercises.map((ex) => (
-                  <div key={ex.id} className="p-2.5 rounded-xl bg-slate-950/[0.01] dark:bg-white/[0.01] border border-slate-200 dark:border-slate-800 space-y-2 text-[10px] font-semibold text-slate-700 dark:text-slate-250">
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="truncate font-bold text-slate-850 dark:text-slate-100">{ex.name}</span>
-                      <button
-                        onClick={() => removeLabExercise(activeLab.id, ex.id)}
-                        className="text-slate-350 hover:text-rose-500 p-0.5 cursor-pointer"
-                        title="Delete exercise"
-                      >
-                        <Trash2 className="w-3 h-3" />
-                      </button>
-                    </div>
-
-                    {/* Interactive glowing checkbox tags */}
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      <button
-                        onClick={() => handleLabToggle(activeLab.id, ex.id, "logic")}
-                        className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                          ex.logic
-                            ? "bg-blue-500/10 text-blue-500 border-blue-500/10"
-                            : "bg-transparent text-slate-400 border-slate-200 dark:border-slate-800"
-                        }`}
-                      >
-                        Code/Logic
-                      </button>
-                      <button
-                        onClick={() => handleLabToggle(activeLab.id, ex.id, "record")}
-                        className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                          ex.record
-                            ? "bg-amber-500/10 text-amber-500 border-amber-500/10"
-                            : "bg-transparent text-slate-400 border-slate-200 dark:border-slate-800"
-                        }`}
-                      >
-                        Record Write
-                      </button>
-                      <button
-                        onClick={() => handleLabToggle(activeLab.id, ex.id, "viva")}
-                        className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                          ex.viva
-                            ? "bg-purple-500/10 text-purple-500 border-purple-500/10"
-                            : "bg-transparent text-slate-400 border-slate-200 dark:border-slate-800"
-                        }`}
-                      >
-                        Viva Prep
-                      </button>
-                      <button
-                        onClick={() => handleLabToggle(activeLab.id, ex.id, "signed")}
-                        className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                          ex.signed
-                            ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/10"
-                            : "bg-transparent text-slate-400 border-slate-200 dark:border-slate-800"
-                        }`}
-                      >
-                        Signed Sheet
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Add custom exercise button */}
-              <button
-                onClick={() => addLabExercise(activeLab.id)}
-                className="flex items-center gap-1 text-[9px] font-black text-violet-500 hover:bg-violet-500/5 px-2.5 py-1 rounded-lg transition-all cursor-pointer"
-              >
-                <Plus className="w-3 h-3" /> Add Lab Exercise Slot
-              </button>
-            </div>
-          ) : null}
-        </div>
-
-
-
-        {/* All-In-One Premium Study Console */}
-        <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-[28px] p-5 shadow-lg space-y-4 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.02] blur-[40px] pointer-events-none" />
-          
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/20 dark:border-slate-800/20">
-            <div className="flex items-center gap-2.5">
-              <Sparkles className="w-4.5 h-4.5 text-blue-500 animate-pulse" />
-              <div>
-                <h3 className="font-black text-slate-900 dark:text-slate-50 text-xs leading-none">KTU Study Console</h3>
-                <span className="text-[8px] font-bold text-slate-400 block mt-1">All-in-one focus & revision suite</span>
-              </div>
-            </div>
-
-            {/* Premium Study Tabs switcher */}
-            <div className="flex items-center gap-1 bg-slate-955/[0.04] dark:bg-white/[0.03] p-1 rounded-xl border border-slate-950/[0.04] dark:border-slate-200/40 dark:border-white/[0.04] self-start sm:self-auto">
-              <button
-                onClick={() => setStudyConsoleTab("pomodoro")}
-                className={`px-2.5 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                  studyConsoleTab === "pomodoro"
-                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
-                    : "text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
-                }`}
-              >
-                Timer
-              </button>
-              <button
-                onClick={() => setStudyConsoleTab("flashcards")}
-                className={`px-2.5 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                  studyConsoleTab === "flashcards"
-                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
-                    : "text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
-                }`}
-              >
-                Recall
-              </button>
-              <button
-                onClick={() => setStudyConsoleTab("spaced")}
-                className={`px-2.5 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                  studyConsoleTab === "spaced"
-                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
-                    : "text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
-                }`}
-              >
-                Spaced
-              </button>
-              <button
-                onClick={() => setStudyConsoleTab("notepad")}
-                className={`px-2.5 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${
-                  studyConsoleTab === "notepad"
-                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
-                    : "text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
-                }`}
-              >
-                Notepad
-              </button>
-            </div>
-          </div>
-
-          {/* Pomodoro Timer tab */}
-          {studyConsoleTab === "pomodoro" && (
-            <div className="space-y-4 flex flex-col items-center">
-              {/* Circular premium dynamic progress ring */}
-              <div className="relative w-28 h-28 flex items-center justify-center">
-                <svg className="w-full h-full transform -rotate-90">
-                  <circle
-                    cx="56"
-                    cy="56"
-                    r="48"
-                    className="stroke-slate-100 dark:stroke-slate-800/80"
-                    strokeWidth="3.5"
-                    fill="transparent"
-                  />
-                  <circle
-                    cx="56"
-                    cy="56"
-                    r="48"
-                    className="stroke-blue-500 transition-all duration-1000"
-                    strokeWidth="4.5"
-                    fill="transparent"
-                    strokeDasharray={301.59}
-                    strokeDashoffset={301.59 - (301.59 * (pomodoroTime / (pomodoroMode === "focus" ? 1500 : 300)))}
-                  />
-                </svg>
-                <div className="absolute flex flex-col items-center text-center">
-                  <span className="font-mono text-xl font-black text-slate-850 dark:text-slate-50 tabular-nums">
-                    {Math.floor(pomodoroTime / 60)}:{(pomodoroTime % 60).toString().padStart(2, "0")}
-                  </span>
-                  <span className="text-[7px] font-black text-slate-400 uppercase tracking-widest mt-0.5">
-                    {pomodoroMode === "focus" ? "🔥 Focus" : "☕ Break"}
-                  </span>
-                </div>
-              </div>
-
-              {/* Playback Controls */}
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => setPomodoroActive(!pomodoroActive)}
-                  className="px-3.5 py-1.5 bg-blue-500 hover:bg-blue-600 text-slate-900 dark:text-white rounded-xl text-[9px] font-black uppercase tracking-wider transition-all shadow-md cursor-pointer flex items-center gap-1"
-                >
-                  {pomodoroActive ? "Pause" : "Start"}
-                </button>
-                <button
-                  onClick={() => {
-                    setPomodoroActive(false);
-                    setPomodoroTime(pomodoroMode === "focus" ? 1500 : 300);
-                  }}
-                  className="w-7 h-7 rounded-xl bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-400 hover:text-slate-600 cursor-pointer"
-                  title="Reset clock"
-                >
-                  <RotateCcw className="w-3 h-3" />
-                </button>
-                <button
-                  onClick={() => {
-                    setPomodoroActive(false);
-                    const nextMode = pomodoroMode === "focus" ? "break" : "focus";
-                    setPomodoroMode(nextMode);
-                    setPomodoroTime(nextMode === "focus" ? 1500 : 300);
-                  }}
-                  className="px-2.5 py-1.5 bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-200 dark:border-slate-800 rounded-xl text-[9px] font-black uppercase text-slate-450 hover:text-slate-650 transition-all cursor-pointer"
-                >
-                  Skip
-                </button>
-              </div>
-
-              {/* Ambient Sound waves selectors */}
-              <div className="w-full space-y-2 border-t border-slate-100 dark:border-slate-850/80 pt-3">
-                <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest block text-center">
-                  Study Ambient Soundscapes
-                </span>
-                <div className="grid grid-cols-4 gap-1.5">
-                  {[
-                    { id: "rain", label: "🌧️ Rain", desc: "Rain" },
-                    { id: "fire", label: "🔥 Fire", desc: "Fire" },
-                    { id: "cafe", label: "☕ Cafe", desc: "Cafe" },
-                    { id: "lofi", label: "🎵 Beat", desc: "Lofi" }
-                  ].map(snd => (
-                    <button
-                      key={snd.id}
-                      onClick={() => setSelectedLofiSound(selectedLofiSound === snd.id ? null : snd.id)}
-                      className={`py-1.5 rounded-lg border text-[8px] font-bold transition-all cursor-pointer flex flex-col items-center ${
-                        selectedLofiSound === snd.id
-                          ? "bg-blue-500/10 text-blue-600 border-blue-500/15"
-                          : "bg-transparent text-slate-450 border-slate-200 dark:border-slate-800/80"
-                      }`}
-                    >
-                      <span>{snd.label.split(" ")[0]}</span>
-                      <span className="text-[6.5px] font-black uppercase tracking-wider text-slate-400 mt-0.5">{snd.label.split(" ")[1]}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Active Recall flashcards Tab */}
-          {studyConsoleTab === "flashcards" && (
-            <div className="space-y-3">
-              {flashcardsList.length === 0 ? (
-                <div className="text-[10px] font-bold text-slate-400 text-center py-6">
-                  Select a theory subject in the planner to activate flashcards.
-                </div>
-              ) : (
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center text-[9px] font-bold text-slate-400 px-1">
-                    <span>Card {activeCardIndex + 1} of {flashcardsList.length}</span>
-                    <span className="bg-blue-500/10 text-blue-600 px-2 py-0.5 rounded-lg border border-blue-500/10">
-                      Session score: {flashcardScores.known} / {flashcardScores.total} Known
-                    </span>
-                  </div>
-
-                  {/* Flipped Card box */}
-                  <div
-                    onClick={() => setIsCardFlipped(!isCardFlipped)}
-                    className="h-28 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-950/[0.015] dark:bg-white/[0.015] p-3.5 flex flex-col items-center justify-center text-center cursor-pointer select-none relative overflow-hidden group hover:shadow-inner transition-all duration-300"
-                  >
-                    <div className="absolute top-1.5 left-2 px-1.5 py-0.5 rounded bg-slate-900/5 dark:bg-white/5 text-[7px] font-black uppercase text-slate-400">
-                      {isCardFlipped ? "Answer (Click to flip back)" : "Question (Click to reveal)"}
-                    </div>
-                    <AnimatePresence mode="wait">
-                      <motion.div
-                        key={isCardFlipped ? "ans" : "que"}
-                        initial={{ opacity: 0, y: 3 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -3 }}
-                        transition={{ duration: 0.12 }}
-                        className="space-y-1 px-2"
-                      >
-                        <p className={`font-semibold leading-normal ${isCardFlipped ? "text-[9.5px] text-slate-700 dark:text-slate-200" : "text-xs font-bold text-slate-850 dark:text-slate-50"}`}>
-                          {isCardFlipped ? flashcardsList[activeCardIndex]?.a : flashcardsList[activeCardIndex]?.q}
-                        </p>
-                      </motion.div>
-                    </AnimatePresence>
-                  </div>
-
-                  {/* Buttons controls */}
-                  <div className="flex items-center justify-between gap-3 pt-1">
-                    <div className="flex gap-1.5">
-                      <button
-                        onClick={() => {
-                          setIsCardFlipped(false);
-                          setActiveCardIndex(prev => (prev > 0 ? prev - 1 : flashcardsList.length - 1));
-                        }}
-                        className="px-2 py-1 bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-200 dark:border-slate-800 rounded-lg text-[9px] font-black uppercase text-slate-400 hover:text-slate-655 cursor-pointer"
-                      >
-                        Prev
-                      </button>
-                      <button
-                        onClick={() => {
-                          setIsCardFlipped(false);
-                          setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
-                        }}
-                        className="px-2 py-1 bg-slate-950/[0.03] dark:bg-white/[0.03] border border-slate-200 dark:border-slate-800 rounded-lg text-[9px] font-black uppercase text-slate-400 hover:text-slate-655 cursor-pointer"
-                      >
-                        Next
-                      </button>
-                    </div>
-
-                    <div className="flex gap-1.5">
-                      <button
-                        onClick={() => {
-                          setFlashcardScores(prev => ({ ...prev, known: prev.known + 1 }));
-                          setIsCardFlipped(false);
-                          setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
-                          triggerNotification("Added to retained list! 👍");
-                        }}
-                        className="px-2.5 py-1 bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/15 text-emerald-600 rounded-lg text-[8.5px] font-black uppercase tracking-wider transition-all cursor-pointer"
-                      >
-                        Known 👍
-                      </button>
-                      <button
-                        onClick={() => {
-                          setIsCardFlipped(false);
-                          setActiveCardIndex(prev => (prev < flashcardsList.length - 1 ? prev + 1 : 0));
-                          triggerNotification("Marked for review later!");
-                        }}
-                        className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/15 text-amber-600 rounded-lg text-[8.5px] font-black uppercase tracking-wider transition-all cursor-pointer"
-                      >
-                        Review 👎
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* Spaced Repetition planner tab */}
-          {studyConsoleTab === "spaced" && (
-            <div className="space-y-3">
-              <div className="flex justify-between items-center text-[9px] font-bold text-slate-400 px-1 pb-1 border-b border-slate-100 dark:border-slate-850">
-                <span>Active Syllabus Concept Reviews</span>
-                <span>Spaced Interval Target</span>
-              </div>
-
-              <div className="space-y-1.5 max-h-[160px] overflow-y-auto pr-1 scrollbar-thin">
-                {getSpacedRepetitionTopics().map((top) => {
-                  const currentData = spacedRepetitionData[top.id] || { level: "low", date: "Never" };
-                  
-                  let badgeColor = "bg-rose-500/10 text-rose-500 border-rose-500/10";
-                  let badgeLabel = "Review Today 🔴";
-                  if (currentData.level === "medium") {
-                    badgeColor = "bg-amber-500/10 text-amber-600 border-amber-500/10";
-                    badgeLabel = "Retained 🟡";
-                  } else if (currentData.level === "high") {
-                    badgeColor = "bg-emerald-500/10 text-emerald-600 border-emerald-500/10";
-                    badgeLabel = "Mastered 🟢";
-                  }
-
-                  return (
-                    <div key={top.id} className="p-2 rounded-xl bg-slate-950/[0.01] dark:bg-white/[0.01] border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 text-[10px] font-semibold text-slate-700 dark:text-slate-250">
-                      <div className="truncate flex-1">
-                        <span className="text-[7.5px] font-black text-slate-400 uppercase tracking-widest block mb-0.5">{top.module}</span>
-                        <span className="truncate block font-bold text-slate-850 dark:text-slate-100 leading-snug">{top.title}</span>
-                        <span className="text-[7px] font-bold text-slate-400 block mt-0.5">Last reviewed: {currentData.date}</span>
-                      </div>
-                      
-                      <div className="flex items-center gap-2 shrink-0">
-                        <button
-                          onClick={() => {
-                            const nextLevel = currentData.level === "low" ? "medium" : currentData.level === "medium" ? "high" : "low";
-                            const dateStr = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
-                            setSpacedRepetitionData(prev => ({
-                              ...prev,
-                              [top.id]: { level: nextLevel, date: dateStr }
-                            }));
-                            triggerNotification(`Topic updated: ${nextLevel === "high" ? "Mastered!" : "Review scheduled."}`);
-                          }}
-                          className={`px-2 py-0.5 rounded-lg border text-[8px] font-black uppercase tracking-wider transition-all cursor-pointer ${badgeColor}`}
-                        >
-                          {badgeLabel}
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Study Notepad Tab Panel */}
-          {studyConsoleTab === "notepad" && (
-            <div className="space-y-3">
-              <div className="flex justify-between items-center text-[9px] font-bold text-slate-400 px-1 pb-1 border-b border-slate-100 dark:border-slate-850">
-                <span>Private Study Scratchpad</span>
-                <span className="text-violet-500 font-bold uppercase tracking-wider">{wordCount} Words</span>
-              </div>
-              <textarea
-                value={notepadText}
-                onChange={(e) => handleNotepadSave(e.target.value)}
-                placeholder="Type formulas, ESE concepts, series syllabus points, or custom logs here. Draft auto-saves in browser local storage..."
-                className="w-full bg-slate-950/[0.02] dark:bg-white/[0.015] border border-slate-200 dark:border-slate-800 rounded-2xl p-3 px-3.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-violet-500/20 text-slate-850 dark:text-slate-100 placeholder-slate-500 min-h-[140px] resize-none"
-              />
-              <div className="flex items-center justify-between">
-                <span className="text-[8px] font-black text-slate-450 uppercase tracking-widest flex items-center gap-1">
-                  {notepadSaved ? (
-                    <span className="text-emerald-500 animate-pulse">Saved draft successfully! 💾</span>
-                  ) : (
-                    <span>Auto-saving enabled 🛡️</span>
-                  )}
-                </span>
-                <button
-                  onClick={handleDownloadNotes}
-                  className="px-2.5 py-1 bg-violet-500/10 hover:bg-violet-500/15 border border-violet-500/15 text-violet-600 dark:text-violet-400 rounded-lg text-[8.5px] font-black uppercase tracking-wider transition-all cursor-pointer"
-                >
-                  Download .txt Notes
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  };
-
-  // 4. KTU Lightning Micro-Tools Sandbox Deck (24-in-1 Premium Suite)
-  const renderMicroToolsDeck = () => {
-    // 24 micro-tools deck directory metadata
-    const MICRO_TOOLS = [
-      { id: "bunk_master", title: "The Bunk Master (Attendance Cushion)", category: "internals", desc: "Tells you how many classes you can miss, or how many you must attend to hit the 75% limit." },
-      { id: "att_predictor", title: "KTU Attendance Marks Predictor", category: "internals", desc: "Maps your attendance percentage directly to official KTU internal mark slots (out of 5)." },
-      { id: "internals_aggregator", title: "Internal Marks Aggregator (50-Mark Split)", category: "internals", desc: "Combines Series exams, assignments, and attendance into a single score out of 50." },
-      { id: "damage_control", title: "Series 2 Damage Control Margin", category: "internals", desc: "Calculates the exact Series 2 score required to salvage your internal marks." },
-      
-      { id: "ese_finder", title: "ESE Target Finder (Pass/Grade Map)", category: "exams", desc: "Calculates the exact university exam score needed to pass or hit a target grade." },
-      { id: "exam_pacer", title: "3-Hour Exam Pacer (Time Budget)", category: "exams", desc: "Provides a systematic 180-minute time budget to ensure all questions get answered." },
-      { id: "module_weightage", title: "Module Weightage Risk Calculator", category: "exams", desc: "Evaluates your highest reachable exam score based on modules prepared." },
-      { id: "grace_optimizer", title: "Grace Mark Optimization Matrix", category: "exams", desc: "Distributes extra-curricular grace marks (NSS/NCC) to maximize passes." },
-      
-      { id: "year_back_check", title: "Year-Back Credit Lock Preventive Check", category: "credits", desc: "Warns if you are at risk of a year-back promotion lock based on accumulated credits." },
-      { id: "honours_minor", title: "Honours / Minor Eligibility Validator", category: "credits", desc: "Determines if your CGPA and backlog history qualify for Honours or Minors." },
-      { id: "improvement_eligibility", title: "Internal Improvement Eligibility Scanner", category: "credits", desc: "Checks if you are allowed to improve internals for a failed course under regulations." },
-      { id: "supple_debt", title: "Supplementary Exam Debt Tracker", category: "credits", desc: "Private ledger computing the monetary and credit impact of outstanding backlogs." },
-      
-      { id: "lab_aggregator", title: "Lab Internal Score Aggregator", category: "labs", desc: "Compiles continuous lab records, viva, and internal practical scores out of 75." },
-      { id: "project_splitter", title: "Mini-Project / Main-Project Weightage Splitter", category: "labs", desc: "Breaks down project assessment rubrics across supervisor and committee marks." },
-      { id: "seminar_breakdown", title: "Seminar Assessment Breakdown Tool", category: "labs", desc: "Evaluates technical seminar standing based on report, presentation, and viva." },
-      
-      { id: "course_decrypter", title: "KTU Course Code Decrypter", category: "hacks", desc: "Instantly decodes department, course type, and year level from a course code." },
-      { id: "gpa_converter", title: "Global 4-Point GPA Converter", category: "hacks", desc: "Translates standard 10-point KTU scale metrics to the US 4.0 GPA scale." },
-      { id: "cgpa_forecaster", title: "CGPA Maintenance Forecaster", category: "hacks", desc: "Calculates the exact SGPA needed in future semesters to reach a target CGPA." },
-      { id: "cram_planner", title: "The 11th Hour Cram Planner", category: "hacks", desc: "Generates a realistic, time-blocked study schedule for night-before crams." },
-      { id: "whatsapp_generator", title: "Mass-Bunk WhatsApp Broadcast", category: "hacks", desc: "Generates a copy-paste ready message to coordinate class-wide skipping." },
-      { id: "exam_checklist", title: "Exam Hall Blueprint Checklist", category: "hacks", desc: "Digital checklist for hall ticket, ID card, and approved calculator models." },
-      { id: "reval_gamble", title: "Revaluation Gamble Calculator", category: "hacks", desc: "Weighs whether paying the revaluation fee is a mathematically sound decision." },
-      { id: "syllabus_tracker", title: "Syllabus Milestone Tracker", category: "hacks", desc: "A simple checkbox progress tracker for core subjects' modules." },
-      { id: "countdown_dashboard", title: "Semester Countdown Dashboard", category: "hacks", desc: "Crisp monospaced live countdown tracking upcoming academic milestones." }
-    ];
-
-    // Filter tools based on search query or category
-    const searchLower = mtSearchQuery.toLowerCase().trim();
-    const filteredTools = searchLower
-      ? MICRO_TOOLS.filter(t => t.title.toLowerCase().includes(searchLower) || t.desc.toLowerCase().includes(searchLower))
-      : MICRO_TOOLS.filter(t => t.category === mtActiveCategory);
-
-    // Categories details for layout tabs
-    const categoriesList = [
-      { id: "internals", label: "Attendance & CIE", count: 4 },
-      { id: "exams", label: "End-Sem Strategy", count: 4 },
-      { id: "credits", label: "Credits & Promotion", count: 4 },
-      { id: "labs", label: "Labs & Projects", count: 3 },
-      { id: "hacks", label: "Survival Hacks", count: 9 }
-    ] as const;
-
-    // --- PRE-COMPUTE TOOL METRICS FOR STATE ACCORDION BADGES ---
-    const getToolBadge = (toolId: string) => {
-      switch (toolId) {
-        case "bunk_master": {
-          const Hc = Math.max(1, mtBunkHc);
-          const Ha = Math.min(Hc, mtBunkHa);
-          const pct = (Ha / Hc) * 100;
-          if (pct >= 75) {
-            const maxBunks = Math.floor((Ha - 0.75 * Hc) / 0.75);
-            return `${maxBunks} Bunks Safe`;
-          } else {
-            const streak = Math.ceil((0.75 * Hc - Ha) / 0.25);
-            return `${streak} streak required`;
-          }
-        }
-        case "att_predictor": {
-          const pct = mtAttPct;
-          let m = 0;
-          if (pct >= 90) m = 5;
-          else if (pct >= 85) m = 4;
-          else if (pct >= 80) m = 3;
-          else if (pct >= 75) m = 2;
-          return `${m} Marks / 5`;
-        }
-        case "internals_aggregator": {
-          const cie = Math.min(50, ((mtAggSeries1 + mtAggSeries2) / 2 * 0.7) + mtAggAssg + mtAggAtt);
-          return `${cie.toFixed(1)} / 50 Marks`;
-        }
-        case "damage_control": {
-          const needed = ((mtDmgTarget - mtDmgAssgAtt) / 0.7) * 2 - mtDmgSeries1;
-          const impossible = needed > 50;
-          const safe = needed <= 0;
-          return impossible ? "🚩 Unreachable" : safe ? "✅ Already Safe" : `Need ${Math.ceil(needed)}/50`;
-        }
-        case "ese_finder": {
-          const boundaries: Record<string, number> = { S: 90, "A+": 85, A: 80, "B+": 70, B: 60, C: 50, P: 45 };
-          const limit = boundaries[mtEseGrade] || 45;
-          let req = (limit - mtEseInt) * 2;
-          const impossible = req > 100;
-          if (!impossible) req = Math.max(40, req);
-          return impossible ? "🚩 Impossible" : `Need ${Math.ceil(req)}/100`;
-        }
-        case "exam_pacer":
-          return "3-Hour Budget";
-        case "module_weightage": {
-          const count = Object.values(mtRiskModules).filter(Boolean).length;
-          return `${count * 20} Marks Reachable`;
-        }
-        case "grace_optimizer": {
-          let grace = mtGracePool;
-          let passedCount = 0;
-          // Greedy check pass
-          const sorted = [...mtGraceMarks].sort((a, b) => b - a);
-          sorted.forEach(m => {
-            if (m >= 40) passedCount++;
-            else {
-              const diff = 40 - m;
-              if (grace >= diff) {
-                grace -= diff;
-                passedCount++;
-              }
-            }
-          });
-          return `${passedCount} Passes Secured`;
-        }
-        case "year_back_check": {
-          const limit = mtYbSlot === "s5" ? 26 : 52;
-          const pass = mtYbCredits >= limit;
-          return pass ? "✅ Clear" : "🚩 Lock Alert";
-        }
-        case "honours_minor": {
-          const hPass = mtEligCgpa >= 8.5 && !mtEligBacklog;
-          const mPass = mtEligCgpa >= 7.5 && !mtEligBacklog;
-          const pass = mtEligType === "honours" ? hPass : mPass;
-          return pass ? "🏆 Eligible" : "❌ Ineligible";
-        }
-        case "improvement_eligibility": {
-          const elig = mtImpAtt === "regular" && mtImpCie < 23 && mtImpStatus === "supple";
-          return elig ? "✅ Eligible" : "❌ Ineligible";
-        }
-        case "supple_debt":
-          return `Cost: ₹${mtDebtBacklogs * 500}`;
-        case "lab_aggregator": {
-          const sum = mtLabCont + mtLabViva + mtLabExam;
-          return `${sum} / 75 CIE`;
-        }
-        case "project_splitter":
-          return `${mtProjGuide + mtProjCommittee + mtProjReport} / 100`;
-        case "seminar_breakdown":
-          return `${mtSemPres + mtSemRep + mtSemDef} / 100`;
-        case "course_decrypter": {
-          const codeUpper = mtDecryptCode.toUpperCase().trim();
-          const deptMatch = codeUpper.match(/^([A-Z]{2,3})/);
-          return deptMatch ? `Dept: ${deptMatch[1]}` : "Awaiting Code";
-        }
-        case "gpa_converter": {
-          const convertedVal = (mtUsGpa10 / 10) * 4;
-          return `US GPA: ${convertedVal.toFixed(2)}`;
-        }
-        case "cgpa_forecaster": {
-          const remSems = 8 - mtForeSems;
-          const totalPts = 8 * mtForeTarget;
-          const curPts = mtForeCurrent * mtForeSems;
-          const needSgpa = remSems > 0 ? (totalPts - curPts) / remSems : 0;
-          return needSgpa > 10 ? "🚩 Impossible" : needSgpa <= 4 ? "✅ Safe Zone" : `Need SGPA: ${needSgpa.toFixed(2)}`;
-        }
-        case "cram_planner": {
-          const hours = Math.max(0, mtCramHours - 2);
-          const time = mtCramModules > 0 ? hours / mtCramModules : 0;
-          return `${time.toFixed(1)} hr / module`;
-        }
-        case "whatsapp_generator":
-          return "Broadcast ready";
-        case "exam_checklist":
-          return "Checklist ready";
-        case "reval_gamble": {
-          const CIE = mtRevalCie;
-          let gambleStatus = "Risky Gamble ⚠️";
-          if (mtRevalGrade === "F") {
-            if (CIE >= 22 && mtRevalExpected === "Excellent") gambleStatus = "High Chance 🚀";
-            else if (CIE >= 18 && mtRevalExpected === "Excellent") gambleStatus = "Moderate ⚖️";
-          } else {
-            if (mtRevalExpected === "Excellent") gambleStatus = "Moderate ⚖️";
-          }
-          return gambleStatus;
-        }
-        case "syllabus_tracker": {
-          const values = Object.values(mtMilestones);
-          let checkedTotal = 0;
-          values.forEach(v => { checkedTotal += v.filter(Boolean).length; });
-          return `${checkedTotal} Modules Done`;
-        }
-        case "countdown_dashboard": {
-          const diff = Math.max(0, new Date(mtCountdownTarget).getTime() - new Date().getTime());
-          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          return `${days} Days Left`;
-        }
-        default:
-          return "";
-      }
-    };
-
-    return (
-      <div className="bg-[#0A0A0C] border border-white/[0.08] shadow-2xl rounded-[28px] p-6 relative overflow-hidden text-slate-100 space-y-5">
-        {/* Colorful visual backdrop highlights */}
-        <div className="absolute top-0 left-0 w-[200px] h-[200px] rounded-full bg-violet-500/[0.03] blur-[50px] pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-[200px] h-[200px] rounded-full bg-blue-500/[0.03] blur-[50px] pointer-events-none" />
-
-        {/* Section Title Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-600 dark:text-violet-400">
-              <Sparkles className="w-5.5 h-5.5 animate-pulse" />
-            </div>
-            <div>
-              <h3 className="font-black text-slate-50 text-base leading-none tracking-tight">KTU Lightning Micro-Tools</h3>
-              <span className="text-[10px] font-bold text-slate-400 block mt-1.5">24 instant, high-utility student sandboxes</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Search & Category Filter Controls */}
-        <div className="space-y-3">
-          {/* Search bar */}
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="🔍 Search all 24 tools (e.g. Bunk, Series, Decrypter)..."
-              value={mtSearchQuery}
-              onChange={(e) => setMtSearchQuery(e.target.value)}
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-4 py-2 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-violet-500/40 text-slate-200 placeholder-slate-500"
-            />
-            {mtSearchQuery && (
-              <button
-                onClick={() => setMtSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-[9px] font-black text-slate-400 hover:text-white uppercase tracking-wider cursor-pointer"
-              >
-                Clear
-              </button>
-            )}
-          </div>
-
-          {/* Categories Tab Selector (Visible only if not searching) */}
-          {!mtSearchQuery && (
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none scroll-smooth">
-              {categoriesList.map((cat) => {
-                const isActive = mtActiveCategory === cat.id;
-                return (
-                  <button
-                    key={cat.id}
-                    onClick={() => {
-                      setMtActiveCategory(cat.id);
-                      // Auto expand the first tool of that category
-                      const firstOfCat = MICRO_TOOLS.find(t => t.category === cat.id);
-                      if (firstOfCat) setMtExpandedTool(firstOfCat.id);
-                    }}
-                    className={`px-3 py-1.5 rounded-xl border text-[9.5px] font-black uppercase tracking-wider shrink-0 transition-all cursor-pointer ${
-                      isActive
-                        ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20"
-                        : "bg-transparent text-slate-400 border-slate-200/40 dark:border-white/[0.04] hover:bg-white/[0.02]"
-                    }`}
-                  >
-                    {cat.label}
-                  </button>
                 );
               })}
             </div>
           )}
         </div>
 
-        {/* Tools Scrollable Sandbox Deck */}
-        <div className="space-y-2.5 max-h-[460px] overflow-y-auto pr-1 scrollbar-thin">
-          {filteredTools.length === 0 ? (
-            <div className="text-[10px] font-bold text-slate-500 text-center py-10">
-              No matching micro-tools found. Try another query.
-            </div>
-          ) : (
-            filteredTools.map((tool) => {
-              const isExpanded = mtExpandedTool === tool.id;
-              const badgeText = getToolBadge(tool.id);
-
-              return (
-                <div
-                  key={tool.id}
-                  className={`bg-[#0E0E10] border rounded-2xl transition-all duration-300 ${
-                    isExpanded ? "border-violet-500/30 shadow-lg shadow-violet-500/[0.02]" : "border-white/[0.05]"
-                  }`}
-                >
-                  {/* Accordion header button */}
-                  <button
-                    onClick={() => setMtExpandedTool(isExpanded ? null : tool.id)}
-                    className="w-full flex items-center justify-between p-3.5 text-left cursor-pointer hover:bg-white/[0.01] rounded-t-2xl"
-                  >
-                    <div className="flex flex-col pr-3 max-w-[70%]">
-                      <span className="text-xs font-black text-slate-100 tracking-tight leading-none block">{tool.title}</span>
-                      <span className="text-[8px] font-semibold text-slate-450 block mt-1.5 truncate leading-none">{tool.desc}</span>
-                    </div>
-
-                    {/* Right side status badge and arrow */}
-                    <div className="flex items-center gap-2 shrink-0">
-                      {badgeText && (
-                        <span className={`px-2 py-0.5 rounded-lg text-[8px] font-black uppercase tracking-wider shrink-0 border ${
-                          badgeText.includes("🚩") || badgeText.includes("detained") || badgeText.includes("risk") || badgeText.includes("Ineligible")
-                            ? "bg-rose-500/10 text-rose-400 border-rose-500/10 animate-pulse"
-                            : badgeText.includes("✅") || badgeText.includes("🏆") || badgeText.includes("Safe") || badgeText.includes("Pass") || badgeText.includes("Clear")
-                            ? "bg-emerald-500/10 text-emerald-450 border-emerald-500/10"
-                            : "bg-blue-500/10 text-blue-400 border-blue-500/10"
-                        }`}>
-                          {badgeText}
-                        </span>
-                      )}
-                      {isExpanded ? (
-                        <ChevronUp className="w-3.5 h-3.5 text-slate-400" />
-                      ) : (
-                        <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
-                      )}
-                    </div>
-                  </button>
-
-                  {/* Accordion content body */}
-                  <div
-                    className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                      isExpanded ? "max-h-[380px] p-3.5 pt-0 border-t border-white/[0.03]" : "max-h-0"
-                    }`}
-                  >
-                    <div className="pt-3.5 text-[10px] font-semibold text-slate-300 space-y-4">
-                      
-                      {/* TOOL 1: THE BUNK MASTER */}
-                      {tool.id === "bunk_master" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-2 gap-x-6 px-2">
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Hours Conducted</label>
-                              <div className="flex items-center gap-3">
-                                <input
-                                  type="range"
-                                  min="1"
-                                  max="120"
-                                  value={mtBunkHc}
-                                  onChange={(e) => setMtBunkHc(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-6 text-right">{mtBunkHc}</span>
-                              </div>
-                            </div>
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Hours Attended</label>
-                              <div className="flex items-center gap-3">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max={mtBunkHc}
-                                  value={mtBunkHa}
-                                  onChange={(e) => setMtBunkHa(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-6 text-right">{mtBunkHa}</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const Hc = Math.max(1, mtBunkHc);
-                            const Ha = Math.min(Hc, mtBunkHa);
-                            const pct = (Ha / Hc) * 100;
-                            const isSafe = pct >= 75;
-                            
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center space-y-1.5 ${
-                                isSafe
-                                  ? "bg-emerald-500/[0.02] border-emerald-500/15 text-emerald-450"
-                                  : "bg-rose-500/[0.02] border-rose-500/15 text-rose-400"
-                              }`}>
-                                <div className="text-[9px] font-black uppercase tracking-widest text-slate-400 leading-none">Attendance Runway</div>
-                                <div className="text-xl font-black leading-none py-1">
-                                  {isSafe
-                                    ? `${Math.floor((Ha - 0.75 * Hc) / 0.75)} Bunks Safe 🟢`
-                                    : `Streak of ${Math.ceil((0.75 * Hc - Ha) / 0.25)} Required 🔴`}
-                                </div>
-                                <div className="text-[9.5px] font-semibold text-slate-400">
-                                  Current rate: <strong className="text-slate-200 tabular-nums">{pct.toFixed(1)}%</strong>. Limit is 75.0%.
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 2: KTU ATTENDANCE MARKS PREDICTOR */}
-                      {tool.id === "att_predictor" && (
-                        <div className="space-y-3.5">
-                          <div className="space-y-2">
-                            <div className="flex justify-between items-center text-[9px] font-black uppercase tracking-wider text-slate-400">
-                              <span>Attendance Percentage</span>
-                              <span className="text-slate-200 tabular-nums text-xs">{mtAttPct}%</span>
-                            </div>
-                            <input
-                              type="range"
-                              min="0"
-                              max="100"
-                              value={mtAttPct}
-                              onChange={(e) => setMtAttPct(Number(e.target.value))}
-                              className="w-full accent-violet-500"
-                            />
-                          </div>
-
-                          <div className="grid grid-cols-5 gap-1.5 text-center">
-                            {[
-                              { label: "P < 75%", val: 0, text: "0m" },
-                              { label: "75-79%", val: 2, text: "2m" },
-                              { label: "80-84%", val: 3, text: "3m" },
-                              { label: "85-89%", val: 4, text: "4m" },
-                              { label: ">= 90%", val: 5, text: "5m" }
-                            ].map((tier, idx) => {
-                              let active = false;
-                              if (idx === 0 && mtAttPct < 75) active = true;
-                              else if (idx === 1 && mtAttPct >= 75 && mtAttPct < 80) active = true;
-                              else if (idx === 2 && mtAttPct >= 80 && mtAttPct < 85) active = true;
-                              else if (idx === 3 && mtAttPct >= 85 && mtAttPct < 90) active = true;
-                              else if (idx === 4 && mtAttPct >= 90) active = true;
-
-                              return (
-                                <div
-                                  key={idx}
-                                  className={`p-2 rounded-xl border text-[8px] font-black transition-all ${
-                                    active
-                                      ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20 shadow-md shadow-violet-500/[0.04]"
-                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                                  }`}
-                                >
-                                  <div className="opacity-80 block truncate leading-none mb-1">{tier.label}</div>
-                                  <div className="text-xs font-black leading-none">{tier.text}</div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 3: INTERNAL MARKS AGGREGATOR */}
-                      {tool.id === "internals_aggregator" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-2 gap-3.5">
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Series 1 Score (max 50)</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max="50"
-                                  value={mtAggSeries1}
-                                  onChange={(e) => setMtAggSeries1(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtAggSeries1}</span>
-                              </div>
-                            </div>
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Series 2 Score (max 50)</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max="50"
-                                  value={mtAggSeries2}
-                                  onChange={(e) => setMtAggSeries2(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtAggSeries2}</span>
-                              </div>
-                            </div>
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Assignments (max 10)</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max="10"
-                                  value={mtAggAssg}
-                                  onChange={(e) => setMtAggAssg(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtAggAssg}</span>
-                              </div>
-                            </div>
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Attendance Marks (max 5)</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max="5"
-                                  value={mtAggAtt}
-                                  onChange={(e) => setMtAggAtt(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtAggAtt}</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const totalCie = Math.min(50, ((mtAggSeries1 + mtAggSeries2) / 2 * 0.7) + mtAggAssg + mtAggAtt);
-                            return (
-                              <div className="p-3.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-slate-50 dark:bg-slate-900 text-center space-y-1">
-                                <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Aggregated CIE Score</div>
-                                <div className="text-xl font-black text-violet-600 dark:text-violet-400 leading-none">{totalCie.toFixed(1)} / 50 Marks</div>
-                                <div className="text-[8.5px] font-semibold text-slate-400 mt-1">
-                                  Math: (({mtAggSeries1} + {mtAggSeries2}) / 2 × 0.7) + {mtAggAssg} + {mtAggAtt}
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 4: SERIES 2 DAMAGE CONTROL MARGIN */}
-                      {tool.id === "damage_control" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-3.5">
-                            <div className="space-y-1.5 col-span-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Series 1 (max 50)</label>
-                              <div className="flex items-center gap-1.5">
-                                <input
-                                  type="number"
-                                  min="0"
-                                  max="50"
-                                  value={mtDmgSeries1}
-                                  onChange={(e) => setMtDmgSeries1(Math.min(50, Number(e.target.value)))}
-                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
-                                />
-                              </div>
-                            </div>
-                            <div className="space-y-1.5 col-span-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Target (out of 50)</label>
-                              <div className="flex items-center gap-1.5">
-                                <input
-                                  type="number"
-                                  min="0"
-                                  max="50"
-                                  value={mtDmgTarget}
-                                  onChange={(e) => setMtDmgTarget(Math.min(50, Number(e.target.value)))}
-                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
-                                />
-                              </div>
-                            </div>
-                            <div className="space-y-1.5 col-span-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Assg + Attendance</label>
-                              <div className="flex items-center gap-1.5">
-                                <input
-                                  type="number"
-                                  min="0"
-                                  max="15"
-                                  value={mtDmgAssgAtt}
-                                  onChange={(e) => setMtDmgAssgAtt(Math.min(15, Number(e.target.value)))}
-                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const needed = ((mtDmgTarget - mtDmgAssgAtt) / 0.7) * 2 - mtDmgSeries1;
-                            const impossible = needed > 50;
-                            const safe = needed <= 0;
-                            
-                            let dialLabel = "Easy Grind 🤝";
-                            let dialColor = "text-emerald-450 border-emerald-500/10";
-                            
-                            if (impossible) {
-                              dialLabel = "Out of Reach 🚩";
-                              dialColor = "text-rose-450 border-rose-500/10 bg-rose-500/[0.01]";
-                            } else if (needed > 35) {
-                              dialLabel = "Hard Grind 🔥";
-                              dialColor = "text-amber-450 border-amber-500/10 bg-amber-500/[0.01]";
-                            } else if (safe) {
-                              dialLabel = "Already Safe! 🎉";
-                              dialColor = "text-emerald-450 border-emerald-500/10";
-                            }
-
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center space-y-1.5 ${dialColor}`}>
-                                <div className="text-[9px] font-black uppercase tracking-widest text-slate-400 leading-none">Series 2 Needed Score</div>
-                                <div className="text-xl font-black leading-none py-1">
-                                  {impossible ? "Mathematically Unreachable" : safe ? "0 / 50 (You are safe)" : `${Math.ceil(needed)} / 50`}
-                                </div>
-                                <div className="text-[9.5px] font-semibold text-slate-400">
-                                  Target Status: <strong className="text-slate-200">{dialLabel}</strong>
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 5: ESE TARGET FINDER */}
-                      {tool.id === "ese_finder" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-2 gap-3.5">
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">CIE Internal Marks (max 50)</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max="50"
-                                  value={mtEseInt}
-                                  onChange={(e) => setMtEseInt(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtEseInt}</span>
-                              </div>
-                            </div>
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Target Grade</label>
-                              <div className="grid grid-cols-7 gap-1">
-                                {["S", "A+", "A", "B+", "B", "C", "P"].map((g) => (
-                                  <button
-                                    key={g}
-                                    onClick={() => setMtEseGrade(g)}
-                                    className={`p-1 rounded text-[8px] font-black cursor-pointer transition-all ${
-                                      mtEseGrade === g
-                                        ? "bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-500/30"
-                                        : "bg-slate-50 dark:bg-slate-900 text-slate-500 border border-white/[0.02]"
-                                    }`}
-                                  >
-                                    {g}
-                                  </button>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const boundaries: Record<string, number> = { S: 90, "A+": 85, A: 80, "B+": 70, B: 60, C: 50, P: 45 };
-                            const limit = boundaries[mtEseGrade] || 45;
-                            let req = 1.5 * limit - mtEseInt;
-                            const impossible = req > 100;
-                            if (!impossible) req = Math.max(40, Math.ceil(req));
-
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center ${
-                                impossible
-                                  ? "bg-rose-500/[0.01] border-rose-500/10 text-rose-450"
-                                  : "bg-slate-50 dark:bg-slate-900 border-slate-200/40 dark:border-white/[0.04] text-violet-600 dark:text-violet-400"
-                              }`}>
-                                <div className="text-[9px] font-black uppercase tracking-widest text-slate-400 leading-none">University ESE Pass Target</div>
-                                <div className="text-xl font-black leading-none py-1">
-                                  {impossible ? "Out of Range (Need > 100)" : `Needed ESE: ${Math.ceil(req)} / 100`}
-                                </div>
-                                <div className="text-[9.5px] font-semibold text-slate-400 mt-1">
-                                  Grade {mtEseGrade} requires an aggregate score of {limit}%. ESE has strict 40/100 pass floor.
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 6: 3-HOUR EXAM PACER */}
-                      {tool.id === "exam_pacer" && (
-                        <div className="space-y-3.5">
-                          <div className="flex gap-2">
-                            <button
-                              onClick={() => setMtPacerScheme("abc")}
-                              className={`flex-1 py-1.5 rounded-xl border text-[9px] font-black uppercase tracking-wider cursor-pointer ${
-                                mtPacerScheme === "abc"
-                                  ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                  : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                              }`}
-                            >
-                              Scheme A (Part A + B + C)
-                            </button>
-                            <button
-                              onClick={() => setMtPacerScheme("ab")}
-                              className={`flex-1 py-1.5 rounded-xl border text-[9px] font-black uppercase tracking-wider cursor-pointer ${
-                                mtPacerScheme === "ab"
-                                  ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                  : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                              }`}
-                            >
-                              Scheme B (Part A + B)
-                            </button>
-                          </div>
-
-                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200/40 dark:border-white/[0.04] space-y-2.5">
-                            <span className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Systematic Time Allocation</span>
-                            {mtPacerScheme === "abc" ? (
-                              <div className="space-y-1.5 font-bold text-[9.5px]">
-                                <div className="flex justify-between border-b border-white/[0.02] pb-1">
-                                  <span>Part A (Short 3m Questions × 8)</span>
-                                  <span className="text-violet-600 dark:text-violet-400">30 mins (3.5m / qn)</span>
-                                </div>
-                                <div className="flex justify-between border-b border-white/[0.02] pb-1">
-                                  <span>Part B (Concept 3m Questions × 8)</span>
-                                  <span className="text-violet-600 dark:text-violet-400">30 mins (3.5m / qn)</span>
-                                </div>
-                                <div className="flex justify-between border-b border-white/[0.02] pb-1">
-                                  <span>Part C (Long Essay 13m Questions × 4)</span>
-                                  <span className="text-violet-600 dark:text-violet-400">100 mins (25m / qn)</span>
-                                </div>
-                                <div className="flex justify-between text-emerald-450">
-                                  <span>Revision, Checking & Margin Buffer</span>
-                                  <span>20 mins left</span>
-                                </div>
-                              </div>
-                            ) : (
-                              <div className="space-y-1.5 font-bold text-[9.5px]">
-                                <div className="flex justify-between border-b border-white/[0.02] pb-1">
-                                  <span>Part A (Basic 3m Questions × 10)</span>
-                                  <span className="text-violet-600 dark:text-violet-400">40 mins (4m / qn)</span>
-                                </div>
-                                <div className="flex justify-between border-b border-white/[0.02] pb-1">
-                                  <span>Part B (Heavy 14m Questions × 5)</span>
-                                  <span className="text-violet-600 dark:text-violet-400">120 mins (24m / qn)</span>
-                                </div>
-                                <div className="flex justify-between text-emerald-450">
-                                  <span>Review & Final Equation Check</span>
-                                  <span>20 mins left</span>
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 7: MODULE WEIGHTAGE RISK CALCULATOR */}
-                      {tool.id === "module_weightage" && (
-                        <div className="space-y-3.5">
-                          <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Check modules fully mastered</label>
-                          <div className="grid grid-cols-5 gap-2">
-                            {[1, 2, 3, 4, 5].map((mod) => {
-                              const active = !!mtRiskModules[mod];
-                              return (
-                                <button
-                                  key={mod}
-                                  onClick={() => setMtRiskModules(prev => ({ ...prev, [mod]: !prev[mod] }))}
-                                  className={`p-2.5 rounded-xl border font-black text-center cursor-pointer transition-all flex flex-col items-center gap-1.5 ${
-                                    active
-                                      ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/25"
-                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                                  }`}
-                                >
-                                  <span className="text-[8px] opacity-75 leading-none">MOD</span>
-                                  <span className="text-sm leading-none">{mod}</span>
-                                </button>
-                              );
-                            })}
-                          </div>
-
-                          {(() => {
-                            const count = Object.values(mtRiskModules).filter(Boolean).length;
-                            const maxMarks = count * 20;
-                            let status = "Critical Risk! 💀";
-                            let color = "text-rose-450 border-rose-500/10";
-                            
-                            if (count === 5) { status = "Master of Syllabus 🎓"; color = "text-emerald-450 border-emerald-500/10"; }
-                            else if (count >= 3) { status = "Safe Pass Zone 🛡️"; color = "text-blue-450 border-blue-500/10"; }
-                            
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center ${color} bg-slate-50 dark:bg-slate-900`}>
-                                <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none">Max Reachable Marks</div>
-                                <div className="text-xl font-black leading-none py-1">{maxMarks} / 100 Marks</div>
-                                <div className="text-[9px] font-semibold text-slate-400">
-                                  Confidence Index: <strong className="text-slate-200">{status}</strong>
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 8: GRACE MARK OPTIMIZATION MATRIX */}
-                      {tool.id === "grace_optimizer" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-2 gap-3.5">
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Grace Mark Pool</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max="30"
-                                  value={mtGracePool}
-                                  onChange={(e) => setMtGracePool(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtGracePool}</span>
-                              </div>
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Failing Subject Scores</label>
-                              <div className="flex items-center gap-1">
-                                {mtGraceMarks.map((m, idx) => (
-                                  <input
-                                    key={idx}
-                                    type="number"
-                                    min="0"
-                                    max="39"
-                                    value={m}
-                                    onChange={(e) => {
-                                      const updated = [...mtGraceMarks];
-                                      updated[idx] = Math.min(39, Number(e.target.value));
-                                      setMtGraceMarks(updated);
-                                    }}
-                                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-lg px-1.5 py-0.5 text-center font-bold text-slate-200 text-xs"
-                                  />
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            let grace = mtGracePool;
-                            // Sort failing subject indexes by marks descending (closest to pass mark 40 first)
-                            const subjectDetails = mtGraceMarks.map((marks, i) => ({ id: i + 1, original: marks, final: marks, applied: 0, status: "Failed ❌" }));
-                            const sorted = [...subjectDetails].sort((a, b) => b.original - a.original);
-                            
-                            sorted.forEach(sub => {
-                              const diff = 40 - sub.original;
-                              if (grace >= diff && diff > 0) {
-                                grace -= diff;
-                                sub.final = 40;
-                                sub.applied = diff;
-                                sub.status = "Passed (Grace) ✅";
-                              }
-                            });
-
-                            // Re-sort back by original subject index
-                            const output = [...sorted].sort((a, b) => a.id - b.id);
-
-                            return (
-                              <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] space-y-2 text-[9.5px]">
-                                <span className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Greedy Allocation Pipeline</span>
-                                {output.map((sub, idx) => (
-                                  <div key={idx} className="flex justify-between border-b border-white/[0.02] pb-1">
-                                    <span>Subject #{sub.id} ({sub.original} marks)</span>
-                                    <span className="font-bold text-violet-600 dark:text-violet-400">
-                                      {sub.applied > 0 ? `+${sub.applied} marks` : "0 marks applied"} → {sub.status}
-                                    </span>
-                                  </div>
-                                ))}
-                                <div className="text-[8.5px] font-bold text-slate-500 pt-1 flex justify-between">
-                                  <span>Unallocated grace pool leftover</span>
-                                  <span className="text-emerald-450">{grace} marks remaining</span>
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 9: YEAR-BACK CREDIT LOCK */}
-                      {tool.id === "year_back_check" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-2 gap-3.5">
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Target Promotion</label>
-                              <div className="flex gap-2">
-                                <button
-                                  onClick={() => setMtYbSlot("s5")}
-                                  className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
-                                    mtYbSlot === "s5"
-                                      ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                                  }`}
-                                >
-                                  Move to S5
-                                </button>
-                                <button
-                                  onClick={() => setMtYbSlot("s7")}
-                                  className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
-                                    mtYbSlot === "s7"
-                                      ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                                  }`}
-                                >
-                                  Move to S7
-                                </button>
-                              </div>
-                            </div>
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Accumulated Credits</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="0"
-                                  max="80"
-                                  value={mtYbCredits}
-                                  onChange={(e) => setMtYbCredits(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtYbCredits}</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const limit = mtYbSlot === "s5" ? 26 : 52;
-                            const clear = mtYbCredits >= limit;
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center ${
-                                clear
-                                  ? "bg-emerald-500/[0.02] border-emerald-500/10 text-emerald-450"
-                                  : "bg-rose-500/[0.01] border-rose-500/10 text-rose-450 animate-pulse"
-                              }`}>
-                                <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none">Promotion Lock Status</div>
-                                <div className="text-lg font-black leading-none py-1">
-                                  {clear ? "Clear for Promotion ✅" : `Year-Back Credit Lock Risk! 🚩`}
-                                </div>
-                                <div className="text-[9px] font-semibold text-slate-400 mt-1">
-                                  {mtYbSlot === "s5" ? "S5 promotion" : "S7 promotion"} requires minimum <strong className="text-slate-200">{limit} credits</strong>. You are {clear ? "safe" : `${limit - mtYbCredits} credits short`}.
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 10: HONOURS / MINOR ELIGIBILITY VALIDATOR */}
-                      {tool.id === "honours_minor" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-2 gap-3.5">
-                            <div className="space-y-1.5">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Degree Pathway</label>
-                              <div className="flex gap-2">
-                                <button
-                                  onClick={() => setMtEligType("honours")}
-                                  className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
-                                    mtEligType === "honours"
-                                      ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                                  }`}
-                                >
-                                  B.Tech Honours
-                                </button>
-                                <button
-                                  onClick={() => setMtEligType("minor")}
-                                  className={`flex-1 py-1 rounded-lg border text-[8.5px] font-black uppercase cursor-pointer ${
-                                    mtEligType === "minor"
-                                      ? "bg-violet-500/20 text-violet-450 border-violet-500/20"
-                                      : "bg-slate-50 dark:bg-slate-900 text-slate-500 border-white/[0.02]"
-                                  }`}
-                                >
-                                  B.Tech Minor
-                                </button>
-                              </div>
-                            </div>
-                            <div className="grid grid-cols-2 gap-2">
-                              <div className="space-y-1">
-                                <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Current CGPA</label>
-                                <input
-                                  type="number"
-                                  min="4.0"
-                                  max="10.0"
-                                  step="0.01"
-                                  value={mtEligCgpa}
-                                  onChange={(e) => setMtEligCgpa(Number(e.target.value))}
-                                  className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2.5 py-1 text-center font-bold text-xs"
-                                />
-                              </div>
-                              <div className="space-y-1">
-                                <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Has Backlogs?</label>
-                                <button
-                                  onClick={() => setMtEligBacklog(!mtEligBacklog)}
-                                  className={`w-full py-1.5 rounded-xl border text-[9px] font-black uppercase cursor-pointer transition-all ${
-                                    mtEligBacklog
-                                      ? "bg-rose-500/10 text-rose-450 border-rose-500/20"
-                                      : "bg-emerald-500/10 text-emerald-450 border-emerald-500/20"
-                                  }`}
-                                >
-                                  {mtEligBacklog ? "Yes ❌" : "No ✅"}
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const limit = mtEligType === "honours" ? 8.5 : 7.5;
-                            const passCgpa = mtEligCgpa >= limit;
-                            const clearBacklog = !mtEligBacklog;
-                            const qualified = passCgpa && clearBacklog;
-
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center ${
-                                qualified
-                                  ? "bg-emerald-500/[0.02] border-emerald-500/10 text-emerald-450"
-                                  : "bg-rose-500/[0.01] border-rose-500/10 text-rose-450"
-                              }`}>
-                                <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none">Enrolment Standing</div>
-                                <div className="text-lg font-black leading-none py-1">
-                                  {qualified ? "Qualified B.Tech Pathway 🏆" : "Ineligible for Pathway ❌"}
-                                </div>
-                                <div className="text-[9px] font-semibold text-slate-450">
-                                  Requires CGPA &gt;= {limit} (Your CGPA: {mtEligCgpa}) & zero historical backlog record tags.
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 11: INTERNAL IMPROVEMENT SCENNER */}
-                      {tool.id === "improvement_eligibility" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-2">
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Prev Attendance</label>
-                              <select
-                                value={mtImpAtt}
-                                onChange={(e) => setMtImpAtt(e.target.value as typeof mtImpAtt)}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
-                              >
-                                <option value="regular">Regular (&gt;= 75%)</option>
-                                <option value="low">Low (60-74%)</option>
-                                <option value="detained">Detained (&lt; 60%)</option>
-                              </select>
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Previous CIE Score</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="50"
-                                value={mtImpCie}
-                                onChange={(e) => setMtImpCie(Number(e.target.value))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-[9px]"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase tracking-wider block">Registration Status</label>
-                              <select
-                                value={mtImpStatus}
-                                onChange={(e) => setMtImpStatus(e.target.value as typeof mtImpStatus)}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
-                              >
-                                <option value="regular">Regular Subject</option>
-                                <option value="supple">Supplementary</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const isElig = mtImpAtt === "regular" && mtImpCie < 23 && mtImpStatus === "supple";
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center ${
-                                isElig
-                                  ? "bg-emerald-500/[0.02] border-emerald-500/10 text-emerald-450"
-                                  : "bg-rose-500/[0.01] border-rose-500/10 text-rose-450"
-                              }`}>
-                                <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none">Internal Re-write Status</div>
-                                <div className="text-base font-black leading-none py-1">
-                                  {isElig ? "Eligible for Improvement ✅" : "Ineligible under Regulations ❌"}
-                                </div>
-                                <div className="text-[8.5px] font-semibold text-slate-450 mt-1">
-                                  KTU rules state you must have had 75%+ attendance, failed previous exam, and registered as a supple paper to rebuild CIE.
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 12: SUPPLEMENTARY EXAM DEBT TRACKER */}
-                      {tool.id === "supple_debt" && (
-                        <div className="space-y-3.5">
-                          <div className="space-y-2">
-                            <div className="flex justify-between items-center text-[9px] font-black uppercase tracking-wider text-slate-400">
-                              <span>Active Supplementary Backlogs</span>
-                              <span className="text-slate-200 tabular-nums text-xs">{mtDebtBacklogs} Papers</span>
-                            </div>
-                            <input
-                              type="range"
-                              min="0"
-                              max="10"
-                              value={mtDebtBacklogs}
-                              onChange={(e) => setMtDebtBacklogs(Number(e.target.value))}
-                              className="w-full accent-rose-500"
-                            />
-                          </div>
-
-                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] grid grid-cols-3 gap-3 text-center">
-                            <div>
-                              <span className="text-[7.5px] font-black text-slate-450 uppercase block">Re-exam Fees</span>
-                              <span className="text-xs font-black text-rose-450 block mt-1">₹{mtDebtBacklogs * 500}</span>
-                            </div>
-                            <div>
-                              <span className="text-[7.5px] font-black text-slate-450 uppercase block">Credits Locked</span>
-                              <span className="text-xs font-black text-rose-450 block mt-1">{mtDebtBacklogs * 4} Cr</span>
-                            </div>
-                            <div>
-                              <span className="text-[7.5px] font-black text-slate-450 uppercase block">Avg Study Cost</span>
-                              <span className="text-xs font-black text-rose-450 block mt-1">₹{mtDebtBacklogs * 300}</span>
-                            </div>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 13: LAB INTERNAL SCORE AGGREGATOR */}
-                      {tool.id === "lab_aggregator" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-3">
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Lab Continuous (max 45)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="45"
-                                value={mtLabCont}
-                                onChange={(e) => setMtLabCont(Math.min(45, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Viva-Voce (max 15)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="15"
-                                value={mtLabViva}
-                                onChange={(e) => setMtLabViva(Math.min(15, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Internal Exam (max 15)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="15"
-                                value={mtLabExam}
-                                onChange={(e) => setMtLabExam(Math.min(15, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                          </div>
-
-                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center">
-                            <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Total Lab CIE</div>
-                            <div className="text-lg font-black text-violet-600 dark:text-violet-400 mt-1">{mtLabCont + mtLabViva + mtLabExam} / 75 Marks</div>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 14: MINI-PROJECT / MAIN-PROJECT WEIGHTAGE SPLITTER */}
-                      {tool.id === "project_splitter" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-3">
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Supervisor (max 30)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="30"
-                                value={mtProjGuide}
-                                onChange={(e) => setMtProjGuide(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Committee (max 40)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="40"
-                                value={mtProjCommittee}
-                                onChange={(e) => setMtProjCommittee(Math.min(40, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Report (max 30)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="30"
-                                value={mtProjReport}
-                                onChange={(e) => setMtProjReport(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                          </div>
-
-                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center">
-                            <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Total Project Score</div>
-                            <div className="text-lg font-black text-violet-600 dark:text-violet-400 mt-1">{mtProjGuide + mtProjCommittee + mtProjReport} / 100 Marks</div>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 15: SEMINAR ASSESSMENT BREAKDOWN TOOL */}
-                      {tool.id === "seminar_breakdown" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-3">
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Presentation (max 40)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="40"
-                                value={mtSemPres}
-                                onChange={(e) => setMtSemPres(Math.min(40, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Report Doc (max 30)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="30"
-                                value={mtSemRep}
-                                onChange={(e) => setMtSemRep(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Defense/Viva (max 30)</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="30"
-                                value={mtSemDef}
-                                onChange={(e) => setMtSemDef(Math.min(30, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                          </div>
-
-                          <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center">
-                            <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Seminar Final Standing</div>
-                            <div className="text-lg font-black text-violet-600 dark:text-violet-400 mt-1">{mtSemPres + mtSemRep + mtSemDef} / 100 Marks</div>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 16: COURSE CODE DECRYPTER */}
-                      {tool.id === "course_decrypter" && (
-                        <div className="space-y-3.5">
-                          <div className="space-y-1">
-                            <label className="text-[9px] font-black text-slate-400 uppercase block">Enter Alphanumeric Course Code</label>
-                            <input
-                              type="text"
-                              value={mtDecryptCode}
-                              onChange={(e) => setMtDecryptCode(e.target.value)}
-                              placeholder="e.g. CST202, ECT301"
-                              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-3 py-2 text-xs font-bold focus:outline-none"
-                            />
-                          </div>
-
-                          {(() => {
-                            const codeUpper = mtDecryptCode.toUpperCase().trim();
-                            const deptMatch = codeUpper.match(/^([A-Z]{2,3})/);
-                            
-                            let dept = "Unknown Department";
-                            let year = "Unknown Year";
-                            let type = "Theory Course";
-                            
-                            if (deptMatch) {
-                              const prefix = deptMatch[1];
-                              const deptMap: Record<string, string> = {
-                                CS: "Computer Science & Engineering", CST: "Computer Science (Theory)", CSL: "Computer Science (Lab)",
-                                EC: "Electronics & Communication", ECT: "Electronics & Communication (Theory)", ECL: "Electronics & Communication (Lab)",
-                                EE: "Electrical & Electronics", EET: "Electrical & Electronics (Theory)", EEL: "Electrical & Electronics (Lab)",
-                                ME: "Mechanical Engineering", MET: "Mechanical Engineering (Theory)", MEL: "Mechanical Engineering (Lab)",
-                                CE: "Civil Engineering", CET: "Civil Engineering (Theory)", CEL: "Civil Engineering (Lab)",
-                                MAT: "Mathematics / Allied Sciences", PHT: "Engineering Physics", CYT: "Engineering Chemistry",
-                                EST: "Engineering Sciences (Basic)", HUN: "Humanities / Life Skills", MCN: "Mandatory Non-Credit Course"
-                              };
-                              dept = deptMap[prefix] || `${prefix} Engineering`;
-                              
-                              if (prefix.endsWith("L")) type = "Practical Laboratory / Viva";
-                              else if (prefix.endsWith("P")) type = "Main Project / Design";
-                              else if (prefix.endsWith("S")) type = "Technical Seminar Presentation";
-                            }
-
-                             // Match the numeric part (usually 3 digits, e.g. 301, 204)
-                             const numMatch = codeUpper.match(/\d+/);
-                             if (numMatch) {
-                               const numStr = numMatch[0];
-                               const firstDigit = Number(numStr[0]);
-                               const lastDigit = Number(numStr[numStr.length - 1]);
-                               
-                               if (firstDigit >= 1 && firstDigit <= 4) {
-                                 const isOdd = lastDigit % 2 !== 0;
-                                 const exactSem = isOdd ? (2 * firstDigit - 1) : (2 * firstDigit);
-                                 const semSuffix = exactSem === 1 ? "st" : exactSem === 2 ? "nd" : exactSem === 3 ? "rd" : "th";
-                                 year = `Year ${firstDigit} - Semester ${exactSem}${semSuffix}`;
-                               } else {
-                                 year = `Level ${firstDigit} Course`;
-                               }
-                             }
-
-                            return (
-                              <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] space-y-1.5 text-[9.5px]">
-                                <div>Department: <strong className="text-slate-100">{dept}</strong></div>
-                                <div>Course Level: <strong className="text-slate-100">{year}</strong></div>
-                                <div>Course Type: <strong className="text-slate-100">{type}</strong></div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 17: GLOBAL 4-POINT GPA CONVERTER */}
-                      {tool.id === "gpa_converter" && (
-                        <div className="space-y-3.5">
-                          <div className="space-y-2">
-                            <div className="flex justify-between items-center text-[9px] font-black uppercase tracking-wider text-slate-400">
-                              <span>Standard 10-Point GPA</span>
-                              <span className="text-slate-200 font-bold text-xs">{mtUsGpa10.toFixed(2)}</span>
-                            </div>
-                            <input
-                              type="range"
-                              min="4.0"
-                              max="10.0"
-                              step="0.05"
-                              value={mtUsGpa10}
-                              onChange={(e) => setMtUsGpa10(Number(e.target.value))}
-                              className="w-full accent-violet-500"
-                            />
-                          </div>
-
-                          <div className="p-3.5 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] flex items-center justify-between">
-                            <div>
-                              <span className="text-[8.5px] font-black text-slate-450 uppercase block">US 4.0 GPA Scale Equivalent</span>
-                              <span className="text-lg font-black text-emerald-450 block mt-1">{((mtUsGpa10 / 10) * 4).toFixed(3)} / 4.0</span>
-                            </div>
-                            <button
-                              onClick={() => {
-                                navigator.clipboard.writeText(((mtUsGpa10 / 10) * 4).toFixed(3));
-                                triggerNotification("Copied US GPA to clipboard! 📋");
-                              }}
-                              className="px-3 py-1.5 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-600 dark:text-violet-400 text-[9px] font-black uppercase cursor-pointer hover:bg-violet-500/20"
-                            >
-                              Copy Result
-                            </button>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 18: CGPA MAINTENANCE FORECASTER */}
-                      {tool.id === "cgpa_forecaster" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-3">
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Current CGPA</label>
-                              <input
-                                type="number"
-                                min="4.0"
-                                max="10.0"
-                                step="0.01"
-                                value={mtForeCurrent}
-                                onChange={(e) => setMtForeCurrent(Number(e.target.value))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Completed Sems</label>
-                              <input
-                                type="number"
-                                min="1"
-                                max="7"
-                                value={mtForeSems}
-                                onChange={(e) => setMtForeSems(Math.min(7, Number(e.target.value)))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Target CGPA</label>
-                              <input
-                                type="number"
-                                min="4.0"
-                                max="10.0"
-                                step="0.01"
-                                value={mtForeTarget}
-                                onChange={(e) => setMtForeTarget(Number(e.target.value))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-xs"
-                              />
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const remSems = 8 - mtForeSems;
-                            const totalPts = 8 * mtForeTarget;
-                            const curPts = mtForeCurrent * mtForeSems;
-                            const needSgpa = remSems > 0 ? (totalPts - curPts) / remSems : 0;
-                            const impossible = needSgpa > 10.0;
-
-                            return (
-                              <div className={`p-3 rounded-xl border text-center ${
-                                impossible ? "bg-rose-500/[0.01] border-rose-500/10 text-rose-450" : "bg-slate-50 dark:bg-slate-900 border-slate-200/40 dark:border-white/[0.04] text-violet-600 dark:text-violet-400"
-                              }`}>
-                                <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Required Upcoming SGPA Average</div>
-                                <div className="text-lg font-black leading-none py-1">
-                                  {impossible ? "Mathematically Impossible" : `${needSgpa.toFixed(2)} SGPA`}
-                                </div>
-                                <div className="text-[8.5px] font-semibold text-slate-450 mt-1">
-                                  You must maintain an average of {needSgpa.toFixed(2)} SGPA over your remaining {remSems} semesters.
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 19: 11TH HOUR CRAM PLANNER */}
-                      {tool.id === "cram_planner" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-2 gap-3.5">
-                            <div className="space-y-1">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Hours left before Exam</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="3"
-                                  max="24"
-                                  value={mtCramHours}
-                                  onChange={(e) => setMtCramHours(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtCramHours}h</span>
-                              </div>
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Modules remaining</label>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="range"
-                                  min="1"
-                                  max="5"
-                                  value={mtCramModules}
-                                  onChange={(e) => setMtCramModules(Number(e.target.value))}
-                                  className="w-full accent-violet-500"
-                                />
-                                <span className="text-slate-100 font-bold tabular-nums shrink-0 w-5 text-right">{mtCramModules}</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const netHours = Math.max(0, mtCramHours - 2);
-                            const perModule = mtCramModules > 0 ? netHours / mtCramModules : 0;
-                            return (
-                              <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200/40 dark:border-white/[0.04] space-y-2">
-                                <div className="text-[9px] font-black text-slate-455 uppercase tracking-widest text-center">Cramming Timeline Checklist</div>
-                                <div className="text-xs text-center font-black text-violet-600 dark:text-violet-400 py-0.5">
-                                  Spend {perModule.toFixed(1)} hours on each of the {mtCramModules} modules
-                                </div>
-                                <div className="text-[8.5px] font-bold text-slate-450 border-t border-white/[0.02] pt-1.5 flex justify-between">
-                                  <span>Deducted sleep & review buffer</span>
-                                  <span>2 Hours Buffer Lock 🔒</span>
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 20: MASS-BUNK WHATSAPP BROADCAST */}
-                      {tool.id === "whatsapp_generator" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-2">
-                            <div className="space-y-1 col-span-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Subject Name</label>
-                              <input
-                                type="text"
-                                value={mtBunkSubject}
-                                onChange={(e) => setMtBunkSubject(e.target.value)}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
-                              />
-                            </div>
-                            <div className="space-y-1 col-span-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Proposed Date</label>
-                              <input
-                                type="text"
-                                value={mtBunkDate}
-                                onChange={(e) => setMtBunkDate(e.target.value)}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
-                              />
-                            </div>
-                            <div className="space-y-1 col-span-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Justification</label>
-                              <input
-                                type="text"
-                                value={mtBunkReason}
-                                onChange={(e) => setMtBunkReason(e.target.value)}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[10px] font-bold"
-                              />
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const message = `🚨 *KTU MASS BUNK DECREE* 🚨\n\nAttention Scholars of S${sem} CSE,\n\nTomorrow (${mtBunkDate}), we are executing a strategic collective skip day for ${mtBunkSubject} due to ${mtBunkReason}.\n\nAttendance is a temporary metric, class solidarity is eternal! Let's hit 100% bunk success. ✊🔥\n\n#Solidarity #NoBacklogs`;
-                            return (
-                              <div className="space-y-2">
-                                <div className="p-3 bg-[#0A0A0C] border border-[#25D366]/20 rounded-2xl space-y-1.5">
-                                  <span className="text-[8px] font-black text-[#25D366] uppercase block">WhatsApp Preview</span>
-                                  <pre className="font-sans text-[9px] text-slate-200 whitespace-pre-wrap select-all leading-normal bg-black/30 p-2 rounded-lg">{message}</pre>
-                                </div>
-                                <button
-                                  onClick={() => {
-                                    navigator.clipboard.writeText(message);
-                                    triggerNotification("Copied WhatsApp decree to clipboard! ✊🔥");
-                                  }}
-                                  className="w-full py-1.5 bg-[#25D366]/10 border border-[#25D366]/20 text-[#25D366] rounded-xl text-[9px] font-black uppercase cursor-pointer hover:bg-[#25D366]/20"
-                                >
-                                  Copy Bunk Decree Text
-                                </button>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 21: EXAM HALL CHECKLIST */}
-                      {tool.id === "exam_checklist" && (
-                        <div className="space-y-3.5">
-                          <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Exam Hall Essentials Checklist</label>
-                          <div className="grid grid-cols-2 gap-2 text-[9.5px]">
-                            {mtHallChecklist.map((item, idx) => (
-                              <button
-                                key={idx}
-                                onClick={() => {
-                                  // Simply trigger nice notification confirming item in check
-                                  triggerNotification(`Confirmed: ${item}`);
-                                }}
-                                className="p-2.5 rounded-xl border border-slate-200/40 dark:border-white/[0.04] bg-slate-50 dark:bg-slate-900 text-left font-bold text-slate-200 hover:border-violet-500/20 cursor-pointer flex items-center gap-2"
-                              >
-                                <CheckCircle2 className="w-3.5 h-3.5 text-violet-600 dark:text-violet-400 shrink-0" />
-                                <span>{item}</span>
-                              </button>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 22: REVALUATION GAMBLE CALCULATOR */}
-                      {tool.id === "reval_gamble" && (
-                        <div className="space-y-3.5">
-                          <div className="grid grid-cols-3 gap-2">
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Current Grade</label>
-                              <select
-                                value={mtRevalGrade}
-                                onChange={(e) => setMtRevalGrade(e.target.value)}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
-                              >
-                                {["F", "P", "C", "B", "B+", "A", "A+", "S"].map(g => (
-                                  <option key={g} value={g}>{g} Grade</option>
-                                ))}
-                              </select>
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">Internal CIE</label>
-                              <input
-                                type="number"
-                                min="0"
-                                max="50"
-                                value={mtRevalCie}
-                                onChange={(e) => setMtRevalCie(Number(e.target.value))}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-center font-bold text-[9px]"
-                              />
-                            </div>
-                            <div className="space-y-1">
-                              <label className="text-[8px] font-black text-slate-400 uppercase block">ESE Experience</label>
-                              <select
-                                value={mtRevalExpected}
-                                onChange={(e) => setMtRevalExpected(e.target.value)}
-                                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-2 py-1 text-[9px] font-black"
-                              >
-                                <option value="Poor">Poor / Blanks left</option>
-                                <option value="Average">Average / Okay</option>
-                                <option value="Excellent">Excellent / High marks</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          {(() => {
-                            const CIE = mtRevalCie;
-                            let gambleStatus = "Risky Gamble ⚠️ (Waste of ₹600)";
-                            let alertColor = "bg-rose-500/[0.01] border-rose-500/10 text-rose-455";
-                            
-                            if (mtRevalGrade === "F") {
-                              if (CIE >= 22 && mtRevalExpected === "Excellent") {
-                                gambleStatus = "High Chance 🚀 (Strongly Recommended)";
-                                alertColor = "bg-emerald-500/[0.01] border-emerald-500/10 text-emerald-450";
-                              } else if (CIE >= 18 && mtRevalExpected === "Excellent") {
-                                gambleStatus = "Moderate Gamble ⚖️ (Decent probability)";
-                                alertColor = "bg-amber-500/[0.01] border-amber-500/10 text-amber-450";
-                              }
-                            } else {
-                              if (mtRevalExpected === "Excellent") {
-                                gambleStatus = "Moderate Gamble ⚖️ (Possible Grade bump)";
-                                alertColor = "bg-amber-500/[0.01] border-amber-500/10 text-amber-450";
-                              }
-                            }
-
-                            return (
-                              <div className={`p-3.5 rounded-xl border text-center ${alertColor}`}>
-                                <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest leading-none">Revaluation Risk Assessment</div>
-                                <div className="text-base font-black leading-none py-1 mt-1">{gambleStatus}</div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                      {/* TOOL 23: SYLLABUS MILESTONE TRACKER */}
-                      {tool.id === "syllabus_tracker" && (
-                        <div className="space-y-3.5">
-                          <label className="text-[9px] font-black text-slate-400 uppercase tracking-wider block">Syllabus Module Toggles</label>
-                          <div className="space-y-2.5">
-                            {(subjects.length > 0 ? subjects.map(s => s.code) : ["PCCST403", "PCCST402", "PBCST404"]).map((course) => {
-                              const list = mtMilestones[course] || [false, false, false, false, false];
-                              const checkedCount = list.filter(Boolean).length;
-                              
-                              return (
-                                <div key={course} className="p-2.5 bg-slate-50 dark:bg-slate-900 border border-white/[0.03] rounded-xl space-y-2">
-                                  <div className="flex justify-between items-center text-[9px] font-bold">
-                                    <span className="text-slate-100">{course} Progress</span>
-                                    <span className="text-violet-600 dark:text-violet-400 font-bold uppercase tracking-wider">{checkedCount * 20}% Finished</span>
-                                  </div>
-
-                                  <div className="flex gap-1.5">
-                                    {list.map((done, idx) => (
-                                      <button
-                                        key={idx}
-                                        onClick={() => {
-                                          const updated = [...list];
-                                          updated[idx] = !updated[idx];
-                                          setMtMilestones(prev => ({ ...prev, [course]: updated }));
-                                          triggerNotification(`Toggled Module ${idx+1} for ${course}`);
-                                        }}
-                                        className={`flex-1 py-1 rounded border text-[8px] font-black cursor-pointer transition-all ${
-                                          done
-                                            ? "bg-violet-500/20 text-violet-600 dark:text-violet-400 border-violet-500/20"
-                                            : "bg-[#0A0A0C] text-slate-500 border-white/[0.02]"
-                                        }`}
-                                      >
-                                        M{idx+1}
-                                      </button>
-                                    ))}
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* TOOL 24: SEMESTER COUNTDOWN DASHBOARD */}
-                      {tool.id === "countdown_dashboard" && (
-                        <div className="space-y-3.5">
-                          <div className="space-y-1">
-                            <label className="text-[9px] font-black text-slate-400 uppercase block">Select Target Academic Milestone Date</label>
-                            <input
-                              type="date"
-                              value={mtCountdownTarget}
-                              onChange={(e) => setMtCountdownTarget(e.target.value)}
-                              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/[0.06] rounded-xl px-3 py-1.5 text-xs font-bold text-slate-100 focus:outline-none"
-                            />
-                          </div>
-
-                          {(() => {
-                            const diff = Math.max(0, new Date(mtCountdownTarget).getTime() - new Date().getTime());
-                            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-                            return (
-                              <div className="p-3.5 bg-black/60 rounded-xl border border-slate-200/40 dark:border-white/[0.04] text-center font-mono space-y-1">
-                                <div className="text-[9px] font-black text-slate-450 uppercase tracking-widest font-sans leading-none">Days remaining ESE Exam</div>
-                                <div className="text-2xl font-black text-emerald-450 tabular-nums leading-none py-1">
-                                  {days}d : {hours}h : {minutes}m
-                                </div>
-                                <div className="text-[8px] font-bold text-slate-500 uppercase tracking-wider font-sans leading-none">
-                                  Countdown anchor: {mtCountdownTarget}
-                                </div>
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      )}
-
-                    </div>
-                  </div>
-                </div>
-              );
-            })
-          )}
-        </div>
+        {/* Summary note */}
+        {allocated.length > 0 && (
+          <div className="p-3.5 rounded-2xl bg-blue-50/40 dark:bg-blue-500/[0.01] border border-blue-500/10 text-[10px] font-semibold text-slate-500 dark:text-slate-400 leading-normal text-center">
+            To achieve a <strong className="text-blue-600 dark:text-blue-400 font-bold">{targetSgpa.toFixed(1)} SGPA</strong>, you need this specific combination of target grades representing <strong className="text-slate-700 dark:text-slate-300 font-bold">{totalCredits} total credits</strong>.
+          </div>
+        )}
       </div>
     );
   };
@@ -6112,29 +4563,29 @@ export default function ToolsPage() {
             initial={{ opacity: 0, y: 50, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 20, x: "-50%" }}
-            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-slate-900/90 dark:bg-white/90 text-slate-900 dark:text-white dark:text-slate-900 shadow-xl backdrop-blur-md border border-white/10 dark:border-slate-200/20 text-xs font-bold flex items-center gap-2"
+            className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 text-slate-900 dark:text-slate-50 shadow-2xl backdrop-blur-xl border border-slate-200/80 dark:border-white/[0.08] text-xs font-bold flex items-center gap-2"
           >
-            <Sparkles className="w-4 h-4 text-blue-400 dark:text-blue-600 animate-pulse" />
+            <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 animate-pulse" />
             {showNotification}
           </motion.div>
         )}
       </AnimatePresence>
 
-      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-24 md:pt-28 flex flex-col z-10 pb-20 space-y-6">
+      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 sm:pt-24 md:pt-28 flex flex-col z-10 pb-20 space-y-4 sm:space-y-6">
         
         {/* red-glow and blue-glow decoration background spots */}
-        <div className="absolute top-10 left-10 w-[240px] h-[240px] rounded-full bg-violet-500/[0.02] blur-[80px] pointer-events-none -z-10" />
+        <div className="absolute top-10 left-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
         <div className="absolute bottom-10 right-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
 
         {/* --- PREMIUM COCKPIT TELEMETRY DENSITY HEADER --- */}
-        <div className="w-full bg-white/90 dark:bg-slate-950/85 backdrop-blur-3xl border border-slate-200/80 dark:border-white/[0.08] rounded-[32px] p-6 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-6">
+        <div className="w-full bg-white/90 dark:bg-slate-950/85 backdrop-blur-3xl border border-slate-200/80 dark:border-white/[0.08] rounded-2xl p-4 sm:p-5 md:p-6 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-4 sm:gap-6">
           <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.03] blur-[40px] pointer-events-none" />
           
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 pb-5 border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06]">
             {/* Logo Badge & Titles */}
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-lg text-[9px] font-black tracking-widest uppercase bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/15">
+                <span className="px-2.5 py-0.5 rounded-lg text-[9px] font-black tracking-widest uppercase bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15">
                   KTU Tools
                 </span>
                 <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">• APJ Abdul Kalam University</span>
@@ -6181,15 +4632,17 @@ export default function ToolsPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
               {
-                label: "GPA Scale",
-                val: `US: ${((Number(converterGpa) || 8.5) / 10 * 4).toFixed(2)}`,
-                badge: "Live 📊",
+                label: "Cumulative CGPA",
+                val: calculateCGPA(),
+                badge: "10.0 Scale",
+                icon: TrendingUp,
                 theme: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15"
               },
               {
                 label: "Attendance",
                 val: `${getAverageAttendance()}%`,
-                badge: getAverageAttendance() >= 75 ? "Safe 🟢" : "At Risk 🔴",
+                badge: getAverageAttendance() >= 75 ? "Safe" : "At Risk",
+                icon: getAverageAttendance() >= 75 ? Check : AlertCircle,
                 theme: getAverageAttendance() >= 75
                   ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/15"
                   : "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/15"
@@ -6197,8 +4650,9 @@ export default function ToolsPage() {
               {
                 label: "Lab Courses",
                 val: `${labCourses.length} Active`,
-                badge: "Tracked 🧪",
-                theme: "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/15"
+                badge: "Tracked",
+                icon: FlaskConical,
+                theme: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/15"
               },
               {
                 label: "SGPA",
@@ -6219,12 +4673,13 @@ export default function ToolsPage() {
         </div>
 
         {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR --- */}
-        <div className="bg-slate-100 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-200/60 dark:border-white/[0.06] backdrop-blur-2xl rounded-2xl p-1 flex flex-wrap items-center gap-1 shadow-md w-full">
+        <div className="bg-slate-100/80 dark:bg-slate-950/60 p-1.5 rounded-[22px] border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl flex flex-nowrap items-center gap-1 w-full overflow-x-auto scrollbar-none shadow-inner">
           {[
             { id: "attendance", label: "Attendance & CIE", icon: Activity },
             { id: "grades", label: "Grades & ESE", icon: Calculator },
             { id: "graduation", label: "Graduation", icon: GraduationCap },
-            { id: "exam", label: "Exam Prep", icon: Clock }
+            { id: "exam", label: "Exam Prep", icon: Clock },
+            { id: "labs", label: "Lab Tracker", icon: FlaskConical }
           ].map((tabItem) => {
             const isActive = activeWorkspaceTab === tabItem.id;
             const Icon = tabItem.icon;
@@ -6233,9 +4688,9 @@ export default function ToolsPage() {
               <button
                 key={tabItem.id}
                 onClick={() => setActiveWorkspaceTab(tabItem.id as typeof activeWorkspaceTab)}
-                className={`px-4 py-2.5 rounded-xl text-[10px] font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 justify-center sm:flex-initial active:scale-[0.98] hover:scale-[1.01] ${
+                className={`px-4 py-2.5 rounded-2xl text-[10px] font-semibold uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 justify-center min-w-0 active:scale-[0.98] hover:scale-[1.01] ${
                   isActive
-                    ? "bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/20 shadow-lg shadow-violet-500/[0.02]"
+                    ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 shadow-lg shadow-blue-500/[0.02]"
                     : "bg-transparent text-slate-500 dark:text-slate-400 border border-transparent hover:bg-slate-200/50 dark:hover:bg-white/[0.02]"
                 }`}
               >
@@ -6251,11 +4706,11 @@ export default function ToolsPage() {
           
           {/* TAB 1: ATTENDANCE & CIE RUNWAY */}
           {activeWorkspaceTab === "attendance" && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-              <div className="lg:col-span-7 space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
+              <div className="lg:col-span-7 space-y-4 sm:space-y-6">
                 {renderAttendanceRunway()}
               </div>
-              <div className="lg:col-span-5 space-y-6">
+              <div className="lg:col-span-5 space-y-4 sm:space-y-6">
                 {renderCieAggregatorPanel()}
               </div>
             </div>
@@ -6263,9 +4718,9 @@ export default function ToolsPage() {
 
           {/* TAB 2: GRADES & ESE TARGET PLANNER */}
           {activeWorkspaceTab === "grades" && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
               {/* GPA Sheet Calculator */}
-              <div className="lg:col-span-7 bg-white/80 dark:bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-6 shadow-lg dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] relative overflow-hidden space-y-5">
+              <div className="lg:col-span-7 bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 relative overflow-hidden space-y-4 sm:space-y-5">
                 <div className="absolute top-0 right-0 w-[240px] h-[240px] rounded-full bg-blue-500/[0.03] blur-[60px] pointer-events-none -z-10" />
                 
                 <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] pb-4">
@@ -6294,7 +4749,7 @@ export default function ToolsPage() {
                     placeholder="8.50"
                     value={converterGpa}
                     onChange={(e) => handleGpaConvert(e.target.value)}
-                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
                   />
                   <span>Score ⇄</span>
                   <input
@@ -6305,18 +4760,19 @@ export default function ToolsPage() {
                     placeholder="80.0"
                     value={converterPercentage}
                     onChange={(e) => handlePercentageConvert(e.target.value)}
-                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-violet-500/20"
+                    className="w-16 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-center font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
                   />
                   <span>Percentage (%)</span>
                 </div>
               </div>
 
-              {/* Target ESE Predictor Card */}
-              <div className="lg:col-span-5 space-y-6">
+              {/* Target ESE Predictor & SGPA Allocator Cards */}
+              <div className="lg:col-span-5 space-y-4 sm:space-y-6 flex flex-col justify-start">
                 {renderTargetPlanner()}
+                {renderSgpaGoalEstimator()}
                 
-                <div className="flex items-center gap-3 p-4 rounded-2xl border border-violet-500/10 bg-violet-50/50 dark:bg-violet-500/[0.02] text-[9.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center">
-                  <span>💡</span>
+                <div className="flex items-center gap-3 p-4 rounded-2xl border border-blue-500/10 bg-blue-50/50 dark:bg-blue-500/[0.02] text-[9.5px] font-semibold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center">
+                  <Lightbulb className="w-4 h-4 text-blue-500 shrink-0" />
                   <span>GPA values update in real-time. Target margins shift based on your active scores.</span>
                 </div>
               </div>
@@ -6325,23 +4781,194 @@ export default function ToolsPage() {
 
           {/* TAB 3: GRADUATION RUNWAY & MILESTONE TRACKER */}
           {activeWorkspaceTab === "graduation" && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-              <div className="lg:col-span-8 space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
+              <div className="lg:col-span-8 space-y-4 sm:space-y-6">
                 {renderGraduationAuditors()}
               </div>
-              <div className="lg:col-span-4 space-y-6">
-                {renderSpecializationPathway()}
+              <div className="lg:col-span-4 space-y-4 sm:space-y-6">
+                {renderBacklogTracker()}
+              </div>
+            </div>
+          )}
+
+
+          {/* TAB 5: LAB RECORD TRACKER */}
+          {activeWorkspaceTab === "labs" && (
+            <div className="grid grid-cols-1 gap-4 sm:gap-6">
+              <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                      <FlaskConical className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Lab Record Tracker</h3>
+                      <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Track experiment submissions, viva, and sign-off status</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => {
+                        if (labCourses.length === 0) {
+                          const labs = getDefaultLabsForSession(branch, sem);
+                          setLabCourses(labs);
+                          if (labs.length > 0) setActiveLabTab(labs[0].id);
+                          localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(labs));
+                          triggerNotification("Lab courses loaded!");
+                        }
+                      }}
+                      className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
+                    >
+                      {labCourses.length === 0 ? "Load Labs" : `${labCourses.length} Labs`}
+                    </button>
+                  </div>
+                </div>
+
+                {labCourses.length === 0 ? (
+                  <div className="flex flex-col items-center justify-center py-12 px-4 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-2xl">
+                    <FlaskConical className="w-10 h-10 text-slate-400 mb-3" />
+                    <span className="text-[12px] font-semibold text-slate-500 dark:text-slate-400 mb-1">No lab courses loaded</span>
+                    <span className="text-[11px] text-slate-400 dark:text-slate-500 text-center mb-4">Click "Load Labs" to import your {branch.toUpperCase()} S{sem} lab courses and start tracking experiments.</span>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {/* Lab course tabs */}
+                    <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1">
+                      {labCourses.map(lab => (
+                        <button
+                          key={lab.id}
+                          onClick={() => setActiveLabTab(lab.id)}
+                          className={`px-3 py-1.5 rounded-2xl text-[10px] font-semibold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap active:scale-95 ${
+                            activeLabTab === lab.id
+                              ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20"
+                              : "text-slate-500 dark:text-slate-400 border border-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02]"
+                          }`}
+                        >
+                          {lab.code}
+                        </button>
+                      ))}
+                    </div>
+
+                    {/* Active lab exercises */}
+                    {(() => {
+                      const activeLab = labCourses.find(l => l.id === activeLabTab);
+                      if (!activeLab) return null;
+                      const totalExercises = activeLab.exercises.length;
+                      const completedExercises = activeLab.exercises.filter(ex => ex.logic && ex.record && ex.signed).length;
+                      const progressPct = totalExercises > 0 ? Math.round((completedExercises / totalExercises) * 100) : 0;
+
+                      return (
+                        <div className="space-y-3">
+                          <div className="flex items-center justify-between">
+                            <div>
+                              <span className="text-[12px] font-semibold text-slate-900 dark:text-white block">{activeLab.name}</span>
+                              <span className="text-[10px] text-slate-500 dark:text-slate-400">{completedExercises}/{totalExercises} fully complete</span>
+                            </div>
+                            <span className={`px-2.5 py-1 rounded-lg text-[10px] font-bold ${progressPct >= 80 ? "bg-emerald-500/10 text-emerald-500" : progressPct >= 50 ? "bg-blue-500/10 text-blue-500" : "bg-amber-500/10 text-amber-500"}`}>
+                              {progressPct}%
+                            </span>
+                          </div>
+                          <div className="h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                            <div className={`h-full rounded-full transition-all duration-500 ${progressPct >= 80 ? "bg-emerald-500" : progressPct >= 50 ? "bg-blue-500" : "bg-amber-500"}`} style={{ width: `${progressPct}%` }} />
+                          </div>
+
+                          <div className="space-y-2 max-h-[360px] overflow-y-auto pr-1">
+                            {/* Table header */}
+                            <div className="grid grid-cols-12 gap-2 px-3 py-1.5 text-[9px] font-bold text-slate-400 uppercase tracking-widest items-center">
+                              <div className="col-span-5">Experiment</div>
+                              <div className="col-span-2 text-center">Logic</div>
+                              <div className="col-span-2 text-center">Record</div>
+                              <div className="col-span-2 text-center">Signed</div>
+                              <div className="col-span-1 text-center">Action</div>
+                            </div>
+                            {activeLab.exercises.map((ex) => {
+                              const allDone = ex.logic && ex.record && ex.signed;
+                              return (
+                                <div key={ex.id} className={`grid grid-cols-12 gap-2 items-center px-4 py-2.5 rounded-2xl border transition-all duration-300 ${allDone ? "bg-emerald-500/[0.02] border-emerald-500/20 dark:border-emerald-500/15" : "bg-slate-50/40 dark:bg-slate-900/10 border-slate-200/55 dark:border-slate-800/40 hover:border-slate-350 dark:hover:border-slate-700/60"}`}>
+                                  <div className="col-span-5">
+                                    <input
+                                      type="text"
+                                      value={ex.name}
+                                      onChange={(e) => {
+                                        const updated = labCourses.map(c => {
+                                          if (c.id !== activeLabTab) return c;
+                                          return {
+                                            ...c,
+                                            exercises: c.exercises.map(e2 =>
+                                              e2.id === ex.id ? { ...e2, name: e.target.value } : e2
+                                            )
+                                          };
+                                        });
+                                        setLabCourses(updated);
+                                        localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updated));
+                                      }}
+                                      className="w-full bg-transparent border-none focus:outline-none focus:ring-1 focus:ring-blue-500/30 rounded px-1 text-[11px] font-medium text-slate-800 dark:text-slate-200 truncate"
+                                    />
+                                  </div>
+                                  {(["logic", "record", "signed"] as const).map(field => (
+                                    <div key={field} className="col-span-2 flex justify-center">
+                                      <button
+                                        onClick={() => {
+                                          const updatedCourses = labCourses.map(c => {
+                                            if (c.id !== activeLabTab) return c;
+                                            return {
+                                              ...c,
+                                              exercises: c.exercises.map(e =>
+                                                e.id === ex.id ? { ...e, [field]: !e[field] } : e
+                                              )
+                                            };
+                                          });
+                                          setLabCourses(updatedCourses);
+                                          localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updatedCourses));
+                                        }}
+                                        className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all cursor-pointer active:scale-90 ${
+                                          ex[field]
+                                            ? "bg-emerald-500/15 text-emerald-500 border border-emerald-500/20"
+                                            : "bg-slate-100 dark:bg-slate-800 text-slate-400 border border-slate-200/60 dark:border-white/[0.06]"
+                                        }`}
+                                      >
+                                        {ex[field] ? <Check className="w-3.5 h-3.5" /> : <span className="text-[10px]">—</span>}
+                                      </button>
+                                    </div>
+                                  ))}
+                                  <div className="col-span-1 flex justify-center">
+                                    <button
+                                      onClick={() => removeLabExercise(activeLab.id, ex.id)}
+                                      className="text-slate-400 hover:text-rose-500 transition-all p-1 rounded-lg hover:bg-rose-500/10 cursor-pointer active:scale-90"
+                                    >
+                                      <Trash2 className="w-3.5 h-3.5" />
+                                    </button>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+
+                          {/* Add exercise at bottom */}
+                          <div className="pt-2 border-t border-slate-100 dark:border-white/[0.03] flex justify-end">
+                            <button
+                              onClick={() => addLabExercise(activeLab.id)}
+                              className="px-3 py-1.5 bg-blue-500/10 hover:bg-blue-500/15 border border-blue-500/15 text-blue-600 dark:text-blue-400 rounded-2xl text-[10px] font-semibold uppercase transition-all cursor-pointer flex items-center gap-1 active:scale-95"
+                            >
+                              <Plus className="w-3.5 h-3.5" /> Add Experiment
+                            </button>
+                          </div>
+                        </div>
+                      );
+                    })()}
+                  </div>
+                )}
               </div>
             </div>
           )}
 
           {/* TAB 4: 11TH-HOUR EXAM COMMAND PANEL */}
           {activeWorkspaceTab === "exam" && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-              <div className="lg:col-span-6 space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-stretch">
+              <div className="lg:col-span-6 space-y-4 sm:space-y-6">
                 {renderStudySequencer()}
               </div>
-              <div className="lg:col-span-6 space-y-6">
+              <div className="lg:col-span-6 space-y-4 sm:space-y-6">
                 {renderRevisionHub()}
               </div>
             </div>
@@ -6351,7 +4978,7 @@ export default function ToolsPage() {
 
         {/* Advice Info bottom bar */}
         <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] bg-slate-50/80 dark:bg-slate-900/40 text-[9.5px] font-bold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
-          <span>🛡️</span>
+          <ShieldCheck className="w-4 h-4 text-slate-400 dark:text-slate-500 shrink-0" />
           <span>All data is saved locally in your browser. GPA, attendance, and lab progress update in real-time as you make changes.</span>
         </div>
 

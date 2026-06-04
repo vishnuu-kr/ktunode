@@ -439,7 +439,7 @@ export default function Home() {
         ══════════════════════════════════════ */}
         <section
         ref={heroRef}
-        className="relative flex-1 flex flex-col items-center pt-28 md:pt-32 pb-16 text-center px-4 overflow-hidden"
+        className="relative flex-1 flex flex-col items-center pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 text-center px-4 overflow-hidden"
         style={{ minHeight: "100vh" }}
       >
         {/* ── Dot grid overlay ── */}
@@ -500,7 +500,7 @@ export default function Home() {
 
         {/* ── Selector card ── */}
         <motion.div
-          className="relative z-30 bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-3xl p-3 flex flex-col md:flex-row items-center gap-3 max-w-3xl w-full"
+          className="relative z-30 bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 max-w-3xl w-full"
           initial={{ opacity: 0, y: 24, scale: 0.97 }}
           animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 24, scale: mounted ? 1 : 0.97 }}
           transition={{ delay: 0.24, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}

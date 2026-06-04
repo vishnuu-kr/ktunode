@@ -26,8 +26,8 @@ export function proxy(request: NextRequest) {
       sem = parseInt(semNumeric, 10) || 4;
     }
 
-    let subjectCodeOrId = subjectParam;
-    let topicId = topicParam;
+    const subjectCodeOrId = subjectParam;
+    const topicId = topicParam;
 
     // Lookup subject in mock data to find its correct branch/sem if not explicitly provided
     if (subjectParam && (!branchParam || !semParam)) {

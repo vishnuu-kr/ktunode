@@ -116,7 +116,7 @@ export default function FoundreeHero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl w-[88%] text-center flex flex-col items-center gap-8">
+      <div className="relative z-10 max-w-5xl w-[88%] text-center flex flex-col items-center gap-8 pb-20 md:pb-0">
         {/* Badge */}
         <motion.div
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-blue-300 text-xs font-bold tracking-widest uppercase cursor-default"

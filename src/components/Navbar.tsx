@@ -260,7 +260,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={toggleTheme}
-            className="flex h-11 w-11 sm:h-9 sm:w-9 items-center justify-center rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer shrink-0"
+            className="flex h-10 w-10 sm:h-9 sm:w-9 items-center justify-center rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer shrink-0"
             aria-label="Toggle dark mode"
             title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
           >
@@ -271,7 +271,7 @@ export default function Navbar() {
             )}
           </motion.button>
         ) : (
-          <div className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-200 bg-slate-50/50 opacity-40 shrink-0" />
+          <div className="w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 bg-slate-50/50 opacity-40 shrink-0" />
         )}
 
         {pathname.startsWith("/dashboard") && (
@@ -281,7 +281,7 @@ export default function Navbar() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleAvatarClick}
-                className="relative flex items-center justify-center w-11 h-11 sm:w-8 sm:h-8 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 border border-white/20 shadow-md text-white font-bold text-xs select-none transition-all duration-300 hover:shadow-blue-500/20 cursor-pointer"
+                className="relative flex items-center justify-center h-10 w-10 sm:h-9 sm:w-9 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 border border-white/20 shadow-md text-white font-bold text-xs select-none transition-all duration-300 hover:shadow-blue-500/20 cursor-pointer"
                 title={`Logged in as ${userName}`}
               >
                 {getInitials(userName)}
@@ -292,7 +292,7 @@ export default function Navbar() {
                 whileHover="hover"
                 whileTap="tap"
                 onClick={handleSignInClick}
-                className="group flex h-8 sm:h-9 items-center gap-1 sm:gap-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 pl-2 pr-2.5 sm:pl-2.5 sm:pr-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-blue-50/40 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer whitespace-nowrap"
+                className="group flex h-10 sm:h-9 items-center gap-1 sm:gap-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 pl-2 pr-2.5 sm:pl-2.5 sm:pr-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-blue-50/40 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer whitespace-nowrap"
               >
                 <motion.div
                   variants={{
@@ -312,7 +312,7 @@ export default function Navbar() {
         {isActive("/tools") ? (
           <button
             type="button"
-            className="inline-flex h-8 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
+            className="inline-flex h-10 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
             aria-label="Tools"
             aria-current="page"
           >
@@ -322,7 +322,7 @@ export default function Navbar() {
         ) : (
           <Link
             href="/tools"
-            className="inline-flex h-8 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
+            className="inline-flex h-10 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
           >
             <Wrench className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
             <span>Tools</span>
@@ -332,7 +332,7 @@ export default function Navbar() {
         {isActive("/dashboard") ? (
           <button
             type="button"
-            className="inline-flex h-8 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-blue-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap animate-none"
+            className="inline-flex h-10 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-blue-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap animate-none"
             aria-label="Dashboard"
             aria-current="page"
           >
@@ -340,7 +340,7 @@ export default function Navbar() {
             <span>Dashboard</span>
           </button>
         ) : (
-          <MagneticButton href="/dashboard" className="!py-2 !px-4 !text-xs whitespace-nowrap">
+          <MagneticButton href="/dashboard" className="!h-10 sm:!h-9 flex items-center justify-center !py-0 !px-3 sm:!px-4 !text-[10px] sm:!text-xs whitespace-nowrap">
             Dashboard
             <ArrowRight className="w-3 h-3" />
           </MagneticButton>

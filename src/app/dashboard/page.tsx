@@ -1471,7 +1471,7 @@ function DashboardContent() {
                 <TimetableWidget timetable={timetable} sem={sem} branch={branch} />
 
                 {pinnedTopicIds.length > 0 && (
-                  <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">
+                  <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-4 sm:p-5 md:p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 rounded-xl bg-amber-500/[0.06] border border-amber-500/[0.15] flex items-center justify-center text-amber-600">
                         <Star className="w-4 h-4 fill-current animate-pulse" />
@@ -1540,7 +1540,7 @@ function DashboardContent() {
                 </div>
               )}
               {selectedSubject.modules.length > 0 ? (
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {selectedSubject.modules.map((module, index) => {
                     const moduleTopicIds = module.topics.map((topic) => topic.id);
                     const progress = getModuleProgress(moduleTopicIds);
@@ -2052,7 +2052,7 @@ function DashboardContent() {
         <TimetableWidget timetable={timetable} sem={sem} branch={branch} />
 
         {pinnedTopicIds.length > 0 && (
-          <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">
+          <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-4 sm:p-5 md:p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-amber-500/[0.06] dark:bg-amber-500/[0.12] border border-amber-500/[0.15] dark:border-amber-500/[0.3] flex items-center justify-center text-amber-600 dark:text-amber-400">
                 <Star className="w-4 h-4 fill-current" />

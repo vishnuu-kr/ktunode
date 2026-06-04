@@ -78,8 +78,8 @@ export default function GpaCalculator() {
   // key: semester number (1-8 for presets, custom for universal)
   const [semesters, setSemesters] = useState<Record<number, ActiveSubject[]>>({});
   const [collapsedSemesters, setCollapsedSemesters] = useState<Record<number, boolean>>({
-    1: true,
-    2: true,
+    1: false,
+    2: false,
     3: true,
     4: true,
     5: true,
@@ -140,8 +140,6 @@ export default function GpaCalculator() {
             }));
           }
           setSemesters(initialSemesters);
-          
-          // Expand both S1 and S2 by default
           setCollapsedSemesters({ 1: false, 2: false });
         }
       } else {
@@ -249,11 +247,18 @@ export default function GpaCalculator() {
   // Add next semester (Preset-loaded or custom empty) up to Sem 8 max
   const handleAddSemester = () => {
     const keys = Object.keys(semesters).map(Number);
-    const nextSem = keys.length > 0 ? Math.max(...keys) + 1 : 1;
     
-    // Limit both presets and custom modes to Semester 8 max
-    if (nextSem > 8) {
-      alert("APJAKTU B.Tech degrees are capped at Semester 8!");
+    // Find the first missing semester number from 1 to 8
+    let nextSem = -1;
+    for (let i = 1; i <= 8; i++) {
+      if (!keys.includes(i)) {
+        nextSem = i;
+        break;
+      }
+    }
+    
+    if (nextSem === -1) {
+      alert("All 8 Semesters are already added! APJAKTU B.Tech degrees are capped at Semester 8.");
       return;
     }
 
@@ -285,6 +290,14 @@ export default function GpaCalculator() {
     saveSemestersState(updated);
   };
 
+  // Remove an entire semester card
+  const handleRemoveSemester = (semesterNum: number) => {
+    if (!confirm(`Are you sure you want to remove Semester ${semesterNum} card?`)) return;
+    const updated = { ...semesters };
+    delete updated[semesterNum];
+    saveSemestersState(updated);
+  };
+
   // Reset active configurations
   const handleReset = () => {
     if (!confirm("Are you sure you want to reset all grades for this calculator?")) return;
@@ -293,16 +306,28 @@ export default function GpaCalculator() {
       const branchSemesters = schemeData[selectedBranch];
       if (branchSemesters) {
         const initialSemesters: Record<number, ActiveSubject[]> = {};
-        branchSemesters.forEach((sem) => {
-          initialSemesters[sem.semester] = sem.subjects.map((sub, idx) => ({
-            id: `sub_${sem.semester}_${idx}_${Date.now()}`,
+        const sem1Data = branchSemesters.find(s => s.semester === 1);
+        if (sem1Data) {
+          initialSemesters[1] = sem1Data.subjects.map((sub, idx) => ({
+            id: `sub_1_${idx}_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
             sno: sub.sno,
             name: sub.name,
             credits: sub.credits,
             grade: "--"
           }));
-        });
+        }
+        const sem2Data = branchSemesters.find(s => s.semester === 2);
+        if (sem2Data) {
+          initialSemesters[2] = sem2Data.subjects.map((sub, idx) => ({
+            id: `sub_2_${idx}_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+            sno: sub.sno,
+            name: sub.name,
+            credits: sub.credits,
+            grade: "--"
+          }));
+        }
         saveSemestersState(initialSemesters);
+        setCollapsedSemesters({ 1: false, 2: false });
       }
     } else {
       const initialSemesters: Record<number, ActiveSubject[]> = {
@@ -318,6 +343,7 @@ export default function GpaCalculator() {
         ]
       };
       saveSemestersState(initialSemesters);
+      setCollapsedSemesters({ 1: false, 2: false });
     }
   };
 
@@ -417,10 +443,10 @@ export default function GpaCalculator() {
   if (!mounted) return null;
 
   return (
-    <div className="w-full space-y-6">
+    <div className="w-full space-y-4 sm:space-y-6">
       
       {/* 1. Header / Clean Floating Stat Strip */}
-      <div className="w-full bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl shadow-lg dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] p-4 md:p-5 flex flex-col sm:flex-row justify-between items-center gap-4 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]">
+      <div className="w-full bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/60 dark:border-white/[0.06] rounded-2xl shadow-lg dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] p-3 sm:p-4 md:p-5 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 dark:text-blue-400 shrink-0">
             <Award className="w-5 h-5 animate-pulse" />
@@ -565,7 +591,7 @@ export default function GpaCalculator() {
           return (
             <div
               key={semNum}
-              className="bg-white/60 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.04] rounded-xl overflow-hidden p-3.5 px-4 transition-all duration-200 hover:border-slate-300/60 dark:hover:border-white/[0.08]"
+              className="bg-white/60 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.04] rounded-xl overflow-hidden p-3 px-3.5 sm:p-3.5 sm:px-4 transition-all duration-200 hover:border-slate-300/60 dark:hover:border-white/[0.08]"
             >
               
               {/* Semester strip trigger */}
@@ -593,6 +619,16 @@ export default function GpaCalculator() {
                       SGPA: {semSgpa}
                     </div>
                   )}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleRemoveSemester(semNum);
+                    }}
+                    className="p-1 rounded text-slate-450 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all cursor-pointer mr-1"
+                    title={`Delete Semester ${semNum} Card`}
+                  >
+                    <Trash2 className="w-3.5 h-3.5" />
+                  </button>
                   {isCollapsed ? (
                     <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
                   ) : (
@@ -696,15 +732,26 @@ export default function GpaCalculator() {
 
       {/* Dynamic All-tab Add Semester Card Button */}
       <div className="flex justify-center pt-2">
-        <button
-          onClick={handleAddSemester}
-          className="flex items-center gap-1.5 text-[10px] font-black text-white dark:text-slate-900 bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 dark:hover:bg-white px-4.5 py-2.5 rounded-xl transition-all cursor-pointer shadow-md hover:scale-[1.02] active:scale-[0.98]"
-        >
-          <Plus className="w-4 h-4" /> {(() => {
-            const nextSem = Object.keys(semesters).length > 0 ? Math.max(...Object.keys(semesters).map(Number)) + 1 : 1;
-            return nextSem <= 8 ? `Add Semester S${nextSem} Card` : "Add Custom Track Sheet";
-          })()}
-        </button>
+        {(() => {
+          const keys = Object.keys(semesters).map(Number);
+          let nextSem = -1;
+          for (let i = 1; i <= 8; i++) {
+            if (!keys.includes(i)) {
+              nextSem = i;
+              break;
+            }
+          }
+          if (nextSem === -1) return null; // Hide if all 8 are added!
+          
+          return (
+            <button
+              onClick={handleAddSemester}
+              className="flex items-center gap-1.5 text-[10px] font-black text-white dark:text-slate-900 bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 dark:hover:bg-white px-4.5 py-2.5 rounded-xl transition-all cursor-pointer shadow-md hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <Plus className="w-4 h-4" /> Add Semester S{nextSem} Card
+            </button>
+          );
+        })()}
       </div>
 
       {/* CALCULATIONS BREAKDOWN MODAL DRAWER */}
