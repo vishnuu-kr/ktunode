@@ -1,0 +1,165 @@
+{
+  "subject": "ADVANCED NUMERICAL CONTROL IN MANUFACTURING",
+  "branch": "Mechanical Engineering",
+  "semester": 8,
+  "details": {
+    "name": "ADVANCED NUMERICAL CONTROL IN MANUFACTURING",
+    "courseCode": "PEMET866",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Principles of Numerical Control Structure of NC systems",
+          "Applications of CNC machines in manufacturing",
+          "Advantages of CNC machines",
+          "Historical developments and future trends",
+          "Future of NC Machines",
+          "Difference between ordinary and NC Machine tools",
+          "Machining Capabilities of a CNC Machine",
+          "Methods for improving accuracy and productivity",
+          "Control of NC Systems",
+          "Classification of CNC control systems Open and Closed loop systems",
+          "Types of CNC Machine Tools systems devices"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Encoders and interpolators",
+          "Features of CNC Systems",
+          "Direct Numerical Control (DNC)",
+          "Standard Controllers and General Programming features available in CNC Systems",
+          "Computer Process monitoring and Control",
+          "Adaptive control systems"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "NC Part Programming",
+          "Axis identification and coordinate systems",
+          "Structure of CNC part program",
+          "Programming codes",
+          "Programming for 2 and 3 axis control systems",
+          "Manual part programming for a turning center",
+          "Programming using tool nose radius compensation",
+          "Tools offsets",
+          "Do loops",
+          "sub routines and fixed cycles",
+          "Manual Programming for simple parts"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Computer aided part programming",
+          "Tools for computer aided part programming",
+          "Computer aided NC Programming in APT language",
+          "use of canned cycles",
+          "Generation of NC Programmes through CAD/CAM systems",
+          "Design and implementation of post processors",
+          "Constructional Details of CNC Machines",
+          "Machine structure",
+          "Slide –ways",
+          "Motion transmission elements",
+          "Swarf removal and safety considerations",
+          "Automatic tool changers and multiple pallet systems",
+          "Sensors and feedback devices in CNC machines"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the working of NC and CNC systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Understand feedback mechanisms in CNC machines",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Create programming code in CNC",
+        "knowledgeLevel": "K6"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the construction details of CNC machines",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Numerical Controls in Manufacturing",
+        "author": "Frank W Wilson",
+        "publisher": "McGraw-Hill",
+        "edition": "1963"
+      },
+      {
+        "title": "Introduction to Numerical Control in Manufacturing",
+        "author": "American Society of Tool and Manufacturing Engineers, Chester Joseph Kishel",
+        "publisher": "American Society of Tool and Manufacturing Engineers,",
+        "edition": "1969"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Computer Control of Manufacturing Systems",
+        "author": "Yoram Koren",
+        "publisher": "McGraw-Hill Inc.,US",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/112/105/112105211/",
+      "module2": "https://archive.nptel.ac.in/courses/112/105/112105211/",
+      "module3": "https://archive.nptel.ac.in/courses/112/105/112105211/",
+      "module4": "https://archive.nptel.ac.in/courses/112/105/112105211/"
+    },
+    "semester": "8",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:19:04.350Z"
+}

@@ -1,0 +1,178 @@
+{
+  "subject": "RENEWABLE ENERGY SYSTEMS",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 8,
+  "details": {
+    "name": "RENEWABLE ENERGY SYSTEMS",
+    "courseCode": "PEECT 863",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Renewable Energy (RE)Sources: World energy scenario",
+          "Over view of conventional energy sources, their limitation, need of renewable energy, potential & development of renewable energy sources",
+          "Renewable energy in India",
+          "An overview of types of renewable energy systems - Wind power, Hydropower (micro and mini), Solar energy, Biomass, Bio-fuel, Geothermal Heat energy, Pros and cons",
+          "Applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Solar Energy: Introduction to photovoltaic (PV) systems - Principle of PV conversion",
+          "Commercial solar cell, Thin film PV device fabrication - LPCVD, APCVD, PECVD",
+          "Tandem Solar cell fabrication",
+          "Solar power extraction using PV-Cells, I-V Characteristics",
+          "PV-Inverters without D.C. to D.C. converters, stand alone and grid collected PV systems, Grid interfacing- with isolation, without isolation",
+          "Maximum power point tracking- Methods(MPPT)",
+          "PV-Inverters with D.C. to D.C. converters-on low frequency side and high frequency side with isolation, without isolation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Wind Energy: Sources and potentials, of Wind Intensity, Topography",
+          "General Classification of Wind Turbines-Rotor Turbines, Multiple-Blade Turbines, Drag Turbines, Lifting Turbines, System Toroidal Rotor Amplifier Platform (TARP)–Wind amplified rotor platform (WARP)",
+          "Generators and speed control used in wind power energy: Fixed speed with capacitor bank",
+          "Rotor resistance control, SCIG and DFIG, Synchronous Generator-external magnetized",
+          "Synchronous Generator-permanent magnets."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Electronic conversion systems application to renewable energy generation systems: Basic schemes and functional advantages",
+          "Power control and management systems for grid integration, island detection systems, synchronizing with the grid",
+          "Issues in integration of converter based sources",
+          "Network voltage management",
+          "Power quality management and Frequency management",
+          "Influence of PV/WECS on system transient response.",
+          "Introduction to grid connectivity of RE systems, smart grid and emerging technologies, operating principles and models of smart gird components."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the need, importance and scope of various Non-Conventional sources of energy",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Outline the concepts and technologies related to renewable energy systems using wind and Solar-PV",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Illustrate the integration of smart grid with renewable energy systems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the concept of distribution management system.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Solar Energy: Principles of Thermal Collection and Storage",
+        "author": "Nayak J. K. and Sukhatme S. P.",
+        "publisher": "Tata McGraw Hill",
+        "edition": "3/e. 2008"
+      },
+      {
+        "title": "Power Electronics: Circuits, Devices and Applications",
+        "author": "Muhannad H. R.",
+        "publisher": "Pearson Prentice Hall",
+        "edition": "4/e, 2017"
+      },
+      {
+        "title": "Smart Grid Technology and Applications",
+        "author": "Nick Jenkins, Janaka Ekanayake [et al.]",
+        "publisher": "Wiley India Ltd",
+        "edition": "1/e, 2015"
+      },
+      {
+        "title": "Design of Smart Power Grid Renewable Energy Systems",
+        "author": "Ali Keyhani",
+        "publisher": "Wiley-IEEE Press",
+        "edition": "1/e, 2016"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Handbook of renewable energy technology",
+        "author": "Ahmed F Zobaa and Ramesh Bansal",
+        "publisher": "World Scientific",
+        "edition": "1/e, 2011"
+      },
+      {
+        "title": "Solar Energy: Fundamental and Application",
+        "author": "Garg H. P. and Prakash S.",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2/e, 2015"
+      },
+      {
+        "title": "The Smart Grid: Enabling Energy Efficiency and Demand Response",
+        "author": "Gellings C. W.",
+        "publisher": "CRC Press",
+        "edition": "1/e, 2009"
+      },
+      {
+        "title": "Grid Converters for Photovoltaic and wind Power Systems",
+        "author": "Teodorescu R. Liserre M. Rodriguez P.",
+        "publisher": "Wiley – IEEE press",
+        "edition": "1/e, 2011"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc21_ph33/preview",
+      "module2": "https://nptel.ac.in/courses/103103206",
+      "module3": "https://onlinecourses.nptel.ac.in/noc22_ch27/preview",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:15:00.988Z"
+}

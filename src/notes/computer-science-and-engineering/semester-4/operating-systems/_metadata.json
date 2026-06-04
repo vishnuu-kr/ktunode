@@ -1,0 +1,261 @@
+{
+  "subject": "OPERATING SYSTEMS",
+  "branch": "Computer Science and Engineering",
+  "semester": 4,
+  "details": {
+    "name": "OPERATING SYSTEMS",
+    "courseCode": "PCCST403",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Operating Systems",
+          "Operating System Services",
+          "Overview of Operating Systems and Kernels",
+          "Linux Versus Classic Unix Kernels",
+          "Process concepts:",
+          "Process Creation",
+          "Process States",
+          "Data Structures",
+          "Process API",
+          "Sharing processor among processes - user and kernel modes",
+          "context switching",
+          "System boot sequence",
+          "Case study : Linux kernel process management",
+          "Threads and Concurrency : Concept of a thread",
+          "Multithreading benefits",
+          "Multithreading models",
+          "Case study:  The Linux Implementation of Threads",
+          "Process scheduling : Concepts and basic algorithms",
+          "The Multilevel Feedback Queue: Basic Rules",
+          "Case study:  The Linux Completely Fair Scheduler (CFS)",
+          "The Linux Scheduling Implementation",
+          "Preemption and Context Switching"
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "Book 1 Ch 2 introductory part",
+          "Book 3 Ch 2",
+          "Book 2 Ch 1",
+          "Book 1 Ch 4, 5",
+          "Book 1 Ch 6",
+          "Book 3 Ch 2",
+          "Book 2, Ch 3",
+          "Book 3 Ch 4",
+          "Book 2, Ch 3",
+          "Book 1 Ch 7",
+          "Book 1 Ch 8",
+          "Book 1 Ch 9",
+          "Book 2, Ch 4"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Concurrency and Synchronization  - Basic principles",
+          "Mechanisms - Locks: The Basic Idea",
+          "Building Spin Locks with Test-And-Set",
+          "Compare and Swap",
+          "Using Queues: Sleeping Instead Of Spinning",
+          "Semaphores - Definition",
+          "Binary Semaphores",
+          "The Producer/Consumer (Bounded Buffer) Problem and its solution using semaphores",
+          "Reader-Writer Locks",
+          "Case study : Linux Kernel Synchronization Methods - Spin Locks",
+          "Semaphores",
+          "Mutexes",
+          "Concurrency:",
+          "Deadlock and Starvation - Deadlock Characterization",
+          "Deadlock Prevention and Avoidance",
+          "Deadlock Detection and recovery",
+          "Dining Philosophers Problem and its solution"
+        ],
+        "contactHours": 12,
+        "textbookReferences": [
+          "Book 3 Sections 6.1, 6.2",
+          "Book 1 Ch 28",
+          "Book 1 Ch 31",
+          "Book 2 Ch 10",
+          "Book 3 Ch 8",
+          "Book 1 Ch 31"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Memory management  - Address Space",
+          "Memory API",
+          "Address Translation - An Example",
+          "Dynamic (Hardware-based) Relocation",
+          "Segmentation:",
+          "Generalized Base/Bounds",
+          "Address translation in segmentation",
+          "Support for Sharing",
+          "Virtual memory  - Paging: Introduction",
+          "page tables and hardware support",
+          "TLBs",
+          "Example: Accessing An Array",
+          "- TLB hits and misses",
+          "Handling TLB misses",
+          "TLB structure",
+          "Reducing the page table size",
+          "Going beyond physical memory   -  Swap space",
+          "page fault and its control flow",
+          "page replacement policies",
+          "Thrashing"
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "Book 1 Ch 13 to 16",
+          "Book 1 Ch 18 to 20",
+          "Book 1 Ch 21, 22"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "I/O system:",
+          "Modern System architecture",
+          "Programmed I/O",
+          "Interrupts",
+          "DMA",
+          "Device interaction methods",
+          "The Device Driver",
+          "Hard disk:",
+          "Geometry",
+          "disk scheduling",
+          "Case study : Linux I/O schedulers - Elevator",
+          "Complete Fair Queuing",
+          "Files and Directories : The File System Interface - File descriptor",
+          "reading and writing files (sequential and random access)",
+          "Removing files - Hard links and Symbolic links",
+          "Creating, reading and deleting directories",
+          "Permission bits and Access Control Lists",
+          "Mounting a file system",
+          "File Organization : The Inode",
+          "The Multi-Level Index",
+          "Case study:  VFS Objects and Their Data Structures - The Inode Object",
+          "Inode Operations"
+        ],
+        "contactHours": 10,
+        "textbookReferences": [
+          "Book 1 Ch 36",
+          "Book 1 Ch 37",
+          "Book 3 Section 11.2",
+          "Book 2 Ch 14",
+          "Book 1 Ch 39",
+          "Book 1 Ch 40",
+          "Book 2 Ch 13"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub-divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply the concepts of process management and process scheduling mechanisms employed in operating systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Choose various process synchronization mechanisms employed in operating systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Use deadlock prevention and avoidance mechanisms  in operating systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Select various memory management techniques in operating systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Understand the storage management in operating systems.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Operating Systems: Three Easy Pieces",
+        "author": "Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau",
+        "publisher": "CreateSpace",
+        "edition": "1/e, 2018"
+      },
+      {
+        "title": "Linux Kernel Development",
+        "author": "Robert Love",
+        "publisher": "Pearson",
+        "edition": "3/e, 2018"
+      },
+      {
+        "title": "Operating System Concepts",
+        "author": "Abraham Silberschatz, Peter B. Galvin, Greg Gagne",
+        "publisher": "Wiley",
+        "edition": "10/e, 2018"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Modern Operating Systems",
+        "author": "Andrew S. Tanenbaum Herbert Bos",
+        "publisher": "Pearson",
+        "edition": "5/e, 2012"
+      },
+      {
+        "title": "The Design of the UNIX Operating System",
+        "author": "Maurice J. Bach",
+        "publisher": "Prentice Hall of India",
+        "edition": "1/e, 1994"
+      },
+      {
+        "title": "The Little Book of Semaphores",
+        "author": "Allen B. Downey",
+        "publisher": "Green Tea Press",
+        "edition": "1/e, 2016"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/105/106105214/",
+      "module2": "https://www.youtube.com/playlist?list=PLDW872573QAb4bj0URobvQTD41IV6gRkx",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:13:45.320Z"
+}

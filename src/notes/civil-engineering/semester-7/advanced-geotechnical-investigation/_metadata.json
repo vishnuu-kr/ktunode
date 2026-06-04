@@ -1,0 +1,172 @@
+{
+  "subject": "ADVANCED GEOTECHNICAL INVESTIGATION",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "ADVANCED GEOTECHNICAL INVESTIGATION",
+    "courseCode": "PECET753",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Geotechnical Engineering -1 (PCCET402)",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Planning an Investigation Programme",
+          "Geotechnical Investigation – Necessity, Scope and Objectives",
+          "Planning of a sub-surface   exploration program -Factors to be considered",
+          "Reconnaissance, preliminary and detailed investigation.",
+          "I.S guidelines for deciding the number, size, spacing and depth of boreholes",
+          "Exploration techniques",
+          "Methods of exploration- open pits, trenches, shafts, boreholes. Methods of boring – Auger boring, wash boring, percussion drilling, rotary drilling",
+          "Sampling",
+          "Soil Sampling- disturbed and undisturbed soil samples- representative and non-representative samples , chunk and tube samples,"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Sounding Methods",
+          "Standard Penetration Test- procedure, Factors influencing the SPT results and precautions to obtain reliable results– corrections to be applied to observed N values– correlations of N value with various engineering and index properties of soils-Field study from sites-Field visit and analysis of data",
+          "Static cone penetration test-procedure-merits/drawbacks. Correlation of static CPT results with properties",
+          "Dynamic Cone penetration test-Procedure-merits/drawbacks-Critical comparison of SPT, Static CPT and dynamic CPT",
+          "Plate load test –Procedure, uses, limitations-Design of foundation from the analysis of data"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Field Tests",
+          "Geophysical methods -Seismic refraction method- procedure,  use, limitations.",
+          "Electrical resistivity method-Electrical profiling and electrical sounding-procedure, uses, limitations",
+          "Field tests – Pressure meter Test procedure, uses -limitations,              correlations.",
+          "Pile load tests- Procedure- analysis of results of data"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Sampling, Report & Geosynthetics",
+          "Soil Sampling- disturbed and undisturbed soil samples- representative and non-representative samples, chunk and tube samples, Area ratio clearance, outside clearance-recovery ratio, Handling and transportation of sample, Types of samplers-Thin walled sampler, Piston sampler-Split spoon sampler. Methods for collection of sand samples from beneath the water table",
+          "Soil Investigation report",
+          "Presentation of soil exploration data – Bore log and soil profile.",
+          "Geosynthetics",
+          "Geosynthetics- Functions and applications from case studies – any field visit - Pavements, Embankments, Railways, Erosion control from Kerala state."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "The students will be able to understand the procedure, applicability and limitations of various methods of geotechnical investigation",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "The students will be able to make judgements and take appropriate decisions related to geotechnical investigations",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "The students will be able to understand the procedure and applications of penetration tests and geophysical tests for the exploration of the soil profile",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "The students will be able to choose the right soil sampling technique, analyse the dependability of samples collected and understand the soil investigation report",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO5",
+        "description": "The students will be able to understand the functions and field applications of Geosynthetics from case studies from Kerala State",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Basic and applied soil mechanics",
+        "author": "Gopal Ranjan and Rao A.S.R",
+        "publisher": "New Age International (P) Limited, New Delhi",
+        "edition": "5th edition 2024"
+      },
+      {
+        "title": "Geotechnical Engineering",
+        "author": "Venkataramaih",
+        "publisher": "Universities Press (India) Limited, Hyderabad",
+        "edition": "6th edition 2018"
+      },
+      {
+        "title": "Geotechnical Ground Investigation",
+        "author": "Myint Win Bo",
+        "publisher": "World Scientific Publishing Company",
+        "edition": "2022"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Geotechnical Engineering Investigation Handbook Hunt R.E. (2005)",
+        "author": "Hunt R.E.",
+        "publisher": "Mc Graw Hill, New York",
+        "edition": "Second Edition 2005"
+      },
+      {
+        "title": "Principles of Geotechnical Engineering, Seventh Edition, Cengage Learning Inc, Stamford, USA",
+        "author": "Braja M Das",
+        "publisher": "Cengage Learning Inc, Stamford, USA",
+        "edition": "Seventh Edition (2010)"
+      },
+      {
+        "title": "Soil Mechanics & Foundation Engineering",
+        "author": "Purushothama Raj P",
+        "publisher": "Pearson Education India.",
+        "edition": "(2008)"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "https://nptel.ac.in/courses/105105039",
+      "module3": "https://nptel.ac.in/courses/105103182",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:56:35.782Z"
+}

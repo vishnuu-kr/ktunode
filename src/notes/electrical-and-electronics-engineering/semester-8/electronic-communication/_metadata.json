@@ -1,0 +1,196 @@
+{
+  "subject": "ELECTRONIC COMMUNICATION",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 8,
+  "details": {
+    "name": "ELECTRONIC COMMUNICATION",
+    "courseCode": "PEEET864",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "GYEST104, PBEET304",
+    "courseType": "PE - Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 3,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Analog Communication:",
+          "Introduction to communication systems",
+          "Classification of channels",
+          "Need for modulation.",
+          "Amplitude modulation:",
+          "Equation and frequency spectrum of AM signal",
+          "Double-side band suppressed carrier (DSB-SC) modulation",
+          "Sin-gle sideband modulation (SSB)",
+          "comparison of spectrum, power and effi-ciency of all the three variants",
+          "Amplitude modulator circuits -balanced modulator",
+          "AM demodulators – Envelope detector."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Angle Modulation:",
+          "Frequency and phase modulation",
+          "Narrow and wide band FM and their spectra",
+          "Modulation and demodulation techniques for FM",
+          "pre-emphasis and de-emphasis",
+          "FM transmitter and receiver",
+          "Noise in receivers",
+          "Noise figures",
+          "Performance of analog modulation schemes in AWGN: SNR and figure of merit for different schemes."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Digital baseband communication:",
+          "Elements of digital communication system.",
+          "Sources, channels and receivers",
+          "Sampling and Reconstruction of Analog Signals:",
+          "Nyquist Sampling Theorem",
+          "Ideal Reconstruction Filter",
+          "Pulse Amplitude Modulation (PAM)",
+          "Time division multiplexing with PAM",
+          "Pulse Code Modulation (PCM)",
+          "A-law and mu-law quantization."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Digital bandpass communication :",
+          "Digital bandpass communication system",
+          "Bandpass modulation techniques:",
+          "Amplitude shift keying",
+          "Phase shift keying",
+          "Frequency shift keying",
+          "Methods of generation and detection",
+          "Signal constellations",
+          "M-ary digital modulation schemes",
+          "Quadrature phase shift keying",
+          "Minimum shift keying",
+          "Quadrature amplitude modulation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the working of Amplitude modulator and demodulator circuits using mathematical relations.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the characteristics of various analog modulation schemes in terms of spectra, power and efficiency.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand the various processing blocks of a digital communication system.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply the knowledge of digital modulation in digital transmission.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Kennedy’s Electronic Communication Systems",
+        "author": "Kennedy, Davis and Prasanna",
+        "publisher": "Tata McGraw Hill",
+        "edition": "6th Edition, 2018"
+      },
+      {
+        "title": "Electronic Communication Systems – Fundamentals through Advanced",
+        "author": "Wayne Tomasi",
+        "publisher": "Pearson",
+        "edition": "5th edition, 2008"
+      },
+      {
+        "title": "Communication Systems",
+        "author": "Simon Haykin and Michael Mohre",
+        "publisher": "Wiley",
+        "edition": "5th Edition,2021"
+      },
+      {
+        "title": "Principles of Communication Systems",
+        "author": "Taub& Schilling",
+        "publisher": "McGraw-Hill",
+        "edition": "4th edition, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Principles of Communications",
+        "author": "Rodger E. Ziemer& William H. Tranter",
+        "publisher": "Wiley",
+        "edition": "7the edition, 2014"
+      },
+      {
+        "title": "Communication System Engineering",
+        "author": "J. G. Proakis and M. Salehi",
+        "publisher": "Pearson Education",
+        "edition": "2nd Edition, 2018."
+      },
+      {
+        "title": "Digital and Analog Communication Systems",
+        "author": "Leon W. Couch",
+        "publisher": "Prentice Hall",
+        "edition": "8th edition, 2012"
+      },
+      {
+        "title": "Modern Digital and Analog Communication Systems",
+        "author": "B. P. Lathi, Zhi Ding",
+        "publisher": "Oxford University Press",
+        "edition": "4th edition, 2011"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:39:48.904Z"
+}

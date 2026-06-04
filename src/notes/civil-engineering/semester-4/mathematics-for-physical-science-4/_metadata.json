@@ -1,0 +1,182 @@
+{
+  "subject": "MATHEMATICS FOR PHYSICAL SCIENCE –  4",
+  "branch": "Civil Engineering",
+  "semester": 4,
+  "details": {
+    "name": "MATHEMATICS FOR PHYSICAL SCIENCE –  4",
+    "courseCode": "GCMAT401",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Basic calculus.",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Random variables",
+          "Discrete random variables and their probability distributions",
+          "Cumulative distribution function",
+          "Expectation",
+          "Mean and variance",
+          "Binomial distribution",
+          "Poisson distribution",
+          "Poisson distribution as a limit of the binomial distribution",
+          "Joint pmf of two discrete random variables",
+          "Marginal pmf",
+          "Independent random variables",
+          "Expected value of a function of two discrete variables."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from sections 3.1 to 3.4, 3.6, 5.1, 5.2"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Continuous random variables and their probability distributions",
+          "Cumulative distribution function",
+          "Expectation",
+          "Mean and variance",
+          "Uniform, Normal and Exponential distributions",
+          "Joint pdf of two Continuous random variables",
+          "Marginal pdf",
+          "Independent random variables",
+          "Expectation value of a function of two continuous variables."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from sections 3.1, 4.1, 4.2, 4.3, 4.4, 5.1, 5.2"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Confidence Intervals",
+          "Confidence Level",
+          "Confidence Intervals and One-side confidence intervals for a Population Mean for large and small samples (normal distribution and t-distribution)",
+          "Hypotheses and Test Procedures",
+          "Type I and Type II error",
+          "z Tests for Hypotheses about a Population Mean (for large sample)",
+          "t Test for Hypotheses about a Population Mean (for small sample)",
+          "Tests concerning a population proportion for large and small samples."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from 7.1, 7.2, 7.3, 8.1, 8.2, 8.3, 8.4"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Newton-Raphson Method",
+          "Gauss Elimination Method",
+          "Gauss - Jordan Method",
+          "Numerical solution of ordinary differential equations-Euler’s method",
+          "Modified Euler’s method",
+          "Runge - Kutta method of 2nd Order",
+          "Numerical solution of Laplace equation –Jacobi’s Method",
+          "Curve Fitting by Method of Least Squares - Straight lines",
+          "Parabola."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 2: Relevant topics from sections 2.5, 4.2, 7.5, 8.4, 8.5, 9.4"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the concept, properties and important models of discrete random variables and to apply in suitable random phenomena.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Understand the concept, properties and important models of continuous random variables and to apply in suitable random phenomena.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Estimate population parameters, assess their certainty with confidence intervals, and test hypotheses about population means and proportions using z-tests and the one-sample t-test.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply numerical methods to find solutions of linear system of equations, ordinary differential equations and Laplace equations.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Probability and Statistics for Engineering and the Sciences",
+        "author": "Devore J. L",
+        "publisher": "Cengage Learning",
+        "edition": "9th edition, 2016"
+      },
+      {
+        "title": "Introductory Methods of Numerical Analysis",
+        "author": "S S Sastry",
+        "publisher": "PHI Learning Pvt Limited",
+        "edition": "5th edition, 2012"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Probability, Random Variables and Stochastic Processes",
+        "author": "Papoulis, A. & Pillai, S.U.",
+        "publisher": "McGraw Hill.",
+        "edition": "4th edition, 2002"
+      },
+      {
+        "title": "Introduction to Probability and Statistics for Engineers and Scientists",
+        "author": "Ross, S. M.",
+        "publisher": "Academic Press",
+        "edition": "6th edition, 2020"
+      },
+      {
+        "title": "Numerical methods for Engineers",
+        "author": "Steven C. Chapra, Raymond P. Canale",
+        "publisher": "McGraw Hill Education",
+        "edition": "8th edition, 2021"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/117/105/117105085/",
+      "module2": "https://archive.nptel.ac.in/courses/117/105/117105085/",
+      "module3": "https://archive.nptel.ac.in/courses/117/105/117105085/",
+      "module4": "https://archive.nptel.ac.in/courses/111/107/111107105/"
+    },
+    "semester": "4",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:45:51.566Z"
+}

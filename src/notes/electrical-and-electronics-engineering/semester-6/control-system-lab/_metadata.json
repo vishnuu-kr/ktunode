@@ -1,0 +1,267 @@
+{
+  "subject": "CONTROL SYSTEM LAB",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 6,
+  "details": {
+    "name": "CONTROL SYSTEM LAB",
+    "courseCode": "PCEEL607",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCEET302/PCEET601",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Transfer Function and State Space Modelling of Armature and Field Controlled DC Motor.",
+          "Objective: Obtain the transfer function and state space model of the armature and field-controlled DC motor by experiment."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Transfer function of A.C. Servo motor.",
+          "Objective: Obtain the transfer function of AC Servo motor by experiment."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Synchro Transmitter and Receiver for open loop position control.",
+          "Objective:",
+          "a) Plot the characteristics of synchro.",
+          "Error study of the synchro transmitter and receiver pair as a simple open loop position control in Direct mode and Differential mode."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Step response and frequency response of a second order system realised using passive components",
+          "Objective : Design a second order   (RLC network)  system to analyse the following:",
+          "a. The effect of damping factor (0<ξ <1, ξ = 1, ξ > 1) for a  step input .",
+          "b. Verification of the delay time, rise time, peak overshoot and settling time with the theoretical values for 0<ξ <1.",
+          "c. Effect of damping ratio on frequency response.",
+          "d. Verification of resonant peak,  resonant frequency and bandwidth for 0<ξ <1."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "Realisation of lead compensator.",
+          "Objective: Design, set up and analyse the gain and phase plots of a lead compensator by hardware experimentation using i) passive elements and ii) active components"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "Realisation of lag compensator.",
+          "Objective: Design, set up and analyse the gain and phase plots of a lag compensator by hardware experimentation using:",
+          "i) passive elements and ii) active components."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "Performance of a typical process control system",
+          "Objective: Study of performance characteristics and response analysis of a typical temperature/ Flow/ Level control system."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 8,
+        "topics": [
+          "System Identification and Modeling",
+          "Objective: Obtain the frequency response  and identify the transfer function of the given system(black box),"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 9,
+        "topics": [
+          "Step response and frequency response of a second order system using simulation",
+          "Objective:  To analyse the response of  the second order system (in experiment 1) using (MATLAB/SCILAB/similar softwares)",
+          "a. The effect of damping factor (0<ξ <1, ξ = 1, ξ > 1) for a  step input .",
+          "b. Comparison of the delay time, rise time, peak overshoot and settling time with the experimental values for 0<ξ <1.",
+          "c. The effect of damping ratio on frequency response.",
+          "d. Comparison of resonant peak, resonant frequency and bandwidth with the experimental values for 0<ξ <1."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 10,
+        "topics": [
+          "Performance Analysis using Root-Locus and  frequency Response Methods in MATLAB/SCILAB/similar softwares.",
+          "Objective:",
+          "1. Plot the i) root locus ii) Bode plot and iii) Nyquist plot and iv) Nichols chart for the given transfer functions and analyse the following:",
+          "Root Locus:",
+          "a. Determine the critical gain, frequency of oscillation at critical gain.",
+          "b. The effect of gain, K on the stability.",
+          "c. Determine the gain corresponding to a given damping ratio and obtain  the step response of the system for the corresponding gain.",
+          "d. The effect of the addition of poles and zeros on the given system.",
+          "Frequency response:",
+          "e.Determination of Gain Margin and Phase Margin (stable and unstable, minimum/non-minimum phase system)",
+          "f. The effect of controller gain K on the stability margin",
+          "g. The effect of the addition of poles and zeros on the given system (especially the poles at origin).",
+          "h. Determine the stability of a given minimum and non-minimum phase system using Nyquist stability criterion.",
+          "i. Determine the bandwidth of a given system from open loop frequency response using Nichols chart."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 11,
+        "topics": [
+          "Design of lag, lead and lag-lead compensator using root locus.",
+          "Objective: Design a suitable compensator for the given system to satisfy the given time domain specifications using MATLAB/SCILAB/ similar software."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 12,
+        "topics": [
+          "Design of lag, lead and lag-lead  compensator using frequency response.",
+          "Objective: Design a suitable compensator for the given system to satisfy the given frequency domain specifications using MATLAB/SCILAB/ similar software."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 13,
+        "topics": [
+          "State Space Model, Analysis and Controller Design",
+          "Objective: Analyse the given system (eg.  DC Servo motor modelled in experiment no.1  for speed control) in state space and design a controller by pole-placement technique using MATLAB/SCILAB/ similar software.",
+          "a. Determine the open loop stability, controllability and observability",
+          "b. Design a state-feedback controller by pole-placement technique for a given specification."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 14,
+        "topics": [
+          "PID Controller Design",
+          "Objective: Design a PID controller for the given system (eg. DC Servo motor modelled in experiment no. 1 for position control) using SIMULINK/ MATLAB based tool boxes.",
+          "a. Design of  P, PI, PD, PID controller using the Ziegler-Nichols method.",
+          "b. Design of a suitable controller (P/PI/PD/PID) to meet the desired specifications using root locus/frequency response."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 0,
+        "internalExam2": 20,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/Preparatory work/Design/Algorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/Execution of work/troubleshooting/Programming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify and conduct suitable experiments to determine the parameters to model a physical system.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Conduct suitable experiments and determine the performance specifications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse a linear continuous time system model using simulation tools.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Design suitable controllers/compensators to meet the performance requirements using simulation tools.",
+        "knowledgeLevel": "K5"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Modern Control Engineering",
+        "author": "Katsuhiko Ogata",
+        "publisher": "Pearson",
+        "edition": "5th edition, 2009"
+      },
+      {
+        "title": "Control Systems Engineering",
+        "author": "Norman S. Nise",
+        "publisher": "Wiley",
+        "edition": "5th edition, 2009"
+      },
+      {
+        "title": "Control Systems Engineering",
+        "author": "I. J. Nagrath, M. Gopal",
+        "publisher": "New Age",
+        "edition": "5th edition, 2009"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Automatic Control Systems",
+        "author": "Kuo B. C.",
+        "publisher": "Prentice Hall of India",
+        "edition": ""
+      },
+      {
+        "title": "Control Systems Principles and Design",
+        "author": "Gopal M.",
+        "publisher": "Tata McGraw Hill.",
+        "edition": ""
+      },
+      {
+        "title": "Modern Control Systems",
+        "author": "Dorf R. C., Bishop R. H",
+        "publisher": "Pearson Education India",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:25:00.571Z"
+}

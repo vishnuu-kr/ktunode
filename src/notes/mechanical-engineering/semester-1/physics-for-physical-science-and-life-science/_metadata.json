@@ -1,0 +1,219 @@
+{
+  "subject": "PHYSICS FOR PHYSICAL SCIENCE AND LIFE SCIENCE",
+  "branch": "Mechanical Engineering",
+  "semester": 1,
+  "details": {
+    "name": "PHYSICS FOR PHYSICAL SCIENCE AND LIFE SCIENCE",
+    "courseCode": "GZPHT121",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory + Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 2,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Laser & Fiber Optics",
+          "Optical processes – Absorption-Spontaneous emission and stimulated emission",
+          "Principle of laser - conditions for sustained lasing – Population inversion- Pumping- Metastable states",
+          "Basic components of laser - Active medium - Optical resonant cavity",
+          "Construction and working of Ruby laser and CO2 laser",
+          "Construction and working Semiconductor laser (qualitative)",
+          "Properties of laser",
+          "Applications of laser",
+          "Optic fiber-Principle of propagation of light",
+          "Types of fibers-Step index and Graded index fibers - Multimode and single mode fibers",
+          "Acceptance angle",
+          "Numerical aperture –Derivation",
+          "Applications of optical fibers - Fiber optic communication system (block diagram)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Interference and Diffraction",
+          "Introduction",
+          "Principle of super position",
+          "Constructive and destructive interference",
+          "Optical path",
+          "Phase difference and path difference",
+          "Cosine law- reflected system- Condition for constructive and destructive interference",
+          "Colours in thin films",
+          "Newton’s Rings-Determination of refractive index of transparent liquids and wavelength",
+          "Air wedge- Measurement of thickness of thin sheets",
+          "Diffraction-types of diffraction",
+          "Diffraction due to a single slit",
+          "Diffraction  grating – Construction - grating equation",
+          "Dispersive and Resolving Power (qualitative)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Quantum Mechanics",
+          "Introduction",
+          "Concept of uncertainty and conjugate observables (qualitative)",
+          "Uncertainty principle (statement only)",
+          "Application of uncertainty principle- Absence of electron inside nucleus - Natural line broadening",
+          "Wave function – properties - physical interpretation",
+          "Formulation of time dependent and time independent Schrodinger equations",
+          "Particle in a one- dimensional box - Derivation of energy eigen values and normalized wave function",
+          "Quantum Mechanical Tunnelling  (qualitative)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Waves & Acoustics",
+          "Waves- transverse and longitudinal waves",
+          "Concept of frequency",
+          "wavelength and time period (no derivation)",
+          "Transverse vibrations in a stretched string- derivation of velocity and frequency - laws of transverse vibration",
+          "Acoustics- Reverberation and echo",
+          "Reverberation time and its significance - Sabine’s Formula",
+          "Factors affecting acoustics of a building",
+          "Ultrasonics- Piezoelectric oscillator",
+          "Ultrasonic diffractometer",
+          "SONAR, NDT-Pulse echo method",
+          "medical application- Ultrasound scanning (qualitative)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 10,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.  (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the basic principles and properties of laser and optic fibers.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe the phenomena of interference and diffraction of light.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the behaviour of matter in the atomic and subatomic level  through the principles of quantum mechanics.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply the knowledge of waves and acoustics in non-destructive\ntesting and in acoustic design of buildings.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply basic knowledge of principles and theories in physics to  conduct experiments.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "A Textbook of Engineering Physics",
+        "author": "M N Avadhanulu, P G Kshirsagar & TVS Arun  Murthy",
+        "publisher": "S Chand & Co.",
+        "edition": "2nd Edition, \n2019"
+      },
+      {
+        "title": "Engineering Physics",
+        "author": "H K Malik , A.K. Singh, McGraw Hill",
+        "publisher": "Education",
+        "edition": "2nd \nEdition, 2017"
+      },
+      {
+        "title": "Optics",
+        "author": "Ajoy Ghatak",
+        "publisher": "Mc Graw Hill Education",
+        "edition": "6th Edition, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Engineering Physics",
+        "author": "G Vijayakumari",
+        "publisher": "Vikas Publications",
+        "edition": "8th Edition, 2014"
+      },
+      {
+        "title": "Concepts of Modern Physics",
+        "author": "Arthur Beiser",
+        "publisher": "Tata McGraw Hill \nPublications",
+        "edition": "6th Edition \n2003"
+      },
+      {
+        "title": "Engineering Physics",
+        "author": "Aruldhas G.",
+        "publisher": "PHI Pvt. Ltd",
+        "edition": "2nd Edition, 2015"
+      },
+      {
+        "title": "Fiber Optic Communications",
+        "author": "Gerd Keiser",
+        "publisher": "Springer",
+        "edition": "2021"
+      },
+      {
+        "title": "A Text Book of Engineering \nphysics",
+        "author": "I. Dominic, A. Nahari",
+        "publisher": "OWL Publications",
+        "edition": "2nd Edition, 2016"
+      },
+      {
+        "title": "Advanced  Engineering  Physics",
+        "author": "Premlet B",
+        "publisher": "Phasor Books",
+        "edition": ""
+      },
+      {
+        "title": "Engineering Physics",
+        "author": "Rakesh Dogra",
+        "publisher": "Katson Books",
+        "edition": "1st Edition, 2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/115102124\nhttps://nptel.ac.in/courses/104104085",
+      "module2": "https://nptel.ac.in/courses/115105537",
+      "module3": "https://nptel.ac.in/courses/115102023\nhttps://nptel.ac.in/courses/115101107",
+      "module4": "https://nptel.ac.in/courses/112104212\nhttps://nptel.ac.in/courses/124105004"
+    },
+    "semester": "1",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:39:42.405Z"
+}

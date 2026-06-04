@@ -1,0 +1,162 @@
+{
+  "subject": "FOUNDATIONS OF CRYPTOGRAPHY",
+  "branch": "Computer Science and Engineering",
+  "semester": 6,
+  "details": {
+    "name": "FOUNDATIONS OF CRYPTOGRAPHY",
+    "courseCode": "OECST613",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Integer Arithmetic – Divisibility",
+          "Greatest Common Divisor Euclid’s and Extended Euclid’s Algorithm for GCD",
+          "Modular Arithmetic – Operations, Properties",
+          "Polynomial Arithmetic",
+          "Algebraic Structures – Group Ring Field"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Prime numbers and Prime Factorisation - Primitive Roots",
+          "Existence of Primitive Roots for Primes",
+          "Fermat’s Theorem",
+          "Primality Testing",
+          "Euler’s Theorem",
+          "Euler’s Totient Function",
+          "Discrete Logarithms",
+          "Modular Arithmetic",
+          "Chinese Remainder Theorem"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Principles of security - Types of Security attacks",
+          "Security services",
+          "Security Mechanisms",
+          "Cryptography - Introduction",
+          "cryptographic notations",
+          "substitution techniques",
+          "Transposition Techniques",
+          "limitations of classical cryptography"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Symmetric key Ciphers - Block Cipher principles & Algorithms- DES, AES",
+          "Differential and Linear Cryptanalysis",
+          "Asymmetric Key Ciphers- RSA, ECC",
+          "Hash Functions - MD5, SHA-1"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the integer arithmetic operations including divisibility and GCD algorithms, modular arithmetic operations and properties, polynomial arithmetic, and algebraic structures such as groups, rings, and fields.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe the number theory concepts essential for cryptographic applications and mathematical problem-solving.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the security principles, types of attacks, and protective measures, alongside a thorough understanding of cryptographic techniques and their applications in securing data.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Discuss  symmetric and asymmetric key cryptography, including block cipher principles, algorithms, public key cryptosystems, and hash functions",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Cryptography & Network Security",
+        "author": "Behrouz A. Forouzan",
+        "publisher": "McGraw Hill",
+        "edition": "3/e, 2007"
+      },
+      {
+        "title": "Security in Computing",
+        "author": "Charles P. Pfleeger, Shari L. Pfleeger, Jonathan Margulies",
+        "publisher": "Prentice Hall",
+        "edition": "5/e,  2015"
+      },
+      {
+        "title": "Introduction to Cryptography: Principles and Applications",
+        "author": "H. Delfs,  H. Knebl",
+        "publisher": "Springer",
+        "edition": "1/e, 2002"
+      },
+      {
+        "title": "A Classical Introduction to Cryptography: Applications for Communications Security",
+        "author": "Serge Vaudenay",
+        "publisher": "Springer",
+        "edition": "1/e, 2009"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Cryptography and Network Security",
+        "author": "William Stallings",
+        "publisher": "Pearson Education",
+        "edition": "7/e,2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/111/101/111101137/",
+      "module2": "https://nptel/courses/video/106105031/L17.html",
+      "module3": "https://onlinecourses.nptel.ac.in/noc22_cs90/preview",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:53:26.907Z"
+}

@@ -1,0 +1,165 @@
+{
+  "subject": "OPTICAL COMMUNICATION",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 7,
+  "details": {
+    "name": "OPTICAL COMMUNICATION",
+    "courseCode": "OEECT721",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PHYSICS",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Optical fiber Communications: Structure of Optical fiber , materials, General block diagram of optical communication system, Advantages.",
+          "Optical fiber waveguides:  Principle of light guidance, Numerical Aperture, V number,  Step and Graded index fibers, Single and Multi mode fibers.",
+          "Transmission Characteristics: Attenuation, Absorption losses, Linear and Non linear scattering losses, bend losses.",
+          "Dispersion- Intermodal dispersion, Chromatic dispersion, Dispersion modified fibers, Photonic crystal fibers, Polarization mode dispersion, Nonlinear effects, Solitons."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Optical fibers and Cables  – Fabrication Techniques- Double crucible method,  Outside Vapour phase oxidation, Modified Chemical Vapour Deposition.",
+          "Optical Fiber Cables- Single and Multi fiber cables.",
+          "Optical Fiber Connections: splices, connectors & couplers.",
+          "Optical  Fiber Measurements:- Attenuation and dispersion measurements , MZ interferometer,  Optical Time Domain Reflectometer – Applications"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Optical sources: LEDs and LDs, general structures, characteristics , modulators using LEDs and LDs. coupling with fibres,",
+          "Optical detectors:  Quantum efficiency and Responsivity, Structure and working of PIN and APD",
+          "Optical Receivers: - Direct detection- noise in detectors, SNR, BER analysis",
+          "Coherent detection principles.",
+          "Optical Amplifiers: EDFA - Principle, structure and working, Raman amplifiers"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Multiplexing Strategies: OTDM, SCM, OFDM, WDM and Optical CDMA: concepts, components - couplers, splitters, Add/ Drop multiplexers, Fiber grating filters, tunable filters.",
+          "Optical networks  – General description of SONET/SDH",
+          "Free space optics: Principle of LiFi technology. Visible Light Communication",
+          "Other applications of optical fibers : Entertainment, Sensors – Types & principles"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.  \n● Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.  \n● Two questions will be given from each module, out of which 1 question should be answered.  \n● Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the structure, fabrication, principle of operation and classifications of optical fibers",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe the transmission characteristics and evaluate losses in optical fiber",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the working of sources, detectors and optical amplifiers used in optical communication system",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Describe the concepts of  Multiplexing, Optical Networks and Free Space Communication",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Optical Fiber Communications",
+        "author": "Gerd Keiser",
+        "publisher": "McGraw Hill",
+        "edition": "5th/e, 2021"
+      },
+      {
+        "title": "Optical Fiber Communication: Principles and Practice",
+        "author": "John M Senior",
+        "publisher": "Pearson Education",
+        "edition": "3rd/e, 2014"
+      },
+      {
+        "title": "Fibre Optic Communications",
+        "author": "Joseph C. Palais",
+        "publisher": "Pearson  Education",
+        "edition": "5th/e, 2013"
+      },
+      {
+        "title": "Fibre optic Communication: Systems and Components",
+        "author": "Mishra and Ugale,",
+        "publisher": "Wiley",
+        "edition": "2019"
+      },
+      {
+        "title": "Fibre Optic Communications Systems",
+        "author": "G P Agrawal",
+        "publisher": "WILEY",
+        "edition": "4th Ed"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Fibre Optic Communication: Optical Waveguides, Devices and Applications",
+        "author": "Sanjeev Kumar Raghuwanshi",
+        "publisher": "University Press",
+        "edition": "2015"
+      },
+      {
+        "title": "Optical Communication",
+        "author": "M Mukunda Rao",
+        "publisher": "University Press",
+        "edition": "2000"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://www.youtube.com/watch?v=ougKUUM3hJA",
+      "module2": "https://www.digimat.in/nptel/courses/video/117104127/L01.html",
+      "module3": "https://www.youtube.com/watch?v=seHmi6AMWy4",
+      "module4": "https://www.youtube.com/watch?v=4W7hieXDAmc"
+    },
+    "semester": "7",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:08:17.035Z"
+}

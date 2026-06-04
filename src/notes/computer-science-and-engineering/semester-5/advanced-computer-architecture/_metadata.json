@@ -1,0 +1,180 @@
+{
+  "subject": "ADVANCED COMPUTER ARCHITECTURE",
+  "branch": "Computer Science and Engineering",
+  "semester": 5,
+  "details": {
+    "name": "ADVANCED COMPUTER ARCHITECTURE",
+    "courseCode": "PECST528",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PBCST404",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction – The impact of hardware and software technology trends Self review – Instruction set Architecture",
+          "Memory addressing",
+          "addressing modes Class of Computers",
+          "Concept of Computer Hardware and Organization (P15, 5th Edition) Measuring",
+          "Reporting and Summarizing Performance",
+          "Benchmarks – Desktop and Server Amdahl’s Law",
+          "Processor Performance Equation"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Review the basic Concepts of Parallel Processing and Pipelining Instruction Level Parallelism",
+          "data dependencies and hazards Different types of dependences",
+          "Compiler Techniques for ILP",
+          "Branch Prediction – Correlating branch predictor Dynamic Scheduling – Idea",
+          "Introduction to Tomasulo’s scheme.",
+          "Register Renaming Hardware Speculation",
+          "Reorder Buffers Multiple issue and static scheduling",
+          "VLIW"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Data Level Parallelism.",
+          "Vector Processors – How do they work",
+          "Memory Banks",
+          "Stride",
+          "Scatter Gather.",
+          "SIMD-comparison with vector GPU",
+          "Comparison of loops in C vs CUDA NVIDIA GPU Memory structure Vector Processor vs GPU",
+          "Multimedia SIMD computers vs GPU Multiprocessor Architecture",
+          "Centralized shared memory architecture Cache coherence and snooping protocol (Implementation details – not required).",
+          "Performance of Symmetric Shared-Memory Processors.",
+          "Distributed Shared Memory and Directory based protocol – basics.",
+          "Synchronization – Basic Hardware Primtives.",
+          "Memory Consistency Models – Sequential and relaxed"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Warehouse Scale Computers – Goals and requirements.",
+          "Programming frameworks for Batch processing – Map reduce and Hadoop Computer Architecture of Warehouse-scale computers Moore’s Law",
+          "Dennard Scaling",
+          "Dark Silicon and the transition towards Heterogeneous Architectures Asymmetric multi-core architecture – Static and Dynamic (Overall idea, example processors)",
+          "Functional Heterogeneous Multicore architecture – GPUs, Accelerators, Reconfigurable Computing Beyond the textbook – Identify the processor used in your PC and mobile phone.",
+          "Study about its architecture, is it homogeneous or heterogeneous, does it use GPUs, what information can you gather about it from the manufacturer’s website – Discuss in the class"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.  \n● Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.  \n● Two questions will be given from each module, out of which 1 question should be answered.  \n● Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Enumerate the different classes of computers and where they are used in everyday life.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Compute the effect of hardware/software enhancements on the speedup of a processor using Amdahl’s law.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Interpret possible dependencies that can cause hazards in a given block of code.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Summarize different strategies followed to ensure Instruction Level Parallelism.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Compare different strategies followed to ensure Instruction Level Parallelism and different strategies followed to ensure Data Parallelism.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO6",
+        "description": "Illustrate the need for memory consistency models and cache coherence protocols and explain the principle behind it.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Computer architecture: A Quantitative Approach.",
+        "author": "Hennessy, J. and Patterson, D",
+        "publisher": "Morgan Kaufman",
+        "edition": "5/e, 2012"
+      },
+      {
+        "title": "The Dark Side of Silicon: Energy Efficient Computing in the Dark Silicon Era",
+        "author": "Kanduri, Anil, et al.",
+        "publisher": "Springer",
+        "edition": "1/e, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Computer Architecture",
+        "author": "Gérard Blanchet Bertrand Dupouy",
+        "publisher": "Wiley",
+        "edition": "1/e, 2013"
+      },
+      {
+        "title": "Advanced Computer Architectures",
+        "author": "Sajjan C Shiva",
+        "publisher": "Taylor & Fancis",
+        "edition": "1/e, 2018"
+      },
+      {
+        "title": "Computer Architecture",
+        "author": "Charles Fox",
+        "publisher": "no starch press",
+        "edition": "1/e, 2024"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/103/106103206/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:42:22.673Z"
+}

@@ -1,0 +1,194 @@
+{
+  "subject": "ANALOG ELECTRONICS CIRCUITS",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 2,
+  "details": {
+    "name": "ANALOG ELECTRONICS CIRCUITS",
+    "courseCode": "PCEOT205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Review of Diodes  – Diode circuits – Wave shaping circuits – Rectifiers -",
+          "Clippers – clampers, Zener diodes – Zener voltage regulators",
+          "Introduction to BJT  – BJT Operation- BJT Terminal Voltages and transistor currents – BJT voltage and current amplification – BJT Switching",
+          "BJT Biasing  – DC load line and Bias Point- Biasing circuits - fixed bias",
+          "voltage divider bias, role of emitter resistance in bias stabilization",
+          "Stability factor (derivation of stability factors for voltage divider biasing only) - Numerical problems"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Introduction to Amplifiers  – BJT amplifier configurations – -Amplifier classifications",
+          "RC Coupled Amplifier  – AC load line concepts – Small signal low frequency ac equivalent circuit of CE amplifier –Role of coupling capacitors and emitter bypass capacitor",
+          "Calculation of amplifier gains and impedances using h parameter equivalent circuit",
+          "Introduction to FET  - JFET common drain amplifier-Analysis of common drain amplifier using voltage divider biasing",
+          "Multistage amplifiers : Direct, RC, transformer coupled amplifiers",
+          "Feedback in amplifiers  – Feedback topologies - Effect of positive and negative feedbacks",
+          "Oscillators : Barkhausen’s criterion– RC oscillators (RC Phase shift  oscillator and Wein Bridge oscillator) –LC oscillators (Hartley and Colpitt’s) – Expression of frequency of oscillations- Crystal oscillator"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Operational Amplifiers : Block diagram of Op-Amp",
+          "Properties of ideal and practical Op-amps - Gain, CMRR and Slew rate",
+          "Open loop and Closed loop Configurations - concept of virtual ground -",
+          "Negative feedback in Op-amps",
+          "Inverting and non- inverting amplifier circuits",
+          "Summing and difference amplifiers, Instrumentation amplifier"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "OP-AMP Circuits : Differentiator and Integrator circuits-practical circuits",
+          "Comparators: Zero crossing and voltage level detectors, Schmitt trigger",
+          "Wave form generation using Op-Amps: Square, triangular and ramp generator circuits using Op-Amp- Effect of slew rate on waveform generation",
+          "Timer 555 IC : Internal diagram of 555IC–Astable and Monostable multi-vibrators using 555 IC"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  \nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  \nTwo questions will be given from each module, out of which 1 question should be answered.  \nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Design of diode circuits",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Model BJT and FET amplifier circuits.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Design amplifier and oscillator circuits using BJT",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the basic concepts of Operational amplifier (OPAMP)",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Design and develop various OPAMP application circuits.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Electronic Devices and Circuits",
+        "author": "David A Bell",
+        "publisher": "Oxford Higher Education",
+        "edition": ""
+      },
+      {
+        "title": "Fundamentals of Analog Circuits",
+        "author": "Floyd T.L.",
+        "publisher": "Pearson Education",
+        "edition": "3"
+      },
+      {
+        "title": "Electronic Devices and Circuit Theory",
+        "author": "Boylestad R. L. and L. Nashelsky",
+        "publisher": "Pearson Education India",
+        "edition": ""
+      },
+      {
+        "title": "Linear Integrated Circuits",
+        "author": "Choudhury R.",
+        "publisher": "New Age International Publishers",
+        "edition": ""
+      },
+      {
+        "title": "Op-Amps and Linear Integrated Circuits",
+        "author": "Gayakwad R. A.",
+        "publisher": "PHI Learning Pvt. Ltd.",
+        "edition": ""
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Electronic Devices and Circuits",
+        "author": "David A Bell",
+        "publisher": "Oxford Higher Education",
+        "edition": ""
+      },
+      {
+        "title": "Fundamentals of Analog Circuits",
+        "author": "Floyd T.L.",
+        "publisher": "Pearson Education",
+        "edition": "3"
+      },
+      {
+        "title": "Electronic Devices and Circuit Theory",
+        "author": "Boylestad R. L. and L. Nashelsky",
+        "publisher": "Pearson Education India",
+        "edition": ""
+      },
+      {
+        "title": "Linear Integrated Circuits",
+        "author": "Choudhury R.",
+        "publisher": "New Age International Publishers",
+        "edition": ""
+      },
+      {
+        "title": "Op-Amps and Linear Integrated Circuits",
+        "author": "Gayakwad R. A.",
+        "publisher": "PHI Learning Pvt. Ltd.",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "2",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:04:15.871Z"
+}

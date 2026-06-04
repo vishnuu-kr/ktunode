@@ -1,0 +1,196 @@
+{
+  "subject": "ANALOG AND DIGITAL COMMUNICATION",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 5,
+  "details": {
+    "name": "ANALOG AND DIGITAL COMMUNICATION",
+    "courseCode": "PCECT502",
+    "credits": 4,
+    "examHours": "2Hrs. 30 Min.",
+    "prerequisites": "PCECT402 Signals and Systems\nGBMAT401 Probability, Random Process and Numerical Methods",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Block diagram of a communication system.",
+          "Need for modulation.",
+          "Amplitude modulation, Equation and spectrum of AM signal, DSB-SC, SSB -pilot carrier and Vestigial sideband systems.",
+          "Angle modulation: Narrow and wide band FM and their spectra, relationship between FM and PM, Carson’s rule, pre-emphasis and de-emphasis filtering.",
+          "Comparison of AM and FM, Block diagram of FM receiver.",
+          "Superheterodyne receivers- Characteristics of receivers –image frequency.",
+          "Noise: external, internal,  White noise."
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Sampling and Quantization",
+          "SQNR for uniform quantization",
+          "Companding",
+          "Pulse code modulation",
+          "Transmitter and receiver.",
+          "DPCM transmitter and receiver.",
+          "Delta modulation",
+          "Slope overload",
+          "Line codes."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Baseband data transmission of digital data through AWGN channel",
+          "Mathematical model of ISI",
+          "Nyquist criterion for zero ISI",
+          "Signal modelling for ISI",
+          "Raised cosine spectrum",
+          "Equalization",
+          "Zero forcing Equaliser.",
+          "Geometric representation of Signals-Gram-Schmitt procedure",
+          "Signal space.",
+          "Vector model of AWGN channel.",
+          "Matched filter and correlation receivers",
+          "MAP receiver",
+          "Maximum likelihood receiver."
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Digital band pass modulation schemes-BPSK system and signal constellation.",
+          "BPSK transmitter and receiver.",
+          "QPSK system and Signal constellations.",
+          "BER analysis of BPSK and QPSK in erfc.",
+          "Plots of BER Vs SNR.",
+          "QPSK transmitter and receiver.",
+          "Quadrature amplitude modulation and signal constellation."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.  \n● Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.  \n● Two questions will be given from each module, out of which 1 question should be answered.  \n● Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Illustrate the principles of analog communication systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the basic concepts of digital communication",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse the baseband transmission of digital data through AWGN channel",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply various digital modulation techniques in the design of digital communication systems",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Communication Systems",
+        "author": "Simon Haykin and Michael Moher",
+        "publisher": "Wiley",
+        "edition": "5th Edition, 2020"
+      },
+      {
+        "title": "Modern Digital and Analog Communication Systems",
+        "author": "B.P. Lathi and Zhi Ding",
+        "publisher": "Oxford University Press",
+        "edition": "5th Edition, 2018"
+      },
+      {
+        "title": "Introduction to Analog and Digital Communication, An Indian adaptation",
+        "author": "Simon Haykin and Michael Moher",
+        "publisher": "Wiley",
+        "edition": "2nd Edition, 2022"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Principles of Communication Systems",
+        "author": "Herbert Taub and Donald L. Schilling",
+        "publisher": "McGraw-Hill Education",
+        "edition": "4th Edition, 2013"
+      },
+      {
+        "title": "Digital Communications",
+        "author": "John G. Proakis and Masoud Salehi",
+        "publisher": "McGraw-Hill Education",
+        "edition": "6th Edition, 2020"
+      },
+      {
+        "title": "Communication Systems Engineering",
+        "author": "John G. Proakis and Masoud Salehi",
+        "publisher": "Pearson",
+        "edition": "2nd Edition, 2001"
+      },
+      {
+        "title": "Digital Communications Systems, An Indian Adaptation",
+        "author": "Simon Haykin",
+        "publisher": "John Wiley& Sons",
+        "edition": "4th Edition, 2021"
+      },
+      {
+        "title": "Electronic communication systems",
+        "author": "George Kennedy",
+        "publisher": "McGraw Hill",
+        "edition": "6th Edition, 2017"
+      },
+      {
+        "title": "Introduction to Digital Communications",
+        "author": "Wayne Stark",
+        "publisher": "Cambridge University Press",
+        "edition": "1st edition 2023"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://youtu.be/hTAlcrqjNps?si=okoRHdUegx9pbOz3",
+      "module2": "https://youtu.be/s_vmLqT_6NQ?si=MF2OW6AaICiYKTfj",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:52:42.578Z"
+}

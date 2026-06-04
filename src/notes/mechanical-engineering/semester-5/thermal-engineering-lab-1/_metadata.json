@@ -1,0 +1,267 @@
+{
+  "subject": "THERMAL ENGINEERING LAB-1",
+  "branch": "Mechanical Engineering",
+  "semester": 5,
+  "details": {
+    "name": "THERMAL ENGINEERING LAB-1",
+    "courseCode": "PCMEL507",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCMET403 Engineering Thermodynamics",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Determination of viscosity of lubricating oils and fuels and its variation with Temperature"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Determination of flash and fire points of petroleum fuels and oils"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Determination of calorific value of solid and liquid fuels- Bomb Calorimeter"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Determination of calorific value of gaseous fuels –Gas Calorimeter"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "Calibration of Thermocouples"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "Determination of LMTD and effectiveness of parallel flow, Counter flow and cross flow heat exchangers"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "Performance studies on a shell and tube heat exchanger"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 8,
+        "topics": [
+          "Development of heat transfer correlation for heat exchangers/condenser using modified Wilson Plot Method"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 9,
+        "topics": [
+          "Determination of heat transfer coefficients in free convection"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 10,
+        "topics": [
+          "Determination of heat transfer coefficients in forced convection"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 11,
+        "topics": [
+          "Determination of thermal conductivity of solids (composite wall/metal rod)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 12,
+        "topics": [
+          "Determination of thermal conductivity of powder"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 13,
+        "topics": [
+          "Determination of thermal conductivity of liquids"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 14,
+        "topics": [
+          "Measurement of unsteady state conduction heat transfer"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 15,
+        "topics": [
+          "Determination of emissivity of a specimen"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 16,
+        "topics": [
+          "Determination of Stefan Boltzman constant"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 17,
+        "topics": [
+          "Measurement of solar radiation"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 18,
+        "topics": [
+          "Experimental study of dropwise and filmwise condensation"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 19,
+        "topics": [
+          "Experiments on boiling heat transfer"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 20,
+        "topics": [
+          "Performance study on heat pipe"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 20,
+        "internalExam2": 0,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/ \nPreparatory \nwork/Design/ \nAlgorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/ \nExecution of work/ \ntroubleshooting/ \nProgramming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Measure thermo-physical properties of solid, liquid and gaseous fuels",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO2",
+        "description": "Evaluate thermal properties of materials in conduction, convection and radiation",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse the performance of heat exchangers and heat pipes",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Measure solar radiation",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [],
+    "referenceBooks": [
+      {
+        "title": "Heat Transfer a Practical Approach",
+        "author": "Yunus A. Cengel",
+        "publisher": "Tata McGraw-Hill Education",
+        "edition": "4th Edition, 2012."
+      },
+      {
+        "title": "Fundamentals of Engineering, Heat and Mass Transfer",
+        "author": "R. C. Sachdeva",
+        "publisher": "New Age publication",
+        "edition": "3 rd Edition, 2012."
+      },
+      {
+        "title": "Heat transfer",
+        "author": "Holman J.P",
+        "publisher": "Mc Graw-Hill",
+        "edition": "10th. Ed., 2009"
+      },
+      {
+        "title": "Heat and Mass Transfer",
+        "author": "Frank P. Incropera and David P. Dewitt",
+        "publisher": "John Wiley and sons",
+        "edition": "2011"
+      },
+      {
+        "title": "Fundamentals of Heat and Mass Transfer",
+        "author": "Kothandaraman C.P",
+        "publisher": "New Age International, New Delhi.",
+        "edition": "2006"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:02:08.916Z"
+}

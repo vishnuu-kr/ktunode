@@ -1,0 +1,179 @@
+{
+  "subject": "COMPUTER NETWORKS",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 6,
+  "details": {
+    "name": "COMPUTER NETWORKS",
+    "courseCode": "OEECT 612",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Computer Networks",
+          "Components of computer networks.",
+          "Transmission modes - serial and parallel transmission, asynchronous, synchronous, simplex, half duplex, full duplex communication.",
+          "Switching: circuit switching and packet switching.",
+          "Networks: Network criteria, physical structures, network models, categories of networks, Interconnection of Networks.",
+          "Delay and loss in packet-switched networks",
+          "Types of delay",
+          "Packet loss.",
+          "Layered Architecture: OSI model"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "TCP/IP protocol suite: Introduction",
+          "Application Layer: Communication between processes",
+          "Web application: HTTP, Message format",
+          "Email application: SMTP, Message format, MIME, POP3",
+          "Domain Name System (DNS).",
+          "Transport Layer connectionless and connection-oriented protocols.",
+          "UDP- Protocols for reliable data transfer: ARQ protocols, stop-and-wait protocol, alternating-bit protocol, Go-back- N",
+          "Selective Repeat.",
+          "TCP  Connection, segment structure, RTT estimate, Flow control.",
+          "Congestion Control General approaches.",
+          "TCP congestion control."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Network Layer: Datagram versus virtual-circuit network service",
+          "Router architecture",
+          "Routing and Forwarding",
+          "Static routing and Dynamic routing.",
+          "Address Resolution protocols (ARP, RARP)",
+          "Subnetting, Classless Routing(CIDR), ICMP.",
+          "IPv4: Datagram format, Fragmentation and reassembly, addressing, address assignment – manual and DHCP.",
+          "IPv6- Datagram format, Transitioning from IPv4 to IPv6, IP security.",
+          "Routing Algorithms Link-State (Dijkstra’s) Algorithm, Distance vector algorithm.",
+          "Routing in Internet – RIP, OSPF, BGP."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Link Layer Services of link layer",
+          "Error detection and correction – checksum, CRC.",
+          "Multiple access protocols – Channel partitioning, random access.",
+          "ALOHA – pure and slotted, efficiency, CSMA, CSMA/CA, CSMA/CD.",
+          "Link layer addressing: MAC address, Ethernet.",
+          "Wireless Networks IEEE 802.11 wireless LAN.",
+          "Physical Layer : Guided and unguided transmission media (Co-axial cable, UTP,STP, Fiber optic cable)"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Summarize the principles and components of computer networks, switching, basic concepts of delay analysis and the layered network architecture.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Demonstrate  protocols and the functions of  different layers.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse the concept of routing and addressing protocols in the context of computer networking.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Make use of different physical communication standards in computer networks.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Computer Networking: A Top-Down Approach Featuring the Internet.",
+        "author": "James F. Kurose, Keith W. Ross,",
+        "publisher": "Pearson",
+        "edition": "Sixth Edition, 2017"
+      },
+      {
+        "title": "Data Communications and Networking",
+        "author": "Behrouz A Forouzan",
+        "publisher": "Tata McGraw-Hill",
+        "edition": "Fourth Edition , 2008"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Computer Networks – A Systems Approach,",
+        "author": "Larry L. Peterson, Bruce S. Davie,",
+        "publisher": "Morgan Kauffman",
+        "edition": ""
+      },
+      {
+        "title": "Communication Networking – An Analytical Approach,",
+        "author": "A. Kumar, D. Manjunath, J. Kuri,",
+        "publisher": "Morgan Kauffman Series",
+        "edition": ""
+      },
+      {
+        "title": "Computer Networks",
+        "author": "A. S. Tanenbaum, D. J. Wetherall",
+        "publisher": "Pearson",
+        "edition": ""
+      },
+      {
+        "title": "Data Networks",
+        "author": "D. Bertsekas, RG Gallager",
+        "publisher": "Prentice Hall",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc22_cs19/preview",
+      "module2": "https://archive.nptel.ac.in/courses/106/105/106105183/",
+      "module3": "https://onlinecourses.swayam2.ac.in/cec21_cs04/preview",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:59:49.273Z"
+}

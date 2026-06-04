@@ -1,0 +1,201 @@
+{
+  "subject": "INSTRUMENTATION AND CONTROL SYSTEMS",
+  "branch": "Mechanical Engineering",
+  "semester": 5,
+  "details": {
+    "name": "INSTRUMENTATION AND CONTROL SYSTEMS",
+    "courseCode": "PEMET525",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Industrial measurement systems – different types of industrial variables and measurement systems elements.",
+          "Sensors– Sensor components - Resistive sensors - Inductive sensors - Capacitive sensors - Thermoelectric sensors - Piezoelectric sensors.",
+          "Transducers - Definition and classification.",
+          "LVDT",
+          "Electromagnetic and Ultrasonic flow meters",
+          "Piezoelectric transducers-modes of operation-force transducer",
+          "Load cell",
+          "Strain gauge etc."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Industrial signal conditioning systems- Operational amplifiers - Amplifier circuits with ideal operational amplifiers - Current-to voltage converters - Inverting voltage amplifiers - Non-inverting voltage amplifiers - Differential amplifiers -Instrumentation amplifiers",
+          "Filters – Passive filters - First and second order RC-filters - Low-pass first-order RC-filter – High pass first-order RC-filter – Band pass filters",
+          "A/D converters for industrial measurements systems.",
+          "Data Acquisition Systems(DAS) –Objectives of DAS."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "System Modeling- Open loop and closed loop control systems",
+          "Transfer function of LTI systems- Electrical, translational and rotational systems – Force voltage and force current analogy",
+          "Block diagram representation - block diagram reduction",
+          "Signal flow graph - Mason's gain formula.",
+          "Control system components: Transfer functions of DC and AC servo motors– Control applications of Tacho generator and Stepper motor.",
+          "Characteristic equation of Closed loop systems.",
+          "Controllers- P, PI, and PID controllers."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Time domain analysis of control systems: Time domain specifications",
+          "Impulse and Step responses of first order and second order systems.",
+          "Error analysis: Steady state error analysis - static error coefficients of type 0,1,2 systems.",
+          "Stability Analysis: Concept of stability— Routh's stability criterion",
+          "Root locus method.",
+          "Frequency Domain Analysis: Frequency Domain Specifications",
+          "Stability in Frequency Domain",
+          "Gain Margin",
+          "Phase Margin",
+          "Bode Plot",
+          "Polar Plot",
+          "Nyquist Plot."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To get basic knowledge about industrial measurement system and different elements involved in it.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Acquire knowledge about sensors and transducers for different industrial variables",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "Acquire knowledge about signal conditional circuits like amplifiers, filters, ADC, etc. for working industrial measurement systems",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "To describe the role of various control blocks and components in feedback systems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "To analyse the time domain responses of the linear systems and apply Root locus technique to assess the performance.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO6",
+        "description": "Analyse the stability of the given LTI system",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Industrial Instrumentation",
+        "author": "K Krishnaswamy",
+        "publisher": "New Age International Publishers, New Delhi",
+        "edition": "2003"
+      },
+      {
+        "title": "Measurement systems applications and design",
+        "author": "Ernest O. Doebelin",
+        "publisher": "McGraw- Hill Publishing Company",
+        "edition": "1990"
+      },
+      {
+        "title": "Control Systems Engineering",
+        "author": "Nise N.S.",
+        "publisher": "Wiley Eastern",
+        "edition": "6/e"
+      },
+      {
+        "title": "Modern Control Engineering",
+        "author": "Ogata K",
+        "publisher": "Prentice Hall of India.",
+        "edition": "5/e"
+      },
+      {
+        "title": "Control Systems",
+        "author": "K R Varmah",
+        "publisher": "Tata McGrawHill",
+        "edition": "2010"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Principles of Industrial Instrumentation",
+        "author": "Patranabis D",
+        "publisher": "McGraw-Hill Education",
+        "edition": "3rd Edition,2017"
+      },
+      {
+        "title": "Industrial Instrumentation and Control",
+        "author": "Singh, S.K",
+        "publisher": "Tata McGraw-Hill Education",
+        "edition": "2009"
+      },
+      {
+        "title": "Control Systems Principles and Design",
+        "author": "Gopal M",
+        "publisher": "Tata McGraw Hill",
+        "edition": "4/e"
+      },
+      {
+        "title": "Automatic Control Systems",
+        "author": "Kuo B. C",
+        "publisher": "Prentice Hall of India",
+        "edition": "7/e"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/108105064",
+      "module2": "https://nptel.ac.in/courses/108105062",
+      "module3": "https://nptel.ac.in/courses/107106081",
+      "module4": "https://nptel.ac.in/courses/107106081"
+    },
+    "semester": "5",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:00:30.685Z"
+}

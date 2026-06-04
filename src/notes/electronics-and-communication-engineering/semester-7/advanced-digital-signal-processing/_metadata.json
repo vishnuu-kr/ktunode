@@ -1,0 +1,180 @@
+{
+  "subject": "ADVANCED DIGITAL SIGNAL PROCESSING",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 7,
+  "details": {
+    "name": "ADVANCED DIGITAL SIGNAL PROCESSING",
+    "courseCode": "PEECT746",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Digital Signal Processing",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Multi-rate system and filter banks :",
+          "Basic multi-rate operations: up sampling and down sampling , time domain and frequency domain analysis",
+          "Need for anti aliasing and anti imaging filters.",
+          "Noble identities.",
+          "Type 1 and Type 2 polyphase decomposition",
+          "Efficient structures for decimation and interpolation filters.",
+          "Uniform filter banks and its implementation using polyphase decomposition.",
+          "QMF Filter Bank- conditions for perfect reconstruction, polyphase implementation.",
+          "Design of perfect reconstruction M- channel Filter Banks.",
+          "Applications of multirate systems."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Wavelet transform:",
+          "Time Frequency Trade off in signal analysis",
+          "Heisenberg's uncertainty principle.",
+          "Short Time Fourier transform-Filter Bank representation.",
+          "Continuous Wavelet Transform- Admissibility condition.",
+          "Time-frequency diagrams for the STFT and the wavelet transform",
+          "Discrete Wavelet Transform- Haar Scaling and Wavelet Functions, Haar analysis of signals, concept of nested space.",
+          "Orthonormal Wavelet Analysis- Filter bank interpretation.",
+          "Applications of wavelet transform."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Power spectrum estimation - Rational power spectra representation",
+          "Relationships Between the Filter Parameters and the Autocorrelation Sequence",
+          "Parametric method of power spectrum estimation-Yule Walker equations",
+          "Non parametric method of power spectrum estimation- Periodogram",
+          "Averaging periodogram."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Linear prediction filters - Forward and backward predictors",
+          "lattice filter structure",
+          "relationship between linear filter coefficients and reflection coefficients",
+          "Normal equations for optimum filter design.",
+          "Adaptive filters- Weiner filter design",
+          "Adaptive filters for adaptive channel equalization, adaptive noise cancellation and Linear Predictive Coding of Speech Signals",
+          "Steepest descent algorithm",
+          "LMS algorithm."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Classify continuous and discrete time signals and systems based on their properties and perform basic operations on signals.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Determine the stability and causality of LTI systems using convolution operations.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyze signals in frequency domain using Laplace, Fourier and z-transforms and examine the properties of transforms.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Interpret the use of various transforms to analyze continuous and discrete time LTI systems.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Signals and Systems",
+        "author": "Alan V. Oppenheim and Alan Willsky",
+        "publisher": "Pearson Education",
+        "edition": "2/e, 2015"
+      },
+      {
+        "title": "Signals and Systems",
+        "author": "Simon Haykin",
+        "publisher": "John Wiley",
+        "edition": "2/e, 2021"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Signals and Systems",
+        "author": "Anand Kumar",
+        "publisher": "PHI",
+        "edition": "3/e, 2013"
+      },
+      {
+        "title": "Principles of Signal Processing & Linear systems",
+        "author": "B P. Lathi",
+        "publisher": "Oxford University Press",
+        "edition": "2/e, 2009"
+      },
+      {
+        "title": "Signals & Systems - Continuous and Discrete",
+        "author": "Rodger E. Ziemer",
+        "publisher": "Pearson",
+        "edition": "4/e, 2013"
+      },
+      {
+        "title": "Analog and Digital Signal Processing",
+        "author": "Ashok Ambardar",
+        "publisher": "Brooks/Cole Publishing Company",
+        "edition": "2/e, 2013"
+      },
+      {
+        "title": "Signals and systems - Principles and Applications",
+        "author": "Shaila Dinkar Apte",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2016"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/117101055\nhttps://nptel.ac.in/courses/117104074\nhttps://nptel.ac.in/courses/108104100",
+      "module2": "https://nptel.ac.in/courses/117101055\nhttps://nptel.ac.in/courses/117104074\nhttps://nptel.ac.in/courses/108104100",
+      "module3": "https://nptel.ac.in/courses/117101055\nhttps://nptel.ac.in/courses/117104074\nhttps://nptel.ac.in/courses/108104100",
+      "module4": "https://nptel.ac.in/courses/117101055\nhttps://nptel.ac.in/courses/117104074\nhttps://nptel.ac.in/courses/108104100"
+    },
+    "semester": "7",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:03:58.750Z"
+}

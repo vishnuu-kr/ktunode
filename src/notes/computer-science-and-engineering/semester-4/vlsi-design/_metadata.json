@@ -1,0 +1,216 @@
+{
+  "subject": "VLSI DESIGN",
+  "branch": "Computer Science and Engineering",
+  "semester": 4,
+  "details": {
+    "name": "VLSI DESIGN",
+    "courseCode": "PECST415",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "GAEST305",
+    "courseType": "Elective",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "CMOS Fundamentals for Digital VLSI Design :",
+          "CPN junction",
+          "MOS transistor theory and operation",
+          "PMOS",
+          "NMOS",
+          "CMOS",
+          "CMOS Inverter",
+          "Voltage Transfer Curve",
+          "CMOS logic gates",
+          "Tristate Inverter",
+          "Tristate buffer",
+          "Combinational Circuits Timing - Rise Time",
+          "Fall time",
+          "Propagation Delay",
+          "Introduction to sequential logic circuits",
+          "flip-flops and latches",
+          "Timing analysis - Set-up time",
+          "Hold Time",
+          "Propagation Delay",
+          "Frequency of Operation",
+          "Static and Dynamic Timing Analysis",
+          "Pipelining"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Introduction to Integrated Circuits (ICs):",
+          "CMOS fabrication process overview-  Photolithography",
+          "Structure of an Integrated Circuit",
+          "Types of Design flow - Custom design",
+          "Semi-custom design",
+          "array based design",
+          "A System Perspective",
+          "Hardware – Software Partitioning",
+          "example Video compression",
+          "Functional Specification to RTL",
+          "Behavioural Synthesis"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Semi-custom Design flow",
+          "Abstraction in VLSI Design Flow- Gajski-Kuhn’s Y-chart",
+          "Hardware design using hardware description Languages",
+          "Design Verification- Simulation using Testbench",
+          "Property Checking",
+          "Equivalence Checking",
+          "Static Timing Analysis",
+          "Logic Synthesis",
+          "Physical Design- Min-cut Partitioning",
+          "Floor plan- ",
+          "Global and  Detailed Placement",
+          "Global and Detailed Routing",
+          "Micro project*"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Finite State Machines (FSMs):  Mealy and Moore models",
+          "Verilog HDL Design and implementation of RISC stored programmed Machine",
+          "Field Programmable Gate Arrays (FPGAs)  :",
+          "FPGA Architecture- Programming Technology",
+          "Programmable logical blocks",
+          "Programmable Interconnects",
+          "Programmable I/O blocks",
+          "FPGA  Design Flow",
+          "SoC Design on FPGA",
+          "Micro project*"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 0,
+        "internalExam1": 15,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions. Each question carries 9 marks. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Utilize the MOS Circuits and design basic circuits using CMOS.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain IC design flow and design a system using hardware software co-design strategy.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Design,  simulate and implement systems design in HDL using semi-custom flow.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Design, simulate and implement digital systems using programmable devices.",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Introduction to VLSI Design Flow",
+        "author": "Sneh Saurabh",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2023"
+      },
+      {
+        "title": "Digital Integrated Circuits: A Design Perspective.",
+        "author": "Jan M. Rabaey, Anantha P. Chandrakasan, Borivoje Nikolic",
+        "publisher": "Pearson Education",
+        "edition": "2/e, 2003"
+      },
+      {
+        "title": "Digital Systems Design Using Verilog",
+        "author": "Charles H. Roth Jr., Lizy Kurian John, Beyeong Kil Lee",
+        "publisher": "CL Engineering",
+        "edition": "1/e, 2015"
+      },
+      {
+        "title": "Advanced Digital Design with the Verilog HDL",
+        "author": "Micahel D. Ciletti",
+        "publisher": "Pearson",
+        "edition": "2/e, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Digital Design and Computer Architecture - RISC-V Edition",
+        "author": "Sarah L. Harris, David Harris",
+        "publisher": "Morgan Kaufmann",
+        "edition": "1/e, 2022"
+      },
+      {
+        "title": "Digital Design: With an Introduction to the Verilog HDL",
+        "author": "M. Morris Mano, Michael D. Ciletti",
+        "publisher": "Pearson India",
+        "edition": "5/e, 2012"
+      },
+      {
+        "title": "Verilog HDL – A guide to digital design & Synthesis",
+        "author": "Samir Palnitkar",
+        "publisher": "Pearson",
+        "edition": "2/e, 2003"
+      },
+      {
+        "title": "FPGA Based System Design",
+        "author": "Wayne Wolf",
+        "publisher": "Pearson",
+        "edition": "1/e, 2004"
+      },
+      {
+        "title": "Embedded Core Design with FPGAs",
+        "author": "Zainalabedin Navabi",
+        "publisher": "McGraw-Hill",
+        "edition": "1/e, 2006"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/106103116",
+      "module2": "https://nptel.ac.in/courses/117106092",
+      "module3": "https://onlinecourses.nptel.ac.in/noc21_cs12/preview",
+      "module4": "https://archive.nptel.ac.in/courses/117/108/117108040/"
+    },
+    "semester": "4",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:16:57.746Z"
+}

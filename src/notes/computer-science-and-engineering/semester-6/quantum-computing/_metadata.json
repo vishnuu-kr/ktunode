@@ -1,0 +1,176 @@
+{
+  "subject": "QUANTUM COMPUTING",
+  "branch": "Computer Science and Engineering",
+  "semester": 6,
+  "details": {
+    "name": "QUANTUM COMPUTING",
+    "courseCode": "PECST638",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Review of Basics Concepts",
+          "Review of linear algebra",
+          "Principles of quantum mechanics",
+          "Review of Information theory",
+          "Review of Theory of Computation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1 - Ch  1, 2",
+          "Text 2, Ch 11.1, 11.2"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Introduction to Quantum Information",
+          "Qubit – Bloch sphere representation",
+          "Multiple qubit states",
+          "Quantum logic gates – single qubit and multi-qubit",
+          "Quantum circuits",
+          "Density matrix",
+          "Quantum entanglement."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1 - Ch 3, 4",
+          "Text 2 - Ch 4"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Quantum Algorithms: -",
+          "Simple Quantum Algorithms",
+          "Quantum Integral Transforms",
+          "Grover’s Search Algorithm and Shor’s Factorization Algorithm."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1 - Ch 5,6,7,8"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Quantum Communication: -",
+          "Von Neumann entropy",
+          "Holevo Bound",
+          "Data compression",
+          "Classical information over noisy quantum channels",
+          "Quantum information over noisy quantum channels",
+          "Quantum Key Distribution",
+          "Quantum Communication protocols"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 2 - Ch 11.3, Ch 12.1 - 12.5"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the concept of quantum computing against classical computing.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Illustrate various quantum computing algorithms.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the latest quantum communication & protocols.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Experiment with new algorithms and protocols for quantum computing.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Quantum Computing :  From Linear Algebra to Physical Realizations",
+        "author": "Mikio Nakahara Tetsuo Ohmi",
+        "publisher": "CRC Press",
+        "edition": "1/e, 2008"
+      },
+      {
+        "title": "Quantum Computation and Quantum Information",
+        "author": "Michael A. Nielsen & Isaac L. Chuang",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2010"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Quantum Computing for Programmers",
+        "author": "Robert Hundt",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2022"
+      },
+      {
+        "title": "Quantum Computing for Everyone",
+        "author": "Chris Bernhardt",
+        "publisher": "MIT Press",
+        "edition": "1/e, 2020"
+      },
+      {
+        "title": "An Introduction to Practical Quantum Key Distribution [paper]",
+        "author": "Omar Amer Vaibhav Garg Walter O. Krawec",
+        "publisher": "IEEE Aerospace and Electronic Systems Magazine",
+        "edition": "March 2021"
+      },
+      {
+        "title": "Quantum communication [paper]",
+        "author": "Nicolas Gisin & Rob Thew",
+        "publisher": "Nature Photonics",
+        "edition": "March 2007"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/106/106106232/",
+      "module2": "https://archive.nptel.ac.in/noc/courses/noc19/SEM2/noc19-cy31/",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:56:46.547Z"
+}

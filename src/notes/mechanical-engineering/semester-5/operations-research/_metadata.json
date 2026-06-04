@@ -1,0 +1,198 @@
+{
+  "subject": "OPERATIONS RESEARCH",
+  "branch": "Mechanical Engineering",
+  "semester": 5,
+  "details": {
+    "name": "OPERATIONS RESEARCH",
+    "courseCode": "PEMET528",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Operations Research (OR)",
+          "Linear Programming: Basics of OR",
+          "Modelling approach",
+          "Linear Programming (LP)",
+          "Formulation of LP models",
+          "Graphical method",
+          "Simplex method",
+          "Big-M Method.",
+          "Transportation Problem: Mathematical Formulation",
+          "Initial Basic Feasible Solution",
+          "North West Corner method",
+          "Least Cost method",
+          "Vogel’s Approximation Method",
+          "Optimality test by MODI method",
+          "Assignment problem",
+          "Hungarian method."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Sequencing Problem: Basic terminologies",
+          "Processing of n Jobs through 2machines",
+          "Processing of n Jobs through 3 machines",
+          "Processing n Jobs, through m machines.",
+          "Game Theory: Games with saddle points",
+          "Games without saddle points – 2 x 2 games",
+          "Graphical method for m x 2 & 2 x n games"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Non-traditional Optimization Techniques: Genetic Algorithm (GA) – Working principles",
+          "GA Operators",
+          "Parameters setting",
+          "Constraints handling",
+          "Solving simple problems using GA.",
+          "Simulated Annealing and Particle Swarm Optimization (Theory only) - Introduction",
+          "Key concepts",
+          "Algorithm."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Scope of queuing theory",
+          "Importance and applications",
+          "Kendall’s Notations",
+          "Characteristics of Queuing Systems",
+          "Performance Measures in Queuing Systems",
+          "Classic Queuing Models",
+          "Single-server exponential arrival and service times",
+          "Two-server exponential arrival and service times."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To formulate and solve linear programming problems and transportation problems",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "To apply basic sequencing techniques for processing jobs through machines",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "To solve simple problems in game theory",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "To apply evolutionary algorithms for optimization problems",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "To solve problems using classical queuing theory models",
+        "knowledgeLevel": "K2, K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Operations Research-Principles and Applications",
+        "author": "Srinivasan, G.",
+        "publisher": "PHI Pvt. Ltd.",
+        "edition": "Third Edition, 2017"
+      },
+      {
+        "title": "Operations Research",
+        "author": "Prem Kumar Gupta & D. S. Hira",
+        "publisher": "S Chand publication",
+        "edition": "Third Edition, 2008"
+      },
+      {
+        "title": "Quantitative Techniques in Management",
+        "author": "N. D Vohra. Hitesh Arora",
+        "publisher": "McGraw Hill.",
+        "edition": "Sixth Edition, 2021"
+      },
+      {
+        "title": "Soft Computing Fundamentals and Applications",
+        "author": "Dilip K. Pratikar",
+        "publisher": "Alpha Science",
+        "edition": "2015"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Optimization: Theory and Applications",
+        "author": "Rao, S.S.",
+        "publisher": "Wiley eastern.",
+        "edition": "Second edition,"
+      },
+      {
+        "title": "Introduction to Operations Research,",
+        "author": "F. S. Hillier& G. J. Leiberman:",
+        "publisher": "McGraw Hill",
+        "edition": "Eleventh Edition"
+      },
+      {
+        "title": "Operations Research Principles and Practice",
+        "author": "Ravindran, Phillips and Solberg",
+        "publisher": "Willey & Sons",
+        "edition": "1987"
+      },
+      {
+        "title": "Operations Research,",
+        "author": "Goel, B. S. and Mittal, S. K.",
+        "publisher": "Pragati Prakashan, Meerut",
+        "edition": "1999"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc24_ma55",
+      "module2": "https://onlinecourses.swayam2.ac.in/cec24_ma05",
+      "module3": "https://onlinecourses.swayam2.ac.in/cec24_ma05",
+      "module4": "https://onlinecourses.swayam2.ac.in/cec24_ma05"
+    },
+    "semester": "5",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:01:41.133Z"
+}

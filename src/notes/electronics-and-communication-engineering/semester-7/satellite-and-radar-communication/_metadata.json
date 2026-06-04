@@ -1,0 +1,187 @@
+{
+  "subject": "SATELLITE AND RADAR COMMUNICATION",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 7,
+  "details": {
+    "name": "SATELLITE AND RADAR COMMUNICATION",
+    "courseCode": "PCECT751",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Satellite orbit and orbital equations",
+          "Kepler‟s laws of planetary motion",
+          "locating satellite in the orbit",
+          "locating satellite with respect to earth",
+          "Look angle calculation",
+          "coverage angle and slant range",
+          "orbital perturbations",
+          "satellite launching",
+          "orbital effects in communication subsystem performance.",
+          "Satellite subsystems",
+          "Attitude and orbit control system",
+          "Telemetry tracking command and monitoring",
+          "power system",
+          "communication subsystem",
+          "satellite antennas."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Satellite link design- Basic link analysis",
+          "Interference analysis",
+          "terrestrial interference",
+          "Intermodulation interference",
+          "inter-symbol interference and rain induced attenuation",
+          "uplink power control",
+          "system availability",
+          "system design for link without frequency reuse and system design for link with frequency reuse."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Basics of Radar: Introduction",
+          "Range",
+          "Radar Waveforms",
+          "Simple form of Radar Equation",
+          "Radar Block Diagram and Operation",
+          "Radar Frequencies and Applications",
+          "Prediction of Range Performance",
+          "Minimum Detectable Signal",
+          "Receiver Noise",
+          "Modified Radar Range Equation"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "CW and Frequency Modulated Radar: Doppler Effect",
+          "CW Radar – Block Diagram",
+          "Applications of CW radar.",
+          "FM-CW Radar: FM-CW Radar",
+          "Range and Doppler Measurement",
+          "Block Diagram and Characteristics (Approaching/ Receding Targets)",
+          "FM-CW altimeter",
+          "Multiple Frequency CW Radar.",
+          "MTI and Pulse Doppler Radar: Introduction",
+          "Principle",
+          "MTI versus Pulse Doppler Radar",
+          "Tracking Radar: various techniques of Tracking with Radar"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Illustrate the principles of satellite communication",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design and analysis of satellite link",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Illustrate Radar Fundamentals like Radar Equation and Applications.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Compare various types of Radars and tracking techniques",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Satellite Communications",
+        "author": "Timothy Pratt, Jeremy Allnutt",
+        "publisher": "Wiley",
+        "edition": "3rd Edition, 2021"
+      },
+      {
+        "title": "Introduction to Radar Systems",
+        "author": "Merrill I. Skolnik",
+        "publisher": "Tata McGraw-Hill",
+        "edition": "2nd Edition, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Digital Satellite Communications",
+        "author": "Tri, T.Ha,",
+        "publisher": "McGraw-Hill Education",
+        "edition": "2nd Edition, 2017"
+      },
+      {
+        "title": "Satellite Communications Systems Engineering",
+        "author": "Pritchard",
+        "publisher": "Pearson Education",
+        "edition": "2nd Edition, 2006"
+      },
+      {
+        "title": "Radar: Principles, Technology, Applications",
+        "author": "Byron Edde",
+        "publisher": "Pearson",
+        "edition": "1st Edition, 2004"
+      },
+      {
+        "title": "Understanding Radar Systems",
+        "author": "Simon Kinsley and Shaun Quegan",
+        "publisher": "John Wiley& Sons",
+        "edition": "1st Edition 1999"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/117/105/117105131/",
+      "module2": "https://archive.nptel.ac.in/courses/117/105/117105131/",
+      "module3": "https://archive.nptel.ac.in/courses/108/105/108105154/",
+      "module4": "https://archive.nptel.ac.in/courses/108/105/108105154/"
+    },
+    "semester": "7",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:10:27.223Z"
+}

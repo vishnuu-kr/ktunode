@@ -1,0 +1,195 @@
+{
+  "subject": "URBAN TRANSPORTATION PLANNING",
+  "branch": "Civil Engineering",
+  "semester": 8,
+  "details": {
+    "name": "URBAN TRANSPORTATION PLANNING",
+    "courseCode": "PECET866",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Need for transportation planning - Characteristics of urban travel",
+          "Transportation issues and challenges",
+          "Detrimental effects of traffic on environment.",
+          "Urban Structure-  types and properties -centripetal, grid, linear, directional",
+          "Movement and Accessibility – Hierarchy of transportation facilities.",
+          "Demand analysis in transportation planning",
+          "Modelling based on consumer behavior of travel choices",
+          "Basic principles of travel demand analysis and assumptions."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Transportation planning process - Systems approach",
+          "Elements/stages of transportation planning process - Goal, objectives and constraints",
+          "Trip-based and Activity-based approaches for transportation planning.",
+          "Data collection – Definition of study area",
+          "zoning- selection of cordon",
+          "Sampling techniques and sample size",
+          "Sources of data and types of surveys for planning",
+          "Trip Generation - Factors influencing grip generation",
+          "methods of forecasting trip generation rates- expansion factor, linear regression, category analysis."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Trip Distribution - Growth factor methods",
+          "Synthetic methods- Gravity models, opportunity model.",
+          "Modal Split - Factors influencing modal split",
+          "Types of mode split models – trip end, trip interchange, logit model.",
+          "Traffic assignment - Purpose",
+          "Elements of transportation networks- Nodes and links",
+          "Methods for traffic assignment"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Transportation and land use - Role of urban activity analysis in transportation planning",
+          "Transportation impacts on activity system",
+          "Land use transportation interaction.",
+          "Land use models - Selection of land use model",
+          "Lowry model- Structure, features, Model equation system.",
+          "Sustainable transportation - features, facilities",
+          "Transit oriented development",
+          "Non transport solutions to transport problems",
+          "Transportation demand management",
+          "Quick response techniques for demand estimation.",
+          "Comprehensive Mobility Plan - objectives and activities involved",
+          "Application of GIS in transport planning"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify the need for transportation planning, the issues and challenges related to transportation and its interaction with urban structure and land use",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply the concept of travel demand and analyse its role in transportation planning and to apply the concept in systems approach to transportation planning process.",
+        "knowledgeLevel": "K3, K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply the concept of delineation of study area, sampling of data, and data collection techniques for the four stage planning process and to analyse the techniques for predicting trip generation.",
+        "knowledgeLevel": "K3, K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply and analyse the methods for predicting trip distribution, mode split and traffic assignment",
+        "knowledgeLevel": "K3, K4"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply the land use transport models and to analyse the sustainable approaches to transportation planning and preparation of comprehensive mobility plan with application of GIS",
+        "knowledgeLevel": "K3, K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Introduction to Transportation Planning",
+        "author": "Bruton,M.J",
+        "publisher": "Hutchinson of London",
+        "edition": "2021"
+      },
+      {
+        "title": "Principles of Transportation Engineering",
+        "author": "Chakraborthy,P and Das,A",
+        "publisher": "PHI Learning",
+        "edition": "2nd Ed"
+      },
+      {
+        "title": "Traffic Engineering and Transport Planning",
+        "author": "Kadiyali, L.R",
+        "publisher": "Khanna Publishers",
+        "edition": "8th Ed"
+      },
+      {
+        "title": "Highway Engineering,",
+        "author": "Rogers M",
+        "publisher": "Blackwell Science",
+        "edition": ""
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Principles of Urban Transport Planning",
+        "author": "chinson, B G",
+        "publisher": "Tata McGrawHill",
+        "edition": "1974"
+      },
+      {
+        "title": "Metropolitan Transportation Planning",
+        "author": "Dickey, J. W",
+        "publisher": "Tata McGrawHill",
+        "edition": "1975"
+      },
+      {
+        "title": "Urban Transportation Planning a Decision Oriented Approach",
+        "author": "Mayer, M.D and Miller, E. J",
+        "publisher": "Tata McGrawHill",
+        "edition": "2nd Ed"
+      },
+      {
+        "title": "Transportation Engineering and Planning",
+        "author": "Papacostas, C. S. and Prevedouros, P.D",
+        "publisher": "Prentice Hall of India Pvt. Ltd.",
+        "edition": "2012, 3rd Ed"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/105/105/105105208/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T19:04:36.536Z"
+}

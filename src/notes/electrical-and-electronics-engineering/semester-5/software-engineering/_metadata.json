@@ -1,0 +1,243 @@
+{
+  "subject": "SOFTWARE ENGINEERING",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 5,
+  "details": {
+    "name": "SOFTWARE ENGINEERING",
+    "courseCode": "PEEET524",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Software Engineering - Professional software development",
+          "Software engineering ethics",
+          "Software process models - The waterfall model",
+          "Incremental development",
+          "Process activities - Software specification",
+          "Software design and implementation",
+          "Software validation",
+          "Software evolution",
+          "Coping with change - Prototyping",
+          "Incremental delivery",
+          "Boehm's Spiral Model",
+          "Agile software development - Agile methods",
+          "agile manifesto - values and principles",
+          "Agile development techniques",
+          "Agile Project Management",
+          "Case studies : An insulin pump control system",
+          "Mentcare - a patient information system for mental health care"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Requirement Analysis and Design: Functional and non-functional requirements",
+          "Requirements engineering processes",
+          "Requirements elicitation",
+          "Requirements validation",
+          "Requirements change",
+          "Traceability Matrix",
+          "Developing use cases",
+          "Software Requirements Specification Template",
+          "Personas",
+          "Scenarios",
+          "User stories",
+          "Feature identification",
+          "Design concepts - Design within the context of software engineering",
+          "Design Process",
+          "Design concepts",
+          "Design Model",
+          "Architectural Design - Software Architecture",
+          "Architectural Styles",
+          "Architectural considerations",
+          "Architectural Design Component level design - What is a component?",
+          "Designing Class-Based Components",
+          "Conducting Component level design",
+          "Component level design for web-apps"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Implementation and Testing",
+          "Object-oriented design using the UML",
+          "Design patterns",
+          "Implementation issues",
+          "Open-source development - Open-source licensing - GPL, LGPL, BSD",
+          "Review Techniques - Cost impact of Software Defects",
+          "Code review and statistical analysis",
+          "Informal Review",
+          "Formal Technical Reviews",
+          "Post-mortem evaluations",
+          "Software testing strategies - Unit Testing",
+          "Integration Testing",
+          "Validation testing",
+          "System testing",
+          "Debugging",
+          "White box testing",
+          "Path testing",
+          "Control Structure testing",
+          "Black box testing",
+          "Testing Documentation and Help facilities",
+          "Test automation",
+          "Test-driven development",
+          "Security testing",
+          "Overview of DevOps and Code Management - Code management",
+          "DevOps automation",
+          "CI/CD/CD",
+          "Software Evolution - Evolution processes",
+          "Software maintenance"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Software Project Management: Software Project Management - Risk management",
+          "Managing people",
+          "Teamwork",
+          "Project Planning",
+          "Software pricing",
+          "Plan-driven development",
+          "Project scheduling",
+          "Agile planning",
+          "Estimation techniques",
+          "COCOMO cost modeling",
+          "Configuration management",
+          "Version management",
+          "System building",
+          "Change management",
+          "Release management",
+          "Agile software management - SCRUM framework",
+          "Kanban methodology and lean approaches"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Interpret software process models and core activities, including handling changes with techniques like prototyping and incremental delivery.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe agile methods, including the Agile Manifesto and agile project management practices.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Prepare Software Requirement Specification and Software Design for a given problem",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Interpret object-oriented design principles, design patterns, software testing methods (including unit testing, integration testing, and test automation), and open-source licensing models (such as GPL, LGPL, and BSD).",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Describe software review techniques, DevOps practices and code management principles, and software evolution processes and maintenance strategies.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO6",
+        "description": "Make use of software project management concepts while planning, estimation, scheduling, tracking and change management of a project, with proper application of SCRUM, Kanban and Lean frameworks.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Software Engineering",
+        "author": "Ian Sommerville",
+        "publisher": "Pearson Education",
+        "edition": "Tenth edition, 2015"
+      },
+      {
+        "title": "Software Engineering : A practitioner’s approach",
+        "author": "Roger S. Pressman",
+        "publisher": "McGraw Hill publication",
+        "edition": "Eighth edition, 2014"
+      },
+      {
+        "title": "Engineering Software Products: An Introduction to Modern Software Engineering",
+        "author": "Ian Sommerville",
+        "publisher": "Pearson Education",
+        "edition": "First Edition, 2020"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Kanban",
+        "author": "David J. Anderson",
+        "publisher": "Blue Hole Press",
+        "edition": "2010"
+      },
+      {
+        "title": "Agile Management for Software Engineering",
+        "author": "David J. Anderson",
+        "publisher": "Pearson",
+        "edition": "2003"
+      },
+      {
+        "title": "Software Project Management : A unified framework",
+        "author": "Walker Royce",
+        "publisher": "Pearson Education",
+        "edition": "1998"
+      },
+      {
+        "title": "Implementing Lean Software Development: From Concept to Cash",
+        "author": "Mary Poppendieck",
+        "publisher": "Addison-Wesley Signature Series",
+        "edition": "2006"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/106105182",
+      "module2": "https://nptel.ac.in/courses/106105182",
+      "module3": "https://nptel.ac.in/courses/106105182",
+      "module4": "https://nptel.ac.in/courses/106105218"
+    },
+    "semester": "5",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:23:58.411Z"
+}

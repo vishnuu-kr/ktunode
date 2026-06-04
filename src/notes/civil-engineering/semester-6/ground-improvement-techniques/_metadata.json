@@ -1,0 +1,183 @@
+{
+  "subject": "GROUND IMPROVEMENT TECHNIQUES",
+  "branch": "Civil Engineering",
+  "semester": 6,
+  "details": {
+    "name": "GROUND IMPROVEMENT TECHNIQUES",
+    "courseCode": "PECET633",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PBCET 504",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction Need for engineered ground improvement",
+          "classification of ground modification techniques; suitability, feasibility and desirability of ground improvement technique",
+          "objectives of improving soil",
+          "Emerging trends in ground improvement-Different materials used for ground improvement and its property",
+          "Drainage and dewatering : - well point system, shallow & deep well system, vacuum method, electro osmosis method",
+          "Comparison between methods"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Compaction- Introduction, compaction mechanics",
+          "Field procedure, surface compaction",
+          "Dynamic Compaction, selection of field compaction procedures, compaction quality control",
+          "Drainage Methods- Introduction, Seepage, filter requirements, ground water and seepage control",
+          "methods of dewatering systems, Design of dewatering system including pipe line effects of dewatering",
+          "Drains, different types of drains",
+          "Pre-compression and Vertical Drains:  Importance",
+          "Vertical drains",
+          "Sand drains",
+          "Drainage of slopes",
+          "Electro kinetic dewatering",
+          "Preloading"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Chemical Modification-  Definition, cement stabilization, sandwich technique, admixtures",
+          "Hydration – effect of cement stabilization on permeability, Swelling and shrinkage and strength and deformation characteristics",
+          "Criteria for cement stabilization",
+          "Stabilization using Fly ash",
+          "Lime stabilization – suitability, process, criteria for lime stabilization",
+          "Bitumen, tar or asphalt in stabilization",
+          "Vibration Methods:  Introduction",
+          "Vibro compaction – blasting, vibratory probe",
+          "Vibro displacement compaction – displacement piles, vibro flotation, sand compaction piles, stone columns, heavy tamping"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Grouting And Injection:",
+          "Introduction, Effect of grouting",
+          "Chemicals and materials used",
+          "Types of grouting",
+          "Grouting procedure, Applications of grouting",
+          "Reinforced earth : - mechanism- types of reinforcing elements- reinforcement-soil interaction – applications- reinforced soil structures with vertical faces",
+          "Geosynthetics – types of geosynthetics – functions of geosynthetics – properties of geosynthetics",
+          "Soil nailing & Micro pile-basic concept-construction sequence-areas of application-design considerations-merit and demerit",
+          "Earth Reinforcement-Reinforcement materials-reinforced earth wall-design considerations-construction procedure"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Classify the different ground improvement techniques",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Outline the basic concept/ design aspects of various ground improvement methods",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand the methods of stabilisation",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Choose different application of geosynthetics and soil stabilisation in Ground improvement",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Understand the methods and properties of reinforced soil",
+        "knowledgeLevel": "K2, K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Ground Improvement Techniques",
+        "author": "P. Purushothama Raj",
+        "publisher": "Laxmi Publications (P) Ltd.",
+        "edition": "1st & 1999"
+      },
+      {
+        "title": "Engineering Principles of Ground Modification",
+        "author": "Manfred. R. Hausmann",
+        "publisher": "McGraw Hill",
+        "edition": "1st & 1989"
+      },
+      {
+        "title": "Reinforced soil and its engineering applications",
+        "author": "Swami Saran",
+        "publisher": "I. K. International Pvt Ltd",
+        "edition": "1st & 2010"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Construction and Geotechnical Method in Foundation Engineering",
+        "author": "Robert M. Koerner",
+        "publisher": "McGraw Hill",
+        "edition": "1st & 1984"
+      },
+      {
+        "title": "Ground Improvement Techniques",
+        "author": "Nihar Ranjan Patra",
+        "publisher": "Vikas Publishing house",
+        "edition": "1st & 2012"
+      },
+      {
+        "title": "Current Practices in Geotechnical Engineering  Vol.-I",
+        "author": "Alam Singh and Joshi",
+        "publisher": "International Book Traders",
+        "edition": "1st & 1985"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc23_ce78/preview",
+      "module2": "https://onlinecourses.nptel.ac.in/noc23_ce78/preview",
+      "module3": "https://onlinecourses.nptel.ac.in/noc23_ce78/preview",
+      "module4": "https://onlinecourses.nptel.ac.in/noc23_ce78/preview"
+    },
+    "semester": "6",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:54:01.751Z"
+}

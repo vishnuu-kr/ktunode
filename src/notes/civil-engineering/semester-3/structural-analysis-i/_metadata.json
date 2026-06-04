@@ -1,0 +1,165 @@
+{
+  "subject": "STRUCTURAL ANALYSIS - I",
+  "branch": "Civil Engineering",
+  "semester": 3,
+  "details": {
+    "name": "STRUCTURAL ANALYSIS - I",
+    "courseCode": "PCCET303",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCEL205/Equivalent",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Statically determinate trusses:  Analysis using method of joints and method of sections.",
+          "Cables and Suspension bridges:  Forces in loaded (concentrated and uniformly distributed) cables - length of cables – supports at same and different levels –  maximum tension in the suspension cable and backstays, pressure on towers.",
+          "Simple suspension bridges with three hinged stiffening girders - bending moments and shear force diagrams.",
+          "Deformation Response of Statically Determinate Beams: Moment area method –Mohr’s theorems, Applications to determinate deformations of cantilever and simply supported beams (prismatic and beams of varying cross section) subjected to concentrated and uniformly distributed loads."
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Deformation Response of Statically Determinate Beams: Conjugate beam method–  Real beam and conjugate beam, boundary conditions; Applications to determinate deformations of cantilever and simply supported beams (prismatic and beams of varying cross section subjected to concentrated and uniformly distributed loads.",
+          "Energy Principles and Energy Theorems:",
+          "Castigliano’s theorem I, Principle of virtual work, Betti’s theorem, Maxwell’s law of reciprocal deflections.",
+          "Unit load method  for determination of deflection of statically determinate beams, frames and trusses."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Indeterminate Structures:",
+          "Introduction to force method of analysis. Static indeterminacy",
+          "Analysis of statically indeterminate structures",
+          "Castigliano’s theorem II, Minimum strain energy method for analysing statically indeterminate structures (Illustration only)",
+          "Method of consistent deformations:  Analysis of beams, frames and trusses. (simple problems with one redundant, illustration only for two-redundant problems).",
+          "Concepts of effect of pre-strain, lack of fit, temperature changes and support settlement. (Illustration only)."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Three Hinged Arches:  Action of an arch - Eddy’s theorem – Three hinged, parabolic and circular arches (with supports at same level) - determination of horizontal thrust, bending moment, normal thrust and radial shear.",
+          "Moving Loads and influence lines",
+          "Introduction to moving loads - concept of influence lines - influence lines for reaction, shear force and bending moment in simply supported beams and over hanging beams – analysis for different types of moving loads (single concentrated load - several concentrated loads - uniformly distributed load shorter and longer than the span) conditions for maximum bending moment and shear force."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply appropriate structural mechanics principles for estimation of force and deformation response of structural elements.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply energy-based techniques for estimation of deformation response of structural elements and simple structural systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse statically indeterminate structures using force method.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyse the effects of moving loads on structures using influence lines",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Mechanics of Structures Vol I & II",
+        "author": "S.B. Junnarkar & H.J. Shah",
+        "publisher": "Charotar Publishing House",
+        "edition": "2015"
+      },
+      {
+        "title": "Structural Analysis",
+        "author": "Devdas Menon",
+        "publisher": "Narosa Publishers, NewDelhi",
+        "edition": "3rd edition 2023"
+      },
+      {
+        "title": "Structural Analysis",
+        "author": "R.C. Hibbler",
+        "publisher": "Pearson Education",
+        "edition": "10 th edn. 2022"
+      },
+      {
+        "title": "Basic Structural Analysis,",
+        "author": "C.S. Reddy",
+        "publisher": "New Delhi: Tata McGrawHill, NewDelhi",
+        "edition": "3 rd Edn. ,2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Intermediate Structural Analysis,",
+        "author": "C.K. Wang",
+        "publisher": "Tata McGraw Hill Publishers",
+        "edition": "2017"
+      },
+      {
+        "title": "Elementary Structural Analysis",
+        "author": "J.B. Wilbur, C.H. Norris, and S. Utku",
+        "publisher": "McGraw Hill, NewYork",
+        "edition": "2006"
+      },
+      {
+        "title": "Structural Analysis",
+        "author": "L.S. Negi and R.S. Jangid",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2006"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/105105166",
+      "module2": "https://nptel.ac.in/courses/105105109",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "3",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:41:38.116Z"
+}

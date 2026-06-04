@@ -1,0 +1,164 @@
+{
+  "subject": "POLYMERS & POLYMERISATION PRINCIPLES",
+  "branch": "Mechanical Engineering",
+  "semester": 2,
+  "details": {
+    "name": "POLYMERS & POLYMERISATION PRINCIPLES",
+    "courseCode": "PCPOT205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Monomers and Polymers: Definitions of monomer, repeat unit, oligomer, polymer, degree of polymerization, representation of polymer, functionality, bi-functional systems, poly-functional systems, advantages and disadvantages of polymers, classification of polymers.",
+          "structure of monomer, repeat unit and polymer of the following- polyethylene, polypropylene, polystyrene, PVC, polyacrylonitrile, polycarbonate, PMMA, PF resin, MF resin, Nylon 6, Nylon 66 and PET, epoxy polymer, Kevlar, natural rubber, silicone rubber."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Molecular weight: High molecular weight of polymers, concept of averaging, different averages in polymer molecular weight, number average, weight average, viscosity average, z-average, MWD, polydispersity index, principles of osmotic pressure method and viscometry, Experimental methods to determine weight average and z-average molecular weight ."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Types of Polymerisation : Linear step polymerisation, Carothers equation, non linear step polymerization, Addition polymerization- Free radical polymerisarion,Cationic polymerization, anionic polymerization, Co- ordination polymerization, Co polymerisation, different types of copolymers, alternating, random, block and graft copolymer, copolymerization drift, derivation of copolymer equation."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Polymerisation techniques: Bulk polymerisation, Solution polymerisation, Suspension polymerization, Emulsion polymerisation, Interfacial polymerisation."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.Two questions will be given from each module, out of which 1 question should be answered.Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the structural requirements of polymerisation",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Illustrate structural formula of simple plastic and rubber materials",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the basic concepts of average molecular weights",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the basic principles of addition polymerization, stereo- regularity, ionic polymerisation and co polymerisation.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Compare and correlate various polymerisation techniques.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "The Elements of Polymer Science and Engineering",
+        "author": "A. Rudin, P. Choi,",
+        "publisher": "Academic Press",
+        "edition": "Third edition,2013"
+      },
+      {
+        "title": "Textbook of Polymer Science",
+        "author": "F W Billmeyer",
+        "publisher": "John Wiley & Sons",
+        "edition": "Third Edition, 2007"
+      },
+      {
+        "title": "Introduction  to Physical Polymer Science",
+        "author": "L H. Sperling",
+        "publisher": "Wiley & Sons",
+        "edition": "2015"
+      },
+      {
+        "title": "Polymer Science",
+        "author": "V. R. Gowariker, N. V. Viswanathan, Jayadev Sreedhar",
+        "publisher": "New Age International",
+        "edition": "2015"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Fundamentals  of Polymer Science for Engineers",
+        "author": "S. Fakirov",
+        "publisher": "John Wiley & Sons",
+        "edition": "2017"
+      },
+      {
+        "title": "Polymer Chemistry",
+        "author": "Charles E. Carraher Jr",
+        "publisher": "CRC Press",
+        "edition": "2013"
+      },
+      {
+        "title": "Introduction to Polymers",
+        "author": "Robert J. Young",
+        "publisher": "CRC Press",
+        "edition": "2011"
+      },
+      {
+        "title": "Principles of Polymer Systems",
+        "author": "F. Rodrigues",
+        "publisher": "CRC Press",
+        "edition": "2014"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/content/mp4/105/106/105106205/MP4/mod01lec03.mp4",
+      "module2": "https://archive.nptel.ac.in/content/mp4/105/106/105106205/MP4/mod01lec05.mp4",
+      "module3": "https://archive.nptel.ac.in/content/mp4/105/106/105106205/MP4/mod09lec66.mp4",
+      "module4": "https://archive.nptel.ac.in/content/mp4/105/106/105106205/MP4/mod01lec06.mp4"
+    },
+    "semester": "2",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:46:36.557Z"
+}

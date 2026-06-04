@@ -1,0 +1,269 @@
+{
+  "subject": "LOGIC CIRCUIT DESIGN LABORATORY",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 3,
+  "details": {
+    "name": "LOGIC CIRCUIT DESIGN LABORATORY",
+    "courseCode": "PCECL308",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Realization of functions using basic and universal gates (SOP and POS forms)."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Design and Realization of half/full adder and subtractor using basic gates and universal gates."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "4 bit adder/subtractor and BCD adder using 7483"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Study of Flip Flops : S-R, D, T, JK and Master slave JK FF using NAND gates"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "Asynchronous Counter : 3 bit up/down counter, Realization of Mod N Counter"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "Synchronous Counter: Realization of 4-bit up/down counter, Realization of Mod-N counters"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "Ring counter and Johnson Counter."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 8,
+        "topics": [
+          "Realization of counters using IC’s (7490, 7492, 7493)."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 9,
+        "topics": [
+          "Realization of combinational circuits using MUX & DEMUX, using ICs (74150, 74154)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 10,
+        "topics": [
+          "Sequence Generator / Detector"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 11,
+        "topics": [
+          "Experiment 1: Realization of Logic Gates and Familiarization of FPGAs",
+          "(a) Familiarization of a small FPGA board and its ports and interface.",
+          "(b) Create the .pcf files for your FPGA board.",
+          "(c) Familiarization of the basic syntax of verilog",
+          "Development of verilog modules for basic gates, synthesis and implementation in the above FPGA to verify the truth tables.",
+          "(e) Verify the universality and non associativity of NAND and NOR gates by uploading the corresponding verilog files to the FPGA boards."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 12,
+        "topics": [
+          "Experiment 2: Adders in Verilog",
+          "(a) Development of verilog modules for half adder in any of the 3 modeling styles",
+          "(b) Development of verilog modules for full adder in structural modeling using half adder."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 13,
+        "topics": [
+          "Experiment 3: Mux and Demux in Verilog",
+          "(a) Development of verilog modules for a 4x1 MUX.",
+          "(b) Development of verilog modules for a 1x4 DEMUX."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 14,
+        "topics": [
+          "Experiment 4: Flipflops and counters",
+          "(a) Development of verilog modules for SR, JK and D flipflops.",
+          "(b) Development of verilog modules for a binary decade/Johnson/Ring counters"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 15,
+        "topics": [
+          "Experiment 5. Multiplexer and Logic Implementation in FPGA",
+          "(a) Make a gate level design of an 8 : 1 multiplexer, write to FPGA and test its functionality.",
+          "(b) Use the above module to realize any logic function"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 16,
+        "topics": [
+          "Experiment 6. Flip-Flops and their Conversion in FPGA",
+          "(a) Make gate level designs of J-K, J-K master-slave, T and D flip-flops, implement and test them on the FPGA board.",
+          "(b) Implement and test the conversions such as T to D, D to T, J-K to T and J-K to D"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 17,
+        "topics": [
+          "Experiment 7: Asynchronous and Synchronous Counters in FPGA",
+          "(a) Make a design of a 4-bit up down ripple counter using T-flip-flops in the previous experiment, implement and test them on the FPGA board.",
+          "(b) Make a design of a 4-bit up down synchronous counter using T-flip-lops in the previous experiment, implement and test them on the FPGA board."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 18,
+        "topics": [
+          "Experiment 8: Universal Shift Register in FPGA",
+          "(a) Make a design of a 4-bit universal shift register using D-flip-flops in the previous experiment, implement and test them on the FPGA board.",
+          "(b) Implement ring and Johnson counters with it."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 19,
+        "topics": [
+          "Experiment 9. BCD to Seven Segment Decoder in FPGA",
+          "(a) Make a gate level design of a seven segment decoder, write to FPGA and test its functionality.",
+          "(b) Test it with switches and seven segment display. Use ouput ports for connection to the display."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 0,
+        "internalExam2": 20,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/ Preparatory work/Design/ Algorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/ Execution of work/ troubleshooting/ Programming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Design and demonstrate the functioning of various combinational and sequential circuits using ICs",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply an industry compatible hardware description language to implement digital circuits",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Implement digital circuits on FPGA boards and connect external hardware to the boards",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Function effectively as an individual and in a team to accomplish the given task.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Verilog HDL Synthesis: A Practical Primer",
+        "author": "J. Bhasker",
+        "publisher": "B. S. Publications",
+        "edition": "2001"
+      },
+      {
+        "title": "Fundamentals of Logic Design",
+        "author": "Roth C.H",
+        "publisher": "Jaico Publishers.",
+        "edition": "V"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Verilog HDL :A guide to digital design and synthesis",
+        "author": "Palnitkar S.",
+        "publisher": "Prentice Hall;",
+        "edition": "2nd Edn.,"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "3",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:46:15.663Z"
+}

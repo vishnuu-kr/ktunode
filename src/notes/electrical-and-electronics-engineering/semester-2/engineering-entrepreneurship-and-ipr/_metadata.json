@@ -1,0 +1,237 @@
+{
+  "subject": "ENGINEERING ENTREPRENEURSHIP AND IPR",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 2,
+  "details": {
+    "name": "ENGINEERING ENTREPRENEURSHIP AND IPR",
+    "courseCode": "UCEST206",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 60,
+    "ESE": 40,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction  to Ideation, Innovation  & Entrepreneurship",
+          "What is Ideation?",
+          "Understanding Innovation",
+          "Frameworks for Innovation",
+          "The Entrepreneurial Mindset",
+          "Starting a Business, types formation statutory compliances.",
+          "Resources for Aspiring Entrepreneurs",
+          "Introduction  to Intellectual  Property  Rights (IPR)",
+          "Types of IPR: Patents, trademarks, copyrights, trade secrets",
+          "Strategies for protecting intellectual property based on the type of innovation",
+          "Role of IPR in securing funding and competitive advantage",
+          "Importance of building a strong team",
+          "Identifying roles",
+          "Skill sets",
+          "Team dynamics",
+          "Identifying Pain Points and problem statement",
+          "Idea Generation Techniques",
+          "Developing and Refining Ideas",
+          "Develop strategies for bringing your innovation to life"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Problem and solution canvas preparation",
+          "Orientation and canvas introduction",
+          "Customer needs assessment",
+          "Market segmentation",
+          "Value proposition",
+          "Competitive analysis",
+          "Market entry strategy",
+          "Market validation",
+          "Regulatory and legal considerations",
+          "Customer profiling",
+          "Review of market research",
+          "Customer segmentation",
+          "Customer profiling",
+          "Persona development",
+          "Validation and feedback",
+          "Prioritisation and selection",
+          "Communication and messaging",
+          "Competitor analysis",
+          "Identify competitors",
+          "Competitor  profiling",
+          "SWOT analysis",
+          "Market positioning",
+          "Customer feedback and reviews",
+          "Pricing analysis",
+          "Differentiation strategy",
+          "Benchmarking and improvement"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Business plan preparation",
+          "Business plan framework",
+          "Market analysis",
+          "Product/ service description",
+          "Marketing and sales strategy",
+          "Operations plan",
+          "Financial projections",
+          "Risk management",
+          "Prototype development plan preparation",
+          "Prototype requirements analysis",
+          "Technical specifications",
+          "Development approach",
+          "Development timeline",
+          "Resource allocation",
+          "Testing and quality assurance",
+          "Iterative development and feedback loop",
+          "Documentation and version control"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Prototype development Stakeholder engagement strategies",
+          "Investors",
+          "Partners",
+          "Customers",
+          "Advisors & Mentors"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 35,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 60
+      },
+      "ESE": {
+        "partA": {
+          "description": "Minimum 1 and Maximum 2 \nQuestions from each module.\nTotal of 6 Questions, each carrying 2   (6x2 =12 marks)",
+          "marks": 12
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 subdivisions.\nEach question carries 7 marks.",
+          "marks": 28
+        },
+        "total": 40
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Gain foundational knowledge of Innovation and Entrepreneurship, Intellectual Property Rights (IPR) and their importance for startups.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Develop a framework for identifying, curating and validating engineering-based business ideas.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Learn essential tools for understanding product-market fit and customer needs.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Create a comprehensive business plan for a new venture.",
+        "knowledgeLevel": "K6"
+      },
+      {
+        "CO": "CO5",
+        "description": "Develop skills for prototyping, stakeholder engagement, and team collaboration.",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "The Engineering Handbook",
+        "author": "Richard C.Dorf",
+        "publisher": "CRC Press",
+        "edition": "2nd Edn, 2004"
+      },
+      {
+        "title": "The Innovator's DNA",
+        "author": "Clayton M. Christensen and Jeffrey H. Dyer",
+        "publisher": "Harvard Business Review Press; Revised edition (June 4, 2019)",
+        "edition": ""
+      },
+      {
+        "title": "Start with Why",
+        "author": "Simon sinek",
+        "publisher": "Portfolio Reprint edition (December 27, 2011)",
+        "edition": ""
+      },
+      {
+        "title": "Business Model Generation",
+        "author": "Alexander Osterwalder & Yves Pigneur",
+        "publisher": "Wiley",
+        "edition": "2010"
+      },
+      {
+        "title": "The Engineering Entrepreneur: A Practical Guide to Starting and Running a Successful Engineering Business in India",
+        "author": "Saibal Gupta and Ashok Jhunjhunwala",
+        "publisher": "Sage Publications",
+        "edition": "2011"
+      },
+      {
+        "title": "Innovation and Entrepreneurship for Engineers",
+        "author": "Bharat Bhushan and Seema  Bhushan",
+        "publisher": "CRS Press",
+        "edition": "2016"
+      },
+      {
+        "title": "Indian Patent Law",
+        "author": "P. Narayanan",
+        "publisher": "Eastern Book Company",
+        "edition": "2nd edn/ 2020"
+      },
+      {
+        "title": "The Law of Copyright  and Designs",
+        "author": "B.L. Wadehra",
+        "publisher": "Universal Law",
+        "edition": "5th edn/2010"
+      },
+      {
+        "title": "Intellectual Property Rights (Including IPR in the Digital Age)",
+        "author": "Prabuddha Ganguli",
+        "publisher": "Tata McGraw-Hill Education",
+        "edition": "2001"
+      },
+      {
+        "title": "The Startup India Manifesto: A Guide to the Indian Startup Ecosystem",
+        "author": "Rashmi Bansal and Deepinder Goyal",
+        "publisher": "Westland Publications",
+        "edition": "2020"
+      }
+    ],
+    "referenceBooks": [],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "2",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:05:30.551Z"
+}

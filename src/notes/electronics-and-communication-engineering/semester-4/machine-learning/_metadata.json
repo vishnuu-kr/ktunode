@@ -1,0 +1,194 @@
+{
+  "subject": "MACHINE LEARNING",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 4,
+  "details": {
+    "name": "MACHINE LEARNING",
+    "courseCode": "PEECT413",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "NONE",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Review: supervised, unsupervised machine learning techniques",
+          "dimensionality reduction techniques-PCA, SVD",
+          "Instance-Based vs   Model-Based Learning",
+          "Machine Learning models",
+          "Hyper parameters",
+          "regularization",
+          "Training - Batch and Online Learning",
+          "Challenges of Machine Learning: Data Issues-Quality, Relevancy",
+          "Over fitting, under fitting",
+          "Bias, variance",
+          "Performance metrics: Accuracy Recall, Precision, ROC curve"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "module 1"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Regression: linear regression, logistic regression error functions in regression",
+          "MSE, L1, L2, Cross entropy multivariate regression",
+          "Classification: Naive Bayes classifier",
+          "Support Vector machines",
+          "Decision trees -random forests",
+          "Ensemble methods: boosting, bagging"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Unsupervised learning: Clustering-K-means, High, Hierarchical clustering",
+          "criterion functions for clustering",
+          "proximity measures",
+          "Euclidean, Manhattan, Minkowski Distances",
+          "Cosine Similarity",
+          "Reinforcement Learning: Agent based learning",
+          "Q-learning",
+          "Introduction to HMM models"
+        ],
+        "contactHours": 7,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to Artificial Neural Networks: Biological Neuron",
+          "Perceptron",
+          "Training",
+          "limitations",
+          "XOR problem",
+          "Multilayer perceptron",
+          "Gradient based learning",
+          "stochastic gradient descent",
+          "Activation Functions-Sigmoid, ReLU, tanh",
+          "Back propagation- Chain rule",
+          "Regularization- L1, L2"
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "module 4"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Analyze and apply supervised and unsupervised machine learning techniques to solve various data-driven problems.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO2",
+        "description": "Develop, train, and optimize regression and classification models",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Design and execute clustering techniques, and assess their effectiveness using various proximity measures.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply unsupervised learning techniques and understand reinforcement learning for complex problem-solving.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Hands-on Machine learning with Sc-kit Learn Keras and Tensorflow",
+        "author": "Aurelien Geron",
+        "publisher": "Oreilly",
+        "edition": "Second edition 2019"
+      },
+      {
+        "title": "Machine learning for absolute beginners",
+        "author": "Oliver Theobald",
+        "publisher": "",
+        "edition": "Second edition"
+      },
+      {
+        "title": "Learning Deep Learning",
+        "author": "Magnus Ekman",
+        "publisher": "Addison -Wesley",
+        "edition": "2022"
+      },
+      {
+        "title": "Introduction to Machine learning with Python",
+        "author": "Andreas C. Müller & Sarah Guido",
+        "publisher": "O’Reilly",
+        "edition": "2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "“Pattern Recognition and Machine Learning”",
+        "author": ". Bishop, C. M.",
+        "publisher": "Springer, New York,",
+        "edition": "2006."
+      },
+      {
+        "title": "“Pattern Recognition”.",
+        "author": "Theodoridis, S. and Koutroumbas, K.",
+        "publisher": "Academic Press, San Diego,.",
+        "edition": "2003"
+      },
+      {
+        "title": "Artificial Intelligence : a Modern Approach.",
+        "author": "Russell, Stuart J.",
+        "publisher": ":Prentice Hall,",
+        "edition": "2010."
+      },
+      {
+        "title": "CS229 Lecture Notes",
+        "author": "Andrew Ng and Tengyu Ma",
+        "publisher": "https://cs229.stanford.edu/main_notes.pdf",
+        "edition": "2023"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc23_cs18/preview",
+      "module2": "https://see.stanford.edu/Course/CS229",
+      "module3": "https://onlinecourses.nptel.ac.in/noc23_cs18/preview",
+      "module4": "https://www.3blue1brown.com/topics/neural-networks"
+    },
+    "semester": "4",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:50:05.794Z"
+}

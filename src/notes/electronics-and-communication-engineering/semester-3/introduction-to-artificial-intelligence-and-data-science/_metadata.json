@@ -1,0 +1,220 @@
+{
+  "subject": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE AND DATA \nSCIENCE",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 3,
+  "details": {
+    "name": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE AND DATA \nSCIENCE",
+    "courseCode": "GNEST305",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to AI and Machine Learning : Basics of Machine Learning",
+          "types of Machine Learning systems-challenges in ML",
+          "Supervised learning model example",
+          "regression models",
+          "Classification model example",
+          "Logistic regression",
+          "unsupervised model example",
+          "K-means clustering",
+          "Artificial Neural Network",
+          "Perceptron",
+          "Universal Approximation Theorem (statement only)",
+          "Multi-Layer Perceptron",
+          "Deep Neural Network",
+          "demonstration of regression and classification problems using MLP."
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "Text-2"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Mathematical Foundations of AI and Data science : Role of linear algebra in Data representation and analysis",
+          "Matrix decomposition",
+          "Singular Value Decomposition (SVD)",
+          "Spectral decomposition",
+          "Dimensionality reduction technique",
+          "Principal Component Analysis (PCA)."
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "Text-1"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Applied Probability and Statistics for AI and Data Science : Basics of probability",
+          "random variables and statistical measures",
+          "rules in probability",
+          "Bayes theorem and its applications",
+          "statistical estimation",
+          "Maximum Likelihood Estimator (MLE)",
+          "statistical summaries",
+          "Correlation analysis",
+          "linear correlation (direct problems only)",
+          "regression analysis",
+          "linear regression (using least square method)"
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "Text book 4 "
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Basics of Data Science : Benefits of data science",
+          "use of statistics and Machine Learning in Data Science",
+          "data science process",
+          "applications of Machine Learning in Data Science",
+          "modelling process",
+          "demonstration of ML applications in data science",
+          "Big Data and Data Science.",
+          "(For visualization the software tools like Tableau, PowerBI, R or Python can be used.",
+          "For Machine Learning implementation, Python, MATLAB or R can be used.)"
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "Text book-5"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply the concept of machine learning algorithms including neural \nnetworks and supervised/unsupervised learning techniques for \nengineering applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply advanced mathematical concepts such as matrix operations, \nsingular values, and principal component analysis to analyze and solve \nengineering problems .",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyze and interpret data using statistical methods including \ndescriptive statistics, correlation, and regression analysis to derive \nmeaningful insights and make informed decisions.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Integrate statistical approaches and machine learning techniques to \nensure practically feasible solutions in engineering contexts.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Introduction to Linear Algebra",
+        "author": "Gilbert Strang",
+        "publisher": "Wellesley-\nCambridge  \nPress",
+        "edition": "6th edition, \n2023"
+      },
+      {
+        "title": "Hands-on machine learning with \nScikit-Learn, Keras, and \nTensorFlow",
+        "author": "Aurélien Géron",
+        "publisher": "O'Reilly Media, Inc.",
+        "edition": "2nd \nedition,202\n2"
+      },
+      {
+        "title": "Mathematics for machine learning",
+        "author": "Deisenroth, Marc \nPeter, \nA. Aldo Faisal, and \nCheng Soon Ong",
+        "publisher": "Cambridge \nUniversity \nPress",
+        "edition": "1st edition. \n2020"
+      },
+      {
+        "title": "Fundamentals of mathematical \nstatistics",
+        "author": "Gupta, S. C., and V. \nK.\nKapoor",
+        "publisher": "Sultan Chand & Sons",
+        "edition": "9th edition, \n2020"
+      },
+      {
+        "title": "Introducing data science: big \ndata, machine learning, and \nmore, using Python tools",
+        "author": "Cielen, Davy, and \nArno Meysman",
+        "publisher": "Simon and Schuster",
+        "edition": "1st \nedition\n, 2016"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Data science: concepts and \npractice",
+        "author": "Kotu, \nVijay, and \nBala \nDeshpande",
+        "publisher": "Morgan Kaufmann",
+        "edition": "2nd edition, 2018"
+      },
+      {
+        "title": "Probability and Statistics for \nData Science",
+        "author": "Carlos \nFernandez-\nGranda",
+        "publisher": "Center for Data \nScience in NYU",
+        "edition": "1st edition, 2017"
+      },
+      {
+        "title": "Foundations of Data Science",
+        "author": "Avrim \nBlum, John \nHopcroft, \nand Ravi \nKannan",
+        "publisher": "Cambridge University \nPress",
+        "edition": "1st edition, 2020"
+      },
+      {
+        "title": "Statistics For Data Science",
+        "author": "James D. \nMiller",
+        "publisher": "Packt Publishing",
+        "edition": "1st edition, 2019"
+      },
+      {
+        "title": "Probability and Statistics - The \nScience of Uncertainty",
+        "author": "Michael J. \nEvans and \nJeffrey S. \nRosenthal",
+        "publisher": "University of Toronto",
+        "edition": "1st edition, 2009"
+      },
+      {
+        "title": "An Introduction to the \nScience of Statistics: From \nTheory to Implementation",
+        "author": "Joseph C. \nWatkins",
+        "publisher": "chrome- \nextension://efaidnbmn \nnnibpcajpcglclefindm \nkaj/https://www.math. \narizo",
+        "edition": "Preliminary \nEdition."
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/106/106106198/",
+      "module2": "https://archive.nptel.ac.in/courses/106/106/106106198/\nhttps://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-\nvalue-decomposition/",
+      "module3": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/resources/lecture-19-\nvideo/",
+      "module4": "https://archive.nptel.ac.in/courses/106/106/106106198/"
+    },
+    "semester": "3",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:45:31.762Z"
+}

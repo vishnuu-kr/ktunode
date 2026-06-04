@@ -1,0 +1,182 @@
+{
+  "subject": "DATA MINING",
+  "branch": "Computer Science and Engineering",
+  "semester": 5,
+  "details": {
+    "name": "DATA MINING",
+    "courseCode": "PECST525",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Data Mining  - concepts and applications",
+          "Knowledge Discovery in Database Vs Data mining",
+          "Architecture of typical data mining system",
+          "Data Mining Functionalities",
+          "Data warehouse  - Differences between Operational Database Systems and Data Warehouses",
+          "Multidimensional data model- Warehouse schema",
+          "OLAP Operations",
+          "Data Warehouse  Architecture"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Data Preprocessing - Need of data preprocessing",
+          "Data Cleaning- Missing values",
+          "Noisy data",
+          "Data Integration and Transformation",
+          "Data Reduction - Data cube aggregation",
+          "Attribute subset selection",
+          "Dimensionality reduction",
+          "Numerosity reduction",
+          "Discretization and concept hierarchy generation"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Classification - Introduction",
+          "Decision tree construction principle",
+          "Information Gain",
+          "Gini index",
+          "Decision tree construction algorithm - ID3",
+          "Neural networks",
+          "back propagation",
+          "Evaluation measures - accuracy",
+          "precision",
+          "recall",
+          "F1 score",
+          "Clustering - Introduction to clustering",
+          "distance measures",
+          "Clustering Paradigms",
+          "Partitioning Algorithm - k means",
+          "Hierarchical  Clustering",
+          "DBSCAN"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Association Rule Mining - Concepts",
+          "Apriori algorithm",
+          "FP Growth Algorithm",
+          "Web Mining - Web Content Mining",
+          "Web Structure Mining- Page Rank",
+          "Web Usage Mining- Preprocessing",
+          "Data structures",
+          "Pattern Discovery",
+          "Pattern Analysis",
+          "Text Mining - Text Data Analysis and information Retrieval",
+          "Basic measures for Text retrieval",
+          "Text Retrieval methods",
+          "Text Indexing Technique"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 0,
+        "assignmentOrMicroproject": 0,
+        "internalExam1": 0,
+        "internalExam2": 0,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. \nTotal of 8 Questions, each carrying 3 marks (8x3 =24 marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 subdivisions. Each question carries 9 marks. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the key process of data mining and data warehousing concepts in application domains.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply appropriate pre-processing techniques to convert raw data into suitable  format for practical data mining tasks",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Illustrate the use of classification and clustering algorithms in various application domains",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Comprehend the use of association rule mining techniques",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Explain advanced data mining concepts and their applications in emerging domains",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Data Mining Concepts and Techniques",
+        "author": "Jaiwei Han, Micheline Kamber",
+        "publisher": "Elsevier",
+        "edition": "3/e, 2006"
+      },
+      {
+        "title": "Data Mining: Introductory and Advanced Topics",
+        "author": "Dunham M H",
+        "publisher": "Pearson Education",
+        "edition": "1/e, 2006"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Introduction to Data Mining",
+        "author": "Pang-Ning Tan, Michael Steinbach",
+        "publisher": "Addison Wesley",
+        "edition": "1/e, 2014"
+      },
+      {
+        "title": "Data Mining: Concepts, Models, Methods, and Algorithms",
+        "author": "Mehmed Kantardzic",
+        "publisher": "Wiley",
+        "edition": "2/e, 2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://youtu.be/ykZ-_UGcYWg?si=qiqynQyjI1sNNiHE",
+      "module2": "https://youtu.be/NSxEiohAH5o?si=ZIJHMiRvpFcNQNMA",
+      "module3": "https://youtu.be/VsYKqOokgaE?si=rgndBZqpzB29LUGg",
+      "module4": "https://youtu.be/N_whCVtfL9M?si=VPMH9NP4vdAaiuPe"
+    },
+    "semester": "5",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:44:51.195Z"
+}

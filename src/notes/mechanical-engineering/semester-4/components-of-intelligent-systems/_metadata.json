@@ -1,0 +1,209 @@
+{
+  "subject": "COMPONENTS OF INTELLIGENT SYSTEMS",
+  "branch": "Mechanical Engineering",
+  "semester": 4,
+  "details": {
+    "name": "COMPONENTS OF INTELLIGENT SYSTEMS",
+    "courseCode": "PEMET414",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Sensors and Transducers",
+          "Internal Sensors : Position - Optical Encoders",
+          "Potentiometers",
+          "LVDT",
+          "Velocity - Encoders",
+          "Tachogenerators",
+          "Acceleration – Different types of accelerometers",
+          "Gyroscopes",
+          "IMU",
+          "Force transducers",
+          "External Sensors : Contact Sensors",
+          "Inductive and Capacitive Proximity sensors",
+          "GPS",
+          "Ultrasonic transducers and SONAR",
+          "RADAR and Doppler effect",
+          "LIDAR",
+          "Sensor Characteristics : Sensitivity",
+          "Linearity",
+          "Measurement /Dynamic range",
+          "Response Time",
+          "Accuracy",
+          "Repeatability and Precision",
+          "Resolution & Threshold",
+          "Bandwidth"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Actuators",
+          "Hydraulic and Pneumatic Actuators:  Working of Hydraulic and Pneumatic Actuators at block diagram level",
+          "advantages and disadvantages of each",
+          "Electric Actuators:  Electric motors - DC motors",
+          "Stepper motors",
+          "Servo motors",
+          "BLDC motors",
+          "Transmission Elements",
+          "advantages and disadvantages of Electric Actuators"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Microcontrollers",
+          "Definitions of microprocessors and microcontrollers with basic block diagrams and differences between them",
+          "Arduino Uno microcontroller:  Board Study (Board level Block schematic) - Chip (Features only – Architecture not needed), GPIO, Memory, Programming Interface",
+          "Programming : Arduino IDE",
+          "Sample Code for interfacing LED and Switch",
+          "DC motor and Stepper motor control",
+          "LCD Interfacing"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to Embedded Systems and IoT",
+          "Embedded Systems: Applications of embedded systems-Consumer electronics",
+          "Robotics",
+          "Automobiles",
+          "Embedded System Architecture:  Hardware - Processor",
+          "Controller",
+          "Memory",
+          "Peripherals; Software - Application",
+          "Middleware",
+          "OS",
+          "Device Drivers",
+          "Tool chain- Assembler",
+          "Interpreter",
+          "Compiler",
+          "Linker",
+          "Loader",
+          "Debugger",
+          "IoT: Definition",
+          "Impact of IoT in Manufacturing",
+          "Smart homes",
+          "Transportation and Cities",
+          "Wired Communication: Basics of  Serial communication (UART, SPI, I2C)",
+          "Wireless Communication:  Basics of  Wi-Fi",
+          "Bluetooth",
+          "Zigbee",
+          "LoRa, and NFC",
+          "Case Study: Design and implementation of a simple Embedded/IoT project"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the working of sensors and transducers",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe the operation of actuators for intelligent systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Develop the hardware and software for microcontroller based systems for actuation",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Outline the basic concepts of  Embedded Systems and IoT",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Introduction to Robotics",
+        "author": "S K Saha",
+        "publisher": "McGraw-Hill Education (India)",
+        "edition": "2008"
+      },
+      {
+        "title": "Sensors, Actuators, and their Interfaces: A multidisciplinary introduction",
+        "author": "SciTech Publishing Inc",
+        "publisher": "SciTech Publishing Inc",
+        "edition": "2011"
+      },
+      {
+        "title": "Beginning Arduino",
+        "author": "Michael McRoberts",
+        "publisher": "Apress",
+        "edition": "1st Edition, 2011"
+      },
+      {
+        "title": "Embedded Systems: An Integrated Approach",
+        "author": "Lyla B Das",
+        "publisher": "Pearson Education India",
+        "edition": "1st Edition, 2012"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Sensors and Transducers",
+        "author": "D. Patranabis",
+        "publisher": "PHI Learning",
+        "edition": "2nd edition, 2003"
+      },
+      {
+        "title": "Embedded Systems Architecture, programming and Design",
+        "author": "Raj Kamal",
+        "publisher": "Tata McGraw-Hil",
+        "edition": "3rd edition, 2013"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.swayam2.ac.in/aic20_sp04/unit?unit=4&lesson=7",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:51:26.152Z"
+}

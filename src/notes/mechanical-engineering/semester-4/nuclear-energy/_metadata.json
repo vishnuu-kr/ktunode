@@ -1,0 +1,222 @@
+{
+  "subject": "NUCLEAR ENERGY",
+  "branch": "Mechanical Engineering",
+  "semester": 4,
+  "details": {
+    "name": "NUCLEAR ENERGY",
+    "courseCode": "PEMET412",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Mins.",
+    "prerequisites": "Nil",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "MOTIVATION FOR NUCLEAR ENERGY SOURCE: Role of electricity",
+          "energy disparities among countries",
+          "energy sources",
+          "present source of energy",
+          "global resource estimates",
+          "issues associated with fossil fuels",
+          "potential role of nuclear energy",
+          "current status of nuclear energy & Indian energy resources.",
+          "BASIC PHYSICS OF NUCLEAR REACTORS: Isotopes",
+          "binding energy",
+          "nuclear stability",
+          "α, β, γ and neutron interactions",
+          "concept of neutron cross section",
+          "radioactive decay law",
+          "units of radioactivity",
+          "Fission – fission energy",
+          "critical mass",
+          "Gabon – natural reactor",
+          "liquid drop model of fission cross section",
+          "prompt & delayed neutrons",
+          "neutron life cycle",
+          "infinite multiplication factor and 4  factor formula and 6 factor formula",
+          "effective multiplication factor",
+          "neutron moderation",
+          "moderator",
+          "slowing down",
+          "criticality",
+          "reactive power",
+          "reactor kinetics & control. (Analytical treatment excluded)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "REACTOR  FUEL CYCLE",
+          "fuel cycle material balance",
+          "uranium mining & milling",
+          "uranium conversion to uranium hexafluoride",
+          "enrichment – gaseous: diffusion & centrifuge",
+          "fuel fabrication",
+          "commuting radioactive materials",
+          "storage of spent fuel",
+          "reprocessing – solvent extraction: purex, urex, truex, pyro processing: electrolysis. (Analytical treatment excluded)"
+        ],
+        "contactHours": 6,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "COMPONENTS OF NUCLEAR REACTOR:  Fermi pile – control, safety, radiation monitoring",
+          "reactor core",
+          "fuel",
+          "control rods",
+          "moderator",
+          "essential core components",
+          "containment",
+          "core catcher",
+          "steam generator",
+          "turbine generator",
+          "steam water system",
+          "turbine generator",
+          "steam water system",
+          "fuel handling",
+          "cooling spent fuel",
+          "Nuclear reactor types-  pressurized water reactor",
+          "boiling water reactor",
+          "Canada-deuterium reactor",
+          "solid cooled fast reactor",
+          "advanced gas cooled reactor.",
+          "NEXT GENERATION REACTORS: basic knowledge and conceptual difference of next generation reactors only – Generation I, II, III, IV;.",
+          "Fusion reaction- Lawson criterion",
+          "inertial and magnetic confinements (Analytical treatment excluded)"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "RADIATION SAFETY ANDNUCLEAR WASTE MANAGEMENT: ; Biological effects of radiation and shielding Radioactive waste type – exempted and low-level waste",
+          "classified low, intermediate and high level waste",
+          "treatment and conditioning of nuclear waste – incineration",
+          "compaction",
+          "cementation",
+          "vitrification",
+          "Waste disposal methods – near surface disposal",
+          "deep geological disposal",
+          "disposal at outer space",
+          "deep boreholes and disposal at sea.",
+          "INDIAN POWER PROGRAM: installing a nuclear establishment",
+          "research reactor apsara",
+          "Canada-India research reactor",
+          "Indian 3 stage nuclear program – advanced heavy water reactor",
+          "accelerator driven sub-critical systems",
+          "compact temperature reactor. (Analytical treatment excluded)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe the key components of a nuclear reactor system and their functions",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the principles of reactor control and safety mechanism",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse the role of fuel cycle",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Discuss importance of containment structures & mitigation strategy for potential accidents",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Evaluate different options for fuel handling and spent fuel management",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO6",
+        "description": "Understand the regulatory framework for nuclear reactor safety",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO7",
+        "description": "Critically analyse the safety aspects of historic and future reactor design",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Engineering Physics",
+        "author": "R K Guptha& S L Gaur",
+        "publisher": "DhanpatRai Publications",
+        "edition": "45th Edition\n(2012)"
+      },
+      {
+        "title": "Nuclear reactor engineering",
+        "author": "Dr G Vaidyanathan",
+        "publisher": "S Chand & co Pvt Ltd",
+        "edition": "1st Edition\n(2013)"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Nuclear Reactor Engineering",
+        "author": "S. Glasstone and A. \nSesonske,",
+        "publisher": "D. Van Nostrand\nCompany, INC.",
+        "edition": "1967"
+      },
+      {
+        "title": "Source book on atomic energy",
+        "author": "S Glasstone",
+        "publisher": "D.VanNostrand\nCo,196",
+        "edition": "1967"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/112/101/112101007/",
+      "module2": "https://www.youtube.com/watch?v=1U6Nzcv9Vws",
+      "module3": "https://www.youtube.com/watch?v=jpDRfaWYk3I",
+      "module4": "https://archive.nptel.ac.in/courses/112/101/112101007/"
+    },
+    "semester": "4",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:55:15.519Z"
+}

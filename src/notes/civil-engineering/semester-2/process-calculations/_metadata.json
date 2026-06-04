@@ -1,0 +1,154 @@
+{
+  "subject": "PROCESS CALCULATIONS",
+  "branch": "Civil Engineering",
+  "semester": 2,
+  "details": {
+    "name": "PROCESS CALCULATIONS",
+    "courseCode": "PCCHT205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "NIL",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Basic Concepts: Introduction to Chemical Engineering, Chemical process Industry, Unit Operations and Unit Processes.",
+          "Units and Dimensions, Conversion of units, Conversion of equations- problems.",
+          "Composition of solids, liquids and solutions - weight percent, mole percent, molarity, normality, molality, ppm",
+          "Gaseous mixtures, Composition of gaseous mixtures, Average molecular weight and density, Ideal gas law, Dalton’s Law, Amagat’ Law, Vander Waals equation",
+          "Vapour Pressure: Effect of temperature on vapour pressure – Antoine Equation, Clausius-Clapeyron equation.",
+          "Problem solving in Equations of state, Vapor Pressure calculation using EXCEL /Matlab/ SCILAB/PYTHON etc. – only for self-study  /microproject/assignment."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Material Balance for unit operations - Introduction, key component",
+          "Material balance for unit operations like mixing, distillation, drying, evaporation, absorption, crystallization, extraction, leaching."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Material Balance for unit processes - Definition of terms - limiting reactant, excess reactant, percentage yield, conversion, selectivity",
+          "Orsat analysis, Material Balance for combustion, Recycle, bypass and purge operations.",
+          "Problem   solving   in   Material   balance   using   EXCEL/   Matlab/ SCILAB/ PYTHON etc.- only for self-study/microproject/assignment."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Energy Balance : Heat capacity of solids, liquids and gaseous mixtures, Kopp’s Rule, Latent Heats-Heat of fusion, heat of vaporization, Estimation of Heat of Vaporization - Kistyakowsky Equation, Trouton’s rule, Watson equation.",
+          "Heat effects accompanying chemical reactions - Standard heats of reaction, standard heat of combustion, and standard heat of formation, Hess’s law of constant heat summation. Effect of temperature and pressure on heat of reaction, temperature of reaction, adiabatic reaction temperature."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain fundamentals of Chemical Engineering, units and dimensions and estimate chemical composition and other  physical quantities of  solids, liquids, solutions, gases and mixtures",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Develop and solve basic material balance equations for the unit operations employed in process industries.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Develop and solve basic material balance equations for the unit  processes employed in process industries.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Develop and solve energy balance equations for various physical and chemical processes.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Implement and run software programs for solving stoichiometric problems",
+        "knowledgeLevel": "K5"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Stoichiometry and Process Calculations",
+        "author": "K.V. Narayanan, B. Lakshmikutty",
+        "publisher": "Prentice-Hall of India Pvt. Ltd.",
+        "edition": "2nd edition 2016"
+      },
+      {
+        "title": "Stoichiometry",
+        "author": "B.I. Bhatt, S.M. Vora",
+        "publisher": "McGraw Hill Publishing Company Limited.",
+        "edition": "6th edition 2021"
+      },
+      {
+        "title": "Basic Principles & Calculations  in Chemical Engineering",
+        "author": "David M. Himmelblau, James B. Riggs",
+        "publisher": "Prentice-Hall of India Pvt. Ltd.",
+        "edition": "8th edition 2016"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Chemical Process Principles Part-I: Material and Energy Balances",
+        "author": "O.A.Hougen, K.M.Watson, R.A.Ragatz",
+        "publisher": "CBS Publishers New Delhi",
+        "edition": "2nd Edition 1962"
+      },
+      {
+        "title": "Elementary Principles of  Chemical Processes",
+        "author": "Richard M. Felder, Ronald W. Rousseau",
+        "publisher": "Wiley",
+        "edition": "4th edition 2018"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/103/105/103105209/",
+      "module2": "https://archive.nptel.ac.in/courses/103/105/103105209/",
+      "module3": "https://archive.nptel.ac.in/courses/103/105/103105209/",
+      "module4": "https://archive.nptel.ac.in/courses/103/105/103105209/"
+    },
+    "semester": "2",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:38:10.270Z"
+}

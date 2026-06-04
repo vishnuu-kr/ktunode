@@ -1,0 +1,166 @@
+{
+  "subject": "ENGINEERING MECHANICS",
+  "branch": "Mechanical Engineering",
+  "semester": 1,
+  "details": {
+    "name": "ENGINEERING MECHANICS",
+    "courseCode": "GCEST103",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to statics: introduction to branches of mechanics",
+          "concept of rigid body scalars and vectors",
+          "vector operations",
+          "forces in space.",
+          "Support reactions of beams (point load and UDL only)",
+          "Force systems: rectangular components in 2D and 3D",
+          "moment and couple",
+          "resultants Equilibrium: system isolation and the free-body diagram",
+          "equilibrium conditions 2D and 3D"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Friction: -laws of friction – analysis of blocks and ladder",
+          "Centroid of composite areas- – moment of inertia- parallel axis and perpendicular axis theorems.",
+          "Polar moment of inertia",
+          "radius of gyration",
+          "mass moment of inertia-ring and disc"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Dynamics – rectilinear translation - equations of motion in kinematics and kinetics – D’Alembert’s principle.",
+          "–motion on horizontal and inclined surfaces",
+          "motion of connected bodies"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Curvilinear translation - equations of kinematics projectile motion (solution starting from differential equations)",
+          "Rotation – kinematics of rotation- equation of motion for a rigid body rotating about a fixed axis –rotation under a constant moment"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions. ",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the vector representation of forces and moments",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Identify and describe the components of system of forces acting on the rigid body",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply the conditions of equilibrium to different force system.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Identify appropriate principles to solve problems of mechanics.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Develop the understanding of fundamental principles of rigid body dynamics",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Engineering Mechanics",
+        "author": "Timoshenko and Young",
+        "publisher": "McGraw Hill Publishers",
+        "edition": "5th Edition 2017"
+      },
+      {
+        "title": "Engineering Mechanics: Combined Statics and Dynamics",
+        "author": "Russell C. Hibbeler",
+        "publisher": "Pearson Education,",
+        "edition": "14th Edition 2015"
+      },
+      {
+        "title": "Engineering Mechanics - Statics and Dynamics,",
+        "author": "Shames, I. H.",
+        "publisher": "Prentice Hall of India.",
+        "edition": "4th Edition  2008"
+      },
+      {
+        "title": "Textbook of Engineering Mechanics",
+        "author": "R. K. Bansal",
+        "publisher": "Laxmi publications pvt ltd.",
+        "edition": "4th Edition 2016"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Engineering Mechanics Statics",
+        "author": "J. L. Meriam, L. G.",
+        "publisher": "Wiley",
+        "edition": "9th Edition 2020"
+      },
+      {
+        "title": "Engineering Mechanics",
+        "author": "Kraige",
+        "publisher": "PHI Learning",
+        "edition": "2011"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/112106286",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "1",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:37:20.452Z"
+}

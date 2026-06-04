@@ -1,0 +1,148 @@
+{
+  "subject": "ADVANCED METAL JOINING TECHNIQUES",
+  "branch": "Mechanical Engineering",
+  "semester": 4,
+  "details": {
+    "name": "ADVANCED METAL JOINING TECHNIQUES",
+    "courseCode": "PEMET416",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Solid State Welding : Principle and mechanism of solid-state welding, techniques, process parameters and applications of diffusion welding, cold pressure welding.",
+          "Adhesive Bonding : Principle – types of adhesives, bonding methods – applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Explosive welding: principle and theory, equipment used, Process parameters and characteristics, weld joint design, Applications, advantages, and limitations.",
+          "Friction and Friction stir welding: principle and theory – Process parameters and applications, Tools, and Metal flow.",
+          "Ultrasonic Welding: principle, theory, and types – Welding environment, equipment used- Process parameters and characteristics, weld joint design and applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Electron Beam Welding (EBW) - principle and theory, Welding environment, equipment used- Process parameters and characteristics, weld joint design, Applications, advantages, and limitations.",
+          "Laser Beam Welding (LBW) – Principle and theory, types of lasers, Process parameters and characteristics, Applications, advantages, and limitations.",
+          "Plasma Arc Welding (PAW) – Theory – transferred arc and non-transferred arc techniques, equipment – applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Magnetically Impelled Arc Butt (MIAB) – principle and applications.",
+          "Under water welding – wet land dry under water welding- set-up for underwater welding systems.",
+          "Brazing – Principle – processes involved – torch brazing, furnace brazing, vacuum brazing, induction brazing – advantages and applications.",
+          "Micro-joining and nano-joining: Introduction, theory, and applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Summarise the Solid-state welding techniques and outline the physics of adhesive bonding.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Compare and select between explosive welding, friction welding and ultrasonic welding based on the applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand radiant energy welding technologies and explain the principle and working of EBW, LBW and PAW.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Outline the   modern   joining   technologies   and   select appropriate brazing technique to resolve modern metal joining problem.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Advanced welding Processes",
+        "author": "J. Norrish",
+        "publisher": "Woodhead publishing",
+        "edition": "2006"
+      },
+      {
+        "title": "Welding Processes and Technology",
+        "author": "Parmar R. S",
+        "publisher": "Khanna Publishers",
+        "edition": "1998"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Principles of Welding",
+        "author": "R. W. Messler",
+        "publisher": "John Wiley and Sons",
+        "edition": "1999"
+      },
+      {
+        "title": "Metal Joining Manual",
+        "author": "Schwartz M. M",
+        "publisher": "McGraw-Hill Inc.",
+        "edition": "1979"
+      },
+      {
+        "title": "Micro-joining and Nano-joining",
+        "author": "Y. N. Zhou",
+        "publisher": "Woodhead publishing",
+        "edition": "2008"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/112103244",
+      "module2": "https://nptel.ac.in/courses/112103244",
+      "module3": "https://nptel.ac.in/courses/112103244",
+      "module4": "https://nptel.ac.in/courses/112103244"
+    },
+    "semester": "4",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:51:17.051Z"
+}

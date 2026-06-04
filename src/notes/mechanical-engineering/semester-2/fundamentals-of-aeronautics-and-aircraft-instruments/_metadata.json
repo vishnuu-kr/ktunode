@@ -1,0 +1,168 @@
+{
+  "subject": "FUNDAMENTALS OF AERONAUTICS AND AIRCRAFT \nINSTRUMENTS",
+  "branch": "Mechanical Engineering",
+  "semester": 2,
+  "details": {
+    "name": "FUNDAMENTALS OF AERONAUTICS AND AIRCRAFT \nINSTRUMENTS",
+    "courseCode": "PCAOT205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "NIL",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Atmospheric properties: Physical properties and structure of atmosphere- temperature, pressure and altitude relations.",
+          "Basic concepts of Aeronautics: Laws of motion applied to aeronautics.",
+          "Aerodynamic forces, Nomenclature and Classification of airfoil, mean aerodynamic chord, Centre of pressure and aerodynamic center,",
+          "Types of drag - reduction techniques, Aerofoil characteristics: lift and drag curves, Speed of sound, Mach number, aspect ratio, wing loading. (Numericals)"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Aircraft Classification and Components: Aircraft classifications.",
+          "Airplane configurations based on wing, landing gear, engines attachments.",
+          "Components of Wing, Fuselage-Fuselage Construction Truss, Monocoque, Semi-Monocoque.",
+          "Control surfaces and maneuvers."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Basic Instruments: Pitot static system, Pitot static instruments: Altimeter, Vertical speed indicator, Airspeed indicator.",
+          "Mach meter, Gyroscope, heading indicator, Turn coordinator, Engine instruments: Temperature gauges, Pressure gauges,",
+          "Tachometer: Mechanical and Electrical.",
+          "Modern control systems-Fly by wire systems and Auto pilot systems."
+        ],
+        "contactHours": 13,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Cockpit Display systems: Head Up Display, Head Down Display, Helmet Mount Display, Multifunctional Keyboard, Multifunctional Display, Direct Voice Input, Hands on Throttle and Stick.",
+          "Navigation systems: Distance Measuring Equipment, Very High Omnidirectional Range, Automatic Direction Finder, Instrument Landing System, Microwave Landing Systems, Inertial Navigation Systems, Global Positioning System."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.\n(4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the structure of atmosphere and basic concepts of aircraft",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe the classification, components, and maneuvers of airplane",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the basic working principles of various aircraft instruments.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the principles and working of various cockpit display and\naircraft navigation systems.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Introduction to Flight",
+        "author": "J D Anderson Jr. and \nMary L.Bowden",
+        "publisher": "Mc Graw Hill",
+        "edition": "Ninth\nEdition\n2021"
+      },
+      {
+        "title": "Aircraft Instruments",
+        "author": "EHJ Pallet",
+        "publisher": "Pearson",
+        "edition": "Second\nEdition\n2009"
+      },
+      {
+        "title": "Mechanics of Flight",
+        "author": "AC Kermode, RH \nBarnard, D R \nPhilpott",
+        "publisher": "Pearson",
+        "edition": "Eleventh\nEdition\n2006"
+      },
+      {
+        "title": "Flight Physics",
+        "author": "E Torenbeek, \nH.Wittenberg",
+        "publisher": "Springer",
+        "edition": "2009"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Flight without Formulae",
+        "author": "A C Kermode",
+        "publisher": "Pearson",
+        "edition": ""
+      },
+      {
+        "title": "The Avionics Hand Book",
+        "author": "Spitzer CR",
+        "publisher": "CRC Press",
+        "edition": "Second\nEdition\n2006"
+      },
+      {
+        "title": "Avionics Training systems, \nInstallation and \ntroubleshooting",
+        "author": "Len Buckwalter",
+        "publisher": "Avionics\nCommunication",
+        "edition": "Second\nEdition\n2005"
+      },
+      {
+        "title": "Fundamentals of Flight",
+        "author": "Richard S Shevell",
+        "publisher": "Pearson",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "archive.nptel.ac.in/courses/101/104/101104061/",
+      "module2": "archive.nptel.ac.in/courses/101/101/101101079/",
+      "module3": "archive.nptel.ac.in/courses/101/104/101104061/",
+      "module4": "archive.nptel.ac.in/courses/101/104/101104061/"
+    },
+    "semester": "2",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:43:51.258Z"
+}

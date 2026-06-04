@@ -1,0 +1,214 @@
+{
+  "subject": "SIGNALS AND SYSTEMS",
+  "branch": "Computer Science and Engineering",
+  "semester": 4,
+  "details": {
+    "name": "SIGNALS AND SYSTEMS",
+    "courseCode": "PECST416",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "1D Signals  - A general introduction to real time signals - CT and DT signals",
+          "Sinusoids",
+          "Spectrum representation",
+          "Sampling and Aliasing (Concept only)",
+          "Analog frequency and Digital frequency.",
+          "Elementary sequences- Real Sinusoidal Sequences",
+          "Complex Exponential Sequences.",
+          "Unit impulse, step and ramp sequences",
+          "Representation of discrete time signals- (Graphical representation, Functional representation, Sequence representation)",
+          "Properties of DT Signals  - Even and Odd",
+          "Periodic and non periodic signal",
+          "Energy and Power signals.",
+          "Periodicity and Symmetry property of DT signals",
+          "support of sequences",
+          "Bounded Sequences.",
+          "Operations on Signals  - Time shifting (Translation)",
+          "Time Reversal (Reflection)",
+          "Time scaling - Upsampling and downsampling",
+          "DTFS - Determining the Fourier-Series Representation of a Sequence",
+          "Properties of Discrete-Time Fourier Series - Linearity",
+          "Translation (Time Shifting)",
+          "Modulation (Frequency Shifting)",
+          "Reflection (Time Reversal)",
+          "Conjugation",
+          "Duality",
+          "Multiplication",
+          "Parseval’s Relation",
+          "Even/Odd symmetry",
+          "Real sequence."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Discrete-Time Fourier Transform for Aperiodic Sequences - Properties of the Discrete-Time Fourier Transform (Periodicity",
+          "Linearity",
+          "Translation (Time Shifting)",
+          "Modulation (Frequency-Domain Shifting)",
+          "Conjugation",
+          "Time Reversal",
+          "Convolution",
+          "Multiplication",
+          "Frequency-Domain Differentiation",
+          "Differencing",
+          "Parseval's theorem",
+          "Even/Odd symmetry",
+          "real sequences)",
+          "DTFT of periodic sequences - Frequency Spectra of Sequences",
+          "Bandwidth of Sequences",
+          "Energy density spectra",
+          "Characterizing LTI Systems Using the Fourier Transform."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Discrete time systems - Block diagram representation and mathematical representation of discrete-time systems-Some common elements of Discrete-time systems (adder, constant multiplier, signal multiplier, unit delay, unit advance)",
+          "Recursive DT systems and non recursive discrete time systems",
+          "Relaxed system",
+          "Linearity and time invariance property of a DT system.",
+          "Discrete time LTI systems - Discrete time convolution",
+          "Properties of Convolution",
+          "Characterizing LTI Systems and Convolution - Impulse  response of an LTI system",
+          "Difference equation",
+          "Properties of an LTI system - Causality",
+          "Memory",
+          "Invertibility",
+          "BIBO Stability",
+          "Eigen Sequences/ eigen functions for discrete-Time LTI Systems."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Z transform  - motivation for z transform",
+          "Relationship Between z Transform and Discrete-Time Fourier Transform",
+          "Region of Convergence for the z Transform.",
+          "Properties of z transform - Translation (Time Shifting)",
+          "Complex Modulation (z-Domain Scaling)",
+          "Conjugation",
+          "Time Reversal",
+          "Upsampling (Time Expansion",
+          "Downsampling",
+          "Convolution",
+          "z- Domain Differentiation",
+          "Differencing",
+          "Initial and Final Value Theorems",
+          "Determination of the Inverse z Transform",
+          "LTI systems and difference equations",
+          "Characterizing LTI systems using z transform",
+          "Transfer function of an LTI system.",
+          "Solving Difference Equations Using the Unilateral z Transform",
+          "Block Diagram Representation of Discrete-Time LTI Systems",
+          "Interconnection of LTI systems."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.\n● Total of 8 Questions, each carrying 3 marks\n\n(8x3 =24marks) ",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.  \n● Two questions will be given from each module, out of which 1 question should be answered.  \n● Each question can have a maximum of 3 sub divisions.  \n(4x9 = 36 marks) ",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Demonstrate the concept and different types of DT signals and the effect of different operations on the signals.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain how DTFS can be used to represent a periodic DT signal.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply the concept of DTFT for an aperiodic signal to determine the frequency spectrum.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Utilize the properties of a DT system based on its impulse response and z transform.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Identify the response of a DT LTI system to an arbitrary input sequence.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Signals and Systems",
+        "author": "Michael D. Adams",
+        "publisher": "University of Victoria, British Columbia, Canada",
+        "edition": "3/e 2020"
+      },
+      {
+        "title": "Signals and systems",
+        "author": "Barry Van Veen, Simon Haykins",
+        "publisher": "Wiley",
+        "edition": "2/e, 2007"
+      },
+      {
+        "title": "Signals and systems",
+        "author": "A Nagoor Khani",
+        "publisher": "McGraw Hill",
+        "edition": "2/e, 2022"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Fundamentals of Signals and Systems Using the Web and MATLAB",
+        "author": "Edward W. Kamen, Bonnie S Heck",
+        "publisher": "Pearson",
+        "edition": "3/e, 2014"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/108/104/108104100/",
+      "module2": "https://archive.nptel.ac.in/courses/108/106/108106163/",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:15:15.382Z"
+}

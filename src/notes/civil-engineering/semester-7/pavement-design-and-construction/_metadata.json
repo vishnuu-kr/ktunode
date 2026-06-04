@@ -1,0 +1,169 @@
+{
+  "subject": "PAVEMENT DESIGN AND CONSTRUCTION",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "PAVEMENT DESIGN AND CONSTRUCTION",
+    "courseCode": "PECET745",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET502 and PCCEL607",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Pavement: Functions and characteristics - types of pavement: flexible pavement, rigid pavement, comparison - Different layers of flexible and rigid pavement, functions and characteristics of layers.",
+          "Pavement materials:  Properties of  aggregates, bitumen and subgrade soil.",
+          "Requirements and tests on aggregates, bitumen and subgrade soil (CBR value). Types of bitumen and uses, bituminous emulsion and cutback.",
+          "Methods of grading of bitumen."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Bituminous pavement types: Penetration layer system and premixed system- Types and specification of materials used. Special types of bituminous layers (stone mastic asphalt and mastic asphalt).",
+          "Mix design : physical and volumetric properties of bituminous mix, Marshall method of mix design, Super pave mix design."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Construction of Flexible Pavement-  Construction steps, equipment used and quality control checks of subgrade, granular sub base (GSB),WBM, WMM, Bituminous Macadam and Bituminous Concrete layers of flexible pavement.",
+          "Construction of Cement concrete pavement: material characterization, preparation of subgrade and base,  presetting reinforcement in joints and PCC slab construction. Methods of construction of concrete pavements."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to Pavement Evaluation- Structural and functional requirements of pavements. Functional evaluation of pavements- pavement condition survey, pavement distress rating indices,",
+          "Structural evaluation of flexible pavements by Benkelman Beam Deflection technique."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions. Each question carries 9 marks. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the different types of pavements and the materials used.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design a typical bituminous pavement using standard methods.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply on field the basic construction practises of flexible and rigid pavements.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the concept of pavement evalution as per standard procedures.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Analyse & evaluate the design procedure, construction and conduct a structural & functional evaluation of a typical pavement.",
+        "knowledgeLevel": "K4, K5"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Highway Engineering",
+        "author": "Khanna, S.K, Justo E.G, .A Veeraragavan",
+        "publisher": "Khanna Publishers",
+        "edition": "10th Edition, 2018"
+      },
+      {
+        "title": "Principles of Highway Engineering",
+        "author": "Kadiyali, L. R",
+        "publisher": "Khanna Publishers",
+        "edition": "2001"
+      },
+      {
+        "title": "Pavement Engineering",
+        "author": "Rajib B. Mallick and TaharEl-Korchi",
+        "publisher": "CRC press",
+        "edition": "2009"
+      },
+      {
+        "title": "Principles of Transportation and Highway Engineering",
+        "author": "Rao G. V",
+        "publisher": "Tata McGrawHill",
+        "edition": "1996"
+      },
+      {
+        "title": "Bituminous Road Construction in India",
+        "author": "Prithvi Singh Khandhal",
+        "publisher": "PHI Learning",
+        "edition": "2019"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Pavement Management for Airports, Roads and Parking lots",
+        "author": "Shahin M.Y",
+        "publisher": "Chapman & Hall",
+        "edition": "2005"
+      },
+      {
+        "title": "MoRTH 2001, Manual for construction and supervision of Bituminous works",
+        "author": "",
+        "publisher": "",
+        "edition": ""
+      },
+      {
+        "title": "IRC: 37-2018: Guidelines for the Design of Flexible Pavements",
+        "author": "",
+        "publisher": "",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/105104098",
+      "module2": "https://www.civil.iitb.ac.in/~vmtom/nptel/401_lnTse/web/web.html",
+      "module3": "https://archive.nptel.ac.in/courses/105/107/105107219/",
+      "module4": "https://nptelvideos.com/video.php?id=2058"
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T19:00:35.056Z"
+}

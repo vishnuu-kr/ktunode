@@ -1,0 +1,170 @@
+{
+  "subject": "QUANTITATIVE TECHNIQUES FOR ENGINEERS",
+  "branch": "Mechanical Engineering",
+  "semester": 6,
+  "details": {
+    "name": "QUANTITATIVE TECHNIQUES FOR ENGINEERS",
+    "courseCode": "OOMET612",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory – Open elective",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Quantitative Techniques: Basics of Operations Research – Applications",
+          "Linear Programming - Problem Formulation",
+          "Graphical method",
+          "Simplex method",
+          "Big-M Method",
+          "Decision Making: Decision under certainty, risk and uncertainty",
+          "Decision trees",
+          "EMV method",
+          "EOL method",
+          "MaxiMin criterion",
+          "MiniMax criterion"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Transportation Problem: Mathematical Formulation",
+          "Balanced and unbalanced problems",
+          "Initial Basic Feasible Solution",
+          "North West Corner method",
+          "Least Cost method",
+          "Vogel’s Approximation Method",
+          "Optimality test by MODI method",
+          "Assignment problem",
+          "Hungarian method",
+          "Sequencing Problem: Basic terminologies",
+          "Processing of n Jobs through 2, 3 and m machines"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Network analysis – Basic terms",
+          "Network construction",
+          "time analysis",
+          "Critical Path Method (CPM)",
+          "Programme Evaluation and Review Technique (PERT)",
+          "Game Theory: Games with saddle points",
+          "Games without saddle points – 2 x 2 games",
+          "Graphical method for m x 2 and 2 x n games"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Queuing theory: Scope, terminology, classification Importance and applications",
+          "Performance Measures in Queuing Systems",
+          "Single-server exponential arrival and service times",
+          "Multi - server problems",
+          "Simulation: Monte Carlo simulation – Queuing simulation model- Generation of random numbers"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To formulate and solve linear programming and transportation problems",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO2",
+        "description": "To apply decision theory under various conditions of certainty, risk, and uncertainty.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "To sequence and schedule jobs and projects",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "To solve Game Theory problems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "To solve problems using classical queuing theory models",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Operations Research",
+        "author": "Paneerselvam R.",
+        "publisher": "PHI",
+        "edition": "Third edition, 2023"
+      },
+      {
+        "title": "Operations Research",
+        "author": "Taha",
+        "publisher": "Pearson",
+        "edition": "Tenth edition, 2019"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Introduction to Operations Research",
+        "author": "F. S. Hillier and G.  J. Lieberman",
+        "publisher": "McGraw Hill",
+        "edition": "Tenth edition, 2017"
+      },
+      {
+        "title": "Discrete Event System Simulation",
+        "author": "Banks, Carson, Nelson and Nicol",
+        "publisher": "Pearson",
+        "edition": "Fifth edition, 2013"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:07:17.312Z"
+}

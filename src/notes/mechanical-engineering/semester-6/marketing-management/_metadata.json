@@ -1,0 +1,167 @@
+{
+  "subject": "MARKETING MANAGEMENT",
+  "branch": "Mechanical Engineering",
+  "semester": 6,
+  "details": {
+    "name": "MARKETING MANAGEMENT",
+    "courseCode": "PEMET638",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "-",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "INTRODUCTION : Definition of Marketing- Evolution-Marketing concept-Marketing mix- 4 Ps Frame work-Marketing orientation and philosophies.",
+          "Types of Markets-Different Market segmentation- Non segmented markets-Benefits- Limitations",
+          "MARKETING RESEARCH & ENVIRONMENT . Stages in Marketing research- Types of Research Methods- Exploratory- Descriptive- Experimental -Survey Methods",
+          "Marketing Environment- Micro& Macro environment -Factors affecting- Economic-Technological- political -Competitive Environment-Green Marketing concept."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "CONSUMER BEHAVIOUR :- Consumer Psychology- Choice criteria- order management cycle – Buying situation- Personal and social influence .",
+          "PRODUCT DECISION : Concept of a Product – Types of Products-Business, Consumer , Service product-.Commodity- Technology and Customised product .New product development- Product idea-Product Life Cycle. Brand- Brand attributes- Building a brand name -strategies of corporate Branding."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "PRICING STRATEGIES: setting the price of a product-pricing policies and constraints-factors influencing pricing decision-Methods of pricing- cost oriented -competitor oriented- marketing oriented pricing -tactics of price adjustment. price wars- price sensitivity",
+          "CHANNEL DECISION - Nature of Marketing Channels –. Types of Channel flows –Consumer- Industrial-Service channels. Functions of Distribution Channel – Structure and Design of Marketing Channels -Channel co-operation, conflict and competition – Channel Intermediaries-Franchising Retailers and wholesalers-Theory of retailing."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "ADVERTISEMENTS : Advertisements- Identifying audience - Types of Advertisements-Impact of advertisements. Role of Media in advertisements-Advertisement restrictions & legal actions.",
+          "DIRECT & INTERNET MARKETING : Direct marketing Techniques-Direct mail-Tele marketing- catalogues- direct response. Internet Marketing- Types of Networks- e business practices in post covid era. B2B-B2C-C2C-C2B exchanges."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To familiarise with the basic terms of marketing.",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO2",
+        "description": "Evaluate the marketing concepts and ideas",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Identify the consumer concepts in buying",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the method of channelling the product",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO5",
+        "description": "Analysis of various pricing strategies in the market",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO6",
+        "description": "Analyse the modern day advertising methods",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO7",
+        "description": "Understand the digital marketing methods",
+        "knowledgeLevel": "K1"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Marketing Management",
+        "author": "Phillip Kotler, Kevin Lane Keller",
+        "publisher": "Pearson Publication",
+        "edition": "15th Edition (2018)"
+      },
+      {
+        "title": "Marketing Management",
+        "author": "Arun Kumar, N Meenakshi",
+        "publisher": "Vikas Publishing house",
+        "edition": "2nd Edition (2013)"
+      },
+      {
+        "title": "Research for Marketing decisions",
+        "author": "Paul E Green, Donald S Tull, Gerald Albaum",
+        "publisher": "PHI learning",
+        "edition": "5th Edition (2010)"
+      },
+      {
+        "title": "Managing Marketing",
+        "author": "Noel Capon, Sidharth Shekhar Singh",
+        "publisher": "Wiley Publications",
+        "edition": "1ST Edition (2014)"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Marketing Analytics",
+        "author": "Wayne L Winston",
+        "publisher": "Wiley publication",
+        "edition": "2nd Edition 2018"
+      },
+      {
+        "title": "Strategic Market Management- Global perspective",
+        "author": "David A Aaker, Damien McLoughlin",
+        "publisher": "Wiley Publications",
+        "edition": "3rd Edition 2016"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/110/104/110104068/",
+      "module2": "https://archive.nptel.ac.in/courses/110/104/110104068/",
+      "module3": "https://archive.nptel.ac.in/courses/110/104/110104068/",
+      "module4": "https://archive.nptel.ac.in/courses/110/104/110104068/"
+    },
+    "semester": "6",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:05:57.625Z"
+}

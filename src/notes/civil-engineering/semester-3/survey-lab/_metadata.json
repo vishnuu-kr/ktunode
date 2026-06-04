@@ -1,0 +1,262 @@
+{
+  "subject": "SURVEY LAB",
+  "branch": "Civil Engineering",
+  "semester": 3,
+  "details": {
+    "name": "SURVEY LAB",
+    "courseCode": "PCCEL307",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "GCESL106 /Equivalent",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Conventional surveying",
+          "Chain/ tape surveying",
+          "Compass surveying"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Levelling",
+          "Differential levelling"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Fly levelling"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Profile Levelling and Cross sectioning"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "Distance between inaccessible points (horizontal angle)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "Level difference between points (vertical angle)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "Tangential tacheometry (vertical angle)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 8,
+        "topics": [
+          "Traversing - Balancing the traverse using Bowditch’s rule, Transit rule and graphical method"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 9,
+        "topics": [
+          "Total station survey",
+          "Heights and distances"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 10,
+        "topics": [
+          "Area computation",
+          "Contouring"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 11,
+        "topics": [
+          "Setting out of curve- simple curve"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 12,
+        "topics": [
+          "Setting out of curve - Compound curve using angular methods only"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 13,
+        "topics": [
+          "Study of instruments",
+          "Automatic level",
+          "Digital level",
+          "Handled GPS"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 14,
+        "topics": [
+          "Lidar Surveying"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 15,
+        "topics": [
+          "GNSS Surveying"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 16,
+        "topics": [
+          "Distance between inaccessible points (horizontal angle)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 0,
+        "internalExam2": 20,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/ \nPreparatory \nwork/Design/ \nAlgorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/ \nExecution of work/ \ntroubleshooting/ \nProgramming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Demonstrate proficiency in conventional surveying for practical applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Execute various levelling and theodolite surveying techniques effectively.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Utilize advanced surveying equipment such as total stations, Lidar, GPS etc.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Employ total station for field surveying, perform contouring, and set out curves.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Surveying-Vol 1",
+        "author": "B.C. Punmia, Ashok Kumar Jain & Arun Kumar Jain",
+        "publisher": "Laxmi Publications",
+        "edition": "Seventh, 2016"
+      },
+      {
+        "title": "Textbook of surveying",
+        "author": "Venkataramaiah C.",
+        "publisher": "University Press",
+        "edition": "Second, 2011"
+      },
+      {
+        "title": "Surveying and Levelling",
+        "author": "T.P.Kenetkar & S.V.Kulkarni",
+        "publisher": "Pune Vidyarthi Griha Prakashan",
+        "edition": "Second, 2004"
+      },
+      {
+        "title": "Advanced Surveying",
+        "author": "Satheesh Gopi, R Santhikumar, N Madhu",
+        "publisher": "Pearson Education",
+        "edition": "Second, 2008"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Surveying Vol. I",
+        "author": "S. K. Duggal",
+        "publisher": "Tata McGraw Hill Ltd",
+        "edition": "Reprint 2015"
+      },
+      {
+        "title": "A Text book of Surveying and Levelling",
+        "author": "R. Agor",
+        "publisher": "Khanna Publishers",
+        "edition": "2005"
+      },
+      {
+        "title": "GPS and GNSS for Land Surveyors",
+        "author": "Jan Van Sickle",
+        "publisher": "CRC Press",
+        "edition": "First, 2023"
+      },
+      {
+        "title": "Topographic Laser Ranging and Scanning",
+        "author": "Charles K. Toth, Jie Shan",
+        "publisher": "CRC Press",
+        "edition": "2009"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://sl-iitr.vlabs.ac.in/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "3",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:41:50.810Z"
+}

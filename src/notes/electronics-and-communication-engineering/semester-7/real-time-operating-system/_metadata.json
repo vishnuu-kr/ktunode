@@ -1,0 +1,189 @@
+{
+  "subject": "REAL TIME OPERATING SYSTEM",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 7,
+  "details": {
+    "name": "REAL TIME OPERATING SYSTEM",
+    "courseCode": "PEECT 753",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Real-Time Systems",
+          "Overview of Real-Time Systems: Definition and types of real-time systems, Hard vs. soft real-time systems.",
+          "Basic Concepts: Real-time tasks and their characteristics, Task scheduling, Timing constraints and requirements.",
+          "RTOS Architectures: Monolithic kernels vs. microkernels.",
+          "RTOS examples: commercial vs Open RTOS and their comparison, examples.",
+          "Inter-Process Communication (IPC): Shared memory, Message passing.",
+          "RTOS Environment Setup:  Installation and setup of an RTOS on a microcontroller (e.g., ARM Cortex-M)",
+          "Task Creation and Management:  Writing simple tasks, Task states and transitions",
+          "Scheduling and Context Switching: Implementing basic scheduling algorithms, Demonstrating context switching with example tasks"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Real-Time Scheduling and Synchronization",
+          "Real-Time Scheduling Algorithms: Fixed-priority scheduling (Rate- Monotonic, Deadline-Monotonic), Dynamic priority scheduling (Earliest Deadline First)",
+          "Priority based preemption",
+          "Round Robin",
+          "Task Synchronization: Mutual exclusion, Priority inversion and inheritance",
+          "Inter-Task Communication: Semaphores, Mutexes, Event flags",
+          "Implementing Scheduling Algorithms: Practical implementation of scheduling",
+          "Synchronization Mechanisms: Practical implementation of  semaphores and mutexes in task synchronization, Demonstrating priority inversion and its mitigation: Real-Time Task Communication: Implementing inter-task communication using queues and mailboxes"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Real-Time System Design and Analysis",
+          "System Design Principles: Modular design, Time-triggered vs. event-triggered systems",
+          "Worst-Case Execution Time (WCET) Analysis: Techniques for WCET estimation, Timing analysis, Reliability and Fault Tolerance: Redundancy, Error detection and recovery.",
+          "Designing a Real-Time System: Case study: Designing a real-time control system",
+          "WCET Analysis Tools: Using tools for WCET analysis and timing verification",
+          "Implementing Fault Tolerance: Practical implementation of redundancy and error recovery mechanism"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Real-Time Operating System Services and Applications",
+          "Real-Time Operating System Services: Memory management, I/O management.",
+          "Real-Time Middleware: Middleware services for real-time systems",
+          "Case Studies and Applications: Automotive systems, Aerospace and defense, Medical devices",
+          "Memory Management in RTOS: Implementing dynamic memory allocation",
+          "Real-Time Middleware Implementation: Developing middleware components for a real-time application",
+          "Case Study Implementation: Implementing a real-time system for a specific application (e.g., real-time data acquisition)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the fundamental concepts and characteristics of real-time systems.",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Analyze and implement real-time scheduling algorithms and techniques.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "Conduct worst-case execution time (WCET) analysis for real-time tasks.",
+        "knowledgeLevel": "K3, K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Utilize RTOS services and middleware for developing real-time applications",
+        "knowledgeLevel": "K3,K4"
+      },
+      {
+        "CO": "CO5",
+        "description": "Develop practical real-time applications in various domains such as automotive, aerospace, and medical devices.",
+        "knowledgeLevel": "K3, K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Real-Time Operating Systems Book 1: The Theory",
+        "author": "Jim Cooling",
+        "publisher": "CreateSpace Independent Publishing Platform",
+        "edition": "1st 2018"
+      },
+      {
+        "title": "Real-Time Systems: Theory and Practice  ",
+        "author": "Rajib Mall",
+        "publisher": "Pearson Education",
+        "edition": "2007"
+      },
+      {
+        "title": "Real-Time Systems: Design Principles for Distributed Embedded Applications",
+        "author": "Hermann Kopetz",
+        "publisher": "Springer",
+        "edition": "2nd 2011"
+      },
+      {
+        "title": "Embedded Systems: Real-Time Operating Systems for Arm Cortex-M Microcontrollers",
+        "author": "Jonathan W. Valvano",
+        "publisher": "CreateSpace Independent Publishing Platform",
+        "edition": "3rd, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Real-Time Systems",
+        "author": "C. M. Krishna, Kang G. Shin,",
+        "publisher": "McGraw-Hill",
+        "edition": "2010"
+      },
+      {
+        "title": "Real-Time Systems",
+        "author": "Jane W. S. Liu",
+        "publisher": "Pearson Education",
+        "edition": "2009"
+      },
+      {
+        "title": "Real-Time Systems Design and Analysis",
+        "author": "Philip A. Laplante, Seppo J. Ovaska,",
+        "publisher": "Wiley",
+        "edition": "2012"
+      },
+      {
+        "title": "Embedded Systems with ARM Cortex-M Microcontrollers in Assembly Language and C",
+        "author": "Yifeng Zhu",
+        "publisher": "E-Man Press LLC",
+        "edition": "3rd , 2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://elearn.nptel.ac.in/shop/iit-workshops/completed/lab-workshop-on-embedded-rtos/?v=c86ee0d9d7ed\nhttps://onlinecourses.nptel.ac.in/noc21_cs98/preview",
+      "module2": "https://elearn.nptel.ac.in/shop/iit-workshops/completed/lab-workshop-on-embedded-rtos/?v=c86ee0d9d7ed",
+      "module3": "https://elearn.nptel.ac.in/shop/nptel/real-time-operating-system/?v=c86ee0d9d7ed\nhttps://onlinecourses.nptel.ac.in/noc21_cs98/preview",
+      "module4": "https://elearn.nptel.ac.in/shop/iit-workshops/completed/lab-workshop-on-embedded-rtos/?v=c86ee0d9d7ed"
+    },
+    "semester": "7",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:08:51.755Z"
+}

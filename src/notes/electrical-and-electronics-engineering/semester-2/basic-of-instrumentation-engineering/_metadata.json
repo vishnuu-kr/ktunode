@@ -1,0 +1,152 @@
+{
+  "subject": "BASIC OF INSTRUMENTATION ENGINEERING",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 2,
+  "details": {
+    "name": "BASIC OF INSTRUMENTATION ENGINEERING",
+    "courseCode": "PCICT205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "INTRODUCTION   TO   INSTRUMENTATION   &   CONTROL  ENGINEERING- Definition-scope and importance- application of instrumentation in different fields like petrochemical, Biomedical, pharmaceutical and food processing.",
+          "FUNCTIONAL ELEMENTS OF MEASUREMENT SYSTEM: Introduction to instrument systems - Typical applications of instrument systems. Basic description of the functional elements of the measurement",
+          "system with examples.",
+          "TRANSDUCERS AND INSTRUMENT TYPES: Definition of transducers. Role of transducers in instrumentation. Classification of instruments: Active and passive instruments - Null-type and deflection-type instruments - Analogue and digital instruments - Indicating instruments and instruments with a signal output -Manually operated and automatic type, Self-generating and power operated types, Contacting and non-contacting types - Smart and non-smart instruments"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "FUNCTIONAL ELEMENTS OF CONTROL SYSTEM: Need of Control systems – Role of error detectors – Block diagram for a control system with examples.",
+          "MEASUREMENT SYSTEM PERFORMANCE: Static characteristics of instruments. Accuracy and precision, static sensitivity, linearity, hysteresis, threshold, dead time, dead zone, resolution or discrimination. static error, static correction. Scale range and span, reproducibility and drift, repeatability. Dynamic characteristics of instruments. Understating of (1) Zero order instrument (2) First order instrument (3) Second order instrument."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "CALIBRATION OF  MEASURING SENSORS  AND INSTRUMENTS: Standards and calibration – Necessity of calibration- Careful instrument design, Principles of calibration-Control of calibration environment- Calibration chain and traceability-Calibration records - Intelligent instruments.",
+          "TYPES OF INPUTS: Input output configuration of measuring instruments and measurement systems. Desired inputs, interfering inputs, modifying inputs. Methods of correction for interfering and modifying inputs. Loading effects. Input and output impedances. Input impedances, input admittance, output impedances, output admittance."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "MEASUREMENT NOISE: Noise, signal to noise ratio, sources of noise, Johnson noise, power spectrum density. Sources of measurement noise- Inductive Coupling-Capacitive  (electrostatic)  coupling - Noise due to multiple earths-Noise in the form of voltage.",
+          "ERRORS  DURING  THE  MEASUREMENT  PROCESS:  Errors  in measurements, true value, Limiting errors (Guarantee errors). Relative (fractional) limiting error. Combination of quantities with limiting errors. Known errors, types of errors, gross errors, systematic errors, instrumental errors, environmental errors, observational errors. Random (residual) errors. Reduction of systematic errors - Careful instrument design - Method of opposing inputs -Calibration - Manual correction of output reading."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Demonstrate a comprehensive understanding of instrumentation and control engineering principles and the performance characteristics of different types of instruments.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Develop a thorough understanding of the static and dynamic characteristics of instruments enabling effective evaluation and utilization of instrumentation in various applications.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Develop a deep understanding of the principles of calibration and analysing input-output relationships in measurement systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Demonstrate a comprehensive understanding of noise and errors in measurement.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Measurements and Instrumentation Principles.",
+        "author": "Alan S Morris",
+        "publisher": "Elsevier Butterworth Heinemann",
+        "edition": "3rd edition, 2001"
+      },
+      {
+        "title": "A course in Mechanical  Measurement and Instrumentation.",
+        "author": "A.K Sawhney",
+        "publisher": "Dhanpat Rai & Co.",
+        "edition": "12th edition, 2017"
+      },
+      {
+        "title": "Instrumentation Devices & Systems.",
+        "author": "C.S. Rangan, G.R. Sarma, V.S.V. Mani,",
+        "publisher": "Tata McGraw- Hill publishing company Ltd.",
+        "edition": "2017"
+      },
+      {
+        "title": "Mechanical Measurements",
+        "author": "S P Venkateshan",
+        "publisher": "Ane Books",
+        "edition": "2nd edition, 2015"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Measurement  systems: Application and design,",
+        "author": "Ernest. O Doeblin",
+        "publisher": "McGraw Hill Higher Education",
+        "edition": "5th edition, 2003"
+      },
+      {
+        "title": "Transducers and Instrumentation",
+        "author": "D V S Murty",
+        "publisher": "Prentice Hall India Learning Private Limited",
+        "edition": "2nd edition, 2008"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/108102191",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "2",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:05:09.184Z"
+}

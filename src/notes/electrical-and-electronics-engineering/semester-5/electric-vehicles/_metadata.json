@@ -1,0 +1,189 @@
+{
+  "subject": "ELECTRIC VEHICLES",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 5,
+  "details": {
+    "name": "ELECTRIC VEHICLES",
+    "courseCode": "PEEET522",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCEET303, PCEET304, PCEET403",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 2,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Conventional Vehicles : Basics of vehicle performance",
+          "Vehicle power source characterization",
+          "Transmission characteristics (1hr)",
+          "Introduction to Electric Vehicles : History of electric vehicles",
+          "Classification of electric vehicles",
+          "Overview of EV challenges",
+          "Overview of EV technologies- motor drive technology  ",
+          "energy source technology  ",
+          "battery charging technology  ",
+          "vehicle-to-grid technology (2hr)  ",
+          "Vehicle Dynamics & Load Forces: Mathematical models to describe vehicle performance",
+          "vehicle load forces: aerodynamic drag",
+          "rolling resistance",
+          "grading resistance",
+          "vehicle acceleration",
+          "Calculation of motor power from traction torque",
+          "Numerical problems. (4 hrs)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Electric Drive-trains : Basic concept of electric traction",
+          "Introduction to various electric drive-train topologies",
+          "Power flow control in electric drive-train topologies",
+          "Fuel efficiency analysis.(2 hrs)",
+          "DC Drives: Motoring using a PM DC Machine - DC motor electric drive using DC-DC converter - Generating/Braking using a PM DC Machine. (3hrs)",
+          "PMSM Drives :  Review of PMSM motor basics – Independent control of orthogonal flux and torque (concept only)- Field Oriented Control (FOC) – Sensored and sensorless control (block diagram only). (4hrs)",
+          "Sizing the drive system : Matching the electric machine and the Internal Combustion Engine (ICE) ",
+          "Sizing the propulsion motor",
+          "Sizing the power electronics-Switch technology selection",
+          "Ripple capacitor design",
+          "Switching frequency and PWM. (2hrs)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Battery based energy storage systems : Types of battery-battery parameters-units of battery energy storage - capacity rate",
+          "- cell voltage - specific energy - cycle life - self-discharge- static battery equivalent circuit model - series-parallel battery pack equivalent circuits.(3hrs)",
+          "Other storage topologies : Fuel Cell based energy storage systems- Supercapacitors- Flywheel- Hybridization of different energy storage devices. (2 hrs)",
+          "Sizing considerations of battery -Time and charge/discharge cycles - Lifetime – Beginning of life (BOL) - End of life (EOL) - DOD - Efficiency of Battery Pack - Determination of pack Voltage, range for EV - Determination of Cell/Pack Voltage for a Given Output\\Input Power",
+          "Battery management system",
+          "Numerical problems.(4hrs)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Overview of Electric Vehicle Battery Chargers –Types of chargers-On-board chargers",
+          "Off- board chargers",
+          "Wireless charger",
+          "Electric Vehicle Supply Equipment (EVSE) - Grid to EVSE to On-board chargers to battery pack power flow block schematic diagrams –  V2G concept(3hrs)  ",
+          "Types of charging stations - AC Level 1 & 2, DC - Level 3 -Types of Connectors - CHAdeMO, CCS Type1 and 2, GB/T - PIN diagrams and differences (2hrs)",
+          "Autonomous Vehicles : Levels of automation, significance, functional architecture-sensors, actuators,  path planning& effects of automation in vehicles (2hrs)",
+          "Vehicle Communication protocols  : Need & requirements - Functions of Control Pilot (CP) and Proximity Pilot (PP) pins",
+          "Communication Protocols - CAN, LIN, FLEXRAY (Basics only)- Power line communication (PLC) in EV (2 hrs)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Familiarise the performance of conventional vehicles and electric vehicles",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Analyse the various drive train topologies for electric vehicles",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Discuss the propulsion unit for electric vehicles and selection of drive systems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyse the various energy storage systems and energy  management strategies",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Study of  chargers, charging stations and various communication protocols for EV",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Electric Vehicles Machines and Drives- Design, Analysis and Application",
+        "author": "K. T. Chau",
+        "publisher": "John Wiley",
+        "edition": "2015"
+      },
+      {
+        "title": "Propulsion Systems for Hybrid Vehicles",
+        "author": "John M. Miller",
+        "publisher": "The Institution of Engineering and Technology, London, United Kingdom",
+        "edition": "2010"
+      },
+      {
+        "title": "Hybrid Electric Vehicles – Principles and applications with practical perspectives",
+        "author": "Chris Mi, M A Masrur, D W Gao",
+        "publisher": "Wiley",
+        "edition": "2011"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Modern Electric, Hybrid and Fuel Cell Vehicles: Fundamentals, Theory and Design",
+        "author": "Mehrdad Ehsani, Yimi Gao, Sebastian E. Gay",
+        "publisher": "CRC Press",
+        "edition": ""
+      },
+      {
+        "title": "Permanent Magnet Synchronous and Brushless DC Motors Drives",
+        "author": "R. Krishnan",
+        "publisher": "CRC Press",
+        "edition": ""
+      },
+      {
+        "title": "Electric and Hybrid Vehicles: Design Fundamentals",
+        "author": "Iqbal Hussein",
+        "publisher": "CRC Press",
+        "edition": "2003"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:21:17.201Z"
+}

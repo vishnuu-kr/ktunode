@@ -1,0 +1,179 @@
+{
+  "subject": "CONTROL SYSTEMS",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 5,
+  "details": {
+    "name": "CONTROL SYSTEMS",
+    "courseCode": "PCECT503",
+    "credits": 3,
+    "examHours": "2Hr. 30 Min.",
+    "prerequisites": "GBMAT301 Mathematics for  Electrical Science -3",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction:  Basic Components of Control Systems",
+          "Open-Loop and Closed-Loop Control Systems with examples.",
+          "Mathematical modelling of control systems : Electrical Systems and Mechanical translational systems.",
+          "Transfer Function:  Block diagram reduction techniques",
+          "Signal flow graph",
+          "Mason’s gain formula."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Time Domain Analysis of Control Systems:  Standard Test signals",
+          "Time response of first order systems (unit impulse, step and ramp inputs) and second order systems (step input only).",
+          "Time response of undamped, under damped, critically damped second order system to unit step signal",
+          "Time domain specifications for a second order underdamped system",
+          "Steady state error and static error coefficients."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Stability of linear control systems : Concept of BIBO stability",
+          "absolute stability",
+          "Routh Hurwitz Criterion.",
+          "Root Locus Techniques : Introduction, properties and its construction.",
+          "Frequency domain analysis : Frequency domain specifications",
+          "Relative stability : gain margin and phase margin.",
+          "Stability analysis using Bode plot and Nyquist stability criterion.",
+          "P, PI & PID controllers : Introduction.",
+          "Design of Compensators : Need for compensators",
+          "lag and lead compensators using  Bode plots(only design steps)"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "State Variable Analysis of Linear Systems:",
+          "State variables, state equations, state variable representation of electrical systems.",
+          "Transfer function from State equation",
+          "Solutions of the state equations, state transition matrix",
+          "Controllability and observability - Kalman’s Test."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Analyze the systems using transfer function approach",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Perform time domain analysis and steady state analysis of systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Determine the absolute stability and relative stability of a system using Routh Hurwitz Criterion and root locus",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply frequency domain techniques to assess the system stability  and to design different compensation techniques",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Analyse system Controllability and Observability using state space representation",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Control Systems Engineering",
+        "author": "I.J. Nagarath, M. Gopal",
+        "publisher": "New Age International Publishers",
+        "edition": "7th Edition 2022"
+      },
+      {
+        "title": "Automatic Control Systems",
+        "author": "Benjamin C. Kuo, Farid Golnaraghi,",
+        "publisher": "Wiley",
+        "edition": "10th Edition 2017"
+      },
+      {
+        "title": "Modern Control Engineering",
+        "author": "Katsuhiko Ogata",
+        "publisher": "Pearson",
+        "edition": "Fifth Edition 2015"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Feedback and Control Systems",
+        "author": "Joseph DiStefano, Allen R. Stubberud, and Ivan J. Williams",
+        "publisher": "McGraw Hill",
+        "edition": "Third Edition 2013"
+      },
+      {
+        "title": "Control systems",
+        "author": "Ashok Kumar",
+        "publisher": "Tata McGraw-Hill",
+        "edition": "Second Edition 2010"
+      },
+      {
+        "title": "Control Systems: Principles and Design",
+        "author": "M Gopal",
+        "publisher": "McGraw Hill Education",
+        "edition": "Fourth Edition 2012"
+      },
+      {
+        "title": "Nise's Control Systems Engineering",
+        "author": "Norman S. Nise",
+        "publisher": "Wiley India",
+        "edition": "8th Edition 2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://youtu.be/Cl23xQrvFhk?feature=shared\nhttps://youtu.be/fsxSst10_cE?feature=shared",
+      "module2": "https://youtu.be/cLyT6OWcmyU?feature=shared",
+      "module3": "https://youtu.be/CZL7_Z0i1KQ?feature=shared",
+      "module4": "https://youtu.be/CrXOMBlYFp0?feature=shared"
+    },
+    "semester": "5",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:54:33.238Z"
+}

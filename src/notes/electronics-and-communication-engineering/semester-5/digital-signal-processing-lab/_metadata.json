@@ -1,0 +1,223 @@
+{
+  "subject": "DIGITAL SIGNAL PROCESSING LAB",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 5,
+  "details": {
+    "name": "DIGITAL SIGNAL PROCESSING LAB",
+    "courseCode": "PBECL507",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Signals & Systems, \nDSP",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Simulation of Signals",
+          "Simulate the following signals using Python/ \nScilab/MATLAB.",
+          "Unit impulse signal",
+          "Unit pulse signal",
+          "Unit ramp signal",
+          "Bipolar pulse",
+          "Triangular signal"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Verification of the Properties of DFT",
+          "Generate a DFT matrix and apply it to an example sequence.",
+          "Write a function that returns the N point DFT matrix VN for a given N.",
+          "Plot its real and imaginary parts of VN as images using matshow or imshow commands (in \nPython) for N = 16, N = 64 and N = 1024",
+          "Compute the DFTs of 16 point, 64 point and 1024 point random sequences using the above \nmatrices.",
+          "Observe the time of computations for N = 2σ for different values of σ. (You may use \nthe time module in Python).",
+          "Use some iterations to plot the times of computation against x. Plot and understand this \ncurve. Plot the computation times for the FFT function over this curve and observe the \ncomputational advantage of FFT.",
+          "Circular Convolution.",
+          "Write a python function circcon.py that returns the circular convolution of an N1 point sequence and an N2 point sequence given at the input. The easiest way is to convert a linear \nconvolution into circular convolution with N = max(N1, N2).",
+          "Parseval’s Theorem",
+          "Take two complex random sequences x1[n] and x2[n], and verify Parseval’s Theorem."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Familarization of DSP Hardware",
+          "Familiarization of the code composer studio (in the case of TI hard- ware) \nor Visual DSP (in the case of Analog Devices hardware) or any equivalent \ncross-compiler for DSP programming.",
+          "Familiarization of the analog and digital input and output ports of the DSP board.",
+          "Generation and cross compilation and execution of the C code to connect the input digital \nswitches to the output LEDs.",
+          "Generation and cross compilation and execution of the C code to connect the input analog \nport to the output. Connect a microphone, speak into it and observe the output electrical \nsignal on a DSO and store it."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Linear convolution",
+          "Write a C function for the linear convolution of two arrays.",
+          "The arrays may be kept in different files and downloaded to the DSP hardware.",
+          "Store the result as a file and observe the output."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "FFT of signals",
+          "Write a C function for N - point FFT.",
+          "Connect a precision signal generator and apply 1 mV , 1 kHz sinusoid at the analog port.",
+          "Apply the FFT on the input signal with appropriate window size and observe the result.",
+          "Connect microphone to the analog port and read in real time speech.",
+          "Observe and store the FFT values."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "IFFT with FFT",
+          "Use the FFT function in the previous experiment to compute the IFFT of the input signal.",
+          "Apply IFFT on the stored FFT values from the previous experiments and \nobserve the reconstruction."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "FIR low pass filter",
+          "Use Python/scilab to implement the FIR filter response h[n] = \n for a filter size N \n= 50, ωc = 0.1π and ωc = 0.3π.",
+          "Realize the hamming ( wH [n]) and kaiser ( wK[n]) windows.",
+          "Compute h[n]w[n] in both cases and store as file.",
+          "Observe the low pass response in the simulator.",
+          "Download the filter on to the DSP target board and test with 1 mV sinusoid from a signal \ngenerator connected to the analog port.",
+          "Test the operation of the filters with speech signals."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 8,
+        "topics": [
+          "Overlap Save Block Convolution",
+          "Use the file of filter coefficients from the previous experiment.",
+          "Realize the system shown below for the input speech signal x[n].",
+          "Segment the signal values into blocks of length N = 2000. Pad the last block with zeros, if \nnecessary.",
+          "Implement the overlap save block convolution method"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 9,
+        "topics": [
+          "9. Overlap Add Block Convolution",
+          "Use the file of filter coefficients from the previous experiment.",
+          "Realize the system shown in the previous experiment for the input speech signal x[n].",
+          "Segment the signal values into blocks of length N = 2000. Pad the last block with zeros, if \nnecessary.",
+          "Implement the overlap add block convolution method."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 0,
+        "internalExam2": 20,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/ \nPreparatory \nwork/Design/ \nAlgorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/ \nExecution of work/ \ntroubleshooting/ Programming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Generate basic signal waveforms",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Verify the properties of DFT",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Familiarize with DSP hardware and interface with Computer",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Implement LTI systems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Design and Implement FIR low-pass filters",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Digital Signal Processing \nusing Matlab",
+        "author": "Vinay K. Ingle, John G. \nProakis",
+        "publisher": "Cengage Learning",
+        "edition": "3rd Ed., \n2011"
+      },
+      {
+        "title": "Think DSP: Digital Signal \nProcessing using Python",
+        "author": "Allen B. Downey",
+        "publisher": "Green Tea Press",
+        "edition": "1st Ed.\n2019"
+      },
+      {
+        "title": "DSP applications using C and \nthe TMS320C6x DSK",
+        "author": "Chassaing, Rulph",
+        "publisher": "Wiley & Sons",
+        "edition": "2/e. 2008"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Discrete-Time Signal \nProcessing",
+        "author": "Alan V Oppenheim ,  \nRonald W. Schafer",
+        "publisher": "Pearson Education",
+        "edition": "4th \nEd.,2018"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://www.youtube.com/watch?v=6dFnpz_AEyA",
+      "module2": "https://onlinecourses.nptel.ac.in/noc21_ee20/preview",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:55:45.631Z"
+}

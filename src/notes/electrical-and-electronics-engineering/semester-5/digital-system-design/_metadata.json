@@ -1,0 +1,191 @@
+{
+  "subject": "DIGITAL SYSTEM DESIGN",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 5,
+  "details": {
+    "name": "DIGITAL SYSTEM DESIGN",
+    "courseCode": "PEEET523",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "",
+    "courseType": "PE -Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Clocked Synchronous Networks",
+          "Analysis of Clocked Synchronous Sequential Networks (CSSN)",
+          "Modelling of CSSN",
+          "State assignment and reduction",
+          "Design of CSSN"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "ASM Chart and its realization",
+          "Asynchronous Sequential Circuits",
+          "Analysis of Asynchronous Sequential Circuits (ASC)",
+          "Flow table reduction",
+          "Races in ASC",
+          "State assignment problem and the transition table"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Hazards – static and dynamic hazards in combinational networks",
+          "Essential Hazards",
+          "Design of Hazard free circuits",
+          "Data synchronizers",
+          "Mixed operating mode asynchronous circuits",
+          "Practical issues- clock skew and jitter",
+          "Synchronous and asynchronous inputs",
+          "Faults: Fault table method",
+          "path sensitization method",
+          "Boolean difference method"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "VLSI Design flow: Design entry: Schematic",
+          "Data types and objects",
+          "different modelling styles in VHDL - Dataflow, Behavioural and Structural Modelling",
+          "VHDL constructs and codes for combinational and sequential circuits"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Analyze asynchronous and clocked synchronous sequential circuits",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design hazard-free digital circuits",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Identify faults in digital circuits",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply VHDL programming in digital system design",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Digital Principles & Design",
+        "author": "Donald G Givone",
+        "publisher": "Tata McGraw Hill",
+        "edition": "1/e 2002"
+      },
+      {
+        "title": "Digital Design with an introduction to HDL, VHDL and Verilog",
+        "author": "M.Morris Mano and Michel.D.Ciletti",
+        "publisher": "Pearson education",
+        "edition": "6/e, 2018"
+      },
+      {
+        "title": "Digital Design",
+        "author": "John F Wakerly",
+        "publisher": "Pearson Education",
+        "edition": "4/e 2008"
+      },
+      {
+        "title": "Digital Logic Applications and Design",
+        "author": "John M Yarbrough",
+        "publisher": "Cengage India",
+        "edition": "1/e 2006"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Digital Systems Testing and Testable Design",
+        "author": "Miron Abramovici, Melvin A. Breuer and Arthur D. Friedman",
+        "publisher": "John Wiley & Sons Inc",
+        "edition": ""
+      },
+      {
+        "title": "Logic Design Theory",
+        "author": "N. N. Biswas",
+        "publisher": "PHI",
+        "edition": ""
+      },
+      {
+        "title": "Introduction to Digital Design Using Digilent FPGA Boards",
+        "author": "Richard E. Haskell, Darrin M. Hanna",
+        "publisher": "LBE Books- LLC",
+        "edition": ""
+      },
+      {
+        "title": "Digital Circuits and Logic Design",
+        "author": "Samuel C. Lee",
+        "publisher": "PHI",
+        "edition": ""
+      },
+      {
+        "title": "Digital System Design Using VHDL",
+        "author": "R. Anand",
+        "publisher": "Khanna Book Publishing Company",
+        "edition": ""
+      },
+      {
+        "title": "Digital System Design using VHDL",
+        "author": "Charles Roth",
+        "publisher": "TMH",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:20:57.936Z"
+}

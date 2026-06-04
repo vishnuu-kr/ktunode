@@ -1,0 +1,170 @@
+{
+  "subject": "SIGNALS AND SYSTEMS",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 5,
+  "details": {
+    "name": "SIGNALS AND SYSTEMS",
+    "courseCode": "PCEET503",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Mathematics for Electrical Science",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Signals and Systems: Elementary Signals",
+          "Classification and representation of continuous time and discrete time signals",
+          "Signal operations.",
+          "Concept of system: Continuous time and discrete time systems",
+          "Properties of systems:  Time invariance, Linearity, Causality, Systems with and without memory, Stability.",
+          "Convolution Integral and sum.",
+          "Impulse and step response."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Frequency domain characterization of Signals and Systems: Fourier transform: Existence - Properties of Continuous time Fourier transform",
+          "Concept of Frequency response",
+          "Significance of Fourier transform and difference from Fourier series.",
+          "Review of Laplace Transforms.",
+          "Characterization of LTI systems: Differential equation representation of continuous time LTI systems.",
+          "Transfer function representation of differential equation in Laplace domain.",
+          "Modeling of LTI systems:  Electrical, translational and rotational mechanical systems, DC servo-motor",
+          "Force voltage, Force current analogy."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Sampled Data Systems and Z-Transform: Sampling process - Impulse train sampling-sampling theorem- Aliasing effect.",
+          "Zero-order and First-order hold circuits - Signal reconstruction.",
+          "Z-Transform:  Region of convergence- Properties of Z-Transform Inverse Z-Transform.",
+          "Pulse transfer function.",
+          "Difference equations representation using Z-transform and it’s solution using inverse Z-Transform.",
+          "Impulse and step response of discrete-time systems."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Dynamic System Representation and Stability: Open loop and closed loop systems.",
+          "Effect of feedback in  systems.",
+          "Block diagram representation - block diagram reduction.",
+          "Signal flow graph - Mason's gain formula.",
+          "Type and Order of the systems - Pole-Zero representation of systems.",
+          "Characteristic equation.",
+          "Routh stability criterion."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To represent continuous and discrete time signals in time domain and perform various mathematical operations",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "To represent continuous time signals and systems in frequency domain",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "To represent discrete time signals and systems in Z-domain.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "To analyse the stability of continuous time dynamical systems",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Signals and Systems",
+        "author": "Simon Haykin, Barry Van Veen",
+        "publisher": "Wiley",
+        "edition": "2nd Edition, 2007"
+      },
+      {
+        "title": "Discrete Time Control Systems",
+        "author": "Katsuhiko Ogata",
+        "publisher": "Pearson",
+        "edition": "2nd Edition, 2006"
+      },
+      {
+        "title": "Control Systems Engineering",
+        "author": "Norman S. Nise",
+        "publisher": "Wiley",
+        "edition": "5th Edition, 2009"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Signals and Systems",
+        "author": "Oppenheim A.V., Willsky A.S. & Nawab S.H.",
+        "publisher": "Prentice Hall",
+        "edition": "2nd Edition, 2015"
+      },
+      {
+        "title": "Modern Control Systems",
+        "author": "Dorf R. C.,",
+        "publisher": "Bishop R. H Pearson Education India",
+        "edition": "12th Edition, 2013"
+      },
+      {
+        "title": "Digital Signal Processing Principles",
+        "author": "John G. Proakis& Dimitris G.Manolakis",
+        "publisher": "Prentice Hall",
+        "edition": "4th Edition, 2007"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:23:37.958Z"
+}

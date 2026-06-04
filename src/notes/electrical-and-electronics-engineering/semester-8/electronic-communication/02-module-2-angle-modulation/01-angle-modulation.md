@@ -1,0 +1,371 @@
+---
+title: "Angle Modulation:"
+subject: "ELECTRONIC COMMUNICATION"
+module: "Module 2: Angle Modulation:"
+branch: "Electrical and Electronics Engineering"
+semester: 8
+topicId: "68a200872b85456187f36bee"
+status: "completed"
+scrapedAt: "2026-05-23T16:40:06.803Z"
+---
+## Module 2: Angle Modulation
+
+### Topic: Angle Modulation
+
+---
+
+**Introduction to Angle Modulation**
+
+Angle modulation is a technique where the angle of a carrier signal is varied in accordance with the message signal. This is in contrast to Amplitude Modulation (AM), where the amplitude of the carrier is varied. Angle modulation offers several advantages over AM, including better noise immunity and more efficient use of power.
+
+---
+
+### 1. Frequency Modulation (FM)
+
+**Definition:** In Frequency Modulation (FM), the instantaneous frequency of the carrier signal is varied in proportion to the instantaneous amplitude of the message signal. The amplitude of the carrier signal remains constant.
+
+**Mathematical Representation:**
+
+Let the message signal be $m(t)$ and the carrier signal be $c(t) = A_c \cos(2\pi f_c t)$.
+
+The instantaneous frequency of the modulated signal is given by:
+$f_i(t) = f_c + k_f m(t)$
+where:
+* $f_c$ is the carrier frequency.
+* $k_f$ is the frequency sensitivity constant (Hz/V).
+* $m(t)$ is the message signal.
+
+The modulated signal $s_{FM}(t)$ can be represented as:
+$s_{FM}(t) = A_c \cos(2\pi \int_{-\infty}^{t} f_i(\tau) d\tau)$
+$s_{FM}(t) = A_c \cos(2\pi \int_{-\infty}^{t} (f_c + k_f m(\tau)) d\tau)$
+$s_{FM}(t) = A_c \cos(2\pi f_c t + 2\pi k_f \int_{-\infty}^{t} m(\tau) d\tau)$
+
+Let $\phi_m(t) = 2\pi k_f \int_{-\infty}^{t} m(\tau) d\tau$. This is the instantaneous phase deviation.
+Then, $s_{FM}(t) = A_c \cos(2\pi f_c t + \phi_m(t))$.
+
+**Frequency Deviation ($\Delta f$)**: The maximum change in the instantaneous frequency from the carrier frequency.
+$\Delta f = k_f A_m$, where $A_m$ is the maximum amplitude of the message signal.
+
+**Modulation Index ($\beta$)**: The ratio of the frequency deviation to the maximum frequency of the modulating signal.
+$\beta = \frac{\Delta f}{f_m} = \frac{k_f A_m}{f_m}$
+where $f_m$ is the maximum frequency of the message signal.
+
+**Carson's Rule:** An empirical rule to estimate the bandwidth required for FM signals.
+Bandwidth $B_{FM} \approx 2(\Delta f + f_m) = 2f_m(1 + \beta)$.
+
+**Spectrum of FM Signal:**
+The spectrum of an FM signal is richer than that of AM. It consists of the carrier frequency and an infinite number of sidebands spaced at multiples of the message signal frequency. For small modulation indices ($\beta \ll 1$, Narrowband FM), the spectrum is similar to AM. For large modulation indices ($\beta \gg 1$, Wideband FM), the spectrum is approximated by the bandwidth given by Carson's rule.
+
+**Power in FM Signal:**
+The power of an FM signal is constant and is given by $P_{FM} = \frac{A_c^2}{2R}$, where $R$ is the load resistance. This means the power is independent of the modulation index.
+
+**Advantages of FM:**
+*   **Superior Noise Immunity:** FM receivers are less susceptible to amplitude-limited noise. Noise primarily affects the frequency and phase of the signal, and these are less critical in FM.
+*   **Constant Transmitter Power:** The transmitter power is constant, unlike AM where it varies with the modulation index.
+*   **No Amplitude Limiting Needed at Transmitter:** Transmitters don't need circuits to prevent overmodulation.
+
+**Disadvantages of FM:**
+*   **Larger Bandwidth Requirement:** FM typically requires a significantly larger bandwidth compared to AM, especially for wideband FM.
+*   **More Complex Modulators and Demodulators:** FM circuits are generally more complex than AM circuits.
+
+---
+
+### 2. Phase Modulation (PM)
+
+**Definition:** In Phase Modulation (PM), the instantaneous phase of the carrier signal is varied in proportion to the instantaneous amplitude of the message signal. The amplitude of the carrier signal remains constant.
+
+**Mathematical Representation:**
+
+Let the message signal be $m(t)$ and the carrier signal be $c(t) = A_c \cos(2\pi f_c t)$.
+
+The instantaneous phase of the modulated signal is given by:
+$\theta_i(t) = \theta_c + k_p m(t)$
+where:
+* $\theta_c = 2\pi f_c t$ is the carrier phase.
+* $k_p$ is the phase sensitivity constant (radians/V).
+* $m(t)$ is the message signal.
+
+The modulated signal $s_{PM}(t)$ can be represented as:
+$s_{PM}(t) = A_c \cos(2\pi f_c t + k_p m(t))$
+
+**Phase Deviation ($\Delta \phi$)**: The maximum change in the instantaneous phase from the carrier phase.
+$\Delta \phi = k_p A_m$, where $A_m$ is the maximum amplitude of the message signal.
+
+**Modulation Index ($\beta_p$) for PM:** The ratio of the phase deviation to the maximum frequency of the modulating signal.
+$\beta_p = k_p A_m = \Delta \phi$.
+*Note: Unlike FM, the modulation index in PM is defined as the phase deviation itself.*
+
+**Relationship between FM and PM:**
+PM and FM are closely related. An FM signal can be generated by applying a message signal through an integrator to a PM modulator. Conversely, an FM signal can be detected using a PM demodulator with an appropriate filtering.
+
+If $s_{FM}(t) = A_c \cos(2\pi f_c t + 2\pi k_f \int_{-\infty}^{t} m(\tau) d\tau)$, this is equivalent to a PM signal where the modulating signal is $\frac{k_f}{2\pi} \int_{-\infty}^{t} m(\tau) d\tau$.
+
+If $s_{PM}(t) = A_c \cos(2\pi f_c t + k_p m(t))$, this is equivalent to an FM signal where the modulating signal is $\frac{1}{2\pi} \frac{d}{dt}(k_p m(t))$. This means the frequency deviation is proportional to the derivative of the message signal.
+
+**Spectrum of PM Signal:**
+The spectrum of a PM signal is similar to that of an FM signal. It also consists of the carrier and sidebands. The bandwidth estimation using Carson's rule is also applicable, with the modulation index defined as $\beta_p = k_p A_m$.
+
+**Power in PM Signal:**
+The power of a PM signal is constant and is given by $P_{PM} = \frac{A_c^2}{2R}$, which is independent of the modulation index.
+
+**Advantages of PM:**
+*   **Constant Transmitter Power:** Similar to FM.
+*   **Good Noise Immunity:** Similar to FM, as noise typically affects amplitude, which is constant.
+
+**Disadvantages of PM:**
+*   **Requires Differentiation of Message for FM:** If FM is desired from a PM system, the message signal needs to be integrated, adding complexity.
+*   **More Complex Circuits:** Similar to FM.
+
+---
+
+### 3. Comparison of FM and PM
+
+| Feature             | Frequency Modulation (FM)                                  | Phase Modulation (PM)                                      |
+| :------------------ | :--------------------------------------------------------- | :--------------------------------------------------------- |
+| **Carrier Aspect**  | Instantaneous frequency varies with message amplitude.     | Instantaneous phase varies with message amplitude.         |
+| **Modulating Signal** | Carrier frequency deviates.                                | Carrier phase deviates.                                    |
+| **Frequency Deviation** | Proportional to $m(t)$: $\Delta f = k_f m(t)$              | Proportional to derivative of phase: $\Delta f = k_p \frac{d m(t)}{dt}$ |
+| **Phase Deviation** | Proportional to integral of message: $\Delta \phi = 2\pi k_f \int m(t) dt$ | Proportional to $m(t)$: $\Delta \phi = k_p m(t)$           |
+| **Modulation Index** | $\beta = \frac{k_f A_m}{f_m}$                                | $\beta_p = k_p A_m$                                        |
+| **Relationship**    | FM can be produced from PM by integrating the message.   | PM can be produced from FM by differentiating the message. |
+| **Noise Immunity**  | Excellent.                                                 | Excellent.                                                 |
+| **Bandwidth**       | Can be large (Wideband FM).                                | Similar to FM.                                             |
+| **Power**           | Constant.                                                  | Constant.                                                  |
+| **Applications**    | Broadcasting, mobile communication.                        | Some digital communication systems, telemetry.             |
+
+**Key Takeaway:** While mathematically different, FM and PM are very similar in practice. The primary difference lies in how the message signal is processed before modulating the carrier. In many applications, they are used interchangeably because a simple circuit (integrator or differentiator) can convert one to the other.
+
+---
+
+### 4. Angle Modulator Circuits
+
+Angle modulation can be achieved using various circuit implementations. The goal is to create a carrier signal whose frequency or phase changes in accordance with the message signal.
+
+**Common Techniques for FM Generation:**
+
+*   **Reactance Modulator:**
+    *   A variable reactance device (like a varactor diode or a transistor) is used as part of a resonant circuit (e.g., Colpitts or Hartley oscillator).
+    *   The reactance of the device is controlled by the message signal.
+    *   Changing the reactance changes the frequency of oscillation of the LC tank circuit, thus producing FM.
+    *   **Kennedy, Davis, and Prasanna (6th Ed., Ch. 5):** Discusses reactance tube modulators and varactor diode modulators.
+    *   **Wayne Tomasi (5th Ed., Ch. 4):** Explains varactor diode and transistor reactance modulators.
+
+*   **Voltage-Controlled Oscillator (VCO):**
+    *   A VCO is an oscillator whose output frequency is directly proportional to the input voltage.
+    *   By applying the message signal directly to the control input of a VCO, an FM signal is generated.
+    *   VCOs are widely used for their simplicity and linearity.
+
+*   **Direct FM (Armstrong Modulator):**
+    *   This method involves generating a narrow-band FM signal and then amplifying and frequency-multiplying it to achieve the desired wideband FM.
+    *   A narrow-band FM signal is produced by modulating the phase of a crystal-controlled oscillator with the message signal. This results in a small frequency deviation.
+    *   The narrow-band FM signal is then passed through a frequency multiplier (e.g., doublers, triplers) and amplifiers.
+    *   Multiplying the frequency by $N$ also multiplies the frequency deviation by $N$.
+    *   This method is used to generate wideband FM with good frequency stability, as the initial carrier frequency is locked to a crystal oscillator.
+    *   **Haykin and Mohre (5th Ed., Ch. 4):** Describes the Armstrong method in detail.
+    *   **Taub & Schilling (4th Ed., Ch. 8):** Explains indirect FM using the Armstrong method.
+
+**Common Techniques for PM Generation:**
+
+*   **Phase Modulator using a Balanced Modulator:**
+    *   A balanced modulator can be used to generate DSB-SC signals. By appropriately phase-shifting the carrier before mixing or by using specific circuit configurations, a PM signal can be generated.
+    *   For example, if the message signal $m(t)$ is applied to one input and $A_c \cos(2\pi f_c t)$ is applied to the other input of a multiplier, the output is $A_c m(t) \cos(2\pi f_c t)$. This is AM.
+    *   To create PM, the modulating signal needs to be such that the phase changes. One way is to use a circuit that produces $A_c \cos(2\pi f_c t + k_p m(t))$.
+
+*   **Phase-Locked Loop (PLL):**
+    *   PLLs are versatile circuits that can be used for both FM and PM generation and demodulation.
+    *   In a PLL, a voltage-controlled oscillator (VCO) is locked to the phase of an input signal.
+    *   When the message signal is used as the control voltage for the VCO, and the VCO is locked to the carrier frequency, it generates an FM signal.
+    *   If the message signal is first integrated and then used to control the VCO, it generates a PM signal.
+    *   **Proakis & Salehi (2nd Ed., Ch. 3):** Covers PLL applications in modulation.
+    *   **Lathi & Ding (4th Ed., Ch. 8):** Discusses PLLs for FM generation.
+
+---
+
+### 5. Angle Demodulation
+
+Angle demodulation involves recovering the original message signal from a frequency or phase modulated carrier.
+
+**FM Demodulators:**
+
+*   **Slope Detector:**
+    *   A simple FM detector that uses a tuned circuit (resonator) with a non-linear frequency response (a slope).
+    *   As the instantaneous frequency of the FM signal varies, it sweeps across the slope of the tuned circuit.
+    *   The frequency variations are converted into amplitude variations.
+    *   This amplitude-modulated signal is then detected using an envelope detector.
+    *   **Disadvantage:** Non-linear output, susceptible to amplitude noise, requires a limiter to remove amplitude variations.
+    *   **Kennedy, Davis, and Prasanna (6th Ed., Ch. 5):** Explains slope detection.
+    *   **Wayne Tomasi (5th Ed., Ch. 4):** Describes slope detectors.
+
+*   **Foster-Seeley Discriminator:**
+    *   A more sophisticated FM detector that provides a linear output over a wider range of frequencies.
+    *   It uses a combination of tuned circuits and diodes to convert frequency variations into voltage variations.
+    *   Requires a limiter to remove any AM noise before detection.
+    *   **Haykin and Mohre (5th Ed., Ch. 4):** Provides detailed analysis of the Foster-Seeley discriminator.
+    *   **Taub & Schilling (4th Ed., Ch. 8):** Explains the operation and circuit of the Foster-Seeley discriminator.
+
+*   **Ratio Detector:**
+    *   Similar to the Foster-Seeley discriminator but with an added capacitor that makes it less sensitive to amplitude variations.
+    *   It provides a good linear output without requiring a separate limiter circuit.
+    *   It is less sensitive to noise than the Foster-Seeley discriminator.
+    *   **Kennedy, Davis, and Prasanna (6th Ed., Ch. 5):** Discusses ratio detectors.
+    *   **Wayne Tomasi (5th Ed., Ch. 4):** Explains the ratio detector circuit.
+
+*   **Phase-Locked Loop (PLL) Demodulator:**
+    *   A PLL can be used as a highly effective FM demodulator.
+    *   The VCO in the PLL tracks the instantaneous frequency of the incoming FM signal.
+    *   The error voltage that controls the VCO is directly proportional to the frequency deviation and thus represents the original message signal.
+    *   PLL demodulators are widely used in modern receivers due to their excellent performance and flexibility.
+    *   **Proakis & Salehi (2nd Ed., Ch. 3):** Covers PLL demodulators.
+    *   **Lathi & Ding (4th Ed., Ch. 8):** Explains PLL FM demodulation.
+
+**PM Demodulators:**
+
+*   **Differentiator followed by Envelope Detector:**
+    *   A PM signal $s_{PM}(t) = A_c \cos(2\pi f_c t + k_p m(t))$ can be demodulated by first differentiating it.
+    *   $\frac{ds_{PM}(t)}{dt} = -A_c [2\pi f_c - k_p m'(t)] \sin(2\pi f_c t + k_p m(t))$.
+    *   The term $k_p m'(t)$ is proportional to the instantaneous frequency deviation.
+    *   This output can then be processed by a frequency discriminator or a phase detector. A simple approach is to pass it through a band-pass filter centered at $f_c$ and then an envelope detector. The envelope of the output after differentiation will be related to the message signal $m(t)$.
+    *   **Haykin and Mohre (5th Ed., Ch. 4):** Discusses PM demodulation techniques.
+
+*   **Phase-Locked Loop (PLL) Demodulator:**
+    *   A PLL can also demodulate PM signals. The control voltage for the VCO in the PLL directly represents the phase deviation, which is proportional to the message signal $m(t)$.
+
+---
+
+### 6. Angle Modulation in Digital Communication
+
+While angle modulation (FM and PM) is traditionally associated with analog communication, its principles are fundamental to many digital modulation schemes, particularly Frequency Shift Keying (FSK) and Phase Shift Keying (PSK).
+
+*   **Frequency Shift Keying (FSK):**
+    *   In FSK, the digital data (bits) are represented by shifts in the carrier frequency. For example, a '1' might be represented by a frequency $f_1$ and a '0' by a frequency $f_0$.
+    *   This is a form of digital frequency modulation.
+    *   **Course Outcome CO4:** Apply the knowledge of digital modulation in digital transmission. FSK is a direct application of FM principles.
+
+*   **Phase Shift Keying (PSK):**
+    *   In PSK, the digital data is represented by shifts in the phase of the carrier signal. For example, a '1' might be represented by a phase of 0 degrees and a '0' by a phase of 180 degrees.
+    *   This is a form of digital phase modulation.
+    *   **Course Outcome CO4:** PSK is another direct application of PM principles.
+
+Understanding analog angle modulation is crucial for grasping the operation and principles behind these digital modulation techniques. The concepts of frequency deviation, phase deviation, and modulation index are directly transferable.
+
+---
+
+### 7. Angle Modulation Characteristics and Course Outcomes Alignment
+
+This module directly addresses the following Course Outcomes:
+
+*   **CO1: Explain the working of Amplitude modulator and demodulator circuits using mathematical relations.**
+    *   While this module focuses on Angle Modulation, understanding the mathematical basis of FM and PM (as presented in section 1 and 2) provides a strong foundation for comparative analysis with AM. The mathematical representations of FM and PM signals, including frequency and phase deviation, are key to this outcome.
+    *   **Textbook Alignment:** Kennedy, Davis, and Prasanna; Wayne Tomasi; Haykin and Mohre; Taub & Schilling all provide mathematical formulations for angle modulated signals.
+
+*   **CO2: Explain the characteristics of various analog modulation schemes in terms of spectra, power and efficiency.**
+    *   This is a core outcome addressed by this module.
+    *   **Spectra:** The spectrum of FM and PM signals, including sidebands and bandwidth estimation (Carson's Rule), are discussed.
+    *   **Power:** The constant power characteristic of FM and PM is highlighted.
+    *   **Efficiency:** Angle modulation is generally more power-efficient than AM in terms of signal-to-noise ratio (SNR) for a given bandwidth.
+    *   **Textbook Alignment:** All listed textbooks extensively cover the spectral characteristics, power considerations, and efficiency of FM and PM.
+
+*   **CO3: Understand the various processing blocks of a digital communication system.**
+    *   While this module is about analog angle modulation, the concepts of modulation and demodulation are fundamental building blocks in any communication system, including digital ones. The understanding of how information is embedded into a carrier signal is directly relevant.
+    *   **Textbook Alignment:** The general principles of modulation and demodulation covered here are foundational for understanding digital system blocks.
+
+*   **CO4: Apply the knowledge of digital modulation in digital transmission.**
+    *   This outcome is directly supported by the discussion in Section 6 on FSK and PSK. These digital modulation techniques are direct applications of FM and PM principles, respectively. Understanding the underlying analog angle modulation is crucial for understanding how digital data is transmitted using these methods.
+    *   **Reference Book Alignment:** Books like Couch, Proakis, and Lathi will further elaborate on digital modulation schemes like FSK and PSK, building upon the angle modulation concepts.
+
+---
+
+### 8. Important Points to Remember
+
+*   **Angle Modulation:** Varies the angle (frequency or phase) of the carrier, keeping amplitude constant.
+*   **FM:** Frequency varies with message amplitude.
+*   **PM:** Phase varies with message amplitude.
+*   **Relationship:** FM $\leftrightarrow$ Integrate $\leftrightarrow$ PM.
+*   **Modulation Index:** Crucial parameter determining bandwidth and spectral characteristics.
+    *   FM: $\beta = \Delta f / f_m$
+    *   PM: $\beta_p = \Delta \phi$
+*   **Bandwidth:** FM/PM generally requires more bandwidth than AM (Carson's Rule: $B \approx 2(\Delta f + f_m)$).
+*   **Power:** FM and PM signals have constant power, independent of modulation depth, which is a significant advantage over AM.
+*   **Noise Immunity:** FM and PM are more robust against noise compared to AM, especially amplitude-dependent noise.
+*   **Demodulators:** Slope, Foster-Seeley, Ratio Detector, and PLLs are common FM demodulators. PM demodulation can be achieved using differentiators and discriminators or PLLs.
+*   **Digital Applications:** FSK and PSK are digital implementations of FM and PM, respectively.
+
+---
+
+### 9. Practice Questions and Exercises
+
+**Questions:**
+
+1.  Write the mathematical expression for an FM signal. Define frequency deviation and modulation index for FM.
+2.  How is a PM signal related to an FM signal mathematically?
+3.  Explain the concept of Carson's Rule for estimating the bandwidth of an FM signal.
+4.  What are the main advantages of FM over AM?
+5.  Compare the power efficiency and noise immunity of FM/PM with AM.
+6.  Briefly describe the working principle of a reactance modulator for FM generation.
+7.  What is the key difference between a Foster-Seeley discriminator and a ratio detector?
+8.  How can a PLL be used as an FM demodulator?
+9.  What is the relationship between FSK and FM?
+10. If a message signal $m(t) = 5 \sin(2000\pi t)$ modulates a carrier $c(t) = 10 \cos(2\pi \times 10^6 t)$ with a frequency sensitivity $k_f = 100 \text{ Hz/V}$, calculate:
+    a) The frequency deviation.
+    b) The modulation index.
+    c) The approximate bandwidth of the FM signal using Carson's Rule.
+
+**Answers:**
+
+1.  **Mathematical Expression for FM:**
+    $s_{FM}(t) = A_c \cos(2\pi f_c t + 2\pi k_f \int_{-\infty}^{t} m(\tau) d\tau)$
+    **Frequency Deviation ($\Delta f$)**: $\Delta f = k_f A_m$, where $A_m$ is the maximum amplitude of $m(t)$.
+    **Modulation Index ($\beta$)**: $\beta = \frac{\Delta f}{f_m}$, where $f_m$ is the maximum frequency of $m(t)$.
+
+2.  **Relationship between PM and FM:**
+    An FM signal can be generated by integrating the message signal and then applying it to a PM modulator. Conversely, a PM signal can be converted to an FM signal by differentiating the message signal and applying it to an FM modulator.
+    Mathematically, $s_{FM}(t) = A_c \cos(2\pi f_c t + \phi_m(t))$ where $\phi_m(t) = 2\pi k_f \int m(t) dt$. If we let $m_{PM}(t) = \frac{k_f}{2\pi} \int m(t) dt$, then $s_{FM}(t) = A_c \cos(2\pi f_c t + 2\pi m_{PM}(t))$, which is a PM signal with phase deviation proportional to the integral of the original message.
+
+3.  **Carson's Rule:**
+    Carson's rule is an empirical approximation for the bandwidth required by an FM signal: $B_{FM} \approx 2(\Delta f + f_m)$, where $\Delta f$ is the frequency deviation and $f_m$ is the maximum frequency of the modulating signal. For large modulation indices ($\beta \gg 1$), the bandwidth is approximately $2 f_m (1 + \beta)$.
+
+4.  **Advantages of FM over AM:**
+    *   **Superior Noise Immunity:** FM systems are less susceptible to amplitude-limited noise.
+    *   **Constant Transmitter Power:** The power output of an FM transmitter is constant, simplifying design.
+    *   **No Overmodulation:** Unlike AM, FM cannot be overmodulated.
+
+5.  **Power Efficiency and Noise Immunity:**
+    *   **Power Efficiency:** FM/PM are generally more power-efficient in terms of SNR for a given bandwidth. They utilize the full transmitter power constantly, whereas AM's power varies and a significant portion is in the carrier.
+    *   **Noise Immunity:** FM/PM exhibit better noise immunity because noise typically adds amplitude variations to the signal, which are ignored by the FM/PM demodulator (after limiting). AM is directly affected by amplitude noise.
+
+6.  **Reactance Modulator Principle:**
+    A reactance modulator uses a voltage-variable reactance (like a varactor diode) in an oscillator's tank circuit. The message signal's amplitude controls the reactance, which in turn alters the resonant frequency of the tank circuit, producing frequency modulation of the oscillator's output.
+
+7.  **Foster-Seeley vs. Ratio Detector:**
+    The main difference is that the ratio detector includes a capacitor across its output that effectively removes amplitude variations, making it less sensitive to noise and eliminating the need for a separate limiter circuit required by the Foster-Seeley discriminator.
+
+8.  **PLL as FM Demodulator:**
+    In a PLL FM demodulator, the Voltage-Controlled Oscillator (VCO) within the PLL is forced to track the incoming FM signal's instantaneous frequency. The control voltage that drives the VCO to maintain lock is the demodulated output, as this voltage directly corresponds to the frequency deviation.
+
+9.  **FSK and FM Relationship:**
+    FSK is essentially a form of digital frequency modulation. In FSK, discrete frequency shifts are used to represent digital data bits, analogous to how the continuous message signal causes frequency shifts in analog FM.
+
+10. **Calculations:**
+    Given: $m(t) = 5 \sin(2000\pi t)$, $c(t) = 10 \cos(2\pi \times 10^6 t)$, $k_f = 100 \text{ Hz/V}$.
+    From $m(t)$, the maximum amplitude $A_m = 5$ V and the maximum frequency $f_m = \frac{2000\pi}{2\pi} = 1000$ Hz.
+    The carrier frequency $f_c = 10^6$ Hz.
+
+    a) **Frequency Deviation ($\Delta f$):**
+       $\Delta f = k_f A_m = 100 \text{ Hz/V} \times 5 \text{ V} = 500 \text{ Hz}$
+
+    b) **Modulation Index ($\beta$):**
+       $\beta = \frac{\Delta f}{f_m} = \frac{500 \text{ Hz}}{1000 \text{ Hz}} = 0.5$
+
+    c) **Approximate Bandwidth (Carson's Rule):**
+       $B_{FM} \approx 2(\Delta f + f_m) = 2(500 \text{ Hz} + 1000 \text{ Hz}) = 2(1500 \text{ Hz}) = 3000 \text{ Hz}$ or 3 kHz.
+
+---
+This concludes the study notes for Topic: Angle Modulation. Refer to the specified textbooks for further in-depth understanding and derivations.
+
+## Videos
+
+| Resource Type | Recommended Video |
+| :--- | :--- |
+| ⚡ **Quick Concept** | [Watch Summary & Animations](https://www.youtube.com/watch?v=gI-qXk7XojA) |
+| 🎓 **Exam Deep Dive** | [Watch Comprehensive University Lecture](https://www.youtube.com/watch?v=Q-tL8_628gE) |
+| ✍️ **Problem Solving** | [Watch Solved Examples & Numericals](https://www.youtube.com/watch?v=8XG7U5yN668) |

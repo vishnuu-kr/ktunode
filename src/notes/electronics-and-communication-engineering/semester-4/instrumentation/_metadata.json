@@ -1,0 +1,162 @@
+{
+  "subject": "INSTRUMENTATION",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 4,
+  "details": {
+    "name": "INSTRUMENTATION",
+    "courseCode": "PEECT 411",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to measuring instruments",
+          "Generalized Configurations and Functional elements of Instrumentation systems",
+          "Need for Measurement Systems",
+          "Classification of Types of Measuring instruments",
+          "Static and Dynamic characteristics of measuring instruments."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Sensors and Transducers",
+          "Classification and selection criteria of Transducers",
+          "Principles of operation, construction, theory, advantages and disadvantages, applications of",
+          "Resistive Transducers: Potentiometers, strain gauges, (metallic and semi-conductor type), Resistance Thermometer, Thermistors.",
+          "Inductive Transducers: LVDT (Linear variable differential transformer).",
+          "Capacitive Transducers: various capacitive transducers based upon familiar equation of capacitance (capacitive microphone)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Electronic Measuring Instruments",
+          "Digital storage oscilloscope",
+          "Working principle and applications of waveform analyser, digital frequency meter, harmonic distortion meter, harmonic analyser, spectrum analyser and logic state analyser",
+          "IEEE - 488 General Purpose Interface Bus (GPIB) Instruments with application.",
+          "EMI,",
+          "Grounding and Shielding"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "PLC Programming",
+          "Basic PLC Programming: Programming ON/OFF Inputs",
+          "Creating Ladder diagrams",
+          "Register Basics",
+          "PLC Timers and Counters",
+          "PLC Arithmetic functions",
+          "Number comparison functions",
+          "Data handling Functions: Skip function and applications; master control relay function and applications; jump with non-return and return; data table, register and other move functions",
+          "PLC functions with BITS."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Interpret the basic concepts of measuring instruments, its classification, and selection criteria.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Outline the principle, construction and working of transducers for measuring physical variables.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Comprehend the principle, construction and working of various electronic measuring instruments.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply PLC programming for selected industrial processes.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Doebelin's Measurement Systems",
+        "author": "Ernest Doebelin, Dhanesh N. Manik",
+        "publisher": "Tata McGraw   Hill",
+        "edition": "6/e, 2011"
+      },
+      {
+        "title": "Electronic Instrumentation",
+        "author": "Kalsi H S",
+        "publisher": "Tata McGraw Hill",
+        "edition": "4/e, 2019"
+      },
+      {
+        "title": "Programmable Logic controllers Programming Methods and Applications",
+        "author": "John R Hackworth, Frederick D Hackworth",
+        "publisher": "Pearson Education",
+        "edition": "3/e, 2022"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "“Electrical and Electronics Measurements and Instrumentation,”",
+        "author": "Sawhney AK",
+        "publisher": "Dhanpat Rai and Sons",
+        "edition": "2023"
+      },
+      {
+        "title": "“Programmable Logic Controllers- Principles and applications",
+        "author": "John W Webb, Ronald A. Reis,",
+        "publisher": "Pearson",
+        "edition": "5/e, 2015"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/108/105/108105064/",
+      "module2": "https://archive.nptel.ac.in/courses/108/105/108105153/",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:49:15.966Z"
+}

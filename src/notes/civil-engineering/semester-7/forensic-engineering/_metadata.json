@@ -1,0 +1,195 @@
+{
+  "subject": "FORENSIC ENGINEERING",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "FORENSIC ENGINEERING",
+    "courseCode": "OECET724",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Forensic Engineering - Forensic Engineering – Definition",
+          "Investigation Pyramid",
+          "Eyewitness Information",
+          "Role in Legal system",
+          "Scientific Method – Applying scientific method in forensic engineering – engineer as expert witness – scientific methods and legal system",
+          "Qualification of forensic engineer – Technical knowledge – oral and written communication – other skills – personality characteristics",
+          "Ethics and professional responsibilities"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Forensic Engineering Workflow and Investigation Methods - Forensic Engineering Workflow-Team &planning-preliminary onsite investigation",
+          "Sampling-selection of sample-collection- packing-sealing of samples",
+          "Source and type of evidence - Paper documentation- digital documentation- electronic data",
+          "Physical Evidence-Collection of photograph-cataloguing - Recognizing the Evidence-organizing Evidence Analysis –Reporting",
+          "Investigation Methods- Cause and Causal mechanism analysis-Time and event sequence-STEP method",
+          "Human Factors",
+          "Human errors - Analysis of Operative Instruction and working Procedures"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Physical Product Failure & Analytical Methods - Introduction to typical Forensic Engineering Tool box-NDT, Crack detection and human eye - Hardness testing- and Destructive testing Methods with case studies",
+          "Indirect stress strain Analysis-Brittle lacquer technique",
+          "Contact Radiography-Metallography-EDAX method",
+          "Forensic Optical Microscopy-Examination- Magnification-USB Microscopy -Wifi Enabled microscopy -Reflected microscopy",
+          "Novel Tools and System -Contour Method-Flash Thermography",
+          "Thermographic signal reconstruction (TSR)- Electromagnetically induced acoustic Emission (EMAE)-Pulsed Eddy Current (PEA)-Theory only"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Engineer in the Court room & Criminal Cases - Role of an Engineering Expert-Report-pre trial meetings-Alternative dispute resolution-Single joint expert",
+          "Engineer in the court room",
+          "Criminal Cases-Introduction-Counterfeit coins-fraudulent road accidents-Fraudulent Insurance claims",
+          "Cyber Crimes and Cases- SIM Swapping -ATM Cloning-Microsoft Internal Spam- Intellectual property cases"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify the fundamental aspects of forensic Engineering",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply forensic Engineering in Practical work flow and Investigation",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply methods and analysis in Forensic Investigation",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Develop practical strategies and standards of Investigation",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO5",
+        "description": "Create an awareness in criminal cases and create Engineering expertise in court room on forensic Engineering",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Forensic Engineering The Art &Craft of a failure detective",
+        "author": "Colin R Gagg",
+        "publisher": "Taylor & Francis Publishing",
+        "edition": "2020"
+      },
+      {
+        "title": "Principles of Forensic Engineering Applied to Industrial Accidents",
+        "author": "Luca Fiorentini ,Luca Marmo",
+        "publisher": "Wiley",
+        "edition": "2019"
+      },
+      {
+        "title": "Forensic Engineering Fundamentals",
+        "author": "Harold Franck, Darren Franck",
+        "publisher": "Taylor & Francis",
+        "edition": "2013"
+      },
+      {
+        "title": "Forensic Engineering Investigation",
+        "author": "Randall K Noon",
+        "publisher": "CRC press",
+        "edition": "2001"
+      },
+      {
+        "title": "Guidelines for forensic Engineering practice",
+        "author": "Joshua B Kardon",
+        "publisher": "ASCE",
+        "edition": "2012"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Engineering standards for forensic Applications",
+        "author": "Richard W. Mclay and Robert N. Anderson",
+        "publisher": "Academic Press",
+        "edition": "1st edition, 2018"
+      },
+      {
+        "title": "Forensic Engineering (Advanced forensic Science )",
+        "author": "Max M Houck",
+        "publisher": "Academic Press",
+        "edition": "1st edition, 2017"
+      },
+      {
+        "title": "Practical Cyber Forensics. An Incident-based Approach to Forensic Investigations",
+        "author": "Niranjan Reddy",
+        "publisher": "Apress",
+        "edition": "2019"
+      },
+      {
+        "title": "Forensic Materials Engineering Case Studies",
+        "author": "Peter Rhys Lewis, Ken Reynolds, Colin Gagg",
+        "publisher": "CRC Press",
+        "edition": "2003"
+      },
+      {
+        "title": "Forensic Engineering: Damage assessment for residential and commercial structures",
+        "author": "Stephen E Petty",
+        "publisher": "CRC press",
+        "edition": "2nd edition, 2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:59:06.205Z"
+}

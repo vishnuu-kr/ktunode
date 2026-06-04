@@ -1,0 +1,184 @@
+{
+  "subject": "ADVANCED STRUCTURAL ANALYSIS",
+  "branch": "Civil Engineering",
+  "semester": 5,
+  "details": {
+    "name": "ADVANCED STRUCTURAL ANALYSIS",
+    "courseCode": "PECET521",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET303/ PCCET403",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Two hinged Arches:  Analysis of two hinged arches - Support reactions normal thrust and radial shear at any section of a parabolic arch due to simple cases of loading, influence line for horizontal thrust, bending moment, normal thrust, and radial shear.",
+          "Matrix Analysis of Structures:  Reviewing the definition of flexibility and stiffness influence coefficients, and concepts of physical approach"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Direct stiffness method:  Introduction to direct stiffness method-Rotation of axes in two dimensions, stiffness matrix of elements in global co- ordinates from element co-ordinates- assembly of load vector and stiffness matrix, solution of two span continuous beam-single bay single storey portal frame."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Structural dynamics:  Introduction - degrees of freedom - equation of motion, D’Alembert’s principle-damping- free response of damped and undamped systems- logarithmic decrement-- single degree of freedom systems subjected to harmonic load - transient and steady state responses, simple portal frame problems."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Finite Element Methods:  Boundary value problems; Introduction to approximate numerical solutions for solving differential equations.",
+          "Formulation techniques: Element equations using weighted residual approach - the axial element example."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply suitable methods of analysis for arches.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply the displacement methods to analyse framed structures.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Remember basic dynamics, understand the basic principles of structural dynamics and apply the same to simple structures.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the basic features of boundary value problems, and fundamental concept of the finite element method, and develop the ability to generate the governing FE equations for systems governed by partial differential equations.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Comprehensive Structural Analysis Volume I & II",
+        "author": "R.Vaidyanathan and P.Perumal",
+        "publisher": "Laxmi Publications (P) Ltd",
+        "edition": "Fourth\n2024"
+      },
+      {
+        "title": "Elementary Finite Element Method",
+        "author": "Desai, C.S.",
+        "publisher": "Prentice Hall of India",
+        "edition": "1979"
+      },
+      {
+        "title": "Structural Dynamics: Theory and Computation",
+        "author": "Mario Paz, William Leigh",
+        "publisher": "CBS Publishers, New Delhi, India",
+        "edition": "5th ed.\n2004"
+      },
+      {
+        "title": "Intermediate Structural Analysis,",
+        "author": "Wang C.K.",
+        "publisher": "McGraw Hill Education",
+        "edition": "2017"
+      },
+      {
+        "title": "Matrix Analysis of Framed Structures",
+        "author": "James M Gere & William Weaver",
+        "publisher": "CBS Publishers",
+        "edition": "2nd edition\n2018"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Structural Analysis II",
+        "author": "S.S. Bhavikatti",
+        "publisher": "Vikas Publication Houses (P) Ltd",
+        "edition": "2016"
+      },
+      {
+        "title": "Finite Element Procedures in Engineering Analysis",
+        "author": "Bathe, K.J.",
+        "publisher": "Prentice Hall of India",
+        "edition": "2006"
+      },
+      {
+        "title": "Finite Element Analysis Theory and Programming,",
+        "author": "Krishnamoorthy, C.S.",
+        "publisher": "Tata McGraw Hill.",
+        "edition": "2nd edition\n2017"
+      },
+      {
+        "title": "Dynamics of Structures",
+        "author": "Clough R. W. and J. Penzien",
+        "publisher": "McGraw Hill",
+        "edition": "2nd edition\n2015"
+      },
+      {
+        "title": "Dynamics of Structures- Theory and application to Earthquake Engineering",
+        "author": "Chopra A. K.",
+        "publisher": "Pearson Education India",
+        "edition": "3rd edition\n2008"
+      },
+      {
+        "title": "Structural Analysis,",
+        "author": "R.C. Hibbeler",
+        "publisher": "Pearson",
+        "edition": "10th Edition\n2022"
+      },
+      {
+        "title": "Basic Structural Analysis",
+        "author": "Reddy C. S.",
+        "publisher": "Tata McGraw Hill",
+        "edition": "3rd edition\n2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/105/105/105105109/",
+      "module2": "https://onlinecourses.nptel.ac.in/noc21_ce44/preview",
+      "module3": "https://archive.nptel.ac.in/courses/105/101/105101006/",
+      "module4": "https://archive.nptel.ac.in/courses/112/104/112104193/"
+    },
+    "semester": "5",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:47:15.407Z"
+}

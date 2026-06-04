@@ -1,0 +1,138 @@
+{
+  "subject": "POWER SYSTEM OPERATION AND CONTROL",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 7,
+  "details": {
+    "name": "POWER SYSTEM OPERATION AND CONTROL",
+    "courseCode": "PEEET741",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCEET501, PBEET604",
+    "courseType": "PE -Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction- Optimum load dispatch - First order gradient method base point and participation factors.",
+          "Economic dispatch versus unit commitment.",
+          "Unit Commitment Solution Methods - Priority-List Methods – Security Constrained Unit Commitment."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Generation with limited supply-Take or pay fuel supply contract- Introduction to Hydrothermal coordination-Long range and short range scheduling",
+          "Hydro-electric plant models-scheduling energy problems - types of scheduling problems.",
+          "Scheduling energy - The Hydrothermal Scheduling Problem - Hydro scheduling with storage limitation - Introduction to Pumped storage hydro plants."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Inter change evaluation and power pools- Interchange contracts – Energy interchange between utilities - Interchange evaluation with unit commitment - Energy banking- power pools.",
+          "Power system security- Factors Affecting Power System Security - Contingency Analysis: Detection of Network Problems - Generation Outages - Transmission Outages - An Overview of Security Analysis."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to State estimation in power system, Maximum Likelihood Weighted Least Squares Estimation - State Estimation of an AC Network - Sources of Error in State Estimation - Detection and Identification of Bad",
+          "Measurements - Estimation of Quantities Not Being Measured - Network Observability and Pseudo-measurements - The Use of Phasor Measurement Units (PMUs) - Application of Power Systems State Estimation - Importance of Data Verification and Validation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Analyse various methods of generation scheduling.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO2",
+        "description": "Formulate hydro-thermal scheduling problems.",
+        "knowledgeLevel": "K5"
+      },
+      {
+        "CO": "CO3",
+        "description": "Evaluate power exchange in interconnected power systems.",
+        "knowledgeLevel": "K5"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyse security issues in power system networks.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Analyse various state estimation methods.",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Power Generation Operation and Control",
+        "author": "Allen J. Wood & Bruce F. Wollenberg",
+        "publisher": "John Wiley & Sons",
+        "edition": "3rd edition 2023"
+      },
+      {
+        "title": "Power System Analysis",
+        "author": "John Graigner & William Stevenson",
+        "publisher": "McGraw Hill",
+        "edition": "1994"
+      },
+      {
+        "title": "Power System State Estimation: Theory and Implementation",
+        "author": "Ali Abur, Antonio Gomez",
+        "publisher": "CRC Press",
+        "edition": "2004"
+      }
+    ],
+    "referenceBooks": [],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:39:05.126Z"
+}

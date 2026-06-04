@@ -1,0 +1,189 @@
+{
+  "subject": "RANDOMIZED ALGORITHMS",
+  "branch": "Computer Science and Engineering",
+  "semester": 6,
+  "details": {
+    "name": "RANDOMIZED ALGORITHMS",
+    "courseCode": "PECST639",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "GAMAT301\nPCCST302\nPCCST303\nPCCST502",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Basics of Randomization - Introduction to randomized algorithms, Probabilistic analysis and expectations, Benefits and applications of randomization.",
+          "Probability Review - Basic probability theory, Random variables and distributions, Linearity of expectation.",
+          "Basic Randomized Algorithms - Randomized quicksort, Randomized selection, Randomized data structures."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1 - Chapter 1",
+          "Text 2 - Chapters 1, 2",
+          "Text 3 - Sections 5.3, 9.2"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Randomized Graph Algorithms - Randomized algorithms for graph problems, Minimum cut problems, Randomized algorithms for network flows.",
+          "Hashing and Randomized Data Structures - Universal and perfect hashing, Skip lists, Bloom filters.",
+          "Markov Chains and Random Walks - Introduction to Markov chains, Random walks on graphs, Applications in randomized algorithms."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1 - Chapters 5, 6",
+          "Text 3 - Chapter 11",
+          "Text 2 -  Chapters 6, 7"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "The Probabilistic Method - Basics of the probabilistic method, Linearity of expectation, First and second-moment methods.",
+          "Chernoff Bounds and Concentration Inequalities - Markov's inequality, Chebyshev's inequality, Chernoff bounds, Applications of concentration inequalities."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 4 - Chapters 1, 2",
+          "Text 1 - Chapter 4"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Randomized Rounding and Martingales - Randomized rounding techniques, Applications in approximation algorithms, Introduction to martingales, Azuma's inequality.",
+          "Randomized Complexity Classes - RP, ZPP, and BPP, Relationships between complexity classes, Amplification and derandomization techniques"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 5 - Chapter 14",
+          "Text 6 - Chapter 7"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each \nmodule.  \n● Total of 8 Questions, each \ncarrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.  \n● Two questions will be given from each module, out \nof which 1 question should be answered.  \n● Each question can have a maximum of 3 \nsubdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Demonstrate a strong understanding of the basics of randomized algorithms, including probabilistic analysis, expectations, and the benefits of randomization",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Illustrate basic randomized algorithms, such as randomized quicksort, selection, and data structures, and evaluate their performance against deterministic alternatives.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply advanced randomized techniques, including randomized graph algorithms, hashing, and Markov chains, to address complex graph and data structure problems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Show expertise in probabilistic methods, including Chernoff bounds, concentration inequalities, and randomized rounding, and use these methods to solve approximation and analysis problems in algorithms",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Understand and apply concepts related to randomized complexity classes, such as RP, ZPP, and BPP, and explore amplification and derandomization techniques",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Randomized Algorithms",
+        "author": "Rajeev Motwani and Prabhakar Raghavan",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2004"
+      },
+      {
+        "title": "Probability and Computing: \nRandomization and Probabilistic Techniques in Algorithms and Data Analysis",
+        "author": "Michael Mitzenmacher and Eli Upfal",
+        "publisher": "Cambridge University Press",
+        "edition": "3/e, 2017"
+      },
+      {
+        "title": "Introduction to Algorithms",
+        "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,  \nClifford Stein",
+        "publisher": "The MIT Press",
+        "edition": "4/e,  2023"
+      },
+      {
+        "title": "The Probabilistic Method",
+        "author": "Noga Alon and Joel H. Spencer",
+        "publisher": "Wiley-Blackwell",
+        "edition": "4/e 2016"
+      },
+      {
+        "title": "Approximation Algorithms",
+        "author": "Vijay V. Vazirani",
+        "publisher": "Springer Nature\n(SIE)",
+        "edition": "2/e, 2013"
+      },
+      {
+        "title": "Computational Complexity: A \nModern Approach",
+        "author": "Sanjeev Arora and Boaz Barak",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2019"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Concentration of Measure for \nthe analysis of randomized \nalgorithms",
+        "author": "Devdatt Dubhashi and \nAlessandro Panconesi",
+        "publisher": "Cambridge University\nPress",
+        "edition": "1/e, 2012"
+      },
+      {
+        "title": "The design of approximation \nalgorithms",
+        "author": "David Williamson and \nDavid Shmoys",
+        "publisher": "Cambridge University\nPress",
+        "edition": "1/e, 2011"
+      },
+      {
+        "title": "Algorithms",
+        "author": "Robert Sedgewick and \nKevin Wayne",
+        "publisher": "Addison-Wesley",
+        "edition": "4/e, 2023"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/103/106103187/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:57:04.521Z"
+}

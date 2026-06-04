@@ -1,0 +1,168 @@
+{
+  "subject": "INTERNET OF THINGS",
+  "branch": "Computer Science and Engineering",
+  "semester": 8,
+  "details": {
+    "name": "INTERNET OF THINGS",
+    "courseCode": "OECST834",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "NA",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to IoT - Physical Design of IoT",
+          "Logical Design of IoT",
+          "IoT levels and Deployment templates",
+          "Domain Specific IoT- Home automation",
+          "Energy",
+          "Agriculture",
+          "Health and lifestyle"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "IoT and M2M-M2M",
+          "Difference between IoT and M2M",
+          "Software Defined Networking",
+          "Network Function virtualization",
+          "Need for IoT System Management",
+          "Simple Network Management Protocol (SNMP)",
+          "NETCONF",
+          "YANG",
+          "LPWAN -  LPWAN applications",
+          "LPWAN technologies",
+          "Cellular (3GPP) and Non 3GPP standards",
+          "Comparison of various protocols like Sigfox",
+          "LoRA",
+          "LoRAWAN",
+          "Weightless",
+          "NB-IoT",
+          "LTE-M"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Developing IoT - IoT design methodology",
+          "Case study on IoT system for weather monitoring",
+          "Motivations for using python",
+          "IoT-system Logical design using python",
+          "Python Packages of Interest for IoT - JSON",
+          "XML",
+          "HTTPlib & URLLib",
+          "SMTPLib"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Programming Raspberry Pi with Python-Controlling LED with Raspberry Pi",
+          "Interfacing an LED and switch with Raspberry Pi",
+          "Other IoT devices- PcDino",
+          "Beagle bone Black",
+          "Cubieboard",
+          "Data Analytics for IoT"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  \n Total of 8 Questions, each \ncarrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  \n Two questions will be given from each module, out of \nwhich 1 question should be answered.  \n Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand domain-specific applications and apply the principles of IoT, including physical and logical design and  deployment templates",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Use the principles of IoT and M2M, their differences, and key concepts like SDN, NFV, and essential management protocols.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Develop and apply IoT design methodology, utilize Python for logical system design, and leverage key Python packages through practical case studies.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Experiment using Raspberry Pi with Python to control LEDs and switches, interface with other IoT devices.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Internet of Things - a Hands On \nApproach.",
+        "author": "Arshdeep Bahga, Vijay \nMadisetti",
+        "publisher": "Universities Press",
+        "edition": "1/e, 2016"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Internet of Things : Architecture \nand Design Principles",
+        "author": "Rajkamal",
+        "publisher": "McGraw Hill",
+        "edition": "2/e, 2022"
+      },
+      {
+        "title": "The Internet of Things –Key \napplications and Protocols",
+        "author": "Olivier Hersent, David \nBoswarthick, Omar Elloumi",
+        "publisher": "Wiley",
+        "edition": "1/e, 2012"
+      },
+      {
+        "title": "IoT fundamentals : Networking \ntechnologies, Protocols and use \ncases  for the  Internet of things",
+        "author": "David Hanes Gonzalo. \nSalgueiro, Grossetete, Robert \nBarton",
+        "publisher": "Cisco Press",
+        "edition": "1/e, 2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/105/106105166/",
+      "module2": "https://archive.nptel.ac.in/courses/108/108/108108179/",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:24:36.907Z"
+}

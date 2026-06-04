@@ -1,0 +1,193 @@
+{
+  "subject": "COMMUNICATION LAB I",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 5,
+  "details": {
+    "name": "COMMUNICATION LAB I",
+    "courseCode": "PCECL508",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Analog circuits, Signals\nand systems, Digital\nSignal Processing",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Any one from the following Analog modulation schemes",
+          "AM modulation and detection using Transistors or ICS",
+          "FM modulation and detection"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Hardware Experiment: Any one from the following Digital modulation & Waveform coding Schemes",
+          "Generation and Detection of PCM signals",
+          "Generation and Detection of Delta modulated signals",
+          "Generation and Detection of BPSK",
+          "Generation and Detection of QPSK"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Performance of Waveform Coding Using PCM",
+          "Pulse Shaping and Matched Filtering",
+          "Eye diagram",
+          "Error Performance of BPSK",
+          "Error Performance of QPSK"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Familiarization with Software Defined Radio (Hardware and Control Software)",
+          "FM reception or FM transmission using SDR"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "Familiarization with Software Defined Radio (Hardware and Control Software)",
+          "Familiarize with an SDR hardware for reception and transmission of RF signal",
+          "Familiarize how it can be interfaced with computer",
+          "Familiarize with GNU Radio (or similar software's like Simulink/ Lab- View) that can be used to process the signals received through the SDR hardware.",
+          "Familiarize available blocks in GNU radio. Study how signals can be generated and spectrum (or power spectral density) of signals can be analyzed. Study how filtering can be performed."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "FM reception using SDR",
+          "Receive digitized FM signal (for the clearest channel in the lab) using the SDR board.",
+          "Set up an LPF and FM receiver using GNU Radio.",
+          "Use appropriate sink in GNU Radio to display the spectrum of signal.",
+          "Resample the voice to make it suitable for playing on computer speaker. or playing on compute"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "FM transmission using SDR",
+          "Use a wave file source.",
+          "Set up an FM transmitter using GNU Radio.",
+          "Resample the voice source and transmit using the SDR."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 20,
+        "internalExam2": 0,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/\nPreparatory\nwork/Design/\nAlgorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/\nExecution of work/\ntroubleshooting/ Programming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Setup simple prototype circuits for waveform coding and digital\nmodulation techniques working in a team.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Simulate the error performance of a digital communication system using\nstandard binary and M-ary modulation schemes.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "Develop hands-on skills to emulate a communication system with software-\ndesign-radio working in a team.",
+        "knowledgeLevel": "K5"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "The Hobbyist's Guide to the\nRTL-SDR: Really Cheap\nSoftware Defined Radio",
+        "author": "Carl Laufer",
+        "publisher": "CreateSpace\nIndependent\nPublishing Platform",
+        "edition": "2nd\nEdition,\n2015"
+      },
+      {
+        "title": "Principles of Communication\nSystems Simulation with\nWireless Applications",
+        "author": "WH Tranter, KS\nShanmugan, TS\nRappaport, KL Kosbar",
+        "publisher": "Prentice Hall",
+        "edition": "2nd\nEdition,\n2006"
+      },
+      {
+        "title": "Digital Modulations using\nPython",
+        "author": "Mathuranathan\nViswanathan,",
+        "publisher": "Independently\nPublished",
+        "edition": "1st\nEdition,\n2019"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Communication Systems",
+        "author": "Simon Haykin and\nMichael Moher",
+        "publisher": "Wiley",
+        "edition": "5th\nEdition,\n2020"
+      },
+      {
+        "title": "Modern Digital and Analog\nCommunication Systems",
+        "author": "B.P. Lathi and Zhi Ding",
+        "publisher": "Oxford University\nPress",
+        "edition": "5th\nEdition,\n2018"
+      },
+      {
+        "title": "Introduction to Analog and Digital\nCommunication",
+        "author": "Simon Haykin and\nMichael Moher",
+        "publisher": "Wiley",
+        "edition": "2nd\nEdition,\n2006"
+      },
+      {
+        "title": "Electronic communication systems",
+        "author": "George Kennedy",
+        "publisher": "McGraw Hil",
+        "edition": "6th\nEdition,\n2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://kb.ettus.com/",
+      "module2": "https://www.youtube.com/watch?v=BeeSN14JUYU",
+      "module3": "https://www.youtube.com/watch?v=0KQWPFwFByU",
+      "module4": "https://www.youtube.com/watch?v=tx5xofG2Fxg"
+    },
+    "semester": "5",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:54:12.034Z"
+}

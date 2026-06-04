@@ -1,0 +1,161 @@
+{
+  "subject": "OPTIMIZATION TECHNIQUES",
+  "branch": "Mechanical Engineering",
+  "semester": 7,
+  "details": {
+    "name": "OPTIMIZATION TECHNIQUES",
+    "courseCode": "PEMET755",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Engineering applications of optimization",
+          "Formulation of design problems as mathematical programming problems",
+          "Classification of optimization problems/techniques",
+          "Classical optimization: unconstrained single and multivariate optimization",
+          "Constrained optimization",
+          "Linear, Mathematical formulation of LP Problems",
+          "Solving using Simplex method and Graphical method"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Game Theory: Introduction",
+          "2- person zero – sum game -Saddle point",
+          "Mini-Max and Maxi-Min Theorems (statement only)",
+          "Graphical solution (2x n, m x 2 game)",
+          "dominance property",
+          "Introduction to network tree - Minimal Spanning Tree - Prim’s Algorithm",
+          "Shortest path problems- Solution methods – Dijkstra’s Method"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Single variable optimization methods- Fibonacci search method",
+          "Newton Raphson method",
+          "Multi-variable methods- Hook-Jeeves pattern search method",
+          "Cauchy’s (steepest descent) method"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to Genetic algorithm",
+          "Basic GA framework",
+          "GA operators: Encoding, Crossover, Selection, Mutation",
+          "Introduction to Fuzzy logic",
+          "Fuzzy sets and membership functions",
+          "Operations on Fuzzy sets",
+          "Optimization of Fuzzy Systems"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Formulate the real world problem as Linear Programming Problem",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply different methods of Game Theory, Network Tree and Shortest Path.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Find solutions for Nonlinear unconstrained optimization problems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply modern methods of optimization for solving optimization problems.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Engineering Optimization : Theory and Practice",
+        "author": "S.S.Rao",
+        "publisher": "New Age International Publishers, New Delhi",
+        "edition": "Revised 3rd Edition 2011"
+      },
+      {
+        "title": "Operations Research",
+        "author": "H.A. Taha",
+        "publisher": "Pearson",
+        "edition": "Eight Edition 2006"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Operations Research",
+        "author": "Kanti Swarup, P.K.Gupta and Man Mohan",
+        "publisher": "Sultan Chand and Sons",
+        "edition": "20th Revised Edition 2022"
+      },
+      {
+        "title": "Optimization for Engineering Design‐ Algorithms and Examples",
+        "author": "Kalynamoy Deb.",
+        "publisher": "Prentice‐Hall of India Pvt. Ltd., New Delhi",
+        "edition": "2nd Edition 2012"
+      },
+      {
+        "title": "Operations Research – Principles andPractice",
+        "author": "A. Ravindran, D. T. Phillips, J. J. Solberg",
+        "publisher": "John Wiley and Sons.",
+        "edition": "2nd Edition 2007"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/111/105/111105039/",
+      "module2": "https://archive.nptel.ac.in/courses/111/105/111105039/",
+      "module3": "https://archive.nptel.ac.in/courses/111/105/111105039/",
+      "module4": "https://archive.nptel.ac.in/courses/111/105/111105039/"
+    },
+    "semester": "7",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:15:49.470Z"
+}

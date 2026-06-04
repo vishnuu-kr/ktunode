@@ -1,0 +1,235 @@
+{
+  "subject": "MATERIALS TESTING LAB",
+  "branch": "Mechanical Engineering",
+  "semester": 3,
+  "details": {
+    "name": "MATERIALS TESTING LAB",
+    "courseCode": "PCMEL308",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Evaluate the tensile properties of a ductile material (mild steel, high-strength steel, or tor- steel) using a Universal Testing Machine (UTM) equipped with an extensometer."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Conduct compressions test on a ductile material (mild steel, tor-steel, or high-strength steel) using a Universal Testing Machine (UTM) equipped with an extensometer."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Determine the tensile properties of cast iron (a brittle material) using a Universal Testing Machine (UTM) equipped with an extensometer."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Determine the shear strength of a mild steel rod using a shear test."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "Perform Brinell/Vickers/Rockwell hardness tests on a given material"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "Determine the torsional rigidity of mild steel/copper/brass rods."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "Evaluate the flexural stiffness (flexural rigidity) of mild steel/copper/brass specimens using a three-point bend test on a Universal Testing Machine (UTM)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 8,
+        "topics": [
+          "Determine the notch toughness of the material at room temperature using Izod and Charpy impact testing."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 9,
+        "topics": [
+          "Investigate the effect of coil type (close-coiled vs. open-coiled) and arrangement (series vs. parallel) on spring stiffness."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 10,
+        "topics": [
+          "Microstructure of mild steel/copper/ brass/aluminium using opticalmicroscope, double disc polishing machine, emery papers and etchant."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 11,
+        "topics": [
+          "Analyse the fracture surface morphology of a ductile or brittle material using an optical microscope for fractographic characterisation."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 12,
+        "topics": [
+          "Evaluate the fracture toughness of a material with a Universal Testing Machine (UTM)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 13,
+        "topics": [
+          "To study the procedure for plotting S-N curve using Fatigue testing machine"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 14,
+        "topics": [
+          "Perform stress analysis using photoelasticity."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 15,
+        "topics": [
+          "Measure the deformation (strain) of an object using strain gauges."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 16,
+        "topics": [
+          "Perform a bending test on a wooden beam to assess its load-carrying capacity."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 0,
+        "internalExam2": 20,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/ \nPreparatory \nwork/Design/ \nAlgorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/ \nExecution of work/ \ntroubleshooting/ \nProgramming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Evaluate the mechanical properties of different materials under various loading conditions.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Relate material microstructure to its mechanical behaviour.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse the effect of design features on the performance of mechanical components.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Utilize experimental techniques to determine material properties.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply fundamental engineering principles to analyse the behaviour of structures under load.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Callister's Materials Science and Engineering",
+        "author": "D. Wayne Callister and David G. Rethwisch",
+        "publisher": "Wiley",
+        "edition": "10th Ed (2018)"
+      },
+      {
+        "title": "Mechanical Testing and Evaluation",
+        "author": "Howard Kuhn; Dana Medlin",
+        "publisher": "ASM International",
+        "edition": "Volume 8 (2000)"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Mechanics of Materials",
+        "author": "James M. Gere and Barry J. Goodno",
+        "publisher": "Cengage Learning",
+        "edition": "9th Ed (2022)"
+      },
+      {
+        "title": "Introduction to Materials Science for Engineers",
+        "author": "James F. Shackelford",
+        "publisher": "Pearson",
+        "edition": "8th Ed (2022)"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc23_mm38/preview",
+      "module2": "https://archive.nptel.ac.in/courses/112/107/112107146/",
+      "module3": "https://archive.nptel.ac.in/courses/112/106/112106293/",
+      "module4": ""
+    },
+    "semester": "3",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:50:17.991Z"
+}

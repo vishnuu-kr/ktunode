@@ -1,0 +1,154 @@
+{
+  "subject": "COMPOSITE MATERIALS",
+  "branch": "Mechanical Engineering",
+  "semester": 4,
+  "details": {
+    "name": "COMPOSITE MATERIALS",
+    "courseCode": "PEMET413",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Composite : Introduction, definition, characteristics, functions, classification of composites based on structure and matrix, smart composites, industrial applications.",
+          "Interfaces: wettability and bonding interface in composites.",
+          "Types of bonding at interface.",
+          "Fibers : Introduction, types of fibers, natural fibers, glass fiber fabrication, structure, properties and applications, boron fiber fabrication, structure, properties and applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Polymer matrix composites (PMC):  Thermoset, thermoplastic and elastomeric polymers, properties, characteristics and applications as matrix materials.",
+          "Processing of polymer matrix composites: hand layup methods and spray layup method.",
+          "Moulding methods: pressure bagging and bag moulding methods, Autoclave-based processing with prepregs, pultrusion and filament winding process."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Metal matrix composites (MMC) : classification of metals, intermetallics, alloys and their potential role as matrices in composites, properties, characteristics and applications of metals as matrix materials,",
+          "production techniques: powder metallurgy, diffusion bonding, melt stirring, squeeze casting, liquid infiltration under pressure, insitu process."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Ceramic matrix composites (CMC):  classification of ceramics and their potential role as matrices, properties, characteristics and applications of CMC,",
+          "conventional production techniques: cold pressing and sintering, hot pressing, reaction bonding, liquid infiltration, pultrusion.",
+          "lanxide process, insitu chemical technique, sol-gel technique."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand about composites, various matrices and reinforcements used in composites, types of fibres",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "To know about polymer matrix composites, classification, properties, characteristics and applications, manufacturing methods.",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "To know about metal matrix composites, classification, properties, characteristics and applications, manufacturing methods.",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "To know about ceramic matrix composites, classification, properties, characteristics and applications, manufacturing methods.",
+        "knowledgeLevel": "K1, K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Composite Materials : Science and Engineering",
+        "author": "K. K. Chawla",
+        "publisher": "Springer",
+        "edition": "3rdEdn\n2013"
+      },
+      {
+        "title": "Fiber-reinforced composites,",
+        "author": "P.K.Mallicak",
+        "publisher": "MonalDeklar Inc.,\nNew York",
+        "edition": "1988"
+      },
+      {
+        "title": "Mechanics of Composite Materials; Selected Works of Nicholas J. Pagano",
+        "author": "Reddy J N",
+        "publisher": "Springer",
+        "edition": "1994"
+      },
+      {
+        "title": "Mechanics of Composite Materials",
+        "author": "Robert M. Jones",
+        "publisher": "CRC Press",
+        "edition": "1998"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Composite Materials, Engineering and Sciences",
+        "author": "F.L.Matthews&R.D.Raw\nlings",
+        "publisher": "Chapman & hall,\nLondon",
+        "edition": "1994"
+      },
+      {
+        "title": "Stress Analysis of Fiber - Reinforced Composite Materials",
+        "author": "MicaelHyer",
+        "publisher": "Tata\nMcGraw Hill",
+        "edition": "1998"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://www.youtube.com/watch?v=JBMVZpRD-Zk",
+      "module2": "https://www.youtube.com/watch?v=tP8JCX87DzI",
+      "module3": "https://www.youtube.com/watch?v=RihoVfzEfWI",
+      "module4": "https://www.youtube.com/watch?v=LGERbwD5S2g"
+    },
+    "semester": "4",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:52:14.627Z"
+}

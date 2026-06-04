@@ -1,0 +1,166 @@
+{
+  "subject": "POWER GENERATION, TRANSMISSION AND PROTECTION",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 5,
+  "details": {
+    "name": "POWER GENERATION, TRANSMISSION AND PROTECTION",
+    "courseCode": "PCEET501",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCEET302",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Generation from renewable and non-renewable sources – Hydro, thermal, nuclear- (block schematic details, environmental and ethical factors, advantages, disadvantages)",
+          "Solar and wind - (block schematic details, environmental factors, regulations, advantages, disadvantages)",
+          "Energy storage systems as alternative energy sources – BESS, CESS, thermal SS",
+          "Load curve – Load duration curve, Load factor, diversity factor, demand factor, Plant capacity factor, plant use factor - Numerical Problems"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Power Transmission System - (Electrical Model)- Line parameters – resistance - inductance and capacitance (Derivation of three phase double circuit)",
+          "Transmission line modelling - classifications (concept only) – transmission line as two port network – derivation and calculation of ABCD parameters (derivation and numerical problems)",
+          "Skin Effect & Ferranti Effect – Corona (qualitative study only) – Surge Impedance Loading",
+          "Insulators – string efficiency – grading (numerical problems"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Introduction to EHVAC and HVDC: Principle, advantages/disadvantages",
+          "Underground cables – ratings - classification - Capacitance of cables – grading – 2 types",
+          "AC Distribution systems – connection schemes – radial and ring main systems – single phase only (numerical problems)",
+          "Method of power factor improvement using capacitors (numerical problems)",
+          "Tariff - different types",
+          "Introduction to energy markets (regulated and deregulated systems)"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Need for protection- Types of protection schemes – primary and back-up",
+          "Protective relays –  Basics of typical electromechanical relay – induction type only Static (block diagrams of o/c and instantaneous o/c relays) Microprocessor (block diagram and flow chart of o/c relay) Fundamentals of Numerical relay",
+          "Principles of overcurrent, directional, distance and differential",
+          "Circuit breakers – operating principle – arc phenomenon – arc extinction – principle & methods – Important terms in arc extinction",
+          "Problems of circuit interruption – capacitive current chopping – ratings of CBs Circuit breaker classification based on medium of arc extinction – SF6 & VCB Introduction to GIS"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Learn different types of power generating systems and schedule generation appropriate fora given area.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Evaluate the electrical performance of any transmission line.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Compute various physical characteristics of overhead and underground transmission systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Demonstrate the working of relays and switch gear for protection schemes.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Design a simple ac electrical distribution system as per the standards.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Electrical  Power Systems",
+        "author": "Wadhwa C. L.",
+        "publisher": "New Age International",
+        "edition": "8th edition 2023"
+      },
+      {
+        "title": "Principles of Power System",
+        "author": "V. K. Mehta and Rohit Mehta",
+        "publisher": "S. Chand",
+        "edition": "4th edition reprint 2020"
+      },
+      {
+        "title": "Power System Protection and Switchgear",
+        "author": "Badri  Ramand D.N.Viswakarma",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2nd edition, 2011"
+      },
+      {
+        "title": "Non-conventional energy sources",
+        "author": "B. H. Khan",
+        "publisher": "Tata McGraw Hill",
+        "edition": "3rd edition, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Engineering and Chemical Thermodynamics",
+        "author": "Milo D. Koretsky",
+        "publisher": "Wiley",
+        "edition": "2ndEdn, 2012"
+      },
+      {
+        "title": "Chemical and Process Thermodynamics",
+        "author": "Kyle B.G.",
+        "publisher": "Pearson",
+        "edition": "3rdEdn, 2015"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/103/103/103103144/",
+      "module2": "https://archive.nptel.ac.in/courses/103/103/103103144/",
+      "module3": "https://archive.nptel.ac.in/courses/103/103/103103144/",
+      "module4": "https://archive.nptel.ac.in/courses/103/103/103103144/"
+    },
+    "semester": "5",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:23:23.001Z"
+}

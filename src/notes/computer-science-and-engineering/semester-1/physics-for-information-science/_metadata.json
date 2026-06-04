@@ -1,0 +1,216 @@
+{
+  "subject": "PHYSICS FOR INFORMATION SCIENCE",
+  "branch": "Computer Science and Engineering",
+  "semester": 1,
+  "details": {
+    "name": "PHYSICS FOR INFORMATION SCIENCE",
+    "courseCode": "GAPHT121",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory + Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 2,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Electrical conductivity",
+          "Classical free electron theory",
+          "Electrical conductivity in metals",
+          "Fermi Dirac distribution",
+          "Variation of Fermi function with temperature",
+          "Fermi Energy",
+          "Energy bands",
+          "Classification of materials into conductor, semiconductor and insulator.",
+          "Superconductivity",
+          "Transition temperature",
+          "Critical field",
+          "Meissner effect",
+          "Type I and Type II Super conductors.",
+          "BCS Theory",
+          "Applications of superconductors."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Quantum Mechanics",
+          "Introduction",
+          "Concept of uncertainty and conjugate observables (qualitative)",
+          "Uncertainty principle (statement only)",
+          "Application of uncertainty principle- Absence of electron inside nucleus - Natural line broadening",
+          "Wave function – properties - physical interpretation",
+          "Formulation of time dependent and time independent Schrodinger equations",
+          "Particle in a one- dimensional box - Derivation of energy eigen values and normalized wave function",
+          "Quantum Mechanical Tunnelling (Qualitative)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Semiconductor Physics",
+          "Intrinsic semiconductor",
+          "Derivation of density of electrons in conduction band and density of holes in valence band",
+          "Intrinsic carrier concentration",
+          "Variation of Intrinsic carrier concentration with temperature",
+          "Extrinsic semiconductor (qualitative)",
+          "Formation of p-n junction",
+          "Fermi level in semiconductors-intrinsic and extrinsic",
+          "Energy band diagram of p-n junction - Qualitative description of charge flow across a p-n junction - Forward and reverse biased p-n junctions",
+          "Diode equation (Derivation)",
+          "I-V Characteristics of p-n junction"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Semiconductor Devices",
+          "Semiconductor devices- Rectifiers- Full wave and Half wave.",
+          "Zener diode-VI characteristics",
+          "Tunnel diode-VI characteristics",
+          "Semiconductor Laser (Construction and working)",
+          "Applications",
+          "Photonic devices (Qualitative treatment only) - Photo detectors (Junction and PIN photodiodes)",
+          "Solar cells- IV Characteristics, Efficiency, Stringing of Solar cells to solar panel",
+          "Light Emitting Diode",
+          "Applications"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 10,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain electrical conductivity and Superconductivity.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the behaviour of matter in the atomic and subatomic level through the principles of quantum mechanics.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply the fundamentals of Semiconductor Physics in engineering.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Describe the behaviour of semiconductor materials in semiconductor devices.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply basic knowledge of principles and theories in physics to conduct experiments.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Engineering Physics",
+        "author": "H K Malik and A K Singh",
+        "publisher": "McGraw Hill",
+        "edition": "2nd Edition, 2017"
+      },
+      {
+        "title": "Concepts of Modern Physics",
+        "author": "Arthur Beiser",
+        "publisher": "Tata McGraw Hill Publications",
+        "edition": "6th Edition, 2003"
+      },
+      {
+        "title": "A Textbook of Engineering Physics",
+        "author": "MN Avadhanulu, P G Kshirsagar, TVS Arun murthy",
+        "publisher": "S. Chand",
+        "edition": "11th Edition, 2018"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Semiconductor Devices Fundamentals",
+        "author": "Robert F Pierret",
+        "publisher": "Pearson Education",
+        "edition": "1995"
+      },
+      {
+        "title": "Advanced Semiconductor Fundamental",
+        "author": "Robert F Pierret",
+        "publisher": "Pearson Education",
+        "edition": "2nd Edition, 2002"
+      },
+      {
+        "title": "Solid State Electronic Devices",
+        "author": "Ben G Streetman and Sanjay Kumar Banerjee",
+        "publisher": "Pearson Education",
+        "edition": "6/e 2010"
+      },
+      {
+        "title": "Solid State Physics",
+        "author": "S.O. Pillai",
+        "publisher": "New age international publishers",
+        "edition": "10th Edition, 2022"
+      },
+      {
+        "title": "Introduction to Solid State Physics",
+        "author": "Charles Kittel",
+        "publisher": "Wiley India Edition",
+        "edition": "2019"
+      },
+      {
+        "title": "Advanced Engineering Physics",
+        "author": "Premlet B",
+        "publisher": "Phasor Books",
+        "edition": "10th Edition ,2017"
+      },
+      {
+        "title": "A Text Book of Engineering Physics",
+        "author": "I. Dominic and. A. Nahari",
+        "publisher": "Owl Books Publishers",
+        "edition": "Revised Edition, 2016"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/115103108",
+      "module2": "https://nptel.ac.in/courses/115101107\nhttps://nptel.ac.in/courses/115102023",
+      "module3": "https://nptel.ac.in/courses/108106181",
+      "module4": "https://nptel.ac.in/courses/108108112"
+    },
+    "semester": "1",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:40:41.517Z"
+}

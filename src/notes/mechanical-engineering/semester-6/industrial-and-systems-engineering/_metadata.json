@@ -1,0 +1,170 @@
+{
+  "subject": "INDUSTRIAL AND SYSTEMS ENGINEERING",
+  "branch": "Mechanical Engineering",
+  "semester": 6,
+  "details": {
+    "name": "INDUSTRIAL AND SYSTEMS ENGINEERING",
+    "courseCode": "PCMET601",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction: Scope and functions of Industrial Engineering - Types of production (batch, flow and unit), Roles of line supervisors and production managers.",
+          "Product Development and Design: Objectives - Quality and cost considerations - Human factors in design - Detailed design & prototyping - Functionality & manufacturability - Standardization, simplification and variety reduction - Concurrent engineering.",
+          "Plant layout and Material handling: Types of plant layout - Principles of material handling - Material handling equipment – Types, selection and application."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Production Planning and Control: Aggregate production planning, materials requirement planning - Inventory Management: EOQ models, discount models,",
+          "P system, Q system, reorder level – Selective inventory control techniques - JIT - Supply chain and management.",
+          "Break down, preventive and predictive maintenance."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Lean Manufacturing (LM): Basic elements – Tools - Concept of wastes - stages of 5S and waste elimination - Need for LM.",
+          "Agile manufacturing: Definition, business need, conceptual frame work, characteristics and generic features - Approaches to enhance agility in manufacturing - Managing people in agile organization.",
+          "Enterprise resource planning (ERP): Concept of Enterprise, ERP Overview - Integrated information system - ERP implementation – Benefits, challenges, success and failure factors - Business Process Reengineering (BPR), Customer relationship management (CRM)."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Quality Management: Quality, quality planning, quality control, quality assurance, quality management – TQM, ISO, Six Sigma and Quality circle (Brief description only).",
+          "Statistical Quality Control - Process capability - Causes of variation in quality- Control charts for \n  and R – Acceptance sampling.",
+          "Reliability Engineering - Causes of failures - Bath tub curve - System reliability - Life testing."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Implement various tools and techniques in industrial engineering",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply inventory control techniques for materials management",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Identify the framework of lean and agile manufacturing",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Identify core and extended modules of enterprise resource planning",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "To be conversant with important terms for quality management in\norganizations",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO6",
+        "description": "Implement different quality control techniques",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Industrial Engineering & \nProduction Management",
+        "author": "M. T. Telsang",
+        "publisher": "S Chand",
+        "edition": "3rd Edition, \n2018"
+      },
+      {
+        "title": "Production and operations \nmanagement",
+        "author": "R. Paneerselvam",
+        "publisher": "PHI",
+        "edition": "3rd Edition, \n2012"
+      },
+      {
+        "title": "Operations Management:\nTheory and Practice",
+        "author": "B. Mahadevan",
+        "publisher": "Pearson",
+        "edition": "3rd Edition, \n2018"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Industrial Engineering and\nManagement – A new\nperspective",
+        "author": "Philips E. Hicks",
+        "publisher": "McGraw Hill",
+        "edition": "2nd\nEdition,\n1994"
+      },
+      {
+        "title": "Statistical Quality Control",
+        "author": "Montegomery",
+        "publisher": "Wiley Eastern",
+        "edition": "6th Edition,\n2010"
+      },
+      {
+        "title": "Lean and Agile Manufacturing:\nTheoretical, Practical and\nResearch Futurities",
+        "author": "S. R. Devadasan, V. M.\nSivakumar, R. Murugesh\nand P. R. Shalij",
+        "publisher": "PHI Learning",
+        "edition": "1st Edition,\n2012"
+      },
+      {
+        "title": "Operations Management:\nProcesses and Supply Chains",
+        "author": "L. J. Krajewski, M. K.\nMalhotra, S. K.\nSrivastava and L. P.\nRitzman",
+        "publisher": "Pearson Education",
+        "edition": "12th\nEdition,\n2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:04:13.113Z"
+}

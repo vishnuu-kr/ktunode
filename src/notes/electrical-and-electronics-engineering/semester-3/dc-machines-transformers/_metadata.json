@@ -1,0 +1,159 @@
+{
+  "subject": "DC MACHINES & TRANSFORMERS",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 3,
+  "details": {
+    "name": "DC MACHINES & TRANSFORMERS",
+    "courseCode": "PCEET303",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Constructional details of dc machines - armature winding - lap and wave – simplex, progressive only – winding diagrams of simplex, lap wound, double layer, 12-slot, 4-pole, dc armature with 12 commutator segments – winding diagram of simplex wave wound, double layer, 16-slot, 6-pole, dc armature with 12 commutator segments (winding diagram not for evaluation)",
+          "DC generator - principle of operation of DC generator – emf equation – numerical problems",
+          "Classification DC generators – steady-state equations – numerical problems",
+          "DC shunt generator - no-load characteristics – critical field resistance, critical speed, voltage build-up - load characteristics – numerical problems",
+          "Armature reaction - cross magnetising & demagnetising effect (computation of ampere-turns not required) – compensating winding – interpoles – commutation (concept only) – numerical problems",
+          "Power flow diagram – losses and efficiency – maximum efficiency - numerical problems",
+          "Parallel operation of DC shunt generators – load sharing – numerical problems"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "DC motor – back emf – torque equation – numerical problems",
+          "Classification of DC motors – steady-state equations – numerical problems",
+          "Characteristics of DC motors – numerical problems",
+          "Starting of DC motors – 3-point starter",
+          "Braking – regenerative braking, dynamic braking and plugging (concepts only)",
+          "Speed control of DC shunt and series motors – field control and armature control – numerical problems",
+          "Power flow diagram – losses and efficiency – numerical problems",
+          "Testing - Swinburne’s test – Hopkinson’s test – retardation test - separation of rotational losses - numerical problems"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Single phase transformers – constructional details - principle of operation - EMF equation - ideal and practical transformer – numerical problems",
+          "Operation on no load and on load - phasor diagram at different load conditions - equivalent circuit - voltage regulation – numerical problems",
+          "Losses and efficiency - condition for maximum efficiency – numerical problems Testing of transformers - polarity test - OC test, SC test - Sumpner's test – separation of losses – numerical problems"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Autotransformer – saving of copper – numerical problems",
+          "3- phase transformer – construction - different connections of 3-phase transformers - Υ-Υ, Δ-Δ, Υ-Δ, Δ-Υ – numerical problems",
+          "Difference between power transformer and distribution transformer – all-day efficiency – numerical problems",
+          "Scott connection for 3-phase to 2-phase conversion",
+          "Vector groupings – Yy0, Dd0, Yd1, Yd11, Dy1, Dy11",
+          "Parallel operation of 1-phase and 3-phase transformers - essential and desirable conditions",
+          "On load and off-load tap-changers"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe the constructional details of DC machines",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Analyse the performance DC generator under various load conditions",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse the performance DC motor under various load conditions",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyse the performance of 1-phase transformer and auto-transformer under various load conditions.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Describe the constructional details and operation of 3-phase transformers.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Electrical Machinery",
+        "author": "P.S. Bimbhra",
+        "publisher": "Khanna Publishers",
+        "edition": "7th edition 2021"
+      },
+      {
+        "title": "Electric Machines",
+        "author": "D P Kothari & I J Nagrath",
+        "publisher": "Tata McGraw Hill",
+        "edition": "5th edition 2017"
+      },
+      {
+        "title": "DC Machines & Transformers",
+        "author": "K Murugesh Kumar",
+        "publisher": "Vikas Publishing House",
+        "edition": "2nd edition 2004"
+      },
+      {
+        "title": "Theory & Performance of Electrical Machines",
+        "author": "J.B. Gupta",
+        "publisher": "S K Kataria",
+        "edition": "15th edition 2022"
+      }
+    ],
+    "referenceBooks": [],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/108/105/108105155/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "3",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:12:12.942Z"
+}

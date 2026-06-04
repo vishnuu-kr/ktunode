@@ -1,0 +1,239 @@
+{
+  "subject": "FUNDAMENTALS OF MANUFACTURING SYSTEMS\nAND  PROCESSES",
+  "branch": "Mechanical Engineering",
+  "semester": 2,
+  "details": {
+    "name": "FUNDAMENTALS OF MANUFACTURING SYSTEMS\nAND  PROCESSES",
+    "courseCode": "PCPET205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Manufacturing Systems",
+          "Classification of Manufacturing Systems",
+          "Discreet Manufacturing",
+          "Repetitive Manufacturing",
+          "Job Shop Manufacturing",
+          "Batch Manufacturing",
+          "Continues manufacturing",
+          "Additive Manufacturing",
+          "Manufacturing Strategies",
+          "Lean Manufacturing",
+          "Mass Customization",
+          "Green Manufacturing",
+          "Total Quality Management",
+          "Agile Manufacturing",
+          "Just in Time",
+          "Original Equipment Manufacturer",
+          "Reconfigurable Manufacturing",
+          "Assembly Lines",
+          "Concept of Inventory"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Glass and Ceramic Manufacturing",
+          "Relevant Properties of glass and ceramics",
+          "Processing Steps",
+          "Mixing",
+          "melting",
+          "forming",
+          "cooling and finishing",
+          "equipment’s used for processing: rotary kiln",
+          "tumbler",
+          "ball milling",
+          "hydraulic presses & jiggers",
+          "Plastic Manufacturing",
+          "Relevant Properties of Plastics",
+          "Processing Methods",
+          "Plastic Extrusion",
+          "Injection Moulding",
+          "Rotational Moulding",
+          "Plastic extrusion & injection blow moulding",
+          "Vacuum casting",
+          "Thermoforming & Vacuum forming",
+          "Compression moulding",
+          "Rubber Manufa cturing",
+          "Relevant properties of Rubber",
+          "Processing Steps",
+          "mastication",
+          "mixing",
+          "shaping",
+          "calendaring",
+          "curing",
+          "Textile Manufacturing",
+          "Weaving",
+          "Cutting",
+          "Spinning",
+          "Yarn production",
+          "Dyeing",
+          "Pattern making",
+          "Bleaching",
+          "Grading",
+          "Packing",
+          "Wet processing"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Metal industries –Ferrous Metals and Alloys--raw materials for iron making",
+          "blast furnace and electric furnace operation",
+          "shaping and finishing",
+          "application of iron and steel",
+          "Non-Ferrous Metals",
+          "examples of nonferrous metals- extraction of ore",
+          "smelting &refining",
+          "shaping and finishing",
+          "alloying",
+          "application of nonferrous metals"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Wood based integrated Pulp and paper mill – Wood chips production",
+          "Batch digester",
+          "Pulp washing filters",
+          "bleaching",
+          "drying and calendaring",
+          "Cement manufacturing process- flow diagram",
+          "raw mill circuit",
+          "cement beneficiation",
+          "Manufacturing method and equipment used in Portland cement  manufacture",
+          "Petroleum refining process- flow diagram illustrating refining of crude oil well to saleable product"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each\nmodule.\nTotal of 8 Questions, each\ncarrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, \nout of which 1 question should be answered.\nEach question can have a maximum of 3\nsub divisions.\n(4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Summarize about Manufacturing Systems and Strategies",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the manufacturing processes involved in polymer, ceramic and\ntextile industries",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Classify the manufacturing processes involved in metal industries.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Outline the manufacturing processes involved in cement paper and\npetroleum industries.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Fundamentals of Modern\nManufacturing, Materials,\nProcesses and Systems",
+        "author": "Mikell P Groover",
+        "publisher": "Wiley",
+        "edition": "7th\nEdition,\n2019"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Ceramics, Glass and\nGlass- Ceramics",
+        "author": "Francesco Baino\n(Editor), Massimo\nTomalino\n(Editor), Dilshat\nTulyaganov(Editor)",
+        "publisher": "Springer.",
+        "edition": "Kindle\nedition\n2021"
+      },
+      {
+        "title": "Modern Plastic Handbook",
+        "author": "Charles A. Harper",
+        "publisher": "McGraw Hill",
+        "edition": "1999"
+      },
+      {
+        "title": "The Complete  Book on Rubber\nProcessing and Compounding\nTechnology",
+        "author": "NIIR Board of\nConsultants and\nEngineers",
+        "publisher": "NIIR Board of\nConsultants\nand    Engineers",
+        "edition": "2011"
+      },
+      {
+        "title": "Textbook of Fabric\nScience: Fundamentals to\nFinishing",
+        "author": "Seema Sekhri",
+        "publisher": "PHI.",
+        "edition": "Kindle\nedition\n2011"
+      },
+      {
+        "title": "Ironmaking and\nSteelmaking: Theory and\nPractice",
+        "author": "Ahindra Ghosh",
+        "publisher": "PHI.",
+        "edition": "1st\nedition\n2008"
+      },
+      {
+        "title": "Manufacturing\nTechnology of  Non-\nFerrous Metal Products",
+        "author": "Brahmpal Bhardwaj",
+        "publisher": "Engineers India\nResearch\nInstitute",
+        "edition": "1st\nedition\n2012"
+      },
+      {
+        "title": "The chemical process industries",
+        "author": "R . Norris Shreve",
+        "publisher": "Mc Graw Hill",
+        "edition": "2ndedition\n1956"
+      },
+      {
+        "title": "Energy performance\nassessment for equipment and\nutility systems",
+        "author": "Buraeu of energy   efficiency",
+        "publisher": "Buraeu of energy\nefficiency",
+        "edition": "4th edition\n2015"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "2",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:44:02.075Z"
+}

@@ -1,0 +1,184 @@
+{
+  "subject": "SIGNALS AND SYSTEMS",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 4,
+  "details": {
+    "name": "SIGNALS AND SYSTEMS",
+    "courseCode": "PCECT402",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Mathematics for Electrical \nand Physical Sciences \n(GYMAT101, \nGYMAT201 )",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to signals and systems:",
+          "Continuous time and discrete time signals - Elementary signals",
+          "Classification of signals",
+          "Basic signal operations.",
+          "Continuous time and discrete time systems – Representation and \nClassification (memory, causal, stable, linear, time-invariant, invertible)",
+          "Convolution integral and convolution sum operations.",
+          "Continuous time and discrete time LTI systems-Stability and causality \nof LTI systems."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Frequency domain representation of continuous time signals:",
+          "Continuous time Fourier series - E xponential Fourier series  \nrepresentation of periodic signals.",
+          "Continuous time Fourier transform - Convergence and Gibbs \nphenomenon",
+          "Continuous time Fourier transform of standard signals",
+          "Properties of Continuous time Fourier transform",
+          "Inverse Transform.",
+          "Bilateral Laplace Transform",
+          "Concept of ROC",
+          "Relation of Laplace \ntransform to Fourier Transform."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Sampling of continuous time signals to discrete signals and \nfrequency domain representation of discrete time signals:",
+          "Conversion of continuous time signal to discrete time signal",
+          "Sampling \ntheorem for low pass signals",
+          "Nyquist criteria",
+          "Aliasing.",
+          "Discrete time Fourier series for discrete periodic signals.",
+          "Discrete time Fourier transform (DTFT)-Convergence condition",
+          "DTFT \nof standard signals",
+          "Properties of DTFT",
+          "Inverse transform.",
+          "Z transform- ROC",
+          "Properties (Proof not needed)",
+          "Inverse transform",
+          "Relation between DTFT and Z-Transform."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Analysis of LTI systems using Transforms",
+          "Concept of transfer function-Frequency response",
+          "Magnitude response \nand phase response.",
+          "Analysis of Continuous time LTI systems using Laplace and Fourier \ntransforms.",
+          "Analysis of discrete time LTI systems using DTFT and Z transforms",
+          "Stability and causality using Z transform."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Classify continuous and discrete time signals and systems based on \ntheir properties and perform basic operations on signals.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Determine the stability and causality of LTI systems using convolution \noperations.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyze signals in frequency domain using various transforms and \nexamine their properties.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Interpret the use of various transforms to analyze continuous and \ndiscrete time LTI systems.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Signals and Systems",
+        "author": "Alan V. Oppenheim and \nAlan Willsky",
+        "publisher": "Pearson",
+        "edition": "2/e, 2015"
+      },
+      {
+        "title": "Signals and Systems",
+        "author": "Simon Haykin",
+        "publisher": "John Wiley",
+        "edition": "2/e, 2021"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Signals and Systems",
+        "author": "Anand Kumar",
+        "publisher": "PHI",
+        "edition": "3/e, 2013"
+      },
+      {
+        "title": "Principles of Signal Processing \n& Linear systems",
+        "author": "B P. Lathi",
+        "publisher": "Oxford University \nPress",
+        "edition": "2/e, 2009"
+      },
+      {
+        "title": "Signals & Systems - Continuous \nand Discrete",
+        "author": "Rodger E. Ziemer",
+        "publisher": "Pearson",
+        "edition": "4/e, 2013"
+      },
+      {
+        "title": "Analog and Digital Signal \nProcessing",
+        "author": "Ashok Ambardar",
+        "publisher": "Brooks/Cole Publishing \nCompany",
+        "edition": "2/e, 2013"
+      },
+      {
+        "title": "Signals and systems - Principles \nand Applications",
+        "author": "Shaila Dinkar Apte",
+        "publisher": "Cambridge University \nPress",
+        "edition": "1/e, 2016"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/117101055\nhttps://nptel.ac.in/courses/117104074\nhttps://nptel.ac.in/courses/108104100",
+      "module2": "Same as above",
+      "module3": "Same as above",
+      "module4": "Same as above"
+    },
+    "semester": "4",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:52:16.269Z"
+}

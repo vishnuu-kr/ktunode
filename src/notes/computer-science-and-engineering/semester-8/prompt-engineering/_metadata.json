@@ -1,0 +1,153 @@
+{
+  "subject": "PROMPT ENGINEERING",
+  "branch": "Computer Science and Engineering",
+  "semester": 8,
+  "details": {
+    "name": "PROMPT ENGINEERING",
+    "courseCode": "PECST868",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Prompt Engineering and Language Models :-",
+          "Fundamentals of Natural Language Processing (NLP) - Overview of Language Models: From Rule-Based Systems to Transformer Architectures (e.g., GPT, BERT) - Understanding Prompts: Definition, Importance, and Applications - Introduction to Prompt Engineering: Techniques and Use Cases - Ethical Considerations in Prompt Engineering",
+          "Explore various language models using platforms like OpenAI, Hugging Face, or Google Colab; Experimenting with basic prompts to understand the impact of phrasing and context on model outputs."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Techniques and Strategies in Prompt Engineering :-",
+          "Designing Effective Prompts - Best Practices and Common Pitfalls; Prompt Tuning and Fine-Tuning Language Model; Using Zero-Shot, Few-Shot, and Multi-Shot Learning in Prompts; Exploring the Role of Context, Repetition, and Specificity in Prompt Responses; Advanced Prompt Engineering Techniques: Prompt Chaining, Iterative Prompting.",
+          "Crafting and optimizing prompts for specific tasks (e.g., text generation, summarization, Q&A); Using prompt engineering to fine-tune pre-trained models on specific datasets or tasks."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Applications of Prompt Engineering :-",
+          "Prompt Engineering in Chatbots and Conversational AI; Content Generation: Creative Writing, Code Generation, and Data Augmentation; Prompt Engineering for Sentiment Analysis, Classification, and Translation; Integration of Prompt Engineering with Other AI Technologies (e.g., Computer Vision, Data Science); Real-World Case Studies and Industry Applications",
+          "Developing a simple chatbot using prompt engineering techniques, Case study analysis and reproduction of real-world prompt engineering applications"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Challenges, Future Trends, and Research in Prompt Engineering :-",
+          "Challenges in Prompt Engineering: Ambiguity, Bias, and Misinterpretation; Evaluating and Improving Prompt Performance: Metrics and Benchmarks; Future Trends: Emerging Techniques and the Evolution of Language Models;",
+          "Working on a capstone project to solve a real-world problem using prompt engineering"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the core principles of NLP, language models, and the role of prompts in influencing AI behavior.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Demonstrate the ability to design and fine-tune prompts for specific tasks, optimizing language models for desired outputs",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply prompt engineering techniques to develop functional AI applications, such as chatbots, content generation tools, and automated systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Compare the ethical implications of prompt engineering, addressing challenges such as bias, ambiguity, and misuse, and propose solutions to mitigate these issues.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply prompt engineering techniques to a variety of assigned tasks",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Speech and Language Processing",
+        "author": "Daniel Jurafsky and James H. Martin",
+        "publisher": "Pearson",
+        "edition": "2/e, 2013"
+      },
+      {
+        "title": "Unlocking the Secrets of Prompt Engineering",
+        "author": "Gilbert Mizrahi",
+        "publisher": "Packt",
+        "edition": "1/e, 2023"
+      },
+      {
+        "title": "Prompt Engineering",
+        "author": "Ian Khan",
+        "publisher": "Wiley",
+        "edition": "1/e, 2024"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Natural Language Processing with Python",
+        "author": "Steven Bird, Ewan Klein, and Edward Loper",
+        "publisher": "Oreilly",
+        "edition": "1/e, 2009"
+      },
+      {
+        "title": "Transformers for Natural Language Proce ssing",
+        "author": "Denis Rothman",
+        "publisher": "Packt",
+        "edition": "1/e, 2021"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:26:03.349Z"
+}

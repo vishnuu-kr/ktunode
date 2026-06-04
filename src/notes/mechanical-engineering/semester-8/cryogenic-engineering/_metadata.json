@@ -1,0 +1,169 @@
+{
+  "subject": "CRYOGENIC ENGINEERING",
+  "branch": "Mechanical Engineering",
+  "semester": 8,
+  "details": {
+    "name": "CRYOGENIC ENGINEERING",
+    "courseCode": "PEMET861",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCMET403 Engineering Thermodynamics",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to cryogenic engineering - Historical background - Major events in the development of cryogenic engineering.",
+          "Low Temperature Properties of Engineering Materials - Mechanical properties, Thermal properties, Electric and magnetic properties.",
+          "Cryogenic fluids (N 2, O2, H2, He, Ar, Ne, CH 4) and their properties.",
+          "Applications of cryogenics - Applications in space, food processing, superconductivity, electrical power, biology, medicine, electronics, quantum computing, and manufacturing industry."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Cryogenic Liquefaction systems – System performance parameters, ideal liquefaction system, Joule-Thomson expansion, Adiabatic expansion.",
+          "Liquefaction systems for gases other than Neon, Hydrogen and Helium- Simple Linde - Hampson system, Claude, Cascade System, and Auto-cascade system.",
+          "Liquefaction systems for Neon, Hydrogen and Helium – LN 2 precooled Linde Hampson and Claude systems, Ortho to Para conversion arrangement in hydrogen liquefaction system, Simon Helium liquefaction system, Collins Helium liquefaction system.",
+          "Critical components of Liquefaction systems – critical components, types of heat exchanger used in cryogenic systems and their effect on system performance."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Cryogenic Refrigeration systems- Ideal isothermal and isobaric refrigeration systems,",
+          "Refrigeration using liquids as refrigerant- Linde-Hampson refrigerator, Claude refrigerator.",
+          "Refrigeration using gases as refrigerant- Stirling cycle cryocoolers, Philips refrigerator, Effect of regenerator effectiveness on performance of the Philips refrigerator, Gifford McMahon refrigerators, Pulse tube cryocoolers.",
+          "Refrigerators using solids as working media-Magnetic refrigerators – Thermodynamics of magnetic refrigerators, dilution refrigerators."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Cryogenic fluid storage and transfer systems-Cryogenic fluid storage vessel, Thermal insulations and their performance at cryogenic temperatures, Super Insulations, Vacuum insulation, Powder insulation, Cryogenic fluid transfer systems, Cryo pumping.",
+          "Cryogenic instrumentation, Pressure measurement – Mc Leod gauge, Pirani gauge, and Penning gauge, Flow measurement – Orifice meter, Venturi meter, and Turbine flow meter.",
+          "Liquid level gauges- hydrostatic, resistance gauge, capacitance gauge, and thermodynamic gauge, Temperature measurements- ITS-90, Thermocouple, RTD, magnetic thermometers, and vapor pressure thermometers,",
+          "Safety in cryogenic fluid handling, storage and use."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe and analyse the mechanical, thermal, electrical, and magnetic properties of engineering materials at cryogenic temperatures and determine their suitability for various applications.",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Identify and explain the properties of common cryogenic fluids and evaluate their applications in various industries",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyse and compare different cryogenic liquefaction systems",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyse and compare different cryogenic refrigeration systems",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Demonstrate knowledge of cryogenic instrumentation techniques for pressure, flow, and temperature measurement and safety protocols for the handling, storage, and use of cryogenic fluids",
+        "knowledgeLevel": "K1, K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Cryogenic systems",
+        "author": "Randal F. Barron",
+        "publisher": "McGraw Hill",
+        "edition": "1986"
+      },
+      {
+        "title": "Fundamentals of Cryogenic Engineering",
+        "author": "M Mukhopadhyay",
+        "publisher": "PHI Learning",
+        "edition": "2010"
+      },
+      {
+        "title": "Cryogenic Process Engineering",
+        "author": "K. D. Timmerhaus and T.M. Flynn",
+        "publisher": "Springer",
+        "edition": "2013"
+      },
+      {
+        "title": "Cryogenics",
+        "author": "S.S Thipse",
+        "publisher": "Narrosa",
+        "edition": "2012"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Cryogenic Mixed Refrigerant Processes",
+        "author": "G Venkatarathnam",
+        "publisher": "International Cryogenics Monograph Series, Springer International Publishing",
+        "edition": "2007"
+      },
+      {
+        "title": "Cryocoolers: Theory and Applications",
+        "author": "M. D. Atrey (Ed)",
+        "publisher": "International Cryogenics Monograph Series, Springer International Publishing",
+        "edition": "2020"
+      },
+      {
+        "title": "Cryogenic Technology and applications",
+        "author": "A. R. Jha",
+        "publisher": "Elsevier Science",
+        "edition": "2011"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/112101004",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:20:14.011Z"
+}

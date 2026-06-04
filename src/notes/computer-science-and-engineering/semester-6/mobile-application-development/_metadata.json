@@ -1,0 +1,188 @@
+{
+  "subject": "MOBILE APPLICATION DEVELOPMENT",
+  "branch": "Computer Science and Engineering",
+  "semester": 6,
+  "details": {
+    "name": "MOBILE APPLICATION DEVELOPMENT",
+    "courseCode": "PECST695",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Fundamentals of Mobile Application Development:",
+          "Introduction to Mobile Application Development",
+          "Overview of Mobile Platforms: iOS and Android",
+          "Introduction to Flutter: History, Features, and Benefits",
+          "Setting Up the Flutter Development Environment",
+          "Mobile App Architectures (MVC, MVVM, and BLoC)",
+          "Basics of Dart Programming Language",
+          "Introduction to Git and Version Control",
+          "Set up the Flutter environment and create a simple \"Hello World\" application.",
+          "( Use Git: cloning, committing, pushing, and pulling )",
+          "Milestone 1 : Develop a basic app with a simple UI and basic functionality."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "User Interface Design and User Experience:",
+          "Principles of Mobile UI/UX Design",
+          "Designing Responsive UIs with Flutter",
+          "Using Flutter Widgets: StatelessWidget and StatefulWidget",
+          "Layouts in Flutter: Container, Column, Row, Stack",
+          "Navigation and Routing in Flutter",
+          "Customizing UI with Themes and Styles",
+          "Introduction to Material Design and Cupertino Widgets",
+          "Design and implement a user interface using Flutter widgets.",
+          "Milestone 2 : Enhance the project from Module 1 with a multi-screen UI, navigation, and customized themes."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Advanced Flutter Development:",
+          "State Management in Flutter: Provider, Riverpod, and BLoC",
+          "Networking in Flutter: HTTP Requests, JSON Parsing, RESTful APIs",
+          "Data Persistence: SQLite, SharedPreferences, Hive",
+          "Asynchronous Programming with Dart: Futures, async/await, and Streams",
+          "Integrating Device Features: Camera, GPS, Sensors",
+          "Working with Firebase: Authentication, Firestore, Cloud Functions",
+          "Develop an app with state management and data persistence.",
+          "Milestone 3 : Enhance the project with state management, data persistence, and integration with a RESTful API or Firebase."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Industry Practices and App Deployment:",
+          "Advanced UI Components and Animations",
+          "App Security Best Practices",
+          "Testing and Debugging Flutter Applications",
+          "Continuous Integration/Continuous Deployment (CI/CD) with Flutter",
+          "Publishing Apps to Google Play Store and Apple App Store",
+          "Industry Trends and Future of Mobile Development with Flutter",
+          "Add advanced UI components and animations to the project",
+          "Implement security measures in the Flutter application",
+          "Conduct thorough testing and debugging of the developed app.",
+          "Milestone 4 : Complete the project, integrating all features and preparing it for deployment."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 0,
+        "internalExam1": 15,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions. Each question carries 9 marks. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain mobile application development using Flutter and different mobile platforms.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply principles of effective mobile UI/UX design, Create responsive user interfaces using Flutter features.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Experiment effectively with state in Flutter application, networking and data persistence.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply security best practices in mobile app development, test, and debug Flutter applications effectively.",
+        "knowledgeLevel": "K5"
+      },
+      {
+        "CO": "CO5",
+        "description": "Set up CI/CD pipelines for Flutter projects and deploy mobile apps to Google Play Store and Apple App Store.",
+        "knowledgeLevel": "K5"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Flutter Cookbook",
+        "author": "Simone Alessandria",
+        "publisher": "Packt",
+        "edition": "2/e, 2023"
+      },
+      {
+        "title": "Flutter for Beginners",
+        "author": "Alessandro Biessek",
+        "publisher": "Packt",
+        "edition": "1/e, 2019"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Flutter in Action",
+        "author": "Eric Windmill",
+        "publisher": "Manning",
+        "edition": "1/e, 2019"
+      },
+      {
+        "title": "Flutter and Dart: Up and Running",
+        "author": "Deepti Chopra, Roopal Khurana",
+        "publisher": "BPB",
+        "edition": "1/e, 2023"
+      },
+      {
+        "title": "Managing State in Flutter Pragmatically",
+        "author": "Waleed Arshad",
+        "publisher": "Packt",
+        "edition": "1/e, 2021"
+      },
+      {
+        "title": "Ultimate Flutter Handbook",
+        "author": "Lahiru Rajeendra Mahagamage",
+        "publisher": "Orange House",
+        "edition": "1/e, 2023"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://www.youtube.com/watch?v=VPvVD8t02U8",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:55:13.958Z"
+}

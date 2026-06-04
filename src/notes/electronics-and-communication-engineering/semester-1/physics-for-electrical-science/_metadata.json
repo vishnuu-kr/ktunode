@@ -1,0 +1,224 @@
+{
+  "subject": "PHYSICS FOR ELECTRICAL SCIENCE",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 1,
+  "details": {
+    "name": "PHYSICS FOR ELECTRICAL SCIENCE",
+    "courseCode": "GBPHT121",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory + Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 2,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Semiconductor  Physics",
+          "Intrinsic semiconductor",
+          "Derivation of density of electrons in conduction band and density of holes in valence band",
+          "Intrinsic carrier concentration",
+          "Variation of Intrinsic carrier concentration with temperature",
+          "Extrinsic semiconductor (qualitative)",
+          "Formation of p-n junction",
+          "Fermi level in semiconductors-intrinsic and extrinsic",
+          "Energy band diagram of p-n junction - Qualitative description of charge flow across a p-n junction - Forward and reverse biased p-n junctions",
+          "Diode equation (Derivation)",
+          "V-I Characteristics of p-n junction"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Semiconductor Devices",
+          "Semiconductor devices - Rectifiers- Full wave and Half wave",
+          "Zener diode - V-I characteristics - Zener breakdown and Avalanche breakdown",
+          "Tunnel diode - V-I characteristics",
+          "Applications of Zener and Tunnel diodes.",
+          "Photonic devices (qualitative) - Photo detectors (Junction and PIN photodiodes)",
+          "Applications",
+          "Solar cells- V-I Characteristics",
+          "Efficiency",
+          "Stringing of Solar cells to solar panel",
+          "Light Emitting Diode",
+          "Applications of LED"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Superconductivity & Dielectrics",
+          "Super conductivity",
+          "Transition temperature",
+          "Critical field",
+          "Meissner effect",
+          "Type I and Type II Super conductors",
+          "Applications of superconductors.",
+          "Dielectric constant",
+          "Polarization",
+          "Permittivity- relative permittivity",
+          "Relation between polarization and dielectric constant",
+          "Types of Polarization",
+          "Internal fields in liquids and solids",
+          "Clausius Mossotti Relation",
+          "Dielectric loss(qualitative)",
+          "Dielectric breakdown (qualitative)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Laser & Fiber Optics",
+          "Optical processes - Absorption, Spontaneous emission and stimulated emission",
+          "Properties of laser",
+          "Principle of laser - conditions for sustained lasing – Population inversion",
+          "Pumping",
+          "Metastable states",
+          "Basic components of laser - Active medium- Optical resonant cavity",
+          "Construction and working of Ruby laser",
+          "Semiconductor Laser (Qualitative)",
+          "Applications of laser.",
+          "Optical fiber-Principle of propagation of light",
+          "Types of fibers-Step index and Graded index fibers",
+          "Numerical aperture –Derivation",
+          "Applications of optical fibers - Fiber optic communication system (block diagram)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 10,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the fundamentals of Semiconductor Physics.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe the behaviour of semiconductor materials in semiconductor devices.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain Superconductivity and basic theory of dielectrics",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply the comprehended knowledge about laser and fiber optics in various engineering applications",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply basic knowledge of principles and theories in physics to conduct experiments.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Concepts of Modern Physics",
+        "author": "Arthur Beiser",
+        "publisher": "Tata McGraw Hill Publications",
+        "edition": "6th Edition, 2003"
+      },
+      {
+        "title": "Engineering Physics",
+        "author": "H K Malik and A K Singh",
+        "publisher": "McGraw Hill",
+        "edition": "2nd Edition, 2017"
+      },
+      {
+        "title": "A Textbook of Engineering Physics",
+        "author": "MN Avadhanulu, P G Kshirsagar, TVS Arun murthy",
+        "publisher": "S. Chand",
+        "edition": "11th Edition, 2018"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Semiconductor Devices Fundamentals",
+        "author": "Robert F Pierret",
+        "publisher": "Pearson Education",
+        "edition": "1995"
+      },
+      {
+        "title": "Advanced Semiconductor Fundamental",
+        "author": "Robert F Pierret",
+        "publisher": "Pearson Education",
+        "edition": "2nd Edition, 2002"
+      },
+      {
+        "title": "Solid State Electronic Devices",
+        "author": "Ben G Streetman and Sanjay Kumar Banerjee",
+        "publisher": "Pearson Education",
+        "edition": "6/e 2010"
+      },
+      {
+        "title": "Solid State Physics",
+        "author": "S.O. Pillai",
+        "publisher": "New age international publishers",
+        "edition": "10th Edition, 2022"
+      },
+      {
+        "title": "Introduction to Solid State Physics",
+        "author": "Charles Kittel",
+        "publisher": "Wiley India Edition",
+        "edition": "2019"
+      },
+      {
+        "title": "Advanced Engineering Physics",
+        "author": "Premlet B Phasor",
+        "publisher": "Books",
+        "edition": "10th Edition ,2017"
+      },
+      {
+        "title": "A Text Book of Engineering Physics",
+        "author": "I. Dominic and. A. Nahari",
+        "publisher": "Owl Books Publishers",
+        "edition": "Revised Edition, 2016"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/108106181",
+      "module2": "https://nptel.ac.in/courses/108108112",
+      "module3": "https://nptel.ac.in/courses/115103108",
+      "module4": "https://nptel.ac.in/courses/115102124"
+    },
+    "semester": "1",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:35:16.848Z"
+}

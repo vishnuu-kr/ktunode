@@ -1,0 +1,163 @@
+{
+  "subject": "GROUND WATER ENGINEERING",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "GROUND WATER ENGINEERING",
+    "courseCode": "PECET751",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET501, PCCET402",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Vertical distribution of groundwater- Types of geologic formations, aquifer and their types, Properties of aquifer related to storage and transmissivity of water, Darcy’s law (Review)",
+          "Steady unidirectional flow- steady flow in a homogenous aquifer- aquifer with recharge- flow into infiltration galleries. (Problems from unidirectional flow)",
+          "Evaluation of aquifer parameters by Theis, Jacob’s and Chow’s method. (Problems from evaluation of aquifer parameters)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Modelling of ground water flow- governing equations of ground water flow and boundary conditions (basic ideas only), solution of partial differential equation of ground water flow for 1D steady ground water flow in homogenous aquifers (confined and unconfined) using finite difference method (uniform mesh interval only)",
+          "Partial differential equation governing unsteady groundwater flow- unsteady radial flow towards well."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Well hydraulics -Well flow near aquifer boundaries- Image well system. Method of images- Practical cases (Problems from method of images)",
+          "Method of constructing shallow wells- Method of constructing shallow wells -cable tool method, rotary method and reverse rotary method-well completion-design of gravel packed well-well development-different methods, well rehabilitation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Surface investigation of groundwater- different methods-electrical resistivity method, seismic refraction method- determination of aquifer thickness of horizontal aquifers (Problems from resistivity method, seismic refraction)",
+          "Groundwater Contamination, Quality of Ground Water- Graphical Representations. Reducing Groundwater Contamination.",
+          "Sea water intrusion- Ghyben-Herzberg equation, sea water-fresh water interface, length of intrusion, upconing, preventive measures.( Problems from sea water intrusion)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Determine the aquifer parameters using different methods.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Perform numerical modelling of ground water system.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Describe the procedure of well construction and estimate the well draw down curve.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Determine aquifer thickness using different geophysical methods",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Estimate the extent of ground water pollution and assess the quality",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Ground Water Hydrology",
+        "author": "D.K. Todd",
+        "publisher": "Wiley International",
+        "edition": "1995"
+      },
+      {
+        "title": "Groundwater.",
+        "author": "H.M. Raghunath",
+        "publisher": "New Age International",
+        "edition": "2007"
+      },
+      {
+        "title": "Numerical Ground Water Hydrology",
+        "author": "A.K. Rastogi",
+        "publisher": "Penram International",
+        "edition": "2007"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Ground Water Assessment, Development and Management",
+        "author": "K. Karanth",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2017"
+      },
+      {
+        "title": "Ground Water Manual : A Water Resources Technical Publication USDI, Bureau of Reclamation",
+        "author": "USDI",
+        "publisher": "Scientific Publishers",
+        "edition": "2017"
+      },
+      {
+        "title": "Ground Water and tube wells",
+        "author": "S.P Garg",
+        "publisher": "Oxford &IBH Publishing Company",
+        "edition": "1993"
+      },
+      {
+        "title": "Ground Water Hydrology",
+        "author": "Herman Bouwer",
+        "publisher": "MC Graw Hill Kogakusha Ltd",
+        "edition": "2000"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc24_ce83/preview",
+      "module2": "https://nptel.ac.in/courses/105103026",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T19:00:01.456Z"
+}

@@ -1,0 +1,156 @@
+{
+  "subject": "LOGIC CIRCUIT DESIGN",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 3,
+  "details": {
+    "name": "LOGIC CIRCUIT DESIGN",
+    "courseCode": "PBECT304",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "GYEST104 Introduction to Electrical &  Electronics Engineering",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 1
+    },
+    "CIE": 60,
+    "ESE": 40,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to digital circuits: Review of number systems representation- conversions, Arithmetic of Binary number systems, Signed and unsigned numbers, BCD.",
+          "Boolean algebra: Theorems, sum of product and product of sum - simplification, canonical forms- min term and max term, Simplification of  Boolean expressions - Karnaugh map (upto 4 variables), Implementation of Boolean expressions using universal gates."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Combinational logic circuits - Half adder and Full adders, Subtractors, BCD adder, Ripple carry and carry look ahead adders, Decoders, Encoders, Code converters, Comparators, Parity generator, Multiplexers, De-multiplexers, Implementation of Boolean algebra using MUX.",
+          "Introduction to Verilog HDL – Basic language elements, Basic implementation of logic gates and combinational circuits."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Sequential Circuits: SR Latch, Flip flops - SR, JK, Master-Slave JK, D and T Flip flops. Conversion of Flip flops, Excitation table and characteristic equation. Shift registers-SIPO, SISO, PISO, PIPO and Universal shift registers. Ring and Johnsons counters. Design of Asynchronous, Synchronous and Mod N counters."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Finite state machines - Mealy and Moore models, State graphs, State assignment, State table, State reduction .",
+          "Logic Families: -Electrical characteristics of logic gates (Noise margin, Fan-in, Fan-out, Propagation delay, Transition time, Power -delay product) -TTL, ECL, CMOS .",
+          "Circuit description and working of TTL and CMOS inverter, CMOS NAND and CMOS NOR gates."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 30,
+        "internalExam1": 12.5,
+        "internalExam2": 12.5,
+        "total": 60
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 2 marks",
+          "marks": 16
+        },
+        "partB": {
+          "description": "Each question carries 6 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 2 sub divisions.",
+          "marks": 24
+        },
+        "total": 40
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply the knowledge of digital representation of information and Boolean algebra to deduce optimal digital circuits.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design and implement combinational logic circuits, sequential logic circuits and finite state machines.",
+        "knowledgeLevel": "K5"
+      },
+      {
+        "CO": "CO3",
+        "description": "Design and implement digital circuits on FPGA using hardware description language (HDL).",
+        "knowledgeLevel": "K5"
+      },
+      {
+        "CO": "CO4",
+        "description": "Outline the performance of logic families with  \nRespect to different parameters.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Digital Fundamentals",
+        "author": "Thomas L. Floyd",
+        "publisher": "Pearson Education",
+        "edition": "11th Edition, 2017"
+      },
+      {
+        "title": "Fundamentals of Digital Logic with Verilog Design",
+        "author": "Stephen Brown",
+        "publisher": "McGraw Hill Education",
+        "edition": "2nd Edition"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Digital Design: With an Introduction to the Verilog HDL, VHDL, and System  Verilog",
+        "author": "M Morris Mano, Michael D. Ciletti",
+        "publisher": "Pearson India",
+        "edition": "6th Edition, 2018"
+      },
+      {
+        "title": "Fundamentals of Digital Circuits",
+        "author": "A. Ananthakumar",
+        "publisher": "PHI",
+        "edition": "4th Edition, 2016"
+      },
+      {
+        "title": "Introduction to Logic Circuits & Logic Design with Verilog",
+        "author": "Brock J. LaMeres",
+        "publisher": "Springer",
+        "edition": "2nd Edition, 2019"
+      },
+      {
+        "title": "Digital Design Verilog HDL and Fundamentals",
+        "author": "Joseph Cavanagh",
+        "publisher": "CRC Press",
+        "edition": "1st Edition, 2008"
+      },
+      {
+        "title": "Digital Circuits and Systems",
+        "author": "D.V. Hall",
+        "publisher": "Tata McGraw Hill",
+        "edition": "1989"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/117/106/117106086/\nhttps://archive.nptel.ac.in/courses/106/105/106105185/",
+      "module2": "https://archive.nptel.ac.in/courses/117/106/117106086/\nhttps://archive.nptel.ac.in/courses/106/105/106105185/",
+      "module3": "https://archive.nptel.ac.in/courses/117/106/117106086/\nhttps://archive.nptel.ac.in/courses/106/105/106105185/",
+      "module4": "https://archive.nptel.ac.in/courses/117/106/117106086/\nhttps://archive.nptel.ac.in/courses/106/105/106105185/"
+    },
+    "semester": "3",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:46:07.533Z"
+}

@@ -1,0 +1,186 @@
+{
+  "subject": "AUTOMOTIVE TECHNOLOGY",
+  "branch": "Mechanical Engineering",
+  "semester": 6,
+  "details": {
+    "name": "AUTOMOTIVE TECHNOLOGY",
+    "courseCode": "OEMET613",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory – Open elective",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction : History of automobiles: Electric, Hybrid and Internal Combustion Engines (ICE) vehicles – classification of automobile L, M and N category.",
+          "Sub division according to body style (hatchback to station wagon).",
+          "Basic vehicle dynamics: Rolling, Air and Grade resistance, Power and Torque for propulsion (basic equations).",
+          "Different ICEs – SI & CI, Single and multicylinder with arrangements, Bi fuel & dual fuel, latest technologies in ICEs – Flex fuel vehicles, H 2-ICE, Hybrid types – Mild & strong hybrids, series, parallel, and series parallel types."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Power plant: Components in an IC engine – head, block & sump, cylinder, piston, piston pin, crank, connecting rod, valve train and types, combustion process – A/F ratio, self-ignition temperature, Octane and cetane number.",
+          "Fuel, Air and ignition systems: Carburettors(simple), MPFI, CRDI & GDI systems with components (line diagram).",
+          "Working of solenoid and piezo injectors.",
+          "Naturally aspirated and forced induction systems (turbo and super charger).",
+          "Spark ignition systems –components, ignition timing, Single coil ignition system & coil over plug ignitions system."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Lubrication, Cooling and exhaust system: Lubrication system – basic circuitry, oil grade and viscosity.",
+          "Cooling system – basic circuit including thermostat valve.",
+          "Exhaust system – 3-way catalytic converter, DPF and SCR basics.",
+          "Transmission & Chassis: Gear ratio, manual transmission: synchromesh, Automated and Automatic transmission basics, Friction and Fluid clutches basics.",
+          "Different types chassis – tubular to integrated, duties of a chassis."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Steering, Braking and Suspension: Working of manual, electric and hydraulic steering system.",
+          "Working of brake system – hydraulic, pneumatic and ABS.",
+          "Suspension system – rigid & independent, coil & leaf, shock absorber basics.",
+          "E & E architecture – ECUs, sensors and actuators other than ECM, distributed and zonal electrical architecture.",
+          "Basics of communication protocols – CAN, LIN and ethernet.",
+          "Electric vehicle components and energy flow, On-board diagnostic basics – DTC code, basics of ADAS – sensors, levels of automation, examples – LDWS to Lane change assist, Adaptive cruise control, Automatic emergency braking, Driver monitoring system, Autonomous Vehicles."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the efficiency and performance of different automotive propulsion systems (electric, hybrid, internal combustion)",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply knowledge of automotive components to diagnose and troubleshoot issues in propulsion, transmission, and chassis systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Describe the operation and integration of advanced automotive technologies such as fuel injection systems and electronic control units (ECUs) in vehicle design and performance enhancement",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand basics of E & E architecture and principles behind vehicle handling and safety through analysis of steering, braking and suspension systems.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Automobile Engineering, Vol.1 & Vol.2",
+        "author": "Kirpal Singh",
+        "publisher": "Standard Publishers",
+        "edition": "13th edition,2020"
+      },
+      {
+        "title": "A Textbook of Automobile Engineering",
+        "author": "S K Gupta",
+        "publisher": "S Chand",
+        "edition": "January 2020"
+      },
+      {
+        "title": "Fundamentals of motor vehicle technology.",
+        "author": "Hillier and Peter Coobes",
+        "publisher": "New Age International Private Limited",
+        "edition": "6th edition (1 January 2006)"
+      },
+      {
+        "title": "Vehicle and engine technology",
+        "author": "Heinz Heisler",
+        "publisher": "Society of Automotive Engineers",
+        "edition": "2nd edition (1 September 1998)"
+      },
+      {
+        "title": "Automobile mechanical and electrical systems",
+        "author": "Tom Denton &Hayley Pells",
+        "publisher": "Routledge Publishers",
+        "edition": "3rd    edition, 2022"
+      },
+      {
+        "title": "Automobile Electrical and Electronic systems",
+        "author": "Tom Denton",
+        "publisher": "Routledge Publishers",
+        "edition": "5th edition, 2018"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Automotive Mechanics",
+        "author": "Heitner J",
+        "publisher": "East-West Press",
+        "edition": "2nd edition, 1999"
+      },
+      {
+        "title": "Automobile Engineering",
+        "author": "Jain K.K. and Asthana R. B",
+        "publisher": "Tata McGraw Hill",
+        "edition": "New Delhi, 2002"
+      },
+      {
+        "title": "Electric and Hybrid Vehicles",
+        "author": "Tom Denton",
+        "publisher": "Routledge Publishers",
+        "edition": "2nd edition, 2020"
+      },
+      {
+        "title": "Fundamentals of modern vehicle technology",
+        "author": "V.A.W. Hillier",
+        "publisher": "Butterworth-Heinemann",
+        "edition": "2nd edition,1998"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/107/106/107106088/",
+      "module2": "https://archive.nptel.ac.in/courses/107/106/107106088/",
+      "module3": "https://archive.nptel.ac.in/courses/107/106/107106088/",
+      "module4": "https://archive.nptel.ac.in/courses/107/106/107106088/"
+    },
+    "semester": "6",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:03:17.283Z"
+}

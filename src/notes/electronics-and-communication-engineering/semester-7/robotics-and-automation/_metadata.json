@@ -1,0 +1,218 @@
+{
+  "subject": "ROBOTICS AND AUTOMATION",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 7,
+  "details": {
+    "name": "ROBOTICS AND AUTOMATION",
+    "courseCode": "PEECT 743",
+    "credits": 3,
+    "examHours": "2 Hrs .30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Fundamentals of Robotics",
+          "Automation and Robotics :",
+          "Definition and history of robotics.",
+          "Differences between automation and robotics.",
+          "Applications of robotics in industry and service sectors.",
+          "Robot Anatomy :",
+          "Basic components: Links, joints, and end effectors.",
+          "Structural configurations: Cartesian, cylindrical, spherical, SCARA,",
+          "articulated.",
+          "Degrees of Freedom (DOF) and their significance.",
+          "Configurations of Robots:",
+          "Cartesian, Cylindrical, Spherical, Articulated, SCARA.",
+          "Work Volume and Workspace Analysis:",
+          "Definition and importance.",
+          "Factors affecting workspace.",
+          "Manipulator Kinematics:",
+          "Position representation.",
+          "Introduction to forward and inverse kinematics.",
+          "Homogeneous transformations and their application in robot kinematics.",
+          "D-H Notations:",
+          "Formulating and solving kinematic equations."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Control Systems for Robots",
+          "Basic Control System Models:",
+          "Open-loop and closed-loop control.",
+          "Block diagrams and transfer functions.",
+          "Robot Motions:",
+          "Types of motions: Slew motion, joint-interpolated motion, and straight-",
+          "line motion.",
+          "Path planning and trajectory generation.",
+          "Controllers:",
+          "On/off control.",
+          "Proportional (P) control.",
+          "Integral (I) control.",
+          "Proportional plus integral (PI) control.",
+          "Proportional plus derivative (PD) control.",
+          "Proportional plus integral plus derivative (PID) control."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Actuation and Feedback Mechanisms",
+          "Sensors:",
+          "Types of sensors: Position and velocity sensors.",
+          "Working principles of encoders and resolvers.",
+          "Potentiometers and tachometers.",
+          "Actuators:",
+          "Electric actuators: DC motors, stepper motors, and servomotors.",
+          "Hydraulic actuators.",
+          "Pneumatic actuators.",
+          "Power Transmission Devices:",
+          "Gears, belts, chains.",
+          "Leadscrews and ball screws.",
+          "End Effectors:",
+          "Types of grippers: Mechanical, vacuum, magnetic.",
+          "Design considerations for grippers.",
+          "Methods of Power and Control Signal Transmission:",
+          "Electrical, hydraulic, pneumatic transmission."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Industrial Applications and Work Cell Design",
+          "Material Handling:",
+          "General considerations for material handling with robots, Material transfer",
+          "applications.",
+          "Pick and Place Operations:",
+          "Techniques and applications, Integration with production lines.",
+          "Palletizing and Related Operations:",
+          "Methods and case studies.",
+          "Manufacturing Processes:",
+          "Die casting, plastic molding, forging.",
+          "Machining operations, stamping press operations.",
+          "Role of robots in automation of these processes.",
+          "Robot Cell Layouts:",
+          "Design considerations for multiple robots and machine interfaces.",
+          "Examples of typical robot cell layouts.",
+          "Work Cell Control:",
+          "Interlocks and safety mechanisms.",
+          "Error detection and recovery strategies.",
+          "Work Cell Controllers:",
+          "Types and functions of work cell controllers.",
+          "Integration with other control systems.",
+          "Cycle Time Analysis:",
+          "Techniques for analyzing and optimizing robot cycle times.",
+          "Factors affecting cycle time and productivity."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": " 2 Questions from each \nmodule.  \n Total of 8 Questions, each \ncarrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": " Each question carries 9 marks.  \n Two questions will be given from each module, out \nof which 1 question should be answered.  \n Each question can have a maximum of 3 sub \ndivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe the basic components, structural configurations, and degrees of freedom (DOF) of robots.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply forward and inverse kinematics for different types of robotic manipulators.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Implement various types of controllers and explain their impact on robot motion control",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Identify and compare different types of sensors and actuators used in robotic systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Describe the basics of robot cell layouts considering multiple robots and machine interfaces.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "\"Introduction to Robotics: \nMechanics and Control\"",
+        "author": "John J. Craig",
+        "publisher": "PHI",
+        "edition": "FIRST"
+      },
+      {
+        "title": "Robot Modeling and Control",
+        "author": "Mark W. Spong, Seth \nHutchinson, and M. \nVidyasagar",
+        "publisher": "WILEY",
+        "edition": "FIRST"
+      },
+      {
+        "title": "Industrial Robotics",
+        "author": "Groover MP",
+        "publisher": "Mc Graw Hill",
+        "edition": "1987"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Robotics fundamental concepts \n& analysis",
+        "author": "Ashitava Ghoshal",
+        "publisher": "Oxford university \npress",
+        "edition": "2006"
+      },
+      {
+        "title": "Introduction to Robotics",
+        "author": "John G Craig",
+        "publisher": "PHI",
+        "edition": "2005"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc21_me76/preview",
+      "module2": "https://nptel.ac.in/courses/107106090",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:09:20.937Z"
+}

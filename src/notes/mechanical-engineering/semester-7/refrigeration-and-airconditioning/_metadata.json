@@ -1,0 +1,224 @@
+{
+  "subject": "REFRIGERATION AND AIRCONDITIONING",
+  "branch": "Mechanical Engineering",
+  "semester": 7,
+  "details": {
+    "name": "REFRIGERATION AND AIRCONDITIONING",
+    "courseCode": "PEMET751",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCMET403 Engineering Thermodynamics",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to refrigeration and air conditioning",
+          "ideal refrigeration cycles",
+          "Aircraft refrigeration cycles.",
+          "Definition of refrigeration and air conditioning",
+          "Relationship of refrigeration and air-conditioning fields",
+          "Applications of refrigeration and air-conditioning",
+          "unit of refrigeration.",
+          "Ideal refrigeration cycle- Reversed Carnot cycle",
+          "refrigerator and heat pump",
+          "coefficient of performance (COP)",
+          "Gas and Vapour as refrigerant in reversed Carnot cycle",
+          "Revisions of the reversed Carnot cycle- reversed Brayton cycle and simple vapour compression refrigeration cycle.",
+          "Simple aircraft refrigeration system with ram compression",
+          "Boot strap refrigeration system",
+          "Regenerative and Reduced ambient systems"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Thermodynamic analysis of vapour compression and vapour absorption refrigeration systems.",
+          "Simple vapour compression refrigeration system",
+          "representation of the cycle on T-s and P-h diagram",
+          "Use of refrigerant tables and charts",
+          "Effect of operating on COP suction line heat exchanger",
+          "actual vapour compression refrigeration system.",
+          "Limitation of single stage refrigeration systems in achieving ultra-low temperature.",
+          "Cascade refrigeration system and Trans-critical refrigeration system (Numerical Problems to be limited to Refrigerants R134a, R32, R1234yf, R410A, R744, R718, R744)",
+          "Principle of vapour absorption system",
+          "desirable properties of refrigerant and absorbent pairs",
+          "Working of continuous vapour absorption system",
+          "ideal COP of absorption system",
+          "LiBr-Water absorption system",
+          "NH 3-Water absorption system",
+          "Use of charts to calculate the performance of vapour absorption refrigeration system (Numerical problem limited to LiBr-Water absorption system)",
+          "Comparison of vapour absorption and vapour compression system.",
+          "Three fluid absorption system."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Refrigerants and refrigeration system components",
+          "Types of refrigerants",
+          "designation of refrigerants",
+          "Ozone depletion and Global warming",
+          "commonly used refrigerants- HFC, HC,HFO and mixed refrigerants",
+          "desirable physical, chemical and thermodynamic properties of refrigerants.",
+          "Types of expansion devices – Constant pressure valve-Thermostatic expansion valve and capillary tube",
+          "Electronic Expansion valves.",
+          "Types of compressors in refrigeration systems",
+          "Types of evaporators and condensers",
+          "Cooling towers."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Psychrometry and applied psychrometry",
+          "Properties of moist air- specific humidity.",
+          "Dew point temperature",
+          "Relative humidity",
+          "Enthalpy of moist air",
+          "wet bulb and thermodynamic wet bulb temperatures",
+          "Psychrometric chart",
+          "Typical air conditioning processes",
+          "Air washer",
+          "sensible heat factor",
+          "grand sensible heat factor",
+          "effective sensible heat factor",
+          "Simple air conditioning system",
+          "Summer air-conditioning system",
+          "Winter air-conditioning system",
+          "year round air-conditioning systems – Representation on the Psychrometric chart and estimation of quantities."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Define and describe the basic concepts and applications of refrigeration and air conditioning and analyse performance of ideal refrigeration cycles",
+        "knowledgeLevel": "K2, K4"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the principles and evaluate the efficiency of aircraft refrigeration systems",
+        "knowledgeLevel": "K2, K5"
+      },
+      {
+        "CO": "CO3",
+        "description": "Perform Thermodynamic Analysis of Vapour Compression and Absorption Systems.",
+        "knowledgeLevel": "K3, K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain and Select Appropriate Refrigerants and System Components",
+        "knowledgeLevel": "K2. K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Analyse properties of moist air using psychrometric principles and chart and explain the working principles and applications of air washers and air-conditioning systems.",
+        "knowledgeLevel": "K2, K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Refrigeration and Air Conditioning",
+        "author": "Arora C.P",
+        "publisher": "Tata McGraw hill",
+        "edition": "4th edition/2021"
+      },
+      {
+        "title": "Refrigeration and Air Conditioning",
+        "author": "Ramesh Cahndra Arora",
+        "publisher": "PHI",
+        "edition": "4th Printing/2015"
+      },
+      {
+        "title": "A Course in Refrigeration and Air Conditioning",
+        "author": "Arora S. C. and S. Domkundwar",
+        "publisher": "Dhanpat Rai and Company.",
+        "edition": "2018"
+      },
+      {
+        "title": "Refrigeration and air conditioning -",
+        "author": "Ahamadul Ameen.",
+        "publisher": "Eastern economy addition",
+        "edition": "2020"
+      },
+      {
+        "title": "Air Conditioning Engineering",
+        "author": "W P Jones",
+        "publisher": "Spon Press",
+        "edition": "5th edition/ 2001"
+      },
+      {
+        "title": "Data book- Refrigeration tables and charts including air conditioning data",
+        "author": "C P Kothandaraman",
+        "publisher": "New Age International.",
+        "edition": "2023"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "ASHRAE Handbook",
+        "author": "The American Society of Heating, Refrigerating and Air-Conditioning Engineers",
+        "publisher": "",
+        "edition": ""
+      },
+      {
+        "title": "Basic Refrigeration and Air Conditioning",
+        "author": "P NAnanthanarayanan",
+        "publisher": "McGraw Hill",
+        "edition": "4th Edition 2013"
+      },
+      {
+        "title": "Refrigeration & Air-conditioning",
+        "author": "Stoecker & Jons",
+        "publisher": "McGraw Hill",
+        "edition": "2nd edition"
+      }
+    ],
+    "videoLinks": {
+      "module1": "Refrigeration and Air-conditioning By Prof. Ravi Kumar   |   IIT Roorkee",
+      "module2": "Refrigeration and Air-conditioning By Prof. Ravi Kumar   |   IIT Roorkee",
+      "module3": "Refrigeration and Air-conditioning By Prof. Ravi Kumar   |   IIT Roorkee",
+      "module4": "Refrigeration and Air-conditioning By Prof. Ravi Kumar   |   IIT Roorkee"
+    },
+    "semester": "7",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:16:59.631Z"
+}

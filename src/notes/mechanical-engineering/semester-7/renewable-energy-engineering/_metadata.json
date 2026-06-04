@@ -1,0 +1,163 @@
+{
+  "subject": "RENEWABLE ENERGY ENGINEERING",
+  "branch": "Mechanical Engineering",
+  "semester": 7,
+  "details": {
+    "name": "RENEWABLE ENERGY ENGINEERING",
+    "courseCode": "PEMET754",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Commercial energy sources -World’s production and reserves-India’ Production and reserves, Energy Alternatives",
+          "Principles of solar radiation: Solar radiation outside the earth’s atmosphere and at the earth’s surface Solar Constant",
+          "Basic Sun-Earth Angles",
+          "Instruments for measuring solar radiation and sunshine"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Solar Energy collectors: Solar thermal collectors -Flat plate collectors –Solar concentrators (Tracking concentrators and Non-tracking concentrators)",
+          "Solar Energy Storage Systems –Solar thermal power plant - Principle and operation of  Solar Pond",
+          "Applications – Solar Photovoltaic system",
+          "Solar water heating",
+          "Solar Air heating",
+          "Solar crop drying",
+          "Solar distillation"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Wind Energy –Classification of wind turbines – Types of rotors – Land for wind energy (regions, areas and khals) – Modes of wind power generation (Standalone mode, backup mode and Grid connected wind turbine generators)",
+          "Smal Hydel power plants – classification and advantages"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Energy from ocean – Tidal power generation – Wave power generation",
+          "Bio Mass Energy- Biomass conversion technologies –Bio Gasification, Bio ethanol, Bio Diesel, Biogas production from waste biomass, factors affecting biogas generation Hydrogen Energy – various routes for production of Hydrogen energy",
+          "Hybrid Energy Systems – PV hybrid with diesel generator – Wind – diesel hybrid system –Biomass – Solar thermal hybrid system"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Differentiate between commercial energy systems and alternatives",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Obtain a detailed knowledge in solar energy implementation for collection, conversion and storage",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand the possibilities of wind energy and small hydel power plants",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Gain knowledge about tidal and wave energy, energy from biomass and hydrogen",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Understand about the energy alternatives by hybrid system",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Renewable Energy Resources",
+        "author": "John Twidell, Tony Weir",
+        "publisher": "Taylor and Francis",
+        "edition": "3rd Edn, 2015"
+      },
+      {
+        "title": "Renewable Energy Sources and Emerging Technologies",
+        "author": "D P Kothari, K C Singal, Rakesh Ranjan",
+        "publisher": "PHI Learning Pvt. Ltd.",
+        "edition": "2nd Edn, 2014"
+      },
+      {
+        "title": "Non-conventional Energy Sources",
+        "author": "G D Rai",
+        "publisher": "Khanna Publishers",
+        "edition": "2004"
+      },
+      {
+        "title": "Solar Energy: Principles of Thermal Collection and",
+        "author": "",
+        "publisher": "",
+        "edition": ""
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Sustainable Energy Choosing among options",
+        "author": "Jefferson W Tester",
+        "publisher": "PHI Learning Pvt. Ltd.",
+        "edition": "2006"
+      },
+      {
+        "title": "Fundamentals and Applications of Renewable EnergyMc Graw Hill ,2019",
+        "author": "Mehmet KanoğluYunus A. Çengel John M. Cimbala",
+        "publisher": "Mc Graw Hill",
+        "edition": "2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "NOC | Renewable Energy Engineering: Solar, Wind and Biomass Energy Systems (nptel.ac.in)",
+      "module2": "NOC | Renewable Energy Engineering: Solar, Wind and Biomass Energy Systems (nptel.ac.in)",
+      "module3": "NOC | Renewable Energy Engineering: Solar, Wind and Biomass Energy Systems (nptel.ac.in)",
+      "module4": "NOC | Renewable Energy Engineering: Solar, Wind and Biomass Energy Systems (nptel.ac.in)"
+    },
+    "semester": "7",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:18:21.436Z"
+}

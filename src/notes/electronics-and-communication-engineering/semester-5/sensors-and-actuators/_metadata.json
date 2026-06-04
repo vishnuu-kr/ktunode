@@ -1,0 +1,206 @@
+{
+  "subject": "SENSORS AND ACTUATORS",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 5,
+  "details": {
+    "name": "SENSORS AND ACTUATORS",
+    "courseCode": "PEECT 523",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Sensors and actuators : Block diagram of a closed loop control System",
+          "Sensors and Transducers",
+          "Sensors Classification",
+          "Sensor Characteristics - Transfer Function",
+          "Calibration",
+          "Span (Full Scale Input)",
+          "Full-Scale Output",
+          "Accuracy",
+          "Precision",
+          "Hysteresis",
+          "Nonlinearity",
+          "Saturation",
+          "Repeatability",
+          "Dead Band",
+          "Sensitivity",
+          "Resolution."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Position and Displacement Sensors - Potentiometric Sensors",
+          "Capacitive Sensors",
+          "LVDT",
+          "Hall Effect Sensors",
+          "Pressure Sensors -Mercury Pressure Sensor",
+          "Bellows",
+          "Membranes, and Thin plates",
+          "Piezoresistive Sensors",
+          "Capacitive Sensors.",
+          "Force, Strain, and Tactile Sensors - Strain Gauges",
+          "Tactile Sensors - Switch Sensors",
+          "Piezoelectric Sensors",
+          "Piezoresistive Sensors",
+          "Capacitive Touch Sensors",
+          "Acoustic Touch Sensors",
+          "Optical Touch Sensors",
+          "Piezoelectric Force Sensors."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Flow Sensors - Ultrasonic Flow Sensors",
+          "Electromagnetic Flow Sensors.",
+          "Temperature Sensors - Resistance Temperature Detectors",
+          "Thermistors",
+          "Thermocouple.",
+          "Proximity Sensors - PIR sensors",
+          "Ultrasonic proximity sensors.",
+          "Smart Sensors - Block Diagram",
+          "Difference between Normal Sensor & Smart Sensor",
+          "Advantages",
+          "Disadvantages and Applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Actuators : - Definition- classification-Electric, Hydraulic, Pneumatic actuators.",
+          "Hydraulic System - Physical Components and typical circuit.",
+          "Hydraulic actuators - Linear actuators",
+          "Rotary actuators - Gear motor, vane motor.",
+          "Pneumatic System - Components and typical circuit.",
+          "Pneumatic Actuators - Bellows actuator",
+          "Flapper-nozzle",
+          "Diaphragm actuators for industrial control valves.",
+          "Electric actuators- Solenoids",
+          "Stepper motors",
+          "DC motors",
+          "DC servo motors.",
+          "Electro-Pneumatic actuator; rotary output actuators",
+          "Linear output actuators."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe Sensor Fundamentals",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the basic principles and concepts of commonly used different types of sensors, including their purpose, how they work, and the various types of sensors available.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Illustrate the working principles of smart sensors",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the working principle of different types of actuators.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Handbook of Modern Sensors",
+        "author": "Jacob Fraden",
+        "publisher": "Springer",
+        "edition": "Fourth Edition, 2010"
+      },
+      {
+        "title": "Hydraulics and Pneumatics",
+        "author": "Andrew Parr",
+        "publisher": "Elsevier Science",
+        "edition": "Second edition, 1999"
+      },
+      {
+        "title": "Process Control",
+        "author": "K. Krishnaswamy",
+        "publisher": "New Age International",
+        "edition": "Second edition, 2009"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Sensors and Actuators in Mechatronics, Design and Applications",
+        "author": "Andrzej M. Pawlak",
+        "publisher": "Taylor & Francis Group",
+        "edition": "1/e, 2016"
+      },
+      {
+        "title": "Mechatronic systems, Sensors and Actuators Fundamentals and Modelling",
+        "author": "Robert H. Bishop",
+        "publisher": "Taylor & Francis Group",
+        "edition": "3/e, 2022"
+      },
+      {
+        "title": "Process Control Instrumentation Technology",
+        "author": "Curtis D. Johnson",
+        "publisher": "Pearson/Prentice Hall",
+        "edition": "8/e, 2019"
+      },
+      {
+        "title": "Sensors and Transducers",
+        "author": "D. Patranabis",
+        "publisher": "PHI Learning",
+        "edition": "4/e, 2021"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc21_ee32/preview",
+      "module2": "https://onlinecourses.nptel.ac.in/noc21_ee32/preview",
+      "module3": "https://onlinecourses.nptel.ac.in/noc21_ee32/preview",
+      "module4": "https://onlinecourses.nptel.ac.in/noc21_ee32/preview"
+    },
+    "semester": "5",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:57:38.476Z"
+}

@@ -1,0 +1,213 @@
+{
+  "subject": "PROGRAMMING LANGUAGES",
+  "branch": "Computer Science and Engineering",
+  "semester": 7,
+  "details": {
+    "name": "PROGRAMMING LANGUAGES",
+    "courseCode": "PECST758",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction -  The Origins of Programming Languages",
+          "Abstractions in Programming Languages",
+          "Computational Paradigms",
+          "Language Definition",
+          "Language Translation",
+          "The Future of Programming Languages",
+          "Language Design Criteria -  Historical Overview",
+          "Efficiency",
+          "Regularity",
+          "Security",
+          "Extensibility",
+          "C++: An Object-Oriented Extension of C",
+          "Python: A General-Purpose Scripting Language",
+          "Syntax and Analysis Parsing: Lexical Structure of Programming Languages",
+          "Context-Free Grammars and BNFs",
+          "Parse Trees and Abstract Syntax Trees",
+          "Ambiguity",
+          "Associativity",
+          "Precedence",
+          "EBNFs and Syntax Diagrams",
+          "Parsing Techniques and Tools",
+          "Lexics vs. Syntax vs. Semantics",
+          "Case Study: Building a Syntax Analyzer for TinyAda"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Basic Semantics- Attributes, Binding, and Semantic Functions",
+          "Declarations, Blocks, and Scope",
+          "The Symbol Table",
+          "Name Resolution and Overloading",
+          "Allocation, Lifetimes, and the Environment",
+          "Variables and Constants",
+          "Aliases",
+          "Dangling References, and Garbage",
+          "Case Study: Initial Static Semantic Analysis of TinyAda.",
+          "Data Types -  Data Types and Type Information",
+          "Simple Types",
+          "Type Constructors",
+          "Type Nomenclature in Sample Languages",
+          "Type Equivalence",
+          "Type Checking",
+          "Type Conversion",
+          "Polymorphic Type Checking",
+          "Explicit Polymorphism",
+          "Case Study: Type Checking in TinyAda."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Expressions and Statements -  Expressions",
+          "Conditional Statements and Guards",
+          "Loops and Variations on WHILE",
+          "The GOTO Controversy and Loop Exits",
+          "Exception Handling",
+          "Case Study: Computing the Values of Static Expressions in TinyAda.",
+          "Procedures and Environments-  Procedure Definition and Activation",
+          "Procedure Semantics",
+          "Parameter-Passing Mechanisms",
+          "Procedure Environments",
+          "Activations",
+          "Allocation",
+          "Dynamic Memory Management",
+          "Exception Handling and Environments",
+          "Case Study: Processing Parameter Modes in TinyAda."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Abstract Data Types and Modules-  The Algebraic Specification of Abstract Data Types",
+          "Abstract Data Type Mechanisms and Modules",
+          "Separate Compilation in C",
+          "C++ Namespaces, and Java Packages",
+          "Ada Packages",
+          "Modules in ML",
+          "Modules in Earlier Languages",
+          "Problems with Abstract Data Type Mechanisms",
+          "The Mathematics of Abstract Data Types."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the history of programming languages and introduce abstraction, the concept of different language paradigms, and an overview of language design criteria.",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe how the syntactic structure of a language can be precisely specified using context-free grammar rules in Backus-Naur form (BNF).",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the abstractions of the operations that occur during the translation and execution of programs.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply the data types in various languages",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply procedure activation and parameter passing; and exceptions and exception handling.",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Programming languages: principles and practices.",
+        "author": "Kenneth C Louden",
+        "publisher": "Cengage Learning",
+        "edition": "3/e, 2011"
+      },
+      {
+        "title": "Concepts of programming languages.",
+        "author": "Sebesta R W.",
+        "publisher": "Pearson",
+        "edition": "12/e, 2023"
+      },
+      {
+        "title": "Programming languages: concepts and constructs.",
+        "author": "Sethi R",
+        "publisher": "Pearson",
+        "edition": "2/e, 2006"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Programming Languages: Principles and Paradigms",
+        "author": "Allen Tucker, Robert Noonan",
+        "publisher": "McGraw-Hill",
+        "edition": "2/e, 2017"
+      },
+      {
+        "title": "Principles of programming languages.",
+        "author": "Gilles Dowek.",
+        "publisher": "Springer",
+        "edition": "1/e, 2009."
+      },
+      {
+        "title": "Principles of Programming Languages",
+        "author": "Rajiv Chopra",
+        "publisher": "Wiley",
+        "edition": "1/e, 2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/102/106102067/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:09:02.824Z"
+}

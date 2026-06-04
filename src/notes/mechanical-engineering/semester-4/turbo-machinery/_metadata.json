@@ -1,0 +1,154 @@
+{
+  "subject": "TURBO MACHINERY",
+  "branch": "Mechanical Engineering",
+  "semester": 4,
+  "details": {
+    "name": "TURBO MACHINERY",
+    "courseCode": "PEMET411",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Fluid Mechanics and \nMachinery PCMET303",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction: Definition of turbo machine",
+          "Classification: Axial flow, radial flow and mixed flow machines, parts of turbo machines, Comparison with positive displacement machines.",
+          "Thermodynamics of fluid flow: Application of first and second law of thermodynamics to turbo machines.",
+          "Preheat factor in compressors, work and efficiency for compressors and turbines.",
+          "Energy exchange in Turbo machines: Euler’s equation",
+          "Alternate form of Euler’s equation",
+          "components of energy transfer."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "General Analysis of Turbo machines:",
+          "Radial flow compressors – general analysis, degree of reaction, velocity triangles, Effect of blade discharge angle on energy transfer and degree of reaction, Effect of blade discharge angle on performance.",
+          "Axial flow compressors- degree of reaction, velocity triangles."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Hydraulic Turbines: Classification",
+          "Pelton Wheel – Principle of working, velocity triangles, efficiencies and losses.",
+          "Reaction turbines – Francis turbine: Principle of working, velocity triangles, efficiencies and losses, draft tube, governing, cavitation.",
+          "Kaplan and Propeller turbines - Principle of working, velocity triangles, efficiencies and losses.",
+          "Selection turbines for power plants"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Centrifugal Pumps: Classification and parts of centrifugal pump, different heads and efficiencies of centrifugal pump, Theoretical head – capacity relationship, Minimum speed for starting the flow, Maximum suction lift, Net positive suction head, Cavitation, Need for priming, Pumps in series and parallel.",
+          "Fans, Blowers and Compressors: Classification and working principles of fans, blowers and compressors.",
+          "Centrifugal Compressors: Stage velocity triangles, slip factor, power input factor, Stage work, Pressure developed, stage efficiency and surging and problems."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Use the fundamental principles of fluid mechanics and thermodynamics and find the efficiencies of power generating and power consuming turbomachines.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Analyse the velocity triangles for radial flow and axial flow turbomachines and find the performance for parametrical changes.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Select an appropriate power generating turbomachine for a particular application",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Select an appropriate power consuming turbomachine for a particular application",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Fluid Mechanics and Thermodynamics of Turbomachinery",
+        "author": "Dixon, S.I,",
+        "publisher": "Pergamom Press",
+        "edition": "1999"
+      },
+      {
+        "title": "Fundamentals of Turbo Machinery",
+        "author": "B.K Venkanna",
+        "publisher": "PHI Learning Pvt. Ltd",
+        "edition": "1st Edition 2009"
+      },
+      {
+        "title": "Turbines, Compressor and Fans",
+        "author": "Yahya, S.H,",
+        "publisher": "Tata Mc Graw Hill,",
+        "edition": "1996"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Turbomachinery – Fundamentals, Selection and Preliminary Design",
+        "author": "Marco Gambini, Michela Vellini",
+        "publisher": "Springer",
+        "edition": "1st Edition, 2021"
+      },
+      {
+        "title": "Fundamentals of Turbomachines",
+        "author": "Erik Dick",
+        "publisher": "Springer",
+        "edition": "2nd Edition 2022"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://www.youtube.com/watch?v=ocVzrn\n4DLj8 (types and classification)\nhttps://youtu.be/DlkmkeENGwg (Euler’s equation and fundamentals)",
+      "module2": "https://youtu.be/DlkmkeENGwg (Radial and Axial Flow, Velocity triangles)",
+      "module3": "https://youtu.be/hJA7jPice\nTg (Pelton Wheel)\nhttps://youtu.be/utOHXJvq\nI9o \nhttps://youtu.be/MtueN0By\nKIs (Francis Turbine)\nhttps://youtu.be/b7kTKdEISHc (Kaplan Turbine)",
+      "module4": "https://youtu.be/VQqiVVYuNks https://youtu.be/_-yk5GwFnKM (Centrifugal Pumps)"
+    },
+    "semester": "4",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:57:11.882Z"
+}

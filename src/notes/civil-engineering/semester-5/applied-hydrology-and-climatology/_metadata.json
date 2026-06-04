@@ -1,0 +1,180 @@
+{
+  "subject": "APPLIED HYDROLOGY AND CLIMATOLOGY",
+  "branch": "Civil Engineering",
+  "semester": 5,
+  "details": {
+    "name": "APPLIED HYDROLOGY AND CLIMATOLOGY",
+    "courseCode": "PECET526",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction - weather and climate",
+          "hydrometeorology- variables affecting precipitation- humidity",
+          "vapor pressure",
+          "saturation vapor pressure–temperature relation (simple problems)",
+          "perceptible water",
+          "forms and types of precipitation",
+          "cloud - types",
+          "Monsoon- characteristics of Indian summer monsoon rainfall- climate oscillations and Indian monsoon rainfall",
+          "Evapotranspiration - methods of estimation-Blaney Criddle method (problem)- penman method",
+          "Penmann-Montieth method"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Causes and effects of climate change",
+          "modeling of hydrologic impact of climate change on water resources-typical framework",
+          "general circulation models and regional climate models",
+          "Downscaling-concept and types",
+          "Catchment characteristics",
+          "classification of streams - stream pattern and stream order"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Statistical methods in hydro-climatology: principal component analysis and its use in climate change studies",
+          "methods for change point analysis",
+          "methods for trend analysis-statistical and graphical methods",
+          "stationary and non-stationary series- determination of non-stationarity of hydro-climatic series (no problems)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Design flood and their Estimation - Different methods",
+          "Flood frequency studies -Gumbel’s method",
+          "Flood Routing-Hydrologic and Hydraulic routing",
+          "Flood routing through reservoirs – concept only",
+          "Flood routing through channels - Muskingum method, determination of Muskingum parameters",
+          "Flood control methods - Flood forecasting and warning (Brief descriptions only)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Estimate the different components of hydrologic cycle by processing hydro-meteorological data",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe the characteristics of hydrological extremes and climate change",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply statistical methods in modelling of hydro climatic extremes",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Describe the procedure of flood routing by considering the impact of climate change",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Engineering Hydrology –IV th edition",
+        "author": "Subramanya K.",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2013."
+      },
+      {
+        "title": "Hydrology: Principles, Analysis and Design- 3rd edition",
+        "author": "Raghunath H.M.",
+        "publisher": "New Age International New Delhi",
+        "edition": "2006"
+      },
+      {
+        "title": "Statistical Methods in Hydrology and Hydro climatology",
+        "author": "Rajib Maity",
+        "publisher": "Springer",
+        "edition": "2018"
+      },
+      {
+        "title": "A Text Book of Stochastic Hydrology",
+        "author": "Jayarami Reddy",
+        "publisher": "Laxmi Publications, New Delhi",
+        "edition": "2016"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Hand book of Applied Hydrology",
+        "author": "Ven Te Chow.",
+        "publisher": "Tata McGraw Hill",
+        "edition": "1988"
+      },
+      {
+        "title": "Irrigation and Water Resources Engineering",
+        "author": "G.L.Asawa",
+        "publisher": "New Age International New Delhi",
+        "edition": "2008"
+      },
+      {
+        "title": "Hydrology and Water Resources Engineering",
+        "author": "Garg S. K.",
+        "publisher": "Khanna Publishers New Delhi",
+        "edition": "2005"
+      },
+      {
+        "title": "Hydro climatology: Perspectives and Applications",
+        "author": "M. L. Shelton",
+        "publisher": "Cambridge University Press",
+        "edition": "2009"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/105/104/105104029/",
+      "module2": "https://archive.nptel.ac.in/courses/105/101/105101002/",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:47:20.136Z"
+}

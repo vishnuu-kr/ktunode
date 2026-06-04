@@ -1,0 +1,177 @@
+{
+  "subject": "FORMWORK ENGINEERING",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "FORMWORK ENGINEERING",
+    "courseCode": "PECET742",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Formwork Engineering",
+          "Definition and importance of formwork",
+          "Historical development of formwork systems",
+          "Formwork Materials : Timber, steel, aluminum, and plastic formwork",
+          "Properties and selection criteria",
+          "Advantages and disadvantages of different materials",
+          "Modern Formwork Systems",
+          "Modular, prefabricated, and reusable formwork",
+          "Advancements in formwork materials and technology",
+          "Environmental Considerations",
+          "Sustainable formwork practices",
+          "Reducing waste and recycling materials",
+          "Environmental impact assessment"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Basic Principles of Formwork Design",
+          "Load considerations and calculations",
+          "Structural analysis of formwork systems",
+          "Formwork for Different Concrete Structures",
+          "Foundations, walls, columns, beams, and slabs",
+          "Special considerations for high-rise buildings and bridges",
+          "Formwork for architectural concrete",
+          "Assembling and Dismantling Formwork",
+          "Erection and alignment",
+          "Shoring and reshoring practices"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Formwork Safety",
+          "Safety regulations and standards",
+          "Common hazards and risk management",
+          "Inspection and maintenance of formwork systems",
+          "Formwork Quality Control",
+          "Ensuring accuracy and quality in construction",
+          "Testing and inspection methods",
+          "Quality assurance protocols",
+          "Case Studies and Practical Applications",
+          "Analysis of real-world formwork projects",
+          "Lessons learned from successful and failed systems",
+          "Guest lectures from industry professionals"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Project Planning and Management",
+          "Estimating formwork costs and labor",
+          "Scheduling and sequencing operations",
+          "Project management tools and techniques",
+          "Formwork in Special Conditions",
+          "Extreme weather conditions",
+          "Underwater formwork",
+          "Unusual shapes and complex geometries",
+          "Formwork for Repair and Rehabilitation",
+          "Techniques for concrete repair works",
+          "Strengthening and retrofitting existing structures",
+          "Case studies of rehabilitation projects"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify appropriate materials for the form work construction",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply the principles of structural analysis and design in formwork design",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Demonstrate the safety and quality control requirements in formwork",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Organize from work construction considering the planning concepts",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Formwork for Concrete",
+        "author": "M.K. Hurd",
+        "publisher": "American concrete inst",
+        "edition": "1979"
+      },
+      {
+        "title": "Concrete Formwork Systems",
+        "author": "Awad S. Hanna",
+        "publisher": "CRC Press",
+        "edition": "2019"
+      },
+      {
+        "title": "Formwork for Concrete Structures",
+        "author": "Garold D. Oberlender and Robert L. Peurifoy",
+        "publisher": "McGraw Hill",
+        "edition": "4th edition 2010"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Formwork A Practical Guide",
+        "author": "Geoffrey Lee, Peter McAdam",
+        "publisher": "CRC Press",
+        "edition": "2014"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/105/104/105104030/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:59:24.945Z"
+}

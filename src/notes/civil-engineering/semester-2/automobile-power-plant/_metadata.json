@@ -1,0 +1,201 @@
+{
+  "subject": "AUTOMOBILE POWER PLANT",
+  "branch": "Civil Engineering",
+  "semester": 2,
+  "details": {
+    "name": "AUTOMOBILE POWER PLANT",
+    "courseCode": "PCAUT205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "ENGINES:",
+          "Basic engine nomenclature",
+          "Classification & Applications of IC Engines.",
+          "Constructional details of engine components: Cylinders – types",
+          "Cylinder liners",
+          "Engine block",
+          "Cylinder head",
+          "Gasket",
+          "Piston",
+          "Piston rings",
+          "Piston pins",
+          "Connecting rod",
+          "Crank shaft",
+          "Flywheel",
+          "Cam shaft",
+          "Valve and valve mechanism systems - OHV, OHC, DOHC.",
+          "Valve Timing Diagram & Port timing diagrams",
+          "Inlet and Exhaust manifold."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "FUEL SUPPLY SYSTEM:",
+          "Air fuel mixture requirements and types",
+          "Octane & Cetane Rating.",
+          "Types of fuel feed systems",
+          "fuel tank",
+          "fuel pumps and fuel filters",
+          "air filter types.",
+          "Carburetion",
+          "simple carburetor",
+          "Fuel injection system - GDi, MPFi.",
+          "Fuel supply system in diesel engines: components of diesel fuel system",
+          "feed pump",
+          "injection pump",
+          "injection nozzles and types",
+          "Governors.",
+          "Electronic Unit Injectors",
+          "CRDi system"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "IGNITION & EMISSION SYSTEM:",
+          "Ignition system in IC engines: Ignition System Overview Battery ignition system",
+          "magneto ignition system",
+          "distributor less ignition –CDI & Coil on plug type of ignition system",
+          "Pollutants in IC Engines.",
+          "NOx",
+          "CO",
+          "unburned hydrocarbons",
+          "smoke and particulate.",
+          "Non exhaust emissions and control methods",
+          "Exhaust gas treatment. - Catalytic converter – Thermal reactor - Particulate trap",
+          "Exhaust Gas Recirculation (EGR) Systems.",
+          "Exhaust mufflers",
+          "Types of mufflers."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "COOLING & LUBRICATION SYSTEM",
+          "Need for cooling",
+          "types- air cooling system and liquid cooling systems- components- radiator",
+          "water pump and cooling fan.",
+          "Properties of coolants and additives.",
+          "Requirements of lubrication systems.",
+          "Types of Lubrication system.",
+          "SAE Ratings Multi grade lubricants",
+          "Pre-lubrication systems.",
+          "Supercharging and Turbocharging in I C Engines."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.   Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.  (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand constructional details and working of various internal  combustion engine",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Discuss the fuel system & air induction system for IC engines",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the Ignition system & emission in IC engines",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the Cooling and lubrication system for IC engines",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Internal Combustion Engines",
+        "author": "Ganesan. V",
+        "publisher": "Tata McGraw-Hill Publishing Co",
+        "edition": "4th Edition 2017"
+      },
+      {
+        "title": "Internal Combustion Engines",
+        "author": "Ramalingam  K.K",
+        "publisher": "Sci-Tech Publications",
+        "edition": "3rd Edition 2018"
+      },
+      {
+        "title": "Internal Combustion Engines",
+        "author": "R.K. Rajput",
+        "publisher": "Laxmi Publications.",
+        "edition": "2nd Edition 2016"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "A course in internal combustion engines",
+        "author": "Mathur. M.L., Sharma. R.P",
+        "publisher": "Dhanpatrai publication",
+        "edition": "2016"
+      },
+      {
+        "title": "Internal Combustion Engines Fundamentals",
+        "author": "John Heywood",
+        "publisher": "McGraw Hill International Edition",
+        "edition": "2nd Edition 2018"
+      },
+      {
+        "title": "Fuels & Combustion",
+        "author": "Smith, Marion L. And Karl W.  Stinson",
+        "publisher": "McGraw-Hill",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/112/103/112103262/#",
+      "module2": "",
+      "module3": "",
+      "module4": "https://archive.nptel.ac.in/courses/107/106/107106088"
+    },
+    "semester": "2",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:31:48.176Z"
+}

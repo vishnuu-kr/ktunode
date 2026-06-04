@@ -1,0 +1,184 @@
+{
+  "subject": "FINITE ELEMENT METHODS",
+  "branch": "Mechanical Engineering",
+  "semester": 7,
+  "details": {
+    "name": "FINITE ELEMENT METHODS",
+    "courseCode": "OEMET723",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction FEM",
+          "Mathematical Modelling of field problems in Engineering",
+          "Governing Equations – Discrete and continuous models",
+          "discretization-convergence behavior",
+          "General procedure of Finite Element analysis",
+          "Types of elements",
+          "Formulation of stiffness matrix- one dimensional spring",
+          "bar element assembly and solution procedure."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Types of coordinate system in FEM",
+          "coordinate transformation Plane truss stiffness formulation and its assembly",
+          "Shape functions",
+          "Derivation of shape functions using polynomial of One-Dimensional bar",
+          "2-Dimensional CST",
+          "Convergence requirement of shape functions",
+          "Pascal triangle"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Derivation of strain -displacement relation- B matrix- bar",
+          "CST and beam element",
+          "Potential energy and equilibrium",
+          "principle of minimum potential energy",
+          "Variational formulation in FEM",
+          "Element stiffness-bar,and CST element",
+          "consistent loads"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Strong and Weak form",
+          "Galerkin’s weighted residual FEM formulation",
+          "One dimensional axially loaded bar",
+          "heat flow in a bar",
+          "natural coordinate system",
+          "Iso parametric elements",
+          "Quadrilateral elements- Serendipity elements Isoparametric formulations",
+          "Jacobian matrix",
+          "stiffness matrices"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To understand the governing equations of various physical phenomena and basic procedure of FEM.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "To apply the coordinate transformation and formulation of shape functions of various element.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Formulate shape functions and element strain displacement matrix of various element",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Evaluate element stress using energy method and study Galekin weight residual formulations",
+        "knowledgeLevel": "K5"
+      },
+      {
+        "CO": "CO5",
+        "description": "Study the concept of iso parametric elements and analyze iso parametric formulations",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "An introduction to Finite Element Method",
+        "author": "J N Reddy",
+        "publisher": "McGrawHillEducation",
+        "edition": "ThirdEdition,2009"
+      },
+      {
+        "title": "Concept and application of Finite Element method",
+        "author": "Robert D Cook",
+        "publisher": "Wiley",
+        "edition": "ThirdEdition,2008"
+      },
+      {
+        "title": "Finite Element Analysis,",
+        "author": "S SBhavikatti,",
+        "publisher": "New Age Publisher",
+        "edition": "Third edition,2008"
+      },
+      {
+        "title": "A First Course in Finite Elements",
+        "author": "Jacob Fish Rensselaer ,Ted Belytschko",
+        "publisher": "John Wiley & Sons, Ltd",
+        "edition": "Second edition,2007"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Applied Finite Element Analysis",
+        "author": "Larry J Segerlind",
+        "publisher": "Johny Wiley and sons",
+        "edition": "Second  Edition,2010"
+      },
+      {
+        "title": "Applied Finite element Analysis",
+        "author": "G Ramamurthi",
+        "publisher": "I K International Publishing House Pvt. Ltd",
+        "edition": "Second Edition"
+      },
+      {
+        "title": "Fundamentals of Finite Element Methods",
+        "author": "David V Hutton",
+        "publisher": "McGrawHillEducation",
+        "edition": "ThirdEdition,2009"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/112106135",
+      "module2": "https://nptel.ac.in/courses/112106135",
+      "module3": "https://nptel.ac.in/courses/112106135",
+      "module4": "https://nptel.ac.in/courses/112106135"
+    },
+    "semester": "7",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:12:48.240Z"
+}

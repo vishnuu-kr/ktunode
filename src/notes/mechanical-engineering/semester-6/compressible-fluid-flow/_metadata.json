@@ -1,0 +1,158 @@
+{
+  "subject": "COMPRESSIBLE FLUID FLOW",
+  "branch": "Mechanical Engineering",
+  "semester": 6,
+  "details": {
+    "name": "COMPRESSIBLE FLUID FLOW",
+    "courseCode": "PEMET632",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCMET303",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Fundamentals of compressible flow: Various regimes of flow, Reynolds transport theorem-Governing equations for compressible flows.",
+          "Mach number, Mach waves, Mach cone and Mach angle, Sonic boom.",
+          "Concept of stagnation state, stagnation properties.",
+          "Adiabatic energy equation, various regions of flow, adiabatic ellipse",
+          "One Dimensional isentropic flow: adiabatic and isentropic flow of a perfect gas, isentropic flow in ducts of varying cross-sections, nozzles, mass flow rate, critical properties, chocking, impulse function, operation of nozzle under varying pressure ratios–Use of gas tables."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Flow in constant area duct with friction : Assumptions, Governing equations, Fanno curve on h-s and P-v diagram, Fanno flow relations for a perfect gas, variation of Mach number with duct length, choking due to friction, Use of gas tables for Fanno flow.",
+          "Isothermal flow (elementary idea only)"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Flow through constant area duct with heat transfer (Rayleigh Flow): Assumptions, Governing equations, Rayleigh line on h-s and P-v diagram, Rayleigh relation for perfect gas, maximum possible heat addition, location of maximum enthalpy and entropy points, thermal chocking, Use of gas tables for Rayleigh flow."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Irreversible discontinuity in supersonic flow: Development of shock wave, types of shock waves, governing equations, strength of shock waves, normal Shock on T-S diagram, Prandtl-Mayer relation, Rankine-Huguenot relation, Mach number downstream of normal shock, variation of flow parameters across the normal shock, normal shock in Fanno and Rayleigh flows, Use of gas tables for normal shocks.",
+          "Oblique shock waves - supersonic flow over compression and expansion corners (elementary idea only).",
+          "Wind tunnel types, measurement of velocity, pressure, and temperature."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": " 2 Questions from each module.  \n Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": " Each question carries 9 marks.  \n Two questions will be given from each module, out of which 1 question should be answered.  \n Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the basic concepts of compressible fluid mechanics and",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Analyze problems in one dimensional isentropic compressible flow.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyze problems of flow in constant area duct with friction.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyze problems of flow in constant area duct with heat transfer.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO5",
+        "description": "Determine the variation in flow properties across normal and oblique shock waves.",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "The Dynamics and Thermodynamics of Compressible Fluid Flow. Vol I",
+        "author": "Shapiro A.H",
+        "publisher": "John Wiley & Sons",
+        "edition": "1977"
+      },
+      {
+        "title": "Fundamental of Compressible flow",
+        "author": "S. M. Yahya",
+        "publisher": "New age international Publication",
+        "edition": "7th edition,2023"
+      },
+      {
+        "title": "Gas Dynamics",
+        "author": "E. Rathakrishnan",
+        "publisher": "PHI Learning Pvt. Ltd.",
+        "edition": "7th edition,2021"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Modern Compressible Flow: With Historical Perspective.",
+        "author": "John D. Anderson",
+        "publisher": "McGraw-Hill, Inc",
+        "edition": "4th edition,2021"
+      },
+      {
+        "title": "Fundamentals of compressible fluid dynamics",
+        "author": "P. Balachandran",
+        "publisher": "PHI Learning Pvt. Ltd.",
+        "edition": "2006"
+      },
+      {
+        "title": "Elements of Gas Dynamics",
+        "author": "Liepmann and Roshako",
+        "publisher": "Dover Publications Inc.",
+        "edition": "2002"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://youtu.be/BYqZPwQPU_4\nhttps://youtu.be/TYqxQS6ZPC4",
+      "module2": "https://youtu.be/C2JIBOmEZ4k\nhttps://youtu.be/7EKaOXZrEq4",
+      "module3": "https://youtu.be/3npd-kOS2FQ",
+      "module4": "https://youtu.be/Jrdm7Pwssto\nhttps://youtu.be/Llc1_XWPyIQ"
+    },
+    "semester": "6",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:03:31.852Z"
+}

@@ -1,0 +1,245 @@
+{
+  "subject": "BASIC ELECTRICAL & ELECTRONICS ENGINEERING",
+  "branch": "Civil Engineering",
+  "semester": 2,
+  "details": {
+    "name": "BASIC ELECTRICAL & ELECTRONICS ENGINEERING",
+    "courseCode": "GZEST204",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 4,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Generation of alternating voltages : - Faradays laws of Electromagnetic induction",
+          "Generation of Alternating Voltage",
+          "Elementary Generator",
+          "Representation of ac voltage and currents",
+          "sinusoidal waveforms: frequency, period average, RMS values and form factor of waveform; (Simple numerical problems)",
+          "DC Circuits : Resistance in Series and Parallel",
+          "Ohms Law and Kirchhoff’s laws",
+          "Voltage and current divider rule (Simple numerical problems)",
+          "AC circuits : Purely resistive, inductive and capacitive circuits",
+          "Inductive and capacitive reactance, concept of impedance. (Simple numerical problems)",
+          "Three phase AC systems : Representation of three phase voltages",
+          "star and  delta connections (balanced only), relation between line and phase voltages, line and phase currents",
+          "Power in AC circuits – Power factor",
+          "active, reactive and apparent power in single phase and three phase system. (Simple numerical problems)"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Generation of electrical energy: Conventional Sources: Hydro, thermal, nuclear plants (Block diagram description)",
+          "Introduction to non-conventional energy sources : solar, wind, small hydro plants, PV system for domestic application",
+          "Transformers. Principle of operation, step-up and step-down transformers",
+          "AC power supply scheme: Single phase and three phase system, Three phase 3 wire and 4 wire systems",
+          "Transmission System",
+          "Distribution system: Feeder, distributor, service mains Types of Motors – Principle of Operation: Block diagram showing power stages, losses and efficiency (electrical and mechanical and overall efficiency); Simple numerical efficiency",
+          "Introduction to different types of DC and AC motors.",
+          "Classification and different type of dc and ac motors, common applications: Principle of traction and applications",
+          "Earthing: need for earthing, Types of earthing; pipe earthing, plate\nearthing; Principle of operation of MCB, ELCB/RCCB"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Introduction to Semiconductor devices:",
+          "Electronic components- Passive and active components - Resistors, Capacitors and Inductors (constructional features not required): types, specifications. Standard values, colour coding",
+          "PN Junction diode: - Principle of operation, V-I characteristics",
+          "Bipolar Junction Transistors: PNP and NPN structures, Principle of operation",
+          "Digital Electronics: -Binary number system, Boolean algebra and Logic Gates, Universal gates",
+          "Basic electronic circuits: - Rectifiers and power supplies: Block diagram description of a dc power supply, working of a full wave bridge rectifier, capacitor filter (no analysis), working of simple zener voltage regulator",
+          "Amplifiers: - Transistor as an amplifier, Block diagram of Public\nAddress system"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Electronic Instrumentation:",
+          "Quality of measurements -accuracy, precision, sensitivity and resolution, Working principle and applications of Sensors – pressure – strain gauge, Bourden gauge, temperature – RTD, thermocouple, proximity – capacitive sensor, ultrasonic sensor and accelerometer",
+          "Internet of things (IoT): Introduction, architecture of IoT, Implementation of  smart city – street lighting, smart parking"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  \nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.  \nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply fundamental concepts and circuit laws to solve simple DC/AC electric circuits",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Develop an awareness on the fundamentals of electric power generation, transmission and distribution",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Compare different types of DC and AC motors",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Describe the fundamental concepts of electronic components and devices",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Outline the basic principles of an electronic instrumentation system",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO6",
+        "description": "Identify important applications of modern electronics in the contemporary world",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Basic Electrical Engineering",
+        "author": "D P Kothari and I J  \nNagrath",
+        "publisher": "Tata McGraw Hill",
+        "edition": "4/e 2019"
+      },
+      {
+        "title": "Schaum's Outline of Basic \nElectrical Engineering",
+        "author": "J.J.Cathey and Syed A \nNasar",
+        "publisher": "Tata McGraw Hill",
+        "edition": ""
+      },
+      {
+        "title": "Basic Electronics: Principles and  \nApplications",
+        "author": "Chinmoy Saha,  Arindham  \nHalder and Debarati Ganguly",
+        "publisher": "Cambridge University \nPress",
+        "edition": "1/e 2018"
+      },
+      {
+        "title": "Basic Electrical and Electronics Engineering",
+        "author": "D. P. Kothari and I. J.  \nNagrath",
+        "publisher": "McGraw Hill",
+        "edition": "2/e 2020"
+      },
+      {
+        "title": "The Internet of Things: How \nSmart TVs, Smart Cars, Smart \nHomes, and Smart Cities Are  \nChanging the World",
+        "author": "Michael Miller",
+        "publisher": "QUE",
+        "edition": "1/e 2015"
+      },
+      {
+        "title": "Basic Electronics and Linear Circuits",
+        "author": "N N Bhargava D C Kulshreshtha and S. C.  \nGupta",
+        "publisher": "McGraw Hill",
+        "edition": "2/e 2017"
+      },
+      {
+        "title": "Electronic Communication Systems",
+        "author": "Kennedy and Davis",
+        "publisher": "McGraw Hill",
+        "edition": "6/e 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Basic Electrical Engineering",
+        "author": "D C Kulshreshtha",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2/e 2019"
+      },
+      {
+        "title": "Electrical Engineering Fundamentals",
+        "author": "Del Toro V",
+        "publisher": "Pearson Education",
+        "edition": "2/e 2019"
+      },
+      {
+        "title": "Basic Electrical Engineering",
+        "author": "T. K. Nagsarkar, M. S. Sukhija",
+        "publisher": "Oxford Higher Education",
+        "edition": "3/e 2017"
+      },
+      {
+        "title": "Electronics: A Systems Approach",
+        "author": "Neil Storey",
+        "publisher": "Pearson",
+        "edition": "6e 2017"
+      },
+      {
+        "title": "Electronic Devices and Circuit Theory",
+        "author": "Robert L. Boylestad\nLouis Nashelsky",
+        "publisher": "Pearson",
+        "edition": "11e 2015"
+      },
+      {
+        "title": "Principles of Electronic Communication Systems",
+        "author": "Frenzel, L. E",
+        "publisher": "McGraw Hill",
+        "edition": "4e 2016"
+      },
+      {
+        "title": "Internet of Things: Architecture and Design Principles",
+        "author": "Raj Kamal",
+        "publisher": "McGraw Hill",
+        "edition": "1/e 2017"
+      },
+      {
+        "title": "Electronic Communication",
+        "author": "Dennis Roddy and John Coolen",
+        "publisher": "McGraw Hill",
+        "edition": "4/e 2008"
+      },
+      {
+        "title": "Basic Electrical Engineering",
+        "author": "D C Kulshreshtha",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2/e 2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "2",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:32:30.072Z"
+}

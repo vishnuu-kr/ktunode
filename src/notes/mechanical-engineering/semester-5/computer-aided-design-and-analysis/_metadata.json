@@ -1,0 +1,215 @@
+{
+  "subject": "COMPUTER AIDED DESIGN AND ANALYSIS",
+  "branch": "Mechanical Engineering",
+  "semester": 5,
+  "details": {
+    "name": "COMPUTER AIDED DESIGN AND ANALYSIS",
+    "courseCode": "PEMET523",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to CAD",
+          "historical developments",
+          "industrial look at CAD",
+          "comparison of CAD with traditional designing",
+          "application of computers in design",
+          "basics of geometric and solid modeling",
+          "packages for CAD/CAM/CAE/CAPP",
+          "hardware in CAD components",
+          "user interaction devices",
+          "design database",
+          "graphic standards",
+          "data exchange formats",
+          "raster scan",
+          "random scan",
+          "various display systems",
+          "CAD software",
+          "latest developments in the area",
+          "PDM",
+          "PLM and CAD"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Transformation of points and lines",
+          "2-D rotation",
+          "reflection",
+          "scaling",
+          "combined transformation",
+          "homogeneous coordinates",
+          "shearing",
+          "orthographic and perspective projections",
+          "simple problems",
+          "line drawing algorithms",
+          "DDA algorithm",
+          "Bresenham’s line algorithm",
+          "circle drawing algorithms",
+          "Bresenham's circle algorithm",
+          "curve drawing algorithms"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "3D graphics",
+          "algebraic and geometric forms",
+          "tangents and normals",
+          "blending functions",
+          "straight lines",
+          "conics",
+          "cubic splines",
+          "Bezier curves",
+          "B-spline curves",
+          "solid models and representation scheme",
+          "boundary representation",
+          "constructive solid geometry",
+          "sweep representation",
+          "cell decomposition",
+          "spatial occupancy enumeration",
+          "coordinate systems for solid modelling"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to finite element analysis",
+          "steps involved in FEM",
+          "pre-processing phase",
+          "discretization",
+          "types of elements",
+          "stiffness matrix",
+          "Fundamentals of Finite volume methods",
+          "different types of finite volume grids",
+          "approximation of surface and volume integrals",
+          "interpolation methods",
+          "Review of governing equations"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the historical developments and industrial applications of CAD, including key components and latest software developments.",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply 2D transformation techniques, including rotation, reflection, scaling, and line and curve drawing algorithms in CAD software.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply 3D graphics and solid modeling techniques, such as Bezier and B-spline curves, and their application in creating complex geometric forms.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand finite element analysis (FEA) and finite volume methods (FVM) including discretization, formulation, and boundary condition implementation for simple structural and fluid flow problems.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "CAD/CAM Computer Aided Design and Manufacturing",
+        "author": "M.P. Groover, E.M. Zimmers, Jr.",
+        "publisher": "Prentice Hall of India",
+        "edition": "2014"
+      },
+      {
+        "title": "CAD/CAM : Theory and Practice",
+        "author": "Ibrahim Zeid, R Sivasubramanian",
+        "publisher": "McGraw Hill Education",
+        "edition": "2nd, 2009"
+      },
+      {
+        "title": "Product Design and Development",
+        "author": "Karl T. Ulrich, Steven D. Eppinger",
+        "publisher": "McGraw Hill Education",
+        "edition": "7th 2020"
+      },
+      {
+        "title": "Introduction to Finite Elements in Engineering,",
+        "author": "T. R. Chandrupatla and A. D. Belagundu",
+        "publisher": "Pearson Education",
+        "edition": "2001"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "CAD/CAM – Principle Practice and Manufacturing Management,",
+        "author": "Chris Mcmahon and Jimmie Browne",
+        "publisher": "Addision Wesley England,",
+        "edition": "1998"
+      },
+      {
+        "title": "Mathematical Elements in Computer Graphics,",
+        "author": "D. F. Rogers and J. A. Adams",
+        "publisher": "McGraw-Hill",
+        "edition": "1990"
+      },
+      {
+        "title": "A First course in Finite Element Method",
+        "author": "Daryl Logan",
+        "publisher": "Thomson Learning",
+        "edition": "2007"
+      },
+      {
+        "title": "Computer Graphics with open GL,",
+        "author": "Donald Hearn, M. Pauline Baker and Warren Carithers",
+        "publisher": "Pearson Education",
+        "edition": "2001"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/112/102/112102101/",
+      "module2": "https://archive.nptel.ac.in/courses/112/102/112102101/",
+      "module3": "https://archive.nptel.ac.in/courses/112/102/112102101/",
+      "module4": "https://archive.nptel.ac.in/courses/112/102/112102101/\nhttps://archive.nptel.ac.in/courses/101/104/101104074/"
+    },
+    "semester": "5",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:58:26.155Z"
+}

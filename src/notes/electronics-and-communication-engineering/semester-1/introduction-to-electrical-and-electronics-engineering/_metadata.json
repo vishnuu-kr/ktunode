@@ -1,0 +1,237 @@
+{
+  "subject": "INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 1,
+  "details": {
+    "name": "INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING",
+    "courseCode": "GXEST104",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min",
+    "prerequisites": "None",
+    "courseType": "Group Core-Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 4,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Elementary concepts of DC electric circuits:",
+          "Current and Voltage Division Rule - Relative potential Capacitors & Inductors: V-I relations and Energy stored. Ohms Law and Kirchhoff's laws - numerical problems.",
+          "Star-delta conversion (resistive networks only - derivation not required) - numerical problems.",
+          "Analysis of DC Electric circuits: Mesh current method – matrix representation - Solution of network equations.",
+          "Node voltage methods-matrix representation-solution of network equations by matrix methods - numerical problems.",
+          "Elementary Concepts of Magnetic circuits:",
+          "Magnetic Circuits: Basic Terminology: MMF, field strength, flux density, reluctance - Comparison between electric and magnetic circuits  - Series and parallel magnetic circuits with composite materials ( numerical problems not needed )"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Electromagnetic Induction :",
+          "Faraday's laws, Lenz's law- statically induced and dynamically induced emf – Self-inductance and mutual inductance, coefficient of coupling (numerical problems not needed)",
+          "Alternating Current fundamentals:",
+          "Generation of alternating voltages - Representation of sinusoidal waveforms: frequency, period, average value, RMS value and form factor - numerical problems",
+          "AC Circuits: Phasor representation of sinusoidal quantities, Trigonometric, Rectangular, Polar and complex forms.",
+          "Analysis of simple AC circuits: Purely resistive, inductive & capacitive circuits; Inductive and capacitive reactance, concept of impedance - numerical problems.",
+          "RL, RC and RLC series circuits- power factor, active, reactive and apparent power. Simple numerical problems.",
+          "Three phase AC systems: Generation of three phase voltages, advantages of three phase systems, star and delta connections (balanced only), relation between line and phase voltages, line and phase currents- numerical problems"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Introduction to Electronic devices:",
+          "Passive and active components in electronics",
+          "Working of PN junction diode, V-I characteristics of PN Junction diode",
+          "Zener diode and avalanche breakdown. Basics of Zener voltage regulator",
+          "Block diagram of DC power supply, circuit and working of half wave, full wave and bridge rectifiers, ripple factor (with and without capacitor filters)",
+          "Construction, working and V-I Characteristics of BJT, Input output characteristics of CE configuration, Comparison of CE, CB and CC configurations",
+          "Concept of biasing and load line Transistor as a switch, Transistor as an amplifier (Circuit Diagram and working)",
+          "RC coupled amplifier - Circuit diagram and frequency response",
+          "Introduction to FET, Construction and working of N-channel and P-Channel MOSFETs"
+        ],
+        "contactHours": 13,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Modern Electronics and its applications:",
+          "General block diagram of a Communication system, Block diagram of Fiber optic Communication system",
+          "Concept of AM and FM (No derivation required), Block diagram of AM and FM super-heterodyne receiver",
+          "Basic concepts of Wired and Wireless communication, Block diagram of GSM",
+          "Comparison of 3G, 4G, 5G and 6G communication technologies Block diagrams of Electronic instrumentation system, Digital Multimeter, Function generator",
+          "Introduction to CRO and Lissajous patterns",
+          "Applications of modern electronics – IoT based smart homes, healthcare and agriculture (Case study only)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply fundamental concepts and circuit laws to solve simple DC/AC electric circuits",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Classify series and parallel magnetic circuits",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand three phase AC systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Describe the fundamental concepts of electronic components and devices",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Outline the principles of communication systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO6",
+        "description": "Identify various applications of modern electronics in the contemporary world",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Basic Electrical Engineering",
+        "author": "D P Kothari and I J Nagrath",
+        "publisher": "Tata McGraw Hill",
+        "edition": "4/e 2019"
+      },
+      {
+        "title": "Schaum's Outline of Basic Electrical Engineering",
+        "author": "J.J.Cathey and Syed A Nasar",
+        "publisher": "Tata McGraw Hill",
+        "edition": "3/e 2010"
+      },
+      {
+        "title": "Basic Electronics: Principles and Applications",
+        "author": "Chinmoy Saha, Arindham Halder and Debarati Ganguly",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e 2018"
+      },
+      {
+        "title": "Basic Electrical and Electronics Engineering",
+        "author": "D. P. Kothari and I. J. Nagrath",
+        "publisher": "McGraw Hill",
+        "edition": "2/e 2020"
+      },
+      {
+        "title": "The Internet of Things: How Smart TVs, Smart Cars, Smart Homes, and Smart Cities Are Changing the World",
+        "author": "Michael Miller",
+        "publisher": "QUE",
+        "edition": "1/e 2015"
+      },
+      {
+        "title": "Basic Electronics and Linear Circuits",
+        "author": "N N Bhargava D C Kulshreshtha and S. C. Gupta",
+        "publisher": "McGraw Hill",
+        "edition": "2/e 2017"
+      },
+      {
+        "title": "Electronic Communication SYstems",
+        "author": "Kennedy and Davis",
+        "publisher": "McGraw Hill",
+        "edition": "6/e 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Basic Electrical Engineering",
+        "author": "D C Kulshreshtha",
+        "publisher": "Tata McGraw Hill",
+        "edition": "2/e 2019"
+      },
+      {
+        "title": "Electrical Engineering Fundamentals",
+        "author": "Del Toro V",
+        "publisher": "Pearson Education",
+        "edition": "2/e 2019"
+      },
+      {
+        "title": "Basic Electrical Engineering",
+        "author": "T. K. Nagsarkar, M. S. Sukhija",
+        "publisher": "Oxford Higher Education",
+        "edition": "3/e 2017"
+      },
+      {
+        "title": "Electronics: A Systems Approach",
+        "author": "Neil Storey",
+        "publisher": "Pearson",
+        "edition": "6e 2017"
+      },
+      {
+        "title": "Electronic Devices and Circuit Theory",
+        "author": "Robert L. Boylestad and Louis Nashelsky",
+        "publisher": "Pearson",
+        "edition": "11e 2015"
+      },
+      {
+        "title": "Principles of Electronic Communication Systems",
+        "author": "Frenzel, L. E",
+        "publisher": "MGH",
+        "edition": "4e 2016"
+      },
+      {
+        "title": "Internet of Things: Architecture and Design Principles",
+        "author": "Raj Kamal",
+        "publisher": "McGraw Hill",
+        "edition": "1/e 2017"
+      },
+      {
+        "title": "Electronic Communication",
+        "author": "Dennis Roddy and John Coolen",
+        "publisher": "Pearson",
+        "edition": "4/e 2008"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "1",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:34:13.294Z"
+}

@@ -1,0 +1,187 @@
+{
+  "subject": "CIRCUITS & NETWORKS",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 3,
+  "details": {
+    "name": "CIRCUITS & NETWORKS",
+    "courseCode": "PCEET302",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Introduction to \nElectrical Engineering",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Mesh analysis and nodal analysis ( Review only)- super mesh and super \nnode",
+          "Superposition principle",
+          "source transformation",
+          "analysis with DC \nand AC (sinusoidal) excitation",
+          "Thevenin’s theorem",
+          "Norton’s theorem",
+          "Maximum power transfer \ntheorem",
+          "analysis with DC and AC (sinusoidal) excitation with \nindependent and dependent sources.",
+          "Reciprocity Theorem",
+          "application to the analysis of DC  Circuits."
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Resonance",
+          "series resonance– resonant frequency",
+          "variations of \nimpedance and current with frequency",
+          "bandwidth",
+          "quality factor",
+          "parallel resonance (series RL in parallel with C –calculation of resonant \nfrequency).",
+          "Power in 3-phase circuits",
+          "complex power",
+          "active, reactive and apparent \npower in balanced load",
+          "steadystate analysis of 3-wire unbalanced delta \nconnected circuit",
+          "steady state analysis of 3-phase 4-wire and 3-wire (using \nMillman’s theorem only) unbalanced star connected circuit",
+          "neutral shift"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Laplace transforms( Review only)",
+          "Transient response of simple series and parallel RL and RC circuits with",
+          "DC excitation and initial conditions",
+          "natural response and forced response",
+          "time constant",
+          "solution using Laplace transforms",
+          "transformed circuits \nin s-domain",
+          "solution using mesh analysis and nodal analysis",
+          "Transient response of series RLC circuit with DC excitation and initial \nconditions",
+          "damping",
+          "overdamped, underdamped, critically damped and \nundamped",
+          "solution using Laplace transforms",
+          "Transient response of simple series and parallel RL and RC circuits with \nsinusoidal excitation and zero initial conditions",
+          "solution using Laplace \ntransforms"
+        ],
+        "contactHours": 12,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Two port networks",
+          "Z, Y, h, T parameters",
+          "conditions for symmetry and \nreciprocity",
+          "relationship between parameters",
+          "interconnection of two port \nnetworks",
+          "series, parallel and cascade",
+          "Coupled circuit",
+          "dot convention",
+          "fixing of dots",
+          "coefficient of coupling",
+          "conductively coupled equivalent circuit",
+          "sinusoidal steady state analysis of \ncoupled circuits."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each \nmodule.  \nTotal of 8 Questions, each \ncarrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  \nTwo questions will be given from each module, out \nof which 1 question should be answered.  \nEach question can have a maximum of 3 sub \ndivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Apply circuit theorems to solve complex DC and AC electric networks",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply transformation from time domain to s-domain, solve dynamic \nelectric circuits.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Solve series and parallel resonant circuits",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyse three-phase networks in star and delta configurations under \nbalanced and unbalanced conditions.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Describe two-port networks in terms of various parameters.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO6",
+        "description": "Explain the steady-state behaviour of coupled circuits with sinusoidal \nexcitation",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Network Analysis",
+        "author": "Van Valkenburg",
+        "publisher": "Pearson",
+        "edition": "3rd 2019"
+      },
+      {
+        "title": "Network Analysis and \nSynthesis",
+        "author": "Ravish R Singh",
+        "publisher": "McGraw Hill \nEducation",
+        "edition": "2nd 2019"
+      },
+      {
+        "title": "Electric Circuits & Networks",
+        "author": "Suresh Kumar",
+        "publisher": "Pearson",
+        "edition": "Ist 2008"
+      },
+      {
+        "title": "Circuits and Networks, \nAnalysis and Synthesis",
+        "author": "A Sudhakar, \nShyammohan S Palli",
+        "publisher": "McGraw Hill \nEducation",
+        "edition": "5th 2017"
+      }
+    ],
+    "referenceBooks": [],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "3",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:11:15.354Z"
+}

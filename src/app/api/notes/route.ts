@@ -41,12 +41,12 @@ export async function GET(request: NextRequest) {
     }
 
     // Statically scope path for Turbopack NFT optimization
-    const filePath = path.join(process.cwd(), "notes", relativePath.substring(6));
+    const filePath = path.join(process.cwd(), "src", "notes", relativePath.substring(6));
     if (!fs.existsSync(filePath)) {
       let rootFiles: string[] = [];
       try { rootFiles = fs.readdirSync(process.cwd()); } catch(e) {}
       let notesFiles: string[] = [];
-      try { notesFiles = fs.readdirSync(path.join(process.cwd(), "notes")); } catch(e) {}
+      try { notesFiles = fs.readdirSync(path.join(process.cwd(), "src", "notes")); } catch(e) {}
       
       return Response.json({ 
         error: `Not found: ${filePath}. Root: [${rootFiles.join(', ')}]. Notes dir: [${notesFiles.join(', ')}]` 

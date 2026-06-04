@@ -1,0 +1,170 @@
+{
+  "subject": "RURAL WATER SUPPLY AND ONSITE SANITATION SYSTEMS",
+  "branch": "Civil Engineering",
+  "semester": 8,
+  "details": {
+    "name": "RURAL WATER SUPPLY AND ONSITE SANITATION SYSTEMS",
+    "courseCode": "PECET867",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET503",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Rural Water Supply and Sanitation",
+          "Overview of Global Water and Sanitation Challenges",
+          "Global water crisis: statistics and trends",
+          "Importance of water and sanitation in rural development",
+          "Sustainable Development Goals (SDGs) related to water and sanitation.",
+          "Principles of Rural Water Supply",
+          "Basic water supply concepts: sources, availability, and quality",
+          "Water demand estimation in rural communities",
+          "Water supply systems: gravity-fed, pumped, and rainwater harvesting"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Design and Implementation of Rural Water Supply Systems",
+          "Water Source Development",
+          "Identifying and protecting water sources: surface water, groundwater, and rainwater",
+          "Water source contamination and protection strategies.",
+          "Water Treatment and Distribution",
+          "Water treatment methods: filtration, disinfection, and safe storage",
+          "Distribution systems: pipelines, storage tanks, and standpipes",
+          "Operation and Maintenance strategies for rural water supply systems",
+          "Monitoring and evaluation of water supply services"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Introduction to On-Site Sanitation",
+          "Concepts of on-site sanitation: Importance of sanitation for public health and environment.",
+          "Design and construction of basic on-site sanitation systems: pit latrines, septic tanks, and composting toilets.",
+          "Advanced sanitation technologies: biogas digesters, eco-san toilets.",
+          "Selecting appropriate sanitation systems based on local conditions.",
+          "Waste Management and Resource Recovery",
+          "Faecal sludge management: collection, treatment, and disposal.",
+          "Resource recovery from sanitation: composting and biogas generation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Planning and Management of Rural Water Supply and Sanitation Projects",
+          "Planning water supply and sanitation projects: needs for assessment and feasibility studies.",
+          "Funding and financing options for rural water and sanitation projects.",
+          "Stakeholder engagement and community participation.",
+          "National and international policies on water and sanitation.",
+          "Regulatory frameworks and standards for rural water and sanitation.",
+          "Role of government, NGOs, and private sector in rural water and sanitation.",
+          "Sustainability and Innovation in Water and Sanitation technology in rural areas."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand global water and sanitation challenges,  importance and  principles of rural water supply systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "learn to identify, protect, and treat water sources, manage distribution systems, and oversee the operation and maintenance of rural water supply services.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "design on-site sanitation systems, select appropriate technologies, and manage waste and resource recovery processes.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "plan and assess rural water and sanitation projects, explore funding, engage stakeholders, and apply policies and innovations for sustainable implementation.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Rural water supply and sanitation",
+        "author": "Sanjay Gupta",
+        "publisher": "Vayu Education of India",
+        "edition": "First Edition 2012"
+      },
+      {
+        "title": "Rural water supply and sanitation",
+        "author": "Sharma J K",
+        "publisher": "Ardent Publications",
+        "edition": "First Edition 2012"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Wastewater Engineering, Treatment and Reuse",
+        "author": "Metcaff and Eddy",
+        "publisher": "Tata McGrawhill publications",
+        "edition": "4 th Edition 2017"
+      },
+      {
+        "title": "Sewage disposal and air pollution Engineering",
+        "author": "S K Garg",
+        "publisher": "Khanna publishers",
+        "edition": "43 rd edition"
+      },
+      {
+        "title": "Manual of water supply and treatment, 3rd edition, CPHEEO, GOI, New delhi",
+        "author": "",
+        "publisher": "",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T19:04:12.099Z"
+}

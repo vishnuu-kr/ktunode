@@ -1,0 +1,149 @@
+{
+  "subject": "BASIC ANATOMY & PHYSIOLOGY FOR BIOMEDICAL ENGINEERS",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 2,
+  "details": {
+    "name": "BASIC ANATOMY & PHYSIOLOGY FOR BIOMEDICAL ENGINEERS",
+    "courseCode": "PCEBT205",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Anatomy & Physiology: Definition & relationship of structural & functional organization of human body.",
+          "Homeostasis: Body fluids ICF & ECF, fluid compartments in human body, – Homeostatic control System- negative & positive feedback and feed forward mechanisms.",
+          "Cell: Structure, membrane & Transport mechanisms. RMP - Action potentials – ionic basis of generation - Nernst potential, Goldman Hodgkin Katz equation."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Nervous System: General organization - Central nervous system, Cerebrum – Cerebral cortex –– motor, sensory, language & association areas – major functions.",
+          "Basal ganglia, Thalamus & Hypothalamus – functions.",
+          "Cerebellum, Brain Stem – basic structure& functions.",
+          "Spinal cord - spinal reflex.",
+          "Neurons – structure & types, Mechanisms of Nerve impulses, Synapses & Neuronal Integration Synaptic potentials – EPSP & IPSP -Neurotransmitters – types",
+          "Special senses: Organ of vision, hearing & equilibrium, taste and smell –structure & basic mechanisms"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Blood: The composition of blood (blood proteins and blood cells & their function), hematocrit, blood groups, blood clotting.",
+          "Major arteries & veins Lymph and its function.",
+          "Cardiovascular system : Major blood vessels, Circulatory Systems- Systemic circulation and pulmonary circulation",
+          "Heart- structure of heart and its electrical activity, Auto rhythmic cells - cardiac action potentials, cardiac cycle (ECG, Heart rate – normal & abnormal), myocardial ischemia & infraction, atherosclerosis, Heart sounds & murmurs, Stroke volume & cardiac output, blood pressure.",
+          "Respiratory system : Structure and organization of organs, mechanics of respiration, Basics of gas exchange"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Skeletal system: functions of skeletal system, Bone – classification & composition- structure of long bone – compact and spongy bone.",
+          "Types of joints and function.",
+          "Types of cartilage and function.",
+          "Muscular System: Organization, Types of muscles - skeletal, cardiac and smooth muscles, mechanism of muscle contraction & relaxation.",
+          "Urinary System: Structure and function of organs, kidneys- nephron – structure, components, Basic renal processes involved in urine formation, micturition – definition and mechanism"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Familiarize the functional organization of human body and understand the basic principles of human anatomy & physiology.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Understand the structure and functions of nervous system and special senses.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Identify the components of blood and understand the structure and functions of cardiovascular and respiratory systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the structure and functions of skeletal, muscular and urinary systems.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Human Physiology: From Cells to Systems",
+        "author": "Laura lee Sherwood",
+        "publisher": "Cengage Learning, USA",
+        "edition": "9e/, 2014"
+      },
+      {
+        "title": "Textbook of Medical Physiology",
+        "author": "Arthur C. Guyton, John E. Hall",
+        "publisher": "W.B. Saunders Company",
+        "edition": "10e/ 2000"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Ross and Wilson: Anatomy and Physiology in Health and Illness",
+        "author": "Anne Waugh, Allison Grant",
+        "publisher": "Churchill Livingstone",
+        "edition": "9e/ 2001"
+      },
+      {
+        "title": "Essentials of Anatomy and Physiology",
+        "author": "Tina Sanders, Dr Valerie Scanlon",
+        "publisher": "F.A. Davis Company",
+        "edition": "5e/ 2006"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "2",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:04:53.171Z"
+}

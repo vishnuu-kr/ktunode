@@ -1,0 +1,153 @@
+{
+  "subject": "STRUCTURAL DYNAMICS",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "STRUCTURAL DYNAMICS",
+    "courseCode": "PECET741",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET403",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction  – Classification of dynamic loads – essential characteristics of a dynamic problem – methods of discretization– single degree of freedom systems – basic components of a dynamic system.",
+          "Formulation of equation of motion – Newton’s 2nd law and D’ Alembert’s principle; influence of gravitational forces – generalized SDOF systems.",
+          "Solution of the equation of motion – undamped free vibration – damped free vibration- critically damped under damped and over damped SDOF systems, Logarithmic decrement."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Response to harmonic loading  – steady state and transient states steady sate amplitude, Dynamic magnification factor, force transmissibility and vibration isolation.",
+          "Response to periodic loading – Fourier series representation of periodic loads in time domain. Response of SDOF systems.",
+          "Response to impulse loading  – half-sine, rectangular and triangular pulses"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Response to general loading  – Duhamel Integral, damped and undamped systems.",
+          "Multi degree of freedom systems – Lumped mass systems, shear building frame, Equation of motion.",
+          "Free vibration analysis: Natural frequencies and mode shapes, orthogonality of normal mode s."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Approximate methods : Rayleigh’s method Dunkarley’s method, Stodola’s method.",
+          "Distributed mass (continuous) systems  – differential equation of motion – Axial vibration of rods. Flexural vibration of beams, natural frequencies and mode shapes of simply supported beam. Evaluation of frequencies and mode shapes of cantilever beam and fixed beam (formulation only)."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Formulate appropriate SDOF models of simple structural systems under dynamic loads apply them to the solution of engineering problems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Analyze and interpret the dynamic response of SDOF systems for various dynamic inputs.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Develop mathematical models for MDOF shear building models and estimate the natural frequencies and vibration modes for the same.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the dynamic behaviour of continuous parameter systems.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Dynamics of Structures",
+        "author": "Anil K. Chopra",
+        "publisher": "Pearson Education",
+        "edition": "2020"
+      },
+      {
+        "title": "Structural Dynamics: Theory and Computation",
+        "author": "Mario Paz",
+        "publisher": "Springer",
+        "edition": "5th Ed 2007"
+      },
+      {
+        "title": "Structural Dynamics: Vibrations & Systems",
+        "author": "Mukhopadhyay M.",
+        "publisher": "ANE Books",
+        "edition": "2008"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Dynamics of Structures",
+        "author": "Clough R.W, J.Penzien",
+        "publisher": "CBS",
+        "edition": "2nd Ed 2015"
+      },
+      {
+        "title": "Vibration of Structures",
+        "author": "J.W. Smith",
+        "publisher": "Chapman and Hall, London.",
+        "edition": "1988"
+      },
+      {
+        "title": "Vibration Analysis and Structural Dynamics for Civil Engineers: Essentials and Group-Theoretic Formulations",
+        "author": "Alphose Zingoni",
+        "publisher": "CRC Press",
+        "edition": "2018"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/105/106/105106151/",
+      "module2": "https://archive.nptel.ac.in/courses/105/101/105101006/",
+      "module3": "https://archive.nptel.ac.in/courses/105/101/105101209/",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T19:01:33.776Z"
+}

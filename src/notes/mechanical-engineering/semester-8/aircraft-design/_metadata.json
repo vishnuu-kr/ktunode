@@ -1,0 +1,167 @@
+{
+  "subject": "AIRCRAFT DESIGN",
+  "branch": "Mechanical Engineering",
+  "semester": 8,
+  "details": {
+    "name": "AIRCRAFT DESIGN",
+    "courseCode": "PEMET865",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 60,
+    "ESE": 40,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Phases of the design process",
+          "conceptual design",
+          "preliminary design",
+          "detailed design",
+          "Typical program organization and personnel responsibilities",
+          "Role of aircraft design engineer",
+          "Major difference between manned and unmanned air vehicle design"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Basic aircraft terminology and conventions",
+          "Coordinate systems",
+          "forces and moments",
+          "aerodynamic coefficient",
+          "Significance of aerodynamic center",
+          "Aircraft weight breakdown and definition",
+          "Basic aircraft performance terminology( flight in the horizontal and vertical planes)",
+          "Aircraft sizing",
+          "Factors influencing the aircraft configuration, size, weight",
+          "Weight breakdown",
+          "Historical weight data",
+          "The lift curve and parabolic drag polar"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Aircraft performance and fuel fraction estimates",
+          "Range",
+          "Endurance",
+          "Manoeuvring flight in the vertical and horizontal planes",
+          "Climbing flight",
+          "Descend/ Glide",
+          "Field Performance- Take-off and Landing",
+          "Special performance requirements like accelerated flight"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Propulsion system selection",
+          "Flight regimes",
+          "Refined performance estimating methods",
+          "Installation factors",
+          "Configuration trade studies- Configuration types(tailless, canard, conventional)",
+          "wing location design",
+          "Empennage configurations( cruciform, T, H, V, cathedral)",
+          "Engine placements(single or multi engine)",
+          "Landing gear type and placement(tail dragger, tricycle, tandem)",
+          "Airofoil selection,packaging for storage/transport"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To make the required decisions during the total design cycle of an aircraft including conceptual, preliminary and detailed design",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "To distinguish and understand the design phases of an aircraft.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "To be able to calculate the performance characteristics of aircraft",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "To evaluate and understand layout design of different aircrafts",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Aircraft Design: A conceptual Approach",
+        "author": "Daniel P. Raymer",
+        "publisher": "AIAA",
+        "edition": "2012"
+      },
+      {
+        "title": "Introduction to Aircraft Design",
+        "author": "John  P Fielding",
+        "publisher": "Cambridge Aerospace Series 2",
+        "edition": "2017"
+      },
+      {
+        "title": "Aircraft Performance",
+        "author": "Martin E. Eshelby",
+        "publisher": "Elsevier",
+        "edition": "2000"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Aircraft Engineering Design, Structures and Systems",
+        "author": "Ian Booth",
+        "publisher": "NY research press",
+        "edition": "2018"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "8",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:19:33.564Z"
+}

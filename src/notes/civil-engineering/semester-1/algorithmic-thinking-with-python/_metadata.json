@@ -1,0 +1,221 @@
+{
+  "subject": "ALGORITHMIC THINKING WITH PYTHON",
+  "branch": "Civil Engineering",
+  "semester": 1,
+  "details": {
+    "name": "ALGORITHMIC THINKING WITH PYTHON",
+    "courseCode": "UCEST105",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 2,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "PROBLEM-SOLVING STRATEGIES:- Problem-solving strategies defined",
+          "Importance of understanding multiple problem-solving strategies",
+          "Trial and Error",
+          "Heuristics",
+          "Means-Ends Analysis",
+          "and Backtracking (Working backward).",
+          "THE PROBLEM-SOLVING PROCESS:- Computer as a model of computation",
+          "Understanding the problem",
+          "Formulating a model",
+          "Developing an algorithm",
+          "Writing the program",
+          "Testing the program",
+          "and Evaluating the solution.",
+          "ESSENTIALS OF PYTHON PROGRAMMING:- Creating and using variables in Python",
+          "Numeric and String data types in Python",
+          "Using the math module",
+          "Using the Python Standard Library for handling basic I/O - print, input, Python operators and their precedence."
+        ],
+        "contactHours": 7,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "ALGORITHM AND   PSEUDOCODE   REPRESENTATION:-   Meaning   and Definition of Pseudocode",
+          "Reasons for using pseudocode",
+          "The main constructs of pseudocode - Sequencing",
+          "selection (if-else structure, case structure) and repetition (for, while, repeat-until loops)",
+          "Sample problems *",
+          "FLOWCHARTS** :- Symbols used in creating a Flowchart - start and end",
+          "arithmetic calculations",
+          "input/output operation",
+          "decision (selection)",
+          "module name (call)",
+          "for loop (Hexagon)",
+          "flow-lines",
+          "on-page connector",
+          "off-page connector."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "SELECTION AND ITERATION USING PYTHON:- if-else, elif, for loop, range, while loop.",
+          "Sequence data types in Python - list, tuple, set, strings, dictionary, Creating and using Arrays in Python (using Numpy library).",
+          "DECOMPOSITION AND MODULARIZATION* :- Problem decomposition as a strategy for solving complex problems",
+          "Modularization",
+          "Motivation for modularization",
+          "Defining and using functions in Python",
+          "Functions with multiple return values",
+          "RECURSION:- Recursion Defined",
+          "Reasons for using Recursion",
+          "The Call Stack",
+          "Recursion and the Stack",
+          "Avoiding Circularity in Recursion",
+          "Sample problems - Finding the nth Fibonacci number",
+          "greatest common divisor of two positive integers",
+          "the factorial of a positive integer",
+          "adding two positive integers",
+          "the sum of digits of a positive number **."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "COMPUTATIONAL APPROACHES TO PROBLEM-SOLVING",
+          "(Introductory diagrammatic/algorithmic explanations only. Analysis not required ) :-",
+          "Brute-force Approach -",
+          "- Example: Padlock, Password guessing",
+          "Divide-and-conquer Approach -",
+          "- Example: The Merge Sort Algorithm",
+          "- Advantages of Divide and Conquer Approach",
+          "- Disadvantages of Divide and Conquer Approach",
+          "Dynamic Programming Approach",
+          "- Example: Fibonacci series",
+          "- Recursion vs Dynamic Programming",
+          "Greedy Algorithm Approach",
+          "- Example: Given an array of positive integers each indicating the completion time for a task, find the maximum number of tasks that can be completed in the limited amount of time that you have.",
+          "- Motivations for the Greedy Approach",
+          "- Characteristics of the Greedy Algorithm",
+          "- Greedy Algorithms vs Dynamic Programming",
+          "Randomized Approach",
+          "- Example 1: A company selling jeans gives a coupon for each pair of jeans. There are n different coupons. Collecting n different coupons would give you free jeans. How many jeans do you expect to buy before getting a free one?",
+          "- Example 2: n people go to a party and drop off their hats to a hat-check person. When the party is over, a different hat-check person is on duty and returns the n hats randomly back to each person. What is the expected number of people who get back their hats",
+          "- Motivations for the Randomized Approach"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 5,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.\n(4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Utilize computing as a model for solving real-world problems.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Articulate a problem before attempting to solve it and prepare a clear and accurate model to represent the problem.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Use effective algorithms to solve the formulated models and translate algorithms into executable programs.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Interpret the problem-solving strategies, a systematic approach to solving computational problems, and essential Python programming skills",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [],
+    "referenceBooks": [
+      {
+        "title": "Problem solving & \nprogramming concepts",
+        "author": "Maureen Sprankle, Jim Hubbard",
+        "publisher": "Pearson",
+        "edition": "2012"
+      },
+      {
+        "title": "How to Solve It: A New Aspect of Mathematical Method",
+        "author": "George Pólya",
+        "publisher": "Princeton University Press",
+        "edition": "2015"
+      },
+      {
+        "title": "Creative Problem Solving: An Introduction",
+        "author": "Donald Treffinger., Scott Isaksen, Brian Stead-  \nDoval",
+        "publisher": "Prufrock Press",
+        "edition": "2005"
+      },
+      {
+        "title": "Psychology (Sec.. Problem Solving.)",
+        "author": "Spielman, R. M., Dumper, K., Jenkins, W., Lacombe, A., Lovett, M., & Perlmutter, M",
+        "publisher": "H5P Edition",
+        "edition": "2021"
+      },
+      {
+        "title": "Computer Arithmetic  \nAlgorithms",
+        "author": "Koren, Israel",
+        "publisher": "AK Peters/CRC Press",
+        "edition": "2018"
+      },
+      {
+        "title": "Introduction to Computation  \nand Programming using Python",
+        "author": "Guttag John V",
+        "publisher": "PHI",
+        "edition": "2/e., 2016"
+      },
+      {
+        "title": "Python for Everyone",
+        "author": "Cay S. Horstmann, Rance D. Necaise",
+        "publisher": "Wiley",
+        "edition": "3/e, 2024"
+      },
+      {
+        "title": "Computational Thinking: A  \nPrimer for Programmers and Data Scientists",
+        "author": "G Venkatesh, Madhavan Mukund",
+        "publisher": "Mylspot Education \nServices Pvt Ltd",
+        "edition": "2020"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://opentextbc.ca/h5ppsychology/chapter/problem-solving/",
+      "module2": "https://onlinecourses.nptel.ac.in/noc21_cs32/preview",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "1",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:27:54.745Z"
+}

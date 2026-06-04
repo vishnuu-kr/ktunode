@@ -1,0 +1,174 @@
+{
+  "subject": "ENTERTAINMENT ELECTRONICS",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 6,
+  "details": {
+    "name": "ENTERTAINMENT ELECTRONICS",
+    "courseCode": "OEECT611",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Review of Analog Television: Scanning, Horizontal and Vertical Synchronization, Color information, Transmission methods. NTSC and PAL standards.",
+          "Digital media streaming: Packetized elementary stream of audio- video data, MPEG data stream, MPEG-2 transport stream packet, Accessing a program, scrambled programs, program synchronization.",
+          "PSI, Additional (Network information and service description) information in data streams for set-top boxes."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Digital Video Broadcasting (DVB): Satellite TV broadcasting – DVB-S Parameters, DVB-S Modulator, DVB-S set-top box, DVB-S2.",
+          "Cable TV broadcasting – DVB-C Standard, DVB-C Modulator, DVB- C set-top box.",
+          "Terrestrial TV broadcasting – DVB-T Standard, DVB-T Modulator, DVB-T Carriers and System Parameters, DVB-T receiver.",
+          "Broadcasting for Handheld devices – DVB-H Standard DVB tele-text, DVB subtitling system.",
+          "Digital Audio Broadcasting (DAB): Comparison of DAB with DVB. Physical layer of DAB.",
+          "DAB Modulator, DAB Data Structure, DAB single frequency networks, Data broad casting using DAB."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "High Definition Video and Audio: Pixel resolution, Comparison with Standard Definition TV, Review of Discrete Cosine Transforms (DCT).",
+          "Video Compression - Quantization levels, Horizontal/Vertical blanking interval, Vertical Color resolution, DPCM of moving pictures, DCT, Run-length coding.",
+          "MPEG-4 Video coding."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Display Technology: Block diagram of video reproduction system in a TV, Cathode Ray tubes, Basic principle of Plasma displays, LC displays, Light-emitting diode displays, Field emission displays, Organic light emitting device displays.",
+          "Television of future: Holographic TV, Virtual Reality, Augmented Reality."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain packetized streaming of digital media happens in the field of infotainment industry.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Realise the critical aspects of DVB and DAB standards used for media broadcasting",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply video coding/compression algorithms are used to produce high- definition video in MPEG-4 standard",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Describe modern display technologies for video reproduction",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Digital Video and Audio Broadcasting Technology: A Practical Engineering Guide (Signals and Communication Technology)",
+        "author": "W. Fischer",
+        "publisher": "Springer",
+        "edition": "2020"
+      },
+      {
+        "title": "Understanding Digital Television An Introduction to DVB Systems with Satellite, Cable, Broadband and Terrestrial TV,.",
+        "author": "Lars-Ingemar Lundström",
+        "publisher": "Focal Press,Elsevier",
+        "edition": "2006"
+      },
+      {
+        "title": "Newnes Guide to Televeision and Video Technology",
+        "author": "K F Ibrahim",
+        "publisher": "Newnes",
+        "edition": "2007"
+      },
+      {
+        "title": "Introduction to Flat Panel Displays",
+        "author": "Jiun-Haw Lee, David N. Liu, Shin-Tson Wu",
+        "publisher": "Wiley",
+        "edition": "2008"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Digital Video and HD Algorithms and Interfaces,\"",
+        "author": "C. Poynton",
+        "publisher": "Morgan Kaufmann",
+        "edition": "2012"
+      },
+      {
+        "title": "Digital audio broadcasting: principles and applications of DAB, DAB+ and DMB",
+        "author": "Wolfgang Hoeg, Thomas Lauterbach",
+        "publisher": "Wiley",
+        "edition": "2009"
+      },
+      {
+        "title": "Introduction to Digital Audio",
+        "author": "John Watkinson",
+        "publisher": "Focal Press",
+        "edition": "1994"
+      },
+      {
+        "title": "Art of Digital Video",
+        "author": "John Watkinson",
+        "publisher": "Focal Press",
+        "edition": "2008"
+      },
+      {
+        "title": "Introduction to Digital Video",
+        "author": "John Watkinson",
+        "publisher": "Focal Press",
+        "edition": "2001"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://www.youtube.com/watch?v=M_nTmRtAD98",
+      "module2": "https://www.youtube.com/watch?v=aTDr79yvUus",
+      "module3": "https://www.youtube.com/watch?v=g_ysg46q-jQ",
+      "module4": "https://www.youtube.com/watch?v=4BaDaGTUgIY"
+    },
+    "semester": "6",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:00:50.742Z"
+}

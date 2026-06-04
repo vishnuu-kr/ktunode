@@ -1,0 +1,158 @@
+{
+  "subject": "COMPUTATIONAL HEAT TRANSFER",
+  "branch": "Mechanical Engineering",
+  "semester": 7,
+  "details": {
+    "name": "COMPUTATIONAL HEAT TRANSFER",
+    "courseCode": "OEMET726",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Basic knowledge of Fluid mechanics and heat transfer",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Basics of Heat Transfer-Conduction, convection and radiation heat transfer.",
+          "Mathematical description of fluid flow and heat transfer: conservation equations for mass, momentum, energy and chemical species in Cartesian and cylindrical coordinates.",
+          "Classification of Partial differential equations – elliptic, parabolic and hyperbolic equations.",
+          "Initial and boundary conditions"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Finite difference form of PDE equations-Taylor’s series approach.",
+          "Central difference, backward difference, and forward difference of first and second order derivatives.",
+          "Solution of Laplace equation (conduction problems) using finite difference equations.",
+          "Discretization error, truncation error, round off error, Convergence of iteration."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Solution of unsteady conduction equation using finite difference method- Explicit, implicit and semi-implicit methods.",
+          "Stability of numerical solutions.",
+          "Solution of linear algebraic equations- direct methods and indirect methods.",
+          "Point by point iterations, Tri diagonal matrix method (TDMA)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to Finite volume method.",
+          "Solution of one-dimensional steady state conduction problems.",
+          "Handling different boundary conditions.",
+          "Solution of one-dimensional convection diffusion problems using central difference schemes and upwind scheme.",
+          "Introduction to SIMPLE algorithm for incompressible flows."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To understand the basics of governing equations of fluid flow and heat transfer",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "To understand PDE equations and its classification.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "To familiarize with numerical techniques like FDM and FVM",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO4",
+        "description": "To understand various methods to solve system of linear algebraic equations",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "To solve simple problems of steady and unsteady conduction using numerical techniques.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Introductory methods to numerical analysis",
+        "author": "S S Sastry",
+        "publisher": "PHI learing Private Ltd.",
+        "edition": "2012"
+      },
+      {
+        "title": "Numerical Heat Transfer and Fluid Flow",
+        "author": "Suhas V Patankar",
+        "publisher": "Crc Press",
+        "edition": "2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Computational fluid dynamics",
+        "author": "Anderson, John David and Wendt, John",
+        "publisher": "McGraw-Hill International Editions: Mechanical Engineering",
+        "edition": "1995"
+      },
+      {
+        "title": "An Introduction to Computational Fluid Dynamics the Finite Volume Method",
+        "author": "H. Veersteg W. Malalasekra",
+        "publisher": "Pearson; 2nd edition (1 January 2008); Pearson India",
+        "edition": "2008"
+      },
+      {
+        "title": "Heat transfer",
+        "author": "S P Venkatesh",
+        "publisher": "Ane books Pvt Ltd",
+        "edition": "2009"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/112/108/112108091",
+      "module2": "https://archive.nptel.ac.in/courses/112/108/112108091",
+      "module3": "https://archive.nptel.ac.in/courses/112/108/112108091",
+      "module4": "https://archive.nptel.ac.in/courses/112/108/112108091"
+    },
+    "semester": "7",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:10:32.134Z"
+}

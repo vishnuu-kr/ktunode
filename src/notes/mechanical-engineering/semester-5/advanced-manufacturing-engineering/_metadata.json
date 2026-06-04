@@ -1,0 +1,161 @@
+{
+  "subject": "ADVANCED MANUFACTURING ENGINEERING",
+  "branch": "Mechanical Engineering",
+  "semester": 5,
+  "details": {
+    "name": "ADVANCED MANUFACTURING ENGINEERING",
+    "courseCode": "PCMET502",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Manufacturing \nProcesses           \n(PBMET304), Machine \nTools and Metrology \n(PCMET402)",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "CNC: systems – Principle of operation, components of CNC system, coordinate systems, classification of CNC systems, point-to-point and contouring systems, incremental and absolute programming methods, open loop and closed loop systems, feedback devices.",
+          "Interpolators:  liner, circular and complete interpolator.",
+          "Manual part programming - Computer aided part programming - APT.",
+          "Programming exercises in turning, drilling and milling operations.",
+          "(At least one programming exercise must be included in the end -semester"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Programmable Logic Controllers (PLC) – input and output devices, ladder logic programming, simple problems only.",
+          "Advanced Machining Processes: ultrasonic machining (USM), Abrasive jet machining (AJM), Water jet machining (WJM), Abrasive water jet machining (AWJM), Electrochemical machining (ECM), Electro discharge machining (EDM), Electron beam machining (EBM), Laser beam machining (LBM), Plasma arc machining (PAM), Ion beam machining (IBM)."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Advanced Metal Forming Processes: High velocity forming of metals - Sheet metal forming - explosive forming - Electro hydraulic forming - Electro Magnetic Forming.",
+          "Stress waves and deformation in solids – types of elastic body waves- relation at free boundaries- relative particle velocity.",
+          "Microfabrication process: CVD, PVD, LIGA process.",
+          "Micromachining: Diamond turn mechanism."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Advanced finishing processes: - Abrasive Flow Machining, Magnetic Abrasive Finishing. - Magnetorheological Finishing, Magnetorheological Abrasive Flow Finishing, Magnetic Float Polishing, Elastic Emission Machining.",
+          "Material addition processes: - stereo-lithography, selective laser sintering, fused deposition modeling, laminated object manufacturing, laser-engineered net-shaping."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub-divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "CNC programming, select appropriate tooling and parameters.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "To categorize the various non -traditional material removal processes based on energy sources and mechanisms employed.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Analyze the processes and evaluate the role of each process parameter during the micromachining of various advanced material removal processes.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the processes used in additive manufacturing for a range of materials and applications.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Computer control of \nmanufacturing systems",
+        "author": "Yoram Koren",
+        "publisher": "TMH",
+        "edition": "2017"
+      },
+      {
+        "title": "Advanced Machining Processes",
+        "author": "Jain V.K.",
+        "publisher": "Narosa publishers",
+        "edition": "2014"
+      },
+      {
+        "title": "Introduction to \nMicromachining",
+        "author": "Jain V.K.",
+        "publisher": "Narosa publishers",
+        "edition": "2014"
+      },
+      {
+        "title": "Additive Manufacturing \nTechnologies: 3D Printing, \nRapid Prototyping, and Direct \nDigital Manufacturing",
+        "author": "Ian Gibson, David \nRosen, Brent Stucker",
+        "publisher": "Springer Nature",
+        "edition": "2nd ed.\n2015"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Computer-Aided Design and \nManufacturing",
+        "author": "M.P. Groover, E.M. \nZimmers, Jr.",
+        "publisher": "Prentice Hall of India",
+        "edition": "1987"
+      },
+      {
+        "title": "Programmable logic controllers",
+        "author": "PetruzellaFrank.D.",
+        "publisher": "McGraw Hill",
+        "edition": "2016"
+      },
+      {
+        "title": "Developments in high-speed \nmetal forming",
+        "author": "Davies K and Austin E.R",
+        "publisher": "The Machinery \nPublishing Co",
+        "edition": "1970"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/112105211",
+      "module2": "https://nptel.ac.in/courses/112104028",
+      "module3": "https://nptel.ac.in/courses/102108078",
+      "module4": "https://nptel.ac.in/courses/112103306"
+    },
+    "semester": "5",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:57:53.393Z"
+}

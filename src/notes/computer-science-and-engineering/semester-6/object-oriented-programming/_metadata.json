@@ -1,0 +1,247 @@
+{
+  "subject": "OBJECT ORIENTED PROGRAMMING",
+  "branch": "Computer Science and Engineering",
+  "semester": 6,
+  "details": {
+    "name": "OBJECT ORIENTED PROGRAMMING",
+    "courseCode": "OECST615",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Java  - Java programming Environment and Runtime Environment (Command Line & IDE)",
+          "Java compiler",
+          "Java Virtual Machine",
+          "Primitive Data types and Wrapper Types",
+          "Casting and Autoboxing",
+          "Arrays",
+          "Strings",
+          "Vector class",
+          "Operators - Arithmetic, Bitwise, Relational, Boolean Logical, Assignment, Conditional (Ternary)",
+          "Operator Precedence",
+          "Control Statements - Selection Statements, Iteration Statements and Jump Statements",
+          "Functions",
+          "Command Line Arguments",
+          "Variable Length Arguments",
+          "Classes",
+          "Abstract Classes",
+          "Interfaces",
+          "OOP Concepts  - Data abstraction, encapsulation, inheritance, polymorphism, Procedural and object oriented programming paradigm",
+          "Microservices",
+          "Object Oriented Programming in Java  - Declaring Objects",
+          "Object Reference",
+          "Introduction to Methods",
+          "Constructors",
+          "Access Modifiers",
+          "this keyword"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Polymorphism  - Method Overloading",
+          "Using Objects as Parameters",
+          "Returning Objects",
+          "Recursion",
+          "Static Members",
+          "Final Variables",
+          "Inner Classes",
+          "Inheritance  - Super Class",
+          "Sub Class",
+          "Types of Inheritance",
+          "The super keyword",
+          "protected Members",
+          "Calling Order of Constructors",
+          "Method Overriding",
+          "Dynamic Method Dispatch",
+          "Using final with Inheritance"
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Packages and Interfaces  – Packages - Defining a Package",
+          "CLASSPATH",
+          "Access Protection",
+          "Importing Packages",
+          "Interfaces  - Interfaces v/s Abstract classes",
+          "defining an interface",
+          "implementing interfaces",
+          "accessing implementations through interface references",
+          "extending interface(s)",
+          "Exception Handling  - Checked Exceptions",
+          "Unchecked Exceptions",
+          "try Block and catch Clause",
+          "Multiple catch Clauses",
+          "Nested try Statements",
+          "throw",
+          "throws and finally",
+          "Java Built-in Exceptions",
+          "Custom Exceptions"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Swings fundamentals  – Overview of AWT",
+          "Swing v/s AWT",
+          "Swing Key Features",
+          "Swing Controls",
+          "Components and Containers",
+          "Swing Packages",
+          "Event Handling in Swings",
+          "Swing Layout Managers",
+          "Exploring Swings–JFrame",
+          "JLabel",
+          "The Swing Buttons",
+          "JTextField",
+          "Event handling  – Event Handling Mechanisms",
+          "Delegation Event Model",
+          "Event Classes",
+          "Sources  of Events",
+          "Event Listener Interfaces",
+          "Using the Delegation Event Model",
+          "Developing Database Applications using JDBC  – JDBC overview",
+          "Types",
+          "Steps",
+          "Common JDBC Components",
+          "Connection Establishment"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the process of developing Java programs, including their structure and components, to demonstrate proficiency.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Utilize object-oriented programming principles in the design and implementation of Java applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Develop and manage Java packages and interfaces, enhancing code modularity and reusability.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Implement error handling using Java's exception mechanisms and leverage interfaces for modular applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Develop event-driven Java GUI applications with database connectivity.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Java: The Complete Reference",
+        "author": "Herbert Schildt",
+        "publisher": "Tata McGraw Hill",
+        "edition": "13/e, 2024"
+      },
+      {
+        "title": "Introduction to Java Programming, Comprehensive Version",
+        "author": "Y Daniel Liang",
+        "publisher": "Pearson",
+        "edition": "10/e, 2014"
+      },
+      {
+        "title": "Head First Design Patterns",
+        "author": "Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra",
+        "publisher": "O'Reilly Media",
+        "edition": "1/e, 2004"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Head First Java: A Brain Friendly Guide",
+        "author": "Kathy Sierra & Bert Bates",
+        "publisher": "O’Reilly",
+        "edition": "3/e, 2022"
+      },
+      {
+        "title": "JAVA™ for Programmers",
+        "author": "Paul Deitel",
+        "publisher": "PHI",
+        "edition": "11/e, 2018"
+      },
+      {
+        "title": "Clean Code : A Handbook of Agile Software Craftsmanship",
+        "author": "Robert C. Martin",
+        "publisher": "Prentice Hall",
+        "edition": "1/e, 2008"
+      },
+      {
+        "title": "Programming with Java",
+        "author": "E Balagurusamy",
+        "publisher": "McGraw Hill",
+        "edition": "6/e, 2019"
+      },
+      {
+        "title": "Java For Dummies",
+        "author": "Barry A. Burd",
+        "publisher": "Wiley",
+        "edition": "8/e, 2022"
+      },
+      {
+        "title": "Effective Java",
+        "author": "Joshua Bloch",
+        "publisher": "Pearson",
+        "edition": "3/e, 2018"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/106105191  (Lecture no: 9, 10, 1, 2, 3, 4)",
+      "module2": "https://nptel.ac.in/courses/106105191  (Lecture no: 1, 7, 8, 11, 12, 13, 14, 15, 16)",
+      "module3": "https://nptel.ac.in/courses/106105191  (Lecture no: 17, 18, 19, 20, 21, 22, 23, 24, 25, 26)",
+      "module4": "https://nptel.ac.in/courses/106105191   (Lecture no: 43, 44, 45, 46, 47, 50, 51, 52, 53, 54, 55)"
+    },
+    "semester": "6",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:55:45.583Z"
+}

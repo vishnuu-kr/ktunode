@@ -1,0 +1,166 @@
+{
+  "subject": "COMPUTER ORGANIZATION AND ARCHITECTURE",
+  "branch": "Computer Science and Engineering",
+  "semester": 4,
+  "details": {
+    "name": "COMPUTER ORGANIZATION AND ARCHITECTURE",
+    "courseCode": "PBCST404",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "GAEST305",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 1
+    },
+    "CIE": 60,
+    "ESE": 40,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Basic Structure of computers :– Functional units - Basic operational concepts",
+          "Memory map",
+          "Endianness.",
+          "CISC vs RISC architectures:- RISC Introduction - Assembly Language, Assembler directives, Assembling.",
+          "Programming concepts - Program flow, Branching, Conditional statements, Loops, Arrays, Function calls",
+          "Instruction execution cycle.",
+          "Machine language - Instructions, addressing modes, Stored program concept.",
+          "Evolution of the RISC Architecture."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Microarchitecture -  Introduction",
+          "Performance analysis",
+          "Single-Cycle Processor - Single Cycle Datapath, Single Cycle Control",
+          "Pipelined Processor - Pipelined Data Path, Pipelined Control",
+          "Hazards",
+          "Solving Data/Control Hazards",
+          "Performance Analysis."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Memory Systems: Introduction",
+          "performance analysis",
+          "Caches - basic concepts, Cache mapping, Cache replacement, Multiple-Level Caches",
+          "Reducing Miss Rate",
+          "Write Policy",
+          "Virtual Memory - Address Translation",
+          "Page Table",
+          "Translation Lookaside Buffer",
+          "Memory Protection."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Input / Output -  External Devices",
+          "I/O Modules",
+          "Programmed I/O",
+          "Interrupt Driven I/O",
+          "Direct Memory Access",
+          "Embedded I/O Systems - Embedded I/O, General Purpose I/O, Serial I/O, Other Peripherals."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 30,
+        "internalExam1": 12.5,
+        "internalExam2": 12.5,
+        "total": 60
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 2 marks (8x2 =16 marks)",
+          "marks": 16
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 2 subdivisions. Each question carries 6 marks.  (4x6 = 24 marks)",
+          "marks": 24
+        },
+        "total": 40
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify the basic structure and functional units of a digital computer and the features of RISC architecture.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Experiment with the single cycle processor, pipelining, and the associated problems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Utilize the memory organization in modern computer systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Experiment with the I/O organization of a digital computer.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Digital Design and Computer Architecture - RISC-V Edition",
+        "author": "Sarah L. Harris, David Harris",
+        "publisher": "Morgan Kaufmann",
+        "edition": "1/e, 2022"
+      },
+      {
+        "title": "Computer Organization and Architecture Designing for Performance",
+        "author": "William Stallings",
+        "publisher": "Pearson",
+        "edition": "9/e, 2013"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Computer Organization and Design : The Hardware/Software Interface: RISC-V Edition",
+        "author": "David A. Patterson John L. Hennessy",
+        "publisher": "Morgan Kaufaman",
+        "edition": "1/e,2018"
+      },
+      {
+        "title": "Computer Organization and Embedded Systems",
+        "author": "Carl Hamacher,  Zvonko Vranesic, Safwat Zaky, Naraig Manjikian",
+        "publisher": "McGraw Hil",
+        "edition": "6/e, 2012"
+      },
+      {
+        "title": "Modern Computer Architecture and Organization",
+        "author": "Jim Ledin",
+        "publisher": "Packt Publishing",
+        "edition": "1/e,2020"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/105/106105163/",
+      "module2": "https://archive.nptel.ac.in/courses/106/106/106106166/",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:12:11.062Z"
+}

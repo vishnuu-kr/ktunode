@@ -1,0 +1,179 @@
+{
+  "subject": "MATHEMATICS FOR MACHINE LEARNING",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 4,
+  "details": {
+    "name": "MATHEMATICS FOR MACHINE LEARNING",
+    "courseCode": "PEEET413",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "NIL",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "LINEAR ALGEBRA: Systems of Linear Equations – Matrices, Solving Systems of Linear Equations.",
+          "Vector Spaces –Vector Spaces, Linear Independence, Basis and Rank.",
+          "Linear Mappings – Matrix Representation of Linear Mappings, Basis Change, Image and Kernel."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "ANALYTIC GEOMETRY, MATRIX DECOMPOSITIONS: Norms, Inner Products, Lengths and Distances, Angles and Orthogonality, Orthonormal Basis, Orthogonal Complement, Orthogonal Projections – Projection into One Dimensional Subspaces, Projection onto General Subspaces, Gram-Schmidt Orthogonalization.",
+          "Determinant and Trace, Eigenvalues and Eigenvectors, Cholesky",
+          "Decomposition, Eigen decomposition and Diagonalization, Singular Value Decomposition, Matrix Approximation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "VECTOR CALCULUS: Differentiation of Univariate Functions - Partial Differentiation and Gradients, Gradients of Vector Valued Functions, Gradients of Matrices, Useful Identities for Computing Gradients.",
+          "Back propagation and Automatic Differentiation – Gradients in Deep Network, Automatic Differentiation.",
+          "Higher Order Derivatives- Linearization and Multivariate Taylor Series."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Probability and Distributions: Construction of a Probability Space - Discrete and Continuous Probabilities, Bayes’ Theorem.",
+          "Summary Statistics and Independence – Gaussian Distribution - Conjugacy and the Exponential Family - Change of Variables/Inverse Transform.",
+          "Optimization: Optimization Using Gradient Descent - Gradient Descent With Momentum.",
+          "Constrained Optimization and Lagrange Multipliers - Convex Optimization - Linear Programming - Quadratic Programming."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Make use of the concepts, rules and results about linear equations, matrix algebra, vector spaces, eigenvalues & eigenvectors and orthogonality & diagonalization to solve computational problems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Perform calculus operations on functions of several variables and matrices, including partial derivatives and gradients",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Utilize the concepts, rules and results about probability, random variables, additive & multiplicative rules, conditional probability, probability distributions and Bayes’ theorem to find solutions of computational problems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Train Machine Learning Models using unconstrained and constrained optimization methods",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Mathematics for Machine Learning",
+        "author": "Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong",
+        "publisher": "Cambridge University Press",
+        "edition": ""
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Linear Algebra and Its Applications,",
+        "author": "Gilbert Strang",
+        "publisher": null,
+        "edition": "4th Edition"
+      },
+      {
+        "title": "Linear Algebra Done Right",
+        "author": "Axler, Sheldon",
+        "publisher": "Springer",
+        "edition": "2015"
+      },
+      {
+        "title": "Introduction to Applied Linear Algebra",
+        "author": "Stephen Boyd and Lieven Vandenberghe",
+        "publisher": "Cambridge University Press",
+        "edition": "2018"
+      },
+      {
+        "title": "Pattern Recognition and Machine Learning",
+        "author": "Christopher M Bishop",
+        "publisher": "Springer",
+        "edition": "2006"
+      },
+      {
+        "title": "Convex Optimization",
+        "author": "Stephen Boyd and Lieven Vandenberghe",
+        "publisher": "Cambridge University Press",
+        "edition": "2004"
+      },
+      {
+        "title": "Learning with Kernels – Support Vector Machines, Regularization, Optimization, and Beyond",
+        "author": "Bernhard Scholkopf and Smola, Alexander J Smola",
+        "publisher": "MIT Press",
+        "edition": "2002"
+      },
+      {
+        "title": "Information Theory, Inference, and Learning Algorithms",
+        "author": "David J. C MacKay",
+        "publisher": "Cambridge University Press",
+        "edition": "2003"
+      },
+      {
+        "title": "Machine Learning: A Probabilistic Perspective",
+        "author": "Kevin P Murphy",
+        "publisher": "MIT Press",
+        "edition": "2012"
+      },
+      {
+        "title": "The Nature of Statistical Learning Theory",
+        "author": "Vladimir N Vapnik",
+        "publisher": "Springer",
+        "edition": "2000"
+      }
+    ],
+    "videoLinks": {
+      "module1": "archive.nptel.ac.in/courses/111/107/111107137\nonlinecourses.nptel.ac.in/noc24_cs38/",
+      "module2": "archive.nptel.ac.in/courses/111/107/111107137\nonlinecourses.nptel.ac.in/noc24_cs38/",
+      "module3": "archive.nptel.ac.in/courses/111/107/111107137\nonlinecourses.nptel.ac.in/noc24_cs38/",
+      "module4": "archive.nptel.ac.in/courses/111/107/111107137\nonlinecourses.nptel.ac.in/noc24_cs38/"
+    },
+    "semester": "4",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:17:15.485Z"
+}

@@ -1,0 +1,155 @@
+{
+  "subject": "SPECIAL ELECTRICAL MACHINES",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 7,
+  "details": {
+    "name": "SPECIAL ELECTRICAL MACHINES",
+    "courseCode": "PEEET743",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "PE -Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Stepper motors – basic principle",
+          "types - variable reluctance",
+          "permanent magnet",
+          "hybrid types – constructional features",
+          "principle of operation – comparison",
+          "modes of operation – monofilar and bifilar windings – modes of excitation – one phase ON mode",
+          "two phase ON mode",
+          "half-step mode – micro-stepping - static and dynamic characteristics – open-loop and closed loop control - applications – numerical problems."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Synchronous Reluctance Motor – Constructional details - principle of operation - phasor diagram - torque equation - applications.",
+          "Switched reluctance motors – constructional details - principle of operation - torque equation – characteristics - power converter circuits - control of SRM - rotor position sensors- torque pulsations – sources of noise - noise mitigation techniques - applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "PM Brushless DC motor- constructional details - permanent magnets – different types - demagnetization characteristics – arrangement of permanent magnets – magnetization of permanent magnets – axial and parallel magnetizations- principle of operation – Control of BLDC motor - applications.",
+          "Permanent Magnet Synchronous Motors - construction - principle of operation – Control of PMSM – self-control – sensor-less control– applications - comparison with BLDC motors"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Linear Electric Machines: Linear motors – different types – linear reluctance motor - linear synchronous motors – construction – comparison.",
+          "Linear Induction Motor – Construction- Thrust Equation, Transverse edge and end effects- Equivalent Circuit, Thrust-Speed characteristics, Applications.",
+          "Single Phase Special Electrical Machines- AC series Motor, Repulsion Motor, Hysteresis Motor, Universal Motor- Construction - principle of operation - applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the constructional details, working and drive circuits for various types of stepper motor.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the constructional details, working and drive circuits for switched and synchronous reluctance motor.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the constructional details, working and drive circuits for brushless DC motor and permanent magnet synchronous motor.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the constructional details and working of linear induction motor",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Explain the constructional details and working of single-phase special electrical machines.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Special Electrical Machines",
+        "author": "E. G. Janardhan",
+        "publisher": "PHI Learning Private Limited",
+        "edition": "Ist edition 2014"
+      },
+      {
+        "title": "Special Electrical Machines",
+        "author": "K. Venkataratnam",
+        "publisher": "Universities Press",
+        "edition": "Ist edition, 2008"
+      },
+      {
+        "title": "A detailed study on Special Electrical Machines",
+        "author": "V. Vedanarayanan",
+        "publisher": "Notion Press",
+        "edition": "Ist edition, 2021"
+      },
+      {
+        "title": "Brushless PM and Rel uctance Motor Drives",
+        "author": "T. J. E. Miller",
+        "publisher": "Clarendon Press, Oxford",
+        "edition": "1989"
+      },
+      {
+        "title": "Permanent magnet synchronous and Brushless DC motor Drives",
+        "author": "R. Krishnan",
+        "publisher": "CRC Press.",
+        "edition": "Ist edition 2016"
+      }
+    ],
+    "referenceBooks": [],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:39:20.831Z"
+}

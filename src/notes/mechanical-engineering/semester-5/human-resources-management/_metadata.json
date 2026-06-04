@@ -1,0 +1,170 @@
+{
+  "subject": "HUMAN RESOURCES MANAGEMENT",
+  "branch": "Mechanical Engineering",
+  "semester": 5,
+  "details": {
+    "name": "HUMAN RESOURCES MANAGEMENT",
+    "courseCode": "PEMET527",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "HUMAN RESOURCE MANAGEMENT : Concept of Human Management in a system-Organisation and Function of the HR.",
+          "Objectives and Characteristics of HRM.",
+          "Role of HR manager-Responsibility- Competitiveness- HR policies -HRM Concepts.",
+          "JOB ANALYSIS & JOB DESIGN : Job Analysis- Job title- duties & essential functions- job specification -Techniques & Approaches in Job Analysis .",
+          "Job design -considerations in job design-Types of Job design approaches."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "HR PLANNING: Definition-HR planning system- HR forecasting—Importance of HR Planning- Human resource information system.",
+          "RECURITMENT & SELECTION : Concept of Recruitment- objectives-Sources of Recruitment- Internal & External sources-Recruitment process-",
+          "Common constraints in recruitment.",
+          "Selection- Selection Process-Screening- Employment Test-Interview- Physical Examination-Job offer, Various Approaches in Hiring Decisions."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "TRAINING: Training- Need for training- Induction training-Effective training Programme process-Structural issues in Training.",
+          "CAREER DEVELOPMENT: Employee development methods- performance management -Components of effective performance management -performance appraisal- purposes of appraisal – methods of performance appraisal- promotion -transfers.-Incentive systems- Employee Benefits.-Types of Benefit schemes."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "LABOUR RELATIONS : Relation between management and labours- Labour unions -objectives- Collective Bargaining -Negotiations-Strikes-Grievance Handling-Grievance redressal methods.",
+          "EMPLOYEE SAFETY AND HEALTH:  Employee safety- awareness – Accident prevention -creating safe environment -employee health problems and preventive measures-job stress – employee assistance programmes."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.   Total of 8 Questions, each carrying 3 marks  (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.   Two questions will be given from each module, out of which 1 question should be answered.   Each question can have a maximum of 3 sub divisions.  (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To familiarise with the basic concepts in HR Management",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO2",
+        "description": "Evaluate the Job design & analysis methods.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Identify the Recruitment and selection methods.",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand  the training process of Employees",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO5",
+        "description": "Understand various career development procedures.",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO6",
+        "description": "Analyse the various employee issues in an organisation",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO7",
+        "description": "Identify various safety issues and stress faced by employees",
+        "knowledgeLevel": "K1"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Human Resource Management",
+        "author": "Gary Dessler",
+        "publisher": "Pearson Publication",
+        "edition": "15th Edition (2016)"
+      },
+      {
+        "title": "International Human Resource Management",
+        "author": "Srinivas R Kandula",
+        "publisher": "SAGE publication",
+        "edition": "2nd Edition (2018)"
+      },
+      {
+        "title": "Human Resource management -Text and Cases",
+        "author": "K. Aswathappa, Sadhna Dash",
+        "publisher": "McGrawhill",
+        "edition": "10th Edition (2023)"
+      },
+      {
+        "title": "Human Resource Management",
+        "author": "Dr.TRaju,  Dr. S Jayabharathi",
+        "publisher": "Biztantra publications",
+        "edition": "1ST Edition (2014)"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Human Resource Management and Digitalization",
+        "author": "Franca cantoni, Gianlugi Mangia",
+        "publisher": "Routledge publication",
+        "edition": "1st Edition 2020"
+      },
+      {
+        "title": "Human Resource Management",
+        "author": "Jacquina Gilbert",
+        "publisher": "Vibrant publishers",
+        "edition": "1st Edition 2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/110/105/110105069/",
+      "module2": "https://archive.nptel.ac.in/courses/110/105/110105069/",
+      "module3": "https://archive.nptel.ac.in/courses/110/105/110105069/",
+      "module4": "https://archive.nptel.ac.in/courses/110/105/110105069/"
+    },
+    "semester": "5",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:00:20.715Z"
+}

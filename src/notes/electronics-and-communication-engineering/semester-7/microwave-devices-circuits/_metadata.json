@@ -1,0 +1,175 @@
+{
+  "subject": "MICROWAVE DEVICES & CIRCUITS",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 7,
+  "details": {
+    "name": "MICROWAVE DEVICES & CIRCUITS",
+    "courseCode": "PEECT 757",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Microwave & Antennas",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Limitation of conventional solid state devices at Microwave.",
+          "Microwave generation and amplification.",
+          "Structure, Operation, Power output and efficiency of IMPATT and TRAPATT diodes",
+          "Bipolar transistors – biasing",
+          "FET – biasing",
+          "MESFET – Structure, Operation.",
+          "Microwave amplifiers and oscillators – Amplifiers – Gain and stability",
+          "Single stage transistor amplifier design.",
+          "Oscillator design – One port negative resistance oscillators."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Microwave Network Analysis – Equivalent voltages and currents",
+          "Impedance and Admittance matrices",
+          "Scattering matrix",
+          "The transmission matrix.",
+          "Signal flow graphs.",
+          "Impedance matching and tuning – Matching with lumped elements",
+          "Single stub tuning",
+          "Double stub tuning.",
+          "Quarter wave transformer",
+          "Theory of small reflections."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Microwave filters – Periodic structures – Analysis of infinite periodic structures and terminated periodic structures",
+          "Filter design by image parameter method – Constant k, m-derived and composite.",
+          "Filter design by insertion loss method.",
+          "Filter transformation and implementation"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to MICSs:-Technology of hybrid MICs, monolithic MICs.",
+          "Comparison of both MICs.",
+          "Planar transmission lines such as strip line, microstripline, and slot line.",
+          "Distributed and lumped elements of integrated circuits -capacitors, inductors, resistors, terminations, attenuators, resonators and discontinuities."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.  Each question carries 9 marks.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe the basic principles of Microwave solid state diodes, transistors, generators and amplifiers.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Analyse Microwave Networks  using  signal flow graphs",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Design microwave filters by different methods",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Illustrate the basic concepts of Monolithic Integrated Circuits",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Microwave Engineering,,",
+        "author": "David M. Pozar,",
+        "publisher": "Wiley India",
+        "edition": "4/e,2012."
+      },
+      {
+        "title": "Foundation of Microwave Engineering,,",
+        "author": "Robert E. Collin",
+        "publisher": "Wiley India,",
+        "edition": "2/e,2012."
+      },
+      {
+        "title": "Microwave Devices & Circuits",
+        "author": "Samuel Y. Liao",
+        "publisher": "Pearson",
+        "edition": "3/e"
+      },
+      {
+        "title": "Microwave Integrated Circuits",
+        "author": "Yoshihiro Konishi",
+        "publisher": "Taylor & Francis",
+        "edition": ""
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Stripline-like Transmission Lines for MIC",
+        "author": "Bharathi Bhat and Shiban K. Koul",
+        "publisher": "New Age International (P) Ltd",
+        "edition": "2007"
+      },
+      {
+        "title": "., Microwave Integrated Circuits,,",
+        "author": "I. Kneppo, J. Fabian, et al",
+        "publisher": "BSP, India",
+        "edition": "2006."
+      },
+      {
+        "title": "Passive RF and Microwave Integrated Circuits",
+        "author": "Leo Maloratsky,",
+        "publisher": "Elsevier,",
+        "edition": "2006"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc21_ee34/preview",
+      "module2": "https://archive.nptel.ac.in/courses/108/101/108101112/",
+      "module3": "https://archive.nptel.ac.in/courses/117/105/117105138/",
+      "module4": "https://onlinecourses.nptel.ac.in/noc21_ee34/preview"
+    },
+    "semester": "7",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:07:38.266Z"
+}

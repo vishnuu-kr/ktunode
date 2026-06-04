@@ -1,0 +1,199 @@
+{
+  "subject": "SURVEYING & GEOMATICS",
+  "branch": "Civil Engineering",
+  "semester": 3,
+  "details": {
+    "name": "SURVEYING & GEOMATICS",
+    "courseCode": "PBCET304",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "GCEST104",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 1
+    },
+    "CIE": 60,
+    "ESE": 40,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Surveying :  Principles, Linear, angular and graphical methods",
+          "Survey stations",
+          "Survey lines- ranging",
+          "Bearing of survey lines",
+          "Local attraction",
+          "Declination",
+          "Methods of orientation (by compass and by back sighting).",
+          "Levelling  : Principles of levelling- Dumpy level, booking and reducing levels",
+          "Methods- simple, differential, reciprocal levelling, profile levelling and cross sectioning.",
+          "Digital and Auto Level",
+          "Errors in levelling"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Contouring  : Characteristics, methods, uses.",
+          "Areas and Volumes : computation of area by offsets to base line, by dividing area into number of triangles; volume of level section by prismoidal and trapezoidal formulae.",
+          "Mass diagram  : Construction, Characteristics and uses",
+          "Triangulation : Triangulation figures, Triangulation stations, Inter visibility of stations, Satellite Stations and reduction to centre."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Theory of Errors   : Types, theory of least squares, Weighting of observations, Most probable value, Computation of indirectly observed quantities - method of normal equations.",
+          "Total Station  : Concept of EDM, principles and working, advantages and applications",
+          "Global Positioning Systems-Components and principles, satellite ranging-calculating position, signal structure, application of GPS",
+          "GPS Surveying methods-Static, Rapid static, Kinematic methods – DGPS,",
+          "Recent trends in Surveying  : GNSS, Smart Station and LIDAR"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Remote Sensing  : Definition- Electromagnetic spectrum-Energy interactions with atmosphere and earth surface features-spectral reflectance of vegetation, soil and water- Classification of sensors- Active and Passive, Resolution-spatial, spectral radiometric and Temporal resolution, Multi spectral scanning-Along track and across track scanning",
+          "Geographical Information System  : Components of GIS, GIS operations, Map projections- methods, Coordinate systems-Geographic and Projected coordinate systems, Data Types- Spatial and attribute data, Raster and vector data representation"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 30,
+        "internalExam1": 12.5,
+        "internalExam2": 12.5,
+        "total": 60
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 2 marks (8x2 =16 marks)",
+          "marks": 16
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 2 sub divisions.  Each question carries 6 marks. (4x6 = 24 marks)",
+          "marks": 24
+        },
+        "total": 40
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand and apply the principles and techniques of surveying",
+        "knowledgeLevel": "K2, K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply the principles of surveying for triangulation, area and volume computation, contour maps preparation and in the construction of mass diagram",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand the concept of least squares, weight of observations and to identify the possible errors in the field observations",
+        "knowledgeLevel": "K2 k3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand different surveying techniques using advanced surveying equipments.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Prepare a survey report incorporating various concepts of surveying.",
+        "knowledgeLevel": "K6"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Surveying Vol 1",
+        "author": "Dr. B C Punmia,Ashok Kumar Jain & Arun Kumar Jain",
+        "publisher": "Laxmi Publications (P) Ltd.",
+        "edition": "Seventeenth Edition Jan 2016"
+      },
+      {
+        "title": "Surveying Vol II",
+        "author": "Dr. B C Punmia,Ashok Kumar Jain & Arun Kumar Jain",
+        "publisher": "Laxmi Publications (P) Ltd.",
+        "edition": "July 2018"
+      },
+      {
+        "title": "Introduction to Geographic Information Systems",
+        "author": "Kang-Tsung Chang",
+        "publisher": "Mc Graw Hill Education Indian Edition",
+        "edition": "July 2017"
+      },
+      {
+        "title": "Fundamentals of Remote Sensing",
+        "author": "George Joseph",
+        "publisher": "Universities Press",
+        "edition": "2005"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Textbook of Surveying",
+        "author": "C Venketaramaiah",
+        "publisher": "Universities Press",
+        "edition": "2011"
+      },
+      {
+        "title": "Surveying Vol I",
+        "author": "S K Duggal",
+        "publisher": "Mc Graw Hill",
+        "edition": "Fifth Edition,2019"
+      },
+      {
+        "title": "Surveying Vol II",
+        "author": "S K Duggal",
+        "publisher": "Mc Graw Hill",
+        "edition": "Fifth Edition,2019"
+      },
+      {
+        "title": "A textbook of Surveying and Levelling",
+        "author": "R Agor",
+        "publisher": "Khanna Publishers",
+        "edition": "2005"
+      },
+      {
+        "title": "Textbook of Remote Sensing And Geographical Information Systems",
+        "author": "Ms. Anji Reddy",
+        "publisher": "B.S Publications",
+        "edition": "Fourth Edition,2012"
+      },
+      {
+        "title": "Remote Sensing and Image Interpretation,7 Ed(An Indian Adaptation)",
+        "author": "Thomas M Lillesand, Ralph W. Kiefer",
+        "publisher": "Wiley",
+        "edition": "Seventh Edition,2000"
+      },
+      {
+        "title": "Principles of Geographical Information Systems",
+        "author": "Burrough P",
+        "publisher": "Oxford University Press",
+        "edition": "1998"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/105107122",
+      "module2": "https://nptel.ac.in/courses/105107122",
+      "module3": "https://archive.nptel.ac.in/courses/105/104/105104100/",
+      "module4": "https://onlinecourses.nptel.ac.in/noc22_ce84/preview"
+    },
+    "semester": "3",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:42:08.339Z"
+}

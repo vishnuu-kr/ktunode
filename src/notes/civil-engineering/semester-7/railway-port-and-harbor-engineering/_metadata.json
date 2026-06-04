@@ -1,0 +1,207 @@
+{
+  "subject": "RAILWAY, PORT AND HARBOR ENGINEERING",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "RAILWAY, PORT AND HARBOR ENGINEERING",
+    "courseCode": "PECET754",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET502",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Role of Railways in the development of a Nation- Development of railways in India-Track Alignment - Basic requirements- Factors in selection of suitable alignment-Surveys for track alignment- Permanent way and Railway track components- Functions of various  components - Rails",
+          "Sleepers",
+          "Ballast",
+          "Rails - types of rails",
+          "rail sections- defects in rails",
+          "creep of rails",
+          "theories- Measurement of creep- Prevention of creep",
+          "Rail fixtures and fastenings ",
+          "rail joints and welding of rails ",
+          "Sleepers – types",
+          "spacing and density",
+          "Ballast – types",
+          "advantages and disadvantages",
+          "Subgrade  – Functions- Material and its improvement (brief description only) - Concept of Gauges- Selection of Gauge-Uniformity of gauge . Coning of wheels-Theory of coning- advantages and disadvantages."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Geometric design of track : gradients",
+          "grade compensation",
+          "speed of trains on curves",
+          "super elevation",
+          "cant deficiency",
+          "negative super elevation",
+          "curves",
+          "types (brief description)",
+          "necessity of providing transition curve",
+          "length of transition curve",
+          "widening on curves",
+          "Points and crossings -Necessity – Turnout- components- Crossings- Components- Design features of turnout- Types of Track Junctions -Construction of Railway Track - Earthwork and consolidation- Plate laying- Laying of ballast."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Water Transportation : Advantages and disadvantages",
+          "Harbours - Classification",
+          "requirements and characteristics of good harbour",
+          "principles of harbour planning",
+          "site selection- Layout of harbour-Shape of harbour",
+          "harbour depth",
+          "Ship characteristics",
+          "Effects of natural phenomena on marine structures - Tides",
+          "Wind",
+          "Water waves Littoral drift",
+          "Marine Structure - General design aspects",
+          "Breakwaters - function",
+          "types",
+          "general design principles",
+          "construction methods",
+          "Wharves",
+          "Quays",
+          "Jetties",
+          "Piers",
+          "Pier heads",
+          "Dolphin",
+          "Fenders",
+          "Mooring Accessories."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Navigational Aids - Necessity",
+          "Types of navigation aids",
+          "Requirement of signals",
+          "Fixed and floating navigation aid- Docking and Repair Facilities - wet dock",
+          "classification-different types-design considerations- operation of lock gates and passage- Dry dock- Graving dry dock- design aspects- floating dry dock- design aspects- Port Facilities- Port building facilities",
+          "Transit sheds",
+          "Warehouses",
+          "Cargo handling facility",
+          "Services for shipping terminals",
+          "Inland port facilities planning."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify factors affecting alignment of railway track for a given terrain and to explain the component parts of railway tracks, its functions, and materials of making",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Carry out geometric design of railway track and to explain the construction procedure of railway tracks",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the basic principles, site selection characteristics and lay out of ports and harbours and the basics of docks.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Understand the concepts of various structures on harbours and navigational aids for communication.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Railway Track Engineering,",
+        "author": "Mundrey J. S",
+        "publisher": "Tata McGraw Hill",
+        "edition": "5th edition 2017"
+      },
+      {
+        "title": "Harbour. Dock & Tunnel Engineering,",
+        "author": "Srinivasan,R.",
+        "publisher": "Charotar Publishing House,",
+        "edition": "28e, 2016"
+      },
+      {
+        "title": "Railway Engineering.",
+        "author": "Rangawala, S.C.",
+        "publisher": "Charotor Publishing House",
+        "edition": "27th edition 2017"
+      },
+      {
+        "title": "A course in Docks and Harbour Engineering,",
+        "author": "Bindra. S.P.",
+        "publisher": "Dhanpat Rai& Sons",
+        "edition": "January 2012"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Railway Engineering",
+        "author": "Chandra, S. and Agarwal, M.M.",
+        "publisher": "Oxford University Press, New Delhi",
+        "edition": "Second edition 2013"
+      },
+      {
+        "title": "Railway Engineering.",
+        "author": "Saxena, S. C and Arora, S. P",
+        "publisher": "Dhanpat Rai & Sons",
+        "edition": "7e, 2015"
+      },
+      {
+        "title": "Dock and Harbour Engineering",
+        "author": "H P Oza and G H Oza",
+        "publisher": "Charotar Publishing House",
+        "edition": "8th Edition 2017"
+      }
+    ],
+    "videoLinks": {
+      "module1": "http://acl.digimat.in/nptel/courses/video/105107123/105107123.html",
+      "module2": "http://acl.digimat.in/nptel/courses/video/105107123/105107123.html",
+      "module3": "http://www.digimat.in/nptel/courses/video/114106025/114106025.html",
+      "module4": "http://www.digimat.in/nptel/courses/video/114106025/114106025.html"
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T19:00:43.049Z"
+}

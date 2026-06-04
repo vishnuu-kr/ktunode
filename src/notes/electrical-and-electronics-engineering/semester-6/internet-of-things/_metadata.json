@@ -1,0 +1,170 @@
+{
+  "subject": "INTERNET OF THINGS",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 6,
+  "details": {
+    "name": "INTERNET OF THINGS",
+    "courseCode": "PEEET634",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Nil",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to IoT technology: Definitions of IoT",
+          "Characteristics of IoT devices – power, computational constraints",
+          "IoT Architectural view – Middleware based architecture, Service oriented architecture",
+          "M2M Communication and IoT",
+          "Typical application areas of IoT technology (case studies of at least four domains) - Energy management and Smart grid",
+          "IoT for Home, Cities, Environment monitoring, Agriculture, Supply chain and customer monitoring"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Components of IoT technology: Identification/Addressing - Electronic Product Codes, RFID, ubiquitous code, IPv4, IPv6.",
+          "Sensors and Actuators*",
+          "IoT Hardware**",
+          "IoT Software – overview of Operating systems, Firmware, Middle ware, Application software used in IoT.",
+          "Connectivity for IoT devices – characteristics."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Communication technologies for IoT : Zigbee - key features, architecture, limitations",
+          "Bluetooth technology - bluetooth stack, piconet, scatternet, limitations",
+          "Bluetooth Low Energy (key features, architecture, limitations)",
+          "Wifi (IEEE 802.11) technology – key features, limitations",
+          "Cellular technology – GSM, 3G, 4GLTE (overview), features, limitations",
+          "LoRa technology – features, LoRaWAN architecture",
+          "6LoWPAN – features, protocol stack",
+          "Narrow Band (NB- IoT) – features, applications",
+          "Sigfox – features, applications"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "IoT Data Management : Storage technologies for IoT hardware – Volatile, Non-volatile, Embedded (MTP/OTP), external flash (NAND/NOR), DRAM, eflash, UFS, eMMC (overview of technologies).",
+          "Cloud and IoT",
+          "Cloud computing – architecture, advantages of cloud computing",
+          "Software as a Service (SaaS)",
+          "Platform as a Service (PaaS)",
+          "Infrastructure as a Service (IaaS).",
+          "Case study of commercial cloud computing platforms like - Microsoft Azure IoT Suite, Google Cloud's IoT Platform, IBM Watson IoT Platform.",
+          "IoT analytics"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain in a concise manner the architecture of IoT",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Identify various hardware and software components used in IoT",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Discuss the various communication technologies and interfaces in IoT",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Describe the usage of modern technologies like cloud computing for data management in IoT",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Internet of Things : \nArchitecture and Design \nPrinciples”",
+        "author": "Rajkamal",
+        "publisher": "McGraw Hill (India) \nPrivate Limited.",
+        "edition": "2nd \nedition,20\n22"
+      },
+      {
+        "title": "Internet of Things (A Hands-on- Approach)",
+        "author": "Vijay Madisetti and \nArshdeep Bahga",
+        "publisher": "Orient Blackswan \nPrivate Limited - \nNew Delhi",
+        "edition": "1st \nEdition,201\n5"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Internet of things: A survey on enabling technologies, protocols, and applications",
+        "author": "Al-Fuqaha",
+        "publisher": "IEEE \nCommunications \nSurveys & Tutorials",
+        "edition": "2015"
+      },
+      {
+        "title": "The Internet of Things",
+        "author": "Samuel Greengard",
+        "publisher": "The MIT Press \nEssential Knowledge \nseries Paperback",
+        "edition": "March 20, 2015"
+      },
+      {
+        "title": "The Internet of Things: \nConverging Technologies for \nSmart Environments and \nIntegrated Ecosystems",
+        "author": "Ovidu Vermesan and \nPeter Friess",
+        "publisher": "River Publishers",
+        "edition": "1st \nEdition , \n2013"
+      },
+      {
+        "title": "Internet of Things - From \nResearch and Innovation to \nMarket Deployment",
+        "author": "Peter Friess, Ovidiu \nVermesan",
+        "publisher": "River Publishers",
+        "edition": "1st \nEdition,20\n14"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://youtu.be/WUYAjxnwjU4?si=s58W-NKMrEQMaJ8m\nhttps://youtu.be/BXDxYh1EV2w?si=8oFtQB9vycC_c-t2",
+      "module2": "https://youtu.be/z3VEZPwl5gA?si=tNuzG_By-KBU3ks_\nhttps://youtu.be/SXz0XR68dwE?si=1tVN1g9FQcGp87li\nhttps://youtu.be/TvzgzO6xKrY?si=gYzJstW51MTNsgKj",
+      "module3": "https://youtu.be/qko-f1VDhCM?si=0tWM_OHS395ESV_w\nhttps://youtu.be/d9QfVpCG00Y?si=qeHk8tPg_torr2yX\nhttps://youtu.be/1zQ8wbBozqI?si=7vOSHMt8OT3nQINO",
+      "module4": "https://youtube.com/playlist?list=PLE7VH8RC_N3bpVn-\ne8QzOAHziEgmjQ2qE&si=rr5Fpuew5q9_Y4qg"
+    },
+    "semester": "6",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:28:18.485Z"
+}

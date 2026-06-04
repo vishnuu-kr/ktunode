@@ -1,0 +1,213 @@
+{
+  "subject": "COMPUTATIONAL COMPLEXITY",
+  "branch": "Computer Science and Engineering",
+  "semester": 8,
+  "details": {
+    "name": "COMPUTATIONAL COMPLEXITY",
+    "courseCode": "PECST864",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCST302, PCCST502",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Complexity Theory - Basic concepts and motivations",
+          "Deterministic and nondeterministic models",
+          "Turing machines",
+          "computational models.",
+          "Complexity Classes P and NP - Definitions and examples of P and NP",
+          "Polynomial-time algorithms",
+          "NP-completeness and the Cook-Levin theorem.",
+          "Reductions and Completeness - Polynomial-time reductions",
+          "NP-complete problems",
+          "their significance",
+          "Examples of NP-complete problems"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 2 - Ch 7",
+          "Text 2 - Ch 7, 8",
+          "Text 1 - Ch 2"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Space Complexity - Space complexity classes: L, NL, PSPACE",
+          "Savitch's theorem and NL-completeness",
+          "PSPACE-completeness.",
+          "Polynomial Hierarchy and Alternation - Definition of the polynomial hierarchy (PH)",
+          "Complete problems for each level of PH",
+          "Relationship between PH and other classes."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text  2 - Ch 8",
+          "Text 1 - Ch 5"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Interactive Proofs - Definition and examples of interactive proofs",
+          "IP = PSPACE theorem",
+          "Zero-knowledge proofs.",
+          "Probabilistically Checkable Proofs (PCPs) - Introduction to PCPs",
+          "PCP theorem and implications",
+          "Applications in hardness of approximation."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1 - Ch 8",
+          "Text 1 - Ch 9"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Circuit Complexity - Boolean circuits and circuit complexity",
+          "Circuit lower bounds",
+          "Complexity of specific functions.",
+          "Quantum Complexity - Basics of quantum computation",
+          "Quantum complexity classes: BQP, QMA",
+          "Quantum algorithms and their complexity."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 2 - Ch 9",
+          "Text 3 - Ch 10, 11"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.  \n● Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.  \n● Two questions will be given from each module, out of which 1 question should be answered.  \n● Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe and interpret different computational models, including deterministic and nondeterministic Turing machines.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Recall and categorize complexity classes such as P, NP, and PSPACE, and explain their fundamental properties.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Use polynomial-time reductions to demonstrate problem completeness and analyze the computational difficulty of problems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Evaluate problems based on their space complexity and apply theories like Savitch's theorem to assess space -bounded algorith ms.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO5",
+        "description": "Examine advanced topics in complexity theory, including interactive proofs, PCPs, and quantum complexity, and their implications for computational theory.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Computational Complexity: A Modern Approach",
+        "author": "Sanjeev Arora, Boaz Barak",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2019"
+      },
+      {
+        "title": "Introduction to the Theory of Computation",
+        "author": "Michael Sipser",
+        "publisher": "Cengage",
+        "edition": "3/e,  2014"
+      },
+      {
+        "title": "Quantum Computing: A Gentle Introduction",
+        "author": "Eleanor Rieffel, Wolfgang Polak",
+        "publisher": "MIT Press",
+        "edition": "1/e, 2014"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Randomized Algorithms",
+        "author": "Rajeev Motwani and Prabhakar Raghavan",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2004"
+      },
+      {
+        "title": "Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis",
+        "author": "Michael Mitzenmacher and Eli Upfal",
+        "publisher": "Cambridge University Press",
+        "edition": "3/e, 2017"
+      },
+      {
+        "title": "Introduction to Algorithms",
+        "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein",
+        "publisher": "The MIT Press\nCambridge",
+        "edition": "4/e, 2023"
+      },
+      {
+        "title": "The Probabilistic Method",
+        "author": "Noga Alon and Joel H. Spencer",
+        "publisher": "Wiley-Blackwell",
+        "edition": "4/e, 2016"
+      },
+      {
+        "title": "Approximation Algorithms",
+        "author": "Vijay V. Vazirani",
+        "publisher": "Springer",
+        "edition": "4/e, 2013"
+      },
+      {
+        "title": "Theory of Computation : Classical And Contemporary Approaches",
+        "author": "Dexter C Kozen",
+        "publisher": "Springer",
+        "edition": "6/e, 2006"
+      },
+      {
+        "title": "Computational Complexity: A Conceptual Perspective",
+        "author": "Oded Goldreich",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2008"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc21_cs90/preview\nhttps://onlinecourses.nptel.ac.in/noc21_c s49/preview",
+      "module2": "https://onlinecourses.nptel.ac.in/noc21_cs90/preview\nhttps://onlinecourses.nptel.ac.in/noc21_cs49/preview",
+      "module3": "https://onlinecourses.nptel.ac.in/noc21_cs90/preview\nhttps://onlinecourses.nptel.ac.in/noc21_cs49/preview",
+      "module4": "https://onlinecourses.nptel.ac.in/noc21_cs90/preview\nhttps://onlinecourses.nptel.ac.in/noc21_cs49/preview\nhttps://archive.nptel.ac.in/courses/106/104/106104241/"
+    },
+    "semester": "8",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:23:45.419Z"
+}

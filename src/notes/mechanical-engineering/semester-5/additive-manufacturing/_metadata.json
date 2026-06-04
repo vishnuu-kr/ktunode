@@ -1,0 +1,189 @@
+{
+  "subject": "ADDITIVE MANUFACTURING",
+  "branch": "Mechanical Engineering",
+  "semester": 5,
+  "details": {
+    "name": "ADDITIVE MANUFACTURING",
+    "courseCode": "PEMET524",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Additive Manufacturing (AM)  –Basic principle of AM-",
+          "Procedure of product development in AM process chain.",
+          "Classification of additive manufacturing processes",
+          "Basic concept",
+          "Digitization techniques",
+          "Benefits and challenges in AM.",
+          "Data processing for AM- CAD model preparation",
+          "Part orientation and support generation",
+          "Slicing methods",
+          "Tool path generation",
+          "STL Formats.",
+          "Demonstration of slicing software packages."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Common AM technologies: Principle, materials, process parameters, advantages and applications of: Stereo Lithography (SLA)",
+          "Digital Light Processing (DLP)",
+          "Continuous Liquid Interface Production (CLIP)",
+          "Laminated Object Manufacturing (LOM)",
+          "Ultrasonic AM (UAM)",
+          "3D printing",
+          "Binder Jetting",
+          "Material Jetting",
+          "Fused Deposition Modelling  (FDM)",
+          "Direct Ink Writing (DIW)."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Common AM technologies:  Principle, materials, process parameters, advantages and applications of: Selective Laser Sintering (SLS)",
+          "Selection Laser Melting (SLM)",
+          "Electron Beam Melting (EBM)",
+          "Wire Arc Additive Manufacturing (WAAM)",
+          "Laser Engineering Net Shaping(LENS)."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Design for AM (DFAM)",
+          "AM unique capabilities",
+          "DFAM concepts and objectives",
+          "Design freedom and synthesis methods.",
+          "Applications for AM",
+          "Applications: Prototyping",
+          "Industrial tooling",
+          "Aerospace",
+          "Automobile",
+          "Medical etc."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the concept of AM from conventional manufacturing systems.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Understand the data processing techniques in AM process",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand the principles of AM processes.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Create components using AM process.",
+        "knowledgeLevel": "K6"
+      },
+      {
+        "CO": "CO5",
+        "description": "Understand the key aspects in design a product using AM.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO6",
+        "description": "Understand the application of AM in industries",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Additive Manufacturing Technologies-3D Printing, Rapid Prototyping, and Direct Digital Manufacturing.",
+        "author": "Gibson l D. W. Rosen l and B. Stucker",
+        "publisher": "Springer",
+        "edition": "Second Edition, 2015"
+      },
+      {
+        "title": "Rapid prototyping: Principles and applications",
+        "author": "Chua, C.K., Leong K.F. and Lim C.S.",
+        "publisher": "World Scientific Publishers",
+        "edition": "Third edition, 2010."
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Rapid Manufacturing The Technologies and Applications of Rapid Prototyping and Rapid Tooling",
+        "author": "D.T. Pham and S.S . Dimov",
+        "publisher": "Springer London Ltd",
+        "edition": "Softcover reprint of the original 1st ed. 2001, 2011"
+      },
+      {
+        "title": "Additive Manufacturing: Principles, technologies and Application",
+        "author": "C.P. Paul, A.N. Jinoop",
+        "publisher": "McGraw Hill",
+        "edition": "First Edition, 2021"
+      },
+      {
+        "title": "Additive Manufacturing Technologies",
+        "author": "S. Shiva, Anuj K. Shukla",
+        "publisher": "Wiley",
+        "edition": "First Edition, 2024"
+      },
+      {
+        "title": "Additive Manufacturing: Fundamentals and Advancements",
+        "author": "Manu Srivastava, Sandeep Rathee, Sachin Maheshwari",
+        "publisher": "CRC Press",
+        "edition": "First Edition, 2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/112103306",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:57:25.534Z"
+}

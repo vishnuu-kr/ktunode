@@ -1,0 +1,213 @@
+{
+  "subject": "ENGINEERING THERMODYNAMICS",
+  "branch": "Mechanical Engineering",
+  "semester": 4,
+  "details": {
+    "name": "ENGINEERING THERMODYNAMICS",
+    "courseCode": "PCMET403",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction and basic concepts",
+          "application areas of thermodynamics",
+          "macroscopic and microscopic viewpoints",
+          "continuum",
+          "systems and control volumes",
+          "types of systems",
+          "properties of a system",
+          "state and equilibrium",
+          "the state postulate",
+          "processes and cycles",
+          "Temperature and the Zeroth law of thermodynamics",
+          "temperature scales",
+          "forms of energy",
+          "physical insight to internal energy",
+          "energy transfer by heat and work",
+          "path function."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "First law of thermodynamics",
+          "energy balance",
+          "(energy and exercise, dieting, mass gain and mass loss, etc. Can be discussed as examples)",
+          "mechanisms of energy transfer",
+          "moving boundary work",
+          "boundary work for polytropic process",
+          "energy balance for closed systems",
+          "enthalpy and specific heats",
+          "flow work and the energy of a flowing fluid",
+          "mass and energy analysis of control volumes",
+          "SFEE",
+          "steady-flow devices: nozzles and diffusers",
+          "throttling valves",
+          "mixing chambers",
+          "Thermal energy reservoirs",
+          "heat engines and thermal efficiency",
+          "refrigerators and heat pumps",
+          "COP",
+          "heat pumps"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Second law: Kelvin–Planck statement",
+          "Second law: Clausius statement",
+          "equivalence of the two statements",
+          "perpetual-motion machines",
+          "reversible and irreversible processes",
+          "internally reversible processes",
+          "Carnot and Reversed Carnot cycle",
+          "Carnot principles",
+          "thermodynamic temperature scale",
+          "entropy",
+          "internally reversible isothermal heat transfer",
+          "the increase of entropy principle",
+          "the Tds relations",
+          "isentropic efficiency",
+          "exergy",
+          "reversible work and irreversibility",
+          "second-law efficiency"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Entropy generation",
+          "S gen associated with a heat transfer process",
+          "entropy generation in daily life",
+          "isentropic process",
+          "Third law of thermodynamics",
+          "Phase transformations of pure substance",
+          "saturated liquid",
+          "saturated vapor and superheated vapor",
+          "triple point",
+          "properties during change of phase",
+          "T-v, p-v and p-T diagram of pure substance",
+          "Mollier charts",
+          "dryness fraction",
+          "property calculations using steam tables",
+          "isentropic efficiency of steam turbines and nozzles",
+          "ideal gas equation",
+          "gas constants",
+          "deviations from ideal gas model",
+          "compressibility",
+          "Van-der-Waals equation of state"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand basic concepts of thermodynamics",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Understand the laws of thermodynamics",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Conduct first law analysis of open and closed systems",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Determine entropy changes associated with different processes",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Determine the properties of pure substances",
+        "knowledgeLevel": "K2, K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Thermodynamics: an engineering approach.",
+        "author": "Cengel, Yunus A., Michael A. Boles, and Mehmet Kanoğlu.",
+        "publisher": "McGraw-hill",
+        "edition": "2011"
+      },
+      {
+        "title": "Engineering Thermodynamics",
+        "author": "P.K. Nag",
+        "publisher": "McGraw-Hill Education",
+        "edition": "6th Edition, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Fundamentals of Engineering Thermodynamics",
+        "author": "Moran J. Shapiro N. M.",
+        "publisher": "Wiley",
+        "edition": "2006"
+      },
+      {
+        "title": "Fundamentals of Thermodynamics",
+        "author": "Richard E. Sonntag, Claus Borgnakke, Gordon J. VanWylen",
+        "publisher": "Wiley",
+        "edition": "8th Edition, 2014"
+      },
+      {
+        "title": "Thermodynamics: Principles and Applications",
+        "author": "Jean-Philippe Ansermet, Sylvain D. Brechet",
+        "publisher": "Cambridge University Press",
+        "edition": "1st Edition, 2019"
+      }
+    ],
+    "videoLinks": {
+      "module1": "1. Engineering Thermodynamics \nProf. Suman Chakraborty, IIT Kharagpur \nhttps://nptel.ac.in/courses/112/105/112105123/\n2. Chemical Engineering Thermodynamics \nProf. Dr. Sandip Roy IIT Bombay \nhttps://nptel.ac.in/courses/103/101/103101004/",
+      "module2": "1. Engineering Thermodynamics \nProf. Suman Chakraborty, IIT Kharagpur \nhttps://nptel.ac.in/courses/112/105/112105123/\n2. Chemical Engineering Thermodynamics \nProf. Dr. Sandip Roy IIT Bombay \n             https://nptel.ac.in/courses/103/101/103101004/",
+      "module3": "1. Engineering Thermodynamics \nProf. Suman Chakraborty, IIT Kharagpur \nhttps://nptel.ac.in/courses/112/105/112105123/\n2. Chemical Engineering Thermodynamics \nProf. Dr. Sandip Roy IIT Bombay \n             https://nptel.ac.in/courses/103/101/103101004/",
+      "module4": "1. Engineering Thermodynamics \nProf. Suman Chakraborty, IIT Kharagpur \nhttps://nptel.ac.in/courses/112/105/112105123/"
+    },
+    "semester": "4",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:53:09.310Z"
+}

@@ -1,0 +1,178 @@
+{
+  "subject": "POWER PLANT ENGINEERING",
+  "branch": "Mechanical Engineering",
+  "semester": 6,
+  "details": {
+    "name": "POWER PLANT ENGINEERING",
+    "courseCode": "PEMET631",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "-",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Analysis of Steam Cycle",
+          "Steam engineering-temperature entropy diagram- mollier diagram-",
+          "Rankine cycle-steam power plant, internally irreversible and",
+          "externally irreversible Rankine cycle-Mean temperature of heat",
+          "addition-Effect of superheat and inlet pressure-Reheating of steam,",
+          "Regeneration-Regenerative feed water heating-Feed water heaters-",
+          "Efficiencies in a steam power plant-binary vapor cycle"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Steam generator classifications",
+          "Cochran boiler-Lancashire boiler-Cornish boiler-locomotive boiler-",
+          "Babcock and Wilcox boiler Stirling boiler-high pressure boilers-",
+          "boiler mountings and accessories",
+          "Steam nozzles",
+          "Flow through steam nozzles-throat pressure for maximum discharge-",
+          "effect of friction-super saturated flow",
+          "Steam turbines",
+          "Impulse and reaction turbines-velocity diagram-condition for",
+          "maximum efficiency-compounding-reheat factor-blade height-",
+          "governing of steam turbines-cogeneration and combined cycle power",
+          "generation"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Thermal power plants",
+          "General layout-site selection-fuel handling, storage and burning",
+          "systems-dust and ash handling system-chimney draught",
+          "Nuclear power plants",
+          "Classification-components-safety measures-effects of nuclear",
+          "radiation-nuclear waste disposal.",
+          "Gas turbine power plants",
+          "Classification-closed open and other systems",
+          "Hydro Electric Power Plants",
+          "Classification- Typical Layout and associated components"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Energy Storage",
+          "Pumped hydro, Compressed air energy storage, flywheel energy",
+          "storage, Electrochemical energy storage, magnetic energy storage,",
+          "Thermal energy storage, Chemical energy storage",
+          "Economics of power generation",
+          "Estimation of load-load curve-load factor-diversity factor-capacity",
+          "factor-use factor-economics in plant selection-economics of",
+          "generation and distribution of power-useful life-tariff for electrical",
+          "energy.",
+          "Environmental pollution and its control",
+          "Pollutants from power plants-control of pollutants-control of",
+          "particulate matter -Control of SO2- control of wastewater from",
+          "steam power plants-pollution from nuclear power plants-noise",
+          "pollution and noise control"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the layout, components and working of steam, gas, hydro, and nuclear power plants.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Calculate the performance parameters of simple and modified Rankine cycles.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Calculate the performance parameters of steam turbines and steam nozzles.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the working of various energy storage systems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Discuss the economics of power generation and pollution from power plants and their effect on the environment",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Power Plant Technology",
+        "author": "M. M. El Wakil",
+        "publisher": "McGraw Hill Education",
+        "edition": "1, 2017"
+      },
+      {
+        "title": "Power Plant Engineering",
+        "author": "P. K. Nag",
+        "publisher": "McGraw Hill Education",
+        "edition": "4, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Power Plant Engineering",
+        "author": "G. R. Nagpal, S. C. Sharma",
+        "publisher": "KHANNA Publishers",
+        "edition": "16, 2012"
+      },
+      {
+        "title": "Power Plant Engineering",
+        "author": "Manoj Kumar Gupta",
+        "publisher": "PHI Learning Pvt. Ltd",
+        "edition": "1, 2012"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/112/107/112107291/",
+      "module2": "https://archive.nptel.ac.in/courses/112/107/112107291/",
+      "module3": "https://archive.nptel.ac.in/courses/112/107/112107291/",
+      "module4": "https://archive.nptel.ac.in/courses/112/107/112107291/"
+    },
+    "semester": "6",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:06:17.994Z"
+}

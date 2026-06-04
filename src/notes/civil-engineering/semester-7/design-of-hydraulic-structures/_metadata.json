@@ -1,0 +1,183 @@
+{
+  "subject": "DESIGN OF HYDRAULIC STRUCTURES",
+  "branch": "Civil Engineering",
+  "semester": 7,
+  "details": {
+    "name": "DESIGN OF HYDRAULIC STRUCTURES",
+    "courseCode": "PECET755",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Diversion head works- layout and functions of components",
+          "Weir and barrage- Causes of failure of weirs on permeable soils - Bligh’s theory and Khosla’s theory",
+          "Design of vertical drop weir",
+          "Design of impervious floor of hydraulic structures by Khosla’s theory",
+          "Cross drainage works-Types, selection of suitable type",
+          "Type of aqueducts",
+          "Regulation Works - Canal falls-necessity, classification",
+          "Canal regulators- Regulator cum road bridge- Head regulators and cross regulators"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Hydraulic design   and Drawing of the following hydraulic structures:",
+          "Tank sluice",
+          "Canal Fall (Trapezoidal Notch type)",
+          "Syphon Aqueduct (Type III)",
+          "Syphon Well Drop",
+          "Canal Regulator (Using Khosla’s Theory"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Dams-Types",
+          "Gravity dam – selection of site- forces acting - stability analysis and modes of failure – Principal and shear stresses Problems - Elementary profile –limiting height of gravity dams high and low dams- Practical profiles",
+          "Functions of various components shafts, keys, water stops, and different types of galleries",
+          "Grouting",
+          "Instrumentation in dams (Concept only)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Earth dams-types, causes of failure and design criteria",
+          "Arch dams- thin cylinder theory",
+          "Spillways-types-Ogee spillway profile",
+          "Energy dissipation- stilling basins-Indian standard Type I and Type II (description only)",
+          "Arch dams-types, methods for design (list only)-Thin cylinder theory"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions. Each question carries 9 marks. (4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Elucidate the causes of failure, principles of design of different components of hydraulic structures",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Perform the hydraulic design of existing minor irrigation structures such as cross drainage works, canal falls, cross regulator by group activity",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Prepare the scaled drawings of different minor irrigation structures",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyse the designs principles and features of dams and perform the stability analysis of gravity dams",
+        "knowledgeLevel": "K4/K5"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply the design criteria of earthen dam and arch dams",
+        "knowledgeLevel": "K4, K5"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Irrigation Engineering and Hydraulic Structures",
+        "author": "Garg S.K",
+        "publisher": "Khanna Publishers",
+        "edition": "2023 (38th R  edition)"
+      },
+      {
+        "title": "Irrigation, Water Resources and Water Power Engineering",
+        "author": "Modi. P. N",
+        "publisher": "Standard Book House",
+        "edition": "2020"
+      },
+      {
+        "title": "Irrigation and Water Power Engineering.",
+        "author": "Punmia B.C,  B. B. Pande Lal",
+        "publisher": "Laxmi Publications (P) Ltd.",
+        "edition": "2010(12th edition)"
+      },
+      {
+        "title": "Water Resources Engineering- Principles and Practice",
+        "author": "Sathyanarayana M. C.",
+        "publisher": "New Age International Publishers",
+        "edition": "2020  (2nd Revised edition)"
+      },
+      {
+        "title": "Irrigation, Water Resources and Water Power Engineering",
+        "author": "K R Arora",
+        "publisher": "S.B.H Publishers and Distributors, New Delhi.",
+        "edition": "2010"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Theory & Design of Irrigation Structures -Vol III",
+        "author": "Varshney, R.S",
+        "publisher": "Nem Chand & Bros., Roorkee",
+        "edition": "2001( 5 th edition)"
+      },
+      {
+        "title": "Irrigation and Water Resources Engineering",
+        "author": "Asawa. G.L",
+        "publisher": "New Age International Publishers",
+        "edition": "2008"
+      },
+      {
+        "title": "Irrigation Engineering & Hydraulic Structures",
+        "author": "Sahasrabudhe S.R.",
+        "publisher": "S.K. Kataria & Sons",
+        "edition": "2013"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:57:39.758Z"
+}

@@ -1,0 +1,174 @@
+{
+  "subject": "MECHANICS OF FLUID FLOW",
+  "branch": "Civil Engineering",
+  "semester": 4,
+  "details": {
+    "name": "MECHANICS OF FLUID FLOW",
+    "courseCode": "PECET413",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET 302",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Basic Concepts and Fundamentals: Fluid statics",
+          "Cartesian Tensors",
+          "Fluid Kinematics",
+          "Description of fluid motion –Types of motion of fluid elements",
+          "Vorticity and circulation– Concept of rotational and irrotational flows",
+          "Equation of motion of forced and free vortex flow",
+          "Stream function and its relation with velocity field",
+          "`1 – Relation between stream function and velocity potential for a 2-D irrotational and incompressible flow"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Pipe Flow: Viscous flow: Reynolds experiment to classify laminar and turbulent flows",
+          "significance of Reynolds number",
+          "critical Reynolds number",
+          "shear stress and velocity distribution in a pipe",
+          "Hagen Poiseuille equation",
+          "Turbulent flow:",
+          "Chezy’s equation Moody’s chart",
+          "siphon",
+          "transmission of power through pipes",
+          "efficiency of transmission",
+          "Water hammer",
+          "real life problems causing water hammer",
+          "Cavitation.on"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Concept of Boundary Layer : Growth of boundary layer over a flat plate and definition of boundary layer thickness",
+          "displacement thickness",
+          "momentum thickness and energy thickness",
+          "laminar and turbulent boundary layers",
+          "laminar sub layer",
+          "velocity profile",
+          "Von- Karman momentum integral equations for the boundary layers",
+          "calculation of drag",
+          "separation of boundary and methods of control"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Dimensional  Analysis and Hydraulic similitude: Dimensional  analysis",
+          "Buckingham’s theorem",
+          "important dimensional numbers and their significance",
+          "geometric, Kinematic and dynamic similarity",
+          "model studies",
+          "Froude, Reynold, Weber, Cauchy and Mach laws- Applications and limitations of model testing",
+          "simple problems only"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Describe the concept of potential flow theory",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Demonstrate the concept of viscosity on flow characteristics in diverse fluid flow problems",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Use dimensional analysis to design physical or numerical experiments and to apply dynamic similarity",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "A Text Book of Fluid Mechanics and Machines",
+        "author": "Bansal R. K",
+        "publisher": "Laxmi Publications",
+        "edition": "2010"
+      },
+      {
+        "title": "Fluid Mechanics",
+        "author": "Cengel",
+        "publisher": "McGraw Hill Education India",
+        "edition": "2014"
+      },
+      {
+        "title": "Fluid Mechanics",
+        "author": "Douglas J. F",
+        "publisher": "Pearson Education",
+        "edition": "2005"
+      },
+      {
+        "title": "Mechanics of Fluids,",
+        "author": "Shames I. H",
+        "publisher": "McGraw Hill",
+        "edition": "1992"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Boundary Layer Theory",
+        "author": "Schlichting H., K. Gersten",
+        "publisher": "Springer",
+        "edition": "2000"
+      },
+      {
+        "title": "Fluid Mechanics",
+        "author": "Streeter V. L., E. B. Wylie and K. W. Bedford,",
+        "publisher": "Tata McGraw Hill, Delhi",
+        "edition": "2010"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:46:18.138Z"
+}

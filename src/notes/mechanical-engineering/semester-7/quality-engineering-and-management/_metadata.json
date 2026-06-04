@@ -1,0 +1,202 @@
+{
+  "subject": "QUALITY ENGINEERING AND MANAGEMENT",
+  "branch": "Mechanical Engineering",
+  "semester": 7,
+  "details": {
+    "name": "QUALITY ENGINEERING AND MANAGEMENT",
+    "courseCode": "PEMET758",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Quality Management",
+          "Definitions of quality",
+          "Dimensions of Quality",
+          "Concepts of Product and Service Quality",
+          "Evolution of Quality Management",
+          "quality control",
+          "quality assurance",
+          "quality planning",
+          "quality management",
+          "Total Quality Management (TQM)- he TQM axioms",
+          "Consequences of total quality- Barriers to TQM",
+          "Deming approach",
+          "Juran’s quality trilogy",
+          "Crosby's fourteen steps for quality improvement"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Human dimensions of TQM",
+          "Top management commitment- Leadership for TQM",
+          "Change management- resources for quality activities",
+          "Training for quality –Employee involvement",
+          "motivation",
+          "empowerment- teamwork- self managing teams",
+          "Role of the quality director-Quality System: ISO 9000 family of standards",
+          "Quality auditing- types and benefits"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Tools and Techniques in TQM : Affinity diagram",
+          "brainstorming",
+          "cause and effect analysis",
+          "process flow chart",
+          "check sheets",
+          "Scatter diagram",
+          "Pareto chart",
+          "Histogram",
+          "Quality control and Inspection",
+          "Fundamentals of statistics",
+          "accuracy and precision",
+          "causes of variation in quality",
+          "Statistical Process Control",
+          "control charts",
+          "𝑥̅ and R chart problems",
+          "process capability",
+          "Acceptance sampling"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Strategic Quality Management : Integrating quality into strategic management",
+          "obstacles to achieving successful strategic quality management-Cost of Quality-Customer satisfaction",
+          "Quality Function Deployment (QFD)",
+          "Failure Mode and Effect Analysis",
+          "Analysis of Variance (ANOVA)",
+          "Design and Analysis of Experiments (DOE)",
+          "Concepts of 5S",
+          "Kaizen",
+          "Six Sigma",
+          "Total Productive Maintenance"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Develop knowledge of quality management and contributions of quality gurus.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Identify various human dimensions of TQM",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Implement different tools and techniques in TQM",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Implement different statistical quality control techniques",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Demonstrate knowledge of the underlying principles of strategic quality management",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Total Quality Management(TQM)",
+        "author": "B esterfield D. H. , BesterfieldC, Besterfield G. H., Besterfield M, U. Hemant, U.Rashmi",
+        "publisher": "Pearson Education",
+        "edition": "Fifth Edition, 2018"
+      },
+      {
+        "title": "Total Quality Management",
+        "author": "SubburajRamasamy",
+        "publisher": "Tata McGraw Hill Education",
+        "edition": "First Edition, 2017"
+      },
+      {
+        "title": "Introduction to Statistical Quality Control",
+        "author": "D. C. Montgomery",
+        "publisher": "John Wiley & Sons",
+        "edition": "Third Edition"
+      },
+      {
+        "title": "Fundamentals of Quality Control and Improvement",
+        "author": "Mitra A.",
+        "publisher": "PHI",
+        "edition": "Second Edition, 1998"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Design and Analysis of Experiments",
+        "author": "D. C. Montgomery",
+        "publisher": "John Wiley & Sons",
+        "edition": "6thEdition,2004"
+      },
+      {
+        "title": "Quality Planning and Analysis - From Product Development through Use",
+        "author": "Juran J M and Gryna, F M",
+        "publisher": "Tata McGraw Hill Publishing Limited, New Delhi",
+        "edition": "Third Edition, 2004"
+      },
+      {
+        "title": "Quality is Free",
+        "author": "Crosby P B",
+        "publisher": "McGraw Hill New York",
+        "edition": "1979"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/110105088",
+      "module2": "https://nptel.ac.in/courses/110101010",
+      "module3": "https://nptel.ac.in/courses/110101010",
+      "module4": "https://nptel.ac.in/courses/110101010"
+    },
+    "semester": "7",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:16:24.907Z"
+}

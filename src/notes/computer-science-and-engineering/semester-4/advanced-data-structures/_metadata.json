@@ -1,0 +1,181 @@
+{
+  "subject": "ADVANCED DATA STRUCTURES",
+  "branch": "Computer Science and Engineering",
+  "semester": 4,
+  "details": {
+    "name": "ADVANCED DATA STRUCTURES",
+    "courseCode": "PECST495",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCST303",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Foundational Data Structures- Overview of Arrays and Linked Lists",
+          "implementation of pointers and objects",
+          "Representing rooted trees",
+          "Hashing - Hash Tables",
+          "Hash functions",
+          "Cuckoo Hashing",
+          "Bloom Filters - Count-Min Sketch",
+          "Applications to Networks - Click Stream Processing using Bloom Filters",
+          "Applications to Data Science - Heavy Hitters and count-min structures"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Advanced Tree Data Structures  - Balanced Trees - AVL Trees (review)",
+          "Red-Black Trees",
+          "Suffix Trees and Arrays",
+          "Segment Trees",
+          "Heaps and Related Structures – Binomial heap",
+          "Fibonacci Heaps",
+          "Merkle Trees",
+          "Applications to information Retrieval and WWW -   AutoComplete using Tries"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Specialized Data Structures - Spatial Data Structures – Quadtree",
+          "K-D Trees (k-dimensional tree)",
+          "R-trees",
+          "Temporal Data Structures- Persistence",
+          "Retroactivity",
+          "Search and Optimization Trees – Skip List",
+          "Tango Trees",
+          "Applications to Data Science - Approximate nearest neighbor search",
+          "Applications to information Retrieval and WWW",
+          "Posting List intersection"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Data Structure applications - Distributed and Parallel Data Structures - Distributed Hash Tables (DHTs)",
+          "Consistent Hashing",
+          "Distributed BST",
+          "Data Compression and Transformations - Burrows-Wheeler Transform",
+          "Histogram",
+          "Wavelet Trees",
+          "Cryptographic Applications – Hashing"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 0,
+        "internalExam1": 15,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.\n● Total of 8 Questions, each carrying 3 marks\n(8x3 =24 marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": " 2 questions will be given from each module, out of which 1 question should be answered.  \n Each question can have a maximum of 3 subdivisions.  \n Each question carries 9 marks.\n(4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Implement and use arrays, linked lists, rooted trees and hashing techniques in various programming scenarios.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design and implement advanced tree data structures for information retrieval.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Use spatial and temporal data structures  in data science problems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Analyze data structures in special scenarios such as distributed, parallel and data compression areas.",
+        "knowledgeLevel": "K5"
+      }
+    ],
+    "textBooks": [],
+    "referenceBooks": [
+      {
+        "title": "Advanced Data Structures: Theory and Applications",
+        "author": "Suman Saha, Shailendra Shukla",
+        "publisher": "CRC  Press",
+        "edition": "1/e, 2019"
+      },
+      {
+        "title": "Advanced Data Structures",
+        "author": "Peter Brass",
+        "publisher": "Cambridge University Press",
+        "edition": "1/e, 2008"
+      },
+      {
+        "title": "Introduction to Algorithms",
+        "author": "Thomas H Cormen, Charles E Leiserson, Ronald L Rivest, Clifford Stein",
+        "publisher": "MIT Press",
+        "edition": "4/e,  2022"
+      },
+      {
+        "title": "Fundamentals of Computer Algorithms",
+        "author": "Ellis Horowitz, SatrajSahani and Rajasekharam",
+        "publisher": "University Press",
+        "edition": "2/e, 2009"
+      },
+      {
+        "title": "Advanced Data Structures",
+        "author": "Reema Thareja, S. Rama Sree",
+        "publisher": "Oxford University Press",
+        "edition": "1/e, 2018"
+      },
+      {
+        "title": "Data Structures and Algorithm Analysis in C++",
+        "author": "Mark Allen Weiss",
+        "publisher": "Pearson",
+        "edition": "2/e, 2004"
+      },
+      {
+        "title": "Design and Analysis of Algorithms",
+        "author": "M T Goodrich, Roberto Tamassia",
+        "publisher": "Wiley",
+        "edition": "1/e, 2021"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://web.stanford.edu/class/cs166/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:12:09.120Z"
+}

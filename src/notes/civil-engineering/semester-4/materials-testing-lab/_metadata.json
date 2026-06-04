@@ -1,0 +1,339 @@
+{
+  "subject": "MATERIALS TESTING LAB",
+  "branch": "Civil Engineering",
+  "semester": 4,
+  "details": {
+    "name": "MATERIALS TESTING LAB",
+    "courseCode": "PCCEL407",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCCET205/ Equivalent",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 3,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Test on stress-strain characteristics of mild steel and Tor Steel by conducting uniaxial tension test on rod specimens"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Shear test on mild steel rod (Compression Testing Machine and Shear Shackle)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Flexural behaviour of steel by conducting a bending test on Rolled steel sections (I cross section)"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Torsional behaviour and estimation of modulus of rigidity of steel by conducting torsion test on rod specimens"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 5,
+        "topics": [
+          "Estimation of modulus of rigidity of steel and brass / copper materials utilizing the principles of torsional vibrations – Torsion Pendulum."
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 6,
+        "topics": [
+          "Estimation of toughness of steel specimens by conducting (a) Izod & (b) Charpy impact tests."
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 7,
+        "topics": [
+          "Estimation of hardness properties of engineering materials such as brass, aluminium, copper, steel etc.by performing Brinell hardness test"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 8,
+        "topics": [
+          "Estimation of Hardness properties of engineering materials such as brass, aluminium, copper, steel etc.by performing (a) Rockwell hardness test (b) Vicker’s hardness test"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 9,
+        "topics": [
+          "Estimation of modulus of rigidity of steel by performing tension and compression tests on spring specimens."
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 10,
+        "topics": [
+          "Flexural behaviour of timber material by performing bending tests on beam specimens."
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 11,
+        "topics": [
+          "Estimation of compressive strength of timber specimen."
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 12,
+        "topics": [
+          "Experiment on verification of Maxwell’s reciprocal theorem"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 13,
+        "topics": [
+          "Demonstration of Fatigue Test"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 14,
+        "topics": [
+          "Study/demonstration of Strain Gauges and load cells"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 15,
+        "topics": [
+          "Bend & Rebend test on M S Rods"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 16,
+        "topics": [
+          "Tensile behaviour of polymeric membranes, textiles, fibres etc."
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      },
+      {
+        "module": 17,
+        "topics": [
+          "Digital Image Correlation Techniques for the study of material behaviour under various loading conditions"
+        ],
+        "contactHours": 0,
+        "textbookReferences": [
+          ""
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 0,
+        "internalExam2": 20,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/ Preparatory work/Design/ Algorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/ Execution of work/ troubleshooting/ Programming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify the behaviour of engineering materials under various forms and stages of loading",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Characterize the elastic properties of various materials.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Evaluate the strength and stiffness properties of engineering materials under various loading conditions",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "History of Strength of Materials",
+        "author": "S.P. Timoshenko",
+        "publisher": "Dover publications",
+        "edition": "2003"
+      },
+      {
+        "title": "Engineering Mechanics of Solids",
+        "author": "Egor P. Popov",
+        "publisher": "Pearson",
+        "edition": "2015"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "IS 1608 : Part 1 : 2022 Metallic materials - Tensile testing - Part 1 : Method of test at room temperature",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1598 (1977): Method for Izod Impact test of Metals, ( Reaffirmed 2020)",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1757 Part:1(2020) : Metallic materials – Charpy Pendulum Impact test Method",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 5242 (1979) Method of Test for determining Shear Strength of Metals, ( Reaffirmed 2022)",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1500 Part:1 (2019): Metallic materials – Brinnel Hardness test Part 1 Test method",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1500 Part:4 (2019): Metallic materials – Brinnel Hardness test Part 4 table of hardness values",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1501 Part 1 (2020) : Metallic materials – Vickers Hardness test Part 1 Test method",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1501 Part 4 (2020) : Metallic materials – Vickers Hardness test Part 4 table of hardness values",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1586 Part 1 (2018) : Metallic materials – Rockwell Hardness test Part 1 Test method",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1586 Part 3 (2018) :  Metallic materials – Rockwell Hardness test  Part 3 Calibration of reference blocks ( Scale A, B, C, D, E, F, G, H, K, N, T)",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 1717 (2018): Metallic Materials – Wire – Simple Torsion Test",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 883 (2016): Design of Structural Timber in Building- Code of Practice. (Reaffirmed 2021)",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS 13325 (1992) Determination of Tensile Properties of Extruded Polymer Geogrids Using the Wide Strip - Test Method (Reaffirmed Year : 2019 )",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      },
+      {
+        "title": "IS17415(2023) Metallic Materials torsion test at room temperature.",
+        "author": null,
+        "publisher": null,
+        "edition": null
+      }
+    ],
+    "videoLinks": {
+      "module1": "www.sm-nitk.vlab.ac.in",
+      "module2": "www.eerc01-iiith.vlabs.ac.in",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:45:39.207Z"
+}

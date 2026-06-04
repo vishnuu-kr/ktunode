@@ -1,0 +1,188 @@
+{
+  "subject": "MATHEMATICS FOR COMPUTER AND INFORMATION SCIENCE-3",
+  "branch": "Computer Science and Engineering",
+  "semester": 3,
+  "details": {
+    "name": "MATHEMATICS FOR COMPUTER AND INFORMATION SCIENCE-3",
+    "courseCode": "GAMAT301",
+    "credits": 3,
+    "examHours": "2 Hr. 30 Min.",
+    "prerequisites": "Basic calculus",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Random variables",
+          "Discrete random variables and their probability distributions",
+          "Cumulative distribution function",
+          "Expectation",
+          "Mean and variance",
+          "the Binomial probability distribution",
+          "the Poisson probability distribution",
+          "Poisson distribution as a limit of the binomial distribution",
+          "Joint pmf of two discrete random variables",
+          "Marginal pmf",
+          "Independent random variables",
+          "Expected value of a function of two discrete variables."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from sections 3.1 to 3.4, 3.6, 5.1, 5.2"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Continuous random variables and their probability distributions",
+          "Cumulative distribution function",
+          "Expectation",
+          "Mean and variance",
+          "Uniform, Normal and  Exponential distributions",
+          "Joint pdf of two Continuous random variables",
+          "Marginal pdf",
+          "Independent random variables",
+          "Expectation value of a function of two continuous variables."
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from sections 3.1, 4.1, 4.2, 4.3, 4.4, 5.1, 5.2"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Limit theorems : Markov’s Inequality",
+          "Chebyshev’s Inequality",
+          "Strong Law of Large Numbers (Without proof)",
+          "Central Limit Theorem (without proof)",
+          "Stochastic Processes: Discrete-time process",
+          "Continuous-time process",
+          "Counting Processes",
+          "The Poisson Process",
+          "Interarrival times (Theorems without proof)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 2: Relevant topics from sections 2.7, 2.9, 5.3"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Markov Chains",
+          "Random Walk Model",
+          "Chapman–Kolmogorov Equations",
+          "Classification of States",
+          "Irreducible Markov chain",
+          "Recurrent state",
+          "Transient state",
+          "Long-Run Proportions. (Theorems without proof)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 2: Relevant topics from sections 4.1, 4.2, 4.3, 4.4"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module. Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks. Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the concept, properties and important models of discrete random variables and to apply in suitable random phenomena.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Understand the concept, properties and important models of continuous random variables and to apply in suitable random phenomena.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Familiarize and apply limit theorems and to understand the fundamental characteristics of stochastic processes.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Solve problems involving Markov Chains, to understand their theoretical foundations and to apply them to model and predict the behaviour of various stochastic processes.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Probability and Statistics for Engineering and the Sciences",
+        "author": "Devore J. L",
+        "publisher": "Cengage Learning",
+        "edition": "9th edition, 2016"
+      },
+      {
+        "title": "Introduction to Probability Models",
+        "author": "Sheldon M. Ross",
+        "publisher": "Academic Press",
+        "edition": "13th edition, 2024"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Probability and Random Processes for Electrical and Computer Engineers",
+        "author": "John A. Gubner",
+        "publisher": "Cambridge University Press",
+        "edition": "2012"
+      },
+      {
+        "title": "Probability Models for Computer Science",
+        "author": "Sheldon M. Ross",
+        "publisher": "Academic Press",
+        "edition": "1st edition, 2001"
+      },
+      {
+        "title": "Probability, Random Variables and   Stochastic Processes",
+        "author": "Papoulis, A. & Pillai, S.U.",
+        "publisher": "Tata McGrawHill.",
+        "edition": "4th edition, 2002"
+      },
+      {
+        "title": "Probability, Statistics and Random Processes",
+        "author": "Kousalya Pappu",
+        "publisher": "Pearson",
+        "edition": "2013"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc22_mg31/preview",
+      "module2": "https://onlinecourses.nptel.ac.in/noc22_mg31/preview",
+      "module3": "https://archive.nptel.ac.in/courses/108/103/108103112/",
+      "module4": "https://archive.nptel.ac.in/courses/108/103/108103112/"
+    },
+    "semester": "3",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:25:49.197Z"
+}

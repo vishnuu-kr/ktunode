@@ -1,0 +1,163 @@
+{
+  "subject": "ESTIMATION AND DETECTION",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 5,
+  "details": {
+    "name": "ESTIMATION AND DETECTION",
+    "courseCode": "PEECT527",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Statistical Estimation Theory I",
+          "Fundamentals of estimation theory",
+          "the mathematical estimation problem",
+          "Minimum variance unbiased estimation",
+          "basics of Cramer-Rao Lower Bound",
+          "linear models",
+          "best linear unbiased estimation",
+          "application examples."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Statistical Estimation Theory II",
+          "Maximum likelihood estimation",
+          "least squares",
+          "Bayesian philosophy",
+          "minimum mean square error estimation",
+          "application examples."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Statistical Detection Theory I",
+          "Fundamentals of detection theory",
+          "the mathematical detection problem",
+          "Hypothesis testing",
+          "classical approach",
+          "Neyman-Pearson theorem",
+          "likelihood ratio test",
+          "receiver operating characteristics",
+          "Bayesian approach",
+          "minimum probability of error",
+          "Bayes risk",
+          "multiple hypothesis testing."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Statistical Detection Theory II",
+          "Detection of deterministic signals",
+          "matched filters",
+          "detection of random signals",
+          "estimator-correlator",
+          "linear model",
+          "application examples."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.\n● Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.\n● Two questions will be given from each module, out of which 1 question should be answered.\n● Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Summarize the fundamentals of statistical estimation principles used in various engineering problems.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply different types of estimation algorithms in engineering applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Illustrate the fundamentals of statistical detection principles used in various engineering problems.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply various types of statistical decision rules in engineering applications.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "“Fundamentals of Statistical Signal Processing” Vol I: Estimation Theory,",
+        "author": "S.M. Kay,",
+        "publisher": "Pearson",
+        "edition": "3/e, 2010."
+      },
+      {
+        "title": "“Fundamentals of Statistical Signal Processing” Vol II: Detection Theory,",
+        "author": "S.M. Kay,",
+        "publisher": "Pearson",
+        "edition": "3/e, 2010."
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Detection, Estimation, and Modulation Theory, Vol. I,",
+        "author": "H. L. Van Trees",
+        "publisher": "John Wiley & Sons",
+        "edition": "2/e, 2001"
+      },
+      {
+        "title": "Statistical Digital Signal Processing and Modelling",
+        "author": "Monson H. Hayes",
+        "publisher": "John Wiley & Sons",
+        "edition": "2/e, 2018"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/117103018",
+      "module2": "https://nptel.ac.in/courses/117103018",
+      "module3": "https://nptel.ac.in/courses/117103018",
+      "module4": "https://nptel.ac.in/courses/117103018"
+    },
+    "semester": "5",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:56:38.176Z"
+}

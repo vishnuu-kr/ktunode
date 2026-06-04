@@ -1,0 +1,193 @@
+{
+  "subject": "MICROCONTROLLERS",
+  "branch": "Computer Science and Engineering",
+  "semester": 5,
+  "details": {
+    "name": "MICROCONTROLLERS",
+    "courseCode": "PBCST504",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 1
+    },
+    "CIE": 60,
+    "ESE": 40,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to ARM Cortex-M Architecture:-",
+          "Overview of Embedded Systems",
+          "Applications of Embedded Systems",
+          "Introduction to Embedded C",
+          "Microcontrollers vs. Microprocessors",
+          "Classification of processors",
+          "Overview of ARM Cortex-M Series",
+          "Introduction to the Cortex-M23 and Cortex-M33 processors and the Armv8-mArchitecture",
+          "ARM Core Features: Registers, Memory, and Bus Architecture",
+          "Comparison with previous generations of Cortex-M processors."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "STM32 Microcontroller Overview and Peripheral Programming:-",
+          "Introduction to STM32 Family",
+          "STM32U575 Features and Specifications",
+          "Power Management and Low-Power Features Libraries",
+          "Introduction to Integrated Development Environment and HAL",
+          "Writing, and Debugging Your First Program(LED Interfacing)",
+          "Interfacing Seven-Segment Display",
+          "LCD Display, and Matrix Keypad",
+          "Relay Interfacing",
+          "Analog to Digital Conversion: Potentiometer, temperature sensor, LDR, Microphone",
+          "Digital to Analog Conversion: Simple DAC Output Generation",
+          "Generating a Sine Wave",
+          "Audio Signal Generation",
+          "Interrupt Handling",
+          "Timer and Counter Applications: Basic Timer Configuration",
+          "Timers as Counters",
+          "Timer-Based Real-Time Clock (RTC)"
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Communication Protocols and USB:-",
+          "Serial port terminal Application",
+          "Serial communication (USART, I2C, SPI, CAN)",
+          "Interfacing an I2C Temperature Sensor and Displaying Data on an LCD",
+          "writing to and Reading from an SPI-based EEPROM",
+          "Configuring and Implementing CAN Communication between Multiple STM32U575 Microcontrollers",
+          "Creating a USB HID Device for Keyboard / Mouse Emulation"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "IoT, Wireless Communication, and RTOS:-",
+          "Introduction to IoT",
+          "IoT Architecture",
+          "Protocols (MQTT, CoAP)",
+          "IoT Security Principles and Common Threats Wireless Communication: Interfacing GSM (Call, SMS, Internet)",
+          "Bluetooth Communication Basics",
+          "LoRa Communication Basics and Applications",
+          "Designing an IoT-Based Home Automation System",
+          "Introduction to RTOS Concepts",
+          "FreeRTOS with STM32: Task Creation, Scheduling, and Management",
+          "RTOS Timers, Delays, and RTC Integration",
+          "Inter-task Communication: Queues and Semaphores",
+          "Trust Zone Technology: Introduction to ARM Trust Zone",
+          "Trust Zone Architecture and Features",
+          "Secure and Non-Secure Worlds: Configuration and Management",
+          "Implementing Trust Zone in STM32U575",
+          "Advanced Debugging and Optimization: Code and Memory Optimization Techniques",
+          "Debugging Strategies and Tools"
+        ],
+        "contactHours": 14,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 30,
+        "internalExam1": 12.5,
+        "internalExam2": 12.5,
+        "total": 60
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 2 marks (8x2 =16 marks)",
+          "marks": 16
+        },
+        "partB": {
+          "description": "2 questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 2 subdivisions. Each question carries 6 marks.  (4x6 = 24 marks)",
+          "marks": 24
+        },
+        "total": 40
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the architectural features and instructions of the ARM microcontrollers.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Develop applications involving interfacing of external devices and I/O with ARM microcontroller.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Use various communication protocols of interaction with peer devices and peripherals.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Demonstrate the use of a real time operating system in embedded system applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply hardware security features of ARM in real world applications.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "The Definitive Guide to ARM Cortex-M3 and Cortex-M4 Processors",
+        "author": "Joseph Yiu",
+        "publisher": "Newnes - Elsevier",
+        "edition": "3/e, 2014"
+      },
+      {
+        "title": "Mastering STM32",
+        "author": "Carmine Noviello",
+        "publisher": "Learnpub",
+        "edition": "2/e, 2022"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "ARM System Developer’s Guide",
+        "author": "Andrew N. Sloss, Dominic Symes, Chris Wright",
+        "publisher": "Morgan Kaufman",
+        "edition": "1/e, 2008"
+      },
+      {
+        "title": "Embedded System Design with Arm Cortex-M Microcontrollers",
+        "author": "Cem Ünsalan, Hüseyin Deniz Gürhan Mehmet Erkin Yücel",
+        "publisher": "Springer",
+        "edition": "1/e, 2022"
+      },
+      {
+        "title": "Introduction to ARM ® Cortex-M Microcontrollers",
+        "author": "Jonathan W. Valvano",
+        "publisher": "Self-Published",
+        "edition": "5/e, 2014"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/106/105/106105193/",
+      "module2": "https://www.st.com/resource/en/datasheet/",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:48:19.739Z"
+}

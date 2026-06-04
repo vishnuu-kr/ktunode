@@ -1,0 +1,163 @@
+{
+  "subject": "ENGINEERING MATERIALS",
+  "branch": "Mechanical Engineering",
+  "semester": 7,
+  "details": {
+    "name": "ENGINEERING MATERIALS",
+    "courseCode": "OEMET721",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "NA",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction to Engineering Materials: Overview of Engineering Materials: Definition and Classification, Importance in Engineering Design.",
+          "Material Properties; Mechanical Properties: Strength, Toughness, Ductility, Hardness. Thermal Properties: Conductivity, Expansion, Heat Capacity, Electrical and Magnetic Properties.",
+          "Material Selection Criteria: Factors Influencing Material Selection, Case Studies in Material Selection",
+          "Material Testing and Standards: Overview of Material Testing Methods, Introduction to ASTM, ISO, and other relevant standards",
+          "Material Processing: Basic Processing Techniques: Casting, Forging, Machining, Introduction to Manufacturing Processes: Additive Manufacturing, Powder Metallurgy."
+        ],
+        "contactHours": 11,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Introduction to Metals: Types of Metals: Ferrous and Non-Ferrous, Crystal Structures and Properties.",
+          "Steel and Its Alloys: Composition and Heat Treatment, Types of Steel: Carbon Steel, Alloy Steel, Stainless Steel.",
+          "Non-Ferrous Metals and Alloys: Aluminum, Copper, Titanium, Nickel Alloys.",
+          "Applications and Properties, Corrosion and Protection: Mechanisms of Corrosion, Methods of Corrosion Control and Prevention"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Polymers and Composites",
+          "Introduction to Polymers: Types of Polymers: Thermoplastics, Thermosets, Elastomers, polymerization Methods.",
+          "Properties and Applications of Polymers: Mechanical and Thermal Properties, Case Studies in Polymer Applications",
+          "Composite Materials: Definition and Types of Composites, Fiber-Reinforced Composites: Properties and Applications, Manufacturing Techniques",
+          "Ceramics and Glasses",
+          "Introduction to Ceramics: Types of Ceramics: Traditional and Advanced Ceramics.",
+          "Properties: Hardness, Brittleness, Wear Resistance",
+          "Processing of Ceramics.",
+          "Methods of Shaping and Sintering, Glazing and Surface Treatments",
+          "Glasses: Types of Glasses: Soda-Lime, Borosilicate, Specialty Glasses, Properties and Applications, Applications in Engineering",
+          "Structural Ceramics",
+          "Electronic and Optical Ceramics"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Material Testing and Characterization",
+          "Mechanical Testing Methods: Tensile, Compression, Impact, and Fatigue Testing, Microscopy and Surface Analysis, Optical Microscopy, Scanning Electron Microscopy (SEM), Surface Profiling Techniques",
+          "Non-Destructive Testing (NDT)Techniques: Ultrasonic Testing, Radiographic Testing, Magnetic Particle Testing",
+          "Material Behavior and Failure Analysis",
+          "Fracture Mechanics and Failure Analysis",
+          "Case Studies in Material Failures"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To provide a comprehensive understanding of the classification, structure, and properties of different engineering materials, including metals, ceramics, polymers, and composites.",
+        "knowledgeLevel": "K1. K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "To develop the ability to select metals and their alloys for specific engineering applications based on their properties and performance requirements.",
+        "knowledgeLevel": "K1, K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "To introduce polymeric, ceramic, and composite materials, and discuss their unique properties, synthesis methods, and applications in modern engineering.",
+        "knowledgeLevel": "K3, K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "To develop the ability to select appropriate materials for specific engineering applications based on their properties and performance requirements.",
+        "knowledgeLevel": "K3, K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Materials Science and Engineering: An Introduction",
+        "author": "William D. Callister Jr. and David G. Rethwisch",
+        "publisher": "John Wiley",
+        "edition": "10thedition, 2020"
+      },
+      {
+        "title": "EngineeringMaterials:Properties and Selection",
+        "author": "Kenneth G. Budinski and Michael K. Budinski",
+        "publisher": "Pearson India",
+        "edition": "9th edition, 2017"
+      },
+      {
+        "title": "Introduction to Materials Science for Engineers,",
+        "author": "James F. Shackelford",
+        "publisher": "Pearson India",
+        "edition": "9thedition, 2021"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "The Science and Engineering of Materials",
+        "author": "Donald R. Askeland",
+        "publisher": "Chapman & Hall",
+        "edition": "1996"
+      },
+      {
+        "title": "Materials Science and Engineering: A First Course",
+        "author": "V. Raghavan",
+        "publisher": "PHI Learning",
+        "edition": "6th edition 2015"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:12:00.710Z"
+}

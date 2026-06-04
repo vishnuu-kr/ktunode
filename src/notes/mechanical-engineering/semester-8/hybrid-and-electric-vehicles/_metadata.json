@@ -1,0 +1,215 @@
+{
+  "subject": "HYBRID AND ELECTRIC VEHICLES",
+  "branch": "Mechanical Engineering",
+  "semester": 8,
+  "details": {
+    "name": "HYBRID AND ELECTRIC VEHICLES",
+    "courseCode": "PEMET863",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None/",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Vehicle fundamentals – general description",
+          "vehicle resistances",
+          "tractive effort",
+          "vehicle performance - maximum speed",
+          "power",
+          "gradability",
+          "etc.",
+          "Electric vehicles – introduction",
+          "history",
+          "social and environmental importance of hybrid and electric vehicles",
+          "Types of EVs.",
+          "EV transmission – configurations – front wheel drive and rear-wheel drive.",
+          "Traction motor characteristics and comparison with IC engine characteristics.",
+          "Hybrid electric vehicles – concept",
+          "architecture",
+          "classification",
+          "series",
+          "parallel",
+          "series-parallel and complex",
+          "hybrid drivetrains",
+          "the configuration of the series hybrid electric drive train",
+          "the configuration of the parallel hybrid electric drive train."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Energy storage – Battery basics",
+          "battery parameters",
+          "battery technologies - Lead-Acid Battery",
+          "Nickel-Cadmium Battery",
+          "Nickel-Metal-Hydride (NiMH) Battery",
+          "Li-Ion Battery",
+          "Li-Polymer Battery.",
+          "Alternative energy sources – fuel cell",
+          "supercapacitors and ultracapacitors",
+          "flywheel (Overview only).",
+          "Battery pack design",
+          "battery management system (BMS)",
+          "sensors used in BMS",
+          "thermal management systems of battery",
+          "battery safety standards in India",
+          "AIS 156 (2020) and AIS 038 Rev (2020).",
+          "EV charging – types",
+          "layout of AC and DC chargers",
+          "different charging protocols-CHAdeMO",
+          "CCS2",
+          "GB/T",
+          "battery swapping."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Electric propulsion system – electric motors",
+          "classification",
+          "induction motors",
+          "basic principles and construction",
+          "torque–slip characteristics.",
+          "Permanent magnets",
+          "ferrite",
+          "SmCo and NdFeB types",
+          "PM motors-BLDC",
+          "PMSM",
+          "basic principles and construction",
+          "switched reluctance motors (SRM)",
+          "basic principles and construction.",
+          "Regenerative braking – principle",
+          "block diagram.",
+          "Gearbox",
+          "selection of gear ratio",
+          "Different kinds of gearboxes.",
+          "EV motor sizing – need of gearbox."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Motor controllers – motor drive components",
+          "power electronic switches",
+          "MOSFET and IGBT",
+          "bidirectional switch.",
+          "Induction motor controls – constant speed/frequency control",
+          "variable DC/AC inverter with sinusoidal PWM",
+          "field orientation control.",
+          "BLDC motor controls – torque control and speed control methods",
+          "principles and block diagrams.",
+          "SRM drive converter - classical half-bridge converter.",
+          "Vehicle Sensors specific to EV sensors interfaced to the ECU’s in the vehicle network.",
+          "Controller Area Networking (CAN) – frame types of CAN",
+          "layered architecture of CAN.",
+          "Vehicle Validation - 6 levels of EV validations.",
+          "Advances in electric and hybrid vehicle technology – autonomous driving",
+          "connected vehicles (overview only)."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered. Each question can have a maximum of 3 sub-divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the general architecture of Electric vehicles.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Describe various battery, charging types and battery management of Electric vehicles.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Describe various motors and drives of Electric vehicles.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain details of power transmission of Electric vehicles and select the appropriate components based on requirement.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Electric and Hybrid Vehicles”: Design Fundamentals",
+        "author": "Iqbal Husain",
+        "publisher": "CRC press",
+        "edition": "2nd edition, 2010"
+      },
+      {
+        "title": "Modern Electric, Hybrid Electric and Fuel Cell Vehicles: Fundamentals, Theory and Design",
+        "author": "Mehrdad Ehsani, YimiGao, Sebastian E. Gay, Ali Emadi",
+        "publisher": "CRC press",
+        "edition": "3rd edition, 2018"
+      },
+      {
+        "title": "Electric Vehicle Technology Explained",
+        "author": "James Larminie, John Lowry",
+        "publisher": "Wiley-Blackwell",
+        "edition": "2nd edition, 2012"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Electric and hybrid vehicles",
+        "author": "Denton T.",
+        "publisher": "CBS Publishers & Distributors Pvt. Ltd.",
+        "edition": "2nd edition, 2020"
+      },
+      {
+        "title": "Electric Vehicle Battery Systems",
+        "author": "Dhameja S.",
+        "publisher": "Newnes (an imprint of Butterworth-Heinemann Ltd )",
+        "edition": "2001"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/108106170",
+      "module2": "https://nptel.ac.in/courses/108106170",
+      "module3": "https://onlinecourses.swayam2.ac.in/ntr24_ed54/preview",
+      "module4": "https://onlinecourses.swayam2.ac.in/ntr24_ed54/preview"
+    },
+    "semester": "8",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:20:25.922Z"
+}

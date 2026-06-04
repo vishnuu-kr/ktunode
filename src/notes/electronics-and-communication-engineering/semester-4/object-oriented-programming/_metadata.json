@@ -1,0 +1,242 @@
+{
+  "subject": "OBJECT ORIENTED PROGRAMMING",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 4,
+  "details": {
+    "name": "OBJECT ORIENTED PROGRAMMING",
+    "courseCode": "PEECT414",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PROGRAMMING \nIN C",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction:",
+          "Approaches to Software Design  - Functional Oriented Design",
+          "Object Oriented Design",
+          "Case Study of Automated Fire Alarm System.",
+          "Introduction to Java - Java Buzzwords",
+          "Java program structure",
+          "Java compiler",
+          "Bytecode",
+          "Java Virtual Machine (JVM)",
+          "Comments",
+          "Lexical Issues."
+        ],
+        "contactHours": 7,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Core Java Fundamentals:",
+          "Primitive Data types - Integers",
+          "Floating Point Types",
+          "Characters",
+          "Boolean.",
+          "Literals",
+          "Variables",
+          "Type Conversion and Casting",
+          "Arrays",
+          "Strings- String Handling functions.",
+          "Operators  - Arithmetic Operators",
+          "Bitwise Operators",
+          "Relational Operators",
+          "Boolean Logical Operators",
+          "Assignment Operator",
+          "Conditional (Ternary) Operator",
+          "Operator Precedence.",
+          "Control Statements  - Selection Statements",
+          "Iteration Statements and \nJump Statements.",
+          "Object Oriented Programming in Java  - Class Fundamentals",
+          "Declaring Objects",
+          "Object Reference",
+          "Access Control",
+          "Introduction to Methods",
+          "Constructors",
+          "this Keyword",
+          "Method Overloading.",
+          "Inheritance \n- Super Class",
+          "Sub Class",
+          "The Keyword super",
+          "protected Members",
+          "Method Overriding."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "More features of Java:",
+          "Packages  - Defining Package",
+          "CLASSPATH",
+          "Importing Packages.",
+          "Exception Handling  - Checked Exceptions",
+          "Unchecked Exceptions",
+          "try Block and catch Clause",
+          "Multiple catch Clauses",
+          "Nested try Statements",
+          "throw",
+          "throws and finally.",
+          "Input/output  - I/O Basics",
+          "Reading Console Input",
+          "Writing Console Output",
+          "Print Writer Class",
+          "Working with Files."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Advanced features of Java:",
+          "Swings fundamentals - Swing Key Features",
+          "Model View Controller \n(MVC)",
+          "Swing Controls",
+          "Components and Containers",
+          "Swing Packages",
+          "Event Handling in Swings",
+          "Swing Layout Managers",
+          "Exploring Swings \n–JFrame",
+          "JLabel",
+          "The Swing Buttons",
+          "JtextField..",
+          "Java DataBase Connectivity (JDBC)  - JDBC overview",
+          "Creating and \nExecuting Queries – create table",
+          "delete",
+          "insert",
+          "select."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Summarize the object-oriented concepts - classes, objects, constructors, data hiding, inheritance and polymorphism and to illustrate it using UML diagrams.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Utilise datatypes, operators, control statements, object oriented  \nclass, object concepts in Java to develop programs.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Illustrate how robust programs can be written in Java using \npackages, exception handling mechanism and Input/ Output  \nStreams with Files.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Identify and utilize various Swing controls, components, and \ncontainers.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Java: The Complete Reference",
+        "author": "Herbert Schildt",
+        "publisher": "Tata McGraw Hill",
+        "edition": "8/e, 2011."
+      },
+      {
+        "title": "Fundamentals of Software \nEngineering,",
+        "author": "Rajib Mall",
+        "publisher": "PHI",
+        "edition": "4th edition, \n2014."
+      },
+      {
+        "title": "Java How to Program, Early \nObjects",
+        "author": "Paul Deitel, Harvey \nDeitel",
+        "publisher": "Pearson,",
+        "edition": "11th \nEdition,  \n2018."
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Programming JAVA a Primer",
+        "author": "Balagurusamy E",
+        "publisher": "McGraw Hill",
+        "edition": "5/e,  2014."
+      },
+      {
+        "title": "Object Oriented Systems \nDevelopment using the Unified \nModeling Language",
+        "author": "Ali Bahrami",
+        "publisher": "McGraw-Hill Int.",
+        "edition": "2017"
+      },
+      {
+        "title": "Introduction to Java \nProgramming",
+        "author": "Y. Daniel Liang",
+        "publisher": "Pearson",
+        "edition": "7/e,  2013."
+      },
+      {
+        "title": "Core Java: An Integrated \nApproach",
+        "author": "Nageswararao R.",
+        "publisher": "Dreamtech Press",
+        "edition": "2008"
+      },
+      {
+        "title": "Java in A Nutshell",
+        "author": "Flanagan D",
+        "publisher": "O'Reilly",
+        "edition": "5/e,  2005."
+      },
+      {
+        "title": "Object Oriented Design with \nUML and Java",
+        "author": "Barclay K.J. Savage",
+        "publisher": "Elsevier",
+        "edition": "2004"
+      },
+      {
+        "title": "Head First Java",
+        "author": "Sierra K.",
+        "publisher": "O'Reilly",
+        "edition": "2/e, 2005."
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc20_cs08/preview",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "4",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:51:10.384Z"
+}

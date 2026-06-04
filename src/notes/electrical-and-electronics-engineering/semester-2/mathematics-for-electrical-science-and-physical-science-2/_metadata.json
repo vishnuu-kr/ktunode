@@ -1,0 +1,185 @@
+{
+  "subject": "MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE - 2",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 2,
+  "details": {
+    "name": "MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE - 2",
+    "courseCode": "GYMAT201",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "Basic knowledge  in single variable calculus.",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Limits and continuity",
+          "Partial derivatives",
+          "Partial derivatives of functions with two variables",
+          "Partial derivatives viewed as rate of change and slopes",
+          "Partial derivatives of functions with more than two variables",
+          "Higher order partial derivatives",
+          "Local Linear approximations",
+          "Chain rule",
+          "Implicit differentiation",
+          "Maxima and minima of functions of two variables - relative maxima and minima"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from sections 13.2, 13.3, 13.4, 13.5, 13.8"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Double integrals",
+          "Reversing the order of integration in double integrals",
+          "change of coordinates in double integrals (Cartesian to polar)",
+          "Evaluating areas using Double integrals",
+          "Finding volumes using double integration",
+          "Triple integrals",
+          "Volume calculated as triple integral",
+          "Triple integral in Cartesian and cylindrical coordinates"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from section 14.1, 14.2, 14.3, 14.5, 14.6"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Vector valued function of single variable - derivative of vector valued function",
+          "Concept of scalar and vector fields",
+          "Gradient and its properties",
+          "Directional derivative",
+          "Divergent and curl",
+          "Line integrals of vector fields",
+          "Work done as line integral",
+          "Conservative vector field",
+          "independence of path",
+          "Potential function (results without proof)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from section 12.1, 12.2, 13.6, 15.1, 15.2, 15.3"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Green’s theorem (for simply connected domains, without proof) and applications to evaluating line integrals",
+          "finding areas using Greens theorem",
+          "Surface integrals over surfaces of the form z = g(x, y)",
+          "Flux integrals over surfaces of the form z = g(x, y)",
+          "Divergence theorem (without proof)",
+          "Using Divergence theorem to find flux",
+          "Stokes theorem (without proof)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Text 1: Relevant topics from section 15.4, 15.5, 15.6, 15.7,15.8"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.\n● Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.\n● Two questions will be given from each module, out of which 1 question should be answered.\n● Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Compute the partial and total derivatives and maxima and minima of multivariable functions and to apply in engineering problems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Understand theoretical idea of multiple integrals and to apply them to find areas and volumes of geometrical shapes.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Compute the derivatives and line integrals of vector functions and to learn their applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Apply the concepts of surface and volume integrals and to learn their inter-relations and applications.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Calculus",
+        "author": "H. Anton, I. Biven, S.Davis",
+        "publisher": "Wiley",
+        "edition": "12th edition, 2024"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Thomas' Calculus",
+        "author": "Maurice D. Weir, Joel Hass, Christopher Heil, Przemyslaw Bogacki",
+        "publisher": "Pearson",
+        "edition": "15th edition, 2023"
+      },
+      {
+        "title": "Essential Calculus",
+        "author": "J. Stewart",
+        "publisher": "Cengage",
+        "edition": "2nd edition, 2017"
+      },
+      {
+        "title": "Advanced Engineering Mathematics",
+        "author": "Erwin Kreyszig",
+        "publisher": "John Wiley & Sons",
+        "edition": "10th edition, 2016"
+      },
+      {
+        "title": "Bird’s Higher Engineering Mathematics",
+        "author": "John Bird",
+        "publisher": "Taylor & Francis",
+        "edition": "9th edition, 2021"
+      },
+      {
+        "title": "Higher Engineering Mathematics",
+        "author": "B. V. Ramana",
+        "publisher": "McGraw-Hill Education",
+        "edition": "39th edition, 2023"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/111107108",
+      "module2": "https://nptel.ac.in/courses/111107108",
+      "module3": "https://nptel.ac.in/courses/111107108",
+      "module4": "https://nptel.ac.in/courses/111107108"
+    },
+    "semester": "2",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:07:57.024Z"
+}

@@ -1,0 +1,195 @@
+{
+  "subject": "DEEP LEARNING",
+  "branch": "Computer Science and Engineering",
+  "semester": 6,
+  "details": {
+    "name": "DEEP LEARNING",
+    "courseCode": "PECST632",
+    "credits": 3,
+    "examHours": "2 Hrs 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Neural Networks Multilayer Perceptron",
+          "Back-propagation algorithm and its variants Stochastic gradient descent",
+          "Curse of Dimensionality",
+          "Deep feedforward networks."
+        ],
+        "contactHours": 8,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Machine Learning and Deep learning",
+          "Representation Learning",
+          "Width and Depth of Neural  Networks",
+          "Activation Functions: RELU, LRELU, ERELU",
+          "Unsupervised Training of Neural Networks",
+          "Restricted Boltzmann Machines",
+          "Auto Encoders",
+          "Deep Learning Applications."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "CNN-Architectural Overview",
+          "Motivation",
+          "Layers",
+          "Filters",
+          "Parameter sharing",
+          "Regularization",
+          "Popular CNN Architectures: ResNet, Alexnet –Applications",
+          "Recurrent Neural Networks",
+          "Bidirectional RNNs",
+          "Encoder –decoder sequence to sequence architectures – BPTT for training RNN",
+          "Long Short Term Memory Networks."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Computer Vision - Speech Recognition - Natural language Processing",
+          "Case studies in classification",
+          "Regression and deep networks",
+          "Regularized Autoencoder",
+          "stochastic Encoders and Decoders",
+          "Contractive Encoders",
+          "GAN and its variants"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.  \n● Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "● Each question carries 9 marks.  \n● Two questions will be given from each module, out of which 1 question should be answered.  \n● Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Construct fundamental neural network architectures and algorithms, including Multilayer Perceptron and Back-propagation",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Apply advanced techniques such as Stochastic Gradient Descent and address the Curse of Dimensionality in the context of deep learning models.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Build various deep learning architectures, including feed-forward networks, Convolutional Neural Networks (CNNs), and their applications in real-world problems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Develop and utilize Recurrent Neural Networks (RNNs) and Long Short-Term Memory Networks (LSTMs) for sequence modeling and natural language processing tasks.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Apply unsupervised learning techniques such as Autoencoders and Generative Adversarial Networks (GANs) to solve complex problems in computer vision and speech recognition.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Deep Learning",
+        "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
+        "publisher": "MIT Press",
+        "edition": "1/e, 2016"
+      },
+      {
+        "title": "Neural Networks and Deep Learning",
+        "author": "Michael A. Nielsen",
+        "publisher": "Determination Press",
+        "edition": "2/e, 2015"
+      },
+      {
+        "title": "Learning Deep Architectures for AI",
+        "author": "Yoshua Bengio",
+        "publisher": "Now Publishers Inc",
+        "edition": "1/e, 2009"
+      },
+      {
+        "title": "Deep Learning: A Practitioner's Approach",
+        "author": "Josh Patterson, Adam Gibson",
+        "publisher": "O'Reilly",
+        "edition": "1/e, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Applied Deep Learning. A Case-based Approach to Understanding Deep Neural Networks",
+        "author": "Umberto Michelucci",
+        "publisher": "Apress",
+        "edition": "1/e, 2018"
+      },
+      {
+        "title": "Deep Learning with Keras",
+        "author": "Antonio Gulli, Sujit Pal",
+        "publisher": "Packt",
+        "edition": "1/e, 2017"
+      },
+      {
+        "title": "Deep Learning with Python",
+        "author": "Francois Chollet",
+        "publisher": "Manning",
+        "edition": "1/e. 2017"
+      },
+      {
+        "title": "Deep Learning",
+        "author": "M Gopal",
+        "publisher": "Pearson",
+        "edition": "1/e, 2022"
+      },
+      {
+        "title": "The Science of Deep Learning",
+        "author": "Iddo Drori",
+        "publisher": "Cambridge Univeristy Press",
+        "edition": "1/e, 2021"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/106105215 (Week 4)",
+      "module2": "https://nptel.ac.in/courses/106105215 (Week 5)",
+      "module3": "https://nptel.ac.in/courses/106105215 (Week 8)",
+      "module4": "https://nptel.ac.in/courses/106105215 (Week 10,11 and 12)"
+    },
+    "semester": "6",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:52:11.868Z"
+}

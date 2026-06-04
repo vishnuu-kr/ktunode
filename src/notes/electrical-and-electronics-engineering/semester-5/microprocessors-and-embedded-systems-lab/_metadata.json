@@ -1,0 +1,251 @@
+{
+  "subject": "MICROPROCESSORS AND EMBEDDED SYSTEMS LAB",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 5,
+  "details": {
+    "name": "MICROPROCESSORS AND EMBEDDED SYSTEMS LAB",
+    "courseCode": "PCEEL508",
+    "credits": 2,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Lab",
+    "teachingHoursPerWeek": {
+      "lecture": 0,
+      "tutorial": 0,
+      "practical": 2,
+      "research": 0
+    },
+    "CIE": 50,
+    "ESE": 50,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Data transfer: Block data movement",
+          "exchanging data",
+          "sorting",
+          "finding largest element in an array.",
+          "Arithmetic operations: Addition",
+          "Subtraction",
+          "Multiplication and Division.",
+          "Comparing square and cube of 16 bit numbers."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "ALP programming for the implementation of counters: Hex up and down counters",
+          "BCD up/down counters."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "ALP programming for implementing Boolean and logical instructions: bit manipulation.",
+          "ALP programming for implementing conditional call and return instructions: Toggle the bits of port 1 by sending the values of 55H and AAH continuously",
+          "Factorial of a number."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "ALP program for Generation of delay."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 5,
+        "topics": [
+          "C program for stepper motor control."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 6,
+        "topics": [
+          "C program for DC motor direction and speed control using PWM."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 7,
+        "topics": [
+          "C program for alphanumerical LCD panel/keyboard interface."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 8,
+        "topics": [
+          "C program for ADC interfacing."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 9,
+        "topics": [
+          "Demo experiment using 8051 Microcontroller programming.",
+          "ALP programming for implementation code conversion- BCD to ASCII ",
+          "ASCII to BCD",
+          "ASCII to Decimal ",
+          "Decimal to ASCII",
+          "Hexadecimal to Decimal and Decimal to Hexadecimal"
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 10,
+        "topics": [
+          "Familiarization of Aurdino IDE.",
+          "LED blinking with different ON/OFF delay timings with (i) inbuilt LED (ii) externally interfaced LED."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 11,
+        "topics": [
+          "Arduino based voltage measurement of 12 V solar PV module /12 V battery and displaying the measured value using 12C LCD display.."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 12,
+        "topics": [
+          "Demo experiments on Arduino / Raspberry Pi to upload /retrieve temperature and humidity data to thing speak cloud."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 13,
+        "topics": [
+          "Arduino based DC current measurement using Hall effect current sensor displaying the value using 12C LCD module."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 14,
+        "topics": [
+          "Directional control of the DC motor using Arduino."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 15,
+        "topics": [
+          "Interfacing of the relay with Arduino."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      },
+      {
+        "module": 16,
+        "topics": [
+          "Building intrusion detection system with Arduino and Ultrasonic sensor."
+        ],
+        "contactHours": 0,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 25,
+        "internalExam1": 20,
+        "internalExam2": 0,
+        "total": 50
+      },
+      "ESE": {
+        "partA": {
+          "description": "Procedure/ Preparatory work/Design/ Algorithm",
+          "marks": 10
+        },
+        "partB": {
+          "description": "Conduct of experiment/ Execution of work/ troubleshooting/ Programming",
+          "marks": 15
+        },
+        "total": 50
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Develop and execute ALP programs for solving arithmetic and logical problems using microcontroller",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Develop embedded C programming using instruction sets of 8051",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Examine circuits for interfacing processor with various peripheral devices",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "Design a microcontroller based system with the help of various interfacing devices",
+        "knowledgeLevel": "K6"
+      },
+      {
+        "CO": "CO5",
+        "description": "Design an Arduino based system with the help of various interfacing devices",
+        "knowledgeLevel": "K6"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "The 8051 microcontroller",
+        "author": "Kenneth Ayala",
+        "publisher": "Cengage Learning",
+        "edition": "The 8051 microcontroller"
+      },
+      {
+        "title": "Microprocessors and Microcontrollers",
+        "author": "R. LylaB.Das",
+        "publisher": "Pearson Education",
+        "edition": "Microprocessors and Microcontrollers"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "The 8051 Microcontroller",
+        "author": "I. ScottMacKenzie,Raphael C.-W.Phan",
+        "publisher": "",
+        "edition": ""
+      },
+      {
+        "title": "The 8051 microcontroller and embedded systems",
+        "author": "Muhammad Ali Mazidi",
+        "publisher": "Pearson Education",
+        "edition": ""
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:22:58.057Z"
+}

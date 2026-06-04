@@ -1,0 +1,183 @@
+{
+  "subject": "DISASTER MANAGEMENT",
+  "branch": "Civil Engineering",
+  "semester": 6,
+  "details": {
+    "name": "DISASTER MANAGEMENT",
+    "courseCode": "OECET613",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Hazards and disasters: Introduction to key concepts and terminology: hazard, disasters and types of classifications, vulnerability, exposure, risk, crisis, emergency, capacity, resilience, Carbon footprint.",
+          "Effect of subsystems of earth.",
+          "Extent and nature of natural hazards, implications of climate change: Earth quakes, Volcanoes, Floods.",
+          "Coastal disasters- Storm surges, Tsunamis, mitigation methods."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Landslides, Causes and prediction, Soil and soil degradation, erosion and Desertification, Forest fires, their mitigation methods."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Impacts and assessment: Risk Management and Assessment and Disaster Management cycle.",
+          "SWOT Analysis- basic concepts, uses, limitations and advantages.",
+          "Disaster management plan and reports, participation of community in disaster management."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Hazard and disaster management plans for floods, storm surges, landslides, earthquakes, forest fires: pre-disaster phase, actual disaster phase, post- disaster phase",
+          "Relief and Amenities, Relief camps, organization, individual and community participation, camp layout, food requirement, water needs, sanitation, security, information administration.",
+          "Technology in disaster management."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain interaction between subsystems of earth that give rise to hazards and their potential for disasters",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Explain the evolving concepts and thoughts of management of hazards and disasters",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Apply the knowledge to find the causes behind natural disasters and evaluate their magnitude and impacts",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Develop management plans for hazards and disasters, and understand the roles of agencies involved",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Disaster Management",
+        "author": "Mrinalini Pandey",
+        "publisher": "Wiley",
+        "edition": "2nd edition"
+      },
+      {
+        "title": "Disaster Risk Reduction in South Asia",
+        "author": "Ariyabandu, M. and Sahni P.",
+        "publisher": "Prentice-Hall (India)",
+        "edition": "2003"
+      },
+      {
+        "title": "Environmental Geology - Ecology, Resource and Hazard Management",
+        "author": "Valdiya, K.S.",
+        "publisher": "McGraw-Hill Education",
+        "edition": "2013"
+      },
+      {
+        "title": "Disaster Management: Global Problems and Local Solutions",
+        "author": "Shaw, R and Krishnamurthy, RR",
+        "publisher": "Springer, Amsterdam",
+        "edition": "2010"
+      },
+      {
+        "title": "Disaster Management - A Disaster Manager's Handbook",
+        "author": "Nick Carter. W.",
+        "publisher": "Asian Development Bank, Philippines.",
+        "edition": "1991"
+      },
+      {
+        "title": "Disaster management",
+        "author": "Gupta, H.K.",
+        "publisher": "Universities Press (India) Ltd.",
+        "edition": "2003"
+      },
+      {
+        "title": "Natural and Anthropogenic Disasters- Vulnerability, Preparedness and  Mitigation",
+        "author": "Jha, M.K.",
+        "publisher": "Springer, Amsterdam.",
+        "edition": "2010"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Geological Hazards: Their assessment, avoidance and mitigation",
+        "author": "Bell, F.G.",
+        "publisher": "E & FN SPON Routledge, London.",
+        "edition": "1999"
+      },
+      {
+        "title": "Natural Disasters",
+        "author": "Alexander, D.",
+        "publisher": "Research Press, New Delhi",
+        "edition": "1993"
+      },
+      {
+        "title": "Handbook of Disaster and Emergency Management",
+        "author": "Khorram-Manesh",
+        "publisher": "Kompendiet (Gothenburg).",
+        "edition": "2017"
+      },
+      {
+        "title": "Disaster Management in India Policies, Institutions, Practices",
+        "author": "Rajendra Kumar Pandey",
+        "publisher": "Routledge",
+        "edition": "2023"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/105104183",
+      "module2": "https://onlinecourses.swayam2.ac.in/cec19_hs20/preview",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "6",
+    "branch": "Civil Engineering"
+  },
+  "scrapedAt": "2026-05-20T18:52:50.403Z"
+}

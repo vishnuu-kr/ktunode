@@ -1,0 +1,150 @@
+{
+  "subject": "SUPPLY CHAIN AND LOGISTICS MANAGEMENT",
+  "branch": "Mechanical Engineering",
+  "semester": 4,
+  "details": {
+    "name": "SUPPLY CHAIN AND LOGISTICS MANAGEMENT",
+    "courseCode": "PEMET418",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Understanding the Supply chain",
+          "Achieving strategic fit in a supply chain.",
+          "Supply chain drivers and metrics.",
+          "Analysing and designing the supply chain network",
+          "factors affecting distribution network design",
+          "role of network design",
+          "models for designing regional network configuration.",
+          "Impact of globalisation on supply chain networks."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Demand forecasting in supply chain",
+          "role of forecasting",
+          "components of forecasting",
+          "forecasting methods.",
+          "Aggregate planning in supply chain",
+          "basic trade-offs in aggregate planning",
+          "linear programming in aggregate planning.",
+          "Coordination in supply chain",
+          "impact of lack of coordination in the chain",
+          "obstacles to coordination",
+          "managerial levers to improve coordination."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Managing economies of scale in a supply chain: Cycle inventory",
+          "Aggregating Multiple Products in a Single Order & Quantity Discounts.",
+          "Managing uncertainty in a Supply chain – Safety inventory: Factors affecting the optimal level of product availability.",
+          "Impact of supply uncertainty on safety inventory.",
+          "Impact of aggregation on safety inventory.",
+          "Factors affecting the optimal level of Product availability."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Logistics management and its components.",
+          "Modes of transportation and their performance Characteristics & Transportation infrastructure policies.",
+          "Design options for a transportation and logistics network.",
+          "Trade-offs in transportation design",
+          "Tailored transportation.",
+          "Role of sustainability in a supply chain.",
+          "Sustainability connected supply chain drivers."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "To analyse supply chains and design the supply chain network.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO2",
+        "description": "To solve demand forecasting problems in the supply chain and enhance coordination in the network.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO3",
+        "description": "To plan and manage inventories in the supply chain.",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO4",
+        "description": "To develop and plan transportation networks for supply chain considering sustainability also.",
+        "knowledgeLevel": "K4"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "SupplyChain  Management:Strategy, planning & Operation",
+        "author": "Sunil Chopra and Dharam Vir Kalra",
+        "publisher": "Pearson",
+        "edition": "7th edition, 2019"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Designing and managing the supply chain concepts, strategies, and cases studies",
+        "author": "David Simchi- Levi, Edith Simchi-Levi",
+        "publisher": "McGraw Hill",
+        "edition": "4th edition, 2022"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/110106045",
+      "module2": "https://nptel.ac.in/courses/110106045",
+      "module3": "https://nptel.ac.in/courses/110106045",
+      "module4": "https://nptel.ac.in/courses/110106045"
+    },
+    "semester": "4",
+    "branch": "Mechanical Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:56:11.136Z"
+}

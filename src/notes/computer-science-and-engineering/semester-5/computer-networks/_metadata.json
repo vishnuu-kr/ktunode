@@ -1,0 +1,172 @@
+{
+  "subject": "COMPUTER NETWORKS",
+  "branch": "Computer Science and Engineering",
+  "semester": 5,
+  "details": {
+    "name": "COMPUTER NETWORKS",
+    "courseCode": "PCCST501",
+    "credits": 4,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Overview of the Internet, Protocol layering (Book 1 Ch 1)",
+          "Application Layer: Application-Layer Paradigms, Client-server applications - World Wide Web and HTTP, FTP.",
+          "Electronic Mail, DNS.",
+          "Peer-to-peer paradigm - P2P Networks, Case study: BitTorrent (Book 1 Ch 2)"
+        ],
+        "contactHours": 6,
+        "textbookReferences": [
+          "Book 1 Ch 1",
+          "Book 1 Ch 2"
+        ]
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Transport Layer: Services, Protocols, UDP, TCP  (Book 1 Ch 3).",
+          "Hands-on: Sockets Introduction, Elementary TCP Sockets, TCP Client/Server Example, I/O Multiplexing: The select and poll Functions (Book 2 Ch 3 to 6), Elementary UDP Sockets (Book 2 Ch 8), Advanced I/O Functions (Book 2 Ch 14)",
+          "Network Layer: Introduction, Network-layer protocols, Unicast routing, Multicast routing - Multicasting Basics, Intra domain and inter-domain routing,  Next generation IP (Book 1 Ch 4), Quality of Service (Book 1 Ch 8)",
+          "Hands-on: Linux Kernel Implementation of Routing Table and Caches, Routing Cache Implementation Overview, Adding new entry in the Routing Table using ip command (Book 3 Ch 14)"
+        ],
+        "contactHours": 18,
+        "textbookReferences": [
+          "Book 1 Ch 3",
+          "Book 2 Ch 3 to 6",
+          "Book 2 Ch 8",
+          "Book 2 Ch 14",
+          "Book 1 Ch 4",
+          "Book 1 Ch 8",
+          "Book 3 Ch 14"
+        ]
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Data-Link Layer: Data link control (DLC), Multiple access protocols (MAC), Link-layer addressing, Ethernet protocol, Connecting devices (Book 1 Ch 5)",
+          "Wireless LANs, Mobile IP (Book 1 Ch 6)",
+          "Hands-on: Datalink Provider Interface, SOCK_PACKET and PF_PACKET (Book 2 Ch 29)"
+        ],
+        "contactHours": 11,
+        "textbookReferences": [
+          "Book 1 Ch 5",
+          "Book 1 Ch 6",
+          "Book 2 Ch 29"
+        ]
+      },
+      {
+        "module": 4,
+        "topics": [
+          "SNMP, ASN.1 (Book 1 Ch 9)",
+          "Physical Layer: Data and signals, Digital transmission, Analog transmission, Bandwidth utilization, Transmission media (Book 1 Ch 7)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": [
+          "Book 1 Ch 9",
+          "Book 1 Ch 7"
+        ]
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Understand the internetworking design in terms of protocol stack and the role of various application layer protocols",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Illustrate the functions of the transport layer from connectionless and connection-oriented perspectives",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Identify how the network layer achieves host-to-host connectivity and caters to the diverse service requirements of the host applications",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the nuances of the data link layer design and demonstrate the various data link link layer protocols",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Describe the fundamental characteristics of the physical layer and understand how the physical layer supports the functionalities of the top layers",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Computer Networks: A Top-Down Approach",
+        "author": "Behrouz A Forouzan",
+        "publisher": "McGraw Hill",
+        "edition": "SIE, 2017"
+      },
+      {
+        "title": "Unix Network Programming, Volume 1: The Sockets Networking API",
+        "author": "W. Richard Stevens, Andrew M. Rudoff, Bill Fenner",
+        "publisher": "Pearson Education",
+        "edition": "3/e, 2004"
+      },
+      {
+        "title": "TCP/IP Architecture, design, and implementation in Linux",
+        "author": "Sameer Seth M. Ajaykumar Venkatesulu",
+        "publisher": "Wiley",
+        "edition": "1/e, 2008"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Computer Networking: A Top-Down Approach Featuring Internet",
+        "author": "J. F. Kurose and K. W. Ross",
+        "publisher": "Pearson Education",
+        "edition": "8/e, 2022"
+      },
+      {
+        "title": "Computer Networks, A Systems Approach",
+        "author": "L. L. Peterson and B. S. Davie",
+        "publisher": "Morgan Kaufmann",
+        "edition": "5/e, 2011"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://nptel.ac.in/courses/106/105/106105183/",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "5",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T16:43:26.874Z"
+}

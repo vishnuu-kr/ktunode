@@ -1,0 +1,141 @@
+{
+  "subject": "DESIGN OF SOLAR PV SYSTEMS",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 7,
+  "details": {
+    "name": "DESIGN OF SOLAR PV SYSTEMS",
+    "courseCode": "OEEET721",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "OE -Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction  - Basic Concept of Energy -Source of Solar Energy -Formation\nof the Atmosphere - Solar Spectrum.",
+          "Solar Constant -Air Mass -Solar Time-Sun‒Earth Angles-Solar Radiation-Instruments to Measure Solar Radiation-Pyrheliometer –Pyranometer - Sunshine Recorder -Solar Radiation on a Horizontal Surface",
+          "Extra-terrestrial Region.- Terrestrial Region -Solar Radiation on an Inclined Surface -Conversion Factors -Total Solar Radiation on an Inclined/Tilted Surface -Monthly Average Daily Solar Radiation on Inclined Surfaces ."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Solar Thermal system -Principle of Conversion of Solar Radiation into Heat",
+          "Solar thermal collectors –General description and characteristics –Flat plate collectors –Heat transfer processes –Solar concentrators (parabolic trough, parabolic dish, Central Tower Collector) – performance evaluation",
+          "Applications -Solar heating system, Air conditioning and Refrigeration system, Pumping system, solar cooker, Solar Furnace, Solar Greenhouse - Design of solar water heater"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Solar PV Systems -Introduction -Fundamentals of Semiconductor and Solar Cells - Photovoltaic Effect -Solar Cell (Photovoltaic) Materials - Basic Parameters of the Solar Cell - Generation of Solar Cell (Photovoltaic) Materials-.Photovoltaic (PV) Module and PV Array - Single-Crystal Solar",
+          "Cell Module, Thin-Film PV Modules, III–V Single Junction and Multifunction PV Modules-Emerging and New PV Systems -Packing Factor of the PV Module - Efficiency of the PV Module -Energy Balance Equations for PV Modules -Series and Parallel Combination of PV Modules.- Effect of shadowing-MPPT Techniques-P&O , incremental conductance method-Maximum Power Point Tracker (MPPT) using buck-boost converter."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Solar PV Systems  –stand-alone and grid connected -Design steps for a Stand-Alone system – Storage batteries and Ultra capacitors.",
+          "Design PV powered DC fan and pump without battery-Design of Standalone System with Battery and AC or DC Load.",
+          "Life cycle costing, Growth models, Annual payment and present worth factor, payback period, LCC with examples.",
+          "Introduction to simulation software for solar PV system design"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the basics of solar energy conversion systems.",
+        "knowledgeLevel": "K1"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design a standalone PV system.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Demonstrate the operation of a grid interactive PV system.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Utilize life cycle cost analysis in the planning of Solar PV System",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Solar Photovoltaics: Fundamentals, Technologies And Applications",
+        "author": "Chetan Singh Solanki",
+        "publisher": "PHI",
+        "edition": "3rd Edition"
+      },
+      {
+        "title": "Solar Energy-Fundamentals, Design, Modelling and Applications",
+        "author": "G.N. Tiwari:",
+        "publisher": "Narosa Publishers",
+        "edition": "2002"
+      },
+      {
+        "title": "Grid Integration of Solar Photovoltaic Systems,",
+        "author": "D.P. Kothari, M Jamil.",
+        "publisher": "CRC Press",
+        "edition": "2018"
+      },
+      {
+        "title": "Solar Photovoltaics: Fundamentals, Technologies And Applications",
+        "author": "Chetan Singh Solanki",
+        "publisher": "PHI",
+        "edition": "3rd Edition"
+      }
+    ],
+    "referenceBooks": [],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:34:18.216Z"
+}

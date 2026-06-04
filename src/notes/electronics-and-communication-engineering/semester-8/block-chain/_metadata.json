@@ -1,0 +1,210 @@
+{
+  "subject": "BLOCK CHAIN",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 8,
+  "details": {
+    "name": "BLOCK CHAIN",
+    "courseCode": "PEECT867",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Blockchain – Definition",
+          "architecture",
+          "elements of blockchain",
+          "benefits and limitations",
+          "types of blockchain.",
+          "Consensus – definition",
+          "types",
+          "consensus in blockchain.",
+          "Decentralization – Decentralization using blockchain",
+          "Methods of decentralization",
+          "Routes to decentralization",
+          "Blockchain and full ecosystem decentralization."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Consensus Algorithms",
+          "Crash fault-tolerance (CFT) algorithms – Paxos",
+          "Raft.",
+          "Byzantine fault- tolerance (BFT) algorithms – Practical Byzantine Fault Tolerance (PBFT)",
+          "Proof of work (PoW)",
+          "Proof of stake (PoS)",
+          "Types of PoS.",
+          "Bitcoin – Definition",
+          "Cryptographic keys – Private keys",
+          "public keys",
+          "addresses.",
+          "Transactions – Lifecycle",
+          "coinbase transactions",
+          "transaction validation.",
+          "Blockchain – The genesis block.",
+          "Mining – Tasks of miners",
+          "mining algorithm",
+          "hash rate.",
+          "Wallets – Types of wallets."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Smart Contracts – Definition",
+          "Smart contract templates",
+          "Oracles",
+          "Types of oracles",
+          "Deploying smart contracts.",
+          "Decentralization terminology",
+          "Decentralized applications",
+          "Decentralized Autonomous Organizations.",
+          "Use cases of Blockchain technology – Government",
+          "Health care",
+          "Finance",
+          "Supply chain management.",
+          "Blockchain and allied technologies – Blockchain and Cloud Computing",
+          "Blockchain and Artificial Intelligence."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Ethereum – The Ethereum network.",
+          "Components of the Ethereum ecosystem – Keys and addresses",
+          "Accounts",
+          "Transactions and messages.",
+          "The Ethereum Virtual Machine",
+          "Blocks and blockchain.",
+          "The Solidity language – The layout of a Solidity source code",
+          "Structure of a smart contract",
+          "variables",
+          "data types",
+          "control structures",
+          "events",
+          "inheritance",
+          "libraries",
+          "functions",
+          "error handling.",
+          "Smart contracts Case study: Voting",
+          "Auction."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the fundamental concepts of blockchain technology.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Summarize the classification of consensus algorithms.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO3",
+        "description": "Explain the concepts of first decentralized cryptocurrency bitcoin.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the use of smart contracts and its use cases.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO5",
+        "description": "Develop  simple  applications  using  Solidity  language  on  Ethereum platform",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Mastering Blockchain: A deep dive into distributed ledgers, consensus protocols, smart contracts, DApps, cryptocurrencies, Ethereum, and more,",
+        "author": "Imran Bashir",
+        "publisher": "Packt Publishing,",
+        "edition": "Third edition, 2020."
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Solidity Programming Essentials: A beginner's guide to build smart contracts for Ethereum and blockchain,.",
+        "author": "Ritesh Modi",
+        "publisher": "Packt Publishing,",
+        "edition": "First edition, 2018"
+      },
+      {
+        "title": "Blockchain Technology: Concepts and Applications,",
+        "author": "Kumar Saurabh, Ashutosh Saxena",
+        "publisher": "Wiley Publications,",
+        "edition": "First Edition, 2020"
+      },
+      {
+        "title": "Blockchain Technology, ,",
+        "author": "Chandramouli Subramanian, Asha A George, et al",
+        "publisher": "Universities Press (India) Pvt. Ltd",
+        "edition": "First edition, August 2020."
+      },
+      {
+        "title": "Mastering Blockchain: Unlocking the Power of Cryptocurrencies, Smart Contracts, and Decentralized Applications,",
+        "author": "Lorne Lantz, Daniel Cawrey",
+        "publisher": "O'Reilly Media",
+        "edition": "First edition, 2020."
+      },
+      {
+        "title": "Mastering Ethereum: Building Smart Contracts and DApps,",
+        "author": "Andreas M. Antonopoulos, Gavin Wood",
+        "publisher": "O'Reilly Media",
+        "edition": "First edition, 2018"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://onlinecourses.nptel.ac.in/noc22_cs44/preview",
+      "module2": "https://onlinecourses.swayam2.ac.in/aic21_ge01/preview",
+      "module3": "https://archive.nptel.ac.in/courses/106/104/106104220/",
+      "module4": "https://onlinecourses.nptel.ac.in/noc20_cs01/preview"
+    },
+    "semester": "8",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T18:12:54.150Z"
+}

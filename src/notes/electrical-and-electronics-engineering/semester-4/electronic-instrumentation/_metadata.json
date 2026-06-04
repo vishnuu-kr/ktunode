@@ -1,0 +1,230 @@
+{
+  "subject": "ELECTRONIC INSTRUMENTATION",
+  "branch": "Electrical and Electronics Engineering",
+  "semester": 4,
+  "details": {
+    "name": "ELECTRONIC INSTRUMENTATION",
+    "courseCode": "PEEET411",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PCEET205",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Functional elements of electronic instrumentation system – Calibration methods: Static, Dynamic, Field, Traceable, Master.",
+          "Transducers- Classification-Criteria for selection- Static and dynamic characteristics- Zeroth and first order instruments and time responses.",
+          "Resistive transducers for liquid level and humidity",
+          "Inductive transducers- types and basic principles- LVDT- synchro",
+          "Capacitive transducers- types and basic principles- Thickness measurement",
+          "Piezoelectric transducers- Hall effect transducers-Basic principle and applications",
+          "Electronic IC for sensor applications, Micro Electromechanical system (MEMS)",
+          "Advantages and Applications, MEMS micro sensors and actuators,",
+          "MEMS accelerometers"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Signal conditioning for instrumentation systems: Voltage to Current Converter, Transducer bridges: null type and deflection bridges, AC bridges using push pull transducers",
+          "Amplifiers: Instrumentation amplifiers- charge amplifiers- isolation amplifier",
+          "Role of filters: Low pass, high pass, band pass and band rejection filters, Introduction to digital filters",
+          "Data Transmission- Types of Telemetry System- Modulation methods: Pulse modulation, Pulse amplitude modulation, Pulse code modulation",
+          "General telemetry systems- Cable transmission of analog and digital data- Fibre optic data transmission",
+          "Principles of time division and frequency division multiplexing-",
+          "Radio-wireless communication, WLAN architecture. Protocols: Field Bus, Profibus , HART"
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Display methods and devices: Different types of display –display system building blocks.",
+          "Data Presentation Element: Recorders-Strip Chart Recorder,",
+          "Potentiometric Recorder, X-Y Recorder. Magnetic recorder, Digital recorders- Data logger",
+          "Experiments and statistical analysis: Performance of experiment-",
+          "characteristics of experimental data- description of dispensed data- type",
+          "of probability distribution-probability error"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Introduction to Process Control - Block diagram of the process control loop.",
+          "Analog and Digital DAS:",
+          "Programmable logic controllers (PLC), Organization- Hardware details-",
+          "I/O- Power supply- CPU- Standards Programming aspects- Ladder",
+          "programming- realization of AND, OR, NAND, NOR and XOR logic,",
+          "the concept of latching, Introduction to Timer/Counters, Numerical",
+          "Exercises based on Timers and Counters.",
+          "SCADA and DCS systems:",
+          "SCADA: Introduction, SCADA Architecture, Common System",
+          "Components,",
+          "Supervision and Control, HMI, RTU and Supervisory Stations,",
+          "Protocols-IEC 60870-5-101 and DNP3.",
+          "Distributed Control System: Introduction, DCS Architecture, Control",
+          "modes."
+        ],
+        "contactHours": 10,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.\nTotal of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.\nTwo questions will be given from each module, out of which 1 question should be answered.\nEach question can have a maximum of 3 sub divisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Identify the sensors/transducers suitable for industrial applications.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design the signal conditioning circuits for industrial instrumentation and automation.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Understand the concepts of data transmission methods applicable to electronic instrumentation systems.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Develop the logic for the process control applications using PLC programming",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO5",
+        "description": "Analyze the performance of measurement systems using statistical methods",
+        "knowledgeLevel": "K4"
+      },
+      {
+        "CO": "CO6",
+        "description": "Describe the fundamental concepts of DCS and SCADA systems",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "A course in Electrical and Electronic Measurements & Instrumentation",
+        "author": "A. K. Sawhney",
+        "publisher": "Dhanpat Rai & Co.",
+        "edition": "2011"
+      },
+      {
+        "title": "A course in Electrical & Electronic Measurement & Instrumentation",
+        "author": "J. B. Gupta",
+        "publisher": "S K Kataria & Sons",
+        "edition": "14th Ed., 2014"
+      },
+      {
+        "title": "Electrical Measurements & Measuring Instruments",
+        "author": "Golding E.W and Widdis",
+        "publisher": "Wheeler Pub.",
+        "edition": ""
+      },
+      {
+        "title": "Electronic Instrumentation",
+        "author": "H. S. Kalsi",
+        "publisher": "McGraw Hill, New Delhi",
+        "edition": "4th Ed., 2019"
+      },
+      {
+        "title": "Principles of Electrical Measurement",
+        "author": "S Tumanski",
+        "publisher": "Taylor & Francis.",
+        "edition": ""
+      },
+      {
+        "title": "Electronic Instrumentation and Measurements",
+        "author": "David A Bel",
+        "publisher": "Oxford",
+        "edition": ""
+      },
+      {
+        "title": "Programmable Logic Controllers",
+        "author": "William Bolton",
+        "publisher": "Elsevier India Pvt. Ltd",
+        "edition": "5th edition"
+      },
+      {
+        "title": "SCADA: Supervisory Control and Data Acquisition",
+        "author": "Stuart A. Boyer",
+        "publisher": "International Society of Automation",
+        "edition": "4th edition, 2010"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Modern Electronics Instrumentation",
+        "author": "Cooper W.D",
+        "publisher": "Prentice Hall of India",
+        "edition": ""
+      },
+      {
+        "title": "Basic Electrical Measurements",
+        "author": "Stout M.B",
+        "publisher": "Prentice Hall",
+        "edition": ""
+      },
+      {
+        "title": "Electronic Measurements & Instrumentation",
+        "author": "Oliver & Cage",
+        "publisher": "McGraw Hill",
+        "edition": ""
+      },
+      {
+        "title": "Doebelin’s Measurements Systems",
+        "author": "E.O Doebelin and D.N Manik",
+        "publisher": "McGraw Hill Education (India) Pvt. Ltd.",
+        "edition": "6th Ed."
+      },
+      {
+        "title": "Electrical and Electronics Measurements and Instrumentation",
+        "author": "P.Purkait, B.Biswas, S.Das and C. Koley",
+        "publisher": "McGraw Hill Education (India) Pvt. Ltd.",
+        "edition": "2013"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/108/105/108105153/\nhttps://archive.nptel.ac.in/courses/108/108/108108147/",
+      "module2": "https://archive.nptel.ac.in/courses/108/105/108105153/",
+      "module3": "https://archive.nptel.ac.in/courses/108/105/108105153/",
+      "module4": "https://archive.nptel.ac.in/courses/108/108/108108147/\nhttps://archive.nptel.ac.in/courses/106/105/106105166/"
+    },
+    "semester": "4",
+    "branch": "Electrical and Electronics Engineering"
+  },
+  "scrapedAt": "2026-05-23T16:16:05.640Z"
+}

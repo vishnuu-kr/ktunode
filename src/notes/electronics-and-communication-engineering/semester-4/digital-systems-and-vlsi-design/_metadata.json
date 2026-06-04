@@ -1,0 +1,213 @@
+{
+  "subject": "DIGITAL SYSTEMS AND VLSI DESIGN",
+  "branch": "Electronics and Communication Engineering",
+  "semester": 4,
+  "details": {
+    "name": "DIGITAL SYSTEMS AND VLSI DESIGN",
+    "courseCode": "PEECT415",
+    "credits": 5,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "PBECT304 Logic Circuit Design",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 3,
+      "tutorial": 0,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Clocked Synchronous Networks",
+          "Analysis of Clocked Synchronous Sequential Networks (CSSN)",
+          "Mealy machine",
+          "Moore machine",
+          "Modelling of CSSN",
+          "State assignment and reduction",
+          "Design of CSSN",
+          "ASM Chart and its realization."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Asynchronous Sequential Circuits",
+          "Analysis of Asynchronous Sequential Circuits (ASC)",
+          "Flow table reduction",
+          "Races in ASC",
+          "State assignment problem and the transition table",
+          "Design of Asynchronous Sequential Circuits",
+          "Design of ALU."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Hazards – static and dynamic hazards in combinational networks",
+          "Essential Hazards",
+          "Design of Hazard free circuits",
+          "Data synchronizers",
+          "Mixed operating mode asynchronous circuits",
+          "Practical issues- clock skew and jitter",
+          "Synchronous and asynchronous inputs",
+          "Flip-Flops and Simple Flip-Flop Applications",
+          "switch debouncer.",
+          "Faults",
+          "Fault table method – path sensitization method – Boolean difference method",
+          "Kohavi algorithm",
+          "Automatic test pattern generation – Built in Self-Test (BIST)"
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "VLSI Design flow",
+          "Design entry: Schematic, FSM & HDL",
+          "VHDL Hardware Description Language",
+          "VHDL Modules",
+          "VHDL Processes",
+          "Different modeling styles in VHDL",
+          "Data types and operators",
+          "Objects",
+          "Dataflow",
+          "Behavioral and Structural Modeling",
+          "Synthesis",
+          "Simulation.",
+          "VHDL constructs and codes for combinational and sequential circuits."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 0,
+        "internalExam1": 15,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "● 2 Questions from each module.\n● Total of 8 Questions, each carrying 3 marks (8x3 =24marks)",
+          "marks": 24
+        },
+        "partB": {
+          "description": " 2 questions will be given from each module, out of which 1 question should be answered.\n Each question can have a maximum of 3 sub divisions.\n Each question carries 9 marks.\n(4x9 = 36 marks)",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Design, analyze, and model clocked synchronous sequential networks (CSSNs), optimize state assignment and reduction, and effectively utilize ASM charts for the realization of complex digital systems.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO2",
+        "description": "Design and analyze asynchronous sequential circuits (ASCs), perform flow table reduction, address race conditions and state assignment problems, and design both ASCs and Arithmetic Logic Units (ALUs).",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Identify and mitigate static and dynamic hazards in combinational networks, design hazard-free circuits, address practical issues in digital systems and apply fault detection and testing methods.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO4",
+        "description": "Explain the VLSI design flow, utilize various design entry methods, apply different VHDL modeling styles, and develop and simulate VHDL constructs for combinational and sequential circuits.",
+        "knowledgeLevel": "K2"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Digital Principles & Design",
+        "author": "Donald G Givone",
+        "publisher": "McGraw Hill Education",
+        "edition": "2017"
+      },
+      {
+        "title": "Digital Design: Principles and Practices",
+        "author": "John F Wakerly",
+        "publisher": "Pearson India",
+        "edition": "4th, 2008"
+      },
+      {
+        "title": "Digital Logic Applications and Design",
+        "author": "John M Yarbrough",
+        "publisher": "Cengage Learning India",
+        "edition": "1st,  2006"
+      },
+      {
+        "title": "Digital Design: With an Introduction to the Verilog HDL, VHDL, and SystemVerilog",
+        "author": "M.Morris Mano and Michel.D.Ciletti,",
+        "publisher": "Pearson",
+        "edition": "6th, 2017"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Digital Systems Testing and Testable Design",
+        "author": "Melvin A. Breuer, Miron Abramovici, Arthur D. Friedman",
+        "publisher": "Wiley-IEEE Press",
+        "edition": "1st, 1994"
+      },
+      {
+        "title": "Logic Design Theory",
+        "author": "Nripendra N. Biswas",
+        "publisher": "Prentice Hall",
+        "edition": "1993"
+      },
+      {
+        "title": "Introduction to Digital Design Using Digilent FPGA Boards: Block Diagram / VHDL Examples",
+        "author": "Richard E. Haskell\nDarrin M. Hanna",
+        "publisher": "LBE Books- LLC",
+        "edition": "2019"
+      },
+      {
+        "title": "Digital Circuits and Logic Design",
+        "author": "Samuel C. Lee",
+        "publisher": "Prentice Hall India Learning Private Limited",
+        "edition": "1980"
+      },
+      {
+        "title": "Switching and Finite Automata Theory",
+        "author": "Zvi Kohavi, Niraj K. Jha",
+        "publisher": "CAMBRIDGE UNIVERSITY PRESS",
+        "edition": "3rd 2009"
+      },
+      {
+        "title": "Digital System Design Using VHDL",
+        "author": "Rishabh Anand",
+        "publisher": "Khanna Publishing",
+        "edition": "1st, 2013"
+      },
+      {
+        "title": "Digital System Design Using VHDL",
+        "author": "Lizy Kurian John, Charles H. Roth",
+        "publisher": "Cengage",
+        "edition": "1st, 2012"
+      }
+    ],
+    "videoLinks": {
+      "module1": "https://archive.nptel.ac.in/courses/117/106/117106086/",
+      "module2": "https://archive.nptel.ac.in/courses/117/106/117106086/",
+      "module3": "https://archive.nptel.ac.in/courses/108/105/108105132/",
+      "module4": "https://nptel.ac.in/courses/108106177"
+    },
+    "semester": "4",
+    "branch": "Electronics and Communication Engineering"
+  },
+  "scrapedAt": "2026-05-23T17:48:00.163Z"
+}

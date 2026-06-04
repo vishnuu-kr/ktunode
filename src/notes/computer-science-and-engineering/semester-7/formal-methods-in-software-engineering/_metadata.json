@@ -1,0 +1,145 @@
+{
+  "subject": "FORMAL METHODS IN SOFTWARE ENGINEERING",
+  "branch": "Computer Science and Engineering",
+  "semester": 7,
+  "details": {
+    "name": "FORMAL METHODS IN SOFTWARE ENGINEERING",
+    "courseCode": "PECST741",
+    "credits": 3,
+    "examHours": "2 Hrs. 30 Min.",
+    "prerequisites": "None",
+    "courseType": "Theory",
+    "teachingHoursPerWeek": {
+      "lecture": 2,
+      "tutorial": 1,
+      "practical": 0,
+      "research": 0
+    },
+    "CIE": 40,
+    "ESE": 60,
+    "syllabusModules": [
+      {
+        "module": 1,
+        "topics": [
+          "Introduction :-",
+          "Stages in software development",
+          "software defects –causes of software defects",
+          "techniques for dealing with software defects-Testing and verification",
+          "formal methods and tools."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 2,
+        "topics": [
+          "Ensuring reliability in the design phase :-",
+          "Conceptual modelling, the tool Alloy, conceptual modelling in Alloy",
+          "Analysing Alloy models",
+          "Fixing bugs in modelling",
+          "How Alloy works?",
+          "Show that the Konigsberg Bridge Problem has no solution."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 3,
+        "topics": [
+          "Verification by Model Checking :-",
+          "Verifier for Concurrent C (VCC): a Hoare-Triple- based tool for Verifying Concurrent C",
+          "intra procedure verification of programs",
+          "ghost statements."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      },
+      {
+        "module": 4,
+        "topics": [
+          "Program Verification:-",
+          "Inter-procedure verification of programs in VCC",
+          "function contracts",
+          "pure functions",
+          "loop invariants",
+          "proving total correctness of programs in VCC."
+        ],
+        "contactHours": 9,
+        "textbookReferences": []
+      }
+    ],
+    "assessment": {
+      "CIE": {
+        "attendance": 5,
+        "assignmentOrMicroproject": 15,
+        "internalExam1": 10,
+        "internalExam2": 10,
+        "total": 40
+      },
+      "ESE": {
+        "partA": {
+          "description": "2 Questions from each module.  Total of 8 Questions, each carrying 3 marks",
+          "marks": 24
+        },
+        "partB": {
+          "description": "Each question carries 9 marks.  Two questions will be given from each module, out of which 1 question should be answered.  Each question can have a maximum of 3 subdivisions.",
+          "marks": 36
+        },
+        "total": 60
+      }
+    },
+    "courseOutcomes": [
+      {
+        "CO": "CO1",
+        "description": "Explain the need and use of formal methods and tools in software engineering.",
+        "knowledgeLevel": "K2"
+      },
+      {
+        "CO": "CO2",
+        "description": "Demonstrate conceptual modelling of systems using Alloy.",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO3",
+        "description": "Illustrate the process of proving correctness of code using Hoare-Triple based weakest  precondition analysis",
+        "knowledgeLevel": "K3"
+      },
+      {
+        "CO": "CO4",
+        "description": "Demonstrate program verification using VCC.",
+        "knowledgeLevel": "K3"
+      }
+    ],
+    "textBooks": [
+      {
+        "title": "Software Abstractions",
+        "author": "Daniel Jackson",
+        "publisher": "MIT Press",
+        "edition": "2011"
+      }
+    ],
+    "referenceBooks": [
+      {
+        "title": "Verifying C Programs: A  VCC Tutorial, Working draft, version 0.2",
+        "author": "E. Cohen, M. A., Hillebrand, S. Tobies, M. Moskal, W. Schulte",
+        "publisher": "",
+        "edition": "2015"
+      },
+      {
+        "title": "The VCC Manual, Working draft, version 0.2",
+        "author": "",
+        "publisher": "",
+        "edition": "2016"
+      }
+    ],
+    "videoLinks": {
+      "module1": "",
+      "module2": "",
+      "module3": "",
+      "module4": ""
+    },
+    "semester": "7",
+    "branch": "Computer Science and Engineering"
+  },
+  "scrapedAt": "2026-05-20T17:05:49.439Z"
+}
