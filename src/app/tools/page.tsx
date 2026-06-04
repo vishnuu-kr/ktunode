@@ -4425,7 +4425,7 @@ export default function ToolsPage() {
       <div className="absolute inset-0 z-0 dot-grid opacity-[0.08] pointer-events-none" />
       <div className="absolute inset-0 z-0 noise-overlay opacity-[0.25] pointer-events-none" />
       <div className="absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full bg-blue-400/20 dark:bg-blue-500/5 blur-[160px] pointer-events-none z-0 bg-orb-1" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-indigo-300/15 dark:bg-indigo-500/5 blur-[140px] pointer-events-none z-0 bg-orb-2 -translate-x-[60px] translate-y-[60px]" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-indigo-300/15 dark:bg-indigo-500/5 blur-[140px] pointer-events-none z-0 bg-orb-2 -translate-x-[60px] translate-y-[60px] hidden sm:block" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-blue-100/40 dark:bg-blue-400/5 blur-[120px] pointer-events-none z-0 bg-orb-3" />
 
       <Navbar />
@@ -4445,7 +4445,7 @@ export default function ToolsPage() {
         )}
       </AnimatePresence>
 
-      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 sm:pt-24 md:pt-28 flex flex-col z-10 pb-8 md:pb-20 space-y-4 sm:space-y-6">
+      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 sm:pt-24 md:pt-28 flex flex-col z-10 pb-4 md:pb-20 space-y-4 sm:space-y-6">
         
         {/* red-glow and blue-glow decoration background spots */}
         <div className="absolute top-10 left-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
