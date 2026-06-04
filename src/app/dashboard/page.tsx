@@ -130,9 +130,9 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       badgeBg: "bg-blue-50",
       accentColor: "#3b82f6",
       background: "radial-gradient(ellipse at 70% 10%, #dbeafe 0%, #eff6ff 35%, #ffffff 70%)",
-      glowCircle1: "bg-blue-400/20",
-      glowCircle2: "bg-indigo-300/15",
-      glowCircle3: "bg-blue-100/40",
+      glowCircle1: "bg-blue-400/20 dark:bg-blue-500/5",
+      glowCircle2: "bg-indigo-300/15 dark:bg-indigo-500/5",
+      glowCircle3: "bg-blue-100/40 dark:bg-blue-400/5",
       buttonShadow: "shadow-subject-blue",
     };
   }
@@ -149,9 +149,9 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       badgeBg: "bg-emerald-50",
       accentColor: "#10b981",
       background: "radial-gradient(ellipse at 70% 10%, #d1fae5 0%, #ecfdf5 35%, #ffffff 70%)",
-      glowCircle1: "bg-emerald-400/20",
-      glowCircle2: "bg-teal-300/15",
-      glowCircle3: "bg-emerald-100/40",
+      glowCircle1: "bg-emerald-400/20 dark:bg-emerald-500/5",
+      glowCircle2: "bg-teal-300/15 dark:bg-teal-500/5",
+      glowCircle3: "bg-emerald-100/40 dark:bg-emerald-400/5",
       buttonShadow: "shadow-subject-green",
     };
   }
@@ -165,13 +165,13 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       badgeBg: "bg-purple-50",
       accentColor: "#a855f7",
       background: "radial-gradient(ellipse at 70% 10%, #f3e8ff 0%, #faf5ff 35%, #ffffff 70%)",
-      glowCircle1: "bg-purple-400/20",
-      glowCircle2: "bg-fuchsia-300/15",
-      glowCircle3: "bg-purple-100/40",
+      glowCircle1: "bg-purple-400/20 dark:bg-purple-500/5",
+      glowCircle2: "bg-fuchsia-300/15 dark:bg-fuchsia-500/5",
+      glowCircle3: "bg-purple-100/40 dark:bg-purple-400/5",
       buttonShadow: "shadow-subject-purple",
     };
   }
-
+ 
   if (name.includes("operating system") || name.includes("architecture") || name.includes("network") || name.includes("microprocessor") || name.includes("hardware") || name.includes("coa") || name.includes("sys") || code.includes("cst202") || code.includes("cst206")) {
     return {
       accent: "blue",
@@ -181,9 +181,9 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       badgeBg: "bg-blue-50",
       accentColor: "#3b82f6",
       background: "radial-gradient(ellipse at 70% 10%, #dbeafe 0%, #eff6ff 35%, #ffffff 70%)",
-      glowCircle1: "bg-blue-400/20",
-      glowCircle2: "bg-indigo-300/15",
-      glowCircle3: "bg-blue-100/40",
+      glowCircle1: "bg-blue-400/20 dark:bg-blue-500/5",
+      glowCircle2: "bg-indigo-300/15 dark:bg-indigo-500/5",
+      glowCircle3: "bg-blue-100/40 dark:bg-blue-400/5",
       buttonShadow: "shadow-subject-blue",
     };
   }
@@ -197,9 +197,9 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
       badgeBg: "bg-amber-50",
       accentColor: "#f59e0b",
       background: "radial-gradient(ellipse at 70% 10%, #fef3c7 0%, #fffbeb 35%, #ffffff 70%)",
-      glowCircle1: "bg-amber-400/20",
-      glowCircle2: "bg-orange-300/15",
-      glowCircle3: "bg-amber-100/40",
+      glowCircle1: "bg-amber-400/20 dark:bg-amber-500/5",
+      glowCircle2: "bg-orange-300/15 dark:bg-orange-500/5",
+      glowCircle3: "bg-amber-100/40 dark:bg-amber-400/5",
       buttonShadow: "shadow-subject-amber",
     };
   }
@@ -212,9 +212,9 @@ const getSubjectTheme = (subject: Subject | null): SubjectTheme => {
     badgeBg: "bg-teal-50",
     accentColor: "#14b8a6",
     background: "radial-gradient(ellipse at 70% 10%, #ccfbf1 0%, #f0fdfa 35%, #ffffff 70%)",
-    glowCircle1: "bg-teal-400/20",
-    glowCircle2: "bg-emerald-300/15",
-    glowCircle3: "bg-teal-100/40",
+    glowCircle1: "bg-teal-400/20 dark:bg-teal-500/5",
+    glowCircle2: "bg-emerald-300/15 dark:bg-emerald-500/5",
+    glowCircle3: "bg-teal-100/40 dark:bg-teal-400/5",
     buttonShadow: "shadow-subject-emerald",
   };
 };
@@ -1196,15 +1196,15 @@ function DashboardContent() {
       className="h-screen overflow-hidden relative flex flex-col font-sans transition-colors duration-500 text-slate-900 dark:text-slate-100 bg-background"
       style={{
         background: mounted && resolvedTheme === "dark"
-          ? `radial-gradient(ellipse at 70% 10%, oklch(18% 0.035 ${accentHue}) 0%, oklch(14% 0.015 250) 45%, oklch(12% 0.01 250) 80%)`
+          ? `radial-gradient(ellipse at 70% 10%, oklch(18% 0.035 ${accentHue}) 0%, oklch(14% 0.015 ${accentHue}) 45%, oklch(12% 0.01 ${accentHue}) 80%)`
           : theme.background
       }}
     >
       <div className="absolute inset-0 z-0 dot-grid opacity-[0.08] pointer-events-none" />
       <div className="absolute inset-0 z-0 noise-overlay opacity-[0.25] pointer-events-none" />
-      <div className={`absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full ${theme.glowCircle1} dark:bg-blue-500/5 blur-[160px] pointer-events-none z-0 bg-orb-1 transition-colors duration-500`} />
-      <div className={`absolute bottom-[-60px] left-[-60px] w-[600px] h-[600px] rounded-full ${theme.glowCircle2} dark:bg-indigo-500/5 blur-[140px] pointer-events-none z-0 bg-orb-2 transition-colors duration-500`} />
-      <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full ${theme.glowCircle3} dark:bg-blue-400/5 blur-[120px] pointer-events-none z-0 bg-orb-3 transition-colors duration-500`} />
+      <div className={`absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full ${theme.glowCircle1} blur-[160px] pointer-events-none z-0 bg-orb-1 transition-colors duration-500`} />
+      <div className={`absolute bottom-[-60px] left-[-60px] w-[600px] h-[600px] rounded-full ${theme.glowCircle2} blur-[140px] pointer-events-none z-0 bg-orb-2 transition-colors duration-500`} />
+      <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full ${theme.glowCircle3} blur-[120px] pointer-events-none z-0 bg-orb-3 transition-colors duration-500`} />
 
       <a href="#dashboard-heading" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg focus:shadow-md">
         Skip to main content
