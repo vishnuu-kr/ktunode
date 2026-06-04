@@ -5,7 +5,11 @@ import path from "path";
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const branch = searchParams.get("branch");
-  const sem = searchParams.get("sem");
+  let sem = searchParams.get("sem");
+
+  if (sem) {
+    sem = sem.replace("sem-", "");
+  }
 
   if (!branch || !sem) {
     return Response.json({ error: "Missing branch or sem parameters" }, { status: 400 });

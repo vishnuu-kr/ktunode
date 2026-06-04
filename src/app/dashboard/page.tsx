@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowRight,
@@ -303,9 +303,33 @@ const getVideoIdForCard = (
 };
 
 function DashboardContent() {
+  const params = useParams();
   const searchParams = useSearchParams();
-  const branch = searchParams.get("branch") || "cs";
-  const sem = parseInt(searchParams.get("sem") || "4", 10);
+  
+  // Resolve branch using path params first, then search params, fallback to "cs"
+  let branch = "cs";
+  if (params && params.branch) {
+    branch = Array.isArray(params.branch) ? params.branch[0] : params.branch;
+  } else if (searchParams && searchParams.get("branch")) {
+    branch = searchParams.get("branch")!;
+  }
+
+  // Resolve sem using path params first, then search params, fallback to 4
+  let sem = 4;
+  let semStr = "";
+  if (params && params.sem) {
+    semStr = Array.isArray(params.sem) ? params.sem[0] : params.sem;
+  } else if (searchParams && searchParams.get("sem")) {
+    semStr = searchParams.get("sem")!;
+  }
+
+  if (semStr) {
+    const cleanSemStr = semStr.replace("sem-", "");
+    const parsed = parseInt(cleanSemStr, 10);
+    if (!isNaN(parsed)) {
+      sem = parsed;
+    }
+  }
   const { resolvedTheme } = useTheme();
 
   const [mounted, setMounted] = useState(false);
