@@ -16,16 +16,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const semNum = parseInt(semStr.replace("sem-", ""), 10);
 
   const branchLabel = branch.toUpperCase();
+  const title = `KTU ${branchLabel} Semester ${semNum} Notes, Syllabus & PYQs | KTUNODE`;
+  const description = `Download module-wise KTU notes, syllabus tracker, and previous year question papers for ${branchLabel} Semester ${semNum} (2024 scheme) on KTUNODE.`;
 
   return {
-    title: `${branchLabel} Semester ${semNum} Study Hub | KTUNode`,
-    description: `Access notes, syllabus details, past questions, and focus tools for ${branchLabel} S${semNum}.`,
+    title,
+    description,
     alternates: {
       canonical: `https://ktunode.com/${branch}/sem-${semNum}`,
     },
     openGraph: {
-      title: `${branchLabel} Semester ${semNum} Study Hub`,
-      description: `The minimalist exam companion for KTU ${branchLabel} students.`,
+      title,
+      description,
+      images: ["/og-main.webp"],
     },
   };
 }

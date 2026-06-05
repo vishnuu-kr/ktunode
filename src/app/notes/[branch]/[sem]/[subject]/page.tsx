@@ -35,15 +35,15 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
   const subjectTitle = subject ? subject.name : subjectIdOrCode.toUpperCase();
   const subjectCode = subject ? subject.code.toUpperCase() : subjectIdOrCode.toUpperCase();
 
-  let title = `${subjectCode} - ${branch.toUpperCase()} S${semNum} | KTUNode`;
-  let description = `Official notes, syllabus mapping, and exam resources for ${subjectTitle}.`;
+  let title = `${subjectCode} - ${subjectTitle} | KTU ${branch.toUpperCase()} S${semNum} Notes | KTUNODE`;
+  let description = `Get module-wise notes, solved question papers, and syllabus tracking for ${subjectCode} - ${subjectTitle} (${branch.toUpperCase()} Semester ${semNum}) on KTUNODE.`;
   let canonicalUrl = `https://ktunode.com/${branch}/sem-${semNum}/${subjectIdOrCode.toLowerCase()}`;
 
   if (topicId && subject) {
     const topic = subject.modules.flatMap(m => m.topics).find(t => t.id === topicId);
     if (topic) {
-      title = `${topic.title} - ${subjectCode} | KTUNode`;
-      description = `Read notes and study resources on ${topic.title} under ${subjectTitle} (${subjectCode}).`;
+      title = `${topic.title} - ${subjectCode} (${branch.toUpperCase()} S${semNum}) | KTUNODE`;
+      description = `Read comprehensive KTU study notes and exam preparation material on ${topic.title} under ${subjectTitle} (${subjectCode}) on KTUNODE.`;
       canonicalUrl = `https://ktunode.com/${branch}/sem-${semNum}/${subjectIdOrCode.toLowerCase()}/${topicId.toLowerCase()}`;
     }
   }
@@ -55,7 +55,7 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: topicId ? title : `${subjectCode} Study Hub`,
+      title,
       description,
       images: [
         `/api/og?title=${encodeURIComponent(

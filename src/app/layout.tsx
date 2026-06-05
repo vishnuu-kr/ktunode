@@ -28,8 +28,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://ktunode.vercel.app")
+    process.env.NEXT_PUBLIC_APP_URL || "https://ktunode.vercel.app"
   ),
   manifest: "/manifest.json",
   title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
