@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import { useSearchParams, useParams } from "next/navigation";
+import { useSearchParams, useParams, usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowRight,
@@ -321,6 +321,7 @@ const getVideoIdForCard = (
 function DashboardContent() {
   const params = useParams();
   const searchParams = useSearchParams();
+  const pathname = usePathname();
   const lastVibrateTimeRef = React.useRef<number>(0);
   
   // Resolve branch using path params first, then search params, fallback to "cs"
@@ -2339,7 +2340,7 @@ function DashboardContent() {
 
       {/* Floating Sticky Mobile Study Tools FAB */}
       <AnimatePresence>
-        {!mobileSheetOpen && (view === "dashboard" || view === "subject" || view === "topic") && (
+        {!mobileSheetOpen && pathname === "/dashboard" && view === "dashboard" && (
           <motion.div
             key="study-tools-fab"
             className="fixed bottom-6 right-6 z-[40] lg:hidden"
