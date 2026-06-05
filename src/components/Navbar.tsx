@@ -219,28 +219,29 @@ export default function Navbar() {
   const isDashboardOrNotes = pathname?.startsWith("/dashboard") || pathname?.startsWith("/notes") || pathname?.includes("/sem-");
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed left-1/2 top-4 z-50 flex w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2 items-center justify-between rounded-full px-3.5 py-2.5 sm:px-6 sm:py-3 transition-all duration-300 overflow-visible ${
-        scrolled
-          ? "bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg border border-white/40 dark:border-slate-800/80"
-          : "bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border border-white/60 dark:border-slate-800/80"
-      }`}
-      style={{
-        boxShadow: !mounted
-          ? undefined
-          : scrolled
-            ? resolvedTheme === "dark"
-              ? "0 12px 40px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3)"
-              : "0 12px 40px rgba(37,99,235,0.15), 0 4px 12px rgba(0,0,0,0.05)"
-            : resolvedTheme === "dark"
-              ? "0 4px 16px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.2)"
-              : "0 4px 16px rgba(37,99,235,0.07), 0 1px 3px rgba(0,0,0,0.04)",
-      }}
-    >
-      {/* Logo */}
-      <Link href="/" onClick={handleLogoClick} className="flex items-center gap-1.5 sm:gap-2 group select-none">
+    <div className="fixed top-0 left-0 right-0 z-[60] w-full pt-4 pb-2 sm:pt-4 sm:pb-3 transition-all duration-300 pointer-events-none">
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className={`pointer-events-auto relative mx-auto flex w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl items-center justify-between rounded-full px-3.5 py-2.5 sm:px-6 sm:py-3 transition-all duration-300 overflow-visible ${
+          scrolled
+            ? "bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800"
+            : "bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800/50"
+        }`}
+        style={{
+          boxShadow: !mounted
+            ? undefined
+            : scrolled
+              ? resolvedTheme === "dark"
+                ? "0 12px 40px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3)"
+                : "0 12px 40px rgba(37,99,235,0.15), 0 4px 12px rgba(0,0,0,0.05)"
+              : resolvedTheme === "dark"
+                ? "0 4px 16px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.2)"
+                : "0 4px 16px rgba(37,99,235,0.07), 0 1px 3px rgba(0,0,0,0.04)",
+        }}
+      >
+        {/* Logo */}
+        <Link href="/" onClick={handleLogoClick} className="flex items-center gap-1.5 sm:gap-2 group select-none">
         <Image
           src="/logo.webp"
           alt="KTU node Logo"
@@ -294,16 +295,17 @@ export default function Navbar() {
                 whileHover="hover"
                 whileTap="tap"
                 onClick={handleSignInClick}
-                className="group flex h-10 sm:h-9 items-center gap-1 sm:gap-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 pl-2 pr-2.5 sm:pl-2.5 sm:pr-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-blue-50/40 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer whitespace-nowrap"
+                className="group flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:pl-2.5 sm:pr-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-blue-50/40 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer whitespace-nowrap"
+                title="Sign In"
               >
                 <motion.div
                   variants={{
                     hover: { rotate: [0, -8, 8, -8, 8, 0], transition: { duration: 0.45 } }
                   }}
                 >
-                  <UserRound className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-slate-400 group-hover:text-blue-500 transition-colors duration-200" />
+                  <UserRound className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5 text-slate-400 group-hover:text-blue-500 transition-colors duration-200" />
                 </motion.div>
-                <span>Sign In</span>
+                <span className="hidden sm:inline">Sign In</span>
               </motion.button>
             )}
 
@@ -314,40 +316,45 @@ export default function Navbar() {
         {isActive("/tools") ? (
           <button
             type="button"
-            className="inline-flex h-10 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
+            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
             aria-label="Tools"
+            title="Tools"
             aria-current="page"
           >
-            <Wrench className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-violet-500" />
-            <span>Tools</span>
+            <Wrench className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5 text-violet-500" />
+            <span className="hidden sm:inline">Tools</span>
           </button>
         ) : (
           <Link
             href="/tools"
-            className="inline-flex h-10 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
+            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
+            title="Tools"
           >
-            <Wrench className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-            <span>Tools</span>
+            <Wrench className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5" />
+            <span className="hidden sm:inline">Tools</span>
           </Link>
         )}
 
         {isActive("/dashboard") ? (
           <button
             type="button"
-            className="inline-flex h-10 sm:h-9 items-center gap-1 sm:gap-2 rounded-full border border-blue-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-2.5 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap animate-none"
+            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-blue-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap animate-none"
             aria-label="Dashboard"
+            title="Dashboard"
             aria-current="page"
           >
-            <LayoutDashboard className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-blue-500" />
-            <span>Dashboard</span>
+            <LayoutDashboard className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5 text-blue-500" />
+            <span className="hidden sm:inline">Dashboard</span>
           </button>
         ) : (
-          <MagneticButton href="/dashboard" className="!h-10 sm:!h-9 flex items-center justify-center !py-0 !px-3 sm:!px-4 !text-[10px] sm:!text-xs whitespace-nowrap">
-            Dashboard
-            <ArrowRight className="w-3 h-3" />
+          <MagneticButton href="/dashboard" className="!h-10 sm:!h-9 !w-10 sm:!w-auto flex items-center justify-center !py-0 !px-0 sm:!px-4 !text-[10px] sm:!text-xs whitespace-nowrap" customShadow="shadow-none">
+            <LayoutDashboard className="h-3.5 w-3.5 block sm:hidden text-white" />
+            <span className="hidden sm:inline">Dashboard</span>
+            <ArrowRight className="w-3 h-3 hidden sm:inline" />
           </MagneticButton>
         )}
       </div>
-    </motion.header>
+      </motion.header>
+    </div>
   );
 }

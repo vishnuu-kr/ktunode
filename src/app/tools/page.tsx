@@ -2,9 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
-import GpaCalculator from "@/components/GpaCalculator";
 import { useTheme } from "next-themes";
+import { triggerHaptic } from "@/lib/haptic";
+
+const GpaCalculator = dynamic(() => import("@/components/GpaCalculator"), {
+  loading: () => <div className="animate-pulse h-48 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-[20px] flex items-center justify-center text-xs text-slate-400 font-medium">Loading GPA calculator module...</div>,
+  ssr: false
+});
 import { mockSubjects, Subject } from "@/lib/mockData";
 import ktu2024Scheme from "@/data/ktu_2024_scheme.json";
 import {
@@ -56,8 +62,11 @@ import {
   X,
   Download,
   SkipForward,
-  Volume2
+  Volume2,
+  LayoutDashboard
 } from "lucide-react";
+
+import MissionControlDashboard from "@/components/mission-control/MissionControlDashboard";
 
 const branchNameMapping: Record<string, string> = {
   "cs": "Computer Science and Engineering",
@@ -99,15 +108,13 @@ const allocateGradesForTargetSgpa = (
   sem: number
 ) => {
   const gradesList = [
-    { grade: "S", gp: 10.0 },
+    { grade: "O", gp: 10.0 },
     { grade: "A+", gp: 9.0 },
-    { grade: "A", gp: 8.5 },
-    { grade: "B+", gp: 8.0 },
-    { grade: "B", gp: 7.5 },
-    { grade: "C+", gp: 7.0 },
-    { grade: "C", gp: 6.5 },
-    { grade: "D", gp: 6.0 },
-    { grade: "P", gp: 5.5 }
+    { grade: "A", gp: 8.0 },
+    { grade: "B+", gp: 7.0 },
+    { grade: "B", gp: 6.0 },
+    { grade: "C", gp: 5.0 },
+    { grade: "P", gp: 4.0 }
   ];
 
   if (subjectsList.length === 0) return [];
@@ -179,15 +186,13 @@ const allocateGradesForTargetSgpa = (
 };
 // Grade mappings to points
 const GRADE_POINTS: Record<string, number> = {
-  "S": 10,
+  "O": 10,
   "A+": 9,
-  "A": 8.5,
-  "B+": 8,
-  "B": 7.5,
-  "C+": 7,
-  "C": 6.5,
-  "D": 6,
-  "P": 5.5,
+  "A": 8,
+  "B+": 7,
+  "B": 6,
+  "C": 5,
+  "P": 4,
   "F": 0
 };
 
@@ -1247,15 +1252,18 @@ const calculateActivityPoints = (activities: ActivityClaim[], studentType: "regu
   let groupCaps = 40;
   let groupMins = 40;
   let totalRequired = 120;
+  let ratio = 1.0;
   
   if (studentType === "lateral") {
     groupCaps = 30;
     groupMins = 30;
     totalRequired = 90;
+    ratio = 0.75;
   } else if (studentType === "pwd") {
     groupCaps = 20;
     groupMins = 20;
     totalRequired = 60;
+    ratio = 0.5;
   }
 
   // 1. Group claims by activityCode
@@ -1274,62 +1282,64 @@ const calculateActivityPoints = (activities: ActivityClaim[], studentType: "regu
     const details = KTU_ACTIVITIES[code];
     if (!details) return;
 
+    const scaledMaxPoints = Math.round(details.maxPoints * ratio);
+
     if (details.type === "level" || details.type === "fixed") {
       // Only highest level or one-time counts
       const maxPts = Math.max(...claims.map(c => c.points));
-      codePoints[code] = Math.min(details.maxPoints, maxPts);
+      codePoints[code] = Math.min(scaledMaxPoints, maxPts);
     } else {
       // Accumulative count/input up to the individual activity's maxPoints cap
       const sumPts = claims.reduce((acc, c) => acc + c.points, 0);
-      codePoints[code] = Math.min(details.maxPoints, sumPts);
+      codePoints[code] = Math.min(scaledMaxPoints, sumPts);
     }
   });
 
   // 2. Apply override rules (Winner overrides participation, highest counts across sports/arts/tech)
   
-  // Group I: Sports, Arts & Cultural Events -> Max of (1.1, 1.2, 1.3), capped at 40
+  // Group I: Sports, Arts & Cultural Events -> Max of (1.1, 1.2, 1.3), capped at 40 (scaled)
   const sportsArtsMax = Math.max(
     codePoints["1.1"] || 0,
     codePoints["1.2"] || 0,
     codePoints["1.3"] || 0
   );
   if (sportsArtsMax > 0) {
-    codePoints["sports_arts"] = Math.min(40, sportsArtsMax);
+    codePoints["sports_arts"] = Math.min(Math.round(40 * ratio), sportsArtsMax);
     delete codePoints["1.1"];
     delete codePoints["1.2"];
     delete codePoints["1.3"];
   }
 
-  // Group II: Tech-Fest -> Max of (2.1, 2.2), capped at 40
+  // Group II: Tech-Fest -> Max of (2.1, 2.2), capped at 40 (scaled)
   const techFestMax = Math.max(
     codePoints["2.1"] || 0,
     codePoints["2.2"] || 0
   );
   if (techFestMax > 0) {
-    codePoints["tech_fest"] = Math.min(40, techFestMax);
+    codePoints["tech_fest"] = Math.min(Math.round(40 * ratio), techFestMax);
     delete codePoints["2.1"];
     delete codePoints["2.2"];
   }
 
-  // Group II: Professional Society Events -> Max of (2.3, 2.4), capped at 35
+  // Group II: Professional Society Events -> Max of (2.3, 2.4), capped at 35 (scaled)
   const profSocietyMax = Math.max(
     codePoints["2.3"] || 0,
     codePoints["2.4"] || 0
   );
   if (profSocietyMax > 0) {
-    codePoints["prof_society"] = Math.min(35, profSocietyMax);
+    codePoints["prof_society"] = Math.min(Math.round(35 * ratio), profSocietyMax);
     delete codePoints["2.3"];
     delete codePoints["2.4"];
   }
 
-  // Group II: Paper Presentations -> Max of (2.7, 2.8, 2.9), capped at 40
+  // Group II: Paper Presentations -> Max of (2.7, 2.8, 2.9), capped at 40 (scaled)
   const paperPresentationMax = Math.max(
     codePoints["2.7"] || 0,
     codePoints["2.8"] || 0,
     codePoints["2.9"] || 0
   );
   if (paperPresentationMax > 0) {
-    codePoints["paper_presentation"] = Math.min(40, paperPresentationMax);
+    codePoints["paper_presentation"] = Math.min(Math.round(40 * ratio), paperPresentationMax);
     delete codePoints["2.7"];
     delete codePoints["2.8"];
     delete codePoints["2.9"];
@@ -1515,10 +1525,452 @@ const TOOLS = [
   }
 ];
 
+interface AttendanceStepperProps {
+  label: string;
+  value: number;
+  onIncrement: () => void;
+  onDecrement: () => void;
+}
+
+const AttendanceStepper: React.FC<AttendanceStepperProps> = ({ label, value, onIncrement, onDecrement }) => {
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
+  const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  const startAction = (action: () => void) => {
+    action();
+    timeoutRef.current = setTimeout(() => {
+      intervalRef.current = setInterval(() => {
+        action();
+      }, 80);
+    }, 450);
+  };
+
+  const stopAction = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  };
+
+  React.useEffect(() => {
+    return stopAction;
+  }, []);
+
+  return (
+    <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-1">
+      <span className="text-[8px] font-black text-slate-400 uppercase tracking-wider px-2 select-none">{label}</span>
+      <button
+        onMouseDown={() => startAction(onDecrement)}
+        onMouseUp={stopAction}
+        onMouseLeave={stopAction}
+        onTouchStart={(e) => {
+          e.preventDefault();
+          startAction(onDecrement);
+        }}
+        onTouchEnd={(e) => {
+          e.preventDefault();
+          stopAction();
+        }}
+        className="w-7 h-7 flex items-center justify-center rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-350 font-extrabold text-xs transition-colors cursor-pointer select-none active:scale-90"
+        aria-label={`Decrement ${label}`}
+      >
+        −
+      </button>
+      <span className="w-8 text-center text-[11px] font-black text-slate-800 dark:text-slate-100 font-mono select-none">
+        {value}
+      </span>
+      <button
+        onMouseDown={() => startAction(onIncrement)}
+        onMouseUp={stopAction}
+        onMouseLeave={stopAction}
+        onTouchStart={(e) => {
+          e.preventDefault();
+          startAction(onIncrement);
+        }}
+        onTouchEnd={(e) => {
+          e.preventDefault();
+          stopAction();
+        }}
+        className="w-7 h-7 flex items-center justify-center rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-350 font-extrabold text-xs transition-colors cursor-pointer select-none active:scale-90"
+        aria-label={`Increment ${label}`}
+      >
+        +
+      </button>
+    </div>
+  );
+};
+
+interface LabRecordTrackerProps {
+  branch: string;
+  sem: number;
+  triggerNotification: (msg: string) => void;
+}
+
+const LabRecordTracker: React.FC<LabRecordTrackerProps> = ({ branch, sem, triggerNotification }) => {
+  const [labCourses, setLabCourses] = useState<LabCourse[]>([]);
+  const [activeLabTab, setActiveLabTab] = useState<string>("");
+
+  useEffect(() => {
+    const savedLabs = localStorage.getItem(`ktunode_tools_labs_${branch}_${sem}`);
+    if (savedLabs) {
+      try {
+        const parsed = JSON.parse(savedLabs);
+        if (Array.isArray(parsed)) {
+          setLabCourses(parsed);
+          if (parsed.length > 0) setActiveLabTab(parsed[0].id);
+          return;
+        }
+      } catch {}
+    }
+    
+    // Default to empty or load
+    setLabCourses([]);
+    setActiveLabTab("");
+  }, [branch, sem]);
+
+  const saveLabs = (updated: LabCourse[]) => {
+    setLabCourses(updated);
+    localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updated));
+  };
+
+  const addLabExercise = (labId: string) => {
+    const label = prompt("Enter Exercise Title/Name:", "Ex: File Transfer Protocol");
+    if (!label) return;
+
+    const updated = labCourses.map(lab => {
+      if (lab.id === labId) {
+        const nextId = `ex_${Date.now()}`;
+        return {
+          ...lab,
+          exercises: [
+            ...lab.exercises,
+            { id: nextId, name: label, logic: false, record: false, viva: false, signed: false }
+          ]
+        };
+      }
+      return lab;
+    });
+    saveLabs(updated);
+    triggerNotification("New exercise added to record!");
+  };
+
+  const removeLabExercise = (labId: string, exId: string) => {
+    const lab = labCourses.find(l => l.id === labId);
+    const exercise = lab?.exercises.find(ex => ex.id === exId);
+    const name = exercise ? exercise.name : "this experiment";
+    if (!window.confirm(`Are you sure you want to delete "${name}" from the tracker?`)) {
+      return;
+    }
+    const updated = labCourses.map(lab => {
+      if (lab.id === labId) {
+        return {
+          ...lab,
+          exercises: lab.exercises.filter(ex => ex.id !== exId)
+        };
+      }
+      return lab;
+    });
+    saveLabs(updated);
+    triggerNotification("Exercise removed.");
+  };
+
+  return (
+    <div className="grid grid-cols-1 gap-4 sm:gap-6">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+              <FlaskConical className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Lab Record Tracker</h3>
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Track experiment submissions, viva, and sign-off status</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                if (labCourses.length === 0) {
+                  const labs = getDefaultLabsForSession(branch, sem);
+                  saveLabs(labs);
+                  if (labs.length > 0) setActiveLabTab(labs[0].id);
+                  triggerNotification("Lab courses loaded!");
+                }
+              }}
+              className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
+            >
+              {labCourses.length === 0 ? "Load Labs" : `${labCourses.length} Labs`}
+            </button>
+          </div>
+        </div>
+
+        {labCourses.length === 0 ? (
+          <div className="flex flex-col items-center justify-center py-12 px-4 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-2xl">
+            <FlaskConical className="w-10 h-10 text-slate-400 mb-3" />
+            <span className="text-[12px] font-semibold text-slate-500 dark:text-slate-400 mb-1">No lab courses loaded</span>
+            <span className="text-[11px] text-slate-400 dark:text-slate-500 text-center mb-4">Click "Load Labs" to import your {branch.toUpperCase()} S{sem} lab courses and start tracking experiments.</span>
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {/* Lab course tabs */}
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1">
+              {labCourses.map(lab => (
+                <button
+                  key={lab.id}
+                  onClick={() => setActiveLabTab(lab.id)}
+                  className={`px-3 py-1.5 rounded-2xl text-[10px] font-semibold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap active:scale-95 ${
+                    activeLabTab === lab.id
+                      ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20"
+                      : "text-slate-500 dark:text-slate-400 border border-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02]"
+                  }`}
+                >
+                  {lab.code}
+                </button>
+              ))}
+            </div>
+
+            {/* Active lab exercises */}
+            {(() => {
+              const activeLab = labCourses.find(l => l.id === activeLabTab);
+              if (!activeLab) return null;
+              const totalExercises = activeLab.exercises.length;
+              const completedExercises = activeLab.exercises.filter(ex => ex.logic && ex.record && ex.signed).length;
+              const progressPct = totalExercises > 0 ? Math.round((completedExercises / totalExercises) * 100) : 0;
+
+              return (
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <span className="text-[12px] font-semibold text-slate-900 dark:text-white block">{activeLab.name}</span>
+                      <span className="text-[10px] text-slate-500 dark:text-slate-400">{completedExercises}/{totalExercises} fully complete</span>
+                    </div>
+                    <span className={`px-2.5 py-1 rounded-lg text-[10px] font-bold ${progressPct >= 80 ? "bg-emerald-500/10 text-emerald-500" : progressPct >= 50 ? "bg-blue-500/10 text-blue-500" : "bg-amber-500/10 text-amber-500"}`}>
+                      {progressPct}%
+                    </span>
+                  </div>
+                  <div className="h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div className={`h-full rounded-full transition-all duration-500 ${progressPct >= 80 ? "bg-emerald-500" : progressPct >= 50 ? "bg-blue-500" : "bg-amber-500"}`} style={{ width: `${progressPct}%` }} />
+                  </div>
+
+                  <div className="space-y-2 max-h-[360px] overflow-y-auto pr-1">
+                    {/* Table header */}
+                    <div className="hidden sm:grid grid-cols-12 gap-2 px-3 py-1.5 text-[9px] font-bold text-slate-400 uppercase tracking-widest items-center">
+                      <div className="col-span-5">Experiment</div>
+                      <div className="col-span-2 text-center">Logic</div>
+                      <div className="col-span-2 text-center">Record</div>
+                      <div className="col-span-2 text-center">Signed</div>
+                      <div className="col-span-1 text-center">Action</div>
+                    </div>
+                    {activeLab.exercises.map((ex) => {
+                      const allDone = ex.logic && ex.record && ex.signed;
+                      return (
+                        <div 
+                          key={ex.id} 
+                          className={`flex flex-col sm:grid sm:grid-cols-12 gap-2.5 items-stretch sm:items-center px-4 py-3 sm:py-2.5 rounded-2xl border transition-all duration-300 ${allDone ? "bg-emerald-500/[0.02] border-emerald-500/20 dark:border-emerald-500/15" : "bg-slate-50/40 dark:bg-slate-900/10 border-slate-200/55 dark:border-slate-800/40 hover:border-slate-350 dark:hover:border-slate-700/60"}`}
+                        >
+                          {/* Experiment title */}
+                          <div className="w-full sm:col-span-5 flex items-center">
+                            <input
+                              type="text"
+                              value={ex.name}
+                              onChange={(e) => {
+                                const updated = labCourses.map(c => {
+                                  if (c.id !== activeLabTab) return c;
+                                  return {
+                                    ...c,
+                                    exercises: c.exercises.map(e2 =>
+                                      e2.id === ex.id ? { ...e2, name: e.target.value } : e2
+                                    )
+                                  };
+                                });
+                                saveLabs(updated);
+                              }}
+                              className="w-full bg-transparent border-none focus:outline-none focus:ring-1 focus:ring-blue-500/30 rounded px-1 text-[12px] sm:text-[11px] font-semibold text-slate-800 dark:text-slate-200 truncate"
+                            />
+                          </div>
+
+                          {/* Mobile Checkboxes group and delete action */}
+                          <div className="flex sm:contents items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800/40 sm:border-0 pt-2 sm:pt-0">
+                            {(["logic", "record", "signed"] as const).map(field => {
+                              const isChecked = ex[field];
+                              const isSigned = field === "signed";
+                              
+                              let buttonStyle = "";
+                              let iconNode = null;
+                              
+                              if (isSigned) {
+                                if (isChecked) {
+                                  buttonStyle = "bg-blue-500 text-white shadow-sm shadow-blue-500/20";
+                                  iconNode = <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />;
+                                } else {
+                                  buttonStyle = "border border-slate-300 dark:border-slate-700 hover:border-slate-450 dark:hover:border-slate-500 bg-transparent text-slate-400 dark:text-slate-500";
+                                  iconNode = <Shield className="w-3.5 h-3.5 stroke-[2]" />;
+                                }
+                              } else {
+                                if (isChecked) {
+                                  buttonStyle = "bg-emerald-500 text-white rounded-full shadow-sm shadow-emerald-500/20";
+                                  iconNode = <Check className="w-3 h-3 stroke-[3]" />;
+                                } else {
+                                  buttonStyle = "border border-slate-300 dark:border-slate-700 hover:border-slate-450 dark:hover:border-slate-500 rounded-full bg-transparent";
+                                  iconNode = null;
+                                }
+                              }
+
+                              return (
+                                <div key={field} className="flex-1 sm:col-span-2 flex items-center justify-center gap-1.5">
+                                  <span className="sm:hidden text-[9px] font-black text-slate-400 uppercase tracking-wide">{field}:</span>
+                                  <button
+                                    onClick={() => {
+                                      const updatedCourses = labCourses.map(c => {
+                                        if (c.id !== activeLabTab) return c;
+                                        return {
+                                          ...c,
+                                          exercises: c.exercises.map(e =>
+                                            e.id === ex.id ? { ...e, [field]: !e[field] } : e
+                                          )
+                                        };
+                                      });
+                                      saveLabs(updatedCourses);
+                                    }}
+                                    className={`w-7 h-7 sm:w-6 sm:h-6 flex items-center justify-center transition-all cursor-pointer active:scale-90 ${
+                                      isSigned ? "rounded-lg" : "rounded-full"
+                                    } ${buttonStyle}`}
+                                    aria-label={`Mark ${field} for ${ex.name}`}
+                                  >
+                                    {iconNode}
+                                  </button>
+                                </div>
+                              );
+                            })}
+                            
+                            {/* Action (Delete) */}
+                            <div className="flex justify-center items-center sm:col-span-1 pl-2 sm:pl-0 border-l border-slate-150 dark:border-slate-800/40 sm:border-l-0">
+                              <span className="sm:hidden text-[9px] font-black text-slate-400 uppercase tracking-wide mr-2">Delete:</span>
+                              <button
+                                onClick={() => removeLabExercise(activeLab.id, ex.id)}
+                                className="text-slate-450 hover:text-rose-500 transition-all p-1.5 rounded-lg hover:bg-rose-500/10 cursor-pointer active:scale-90"
+                                aria-label="Remove experiment"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {/* Add experiment at bottom */}
+                  <div className="pt-2 border-t border-slate-100 dark:border-white/[0.03] flex justify-end">
+                    <button
+                      onClick={() => addLabExercise(activeLab.id)}
+                      className="px-3 py-1.5 bg-blue-500/10 hover:bg-blue-500/15 border border-blue-500/15 text-blue-600 dark:text-blue-400 rounded-2xl text-[10px] font-semibold uppercase transition-all cursor-pointer flex items-center gap-1 active:scale-95"
+                    >
+                      <Plus className="w-3.5 h-3.5" /> Add Experiment
+                    </button>
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
 export default function ToolsPage() {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+  // Global Haptic Feedback Engine for all interactive elements in Tools Page
+  useEffect(() => {
+    if (!mounted) return;
+
+    // Cache/unlock AudioContext on first click/touchstart gesture
+    const unlockAudio = () => {
+      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+      if (AudioContextClass) {
+        try {
+          const tempCtx = new AudioContextClass();
+          if (tempCtx.state === "suspended") {
+            tempCtx.resume();
+          }
+        } catch {}
+      }
+      window.removeEventListener("click", unlockAudio);
+      window.removeEventListener("touchstart", unlockAudio);
+    };
+    window.addEventListener("click", unlockAudio);
+    window.addEventListener("touchstart", unlockAudio);
+
+    const handleGlobalClick = (e: MouseEvent) => {
+      let target = e.target as HTMLElement | null;
+      while (target && target !== document.body) {
+        const tagName = target.tagName.toLowerCase();
+        const role = target.getAttribute("role");
+        const isInteractive =
+          tagName === "button" ||
+          tagName === "a" ||
+          tagName === "select" ||
+          tagName === "input" ||
+          role === "button" ||
+          role === "tab" ||
+          role === "checkbox" ||
+          role === "option" ||
+          target.classList.contains("cursor-pointer") ||
+          target.classList.contains("pill-btn") ||
+          target.onclick != null;
+
+        if (isInteractive) {
+          // Check if this action is a delete/remove/reset/trash (warning haptic)
+          const text = target.innerText?.toLowerCase() || "";
+          const ariaLabel = target.getAttribute("aria-label")?.toLowerCase() || "";
+          const className = target.className?.toLowerCase() || "";
+          
+          let hapticType: "light" | "medium" | "heavy" | "success" | "warning" = "light";
+          
+          if (
+            text.includes("delete") || 
+            text.includes("remove") || 
+            text.includes("clear") || 
+            text.includes("reset") ||
+            ariaLabel.includes("delete") ||
+            ariaLabel.includes("remove") ||
+            className.includes("trash") ||
+            className.includes("rose") ||
+            className.includes("danger")
+          ) {
+            hapticType = "warning";
+          } else if (
+            text.includes("save") || 
+            text.includes("add") || 
+            text.includes("confirm") || 
+            text.includes("load") ||
+            text.includes("download") ||
+            text.includes("generate") ||
+            role === "tab" ||
+            className.includes("tab") ||
+            tagName === "select"
+          ) {
+            hapticType = "medium";
+          }
+
+          triggerHaptic(hapticType, e);
+          break; // break loop to avoid double triggering if nested
+        }
+        target = target.parentElement;
+      }
+    };
+
+    window.addEventListener("click", handleGlobalClick, { capture: true });
+    return () => {
+      window.removeEventListener("click", unlockAudio);
+      window.removeEventListener("touchstart", unlockAudio);
+      window.removeEventListener("click", handleGlobalClick, { capture: true });
+    };
+  }, [mounted]);
+
   const [branch, setBranch] = useState("cs");
+
   const [sem, setSem] = useState<number>(4);
   const [showNotification, setShowNotification] = useState<string | null>(null);
 
@@ -1560,9 +2012,25 @@ export default function ToolsPage() {
   const [customSubjectName, setCustomSubjectName] = useState("");
   const [customSubjectCode, setCustomSubjectCode] = useState("");
 
-  // Labs tracker state
-  const [labCourses, setLabCourses] = useState<LabCourse[]>([]);
-  const [activeLabTab, setActiveLabTab] = useState<string>("");
+  // Web Worker state for reverse SGPA Calculator
+  const [allocatedGrades, setAllocatedGrades] = useState<any[]>([]);
+  const [allocatorLoading, setAllocatorLoading] = useState(false);
+  const workerRef = React.useRef<Worker | null>(null);
+
+  const getLabsCount = () => {
+    if (typeof window === "undefined") {
+      return getDefaultLabsForSession(branch, sem).length;
+    }
+    const saved = localStorage.getItem(`ktunode_tools_labs_${branch}_${sem}`);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed.length;
+      } catch {}
+    }
+    return getDefaultLabsForSession(branch, sem).length;
+  };
+
 
   // 3-Group Activity points tally state (120 point requirement)
   const [studentType, setStudentType] = useState<"regular" | "lateral" | "pwd">("regular");
@@ -1731,7 +2199,7 @@ export default function ToolsPage() {
   const [mtCountdownTarget, setMtCountdownTarget] = useState("2026-07-15");
 
   // Redesign Master Navigation Workspace Tab State
-  const [activeWorkspaceTab, setActiveWorkspaceTab] = useState<"attendance" | "grades" | "graduation" | "exam" | "labs">("attendance");
+  const [activeWorkspaceTab, setActiveWorkspaceTab] = useState<"attendance" | "grades" | "graduation" | "exam" | "labs" | "missioncontrol">("attendance");
   // --- NEW REDESIGN STATES ---
   // Backlog tracker state
   const [backlogSubjects, setBacklogSubjects] = useState<Array<{ id: string, code: string, name: string, semester: number, attempts: number, status: 'pending' | 'cleared' | 'registered' }>>([]);
@@ -2022,7 +2490,7 @@ export default function ToolsPage() {
       name: s.name,
       code: s.code,
       credits: s.name.toLowerCase().includes("lab") ? 1 : 4,
-      grade: "S"
+      grade: "O"
     }));
 
     if (savedSgpa) {
@@ -2035,7 +2503,7 @@ export default function ToolsPage() {
               return {
                 ...defSub,
                 credits: typeof match.credits === 'number' ? match.credits : defSub.credits,
-                grade: match.grade || "S"
+                grade: match.grade || "O"
               };
             }
             return defSub;
@@ -2102,30 +2570,7 @@ export default function ToolsPage() {
     setAttendanceSubjects(mergedAttendance);
     localStorage.setItem(`ktunode_tools_attendance_${scopeKey}`, JSON.stringify(mergedAttendance));
 
-    // 3. Labs Loading
-    const savedLabs = localStorage.getItem(`ktunode_tools_labs_${scopeKey}`);
-    if (savedLabs) {
-      try {
-        const parsed = JSON.parse(savedLabs);
-        if (Array.isArray(parsed)) {
-          setLabCourses(parsed);
-          if (parsed.length > 0) setActiveLabTab(parsed[0].id);
-        } else {
-          const initialLabs = getDefaultLabsForSession(currentBranch, currentSem);
-          setLabCourses(initialLabs);
-          if (initialLabs.length > 0) setActiveLabTab(initialLabs[0].id);
-        }
-      } catch {
-        const initialLabs = getDefaultLabsForSession(currentBranch, currentSem);
-        setLabCourses(initialLabs);
-        if (initialLabs.length > 0) setActiveLabTab(initialLabs[0].id);
-      }
-    } else {
-      const initialLabs = getDefaultLabsForSession(currentBranch, currentSem);
-      setLabCourses(initialLabs);
-      if (initialLabs.length > 0) setActiveLabTab(initialLabs[0].id);
-      localStorage.setItem(`ktunode_tools_labs_${scopeKey}`, JSON.stringify(initialLabs));
-    }
+    // 3. Labs Loading (Handled locally inside LabRecordTracker component)
 
     // 4. Initial default subjects for Planner and Grade Predictor
     if (defaultSubjects.length > 0) {
@@ -2243,6 +2688,56 @@ export default function ToolsPage() {
     triggerNotification(`Switched to ${newBranch.toUpperCase()} Sem ${newSem}. Scoped data loaded!`);
   };
 
+  // Initialize Web Worker
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    workerRef.current = new Worker("/workers/sgpa-allocator.worker.js");
+    workerRef.current.onmessage = (e) => {
+      setAllocatedGrades(e.data);
+      setAllocatorLoading(false);
+    };
+    return () => {
+      workerRef.current?.terminate();
+    };
+  }, []);
+
+  // Debounced allocator trigger
+  useEffect(() => {
+    if (!workerRef.current || subjects.length === 0) return;
+    setAllocatorLoading(true);
+
+    const initialAllocated = subjects.map(sub => {
+      const cr = getCreditsForSubject(sub.code, sub.name, branch, sem);
+      return {
+        code: sub.code,
+        name: sub.name,
+        credits: cr,
+        gradeIdx: 4 // Start at index 4 (B grade)
+      };
+    });
+
+    const gradesList2024 = [
+      { grade: "O", gp: 10.0 },
+      { grade: "A+", gp: 9.0 },
+      { grade: "A", gp: 8.0 },
+      { grade: "B+", gp: 7.0 },
+      { grade: "B", gp: 6.0 },
+      { grade: "C", gp: 5.0 },
+      { grade: "P", gp: 4.0 }
+    ];
+
+    const timer = setTimeout(() => {
+      workerRef.current?.postMessage({
+        allocated: initialAllocated,
+        target: targetSgpa,
+        gradesList: gradesList2024
+      });
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, [targetSgpa, subjects, branch, sem]);
+
+
   // Study Notepad saving with a visual feedback cycle ("saving..." -> "auto-saved")
   const handleNotepadSave = (text: string) => {
     setNotepadText(text);
@@ -2298,7 +2793,7 @@ export default function ToolsPage() {
       name: "Custom Course",
       code: "CST" + Math.floor(100 + Math.random() * 900),
       credits: 3,
-      grade: "S"
+      grade: "O"
     };
     const updated = [...sgpaCourses, newCourse];
     setSgpacourses(updated);
@@ -2320,7 +2815,7 @@ export default function ToolsPage() {
       name: s.name,
       code: s.code,
       credits: s.name.toLowerCase().includes("lab") ? 1 : 4,
-      grade: "S"
+      grade: "O"
     }));
     setSgpacourses(initial);
     localStorage.setItem(`ktunode_tools_sgpa_${branch}_${sem}`, JSON.stringify(initial));
@@ -2402,67 +2897,7 @@ export default function ToolsPage() {
     triggerNotification("Subject removed from tracker.");
   };
 
-  // Lab progress summaries
-  const getLabProgressSummary = (labId: string) => {
-    const lab = labCourses.find(l => l.id === labId);
-    if (!lab) return "0/0";
-    const signedCount = lab.exercises.filter(ex => ex.signed).length;
-    return `${signedCount}/${lab.exercises.length} Signed`;
-  };
-
-  const handleLabToggle = (labId: string, exId: string, field: "logic" | "record" | "viva" | "signed") => {
-    const updated = labCourses.map(lab => {
-      if (lab.id === labId) {
-        const updatedEx = lab.exercises.map(ex => {
-          if (ex.id === exId) {
-            return { ...ex, [field]: !ex[field] };
-          }
-          return ex;
-        });
-        return { ...lab, exercises: updatedEx };
-      }
-      return lab;
-    });
-    setLabCourses(updated);
-    localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updated));
-  };
-
-  const addLabExercise = (labId: string) => {
-    const label = prompt("Enter Exercise Title/Name:", "Ex: File Transfer Protocol");
-    if (!label) return;
-
-    const updated = labCourses.map(lab => {
-      if (lab.id === labId) {
-        const nextId = `ex_${Date.now()}`;
-        return {
-          ...lab,
-          exercises: [
-            ...lab.exercises,
-            { id: nextId, name: label, logic: false, record: false, viva: false, signed: false }
-          ]
-        };
-      }
-      return lab;
-    });
-    setLabCourses(updated);
-    localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updated));
-    triggerNotification("New exercise added to record!");
-  };
-
-  const removeLabExercise = (labId: string, exId: string) => {
-    const updated = labCourses.map(lab => {
-      if (lab.id === labId) {
-        return {
-          ...lab,
-          exercises: lab.exercises.filter(ex => ex.id !== exId)
-        };
-      }
-      return lab;
-    });
-    setLabCourses(updated);
-    localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updated));
-    triggerNotification("Exercise removed.");
-  };
+  // Lab Record Tracker operations are handled inside the LabRecordTracker component
 
   // Explicit form selectors to handle state synchronization without useEffect cascading renders
   const handleGroupSelect = (gId: "I" | "II" | "III") => {
@@ -2553,6 +2988,11 @@ export default function ToolsPage() {
   };
 
   const handleDeleteActivity = (id: string) => {
+    const claim = selectedActivities.find(a => a.id === id);
+    const code = claim ? claim.activityCode : "this claim";
+    if (!window.confirm(`Are you sure you want to remove activity claim "${code}"?`)) {
+      return;
+    }
     const updated = selectedActivities.filter(a => a.id !== id);
     setSelectedActivities(updated);
     localStorage.setItem("ktunode_tools_activities", JSON.stringify(updated));
@@ -2645,17 +3085,22 @@ export default function ToolsPage() {
   // Pass/Fail Sandbox calculations
   const calculatePassFailSandbox = () => {
     const cie = parseFloat(sandboxCie) || 0;
-    const clampedCie = Math.min(40, Math.max(0, cie));
-    const requiredEse = Math.max(24, 50 - clampedCie);
-    const impossible = requiredEse > 60;
+    const clampedCie = Math.min(50, Math.max(0, cie));
+    
+    // Ineligible if CIE is less than 20/50 (40%)
+    const ineligible = clampedCie < 20;
+    
+    // ESE minimum pass is 40. ESE + CIE must be >= 60.
+    // If clampedCie >= 20, then 60 - clampedCie <= 40, so requiredEse is always 40.
+    const requiredEse = ineligible ? 0 : 40;
 
     return {
       cie: clampedCie,
-      neededEse: impossible ? 0 : requiredEse,
-      percentage: impossible ? 0 : Math.round((requiredEse / 60) * 100),
-      impossible,
-      borderline: clampedCie < 15,
-      perfectSafe: clampedCie >= 26
+      neededEse: requiredEse,
+      percentage: ineligible ? 0 : 40,
+      ineligible,
+      borderline: clampedCie >= 20 && clampedCie < 25,
+      perfectSafe: clampedCie >= 35
     };
   };
 
@@ -2927,19 +3372,19 @@ export default function ToolsPage() {
                       </div>
                     </div>
                     
-                    <div className="flex items-center gap-2 shrink-0">
-                      <button
-                        onClick={() => handleAttendanceChange(sub.id, "attended", 1)}
-                        className="flex-1 min-w-[75px] h-[44px] rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-450 text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5 border border-emerald-500/20 active:scale-95"
-                      >
-                        Present
-                      </button>
-                      <button
-                        onClick={() => handleAttendanceChange(sub.id, "total", 1)}
-                        className="flex-1 min-w-[75px] h-[44px] rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5 border border-rose-500/20 active:scale-95"
-                      >
-                        Absent
-                      </button>
+                    <div className="flex flex-wrap items-center gap-2 shrink-0">
+                      <AttendanceStepper 
+                        label="Att" 
+                        value={sub.attended} 
+                        onIncrement={() => handleAttendanceChange(sub.id, "attended", 1)} 
+                        onDecrement={() => handleAttendanceChange(sub.id, "attended", -1)} 
+                      />
+                      <AttendanceStepper 
+                        label="Tot" 
+                        value={sub.total} 
+                        onIncrement={() => handleAttendanceChange(sub.id, "total", 1)} 
+                        onDecrement={() => handleAttendanceChange(sub.id, "total", -1)} 
+                      />
                     </div>
                   </div>
                 </div>
@@ -3180,6 +3625,11 @@ export default function ToolsPage() {
     };
 
     const handleDeleteBacklog = (id: string) => {
+      const backlog = backlogSubjects.find(b => b.id === id);
+      const name = backlog ? backlog.name : "this backlog";
+      if (!window.confirm(`Are you sure you want to remove backlog for "${name}"?`)) {
+        return;
+      }
       const updated = backlogSubjects.filter(b => b.id !== id);
       setBacklogSubjects(updated);
       localStorage.setItem("ktunode_tools_backlogs", JSON.stringify(updated));
@@ -4148,14 +4598,15 @@ export default function ToolsPage() {
           : [{ code: "PCCST403", name: "Operating Systems" }])
       : attendanceSubjects.map(s => ({ code: s.code, name: s.name }));
 
-    // Target grading thresholds
+    // Target grading thresholds (2024 regulations percentage boundaries)
     const targets = [
-      { grade: "S", pct: 90, label: "S Grade (Outstanding)" },
-      { grade: "A+", pct: 85, label: "A+ Grade (Honours)" },
-      { grade: "A", pct: 80, label: "A Grade (Excellent)" },
-      { grade: "B+", pct: 70, label: "B+ Grade (Good)" },
-      { grade: "B", pct: 60, label: "B Grade (Average)" },
-      { grade: "C+", pct: 50, label: "C+ Grade (Passing)" }
+      { grade: "O", pct: 90, label: "O Grade (Outstanding)" },
+      { grade: "A+", pct: 80, label: "A+ Grade (Excellent)" },
+      { grade: "A", pct: 70, label: "A Grade (Very Good)" },
+      { grade: "B+", pct: 60, label: "B+ Grade (Good)" },
+      { grade: "B", pct: 50, label: "B Grade (Above Average)" },
+      { grade: "C", pct: 45, label: "C Grade (Average)" },
+      { grade: "P", pct: 40, label: "P Grade (Pass)" }
     ];
 
     const cieVal = plannerCieScore;
@@ -4243,12 +4694,12 @@ export default function ToolsPage() {
 
               return (
                 <div key={targetItem.grade} className={`p-3 rounded-2xl border bg-white dark:bg-slate-900 text-left flex items-center justify-between transition-all sm:${borderStyle}`}>
-                  <div className="truncate pr-1.5">
+                  <div className="truncate pr-1.5 font-bold">
                     <span className="text-[8px] font-black text-slate-400 block uppercase tracking-wider">{targetItem.label}</span>
-                    <span className="font-black text-xs text-slate-855 dark:text-slate-100 block mt-1">Needed:</span>
+                    <span className="font-black text-xs text-slate-850 dark:text-slate-100 block mt-1">Needed:</span>
                   </div>
                   <div className={`px-2.5 py-1 rounded-xl text-[10px] font-black uppercase tracking-wider text-center shrink-0 border ${badgeColor}`}>
-                    {impossible ? "Impossible" : `sm:${Math.ceil(neededEse)} / 100`}
+                    {impossible ? "Impossible" : `${Math.ceil(neededEse)} / 100`}
                   </div>
                 </div>
               );
@@ -4256,40 +4707,55 @@ export default function ToolsPage() {
           </div>
         </div>
 
-        {/* Live Pass/Fail Sandbox Checklist */}
-        <div className="p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-950/[0.01] dark:bg-white/[0.01] space-y-2">
-          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-1">Pass/Fail Sandbox Audit</span>
-          <div className="space-y-1.5 text-[10px] font-bold text-slate-500">
-            <div className="flex items-center gap-1.5">
-              {cieVal >= 20 ? (
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-              ) : (
-                <AlertTriangle className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-              )}
-              <span>Continuous Internal Evaluation (CIE) pass status: {cieVal >= 20 ? "Safe (>= 20/50)" : "Low Score"}</span>
+        {/* Interactive Pass/Fail Sandbox Gauge */}
+        <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-950/[0.01] dark:bg-white/[0.01] space-y-3">
+          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-1">Pass/Fail Sandbox Visual Gauge</span>
+          
+          {cieVal < 20 ? (
+            <div className="p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/20 text-center space-y-1.5 animate-pulse">
+              <span className="text-xs font-black text-rose-500 uppercase tracking-wider block flex items-center justify-center gap-1">
+                <AlertTriangle className="w-4 h-4" /> Ineligible to Pass
+              </span>
+              <p className="text-[10px] text-rose-600 dark:text-rose-400 leading-normal font-semibold">
+                Minimum internal ceiling error: CIE score ({cieVal}/50) is below the 40% eligibility threshold (20/50). You are ineligible to register/write the ESE.
+              </p>
             </div>
-            
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-              <span>Minimum final exam passing score requirement: <strong className="text-slate-800 dark:text-slate-200">40 / 100</strong></span>
+          ) : (
+            <div className="space-y-3.5">
+              <div className="flex items-center justify-between text-[10px] font-bold text-slate-600 dark:text-slate-355">
+                <span className="flex items-center gap-1"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" /> CIE: {cieVal}/50 (Eligible)</span>
+                <span className="font-extrabold text-blue-600 dark:text-blue-400 font-mono">Needed ESE: 40 / 100</span>
+              </div>
+              
+              {/* Horizontal visual gauge bar */}
+              <div className="relative h-4 bg-slate-100 dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 overflow-hidden flex shadow-inner">
+                {/* Failing range (0 to 39) */}
+                <div className="h-full bg-gradient-to-r from-rose-500 to-amber-500" style={{ width: "40%" }} />
+                {/* Passing range (40 to 100) */}
+                <div className="h-full bg-gradient-to-r from-emerald-450 to-teal-500" style={{ width: "60%" }} />
+                
+                {/* Dynamic Divider Indicator */}
+                <div className="absolute top-0 bottom-0 w-0.5 bg-white shadow-md" style={{ left: "40%" }} />
+              </div>
+              
+              <div className="flex justify-between text-[8px] font-black uppercase tracking-wider text-slate-400">
+                <span>0 ESE</span>
+                <span className="text-rose-500">Fail zone (0-39)</span>
+                <span className="text-emerald-500">Pass boundary: 40+</span>
+                <span>100 ESE</span>
+              </div>
+              <p className="text-[9.5px] text-slate-500 dark:text-slate-400 leading-relaxed font-semibold italic text-center">
+                Aggregate: CIE ({cieVal}) + ESE (40) = {cieVal + 40} / 150 marks (exceeds the 40% aggregate threshold of 60).
+              </p>
             </div>
-
-            <div className="flex items-center gap-1.5">
-              {cieVal >= 30 ? (
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-              ) : (
-                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
-              )}
-              <span>Overall passing threshold: Total aggregate marks (CIE + ESE/2) must be &gt;= 50%</span>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     );
   };
 
   const renderSgpaGoalEstimator = () => {
-    const allocated = allocateGradesForTargetSgpa(subjects, targetSgpa, branch, sem);
+    const allocated = allocatedGrades;
     const totalCredits = allocated.reduce((acc, c) => acc + c.credits, 0);
     const totalPoints = allocated.reduce((acc, c) => acc + c.points * c.credits, 0);
     const currentAllocSgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0;
@@ -4365,9 +4831,15 @@ export default function ToolsPage() {
 
         {/* Summary note */}
         {allocated.length > 0 && (
-          <div className="p-3.5 rounded-2xl bg-blue-50/40 dark:bg-blue-500/[0.01] border border-blue-500/10 text-[10px] font-semibold text-slate-500 dark:text-slate-400 leading-normal text-center">
-            To achieve a <strong className="text-blue-600 dark:text-blue-400 font-bold">{targetSgpa.toFixed(1)} SGPA</strong>, you need this specific combination of target grades representing <strong className="text-slate-700 dark:text-slate-300 font-bold">{totalCredits} total credits</strong>.
-          </div>
+          currentAllocSgpa < targetSgpa - 0.05 ? (
+            <div className="p-3.5 rounded-2xl bg-rose-500/10 border border-rose-500/25 text-[10px] font-semibold text-rose-600 dark:text-rose-450 leading-normal text-center">
+              <strong>Impossible Target:</strong> SGPA of {targetSgpa.toFixed(2)} is mathematically unreachable with current subject credits (max achievable: {currentAllocSgpa.toFixed(2)}).
+            </div>
+          ) : (
+            <div className="p-3.5 rounded-2xl bg-blue-50/40 dark:bg-blue-500/[0.01] border border-blue-500/10 text-[10px] font-semibold text-slate-500 dark:text-slate-400 leading-normal text-center">
+              To achieve a <strong className="text-blue-600 dark:text-blue-400 font-bold">{targetSgpa.toFixed(1)} SGPA</strong>, you need this specific combination of target grades representing <strong className="text-slate-700 dark:text-slate-300 font-bold">{totalCredits} total credits</strong>.
+            </div>
+          )
         )}
       </div>
     );
@@ -4383,6 +4855,7 @@ export default function ToolsPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
               onClick={onClose}
               className="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 cursor-pointer"
             />
@@ -4391,7 +4864,7 @@ export default function ToolsPage() {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 30, stiffness: 300 }}
+              transition={{ type: "spring", damping: 38, stiffness: 380, mass: 0.85 }}
               className="fixed right-0 top-0 bottom-0 w-full max-w-md bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 shadow-2xl p-5 md:p-6 z-50 overflow-y-auto space-y-6 flex flex-col"
             >
               <div className="flex items-center justify-between border-b border-slate-200 dark:border-white/[0.06] pb-4 shrink-0">
@@ -4437,6 +4910,7 @@ export default function ToolsPage() {
             initial={{ opacity: 0, y: 50, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 20, x: "-50%" }}
+            transition={{ type: "spring", damping: 22, stiffness: 280 }}
             className="fixed bottom-6 left-1/2 z-50 px-5 py-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 text-slate-900 dark:text-slate-50 shadow-2xl backdrop-blur-xl border border-slate-200/80 dark:border-white/[0.08] text-xs font-bold flex items-center gap-2"
           >
             <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 animate-pulse" />
@@ -4445,7 +4919,7 @@ export default function ToolsPage() {
         )}
       </AnimatePresence>
 
-      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 sm:pt-24 md:pt-28 flex flex-col z-10 pb-4 md:pb-20 space-y-4 sm:space-y-6">
+      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 sm:pt-24 md:pt-28 flex flex-col z-10 space-y-4 sm:space-y-6">
         
         {/* red-glow and blue-glow decoration background spots */}
         <div className="absolute top-10 left-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
@@ -4521,7 +4995,7 @@ export default function ToolsPage() {
               },
               {
                 label: "Labs",
-                val: `${labCourses.length} Active`,
+                val: `${getLabsCount()} Active`,
                 badge: "Tracked",
                 theme: "text-indigo-500 bg-indigo-500/10 dark:text-indigo-400 border border-indigo-500/20"
               },
@@ -4550,7 +5024,8 @@ export default function ToolsPage() {
             { id: "grades", label: "Grades & ESE", icon: Calculator },
             { id: "graduation", label: "Graduation", icon: GraduationCap },
             { id: "exam", label: "Exam Prep", icon: Clock },
-            { id: "labs", label: "Lab Tracker", icon: FlaskConical }
+            { id: "labs", label: "Lab Tracker", icon: FlaskConical },
+            { id: "missioncontrol", label: "Mission Control", icon: LayoutDashboard }
           ].map((tabItem) => {
             const isActive = activeWorkspaceTab === tabItem.id;
             const Icon = tabItem.icon;
@@ -4660,196 +5135,11 @@ export default function ToolsPage() {
 
           {/* TAB 5: LAB RECORD TRACKER */}
           {activeWorkspaceTab === "labs" && (
-            <div className="grid grid-cols-1 gap-4 sm:gap-6">
-              <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
-                      <FlaskConical className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Lab Record Tracker</h3>
-                      <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Track experiment submissions, viva, and sign-off status</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => {
-                        if (labCourses.length === 0) {
-                          const labs = getDefaultLabsForSession(branch, sem);
-                          setLabCourses(labs);
-                          if (labs.length > 0) setActiveLabTab(labs[0].id);
-                          localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(labs));
-                          triggerNotification("Lab courses loaded!");
-                        }
-                      }}
-                      className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95"
-                    >
-                      {labCourses.length === 0 ? "Load Labs" : `${labCourses.length} Labs`}
-                    </button>
-                  </div>
-                </div>
-
-                {labCourses.length === 0 ? (
-                  <div className="flex flex-col items-center justify-center py-12 px-4 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-2xl">
-                    <FlaskConical className="w-10 h-10 text-slate-400 mb-3" />
-                    <span className="text-[12px] font-semibold text-slate-500 dark:text-slate-400 mb-1">No lab courses loaded</span>
-                    <span className="text-[11px] text-slate-400 dark:text-slate-500 text-center mb-4">Click "Load Labs" to import your {branch.toUpperCase()} S{sem} lab courses and start tracking experiments.</span>
-                  </div>
-                ) : (
-                  <div className="space-y-4">
-                    {/* Lab course tabs */}
-                    <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1">
-                      {labCourses.map(lab => (
-                        <button
-                          key={lab.id}
-                          onClick={() => setActiveLabTab(lab.id)}
-                          className={`px-3 py-1.5 rounded-2xl text-[10px] font-semibold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap active:scale-95 ${
-                            activeLabTab === lab.id
-                              ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20"
-                              : "text-slate-500 dark:text-slate-400 border border-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02]"
-                          }`}
-                        >
-                          {lab.code}
-                        </button>
-                      ))}
-                    </div>
-
-                    {/* Active lab exercises */}
-                    {(() => {
-                      const activeLab = labCourses.find(l => l.id === activeLabTab);
-                      if (!activeLab) return null;
-                      const totalExercises = activeLab!.exercises.length;
-                      const completedExercises = activeLab!.exercises.filter(ex => ex.logic && ex.record && ex.signed).length;
-                      const progressPct = totalExercises > 0 ? Math.round((completedExercises / totalExercises) * 100) : 0;
-
-                      return (
-                        <div className="space-y-3">
-                          <div className="flex items-center justify-between">
-                            <div>
-                              <span className="text-[12px] font-semibold text-slate-900 dark:text-white block">{activeLab!.name}</span>
-                              <span className="text-[10px] text-slate-500 dark:text-slate-400">{completedExercises}/{totalExercises} fully complete</span>
-                            </div>
-                            <span className={`px-2.5 py-1 rounded-lg text-[10px] font-bold ${progressPct >= 80 ? "bg-emerald-500/10 text-emerald-500" : progressPct >= 50 ? "bg-blue-500/10 text-blue-500" : "bg-amber-500/10 text-amber-500"}`}>
-                              {progressPct}%
-                            </span>
-                          </div>
-                          <div className="h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
-                            <div className={`h-full rounded-full transition-all duration-500 ${progressPct >= 80 ? "bg-emerald-500" : progressPct >= 50 ? "bg-blue-500" : "bg-amber-500"}`} style={{ width: `${progressPct}%` }} />
-                          </div>
-
-                          <div className="space-y-2 max-h-[360px] overflow-y-auto pr-1">
-                            {/* Table header */}
-                            <div className="grid grid-cols-12 gap-2 px-3 py-1.5 text-[9px] font-bold text-slate-400 uppercase tracking-widest items-center">
-                              <div className="col-span-5">Experiment</div>
-                              <div className="col-span-2 text-center">Logic</div>
-                              <div className="col-span-2 text-center">Record</div>
-                              <div className="col-span-2 text-center">Signed</div>
-                              <div className="col-span-1 text-center">Action</div>
-                            </div>
-                            {activeLab!.exercises.map((ex) => {
-                              const allDone = ex.logic && ex.record && ex.signed;
-                              return (
-                                <div key={ex.id} className={`grid grid-cols-12 gap-2 items-center px-4 py-2.5 rounded-2xl border transition-all duration-300 ${allDone ? "bg-emerald-500/[0.02] border-emerald-500/20 dark:border-emerald-500/15" : "bg-slate-50/40 dark:bg-slate-900/10 border-slate-200/55 dark:border-slate-800/40 hover:border-slate-350 dark:hover:border-slate-700/60"}`}>
-                                  <div className="col-span-5">
-                                    <input
-                                      type="text"
-                                      value={ex.name}
-                                      onChange={(e) => {
-                                        const updated = labCourses.map(c => {
-                                          if (c.id !== activeLabTab) return c;
-                                          return {
-                                            ...c,
-                                            exercises: c.exercises.map(e2 =>
-                                              e2.id === ex.id ? { ...e2, name: e.target.value } : e2
-                                            )
-                                          };
-                                        });
-                                        setLabCourses(updated);
-                                        localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updated));
-                                      }}
-                                      className="w-full bg-transparent border-none focus:outline-none focus:ring-1 focus:ring-blue-500/30 rounded px-1 text-[11px] font-medium text-slate-800 dark:text-slate-200 truncate"
-                                    />
-                                  </div>
-                                  {(["logic", "record", "signed"] as const).map(field => {
-                                    const isChecked = ex[field];
-                                    const isSigned = field === "signed";
-                                    
-                                    let buttonStyle = "";
-                                    let iconNode = null;
-                                    
-                                    if (isSigned) {
-                                      if (isChecked) {
-                                        buttonStyle = "bg-blue-500 text-white shadow-sm shadow-blue-500/20";
-                                        iconNode = <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />;
-                                      } else {
-                                        buttonStyle = "border border-slate-300 dark:border-slate-700 hover:border-slate-450 dark:hover:border-slate-500 bg-transparent text-slate-400 dark:text-slate-500";
-                                        iconNode = <Shield className="w-3.5 h-3.5 stroke-[2]" />;
-                                      }
-                                    } else {
-                                      if (isChecked) {
-                                        buttonStyle = "bg-emerald-550 text-white rounded-full shadow-sm shadow-emerald-500/20";
-                                        iconNode = <Check className="w-3 h-3 stroke-[3]" />;
-                                      } else {
-                                        buttonStyle = "border border-slate-300 dark:border-slate-700 hover:border-slate-450 dark:hover:border-slate-500 rounded-full bg-transparent";
-                                        iconNode = null;
-                                      }
-                                    }
-
-                                    return (
-                                      <div key={field} className="col-span-2 flex justify-center">
-                                        <button
-                                          onClick={() => {
-                                            const updatedCourses = labCourses.map(c => {
-                                              if (c.id !== activeLabTab) return c;
-                                              return {
-                                                ...c,
-                                                exercises: c.exercises.map(e =>
-                                                  e.id === ex.id ? { ...e, [field]: !e[field] } : e
-                                                )
-                                              };
-                                            });
-                                            setLabCourses(updatedCourses);
-                                            localStorage.setItem(`ktunode_tools_labs_${branch}_${sem}`, JSON.stringify(updatedCourses));
-                                          }}
-                                          className={`w-6 h-6 flex items-center justify-center transition-all cursor-pointer active:scale-90 ${
-                                            isSigned ? "rounded-lg" : "rounded-full"
-                                          } ${buttonStyle}`}
-                                        >
-                                          {iconNode}
-                                        </button>
-                                      </div>
-                                    );
-                                  })}
-                                  <div className="col-span-1 flex justify-center">
-                                    <button
-                                      onClick={() => removeLabExercise(activeLab!.id, ex.id)}
-                                      className="text-slate-400 hover:text-rose-500 transition-all p-1 rounded-lg hover:bg-rose-500/10 cursor-pointer active:scale-90"
-                                    >
-                                      <Trash2 className="w-3.5 h-3.5" />
-                                    </button>
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-
-                          {/* Add exercise at bottom */}
-                          <div className="pt-2 border-t border-slate-100 dark:border-white/[0.03] flex justify-end">
-                            <button
-                              onClick={() => addLabExercise(activeLab!.id)}
-                              className="px-3 py-1.5 bg-blue-500/10 hover:bg-blue-500/15 border border-blue-500/15 text-blue-600 dark:text-blue-400 rounded-2xl text-[10px] font-semibold uppercase transition-all cursor-pointer flex items-center gap-1 active:scale-95"
-                            >
-                              <Plus className="w-3.5 h-3.5" /> Add Experiment
-                            </button>
-                          </div>
-                        </div>
-                      );
-                    })()}
-                  </div>
-                )}
-              </div>
-            </div>
+            <LabRecordTracker
+              branch={branch}
+              sem={sem}
+              triggerNotification={triggerNotification}
+            />
           )}
 
           {/* TAB 4: 11TH-HOUR EXAM COMMAND PANEL */}
@@ -4862,6 +5152,14 @@ export default function ToolsPage() {
                 {renderExamUtilities()}
               </div>
             </div>
+          )}
+
+          {/* TAB 5: MISSION CONTROL */}
+          {activeWorkspaceTab === "missioncontrol" && (
+            <MissionControlDashboard
+              branch={branch}
+              sem={String(sem)}
+            />
           )}
 
         </div>
