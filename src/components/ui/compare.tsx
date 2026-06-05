@@ -176,6 +176,7 @@ export const Compare: React.FC<CompareProps> = ({
             fill
             sizes="(max-width: 768px) 100vw, 500px"
             priority
+            quality={70}
           />
         )}
       </div>
@@ -196,6 +197,7 @@ export const Compare: React.FC<CompareProps> = ({
             fill
             sizes="(max-width: 768px) 100vw, 500px"
             priority
+            quality={70}
           />
         )}
       </div>

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
@@ -13,6 +13,17 @@ import { SEMESTERS } from "@/lib/constants";
 import { UpgradeBanner } from "@/components/ui/upgrade-banner";
 import { VALID_BRANCHES } from "@/types/session";
 import { useTheme } from "next-themes";
+
+function LazySection({ children, height = "400px" }: { children: React.ReactNode; height?: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "150px" });
+
+  return (
+    <div ref={ref} style={{ minHeight: isInView ? undefined : height }}>
+      {isInView ? children : null}
+    </div>
+  );
+}
 
 // Dynamically import below-the-fold components to optimize LCP and bundle payloads
 // SSR enabled for content-heavy sections (SEO crawlability)
@@ -599,18 +610,34 @@ export default function Home() {
       {/* ══════════════════════════════════════
           SECTIONS
       ══════════════════════════════════════ */}
-      <KtuCompareSection />
-      <HowItWorksSection />
-      <FoundreeHero />
-
-      <section className="relative z-10 w-full bg-white dark:bg-slate-900 border-y border-blue-50 dark:border-slate-800">
-        <Features />
-      </section>
-
-      <TestimonialsSection />
-      <FaqSection />
-      <CtaBanner />
-      <CinematicFooter />
+      <LazySection height="600px">
+        <KtuCompareSection />
+      </LazySection>
+      <LazySection height="650px">
+        <HowItWorksSection />
+      </LazySection>
+      <LazySection height="700px">
+        <FoundreeHero />
+      </LazySection>
+ 
+      <LazySection height="800px">
+        <section className="relative z-10 w-full bg-white dark:bg-slate-900 border-y border-blue-50 dark:border-slate-800">
+          <Features />
+        </section>
+      </LazySection>
+ 
+      <LazySection height="600px">
+        <TestimonialsSection />
+      </LazySection>
+      <LazySection height="600px">
+        <FaqSection />
+      </LazySection>
+      <LazySection height="450px">
+        <CtaBanner />
+      </LazySection>
+      <LazySection height="400px">
+        <CinematicFooter />
+      </LazySection>
     </main>
   );
 }
