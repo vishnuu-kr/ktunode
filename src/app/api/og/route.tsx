@@ -8,13 +8,11 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
 
     // Dynamic params passed from the page component
-    const title = searchParams.has('title')
-      ? searchParams.get('title')?.slice(0, 80) // Limit length to avoid overflow
-      : 'KTUNode Study Hub';
+    const rawTitle = searchParams.get('title');
+    const title = rawTitle ? rawTitle.slice(0, 80) : 'KTUNode Study Hub';
       
-    const subtitle = searchParams.has('subtitle')
-      ? searchParams.get('subtitle')?.slice(0, 100)
-      : 'Free Notes, Syllabus & PYQs for 2024 Scheme';
+    const rawSubtitle = searchParams.get('subtitle');
+    const subtitle = rawSubtitle ? rawSubtitle.slice(0, 100) : 'Free Notes, Syllabus & PYQs for 2024 Scheme';
 
     const bgUrl = new URL('/og-bg.png', request.url).href;
 
