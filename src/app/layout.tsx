@@ -27,7 +27,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ktunode.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://ktunode.vercel.app")
+  ),
   manifest: "/manifest.json",
   title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
   description: "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme. CS, EC, ME, CE, EE — all semesters covered.",
