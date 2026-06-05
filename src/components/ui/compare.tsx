@@ -174,7 +174,7 @@ export const Compare: React.FC<CompareProps> = ({
             className={cn("w-full h-full select-none pointer-events-none object-cover", firstImageClassName)}
             draggable={false}
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, 500px"
             priority
           />
         )}
@@ -194,7 +194,7 @@ export const Compare: React.FC<CompareProps> = ({
             className={cn("w-full h-full select-none pointer-events-none object-cover", secondImageClassname)}
             draggable={false}
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, 500px"
             priority
           />
         )}

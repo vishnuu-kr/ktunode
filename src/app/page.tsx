@@ -273,6 +273,7 @@ function PremiumSelect({
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-controls={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
+        aria-label={selectedOption ? `${placeholder}: ${selectedOption.label}` : placeholder}
         className={`w-full flex items-center justify-between bg-white/70 dark:bg-slate-900/70 hover:bg-white/95 dark:hover:bg-slate-900/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700 dark:text-slate-200'} rounded-2xl px-4 py-4 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
         animate={hasError ? { x: [-6, 6, -5, 5, -3, 3, 0] } : { x: 0 }}
         transition={{ duration: 0.4 }}
@@ -459,7 +460,7 @@ export default function Home() {
         <motion.h1
           className="relative z-10 text-5xl sm:text-6xl md:text-7xl lg:text-[82px] font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.03] mb-5 max-w-4xl"
           initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 28 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.08, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           Master the{" "}
@@ -479,7 +480,7 @@ export default function Home() {
                 strokeLinecap="round"
                 fill="none"
                 initial={{ pathLength: 0, opacity: 0 }}
-                animate={{ pathLength: mounted ? 1 : 0, opacity: mounted ? 0.55 : 0 }}
+                animate={{ pathLength: 1, opacity: 0.55 }}
                 transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
               />
             </svg>
@@ -490,7 +491,7 @@ export default function Home() {
         <motion.p
           className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-9 max-w-xl font-medium leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.16, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           Notes, PYQs, and syllabus tracking — all free,
@@ -503,7 +504,7 @@ export default function Home() {
         <motion.div
           className="relative z-30 bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 max-w-3xl w-full"
           initial={{ opacity: 0, y: 24, scale: 0.97 }}
-          animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 24, scale: mounted ? 1 : 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.24, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           style={{
             boxShadow: !mounted
@@ -566,7 +567,7 @@ export default function Home() {
         <motion.div
           className="relative z-10 flex flex-wrap items-center justify-center gap-6 mt-7"
           initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: mounted ? 1 : 0, y: mounted ? 0 : 12 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.36, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           {[
@@ -585,7 +586,7 @@ export default function Home() {
         <motion.div
           className="relative z-10 flex flex-col items-center gap-2 mt-8 mb-0"
           initial={{ opacity: 0 }}
-          animate={{ opacity: mounted ? 0.5 : 0 }}
+          animate={{ opacity: 0.5 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
           <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-[0.2em] uppercase">
