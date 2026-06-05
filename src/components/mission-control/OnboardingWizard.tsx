@@ -320,7 +320,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
         <div className="space-y-4">
           <div className="flex items-center justify-between border-b border-slate-100 dark:border-white/[0.05] pb-3 mb-1">
             <h3 className="font-black text-sm text-slate-800 dark:text-white flex items-center gap-2">
-              <FileText className="w-4 h-4 text-emerald-500" /> WHATSAPP "PASTE & PARSE" BIN
+              <FileText className="w-4 h-4 text-emerald-500" /> WHATSAPP &quot;PASTE &amp; PARSE&quot; BIN
             </h3>
             <button
               onClick={() => setRoute("menu")}
@@ -423,7 +423,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
           </div>
 
           <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-            Select your college and division. If a classmate has already built the master timetable config, we'll sync it to your browser instantly.
+            Select your college and division. If a classmate has already built the master timetable config, we&apos;ll sync it to your browser instantly.
           </p>
 
           <div className="space-y-3">

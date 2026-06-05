@@ -8,8 +8,6 @@ import { usePathname, useRouter } from "next/navigation";
 import { ArrowRight, LayoutDashboard, UserRound, Sun, Moon, Wrench } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useTheme } from "next-themes";
-import confetti from "canvas-confetti";
-
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -134,7 +132,12 @@ export default function Navbar() {
   const [clickCount, setClickCount] = useState(0);
   const lastClickTime = useRef(0);
 
-  const handleLogoClick = useCallback((e: React.MouseEvent) => {
+  const handleLogoClick = useCallback(async (e: React.MouseEvent) => {
+    // Capture event properties synchronously before any await
+    const rect = e.currentTarget.getBoundingClientRect();
+    const originX = (rect.left + rect.width / 2) / (window.innerWidth || 1);
+    const originY = (rect.top + rect.height / 2) / (window.innerHeight || 1);
+
     const now = Date.now();
     let currentCount = 1;
     if (now - lastClickTime.current < 1200) {
@@ -145,11 +148,10 @@ export default function Navbar() {
 
     const colors = ["#2E95FF", "#007AFF", "#60a5fa", "#818cf8", "#a78bfa", "#f472b6", "#facc15", "#ffffff"];
 
+    const confetti = (await import("canvas-confetti")).default;
+
     if (currentCount === 1) {
       // Stage 1: Tiny pop sparkle at click location
-      const rect = e.currentTarget.getBoundingClientRect();
-      const originX = (rect.left + rect.width / 2) / (window.innerWidth || 1);
-      const originY = (rect.top + rect.height / 2) / (window.innerHeight || 1);
       confetti({
         particleCount: 15,
         spread: 25,

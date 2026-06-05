@@ -34,7 +34,7 @@ export default function DailyGauntlet({
   // Initialize and check current date/time
   useEffect(() => {
     const d = new Date();
-    let day = d.getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
+    const day = d.getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
     
     // Format date string for local storage logs key
     const yyyy = d.getFullYear();

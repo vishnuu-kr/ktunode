@@ -57,7 +57,13 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
     openGraph: {
       title: topicId ? title : `${subjectCode} Study Hub`,
       description,
-      images: [`/api/og?subject=${subjectIdOrCode}${topicId ? `&topic=${topicId}` : ""}`],
+      images: [
+        `/api/og?title=${encodeURIComponent(
+          topicId ? title : subjectCode
+        )}&subtitle=${encodeURIComponent(
+          topicId ? `${subjectCode} • ${subjectTitle}` : subjectTitle
+        )}`
+      ],
     },
   };
 }

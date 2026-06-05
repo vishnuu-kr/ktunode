@@ -16,7 +16,6 @@ import {
   Check,
   GraduationCap
 } from "lucide-react";
-import confetti from "canvas-confetti";
 import ktu2024Scheme from "@/data/ktu_2024_scheme.json";
 
 // Standard grade points mapping for KTU 2024 Scheme
@@ -427,11 +426,13 @@ export default function GpaCalculator() {
     if (!mounted) return;
     const cgpaVal = parseFloat(overallCalculations.cgpa);
     if (cgpaVal >= 9.0) {
-      confetti({
-        particleCount: 60,
-        spread: 50,
-        origin: { y: 0.8 },
-        colors: ["#3b82f6", "#6366f1", "#a78bfa", "#facc15"]
+      import("canvas-confetti").then((mod) => {
+        mod.default({
+          particleCount: 60,
+          spread: 50,
+          origin: { y: 0.8 },
+          colors: ["#3b82f6", "#6366f1", "#a78bfa", "#facc15"]
+        });
       });
     }
   }, [overallCalculations.cgpa, mounted]);

@@ -28,6 +28,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ktunode.com"),
+  manifest: "/manifest.json",
   title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
   description: "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme. CS, EC, ME, CE, EE — all semesters covered.",
   keywords: [
@@ -70,9 +71,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.webp",
-        width: 512,
-        height: 512,
+        url: "/og-main.webp",
+        width: 1200,
+        height: 630,
         alt: "KTUNODE — Free KTU Notes, Syllabus & PYQs for 2024 Scheme",
       },
     ],
@@ -81,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
     description: "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme.",
-    images: ["/logo.webp"],
+    images: ["/og-main.webp"],
   },
 };
 
@@ -183,6 +184,21 @@ export default function RootLayout({
           </a>
           {children}
         </ThemeProvider>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js').then(function(reg) {
+                    console.log('ServiceWorker registered with scope: ', reg.scope);
+                  }).catch(function(err) {
+                    console.error('ServiceWorker registration failed: ', err);
+                  });
+                });
+              }
+            `
+          }}
+        />
       </body>
     </html>
   );

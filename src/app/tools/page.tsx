@@ -1706,7 +1706,7 @@ const LabRecordTracker: React.FC<LabRecordTrackerProps> = ({ branch, sem, trigge
           <div className="flex flex-col items-center justify-center py-12 px-4 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-2xl">
             <FlaskConical className="w-10 h-10 text-slate-400 mb-3" />
             <span className="text-[12px] font-semibold text-slate-500 dark:text-slate-400 mb-1">No lab courses loaded</span>
-            <span className="text-[11px] text-slate-400 dark:text-slate-500 text-center mb-4">Click "Load Labs" to import your {branch.toUpperCase()} S{sem} lab courses and start tracking experiments.</span>
+            <span className="text-[11px] text-slate-400 dark:text-slate-550 text-center mb-4">Click &quot;Load Labs&quot; to import your {branch.toUpperCase()} S{sem} lab courses and start tracking experiments.</span>
           </div>
         ) : (
           <div className="space-y-4">
@@ -3560,9 +3560,9 @@ export default function ToolsPage() {
                 { grade: "B", pct: 60, label: "B (60+)" },
                 { grade: "C+", pct: 50, label: "C+ (50+)" }
               ].map(tg => {
-                let needed = (tg.pct - totalCie) * 2;
-                let impossible = needed > 100;
-                let finalEse = Math.max(40, Math.ceil(needed));
+                const needed = (tg.pct - totalCie) * 2;
+                const impossible = needed > 100;
+                const finalEse = Math.max(40, Math.ceil(needed));
                 
                 let badge = "";
                 let badgeClass = "";

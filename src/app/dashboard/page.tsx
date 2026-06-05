@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import { useSearchParams, useParams, usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowRight,
@@ -320,25 +320,28 @@ const getVideoIdForCard = (
 
 function DashboardContent() {
   const params = useParams();
-  const searchParams = useSearchParams();
   const pathname = usePathname();
   const lastVibrateTimeRef = React.useRef<number>(0);
   
-  // Resolve branch using path params first, then search params, fallback to "cs"
+  // Resolve branch using path params first, then client-side query parameters (fallback to "cs")
   let branch = "cs";
   if (params && params.branch) {
     branch = Array.isArray(params.branch) ? params.branch[0] : params.branch;
-  } else if (searchParams && searchParams.get("branch")) {
-    branch = searchParams.get("branch")!;
+  } else if (typeof window !== "undefined") {
+    const qParams = new URLSearchParams(window.location.search);
+    const b = qParams.get("branch");
+    if (b) branch = b;
   }
 
-  // Resolve sem using path params first, then search params, fallback to 4
+  // Resolve sem using path params first, then client-side query parameters (fallback to 4)
   let sem = 4;
   let semStr = "";
   if (params && params.sem) {
     semStr = Array.isArray(params.sem) ? params.sem[0] : params.sem;
-  } else if (searchParams && searchParams.get("sem")) {
-    semStr = searchParams.get("sem")!;
+  } else if (typeof window !== "undefined") {
+    const qParams = new URLSearchParams(window.location.search);
+    const s = qParams.get("sem");
+    if (s) semStr = s;
   }
 
   if (semStr) {
@@ -1401,7 +1404,7 @@ function DashboardContent() {
       <Navbar />
 
       <main 
-        className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-24 lg:pt-0 scroll-pt-24 lg:scroll-pt-0 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
+        className="relative flex-1 w-full max-w-6xl mx-auto px-4 md:px-6 pt-24 lg:pt-0 scroll-pt-24 lg:scroll-pt-0 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
       >
         <AnimatePresence mode="wait">
           {isTransitioning && (
@@ -1450,11 +1453,11 @@ function DashboardContent() {
           {!isTransitioning && view === "dashboard" && (
             <motion.div
               key="dashboard"
-              initial={{ opacity: 0, y: 20 }}
+              initial={mounted ? { opacity: 0, y: 15 } : false}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 h-auto lg:h-full items-start"
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto lg:h-full items-start"
             >
               <div className="lg:col-span-8 space-y-5 md:space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-6 lg:pb-32 px-1.5 md:px-2 lg:pt-28 lg:scroll-pt-28 scrollbar-none">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -1471,7 +1474,7 @@ function DashboardContent() {
                       tabIndex={-1}
                       className="text-2xl md:text-4xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight focus:outline-none"
                     >
-                      Welcome back to study.
+                      {"Welcome back! Let's get ready for your exams."}
                     </h2>
                     <p className="text-xs md:text-sm font-bold text-slate-500 dark:text-slate-400">
                       Get started with your courses, plan your study routine, or search the syllabus.
@@ -1600,16 +1603,31 @@ function DashboardContent() {
 
                 <div className="space-y-5 md:space-y-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100 tracking-tight">Your Courses</h3>
+                    <h3 className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100 tracking-tight leading-snug">Your Courses</h3>
                     <span className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400">
                       {loadingSubjects ? "Loading" : subjects.length} active courses
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     {!isLoaded || loadingSubjects
                       ? skeletonCards.slice(0, 4).map((item) => (
-                          <div key={item} className="h-36 rounded-[20px] bg-white/40 dark:bg-slate-850/40 animate-pulse border border-slate-950/[0.04] dark:border-white/[0.04] shadow-sm" />
+                          <div
+                            key={item}
+                            className="h-36 rounded-3xl bg-white/60 dark:bg-slate-900/60 border border-slate-950/[0.06] dark:border-white/[0.06] p-6 flex flex-col justify-between shadow-sm backdrop-blur-md animate-pulse"
+                          >
+                            <div className="flex items-start justify-between gap-4 w-full">
+                              <div className="space-y-2 flex-1">
+                                <div className="h-3.5 w-16 bg-slate-200/70 dark:bg-slate-800 rounded-md" />
+                                <div className="h-5 w-5/6 bg-slate-200/70 dark:bg-slate-800 rounded-md" />
+                              </div>
+                              <div className="w-11 h-11 bg-slate-200/70 dark:bg-slate-800 rounded-full shrink-0" />
+                            </div>
+                            <div className="pt-4 border-t border-slate-950/[0.06] dark:border-white/[0.06] flex items-center justify-between w-full">
+                              <div className="h-3 w-28 bg-slate-200/70 dark:bg-slate-800 rounded-md" />
+                              <div className="h-3 w-8 bg-slate-200/70 dark:bg-slate-800 rounded-md" />
+                            </div>
+                          </div>
                         ))
                       : subjects.length === 0
                         ? (
@@ -1849,11 +1867,17 @@ function DashboardContent() {
                               transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                               className="divide-y divide-blue-50/50 dark:divide-slate-850/50 p-2 overflow-hidden"
                             >
-                              {module.topics.map((topic) => {
+                              {module.topics.map((topic, topicIdx) => {
                                 const done = isCompleted(topic.id);
                                 const pinned = pinnedTopicIds.includes(topic.id);
                                 return (
-                                  <div key={topic.id} className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3">
+                                  <motion.div
+                                    key={topic.id}
+                                    initial={{ opacity: 0, x: -12 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.2, delay: topicIdx * 0.03 }}
+                                    className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3"
+                                  >
                                     <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
                                       <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-455" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
                                         {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
@@ -1870,7 +1894,7 @@ function DashboardContent() {
                                     >
                                       <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
                                     </button>
-                                  </div>
+                                  </motion.div>
                                 );
                               })}
                             </motion.div>
@@ -1958,18 +1982,24 @@ function DashboardContent() {
                 <div className="px-4 md:px-0">
                   {loadingNote ? (
                     <div className="max-w-3xl mx-auto space-y-6 py-4 animate-pulse">
-                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-3/4"></div>
-                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-5/6"></div>
-                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-2/3"></div>
+                      <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-3/4"></div>
+                      <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-5/6"></div>
+                      <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-2/3"></div>
                       <div className="space-y-3 pt-6">
-                        <div className="h-6 bg-slate-200 dark:bg-slate-800 rounded w-1/3 mb-2"></div>
-                        <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-full"></div>
-                        <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-5/6"></div>
+                        <div className="h-6 bg-slate-200/60 dark:bg-white/5 rounded w-1/3 mb-2"></div>
+                        <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-full"></div>
+                        <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-5/6"></div>
                       </div>
-                      <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-4/5 pt-4"></div>
+                      <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-4/5 pt-4"></div>
                     </div>
                   ) : (
-                    <MarkdownRenderer content={noteContent} stripH1={true} />
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                    >
+                      <MarkdownRenderer content={noteContent} stripH1={true} />
+                    </motion.div>
                   )}
                 </div>
 
@@ -2493,10 +2523,12 @@ function DashboardContent() {
                   className="w-full relative overflow-hidden block px-8 py-3.5 rounded-xl font-black text-sm text-white bg-gradient-to-b from-[#2E95FF] to-[#007AFF] shadow-[0_8px_20px_-4px_rgba(0,122,255,0.4),inset_0_1px_0_rgba(255,255,255,0.3)] border border-blue-400/20 active:scale-[0.97] active:brightness-90 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:pointer-events-none mt-2"
                 >
                   {authLoading ? (
-                    <>
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                      Connecting...
-                    </>
+                    <div className="flex items-center gap-1.5 py-0.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" style={{ animationDelay: "0s" }} />
+                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" style={{ animationDelay: "0.15s" }} />
+                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" style={{ animationDelay: "0.3s" }} />
+                      <span className="text-white/90 text-xs font-black tracking-wide ml-1.5">Connecting...</span>
+                    </div>
                   ) : authTab === "signin" ? (
                     "Sign In"
                   ) : (
@@ -2609,10 +2641,12 @@ function DashboardContent() {
                     }`}
                   >
                     {syncing ? (
-                      <>
-                        <Loader2 className="w-4 h-4 animate-spin" />
-                        Syncing progress...
-                      </>
+                      <div className="flex items-center gap-1.5 py-0.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse" style={{ animationDelay: "0s" }} />
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse" style={{ animationDelay: "0.15s" }} />
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse" style={{ animationDelay: "0.3s" }} />
+                        <span className="text-blue-600 dark:text-blue-400 text-xs font-black tracking-wide ml-1.5">Syncing progress...</span>
+                      </div>
                     ) : (
                       <>
                         <Cloud className="w-4 h-4" />
