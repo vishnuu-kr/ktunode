@@ -39,17 +39,29 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "next-themes";
-import confetti from "canvas-confetti";
+import dynamic from "next/dynamic";
 import { getSubjectsForSession, Subject, Topic } from "@/lib/mockData";
 import { getTimetable } from "@/lib/timetableData";
 import { useProgress } from "@/hooks/useProgress";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import MarkdownRenderer from "@/components/ui/MarkdownRenderer";
-import PomodoroTimer from "@/components/dashboard/PomodoroTimer";
-import TimetableWidget from "@/components/dashboard/TimetableWidget";
 import ShareButton from "@/components/ui/ShareButton";
 
-import { BottomSheet } from "@/components/dashboard/BottomSheet";
+const MarkdownRenderer = dynamic(() => import("@/components/ui/MarkdownRenderer"), {
+  loading: () => <div className="animate-pulse h-48 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-[20px] flex items-center justify-center text-xs text-slate-400 font-medium">Loading notes rendering engine...</div>,
+  ssr: false
+});
+
+const PomodoroTimer = dynamic(() => import("@/components/dashboard/PomodoroTimer"), {
+  ssr: false
+});
+
+const TimetableWidget = dynamic(() => import("@/components/dashboard/TimetableWidget"), {
+  ssr: false
+});
+
+const BottomSheet = dynamic(() => import("@/components/dashboard/BottomSheet").then(mod => mod.BottomSheet), {
+  ssr: false
+});
 
 type ViewState = "dashboard" | "subject" | "topic";
 
@@ -105,6 +117,10 @@ const schemeHoverTextMap: Record<string, string> = {
   "text-pink-600": "group-hover:text-pink-600",
   "text-teal-600": "group-hover:text-teal-600",
 };
+
+// Client-side cache for fetched subjects and notes content to prevent reloading UI spinners
+const clientSubjectsCache: Record<string, Subject[]> = {};
+const clientNotesCache: Record<string, string> = {};
 
 interface SubjectTheme {
   accent: "blue" | "purple" | "green" | "amber" | "emerald" | "rose";
@@ -305,6 +321,7 @@ const getVideoIdForCard = (
 function DashboardContent() {
   const params = useParams();
   const searchParams = useSearchParams();
+  const lastVibrateTimeRef = React.useRef<number>(0);
   
   // Resolve branch using path params first, then search params, fallback to "cs"
   let branch = "cs";
@@ -412,13 +429,22 @@ function DashboardContent() {
   }, []);
 
   useEffect(() => {
+    const cacheKey = `${branch}_${sem}`;
+    if (clientSubjectsCache[cacheKey]) {
+      setSubjects(clientSubjectsCache[cacheKey]);
+      setLoadingSubjects(false);
+      return;
+    }
+
     let active = true;
     setLoadingSubjects(true);
     fetch(`/api/subjects?branch=${branch}&sem=${sem}`)
       .then((res) => res.json())
       .then((data) => {
         if (active) {
-          setSubjects(Array.isArray(data) ? data : []);
+          const subjectsList = Array.isArray(data) ? data : [];
+          clientSubjectsCache[cacheKey] = subjectsList;
+          setSubjects(subjectsList);
           setLoadingSubjects(false);
         }
       })
@@ -440,6 +466,13 @@ function DashboardContent() {
       return;
     }
     
+    const cacheKey = selectedTopic.id;
+    if (clientNotesCache[cacheKey]) {
+      setNoteContent(clientNotesCache[cacheKey]);
+      setLoadingNote(false);
+      return;
+    }
+
     let active = true;
     setLoadingNote(true);
     fetch(`/api/notes?id=${selectedTopic.id}`)
@@ -449,7 +482,9 @@ function DashboardContent() {
           if (data.error) {
             setNoteContent(`Error loading note: ${data.error}`);
           } else {
-            setNoteContent(data.content || "");
+            const content = data.content || "";
+            clientNotesCache[cacheKey] = content;
+            setNoteContent(content);
           }
           setLoadingNote(false);
         }
@@ -542,35 +577,40 @@ function DashboardContent() {
     // 1. Device Vibration
     if (navigator.vibrate) {
       try {
-        let duration = 0;
-        switch (type) {
-          case "light":
-            duration = 8;
-            break;
-          case "medium":
-            duration = 15;
-            break;
-          case "heavy":
-            duration = 30;
-            break;
-          case "success":
-            navigator.vibrate([
-              Math.round(12 * (0.5 + pressureVal)), 
-              Math.round(45 * (0.5 + pressureVal)), 
-              Math.round(12 * (0.5 + pressureVal))
-            ]);
-            break;
-          case "warning":
-            navigator.vibrate([
-              Math.round(45 * (0.5 + pressureVal)), 
-              Math.round(75 * (0.5 + pressureVal))
-            ]);
-            break;
-        }
-        if (duration > 0) {
-          // Scale vibration duration by pressure (between 50% and 150% of base duration)
-          const scaledDuration = Math.round(duration * (0.5 + pressureVal));
-          navigator.vibrate(scaledDuration);
+        const now = Date.now();
+        if (now - lastVibrateTimeRef.current > 150) { // 150ms lockout window
+          lastVibrateTimeRef.current = now;
+
+          let duration = 0;
+          switch (type) {
+            case "light":
+              duration = 8;
+              break;
+            case "medium":
+              duration = 15;
+              break;
+            case "heavy":
+              duration = 30;
+              break;
+            case "success":
+              navigator.vibrate([
+                Math.round(12 * (0.5 + pressureVal)), 
+                Math.round(45 * (0.5 + pressureVal)), 
+                Math.round(12 * (0.5 + pressureVal))
+              ]);
+              break;
+            case "warning":
+              navigator.vibrate([
+                Math.round(45 * (0.5 + pressureVal)), 
+                Math.round(75 * (0.5 + pressureVal))
+              ]);
+              break;
+          }
+          if (duration > 0) {
+            // Scale vibration duration by pressure (between 50% and 150% of base duration)
+            const scaledDuration = Math.round(duration * (0.5 + pressureVal));
+            navigator.vibrate(scaledDuration);
+          }
         }
       } catch (e) {
         // Silently block
@@ -675,6 +715,87 @@ function DashboardContent() {
   const [secondsLeft, setSecondsLeft] = useState(25 * 60);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [isTimerMuted, setIsTimerMuted] = useState(false);
+  const [isTimerRestored, setIsTimerRestored] = useState(false);
+
+  // Restore Pomodoro timer state on mount
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    
+    const savedSessionMins = localStorage.getItem("ktunode_timer_session_minutes");
+    const savedIsRunning = localStorage.getItem("ktunode_timer_is_running") === "true";
+    
+    if (savedSessionMins) {
+      const mins = parseInt(savedSessionMins, 10);
+      setSessionMinutes(mins);
+      
+      if (savedIsRunning) {
+        const savedEndTime = localStorage.getItem("ktunode_timer_end_time");
+        if (savedEndTime) {
+          const endTime = parseInt(savedEndTime, 10);
+          const remainingSecs = Math.max(0, Math.round((endTime - Date.now()) / 1000));
+          if (remainingSecs > 0) {
+            setSecondsLeft(remainingSecs);
+            setIsTimerRunning(true);
+          } else {
+            setSecondsLeft(mins * 60);
+            setIsTimerRunning(false);
+          }
+        }
+      } else {
+        const savedSecsLeft = localStorage.getItem("ktunode_timer_seconds_left");
+        if (savedSecsLeft) {
+          setSecondsLeft(parseInt(savedSecsLeft, 10));
+        } else {
+          setSecondsLeft(mins * 60);
+        }
+      }
+    }
+    setIsTimerRestored(true);
+  }, []);
+
+  // Save Pomodoro timer state to localStorage when it changes
+  useEffect(() => {
+    if (typeof window === "undefined" || !isTimerRestored) return;
+    
+    localStorage.setItem("ktunode_timer_session_minutes", String(sessionMinutes));
+    localStorage.setItem("ktunode_timer_is_running", String(isTimerRunning));
+    
+    if (isTimerRunning) {
+      const endTime = Date.now() + secondsLeft * 1000;
+      localStorage.setItem("ktunode_timer_end_time", String(endTime));
+    } else {
+      localStorage.setItem("ktunode_timer_seconds_left", String(secondsLeft));
+    }
+  }, [sessionMinutes, secondsLeft, isTimerRunning, isTimerRestored]);
+
+  // Unlock audio context on initial page user gesture
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const unlockAudio = () => {
+      const audioCtx = getAudioContext();
+      if (audioCtx) {
+        if (audioCtx.state === "suspended") {
+          audioCtx.resume().then(() => {
+            window.removeEventListener("click", unlockAudio);
+            window.removeEventListener("touchstart", unlockAudio);
+            window.removeEventListener("pointerdown", unlockAudio);
+          });
+        } else {
+          window.removeEventListener("click", unlockAudio);
+          window.removeEventListener("touchstart", unlockAudio);
+          window.removeEventListener("pointerdown", unlockAudio);
+        }
+      }
+    };
+    window.addEventListener("click", unlockAudio);
+    window.addEventListener("touchstart", unlockAudio);
+    window.addEventListener("pointerdown", unlockAudio);
+    return () => {
+      window.removeEventListener("click", unlockAudio);
+      window.removeEventListener("touchstart", unlockAudio);
+      window.removeEventListener("pointerdown", unlockAudio);
+    };
+  }, [getAudioContext]);
 
   // Wrappers to initialize and resume AudioContext on user interaction
   const handleSetIsTimerRunning = React.useCallback((running: boolean) => {
@@ -1213,15 +1334,20 @@ function DashboardContent() {
     }
   }, []);
 
-  const fireConfettiReward = (originX = 0.5, originY = 0.85) => {
+  const fireConfettiReward = async (originX = 0.5, originY = 0.85) => {
     const colors = ["#2E95FF", "#10B981", "#60A5FA", "#34D399", "#818CF8", "#A78BFA"];
-    confetti({
-      particleCount: 45,
-      spread: 55,
-      origin: { x: originX, y: originY },
-      colors,
-      disableForReducedMotion: true,
-    });
+    try {
+      const confetti = (await import("canvas-confetti")).default;
+      confetti({
+        particleCount: 45,
+        spread: 55,
+        origin: { x: originX, y: originY },
+        colors,
+        disableForReducedMotion: true,
+      });
+    } catch (e) {
+      console.warn("Failed to trigger confetti reward:", e);
+    }
   };
 
   const handleToggleTopic = (item: TopicIndexItem | Topic, event?: React.MouseEvent | React.PointerEvent) => {
@@ -1274,8 +1400,7 @@ function DashboardContent() {
       <Navbar />
 
       <main 
-        className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-24 md:pt-28 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
-        style={{ clipPath: "inset(1.25rem 0px 0px 0px)" }}
+        className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-24 lg:pt-0 scroll-pt-24 lg:scroll-pt-0 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
       >
         <AnimatePresence mode="wait">
           {isTransitioning && (
@@ -1330,7 +1455,7 @@ function DashboardContent() {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 h-auto lg:h-full items-start"
             >
-              <div className="lg:col-span-8 space-y-5 md:space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-6 lg:pb-32 px-1.5 md:px-2">
+              <div className="lg:col-span-8 space-y-5 md:space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-6 lg:pb-32 px-1.5 md:px-2 lg:pt-28 lg:scroll-pt-28 scrollbar-none">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex flex-col gap-1.5">
                     <div className="flex items-center gap-2">
@@ -1517,7 +1642,7 @@ function DashboardContent() {
                               className={`group relative flex flex-col justify-between p-6 border rounded-3xl text-left transition-all duration-300 cursor-pointer backdrop-blur-md overflow-hidden ${scheme.bg} w-full`}
                             >
                               {/* Dynamic Background Watermark */}
-                              <div className="absolute -bottom-6 -right-6 opacity-[0.03] pointer-events-none transform -rotate-12 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-700 ease-out text-slate-900 dark:text-slate-100">
+                              <div className="absolute -bottom-6 -right-6 opacity-[0.08] dark:opacity-[0.06] pointer-events-none transform -rotate-12 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-700 ease-out text-slate-900 dark:text-slate-100">
                                 {React.createElement(getSubjectIcon(subject.name), { className: "w-40 h-40" })}
                               </div>
                               {/* Subtle hover glare effect */}
@@ -1566,7 +1691,7 @@ function DashboardContent() {
               </div>
 
               {/* Right column sidebar (Desktop only) */}
-              <div className="hidden lg:block lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 px-1.5 md:px-2">
+              <div className="hidden lg:block lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 px-1.5 md:px-2 lg:pt-28 lg:scroll-pt-28 scrollbar-none">
 
                 <PomodoroTimer
                   sessionMinutes={sessionMinutes}
@@ -1626,7 +1751,7 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1"
+              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1 lg:pt-28 lg:scroll-pt-28 scrollbar-none"
             >
               <div className="flex items-center justify-between mb-8">
                 <button onClick={goHome} className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors group">
@@ -1771,7 +1896,7 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-36 px-1 relative"
+              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-36 px-1 relative lg:pt-28 lg:scroll-pt-28 scrollbar-none"
             >
               <button 
                 onClick={() => goSubject(selectedSubject!)} 
@@ -2214,7 +2339,7 @@ function DashboardContent() {
 
       {/* Floating Sticky Mobile Study Tools FAB */}
       <AnimatePresence>
-        {!mobileSheetOpen && view === "dashboard" && !(isTimerRunning || secondsLeft < sessionMinutes * 60) && (
+        {!mobileSheetOpen && (view === "dashboard" || view === "subject" || view === "topic") && (
           <motion.div
             key="study-tools-fab"
             className="fixed bottom-6 right-6 z-[40] lg:hidden"

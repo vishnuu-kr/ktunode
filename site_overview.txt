@@ -1,0 +1,173 @@
+================================================================================
+                       KTUNODE - COMPLETE SITE OVERVIEW & INTERACTION MAP
+================================================================================
+
+This document provides a full map of all pages, layout states, tools, and 
+interactive elements on the KTUNode website. It describes exactly what each 
+button, input, and widget does when clicked.
+
+--------------------------------------------------------------------------------
+1. GLOBAL NAVBAR CAPSULE (Rendered across all pages)
+--------------------------------------------------------------------------------
+* Location: Top center of the viewport (styled as a floating capsule).
+* Elements & Click Actions:
+  - LOGO ICON / BRANDING: Click to navigate back to the Landing/Home page.
+  - "DASHBOARD" LINK/ICON: Click to route to `/dashboard`.
+  - "TOOLS" LINK/ICON: Click to route to `/tools` hub.
+  - "THEME TOGGLE" BUTTON: Click to toggle system appearance (Light / Dark mode).
+  - "SIGN IN" BUTTON: Opens authentication drawer/modal.
+  - Responsive Behavior: Text labels collapse to visual icon-only buttons on 
+    mobile viewports (< 640px) with HTML tooltips.
+
+--------------------------------------------------------------------------------
+2. LANDING / HOME PAGE (src/app/page.tsx)
+================================================================================
+* Layout: Hero section, branch/sem selector, dynamic session recovery, compare 
+  section, features grid, FAQ, and footer.
+* Interactive Elements & Click Actions:
+  - "BRANCH" SELECTOR BUTTONS (CS, EC, ME, CE, EE):
+    - Click to select active engineering branch. Sets select border styling.
+  - "SEMESTER" SELECTOR BUTTONS (S1 to S8):
+    - Click to select target semester. Sets active background color.
+  - "EXPLORE STUDY HUB" BUTTON:
+    - Click to route to `/notes/[branch]/[sem]` (e.g. `/notes/cs/sem-4`) 
+      matching the selected branch/semester.
+  - "CONTINUE STUDY SESSION" BUTTON (Conditional):
+    - Only renders if a prior study session is found in localStorage.
+    - Click to dynamically restore and route directly to the last visited 
+      subject/topic notes view.
+  - FAQ COLLAPSIBLE ACCORDIONS:
+    - Click an FAQ question to expand or collapse the answer text.
+  - FOOTER LINKS:
+    - Navigates to `/syllabus`, `/tools`, source code repositories, and terms.
+
+--------------------------------------------------------------------------------
+3. STUDY HUB / DASHBOARD PAGE (src/app/dashboard/page.tsx)
+================================================================================
+* Layout: Dynamically transitions across 3 main views ("dashboard", "subject", 
+  "topic") using internal state variables, synced with URL route parameters.
+
+--- STATE A: MAIN HUB VIEW (viewState === "dashboard") ---
+* Interactive Elements & Click Actions:
+  - "TOOLS" FAB (FLOATING ACTION BUTTON):
+    - Floating action button in the bottom right corner (persists across views).
+    - Click to slide open the Mobile Study Tools Bottom Sheet containing the 
+      Pomodoro timer, exam timetable, and pinned bookmarks.
+  - SEARCH INPUT:
+    - Text box to search topics or subjects. Filters subjects list dynamically.
+  - TIMETABLE WIDGET:
+    - DISPLAYS countdown to next exam.
+    - Click collapsible header to hide/show calendar items.
+  - SUBJECT CARDS:
+    - Grid of course cards for the selected branch/semester.
+    - DISPLAY: progress bar mapping completed topics.
+    - Click a card: sets active `selectedSubject` and transitions state to 
+      "subject" view.
+
+--- STATE B: COURSE VIEW (viewState === "subject") ---
+* Interactive Elements & Click Actions:
+  - "BACK" BUTTON:
+    - Click to return to "dashboard" view.
+  - "SHARE" BUTTON:
+    - Click to copy the canonical subject link to the clipboard. Displays a 
+      "Copied!" tooltip message.
+  - MODULE COLLAPSIBLE HEADERS (Modules 1 to 5):
+    - Click to expand/collapse topics inside that specific module.
+  - TOPIC CHECKBOX (Circle check icon next to topics):
+    - Click to toggle topic completion. Saves completion array to localStorage.
+    - Plays pop/double chime audio effect on completion and triggers haptics.
+  - TOPIC TITLE / ROW:
+    - Click to set `selectedTopic` and transition state to "topic" view.
+
+--- STATE C: NOTES VIEW (viewState === "topic") ---
+* Interactive Elements & Click Actions:
+  - "BACK TO SUBJECT" BUTTON:
+    - Click to return to "subject" view.
+  - "PIN / BOOKMARK" BUTTON (Star icon):
+    - Click to bookmark/pin this note. Saves target ID to pinned bookmarks.
+  - "SHARE" BUTTON:
+    - Click to copy the topic link to the clipboard.
+  - CODE BLOCK "COPY" BUTTON:
+    - Inside note reader. Click to copy code block content.
+  - "PREVIOUS TOPIC" NAVIGATION BUTTON (Bottom Left):
+    - Click to transition to the previous note in the syllabus sequence.
+  - "NEXT TOPIC" NAVIGATION BUTTON (Bottom Right):
+    - Click to transition to the next note in the syllabus sequence.
+
+--- FLOATING STUDY TOOLS BOTTOM SHEET (BottomSheet.tsx) ---
+* Interactive Elements & Click Actions:
+  - DRAG HANDLE BAR: Drag vertically to close or expand the bottom sheet.
+  - POMODORO TIMER:
+    - "PLAY / PAUSE" BUTTON: Click to start or pause countdown ticker.
+    - "RESET" BUTTON (Rotate icon): Click to reset timer to start minutes.
+    - "MUTE" BUTTON (Volume icon): Click to toggle chime notifications sound.
+    - "DURATION" PRESETS (25m / 45m / 60m): Click to set timer duration.
+    - Duration Range Slider: Drag to set custom minutes.
+  - PINNED NOTES LIST:
+    - Click a pinned note title to close the sheet and route directly to it.
+
+--------------------------------------------------------------------------------
+4. TOOLS PAGE (src/app/tools/page.tsx)
+================================================================================
+* Layout: Divided into category tabs via capsule navigation buttons at the top.
+
+--- TAB 1: ATTENDANCE TRACKER ---
+* Interactive Elements & Click Actions:
+  - BRANCH/SEM DROPDOWNS: Click to filter relevant course templates.
+  - ATTENDED / TOTAL CLASS INPUTS:
+    - Type values inside course rows. Output calculations update live.
+  - Dynamic Outputs: Shows exactly how many classes can be safely missed.
+
+--- TAB 2: GPA & CGPA CALCULATOR ---
+* Interactive Elements & Click Actions:
+  - "TRASH" ICON BUTTON (next to course names): Click to delete course row.
+  - "ADD COURSE" BUTTON: Click to add an empty course row.
+  - CREDITS INPUTS: Click and type credit value (e.g. 4, 3, 2, 0).
+  - GRADE SELECT DROPDOWNS: Click to choose target grade (S, A+, A, B+, etc.).
+  - "PLAN CIE & ESE" BUTTON:
+    - Click to slide open the CIE Target Planner Drawer:
+      - Subject Select Dropdown: Click to pick active course.
+      - CIE Range Slider (0-50): Drag to set score.
+      - Grade needed boxes update live showing needed ESE exam score out of 100.
+  - "SGPA ALLOCATOR" BUTTON:
+    - Click to slide open the SGPA Target Allocator Drawer:
+      - SGPA Slider (5.5 to 10.0): Drag to set target SGPA.
+      - Allocation outputs update showing needed grades per subject.
+  - SGPA / CGPA CONVERTER INPUTS:
+    - Type in SGPA text box -> Percentage updates.
+    - Type in Percentage text box -> SGPA updates.
+
+--- TAB 3: GRADUATION RUNWAY ---
+* Interactive Elements & Click Actions:
+  - TAB PILLS (Activity Points, Credit Auditor, Backlogs):
+    - Click to toggle progression auditor views.
+
+  - SUB-TAB A: ACTIVITY POINTS AUDITOR
+    - STUDENT TYPE SELECTOR (Regular/Lateral/PwD): Click to change graduation cap.
+    - CLAIMS CAPSULES "X" BUTTON: Click to remove claimed activity points.
+    - SEARCH BAR: Type to filter the activity catalog.
+    - ACTIVITY GROUP TABS (All / I / II / III): Click to filter catalog cards.
+    - "CLAIM" BUTTON (on catalog cards):
+      - Triggers config options:
+        - Level selector dropdown / Quantity input / Point value input.
+        - "Cancel" button: Click to abort claim configuration.
+        - "Confirm" button: Click to save claim. Updates points tally.
+
+  - SUB-TAB B: CREDIT AUDITOR
+    - TARGET TOGGLES (S5 Promotion / S7 Promotion): Click to swap locks.
+    - SEMESTER CREDIT CHECKBOXES: Click to check off completed semester credits.
+
+  - SUB-TAB C: BACKLOG TRACKER
+    - INPUTS (Code, Name, Sem): Type metadata.
+    - "ADD" BUTTON: Click to register backlog item.
+    - "ATTEMPTS" TICKERS: Displays attempt count.
+    - STATUS TOGGLES (Pending / Cleared / Registered): Click to set backlog state.
+    - "TRASH" BUTTON: Click to remove backlog item.
+
+--- TAB 4: LAB WORK TRACKER ---
+* Interactive Elements & Click Actions:
+  - LAB COURSE TABS: Click to swap lab templates.
+  - "LOGIC" / "RECORD" / "SIGNED" TICKERS:
+    - Click to check/uncheck experiment stage. Progress bar updates.
+  - "TRASH" BUTTON: Click to delete experiment item.
+================================================================================

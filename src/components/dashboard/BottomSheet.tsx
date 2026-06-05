@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, useAnimation, PanInfo } from "framer-motion";
+import { AnimatePresence, motion, useAnimation, PanInfo, useDragControls } from "framer-motion";
 import { ChevronUp } from "lucide-react";
 
 interface BottomSheetProps {
@@ -20,6 +20,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
   titleSummary = "Focus Timer & Tools",
 }) => {
   const controls = useAnimation();
+  const dragControls = useDragControls();
   const sheetRef = useRef<HTMLDivElement>(null);
   const [windowHeight, setWindowHeight] = useState(800);
 
@@ -108,6 +109,8 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
       <motion.div
         ref={sheetRef}
         drag={isOpen ? "y" : false}
+        dragControls={dragControls}
+        dragListener={false}
         dragDirectionLock
         dragConstraints={{ top: expandedY, bottom: collapsedY }}
         dragElastic={0.15}
@@ -124,6 +127,11 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
         {/* Drag Handle & Header */}
         <div
           onClick={handleToggle}
+          onPointerDown={(e) => {
+            if (isOpen) {
+              dragControls.start(e);
+            }
+          }}
           className="w-full py-3 px-6 flex flex-col items-center justify-center cursor-pointer border-b border-slate-900/[0.02] dark:border-white/[0.02] bg-white/50 dark:bg-slate-800/50 active:bg-slate-50 dark:active:bg-slate-800 transition-colors"
           style={{ touchAction: "none" }}
         >

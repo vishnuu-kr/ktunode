@@ -10,9 +10,10 @@ interface MagneticButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   href?: string;
   customShadow?: string;
+  [key: string]: any; // Allow arbitrary props like aria-label, title, etc.
 }
 
-export const MagneticButton = ({ children, className = "", onClick, href, customShadow }: MagneticButtonProps) => {
+export const MagneticButton = ({ children, className = "", onClick, href, customShadow, ...props }: MagneticButtonProps) => {
   const ref = useRef<HTMLDivElement>(null);
   
   const [isMobile, setIsMobile] = React.useState(false);
@@ -93,11 +94,11 @@ export const MagneticButton = ({ children, className = "", onClick, href, custom
       className={`relative group ${widthClasses || "inline-block"}`}
     >
       {href ? (
-        <Link href={href} className={`${buttonBaseClasses} w-full ${otherClasses}`}>
+        <Link href={href} className={`${buttonBaseClasses} w-full ${otherClasses}`} {...props}>
           {content}
         </Link>
       ) : (
-        <button type="button" onClick={onClick} className={`${buttonBaseClasses} w-full ${otherClasses}`}>
+        <button type="button" onClick={onClick} className={`${buttonBaseClasses} w-full ${otherClasses}`} {...props}>
           {content}
         </button>
       )}

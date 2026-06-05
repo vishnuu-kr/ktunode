@@ -22,19 +22,18 @@ import ktu2024Scheme from "@/data/ktu_2024_scheme.json";
 // Standard grade points mapping for KTU 2024 Scheme
 const DEFAULT_GRADE_POINTS: Record<string, number> = {
   "--": -1, // Not selected
-  "S": 10.0,
+  "O": 10.0,
   "A+": 9.0,
-  "A": 8.5,
-  "B+": 8.0,
-  "B": 7.5,
-  "C+": 7.0,
-  "C": 6.5,
-  "D": 6.0,
-  "P": 5.5,
+  "A": 8.0,
+  "B+": 7.0,
+  "B": 6.0,
+  "C": 5.0,
+  "P": 4.0,
   "F": 0.0,
   "FE": 0.0,
   "Ab": 0.0
 };
+
 
 interface DatabaseSubject {
   sno: number;
@@ -223,6 +222,11 @@ export default function GpaCalculator() {
 
   // Remove a subject
   const handleRemoveSubject = (semesterNum: number, subjectId: string) => {
+    const subject = semesters[semesterNum]?.find(sub => sub.id === subjectId);
+    const courseName = subject ? subject.name : "this course";
+    if (!window.confirm(`Are you sure you want to delete "${courseName}"?`)) {
+      return;
+    }
     const updated = { ...semesters };
     updated[semesterNum] = updated[semesterNum].filter(sub => sub.id !== subjectId)
       .map((sub, idx) => ({ ...sub, sno: idx + 1 })); // Re-sno
@@ -536,6 +540,7 @@ export default function GpaCalculator() {
                     initial={{ opacity: 0, y: 5 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 2 }}
+                    transition={{ duration: 0.18, ease: [0.16, 1, 0.3, 1] }}
                     className="absolute right-0 top-full mt-1.5 w-full z-50 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xl p-2 overflow-hidden"
                   >
                     <div className="relative flex items-center mb-1.5">
@@ -644,13 +649,13 @@ export default function GpaCalculator() {
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
+                    transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                     className="overflow-hidden mt-4 pt-3 border-t border-slate-100 dark:border-slate-900"
                   >
                     
                     {/* Clean Borderless Table Inputs */}
                     <div className="space-y-2">
-                      <div className="grid grid-cols-12 gap-2 px-1 text-[9px] font-black text-slate-400/70 tracking-widest uppercase mb-1">
+                      <div className="hidden sm:grid grid-cols-12 gap-2 px-1 text-[9px] font-black text-slate-400/70 tracking-widest uppercase mb-1">
                         <div className="col-span-7 sm:col-span-8">Course Details</div>
                         <div className="col-span-2 text-center">Credits</div>
                         <div className="col-span-3 sm:col-span-2 text-center">Grade</div>
@@ -660,16 +665,17 @@ export default function GpaCalculator() {
                         {activeSubs.map((c) => (
                           <div
                             key={c.id}
-                            className="grid grid-cols-12 gap-2 items-center p-1 py-1.5 rounded-lg hover:bg-slate-950/[0.015] dark:hover:bg-white/[0.015] transition-colors"
+                            className="flex flex-col sm:grid sm:grid-cols-12 gap-2 p-2 sm:p-1 py-2 sm:py-1.5 rounded-xl hover:bg-slate-950/[0.015] dark:hover:bg-white/[0.015] border border-slate-100 sm:border-transparent dark:border-slate-800/40 sm:dark:border-transparent transition-colors mb-2 sm:mb-0"
                           >
                             
-                            {/* borderless inline name input */}
-                            <div className="col-span-7 sm:col-span-8 min-w-0 flex items-center gap-1.5">
+                            {/* Course name and delete button */}
+                            <div className="w-full sm:col-span-8 min-w-0 flex items-center gap-1.5">
                               <button
                                 onClick={() => handleRemoveSubject(semNum, c.id)}
-                                className="text-slate-300 hover:text-rose-500 transition-colors p-0.5 shrink-0 cursor-pointer"
+                                className="text-slate-350 hover:text-rose-500 transition-colors p-1.5 shrink-0 cursor-pointer"
+                                aria-label="Delete course"
                               >
-                                <Trash2 className="w-3 h-3" />
+                                <Trash2 className="w-3.5 h-3.5" />
                               </button>
                               
                               <input
@@ -680,30 +686,35 @@ export default function GpaCalculator() {
                               />
                             </div>
 
-                            {/* borderless inline credits input */}
-                            <div className="col-span-2 text-center">
-                              <input
-                                type="number"
-                                min="0"
-                                max="10"
-                                value={c.credits === 0 ? "" : c.credits}
-                                placeholder="0"
-                                onChange={(e) => handleSubjectChange(semNum, c.id, "credits", e.target.value)}
-                                className="w-10 text-center bg-transparent border-b border-transparent hover:border-slate-200 dark:hover:border-slate-800 focus:border-blue-500/30 font-black text-xs text-slate-700 dark:text-slate-350 focus:outline-none py-0.5 rounded-md transition-all"
-                              />
-                            </div>
+                            {/* Credits & Grade inline side-by-side on mobile */}
+                            <div className="flex sm:contents items-center gap-4 pl-8 sm:pl-0">
+                              {/* Credits */}
+                              <div className="flex-1 sm:col-span-2 flex sm:justify-center items-center gap-2">
+                                <span className="sm:hidden text-[9px] font-black text-slate-400 uppercase tracking-wider">Credits:</span>
+                                <input
+                                  type="number"
+                                  min="0"
+                                  max="10"
+                                  value={c.credits === 0 ? "" : c.credits}
+                                  placeholder="0"
+                                  onChange={(e) => handleSubjectChange(semNum, c.id, "credits", e.target.value)}
+                                  className="w-10 text-center bg-slate-50 dark:bg-slate-850 sm:bg-transparent border border-slate-200 dark:border-slate-800 sm:border-0 sm:border-b border-transparent focus:border-blue-500/30 font-black text-xs text-slate-700 dark:text-slate-350 focus:outline-none py-1 sm:py-0.5 rounded-md transition-all"
+                                />
+                              </div>
 
-                            {/* borderless inline select grade */}
-                            <div className="col-span-3 sm:col-span-2 text-center">
-                              <select
-                                value={c.grade}
-                                onChange={(e) => handleGradeChange(semNum, c.id, e.target.value)}
-                                className="w-full bg-transparent border-b border-transparent hover:border-slate-200 dark:hover:border-slate-800 focus:border-blue-500/30 text-center font-extrabold text-xs focus:outline-none py-0.5 rounded-md transition-all text-slate-750 dark:text-slate-200 cursor-pointer"
-                              >
-                                {Object.keys(gradePoints).map((g) => (
-                                  <option key={g} value={g}>{g}</option>
-                                ))}
-                              </select>
+                              {/* Grade */}
+                              <div className="flex-1 sm:col-span-2 flex sm:justify-center items-center gap-2">
+                                <span className="sm:hidden text-[9px] font-black text-slate-400 uppercase tracking-wider">Grade:</span>
+                                <select
+                                  value={c.grade}
+                                  onChange={(e) => handleGradeChange(semNum, c.id, e.target.value)}
+                                  className="w-full bg-slate-50 dark:bg-slate-850 sm:bg-transparent border border-slate-200 dark:border-slate-800 sm:border-0 sm:border-b border-transparent focus:border-blue-500/30 text-center font-extrabold text-xs focus:outline-none py-1 sm:py-0.5 rounded-md transition-all text-slate-750 dark:text-slate-200 cursor-pointer"
+                                >
+                                  {Object.keys(gradePoints).map((g) => (
+                                    <option key={g} value={g}>{g}</option>
+                                  ))}
+                                </select>
+                              </div>
                             </div>
 
                           </div>
@@ -762,6 +773,7 @@ export default function GpaCalculator() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.4 }}
               exit={{ opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
               onClick={() => setIsBreakdownOpen(false)}
               className="fixed inset-0 bg-black z-50"
             />
@@ -769,7 +781,7 @@ export default function GpaCalculator() {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 32, stiffness: 350 }}
+              transition={{ type: "spring", damping: 38, stiffness: 380, mass: 0.85 }}
               className="fixed right-0 top-0 bottom-0 w-full max-w-md bg-white dark:bg-slate-950 z-50 shadow-2xl p-6 flex flex-col border-l border-slate-100 dark:border-slate-900 overflow-y-auto scrollbar-none"
             >
               <div className="flex items-center justify-between pb-3.5 border-b border-slate-100 dark:border-slate-900">
@@ -872,6 +884,7 @@ export default function GpaCalculator() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ type: "spring", damping: 26, stiffness: 320 }}
               className="fixed inset-0 flex items-center justify-center z-50 p-4"
             >
               <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" onClick={() => setIsEditingGrades(false)} />

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import useSessionPersistence from "@/hooks/useSessionPersistence";
@@ -397,28 +398,28 @@ export default function Home() {
       {/* Wrapper for Hero + Navbar to perfectly contain the background */}
       <div className="relative w-full">
         {/* ── Global Hero Background Image (Light Mode) ── */}
-        <div
-          className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-100 dark:opacity-0"
-          style={{
-            backgroundImage: "url('/hero-bg.webp')",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center bottom",
-          }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-100 dark:opacity-0">
+          <Image
+            src="/hero-bg.webp"
+            alt="Hero Background Light"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-bottom"
+          />
+        </div>
 
         {/* ── Global Hero Background Image (Dark Mode) ── */}
-        <div
-          className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-0 dark:opacity-100"
-          style={{
-            backgroundImage: "url('/hero-bg-dark.webp')",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center bottom",
-          }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-0 dark:opacity-100">
+          <Image
+            src="/hero-bg-dark.webp"
+            alt="Hero Background Dark"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-bottom"
+          />
+        </div>
 
         {/* ── Fade Overlay for Smooth Section Blending ── */}
         <div
@@ -552,7 +553,7 @@ export default function Home() {
 
         {/* ── Continue Session Button (below selector card) ── */}
         <AnimatePresence>
-          {savedSession && (
+          {mounted && savedSession && (
             <ContinueSessionButton
               session={savedSession}
               onContinue={handleContinue}

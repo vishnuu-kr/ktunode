@@ -14,6 +14,15 @@
   --color-accent-mid: var(--color-accent-mid);
   --color-sky: var(--color-sky);
   --color-sky-deep: var(--color-sky-deep);
+  --color-slate-105: var(--color-slate-105);
+  --color-slate-150: var(--color-slate-150);
+  --color-slate-250: var(--color-slate-250);
+  --color-slate-350: var(--color-slate-350);
+  --color-slate-450: var(--color-slate-450);
+  --color-slate-550: var(--color-slate-550);
+  --color-slate-650: var(--color-slate-650);
+  --color-slate-750: var(--color-slate-750);
+  --color-slate-850: var(--color-slate-850);
 
   --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-logo: var(--font-outfit), ui-sans-serif, system-ui;
@@ -45,6 +54,15 @@
   --color-accent-mid: oklch(56% 0.18 255 / 15%);
   --color-sky: oklch(93% 0.018 240);
   --color-sky-deep: oklch(88% 0.035 240);
+  --color-slate-105: oklch(95% 0.013 240);
+  --color-slate-150: oklch(94% 0.015 240);
+  --color-slate-250: oklch(88.5% 0.02 240);
+  --color-slate-350: oklch(77.5% 0.025 240);
+  --color-slate-450: oklch(61.5% 0.027 240);
+  --color-slate-550: oklch(48.5% 0.027 240);
+  --color-slate-650: oklch(39.5% 0.025 240);
+  --color-slate-750: oklch(31.5% 0.032 250);
+  --color-slate-850: oklch(24% 0.041 262);
   color-scheme: light;
 }
 
@@ -59,6 +77,15 @@
   --color-accent-mid: oklch(68% 0.2 250 / 22%);
   --color-sky: oklch(20% 0.015 250);      /* Slate alternate card background */
   --color-sky-deep: oklch(23% 0.015 250);
+  --color-slate-105: oklch(92% 0.005 250);
+  --color-slate-150: oklch(88% 0.005 250);
+  --color-slate-250: oklch(80% 0.01 250);
+  --color-slate-350: oklch(70% 0.01 250);
+  --color-slate-450: oklch(55% 0.01 250);
+  --color-slate-550: oklch(40% 0.015 250);
+  --color-slate-650: oklch(32% 0.015 250);
+  --color-slate-750: oklch(26% 0.015 250);
+  --color-slate-850: oklch(22% 0.015 250);
   color-scheme: dark;
 }
 
@@ -81,15 +108,26 @@
 
   html { scroll-behavior: smooth; }
 
-  /* Hide all scrollbars globally */
-  * {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  /* Modern custom scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
   }
-  *::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-fg) 15%, transparent);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in srgb, var(--color-fg) 30%, transparent);
+  }
+  
+  /* Firefox scrollbar compatibility */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--color-fg) 15%, transparent) transparent;
   }
 
   html, body {
@@ -111,6 +149,12 @@
   .text-muted-foreground { color: var(--color-muted); }
   .text-foreground { color: var(--color-fg); }
   .border-border { border-color: var(--color-border); }
+
+  /* Fix for unreadable <select> dropdown options in dark mode */
+  .dark option {
+    background-color: var(--color-surface);
+    color: var(--color-fg);
+  }
 }
 
 /* ══════════════════════════════════════════

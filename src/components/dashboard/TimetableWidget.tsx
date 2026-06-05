@@ -17,7 +17,7 @@ interface TimetableWidgetProps {
   branch: string;
 }
 
-export default function TimetableWidget({ timetable, sem, branch }: TimetableWidgetProps) {
+function TimetableWidget({ timetable, sem, branch }: TimetableWidgetProps) {
   const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; mins: number; secs: number } | null>(null);
 
   // Memoize sorted exams and next exam to stabilize references across renders
@@ -168,7 +168,7 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
         </div>
 
         {/* Desktop View: Card list */}
-        <div className="hidden md:block space-y-3 max-h-[300px] overflow-y-auto pr-1 scrollbar-thin">
+        <div className="hidden md:block space-y-3 max-h-[300px] overflow-y-auto pr-1 scrollbar-none">
           {sortedTimetable.length > 0 ? (
             sortedTimetable.map((slot) => {
               const dateObj = parseISO(slot.date);
@@ -214,7 +214,7 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
         </div>
 
         {/* Mobile View: Minimal Timeline layout */}
-        <div className="md:hidden pl-2 pt-1 space-y-0.5 max-h-[260px] overflow-y-auto pr-1 scrollbar-thin">
+        <div className="md:hidden pl-2 pt-1 space-y-0.5 max-h-[260px] overflow-y-auto pr-1 scrollbar-none">
           {sortedTimetable.length > 0 ? (
             sortedTimetable.map((slot) => {
               const dateObj = parseISO(slot.date);
@@ -255,3 +255,5 @@ export default function TimetableWidget({ timetable, sem, branch }: TimetableWid
     </div>
   );
 }
+
+export default React.memo(TimetableWidget);

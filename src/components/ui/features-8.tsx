@@ -325,6 +325,7 @@ export function Features() {
                     onClick={handleTimerReset}
                     className="p-1.5 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-lg transition-colors cursor-pointer"
                     title="Reset timer"
+                    aria-label="Reset timer"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
                   </button>

@@ -163,6 +163,8 @@ function MathSpan({ latex, block = false }: { latex: string; block?: boolean }) 
   if (block) {
     return (
       <div 
+        onPointerDownCapture={(e) => e.stopPropagation()}
+        onTouchStartCapture={(e) => e.stopPropagation()}
         className="my-6 text-center font-mono text-base text-slate-800 dark:text-slate-200 bg-slate-50/80 dark:bg-slate-800/80 rounded-2xl py-4 px-6 border border-slate-200/60 dark:border-slate-700/60 overflow-x-auto max-w-full"
         dangerouslySetInnerHTML={{ __html: formatted }}
       />
@@ -513,7 +515,11 @@ function CodeBlock({ code, language }: { code: string; language: string }) {
   };
 
   return (
-    <div className="my-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950/80 max-w-full font-mono text-sm shadow-md">
+    <div 
+      onPointerDownCapture={(e) => e.stopPropagation()}
+      onTouchStartCapture={(e) => e.stopPropagation()}
+      className="my-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950/80 max-w-full font-mono text-sm shadow-md"
+    >
       <div className="flex items-center justify-between px-4 py-2.5 border-b border-slate-800/80 bg-slate-900/60 text-slate-400 text-xs font-bold uppercase tracking-wider select-none">
         <span>{language || "code"}</span>
         <button
@@ -544,7 +550,7 @@ function CodeBlock({ code, language }: { code: string; language: string }) {
   );
 }
 
-export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
+function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
   let processedContent = content.trim();
 
   // Strip the first H1 if requested
@@ -555,7 +561,9 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
   // Strip duplicate Topic headings
   processedContent = processedContent.replace(/^#{2,3}\s+Topic:\s*.+\n*/gmi, "");
 
-  const blocks = parseBlocks(processedContent);
+  const blocks = React.useMemo(() => {
+    return parseBlocks(processedContent);
+  }, [processedContent]);
 
   return (
     <div className="max-w-3xl mx-auto px-1">
@@ -606,7 +614,12 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
             );
           case "table":
             return (
-              <div key={idx} className="my-8 overflow-x-auto rounded-2xl border border-slate-200/80 dark:border-slate-800 -mx-1 max-w-full">
+              <div 
+                key={idx} 
+                onPointerDownCapture={(e) => e.stopPropagation()}
+                onTouchStartCapture={(e) => e.stopPropagation()}
+                className="my-8 overflow-x-auto rounded-2xl border border-slate-200/80 dark:border-slate-800 -mx-1 max-w-full"
+              >
                 <table className="w-full text-sm min-w-[400px]">
                   <thead className="bg-slate-50/80 dark:bg-slate-800/80">
                     <tr>
@@ -650,3 +663,5 @@ export default function MarkdownRenderer({ content, stripH1 = true }: MarkdownRe
     </div>
   );
 }
+
+export default React.memo(MarkdownRenderer);

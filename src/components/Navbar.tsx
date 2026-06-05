@@ -286,6 +286,7 @@ export default function Navbar() {
                 onClick={handleAvatarClick}
                 className="relative flex items-center justify-center h-10 w-10 sm:h-9 sm:w-9 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 border border-white/20 shadow-md text-white font-bold text-xs select-none transition-all duration-300 hover:shadow-blue-500/20 cursor-pointer"
                 title={`Logged in as ${userName}`}
+                aria-label={`Logged in as ${userName}`}
               >
                 {getInitials(userName)}
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white shadow-sm" />
@@ -295,8 +296,9 @@ export default function Navbar() {
                 whileHover="hover"
                 whileTap="tap"
                 onClick={handleSignInClick}
-                className="group flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:pl-2.5 sm:pr-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-blue-50/40 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer whitespace-nowrap"
+                className="group flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:pl-2.5 sm:pr-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-blue-50/40 dark:hover:bg-blue-950/40 hover:text-blue-650 dark:hover:text-blue-400 cursor-pointer whitespace-nowrap"
                 title="Sign In"
+                aria-label="Sign In"
               >
                 <motion.div
                   variants={{
@@ -329,6 +331,7 @@ export default function Navbar() {
             href="/tools"
             className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
             title="Tools"
+            aria-label="Tools"
           >
             <Wrench className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5" />
             <span className="hidden sm:inline">Tools</span>
@@ -347,7 +350,7 @@ export default function Navbar() {
             <span className="hidden sm:inline">Dashboard</span>
           </button>
         ) : (
-          <MagneticButton href="/dashboard" className="!h-10 sm:!h-9 !w-10 sm:!w-auto flex items-center justify-center !py-0 !px-0 sm:!px-4 !text-[10px] sm:!text-xs whitespace-nowrap" customShadow="shadow-none">
+          <MagneticButton href="/dashboard" aria-label="Dashboard" className="!h-10 sm:!h-9 !w-10 sm:!w-auto flex items-center justify-center !py-0 !px-0 sm:!px-4 !text-[10px] sm:!text-xs whitespace-nowrap" customShadow="shadow-none">
             <LayoutDashboard className="h-3.5 w-3.5 block sm:hidden text-white" />
             <span className="hidden sm:inline">Dashboard</span>
             <ArrowRight className="w-3 h-3 hidden sm:inline" />

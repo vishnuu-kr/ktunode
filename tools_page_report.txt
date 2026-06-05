@@ -1,0 +1,78 @@
+=============================================================
+           KTU NODE - TOOLS PAGE DESIGN & INTERACTION MAP
+=============================================================
+
+1. GLOBAL PAGE ARCHITECTURE
+-------------------------------------------------------------
+- Background: A modern animated dark/light mode background with radial gradients and floating colored "orbs" (blue, indigo, violet) for a premium cockpit feel. 
+- Overlays: Subtle noise overlay and dot-grid pattern for texture.
+- Header (Cockpit Telemetry): 
+  - Left: Title "Study Tools" with subtle badging.
+  - Right: Global Branch (CS, EC, ME, CE, EE) and Semester (1-8) selector dropdowns.
+  - Bottom Row: Live Telemetry Indicators displaying real-time metrics for CGPA (10.0 Scale), Attendance (Safe/At Risk), Labs Tracked, and Current SGPA.
+- Main Navigation: "Dynamic Workspace Switcher" pill-bar that allows horizontal scrolling on mobile. It contains 5 primary workspace tabs.
+
+2. WORKSPACE 1: ATTENDANCE & CIE
+-------------------------------------------------------------
+A. Attendance Tracker
+- Design: List of subjects with input fields/steppers for "Classes Attended" and "Total Classes".
+- Interaction: 
+  - Adjusting numbers immediately recalculates the attendance percentage.
+  - Color-coding dynamically changes (Green for >75%, Red for <75%).
+  
+B. Internal Marks (CIE) Planner
+- Design: A side drawer or expanding card.
+- Interaction: Users input their Series 1, Series 2, and Assignment marks to predict their final internal score out of 50.
+
+3. WORKSPACE 2: GRADES & ESE
+-------------------------------------------------------------
+A. Advanced SGPA / CGPA Calculator
+- Design: Embedded robust calculator component. Toggle between SGPA and CGPA modes.
+- Interaction: Input grades (S, A+, A, B+, B, C+, C, D, P, F) for dynamically fetched subjects to instantly see the SGPA.
+
+B. Target SGPA Allocator (Reverse Calculator)
+- Design: A dedicated drawer interface.
+- Interaction: User inputs a "Target SGPA" (e.g., 8.5). An algorithmic engine recursively calculates and outputs the exact combination of letter grades required in the current semester's subjects to achieve that target.
+
+C. 2024 Scheme Pass/Fail Sandbox
+- Design: A simulation card.
+- Interaction: User enters their internal (CIE) marks. The tool outputs the exact End Semester Exam (ESE) marks required to pass under the strict 2024 scheme rules (e.g., minimum 40% combined, minimum 40% in ESE).
+
+4. WORKSPACE 3: GRADUATION & ACTIVITY
+-------------------------------------------------------------
+A. 120 Activity Points Tracker
+- Design: A complex 3-tab interface (Calculator, Guide, Rules).
+- Interaction: 
+  - Users select their student type (Regular, Lateral, PWD) to set the target (120, etc.).
+  - Users can browse a comprehensive directory of KTU-approved activities (NSS, Sports, Tech-Fests) categorized by Groups (I, II, III) and Levels (College, State, National).
+  - Adding an activity adds its specific points to a running progress bar.
+
+B. Year-Back Progression Checker
+- Design: A step-by-step credit evaluation card.
+- Interaction: Evaluates earned credits against KTU's strict progression rules (e.g., minimum credits required to enter S5 or S7) to warn users about potential year-backs.
+
+C. Honours / Minors Eligibility
+- Design: A criteria checklist card.
+- Interaction: Evaluates current CGPA (usually must be >= 8.0 or 8.5) and no current backlogs to determine if the user can register for an Honours degree.
+
+5. WORKSPACE 4: EXAM PREP
+-------------------------------------------------------------
+A. Smart Subject Flashcards
+- Design: A flip-card interface.
+- Interaction: Automatically generates contextual Q&A flashcards based on the selected subject's syllabus modules to aid in rapid revision.
+
+B. Exam Slot & Timetable Helper
+- Design: A visual slot mapper.
+- Interaction: Displays KTU's standard A, B, C, D, E, F exam slot groupings to help users plan their study schedule and identify consecutive exam days.
+
+6. WORKSPACE 5: LAB TRACKER
+-------------------------------------------------------------
+A. Lab Experiments Checklist
+- Design: A detailed accordion-style list of lab subjects pre-populated with actual KTU syllabus experiments.
+- Interaction: 
+  - Users can track the granular status of every individual experiment using 4 distinct checkboxes:
+    1. Logic/Execution (Logic)
+    2. Record Written (Record)
+    3. Viva Completed (Viva)
+    4. Faculty Signed (Signed)
+  - Visual progress bars update as checkboxes are ticked.
