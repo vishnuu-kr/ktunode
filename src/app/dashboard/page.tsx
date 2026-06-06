@@ -451,6 +451,44 @@ function DashboardContent() {
     setMounted(true);
   }, []);
 
+  // Determine initial view state on mount based on URL to prevent dashboard flashing
+  useEffect(() => {
+    const qParams = new URLSearchParams(window.location.search);
+    let subjectId = qParams.get("subject");
+    let topicId = qParams.get("topic");
+    const segments = window.location.pathname.split("/").filter(Boolean);
+    if (segments[0] === "notes") {
+      if (segments.length === 4) {
+        if (!subjectId) subjectId = segments[3];
+      }
+    } else {
+      if (segments.length === 3) {
+        if (!subjectId) subjectId = segments[2];
+      } else if (segments.length === 4) {
+        if (!subjectId) subjectId = segments[2];
+        if (!topicId) topicId = segments[3];
+      }
+    }
+
+    if (topicId && subjectId) {
+      setView("topic");
+    } else if (subjectId) {
+      setView("subject");
+    } else {
+      setView("dashboard");
+    }
+  }, []);
+
+  // Reset scroll position on view transitions
+  useEffect(() => {
+    if (mainScrollContainerRef.current) {
+      mainScrollContainerRef.current.scrollTo({ top: 0 });
+    }
+    if (topicScrollContainerRef.current) {
+      topicScrollContainerRef.current.scrollTo({ top: 0 });
+    }
+  }, [view, selectedSubject, selectedTopic]);
+
   useEffect(() => {
     const cacheKey = `${branch}_${sem}`;
     if (clientSubjectsCache[cacheKey]) {
@@ -1083,7 +1121,7 @@ function DashboardContent() {
 
   // Sync initial query params deep linking
   useEffect(() => {
-    if (!isLoaded) return;
+    if (!isLoaded || loadingSubjects) return;
     const qParams = new URLSearchParams(window.location.search);
     const openAuth = qParams.get("auth");
     const openProfile = qParams.get("profile");
@@ -1119,6 +1157,8 @@ function DashboardContent() {
       }
     }
 
+    let resolved = false;
+
     if (topicId && subjectId) {
       const targetSub = subjects.find(s => s.id.toLowerCase() === subjectId.toLowerCase());
       if (targetSub) {
@@ -1127,6 +1167,7 @@ function DashboardContent() {
           setSelectedSubject(targetSub);
           setSelectedTopic(targetTop);
           setView("topic");
+          resolved = true;
         }
       }
     } else if (subjectId) {
@@ -1134,9 +1175,18 @@ function DashboardContent() {
       if (targetSub) {
         setSelectedSubject(targetSub);
         setView("subject");
+        resolved = true;
       }
     }
-  }, [isLoaded, subjects, branch, sem, params]);
+
+    // Fallback to dashboard if a deep link was specified but could not be resolved
+    if ((subjectId || topicId) && !resolved) {
+      setView("dashboard");
+      setSelectedSubject(null);
+      setSelectedTopic(null);
+      window.history.replaceState({}, "", cleanPath);
+    }
+  }, [isLoaded, loadingSubjects, subjects, branch, sem, params]);
 
   // Listen to popstate for browser back button syncing
   useEffect(() => {
@@ -1552,7 +1602,7 @@ function DashboardContent() {
       >
         <div className="w-full pt-28 scroll-pt-28 lg:pt-0 lg:scroll-pt-0 flex flex-col flex-1 h-full">
           <AnimatePresence mode="wait">
-          {isTransitioning && (
+          {(isTransitioning || (view !== "dashboard" && ((view === "subject" && !selectedSubject) || (view === "topic" && !selectedTopic)))) && (
             <motion.div
               key="skeleton"
               initial={{ opacity: 0, y: 15 }}
