@@ -336,8 +336,8 @@ export default function AudioNoteReader({
 
 
   return (
-    <div className="max-w-3xl mx-auto px-4 md:px-0 mb-6 sticky top-0 lg:top-[96px] z-40">
-      <div className="bg-slate-50/70 dark:bg-slate-950/45 backdrop-blur-md border border-slate-950/[0.04] dark:border-white/[0.04] rounded-2xl p-3 flex flex-wrap items-center justify-between gap-3 shadow-sm select-none">
+    <div className="max-w-3xl mx-auto px-4 md:px-0 mb-4 sticky top-0 lg:top-[96px] z-40">
+      <div className="bg-slate-50/70 dark:bg-slate-950/45 backdrop-blur-md border border-slate-950/[0.04] dark:border-white/[0.04] rounded-xl py-1.5 px-3 flex flex-wrap items-center justify-between gap-3 shadow-sm select-none">
         
         {/* Playback Controls */}
         <div className="flex items-center gap-2">
@@ -412,7 +412,7 @@ export default function AudioNoteReader({
         </div>
 
         {/* Speed & Progress Bar */}
-        <div className="flex items-center gap-4 flex-1 justify-center min-[480px]:justify-end min-w-0">
+        <div className="flex items-center gap-4 flex-1 justify-end min-w-0">
           {/* Progress bar (renders when playing) */}
           {isPlaying && (
             <div className="hidden md:flex flex-1 items-center gap-2 min-w-0">
