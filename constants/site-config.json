@@ -13,7 +13,11 @@
     1,
     2,
     3,
-    4
+    4,
+    5,
+    6,
+    7,
+    8
   ],
   "activeTools": {
     "attendance": true,
@@ -25,10 +29,20 @@
     "studentLogin": "https://app.ktu.edu.in",
     "ktuPortal": "https://ktu.edu.in"
   },
-  "bannerText": "🔔 S4 Supply Registration is live! Ensure all notes are fully reviewed before the exam.",
-  "bannerEnabled": false,
+  "bannerText": "🔔 KTU ALERT: B.Tech S4 Regular & Supplementary Examination Registration is open",
+  "bannerEnabled": true,
   "bannerSeverity": "info",
   "bannerDismissible": true,
+  "primaryAccent": "blue",
+  "lockdownMode": true,
+  "lockdownPasscode": "2105",
+  "minAttendance": 75,
+  "minCie": 40,
+  "activityPointsLimit": 120,
+  "progressionS5Credits": 26,
+  "progressionS7Credits": 52,
+  "examStartDate": "2026-07-15",
+  "timetableOverrides": {},
   "landingPageSections": {
     "compare": true,
     "howItWorks": true,
@@ -44,8 +58,5 @@
     "keywords": "KTU notes, KTU syllabus 2024 scheme, KTU previous year question papers, KTU B.Tech notes, KTU study materials, KTU PYQ, KTU S1 notes, KTU S2 notes, KTU S3 notes, KTU CSE notes 2024, KTU model question papers, KTU module wise notes, APJ Abdul Kalam Technological University syllabus, KTU exam preparation, KTUNODE, KTU 2024 scheme subjects, KTU chapter wise notes, Kerala Technological University"
   },
   "customFaqs": [],
-  "primaryAccent": "blue",
-  "lockdownMode": false,
-  "lockdownPasscode": "1234",
   "quickLinks": []
 }

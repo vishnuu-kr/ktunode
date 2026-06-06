@@ -568,7 +568,7 @@ export default function Home() {
 
         {/* ── Selector card ── */}
         <div
-          className="relative z-30 bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 max-w-3xl w-full animate-fade-up"
+          className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 max-w-3xl w-full animate-fade-up transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
           style={{
             animationDelay: "240ms",
             boxShadow: !mounted
