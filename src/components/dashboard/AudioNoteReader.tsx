@@ -337,7 +337,7 @@ export default function AudioNoteReader({
 
   return (
     <div className="max-w-3xl mx-auto px-4 md:px-0 mb-4 sticky top-0 lg:top-[96px] z-40">
-      <div className="bg-slate-50/70 dark:bg-slate-950/45 backdrop-blur-md border border-slate-950/[0.04] dark:border-white/[0.04] rounded-xl py-1.5 px-3 flex flex-wrap items-center justify-between gap-3 shadow-sm select-none">
+      <div className="bg-slate-50/70 dark:bg-slate-950/45 backdrop-blur-md border border-slate-950/[0.04] dark:border-white/[0.04] rounded-xl py-1.5 px-3 flex items-center justify-between gap-3 shadow-sm select-none relative overflow-hidden">
         
         {/* Playback Controls */}
         <div className="flex items-center gap-2">
@@ -399,59 +399,32 @@ export default function AudioNoteReader({
               </motion.button>
             </>
           )}
-
-
-
-          {/* Sparkly text indicator */}
-          {isPlaying && !isPaused && (
-            <div className="hidden min-[380px]:flex items-center gap-1 text-[10px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-500 animate-pulse ml-2.5">
-              <Sparkles className="w-3.5 h-3.5 text-blue-500 fill-current" />
-              <span>Reading aloud</span>
-            </div>
-          )}
         </div>
 
-        {/* Speed & Progress Bar */}
-        <div className="flex items-center gap-4 flex-1 justify-end min-w-0">
-          {/* Progress bar (renders when playing) */}
-          {isPlaying && (
-            <div className="hidden md:flex flex-1 items-center gap-2 min-w-0">
-              <div className="flex-1 h-1.5 bg-slate-950/[0.04] dark:bg-white/[0.04] rounded-full overflow-hidden relative">
-                <motion.div
-                  className="h-full bg-blue-500 rounded-full"
-                  style={{ width: `${progress}%` }}
-                  layoutId="audioProgress"
-                />
-              </div>
-              <span className="text-[10px] font-mono font-bold text-slate-400 tabular-nums shrink-0">{Math.round(progress)}%</span>
-            </div>
-          )}
+        {/* Speed preset selectors */}
+        <div className="flex items-center gap-1 bg-slate-950/[0.03] dark:bg-white/[0.03] p-0.5 rounded-xl border border-slate-950/[0.04] dark:border-white/[0.04] shrink-0">
+          {SPEED_OPTIONS.map((opt) => (
+            <button
+              key={opt}
+              onClick={() => handleSpeedChange(opt)}
+              className={`px-2 py-1 text-[10px] font-black rounded-lg cursor-pointer transition-all ${
+                rate === opt
+                  ? "bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm border border-slate-950/[0.04] dark:border-white/[0.04]"
+                  : "text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-350"
+              }`}
+            >
+              {opt}x
+            </button>
+          ))}
+        </div>
 
-          {/* Speed preset selectors */}
-          <div className="flex items-center gap-1 bg-slate-950/[0.03] dark:bg-white/[0.03] p-0.5 rounded-xl border border-slate-950/[0.04] dark:border-white/[0.04] shrink-0">
-            {SPEED_OPTIONS.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => handleSpeedChange(opt)}
-                className={`px-2 py-1 text-[10px] font-black rounded-lg cursor-pointer transition-all ${
-                  rate === opt
-                    ? "bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm border border-slate-950/[0.04] dark:border-white/[0.04]"
-                    : "text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-350"
-                }`}
-              >
-                {opt}x
-              </button>
-            ))}
+        {/* Integrated bottom progress line */}
+        {isPlaying && (
+          <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-slate-950/[0.04] dark:bg-white/[0.04]">
+            <div className="h-full bg-blue-500 transition-all duration-300" style={{ width: `${progress}%` }} />
           </div>
-        </div>
+        )}
       </div>
-      
-      {/* Mobile progress line */}
-      {isPlaying && (
-        <div className="w-full h-1 bg-slate-950/[0.02] dark:bg-white/[0.02] rounded-full overflow-hidden mt-1 md:hidden">
-          <div className="h-full bg-blue-500" style={{ width: `${progress}%` }} />
-        </div>
-      )}
     </div>
   );
 }
