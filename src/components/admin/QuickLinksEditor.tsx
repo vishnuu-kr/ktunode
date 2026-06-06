@@ -10,11 +10,12 @@ interface QuickLinkItem {
 }
 
 interface QuickLinksEditorProps {
+  secretParam: string;
   initialLinks: QuickLinkItem[];
-  saveLinksAction: (links: QuickLinkItem[]) => Promise<{ success: boolean; error?: string }>;
+  saveLinksAction: (secret: string, links: QuickLinkItem[]) => Promise<{ success: boolean; error?: string }>;
 }
 
-export default function QuickLinksEditor({ initialLinks, saveLinksAction }: QuickLinksEditorProps) {
+export default function QuickLinksEditor({ secretParam, initialLinks, saveLinksAction }: QuickLinksEditorProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [links, setLinks] = useState<QuickLinkItem[]>([]);
@@ -52,7 +53,7 @@ export default function QuickLinksEditor({ initialLinks, saveLinksAction }: Quic
 
     startTransition(async () => {
       try {
-        const res = await saveLinksAction(links);
+        const res = await saveLinksAction(secretParam, links);
         if (res.success) {
           setFeedback({ type: "success", message: "Student quick resources saved successfully!" });
           router.refresh();

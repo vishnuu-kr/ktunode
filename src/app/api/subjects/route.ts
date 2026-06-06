@@ -1,45 +1,40 @@
 import { type NextRequest } from "next/server";
+import fs from "fs";
 import path from "path";
 
-// Hide fs from static bundle tracing to prevent Turbopack warnings on dynamic path reads
-const fs = typeof window === "undefined" ? eval("require('fs')") : null;
+export const dynamic = "force-dynamic";
 
-const subjectsCache = new Map<string, any>();
+const allowedBranches = new Set(["cs", "ec", "me", "ce", "ee"]);
+const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
+
+function json(data: unknown, status = 200) {
+  return Response.json(data, {
+    status,
+    headers: {
+      "Cache-Control": "no-store, max-age=0",
+    },
+  });
+}
 
 export async function GET(request: NextRequest) {
-  const searchParams = request.nextUrl.searchParams;
-  const branch = searchParams.get("branch");
-  let sem = searchParams.get("sem");
+  const branch = request.nextUrl.searchParams.get("branch")?.toLowerCase();
+  const semParam = request.nextUrl.searchParams.get("sem")?.replace("sem-", "");
+  const sem = Number(semParam);
 
-  if (sem) {
-    sem = sem.replace("sem-", "");
-  }
-
-  if (!branch || !sem) {
-    return Response.json({ error: "Missing branch or sem parameters" }, { status: 400 });
-  }
-
-  const cacheKey = `${branch}-${sem}`;
-  if (subjectsCache.has(cacheKey)) {
-    return Response.json(subjectsCache.get(cacheKey));
+  if (!branch || !allowedBranches.has(branch) || !Number.isInteger(sem) || sem < 1 || sem > 8) {
+    return json({ error: "Missing or invalid branch or sem parameters" }, 400);
   }
 
   try {
-    const filePath = path.join(process.cwd(), "src", "data", "subjects", `${branch}-${sem}.json`);
-    
+    const filePath = path.join(subjectsDir, `${branch}-${sem}.json`);
+
     if (!fs.existsSync(filePath)) {
-      return Response.json([]);
+      return json([]);
     }
 
-    const fileContent = fs.readFileSync(filePath, "utf8");
-    const data = JSON.parse(fileContent);
-    
-    // Store in cache for future requests
-    subjectsCache.set(cacheKey, data);
-    
-    return Response.json(data);
+    return json(JSON.parse(fs.readFileSync(filePath, "utf8")));
   } catch (error: any) {
     console.error("Error loading subject metadata:", error);
-    return Response.json({ error: "Internal Server Error" }, { status: 500 });
+    return json({ error: "Internal Server Error" }, 500);
   }
 }

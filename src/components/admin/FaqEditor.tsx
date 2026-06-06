@@ -9,11 +9,12 @@ interface FaqItem {
 }
 
 interface FaqEditorProps {
+  secretParam: string;
   initialFaqs: FaqItem[];
-  saveFaqsAction: (faqs: FaqItem[]) => Promise<{ success: boolean; error?: string }>;
+  saveFaqsAction: (secret: string, faqs: FaqItem[]) => Promise<{ success: boolean; error?: string }>;
 }
 
-export default function FaqEditor({ initialFaqs, saveFaqsAction }: FaqEditorProps) {
+export default function FaqEditor({ secretParam, initialFaqs, saveFaqsAction }: FaqEditorProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [faqs, setFaqs] = useState<FaqItem[]>([]);
@@ -51,7 +52,7 @@ export default function FaqEditor({ initialFaqs, saveFaqsAction }: FaqEditorProp
 
     startTransition(async () => {
       try {
-        const res = await saveFaqsAction(faqs);
+        const res = await saveFaqsAction(secretParam, faqs);
         if (res.success) {
           setFeedback({ type: "success", message: "Custom FAQs saved successfully and homepage updated!" });
           router.refresh();

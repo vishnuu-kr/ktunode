@@ -1,10 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { revalidatePath } from "next/cache";
 import Link from "next/link";
 import { 
   Settings, Shield, AlertTriangle, CheckCircle, RefreshCw, 
-  Database, Bell, ArrowLeft, Heart, Calendar, BookOpen, HelpCircle
+  Database, Bell, ArrowLeft
 } from "lucide-react";
 import CmsPanel from "@/components/admin/CmsPanel";
 import KtuAnnouncementsList from "@/components/admin/KtuAnnouncementsList";
@@ -14,6 +13,7 @@ import JsonConfigEditor from "@/components/admin/JsonConfigEditor";
 import FaqEditor from "@/components/admin/FaqEditor";
 import QuickLinksEditor from "@/components/admin/QuickLinksEditor";
 import { getTimetable } from "@/lib/timetableData";
+import { readSiteConfig, siteConfigPath } from "@/lib/siteConfig";
 import { 
   saveNoteFile, 
   saveRawConfig, 
@@ -26,6 +26,8 @@ import {
 interface PageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
+
+export const dynamic = "force-dynamic";
 
 const configPath = path.join(process.cwd(), "constants", "site-config.json");
 
@@ -266,7 +268,7 @@ async function getKtuAnnouncements(): Promise<Announcement[]> {
       if ((href.toLowerCase().includes("attachments") || href.toLowerCase().includes("eu")) && text.length > 8) {
         let fullHref = href;
         if (href.startsWith("/")) {
-          fullHref = `https://ktu.edu.in{href}`;
+          fullHref = `https://ktu.edu.in${href}`;
         } else if (!href.startsWith("http")) {
           fullHref = `https://ktu.edu.in/eu/announcements/${href}`;
         }
@@ -336,8 +338,8 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
     );
   }
 
-  const config = getConfig();
-  const rawConfigString = fs.existsSync(configPath) ? fs.readFileSync(configPath, "utf8") : JSON.stringify(config, null, 2);
+  const config = readSiteConfig();
+  const rawConfigString = fs.existsSync(siteConfigPath) ? fs.readFileSync(siteConfigPath, "utf8") : JSON.stringify(config, null, 2);
   
   // Calculate notes folder size
   const notesDirPath = path.join(process.cwd(), "public", "notes");
@@ -615,18 +617,21 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
 
             {/* Dynamic FAQ Accordion Editor */}
             <FaqEditor
+              secretParam={secretParam as string}
               initialFaqs={config.customFaqs || []}
               saveFaqsAction={saveFaqOverride}
             />
 
             {/* Quick Links & Resource Manager */}
             <QuickLinksEditor
+              secretParam={secretParam as string}
               initialLinks={config.quickLinks || []}
               saveLinksAction={saveQuickLinksOverride}
             />
 
             {/* Raw JSON Configuration Editor */}
             <JsonConfigEditor
+              secretParam={secretParam as string}
               initialJson={rawConfigString}
               saveRawConfigAction={saveRawConfig}
             />
@@ -858,7 +863,8 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
                       { key: "faqs", label: "FAQ Section" },
                       { key: "cta", label: "CTA Banner" }
                     ].map(sec => {
-                      const isChecked = config.landingPageSections ? config.landingPageSections[sec.key] !== false : true;
+                      const sectionKey = sec.key as keyof typeof config.landingPageSections;
+                      const isChecked = config.landingPageSections ? config.landingPageSections[sectionKey] !== false : true;
                       return (
                         <label key={sec.key} className="flex items-center justify-between p-2.5 bg-black/10 rounded-xl border border-white/5 hover:bg-white/5 transition cursor-pointer">
                           <span className="text-xs text-gray-300 font-semibold">{sec.label}</span>

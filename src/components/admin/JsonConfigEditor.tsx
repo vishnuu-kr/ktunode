@@ -5,11 +5,13 @@ import { useRouter } from "next/navigation";
 import { Settings, Save, AlertCircle, CheckCircle2 } from "lucide-react";
 
 interface JsonConfigEditorProps {
+  secretParam: string;
   initialJson: string;
-  saveRawConfigAction: (jsonText: string) => Promise<{ success: boolean; error?: string }>;
+  saveRawConfigAction: (secret: string, jsonText: string) => Promise<{ success: boolean; error?: string }>;
 }
 
 export default function JsonConfigEditor({
+  secretParam,
   initialJson,
   saveRawConfigAction
 }: JsonConfigEditorProps) {
@@ -31,7 +33,7 @@ export default function JsonConfigEditor({
 
     startTransition(async () => {
       try {
-        const res = await saveRawConfigAction(jsonText);
+        const res = await saveRawConfigAction(secretParam, jsonText);
         if (res.success) {
           setFeedback({ type: "success", message: "Raw configuration saved and server cache purged!" });
           router.refresh();

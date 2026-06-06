@@ -4,23 +4,10 @@ import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { CSPostHogProvider } from "@/components/providers/PostHogProvider";
 import Script from "next/script";
-import fs from "fs";
-import path from "path";
 import { headers, cookies } from "next/headers";
 import LockdownGate from "@/components/ui/LockdownGate";
 import DismissibleBanner from "@/components/ui/DismissibleBanner";
-
-function getSiteConfig() {
-  try {
-    const configPath = path.join(process.cwd(), "constants", "site-config.json");
-    if (fs.existsSync(configPath)) {
-      return JSON.parse(fs.readFileSync(configPath, "utf8"));
-    }
-  } catch (e) {
-    console.error("Failed to read site-config.json in layout:", e);
-  }
-  return { bannerEnabled: false, bannerText: "", siteName: "KTU Node" };
-}
+import { parseKeywords, readSiteConfig, SITE_URL } from "@/lib/siteConfig";
 
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -47,22 +34,40 @@ export const viewport: Viewport = {
 };
 
 export async function generateMetadata(): Promise<Metadata> {
-  const config = getSiteConfig();
+  const config = readSiteConfig();
   const title = config.seo?.title || "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE";
   const description = config.seo?.description || "Free B.Tech module-wise KTU notes, previous year question papers, and syllabus tracker tailored for the 2024 scheme. CS, EC, ME, CE, EE — all semesters covered.";
   const keywordsStr = config.seo?.keywords || "KTU notes, KTU syllabus 2024 scheme, KTU previous year question papers, KTU B.Tech notes, KTU study materials, KTU PYQ, KTU S1 notes, KTU S2 notes, KTU S3 notes, KTU CSE notes 2024, KTU model question papers, KTU module wise notes, APJ Abdul Kalam Technological University syllabus, KTU exam preparation, KTUNODE, KTU 2024 scheme subjects, KTU chapter wise notes, Kerala Technological University";
-  const keywords = keywordsStr.split(",").map((k: string) => k.trim()).filter(Boolean);
+  const keywords = parseKeywords(keywordsStr);
 
   return {
-    metadataBase: new URL(
-      process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app"
-    ),
+    metadataBase: new URL(SITE_URL),
+    applicationName: "KTUNODE",
     manifest: "/manifest.json",
-    title,
+    title: {
+      default: title,
+      template: "%s | KTUNODE",
+    },
     description,
     keywords,
     authors: [{ name: "KTUNODE Team" }],
     creator: "KTUNODE",
+    publisher: "KTUNODE",
+    alternates: {
+      canonical: "/",
+    },
+    category: "education",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
     appleWebApp: {
       capable: true,
       statusBarStyle: "default",
@@ -75,7 +80,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: "./",
+      url: SITE_URL,
       siteName: "KTUNODE",
       locale: "en_US",
       type: "website",
@@ -109,7 +114,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
+  const siteUrl = SITE_URL;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -189,7 +194,7 @@ export default async function RootLayout({
     ],
   };
 
-  const config = getSiteConfig();
+  const config = readSiteConfig();
   const cookieStore = await cookies();
   const lockdownPasscode = config.lockdownPasscode || "1234";
 

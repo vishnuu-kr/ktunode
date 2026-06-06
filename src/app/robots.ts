@@ -1,12 +1,11 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/siteConfig";
 
 /**
  * Generates an optimized robots.txt file dynamically using the site URL
  * configured in process.env.NEXT_PUBLIC_SITE_URL.
  */
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
-
   return {
     rules: [
       // Default rule — allow everything except internal paths
@@ -76,6 +75,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }

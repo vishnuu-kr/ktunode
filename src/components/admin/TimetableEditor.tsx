@@ -18,7 +18,7 @@ interface TimetableEditorProps {
   initialExams: ExamSlot[];
   currentBranch: string;
   currentSem: number;
-  saveTimetableAction: (branch: string, sem: number, exams: ExamSlot[]) => Promise<{ success: boolean; error?: string }>;
+  saveTimetableAction: (secret: string, branch: string, sem: number, exams: ExamSlot[]) => Promise<{ success: boolean; error?: string }>;
 }
 
 export default function TimetableEditor({
@@ -87,7 +87,7 @@ export default function TimetableEditor({
 
     startTransition(async () => {
       try {
-        const res = await saveTimetableAction(branch, sem, exams);
+        const res = await saveTimetableAction(secretParam, branch, sem, exams);
         if (res.success) {
           setFeedback({ type: "success", message: `Exam timetable for ${branch.toUpperCase()} S${sem} updated successfully!` });
           router.refresh();

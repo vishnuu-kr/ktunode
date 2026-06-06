@@ -1,13 +1,15 @@
 import type { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
+import { readSiteConfig, SITE_URL } from "@/lib/siteConfig";
 
 /**
  * Dynamic sitemap generator that loops through all branches and semesters
  * and maps course layout structures using the local JSON schema data.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
+  const config = readSiteConfig();
+  const baseUrl = SITE_URL;
   const now = new Date().toISOString();
 
   // 1. Core static routes derived from src/app structure
@@ -42,10 +44,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/tools`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
-  const branches = ["cs", "ec", "me", "ce", "ee"];
-  const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
+  const branches = config.allowedBranches.length > 0 ? config.allowedBranches : ["cs", "ec", "me", "ce", "ee"];
+  const semesters = config.visibleSemesters.length > 0 ? config.visibleSemesters : [1, 2, 3, 4, 5, 6, 7, 8];
 
   // 2. Loop through local JSON index files to dynamically generate semester and subject routes
   for (const branch of branches) {
@@ -76,6 +84,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
                   changeFrequency: "weekly",
                   priority: 0.7,
                 });
+
+                if (Array.isArray(subject.modules)) {
+                  for (const mod of subject.modules) {
+                    if (!Array.isArray(mod.topics)) continue;
+                    for (const topic of mod.topics) {
+                      if (topic?.id) {
+                        routes.push({
+                          url: `${baseUrl}/${branch}/sem-${sem}/${subjectCode}/${topic.id}`,
+                          lastModified: now,
+                          changeFrequency: "monthly",
+                          priority: 0.55,
+                        });
+                      }
+                    }
+                  }
+                }
               }
             }
           }

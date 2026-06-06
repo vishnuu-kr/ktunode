@@ -1,88 +1,83 @@
 import { type NextRequest } from "next/server";
+import fs from "fs";
 import path from "path";
 
-// Hide fs from static bundle tracing to prevent Turbopack warnings on dynamic path reads
-const fs = typeof window === "undefined" ? eval("require('fs')") : null;
+export const dynamic = "force-dynamic";
 
-// Load path map once at module level (next-dev or production server reload will refresh it if changed)
-let topicPathMap: Record<string, string> | null = null;
+const topicMapPath = path.join(process.cwd(), "src", "data", "topic-path-map.json");
+const publicNotesRoot = path.join(process.cwd(), "public", "notes");
 
-// Memory cache for fully processed note markdown content
-const notesCache = new Map<string, string>();
+function json(data: unknown, status = 200) {
+  return Response.json(data, {
+    status,
+    headers: {
+      "Cache-Control": "no-store, max-age=0",
+    },
+  });
+}
 
-function getTopicPathMap() {
-  if (topicPathMap) return topicPathMap;
+function readTopicPathMap() {
   try {
-    const mapPath = path.join(process.cwd(), "src", "data", "topic-path-map.json");
-    if (fs.existsSync(mapPath)) {
-      const content = fs.readFileSync(mapPath, "utf8");
-      topicPathMap = JSON.parse(content);
+    if (fs.existsSync(topicMapPath)) {
+      return JSON.parse(fs.readFileSync(topicMapPath, "utf8")) as Record<string, string>;
     }
   } catch (error) {
     console.error("Failed to load topic-path-map.json", error);
   }
-  return topicPathMap || {};
+
+  return {};
+}
+
+function resolvePublicNotePath(relativePath: string) {
+  if (!relativePath.startsWith("notes/")) {
+    return null;
+  }
+
+  const fullPath = path.resolve(process.cwd(), "public", relativePath);
+  const relativeToNotes = path.relative(publicNotesRoot, fullPath);
+  if (relativeToNotes.startsWith("..") || path.isAbsolute(relativeToNotes)) {
+    return null;
+  }
+
+  return fullPath;
 }
 
 export async function GET(request: NextRequest) {
-  const searchParams = request.nextUrl.searchParams;
-  const id = searchParams.get("id");
+  const id = request.nextUrl.searchParams.get("id");
 
-  if (!id) {
-    return Response.json({ error: "Missing topic id parameter" }, { status: 400 });
-  }
-
-  // Return cached notes instantly
-  if (notesCache.has(id)) {
-    return Response.json({ content: notesCache.get(id) });
+  if (!id || !/^[a-z0-9][a-z0-9._-]*$/i.test(id)) {
+    return json({ error: "Missing or invalid topic id parameter" }, 400);
   }
 
   try {
-    const map = getTopicPathMap();
-    const relativePath = map[id];
-
+    const relativePath = readTopicPathMap()[id];
     if (!relativePath) {
-      return Response.json({ error: "Note not found in lookup mapping" }, { status: 404 });
+      return json({ error: "Note not found in lookup mapping" }, 404);
     }
 
-    // Validate that the relative path is scoped to notes folder for safety
-    if (!relativePath.startsWith("notes/")) {
-      return Response.json({ error: "Invalid path segment" }, { status: 400 });
+    const filePath = resolvePublicNotePath(relativePath);
+    if (!filePath) {
+      return json({ error: "Invalid path segment" }, 400);
     }
 
-    let fileContent: string;
-    const filePath = [process.cwd(), "public", relativePath].join(path.sep);
-
-    // Short-circuit loopback HTTP network request by reading directly from filesystem
-    if (fs.existsSync(filePath)) {
-      fileContent = fs.readFileSync(filePath, "utf8");
-    } else {
-      const host = request.headers.get("host") || "localhost:3000";
-      const protocol = host.startsWith("localhost") || host.startsWith("127.0.0.1") ? "http" : "https";
-      const noteUrl = `${protocol}://${host}/${relativePath}`;
-
-      const cdnResponse = await fetch(noteUrl);
-      if (!cdnResponse.ok) {
-        return Response.json({ 
-          error: `Failed to fetch note from CDN (${cdnResponse.status}): ${noteUrl}` 
-        }, { status: cdnResponse.status });
-      }
-      fileContent = await cdnResponse.text();
+    if (!fs.existsSync(filePath)) {
+      return json({ error: "Note file is mapped but missing on disk" }, 404);
     }
 
-    // Clean/strip YAML frontmatter
-    let markdown = fileContent;
+    if (path.extname(filePath).toLowerCase() === ".pdf") {
+      return json({
+        content: `[Open PDF note](/${relativePath})`,
+        path: `/${relativePath}`,
+      });
+    }
+
+    const fileContent = fs.readFileSync(filePath, "utf8");
     const frontmatterMatch = fileContent.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/);
-    if (frontmatterMatch) {
-      markdown = fileContent.substring(frontmatterMatch[0].length);
-    }
+    const markdown = frontmatterMatch ? fileContent.substring(frontmatterMatch[0].length) : fileContent;
 
-    // Cache the processed markdown content
-    notesCache.set(id, markdown);
-
-    return Response.json({ content: markdown });
+    return json({ content: markdown, path: `/${relativePath}` });
   } catch (error: any) {
     console.error("Error loading note content:", error);
-    return Response.json({ error: "Internal Server Error" }, { status: 500 });
+    return json({ error: "Internal Server Error" }, 500);
   }
 }

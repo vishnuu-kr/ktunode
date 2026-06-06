@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { redirect } from "next/navigation";
 import fs from "fs";
 import path from "path";
+import { SITE_URL } from "@/lib/siteConfig";
 
 interface Props {
   params: Promise<{
@@ -47,7 +48,6 @@ function findSubjectByCode(code: string) {
  */
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { code } = await params;
-  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
   
   const subject = findSubjectByCode(code);
   const subjectName = subject ? subject.name : "Course Details";
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Primary alphanumeric course code hierarchy first for student queries
   const title = `${courseCodeUpper} | ${subjectName} Notes & Tools | KTU Node`;
   const description = `Access comprehensive KTU study notes, previous year solved questions (PYQs), and syllabus tracker for ${courseCodeUpper} - ${subjectName} (2024 scheme) on KTU Node.`;
-  const canonicalUrl = `${siteUrl}/courses/${code.toLowerCase()}`;
+  const canonicalUrl = `${SITE_URL}/courses/${code.toLowerCase()}`;
 
   return {
     title,
