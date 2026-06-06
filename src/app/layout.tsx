@@ -3,6 +3,8 @@ import "./globals.css";
 import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { CSPostHogProvider } from "@/components/providers/PostHogProvider";
+import Script from "next/script";
+
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -185,7 +187,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
       <body className={`${plusJakartaSans.variable} ${outfit.variable} font-sans`} suppressHydrationWarning>
-        <script
+        <Script
+          id="json-ld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
@@ -197,17 +200,29 @@ export default function RootLayout({
             {children}
           </CSPostHogProvider>
         </ThemeProvider>
-        <script
+        <Script
+          id="register-sw"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js').then(function(reg) {
-                    console.log('ServiceWorker registered with scope: ', reg.scope);
-                  }).catch(function(err) {
-                    console.error('ServiceWorker registration failed: ', err);
+              if ('serviceWorker' in navigator) {
+                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for (var registration of registrations) {
+                      registration.unregister().then(function(boolean) {
+                        console.log('ServiceWorker unregistered from localhost:', boolean);
+                      });
+                    }
                   });
-                });
+                } else {
+                  window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(function(reg) {
+                      console.log('ServiceWorker registered with scope: ', reg.scope);
+                    }).catch(function(err) {
+                      console.error('ServiceWorker registration failed: ', err);
+                    });
+                  });
+                }
               }
             `
           }}
@@ -216,3 +231,4 @@ export default function RootLayout({
     </html>
   );
 }
+

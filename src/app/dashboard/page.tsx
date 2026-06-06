@@ -63,6 +63,10 @@ const BottomSheet = dynamic(() => import("@/components/dashboard/BottomSheet").t
   ssr: false
 });
 
+const AudioNoteReader = dynamic(() => import("@/components/dashboard/AudioNoteReader"), {
+  ssr: false
+});
+
 type ViewState = "dashboard" | "subject" | "topic";
 
 type TopicIndexItem = {
@@ -2087,6 +2091,11 @@ function DashboardContent() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
                     >
+                      <AudioNoteReader 
+                        content={noteContent} 
+                        topicTitle={selectedTopic.title} 
+                        triggerHaptic={triggerHaptic} 
+                      />
                       <MarkdownRenderer content={noteContent} stripH1={true} />
                     </motion.div>
                   )}

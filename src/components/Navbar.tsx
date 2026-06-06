@@ -1,14 +1,18 @@
 "use client";
 
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import { flushSync } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { ArrowRight, LayoutDashboard, UserRound, Sun, Moon, Wrench } from "lucide-react";
+import { ArrowRight, LayoutDashboard, UserRound, Wrench } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { useTheme } from "next-themes";
-import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import dynamic from "next/dynamic";
+
+const ThemeToggle = dynamic(() => import("@/components/ThemeToggle"), {
+  loading: () => <div className="w-10 h-10 sm:w-9 sm:h-9 shrink-0" />,
+  ssr: false
+});
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -17,62 +21,6 @@ export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const { scrollY } = useScroll();
-  const lastFired = useRef(0);
-
-  const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const toggleTheme = (e: React.MouseEvent) => {
-    const nextTheme = resolvedTheme === "dark" ? "light" : "dark";
-    
-    // Fallback to instant change if not supported or prefers-reduced-motion
-    if (
-      !document.startViewTransition ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      setTheme(nextTheme);
-      return;
-    }
-
-    const rect = e.currentTarget ? e.currentTarget.getBoundingClientRect() : null;
-    const x = rect ? rect.left + rect.width / 2 : (typeof window !== "undefined" ? window.innerWidth / 2 : 0);
-    const y = rect ? rect.top + rect.height / 2 : (typeof window !== "undefined" ? window.innerHeight / 2 : 0);
-
-    const transition = document.startViewTransition(() => {
-      flushSync(() => {
-        setTheme(nextTheme);
-      });
-    });
-
-    transition.ready.then(() => {
-      const w = window.innerWidth;
-      const h = window.innerHeight;
-      const radius = Math.max(
-        Math.hypot(x, y),
-        Math.hypot(w - x, y),
-        Math.hypot(x, h - y),
-        Math.hypot(w - x, h - y)
-      ) + 65;
-
-      document.documentElement.animate(
-        {
-          clipPath: [
-            `circle(0px at ${x}px ${y}px)`,
-            `circle(${radius}px at ${x}px ${y}px)`,
-          ],
-        },
-        {
-          duration: 650,
-          easing: "cubic-bezier(0.16, 1, 0.3, 1)",
-          pseudoElement: "::view-transition-new(root)",
-        }
-      );
-    });
-  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 24);
@@ -218,8 +166,6 @@ export default function Navbar() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  const isDashboardOrNotes = pathname?.startsWith("/dashboard") || pathname?.startsWith("/notes") || pathname?.includes("/sem-");
-
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] w-full pt-4 pb-2 sm:pt-4 sm:pb-3 transition-all duration-300 pointer-events-none">
       <motion.header
@@ -227,20 +173,9 @@ export default function Navbar() {
         animate={{ y: 0 }}
         className={`pointer-events-auto relative mx-auto flex w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl items-center justify-between rounded-full px-3.5 py-2.5 sm:px-6 sm:py-3 transition-all duration-300 overflow-visible ${
           scrolled
-            ? "bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800"
-            : "bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800/50"
+            ? "bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-[0_12px_40px_rgba(37,99,235,0.15)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.4)]"
+            : "bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800/50 shadow-[0_4px_16px_rgba(37,99,235,0.07)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.3)]"
         }`}
-        style={{
-          boxShadow: !mounted
-            ? undefined
-            : scrolled
-              ? resolvedTheme === "dark"
-                ? "0 12px 40px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3)"
-                : "0 12px 40px rgba(37,99,235,0.15), 0 4px 12px rgba(0,0,0,0.05)"
-              : resolvedTheme === "dark"
-                ? "0 4px 16px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.2)"
-                : "0 4px 16px rgba(37,99,235,0.07), 0 1px 3px rgba(0,0,0,0.04)",
-        }}
       >
         {/* Logo */}
         <Link href="/" onClick={handleLogoClick} className="flex items-center gap-1.5 sm:gap-2 group select-none">
@@ -260,24 +195,7 @@ export default function Navbar() {
       {/* Sign In & Dashboard controls */}
       <div className="flex items-center gap-1.5 sm:gap-3">
         {/* Dynamic Theme Toggle Button */}
-        {mounted ? (
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={toggleTheme}
-            className="flex h-10 w-10 sm:h-9 sm:w-9 items-center justify-center rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-slate-600 dark:text-slate-300 shadow-sm transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer shrink-0"
-            aria-label="Toggle dark mode"
-            title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
-          >
-            {resolvedTheme === "dark" ? (
-              <Sun className="h-4 w-4 text-amber-500 fill-amber-500/20" />
-            ) : (
-              <Moon className="h-4 w-4 text-slate-500 fill-slate-500/10" />
-            )}
-          </motion.button>
-        ) : (
-          <div className="w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 opacity-40 shrink-0" />
-        )}
+        <ThemeToggle />
 
         {pathname.startsWith("/dashboard") && (
           <>
@@ -303,6 +221,8 @@ export default function Navbar() {
                 aria-label="Sign In"
               >
                 <motion.div
+                  onPointerDownCapture={(e) => e.stopPropagation()}
+                  onTouchStartCapture={(e) => e.stopPropagation()}
                   variants={{
                     hover: { rotate: [0, -8, 8, -8, 8, 0], transition: { duration: 0.45 } }
                   }}

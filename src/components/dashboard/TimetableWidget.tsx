@@ -20,8 +20,8 @@ interface TimetableWidgetProps {
 function TimetableWidget({ timetable, sem, branch }: TimetableWidgetProps) {
   const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; mins: number; secs: number } | null>(null);
 
-  // Memoize sorted exams and next exam to stabilize references across renders
-  const { sortedExams, nextExam } = useMemo(() => {
+  // Memoize next exam to stabilize references across renders
+  const nextExam = useMemo(() => {
     const now = new Date();
     const sorted = [...timetable]
       .map((slot) => {
@@ -38,7 +38,7 @@ function TimetableWidget({ timetable, sem, branch }: TimetableWidgetProps) {
       .filter((exam) => exam.parsedDate.getTime() > now.getTime())
       .sort((a, b) => a.parsedDate.getTime() - b.parsedDate.getTime());
 
-    return { sortedExams: sorted, nextExam: sorted[0] || null };
+    return sorted[0] || null;
   }, [timetable]);
 
   // Live timer countdown ticker
