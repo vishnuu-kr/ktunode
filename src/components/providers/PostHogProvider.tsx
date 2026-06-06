@@ -6,11 +6,11 @@ import { useEffect, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 
 if (typeof window !== 'undefined') {
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   const key = process.env.NEXT_PUBLIC_POSTHOG_KEY;
   const host = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
   
-  if (key) {
-    console.log("Initializing PostHog with key:", key.substring(0, 8) + "...");
+  if (key && !isLocalhost) {
     posthog.init(key, {
       api_host: '/ingest',
       ui_host: host,
@@ -30,7 +30,8 @@ function PostHogPageView() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (pathname && typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (pathname && typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY && !isLocalhost) {
       let url = window.origin + pathname;
       if (searchParams.toString()) {
         url = url + `?${searchParams.toString()}`;
