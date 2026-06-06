@@ -30,6 +30,7 @@ export default function AudioNoteReader({
   const isWaitingBetweenSegmentsRef = useRef<boolean>(false);
   const totalLengthRef = useRef<number>(0);
   const segmentStartIndicesRef = useRef<number[]>([]);
+  const currentSegmentIndexRef = useRef<number>(0);
 
   // Split cleaned text into readable segments with appropriate pauses
   const getSpeechSegments = (md: string, title: string): { text: string; pauseMs: number }[] => {
@@ -122,6 +123,12 @@ export default function AudioNoteReader({
       playTimeoutRef.current = null;
     }
 
+    if (utteranceRef.current) {
+      utteranceRef.current.onend = null;
+      utteranceRef.current.onerror = null;
+      utteranceRef.current.onboundary = null;
+    }
+
     window.speechSynthesis.cancel();
 
     if (index >= segmentsRef.current.length) {
@@ -129,11 +136,13 @@ export default function AudioNoteReader({
       setIsPaused(false);
       setProgress(100);
       setCurrentSegmentIndex(0);
+      currentSegmentIndexRef.current = 0;
       setTimeout(() => setProgress(0), 1000);
       return;
     }
 
     setCurrentSegmentIndex(index);
+    currentSegmentIndexRef.current = index;
     
     // Set initial segment progress for visual feedback
     const segmentStart = segmentStartIndicesRef.current[index] || 0;
@@ -195,11 +204,19 @@ export default function AudioNoteReader({
       clearTimeout(playTimeoutRef.current);
       playTimeoutRef.current = null;
     }
+
+    if (utteranceRef.current) {
+      utteranceRef.current.onend = null;
+      utteranceRef.current.onerror = null;
+      utteranceRef.current.onboundary = null;
+    }
+
     window.speechSynthesis.cancel();
     setIsPlaying(false);
     setIsPaused(false);
     setProgress(0);
     setCurrentSegmentIndex(0);
+    currentSegmentIndexRef.current = 0;
     isWaitingBetweenSegmentsRef.current = false;
   }
 
@@ -225,7 +242,7 @@ export default function AudioNoteReader({
     
     if (isWaitingBetweenSegmentsRef.current) {
       isWaitingBetweenSegmentsRef.current = false;
-      playSegment(currentSegmentIndex + 1);
+      playSegment(currentSegmentIndexRef.current + 1);
     } else {
       window.speechSynthesis.resume();
       setTimeout(() => {
@@ -246,8 +263,15 @@ export default function AudioNoteReader({
         clearTimeout(playTimeoutRef.current);
         playTimeoutRef.current = null;
       }
+
+      if (utteranceRef.current) {
+        utteranceRef.current.onend = null;
+        utteranceRef.current.onerror = null;
+        utteranceRef.current.onboundary = null;
+      }
+
       const savedIsPaused = isPaused;
-      playSegment(currentSegmentIndex, rate, nextMute);
+      playSegment(currentSegmentIndexRef.current, rate, nextMute);
       if (savedIsPaused) {
         window.speechSynthesis.pause();
       }
@@ -263,8 +287,15 @@ export default function AudioNoteReader({
         clearTimeout(playTimeoutRef.current);
         playTimeoutRef.current = null;
       }
+
+      if (utteranceRef.current) {
+        utteranceRef.current.onend = null;
+        utteranceRef.current.onerror = null;
+        utteranceRef.current.onboundary = null;
+      }
+
       const savedIsPaused = isPaused;
-      playSegment(currentSegmentIndex, newRate, muted);
+      playSegment(currentSegmentIndexRef.current, newRate, muted);
       if (savedIsPaused) {
         window.speechSynthesis.pause();
       }
@@ -289,6 +320,11 @@ export default function AudioNoteReader({
     
     return () => {
       if (typeof window !== "undefined") {
+        if (utteranceRef.current) {
+          utteranceRef.current.onend = null;
+          utteranceRef.current.onerror = null;
+          utteranceRef.current.onboundary = null;
+        }
         window.speechSynthesis.cancel();
       }
       if (playTimeoutRef.current) {
@@ -296,6 +332,7 @@ export default function AudioNoteReader({
       }
     };
   }, [content, topicTitle]);
+
 
 
   return (
