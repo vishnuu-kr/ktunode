@@ -22,72 +22,131 @@ export default function AudioNoteReader({
   const [rate, setRate] = useState(1.0);
   const [progress, setProgress] = useState(0);
   const [muted, setMuted] = useState(false);
+  const [currentSegmentIndex, setCurrentSegmentIndex] = useState(0);
   
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
-  const cleanedTextRef = useRef<string>("");
+  const segmentsRef = useRef<{ text: string; pauseMs: number }[]>([]);
+  const playTimeoutRef = useRef<any>(null);
+  const isWaitingBetweenSegmentsRef = useRef<boolean>(false);
   const totalLengthRef = useRef<number>(0);
+  const segmentStartIndicesRef = useRef<number[]>([]);
 
-  // Clean markdown content to produce readable natural prose
-  const getCleanedText = (md: string): string => {
-    let text = md;
+  // Split cleaned text into readable segments with appropriate pauses
+  const getSpeechSegments = (md: string, title: string): { text: string; pauseMs: number }[] => {
+    const segments: { text: string; pauseMs: number }[] = [];
 
-    // 1. Remove code blocks
-    text = text.replace(/```[\s\S]*?```/g, " [code block omitted] ");
+    // Add the title first with a long pause
+    if (title) {
+      segments.push({ text: title, pauseMs: 1200 });
+    }
 
-    // 2. Remove block math ($$...$$)
-    text = text.replace(/\$\$[\s\S]*?\$\$/g, " [mathematical formula] ");
+    if (!md) return segments;
 
-    // 3. Remove inline math ($...$)
-    text = text.replace(/\$[^\$\n]+?\$/g, " [formula] ");
+    // Split by newlines to separate blocks/paragraphs
+    const blocks = md.split(/\n+/);
 
-    // 4. Remove tables
-    text = text.replace(/\|[\s\S]*?\|(?=\n|$)/g, " ");
+    for (const block of blocks) {
+      let cleanBlock = block.trim();
+      if (!cleanBlock) continue;
 
-    // 5. Remove images
-    text = text.replace(/!\[.*?\]\(.*?\)/g, " ");
+      // Determine pause after this block (paragraphs or headings get longer pauses)
+      let basePause = 650; // paragraph pause
+      let isHeader = false;
 
-    // 6. Remove HTML tags
-    text = text.replace(/<[^>]*>/g, " ");
+      if (cleanBlock.startsWith('#')) {
+        isHeader = true;
+        basePause = 1000; // longer pause for headers
+      }
 
-    // 7. Remove markdown headings and formatting
-    text = text.replace(/#{1,6}\s+/g, " ");
-    text = text.replace(/\*\*|__|\*|_|`/g, "");
-    
-    // 8. Clean up lists and bullet points
-    text = text.replace(/^\s*[-*+]\s+/gm, " ");
-    text = text.replace(/^\s*\d+\.\s+/gm, " ");
+      // Clean block
+      // 1. Remove code blocks
+      if (cleanBlock.startsWith('```') || cleanBlock.endsWith('```')) {
+        continue;
+      }
+      
+      // 2. Remove inline code and formatting
+      cleanBlock = cleanBlock.replace(/`[^`]+`/g, "");
+      
+      // 3. Remove math formulas
+      cleanBlock = cleanBlock.replace(/\$\$[\s\S]*?\$\$/g, "");
+      cleanBlock = cleanBlock.replace(/\$[^\$\n]+?\$/g, "");
+      
+      // 4. Skip tables entirely
+      if (cleanBlock.startsWith('|')) {
+        continue;
+      }
 
-    // 9. Normalize whitespace
-    text = text.replace(/\s+/g, " ").trim();
+      // 5. Remove markdown formatting
+      cleanBlock = cleanBlock.replace(/!\[.*?\]\(.*?\)/g, ""); // images
+      cleanBlock = cleanBlock.replace(/\[(.*?)\]\(.*?\)/g, "$1"); // links: keep text
+      cleanBlock = cleanBlock.replace(/<[^>]*>/g, ""); // HTML tags
+      cleanBlock = cleanBlock.replace(/^#{1,6}\s+/g, ""); // headers
+      cleanBlock = cleanBlock.replace(/\*\*|__|\*|_/g, ""); // bold/italic
+      
+      // 6. Clean list item markers
+      cleanBlock = cleanBlock.replace(/^[-*+]\s+/g, "");
+      cleanBlock = cleanBlock.replace(/^\d+\.\s+/g, "");
+      
+      // Normalize space
+      cleanBlock = cleanBlock.replace(/\s+/g, " ").trim();
 
-    return text;
+      if (!cleanBlock) continue;
+
+      // If it's a header or very short block, don't split it further
+      if (isHeader || cleanBlock.length < 80) {
+        segments.push({ text: cleanBlock, pauseMs: basePause });
+      } else {
+        // Split cleanBlock into sentences by punctuation followed by spaces (. ? !)
+        const sentences = cleanBlock.split(/(?<=[.?!])\s+/);
+        for (let i = 0; i < sentences.length; i++) {
+          const sentence = sentences[i].trim();
+          if (!sentence) continue;
+
+          const isLastSentence = i === sentences.length - 1;
+          segments.push({
+            text: sentence,
+            pauseMs: isLastSentence ? basePause : 350 // sentence pause vs block pause
+          });
+        }
+      }
+    }
+
+    return segments;
   };
 
-  // Hoisted speech helper functions to ensure safe reference during mounting/effects
-  function stopSpeech() {
+  const playSegment = (index: number, activeRate = rate, activeMuted = muted) => {
     if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    setIsPlaying(false);
-    setIsPaused(false);
-    setProgress(0);
-  }
-
-  function startSpeech() {
-    if (typeof window === "undefined") return;
-
-    window.speechSynthesis.cancel(); // Stop any ongoing speech
-
-    const textToSpeak = cleanedTextRef.current;
-    if (!textToSpeak) return;
-
-    const utterance = new SpeechSynthesisUtterance(textToSpeak);
-    utteranceRef.current = utterance;
     
-    // Configure voice rate and volume
-    utterance.rate = rate;
-    utterance.volume = muted ? 0 : 1;
+    if (playTimeoutRef.current) {
+      clearTimeout(playTimeoutRef.current);
+      playTimeoutRef.current = null;
+    }
 
-    // Try to select a high-quality natural English voice if available
+    window.speechSynthesis.cancel();
+
+    if (index >= segmentsRef.current.length) {
+      setIsPlaying(false);
+      setIsPaused(false);
+      setProgress(100);
+      setCurrentSegmentIndex(0);
+      setTimeout(() => setProgress(0), 1000);
+      return;
+    }
+
+    setCurrentSegmentIndex(index);
+    
+    // Set initial segment progress for visual feedback
+    const segmentStart = segmentStartIndicesRef.current[index] || 0;
+    if (totalLengthRef.current > 0) {
+      setProgress((segmentStart / totalLengthRef.current) * 100);
+    }
+
+    const segment = segmentsRef.current[index];
+    const utterance = new SpeechSynthesisUtterance(segment.text);
+    utteranceRef.current = utterance;
+    utterance.rate = activeRate;
+    utterance.volume = activeMuted ? 0 : 1;
+
     const voices = window.speechSynthesis.getVoices();
     const englishVoice = voices.find(
       (v) => v.lang.startsWith("en-") && v.name.toLowerCase().includes("natural")
@@ -100,44 +159,81 @@ export default function AudioNoteReader({
       utterance.voice = englishVoice;
     }
 
-    // Set speech boundaries tracking for progress bar
     utterance.onboundary = (event) => {
       if (event.name === "word") {
         const charIdx = event.charIndex;
+        const absoluteCharIdx = segmentStart + charIdx;
         if (totalLengthRef.current > 0) {
-          const currentProgress = (charIdx / totalLengthRef.current) * 100;
+          const currentProgress = (absoluteCharIdx / totalLengthRef.current) * 100;
           setProgress(Math.min(100, currentProgress));
         }
       }
     };
 
     utterance.onend = () => {
-      setIsPlaying(false);
-      setIsPaused(false);
-      setProgress(100);
-      setTimeout(() => setProgress(0), 1000);
+      isWaitingBetweenSegmentsRef.current = true;
+      playTimeoutRef.current = setTimeout(() => {
+        isWaitingBetweenSegmentsRef.current = false;
+        playSegment(index + 1, activeRate, activeMuted);
+      }, segment.pauseMs);
     };
 
-    utterance.onerror = () => {
+    utterance.onerror = (e) => {
+      if (e.error === "interrupted" || e.error === "canceled") {
+        return;
+      }
       setIsPlaying(false);
       setIsPaused(false);
     };
 
+    window.speechSynthesis.speak(utterance);
+  };
+
+  function stopSpeech() {
+    if (typeof window === "undefined") return;
+    if (playTimeoutRef.current) {
+      clearTimeout(playTimeoutRef.current);
+      playTimeoutRef.current = null;
+    }
+    window.speechSynthesis.cancel();
+    setIsPlaying(false);
+    setIsPaused(false);
+    setProgress(0);
+    setCurrentSegmentIndex(0);
+    isWaitingBetweenSegmentsRef.current = false;
+  }
+
+  function startSpeech() {
     setIsPlaying(true);
     setIsPaused(false);
-    window.speechSynthesis.speak(utterance);
+    playSegment(0);
   }
 
   function pauseSpeech() {
     if (typeof window === "undefined") return;
+    if (playTimeoutRef.current) {
+      clearTimeout(playTimeoutRef.current);
+      playTimeoutRef.current = null;
+    }
     window.speechSynthesis.pause();
     setIsPaused(true);
   }
 
   function resumeSpeech() {
     if (typeof window === "undefined") return;
-    window.speechSynthesis.resume();
     setIsPaused(false);
+    
+    if (isWaitingBetweenSegmentsRef.current) {
+      isWaitingBetweenSegmentsRef.current = false;
+      playSegment(currentSegmentIndex + 1);
+    } else {
+      window.speechSynthesis.resume();
+      setTimeout(() => {
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
+      }, 50);
+    }
   }
 
   function toggleMute() {
@@ -145,39 +241,14 @@ export default function AudioNoteReader({
     setMuted(nextMute);
     triggerHaptic("light");
     
-    if (isPlaying && utteranceRef.current) {
-      // Chrome/Safari speech synthesis requires re-speaking to apply volume change live
-      const currentProgressRatio = progress / 100;
-      const charOffset = Math.floor(cleanedTextRef.current.length * currentProgressRatio);
-      const remainingText = cleanedTextRef.current.slice(charOffset);
-      
-      window.speechSynthesis.cancel();
-      
-      const utterance = new SpeechSynthesisUtterance(remainingText);
-      utteranceRef.current = utterance;
-      utterance.rate = rate;
-      utterance.volume = nextMute ? 0 : 1;
-      
-      const voices = window.speechSynthesis.getVoices();
-      const englishVoice = voices.find(v => v.lang.startsWith("en-")) || voices[0];
-      if (englishVoice) utterance.voice = englishVoice;
-      
-      utterance.onboundary = (event) => {
-        if (event.name === "word") {
-          const relativeCharIdx = event.charIndex;
-          const absoluteCharIdx = charOffset + relativeCharIdx;
-          setProgress(Math.min(100, (absoluteCharIdx / totalLengthRef.current) * 100));
-        }
-      };
-      
-      utterance.onend = () => {
-        setIsPlaying(false);
-        setIsPaused(false);
-        setProgress(0);
-      };
-      
-      window.speechSynthesis.speak(utterance);
-      if (isPaused) {
+    if (isPlaying) {
+      if (playTimeoutRef.current) {
+        clearTimeout(playTimeoutRef.current);
+        playTimeoutRef.current = null;
+      }
+      const savedIsPaused = isPaused;
+      playSegment(currentSegmentIndex, rate, nextMute);
+      if (savedIsPaused) {
         window.speechSynthesis.pause();
       }
     }
@@ -188,46 +259,31 @@ export default function AudioNoteReader({
     triggerHaptic("medium");
 
     if (isPlaying) {
-      const currentProgressRatio = progress / 100;
-      const charOffset = Math.floor(cleanedTextRef.current.length * currentProgressRatio);
-      const remainingText = cleanedTextRef.current.slice(charOffset);
-      
-      window.speechSynthesis.cancel();
-      
-      const utterance = new SpeechSynthesisUtterance(remainingText);
-      utteranceRef.current = utterance;
-      utterance.rate = newRate;
-      utterance.volume = muted ? 0 : 1;
-      
-      const voices = window.speechSynthesis.getVoices();
-      const englishVoice = voices.find(v => v.lang.startsWith("en-")) || voices[0];
-      if (englishVoice) utterance.voice = englishVoice;
-      
-      utterance.onboundary = (event) => {
-        if (event.name === "word") {
-          const relativeCharIdx = event.charIndex;
-          const absoluteCharIdx = charOffset + relativeCharIdx;
-          setProgress(Math.min(100, (absoluteCharIdx / totalLengthRef.current) * 100));
-        }
-      };
-      
-      utterance.onend = () => {
-        setIsPlaying(false);
-        setIsPaused(false);
-        setProgress(0);
-      };
-      
-      window.speechSynthesis.speak(utterance);
-      if (isPaused) {
+      if (playTimeoutRef.current) {
+        clearTimeout(playTimeoutRef.current);
+        playTimeoutRef.current = null;
+      }
+      const savedIsPaused = isPaused;
+      playSegment(currentSegmentIndex, newRate, muted);
+      if (savedIsPaused) {
         window.speechSynthesis.pause();
       }
     }
   }
 
   useEffect(() => {
-    cleanedTextRef.current = `${topicTitle}. ${getCleanedText(content)}`;
-    totalLengthRef.current = cleanedTextRef.current.length;
+    segmentsRef.current = getSpeechSegments(content, topicTitle);
     
+    // Calculate total character length and start indices for smooth progress
+    let totalChars = 0;
+    const startIndices: number[] = [];
+    for (const seg of segmentsRef.current) {
+      startIndices.push(totalChars);
+      totalChars += seg.text.length;
+    }
+    totalLengthRef.current = totalChars;
+    segmentStartIndicesRef.current = startIndices;
+
     // Reset reader if topic changes
     stopSpeech();
     
@@ -235,8 +291,12 @@ export default function AudioNoteReader({
       if (typeof window !== "undefined") {
         window.speechSynthesis.cancel();
       }
+      if (playTimeoutRef.current) {
+        clearTimeout(playTimeoutRef.current);
+      }
     };
   }, [content, topicTitle]);
+
 
   return (
     <div className="max-w-3xl mx-auto px-4 md:px-0 mb-6">
