@@ -522,6 +522,8 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
       throw new Error("Unauthorized config mutation attempt.");
     }
 
+    const currentConfig = getConfig();
+
     const visibleSems: number[] = [];
     for (let s = 1; s <= 8; s++) {
       if (formData.get(`sem_${s}`) === "on") {
@@ -561,7 +563,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
       progressionS5Credits: parseInt(formData.get("progressionS5Credits") as string, 10) || 26,
       progressionS7Credits: parseInt(formData.get("progressionS7Credits") as string, 10) || 52,
       examStartDate: formData.get("examStartDate") as string || "2026-07-15",
-      timetableOverrides: config.timetableOverrides || {},
+      timetableOverrides: currentConfig.timetableOverrides || {},
       landingPageSections: {
         compare: formData.get("section_compare") === "on",
         howItWorks: formData.get("section_howItWorks") === "on",
@@ -576,8 +578,8 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
         description: formData.get("seo_description") as string || "Free module-wise KTU notes, previous year question papers, and syllabus tracker...",
         keywords: formData.get("seo_keywords") as string || "KTU notes, KTU syllabus, ..."
       },
-      customFaqs: config.customFaqs || [],
-      quickLinks: config.quickLinks || []
+      customFaqs: currentConfig.customFaqs || [],
+      quickLinks: currentConfig.quickLinks || []
     };
 
     fs.writeFileSync(configPath, JSON.stringify(updated, null, 2), "utf8");
