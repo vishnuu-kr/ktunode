@@ -679,13 +679,13 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
             );
           case "h2":
             return (
-              <h2 key={idx} className="text-2xl font-black text-slate-900 dark:text-slate-100 mt-12 mb-4 tracking-tight">
+              <h2 key={idx} className={`text-2xl font-black text-slate-900 dark:text-slate-100 ${idx === 0 ? "mt-2" : "mt-12"} mb-4 tracking-tight`}>
                 {parseInline(block.text)}
               </h2>
             );
           case "h3":
             return (
-              <h3 key={idx} className="text-xl font-bold text-slate-800 dark:text-slate-200 mt-8 mb-3 tracking-tight">
+              <h3 key={idx} className={`text-xl font-bold text-slate-800 dark:text-slate-200 ${idx === 0 ? "mt-2" : "mt-8"} mb-3 tracking-tight`}>
                 {parseInline(block.text)}
               </h3>
             );

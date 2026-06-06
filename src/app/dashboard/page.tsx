@@ -2042,7 +2042,7 @@ function DashboardContent() {
                 }}
                 className="spotlight-card rounded-[2rem] md:rounded-[2.5rem] bg-white/96 dark:bg-slate-900/96 !overflow-visible min-h-[60vh] relative shadow-sm dark:shadow-[0_16px_50px_rgba(0,0,0,0.3)] pb-28 md:pb-32"
               >
-                <div className="mb-6 md:mb-8 border-b border-slate-100 dark:border-slate-800 pb-6 md:pb-8 pt-6 md:pt-8 flex items-start justify-between gap-4 max-w-3xl mx-auto px-4 md:px-0">
+                <div className="mb-4 md:mb-5 border-b border-slate-100 dark:border-slate-800 pb-4 md:pb-5 pt-6 md:pt-8 flex items-start justify-between gap-4 max-w-3xl mx-auto px-4 md:px-0">
                   <h1 
                     id="topic-heading"
                     ref={headingRef}
