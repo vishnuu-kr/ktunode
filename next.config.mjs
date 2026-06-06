@@ -30,6 +30,10 @@ const nextConfig = {
     '/api/subjects': ['./src/data/subjects/**/*'],
     '/api/subjects/route': ['./src/data/subjects/**/*'],
   },
+  outputFileTracingExcludes: {
+    '*': ['./public/notes/**/*'],
+    '**/*': ['./public/notes/**/*'],
+  },
 };
 
 export default nextConfig;
