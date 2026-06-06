@@ -202,7 +202,8 @@ function PremiumSelect({
   options,
   placeholder,
   icon: Icon,
-  hasError
+  hasError,
+  onOpenChange
 }: {
   value: string | number;
   onChange: (val: string | number) => void;
@@ -210,6 +211,7 @@ function PremiumSelect({
   placeholder: string;
   icon: React.ComponentType<{ className?: string }>;
   hasError?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }) {
   const [open, setOpen] = useState(false);
   const [focusedIndex, setFocusedIndex] = useState(-1);
@@ -217,10 +219,15 @@ function PremiumSelect({
   const triggerRef = useRef<HTMLButtonElement>(null);
   const listContainerRef = useRef<HTMLDivElement>(null);
 
+  const handleOpenChange = (newOpen: boolean) => {
+    setOpen(newOpen);
+    onOpenChange?.(newOpen);
+  };
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (ref.current && !ref.current.contains(event.target as Node)) {
-        setOpen(false);
+        handleOpenChange(false);
         setFocusedIndex(-1);
       }
     }
@@ -260,7 +267,7 @@ function PremiumSelect({
     if (!open) {
       if (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        setOpen(true);
+        handleOpenChange(true);
       }
       return;
     }
@@ -280,7 +287,7 @@ function PremiumSelect({
           const opt = options[focusedIndex];
           if (opt && !opt.disabled) {
             onChange(opt.value);
-            setOpen(false);
+            handleOpenChange(false);
             setFocusedIndex(-1);
             triggerRef.current?.focus();
           }
@@ -288,12 +295,12 @@ function PremiumSelect({
         break;
       case "Escape":
         e.preventDefault();
-        setOpen(false);
+        handleOpenChange(false);
         setFocusedIndex(-1);
         triggerRef.current?.focus();
         break;
       case "Tab":
-        setOpen(false);
+        handleOpenChange(false);
         setFocusedIndex(-1);
         break;
     }
@@ -307,7 +314,7 @@ function PremiumSelect({
         ref={triggerRef}
         type="button"
         onClick={(e) => {
-          setOpen(!open);
+          handleOpenChange(!open);
           triggerLandingHaptic("light", e);
         }}
         onKeyDown={handleKeyDown}
@@ -365,7 +372,7 @@ function PremiumSelect({
                     onClick={(e) => {
                       if (isDisabled) return;
                       onChange(opt.value);
-                      setOpen(false);
+                      handleOpenChange(false);
                       setFocusedIndex(-1);
                       triggerRef.current?.focus();
                       triggerLandingHaptic("medium", e);
@@ -392,6 +399,8 @@ export default function Home() {
   const { savedSession, saveSession, clearSession } = useSessionPersistence();
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSemester, setSelectedSemester] = useState<number | "">("");
+  const [branchOpen, setBranchOpen] = useState(false);
+  const [semOpen, setSemOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [siteConfig, setSiteConfig] = useState<any>(null);
 
@@ -570,7 +579,7 @@ export default function Home() {
           }}
         >
           {/* Branch */}
-          <div className="flex-1 w-full z-30">
+          <div className={`flex-1 w-full transition-all duration-250 ${branchOpen ? "z-50" : "z-30"}`}>
             <PremiumSelect
               value={selectedBranch}
               onChange={(val) => setSelectedBranch(String(val))}
@@ -580,11 +589,12 @@ export default function Home() {
               placeholder="Select Branch"
               icon={BookOpen}
               hasError={errorState && !selectedBranch}
+              onOpenChange={setBranchOpen}
             />
           </div>
 
           {/* Semester */}
-          <div className="flex-1 w-full z-20">
+          <div className={`flex-1 w-full transition-all duration-250 ${semOpen ? "z-50" : "z-20"}`}>
             <PremiumSelect
               value={selectedSemester}
               onChange={(val) => setSelectedSemester(val === "" ? "" : Number(val))}
@@ -599,6 +609,7 @@ export default function Home() {
               placeholder="Select Semester"
               icon={Calendar}
               hasError={errorState && !selectedSemester}
+              onOpenChange={setSemOpen}
             />
           </div>
 
