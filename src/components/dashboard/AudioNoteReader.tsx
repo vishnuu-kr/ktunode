@@ -10,7 +10,7 @@ interface AudioNoteReaderProps {
   triggerHaptic?: (type: "light" | "medium" | "heavy" | "success" | "warning") => void;
 }
 
-const SPEED_OPTIONS = [1.0, 1.25, 1.5, 1.75, 2.0];
+const SPEED_OPTIONS = [1.0, 1.5, 2.0];
 
 export default function AudioNoteReader({
   content,
@@ -400,22 +400,7 @@ export default function AudioNoteReader({
             </>
           )}
 
-          <div className="w-[1px] h-5 bg-slate-950/[0.06] dark:bg-white/[0.06] mx-1" />
 
-          {/* Mute toggle */}
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={toggleMute}
-            className={`h-9 w-9 rounded-xl flex items-center justify-center border transition-all cursor-pointer ${
-              muted 
-                ? "bg-red-500/10 text-red-600 border-red-500/20" 
-                : "bg-slate-950/[0.02] text-slate-500 border-transparent hover:border-slate-950/[0.06]"
-            }`}
-            title={muted ? "Unmute Audio" : "Mute Audio"}
-          >
-            {muted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-          </motion.button>
 
           {/* Sparkly text indicator */}
           {isPlaying && !isPaused && (
