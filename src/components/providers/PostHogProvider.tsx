@@ -10,11 +10,17 @@ if (typeof window !== 'undefined') {
   const host = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
   
   if (key) {
+    console.log("Initializing PostHog with key:", key.substring(0, 8) + "...");
     posthog.init(key, {
-      api_host: host,
+      api_host: '/ingest',
+      ui_host: host,
       person_profiles: 'identified_only',
       capture_pageview: false, // Handled manually below
       capture_heatmaps: true,
+      loaded: (ph) => {
+        console.log("PostHog initialized successfully!");
+        ph.capture('test_event_from_code');
+      }
     });
   }
 }

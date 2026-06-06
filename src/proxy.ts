@@ -6,6 +6,10 @@ export function proxy(request: NextRequest) {
   const url = request.nextUrl.clone();
   const pathname = url.pathname;
 
+  // Set header to allow layouts to read the path
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-pathname", pathname);
+
   if (pathname === '/dashboard') {
     const searchParams = url.searchParams;
     const branchParam = searchParams.get('branch');
@@ -69,9 +73,15 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL(finalUrlPath, request.url));
   }
 
-  return NextResponse.next();
+  return NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
 }
 
 export const config = {
-  matcher: '/dashboard',
+  matcher: [
+    "/((?!api|ingest|_next/static|_next/image|favicon.ico|.*\\.webp|.*\\.png|.*\\.js|.*\\.json).*)",
+  ],
 };
