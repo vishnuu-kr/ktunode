@@ -179,8 +179,10 @@ export function triggerLandingHaptic(
         sweepTone(550, 80, 0.09, 0.18);
         break;
       case "success":
-        playTone(587.33, 0, 0.12, "triangle", 0.08); 
-        playTone(880.00, 0.06, 0.32, "sine", 0.1);
+        // Premium ascending triple-chime chord (E5 [659.25 Hz] -> B5 [987.77 Hz] -> E6 [1318.51 Hz])
+        playTone(659.25, 0, 0.15, "triangle", 0.06); 
+        playTone(987.77, 0.08, 0.20, "sine", 0.08);
+        playTone(1318.51, 0.16, 0.35, "sine", 0.07);
         break;
       case "warning":
         sweepTone(220, 130, 0.12, 0.15);
@@ -213,6 +215,7 @@ function PremiumSelect({
   const [focusedIndex, setFocusedIndex] = useState(-1);
   const ref = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const listContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -232,6 +235,26 @@ function PremiumSelect({
       });
     }
   }, [open, options, value]);
+
+  // Accessibility: scroll active keyboard-focused item into view automatically
+  useEffect(() => {
+    if (open && focusedIndex >= 0 && listContainerRef.current) {
+      const container = listContainerRef.current;
+      const activeElement = container.children[focusedIndex] as HTMLElement;
+      if (activeElement) {
+        const containerTop = container.scrollTop;
+        const containerBottom = containerTop + container.clientHeight;
+        const elemTop = activeElement.offsetTop;
+        const elemBottom = elemTop + activeElement.offsetHeight;
+
+        if (elemTop < containerTop) {
+          container.scrollTop = elemTop;
+        } else if (elemBottom > containerBottom) {
+          container.scrollTop = elemBottom - container.clientHeight;
+        }
+      }
+    }
+  }, [focusedIndex, open]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (!open) {
@@ -264,6 +287,10 @@ function PremiumSelect({
         setOpen(false);
         setFocusedIndex(-1);
         triggerRef.current?.focus();
+        break;
+      case "Tab":
+        setOpen(false);
+        setFocusedIndex(-1);
         break;
     }
   };
@@ -311,7 +338,10 @@ function PremiumSelect({
             transition={{ duration: 0.15, ease: "easeOut" }}
             className="absolute z-50 w-full mt-2 top-full left-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl border border-blue-100 dark:border-slate-800 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] dark:shadow-[0_16px_48px_rgba(0,0,0,0.4)] py-2 overflow-hidden"
           >
-            <div className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-800">
+            <div 
+              ref={listContainerRef}
+              className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-800"
+            >
               {options.map((opt, index) => (
                 <button
                   key={opt.value}

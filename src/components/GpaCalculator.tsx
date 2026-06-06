@@ -17,6 +17,7 @@ import {
   GraduationCap
 } from "lucide-react";
 import ktu2024Scheme from "@/data/ktu_2024_scheme.json";
+import { triggerHaptic } from "@/lib/haptic";
 
 // Standard grade points mapping for KTU 2024 Scheme
 const DEFAULT_GRADE_POINTS: Record<string, number> = {
@@ -192,6 +193,7 @@ export default function GpaCalculator() {
 
   // Handle grade change
   const handleGradeChange = (semesterNum: number, subjectId: string, grade: string) => {
+    triggerHaptic("light");
     const updated = { ...semesters };
     updated[semesterNum] = updated[semesterNum].map(sub => 
       sub.id === subjectId ? { ...sub, grade } : sub
@@ -226,6 +228,7 @@ export default function GpaCalculator() {
     if (!window.confirm(`Are you sure you want to delete "${courseName}"?`)) {
       return;
     }
+    triggerHaptic("warning");
     const updated = { ...semesters };
     updated[semesterNum] = updated[semesterNum].filter(sub => sub.id !== subjectId)
       .map((sub, idx) => ({ ...sub, sno: idx + 1 })); // Re-sno
@@ -234,6 +237,7 @@ export default function GpaCalculator() {
 
   // Add a new empty subject
   const handleAddSubject = (semesterNum: number) => {
+    triggerHaptic("light");
     const updated = { ...semesters };
     const nextSno = (updated[semesterNum]?.length || 0) + 1;
     const newSub: ActiveSubject = {
@@ -265,6 +269,7 @@ export default function GpaCalculator() {
       return;
     }
 
+    triggerHaptic("medium");
     const updated = { ...semesters };
 
     if (activeTab === "presets") {
@@ -296,6 +301,7 @@ export default function GpaCalculator() {
   // Remove an entire semester card
   const handleRemoveSemester = (semesterNum: number) => {
     if (!confirm(`Are you sure you want to remove Semester ${semesterNum} card?`)) return;
+    triggerHaptic("warning");
     const updated = { ...semesters };
     delete updated[semesterNum];
     saveSemestersState(updated);
@@ -304,7 +310,7 @@ export default function GpaCalculator() {
   // Reset active configurations
   const handleReset = () => {
     if (!confirm("Are you sure you want to reset all grades for this calculator?")) return;
-    
+    triggerHaptic("warning");
     if (activeTab === "presets") {
       const branchSemesters = schemeData[selectedBranch];
       if (branchSemesters) {
@@ -426,6 +432,7 @@ export default function GpaCalculator() {
     if (!mounted) return;
     const cgpaVal = parseFloat(overallCalculations.cgpa);
     if (cgpaVal >= 9.0) {
+      triggerHaptic("success");
       import("canvas-confetti").then((mod) => {
         mod.default({
           particleCount: 60,
@@ -439,6 +446,7 @@ export default function GpaCalculator() {
 
   // Toggle semester cards
   const toggleSemester = (semNum: number) => {
+    triggerHaptic("light");
     setCollapsedSemesters(prev => ({
       ...prev,
       [semNum]: !prev[semNum]

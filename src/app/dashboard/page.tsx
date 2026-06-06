@@ -415,6 +415,9 @@ function DashboardContent() {
   const [pinnedTopicIds, setPinnedTopicIds] = useState<string[]>([]);
   const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>({});
   const [commandOpen, setCommandOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const topicScrollContainerRef = useRef<HTMLDivElement>(null);
+  const mainScrollContainerRef = useRef<HTMLElement>(null);
 
   const subjectShareUrl = React.useMemo(() => {
     if (typeof window === "undefined") return "";
@@ -505,6 +508,47 @@ function DashboardContent() {
       active = false;
     };
   }, [selectedTopic]);
+
+  // Scroll progress tracker for topic view state
+  useEffect(() => {
+    if (view !== "topic") {
+      setScrollProgress(0);
+      return;
+    }
+
+    const handleScroll = (e: Event) => {
+      const target = e.currentTarget as HTMLElement | null;
+      if (!target) return;
+      const scrollTop = target.scrollTop;
+      const scrollHeight = target.scrollHeight;
+      const clientHeight = target.clientHeight;
+      const totalScroll = scrollHeight - clientHeight;
+      if (totalScroll > 0) {
+        const progress = (scrollTop / totalScroll) * 100;
+        setScrollProgress(progress);
+      } else {
+        setScrollProgress(0);
+      }
+    };
+
+    const topicEl = topicScrollContainerRef.current;
+    const mainEl = mainScrollContainerRef.current;
+
+    if (topicEl) topicEl.addEventListener("scroll", handleScroll);
+    if (mainEl) mainEl.addEventListener("scroll", handleScroll);
+
+    // Initial check on load/update
+    if (topicEl && topicEl.scrollTop > 0) {
+      handleScroll({ currentTarget: topicEl } as any);
+    } else if (mainEl && mainEl.scrollTop > 0) {
+      handleScroll({ currentTarget: mainEl } as any);
+    }
+
+    return () => {
+      if (topicEl) topicEl.removeEventListener("scroll", handleScroll);
+      if (mainEl) mainEl.removeEventListener("scroll", handleScroll);
+    };
+  }, [view, selectedTopic, loadingNote]);
 
   // Sync selectedSubject and selectedTopic on list reload
   useEffect(() => {
@@ -679,8 +723,10 @@ function DashboardContent() {
           sweepTone(550, 80, 0.09, 0.18);
           break;
         case "success":
-          playTone(587.33, 0, 0.12, "triangle", 0.08); 
-          playTone(880.00, 0.06, 0.32, "sine", 0.1);
+          // Premium ascending triple-chime chord (E5 [659.25 Hz] -> B5 [987.77 Hz] -> E6 [1318.51 Hz])
+          playTone(659.25, 0, 0.15, "triangle", 0.06); 
+          playTone(987.77, 0.08, 0.20, "sine", 0.08);
+          playTone(1318.51, 0.16, 0.35, "sine", 0.07);
           break;
         case "warning":
           sweepTone(220, 130, 0.12, 0.15);
@@ -696,6 +742,12 @@ function DashboardContent() {
     }
   }, []);
   const [searchTerm, setSearchTerm] = useState("");
+  const [activeSearchIndex, setActiveSearchIndex] = useState(-1);
+
+  useEffect(() => {
+    setActiveSearchIndex(-1);
+  }, [searchTerm, commandOpen]);
+
   const [toast, setToast] = useState<string | null>(null);
 
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -1330,9 +1382,10 @@ function DashboardContent() {
         osc.stop(audioCtx.currentTime + start + duration);
       };
 
-      // Satisfying pop double chime (D5 pop then gentle A5 shine tone)
-      playTone(587.33, 0, 0.12, "triangle", 0.08); 
-      playTone(880.00, 0.06, 0.32, "sine", 0.1);
+      // Premium ascending triple-chime chord (E5 [659.25 Hz] -> B5 [987.77 Hz] -> E6 [1318.51 Hz])
+      playTone(659.25, 0, 0.15, "triangle", 0.06); 
+      playTone(987.77, 0.08, 0.20, "sine", 0.08);
+      playTone(1318.51, 0.16, 0.35, "sine", 0.07);
     } catch (e) {
       console.warn("Audio Context check chime failed", e);
     }
@@ -1379,6 +1432,31 @@ function DashboardContent() {
   const currentTopicIndex = selectedTopic ? flattenedTopics.findIndex((topic) => topic.id === selectedTopic.id) : -1;
   const prevTopic = currentTopicIndex > 0 ? flattenedTopics[currentTopicIndex - 1] : null;
   const nextTopic = currentTopicIndex < flattenedTopics.length - 1 ? flattenedTopics[currentTopicIndex + 1] : null;
+  const handleSearchKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const limit = Math.min(filteredTopics.length, 10);
+    if (limit === 0) return;
+
+    switch (e.key) {
+      case "ArrowDown":
+        e.preventDefault();
+        setActiveSearchIndex((prev) => (prev < limit - 1 ? prev + 1 : 0));
+        break;
+      case "ArrowUp":
+        e.preventDefault();
+        setActiveSearchIndex((prev) => (prev > 0 ? prev - 1 : limit - 1));
+        break;
+      case "Enter":
+        if (activeSearchIndex >= 0 && activeSearchIndex < limit) {
+          e.preventDefault();
+          const item = filteredTopics.slice(0, 10)[activeSearchIndex];
+          if (item) {
+            goTopic(item.topic, item.subject);
+          }
+        }
+        break;
+    }
+  };
+
   const skeletonCards = Array.from({ length: 4 }, (_, index) => index);
 
   return (
@@ -1403,7 +1481,17 @@ function DashboardContent() {
 
       <Navbar />
 
+      {view === "topic" && (
+        <div 
+          className="scroll-progress" 
+          style={{ width: `${scrollProgress}%` }} 
+          aria-hidden="true" 
+        />
+      )}
+
       <main 
+        id="main-content"
+        ref={mainScrollContainerRef}
         className="relative flex-1 w-full max-w-6xl mx-auto px-4 md:px-6 pt-24 lg:pt-0 scroll-pt-24 lg:scroll-pt-0 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
       >
         <AnimatePresence mode="wait">
@@ -1917,6 +2005,7 @@ function DashboardContent() {
           {!isTransitioning && view === "topic" && selectedTopic && (
             <motion.div
               key="topic"
+              ref={topicScrollContainerRef}
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
@@ -2173,6 +2262,7 @@ function DashboardContent() {
                   autoFocus
                   value={searchTerm}
                   onChange={(event) => setSearchTerm(event.target.value)}
+                  onKeyDown={handleSearchKeyDown}
                   placeholder="Search Deadlocks, Paging, SQL..."
                   className="flex-1 bg-transparent outline-none text-base font-bold text-slate-900 dark:text-slate-100 placeholder:text-slate-400"
                 />
@@ -2187,17 +2277,18 @@ function DashboardContent() {
                 {searchTerm.trim() !== "" && filteredTopics.length > 0 && (
                   <p className="px-3 pb-2 text-[10px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-widest">{filteredTopics.length} result{filteredTopics.length !== 1 ? 's' : ''} found</p>
                 )}
-                {filteredTopics.slice(0, 10).map((item) => {
+                {filteredTopics.slice(0, 10).map((item, index) => {
                   const query = searchTerm.trim().toLowerCase();
                   const title = item.topic.title;
                   const matchIdx = query ? title.toLowerCase().indexOf(query) : -1;
                   const done = isCompleted(item.topic.id);
+                  const isActiveSearch = activeSearchIndex === index;
                   return (
                     <button
                       type="button"
                       key={item.topic.id}
                       onClick={() => goTopic(item.topic, item.subject)}
-                      className="w-full flex items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-blue-50 dark:hover:bg-slate-800/50 transition-colors group"
+                      className={`w-full flex items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-blue-50 dark:hover:bg-slate-800/50 transition-colors group ${isActiveSearch ? 'bg-blue-50 dark:bg-slate-800/80 outline outline-2 outline-blue-500/80 outline-offset-[-2px]' : ''}`}
                     >
                       <div className={`h-10 w-10 rounded-xl grid place-items-center shrink-0 transition-colors ${done ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-450' : 'bg-blue-50 dark:bg-slate-800 text-blue-500 dark:text-blue-400 group-hover:bg-blue-100 group-hover:dark:bg-slate-700'}`}>
                         {done ? <CheckCircle2 className="w-4 h-4" /> : <BookOpen className="w-4 h-4" />}

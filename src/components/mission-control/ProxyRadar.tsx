@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Radar, Compass, AlertCircle } from "lucide-react";
+import { triggerHaptic } from "@/lib/haptic";
 
 type ProxyRadarProps = {
   slots: Record<string, { subject: string; professor: string; vibe: "saint" | "robot" | "boss" }>;
@@ -12,21 +13,20 @@ export default function ProxyRadar({ slots }: ProxyRadarProps) {
   const [classSize, setClassSize] = useState<"large" | "medium" | "small">("large");
   const [feasibility, setFeasibility] = useState(70);
 
-  const slotData = slots[selectedSlot] || { subject: `Slot ${selectedSlot}`, professor: "Staff", vibe: "robot" };
-
   // Calculate Proxy Feasibility
   useEffect(() => {
     let base = 45; // medium default
     if (classSize === "large") base = 70;
     if (classSize === "small") base = 10;
 
+    const vibe = slots[selectedSlot]?.vibe || "robot";
     let vCoeff = 1.0;
-    if (slotData.vibe === "saint") vCoeff = 1.4;
-    if (slotData.vibe === "boss") vCoeff = 0.2;
+    if (vibe === "saint") vCoeff = 1.4;
+    if (vibe === "boss") vCoeff = 0.2;
 
     const finalFeas = Math.min(Math.max(Math.round(base * vCoeff), 0), 100);
     setFeasibility(finalFeas);
-  }, [selectedSlot, classSize, slotData]);
+  }, [selectedSlot, classSize, slots]);
 
   const getFeasibilityLevel = (val: number) => {
     if (val >= 70) return { label: "HIGH SAFETY GHOST MODE", theme: "text-emerald-500 border-emerald-500/20 bg-emerald-500/[0.03]", desc: "Ghost Protocol active. Class size is large, roll call is rapid and professor is chill. Proxy footprint is fully masked." };
@@ -90,7 +90,10 @@ export default function ProxyRadar({ slots }: ProxyRadarProps) {
             <label className="text-[9px] font-black text-slate-400 uppercase tracking-widest block">Choose Class</label>
             <select
               value={selectedSlot}
-              onChange={(e) => setSelectedSlot(e.target.value)}
+              onChange={(e) => {
+                triggerHaptic("light");
+                setSelectedSlot(e.target.value);
+              }}
               className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-white/[0.04] rounded-xl px-2.5 py-1.5 text-[11px] font-bold text-slate-800 dark:text-white cursor-pointer"
             >
               {Object.keys(slots).map((slotKey) => (
@@ -108,7 +111,12 @@ export default function ProxyRadar({ slots }: ProxyRadarProps) {
                 <button
                   key={size}
                   type="button"
-                  onClick={() => setClassSize(size)}
+                  onClick={() => {
+                    if (size === "large") triggerHaptic("light");
+                    else if (size === "medium") triggerHaptic("medium");
+                    else triggerHaptic("warning");
+                    setClassSize(size);
+                  }}
                   className={`text-[9px] font-black uppercase tracking-wider py-1 rounded-lg cursor-pointer transition-all active:scale-[0.96] ${
                     classSize === size
                       ? "bg-slate-900 dark:bg-slate-800 text-white shadow-sm"

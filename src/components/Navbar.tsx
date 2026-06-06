@@ -38,9 +38,9 @@ export default function Navbar() {
       return;
     }
 
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = rect.left + rect.width / 2;
-    const y = rect.top + rect.height / 2;
+    const rect = e.currentTarget ? e.currentTarget.getBoundingClientRect() : null;
+    const x = rect ? rect.left + rect.width / 2 : (typeof window !== "undefined" ? window.innerWidth / 2 : 0);
+    const y = rect ? rect.top + rect.height / 2 : (typeof window !== "undefined" ? window.innerHeight / 2 : 0);
 
     const transition = document.startViewTransition(() => {
       flushSync(() => {
@@ -134,9 +134,9 @@ export default function Navbar() {
 
   const handleLogoClick = useCallback(async (e: React.MouseEvent) => {
     // Capture event properties synchronously before any await
-    const rect = e.currentTarget.getBoundingClientRect();
-    const originX = (rect.left + rect.width / 2) / (window.innerWidth || 1);
-    const originY = (rect.top + rect.height / 2) / (window.innerHeight || 1);
+    const rect = e.currentTarget ? e.currentTarget.getBoundingClientRect() : null;
+    const originX = rect ? (rect.left + rect.width / 2) / (window.innerWidth || 1) : 0.5;
+    const originY = rect ? (rect.top + rect.height / 2) / (window.innerHeight || 1) : 0.5;
 
     const now = Date.now();
     let currentCount = 1;
@@ -276,7 +276,7 @@ export default function Navbar() {
             )}
           </motion.button>
         ) : (
-          <div className="w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 bg-slate-50/50 opacity-40 shrink-0" />
+          <div className="w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 opacity-40 shrink-0" />
         )}
 
         {pathname.startsWith("/dashboard") && (

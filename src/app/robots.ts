@@ -1,17 +1,12 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://ktunode.com";
-
 /**
- * Generates an optimized robots.txt that:
- * - Allows all major search engine crawlers (Googlebot, Bingbot, etc.)
- * - Explicitly allows AI bots (GPTBot, ChatGPT-User, ClaudeBot, PerplexityBot, etc.)
- * - Blocks internal/framework paths that shouldn't be indexed
- * - Points crawlers to the sitemap
- *
- * Next.js serves this at /robots.txt at build time.
+ * Generates an optimized robots.txt file dynamically using the site URL
+ * configured in process.env.NEXT_PUBLIC_SITE_URL.
  */
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
+
   return {
     rules: [
       // Default rule — allow everything except internal paths
@@ -81,6 +76,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

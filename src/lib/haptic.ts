@@ -125,8 +125,10 @@ export function triggerHaptic(
         sweepTone(550, 80, 0.09, 0.18);
         break;
       case "success":
-        playTone(587.33, 0, 0.12, "triangle", 0.08); 
-        playTone(880.00, 0.06, 0.32, "sine", 0.1);
+        // Premium ascending triple-chime chord (E5 [659.25 Hz] -> B5 [987.77 Hz] -> E6 [1318.51 Hz])
+        playTone(659.25, 0, 0.15, "triangle", 0.06); 
+        playTone(987.77, 0.08, 0.20, "sine", 0.08);
+        playTone(1318.51, 0.16, 0.35, "sine", 0.07);
         break;
       case "warning":
         sweepTone(220, 130, 0.12, 0.15);

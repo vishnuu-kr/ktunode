@@ -501,6 +501,91 @@ function renderList(nodes: ListNode[]) {
   return <>{elements}</>;
 }
 
+function getLanguageDotColor(lang: string): string {
+  const l = (lang || "").toLowerCase();
+  if (l === "js" || l === "javascript") return "bg-amber-400";
+  if (l === "ts" || l === "typescript") return "bg-blue-500";
+  if (l === "py" || l === "python") return "bg-sky-500";
+  if (l === "html") return "bg-orange-500";
+  if (l === "css") return "bg-teal-400";
+  if (l === "cpp" || l === "c++") return "bg-indigo-400";
+  if (l === "c") return "bg-purple-400";
+  if (l === "java") return "bg-red-500";
+  if (l === "sql") return "bg-pink-500";
+  if (l === "bash" || l === "sh" || l === "shell") return "bg-emerald-400";
+  return "bg-slate-500";
+}
+
+function highlightCode(code: string, language: string): string {
+  let html = code
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  const lang = (language || "").toLowerCase();
+  
+  const commentTokens: string[] = [];
+  const stringTokens: string[] = [];
+  
+  if (lang === "js" || lang === "javascript" || lang === "ts" || lang === "typescript" || lang === "c" || lang === "cpp" || lang === "c++" || lang === "java" || lang === "go" || lang === "css" || lang === "scss") {
+    html = html.replace(/(\/\*[\s\S]*?\*\/)/g, (match) => {
+      commentTokens.push(match);
+      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
+    });
+    html = html.replace(/(\/\/.*)/g, (match) => {
+      commentTokens.push(match);
+      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
+    });
+  } else if (lang === "py" || lang === "python") {
+    html = html.replace(/(#.*)/g, (match) => {
+      commentTokens.push(match);
+      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
+    });
+  } else if (lang === "html" || lang === "xml" || lang === "svg") {
+    html = html.replace(/(&lt;!--[\s\S]*?--&gt;)/g, (match) => {
+      commentTokens.push(match);
+      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
+    });
+  }
+
+  if (lang !== "html" && lang !== "xml" && lang !== "svg") {
+    html = html.replace(/(["'`])([\s\S]*?)\1/g, (match) => {
+      stringTokens.push(match);
+      return `___TOKEN_STRING_${stringTokens.length - 1}___`;
+    });
+  }
+
+  if (lang === "js" || lang === "javascript" || lang === "ts" || lang === "typescript" || lang === "json") {
+    const keywords = /\b(const|let|var|function|return|if|else|for|while|do|switch|case|break|continue|export|import|from|default|class|extends|new|this|async|await|try|catch|finally|throw|typeof|instanceof|interface|type|public|private|protected|readonly|implements|as|any|string|number|boolean|void|null|undefined|true|false)\b/g;
+    html = html.replace(keywords, '<span class="text-pink-400 font-semibold">$1</span>');
+  } else if (lang === "py" || lang === "python") {
+    const keywords = /\b(def|return|if|elif|else|for|while|break|continue|import|from|as|class|try|except|finally|raise|assert|with|lambda|yield|global|nonlocal|pass|in|is|not|and|or|True|False|None)\b/g;
+    html = html.replace(keywords, '<span class="text-pink-400 font-semibold">$1</span>');
+  } else if (lang === "c" || lang === "cpp" || lang === "c++" || lang === "java" || lang === "go") {
+    const keywords = /\b(int|float|double|char|void|long|short|unsigned|signed|struct|class|union|enum|typedef|sizeof|if|else|for|while|do|switch|case|default|break|continue|return|const|static|extern|volatile|register|inline|public|private|protected|new|delete|this|friend|virtual|override|package|import|func|go|chan|map|select|range|nil|true|false)\b/g;
+    html = html.replace(keywords, '<span class="text-pink-400 font-semibold">$1</span>');
+  } else if (lang === "html" || lang === "xml" || lang === "svg") {
+    html = html.replace(/(&lt;\/?[a-zA-Z0-9:-]+)/g, '<span class="text-pink-400">$1</span>');
+    html = html.replace(/(\s[a-zA-Z0-9:-]+=)(["'])(.*?)\2/g, '$1<span class="text-emerald-400">$2$3$2</span>');
+  } else if (lang === "css" || lang === "scss") {
+    html = html.replace(/([^{}\n]+)\s*(?=\{)/g, '<span class="text-pink-400 font-semibold">$1</span>');
+    html = html.replace(/([a-zA-Z-]+)\s*:\s*([^;]+);/g, '<span class="text-sky-300">$1</span>: <span class="text-emerald-300">$2</span>;');
+  }
+
+  html = html.replace(/\b(\d+)\b/g, '<span class="text-violet-400">$1</span>');
+  html = html.replace(/([{}[\]()])/g, '<span class="text-sky-400">$1</span>');
+
+  stringTokens.forEach((str, idx) => {
+    html = html.replace(`___TOKEN_STRING_${idx}___`, `<span class="text-emerald-400">${str}</span>`);
+  });
+
+  commentTokens.forEach((comment, idx) => {
+    html = html.replace(`___TOKEN_COMMENT_${idx}___`, `<span class="text-slate-500 italic">${comment}</span>`);
+  });
+
+  return html;
+}
+
 function CodeBlock({ code, language }: { code: string; language: string }) {
   const [copied, setCopied] = React.useState(false);
 
@@ -514,41 +599,60 @@ function CodeBlock({ code, language }: { code: string; language: string }) {
     }
   };
 
+  const highlightedHtml = React.useMemo(() => {
+    return highlightCode(code, language);
+  }, [code, language]);
+
+  const lineCount = React.useMemo(() => {
+    return code.split("\n").length;
+  }, [code]);
+
+  const lineNumbers = React.useMemo(() => {
+    return Array.from({ length: lineCount }, (_, i) => i + 1).join("\n");
+  }, [lineCount]);
+
   return (
     <div 
       onPointerDownCapture={(e) => e.stopPropagation()}
       onTouchStartCapture={(e) => e.stopPropagation()}
-      className="my-6 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950/80 max-w-full font-mono text-sm shadow-md"
+      className="my-6 rounded-2xl border border-slate-200/85 dark:border-slate-800/85 overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950/80 max-w-full font-mono text-sm shadow-md transition-all duration-300 hover:shadow-lg group"
     >
       <div className="flex items-center justify-between px-4 py-2.5 border-b border-slate-800/80 bg-slate-900/60 text-slate-400 text-xs font-bold uppercase tracking-wider select-none">
-        <span>{language || "code"}</span>
+        <div className="flex items-center gap-2">
+          <span className={`w-2.5 h-2.5 rounded-full ${getLanguageDotColor(language)} animate-pulse`} />
+          <span>{language || "code"}</span>
+        </div>
         <button
           onClick={handleCopy}
-          className="hover:text-white transition-colors duration-150 flex items-center gap-1.5 active:scale-95 text-slate-400"
+          className="hover:text-white transition-all duration-200 flex items-center gap-1.5 active:scale-95 text-slate-400 bg-slate-800/40 hover:bg-slate-800/80 px-3 py-1 rounded-lg border border-slate-700/30 hover:border-slate-600/50 hover:shadow-sm"
         >
           {copied ? (
             <>
               <svg className="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span className="text-green-400">Copied!</span>
+              <span className="text-green-400 normal-case font-medium">Copied!</span>
             </>
           ) : (
             <>
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 002-2" />
               </svg>
-              <span>Copy</span>
+              <span className="normal-case font-medium">Copy</span>
             </>
           )}
         </button>
       </div>
-      <pre className="p-4 overflow-x-auto whitespace-pre leading-relaxed select-text font-mono text-[13px]">
-        <code>{code}</code>
+      <pre className="p-4 overflow-x-auto whitespace-pre leading-relaxed select-text font-mono text-[13px] flex">
+        <code className="text-slate-600 dark:text-slate-500 text-right pr-4 select-none border-r border-slate-800/60 mr-4 font-mono block shrink-0">
+          {lineNumbers}
+        </code>
+        <code className="block flex-1 overflow-x-auto scrollbar-thin scrollbar-thumb-slate-800" dangerouslySetInnerHTML={{ __html: highlightedHtml }} />
       </pre>
     </div>
   );
 }
+
 
 function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
   let processedContent = content.trim();

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { CSPostHogProvider } from "@/components/providers/PostHogProvider";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL || "https://ktunode.vercel.app"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app"
   ),
   manifest: "/manifest.json",
   title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
@@ -66,8 +67,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
-    description: "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme. CS, EC, ME, CE, EE — all semesters covered.",
-    url: "https://ktunode.com",
+    description: "Free B.Tech module-wise KTU notes, previous year question papers (PYQs), and dynamic syllabus tracker tailored for the 2024 scheme. CS, EC, ME, CE, EE — all semesters covered.",
+    url: "./",
     siteName: "KTUNODE",
     locale: "en_US",
     type: "website",
@@ -76,15 +77,22 @@ export const metadata: Metadata = {
         url: "/og-main.webp",
         width: 1200,
         height: 630,
-        alt: "KTUNODE — Free KTU Notes, Syllabus & PYQs for 2024 Scheme",
+        alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
-    description: "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme.",
-    images: ["/og-main.webp"],
+    description: "Free B.Tech module-wise KTU notes, previous year question papers (PYQs), and dynamic syllabus tracker tailored for the 2024 scheme.",
+    images: [
+      {
+        url: "/og-main.webp",
+        width: 1200,
+        height: 630,
+        alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
+      },
+    ],
   },
 };
 
@@ -93,31 +101,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://ktunode.com/#organization",
+        "@id": `${siteUrl}/#organization`,
         name: "KTUNODE",
-        url: "https://ktunode.com",
+        url: siteUrl,
         logo: {
           "@type": "ImageObject",
-          url: "https://ktunode.com/logo.webp",
+          url: `${siteUrl}/logo.webp`,
         },
         description:
           "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme.",
       },
       {
         "@type": "WebSite",
-        "@id": "https://ktunode.com/#website",
-        url: "https://ktunode.com",
+        "@id": `${siteUrl}/#website`,
+        url: siteUrl,
         name: "KTUNODE",
-        publisher: { "@id": "https://ktunode.com/#organization" },
+        publisher: { "@id": `${siteUrl}/#organization` },
       },
       {
         "@type": "FAQPage",
-        "@id": "https://ktunode.com/#faq",
+        "@id": `${siteUrl}/#faq`,
         mainEntity: [
           {
             "@type": "Question",
@@ -181,10 +190,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-          <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-md focus:outline-none">
-            Skip to content
-          </a>
-          {children}
+          <CSPostHogProvider>
+            <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-md focus:outline-none">
+              Skip to content
+            </a>
+            {children}
+          </CSPostHogProvider>
         </ThemeProvider>
         <script
           dangerouslySetInnerHTML={{

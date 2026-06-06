@@ -352,6 +352,13 @@
   transition: width 0.1s linear;
 }
 
+@media (max-width: 767px) {
+  .scroll-progress {
+    z-index: 50;
+  }
+}
+
+
 /* ══════════════════════════════════════════
    CURSOR GLOW (Removed)
 ══════════════════════════════════════════ */

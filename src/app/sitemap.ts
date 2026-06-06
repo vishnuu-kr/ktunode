@@ -1,54 +1,90 @@
 import type { MetadataRoute } from "next";
-
-const BASE_URL = "https://ktunode.com";
+import fs from "fs";
+import path from "path";
 
 /**
- * Automated sitemap generation based on the app's routing structure.
- * Next.js serves this at /sitemap.xml at build time.
- *
- * Routes:
- *   /            — Landing page (highest priority)
- *   /dashboard   — Main app interface (notes, syllabus, PYQs)
- *   /notes       — Notes entry point (redirects to dashboard)
- *   /syllabus    — Syllabus entry point (redirects to dashboard)
- *   /pyqs        — PYQs entry point (redirects to dashboard)
+ * Dynamic sitemap generator that loops through all branches and semesters
+ * and maps course layout structures using the local JSON schema data.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
   const now = new Date().toISOString();
 
-  // Static routes derived from src/app directory structure
+  // 1. Core static routes derived from src/app structure
   const routes: MetadataRoute.Sitemap = [
     {
-      url: BASE_URL,
+      url: baseUrl,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
-      url: `${BASE_URL}/dashboard`,
+      url: `${baseUrl}/dashboard`,
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/notes`,
+      url: `${baseUrl}/notes`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/syllabus`,
+      url: `${baseUrl}/syllabus`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/pyqs`,
+      url: `${baseUrl}/pyqs`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
   ];
+
+  const branches = ["cs", "ec", "me", "ce", "ee"];
+  const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
+
+  // 2. Loop through local JSON index files to dynamically generate semester and subject routes
+  for (const branch of branches) {
+    for (const sem of semesters) {
+      // Add semester-level landing page (e.g., /cs/sem-4)
+      routes.push({
+        url: `${baseUrl}/${branch}/sem-${sem}`,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.8,
+      });
+
+      try {
+        const filePath = path.join(process.cwd(), "src", "data", "subjects", `${branch}-${sem}.json`);
+        
+        if (fs.existsSync(filePath)) {
+          const fileContent = fs.readFileSync(filePath, "utf8");
+          const subjects = JSON.parse(fileContent);
+
+          if (Array.isArray(subjects)) {
+            for (const subject of subjects) {
+              if (subject.code) {
+                const subjectCode = subject.code.toLowerCase();
+                // Add subject-level detail page (e.g., /cs/sem-4/pccst402)
+                routes.push({
+                  url: `${baseUrl}/${branch}/sem-${sem}/${subjectCode}`,
+                  lastModified: now,
+                  changeFrequency: "weekly",
+                  priority: 0.7,
+                });
+              }
+            }
+          }
+        }
+      } catch (error) {
+        console.error(`Sitemap: Failed to parse index for ${branch}-sem-${sem}:`, error);
+      }
+    }
+  }
 
   return routes;
 }

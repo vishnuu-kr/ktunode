@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Terminal, ShieldAlert, Dice5, HelpCircle, Activity, Sparkles } from "lucide-react";
+import { triggerHaptic } from "@/lib/haptic";
 
 type SlotConfig = {
   subject: string;
@@ -35,6 +36,7 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
   };
 
   const handleAssessRisk = () => {
+    triggerHaptic("medium");
     setIsScanning(true);
     setScanLogs([]);
     setVerdict(null);
@@ -50,6 +52,7 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
     const interval = setInterval(() => {
       if (currentLogIdx < logsList.length) {
         setScanLogs((prev) => [...prev, logsList[currentLogIdx]]);
+        triggerHaptic("light");
         currentLogIdx++;
       } else {
         clearInterval(interval);
@@ -83,9 +86,19 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
 
         setTimeout(() => {
           setScanLogs((prev) => [...prev, "[SYS] Analysis finalized. Outputting verdict..."]);
+          triggerHaptic("light");
           setTimeout(() => {
             setIsScanning(false);
             setVerdict({ score: Math.round(safetyScore), level, title, desc });
+            
+            // Trigger feedback matching threat severity
+            if (level === "green") {
+              triggerHaptic("success");
+            } else if (level === "red") {
+              triggerHaptic("warning");
+            } else {
+              triggerHaptic("heavy");
+            }
           }, 400);
         }, 300);
       }

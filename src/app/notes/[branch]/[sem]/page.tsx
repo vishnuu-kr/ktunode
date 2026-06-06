@@ -19,11 +19,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `KTU ${branchLabel} Semester ${semNum} Notes, Syllabus & PYQs | KTUNODE`;
   const description = `Download module-wise KTU notes, syllabus tracker, and previous year question papers for ${branchLabel} Semester ${semNum} (2024 scheme) on KTUNODE.`;
 
+  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
   return {
     title,
     description,
     alternates: {
-      canonical: `https://ktunode.com/${branch}/sem-${semNum}`,
+      canonical: `${siteUrl}/${branch}/sem-${semNum}`,
     },
     openGraph: {
       title,

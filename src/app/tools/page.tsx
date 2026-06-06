@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "next-themes";
 import { triggerHaptic } from "@/lib/haptic";
+import { ToolsSchema } from "@/components/ToolsSchema";
 
 const GpaCalculator = dynamic(() => import("@/components/GpaCalculator"), {
   loading: () => <div className="animate-pulse h-48 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-[20px] flex items-center justify-center text-xs text-slate-400 font-medium">Loading GPA calculator module...</div>,
@@ -4895,6 +4896,7 @@ export default function ToolsPage() {
           : "radial-gradient(ellipse at 70% 10%, #dbeafe 0%, #eff6ff 35%, #ffffff 70%)"
       }}
     >
+      <ToolsSchema />
       <div className="absolute inset-0 z-0 dot-grid opacity-[0.08] pointer-events-none" />
       <div className="absolute inset-0 z-0 noise-overlay opacity-[0.25] pointer-events-none" />
       <div className="absolute top-[-80px] right-[-80px] w-[700px] h-[700px] rounded-full bg-blue-400/20 dark:bg-blue-500/5 blur-[160px] pointer-events-none z-0 bg-orb-1" />
@@ -4919,7 +4921,10 @@ export default function ToolsPage() {
         )}
       </AnimatePresence>
 
-      <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 sm:pt-24 md:pt-28 flex flex-col z-10 space-y-4 sm:space-y-6">
+      <main 
+        id="main-content"
+        className="relative flex-1 w-full max-w-7xl mx-auto px-4 md:px-6 pt-20 sm:pt-24 md:pt-28 flex flex-col z-10 space-y-4 sm:space-y-6"
+      >
         
         {/* red-glow and blue-glow decoration background spots */}
         <div className="absolute top-10 left-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />

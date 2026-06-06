@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Check, X, ShieldAlert, Coffee, Play, Info } from "lucide-react";
+import { triggerHaptic } from "@/lib/haptic";
 
 type SlotConfig = {
   subject: string;
@@ -126,7 +127,10 @@ export default function DailyGauntlet({
         {/* Day selection pill for demo purposes */}
         <select
           value={dayIndex}
-          onChange={(e) => setDayIndex(Number(e.target.value))}
+          onChange={(e) => {
+            triggerHaptic("light");
+            setDayIndex(Number(e.target.value));
+          }}
           className="text-[9px] font-black bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg px-2 py-1 text-slate-700 dark:text-slate-350 cursor-pointer"
         >
           {weekdays.map((day, idx) => (
@@ -190,13 +194,19 @@ export default function DailyGauntlet({
                 {isActive && status === "none" ? (
                   <div className="flex items-center gap-2 w-full md:w-auto">
                     <button
-                      onClick={() => onLogStatus(dateString, idx, "bunked")}
+                      onClick={() => {
+                        triggerHaptic("warning");
+                        onLogStatus(dateString, idx, "bunked");
+                      }}
                       className="flex-1 md:flex-none border border-rose-500/30 hover:bg-rose-500/10 text-rose-500 font-black text-[9px] uppercase tracking-wider px-3 py-1.5 rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1"
                     >
                       <X className="w-3 h-3" /> Skip class
                     </button>
                     <button
-                      onClick={() => onLogStatus(dateString, idx, "attended")}
+                      onClick={() => {
+                        triggerHaptic("success");
+                        onLogStatus(dateString, idx, "attended");
+                      }}
                       className="flex-1 md:flex-none bg-emerald-600 hover:bg-emerald-500 text-white font-black text-[9px] uppercase tracking-wider px-3 py-1.5 rounded-xl shadow-md shadow-emerald-500/15 transition-all cursor-pointer flex items-center justify-center gap-1"
                     >
                       <Check className="w-3 h-3" /> Present
@@ -207,7 +217,10 @@ export default function DailyGauntlet({
                     <Check className="w-3.5 h-3.5 border border-emerald-500/20 bg-emerald-500/10 rounded-full p-0.5" />
                     <span>ATTENDED (+0.3%)</span>
                     <button
-                      onClick={() => onLogStatus(dateString, idx, "none")}
+                      onClick={() => {
+                        triggerHaptic("light");
+                        onLogStatus(dateString, idx, "none");
+                      }}
                       className="text-[9px] font-bold text-slate-400 hover:text-slate-500 dark:hover:text-slate-350 ml-1.5 cursor-pointer underline"
                     >
                       Undo
@@ -218,7 +231,10 @@ export default function DailyGauntlet({
                     <X className="w-3.5 h-3.5 border border-rose-500/20 bg-rose-500/10 rounded-full p-0.5" />
                     <span>BUNKED (-0.5%)</span>
                     <button
-                      onClick={() => onLogStatus(dateString, idx, "none")}
+                      onClick={() => {
+                        triggerHaptic("light");
+                        onLogStatus(dateString, idx, "none");
+                      }}
                       className="text-[9px] font-bold text-slate-400 hover:text-slate-500 dark:hover:text-slate-350 ml-1.5 cursor-pointer underline"
                     >
                       Undo
