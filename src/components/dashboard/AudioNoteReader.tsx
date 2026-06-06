@@ -336,7 +336,7 @@ export default function AudioNoteReader({
 
 
   return (
-    <div className="max-w-3xl mx-auto px-4 md:px-0 mb-6 sticky top-16 z-40">
+    <div className="max-w-3xl mx-auto px-4 md:px-0 mb-6 sticky top-[80px] md:top-[88px] z-40">
       <div className="bg-slate-50/70 dark:bg-slate-950/45 backdrop-blur-md border border-slate-950/[0.04] dark:border-white/[0.04] rounded-2xl p-3 flex flex-wrap items-center justify-between gap-3 shadow-sm select-none">
         
         {/* Playback Controls */}
