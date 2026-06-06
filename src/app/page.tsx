@@ -206,7 +206,7 @@ function PremiumSelect({
 }: {
   value: string | number;
   onChange: (val: string | number) => void;
-  options: { label: string; value: string | number }[];
+  options: { label: string; value: string | number; disabled?: boolean }[];
   placeholder: string;
   icon: React.ComponentType<{ className?: string }>;
   hasError?: boolean;
@@ -277,9 +277,13 @@ function PremiumSelect({
       case " ":
         e.preventDefault();
         if (focusedIndex >= 0) {
-          onChange(options[focusedIndex].value);
-          setOpen(false);
-          triggerRef.current?.focus();
+          const opt = options[focusedIndex];
+          if (opt && !opt.disabled) {
+            onChange(opt.value);
+            setOpen(false);
+            setFocusedIndex(-1);
+            triggerRef.current?.focus();
+          }
         }
         break;
       case "Escape":
@@ -342,29 +346,38 @@ function PremiumSelect({
               ref={listContainerRef}
               className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-800"
             >
-              {options.map((opt, index) => (
-                <button
-                  key={opt.value}
-                  type="button"
-                  role="option"
-                  aria-selected={value === opt.value}
-                  className={`w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors duration-150 ${
-                    value === opt.value
-                      ? "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400"
-                      : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 hover:dark:bg-slate-800 hover:text-slate-900 hover:dark:text-slate-100"
-                  } ${focusedIndex === index ? "bg-blue-50 dark:bg-blue-950/40 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
-                  onClick={(e) => {
-                    onChange(opt.value);
-                    setOpen(false);
-                    setFocusedIndex(-1);
-                    triggerRef.current?.focus();
-                    triggerLandingHaptic("medium", e);
-                  }}
-                  onMouseEnter={() => setFocusedIndex(index)}
-                >
-                  {opt.label}
-                </button>
-              ))}
+              {options.map((opt, index) => {
+                const isDisabled = opt.disabled;
+                return (
+                  <button
+                    key={opt.value}
+                    type="button"
+                    disabled={isDisabled}
+                    role="option"
+                    aria-selected={value === opt.value}
+                    className={`w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors duration-150 ${
+                      isDisabled
+                        ? "opacity-35 cursor-not-allowed text-slate-400 dark:text-slate-600"
+                        : value === opt.value
+                          ? "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400"
+                          : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 hover:dark:bg-slate-800 hover:text-slate-900 hover:dark:text-slate-100"
+                    } ${focusedIndex === index && !isDisabled ? "bg-blue-50 dark:bg-blue-950/40 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
+                    onClick={(e) => {
+                      if (isDisabled) return;
+                      onChange(opt.value);
+                      setOpen(false);
+                      setFocusedIndex(-1);
+                      triggerRef.current?.focus();
+                      triggerLandingHaptic("medium", e);
+                    }}
+                    onMouseEnter={() => {
+                      if (!isDisabled) setFocusedIndex(index);
+                    }}
+                  >
+                    {opt.label}
+                  </button>
+                );
+              })}
             </div>
           </motion.div>
         )}
@@ -380,6 +393,7 @@ export default function Home() {
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSemester, setSelectedSemester] = useState<number | "">("");
   const [mounted, setMounted] = useState(false);
+  const [siteConfig, setSiteConfig] = useState<any>(null);
 
 
   const heroRef = useRef<HTMLDivElement>(null);
@@ -388,6 +402,12 @@ export default function Home() {
 
   useEffect(() => {
     queueMicrotask(() => setMounted(true));
+    
+    // Fetch site configuration dynamically
+    fetch("/api/config")
+      .then(res => res.json())
+      .then(data => setSiteConfig(data))
+      .catch(err => console.error("Failed to load site config:", err));
   }, []);
 
   const handleLaunch = (event?: React.MouseEvent | React.PointerEvent) => {
@@ -534,7 +554,7 @@ export default function Home() {
           Notes, PYQs, and syllabus tracking — all free,
           <br className="hidden sm:block" />
           designed for the{" "}
-          <span className="text-blue-500 font-bold">2024 KTU scheme.</span>
+          <span className="text-blue-500 font-bold">{siteConfig?.activeScheme || "2024 KTU scheme"}</span>
         </p>
 
         {/* ── Selector card ── */}
@@ -554,7 +574,9 @@ export default function Home() {
             <PremiumSelect
               value={selectedBranch}
               onChange={(val) => setSelectedBranch(String(val))}
-              options={branches.map(b => ({ label: b.label, value: b.id }))}
+              options={branches
+                .filter(b => (siteConfig?.allowedBranches || ["cs", "ec", "me", "ce", "ee"]).includes(b.id))
+                .map(b => ({ label: b.label, value: b.id }))}
               placeholder="Select Branch"
               icon={BookOpen}
               hasError={errorState && !selectedBranch}
@@ -566,20 +588,29 @@ export default function Home() {
             <PremiumSelect
               value={selectedSemester}
               onChange={(val) => setSelectedSemester(val === "" ? "" : Number(val))}
-              options={semesters.map(s => ({ label: `Semester ${s}`, value: s }))}
+              options={semesters.map(s => {
+                const isVisible = (siteConfig?.visibleSemesters || [1, 2, 3, 4, 5, 6, 7, 8]).includes(s);
+                return {
+                  label: isVisible ? `Semester ${s}` : `Semester ${s} (Coming Soon)`,
+                  value: s,
+                  disabled: !isVisible
+                };
+              })}
               placeholder="Select Semester"
               icon={Calendar}
               hasError={errorState && !selectedSemester}
             />
           </div>
 
-          <MagneticButton
-            onClick={handleLaunch}
-            className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-6 !py-4 !text-sm !font-black"
-          >
-            Open Dashboard
-            <ArrowRight className="w-4 h-4" />
-          </MagneticButton>
+          <div className="relative w-full md:w-auto z-30">
+            <MagneticButton
+              onClick={handleLaunch}
+              className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-6 !py-4 !text-sm !font-black"
+            >
+              Open Dashboard
+              <ArrowRight className="w-4 h-4" />
+            </MagneticButton>
+          </div>
         </div>
 
         {/* ── Accessibility: announce validation errors to screen readers ── */}
@@ -640,31 +671,45 @@ export default function Home() {
       {/* ══════════════════════════════════════
           SECTIONS
       ══════════════════════════════════════ */}
-      <LazySection height="600px">
-        <KtuCompareSection />
-      </LazySection>
-      <LazySection height="650px">
-        <HowItWorksSection />
-      </LazySection>
-      <LazySection height="700px">
-        <FoundreeHero />
-      </LazySection>
+      {siteConfig?.landingPageSections?.compare !== false && (
+        <LazySection height="600px">
+          <KtuCompareSection />
+        </LazySection>
+      )}
+      {siteConfig?.landingPageSections?.howItWorks !== false && (
+        <LazySection height="650px">
+          <HowItWorksSection />
+        </LazySection>
+      )}
+      {siteConfig?.landingPageSections?.foundree !== false && (
+        <LazySection height="700px">
+          <FoundreeHero />
+        </LazySection>
+      )}
  
-      <LazySection height="800px">
-        <section className="relative z-10 w-full bg-white dark:bg-slate-900 border-y border-blue-50 dark:border-slate-800">
-          <Features />
-        </section>
-      </LazySection>
+      {siteConfig?.landingPageSections?.features !== false && (
+        <LazySection height="800px">
+          <section className="relative z-10 w-full bg-white dark:bg-slate-900 border-y border-blue-50 dark:border-slate-800">
+            <Features />
+          </section>
+        </LazySection>
+      )}
  
-      <LazySection height="600px">
-        <TestimonialsSection />
-      </LazySection>
-      <LazySection height="600px">
-        <FaqSection />
-      </LazySection>
-      <LazySection height="450px">
-        <CtaBanner />
-      </LazySection>
+      {siteConfig?.landingPageSections?.testimonials !== false && (
+        <LazySection height="600px">
+          <TestimonialsSection />
+        </LazySection>
+      )}
+      {siteConfig?.landingPageSections?.faqs !== false && (
+        <LazySection height="600px">
+          <FaqSection />
+        </LazySection>
+      )}
+      {siteConfig?.landingPageSections?.cta !== false && (
+        <LazySection height="450px">
+          <CtaBanner />
+        </LazySection>
+      )}
       <LazySection height="400px">
         <CinematicFooter />
       </LazySection>

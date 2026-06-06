@@ -4,6 +4,23 @@ import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { CSPostHogProvider } from "@/components/providers/PostHogProvider";
 import Script from "next/script";
+import fs from "fs";
+import path from "path";
+import { headers, cookies } from "next/headers";
+import LockdownGate from "@/components/ui/LockdownGate";
+import DismissibleBanner from "@/components/ui/DismissibleBanner";
+
+function getSiteConfig() {
+  try {
+    const configPath = path.join(process.cwd(), "constants", "site-config.json");
+    if (fs.existsSync(configPath)) {
+      return JSON.parse(fs.readFileSync(configPath, "utf8"));
+    }
+  } catch (e) {
+    console.error("Failed to read site-config.json in layout:", e);
+  }
+  return { bannerEnabled: false, bannerText: "", siteName: "KTU Node" };
+}
 
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -29,76 +46,65 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app"
-  ),
-  manifest: "/manifest.json",
-  title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
-  description: "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme. CS, EC, ME, CE, EE — all semesters covered.",
-  keywords: [
-    "KTU notes",
-    "KTU syllabus 2024 scheme",
-    "KTU previous year question papers",
-    "KTU B.Tech notes",
-    "KTU study materials",
-    "KTU PYQ",
-    "KTU S1 notes",
-    "KTU S2 notes",
-    "KTU S3 notes",
-    "KTU CSE notes 2024",
-    "KTU model question papers",
-    "KTU module wise notes",
-    "APJ Abdul Kalam Technological University syllabus",
-    "KTU exam preparation",
-    "KTUNODE",
-    "KTU 2024 scheme subjects",
-    "KTU chapter wise notes",
-    "Kerala Technological University"
-  ],
-  authors: [{ name: "KTUNODE Team" }],
-  creator: "KTUNODE",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "default",
-    title: "KTUNODE",
-  },
-  icons: {
-    icon: "/logo.webp",
-    apple: "/logo.webp",
-  },
-  openGraph: {
-    title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
-    description: "Free B.Tech module-wise KTU notes, previous year question papers (PYQs), and dynamic syllabus tracker tailored for the 2024 scheme. CS, EC, ME, CE, EE — all semesters covered.",
-    url: "./",
-    siteName: "KTUNODE",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "/og-main.webp",
-        width: 1200,
-        height: 630,
-        alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
-    description: "Free B.Tech module-wise KTU notes, previous year question papers (PYQs), and dynamic syllabus tracker tailored for the 2024 scheme.",
-    images: [
-      {
-        url: "/og-main.webp",
-        width: 1200,
-        height: 630,
-        alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
-      },
-    ],
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const config = getSiteConfig();
+  const title = config.seo?.title || "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE";
+  const description = config.seo?.description || "Free B.Tech module-wise KTU notes, previous year question papers, and syllabus tracker tailored for the 2024 scheme. CS, EC, ME, CE, EE — all semesters covered.";
+  const keywordsStr = config.seo?.keywords || "KTU notes, KTU syllabus 2024 scheme, KTU previous year question papers, KTU B.Tech notes, KTU study materials, KTU PYQ, KTU S1 notes, KTU S2 notes, KTU S3 notes, KTU CSE notes 2024, KTU model question papers, KTU module wise notes, APJ Abdul Kalam Technological University syllabus, KTU exam preparation, KTUNODE, KTU 2024 scheme subjects, KTU chapter wise notes, Kerala Technological University";
+  const keywords = keywordsStr.split(",").map((k: string) => k.trim()).filter(Boolean);
 
-export default function RootLayout({
+  return {
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app"
+    ),
+    manifest: "/manifest.json",
+    title,
+    description,
+    keywords,
+    authors: [{ name: "KTUNODE Team" }],
+    creator: "KTUNODE",
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "default",
+      title: "KTUNODE",
+    },
+    icons: {
+      icon: "/logo.webp",
+      apple: "/logo.webp",
+    },
+    openGraph: {
+      title,
+      description,
+      url: "./",
+      siteName: "KTUNODE",
+      locale: "en_US",
+      type: "website",
+      images: [
+        {
+          url: "/og-main.webp",
+          width: 1200,
+          height: 630,
+          alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [
+        {
+          url: "/og-main.webp",
+          width: 1200,
+          height: 630,
+          alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
+        },
+      ],
+    },
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -183,8 +189,46 @@ export default function RootLayout({
     ],
   };
 
+  const config = getSiteConfig();
+  const cookieStore = await cookies();
+  const lockdownPasscode = config.lockdownPasscode || "1234";
+
+  const headerList = await headers();
+  const pathname = headerList.get("x-pathname") || "";
+
+  const isLockdownActive = config.lockdownMode === true && !pathname.startsWith("/admin") && !pathname.startsWith("/api");
+  const userPasscode = cookieStore.get("ktunode_lockdown_passcode")?.value;
+  const isAuthorized = userPasscode === lockdownPasscode;
+
+  const isUnderMaintenance = config.maintenanceMode && !pathname.startsWith("/admin") && !pathname.startsWith("/api");
+
+  const primaryAccent = config.primaryAccent || "blue";
+  const accentHues = {
+    blue: "255",
+    indigo: "240",
+    violet: "270",
+    emerald: "150",
+    amber: "75",
+    rose: "360"
+  };
+  const hue = accentHues[primaryAccent as keyof typeof accentHues] || "255";
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: `
+          :root {
+            --color-accent: oklch(56% 0.18 ${hue});
+            --color-accent-light: oklch(56% 0.18 ${hue} / 8%);
+            --color-accent-mid: oklch(56% 0.18 ${hue} / 15%);
+          }
+          .dark {
+            --color-accent: oklch(68% 0.2 ${hue});
+            --color-accent-light: oklch(68% 0.2 ${hue} / 12%);
+            --color-accent-mid: oklch(68% 0.2 ${hue} / 22%);
+          }
+        `}} />
+      </head>
       {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
       <body className={`${plusJakartaSans.variable} ${outfit.variable} font-sans`} suppressHydrationWarning>
         <Script
@@ -194,10 +238,45 @@ export default function RootLayout({
         />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <CSPostHogProvider>
-            <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-md focus:outline-none">
-              Skip to content
-            </a>
-            {children}
+            {isUnderMaintenance ? (
+              <div className="min-h-screen bg-[#070709] text-white flex flex-col items-center justify-center p-6 text-center font-sans relative overflow-hidden">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+                  <div className="absolute top-[30%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-amber-500/10 blur-[130px] animate-pulse" />
+                </div>
+                
+                <div className="relative z-10 max-w-md w-full bg-white/[0.02] border border-white/5 rounded-3xl p-8 backdrop-blur-2xl shadow-2xl">
+                  <div className="inline-flex p-4 bg-amber-500/10 rounded-2xl text-amber-500 mb-6">
+                    <svg className="w-8 h-8 animate-pulse text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <h1 className="text-2xl font-bold tracking-tight mb-2">Platform Update in Progress</h1>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                    {config.siteName} is currently undergoing a scheduled database restructure and notes payload sync. We will return shortly.
+                  </p>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/5 rounded-full text-[10px] text-gray-400 uppercase tracking-widest">
+                    <span>Target Regulation: {config.activeScheme}</span>
+                  </div>
+                </div>
+              </div>
+            ) : isLockdownActive && !isAuthorized ? (
+              <LockdownGate correctPasscode={lockdownPasscode} />
+            ) : (
+              <>
+                {config.bannerEnabled && config.bannerText && (
+                  <DismissibleBanner
+                    bannerText={config.bannerText}
+                    severity={config.bannerSeverity || "info"}
+                    dismissible={config.bannerDismissible !== false}
+                  />
+                )}
+                <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-md focus:outline-none">
+                  Skip to content
+                </a>
+                {children}
+              </>
+            )}
           </CSPostHogProvider>
         </ThemeProvider>
         <Script

@@ -22,6 +22,16 @@ export default function Navbar() {
   const [userName, setUserName] = useState("");
   const { scrollY } = useScroll();
 
+  const isDashboardActive = useCallback(() => {
+    if (pathname.startsWith("/dashboard")) return true;
+    if (pathname.startsWith("/notes")) return true;
+    const firstSegment = pathname.split("/").filter(Boolean)[0];
+    if (firstSegment && ["cs", "ec", "me", "ce", "ee"].includes(firstSegment.toLowerCase())) {
+      return true;
+    }
+    return false;
+  }, [pathname]);
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 24);
   });
@@ -55,7 +65,7 @@ export default function Navbar() {
   }, []);
 
   const handleSignInClick = () => {
-    if (pathname === "/dashboard") {
+    if (isDashboardActive()) {
       window.dispatchEvent(new CustomEvent("ktunode-open-auth"));
     } else {
       router.push("/dashboard?auth=open");
@@ -63,7 +73,7 @@ export default function Navbar() {
   };
 
   const handleAvatarClick = () => {
-    if (pathname === "/dashboard") {
+    if (isDashboardActive()) {
       window.dispatchEvent(new CustomEvent("ktunode-open-profile"));
     } else {
       router.push("/dashboard?profile=open");
@@ -192,13 +202,44 @@ export default function Navbar() {
         </span>
       </Link>
 
-      {/* Sign In & Dashboard controls */}
       <div className="flex items-center gap-1.5 sm:gap-3">
         {/* Dynamic Theme Toggle Button */}
         <ThemeToggle />
 
-        {pathname.startsWith("/dashboard") && (
+        {isActive("/tools") ? (
+          <button
+            type="button"
+            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
+            aria-label="Tools"
+            title="Tools"
+            aria-current="page"
+          >
+            <Wrench className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5 text-violet-500" />
+            <span className="hidden sm:inline">Tools</span>
+          </button>
+        ) : (
+          <Link
+            href="/tools"
+            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
+            title="Tools"
+            aria-label="Tools"
+          >
+            <Wrench className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5" />
+            <span className="hidden sm:inline">Tools</span>
+          </Link>
+        )}
+
+        {!isDashboardActive() && (
+          <MagneticButton href="/dashboard" aria-label="Dashboard" className="!h-10 sm:!h-9 !w-10 sm:!w-auto flex items-center justify-center !py-0 !px-0 sm:!px-4 !text-[10px] sm:!text-xs whitespace-nowrap">
+            <LayoutDashboard className="h-3.5 w-3.5 block sm:hidden text-white" />
+            <span className="hidden sm:inline">Dashboard</span>
+            <ArrowRight className="w-3 h-3 hidden sm:inline" />
+          </MagneticButton>
+        )}
+
+        {isDashboardActive() && (
           <>
+            <div className="w-[1px] h-4 bg-slate-200/80 dark:bg-slate-800 mx-0.5" />
             {isLoggedIn ? (
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -232,51 +273,7 @@ export default function Navbar() {
                 <span className="hidden sm:inline">Sign In</span>
               </motion.button>
             )}
-
-            <div className="w-[1px] h-4 bg-slate-200/80 dark:bg-slate-800 mx-0.5" />
           </>
-        )}
-
-        {isActive("/tools") ? (
-          <button
-            type="button"
-            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
-            aria-label="Tools"
-            title="Tools"
-            aria-current="page"
-          >
-            <Wrench className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5 text-violet-500" />
-            <span className="hidden sm:inline">Tools</span>
-          </button>
-        ) : (
-          <Link
-            href="/tools"
-            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
-            title="Tools"
-            aria-label="Tools"
-          >
-            <Wrench className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5" />
-            <span className="hidden sm:inline">Tools</span>
-          </Link>
-        )}
-
-        {isActive("/dashboard") ? (
-          <button
-            type="button"
-            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-blue-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap animate-none"
-            aria-label="Dashboard"
-            title="Dashboard"
-            aria-current="page"
-          >
-            <LayoutDashboard className="h-3.5 w-3.5 sm:h-3.5 sm:w-3.5 text-blue-500" />
-            <span className="hidden sm:inline">Dashboard</span>
-          </button>
-        ) : (
-          <MagneticButton href="/dashboard" aria-label="Dashboard" className="!h-10 sm:!h-9 !w-10 sm:!w-auto flex items-center justify-center !py-0 !px-0 sm:!px-4 !text-[10px] sm:!text-xs whitespace-nowrap" customShadow="shadow-none">
-            <LayoutDashboard className="h-3.5 w-3.5 block sm:hidden text-white" />
-            <span className="hidden sm:inline">Dashboard</span>
-            <ArrowRight className="w-3 h-3 hidden sm:inline" />
-          </MagneticButton>
         )}
       </div>
       </motion.header>

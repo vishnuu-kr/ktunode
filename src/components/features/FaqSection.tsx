@@ -44,6 +44,18 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const sectionRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
+  const [faqsList, setFaqsList] = useState(faqs);
+
+  useEffect(() => {
+    fetch("/api/config")
+      .then(res => res.json())
+      .then(data => {
+        if (data?.customFaqs && data.customFaqs.length > 0) {
+          setFaqsList(data.customFaqs);
+        }
+      })
+      .catch(err => console.error("Failed to load dynamic FAQs:", err));
+  }, []);
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -113,7 +125,7 @@ export default function FaqSection() {
           {/* Right — accordion */}
           <div className="flex-1">
             <div className="space-y-3">
-              {faqs.map((faq, i) => {
+              {faqsList.map((faq, i) => {
                 const isOpen = openIndex === i;
                 return (
                   <div

@@ -534,8 +534,10 @@ const getDefaultLabsForSession = (branchId: string, semester: number): LabCourse
   ];
 };
 
-const generateFlashcardsForSubject = (subjectCode: string, subjectName: string) => {
-  const matchingSubject = mockSubjects.find(s => s.code === subjectCode);
+const generateFlashcardsForSubject = (subjectCode: string, subjectName: string, activeSubject?: Subject | null) => {
+  const matchingSubject = (activeSubject && activeSubject.code === subjectCode)
+    ? activeSubject
+    : mockSubjects.find(s => s.code === subjectCode);
   if (matchingSubject && matchingSubject.modules && matchingSubject.modules.length > 0) {
     const cards: Array<{ q: string, a: string }> = [];
     matchingSubject.modules.forEach((mod, modIdx) => {
@@ -2200,6 +2202,7 @@ export default function ToolsPage() {
   const [mtCountdownTarget, setMtCountdownTarget] = useState("2026-07-15");
 
   // Redesign Master Navigation Workspace Tab State
+  const [siteConfig, setSiteConfig] = useState<any>(null);
   const [activeWorkspaceTab, setActiveWorkspaceTab] = useState<"attendance" | "grades" | "graduation" | "exam" | "labs" | "missioncontrol">("attendance");
   // --- NEW REDESIGN STATES ---
   // Backlog tracker state
@@ -2226,6 +2229,27 @@ export default function ToolsPage() {
   // Onboarding check
   useEffect(() => {
     if (!mounted) return;
+    
+    // Fetch config
+    fetch("/api/config")
+      .then(res => res.json())
+      .then(data => {
+        setSiteConfig(data);
+        const activeTools = data?.activeTools || {};
+        const enabledTabs: string[] = [];
+        if (activeTools.attendance !== false) enabledTabs.push("attendance");
+        if (activeTools.gpa !== false) enabledTabs.push("grades");
+        if (activeTools.runway !== false) enabledTabs.push("graduation");
+        if (activeTools.exam !== false) enabledTabs.push("exam");
+        if (activeTools.lab !== false) enabledTabs.push("labs");
+        enabledTabs.push("missioncontrol");
+
+        if (!enabledTabs.includes(activeWorkspaceTab)) {
+          setActiveWorkspaceTab(enabledTabs[0] as any);
+        }
+      })
+      .catch(err => console.error("Error loading config:", err));
+
     const onboarded = localStorage.getItem("ktunode_tools_onboarded");
     if (!onboarded) setShowOnboarding(true);
     // Load streak
@@ -2426,7 +2450,8 @@ export default function ToolsPage() {
   useEffect(() => {
     if (plannerActiveSubject) {
       const timer = setTimeout(() => {
-        const cards = generateFlashcardsForSubject(plannerActiveSubject.code, plannerActiveSubject.name);
+        const fullSubject = subjects.find(s => s.code === plannerActiveSubject.code);
+        const cards = generateFlashcardsForSubject(plannerActiveSubject.code, plannerActiveSubject.name, fullSubject);
         setFlashcardsList(cards);
         setActiveCardIndex(0);
         setIsCardFlipped(false);
@@ -2434,11 +2459,12 @@ export default function ToolsPage() {
       }, 0);
       return () => clearTimeout(timer);
     }
-  }, [plannerActiveSubject]);
+  }, [plannerActiveSubject, subjects]);
 
   const getSpacedRepetitionTopics = () => {
     if (!plannerActiveSubject) return [];
-    const matchingSubject = mockSubjects.find(s => s.code === plannerActiveSubject.code);
+    const fullSubject = subjects.find(s => s.code === plannerActiveSubject.code);
+    const matchingSubject = mockSubjects.find(s => s.code === plannerActiveSubject.code) || fullSubject;
     if (matchingSubject && matchingSubject.modules) {
       const topics: Array<{ id: string, title: string, module: string }> = [];
       matchingSubject.modules.forEach((mod, modIdx) => {
@@ -5025,13 +5051,13 @@ export default function ToolsPage() {
         {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR --- */}
         <div className="bg-slate-100/80 dark:bg-slate-950/60 p-1.5 rounded-[22px] border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl flex flex-nowrap items-center gap-1.5 w-full overflow-x-auto scrollbar-none shadow-inner">
           {[
-            { id: "attendance", label: "Attendance & CIE", icon: Activity },
-            { id: "grades", label: "Grades & ESE", icon: Calculator },
-            { id: "graduation", label: "Graduation", icon: GraduationCap },
-            { id: "exam", label: "Exam Prep", icon: Clock },
-            { id: "labs", label: "Lab Tracker", icon: FlaskConical },
-            { id: "missioncontrol", label: "Mission Control", icon: LayoutDashboard }
-          ].map((tabItem) => {
+            { id: "attendance", label: "Attendance & CIE", icon: Activity, enabled: siteConfig?.activeTools?.attendance !== false },
+            { id: "grades", label: "Grades & ESE", icon: Calculator, enabled: siteConfig?.activeTools?.gpa !== false },
+            { id: "graduation", label: "Graduation", icon: GraduationCap, enabled: siteConfig?.activeTools?.runway !== false },
+            { id: "exam", label: "Exam Prep", icon: Clock, enabled: siteConfig?.activeTools?.exam !== false },
+            { id: "labs", label: "Lab Tracker", icon: FlaskConical, enabled: siteConfig?.activeTools?.lab !== false },
+            { id: "missioncontrol", label: "Mission Control", icon: LayoutDashboard, enabled: true }
+          ].filter(tabItem => tabItem.enabled).map((tabItem) => {
             const isActive = activeWorkspaceTab === tabItem.id;
             const Icon = tabItem.icon;
             

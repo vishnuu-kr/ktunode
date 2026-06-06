@@ -1,0 +1,51 @@
+{
+  "siteName": "KTU Node",
+  "maintenanceMode": false,
+  "activeScheme": "2024 Scheme",
+  "allowedBranches": [
+    "cs",
+    "ec",
+    "me",
+    "ce",
+    "ee"
+  ],
+  "visibleSemesters": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "activeTools": {
+    "attendance": true,
+    "gpa": true,
+    "runway": true,
+    "lab": true
+  },
+  "externalLinks": {
+    "studentLogin": "https://app.ktu.edu.in",
+    "ktuPortal": "https://ktu.edu.in"
+  },
+  "bannerText": "🔔 S4 Supply Registration is live! Ensure all notes are fully reviewed before the exam.",
+  "bannerEnabled": false,
+  "bannerSeverity": "info",
+  "bannerDismissible": true,
+  "landingPageSections": {
+    "compare": true,
+    "howItWorks": true,
+    "foundree": true,
+    "features": true,
+    "testimonials": true,
+    "faqs": true,
+    "cta": true
+  },
+  "seo": {
+    "title": "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
+    "description": "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme. CS, EC, ME, CE, EE — all semesters covered.",
+    "keywords": "KTU notes, KTU syllabus 2024 scheme, KTU previous year question papers, KTU B.Tech notes, KTU study materials, KTU PYQ, KTU S1 notes, KTU S2 notes, KTU S3 notes, KTU CSE notes 2024, KTU model question papers, KTU module wise notes, APJ Abdul Kalam Technological University syllabus, KTU exam preparation, KTUNODE, KTU 2024 scheme subjects, KTU chapter wise notes, Kerala Technological University"
+  },
+  "customFaqs": [],
+  "primaryAccent": "blue",
+  "lockdownMode": false,
+  "lockdownPasscode": "1234",
+  "quickLinks": []
+}

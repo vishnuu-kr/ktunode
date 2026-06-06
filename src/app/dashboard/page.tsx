@@ -59,6 +59,10 @@ const TimetableWidget = dynamic(() => import("@/components/dashboard/TimetableWi
   ssr: false
 });
 
+const QuickLinksWidget = dynamic(() => import("@/components/dashboard/QuickLinksWidget"), {
+  ssr: false
+});
+
 const BottomSheet = dynamic(() => import("@/components/dashboard/BottomSheet").then(mod => mod.BottomSheet), {
   ssr: false
 });
@@ -356,6 +360,14 @@ function DashboardContent() {
     }
   }
   const { resolvedTheme } = useTheme();
+  const [siteConfig, setSiteConfig] = useState<any>(null);
+
+  useEffect(() => {
+    fetch("/api/config")
+      .then(res => res.json())
+      .then(data => setSiteConfig(data))
+      .catch(err => console.error("Failed to load site config:", err));
+  }, []);
 
   const audioContextRef = React.useRef<AudioContext | null>(null);
 
@@ -940,7 +952,13 @@ function DashboardContent() {
     headingRef.current?.focus();
   }, [view, selectedSubject, selectedTopic]);
 
-  const timetable = React.useMemo(() => getTimetable(branch, sem), [branch, sem]);
+  const timetable = React.useMemo(() => {
+    const key = `${branch.toLowerCase()}-${sem}`;
+    if (siteConfig?.timetableOverrides?.[key]) {
+      return siteConfig.timetableOverrides[key];
+    }
+    return getTimetable(branch, sem);
+  }, [branch, sem, siteConfig]);
   const { completedTopics, toggleTopic, isCompleted, getModuleProgress, getSubjectProgress, isLoaded } = useProgress();
 
   // Next exam calculation
@@ -1176,7 +1194,7 @@ function DashboardContent() {
   }, [subjects, triggerHaptic, params, branch, sem]);
 
   // Handle Sign In / Sign Up submission
-  const handleAuthSubmit = (e: React.FormEvent) => {
+  const handleAuthSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setAuthError("");
 
@@ -1199,30 +1217,47 @@ function DashboardContent() {
     setAuthLoading(true);
     triggerHaptic("medium");
 
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: authTab === "signup" ? "signup" : "signin",
+          name: authName,
+          email: authEmail,
+          password: authPassword,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Authentication failed");
+      }
+
       setAuthLoading(false);
       setIsLoggedIn(true);
-      const computedName = authTab === "signup" ? authName : authEmail.split("@")[0];
-      setUserName(computedName);
-      setUserEmail(authEmail);
+      
+      const loggedInName = result.user.name;
+      const loggedInEmail = result.user.email;
+      
+      setUserName(loggedInName);
+      setUserEmail(loggedInEmail);
       
       localStorage.setItem("ktunode_logged_in", "true");
-      localStorage.setItem("ktunode_user_name", computedName);
-      localStorage.setItem("ktunode_user_email", authEmail);
+      localStorage.setItem("ktunode_user_name", loggedInName);
+      localStorage.setItem("ktunode_user_email", loggedInEmail);
+
+      if (result.user.completedTopics) {
+        localStorage.setItem("ktunode_progress", JSON.stringify(result.user.completedTopics));
+        window.dispatchEvent(new CustomEvent("ktunode-progress-update", {
+          detail: result.user.completedTopics
+        }));
+      }
 
       window.dispatchEvent(new CustomEvent("ktunode-auth-change", {
-        detail: { isLoggedIn: true, userName: computedName }
+        detail: { isLoggedIn: true, userName: loggedInName }
       }));
-
-      // Log JSON payload to console prepare for backend
-      console.log("Ready for backend:", {
-        action: authTab,
-        data: {
-          name: computedName,
-          email: authEmail,
-          completedTopics,
-        }
-      });
 
       setAuthModalOpen(false);
       showToast(authTab === "signup" ? "Account created successfully!" : "Signed in successfully!");
@@ -1232,31 +1267,48 @@ function DashboardContent() {
       setAuthName("");
       setAuthEmail("");
       setAuthPassword("");
-    }, 1200);
+    } catch (err: any) {
+      setAuthLoading(false);
+      setAuthError(err.message || "An error occurred");
+      triggerHaptic("warning");
+    }
   };
 
   // Handle Cloud Syncing
-  const handleCloudSync = () => {
+  const handleCloudSync = async () => {
     if (syncing) return;
     setSyncing(true);
     triggerHaptic("medium");
 
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "sync",
+          email: userEmail,
+          completedTopics,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Sync failed");
+      }
+
       setSyncing(false);
       const now = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       setLastSynced(now);
       localStorage.setItem("ktunode_last_synced", now);
 
-      // Log sync data payload to console
-      console.log("Syncing to Cloud backend:", {
-        email: userEmail,
-        completedTopics,
-        syncedAt: new Date().toISOString()
-      });
-
       showToast("Progress synced to cloud!");
       triggerHaptic("success");
-    }, 1500);
+    } catch (err: any) {
+      setSyncing(false);
+      showToast(err.message || "Failed to sync progress");
+      triggerHaptic("warning");
+    }
   };
 
   // Handle Logout
@@ -1496,9 +1548,10 @@ function DashboardContent() {
       <main 
         id="main-content"
         ref={mainScrollContainerRef}
-        className="relative flex-1 w-full max-w-6xl mx-auto px-4 md:px-6 pt-24 lg:pt-0 scroll-pt-24 lg:scroll-pt-0 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
+        className="relative flex-1 w-full max-w-6xl mx-auto px-4 md:px-6 pt-0 lg:pt-0 scroll-pt-0 lg:scroll-pt-0 flex overflow-y-auto lg:overflow-hidden z-10 scrollbar-none"
       >
-        <AnimatePresence mode="wait">
+        <div className="w-full pt-28 scroll-pt-28 lg:pt-0 lg:scroll-pt-0 flex flex-col flex-1 h-full">
+          <AnimatePresence mode="wait">
           {isTransitioning && (
             <motion.div
               key="skeleton"
@@ -1576,7 +1629,7 @@ function DashboardContent() {
                   <div className="flex items-center gap-3 self-stretch md:self-auto shrink-0 justify-between md:justify-end">
 
                     {/* Unified Progress Card for Mobile and Desktop */}
-                    <div className="flex flex-col gap-2 bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] p-4.5 rounded-3xl shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] dark:shadow-none min-w-[160px] md:min-w-[180px] backdrop-blur-md relative overflow-hidden group self-stretch shrink-0">
+                    <div className="flex flex-col gap-2 bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] p-4.5 rounded-3xl shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] dark:shadow-none w-full md:w-auto md:min-w-[180px] backdrop-blur-md relative overflow-hidden group self-stretch shrink-0">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-slate-900/[0.01] dark:bg-white/[0.01] rounded-full blur-xl pointer-events-none" />
                       <div className="flex items-center justify-between gap-4 w-full">
                         <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Overall Progress</span>
@@ -1592,7 +1645,7 @@ function DashboardContent() {
                       <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden mt-1 relative">
                         <div
                           className="h-full bg-slate-900 dark:bg-slate-100 transition-all duration-500 rounded-full"
-                          style={{ width: `${totalTopics > 0 ? (completedTopics.length / totalTopics) * 100 : 0}%` }}
+                          style={{ width: completedTopics.length > 0 ? `max(${(completedTopics.length / totalTopics) * 100}%, 8px)` : '0%' }}
                         />
                       </div>
                     </div>
@@ -1817,6 +1870,8 @@ function DashboardContent() {
 
                 <TimetableWidget timetable={timetable} sem={sem} branch={branch} />
 
+                <QuickLinksWidget />
+
                 {pinnedTopicIds.length > 0 && (
                   <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-3xl p-4 sm:p-5 md:p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">
                     <div className="flex items-center gap-3 mb-4">
@@ -2014,10 +2069,11 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-36 px-1 relative lg:pt-28 lg:scroll-pt-28 scrollbar-none"
+              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-36 px-1 relative lg:pt-0 lg:scroll-pt-0 scrollbar-none"
             >
-              <button 
-                onClick={() => goSubject(selectedSubject!)} 
+              <div className="lg:pt-28 lg:scroll-pt-28">
+                <button 
+                  onClick={() => goSubject(selectedSubject!)} 
                 className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors mb-6 md:mb-8 group"
                 aria-label={`Back to ${selectedSubject?.name ?? "subject"}`}
               >
@@ -2240,9 +2296,11 @@ function DashboardContent() {
                   </button>
                 </div>
               </div>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
+        </div>
       </main>
 
       <AnimatePresence>
@@ -2428,6 +2486,8 @@ function DashboardContent() {
         />
 
         <TimetableWidget timetable={timetable} sem={sem} branch={branch} />
+
+        <QuickLinksWidget />
 
         {pinnedTopicIds.length > 0 && (
           <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-md border border-slate-950/[0.06] dark:border-white/[0.06] rounded-[20px] p-4 sm:p-5 md:p-6 shadow-[0_4px_12px_rgba(0,0,0,0.01),0_1px_2px_rgba(0,0,0,0.01)] dark:shadow-none">

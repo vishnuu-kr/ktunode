@@ -22,6 +22,20 @@ export function useProgress() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Listen for progress synchronization updates (e.g. from cloud login/sync)
+  useEffect(() => {
+    const handleProgressUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent<string[]>;
+      if (customEvent.detail && Array.isArray(customEvent.detail)) {
+        setCompletedTopics(customEvent.detail);
+      }
+    };
+    window.addEventListener("ktunode-progress-update", handleProgressUpdate);
+    return () => {
+      window.removeEventListener("ktunode-progress-update", handleProgressUpdate);
+    };
+  }, []);
+
   // Save to local storage whenever it changes
   useEffect(() => {
     if (isLoaded) {

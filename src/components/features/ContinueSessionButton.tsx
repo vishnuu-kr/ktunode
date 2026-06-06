@@ -22,11 +22,11 @@ export function ContinueSessionButton({
   return (
     <motion.div
       key="continue-session-button"
-      initial={{ opacity: 0, y: 16, scale: 0.97, height: "auto", marginTop: 0 }}
-      animate={{ opacity: 1, y: 0, scale: 1, height: "auto", marginTop: 16 }}
+      initial={{ opacity: 0, y: 16, scale: 0.97, marginTop: 0 }}
+      animate={{ opacity: 1, y: 0, scale: 1, marginTop: 16 }}
       exit={{ opacity: 0, y: -20, scale: 0.95, height: 0, marginTop: 0, overflow: "hidden" }}
       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-      className="relative z-10 flex items-center justify-center gap-3 w-full"
+      className="relative z-40 flex items-center justify-center gap-3 w-full"
     >
       <MagneticButton
         onClick={(e) => onContinue(e)}
