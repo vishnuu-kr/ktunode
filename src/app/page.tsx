@@ -36,7 +36,7 @@ const FaqSection = dynamic(() => import("@/components/features/FaqSection"));
 const CtaBanner = dynamic(() => import("@/components/features/CtaBanner"));
 const CinematicFooter = dynamic(() => import("@/components/ui/motion-footer").then(mod => mod.CinematicFooter), { ssr: false });
 import {
-  Sparkles, BookOpen, Calendar, ArrowRight, ShieldCheck,
+  BookOpen, Calendar, ArrowRight, ShieldCheck,
   FileText, ChevronDown,
 } from "lucide-react";
 
@@ -233,7 +233,7 @@ function PremiumSelect({
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [handleOpenChange]);
 
   useEffect(() => {
     if (open) {

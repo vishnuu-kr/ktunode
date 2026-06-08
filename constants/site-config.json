@@ -30,11 +30,11 @@
     "ktuPortal": "https://ktu.edu.in"
   },
   "bannerText": "🔔 KTU ALERT: B.Tech S4 Regular & Supplementary Examination Registration is open",
-  "bannerEnabled": true,
+  "bannerEnabled": false,
   "bannerSeverity": "info",
   "bannerDismissible": true,
   "primaryAccent": "blue",
-  "lockdownMode": true,
+  "lockdownMode": false,
   "lockdownPasscode": "2105",
   "minAttendance": 75,
   "minCie": 40,

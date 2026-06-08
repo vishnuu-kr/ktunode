@@ -2,6 +2,7 @@
 
 import fs from "fs";
 import path from "path";
+import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { normalizeSiteConfig, readSiteConfig, writeSiteConfig } from "@/lib/siteConfig";
 
@@ -13,11 +14,17 @@ const allowedBranchDirs: Record<string, string> = {
   ee: "electrical-and-electronics-engineering",
 };
 
-function assertAdminSecret(secret: unknown) {
-  const correctSecret = process.env.ADMIN_SECRET_KEY || "dev_secret_key";
-  if (typeof secret !== "string" || secret !== correctSecret) {
-    throw new Error("Unauthorized admin mutation attempt.");
+async function assertAdminSecret(secret?: unknown) {
+  const correctSecret = process.env.ADMIN_SECRET_KEY;
+  if (!correctSecret) {
+    throw new Error("ADMIN_SECRET_KEY environment variable is not set.");
   }
+  const cookieStore = await cookies();
+  const cookieSecret = cookieStore.get("admin_secret")?.value;
+  if ((typeof secret === "string" && secret === correctSecret) || (cookieSecret === correctSecret)) {
+    return;
+  }
+  throw new Error("Unauthorized admin mutation attempt.");
 }
 
 function getBranchDirName(branch: string): string {
@@ -42,7 +49,7 @@ function revalidatePublicData() {
 
 export async function saveNoteFile(formData: FormData) {
   try {
-    assertAdminSecret(formData.get("secret"));
+    await assertAdminSecret(formData.get("secret"));
 
     const branch = safeSegment((formData.get("branch") as string) || "", "branch");
     const sem = safeSegment((formData.get("sem") as string) || "", "semester");
@@ -101,7 +108,7 @@ export async function saveNoteFile(formData: FormData) {
 
 export async function saveRawConfig(secret: string, jsonText: string) {
   try {
-    assertAdminSecret(secret);
+    await assertAdminSecret(secret);
     writeSiteConfig(normalizeSiteConfig(JSON.parse(jsonText)));
     revalidatePublicData();
     return { success: true };
@@ -113,7 +120,7 @@ export async function saveRawConfig(secret: string, jsonText: string) {
 
 export async function saveTimetableOverride(secret: string, branch: string, sem: number, exams: any[]) {
   try {
-    assertAdminSecret(secret);
+    await assertAdminSecret(secret);
 
     const branchKey = safeSegment(branch, "branch");
     if (!getBranchDirName(branchKey) || !Number.isInteger(sem) || sem < 1 || sem > 8) {
@@ -134,7 +141,7 @@ export async function saveTimetableOverride(secret: string, branch: string, sem:
 
 export async function saveFaqOverride(secret: string, faqs: any[]) {
   try {
-    assertAdminSecret(secret);
+    await assertAdminSecret(secret);
 
     const currentConfig = readSiteConfig();
     currentConfig.customFaqs = (Array.isArray(faqs) ? faqs : [])
@@ -153,7 +160,7 @@ export async function saveFaqOverride(secret: string, faqs: any[]) {
 
 export async function saveQuickLinksOverride(secret: string, links: any[]) {
   try {
-    assertAdminSecret(secret);
+    await assertAdminSecret(secret);
 
     const currentConfig = readSiteConfig();
     currentConfig.quickLinks = (Array.isArray(links) ? links : [])
@@ -174,9 +181,9 @@ export async function saveQuickLinksOverride(secret: string, links: any[]) {
   }
 }
 
-export async function updateConfig(formData: FormData) {
+export async function updateConfig(prevState: { success: boolean; error?: string } | null, formData: FormData): Promise<{ success: boolean; error?: string }> {
   try {
-    assertAdminSecret(formData.get("secret"));
+    await assertAdminSecret(formData.get("secret"));
     const currentConfig = readSiteConfig();
 
     const visibleSems: number[] = [];
@@ -242,8 +249,9 @@ export async function updateConfig(formData: FormData) {
 
     writeSiteConfig(updated);
     revalidatePublicData();
+    return { success: true };
   } catch (error: any) {
     console.error("Failed to update config:", error);
-    throw new Error(error.message || "Failed to update config.");
+    return { success: false, error: error.message || "Failed to update config." };
   }
 }

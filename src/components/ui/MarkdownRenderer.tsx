@@ -1,6 +1,14 @@
 "use client";
 
 import React from "react";
+import DOMPurify from "dompurify";
+
+function sanitize(html: string): string {
+  return DOMPurify.sanitize(html, {
+    ALLOWED_TAGS: ["b", "i", "em", "strong", "code", "br", "sup", "sub", "span", "div", "pre", "p", "h1", "h2", "h3", "h4", "h5", "h6", "ul", "ol", "li", "blockquote", "table", "thead", "tbody", "tr", "th", "td", "a", "img", "hr"],
+    ALLOWED_ATTR: ["class", "href", "src", "alt", "title", "colspan", "rowspan", "align", "valign"],
+  });
+}
 
 interface MarkdownRendererProps {
   content: string;
@@ -159,7 +167,7 @@ function formatMathHTML(latex: string): string {
 }
 
 function MathSpan({ latex, block = false }: { latex: string; block?: boolean }) {
-  const formatted = formatMathHTML(latex);
+  const formatted = sanitize(formatMathHTML(latex));
   if (block) {
     return (
       <div 
@@ -198,7 +206,7 @@ function parseInline(text: string): React.ReactNode[] {
         <code 
           key={match.index} 
           className="px-1.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-sm font-mono font-semibold"
-          dangerouslySetInnerHTML={{ __html: match[4] }}
+          dangerouslySetInnerHTML={{ __html: sanitize(match[4]) }}
         />
       );
     } else if (match[5]) {
@@ -647,7 +655,7 @@ function CodeBlock({ code, language }: { code: string; language: string }) {
         <code className="text-slate-600 dark:text-slate-500 text-right pr-4 select-none border-r border-slate-800/60 mr-4 font-mono block shrink-0">
           {lineNumbers}
         </code>
-        <code className="block flex-1 overflow-x-auto scrollbar-thin scrollbar-thumb-slate-800" dangerouslySetInnerHTML={{ __html: highlightedHtml }} />
+        <code className="block flex-1 overflow-x-auto scrollbar-thin scrollbar-thumb-slate-800" dangerouslySetInnerHTML={{ __html: sanitize(highlightedHtml) }} />
       </pre>
     </div>
   );

@@ -34,8 +34,10 @@ const loadedSubjects: Subject[] = [];
 
 if (typeof window === "undefined") {
   try {
-    const fs = eval("require('fs')");
-    const path = eval("require('path')");
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const fs = require("fs");
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const path = require("path");
     const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
     if (fs.existsSync(subjectsDir)) {
       const files = fs.readdirSync(subjectsDir);

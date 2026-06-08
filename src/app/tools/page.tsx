@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
@@ -2094,6 +2094,7 @@ export default function ToolsPage() {
   const [notepadText, setNotepadText] = useState("");
   const [notepadSaved, setNotepadSaved] = useState(false);
   const [notepadSaving, setNotepadSaving] = useState(false);
+  const notepadTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   // --- STUDY CONSOLE STATES ---
   const [pomodoroTime, setPomodoroTime] = useState(1500); // 25 mins focus
@@ -2772,8 +2773,13 @@ export default function ToolsPage() {
     setNotepadSaved(false);
     localStorage.setItem("ktunode_tools_notepad", text);
 
+    // Clear any existing timer
+    if (notepadTimerRef.current) {
+      clearTimeout(notepadTimerRef.current);
+    }
+
     // Simulate auto-save debounce feedback
-    const timer = setTimeout(() => {
+    notepadTimerRef.current = setTimeout(() => {
       setNotepadSaving(false);
       setNotepadSaved(true);
     }, 600);

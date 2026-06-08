@@ -33,14 +33,13 @@ import {
   Lock,
   Mail,
   UserRound,
-  Loader2,
   LogOut,
   Cloud,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "next-themes";
 import dynamic from "next/dynamic";
-import { getSubjectsForSession, Subject, Topic } from "@/lib/mockData";
+import { Subject, Topic } from "@/lib/mockData";
 import { getTimetable } from "@/lib/timetableData";
 import { useProgress } from "@/hooks/useProgress";
 import { MagneticButton } from "@/components/ui/MagneticButton";
@@ -301,29 +300,6 @@ const getSubjectDomain = (subject: Subject | null): string => {
   if (id.includes("-ee-") || id.includes("-ec-") || id.includes("ect") || name.includes("electrical") || name.includes("electronics") || name.includes("circuit") || name.includes("signal")) return "ee_ec";
   if (id.includes("-me-") || id.includes("-ce-") || id.includes("met") || id.includes("cet") || name.includes("mechanical") || name.includes("civil") || name.includes("mechanics") || name.includes("fluid") || name.includes("thermo")) return "mech_civil";
   return "general";
-};
-
-const simpleHash = (str: string): number => {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = (hash << 5) - hash + str.charCodeAt(i);
-    hash |= 0;
-  }
-  return Math.abs(hash);
-};
-
-const getVideoIdForCard = (
-  type: "concept" | "lecture" | "solved",
-  subject: Subject | null,
-  topicTitle: string
-): string => {
-  const domain = getSubjectDomain(subject);
-  const videos = verifiedVideos[domain] || verifiedVideos.general;
-  const list = videos[type] || verifiedVideos.general[type];
-  if (!list || list.length === 0) return "fNk_zzaMoEs";
-  const hash = simpleHash(topicTitle);
-  const index = hash % list.length;
-  return list[index];
 };
 
 function DashboardContent() {
@@ -620,7 +596,7 @@ function DashboardContent() {
         }
       }
     }
-  }, [subjects]);
+  }, [subjects, selectedSubject, selectedTopic]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -794,7 +770,7 @@ function DashboardContent() {
     } catch (e) {
       console.warn("Audio Context haptic failed or blocked", e);
     }
-  }, []);
+  }, [getAudioContext]);
   const [searchTerm, setSearchTerm] = useState("");
   const [activeSearchIndex, setActiveSearchIndex] = useState(-1);
 

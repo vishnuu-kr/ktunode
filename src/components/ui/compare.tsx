@@ -73,10 +73,6 @@ export const Compare: React.FC<CompareProps> = ({
     }
   }, [slideMode, handlePositionChange]);
 
-  const handleMouseUp = useCallback(() => {
-    setIsDragging(false);
-  }, []);
-
   // Autoplay Logic (runs if autoplay=true and no user interaction yet)
   useEffect(() => {
     if (!autoplay || isInteracted) return;

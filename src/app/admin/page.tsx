@@ -12,6 +12,7 @@ import SchemeInspector from "@/components/admin/SchemeInspector";
 import JsonConfigEditor from "@/components/admin/JsonConfigEditor";
 import FaqEditor from "@/components/admin/FaqEditor";
 import QuickLinksEditor from "@/components/admin/QuickLinksEditor";
+import AdminConfigForm from "@/components/admin/AdminConfigForm";
 import { getTimetable } from "@/lib/timetableData";
 import { readSiteConfig, siteConfigPath } from "@/lib/siteConfig";
 import { 
@@ -19,76 +20,16 @@ import {
   saveRawConfig, 
   saveTimetableOverride, 
   saveFaqOverride, 
-  saveQuickLinksOverride, 
-  updateConfig 
+  saveQuickLinksOverride 
 } from "./actions";
+import { loginAdmin } from "./auth";
+import { cookies } from "next/headers";
 
 interface PageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export const dynamic = "force-dynamic";
-
-const configPath = path.join(process.cwd(), "constants", "site-config.json");
-
-// Helper to read configuration safely
-function getConfig() {
-  try {
-    if (fs.existsSync(configPath)) {
-      const fileData = fs.readFileSync(configPath, "utf8");
-      return JSON.parse(fileData);
-    }
-  } catch (e) {
-    console.error("Failed to read site-config.json:", e);
-  }
-  return {
-    siteName: "KTU Node",
-    maintenanceMode: false,
-    activeScheme: "2024 Scheme",
-    allowedBranches: ["cs", "ec", "me", "ce", "ee"],
-    visibleSemesters: [1, 2, 3, 4, 5, 6, 7, 8],
-    activeTools: {
-      attendance: true,
-      gpa: true,
-      runway: true,
-      lab: true
-    },
-    externalLinks: {
-      studentLogin: "https://app.ktu.edu.in",
-      ktuPortal: "https://ktu.edu.in"
-    },
-    bannerText: "",
-    bannerEnabled: false,
-    bannerSeverity: "info",
-    bannerDismissible: true,
-    minAttendance: 75,
-    minCie: 40,
-    activityPointsLimit: 120,
-    progressionS5Credits: 26,
-    progressionS7Credits: 52,
-    examStartDate: "2026-07-15",
-    timetableOverrides: {},
-    landingPageSections: {
-      compare: true,
-      howItWorks: true,
-      foundree: true,
-      features: true,
-      testimonials: true,
-      faqs: true,
-      cta: true
-    },
-    seo: {
-      title: "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE",
-      description: "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme. CS, EC, ME, CE, EE — all semesters covered.",
-      keywords: "KTU notes, KTU syllabus 2024 scheme, KTU previous year question papers, KTU B.Tech notes, KTU study materials, KTU PYQ, KTU S1 notes, KTU S2 notes, KTU S3 notes, KTU CSE notes 2024, KTU model question papers, KTU module wise notes, APJ Abdul Kalam Technological University syllabus, KTU exam preparation, KTUNODE, KTU 2024 scheme subjects, KTU chapter wise notes, Kerala Technological University"
-    },
-    customFaqs: [],
-    primaryAccent: "blue",
-    lockdownMode: false,
-    lockdownPasscode: "1234",
-    quickLinks: []
-  };
-}
 
 // Helper to read topic path map
 function getTopicPathMap() {
@@ -120,18 +61,6 @@ function getSubjects(branch: string, sem: number) {
     console.error("Failed to load subjects file:", e);
   }
   return [];
-}
-
-// Helper to convert branch to directory slug
-function getBranchDirName(branch: string): string {
-  const mapping: Record<string, string> = {
-    cs: "computer-science-and-engineering",
-    ec: "electronics-and-communication-engineering",
-    me: "mechanical-engineering",
-    ce: "civil-engineering",
-    ee: "electrical-and-electronics-engineering"
-  };
-  return mapping[branch.toLowerCase()] || branch.toLowerCase();
 }
 
 // Helper to calculate notes folder size recursively
@@ -302,8 +231,20 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
   const cmsSubjectId = (params?.subject as string) || "";
   const cmsTopicId = (params?.topic as string) || "";
   
-  const correctSecret = process.env.ADMIN_SECRET_KEY || "dev_secret_key";
-  const isAuthorized = secretParam === correctSecret;
+  const correctSecret = process.env.ADMIN_SECRET_KEY;
+  if (!correctSecret) {
+    return (
+      <div className="min-h-screen bg-[#070709] text-white flex flex-col items-center justify-center p-6 font-sans">
+        <div className="relative z-10 max-w-md w-full bg-white/[0.02] border border-white/10 rounded-3xl p-8 backdrop-blur-2xl text-center shadow-2xl">
+          <h1 className="text-xl font-bold text-red-400 mb-2">Configuration Error</h1>
+          <p className="text-white/60 text-sm">ADMIN_SECRET_KEY environment variable is not set.</p>
+        </div>
+      </div>
+    );
+  }
+  const cookieStore = await cookies();
+  const cookieSecret = cookieStore.get("admin_secret")?.value;
+  const isAuthorized = secretParam === correctSecret || cookieSecret === correctSecret;
 
   // 401 Unauthorized password gate
   if (!isAuthorized) {
@@ -321,7 +262,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
           <p className="text-gray-400 text-sm mb-6 leading-relaxed">
             This dashboard controls global routing, branding, and layouts. Authenticate with your administrative key to gain access.
           </p>
-          <form method="GET" className="space-y-4">
+          <form action={loginAdmin} className="space-y-4">
             <input
               type="password"
               name="secret"
@@ -645,8 +586,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
                 <h2 className="text-lg font-bold text-gray-200">Global Variable Overrides</h2>
               </div>
 
-              <form action={updateConfig} className="space-y-6">
-                <input type="hidden" name="secret" value={secretParam as string} />
+              <AdminConfigForm secret={(secretParam as string) || cookieSecret || ""} config={config} notesSizeMB={notesSizeMB}>
 
                 {/* Platform branding name */}
                 <div>
@@ -1060,14 +1000,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
                   </div>
                 </div>
 
-                {/* Submit button */}
-                <button 
-                  type="submit" 
-                  className="w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-all duration-200 active:scale-[0.99] text-sm cursor-pointer shadow-lg"
-                >
-                  Push Global Updates to Server
-                </button>
-              </form>
+              </AdminConfigForm>
             </section>
           </div>
         </div>
