@@ -14,14 +14,14 @@ const allowedBranchDirs: Record<string, string> = {
   ee: "electrical-and-electronics-engineering",
 };
 
-async function assertAdminSecret(secret?: unknown) {
+async function assertAdminSecret() {
   const correctSecret = process.env.ADMIN_SECRET_KEY;
   if (!correctSecret) {
     throw new Error("ADMIN_SECRET_KEY environment variable is not set.");
   }
   const cookieStore = await cookies();
   const cookieSecret = cookieStore.get("admin_secret")?.value;
-  if ((typeof secret === "string" && secret === correctSecret) || (cookieSecret === correctSecret)) {
+  if (cookieSecret === correctSecret) {
     return;
   }
   throw new Error("Unauthorized admin mutation attempt.");
@@ -49,7 +49,7 @@ function revalidatePublicData() {
 
 export async function saveNoteFile(formData: FormData) {
   try {
-    await assertAdminSecret(formData.get("secret"));
+    await assertAdminSecret();
 
     const branch = safeSegment((formData.get("branch") as string) || "", "branch");
     const sem = safeSegment((formData.get("sem") as string) || "", "semester");
@@ -106,9 +106,9 @@ export async function saveNoteFile(formData: FormData) {
   }
 }
 
-export async function saveRawConfig(secret: string, jsonText: string) {
+export async function saveRawConfig(jsonText: string) {
   try {
-    await assertAdminSecret(secret);
+    await assertAdminSecret();
     writeSiteConfig(normalizeSiteConfig(JSON.parse(jsonText)));
     revalidatePublicData();
     return { success: true };
@@ -118,9 +118,9 @@ export async function saveRawConfig(secret: string, jsonText: string) {
   }
 }
 
-export async function saveTimetableOverride(secret: string, branch: string, sem: number, exams: any[]) {
+export async function saveTimetableOverride(branch: string, sem: number, exams: any[]) {
   try {
-    await assertAdminSecret(secret);
+    await assertAdminSecret();
 
     const branchKey = safeSegment(branch, "branch");
     if (!getBranchDirName(branchKey) || !Number.isInteger(sem) || sem < 1 || sem > 8) {
@@ -139,9 +139,9 @@ export async function saveTimetableOverride(secret: string, branch: string, sem:
   }
 }
 
-export async function saveFaqOverride(secret: string, faqs: any[]) {
+export async function saveFaqOverride(faqs: any[]) {
   try {
-    await assertAdminSecret(secret);
+    await assertAdminSecret();
 
     const currentConfig = readSiteConfig();
     currentConfig.customFaqs = (Array.isArray(faqs) ? faqs : [])
@@ -158,9 +158,9 @@ export async function saveFaqOverride(secret: string, faqs: any[]) {
   }
 }
 
-export async function saveQuickLinksOverride(secret: string, links: any[]) {
+export async function saveQuickLinksOverride(links: any[]) {
   try {
-    await assertAdminSecret(secret);
+    await assertAdminSecret();
 
     const currentConfig = readSiteConfig();
     currentConfig.quickLinks = (Array.isArray(links) ? links : [])
@@ -183,7 +183,7 @@ export async function saveQuickLinksOverride(secret: string, links: any[]) {
 
 export async function updateConfig(prevState: { success: boolean; error?: string } | null, formData: FormData): Promise<{ success: boolean; error?: string }> {
   try {
-    await assertAdminSecret(formData.get("secret"));
+    await assertAdminSecret();
     const currentConfig = readSiteConfig();
 
     const visibleSems: number[] = [];

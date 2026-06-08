@@ -222,7 +222,6 @@ async function getKtuAnnouncements(): Promise<Announcement[]> {
 
 export default async function AdminDashboard({ searchParams }: PageProps) {
   const params = await searchParams;
-  const secretParam = params?.secret;
   const runAuditParam = params?.audit === "true";
   
   // Note CMS dynamic props
@@ -257,7 +256,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
   }
   const cookieStore = await cookies();
   const cookieSecret = cookieStore.get("admin_secret")?.value;
-  const isAuthorized = secretParam === correctSecret || cookieSecret === correctSecret;
+  const isAuthorized = cookieSecret === correctSecret;
 
   // 401 Unauthorized password gate
   if (!isAuthorized) {
@@ -375,14 +374,14 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
             </Link>
             {!runAuditParam ? (
               <Link 
-                href={`/admin?secret=${secretParam}&audit=true`}
+                href={`/admin?audit=true`}
                 className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition text-sm flex items-center gap-2 shadow-lg shadow-blue-900/30"
               >
                 <RefreshCw className="w-4 h-4" /> Run Syllabus Audit
               </Link>
             ) : (
               <Link 
-                href={`/admin?secret=${secretParam}`}
+                href={`/admin`}
                 className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition text-sm flex items-center gap-2"
               >
                 Clear Audit
@@ -524,7 +523,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
                             S{item.semester}
                           </span>
                           <Link 
-                            href={`/admin?secret=${secretParam}&audit=true&branch=${item.branch.toLowerCase()}&sem=${item.semester}&subject=${item.subjectId}&topic=${item.topicId}#note-editor`}
+                            href={`/admin?audit=true&branch=${item.branch.toLowerCase()}&sem=${item.semester}&subject=${item.subjectId}&topic=${item.topicId}#note-editor`}
                             className="px-2.5 py-1 text-[10px] font-bold bg-blue-600/25 hover:bg-blue-600 text-blue-400 hover:text-white rounded-md transition-colors"
                           >
                             Resolve
@@ -539,7 +538,6 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
 
             {/* Note Editor & Database CMS Panel */}
             <CmsPanel 
-              secretParam={secretParam as string}
               allowedBranches={config.allowedBranches}
               visibleSemesters={config.visibleSemesters || [1, 2, 3, 4, 5, 6, 7, 8]}
               subjects={cmsSubjects}
@@ -554,7 +552,6 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
 
             {/* Timetable Override Editor */}
             <TimetableEditor
-              secretParam={secretParam as string}
               allowedBranches={config.allowedBranches}
               visibleSemesters={config.visibleSemesters || [1, 2, 3, 4, 5, 6, 7, 8]}
               initialExams={initialTimetableExams}
@@ -571,21 +568,18 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
 
             {/* Dynamic FAQ Accordion Editor */}
             <FaqEditor
-              secretParam={secretParam as string}
               initialFaqs={config.customFaqs || []}
               saveFaqsAction={saveFaqOverride}
             />
 
             {/* Quick Links & Resource Manager */}
             <QuickLinksEditor
-              secretParam={secretParam as string}
               initialLinks={config.quickLinks || []}
               saveLinksAction={saveQuickLinksOverride}
             />
 
             {/* Raw JSON Configuration Editor */}
             <JsonConfigEditor
-              secretParam={secretParam as string}
               initialJson={rawConfigString}
               saveRawConfigAction={saveRawConfig}
             />
@@ -599,7 +593,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
                 <h2 className="text-lg font-bold text-gray-200">Global Variable Overrides</h2>
               </div>
 
-              <AdminConfigForm secret={(secretParam as string) || cookieSecret || ""} config={config} notesSizeMB={notesSizeMB}>
+              <AdminConfigForm config={config} notesSizeMB={notesSizeMB}>
 
                 {/* Platform branding name */}
                 <div>

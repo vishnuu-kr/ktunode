@@ -6,14 +6,12 @@ import { updateConfig } from "@/app/admin/actions";
 import type { SiteConfig } from "@/lib/siteConfig";
 
 interface AdminConfigFormProps {
-  secret: string;
   config: SiteConfig;
   notesSizeMB: string;
   children: React.ReactNode;
 }
 
 export default function AdminConfigForm({
-  secret,
   config,
   notesSizeMB,
   children,
@@ -57,7 +55,6 @@ export default function AdminConfigForm({
       )}
 
       <form action={formAction} className="space-y-6">
-        <input type="hidden" name="secret" value={secret} />
 
         {children}
 

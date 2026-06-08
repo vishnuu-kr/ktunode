@@ -11,7 +11,19 @@ export async function loginAdmin(formData: FormData) {
   }
   if (secret === adminSecret) {
     const cookieStore = await cookies();
-    cookieStore.set("admin_secret", secret as string, { path: "/", maxAge: 60 * 60 * 24 * 7 });
+    cookieStore.set("admin_secret", secret as string, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 7,
+      httpOnly: true,
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+    });
     redirect("/admin");
   }
+}
+
+export async function logoutAdmin() {
+  const cookieStore = await cookies();
+  cookieStore.delete("admin_secret");
+  redirect("/admin");
 }

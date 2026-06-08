@@ -12,17 +12,15 @@ interface ExamSlot {
 }
 
 interface TimetableEditorProps {
-  secretParam: string;
   allowedBranches: string[];
   visibleSemesters: number[];
   initialExams: ExamSlot[];
   currentBranch: string;
   currentSem: number;
-  saveTimetableAction: (secret: string, branch: string, sem: number, exams: ExamSlot[]) => Promise<{ success: boolean; error?: string }>;
+  saveTimetableAction: (branch: string, sem: number, exams: ExamSlot[]) => Promise<{ success: boolean; error?: string }>;
 }
 
 export default function TimetableEditor({
-  secretParam,
   allowedBranches,
   visibleSemesters,
   initialExams,
@@ -49,13 +47,13 @@ export default function TimetableEditor({
   const handleBranchChange = (newBranch: string) => {
     setBranch(newBranch);
     setFeedback(null);
-    router.push(`/admin?secret=${secretParam}&branch=${cmsBranchSlug()}&sem=${sem}&tab=timetable`);
+    router.push(`/admin?branch=${cmsBranchSlug()}&sem=${sem}&tab=timetable`);
   };
 
   const handleSemChange = (newSem: number) => {
     setSem(newSem);
     setFeedback(null);
-    router.push(`/admin?secret=${secretParam}&branch=${branch}&sem=${newSem}&tab=timetable`);
+    router.push(`/admin?branch=${branch}&sem=${newSem}&tab=timetable`);
   };
 
   // Safe navigation helper
@@ -87,7 +85,7 @@ export default function TimetableEditor({
 
     startTransition(async () => {
       try {
-        const res = await saveTimetableAction(secretParam, branch, sem, exams);
+        const res = await saveTimetableAction(branch, sem, exams);
         if (res.success) {
           setFeedback({ type: "success", message: `Exam timetable for ${branch.toUpperCase()} S${sem} updated successfully!` });
           router.refresh();

@@ -23,7 +23,6 @@ interface Subject {
 }
 
 interface CmsPanelProps {
-  secretParam: string;
   allowedBranches: string[];
   visibleSemesters: number[];
   subjects: Subject[];
@@ -37,7 +36,6 @@ interface CmsPanelProps {
 }
 
 export default function CmsPanel({
-  secretParam,
   allowedBranches,
   visibleSemesters,
   subjects,
@@ -75,25 +73,25 @@ export default function CmsPanel({
     setBranch(newBranch);
     setSubjectId("");
     setTopicId("");
-    router.push(`/admin?secret=${secretParam}&branch=${newBranch}&sem=${sem}`);
+    router.push(`/admin?branch=${newBranch}&sem=${sem}`);
   };
 
   const handleSemChange = (newSem: number) => {
     setSem(newSem);
     setSubjectId("");
     setTopicId("");
-    router.push(`/admin?secret=${secretParam}&branch=${branch}&sem=${newSem}`);
+    router.push(`/admin?branch=${branch}&sem=${newSem}`);
   };
 
   const handleSubjectChange = (newSubId: string) => {
     setSubjectId(newSubId);
     setTopicId("");
-    router.push(`/admin?secret=${secretParam}&branch=${branch}&sem=${sem}&subject=${newSubId}`);
+    router.push(`/admin?branch=${branch}&sem=${sem}&subject=${newSubId}`);
   };
 
   const handleTopicChange = (newTopicId: string) => {
     setTopicId(newTopicId);
-    router.push(`/admin?secret=${secretParam}&branch=${branch}&sem=${sem}&subject=${subjectId}&topic=${newTopicId}#note-editor`);
+    router.push(`/admin?branch=${branch}&sem=${sem}&subject=${subjectId}&topic=${newTopicId}#note-editor`);
   };
 
   const selectedSubject = subjects.find(s => s.id === subjectId);
@@ -107,7 +105,6 @@ export default function CmsPanel({
     setFeedback(null);
 
     const formData = new FormData(e.currentTarget);
-    formData.append("secret", secretParam);
     formData.append("branch", branch);
     formData.append("sem", String(sem));
     formData.append("subjectId", subjectId);
