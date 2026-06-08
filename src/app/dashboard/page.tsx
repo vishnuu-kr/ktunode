@@ -4,6 +4,7 @@ import React, { Suspense, useEffect, useRef, useState } from "react";
 import { useParams, usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
+  AlertTriangle,
   ArrowRight,
   BadgeCheck,
   BookOpen,
@@ -517,7 +518,13 @@ function DashboardContent() {
       .then((data) => {
         if (active) {
           if (data.error) {
-            setNoteContent(`Error loading note: ${data.error}`);
+            if (data.error.includes("missing on disk")) {
+              setNoteContent("__NOTE_MISSING__");
+            } else if (data.error.includes("not found") || data.error.includes("Not found")) {
+              setNoteContent("__NOTE_MISSING__");
+            } else {
+              setNoteContent(`Error loading note: ${data.error}`);
+            }
           } else {
             const content = data.content || "";
             clientNotesCache[cacheKey] = content;
@@ -2005,7 +2012,17 @@ function DashboardContent() {
                                   <Sparkles className="w-3 h-3 animate-pulse" />
                                   Mastery Achieved
                                 </span>
-                              ) : (
+                  ) : noteContent.startsWith("Error loading note:") ? (
+                    <div className="max-w-3xl mx-auto py-8 px-4">
+                      <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-6 text-center">
+                        <AlertTriangle className="w-8 h-8 text-red-400 mx-auto mb-3" />
+                        <h3 className="text-sm font-bold text-red-300 mb-2">Failed to Load Note</h3>
+                        <p className="text-xs text-gray-400 leading-relaxed max-w-sm mx-auto">
+                          {noteContent.replace("Error loading note: ", "")}
+                        </p>
+                      </div>
+                    </div>
+                  ) : (
                                 <>
                                   <div className="flex items-center gap-3 shrink-0">
                                     <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 tracking-wider">MODULE PROGRESS</span>
