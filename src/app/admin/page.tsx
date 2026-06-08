@@ -13,6 +13,7 @@ import JsonConfigEditor from "@/components/admin/JsonConfigEditor";
 import FaqEditor from "@/components/admin/FaqEditor";
 import QuickLinksEditor from "@/components/admin/QuickLinksEditor";
 import AdminConfigForm from "@/components/admin/AdminConfigForm";
+import AdminLoginForm from "@/components/admin/AdminLoginForm";
 import { getTimetable } from "@/lib/timetableData";
 import { readSiteConfig, siteConfigPath } from "@/lib/siteConfig";
 import { 
@@ -22,7 +23,7 @@ import {
   saveFaqOverride, 
   saveQuickLinksOverride 
 } from "./actions";
-import { loginAdmin, logoutAdmin } from "./auth";
+import { logoutAdmin } from "./auth";
 import { cookies } from "next/headers";
 
 interface PageProps {
@@ -260,35 +261,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
 
   // 401 Unauthorized password gate
   if (!isAuthorized) {
-    return (
-      <div className="min-h-screen bg-[#070709] text-white flex flex-col items-center justify-center p-6 font-sans">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
-          <div className="absolute top-[30%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-blue-500/10 blur-[140px]" />
-        </div>
-
-        <div className="relative z-10 max-w-md w-full bg-white/[0.02] border border-white/10 rounded-3xl p-8 backdrop-blur-2xl text-center shadow-2xl">
-          <div className="inline-flex p-4 bg-red-500/10 rounded-2xl text-red-500 mb-6">
-            <Shield className="w-8 h-8 animate-pulse" />
-          </div>
-          <h2 className="text-2xl font-bold mb-2 tracking-tight">System Access Lock</h2>
-          <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-            This dashboard controls global routing, branding, and layouts. Authenticate with your administrative key to gain access.
-          </p>
-          <form action={loginAdmin} className="space-y-4">
-            <input
-              type="password"
-              name="secret"
-              placeholder="Enter System Secret..."
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-center focus:outline-none focus:border-white/30 transition text-sm font-mono"
-              autoFocus
-            />
-            <button type="submit" className="w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition text-sm cursor-pointer shadow-lg active:scale-[0.98]">
-              Unlock Command Center
-            </button>
-          </form>
-        </div>
-      </div>
-    );
+    return <AdminLoginForm />;
   }
 
   const config = readSiteConfig();

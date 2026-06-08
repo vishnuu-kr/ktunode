@@ -51,6 +51,11 @@ export async function saveNoteFile(formData: FormData) {
   try {
     await assertAdminSecret();
 
+    const { isServerless } = await import("@/lib/github");
+    if (isServerless()) {
+      return { success: false, error: "Note uploads require a traditional server (VPS). Filesystem writes are not supported on Vercel serverless. Deploy to a VPS to upload notes." };
+    }
+
     const branch = safeSegment((formData.get("branch") as string) || "", "branch");
     const sem = safeSegment((formData.get("sem") as string) || "", "semester");
     const subjectId = safeSegment((formData.get("subjectId") as string) || "", "subject");
@@ -109,7 +114,7 @@ export async function saveNoteFile(formData: FormData) {
 export async function saveRawConfig(jsonText: string) {
   try {
     await assertAdminSecret();
-    writeSiteConfig(normalizeSiteConfig(JSON.parse(jsonText)));
+    await writeSiteConfig(normalizeSiteConfig(JSON.parse(jsonText)));
     revalidatePublicData();
     return { success: true };
   } catch (error: any) {
@@ -129,7 +134,7 @@ export async function saveTimetableOverride(branch: string, sem: number, exams: 
 
     const currentConfig = readSiteConfig();
     currentConfig.timetableOverrides[`${branchKey}-${sem}`] = Array.isArray(exams) ? exams : [];
-    writeSiteConfig(currentConfig);
+    await writeSiteConfig(currentConfig);
 
     revalidatePublicData();
     return { success: true };
@@ -148,7 +153,7 @@ export async function saveFaqOverride(faqs: any[]) {
       .filter((faq) => faq && typeof faq.q === "string" && typeof faq.a === "string")
       .map((faq) => ({ q: faq.q.trim(), a: faq.a.trim() }))
       .filter((faq) => faq.q && faq.a);
-    writeSiteConfig(currentConfig);
+    await writeSiteConfig(currentConfig);
 
     revalidatePublicData();
     return { success: true };
@@ -171,7 +176,7 @@ export async function saveQuickLinksOverride(links: any[]) {
         category: typeof link.category === "string" ? link.category.trim() || "Utility" : "Utility",
       }))
       .filter((link) => link.title && link.url);
-    writeSiteConfig(currentConfig);
+    await writeSiteConfig(currentConfig);
 
     revalidatePublicData();
     return { success: true };
@@ -247,7 +252,7 @@ export async function updateConfig(prevState: { success: boolean; error?: string
       quickLinks: currentConfig.quickLinks,
     });
 
-    writeSiteConfig(updated);
+    await writeSiteConfig(updated);
     revalidatePublicData();
     return { success: true };
   } catch (error: any) {

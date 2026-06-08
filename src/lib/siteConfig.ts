@@ -205,12 +205,21 @@ export function readSiteConfig(): SiteConfig {
   return defaultSiteConfig;
 }
 
-export function writeSiteConfig(config: SiteConfig) {
+export async function writeSiteConfig(config: SiteConfig): Promise<void> {
+  const normalized = normalizeSiteConfig(config);
+  const content = `${JSON.stringify(normalized, null, 2)}\n`;
+
+  const { isServerless, commitFileToGitHub } = await import("./github");
+  if (isServerless()) {
+    await commitFileToGitHub("constants/site-config.json", content, "chore: update site config via admin panel");
+    return;
+  }
+
   const dir = path.dirname(siteConfigPath);
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
-  fs.writeFileSync(siteConfigPath, `${JSON.stringify(normalizeSiteConfig(config), null, 2)}\n`, "utf8");
+  fs.writeFileSync(siteConfigPath, content, "utf8");
 }
 
 export function parseKeywords(keywords: string): string[] {

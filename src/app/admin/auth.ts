@@ -3,11 +3,11 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-export async function loginAdmin(formData: FormData) {
+export async function loginAdmin(prevState: { error: string } | null, formData: FormData): Promise<{ error: string }> {
   const secret = formData.get("secret");
   const adminSecret = process.env.ADMIN_SECRET_KEY;
   if (!adminSecret) {
-    throw new Error("ADMIN_SECRET_KEY environment variable is not set.");
+    return { error: "ADMIN_SECRET_KEY environment variable is not set on the server." };
   }
   if (secret === adminSecret) {
     const cookieStore = await cookies();
@@ -20,6 +20,7 @@ export async function loginAdmin(formData: FormData) {
     });
     redirect("/admin");
   }
+  return { error: "Incorrect password. Try again." };
 }
 
 export async function logoutAdmin() {
