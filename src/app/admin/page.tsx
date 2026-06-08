@@ -3,7 +3,7 @@ import path from "path";
 import Link from "next/link";
 import { 
   Settings, Shield, AlertTriangle, CheckCircle, RefreshCw, 
-  Database, Bell, ArrowLeft
+  Database, Bell, ArrowLeft, LogOut
 } from "lucide-react";
 import CmsPanel from "@/components/admin/CmsPanel";
 import KtuAnnouncementsList from "@/components/admin/KtuAnnouncementsList";
@@ -22,7 +22,7 @@ import {
   saveFaqOverride, 
   saveQuickLinksOverride 
 } from "./actions";
-import { loginAdmin } from "./auth";
+import { loginAdmin, logoutAdmin } from "./auth";
 import { cookies } from "next/headers";
 
 interface PageProps {
@@ -372,6 +372,14 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
             >
               <ArrowLeft className="w-4 h-4" /> Exit to Homepage
             </Link>
+            <form action={logoutAdmin}>
+              <button 
+                type="submit" 
+                className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-400 transition text-sm flex items-center gap-2 cursor-pointer"
+              >
+                <LogOut className="w-4 h-4" /> Logout
+              </button>
+            </form>
             {!runAuditParam ? (
               <Link 
                 href={`/admin?audit=true`}
