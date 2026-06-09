@@ -15,3 +15,7 @@ export async function readFromKV<T>(key: string): Promise<T | null> {
 export async function writeToKV(key: string, value: unknown): Promise<void> {
   await kv.set(key, value);
 }
+
+export async function deleteFromKV(key: string): Promise<void> {
+  await kv.del(key);
+}

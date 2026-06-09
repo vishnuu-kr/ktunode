@@ -193,13 +193,11 @@ export function normalizeSiteConfig(value: unknown): SiteConfig {
   };
 }
 
-export async function readSiteConfig(): Promise<SiteConfig> {
-  const { isServerless, readFromKV } = await import("./github");
-  if (isServerless()) {
-    const kvConfig = await readFromKV<SiteConfig>("site-config");
-    if (kvConfig) return normalizeSiteConfig(kvConfig);
-  }
+let cachedConfig: SiteConfig | null = null;
+let cacheTimestamp = 0;
+const CACHE_TTL_MS = 30_000;
 
+function readFsConfig(): SiteConfig {
   try {
     if (fs.existsSync(siteConfigPath)) {
       return normalizeSiteConfig(JSON.parse(fs.readFileSync(siteConfigPath, "utf8")));
@@ -207,12 +205,34 @@ export async function readSiteConfig(): Promise<SiteConfig> {
   } catch (error) {
     console.error("Failed to read site-config.json:", error);
   }
-
   return defaultSiteConfig;
+}
+
+async function readKvConfig(): Promise<SiteConfig> {
+  const { readFromKV } = await import("./github");
+  const kvConfig = await readFromKV<SiteConfig>("site-config");
+  if (kvConfig) return normalizeSiteConfig(kvConfig);
+  return defaultSiteConfig;
+}
+
+export async function readSiteConfig(): Promise<SiteConfig> {
+  const now = Date.now();
+  if (cachedConfig && now - cacheTimestamp < CACHE_TTL_MS) {
+    return cachedConfig;
+  }
+
+  const { isServerless } = await import("./github");
+  const config = isServerless() ? await readKvConfig() : readFsConfig();
+
+  cachedConfig = config;
+  cacheTimestamp = now;
+  return config;
 }
 
 export async function writeSiteConfig(config: SiteConfig): Promise<void> {
   const normalized = normalizeSiteConfig(config);
+  cachedConfig = normalized;
+  cacheTimestamp = Date.now();
 
   const { isServerless, writeToKV } = await import("./github");
   if (isServerless()) {

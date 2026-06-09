@@ -43,8 +43,6 @@ function revalidatePublicData() {
   revalidatePath("/");
   revalidatePath("/admin");
   revalidatePath("/dashboard");
-  revalidatePath("/notes");
-  revalidatePath("/sitemap.xml");
 }
 
 export async function saveNoteFile(formData: FormData) {
