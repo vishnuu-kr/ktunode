@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { Shield } from "lucide-react";
 import { loginAdmin } from "@/app/admin/auth";
 
-export default function AdminLoginForm() {
+export default function AdminLoginForm({ accessKey }: { accessKey: string }) {
   const [state, formAction, isPending] = useActionState(loginAdmin, null);
 
   return (
@@ -22,6 +22,7 @@ export default function AdminLoginForm() {
           This dashboard controls global routing, branding, and layouts. Authenticate with your administrative key to gain access.
         </p>
         <form action={formAction} className="space-y-4">
+          <input type="hidden" name="accessKey" value={accessKey} />
           <input
             type="password"
             name="secret"

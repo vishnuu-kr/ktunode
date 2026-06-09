@@ -1,7 +1,9 @@
 import fs from "fs";
 import path from "path";
 import { Suspense } from "react";
+import { notFound } from "next/navigation";
 import { AlertTriangle } from "lucide-react";
+import crypto from "crypto";
 import AdminPanel from "@/components/admin/AdminPanel";
 import AdminLoginForm from "@/components/admin/AdminLoginForm";
 import { getTimetable } from "@/lib/timetableData";
@@ -9,6 +11,19 @@ import { readSiteConfig } from "@/lib/siteConfig";
 import { cookies } from "next/headers";
 
 export const dynamic = "force-dynamic";
+
+function safeEqual(a: string, b: string): boolean {
+  if (!a || !b) return false;
+  const bufA = Buffer.from(a);
+  const bufB = Buffer.from(b);
+  if (bufA.length !== bufB.length) return false;
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
+function getAdminAccessKey(): string {
+  const secret = process.env.ADMIN_SECRET_KEY || "";
+  return crypto.createHash("sha256").update(secret).digest("hex").slice(0, 16);
+}
 
 interface PageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
@@ -196,6 +211,13 @@ async function getKtuAnnouncements(): Promise<Announcement[]> {
 
 export default async function AdminDashboard({ searchParams }: PageProps) {
   const params = await searchParams;
+  const accessKey = typeof params?.key === "string" ? params.key : "";
+  const expectedKey = getAdminAccessKey();
+
+  if (!expectedKey || !accessKey || !safeEqual(accessKey, expectedKey)) {
+    notFound();
+  }
+
   const runAuditParam = params?.audit === "true";
 
   const cmsBranch = ((params?.branch as string) || "cs").toLowerCase();
@@ -230,10 +252,10 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
 
   const cookieStore = await cookies();
   const cookieSecret = cookieStore.get("admin_secret")?.value;
-  const isAuthorized = cookieSecret === correctSecret;
+  const isAuthorized = cookieSecret && correctSecret ? safeEqual(cookieSecret, correctSecret) : false;
 
   if (!isAuthorized) {
-    return <AdminLoginForm />;
+    return <AdminLoginForm accessKey={accessKey} />;
   }
 
   const config = await readSiteConfig();
@@ -294,6 +316,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
         announcements={announcements}
         auditResult={auditResult}
         runAuditParam={runAuditParam}
+        accessKey={accessKey}
       />
     </Suspense>
   );

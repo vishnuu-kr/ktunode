@@ -70,6 +70,7 @@ interface AdminPanelProps {
   announcements: any[];
   auditResult: any;
   runAuditParam: boolean;
+  accessKey: string;
 }
 
 export default function AdminPanel({
@@ -87,6 +88,7 @@ export default function AdminPanel({
   announcements,
   auditResult,
   runAuditParam,
+  accessKey,
 }: AdminPanelProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -170,6 +172,7 @@ export default function AdminPanel({
           maintenanceMode={config.maintenanceMode}
           onAuditToggle={handleAuditToggle}
           showAudit={runAuditParam}
+          accessKey={accessKey}
         />
 
         <AdminTabs activeTab={activeTab} onTabChange={handleTabChange}>

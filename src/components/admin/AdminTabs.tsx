@@ -85,11 +85,13 @@ export function AdminHeader({
   maintenanceMode,
   onAuditToggle,
   showAudit,
+  accessKey,
 }: {
   siteName: string;
   maintenanceMode: boolean;
   onAuditToggle: () => void;
   showAudit: boolean;
+  accessKey: string;
 }) {
   return (
     <header className="mb-8 flex flex-col md:flex-row md:items-center md:justify-between border-b border-white/10 pb-6 gap-4">
@@ -116,6 +118,7 @@ export function AdminHeader({
           <ArrowLeft className="w-4 h-4" /> Home
         </a>
         <form action={logoutAdmin as any}>
+          <input type="hidden" name="accessKey" value={accessKey} />
           <button
             type="submit"
             className="px-3 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-400 transition text-sm flex items-center gap-2 cursor-pointer"
