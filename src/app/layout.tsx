@@ -199,14 +199,14 @@ export default async function RootLayout({
 
   const config = await readSiteConfig();
   const cookieStore = await cookies();
-  const lockdownPasscode = config.lockdownPasscode || "1234";
 
   const headerList = await headers();
   const pathname = headerList.get("x-pathname") || "";
 
   const isLockdownActive = config.lockdownMode === true && !pathname.startsWith("/admin") && !pathname.startsWith("/api");
   const userPasscode = cookieStore.get("ktunode_lockdown_passcode")?.value;
-  const isAuthorized = userPasscode === lockdownPasscode;
+  const lockdownPasscode = config.lockdownPasscode;
+  const isAuthorized = userPasscode && lockdownPasscode ? userPasscode === lockdownPasscode : false;
 
   const isUnderMaintenance = config.maintenanceMode && !pathname.startsWith("/admin") && !pathname.startsWith("/api");
 
@@ -269,7 +269,7 @@ export default async function RootLayout({
                 </div>
               </div>
             ) : isLockdownActive && !isAuthorized ? (
-              <LockdownGate correctPasscode={lockdownPasscode} />
+              <LockdownGate />
             ) : (
               <>
                 {config.bannerEnabled && config.bannerText && (() => {

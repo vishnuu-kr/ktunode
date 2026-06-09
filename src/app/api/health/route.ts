@@ -15,7 +15,6 @@ interface HealthCheck {
 }
 
 export async function GET() {
-  const startTime = Date.now();
   const checks: HealthCheck["checks"] = {
     kv: { status: "ok" },
     env: { status: "ok", missing: [] },
@@ -38,13 +37,14 @@ export async function GET() {
   for (const envVar of requiredEnvVars) {
     if (!process.env[envVar]) {
       checks.env.status = "missing";
-      checks.env.missing.push(envVar);
+      checks.env.missing.push("required");
+      break;
     }
   }
 
   for (const envVar of optionalEnvVars) {
     if (!process.env[envVar]) {
-      checks.env.missing.push(`${envVar} (optional)`);
+      checks.env.missing.push("optional");
     }
   }
 

@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
     const fontBold = await fetch(new URL('/fonts/Inter-Bold.ttf', request.url)).then((res) => res.arrayBuffer());
     const fontMedium = await fetch(new URL('/fonts/Inter-Medium.ttf', request.url)).then((res) => res.arrayBuffer());
 
-    return new ImageResponse(
+    const image = new ImageResponse(
       (
         <div
           style={{
@@ -95,6 +95,8 @@ export async function GET(request: NextRequest) {
         ],
       }
     );
+    image.headers.set("Cache-Control", "public, max-age=86400, stale-while-revalidate=604800");
+    return image;
   } catch (e: any) {
     console.error(e);
     return new Response(`Failed to generate the image`, {

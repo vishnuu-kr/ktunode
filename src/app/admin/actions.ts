@@ -2,6 +2,7 @@
 
 import fs from "fs";
 import path from "path";
+import crypto from "crypto";
 import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { normalizeSiteConfig, readSiteConfig, writeSiteConfig } from "@/lib/siteConfig";
@@ -15,6 +16,14 @@ const allowedBranchDirs: Record<string, string> = {
   ee: "electrical-and-electronics-engineering",
 };
 
+function safeEqual(a: string, b: string): boolean {
+  if (!a || !b) return false;
+  const bufA = Buffer.from(a);
+  const bufB = Buffer.from(b);
+  if (bufA.length !== bufB.length) return false;
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
 async function assertAdminSecret() {
   const correctSecret = process.env.ADMIN_SECRET_KEY;
   if (!correctSecret) {
@@ -22,10 +31,17 @@ async function assertAdminSecret() {
   }
   const cookieStore = await cookies();
   const cookieSecret = cookieStore.get("admin_secret")?.value;
-  if (cookieSecret === correctSecret) {
+  if (cookieSecret && safeEqual(cookieSecret, correctSecret)) {
     return;
   }
   throw new Error("Unauthorized admin mutation attempt.");
+}
+
+export async function verifyLockdownPasscode(passcode: string): Promise<{ success: boolean }> {
+  const config = await readSiteConfig();
+  const correctPasscode = config.lockdownPasscode;
+  if (!correctPasscode || !passcode) return { success: false };
+  return { success: safeEqual(passcode, correctPasscode) };
 }
 
 function getBranchDirName(branch: string): string {
@@ -225,14 +241,14 @@ export async function updateConfig(prevState: { success: boolean; error?: string
       primaryAccent: (formData.get("primaryAccent") as string) || currentConfig.primaryAccent,
       lockdownMode: formData.get("lockdownMode") === "on",
       lockdownPasscode: (formData.get("lockdownPasscode") as string) || currentConfig.lockdownPasscode,
-      minAttendance: parseInt((formData.get("minAttendance") as string) || "", 10) || currentConfig.minAttendance,
-      minCie: parseInt((formData.get("minCie") as string) || "", 10) || currentConfig.minCie,
+      minAttendance: (() => { const v = parseInt((formData.get("minAttendance") as string) || "", 10); return Number.isFinite(v) ? v : currentConfig.minAttendance; })(),
+      minCie: (() => { const v = parseInt((formData.get("minCie") as string) || "", 10); return Number.isFinite(v) ? v : currentConfig.minCie; })(),
       activityPointsLimit:
-        parseInt((formData.get("activityPointsLimit") as string) || "", 10) || currentConfig.activityPointsLimit,
+        (() => { const v = parseInt((formData.get("activityPointsLimit") as string) || "", 10); return Number.isFinite(v) ? v : currentConfig.activityPointsLimit; })(),
       progressionS5Credits:
-        parseInt((formData.get("progressionS5Credits") as string) || "", 10) || currentConfig.progressionS5Credits,
+        (() => { const v = parseInt((formData.get("progressionS5Credits") as string) || "", 10); return Number.isFinite(v) ? v : currentConfig.progressionS5Credits; })(),
       progressionS7Credits:
-        parseInt((formData.get("progressionS7Credits") as string) || "", 10) || currentConfig.progressionS7Credits,
+        (() => { const v = parseInt((formData.get("progressionS7Credits") as string) || "", 10); return Number.isFinite(v) ? v : currentConfig.progressionS7Credits; })(),
       examStartDate: (formData.get("examStartDate") as string) || currentConfig.examStartDate,
       timetableOverrides: currentConfig.timetableOverrides,
       landingPageSections: {
@@ -434,31 +450,38 @@ export async function getUsers() {
     const usersPath = path.join(process.cwd(), "constants", "users.json");
     if (!fs.existsSync(usersPath)) return [];
     const data = JSON.parse(fs.readFileSync(usersPath, "utf8"));
-    return Array.isArray(data) ? data : [];
-  } catch (error: any) {
+    if (!Array.isArray(data)) return [];
+    return data.map((u: any) => ({
+      name: u.name,
+      email: u.email,
+      completedTopics: Array.isArray(u.completedTopics) ? u.completedTopics : [],
+      createdAt: u.createdAt,
+      updatedAt: u.updatedAt,
+    }));
+  } catch (error: unknown) {
     console.error("Failed to get users:", error);
     return [];
   }
 }
 
-export async function deleteUser(userId: string) {
+export async function deleteUser(userEmail: string) {
   try {
     await assertAdminSecret();
     const usersPath = path.join(process.cwd(), "constants", "users.json");
     if (!fs.existsSync(usersPath)) return { success: false, error: "No users file found." };
 
     const users = JSON.parse(fs.readFileSync(usersPath, "utf8"));
-    const filtered = users.filter((u: any) => u.id !== userId && u._id !== userId);
+    const filtered = users.filter((u: any) => u.email !== userEmail);
 
     if (filtered.length === users.length) {
       return { success: false, error: "User not found." };
     }
 
     fs.writeFileSync(usersPath, JSON.stringify(filtered, null, 2), "utf8");
-    logAdminActivity("user_delete", `Deleted user ${userId}`);
+    logAdminActivity("user_delete", `Deleted user ${userEmail}`);
     return { success: true };
-  } catch (error: any) {
-    return { success: false, error: error.message || "Failed to delete user." };
+  } catch (error: unknown) {
+    return { success: false, error: error instanceof Error ? error.message : "Failed to delete user." };
   }
 }
 

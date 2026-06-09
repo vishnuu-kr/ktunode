@@ -13,9 +13,19 @@ export async function readFromKV<T>(key: string): Promise<T | null> {
 }
 
 export async function writeToKV(key: string, value: unknown): Promise<void> {
-  await kv.set(key, value);
+  try {
+    await kv.set(key, value);
+  } catch (error) {
+    console.error(`Failed to write KV key "${key}":`, error);
+    throw error;
+  }
 }
 
 export async function deleteFromKV(key: string): Promise<void> {
-  await kv.del(key);
+  try {
+    await kv.del(key);
+  } catch (error) {
+    console.error(`Failed to delete KV key "${key}":`, error);
+    throw error;
+  }
 }

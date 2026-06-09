@@ -4,7 +4,6 @@ import React, { Suspense, useEffect, useRef, useState } from "react";
 import { useParams, usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  AlertTriangle,
   ArrowRight,
   BadgeCheck,
   BookOpen,
@@ -256,52 +255,6 @@ function getSubjectIcon(name: string) {
   if (lowerName.includes("hardware") || lowerName.includes("system")) return HardDrive;
   return BookOpen; // fallback
 }
-
-const verifiedVideos: Record<string, { concept: string[]; lecture: string[]; solved: string[] }> = {
-  cs: {
-    concept: ["RBSGKlAxfdI", "26QPDBe-qAE", "IPvYjXofLQY", "FR4QIeZaPeM"],
-    lecture: ["dbwY2e4-e0k", "vBURTt97EkA", "qiQR5rTSshw", "3EJlovevfcA"],
-    solved: ["0IAPZzGSbME", "5cKP4cfJ-NM", "ecCuyq-Wprc"]
-  },
-  math: {
-    concept: ["fNk_zzaMoEs", "WUvTyaaNkzM", "p_di4ateumM", "XZo4xyJXC2k"],
-    lecture: ["7UJ4CFR1894", "Kb3K1Ui4454", "tyDKR4FG3Yw"],
-    solved: ["S0hG_mS9bV4", "IYdiKeQ9xME", "jZ5z11sK0Mg"]
-  },
-  mech_civil: {
-    concept: ["uDlaoV2V-bU", "423c-v3_2X8", "clVwS3P9s84"],
-    lecture: ["A182z4Z_H3U", "9GMBpZZtjXM", "r_GkEaC4T70"],
-    solved: ["x1U7Hw4K0mU", "KzE_56Hk5B8", "e_Nl2Q2yK8c"]
-  },
-  ee_ec: {
-    concept: ["mc979OhitAg", "33vbFFFn04k", "gI-qXk7XojA"],
-    lecture: ["F_4HkL5r4n0", "Q-tL8_628gE", "M0mx8S05v60"],
-    solved: ["8XG7U5yN668", "p6Q9_e7_L1w", "APPIZ2S8YmY"]
-  },
-  chemistry: {
-    concept: ["QXT4OVM4vFk", "IV4IUsholjg"],
-    lecture: ["x00oX54G0Cg", "kYGDGvL4Xf8"],
-    solved: ["2G1410K0MQA", "l_a6hSj935s"]
-  },
-  general: {
-    concept: ["fNk_zzaMoEs", "uDlaoV2V-bU", "mc979OhitAg"],
-    lecture: ["7UJ4CFR1894", "A182z4Z_H3U", "F_4HkL5r4n0"],
-    solved: ["S0hG_mS9bV4", "x1U7Hw4K0mU", "8XG7U5yN668"]
-  }
-};
-
-const getSubjectDomain = (subject: Subject | null): string => {
-  if (!subject) return "general";
-  const name = subject.name.toLowerCase();
-  const id = subject.id.toLowerCase();
-  
-  if (name.includes("chemistry")) return "chemistry";
-  if (name.includes("math") || name.includes("mathematics") || name.includes("calculus") || name.includes("discrete")) return "math";
-  if (id.includes("-cs-") || id.includes("cst") || id.includes("cs-") || id.includes("cs") || name.includes("computer science") || name.includes("programming") || name.includes("data structure") || name.includes("algorithm") || name.includes("coding")) return "cs";
-  if (id.includes("-ee-") || id.includes("-ec-") || id.includes("ect") || name.includes("electrical") || name.includes("electronics") || name.includes("circuit") || name.includes("signal")) return "ee_ec";
-  if (id.includes("-me-") || id.includes("-ce-") || id.includes("met") || id.includes("cet") || name.includes("mechanical") || name.includes("civil") || name.includes("mechanics") || name.includes("fluid") || name.includes("thermo")) return "mech_civil";
-  return "general";
-};
 
 function DashboardContent() {
   const params = useParams();
@@ -635,6 +588,7 @@ function DashboardContent() {
   const [authPassword, setAuthPassword] = useState("");
   const [authError, setAuthError] = useState("");
   const [authLoading, setAuthLoading] = useState(false);
+  const sessionPasswordRef = useRef<string | null>(null);
 
   // Haptic Feedback Engine supporting dynamic pressure & synthesized Web Audio
   const triggerHaptic = React.useCallback((
@@ -894,12 +848,12 @@ function DashboardContent() {
   const handleSetIsTimerRunning = React.useCallback((running: boolean) => {
     setIsTimerRunning(running);
     getAudioContext();
-  }, [getAudioContext]);
+  }, [getAudioContext, setIsTimerRunning]);
 
   const handleSetSessionMinutes = React.useCallback((mins: number) => {
     setSessionMinutes(mins);
     getAudioContext();
-  }, [getAudioContext]);
+  }, [getAudioContext, setSessionMinutes]);
 
   const handleSetIsTimerMuted = React.useCallback((muted: boolean) => {
     setIsTimerMuted(muted);
@@ -1270,6 +1224,7 @@ function DashboardContent() {
 
       setAuthLoading(false);
       setIsLoggedIn(true);
+      sessionPasswordRef.current = authPassword;
       
       const loggedInName = result.user.name;
       const loggedInEmail = result.user.email;
@@ -1320,6 +1275,7 @@ function DashboardContent() {
         body: JSON.stringify({
           action: "sync",
           email: userEmail,
+          password: sessionPasswordRef.current,
           completedTopics,
         }),
       });
@@ -1350,6 +1306,7 @@ function DashboardContent() {
     setUserName("");
     setUserEmail("");
     setLastSynced(null);
+    sessionPasswordRef.current = null;
     localStorage.removeItem("ktunode_logged_in");
     localStorage.removeItem("ktunode_user_name");
     localStorage.removeItem("ktunode_user_email");
@@ -1451,12 +1408,18 @@ function DashboardContent() {
     toastTimeoutRef.current = setTimeout(() => setToast(null), 3000);
   };
 
+  const audioCtxRef = useRef<AudioContext | null>(null);
+
   const playCheckChime = React.useCallback(() => {
     if (typeof window === "undefined") return;
     try {
       const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
       if (!AudioContextClass) return;
-      const audioCtx = new AudioContextClass();
+      if (!audioCtxRef.current) {
+        audioCtxRef.current = new AudioContextClass();
+      }
+      const audioCtx = audioCtxRef.current;
+      if (audioCtx.state === "suspended") audioCtx.resume();
       
       const playTone = (freq: number, start: number, duration: number, type: "sine" | "triangle" = "sine", gainVal = 0.15) => {
         const osc = audioCtx.createOscillator();
@@ -1471,7 +1434,6 @@ function DashboardContent() {
         osc.stop(audioCtx.currentTime + start + duration);
       };
 
-      // Premium ascending triple-chime chord (E5 [659.25 Hz] -> B5 [987.77 Hz] -> E6 [1318.51 Hz])
       playTone(659.25, 0, 0.15, "triangle", 0.06); 
       playTone(987.77, 0.08, 0.20, "sine", 0.08);
       playTone(1318.51, 0.16, 0.35, "sine", 0.07);
@@ -2012,17 +1974,7 @@ function DashboardContent() {
                                   <Sparkles className="w-3 h-3 animate-pulse" />
                                   Mastery Achieved
                                 </span>
-                  ) : noteContent.startsWith("Error loading note:") ? (
-                    <div className="max-w-3xl mx-auto py-8 px-4">
-                      <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-6 text-center">
-                        <AlertTriangle className="w-8 h-8 text-red-400 mx-auto mb-3" />
-                        <h3 className="text-sm font-bold text-red-300 mb-2">Failed to Load Note</h3>
-                        <p className="text-xs text-gray-400 leading-relaxed max-w-sm mx-auto">
-                          {noteContent.replace("Error loading note: ", "")}
-                        </p>
-                      </div>
-                    </div>
-                  ) : (
+                              ) : (
                                 <>
                                   <div className="flex items-center gap-3 shrink-0">
                                     <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 tracking-wider">MODULE PROGRESS</span>
@@ -2069,17 +2021,17 @@ function DashboardContent() {
                                     className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3"
                                   >
                                     <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
-                                      <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-455" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
+                                      <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
                                         {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
                                       </div>
-                                      <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-455 line-through decoration-slate-300 dark:decoration-slate-700" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
+                                      <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-400 line-through decoration-slate-300 dark:decoration-slate-700" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
                                         {topic.title}
                                       </span>
                                     </button>
                                     <button
                                       type="button"
                                       onClick={() => togglePinnedTopic(topic.id)}
-                                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
+                                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
                                       aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
                                     >
                                       <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
@@ -2228,7 +2180,7 @@ function DashboardContent() {
                         <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">RECOMMENDED WATCH</h4>
                         <h2 className="text-xl md:text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight">Curated for you</h2>
                       </div>
-                      <MonitorPlay className="w-5.5 h-5.5 text-blue-500" />
+                      <MonitorPlay className="w-5 h-5 text-blue-500" />
                     </div>
                     
                     <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-none -mx-2 px-2 snap-x">
@@ -2285,7 +2237,7 @@ function DashboardContent() {
                                 YouTube
                               </span>
                             </div>
-                            <h3 className="text-xs md:text-sm font-black text-slate-800 dark:text-slate-200 leading-tight mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors line-clamp-2">{card.title}</h3>
+                            <h3 className="text-xs md:text-sm font-black text-slate-800 dark:text-slate-200 leading-tight mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">{card.title}</h3>
                             <p className="text-[10px] md:text-xs font-bold text-slate-400 dark:text-slate-500">{card.sub}</p>
                           </button>
                         );
@@ -2400,7 +2352,7 @@ function DashboardContent() {
                       onClick={() => goTopic(item.topic, item.subject)}
                       className={`w-full flex items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-blue-50 dark:hover:bg-slate-800/50 transition-colors group ${isActiveSearch ? 'bg-blue-50 dark:bg-slate-800/80 outline outline-2 outline-blue-500/80 outline-offset-[-2px]' : ''}`}
                     >
-                      <div className={`h-10 w-10 rounded-xl grid place-items-center shrink-0 transition-colors ${done ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-450' : 'bg-blue-50 dark:bg-slate-800 text-blue-500 dark:text-blue-400 group-hover:bg-blue-100 group-hover:dark:bg-slate-700'}`}>
+                      <div className={`h-10 w-10 rounded-xl grid place-items-center shrink-0 transition-colors ${done ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400' : 'bg-blue-50 dark:bg-slate-800 text-blue-500 dark:text-blue-400 group-hover:bg-blue-100 group-hover:dark:bg-slate-700'}`}>
                         {done ? <CheckCircle2 className="w-4 h-4" /> : <BookOpen className="w-4 h-4" />}
                       </div>
                       <span className="min-w-0 flex-1">

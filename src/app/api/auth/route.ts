@@ -16,6 +16,33 @@ interface UserRecord {
 
 const usersFilePath = path.join(process.cwd(), "constants", "users.json");
 
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX_SIGNUP = 5;
+const RATE_LIMIT_MAX_SIGNIN = 10;
+const RATE_LIMIT_MAX_SYNC = 10;
+const MAX_PASSWORD_LENGTH = 128;
+
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+
+function getRateLimit(key: string, max: number): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(key);
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(key, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return true;
+  }
+  entry.count++;
+  return entry.count <= max;
+}
+
+function getClientIp(request: Request): string {
+  return (
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    request.headers.get("x-real-ip") ||
+    "unknown"
+  );
+}
+
 function readUsers(): UserRecord[] {
   try {
     if (fs.existsSync(usersFilePath)) {
@@ -85,14 +112,22 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Enter a valid email address" }, { status: 400 });
     }
 
+    const ip = getClientIp(request);
     const users = readUsers();
 
     if (action === "signup") {
+      if (!getRateLimit(`signup:${ip}`, RATE_LIMIT_MAX_SIGNUP)) {
+        return NextResponse.json({ error: "Too many signup attempts. Please try again later." }, { status: 429 });
+      }
+
       if (!name || typeof name !== "string" || !name.trim()) {
         return NextResponse.json({ error: "Name is required" }, { status: 400 });
       }
       if (!password || typeof password !== "string" || password.length < 8) {
         return NextResponse.json({ error: "Password must be at least 8 characters" }, { status: 400 });
+      }
+      if (password.length > MAX_PASSWORD_LENGTH) {
+        return NextResponse.json({ error: `Password must be at most ${MAX_PASSWORD_LENGTH} characters` }, { status: 400 });
       }
 
       const existingUser = users.find((user) => user.email.toLowerCase() === emailNormalized);
@@ -117,6 +152,10 @@ export async function POST(request: Request) {
     }
 
     if (action === "signin") {
+      if (!getRateLimit(`signin:${ip}`, RATE_LIMIT_MAX_SIGNIN)) {
+        return NextResponse.json({ error: "Too many login attempts. Please try again later." }, { status: 429 });
+      }
+
       if (!password || typeof password !== "string") {
         return NextResponse.json({ error: "Password is required" }, { status: 400 });
       }
@@ -136,6 +175,14 @@ export async function POST(request: Request) {
     }
 
     if (action === "sync") {
+      if (!getRateLimit(`sync:${ip}`, RATE_LIMIT_MAX_SYNC)) {
+        return NextResponse.json({ error: "Too many sync attempts. Please try again later." }, { status: 429 });
+      }
+
+      if (!password || typeof password !== "string") {
+        return NextResponse.json({ error: "Password is required for sync" }, { status: 400 });
+      }
+
       if (!Array.isArray(completedTopics)) {
         return NextResponse.json({ error: "completedTopics must be an array" }, { status: 400 });
       }
@@ -143,6 +190,10 @@ export async function POST(request: Request) {
       const userIndex = users.findIndex((user) => user.email.toLowerCase() === emailNormalized);
       if (userIndex === -1) {
         return NextResponse.json({ error: "User not found" }, { status: 404 });
+      }
+
+      if (!verifyPassword(password, users[userIndex].passwordHash)) {
+        return NextResponse.json({ error: "Invalid password" }, { status: 401 });
       }
 
       users[userIndex].completedTopics = completedTopics
@@ -160,7 +211,7 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ error: "Invalid action" }, { status: 400 });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Auth API Error:", error);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }

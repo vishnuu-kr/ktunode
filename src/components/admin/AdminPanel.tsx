@@ -372,9 +372,10 @@ export default function AdminPanel({
                         Lockdown Passcode
                       </label>
                       <input
-                        type="text"
+                        type="password"
                         name="lockdownPasscode"
-                        defaultValue={config.lockdownPasscode || "1234"}
+                        defaultValue={config.lockdownPasscode || ""}
+                        placeholder="Set a secure passcode"
                         className="w-full bg-[#121214] border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-white/30 transition text-xs font-mono"
                       />
                     </div>
