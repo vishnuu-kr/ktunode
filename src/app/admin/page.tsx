@@ -1,23 +1,15 @@
 import fs from "fs";
 import path from "path";
 import { Suspense } from "react";
-import { notFound } from "next/navigation";
-import crypto from "crypto";
+import { AlertTriangle } from "lucide-react";
 import AdminPanel from "@/components/admin/AdminPanel";
 import AdminLoginForm from "@/components/admin/AdminLoginForm";
 import { getTimetable } from "@/lib/timetableData";
 import { readSiteConfig } from "@/lib/siteConfig";
 import { cookies } from "next/headers";
+import { safeEqual } from "@/lib/crypto";
 
 export const dynamic = "force-dynamic";
-
-function safeEqual(a: string, b: string): boolean {
-  if (!a || !b) return false;
-  const bufA = Buffer.from(a);
-  const bufB = Buffer.from(b);
-  if (bufA.length !== bufB.length) return false;
-  return crypto.timingSafeEqual(bufA, bufB);
-}
 
 interface PageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
@@ -208,7 +200,28 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
   const correctSecret = process.env.ADMIN_SECRET_KEY;
 
   if (!correctSecret) {
-    notFound();
+    return (
+      <div className="min-h-screen bg-[#070709] text-white flex flex-col items-center justify-center p-6 font-sans">
+        <div className="max-w-lg w-full bg-white/[0.02] border border-white/10 rounded-3xl p-8 backdrop-blur-2xl shadow-2xl text-center">
+          <div className="inline-flex p-4 bg-amber-500/10 rounded-2xl text-amber-400 mb-6 mx-auto">
+            <AlertTriangle className="w-8 h-8" />
+          </div>
+          <h1 className="text-xl font-bold text-amber-400 mb-3">Admin Panel Not Configured</h1>
+          <p className="text-white/60 text-sm mb-4 leading-relaxed">
+            The <code className="px-1.5 py-0.5 bg-white/10 rounded text-amber-300 font-mono text-xs">ADMIN_SECRET_KEY</code> environment variable is not set.
+          </p>
+          <div className="bg-black/30 border border-white/5 rounded-xl p-4 text-left text-sm space-y-2">
+            <p className="text-gray-300 font-semibold">To fix this:</p>
+            <ol className="list-decimal list-inside text-gray-400 space-y-1 text-xs">
+              <li>Go to your Vercel dashboard → Settings → Environment Variables</li>
+              <li>Add <code className="text-amber-300 font-mono">ADMIN_SECRET_KEY</code> with any secret value</li>
+              <li>Set it for Production, Preview, and Development</li>
+              <li>Redeploy your project</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   const runAuditParam = params?.audit === "true";

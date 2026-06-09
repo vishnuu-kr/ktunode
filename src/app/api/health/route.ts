@@ -37,18 +37,20 @@ export async function GET() {
   for (const envVar of requiredEnvVars) {
     if (!process.env[envVar]) {
       checks.env.status = "missing";
-      checks.env.missing.push("required");
-      break;
+      checks.env.missing.push(envVar);
     }
   }
 
   for (const envVar of optionalEnvVars) {
     if (!process.env[envVar]) {
-      checks.env.missing.push("optional");
+      checks.env.missing.push(`${envVar} (optional)`);
     }
   }
 
   try {
+    if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
+      throw new Error("KV env vars not configured");
+    }
     const kvStart = Date.now();
     const { kv } = await import("@vercel/kv");
     await kv.ping();

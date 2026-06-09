@@ -2,11 +2,11 @@
 
 import fs from "fs";
 import path from "path";
-import crypto from "crypto";
 import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { normalizeSiteConfig, readSiteConfig, writeSiteConfig } from "@/lib/siteConfig";
 import { writeToKV, readFromKV } from "@/lib/github";
+import { safeEqual } from "@/lib/crypto";
 
 const allowedBranchDirs: Record<string, string> = {
   cs: "computer-science-and-engineering",
@@ -15,14 +15,6 @@ const allowedBranchDirs: Record<string, string> = {
   ce: "civil-engineering",
   ee: "electrical-and-electronics-engineering",
 };
-
-function safeEqual(a: string, b: string): boolean {
-  if (!a || !b) return false;
-  const bufA = Buffer.from(a);
-  const bufB = Buffer.from(b);
-  if (bufA.length !== bufB.length) return false;
-  return crypto.timingSafeEqual(bufA, bufB);
-}
 
 async function assertAdminSecret() {
   const correctSecret = process.env.ADMIN_SECRET_KEY;
@@ -312,6 +304,7 @@ export async function saveSubjectData(branch: string, sem: number, subjects: any
 
 export async function logAdminActivity(action: string, details: string) {
   try {
+    await assertAdminSecret();
     const entry = {
       timestamp: new Date().toISOString(),
       action,
@@ -331,6 +324,7 @@ export async function logAdminActivity(action: string, details: string) {
 
 export async function getActivityLog() {
   try {
+    await assertAdminSecret();
     const log = await readFromKV<any[]>("admin-activity-log");
     return Array.isArray(log) ? log : [];
   } catch {
@@ -357,6 +351,7 @@ export async function trackPageView(page: string) {
 
 export async function getAnalyticsSummary() {
   try {
+    await assertAdminSecret();
     const now = new Date();
     const today = now.toISOString().slice(0, 10);
 
@@ -414,6 +409,7 @@ export async function restoreConfig(jsonString: string) {
 
 export async function getSubjectCount() {
   try {
+    await assertAdminSecret();
     const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
     if (!fs.existsSync(subjectsDir)) return { totalSubjects: 0, totalTopics: 0, byBranch: {} };
 
@@ -487,6 +483,7 @@ export async function deleteUser(userEmail: string) {
 
 export async function getDeploymentInfo() {
   try {
+    await assertAdminSecret();
     const info: Record<string, string> = {};
 
     if (process.env.VERCEL) {

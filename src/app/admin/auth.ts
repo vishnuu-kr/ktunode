@@ -1,16 +1,8 @@
 "use server";
 
-import crypto from "crypto";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-
-function safeEqual(a: string, b: string): boolean {
-  if (!a || !b) return false;
-  const bufA = Buffer.from(a);
-  const bufB = Buffer.from(b);
-  if (bufA.length !== bufB.length) return false;
-  return crypto.timingSafeEqual(bufA, bufB);
-}
+import { safeEqual } from "@/lib/crypto";
 
 export async function loginAdmin(prevState: { error: string } | null, formData: FormData): Promise<{ error: string }> {
   const secret = formData.get("secret");

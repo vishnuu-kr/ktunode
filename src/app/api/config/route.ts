@@ -1,17 +1,9 @@
 import { NextResponse } from "next/server";
 import { readSiteConfig } from "@/lib/siteConfig";
 import { cookies } from "next/headers";
-import crypto from "crypto";
+import { safeEqual } from "@/lib/crypto";
 
 export const dynamic = "force-dynamic";
-
-function safeEqual(a: string, b: string): boolean {
-  if (!a || !b) return false;
-  const bufA = Buffer.from(a);
-  const bufB = Buffer.from(b);
-  if (bufA.length !== bufB.length) return false;
-  return crypto.timingSafeEqual(bufA, bufB);
-}
 
 export async function GET() {
   const cookieStore = await cookies();

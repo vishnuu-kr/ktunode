@@ -9,6 +9,7 @@ import LockdownGate from "@/components/ui/LockdownGate";
 import DismissibleBanner from "@/components/ui/DismissibleBanner";
 import { parseKeywords, readSiteConfig, SITE_URL } from "@/lib/siteConfig";
 import { logEnvironmentStatus } from "@/lib/envValidation";
+import { safeEqual } from "@/lib/crypto";
 
 logEnvironmentStatus();
 
@@ -207,7 +208,7 @@ export default async function RootLayout({
   const rawPasscode = cookieStore.get("ktunode_lockdown_passcode")?.value;
   const userPasscode = rawPasscode ? decodeURIComponent(rawPasscode) : undefined;
   const lockdownPasscode = config.lockdownPasscode;
-  const isAuthorized = userPasscode && lockdownPasscode ? userPasscode === lockdownPasscode : false;
+  const isAuthorized = userPasscode && lockdownPasscode ? safeEqual(userPasscode, lockdownPasscode) : false;
 
   const isUnderMaintenance = config.maintenanceMode && !pathname.startsWith("/admin") && !pathname.startsWith("/api");
 
