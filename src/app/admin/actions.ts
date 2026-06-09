@@ -7,6 +7,7 @@ import { revalidatePath } from "next/cache";
 import { normalizeSiteConfig, readSiteConfig, writeSiteConfig } from "@/lib/siteConfig";
 import { writeToKV, readFromKV } from "@/lib/github";
 import { safeEqual } from "@/lib/crypto";
+import { validateAdminSession, createLockdownSession, checkRateLimit } from "@/lib/session";
 
 const allowedBranchDirs: Record<string, string> = {
   cs: "computer-science-and-engineering",
@@ -17,23 +18,28 @@ const allowedBranchDirs: Record<string, string> = {
 };
 
 async function assertAdminSecret() {
-  const correctSecret = process.env.ADMIN_SECRET_KEY;
-  if (!correctSecret) {
-    throw new Error("ADMIN_SECRET_KEY environment variable is not set.");
-  }
   const cookieStore = await cookies();
-  const cookieSecret = cookieStore.get("admin_secret")?.value;
-  if (cookieSecret && safeEqual(cookieSecret, correctSecret)) {
+  const sessionToken = cookieStore.get("admin_session")?.value;
+  if (sessionToken && await validateAdminSession(sessionToken)) {
     return;
   }
   throw new Error("Unauthorized admin mutation attempt.");
 }
 
-export async function verifyLockdownPasscode(passcode: string): Promise<{ success: boolean }> {
+export async function verifyLockdownPasscode(passcode: string): Promise<{ success: boolean; sessionToken?: string }> {
+  if (!passcode) return { success: false };
+
+  const rateCheck = await checkRateLimit("lockdown-passcode", 10, 60 * 1000);
+  if (!rateCheck.allowed) return { success: false };
+
   const config = await readSiteConfig();
   const correctPasscode = config.lockdownPasscode;
-  if (!correctPasscode || !passcode) return { success: false };
-  return { success: safeEqual(passcode, correctPasscode) };
+  if (!correctPasscode) return { success: false };
+
+  if (!safeEqual(passcode, correctPasscode)) return { success: false };
+
+  const sessionToken = await createLockdownSession();
+  return { success: true, sessionToken };
 }
 
 function getBranchDirName(branch: string): string {
@@ -170,13 +176,22 @@ export async function saveFaqOverride(faqs: any[]) {
   }
 }
 
+function isValidUrl(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === "https:" || parsed.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
 export async function saveQuickLinksOverride(links: any[]) {
   try {
     await assertAdminSecret();
 
     const currentConfig = await readSiteConfig();
     currentConfig.quickLinks = (Array.isArray(links) ? links : [])
-      .filter((link) => link && typeof link.title === "string" && typeof link.url === "string")
+      .filter((link) => link && typeof link.title === "string" && typeof link.url === "string" && isValidUrl(link.url))
       .map((link) => ({
         title: link.title.trim(),
         url: link.url.trim(),
@@ -221,8 +236,8 @@ export async function updateConfig(prevState: { success: boolean; error?: string
         lab: formData.get("tool_lab") === "on",
       },
       externalLinks: {
-        studentLogin: (formData.get("link_student_login") as string) || currentConfig.externalLinks.studentLogin,
-        ktuPortal: (formData.get("link_ktu_portal") as string) || currentConfig.externalLinks.ktuPortal,
+        studentLogin: (() => { const v = formData.get("link_student_login") as string; return v && isValidUrl(v) ? v : currentConfig.externalLinks.studentLogin; })(),
+        ktuPortal: (() => { const v = formData.get("link_ktu_portal") as string; return v && isValidUrl(v) ? v : currentConfig.externalLinks.ktuPortal; })(),
       },
       bannerText: (formData.get("bannerText") as string) || currentConfig.bannerText,
       bannerEnabled: formData.has("bannerEnabled") ? formData.get("bannerEnabled") === "on" : currentConfig.bannerEnabled,

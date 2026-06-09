@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { validateAdminSession } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 
@@ -15,6 +17,12 @@ interface HealthCheck {
 }
 
 export async function GET() {
+  const cookieStore = await cookies();
+  const sessionToken = cookieStore.get("admin_session")?.value;
+  if (!sessionToken || !(await validateAdminSession(sessionToken))) {
+    return NextResponse.json({ status: "ok" });
+  }
+
   const checks: HealthCheck["checks"] = {
     kv: { status: "ok" },
     env: { status: "ok", missing: [] },

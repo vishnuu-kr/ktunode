@@ -87,7 +87,10 @@ function verifyPassword(password: string, storedHash: string) {
   }
 
   const legacyHash = crypto.createHash("sha256").update(password).digest("hex");
-  return storedHash === legacyHash;
+  const legacyBuf = Buffer.from(legacyHash, "hex");
+  const storedBuf = Buffer.from(storedHash, "hex");
+  if (legacyBuf.length !== storedBuf.length) return false;
+  return crypto.timingSafeEqual(legacyBuf, storedBuf);
 }
 
 function publicUser(user: UserRecord) {

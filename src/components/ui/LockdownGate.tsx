@@ -11,8 +11,8 @@ export default function LockdownGate() {
       if (!pc) return { error: true };
       try {
         const result = await verifyLockdownPasscode(pc);
-        if (result.success) {
-          document.cookie = `ktunode_lockdown_passcode=${encodeURIComponent(pc)}; path=/; max-age=31536000; SameSite=Lax`;
+        if (result.success && result.sessionToken) {
+          document.cookie = `ktunode_lockdown_session=${result.sessionToken}; path=/; max-age=31536000; secure; SameSite=Lax`;
           window.location.reload();
           return { error: false };
         }

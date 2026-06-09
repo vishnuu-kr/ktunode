@@ -7,7 +7,7 @@ import AdminLoginForm from "@/components/admin/AdminLoginForm";
 import { getTimetable } from "@/lib/timetableData";
 import { readSiteConfig } from "@/lib/siteConfig";
 import { cookies } from "next/headers";
-import { safeEqual } from "@/lib/crypto";
+import { validateAdminSession } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 
@@ -232,8 +232,8 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
   const cmsTopicId = (params?.topic as string) || "";
 
   const cookieStore = await cookies();
-  const cookieSecret = cookieStore.get("admin_secret")?.value;
-  const isAuthorized = cookieSecret && correctSecret ? safeEqual(cookieSecret, correctSecret) : false;
+  const sessionToken = cookieStore.get("admin_session")?.value;
+  const isAuthorized = sessionToken ? await validateAdminSession(sessionToken) : false;
 
   if (!isAuthorized) {
     return <AdminLoginForm />;

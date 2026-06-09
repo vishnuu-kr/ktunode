@@ -3,6 +3,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { safeEqual } from "@/lib/crypto";
+import { createAdminSession, deleteAdminSession } from "@/lib/session";
 
 export async function loginAdmin(prevState: { error: string } | null, formData: FormData): Promise<{ error: string }> {
   const secret = formData.get("secret");
@@ -11,8 +12,9 @@ export async function loginAdmin(prevState: { error: string } | null, formData: 
     return { error: "ADMIN_SECRET_KEY environment variable is not set on the server." };
   }
   if (secret && adminSecret && safeEqual(secret as string, adminSecret)) {
+    const sessionToken = await createAdminSession();
     const cookieStore = await cookies();
-    cookieStore.set("admin_secret", adminSecret, {
+    cookieStore.set("admin_session", sessionToken, {
       path: "/",
       maxAge: 60 * 60 * 24 * 7,
       httpOnly: true,
@@ -26,6 +28,10 @@ export async function loginAdmin(prevState: { error: string } | null, formData: 
 
 export async function logoutAdmin() {
   const cookieStore = await cookies();
-  cookieStore.delete("admin_secret");
+  const sessionToken = cookieStore.get("admin_session")?.value;
+  if (sessionToken) {
+    await deleteAdminSession(sessionToken);
+  }
+  cookieStore.delete("admin_session");
   redirect("/admin");
 }

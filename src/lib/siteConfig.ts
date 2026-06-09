@@ -140,7 +140,7 @@ export const defaultSiteConfig: SiteConfig = {
   bannerEnd: "",
   primaryAccent: "blue",
   lockdownMode: false,
-  lockdownPasscode: "1234",
+  lockdownPasscode: "",
   minAttendance: 75,
   minCie: 40,
   activityPointsLimit: 120,
