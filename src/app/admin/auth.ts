@@ -14,7 +14,6 @@ function safeEqual(a: string, b: string): boolean {
 
 export async function loginAdmin(prevState: { error: string } | null, formData: FormData): Promise<{ error: string }> {
   const secret = formData.get("secret");
-  const accessKey = formData.get("accessKey") as string;
   const adminSecret = process.env.ADMIN_SECRET_KEY;
   if (!adminSecret) {
     return { error: "ADMIN_SECRET_KEY environment variable is not set on the server." };
@@ -28,14 +27,13 @@ export async function loginAdmin(prevState: { error: string } | null, formData: 
       sameSite: "lax",
       secure: process.env.NODE_ENV === "production",
     });
-    redirect(`/admin?key=${accessKey || adminSecret}`);
+    redirect("/admin");
   }
   return { error: "Incorrect password. Try again." };
 }
 
-export async function logoutAdmin(formData: FormData) {
-  const accessKey = formData.get("accessKey") as string;
+export async function logoutAdmin() {
   const cookieStore = await cookies();
   cookieStore.delete("admin_secret");
-  redirect(`/admin?key=${accessKey || process.env.ADMIN_SECRET_KEY}`);
+  redirect("/admin");
 }

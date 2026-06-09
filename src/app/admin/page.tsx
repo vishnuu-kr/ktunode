@@ -205,10 +205,9 @@ async function getKtuAnnouncements(): Promise<Announcement[]> {
 
 export default async function AdminDashboard({ searchParams }: PageProps) {
   const params = await searchParams;
-  const accessKey = typeof params?.key === "string" ? params.key : "";
   const correctSecret = process.env.ADMIN_SECRET_KEY;
 
-  if (!correctSecret || !accessKey || !safeEqual(accessKey, correctSecret)) {
+  if (!correctSecret) {
     notFound();
   }
 
@@ -224,7 +223,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
   const isAuthorized = cookieSecret && correctSecret ? safeEqual(cookieSecret, correctSecret) : false;
 
   if (!isAuthorized) {
-    return <AdminLoginForm accessKey={accessKey} />;
+    return <AdminLoginForm />;
   }
 
   const config = await readSiteConfig();
@@ -285,7 +284,6 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
         announcements={announcements}
         auditResult={auditResult}
         runAuditParam={runAuditParam}
-        accessKey={accessKey}
       />
     </Suspense>
   );
