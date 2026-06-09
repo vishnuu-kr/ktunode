@@ -264,7 +264,7 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
     return <AdminLoginForm />;
   }
 
-  const config = readSiteConfig();
+  const config = await readSiteConfig();
   const rawConfigString = fs.existsSync(siteConfigPath) ? fs.readFileSync(siteConfigPath, "utf8") : JSON.stringify(config, null, 2);
   
   // Calculate notes folder size

@@ -132,7 +132,7 @@ export async function saveTimetableOverride(branch: string, sem: number, exams: 
       return { success: false, error: "Invalid branch or semester." };
     }
 
-    const currentConfig = readSiteConfig();
+    const currentConfig = await readSiteConfig();
     currentConfig.timetableOverrides[`${branchKey}-${sem}`] = Array.isArray(exams) ? exams : [];
     await writeSiteConfig(currentConfig);
 
@@ -148,7 +148,7 @@ export async function saveFaqOverride(faqs: any[]) {
   try {
     await assertAdminSecret();
 
-    const currentConfig = readSiteConfig();
+    const currentConfig = await readSiteConfig();
     currentConfig.customFaqs = (Array.isArray(faqs) ? faqs : [])
       .filter((faq) => faq && typeof faq.q === "string" && typeof faq.a === "string")
       .map((faq) => ({ q: faq.q.trim(), a: faq.a.trim() }))
@@ -167,7 +167,7 @@ export async function saveQuickLinksOverride(links: any[]) {
   try {
     await assertAdminSecret();
 
-    const currentConfig = readSiteConfig();
+    const currentConfig = await readSiteConfig();
     currentConfig.quickLinks = (Array.isArray(links) ? links : [])
       .filter((link) => link && typeof link.title === "string" && typeof link.url === "string")
       .map((link) => ({
@@ -189,7 +189,7 @@ export async function saveQuickLinksOverride(links: any[]) {
 export async function updateConfig(prevState: { success: boolean; error?: string } | null, formData: FormData): Promise<{ success: boolean; error?: string }> {
   try {
     await assertAdminSecret();
-    const currentConfig = readSiteConfig();
+    const currentConfig = await readSiteConfig();
 
     const visibleSems: number[] = [];
     for (let sem = 1; sem <= 8; sem++) {

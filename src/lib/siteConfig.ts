@@ -193,7 +193,13 @@ export function normalizeSiteConfig(value: unknown): SiteConfig {
   };
 }
 
-export function readSiteConfig(): SiteConfig {
+export async function readSiteConfig(): Promise<SiteConfig> {
+  const { isServerless, readFromKV } = await import("./github");
+  if (isServerless()) {
+    const kvConfig = await readFromKV<SiteConfig>("site-config");
+    if (kvConfig) return normalizeSiteConfig(kvConfig);
+  }
+
   try {
     if (fs.existsSync(siteConfigPath)) {
       return normalizeSiteConfig(JSON.parse(fs.readFileSync(siteConfigPath, "utf8")));
@@ -207,14 +213,14 @@ export function readSiteConfig(): SiteConfig {
 
 export async function writeSiteConfig(config: SiteConfig): Promise<void> {
   const normalized = normalizeSiteConfig(config);
-  const content = `${JSON.stringify(normalized, null, 2)}\n`;
 
-  const { isServerless, commitFileToGitHub } = await import("./github");
+  const { isServerless, writeToKV } = await import("./github");
   if (isServerless()) {
-    await commitFileToGitHub("constants/site-config.json", content, "chore: update site config via admin panel");
+    await writeToKV("site-config", normalized);
     return;
   }
 
+  const content = `${JSON.stringify(normalized, null, 2)}\n`;
   const dir = path.dirname(siteConfigPath);
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });

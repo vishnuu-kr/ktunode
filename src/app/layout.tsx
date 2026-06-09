@@ -34,7 +34,7 @@ export const viewport: Viewport = {
 };
 
 export async function generateMetadata(): Promise<Metadata> {
-  const config = readSiteConfig();
+  const config = await readSiteConfig();
   const title = config.seo?.title || "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE";
   const description = config.seo?.description || "Free B.Tech module-wise KTU notes, previous year question papers, and syllabus tracker tailored for the 2024 scheme. CS, EC, ME, CE, EE — all semesters covered.";
   const keywordsStr = config.seo?.keywords || "KTU notes, KTU syllabus 2024 scheme, KTU previous year question papers, KTU B.Tech notes, KTU study materials, KTU PYQ, KTU S1 notes, KTU S2 notes, KTU S3 notes, KTU CSE notes 2024, KTU model question papers, KTU module wise notes, APJ Abdul Kalam Technological University syllabus, KTU exam preparation, KTUNODE, KTU 2024 scheme subjects, KTU chapter wise notes, Kerala Technological University";
@@ -194,7 +194,7 @@ export default async function RootLayout({
     ],
   };
 
-  const config = readSiteConfig();
+  const config = await readSiteConfig();
   const cookieStore = await cookies();
   const lockdownPasscode = config.lockdownPasscode || "1234";
 

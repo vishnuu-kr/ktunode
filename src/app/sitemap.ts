@@ -7,8 +7,8 @@ import { readSiteConfig, SITE_URL } from "@/lib/siteConfig";
  * Dynamic sitemap generator that loops through all branches and semesters
  * and maps course layout structures using the local JSON schema data.
  */
-export default function sitemap(): MetadataRoute.Sitemap {
-  const config = readSiteConfig();
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const config = await readSiteConfig();
   const baseUrl = SITE_URL;
   const now = new Date().toISOString();
 
