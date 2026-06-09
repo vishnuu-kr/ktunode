@@ -12,11 +12,6 @@ function safeEqual(a: string, b: string): boolean {
   return crypto.timingSafeEqual(bufA, bufB);
 }
 
-function getAdminAccessKey(): string {
-  const secret = process.env.ADMIN_SECRET_KEY || "";
-  return crypto.createHash("sha256").update(secret).digest("hex").slice(0, 16);
-}
-
 export async function loginAdmin(prevState: { error: string } | null, formData: FormData): Promise<{ error: string }> {
   const secret = formData.get("secret");
   const accessKey = formData.get("accessKey") as string;
@@ -33,8 +28,7 @@ export async function loginAdmin(prevState: { error: string } | null, formData: 
       sameSite: "lax",
       secure: process.env.NODE_ENV === "production",
     });
-    const key = accessKey || getAdminAccessKey();
-    redirect(`/admin?key=${key}`);
+    redirect(`/admin?key=${accessKey || adminSecret}`);
   }
   return { error: "Incorrect password. Try again." };
 }
@@ -43,6 +37,5 @@ export async function logoutAdmin(formData: FormData) {
   const accessKey = formData.get("accessKey") as string;
   const cookieStore = await cookies();
   cookieStore.delete("admin_secret");
-  const key = accessKey || getAdminAccessKey();
-  redirect(`/admin?key=${key}`);
+  redirect(`/admin?key=${accessKey || process.env.ADMIN_SECRET_KEY}`);
 }

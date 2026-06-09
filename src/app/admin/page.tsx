@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
-import { AlertTriangle } from "lucide-react";
 import crypto from "crypto";
 import AdminPanel from "@/components/admin/AdminPanel";
 import AdminLoginForm from "@/components/admin/AdminLoginForm";
@@ -18,11 +17,6 @@ function safeEqual(a: string, b: string): boolean {
   const bufB = Buffer.from(b);
   if (bufA.length !== bufB.length) return false;
   return crypto.timingSafeEqual(bufA, bufB);
-}
-
-function getAdminAccessKey(): string {
-  const secret = process.env.ADMIN_SECRET_KEY || "";
-  return crypto.createHash("sha256").update(secret).digest("hex").slice(0, 16);
 }
 
 interface PageProps {
@@ -212,9 +206,9 @@ async function getKtuAnnouncements(): Promise<Announcement[]> {
 export default async function AdminDashboard({ searchParams }: PageProps) {
   const params = await searchParams;
   const accessKey = typeof params?.key === "string" ? params.key : "";
-  const expectedKey = getAdminAccessKey();
+  const correctSecret = process.env.ADMIN_SECRET_KEY;
 
-  if (!expectedKey || !accessKey || !safeEqual(accessKey, expectedKey)) {
+  if (!correctSecret || !accessKey || !safeEqual(accessKey, correctSecret)) {
     notFound();
   }
 
@@ -224,31 +218,6 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
   const cmsSem = parseInt(params?.sem as string, 10) || 4;
   const cmsSubjectId = (params?.subject as string) || "";
   const cmsTopicId = (params?.topic as string) || "";
-
-  const correctSecret = process.env.ADMIN_SECRET_KEY;
-  if (!correctSecret) {
-    return (
-      <div className="min-h-screen bg-[#070709] text-white flex flex-col items-center justify-center p-6 font-sans">
-        <div className="relative z-10 max-w-lg w-full bg-white/[0.02] border border-white/10 rounded-3xl p-8 backdrop-blur-2xl shadow-2xl">
-          <div className="inline-flex p-4 bg-amber-500/10 rounded-2xl text-amber-400 mb-6 mx-auto">
-            <AlertTriangle className="w-8 h-8" />
-          </div>
-          <h1 className="text-xl font-bold text-amber-400 mb-3">Missing Environment Variable</h1>
-          <p className="text-white/60 text-sm mb-4 leading-relaxed">
-            The <code className="px-1.5 py-0.5 bg-white/10 rounded text-amber-300 font-mono text-xs">ADMIN_SECRET_KEY</code> environment variable is not configured.
-          </p>
-          <div className="bg-black/30 border border-white/5 rounded-xl p-4 text-left text-sm space-y-2">
-            <p className="text-gray-300 font-semibold">To fix this:</p>
-            <ol className="list-decimal list-inside text-gray-400 space-y-1 text-xs">
-              <li>SSH into your server and navigate to the project directory</li>
-              <li>Add <code className="text-amber-300 font-mono">ADMIN_SECRET_KEY=your_secret_here</code> to your <code className="text-amber-300 font-mono">.env.local</code> file</li>
-              <li>Restart the server: <code className="text-amber-300 font-mono">npm run build &amp;&amp; npm run start</code></li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   const cookieStore = await cookies();
   const cookieSecret = cookieStore.get("admin_secret")?.value;
