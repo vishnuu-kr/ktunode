@@ -215,7 +215,6 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
   const expectedKey = getAdminAccessKey();
 
   if (!expectedKey || !accessKey || !safeEqual(accessKey, expectedKey)) {
-    console.log(`[ADMIN] Access denied. Expected key: ${expectedKey || "(missing ADMIN_SECRET_KEY)"}`);
     notFound();
   }
 
