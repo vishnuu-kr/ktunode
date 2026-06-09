@@ -12,7 +12,6 @@ import SubjectManager from "@/components/admin/SubjectManager";
 import BannerScheduler from "@/components/admin/BannerScheduler";
 import BackupRestore from "@/components/admin/BackupRestore";
 import ActivityLog from "@/components/admin/ActivityLog";
-import AnalyticsDashboard from "@/components/admin/AnalyticsDashboard";
 import KtuAnnouncementsList from "@/components/admin/KtuAnnouncementsList";
 import UserManagement from "@/components/admin/UserManagement";
 import DeploymentStatus from "@/components/admin/DeploymentStatus";
@@ -28,7 +27,6 @@ import {
   saveFaqOverride,
   saveQuickLinksOverride,
   getActivityLog,
-  getAnalyticsSummary,
   getSubjectCount,
   getUsers,
   getDeploymentInfo,
@@ -94,7 +92,6 @@ export default function AdminPanel({
     (searchParams.get("tab") as TabId) || "dashboard"
   );
   const [activityLog, setActivityLog] = useState<any[]>([]);
-  const [analytics, setAnalytics] = useState<any>(null);
   const [subjectStats, setSubjectStats] = useState<any>(null);
   const [users, setUsers] = useState<any[]>([]);
   const [deploymentInfo, setDeploymentInfo] = useState<any>(null);
@@ -103,11 +100,6 @@ export default function AdminPanel({
   const loadActivityLog = useCallback(async () => {
     const log = await getActivityLog();
     setActivityLog(log);
-  }, []);
-
-  const loadAnalytics = useCallback(async () => {
-    const data = await getAnalyticsSummary();
-    setAnalytics(data);
   }, []);
 
   const loadSubjectStats = useCallback(async () => {
@@ -132,12 +124,11 @@ export default function AdminPanel({
 
   useEffect(() => {
     loadActivityLog();
-    loadAnalytics();
     loadSubjectStats();
     loadUsers();
     loadDeployment();
     loadScheduledTasks();
-  }, [loadActivityLog, loadAnalytics, loadSubjectStats, loadUsers, loadDeployment, loadScheduledTasks]);
+  }, [loadActivityLog, loadSubjectStats, loadUsers, loadDeployment, loadScheduledTasks]);
 
   const handleTabChange = useCallback(
     (tab: TabId) => {
@@ -176,72 +167,76 @@ export default function AdminPanel({
           {/* Dashboard Tab */}
           {activeTab === "dashboard" && (
             <div className="space-y-6">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div className="lg:col-span-2">
-                  <AnalyticsDashboard
-                    todayViews={analytics?.todayViews || 0}
-                    totalViews={analytics?.totalViews || 0}
-                    dailyBreakdown={analytics?.dailyBreakdown || {}}
-                    topPages={analytics?.topPages || []}
-                    notesSizeMB={notesSizeMB}
-                    subjectCount={subjectStats?.totalSubjects || 0}
-                    topicCount={subjectStats?.totalTopics || 0}
-                    branchCounts={subjectStats?.byBranch || {}}
-                    onRefresh={loadAnalytics}
-                  />
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-4 backdrop-blur-xl">
+                  <p className="text-xs text-gray-400 font-semibold uppercase mb-1">Subjects</p>
+                  <p className="text-2xl font-black text-white">{subjectStats?.totalSubjects || 0}</p>
                 </div>
-                <div className="space-y-6">
+                <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-4 backdrop-blur-xl">
+                  <p className="text-xs text-gray-400 font-semibold uppercase mb-1">Topics</p>
+                  <p className="text-2xl font-black text-white">{subjectStats?.totalTopics || 0}</p>
+                </div>
+                <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-4 backdrop-blur-xl">
+                  <p className="text-xs text-gray-400 font-semibold uppercase mb-1">Notes Size</p>
+                  <p className="text-2xl font-black text-white">{notesSizeMB} MB</p>
+                </div>
+                <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-4 backdrop-blur-xl">
+                  <p className="text-xs text-gray-400 font-semibold uppercase mb-1">Users</p>
+                  <p className="text-2xl font-black text-white">{users.length}</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <section className="bg-white/[0.02] border border-white/5 rounded-3xl p-6 backdrop-blur-xl">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                      <Bell className="w-5 h-5" />
+                    </div>
+                    <h2 className="text-lg font-bold text-gray-200">KTU Announcements</h2>
+                  </div>
+                  <KtuAnnouncementsList announcements={announcements} />
+                </section>
+
+                {auditResult && (
                   <section className="bg-white/[0.02] border border-white/5 rounded-3xl p-6 backdrop-blur-xl">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="p-2 bg-blue-500/10 rounded-lg text-blue-400">
-                        <Bell className="w-5 h-5" />
+                      <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-400">
+                        <CheckCircle className="w-5 h-5" />
                       </div>
-                      <h2 className="text-lg font-bold text-gray-200">KTU Portal Feed</h2>
+                      <h2 className="text-lg font-bold text-gray-200">Syllabus Audit</h2>
                     </div>
-                    <KtuAnnouncementsList announcements={announcements} />
+                    <div className="space-y-3">
+                      <div className="relative pt-1">
+                        <div className="flex mb-2 items-center justify-between">
+                          <span className="text-xs font-semibold text-emerald-400">Coverage</span>
+                          <span className="text-sm font-bold text-emerald-400">
+                            {auditResult.coveragePercentage}%
+                          </span>
+                        </div>
+                        <div className="overflow-hidden h-2.5 flex rounded-full bg-white/10">
+                          <div
+                            style={{ width: `${auditResult.coveragePercentage}%` }}
+                            className="bg-gradient-to-r from-emerald-500 to-emerald-400"
+                          />
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="p-3 bg-white/5 rounded-xl text-center border border-white/5">
+                          <p className="text-xs text-gray-400 font-bold uppercase">Subjects</p>
+                          <p className="text-xl font-black text-white mt-1">
+                            {auditResult.totalSubjects}
+                          </p>
+                        </div>
+                        <div className="p-3 bg-white/5 rounded-xl text-center border border-white/5">
+                          <p className="text-xs text-gray-400 font-bold uppercase">Missing</p>
+                          <p className="text-xl font-black text-rose-400 mt-1">
+                            {auditResult.missingNotes.length}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </section>
-
-                  {auditResult && (
-                    <section className="bg-white/[0.02] border border-white/5 rounded-3xl p-6 backdrop-blur-xl">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-400">
-                          <CheckCircle className="w-5 h-5" />
-                        </div>
-                        <h2 className="text-lg font-bold text-gray-200">Syllabus Audit</h2>
-                      </div>
-                      <div className="space-y-3">
-                        <div className="relative pt-1">
-                          <div className="flex mb-2 items-center justify-between">
-                            <span className="text-xs font-semibold text-emerald-400">Coverage</span>
-                            <span className="text-sm font-bold text-emerald-400">
-                              {auditResult.coveragePercentage}%
-                            </span>
-                          </div>
-                          <div className="overflow-hidden h-2.5 flex rounded-full bg-white/10">
-                            <div
-                              style={{ width: `${auditResult.coveragePercentage}%` }}
-                              className="bg-gradient-to-r from-emerald-500 to-emerald-400"
-                            />
-                          </div>
-                        </div>
-                        <div className="grid grid-cols-2 gap-3">
-                          <div className="p-3 bg-white/5 rounded-xl text-center border border-white/5">
-                            <p className="text-xs text-gray-400 font-bold uppercase">Subjects</p>
-                            <p className="text-xl font-black text-white mt-1">
-                              {auditResult.totalSubjects}
-                            </p>
-                          </div>
-                          <div className="p-3 bg-white/5 rounded-xl text-center border border-white/5">
-                            <p className="text-xs text-gray-400 font-bold uppercase">Missing</p>
-                            <p className="text-xl font-black text-rose-400 mt-1">
-                              {auditResult.missingNotes.length}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                  )}
-                </div>
+                )}
               </div>
             </div>
           )}
