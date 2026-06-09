@@ -204,7 +204,8 @@ export default async function RootLayout({
   const pathname = headerList.get("x-pathname") || "";
 
   const isLockdownActive = config.lockdownMode === true && !pathname.startsWith("/admin") && !pathname.startsWith("/api");
-  const userPasscode = cookieStore.get("ktunode_lockdown_passcode")?.value;
+  const rawPasscode = cookieStore.get("ktunode_lockdown_passcode")?.value;
+  const userPasscode = rawPasscode ? decodeURIComponent(rawPasscode) : undefined;
   const lockdownPasscode = config.lockdownPasscode;
   const isAuthorized = userPasscode && lockdownPasscode ? userPasscode === lockdownPasscode : false;
 
