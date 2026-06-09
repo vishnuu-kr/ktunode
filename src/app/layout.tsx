@@ -8,6 +8,9 @@ import { headers, cookies } from "next/headers";
 import LockdownGate from "@/components/ui/LockdownGate";
 import DismissibleBanner from "@/components/ui/DismissibleBanner";
 import { parseKeywords, readSiteConfig, SITE_URL } from "@/lib/siteConfig";
+import { logEnvironmentStatus } from "@/lib/envValidation";
+
+logEnvironmentStatus();
 
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -269,13 +272,20 @@ export default async function RootLayout({
               <LockdownGate correctPasscode={lockdownPasscode} />
             ) : (
               <>
-                {config.bannerEnabled && config.bannerText && (
-                  <DismissibleBanner
-                    bannerText={config.bannerText}
-                    severity={config.bannerSeverity || "info"}
-                    dismissible={config.bannerDismissible !== false}
-                  />
-                )}
+                {config.bannerEnabled && config.bannerText && (() => {
+                  const now = new Date();
+                  const start = config.bannerStart ? new Date(config.bannerStart) : null;
+                  const end = config.bannerEnd ? new Date(config.bannerEnd) : null;
+                  if (start && now < start) return null;
+                  if (end && now > end) return null;
+                  return (
+                    <DismissibleBanner
+                      bannerText={config.bannerText}
+                      severity={config.bannerSeverity || "info"}
+                      dismissible={config.bannerDismissible !== false}
+                    />
+                  );
+                })()}
                 <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-md focus:outline-none">
                   Skip to content
                 </a>

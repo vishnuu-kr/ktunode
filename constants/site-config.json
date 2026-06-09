@@ -33,6 +33,8 @@
   "bannerEnabled": false,
   "bannerSeverity": "info",
   "bannerDismissible": true,
+  "bannerStart": "",
+  "bannerEnd": "",
   "primaryAccent": "blue",
   "lockdownMode": false,
   "lockdownPasscode": "2105",
@@ -42,7 +44,16 @@
   "progressionS5Credits": 26,
   "progressionS7Credits": 52,
   "examStartDate": "2026-07-15",
-  "timetableOverrides": {},
+  "timetableOverrides": {
+    "cs-8": [
+      {
+        "date": "2026-06-11",
+        "time": "1:30 PM - 4:30 PM",
+        "subjectCode": "test",
+        "subjectName": "testt"
+      }
+    ]
+  },
   "landingPageSections": {
     "compare": true,
     "howItWorks": true,

@@ -2,32 +2,45 @@
 
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
-import { useEffect, Suspense } from 'react';
+import { useEffect, Suspense, useRef } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
+import { trackPageView } from '@/app/admin/actions';
 
-if (typeof window !== 'undefined') {
+let posthogInitialized = false;
+
+function initPostHog() {
+  if (posthogInitialized || typeof window === 'undefined') return;
   const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   const key = process.env.NEXT_PUBLIC_POSTHOG_KEY;
   const host = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
-  
+
   if (key && !isLocalhost) {
     posthog.init(key, {
       api_host: '/ingest',
       ui_host: host,
       person_profiles: 'identified_only',
-      capture_pageview: false, // Handled manually below
+      capture_pageview: false,
       capture_heatmaps: true,
-      loaded: (ph) => {
-        console.log("PostHog initialized successfully!");
-        ph.capture('test_event_from_code');
-      }
     });
+    posthogInitialized = true;
   }
 }
 
 function PostHogPageView() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const initRef = useRef(false);
+
+  useEffect(() => {
+    if (!initRef.current) {
+      initRef.current = true;
+      if (typeof requestIdleCallback !== "undefined") {
+        requestIdleCallback(initPostHog, { timeout: 2000 });
+      } else {
+        setTimeout(initPostHog, 100);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
@@ -36,9 +49,10 @@ function PostHogPageView() {
       if (searchParams.toString()) {
         url = url + `?${searchParams.toString()}`;
       }
-      posthog.capture('$pageview', {
-        $current_url: url,
-      });
+      if (posthogInitialized) {
+        posthog.capture('$pageview', { $current_url: url });
+      }
+      trackPageView(pathname).catch(() => {});
     }
   }, [pathname, searchParams]);
 

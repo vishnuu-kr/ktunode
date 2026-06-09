@@ -486,7 +486,6 @@ export default function Home() {
             src="/hero-bg-dark.webp"
             alt="Hero Background Dark"
             fill
-            priority
             sizes="100vw"
             className="object-cover object-bottom"
           />

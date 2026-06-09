@@ -522,14 +522,24 @@
 
 .bg-orb-1 {
   animation: drift-slow-1 28s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .bg-orb-2 {
   animation: drift-slow-2 34s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .bg-orb-3 {
   animation: drift-slow-3 30s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .bg-orb-1, .bg-orb-2, .bg-orb-3 {
+    animation-duration: 60s;
+    opacity: 0.5;
+  }
 }
 
 /* Dynamic Subject glowing shadows to keep primary button uniform blue but custom themed */
