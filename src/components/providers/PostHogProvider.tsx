@@ -44,7 +44,7 @@ function PostHogPageView() {
 
   useEffect(() => {
     const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    if (pathname && typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY && !isLocalhost) {
+    if (pathname && typeof window !== 'undefined' && !isLocalhost) {
       let url = window.origin + pathname;
       if (searchParams.toString()) {
         url = url + `?${searchParams.toString()}`;
