@@ -56,12 +56,34 @@ interface ActiveSubject {
 
 export default function GpaCalculator() {
   const [mounted, setMounted] = useState(false);
-  const [activeTab, setActiveTab] = useState<"presets" | "universal">("presets");
+  const [activeTab, setActiveTab] = useState<"presets" | "universal">(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("ktunode_gpa_active_tab");
+      if (saved === "presets" || saved === "universal") {
+        return saved;
+      }
+    }
+    return "presets";
+  });
   
   // Scheme database
   const [schemeData] = useState<Record<string, SemesterData[]>>(ktu2024Scheme as unknown as Record<string, SemesterData[]>);
   const [selectedBranch, setSelectedBranch] = useState(() => {
     const keys = Object.keys(ktu2024Scheme);
+    if (typeof window !== "undefined") {
+      const savedShortBranch = localStorage.getItem("ktunode_branch") || "cs";
+      const branchMapping: Record<string, string> = {
+        "cs": "Computer Science and Engineering",
+        "ce": "Civil Engineering",
+        "ec": "Electronics & Communication Engineering",
+        "ee": "Electrical and Electronics Engineering",
+        "me": "Mechanical Engineering"
+      };
+      const mapped = branchMapping[savedShortBranch];
+      if (mapped && keys.includes(mapped)) {
+        return mapped;
+      }
+    }
     return keys.includes("Computer Science and Engineering")
       ? "Computer Science and Engineering"
       : (keys.length > 0 ? keys[0] : "");
@@ -139,6 +161,8 @@ export default function GpaCalculator() {
             }));
           }
           setSemesters(initialSemesters);
+          localStorage.setItem(storageKey, JSON.stringify(initialSemesters));
+          window.dispatchEvent(new Event("ktunode-gpa-update"));
           setCollapsedSemesters({ 1: false, 2: false });
         }
       } else {
@@ -166,6 +190,8 @@ export default function GpaCalculator() {
           ]
         };
         setSemesters(initialSemesters);
+        localStorage.setItem(storageKey, JSON.stringify(initialSemesters));
+        window.dispatchEvent(new Event("ktunode-gpa-update"));
         setCollapsedSemesters({ 1: false, 2: false });
       }
     }, 0);
@@ -182,7 +208,55 @@ export default function GpaCalculator() {
     } else {
       localStorage.setItem(`ktunode_gpa_v3_universal`, JSON.stringify(updated));
     }
+    window.dispatchEvent(new Event("ktunode-gpa-update"));
   };
+
+  // Sync activeTab and selectedBranch changes to localStorage, and dispatch update events
+  useEffect(() => {
+    if (!mounted) return;
+    localStorage.setItem("ktunode_gpa_active_tab", activeTab);
+    localStorage.setItem("ktunode_gpa_selected_branch", selectedBranch);
+
+    const reverseBranchMapping: Record<string, string> = {
+      "Computer Science and Engineering": "cs",
+      "Civil Engineering": "ce",
+      "Electronics & Communication Engineering": "ec",
+      "Electrical and Electronics Engineering": "ee",
+      "Mechanical Engineering": "me"
+    };
+
+    const shortBranch = reverseBranchMapping[selectedBranch];
+    if (shortBranch) {
+      localStorage.setItem("ktunode_branch", shortBranch);
+    }
+    window.dispatchEvent(new Event("ktunode-gpa-update"));
+  }, [activeTab, selectedBranch, mounted]);
+
+  // Synchronize branch preset when global branch setting changes
+  useEffect(() => {
+    if (!mounted) return;
+    const syncWithGlobalSettings = () => {
+      const savedShortBranch = localStorage.getItem("ktunode_branch");
+      if (savedShortBranch) {
+        const branchMapping: Record<string, string> = {
+          "cs": "Computer Science and Engineering",
+          "ce": "Civil Engineering",
+          "ec": "Electronics & Communication Engineering",
+          "ee": "Electrical and Electronics Engineering",
+          "me": "Mechanical Engineering"
+        };
+        const mapped = branchMapping[savedShortBranch];
+        if (mapped && Object.keys(schemeData).includes(mapped) && mapped !== selectedBranch) {
+          setSelectedBranch(mapped);
+        }
+      }
+    };
+
+    window.addEventListener("ktunode-gpa-update", syncWithGlobalSettings);
+    return () => {
+      window.removeEventListener("ktunode-gpa-update", syncWithGlobalSettings);
+    };
+  }, [selectedBranch, schemeData, mounted]);
 
   // List of branches filtered by search query
   const filteredBranches = useMemo(() => {

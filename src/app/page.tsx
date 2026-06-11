@@ -8,6 +8,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import useSessionPersistence from "@/hooks/useSessionPersistence";
+import { triggerHaptic } from "@/lib/haptic";
 import { ContinueSessionButton } from "@/components/features/ContinueSessionButton";
 import { SEMESTERS } from "@/lib/constants";
 import { UpgradeBanner } from "@/components/ui/upgrade-banner";
@@ -37,7 +38,7 @@ const CtaBanner = dynamic(() => import("@/components/features/CtaBanner"));
 const CinematicFooter = dynamic(() => import("@/components/ui/motion-footer").then(mod => mod.CinematicFooter), { ssr: false });
 import {
   BookOpen, Calendar, ArrowRight, ShieldCheck,
-  FileText, ChevronDown,
+  FileText, ChevronDown, Sparkles, X
 } from "lucide-react";
 
 const branchLabels: Record<string, string> = {
@@ -55,146 +56,6 @@ const branches = VALID_BRANCHES.map((id) => ({
 
 const semesters = SEMESTERS;
 
-
-
-// Cached AudioContext instance to avoid creating new contexts on every haptic call
-let cachedAudioCtx: AudioContext | null = null;
-
-// Global landing haptic driver with pointer pressure & Web Audio API
-export function triggerLandingHaptic(
-  type: "light" | "medium" | "heavy" | "success" | "warning",
-  pressure?: number | React.PointerEvent | React.MouseEvent | React.TouchEvent | PointerEvent | MouseEvent
-) {
-  if (typeof window === "undefined") return;
-
-  // Extract pressure value (between 0.0 and 1.0)
-  let pressureVal = 0.5; // default center weight
-  if (typeof pressure === "number") {
-    pressureVal = pressure;
-  } else if (pressure && "nativeEvent" in pressure) {
-    const nativeEvent = pressure.nativeEvent;
-    if (nativeEvent instanceof PointerEvent) {
-      pressureVal = nativeEvent.pressure > 0 ? nativeEvent.pressure : 0.5;
-    }
-  } else if (pressure && pressure instanceof PointerEvent) {
-    pressureVal = pressure.pressure > 0 ? pressure.pressure : 0.5;
-  }
-
-  // Ensure pressure ranges between 0.15 and 1.0
-  pressureVal = Math.max(0.15, Math.min(1.0, pressureVal));
-
-  // 1. Device Vibration
-  if (navigator.vibrate) {
-    try {
-      let duration = 0;
-      switch (type) {
-        case "light":
-          duration = 8;
-          break;
-        case "medium":
-          duration = 15;
-          break;
-        case "heavy":
-          duration = 30;
-          break;
-        case "success":
-          navigator.vibrate([
-            Math.round(12 * (0.5 + pressureVal)), 
-            Math.round(45 * (0.5 + pressureVal)), 
-            Math.round(12 * (0.5 + pressureVal))
-          ]);
-          break;
-        case "warning":
-          navigator.vibrate([
-            Math.round(45 * (0.5 + pressureVal)), 
-            Math.round(75 * (0.5 + pressureVal))
-          ]);
-          break;
-      }
-      if (duration > 0) {
-        const scaledDuration = Math.round(duration * (0.5 + pressureVal));
-        navigator.vibrate(scaledDuration);
-      }
-    } catch (e) {}
-  }
-
-  // 2. Synthesized Web Audio Tones
-  try {
-    const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
-    if (!AudioContextClass) return;
-    if (!cachedAudioCtx || cachedAudioCtx.state === 'closed') {
-      cachedAudioCtx = new AudioContextClass();
-    }
-    const audioCtx = cachedAudioCtx;
-
-    const sweepTone = (startFreq: number, endFreq: number, baseDuration: number, baseGain: number) => {
-      const osc = audioCtx.createOscillator();
-      const gainNode = audioCtx.createGain();
-      osc.type = "triangle";
-      
-      const scaledStartFreq = startFreq * (0.7 + 0.6 * pressureVal);
-      const scaledEndFreq = endFreq * (0.7 + 0.6 * pressureVal);
-      const scaledGainVal = baseGain * (0.5 + pressureVal);
-      const scaledDuration = baseDuration * (0.8 + 0.4 * pressureVal);
-      
-      osc.frequency.setValueAtTime(scaledStartFreq, audioCtx.currentTime);
-      osc.frequency.exponentialRampToValueAtTime(scaledEndFreq, audioCtx.currentTime + scaledDuration);
-      
-      gainNode.gain.setValueAtTime(scaledGainVal, audioCtx.currentTime);
-      gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + scaledDuration);
-      
-      osc.connect(gainNode);
-      gainNode.connect(audioCtx.destination);
-      osc.start();
-      osc.stop(audioCtx.currentTime + scaledDuration);
-    };
-
-    const playTone = (freq: number, start: number, baseDuration: number, oscType: "sine" | "triangle" = "sine", baseGain = 0.15) => {
-      const osc = audioCtx.createOscillator();
-      const gainNode = audioCtx.createGain();
-      osc.type = oscType;
-      
-      const scaledFreq = freq * (0.8 + 0.4 * pressureVal);
-      const scaledGainVal = baseGain * (0.5 + pressureVal);
-      const scaledDuration = baseDuration * (0.8 + 0.4 * pressureVal);
-      
-      osc.frequency.setValueAtTime(scaledFreq, audioCtx.currentTime + start);
-      gainNode.gain.setValueAtTime(scaledGainVal, audioCtx.currentTime + start);
-      gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + start + scaledDuration);
-      
-      osc.connect(gainNode);
-      gainNode.connect(audioCtx.destination);
-      osc.start(audioCtx.currentTime + start);
-      osc.stop(audioCtx.currentTime + start + scaledDuration);
-    };
-
-    switch (type) {
-      case "light":
-        sweepTone(850, 180, 0.04, 0.08);
-        break;
-      case "medium":
-        sweepTone(700, 120, 0.06, 0.12);
-        break;
-      case "heavy":
-        sweepTone(550, 80, 0.09, 0.18);
-        break;
-      case "success":
-        // Premium ascending triple-chime chord (E5 [659.25 Hz] -> B5 [987.77 Hz] -> E6 [1318.51 Hz])
-        playTone(659.25, 0, 0.15, "triangle", 0.06); 
-        playTone(987.77, 0.08, 0.20, "sine", 0.08);
-        playTone(1318.51, 0.16, 0.35, "sine", 0.07);
-        break;
-      case "warning":
-        sweepTone(220, 130, 0.12, 0.15);
-        setTimeout(() => {
-          try {
-            sweepTone(220, 130, 0.12, 0.15);
-          } catch {}
-        }, 140);
-        break;
-    }
-  } catch (e) {}
-}
 
 function PremiumSelect({
   value,
@@ -315,7 +176,7 @@ function PremiumSelect({
         type="button"
         onClick={(e) => {
           handleOpenChange(!open);
-          triggerLandingHaptic("light", e);
+          triggerHaptic("light", e);
         }}
         onKeyDown={handleKeyDown}
         role="combobox"
@@ -366,16 +227,16 @@ function PremiumSelect({
                       isDisabled
                         ? "opacity-35 cursor-not-allowed text-slate-400 dark:text-slate-600"
                         : value === opt.value
-                          ? "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400"
-                          : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 hover:dark:bg-slate-800 hover:text-slate-900 hover:dark:text-slate-100"
-                    } ${focusedIndex === index && !isDisabled ? "bg-blue-50 dark:bg-blue-950/40 outline outline-2 outline-blue-500 outline-offset-[-2px]" : ""}`}
+                          ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold"
+                          : "text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-slate-100"
+                    } ${focusedIndex === index && !isDisabled ? "bg-slate-50 dark:bg-slate-800/60" : ""}`}
                     onClick={(e) => {
                       if (isDisabled) return;
                       onChange(opt.value);
                       handleOpenChange(false);
                       setFocusedIndex(-1);
                       triggerRef.current?.focus();
-                      triggerLandingHaptic("medium", e);
+                      triggerHaptic("medium", e);
                     }}
                     onMouseEnter={() => {
                       if (!isDisabled) setFocusedIndex(index);
@@ -419,15 +280,27 @@ export default function Home() {
       .catch(err => console.error("Failed to load site config:", err));
   }, []);
 
+  const [showLandingHint, setShowLandingHint] = useState(false);
+
+  useEffect(() => {
+    if (mounted) {
+      const seen = localStorage.getItem("ktunode_onboarding_completed");
+      const savedBranch = localStorage.getItem("ktunode_branch");
+      if (!seen && !savedBranch) {
+        setShowLandingHint(true);
+      }
+    }
+  }, [mounted]);
+
   const handleLaunch = (event?: React.MouseEvent | React.PointerEvent) => {
     if (!selectedBranch || !selectedSemester) {
       setErrorState(true);
       setTimeout(() => setErrorState(false), 500);
-      triggerLandingHaptic("warning", event);
+      triggerHaptic("warning", event);
       return;
     }
 
-    triggerLandingHaptic("success", event);
+    triggerHaptic("success", event);
 
     // Save session before navigating (only when both are selected)
     if (selectedBranch && selectedSemester) {
@@ -439,12 +312,12 @@ export default function Home() {
 
   const handleContinue = (event?: React.MouseEvent | React.PointerEvent) => {
     if (!savedSession) return;
-    triggerLandingHaptic("success", event);
+    triggerHaptic("success", event);
     router.push(`/${savedSession.branch}/sem-${savedSession.semester}`);
   };
 
   const handleDismiss = (event?: React.MouseEvent | React.PointerEvent) => {
-    triggerLandingHaptic("light", event);
+    triggerHaptic("light", event);
     clearSession();
   };
 
@@ -566,19 +439,48 @@ export default function Home() {
         </p>
 
         {/* ── Selector card ── */}
-        <div
-          className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 max-w-3xl w-full animate-fade-up transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
-          style={{
-            animationDelay: "240ms",
-            boxShadow: !mounted
-              ? undefined
-              : resolvedTheme === "dark"
-                ? "0 16px 56px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)"
-                : "0 16px 56px rgba(37,99,235,0.14), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)",
-          }}
+        <div 
+          className={`relative w-full max-w-3xl animate-fade-up transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-20"}`} 
+          style={{ animationDelay: "240ms" }}
         >
+          <AnimatePresence>
+            {showLandingHint && (
+              <motion.div
+                initial={{ opacity: 0, y: 8, scale: 0.95, x: "-50%" }}
+                animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
+                exit={{ opacity: 0, y: 8, scale: 0.95, x: "-50%" }}
+                className="absolute -top-14 left-1/2 bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 text-[10px] md:text-xs font-black uppercase tracking-wider px-4 py-2 rounded-2xl shadow-xl flex items-center gap-2 select-none z-50 whitespace-nowrap border border-blue-200/80 dark:border-slate-800 shadow-blue-500/5"
+              >
+                <Sparkles className="w-4 h-4 text-blue-500 dark:text-blue-400 animate-pulse flex-shrink-0" />
+                <span>New? Select your branch & semester to start!</span>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowLandingHint(false);
+                    triggerHaptic("light");
+                  }}
+                  className="hover:bg-slate-100 dark:hover:bg-slate-800 p-0.5 rounded ml-1 text-slate-400 dark:text-slate-500 hover:text-blue-650 dark:hover:text-blue-400 transition-colors cursor-pointer flex-shrink-0"
+                  aria-label="Dismiss guide"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+                <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white dark:bg-slate-900 rotate-45 border-r border-b border-blue-200/80 dark:border-slate-800" />
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          <div
+            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
+            style={{
+              boxShadow: !mounted
+                ? undefined
+                : resolvedTheme === "dark"
+                  ? "0 16px 56px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)"
+                  : "0 16px 56px rgba(37,99,235,0.14), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)",
+            }}
+          >
           {/* Branch */}
-          <div className={`flex-1 w-full transition-all duration-250 ${branchOpen ? "z-50" : "z-30"}`}>
+          <div className={`relative flex-1 w-full transition-all duration-250 ${branchOpen ? "z-50" : "z-30"}`}>
             <PremiumSelect
               value={selectedBranch}
               onChange={(val) => setSelectedBranch(String(val))}
@@ -593,7 +495,7 @@ export default function Home() {
           </div>
 
           {/* Semester */}
-          <div className={`flex-1 w-full transition-all duration-250 ${semOpen ? "z-50" : "z-20"}`}>
+          <div className={`relative flex-1 w-full transition-all duration-250 ${semOpen ? "z-50" : "z-20"}`}>
             <PremiumSelect
               value={selectedSemester}
               onChange={(val) => setSelectedSemester(val === "" ? "" : Number(val))}
@@ -622,6 +524,7 @@ export default function Home() {
             </MagneticButton>
           </div>
         </div>
+      </div>
 
         {/* ── Accessibility: announce validation errors to screen readers ── */}
         <div aria-live="assertive" className="sr-only">

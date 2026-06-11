@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
@@ -1677,15 +1677,15 @@ const LabRecordTracker: React.FC<LabRecordTrackerProps> = ({ branch, sem, trigge
 
   return (
     <div className="grid grid-cols-1 gap-4 sm:gap-6">
-      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
-        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-5 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-4">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <FlaskConical className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Lab Record Tracker</h3>
-              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Track experiment submissions, viva, and sign-off status</span>
+              <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">Lab Record Tracker</h3>
+              <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Track experiment submissions, viva, and sign-off status</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -2194,11 +2194,7 @@ export default function ToolsPage() {
   const [mtRevalCie, setMtRevalCie] = useState(28);
   const [mtRevalExpected, setMtRevalExpected] = useState("Excellent");
   // Tool 23: Syllabus Milestone Tracker
-  const [mtMilestones, setMtMilestones] = useState<Record<string, boolean[]>>({
-    "PCCST403": [true, true, false, false],
-    "CST204": [true, true, true, false],
-    "CST206": [true, false, false, false]
-  });
+  const [mtMilestones, setMtMilestones] = useState<Record<string, boolean[]>>({});
   // Tool 24: Countdown Dashboard Target
   const [mtCountdownTarget, setMtCountdownTarget] = useState("2026-07-15");
 
@@ -2273,6 +2269,26 @@ export default function ToolsPage() {
       } catch {}
     }
   }, [mounted]);
+
+  // Listen to GPA and preset changes from GpaCalculator or header controls
+  const [gpaUpdateTrigger, setGpaUpdateTrigger] = useState(0);
+
+  useEffect(() => {
+    const handleGpaUpdate = () => {
+      setGpaUpdateTrigger(prev => prev + 1);
+
+      // Sync global branch state if it changed in calculator presets
+      const savedBranch = localStorage.getItem("ktunode_branch");
+      if (savedBranch && savedBranch !== branch) {
+        setBranch(savedBranch);
+        loadSemesterData(savedBranch, sem);
+      }
+    };
+    window.addEventListener("ktunode-gpa-update", handleGpaUpdate);
+    return () => {
+      window.removeEventListener("ktunode-gpa-update", handleGpaUpdate);
+    };
+  }, [branch, sem]);
 
   // Pomodoro timer ticking effect
   useEffect(() => {
@@ -2561,8 +2577,8 @@ export default function ToolsPage() {
       id: s.id,
       code: s.code,
       name: s.name,
-      attended: 30,
-      total: 35
+      attended: 0,
+      total: 0
     }));
 
     if (savedAttendance) {
@@ -2613,6 +2629,16 @@ export default function ToolsPage() {
 
   // Mount logic: Load settings & global presets
   useEffect(() => {
+    const migrationVersion = localStorage.getItem("ktunode_tools_version");
+    if (migrationVersion !== "v4") {
+      Object.keys(localStorage).forEach(key => {
+        if (key.startsWith("ktunode_tools_") || key.startsWith("ktunode_gpa_") || key.startsWith("ktunode_attendance_")) {
+          localStorage.removeItem(key);
+        }
+      });
+      localStorage.setItem("ktunode_tools_version", "v4");
+    }
+
     const timer = setTimeout(() => {
       setMounted(true);
       
@@ -2620,6 +2646,67 @@ export default function ToolsPage() {
       const savedSem = Number(localStorage.getItem("ktunode_semester")) || 4;
       setBranch(savedBranch);
       setSem(savedSem);
+
+      // Pre-populate GPA calculator settings in localStorage if empty, so telemetry row works instantly
+      const activeTab = localStorage.getItem("ktunode_gpa_active_tab") || "presets";
+      localStorage.setItem("ktunode_gpa_active_tab", activeTab);
+      
+      const branchMapping: Record<string, string> = {
+        "cs": "Computer Science and Engineering",
+        "ce": "Civil Engineering",
+        "ec": "Electronics & Communication Engineering",
+        "ee": "Electrical and Electronics Engineering",
+        "me": "Mechanical Engineering"
+      };
+      const fullBranchName = branchMapping[savedBranch] || "Computer Science and Engineering";
+      localStorage.setItem("ktunode_gpa_selected_branch", fullBranchName);
+
+      const presetKey = `ktunode_gpa_v3_preset_${fullBranchName.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`;
+      if (!localStorage.getItem(presetKey)) {
+        const branchSemesters = (ktu2024Scheme as any)[fullBranchName];
+        if (branchSemesters) {
+          const initialSemesters: Record<number, any[]> = {};
+          const sem1Data = branchSemesters.find((s: any) => s.semester === 1);
+          if (sem1Data) {
+            initialSemesters[1] = sem1Data.subjects.map((sub: any, idx: number) => ({
+              id: `sub_1_${idx}_${Date.now()}`,
+              sno: sub.sno,
+              name: sub.name,
+              credits: sub.credits,
+              grade: "--"
+            }));
+          }
+          const sem2Data = branchSemesters.find((s: any) => s.semester === 2);
+          if (sem2Data) {
+            initialSemesters[2] = sem2Data.subjects.map((sub: any, idx: number) => ({
+              id: `sub_2_${idx}_${Date.now()}`,
+              sno: sub.sno,
+              name: sub.name,
+              credits: sub.credits,
+              grade: "--"
+            }));
+          }
+          localStorage.setItem(presetKey, JSON.stringify(initialSemesters));
+        }
+      }
+      
+      // Also pre-populate universal tab
+      const universalKey = "ktunode_gpa_v3_universal";
+      if (!localStorage.getItem(universalKey)) {
+        const initialSemesters = {
+          1: [
+            { id: "univ_1_1", sno: 1, name: "Engineering Subject 1", credits: 4, grade: "--" },
+            { id: "univ_1_2", sno: 2, name: "Engineering Subject 2", credits: 3, grade: "--" },
+            { id: "univ_1_3", sno: 3, name: "Laboratory Course", credits: 1, grade: "--" }
+          ],
+          2: [
+            { id: "univ_2_1", sno: 1, name: "Core Course 1", credits: 4, grade: "--" },
+            { id: "univ_2_2", sno: 2, name: "Elective Course", credits: 3, grade: "--" },
+            { id: "univ_2_3", sno: 3, name: "Seminar / Project", credits: 2, grade: "--" }
+          ]
+        };
+        localStorage.setItem(universalKey, JSON.stringify(initialSemesters));
+      }
 
       // Initial load for active semester
       loadSemesterData(savedBranch, savedSem);
@@ -2706,12 +2793,14 @@ export default function ToolsPage() {
     // Sync degree-wide semesters toggles
     const newCgpa = Array.from({ length: 8 }, (_, i) => ({
       semester: i + 1,
-      sgpa: newSem > i + 1 ? 8.0 : 0.0,
-      credits: 22,
+      sgpa: newSem > i + 1 ? 0.0 : 0.0,
+      credits: 0,
       active: newSem > i + 1
     }));
     setCgpaSemesters(newCgpa);
     localStorage.setItem("ktunode_tools_cgpa", JSON.stringify(newCgpa));
+
+    window.dispatchEvent(new Event("ktunode-gpa-update"));
 
     triggerNotification(`Switched to ${newBranch.toUpperCase()} Sem ${newSem}. Scoped data loaded!`);
   };
@@ -2785,29 +2874,70 @@ export default function ToolsPage() {
     }, 600);
   };
 
-  // SGPA/CGPA calculations
-  const calculateSGPA = () => {
-    let totalCredits = 0;
-    let totalPoints = 0;
-    sgpaCourses.forEach(c => {
-      const pts = GRADE_POINTS[c.grade] ?? 0;
-      totalCredits += c.credits;
-      totalPoints += pts * c.credits;
-    });
-    return totalCredits > 0 ? (totalPoints / totalCredits).toFixed(2) : "0.00";
-  };
-
-  const calculateCGPA = () => {
-    let totalCredits = 0;
-    let totalPoints = 0;
-    cgpaSemesters.forEach(s => {
-      if (s.active && s.sgpa > 0) {
-        totalCredits += s.credits;
-        totalPoints += s.sgpa * s.credits;
+  // Synchronized GPA calculations reading from GpaCalculator localStorage
+  const calculatedCgpa = useMemo(() => {
+    if (typeof window === "undefined") return "0.00";
+    const activeTab = localStorage.getItem("ktunode_gpa_active_tab") || "presets";
+    const selectedBranch = localStorage.getItem("ktunode_gpa_selected_branch") || "Computer Science and Engineering";
+    const storageKey = activeTab === "presets"
+      ? `ktunode_gpa_v3_preset_${selectedBranch.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`
+      : `ktunode_gpa_v3_universal`;
+    const savedSemesters = localStorage.getItem(storageKey);
+    let grandPoints = 0;
+    let grandCredits = 0;
+    if (savedSemesters) {
+      try {
+        const semesters = JSON.parse(savedSemesters);
+        Object.keys(semesters).forEach(semNum => {
+          const subjects = semesters[Number(semNum)] || [];
+          subjects.forEach((sub: any) => {
+            const points = GRADE_POINTS[sub.grade];
+            if (points !== undefined && points !== -1) {
+              grandPoints += points * sub.credits;
+              grandCredits += sub.credits;
+            }
+          });
+        });
+      } catch (e) {
+        console.error(e);
       }
-    });
-    return totalCredits > 0 ? (totalPoints / totalCredits).toFixed(2) : "0.00";
-  };
+    }
+    return grandCredits > 0 ? (grandPoints / grandCredits).toFixed(2) : "0.00";
+  }, [gpaUpdateTrigger, branch, sem]);
+
+  const calculatedSgpa = useMemo(() => {
+    if (typeof window === "undefined") return "0.00";
+    const activeTab = localStorage.getItem("ktunode_gpa_active_tab") || "presets";
+    const selectedBranch = localStorage.getItem("ktunode_gpa_selected_branch") || "Computer Science and Engineering";
+    const storageKey = activeTab === "presets"
+      ? `ktunode_gpa_v3_preset_${selectedBranch.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`
+      : `ktunode_gpa_v3_universal`;
+    const savedSemesters = localStorage.getItem(storageKey);
+    let semPoints = 0;
+    let semCredits = 0;
+    let gradedCount = 0;
+    if (savedSemesters) {
+      try {
+        const semesters = JSON.parse(savedSemesters);
+        const subjects = semesters[sem] || [];
+        subjects.forEach((sub: any) => {
+          const points = GRADE_POINTS[sub.grade];
+          if (points !== undefined && points !== -1) {
+            semPoints += points * sub.credits;
+            semCredits += sub.credits;
+            gradedCount++;
+          }
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    return semCredits > 0 && gradedCount > 0 ? (semPoints / semCredits).toFixed(2) : "0.00";
+  }, [gpaUpdateTrigger, branch, sem]);
+
+  // SGPA/CGPA calculations
+  const calculateSGPA = () => calculatedSgpa;
+  const calculateCGPA = () => calculatedCgpa;
 
   const handleSgpaChange = (id: string, field: keyof SGPACourse, value: string | number) => {
     const updated = sgpaCourses.map(c => {
@@ -3307,32 +3437,32 @@ export default function ToolsPage() {
     };
 
     return (
-      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-5 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         {/* Card Header with Live free marks badge */}
-        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-4">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <Activity className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">Attendance Log</h3>
+                <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">Attendance Log</h3>
                 {attendanceStreak > 0 && (
-                  <span className="px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-500 border border-amber-500/15 text-[8.5px] font-bold uppercase tracking-wider flex items-center gap-0.5">
-                    <Flame className="w-3 h-3 text-amber-500 animate-pulse" /> {attendanceStreak}d streak
+                  <span className="px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/15 text-xs font-bold flex items-center gap-1">
+                    <Flame className="w-3 h-3 animate-pulse" /> {attendanceStreak}d streak
                   </span>
                 )}
               </div>
-              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">S{sem} Active Attendance Runway</span>
+              <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block mt-0.5">S{sem} Active Attendance Runway</span>
             </div>
           </div>
 
           <div className="text-right relative group cursor-pointer shrink-0">
-            <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block leading-none">Reward</span>
-            <span className={`text-xs font-black ${freeMarksColor} block mt-1 font-mono`}>{freeMarksLabel.split(" ")[0]}</span>
-            <div className="absolute right-0 top-full mt-1.5 hidden group-hover:block w-48 p-2.5 bg-slate-800 text-white text-[9px] rounded-lg shadow-xl z-20 leading-relaxed text-left border border-slate-700">
+            <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block">Attendance Marks</span>
+            <span className={`text-sm font-black ${freeMarksColor} block mt-0.5 font-mono`}>{freeMarksLabel.split(" ")[0]}</span>
+            <div className="absolute right-0 top-full mt-1.5 hidden group-hover:block w-48 p-2.5 bg-slate-800 text-white text-xs rounded-lg shadow-xl z-20 leading-relaxed text-left border border-slate-700">
               <p className="font-bold border-b border-slate-700 pb-0.5 mb-1">KTU Attendance Marks:</p>
-              <ul className="space-y-0.5 font-mono text-[8.5px]">
+              <ul className="space-y-0.5 font-mono text-xs">
                 <li>&ge; 90%: 5 marks</li>
                 <li>85% - 89%: 4 marks</li>
                 <li>80% - 84%: 3 marks</li>
@@ -3344,15 +3474,15 @@ export default function ToolsPage() {
         </div>
 
         {/* Subjects list rows */}
-        <div className="space-y-3 max-h-[300px] overflow-y-auto pr-1 scrollbar-thin">
+        <div className="space-y-3 max-h-[320px] overflow-y-auto pr-1 scrollbar-thin">
           {isTrackerEmpty ? (
-            <div className="flex flex-col items-center justify-center py-8 px-4 border-2 border-dashed border-slate-200/60 dark:border-slate-800 rounded-2xl bg-slate-50/50 dark:bg-slate-900/20">
-              <ListTodo className="w-8 h-8 text-zinc-600 mb-2.5" />
-              <span className="text-[10px] font-bold text-zinc-550 uppercase tracking-widest mb-1">No Subjects Tracked</span>
-              <span className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 mb-3 text-center">Import your semester grid to start logging attendance data.</span>
+            <div className="flex flex-col items-center justify-center py-10 px-4 border-2 border-dashed border-slate-200/60 dark:border-slate-800 rounded-2xl bg-slate-50/50 dark:bg-slate-900/20">
+              <ListTodo className="w-8 h-8 text-slate-400 mb-3" />
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">No Subjects Tracked</span>
+              <span className="text-xs font-medium text-slate-400 dark:text-slate-500 mb-4 text-center">Import your semester grid to start logging attendance data.</span>
               <button
                 onClick={() => loadSemesterData(branch, sem)}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-[9px] font-bold uppercase tracking-wider hover:bg-blue-500/20 transition-all cursor-pointer active:scale-95"
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-bold uppercase tracking-wider hover:bg-blue-500/20 transition-all cursor-pointer active:scale-95"
               >
                 <Plus className="w-3.5 h-3.5" /> Import {branch.toUpperCase()} Semester {sem} Core Grid
               </button>
@@ -3370,26 +3500,26 @@ export default function ToolsPage() {
               const canMiss = Math.max(0, remainingClasses - classesNeededToAttend);
               const impossible = classesNeededToAttend > remainingClasses;
 
-              let color = "text-emerald-450";
+              let color = "text-emerald-600 dark:text-emerald-400";
               let progressBg = "bg-emerald-500";
-              if (pct < 75) { color = "text-rose-455"; progressBg = "bg-rose-500"; }
-              else if (pct < 85) { color = "text-blue-450"; progressBg = "bg-blue-500"; }
+              if (pct < 75) { color = "text-rose-600 dark:text-rose-400"; progressBg = "bg-rose-500"; }
+              else if (pct < 85) { color = "text-blue-600 dark:text-blue-400"; progressBg = "bg-blue-500"; }
 
               return (
-                <div key={sub.id} className="p-3.5 rounded-2xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.04] space-y-3">
-                  <div className="flex justify-between items-center text-xs">
+                <div key={sub.id} className="p-4 rounded-2xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-white/[0.04] space-y-3">
+                  <div className="flex justify-between items-center">
                     <div className="truncate pr-2">
-                      <span className="font-bold text-[10px] block text-slate-900 dark:text-white truncate leading-none font-mono">{sub.code}</span>
-                      <span className="text-[9px] font-semibold text-slate-500 dark:text-slate-400 block truncate mt-1">{sub.name}</span>
+                      <span className="font-bold text-xs block text-slate-900 dark:text-white truncate leading-none font-mono">{sub.code}</span>
+                      <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block truncate mt-1">{sub.name}</span>
                     </div>
                     <div className="text-right shrink-0">
-                      <span className={`font-bold text-[10px] block ${color} font-mono`}>{pct}%</span>
+                      <span className={`font-black text-sm block ${color} font-mono`}>{pct}%</span>
                       {impossible ? (
-                        <span className="text-[8px] font-bold text-rose-455 uppercase tracking-wider block mt-0.5 animate-pulse flex items-center gap-0.5 justify-end">
-                          <AlertCircle className="w-2.5 h-2.5 text-rose-500" /> Danger
+                        <span className="text-xs font-bold text-rose-500 uppercase tracking-wider block mt-0.5 animate-pulse flex items-center gap-0.5 justify-end">
+                          <AlertCircle className="w-3 h-3" /> Danger
                         </span>
                       ) : (
-                        <span className="text-[8px] font-semibold text-slate-500 dark:text-slate-400 block mt-0.5">Miss max: <strong className="text-emerald-450 font-mono">{canMiss}</strong></span>
+                        <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Miss max: <strong className="text-emerald-500 font-mono">{canMiss}</strong></span>
                       )}
                     </div>
                   </div>
@@ -3430,7 +3560,7 @@ export default function ToolsPage() {
         {!isTrackerEmpty && (
           <button
             onClick={handleShareRunway}
-            className="w-full py-2.5 rounded-xl bg-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02] text-slate-600 dark:text-slate-400 border border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
+            className="w-full py-2.5 rounded-xl bg-transparent hover:bg-slate-100 dark:hover:bg-white/[0.02] text-slate-500 dark:text-slate-400 border border-slate-200/60 dark:border-white/[0.06] text-xs font-medium uppercase tracking-wider transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
           >
             <Share2 className="w-3.5 h-3.5" /> Share Runway
           </button>
@@ -3447,15 +3577,15 @@ export default function ToolsPage() {
     const allZero = mtAggSeries1 === 0 && mtAggSeries2 === 0 && mtAggAssg === 0 && mtAggAtt === 0;
 
     return (
-      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
-        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-5 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-4">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <Calculator className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">CIE & Damage Control</h3>
-              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Calculate CIE internals and Series 2 targets</span>
+              <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">CIE & Damage Control</h3>
+              <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Calculate CIE internals and Series 2 targets</span>
             </div>
           </div>
         </div>
@@ -3463,7 +3593,7 @@ export default function ToolsPage() {
         {/* Inputs */}
         <div className="grid grid-cols-2 gap-3">
           <div className="space-y-1.5">
-            <label className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Series 1 (max 50)</label>
+            <label className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block">Series 1 (max 50)</label>
             <input
               type="number"
               min="0"
@@ -3695,7 +3825,7 @@ export default function ToolsPage() {
     return (
       <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 overflow-hidden">
                 {/* ——————— UNIFIED HEADER ——————— */}
-        <div className="px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
+        <div className="px-5 py-5 border-b border-slate-200/60 dark:border-white/[0.06]">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500/15 to-teal-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
@@ -3703,7 +3833,7 @@ export default function ToolsPage() {
               </div>
               <div>
                 <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-50">Graduation Runway</h3>
-                <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">
+                <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block mt-0.5">
                   Activity points, credit checks & backlog tracking
                 </span>
               </div>
@@ -4645,16 +4775,16 @@ export default function ToolsPage() {
     const cieVal = plannerCieScore;
 
     return (
-      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-slate-200/60 dark:border-white/[0.06] rounded-2xl p-4 sm:p-5 shadow-lg space-y-4">
+      <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-950/[0.06] dark:border-white/[0.06] rounded-2xl p-5 shadow-lg space-y-4">
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-slate-800/20 pb-3">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-450">
+        <div className="flex items-center justify-between border-b border-slate-200/20 dark:border-slate-800/20 pb-4">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-450">
               <Award className="w-5 h-5 animate-pulse" />
             </div>
             <div>
-              <h3 className="font-black text-slate-900 dark:text-slate-50 text-sm leading-none">CIE & ESE Target Planner</h3>
-              <span className="text-[9px] font-bold text-slate-400 block mt-1">Unified target grading & pass/fail sandbox</span>
+              <h3 className="font-bold text-slate-900 dark:text-slate-50 text-sm leading-none">CIE & ESE Target Planner</h3>
+              <span className="text-xs font-medium text-slate-400 block mt-1">Unified target grading & pass/fail sandbox</span>
             </div>
           </div>
           
@@ -4794,15 +4924,15 @@ export default function ToolsPage() {
     const currentAllocSgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0;
 
     return (
-      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200 dark:border-slate-800/80 rounded-2xl p-5 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 w-full space-y-4">
         {/* Header */}
-        <div className="flex items-center gap-2.5 border-b border-slate-200/60 dark:border-white/[0.06] pb-3">
-          <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+        <div className="flex items-center gap-3 border-b border-slate-200/60 dark:border-white/[0.06] pb-4">
+          <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
             <GraduationCap className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-100">SGPA Target Allocator</h3>
-            <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Determine grade requirements for your GPA goal</span>
+            <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">SGPA Target Allocator</h3>
+            <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block mt-0.5">Determine grade requirements for your GPA goal</span>
           </div>
         </div>
 
@@ -4963,49 +5093,49 @@ export default function ToolsPage() {
         <div className="absolute bottom-10 right-10 w-[240px] h-[240px] rounded-full bg-blue-500/[0.02] blur-[80px] pointer-events-none -z-10" />
 
         {/* --- PREMIUM COCKPIT TELEMETRY DENSITY HEADER --- */}
-        <div className="w-full bg-white/90 dark:bg-slate-950/85 backdrop-blur-3xl border border-slate-200/80 dark:border-white/[0.08] rounded-2xl p-4 sm:p-5 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-3 sm:gap-4">
-          <div className="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-violet-500/[0.03] blur-[40px] pointer-events-none" />
+        <div className="w-full bg-white/90 dark:bg-slate-950/85 backdrop-blur-3xl border border-slate-200/80 dark:border-white/[0.08] rounded-2xl p-5 sm:p-6 shadow-xl dark:shadow-2xl relative overflow-hidden flex flex-col gap-4">
+          <div className="absolute top-0 right-0 w-[200px] h-[200px] rounded-full bg-blue-500/[0.04] blur-[50px] pointer-events-none" />
           
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06]">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 pb-5 border-b border-slate-200/60 dark:border-white/[0.06]">
             {/* Logo Badge & Titles */}
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-lg text-[9px] font-black tracking-widest uppercase bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2.5">
+                <span className="px-2.5 py-1 rounded-lg text-xs font-bold tracking-wide uppercase bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15">
                   KTU Tools
                 </span>
-                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">• APJ Abdul Kalam University</span>
+                <span className="text-xs font-medium text-slate-400 dark:text-slate-500">APJ Abdul Kalam University</span>
               </div>
-              <h1 className="text-xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight mt-1">
-                Study Tools
+              <h1 className="text-2xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight">
+                Study Workspace
               </h1>
-              <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <p className="text-sm font-medium text-slate-500 dark:text-slate-400 max-w-md">
                 Track grades, attendance, labs, and exam prep — all in one place.
               </p>
             </div>
 
             {/* Selector Console */}
-            <div className="flex items-center gap-3 bg-slate-50/80 dark:bg-slate-900/60 p-2 rounded-xl border border-slate-200/60 dark:border-slate-200/40 dark:border-white/[0.04] shrink-0 self-start md:self-auto shadow-inner">
-              <div className="flex flex-col">
-                <span className="text-[8px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">Branch & Semester</span>
-                <div className="flex items-center gap-2 mt-1">
+            <div className="flex items-center gap-3 bg-slate-50/80 dark:bg-slate-900/60 p-3 rounded-xl border border-slate-200/60 dark:border-white/[0.04] shrink-0 self-start md:self-auto">
+              <div className="flex flex-col gap-1.5">
+                <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">Branch & Semester</span>
+                <div className="flex items-center gap-2">
                   <select
                      value={branch}
                      onChange={(e) => handleBranchSemChange(e.target.value, sem)}
-                     className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                     className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-3 py-2 text-sm font-semibold cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
                   >
-                    <option value="cs">Computer Science (CS)</option>
-                    <option value="ec">Electronics (EC)</option>
-                    <option value="me">Mechanical (ME)</option>
-                    <option value="ce">Civil (CE)</option>
-                    <option value="ee">Electrical (EE)</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="ec">Electronics (ECE)</option>
+                    <option value="me">Mechanical</option>
+                    <option value="ce">Civil</option>
+                    <option value="ee">Electrical (EEE)</option>
                   </select>
                   <select
                     value={sem}
                     onChange={(e) => handleBranchSemChange(branch, Number(e.target.value))}
-                    className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-[10px] font-black cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                    className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-3 py-2 text-sm font-semibold cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
                   >
                     {Array.from({ length: 8 }, (_, idx) => (
-                      <option key={idx} value={idx + 1}>Semester {idx + 1}</option>
+                      <option key={idx} value={idx + 1}>Sem {idx + 1}</option>
                     ))}
                   </select>
                 </div>
@@ -5014,39 +5144,39 @@ export default function ToolsPage() {
           </div>
 
           {/* Connected Live Telemetry Indicators Row */}
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-1 text-xs font-semibold">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
             {[
               {
                 label: "CGPA",
                 val: calculateCGPA(),
                 badge: "10.0 Scale",
-                theme: "text-blue-500 bg-blue-500/10 dark:text-blue-400 border border-blue-500/20"
+                theme: "text-blue-600 dark:text-blue-400 bg-blue-500/10 border border-blue-500/20"
               },
               {
                 label: "Attendance",
                 val: `${getAverageAttendance()}%`,
                 badge: getAverageAttendance() >= 75 ? "Safe" : "At Risk",
                 theme: getAverageAttendance() >= 75
-                  ? "text-emerald-500 bg-emerald-500/10 dark:text-emerald-400 border border-emerald-500/20"
-                  : "text-rose-500 bg-rose-500/10 dark:text-rose-455 border border-rose-500/20"
+                  ? "text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20"
+                  : "text-rose-600 dark:text-rose-400 bg-rose-500/10 border border-rose-500/20"
               },
               {
                 label: "Labs",
                 val: `${getLabsCount()} Active`,
                 badge: "Tracked",
-                theme: "text-indigo-500 bg-indigo-500/10 dark:text-indigo-400 border border-indigo-500/20"
+                theme: "text-indigo-600 dark:text-indigo-400 bg-indigo-500/10 border border-indigo-500/20"
               },
               {
                 label: "SGPA",
                 val: calculateSGPA(),
                 badge: "Current Sem",
-                theme: "text-amber-550 bg-amber-500/10 dark:text-amber-450 border border-amber-500/20"
+                theme: "text-amber-600 dark:text-amber-400 bg-amber-500/10 border border-amber-500/20"
               }
             ].map((stat, idx) => (
-              <div key={idx} className="flex items-center gap-2">
-                <span className="text-[9px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest leading-none">{stat.label}</span>
-                <span className="font-extrabold text-slate-900 dark:text-slate-100 font-mono text-[13px] leading-none">{stat.val}</span>
-                <span className={`px-1.5 py-0.5 rounded text-[8px] font-bold uppercase tracking-wider leading-none ${stat.theme}`}>
+              <div key={idx} className="flex items-center gap-2.5">
+                <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">{stat.label}</span>
+                <span className="font-black text-slate-900 dark:text-slate-100 font-mono text-lg leading-none tabular-nums">{stat.val}</span>
+                <span className={`px-2 py-0.5 rounded-md text-xs font-semibold ${stat.theme}`}>
                   {stat.badge}
                 </span>
               </div>
@@ -5055,13 +5185,13 @@ export default function ToolsPage() {
         </div>
 
         {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR --- */}
-        <div className="bg-slate-100/80 dark:bg-slate-950/60 p-1.5 rounded-[22px] border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl flex flex-nowrap items-center gap-1.5 w-full overflow-x-auto scrollbar-none shadow-inner">
+        <div className="bg-slate-100/80 dark:bg-slate-950/60 p-1.5 rounded-2xl border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl flex flex-nowrap items-center gap-1 w-full overflow-x-auto scrollbar-none">
           {[
-            { id: "attendance", label: "Attendance & CIE", icon: Activity, enabled: siteConfig?.activeTools?.attendance !== false },
-            { id: "grades", label: "Grades & ESE", icon: Calculator, enabled: siteConfig?.activeTools?.gpa !== false },
+            { id: "attendance", label: "Attendance", icon: Activity, enabled: siteConfig?.activeTools?.attendance !== false },
+            { id: "grades", label: "Grades & GPA", icon: Calculator, enabled: siteConfig?.activeTools?.gpa !== false },
             { id: "graduation", label: "Graduation", icon: GraduationCap, enabled: siteConfig?.activeTools?.runway !== false },
             { id: "exam", label: "Exam Prep", icon: Clock, enabled: siteConfig?.activeTools?.exam !== false },
-            { id: "labs", label: "Lab Tracker", icon: FlaskConical, enabled: siteConfig?.activeTools?.lab !== false },
+            { id: "labs", label: "Lab Record", icon: FlaskConical, enabled: siteConfig?.activeTools?.lab !== false },
             { id: "missioncontrol", label: "Mission Control", icon: LayoutDashboard, enabled: true }
           ].filter(tabItem => tabItem.enabled).map((tabItem) => {
             const isActive = activeWorkspaceTab === tabItem.id;
@@ -5071,13 +5201,13 @@ export default function ToolsPage() {
               <button
                 key={tabItem.id}
                 onClick={() => setActiveWorkspaceTab(tabItem.id as typeof activeWorkspaceTab)}
-                className={`px-4 py-2.5 rounded-[16px] text-[10px] font-black uppercase tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer flex-1 shrink-0 whitespace-nowrap justify-center min-w-max active:scale-[0.97] ${
+                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all duration-200 flex items-center gap-2 cursor-pointer flex-1 shrink-0 whitespace-nowrap justify-center min-w-max active:scale-[0.97] ${
                   isActive
-                    ? "bg-[#2E95FF] text-white border border-[#2E95FF]/20 shadow-[0_4px_12px_rgba(46,149,255,0.25)]"
-                    : "bg-transparent text-slate-500/80 hover:text-slate-800 dark:text-slate-400/80 dark:hover:text-slate-200 hover:bg-slate-200/30 dark:hover:bg-white/[0.02]"
+                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-md border border-slate-200/60 dark:border-slate-700"
+                    : "bg-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-white/50 dark:hover:bg-white/[0.03]"
                 }`}
               >
-                <Icon className="w-3.5 h-3.5" />
+                <Icon className={`w-4 h-4 ${isActive ? "" : "opacity-70"}`} />
                 <span>{tabItem.label}</span>
               </button>
             );
@@ -5101,29 +5231,29 @@ export default function ToolsPage() {
 
           {/* TAB 2: GRADES & ESE TARGET PLANNER */}
           {activeWorkspaceTab === "grades" && (
-            <div className="w-full bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 relative overflow-hidden space-y-4 sm:space-y-5">
+            <div className="w-full bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-5 shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 relative overflow-hidden space-y-5">
               <div className="absolute top-0 right-0 w-[240px] h-[240px] rounded-full bg-blue-500/[0.03] blur-[60px] pointer-events-none -z-10" />
               
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] pb-4 gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/60 dark:border-white/[0.06] pb-5 gap-3">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
-                    <Calculator className="w-5.5 h-5.5" />
+                    <Calculator className="w-5 h-5" />
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 dark:text-white text-base leading-none">GPA & CGPA Calculator</h3>
-                    <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 block mt-1.5">{branch.toUpperCase()} S{sem} grading sheet & custom sandboxes</span>
+                    <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block mt-1.5">{branch.toUpperCase()} S{sem} grading sheet & custom sandboxes</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 self-end sm:self-auto">
                   <button
                     onClick={() => setIsCiePlannerOpen(true)}
-                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-[10px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm"
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm"
                   >
                     <Sparkles className="w-3.5 h-3.5 text-blue-500" /> Plan CIE & ESE
                   </button>
                   <button
                     onClick={() => setIsSgpaAllocatorOpen(true)}
-                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-600 dark:text-amber-450 text-[10px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm"
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-600 dark:text-amber-400 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm"
                   >
                     <Calculator className="w-3.5 h-3.5 text-amber-500" /> SGPA Allocator
                   </button>
@@ -5134,7 +5264,7 @@ export default function ToolsPage() {
               <GpaCalculator />
 
               {/* Inline Converter Bar */}
-              <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+              <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-200/60 dark:border-white/[0.06] text-xs font-medium text-slate-500 dark:text-slate-400">
                 <span>SGPA / CGPA Converter:</span>
                 <input
                   type="number"
@@ -5196,13 +5326,14 @@ export default function ToolsPage() {
             <MissionControlDashboard
               branch={branch}
               sem={String(sem)}
+              gpa={calculateCGPA()}
             />
           )}
 
         </div>
 
         {/* Advice Info bottom bar */}
-        <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-slate-200/60 dark:border-white/[0.06] bg-slate-50/80 dark:bg-slate-900/40 text-[9.5px] font-bold text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
+        <div className="flex items-center gap-3 p-4 rounded-2xl border border-slate-200/60 dark:border-white/[0.06] bg-slate-50/80 dark:bg-slate-900/40 text-xs font-medium text-slate-500 dark:text-slate-400 leading-normal text-center justify-center shadow-sm">
           <ShieldCheck className="w-4 h-4 text-slate-400 dark:text-slate-500 shrink-0" />
           <span>All data is saved locally in your browser. GPA, attendance, and lab progress update in real-time as you make changes.</span>
         </div>

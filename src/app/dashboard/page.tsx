@@ -44,6 +44,8 @@ import { getTimetable } from "@/lib/timetableData";
 import { useProgress } from "@/hooks/useProgress";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import ShareButton from "@/components/ui/ShareButton";
+import OnboardingTour, { ReplayTourButton } from "@/components/dashboard/OnboardingTour";
+import FirstTimeChecklist, { triggerChecklistTask } from "@/components/dashboard/FirstTimeChecklist";
 
 const MarkdownRenderer = dynamic(() => import("@/components/ui/MarkdownRenderer"), {
   loading: () => <div className="animate-pulse h-48 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-[20px] flex items-center justify-center text-xs text-slate-400 font-medium">Loading notes rendering engine...</div>,
@@ -317,6 +319,7 @@ function DashboardContent() {
 
   const [mounted, setMounted] = useState(false);
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+  const [showOnboardingTour, setShowOnboardingTour] = useState(false);
   
   // Dynamic subjects and notes loading
   const [subjects, setSubjects] = useState<Subject[]>([]);
@@ -1004,6 +1007,7 @@ function DashboardContent() {
   const upNext = topicIndex.find((item) => !completedTopics.includes(item.topic.id)) ?? topicIndex[0] ?? null;
   const resumeTarget = lastTopic ?? upNext;
   const resumeTheme = getSubjectTheme(resumeTarget ? resumeTarget.subject : null, subjects);
+  const hasActivity = mounted && (!!lastTopicId || completedTopics.length > 0);
 
   const filteredTopics = topicIndex.filter((item) => {
     const query = searchTerm.trim().toLowerCase();
@@ -1033,6 +1037,13 @@ function DashboardContent() {
         setUserName(localStorage.getItem("ktunode_user_name") || "KTU Student");
         setUserEmail(localStorage.getItem("ktunode_user_email") || "student@ktu.edu");
         setLastSynced(localStorage.getItem("ktunode_last_synced"));
+      }
+
+      // Trigger onboarding if not completed, or if redirect tour requested
+      const onboarded = localStorage.getItem("ktunode_onboarding_completed") === "true";
+      const forceTour = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("tour") === "continue";
+      if (!onboarded || forceTour) {
+        setShowOnboardingTour(true);
       }
     });
   }, []);
@@ -1624,26 +1635,28 @@ function DashboardContent() {
                   <div className="flex items-center gap-3 self-stretch md:self-auto shrink-0 justify-between md:justify-end">
 
                     {/* Unified Progress Card for Mobile and Desktop */}
-                    <div className="flex flex-col gap-2 bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] p-4.5 rounded-3xl shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] dark:shadow-none w-full md:w-auto md:min-w-[180px] backdrop-blur-md relative overflow-hidden group self-stretch shrink-0">
-                      <div className="absolute top-0 right-0 w-24 h-24 bg-slate-900/[0.01] dark:bg-white/[0.01] rounded-full blur-xl pointer-events-none" />
-                      <div className="flex items-center justify-between gap-4 w-full">
-                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Overall Progress</span>
-                        <span className="px-1.5 py-0.5 rounded bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-[9px] font-black leading-none">
-                          {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}%
-                        </span>
-                      </div>
-                      
-                      <div className="text-base font-black text-slate-800 dark:text-slate-100 tracking-tight leading-none mt-1">
-                        {completedTopics.length} <span className="text-xs text-slate-400/80 font-bold">/ {totalTopics} topics</span>
-                      </div>
+                    {hasActivity && (
+                      <div className="flex flex-col gap-2 bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] p-4.5 rounded-3xl shadow-[0_12px_40px_-12px_rgba(0,0,0,0.06)] dark:shadow-none w-full md:w-auto md:min-w-[180px] backdrop-blur-md relative overflow-hidden group self-stretch shrink-0">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-slate-900/[0.01] dark:bg-white/[0.01] rounded-full blur-xl pointer-events-none" />
+                        <div className="flex items-center justify-between gap-4 w-full">
+                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Overall Progress</span>
+                          <span className="px-1.5 py-0.5 rounded bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-[9px] font-black leading-none">
+                            {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}%
+                          </span>
+                        </div>
+                        
+                        <div className="text-base font-black text-slate-800 dark:text-slate-100 tracking-tight leading-none mt-1">
+                          {completedTopics.length} <span className="text-xs text-slate-400/80 font-bold">/ {totalTopics} topics</span>
+                        </div>
 
-                      <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden mt-1 relative">
-                        <div
-                          className="h-full bg-slate-900 dark:bg-slate-100 transition-all duration-500 rounded-full"
-                          style={{ width: completedTopics.length > 0 ? `max(${(completedTopics.length / totalTopics) * 100}%, 8px)` : '0%' }}
-                        />
+                        <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden mt-1 relative">
+                          <div
+                            className="h-full bg-slate-900 dark:bg-slate-100 transition-all duration-500 rounded-full"
+                            style={{ width: completedTopics.length > 0 ? `max(${(completedTopics.length / totalTopics) * 100}%, 8px)` : '0%' }}
+                          />
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
 
@@ -1710,7 +1723,7 @@ function DashboardContent() {
                   </div>
                 </button>
 
-                {resumeTarget && (
+                {hasActivity && resumeTarget && (
                   <div className={`relative rounded-2xl md:rounded-3xl overflow-hidden bg-white/65 dark:bg-slate-900/65 border transition-all duration-300 backdrop-blur-md p-5 md:p-8 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] group hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] ${resumeTheme.border}`}>
                     <div className="absolute inset-0 opacity-[0.01] bg-slate-950 pointer-events-none" />
                     
@@ -1742,6 +1755,7 @@ function DashboardContent() {
                 )}
 
                 <div className="space-y-5 md:space-y-6">
+                  <FirstTimeChecklist />
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100 tracking-tight leading-snug">Your Courses</h3>
                     <span className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400">
@@ -1751,9 +1765,10 @@ function DashboardContent() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     {!isLoaded || loadingSubjects
-                      ? skeletonCards.slice(0, 4).map((item) => (
+                      ? skeletonCards.slice(0, 4).map((item, index) => (
                           <div
                             key={item}
+                            id={index === 0 ? "tour-subject-card" : undefined}
                             className="h-36 rounded-3xl bg-white/60 dark:bg-slate-900/60 border border-slate-950/[0.06] dark:border-white/[0.06] p-6 flex flex-col justify-between shadow-sm backdrop-blur-md animate-pulse"
                           >
                             <div className="flex items-start justify-between gap-4 w-full">
@@ -1789,6 +1804,7 @@ function DashboardContent() {
                            return (
                             <motion.button
                               key={subject.id}
+                              id={index === 0 ? "tour-subject-card" : undefined}
                               type="button"
                               whileHover={{ y: -4, scale: 1.01 }}
                               whileTap={{ scale: 0.98 }}
@@ -1850,7 +1866,7 @@ function DashboardContent() {
               </div>
 
               {/* Right column sidebar (Desktop only) */}
-              <div className="hidden lg:block lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 px-1.5 md:px-2 lg:pt-28 lg:scroll-pt-28 scrollbar-none">
+              <div id="tour-tools-sidebar" className="hidden lg:block lg:col-span-4 space-y-6 h-auto lg:h-full lg:overflow-y-auto pb-24 lg:pb-32 px-1.5 md:px-2 lg:pt-28 lg:scroll-pt-28 scrollbar-none">
 
                 <PomodoroTimer
                   sessionMinutes={sessionMinutes}
@@ -2525,7 +2541,7 @@ function DashboardContent() {
 
       {/* Floating Sticky Mobile Study Tools FAB */}
       <AnimatePresence>
-        {!mobileSheetOpen && pathname === "/dashboard" && view === "dashboard" && (
+        {!mobileSheetOpen && view === "dashboard" && (
           <motion.div
             key="study-tools-fab"
             className="fixed bottom-6 right-6 z-[40] lg:hidden"
@@ -2535,6 +2551,7 @@ function DashboardContent() {
           >
             <motion.button
               type="button"
+              id="tour-tools-fab"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => {
@@ -2749,30 +2766,32 @@ function DashboardContent() {
                 </div>
 
                 {/* Progress Details */}
-                <div className="bg-slate-950/[0.02] dark:bg-white/[0.02] border border-slate-950/[0.04] dark:border-white/[0.04] p-4.5 rounded-2xl space-y-4 mb-6">
-                  <div>
-                    <span className="text-[9px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-widest leading-none block mb-1">Syllabus Completion</span>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-2xl font-black text-slate-800 dark:text-slate-100 leading-none">{completedTopics.length}</span>
-                      <span className="text-xs text-slate-400/80 dark:text-slate-500 font-bold">/ {totalTopics} topics</span>
+                {hasActivity && (
+                  <div className="bg-slate-950/[0.02] dark:bg-white/[0.02] border border-slate-950/[0.04] dark:border-white/[0.04] p-4.5 rounded-2xl space-y-4 mb-6">
+                    <div>
+                      <span className="text-[9px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-widest leading-none block mb-1">Syllabus Completion</span>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-2xl font-black text-slate-800 dark:text-slate-100 leading-none">{completedTopics.length}</span>
+                        <span className="text-xs text-slate-400/80 dark:text-slate-500 font-bold">/ {totalTopics} topics</span>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-1.5">
+                      <div className="flex justify-between text-[10px] font-black text-slate-500 dark:text-slate-450 uppercase tracking-wider">
+                        <span>Sync Status</span>
+                        <span>
+                          {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}% Done
+                        </span>
+                      </div>
+                      <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden relative">
+                        <div
+                          className="h-full bg-slate-900 dark:bg-slate-100 transition-all duration-500 rounded-full"
+                          style={{ width: `${totalTopics > 0 ? (completedTopics.length / totalTopics) * 100 : 0}%` }}
+                        />
+                      </div>
                     </div>
                   </div>
-                  
-                  <div className="space-y-1.5">
-                    <div className="flex justify-between text-[10px] font-black text-slate-500 dark:text-slate-450 uppercase tracking-wider">
-                      <span>Sync Status</span>
-                      <span>
-                        {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}% Done
-                      </span>
-                    </div>
-                    <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden relative">
-                      <div
-                        className="h-full bg-slate-900 dark:bg-slate-100 transition-all duration-500 rounded-full"
-                        style={{ width: `${totalTopics > 0 ? (completedTopics.length / totalTopics) * 100 : 0}%` }}
-                      />
-                    </div>
-                  </div>
-                </div>
+                )}
 
                 {/* Cloud Sync Section */}
                 <div className="space-y-3">
@@ -2882,6 +2901,18 @@ function DashboardContent() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Guided Onboarding Tour */}
+      {showOnboardingTour && (
+        <OnboardingTour
+          currentBranch={branch}
+          currentSem={sem}
+          onClose={() => setShowOnboardingTour(false)}
+        />
+      )}
+
+      {/* Tour Replay Trigger */}
+      <ReplayTourButton onStart={() => setShowOnboardingTour(true)} />
     </div>
   );
 }

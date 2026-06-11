@@ -8,6 +8,7 @@ import { normalizeSiteConfig, readSiteConfig, writeSiteConfig } from "@/lib/site
 import { writeToKV, readFromKV } from "@/lib/github";
 import { safeEqual } from "@/lib/crypto";
 import { validateAdminSession, createLockdownSession, checkRateLimit } from "@/lib/session";
+import { readUsers, writeUsers } from "@/lib/users";
 
 const allowedBranchDirs: Record<string, string> = {
   cs: "computer-science-and-engineering",
@@ -458,10 +459,7 @@ export async function getSubjectCount() {
 export async function getUsers() {
   try {
     await assertAdminSecret();
-    const usersPath = path.join(process.cwd(), "constants", "users.json");
-    if (!fs.existsSync(usersPath)) return [];
-    const data = JSON.parse(fs.readFileSync(usersPath, "utf8"));
-    if (!Array.isArray(data)) return [];
+    const data = await readUsers();
     return data.map((u: any) => ({
       name: u.name,
       email: u.email,
@@ -478,17 +476,17 @@ export async function getUsers() {
 export async function deleteUser(userEmail: string) {
   try {
     await assertAdminSecret();
-    const usersPath = path.join(process.cwd(), "constants", "users.json");
-    if (!fs.existsSync(usersPath)) return { success: false, error: "No users file found." };
-
-    const users = JSON.parse(fs.readFileSync(usersPath, "utf8"));
+    const users = await readUsers();
     const filtered = users.filter((u: any) => u.email !== userEmail);
 
     if (filtered.length === users.length) {
       return { success: false, error: "User not found." };
     }
 
-    fs.writeFileSync(usersPath, JSON.stringify(filtered, null, 2), "utf8");
+    const ok = await writeUsers(filtered);
+    if (!ok) {
+      return { success: false, error: "Failed to update users database." };
+    }
     logAdminActivity("user_delete", `Deleted user ${userEmail}`);
     return { success: true };
   } catch (error: unknown) {
@@ -681,7 +679,6 @@ export async function getScheduledTasks() {
       tasks.push({ name: "Lockdown Gate", status: "active", details: "Passcode gate is active" });
     }
 
-    tasks.push({ name: "KTU Announcement Sync", status: "active", nextRun: "Every 5 minutes", details: "Scrapes ktu.edu.in announcements" });
     tasks.push({ name: "Analytics Cleanup", status: "scheduled", nextRun: "Daily", details: "Old analytics data auto-expires after 30 days" });
 
     return tasks;

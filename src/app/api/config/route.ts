@@ -6,17 +6,20 @@ import { safeEqual } from "@/lib/crypto";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const cookieStore = await cookies();
-  const adminSecret = cookieStore.get("admin_secret")?.value;
-  const correctSecret = process.env.ADMIN_SECRET_KEY;
+  try {
+    const config = await readSiteConfig();
+    
+    // Create a copy of the config and strip sensitive data
+    const publicConfig = { ...config };
+    delete (publicConfig as any).lockdownPasscode;
 
-  if (!adminSecret || !correctSecret || !safeEqual(adminSecret, correctSecret)) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    return NextResponse.json(publicConfig, {
+      headers: {
+        "Cache-Control": "no-store, max-age=0",
+      },
+    });
+  } catch (error) {
+    console.error("Failed to load public site config:", error);
+    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
-
-  return NextResponse.json(await readSiteConfig(), {
-    headers: {
-      "Cache-Control": "no-store, max-age=0",
-    },
-  });
 }

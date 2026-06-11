@@ -37,23 +37,14 @@
   "bannerEnd": "",
   "primaryAccent": "blue",
   "lockdownMode": false,
-  "lockdownPasscode": "2105",
+  "lockdownPasscode": "",
   "minAttendance": 75,
   "minCie": 40,
   "activityPointsLimit": 120,
   "progressionS5Credits": 26,
   "progressionS7Credits": 52,
   "examStartDate": "2026-07-15",
-  "timetableOverrides": {
-    "cs-8": [
-      {
-        "date": "2026-06-11",
-        "time": "1:30 PM - 4:30 PM",
-        "subjectCode": "test",
-        "subjectName": "testt"
-      }
-    ]
-  },
+  "timetableOverrides": {},
   "landingPageSections": {
     "compare": true,
     "howItWorks": true,

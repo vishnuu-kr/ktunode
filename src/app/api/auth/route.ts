@@ -1,20 +1,8 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 import crypto from "crypto";
+import { UserRecord, readUsers, writeUsers } from "@/lib/users";
 
 export const dynamic = "force-dynamic";
-
-interface UserRecord {
-  name: string;
-  email: string;
-  passwordHash: string;
-  completedTopics?: string[];
-  createdAt?: string;
-  updatedAt?: string;
-}
-
-const usersFilePath = path.join(process.cwd(), "constants", "users.json");
 
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const RATE_LIMIT_MAX_SIGNUP = 5;
@@ -41,33 +29,6 @@ function getClientIp(request: Request): string {
     request.headers.get("x-real-ip") ||
     "unknown"
   );
-}
-
-function readUsers(): UserRecord[] {
-  try {
-    if (fs.existsSync(usersFilePath)) {
-      const data = JSON.parse(fs.readFileSync(usersFilePath, "utf8"));
-      return Array.isArray(data) ? data : [];
-    }
-  } catch (error) {
-    console.error("Failed to read users database:", error);
-  }
-
-  return [];
-}
-
-function writeUsers(users: UserRecord[]) {
-  try {
-    const dir = path.dirname(usersFilePath);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-    fs.writeFileSync(usersFilePath, `${JSON.stringify(users, null, 2)}\n`, "utf8");
-    return true;
-  } catch (error) {
-    console.error("Failed to write users database:", error);
-    return false;
-  }
 }
 
 function hashPassword(password: string) {
@@ -116,7 +77,7 @@ export async function POST(request: Request) {
     }
 
     const ip = getClientIp(request);
-    const users = readUsers();
+    const users = await readUsers();
 
     if (action === "signup") {
       if (!getRateLimit(`signup:${ip}`, RATE_LIMIT_MAX_SIGNUP)) {
@@ -147,7 +108,7 @@ export async function POST(request: Request) {
       };
 
       users.push(newUser);
-      if (!writeUsers(users)) {
+      if (!await writeUsers(users)) {
         return NextResponse.json({ error: "Database write error" }, { status: 500 });
       }
 
@@ -171,7 +132,7 @@ export async function POST(request: Request) {
       if (!users[userIndex].passwordHash.startsWith("pbkdf2_sha256$")) {
         users[userIndex].passwordHash = hashPassword(password);
         users[userIndex].updatedAt = new Date().toISOString();
-        writeUsers(users);
+        await writeUsers(users);
       }
 
       return NextResponse.json({ user: publicUser(users[userIndex]) });
@@ -206,7 +167,7 @@ export async function POST(request: Request) {
         .slice(0, 5000);
       users[userIndex].updatedAt = new Date().toISOString();
 
-      if (!writeUsers(users)) {
+      if (!await writeUsers(users)) {
         return NextResponse.json({ error: "Database write error" }, { status: 500 });
       }
 

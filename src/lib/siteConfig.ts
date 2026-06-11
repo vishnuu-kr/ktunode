@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.com").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.vercel.app").replace(/\/$/, "");
 
 export interface SiteConfig {
   siteName: string;

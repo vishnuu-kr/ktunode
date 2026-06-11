@@ -209,6 +209,7 @@ export default function Navbar() {
         {isActive("/tools") ? (
           <button
             type="button"
+            id="tour-navbar-links"
             className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
             aria-label="Tools"
             title="Tools"
@@ -220,6 +221,7 @@ export default function Navbar() {
         ) : (
           <Link
             href="/tools"
+            id="tour-navbar-links"
             className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
             title="Tools"
             aria-label="Tools"
