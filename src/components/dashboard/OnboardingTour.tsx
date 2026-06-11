@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { HelpCircle, ChevronRight, X, Sparkles, BookOpen, CheckCircle, Clock, Zap } from "lucide-react";
 import confetti from "canvas-confetti";
 import { triggerHaptic } from "@/lib/haptic";
+import { triggerChecklistTask } from "@/lib/checklist";
 
 interface TourStep {
   targetId?: string;
@@ -140,11 +141,7 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
 
   useEffect(() => {
     if (currentStep === 3) {
-      import("@/components/dashboard/FirstTimeChecklist")
-        .then(({ triggerChecklistTask }) => {
-          triggerChecklistTask("toolsOpened");
-        })
-        .catch((err) => console.error(err));
+      triggerChecklistTask("toolsOpened");
     }
   }, [currentStep]);
 
@@ -154,7 +151,7 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
     localStorage.setItem("ktunode_semester", String(selectedSem));
     
     if (selectedBranch !== currentBranch || selectedSem !== currentSem) {
-      router.push(`/${selectedBranch}/sem-${selectedSem}?tour=continue`);
+      window.location.href = `/${selectedBranch}/sem-${selectedSem}?tour=continue`;
     } else {
       setCurrentStep(1);
     }

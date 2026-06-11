@@ -45,7 +45,8 @@ import { useProgress } from "@/hooks/useProgress";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import ShareButton from "@/components/ui/ShareButton";
 import OnboardingTour, { ReplayTourButton } from "@/components/dashboard/OnboardingTour";
-import FirstTimeChecklist, { triggerChecklistTask } from "@/components/dashboard/FirstTimeChecklist";
+import FirstTimeChecklist from "@/components/dashboard/FirstTimeChecklist";
+import { triggerChecklistTask } from "@/lib/checklist";
 
 const MarkdownRenderer = dynamic(() => import("@/components/ui/MarkdownRenderer"), {
   loading: () => <div className="animate-pulse h-48 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-[20px] flex items-center justify-center text-xs text-slate-400 font-medium">Loading notes rendering engine...</div>,
@@ -1945,7 +1946,7 @@ function DashboardContent() {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1 lg:pt-28 lg:scroll-pt-28 scrollbar-none"
             >
-              <div className="flex items-center justify-between mb-8 pt-8 lg:pt-0">
+              <div className="flex items-center justify-between mb-8 pt-5 lg:pt-0">
                 <button onClick={goHome} className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors group">
                   <div className="w-8 h-8 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:border-slate-300 dark:group-hover:border-slate-700 shadow-sm">
                     <ChevronLeft className="w-4 h-4 text-slate-500 dark:text-slate-400" />
@@ -2097,7 +2098,7 @@ function DashboardContent() {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-36 px-1 relative lg:pt-0 lg:scroll-pt-0 scrollbar-none"
             >
-              <div className="pt-8 lg:pt-28 lg:scroll-pt-28">
+              <div className="pt-5 lg:pt-28 lg:scroll-pt-28">
                 <button 
                   onClick={() => goSubject(selectedSubject!)} 
                 className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors mb-6 md:mb-8 group"

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CheckSquare, Square, Award, Sparkles, BookOpen, CheckCircle, Sliders, X } from "lucide-react";
 import confetti from "canvas-confetti";
 import { triggerHaptic } from "@/lib/haptic";
+import { triggerChecklistTask } from "@/lib/checklist";
 
 export default function FirstTimeChecklist() {
   const [visible, setVisible] = useState(false);
@@ -209,16 +210,4 @@ export default function FirstTimeChecklist() {
       </AnimatePresence>
     </motion.div>
   );
-}
-
-// Global hook/helper to trigger checklist updates from other components
-export function triggerChecklistTask(taskName: "subjectViewed" | "topicCompleted" | "toolsOpened") {
-  if (typeof window === "undefined") return;
-  const key = `ktunode_checklist_${taskName}`;
-  const alreadyCompleted = localStorage.getItem(key) === "true";
-  
-  if (!alreadyCompleted) {
-    localStorage.setItem(key, "true");
-    window.dispatchEvent(new Event("ktunode-checklist-sync"));
-  }
 }

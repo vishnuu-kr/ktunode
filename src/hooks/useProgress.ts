@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { triggerChecklistTask } from "@/lib/checklist";
 
 export function useProgress() {
   const [completedTopics, setCompletedTopics] = useState<string[]>([]);
@@ -55,11 +56,7 @@ export function useProgress() {
     });
     // Trigger checklist task if completed
     if (wasAdded && typeof window !== "undefined") {
-      import("@/components/dashboard/FirstTimeChecklist")
-        .then(({ triggerChecklistTask }) => {
-          triggerChecklistTask("topicCompleted");
-        })
-        .catch((err) => console.error(err));
+      triggerChecklistTask("topicCompleted");
     }
   };
 
