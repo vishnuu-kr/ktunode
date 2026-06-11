@@ -215,40 +215,6 @@ export default function FirstTimeChecklist() {
             <Square className="w-4 h-4 text-slate-300 dark:text-slate-600 shrink-0" />
           )}
         </div>
-
-        {/* SVG Strike-through line crossing all three */}
-        <AnimatePresence>
-          {showCelebrationLine && (
-            <svg className="absolute inset-0 w-full h-full pointer-events-none z-20 overflow-visible">
-              <motion.line
-                x1="-2%"
-                y1="10%"
-                x2="102%"
-                y2="90%"
-                stroke="#10b981"
-                strokeWidth="4"
-                strokeLinecap="round"
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.8, ease: "easeInOut" }}
-              />
-              <motion.line
-                x1="-2%"
-                y1="10%"
-                x2="102%"
-                y2="90%"
-                stroke="#34d399"
-                strokeWidth="2"
-                strokeLinecap="round"
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
-              />
-            </svg>
-          )}
-        </AnimatePresence>
       </div>
 
       {/* Success Modal Overlay */}

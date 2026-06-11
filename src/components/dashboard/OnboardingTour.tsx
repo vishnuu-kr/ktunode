@@ -31,13 +31,6 @@ const TOUR_STEPS: TourStep[] = [
     position: "bottom",
   },
   {
-    targetId: "tour-subject-card",
-    title: "Live Progress Tracking",
-    description: "As you finish studying, check off topics to save progress. Your completion statistics and subject progress bars will update in real time.",
-    icon: CheckCircle,
-    position: "top",
-  },
-  {
     targetId: "tour-tools-fab",
     title: "Study Tools Console",
     description: "Click this floating tool console (or sidebar on desktop) to access your Pomodoro timer, exam schedules, and pinned bookmarks.",
@@ -138,7 +131,7 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
   }, [currentStep, visible, step.targetId]);
 
   useEffect(() => {
-    if (currentStep === 3) {
+    if (currentStep === 2) {
       triggerChecklistTask("toolsOpened");
     }
   }, [currentStep]);
@@ -162,14 +155,6 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
   const handleComplete = (e: React.MouseEvent) => {
     triggerHaptic("success", e);
     localStorage.setItem("ktunode_onboarding_completed", "true");
-    
-    // Blast confetti!
-    confetti({
-      particleCount: 120,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
-
     setVisible(false);
     onClose?.();
   };
@@ -192,10 +177,16 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
         position: "fixed",
         left: 0,
         right: 0,
-        top: isTargetAtBottom ? "80px" : "auto",
-        bottom: isTargetAtBottom ? "auto" : "24px",
         zIndex: 10000,
       };
+
+      if (step.targetId === "tour-tools-fab") {
+        // Place directly above the FAB
+        tooltipStyle.bottom = `${window.innerHeight - coords.top + 12}px`;
+      } else {
+        tooltipStyle.top = isTargetAtBottom ? "80px" : "auto";
+        tooltipStyle.bottom = isTargetAtBottom ? "auto" : "24px";
+      }
     } else {
       // Desktop positions
       if (step.position === "bottom") {
