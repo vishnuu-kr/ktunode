@@ -138,6 +138,16 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
     };
   }, [currentStep, visible, step.targetId]);
 
+  useEffect(() => {
+    if (currentStep === 3) {
+      import("@/components/dashboard/FirstTimeChecklist")
+        .then(({ triggerChecklistTask }) => {
+          triggerChecklistTask("toolsOpened");
+        })
+        .catch((err) => console.error(err));
+    }
+  }, [currentStep]);
+
   const handleSaveSetup = (e: React.MouseEvent) => {
     triggerHaptic("success", e);
     localStorage.setItem("ktunode_branch", selectedBranch);
@@ -291,7 +301,7 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
       {/* Spotlight Ring */}
       {coords && (
         <div
-          className="absolute border-2 border-blue-500/80 rounded-2xl shadow-[0_0_25px_rgba(59,130,246,0.4),inset_0_0_15px_rgba(59,130,246,0.2)] animate-pulse pointer-events-none"
+          className="absolute border-2 border-blue-500/80 rounded-2xl shadow-[0_0_25px_rgba(59,130,246,0.4),inset_0_0_15px_rgba(59,130,246,0.2)] animate-pulse pointer-events-auto"
           style={{
             position: "fixed",
             top: coords.top - 4,

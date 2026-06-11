@@ -44,11 +44,23 @@ export function useProgress() {
   }, [completedTopics, isLoaded]);
 
   const toggleTopic = (topicId: string) => {
-    setCompletedTopics((prev) =>
-      prev.includes(topicId)
-        ? prev.filter((id) => id !== topicId)
-        : [...prev, topicId]
-    );
+    let wasAdded = false;
+    setCompletedTopics((prev) => {
+      if (prev.includes(topicId)) {
+        return prev.filter((id) => id !== topicId);
+      } else {
+        wasAdded = true;
+        return [...prev, topicId];
+      }
+    });
+    // Trigger checklist task if completed
+    if (wasAdded && typeof window !== "undefined") {
+      import("@/components/dashboard/FirstTimeChecklist")
+        .then(({ triggerChecklistTask }) => {
+          triggerChecklistTask("topicCompleted");
+        })
+        .catch((err) => console.error(err));
+    }
   };
 
   const isCompleted = (topicId: string) => completedTopics.includes(topicId);
