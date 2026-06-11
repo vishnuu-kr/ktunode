@@ -15,6 +15,7 @@ export default function FirstTimeChecklist() {
     toolsOpened: false,
   });
   const [allDone, setAllDone] = useState(false);
+  const [showCelebrationLine, setShowCelebrationLine] = useState(false);
 
   useEffect(() => {
     // Only show checklist if user hasn't fully completed it before
@@ -32,6 +33,48 @@ export default function FirstTimeChecklist() {
     };
     setTasks(checkState);
 
+    let overlayTimer: NodeJS.Timeout;
+    let hideTimer: NodeJS.Timeout;
+
+    const triggerCelebration = () => {
+      setShowCelebrationLine(true);
+      localStorage.setItem("ktunode_first_time_checklist_completed", "true");
+      
+      // Trigger haptic feedback
+      try {
+        triggerHaptic("success");
+      } catch (e) {}
+
+      // Dual confetti explosion immediately!
+      confetti({
+        particleCount: 80,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+      confetti({
+        particleCount: 80,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+
+      // Delay success modal overlay by 2.5s so user can see checked-off items & the line-through
+      overlayTimer = setTimeout(() => {
+        setAllDone(true);
+      }, 2500);
+
+      // Hide checklist after 6 seconds
+      hideTimer = setTimeout(() => {
+        setVisible(false);
+      }, 6000);
+    };
+
+    // If already all completed on mount
+    if (checkState.subjectViewed && checkState.topicCompleted && checkState.toolsOpened) {
+      triggerCelebration();
+    }
+
     // Event listener for state changes
     const handleChecklistUpdate = () => {
       const updated = {
@@ -42,34 +85,16 @@ export default function FirstTimeChecklist() {
       setTasks(updated);
 
       if (updated.subjectViewed && updated.topicCompleted && updated.toolsOpened) {
-        setAllDone(true);
-        localStorage.setItem("ktunode_first_time_checklist_completed", "true");
-        
-        // Launch confetti celebration!
-        setTimeout(() => {
-          confetti({
-            particleCount: 80,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0 }
-          });
-          confetti({
-            particleCount: 80,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1 }
-          });
-        }, 300);
-
-        // Hide checklist after 4 seconds
-        setTimeout(() => {
-          setVisible(false);
-        }, 5000);
+        triggerCelebration();
       }
     };
 
     window.addEventListener("ktunode-checklist-sync", handleChecklistUpdate);
-    return () => window.removeEventListener("ktunode-checklist-sync", handleChecklistUpdate);
+    return () => {
+      window.removeEventListener("ktunode-checklist-sync", handleChecklistUpdate);
+      clearTimeout(overlayTimer);
+      clearTimeout(hideTimer);
+    };
   }, []);
 
   if (!visible) return null;
@@ -139,7 +164,7 @@ export default function FirstTimeChecklist() {
       )}
 
       {/* Task List */}
-      <div className="space-y-2.5">
+      <div className="space-y-2.5 relative">
         {/* Task 1 */}
         <div className="flex items-center justify-between text-xs p-2.5 rounded-xl bg-slate-50/50 dark:bg-slate-900/30 border border-slate-100/50 dark:border-slate-800/20">
           <div className="flex items-center gap-2.5">
@@ -190,6 +215,40 @@ export default function FirstTimeChecklist() {
             <Square className="w-4 h-4 text-slate-300 dark:text-slate-600 shrink-0" />
           )}
         </div>
+
+        {/* SVG Strike-through line crossing all three */}
+        <AnimatePresence>
+          {showCelebrationLine && (
+            <svg className="absolute inset-0 w-full h-full pointer-events-none z-20 overflow-visible">
+              <motion.line
+                x1="-2%"
+                y1="10%"
+                x2="102%"
+                y2="90%"
+                stroke="#10b981"
+                strokeWidth="4"
+                strokeLinecap="round"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
+              />
+              <motion.line
+                x1="-2%"
+                y1="10%"
+                x2="102%"
+                y2="90%"
+                stroke="#34d399"
+                strokeWidth="2"
+                strokeLinecap="round"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
+              />
+            </svg>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* Success Modal Overlay */}

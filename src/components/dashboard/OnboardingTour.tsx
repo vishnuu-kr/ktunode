@@ -63,8 +63,6 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
   const [currentStep, setCurrentStep] = useState(0);
   const [coords, setCoords] = useState<{ top: number; left: number; width: number; height: number } | null>(null);
   const [visible, setVisible] = useState(true);
-  const [selectedBranch, setSelectedBranch] = useState(currentBranch);
-  const [selectedSem, setSelectedSem] = useState(currentSem);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -144,18 +142,6 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
       triggerChecklistTask("toolsOpened");
     }
   }, [currentStep]);
-
-  const handleSaveSetup = (e: React.MouseEvent) => {
-    triggerHaptic("success", e);
-    localStorage.setItem("ktunode_branch", selectedBranch);
-    localStorage.setItem("ktunode_semester", String(selectedSem));
-    
-    if (selectedBranch !== currentBranch || selectedSem !== currentSem) {
-      window.location.href = `/${selectedBranch}/sem-${selectedSem}?tour=continue`;
-    } else {
-      setCurrentStep(1);
-    }
-  };
 
   const handleNext = (e: React.MouseEvent) => {
     triggerHaptic("medium", e);
@@ -259,31 +245,60 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
     };
   }
 
+  const isToolsFab = step.targetId === "tour-tools-fab";
+  const radius = isToolsFab ? (coords ? coords.height / 2 : 24) : 24;
+
   return (
     <div className="fixed inset-0 z-[9999] pointer-events-none">
       {/* Spotlight Backdrop Overlay */}
       <AnimatePresence>
         {coords && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.6 }}
-            exit={{ opacity: 0 }}
-            className="absolute inset-0 bg-[#020617] pointer-events-auto"
-            style={{
-              clipPath: `polygon(
-                0% 0%, 
-                0% 100%, 
-                ${coords.left}px 100%, 
-                ${coords.left}px ${coords.top}px, 
-                ${coords.left + coords.width}px ${coords.top}px, 
-                ${coords.left + coords.width}px ${coords.top + coords.height}px, 
-                ${coords.left}px ${coords.top + coords.height}px, 
-                ${coords.left}px 100%, 
-                100% 100%, 
-                100% 0%
-              )`
-            }}
-          />
+          <>
+            {/* Click-blocking overlay using clipPath (transparent) */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="absolute inset-0 bg-transparent pointer-events-auto"
+              style={{
+                clipPath: `polygon(
+                  0% 0%, 
+                  0% 100%, 
+                  ${coords.left}px 100%, 
+                  ${coords.left}px ${coords.top}px, 
+                  ${coords.left + coords.width}px ${coords.top}px, 
+                  ${coords.left + coords.width}px ${coords.top + coords.height}px, 
+                  ${coords.left}px ${coords.top + coords.height}px, 
+                  ${coords.left}px 100%, 
+                  100% 100%, 
+                  100% 0%
+                )`
+              }}
+            />
+            {/* Visual overlay using SVG masking with rounded cutout */}
+            <motion.svg
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.6 }}
+              exit={{ opacity: 0 }}
+              className="absolute inset-0 w-full h-full pointer-events-none"
+            >
+              <defs>
+                <mask id="onboarding-mask">
+                  <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                  <rect
+                    x={coords.left - 4}
+                    y={coords.top - 4}
+                    width={coords.width + 8}
+                    height={coords.height + 8}
+                    rx={radius + 4}
+                    ry={radius + 4}
+                    fill="black"
+                  />
+                </mask>
+              </defs>
+              <rect x="0" y="0" width="100%" height="100%" fill="#020617" mask="url(#onboarding-mask)" />
+            </motion.svg>
+          </>
         )}
         {!coords && (
           <motion.div
@@ -298,13 +313,14 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
       {/* Spotlight Ring */}
       {coords && (
         <div
-          className="absolute border-2 border-blue-500/80 rounded-2xl shadow-[0_0_25px_rgba(59,130,246,0.4),inset_0_0_15px_rgba(59,130,246,0.2)] animate-pulse pointer-events-auto"
+          className="absolute border-2 border-blue-500/80 shadow-[0_0_25px_rgba(59,130,246,0.4),inset_0_0_15px_rgba(59,130,246,0.2)] animate-pulse pointer-events-auto"
           style={{
             position: "fixed",
             top: coords.top - 4,
             left: coords.left - 4,
             width: coords.width + 8,
             height: coords.height + 8,
+            borderRadius: isToolsFab ? "50%" : "28px"
           }}
         />
       )}
@@ -337,37 +353,6 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
             {step.description}
           </p>
 
-          {currentStep === 0 && (
-            <div className="space-y-3 mt-4 mb-5">
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[10px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-wider">Branch</label>
-                <select
-                  value={selectedBranch}
-                  onChange={(e) => setSelectedBranch(e.target.value)}
-                  className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-xs font-semibold text-slate-800 dark:text-slate-200 focus:outline-none focus:border-blue-500 cursor-pointer"
-                >
-                  <option value="cs">Computer Science (CS)</option>
-                  <option value="ec">Electronics (EC)</option>
-                  <option value="me">Mechanical (ME)</option>
-                  <option value="ce">Civil (CE)</option>
-                  <option value="ee">Electrical (EE)</option>
-                </select>
-              </div>
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[10px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-wider">Semester</label>
-                <select
-                  value={selectedSem}
-                  onChange={(e) => setSelectedSem(Number(e.target.value))}
-                  className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-xs font-semibold text-slate-800 dark:text-slate-200 focus:outline-none focus:border-blue-500 cursor-pointer"
-                >
-                  {[1, 2, 3, 4, 5, 6, 7, 8].map(s => (
-                    <option key={s} value={s}>Semester {s}</option>
-                  ))}
-                </select>
-              </div>
-            </div>
-          )}
-
           {/* Footer Controls */}
           <div className="flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80 pt-4">
             {currentStep < TOUR_STEPS.length - 1 ? (
@@ -381,25 +366,18 @@ export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, o
               <div />
             )}
 
-            {currentStep === 0 ? (
-              <button
-                onClick={handleSaveSetup}
-                className="px-4.5 py-2 bg-blue-600 hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-400 text-white font-extrabold text-[11px] rounded-xl flex items-center gap-1 shadow-md shadow-blue-500/10 hover:shadow-blue-500/20 active:scale-95 transition-all cursor-pointer"
-              >
-                Save & Start Tour <ChevronRight className="w-3.5 h-3.5" />
-              </button>
-            ) : (
-              <button
-                onClick={handleNext}
-                className="px-4.5 py-2 bg-blue-600 hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-400 text-white font-extrabold text-[11px] rounded-xl flex items-center gap-1 shadow-md shadow-blue-500/10 hover:shadow-blue-500/20 active:scale-95 transition-all cursor-pointer"
-              >
-                {currentStep === TOUR_STEPS.length - 1 ? (
-                  <>Finish <Sparkles className="w-3.5 h-3.5" /></>
-                ) : (
-                  <>Next <ChevronRight className="w-3.5 h-3.5" /></>
-                )}
-              </button>
-            )}
+            <button
+              onClick={handleNext}
+              className="px-4.5 py-2 bg-blue-600 hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-400 text-white font-extrabold text-[11px] rounded-xl flex items-center gap-1 shadow-md shadow-blue-500/10 hover:shadow-blue-500/20 active:scale-95 transition-all cursor-pointer"
+            >
+              {currentStep === 0 ? (
+                <>Start Tour <ChevronRight className="w-3.5 h-3.5" /></>
+              ) : currentStep === TOUR_STEPS.length - 1 ? (
+                <>Finish <Sparkles className="w-3.5 h-3.5" /></>
+              ) : (
+                <>Next <ChevronRight className="w-3.5 h-3.5" /></>
+              )}
+            </button>
           </div>
         </motion.div>
       </div>

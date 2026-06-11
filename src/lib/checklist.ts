@@ -4,7 +4,14 @@
  */
 export function triggerChecklistTask(taskName: "subjectViewed" | "topicCompleted" | "toolsOpened") {
   if (typeof window === "undefined") return;
-  const key = `ktunode_checklist_${taskName}`;
+  
+  const keyMap = {
+    subjectViewed: "ktunode_checklist_subject_viewed",
+    topicCompleted: "ktunode_checklist_topic_completed",
+    toolsOpened: "ktunode_checklist_tools_opened",
+  };
+  
+  const key = keyMap[taskName];
   const alreadyCompleted = localStorage.getItem(key) === "true";
   
   if (!alreadyCompleted) {
