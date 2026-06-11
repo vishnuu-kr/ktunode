@@ -236,14 +236,14 @@ export default async function RootLayout({
             --color-accent-mid: oklch(68% 0.2 ${hue} / 22%);
           }
         `}} />
-      </head>
-      {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
-      <body className={`${plusJakartaSans.variable} ${outfit.variable} font-sans`} suppressHydrationWarning>
-        <Script
-          id="json-ld"
+        {/* JSON-LD structured data belongs in head, not body */}
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+      </head>
+      {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
+      <body className={`${plusJakartaSans.variable} ${outfit.variable} font-sans`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <CSPostHogProvider>
             {isUnderMaintenance ? (

@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Terminal, ShieldAlert, Dice5, HelpCircle, Activity, Sparkles } from "lucide-react";
+import { Terminal, Dice5, AlertTriangle, ShieldCheck } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { triggerHaptic } from "@/lib/haptic";
 
 type SlotConfig = {
@@ -28,7 +29,6 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
   const slotData = slots[selectedSlot] || { subject: `Slot ${selectedSlot}`, professor: "Staff", vibe: "robot" };
   const currentAttPct = attendancePctMap[slotData.subject] ?? 80.0;
 
-  // Coefficients
   const VIBE_COEFFS = {
     saint: 1.5,
     robot: 1.0,
@@ -57,13 +57,11 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
       } else {
         clearInterval(interval);
         
-        // Finalize calculations
         let tFactor = 1.0;
         if (isFriday) tFactor *= 1.3;
         if (hasProxyHelp) tFactor *= 1.25;
         if (isCanteenStuck) tFactor *= 1.15;
 
-        // Bunk Engine Formula: (Att - 75) * Vprof * Tfactor
         const safetyScore = (currentAttPct - 75) * VIBE_COEFFS[slotData.vibe] * tFactor;
 
         let level: "green" | "amber" | "red" = "amber";
@@ -91,7 +89,6 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
             setIsScanning(false);
             setVerdict({ score: Math.round(safetyScore), level, title, desc });
             
-            // Trigger feedback matching threat severity
             if (level === "green") {
               triggerHaptic("success");
             } else if (level === "red") {
@@ -106,33 +103,33 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
   };
 
   const getCardStyles = (level: "green" | "amber" | "red") => {
-    if (level === "green") return "border-emerald-500/30 bg-emerald-500/[0.03] text-emerald-600 dark:text-emerald-400";
-    if (level === "red") return "border-rose-500/30 bg-rose-500/[0.03] text-rose-600 dark:text-rose-400";
-    return "border-amber-500/30 bg-amber-500/[0.03] text-amber-600 dark:text-amber-400";
+    if (level === "green") return "border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400";
+    if (level === "red") return "border-rose-500/20 bg-rose-500/5 text-rose-600 dark:text-rose-400";
+    return "border-amber-500/20 bg-amber-500/5 text-amber-600 dark:text-amber-400";
   };
 
   return (
-    <div className="bg-white/60 dark:bg-slate-900/40 border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl rounded-[32px] p-5 sm:p-6 shadow-sm flex flex-col h-full space-y-4">
+    <div className="bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] backdrop-blur-md rounded-[32px] p-6 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] flex flex-col h-full space-y-4">
       <div>
-        <h3 className="text-sm font-black text-slate-800 dark:text-white tracking-tight flex items-center gap-2">
-          <Dice5 className="w-4 h-4 text-emerald-500 animate-spin-slow" /> BUNK ROULETTE DECISION MATRIX
+        <h3 className="text-sm font-black text-slate-800 dark:text-white tracking-tight flex items-center gap-2 uppercase">
+          <Dice5 className="w-4 h-4 text-emerald-500 animate-spin-slow shrink-0" /> Bunk Roulette
         </h3>
-        <span className="text-[10px] text-slate-500 dark:text-slate-400 block font-semibold uppercase tracking-wider mt-0.5">
+        <span className="text-[10px] text-slate-450 dark:text-slate-400 block font-bold uppercase tracking-wider mt-0.5">
           Algorithmic safety evaluator & psychological triggers
         </span>
       </div>
 
-      <div className="space-y-3 flex-1">
+      <div className="space-y-4 flex-1">
         {/* Subject dropdown */}
-        <div className="space-y-1">
-          <label className="text-[9px] font-black text-slate-400 uppercase tracking-widest block">Select Target Course</label>
+        <div className="space-y-1.5">
+          <label className="text-[9px] font-black text-slate-450 dark:text-slate-400 uppercase tracking-widest block leading-none">Select Target Course</label>
           <select
             value={selectedSlot}
             onChange={(e) => {
               setSelectedSlot(e.target.value);
               setVerdict(null);
             }}
-            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-white/[0.04] rounded-xl px-3 py-2 text-xs font-bold text-slate-850 dark:text-white cursor-pointer"
+            className="w-full bg-slate-950/[0.03] dark:bg-slate-950 border border-slate-950/[0.06] dark:border-white/[0.06] rounded-xl px-3 py-2 text-xs font-bold text-slate-800 dark:text-white cursor-pointer outline-none focus:ring-1 focus:ring-emerald-500/35 transition-all duration-200"
           >
             {Object.keys(slots).map((slotKey) => (
               <option key={slotKey} value={slotKey}>
@@ -144,9 +141,9 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
 
         {/* Multipliers & Catalysts */}
         <div className="space-y-2">
-          <label className="text-[9px] font-black text-slate-400 uppercase tracking-widest block">Temporal Catalysts</label>
-          <div className="grid grid-cols-1 gap-2 bg-slate-50/50 dark:bg-slate-950/20 border border-slate-100 dark:border-white/[0.02] p-2.5 rounded-xl">
-            <label className="flex items-center gap-2 text-[10px] font-bold text-slate-700 dark:text-slate-350 cursor-pointer select-none">
+          <label className="text-[9px] font-black text-slate-450 dark:text-slate-400 uppercase tracking-widest block leading-none">Temporal Catalysts</label>
+          <div className="grid grid-cols-1 gap-2.5 bg-slate-950/[0.02] dark:bg-slate-950/20 border border-slate-950/[0.04] dark:border-white/[0.02] p-3 rounded-2xl">
+            <label className="flex items-center gap-2.5 text-[10.5px] font-bold text-slate-700 dark:text-slate-350 cursor-pointer select-none group">
               <input
                 type="checkbox"
                 checked={isFriday}
@@ -154,11 +151,11 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
                   setIsFriday(e.target.checked);
                   setVerdict(null);
                 }}
-                className="rounded border-slate-300 text-blue-600 focus:ring-blue-500/20 w-3.5 h-3.5"
+                className="rounded border-slate-300 dark:border-slate-800 text-blue-600 focus:ring-blue-500/20 w-4 h-4 cursor-pointer transition-all"
               />
-              Friday afternoon urge (+30% urge multiplier)
+              <span className="group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Friday afternoon urge (+30% urge multiplier)</span>
             </label>
-            <label className="flex items-center gap-2 text-[10px] font-bold text-slate-700 dark:text-slate-350 cursor-pointer select-none">
+            <label className="flex items-center gap-2.5 text-[10.5px] font-bold text-slate-700 dark:text-slate-350 cursor-pointer select-none group">
               <input
                 type="checkbox"
                 checked={hasProxyHelp}
@@ -166,11 +163,11 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
                   setHasProxyHelp(e.target.checked);
                   setVerdict(null);
                 }}
-                className="rounded border-slate-300 text-blue-600 focus:ring-blue-500/20 w-3.5 h-3.5"
+                className="rounded border-slate-300 dark:border-slate-800 text-blue-600 focus:ring-blue-500/20 w-4 h-4 cursor-pointer transition-all"
               />
-              Proxy backup available (+25% safety multiplier)
+              <span className="group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Proxy backup available (+25% safety multiplier)</span>
             </label>
-            <label className="flex items-center gap-2 text-[10px] font-bold text-slate-700 dark:text-slate-350 cursor-pointer select-none">
+            <label className="flex items-center gap-2.5 text-[10.5px] font-bold text-slate-700 dark:text-slate-350 cursor-pointer select-none group">
               <input
                 type="checkbox"
                 checked={isCanteenStuck}
@@ -178,60 +175,70 @@ export default function BunkRoulette({ slots, attendancePctMap }: BunkRoulettePr
                   setIsCanteenStuck(e.target.checked);
                   setVerdict(null);
                 }}
-                className="rounded border-slate-300 text-blue-600 focus:ring-blue-500/20 w-3.5 h-3.5"
+                className="rounded border-slate-300 dark:border-slate-800 text-blue-600 focus:ring-blue-500/20 w-4 h-4 cursor-pointer transition-all"
               />
-              Stuck in canteen queue (+15% catalyst)
+              <span className="group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Stuck in canteen queue (+15% catalyst)</span>
             </label>
           </div>
         </div>
 
         {/* Scan Log console / Output */}
-        <div className="h-32 bg-slate-950 border border-slate-800 rounded-xl p-3 flex flex-col font-mono text-[9px] text-emerald-400 overflow-y-auto space-y-1 relative">
-          <Terminal className="absolute top-2 right-2 w-3.5 h-3.5 text-slate-800 pointer-events-none" />
+        <div className="h-36 bg-slate-950 border border-slate-900 rounded-2xl p-4 flex flex-col font-mono text-[9.5px] text-emerald-400 overflow-y-auto space-y-1 relative shadow-inner">
+          <Terminal className="absolute top-3 right-3 w-4 h-4 text-slate-800 pointer-events-none" />
           
-          {isScanning ? (
-            <>
-              {scanLogs.map((log, idx) => (
-                <div key={idx} className="leading-tight animate-fade-in">{log}</div>
-              ))}
-              <div className="flex items-center gap-1 animate-pulse">
-                <span>[SYS] Processing risk vectors...</span>
-                <span className="w-1.5 h-3 bg-emerald-400" />
+          <AnimatePresence mode="wait">
+            {isScanning ? (
+              <div key="scanning" className="space-y-1">
+                {scanLogs.map((log, idx) => (
+                  <div key={idx} className="leading-tight animate-fade-in">{log}</div>
+                ))}
+                <div className="flex items-center gap-1.5 animate-pulse text-emerald-350">
+                  <span>[SYS] Processing risk vectors...</span>
+                  <span className="w-1.5 h-3.5 bg-emerald-400" />
+                </div>
               </div>
-            </>
-          ) : verdict ? (
-            <div className="text-slate-300 space-y-1.5 h-full flex flex-col justify-between">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-1">
-                <span className="font-black text-white uppercase tracking-wider text-[10px]">
-                  Engine Result
-                </span>
-                <span className="font-mono text-slate-500">
-                  Score: {verdict.score}pts
-                </span>
+            ) : verdict ? (
+              <motion.div 
+                key="verdict"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-slate-300 space-y-2.5 h-full flex flex-col justify-between"
+              >
+                <div className="flex items-center justify-between border-b border-slate-900 pb-1.5">
+                  <span className="font-black text-white uppercase tracking-wider text-[10px]">
+                    Engine Result
+                  </span>
+                  <span className="font-mono text-slate-500 font-bold">
+                    Score: {verdict.score}pts
+                  </span>
+                </div>
+                <div className={`p-2 border rounded-xl font-black text-center text-[10px] uppercase tracking-wide flex items-center justify-center gap-1.5 ${getCardStyles(verdict.level)}`}>
+                  {verdict.level === "green" ? <ShieldCheck className="w-4 h-4 shrink-0" /> : <AlertTriangle className="w-4 h-4 shrink-0" />}
+                  {verdict.title}
+                </div>
+                <p className="text-[9.5px] text-slate-400 leading-normal font-semibold">
+                  {verdict.desc}
+                </p>
+              </motion.div>
+            ) : (
+              <div key="idle" className="flex-1 flex flex-col items-center justify-center text-slate-700 gap-1.5 select-none text-center">
+                <span className="font-black tracking-widest text-[10px] uppercase text-slate-700/80">Bunk Decision Matrix Cold</span>
+                <span className="text-[8px] font-bold tracking-wider uppercase text-slate-800">Press assessment trigger below</span>
               </div>
-              <div className={`p-1.5 border rounded-lg font-black text-center text-[10px] ${getCardStyles(verdict.level)}`}>
-                {verdict.title}
-              </div>
-              <p className="text-[9px] text-slate-400 leading-normal truncate-3-lines">
-                {verdict.desc}
-              </p>
-            </div>
-          ) : (
-            <div className="flex-1 flex flex-col items-center justify-center text-slate-600 gap-1 select-none">
-              <span>BUNK DECISION MATRIX COLD</span>
-              <span className="text-[8px]">PRESS THE ACTIVATE SCAN TRIGGER BELOW</span>
-            </div>
-          )}
+            )}
+          </AnimatePresence>
         </div>
       </div>
 
-      <button
+      <motion.button
+        whileHover={{ scale: 1.01, y: -0.5 }}
+        whileTap={{ scale: 0.99 }}
         onClick={handleAssessRisk}
         disabled={isScanning}
-        className="w-full bg-slate-900 dark:bg-slate-950 hover:bg-slate-800 dark:hover:bg-slate-900 border border-slate-700 dark:border-white/[0.04] text-white font-black uppercase text-[10px] tracking-widest py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg cursor-pointer transition-all active:scale-[0.98]"
+        className="w-full bg-slate-900 hover:bg-slate-800 dark:bg-slate-850 dark:hover:bg-slate-800 border border-slate-700 dark:border-white/[0.04] text-white font-black uppercase text-[10px] tracking-widest py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-lg transition-all duration-200 cursor-pointer"
       >
         <Dice5 className="w-4 h-4" /> Assess Bunk Risk
-      </button>
+      </motion.button>
     </div>
   );
 }

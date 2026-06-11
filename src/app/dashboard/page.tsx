@@ -1,4 +1,5 @@
 "use client";
+// v2
 
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import { useParams, usePathname } from "next/navigation";
@@ -35,6 +36,10 @@ import {
   UserRound,
   LogOut,
   Cloud,
+  Edit3,
+  Plus,
+  Trash2,
+  Settings,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "next-themes";
@@ -328,6 +333,18 @@ function DashboardContent() {
   const [noteContent, setNoteContent] = useState<string>("");
   const [loadingNote, setLoadingNote] = useState(false);
 
+  // Edit Mode states
+  const [isEditMode, setIsEditMode] = useState(false);
+  const [addSubjectOpen, setAddSubjectOpen] = useState(false);
+  const [addSubjectSearch, setAddSubjectSearch] = useState("");
+  const [addSubjectResults, setAddSubjectResults] = useState<Subject[]>([]);
+  const [addSubjectLoading, setAddSubjectLoading] = useState(false);
+  const [allAvailableSubjects, setAllAvailableSubjects] = useState<Subject[]>([]);
+  const [hiddenSubjectIds, setHiddenSubjectIds] = useState<string[]>([]);
+  const [customSubjectIds, setCustomSubjectIds] = useState<string[]>([]);
+  const editModeStorageKey = `ktunode_hidden_subjects_${branch}_${sem}`;
+  const customSubjectsStorageKey = `ktunode_custom_subjects_${branch}_${sem}`;
+
   const extractedVideos = React.useMemo(() => {
     if (!noteContent) return { concept: undefined, lecture: undefined, solved: undefined };
     
@@ -425,8 +442,21 @@ function DashboardContent() {
 
   useEffect(() => {
     const cacheKey = `${branch}_${sem}`;
+
+    // Load hidden/custom subject prefs from localStorage
+    const storedHidden = localStorage.getItem(`ktunode_hidden_subjects_${branch}_${sem}`);
+    const hidden: string[] = storedHidden ? JSON.parse(storedHidden) : [];
+    setHiddenSubjectIds(hidden);
+
+    const storedCustom = localStorage.getItem(`ktunode_custom_subjects_${branch}_${sem}`);
+    const custom: string[] = storedCustom ? JSON.parse(storedCustom) : [];
+    setCustomSubjectIds(custom);
+
     if (clientSubjectsCache[cacheKey]) {
-      setSubjects(clientSubjectsCache[cacheKey]);
+      const base = clientSubjectsCache[cacheKey];
+      setAllAvailableSubjects(base);
+      // Merge custom additions (already in cache) and filter hidden
+      setSubjects(base.filter(s => !hidden.includes(s.id)));
       setLoadingSubjects(false);
       return;
     }
@@ -439,7 +469,8 @@ function DashboardContent() {
         if (active) {
           const subjectsList = Array.isArray(data) ? data : [];
           clientSubjectsCache[cacheKey] = subjectsList;
-          setSubjects(subjectsList);
+          setAllAvailableSubjects(subjectsList);
+          setSubjects(subjectsList.filter((s: Subject) => !hidden.includes(s.id)));
           setLoadingSubjects(false);
         }
       })
@@ -1004,11 +1035,21 @@ function DashboardContent() {
 
   const totalTopics = topicIndex.length;
 
+  // Scope progress to only visible (non-hidden) subjects
+  const visibleTopicIds = React.useMemo(
+    () => new Set(topicIndex.map((item) => item.topic.id)),
+    [topicIndex]
+  );
+  const visibleCompletedCount = React.useMemo(
+    () => completedTopics.filter((id) => visibleTopicIds.has(id)).length,
+    [completedTopics, visibleTopicIds]
+  );
+
   const lastTopic = topicIndex.find((item) => item.topic.id === lastTopicId) ?? null;
   const upNext = topicIndex.find((item) => !completedTopics.includes(item.topic.id)) ?? topicIndex[0] ?? null;
   const resumeTarget = lastTopic ?? upNext;
   const resumeTheme = getSubjectTheme(resumeTarget ? resumeTarget.subject : null, subjects);
-  const hasActivity = mounted && (!!lastTopicId || completedTopics.length > 0);
+  const hasActivity = mounted && (!!lastTopicId || visibleCompletedCount > 0);
 
   const filteredTopics = topicIndex.filter((item) => {
     const query = searchTerm.trim().toLowerCase();
@@ -1042,7 +1083,10 @@ function DashboardContent() {
 
       // Trigger onboarding if not completed, or if redirect tour requested
       const onboarded = localStorage.getItem("ktunode_onboarding_completed") === "true";
-      const forceTour = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("tour") === "continue";
+      const forceTour = typeof window !== "undefined" && (
+        new URLSearchParams(window.location.search).get("tour") === "continue" ||
+        new URLSearchParams(window.location.search).get("tour") === "start"
+      );
       if (!onboarded || forceTour) {
         setShowOnboardingTour(true);
       }
@@ -1056,11 +1100,18 @@ function DashboardContent() {
     }
   }, [mobileSheetOpen]);
 
+  const isTimerRestoredRef = React.useRef(false);
   useEffect(() => {
+    if (!isTimerRestored) return;
+    // Only trigger after restoration is done (skip the mount-restore cycle)
+    if (!isTimerRestoredRef.current) {
+      isTimerRestoredRef.current = true;
+      return;
+    }
     if (isTimerRunning) {
       triggerChecklistTask("toolsOpened");
     }
-  }, [isTimerRunning]);
+  }, [isTimerRunning, isTimerRestored]);
 
   // Listen to cross-component UI events from Navbar
   useEffect(() => {
@@ -1373,11 +1424,16 @@ function DashboardContent() {
   }, [commandOpen, authModalOpen, profilePanelOpen]);
 
   const startTransition = (callback: () => void) => {
+    const isOnboarding = typeof window !== "undefined" && localStorage.getItem("ktunode_onboarding_completed") !== "true";
+    if (isOnboarding) {
+      callback();
+      return;
+    }
     setIsTransitioning(true);
     setTimeout(() => {
       callback();
       setIsTransitioning(false);
-    }, 400);
+    }, 150);
   };
 
   const goHome = (event?: React.MouseEvent | React.PointerEvent) => {
@@ -1427,6 +1483,85 @@ function DashboardContent() {
       current.includes(topicId) ? current.filter((id) => id !== topicId) : [topicId, ...current].slice(0, 4)
     );
   };
+
+  // Edit Mode: hide (remove) a subject from the dashboard grid
+  const removeSubjectFromDashboard = (subjectId: string) => {
+    triggerHaptic("medium");
+    const updated = [...hiddenSubjectIds, subjectId];
+    setHiddenSubjectIds(updated);
+    localStorage.setItem(editModeStorageKey, JSON.stringify(updated));
+    setSubjects((prev) => prev.filter((s) => s.id !== subjectId));
+    showToast("Course hidden. You can restore it from Edit Layout.");
+  };
+
+  // Edit Mode: add a subject back (or a new one from another branch)
+  const addSubjectToDashboard = (subject: Subject) => {
+    triggerHaptic("success");
+    // Remove from hidden list if it was hidden
+    const updatedHidden = hiddenSubjectIds.filter((id) => id !== subject.id);
+    setHiddenSubjectIds(updatedHidden);
+    localStorage.setItem(editModeStorageKey, JSON.stringify(updatedHidden));
+
+    // Track custom additions
+    if (!allAvailableSubjects.find((s) => s.id === subject.id)) {
+      const updatedCustom = [...customSubjectIds, subject.id];
+      setCustomSubjectIds(updatedCustom);
+      localStorage.setItem(customSubjectsStorageKey, JSON.stringify(updatedCustom));
+      // Inject into available pool
+      setAllAvailableSubjects((prev) => [...prev, subject]);
+      const cacheKey = `${branch}_${sem}`;
+      clientSubjectsCache[cacheKey] = [...(clientSubjectsCache[cacheKey] || []), subject];
+    }
+
+    setSubjects((prev) => {
+      if (prev.find((s) => s.id === subject.id)) return prev;
+      return [...prev, subject];
+    });
+
+    setAddSubjectOpen(false);
+    setAddSubjectSearch("");
+    showToast(`"${subject.name}" added to your dashboard.`);
+  };
+
+  // Edit Mode: search subjects to add
+  useEffect(() => {
+    if (!addSubjectOpen) {
+      setAddSubjectResults([]);
+      return;
+    }
+    const q = addSubjectSearch.trim().toLowerCase();
+    // Search from all known subjects loaded globally (all branches/sems) by hitting API with wildcard branch
+    const runSearch = async () => {
+      setAddSubjectLoading(true);
+      try {
+        // Search within already-loaded pool first
+        const poolResults = allAvailableSubjects.filter(
+          (s) =>
+            !subjects.find((existing) => existing.id === s.id) &&
+            (q === "" ||
+              s.name.toLowerCase().includes(q) ||
+              s.code.toLowerCase().includes(q))
+        );
+        // Also show already-hidden subjects so they can be restored
+        const hiddenResults = hiddenSubjectIds
+          .map((id) => allAvailableSubjects.find((s) => s.id === id))
+          .filter((s): s is Subject => !!s && (
+            q === "" ||
+            s.name.toLowerCase().includes(q) ||
+            s.code.toLowerCase().includes(q)
+          ));
+
+        const combined = [...hiddenResults, ...poolResults.filter(s => !hiddenResults.find(h => h.id === s.id))];
+        setAddSubjectResults(combined.slice(0, 20));
+      } catch {
+        setAddSubjectResults([]);
+      } finally {
+        setAddSubjectLoading(false);
+      }
+    };
+    const timeout = setTimeout(runSearch, 150);
+    return () => clearTimeout(timeout);
+  }, [addSubjectSearch, addSubjectOpen, allAvailableSubjects, subjects, hiddenSubjectIds]);
 
   const toastTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const showToast = (message: string) => {
@@ -1657,18 +1792,18 @@ function DashboardContent() {
                         <div className="flex items-center justify-between gap-4 w-full">
                           <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Overall Progress</span>
                           <span className="px-1.5 py-0.5 rounded bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-[9px] font-black leading-none">
-                            {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}%
+                            {totalTopics > 0 ? Math.round((visibleCompletedCount / totalTopics) * 100) : 0}%
                           </span>
                         </div>
                         
                         <div className="text-base font-black text-slate-800 dark:text-slate-100 tracking-tight leading-none mt-1">
-                          {completedTopics.length} <span className="text-xs text-slate-400/80 font-bold">/ {totalTopics} topics</span>
+                          {visibleCompletedCount} <span className="text-xs text-slate-400/80 font-bold">/ {totalTopics} topics</span>
                         </div>
 
                         <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden mt-1 relative">
                           <div
                             className="h-full bg-slate-900 dark:bg-slate-100 transition-all duration-500 rounded-full"
-                            style={{ width: completedTopics.length > 0 ? `max(${(completedTopics.length / totalTopics) * 100}%, 8px)` : '0%' }}
+                            style={{ width: visibleCompletedCount > 0 ? `max(${(visibleCompletedCount / totalTopics) * 100}%, 8px)` : '0%' }}
                           />
                         </div>
                       </div>
@@ -1739,6 +1874,8 @@ function DashboardContent() {
                   </div>
                 </button>
 
+                <FirstTimeChecklist isDashboardView={view === "dashboard"} />
+
                 {hasActivity && resumeTarget && (
                   <div className={`relative rounded-2xl md:rounded-3xl overflow-hidden bg-white/65 dark:bg-slate-900/65 border transition-all duration-300 backdrop-blur-md p-5 md:p-8 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] group hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] ${resumeTheme.border}`}>
                     <div className="absolute inset-0 opacity-[0.01] bg-slate-950 pointer-events-none" />
@@ -1771,12 +1908,40 @@ function DashboardContent() {
                 )}
 
                 <div className="space-y-5 md:space-y-6">
-                  <FirstTimeChecklist />
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between gap-3">
                     <h3 className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100 tracking-tight leading-snug">Your Courses</h3>
-                    <span className="text-[10px] md:text-xs font-bold text-slate-500 dark:text-slate-400">
-                      {loadingSubjects ? "Loading" : subjects.length} active courses
-                    </span>
+                    <div className="flex items-center gap-2">
+                      {isEditMode && (
+                        <span className="text-[10px] font-bold text-slate-400 hidden sm:block">
+                          Tap a course to remove
+                        </span>
+                      )}
+                      <span className={`text-[10px] md:text-xs font-bold ${isEditMode ? "text-violet-500" : "text-slate-500 dark:text-slate-400"}`}>
+                        {loadingSubjects ? "Loading" : subjects.length} active courses
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => { setIsEditMode((v) => !v); triggerHaptic("light"); }}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[11px] font-black transition-all duration-200 border ${
+                          isEditMode
+                            ? "bg-violet-600 text-white border-violet-600 shadow-[0_4px_14px_-4px_rgba(124,58,237,0.4)]"
+                            : "bg-white/65 dark:bg-slate-900/65 text-slate-600 dark:text-slate-300 border-slate-200/60 dark:border-slate-700/60 hover:border-violet-400/50 hover:text-violet-600"
+                        }`}
+                        aria-label={isEditMode ? "Exit Edit Mode" : "Edit Layout"}
+                      >
+                        {isEditMode ? (
+                          <>
+                            <CheckCircle2 className="w-3.5 h-3.5" />
+                            Done
+                          </>
+                        ) : (
+                          <>
+                            <Edit3 className="w-3.5 h-3.5" />
+                            Edit Layout
+                          </>
+                        )}
+                      </button>
+                    </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -1800,7 +1965,7 @@ function DashboardContent() {
                             </div>
                           </div>
                         ))
-                      : subjects.length === 0
+                      : subjects.length === 0 && !isEditMode
                         ? (
                           <div className="col-span-full py-12 text-center bg-white/60 dark:bg-slate-900/60 border border-slate-950/[0.04] dark:border-white/[0.04] rounded-[20px] backdrop-blur-md">
                             <LayoutList className="w-12 h-12 text-slate-350 dark:text-slate-650 mx-auto mb-4" />
@@ -1808,75 +1973,256 @@ function DashboardContent() {
                             <p className="text-slate-500 dark:text-slate-400 font-medium">Please check your semester or branch selection.</p>
                           </div>
                         )
-                        : subjects.map((subject, index) => {
-                          const allTopicIds = subject.modules.flatMap((module) => module.topics.map((topic) => topic.id));
-                           const progress = getSubjectProgress(allTopicIds);
-                           const scheme = colorSchemes[index % colorSchemes.length];
+                        : (
+                          <>
+                            {subjects.map((subject, index) => {
+                              const allTopicIds = subject.modules.flatMap((module) => module.topics.map((topic) => topic.id));
+                              const progress = getSubjectProgress(allTopicIds);
+                              const scheme = colorSchemes[index % colorSchemes.length];
 
-                           const radius = 18;
-                           const circumference = 2 * Math.PI * radius;
-                           const strokeDashoffset = circumference - (progress / 100) * circumference;
+                              const radius = 18;
+                              const circumference = 2 * Math.PI * radius;
+                              const strokeDashoffset = circumference - (progress / 100) * circumference;
 
-                           return (
-                            <motion.button
-                              key={subject.id}
-                              id={index === 0 ? "tour-subject-card" : undefined}
-                              type="button"
-                              whileHover={{ y: -4, scale: 1.01 }}
-                              whileTap={{ scale: 0.98 }}
-                              transition={{ 
-                                opacity: { delay: index * 0.05 + 0.1, duration: 0.4, ease: [0.23, 1, 0.32, 1] },
-                                y: { type: "spring", stiffness: 300, damping: 20, delay: index * 0.05 + 0.1 },
-                                scale: { type: "spring", stiffness: 300, damping: 20 }
-                              }}
-                              onClick={() => goSubject(subject)}
-                              className={`group relative flex flex-col justify-between p-6 border rounded-3xl text-left transition-all duration-300 cursor-pointer backdrop-blur-md overflow-hidden ${scheme.bg} w-full`}
-                            >
-                              {/* Dynamic Background Watermark */}
-                              <div className="absolute -bottom-6 -right-6 opacity-[0.08] dark:opacity-[0.06] pointer-events-none transform -rotate-12 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-700 ease-out text-slate-900 dark:text-slate-100">
-                                {React.createElement(getSubjectIcon(subject.name), { className: "w-40 h-40" })}
-                              </div>
-                              {/* Subtle hover glare effect */}
-                              <div className="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-br from-white/40 via-transparent to-transparent group-hover:opacity-100 pointer-events-none" />
-                              <div className="flex items-start justify-between gap-4 w-full">
-                                  <div className="space-y-1 max-w-[calc(100%-3.2rem)]">
-                                    <div className="flex items-center gap-1.5">
-                                      <span className={`w-1.5 h-1.5 rounded-full ${scheme.dot}`} />
-                                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">{subject.code}</span>
+                              return (
+                                <motion.div
+                                  key={subject.id}
+                                  className="relative"
+                                  initial={{ opacity: 0, y: 10 }}
+                                  animate={{ opacity: 1, y: 0 }}
+                                  transition={{ delay: index * 0.04, duration: 0.3 }}
+                                >
+                                  <motion.div
+                                    id={index === 0 ? "tour-subject-card" : undefined}
+                                    role={isEditMode ? undefined : "button"}
+                                    tabIndex={isEditMode ? -1 : 0}
+                                    whileHover={{ y: isEditMode ? 0 : -4, scale: isEditMode ? 1 : 1.01 }}
+                                    whileTap={{ scale: 0.98 }}
+                                    transition={{
+                                      y: { type: "spring", stiffness: 300, damping: 20 },
+                                      scale: { type: "spring", stiffness: 300, damping: 20 }
+                                    }}
+                                    onClick={() => !isEditMode && goSubject(subject)}
+                                    onKeyDown={(e) => { if (!isEditMode && (e.key === "Enter" || e.key === " ")) goSubject(subject); }}
+                                    className={`group relative flex flex-col justify-between p-6 rounded-3xl text-left transition-all duration-300 backdrop-blur-md overflow-hidden w-full ${
+                                      isEditMode
+                                        ? `${scheme.bg} border-2 border-rose-300/60 dark:border-rose-500/40 cursor-default shadow-[0_0_0_4px_rgba(251,113,133,0.08)]`
+                                        : `${scheme.bg} border cursor-pointer`
+                                    }`}
+                                  >
+                                    {/* Dynamic Background Watermark */}
+                                    <div className="absolute -bottom-6 -right-6 opacity-[0.08] dark:opacity-[0.06] pointer-events-none transform -rotate-12 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-700 ease-out text-slate-900 dark:text-slate-100">
+                                      {React.createElement(getSubjectIcon(subject.name), { className: "w-40 h-40" })}
                                     </div>
-                                    <h4 className="text-base font-black text-slate-900 dark:text-slate-100 leading-tight line-clamp-2">{subject.name}</h4>
-                                  </div>
+                                    {/* Subtle hover glare effect */}
+                                    <div className="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-br from-white/40 via-transparent to-transparent group-hover:opacity-100 pointer-events-none" />
 
-                                  <div className="relative shrink-0 w-11 h-11 flex items-center justify-center bg-white/80 dark:bg-slate-800/80 rounded-full shadow-inner border border-slate-950/[0.04] dark:border-white/[0.04]">
-                                    <svg className="w-11 h-11 transform -rotate-90 shrink-0" viewBox="0 0 40 40">
-                                      <circle cx="20" cy="20" r={radius} className="stroke-slate-950/[0.03] dark:stroke-white/[0.03] fill-none" strokeWidth="2.5" />
-                                      <circle
-                                        cx="20"
-                                        cy="20"
-                                        r={radius}
-                                        className={`${scheme.stroke} fill-none transition-all duration-700 ease-out`}
-                                        strokeWidth="2.5"
-                                        strokeDasharray={circumference}
-                                        strokeDashoffset={strokeDashoffset}
-                                        strokeLinecap="round"
-                                      />
-                                    </svg>
-                                    <span className="absolute text-[10px] font-black text-slate-800 dark:text-slate-200">{progress}%</span>
-                                  </div>
-                              </div>
+                                    <div className="flex items-start justify-between gap-4 w-full">
+                                        <div className="space-y-1 max-w-[calc(100%-3.2rem)]">
+                                          <div className="flex items-center gap-1.5">
+                                            <span className={`w-1.5 h-1.5 rounded-full ${isEditMode ? "bg-rose-400" : scheme.dot}`} />
+                                            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">{subject.code}</span>
+                                          </div>
+                                          <h4 className="text-base font-black text-slate-900 dark:text-slate-100 leading-tight line-clamp-2">{subject.name}</h4>
+                                        </div>
 
-                              <div className="mt-6 pt-4 border-t border-slate-950/[0.06] dark:border-white/[0.06] flex items-center justify-between w-full text-[11px] font-semibold text-slate-400/50 dark:text-slate-400">
-                                <span>{subject.modules.length} Modules • {allTopicIds.length} Topics</span>
-                                <div className={`flex items-center gap-1 text-slate-400 dark:text-slate-350 ${schemeHoverTextMap[scheme.text] || "group-hover:text-blue-600"} group-hover:translate-x-0.5 transition-all`}>
-                                  <span>Open</span>
-                                  <ArrowRight className="w-3.5 h-3.5" />
+                                        {/* Progress circle ↔ Remove button swap */}
+                                        <AnimatePresence mode="wait">
+                                          {isEditMode ? (
+                                            <motion.button
+                                              key="remove-btn"
+                                              type="button"
+                                              initial={{ opacity: 0, scale: 0.7, rotate: -15 }}
+                                              animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                                              exit={{ opacity: 0, scale: 0.7, rotate: 15 }}
+                                              transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                                              onClick={(e) => { e.stopPropagation(); removeSubjectFromDashboard(subject.id); }}
+                                              className="shrink-0 w-11 h-11 rounded-full bg-rose-500 hover:bg-rose-600 active:scale-90 text-white flex items-center justify-center shadow-[0_4px_16px_rgba(239,68,68,0.35)] transition-colors"
+                                              aria-label={`Remove ${subject.name} from dashboard`}
+                                            >
+                                              <Trash2 className="w-4 h-4" />
+                                            </motion.button>
+                                          ) : (
+                                            <motion.div
+                                              key="progress-circle"
+                                              initial={{ opacity: 0, scale: 0.7 }}
+                                              animate={{ opacity: 1, scale: 1 }}
+                                              exit={{ opacity: 0, scale: 0.7 }}
+                                              transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                                              className="relative shrink-0 w-11 h-11 flex items-center justify-center bg-white/80 dark:bg-slate-800/80 rounded-full shadow-inner border border-slate-950/[0.04] dark:border-white/[0.04]"
+                                            >
+                                              <svg className="w-11 h-11 transform -rotate-90 shrink-0" viewBox="0 0 40 40">
+                                                <circle cx="20" cy="20" r={radius} className="stroke-slate-950/[0.03] dark:stroke-white/[0.03] fill-none" strokeWidth="2.5" />
+                                                <circle
+                                                  cx="20"
+                                                  cy="20"
+                                                  r={radius}
+                                                  className={`${scheme.stroke} fill-none transition-all duration-700 ease-out`}
+                                                  strokeWidth="2.5"
+                                                  strokeDasharray={circumference}
+                                                  strokeDashoffset={strokeDashoffset}
+                                                  strokeLinecap="round"
+                                                />
+                                              </svg>
+                                              <span className="absolute text-[10px] font-black text-slate-800 dark:text-slate-200">{progress}%</span>
+                                            </motion.div>
+                                          )}
+                                        </AnimatePresence>
+                                    </div>
+
+                                    <div className={`mt-6 pt-4 border-t flex items-center justify-between w-full text-[11px] font-semibold transition-colors duration-300 ${
+                                      isEditMode
+                                        ? "border-rose-200/60 dark:border-rose-500/20 text-rose-400/70 dark:text-rose-400/50"
+                                        : "border-slate-950/[0.06] dark:border-white/[0.06] text-slate-400/50 dark:text-slate-400"
+                                    }`}>
+                                      <span>{subject.modules.length} Modules • {allTopicIds.length} Topics</span>
+                                      {!isEditMode && (
+                                        <div className={`flex items-center gap-1 text-slate-400 dark:text-slate-350 ${schemeHoverTextMap[scheme.text] || "group-hover:text-blue-600"} group-hover:translate-x-0.5 transition-all`}>
+                                          <span>Open</span>
+                                          <ArrowRight className="w-3.5 h-3.5" />
+                                        </div>
+                                      )}
+                                      {isEditMode && (
+                                        <span className="text-rose-400/60 font-black text-[10px] uppercase tracking-wide">Tap 🗑 to remove</span>
+                                      )}
+                                    </div>
+                                  </motion.div>
+                                </motion.div>
+                              );
+                            })}
+
+                            {/* Add Subject card (always show in edit mode) */}
+                            {isEditMode && (
+                              <motion.button
+                                type="button"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                whileHover={{ y: -4, scale: 1.01 }}
+                                whileTap={{ scale: 0.98 }}
+                                onClick={() => { setAddSubjectOpen(true); setAddSubjectSearch(""); }}
+                                className="group relative flex flex-col items-center justify-center gap-3 p-6 border-2 border-dashed border-violet-300/60 dark:border-violet-500/30 rounded-3xl text-center transition-all duration-300 cursor-pointer backdrop-blur-md bg-violet-50/40 dark:bg-violet-900/10 hover:border-violet-400 hover:bg-violet-50/70 dark:hover:bg-violet-900/20 min-h-[140px]"
+                                aria-label="Add course to dashboard"
+                              >
+                                <div className="w-12 h-12 rounded-2xl bg-violet-100 dark:bg-violet-900/40 border border-violet-200/60 dark:border-violet-500/30 flex items-center justify-center text-violet-600 group-hover:scale-110 transition-transform">
+                                  <Plus className="w-5 h-5" />
                                 </div>
-                              </div>
-                            </motion.button>
-                          );
-                        })}
+                                <div>
+                                  <p className="text-sm font-black text-violet-700 dark:text-violet-400">Add Course</p>
+                                  <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500 mt-0.5">Restore hidden or add electives</p>
+                                </div>
+                              </motion.button>
+                            )}
+                          </>
+                        )}
                   </div>
                 </div>
+
+                {/* Add Subject Modal */}
+                <AnimatePresence>
+                  {addSubjectOpen && (
+                    <>
+                      {/* Backdrop */}
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-40 bg-slate-950/40 backdrop-blur-sm"
+                        onClick={() => setAddSubjectOpen(false)}
+                      />
+                      {/* Modal */}
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                        transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                        className="fixed inset-x-4 top-1/2 -translate-y-1/2 z-50 max-w-lg mx-auto bg-white dark:bg-slate-900 rounded-3xl shadow-[0_32px_80px_-12px_rgba(0,0,0,0.25)] dark:shadow-[0_32px_80px_-12px_rgba(0,0,0,0.6)] border border-slate-200/60 dark:border-slate-700/60 overflow-hidden"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label="Add course to dashboard"
+                      >
+                        {/* Modal Header */}
+                        <div className="flex items-center justify-between px-5 pt-5 pb-4 border-b border-slate-100 dark:border-slate-800">
+                          <div className="flex items-center gap-3">
+                            <div className="w-9 h-9 rounded-xl bg-violet-100 dark:bg-violet-900/40 flex items-center justify-center text-violet-600">
+                              <Plus className="w-4 h-4" />
+                            </div>
+                            <div>
+                              <h3 className="text-sm font-black text-slate-900 dark:text-slate-100">Add Course</h3>
+                              <p className="text-[11px] font-semibold text-slate-400">Search and add courses to your dashboard</p>
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => setAddSubjectOpen(false)}
+                            className="w-8 h-8 rounded-xl flex items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+                            aria-label="Close"
+                          >
+                            <X className="w-4 h-4" />
+                          </button>
+                        </div>
+
+                        {/* Search Input */}
+                        <div className="px-5 pt-4 pb-3">
+                          <div className="relative">
+                            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                            <input
+                              type="text"
+                              value={addSubjectSearch}
+                              onChange={(e) => setAddSubjectSearch(e.target.value)}
+                              placeholder="Search by name or course code..."
+                              autoFocus
+                              className="w-full pl-10 pr-4 py-3 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 text-sm font-semibold text-slate-800 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-400/20 transition-all"
+                            />
+                          </div>
+                        </div>
+
+                        {/* Results */}
+                        <div className="px-3 pb-4 max-h-72 overflow-y-auto scrollbar-none">
+                          {addSubjectLoading ? (
+                            <div className="flex items-center justify-center py-8 text-slate-400">
+                              <div className="w-5 h-5 border-2 border-violet-400 border-t-transparent rounded-full animate-spin" />
+                            </div>
+                          ) : addSubjectResults.length === 0 ? (
+                            <div className="py-8 text-center">
+                              <BookOpen className="w-8 h-8 text-slate-300 dark:text-slate-600 mx-auto mb-2" />
+                              <p className="text-sm font-bold text-slate-400">
+                                {addSubjectSearch ? "No matching courses found" : "All available courses are already on your dashboard"}
+                              </p>
+                            </div>
+                          ) : (
+                            <div className="space-y-1">
+                              {hiddenSubjectIds.length > 0 && addSubjectSearch === "" && (
+                                <p className="px-2 pt-1 pb-1 text-[10px] font-black tracking-widest uppercase text-violet-500">Hidden Courses</p>
+                              )}
+                              {addSubjectResults.map((s) => {
+                                const isHidden = hiddenSubjectIds.includes(s.id);
+                                return (
+                                  <button
+                                    key={s.id}
+                                    type="button"
+                                    onClick={() => addSubjectToDashboard(s)}
+                                    className="w-full flex items-center gap-3 px-3 py-3 rounded-2xl hover:bg-violet-50 dark:hover:bg-violet-900/20 hover:text-violet-700 dark:hover:text-violet-300 text-left transition-all group border border-transparent hover:border-violet-200/60 dark:hover:border-violet-500/20"
+                                  >
+                                    <div className="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/40 flex items-center justify-center text-slate-500 shrink-0 group-hover:bg-violet-100 dark:group-hover:bg-violet-900/40 group-hover:text-violet-600 transition-all">
+                                      {React.createElement(getSubjectIcon(s.name), { className: "w-4 h-4" })}
+                                    </div>
+                                    <div className="min-w-0 flex-1">
+                                      <span className="block text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-violet-700 dark:group-hover:text-violet-300 truncate transition-colors">{s.name}</span>
+                                      <span className="block text-[11px] font-bold text-slate-400 truncate">{s.code} {isHidden && <span className="ml-1 text-violet-500">• Hidden</span>}</span>
+                                    </div>
+                                    <div className="shrink-0 w-7 h-7 rounded-lg bg-violet-100 dark:bg-violet-900/40 text-violet-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
+                                      <Plus className="w-3.5 h-3.5" />
+                                    </div>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      </motion.div>
+                    </>
+                  )}
+                </AnimatePresence>
 
 
               </div>
@@ -1947,7 +2293,11 @@ function DashboardContent() {
               className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1 lg:pt-28 lg:scroll-pt-28 scrollbar-none"
             >
               <div className="flex items-center justify-between mb-8 pt-5 lg:pt-0">
-                <button onClick={goHome} className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors group">
+                <button
+                  id="tour-back-button"
+                  onClick={goHome}
+                  className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors group"
+                >
                   <div className="w-8 h-8 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:border-slate-300 dark:group-hover:border-slate-700 shadow-sm">
                     <ChevronLeft className="w-4 h-4 text-slate-500 dark:text-slate-400" />
                   </div>
@@ -2047,6 +2397,7 @@ function DashboardContent() {
                                 return (
                                   <motion.div
                                     key={topic.id}
+                                    id={index === 0 && topicIdx === 0 ? "tour-topic-row" : undefined}
                                     initial={{ opacity: 0, x: -12 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.2, delay: topicIdx * 0.03 }}
@@ -2100,6 +2451,7 @@ function DashboardContent() {
             >
               <div className="pt-5 lg:pt-28 lg:scroll-pt-28">
                 <button 
+                  id="tour-back-button"
                   onClick={() => goSubject(selectedSubject!)} 
                 className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors mb-6 md:mb-8 group"
                 aria-label={`Back to ${selectedSubject?.name ?? "subject"}`}
@@ -2294,6 +2646,7 @@ function DashboardContent() {
 
                   <div className="flex-1 sm:flex-none flex justify-center">
                     <MagneticButton
+                      id="tour-topic-checkbox"
                       onClick={(e) => handleToggleTopic(selectedTopic, e)}
                       customShadow={isCompleted(selectedTopic.id) ? "shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)]" : theme.buttonShadow}
                       className="flex-1 sm:flex-none !px-4 !py-2 !rounded-full text-xs font-black flex items-center justify-center gap-1.5 transition-all duration-300 whitespace-nowrap"
@@ -2787,7 +3140,7 @@ function DashboardContent() {
                     <div>
                       <span className="text-[9px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-widest leading-none block mb-1">Syllabus Completion</span>
                       <div className="flex items-baseline gap-1">
-                        <span className="text-2xl font-black text-slate-800 dark:text-slate-100 leading-none">{completedTopics.length}</span>
+                       <span className="text-2xl font-black text-slate-800 dark:text-slate-100 leading-none">{visibleCompletedCount}</span>
                         <span className="text-xs text-slate-400/80 dark:text-slate-500 font-bold">/ {totalTopics} topics</span>
                       </div>
                     </div>
@@ -2796,13 +3149,13 @@ function DashboardContent() {
                       <div className="flex justify-between text-[10px] font-black text-slate-500 dark:text-slate-450 uppercase tracking-wider">
                         <span>Sync Status</span>
                         <span>
-                          {totalTopics > 0 ? Math.round((completedTopics.length / totalTopics) * 100) : 0}% Done
+                          {totalTopics > 0 ? Math.round((visibleCompletedCount / totalTopics) * 100) : 0}% Done
                         </span>
                       </div>
                       <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden relative">
                         <div
                           className="h-full bg-slate-900 dark:bg-slate-100 transition-all duration-500 rounded-full"
-                          style={{ width: `${totalTopics > 0 ? (completedTopics.length / totalTopics) * 100 : 0}%` }}
+                          style={{ width: `${totalTopics > 0 ? (visibleCompletedCount / totalTopics) * 100 : 0}%` }}
                         />
                       </div>
                     </div>
@@ -2923,12 +3276,11 @@ function DashboardContent() {
         <OnboardingTour
           currentBranch={branch}
           currentSem={sem}
+          view={view}
+          mobileSheetOpen={mobileSheetOpen}
           onClose={() => setShowOnboardingTour(false)}
         />
       )}
-
-      {/* Tour Replay Trigger */}
-      <ReplayTourButton onStart={() => setShowOnboardingTour(true)} />
     </div>
   );
 }

@@ -8,6 +8,8 @@ import BunkRoulette from "./BunkRoulette";
 import ProxyRadar from "./ProxyRadar";
 import ConfigDrawer from "./ConfigDrawer";
 import { Settings, RefreshCw, Zap } from "lucide-react";
+import { motion } from "framer-motion";
+import { triggerHaptic } from "@/lib/haptic";
 
 type SlotConfig = {
   subject: string;
@@ -200,32 +202,53 @@ export default function MissionControlDashboard({ branch, sem, gpa = "8.42" }: M
   const attendancePctMap = calculateAttendanceMap();
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 relative">
+      {/* Decorative ambient glowing background circles */}
+      <div className="absolute top-20 left-10 w-96 h-96 rounded-full bg-blue-500/[0.04] dark:bg-blue-500/[0.02] blur-[80px] pointer-events-none" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-purple-500/[0.04] dark:bg-purple-500/[0.02] blur-[80px] pointer-events-none" />
+
       {/* Top HUD Controller Menu */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-200/50 dark:border-white/[0.04] pb-4">
-        <div className="space-y-0.5">
-          <h2 className="text-xl font-black text-slate-800 dark:text-white tracking-tight flex items-center gap-2">
-            <Zap className="w-5 h-5 text-blue-500 animate-pulse" /> MISSION CONTROL
-          </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800/50 pb-5">
+        <div className="space-y-1">
+          <div className="flex items-center gap-2">
+            <div className="p-1 bg-blue-500/10 dark:bg-blue-500/20 rounded-lg text-blue-600 dark:text-blue-400">
+              <Zap className="w-4 h-4 fill-current animate-pulse" />
+            </div>
+            <h2 className="text-lg font-black text-slate-800 dark:text-white tracking-tight uppercase">
+              Tactical Cockpit
+            </h2>
+          </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 font-bold">
             Real-time daily gauntlet, attendance telemetry, and bunk risk router
           </p>
         </div>
 
         <div className="flex items-center gap-2 w-full sm:w-auto">
-          <button
-            onClick={handleResetData}
-            className="flex-1 sm:flex-none border border-slate-200 dark:border-slate-800 hover:border-rose-500/20 hover:bg-rose-500/5 text-slate-500 dark:text-slate-400 hover:text-rose-500 text-[10px] font-bold uppercase tracking-wider px-3.5 py-2.5 rounded-xl cursor-pointer transition-all flex items-center justify-center gap-1.5"
+          <motion.button
+            whileHover={{ scale: 1.01, y: -0.5 }}
+            whileTap={{ scale: 0.99 }}
+            onClick={() => {
+              triggerHaptic("warning");
+              if (confirm("Are you sure you want to reset all timetable data?")) {
+                handleResetData();
+              }
+            }}
+            className="flex-1 sm:flex-none border border-slate-200 dark:border-slate-800/80 hover:border-rose-500/30 hover:bg-rose-500/5 text-slate-500 dark:text-slate-400 hover:text-rose-500 text-[10px] font-black uppercase tracking-wider px-4 py-2.5 rounded-xl cursor-pointer transition-colors duration-200 flex items-center justify-center gap-1.5"
           >
             <RefreshCw className="w-3.5 h-3.5" /> Re-Setup
-          </button>
+          </motion.button>
           
-          <button
-            onClick={() => setIsConfigOpen(true)}
-            className="flex-1 sm:flex-none bg-slate-900 dark:bg-slate-850 hover:bg-slate-800 dark:hover:bg-slate-800 text-white border border-slate-700 dark:border-white/[0.04] text-[10px] font-black uppercase tracking-wider px-4 py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-md cursor-pointer transition-all active:scale-[0.97]"
+          <motion.button
+            whileHover={{ scale: 1.01, y: -0.5 }}
+            whileTap={{ scale: 0.99 }}
+            onClick={() => {
+              triggerHaptic("light");
+              setIsConfigOpen(true);
+            }}
+            className="flex-1 sm:flex-none bg-gradient-to-b from-[#2E95FF] to-[#007AFF] hover:brightness-105 text-white border border-blue-500/20 text-[10px] font-black uppercase tracking-wider px-4.5 py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-[0_4px_12px_rgba(0,122,255,0.2)] dark:shadow-none cursor-pointer transition-all duration-200"
           >
-            <Settings className="w-3.5 h-3.5 animate-spin-slow" /> Timetable Settings
-          </button>
+            <Settings className="w-3.5 h-3.5" /> Timetable Settings
+          </motion.button>
         </div>
       </div>
 

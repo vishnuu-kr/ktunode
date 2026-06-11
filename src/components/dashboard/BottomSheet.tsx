@@ -126,6 +126,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
       >
         {/* Drag Handle & Header */}
         <div
+          id="tour-tools-close"
           onClick={handleToggle}
           onPointerDown={(e) => {
             if (isOpen) {

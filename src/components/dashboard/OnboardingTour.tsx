@@ -1,385 +1,594 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HelpCircle, ChevronRight, X, Sparkles, BookOpen, CheckCircle, Clock, Zap } from "lucide-react";
-import confetti from "canvas-confetti";
+import {
+  HelpCircle, ChevronRight, Sparkles, BookOpen, Clock, Zap,
+} from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
-import { triggerChecklistTask } from "@/lib/checklist";
 
+// ─── Types & Steps ───────────────────────────────────────────────────────────
+type Position = "center" | "bottom" | "top" | "left" | "right";
 interface TourStep {
   targetId?: string;
   title: string;
   description: string;
   icon: React.ComponentType<{ className?: string }>;
-  position: "center" | "bottom" | "left" | "right" | "top";
+  position: Position;
 }
+type Coords = { top: number; left: number; width: number; height: number };
 
-const TOUR_STEPS: TourStep[] = [
-  {
-    title: "Welcome to KTUNODE!",
-    description: "Your modern B.Tech study cockpit. Let's take a quick 30-second tour to learn how to find notes, track your syllabus progress, and utilize study tools.",
-    icon: Sparkles,
-    position: "center",
-  },
-  {
-    targetId: "tour-subject-card",
-    title: "Syllabus & Notes",
-    description: "This is a subject card. Click any card to drill down into its modules and read chapter-wise notes.",
-    icon: BookOpen,
-    position: "bottom",
-  },
-  {
-    targetId: "tour-tools-fab",
-    title: "Study Tools Console",
-    description: "Click this floating tool console (or sidebar on desktop) to access your Pomodoro timer, exam schedules, and pinned bookmarks.",
-    icon: Clock,
-    position: "left",
-  },
-  {
-    title: "All set!",
-    description: "You're ready to master the semester. Calculate GPA, check attendance milestones, or open tools in the navbar. Replay this tour anytime by clicking the '?' button.",
-    icon: Zap,
-    position: "center",
-  }
+const STEPS: TourStep[] = [
+  { title: "Welcome to KTUNODE! 🚀", description: "Your B.Tech study cockpit. Let's do a quick, interactive setup to clear your checklist and unlock your cockpit.", icon: Sparkles, position: "center" },
+  { targetId: "tour-subject-card", title: "Step 1: Explore Syllabus", description: "First, let's open a subject syllabus. Click the subject card to view its modules.", icon: BookOpen, position: "bottom" },
+  { targetId: "tour-topic-row", title: "Step 2: Read Topic Notes", description: "Now, let's look at some notes. Click on the first topic in the list to open it.", icon: BookOpen, position: "bottom" },
+  { targetId: "tour-topic-checkbox", title: "Step 3: Track Progress", description: "Once you read the notes, mark the topic as completed. Click 'Mark as Done' at the bottom.", icon: Zap, position: "top" },
+  { targetId: "tour-back-button", title: "Step 4: Return to Dashboard", description: "Excellent! Let's return to the dashboard. Click the back button to go back.", icon: BookOpen, position: "bottom" },
+  { targetId: "tour-tools-fab", title: "Step 5: Open Study Tools", description: "Lastly, let's open the Study Tools console. Click this FAB (or sidebar on desktop) to open your cockpit panel.", icon: Clock, position: "left" },
+  { targetId: "tour-tools-close", title: "Step 6: Close Study Tools", description: "Great! Swipe down or click the header bar to close the Study Tools sheet and return to the dashboard.", icon: Clock, position: "bottom" },
+  { title: "Quick Start Complete! 🎉", description: "Fantastic! All tasks completed. You're ready to score that 10.0 CGPA.", icon: Sparkles, position: "center" },
 ];
 
-interface OnboardingTourProps {
-  currentBranch?: string;
-  currentSem?: number;
-  onClose?: () => void;
+// ─── Layout helpers ───────────────────────────────────────────────────────────
+const CARD_W = 316;
+const PAD    = 8;
+
+function resolveId(id: string) {
+  return id === "tour-tools-fab" && typeof window !== "undefined" && window.innerWidth >= 1024
+    ? "tour-tools-sidebar" : id;
 }
 
-export default function OnboardingTour({ currentBranch = "cs", currentSem = 4, onClose }: OnboardingTourProps) {
-  const router = useRouter();
-  const [currentStep, setCurrentStep] = useState(0);
-  const [coords, setCoords] = useState<{ top: number; left: number; width: number; height: number } | null>(null);
+function measureEl(id: string): Coords | null {
+  const el = document.getElementById(resolveId(id));
+  if (!el) return null;
+  const r = el.getBoundingClientRect();
+  return r.width > 0 ? { top: r.top, left: r.left, width: r.width, height: r.height } : null;
+}
+
+function getCardXY(coords: Coords | null, pos: Position, cardHeight: number): { x: number; y: number } {
+  if (typeof window === "undefined") return { x: 0, y: 0 };
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  const mob = vw < 768;
+  const cw  = mob ? vw - 28 : CARD_W;
+  const G   = 14;
+
+  if (!coords) {
+    return { x: mob ? 14 : Math.max(14, vw / 2 - cw / 2), y: Math.max(72, vh / 2 - cardHeight / 2) };
+  }
+  const cx = coords.left + coords.width  / 2;
+  const cy = coords.top  + coords.height / 2;
+
+  if (mob) {
+    const x = 14;
+    if (pos === "left") return { x, y: Math.max(72, coords.top - cardHeight - G) };
+    return coords.top + coords.height / 2 < vh / 2
+      ? { x, y: Math.min(vh - cardHeight - 14, coords.top + coords.height + G) }
+      : { x, y: Math.max(72, coords.top - cardHeight - G) };
+  }
+  switch (pos) {
+    case "bottom": return { x: Math.max(14, Math.min(vw - cw - 14, cx - cw / 2)), y: Math.min(vh - cardHeight - 14, coords.top + coords.height + G) };
+    case "top":    return { x: Math.max(14, Math.min(vw - cw - 14, cx - cw / 2)), y: Math.max(14, coords.top - cardHeight - G) };
+    case "left":   return { x: Math.max(14, coords.left - cw - G),                y: Math.max(14, Math.min(vh - cardHeight - 14, cy - cardHeight / 2)) };
+    case "right":  return { x: Math.min(vw - cw - 14, coords.left + coords.width + G), y: Math.max(14, Math.min(vh - cardHeight - 14, cy - cardHeight / 2)) };
+    default:       return { x: Math.max(14, vw / 2 - cw / 2), y: Math.max(72, vh / 2 - cardHeight / 2) };
+  }
+}
+
+// ─── Transition — same easing for EVERY animated element ─────────────────────
+// Premium ease-out expo — buttery smooth, no overshoot
+const T = { duration: 0.6, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] };
+
+// ─── Confetti Celebration ───────────────────────────────────────────────────
+async function boom() {
+  try {
+    const confettiModule = await import("canvas-confetti");
+    const confetti = typeof confettiModule === "function" ? confettiModule : (confettiModule.default || confettiModule);
+    if (typeof confetti === "function") {
+      confetti({ particleCount: 120, angle: 60,  spread: 80, origin: { x: 0,   y: 0.65 }, zIndex: 99999 });
+      setTimeout(() => {
+        confetti({ particleCount: 120, angle: 120, spread: 80, origin: { x: 1,   y: 0.65 }, zIndex: 99999 });
+      }, 180);
+      setTimeout(() => {
+        confetti({ particleCount: 80,  spread: 100,             origin: { x: 0.5, y: 0.45 }, zIndex: 99999 });
+      }, 400);
+    }
+  } catch (err) {
+    console.error("confetti dynamic import/call error:", err);
+  }
+}
+
+// ─── Component ────────────────────────────────────────────────────────────────
+// ─── LocalStorage Sync ──────────────────────────────────────────────────────
+const getStoredStep = (): number => {
+  if (typeof window === "undefined") return 0;
+  const saved = localStorage.getItem("ktunode_onboarding_step");
+  if (saved !== null) {
+    const val = parseInt(saved, 10);
+    if (!isNaN(val) && val >= 0 && val < STEPS.length) return val;
+  }
+  return 0;
+};
+
+export default function OnboardingTour({
+  view,
+  onClose,
+  mobileSheetOpen,
+}: { currentBranch?: string; currentSem?: number; view?: string; onClose?: () => void; mobileSheetOpen?: boolean }) {
+  const [step, setStepState] = useState<number>(0);
   const [visible, setVisible] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  // Custom step setter that syncs to localStorage
+  const setStep = (newStep: number | ((prev: number) => number)) => {
+    setStepState(prev => {
+      const next = typeof newStep === "function" ? newStep(prev) : newStep;
+      localStorage.setItem("ktunode_onboarding_step", next.toString());
+      return next;
+    });
+  };
+
+  console.log("OnboardingTour Render - view prop:", view, "step state:", step);
+
+  // coords + the step those coords BELONG TO (updated atomically together)
+  const [spot, setSpot] = useState<{ coords: Coords | null; stepIdx: number }>({
+    coords: null, stepIdx: 0,
+  });
+
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [cardHeight, setCardHeight] = useState(252);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const q = new URLSearchParams(window.location.search);
-      if (q.get("tour") === "continue") {
-        setCurrentStep(1);
-        // Clear search param so it doesn't loop or stick
-        const newUrl = window.location.pathname;
-        window.history.replaceState({}, document.title, newUrl);
+    setMounted(true);
+    const q = new URLSearchParams(window.location.search);
+    const tourParam = q.get("tour");
+    if (tourParam === "start" || tourParam === "continue") {
+      localStorage.removeItem("ktunode_onboarding_completed");
+      localStorage.removeItem("ktunode_onboarding_step");
+      localStorage.removeItem("ktunode_checklist_subject_viewed");
+      localStorage.removeItem("ktunode_checklist_topic_completed");
+      localStorage.removeItem("ktunode_checklist_tools_opened");
+      localStorage.removeItem("ktunode_first_time_checklist_completed");
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new Event("ktunode-checklist-sync"));
       }
+      setStepState(0);
+      localStorage.setItem("ktunode_onboarding_step", "0");
+      window.history.replaceState({}, document.title, window.location.pathname);
+    } else {
+      const saved = getStoredStep();
+      setStepState(saved);
     }
   }, []);
 
-  const step = TOUR_STEPS[currentStep];
-
+  // Auto-advance step based on view changes for the onboarding flow
   useEffect(() => {
-    if (!visible) return;
-
-    // 1. Scroll the target into view once when step changes
-    if (step.targetId) {
-      let targetId = step.targetId!;
-      if (targetId === "tour-tools-fab" && window.innerWidth >= 1024) {
-        targetId = "tour-tools-sidebar";
-      }
-      const el = document.getElementById(targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
+    console.log("OnboardingTour Auto-Advance Effect - view prop:", view, "step state:", step);
+    if (view === "subject" && step === 1) {
+      console.log("OnboardingTour Auto-Advance - matching view === 'subject' && step === 1 -> setting step to 2");
+      setStep(2);
+      try { triggerHaptic("medium"); } catch {}
+    } else if (view === "topic" && step === 2) {
+      console.log("OnboardingTour Auto-Advance - matching view === 'topic' && step === 2 -> setting step to 3");
+      setStep(3);
+      try { triggerHaptic("medium"); } catch {}
+    } else if (view === "dashboard" && step === 4) {
+      console.log("OnboardingTour Auto-Advance - matching view === 'dashboard' && step === 4 -> setting step to 5");
+      setStep(5);
+      try { triggerHaptic("medium"); } catch {}
     }
+  }, [view, step]);
 
-    // 2. Measure element bounds relative to the viewport dynamically
-    const updateCoords = () => {
-      if (!step.targetId) {
-        setCoords(null);
-        return;
+  // Listen for checklist task updates to auto-advance steps
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const handleSync = () => {
+      const topicCompleted = localStorage.getItem("ktunode_checklist_topic_completed") === "true";
+      const toolsOpened = localStorage.getItem("ktunode_checklist_tools_opened") === "true";
+
+      if (step === 3 && topicCompleted) {
+        setStep(4);
+        try { triggerHaptic("success"); } catch {}
       }
-      let targetId = step.targetId!;
-      if (targetId === "tour-tools-fab" && window.innerWidth >= 1024) {
-        targetId = "tour-tools-sidebar";
-      }
-      const el = document.getElementById(targetId);
-      if (el) {
-        const rect = el.getBoundingClientRect();
-        // Check if element has any dimension to avoid highlighting collapsed nodes
-        if (rect.width > 0 && rect.height > 0) {
-          setCoords({
-            top: rect.top,
-            left: rect.left,
-            width: rect.width,
-            height: rect.height
-          });
+      if (step === 5 && toolsOpened) {
+        const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
+        if (isDesktop) {
+          setStep(7);
+          try { triggerHaptic("success"); } catch {}
+        } else {
+          setStep(6);
+          try { triggerHaptic("medium"); } catch {}
         }
-      } else {
-        setCoords(null);
       }
     };
+    window.addEventListener("ktunode-checklist-sync", handleSync);
+    handleSync();
+    return () => window.removeEventListener("ktunode-checklist-sync", handleSync);
+  }, [step]);
 
-    // Run measurement immediately and setup a polling interval + event listeners
-    // to capture coordinates smoothly as page scrolls or window resizes.
-    updateCoords();
-    const timer = setTimeout(updateCoords, 100);
-    const interval = setInterval(updateCoords, 50);
-
-    window.addEventListener("resize", updateCoords);
-    window.addEventListener("scroll", updateCoords, { passive: true });
-
-    return () => {
-      clearTimeout(timer);
-      clearInterval(interval);
-      window.removeEventListener("resize", updateCoords);
-      window.removeEventListener("scroll", updateCoords);
-    };
-  }, [currentStep, visible, step.targetId]);
-
+  // Auto-advance from Step 6 to Step 7 when mobileSheetOpen becomes false
   useEffect(() => {
-    if (currentStep === 2) {
-      triggerChecklistTask("toolsOpened");
+    if (step === 6 && !mobileSheetOpen) {
+      console.log("OnboardingTour Auto-Advance - mobileSheetOpen became false on step 6 -> setting step to 7");
+      setStep(7);
+      try { triggerHaptic("success"); } catch {}
     }
-  }, [currentStep]);
+  }, [mobileSheetOpen, step]);
+
+  // Measure target for the current step and commit atomically
+  useEffect(() => {
+    if (!mounted || !visible) return;
+    const s = STEPS[step];
+
+    if (!s.targetId) {
+      setSpot({ coords: null, stepIdx: step }); // center step
+      return;
+    }
+
+    const el = document.getElementById(resolveId(s.targetId));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    const trySet = () => {
+      const c = measureEl(s.targetId!);
+      if (c) { setSpot({ coords: c, stepIdx: step }); return true; }
+      return false;
+    };
+
+    if (!trySet()) {
+      const t  = setTimeout(trySet, 100);
+      const iv = setInterval(() => { if (trySet()) clearInterval(iv); }, 60);
+      return () => { clearTimeout(t); clearInterval(iv); };
+    }
+  }, [step, mounted, visible]);
+
+  // Keep spotlight in sync while scrolling / resizing
+  useEffect(() => {
+    if (!mounted || !visible) return;
+    const s = STEPS[step];
+    if (!s.targetId) return;
+    const sync = () => {
+      const c = measureEl(s.targetId!);
+      if (c) setSpot(prev => prev.stepIdx === step ? { coords: c, stepIdx: step } : prev);
+    };
+    const iv = setInterval(sync, 120);
+    window.addEventListener("resize", sync);
+    window.addEventListener("scroll", sync, { passive: true });
+    return () => { clearInterval(iv); window.removeEventListener("resize", sync); window.removeEventListener("scroll", sync); };
+  }, [step, mounted, visible]);
+
+  // Dynamically observe and measure card content height to prevent layout jumps
+  useEffect(() => {
+    if (!cardRef.current) return;
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const h = (entry.target as HTMLElement).offsetHeight;
+        if (h > 0) {
+          setCardHeight(h);
+        }
+      }
+    });
+    observer.observe(cardRef.current);
+    return () => observer.disconnect();
+  }, [spot.stepIdx]);
 
   const handleNext = (e: React.MouseEvent) => {
     triggerHaptic("medium", e);
-    if (currentStep < TOUR_STEPS.length - 1) {
-      setCurrentStep(prev => prev + 1);
-    } else {
-      handleComplete(e);
-    }
-  };
-
-  const handleSkip = (e: React.MouseEvent) => {
-    triggerHaptic("warning", e);
-    localStorage.setItem("ktunode_onboarding_completed", "true");
-    setVisible(false);
-    onClose?.();
-  };
-
-  const handleComplete = (e: React.MouseEvent) => {
-    triggerHaptic("success", e);
-    localStorage.setItem("ktunode_onboarding_completed", "true");
-    setVisible(false);
-    onClose?.();
-  };
-
-  if (!visible) return null;
-
-  const IconComponent = step.icon;
-
-  // Compute tooltip position style relative to target coords (viewport-relative)
-  let tooltipStyle: React.CSSProperties = {};
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-  
-  if (coords) {
-    const margin = 16;
-    if (isMobile) {
-      // On mobile, anchor tooltip either to the top of screen or bottom of screen
-      // depending on where the spotlight target is, avoiding overlay conflicts.
-      const isTargetAtBottom = coords.top + coords.height / 2 > window.innerHeight / 2;
-      tooltipStyle = {
-        position: "fixed",
-        left: 0,
-        right: 0,
-        zIndex: 10000,
-      };
-
-      if (step.targetId === "tour-tools-fab") {
-        // Place directly above the FAB
-        tooltipStyle.bottom = `${window.innerHeight - coords.top + 12}px`;
+    if (step < STEPS.length - 1) {
+      if (step === 0) {
+        // Reset checklist items to start fresh
+        localStorage.removeItem("ktunode_onboarding_completed");
+        localStorage.removeItem("ktunode_checklist_subject_viewed");
+        localStorage.removeItem("ktunode_checklist_topic_completed");
+        localStorage.removeItem("ktunode_checklist_tools_opened");
+        localStorage.removeItem("ktunode_first_time_checklist_completed");
+        if (typeof window !== "undefined") {
+          window.dispatchEvent(new Event("ktunode-checklist-sync"));
+        }
+      }
+      if (step === 5 && typeof window !== "undefined" && window.innerWidth >= 1024) {
+        setStep(7);
       } else {
-        tooltipStyle.top = isTargetAtBottom ? "80px" : "auto";
-        tooltipStyle.bottom = isTargetAtBottom ? "auto" : "24px";
+        setStep(s => s + 1);
       }
     } else {
-      // Desktop positions
-      if (step.position === "bottom") {
-        tooltipStyle = {
-          position: "fixed",
-          top: coords.top + coords.height + margin,
-          left: Math.max(16, Math.min(window.innerWidth - 356, coords.left + coords.width / 2 - 170)),
-          zIndex: 10000,
-        };
-      } else if (step.position === "top") {
-        tooltipStyle = {
-          position: "fixed",
-          bottom: window.innerHeight - coords.top + margin,
-          left: Math.max(16, Math.min(window.innerWidth - 356, coords.left + coords.width / 2 - 170)),
-          zIndex: 10000,
-        };
-      } else if (step.position === "left") {
-        tooltipStyle = {
-          position: "fixed",
-          top: coords.top + coords.height / 2 - 110,
-          left: coords.left - 340 - margin,
-          zIndex: 10000,
-        };
-      } else if (step.position === "right") {
-        tooltipStyle = {
-          position: "fixed",
-          top: coords.top + coords.height / 2 - 110,
-          left: coords.left + coords.width + margin,
-          zIndex: 10000,
-        };
-      }
+      triggerHaptic("success", e);
+      finish();
     }
-  } else {
-    // Centered modal when there is no target element (Step 0 and Step 4)
-    tooltipStyle = {};
-  }
+  };
+  const finish = async () => {
+    localStorage.setItem("ktunode_onboarding_completed", "true");
+    localStorage.removeItem("ktunode_onboarding_step");
+    localStorage.setItem("ktunode_checklist_subject_viewed", "true");
+    localStorage.setItem("ktunode_checklist_topic_completed", "true");
+    localStorage.setItem("ktunode_checklist_tools_opened", "true");
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new Event("ktunode-checklist-sync"));
+    }
+    await boom();
+    setVisible(false);
+    onClose?.();
+  };
 
-  const isToolsFab = step.targetId === "tour-tools-fab";
-  const radius = isToolsFab ? (coords ? coords.height / 2 : 24) : 24;
+  if (!visible || !mounted) return null;
+
+  const { coords, stepIdx } = spot;
+  const dispStep = STEPS[stepIdx];       // position from the step we have coords for
+  const mob      = window.innerWidth < 768;
+  const cw       = mob ? window.innerWidth - 28 : CARD_W;
+  const isCircleSpot = resolveId(dispStep.targetId || "") === "tour-tools-fab";
+  const spotR    = isCircleSpot && coords ? Math.min(coords.width, coords.height) / 2 : 22;
+
+  // Card target position
+  const cardXY = getCardXY(coords, dispStep.position, cardHeight);
+
+  const vw = typeof window !== "undefined" ? window.innerWidth : 1024;
+  const vh = typeof window !== "undefined" ? window.innerHeight : 768;
+
+  // Spotlight ring geometry - position at screen center with 0 size when no coords
+  const ring = coords
+    ? { x: coords.left - PAD, y: coords.top - PAD, w: coords.width + PAD * 2, h: coords.height + PAD * 2, o: 1 }
+    : { x: vw / 2, y: vh / 2, w: 0, h: 0, o: 0 };
+
+  const isSheetStep = stepIdx === 5 || stepIdx === 6;
 
   return (
-    <div className="fixed inset-0 z-[9999] pointer-events-none">
-      {/* Spotlight Backdrop Overlay */}
-      <AnimatePresence>
-        {coords && (
-          <>
-            {/* Click-blocking overlay using clipPath (transparent) */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-transparent pointer-events-auto"
-              style={{
-                clipPath: `polygon(
-                  0% 0%, 
-                  0% 100%, 
-                  ${coords.left}px 100%, 
-                  ${coords.left}px ${coords.top}px, 
-                  ${coords.left + coords.width}px ${coords.top}px, 
-                  ${coords.left + coords.width}px ${coords.top + coords.height}px, 
-                  ${coords.left}px ${coords.top + coords.height}px, 
-                  ${coords.left}px 100%, 
-                  100% 100%, 
-                  100% 0%
-                )`
-              }}
-            />
-            {/* Visual overlay using SVG masking with rounded cutout */}
-            <motion.svg
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.6 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-0 w-full h-full pointer-events-none"
-            >
-              <defs>
-                <mask id="onboarding-mask">
-                  <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                  <rect
-                    x={coords.left - 4}
-                    y={coords.top - 4}
-                    width={coords.width + 8}
-                    height={coords.height + 8}
-                    rx={radius + 4}
-                    ry={radius + 4}
-                    fill="black"
-                  />
-                </mask>
-              </defs>
-              <rect x="0" y="0" width="100%" height="100%" fill="#020617" mask="url(#onboarding-mask)" />
-            </motion.svg>
-          </>
-        )}
-        {!coords && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.7 }}
-            exit={{ opacity: 0 }}
-            className="absolute inset-0 bg-[#020617]/70 backdrop-blur-[2px] pointer-events-auto"
-          />
-        )}
-      </AnimatePresence>
+    <div className="fixed inset-0 pointer-events-none select-none" style={{ zIndex: 9998 }}>
 
-      {/* Spotlight Ring */}
-      {coords && (
-        <div
-          className="absolute border-2 border-blue-500/80 shadow-[0_0_25px_rgba(59,130,246,0.4),inset_0_0_15px_rgba(59,130,246,0.2)] animate-pulse pointer-events-auto"
+      {/* ── 1. Dark dimming overlay via SVG mask ─────────────────────── */}
+      <svg
+        className="absolute inset-0 pointer-events-none"
+        style={{ width: "100%", height: "100%", display: "block" }}
+      >
+        <defs>
+          <mask id="tour-mask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            {/* This rect is the "hole" — same tween as the ring */}
+            <motion.rect
+              animate={{
+                x: ring.x,
+                y: ring.y,
+                width: ring.w,
+                height: ring.h,
+                rx: spotR,
+                ry: spotR
+              }}
+              transition={T}
+              fill="black"
+            />
+          </mask>
+        </defs>
+        <motion.rect
+          x="0"
+          y="0"
+          width="100%"
+          height="100%"
+          animate={{ fill: isSheetStep ? "rgba(2,6,23,0.28)" : "rgba(2,6,23,0.74)" }}
+          transition={T}
+          mask="url(#tour-mask)"
+        />
+      </svg>
+
+      {/* ── 2a. Pulsing halo ring (behind main ring for premium micro-interaction) ─── */}
+      {ring.o > 0 && (
+        <motion.div
+          animate={{
+            x: ring.x - 4,
+            y: ring.y - 4,
+            width: ring.w + 8,
+            height: ring.h + 8,
+            scale: [1, 1.05, 1],
+            opacity: [0.15, 0.45, 0.15],
+            borderRadius: spotR + 4
+          }}
+          transition={{
+            x: T,
+            y: T,
+            width: T,
+            height: T,
+            scale: { repeat: Infinity, duration: 2, ease: "easeInOut" },
+            opacity: { repeat: Infinity, duration: 2, ease: "easeInOut" }
+          }}
+          className="fixed top-0 left-0 pointer-events-none"
           style={{
-            position: "fixed",
-            top: coords.top - 4,
-            left: coords.left - 4,
-            width: coords.width + 8,
-            height: coords.height + 8,
-            borderRadius: isToolsFab ? "50%" : "28px"
+            border: "1.5px solid var(--color-accent)",
+            zIndex: 9998,
           }}
         />
       )}
 
-      {/* Tooltip Card Wrapper */}
-      <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-[10000]">
-        <div 
-          className={(!isMobile && coords) ? "relative w-[340px] pointer-events-none" : "relative w-full flex justify-center px-4 pointer-events-none"}
-          style={tooltipStyle}
-        >
+      {/* ── 2. Spotlight ring (exact same animate values as SVG rect) ─── */}
+      <motion.div
+        animate={{
+          x: ring.x,
+          y: ring.y,
+          width: ring.w,
+          height: ring.h,
+          opacity: ring.o,
+          borderRadius: spotR
+        }}
+        transition={T}
+        className="fixed top-0 left-0 pointer-events-none"
+        style={{
+          border: "2px solid var(--color-accent)",
+          boxShadow: [
+            "0 0 0 1px color-mix(in srgb, var(--color-accent) 25%, transparent)",
+            "0 0 28px 6px color-mix(in srgb, var(--color-accent) 30%, transparent)",
+            "inset 0 0 12px 2px color-mix(in srgb, var(--color-accent) 10%, transparent)",
+          ].join(", "),
+          zIndex: 9999,
+        }}
+      />
+
+      {/* ── 4. Tooltip card — one box, slides via CSS tween ───────────── */}
+      <motion.div
+        ref={cardRef}
+        animate={{ x: cardXY.x, y: cardXY.y, opacity: 1 }}
+        initial={{ x: cardXY.x, y: cardXY.y, opacity: 0 }}
+        transition={T}
+        className="fixed top-0 left-0 pointer-events-auto rounded-[28px] p-6 bg-white/95 dark:bg-slate-900/95 border border-slate-200/50 dark:border-slate-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] backdrop-blur-xl"
+        style={{
+          width: cw,
+          zIndex: 10001,
+        }}
+      >
+        {/* Content cross-fades between steps */}
+        <AnimatePresence mode="wait">
           <motion.div
-            initial={{ opacity: 0, scale: 0.93, y: 15 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.93, y: 15 }}
-            transition={{ type: "spring", stiffness: 350, damping: 26 }}
-            className="w-full max-w-[340px] bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-3xl p-5 md:p-6 shadow-[0_24px_60px_rgba(37,99,235,0.08)] dark:shadow-[0_24px_60px_rgba(0,0,0,0.5)] pointer-events-auto relative"
+            key={stepIdx}
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
           >
-            {/* Header indicator */}
-            <div className="flex items-center justify-between mb-4">
-              <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
-                <IconComponent className="w-4 h-4" />
-              </div>
-              <span className="text-[10px] font-black text-slate-400 dark:text-slate-550 uppercase tracking-widest bg-slate-950/[0.03] dark:bg-white/[0.03] px-2.5 py-1 rounded-lg border border-slate-950/[0.04] dark:border-white/[0.04] select-none">
-                Step {currentStep + 1} of {TOUR_STEPS.length}
-              </span>
-            </div>
-
-            {/* Title & Description */}
-            <h3 className="text-base font-extrabold text-slate-900 dark:text-white mb-2 leading-tight tracking-tight">
-              {step.title}
-            </h3>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-6 font-medium">
-              {step.description}
-            </p>
-
-            {/* Footer Controls */}
-            <div className="flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80 pt-4">
-              {currentStep < TOUR_STEPS.length - 1 ? (
-                <button
-                  onClick={handleSkip}
-                  className="text-[10px] font-bold text-slate-450 hover:text-slate-650 dark:text-slate-500 dark:hover:text-slate-350 uppercase tracking-wider cursor-pointer transition-colors"
-                >
-                  Skip
-                </button>
-              ) : (
-                <div />
-              )}
-
-              <button
-                onClick={handleNext}
-                className="px-4.5 py-2 bg-blue-600 hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-400 text-white font-extrabold text-[11px] rounded-xl flex items-center gap-1 shadow-md shadow-blue-500/10 hover:shadow-blue-500/20 active:scale-95 transition-all cursor-pointer"
-              >
-                {currentStep === 0 ? (
-                  <>Start Tour <ChevronRight className="w-3.5 h-3.5" /></>
-                ) : currentStep === TOUR_STEPS.length - 1 ? (
-                  <>Finish <Sparkles className="w-3.5 h-3.5" /></>
-                ) : (
-                  <>Next <ChevronRight className="w-3.5 h-3.5" /></>
-                )}
-              </button>
-            </div>
+            <TourCardContent
+              step={STEPS[stepIdx]}
+              idx={stepIdx}
+              total={STEPS.length}
+              onNext={handleNext}
+              onSkip={e => { triggerHaptic("warning", e); finish(); }}
+            />
           </motion.div>
-        </div>
-      </div>
+        </AnimatePresence>
+      </motion.div>
     </div>
   );
 }
 
-// Global button to reset/replay tour
+// ─── Card Content UI ──────────────────────────────────────────────────────────
+function TourCardContent({ step, idx, total, onNext, onSkip }: {
+  step: TourStep; idx: number; total: number;
+  onNext: (e: React.MouseEvent) => void;
+  onSkip: (e: React.MouseEvent) => void;
+}) {
+  const Icon   = step.icon;
+  const isLast = idx === total - 1;
+  return (
+    <>
+      {/* Icon + counter */}
+      <div className="flex items-center justify-between mb-4">
+        <div className="w-[38px] h-[38px] rounded-[12px] flex items-center justify-center text-white shadow-md shadow-blue-500/10"
+          style={{ background: "var(--color-accent)" }}>
+          <Icon className="w-[18px] h-[18px]" />
+        </div>
+        <span className="text-[10px] font-black uppercase tracking-[0.14em] select-none px-2.5 py-1 rounded-[8px] text-slate-500 dark:text-slate-400 bg-slate-100/60 dark:bg-slate-800/50 border border-slate-200/40 dark:border-slate-700/40">
+          {idx + 1} / {total}
+        </span>
+      </div>
+
+      {/* Progress pills */}
+      <div className="flex gap-[5px] mb-[18px]">
+        {Array.from({ length: total }).map((_, i) => (
+          <div key={i} style={{
+            height: 3.5, borderRadius: 99, flex: i === idx ? 2.5 : 1,
+            background: i <= idx ? "var(--color-accent)" : "rgba(0,0,0,0.07)",
+            transition: "flex 0.35s ease, background 0.25s ease",
+          }} className="dark:bg-white/[0.08]" />
+        ))}
+      </div>
+
+      {/* Text */}
+      <h3 className="mb-[6px] leading-snug tracking-tight text-slate-900 dark:text-slate-100 font-extrabold"
+        style={{ fontSize: 14.5 }}>
+        {step.title}
+      </h3>
+      <p className="leading-relaxed mb-5 text-slate-500 dark:text-slate-400 font-semibold"
+        style={{ fontSize: 12 }}>
+        {step.description}
+      </p>
+
+      {/* Buttons */}
+      <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-850/60">
+        {!isLast ? (
+          <button onClick={onSkip} className="cursor-pointer transition-colors text-slate-400 hover:text-slate-650 dark:hover:text-slate-200 font-bold"
+            style={{ fontSize: 9.5, letterSpacing: "0.1em", textTransform: "uppercase" }}>
+            Skip tour
+          </button>
+        ) : <div />}
+
+        {idx === 1 ? (
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-500/10 text-[#007AFF] border border-blue-500/15 animate-pulse select-none my-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#007AFF] animate-ping" />
+            <span className="text-[10px] font-black uppercase tracking-wider">Click subject to proceed</span>
+          </div>
+        ) : idx === 2 ? (
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-500/10 text-[#007AFF] border border-blue-500/15 animate-pulse select-none my-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#007AFF] animate-ping" />
+            <span className="text-[10px] font-black uppercase tracking-wider">Click topic to proceed</span>
+          </div>
+        ) : idx === 3 ? (
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-500/10 text-[#007AFF] border border-blue-500/15 animate-pulse select-none my-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#007AFF] animate-ping" />
+            <span className="text-[10px] font-black uppercase tracking-wider">Click Mark as Done</span>
+          </div>
+        ) : idx === 4 ? (
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-500/10 text-[#007AFF] border border-blue-500/15 animate-pulse select-none my-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#007AFF] animate-ping" />
+            <span className="text-[10px] font-black uppercase tracking-wider">Click Back to Dashboard</span>
+          </div>
+        ) : idx === 5 ? (
+          typeof window !== "undefined" && window.innerWidth >= 1024 ? (
+            <button onClick={onNext}
+              className="flex items-center gap-[6px] cursor-pointer active:scale-95 transition-transform"
+              style={{
+                fontSize: 11, fontWeight: 900, color: "#fff",
+                padding: "8px 16px", borderRadius: 12,
+                background: "linear-gradient(to bottom, #2E95FF, #007AFF)",
+                boxShadow: "0 3px 12px rgba(0, 122, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.35)",
+                border: "1px solid rgba(0, 122, 255, 0.2)",
+              }}>
+              <span>Next</span>
+              <ChevronRight className="w-[14px] h-[14px]" />
+            </button>
+          ) : (
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-500/10 text-[#007AFF] border border-blue-500/15 animate-pulse select-none my-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#007AFF] animate-ping" />
+              <span className="text-[10px] font-black uppercase tracking-wider">Open Study Tools</span>
+            </div>
+          )
+        ) : idx === 6 ? (
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-500/10 text-[#007AFF] border border-blue-500/15 animate-pulse select-none my-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#007AFF] animate-ping" />
+            <span className="text-[10px] font-black uppercase tracking-wider">Close Study Tools</span>
+          </div>
+        ) : (
+          <button onClick={onNext}
+            className="flex items-center gap-[6px] cursor-pointer active:scale-95 hover:scale-[1.03] transition-transform duration-200"
+            style={{
+              fontSize: 11, fontWeight: 900, color: "#fff",
+              padding: "8px 16px", borderRadius: 12,
+              background: "linear-gradient(to bottom, #2E95FF, #007AFF)",
+              boxShadow: "0 3px 12px rgba(0, 122, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.35)",
+              border: "1px solid rgba(0, 122, 255, 0.2)",
+            }}>
+            {idx === 0  ? <><span>Start Tour</span>  <ChevronRight className="w-[14px] h-[14px]" /></> :
+             isLast     ? <><span>Finish</span>       <Sparkles     className="w-[14px] h-[14px]" /></> :
+                           <><span>Next</span>         <ChevronRight className="w-[14px] h-[14px]" /></>}
+          </button>
+        )}
+      </div>
+    </>
+  );
+}
+
+// ─── Replay button ────────────────────────────────────────────────────────────
 export function ReplayTourButton({ onStart }: { onStart: () => void }) {
   return (
     <button
-      onClick={(e) => {
+      onClick={e => {
         triggerHaptic("medium", e);
         localStorage.removeItem("ktunode_onboarding_completed");
+        localStorage.removeItem("ktunode_onboarding_step");
+        localStorage.removeItem("ktunode_checklist_subject_viewed");
+        localStorage.removeItem("ktunode_checklist_topic_completed");
+        localStorage.removeItem("ktunode_checklist_tools_opened");
+        localStorage.removeItem("ktunode_first_time_checklist_completed");
+        if (typeof window !== "undefined") {
+          window.dispatchEvent(new Event("ktunode-checklist-sync"));
+        }
         onStart();
       }}
-      title="Start Welcome Tour"
-      className="fixed bottom-5 left-5 z-[50] w-9 h-9 rounded-full bg-white/80 dark:bg-slate-900/80 border border-slate-200/50 dark:border-slate-800/50 backdrop-blur-md text-slate-500 dark:text-slate-400 hover:text-blue-500 hover:border-blue-500/30 flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 active:scale-95 transition-all"
-      aria-label="Replay guided tour"
+      title="Replay guided tour" aria-label="Replay guided tour"
+      className="fixed bottom-5 left-5 z-50 w-9 h-9 rounded-full bg-white/80 dark:bg-slate-900/80 border border-slate-200/50 dark:border-slate-800/50 backdrop-blur-md text-slate-500 dark:text-slate-400 flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 active:scale-95 transition-all"
     >
       <HelpCircle className="w-5 h-5" />
     </button>

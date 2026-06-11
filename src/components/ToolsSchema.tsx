@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 
 /**
  * ToolsSchema Component
@@ -57,11 +58,13 @@ export function ToolsSchema() {
 
   return (
     <>
-      <script
+      <Script
+        id="tools-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <script
+      <Script
+        id="tools-software-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />

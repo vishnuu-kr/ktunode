@@ -263,6 +263,7 @@ export default function Home() {
   const [branchOpen, setBranchOpen] = useState(false);
   const [semOpen, setSemOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isLaunching, setIsLaunching] = useState(false);
   const [siteConfig, setSiteConfig] = useState<any>(null);
 
 
@@ -292,6 +293,20 @@ export default function Home() {
     }
   }, [mounted]);
 
+  // Prefetch the target route as soon as a branch and semester are selected
+  useEffect(() => {
+    if (selectedBranch && selectedSemester) {
+      router.prefetch(`/${selectedBranch}/sem-${selectedSemester}`);
+    }
+  }, [selectedBranch, selectedSemester, router]);
+
+  // Prefetch the saved session route on mount
+  useEffect(() => {
+    if (mounted && savedSession) {
+      router.prefetch(`/${savedSession.branch}/sem-${savedSession.semester}`);
+    }
+  }, [mounted, savedSession, router]);
+
   const handleLaunch = (event?: React.MouseEvent | React.PointerEvent) => {
     if (!selectedBranch || !selectedSemester) {
       setErrorState(true);
@@ -301,6 +316,7 @@ export default function Home() {
     }
 
     triggerHaptic("success", event);
+    setIsLaunching(true);
 
     // Save session before navigating (only when both are selected)
     if (selectedBranch && selectedSemester) {
@@ -313,6 +329,7 @@ export default function Home() {
   const handleContinue = (event?: React.MouseEvent | React.PointerEvent) => {
     if (!savedSession) return;
     triggerHaptic("success", event);
+    setIsLaunching(true);
     router.push(`/${savedSession.branch}/sem-${savedSession.semester}`);
   };
 
@@ -533,7 +550,7 @@ export default function Home() {
 
         {/* ── Continue Session Button (below selector card) ── */}
         <AnimatePresence>
-          {mounted && savedSession && (
+          {mounted && savedSession && !isLaunching && (
             <ContinueSessionButton
               session={savedSession}
               onContinue={handleContinue}

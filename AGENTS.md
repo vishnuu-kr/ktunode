@@ -7,7 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **ktunode** (271081 symbols, 272464 relationships, 242 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **nil-project** (271118 symbols, 272519 relationships, 243 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -30,10 +30,10 @@ This project is indexed by GitNexus as **ktunode** (271081 symbols, 272464 relat
 
 | Resource | Use for |
 |----------|---------|
-| `gitnexus://repo/ktunode/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/ktunode/clusters` | All functional areas |
-| `gitnexus://repo/ktunode/processes` | All execution flows |
-| `gitnexus://repo/ktunode/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/nil-project/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/nil-project/clusters` | All functional areas |
+| `gitnexus://repo/nil-project/processes` | All execution flows |
+| `gitnexus://repo/nil-project/process/{name}` | Step-by-step execution trace |
 
 ## CLI
 

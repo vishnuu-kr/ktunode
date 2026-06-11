@@ -58,6 +58,7 @@ import {
   Gamepad2,
   ExternalLink,
   ChevronRight,
+  ChevronLeft,
   User,
   Shield,
   X,
@@ -2109,7 +2110,32 @@ export default function ToolsPage() {
 
   const [spacedRepetitionData, setSpacedRepetitionData] = useState<Record<string, { level: "low" | "medium" | "high", date: string }>>({});
   const [studyConsoleTab, setStudyConsoleTab] = useState<"focus" | "utilities">("focus");
-  const [utilityConsoleTab, setUtilityConsoleTab] = useState<"checklist" | "gamble" | "splits">("checklist");
+  const [utilityConsoleTab, setUtilityConsoleTab] = useState<"checklist" | "gamble" | "splits" | "slots">("checklist");
+  const [examDates, setExamDates] = useState<Record<string, { date: string, time: string }>>({});
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem(`ktunode_exam_dates_${branch}_${sem}`);
+      if (saved) {
+        try {
+          setExamDates(JSON.parse(saved));
+        } catch (e) {
+          console.error(e);
+        }
+      } else {
+        setExamDates({});
+      }
+    }
+  }, [branch, sem]);
+
+  const handleUpdateExamDate = (courseCode: string, date: string, time: string) => {
+    const updated = {
+      ...examDates,
+      [courseCode]: { date, time }
+    };
+    setExamDates(updated);
+    localStorage.setItem(`ktunode_exam_dates_${branch}_${sem}`, JSON.stringify(updated));
+  };
 
   // --- 24 MICRO-TOOLS SANDBOX STATES ---
   const [mtSearchQuery, setMtSearchQuery] = useState("");
@@ -4568,6 +4594,198 @@ export default function ToolsPage() {
     );
   };
 
+  const renderFlashcardsCard = () => {
+    const total = flashcardsList.length;
+    const activeCard = flashcardsList[activeCardIndex];
+    const score = flashcardScores.known;
+
+    const handleGotIt = () => {
+      triggerHaptic("light");
+      setFlashcardScores(prev => ({ ...prev, known: prev.known + 1 }));
+      setIsCardFlipped(false);
+      setTimeout(() => {
+        setActiveCardIndex(prev => prev + 1);
+      }, 150);
+    };
+
+    const handleNeedReview = () => {
+      triggerHaptic("light");
+      setIsCardFlipped(false);
+      setTimeout(() => {
+        setActiveCardIndex(prev => prev + 1);
+      }, 150);
+    };
+
+    const handleRestart = () => {
+      triggerHaptic("medium");
+      setActiveCardIndex(0);
+      setIsCardFlipped(false);
+      setFlashcardScores({ known: 0, total });
+    };
+
+    const handlePrev = () => {
+      if (activeCardIndex > 0) {
+        triggerHaptic("light");
+        setIsCardFlipped(false);
+        setTimeout(() => {
+          setActiveCardIndex(prev => prev - 1);
+        }, 150);
+      }
+    };
+
+    const handleNext = () => {
+      if (activeCardIndex < total - 1) {
+        triggerHaptic("light");
+        setIsCardFlipped(false);
+        setTimeout(() => {
+          setActiveCardIndex(prev => prev + 1);
+        }, 150);
+      }
+    };
+
+    const isCompleted = total > 0 && activeCardIndex >= total;
+
+    return (
+      <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 overflow-hidden w-full animate-fade-in">
+        <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/60 dark:border-white/[0.06]">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/15 to-indigo-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400">
+              <Sparkles className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-50 font-sans">Active Recall Flashcards</h3>
+              <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 block mt-0.5 max-w-[180px] sm:max-w-none truncate font-sans">
+                {plannerActiveSubject?.name || "Selected Subject"}
+              </span>
+            </div>
+          </div>
+          {total > 0 && !isCompleted && (
+            <span className="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 text-[10px] font-bold text-slate-600 dark:text-slate-400 rounded-md font-mono">
+              Card {activeCardIndex + 1} of {total}
+            </span>
+          )}
+        </div>
+
+        {total === 0 ? (
+          <div className="p-8 text-center text-slate-400 dark:text-slate-500 text-xs font-medium font-sans">
+            No flashcards available for this subject.
+          </div>
+        ) : isCompleted ? (
+          <div className="p-8 flex flex-col items-center justify-center text-center space-y-4 font-sans">
+            <div className="w-12 h-12 rounded-full bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+              <Award className="w-6 h-6" />
+            </div>
+            <div>
+              <h4 className="text-sm font-bold text-slate-900 dark:text-slate-50">Deck Completed!</h4>
+              <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">
+                You mastered {score} out of {total} key concepts.
+              </p>
+            </div>
+            <div className="w-full max-w-[200px] h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-emerald-500 transition-all duration-500" 
+                style={{ width: `${(score / total) * 100}%` }}
+              />
+            </div>
+            <button
+              onClick={handleRestart}
+              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-all cursor-pointer active:scale-95 flex items-center gap-1.5 shadow-sm"
+            >
+              <RotateCcw className="w-3.5 h-3.5" /> Study Again
+            </button>
+          </div>
+        ) : (
+          <div className="px-5 py-4 space-y-4 font-sans">
+            {/* Flip Card Container */}
+            <div 
+              onClick={() => setIsCardFlipped(!isCardFlipped)}
+              className="relative w-full h-[180px] cursor-pointer group [perspective:1000px]"
+            >
+              <motion.div 
+                className="relative w-full h-full [transform-style:preserve-3d]"
+                animate={{ rotateY: isCardFlipped ? 180 : 0 }}
+                transition={{ duration: 0.4 }}
+              >
+                {/* Front Side */}
+                <div className="absolute inset-0 w-full h-full p-5 rounded-2xl border border-slate-200/60 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/40 hover:bg-slate-100/50 dark:hover:bg-slate-800/60 transition-colors flex flex-col justify-between [backface-visibility:hidden]">
+                  <span className="text-[8px] font-bold text-blue-500 dark:text-blue-400 uppercase tracking-widest block">Question</span>
+                  <div className="flex-1 flex items-center justify-center py-2">
+                    <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 text-center leading-relaxed">
+                      {activeCard?.q}
+                    </p>
+                  </div>
+                  <div className="text-center text-[9px] font-medium text-slate-400 dark:text-slate-500 flex items-center justify-center gap-1">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" /> Click card to reveal answer
+                  </div>
+                </div>
+
+                {/* Back Side */}
+                <div className="absolute inset-0 w-full h-full p-5 rounded-2xl border border-slate-200/60 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/40 hover:bg-slate-100/50 dark:hover:bg-slate-800/60 transition-colors flex flex-col justify-between [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                  <span className="text-[8px] font-bold text-emerald-500 dark:text-emerald-400 uppercase tracking-widest block">Answer Details</span>
+                  <div className="flex-1 flex items-center justify-center py-2 overflow-y-auto max-h-[110px] scrollbar-none">
+                    <p className="text-[11px] sm:text-xs font-semibold text-slate-700 dark:text-slate-350 text-center leading-relaxed">
+                      {activeCard?.a}
+                    </p>
+                  </div>
+                  <div className="text-center text-[9px] font-medium text-slate-450 dark:text-slate-500">
+                    Click card to flip back
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex items-center justify-between gap-3 pt-2">
+              <button
+                onClick={handlePrev}
+                disabled={activeCardIndex === 0}
+                className="w-10 h-10 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/80 flex items-center justify-center text-slate-500 hover:text-slate-750 dark:hover:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed transition-all cursor-pointer"
+                title="Previous card"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+
+              <div className="flex-1 flex justify-center">
+                {isCardFlipped ? (
+                  <div className="flex items-center gap-2.5 w-full max-w-[280px]">
+                    <button
+                      onClick={handleNeedReview}
+                      className="flex-1 py-2.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/15 border border-rose-500/20 text-rose-600 dark:text-rose-400 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 text-center"
+                    >
+                      Need Review
+                    </button>
+                    <button
+                      onClick={handleGotIt}
+                      className="flex-1 py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/20 text-emerald-600 dark:text-emerald-450 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 text-center"
+                    >
+                      Got It!
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => { triggerHaptic("light"); setIsCardFlipped(true); }}
+                    className="px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-black uppercase tracking-wider transition-all cursor-pointer active:scale-95 shadow-sm"
+                  >
+                    Show Answer
+                  </button>
+                )}
+              </div>
+
+              <button
+                onClick={handleNext}
+                disabled={activeCardIndex === total - 1}
+                className="w-10 h-10 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/80 flex items-center justify-center text-slate-500 hover:text-slate-750 dark:hover:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed transition-all cursor-pointer"
+                title="Next card"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   const renderExamUtilities = () => {
     return (
       <div className="bg-white/65 dark:bg-slate-900/65 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-md dark:shadow-slate-950/20 hover:border-slate-350 dark:hover:border-slate-700/80 transition-all duration-300 overflow-hidden w-full">
@@ -4586,16 +4804,17 @@ export default function ToolsPage() {
 
         <div className="px-5 py-4 space-y-3">
           {/* Sub-tab pills */}
-          <div className="flex items-center gap-1 bg-slate-50/50 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200/40 dark:border-slate-800 w-fit">
+          <div className="flex flex-wrap items-center gap-1 bg-slate-50/50 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200/40 dark:border-slate-800 w-fit">
             {[
               { id: "checklist", label: "Checklist" },
               { id: "gamble", label: "Revaluation" },
-              { id: "splits", label: "Splits" }
+              { id: "splits", label: "Splits" },
+              { id: "slots", label: "Slots & Dates" }
             ].map(sub => (
               <button
                 key={sub.id}
                 onClick={() => setUtilityConsoleTab(sub.id as typeof utilityConsoleTab)}
-                className={`px-3 py-1.5 rounded-lg text-[8.5px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 ${
+                className={`px-2.5 py-1.5 rounded-lg text-[8.5px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 ${
                   utilityConsoleTab === sub.id
                     ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 border border-slate-200/40 dark:border-slate-800 shadow-sm"
                     : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
@@ -4742,6 +4961,126 @@ export default function ToolsPage() {
                   <span className="font-mono">30</span>
                 </div>
               </div>
+            </div>
+          )}
+
+          {/* Exam Slot & Timetable Helper */}
+          {utilityConsoleTab === "slots" && (
+            <div className="space-y-4 animate-fade-in text-xs font-sans">
+              <span className="text-[9px] font-bold tracking-[0.15em] text-slate-500 dark:text-slate-400 uppercase block pb-1 border-b border-slate-200/40 dark:border-white/[0.04]">Slots & Exam Dates</span>
+              
+              {/* Configure list */}
+              <div className="space-y-2.5 max-h-[220px] overflow-y-auto pr-1 scrollbar-none">
+                {activeSemesterSubjects.map((sub, idx) => {
+                  const slotStr = SLOTS[idx % SLOTS.length];
+                  const currentData = examDates[sub.code] || { date: "", time: "" };
+                  return (
+                    <div 
+                      key={sub.code}
+                      className="p-2.5 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 space-y-2"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="min-w-0 flex-1 pr-2">
+                          <span className="text-[10.5px] font-bold text-slate-900 dark:text-slate-50 block truncate leading-tight">{sub.name}</span>
+                          <span className="text-[8px] font-semibold text-slate-400 dark:text-slate-500 font-mono mt-0.5 block">{sub.code}</span>
+                        </div>
+                        <span className="px-1.5 py-0.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/15 rounded text-[8px] font-black uppercase shrink-0 font-mono">
+                          {slotStr}
+                        </span>
+                      </div>
+                      
+                      <div className="grid grid-cols-2 gap-2">
+                        <div className="space-y-0.5">
+                          <span className="text-[7.5px] font-bold text-slate-405 dark:text-slate-500 uppercase tracking-widest block">Exam Date</span>
+                          <input 
+                            type="date"
+                            value={currentData.date}
+                            onChange={(e) => handleUpdateExamDate(sub.code, e.target.value, currentData.time)}
+                            className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg px-2 py-1 text-[10px] font-bold text-slate-850 dark:text-slate-250 focus:outline-none focus:ring-1 focus:ring-blue-500/20 cursor-pointer"
+                          />
+                        </div>
+                        <div className="space-y-0.5">
+                          <span className="text-[7.5px] font-bold text-slate-405 dark:text-slate-500 uppercase tracking-widest block">Exam Time</span>
+                          <input 
+                            type="time"
+                            value={currentData.time}
+                            onChange={(e) => handleUpdateExamDate(sub.code, currentData.date, e.target.value)}
+                            className="w-full bg-white dark:bg-slate-955 border border-slate-200 dark:border-slate-800 rounded-lg px-2 py-1 text-[10px] font-bold text-slate-850 dark:text-slate-250 focus:outline-none focus:ring-1 focus:ring-blue-500/20 cursor-pointer"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Chronological timetable */}
+              {(() => {
+                const datedExams = activeSemesterSubjects
+                  .map((sub, idx) => {
+                    const slotStr = SLOTS[idx % SLOTS.length];
+                    const data = examDates[sub.code];
+                    return { sub, slotStr, ...data };
+                  })
+                  .filter(item => item.date)
+                  .sort((a, b) => new Date(`${a.date}T${a.time || "00:00"}`).getTime() - new Date(`${b.date}T${b.time || "00:00"}`).getTime());
+
+                if (datedExams.length === 0) return null;
+
+                const getCountdown = (examDateStr: string, examTimeStr: string) => {
+                  const now = new Date();
+                  const examDate = new Date(`${examDateStr}T${examTimeStr || "09:30"}`);
+                  const diffMs = examDate.getTime() - now.getTime();
+                  if (diffMs < 0) {
+                    const hoursAgo = Math.abs(diffMs) / (1000 * 60 * 60);
+                    if (hoursAgo < 3) return { label: "Ongoing", theme: "bg-emerald-500/10 text-emerald-600 border border-emerald-500/15" };
+                    return { label: "Completed", theme: "bg-slate-100 dark:bg-slate-800 text-slate-450 dark:text-slate-500 border border-slate-200/20 dark:border-slate-700/40" };
+                  }
+                  const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+                  if (diffDays === 1) {
+                    const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
+                    return { label: `Tomorrow (${diffHrs}h)`, theme: "bg-amber-500/10 text-amber-600 border border-amber-500/15" };
+                  }
+                  return { label: `In ${diffDays} days`, theme: "bg-blue-500/10 text-blue-600 border border-blue-500/15" };
+                };
+
+                return (
+                  <div className="space-y-2 pt-2 border-t border-slate-200/40 dark:border-white/[0.04]">
+                    <span className="text-[8px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest block">Chronological Timeline</span>
+                    <div className="space-y-1.5">
+                      {datedExams.map(({ sub, slotStr, date, time }) => {
+                        const countdown = getCountdown(date!, time || "");
+                        const dateFormatted = new Date(`${date}T00:00:00`).toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                        });
+                        const timeFormatted = time ? new Date(`2000-01-01T${time}`).toLocaleTimeString("en-US", {
+                          hour: "numeric",
+                          minute: "2-digit",
+                          hour12: true
+                        }) : "9:30 AM";
+
+                        return (
+                          <div 
+                            key={sub.code}
+                            className="flex items-center justify-between p-2 rounded-xl bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 text-[10px] font-medium"
+                          >
+                            <div className="min-w-0 flex-1 pr-2">
+                              <span className="font-bold text-slate-800 dark:text-slate-100 truncate block leading-normal">{sub.name}</span>
+                              <span className="text-[8px] text-slate-400 dark:text-slate-500 font-mono mt-0.5 block">
+                                {dateFormatted} at {timeFormatted} ({slotStr})
+                              </span>
+                            </div>
+                            <span className={`px-1.5 py-0.5 rounded text-[8px] font-black shrink-0 font-sans ${countdown.theme}`}>
+                              {countdown.label}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })()}
             </div>
           )}
         </div>
@@ -5312,8 +5651,9 @@ export default function ToolsPage() {
           {/* TAB 4: 11TH-HOUR EXAM COMMAND PANEL */}
           {activeWorkspaceTab === "exam" && (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
-              <div className="lg:col-span-8">
+              <div className="lg:col-span-8 space-y-4 sm:space-y-6">
                 {renderStudyHub()}
+                {renderFlashcardsCard()}
               </div>
               <div className="lg:col-span-4">
                 {renderExamUtilities()}
