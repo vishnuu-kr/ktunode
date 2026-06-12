@@ -188,12 +188,13 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <Link href="/" onClick={handleLogoClick} className="flex items-center gap-1.5 sm:gap-2 group select-none">
+        <Link href="/?landing=true" onClick={handleLogoClick} className="flex items-center gap-1.5 sm:gap-2 group select-none">
         <Image
           src="/logo.webp"
           alt="KTU node Logo"
           width={28}
           height={28}
+          priority
           className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-md group-hover:shadow-slate-900/10"
         />
         <span className="text-sm sm:text-base font-logo tracking-tight transition-colors duration-200 whitespace-nowrap">

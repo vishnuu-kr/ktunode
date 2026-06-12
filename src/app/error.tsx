@@ -34,7 +34,7 @@ export default function Error({
             Try again
           </button>
           <Link
-            href="/"
+            href="/?landing=true"
             className="px-6 py-3 bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-fg)] rounded-xl font-semibold hover:bg-[var(--color-accent-light)] transition-colors"
           >
             Go home

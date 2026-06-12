@@ -250,7 +250,7 @@ export default async function RootLayout({
         />
       </head>
       {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
-      <body className={`${plusJakartaSans.variable} ${outfit.variable} ${poppins.variable} font-sans`} suppressHydrationWarning>
+      <body className={`${plusJakartaSans.variable} ${outfit.variable} ${poppins.variable} font-sans antialiased`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <CSPostHogProvider>
             {isUnderMaintenance ? (

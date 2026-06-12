@@ -58,8 +58,8 @@ const AttendanceStepper: React.FC<AttendanceStepperProps> = ({ label, value, onI
   }, []);
 
   return (
-    <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-xl p-1 shrink-0">
-      <span className="text-[9px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider px-1.5 select-none">{label}</span>
+    <div className="flex items-center gap-1.5 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-xl p-1 shrink-0">
+      <span className="text-[9px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider pl-2 pr-1 select-none leading-none flex items-center justify-center">{label}</span>
       <button
         onMouseDown={() => startAction(onDecrement)}
         onMouseUp={stopAction}
@@ -72,12 +72,12 @@ const AttendanceStepper: React.FC<AttendanceStepperProps> = ({ label, value, onI
           e.preventDefault();
           stopAction();
         }}
-        className="w-7 h-7 flex items-center justify-center rounded-lg bg-white hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-350 font-bold text-xs transition-colors cursor-pointer select-none active:scale-90 border border-slate-200/40 dark:border-slate-700/40"
+        className="w-7 h-7 flex items-center justify-center rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-200 font-extrabold text-sm transition-all cursor-pointer select-none active:scale-90 border border-slate-200 dark:border-slate-700 leading-none"
         aria-label={`Decrement ${label}`}
       >
         −
       </button>
-      <span className="w-8 text-center text-xs font-semibold text-slate-900 dark:text-slate-100 font-sans select-none">
+      <span className="w-8 h-7 flex items-center justify-center text-center text-xs font-semibold text-slate-900 dark:text-slate-100 font-sans select-none leading-none">
         {value}
       </span>
       <button
@@ -92,7 +92,7 @@ const AttendanceStepper: React.FC<AttendanceStepperProps> = ({ label, value, onI
           e.preventDefault();
           stopAction();
         }}
-        className="w-7 h-7 flex items-center justify-center rounded-lg bg-white hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-350 font-bold text-xs transition-colors cursor-pointer select-none active:scale-90 border border-slate-200/40 dark:border-slate-700/40"
+        className="w-7 h-7 flex items-center justify-center rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-200 font-extrabold text-sm transition-all cursor-pointer select-none active:scale-90 border border-slate-200 dark:border-slate-700 leading-none"
         aria-label={`Increment ${label}`}
       >
         +
@@ -192,9 +192,7 @@ export default function AttendanceTracker({
   if (avg >= 90) { freeMarks = 5; freeMarksLabel = "5 / 5 Marks (Excellent)"; freeMarksColor = "text-emerald-500 dark:text-emerald-400"; }
   else if (avg >= 85) { freeMarks = 4; freeMarksLabel = "4 / 5 Marks (Good)"; freeMarksColor = "text-emerald-500 dark:text-emerald-400"; }
   else if (avg >= 80) { freeMarks = 3; freeMarksLabel = "3 / 5 Marks (Average)"; freeMarksColor = "text-blue-500 dark:text-blue-400"; }
-  else if (avg >= 75) { freeMarks = 2; freeMarksLabel = "2 / 5 Marks (Marginal)"; freeMarksColor = "text-amber-500 dark:text-amber-400"; }
-
-  const handleShareRunway = () => {
+  else if (avg >= 75) { freeMarks = 2; freeMarksLabel = "2 / 5 Marks (Marginal)"; freeMarksColor = "text-amber-500 dark:text-amber-400"; }  const handleShareRunway = () => {
     let message = "My KTU Attendance Runway:\n";
     attendanceSubjects.forEach(sub => {
       const pct = sub.total > 0 ? Math.round((sub.attended / sub.total) * 100) : 0;
@@ -203,10 +201,12 @@ export default function AttendanceTracker({
       const totalNeededClasses = Math.ceil(totalSemDays * (target / 100));
       const remainingClasses = Math.max(0, totalSemDays - sub.total);
       const classesNeededToAttend = Math.max(0, totalNeededClasses - sub.attended);
-      const canMiss = Math.max(0, remainingClasses - classesNeededToAttend);
-      const impossible = classesNeededToAttend > remainingClasses;
+      const canMiss = sub.total > 0 ? Math.max(0, remainingClasses - classesNeededToAttend) : 0;
+      const impossible = sub.total > 0 && classesNeededToAttend > remainingClasses;
 
-      if (impossible) {
+      if (sub.total === 0) {
+        message += `- ${sub.code}: -- (Classes not started)\n`;
+      } else if (impossible) {
         message += `- ${sub.code}: ${pct}% (Danger of detention!)\n`;
       } else {
         message += `- ${sub.code}: ${pct}% (Safe to miss ${canMiss} more classes)\n`;
@@ -231,17 +231,17 @@ export default function AttendanceTracker({
       <div className="lg:col-span-7 bg-white/80 dark:bg-slate-950/60 backdrop-blur-3xl border border-slate-200/50 dark:border-white/[0.04] rounded-3xl p-5 md:p-6 shadow-xl flex flex-col justify-between space-y-5">
         <div className="space-y-4">
           {/* Header */}
-          <div className="flex items-center justify-between border-b border-slate-100 dark:border-white/[0.04] pb-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0">
-                <Activity className="w-5 h-5" />
-              </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="text-base font-semibold text-slate-900 dark:text-white tracking-tight leading-none">Attendance Log</h3>
+          <div className="border-b border-slate-100 dark:border-white/[0.04] pb-4 space-y-1 w-full">
+            <div className="flex items-center justify-between gap-4 w-full">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0">
+                  <Activity className="w-5 h-5" />
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-base font-semibold text-slate-900 dark:text-white tracking-tight leading-none font-sans">Attendance Log</h3>
                   <button 
                     onClick={() => setShowAttInfo(!showAttInfo)}
-                    className="p-1 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg text-slate-400 hover:text-slate-600 cursor-pointer"
+                    className="p-1 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg text-slate-400 hover:text-slate-600 cursor-pointer shrink-0"
                     aria-label="Attendance information"
                   >
                     <Info className="w-3.5 h-3.5" />
@@ -251,21 +251,23 @@ export default function AttendanceTracker({
                       triggerHaptic("medium");
                       setIsEditing(!isEditing);
                     }}
-                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-350 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 border border-slate-200/40 dark:border-slate-700/40 shrink-0"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-95 border border-slate-200 dark:border-slate-700 shrink-0"
                     title="Edit subject list layout"
                   >
                     {isEditing ? <Check className="w-3 h-3 text-emerald-500" /> : <Edit className="w-3 h-3" />}
-                    <span>{isEditing ? "Done" : "Edit Layout"}</span>
+                    <span>{isEditing ? "Done" : "Edit"}</span>
                   </button>
                 </div>
-                <span className="text-xs font-semibold text-slate-400 dark:text-slate-500 block mt-1">S{sem} Active Attendance Runway</span>
+              </div>
+
+              <div className="text-right shrink-0">
+                <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block">CIE Marks</span>
+                <span className={`text-sm font-black ${freeMarksColor} block mt-0.5 font-mono`}>{freeMarksLabel.split(" ")[0]} / 5</span>
               </div>
             </div>
-
-            {/* Attendance Marks telemetry */}
-            <div className="text-right shrink-0">
-              <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block">CIE Attendance Marks</span>
-              <span className={`text-sm font-black ${freeMarksColor} block mt-0.5 font-mono`}>{freeMarksLabel.split(" ")[0]} / 5</span>
+            
+            <div className="pl-[52px]">
+              <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 block">S{sem} Active Attendance Runway</span>
             </div>
           </div>
 
@@ -315,76 +317,86 @@ export default function AttendanceTracker({
                   const totalNeededClasses = Math.ceil(totalSemDays * (target / 100));
                   const remainingClasses = Math.max(0, totalSemDays - sub.total);
                   const classesNeededToAttend = Math.max(0, totalNeededClasses - sub.attended);
-                  const canMiss = Math.max(0, remainingClasses - classesNeededToAttend);
+                  const pctInfo = { classesNeeded: classesNeededToAttend };
                   const impossible = classesNeededToAttend > remainingClasses;
 
                   let color = "text-emerald-600 dark:text-emerald-400";
                   let progressBg = "bg-emerald-500";
-                  if (pct < 75) { color = "text-rose-600 dark:text-rose-450"; progressBg = "bg-rose-500"; }
-                  else if (pct < 85) { color = "text-blue-600 dark:text-blue-400"; progressBg = "bg-blue-500"; }
+                  let displayPct = `${pct}%`;
+
+                  if (sub.total === 0) {
+                    displayPct = "--";
+                    color = "text-slate-500 dark:text-slate-400 font-bold";
+                    progressBg = "bg-slate-200 dark:bg-slate-800";
+                  } else if (pct < 75) {
+                    color = "text-rose-600 dark:text-rose-450";
+                    progressBg = "bg-rose-500";
+                  } else if (pct < 85) {
+                    color = "text-blue-600 dark:text-blue-400";
+                    progressBg = "bg-blue-500";
+                  }
 
                   return (
                     <div key={sub.id} className="p-4 rounded-2xl bg-slate-50/50 dark:bg-slate-900/20 border border-slate-200/30 dark:border-white/[0.02] flex flex-col justify-between gap-3 transition-all duration-200 hover:scale-[1.005]">
-                      <div className="flex justify-between items-start">
-                        <div className="truncate pr-2 flex-1">
-                          {isEditing ? (
-                            <div className="flex flex-col gap-1.5 w-full">
-                              <input 
-                                type="text" 
-                                value={sub.name} 
-                                onChange={(e) => {
-                                  setAttendanceSubjects(prev => prev.map(s => s.id === sub.id ? { ...s, name: e.target.value } : s))
-                                }} 
-                                className="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 px-2.5 py-1.5 text-xs rounded-xl font-medium w-full focus:outline-none focus:ring-1 focus:ring-blue-500/20 text-slate-900 dark:text-white"
-                                placeholder="Subject Name"
-                              />
-                              <input 
-                                type="text" 
-                                value={sub.code} 
-                                onChange={(e) => {
-                                  setAttendanceSubjects(prev => prev.map(s => s.id === sub.id ? { ...s, code: e.target.value } : s))
-                                }} 
-                                className="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 px-2.5 py-1.5 text-xs rounded-xl font-mono font-bold w-full focus:outline-none focus:ring-1 focus:ring-blue-500/20 text-slate-900 dark:text-white"
-                                placeholder="Subject Code"
-                              />
-                            </div>
-                          ) : (
-                            <>
-                              <span className="font-semibold text-xs block text-slate-800 dark:text-slate-100 truncate leading-none font-sans">{sub.name}</span>
-                              <span className="text-xs font-medium text-slate-500 dark:text-slate-400 block truncate mt-1.5">{sub.code}</span>
-                            </>
-                          )}
+                      {isEditing ? (
+                        <div className="flex justify-between items-start gap-3 w-full">
+                          <div className="flex-1 flex flex-col gap-1.5">
+                            <input 
+                              type="text" 
+                              value={sub.name} 
+                              onChange={(e) => {
+                                setAttendanceSubjects(prev => prev.map(s => s.id === sub.id ? { ...s, name: e.target.value } : s))
+                              }} 
+                              className="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 px-2.5 py-1.5 text-xs rounded-xl font-medium w-full focus:outline-none focus:ring-1 focus:ring-blue-500/20 text-slate-900 dark:text-white"
+                              placeholder="Subject Name"
+                            />
+                            <input 
+                              type="text" 
+                              value={sub.code} 
+                              onChange={(e) => {
+                                setAttendanceSubjects(prev => prev.map(s => s.id === sub.id ? { ...s, code: e.target.value } : s))
+                              }} 
+                              className="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 px-2.5 py-1.5 text-xs rounded-xl font-mono font-bold w-full focus:outline-none focus:ring-1 focus:ring-blue-500/20 text-slate-900 dark:text-white"
+                              placeholder="Subject Code"
+                            />
+                          </div>
+                          <button
+                            onClick={() => handleDeleteSubject(sub.id)}
+                            className="p-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-455 border border-rose-500/15 rounded-xl cursor-pointer transition-colors active:scale-95 shrink-0"
+                            title="Delete subject"
+                          >
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </button>
                         </div>
-                        <div className="text-right shrink-0 flex items-start gap-2">
-                          {!isEditing ? (
-                            <div>
-                              <span className={`font-semibold text-sm block ${color} font-sans leading-none`}>{pct}%</span>
-                              {impossible ? (
-                                <span className="text-[10px] font-bold text-rose-500 uppercase tracking-wider block mt-1.5 animate-pulse">
+                      ) : (
+                        <div className="flex flex-col gap-1.5 w-full">
+                          <div className="flex justify-between items-baseline w-full">
+                            <span className="font-semibold text-xs text-slate-800 dark:text-slate-100 truncate font-sans pr-2 flex-1">{sub.name}</span>
+                            <span className={`font-semibold text-sm ${color} font-sans shrink-0 ml-2`}>
+                              {displayPct}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center w-full">
+                            <span className="text-xs font-medium text-slate-500 dark:text-slate-400 truncate pr-2 flex-1">{sub.code}</span>
+                            <div className="shrink-0 ml-2">
+                              {impossible && sub.total > 0 ? (
+                                <span className="text-[10px] font-bold text-rose-500 uppercase tracking-wider animate-pulse">
                                   Detained
                                 </span>
                               ) : (
-                                <span className="text-[10px] font-medium text-slate-400 dark:text-slate-500 block mt-1">
-                                  Safe Bunk: <strong className="text-emerald-500 dark:text-emerald-450 font-sans font-semibold">{canMiss}</strong>
+                                <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400">
+                                  Need {pctInfo.classesNeeded} more class{pctInfo.classesNeeded !== 1 && "es"}
                                 </span>
                               )}
                             </div>
-                          ) : (
-                            <button
-                              onClick={() => handleDeleteSubject(sub.id)}
-                              className="p-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-455 border border-rose-500/15 rounded-xl cursor-pointer transition-colors active:scale-95"
-                              title="Delete subject"
-                            >
-                              <Trash2 className="w-3.5 h-3.5" />
-                            </button>
-                          )}
+                          </div>
                         </div>
-                      </div>
+                      )}
 
                       {!isEditing && (
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
                           <div className="flex-1">
-                            <div className="flex justify-between text-[9px] font-semibold text-slate-455 dark:text-slate-500 mb-1 font-sans">
+                            <div className="flex justify-between text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-1 font-sans">
                               <span>Attended: {sub.attended} / {sub.total}</span>
                             </div>
                             <div className="h-1.5 bg-slate-250 dark:bg-slate-800 rounded-full overflow-hidden">
@@ -448,7 +460,7 @@ export default function AttendanceTracker({
         {!isTrackerEmpty && (
           <button
             onClick={handleShareRunway}
-            className="w-full py-3 rounded-2xl bg-white hover:bg-slate-50 dark:bg-slate-900/60 dark:hover:bg-slate-800/60 text-slate-650 dark:text-slate-300 border border-slate-200/60 dark:border-white/[0.06] text-xs font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-2 shadow-sm"
+            className="w-full py-2.5 rounded-xl bg-white hover:bg-slate-50 dark:bg-slate-900/60 dark:hover:bg-slate-800/60 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-2 shadow-sm"
           >
             <Share2 className="w-3.5 h-3.5" /> Share Runway
           </button>

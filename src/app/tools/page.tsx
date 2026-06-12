@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "next-themes";
 import { triggerHaptic } from "@/lib/haptic";
 import { ToolsSchema } from "@/components/ToolsSchema";
 import {
-  Calculator, Sparkles, GraduationCap, Activity, Award, Clock, FlaskConical, LayoutDashboard, ShieldCheck, LayoutGrid
+  Calculator, Sparkles, GraduationCap, Activity, Award, Clock, FlaskConical, LayoutDashboard, ShieldCheck, LayoutGrid,
+  ChevronDown
 } from "lucide-react";
 
 import ToolsOnboardingTour from "@/components/tools/ToolsOnboardingTour";
@@ -89,9 +90,9 @@ export default function ToolsPage() {
 
   const [mtMilestones, setMtMilestones] = useState<Record<string, boolean[]>>({});
   const [mtCramHours, setMtCramHours] = useState(8);
-  const [notepadText, setNotepadText] = useState("");
 
   const [gpaUpdateTrigger, setGpaUpdateTrigger] = useState(0);
+  const tabBarSpacerRef = useRef<HTMLDivElement>(null);
 
   // Global click haptic wrapper
   useEffect(() => {
@@ -254,10 +255,6 @@ export default function ToolsPage() {
       }
     } catch {}
 
-    // Load notepad
-    const savedNotepad = localStorage.getItem("ktunode_tools_notepad");
-    if (savedNotepad) setNotepadText(savedNotepad);
-
     // Load milestones
     try {
       const savedMilestones = localStorage.getItem(`ktunode_tools_milestones_${savedBranch}_${savedSem}`);
@@ -288,12 +285,6 @@ export default function ToolsPage() {
       localStorage.setItem(`ktunode_tools_milestones_${branch}_${sem}`, JSON.stringify(mtMilestones));
     }
   }, [mtMilestones, branch, sem, mounted]);
-
-  useEffect(() => {
-    if (mounted) {
-      localStorage.setItem("ktunode_tools_notepad", notepadText);
-    }
-  }, [notepadText, mounted]);
 
   useEffect(() => {
     if (mounted) {
@@ -545,33 +536,39 @@ export default function ToolsPage() {
             </div>
 
             {/* Compact Selector Console */}
-            <div className="flex items-center gap-1 bg-slate-50/80 dark:bg-slate-900/60 p-1.5 rounded-xl border border-slate-200/60 dark:border-white/[0.04] shrink-0">
-              <select
-                 value={branch}
-                 onChange={(e) => handleBranchSemChange(e.target.value, sem)}
-                 className="bg-transparent border-none py-0.5 px-1.5 text-xs font-bold cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
-              >
-                <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="cs">CSE</option>
-                <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="ec">ECE</option>
-                <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="me">ME</option>
-                <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="ce">CE</option>
-                <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="ee">EEE</option>
-              </select>
-              <div className="w-[1px] h-3 bg-slate-300 dark:bg-slate-800" />
-              <select
-                value={sem}
-                onChange={(e) => handleBranchSemChange(branch, Number(e.target.value))}
-                className="bg-transparent border-none py-0.5 px-1.5 text-xs font-bold cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none font-mono"
-              >
-                {Array.from({ length: 8 }, (_, idx) => (
-                  <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" key={idx} value={idx + 1}>S{idx + 1}</option>
-                ))}
-              </select>
+            <div className="flex items-center gap-1 bg-slate-50/80 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200/60 dark:border-white/[0.04] shrink-0">
+              <div className="relative flex items-center pr-4.5 pl-2">
+                <select
+                   value={branch}
+                   onChange={(e) => handleBranchSemChange(e.target.value, sem)}
+                   className="appearance-none bg-transparent border-none py-0.5 pr-1 text-xs font-bold cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none"
+                >
+                  <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="cs">CSE</option>
+                  <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="ec">ECE</option>
+                  <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="me">ME</option>
+                  <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="ce">CE</option>
+                  <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" value="ee">EEE</option>
+                </select>
+                <ChevronDown className="w-3 h-3 absolute right-1 pointer-events-none text-slate-450 dark:text-slate-500" />
+              </div>
+              <div className="w-[1px] h-3.5 bg-slate-250 dark:bg-slate-800" />
+              <div className="relative flex items-center pr-4.5 pl-2">
+                <select
+                  value={sem}
+                  onChange={(e) => handleBranchSemChange(branch, Number(e.target.value))}
+                  className="appearance-none bg-transparent border-none py-0.5 pr-1 text-xs font-bold cursor-pointer text-slate-800 dark:text-slate-100 focus:outline-none font-mono"
+                >
+                  {Array.from({ length: 8 }, (_, idx) => (
+                    <option className="dark:bg-slate-900 bg-white text-slate-900 dark:text-slate-100" key={idx} value={idx + 1}>S{idx + 1}</option>
+                  ))}
+                </select>
+                <ChevronDown className="w-3 h-3 absolute right-1 pointer-events-none text-slate-450 dark:text-slate-500" />
+              </div>
             </div>
           </div>
 
           {/* Compact Connected Live Telemetry Indicators Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-1">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2.5">
             {[
               {
                 label: "CGPA",
@@ -600,9 +597,9 @@ export default function ToolsPage() {
                 theme: "text-amber-600 dark:text-amber-450 bg-amber-500/10 border border-amber-500/15"
               }
             ].map((stat, idx) => (
-              <div key={idx} className="bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/50 dark:border-white/[0.04] p-3 rounded-xl flex flex-col gap-1 relative group hover:border-slate-350 dark:hover:border-white/10 transition-colors">
-                <span className="text-[8px] font-bold text-slate-400 dark:text-slate-555 uppercase tracking-widest leading-none">{stat.label}</span>
-                <div className="flex items-center gap-1.5 mt-1">
+              <div key={idx} className="bg-slate-50/50 dark:bg-slate-900/40 border border-slate-200/50 dark:border-white/[0.04] p-4 rounded-2xl flex flex-col gap-1 relative group hover:border-slate-350 dark:hover:border-white/10 transition-colors shadow-sm">
+                <span className="text-[9px] font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">{stat.label}</span>
+                <div className="flex items-center gap-1.5 mt-1.5">
                   <span className="font-bold text-slate-900 dark:text-white font-display text-lg tracking-tight leading-none">{stat.val}</span>
                   <span className={`px-1.5 py-0.5 rounded text-[8px] font-semibold leading-none shrink-0 ${stat.theme}`}>
                     {stat.badge}
@@ -613,44 +610,99 @@ export default function ToolsPage() {
           </div>
         </div>
 
-        {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR --- */}
-        <div className="bg-slate-100/80 dark:bg-slate-950/60 p-1.5 rounded-2xl border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-xl flex flex-nowrap items-center gap-1 w-full overflow-x-auto scrollbar-none">
-          {[
-            { id: "attendance", label: "Attendance", icon: Activity, enabled: siteConfig?.activeTools?.attendance !== false },
-            { id: "grades", label: "Grades & GPA", icon: Calculator, enabled: siteConfig?.activeTools?.gpa !== false },
-            { id: "graduation", label: "Graduation", icon: GraduationCap, enabled: siteConfig?.activeTools?.runway !== false },
-            { id: "exam", label: "Exam Prep", icon: Clock, enabled: siteConfig?.activeTools?.exam !== false },
-            { id: "labs", label: "Lab Record", icon: FlaskConical, enabled: siteConfig?.activeTools?.lab !== false },
-            { id: "microtools", label: "Micro Tools", icon: LayoutGrid, enabled: true },
-            { id: "missioncontrol", label: "Mission Control", icon: LayoutDashboard, enabled: true }
-          ].filter(tabItem => tabItem.enabled).map((tabItem) => {
-            const isActive = activeWorkspaceTab === tabItem.id;
-            const Icon = tabItem.icon;
-            
-            return (
-              <button
-                key={tabItem.id}
-                onClick={() => {
-                  triggerHaptic("light");
-                  setActiveWorkspaceTab(tabItem.id as typeof activeWorkspaceTab);
-                }}
-                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all duration-200 flex items-center gap-2 cursor-pointer flex-1 shrink-0 whitespace-nowrap justify-center min-w-max active:scale-[0.97] ${
-                  isActive
-                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-md border border-slate-200/60 dark:border-slate-700"
-                    : "bg-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-white/50 dark:hover:bg-white/[0.03]"
-                }`}
-              >
-                <Icon className={`w-4 h-4 ${isActive ? "" : "opacity-70"}`} />
-                <span>{tabItem.label}</span>
-              </button>
-            );
-          })}
+        {/* Spacer to measure the static Y position of the tab switcher without breaking sticky positioning */}
+        <div ref={tabBarSpacerRef} className="h-0 w-0 pointer-events-none" />
+
+        {/* --- DYNAMIC WORKSPACE SWITCHER NAV BAR (Sticky) --- */}
+        <div className="sticky top-[80px] sm:top-[84px] md:top-[88px] z-30 bg-white/90 dark:bg-slate-950/90 p-1 rounded-2xl border border-slate-200/50 dark:border-white/[0.04] backdrop-blur-2xl w-full shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06)] dark:shadow-[0_4px_24px_-4px_rgba(0,0,0,0.3)] overflow-visible">
+          <LayoutGroup id="tools-tab-switcher">
+            <div className="flex flex-nowrap items-center gap-1 w-full overflow-x-auto scrollbar-none py-0.5 px-0.5">
+              {[
+                { id: "attendance", label: "Attendance", icon: Activity, enabled: siteConfig?.activeTools?.attendance !== false },
+                { id: "grades", label: "Grades & GPA", icon: Calculator, enabled: siteConfig?.activeTools?.gpa !== false },
+                { id: "graduation", label: "Graduation", icon: GraduationCap, enabled: siteConfig?.activeTools?.runway !== false },
+                { id: "exam", label: "Exam Prep", icon: Clock, enabled: siteConfig?.activeTools?.exam !== false },
+                { id: "labs", label: "Lab Record", icon: FlaskConical, enabled: siteConfig?.activeTools?.lab !== false },
+                { id: "microtools", label: "Micro Tools", icon: LayoutGrid, enabled: true },
+                { id: "missioncontrol", label: "Mission Control", icon: LayoutDashboard, enabled: true }
+              ].filter(tabItem => tabItem.enabled).map((tabItem) => {
+                const isActive = activeWorkspaceTab === tabItem.id;
+                const Icon = tabItem.icon;
+                
+                return (
+                  <button
+                    key={tabItem.id}
+                    onClick={(e) => {
+                      triggerHaptic("light");
+                      setActiveWorkspaceTab(tabItem.id as typeof activeWorkspaceTab);
+                      
+                      if (tabBarSpacerRef.current) {
+                        const rect = tabBarSpacerRef.current.getBoundingClientRect();
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        
+                        // Match sticky responsive values: top-[80px] sm:top-[84px] md:top-[88px]
+                        const width = window.innerWidth;
+                        const offset = width >= 768 ? 88 : width >= 640 ? 84 : 80;
+                        
+                        const targetScrollY = rect.top + scrollTop - offset;
+                        
+                        if (scrollTop > targetScrollY) {
+                          window.scrollTo({
+                            top: targetScrollY,
+                            behavior: "auto"
+                          });
+                        }
+                      }
+
+                      // Scroll container horizontally to center the active button instantly
+                      const button = e.currentTarget;
+                      const container = button.parentElement;
+                      if (container) {
+                        const containerWidth = container.offsetWidth;
+                        const buttonWidth = button.offsetWidth;
+                        const buttonLeft = button.offsetLeft;
+                        
+                        const targetScrollLeft = buttonLeft - (containerWidth / 2) + (buttonWidth / 2);
+                        
+                        container.scrollTo({
+                          left: targetScrollLeft,
+                          behavior: "auto"
+                        });
+                      }
+                    }}
+                    className={`relative px-4 py-2 rounded-xl text-xs font-bold transition-colors duration-300 flex items-center gap-2 cursor-pointer flex-1 shrink-0 whitespace-nowrap justify-center min-w-max active:scale-[0.97] select-none ${
+                      isActive
+                        ? "text-white"
+                        : "text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
+                    }`}
+                  >
+                    {isActive && (
+                      <motion.div
+                        layoutId="activeWorkspaceTabBackground"
+                        transition={{ type: "spring", stiffness: 450, damping: 35 }}
+                        className="absolute inset-0 rounded-xl shadow-md"
+                        style={{ backgroundColor: "var(--color-accent)" }}
+                      />
+                    )}
+                    <Icon className={`w-4 h-4 relative z-10 transition-opacity ${isActive ? "opacity-100" : "opacity-70"}`} />
+                    <span className="relative z-10">{tabItem.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </LayoutGroup>
         </div>
 
         {/* --- UNIFIED WORKSPACE ACTIVE COMPONENT CONTAINER --- */}
         <div className="w-full transition-all duration-300">
-          
-          {/* TAB 1: ATTENDANCE & CIE RUNWAY */}
+          <motion.div
+            key={activeWorkspaceTab}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
+            className="w-full"
+          >
+            {/* TAB 1: ATTENDANCE & CIE RUNWAY */}
           {activeWorkspaceTab === "attendance" && (
             <AttendanceTracker
               branch={branch}
@@ -701,8 +753,6 @@ export default function ToolsPage() {
               setMtMilestones={setMtMilestones}
               mtCramHours={mtCramHours}
               setMtCramHours={setMtCramHours}
-              notepadText={notepadText}
-              setNotepadText={setNotepadText}
               triggerNotification={triggerNotification}
             />
           )}
@@ -731,9 +781,10 @@ export default function ToolsPage() {
               branch={branch}
               sem={String(sem)}
               gpa={calculateCGPA}
+              subjects={subjects}
             />
           )}
-
+          </motion.div>
         </div>
 
         {/* Advice Info bottom bar */}

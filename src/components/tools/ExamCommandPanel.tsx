@@ -25,8 +25,6 @@ interface ExamCommandPanelProps {
   setMtMilestones: React.Dispatch<React.SetStateAction<Record<string, boolean[]>>>;
   mtCramHours: number;
   setMtCramHours: (hours: number) => void;
-  notepadText: string;
-  setNotepadText: (text: string) => void;
   triggerNotification: (msg: string) => void;
 }
 
@@ -38,12 +36,10 @@ export default function ExamCommandPanel({
   setMtMilestones,
   mtCramHours,
   setMtCramHours,
-  notepadText,
-  setNotepadText,
   triggerNotification
 }: ExamCommandPanelProps) {
   // Inner states
-  const [utilityConsoleTab, setUtilityConsoleTab] = useState<"checklist" | "gamble" | "splits" | "slots">("checklist");
+  const [utilityConsoleTab, setUtilityConsoleTab] = useState<"checklist" | "slots">("checklist");
   const [examDates, setExamDates] = useState<Record<string, { date: string, time: string }>>({});
 
   // Pomodoro local states
@@ -64,11 +60,6 @@ export default function ExamCommandPanel({
     "Pencil & Ruler",
     "Water Bottle"
   ]);
-
-  // Revaluation Gamble local states
-  const [mtRevalGrade, setMtRevalGrade] = useState("C");
-  const [mtRevalCie, setMtRevalCie] = useState(28);
-  const [mtRevalExpected, setMtRevalExpected] = useState("Moderate");
 
   // Info toggles
   const [showPomodoroInfo, setShowPomodoroInfo] = useState(false);
@@ -236,31 +227,7 @@ export default function ExamCommandPanel({
     setMtMilestones(updated);
   };
 
-  const handleDownloadNotes = () => {
-    triggerHaptic("success");
-    const element = document.createElement("a");
-    const file = new Blob([notepadText], { type: "text/plain" });
-    element.href = URL.createObjectURL(file);
-    element.download = `ktunode_notes_${activeCode}.txt`;
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
-    triggerNotification("Study notes downloaded successfully!");
-  };
 
-  const handleGenerateCramStrategy = () => {
-    triggerHaptic("medium");
-    let msg = `I am studying for "${activeName}" (${activeCode}) and need a quick cram plan.\n\n`;
-    msg += `Status:\n`;
-    msg += `• Modules completed: ${doneCount}/4 (Checked: ${moduleToggles.map((d, i) => `Mod ${i+1}: ${d ? "done" : "pending"}`).join(", ")})\n`;
-    msg += `• Time remaining: ${mtCramHours} hours\n`;
-    if (notepadText.trim()) {
-      msg += `\nMy summary notes:\n${notepadText.trim().slice(0, 400)}\n`;
-    }
-    msg += `\nPlease give me a structured cram plan mapping topics to my remaining hours.`;
-    navigator.clipboard.writeText(msg);
-    triggerNotification("AI Prompt copied! Paste into ChatGPT/Claude.");
-  };
 
   const datedExams = activeSemesterSubjects
     .map((sub, idx) => {
@@ -492,38 +459,7 @@ export default function ExamCommandPanel({
               <strong className="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider block mb-1">Study Advice:</strong>
               {advice}
             </div>
-          </div>
-
-          {/* Study notepad */}
-          <div className="space-y-2.5 pt-2">
-            <div className="flex justify-between items-center text-xs font-bold text-slate-450 uppercase tracking-widest">
-              <span>Study Notepad</span>
-              <span className="font-mono text-[10px] lowercase font-normal">{notepadText.trim() ? notepadText.trim().split(/\s+/).length : 0} words</span>
             </div>
-            <textarea
-              placeholder="Paste syllabus keywords, type summary formulas, or organize question patterns here..."
-              value={notepadText}
-              onChange={(e) => setNotepadText(e.target.value)}
-              className="w-full h-32 bg-slate-100/50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800 rounded-2xl p-3 text-xs font-medium focus:outline-none focus:ring-1 focus:ring-blue-500/30 text-slate-900 dark:text-white"
-            />
-
-            <div className="flex items-center gap-2">
-              <button
-                onClick={handleGenerateCramStrategy}
-                className="flex-1 py-2.5 rounded-xl bg-blue-500/10 hover:bg-blue-500/25 border border-blue-500/15 text-blue-600 dark:text-blue-450 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5 active:scale-95"
-              >
-                <Sparkles className="w-3.5 h-3.5" /> Copy AI Cram Prompt
-              </button>
-              {notepadText.trim() && (
-                <button
-                  onClick={handleDownloadNotes}
-                  className="flex-1 py-2.5 rounded-xl bg-slate-105 hover:bg-slate-200 dark:bg-slate-900/60 dark:hover:bg-slate-800 text-slate-650 dark:text-slate-350 border border-slate-200/60 dark:border-white/[0.06] text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5 active:scale-95"
-                >
-                  <Download className="w-3.5 h-3.5" /> Download text
-                </button>
-              )}
-            </div>
-          </div>
 
         </div>
 
@@ -566,23 +502,21 @@ export default function ExamCommandPanel({
           </AnimatePresence>
 
           {/* Sub-tab pills */}
-          <div className="flex flex-wrap items-center gap-1 bg-slate-100 dark:bg-slate-900 p-0.5 rounded-xl border border-slate-250 dark:border-slate-800 w-full overflow-x-auto shrink-0">
+          <div className="flex items-center gap-1 bg-slate-100/80 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200 dark:border-slate-800/80 w-full shrink-0">
             {[
-              { id: "checklist", label: "Checklist" },
-              { id: "gamble", label: "Revaluation" },
-              { id: "splits", label: "Splits" },
-              { id: "slots", label: "Slots" }
+              { id: "checklist", label: "Hall Checklist" },
+              { id: "slots", label: "Exam Schedule" }
             ].map(sub => (
               <button
                 key={sub.id}
                 onClick={() => {
                   triggerHaptic("light");
-                  setUtilityConsoleTab(sub.id as typeof utilityConsoleTab);
+                  setUtilityConsoleTab(sub.id as any);
                 }}
-                className={`flex-1 py-1.5 rounded-lg text-[9px] font-bold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap active:scale-95 ${
+                className={`flex-1 py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer whitespace-nowrap active:scale-95 ${
                   utilityConsoleTab === sub.id
-                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm border border-slate-200/30 dark:border-slate-700/30"
-                    : "text-slate-500 hover:text-slate-750 dark:text-slate-400 dark:hover:text-slate-200"
+                    ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm border border-slate-200/30 dark:border-slate-750/30"
+                    : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
                 }`}
               >
                 {sub.label}
@@ -608,127 +542,6 @@ export default function ExamCommandPanel({
                     <span>{item}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-          )}
-
-          {/* revaluation */}
-          {utilityConsoleTab === "gamble" && (
-            <div className="space-y-4 animate-fade-in text-xs font-sans">
-              <span className="text-[9px] font-bold tracking-widest text-slate-400 dark:text-slate-500 uppercase block pb-1 border-b border-slate-100 dark:border-white/[0.04]">Revaluation Gamble</span>
-              
-              <div className="grid grid-cols-3 gap-2">
-                <div className="space-y-1">
-                  <label className="text-[8px] font-bold text-slate-450 uppercase block">Grade</label>
-                  <select
-                    value={mtRevalGrade}
-                    onChange={(e) => setMtRevalGrade(e.target.value)}
-                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-2 py-1.5 text-[10px] font-bold text-slate-900 dark:text-white cursor-pointer"
-                  >
-                    <option value="F">F</option>
-                    <option value="D">D</option>
-                    <option value="C">C</option>
-                    <option value="B">B</option>
-                  </select>
-                </div>
-                <div className="space-y-1">
-                  <label className="text-[8px] font-bold text-slate-455 uppercase block">CIE (/50)</label>
-                  <input
-                    type="number"
-                    min="0" max="50"
-                    value={mtRevalCie}
-                    onChange={(e) => setMtRevalCie(Math.min(50, Math.max(0, Number(e.target.value))))}
-                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-2 py-1 text-center font-bold text-xs text-slate-900 dark:text-white focus:outline-none font-mono"
-                  />
-                </div>
-                <div className="space-y-1">
-                  <label className="text-[8px] font-bold text-slate-450 uppercase block">Confidence</label>
-                  <select
-                    value={mtRevalExpected}
-                    onChange={(e) => setMtRevalExpected(e.target.value)}
-                    className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-2.5 py-1.5 text-[9px] font-bold text-slate-900 dark:text-white cursor-pointer"
-                  >
-                    <option value="Excellent">High</option>
-                    <option value="Moderate">Medium</option>
-                    <option value="Poor">Low</option>
-                  </select>
-                </div>
-              </div>
-
-              {(() => {
-                const CIE = mtRevalCie;
-                let gambleStatus = "Low Probability";
-                let gambleTheme = "bg-rose-500/5 text-rose-500 border-rose-500/20";
-                let details = "Revaluation fee (₹600) is unlikely to yield results based on your low internal score.";
-
-                if (mtRevalGrade === "F") {
-                  if (CIE >= 22 && mtRevalExpected === "Excellent") {
-                    gambleStatus = "High Chance";
-                    gambleTheme = "bg-emerald-500/5 text-emerald-600 dark:text-emerald-450 border-emerald-500/20";
-                    details = "High internal score + positive exam sentiment = strong revaluation success rate.";
-                  } else if (CIE >= 18 && mtRevalExpected === "Excellent") {
-                    gambleStatus = "Moderate";
-                    gambleTheme = "bg-amber-500/5 text-amber-600 dark:text-amber-400 border-amber-500/20";
-                    details = "Decent CIE. Worth the gamble if your answers matched the key schema.";
-                  }
-                } else {
-                  if (mtRevalExpected === "Excellent") {
-                    gambleStatus = "Moderate";
-                    gambleTheme = "bg-amber-500/5 text-amber-600 dark:text-amber-400 border-amber-500/20";
-                    details = "Grade improvements are harder to verify. Proceed if your paper was highly structured.";
-                  }
-                }
-
-                const GambleIcon = gambleStatus === "High Chance" ? Sparkles : gambleStatus === "Moderate" ? HelpCircle : AlertCircle;
-                return (
-                  <div className={`p-3.5 rounded-2xl border text-center ${gambleTheme} flex flex-col items-center justify-center space-y-1`}>
-                    <span className="text-[8px] font-bold tracking-widest text-slate-400 dark:text-slate-500 uppercase block">Risk Assessment</span>
-                    <span className="text-xs font-bold py-1 flex items-center gap-1.5 mt-1 leading-none">
-                      <GambleIcon className="w-4 h-4 shrink-0" />
-                      {gambleStatus}
-                    </span>
-                    <p className="text-[10px] font-medium leading-normal text-slate-500 dark:text-slate-400 mt-1 font-sans">{details}</p>
-                  </div>
-                );
-              })()}
-            </div>
-          )}
-
-          {/* splits */}
-          {utilityConsoleTab === "splits" && (
-            <div className="space-y-4 animate-fade-in text-[11px] text-slate-550 dark:text-slate-400 font-medium">
-              <span className="text-[9px] font-bold tracking-widest text-slate-400 dark:text-slate-500 uppercase block pb-1 border-b border-slate-100 dark:border-white/[0.04]">Internal Split Metrics</span>
-              
-              <div className="p-3 bg-slate-50/50 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.02] rounded-2xl space-y-2">
-                <span className="text-[8px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block mb-1">Seminar Split (max 100)</span>
-                <div className="flex justify-between border-b border-slate-200/20 dark:border-slate-800 pb-1.5">
-                  <span>Report Quality</span>
-                  <span className="font-bold text-slate-900 dark:text-white font-mono">30</span>
-                </div>
-                <div className="flex justify-between border-b border-slate-200/20 dark:border-slate-800 pb-1.5">
-                  <span>Presentation / Slides</span>
-                  <span className="font-bold text-slate-900 dark:text-white font-mono">40</span>
-                </div>
-                <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold pt-0.5">
-                  <span>Viva & Q&A Defenses</span>
-                  <span className="font-mono">30</span>
-                </div>
-              </div>
-
-              <div className="p-3 bg-slate-50/50 dark:bg-slate-900/20 border border-slate-200/40 dark:border-white/[0.02] rounded-2xl space-y-2">
-                <span className="text-[8px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block mb-1">Project Split (max 100)</span>
-                <div className="flex justify-between border-b border-slate-200/20 dark:border-slate-800 pb-1.5">
-                  <span>Syllabus Guide</span>
-                  <span className="font-bold text-slate-900 dark:text-white font-mono">30</span>
-                </div>
-                <div className="flex justify-between border-b border-slate-200/20 dark:border-slate-800 pb-1.5">
-                  <span>Internal Committee Review</span>
-                  <span className="font-bold text-slate-900 dark:text-white font-mono">40</span>
-                </div>
-                <div className="flex justify-between text-blue-600 dark:text-blue-400 font-bold pt-0.5">
-                  <span>Report & Viva ESE</span>
-                  <span className="font-mono">30</span>
-                </div>
               </div>
             </div>
           )}

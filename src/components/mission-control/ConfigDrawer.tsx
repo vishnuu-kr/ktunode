@@ -91,18 +91,18 @@ export default function ConfigDrawer({
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 32 }}
-            className="relative w-full max-w-md bg-white/95 dark:bg-slate-950/90 backdrop-blur-xl border-l border-slate-950/[0.06] dark:border-white/[0.06] h-full flex flex-col shadow-2xl p-5 sm:p-6 overflow-y-auto space-y-5"
+            className="relative w-full max-w-md bg-white/95 dark:bg-slate-950/90 backdrop-blur-xl border-l border-slate-200/50 dark:border-white/[0.06] h-full flex flex-col shadow-2xl p-5 sm:p-6 overflow-y-auto space-y-5"
           >
             <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800/60 pb-3 mb-1">
-              <h3 className="text-sm font-black text-slate-800 dark:text-white tracking-tight flex items-center gap-2">
-                <Settings className="w-4 h-4 text-slate-500 animate-spin-slow" /> Timetable Config
+              <h3 className="text-sm font-semibold text-slate-800 dark:text-white tracking-tight flex items-center gap-2">
+                <Settings className="w-4 h-4 text-slate-500 animate-spin-slow shrink-0" /> Schedule Configuration
               </h3>
               <button
                 onClick={() => {
                   triggerHaptic("light");
                   onClose();
                 }}
-                className="text-slate-400 hover:text-slate-650 dark:hover:text-slate-200 cursor-pointer p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-200"
+                className="text-slate-450 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-200"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -110,16 +110,16 @@ export default function ConfigDrawer({
 
             {/* Slot Course Tweaks */}
             <div className="space-y-3">
-              <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest block leading-none">
-                Slot Subject Allocations
+              <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block leading-none">
+                Slot Course Allocations
               </span>
-              <div className="space-y-3 max-h-[340px] overflow-y-auto pr-1">
+              <div className="space-y-3 max-h-[340px] overflow-y-auto pr-1 scrollbar-thin">
                 {DEFAULT_SLOTS.map((slot) => {
                   const cfg = editedSlots[slot] || { subject: "", professor: "", vibe: "robot" };
                   return (
-                    <div key={slot} className="p-3.5 bg-slate-50/50 dark:bg-slate-900/30 border border-slate-950/[0.04] dark:border-white/[0.02] rounded-2xl space-y-2">
+                    <div key={slot} className="p-3.5 bg-slate-50/40 dark:bg-slate-900/30 border border-slate-200/60 dark:border-white/[0.02] rounded-2xl space-y-2">
                       <div className="flex items-center justify-between">
-                        <span className="text-[9px] font-black text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded tracking-wide">SLOT {slot}</span>
+                        <span className="text-[9px] font-extrabold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded tracking-wide">SLOT {slot}</span>
                         <select
                           value={cfg.vibe}
                           onChange={(e) =>
@@ -128,11 +128,11 @@ export default function ConfigDrawer({
                               [slot]: { ...cfg, vibe: e.target.value as any },
                             })
                           }
-                          className="text-[9px] font-black bg-white dark:bg-slate-800 border border-slate-250 dark:border-slate-700 rounded px-1.5 py-0.5 text-slate-700 dark:text-slate-350 cursor-pointer outline-none focus:ring-1 focus:ring-blue-500/30"
+                          className="text-[9.5px] font-extrabold bg-white dark:bg-slate-800 border border-slate-250 dark:border-slate-700 rounded px-2 py-0.5 text-slate-700 dark:text-slate-350 cursor-pointer outline-none focus:ring-1 focus:ring-blue-500/30"
                         >
-                          <option value="saint">Saint</option>
-                          <option value="robot">Robot</option>
-                          <option value="boss">Boss</option>
+                          <option value="saint">Chill Attendance</option>
+                          <option value="robot">Standard Class</option>
+                          <option value="boss">Strict Verification</option>
                         </select>
                       </div>
                       <div className="grid grid-cols-2 gap-2">
@@ -146,7 +146,7 @@ export default function ConfigDrawer({
                               [slot]: { ...cfg, subject: e.target.value },
                             })
                           }
-                          className="w-full bg-white dark:bg-slate-950 border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-lg px-2.5 py-1.5 text-[11px] font-bold text-slate-800 dark:text-white focus:outline-none transition-all"
+                          className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-white/[0.06] hover:border-slate-400 focus:border-blue-500 rounded-lg px-2.5 py-1.5 text-[11px] font-bold text-slate-800 dark:text-white focus:outline-none transition-all"
                         />
                         <input
                           type="text"
@@ -158,7 +158,7 @@ export default function ConfigDrawer({
                               [slot]: { ...cfg, professor: e.target.value },
                             })
                           }
-                          className="w-full bg-white dark:bg-slate-950 border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] focus:border-blue-500 rounded-lg px-2.5 py-1.5 text-[11px] font-bold text-slate-850 dark:text-white focus:outline-none transition-all"
+                          className="w-full bg-white dark:bg-slate-955 border border-slate-200 dark:border-white/[0.06] hover:border-slate-400 focus:border-blue-500 rounded-lg px-2.5 py-1.5 text-[11px] font-bold text-slate-850 dark:text-white focus:outline-none transition-all"
                         />
                       </div>
                     </div>
@@ -169,13 +169,13 @@ export default function ConfigDrawer({
 
             {/* Time adjustments */}
             <div className="space-y-3">
-              <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest block leading-none">
+              <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block leading-none">
                 Period Timings & Time Shift
               </span>
-              <div className="space-y-3 bg-slate-50/50 dark:bg-slate-900/30 border border-slate-950/[0.04] dark:border-white/[0.02] p-4 rounded-2xl">
+              <div className="space-y-3 bg-slate-50/40 dark:bg-slate-900/30 border border-slate-200/60 dark:border-white/[0.02] p-4 rounded-2xl">
                 <div className="flex items-center gap-2 mb-1">
                   <Clock className="w-4 h-4 text-slate-400" />
-                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">Shift Timetable Offset</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Shift Timetable Offset</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <input
@@ -183,9 +183,9 @@ export default function ConfigDrawer({
                     placeholder="Offset in mins (e.g. -30 or 15)"
                     value={timeShiftMinutes || ""}
                     onChange={(e) => setTimeShiftMinutes(Number(e.target.value))}
-                    className="w-full bg-white dark:bg-slate-950 border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] rounded-lg px-3 py-1.5 text-xs font-mono text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
+                    className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-white/[0.06] hover:border-slate-400 rounded-lg px-3 py-1.5 text-xs font-mono text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500/20"
                   />
-                  <span className="text-[9.5px] font-black uppercase text-slate-400 dark:text-slate-500 whitespace-nowrap min-w-[70px] text-right">
+                  <span className="text-[9.5px] font-bold uppercase text-slate-450 dark:text-slate-500 whitespace-nowrap min-w-[70px] text-right">
                     {timeShiftMinutes > 0 ? `+${timeShiftMinutes}m shift` : timeShiftMinutes < 0 ? `${timeShiftMinutes}m shift` : "No shift"}
                   </span>
                 </div>
@@ -193,7 +193,7 @@ export default function ConfigDrawer({
                 <div className="pt-3.5 grid grid-cols-2 gap-2 border-t border-slate-100 dark:border-slate-800/60 mt-3.5">
                   {editedTimings.map((timeStr, idx) => (
                     <div key={idx} className="flex flex-col space-y-1">
-                      <span className="text-[8.5px] font-black uppercase tracking-wider text-slate-400">Hour {idx + 1}</span>
+                      <span className="text-[8.5px] font-bold uppercase tracking-wider text-slate-400">Hour {idx + 1}</span>
                       <input
                         type="text"
                         value={timeStr}
@@ -202,7 +202,7 @@ export default function ConfigDrawer({
                           updated[idx] = e.target.value;
                           setEditedTimings(updated);
                         }}
-                        className="bg-white dark:bg-slate-950 border border-slate-950/[0.06] dark:border-white/[0.06] hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] rounded-lg px-2.5 py-1.5 text-[10.5px] font-mono text-slate-800 dark:text-white text-center focus:outline-none focus:ring-1 focus:ring-blue-500/20"
+                        className="bg-white dark:bg-slate-950 border border-slate-200 dark:border-white/[0.06] hover:border-slate-400 rounded-lg px-2.5 py-1.5 text-[10.5px] font-mono text-slate-850 dark:text-white text-center focus:outline-none focus:ring-1 focus:ring-blue-500/20"
                       />
                     </div>
                   ))}
@@ -216,7 +216,7 @@ export default function ConfigDrawer({
                 whileHover={{ scale: 1.01, y: -0.5 }}
                 whileTap={{ scale: 0.99 }}
                 onClick={handleSaveConfig}
-                className="w-full bg-gradient-to-b from-[#2E95FF] to-[#007AFF] hover:brightness-105 border border-blue-500/25 text-white font-black uppercase text-[10px] tracking-widest py-3.5 rounded-xl flex items-center justify-center gap-1.5 shadow-[0_4px_12px_rgba(0,122,255,0.15)] cursor-pointer transition-all duration-200"
+                className="w-full bg-gradient-to-b from-[#2E95FF] to-[#007AFF] hover:brightness-105 border border-blue-500/25 text-white font-bold uppercase text-[10px] tracking-widest py-3.5 rounded-xl flex items-center justify-center gap-1.5 shadow-md cursor-pointer transition-all duration-200"
               >
                 Apply Changes <Check className="w-3.5 h-3.5" />
               </motion.button>
@@ -231,7 +231,7 @@ export default function ConfigDrawer({
                     onClose();
                   }
                 }}
-                className="w-full bg-transparent hover:bg-rose-500/5 border border-rose-500/20 hover:border-rose-500/45 text-rose-500 font-black uppercase tracking-widest text-[9.5px] py-2.5 rounded-xl flex items-center justify-center gap-1.5 cursor-pointer transition-all duration-200"
+                className="w-full bg-transparent hover:bg-rose-500/5 border border-rose-500/20 hover:border-rose-500/45 text-rose-500 font-bold uppercase tracking-widest text-[9.5px] py-2.5 rounded-xl flex items-center justify-center gap-1.5 cursor-pointer transition-all duration-200"
               >
                 Wipe Timetable Data <Trash2 className="w-3.5 h-3.5" />
               </motion.button>

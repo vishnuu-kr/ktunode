@@ -588,7 +588,7 @@ export function ReplayTourButton({ onStart }: { onStart: () => void }) {
         onStart();
       }}
       title="Replay guided tour" aria-label="Replay guided tour"
-      className="fixed bottom-5 left-5 z-50 w-9 h-9 rounded-full bg-white/80 dark:bg-slate-900/80 border border-slate-200/50 dark:border-slate-800/50 backdrop-blur-md text-slate-500 dark:text-slate-400 flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 active:scale-95 transition-all"
+      className="fixed bottom-6 left-6 z-50 w-10 h-10 rounded-full bg-white/80 dark:bg-slate-900/80 border border-slate-200/50 dark:border-slate-800/50 backdrop-blur-md text-slate-500 dark:text-slate-400 flex items-center justify-center shadow-xl cursor-pointer hover:scale-105 active:scale-95 transition-all shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
     >
       <HelpCircle className="w-5 h-5" />
     </button>

@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Award, ShieldCheck, AlertTriangle, X, Search, FileText, Plus, Trash2, CheckCircle2, ShieldAlert, Info 
+  Award, ShieldCheck, AlertTriangle, X, Search, FileText, Plus, Trash2, CheckCircle2, ShieldAlert, Info, ChevronDown 
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
 import { 
@@ -47,6 +47,7 @@ export default function GraduationRunway({
   triggerNotification
 }: GraduationRunwayProps) {
   const [gradSubTab, setGradSubTab] = useState<"activity" | "credits" | "backlogs">("activity");
+  const [studentTypeDropdownOpen, setStudentTypeDropdownOpen] = useState(false);
 
   // Activity list catalog search states
   const [activitySearchQuery, setActivitySearchQuery] = useState("");
@@ -218,8 +219,8 @@ export default function GraduationRunway({
   });
 
   const subTabs = [
-    { id: "activity" as const, label: "Activity Points", icon: <Award className="w-4 h-4" />, badge: `${totalActivityPoints}/${calculatedPoints.totalRequired}` },
-    { id: "credits" as const, label: "Credit Auditor", icon: <ShieldCheck className="w-4 h-4" />, badge: `${earned}/${limit}` },
+    { id: "activity" as const, label: "Activity Pts", icon: <Award className="w-4 h-4" />, badge: `${totalActivityPoints}/${calculatedPoints.totalRequired}` },
+    { id: "credits" as const, label: "Credits", icon: <ShieldCheck className="w-4 h-4" />, badge: `${earned}/${limit}` },
     { id: "backlogs" as const, label: "Backlogs", icon: <AlertTriangle className="w-4 h-4" />, badge: backlogSubjects.length > 0 ? `${backlogSubjects.length}` : undefined },
   ];
 
@@ -227,30 +228,35 @@ export default function GraduationRunway({
     <div className="bg-white/80 dark:bg-slate-950/60 backdrop-blur-3xl border border-slate-200/50 dark:border-white/[0.04] rounded-3xl shadow-xl overflow-hidden w-full flex flex-col justify-between">
       
       {/* Unified sub-navigation header */}
-      <div className="px-5 py-5 border-b border-slate-100 dark:border-white/[0.04] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-emerald-500/10 border border-emerald-500/15 flex items-center justify-center text-emerald-600 dark:text-emerald-450 shrink-0">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-5 border-b border-slate-100 dark:border-white/[0.04]">
+        <div className="flex items-start gap-3">
+          <div className="p-2.5 bg-emerald-500/10 text-emerald-600 dark:text-emerald-450 border border-emerald-500/15 rounded-xl shrink-0">
             <Award className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-base font-semibold text-slate-900 dark:text-white tracking-tight leading-none">Graduation Runway</h3>
-            <span className="text-xs font-semibold text-slate-400 dark:text-slate-500 block mt-1">Audit degree requirements and backlogs</span>
+            <h3 className="text-base font-semibold text-slate-900 dark:text-white tracking-tight">Graduation Runway</h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Audit degree requirements and backlogs</p>
           </div>
         </div>
 
-        {/* Tab Selector pills */}
-        <div className="flex items-center bg-slate-100 dark:bg-slate-900 p-0.5 rounded-xl border border-slate-200/40 dark:border-slate-800 self-start sm:self-center shrink-0 w-full sm:w-auto overflow-x-auto">
+        {/* Sub-tabs with fixed layout bounds */}
+        <div className="flex p-1 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl max-w-full sm:max-w-sm overflow-x-auto shrink-0 scrollbar-none">
           {subTabs.map(tab => (
             <button
               key={tab.id}
-              onClick={() => {
+              onClick={(e) => {
                 triggerHaptic("light");
                 setGradSubTab(tab.id);
+                e.currentTarget.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                  inline: "center"
+                });
               }}
-              className={`flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap active:scale-95 ${
+              className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer whitespace-nowrap active:scale-95 ${
                 gradSubTab === tab.id
                   ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm border border-slate-200/30 dark:border-slate-700/30"
-                  : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                  : "text-slate-600 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
               }`}
             >
               {tab.icon}
@@ -258,8 +264,8 @@ export default function GraduationRunway({
               {tab.badge && (
                 <span className={`text-[8.5px] font-black px-1.5 py-0.5 rounded-md font-mono ${
                   gradSubTab === tab.id
-                    ? "bg-blue-500/10 text-blue-600 dark:text-blue-400"
-                    : "bg-slate-200 dark:bg-slate-800 text-slate-550 dark:text-slate-450"
+                    ? "bg-blue-500/10 text-blue-700 dark:text-blue-300"
+                    : "bg-slate-200/60 dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 font-extrabold"
                 }`}>{tab.badge}</span>
               )}
             </button>
@@ -273,76 +279,135 @@ export default function GraduationRunway({
           {/* Progress Overview Section */}
           <div className="px-5 py-5 border-b border-slate-100 dark:border-white/[0.04] bg-slate-50/20 dark:bg-slate-900/10">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-              
-              {/* Radial total progress dial */}
+                     {/* Radial total progress dial */}
               <div className="md:col-span-3 flex flex-col items-center text-center">
                 <div className="relative w-28 h-28 flex items-center justify-center bg-slate-50/50 dark:bg-slate-900/40 rounded-full border border-slate-200/40 dark:border-white/[0.04] p-1 shadow-inner backdrop-blur-sm">
                   {/* SVG progress ring */}
-                  <svg className="w-full h-full transform -rotate-90">
-                    <circle cx="56" cy="56" r="46" strokeWidth="6" stroke="currentColor" fill="transparent" className="text-slate-100 dark:text-slate-850" />
+                  <svg className="w-full h-full transform -rotate-90" viewBox="0 0 112 112">
+                    <circle cx="56" cy="56" r="46" strokeWidth="6" stroke="currentColor" fill="transparent" className="text-slate-100 dark:text-slate-800" />
                     <circle cx="56" cy="56" r="46" strokeWidth="6" stroke="currentColor" fill="transparent" 
                       className={`transition-all duration-700 ${calculatedPoints.isQualified ? "text-emerald-500" : totalActivityPoints >= calculatedPoints.totalRequired * 0.5 ? "text-blue-500" : "text-amber-500"}`}
                       strokeDasharray={2 * Math.PI * 46}
                       strokeDashoffset={2 * Math.PI * 46 * (1 - Math.min(1, totalActivityPoints / calculatedPoints.totalRequired))}
                     />
                   </svg>
-                  <div className="absolute inset-0 flex flex-col items-center justify-center font-display leading-none">
-                    <span className="text-2xl font-bold text-slate-900 dark:text-white font-mono">{totalActivityPoints}</span>
-                    <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 mt-1 uppercase tracking-wider">/ {calculatedPoints.totalRequired} Pts</span>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center balance-text">
+                    <span className="text-3xl font-bold leading-none text-slate-900 dark:text-white font-mono">{totalActivityPoints}</span>
+                    <span className="text-xs font-extrabold text-slate-500 dark:text-slate-400 tracking-wider mt-1 uppercase">/ {calculatedPoints.totalRequired} PTS</span>
                   </div>
                 </div>
 
-                <div className="mt-3 w-full max-w-[180px]">
-                  <select
-                    value={studentType}
-                    onChange={(e) => {
+                <div className="relative w-full z-50 mt-2 mb-1 max-w-[180px]">
+                  <button
+                    type="button"
+                    onClick={() => {
                       triggerHaptic("light");
-                      setStudentType(e.target.value as typeof studentType);
+                      setStudentTypeDropdownOpen(!studentTypeDropdownOpen);
                     }}
-                    className="w-full bg-white dark:bg-slate-900 border border-slate-250 dark:border-slate-800 rounded-xl px-2 py-1.5 text-[10px] font-bold text-slate-700 dark:text-slate-350 focus:outline-none cursor-pointer"
+                    className="w-full bg-white dark:bg-slate-900 border border-slate-250 dark:border-slate-800 rounded-xl px-3 py-2 text-[10px] font-bold text-slate-700 dark:text-slate-350 focus:outline-none cursor-pointer flex items-center justify-between shadow-sm active:scale-[0.98] transition-all"
                   >
-                    <option value="regular">Regular Students (100 Pts)</option>
-                    <option value="lateral">Lateral Entry (75 Pts)</option>
-                    <option value="pwd">PwD Category (50 Pts)</option>
-                  </select>
+                    <span>
+                      {studentType === "regular" && "Regular Students (100 Pts)"}
+                      {studentType === "lateral" && "Lateral Entry (75 Pts)"}
+                      {studentType === "pwd" && "PwD Category (50 Pts)"}
+                    </span>
+                    <ChevronDown className={`w-3.5 h-3.5 text-slate-450 dark:text-slate-555 transition-transform duration-200 ${studentTypeDropdownOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  
+                  <AnimatePresence>
+                    {studentTypeDropdownOpen && (
+                      <>
+                        <div 
+                          className="fixed inset-0 z-40" 
+                          onClick={() => setStudentTypeDropdownOpen(false)}
+                        />
+                        <motion.div
+                          initial={{ opacity: 0, y: -4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -4 }}
+                          transition={{ duration: 0.15 }}
+                          className="absolute left-0 right-0 mt-1.5 z-50 rounded-xl border border-slate-250 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg py-1.5 overflow-hidden"
+                        >
+                          {[
+                            { value: "regular", label: "Regular Students (100 Pts)" },
+                            { value: "lateral", label: "Lateral Entry (75 Pts)" },
+                            { value: "pwd", label: "PwD Category (50 Pts)" }
+                          ].map((opt) => (
+                            <button
+                              key={opt.value}
+                              type="button"
+                              onClick={() => {
+                                triggerHaptic("light");
+                                setStudentType(opt.value as any);
+                                setStudentTypeDropdownOpen(false);
+                              }}
+                              className={`w-full text-left px-3.5 py-2 text-[10px] font-bold transition-colors block cursor-pointer ${
+                                studentType === opt.value
+                                  ? "bg-blue-500/10 text-blue-600 dark:text-blue-400"
+                                  : "text-slate-600 hover:bg-slate-50 dark:text-slate-400 dark:hover:bg-slate-850"
+                              }`}
+                            >
+                              {opt.label}
+                            </button>
+                          ))}
+                        </motion.div>
+                      </>
+                    )}
+                  </AnimatePresence>
                 </div>
               </div>
 
               {/* Group-by-Group Cap Bars */}
-              <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                 {[
                   { id: "1", name: "Group I", subtitle: "Co-curricular / Sports", capped: calculatedPoints.group1Capped, color: "emerald" },
                   { id: "2", name: "Group II", subtitle: "PD / Tech-Fest / Roles", capped: calculatedPoints.group2Capped, color: "blue" },
                   { id: "3", name: "Group III", subtitle: "Achievements / MOOC", capped: calculatedPoints.group3Capped, color: "violet" }
                 ].map(grp => {
                   const colors = {
-                    emerald: { bar: "bg-emerald-500", text: "text-emerald-600 dark:text-emerald-400", bg: "bg-emerald-500/[0.03] dark:bg-emerald-500/[0.05]", border: "border-emerald-500/10 dark:border-emerald-500/15" },
-                    blue: { bar: "bg-blue-500", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-500/[0.03] dark:bg-blue-500/[0.05]", border: "border-blue-500/10 dark:border-blue-500/15" },
-                    violet: { bar: "bg-purple-500", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-500/[0.03] dark:bg-purple-500/[0.05]", border: "border-purple-500/10 dark:border-purple-500/15" },
+                    emerald: { 
+                      bar: "bg-teal-500", 
+                      bg: "bg-teal-500/[0.03] dark:bg-teal-500/[0.05]", 
+                      border: "border-teal-500/10 dark:border-teal-500/15",
+                      badge: "px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-500/10 dark:border-emerald-500/20"
+                    },
+                    blue: { 
+                      bar: "bg-blue-500", 
+                      bg: "bg-blue-500/[0.03] dark:bg-blue-500/[0.05]", 
+                      border: "border-blue-500/10 dark:border-blue-500/15",
+                      badge: "px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400 border border-blue-500/10 dark:border-blue-500/20"
+                    },
+                    violet: { 
+                      bar: "bg-purple-500", 
+                      bg: "bg-purple-500/[0.03] dark:bg-purple-500/[0.05]", 
+                      border: "border-purple-500/10 dark:border-purple-500/15",
+                      badge: "px-2 py-0.5 rounded-full text-[10px] font-bold bg-purple-50 text-purple-600 dark:bg-purple-950/40 dark:text-purple-400 border border-purple-500/10 dark:border-purple-500/20"
+                    },
                   }[grp.color]!;
 
                   return (
-                    <div key={grp.id} className={`p-3.5 rounded-2xl border ${colors.border} ${colors.bg} flex flex-col justify-between h-full shadow-sm`}>
-                      <div className="flex justify-between items-center">
-                        <span className="text-[9px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">{grp.name}</span>
-                        <span className={`text-[10px] font-black font-mono leading-none ${colors.text}`}>{grp.capped}/40</span>
+                    <div key={grp.id} className={`p-3.5 rounded-2xl border ${colors.border} ${colors.bg} flex flex-col gap-2 shadow-sm`}>
+                      <div className="flex items-center justify-between w-full">
+                        <div className="flex flex-col min-w-0">
+                          <span className="text-[11px] font-extrabold tracking-wide uppercase text-slate-655 dark:text-slate-300">{grp.name}</span>
+                          <span className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold leading-tight mt-0.5 truncate">{grp.subtitle}</span>
+                        </div>
+                        <span className={`${colors.badge} shrink-0`}>{grp.capped} / 40</span>
                       </div>
-                      <div className="h-1.5 bg-slate-200/50 dark:bg-slate-800 rounded-full overflow-hidden my-2">
+                      <div className="w-full h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden mt-1.5 border border-slate-200/10 dark:border-slate-800/10">
                         <div className={`h-full rounded-full ${colors.bar}`} style={{ width: `${(grp.capped / 40) * 100}%` }} />
                       </div>
-                      <span className="text-[8.5px] text-slate-455 dark:text-slate-500 font-medium leading-tight">{grp.subtitle}</span>
                     </div>
                   );
                 })}
               </div>
-
             </div>
           </div>
 
           {/* User's logged claims list */}
           {selectedActivities.length > 0 && (
             <div className="px-5 py-4 border-b border-slate-100 dark:border-white/[0.04] bg-slate-50/10 dark:bg-slate-900/5">
-              <span className="text-[9px] font-bold uppercase tracking-widest text-slate-455 dark:text-slate-500 block mb-3">Your Logged Claims ({selectedActivities.length})</span>
+              <span className="text-[9px] font-extrabold uppercase tracking-widest text-slate-500 dark:text-slate-400 block mb-3">Your Logged Claims ({selectedActivities.length})</span>
               <div className="space-y-2 max-h-[220px] overflow-y-auto pr-1 scrollbar-thin font-sans">
                 {selectedActivities.map((act) => {
                   const groupNum = act.activityCode.split('.')[0];
@@ -362,7 +427,7 @@ export default function GraduationRunway({
                   const activityName = activityItem ? activityItem.name : "Custom Activity";
 
                   return (
-                    <div key={act.id} className={`flex items-center justify-between p-3 rounded-xl bg-white dark:bg-slate-900/60 border-y border-r border-slate-200/50 dark:border-y-white/[0.02] dark:border-r-white/[0.02] gap-3 shadow-sm hover:border-slate-300 dark:hover:border-slate-800 transition-colors ${borderClass}`}>
+                    <div key={act.id} className={`flex items-center justify-between p-3.5 rounded-xl bg-white dark:bg-slate-900/60 border-y border-r border-slate-200/50 dark:border-y-white/[0.02] dark:border-r-white/[0.02] gap-3 shadow-sm hover:border-slate-300 dark:hover:border-slate-800 transition-colors ${borderClass}`}>
                       <div className="flex items-center gap-2.5 min-w-0 flex-1">
                         <span className={`px-2 py-0.5 rounded-lg text-[9px] font-bold border font-mono shrink-0 ${colors}`}>
                           {act.activityCode}
@@ -370,7 +435,7 @@ export default function GraduationRunway({
                         <div className="min-w-0 flex-1">
                           <span className="text-xs font-semibold text-slate-800 dark:text-slate-200 block truncate">{activityName}</span>
                           {(act.level || act.detail || act.quantity) ? (
-                            <span className="text-[9px] text-slate-450 dark:text-slate-550 block mt-0.5 font-medium leading-none">
+                            <span className="text-[9px] text-slate-500 dark:text-slate-400 block mt-0.5 font-bold leading-none">
                               {act.level && `Level: ${act.level}`}
                               {act.level && act.detail && " • "}
                               {act.detail && `Detail: ${act.detail}`}
@@ -380,11 +445,11 @@ export default function GraduationRunway({
                           ) : null}
                         </div>
                       </div>
-                      <div className="flex items-center gap-3 shrink-0">
+                      <div className="flex items-center gap-4 ml-4 shrink-0">
                         <span className="text-xs font-bold text-slate-900 dark:text-white font-mono">+{act.points} pts</span>
                         <button
                           onClick={() => handleDeleteActivity(act.id)}
-                          className="p-1.5 hover:bg-rose-500/10 text-slate-400 hover:text-rose-500 rounded-lg cursor-pointer transition-colors active:scale-95 flex items-center justify-center animate-fade-in"
+                          className="p-1.5 hover:bg-rose-500/10 text-slate-550 hover:text-rose-500 dark:text-slate-400 dark:hover:text-rose-400 rounded-xl cursor-pointer transition-colors active:scale-95 flex items-center justify-center animate-fade-in"
                           title="Remove claim"
                         >
                           <X className="w-3.5 h-3.5" />
@@ -403,7 +468,7 @@ export default function GraduationRunway({
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-450" />
               <input
                 type="text"
-                placeholder="Search activities handbook directory (e.g. NSS, Sports, Coding)..."
+                placeholder="Search activities..."
                 value={activitySearchQuery}
                 onChange={(e) => setActivitySearchQuery(e.target.value)}
                 className="w-full pl-9 pr-3 py-2 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 focus-within:border-blue-500/30 dark:focus-within:border-blue-500/40 rounded-xl text-xs font-semibold text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-500/20"
@@ -470,11 +535,11 @@ export default function GraduationRunway({
                               </span>
                             )}
                           </div>
-                          <h4 className="text-xs font-bold text-slate-850 dark:text-slate-100 leading-snug">{act.name}</h4>
-                          {act.desc && <p className="text-[10px] text-slate-450 dark:text-slate-500 leading-relaxed font-medium">{act.desc}</p>}
-                          <div className="flex items-center gap-1.5 text-[9px] text-slate-400">
+                          <h4 className="text-xs font-bold text-slate-855 dark:text-slate-100 leading-snug">{act.name}</h4>
+                          {act.desc && <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">{act.desc}</p>}
+                          <div className="flex items-center gap-1.5 text-[9px] text-slate-500">
                             <FileText className="w-3.5 h-3.5" />
-                            <span>Required: <strong className="text-slate-600 dark:text-slate-350">{act.proof}</strong></span>
+                            <span>Required: <strong className="text-slate-700 dark:text-slate-300">{act.proof}</strong></span>
                           </div>
                         </div>
 
@@ -483,7 +548,7 @@ export default function GraduationRunway({
                             onClick={() => {
                               if (act.type === "fixed") { handleDirectAddFixed(act); } else { handleStartInlineAdd(act); }
                             }}
-                            className="px-3.5 py-2 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 border border-blue-500/15 text-[9px] font-bold cursor-pointer transition-all flex items-center gap-1 active:scale-95 shrink-0"
+                            className="px-3.5 py-2 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-700 dark:text-blue-300 border border-blue-500/20 text-[9px] font-extrabold cursor-pointer transition-all flex items-center gap-1 active:scale-95 shrink-0"
                           >
                             <Plus className="w-3.5 h-3.5" /> Claim
                           </button>
@@ -541,8 +606,8 @@ export default function GraduationRunway({
                             )}
                           </div>
                           <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
-                            <button onClick={() => setInlineAddCode(null)} className="px-3 py-1.5 rounded-lg border border-slate-250 dark:border-slate-800 text-slate-500 text-[10px] font-bold cursor-pointer transition-all hover:bg-slate-100 dark:hover:bg-slate-900 active:scale-95">Cancel</button>
-                            <button onClick={() => handleConfirmInlineAdd(act)} className="px-4 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-bold cursor-pointer transition-all active:scale-95 shadow-sm">Confirm</button>
+                            <button onClick={() => setInlineAddCode(null)} className="px-3 py-1.5 rounded-xl border border-slate-250 dark:border-slate-700 text-slate-600 dark:text-slate-350 text-[10px] font-bold cursor-pointer transition-all hover:bg-slate-100 dark:hover:bg-slate-900 active:scale-95">Cancel</button>
+                            <button onClick={() => handleConfirmInlineAdd(act)} className="px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-bold cursor-pointer transition-all active:scale-95 shadow-sm">Confirm</button>
                           </div>
                         </div>
                       )}
@@ -560,7 +625,7 @@ export default function GraduationRunway({
         <div className="px-5 py-5 space-y-5 flex flex-col justify-between">
           <div className="space-y-4">
             {/* Target Select */}
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-2.5">
               {[
                 { id: "s5" as const, label: "S5 Promotion Limit", need: 26 },
                 { id: "s7" as const, label: "S7 Promotion Limit", need: 52 }
@@ -571,10 +636,10 @@ export default function GraduationRunway({
                     triggerHaptic("light");
                     setProgressionTarget(t.id);
                   }}
-                  className={`flex-1 py-3 rounded-2xl border text-xs font-bold transition-all cursor-pointer active:scale-[0.98] ${
+                  className={`flex-1 py-2.5 rounded-xl border text-xs font-extrabold transition-all cursor-pointer active:scale-[0.98] ${
                     progressionTarget === t.id
-                      ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20"
-                      : "bg-slate-50/50 dark:bg-slate-900 text-slate-450 dark:text-slate-400 border-slate-200/50 dark:border-slate-800 hover:border-slate-350"
+                      ? "bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/20"
+                      : "bg-slate-50/50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:border-slate-350"
                   }`}
                 >
                   {t.label} (Required {t.need})
@@ -606,15 +671,16 @@ export default function GraduationRunway({
                 ? "bg-emerald-500/5 border-emerald-500/15"
                 : "bg-rose-500/5 border-rose-500/15"
             }`}>
-              <div className={`text-4xl font-bold tracking-tight tabular-nums leading-none ${passedCredits ? "text-emerald-600 dark:text-emerald-450" : "text-rose-500"}`}>
-                {earned} <span className="text-sm font-bold opacity-60 font-sans">/ {limit} Credits Earned</span>
+              <div className="flex items-baseline justify-center gap-1.5 tracking-tight">
+                <span className={`text-4xl font-bold font-mono leading-none ${passedCredits ? "text-emerald-600 dark:text-emerald-450" : "text-rose-500"}`}>{earned}</span>
+                <span className="text-sm font-bold opacity-60 font-sans text-slate-650 dark:text-slate-400">/ {limit} Credits Earned</span>
               </div>
               
               <div className={`text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 justify-center mt-3 ${passedCredits ? "text-emerald-600 dark:text-emerald-450" : "text-rose-500"}`}>
                 {passedCredits ? <CheckCircle2 className="w-4 h-4" /> : <ShieldAlert className="w-4 h-4 text-rose-500" />}
                 {passedCredits ? "Promotion Eligibility Cleared" : `Promotion Block Risk - Need ${limit - earned} credits`}
               </div>
-              <p className="text-[10px] text-slate-450 dark:text-slate-500 leading-normal font-sans">
+              <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-normal font-sans">
                 Under APJ AKU B.Tech regulations, entry to {progressionTarget === "s5" ? "Semester 5" : "Semester 7"} requires a minimum of <strong className="text-slate-700 dark:text-slate-300 font-bold">{limit} credits</strong> earned in S1/S2 {progressionTarget === "s7" && "and S3/S4"}.
               </p>
             </div>
@@ -639,10 +705,10 @@ export default function GraduationRunway({
                   <div className="min-w-0">
                     <div className="flex items-center gap-2">
                       <span className="text-xs font-bold text-slate-900 dark:text-white font-mono">{bl.code}</span>
-                      <span className="text-[9px] text-slate-400 dark:text-slate-500 bg-slate-200/50 dark:bg-slate-800 px-1.5 py-0.5 rounded-md font-mono font-bold">Sem {bl.semester}</span>
+                      <span className="text-[9px] text-slate-650 dark:text-slate-300 bg-slate-200/50 dark:bg-slate-800 px-1.5 py-0.5 rounded-md font-mono font-bold">Sem {bl.semester}</span>
                     </div>
-                    <span className="text-xs font-medium text-slate-500 dark:text-slate-400 truncate block mt-1">{bl.name}</span>
-                    <span className="text-[10px] text-slate-400 font-bold block mt-0.5 font-mono">{bl.attempts} Attempt{bl.attempts !== 1 && "s"} registered</span>
+                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-300 truncate block mt-1">{bl.name}</span>
+                    <span className="text-[10px] text-slate-505 dark:text-slate-450 font-bold block mt-0.5 font-mono">{bl.attempts} Attempt{bl.attempts !== 1 && "s"} registered</span>
                   </div>
 
                   <div className="flex items-center gap-2 shrink-0">
@@ -674,7 +740,7 @@ export default function GraduationRunway({
 
           {/* Add Form */}
           <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/10 space-y-3">
-            <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 block">Log Failed Subject</span>
+            <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 block">Log Failed Subject</span>
             <div className="grid grid-cols-1 sm:grid-cols-5 gap-3">
               <input
                 type="text"
@@ -702,7 +768,7 @@ export default function GraduationRunway({
             </div>
             <button
               onClick={handleAddBacklog}
-              className="w-full py-2.5 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 border border-blue-500/15 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
+              className="w-full py-2.5 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-700 dark:text-blue-300 border border-blue-500/20 text-xs font-extrabold uppercase tracking-wider transition-all cursor-pointer active:scale-[0.98] flex items-center justify-center gap-1.5"
             >
               <Plus className="w-3.5 h-3.5" /> Log Backlog Subject
             </button>

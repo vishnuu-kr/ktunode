@@ -18,10 +18,8 @@ export default function ToolsOnboardingTour({ onComplete }: OnboardingTourProps)
     const onboarded = localStorage.getItem("ktunode_tools_onboarded_v2");
     if (!onboarded) {
       setIsVisible(true);
-    } else {
-      onComplete();
     }
-  }, [onComplete]);
+  }, []);
 
   const handleNext = (e: React.MouseEvent) => {
     triggerHaptic("medium", e);

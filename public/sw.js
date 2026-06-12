@@ -3,6 +3,10 @@ const STATIC_ASSETS = [
   "/",
   "/manifest.json",
   "/logo.webp",
+  "/fonts/Inter-Bold.ttf",
+  "/fonts/Inter-Medium.ttf",
+  "/hero-bg.webp",
+  "/hero-bg-dark.webp",
 ];
 
 // Install Event: pre-cache critical assets

@@ -1,22 +1,22 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Award, Flame, Clock } from "lucide-react";
+import { Flame, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 
 type TelemetryStripProps = {
   slots: Record<string, { subject: string; professor: string; vibe: "saint" | "robot" | "boss" }>;
   logs: Record<string, string[]>;
   gpa?: string;
-  timings: string[]; // default formats e.g. ["09:00 - 10:00", ...]
+  timings: string[];
 };
 
 export default function TelemetryStrip({ slots, logs, gpa = "8.42", timings }: TelemetryStripProps) {
   const [stressIndex, setStressIndex] = useState(42);
   const [freedomPct, setFreedomPct] = useState(0);
-  const [countdownText, setCountdownText] = useState("0h 0m 0s");
+  const [countdownText, setCountdownText] = useState("—");
 
-  // 1. Calculate Stress Index dynamically
+  // Calculate Class Load dynamically
   useEffect(() => {
     let baseStress = 30;
     Object.values(slots).forEach((s) => {
@@ -35,7 +35,7 @@ export default function TelemetryStrip({ slots, logs, gpa = "8.42", timings }: T
     setStressIndex(Math.min(Math.max(baseStress, 10), 99));
   }, [slots, logs]);
 
-  // 2. Freedom ETA Tick Countdown
+  // Class Day Progress countdown
   useEffect(() => {
     const parseTime = (timeStr: string) => {
       const [hours, minutes] = timeStr.split(":").map(Number);
@@ -44,7 +44,7 @@ export default function TelemetryStrip({ slots, logs, gpa = "8.42", timings }: T
       return d.getTime();
     };
 
-    const updateFreedom = () => {
+    const updateProgress = () => {
       if (!timings || timings.length < 2) return;
 
       const now = new Date();
@@ -61,11 +61,10 @@ export default function TelemetryStrip({ slots, logs, gpa = "8.42", timings }: T
         const diffMs = start - nowTime;
         const h = Math.floor(diffMs / 3600000);
         const m = Math.floor((diffMs % 3600000) / 60000);
-        const s = Math.floor((diffMs % 60000) / 1000);
-        setCountdownText(`${h}h ${m}m ${s}s to Class`);
+        setCountdownText(`${h}h ${m}m to start`);
       } else if (nowTime > end) {
         setFreedomPct(100);
-        setCountdownText("Freedom Active 🚀");
+        setCountdownText("Day done 🎓");
       } else {
         const total = end - start;
         const elapsed = nowTime - start;
@@ -75,102 +74,57 @@ export default function TelemetryStrip({ slots, logs, gpa = "8.42", timings }: T
         const diffMs = end - nowTime;
         const h = Math.floor(diffMs / 3600000);
         const m = Math.floor((diffMs % 3600000) / 60000);
-        const s = Math.floor((diffMs % 60000) / 1000);
-        setCountdownText(`${h}h ${m}m ${s}s remaining`);
+        setCountdownText(`${h}h ${m}m left`);
       }
     };
 
-    updateFreedom();
-    const interval = setInterval(updateFreedom, 1000);
+    updateProgress();
+    const interval = setInterval(updateProgress, 1000);
     return () => clearInterval(interval);
   }, [timings]);
 
-  const getStressColor = (val: number) => {
-    if (val > 75) return "text-rose-500 bg-rose-500/10 border-rose-500/20";
-    if (val > 45) return "text-amber-500 bg-amber-500/10 border-amber-500/20";
-    return "text-emerald-500 bg-emerald-500/10 border-emerald-500/20";
+  const getLoadColor = (val: number) => {
+    if (val > 75) return "text-rose-500";
+    if (val > 45) return "text-amber-500";
+    return "text-emerald-500";
   };
 
-  const getStressLabel = (val: number) => {
-    if (val > 75) return "Critical Burnout";
-    if (val > 45) return "Moderate Stress";
-    return "Cruising Calm";
+  const getBarColor = (val: number) => {
+    if (val > 75) return "bg-rose-500";
+    if (val > 45) return "bg-amber-500";
+    return "bg-emerald-500";
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
-      {/* GPA Box */}
-      <motion.div
-        whileHover={{ y: -2 }}
-        className="bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] backdrop-blur-md rounded-3xl p-5 flex items-center justify-between shadow-[0_8px_30px_rgba(0,0,0,0.015)] transition-all duration-300"
-      >
-        <div className="space-y-1">
-          <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest block leading-none">
-            Estimated Standing
-          </span>
-          <span className="text-2xl font-black text-slate-800 dark:text-white block tracking-tight leading-none pt-1">
-            {gpa} <span className="text-xs text-slate-400 font-extrabold ml-0.5">CGPA</span>
-          </span>
-          <span className="text-[10px] font-bold text-slate-450 dark:text-slate-400 block pt-0.5">
-            Academic threshold cleared
-          </span>
-        </div>
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500/10 to-blue-500/10 border border-indigo-500/15 flex items-center justify-center text-indigo-600 dark:text-indigo-400 shrink-0">
-          <Award className="w-5.5 h-5.5" />
-        </div>
-      </motion.div>
-
-      {/* Stress Index Thermometer */}
-      <motion.div
-        whileHover={{ y: -2 }}
-        className="bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] backdrop-blur-md rounded-3xl p-5 flex items-center justify-between shadow-[0_8px_30px_rgba(0,0,0,0.015)] transition-all duration-300"
-      >
-        <div className="space-y-2 flex-1 pr-4">
-          <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest block leading-none">
-            Daily Stress Index
-          </span>
-          <div className="flex items-center gap-2 pt-0.5">
-            <span className="text-2xl font-black text-slate-800 dark:text-white tracking-tight leading-none">
-              {stressIndex}%
-            </span>
-            <span className={`px-1.5 py-0.5 rounded text-[8px] font-black uppercase tracking-wider border leading-none ${getStressColor(stressIndex)}`}>
-              {getStressLabel(stressIndex)}
-            </span>
+    <div className="flex flex-col sm:flex-row gap-2.5 w-full font-sans">
+      {/* Class Load – compact */}
+      <div className="flex-1 flex items-center gap-3 bg-white/60 dark:bg-slate-900/40 backdrop-blur-lg border border-slate-200/30 dark:border-white/[0.03] rounded-xl px-3.5 py-2.5">
+        <Flame className={`w-3.5 h-3.5 shrink-0 ${getLoadColor(stressIndex)}`} />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center justify-between">
+            <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider leading-none">Class Load</span>
+            <span className={`text-xs font-extrabold tabular-nums leading-none ${getLoadColor(stressIndex)}`}>{stressIndex}%</span>
           </div>
-          <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden relative">
+          <div className="w-full h-[3px] bg-slate-950/[0.05] dark:bg-white/[0.05] rounded-full mt-1.5 overflow-hidden">
             <motion.div
-              className={`h-full rounded-full transition-all duration-1000 ${
-                stressIndex > 75 ? "bg-rose-500" : stressIndex > 45 ? "bg-amber-500" : "bg-emerald-500"
-              }`}
+              className={`h-full rounded-full ${getBarColor(stressIndex)}`}
               initial={{ width: 0 }}
               animate={{ width: `${stressIndex}%` }}
               transition={{ type: "spring", stiffness: 80, damping: 15 }}
             />
           </div>
         </div>
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-amber-500/15 flex items-center justify-center text-amber-600 dark:text-amber-400 shrink-0">
-          <Flame className="w-5.5 h-5.5" />
-        </div>
-      </motion.div>
+      </div>
 
-      {/* Freedom ETA Gauge */}
-      <motion.div
-        whileHover={{ y: -2 }}
-        className="bg-white/65 dark:bg-slate-900/65 border border-slate-950/[0.06] dark:border-white/[0.06] backdrop-blur-md rounded-3xl p-5 flex items-center justify-between shadow-[0_8px_30px_rgba(0,0,0,0.015)] transition-all duration-300"
-      >
-        <div className="space-y-2 flex-1 pr-4">
-          <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest block leading-none">
-            Freedom ETA
-          </span>
-          <div className="flex items-center justify-between gap-2 pt-0.5">
-            <span className="text-sm font-black text-slate-800 dark:text-white font-mono tracking-tight leading-none">
-              {countdownText}
-            </span>
-            <span className="text-[8px] font-black text-blue-600 dark:text-blue-400 bg-blue-500/10 px-1.5 py-0.5 rounded uppercase tracking-wider leading-none">
-              {freedomPct}% Cleared
-            </span>
+      {/* Day Progress – compact */}
+      <div className="flex-1 flex items-center gap-3 bg-white/60 dark:bg-slate-900/40 backdrop-blur-lg border border-slate-200/30 dark:border-white/[0.03] rounded-xl px-3.5 py-2.5">
+        <Clock className="w-3.5 h-3.5 shrink-0 text-blue-500" />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center justify-between">
+            <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider leading-none">Progress</span>
+            <span className="text-[10px] font-bold text-slate-600 dark:text-slate-300 truncate leading-none">{countdownText}</span>
           </div>
-          <div className="w-full h-2 bg-slate-950/[0.06] dark:bg-white/[0.06] rounded-full overflow-hidden relative">
+          <div className="w-full h-[3px] bg-slate-950/[0.05] dark:bg-white/[0.05] rounded-full mt-1.5 overflow-hidden">
             <motion.div
               className="h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-500"
               initial={{ width: 0 }}
@@ -179,10 +133,7 @@ export default function TelemetryStrip({ slots, logs, gpa = "8.42", timings }: T
             />
           </div>
         </div>
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/15 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0">
-          <Clock className="w-5.5 h-5.5" />
-        </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

@@ -264,6 +264,7 @@ export default function Home() {
   const [semOpen, setSemOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [isLaunching, setIsLaunching] = useState(false);
+  const [isRedirecting, setIsRedirecting] = useState(false);
   const [siteConfig, setSiteConfig] = useState<any>(null);
 
 
@@ -292,6 +293,17 @@ export default function Home() {
       }
     }
   }, [mounted]);
+
+  // Redirect returning users immediately to the dashboard if a session is saved and they didn't bypass it via landing=true
+  useEffect(() => {
+    if (mounted && savedSession) {
+      const qParams = new URLSearchParams(window.location.search);
+      if (qParams.get("landing") !== "true") {
+        setIsRedirecting(true);
+        router.replace(`/${savedSession.branch}/sem-${savedSession.semester}`);
+      }
+    }
+  }, [mounted, savedSession, router]);
 
   // Prefetch the target route as soon as a branch and semester are selected
   useEffect(() => {
@@ -338,6 +350,26 @@ export default function Home() {
     clearSession();
   };
 
+  if (!mounted || isRedirecting) {
+    return (
+      <div className="fixed inset-0 bg-[#070709] flex flex-col items-center justify-center z-[100] gap-5 font-sans">
+        <div className="relative w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 animate-pulse">
+          <Image
+            src="/logo.webp"
+            alt="KTU node Logo"
+            width={40}
+            height={40}
+            className="w-10 h-10 rounded-xl"
+            priority
+          />
+        </div>
+        <p className="text-[10px] text-slate-400 font-extrabold tracking-[0.2em] uppercase animate-pulse">
+          Restoring study session...
+        </p>
+      </div>
+    );
+  }
+
   return (
     <main
       id="main-content"
@@ -376,6 +408,7 @@ export default function Home() {
             src="/hero-bg-dark.webp"
             alt="Hero Background Dark"
             fill
+            priority
             sizes="100vw"
             className="object-cover object-bottom"
           />
