@@ -541,7 +541,7 @@ export default function GpaCalculator() {
           <div>
             <span className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase block leading-none">Cumulative CGPA</span>
             <div className="flex items-baseline gap-1.5 mt-1">
-              <span className="text-4xl font-light tracking-tight text-slate-900 dark:text-white font-mono font-variant-numeric: tabular-nums">
+              <span className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white font-mono font-variant-numeric: tabular-nums">
                 {overallCalculations.cgpa}
               </span>
               <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-wider">/ 10.0</span>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit, Poppins } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { CSPostHogProvider } from "@/components/providers/PostHogProvider";
 import Script from "next/script";
@@ -25,6 +25,13 @@ const outfit = Outfit({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-outfit",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -243,7 +250,7 @@ export default async function RootLayout({
         />
       </head>
       {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
-      <body className={`${plusJakartaSans.variable} ${outfit.variable} font-sans`} suppressHydrationWarning>
+      <body className={`${plusJakartaSans.variable} ${outfit.variable} ${poppins.variable} font-sans`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <CSPostHogProvider>
             {isUnderMaintenance ? (
