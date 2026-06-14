@@ -1,792 +1,845 @@
 # Semiconductor devices- Rectifiers- Full wave and Half wave.
 
 <!-- SECTION_1_START -->
-# Semiconductor Rectifiers — Half-Wave and Full-Wave
+# Semiconductor Devices — Rectifiers: Half-Wave and Full-Wave
 
 > [!IMPORTANT]
-> **KTU 2024 Scheme | GAPHT121 | Module 4 — Semiconductor Devices**
-> This module is foundational for courses like Analog Electronics, Power Electronics, and Signal Processing. Mastery of rectifier theory directly maps to **CO1** (Apply semiconductor physics to electronic devices) and **CO2** (Analyze device characteristics).
+> **KTU 2024 Scheme | GAPHT121 | Module 4**
+> This topic maps to **CO2 (Apply the principles of semiconductor physics in electronic devices)** and is a high-yield area for **ESE (End Semester Evaluation)** and **CE (Continuous Evaluation)** short derivations.
 
 ---
 
-## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
+## 1.1 Formal Definition
 
-A **rectifier** is a two-terminal nonlinear solid-state electronic device (or circuit) constructed using semiconductor diodes (typically Si or Ge p-n junction diodes) that converts a **bidirectional alternating current (AC)** input signal into a **unidirectional pulsating direct current (DC)** output signal. The conversion process exploits the **unidirectional conduction property** of the p-n junction diode, which arises from the **depletion region** and **potential barrier** formed at the metallurgical junction.
+A **rectifier** is a two-terminal unidirectional solid-state electronic device (built using one or more $p\text{-}n$ junction diodes) that converts a bipolar **Alternating Current (AC)** input signal into a unipolar **Direct Current (DC)** output signal by exploiting the asymmetric current-voltage ($I$-$V$) characteristics of the semiconductor diode.
 
-Based on the fraction of the AC cycle utilized, rectifiers are classified as:
-
-- **Half-Wave Rectifier (HWR):** Conducts during only **one half** of the AC input cycle (typically the positive half-cycle), blocking the other half.
-- **Full-Wave Rectifier (FWR):** Conducts during **both halves** of the AC input cycle, redirecting current to flow in a single direction through the load.
-
----
-
-## 1.2 Conceptual Analogy — The One-Way Water Valve 🚰
+In the KTU 2024 syllabus context, rectifiers are classified under **uncontrolled rectifiers** (line-frequency, non-phase-controlled converters) and form the foundational building block of every linear DC power supply, signal demodulator (envelope detector in AM), and DC motor drive.
 
 > [!NOTE]
-> **Intuition Pump: Real-World Analogy**
-
-Imagine a **water pipe** carrying an oscillating water current (water surging forward, then backward, then forward...). A **p-n junction diode** behaves like a **check valve (non-return valve)** in that pipe:
-
-| Component | Mechanical Analog | Electrical Behavior |
-|---|---|---|
-| **AC Source** | Reciprocating piston pump | Pushes electrons forward & backward |
-| **Diode (Forward Bias)** | Open check valve | Allows current to flow in one direction |
-| **Diode (Reverse Bias)** | Closed check valve | Blocks current completely |
-| **Half-Wave Rectifier** | Single check valve | Water flows only half the time |
-| **Full-Wave Rectifier** | H-bridge of 4 check valves | Water flows always, redirected through load |
-| **Load Resistor $R_L$** | Output bucket | Collects the rectified flow |
-| **Filter Capacitor** | Storage tank | Smooths out the pulses |
-
-The pulsating DC output is still **not pure DC** — it is a *pulsating* signal containing a DC average plus unwanted AC components called **ripples**.
+> **Core Definition (Board-Examiner Standard):**
+> "A rectifier is an electrical device that converts alternating current (AC), which periodically reverses direction, to direct current (DC), which flows in only one direction. The process is known as **rectification**."
 
 ---
 
-## 1.3 Key Physical Constants & Standard Metrics
+## 1.2 Intuitive Analogy — The "One-Way Valve" Concept
 
-The following are standard parameters for ideal silicon (Si) and germanium (Ge) diodes used in KTU textbook problems:
+Imagine a **water pump** connected to a pipe that pushes water first forward and then backward (this is AC). If we insert a **mechanical check valve** (a flap that opens only when water flows from left to right), the backward push is blocked completely. What we get at the other end of the pipe is a series of "humps" of water, all moving in the same direction — this is exactly what a **half-wave rectifier** does electrically with a single diode.
 
-- **Silicon (Si) cut-in voltage (knee voltage): $V_k \approx 0.7 \text{ V}$**
-- **Germanium (Ge) cut-in voltage: $V_k \approx 0.3 \text{ V}$**
-- **Barrier potential at 300 K (Si): $V_0 \approx 0.7 \text{ V}$**
-- **Thermal voltage: $V_T = kT/q \approx 25.85 \text{ mV}$ at 300 K**
-- **Boltzmann constant: $k = 1.38 \times 10^{-23} \text{ J/K}$**
-- **Electronic charge: $q = 1.6 \times 10^{-19} \text{ C}$**
+Now, suppose we add a **second valve** that opens during the *other* half of the cycle and route it through a clever pipe arrangement (a bridge or center-tapped pipe). Now we get water flowing in the *same* direction during *both* halves of the input cycle. This is the **full-wave rectifier**.
+
+| Mechanical Analogy | Electrical Counterpart |
+|---|---|
+| Check valve (flap) | $p\text{-}n$ junction diode |
+| Forward water hump | Positive half-cycle conduction |
+| Blocked reverse water | Reverse-biased (cut-off) state |
+| Two valves + bridge pipe | Full-wave bridge rectifier |
+
+---
+
+## 1.3 Classification Overview
+
+Rectifiers are classified into two major topologies, each with its own engineering trade-offs:
+
+1. **Half-Wave Rectifier (HWR)** — Single-diode topology; simplest and cheapest, but wastes $50\%$ of input power.
+2. **Full-Wave Rectifier (FWR)** — Two sub-topologies:
+   * **Center-Tapped Transformer FWR** — Uses two diodes + center-tapped secondary.
+   * **Bridge Rectifier** — Uses four diodes, no center-tap required.
 
 > [!TIP]
-> **Examination Tip:** KTU board questions almost always assume **ideal diode** behavior unless explicitly stated. An ideal diode has **zero forward resistance ($R_f = 0$)** and **infinite reverse resistance ($R_r = \infty$)**.
+> **Geometric Intuition (Why DC Average matters):**
+> The DC value of a rectified waveform is its **arithmetic mean** over one full AC period. For half-wave, half the time the signal is zero, so the mean is half that of full-wave. This single geometric fact explains every difference in their performance metrics.
 
 ---
 
-## 1.4 Visualization — Input vs. Output Waveforms
-
 > [!VISUALIZATION CONTROL]
-> **Concept:** Half-wave and full-wave rectification of a sinusoidal input
+> **Concept:** Rectified output waveforms vs. sinusoidal input
 > **GeoGebra / Desmos Input Equations:**
-> * Input AC: `f(x) = sin(2 * pi * x)`
-> * Half-wave output: `g(x) = sin(2 * pi * x) * (sin(2 * pi * x) > 0)`
-> * Full-wave output: `h(x) = abs(sin(2 * pi * x))`
-> * Filtered (capacitor) output: `c(x) = 1.05 + 0.5 * exp(-x)`
-> **Visual Description:** The student should observe that the full-wave output has a **frequency twice** that of the input and **never goes to zero**, while the half-wave output returns to **zero** between every positive lobe. A filter capacitor produces the characteristic sawtooth ripple of smoothed DC.
-
+> * $V_{in}(t) = \sin(t)$  *(pure AC input)*
+> * $V_{HWR}(t) = \max(0, \sin(t))$  *(half-wave output)*
+> * $V_{FWR}(t) = \vert \sin(t) \vert$  *(full-wave output)*
+> **Visual Description:** The student should observe that $V_{HWR}$ is zero for every alternate $\pi$ interval, while $V_{FWR}$ inverts the negative humps upward, doubling the frequency of the output pulsations.
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Half-Wave Rectifier — Operational Breakdown
+## 2.1 Working Principle of a $p\text{-}n$ Junction Diode
 
-**Circuit Topology:** A single diode $D$ is connected in series with a load resistor $R_L$ across the secondary of a center-tapped (or standard) transformer.
+The diode follows the **Shockley diode equation** (idealized):
 
-**Working — Step-by-Step Logic:**
+$$I_D = I_0 \left( e^{\,V_D / \eta V_T} - 1 \right)$$
 
-1. **Positive Half-Cycle (0 to $\pi$):** The top of the secondary winding is positive relative to the bottom. The diode $D$ becomes **forward biased**, acting as a closed switch. Current $I_L$ flows through $R_L$, producing an output voltage $V_o = I_L R_L$ that mirrors the positive half of the input.
+where:
+* $I_0$ = reverse saturation current (typically $10^{-6}$ to $10^{-15}$ A)
+* $V_D$ = forward voltage drop across the diode (silicon $\approx \mathbf{0.7\,V}$)
+* $V_T = kT/q$ = thermal voltage $\approx \mathbf{25.85\,mV}$ at $300\,K$
+* $\eta$ = ideality factor ($1$ for ideal, $1\text{–}2$ for real)
 
-2. **Negative Half-Cycle ($\pi$ to $2\pi$):** The polarity reverses. The diode $D$ becomes **reverse biased**, acting as an open switch. **No current flows**, and the entire input voltage appears as a reverse bias across the diode (this is the **Peak Inverse Voltage, PIV**).
-
-3. **Repetition:** The cycle repeats at the input frequency $f$.
-
-**Why is this important?** Only **50%** of the input power is utilized. The remaining half is wasted, making the HWR inefficient for power supplies.
-
----
-
-## 2.2 Full-Wave Rectifier — Two Implementations
-
-### (a) Center-Tapped Transformer Full-Wave Rectifier
-
-- Uses **two diodes** $D_1$ and $D_2$ and a **center-tapped transformer** secondary.
-- During the **positive half-cycle**, $D_1$ conducts and $D_2$ is reverse-biased.
-- During the **negative half-cycle**, $D_2$ conducts and $D_1$ is reverse-biased.
-- In **both cases**, current flows through $R_L$ in the **same direction**.
-
-> **PIV for each diode = $2V_m$** (the entire secondary voltage appears across the OFF diode).
-
-### (b) Bridge Full-Wave Rectifier (Most Common Industrial Design)
-
-- Uses **four diodes** $D_1, D_2, D_3, D_4$ arranged in a **bridge (H-bridge)** configuration.
-- **No center-tapped transformer required** — works with a standard secondary.
-- During the positive half-cycle: $D_1$ and $D_3$ conduct; $D_2$ and $D_4$ are reverse-biased.
-- During the negative half-cycle: $D_2$ and $D_4$ conduct; $D_1$ and $D_3$ are reverse-biased.
-- Current always passes through $R_L$ in the same direction.
-
-> **PIV for each diode = $V_m$** (only one diode's drop appears in series at any time).
+**Key Physical Insight:**
+* When $V_{in} > V_D$ (knee voltage) → diode is **forward biased** → current flows.
+* When $V_{in} < 0$ → diode is **reverse biased** → current is essentially zero.
+* The diode therefore behaves as a **self-actuated one-way switch** synchronised with the AC line.
 
 ---
 
-## 2.3 Quantitative Performance Metrics
+## 2.2 Half-Wave Rectifier (HWR)
 
-The following **four canonical parameters** are routinely asked in KTU exams:
+### 2.2.1 Circuit Operation
 
-### 2.3.1 DC Output Voltage (Average Value)
+The circuit consists of a single diode $D$ in series with the load resistor $R_L$, driven by a transformer secondary of peak voltage $V_m$.
 
-Using Fourier analysis of the rectified waveform:
+* **Positive half-cycle** ($V_{in} > 0$): Diode is forward-biased → acts as closed switch → $V_{out} = V_{in} - V_D$.
+* **Negative half-cycle** ($V_{in} < 0$): Diode is reverse-biased → acts as open switch → $V_{out} = 0$.
 
-**Half-Wave:**
-$$V_{dc} = \frac{V_m}{\pi}$$
+### 2.2.2 Step-by-Step Analytical Derivation
 
-**Full-Wave (Center-Tapped or Bridge):**
-$$V_{dc} = \frac{2 V_m}{\pi}$$
+Let the input be $V_{in}(t) = V_m \sin(\omega t)$ and assume an **ideal diode** ($V_D = 0$).
 
-### 2.3.2 RMS Output Voltage
+**Output voltage waveform:**
+$$V_{out}(t) = \begin{cases} V_m \sin(\omega t) & \text{for } 0 \leq \omega t \leq \pi \\ 0 & \text{for } \pi \leq \omega t \leq 2\pi \end{cases}$$
 
-**Half-Wave:**
-$$V_{rms} = \frac{V_m}{2}$$
+**Average (DC) Output Voltage:**
 
-**Full-Wave:**
-$$V_{rms} = \frac{V_m}{\sqrt{2}}$$
+$$V_{dc} = \frac{1}{2\pi} \int_{0}^{2\pi} V_{out}(\theta)\, d\theta = \frac{1}{2\pi} \int_{0}^{\pi} V_m \sin\theta\, d\theta$$
 
-### 2.3.3 Rectification Efficiency ($\eta$)
+$$= \frac{V_m}{2\pi} \bigl[ -\cos\theta \bigr]_{0}^{\pi} = \frac{V_m}{2\pi} \bigl( -\cos\pi + \cos 0 \bigr)$$
 
-Defined as the ratio of DC output power to AC input power:
-$$\eta = \frac{P_{dc}}{P_{ac}} \times 100\% = \frac{V_{dc}^2 / R_L}{V_{rms}^2 / R_L} \times 100\% = \frac{V_{dc}^2}{V_{rms}^2} \times 100\%$$
+$$= \frac{V_m}{2\pi} (1 + 1) = \frac{V_m}{\pi}$$
 
-### 2.3.4 Ripple Factor ($\gamma$)
+$$\boxed{V_{dc} = \frac{V_m}{\pi} \approx 0.318\,V_m}$$
 
-Measures the **amount of AC (ripple) remaining** in the output relative to the DC component:
-$$\gamma = \frac{V_{ac,rms}}{V_{dc}} = \sqrt{\left(\frac{V_{rms}}{V_{dc}}\right)^2 - 1}$$
+**RMS Output Voltage:**
 
-### 2.3.5 Peak Inverse Voltage (PIV)
+$$V_{rms}^{2} = \frac{1}{2\pi} \int_{0}^{2\pi} V_{out}^{2}(\theta)\, d\theta = \frac{1}{2\pi} \int_{0}^{\pi} V_m^{2} \sin^{2}\theta\, d\theta$$
 
-Maximum reverse voltage a diode must withstand without breakdown.
+$$= \frac{V_m^{2}}{2\pi} \int_{0}^{\pi} \frac{1 - \cos 2\theta}{2}\, d\theta = \frac{V_m^{2}}{4\pi} \left[ \theta - \frac{\sin 2\theta}{2} \right]_{0}^{\pi}$$
 
-### 2.3.6 Transformer Utilization Factor (TUF)
+$$= \frac{V_m^{2}}{4\pi} \cdot \pi = \frac{V_m^{2}}{4}$$
 
-Ratio of DC power delivered to the load to the **rated VA** of the transformer secondary. (Often out of syllabus scope but frequently tested.)
+$$\boxed{V_{rms} = \frac{V_m}{2} = 0.5\,V_m}$$
 
----
+**Ripple Factor (the most asked KTU parameter):**
 
-## 2.4 KTU Formula Cheat Sheet — Master Table
+The ripple factor $\gamma$ quantifies the amount of **AC residual** (unwanted ripple) left in the output relative to the DC component. By definition:
+
+$$\gamma = \frac{V_{ac,\,rms}}{V_{dc}} = \frac{\sqrt{V_{rms}^{2} - V_{dc}^{2}}}{V_{dc}}$$
+
+For HWR:
+$$V_{rms}^{2} - V_{dc}^{2} = \frac{V_m^{2}}{4} - \frac{V_m^{2}}{\pi^{2}} = \frac{V_m^{2}}{4}\left(1 - \frac{4}{\pi^{2}}\right)$$
+
+$$\gamma = \frac{\sqrt{\dfrac{V_m^{2}}{4}\left(1 - \dfrac{4}{\pi^{2}}\right)}}{V_m/\pi} = \frac{\pi}{2}\sqrt{1 - \frac{4}{\pi^{2}}}$$
+
+$$\boxed{\gamma_{HWR} = \sqrt{\left(\frac{V_{rms}}{V_{dc}}\right)^{2} - 1} = \sqrt{\left(\frac{\pi}{2}\right)^{2} - 1} \approx 1.21}$$
 
 > [!IMPORTANT]
-> **Save this table — every KTU question on rectifiers uses at least 3 of these formulas.**
+> A ripple factor of $1.21$ means the AC ripple amplitude is $121\%$ of the DC value — a **very noisy** DC supply, requiring a heavy filter capacitor for practical use.
 
-| Parameter | Half-Wave Rectifier | Full-Wave Rectifier | Units |
-|---|---|---|---|
-| DC Output Voltage $V_{dc}$ | $V_m / \pi$ | $2V_m / \pi$ | Volts (V) |
-| RMS Output Voltage $V_{rms}$ | $V_m / 2$ | $V_m / \sqrt{2}$ | Volts (V) |
-| DC Current $I_{dc}$ | $V_m / (\pi R_L)$ | $2V_m / (\pi R_L)$ | Amperes (A) |
-| RMS Current $I_{rms}$ | $V_m / (2 R_L)$ | $V_m / (\sqrt{2} R_L)$ | Amperes (A) |
-| Rectification Efficiency $\eta_{max}$ | **40.6 %** | **81.2 %** | % |
-| Ripple Factor $\gamma$ | **1.21** | **0.482** | dimensionless |
-| Ripple Frequency $f_r$ | $f$ (input freq.) | $2f$ | Hertz (Hz) |
-| PIV (Center-Tapped) | $V_m$ | $2V_m$ | Volts (V) |
-| PIV (Bridge) | — | $V_m$ | Volts (V) |
-| Form Factor $FF$ | $V_{rms}/V_{dc} = 1.57$ | $V_{rms}/V_{dc} = 1.11$ | dimensionless |
-| Peak Factor $PF$ | $V_m / V_{rms} = 2$ | $V_m / V_{rms} = \sqrt{2}$ | dimensionless |
+**Rectification Efficiency:**
 
-> **Quick reference:** Efficiency $\eta = \frac{40.6}{1 + (R_f / R_L)}$ for HWR and $\eta = \frac{81.2}{1 + (2R_f / R_L)}$ for FWR, where $R_f$ is the diode forward resistance.
+$$\eta = \frac{P_{dc}}{P_{ac}} = \frac{V_{dc}^{2}/R_L}{V_{rms}^{2}/R_L} = \frac{V_{dc}^{2}}{V_{rms}^{2}}$$
+
+$$\eta_{HWR} = \frac{(V_m/\pi)^{2}}{(V_m/2)^{2}} = \frac{4}{\pi^{2}} \approx 0.4053$$
+
+$$\boxed{\eta_{HWR} \approx 40.6\%}$$
+
+**Peak Inverse Voltage (PIV):**
+
+During the negative half-cycle, the diode must withstand the full peak of the input. Since the cathode is at $0$ V (load) and the anode is at $-V_m$:
+
+$$\boxed{PIV_{HWR} = V_m}$$
+
+**Transformer Utilization Factor (TUF):**
+
+$$TUF = \frac{P_{dc}}{V_{s,\,rms} \cdot I_{s,\,rms}} = \frac{V_{dc}^{2}/R_L}{V_{s,\,rms} \cdot I_{s,\,rms}}$$
+
+For HWR with resistive load:
+$$\boxed{TUF_{HWR} = 0.287}$$
 
 ---
 
-## 2.5 Real-World Engineering Utility
+## 2.3 Full-Wave Center-Tapped Rectifier
+
+### 2.3.1 Circuit Operation
+
+A transformer with a **center-tapped secondary** produces two equal voltages $V_m \sin(\omega t)$ at the two ends with respect to the center tap (which is grounded).
+
+* During the **positive half-cycle**, diode $D_1$ is forward-biased and conducts; $D_2$ is reverse-biased.
+* During the **negative half-cycle**, the roles reverse: $D_2$ conducts, $D_1$ is off.
+* The current through $R_L$ always flows in the **same direction** → unipolar output.
+
+### 2.3.2 Derivation of Performance Parameters
+
+**Output voltage waveform:**
+$$V_{out}(t) = \begin{cases} V_m \sin(\omega t) & \text{for } 0 \leq \omega t \leq \pi \\ V_m \sin(\omega t - \pi) & \text{for } \pi \leq \omega t \leq 2\pi \end{cases}$$
+
+Equivalently: $V_{out}(t) = \vert V_m \sin(\omega t) \vert$.
+
+**Average (DC) Output Voltage:**
+
+$$V_{dc} = \frac{1}{\pi} \int_{0}^{\pi} V_m \sin\theta\, d\theta = \frac{V_m}{\pi}\bigl[-\cos\theta\bigr]_{0}^{\pi} = \frac{2V_m}{\pi}$$
+
+$$\boxed{V_{dc} = \frac{2V_m}{\pi} \approx 0.636\,V_m}$$
+
+**RMS Output Voltage:**
+
+$$V_{rms}^{2} = \frac{1}{\pi} \int_{0}^{\pi} V_m^{2} \sin^{2}\theta\, d\theta = \frac{V_m^{2}}{\pi} \cdot \frac{\pi}{2} = \frac{V_m^{2}}{2}$$
+
+$$\boxed{V_{rms} = \frac{V_m}{\sqrt{2}} \approx 0.707\,V_m}$$
+
+**Ripple Factor:**
+
+$$\gamma = \sqrt{\left(\frac{V_{rms}}{V_{dc}}\right)^{2} - 1} = \sqrt{\left(\frac{V_m/\sqrt{2}}{2V_m/\pi}\right)^{2} - 1} = \sqrt{\frac{\pi^{2}}{8} - 1}$$
+
+$$\boxed{\gamma_{FWR} \approx 0.482}$$
+
+**Rectification Efficiency:**
+
+$$\eta_{FWR} = \frac{V_{dc}^{2}}{V_{rms}^{2}} = \frac{(2V_m/\pi)^{2}}{(V_m/\sqrt{2})^{2}} = \frac{8}{\pi^{2}} \approx 0.811$$
+
+$$\boxed{\eta_{FWR} \approx 81.2\%}$$
+
+**Peak Inverse Voltage:**
+
+When one diode conducts, the other sees the full secondary voltage (peak of one half) plus the output voltage of the conducting diode. With center-tap grounded:
+
+$$\boxed{PIV_{FWR} = 2V_m}$$
+
+**Transformer Utilization Factor:**
+
+$$\boxed{TUF_{FWR} = 0.693}$$
+
+---
+
+## 2.4 Full-Wave Bridge Rectifier
+
+The bridge uses **four diodes** ($D_1, D_2, D_3, D_4$) in a diamond configuration. It does **not** require a center-tapped transformer.
+
+* Positive half-cycle: $D_1$ and $D_3$ conduct; $D_2$ and $D_4$ are reverse-biased.
+* Negative half-cycle: $D_2$ and $D_4$ conduct; $D_1$ and $D_3$ are reverse-biased.
+* Output across $R_L$ is $|V_m \sin(\omega t)|$.
+
+Since the output waveform is identical to the center-tapped FWR, **all DC, RMS, ripple, and efficiency values are the same**. The differences are:
+
+| Parameter | Center-Tapped FWR | Bridge Rectifier |
+|---|---|---|
+| Number of diodes | 2 | 4 |
+| Transformer secondary | Must be center-tapped | Plain secondary |
+| PIV per diode | $2V_m$ | $V_m$ |
+| Voltage drop in path | $1 \cdot V_D$ | $2 \cdot V_D$ |
+| TUF | $0.693$ | $\mathbf{0.8106}$ |
+
+$$\boxed{V_{dc} = \frac{2V_m}{\pi}, \quad \gamma \approx 0.482, \quad \eta \approx 81.2\%, \quad PIV = V_m}$$
+
+---
+
+## 2.5 KTU High-Yield Formula Cheat Sheet
 
 > [!TIP]
-> **Where this is used in production systems:**
+> **Master this table — it covers $90\%$ of all KTU numerical questions on this topic.**
 
-- **Linear Power Supplies (SMPS pre-stage):** Every wall adapter (5V phone charger, laptop brick) starts with a bridge rectifier to convert mains 230V/50Hz AC to pulsating DC, which is then filtered and regulated.
-- **RF Signal Demodulation:** AM radio receivers use a **simple envelope detector** (a half-wave rectifier + RC filter) to extract the audio envelope from the carrier.
-- **Battery Chargers:** Solar charge controllers and EV onboard chargers use FWR circuits with filtering.
-- **Signal Processing:** Precision rectifiers (op-amp-based) are used in instrumentation (true RMS converters, AC voltmeters) where diode forward drop cannot be tolerated.
-- **HVDC Transmission:** Industrial-scale rectifiers convert AC to DC for **High-Voltage Direct Current** power transmission lines.
+| Parameter | Symbol | Half-Wave (HWR) | Full-Wave (FWR) | Unit |
+|---|---|---|---|---|
+| Peak input voltage | $V_m$ | $V_m$ | $V_m$ | $\text{V}$ |
+| DC output voltage | $V_{dc}$ | $V_m/\pi$ | $2V_m/\pi$ | $\text{V}$ |
+| RMS output voltage | $V_{rms}$ | $V_m/2$ | $V_m/\sqrt{2}$ | $\text{V}$ |
+| DC load current | $I_{dc}$ | $V_m/(\pi R_L)$ | $2V_m/(\pi R_L)$ | $\text{A}$ |
+| RMS load current | $I_{rms}$ | $V_m/(2R_L)$ | $V_m/(\sqrt{2}\,R_L)$ | $\text{A}$ |
+| Ripple factor | $\gamma$ | $1.21$ | $0.482$ | dimensionless |
+| Rectification efficiency | $\eta$ | $40.6\,\%$ | $81.2\,\%$ | dimensionless |
+| Peak inverse voltage | $PIV$ | $V_m$ | $2V_m$ (CT) / $V_m$ (Bridge) | $\text{V}$ |
+| Transformer utilization factor | $TUF$ | $0.287$ | $0.693$ (CT) / $0.8106$ (Bridge) | dimensionless |
+| Output ripple frequency | $f_r$ | $f$ (line freq.) | $2f$ (double line freq.) | $\text{Hz}$ |
+| Form factor | $K_f = V_{rms}/V_{dc}$ | $\pi/2 \approx 1.57$ | $\pi/(2\sqrt{2}) \approx 1.11$ | dimensionless |
 
+---
+
+## 2.6 Engineering Utility and Real-World Relevance
+
+* **Linear DC power supplies** (laptop chargers, lab bench power supplies, TV SMPS auxiliary stages) — every offline converter begins with a bridge rectifier feeding a bulk filter capacitor.
+* **RF envelope detectors** (AM demodulation in vintage radio receivers) — a single diode HWR with $R\text{-}C$ filter acts as a peak detector.
+* **Battery chargers and DC motor drives** — bridge rectifiers with LC filters deliver smooth high-current DC.
+* **Signal polarity protection** in instrumentation — a bridge rectifier across a DC input protects circuits from accidental reverse polarity (often called a "steering diode bridge").
+* **Welding and electroplating rectifiers** — use three-phase bridge rectifiers delivering low-ripple high-current DC.
+
+> [!IMPORTANT]
+> **Why efficiency doubles (but is not $100\%$):** In full-wave rectification, both halves of the cycle deliver power to the load, so the DC power delivered doubles relative to HWR for the same $V_m$. However, only $81.2\%$ of the total input power ends up as DC — the remaining $18.8\%$ is dissipated as AC ripple heating in $R_L$. The remaining loss is fundamental to single-phase rectification and can only be reduced further by adding LC/π-type filters or switching to multiphase rectification.
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Symbolic Implementation
+# Step-by-Step Derivations & Numerical Implementations
 
-## 3.1 Derivation: DC Output Voltage of a Half-Wave Rectifier
+## 3.1 Worked Example 1 — KTU-Style Numerical (HWR)
 
-The input AC voltage is:
-$$v_i(t) = V_m \sin(\omega t)$$
+> **[KTU University Exam — July 2023 | Model Question]**
+> A half-wave rectifier is fed from a $230\,\text{V}$, $50\,\text{Hz}$ AC supply through a transformer with turns ratio $10:1$. The load resistance is $R_L = 1\,\text{k}\Omega$. Calculate:
+> (a) The DC output voltage, $V_{dc}$.
+> (b) The RMS output voltage, $V_{rms}$.
+> (c) The ripple factor, $\gamma$.
+> (d) The rectification efficiency, $\eta$.
 
-During the positive half-cycle, the diode is ON and $v_o(t) = v_i(t)$. During the negative half-cycle, $v_o(t) = 0$.
+### 3.1.1 Given Data & Pre-Calculation
 
-The average (DC) value over one full period $T = 2\pi / \omega$ is:
+* Primary RMS voltage: $V_{p,\,rms} = 230\,\text{V}$
+* Turns ratio: $N_p : N_s = 10 : 1$
+* Secondary RMS voltage: $V_{s,\,rms} = 230 / 10 = 23\,\text{V}$
+* Secondary peak voltage: $V_m = \sqrt{2} \cdot V_{s,\,rms} = \sqrt{2} \cdot 23$
+* Numerically: $V_m = 1.4142 \times 23 = 32.527\,\text{V}$
+* Load resistance: $R_L = 1000\,\Omega$
 
-$$V_{dc} = \frac{1}{T} \int_0^T v_o(t) \, dt$$
+### 3.1.2 Part (a): DC Output Voltage
 
-Substituting the piecewise definition:
+$$V_{dc} = \frac{V_m}{\pi} = \frac{32.527}{\pi} = \frac{32.527}{3.1416}$$
 
-$$V_{dc} = \frac{1}{2\pi} \left[ \int_0^{\pi} V_m \sin(\theta) \, d\theta + \int_{\pi}^{2\pi} 0 \, d\theta \right]$$
+$$V_{dc} = 10.354\,\text{V}$$
 
-**Step 1:** Evaluate the first integral:
-$$\int_0^{\pi} V_m \sin(\theta) \, d\theta = V_m \left[ -\cos(\theta) \right]_0^{\pi} = V_m \left[ -\cos(\pi) + \cos(0) \right] = V_m [1 + 1] = 2V_m$$
+$$\boxed{V_{dc} \approx 10.35\,\text{V}}$$
 
-**Step 2:** The second integral is zero.
+### 3.1.3 Part (b): RMS Output Voltage
 
-**Step 3:** Combine:
-$$V_{dc} = \frac{1}{2\pi} \times 2V_m = \frac{V_m}{\pi}$$
+$$V_{rms} = \frac{V_m}{2} = \frac{32.527}{2} = 16.264\,\text{V}$$
 
-**Final Result:**
-$$\boxed{V_{dc, HWR} = \frac{V_m}{\pi} \approx 0.318 \, V_m}$$
+$$\boxed{V_{rms} \approx 16.26\,\text{V}}$$
 
----
+### 3.1.4 Part (c): Ripple Factor
 
-## 3.2 Derivation: DC Output Voltage of a Full-Wave Rectifier
+$$\gamma = \frac{\sqrt{V_{rms}^{2} - V_{dc}^{2}}}{V_{dc}}$$
 
-For a full-wave rectifier, $v_o(t) = \vert V_m \sin(\omega t) \vert$. The output repeats every $\pi$ radians, so the integration window is halved but doubled in frequency:
+$$V_{rms}^{2} = (16.264)^{2} = 264.52$$
+$$V_{dc}^{2} = (10.354)^{2} = 107.20$$
+$$V_{rms}^{2} - V_{dc}^{2} = 264.52 - 107.20 = 157.32$$
+$$\sqrt{157.32} = 12.543$$
 
-$$V_{dc} = \frac{1}{\pi} \int_0^{\pi} V_m \sin(\theta) \, d\theta$$
+$$\gamma = \frac{12.543}{10.354} = 1.211$$
 
-**Step 1:** Evaluate the integral (same as before, but over $\pi$):
-$$\int_0^{\pi} V_m \sin(\theta) \, d\theta = 2V_m$$
+$$\boxed{\gamma \approx 1.21}$$
 
-**Step 2:** Divide by $\pi$:
-$$V_{dc} = \frac{2V_m}{\pi}$$
+### 3.1.5 Part (d): Rectification Efficiency
 
-**Final Result:**
-$$\boxed{V_{dc, FWR} = \frac{2V_m}{\pi} \approx 0.636 \, V_m}$$
+$$\eta = \frac{V_{dc}^{2}}{V_{rms}^{2}} \times 100\% = \frac{107.20}{264.52} \times 100\% = 40.53\%$$
 
-> This is **exactly twice** the HWR value, because the full-wave rectifier uses both halves of the input cycle.
-
----
-
-## 3.3 Derivation: Rectification Efficiency of a Half-Wave Rectifier (Ideal Diode, $R_f = 0$)
-
-**DC Output Power:**
-$$P_{dc} = \frac{V_{dc}^2}{R_L} = \frac{(V_m / \pi)^2}{R_L} = \frac{V_m^2}{\pi^2 R_L}$$
-
-**AC Input Power (RMS):**
-$$P_{ac} = \frac{V_{rms}^2}{R + R_L} = \frac{V_{rms}^2}{R_L} \quad \text{(since } R_f = 0\text{)}$$
-
-For HWR: $V_{rms} = V_m / 2$, so:
-$$P_{ac} = \frac{V_m^2}{4 R_L}$$
-
-**Efficiency:**
-$$\eta = \frac{P_{dc}}{P_{ac}} = \frac{V_m^2 / (\pi^2 R_L)}{V_m^2 / (4 R_L)} = \frac{4}{\pi^2}$$
-
-$$\boxed{\eta_{HWR, max} = \frac{4}{\pi^2} = 0.4053 = 40.53\% \approx 40.6\%}$$
+$$\boxed{\eta \approx 40.53\%}$$
 
 ---
 
-## 3.4 Derivation: Rectification Efficiency of a Full-Wave Rectifier
+## 3.2 Worked Example 2 — Full-Wave Center-Tapped Numerical
 
-For FWR: $V_{rms} = V_m / \sqrt{2}$, so:
-$$P_{ac} = \frac{V_{rms}^2}{R_L} = \frac{V_m^2}{2 R_L}$$
+> **[KTU University Exam — Dec 2023 | Model Question]**
+> A center-tapped full-wave rectifier is supplied by a $230\,\text{V}$, $50\,\text{Hz}$ transformer with turns ratio $N_p : N_s = 8 : 1$ (full secondary). The load is $R_L = 500\,\Omega$. Compute:
+> (a) $V_{dc}$, $I_{dc}$
+> (b) $V_{rms}$, $I_{rms}$
+> (c) Ripple factor and PIV rating of each diode.
 
-$$P_{dc} = \frac{V_{dc}^2}{R_L} = \frac{(2V_m/\pi)^2}{R_L} = \frac{4 V_m^2}{\pi^2 R_L}$$
+### 3.2.1 Pre-Calculation
 
-**Efficiency:**
-$$\eta = \frac{4 V_m^2 / (\pi^2 R_L)}{V_m^2 / (2 R_L)} = \frac{8}{\pi^2}$$
+* $V_{s,\,rms} = 230/8 = 28.75\,\text{V}$ (full secondary voltage)
+* Peak full secondary: $V_m = \sqrt{2} \cdot 28.75 = 40.66\,\text{V}$
+* Each half-secondary peak: $V_{m/2} = V_m/2 = 20.33\,\text{V}$
 
-$$\boxed{\eta_{FWR, max} = \frac{8}{\pi^2} = 0.8106 = 81.06\% \approx 81.2\%}$$
+> [!IMPORTANT]
+> In a center-tapped FWR, the **peak voltage seen by each diode** is the half-secondary peak $V_m/2$, but the **DC output** is computed using $V_m$ of one half (since the output is the rectified absolute of one half-winding). Most KTU problems use $V_m$ as the half-winding peak — read carefully!
 
-> [!NOTE]
-> **Key Observation:** The full-wave rectifier is **exactly twice as efficient** as the half-wave rectifier. The theoretical maximum for ANY rectifier is **100%** (achievable only for an ideal square-wave rectifier).
+**Assuming $V_m = 20.33\,\text{V}$ (half-winding peak, as per KTU convention):**
+
+### 3.2.2 Part (a): DC Output
+
+$$V_{dc} = \frac{2V_m}{\pi} = \frac{2 \times 20.33}{3.1416} = \frac{40.66}{3.1416} = 12.943\,\text{V}$$
+
+$$I_{dc} = \frac{V_{dc}}{R_L} = \frac{12.943}{500} = 0.02589\,\text{A} = 25.89\,\text{mA}$$
+
+$$\boxed{V_{dc} \approx 12.94\,\text{V}, \quad I_{dc} \approx 25.89\,\text{mA}}$$
+
+### 3.2.3 Part (b): RMS Output
+
+$$V_{rms} = \frac{V_m}{\sqrt{2}} = \frac{20.33}{1.4142} = 14.380\,\text{V}$$
+
+$$I_{rms} = \frac{V_{rms}}{R_L} = \frac{14.380}{500} = 0.02876\,\text{A} = 28.76\,\text{mA}$$
+
+$$\boxed{V_{rms} \approx 14.38\,\text{V}, \quad I_{rms} \approx 28.76\,\text{mA}}$$
+
+### 3.2.4 Part (c): Ripple Factor and PIV
+
+$$\gamma = \frac{\sqrt{V_{rms}^{2} - V_{dc}^{2}}}{V_{dc}} = \frac{\sqrt{206.78 - 167.52}}{12.943} = \frac{\sqrt{39.26}}{12.943} = \frac{6.266}{12.943}$$
+
+$$\boxed{\gamma \approx 0.484 \approx 0.482}$$
+
+$$\boxed{PIV = 2V_m = 2 \times 20.33 = 40.66\,\text{V}}$$
 
 ---
 
-## 3.5 Derivation: Ripple Factor
+## 3.3 Filter Capacitor Sizing — Worked Example
 
-**AC component (RMS) of the output:**
-$$V_{ac,rms}^2 = V_{rms}^2 - V_{dc}^2$$
+> **[KTU University Exam — June 2024 | Model Question]**
+> A full-wave bridge rectifier with a $C$-filter supplies a load current $I_L = 50\,\text{mA}$ at $V_{dc} = 12\,\text{V}$. The line frequency is $f = 50\,\text{Hz}$. Calculate the minimum filter capacitance to keep the ripple voltage below $1\,\text{V}$ peak-to-peak.
 
-**Ripple Factor:**
-$$\gamma = \frac{V_{ac,rms}}{V_{dc}} = \sqrt{\left(\frac{V_{rms}}{V_{dc}}\right)^2 - 1}$$
+### 3.3.1 Derivation of Filter Capacitor Formula
 
-**For HWR:** $\gamma = \sqrt{(\pi/2)^2 - 1} = \sqrt{2.467 - 1} = \sqrt{1.467} \approx 1.21$
+The filter capacitor charges to the peak voltage $V_m$ and discharges through $R_L$ between successive peaks. The discharge time is approximately $T = 1/(2f)$ for full-wave (since the ripple frequency is $2f$).
 
-**For FWR:** $\gamma = \sqrt{(\pi/(2\sqrt{2}))^2 - 1} = \sqrt{1.11 - 1} = \sqrt{0.11} \approx 0.482$
+Using the small-ripple approximation (linear discharge):
 
-> **Lower ripple factor = smoother DC = better rectifier quality.**
+$$V_{r,\,pp} \approx \frac{I_L}{f_r \cdot C} = \frac{I_L}{2f \cdot C}$$
+
+Solving for $C$:
+
+$$C = \frac{I_L}{2f \cdot V_{r,\,pp}}$$
+
+### 3.3.2 Numerical Calculation
+
+* $I_L = 50 \times 10^{-3}\,\text{A} = 0.05\,\text{A}$
+* $f = 50\,\text{Hz}$ → $2f = 100\,\text{Hz}$
+* $V_{r,\,pp} = 1\,\text{V}$
+
+$$C = \frac{0.05}{100 \times 1} = 5 \times 10^{-4}\,\text{F} = 500\,\mu\text{F}$$
+
+$$\boxed{C_{min} = 500\,\mu\text{F}}$$
+
+**Practical choice:** Use a $1000\,\mu\text{F}$, $25\,\text{V}$ electrolytic capacitor (next standard value above $C_{min}$ with voltage safety margin $\geq 1.5 \times V_{dc}$).
 
 ---
 
-## 3.6 Full Python Implementation — Rectifier Simulator
+## 3.4 Python Implementation — Rectifier Performance Calculator
+
+The following Python program implements the complete parametric analysis of all three rectifier topologies. It is type-annotated, numerically robust, and includes strict error handling for KTU exam-lab validation.
 
 ```python
 """
-KTU GAPHT121 — Module 4: Rectifier Waveform Simulator
-Demonstrates HWR and FWR with optional capacitive filter.
+KTU GAPHT121 — Rectifier Performance Calculator
+Computes DC, RMS, ripple factor, efficiency, PIV, TUF for HWR, FWR (CT), and Bridge.
 """
+from __future__ import annotations
+import math
+from dataclasses import dataclass
+from enum import Enum
+import logging
 
-import numpy as np
-import matplotlib.pyplot as plt
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 
-def simulate_rectifier(
-    Vm: float = 10.0,
-    f: float = 50.0,
-    R_load: float = 1.0e3,
-    C_filter: float | None = None,
-    diode_drop: float = 0.7,
-    topology: str = "bridge",
-) -> dict:
-    """
-    Simulate a single-phase rectifier circuit.
+class RectifierType(Enum):
+    HALF_WAVE = "Half-Wave"
+    FULL_WAVE_CT = "Full-Wave Center-Tapped"
+    FULL_WAVE_BRIDGE = "Full-Wave Bridge"
 
-    Parameters
-    ----------
-    Vm : float
-        Peak amplitude of the input AC voltage (V).
-    f : float
-        Input frequency (Hz).
-    R_load : float
-        Load resistance (Ohms).
-    C_filter : float | None
-        Filter capacitance (F). If None, output is unfiltered.
-    diode_drop : float
-        Forward voltage drop per conducting diode (V).
-    topology : str
-        "half", "center_tapped", or "bridge".
 
-    Returns
-    -------
-    dict with keys: t, v_in, v_out, Vdc, Vrms, ripple_factor, efficiency
-    """
-    # Sampling: 200 points per period
-    t = np.linspace(0, 4 / f, 2000)
-    v_in = Vm * np.sin(2 * np.pi * f * t)
+@dataclass(frozen=True)
+class RectifierInputs:
+    peak_voltage_V: float          # Vm (V)
+    load_resistance_ohm: float     # RL (ohms)
+    line_freq_Hz: float = 50.0     # mains frequency (Hz)
 
-    if topology == "half":
-        # Half-wave: clip negative half-cycles, subtract one diode drop
-        v_out = np.where(v_in > diode_drop, v_in - diode_drop, 0.0)
 
-    elif topology == "center_tapped":
-        # Each half of secondary is Vm/2; two diode drops in path
-        v_half = (Vm / 2) * np.abs(np.sin(2 * np.pi * f * t))
-        v_out = np.where(v_half > 2 * diode_drop, v_half - 2 * diode_drop, 0.0)
+@dataclass(frozen=True)
+class RectifierOutputs:
+    Vdc: float
+    Vrms: float
+    Idc: float
+    Irms: float
+    ripple_factor: float
+    efficiency: float
+    PIV: float
+    TUF: float
+    ripple_freq_Hz: float
 
-    elif topology == "bridge":
-        # Bridge: full absolute value, two diode drops
-        v_abs = np.abs(v_in)
-        v_out = np.where(v_abs > 2 * diode_drop, v_abs - 2 * diode_drop, 0.0)
 
+def compute_rectifier(rtype: RectifierType, inp: RectifierInputs) -> RectifierOutputs:
+    """Return a RectifierOutputs instance for the chosen topology."""
+    if inp.peak_voltage_V <= 0:
+        raise ValueError("Peak voltage Vm must be > 0 V.")
+    if inp.load_resistance_ohm <= 0:
+        raise ValueError("Load resistance RL must be > 0 ohm.")
+    if inp.line_freq_Hz <= 0:
+        raise ValueError("Line frequency must be > 0 Hz.")
+
+    Vm: float = inp.peak_voltage_V
+    RL: float = inp.load_resistance_ohm
+    f: float = inp.line_freq_Hz
+
+    if rtype == RectifierType.HALF_WAVE:
+        Vdc = Vm / math.pi
+        Vrms = Vm / 2.0
+        PIV = Vm
+        TUF = 0.287
+        ripple_f = f
+    elif rtype == RectifierType.FULL_WAVE_CT:
+        Vdc = 2.0 * Vm / math.pi
+        Vrms = Vm / math.sqrt(2.0)
+        PIV = 2.0 * Vm
+        TUF = 0.693
+        ripple_f = 2.0 * f
+    elif rtype == RectifierType.FULL_WAVE_BRIDGE:
+        Vdc = 2.0 * Vm / math.pi
+        Vrms = Vm / math.sqrt(2.0)
+        PIV = Vm
+        TUF = 0.8106
+        ripple_f = 2.0 * f
     else:
-        raise ValueError(f"Unknown topology: {topology!r}")
+        raise ValueError(f"Unknown rectifier type: {rtype}")
 
-    # Optional capacitive filter (simple RC discharge model)
-    if C_filter is not None and C_filter > 0:
-        v_filtered = np.empty_like(v_out)
-        v_cap = 0.0
-        dt = t[1] - t[0]
-        for i, v in enumerate(v_out):
-            if v > v_cap:
-                v_cap = v  # diode charges capacitor
-            else:
-                v_cap -= (v_cap / (R_load * C_filter)) * dt
-            v_filtered[i] = v_cap
-        v_out = v_filtered
+    Idc = Vdc / RL
+    Irms = Vrms / RL
+    ripple_factor = math.sqrt((Vrms / Vdc) ** 2 - 1.0)
+    efficiency = (Vdc / Vrms) ** 2
 
-    # --- Compute DC, RMS, ripple factor, efficiency ---
-    Vdc = float(np.mean(v_out))
-    Vrms = float(np.sqrt(np.mean(v_out ** 2)))
-    Vac_rms = float(np.sqrt(max(Vrms ** 2 - Vdc ** 2, 0.0)))
-    ripple = Vac_rms / Vdc if Vdc > 0 else float("inf")
-    Pdc = Vdc ** 2 / R_load
-    Pac = Vrms ** 2 / R_load
-    eff = (Pdc / Pac) * 100.0 if Pac > 0 else 0.0
-
-    return {
-        "t": t,
-        "v_in": v_in,
-        "v_out": v_out,
-        "Vdc": Vdc,
-        "Vrms": Vrms,
-        "ripple_factor": ripple,
-        "efficiency_percent": eff,
-    }
+    return RectifierOutputs(
+        Vdc=Vdc,
+        Vrms=Vrms,
+        Idc=Idc,
+        Irms=Irms,
+        ripple_factor=ripple_factor,
+        efficiency=efficiency,
+        PIV=PIV,
+        TUF=TUF,
+        ripple_freq_Hz=ripple_f,
+    )
 
 
-def plot_rectifier(result: dict, title: str) -> None:
-    """Plot input vs. output waveform."""
-    plt.figure(figsize=(10, 4))
-    plt.plot(result["t"] * 1000, result["v_in"], "--", label="Input AC", alpha=0.6)
-    plt.plot(result["t"] * 1000, result["v_out"], label="Rectified Output", linewidth=2)
-    plt.axhline(result["Vdc"], color="red", linestyle=":",
-                label=f"Vdc = {result['Vdc']:.2f} V")
-    plt.title(title)
-    plt.xlabel("Time (ms)")
-    plt.ylabel("Voltage (V)")
-    plt.grid(True, alpha=0.3)
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
+def print_report(rtype: RectifierType, out: RectifierOutputs) -> None:
+    logging.info("=== %s Performance Report ===", rtype.value)
+    logging.info("Vdc           = %.3f V", out.Vdc)
+    logging.info("Vrms          = %.3f V", out.Vrms)
+    logging.info("Idc           = %.3f mA", out.Idc * 1e3)
+    logging.info("Irms          = %.3f mA", out.Irms * 1e3)
+    logging.info("Ripple Factor = %.3f", out.ripple_factor)
+    logging.info("Efficiency    = %.2f %%", out.efficiency * 100.0)
+    logging.info("PIV per diode = %.3f V", out.PIV)
+    logging.info("TUF           = %.4f", out.TUF)
+    logging.info("Ripple freq.  = %.1f Hz", out.ripple_freq_Hz)
 
 
-# ---------------- Demonstration ----------------
 if __name__ == "__main__":
-    for topo in ("half", "bridge"):
-        res = simulate_rectifier(Vm=12.0, f=50.0, topology=topo)
-        print(f"--- {topo.upper()} RECTIFIER ---")
-        print(f"  Vdc          = {res['Vdc']:.3f} V")
-        print(f"  Vrms         = {res['Vrms']:.3f} V")
-        print(f"  Ripple       = {res['ripple_factor']:.3f}")
-        print(f"  Efficiency   = {res['efficiency_percent']:.2f} %\n")
-        plot_rectifier(res, f"{topo.title()} Rectifier (Vm = 12 V, f = 50 Hz)")
+    test_input = RectifierInputs(peak_voltage_V=20.33,
+                                 load_resistance_ohm=500.0,
+                                 line_freq_Hz=50.0)
+    for r in RectifierType:
+        try:
+            print_report(r, compute_rectifier(r, test_input))
+        except ValueError as exc:
+            logging.error("Computation failed: %s", exc)
 ```
 
-**Expected Console Output (Ideal, $V_m = 12$ V):**
+**Sample Output (for $V_m = 20.33\,\text{V}$, $R_L = 500\,\Omega$, $f = 50\,\text{Hz}$):**
 
-| Topology | $V_{dc}$ (V) | $V_{rms}$ (V) | Ripple Factor | Efficiency (%) |
-|---|---|---|---|---|
-| Half | 3.82 | 6.00 | 1.21 | 40.53 |
-| Bridge | 7.64 | 8.49 | 0.482 | 81.06 |
+| Topology | $V_{dc}$ (V) | $\gamma$ | $\eta$ (%) | PIV (V) | TUF |
+|---|---|---|---|---|---|
+| Half-Wave | $6.472$ | $1.211$ | $40.53$ | $20.33$ | $0.287$ |
+| Full-Wave CT | $12.943$ | $0.484$ | $81.06$ | $40.66$ | $0.693$ |
+| Full-Wave Bridge | $12.943$ | $0.484$ | $81.06$ | $20.33$ | $0.811$ |
 
+---
+
+## 3.5 Comparative Analysis Table — KTU-Style Reasoning
+
+> **[KTU Exam Style — Application Level]**
+> "Why is the bridge rectifier preferred in modern power supplies despite needing four diodes?"
+
+| Decision Criterion | Center-Tapped FWR | Bridge Rectifier | Winner |
+|---|---|---|---|
+| Transformer cost | Requires center-tap (special winding) | Plain secondary | Bridge |
+| Diode count | 2 | 4 | CT (marginally) |
+| Diode PIV rating | $2V_m$ (high-voltage diodes) | $V_m$ (low-voltage diodes) | Bridge |
+| Conduction loss per cycle | $1 \cdot V_D$ drop | $2 \cdot V_D$ drop | CT (low-voltage) |
+| TUF (transformer usage) | $0.693$ | $\mathbf{0.811}$ | Bridge |
+| Suitability for high-current, low-voltage | Poor | Excellent | Bridge |
+| Suitability for high-voltage, low-current | Excellent | Marginal | CT |
+
+**Conclusion:** The bridge rectifier dominates nearly all modern SMPS and linear DC power supply designs because its higher TUF means the transformer is smaller, lighter, and cheaper for the same delivered DC power.
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 # Structural Diagrams & Schematics
 
-## 4.1 Block Architecture — Rectifier Subsystem
-
-The figure below maps the **end-to-end signal flow** of a complete rectifier-based DC power supply, from AC mains to regulated DC output. Each block is a self-contained stage with well-defined inputs and outputs.
+## 4.1 Mermaid Block Diagram — Half-Wave Rectifier Functional Flow
 
 ```mermaid
 flowchart LR
-    MAINS[AC Mains 230V 50Hz] --> XFMR[Step Down Transformer]
-    XFMR --> RECT[Rectifier Stage HWR or FWR]
-    RECT --> FILT[Filter Capacitor RC or LC]
-    FILT --> REG[Voltage Regulator IC]
-    REG --> LOAD[DC Load R_L]
-
-    RECT -. diode .-> D1[Diode D1]
-    RECT -. diode .-> D2[Diode D2]
-    RECT -. diode .-> D3[Diode D3]
-    RECT -. diode .-> D4[Diode D4]
-
-    subgraph PowerStage[Power Conversion Stage]
-        RECT
-        FILT
-    end
-
-    subgraph Feedback[Regulation Loop]
-        REG
-    end
+    ACsrc[AC Voltage Source] --> Trans[Step Down Transformer]
+    Trans --> Node1[Junction A]
+    Node1 --> Diode[Diode D forward biased on positive half]
+    Diode --> Rload[Load Resistor RL]
+    Rload --> Gnd1[Ground Return]
+    Node1 -.Reverse path.-> Off[Diode D reverse biased on negative half]
+    Off -.No current.-> Rload
+    Rload --> VoutH[Output Vout pulsating DC half wave]
+    VoutH --> FilterH[Smoothing Capacitor C optional]
+    FilterH --> DCHalf[Filtered DC Output]
 ```
 
----
-
-## 4.2 Bridge Rectifier — Conduction Path State Machine
-
-The bridge rectifier has **two distinct conduction states** per input cycle. This state diagram shows the active diode pair for each half-cycle.
-
-```mermaid
-stateDiagram-v2
-    [*] --> PositiveHalf
-    PositiveHalf: Positive Half Cycle<br/>Top terminal positive
-    PositiveHalf --> NegativeHalf : t crosses pi
-    NegativeHalf: Negative Half Cycle<br/>Bottom terminal positive
-    NegativeHalf --> PositiveHalf : t crosses 2pi
-
-    PositiveHalf --> D1D3 : D1 and D3 forward biased
-    D1D3: Conduction Path<br/>D1 and D3 ON<br/>D2 and D4 OFF
-    D1D3 --> NegativeHalf : cycle continues
-
-    NegativeHalf --> D2D4 : D2 and D4 forward biased
-    D2D4: Conduction Path<br/>D2 and D4 ON<br/>D1 and D3 OFF
-    D2D4 --> PositiveHalf : cycle continues
-```
-
----
-
-## 4.3 Sequential Processing Topology — Half-Wave vs Full-Wave
-
-This diagram contrasts the **processing topology** of the two rectifier families, showing how many diodes are in the conduction path at any given instant.
+## 4.2 Mermaid Block Diagram — Full-Wave Center-Tapped Rectifier
 
 ```mermaid
 flowchart TB
-    subgraph HWR[Half Wave Rectifier]
-        direction LR
-        H_AC[AC Source] --> H_D[Diode D1]
-        H_D --> H_RL[Load R_L]
-        H_RL --> H_RET[Return Path]
-        H_RET --> H_AC
-    end
-
-    subgraph FWR_BR[Full Wave Bridge Rectifier]
-        direction LR
-        F_AC[AC Source] --> F_NODE_TOP[Top Node]
-        F_NODE_TOP --> F_D1[D1]
-        F_D1 --> F_RL[Load R_L]
-        F_NODE_TOP --> F_D2[D2]
-        F_RL --> F_NODE_BOT[Bottom Node]
-        F_NODE_BOT --> F_D3[D3]
-        F_NODE_BOT --> F_D4[D4]
-        F_D3 --> F_AC
-        F_D4 --> F_AC
-    end
-
-    HWR ~~~ FWR_BR
+    ACsrc2[AC Mains] --> Trans2[Center Tapped Transformer]
+    Trans2 --> End1[Secondary End 1]
+    Trans2 --> Center[Center Tap CT]
+    Trans2 --> End2[Secondary End 2]
+    End1 --> D1[Diode D1]
+    End2 --> D2[Diode D2]
+    D1 --> LoadTop[Top of Load RL]
+    D2 --> LoadTop
+    Center --> LoadBot[Bottom of Load RL]
+    LoadTop --> FilterF[LC Pi Filter optional]
+    FilterF --> Dcout[Filtered Full Wave DC Output]
+    LoadBot --> Return[Return to CT]
 ```
 
----
-
-## 4.4 Waveform Timing Diagram (Block Representation)
+## 4.3 Mermaid Block Diagram — Bridge Rectifier Sequence
 
 ```mermaid
-flowchart TB
-    subgraph WF[Waveform Timing Analysis]
-        direction TB
-        A[Input AC vi = Vm sin wt] --> B[Half Wave Rectifier]
-        A --> C[Full Wave Rectifier]
-        B --> D[Output vo single lobe per cycle]
-        C --> E[Output vo two lobes per cycle]
-        D --> F[Frequency = f]
-        E --> G[Frequency = 2f]
-    end
+flowchart LR
+    ACsrc3[AC Source] --> Trans3[Plain Step Down Transformer]
+    Trans3 --> NodeA[Junction A]
+    Trans3 --> NodeB[Junction B]
+    NodeA --> Da[Diode D1 anode]
+    Da --> Dcath1[D1 cathode joins D2 cathode]
+    Dcath1 --> Rout[Positive DC output to RL]
+    NodeB --> Db[Diode D3 anode]
+    Db --> Dcath2[D3 cathode joins D4 cathode]
+    Dcath2 --> Rneg[Negative DC output from RL]
+    NodeA --> Dc[Diode D4 anode]
+    Dc --> Dcath2
+    NodeB --> Dd[Diode D2 anode]
+    Dd --> Dcath1
+    Rout --> Rload[Load RL]
+    Rload --> Rneg
 ```
+
+## 4.4 Mermaid Waveform Topology — Sequential Processing
+
+```mermaid
+flowchart TD
+    subgraph Input_Stage[Input Stage]
+        Sin[Pure Sinusoid V in t equals Vm sin omega t]
+    end
+    subgraph HWR_Path[Half Wave Path]
+        H1[Diode Clipping]
+        H2[Output Vout half sine pulses with zero gaps]
+    end
+    subgraph FWR_Path[Full Wave Path]
+        F1[Dual Diode Steering]
+        F2[Output Vout equals absolute value of sin with no gaps]
+    end
+    subgraph Filter_Stage[Filter Stage]
+        Cap1[Shunt Capacitor C]
+        Cap2[Smoothed DC with small ripple]
+    end
+    Sin --> H1
+    H1 --> H2
+    Sin --> F1
+    F1 --> F2
+    H2 --> Cap1
+    F2 --> Cap1
+    Cap1 --> Cap2
+```
+
+## 4.5 Pin Configuration Table — Diode 1N4007 (Common Lab Component)
+
+| Pin Number | Label | Function | Polarity in HWR/FWR |
+|---|---|---|---|
+| 1 | Anode (A) | Current enters here | Connected to AC source side |
+| 2 | Cathode (K) — marked with white/silver stripe | Current exits here | Connected to load positive side |
+| Heat-sink tab | Cathode (electrically tied to pin 2) | Mechanical mounting | Bolted to chassis if needed |
+
+**Key Electrical Ratings of 1N4007 (used in typical KTU labs):**
+* Maximum repetitive peak reverse voltage $V_{RRM} = 1000\,\text{V}$
+* Maximum RMS voltage $V_{RMS} = 700\,\text{V}$
+* Average rectified forward current $I_{F(AV)} = 1.0\,\text{A}$
+* Forward voltage drop $V_F \approx 0.93\,\text{V}$ at $1\,\text{A}$
+* Operating temperature range: $-65^{\circ}\text{C}$ to $+175^{\circ}\text{C}$
 
 > [!TIP]
-> **Diagram Reading Tip:** The fundamental diagnostic difference between HWR and FWR is the **ripple frequency**: for a 50 Hz mains input, HWR produces 50 Hz ripple while FWR produces **100 Hz** ripple. This makes FWR filtering much easier (smaller capacitor required for the same ripple amplitude).
-
+> **Lab Tip:** When wiring the bridge rectifier, always orient the four diodes so the **stripe (cathode)** of two adjacent diodes points toward the same DC output terminal. Reversing one diode converts the bridge into a short-circuit during one half-cycle — a common wiring error that blows fuses.
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-> [!IMPORTANT]
-> **Bloom's Taxonomy Mapping (Revised):**
-> * **Remember / Understand:** Definitions, symbols, basic formulas.
-> * **Apply:** Direct numerical substitution into formulas.
-> * **Analyze:** Derivation, comparison, multi-step problem solving.
-
 ---
 
-## 5.1 Part A — Short Answer Questions (3 Marks Each)
+## Part A Questions (3 Marks Each)
 
-### Question 1: Half-Wave Rectifier Definition `[KTU University Exam – July 2024]`
-
-**Q: Define a half-wave rectifier. Sketch its circuit diagram and input-output waveforms.**
+### Question A1
+> **[KTU University Exam — Dec 2022 | CO2 | Remember]**
+> **Define a rectifier. Mention its two main types.**
 
 **Model Answer (3 Marks):**
-
-A half-wave rectifier is an electronic circuit that converts an AC input voltage into a **unidirectional pulsating DC voltage** by allowing conduction during **only one half-cycle** (typically the positive half) of the input waveform. It consists of a **transformer**, a **single p-n junction diode** $D$, and a **load resistor** $R_L$ all connected in series.
-
-During the **positive half-cycle**, the diode is forward-biased and conducts, producing an output voltage $v_o = v_i$ across $R_L$. During the **negative half-cycle**, the diode is reverse-biased and does not conduct, so $v_o = 0$.
-
-The fundamental performance parameters are:
-
-$$V_{dc} = \frac{V_m}{\pi}, \quad V_{rms} = \frac{V_m}{2}, \quad \eta_{max} = 40.6\%, \quad \gamma = 1.21$$
-
-> **[Stating definition with circuit: 2 Marks]**
-> **[Key formula values: 1 Mark]**
+A **rectifier** is an electronic circuit that converts alternating current (AC) into direct current (DC) by allowing current to flow in only one direction through the use of one or more diodes.
+The two main types are:
+1. **Half-Wave Rectifier (HWR)** — uses one diode and conducts only during one half of the AC cycle.
+2. **Full-Wave Rectifier (FWR)** — uses two or four diodes and conducts during both halves of the AC cycle. *[1 Mark for definition, 1 Mark for HWR, 1 Mark for FWR]*
 
 ---
 
-### Question 2: Rectifier Performance Metrics `[KTU University Exam – Dec 2023]`
-
-**Q: Define the following terms with respect to rectifiers: (i) Ripple Factor, (ii) Rectification Efficiency, (iii) Peak Inverse Voltage.**
+### Question A2
+> **[KTU University Exam — July 2023 | CO2 | Understand]**
+> **Define ripple factor. What is its ideal value and why is a low value desirable?**
 
 **Model Answer (3 Marks):**
+The **ripple factor** $\gamma$ is defined as the ratio of the RMS value of the AC component (ripple) to the DC component in the rectifier output:
 
-**(i) Ripple Factor ($\gamma$):** It is the ratio of the RMS value of the AC component (ripple) present in the output to the DC (average) component. A lower ripple factor indicates a smoother DC output.
+$$\gamma = \frac{V_{ac,\,rms}}{V_{dc}} = \frac{\sqrt{V_{rms}^{2} - V_{dc}^{2}}}{V_{dc}}$$
 
-$$\gamma = \frac{V_{ac,rms}}{V_{dc}} = \sqrt{\left(\frac{V_{rms}}{V_{dc}}\right)^2 - 1}$$
-
-For HWR, $\gamma = 1.21$; for FWR, $\gamma = 0.482$.
-
-**(ii) Rectification Efficiency ($\eta$):** It is the ratio of DC output power delivered to the load to the AC input power drawn from the source. It measures how effectively the rectifier converts AC to DC.
-
-$$\eta = \frac{P_{dc}}{P_{ac}} \times 100\%$$
-
-For HWR, $\eta_{max} = 40.6\%$; for FWR, $\eta_{max} = 81.2\%$.
-
-**(iii) Peak Inverse Voltage (PIV):** It is the maximum reverse-bias voltage that a non-conducting diode in the rectifier must withstand during its OFF state without breaking down. For a bridge rectifier, PIV $= V_m$; for a center-tapped FWR, PIV $= 2V_m$.
-
-> **[Definition of each term: 0.5 Marks × 3 = 1.5 Marks]**
-> **[Formula/Value for each: 0.5 Marks × 3 = 1.5 Marks]**
+Its ideal value is **zero** (pure DC with no AC component). A low ripple factor is desirable because:
+* It indicates a smoother, more stable DC supply.
+* It reduces hum in audio circuits and noise in sensitive analog/digital electronics.
+* It reduces heating in load components due to AC ripple currents. *[1 Mark for definition with formula, 1 Mark for ideal value, 1 Mark for desirability]*
 
 ---
 
-## 5.2 Part B — Long Answer Questions (14 Marks Each, Internal Choice)
+## Part B Question — Internal Choice (14 Marks)
 
-### Question A: Full-Wave Bridge Rectifier — Full Analysis
-
-**[KTU University Exam – July 2024] | CO1, CO2 | Apply + Analyze | 14 Marks**
-
-**Q: (a)** With a neat circuit diagram, explain the working of a **full-wave bridge rectifier**. Draw the input and output waveforms. State the PIV rating required for each diode. **[7 Marks]**
-
-**(b)** For a full-wave bridge rectifier, derive expressions for (i) DC output voltage $V_{dc}$, (ii) RMS output voltage $V_{rms}$, (iii) Rectification Efficiency $\eta$, and (iv) Ripple Factor $\gamma$. Show that $\eta_{max} = 81.2\%$. **[7 Marks]**
+### Question B (Module 4 Choice)
+> **[KTU University Exam — June 2024 | CO2 | Apply / Analyse]**
+> *Answer any ONE of the following:*
 
 ---
 
-**Model Solution:**
+### **Question B-A (14 Marks)**
 
-### Part (a) — Working Principle [7 Marks]
+> **(a)** With a neat circuit diagram, explain the working of a **full-wave center-tapped rectifier**. Draw the input and output waveforms. **[7 Marks]**
 
-**Circuit Description:**
-A bridge rectifier uses **four diodes** $D_1, D_2, D_3, D_4$ connected in a bridge configuration across the secondary of a transformer and the load resistor $R_L$.
+**Model Answer Structure (Valuation Key):**
 
-**Working — Positive Half-Cycle [2 Marks]:**
-The upper terminal of the secondary is positive. Current flows through $D_1 \rightarrow R_L \rightarrow D_3 \rightarrow$ back to the source. Diodes $D_1$ and $D_3$ are forward biased; $D_2$ and $D_4$ are reverse biased. Current through $R_L$ is from top to bottom.
+**[Circuit diagram and labeling: 2 Marks]**
+The circuit consists of a center-tapped secondary transformer, two diodes $D_1$ and $D_2$ with their cathodes joined together and connected to the top of the load resistor $R_L$. The bottom of $R_L$ returns to the center tap.
 
-**Working — Negative Half-Cycle [2 Marks]:**
-The lower terminal of the secondary is positive. Current flows through $D_2 \rightarrow R_L \rightarrow D_4 \rightarrow$ back to the source. Diodes $D_2$ and $D_4$ are forward biased; $D_1$ and $D_3$ are reverse biased. Current through $R_L$ is **still from top to bottom** (same direction as before).
+**[Working explanation: 3 Marks]**
+* **Positive half-cycle:** The upper end of the secondary is positive with respect to the center tap. Diode $D_1$ becomes forward-biased and conducts, while $D_2$ is reverse-biased. Conventional current flows from the center tap through $R_L$ (top to bottom) and back through $D_1$ to the upper end of the secondary.
+* **Negative half-cycle:** The polarities reverse. $D_2$ becomes forward-biased and conducts, while $D_1$ is reverse-biased. Current again flows through $R_L$ in the **same direction** (top to bottom), now returning through $D_2$ to the lower end of the secondary.
+* Since current through $R_L$ is unidirectional during both halves, the output is a **pulsating DC** with **twice the input frequency** (ripple frequency = $2f$).
 
-**PIV Calculation [2 Marks]:**
-When $D_1$ and $D_3$ are conducting, $D_2$ and $D_4$ are OFF. The voltage across the OFF diode (say $D_2$) is the sum of the voltage across $R_L$ (which equals $V_m$ approximately) and the drop across $D_1$ (which is $\approx 0$). Thus, PIV $= V_m$.
-
-**Waveform Drawing [1 Mark]:**
-The output is a series of positive humps, all above the zero axis, repeating at **twice** the input frequency.
-
-> **Mark Distribution:**
-> * Circuit diagram: 1 Mark
-> * Positive half-cycle explanation: 2 Marks
-> * Negative half-cycle explanation: 2 Marks
-> * PIV derivation: 1 Mark
-> * Waveform: 1 Mark
+**[Input/Output waveform sketch: 2 Marks]**
+A sinusoidal input wave is drawn. For the output, both half-cycles are shown as positive humps, with the negative halves inverted upward. The output peaks equal $V_m$ (peak of half-secondary) and there are no zero gaps.
 
 ---
 
-### Part (b) — Derivations [7 Marks]
+> **(b)** Derive expressions for **DC output voltage, RMS output voltage, ripple factor, and rectification efficiency** of a full-wave center-tapped rectifier. Compare its performance with a half-wave rectifier. **[7 Marks]**
 
-**(i) DC Output Voltage [2 Marks]:**
+**Model Answer Structure (Valuation Key):**
 
-The output voltage is $v_o = V_m \sin(\omega t)$ for the positive half and $v_o = V_m \sin(\omega t - \pi) = -V_m \sin(\omega t - \pi)$ reflected as positive for the negative half. The average over one cycle:
+**[DC output voltage derivation: 2 Marks]**
+For $V_{out} = V_m \sin(\omega t)$ over $[0, \pi]$ and repeated:
+$$V_{dc} = \frac{1}{\pi}\int_{0}^{\pi} V_m \sin\theta\, d\theta = \frac{2V_m}{\pi} \approx 0.636\,V_m$$
 
-$$V_{dc} = \frac{1}{\pi} \int_0^{\pi} V_m \sin(\theta) \, d\theta = \frac{2V_m}{\pi}$$
+**[RMS output voltage derivation: 2 Marks]**
+$$V_{rms}^{2} = \frac{1}{\pi}\int_{0}^{\pi} V_m^{2}\sin^{2}\theta\, d\theta = \frac{V_m^{2}}{2} \;\Rightarrow\; V_{rms} = \frac{V_m}{\sqrt{2}} \approx 0.707\,V_m$$
 
-**[Setting up integral: 1 Mark] [Final result: 1 Mark]**
+**[Ripple factor and efficiency derivation: 2 Marks]**
+$$\gamma = \sqrt{\frac{V_{rms}^{2}}{V_{dc}^{2}} - 1} = \sqrt{\frac{\pi^{2}}{8} - 1} \approx 0.482$$
+$$\eta = \frac{V_{dc}^{2}}{V_{rms}^{2}} = \frac{8}{\pi^{2}} \approx 81.2\%$$
 
-**(ii) RMS Output Voltage [1 Mark]:**
+**[Comparison table: 1 Mark]**
 
-$$V_{rms}^2 = \frac{1}{\pi} \int_0^{\pi} (V_m \sin \theta)^2 \, d\theta = \frac{V_m^2}{2} \quad \Rightarrow \quad V_{rms} = \frac{V_m}{\sqrt{2}}$$
-
-**(iii) Rectification Efficiency [2 Marks]:**
-
-$$P_{dc} = \frac{V_{dc}^2}{R_L} = \frac{4 V_m^2}{\pi^2 R_L}$$
-
-$$P_{ac} = \frac{V_{rms}^2}{R_L} = \frac{V_m^2}{2 R_L}$$
-
-$$\eta = \frac{P_{dc}}{P_{ac}} = \frac{4V_m^2 / (\pi^2 R_L)}{V_m^2 / (2 R_L)} = \frac{8}{\pi^2} = 0.8106 = 81.2\%$$
-
-**[Expressing $P_{dc}$ and $P_{ac}$: 1 Mark] [Final efficiency: 1 Mark]**
-
-**(iv) Ripple Factor [2 Marks]:**
-
-$$V_{ac,rms}^2 = V_{rms}^2 - V_{dc}^2 = \frac{V_m^2}{2} - \frac{4V_m^2}{\pi^2} = V_m^2 \left(\frac{1}{2} - \frac{4}{\pi^2}\right)$$
-
-$$\gamma = \frac{V_{ac,rms}}{V_{dc}} = \frac{V_m \sqrt{1/2 - 4/\pi^2}}{2V_m / \pi} = \frac{\pi}{2} \sqrt{\frac{1}{2} - \frac{4}{\pi^2}}$$
-
-$$\boxed{\gamma \approx 0.482}$$
-
-**[Subtraction step: 1 Mark] [Final square root simplification: 1 Mark]**
+| Parameter | HWR | FWR (CT) | Improvement |
+|---|---|---|---|
+| $V_{dc}$ | $V_m/\pi$ | $2V_m/\pi$ | Doubled |
+| $\gamma$ | $1.21$ | $0.482$ | $\sim 2.5\times$ smoother |
+| $\eta$ | $40.6\,\%$ | $81.2\,\%$ | Doubled |
+| PIV | $V_m$ | $2V_m$ | Higher stress on diode |
+| TUF | $0.287$ | $0.693$ | Better transformer usage |
 
 ---
 
-### Question B: Half-Wave Rectifier — Numerical Problem
+### **Question B-B (14 Marks)** *(Alternative Choice)*
 
-**[KTU University Exam – Dec 2023] | CO1, CO2 | Apply + Analyze | 14 Marks]**
+> **(a)** Explain with a circuit diagram the working of a **bridge rectifier**. Why is it preferred over a center-tapped full-wave rectifier in most modern power supplies? **[7 Marks]**
 
-**Q: (a)** A half-wave rectifier is supplied by a $50 \text{ Hz}$ sinusoidal source of peak voltage $V_m = 50 \text{ V}$ across a load resistance $R_L = 100 \, \Omega$. Calculate the (i) DC output voltage, (ii) RMS output voltage, (iii) DC power delivered to the load, and (iv) Rectification Efficiency. Assume an ideal diode. **[7 Marks]**
+**Model Answer Structure (Valuation Key):**
 
-**(b)** A full-wave center-tapped rectifier uses a transformer with a secondary voltage of $20 \text{ V}_{rms}$ on each half. If the load resistance is $R_L = 50 \, \Omega$ and the diode forward resistance is $R_f = 1 \, \Omega$, find the (i) DC output voltage, (ii) RMS output voltage, (iii) DC power, and (iv) Rectification Efficiency. **[7 Marks]**
+**[Bridge circuit diagram with four diodes in diamond: 2 Marks]**
+Show the AC source feeding the left and right corners of the bridge. The top corner is the positive DC output (cathodes of $D_1$ and $D_2$), and the bottom corner is the negative DC output (anodes of $D_3$ and $D_4$).
 
----
+**[Working — positive half-cycle: 2 Marks]**
+The left AC terminal goes positive. Current flows through $D_1$ (forward biased) into the positive DC rail, through the load, returns via the negative DC rail, and completes the circuit through $D_3$ (forward biased) back to the right AC terminal. Diodes $D_2$ and $D_4$ are reverse-biased.
 
-**Model Solution:**
+**[Working — negative half-cycle: 2 Marks]**
+Polarity reverses. $D_2$ and $D_4$ conduct; $D_1$ and $D_3$ are reverse-biased. Current through the load remains in the **same direction**.
 
-### Part (a) — Half-Wave Numerical [7 Marks]
-
-Given: $V_m = 50 \text{ V}$, $f = 50 \text{ Hz}$, $R_L = 100 \, \Omega$, ideal diode ($R_f = 0$).
-
-**(i) DC Output Voltage [1.5 Marks]:**
-$$V_{dc} = \frac{V_m}{\pi} = \frac{50}{3.1416} = 15.92 \text{ V}$$
-
-**(ii) RMS Output Voltage [1.5 Marks]:**
-$$V_{rms} = \frac{V_m}{2} = \frac{50}{2} = 25.0 \text{ V}$$
-
-**(iii) DC Power Delivered to Load [2 Marks]:**
-$$P_{dc} = \frac{V_{dc}^2}{R_L} = \frac{(15.92)^2}{100} = \frac{253.4}{100} = 2.534 \text{ W}$$
-
-**(iv) Rectification Efficiency [2 Marks]:**
-
-$$P_{ac} = \frac{V_{rms}^2}{R_L} = \frac{(25.0)^2}{100} = \frac{625}{100} = 6.25 \text{ W}$$
-
-$$\eta = \frac{P_{dc}}{P_{ac}} \times 100\% = \frac{2.534}{6.25} \times 100\% = 40.53\%$$
-
-> **[Correct formula substitution: 1.5 Marks per sub-part × 4 parts = 6 Marks]**
-> **[Final numerical value: 0.5 Marks per sub-part × 4 parts = 1 Mark]**
+**[Justification of preference: 1 Mark]**
+* **No center tap required** → simpler, cheaper, lighter transformer.
+* **Higher TUF** ($0.81$ vs $0.69$) → better utilization of transformer VA rating.
+* **Lower PIV per diode** ($V_m$ vs $2V_m$) → cheaper diodes can be used.
 
 ---
 
-### Part (b) — Center-Tapped Full-Wave with $R_f$ [7 Marks]
+> **(b)** A full-wave bridge rectifier operates from a $50\,\text{Hz}$, $230\,\text{V}$ mains through a $5:1$ step-down transformer. The load resistance is $R_L = 100\,\Omega$. Calculate the DC output voltage, DC load current, RMS output voltage, ripple factor, and rectification efficiency. Also calculate the minimum filter capacitance to keep ripple below $2\,\text{V}$ peak-to-peak when a smoothing capacitor is added. **[7 Marks]**
 
-Given: Secondary voltage per half $= 20 \text{ V}_{rms}$, so $V_m = 20\sqrt{2} = 28.28 \text{ V}$ per half. $R_L = 50 \, \Omega$, $R_f = 1 \, \Omega$.
+**Model Answer Structure (Valuation Key):**
 
-**Total resistance in the conducting path** (one diode + load): $R_T = R_f + R_L = 51 \, \Omega$.
+**[Pre-calculation — Vm: 1 Mark]**
+$$V_{s,\,rms} = 230/5 = 46\,\text{V} \quad\Rightarrow\quad V_m = \sqrt{2}\times 46 = 65.05\,\text{V}$$
 
-**(i) DC Output Voltage [1.5 Marks]:**
+**[DC output and load current: 1 Mark]**
+$$V_{dc} = \frac{2V_m}{\pi} = \frac{2\times 65.05}{3.1416} = 41.41\,\text{V}$$
+$$I_{dc} = \frac{V_{dc}}{R_L} = \frac{41.41}{100} = 0.4141\,\text{A} = 414.1\,\text{mA}$$
 
-The peak voltage reaching the load (after diode drop) is $V_m' = V_m - V_d \approx 28.28 \text{ V}$ (ignoring $V_d$ for ideal-ish diode).
+**[RMS output and ripple factor: 1 Mark]**
+$$V_{rms} = \frac{V_m}{\sqrt{2}} = \frac{65.05}{1.4142} = 46.00\,\text{V}$$
+$$\gamma = \sqrt{\frac{V_{rms}^{2}}{V_{dc}^{2}} - 1} = \sqrt{\frac{46^{2}}{41.41^{2}} - 1} = \sqrt{1.2338 - 1} = \sqrt{0.2338} = 0.4835$$
 
-$$V_{dc} = \frac{2V_m'}{\pi} = \frac{2 \times 28.28}{\pi} = \frac{56.56}{3.1416} = 18.0 \text{ V}$$
+**[Efficiency: 1 Mark]**
+$$\eta = \frac{V_{dc}^{2}}{V_{rms}^{2}}\times 100\% = \frac{41.41^{2}}{46.00^{2}}\times 100\% = \frac{1714.79}{2116.0}\times 100\% = 81.04\%$$
 
-**(ii) RMS Output Voltage [1.5 Marks]:**
-$$V_{rms} = \frac{V_m'}{\sqrt{2}} = \frac{28.28}{1.414} = 20.0 \text{ V}$$
+**[Filter capacitor: 2 Marks]**
+Using $C = \dfrac{I_{dc}}{2f \cdot V_{r,\,pp}} = \dfrac{0.4141}{2 \times 50 \times 2} = \dfrac{0.4141}{200}$
+$$\boxed{C = 2.07\times 10^{-3}\,\text{F} \approx 2070\,\mu\text{F}}$$
+Practical choice: $2200\,\mu\text{F}$, $63\,\text{V}$ electrolytic.
 
-**(iii) DC Power [2 Marks]:**
-$$P_{dc} = \frac{V_{dc}^2}{R_L} = \frac{(18.0)^2}{50} = \frac{324}{50} = 6.48 \text{ W}$$
-
-**(iv) Rectification Efficiency (with $R_f$) [2 Marks]:**
-
-$$\eta = \frac{81.2}{1 + (2R_f / R_L)} = \frac{81.2}{1 + (2 \times 1 / 50)} = \frac{81.2}{1.04} = 78.08\%$$
-
-> **Alternative direct derivation:**
-> $P_{ac} = V_{rms}^2 / (R_f + R_L) = (20)^2 / 51 = 400 / 51 = 7.84 \text{ W}$
-> $\eta = P_{dc} / P_{ac} = 6.48 / 7.84 = 82.65\%$ *(slight discrepancy due to rounding in the simplified formula)*
-
-> **[Stating total resistance: 1 Mark]**
-> **[Applying efficiency formula with $R_f$ correction: 1 Mark]**
+**[Final boxed values: 1 Mark]**
+$$V_{dc}=41.41\,\text{V},\ I_{dc}=414.1\,\text{mA},\ V_{rms}=46.0\,\text{V},\ \gamma=0.484,\ \eta=81.04\%,\ C_{min}\approx 2070\,\mu\text{F}$$
 
 ---
 
-## 5.3 Examiner's Valuation Warning
+## KTU Examiner's Valuation Warning
 
 > [!WARNING]
-> **Common Pitfalls — Where Students Lose Marks:**
+> **Common Pitfalls — Where KTU Students Lose Marks:**
 >
-> 1. **Confusing RMS of input with RMS of output:** For a HWR, the **input** RMS is $V_{rms,in} = V_m/\sqrt{2}$, but the **output** RMS is $V_{rms,out} = V_m/2$. The factor of 2 (not $\sqrt{2}$) catches many students.
-> 2. **Forgetting the 2 in PIV for center-tapped FWR:** PIV $= 2V_m$, not $V_m$. The entire secondary voltage appears across the OFF diode.
-> 3. **Missing the $R_f$ term in efficiency:** If the question states $R_f \neq 0$, the max efficiency formula (40.6% or 81.2%) **does NOT apply** — you must derive with $R_f$.
-> 4. **Unit mistakes in $P_{dc}$ and $P_{ac}$:** Always use $R_L$ (load only) for $P_{dc}$, and $(R_f + R_L)$ for $P_{ac}$ (input sees both).
-> 5. **Ripple frequency mix-up:** HWR ripple frequency $= f$; FWR ripple frequency $= 2f$. This is a 1-mark question often missed.
-> 6. **Skipping the waveform drawing:** KTU board examiners **always** allocate at least 1 mark for the input-output waveform. Always draw it.
-> 7. **Writing $\pi = 3.14$ instead of keeping the symbol:** Most KTU solutions retain $\pi$ in the final answer unless a numerical value is explicitly demanded.
+> 1. **Forgetting to double the integral limits for full-wave.** For FWR, the period is $\pi$ (not $2\pi$) because both halves repeat. Writing $\frac{1}{2\pi}$ instead of $\frac{1}{\pi}$ will cost you **2 marks** immediately.
+>
+> 2. **Mixing $V_m$ with $V_{rms}$.** The peak $V_m = \sqrt{2}\cdot V_{rms}$. If the problem states $230\,\text{V}$ supply, this is **RMS**, not peak. Forgetting the $\sqrt{2}$ factor gives wrong answers.
+>
+> 3. **Confusing PIV definitions.** For HWR, PIV = $V_m$. For center-tapped FWR, PIV = $2V_m$ (NOT $V_m$!). For bridge FWR, PIV = $V_m$ (NOT $2V_m$!). Board examiners **specifically test** this distinction.
+>
+> 4. **Skipping the unit.** Always write $\text{V}$, $\text{mA}$, $\mu\text{F}$. Numerical answers without units lose partial marks.
+>
+> 5. **Drawing waveforms without labeling axes.** A waveform sketch without $V_{in}$, $V_{out}$, $\omega t$, $V_m$, and time-period $T$ markings is considered incomplete — **lose 1 mark**.
+>
+> 6. **Forgetting diode voltage drop.** In practical numericals, $V_D \approx 0.7\,\text{V}$ (silicon) must be subtracted from the peak. If not mentioned in the problem, assume ideal diode unless explicitly stated.
+>
+> 7. **Sign error in PIV for center-tapped FWR.** Many students write PIV = $V_m$ for FWR by analogy with HWR. The correct answer is $PIV = 2V_m$ because when $D_1$ conducts, $D_2$ sees the full secondary voltage ($2V_m$ peak) plus the load voltage.
 
 ---
 
-## 5.4 Topic Recap & Important Things to Remember
+## Topic Recap & Important Things to Remember
 
-> [!IMPORTANT]
-> **Rapid Revision Checklist — Master These Before the Exam**
+> [!TIP]
+> **Rapid Revision Checklist — Read this 30 minutes before entering the KTU exam hall.**
 
-### Core Concepts
-- **Rectifier:** Converts bidirectional AC into unidirectional pulsating DC using the unidirectional conduction of p-n junction diodes.
-- **HWR:** Uses 1 diode, conducts on 1 half-cycle, $V_{dc} = V_m/\pi$, $\eta = 40.6\%$, $\gamma = 1.21$, PIV $= V_m$.
-- **FWR (Bridge):** Uses 4 diodes, conducts on both half-cycles, $V_{dc} = 2V_m/\pi$, $\eta = 81.2\%$, $\gamma = 0.482$, PIV $= V_m$.
-- **FWR (Center-Tapped):** Uses 2 diodes, $V_{dc} = 2V_m/\pi$, PIV $= 2V_m$, requires center-tapped transformer.
+- **Rectifier** = AC-to-DC converter using unidirectional conduction of $p\text{-}n$ diodes.
+- **HWR**: 1 diode, $V_{dc} = V_m/\pi$, $\gamma = 1.21$, $\eta = 40.6\%$, $PIV = V_m$, $TUF = 0.287$, ripple freq = $f$.
+- **FWR (Center-Tapped)**: 2 diodes + center-tap, $V_{dc} = 2V_m/\pi$, $\gamma = 0.482$, $\eta = 81.2\%$, $PIV = 2V_m$, $TUF = 0.693$, ripple freq = $2f$.
+- **FWR (Bridge)**: 4 diodes, no center-tap, $V_{dc} = 2V_m/\pi$, $\gamma = 0.482$, $\eta = 81.2\%$, $PIV = V_m$, $TUF = 0.811$, ripple freq = $2f$.
+- **Ripple factor formula:** $\gamma = \sqrt{(V_{rms}/V_{dc})^{2} - 1}$.
+- **Efficiency formula:** $\eta = (V_{dc}/V_{rms})^{2} = (P_{dc}/P_{ac}) \times 100\%$.
+- **PIV** = maximum reverse voltage a non-conducting diode must withstand.
+- **TUF** = ratio of DC power delivered to the load to the VA rating of the transformer secondary.
+- **Form factor** $K_f = V_{rms}/V_{dc} = \pi/2$ (HWR) and $\pi/(2\sqrt{2})$ (FWR).
+- **Peak factor** $K_p = V_m/V_{rms} = 2$ (HWR) and $\sqrt{2}$ (FWR).
+- **Filter capacitor** for FWR: $C = I_{dc} / (2f \cdot V_{r,\,pp})$; for HWR: $C = I_{dc} / (f \cdot V_{r,\,pp})$.
+- **Diode forward drop** (silicon): $V_F \approx 0.7\,\text{V}$; for bridge, two drops in series = $1.4\,\text{V}$ total.
+- **Diode saturation current** $I_0$ depends on temperature — doubles every $10^{\circ}\text{C}$ rise.
+- **Thermal voltage** $V_T = kT/q = 25.85\,\text{mV}$ at $300\,\text{K}$ (Boltzmann constant $k = 1.38\times 10^{-23}\,\text{J/K}$, electron charge $q = 1.6\times 10^{-19}\,\text{C}$).
+- **Shockley equation** is the foundation: $I = I_0(e^{V/\eta V_T} - 1)$.
+- **Why FWR is better:** higher $V_{dc}$, lower ripple, higher efficiency, double ripple frequency (easier to filter).
+- **Modern usage:** SMPS auxiliary rails, mobile chargers, DC motor drives, signal demodulators, battery chargers, electroplating rectifiers.
+- **Remember the magic numbers:** $V_m/\pi \approx 0.318 V_m$, $2V_m/\pi \approx 0.636 V_m$, $\pi^{2} \approx 9.87$, $\sqrt{2} \approx 1.414$, $1 - 4/\pi^{2} \approx 0.5946$, $8/\pi^{2} \approx 0.8106$, $4/\pi^{2} \approx 0.4053$.
+- **Lab components to recognize:** 1N4001–1N4007 (rectifier diodes), BY127, BY255, MUR460 (fast-recovery), KBPC5010 (bridge module).
+- **Knee voltage / cut-in voltage** of silicon diode = **0.7 V**; of germanium = 0.3 V.
+- **In board exams, ALWAYS draw:**
+  1. The **circuit diagram** (with diode directions and labels)
+  2. The **input waveform** (pure sine)
+  3. The **output waveform** (half-wave or full-wave shape)
+  4. **Box the final numerical answer** with units.
 
-### Critical Formulae (Memorize These)
-
-| Quantity | HWR | FWR |
-|---|---|---|
-| $V_{dc}$ | $V_m / \pi$ | $2V_m / \pi$ |
-| $V_{rms}$ | $V_m / 2$ | $V_m / \sqrt{2}$ |
-| $\eta_{max}$ | $40.6\%$ | $81.2\%$ |
-| $\gamma$ | $1.21$ | $0.482$ |
-| Ripple Frequency | $f$ | $2f$ |
-
-### Engineering Insights
-- **FWR is 2× more efficient** than HWR because it uses **both** halves of the input.
-- **Bridge FWR is preferred industrially** over center-tapped FWR because it has lower PIV rating per diode ($V_m$ vs $2V_m$) and doesn't require a center-tapped transformer.
-- **Ripple reduction:** Adding a **filter capacitor** in parallel with $R_L$ dramatically reduces ripple. The ripple voltage is approximately $V_{r(pp)} = I_{dc} / (f_r \cdot C)$.
-- **Practical limitation:** Real silicon diodes have a **forward voltage drop** of $\approx 0.7 \text{ V}$, which becomes significant for low-voltage rectifiers (e.g., 1.5 V AC input). Schottky diodes ($V_f \approx 0.3 \text{ V}$) are used in such cases.
-- **Why efficiency cannot reach 100%:** Some AC power is always dissipated as heat in the diode's forward resistance $R_f$ and the transformer's winding resistance, even in the best designs.
-
-### Cross-Module Connections
-- **p-n Junction (Module 3):** Diode's $I-V$ characteristic is the foundation of rectification.
-- **Transistor Biasing (Module 5):** Rectified and filtered DC is used as the collector supply voltage $V_{CC}$.
-- **Op-Amps (Module 5/6):** Precision rectifiers (active rectifiers) overcome the $V_f$ drop problem using op-amp feedback.
-
-### Memory Trick 🧠
-> **"4-2-1-1" Rule for HWR:** $V_{dc} = V_m/\pi$ **(1 pi)**, $V_{rms} = V_m/2$ **(2 in denom)**, $\eta = 4/\pi^2$ **(4 in num)**, PIV = $V_m$ **(1 × $V_m$)**.
->
-> **"8-2-1-2" Rule for FWR:** $V_{dc} = 2V_m/\pi$ **(2 in num)**, $V_{rms} = V_m/\sqrt{2}$ **(sqrt 2)**, $\eta = 8/\pi^2$ **(8 in num)**, PIV = $2V_m$ **(2 × $V_m$)**.
-
----
-
-**End of Module 4 — Semiconductor Rectifiers Notes**
-*Prepared as per KTU 2024 Scheme | GAPHT121 | B.Tech First Year*
-
+> **Final mnemonic for KTU exam:** **"HWR = Half Power, FWR = Full Power, Bridge = Best Power."**
 <!-- SECTION_5_END -->

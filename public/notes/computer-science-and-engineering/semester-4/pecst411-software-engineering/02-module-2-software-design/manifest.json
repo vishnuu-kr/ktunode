@@ -1,0 +1,57 @@
+{
+  "course_name": "SOFTWARE ENGINEERING",
+  "course_code": "PECST411",
+  "module_number": 2,
+  "module_title": "Software design",
+  "topics_generated": [
+    {
+      "title": "Software design -  Software architecture and its importance, Software architecture patterns: Component and Connector, Layered, Repository, Client-Server, Publish-Subscribe, Functional independence – Coupling and Cohesion",
+      "slug": "software-design-software-architecture-and-its-importance-software-architecture-patterns-component",
+      "path": "software-design-software-architecture-and-its-importance-software-architecture-patterns-component/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case study:  Ariane launch failure",
+      "slug": "case-study-ariane-launch-failure",
+      "path": "case-study-ariane-launch-failure/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Object Oriented Software Design -  UML diagrams and relationships– Static and dynamic models, Class diagram, State diagram, Use case diagram, Sequence diagram",
+      "slug": "object-oriented-software-design-uml-diagrams-and-relationships-static-and-dynamic-models-class",
+      "path": "object-oriented-software-design-uml-diagrams-and-relationships-static-and-dynamic-models-class/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Case Studies : Voice mail system, ATM Example",
+      "slug": "case-studies-voice-mail-system-atm-example",
+      "path": "case-studies-voice-mail-system-atm-example/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Software pattern -  Model View Controller, Creational Design Pattern types – Factory method, Abstract Factory method, Singleton method, Prototype method, Builder method.",
+      "slug": "software-pattern-model-view-controller-creational-design-pattern-types-factory-method-abstract",
+      "path": "software-pattern-model-view-controller-creational-design-pattern-types-factory-method-abstract/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Structural Design Pattern and its types – Adapter, Bridge, Proxy, Composite, Decorator, Façade, Flyweight.",
+      "slug": "structural-design-pattern-and-its-types-adapter-bridge-proxy-composite-decorator-fa-ade-flyweight",
+      "path": "structural-design-pattern-and-its-types-adapter-bridge-proxy-composite-decorator-fa-ade-flyweight/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Behavioral Design Pattern",
+      "slug": "behavioral-design-pattern",
+      "path": "behavioral-design-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

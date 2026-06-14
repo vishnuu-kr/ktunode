@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 2,
+  "module_title": "Implement polynomial regression on the auto mpg dataset to predict mile",
+  "topics_generated": [
+    {
+      "title": "Implement polynomial regression on the Auto MPG dataset to predict miles per gallon (MPG) based on engine displacement. Compare polynomial regression results with linear regression.",
+      "slug": "implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-miles-per-gallon-mpg-based-on",
+      "path": "implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-miles-per-gallon-mpg-based-on/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the dataset.",
+      "slug": "load-and-preprocess-the-dataset",
+      "path": "load-and-preprocess-the-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement polynomial regression of varying degrees.",
+      "slug": "implement-polynomial-regression-of-varying-degrees",
+      "path": "implement-polynomial-regression-of-varying-degrees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compare the polynomial regression models with linear regression using metrics such as MSE and R-squared.",
+      "slug": "compare-the-polynomial-regression-models-with-linear-regression-using-metrics-such-as-mse-and-r",
+      "path": "compare-the-polynomial-regression-models-with-linear-regression-using-metrics-such-as-mse-and-r/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Visualize the polynomial fit.",
+      "slug": "visualize-the-polynomial-fit",
+      "path": "visualize-the-polynomial-fit/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "course_name": "HIGH PERFORMANCE COMPUTING",
+  "course_code": "PECST757",
+  "module_number": 3,
+  "module_title": "Shared",
+  "topics_generated": [
+    {
+      "title": "Shared-memory parallel programming with OpenMP :-",
+      "slug": "shared-memory-parallel-programming-with-openmp",
+      "path": "shared-memory-parallel-programming-with-openmp/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Short introduction to OpenMP",
+      "slug": "short-introduction-to-openmp",
+      "path": "short-introduction-to-openmp/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel execution",
+      "slug": "parallel-execution",
+      "path": "parallel-execution/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data scoping",
+      "slug": "data-scoping",
+      "path": "data-scoping/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "OpenMP worksharing for loops",
+      "slug": "openmp-worksharing-for-loops",
+      "path": "openmp-worksharing-for-loops/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Synchronization, Reductions, Loop scheduling, Tasking,Miscellaneous, Case study: OpenMP-parallel Jacobi algorithm",
+      "slug": "synchronization-reductions-loop-scheduling-tasking-miscellaneous-case-study-openmp-parallel-jacobi",
+      "path": "synchronization-reductions-loop-scheduling-tasking-miscellaneous-case-study-openmp-parallel-jacobi/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

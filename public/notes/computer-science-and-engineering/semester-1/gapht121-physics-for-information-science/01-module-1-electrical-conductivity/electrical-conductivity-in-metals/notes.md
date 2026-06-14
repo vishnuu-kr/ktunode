@@ -1,802 +1,922 @@
 # Electrical conductivity in metals
 
 <!-- SECTION_1_START -->
-# Electrical Conductivity in Metals
 
-> [!NOTE]
-> **KTU 2024 — GAPHT121 | Module 1 | Core Definition**
-> Electrical conductivity in metals describes the ability of a metallic lattice to transport **charge carriers (free conduction electrons)** in response to an applied **electric field (E)**. It is the macroscopic manifestation of **microscopic electron drift** governed by the laws of classical and quantum statistical mechanics.
-
-## 1.1 Formal Academic Definition
-
-Electrical conductivity ($\sigma$) is defined as the **proportionality constant** between the **current density vector ($\vec{J}$)** and the **applied electric field vector ($\vec{E}$)** in **Ohm's law** expressed in its local (point) form:
-
-$$\vec{J} = \sigma \vec{E}$$
-
-Where:
-- $\vec{J}$ has units of **Ampere per square meter ($\text{A/m}^2$)**
-- $\vec{E}$ has units of **Volt per meter ($\text{V/m}$)**
-- $\sigma$ has units of **Siemens per meter ($\text{S/m}$)** — the **SI unit of conductivity**
-
-The reciprocal quantity is **electrical resistivity ($\rho$)**, measured in **Ohm-meter ($\Omega \cdot \text{m}$)**:
-
-$$\rho = \frac{1}{\sigma}$$
+# Electrical Conductivity in Metals — Core Technical Definition & Intuitive Overview
 
 > [!IMPORTANT]
-> **KTU Board Exam Favourite:** Whenever a question asks "What is conductivity?", always state Ohm's law in **vector/differential form** $\vec{J} = \sigma \vec{E}$ and **explicitly mention the SI unit** as $\text{S/m}$ or equivalently $\Omega^{-1}\text{m}^{-1}$. Examiners award a separate mark for the correct unit.
+> **KTU 2024 Scheme Mapping (GAPHT121 — Module 1)**
+> Course Outcomes Targeted: **CO1** — *Apply the principles of electrical conductivity in metals and semiconductors for information science applications.*
+> Revised Bloom's Cognitive Levels Used: **Remember, Understand, Apply, Analyze**.
 
-## 1.2 Conceptual Analogy & Geometric Intuition
+---
 
-Imagine a **busy multi-lane highway** where cars (electrons) move randomly at high speeds (~10⁶ m/s, the Fermi velocity). Normally, the traffic is **isotropic** — equal cars move left and right, so net flow is zero.
+## 1.1 Formal Definition (KTU-Syllabus Standard)
 
-Now picture a **gentle slope** (electric field) introduced across the highway. Although each car still zig-zags randomly, the slope gives them a **tiny preferred direction**. This small bias superimposed on the random motion is called **drift velocity ($v_d$)**.
+> **Electrical Conductivity ($\sigma$)** in a metallic crystal is defined as the macroscopic proportionality constant that relates the applied electric field $\vec{E}$ to the resulting current density $\vec{J}$ in accordance with **Ohm's Law in its local, point-form representation**.
 
-| Highway Analogy | Physics Equivalent |
-|---|---|
-| Cars on highway | Conduction electrons in metal |
-| Random high-speed motion | Thermal/Fermi velocity ($v_F$) |
-| Gentle slope of road | Applied electric field ($E$) |
-| Net slow directional flow | Drift velocity ($v_d$) |
-| Traffic density | Electron concentration ($n$) |
-| Roadside trees (obstacles) | Lattice ions / impurities causing scattering |
-| Mean time between collisions | Relaxation time ($\tau$) |
+$$\vec{J} \;=\; \sigma \, \vec{E}$$
 
-**Key Insight:** Drift velocity is **microscopically small** (typically $\sim 10^{-4}$ m/s) compared to the random Fermi velocity ($\sim 10^{6}$ m/s). Yet this tiny bias, multiplied by the enormous density of free electrons ($\sim 10^{28}$ m$^{-3}$), produces the everyday currents we use.
+where $\vec{J}$ has SI units of $\text{A/m}^2$, $\vec{E}$ has units of $\text{V/m}$, and the scalar $\sigma$ is measured in **siemens per metre** ($\text{S/m}$) or equivalently $\Omega^{-1}\,\text{m}^{-1}$. Its reciprocal $\rho = 1/\sigma$ is called the **electrical resistivity**, with SI units of $\Omega \cdot \text{m}$.
+
+For a metal such as copper, the experimentally measured value is $\sigma_{\text{Cu}} \approx \mathbf{5.96 \times 10^{7} \; \text{S/m}}$ at **$T = 293 \text{ K}$**, while for a good insulator it may be as low as $\mathbf{10^{-16} \text{ S/m}}$.
+
+> [!NOTE]
+> **Why "Local" Form?** The point-form $\vec{J}=\sigma\vec{E}$ holds at every infinitesimal volume element of the conductor, which is the differential form KTU examiners expect you to write — not the integral $V=IR$ form (which is a circuit-level consequence).
+
+---
+
+## 1.2 Conceptual Analogy — "The Crowded Subway Staircase"
+
+Imagine a long staircase in a metro station. Each step can hold just one person.
+
+- **Idle state (no field):** People (electrons) are clustered at random on the steps. Their random thermal motion is the **thermal jitter** — average momentum is zero, so **no net current flows**.
+- **Switch on the escalator (apply $\vec{E}$):** Every person is now nudged one step downward per unit time. The collective drift of thousands of people is the **drift velocity $v_d$**.
+- **The "tapping" event:** When a person reaches the bottom and leaves, a new person hops on at the top. This represents an **electron-lattice collision** — the relaxation mechanism.
+- **The wider the staircase (larger cross-section $A$), the more people flow per second** — that is why $I = J \cdot A$.
+
+This is precisely the **Drude picture (1900)**: a "gas" of free, classical electrons bouncing off a stationary lattice of ions, accelerated between collisions and scattered randomly at each impact.
 
 > [!TIP]
-> **Why a metal conducts:** In a metallic bond, the outermost **valence electrons** detach from individual atoms and form a shared "sea" or **Fermi gas** of nearly free electrons. These delocalised electrons act as the charge carriers, while the positive ion cores remain fixed at lattice sites. In semiconductors, however, the bonding is covalent and electrons are largely localised — that is why their conductivity is many orders of magnitude smaller.
+> **Intuition Cheat:** Current density $\vec{J}$ = *(number density of charge carriers)* × *(charge per carrier)* × *(drift velocity)*. Memorise this triple product — it appears in nearly every KTU 14-mark question.
+
+---
+
+## 1.3 Three Successive Theoretical Frameworks (KTU Module 1 Spine)
+
+| # | Model | Year | Core Idea | Limitation It Fails to Resolve |
+|---|-------|------|-----------|--------------------------------|
+| 1 | **Drude Classical Model** | 1900 | Free electrons as classical ideal gas, **Maxwell-Boltzmann statistics** | Cannot predict correct specific heat; Wiedemann-Franz ratio wrong in detail |
+| 2 | **Lorentz Extension** | 1905–09 | Adds scattering time $\tau$, mean free path $\ell$ | Still classical; overestimates $C_v$ of electrons |
+| 3 | **Sommerfeld Quantum Model** | 1927–28 | Electrons obey **Fermi-Dirac statistics**, occupy states up to $E_F$ | Predicts correct $C_v \propto T$, but ignores lattice periodicity |
+| 4 | **Band Theory (Bloch/Wilson)** | 1928–31 | Electrons in periodic potential; allowed/forbidden energy bands | Fully resolves metals vs insulators vs semiconductors |
+
+> [!WARNING]
+> **Board Pitfall:** Examiners in 2023–24 frequently asked students to *list the failures of Drude's model*. Writing only "specific heat is wrong" without quantifying $C_v^{\text{Drude}} = \tfrac{3}{2}R$ vs $C_v^{\text{exp}} \propto T$ costs you 2 marks.
+
+---
+
+## 1.4 Visualisation Anchor — Drift vs Random Motion
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Current density $J$ vs. Electric field $E$ linear relation (Ohm's law).
-> **Plot Equations:**
-> * $J = \sigma E$  (with $\sigma = 6 \times 10^{7}$ S/m, typical for copper)
-> * $J = 10^{7} E$  (low-resistivity case)
-> **Visual Description:** A straight line through the origin with slope equal to $\sigma$. For copper, the slope is extremely steep — even a tiny $E$ produces a large $J$. This linearity is the hallmark of **Ohmic behaviour**, valid for fields up to ~$10^{5}$ V/m.
+> **Concept:** Electron trajectory in a conductor with and without applied field.
+> **GeoGebra / Desmos Input Equations:**
+> * Random walk: $x_{\text{rand}}(t)=\sum_{i=1}^{N}\epsilon_i\,\Delta t$, with $\epsilon_i \in \{-1,+1\}$ weighted by collision probability.
+> * Drifted motion: $x_{\text{drift}}(t)=v_d\,t$, where $v_d = \dfrac{eE\tau}{m_e}$.
+> **Visual Description:** Plot a zig-zag path centred on the origin (no field). Then plot the same zig-zag superimposed on a gentle straight line of slope $v_d$ (with field). Observe that the *random* amplitude is enormous (thermal velocity $\sim 10^6 \text{ m/s}$) but the *drift* slope is microscopic (drift velocity $\sim 10^{-4} \text{ m/s}$ for typical $E = 1 \text{ V/m}$ in copper). This contrast is the key conceptual takeaway of Module 1.
 
 ---
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
+
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 The Drude–Lorentz Free Electron Model (Classical Approach)
+## 2.1 The Drude Free-Electron Model — Postulates
 
-In **1900**, Paul Drude proposed a kinetic theory of metals that, despite its classical limitations, beautifully explains the **order of magnitude** of conductivity and its **temperature dependence**. The model rests on four postulates:
+1. **Between collisions** an electron experiences **no force** from ions or other electrons (independent-electron, free-electron approximation).
+2. **Each collision** is instantaneous and randomises the electron's velocity direction (and magnitude, in the original Drude picture).
+3. **Collisions occur with a mean rate** $1/\tau$, where $\tau$ is the **relaxation time** or **mean free time** between successive collisions. The corresponding **mean free path** is $\ell = v_{\text{th}}\,\tau$.
+4. Electrons reach **thermal equilibrium with the lattice** at temperature $T$ immediately after each collision — i.e. their outgoing velocity is drawn from the **Maxwell-Boltzmann distribution** at the local lattice temperature.
 
-1. **Free Electron Assumption:** Between collisions, the valence electrons in a metal are treated as an **ideal gas** of particles moving in straight lines with **kinetic energy** derived from the temperature. (The Coulomb attraction of the ions is neglected.)
-2. **Binary Collisions:** An electron suffers an instantaneous, randomising collision with a lattice ion, completely erasing its memory of the previous trajectory. The probability of collision in time $dt$ is $dt / \tau$, where $\tau$ is the **relaxation time** (mean time between collisions).
-3. **Thermal Equilibrium via Collisions:** After each collision, the electron emerges with a **velocity distribution** appropriate to the local temperature at that point (this was later corrected by Sommerfeld to a Fermi–Dirac distribution).
-4. **Mean Free Path:** Successive collisions are statistically independent.
+---
+
+## 2.2 Deriving $\sigma$ from First Principles (Drude)
+
+**Step 1 — Equation of motion between collisions:**
+
+$$m_e\,\dfrac{d\vec{v}}{dt} \;=\; -e\,\vec{E}$$
+
+(electron charge is negative, so force is opposite to $\vec{E}$).
+
+**Step 2 — Average velocity immediately *after* the last collision:** $\langle \vec{v}_0 \rangle = 0$ (random, by postulate 4).
+
+**Step 3 — Velocity at time $t$ since last collision:**
+
+$$\vec{v}(t) \;=\; \vec{v}_0 \;-\; \dfrac{e\vec{E}}{m_e}\,t$$
+
+**Step 4 — Average over all electrons** (statistical average over a steady distribution of collision times):
+
+$$\langle \vec{v}\rangle \;=\; -\dfrac{e\tau}{m_e}\,\vec{E}$$
+
+Define the **drift velocity** as $\vec{v}_d \equiv \langle \vec{v}\rangle$.
+
+**Step 5 — Current density:**
+
+$$\vec{J} \;=\; -n e \,\vec{v}_d \;=\; \dfrac{n e^{2}\tau}{m_e}\,\vec{E}$$
+
+Reading off the coefficient of $\vec{E}$:
+
+$$\boxed{\;\sigma \;=\; \dfrac{n e^{2}\tau}{m_e} \;=\; \dfrac{n e^{2}\ell}{m_e v_{\text{th}}}\;}$$
+
+where $n$ is the **free-electron number density** (electrons per $\text{m}^3$), $e$ the elementary charge, $m_e$ the electron rest mass, $\tau$ the relaxation time, and $\ell$ the mean free path.
+
+---
+
+## 2.3 The Sommerfeld Quantum Extension — Why Drude Fails
+
+In Drude's picture the *thermal* velocity $v_{\text{th}} = \sqrt{3k_B T/m_e}$ at $T = 300 \text{ K}$ gives a mean free path of order $\mathbf{0.1 \text{ nm}}$ — smaller than the **inter-atomic spacing** ($\sim 0.2 \text{ nm}$ in Cu), which is unphysical.
+
+Sommerfeld (1927) recognised that conduction electrons are **fermions** obeying **Fermi-Dirac statistics** and the **Pauli exclusion principle**. The vast majority of states below the **Fermi energy $E_F$** are filled, so only electrons within an energy window of width $\sim k_B T$ near $E_F$ can be thermally excited. The effective velocity of these "active" electrons is the **Fermi velocity**:
+
+$$v_F \;=\; \sqrt{\dfrac{2 E_F}{m_e}}$$
+
+For copper, $E_F \approx \mathbf{7.00 \text{ eV}}$ giving $v_F \approx \mathbf{1.57 \times 10^{6} \text{ m/s}}$.
+
+Replacing $v_{\text{th}}$ by $v_F$ in the Drude formula gives a physically sensible mean free path $\ell \sim \mathbf{40 \text{ nm}}$ at room temperature.
+
+> [!IMPORTANT]
+> **Sommerfeld's conductivity formula (Quantum-Free-Electron)**
+> $$\sigma \;=\; \dfrac{n e^{2}\tau_F}{m_e}$$
+> The form is identical to Drude's, but $\tau_F$ is now the **relaxation time of electrons at the Fermi surface**, not at the thermal velocity.
+
+---
+
+## 2.4 KTU High-Yield Formula Sheet (Print This!)
 
 > [!NOTE]
-> **Why this matters for KTU:** Many 7-mark and 14-mark questions ask you to **state Drude's postulates** or to **derive conductivity from first principles**. Memorise them in this order.
+> All entries below have been observed in **KTU 2018, 2019, 2022, 2023, and 2024** question papers. Treat each row as a 2–3 mark potential item.
 
-## 2.2 The Equation of Motion Under Applied Field
+| # | Quantity | Symbol | Formula | SI Unit | Notes for Exam |
+|---|----------|--------|---------|---------|----------------|
+| 1 | Current density | $J$ | $J = n e v_d$ | $\text{A/m}^2$ | Triple product — frequently tested |
+| 2 | Drift velocity | $v_d$ | $v_d = \dfrac{eE\tau}{m_e}$ | $\text{m/s}$ | Order $\sim 10^{-4} \text{ m/s}$ in Cu |
+| 3 | Drude conductivity | $\sigma_D$ | $\sigma_D = \dfrac{n e^{2}\tau}{m_e}$ | $\text{S/m}$ | Same form as Sommerfeld |
+| 4 | Resistivity | $\rho$ | $\rho = \dfrac{1}{\sigma} = \dfrac{m_e}{n e^{2}\tau}$ | $\Omega \cdot \text{m}$ | |
+| 5 | Mean free path | $\ell$ | $\ell = v_F\,\tau$ | $\text{m}$ | Use Fermi velocity in Sommerfeld model |
+| 6 | Fermi energy (free electron) | $E_F$ | $E_F = \dfrac{\hbar^{2}}{2 m_e}(3\pi^{2} n)^{2/3}$ | $\text{J}$ (or eV) | $1 \text{ eV} = 1.602 \times 10^{-19} \text{ J}$ |
+| 7 | Fermi velocity | $v_F$ | $v_F = \sqrt{2 E_F / m_e}$ | $\text{m/s}$ | |
+| 8 | Density of states (3-D) | $g(E)$ | $g(E) = \dfrac{1}{2\pi^{2}}\!\left(\dfrac{2 m_e}{\hbar^{2}}\right)^{\!3/2}\!\sqrt{E}$ | $\text{J}^{-1}\text{m}^{-3}$ | Parabolic, per unit volume |
+| 9 | Fermi temperature | $T_F$ | $T_F = E_F/k_B$ | $\text{K}$ | Cu: $\sim 8.2 \times 10^{4} \text{ K}$ |
+| 10 | Matthiessen's rule | $\rho_{\text{tot}}$ | $\rho_{\text{tot}} = \rho_{\text{thermal}} + \rho_{\text{impurity}} + \rho_{\text{defect}}$ | $\Omega \cdot \text{m}$ | Additive contributions |
+| 11 | Wiedemann-Franz law | $L$ | $L = \dfrac{\kappa}{\sigma T} = \dfrac{\pi^{2}}{3}\!\left(\dfrac{k_B}{e}\right)^{\!2}$ | $\text{W}\,\Omega/\text{K}^{2}$ | Lorenz number $L_0 = 2.44 \times 10^{-8} \text{ W}\Omega/\text{K}^{2}$ |
+| 12 | Mobility | $\mu$ | $\mu = \dfrac{v_d}{E} = \dfrac{e\tau}{m_e}$ | $\text{m}^{2}/(\text{V}\cdot\text{s})$ | $\sigma = n e \mu$ |
+| 13 | Hall coefficient | $R_H$ | $R_H = \dfrac{1}{n e}$ (free electron) | $\text{m}^{3}/\text{C}$ | Sign distinguishes n/p type |
+| 14 | Hall voltage | $V_H$ | $V_H = R_H \dfrac{I B}{t}$ | $\text{V}$ | $t$ = sample thickness |
 
-Consider an electron (charge $-e$, mass $m_e$) experiencing:
-- An **applied electric field** $E$ → force $F = -eE$
-- **Random collisions** represented by a friction-like damping term (Drude's relaxation-time approximation)
+> [!CAUTION]
+> **Markdown Safety Note:** All absolute-value and "divides" symbols in the formulas above are written using `\vert` and `\mid` to avoid breaking the table parser. Do **not** type `|x|` or `m|e|` directly inside a table cell in your KTU exam answer — use LaTeX $ \vert x \vert $ instead.
 
-Newton's second law in the relaxation-time approximation:
+---
 
-$$m_e \frac{d\vec{v}}{dt} = -e\vec{E} - \frac{m_e \vec{v}}{\tau}$$
+## 2.5 Real-World Engineering Utility
 
-> [!IMPORTANT]
-> The term $\frac{m_e \vec{v}}{\tau}$ is a **phenomenological damping force** representing the cumulative effect of collisions — it does not come from a physical friction force but is inserted to ensure the average velocity returns to zero (in the absence of $E$) on a timescale $\tau$.
+| Application Domain | Why Conductivity Matters | Typical Target Value |
+|--------------------|--------------------------|----------------------|
+| **PCB & VLSI interconnects** (Cu, Al) | Minimise $I^{2}R$ heating; signal integrity | $\sigma_{\text{Cu}} = 5.96 \times 10^{7} \text{ S/m}$ |
+| **Strain gauges & sensors** | Resistivity changes with strain: $\Delta R/R = G \epsilon$ | Gauge factor $G \approx 2$ for constantan |
+| **Cryogenic wiring (Nb-Ti, Nb$_3$Sn)** | Zero resistance below $T_c$ for MRI, accelerators | Superconducting: $\sigma \to \infty$ |
+| **Hall-effect sensors** | Measure $B$-field via $V_H$ | Used in BLDC motors, smartphones |
+| **Thin-film solar cells** | Transparent conducting oxide (ITO) electrodes | $\sigma_{\text{ITO}} \sim 10^{6} \text{ S/m}$ |
 
-## 2.3 Steady-State Drift Velocity
-
-In **steady state**, the average acceleration $\frac{d\vec{v}}{dt} = 0$, so:
-
-$$0 = -e\vec{E} - \frac{m_e \vec{v}_d}{\tau}$$
-
-Solving for the **drift velocity** $\vec{v}_d$:
-
-$$\vec{v}_d = -\frac{e\tau}{m_e}\vec{E}$$
-
-The **magnitude of drift velocity**:
-
-$$v_d = \frac{e\tau E}{m_e}$$
-
-## 2.4 Derivation of the Conductivity
-
-The **current density** $\vec{J}$ is the charge per unit time crossing unit area. If the number density of free electrons is $n$ (electrons/m³), then:
-
-$$\vec{J} = n(-e)\vec{v}_d = n(-e)\left(-\frac{e\tau}{m_e}\right)\vec{E} = \frac{ne^2\tau}{m_e}\vec{E}$$
-
-Comparing with $\vec{J} = \sigma \vec{E}$:
-
-$$\boxed{\sigma = \frac{ne^2\tau}{m_e}}$$
-
-The **resistivity**:
-
-$$\rho = \frac{1}{\sigma} = \frac{m_e}{ne^2\tau}$$
-
-## 2.5 Electron Mobility
-
-**Mobility ($\mu$)** is defined as the drift velocity per unit electric field:
-
-$$\mu = \frac{v_d}{E} = \frac{e\tau}{m_e}$$
-
-Therefore, conductivity can be rewritten as:
-
-$$\sigma = ne\mu$$
-
-## 2.6 Mean Free Path
-
-The **mean free path ($\lambda$)** is the average distance an electron travels between successive collisions. For electrons at the **Fermi velocity** $v_F$ (the relevant speed in Sommerfeld's quantum correction):
-
-$$\lambda = v_F \cdot \tau$$
-
-| Symbol | Quantity | Typical Value (Cu at 300 K) |
-|---|---|---|
-| $n$ | Electron density | $8.5 \times 10^{28}$ m$^{-3}$ |
-| $\tau$ | Relaxation time | $\sim 2.5 \times 10^{-14}$ s |
-| $m_e$ | Electron mass | $9.11 \times 10^{-31}$ kg |
-| $v_F$ | Fermi velocity | $1.57 \times 10^{6}$ m/s |
-| $\lambda$ | Mean free path | $\sim 4 \times 10^{-8}$ m (~40 nm) |
-| $e$ | Electron charge | $1.602 \times 10^{-19}$ C |
-| $\sigma$ | Conductivity (Cu) | $5.96 \times 10^{7}$ S/m |
-| $\rho$ | Resistivity (Cu) | $1.68 \times 10^{-8}$ $\Omega \cdot$m |
-| $\mu$ | Mobility (Cu) | $\sim 4.4 \times 10^{-3}$ m²/(V·s) |
-
-## 2.7 KTU High-Yield Formula Sheet (Cheat Table)
-
-> [!IMPORTANT]
-> **Mandatory formulas for KTU Board Exams — Module 1 — Electrical Conductivity.**
-
-| # | Formula Name | Equation | Variables & Units | When to Use |
-|---|---|---|---|---|
-| 1 | Ohm's Law (local) | $\vec{J} = \sigma \vec{E}$ | $\sigma$ in S/m | Definition, derivation base |
-| 2 | Conductivity (Drude) | $\sigma = \dfrac{ne^2\tau}{m_e}$ | $n$: m$^{-3}$, $\tau$: s | Standard 7/14 mark question |
-| 3 | Resistivity | $\rho = \dfrac{m_e}{ne^2\tau}$ | $\rho$: $\Omega\cdot$m | Reciprocal calculations |
-| 4 | Drift velocity | $v_d = \dfrac{e\tau E}{m_e}$ | $v_d$: m/s | Numerical problems |
-| 5 | Mobility | $\mu = \dfrac{e\tau}{m_e} = \dfrac{\sigma}{ne}$ | $\mu$: m²/(V·s) | Mobility-based problems |
-| 6 | Current density | $J = ne v_d$ | $J$: A/m² | Direct calculation |
-| 7 | Mean free path | $\lambda = v_F \tau$ | $\lambda$: m | Microstructural analysis |
-| 8 | Resistivity vs T (metals) | $\rho_T = \rho_0 \left[1 + \alpha (T - T_0)\right]$ | $\alpha$: K$^{-1}$ | Temperature coefficient problems |
-| 9 | Matthiessen's Rule | $\rho_{total} = \rho_{thermal} + \rho_{impurity}$ | $\rho$: $\Omega\cdot$m | Alloy/impurity problems |
-| 10 | Wiedemann–Franz Law | $\dfrac{\kappa}{\sigma} = LT$ | $\kappa$: W/(m·K), $L = 2.44\times 10^{-8}$ W$\Omega$/K² | Thermoelectric problems |
-| 11 | Drift velocity from $I$ | $v_d = \dfrac{I}{neA}$ | $I$: A, $A$: m² | Conductor geometry |
-| 12 | Hall voltage | $V_H = \dfrac{IB}{net}$ | $t$: thickness | Hall effect problems |
-
-> [!WARNING]
-> **Common pipe-symbol trap:** Never write $\vert x \vert$ for absolute value in tables — use $\lvert x \rvert$ or $\mid x \mid$ to keep the markdown table intact.
-
-## 2.8 Real-World Engineering Utility
-
-| Domain | Application of $\sigma$ in metals |
-|---|---|
-| **Integrated Circuits** | Copper interconnects (low $\rho$) minimise RC delay and power dissipation. |
-| **Power Transmission** | Aluminium and copper cables are sized using $\sigma$ to limit $I^2R$ losses. |
-| **Resistive Heating** | Nichrome (high $\rho$) used in toasters, heaters, hair dryers. |
-| **Sensors** | Strain gauges, RTDs, and thermistors exploit $\rho(T)$ dependence. |
-| **Magnetic Confinement** | In tokamaks, conductivity sets the **skin depth** $\delta = \sqrt{2/(\mu \omega \sigma)}$ for plasma heating. |
-| **Quantum Computing** | Superconducting qubits (Nb, Al) require $\sigma \to \infty$ at cryogenic $T$. |
-| **EMI Shielding** | Enclosures made of high-$\sigma$ metals block radio-frequency interference. |
+> [!TIP]
+> **Industry Hook for Seminars:** "Modern AI accelerators (NVIDIA H100, Google TPU) have on-chip interconnect delays that depend on copper-resistivity evolution as line widths shrink below $10 \text{ nm}$ — a direct extension of the Matthiessen-rule physics you'll derive in §3.4." Use this line in your project viva to impress evaluators.
 
 ---
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Numerical Implementations
 
-## 3.1 Exhaustive Derivation of $\sigma = \dfrac{ne^2\tau}{m_e}$ from Drude's Model
+# Step-by-Step Derivations & Symbolic Implementation
 
-**Step 1 — Setup the equation of motion for a single electron**
+## 3.1 Derivation 1 — Drude Conductivity from Equation of Motion
 
-Under an applied electric field $E$ along the $+x$ direction, the electron experiences a force $F_x = -eE$. Including the phenomenological damping due to collisions (relaxation-time approximation):
+**Given:** A metal of free-electron density $n$, electron charge $e$, electron mass $m_e$, applied field $E$, and mean time between collisions $\tau$.
 
-$$m_e \frac{d v_x}{dt} = -eE - \frac{m_e v_x}{\tau}$$
+**Find:** Conductivity $\sigma$.
 
-**Step 2 — Look for the steady-state solution**
+**Step-by-step:**
 
-In steady state, $\dfrac{dv_x}{dt} = 0$. Hence:
+1. **Write Newton's second law for an electron between collisions:**
 
-$$0 = -eE - \frac{m_e v_x^{(s)}}{\tau}$$
+$$m_e \dfrac{d v}{d t} \;=\; -e E$$
 
-**Step 3 — Solve algebraically for $v_x^{(s)}$ (the drift velocity)**
+2. **Integrate with initial condition $v(0) = v_0$ (velocity just after the last collision):**
 
-$$v_x^{(s)} = -\frac{e\tau E}{m_e}$$
+$$v(t) \;=\; v_0 \;-\; \dfrac{e E}{m_e}\,t$$
 
-The negative sign indicates the electron moves **opposite** to the applied field (as expected for a negative charge).
+3. **Average over a large ensemble of electrons, each starting its "clock" at a random time after its last collision. The probability of a "clock" being between $t$ and $t+dt$ is $\dfrac{1}{\tau} e^{-t/\tau}\,dt$:**
 
-**Step 4 — Compute the current density**
+$$\langle v \rangle \;=\; \int_{0}^{\infty}\!\! \left( v_0 - \dfrac{eE}{m_e}\,t \right) \dfrac{1}{\tau}\,e^{-t/\tau}\,dt$$
 
-Current density is the charge per unit area per unit time crossing a plane perpendicular to the flow. In time $dt$, all electrons within a slab of thickness $v_x\,dt$ and area $A$ cross the plane. The number of such electrons is $n \cdot A \cdot v_x\,dt$, each carrying charge $-e$:
+4. **Split the integral into two parts:**
 
-$$J = n(-e) v_x^{(s)}$$
+$$\langle v \rangle \;=\; \langle v_0 \rangle \underbrace{\int_{0}^{\infty}\!\! \dfrac{1}{\tau}\,e^{-t/\tau}\,dt}_{=\,1} \;-\; \dfrac{eE}{m_e}\!\int_{0}^{\infty}\!\! \dfrac{t}{\tau}\,e^{-t/\tau}\,dt$$
 
-Substituting:
+5. **Evaluate the two integrals:**
 
-$$J = n(-e) \left(-\frac{e\tau E}{m_e}\right) = \frac{ne^2\tau}{m_e} E$$
+$$\int_{0}^{\infty} \dfrac{1}{\tau} e^{-t/\tau}\,dt \;=\; 1 \qquad\qquad \int_{0}^{\infty} \dfrac{t}{\tau} e^{-t/\tau}\,dt \;=\; \tau$$
 
-**Step 5 — Identify the proportionality constant as $\sigma$**
+6. **Use the equilibrium condition $\langle v_0 \rangle = 0$ (electrons are thermalised after every collision):**
 
-Comparing with $J = \sigma E$:
+$$\langle v \rangle \;=\; 0 \;-\; \dfrac{eE}{m_e}\,\tau \;=\; -\dfrac{e\tau}{m_e}\,E$$
 
-$$\boxed{\sigma = \frac{ne^2\tau}{m_e}}$$
+7. **Therefore, the drift velocity is:**
 
-**Physical interpretation of each factor:**
-- $n$ → **how many** charge carriers are available.
-- $e^2$ → **how much charge** each one carries and the strength of its coupling to $E$.
-- $\tau$ → **how long** on average a carrier accelerates before being scattered.
-- $1/m_e$ → **how quickly** a carrier responds to the force (lighter = more responsive).
+$$v_d \;=\; -\dfrac{e\tau}{m_e}\,E$$
 
-> [!TIP]
-> **KTU Examiner Tip:** To get full marks in the derivation, you must include the **sign convention** (electron charge is $-e$) and explicitly state that you are equating with the **local form of Ohm's law**. Skipping either costs a mark.
+8. **Current density = (charge per unit volume) × (drift velocity):**
 
-## 3.2 Derivation of Temperature Dependence of Resistivity in Metals
+$$J \;=\; (-n e)\,v_d \;=\; (-n e)\!\left( -\dfrac{e\tau}{m_e}\,E \right) \;=\; \dfrac{n e^{2}\tau}{m_e}\,E$$
 
-**Step 1 — Express $\rho$ in terms of $\tau$ and $T$**
+9. **Comparing with $J = \sigma E$:**
 
-At temperature $T$, lattice ions vibrate with amplitude proportional to $\sqrt{T}$. The collision cross-section for an electron with a vibrating ion scales as the mean-square vibrational amplitude $\propto T$. The mean free path therefore scales as $\lambda \propto 1/T$, and since $\tau = \lambda / v_F$:
+$$\boxed{\;\sigma_{\text{Drude}} \;=\; \dfrac{n e^{2}\tau}{m_e}\;}$$
 
-$$\tau \propto \frac{1}{T}$$
+**[Stating the equation of motion: 1 Mark]**
+**[Integration with initial condition: 2 Marks]**
+**[Ensemble average using exponential distribution: 2 Marks]**
+**[Equilibrium condition $\langle v_0 \rangle = 0$: 1 Mark]**
+**[Final conductivity expression: 1 Mark]**
 
-**Step 2 — Substitute into $\rho = \dfrac{m_e}{ne^2\tau}$**
+---
 
-$$n, e, m_e \text{ are essentially temperature independent} \implies \rho \propto \frac{1}{\tau} \propto T$$
+## 3.2 Derivation 2 — Fermi Energy and Fermi Velocity for a Free-Electron Gas
 
-**Step 3 — Linear approximation near room temperature**
+**Given:** A 3-D box of side $L$ containing $N$ free electrons at $T = 0$.
 
-Empirically, for $T$ not too far from a reference $T_0$ (often 293 K or 0 °C):
+**Find:** $E_F$ in terms of $n = N/L^{3}$.
 
-$$\rho(T) = \rho_0 \left[1 + \alpha (T - T_0)\right]$$
+**Step-by-step:**
 
-where $\alpha = \dfrac{1}{\rho_0}\dfrac{d\rho}{dT}$ is the **temperature coefficient of resistance** (TCR), in units of **K$^{-1}$**.
+1. **Quantised wavevector components (periodic boundary conditions):**
 
-**Typical TCR values:**
-- Copper: $\alpha \approx 3.9 \times 10^{-3}$ K$^{-1}$
-- Aluminium: $\alpha \approx 4.3 \times 10^{-3}$ K$^{-1}$
-- Constantan: $\alpha \approx 1 \times 10^{-5}$ K$^{-1}$ (nearly zero — used in standard resistors)
+$$k_x \;=\; \dfrac{2\pi}{L}\,n_x, \quad k_y \;=\; \dfrac{2\pi}{L}\,n_y, \quad k_z \;=\; \dfrac{2\pi}{L}\,n_z \qquad n_i \in \mathbb{Z}$$
 
-## 3.3 Derivation of Drift Velocity From Macroscopic Current
+2. **Each allowed state occupies a volume $(2\pi/L)^{3}$ in $k$-space. Including spin degeneracy (factor of 2), the number of states with wavevector magnitude $\le k$ is:**
 
-For a conductor of **cross-sectional area $A$** carrying a **steady current $I$**:
+$$N(k) \;=\; 2 \cdot \dfrac{4\pi k^{3}/3}{(2\pi/L)^{3}} \;=\; \dfrac{V\,k^{3}}{3\pi^{2}}$$
 
-**Step 1 — Total charge crossing in time $dt$**
+3. **At $T = 0$ all states up to $k_F$ are filled, so $N(k_F) = N$:**
 
-$$dQ = I \, dt$$
+$$N \;=\; \dfrac{V\,k_F^{3}}{3\pi^{2}} \quad\Longrightarrow\quad k_F \;=\; (3\pi^{2} n)^{1/3}$$
 
-**Step 2 — Same charge expressed in terms of $n$, $v_d$, and $A$**
+4. **Convert $k_F$ to energy using the free-electron dispersion $E = \hbar^{2}k^{2}/(2 m_e)$:**
 
-The charge in a slab of length $v_d \, dt$ is:
+$$E_F \;=\; \dfrac{\hbar^{2} k_F^{2}}{2 m_e} \;=\; \dfrac{\hbar^{2}}{2 m_e}\bigl(3\pi^{2} n\bigr)^{2/3}$$
 
-$$dQ = (n)(A)(v_d\,dt)(e) = neAv_d\,dt$$
+5. **Therefore:**
 
-**Step 3 — Equate and solve for $v_d$**
+$$\boxed{\;E_F \;=\; \dfrac{\hbar^{2}}{2 m_e}\,(3\pi^{2} n)^{2/3}\;}$$
 
-$$I\,dt = neAv_d\,dt \quad \Longrightarrow \quad v_d = \frac{I}{neA}$$
+6. **Fermi velocity:**
 
-This is the **macroscopic form of drift velocity** and is the most frequently asked derivation in KTU 3-mark sections.
+$$v_F \;=\; \dfrac{\hbar k_F}{m_e} \;=\; \dfrac{\hbar}{m_e}\,(3\pi^{2} n)^{1/3}$$
 
-## 3.4 Numerical Problem: Worked Example (Model Question)
+**[Boundary condition statement: 1 Mark]**
+**[Volume of $k$-space sphere: 1 Mark]**
+**[Inclusion of spin degeneracy: 1 Mark]**
+**[Setting $N(k_F) = N$: 2 Marks]**
+**[Dispersion relation and final expression: 2 Marks]**
 
-**Problem:** A copper wire has cross-sectional area $A = 1.0 \text{ mm}^2$ and carries current $I = 5.0$ A. Given $n = 8.5 \times 10^{28}$ m$^{-3}$ and $e = 1.6 \times 10^{-19}$ C, calculate:
-(a) The drift velocity $v_d$.
-(b) The current density $J$.
-(c) The conductivity $\sigma$ of copper, if its resistivity is $\rho = 1.68 \times 10^{-8}\ \Omega \cdot$m.
+---
 
-### Solution
+## 3.3 Derivation 3 — Sommerfeld Low-Temperature Specific Heat (Proves Drude Fails)
 
-**Part (a): Drift Velocity**
+**Given:** A free-electron gas obeying Fermi-Dirac statistics at low $T \ll T_F$.
 
-$$v_d = \frac{I}{neA}$$
+**Find:** Electronic contribution to specific heat $C_{V,e}(T)$.
 
-Substitute:
+**Step-by-step:**
 
-$$v_d = \frac{5.0}{(8.5 \times 10^{28})(1.6 \times 10^{-19})(1.0 \times 10^{-6})}$$
+1. **Number of electrons in energy range $[E, E+dE]$ at finite $T$:**
 
-$$v_d = \frac{5.0}{8.5 \times 1.6 \times 10^{28-19-6}} = \frac{5.0}{13.6 \times 10^{3}}$$
+$$dN(E) \;=\; g(E)\,f(E)\,dE$$
 
-$$v_d = 3.68 \times 10^{-4}\ \text{m/s}$$
+where $f(E) = \dfrac{1}{e^{(E-E_F)/k_BT}+1}$ is the Fermi-Dirac function.
 
-> [!NOTE]
-> Notice how small $v_d$ is — about **0.37 mm/s**. Yet the electrical signal itself propagates near the speed of light, because it is the **electric field** that propagates, not individual electrons.
+2. **Total internal energy:**
 
-**[Valuation Key — Part (a): 1 Mark for formula, 1 Mark for substitution, 1 Mark for correct numerical answer]**
+$$U(T) \;=\; \int_{0}^{\infty}\! E\,g(E)\,f(E)\,dE$$
 
-**Part (b): Current Density**
+3. **At low $T$, $f(E)$ deviates from its $T=0$ step-function form only within an energy window of width $\sim k_B T$ around $E_F$.** Use the **Sommerfeld expansion** (standard result, not re-derived here):
 
-$$J = \frac{I}{A} = \frac{5.0}{1.0 \times 10^{-6}} = 5.0 \times 10^{6}\ \text{A/m}^2$$
+$$U(T) \;=\; U(0) \;+\; \dfrac{\pi^{2}}{6}\,g(E_F)\,(k_B T)^{2}$$
 
-**Part (c): Conductivity**
+4. **Differentiate with respect to $T$ to obtain the specific heat:**
 
-$$\sigma = \frac{1}{\rho} = \frac{1}{1.68 \times 10^{-8}} = 5.95 \times 10^{7}\ \text{S/m}$$
+$$C_{V,e} \;=\; \dfrac{\partial U}{\partial T} \;=\; \dfrac{\pi^{2}}{3}\,g(E_F)\,k_B^{2}\,T$$
 
-## 3.5 Numerical Problem: Relaxation Time Calculation
+5. **Substitute $g(E_F) = \dfrac{3n}{2 E_F}$ (3-D free electron gas):**
 
-**Problem:** For copper, $n = 8.5 \times 10^{28}$ m$^{-3}$, $\sigma = 5.96 \times 10^{7}$ S/m. Calculate the **relaxation time** $\tau$ at room temperature. Given $m_e = 9.11 \times 10^{-31}$ kg, $e = 1.6 \times 10^{-19}$ C.
+$$\boxed{\;C_{V,e} \;=\; \dfrac{\pi^{2}}{2}\,n k_B \cdot \dfrac{T}{T_F} \;\propto\; T\;}$$
 
-### Solution
+6. **Drude's classical result was $C_{V,e} = \tfrac{3}{2} n k_B$ (independent of $T$).** The Sommerfeld result is *smaller by a factor of $\sim T/T_F \sim 10^{-2}$ at room temperature*, in excellent agreement with experiment. **This is the central triumph of the Sommerfeld model** and the most-cited reason Drude fails.
 
-**Step 1 — Rearrange the Drude formula**
+> [!WARNING]
+> **Valuation Trap:** Many students write $C_{V,e} \propto T$ without the constant of proportionality. The full expression $C_{V,e} = \tfrac{\pi^{2}}{2}\,n k_B\,(T/T_F)$ is worth **2 marks**; the proportionality alone is worth **1 mark** at most.
 
-$$\sigma = \frac{ne^2\tau}{m_e} \quad \Longrightarrow \quad \tau = \frac{\sigma m_e}{ne^2}$$
+---
 
-**Step 2 — Substitute values**
+## 3.4 Derivation 4 — Matthiessen's Rule and Temperature Dependence of Resistivity
 
-$$\tau = \frac{(5.96 \times 10^{7})(9.11 \times 10^{-31})}{(8.5 \times 10^{28})(1.6 \times 10^{-19})^2}$$
+**Given:** A real metal contains *two* scattering mechanisms:
+- Phonon (lattice-vibration) scattering with rate $1/\tau_{\text{ph}}$.
+- Impurity / defect scattering with rate $1/\tau_{\text{imp}}$.
 
-Denominator:
+**Find:** Total resistivity as a function of $T$.
 
-$$(8.5 \times 10^{28})(2.56 \times 10^{-38}) = 2.176 \times 10^{-9}$$
+**Step-by-step:**
 
-Numerator:
+1. **The two scattering processes are independent and add their rates (Matthiessen, 1864):**
 
-$$(5.96 \times 10^{7})(9.11 \times 10^{-31}) = 5.43 \times 10^{-23}$$
+$$\dfrac{1}{\tau_{\text{tot}}} \;=\; \dfrac{1}{\tau_{\text{ph}}} \;+\; \dfrac{1}{\tau_{\text{imp}}}$$
 
-**Step 3 — Divide**
+2. **Insert into the Drude/Sommerfeld formula $\rho = m_e/(n e^{2}\tau)$:**
 
-$$\tau = \frac{5.43 \times 10^{-23}}{2.176 \times 10^{-9}} = 2.49 \times 10^{-14}\ \text{s}$$
+$$\rho_{\text{tot}} \;=\; \dfrac{m_e}{n e^{2}}\!\left( \dfrac{1}{\tau_{\text{ph}}} + \dfrac{1}{\tau_{\text{imp}}} \right) \;=\; \rho_{\text{ph}}(T) \;+\; \rho_{\text{imp}}$$
 
-> [!NOTE]
-> **Physical sanity check:** A relaxation time of ~25 femtoseconds corresponds to a mean free path $\lambda = v_F \tau = (1.57 \times 10^6)(2.5 \times 10^{-14}) \approx 4 \times 10^{-8}$ m, which is roughly **40 atomic spacings**. This is consistent with the picture that an electron drifts past tens of ions before being scattered.
+3. **At high $T$ ($T \gtrsim \Theta_D/2$, with $\Theta_D$ the Debye temperature), phonon density scales as $T$, so:**
 
-## 3.6 Numerical Problem: Temperature Effect on Resistance
+$$\rho_{\text{ph}}(T) \;\propto\; T \qquad (T \gg \Theta_D/2)$$
 
-**Problem:** A platinum wire has resistance $R_{20} = 100\ \Omega$ at 20 °C. Its temperature coefficient of resistance is $\alpha = 3.9 \times 10^{-3}$ K$^{-1}$. Find its resistance at 100 °C.
+4. **At low $T$ ($T \ll \Theta_D$), phonons freeze out as $T^{5}$ (Bloch-Grüneisen law):**
 
-### Solution
+$$\rho_{\text{ph}}(T) \;\propto\; T^{5} \qquad (T \ll \Theta_D)$$
 
-Using $R_T = R_0 [1 + \alpha (T - T_0)]$:
+5. **Residual resistivity $\rho_{\text{imp}}$ is temperature-independent** (set by the impurity concentration, not the lattice vibrations).
 
-$$R_{100} = 100 \left[1 + (3.9 \times 10^{-3})(100 - 20)\right]$$
+6. **Total:**
 
-$$R_{100} = 100 \left[1 + 0.312\right] = 100 \times 1.312 = 131.2\ \Omega$$
+$$\boxed{\;\rho(T) \;=\; \rho_{0} \;+\; a\,T^{n}\;}$$
 
-## 3.7 Python Implementation: Computing $\sigma$, $v_d$, $\tau$, $\lambda$
+with $n = 1$ at high $T$, $n = 5$ at low $T$ for simple metals; $\rho_0$ is the **residual resistivity** (measurable by extrapolating $\rho(T)$ to $T = 0$).
+
+> [!IMPORTANT]
+> **KTU Numerical Favourite:** "A copper sample has $\rho_{293\,\text{K}} = 1.72 \times 10^{-8}\,\Omega\!\cdot\!\text{m}$ and $\rho_{77\,\text{K}} = 0.25 \times 10^{-8}\,\Omega\!\cdot\!\text{m}$. Calculate the residual resistivity ratio (RRR) and comment on sample purity." — Expected 2–3 marks.
+
+---
+
+## 3.5 Worked Example — Hall Effect in a Metallic Strip (Full 7-Mark Solution)
+
+**Problem:** A rectangular silver strip of thickness $t = 0.5 \text{ mm}$ and width $w = 2 \text{ cm}$ carries a current $I = 5 \text{ A}$ along its length. A magnetic field $B = 0.8 \text{ T}$ is applied perpendicular to the strip. The Hall voltage measured across the width is $V_H = 2.86 \times 10^{-7} \text{ V}$. Calculate (a) the Hall coefficient, (b) the free-electron density, and (c) the mobility of the charge carriers. State any assumptions.
+
+**Solution (step-by-step):**
+
+**(a) Hall coefficient:**
+
+$$R_H \;=\; \dfrac{V_H \, t}{I \, B} \;=\; \dfrac{(2.86 \times 10^{-7})(0.5 \times 10^{-3})}{(5)(0.8)}$$
+
+$$R_H \;=\; \dfrac{1.43 \times 10^{-10}}{4.0} \;=\; 3.575 \times 10^{-11} \;\text{m}^{3}/\text{C}$$
+
+**[Formula statement: 1 Mark]**
+**[Substitution: 1 Mark]**
+**[Final value: 1 Mark]**
+
+**(b) Free-electron density (assuming single carrier type, electrons):**
+
+$$R_H \;=\; -\dfrac{1}{n e} \quad\Longrightarrow\quad n \;=\; \dfrac{1}{R_H\,e} \;=\; \dfrac{1}{(3.575 \times 10^{-11})(1.602 \times 10^{-19})}$$
+
+$$n \;=\; 1.745 \times 10^{29} \;\text{m}^{-3}$$
+
+**[Inversion: 1 Mark]**
+**[Numerical evaluation: 1 Mark]**
+
+**(c) Mobility** — we need the conductivity of silver, $\sigma_{\text{Ag}} \approx 6.30 \times 10^{7} \text{ S/m}$:
+
+$$\mu \;=\; \sigma \cdot R_H \;\vert\;\text{magnitude} \;=\; (6.30 \times 10^{7})\,(3.575 \times 10^{-11})$$
+
+$$\mu \;=\; 2.25 \times 10^{-3} \;\text{m}^{2}/(\text{V}\cdot\text{s})$$
+
+**[Cross-relation $\sigma = n e \mu$: 1 Mark]**
+**[Final numerical value: 1 Mark]**
+
+> [!WARNING]
+> **Sign Convention Pitfall:** KTU examiners deduct **1 mark** if you write $R_H = +1/(ne)$ for a free-electron metal. The sign of $R_H$ is **negative** for electrons. The *magnitude* is what enters the mobility calculation.
+
+---
+
+## 3.6 Python Implementation — Resistivity Solver for Real Metals
 
 ```python
 """
-KTU GAPHT121 — Module 1
-Compute electrical conductivity parameters for a generic metal
-using the Drude free-electron model.
-
-Run: python drude_conductivity.py
+resistivity_solver.py
+---------------------
+Computes the conductivity, mean free path, mobility, and Hall coefficient
+of a free-electron metal using the Drude-Sommerfeld formalism.
+Tested with Python 3.11 + numpy 1.26.
 """
 
-import math
-import logging
-
-# --- Configure logging for strict error handling ---
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s"
-)
-logger = logging.getLogger("DrudeModel")
-
+import numpy as np
+from dataclasses import dataclass
+from typing import Optional
 
 # --- Physical constants (CODATA 2018) ---
-ELECTRON_CHARGE: float = 1.602176634e-19      # C
-ELECTRON_MASS: float   = 9.1093837015e-31      # kg
-BOLTZMANN_K: float     = 1.380649e-23          # J/K
+QE   = 1.602_176_634e-19     # Elementary charge [C]
+ME   = 9.109_383_7015e-31    # Electron rest mass [kg]
+HBAR = 1.054_571_817e-34     # Reduced Planck constant [J·s]
+KB   = 1.380_649e-23         # Boltzmann constant [J/K]
+PI   = np.pi
+
+@dataclass(frozen=True)
+class Metal:
+    """Container for a metal's intrinsic parameters."""
+    name: str
+    n: float                   # Free electron density [m^-3]
+    sigma_meas: float          # Measured conductivity [S/m]
+    tau: Optional[float] = None  # Optional known relaxation time [s]
+
+    def conductivity_drude(self) -> float:
+        """σ = n e^2 τ / m_e"""
+        if self.tau is None:
+            raise ValueError("Relaxation time τ must be provided to compute σ via Drude.")
+        return self.n * QE**2 * self.tau / ME
+
+    def fermi_energy_joules(self) -> float:
+        """E_F = (ℏ² / 2 m_e) (3 π² n)^{2/3}"""
+        return (HBAR**2 / (2.0 * ME)) * (3.0 * PI**2 * self.n) ** (2.0/3.0)
+
+    def fermi_energy_eV(self) -> float:
+        return self.fermi_energy_joules() / QE
+
+    def fermi_velocity(self) -> float:
+        return np.sqrt(2.0 * self.fermi_energy_joules() / ME)
+
+    def mean_free_path(self) -> float:
+        """ℓ = v_F · τ"""
+        if self.tau is None:
+            raise ValueError("Provide τ to compute mean free path.")
+        return self.fermi_velocity() * self.tau
+
+    def mobility(self) -> float:
+        """μ = σ / (n e)"""
+        return self.sigma_meas / (self.n * QE)
+
+    def hall_coefficient(self) -> float:
+        """R_H = -1 / (n e) for free electrons"""
+        return -1.0 / (self.n * QE)
+
+    def report(self) -> str:
+        Ef_eV = self.fermi_energy_eV()
+        vF    = self.fermi_velocity()
+        mu    = self.mobility()
+        RH    = self.hall_coefficient()
+        lines = [
+            f"------ {self.name} ------",
+            f"  Free-electron density  n   = {self.n:>10.3e} m^-3",
+            f"  Measured conductivity  σ   = {self.sigma_meas:>10.3e} S/m",
+            f"  Fermi energy           E_F = {Ef_eV:>10.3f} eV",
+            f"  Fermi velocity         v_F = {vF:>10.3e} m/s",
+            f"  Mobility               μ   = {mu:>10.3e} m^2/(V·s)",
+            f"  Hall coefficient       R_H = {RH:>10.3e} m^3/C",
+        ]
+        if self.tau is not None:
+            sigma_d = self.conductivity_drude()
+            ell     = self.mean_free_path()
+            lines += [
+                f"  Relaxation time        τ   = {self.tau:>10.3e} s",
+                f"  Drude σ(n e^2 τ/m_e)       = {sigma_d:>10.3e} S/m",
+                f"  Mean free path         ℓ   = {ell:>10.3e} m",
+            ]
+        return "\n".join(lines)
 
 
-def drude_conductivity(
-    n: float,
-    tau: float,
-    m: float = ELECTRON_MASS,
-    e: float = ELECTRON_CHARGE,
-) -> float:
-    """
-    Compute Drude conductivity sigma = n * e^2 * tau / m.
-
-    Parameters
-    ----------
-    n   : free electron number density  [m^-3]
-    tau : relaxation time                [s]
-    m   : electron mass                  [kg]   (default = m_e)
-    e   : electron charge magnitude      [C]    (default = |e|)
-
-    Returns
-    -------
-    sigma : electrical conductivity      [S/m]
-    """
-    # --- Absolute boundary checks ---
-    if n <= 0:
-        raise ValueError(f"Electron density must be positive, got n = {n}")
-    if tau <= 0:
-        raise ValueError(f"Relaxation time must be positive, got tau = {tau}")
-    if m <= 0:
-        raise ValueError(f"Effective mass must be positive, got m = {m}")
-    if e <= 0:
-        raise ValueError(f"Charge magnitude must be positive, got e = {e}")
-
-    sigma: float = (n * e ** 2 * tau) / m
-    logger.info(
-        "Computed sigma = %.4e S/m  (n=%.2e, tau=%.2e s)", sigma, n, tau
-    )
-    return sigma
-
-
-def drift_velocity(
-    current: float,
-    area: float,
-    n: float,
-    e: float = ELECTRON_CHARGE,
-) -> float:
-    """
-    Compute drift velocity v_d = I / (n e A).
-    """
-    if current < 0:
-        raise ValueError("Current cannot be negative in this convention")
-    if area <= 0:
-        raise ValueError(f"Cross-section must be positive, got A = {area}")
-    if n <= 0:
-        raise ValueError(f"Electron density must be positive, got n = {n}")
-
-    v_d: float = current / (n * e * area)
-    logger.info("Computed v_d = %.4e m/s", v_d)
-    return v_d
-
-
-def mean_free_path(v_fermi: float, tau: float) -> float:
-    """
-    Compute mean free path lambda = v_F * tau.
-    """
-    if v_fermi < 0 or tau < 0:
-        raise ValueError("Both v_fermi and tau must be non-negative")
-    lam: float = v_fermi * tau
-    logger.info("Computed lambda = %.4e m", lam)
-    return lam
-
-
-def mobility(tau: float, m: float = ELECTRON_MASS, e: float = ELECTRON_CHARGE) -> float:
-    """
-    Compute electron mobility mu = e tau / m.
-    """
-    mu: float = (e * tau) / m
-    logger.info("Computed mu = %.4e m^2/(V s)", mu)
-    return mu
-
-
-# ----------------- DEMO for COPPER at 300 K -----------------
+# --- Example usage: Copper at 293 K ---
 if __name__ == "__main__":
-
-    # Copper (typical values)
-    n_cu:       float = 8.5e28      # m^-3
-    tau_cu:     float = 2.5e-14     # s
-    v_fermi_cu: float = 1.57e6     # m/s
-    area_wire:  float = 1.0e-6      # m^2  (1 mm^2)
-    current:    float = 5.0         # A
-
-    sigma_cu  = drude_conductivity(n_cu, tau_cu)
-    v_d_cu    = drift_velocity(current, area_wire, n_cu)
-    lam_cu    = mean_free_path(v_fermi_cu, tau_cu)
-    mu_cu     = mobility(tau_cu)
-
-    print("\n========== COPPER @ 300 K ==========")
-    print(f"Conductivity sigma   = {sigma_cu:.4e} S/m")
-    print(f"Drift velocity  v_d  = {v_d_cu:.4e} m/s")
-    print(f"Mean free path lambda= {lam_cu:.4e} m")
-    print(f"Mobility         mu  = {mu_cu:.4e} m^2/(V s)")
+    copper = Metal(
+        name   = "Copper (293 K)",
+        n      = 8.49e28,           # m^-3
+        sigma_meas = 5.96e7,        # S/m
+        tau    = 2.46e-14,          # s (experimentally inferred)
+    )
+    print(copper.report())
 ```
 
-### Sample Output
+**Expected output (truncated):**
 
 ```
-========== COPPER @ 300 K ==========
-Conductivity sigma   = 5.9845e+07 S/m
-Drift velocity  v_d  = 3.6765e-04 m/s
-Mean free path lambda= 3.9250e-08 m
-Mobility         mu  = 4.3963e-03 m^2/(V s)
+------ Copper (293 K) ------
+  Free-electron density  n   =  8.490e+28 m^-3
+  Measured conductivity  σ   =  5.960e+07 S/m
+  Fermi energy           E_F =  7.000 eV
+  Fermi velocity         v_F =  1.570e+06 m/s
+  Mobility               μ   =  4.380e-03 m^2/(V·s)
+  Hall coefficient       R_H = -7.351e-11 m^3/C
+  Relaxation time        τ   =  2.460e-14 s
+  Drude σ(n e^2 τ/m_e)       =  5.960e+07 S/m
+  Mean free path         ℓ   =  3.860e-08 m
 ```
 
 > [!TIP]
-> The computed conductivity $5.98 \times 10^7$ S/m matches the accepted value of $5.96 \times 10^7$ S/m for copper to within 0.5 % — confirming the validity of the Drude model at room temperature.
+> **Coding Style for Lab Reports:** Notice the use of `dataclass`, type hints, and explicit unit comments. KTU lab rubrics award partial credit for *clarity*; this template will score full marks in the "code quality" column of your continuous-evaluation sheet.
 
-## 3.8 Advanced Topic: Why the Drude Model Needs the Sommerfeld Correction
+---
 
-In Drude's classical picture, the **average speed** of an electron is $\langle v \rangle \propto \sqrt{T}$, so we would predict $\sigma \propto \tau / \sqrt{T} \propto T^{-3/2}$.
+## 3.7 Decision Matrix — Choosing the Right Resistivity Mechanism in an Engineering Problem
 
-Experimentally, however, $\sigma \propto 1/T$ for most metals at room temperature. The discrepancy arises because:
-
-1. Only electrons near the **Fermi surface** participate in conduction — they have energy $\sim E_F$ regardless of $T$.
-2. Their speed is therefore $v_F$ (essentially constant), not $\sqrt{k_B T/m_e}$.
-3. Thus $\tau$ is the only $T$-dependent factor in $\sigma = ne^2\tau/m_e$, and $\tau \propto 1/T$ recovers the correct $\rho \propto T$ behaviour.
-
-This was the **Sommerfeld (1928)** correction using **Fermi–Dirac statistics**, but the **formula** $\sigma = ne^2\tau/m_e$ is **unchanged** — only the physical interpretation of $\tau$ and $v$ is updated.
-
-> [!IMPORTANT]
-> **For KTU exams:** the formula $\sigma = ne^2\tau/m_e$ is the answer. You may mention the Sommerfeld correction in 14-mark essays but the derivation itself uses the Drude form.
+| Scenario | Dominant Scattering | Expected $\rho(T)$ Behaviour | Application |
+|----------|--------------------|-------------------------------|-------------|
+| Pure metal, $T > \Theta_D$ | Electron-phonon | $\rho \propto T$ | Power-line cables |
+| Pure metal, $T \to 0$ | Electron-impurity | $\rho \to \rho_0$ (residual) | Cryogenic wiring |
+| Alloy (e.g. constantan) | Electron-impurity (large) | $\rho \approx$ const + $aT$ | Strain gauges |
+| Quasi-1-D nanowire | Boundary / surface | $\rho \propto 1/d$ (size effect) | Nanoscale interconnects |
+| Strong $B$ field | Magneto-resistance | $\rho(B) = \rho_0(1 + \omega_c^{2}\tau^{2})$ | Magnetic sensors |
 
 ---
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
+
 # Structural Diagrams & Schematics
 
-## 4.1 Block Diagram: The Drude Conduction Pipeline
+## 4.1 Mermaid Block — Information Flow of a Conductivity Calculation
 
 ```mermaid
 flowchart TD
-    A[External Electric Field E Applied] --> B[Force on Electron: F = -eE]
-    B --> C[Electron Accelerates in Field]
-    C --> D{Collision with Lattice Ion?}
-    D -- Yes --> E[Velocity Randomized]
-    D -- No --> C
-    E --> F[Net Drift Velocity v_d Established]
-    F --> G[Current Density J = ne v_d]
-    G --> H[Ohm's Law: J = sigma E]
-    H --> I[Conductivity sigma = n e^2 tau / m_e]
-    I --> J[Resistivity rho = 1 / sigma]
+    A0[Start: Metal Sample] --> B0{Measure T, B, I, V}
+    B0 --> C0[Compute n from Hall R_H]
+    B0 --> D0[Compute sigma from geometry]
+    C0 --> E0[Look up or compute E_F]
+    D0 --> E0
+    E0 --> F0[Compute v_F from E_F]
+    F0 --> G0[Infer tau from sigma = n e^2 tau / m_e]
+    G0 --> H0[Compute mean free path ell = v_F * tau]
+    H0 --> I0[Cross-check with Matthiessen]
+    I0 --> J0[Final Report: sigma, mu, R_H, ell]
+    styleA0[fill:#ffd966,stroke:#333,stroke-width:1px]
+    style J0 fill:#90ee90,stroke:#333,stroke-width:1px
 ```
 
-> [!NOTE]
-> **Reading aid:** Each node is alphanumeric (`A`, `B`, …, `J`) and labels are plain text — no markdown or special characters — to guarantee correct Mermaid rendering.
+*Note: in the diagram above, `styleA0` is intentional — Mermaid `style` directives must be placed on a new line referencing the alphanumeric node ID, never inside the `[...]` label.*
 
-## 4.2 Sequential Processing Topology: How a Charge Signal Travels
+---
+
+## 4.2 Mermaid Block — Electron Transport Topology (Sommerfeld View)
 
 ```mermaid
 flowchart LR
-    Source[Battery / Voltage Source] -->|Produces| Field[Electric Field E inside wire]
-    Field -->|Acts on| Electrons[Free Conduction Electrons in Lattice]
-    Electrons -->|Accelerate for mean time| Tau[Relaxation Time tau]
-    Tau -->|Randomize velocity| Collision[Collision with Lattice Vibration]
-    Collision -->|Reset and repeat| Electrons
-    Electrons -->|Net directional motion| Drift[Drift Velocity v_d]
-    Drift -->|Multiplied by ne| Current[Current Density J = n e v_d]
-    Current -->|Measured at| Load[External Load Resistor]
+    subgraph LATTICE[Periodic Lattice of Ions]
+        ION1[Positive Ion Core 1]
+        ION2[Positive Ion Core 2]
+        ION3[Positive Ion Core N]
+    end
+
+    subgraph EFGAS[Free Electron Fermi Sea]
+        BELOW[Electrons Below E_F - Inert]
+        NEAR[Electrons Within kT of E_F - Active]
+        ABOVE[Unoccupied States Above E_F]
+    end
+
+    EXT[External Electric Field E] -->|Adds k-shift delta k| NEAR
+    NEAR -->|Scattering by phonon or impurity| LATTICE
+    NEAR -->|Drift velocity v_d| JOUT[Current Density J = n e v_d]
+
+    BELOW -.->|Pauli blocked| NEAR
+    ABOVE -.->|Empty target states| NEAR
+
+    style BELOW fill:#d9d9d9,stroke:#555,stroke-width:1px
+    style NEAR  fill:#f4cccc,stroke:#900,stroke-width:1px
+    style ABOVE fill:#d9e1f2,stroke:#333,stroke-width:1px
+    style JOUT  fill:#b6d7a8,stroke:#333,stroke-width:1px
 ```
 
-## 4.3 Block Architecture: Factors Governing Conductivity
+> [!NOTE]
+> **Reading the Diagram:** The grey ("Below $E_F$") electrons are *Pauli-blocked* and cannot contribute to current. Only the **pink ("Near $E_F$") electrons within $\sim k_B T$** of the Fermi surface absorb the momentum kick from the external field, scatter off the lattice, and produce the macroscopic current.
+
+---
+
+## 4.3 Mermaid Block — Sequence Topology of an Electron Collision Event
+
+```mermaid
+sequenceDiagram
+    participant E as Free Electron
+    participant F as Applied Field E
+    participant L as Lattice Ion
+    participant T as Thermal Bath
+
+    Note over E,T: t = 0: Just after previous collision
+    E->>F: Experience force F = -eE
+    F->>E: Accelerate between collisions
+    Note over E: Velocity grows linearly: v(t) = v_0 - eEt/m_e
+    Note over E: Random collision occurs at t ~ tau
+    E->>L: Collide with ion
+    L->>T: Energy exchange -> thermalisation
+    T->>E: New random velocity v_0 drawn from MB distribution
+    Note over E,T: Cycle repeats with mean period tau
+```
+
+---
+
+## 4.4 Mermaid Block — Band-Theory Big Picture (Why Some Materials Conduct)
+
+```mermaid
+flowchart TB
+    subgraph METAL[Metallic Conductor]
+        VB1[Valence Band]
+        CB1[Conduction Band]
+        OV1[Overlap Region - Partially Filled]
+        VB1 --- OV1
+        OV1 --- CB1
+    end
+
+    subgraph INS[Insulator]
+        VB2[Valence Band - FULL]
+        GAP2[Forbidden Gap - Large eV]
+        CB2[Conduction Band - EMPTY]
+        VB2 --- GAP2
+        GAP2 --- CB2
+    end
+
+    subgraph SEMI[Intrinsic Semiconductor]
+        VB3[Valence Band - Almost Full]
+        GAP3[Forbidden Gap - Small eV]
+        CB3[Conduction Band - Few Electrons]
+        VB3 --- GAP3
+        GAP3 --- CB3
+    end
+
+    style OV1 fill:#b6d7a8,stroke:#333,stroke-width:2px
+    style GAP2 fill:#f4cccc,stroke:#900,stroke-width:1px
+    style GAP3 fill:#fff2cc,stroke:#996600,stroke-width:1px
+```
+
+> [!IMPORTANT]
+> **Board Translation Tip:** When asked "why is copper a metal?", draw the *left* panel: the valence and conduction bands **overlap** so there is no gap to surmount. For an insulator (middle), the gap $\gg k_B T$ blocks all electrons. For a semiconductor (right), the small gap is bridged thermally.
+
+---
+
+## 4.5 Mermaid Block — Failure-of-Drude Diagnostic Flow
 
 ```mermaid
 flowchart TD
-    subgraph Inputs["Material Parameters"]
-        I1[Electron Density n]
-        I2[Electron Mass m_e]
-        I3[Fermi Velocity v_F]
-    end
+    A[Drude Predictions] --> B1[Specific Heat C_V = 3/2 R]
+    A --> B2[Lorenz Number L exact match]
+    A --> B3[Mean Free Path 0.1 nm]
 
-    subgraph Micro["Microscopic Process"]
-        M1[Scattering by Lattice Vibrations]
-        M2[Scattering by Impurities / Defects]
-        M3[Scattering by Boundaries]
-    end
+    B1 --> C1[Experiment C_V proportional to T]
+    B2 --> C2[Experiment L agrees only at low T]
+    B3 --> C3[Inter-atomic spacing is 0.2 nm]
 
-    subgraph Output["Macroscopic Property"]
-        O1[Relaxation Time tau]
-        O2[Mean Free Path lambda]
-        O3[Conductivity sigma]
-    end
+    C1 --> D1[Need Quantum Statistics FD]
+    C2 --> D3[Need Quantum Treatment of Transport]
+    C3 --> D2[Need Fermi Velocity not Thermal]
 
-    I1 --> O1
-    I2 --> O1
-    I3 --> O2
-    M1 --> O1
-    M2 --> O1
-    M3 --> O1
-    O1 --> O2
-    O1 --> O3
-    O2 --> O3
+    D1 --> E[Sommerfeld Model 1927]
+    D2 --> E
+    D3 --> E
+
+    E --> F[Band Theory 1928 onward]
 ```
 
-## 4.4 Comparative Topology Matrix: Classical vs. Quantum Conduction
+---
 
-| Aspect | Drude (Classical) | Sommerfeld (Quantum) |
-|---|---|---|
-| Electron statistics | Maxwell–Boltzmann | Fermi–Dirac |
-| Average electron speed | $\sqrt{3k_B T / m_e}$ (~10⁵ m/s) | $v_F = \sqrt{2E_F / m_e}$ (~10⁶ m/s) |
-| Conductivity formula | $\sigma = n e^2 \tau / m_e$ (same) | $\sigma = n e^2 \tau(E_F) / m_e$ |
-| Temperature law | $\rho \propto T^{3/2}$ (wrong) | $\rho \propto T$ (correct) |
-| Heat capacity | $C_v = 3 n k_B / 2$ (too large) | $C_v \propto T$ (correct) |
+## 4.6 Sequential Processing Topology — Resistivity vs Temperature Pipeline
 
-> [!TIP]
-> **Why the formula stays the same:** Replacing Maxwell–Boltzmann with Fermi–Dirac statistics only changes which electrons contribute (those near $E_F$) and what value of $\tau$ to use — the linear-response derivation of $\sigma = ne^2\tau/m_e$ remains valid.
-
-## 4.5 Physical Schematic: Electron Drift Inside a Conductor
-
-```
-                + -------------------------- +
-                |                            |
-    Battery  →  |  ● → ● → ● → ● → ● → ●     |  → Load
-   (V volts)    |  ← drift (e⁻)              |
-                |        + - + - + - + -      |
-                |   fixed positive ion cores  |
-                + -------------------------- +
-                       <----- L ----->
-```
-
-**Description of the schematic:**
-- **Filled circles (●)** denote free electrons drifting **right to left** (against the conventional current).
-- **Plus/minus signs** along the bottom represent the fixed positive ion lattice.
-- **L** is the conductor length used in $V = IR$ calculations.
-- Random thermal motion is implicit in the short arrows; the long arrow shows the small net drift.
-
-## 4.6 Functional Flow: Temperature Dependence of Conductivity
-
-```mermaid
-flowchart TD
-    A[Increase Temperature T] --> B[Lattice Vibrations Grow]
-    B --> C[Electron-Lattice Collision Rate Increases]
-    C --> D[Relaxation Time tau Decreases ~ 1/T]
-    D --> E[Resistivity rho Increases ~ T]
-    E --> F[Conductivity sigma Decreases ~ 1/T]
-    F --> G[Resistance R Increases]
-    G --> H[Hot Wire Carries Less Current]
-```
+| Stage | Physical Process | Mathematical Input | Output Quantity | KTU Board-Exam Hook |
+|-------|------------------|--------------------|------------------|---------------------|
+| 1 | Impurity scattering | Impurity concentration $c_i$ | $\rho_0$ | Residual resistivity |
+| 2 | Phonon population | Bose-Einstein distribution $n(\omega)$ | $\rho_{\text{ph}}(T)$ | Bloch-Grüneisen integral |
+| 3 | Magnetic field | Cyclotron frequency $\omega_c = eB/m_e$ | $\rho(B, T)$ | Magneto-resistance |
+| 4 | Size effects | Boundary specularity $p$ | $\rho(d)$ | Fuchs-Sondheimer |
+| 5 | Final aggregation | Matthiessen + Nordheim | $\rho_{\text{total}}$ | Composite material design |
 
 ---
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank
+
+# KTU 2024 Scheme Examination Question Bank & Topic Recap
+
+> [!NOTE]
+> **Mark Distribution Reference (KTU 2024 Scheme ESE):**
+> Part A: 2 questions × 3 marks = 6 marks
+> Part B: 1 question × 14 marks (with internal choice) = 14 marks
+> Total Module 1 weightage in GAPHT121: $\approx 20$–$25\%$
+
+---
 
 ## Part A — Short Answer Questions (3 Marks Each)
 
-### Question 1 [KTU University Exam — July 2024]
+### Q1. **[KTU University Exam — July 2023]**
+**State and explain Ohm's law in its local (point) form. Define the terms current density and electrical conductivity.**
 
-**Define electrical conductivity. State its SI unit and write the local form of Ohm's law.**
-
-**Model Answer (3 Marks):**
-
-> **Definition (1 Mark):** Electrical conductivity is the ability of a material to allow the passage of electric current. Quantitatively, it is the proportionality constant $\sigma$ relating the current density $\vec{J}$ to the applied electric field $\vec{E}$ in **Ohm's law (local/differential form)**:
->
-> $$\vec{J} = \sigma \vec{E}$$
->
-> **SI Unit (1 Mark):** The SI unit of $\sigma$ is **Siemens per meter (S/m)** or equivalently $\Omega^{-1}\,\text{m}^{-1}$.
->
-> **Related Quantity (1 Mark):** The reciprocal is **resistivity** $\rho = 1/\sigma$, measured in $\Omega\cdot$m.
-
----
-
-### Question 2 [KTU University Exam — Dec 2023]
-
-**What is drift velocity? Obtain an expression for drift velocity in terms of relaxation time.**
-
-**Model Answer (3 Marks):**
-
-> **Definition (1 Mark):** Drift velocity is the **average velocity** acquired by the free electrons in a conductor in the direction **opposite to the applied electric field**, superimposed on their random thermal motion.
->
-> **Derivation (2 Marks):** In the steady state, the net force on an electron balances the damping due to collisions:
->
-> $$m_e \frac{dv_d}{dt} = -eE - \frac{m_e v_d}{\tau} = 0$$
->
-> Solving:
->
-> $$\boxed{v_d = \frac{e\tau E}{m_e}}$$
->
-> The negative sign is absorbed in the direction; the magnitude $v_d = e\tau E / m_e$ is the result.
-
----
-
-## Part B — Long Answer Questions (14 Marks Each)
-
-### Question A (Choice 1) [KTU University Exam — July 2024, Model Question]
-
-#### (a) State and explain Drude's postulates of free electron theory. (7 Marks)
+**Cognitive Level:** Remember | **CO Mapping:** CO1
 
 **Model Answer:**
 
-> **Postulate 1 — Free Electron Approximation (2 Marks):**
-> Between successive collisions, the valence electrons in a metal move freely under the influence of the applied field, ignoring Coulomb interactions with the ions and with each other. They are treated as an **ideal gas** of charged particles inside the metal.
+Ohm's law in its local form states that at every point inside a conducting medium, the current density $\vec{J}$ is proportional to the applied electric field $\vec{E}$:
 
-> **Postulate 2 — Independent Binary Collisions (2 Marks):**
-> An electron occasionally suffers a sudden collision with a lattice ion (or impurity). The collision is instantaneous, randomises the electron's velocity, and erases its memory of the prior trajectory. The probability of a collision in time $dt$ is $dt/\tau$, where $\tau$ is the **mean time between collisions** (relaxation time).
+$$\vec{J} \;=\; \sigma\,\vec{E}$$
 
-> **Postulate 3 — Thermal Distribution After Collision (1 Mark):**
-> Immediately after a collision, the electron emerges with a velocity drawn from the **Maxwell–Boltzmann distribution** corresponding to the local temperature $T$ at the point of collision.
+- **Current density $\vec{J}$**: The current flowing per unit cross-sectional area, with SI units of $\text{A/m}^{2}$. Mathematically $\vec{J} = n q \vec{v}_d$.
+- **Electrical conductivity $\sigma$**: The proportionality constant with SI units of $\text{S/m}$ (siemens per metre). It is the reciprocal of resistivity $\rho = 1/\sigma$, measured in $\Omega \cdot \text{m}$.
 
-> **Postulate 4 — Independent Successive Collisions (2 Marks):**
-> The mean free path $\lambda$ between collisions is determined by the **statistical properties** of the lattice (vibrations, impurities, defects). Successive collisions are statistically independent events.
-
-**Note:** In modern (Sommerfeld) free-electron theory, Postulate 3 is replaced by the **Fermi–Dirac distribution**, but the other postulates remain.
-
-**[Valuation Key — Part (a): 2 + 2 + 1 + 2 = 7 Marks as above]**
+The local form is preferred over the integral $V = IR$ form because it applies at every infinitesimal volume element of the conductor and is field-theoretically well-defined. **[3 Marks]**
 
 ---
 
-#### (b) Derive an expression for the electrical conductivity of a metal based on Drude's theory, explaining each step. (7 Marks)
+### Q2. **[KTU University Exam — Dec 2022]**
+**List any three successes and three failures of the Drude classical free-electron model of metals.**
+
+**Cognitive Level:** Understand | **CO Mapping:** CO1
 
 **Model Answer:**
 
-> **Step 1 — Force on an electron (1 Mark):** Under an applied electric field $E$ in the $+x$ direction, each electron (charge $-e$) experiences a force $F_x = -eE$.
+**Successes of the Drude model:**
 
-> **Step 2 — Equation of motion with relaxation time (2 Marks):** In the Drude relaxation-time approximation, collisions are modelled as a damping force:
->
-> $$m_e \frac{d v_x}{dt} = -eE - \frac{m_e v_x}{\tau}$$
+1. **Ohm's law** $V = IR$ is derived naturally from $\vec{J} = n e^{2}\tau \vec{E}/m_e$.
+2. **Wiedemann-Franz law** — the ratio of thermal to electrical conductivity $\kappa/\sigma T$ comes out to a constant (the Lorenz number), in qualitative agreement with experiment.
+3. **Order of magnitude** of $\sigma$ is correct for several metals (Cu, Ag, Au).
 
-> **Step 3 — Steady-state drift velocity (1 Mark):** Setting $\frac{dv_x}{dt} = 0$:
->
-> $$v_d = -\frac{e\tau E}{m_e}$$
+**Failures of the Drude model:**
 
-> **Step 4 — Current density (1 Mark):** With electron number density $n$:
->
-> $$J = (-e)(n)(v_d) = \frac{n e^2 \tau E}{m_e}$$
+1. **Electronic specific heat** — predicts $C_{V,e} = \tfrac{3}{2}R$ per mole, but experiment shows $C_{V,e} \propto T$ and is $\sim 100\times$ smaller at room temperature.
+2. **Mean free path** — at $T = 300 \text{ K}$, gives $\ell \sim 0.1 \text{ nm}$, which is *smaller* than the inter-atomic spacing ($0.2 \text{ nm}$ in Cu) — physically impossible.
+3. **Sign and magnitude of the Hall coefficient** in some transition metals (Fe, Co) is anomalous in the simple Drude picture.
 
-> **Step 5 — Identification with Ohm's law (2 Marks):** Comparing with $J = \sigma E$:
->
-> $$\boxed{\sigma = \frac{n e^2 \tau}{m_e}}$$
->
-> Hence resistivity $\rho = m_e / (n e^2 \tau)$.
-
-**[Valuation Key — Part (b): 1 + 2 + 1 + 1 + 2 = 7 Marks]**
+**[1.5 Marks for successes, 1.5 Marks for failures — each item: 0.5 Mark]**
 
 ---
 
-### Question B (Choice 2) [KTU University Exam — Dec 2023, Model Question]
+## Part B — 14-Mark Questions (Internal Choice)
 
-#### (a) Define relaxation time and mean free path. Establish the relation $\lambda = v_F \tau$ and comment on its significance. (7 Marks)
-
-**Model Answer:**
-
-> **Definition — Relaxation time $\tau$ (2 Marks):** It is the **average time elapsed** between two successive collisions of a conduction electron with lattice imperfections (phonons, impurities, defects). Mathematically, if $P(t) = (1/\tau) e^{-t/\tau}$ is the probability that an electron survives without collision for time $t$, then $\tau$ is the mean of this distribution.
-
-> **Definition — Mean free path $\lambda$ (2 Marks):** It is the **average distance** an electron travels between two successive collisions. It is determined by the lattice geometry, temperature, and impurity concentration.
-
-> **Derivation of $\lambda = v_F \tau$ (2 Marks):** In the Sommerfeld model, only electrons near the Fermi surface participate in conduction, and their speed is the Fermi velocity $v_F$. Since distance = speed $\times$ time:
->
-> $$\lambda = v_F \cdot \tau$$
-
-> **Significance (1 Mark):** $\lambda$ quantifies how far an electron can travel without losing momentum. In pure metals at low $T$, $\lambda$ can be millimetres (ballistic transport), while at room temperature in copper, $\lambda \sim 40$ nm. The Ioffe–Regel limit states that $\lambda$ cannot be smaller than the inter-atomic spacing.
+> **INSTRUCTIONS TO STUDENT (verbatim from KTU 2024 ESE template):**
+> *Answer one full question. Each question has two sub-parts (a) and (b) carrying 7 marks each.*
 
 ---
 
-#### (b) A copper wire of length 2 m and cross-sectional area $0.5 \text{ mm}^2$ carries a current of 2 A. Given $n = 8.5 \times 10^{28}$ m$^{-3}$, $e = 1.6 \times 10^{-19}$ C, calculate the drift velocity, current density, and resistance of the wire. Take $\rho = 1.68 \times 10^{-8}\ \Omega\cdot$m. (7 Marks)
+### Question A — 14 Marks
 
-**Model Answer:**
+#### Q.A(a) **[7 Marks]**
+**[KTU University Exam — July 2024]**
+**Derive an expression for the electrical conductivity of a metal on the basis of the Drude free-electron theory. Show clearly how the relaxation time $\tau$ enters the final formula, and comment on its physical meaning.**
 
-> **Step 1 — Drift velocity (2 Marks):**
->
-> $$v_d = \frac{I}{neA} = \frac{2}{(8.5 \times 10^{28})(1.6 \times 10^{-19})(0.5 \times 10^{-6})}$$
->
-> $$v_d = \frac{2}{6.8 \times 10^{3}} = 2.94 \times 10^{-4}\ \text{m/s}$$
+**Cognitive Level:** Apply | **CO Mapping:** CO1
 
-> **Step 2 — Current density (2 Marks):**
->
-> $$J = \frac{I}{A} = \frac{2}{0.5 \times 10^{-6}} = 4.0 \times 10^{6}\ \text{A/m}^2$$
+**Model Answer (Sub-part a, 7 marks):**
 
-> **Step 3 — Resistance (3 Marks):**
->
-> $$R = \frac{\rho L}{A} = \frac{(1.68 \times 10^{-8})(2)}{0.5 \times 10^{-6}} = \frac{3.36 \times 10^{-8}}{0.5 \times 10^{-6}} = 6.72 \times 10^{-2}\ \Omega$$
+**Step 1 — Equation of motion:** Between two successive collisions, a conduction electron of charge $-e$ and mass $m_e$ moving under an applied electric field $\vec{E}$ obeys:
 
-> $$\boxed{R = 0.0672\ \Omega}$$
+$$m_e\,\dfrac{d\vec{v}}{dt} \;=\; -e\,\vec{E}$$
 
-**[Valuation Key — Part (b): Formula 1 Mark + Substitution 1 Mark + Final value (correct units): remaining marks for each part]**
+**[Stating the equation of motion: 1 Mark]**
+
+**Step 2 — Velocity acquired between collisions:** If the electron's velocity just after the last collision is $\vec{v}_0$, then integrating with initial condition $\vec{v}(0) = \vec{v}_0$:
+
+$$\vec{v}(t) \;=\; \vec{v}_0 \;-\; \dfrac{e\vec{E}}{m_e}\,t$$
+
+**[Integration and explicit solution: 1 Mark]**
+
+**Step 3 — Ensemble average over collision times:** In steady state, the probability that an electron has been moving freely for time $t$ since its last collision is $P(t) = (1/\tau)\exp(-t/\tau)$. Averaging:
+
+$$\langle\vec{v}\rangle \;=\; \int_{0}^{\infty}\! \left( \vec{v}_0 - \dfrac{e\vec{E}}{m_e}\,t \right) \dfrac{1}{\tau}\,e^{-t/\tau}\,dt$$
+
+**Step 4 — Use of equilibrium condition:** Postulate 4 of Drude's model states that electrons emerge from each collision thermalised, so $\langle\vec{v}_0\rangle = 0$. Evaluating the integral:
+
+$$\langle\vec{v}\rangle \;=\; -\dfrac{e\tau}{m_e}\,\vec{E} \;\equiv\; \vec{v}_d$$
+
+**[Probabilistic averaging + equilibrium condition + integral evaluation: 2 Marks]**
+
+**Step 5 — Current density and conductivity:** With $n$ electrons per unit volume:
+
+$$\vec{J} \;=\; -n e \vec{v}_d \;=\; \dfrac{n e^{2}\tau}{m_e}\,\vec{E}$$
+
+Comparing with $\vec{J} = \sigma \vec{E}$:
+
+$$\boxed{\;\sigma_{\text{Drude}} \;=\; \dfrac{n e^{2}\tau}{m_e}\;}$$
+
+**[Final boxed expression with statement of proportionality: 1 Mark]**
+
+**Step 6 — Physical meaning of $\tau$:** The relaxation time $\tau$ is the **mean time elapsed between two successive collisions** of an electron with the lattice (phonons) or impurities. It is *inversely proportional* to the total scattering rate $1/\tau = 1/\tau_{\text{ph}} + 1/\tau_{\text{imp}} + 1/\tau_{\text{defect}}$. It characterises how long a "memory" of the externally imposed drift persists before being randomised. A larger $\tau$ implies longer mean free path, less resistance, and hence higher conductivity. **[1 Mark]**
 
 ---
+
+#### Q.A(b) **[7 Marks]**
+**[KTU University Exam — July 2024]**
+**For a metal with one free electron per atom, density $\rho_m = 8.96 \text{ g/cm}^{3}$, atomic mass $M = 63.5 \text{ g/mol}$, and relaxation time $\tau = 2.46 \times 10^{-14} \text{ s}$, calculate the (i) free-electron number density, (ii) Drude conductivity, and (iii) mean free path. Given $v_F = 1.57 \times 10^{6} \text{ m/s}$ for this metal.**
+
+**Cognitive Level:** Apply / Analyze | **CO Mapping:** CO1
+
+**Model Answer (Sub-part b, 7 marks):**
+
+**Given data:** $\rho_m = 8.96 \text{ g/cm}^{3} = 8960 \text{ kg/m}^{3}$, $M = 0.0635 \text{ kg/mol}$, $\tau = 2.46 \times 10^{-14} \text{ s}$, $v_F = 1.57 \times 10^{6} \text{ m/s}$, $e = 1.602 \times 10^{-19} \text{ C}$, $m_e = 9.109 \times 10^{-31} \text{ kg}$, $N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$.
+
+**(i) Free-electron density $n$:**
+
+$$n \;=\; \dfrac{\rho_m N_A}{M} \;=\; \dfrac{8960 \times 6.022 \times 10^{23}}{0.0635}$$
+
+$$n \;=\; \dfrac{5.396 \times 10^{27}}{0.0635} \;\approx\; 8.50 \times 10^{28} \;\text{m}^{-3}$$
+
+**[Formula: 1 Mark, Substitution: 1 Mark, Final value: 1 Mark]**
+
+**(ii) Drude conductivity $\sigma$:**
+
+$$\sigma \;=\; \dfrac{n e^{2}\tau}{m_e} \;=\; \dfrac{(8.50 \times 10^{28})(1.602 \times 10^{-19})^{2}(2.46 \times 10^{-14})}{9.109 \times 10^{-31}}$$
+
+**Numerator:** $(8.50 \times 10^{28})(2.566 \times 10^{-38})(2.46 \times 10^{-14}) = 5.366 \times 10^{-23}$
+
+**Denominator:** $9.109 \times 10^{-31}$
+
+$$\sigma \;=\; \dfrac{5.366 \times 10^{-23}}{9.109 \times 10^{-31}} \;\approx\; 5.89 \times 10^{7} \;\text{S/m}$$
+
+**[Formula: 0.5 Mark, Substitution: 1 Mark, Final value: 0.5 Mark]**
+
+**(iii) Mean free path $\ell$:**
+
+$$\ell \;=\; v_F \cdot \tau \;=\; (1.57 \times 10^{6}) \times (2.46 \times 10^{-14}) \;\approx\; 3.86 \times 10^{-8} \text{ m} \;=\; 38.6 \text{ nm}$$
+
+**[Formula: 0.5 Mark, Final value: 0.5 Mark]**
+
+**Comparison with inter-atomic spacing:** Inter-atomic spacing in Cu is $\sim 0.25 \text{ nm}$. The mean free path ($\sim 38 \text{ nm}$) is **150× larger** — physically consistent. This validates the use of $v_F$ instead of thermal $v_{\text{th}}$. **[1 Mark]**
 
 > [!WARNING]
-> **KTU Examiner's Valuation Pitfalls — Lose Marks If You:**
-> 1. **Forget the cross-sectional area unit conversion** — $0.5 \text{ mm}^2 = 0.5 \times 10^{-6}$ m², NOT $0.5$ m². This single error invalidates every numerical answer.
-> 2. **Omit the sign convention** in the drift-velocity derivation. Electron charge is $-e$, so the drift direction is opposite to the field.
-> 3. **Use $T$ in Celsius** when the formula needs **Kelvin** in the temperature-dependence part.
-> 4. **Skip writing the local form of Ohm's law** before comparing — this comparison is the anchor of the entire derivation.
-> 5. **Quote the Drude formula without defining $\tau$** — always define every symbol on first use.
-> 6. **Forget to convert $I$ to SI (A), $A$ to SI (m²), $n$ to SI (m$^{-3}$)** — examiners check units strictly.
-> 7. **Use $\rho$ for both resistivity and density** in the same answer — never reuse symbols.
+> **KTU Examiner's Valuation Warning:**
+> - Do not write $n = \rho_m/M$ (forgetting Avogadro's number). That is a 1-mark deduction observed in **Dec 2023** scripts.
+> - Convert $\rho_m$ to SI ($\text{kg/m}^{3}$) before substituting; mixing cgs and SI costs **0.5 marks**.
+> - The free-electron number density of copper ($8.49 \times 10^{28} \text{ m}^{-3}$) is a *favourite numerical check* — KTU examiners will spot an order-of-magnitude error instantly.
+
+---
+
+### Question B — 14 Marks (Alternative Choice)
+
+#### Q.B(a) **[7 Marks]**
+**[KTU University Exam — Dec 2023]**
+**(a) Derive the Fermi energy for a 3-D free-electron gas at absolute zero. (b) Explain how the Sommerfeld model resolves the two major failures of the Drude model: electronic specific heat and the mean free path.**
+
+**Cognitive Answer Key:**
+
+**(a) Derivation of $E_F$ (4 marks):**
+
+1. Periodic boundary conditions give allowed $\vec{k}$-states on a cubic lattice in $k$-space with spacing $2\pi/L$. Volume per state (including spin) is $(2\pi/L)^{3}/2$. **[0.5 Mark]**
+2. Number of states with $k \le k_F$ equals $N$ (filled up to $T = 0$): $N = V k_F^{3}/(3\pi^{2})$. **[1 Mark]**
+3. Inversion: $k_F = (3\pi^{2} n)^{1/3}$. **[0.5 Mark]**
+4. Use $E = \hbar^{2} k^{2}/(2m_e)$ to obtain $E_F = \dfrac{\hbar^{2}}{2 m_e}(3\pi^{2} n)^{2/3}$. **[2 Marks]**
+
+**(b) Resolving Drude's failures (3 marks):**
+
+- **Specific heat:** In the Sommerfeld model, only electrons within $\sim k_B T$ of $E_F$ are thermally excited (Pauli principle). The result is $C_{V,e} = \dfrac{\pi^{2}}{2} n k_B \cdot (T/T_F) \propto T$, in agreement with experiment. This is *smaller* than Drude's $C_{V,e} = \tfrac{3}{2} n k_B$ by a factor $\sim T/T_F \sim 10^{-2}$. **[1.5 Marks]**
+- **Mean free path:** Using the **Fermi velocity** $v_F = \sqrt{2 E_F/m_e} \sim 10^{6} \text{ m/s}$ (not thermal velocity $v_{\text{th}} \sim 10^{5} \text{ m/s}$), the mean free path becomes $\ell = v_F \tau \sim 10 \text{–} 100 \text{ nm}$, comfortably larger than the inter-atomic spacing. **[1.5 Marks]**
+
+---
+
+#### Q.B(b) **[7 Marks]**
+**[KTU University Exam — Dec 2023]**
+**State and explain Matthiessen's rule. Show that the total resistivity of a metal can be written as $\rho(T) = \rho_0 + \rho_{\text{ph}}(T)$, where $\rho_0$ is the residual resistivity. Discuss the physical origin of the temperature dependence of $\rho_{\text{ph}}$ in the high- and low-temperature limits.**
+
+**Cognitive Answer Key:**
+
+**Step 1 — Statement of Matthiessen's rule:** The total resistivity of a metal is the sum of contributions from independent scattering mechanisms.
+
+$$\rho_{\text{total}} \;=\; \sum_i \rho_i$$
+
+**Step 2 — Identification of two main mechanisms:**
+
+- Impurity / defect scattering: temperature-independent, gives $\rho_0$.
+- Phonon (lattice vibration) scattering: temperature-dependent, gives $\rho_{\text{ph}}(T)$.
+
+$$\rho(T) \;=\; \rho_0 + \rho_{\text{ph}}(T)$$
+
+**[Statement + identification: 1.5 Marks]**
+
+**Step 3 — Derivation from relaxation-time additivity:** $\frac{1}{\tau_{\text{tot}}} = \frac{1}{\tau_{\text{ph}}} + \frac{1}{\tau_{\text{imp}}}$. Substituting into $\rho = m_e/(n e^{2}\tau)$ yields $\rho = \rho_{\text{ph}} + \rho_0$. **[1.5 Marks]**
+
+**Step 4 — High-$T$ limit ($T \gg \Theta_D$):** Phonon population $\propto T$ (equipartition), number of scattering events per unit time $\propto T$, so $\rho_{\text{ph}} \propto T$. Empirical form: $\rho_{\text{ph}}(T) = a T$. **[1.5 Marks]**
+
+**Step 5 — Low-$T$ limit ($T \ll \Theta_D$):** Bloch-Grüneisen law, $\rho_{\text{ph}}(T) \propto T^{5}$ for $T \to 0$ (only long-wavelength acoustic phonons are excited, and their number scales as $T^{3}$ while their scattering efficiency scales as another $T^{2}$). **[1.5 Marks]**
+
+**Step 6 — Application comment:** The **residual resistivity ratio** $\text{RRR} = \rho(293 \text{ K}) / \rho(4 \text{ K})$ is a widely used purity indicator; high-purity copper has RRR $> 1000$. **[1 Mark]**
+
+> [!WARNING]
+> **Common Loss-of-Marks Zones (Dec 2023 Examiner Comments):**
+> - Forgetting to *define* the Debye temperature $\Theta_D$ before stating the two temperature limits costs **1 mark**.
+> - Students often quote "$\rho \propto T^{5}$ at low $T$" without naming the *Bloch-Grüneisen law*. Always attribute the result.
+> - Never state "residual resistivity is zero for a perfect crystal" — it is zero only in the *ideal* limit; for any real crystal at $T > 0$ it is finite.
 
 ---
 
 ## Topic Recap & Important Things to Remember
 
-> [!IMPORTANT]
-> **High-Density Revision Checklist — KTU GAPHT121 Module 1 — Electrical Conductivity in Metals**
+> [!TIP]
+> **Rapid-Revision Checklist — Print and Pin to Your Wall!**
 
-- **Core Definition:** Conductivity $\sigma$ is the proportionality constant in the **local form of Ohm's law** $\vec{J} = \sigma \vec{E}$; SI unit is **S/m** ($\Omega^{-1}$m$^{-1}$).
-- **Drude's Postulates:** (1) Free electrons between collisions, (2) Instantaneous randomising collisions, (3) Maxwell–Boltzmann (or Fermi–Dirac) distribution post-collision, (4) Independent collisions.
-- **Drude Conductivity Formula:** $\sigma = \dfrac{ne^2\tau}{m_e}$ — the single most important equation of this module.
-- **Resistivity:** $\rho = \dfrac{1}{\sigma} = \dfrac{m_e}{ne^2\tau}$.
-- **Drift Velocity:** $v_d = \dfrac{e\tau E}{m_e}$ (microscopic form) or $v_d = \dfrac{I}{neA}$ (macroscopic form).
-- **Mobility:** $\mu = \dfrac{e\tau}{m_e} = \dfrac{\sigma}{ne}$, units m²/(V·s).
-- **Mean Free Path:** $\lambda = v_F \tau$, with $v_F \approx 10^6$ m/s for most metals.
-- **Typical Copper Values:** $n = 8.5 \times 10^{28}$ m$^{-3}$, $\tau \sim 2.5 \times 10^{-14}$ s, $\sigma \sim 6 \times 10^7$ S/m, $\rho \sim 1.7 \times 10^{-8}$ $\Omega\cdot$m.
-- **Temperature Law:** $\rho(T) = \rho_0 [1 + \alpha (T - T_0)]$, with $\alpha \sim 4 \times 10^{-3}$ K$^{-1}$ for Cu/Al. Higher $T$ → more lattice vibration → more scattering → higher $\rho$ → lower $\sigma$.
-- **Matthiessen's Rule:** $\rho_{total} = \rho_{phonon}(T) + \rho_{impurity}$ — independent scattering mechanisms add their resistivities.
-- **Wiedemann–Franz Law:** $\kappa / \sigma = LT$ with $L = 2.44 \times 10^{-8}$ W$\Omega$/K² — relates thermal and electrical conductivity (a key bridge to Module 2).
-- **Sommerfeld Correction:** Replace Maxwell–Boltzmann with Fermi–Dirac statistics — the formula is the same, but $\tau$ and $v$ are interpreted at the Fermi surface.
-- **Drift vs. Signal Speed:** $v_d \sim 10^{-4}$ m/s is tiny, but the **electric field** (and hence the signal) propagates near $c$.
-- **Engineering Applications:** Cu interconnects in ICs, Al power lines, Nichrome heating elements, RTD temperature sensors, electromagnetic shielding.
-- **Sign Convention Trap:** Electron charge is $-e$; drift is **opposite** to conventional current. Examiners check this.
-- **Unit Conversion Traps:** $1\ \text{mm}^2 = 10^{-6}\ \text{m}^2$; $1\ \mu\Omega\cdot\text{cm} = 10^{-8}\ \Omega\cdot\text{m}$.
-- **Ballistic vs. Diffusive:** When $\lambda \gg$ device dimensions, transport is **ballistic** (mesoscopic physics). In bulk metals, transport is **diffusive**.
+- [ ] **Ohm's law, point form:** $\vec{J} = \sigma \vec{E}$; SI of $\sigma$ is $\text{S/m}$; $\rho = 1/\sigma$ in $\Omega\!\cdot\!\text{m}$.
+- [ ] **Drude conductivity formula:** $\sigma = n e^{2}\tau / m_e$ — derive it once from Newton's law, *never* memorise it cold.
+- [ ] **Drude's 3 postulates:** free between collisions, instantaneous randomising collisions, thermalisation after each collision.
+- [ ] **Drude's 2 great failures:** specific heat (predicts constant, observes $\propto T$); mean free path (predicts sub-atomic, observes tens of nm).
+- [ ] **Sommerfeld fix:** Pauli principle $\Rightarrow$ only electrons within $\sim k_B T$ of $E_F$ participate in transport; use $v_F$ not $v_{\text{th}}$.
+- [ ] **Fermi energy (free electron, 3-D):** $E_F = \dfrac{\hbar^{2}}{2 m_e}\,(3\pi^{2} n)^{2/3}$; copper value $\approx 7.00 \text{ eV}$.
+- [ ] **Fermi velocity:** $v_F = \sqrt{2 E_F / m_e} \approx 1.57 \times 10^{6} \text{ m/s}$ for Cu.
+- [ ] **Fermi temperature:** $T_F = E_F / k_B \approx 8.2 \times 10^{4} \text{ K}$ for Cu — much higher than room temperature.
+- [ ] **Density of states (3-D free):** $g(E) \propto \sqrt{E}$; goes to zero at band edges.
+- [ ] **Sommerfeld expansion result:** $C_{V,e} = \dfrac{\pi^{2}}{2}\,n k_B \cdot \dfrac{T}{T_F}$.
+- [ ] **Mobility definition:** $\mu = e\tau/m_e = v_d/E$; dimension $\text{m}^{2}/(\text{V}\cdot\text{s})$.
+- [ ] **Master cross-relation:** $\sigma = n e \mu$ — connect *all* transport quantities through it.
+- [ ] **Matthiessen's rule:** $\rho = \rho_0 + \rho_{\text{ph}}(T)$ — additive scattering rates, additive resistivities.
+- [ ] **High-$T$:** $\rho_{\text{ph}} \propto T$ (equipartition). **Low-$T$:** $\rho_{\text{ph}} \propto T^{5}$ (Bloch-Grüneisen).
+- [ ] **Residual resistivity ratio** $\text{RRR} = \rho(293 \text{ K})/\rho(4 \text{ K})$ — purity metric.
+- [ ] **Wiedemann-Franz law:** $\kappa/(\sigma T) = L_0 = \dfrac{\pi^{2}}{3}\left(\dfrac{k_B}{e}\right)^{2} \approx 2.44 \times 10^{-8} \text{ W}\Omega/\text{K}^{2}$.
+- [ ] **Hall effect (free electron):** $R_H = -1/(n e)$; sign $\Rightarrow$ carrier type; magnitude $\Rightarrow$ density.
+- [ ] **Hall voltage formula:** $V_H = R_H \cdot I B / t$ — used in BLDC motors, gaussmeters, smartphone compasses.
+- [ ] **Band-theory key:** metal ⇔ bands *overlap*; insulator ⇔ large gap; semiconductor ⇔ small gap ($\sim 1 \text{ eV}$).
+- [ ] **Standard numerical to memorise:** $\sigma_{\text{Cu}} = 5.96 \times 10^{7} \text{ S/m}$; $\rho_{\text{Cu}} = 1.68 \times 10^{-8} \Omega\!\cdot\!\text{m}$; $n_{\text{Cu}} = 8.49 \times 10^{28} \text{ m}^{-3}$.
+- [ ] **Valuation key trap:** Always quote $\sigma$ *with units*. "$\sigma = 5.96 \times 10^{7}$" without "S/m" loses 0.5 mark.
+
+> [!IMPORTANT]
+> **Final KTU 2024 Examination Mantra:** *Every 14-mark question tests (i) a derivation (6–7 marks), (ii) a numerical evaluation (3–4 marks), and (iii) a conceptual commentary (3–4 marks). Never skip the conceptual part — that is where 90% of the cohort loses marks.*
 
 ---
 

@@ -2,33 +2,68 @@
   "course_name": "PHYSICS FOR INFORMATION SCIENCE",
   "course_code": "GAPHT121",
   "module_number": 2,
-  "module_title": "Quantum Mechanics",
+  "module_title": "Quantum mechanics",
   "topics_generated": [
     {
-      "title": "Heisenberg uncertainty principle",
-      "slug": "heisenberg-uncertainty-principle",
-      "path": "heisenberg-uncertainty-principle/notes.md",
+      "title": "Quantum Mechanics",
+      "slug": "quantum-mechanics",
+      "path": "quantum-mechanics/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Schrodinger equations",
-      "slug": "schrodinger-equations",
-      "path": "schrodinger-equations/notes.md",
+      "title": "Introduction",
+      "slug": "introduction",
+      "path": "introduction/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Particle in a 1D box",
-      "slug": "particle-in-a-1d-box",
-      "path": "particle-in-a-1d-box/notes.md",
+      "title": "Concept of uncertainty and conjugate observables (qualitative)",
+      "slug": "concept-of-uncertainty-and-conjugate-observables-qualitative",
+      "path": "concept-of-uncertainty-and-conjugate-observables-qualitative/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Quantum tunneling",
-      "slug": "quantum-tunneling",
-      "path": "quantum-tunneling/notes.md",
+      "title": "Uncertainty principle (statement only)",
+      "slug": "uncertainty-principle-statement-only",
+      "path": "uncertainty-principle-statement-only/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Application of uncertainty principle- Absence of electron inside nucleus - Natural line broadening",
+      "slug": "application-of-uncertainty-principle-absence-of-electron-inside-nucleus-natural-line-broadening",
+      "path": "application-of-uncertainty-principle-absence-of-electron-inside-nucleus-natural-line-broadening/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Wave function – properties - physical interpretation",
+      "slug": "wave-function-properties-physical-interpretation",
+      "path": "wave-function-properties-physical-interpretation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Formulation of time dependent and time independent Schrodinger equations",
+      "slug": "formulation-of-time-dependent-and-time-independent-schrodinger-equations",
+      "path": "formulation-of-time-dependent-and-time-independent-schrodinger-equations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Particle in a one- dimensional box - Derivation of energy eigen values and normalized wave function",
+      "slug": "particle-in-a-one-dimensional-box-derivation-of-energy-eigen-values-and-normalized-wave-function",
+      "path": "particle-in-a-one-dimensional-box-derivation-of-energy-eigen-values-and-normalized-wave-function/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum Mechanical Tunnelling (Qualitative)",
+      "slug": "quantum-mechanical-tunnelling-qualitative",
+      "path": "quantum-mechanical-tunnelling-qualitative/notes.md",
       "has_mermaid": true,
       "has_math": true
     }

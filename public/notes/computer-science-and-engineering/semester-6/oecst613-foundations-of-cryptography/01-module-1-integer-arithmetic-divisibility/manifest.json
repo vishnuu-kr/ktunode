@@ -1,0 +1,43 @@
+{
+  "course_name": "FOUNDATIONS OF CRYPTOGRAPHY",
+  "course_code": "OECST613",
+  "module_number": 1,
+  "module_title": "Integer arithmetic divisibility",
+  "topics_generated": [
+    {
+      "title": "Integer Arithmetic – Divisibility",
+      "slug": "integer-arithmetic-divisibility",
+      "path": "integer-arithmetic-divisibility/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Greatest Common Divisor Euclid’s and Extended Euclid’s Algorithm for GCD",
+      "slug": "greatest-common-divisor-euclid-s-and-extended-euclid-s-algorithm-for-gcd",
+      "path": "greatest-common-divisor-euclid-s-and-extended-euclid-s-algorithm-for-gcd/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Modular Arithmetic – Operations, Properties",
+      "slug": "modular-arithmetic-operations-properties",
+      "path": "modular-arithmetic-operations-properties/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Polynomial Arithmetic",
+      "slug": "polynomial-arithmetic",
+      "path": "polynomial-arithmetic/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Algebraic Structures – Group Ring Field",
+      "slug": "algebraic-structures-group-ring-field",
+      "path": "algebraic-structures-group-ring-field/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

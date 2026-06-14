@@ -1,0 +1,43 @@
+{
+  "course_name": "FUNCTIONAL PROGRAMMING",
+  "course_code": "PECST413",
+  "module_number": 4,
+  "module_title": "Algebraic types",
+  "topics_generated": [
+    {
+      "title": "Algebraic Types",
+      "slug": "algebraic-types",
+      "path": "algebraic-types/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case Study - Huffman Codes",
+      "slug": "case-study-huffman-codes",
+      "path": "case-study-huffman-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Abstract Data Types",
+      "slug": "abstract-data-types",
+      "path": "abstract-data-types/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Lazy Programming",
+      "slug": "lazy-programming",
+      "path": "lazy-programming/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Time and Space Behaviour",
+      "slug": "time-and-space-behaviour",
+      "path": "time-and-space-behaviour/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

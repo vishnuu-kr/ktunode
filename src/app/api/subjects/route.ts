@@ -4,7 +4,7 @@ import path from "path";
 
 export const dynamic = "force-dynamic";
 
-const allowedBranches = new Set(["cs"]);
+const allowedBranches = new Set(["cs", "ce", "ec", "ee", "me"]);
 const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
 
 function json(data: unknown, status = 200) {

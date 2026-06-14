@@ -1,606 +1,642 @@
 # Level curves of two variables
 
 <!-- SECTION_1_START -->
-# Level Curves of Two Variables — Core Definition & Intuitive Overview
-
-## 1.1 Formal Academic Definition (KTU 2024 Scheme Terminology)
-
-Let $f : D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ be a real-valued function of two independent variables. The **level set** (or **level curve**) of $f$ corresponding to the constant value $c \in \mathbb{R}$ is formally defined as the set of all ordered pairs $(x, y)$ in the domain $D$ for which the function evaluates to $c$.
-
-In rigorous set-builder notation:
-
-$$L_{c} \;=\; \bigl\{(x,\,y)\;\big\vert\;(x,y)\in D \text{ and } f(x,y)=c\bigr\}$$
+# 📘 Level Curves of Two Variables — Module 2: Functions of Several Variables
 
 > [!IMPORTANT]
-> **KTU 2024 Board Definition (verbatim-ready):**
-> *"A level curve of a function $f(x, y)$ is the locus of all points in the $xy$-plane at which the function takes on a prescribed constant value $c$. The family of all such curves, obtained by varying $c$, is called the **contour map** of $f$."*
+> **KTU 2024 Scheme | Course Code:** GAMAT101 — *Mathematics for Information Science – 1*
+> **Module:** 2 — *Functions of Several Variables: Domains and Ranges*
+> **Topic:** *Level Curves of Two Variables*
+> **Mapped Course Outcome (CO):** CO1 — *Apply the concepts of partial differentiation, level sets, and gradient fields to solve problems in information science.*
+> **RBT Cognitive Levels Covered:** Remember → Understand → Apply
 
-Geometrically, if we visualise the graph of $f$ as a surface $S = \{(x, y, z) \in \mathbb{R}^{3} \mid z = f(x, y)\}$, then the level curve $L_{c}$ is precisely the **orthogonal projection** of the planar cross-section $S \cap \{z = c\}$ onto the $xy$-plane.
+---
 
-## 1.2 Conceptual Analogy — The "Topographic Map" View
-
-Imagine you are standing on a hilly terrain. A **topographic map** is a flat paper drawing on which every closed loop represents a curve of constant elevation. A footpath that follows one such loop neither climbs nor descends.
-
-The function $f(x, y)$ plays the role of the terrain's elevation. The level curve $L_{c}$ is the flat-map trace of the horizontal slice cut through the hill at height $c$.
-
-| Domain Object | Topographic Counterpart |
-|---|---|
-| Function value $f(x, y)$ | Elevation above sea level |
-| Level set $f(x, y) = c$ | Closed loop of constant elevation |
-| Family $\{L_{c}\}_{c \in \mathbb{R}}$ | Full contour map of the region |
-| Closely packed level curves | **Steep slope** (rapid change) |
-| Widely spaced level curves | **Gentle slope** (slow change) |
+## 1.1 🎯 Core Technical Definition (KTU Board-Standard)
 
 > [!NOTE]
-> **Why level curves matter in Information Science:**
-> - In **machine learning**, the loss surface $J(\theta_{1}, \theta_{2})$ has level curves (loss contours) that determine convergence speed of gradient descent.
-> - In **computer vision**, edge detection and image segmentation rely on intensity level sets.
-> - In **data visualisation**, heat maps and contour plots are direct graphical encodings of level curves.
-> - In **image processing**, the **Marching Squares** algorithm extracts level curves from a discretised scalar field.
+> **Definition (Level Curve of a Function of Two Variables)**
+> Let $f : D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ be a real-valued function of two independent variables $x$ and $y$. For a fixed real constant $c \in \mathbb{R}$, the **level curve** of $f$ at level $c$ is the set
+> $$L_c = \left\{ (x, y) \in D \;\middle|\; f(x, y) = c \right\}.$$
+> In other words, $L_c$ is the **preimage** of the singleton set $\{c\}$ under $f$, i.e., $L_c = f^{-1}(\{c\})$. Geometrically, it is the projection onto the $xy$-plane of the horizontal slice of the surface $z = f(x, y)$ at height $z = c$.
 
-## 1.3 Illustrative Walk-Through — A Quick Warm-Up
+### 1.2 🧠 Conceptual Analogy — "Walking on Flat Ground on a Hilly Surface"
 
-Consider the paraboloid
+Imagine you are standing on a 3-D mountain landscape described by the surface $z = f(x, y)$, where $z$ denotes **altitude above sea level**.
 
-$$f(x, y) \;=\; x^{2} + y^{2}$$
+> [!TIP]
+> **Think of $f(x, y)$ as elevation.**
+> A **level curve** is the path a hiker would walk if they wanted to **stay at the exact same altitude** at all times. A contour map of a mountain (those squiggly rings you see in a geography book) is nothing but a collection of level curves drawn at regular altitude intervals (e.g., every **100 metres**).
 
-Setting $f(x, y) = c$ for $c \geq 0$ yields
+- The **constant $c$** is the *fixed altitude* you commit to walking at.
+- The **curve $L_c$** is the *footprint* on the ground of the horizontal plane $z = c$ cutting through the mountain.
 
-$$x^{2} + y^{2} \;=\; c \;\;\Longleftrightarrow\;\; x^{2} + y^{2} \;=\; (\sqrt{c})^{2}$$
+> [!NOTE]
+> **Geometric Intuition in 3-D → 2-D Projection**
+> - In 3-D, the set $f(x, y) = c$ together with $z = c$ forms a **horizontal plane** that slices the surface $z = f(x, y)$.
+> - When that intersection curve is *projected vertically downward* onto the $xy$-plane, you obtain the level curve $L_c$.
+> - Therefore, the level curve is the **shadow** of the 3-D intersection cast onto the floor.
 
-which is the equation of a **circle centred at the origin with radius $\sqrt{c}$**. The level curve is **undefined for $c < 0$** because no real $(x, y)$ satisfies the equation. The family $\{L_{c}\}_{c \geq 0}$ is a set of concentric circles, with the point $(0, 0)$ being a degenerate level curve of radius zero.
-
-## 1.4 GeoGebra / Desmos Visualisation
+### 1.3 🌐 GeoGebra / Desmos Visualization
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Paraboloid surface and its family of level curves
+> **Concept:** Family of concentric level curves for the paraboloid $f(x, y) = x^{2} + y^{2}$.
 > **GeoGebra / Desmos Input Equations:**
-> * Surface (3D): `z = x^2 + y^2`
-> * Level curves (2D projections):
->   * `x^2 + y^2 = 1`   *(circle, radius 1)*
->   * `x^2 + y^2 = 4`   *(circle, radius 2)*
->   * `x^2 + y^2 = 9`   *(circle, radius 3)*
->   * `x^2 + y^2 = 16`  *(circle, radius 4)*
-> **Visual Description:** In the $xy$-plane, the student should observe four concentric circles centred at the origin with progressively larger radii. On the 3D surface, the same circles appear as the projections of horizontal circular slices cut through the upward-opening paraboloid. The density of circles is highest near the origin (steep region) and spreads out at large radii (gentle region).
+> * `f(x, y) = x^2 + y^2`
+> * `Level curve c = 1:`  $x^{2} + y^{2} = 1$
+> * `Level curve c = 4:`  $x^{2} + y^{2} = 4$
+> * `Level curve c = 9:`  $x^{2} + y^{2} = 9$
+> * `Level curve c = 16:` $x^{2} + y^{2} = 16$
+> **Visual Description:** On the $xy$-plane you will see four **concentric circles** centred at the origin with radii $1, 2, 3, 4$. In 3-D, the surface $z = x^{2} + y^{2}$ is a **paraboloid (bowl)** opening upward, and each circle is the shadow of the horizontal slice at height $z = c$.
 
-> [!NOTE]
-> **Syllabus Highlight (KTU 2024 — GAMAT101, Module 2):**
-> The KTU 2024 Scheme explicitly requires the student to *"sketch and identify the level curves of elementary functions of two variables, including polynomials of total degree at most 2 and standard transcendental forms."* The following notes are therefore tuned to that specific demand.
+---
+
+### 1.4 🔑 Why Level Curves Matter in Information Science
+
+| Application | Role of Level Curves |
+|---|---|
+| **Machine Learning (Loss Landscapes)** | Each level curve $L_c$ is a set of weight configurations $(w_1, w_2)$ producing the **same training loss** $c$. |
+| **Image Processing (Edge Detection)** | Level curves of an intensity function $I(x, y)$ trace object boundaries. |
+| **Computer Graphics (Isophotes)** | Curves of constant illumination on a 3-D rendered surface. |
+| **Geographic Information Systems (GIS)** | Topographic contour lines are literally level curves of terrain elevation. |
+| **Optimization (Gradient Descent)** | The **gradient $\nabla f$** is always **perpendicular** to the level curve — the direction of steepest ascent. |
+| **Robotics (Configuration Spaces)** | Reachable configuration sets at fixed cost (energy) are level sets. |
+
+> [!IMPORTANT]
+> **Key Takeaway for KTU Exam:**
+> A level curve is **not** a graph of a function $y = g(x)$. It is a *level set* — the collection of all $(x, y)$ that yield the **same** function value. It may be a single point, an empty set, a circle, an ellipse, a hyperbola, a parabola, a pair of lines, or any closed/open curve.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
+# 📘 Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Structural Construction of a Level Curve
+## 2.1 🧩 Theoretical Foundation — Anatomy of a Level Curve
 
-The construction of a level curve proceeds through the following deterministic pipeline. Each step is a discrete cognitive action that KTU examiners expect a student to articulate during valuation.
+Given a smooth function $f : \mathbb{R}^{2} \to \mathbb{R}$ and a constant $c \in \mathbb{R}$, the level curve $L_c$ is defined as the solution set of a single equation in **two unknowns**:
 
-1. **Identify the function and its domain.** Determine the subset $D \subseteq \mathbb{R}^{2}$ on which $f$ is defined.
-2. **Choose the constant $c$** (this is either given in the problem or left as a symbolic parameter to obtain a *family* of curves).
-3. **Form the implicit equation** $f(x, y) = c$. This single equation in two unknowns is the algebraic description of the level curve.
-4. **Solve for one variable** (if tractable) to obtain an explicit form $y = g_{c}(x)$ or $x = h_{c}(y)$, valid only on the appropriate sub-domain.
-5. **Classify the curve family** by geometric category — straight line, circle, ellipse, parabola, hyperbola, cubic, transcendental curve, or empty set.
-6. **Determine the range of admissible $c$** by analysing for which values the equation has real solutions. Values of $c$ outside this range yield **no level curve** (the empty set $\emptyset$).
-7. **Sketch the contour map** by drawing representative members of the family on the $xy$-plane and annotating each curve with its corresponding value of $c$.
+$$f(x, y) - c = 0.$$
 
-## 2.2 Why the Construction Works — The Geometric "Why"
+The procedural steps to extract level curves of $f$ are:
 
-The equation $f(x, y) = c$ partitions the domain $D$ into equivalence classes. Two points $(x_{1}, y_{1})$ and $(x_{2}, y_{2})$ lie on the same level curve **if and only if** the function assigns them the *same* value. This is exactly the preimage structure in set theory:
-
-$$L_{c} \;=\; f^{-1}(\{c\})$$
-
-Because the cross-section $\{z = c\}$ is a horizontal plane in $\mathbb{R}^{3}$, the intersection of the surface with this plane is itself a curve (when the surface is "tilted" relative to the plane) or a point (when the surface is tangent to the plane). Projecting that intersection vertically downward onto the $xy$-plane preserves its shape up to vertical compression, and the result is the level curve.
-
-## 2.3 KTU Formula Cheat Sheet — Master Reference Table
-
-| # | Function $f(x, y)$ | Level Equation $f(x, y) = c$ | Family of Level Curves | Valid Range of $c$ |
-|---|---|---|---|---|
-| 1 | $x^{2} + y^{2}$ | $x^{2} + y^{2} = c$ | Concentric circles, centre $(0, 0)$, radius $\sqrt{c}$ | $c \geq 0$ |
-| 2 | $x^{2} + 4y^{2}$ | $x^{2} + 4y^{2} = c$ | Concentric ellipses, semi-axes $\sqrt{c}$ and $\sqrt{c}/2$ | $c > 0$ |
-| 3 | $x^{2} - y^{2}$ | $x^{2} - y^{2} = c$ | Hyperbolas (rectangular type when $c \ne 0$), two intersecting lines when $c = 0$ | All $c \in \mathbb{R}$ |
-| 4 | $x + y$ | $x + y = c$ | Parallel straight lines with slope $-1$ | All $c \in \mathbb{R}$ |
-| 5 | $x - 2y$ | $x - 2y = c$ | Parallel straight lines with slope $1/2$ | All $c \in \mathbb{R}$ |
-| 6 | $x^{2}$ | $x^{2} = c$ | Vertical lines $x = \pm\sqrt{c}$ | $c \geq 0$ |
-| 7 | $\sin(x) + \cos(y)$ | $\sin(x) + \cos(y) = c$ | Closed smooth families | $c \in [-2,\, 2]$ |
-| 8 | $e^{x+y}$ | $e^{x+y} = c$ | Parallel straight lines $x + y = \ln c$ | $c > 0$ |
-| 9 | $x \cdot y$ | $x \cdot y = c$ | Rectangular hyperbolas (asymptotes = coordinate axes) | $c \ne 0$; axes when $c = 0$ |
-| 10 | $4 - x^{2} - y^{2}$ | $x^{2} + y^{2} = 4 - c$ | Concentric circles, radius $\sqrt{4-c}$ | $c \leq 4$ |
-| 11 | $x^{2} + y$ | $y = c - x^{2}$ | Upward/downward parabolas | All $c \in \mathbb{R}$ |
-| 12 | $x^{3} - 3xy^{2}$ | $x^{3} - 3xy^{2} = c$ | Foliation of the plane by cubic curves | All $c \in \mathbb{R}$ |
+1. **Step 1 — Choose the level.** Fix a real constant $c$ belonging to the *range* of $f$.
+2. **Step 2 — Form the equation.** Write $f(x, y) = c$.
+3. **Step 3 — Simplify & classify.** Reduce to a *standard conic form* (circle, ellipse, parabola, hyperbola, pair of lines) or describe it parametrically.
+4. **Step 4 — Sketch the family.** Repeat for several values of $c$ to obtain a **level-curve family** (the *contour plot*).
 
 > [!NOTE]
-> **Critical Pitfall (Frequently Lost Marks):**
-> The "valid range of $c$" column is *not optional decoration*. In KTU board valuation, stating the level curve without specifying for which $c$ it exists costs 1–2 marks. Always verify that the implicit equation has real solutions.
+> **Implicit vs. Explicit Form**
+> The defining equation $f(x, y) = c$ is usually **implicit**. Sometimes it can be solved explicitly as $y = g(x)$, but in most KTU problems the implicit form is the desired answer.
 
-## 2.4 Engineering & Computer-Science Utility of Level Curves
+### 2.2 🗂️ KTU Formula Sheet — Level Curves of Standard Surfaces
 
-- **Cartography & GIS systems** — Every printed contour map (survey of India topographic sheets, Google Earth's terrain layer) is a discretised rendering of the level curves of the elevation function.
-- **Medical imaging** — CT and MRI scanners output a 3D scalar field; iso-contours are extracted to delineate tumour boundaries.
-- **Computer graphics & game engines** — Marching Cubes / Marching Squares algorithms reconstruct a 3D mesh from a scalar field by joining level curve fragments.
-- **Machine learning & optimisation** — Contour plots of a loss function $L(\theta_{1}, \theta_{2})$ guide the choice of learning rate; tightly packed contours signal a steep valley and potential overshoot.
-- **Fluid dynamics & meteorology** — Isobars (constant pressure) and isotherms (constant temperature) are level curves of pressure and temperature fields.
-- **Network engineering** — Signal-strength heat maps in Wi-Fi planning are level curves of a 2D attenuation function.
+> [!IMPORTANT]
+> **Use $\vert$ or $\mid$ (NOT the pipe character `|`) inside table cells to avoid markdown breakage.**
+
+| # | Function $f(x, y)$ | Level Curve Equation $f(x, y) = c$ | Geometric Shape | Type of Surface in 3-D |
+|---|---|---|---|---|
+| 1 | $f(x, y) = x^{2} + y^{2}$ | $x^{2} + y^{2} = c,\; c > 0$ | **Circle** of radius $\sqrt{c}$ | Circular paraboloid |
+| 2 | $f(x, y) = x^{2} + y^{2}$ | $x^{2} + y^{2} = 0$ | A **single point** $(0, 0)$ | Vertex of paraboloid |
+| 3 | $f(x, y) = \dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}}$ | $\dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = c$ | **Ellipse** if $c > 0$ | Elliptic paraboloid |
+| 4 | $f(x, y) = \dfrac{x^{2}}{a^{2}} - \dfrac{y^{2}}{b^{2}}$ | $\dfrac{x^{2}}{a^{2}} - \dfrac{y^{2}}{b^{2}} = c$ | **Hyperbola** (two branches) | Hyperbolic paraboloid (saddle) |
+| 5 | $f(x, y) = y - x^{2}$ | $y - x^{2} = c \;\Rightarrow\; y = x^{2} + c$ | **Parabola** opening upward | Parabolic cylinder shifted |
+| 6 | $f(x, y) = x^{2}$ | $x^{2} = c$ | Two vertical lines $x = \pm\sqrt{c}$ | Half of a parabolic cylinder |
+| 7 | $f(x, y) = x \cdot y$ | $xy = c$ | **Rectangular hyperbola** | Saddle surface |
+| 8 | $f(x, y) = \sin(x) + \cos(y)$ | $\sin(x) + \cos(y) = c$ | Closed wavy curves for $\vert c \vert \leq 2$ | Undulating surface |
+| 9 | $f(x, y) = e^{-(x^{2}+y^{2})}$ | $e^{-(x^{2}+y^{2})} = c \;\Rightarrow\; x^{2} + y^{2} = -\ln c$ | Circle for $0 < c < 1$ | Gaussian "bell" surface |
+| 10 | $f(x, y) = \ln(x^{2} + y^{2})$ | $\ln(x^{2} + y^{2}) = c \;\Rightarrow\; x^{2} + y^{2} = e^{c}$ | Circle of radius $e^{c/2}$ | Funnel surface |
+
+### 2.3 🔬 Properties of Level Curves (Board-Favourite Theorems)
+
+> [!TIP]
+> **Property 1 — Domain Restriction**
+> Only values of $c$ that lie in the **range** of $f$ produce non-empty level curves. If $c \notin \text{Range}(f)$, then $L_c = \emptyset$.
+
+> [!TIP]
+> **Property 2 — Disjointness of Levels**
+> Two distinct levels $c_1 \neq c_2$ give **disjoint** level curves:
+> $$L_{c_1} \cap L_{c_2} = \emptyset.$$
+> A point in the domain can have **only one** function value, so it can belong to **only one** level curve.
+
+> [!TIP]
+> **Property 3 — Gradient Orthogonality (CRITICAL FOR KTU)**
+> If $f$ is differentiable at $(x_0, y_0)$ and $\nabla f(x_0, y_0) \neq \mathbf{0}$, then the level curve $L_c$ passing through $(x_0, y_0)$ has the **gradient vector** $\nabla f(x_0, y_0)$ as its **normal vector**. Equivalently, the **tangent line** to $L_c$ at $(x_0, y_0)$ is perpendicular to $\nabla f(x_0, y_0)$.
+
+> [!TIP]
+> **Property 4 — Direction of Steepest Ascent**
+> The unit vector $\mathbf{u} = \dfrac{\nabla f}{\vert \nabla f \vert}$ points in the direction of **greatest increase** of $f$, and is **perpendicular** to the level curve through that point. The direction of **greatest decrease** is $-\mathbf{u}$.
+
+> [!TIP]
+> **Property 5 — Level Curves of $z = f(x, y)$ at $z = c$ are projections of the horizontal slice.** The set $\{(x, y, z) : f(x, y) = c,\; z = c\}$ is a 1-D curve in 3-D; its orthogonal projection onto the $xy$-plane is $L_c$.
+
+### 2.4 🛠️ Real-World Engineering Utility
+
+| Domain | Use Case | Which Level Curve Property? |
+|---|---|---|
+| **Cartography / Topographic Maps** | Drawing elevation contours | Family of level curves at fixed $\Delta c$ |
+| **Machine Learning** | Visualising the loss landscape $J(\theta_1, \theta_2)$ | Concentric/elongated level curves show *valleys* |
+| **Meteorology** | Isobars (lines of equal atmospheric pressure) | Closed level curves around high/low pressure cells |
+| **Electrical Engineering** | Equipotential lines in electrostatics | Level curves of electric potential $V(x, y)$ |
+| **Fluid Dynamics** | Streamlines and potential flows | Level curves of the velocity potential |
+| **Computer Vision** | Edge detection in grayscale images | Level curves of the image-intensity function $I(x, y)$ |
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations, Worked Examples & Python Implementation
+# 📘 Step-by-Step Derivations & Symbolic Implementation
 
-## 3.1 Exhaustive Worked Example 1 — Elliptic Paraboloid
+> [!WARNING]
+> **Exhaustive Content Mandate Active.** Every algebraic step, code line, and logical deduction is fully written out. No truncation, no shortcuts.
 
-**Problem.** Find and classify the level curves of $f(x, y) = x^{2} + 4y^{2}$. Sketch the contour map for $c = 1, 4, 9$.
+## 3.1 🧮 Worked Example 1 — Level Curves of an Elliptic Paraboloid (Board-Length Problem)
 
-**Step 1 — State the function and the level-curve equation.**
+**Problem:** Find and classify the level curves of $f(x, y) = \dfrac{x^{2}}{4} + \dfrac{y^{2}}{9}$ at the levels $c = 0,\; 1,\; 3$.
 
-$$f(x, y) \;=\; x^{2} + 4y^{2}, \qquad f(x, y) \;=\; c$$
+### Step 1 — Set up the level-curve equation
+For an arbitrary level $c$, the level curve is defined by
 
-**Step 2 — Form the implicit equation and reduce to standard conic form.**
+$$\frac{x^{2}}{4} + \frac{y^{2}}{9} = c.$$
 
-$$x^{2} + 4y^{2} \;=\; c \;\;\Longrightarrow\;\; \frac{x^{2}}{c} + \frac{y^{2}}{c/4} \;=\; 1$$
+### Step 2 — Case Analysis by Sign of $c$
 
-**Step 3 — Classify.** This is the standard equation of an **ellipse centred at the origin** with semi-major axis $a = \sqrt{c}$ along the $x$-direction and semi-minor axis $b = \sqrt{c}/2$ along the $y$-direction.
+**Case 1: $c = 0$**
 
-**Step 4 — Domain restriction on $c$.** Since a real ellipse requires $a^{2} > 0$ and $b^{2} > 0$, we need $c > 0$. For $c = 0$, the level "curve" degenerates to the single point $(0, 0)$. For $c < 0$, no real solution exists, so $L_{c} = \emptyset$.
+$$\frac{x^{2}}{4} + \frac{y^{2}}{9} = 0.$$
 
-**Step 5 — Substitute the requested values.**
+Since both $x^{2} \geq 0$ and $y^{2} \geq 0$ with $x^{2}/4 \geq 0$ and $y^{2}/9 \geq 0$, the sum equals zero **iff each term is zero**:
 
-- For $c = 1$: $\dfrac{x^{2}}{1} + \dfrac{y^{2}}{1/4} = 1$, ellipse with $a = 1$, $b = 0.5$.
-- For $c = 4$: $\dfrac{x^{2}}{4} + \dfrac{y^{2}}{1} = 1$, ellipse with $a = 2$, $b = 1$.
-- For $c = 9$: $\dfrac{x^{2}}{9} + \dfrac{y^{2}}{9/4} = 1$, ellipse with $a = 3$, $b = 1.5$.
+$$\frac{x^{2}}{4} = 0 \;\;\text{and}\;\; \frac{y^{2}}{9} = 0 \;\;\Longrightarrow\;\; x = 0,\; y = 0.$$
 
-**Step 6 — Observation.** The ellipses grow uniformly as $c$ increases, and they all share the common major axis (the $x$-axis). The eccentricity is constant: $e = \sqrt{1 - (b/a)^{2}} = \sqrt{1 - 1/4} = \sqrt{3}/2$.
+Therefore $L_{0} = \{(0, 0)\}$, a **single point** (the vertex of the elliptic paraboloid).
 
-**Valuation Key Points (KTU Examiner Allocation):**
-- Stating the level equation: 1 mark
-- Reduction to standard form: 2 marks
-- Classification as ellipses: 1 mark
-- Valid range of $c$: 1 mark
-- Numerical substitution and final values: 2 marks
+**Case 2: $c = 1$**
 
-## 3.2 Exhaustive Worked Example 2 — Hyperbolic Surface
+$$\frac{x^{2}}{4} + \frac{y^{2}}{9} = 1.$$
 
-**Problem.** Find the level curves of $f(x, y) = x^{2} - y^{2}$. Identify the degenerate case.
+This is the **standard form of an ellipse** with semi-major axis $a = 2$ along the $x$-direction and semi-minor axis $b = 3$ along the $y$-direction.
 
-**Step 1 — Level equation.**
+Vertices: $(\pm 2, 0)$ and $(0, \pm 3)$.
 
-$$x^{2} - y^{2} \;=\; c$$
+Therefore $L_{1}$ is an **ellipse**.
 
-**Step 2 — Case analysis by sign of $c$.**
+**Case 3: $c = 3$**
 
-*Case A: $c > 0$.* Rewrite as $\dfrac{x^{2}}{c} - \dfrac{y^{2}}{c} = 1$. This is a **hyperbola** opening along the $x$-axis with vertices at $(\pm\sqrt{c},\, 0)$. Asymptotes are the lines $y = \pm x$.
+$$\frac{x^{2}}{4} + \frac{y^{2}}{9} = 3 \;\Longrightarrow\; \frac{x^{2}}{12} + \frac{y^{2}}{27} = 1.$$
 
-*Case B: $c < 0$.* Let $c = -k$ with $k > 0$. The equation becomes $y^{2} - x^{2} = k$, or $\dfrac{y^{2}}{k} - \dfrac{x^{2}}{k} = 1$. This is a **hyperbola** opening along the $y$-axis with vertices at $(0,\, \pm\sqrt{k})$. The asymptotes are again $y = \pm x$.
+This is the **standard form of an ellipse** with semi-major axis $\sqrt{12} = 2\sqrt{3}$ along the $x$-direction and semi-minor axis $\sqrt{27} = 3\sqrt{3}$ along the $y$-direction.
 
-*Case C: $c = 0$.* The equation $x^{2} - y^{2} = 0$ factors as $(x - y)(x + y) = 0$, yielding the **two intersecting straight lines** $y = x$ and $y = -x$. This is the degenerate level curve.
+Vertices: $(\pm 2\sqrt{3}, 0)$ and $(0, \pm 3\sqrt{3})$.
 
-**Step 3 — Summary table.**
+Therefore $L_{3}$ is an **ellipse** larger than $L_1$.
 
-| Value of $c$ | Curve Type | Vertices / Special Points | Asymptotes |
+### Step 3 — Geometric Conclusion
+The level curves form a **nested family of ellipses** sharing the centre $(0, 0)$, expanding outward as $c$ increases. The corresponding 3-D surface is an **elliptic paraboloid (bowl)** opening upward with vertex at the origin.
+
+| Level $c$ | Equation | Type | Key Points |
 |---|---|---|---|
-| $c > 0$ | Hyperbola, opens along $x$ | $(\pm\sqrt{c}, 0)$ | $y = \pm x$ |
-| $c = 0$ | Two intersecting lines | Origin (intersection) | — |
-| $c < 0$ | Hyperbola, opens along $y$ | $(0, \pm\sqrt{-c})$ | $y = \pm x$ |
+| $0$ | $x^{2}/4 + y^{2}/9 = 0$ | Single point | $(0, 0)$ |
+| $1$ | $x^{2}/4 + y^{2}/9 = 1$ | Ellipse | Semi-axes $2$ and $3$ |
+| $3$ | $x^{2}/12 + y^{2}/27 = 1$ | Ellipse | Semi-axes $2\sqrt{3}$ and $3\sqrt{3}$ |
 
-> [!IMPORTANT]
-> **Geometric Insight:** The two asymptotes $y = \pm x$ are themselves a level curve of $f(x, y) = 0$ *only* for this specific function. In general, level curves of a continuous function do not have asymptotes, since they are closed preimages of a single value.
+---
 
-## 3.3 Exhaustive Worked Example 3 — Non-Quadratic Function
+## 3.2 🧮 Worked Example 2 — Hyperbolic Paraboloid (Saddle) and Hyperbolic Level Curves
 
-**Problem.** Find the level curves of $f(x, y) = x \cdot y$ and interpret.
+**Problem:** Sketch the level curves of $f(x, y) = x^{2} - y^{2}$ at the levels $c = -1, \; 0, \; 1$.
 
-**Step 1 — Level equation.**
+### Step 1 — Form the equations
+$$x^{2} - y^{2} = c.$$
 
-$$x \cdot y \;=\; c$$
+### Step 2 — Case-by-case analysis
 
-**Step 2 — Case analysis.**
+**Case 1: $c = -1$**
 
-*Case A: $c > 0$.* Either both $x$ and $y$ are positive (first quadrant branch) or both are negative (third quadrant branch). The curve has branches in quadrants I and III. As $x \to 0^{\pm}$, $\vert y \vert \to \infty$, and vice versa. The coordinate axes are asymptotes.
+$$x^{2} - y^{2} = -1 \;\Longrightarrow\; y^{2} - x^{2} = 1.$$
 
-*Case B: $c < 0$.* The product is negative, so $x$ and $y$ have opposite signs. Branches lie in quadrants II and IV.
+This is the standard form of a **hyperbola** opening along the $y$-axis, with vertices at $(0, \pm 1)$ and asymptotes $y = \pm x$.
 
-*Case C: $c = 0$.* The equation $x \cdot y = 0$ gives the union of the two **coordinate axes** $x = 0$ and $y = 0$. This is the degenerate level set.
+**Case 2: $c = 0$**
 
-**Step 3 — Reparametrisation.** The curve can be written explicitly as $y = c/x$, valid for $x \ne 0$.
+$$x^{2} - y^{2} = 0 \;\Longrightarrow\; (x - y)(x + y) = 0.$$
 
-**Step 4 — Classification.** The family is a **rectangular hyperbola foliation** of the plane (excluding the origin), with the coordinate axes as common asymptotes for all members.
+This is a **pair of straight lines** $y = x$ and $y = -x$ intersecting at the origin.
 
-## 3.4 Worked Example 4 — Transcendental Function
+**Case 3: $c = 1$**
 
-**Problem.** Find the level curves of $f(x, y) = e^{x+y}$.
+$$x^{2} - y^{2} = 1.$$
 
-**Step 1 — Level equation.**
+This is a **hyperbola** opening along the $x$-axis, with vertices at $(\pm 1, 0)$ and asymptotes $y = \pm x$.
 
-$$e^{x+y} \;=\; c$$
+### Step 3 — Geometric Conclusion
+The level curves form a **hyperbolic family** with the level $c = 0$ acting as the **degenerate cross** separating the two families of hyperbolas. The 3-D surface $z = x^{2} - y^{2}$ is the famous **saddle (Pringles-chip shape)**, a hyperbolic paraboloid.
 
-**Step 2 — Take natural logarithm (valid because $\exp$ is one-to-one and positive).**
+| Level $c$ | Equation | Type |
+|---|---|---|
+| $-1$ | $y^{2} - x^{2} = 1$ | Hyperbola (opens along $y$-axis) |
+| $0$ | $x^{2} - y^{2} = 0$ | Two lines $y = \pm x$ |
+| $1$ | $x^{2} - y^{2} = 1$ | Hyperbola (opens along $x$-axis) |
 
-$$x + y \;=\; \ln c$$
+---
 
-**Step 3 — Domain restriction.** Since the exponential function is strictly positive, the equation $e^{x+y} = c$ has solutions **if and only if $c > 0$**. For $c \leq 0$, the level set is empty.
+## 3.3 🧮 Worked Example 3 — Gradient Orthogonality (Board-Favourite Theorem)
 
-**Step 4 — Geometric description.** The family is a set of **parallel straight lines** with slope $-1$ and $y$-intercept $\ln c$.
+**Problem:** Show that the gradient $\nabla f$ at a point on a level curve is perpendicular to the tangent of that level curve. Verify explicitly for $f(x, y) = x^{2} + y^{2}$ at the point $(3, 4)$.
 
-**Step 5 — Key observation.** The level curves of $e^{x+y}$ are identical in shape to those of $x + y$ (Item 4 of the formula table). The only difference is the admissible range of $c$: $(0, \infty)$ versus $(-\infty, \infty)$.
+### Step 1 — General proof (parametric)
+Let $\mathbf{r}(t) = (x(t), y(t))$ be a smooth parametrisation of the level curve $L_c$. Then by definition
 
-## 3.5 Python Implementation — Plotting a Contour Map
+$$f(\mathbf{r}(t)) = c \quad \text{for all } t.$$
 
-The following Python program generates the contour map of $f(x, y) = x^{2} + 4y^{2} - 2x$ for $c \in \{-1, 0, 1, 2, 3, 4\}$ using `matplotlib`.
+Differentiating both sides with respect to $t$ using the **chain rule**:
+
+$$\frac{\partial f}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial f}{\partial y} \cdot \frac{dy}{dt} = 0.$$
+
+Recognising the left-hand side as the dot product:
+
+$$\nabla f \cdot \mathbf{r}'(t) = 0.$$
+
+Since $\mathbf{r}'(t)$ is the **tangent vector** to $L_c$, the dot product being zero implies **orthogonality** of $\nabla f$ and the tangent. $\blacksquare$
+
+### Step 2 — Explicit verification for $f(x, y) = x^{2} + y^{2}$ at $(3, 4)$
+
+**Level curve through $(3, 4)$:** $x^{2} + y^{2} = 25$, i.e., a circle of radius $5$.
+
+**Parametrisation:** $\mathbf{r}(t) = (5\cos t, \; 5\sin t)$. Note that $\mathbf{r}(t_0) = (3, 4)$ when $\cos t_0 = 3/5$ and $\sin t_0 = 4/5$.
+
+**Tangent vector:** $\mathbf{r}'(t) = (-5\sin t, \; 5\cos t)$. At $t_0$:
+$$\mathbf{r}'(t_0) = \left(-5 \cdot \tfrac{4}{5}, \; 5 \cdot \tfrac{3}{5}\right) = (-4, \; 3).$$
+
+**Gradient of $f$:** $\nabla f(x, y) = (2x, \; 2y)$. At $(3, 4)$:
+$$\nabla f(3, 4) = (6, \; 8).$$
+
+**Dot product check:**
+$$\nabla f(3, 4) \cdot \mathbf{r}'(t_0) = (6)(-4) + (8)(3) = -24 + 24 = 0. \;\;\checkmark$$
+
+The gradient and tangent are indeed perpendicular, confirming Property 3.
+
+---
+
+## 3.4 💻 Python Implementation — Visualising Level Curves of $f(x, y) = x^{2} + y^{2} - 2x - 4y + 5$
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from typing import List, Tuple
 
-def plot_level_curves(
-    func: callable,
-    x_range: Tuple[float, float],
-    y_range: Tuple[float, float],
-    levels: List[float],
-    title: str = "Contour Map"
-) -> None:
-    """
-    Plots the level curves of a given function of two variables.
+# Define the function f(x, y)
+def f(x: float, y: float) -> float:
+    """Compute the function value f(x, y) = x^2 + y^2 - 2x - 4y + 5."""
+    return x**2 + y**2 - 2*x - 4*y + 5
 
-    Parameters
-    ----------
-    func : callable
-        A function f(x, y) returning a scalar.
-    x_range : Tuple[float, float]
-        (xmin, xmax) defining the plotting window along the x-axis.
-    y_range : Tuple[float, float]
-        (ymin, ymax) defining the plotting window along the y-axis.
-    levels : List[float]
-        The constant values c for which f(x, y) = c is drawn.
-    title : str
-        The title of the plot.
+# Create a mesh grid over the domain [-2, 6] x [-2, 6]
+x_vals = np.linspace(-2.0, 6.0, 400)
+y_vals = np.linspace(-2.0, 6.0, 400)
+X, Y = np.meshgrid(x_vals, y_vals)
+Z = f(X, Y)
 
-    Raises
-    ------
-    ValueError
-        If x_range or y_range has zero or negative width.
-    """
-    if x_range[1] <= x_range[0]:
-        raise ValueError("x_range must satisfy xmax > xmin.")
-    if y_range[1] <= y_range[0]:
-        raise ValueError("y_range must satisfy ymax > ymin.")
+# Set up the figure
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
 
-    # Build a dense 2D grid over the requested window.
-    x_vals: np.ndarray = np.linspace(x_range[0], x_range[1], 600)
-    y_vals: np.ndarray = np.linspace(y_range[0], y_range[1], 600)
-    X, Y = np.meshgrid(x_vals, y_vals)
+# --- Left subplot: 3-D surface ---
+ax_3d = fig.add_subplot(1, 2, 1, projection='3d')
+ax_3d.plot_surface(X, Y, Z, cmap='viridis', alpha=0.85, edgecolor='none')
+ax_3d.set_xlabel('x')
+ax_3d.set_ylabel('y')
+ax_3d.set_zlabel('f(x, y)')
+ax_3d.set_title('3-D Surface: z = f(x, y)')
+ax_3d.view_init(elev=30, azim=-60)
 
-    # Evaluate the function elementwise on the grid.
-    Z: np.ndarray = func(X, Y)
+# --- Right subplot: contour plot (level curves) ---
+levels_to_plot = [1, 2, 5, 10, 15]
+contour_set = axes[1].contour(X, Y, Z, levels=levels_to_plot, cmap='plasma')
+axes[1].clabel(contour_set, inline=True, fontsize=10, fmt='c=%d')
+axes[1].set_xlabel('x')
+axes[1].set_ylabel('y')
+axes[1].set_title('Level Curves of f(x, y)')
+axes[1].set_aspect('equal')
+axes[1].grid(True, linestyle='--', alpha=0.5)
 
-    # Create the figure with a labelled coordinate system.
-    fig, axis = plt.subplots(figsize=(8, 7))
-    contour_set = axis.contour(
-        X, Y, Z, levels=levels, colors="navy", linewidths=1.4
-    )
-    axis.clabel(contour_set, inline=True, fontsize=9, fmt="%d")
-
-    axis.set_xlabel("x", fontsize=12)
-    axis.set_ylabel("y", fontsize=12)
-    axis.set_title(title, fontsize=14)
-    axis.axhline(0, color="black", linewidth=0.6)
-    axis.axvline(0, color="black", linewidth=0.6)
-    axis.grid(True, linestyle="--", alpha=0.5)
-    axis.set_aspect("equal", adjustable="box")
-
-    plt.tight_layout()
-    plt.show()
-
-
-# ---------------------------------------------------------------
-# Example usage with f(x, y) = x^2 + 4y^2 - 2x
-# ---------------------------------------------------------------
-if __name__ == "__main__":
-    f = lambda x, y: x**2 + 4 * y**2 - 2 * x
-    plot_level_curves(
-        func=f,
-        x_range=(-4.0, 4.0),
-        y_range=(-2.0, 2.0),
-        levels=[-1, 0, 1, 2, 3, 4],
-        title="Level curves of f(x, y) = x^2 + 4y^2 - 2x"
-    )
+plt.tight_layout()
+plt.show()
 ```
 
-**Output interpretation:** The plot displays six labelled closed curves (ellipses). Each curve is annotated with its $c$-value. The innermost curve corresponds to the smallest $c$, and the family expands outward as $c$ grows, confirming the analytical result that $f(x, y) = x^{2} + 4y^{2} - 2x$ has elliptical level sets centred at $(1, 0)$.
+**Code Walkthrough (valuatable in the exam):**
+1. **Line 4–6** — Defines $f(x, y) = x^{2} + y^{2} - 2x - 4y + 5$ with strict type hints. The minimum of $f$ is at $(1, 2)$ where $f(1, 2) = 0$.
+2. **Lines 9–11** — Constructs a $400 \times 400$ mesh grid over the square $[-2, 6] \times [-2, 6]$.
+3. **Lines 18–22** — Renders the 3-D surface $z = f(x, y)$ using the `viridis` colormap.
+4. **Lines 25–29** — Generates the **level-curve family** at $c \in \{1, 2, 5, 10, 15\}$.
+5. **Line 30** — `clabel` annotates each curve with its $c$-value (essential for board-style diagrams).
+6. **Line 33** — `set_aspect('equal')` ensures circles are not stretched into ellipses on screen.
 
-## 3.6 Engineering-Lab Analogy Table — Mapping Level Curves to Real Instruments
+**Expected output:** A family of **concentric circles** centred at $(1, 2)$ in the contour plot, with radii $\sqrt{c}$ for $c \geq 0$.
 
-| Engineering Context | Function $f(x, y)$ | Level Curve Meaning | Instrument Reading |
-|---|---|---|---|
-| Topographic map | Elevation | Constant-altitude contour | Altimeter setting |
-| Weather chart | Atmospheric pressure | Isobar | Barometer (hPa) |
-| Thermal map | Temperature | Isotherm | Thermistor voltage |
-| Voltage plot on PCB | Electric potential | Equipotential line | Voltmeter probe |
-| Stress analysis | von Mises stress | Iso-stress contour | Strain gauge |
-| Wi-Fi survey | Received signal strength (RSSI) | Signal-coverage contour | Spectrum analyser |
+---
+
+## 3.5 🧮 Worked Example 4 — Verifying a Point Lies on a Level Curve
+
+**Problem:** Determine the constant $c$ such that the point $P = (2, -3)$ lies on the level curve of $f(x, y) = 3x^{2} - 5y^{2} + 7$. Then write the level-curve equation.
+
+### Step 1 — Compute $f$ at $P$
+$$c = f(2, -3) = 3(2)^{2} - 5(-3)^{2} + 7 = 3(4) - 5(9) + 7 = 12 - 45 + 7 = -26.$$
+
+### Step 2 — Write the level-curve equation
+$$3x^{2} - 5y^{2} + 7 = -26 \;\Longrightarrow\; 3x^{2} - 5y^{2} = -33.$$
+
+Dividing both sides by $-33$:
+
+$$\frac{y^{2}}{33/5} - \frac{x^{2}}{11} = 1 \;\Longrightarrow\; \frac{y^{2}}{6.6} - \frac{x^{2}}{11} = 1.$$
+
+### Step 3 — Classify
+This is the **standard form of a hyperbola** opening along the $y$-axis, with $a^{2} = 33/5$ and $b^{2} = 11$.
+
+| Component | Value |
+|---|---|
+| Level $c$ | $-26$ |
+| Curve equation | $3x^{2} - 5y^{2} = -33$ |
+| Shape | Hyperbola |
+| Transverse axis | Along $y$ |
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# Structural Diagrams & Schematics
+# 📘 Structural Diagrams & Schematics
 
-## 4.1 Conceptual Flow — From a 3D Surface to a 2D Contour Map
+> [!NOTE]
+> **Mermaid Safety Active:** All node IDs are alphanumeric (prefixed with letters). All labels with special characters are double-quoted. No markdown formatting inside node labels.
+
+## 4.1 🗺️ Conceptual Flow — From Function to Level Curve
 
 ```mermaid
 flowchart TD
-    subgraph surfaceLayer[Surface in 3D]
-        funcDef["Function z equals f of x and y"]
-        surfRender["Graph as a 3D surface in R3"]
-    end
-
-    subgraph slicingLayer[Horizontal Slicing]
-        planeChoice["Choose horizontal plane z equals c"]
-        intersection["Intersection curve S intersect plane z equals c"]
-    end
-
-    subgraph projLayer[Orthogonal Projection]
-        projectDown["Project curve vertically downward onto the xy plane"]
-        levelCurve["Resulting level curve L sub c in the xy plane"]
-    end
-
-    subgraph familyLayer[Contour Map Assembly]
-        sweepC["Sweep c through the range of f"]
-        contourMap["Family of all level curves forms the contour map"]
-    end
-
-    funcDef --> surfRender
-    surfRender --> planeChoice
-    planeChoice --> intersection
-    intersection --> projectDown
-    projectDown --> levelCurve
-    levelCurve --> sweepC
-    sweepC --> contourMap
-
-    classDef stepNode fill:#E8F1FF,stroke:#1F4E8C,color:#0B2545
-    classDef resultNode fill:#D5F5E3,stroke:#1E8449,color:#0E4220
-    class funcDef,planeChoice,projectDown,sweepC stepNode
-    class surfRender,intersection,levelCurve,contourMap resultNode
+    A["START: Real-valued function f of two variables"] --> B["f : D subset of R-squared to R"]
+    B --> C["Choose a real constant c from the range of f"]
+    C --> D["Form the equation f of x comma y equals c"]
+    D --> E{"Is the equation solvable explicitly for y equals g of x?"}
+    E -- "YES" --> F["Express as y equals g of x in standard form"]
+    E -- "NO" --> G["Keep the implicit form f of x comma y equals c"]
+    F --> H["Classify the curve: circle, ellipse, parabola, hyperbola, etc."]
+    G --> H
+    H --> I["Repeat for several values of c to build the level-curve family"]
+    I --> J["Plot the contour map in the xy-plane"]
+    J --> K["END: A complete level-curve family visualised"]
 ```
 
-**Reading the diagram:**
-- The **blue nodes** mark the deliberate *actions* a student performs.
-- The **green nodes** mark the *artefacts* generated by each action.
-- The flow is strictly sequential: a 3D surface exists first, then a constant-$c$ plane is chosen, then the intersection is taken, then the projection is applied, then the result is collected into a family.
-
-## 4.2 Sequential Processing Topology Matrix
+## 4.2 🔄 Relationship Between 3-D Surface and 2-D Level Curves
 
 ```mermaid
 flowchart LR
-    in1["Input: Function f of x and y"] --> step1["Step 1: Identify domain D"]
-    step1 --> step2["Step 2: Impose f equals c"]
-    step2 --> step3["Step 3: Classify conic type"]
-    step3 --> step4["Step 4: Determine valid c range"]
-    step4 --> step5["Step 5: Sketch representative curves"]
-    step5 --> out1["Output: Contour map on the xy plane"]
-
-    classDef inputNode fill:#FFF4E6,stroke:#B7791F,color:#5A3A0A
-    classDef stepNode fill:#E8F1FF,stroke:#1F4E8C,color:#0B2545
-    classDef outputNode fill:#FADBD8,stroke:#922B21,color:#641E16
-    class in1 inputNode
-    class step1,step2,step3,step4,step5 stepNode
-    class out1 outputNode
+    subgraph SURF ["3-D WORLD"]
+        S["Surface z equals f of x comma y"]
+        P["Horizontal plane z equals c"]
+    end
+    subgraph PROJ ["PROJECTION MECHANISM"]
+        V["Intersection curve: f of x comma y equals c AND z equals c"]
+    end
+    subgraph PLANE ["2-D xy-PLANE"]
+        L["Level curve L subscript c = preimage of c under f"]
+    end
+    S --- P
+    S --- V
+    P --- V
+    V -->|"orthogonal projection onto xy-plane"| L
 ```
 
-**Reading the diagram:**
-- The **amber node** is the *input* (function definition).
-- The **blue nodes** are the *processing steps* in the prescribed order.
-- The **red node** is the *output* (final contour map).
-- The arrows are directed left-to-right to enforce a strict procedural order.
+## 4.3 📊 Decision Tree — Classifying a Level Curve
 
-## 4.3 Block-Level Functional Architecture — Information Pipeline
+```mermaid
+flowchart TD
+    Q["Level curve equation: f of x comma y equals c"] --> R{"Degree of f?"}
+    R -- "Quadratic" --> S{"Sign pattern of x-squared and y-squared coefficients?"}
+    S -- "Both positive (or one positive, one zero)" --> T1["Ellipse or circle (or single point)"]
+    S -- "Coefficients have opposite signs" --> T2["Hyperbola or pair of lines"]
+    S -- "One variable squared, the other linear" --> T3["Parabola"]
+    R -- "Linear in f" --> U["Straight line"]
+    R -- "Transcendental (sin, cos, exp, log)" --> V["Wavy closed/open curves - describe parametrically"]
+    R -- "Product xy or x times y" --> W["Rectangular hyperbola"]
+    T1 --> X["END: Classified curve"]
+    T2 --> X
+    T3 --> X
+    U --> X
+    V --> X
+    W --> X
+```
+
+## 4.4 🧭 Sequential Topology — How a Student Should Solve a Level-Curve Problem
+
+```mermaid
+sequenceDiagram
+    participant STU as Student
+    participant EQ as Equation Handler
+    participant CLA as Classifier
+    participant SK as Sketch Module
+
+    STU->>EQ: 1. Read the function f of x comma y
+    EQ-->>STU: 2. Identify domain D of f
+    STU->>EQ: 3. Substitute the level c into f of x comma y equals c
+    EQ-->>STU: 4. Return the simplified equation
+    STU->>CLA: 5. Send the simplified equation for classification
+    CLA-->>STU: 6. Return the conic type (circle, ellipse, etc.)
+    STU->>SK: 7. Request a sketch with key points (vertices, centre, asymptotes)
+    SK-->>STU: 8. Return the labelled level-curve diagram
+    STU->>STU: 9. Repeat steps 3-8 for additional levels to build the family
+```
+
+## 4.5 🏗️ Functional Architecture — Level Curves in a Machine-Learning Loss Landscape
 
 ```mermaid
 flowchart TB
-    subgraph upstream[Upstream Data Source]
-        dataSrc["Scalar field on a 2D grid"]
+    subgraph INPUT ["INPUT SPACE"]
+        W["Weight vector: theta-1, theta-2"]
     end
-
-    subgraph processing[Processing Pipeline]
-        sampler["Grid sampler f of x and y"]
-        levelSolver["Implicit equation solver f equals c"]
-        classifier["Curve type classifier"]
-        renderer["2D contour renderer"]
+    subgraph LOSS ["LOSS FUNCTION"]
+        LF["Loss function J of theta-1, theta-2"]
     end
-
-    subgraph downstream[Downstream Consumers]
-        ml["Machine learning visualiser"]
-        gis["GIS topographic mapper"]
-        cv["Computer vision edge detector"]
-        cfd["Computational fluid dynamics plot"]
+    subgraph LEVELS ["LEVEL-CURVE FAMILY"]
+        L1["L subscript 0.1: nearly-optimal region"]
+        L2["L subscript 0.5: moderate loss"]
+        L3["L subscript 1.0: high loss"]
     end
-
-    dataSrc --> sampler
-    sampler --> levelSolver
-    levelSolver --> classifier
-    classifier --> renderer
-    renderer --> ml
-    renderer --> gis
-    renderer --> cv
-    renderer --> cfd
-
-    classDef srcNode fill:#EAF2F8,stroke:#21618C,color:#154360
-    classDef procNode fill:#E8F1FF,stroke:#1F4E8C,color:#0B2545
-    classDef useNode fill:#E8F8F0,stroke:#196F3D,color:#0E4023
-    class dataSrc srcNode
-    class sampler,levelSolver,classifier,renderer procNode
-    class ml,gis,cv,cfd useNode
+    subgraph GRAD ["GRADIENT FIELD"]
+        G1["Gradient nabla J points normal to each level curve"]
+        G2["Direction of steepest descent: minus nabla J"]
+    end
+    subgraph OUT ["OPTIMIZATION OUTPUT"]
+        OPT["Convergence to minimum along the gradient-flow path"]
+    end
+    W --> LF
+    LF --> L1
+    LF --> L2
+    LF --> L3
+    L1 --> G1
+    L2 --> G1
+    L3 --> G1
+    G1 --> G2
+    G2 --> OPT
 ```
-
-**Reading the diagram:**
-- The **leftmost subgraph** represents the data acquisition layer (e.g., a 2D array from a CT scan, a CSV from a weather station).
-- The **middle subgraph** is the *processing core* — exactly the steps a KTU student performs by hand, automated as a software pipeline.
-- The **rightmost subgraph** shows the four most common application domains that consume the resulting contour map.
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank & Topic Recap
+# 📘 KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 5.1 Part A — Short-Answer Questions (3 Marks Each)
-
-### Question A1 — `[KTU University Exam — July 2024]`
-
-**Define a level curve of a function of two variables. Find the level curves of $f(x, y) = x^{2} + y^{2}$ and state for which values of $c$ the level curve exists.** **[3 Marks]** *Mapped CO: CO1 — Understand | RBT Level: Understand*
-
-**Model Answer (Board-Ready):**
-
-A **level curve** of a function $f(x, y)$ at level $c$ is the set of all points $(x, y)$ in the domain for which $f(x, y) = c$. It is the locus of constant function value.
-
-For the given function:
-
-$$f(x, y) \;=\; c \;\;\Longrightarrow\;\; x^{2} + y^{2} \;=\; c$$
-
-This is a **circle** centred at the origin with radius $\sqrt{c}$. A real-valued radius exists if and only if $c \geq 0$. For $c < 0$, the level set is empty.
-
-> **Valuation Key:** Definition: 1 mark | Equation: 1 mark | Domain of $c$: 1 mark.
-
-### Question A2 — `[KTU University Exam — Dec 2023]`
-
-**Explain, with a suitable example, the geometric significance of level curves. Mention any one real-world application.** **[3 Marks]** *Mapped CO: CO1 — Understand | RBT Level: Understand*
-
-**Model Answer (Board-Ready):**
-
-**Geometric significance:** Level curves are obtained by intersecting the surface $z = f(x, y)$ with horizontal planes $z = c$ and projecting the result onto the $xy$-plane. They represent *contour lines* of constant function value.
-
-**Example:** For $f(x, y) = 4 - x^{2} - y^{2}$, the level curves $4 - x^{2} - y^{2} = c$ yield the family of circles $x^{2} + y^{2} = 4 - c$, valid for $c \leq 4$. As $c$ increases, the circles shrink toward the apex at $(0, 0, 4)$.
-
-**Application:** In **topographic cartography**, the elevation function $h(x, y)$ has level curves that appear as printed contour lines on survey maps.
-
-> **Valuation Key:** Geometric construction: 1 mark | Example with classification: 1 mark | Application: 1 mark.
+> [!IMPORTANT]
+> All questions are **simulated KTU 2024-pattern** questions. Marks are distributed according to the official KTU ESE (End-Semester Examination) template: **Part A = 3 marks each**, **Part B = 14 marks each with internal choice**.
 
 ---
 
-## 5.2 Part B — Long-Answer Questions (14 Marks Each, Module Internal Choice)
+## 📝 Part A — Short-Answer Questions (3 Marks Each)
 
-### Question A — `[KTU University Exam — Model Paper 2024]`
+### ✏️ Question A1 (3 Marks) — `[KTU University Exam – July 2024]`
+**Define the level curve of a function of two variables. State one geometric property relating the gradient and the tangent to a level curve.**
 
-**(a) Find the level curves of $f(x, y) = x^{2} - 4y^{2}$ for $c > 0$, $c = 0$, and $c < 0$. Identify the geometric type in each case.** **[7 Marks]** *Mapped CO: CO1, CO2 — Understand & Apply | RBT Level: Apply*
+**Model Answer (Valuation Key):**
 
-**(b) A landscape has elevation function $h(x, y) = 25 - x^{2} - 4y^{2}$ (in metres). A hiker is at the point $(1, 1)$. Find the level curve passing through this hiker and state the hiker's elevation. Also identify the highest point of the landscape.** **[7 Marks]** *Mapped CO: CO2, CO3 — Apply & Analyse | RBT Level: Apply*
+> **Level Curve Definition (2 Marks):**
+> For a function $f : D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ and a real constant $c$, the level curve of $f$ at level $c$ is the set
+> $$L_c = \{(x, y) \in D \mid f(x, y) = c\}.$$
+> Geometrically, it is the projection onto the $xy$-plane of the horizontal slice of the surface $z = f(x, y)$ at height $z = c$.
 
-#### Model Solution for (a)
+> **Gradient–Tangent Property (1 Mark):**
+> If $f$ is differentiable and $\nabla f(x_0, y_0) \neq \mathbf{0}$, then $\nabla f(x_0, y_0)$ is **perpendicular (normal)** to the level curve $L_c$ passing through $(x_0, y_0)$.
 
-**Step 1 — Set up the level equation.**
+---
 
-$$f(x, y) \;=\; c \;\;\Longrightarrow\;\; x^{2} - 4y^{2} \;=\; c$$
+### ✏️ Question A2 (3 Marks) — `[KTU University Exam – Dec 2023]`
+**Find the level curves of $f(x, y) = 4x^{2} + 9y^{2}$ at $c = 0$ and $c = 36$. Classify each.**
 
-**Step 2 — Case $c > 0$.** Rewrite as $\dfrac{x^{2}}{c} - \dfrac{y^{2}}{c/4} = 1$. This is a **hyperbola** with transverse axis along the $x$-direction, semi-transverse axis $\sqrt{c}$, semi-conjugate axis $\sqrt{c}/2$, vertices at $(\pm\sqrt{c},\, 0)$, and asymptotes $y = \pm x/2$. **[2 Marks]**
+**Model Answer (Valuation Key):**
 
-**Step 3 — Case $c = 0$.** The equation $x^{2} - 4y^{2} = 0$ factors as $(x - 2y)(x + 2y) = 0$, giving the two **intersecting straight lines** $y = x/2$ and $y = -x/2$. **[2 Marks]**
+> **At $c = 0$ (1.5 Marks):**
+> $4x^{2} + 9y^{2} = 0 \;\Longrightarrow\; x = 0$ and $y = 0$ simultaneously. The level curve is the **single point** $(0, 0)$.
 
-**Step 4 — Case $c < 0$.** Let $c = -k$ with $k > 0$. Then $4y^{2} - x^{2} = k$, or $\dfrac{y^{2}}{k/4} - \dfrac{x^{2}}{k} = 1$. This is a **hyperbola** opening along the $y$-axis with vertices at $(0, \pm\sqrt{k}/2)$ and the same asymptotes $y = \pm x/2$. **[2 Marks]**
+> **At $c = 36$ (1.5 Marks):**
+> $4x^{2} + 9y^{2} = 36 \;\Longrightarrow\; \dfrac{x^{2}}{9} + \dfrac{y^{2}}{4} = 1.$
+> This is an **ellipse** with semi-major axis $3$ along the $x$-axis and semi-minor axis $2$ along the $y$-axis.
 
-**Step 5 — Summary statement.** The level curves foliate the entire plane: hyperbolas in quadrants I & III (for $c > 0$), hyperbolas in quadrants II & IV (for $c < 0$), and a degenerate pair of lines at $c = 0$. **[1 Mark]**
+---
 
-> **Valuation Key:** Allocating 2 marks for each of the three cases (algebra + identification) and 1 mark for the synthesis statement is the standard KTU 2024 allocation pattern.
+## 📝 Part B — 14-Mark Questions (Internal Choice)
 
-#### Model Solution for (b)
+### 📌 Question B1 (14 Marks) — `[KTU University Exam – Dec 2024]`
+**Module: 2 | CO: CO1 | RBT Levels: Understand + Apply**
 
-**Step 1 — Evaluate $h(1, 1)$.**
+#### **Option (a) — Attempt ANY ONE of the following:**
 
-$$h(1, 1) \;=\; 25 - 1^{2} - 4(1)^{2} \;=\; 25 - 1 - 4 \;=\; 20 \text{ m}$$
+#### ✒️ **Question A (14 Marks)**
 
-So the hiker's elevation is **$20$ m** and the level value is $c = 20$. **[2 Marks]**
+**(a)** Find and sketch the level curves of $f(x, y) = x^{2} - 4y^{2}$ at the levels $c = -4, \; 0, \; 4$. **[7 Marks]**
 
-**Step 2 — Write the level equation at $c = 20$.**
+**(b)** For the function $g(x, y) = x^{3} - 3xy^{2}$, find the level curve passing through the point $(2, 1)$ and write its equation. Briefly describe its shape. **[7 Marks]**
 
-$$25 - x^{2} - 4y^{2} \;=\; 20 \;\;\Longrightarrow\;\; x^{2} + 4y^{2} \;=\; 5$$
+---
 
-**Step 3 — Reduce to standard form.**
+#### **Model Solution — Part (a) [7 Marks]**
 
-$$\frac{x^{2}}{5} + \frac{y^{2}}{5/4} \;=\; 1$$
+**[Step 1: Form the general level-curve equation — 1 Mark]**
+$$x^{2} - 4y^{2} = c.$$
 
-This is an **ellipse** centred at the origin with semi-major axis $a = \sqrt{5} \approx 2.236$ along the $x$-axis and semi-minor axis $b = \sqrt{5}/2 \approx 1.118$ along the $y$-axis. **[2 Marks]**
+**[Step 2: Case $c = -4$ — 2 Marks]**
+$$x^{2} - 4y^{2} = -4 \;\Longrightarrow\; 4y^{2} - x^{2} = 4 \;\Longrightarrow\; \frac{y^{2}}{1} - \frac{x^{2}}{4} = 1.$$
+This is a **hyperbola** opening along the $y$-axis, with $a = 1$, $b = 2$, and asymptotes $y = \pm \dfrac{x}{2}$. Vertices at $(0, \pm 1)$.
 
-**Step 4 — Confirm the hiker is on the ellipse.** Substituting $(1, 1)$ into $x^{2} + 4y^{2}$: $1 + 4(1) = 5$. Confirmed. **[1 Mark]**
+**[Step 3: Case $c = 0$ — 2 Marks]**
+$$x^{2} - 4y^{2} = 0 \;\Longrightarrow\; (x - 2y)(x + 2y) = 0.$$
+This is a **pair of straight lines** $x = 2y$ and $x = -2y$ crossing at the origin. Asymptotes of the hyperbolas in $c = \pm 4$.
 
-**Step 5 — Find the highest point.** The maximum of $h(x, y) = 25 - x^{2} - 4y^{2}$ is attained where the penalty terms vanish, i.e., at $(x, y) = (0, 0)$. The maximum elevation is $h(0, 0) = 25$ m. The highest point is the **summit at $(0, 0, 25)$**. **[2 Marks]**
+**[Step 4: Case $c = 4$ — 1 Mark]**
+$$x^{2} - 4y^{2} = 4 \;\Longrightarrow\; \frac{x^{2}}{4} - \frac{y^{2}}{1} = 1.$$
+This is a **hyperbola** opening along the $x$-axis, with $a = 2$, $b = 1$, and asymptotes $y = \pm \dfrac{x}{2}$. Vertices at $(\pm 2, 0)$.
 
-> **Valuation Key:** Evaluating $h$ at the given point: 2 marks | Deriving the ellipse equation: 2 marks | Verification: 1 mark | Identifying the summit: 2 marks.
+**[Step 5: Sketch description — 1 Mark]**
+A saddle-shaped (hyperbolic paraboloid) surface $z = x^{2} - 4y^{2}$ has level curves forming a hyperbolic family, with the level $c = 0$ being the degenerate cross of asymptotes separating the two families of hyperbolas.
 
-### Question B — `[KTU University Exam — Model Paper 2024]` *(Alternative Choice)*
+---
 
-**(a) Find the level curves of $f(x, y) = 4 - x^{2} - y^{2}$ and describe how the family behaves as $c$ varies over its admissible range.** **[7 Marks]** *Mapped CO: CO1, CO2 — Understand & Apply | RBT Level: Apply*
+#### **Model Solution — Part (b) [7 Marks]**
 
-**(b) A heat distribution over a metal plate is given by $T(x, y) = 100 - 4x^{2} - y^{2}$ (in °C). Determine the isothermal curve at $T = 75\,^{\circ}\mathrm{C}$. Also find the hottest and coldest points (within the domain $|x| \leq 4$, $|y| \leq 9$) and their corresponding temperatures.** **[7 Marks]** *Mapped CO: CO2, CO3 — Apply & Analyse | RBT Level: Apply & Analyse*
+**[Step 1: Compute $c$ at $(2, 1)$ — 2 Marks]**
+$$c = g(2, 1) = (2)^{3} - 3(2)(1)^{2} = 8 - 6 = 2.$$
 
-#### Model Solution for (a)
+**[Step 2: Write the level-curve equation — 2 Marks]**
+$$x^{3} - 3xy^{2} = 2.$$
 
-**Step 1 — Level equation.**
+**[Step 3: Identify the function — 1 Mark]**
+The function $g(x, y) = x^{3} - 3xy^{2}$ is the **real part of the complex cube** $z^{3}$ where $z = x + iy$. Indeed, $(x + iy)^{3} = x^{3} - 3xy^{2} + i(3x^{2}y - y^{3})$.
 
-$$4 - x^{2} - y^{2} \;=\; c \;\;\Longrightarrow\;\; x^{2} + y^{2} \;=\; 4 - c$$
+**[Step 4: Describe the shape — 2 Marks]**
+The level curve $x^{3} - 3xy^{2} = 2$ is a **folium of Descartes-type cubic curve**. It is a closed, S-shaped cubic that passes through the origin-related region, has no asymptotes, and exhibits point symmetry about the origin. For visualisation, in polar form $r^{3}\cos(3\theta) = 2$, this is one "petal" of the three-leaved rose family $r = (2/\cos 3\theta)^{1/3}$.
 
-**Step 2 — Domain of $c$.** A real solution requires $4 - c \geq 0$, i.e., $c \leq 4$. For $c = 4$, the level "curve" is the single point $(0, 0)$. For $c < 4$, the family is **concentric circles** of radius $\sqrt{4 - c}$ centred at the origin. **[2 Marks]**
+---
 
-**Step 3 — Behaviour as $c$ increases.**
+#### ✒️ **Question B (14 Marks)** — *Alternative to Option (a)*
 
-- As $c$ increases from $-\infty$ to $4$, the radius $\sqrt{4 - c}$ decreases monotonically from $\infty$ to $0$.
-- The circles therefore shrink uniformly toward the origin as $c \to 4^{-}$.
-- At $c = 4$, the level set collapses to the point $(0, 0)$, which corresponds to the **apex** of the downward-opening paraboloid $z = 4 - x^{2} - y^{2}$.
-- For $c > 4$, no level curve exists ($L_{c} = \emptyset$). **[3 Marks]**
+**(a)** Sketch the level curves of $f(x, y) = \sin(x) + \cos(y)$ for $c = 0, \; 1, \; 2$. State the range of $c$ for which level curves are non-empty. **[7 Marks]**
 
-**Step 4 — Connection to the surface.** The surface is a downward paraboloid with apex at $(0, 0, 4)$. The level curves are the horizontal cross-sections of this paraboloid, viewed from above. **[2 Marks]**
+**(b)** If $f(x, y) = x^{2} + y^{2} - 6x + 8y$, show that the level curve $L_0$ is a single point, and find that point. Then find the gradient $\nabla f$ at the origin. **[7 Marks]**
 
-> **Valuation Key:** Deriving the circle family: 2 marks | Range of $c$: 2 marks | Behavioural description: 2 marks | Geometric connection: 1 mark.
+---
 
-#### Model Solution for (b)
+#### **Model Solution — Question B, Part (a) [7 Marks]**
 
-**Step 1 — Set up the isothermal condition.**
+**[Step 1: Range of $c$ — 2 Marks]**
+Since $\sin(x) \in [-1, 1]$ and $\cos(y) \in [-1, 1]$, the range of $f$ is $[-2, 2]$. Thus $L_c \neq \emptyset$ iff $-2 \leq c \leq 2$.
 
-$$100 - 4x^{2} - y^{2} \;=\; 75 \;\;\Longrightarrow\;\; 4x^{2} + y^{2} \;=\; 25$$
+**[Step 2: Level $c = 2$ — 1 Mark]**
+$\sin(x) + \cos(y) = 2$ requires $\sin(x) = 1$ and $\cos(y) = 1$, i.e., $x = \pi/2 + 2k\pi$ and $y = 2m\pi$. The level curve is a **discrete lattice of points** (an infinite set of isolated points).
 
-**Step 2 — Reduce to standard form.**
+**[Step 3: Level $c = 1$ — 2 Marks]**
+$\sin(x) + \cos(y) = 1$. This is a family of **closed wavy curves** in the $xy$-plane, with maxima of $\sin(x)$ at $x = \pi/2$ etc. Plot shows bulb-shaped closed regions.
 
-$$\frac{x^{2}}{25/4} + \frac{y^{2}}{25} \;=\; 1$$
+**[Step 4: Level $c = 0$ — 2 Marks]**
+$\sin(x) + \cos(y) = 0 \;\Longrightarrow\; \cos(y) = -\sin(x) = \cos(\pi + x).$ Hence $y = \pm(\pi + x) + 2k\pi$, a family of straight lines with slope $\pm 1$.
 
-This is an **ellipse** with semi-axes $a = 5/2 = 2.5$ (along $x$) and $b = 5$ (along $y$). **[2 Marks]**
+---
 
-**Step 3 — Verify a sample point.** At $(0, 5)$: $T(0, 5) = 100 - 0 - 25 = 75\,^{\circ}\mathrm{C}$. ✓ At $(5/2, 0)$: $T(2.5, 0) = 100 - 25 - 0 = 75\,^{\circ}\mathrm{C}$. ✓ **[1 Mark]**
+#### **Model Solution — Question B, Part (b) [7 Marks]**
 
-**Step 4 — Find the hottest point.** $T(x, y) = 100 - 4x^{2} - y^{2}$ is maximised when the penalty terms are minimised, i.e., at $(x, y) = (0, 0)$. The maximum is $T(0, 0) = 100\,^{\circ}\mathrm{C}$. The point is $(0, 0)$ (well within the domain). **[2 Marks]**
+**[Step 1: Complete the square — 3 Marks]**
+$$f(x, y) = (x^{2} - 6x + 9) + (y^{2} + 8y + 16) - 9 - 16 = (x - 3)^{2} + (y + 4)^{2} - 25.$$
 
-**Step 5 — Find the coldest point inside the domain.** The function is non-negative and decreases as $\vert x \vert$ or $\vert y \vert$ grows. The coldest point lies at a **corner of the rectangular domain**. Evaluate at all four corners:
+**[Step 2: Level curve $L_0$ — 2 Marks]**
+$$(x - 3)^{2} + (y + 4)^{2} - 25 = 0 \;\Longrightarrow\; (x - 3)^{2} + (y + 4)^{2} = 25.$$
 
-- $T(4, 9) = 100 - 64 - 81 = -45\,^{\circ}\mathrm{C}$
-- $T(-4, 9) = 100 - 64 - 81 = -45\,^{\circ}\mathrm{C}$
-- $T(4, -9) = 100 - 64 - 81 = -45\,^{\circ}\mathrm{C}$
-- $T(-4, -9) = 100 - 64 - 81 = -45\,^{\circ}\mathrm{C}$
+**[Step 3: Identify as a circle of radius 5 — 1 Mark]**
+$L_0$ is a **circle** of radius $5$ centred at $(3, -4)$, not a single point. *(Note: The level curve is non-degenerate; the single point occurs at $c = -25$ where the vertex of the paraboloid lies.)* The actual single-point level is $L_{-25} = \{(3, -4)\}$.
 
-All four corners give the same temperature $-45\,^{\circ}\mathrm{C}$, which is therefore the **minimum** on the closed rectangular domain. **[2 Marks]**
+**[Step 4: Gradient at origin — 1 Mark]**
+$\nabla f(x, y) = (2x - 6,\; 2y + 8)$. At $(0, 0)$: $\nabla f(0, 0) = (-6,\; 8)$.
 
-> **Valuation Key:** Isothermal equation: 2 marks | Verification: 1 mark | Hottest point: 2 marks | Coldest point: 2 marks.
+---
 
 > [!WARNING]
-> **KTU Examiner's Pitfall Callout:**
-> 1. **Do not forget the domain of $c$.** For functions like $x^{2} + y^{2}$ or $4 - x^{2} - y^{2}$, the level curve exists only for $c \geq 0$ or $c \leq 4$ respectively. Omitting this restriction costs **at least 1 mark** under KTU 2024 valuation.
-> 2. **Do not confuse the "level" with the "value".** A common error is to write $z = c$ on the level curve. The level curve lives in the $xy$-plane; $z$ is *not* a coordinate of the level curve.
-> 3. **For $c = 0$ cases, declare degeneracy.** When the level set reduces to a single point or a pair of lines (e.g., for $x^{2} - y^{2} = 0$), explicitly call it a *degenerate* level curve. Examiners reward this language.
-> 4. **Always state the type of conic.** KTU 2024 explicitly requires "identify the curve" — just writing the implicit equation without classification forfeits 1–2 marks.
-> 5. **When asked to "sketch", draw the asymptotes for hyperbolas** and the **centres and semi-axes** for ellipses. A sketch without these reference elements is considered incomplete.
+> **KTU Examiner's Valuation Warning — Common Pitfalls**
+> 1. ❌ **Confusing $L_c$ with the graph $y = g(x)$:** $L_c$ is a *level set*, not a function graph. The same $x$ may map to multiple $y$'s.
+> 2. ❌ **Forgetting to check the range of $c$:** If $c$ is outside the range of $f$, $L_c = \emptyset$. Always state the valid range.
+> 3. ❌ **Ignoring sign of $c$ in conics:** $x^{2} + y^{2} = c$ is a circle only for $c > 0$, a point for $c = 0$, and the empty set for $c < 0$.
+> 4. ❌ **Mistaking the gradient for the tangent:** The gradient $\nabla f$ is the **normal**, not the tangent. To get the tangent, you must use the dot product $\nabla f \cdot \mathbf{r}'(t) = 0$.
+> 5. ❌ **Skipping the sketch label:** Always annotate each level curve with its $c$-value (e.g., $c = 1$, $c = 2$) in contour plots.
+> 6. ❌ **Wrong asymptotes for hyperbolas:** The asymptotes of $\dfrac{x^{2}}{a^{2}} - \dfrac{y^{2}}{b^{2}} = 1$ are $y = \pm \dfrac{b}{a}\,x$, not $y = \pm \dfrac{a}{b}\,x$. Draw a small box and write down the equation before computing.
 
 ---
 
-## 5.3 Topic Recap & Important Things to Remember
+## 🧠 Topic Recap & Important Things to Remember
 
-- **Definition:** A level curve of $f(x, y)$ at level $c$ is the set $L_{c} = \{(x, y) \in D \mid f(x, y) = c\}$. It is the 2D-projection of the intersection of the surface $z = f(x, y)$ with the horizontal plane $z = c$.
-- **Geometric construction pipeline:** 3D surface $\to$ choose $c$ $\to$ horizontal slice $\to$ vertical projection $\to$ level curve $\to$ family = contour map.
-- **Always specify the admissible range of $c$** by checking when the implicit equation has real solutions.
-- **Quadratic forms classification (memorise):**
-  - $x^{2} + y^{2} = c$ with $c > 0$: **circles**.
-  - $x^{2} + 4y^{2} = c$ with $c > 0$: **ellipses** with semi-axes $\sqrt{c}$ and $\sqrt{c}/2$.
-  - $x^{2} - y^{2} = c$ with $c \ne 0$: **hyperbolas**; with $c = 0$: **pair of intersecting lines**.
-  - $x + y = c$: **parallel straight lines** of slope $-1$.
-  - $xy = c$ with $c \ne 0$: **rectangular hyperbolas** with coordinate axes as asymptotes.
-  - $e^{x+y} = c$: requires $c > 0$, gives lines $x + y = \ln c$.
-- **Degenerate level sets** occur at parameter values where the implicit equation factors or reduces to a point. Always declare degeneracy explicitly.
-- **Engineering relevance:** Level curves underlie topographic maps, medical imaging (iso-contour extraction), machine-learning loss visualisation, fluid-dynamics isobars, and PCB equipotential plots.
-- **Python implementation:** Use `matplotlib.pyplot.contour` with a `meshgrid` over the desired window and a list of level values. Label each contour using `clabel`.
-- **KTU 2024 valuation cues:** (i) state the level equation, (ii) classify the conic, (iii) declare the range of $c$, (iv) provide at least one numerical sample point or sketch. Missing any of these forfeits marks.
-- **Common pitfall:** Do not write $z = c$ as the level curve; the level curve lives in the $xy$-plane and the equation is $f(x, y) = c$, not $z = c$.
+> [!TIP]
+> **High-Density Revision Checklist — Master These Before the Exam**
+
+- ✅ **Definition:** A **level curve** of $f(x, y)$ at level $c$ is the set $L_c = \{(x, y) \mid f(x, y) = c\}$ — the preimage of $\{c\}$ under $f$.
+- ✅ **Geometric Meaning:** It is the **orthogonal projection** onto the $xy$-plane of the intersection of the surface $z = f(x, y)$ with the horizontal plane $z = c$.
+- ✅ **Range Restriction:** $L_c \neq \emptyset$ **iff** $c \in \text{Range}(f)$.
+- ✅ **Disjointness:** Distinct levels give **disjoint** level curves.
+- ✅ **Circle:** $x^{2} + y^{2} = c$ for $c > 0$ — radius $\sqrt{c}$ centred at origin.
+- ✅ **Ellipse:** $\dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = 1$ — semi-axes $a$ and $b$.
+- ✅ **Hyperbola (Standard):** $\dfrac{x^{2}}{a^{2}} - \dfrac{y^{2}}{b^{2}} = \pm 1$ — asymptotes $y = \pm \dfrac{b}{a}\,x$.
+- ✅ **Parabola:** $y = x^{2} + c$ (axis parallel to $y$-axis) or $x = y^{2} + c$ (axis parallel to $x$-axis).
+- ✅ **Pair of Lines:** When $c = 0$ in a hyperbolic-type level equation, e.g., $x^{2} - 4y^{2} = 0$ gives $x = \pm 2y$.
+- ✅ **Gradient Orthogonality (THEOREM):** $\nabla f \cdot \mathbf{r}'(t) = 0$ on $L_c$, so $\nabla f$ is normal to $L_c$.
+- ✅ **Steepest Ascent:** The unit vector $\dfrac{\nabla f}{\vert \nabla f \vert}$ points in the direction of **maximum increase** of $f$, **perpendicular** to the level curve.
+- ✅ **Engineering Use Cases:** Topographic maps, loss landscapes in ML, equipotential lines, image edges (level curves of intensity), isobars in meteorology.
+- ✅ **Connection to Gradient Descent:** Optimizers follow the path **perpendicular** to successive level curves of the loss function $J(\theta)$.
+- ✅ **Programming Implementation:** `matplotlib.pyplot.contour(X, Y, Z, levels=[...])` draws the level-curve family; use `clabel()` to annotate each curve with its $c$-value.
+- ✅ **Exam Tip:** Always (i) state the range of $c$ first, (ii) write the simplified standard form, (iii) identify the conic type, (iv) list key points (centre, vertices, foci, asymptotes), and (v) sketch with labels.
 
 <!-- SECTION_5_END -->

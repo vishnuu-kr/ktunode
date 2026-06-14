@@ -8,7 +8,11 @@ import { MAX_SEMESTER } from "@/lib/constants";
 
 /** Valid branch identifiers for KTU Node */
 export const VALID_BRANCHES = [
-  "cs"
+  "cs",
+  "ce",
+  "ec",
+  "ee",
+  "me"
 ] as const;
 
 /** Type representing a valid branch ID */

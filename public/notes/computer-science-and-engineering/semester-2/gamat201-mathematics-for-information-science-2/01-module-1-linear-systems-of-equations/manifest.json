@@ -1,0 +1,50 @@
+{
+  "course_name": "MATHEMATICS FOR INFORMATION SCIENCE – 2",
+  "course_code": "GAMAT201",
+  "module_number": 1,
+  "module_title": "Linear systems of equations",
+  "topics_generated": [
+    {
+      "title": "Linear systems of equations",
+      "slug": "linear-systems-of-equations",
+      "path": "linear-systems-of-equations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Solution by Gauss elimination",
+      "slug": "solution-by-gauss-elimination",
+      "path": "solution-by-gauss-elimination/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Row echelon form and rank of a matrix",
+      "slug": "row-echelon-form-and-rank-of-a-matrix",
+      "path": "row-echelon-form-and-rank-of-a-matrix/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Fundamental theorem for linear systems - homogeneous and non-homogeneous (without proof)",
+      "slug": "fundamental-theorem-for-linear-systems-homogeneous-and-non-homogeneous-without-proof",
+      "path": "fundamental-theorem-for-linear-systems-homogeneous-and-non-homogeneous-without-proof/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Eigen values and Eigen vectors of matrices",
+      "slug": "eigen-values-and-eigen-vectors-of-matrices",
+      "path": "eigen-values-and-eigen-vectors-of-matrices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Diagonalization of matrices.",
+      "slug": "diagonalization-of-matrices",
+      "path": "diagonalization-of-matrices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

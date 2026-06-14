@@ -1,0 +1,29 @@
+{
+  "course_name": "DATA STRUCTURES LAB",
+  "course_code": "PCCSL307",
+  "module_number": 18,
+  "module_title": "Merge k sorted lists into a single sorted list using a heap",
+  "topics_generated": [
+    {
+      "title": "Merge K sorted lists into a single sorted list using a heap.",
+      "slug": "merge-k-sorted-lists-into-a-single-sorted-list-using-a-heap",
+      "path": "merge-k-sorted-lists-into-a-single-sorted-list-using-a-heap/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Use a min-heap to keep track of the smallest element from each list.",
+      "slug": "use-a-min-heap-to-keep-track-of-the-smallest-element-from-each-list",
+      "path": "use-a-min-heap-to-keep-track-of-the-smallest-element-from-each-list/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Repeatedly extract the smallest element and insert the next element from the corresponding list into the heap until all lists are merged.",
+      "slug": "repeatedly-extract-the-smallest-element-and-insert-the-next-element-from-the-corresponding-list",
+      "path": "repeatedly-extract-the-smallest-element-and-insert-the-next-element-from-the-corresponding-list/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

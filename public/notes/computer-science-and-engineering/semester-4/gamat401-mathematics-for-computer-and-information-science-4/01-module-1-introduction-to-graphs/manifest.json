@@ -2,33 +2,89 @@
   "course_name": "MATHEMATICS FOR COMPUTER AND INFORMATION SCIENCE-4",
   "course_code": "GAMAT401",
   "module_number": 1,
-  "module_title": "Introduction to Graphs",
+  "module_title": "Introduction to graphs",
   "topics_generated": [
     {
-      "title": "Basic definitions, Applications of graphs, Finite and infinite graphs",
-      "slug": "basic-definitions-applications-of-graphs-finite-and-infinite-graphs",
-      "path": "basic-definitions-applications-of-graphs-finite-and-infinite-graphs/notes.md",
+      "title": "Introduction to Graphs - Basic definition",
+      "slug": "introduction-to-graphs-basic-definition",
+      "path": "introduction-to-graphs-basic-definition/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Incidence and Degree of a vertex, Isolated vertex, Pendant vertex, and Null graph",
-      "slug": "incidence-and-degree-of-a-vertex-isolated-vertex-pendant-vertex-and-null-graph",
-      "path": "incidence-and-degree-of-a-vertex-isolated-vertex-pendant-vertex-and-null-graph/notes.md",
+      "title": "Application of graphs",
+      "slug": "application-of-graphs",
+      "path": "application-of-graphs/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Graph Isomorphism, Subgraphs",
-      "slug": "graph-isomorphism-subgraphs",
-      "path": "graph-isomorphism-subgraphs/notes.md",
+      "title": "finite and infinite graphs",
+      "slug": "finite-and-infinite-graphs",
+      "path": "finite-and-infinite-graphs/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Walks, Paths, and Circuits, Connected graphs, Disconnected graphs, and Components",
-      "slug": "walks-paths-and-circuits-connected-graphs-disconnected-graphs-and-components",
-      "path": "walks-paths-and-circuits-connected-graphs-disconnected-graphs-and-components/notes.md",
+      "title": "Incidence and Degree",
+      "slug": "incidence-and-degree",
+      "path": "incidence-and-degree/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Isolated vertex",
+      "slug": "isolated-vertex",
+      "path": "isolated-vertex/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pendant vertex and Null graph",
+      "slug": "pendant-vertex-and-null-graph",
+      "path": "pendant-vertex-and-null-graph/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Isomorphism",
+      "slug": "isomorphism",
+      "path": "isomorphism/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sub graphs",
+      "slug": "sub-graphs",
+      "path": "sub-graphs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Walks",
+      "slug": "walks",
+      "path": "walks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Paths and circuits",
+      "slug": "paths-and-circuits",
+      "path": "paths-and-circuits/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Connected graphs",
+      "slug": "connected-graphs",
+      "path": "connected-graphs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Disconnected graphs and components",
+      "slug": "disconnected-graphs-and-components",
+      "path": "disconnected-graphs-and-components/notes.md",
       "has_mermaid": true,
       "has_math": true
     }

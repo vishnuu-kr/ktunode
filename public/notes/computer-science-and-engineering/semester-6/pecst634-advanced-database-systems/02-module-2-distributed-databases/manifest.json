@@ -1,0 +1,85 @@
+{
+  "course_name": "ADVANCED DATABASE SYSTEMS",
+  "course_code": "PECST634",
+  "module_number": 2,
+  "module_title": "Distributed databases",
+  "topics_generated": [
+    {
+      "title": "Distributed Databases  - Distributed Systems, Introduction, Architecture",
+      "slug": "distributed-databases-distributed-systems-introduction-architecture",
+      "path": "distributed-databases-distributed-systems-introduction-architecture/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Distributed Database Concepts",
+      "slug": "distributed-database-concepts",
+      "path": "distributed-database-concepts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Distributed Data Storage",
+      "slug": "distributed-data-storage",
+      "path": "distributed-data-storage/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Distributed Transactions",
+      "slug": "distributed-transactions",
+      "path": "distributed-transactions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Commit Protocols",
+      "slug": "commit-protocols",
+      "path": "commit-protocols/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Concurrency Control",
+      "slug": "concurrency-control",
+      "path": "concurrency-control/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Query Processing and Decomposition - Query Processing Objectives",
+      "slug": "query-processing-and-decomposition-query-processing-objectives",
+      "path": "query-processing-and-decomposition-query-processing-objectives/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Characterization of Query Processors",
+      "slug": "characterization-of-query-processors",
+      "path": "characterization-of-query-processors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Layers of Query Processing",
+      "slug": "layers-of-query-processing",
+      "path": "layers-of-query-processing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Query Decomposition",
+      "slug": "query-decomposition",
+      "path": "query-decomposition/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Localization of Distributed Data",
+      "slug": "localization-of-distributed-data",
+      "path": "localization-of-distributed-data/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

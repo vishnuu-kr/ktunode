@@ -1,0 +1,148 @@
+{
+  "course_name": "OPERATING SYSTEMS",
+  "course_code": "PCCST403",
+  "module_number": 3,
+  "module_title": "Memory management",
+  "topics_generated": [
+    {
+      "title": "Memory management  - Address Space",
+      "slug": "memory-management-address-space",
+      "path": "memory-management-address-space/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Memory API",
+      "slug": "memory-api",
+      "path": "memory-api/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Address Translation - An Example",
+      "slug": "address-translation-an-example",
+      "path": "address-translation-an-example/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dynamic (Hardware-based) Relocation",
+      "slug": "dynamic-hardware-based-relocation",
+      "path": "dynamic-hardware-based-relocation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Segmentation:",
+      "slug": "segmentation",
+      "path": "segmentation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Generalized Base/Bounds",
+      "slug": "generalized-base-bounds",
+      "path": "generalized-base-bounds/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Address translation in segmentation",
+      "slug": "address-translation-in-segmentation",
+      "path": "address-translation-in-segmentation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Support for Sharing",
+      "slug": "support-for-sharing",
+      "path": "support-for-sharing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Virtual memory  - Paging: Introduction",
+      "slug": "virtual-memory-paging-introduction",
+      "path": "virtual-memory-paging-introduction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "page tables and hardware support",
+      "slug": "page-tables-and-hardware-support",
+      "path": "page-tables-and-hardware-support/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "TLBs",
+      "slug": "tlbs",
+      "path": "tlbs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Example: Accessing An Array",
+      "slug": "example-accessing-an-array",
+      "path": "example-accessing-an-array/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "- TLB hits and misses",
+      "slug": "tlb-hits-and-misses",
+      "path": "tlb-hits-and-misses/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Handling TLB misses",
+      "slug": "handling-tlb-misses",
+      "path": "handling-tlb-misses/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "TLB structure",
+      "slug": "tlb-structure",
+      "path": "tlb-structure/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Reducing the page table size",
+      "slug": "reducing-the-page-table-size",
+      "path": "reducing-the-page-table-size/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Going beyond physical memory   -  Swap space",
+      "slug": "going-beyond-physical-memory-swap-space",
+      "path": "going-beyond-physical-memory-swap-space/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "page fault and its control flow",
+      "slug": "page-fault-and-its-control-flow",
+      "path": "page-fault-and-its-control-flow/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "page replacement policies",
+      "slug": "page-replacement-policies",
+      "path": "page-replacement-policies/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Thrashing",
+      "slug": "thrashing",
+      "path": "thrashing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

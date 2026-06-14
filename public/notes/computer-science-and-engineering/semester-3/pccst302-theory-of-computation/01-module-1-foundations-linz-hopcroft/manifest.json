@@ -1,0 +1,113 @@
+{
+  "course_name": "THEORY OF COMPUTATION",
+  "course_code": "PCCST302",
+  "module_number": 1,
+  "module_title": "Foundations linz hopcroft",
+  "topics_generated": [
+    {
+      "title": "Foundations (Linz, Hopcroft)",
+      "slug": "foundations-linz-hopcroft",
+      "path": "foundations-linz-hopcroft/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Motivation for studying computability, need for mathematical modeling - automata",
+      "slug": "motivation-for-studying-computability-need-for-mathematical-modeling-automata",
+      "path": "motivation-for-studying-computability-need-for-mathematical-modeling-automata/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Introducing automata through simple models - On/Off switch, coffee vending machine.",
+      "slug": "introducing-automata-through-simple-models-on-off-switch-coffee-vending-machine",
+      "path": "introducing-automata-through-simple-models-on-off-switch-coffee-vending-machine/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Three basic concepts: Alphabet, Strings, and Languages",
+      "slug": "three-basic-concepts-alphabet-strings-and-languages",
+      "path": "three-basic-concepts-alphabet-strings-and-languages/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Finite Automata (Linz, Hopcroft)",
+      "slug": "finite-automata-linz-hopcroft",
+      "path": "finite-automata-linz-hopcroft/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Formal definition of a finite automaton",
+      "slug": "formal-definition-of-a-finite-automaton",
+      "path": "formal-definition-of-a-finite-automaton/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Deterministic Finite Automata (DFA)",
+      "slug": "deterministic-finite-automata-dfa",
+      "path": "deterministic-finite-automata-dfa/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Regular languages",
+      "slug": "regular-languages",
+      "path": "regular-languages/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Nondeterminism (guess and verify paradigm)",
+      "slug": "nondeterminism-guess-and-verify-paradigm",
+      "path": "nondeterminism-guess-and-verify-paradigm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Formal definition of a nondeterministic finite automaton",
+      "slug": "formal-definition-of-a-nondeterministic-finite-automaton",
+      "path": "formal-definition-of-a-nondeterministic-finite-automaton/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "NFA with epsilon transitions",
+      "slug": "nfa-with-epsilon-transitions",
+      "path": "nfa-with-epsilon-transitions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Eliminating epsilon transitions (Proof not expected)",
+      "slug": "eliminating-epsilon-transitions-proof-not-expected",
+      "path": "eliminating-epsilon-transitions-proof-not-expected/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Equivalence of NFAs and DFAs (Proof not expected) - The Subset Construction.",
+      "slug": "equivalence-of-nfas-and-dfas-proof-not-expected-the-subset-construction",
+      "path": "equivalence-of-nfas-and-dfas-proof-not-expected-the-subset-construction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "DFA State Minimization",
+      "slug": "dfa-state-minimization",
+      "path": "dfa-state-minimization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications of finite automata - text search, keyword recognition",
+      "slug": "applications-of-finite-automata-text-search-keyword-recognition",
+      "path": "applications-of-finite-automata-text-search-keyword-recognition/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

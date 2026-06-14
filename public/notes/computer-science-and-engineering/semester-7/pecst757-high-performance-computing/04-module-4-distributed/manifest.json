@@ -1,0 +1,64 @@
+{
+  "course_name": "HIGH PERFORMANCE COMPUTING",
+  "course_code": "PECST757",
+  "module_number": 4,
+  "module_title": "Distributed",
+  "topics_generated": [
+    {
+      "title": "Distributed-memory parallel programming with MPI :-",
+      "slug": "distributed-memory-parallel-programming-with-mpi",
+      "path": "distributed-memory-parallel-programming-with-mpi/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Message passing",
+      "slug": "message-passing",
+      "path": "message-passing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "A short introduction to MPI , A simple example",
+      "slug": "a-short-introduction-to-mpi-a-simple-example",
+      "path": "a-short-introduction-to-mpi-a-simple-example/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Messages and point-to-point communication, Collective communication",
+      "slug": "messages-and-point-to-point-communication-collective-communication",
+      "path": "messages-and-point-to-point-communication-collective-communication/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Nonblocking point-to-point communication, Virtual topologies",
+      "slug": "nonblocking-point-to-point-communication-virtual-topologies",
+      "path": "nonblocking-point-to-point-communication-virtual-topologies/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Example- MPI parallelization of a Jacobi solver",
+      "slug": "example-mpi-parallelization-of-a-jacobi-solver",
+      "path": "example-mpi-parallelization-of-a-jacobi-solver/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "MPI implementation",
+      "slug": "mpi-implementation",
+      "path": "mpi-implementation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance properties.",
+      "slug": "performance-properties",
+      "path": "performance-properties/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

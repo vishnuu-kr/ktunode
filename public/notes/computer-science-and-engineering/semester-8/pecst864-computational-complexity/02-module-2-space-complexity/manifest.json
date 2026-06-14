@@ -1,0 +1,50 @@
+{
+  "course_name": "COMPUTATIONAL COMPLEXITY",
+  "course_code": "PECST864",
+  "module_number": 2,
+  "module_title": "Space complexity",
+  "topics_generated": [
+    {
+      "title": "Space Complexity - Space complexity classes: L, NL, PSPACE",
+      "slug": "space-complexity-space-complexity-classes-l-nl-pspace",
+      "path": "space-complexity-space-complexity-classes-l-nl-pspace/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Savitch's theorem and NL-completeness",
+      "slug": "savitch-s-theorem-and-nl-completeness",
+      "path": "savitch-s-theorem-and-nl-completeness/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "PSPACE-completeness.",
+      "slug": "pspace-completeness",
+      "path": "pspace-completeness/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Polynomial Hierarchy and Alternation - Definition of the polynomial hierarchy (PH)",
+      "slug": "polynomial-hierarchy-and-alternation-definition-of-the-polynomial-hierarchy-ph",
+      "path": "polynomial-hierarchy-and-alternation-definition-of-the-polynomial-hierarchy-ph/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Complete problems for each level of PH",
+      "slug": "complete-problems-for-each-level-of-ph",
+      "path": "complete-problems-for-each-level-of-ph/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Relationship between PH and other classes.",
+      "slug": "relationship-between-ph-and-other-classes",
+      "path": "relationship-between-ph-and-other-classes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

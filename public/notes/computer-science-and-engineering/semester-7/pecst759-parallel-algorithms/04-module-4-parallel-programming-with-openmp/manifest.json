@@ -1,0 +1,71 @@
+{
+  "course_name": "PARALLEL ALGORITHMS",
+  "course_code": "PECST759",
+  "module_number": 4,
+  "module_title": "Parallel programming with openmp",
+  "topics_generated": [
+    {
+      "title": "Parallel Programming with OpenMP - Introduction to OpenMP",
+      "slug": "parallel-programming-with-openmp-introduction-to-openmp",
+      "path": "parallel-programming-with-openmp-introduction-to-openmp/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel programming constructs in OpenMP",
+      "slug": "parallel-programming-constructs-in-openmp",
+      "path": "parallel-programming-constructs-in-openmp/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance tuning and optimization",
+      "slug": "performance-tuning-and-optimization",
+      "path": "performance-tuning-and-optimization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel Programming with MPI - Introduction to MPI",
+      "slug": "parallel-programming-with-mpi-introduction-to-mpi",
+      "path": "parallel-programming-with-mpi-introduction-to-mpi/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Message passing model and MPI basics",
+      "slug": "message-passing-model-and-mpi-basics",
+      "path": "message-passing-model-and-mpi-basics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Advanced MPI features and applications",
+      "slug": "advanced-mpi-features-and-applications",
+      "path": "advanced-mpi-features-and-applications/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel Numerical Algorithms - Solving linear systems: parallel Gaussian elimination, parallel LU decomposition",
+      "slug": "parallel-numerical-algorithms-solving-linear-systems-parallel-gaussian-elimination-parallel-lu",
+      "path": "parallel-numerical-algorithms-solving-linear-systems-parallel-gaussian-elimination-parallel-lu/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel algorithms for eigenvalue problems",
+      "slug": "parallel-algorithms-for-eigenvalue-problems",
+      "path": "parallel-algorithms-for-eigenvalue-problems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications and analysis.",
+      "slug": "applications-and-analysis",
+      "path": "applications-and-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

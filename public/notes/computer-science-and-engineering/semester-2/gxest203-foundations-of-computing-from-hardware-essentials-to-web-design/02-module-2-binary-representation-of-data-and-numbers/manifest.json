@@ -1,0 +1,50 @@
+{
+  "course_name": "FOUNDATIONS OF COMPUTING: FROM HARDWARE ESSENTIALS TO WEB DESIGN",
+  "course_code": "GXEST203",
+  "module_number": 2,
+  "module_title": "Binary representation of data and numbers",
+  "topics_generated": [
+    {
+      "title": "Binary representation of data and numbers",
+      "slug": "binary-representation-of-data-and-numbers",
+      "path": "binary-representation-of-data-and-numbers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Integer Representation",
+      "slug": "integer-representation",
+      "path": "integer-representation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data storage units - bits, bytes, kilobytes, etc.",
+      "slug": "data-storage-units-bits-bytes-kilobytes-etc",
+      "path": "data-storage-units-bits-bytes-kilobytes-etc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "ASCII and Unicode",
+      "slug": "ascii-and-unicode",
+      "path": "ascii-and-unicode/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "CPU Architecture and Instruction Set: Basic CPU architecture - ALU, registers, control unit",
+      "slug": "cpu-architecture-and-instruction-set-basic-cpu-architecture-alu-registers-control-unit",
+      "path": "cpu-architecture-and-instruction-set-basic-cpu-architecture-alu-registers-control-unit/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Instruction format and assembly language (basics only) Fetch-execute cycle and instruction execution.",
+      "slug": "instruction-format-and-assembly-language-basics-only-fetch-execute-cycle-and-instruction-execution",
+      "path": "instruction-format-and-assembly-language-basics-only-fetch-execute-cycle-and-instruction-execution/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

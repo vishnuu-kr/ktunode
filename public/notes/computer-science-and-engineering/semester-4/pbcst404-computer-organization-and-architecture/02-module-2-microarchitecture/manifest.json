@@ -1,0 +1,57 @@
+{
+  "course_name": "COMPUTER ORGANIZATION AND ARCHITECTURE",
+  "course_code": "PBCST404",
+  "module_number": 2,
+  "module_title": "Microarchitecture",
+  "topics_generated": [
+    {
+      "title": "Microarchitecture -  Introduction",
+      "slug": "microarchitecture-introduction",
+      "path": "microarchitecture-introduction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance analysis",
+      "slug": "performance-analysis",
+      "path": "performance-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Single-Cycle Processor - Single Cycle Datapath, Single Cycle Control",
+      "slug": "single-cycle-processor-single-cycle-datapath-single-cycle-control",
+      "path": "single-cycle-processor-single-cycle-datapath-single-cycle-control/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pipelined Processor - Pipelined Data Path, Pipelined Control",
+      "slug": "pipelined-processor-pipelined-data-path-pipelined-control",
+      "path": "pipelined-processor-pipelined-data-path-pipelined-control/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hazards",
+      "slug": "hazards",
+      "path": "hazards/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Solving Data/Control Hazards",
+      "slug": "solving-data-control-hazards",
+      "path": "solving-data-control-hazards/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance Analysis.",
+      "slug": "performance-analysis",
+      "path": "performance-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

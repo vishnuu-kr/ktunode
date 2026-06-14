@@ -1,942 +1,720 @@
-# Thermal Analysis : Dielectric Thermal Analysis (DETA) of Polymers (Working and Application)
+# Thermal Analysis : Dielectric Thermal Analysis (DETA) of Polymers- Working and Application.
 
 <!-- SECTION_1_START -->
-# Dielectric Thermal Analysis (DETA) of Polymers
-
-## 1. Core Technical Definition & Intuitive Overview
-
-> [!NOTE]
-> **Dielectric Thermal Analysis (DETA / DEA)** is a materials characterization technique in which the **dielectric properties** (permittivity, loss factor, and complex impedance) of a polymeric material are measured as a function of **temperature**, **time**, and **frequency** of an applied alternating electric field. It is the electrical-domain counterpart of **Dynamic Mechanical Analysis (DMA)**.
-
-In a DETA experiment, a thin polymer film (or a polymer disc) is sandwiched between two metallic electrodes forming a parallel-plate capacitor. A small-amplitude sinusoidal AC voltage $V(t) = V_0 \sin(\omega t)$ of known frequency $f = \omega/2\pi$ is applied, and the resulting current $I(t)$ (which is generally **out of phase** with the applied voltage) is measured. From the phase shift $\delta$ and amplitudes, the instrument calculates the **complex permittivity**:
-
-$$\varepsilon^{*}(\omega, T) = \varepsilon'(\omega, T) - i\,\varepsilon''(\omega, T)$$
-
-The real part $\varepsilon'$ represents the **stored electrical energy** (capacitive response), and the imaginary part $\varepsilon''$ represents the **dissipated electrical energy** (conductive + dipolar losses).
-
----
-
-### Conceptual Analogy — "Pushing a Sponge in Water"
-
-> [!TIP]
-> **Intuition:** Imagine dipping a kitchen sponge into a tray of water and **rhythmically squeezing and releasing** it.
->
-> - If you squeeze **slowly** (low frequency), the water has time to flow in and out — the sponge is **flexible**, so the resistance (loss) is small.
-> - If you squeeze **very fast** (high frequency), the water cannot keep up, the sponge feels **stiff**, and energy is lost as heat.
-> - The same polymer has the same dipoles. Slow AC fields let dipoles follow easily (high $\varepsilon'$, low $\varepsilon''$). Fast AC fields freeze the dipoles in place (low $\varepsilon'$, eventually low loss because they cannot relax at all).
->
-> DETA is exactly this — but instead of water, it is the **molecular dipoles and ionic segments** that are being "squeezed" by the oscillating electric field. The point where the squeeze is "just right" reveals the **molecular relaxation times** that correspond to transitions such as $T_g$, $T_m$, and sub-$T_g$ secondary motions.
+# Dielectric Thermal Analysis (DETA) of Polymers — Working and Application
 
 > [!IMPORTANT]
-> **KTU 2024 Syllabus Highlight:** DETA is grouped with **TGA, DSC, and TMA** under *Thermal & Analytical Techniques*, but it uniquely probes **molecular mobility** rather than heat flow or mass loss, making it indispensable for studying the **electrical behavior of polymer dielectrics** used in microelectronics, cable insulation, capacitor films, and printed circuit boards (PCB substrates).
+> **KTU 2024 Scheme — Module 3 Anchor Topic**
+> Course: GXCYT122 (Chemistry for Information Science and Electrical Science)
+> This topic is a high-yield area frequently tested under *Molecular Spectroscopy and Analytical Techniques* and is a classic 14-mark Part B question candidate.
 
----
+## 1.1 Formal Academic Definition
 
-### Physical Constants & Standard Metrics Used in DETA
+**Dielectric Thermal Analysis (DETA)** is an analytical thermo-analytical technique in which the **dielectric properties** of a material — specifically the **complex permittivity** ($\varepsilon^{*}$), **dielectric constant** ($\varepsilon'$), **dielectric loss factor** ($\varepsilon''$), and the **loss tangent** ($\tan\delta$) — are measured as a function of **temperature**, **frequency**, and **time**, while the sample is subjected to a low-amplitude alternating electric field.
 
-| Symbol / Quantity | Value / Unit | Meaning |
-|---|---|---|
-| $\varepsilon_0$ | $8.854 \times 10^{-12}\ \text{F/m}$ | Permittivity of free space (vacuum) |
-| $\tan\delta$ | dimensionless | Loss tangent, ratio $\varepsilon''/\varepsilon'$ |
-| $f$ | Hz | Frequency of applied AC field (typically $10^{-2}$ to $10^{6}$ Hz) |
-| $\omega$ | rad/s | Angular frequency, $\omega = 2\pi f$ |
-| $T_g$ | K or $^\circ$C | Glass transition temperature (a key DETA output) |
-| $\tau$ | s | Relaxation time, $\tau = 1/(2\pi f_{\text{max}})$ |
+The instrument is formally called a **Dielectric Analyzer (DEA)**. For polymeric systems, DETA is uniquely sensitive to **molecular dipole reorientation**, making it a powerful tool to probe the **glass transition temperature ($T_g$)**, **secondary relaxations**, **cure kinetics** of thermosets, and **interfacial polarization** in composites.
+
+The governing measurable is the **complex permittivity**:
+
+$$\varepsilon^{*} = \varepsilon' - i\,\varepsilon''$$
+
+where $\varepsilon'$ represents the **stored electrical energy** (capacitive response) and $\varepsilon''$ represents the **dissipated electrical energy** (resistive/lossy response).
+
+## 1.2 Conceptual Analogy — "The Dielectric Pendulum"
+
+Imagine pushing a child on a swing (the AC electric field pushing the molecular dipoles). Two extreme responses are possible:
+
+- **A perfectly stiff swing** (analogous to a frozen glassy polymer below $T_g$): the swing is rigid, dipoles cannot rotate, so almost all input energy is *stored* — the system is purely **capacitive** ($\varepsilon'$ is high, $\varepsilon'' \approx 0$).
+- **A swing that flops freely with no resistance** (analogous to a fully molten polymer): the swing absorbs energy and dissipates it as heat through friction — the system is purely **resistive** ($\varepsilon''$ dominates).
+
+> **DETA is the exact moment between these two extremes** — it captures the **visco-elastic dance** of dipoles that can *partially* follow and *partially* lag the oscillating field. This lag is quantified by the **phase angle $\delta$** between the applied voltage and the resulting current.
+
+> [!NOTE]
+> **Why DETA is uniquely powerful for polymers:**
+> Polymers possess both *electronic* (instantaneous) and *orientational* (slow, time-dependent) polarization. Only **orientational polarization** of permanent dipoles is sensitive to thermal transitions like $T_g$ — and DETA directly probes this mechanism.
+
+## 1.3 Key Physical Quantities and Standard Metrics
+
+- **Frequency range:** typically $10^{-3}$ Hz to $10^{6}$ Hz (broadband DEA)
+- **Temperature range:** $-150^{\circ}\text{C}$ to $+500^{\circ}\text{C}$ (standard); up to $1000^{\circ}\text{C}$ with high-temperature electrodes
+- **Sample geometry:** thin film, disk, or liquid cast between parallel-plate electrodes
+- **Applied AC voltage:** $\mathbf{0.1\ \text{V}}$ to $\mathbf{5\ \text{V}}$ (low amplitude to avoid non-linear effects)
+- **Electrode materials:** $\mathbf{platinum}$, $\mathbf{gold}$, or $\mathbf{ceramic-coated}$ sensors (ceramic sensor IDS (inter-digitated) is most common for polymers)
+- **Reference standards:** air ($\varepsilon' = 1.0006$), PTFE ($\varepsilon' \approx 2.1$), sapphire
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Complex permittivity plane (Cole–Cole plot)
+> **Concept:** Debye-type dielectric relaxation peak — $\varepsilon''$ vs $\log_{10}(\omega\tau)$
 > **GeoGebra / Desmos Input Equations:**
-> * Parametric: `x(ω) = ε'(ω)`, `y(ω) = ε''(ω)`
-> * Debye ideal: $\varepsilon'(\omega) = \varepsilon_{\infty} + \dfrac{\varepsilon_s - \varepsilon_{\infty}}{1 + \omega^2\tau^2}$
-> * $\varepsilon''(\omega) = \dfrac{(\varepsilon_s - \varepsilon_{\infty})\,\omega\tau}{1 + \omega^2\tau^2}$
-> **Visual Description:** A **semicircle** in the $\varepsilon'$–$\varepsilon''$ plane, with the diameter extending from $\varepsilon_{\infty}$ (high-frequency limit, left) to $\varepsilon_s$ (low-frequency / static limit, right). The peak of the semicircle occurs at $\omega\tau = 1$, i.e., $f = 1/(2\pi\tau)$.
+> * `eps_prime(omega) = eps_inf + (eps_s - eps_inf) / (1 + omega^2 * tau^2)`
+> * `eps_double_prime(omega) = (eps_s - eps_inf) * omega * tau / (1 + omega^2 * tau^2)`
+> * `tan_delta(omega) = eps_double_prime(omega) / eps_prime(omega)`
+> * Suggested parameter values: $\varepsilon_s = 8,\ \varepsilon_\infty = 2.5,\ \tau = 1,\ \omega \in [0.01, 100]$
+> **Visual Description:** The student should observe a characteristic **Debye peak** in $\varepsilon''$ centered at $\omega\tau = 1$ (loss maximum), an **inflection point** in $\varepsilon'$ at the same frequency, and a maximum in $\tan\delta$ shifted slightly to higher frequency. The Cole-Cole plot of $\varepsilon''$ vs $\varepsilon'$ will trace a **semicircle** for an ideal Debye process.
 
 ---
-
-<!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
 # 2. Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Why Polymers Respond to an AC Field — The Microscopic Picture
+## 2.1 Operational Principle — The Physics Behind DETA
 
-A polymeric dielectric contains **four polarizable species**, each with its own characteristic relaxation time:
+When an alternating electric field $E(t) = E_0 \sin(\omega t)$ is applied across a polymer sample sandwiched between two electrodes, the resulting current $I(t)$ leads the voltage by a phase angle $\theta = 90^{\circ} - \delta$. This phase lag $\delta$ arises because dipoles and charge carriers in the polymer require a finite time to reorient.
 
-1. **Electronic polarization** ($10^{-15}$ s) — distortion of electron clouds; only active at optical/UV frequencies.
-2. **Atomic / ionic polarization** ($10^{-13}$–$10^{-12}$ s) — relative displacement of nuclei; active at IR frequencies.
-3. **Orientation (dipolar) polarization** ($10^{-10}$–$10^{-2}$ s) — reorientation of permanent dipoles along the backbone or side groups. **This is the polarization that DETA primarily probes.**
-4. **Interfacial (Maxwell–Wagner–Sillar) polarization** ($10^{-3}$–$10^{2}$ s) — accumulation of charges at polymer–filler interfaces, crystalline–amorphous boundaries, and electrode–sample interfaces. Dominant at low frequency and high temperature.
+The instrument measures two primary electrical quantities:
+
+1. **Capacitance $C$** (in farads) — proportional to $\varepsilon'$
+2. **Conductance $G$** (in siemens) — proportional to $\varepsilon''$
+
+The conversion relationships are:
+
+$$C = \frac{\varepsilon_0 \varepsilon' A}{d}$$
+
+$$G = \omega C \varepsilon'' = \frac{\omega \varepsilon_0 \varepsilon'' A}{d}$$
+
+where:
+- $\varepsilon_0 = 8.854 \times 10^{-12}\ \text{F/m}$ (vacuum permittivity)
+- $A$ = electrode area (m$^2$)
+- $d$ = sample thickness (m)
+- $\omega = 2\pi f$ = angular frequency (rad/s)
+
+## 2.2 The Debye Relaxation Model (Theoretical Foundation)
+
+For an **ideal non-interacting dipole system** in a polymer, the complex permittivity as a function of angular frequency $\omega$ follows the **Debye equations**:
+
+$$\varepsilon'(\omega) = \varepsilon_\infty + \frac{\varepsilon_s - \varepsilon_\infty}{1 + \omega^2 \tau^2}$$
+
+$$\varepsilon''(\omega) = \frac{(\varepsilon_s - \varepsilon_\infty)\,\omega\tau}{1 + \omega^2 \tau^2}$$
+
+where:
+- $\varepsilon_s$ = static (low-frequency) dielectric constant
+- $\varepsilon_\infty$ = high-frequency (instantaneous) dielectric constant
+- $\tau$ = characteristic dipole relaxation time (s)
+
+The **loss tangent** is:
+
+$$\tan\delta = \frac{\varepsilon''}{\varepsilon'} = \frac{(\varepsilon_s - \varepsilon_\infty)\,\omega\tau}{\varepsilon_s + \varepsilon_\infty\,\omega^2\tau^2}$$
+
+The maximum of $\varepsilon''$ occurs at $\omega\tau = 1$, i.e., when the field frequency matches the inverse of the natural dipole relaxation time.
+
+## 2.3 Why Polymers Deviate from Ideal Debye Behavior — The Cole-Cole / Havriliak-Negami Models
+
+Real polymers show **broadened, asymmetric relaxation peaks** because:
+- Different chain segments relax at different rates (distribution of $\tau$)
+- Inter- and intra-chain cooperativity exists
+- Multiple relaxation modes (alpha, beta, gamma) overlap
+
+The **Havriliak-Negami (HN) equation** captures this:
+
+$$\varepsilon^{*}(\omega) = \varepsilon_\infty + \frac{\varepsilon_s - \varepsilon_\infty}{\left[1 + (i\omega\tau_{HN})^{\alpha}\right]^{\beta}}$$
+
+where $\alpha$ and $\beta$ are shape parameters ($0 < \alpha, \beta \leq 1$). When $\alpha = 1$ and $\beta = 1$, this reduces to the ideal Debye case.
+
+## 2.4 Temperature Dependence — The Arrhenius / WLF Framework
+
+The relaxation time $\tau$ is strongly temperature-dependent. Two regimes exist:
+
+**Above $T_g$ (rubbery / melt state):** Vogel-Fulcher-Tammann (VFT) equation:
+
+$$\tau(T) = \tau_0 \exp\left(\frac{B}{T - T_0}\right)$$
+
+where $T_0$ is the Vogel temperature ($\approx T_g - 50^{\circ}\text{C}$).
+
+**Below $T_g$ (sub-glass relaxations):** Arrhenius equation:
+
+$$\tau(T) = \tau_0 \exp\left(\frac{E_a}{RT}\right)$$
+
+## 2.5 KTU High-Yield Formula Sheet
 
 > [!IMPORTANT]
-> **DETA Window:** Standard DETA instruments sweep **$10^{-2}$ Hz to $10^{6}$ Hz**. This window covers **dipolar** and **interfacial** polarizations — the very mechanisms that respond to **segmental motion** of polymer chains. Therefore DETA is exquisitely sensitive to the **glass transition** and to **sub-$T_g$ secondary relaxations** ($\beta$, $\gamma$ processes).
+> **Master the following equations — these are the only numerical handle KTU examiners will test in Part B.**
 
-## 2.2 Operational Working — What Happens Inside the Instrument
-
-**Step 1 — Sample Mounting:** The polymer is placed between two parallel-plate electrodes. For thin films, a **dielectric fixture** with a guarded electrode is used to suppress fringe-field errors. For liquids or pellets, a liquid cell or pressed pellet fixture is used.
-
-**Step 2 — Application of AC Field:** A sinusoidal voltage of amplitude $V_0$ and frequency $f$ is applied. A modern DETA (e.g., Netzsch DEA 288, Novocontrol Alpha-A, TA Instruments DEA) sweeps frequency either **isothermally** or during a controlled **temperature ramp** (typically $1$–$5\ ^\circ$C/min).
-
-**Step 3 — Current Detection:** The current $I(t) = I_0 \sin(\omega t + \delta)$ is measured. The phase angle $\delta$ (loss angle) and amplitude $I_0$ are extracted by a lock-in amplifier or by digital FFT.
-
-**Step 4 — Conversion to Dielectric Quantities:** The instrument computes:
-* Capacitance $C$ from $I_0 = \omega C V_0 \cos\delta + (V_0/R)\sin\delta$
-* Conductance $G$ from the in-phase component
-* $\varepsilon'$ and $\varepsilon''$ from $C$ and $G$
-* $\tan\delta = \varepsilon''/\varepsilon'$
-
-**Step 5 — Output:** A multi-curve plot of $\varepsilon'$, $\varepsilon''$, and $\tan\delta$ versus temperature (at fixed frequency) or versus frequency (at fixed temperature).
-
-## 2.3 KTU High-Yield Formula Sheet (DETA)
+| Quantity | Equation | Unit / Notes |
+|---|---|---|
+| Complex permittivity | $\varepsilon^{*} = \varepsilon' - i\varepsilon''$ | Dimensionless |
+| Loss tangent | $\tan\delta = \varepsilon'' \div \varepsilon'$ | Dimensionless |
+| Capacitance | $C = \varepsilon_0\,\varepsilon'\,A \div d$ | Farads (F) |
+| Conductance | $G = \omega\,\varepsilon_0\,\varepsilon''\,A \div d$ | Siemens (S) |
+| Debye $\varepsilon'$ | $\varepsilon' = \varepsilon_\infty + (\varepsilon_s - \varepsilon_\infty)\div(1 + \omega^2\tau^2)$ | Dimensionless |
+| Debye $\varepsilon''$ | $\varepsilon'' = (\varepsilon_s - \varepsilon_\infty)\omega\tau\div(1 + \omega^2\tau^2)$ | Dimensionless |
+| Cole-Cole plot | $\varepsilon''$ vs $\varepsilon'$ gives a semicircle for ideal Debye | Graphical test |
+| Arrhenius $\tau(T)$ | $\tau = \tau_0\,\exp(E_a\div RT)$ | Used for $\beta, \gamma$ relaxations |
+| VFT $\tau(T)$ | $\tau = \tau_0\,\exp[B\div(T - T_0)]$ | Used for $\alpha$ relaxation ($> T_g$) |
+| $T_g$ identification | Peak in $\varepsilon''$ or $\tan\delta$ vs $T$ at fixed $f$ | Primary DETA application |
+| Havriliak-Negami | $\varepsilon^{*} = \varepsilon_\infty + (\varepsilon_s - \varepsilon_\infty)\div[1 + (i\omega\tau_{HN})^{\alpha}]^{\beta}$ | Empirical fit |
 
 > [!NOTE]
-> **All formulas below are board-essential.** Memorize the boxed relationships.
+> **For polymer blends and composites**, the **Bruggeman effective medium approximation** or **Maxwell-Wagner-Sillars (MWS) polarization** model is used to interpret low-frequency $\varepsilon'$ enhancement due to interfacial charge accumulation at phase boundaries.
 
-### A. Capacitance and Permittivity
+## 2.6 Real-World Engineering Utility
 
-$$
-C = \dfrac{\varepsilon_0\,\varepsilon'\,A}{d}
-$$
-
-$$
-\varepsilon' = \dfrac{C\,d}{\varepsilon_0\,A}
-$$
-
-$$
-\varepsilon'' = \dfrac{G\,d}{\varepsilon_0\,\omega\,A}
-$$
-
-where $A$ is electrode area, $d$ is sample thickness, $G$ is conductance, $\omega$ is angular frequency.
-
-### B. Loss Tangent and AC Conductivity
-
-$$
-\tan\delta \;=\; \dfrac{\varepsilon''}{\varepsilon'} \;=\; \dfrac{G}{\omega\,C}
-$$
-
-$$
-\sigma_{ac}(\omega) \;=\; \omega\,\varepsilon_0\,\varepsilon''(\omega)
-$$
-
-### C. Complex Permittivity and Impedance
-
-$$
-\varepsilon^{*}(\omega) \;=\; \varepsilon'(\omega) - i\,\varepsilon''(\omega)
-$$
-
-$$
-Z^{*}(\omega) \;=\; \dfrac{1}{i\,\omega\,C_0\,\varepsilon^{*}(\omega)} \;=\; \dfrac{1}{Y^{*}(\omega)}
-$$
-
-where $C_0 = \varepsilon_0 A/d$ is the **empty-cell capacitance** and $Y^{*}$ is the complex admittance.
-
-### D. Debye Relaxation Equations (single relaxation time)
-
-$$
-\varepsilon'(\omega) \;=\; \varepsilon_{\infty} \;+\; \dfrac{\varepsilon_s - \varepsilon_{\infty}}{1 + \omega^{2}\tau^{2}}
-$$
-
-$$
-\varepsilon''(\omega) \;=\; \dfrac{(\varepsilon_s - \varepsilon_{\infty})\,\omega\,\tau}{1 + \omega^{2}\tau^{2}}
-$$
-
-$$
-\tan\delta(\omega) \;=\; \dfrac{(\varepsilon_s - \varepsilon_{\infty})\,\omega\,\tau}{\varepsilon_s + \varepsilon_{\infty}\,\omega^{2}\tau^{2}}
-$$
-
-At the loss-peak frequency $f_{\text{max}} = 1/(2\pi\tau)$, the loss factor reaches its maximum $\varepsilon''_{\text{max}} = (\varepsilon_s - \varepsilon_{\infty})/2$.
-
-### E. Arrhenius Behavior of Relaxation Times (for Sub-$T_g$ Processes)
-
-$$
-\tau(T) \;=\; \tau_0\,\exp\!\left(\dfrac{E_a}{R\,T}\right)
-$$
-
-Plotting $\ln \tau$ vs $1/T$ yields a straight line of slope $E_a/R$.
-
-### F. Vogel–Fulcher–Tammann (VFT) for the $\alpha$-Relaxation Near $T_g$
-
-$$
-\tau(T) \;=\; \tau_0\,\exp\!\left(\dfrac{B}{T - T_V}\right)
-$$
-
-where $T_V$ is the Vogel temperature (typically $T_V \approx T_g - 50\ \text{K}$). VFT captures the **cooperative, non-Arrhenius** segmental motion that governs $T_g$.
-
-### G. Master-Curve Construction (Time–Temperature Superposition)
-
-$$
-\varepsilon''(\omega, T) \;=\; b_T\,\varepsilon''(a_T\,\omega, T_{\text{ref}})
-$$
-
-where $a_T$ and $b_T$ are the **horizontal and vertical shift factors**. This allows construction of a single master curve spanning many decades of frequency.
-
-### H. Determining $T_g$ from a DETA Isofrequency Scan
-
-Locate the temperature at which $\varepsilon'$ shows an inflection (step-up due to increased dipolar mobility) or the temperature of a sharp $\tan\delta$ peak during heating at a fixed frequency (typically $1$ kHz).
+- **Microelectronics packaging:** Cure monitoring of epoxy underfills in flip-chip BGA packages
+- **Polymer electrolyte fuel cells (PEMFC):** Ionic conductivity measurement in Nafion$^{\circledR}$ membranes
+- **Drug-polymer formulations:** Water content and aging in pharmaceutical polymers
+- **Composite aerospace parts:** Interfacial polarization in carbon-fiber reinforced PEEK
+- **Dielectric elastomer actuators (DEA, also called "artificial muscles"):** DETA characterizes silicone and polyurethane elastomers
+- **Photoresist processing:** UV-curable resist cure state in semiconductor lithography
+- **Food packaging polymers:** Migration and plasticizer content via $\varepsilon'$ change
+- **Cable insulation (XLPE, EPR):** Aging and water-treeing diagnostics
 
 ---
-
-### Compact Formula Summary Table (Board-Friendly)
-
-| # | Quantity | Formula | Physical Meaning |
-|---|---|---|---|
-| 1 | Capacitance | $C = \varepsilon_0\,\varepsilon'\,A/d$ | Charge stored per volt |
-| 2 | Real permittivity | $\varepsilon' = Cd/(\varepsilon_0 A)$ | Energy stored (capacitive) |
-| 3 | Imaginary permittivity | $\varepsilon'' = Gd/(\varepsilon_0 \omega A)$ | Energy dissipated (lossy) |
-| 4 | Loss tangent | $\tan\delta = \varepsilon''/\varepsilon'$ | Inherent material loss |
-| 5 | AC conductivity | $\sigma_{ac} = \omega\,\varepsilon_0\,\varepsilon''$ | Conduction from losses |
-| 6 | Complex permittivity | $\varepsilon^{*} = \varepsilon' - i\varepsilon''$ | Full dielectric response |
-| 7 | Complex impedance | $Z^{*} = 1/(i\omega C_0 \varepsilon^{*})$ | Measured directly by LCR meter |
-| 8 | Loss-peak frequency | $f_{\text{max}} = 1/(2\pi\tau)$ | Dipole relaxation rate |
-| 9 | Arrhenius $\tau$ | $\tau = \tau_0\exp(E_a/RT)$ | Local (sub-$T_g$) relaxations |
-| 10 | VFT $\tau$ | $\tau = \tau_0\exp[B/(T - T_V)]$ | Cooperative $\alpha$-relaxation |
-
----
-
-### Real-World Utility in Information & Electrical Science
-
-> [!TIP]
-> * **PCB Substrate Dielectric Qualification** — FR-4, polyimide, and low-$k$ interlayer dielectrics are characterized by DETA to ensure stable $\varepsilon'$ across the operating frequency band of high-speed digital signals (GHz regime is probed by extending DETA data via TTS).
-> * **Capacitor-Film Production** — BOPP, PET, and PEN films are graded by their **dissipation factor** $\tan\delta$ at $1$ kHz and $1$ MHz; even a $10^{-3}$ reduction in $\tan\delta$ translates to megawatts of energy saved annually in grid-scale capacitor banks.
-> * **Polymer-Blend Miscibility** — A single, composition-dependent $\tan\delta$ peak (instead of two $T_g$ peaks) is **proof of miscibility** at the segmental level.
-> * **Cure Monitoring of Epoxy Moulding Compounds (EMC)** used for IC encapsulation — $\varepsilon'$ and ionic conductivity track cross-link density in real time.
-> * **Moisture / Ionic-Contamination Sensing** — Low-frequency $\varepsilon''$ skyrockets in the presence of water dipoles and mobile ions; DETA is therefore used in **quality control of wafer-level packaging**.
-
----
-
-<!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# 3. Step-by-Step Derivations & Symbolic Implementation
+# 3. Step-by-Step Derivations, Worked Examples & Symbolic Implementation
 
-## 3.1 Derivation 1 — From Measured $V(t)$ and $I(t)$ to $\varepsilon'$ and $\varepsilon''$
+## 3.1 Worked Derivation #1: From Measured $C$ and $G$ to $\varepsilon'$ and $\varepsilon''$
 
-**Starting point:** A polymer slab of thickness $d$ and electrode area $A$ is treated as a parallel-plate capacitor filled with a lossy dielectric. The applied voltage is $V(t) = V_0\sin(\omega t)$, and the resulting steady-state current is:
+A polymer disk of thickness $d = 0.5\ \text{mm} = 5 \times 10^{-4}\ \text{m}$ and electrode area $A = 1\ \text{cm}^2 = 1 \times 10^{-4}\ \text{m}^2$ is placed in a DEA at $T = 30^{\circ}\text{C}$ and $f = 1\ \text{kHz}$. The instrument reads $C = 4.0\ \text{pF}$ and $G = 1.2 \times 10^{-10}\ \text{S}$.
 
-$$
-I(t) = I_C \cos(\omega t) + I_R \sin(\omega t)
-$$
+**Step 1 — Compute the empty-cell (air) capacitance for reference.**
 
-where $I_C$ is the **capacitive (in-quadrature)** component and $I_R$ is the **resistive (in-phase)** component.
+$$C_0 = \frac{\varepsilon_0\,A}{d} = \frac{(8.854 \times 10^{-12})(1 \times 10^{-4})}{5 \times 10^{-4}}$$
 
-**Step 1 — Identify the two components of current.**
+$$C_0 = 1.7708 \times 10^{-12}\ \text{F} = 1.77\ \text{pF}$$
 
-For an ideal capacitor, $I_C = \omega C V_0$. For a resistor in parallel, $I_R = V_0/R = G V_0$. So the total current is:
+**Step 2 — Compute $\varepsilon'$ directly from the capacitance ratio.**
 
-$$
-I(t) = \omega C V_0 \cos(\omega t) + G V_0 \sin(\omega t)
-$$
+$$\varepsilon' = \frac{C}{C_0} = \frac{4.0\ \text{pF}}{1.77\ \text{pF}} = 2.26$$
 
-**Step 2 — Define a complex current $I^{*} = I_R - i I_C$ (using the engineering convention where the applied field is $\sim e^{i\omega t}$).**
+**Step 3 — Compute $\omega$.**
 
-$$
-I^{*} = G V_0 - i\,\omega C V_0 = V_0\,(G - i\,\omega C)
-$$
+$$\omega = 2\pi f = 2\pi(1000) = 6283.19\ \text{rad/s}$$
 
-**Step 3 — Complex admittance $Y^{*}$ of the filled capacitor.**
+**Step 4 — Compute $\varepsilon''$ from the conductance relation.**
 
-$$
-Y^{*} = \dfrac{I^{*}}{V_0} = G - i\,\omega C
-$$
+$$G = \omega\,C_0\,\varepsilon'' \quad\Rightarrow\quad \varepsilon'' = \frac{G}{\omega\,C_0}$$
 
-**Step 4 — Substitute the geometric relations $C = \varepsilon_0 \varepsilon' A/d$ and $G = \sigma_{ac} A/d$.**
+$$\varepsilon'' = \frac{1.2 \times 10^{-10}}{(6283.19)(1.77 \times 10^{-12})}$$
 
-$$
-Y^{*} = \dfrac{A}{d}\,\bigl(\sigma_{ac} - i\,\omega\,\varepsilon_0\,\varepsilon'\bigr)
-$$
+$$\varepsilon'' = \frac{1.2 \times 10^{-10}}{1.112 \times 10^{-8}} = 0.0108$$
 
-**Step 5 — Recognize that $\sigma_{ac} = \omega \varepsilon_0 \varepsilon''$ (definition of $\varepsilon''$ in the lossy case).**
+**Step 5 — Compute $\tan\delta$.**
 
-$$
-Y^{*} = \dfrac{A\,\omega\,\varepsilon_0}{d}\,\bigl(\varepsilon'' - i\,\varepsilon'\bigr)
-$$
+$$\tan\delta = \frac{\varepsilon''}{\varepsilon'} = \frac{0.0108}{2.26} = 4.78 \times 10^{-3}$$
 
-**Step 6 — Factor out $i$ to match the complex-permittivity convention $\varepsilon^{*} = \varepsilon' - i\varepsilon''$.**
+**Valuation Key:**
+- [Correctly computing $C_0$: 1 Mark]
+- [Rearranging $G = \omega C_0 \varepsilon''$: 2 Marks]
+- [Final numerical answer with unit: 1 Mark]
+- [Explicit statement that $\varepsilon' = 2.26$ is dimensionless: 1 Mark]
 
-$$
-Y^{*} = \dfrac{A\,\omega\,\varepsilon_0}{d}\,\bigl(-i\bigr)\bigl(\varepsilon' - i\,\varepsilon''\bigr) = i\,\omega\,C_0\,\varepsilon^{*}
-$$
+## 3.2 Worked Derivation #2: Locating the Debye Loss Peak
 
-where $C_0 = \varepsilon_0 A/d$ is the empty-cell capacitance. **Final boxed result:**
+For a polymer, $\varepsilon_s = 12$, $\varepsilon_\infty = 3$, $\tau = 5 \times 10^{-4}\ \text{s}$. Find the frequency $f_{\max}$ at which $\varepsilon''$ is maximum.
 
-$$
-\boxed{\;Y^{*}(\omega) \;=\; i\,\omega\,C_0\,\varepsilon^{*}(\omega) \quad\Longleftrightarrow\quad \varepsilon^{*}(\omega) \;=\; \dfrac{Y^{*}(\omega)}{i\,\omega\,C_0}\;}
-$$
+**Step 1 — The Debye $\varepsilon''$ equation:**
 
-**Step 7 — Equate real and imaginary parts to extract $\varepsilon'$ and $\varepsilon''$.**
+$$\varepsilon''(\omega) = \frac{(\varepsilon_s - \varepsilon_\infty)\,\omega\tau}{1 + \omega^2\tau^2}$$
 
-$$
-\varepsilon'(\omega) = -\dfrac{\text{Im}\{Y^{*}\}}{\omega C_0}, \qquad \varepsilon''(\omega) = \dfrac{\text{Re}\{Y^{*}\}}{\omega C_0}
-$$
+**Step 2 — Take derivative and set to zero.** Let $u = \omega\tau$. Then $\varepsilon'' \propto u \div (1 + u^2)$. Differentiating:
 
-In practice, the LCR meter measures the impedance $Z^{*} = 1/Y^{*}$, then the instrument firmware inverts it into $\varepsilon'$.
+$$\frac{d}{du}\left(\frac{u}{1 + u^2}\right) = \frac{(1 + u^2) - u(2u)}{(1 + u^2)^2} = \frac{1 - u^2}{(1 + u^2)^2}$$
 
-## 3.2 Derivation 2 — Frequency of the Loss Peak from the Debye Model
+**Step 3 — Set numerator to zero:**
 
-**Starting point:**
+$$1 - u^2 = 0 \quad\Rightarrow\quad u = 1 \quad\Rightarrow\quad \omega_{\max}\tau = 1$$
 
-$$
-\varepsilon''(\omega) = \dfrac{(\varepsilon_s - \varepsilon_{\infty})\,\omega\tau}{1 + \omega^2\tau^2}
-$$
+**Step 4 — Solve for $f_{\max}$:**
 
-**Step 1 — Differentiate $\varepsilon''$ with respect to $\omega$ and set the derivative to zero.**
+$$f_{\max} = \frac{1}{2\pi\tau} = \frac{1}{2\pi(5 \times 10^{-4})} = 318.31\ \text{Hz}$$
 
-$$
-\dfrac{d\varepsilon''}{d\omega} = \dfrac{(\varepsilon_s - \varepsilon_{\infty})\,\tau\,(1 + \omega^2\tau^2) - (\varepsilon_s - \varepsilon_{\infty})\,\omega\tau\,(2\omega\tau^2)}{(1 + \omega^2\tau^2)^2}
-$$
+**Step 5 — Compute $\varepsilon''_{\max}$ at this frequency:**
 
-**Step 2 — Simplify the numerator.**
+$$\varepsilon''_{\max} = \frac{(\varepsilon_s - \varepsilon_\infty)(1)}{1 + 1^2} = \frac{12 - 3}{2} = 4.5$$
 
-$$
-(\varepsilon_s - \varepsilon_{\infty})\,\tau\,\bigl[(1 + \omega^2\tau^2) - 2\omega^2\tau^2\bigr] = (\varepsilon_s - \varepsilon_{\infty})\,\tau\,(1 - \omega^2\tau^2)
-$$
+This is the **maximum loss factor** — a key signature in any DETA plot.
 
-**Step 3 — Set the numerator to zero** (since the denominator is always positive):
+## 3.3 Worked Derivation #3: Determining $T_g$ from a DETA Heating Scan
 
-$$
-1 - \omega^2\tau^2 = 0 \quad\Longrightarrow\quad \omega_{\text{max}}\,\tau = 1 \quad\Longrightarrow\quad \omega_{\text{max}} = \dfrac{1}{\tau}
-$$
+A frequency-temperature DETA scan is performed on amorphous PET at $f = 1\ \text{kHz}$, heating rate $2^{\circ}\text{C/min}$. The $\tan\delta$ peak is observed at $T = 78^{\circ}\text{C}$. The $\varepsilon''$ peak is observed at $T = 75^{\circ}\text{C}$. The onset of $\varepsilon'$ step is observed at $T = 72^{\circ}\text{C}$.
 
-**Step 4 — Convert to ordinary frequency.**
+**Interpretation table (standard convention for polymers):**
 
-$$
-\boxed{\;f_{\text{max}} = \dfrac{1}{2\pi\,\tau}\;}
-$$
+| Feature in DETA curve | Definition (KTU standard) | Marking |
+|---|---|---|
+| Onset of $\varepsilon'$ step | $T_g$ (onset) — start of cooperative segmental motion | 1 Mark |
+| $\varepsilon''$ peak maximum | $T_g$ (loss peak) — maximum dissipation | 1 Mark |
+| $\tan\delta$ peak maximum | $T_g$ (relaxation) — practical $T_g$ reported | 1 Mark |
+| Frequency of measurement | $1\ \text{kHz}$ (always specify in report) | 1 Mark |
 
-**Step 5 — Maximum value of $\varepsilon''$.** Substitute $\omega\tau = 1$ back:
+**Best reported $T_g$** for this PET sample = **$78^{\circ}\text{C}$ (at $1\ \text{kHz}$)**.
 
-$$
-\varepsilon''_{\text{max}} = \dfrac{(\varepsilon_s - \varepsilon_{\infty})\cdot 1}{1 + 1} = \dfrac{\varepsilon_s - \varepsilon_{\infty}}{2}
-$$
+> [!IMPORTANT]
+> **KTU Examiner Tip:** Always state **both** the temperature AND the frequency when reporting a DETA-derived $T_g$, because $T_g$ is frequency-dependent. A student who writes only "$T_g = 78^{\circ}\text{C}$" loses marks for omitting the frequency.
 
-This $\varepsilon''_{\text{max}}$ is a direct measure of the **dielectric relaxation strength** $\Delta\varepsilon = \varepsilon_s - \varepsilon_{\infty}$.
+## 3.4 Python Implementation: Simulating a DETA Frequency Sweep
 
-## 3.3 Derivation 3 — Extraction of Activation Energy from an Isochronal Scan
-
-When a fixed-frequency DETA scan is run across temperature, the loss-peak temperature $T_{\text{max}}$ shifts with $f$. Because $f_{\text{max}} = 1/(2\pi\tau)$ and $\tau$ follows Arrhenius behavior:
-
-$$
-\tau(T) = \tau_0\exp\!\left(\dfrac{E_a}{RT}\right)
-$$
-
-**Step 1 — Combine the two relations.**
-
-$$
-\dfrac{1}{2\pi f_{\text{max}}} = \tau_0\exp\!\left(\dfrac{E_a}{R\,T_{\text{max}}}\right)
-$$
-
-**Step 2 — Take the natural logarithm of both sides.**
-
-$$
--\ln(2\pi f_{\text{max}}) = \ln\tau_0 + \dfrac{E_a}{R\,T_{\text{max}}}
-$$
-
-**Step 3 — Rearrange into a linear form in $1/T_{\text{max}}$.**
-
-$$
-\ln f_{\text{max}} = -\ln(2\pi\tau_0) - \dfrac{E_a}{R}\cdot\dfrac{1}{T_{\text{max}}}
-$$
-
-**Step 4 — Identify the slope and intercept of an Arrhenius plot** of $\ln f_{\text{max}}$ vs $1/T_{\text{max}}$:
-
-$$
-\boxed{\;\text{slope} = -\dfrac{E_a}{R} \quad\Longrightarrow\quad E_a = -R\cdot\text{slope}\;}
-$$
-
-This is exactly analogous to a chemical-kinetics Arrhenius analysis, but here the "rate constant" is the **dielectric relaxation rate** $1/\tau$.
-
----
-
-## 3.4 Python Implementation — Simulating and Fitting a Debye DETA Spectrum
-
-The following code computes, visualizes, and fits the Debye dielectric spectrum of a model polymer. It uses **strict type hints**, **boundary checks**, and **logging** in line with production-grade scientific Python.
+The following Python code implements the Debye model and generates a complete DETA frequency spectrum. It is fully operational, uses strict type hints, and includes error logging.
 
 ```python
 """
-deta_debye_fit.py
------------------
-Simulate a DETA (Dielectric Thermal Analysis) measurement on a model
-polymer with a single Debye-type relaxation, add realistic noise,
-and fit the spectrum to recover the relaxation parameters.
+deta_simulation.py
+-------------------
+Simulates a Dielectric Thermal Analysis (DETA) frequency sweep
+for a model polymer using the ideal Debye equations.
 
-Run: python deta_debye_fit.py
+Author: KTU GXCYT122 Module 3 reference implementation
+Requirements: numpy>=1.20, matplotlib>=3.4
 """
-
-from __future__ import annotations
-
-import logging
-import math
-from dataclasses import dataclass
-from typing import Tuple
 
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit
+import logging
+import sys
+from typing import Tuple
 
-# ----------------------------------------------------------------------
-# Logging configuration
-# ----------------------------------------------------------------------
+# Configure strict error logging
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s",
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)]
 )
-logger = logging.getLogger("DETA-Debye")
+logger = logging.getLogger("DETA_SIM")
 
 
-# ----------------------------------------------------------------------
-# Physical / simulation parameters
-# ----------------------------------------------------------------------
-@dataclass(frozen=True)
-class DebyeParameters:
-    """Container for the four Debye parameters of a single relaxation."""
-    eps_inf: float      # high-frequency limiting permittivity
-    eps_s: float        # static (low-frequency) permittivity
-    tau: float          # relaxation time in seconds
-    conductivity: float = 0.0   # DC background conductivity (S/m), optional
-
-
-# ----------------------------------------------------------------------
-# Pure Debye model with optional DC conductivity contribution
-# ----------------------------------------------------------------------
-def debye_eps_prime(omega: np.ndarray, p: DebyeParameters) -> np.ndarray:
-    """Real part of complex permittivity (Debye + DC term in eps'' only)."""
-    wt = omega * p.tau
-    return p.eps_inf + (p.eps_s - p.eps_inf) / (1.0 + wt * wt)
-
-
-def debye_eps_double_prime(omega: np.ndarray, p: DebyeParameters) -> np.ndarray:
-    """Imaginary part of complex permittivity (Debye + DC conductivity)."""
-    wt = omega * p.tau
-    loss_dipolar = (p.eps_s - p.eps_inf) * wt / (1.0 + wt * wt)
-    eps_0 = 8.854187817e-12        # F/m
-    loss_conductivity = p.conductivity / (omega * eps_0)
-    return loss_dipolar + loss_conductivity
-
-
-# ----------------------------------------------------------------------
-# Frequency sweep
-# ----------------------------------------------------------------------
-def make_frequency_grid(
-    f_min: float = 1.0e-1,
-    f_max: float = 1.0e6,
-    points_per_decade: int = 10,
-) -> np.ndarray:
-    """Logarithmically spaced frequency array with input validation."""
-    if f_min <= 0 or f_max <= 0:
-        raise ValueError("f_min and f_max must be strictly positive.")
-    if f_max <= f_min:
-        raise ValueError("f_max must be greater than f_min.")
-    decades = math.log10(f_max / f_min)
-    n = int(decades * points_per_decade) + 1
-    return np.logspace(math.log10(f_min), math.log10(f_max), n)
-
-
-# ----------------------------------------------------------------------
-# Synthetic "measurement" with Gaussian noise
-# ----------------------------------------------------------------------
-def simulate_measurement(
-    p_true: DebyeParameters,
-    frequencies: np.ndarray,
-    noise_level: float = 0.02,
-    seed: int = 1729,
-) -> Tuple[np.ndarray, np.ndarray]:
-    """Return (eps_prime_meas, eps_double_prime_meas) with added noise."""
-    if noise_level < 0:
-        raise ValueError("noise_level must be non-negative.")
-    rng = np.random.default_rng(seed)
-    omega = 2.0 * np.pi * frequencies
-
-    eps_p_true = debye_eps_prime(omega, p_true)
-    eps_pp_true = debye_eps_double_prime(omega, p_true)
-
-    eps_p_meas = eps_p_true * (1.0 + rng.normal(0.0, noise_level, size=omega.size))
-    eps_pp_meas = eps_pp_true * (1.0 + rng.normal(0.0, noise_level, size=omega.size))
-
-    logger.info(
-        "Simulated %d frequency points in [%.2e, %.2e] Hz.",
-        omega.size, frequencies.min(), frequencies.max(),
-    )
-    return eps_p_meas, eps_pp_meas
-
-
-# ----------------------------------------------------------------------
-# Curve fitting (Cole–Cole style; here pure Debye, alpha = 1)
-# ----------------------------------------------------------------------
-def eps_double_prime_model(
+def debye_permittivity(
     omega: np.ndarray,
-    delta_eps: float,
-    tau: float,
+    eps_s: float,
     eps_inf: float,
-    log_sigma: float,
-) -> np.ndarray:
-    wt = omega * tau
-    loss = (delta_eps * wt) / (1.0 + wt * wt)
-    eps_0 = 8.854187817e-12
-    return loss + np.exp(log_sigma) / (omega * eps_0)
+    tau: float
+) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """
+    Compute the complex permittivity components from the Debye model.
+
+    Parameters
+    ----------
+    omega : np.ndarray
+        Angular frequency array (rad/s). Must be strictly positive.
+    eps_s : float
+        Static (low-frequency) dielectric constant. Must be > eps_inf.
+    eps_inf : float
+        High-frequency (instantaneous) dielectric constant. Must be >= 1.0.
+    tau : float
+        Dipole relaxation time (seconds). Must be > 0.
+
+    Returns
+    -------
+    tuple of (eps_prime, eps_double_prime, tan_delta)
+        All three are np.ndarrays of the same shape as omega.
+    """
+    # ---------- BOUNDARY CHECKS ----------
+    if np.any(omega <= 0):
+        logger.error("omega array contains non-positive values; aborting.")
+        raise ValueError("omega must be strictly positive.")
+    if eps_s <= eps_inf:
+        logger.error(f"eps_s={eps_s} must be greater than eps_inf={eps_inf}.")
+        raise ValueError("Constraint violated: eps_s > eps_inf.")
+    if eps_inf < 1.0:
+        logger.error(f"eps_inf={eps_inf} is below the physical minimum of 1.0.")
+        raise ValueError("eps_inf must be >= 1.0 (vacuum limit).")
+    if tau <= 0:
+        logger.error(f"tau={tau} s is non-physical.")
+        raise ValueError("tau must be strictly positive.")
+
+    omega_tau_sq = (omega * tau) ** 2
+    denom = 1.0 + omega_tau_sq
+
+    eps_prime = eps_inf + (eps_s - eps_inf) / denom
+    eps_double_prime = (eps_s - eps_inf) * omega * tau / denom
+
+    # Avoid division by zero (shouldn't occur due to omega>0 check, but safe)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        tan_delta = np.where(eps_prime > 0, eps_double_prime / eps_prime, 0.0)
+
+    logger.info(f"Debye calculation successful. "
+                f"Max eps'' = {np.max(eps_double_prime):.4f} at "
+                f"f = {omega[np.argmax(eps_double_prime)] / (2*np.pi):.3e} Hz")
+
+    return eps_prime, eps_double_prime, tan_delta
 
 
-def fit_debye(
-    frequencies: np.ndarray,
-    eps_pp_meas: np.ndarray,
-) -> Tuple[DebyeParameters, dict]:
-    """Fit a Debye + conductivity model to the measured eps'' spectrum."""
-    omega = 2.0 * np.pi * frequencies
+def run_deta_frequency_sweep() -> None:
+    """
+    Execute a logarithmic frequency sweep and plot the DETA spectrum.
+    """
+    # ---------- MODEL PARAMETERS (typical polar polymer) ----------
+    eps_s = 12.0          # static dielectric constant
+    eps_inf = 3.0         # high-frequency dielectric constant
+    tau = 5.0e-4          # relaxation time = 0.5 ms
 
-    # Initial guess:  delta_eps=3, tau=1e-4 s, eps_inf=2.5, log_sigma=-12
-    p0 = [3.0, 1.0e-4, 2.5, -12.0]
-    bounds = ([0.0, 1.0e-9, 0.0, -30.0],
-              [50.0, 1.0e3,  20.0,  0.0])
+    # ---------- FREQUENCY SWEEP (1 mHz to 10 MHz) ----------
+    f_array = np.logspace(-3, 7, 400)      # Hz
+    omega = 2.0 * np.pi * f_array          # rad/s
 
-    popt, pcov = curve_fit(
-        eps_double_prime_model, omega, eps_pp_meas, p0=p0, bounds=bounds
-    )
-    perr = np.sqrt(np.diag(pcov))
-    delta_eps, tau_fit, eps_inf_fit, log_sigma_fit = popt
-    params = DebyeParameters(
-        eps_inf=eps_inf_fit,
-        eps_s=eps_inf_fit + delta_eps,
-        tau=tau_fit,
-        conductivity=float(np.exp(log_sigma_fit)),
-    )
-    diagnostics = {
-        "delta_eps": (delta_eps, perr[0]),
-        "tau_s":     (tau_fit,   perr[1]),
-        "eps_inf":   (eps_inf_fit, perr[2]),
-        "log_sigma": (log_sigma_fit, perr[3]),
-    }
-    return params, diagnostics
+    # ---------- COMPUTE DIELECTRIC RESPONSE ----------
+    eps_p, eps_pp, tan_d = debye_permittivity(omega, eps_s, eps_inf, tau)
 
+    # ---------- REPORT KEY METRICS ----------
+    f_max_loss = f_array[np.argmax(eps_pp)]
+    max_eps_pp = np.max(eps_pp)
+    logger.info(f"Debye loss peak frequency: {f_max_loss:.3f} Hz")
+    logger.info(f"Maximum loss factor:       {max_eps_pp:.4f}")
+    logger.info(f"Predicted by theory:       {(eps_s - eps_inf)/2:.4f}")
 
-# ----------------------------------------------------------------------
-# Plotting helper
-# ----------------------------------------------------------------------
-def plot_spectrum(
-    frequencies: np.ndarray,
-    eps_p: np.ndarray,
-    eps_pp: np.ndarray,
-    p_fit: DebyeParameters,
-    outfile: str = "deta_debye_fit.png",
-) -> None:
-    omega = 2.0 * np.pi * frequencies
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 6), sharex=True)
+    # ---------- PLOT RESULTS ----------
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
-    ax1.semilogx(frequencies, debye_eps_prime(omega, p_fit), "r-",
-                 label="Debye fit")
-    ax1.semilogx(frequencies, eps_p, "ko", markersize=3, label="Simulated data")
-    ax1.set_ylabel(r"$\varepsilon'$")
-    ax1.legend(loc="best")
+    axes[0].semilogx(f_array, eps_p, "b-", linewidth=2, label=r"$\varepsilon'$")
+    axes[0].semilogx(f_array, eps_pp, "r-", linewidth=2, label=r"$\varepsilon''$")
+    axes[0].set_xlabel("Frequency (Hz)")
+    axes[0].set_ylabel("Dielectric response")
+    axes[0].set_title("DETA Frequency Sweep — Debye Model")
+    axes[0].legend()
+    axes[0].grid(True, which="both", alpha=0.3)
 
-    ax2.loglog(frequencies, debye_eps_double_prime(omega, p_fit), "r-",
-               label="Debye fit")
-    ax2.loglog(frequencies, eps_pp, "ko", markersize=3, label="Simulated data")
-    ax2.set_xlabel("Frequency (Hz)")
-    ax2.set_ylabel(r"$\varepsilon''$")
-    ax2.legend(loc="best")
+    # Cole-Cole plot
+    axes[1].plot(eps_p, eps_pp, "ko-", markersize=3, linewidth=1)
+    axes[1].set_xlabel(r"$\varepsilon'$")
+    axes[1].set_ylabel(r"$\varepsilon''$")
+    axes[1].set_title("Cole-Cole Plot (ideal Debye → semicircle)")
+    axes[1].set_aspect("equal", adjustable="datalim")
+    axes[1].grid(True, alpha=0.3)
 
-    fig.tight_layout()
-    fig.savefig(outfile, dpi=150)
-    logger.info("Plot saved to %s", outfile)
-
-
-# ----------------------------------------------------------------------
-# Main driver
-# ----------------------------------------------------------------------
-def main() -> None:
-    # True material: PET-like polymer, single Debye relaxation + small DC term
-    truth = DebyeParameters(eps_inf=2.5, eps_s=5.5, tau=1.0e-4, conductivity=1.0e-14)
-
-    freqs = make_frequency_grid(f_min=1.0e-1, f_max=1.0e6, points_per_decade=10)
-    eps_p_meas, eps_pp_meas = simulate_measurement(truth, freqs, noise_level=0.02)
-
-    p_fit, diag = fit_debye(freqs, eps_pp_meas)
-    logger.info("Fitted parameters: %s", p_fit)
-    for k, (val, err) in diag.items():
-        logger.info("  %-12s = % .4e ± %.2e", k, val, err)
-
-    plot_spectrum(freqs, eps_p_meas, eps_pp_meas, p_fit)
+    plt.tight_layout()
+    plt.savefig("deta_debye_simulation.png", dpi=150)
+    logger.info("Plot saved as deta_debye_simulation.png")
 
 
 if __name__ == "__main__":
-    main()
+    run_deta_frequency_sweep()
 ```
 
-> [!TIP]
-> **What the code achieves**
-> * Synthesizes a realistic Debye $\varepsilon''$ spectrum across 7 decades of frequency.
-> * Adds 2% Gaussian noise to mimic a real LCR-meter measurement.
-> * Uses `scipy.optimize.curve_fit` with explicit lower/upper **bounds** to recover $\Delta\varepsilon$, $\tau$, $\varepsilon_\infty$, and $\sigma_{dc}$.
-> * Produces a board-quality two-panel log-log plot of $\varepsilon'$ and $\varepsilon''$ vs frequency.
-> * The recovered $\tau$ can be converted to $T_g$ via the VFT relation if a temperature scan is added.
+**Expected output highlights:**
+- Loss peak in $\varepsilon''$ centered at $f = 1\div(2\pi\tau) = 318.3\ \text{Hz}$
+- Maximum $\varepsilon'' = (\varepsilon_s - \varepsilon_\infty)\div 2 = 4.5$
+- A perfect **semicircle** in the Cole-Cole plot (signature of ideal Debye behavior)
+
+## 3.5 Python Implementation: Extracting $T_g$ from a Synthetic DETA Heating Curve
+
+```python
+"""
+deta_tg_extraction.py
+---------------------
+Demonstrates how to identify the glass transition temperature
+from a synthetic DETA heating scan at fixed frequency.
+"""
+
+import numpy as np
+import logging
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+log = logging.getLogger("DETA_TG")
+
+
+def synthetic_deta_heating(
+    T_C: np.ndarray,
+    T_g: float = 75.0,
+    f_Hz: float = 1.0e3,
+    width: float = 8.0
+) -> np.ndarray:
+    """
+    Generate a synthetic tan(delta) vs T curve with a Gaussian peak at T_g.
+    """
+    # Baseline + Gaussian peak model
+    baseline = 0.005
+    peak = 0.080 * np.exp(-0.5 * ((T_C - T_g) / width) ** 2)
+    return baseline + peak
+
+
+def extract_tg_from_deta(
+    T_C: np.ndarray,
+    tan_delta: np.ndarray
+) -> float:
+    """
+    Locate T_g as the temperature of the maximum in tan(delta).
+    """
+    if T_C.shape != tan_delta.shape:
+        raise ValueError("Temperature and tan(delta) arrays must match.")
+    if len(T_C) < 3:
+        raise ValueError("Need at least 3 data points for peak detection.")
+    idx_max = int(np.argmax(tan_delta))
+    Tg = float(T_C[idx_max])
+    log.info(f"Detected Tg = {Tg:.2f} C at peak index {idx_max}.")
+    return Tg
+
+
+if __name__ == "__main__":
+    T = np.linspace(20.0, 150.0, 131)            # C
+    td = synthetic_deta_heating(T, T_g=75.0)
+    Tg_reported = extract_tg_from_deta(T, td)
+    assert 70.0 <= Tg_reported <= 80.0, "Tg extraction out of range!"
+    log.info(f"Reported Tg (1 kHz) = {Tg_reported:.2f} C — OK.")
+```
 
 ---
-
-## 3.5 Worked Numerical Example (Board-Style)
-
-> A polymer disc of area $A = 1.00 \times 10^{-4}\ \text{m}^2$ and thickness $d = 1.00 \times 10^{-4}\ \text{m}$ is measured in a DETA run at $f = 1.00\ \text{kHz}$ and $T = 300\ \text{K}$. The LCR meter reads $C = 11.0\ \text{pF}$ and $G = 3.46 \times 10^{-10}\ \text{S}$. Calculate $\varepsilon'$, $\varepsilon''$, $\tan\delta$, and $\sigma_{ac}$.
-
-**Step 1 — Compute empty-cell capacitance.**
-
-$$
-C_0 = \dfrac{\varepsilon_0 A}{d} = \dfrac{(8.854 \times 10^{-12})(1.00 \times 10^{-4})}{1.00 \times 10^{-4}} = 8.854 \times 10^{-12}\ \text{F} = 8.854\ \text{pF}
-$$
-
-**Step 2 — Real permittivity.**
-
-$$
-\varepsilon' = \dfrac{C}{C_0} = \dfrac{11.0}{8.854} = 1.2423\ \text{(coefficient, since } C = C_0 \varepsilon'\text{)} 
-\quad\text{Wait — check definition.}
-$$
-
-**Correction:** $\varepsilon' = Cd/(\varepsilon_0 A) = C/C_0 = 11.0\ \text{pF}/8.854\ \text{pF} = 1.242$. **No, this is too small.** Recompute with a typical polymer: take $A = 1.00 \times 10^{-4}\ \text{m}^2$ but $d = 1.00 \times 10^{-3}\ \text{m}$ instead. Then $C_0 = 8.854 \times 10^{-13}\ \text{F} = 0.8854\ \text{pF}$, and $\varepsilon' = 11.0/0.8854 = 12.42$. **That is realistic for a polar polymer.** Use $d = 1.00\ \text{mm}$ going forward.
-
-**Step 3 — Imaginary permittivity.**
-
-$$
-\varepsilon'' = \dfrac{G\,d}{\varepsilon_0\,\omega\,A} = \dfrac{(3.46 \times 10^{-10})(1.00 \times 10^{-3})}{(8.854 \times 10^{-12})(2\pi \times 1000)(1.00 \times 10^{-4})}
-$$
-
-$$
-= \dfrac{3.46 \times 10^{-13}}{(8.854 \times 10^{-12})(6.283 \times 10^{3})(1.00 \times 10^{-4})}
-= \dfrac{3.46 \times 10^{-13}}{5.563 \times 10^{-12}} = 0.0622
-$$
-
-**Step 4 — Loss tangent.**
-
-$$
-\tan\delta = \dfrac{\varepsilon''}{\varepsilon'} = \dfrac{0.0622}{12.42} = 5.01 \times 10^{-3}
-$$
-
-**Step 5 — AC conductivity.**
-
-$$
-\sigma_{ac} = \omega \varepsilon_0 \varepsilon'' = (2\pi \times 1000)(8.854 \times 10^{-12})(0.0622) = 3.46 \times 10^{-12}\ \text{S/m}
-$$
-
-> [!IMPORTANT]
-> **Valuation key (typical KTU 2024 marking):**
-> * Substituting $C_0$ correctly — 2 marks
-> * Computing $\varepsilon'$ — 1 mark
-> * Computing $\varepsilon''$ — 2 marks
-> * $\tan\delta$ — 1 mark
-> * $\sigma_{ac}$ with unit — 1 mark
-
----
-
-<!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 # 4. Structural Diagrams & Schematics
 
-## 4.1 Block-Level Functional Architecture — DETA Signal Path
+## 4.1 Mermaid Block Diagram — DETA Instrument Architecture
 
 ```mermaid
 flowchart LR
-    subgraph SRC[Source Module]
-        OSC["AC Oscillator\nV0 sin(2 pi f t)"]
+    AC["AC Signal Generator\n0.1 V to 5 V, 1e-3 to 1e6 Hz"]
+    SW["Switch Matrix\nTemperature & Frequency Multiplexer"]
+    CELL["Polymer Sample Cell\nParallel Plate / Inter-Digitated Electrode\nSample Thickness d, Area A"]
+    I_V["Current / Voltage\nPhase-Sensitive Detector"]
+    LOCK["Lock-in Amplifier\nPhase Angle Delta Extraction"]
+    CPU["Data Acquisition\n& Computation Module"]
+    DISP["Display\nEps' vs T, Eps'' vs T, Tan Delta vs T"]
+
+    AC --> SW
+    SW --> CELL
+    CELL --> I_V
+    I_V --> LOCK
+    LOCK --> CPU
+    CPU --> DISP
+    DISP -. Feedback Control .-> SW
+
+    subgraph TC["Thermal Control Subsystem"]
+        FURN["Programmable Furnace\n-150 C to 500 C"]
+        TCTRL["PID Temperature Controller"]
+        TCAL["Thermocouple Calibration"]
     end
 
-    subgraph SAMPLE[Sample Compartment]
-        EL1["Top Electrode"]
-        POLY["Polymer Film\n(Thickness d, Area A)"]
-        EL2["Bottom Electrode"]
-        EL1 --- POLY
-        POLY --- EL2
-    end
-
-    subgraph DETECT[Detection Module]
-        AMP["Preamplifier\nCurrent to Voltage"]
-        LIA["Lock In Amplifier\nFFT Phase Detector"]
-    end
-
-    subgraph PROC[Computation Module]
-        DSP["Digital Signal Processor\nCompute Z*, C, G"]
-        OUT["Display Module\nPlot eps prime, eps double prime, tan delta"]
-        FIT["Fitting Engine\nDebye / Havriliak Negami / VFT"]
-    end
-
-    subgraph CTRL[Thermal Control]
-        HEAT["Programmable Heater\n1 to 5 C per min"]
-        TC["Thermocouple Feedback"]
-    end
-
-    OSC --> EL1
-    EL2 --> AMP
-    AMP --> LIA
-    LIA --> DSP
-    DSP --> OUT
-    DSP --> FIT
-    HEAT --> POLY
-    POLY --> TC
-    TC --> HEAT
+    TC --> CELL
 ```
 
-> [!NOTE]
-> **Reading the diagram:** The **source module** excites the **sample compartment** with a sinusoidal voltage. The **detection module** captures the resulting current and extracts its in-phase and quadrature components via a **lock-in amplifier**. The **computation module** translates the raw current/voltage data into dielectric spectra and applies theoretical models (Debye, Havriliak–Negami, VFT) for physical interpretation. A closed-loop **thermal control** ensures the temperature ramp is reproducible — this is what makes DETA "thermal" analysis.
-
-## 4.2 Sequential Processing Topology — DETA Measurement Workflow
+## 4.2 Mermaid Sequential Process — DETA Measurement Workflow
 
 ```mermaid
 flowchart TD
-    P1["Step 1: Prepare polymer specimen\nof known area A and thickness d"]
-    P2["Step 2: Mount between electrodes\nin guarded dielectric fixture"]
-    P3["Step 3: Set temperature program\nT min, T max, ramp rate"]
-    P4["Step 4: Select frequency list\n10 mHz to 1 MHz log spaced"]
-    P5["Step 5: Apply AC field\nV0 sin omega t"]
-    P6["Step 6: Measure I0 and phase delta"]
-    P7["Step 7: Compute Z*, C, G, eps*, tan delta"]
-    P8["Step 8: Plot 3D surface\teps versus frequency and temperature"]
-    P9["Step 9: Identify relaxation peaks\nalpha, beta, gamma processes"]
-    P10["Step 10: Fit to Debye or HN model\nExtract tau T and activation energy"]
+    S1["Step 1: Sample Preparation\nCast thin film or cut disk\nApply electrodes Pt, Au, or ceramic IDS"]
+    S2["Step 2: Cell Loading\nMount in DEA sensor\nSet electrode gap d"]
+    S3["Step 3: Calibration\nRun empty cell C0 measurement\nRun reference standard PTFE"]
+    S4["Step 4: Parameter Setup\nFrequency range fmin, fmax\nTemperature program Tmin to Tmax\nHeating rate beta C per min"]
+    S5["Step 5: Data Acquisition\nMeasure C, G at each T, f\nCompute Eps', Eps'', Tan Delta"]
+    S6["Step 6: Curve Analysis\nLocate peaks in Eps'' and Tan Delta\nIdentify Tg, alpha, beta, gamma relaxations"]
+    S7["Step 7: Reporting\nReport Tg with frequency\nReport activation energy Ea from Arrhenius fit"]
 
-    P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8 --> P9 --> P10
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
 ```
 
-## 4.3 Relaxation-Map Topology — Frequency vs Temperature
+## 4.3 Mermaid Block Topology — Equivalent Circuit of the Polymer Sample
 
 ```mermaid
 flowchart LR
-    subgraph ALPHA[Alpha Relaxation Region]
-        A1["Cooperative segmental motion\nTau = 0.1 to 100 s\nVFT temperature dependence"]
+    R_BULK["Rbulk\nBulk DC Resistance\nIonic Conduction Path"]
+    C_GEOM["Cgeom\nGeometric Capacitance\nfrom Eps Infinity"]
+    R_INTF["Rintf\nInterfacial MWS Resistance\nat Electrode Interface"]
+    C_INTF["Cintf\nInterfacial MWS Capacitance\nCharge Accumulation"]
+    R_DIP["Rdip\nDipole Rotation Resistance\nfrom Tan Delta Peak"]
+    C_DIP["Cdip\nDipole Capacitance\nfrom Eps Prime"]
+
+    subgraph SER["Series Bulk Path"]
+        R_BULK
+        C_GEOM
     end
 
-    subgraph BETA[Beta Relaxation Region]
-        B1["Side group rotation\nTau = 1e-6 to 1e-2 s\nArrhenius temperature dependence"]
+    subgraph PAR["Parallel Interfacial and Dipole Paths"]
+        R_INTF
+        C_INTF
+        R_DIP
+        C_DIP
     end
 
-    subgraph GAMMA[Gamma Relaxation Region]
-        G1["Local bond motion\nTau = 1e-10 to 1e-6 s\nArrhenius with low activation energy"]
-    end
-
-    subgraph MWSIL[Interfacial Relaxation]
-        M1["Maxwell Wagner Sillar polarization\nAt filler and crystalline interfaces\nLow frequency high temperature"]
-    end
-
-    ALPHA --- B1
-    BETA --- G1
-    MWSIL --- ALPHA
+    SER --- PAR
 ```
 
-> [!TIP]
-> **How to read the relaxation map.** A complete DETA characterization of a polymer typically reveals **multiple peaks** in $\tan\delta$ vs temperature, each with its own frequency dependence. The highest-temperature peak (the $\alpha$-process) corresponds to $T_g$. Lower-temperature peaks (the $\beta$, $\gamma$ processes) arise from localized motions and are **always present** in the DETA spectrum, even when DSC cannot detect them because their heat-flow signature is too small.
+## 4.4 Block-Level Functional Architecture — Information Flow in DETA
 
-## 4.4 Polymer Material Mapping Table (for Electrical / Information Science Applications)
-
-| Polymer Class | Example | DETA-Relevant Property | Typical DETA Output |
+| Stage | Hardware Block | Signal Type | Conversion Step |
 |---|---|---|---|
-| Polyolefins (cable insulation) | XLPE, LDPE | Very low $\tan\delta$ | $\tan\delta \approx 10^{-4}$ at $50\ \text{Hz}$ |
-| Polyester (capacitor film) | PET, PEN, BOPP | High $\varepsilon'$, low loss | $\varepsilon' \approx 3.2$ at $1\ \text{kHz}$ |
-| Polyimide (flexible PCB) | Kapton, PI-2611 | High $T_g$, stable $\varepsilon'$ | $T_g \approx 400\ ^\circ$C by $\tan\delta$ peak |
-| Epoxy (IC encapsulation) | Bisphenol-A epoxy | Cure monitoring | $\sigma_{ac}$ drop tracks cross-link density |
-| Fluoropolymers (high-frequency PCB) | PTFE, PFA | Extremely low $\varepsilon'$, low $\tan\delta$ | $\varepsilon' \approx 2.1$, $\tan\delta \approx 10^{-4}$ |
-| Conducting polymer blends | PEDOT:PSS, PANI composites | Percolation threshold | Step in $\sigma_{ac}$ at critical filler loading |
-| Polymer electrolytes (batteries) | PEO + Li salt | Ionic conductivity | $\sigma_{ac}$ from $10^{-8}$ to $10^{-4}\ \text{S/cm}$ vs $T$ |
+| 1 | AC source | Sine wave, $V_0 \sin(\omega t)$ | Reference channel |
+| 2 | DEA cell + sample | Complex impedance $Z^{*} = R_s - j\div(\omega C_s)$ | Sample channel |
+| 3 | Phase detector | DC voltages $V_R$, $V_X$ proportional to $\cos\delta$, $\sin\delta$ | Demodulation |
+| 4 | Lock-in amplifier | $\delta$ and $\vert Z^{*}\vert$ extracted | Phase extraction |
+| 5 | Computation | $C = 1\div(\omega \vert Z^{*}\vert \sin\delta)$, $G = \cos\delta\div\vert Z^{*}\vert$ | Conversion to $C, G$ |
+| 6 | Normalization | $\varepsilon' = C\div C_0$, $\varepsilon'' = G\div(\omega C_0)$ | Dielectric response |
+| 7 | Output plot | $\varepsilon'$, $\varepsilon''$, $\tan\delta$ vs $T$ and $f$ | Visualization |
+
+> [!NOTE]
+> The **inter-digitated electrode (IDE) sensor** is the de facto standard for polymer DETA because it produces a strong, well-defined fringing electric field that penetrates the bulk of the sample uniformly, unlike parallel-plate cells which suffer from air-gap and contact-resistance artifacts at low frequencies.
 
 ---
-
-<!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
 # 5. KTU 2024 Scheme Examination Question Bank & Topic Recap
 
 ## 5.1 Part A — Short Answer Questions (3 Marks Each)
 
-### Q1. **[KTU University Exam — July 2024]** Define Dielectric Thermal Analysis (DETA). What macroscopic quantities does it measure, and how are they obtained from the electrical response of the sample?
+### Question 1
+**[KTU University Exam — July 2024]**
+**CO:** CO2 | **RBT Level:** Remember
 
-**Model Answer (3 marks):**
-* **Definition (1 mark):** DETA is a thermo-analytical technique that measures the dielectric properties (permittivity, loss factor, conductivity) of a material as a function of temperature, time, and frequency of an applied alternating electric field.
-* **Measured quantities (1 mark):** The instrument measures **capacitance $C$** and **conductance $G$** (or equivalently complex impedance $Z^{*}$) of the sample sandwiched between two electrodes.
-* **Derived quantities (1 mark):** From $C$ and $G$, the **real permittivity $\varepsilon'$** (via $C = \varepsilon_0\varepsilon' A/d$), the **imaginary permittivity $\varepsilon''$** (via $G$), and the **loss tangent $\tan\delta = \varepsilon''/\varepsilon'$** are computed and plotted as functions of $T$ and $f$.
+**Q:** Define *dielectric thermal analysis* and name the two principal quantities measured by a dielectric analyzer.
+
+**Model Answer (Board-Standard, 3 Marks):**
+
+> Dielectric Thermal Analysis (DETA) is a thermo-analytical technique in which the dielectric properties of a material are measured as a function of temperature, frequency, and time under an applied alternating electric field. The two principal quantities measured are:
+> 1. **Dielectric constant $\varepsilon'$** — the real part of complex permittivity, representing the capacitive (energy-storing) response.
+> 2. **Dielectric loss factor $\varepsilon''$** — the imaginary part of complex permittivity, representing the energy-dissipative response.
+>
+> Together they form the complex permittivity $\varepsilon^{*} = \varepsilon' - i\varepsilon''$.
+
+**Valuation Key:**
+- [Definition of DETA: 1 Mark]
+- [Identification of $\varepsilon'$: 1 Mark]
+- [Identification of $\varepsilon''$: 1 Mark]
+
+### Question 2
+**[KTU University Exam — Dec 2023]**
+**CO:** CO2 | **RBT Level:** Understand
+
+**Q:** Why is DETA particularly suitable for studying the glass transition of polymers compared to DSC?
+
+**Model Answer (3 Marks):**
+
+> DETA is particularly suitable for studying the glass transition of polymers for the following reasons:
+> 1. **Sensitivity:** DETA detects the *onset of dipole mobility*, which is the molecular origin of $T_g$, whereas DSC detects the small change in heat capacity $\Delta C_p$ at $T_g$, which is often weak and easily masked.
+> 2. **Frequency selectivity:** DETA can probe $T_g$ at multiple frequencies, enabling the construction of an Arrhenius/VFT plot and extraction of activation energy — DSC cannot.
+> 3. **Sample versatility:** DETA works on thin films, fibers, coatings, and even liquids, whereas DSC requires specific crucible-compatible samples.
+> 4. **Multiple relaxations:** DETA clearly separates $\alpha$ (glass), $\beta$ (sub-$T_g$), and $\gamma$ (local) relaxations.
+
+**Valuation Key:**
+- [Sensitivity to dipole mobility: 1 Mark]
+- [Frequency selectivity: 1 Mark]
+- [Any one additional valid point: 1 Mark]
 
 ---
 
-### Q2. **[KTU University Exam — Dec 2023]** Distinguish between the real and imaginary components of complex permittivity. What does each represent physically, and at what molecular level do they originate in a polymer?
+## 5.2 Part B — Long Answer Questions (14 Marks Each, with Internal Choice)
 
-**Model Answer (3 marks):**
-* **Real part $\varepsilon'$ (1.5 marks):** Represents the **stored electrical energy** per cycle. It originates from **induced (electronic + atomic) polarization** and from the **in-phase component of orientation polarization** of permanent dipoles along the polymer backbone or side groups. It is dimensionless and a measure of how strongly the material stores charge.
-* **Imaginary part $\varepsilon''$ (1.5 marks):** Represents the **dissipated electrical energy per cycle** (converted to heat). It originates from the **out-of-phase component of dipolar reorientation**, from **ionic conduction** through the polymer matrix, and from **interfacial (Maxwell–Wagner–Sillar) polarization** at internal boundaries. Mathematically $\varepsilon'' = \sigma_{ac}/(\omega\varepsilon_0)$.
+### Question A — Option 1
+**[KTU University Exam — July 2024]**
+**CO:** CO2, CO3 | **RBT Levels:** Understand (Part a) + Apply (Part b)
 
----
+**Q(a) [7 Marks]:** With a neat block diagram, explain the working principle of a Dielectric Thermal Analyzer. List the three main components of a complex permittivity and explain the physical meaning of each.
 
-## 5.2 Part B — 14-Mark Questions (Module Internal Choice)
+**Model Answer:**
 
-> **KTU 2024 Pattern:** Each Part B question carries 14 marks with sub-parts (a) 7 marks and (b) 7 marks, and the student answers ONE full question from the choice.
+> **Working Principle of DETA:**
+> A polymer sample is placed between two electrodes (parallel plate or inter-digitated). An AC voltage of known frequency $f$ and amplitude $V_0$ is applied. The instrument measures:
+> 1. The **capacitance $C$** of the cell containing the sample.
+> 2. The **conductance $G$** of the cell containing the sample.
+> 3. The **phase angle $\delta$** between the current and voltage.
+>
+> From these, $\varepsilon'$ and $\varepsilon''$ are computed. The sample is then subjected to a controlled temperature program, and the dielectric response is recorded as a function of temperature and frequency.
+>
+> **Block Diagram:** *(Refer to Section 4.1 Mermaid block diagram above — students should redraw the AC Source → Cell → Detector → Display flow in the answer sheet.)*
+>
+> **Three Components of Complex Permittivity $\varepsilon^{*} = \varepsilon' - i\varepsilon''$:**
+> 1. **Real part $\varepsilon'$ (dielectric constant):** Represents the energy stored in the system through polarization of dipoles. It is related to the capacitance by $C = \varepsilon_0 \varepsilon' A\div d$.
+> 2. **Imaginary part $\varepsilon''$ (dielectric loss factor):** Represents the energy dissipated per cycle, primarily through dipole rotation and ionic conduction.
+> 3. **Loss tangent $\tan\delta = \varepsilon''\div\varepsilon'$:** Represents the ratio of energy lost to energy stored per AC cycle.
 
----
+**Valuation Key (Part a):**
+- [Block diagram with all 4 main blocks: 2 Marks]
+- [Explanation of $\varepsilon'$: 2 Marks]
+- [Explanation of $\varepsilon''$: 2 Marks]
+- [Definition of $\tan\delta$: 1 Mark]
 
-### **Question A (14 Marks)** — **[KTU University Exam — July 2024]**
+**Q(b) [7 Marks]:** For a polymer sample, the Debye parameters at $25^{\circ}\text{C}$ are: $\varepsilon_s = 10$, $\varepsilon_\infty = 2.5$, $\tau = 1\ \text{ms}$. Calculate (i) the frequency at which $\varepsilon''$ is maximum, and (ii) the value of $\tan\delta$ at this frequency.
 
-#### (a) Describe, with a neat block diagram, the working of a Dielectric Thermal Analyzer. Explain how $\varepsilon'$ and $\varepsilon''$ are obtained from the measured current response. **(7 marks)**
+**Model Answer:**
 
-**Model Solution:**
+> **(i) Frequency of maximum $\varepsilon''$:**
+> The loss factor is maximum when $\omega\tau = 1$.
+> $$f_{\max} = \frac{1}{2\pi\tau} = \frac{1}{2\pi \times 1 \times 10^{-3}} = 159.15\ \text{Hz}$$
+>
+> **(ii) Value of $\tan\delta$ at $f_{\max}$:**
+> At $\omega\tau = 1$:
+> $$\varepsilon'(f_{\max}) = \varepsilon_\infty + \frac{\varepsilon_s - \varepsilon_\infty}{1 + 1^2} = 2.5 + \frac{10 - 2.5}{2} = 2.5 + 3.75 = 6.25$$
+> $$\varepsilon''(f_{\max}) = \frac{(\varepsilon_s - \varepsilon_\infty)(1)}{1 + 1^2} = \frac{7.5}{2} = 3.75$$
+> $$\tan\delta = \frac{\varepsilon''}{\varepsilon'} = \frac{3.75}{6.25} = 0.60$$
 
-**1. Block description (4 marks):**
-* **Sample holder / dielectric fixture:** A guarded parallel-plate capacitor geometry holds the polymer film of thickness $d$ and electrode area $A$. A shielding ring (guard electrode) suppresses fringe-field errors at the edges.
-* **AC source / oscillator:** Generates a low-distortion sinusoidal voltage $V(t) = V_0\sin(\omega t)$ with frequency selectable from $10^{-2}$ to $10^6\ \text{Hz}$ and amplitude $V_0 \approx 0.1$–$5\ \text{V}$ to keep the field in the linear-response regime.
-* **Current detector / preamplifier:** Converts the small current through the sample into a voltage, with high input impedance and low noise.
-* **Phase-sensitive detector (lock-in amplifier or FFT analyser):** Decomposes the measured current into its in-phase and quadrature components relative to the applied voltage. The **phase angle $\delta$** between current and voltage is the loss angle.
-* **Digital signal processor:** Calculates $C$, $G$, $\varepsilon'$, $\varepsilon''$, $\tan\delta$, and $\sigma_{ac}$ using the geometric relations.
-* **Programmable furnace / cryostat + temperature controller:** Ramps the temperature at $1$–$5\ ^\circ$C/min from sub-ambient to above the polymer's $T_g$ or $T_m$, monitored by a thermocouple in contact with the sample.
-* **Display / software:** Plots $\varepsilon'$, $\varepsilon''$, and $\tan\delta$ vs $T$ (isofrequency) or vs $f$ (isothermal).
+**Valuation Key (Part b):**
+- [Stating condition $\omega\tau = 1$ for $\varepsilon''$ max: 1 Mark]
+- [Computing $f_{\max} = 159.15$ Hz: 1 Mark]
+- [Formula for $\varepsilon'$ at the peak: 2 Marks]
+- [Computing $\varepsilon'(f_{\max}) = 6.25$: 1 Mark]
+- [Final $\tan\delta = 0.60$ with units: 2 Marks]
 
-**[Block diagram: 1 mark]** — Show a labelled flow: AC source → electrode / sample → preamplifier → lock-in → DSP → display, with a closed-loop temperature controller.
+### Question B — Option 2 (Internal Choice)
+**[KTU University Exam — Dec 2023]**
+**CO:** CO2, CO3 | **RBT Levels:** Understand (Part a) + Apply (Part b)
 
-**2. Extraction of $\varepsilon'$ and $\varepsilon''$ (3 marks):**
+**Q(a) [7 Marks]:** Explain the principle of operation of DETA in the determination of the glass transition temperature ($T_g$) of a polymer. Discuss the difference between the $T_g$ values obtained from the peak of $\varepsilon''$ and the peak of $\tan\delta$.
 
-The total current is $I(t) = I_R \sin(\omega t) + I_C \cos(\omega t)$, with $I_R = GV_0$ and $I_C = \omega C V_0$. The admittance is:
+**Model Answer:**
 
-$$
-Y^{*} = G - i\omega C
-$$
+> **Principle of $T_g$ Determination by DETA:**
+> At temperatures below $T_g$, polymer chain segments are frozen, dipoles cannot rotate, and the dielectric response is dominated by the high-frequency (instantaneous) dielectric constant $\varepsilon_\infty$. As temperature rises through $T_g$, cooperative segmental motion of polymer chains becomes activated on the timescale of the AC field. The dipoles begin to follow the field with a phase lag, producing a sharp **step increase in $\varepsilon'$** and a **peak in $\varepsilon''$** and $\tan\delta$.
+>
+> **$T_g$ from $\varepsilon''$ peak vs $\tan\delta$ peak:**
+> - The **$\varepsilon''$ peak** occurs at a slightly lower temperature than the $\tan\delta$ peak because $\varepsilon''$ directly measures the energy dissipation per cycle (no normalization by $\varepsilon'$).
+> - The **$\tan\delta$ peak** occurs at a slightly higher temperature because $\tan\delta = \varepsilon''\div\varepsilon'$ — as $\varepsilon'$ rises with temperature, the peak in the ratio shifts to higher $T$.
+> - The **onset of the $\varepsilon'$ step** gives the lowest reported $T_g$ (most conservative estimate).
+> - Convention in KTU board valuation: report $T_g$ from the **$\tan\delta$ peak** unless otherwise specified, and **always state the frequency** (typically 1 kHz).
 
-Substituting $C = \varepsilon_0 \varepsilon' A/d$ and $G = \sigma_{ac} A/d = \omega \varepsilon_0 \varepsilon'' A/d$, with $C_0 = \varepsilon_0 A/d$:
+**Valuation Key (Part a):**
+- [Mechanism of dipole activation at $T_g$: 2 Marks]
+- [Description of $\varepsilon'$ step: 1 Mark]
+- [Description of $\varepsilon''$ peak: 1 Mark]
+- [Description of $\tan\delta$ peak: 1 Mark]
+- [Distinction between the two peaks: 2 Marks]
 
-$$
-Y^{*} = i\,\omega C_0\,(\varepsilon' - i\,\varepsilon'')
-$$
+**Q(b) [7 Marks]:** A DETA experiment on poly(vinyl chloride) (PVC) at 1 kHz shows a $\tan\delta$ peak at $90^{\circ}\text{C}$ and another at $-40^{\circ}\text{C}$. Identify these transitions and justify. If the activation energy of the low-temperature transition is $40\ \text{kJ/mol}$, calculate the relaxation time at $T = 0^{\circ}\text{C}$ using the Arrhenius equation. Take $R = 8.314\ \text{J/(mol·K)}$ and $\tau_0 = 1 \times 10^{-13}\ \text{s}$.
 
-Equating real and imaginary parts:
+**Model Answer:**
 
-$$
-\boxed{\;\varepsilon'(\omega) = -\dfrac{\text{Im}\{Y^{*}\}}{\omega C_0}, \qquad \varepsilon''(\omega) = \dfrac{\text{Re}\{Y^{*}\}}{\omega C_0}\;}
-$$
+> **Identification of the two transitions:**
+> - **Peak at $90^{\circ}\text{C}$** (1 kHz): This is the **$\alpha$-relaxation** associated with the **glass transition ($T_g$)** of PVC. It corresponds to the onset of cooperative segmental motion of the main polymer backbone.
+> - **Peak at $-40^{\circ}\text{C}$** (1 kHz): This is the **$\beta$-relaxation** of PVC, a **sub-$T_g$ local mode** associated with short-range motion of small chain segments (e.g., flipping of -CHCl- units). $\beta$-relaxations typically follow the Arrhenius law.
+>
+> **Calculation of $\tau$ at $T = 0^{\circ}\text{C} = 273.15\ \text{K}$:**
+>
+> $$\tau(T) = \tau_0 \exp\left(\frac{E_a}{RT}\right)$$
+>
+> $$\tau(273.15\ \text{K}) = (1 \times 10^{-13}) \exp\left(\frac{40\,000}{8.314 \times 273.15}\right)$$
+>
+> $$\tau(273.15\ \text{K}) = (1 \times 10^{-13}) \exp(17.617)$$
+>
+> $$\tau(273.15\ \text{K}) = (1 \times 10^{-13}) \times (4.534 \times 10^{7})$$
+>
+> $$\boxed{\tau(0^{\circ}\text{C}) \approx 4.53 \times 10^{-6}\ \text{s} = 4.53\ \mu\text{s}}$$
 
-#### (b) The following data are obtained on a polymer disc of area $A = 1.00\ \text{cm}^2$ and thickness $d = 0.50\ \text{mm}$ at $f = 1.00\ \text{kHz}$: $C = 1.77\ \text{pF}$, $G = 5.55 \times 10^{-11}\ \text{S}$. Calculate $\varepsilon'$, $\varepsilon''$, $\tan\delta$, and $\sigma_{ac}$. **(7 marks)**
-
-**Model Solution:**
-
-**Step 1 — Empty-cell capacitance $C_0$:**
-
-$$
-C_0 = \dfrac{\varepsilon_0 A}{d} = \dfrac{(8.854 \times 10^{-12})(1.00 \times 10^{-4})}{5.00 \times 10^{-4}} = 1.771 \times 10^{-12}\ \text{F} = 1.771\ \text{pF}
-$$
-
-**[Calculation: 2 marks]**
-
-**Step 2 — Real permittivity:**
-
-$$
-\varepsilon' = \dfrac{C}{C_0} = \dfrac{1.77}{1.771} = 1.00 \quad\text{(rounded)}
-$$
-
-*Note for students:* The use of a very thin, low-permittivity sample keeps $\varepsilon' \approx 1$ in this example; replace with realistic polymer permittivity if needed. **[1 mark]**
-
-**Step 3 — Imaginary permittivity:**
-
-$$
-\varepsilon'' = \dfrac{G}{\omega C_0} = \dfrac{5.55 \times 10^{-11}}{(2\pi \times 1000)(1.771 \times 10^{-12})} = \dfrac{5.55 \times 10^{-11}}{1.113 \times 10^{-8}} = 4.99 \times 10^{-3}
-$$
-
-**[Calculation: 2 marks]**
-
-**Step 4 — Loss tangent:**
-
-$$
-\tan\delta = \dfrac{\varepsilon''}{\varepsilon'} = \dfrac{4.99 \times 10^{-3}}{1.00} = 4.99 \times 10^{-3}
-$$
-
-**[1 mark]**
-
-**Step 5 — AC conductivity:**
-
-$$
-\sigma_{ac} = G\cdot\dfrac{d}{A} = (5.55 \times 10^{-11})\cdot\dfrac{5.00 \times 10^{-4}}{1.00 \times 10^{-4}} = 2.775 \times 10^{-10}\ \text{S/m}
-$$
-
-**[1 mark]**
+**Valuation Key (Part b):**
+- [Identifying $90^{\circ}\text{C}$ peak as $\alpha$ / $T_g$: 1 Mark]
+- [Identifying $-40^{\circ}\text{C}$ peak as $\beta$ relaxation: 1 Mark]
+- [Writing the Arrhenius equation: 1 Mark]
+- [Correct temperature in Kelvin: 1 Mark]
+- [Correct exponential evaluation: 1 Mark]
+- [Final answer in seconds with unit: 2 Marks]
 
 > [!WARNING]
-> **Examiner's Pitfall Callout:** The most common mistake is to forget to convert **area from $\text{cm}^2$ to $\text{m}^2$** and **thickness from $\text{mm}$ to $\text{m}$** before substituting into SI formulas. A second common error is to use $C$ directly in farads without ensuring all quantities are in SI. Always normalize: $1\ \text{cm}^2 = 10^{-4}\ \text{m}^2$, $1\ \text{mm} = 10^{-3}\ \text{m}$. **[Lose 1–2 marks if missed.]**
-
----
-
-### **Question B (14 Marks)** — **[KTU University Exam — Dec 2023]**
-
-#### (a) Explain the Debye model of dielectric relaxation. Derive expressions for $\varepsilon'(\omega)$ and $\varepsilon''(\omega)$ and obtain the condition for the loss-peak frequency. **(7 marks)**
-
-**Model Solution:**
-
-**1. Concept (2 marks):** The Debye model assumes a **single, ideal relaxation time $\tau$** for the dipoles in the material. The complex permittivity is:
-
-$$
-\varepsilon^{*}(\omega) = \varepsilon' - i\varepsilon'' = \varepsilon_{\infty} + \dfrac{\varepsilon_s - \varepsilon_{\infty}}{1 + i\omega\tau}
-$$
-
-where $\varepsilon_s$ is the static permittivity (low-frequency limit) and $\varepsilon_{\infty}$ is the high-frequency limit.
-
-**2. Derivation of $\varepsilon'$ and $\varepsilon''$ (3 marks):** Multiply numerator and denominator by $(1 - i\omega\tau)$:
-
-$$
-\varepsilon^{*} = \varepsilon_{\infty} + \dfrac{(\varepsilon_s - \varepsilon_{\infty})(1 - i\omega\tau)}{1 + \omega^2\tau^2}
-$$
-
-Equating real and imaginary parts:
-
-$$
-\boxed{\;\varepsilon'(\omega) = \varepsilon_{\infty} + \dfrac{\varepsilon_s - \varepsilon_{\infty}}{1 + \omega^2\tau^2}\;}
-$$
-
-$$
-\boxed{\;\varepsilon''(\omega) = \dfrac{(\varepsilon_s - \varepsilon_{\infty})\,\omega\tau}{1 + \omega^2\tau^2}\;}
-$$
-
-**3. Loss-peak condition (2 marks):** Differentiate $\varepsilon''$ with respect to $\omega$ and set $d\varepsilon''/d\omega = 0$:
-
-$$
-\dfrac{d\varepsilon''}{d\omega} = \dfrac{(\varepsilon_s - \varepsilon_{\infty})\tau(1 - \omega^2\tau^2)}{(1 + \omega^2\tau^2)^2} = 0 \quad\Longrightarrow\quad \omega_{\text{max}}\tau = 1
-$$
-
-Therefore the **loss-peak frequency** is $f_{\text{max}} = 1/(2\pi\tau)$ and the **peak height** is $\varepsilon''_{\text{max}} = (\varepsilon_s - \varepsilon_{\infty})/2$.
-
-#### (b) Discuss the major applications of DETA in polymer characterization for the electrical and information-science industries. **(7 marks)**
-
-**Model Solution (organised by industry sector):**
-
-1. **Determination of Glass Transition Temperature $T_g$ (1 mark):** The $\alpha$-relaxation peak in $\tan\delta$ (or the inflection in $\varepsilon'$) during a temperature scan gives a clean, sensitive $T_g$, often **more distinct than the DSC step** because DETA couples to dipolar mobility, not enthalpy.
-
-2. **PCB and Packaging Dielectric Qualification (1 mark):** Low-$k$ and low-loss polymers (PTFE, LCP, polyimide) for high-speed and high-frequency circuits are graded by DETA at $1$ kHz, $1$ MHz, and $1$ GHz (via time–temperature superposition).
-
-3. **Capacitor-Film Production QC (1 mark):** BOPP, PET, and PEN films are specified by their **dissipation factor** $\tan\delta$ at $1$ kHz and $1$ MHz to minimize dielectric heating in AC capacitor banks.
-
-4. **Polymer-Blend Miscibility Studies (1 mark):** A single composition-dependent $T_g$ peak (vs. two peaks for immiscible blends) is **proof of segmental-scale miscibility**.
-
-5. **Cure Monitoring of Epoxy / Phenolic Resins (1 mark):** Both ionic conductivity and $\varepsilon'$ track cross-link density during thermoset cure, enabling in-mold and in-line process control of encapsulation compounds used for IC packaging.
-
-6. **Moisture and Contaminant Sensing (1 mark):** Water has a huge dipole moment; even ppm-level moisture produces a sharp rise in low-frequency $\varepsilon''$. DETA is used as a **nondestructive wafer-level moisture meter** in semiconductor fabs.
-
-7. **Polymer Electrolyte Characterization (1 mark):** PEO–Li-salt and gel-polymer electrolytes for lithium-ion batteries and supercapacitors are characterized by the **DC conductivity plateau** in $\sigma_{ac}(\omega)$ at low $\omega$, from which the bulk ionic conductivity and the diffusion coefficients of the charge carriers are extracted.
-
-> [!WARNING]
-> **Examiner's Pitfall Callout:** Students frequently write vague answers like "DETA is used to study polymers" without specifying **which property** is measured and **which industrial decision** is informed. Always pair an application with the **measured quantity** and the **industrial outcome** (e.g., "$T_g$ by $\tan\delta$ peak → defines upper service temperature of PCB"). **[Lose up to 2 marks for vague applications.]**
+> **KTU Examiner's Valuation Warning — Common Pitfalls**
+> 1. **Forgetting to convert ${}^{\circ}\text{C}$ to K** in Arrhenius calculations: KTU explicitly awards 1 mark for correct unit conversion; failing this loses the mark even if the rest of the math is correct.
+> 2. **Reporting $T_g$ without specifying frequency:** Always write "$T_g = X^{\circ}\text{C}$ at 1 kHz" — KTU examiners treat omission of frequency as a deduction.
+> 3. **Confusing $\varepsilon'$ and $\varepsilon''$:** Remember: **Prime = real = stored; Double-prime = imaginary = lost.** Use mnemonics: "P for Potential (stored) energy, PP for Power (lost)."
+> 4. **Using parallel-plate formulas for inter-digitated sensors:** The formulas $C = \varepsilon_0 \varepsilon' A\div d$ are for parallel plate only. IDE sensors have a *cell constant $K$* — always check the manufacturer's calibration certificate.
+> 5. **Skipping the Cole-Cole plot:** A DETA report without a Cole-Cole plot is considered incomplete. Always include it.
 
 ---
 
 ## 5.3 Topic Recap & Important Things to Remember
 
 > [!IMPORTANT]
-> **Rapid Revision Checklist — DETA of Polymers**
+> **Rapid-Revision Checklist — DETA of Polymers**
 
-* **DETA definition:** Measures $\varepsilon'$, $\varepsilon''$, $\tan\delta$, $\sigma_{ac}$ vs $T$ and $f$ under a small AC field.
-* **Primary inputs:** Applied AC voltage $V_0 \sin(\omega t)$ between two electrodes.
-* **Primary measurements:** Capacitance $C$ and conductance $G$ of the sample.
-* **Key derived quantities:** $\varepsilon' = Cd/(\varepsilon_0 A)$, $\varepsilon'' = Gd/(\varepsilon_0 \omega A)$, $\tan\delta = \varepsilon''/\varepsilon'$, $\sigma_{ac} = \omega \varepsilon_0 \varepsilon''$.
-* **Complex-permittivity convention:** $\varepsilon^{*} = \varepsilon' - i\varepsilon''$; complex admittance $Y^{*} = i\omega C_0 \varepsilon^{*}$.
-* **Debye model:** Single relaxation time $\tau$; loss peak at $f_{\text{max}} = 1/(2\pi\tau)$ with height $\varepsilon''_{\text{max}} = \Delta\varepsilon/2$.
-* **$\alpha$-relaxation:** Cooperative segmental motion; follows **VFT** $\tau = \tau_0 \exp[B/(T - T_V)]$; marks $T_g$.
-* **$\beta$, $\gamma$-relaxations:** Local motions; follow **Arrhenius** $\tau = \tau_0 \exp(E_a/RT)$; often invisible to DSC.
-* **Maxwell–Wagner–Sillar (MWS) polarization:** Interfacial charging at polymer–filler / crystalline–amorphous boundaries; dominates low-frequency / high-temperature response.
-* **Typical DETA frequency range:** $10^{-2}$ to $10^{6}$ Hz.
-* **Typical temperature ramp:** $1$ to $5\ ^\circ$C/min under a programmed furnace with thermocouple feedback.
-* **Sample geometry:** Thin film (preferred) or pressed pellet; guarded electrode suppresses fringe fields.
-* **Key application in electrical science:** Quality control of low-$\tan\delta$ PCB substrates, capacitor films, polymer electrolytes, and IC encapsulants.
-* **Key application in information science:** Dielectric characterization of polymer gate insulators, OLED / flexible-display substrates, and wafer-level moisture sensing.
-* **Common student errors:**
-  1. Forgetting to convert $\text{cm}^2$/$\text{mm}$ to $\text{m}^2$/$\text{m}$ in SI formulas.
-  2. Confusing the Debye $\varepsilon'_{\text{max}}$ (which is at $\omega = 0$) with the $\varepsilon''_{\text{max}}$ (which is at $\omega = 1/\tau$).
-  3. Writing the conductivity in $\text{S/cm}$ while the formula expects $\text{S/m}$.
-  4. Conflating DETA (electrical) with DSC (thermal) — they are complementary, not interchangeable.
-  5. Omitting the **guard electrode** in the block diagram.
-* **Exam one-liner worth 1 mark:** *DETA is the AC electrical analog of DMA — it probes molecular mobility by measuring complex permittivity as a function of temperature and frequency.*
-* **Sneak-peak links:** DSC gives $T_g$ by heat-capacity step; DMA gives $T_g$ by $\tan E$ peak; **DETA gives $T_g$ by $\tan\delta$ (electrical) peak** — and the three techniques cross-validate the assignment of a transition.
-
----
+- [x] **Definition:** DETA measures $\varepsilon'$ and $\varepsilon''$ of a polymer as a function of $T$, $f$, and $t$ under an applied AC field.
+- [x] **Measured quantities:** $C$ (capacitance), $G$ (conductance), $\delta$ (phase angle).
+- [x] **Key equation:** $\varepsilon^{*} = \varepsilon' - i\varepsilon''$.
+- [x] **Loss tangent:** $\tan\delta = \varepsilon''\div\varepsilon'$.
+- [x] **Capacitance relation:** $C = \varepsilon_0\,\varepsilon'\,A\div d$.
+- [x] **Conductance relation:** $G = \omega\,\varepsilon_0\,\varepsilon''\,A\div d$.
+- [x] **Debye peak condition:** $\varepsilon''$ is maximum when $\omega\tau = 1$.
+- [x] **Debye $\varepsilon''_{\max}$:** $(\varepsilon_s - \varepsilon_\infty)\div 2$.
+- [x] **Cole-Cole plot:** $\varepsilon''$ vs $\varepsilon'$ — a semicircle indicates ideal Debye; a depressed arc indicates non-ideal (Havriliak-Negami) behavior.
+- [x] **$T_g$ identification:** Step in $\varepsilon'$, peak in $\varepsilon''$, peak in $\tan\delta$. Always report with frequency.
+- [x] **Relaxation hierarchy:** $\alpha$ (cooperative, $>T_g$, VFT) $>$ $\beta$ (local, $<T_g$, Arrhenius) $>$ $\gamma$ (side-group, very low $T$).
+- [x] **Arrhenius equation:** $\tau = \tau_0\,\exp(E_a\div RT)$ — used for sub-$T_g$ relaxations.
+- [x] **VFT equation:** $\tau = \tau_0\,\exp[B\div(T - T_0)]$ — used for $\alpha$ relaxation.
+- [x] **Havriliak-Negami equation:** Generalized model with shape parameters $\alpha, \beta$.
+- [x] **Primary application:** $T_g$ determination, cure monitoring, relaxation mode identification, composite interface analysis.
+- [x] **Industrial uses:** Epoxy cure in microelectronics packaging, Nafion$^{\circledR}$ PEM characterization, XLPE cable aging, photoresist cure state, dielectric elastomer actuator (DEA) materials.
+- [x] **Electrode type:** Inter-digitated (IDE) sensors are preferred for polymer DETA over parallel-plate cells.
+- [x] **Standard frequency for reporting:** **1 kHz** (unless otherwise specified in the question).
+- [x] **Physical constant to remember:** $\varepsilon_0 = 8.854 \times 10^{-12}\ \text{F/m}$.
+- [x] **Always include in answer:** Equation, units, frequency of measurement, temperature program, and at least one curve (DETA spectrum or Cole-Cole plot).
 
 <!-- SECTION_5_END -->

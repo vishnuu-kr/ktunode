@@ -1,0 +1,50 @@
+{
+  "course_name": "INTERNET OF THINGS",
+  "course_code": "PECST755",
+  "module_number": 4,
+  "module_title": "Introduction to raspberry pi",
+  "topics_generated": [
+    {
+      "title": "Introduction to Raspberry Pi",
+      "slug": "introduction-to-raspberry-pi",
+      "path": "introduction-to-raspberry-pi/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Creating your first project",
+      "slug": "creating-your-first-project",
+      "path": "creating-your-first-project/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Creating a Sensor to Measure Ambient Light",
+      "slug": "creating-a-sensor-to-measure-ambient-light",
+      "path": "creating-a-sensor-to-measure-ambient-light/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Creating an Actuator for Controlling Illumination",
+      "slug": "creating-an-actuator-for-controlling-illumination",
+      "path": "creating-an-actuator-for-controlling-illumination/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Publishing Information Using MQTT & HTTP",
+      "slug": "publishing-information-using-mqtt-http",
+      "path": "publishing-information-using-mqtt-http/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Creating Web Pages for Your Devices",
+      "slug": "creating-web-pages-for-your-devices",
+      "path": "creating-web-pages-for-your-devices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

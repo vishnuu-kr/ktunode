@@ -1,0 +1,85 @@
+{
+  "course_name": "HIGH PERFORMANCE COMPUTING",
+  "course_code": "PECST757",
+  "module_number": 2,
+  "module_title": "Parallel computers",
+  "topics_generated": [
+    {
+      "title": "Parallel computers",
+      "slug": "parallel-computers",
+      "path": "parallel-computers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Taxonomy of parallel computing paradigms",
+      "slug": "taxonomy-of-parallel-computing-paradigms",
+      "path": "taxonomy-of-parallel-computing-paradigms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Shared-memory computers",
+      "slug": "shared-memory-computers",
+      "path": "shared-memory-computers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cache coherence",
+      "slug": "cache-coherence",
+      "path": "cache-coherence/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "UMA,  ccNUMA",
+      "slug": "uma-ccnuma",
+      "path": "uma-ccnuma/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Distributed-memory computers",
+      "slug": "distributed-memory-computers",
+      "path": "distributed-memory-computers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hierarchical (hybrid) systems",
+      "slug": "hierarchical-hybrid-systems",
+      "path": "hierarchical-hybrid-systems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Networks",
+      "slug": "networks",
+      "path": "networks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Basic performance characteristics of networks, Buses, Switched and fat-tree networks",
+      "slug": "basic-performance-characteristics-of-networks-buses-switched-and-fat-tree-networks",
+      "path": "basic-performance-characteristics-of-networks-buses-switched-and-fat-tree-networks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Mesh networks",
+      "slug": "mesh-networks",
+      "path": "mesh-networks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hybrids.",
+      "slug": "hybrids",
+      "path": "hybrids/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "course_name": "ADVANCED COMPUTER ARCHITECTURE",
+  "course_code": "PECST528",
+  "module_number": 2,
+  "module_title": "Review the basic concepts of parallel processing and pipelining instruc",
+  "topics_generated": [
+    {
+      "title": "Review the basic Concepts of Parallel Processing and Pipelining Instruction Level Parallelism",
+      "slug": "review-the-basic-concepts-of-parallel-processing-and-pipelining-instruction-level-parallelism",
+      "path": "review-the-basic-concepts-of-parallel-processing-and-pipelining-instruction-level-parallelism/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "data dependencies and hazards Different types of dependences",
+      "slug": "data-dependencies-and-hazards-different-types-of-dependences",
+      "path": "data-dependencies-and-hazards-different-types-of-dependences/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compiler Techniques for ILP",
+      "slug": "compiler-techniques-for-ilp",
+      "path": "compiler-techniques-for-ilp/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Branch Prediction – Correlating branch predictor Dynamic Scheduling – Idea",
+      "slug": "branch-prediction-correlating-branch-predictor-dynamic-scheduling-idea",
+      "path": "branch-prediction-correlating-branch-predictor-dynamic-scheduling-idea/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Introduction to Tomasulo’s scheme.",
+      "slug": "introduction-to-tomasulo-s-scheme",
+      "path": "introduction-to-tomasulo-s-scheme/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Register Renaming Hardware Speculation",
+      "slug": "register-renaming-hardware-speculation",
+      "path": "register-renaming-hardware-speculation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Reorder Buffers Multiple issue and static scheduling",
+      "slug": "reorder-buffers-multiple-issue-and-static-scheduling",
+      "path": "reorder-buffers-multiple-issue-and-static-scheduling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "VLIW",
+      "slug": "vliw",
+      "path": "vliw/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

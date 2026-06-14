@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 1,
+  "module_title": "Implement linear regression with one variable on the california housing",
+  "topics_generated": [
+    {
+      "title": "Implement linear regression with one variable on the California Housing dataset to predict housing prices based on a single feature (e.g., the average number of rooms per dwelling).",
+      "slug": "implement-linear-regression-with-one-variable-on-the-california-housing-dataset-to-predict-housing",
+      "path": "implement-linear-regression-with-one-variable-on-the-california-housing-dataset-to-predict-housing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the datase.",
+      "slug": "load-and-preprocess-the-datase",
+      "path": "load-and-preprocess-the-datase/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement linear regression using both gradient descent and the normal equation.",
+      "slug": "implement-linear-regression-using-both-gradient-descent-and-the-normal-equation",
+      "path": "implement-linear-regression-using-both-gradient-descent-and-the-normal-equation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluate the model performance using metrics such as Mean Squared Error (MSE) and R-squared.",
+      "slug": "evaluate-the-model-performance-using-metrics-such-as-mean-squared-error-mse-and-r-squared",
+      "path": "evaluate-the-model-performance-using-metrics-such-as-mean-squared-error-mse-and-r-squared/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Visualize the fitted line along with the data points.",
+      "slug": "visualize-the-fitted-line-along-with-the-data-points",
+      "path": "visualize-the-fitted-line-along-with-the-data-points/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "course_name": "OPERATING SYSTEMS",
+  "course_code": "PCCST403",
+  "module_number": 4,
+  "module_title": "Io system",
+  "topics_generated": [
+    {
+      "title": "I/O system:",
+      "slug": "i-o-system",
+      "path": "i-o-system/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Modern System architecture",
+      "slug": "modern-system-architecture",
+      "path": "modern-system-architecture/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Programmed I/O",
+      "slug": "programmed-i-o",
+      "path": "programmed-i-o/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interrupts",
+      "slug": "interrupts",
+      "path": "interrupts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "DMA",
+      "slug": "dma",
+      "path": "dma/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Device interaction methods",
+      "slug": "device-interaction-methods",
+      "path": "device-interaction-methods/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The Device Driver",
+      "slug": "the-device-driver",
+      "path": "the-device-driver/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hard disk:",
+      "slug": "hard-disk",
+      "path": "hard-disk/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Geometry",
+      "slug": "geometry",
+      "path": "geometry/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "disk scheduling",
+      "slug": "disk-scheduling",
+      "path": "disk-scheduling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case study : Linux I/O schedulers - Elevator",
+      "slug": "case-study-linux-i-o-schedulers-elevator",
+      "path": "case-study-linux-i-o-schedulers-elevator/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Complete Fair Queuing",
+      "slug": "complete-fair-queuing",
+      "path": "complete-fair-queuing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Files and Directories : The File System Interface - File descriptor",
+      "slug": "files-and-directories-the-file-system-interface-file-descriptor",
+      "path": "files-and-directories-the-file-system-interface-file-descriptor/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "reading and writing files (sequential and random access)",
+      "slug": "reading-and-writing-files-sequential-and-random-access",
+      "path": "reading-and-writing-files-sequential-and-random-access/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Removing files - Hard links and Symbolic links",
+      "slug": "removing-files-hard-links-and-symbolic-links",
+      "path": "removing-files-hard-links-and-symbolic-links/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Creating, reading and deleting directories",
+      "slug": "creating-reading-and-deleting-directories",
+      "path": "creating-reading-and-deleting-directories/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Permission bits and Access Control Lists",
+      "slug": "permission-bits-and-access-control-lists",
+      "path": "permission-bits-and-access-control-lists/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Mounting a file system",
+      "slug": "mounting-a-file-system",
+      "path": "mounting-a-file-system/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "File Organization : The Inode",
+      "slug": "file-organization-the-inode",
+      "path": "file-organization-the-inode/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The Multi-Level Index",
+      "slug": "the-multi-level-index",
+      "path": "the-multi-level-index/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case study:  VFS Objects and Their Data Structures - The Inode Object",
+      "slug": "case-study-vfs-objects-and-their-data-structures-the-inode-object",
+      "path": "case-study-vfs-objects-and-their-data-structures-the-inode-object/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Inode Operations",
+      "slug": "inode-operations",
+      "path": "inode-operations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

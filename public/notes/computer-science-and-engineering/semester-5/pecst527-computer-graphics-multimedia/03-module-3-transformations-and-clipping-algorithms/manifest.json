@@ -1,0 +1,50 @@
+{
+  "course_name": "COMPUTER GRAPHICS & MULTIMEDIA",
+  "course_code": "PECST527",
+  "module_number": 3,
+  "module_title": "Transformations and clipping algorithms",
+  "topics_generated": [
+    {
+      "title": "Transformations and Clipping Algorithms - Window to viewport transformation.",
+      "slug": "transformations-and-clipping-algorithms-window-to-viewport-transformation",
+      "path": "transformations-and-clipping-algorithms-window-to-viewport-transformation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cohen Sutherland and Midpoint subdivision line clipping algorithms",
+      "slug": "cohen-sutherland-and-midpoint-subdivision-line-clipping-algorithms",
+      "path": "cohen-sutherland-and-midpoint-subdivision-line-clipping-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sutherland Hodgeman and Weiler Atherton Polygon clipping algorithms.",
+      "slug": "sutherland-hodgeman-and-weiler-atherton-polygon-clipping-algorithms",
+      "path": "sutherland-hodgeman-and-weiler-atherton-polygon-clipping-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Three dimensional graphics - Three dimensional viewing pipeline.",
+      "slug": "three-dimensional-graphics-three-dimensional-viewing-pipeline",
+      "path": "three-dimensional-graphics-three-dimensional-viewing-pipeline/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Projections- Parallel and Perspective projections.",
+      "slug": "projections-parallel-and-perspective-projections",
+      "path": "projections-parallel-and-perspective-projections/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Visible surface detection algorithms- Back face detection, Depth buffer algorithm, Scan line algorithm, A buffer algorithm.",
+      "slug": "visible-surface-detection-algorithms-back-face-detection-depth-buffer-algorithm-scan-line-algorithm",
+      "path": "visible-surface-detection-algorithms-back-face-detection-depth-buffer-algorithm-scan-line-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

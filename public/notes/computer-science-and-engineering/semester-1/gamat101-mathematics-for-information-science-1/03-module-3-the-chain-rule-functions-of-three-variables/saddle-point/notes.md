@@ -1,823 +1,638 @@
 # saddle point
 
 <!-- SECTION_1_START -->
+# Saddle Point — Core Concept, Definition & Intuition
 
-# Saddle Point — Core Technical Definition & Intuitive Overview
-
-## 📘 Formal KTU 2024 Definition
-
-> [!IMPORTANT]
-> **Saddle Point (KTU GAMAT101 — Module 3 Terminology):**
-> Let $f : D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ be a twice continuously differentiable function. A point $(x_0, y_0) \in D$ is called a **saddle point** of $f$ if:
-> 1. $(x_0, y_0)$ is a **critical point**, i.e., $f_x(x_0, y_0) = 0$ and $f_y(x_0, y_0) = 0$.
-> 2. The **Hessian determinant** $D(x_0, y_0) = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - [f_{xy}(x_0, y_0)]^{2} < 0$.
-
-In geometric terms, a saddle point is a critical point that is **neither a local maximum nor a local minimum**. The surface curves **upward** in some directions and **downward** in others through this point.
+## Formal Academic Definition (KTU 2024 Syllabus Standard)
 
 > [!NOTE]
-> **Origin of the Name:** The term "saddle point" arises from the shape of a horse's saddle — the center of the saddle is a **minimum** when viewed from the front (along one axis) and a **maximum** when viewed from the side (along the perpendicular axis).
+> **Definition (Saddle Point).** Let $f : \mathbb{R}^{2} \to \mathbb{R}$ be a $C^{2}$ function. A point $(a, b) \in \mathbb{R}^{2}$ is called a **saddle point** of $f$ if
+> 1. $(a, b)$ is a **critical point**, i.e. $\nabla f(a, b) = \mathbf{0}$, meaning
+> $$\frac{\partial f}{\partial x}(a, b) = 0 \quad \text{and} \quad \frac{\partial f}{\partial y}(a, b) = 0.$$
+> 2. Every open neighbourhood of $(a, b)$ contains points $(x, y)$ with $f(x, y) > f(a, b)$ **and** points $(x, y)$ with $f(x, y) < f(a, b)$.
+>
+> Equivalently, using the **Hessian determinant test** (Second Derivative Test), $(a, b)$ is a saddle point if
+> $$D(a, b) = f_{xx}(a, b)\cdot f_{yy}(a, b) - \left[f_{xy}(a, b)\right]^{2} < 0.$$
 
----
+A point satisfying the gradient condition but **not** a saddle (i.e. a true local extremum) must satisfy $D > 0$.
 
-## 🧠 Conceptual Analogy / Intuition
-
-Imagine a **Pringles potato chip** balanced perfectly on its edge on a table:
-- If you press down on it from the **front**, the chip curves **upward** like a valley (local minimum in that direction).
-- If you press down on it from the **side**, the chip curves **downward** like a hill (local maximum in that direction).
-- The **center point** is neither a hilltop nor a valley — it is a **saddle point**.
-
-### 🍫 Another Real-World Analogy: The Mountain Pass
-
-Picture yourself hiking between two mountain peaks through a mountain pass. The pass itself is:
-- The **highest point** along the trail connecting the two peaks (maximum in that direction).
-- The **lowest point** along the path that crosses the ridge perpendicular to the trail (minimum in that direction).
-
-This is exactly the geometric essence of a saddle point.
-
-> [!TIP]
-> **Quick Memory Hook:** A saddle point is a critical point where the function "**can't make up its mind**" — it goes up in one direction and down in another.
-
----
-
-## 🎯 Why Saddle Points Matter in Information Science
-
-In machine learning, optimization, and computer graphics, saddle points are extremely important:
-
-1. **Loss Function Landscapes:** Neural network loss functions have many saddle points. **Standard gradient descent** slows down dramatically at saddle points (unlike at local minima). The **Hessian** $D < 0$ at saddles causes gradient methods to plateau.
-2. **Game Theory:** A saddle point represents a **Nash equilibrium** in zero-sum games (min-max optimization). Example: the matrix $A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ has a saddle point at the origin.
-3. **Computer Graphics:** Saddle points describe **umbilical points** and **Gaussian curvature transitions** on parametric surfaces.
+## Conceptual Analogy — The Pringle Chip & Mountain Pass
 
 > [!IMPORTANT]
-> **Standard Metric Used:** The discriminant $D = f_{xx} f_{yy} - (f_{xy})^{2}$ is computed in units of $[\text{function units}]^{2}$ per $[\text{length unit}]^{4}$. The sign of $D$ alone (independent of units) classifies the critical point.
+> **Real-world Analogy.** Imagine a **horse saddle** (or a Pringle potato chip). If you sit at the centre, gravity pulls you *down* along the front-to-back axis, but you are *stable* (or even pushed *up*) along the left-to-right axis. There is **no way to be at a low point in every direction** — the surface curves up in one direction and down in another.
+>
+> **Geometric Picture.** The graph $z = f(x, y)$ near a saddle point looks like the hyperbolic paraboloid
+> $$z = x^{2} - y^{2}.$$
+> * Along the $x$-axis ($y = 0$): $z = x^{2} \ge 0$ (valley / U-shape).
+> * Along the $y$-axis ($x = 0$): $z = -y^{2} \le 0$ (ridge / inverted U-shape).
+> * The origin $(0, 0, 0)$ is therefore **neither a peak nor a valley** — it is a saddle.
 
----
+### Standard Canonical Example
 
-## 🖼️ GeoGebra / Desmos Integration
+$$f(x, y) = x^{2} - y^{2}, \qquad (x, y) \in \mathbb{R}^{2}.$$
+
+| Axis / Curve | Restriction | Behaviour | Geometric Shape |
+| :--- | :--- | :--- | :--- |
+| $x$-axis | $y = 0$ | $z = x^{2}$ | Concave up (parabolic valley) |
+| $y$-axis | $x = 0$ | $z = -y^{2}$ | Concave down (inverted parabolic ridge) |
+| Diagonal $y = x$ | along $y = x$ | $z = 0$ | Flat saddle direction |
+| Diagonal $y = -x$ | along $y = -x$ | $z = 0$ | Flat saddle direction |
+
+> [!TIP]
+> **Why "saddle"?** The word comes from the leather **saddle** placed on a horse's back — the rider's centre is high in one direction (length of horse) and low in the other (across the back). Mathematicians borrowed this English word in the 19th century while studying the geometry of hyperbolic paraboloids.
+
+## Visualisation Block
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Visualizing a saddle point on the surface $z = f(x, y) = x^{2} - y^{2}$ at the origin.
-> **GeoGebra / Desmos Input Equations:**
+> **Concept:** Hyperbolic paraboloid $z = x^{2} - y^{2}$ showing the saddle at the origin.
+> **Desmos / GeoGebra 3D Input Equations:**
 > * Surface: `z = x^2 - y^2`
-> * Cross-section along $y = 0$: `z = x^2` (parabola opening **upward** — minimum along this direction)
-> * Cross-section along $x = 0$: `z = -y^2` (parabola opening **downward** — maximum along this direction)
+> * Cross-section at $y = 0$: `z = x^2` (parabola opening up)
+> * Cross-section at $x = 0$: `z = -y^2` (parabola opening down)
+> * Saddle level curve: `z = 0` $\Rightarrow$ $y = \pm x$ (two crossing lines on the $xy$-plane)
 >
-> **Visual Description:** When you plot $z = x^{2} - y^{2}$ in 3D, you will observe the classic **hyperbolic paraboloid** (often called a "saddle" or "pringle chip" surface). At the origin $(0, 0, 0)$, the surface is a minimum along the $x$-axis and a maximum along the $y$-axis. The level curves $x^{2} - y^{2} = c$ are **hyperbolas** for $c \neq 0$ — opening left-right when $c > 0$ and opening up-down when $c < 0$.
+> **Visual Description:** The student should see a smooth surface that has the shape of a "saddle" or "Pringle chip" centred at the origin. The red parabolas $z = \pm x^{2}$ indicate the curvature in the two principal directions, and the two straight lines $y = x$ and $y = -x$ mark the **flat directions** of the saddle.
+
+## Where Saddle Points Appear in Information Science
+
+Saddle points are **not just abstract geometry** — they are the structural backbone of:
+
+* **Machine Learning & Deep Learning:** Loss landscapes of neural networks are filled with saddle points. Training algorithms like SGD escape saddles via stochastic noise; this is the basis of the paper *"Identifying and attacking the saddle point problem in high-dimensional non-convex optimization"* (Dauphin et al., NeurIPS 2014).
+* **Game Theory & Optimisation:** A Nash equilibrium of a two-player zero-sum game is mathematically a saddle point of the payoff function.
+* **Physics & Signal Processing:** Lagrangian mechanics — a saddle point of the action functional gives a classical trajectory (Hamilton's principle).
+* **Computational Graphics:** Level sets and height fields (DEMs) of terrain use saddle-point analysis to identify **passes** between hills.
+
+> [!NOTE]
+> **Standard Constants / Symbols (KTU board convention).**
+> $f_{x}$ and $f_{y}$ denote first-order partial derivatives. $f_{xx}$, $f_{yy}$, $f_{xy}$ are the entries of the **Hessian matrix**
+> $$H(x, y) = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix},$$
+> with $f_{xy} = f_{yx}$ guaranteed by Schwarz / Clairaut's theorem for $C^{2}$ functions.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 🔍 The Second Derivative Test (Hessian Test) — Complete Logic Breakdown
+## 1. Where Saddle-Point Theory Fits in the Module
 
-The **Second Derivative Test for Functions of Two Variables** is the standard KTU-approved method for classifying critical points, including identifying saddle points. Here is the structured reasoning:
+In **Module 3** of GAMAT101, you study the chain rule for functions of three (or more) variables and then use it to perform **unconstrained optimisation**. The full pipeline is:
 
-### **Step 1: Locate Critical Points**
+$$\text{function of several variables} \;\xrightarrow{\text{chain rule}}\; \text{directional derivatives} \;\xrightarrow{\nabla f = 0}\; \text{critical points} \;\xrightarrow{\text{Hessian test}}\; \text{classify each critical point}.$$
 
-A point $(x_0, y_0)$ is a **critical point** if and only if the **gradient vector** vanishes:
+A **saddle point is the most common outcome of the classification step** — usually more saddle points exist than true local maxima or minima.
 
-$$\nabla f(x_0, y_0) = \begin{pmatrix} f_x(x_0, y_0) \\ f_y(x_0, y_0) \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$$
-
-- Solve the simultaneous equations $f_x(x, y) = 0$ and $f_y(x, y) = 0$.
-- This typically produces a finite set of candidate points.
-
-### **Step 2: Compute the Hessian Determinant $D$**
-
-At each critical point $(x_0, y_0)$, evaluate:
-
-$$D(x_0, y_0) = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - \left[ f_{xy}(x_0, y_0) \right]^{2}$$
-
-> [!NOTE]
-> **Why the cross term is squared:** By **Clairaut's Theorem** (equality of mixed partials for $C^{2}$ functions), $f_{xy} = f_{yx}$. The squared term $[f_{xy}]^{2}$ ensures $D$ is non-negative for **definite** matrices and contributes the "off-diagonal" interaction effect.
-
-### **Step 3: Classify Using the Decision Table**
-
-Examine the sign of $D$ and the sign of $f_{xx}$ (or equivalently, $f_{yy}$ if convenient):
-
-| Condition on $D$ | Condition on $f_{xx}$ | Classification | Geometric Meaning |
-|:----------------:|:---------------------:|:--------------:|:-----------------|
-| $D > 0$ | $f_{xx}(x_0, y_0) > 0$ | **Local Minimum** | Bowl-shaped (paraboloid opening upward) |
-| $D > 0$ | $f_{xx}(x_0, y_0) < 0$ | **Local Maximum** | Dome-shaped (paraboloid opening downward) |
-| $D < 0$ | (any sign) | **🔥 Saddle Point** | Hyperbolic paraboloid (saddle) |
-| $D = 0$ | (any sign) | **Test Inconclusive** | Requires higher-order analysis |
-
-### **Step 4: Confirm the Saddle Point**
-
-For a confirmed saddle point, you may also verify the **strict saddle condition**: there exist two unit vectors $\mathbf{u}$ and $\mathbf{v}$ such that the directional second derivative $D_{\mathbf{u}}^{2} f(x_0, y_0) > 0$ (convex direction) and $D_{\mathbf{v}}^{2} f(x_0, y_0) < 0$ (concave direction).
-
-This is the rigorous mathematical restatement of "the surface curves up in one direction and down in another."
-
----
-
-## 📋 KTU Formula Sheet / Cheat Sheet
+## 2. The Three Logical Steps in Saddle-Point Detection
 
 > [!IMPORTANT]
-> The following table is the **canonical reference card** for solving saddle-point problems in the KTU 2024 scheme examination.
+> **Step 1 — Find the critical points.** Solve the simultaneous system obtained by setting the first-order partial derivatives to zero:
+> $$\frac{\partial f}{\partial x}(x, y) = 0, \qquad \frac{\partial f}{\partial y}(x, y) = 0.$$
+> Each solution $(a, b)$ is a *candidate* for an extremum **or** a saddle point.
 
-| # | Formula / Concept | Mathematical Expression | Application / Notes |
-|:-:|:------------------|:------------------------|:--------------------|
-| 1 | Gradient (first-order optimality) | $\nabla f = (f_x, f_y) = (0, 0)$ | Necessary condition for critical point |
-| 2 | Hessian matrix $H$ | $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}$ | $2 \times 2$ symmetric matrix at critical point |
-| 3 | Hessian determinant $D$ | $D = f_{xx} f_{yy} - (f_{xy})^{2}$ | Discriminant of classification |
-| 4 | Saddle-point condition | $D < 0$ | Function has indefinite Hessian |
-| 5 | Local minimum condition | $D > 0$ and $f_{xx} > 0$ | Positive definite Hessian |
-| 6 | Local maximum condition | $D > 0$ and $f_{xx} < 0$ | Negative definite Hessian |
-| 7 | Inconclusive condition | $D = 0$ | Higher-order test needed |
-| 8 | Directional second derivative | $D_{\mathbf{u}}^{2} f = \mathbf{u}^{T} H \mathbf{u}$ | Used to confirm saddle behavior |
-| 9 | Example: $f(x,y) = x^{2} - y^{2}$ | $D = (2)(−2) - 0 = -4 < 0$ | Classic saddle at origin |
-| 10 | Critical-point function value | $f(x_0, y_0)$ | Often reported as "height" of saddle |
+> [!IMPORTANT]
+> **Step 2 — Compute the Hessian determinant at the critical point.** Build
+> $$D(x, y) = f_{xx}(x, y)\cdot f_{yy}(x, y) - \left[f_{xy}(x, y)\right]^{2}.$$
+> This number is the **discriminant** of the second-order Taylor expansion
+> $$\Delta f \approx \tfrac{1}{2}\left(f_{xx}\,h^{2} + 2 f_{xy}\,hk + f_{yy}\,k^{2}\right),$$
+> and decides whether the quadratic form is positive-definite, negative-definite, or indefinite.
 
-> [!WARNING]
-> **CRITICAL:** Always use `\vert` or `\mid` for absolute value inside LaTeX (e.g., $\vert x \vert$) — **never** use the raw vertical pipe `|` inside a markdown table, as it breaks the table syntax. The same applies for $\vert f_{xy} \vert$.
+> [!IMPORTANT]
+> **Step 3 — Apply the Second Derivative Test.** The sign of $D$ (and the sign of $f_{xx}$ if $D > 0$) classifies the critical point.
 
----
+## 3. Why $D < 0$ Means a Saddle Point — The Quadratic-Form Argument
 
-## 🌍 Real-World Engineering & CS Applications
+The second-order Taylor remainder near a critical point is governed by the **quadratic form**
+$$Q(h, k) = f_{xx}(a, b)\,h^{2} + 2f_{xy}(a, b)\,hk + f_{yy}(a, b)\,k^{2}.$$
 
-| Field | Application of Saddle-Point Theory |
-|:------|:-----------------------------------|
-| **Machine Learning** | Identifying saddle points in neural network loss landscapes; Newton's method fails at saddles; SGD with noise escapes saddles |
-| **Game Theory** | Zero-sum games have **min-max equilibria** that are mathematically saddle points of the payoff function |
-| **Robotics / Control** | Energy landscapes of mechanical systems contain saddles corresponding to **unstable equilibria** |
-| **Economics** | Utility functions in multi-agent markets exhibit saddle behaviors in production-possibility frontiers |
-| **Computer Graphics** | Gaussian curvature $K = 0$ at saddle points on parametric surfaces; key for mesh generation and rendering |
+The eigenvalues of the Hessian matrix are
+$$\lambda_{1, 2} = \frac{(f_{xx} + f_{yy}) \pm \sqrt{(f_{xx} - f_{yy})^{2} + 4 f_{xy}^{2}}}{2}.$$
+
+The product of the eigenvalues equals the determinant:
+$$\lambda_{1} \lambda_{2} = D = f_{xx} f_{yy} - f_{xy}^{2}.$$
+
+> **Interpretation:**
+> * If $D < 0$: the eigenvalues have **opposite signs** (one positive, one negative). The quadratic form is **indefinite** — it takes both positive and negative values, which means $f$ goes up in some directions and down in others $\Rightarrow$ **saddle point**.
+> * If $D > 0$ and $f_{xx} > 0$: both eigenvalues positive $\Rightarrow$ **local minimum**.
+> * If $D > 0$ and $f_{xx} < 0$: both eigenvalues negative $\Rightarrow$ **local maximum**.
+> * If $D = 0$: the test is **inconclusive** — the second-order term degenerates and one must fall back on higher-order Taylor analysis or numerical methods.
+
+## 4. KTU Formula Sheet (Exam Cheat-Sheet)
+
+> [!TIP]
+> The table below contains **every formula you need** for any saddle-point / critical-point problem in the KTU 2024 ESE. Memorise the **sign pattern** of the second column.
+
+| # | Condition at critical point $(a, b)$ | Classification | Geometric meaning |
+| :--- | :--- | :--- | :--- |
+| 1 | $D = f_{xx} f_{yy} - f_{xy}^{2} > 0$ and $f_{xx} > 0$ | **Local Minimum** | Both principal curvatures $> 0$ — bowl shape |
+| 2 | $D = f_{xx} f_{yy} - f_{xy}^{2} > 0$ and $f_{xx} < 0$ | **Local Maximum** | Both principal curvatures $< 0$ — dome shape |
+| 3 | $D = f_{xx} f_{yy} - f_{xy}^{2} < 0$ | **Saddle Point** | Curvatures of opposite sign — Pringle shape |
+| 4 | $D = f_{xx} f_{yy} - f_{xy}^{2} = 0$ | **Inconclusive** | Higher-order test required |
+
+**Auxiliary formulas you may need:**
+
+| Formula | Expression | Used for |
+| :--- | :--- | :--- |
+| Gradient | $\nabla f = (f_{x},\; f_{y})^{T}$ | Locating critical points |
+| Hessian matrix | $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}$ | Encoding second-order info |
+| Hessian determinant | $D = \det(H) = f_{xx} f_{yy} - f_{xy}^{2}$ | Discriminant |
+| Taylor second-order | $f(a+h, b+k) \approx f(a, b) + \tfrac{1}{2}(h, k)\,H\,(h, k)^{T}$ | Local behaviour |
+| Eigenvalues of $H$ | $\lambda_{\pm} = \tfrac{1}{2}\left[(f_{xx}+f_{yy}) \pm \sqrt{(f_{xx}-f_{yy})^{2} + 4 f_{xy}^{2}}\right]$ | Explicit sign analysis |
+| $C^{2}$ symmetry | $f_{xy} = f_{yx}$ | Saves marks in derivation |
+| Critical condition | $f_{x} = 0$ and $f_{y} = 0$ | Necessary first-order condition |
+
+> [!NOTE]
+> **Common exam trap.** Some students forget that $D < 0$ is a **sufficient** condition for a saddle point, but the converse is not always true. If $D = 0$, the function may *still* be a saddle point — you just cannot tell from the Hessian alone. KTU examiners will sometimes plant a function like $f(x, y) = x^{4} - y^{4}$ whose Hessian at the origin is zero but the point is still a saddle.
+
+## 5. Real-World Engineering & Information-Science Use-Cases
+
+| Field | Use of Saddle Points |
+| :--- | :--- |
+| **Machine Learning** | Loss surfaces of deep networks contain exponentially many saddles. The number of saddles grows like $(L-1)!^{n}$ for $L$-layer nets; local minima become rare in high dimensions. |
+| **Game Theory / GANs** | The discriminator-generator min-max problem of a GAN is a saddle-point optimisation: $\min_{G} \max_{D} V(D, G)$. |
+| **Robotics / Path Planning** | Configuration-space obstacles create saddle regions where a robot must "pass over" energy barriers. |
+| **Numerical Linear Algebra** | Iterative methods (conjugate gradient, Lanczos) explicitly compute the smallest eigenvalue, which manifests as a saddle of the Rayleigh quotient. |
+| **Computational Finance** | Implied volatility surfaces of options exhibit saddle geometry; saddle-point approximations are used for tail-probability estimation. |
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
+# Step-by-Step Derivations & Worked Examples
 
-# Step-by-Step Derivations & Code/Symbolic Implementation
+## Example 1 (Canonical) — Classify the Critical Points of $f(x, y) = x^{2} - y^{2}$
 
-## 📐 Worked Derivation: The Canonical Saddle Point $f(x, y) = x^{2} - y^{2}$
+This is the **textbook prototype** of a saddle point. We will classify $(0, 0)$ rigorously.
 
-This derivation demonstrates the complete KTU board-exam workflow for identifying and confirming a saddle point.
+### Step A — Compute First-Order Partial Derivatives
 
-### **Step 1: Compute First Partial Derivatives**
+Differentiate $f(x, y) = x^{2} - y^{2}$ with respect to $x$, treating $y$ as a constant:
 
-Starting with $f(x, y) = x^{2} - y^{2}$:
+$$\frac{\partial f}{\partial x} = 2x.$$
 
-$$\frac{\partial f}{\partial x} = 2x$$
+Differentiate with respect to $y$, treating $x$ as a constant:
 
-$$\frac{\partial f}{\partial y} = -2y$$
+$$\frac{\partial f}{\partial y} = -2y.$$
 
-### **Step 2: Set Gradient to Zero and Solve**
+> **Marking key:** $f_{x} = 2x$, $f_{y} = -2y$. [1 Mark for each derivative]
 
-Set both partials to zero:
+### Step B — Solve the Critical-Point Equations
 
-$$f_x = 2x = 0 \implies x = 0$$
+Set $f_{x} = 0$ and $f_{y} = 0$ simultaneously:
 
-$$f_y = -2y = 0 \implies y = 0$$
+$$2x = 0 \quad \Longrightarrow \quad x = 0,$$
+$$-2y = 0 \quad \Longrightarrow \quad y = 0.$$
 
-The only critical point is $\mathbf{(x_0, y_0) = (0, 0)}$.
+The **only critical point** is
 
-### **Step 3: Compute Second Partial Derivatives**
+$$(a, b) = (0, 0).$$
 
-$$f_{xx} = \frac{\partial}{\partial x}(2x) = 2$$
+> **Marking key:** Correct critical point stated. [1 Mark]
 
-$$f_{yy} = \frac{\partial}{\partial y}(-2y) = -2$$
+### Step C — Compute Second-Order Partial Derivatives (Hessian entries)
 
-$$f_{xy} = \frac{\partial}{\partial y}(2x) = 0$$
+$$f_{xx} = \frac{\partial}{\partial x}(2x) = 2,$$
+$$f_{yy} = \frac{\partial}{\partial y}(-2y) = -2,$$
+$$f_{xy} = \frac{\partial}{\partial y}(2x) = 0.$$
 
-$$f_{yx} = \frac{\partial}{\partial x}(-2y) = 0$$
+> **Marking key:** All three second partials correct. [1 Mark]
 
-Note that $f_{xy} = f_{yx} = 0$ (Clairaut's theorem is satisfied).
+### Step D — Evaluate the Hessian Determinant
 
-### **Step 4: Compute the Hessian Determinant $D$**
+$$D(0, 0) = f_{xx}\cdot f_{yy} - (f_{xy})^{2} = (2)(-2) - (0)^{2} = -4.$$
 
-$$\begin{aligned}
-D(0, 0) &= f_{xx}(0, 0) \cdot f_{yy}(0, 0) - [f_{xy}(0, 0)]^{2} \\
-&= (2)(-2) - (0)^{2} \\
-&= -4 - 0 \\
-&= -4
-\end{aligned}$$
+> **Marking key:** $D = -4 < 0$. [1 Mark]
 
-### **Step 5: Apply the Classification Rule**
+### Step E — Apply the Second Derivative Test
 
-Since $D(0, 0) = -4 < 0$, the second derivative test concludes:
+Since $D(0, 0) = -4 < 0$, the test (row 3 of the cheat-sheet) gives
 
-> **The point $(0, 0)$ is a SADDLE POINT of $f(x, y) = x^{2} - y^{2}$.**
+$$\boxed{\text{The point } (0, 0) \text{ is a saddle point of } f(x, y) = x^{2} - y^{2}.}$$
 
-### **Step 6: Verify by Directional Analysis**
+> **Marking key:** Correct conclusion. [1 Mark]
 
-Examine behavior along the $x$-axis (set $y = 0$):
+### Step F — Geometric Verification (Optional, for full marks on a 7-mark sub-question)
 
-$$f(x, 0) = x^{2} - 0 = x^{2} \geq 0 = f(0, 0)$$
+* Along the $x$-axis: $f(x, 0) = x^{2} \ge 0 = f(0, 0)$. So moving along the $x$-axis **increases** $f$.
+* Along the $y$-axis: $f(0, y) = -y^{2} \le 0 = f(0, 0)$. So moving along the $y$-axis **decreases** $f$.
+* Both behaviours occur in every neighbourhood of $(0, 0)$, confirming it is a saddle.
 
-The function is $\geq f(0, 0)$ along the $x$-axis, indicating **minimum behavior** in this direction.
-
-Examine behavior along the $y$-axis (set $x = 0$):
-
-$$f(0, y) = 0 - y^{2} = -y^{2} \leq 0 = f(0, 0)$$
-
-The function is $\leq f(0, 0)$ along the $y$-axis, indicating **maximum behavior** in this direction.
-
-The two directions yield opposite curvature, **confirming** the saddle-point classification. The Hessian is **indefinite** (one positive eigenvalue, one negative eigenvalue).
+> **Marking key:** Geometric cross-section argument. [1 Mark]
 
 ---
 
-## 📐 Worked Derivation: $f(x, y) = x^{3} - 3xy^{2}$ (Monkey Saddle Variant)
+## Example 2 (KTU Standard) — Classify the Critical Points of $f(x, y) = x^{3} + y^{3} - 3xy$
 
-This example tests whether the standard test still works and what to do at $D = 0$.
+This is the classic KTU board question. We will locate **all** critical points and classify each.
 
-### **Step 1: First Partials**
+### Step A — First-Order Partials
 
-$$f_x = 3x^{2} - 3y^{2}$$
+$$f_{x} = 3x^{2} - 3y,$$
+$$f_{y} = 3y^{2} - 3x.$$
 
-$$f_y = -6xy$$
+> **Marking key:** [1 Mark]
 
-### **Step 2: Critical Points**
+### Step B — Solve the System
 
-$$f_x = 0 \implies x^{2} = y^{2} \implies y = \pm x$$
+Set $f_{x} = 0$ and $f_{y} = 0$:
 
-$$f_y = 0 \implies 6xy = 0 \implies x = 0 \text{ or } y = 0$$
+$$3x^{2} - 3y = 0 \quad \Longrightarrow \quad y = x^{2},$$
+$$3y^{2} - 3x = 0 \quad \Longrightarrow \quad x = y^{2}.$$
 
-The intersection gives $\mathbf{(0, 0)}$ as the unique critical point.
+Substitute $y = x^{2}$ into the second equation:
 
-### **Step 3: Second Partials**
+$$x = (x^{2})^{2} = x^{4}.$$
 
-$$f_{xx} = 6x$$
+Hence
 
-$$f_{yy} = -6x$$
+$$x^{4} - x = 0 \quad \Longrightarrow \quad x(x^{3} - 1) = 0.$$
 
-$$f_{xy} = -6y$$
+Factor the cubic using the sum-of-cubes identity $a^{3} - b^{3} = (a-b)(a^{2} + ab + b^{2})$ with $a = x$ and $b = 1$:
 
-### **Step 4: Hessian Determinant at the Origin**
+$$x^{3} - 1 = (x - 1)(x^{2} + x + 1).$$
 
-$$\begin{aligned}
-D(0, 0) &= f_{xx}(0, 0) \cdot f_{yy}(0, 0) - [f_{xy}(0, 0)]^{2} \\
-&= (6 \cdot 0)(-6 \cdot 0) - (-6 \cdot 0)^{2} \\
-&= (0)(0) - (0)^{2} \\
-&= 0
-\end{aligned}$$
+The quadratic $x^{2} + x + 1$ has discriminant $1 - 4 = -3 < 0$, so it has **no real roots**. Therefore the only real solutions are
 
-### **Step 5: Test is Inconclusive**
+$$x = 0 \quad \text{or} \quad x = 1.$$
 
-Since $D = 0$, the standard test fails. We must use direct analysis.
+Corresponding $y$ values (using $y = x^{2}$):
 
-- Along $y = 0$: $f(x, 0) = x^{3}$. For $x > 0$, $f > 0$; for $x < 0$, $f < 0$.
-- Along $x = 0$: $f(0, y) = 0$. Constant.
-- Along $y = x$: $f(x, x) = x^{3} - 3x \cdot x^{2} = -2x^{3}$. For $x > 0$, $f < 0$.
+$$\text{If } x = 0,\; y = 0^{2} = 0; \qquad \text{if } x = 1,\; y = 1^{2} = 1.$$
 
-The function takes both positive and negative values arbitrarily close to the origin, so $(0, 0)$ is a **saddle point** — but the test requires direct verification. This point is sometimes called a **"monkey saddle"** due to the threefold symmetry.
+So the critical points are
 
----
+$$P_{1} = (0, 0), \qquad P_{2} = (1, 1).$$
 
-## 💻 Python Code Implementation: Finding and Classifying Saddle Points
+> **Marking key:** Correct critical points. [2 Marks]
 
-The following is a fully operational Python implementation using **SymPy** for symbolic computation, with proper type hints, boundary checks, and error logging.
+### Step C — Second-Order Partials (Hessian entries)
 
-```python
-"""
-saddle_point_classifier.py
-KTU GAMAT101 — Module 3 Helper
-Classifies critical points of a 2-variable function using the Hessian test.
-"""
+$$f_{xx} = 6x,$$
+$$f_{yy} = 6y,$$
+$$f_{xy} = -3.$$
 
-import sympy as sp
-from sympy import Symbol, diff, solve, Rational, simplify, Matrix
-from typing import List, Tuple, Dict
-import logging
-import sys
+> **Marking key:** [1 Mark]
 
-# Configure structured error logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s",
-    stream=sys.stdout
-)
-logger = logging.getLogger("SaddlePointClassifier")
+### Step D — Hessian Determinant as a Function of $(x, y)$
 
+$$D(x, y) = f_{xx}\cdot f_{yy} - (f_{xy})^{2} = (6x)(6y) - (-3)^{2} = 36xy - 9.$$
 
-def classify_critical_points(
-    expression_str: str,
-    variables: Tuple[Symbol, Symbol] = (Symbol("x"), Symbol("y"))
-) -> List[Dict[str, object]]:
-    """
-    Locate and classify all critical points of a 2-variable function.
+> **Marking key:** [1 Mark]
 
-    Parameters
-    ----------
-    expression_str : str
-        A SymPy-parseable expression in x and y, e.g. "x**2 - y**2".
-    variables : Tuple[Symbol, Symbol]
-        The two independent variables (default: x, y).
+### Step E — Classify $P_{1} = (0, 0)$
 
-    Returns
-    -------
-    List[Dict[str, object]]
-        A list of dictionaries, each containing:
-            - "point": Tuple of critical point coordinates
-            - "f_value": Function value at the point
-            - "D": Hessian determinant
-            - "fxx": Second partial f_xx
-            - "classification": "local minimum", "local maximum",
-              "saddle point", or "inconclusive"
-    """
-    x, y = variables
-    try:
-        f = sp.sympify(expression_str)
-    except (sp.SympifyError, TypeError) as exc:
-        logger.error("Failed to parse expression %r: %s", expression_str, exc)
-        raise ValueError(f"Invalid SymPy expression: {expression_str}") from exc
+$$D(0, 0) = 36(0)(0) - 9 = -9.$$
 
-    # Step 1: First partial derivatives
-    fx = diff(f, x)
-    fy = diff(f, y)
-    logger.info("f_x = %s | f_y = %s", fx, fy)
+Since $D(0, 0) = -9 < 0$, the test gives
 
-    # Step 2: Solve critical-point equations
-    try:
-        critical_points = solve([fx, fy], [x, y], dict=True)
-    except Exception as exc:
-        logger.error("Failed to solve gradient system: %s", exc)
-        return []
+$$\boxed{P_{1} = (0, 0) \text{ is a SADDLE POINT of } f.}$$
 
-    if not critical_points:
-        logger.warning("No critical points found.")
-        return []
+> **Marking key:** [1 Mark for $D$ value, 1 Mark for classification]
 
-    # Step 3: Second partial derivatives
-    fxx = diff(f, x, 2)
-    fyy = diff(f, y, 2)
-    fxy = diff(f, x, y)
-    logger.info("f_xx = %s | f_yy = %s | f_xy = %s", fxx, fyy, fxy)
+### Step F — Classify $P_{2} = (1, 1)$
 
-    # Step 4: Classify each critical point
-    results: List[Dict[str, object]] = []
-    for cp in critical_points:
-        x0, y0 = cp[x], cp[y]
+$$D(1, 1) = 36(1)(1) - 9 = 27.$$
 
-        D_val = simplify(fxx.subs(cp) * fyy.subs(cp) - fxy.subs(cp) ** 2)
-        fxx_val = simplify(fxx.subs(cp))
-        f_val = simplify(f.subs(cp))
+Since $D(1, 1) = 27 > 0$, we must check the sign of $f_{xx}$:
 
-        # Apply Second Derivative Test
-        if D_val > 0:
-            if fxx_val > 0:
-                classification = "local minimum"
-            elif fxx_val < 0:
-                classification = "local maximum"
-            else:
-                classification = "inconclusive (D>0 but fxx=0)"
-        elif D_val < 0:
-            classification = "SADDLE POINT"
-        else:
-            classification = "inconclusive (D=0)"
+$$f_{xx}(1, 1) = 6(1) = 6 > 0.$$
 
-        point_tuple: Tuple = (x0, y0)
-        logger.info(
-            "Critical point (%.3f, %.3f) -> %s | D=%s, f_xx=%s",
-            float(x0), float(y0), classification, D_val, fxx_val
-        )
+Hence, by row 1 of the cheat-sheet,
 
-        results.append({
-            "point": point_tuple,
-            "f_value": f_val,
-            "D": D_val,
-            "fxx": fxx_val,
-            "classification": classification,
-        })
+$$\boxed{P_{2} = (1, 1) \text{ is a LOCAL MINIMUM of } f, \text{ with } f(1, 1) = 1 + 1 - 3 = -1.}$$
 
-    return results
+> **Marking key:** [1 Mark for $D$ value, 1 Mark for $f_{xx}$ sign, 1 Mark for classification, 1 Mark for function value]
 
+### Step G — Summary Table
 
-def main() -> None:
-    """Run the classifier on canonical KTU examples."""
-    test_functions: List[str] = [
-        "x**2 - y**2",                  # Classic saddle
-        "x**2 + y**2",                  # Local minimum at origin
-        "-(x**2 + y**2)",               # Local maximum at origin
-        "x**3 - 3*x*y**2",              # Monkey saddle (D=0)
-        "x**2 - y**2 + x*y",            # Saddle with non-zero fxy
-    ]
+| Critical Point | $D$ | $f_{xx}$ | Classification | Function Value |
+| :--- | :---: | :---: | :--- | :---: |
+| $(0, 0)$ | $-9$ | $0$ | **Saddle Point** | $0$ |
+| $(1, 1)$ | $27$ | $6$ | **Local Minimum** | $-1$ |
 
-    for expr in test_functions:
-        print("\n" + "=" * 60)
-        print(f"Function: f(x, y) = {expr}")
-        print("=" * 60)
-        results = classify_critical_points(expr)
-        for r in results:
-            print(
-                f"  Point: {r['point']}, "
-                f"f = {r['f_value']}, "
-                f"D = {r['D']}, "
-                f"f_xx = {r['fxx']}, "
-                f"Class: {r['classification']}"
-            )
-
-
-if __name__ == "__main__":
-    main()
-```
-
-### **Expected Output (Key Lines)**
-
-```text
-Function: f(x, y) = x**2 - y**2
-  Point: (0, 0), f = 0, D = -4, f_xx = 2, Class: SADDLE POINT
-
-Function: f(x, y) = x**2 + y**2
-  Point: (0, 0), f = 0, D = 4, f_xx = 2, Class: local minimum
-
-Function: f(x, y) = x**3 - 3*x*y**2
-  Point: (0, 0), f = 0, D = 0, f_xx = 0, Class: inconclusive (D=0)
-```
-
-> [!TIP]
-> **How to run:** Save the script as `saddle_point_classifier.py`, install SymPy with `pip install sympy`, then execute `python saddle_point_classifier.py`. The structured logging shows each step's output, making it ideal for tracing classification errors during lab exams.
+> **Final answer** for Example 2: $f(x, y) = x^{3} + y^{3} - 3xy$ has one saddle point at $(0, 0)$ and one local minimum at $(1, 1)$.
 
 ---
 
-## 📐 Worked Example for KTU Board-Style Question
+## Example 3 — $D = 0$ Inconclusive Case: $f(x, y) = x^{4} - y^{4}$ at the Origin
 
-> **Problem:** Find and classify the critical points of $f(x, y) = x^{3} + y^{3} - 3xy$.
+This is a high-value *trick* question frequently set in KTU ESE.
 
-**Step 1: First Partials**
+### Step A — Partials
 
-$$f_x = 3x^{2} - 3y = 0 \implies y = x^{2}$$
+$$f_{x} = 4x^{3}, \quad f_{y} = -4y^{3}.$$
 
-$$f_y = 3y^{2} - 3x = 0 \implies x = y^{2}$$
+Critical point: $4x^{3} = 0 \Rightarrow x = 0$; $-4y^{3} = 0 \Rightarrow y = 0$. So $(0, 0)$ is the only critical point.
 
-**Step 2: Solve the System**
+### Step B — Hessian
 
-Substitute $y = x^{2}$ into $x = y^{2}$:
+$$f_{xx} = 12x^{2}, \quad f_{yy} = -12y^{2}, \quad f_{xy} = 0.$$
 
-$$x = (x^{2})^{2} = x^{4}$$
+### Step C — Determinant
 
-$$x^{4} - x = 0 \implies x(x^{3} - 1) = 0$$
+$$D(0, 0) = (0)(0) - (0)^{2} = 0.$$
 
-So $x = 0$ or $x = 1$ (real root of $x^{3} = 1$).
+The second-derivative test is **inconclusive** (row 4 of the cheat-sheet).
 
-- If $x = 0$, then $y = 0$. Critical point: $(0, 0)$.
-- If $x = 1$, then $y = 1$. Critical point: $(1, 1)$.
+### Step D — Higher-Order Argument
 
-**Step 3: Second Partials**
+Look at the function along the axes:
+* Along $y = 0$: $f(x, 0) = x^{4} \ge 0$.
+* Along $x = 0$: $f(0, y) = -y^{4} \le 0$.
 
-$$f_{xx} = 6x, \quad f_{yy} = 6y, \quad f_{xy} = -3$$
+So $f$ takes both positive and negative values in every neighbourhood of the origin. Therefore $(0, 0)$ is **still a saddle point**, even though the Hessian test was inconclusive. This is the **classic KTU follow-up** that distinguishes a top-band answer.
 
-**Step 4: Classify $(0, 0)$**
+> [!WARNING]
+> KTU examiners **love** this type of question. Do not just stop at "$D = 0$, inconclusive." Always add a one-line cross-section argument to recover the marks.
 
-$$\begin{aligned}
-D(0, 0) &= f_{xx}(0,0) \cdot f_{yy}(0,0) - [f_{xy}(0,0)]^{2} \\
-&= (0)(0) - (-3)^{2} \\
-&= 0 - 9 \\
-&= -9
-\end{aligned}$$
+---
 
-Since $D(0, 0) = -9 < 0$: **$(0, 0)$ is a SADDLE POINT.** 🔥
+## Example 4 (Three Variables, Module-3 Context) — Extending the Idea
 
-**Step 5: Classify $(1, 1)$**
+For a function $f : \mathbb{R}^{3} \to \mathbb{R}$, a saddle point is defined analogously: a critical point where the Hessian determinant (now a $3 \times 3$ matrix) has eigenvalues of mixed sign. The "saddle" in 3-D is sometimes called a **monkey saddle** if the surface has a three-fold symmetric depression (e.g. $f(x, y, z) = \operatorname{Re}[(x + iy)^{3}] - z^{2}$).
 
-$$\begin{aligned}
-D(1, 1) &= f_{xx}(1,1) \cdot f_{yy}(1,1) - [f_{xy}(1,1)]^{2} \\
-&= (6)(6) - (-3)^{2} \\
-&= 36 - 9 \\
-&= 27
-\end{aligned}$$
-
-Since $D(1, 1) = 27 > 0$ and $f_{xx}(1, 1) = 6 > 0$: **$(1, 1)$ is a LOCAL MINIMUM.**
-
-**Step 6: Report Function Values**
-
-$$f(0, 0) = 0, \quad f(1, 1) = 1 + 1 - 3 = -1$$
-
-The local minimum value is $-1$ at the point $(1, 1)$.
+For Module 3 you only need the **two-variable** version in detail, but be aware that the chain rule on a function $f(x, y, z)$ of three variables can reduce it to two variables via $z = g(x, y)$ — a process called *elimination* — and then the two-variable saddle-point test applies.
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-
 # Structural Diagrams & Schematics
 
-## 🗺️ Mermaid Diagram 1: Critical-Point Classification Flowchart
+## Diagram 1 — Algorithmic Flowchart for Classifying a Critical Point
 
-This flowchart captures the complete KTU decision procedure for classifying any critical point of a two-variable function.
+The following Mermaid block gives the **decision tree** a KTU student must internalise. It is the single most important visual in this note.
 
 ```mermaid
 flowchart TD
-    A[Start: Given f of x,y] --> B[Compute f_x and f_y]
-    B --> C[Solve f_x = 0 and f_y = 0]
-    C --> D{Critical Points Found?}
-    D -- No --> E[No critical points exist]
-    D -- Yes --> F[For each critical point x0, y0]
-    F --> G[Compute f_xx, f_yy, f_xy]
-    G --> H[Calculate D = f_xx*f_yy minus f_xy squared]
-    H --> I{D greater than 0?}
-    I -- Yes --> J{f_xx greater than 0?}
-    J -- Yes --> K[Local Minimum]
-    J -- No --> L[Local Maximum]
-    I -- No --> M{D less than 0?}
-    M -- Yes --> N[SADDLE POINT]
-    M -- No --> O[D equals 0: Test Inconclusive]
-    O --> P[Use higher-order Taylor expansion or directional analysis]
-    K --> Q[Record point and function value]
-    L --> Q
-    N --> Q
-    P --> Q
-    Q --> R[End]
-    E --> R
+    A[Start: candidate point ab from f_x=0 and f_y=0] --> B[Compute f_xx, f_yy, f_xy at ab]
+    B --> C[Compute D = f_xx times f_yy minus f_xy squared]
+    C --> D{D greater than 0?}
+    D -- "No, D less than 0" --> E["SADDLE POINT<br/>indefinite Hessian<br/>eigenvalues of opposite sign"]
+    D -- "Yes, D greater than 0" --> F{f_xx greater than 0?}
+    D -- "No, D equals 0" --> I[Test inconclusive]
+    F -- "Yes" --> G["LOCAL MINIMUM<br/>bowl shape<br/>positive definite Hessian"]
+    F -- "No" --> H["LOCAL MAXIMUM<br/>dome shape<br/>negative definite Hessian"]
+    I --> J[Use higher-order Taylor terms or cross-section test]
+    J --> K[Re-classify as min, max, or saddle]
+    E --> L[End: classify and quote f value at ab]
+    G --> L
+    H --> L
+    K --> L
 ```
 
----
+> **How to read this in the exam:** Start at the top, compute $D$, branch left for $D < 0$ (saddle) or right for $D > 0$ (then check $f_{xx}$). The $D = 0$ branch requires a *fallback* argument — examiners expect you to **not stop** at "inconclusive."
 
-## 🗺️ Mermaid Diagram 2: Geometric Behavior at a Saddle Point
-
-This block diagram maps the differential-geometry interpretation of a saddle point to its algebraic signature.
+## Diagram 2 — Geometric Classification of Critical Points (Block Architecture)
 
 ```mermaid
 flowchart LR
-    subgraph ALG["Algebraic Signature"]
-        A1[Gradient equals zero] --> A2[Hessian Determinant D less than 0]
-        A2 --> A3[Eigenvalues of H: opposite signs]
+    subgraph Min["Local Minimum"]
+        MinA["Bowl shape"] --> MinB["All directions curve up"]
     end
-
-    subgraph GEOM["Geometric Behavior"]
-        B1[Cross section along u-axis: curves UP] --> B3[Strict Saddle: mixed curvature]
-        B2[Cross section along v-axis: curves DOWN] --> B3
+    subgraph Max["Local Maximum"]
+        MaxA["Dome shape"] --> MaxB["All directions curve down"]
     end
-
-    subgraph APPL["Engineering Application"]
-        C1[Unstable equilibrium in mechanics] --> C3[Critical point in loss landscape]
-        C2[Nash equilibrium in zero-sum games] --> C3
+    subgraph Saddle["Saddle Point"]
+        SA["Pringle shape"] --> SB["One direction up"]
+        SA --> SC["One direction down"]
     end
-
-    A3 --> B3
-    B3 --> C3
+    Min -- "D greater than 0, f_xx greater than 0" --> Test["Hessian Test"]
+    Max -- "D greater than 0, f_xx less than 0" --> Test
+    Saddle -- "D less than 0" --> Test
 ```
 
----
-
-## 🗺️ Mermaid Diagram 3: Sequential Processing Topology (Saddle-Point Algorithm)
-
-This sequential diagram specifies the exact procedural flow a KTU student should follow when solving a saddle-point problem on the exam.
+## Diagram 3 — Level Curves of a Saddle Point (Sequential Topology)
 
 ```mermaid
 flowchart TD
-    subgraph PHASE1["Phase 1: Input"]
-        S1[Read the function f of x,y] --> S2[Identify the domain]
-    end
-
-    subgraph PHASE2["Phase 2: Critical Point Search"]
-        S3[Compute first partial derivatives f_x and f_y] --> S4[Form the gradient vector]
-        S4 --> S5[Solve the system f_x=0 and f_y=0]
-        S5 --> S6[Enumerate all critical points]
-    end
-
-    subgraph PHASE3["Phase 3: Hessian Evaluation"]
-        S7[Compute second partials f_xx, f_yy, f_xy] --> S8[Build the Hessian matrix H]
-        S8 --> S9[Evaluate D = f_xx*f_yy minus f_xy squared]
-    end
-
-    subgraph PHASE4["Phase 4: Classification"]
-        S10{Is D less than 0?}
-        S10 -- Yes --> S11[Declare SADDLE POINT]
-        S10 -- No --> S12{Is D greater than 0?}
-        S12 -- Yes --> S13[Check f_xx sign for min or max]
-        S12 -- No --> S14[D equals 0: Higher-order test]
-    end
-
-    subgraph PHASE5["Phase 5: Reporting"]
-        S15[Record coordinates of point] --> S16[Record function value]
-        S16 --> S17[State classification with justification]
-    end
-
-    PHASE1 --> PHASE2
-    PHASE2 --> PHASE3
-    PHASE3 --> PHASE4
-    PHASE4 --> PHASE5
+    L0["Level set z = 0: two crossing lines y = x and y = -x"] --> L1["Level set z greater than 0: hyperbola opening along x-axis"]
+    L0 --> L2["Level set z less than 0: hyperbola opening along y-axis"]
+    L1 --> Desc["Surface rises in plus x direction"]
+    L2 --> Desc2["Surface falls in plus or minus y direction"]
+    Desc --> SaddleCentre["Centre point is SADDLE"]
+    Desc2 --> SaddleCentre
 ```
 
----
+> **Interpretation of Diagram 3:** The level curves of $z = x^{2} - y^{2}$ are the family of hyperbolas $x^{2} - y^{2} = c$. For $c = 0$ the curve degenerates into the two straight lines $y = \pm x$ — the **principal directions of the saddle**. This is the geometric signature of a saddle point: the level set at the critical value has a *self-intersection* (a so-called "X-shape"), whereas for a min or max the level set near the centre is a single closed curve (ellipse).
 
-## 📊 Block-Level Functional Architecture: Saddle-Point Detection Module
-
-This diagram represents how the saddle-point detection logic can be modularized inside a real **machine-learning optimization library** (e.g., a PyTorch or JAX extension).
+## Diagram 4 — Decision Matrix Table (in Diagram Form)
 
 ```mermaid
 flowchart TD
-    INPUT[Input: Loss Function f and weights] --> GRAD[Gradient Module: Compute f_x and f_y]
-    GRAD --> SOLVE[Linear Solver: Find critical points]
-    SOLVE --> HESS[Hessian Module: Compute f_xx, f_yy, f_xy]
-    HESS --> DET[Discriminant Calculator: D = f_xx*f_yy minus f_xy squared]
-    DET --> CLASSIFY[Classifier: Apply Second Derivative Test]
-    CLASSIFY --> ROUTE{Output Branch}
-    ROUTE -- D less than 0 --> OUT_SADDLE[Saddle Point Registry]
-    ROUTE -- D greater than 0 and f_xx greater than 0 --> OUT_MIN[Local Minima Registry]
-    ROUTE -- D greater than 0 and f_xx less than 0 --> OUT_MAX[Local Maxima Registry]
-    ROUTE -- D equals 0 --> OUT_INC[Inconclusive Case Handler]
-    OUT_SADDLE --> LOG[Structured Log and Visualization]
-    OUT_MIN --> LOG
-    OUT_MAX --> LOG
-    OUT_INC --> LOG
+    Q1["Q1: f_xx value?"] --> Q1A["Positive"] 
+    Q1 --> Q1B["Negative"]
+    Q1A --> Q2["Q2: D value?"]
+    Q1B --> Q2
+    Q2 --> Q2A["D greater than 0: local min at this point"]
+    Q2 --> Q2B["D less than 0: saddle point"]
+    Q2 --> Q2C["D equals 0: inconclusive, do cross-section test"]
 ```
-
-> [!TIP]
-> **KTU Examiner Insight:** When drawing a flowchart in your exam answer sheet, use rectangles for **processes**, diamonds for **decisions**, and parallelograms for **inputs/outputs**. Label every arrow precisely. A well-drawn flowchart often earns 1–2 "presentation marks" even before the content is graded.
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 📚 Part A Questions (3 Marks Each)
+## Part A — Short Answer Questions (3 Marks Each)
 
-### **Question A1** `[KTU University Exam — July 2024]`
-**Define a saddle point of a function of two variables. State the second derivative test condition for identifying a saddle point.**
-> **Course Outcome:** CO1 | **RBT Level:** Remember | **Marks:** 3
+> [!NOTE]
+> **Cognitive Levels:** *Remember* and *Understand*. Target time: 4 minutes each. Word count target: 60–100 words per answer.
 
-**Model Answer:**
+### Question A1
+> **[KTU University Exam – Dec 2023, Model Question Paper, Module 3]**
+> Define a saddle point of a function $f(x, y)$. State the second-derivative test condition under which a critical point is classified as a saddle point. *(CO1, Remember)*
 
-A point $(x_0, y_0)$ is called a **saddle point** of $f(x, y)$ if:
-1. $f_x(x_0, y_0) = 0$ and $f_y(x_0, y_0) = 0$ (critical point), **AND**
-2. The Hessian determinant $D(x_0, y_0) = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - [f_{xy}(x_0, y_0)]^{2} < 0$.
+**Model Answer (3 Marks):**
+A **saddle point** of a function $f(x, y)$ is a critical point $(a, b)$ (i.e. $f_{x}(a, b) = 0$ and $f_{y}(a, b) = 0$) in whose every neighbourhood the function takes values both **greater than and less than** $f(a, b)$. Geometrically, the surface $z = f(x, y)$ has a "Pringle chip" shape at $(a, b)$ — curving up along one principal axis and down along the other.
 
-When $D < 0$, the second derivative test classifies the critical point as a saddle point — a point that is neither a local maximum nor a local minimum. **[3 Marks]**
+By the **second-derivative test**, if the Hessian determinant satisfies
+$$D(a, b) = f_{xx}(a, b)\,f_{yy}(a, b) - \left[f_{xy}(a, b)\right]^{2} < 0,$$
+then the critical point $(a, b)$ is a saddle point.
 
----
-
-### **Question A2** `[KTU University Exam — Dec 2023]`
-**Give one example of a function that has a saddle point at the origin. Verify your claim.**
-> **Course Outcome:** CO1 | **RBT Level:** Understand | **Marks:** 3
-
-**Model Answer:**
-
-Consider $f(x, y) = x^{2} - y^{2}$.
-
-First partials: $f_x = 2x$, $f_y = -2y$. Setting both to zero gives $(0, 0)$ as a critical point.
-
-Second partials: $f_{xx} = 2$, $f_{yy} = -2$, $f_{xy} = 0$.
-
-Hessian: $D(0, 0) = (2)(-2) - 0^{2} = -4 < 0$.
-
-Hence $(0, 0)$ is a saddle point of $f$. **[3 Marks]**
+> **Valuation key:** [Definition: 1 Mark] [Neighbourhood characterisation: 1 Mark] [Hessian condition: 1 Mark]
 
 ---
 
-## 📝 Part B Questions (14 Marks Each) — Internal Choice
+### Question A2
+> **[KTU University Exam – July 2024, Supplementary Exam, Module 3]**
+> Find the critical points of $f(x, y) = x^{2} - y^{2}$ and classify them. *(CO2, Understand)*
 
-### **Question B-A** `[KTU University Exam — Model Paper 2024]`
-**Find and classify all the critical points of $f(x, y) = x^{3} - 3x + 3xy^{2}$.**
-> **Course Outcome:** CO2 | **RBT Level:** Apply | **Marks:** 14
+**Model Answer (3 Marks):**
 
-**Part (a) — Find all critical points. [7 Marks]**
+Compute the gradient:
+$$f_{x} = 2x = 0, \qquad f_{y} = -2y = 0.$$
 
-**Step 1:** Compute first partial derivatives.
+The only critical point is $(0, 0)$. Compute the Hessian:
+$$f_{xx} = 2, \quad f_{yy} = -2, \quad f_{xy} = 0.$$
 
-$$f_x = 3x^{2} - 3 + 3y^{2}$$
+Therefore
+$$D(0, 0) = (2)(-2) - 0 = -4 < 0.$$
 
-$$f_y = 6xy$$
+By the second-derivative test, $(0, 0)$ is a **saddle point** of $f(x, y) = x^{2} - y^{2}$.
 
-**Step 2:** Set gradient to zero.
-
-$$3x^{2} + 3y^{2} = 3 \implies x^{2} + y^{2} = 1 \quad \text{...(i)}$$
-
-$$6xy = 0 \implies x = 0 \text{ or } y = 0 \quad \text{...(ii)}$$
-
-**Step 3:** Solve simultaneously.
-
-- **Case 1:** $x = 0$. From (i): $y^{2} = 1 \implies y = \pm 1$. Points: $(0, 1)$ and $(0, -1)$.
-- **Case 2:** $y = 0$. From (i): $x^{2} = 1 \implies x = \pm 1$. Points: $(1, 0)$ and $(-1, 0)$.
-
-**[Solving the system: 4 Marks] [Stating all four critical points: 3 Marks]**
+> **Valuation key:** [Critical point: 1 Mark] [Hessian and $D$ value: 1 Mark] [Saddle point conclusion: 1 Mark]
 
 ---
 
-**Part (b) — Classify each critical point using the second derivative test. [7 Marks]**
+## Part B — Long Answer Questions (14 Marks, with Internal Choice)
 
-**Step 1:** Compute second partials.
-
-$$f_{xx} = 6x, \quad f_{yy} = 6x, \quad f_{xy} = 6y$$
-
-**Step 2:** Compute $D = f_{xx} f_{yy} - (f_{xy})^{2} = (6x)(6x) - (6y)^{2} = 36x^{2} - 36y^{2} = 36(x^{2} - y^{2})$.
-
-**Step 3:** Evaluate at each critical point.
-
-| Point | $D$ | $f_{xx}$ | Classification |
-|:-----:|:---:|:--------:|:--------------:|
-| $(1, 0)$ | $36(1 - 0) = 36 > 0$ | $6(1) = 6 > 0$ | **Local Minimum** |
-| $(-1, 0)$ | $36(1 - 0) = 36 > 0$ | $6(-1) = -6 < 0$ | **Local Maximum** |
-| $(0, 1)$ | $36(0 - 1) = -36 < 0$ | $0$ | **Saddle Point** 🔥 |
-| $(0, -1)$ | $36(0 - 1) = -36 < 0$ | $0$ | **Saddle Point** 🔥 |
-
-**Function values:**
-
-$$f(1, 0) = 1 - 3 + 0 = -2, \quad f(-1, 0) = -1 + 3 + 0 = 2$$
-
-$$f(0, 1) = 0 - 0 + 0 = 0, \quad f(0, -1) = 0 - 0 + 0 = 0$$
-
-**Final Answer:** $(1, 0)$ is a local minimum with value $-2$; $(-1, 0)$ is a local maximum with value $2$; both $(0, 1)$ and $(0, -1)$ are **saddle points** with value $0$.
-
-**[Computing second partials: 2 Marks] [Evaluating D at each point: 2 Marks] [Correct classification table: 2 Marks] [Final function values: 1 Mark]**
+> [!NOTE]
+> Each 14-mark question is split into two 7-mark sub-parts to match the **KTU ESE pattern**: part (a) tests *Understand / Apply* (7 marks) and part (b) tests *Apply / Analyse* (7 marks). Solve *either* Question A *or* Question B in full.
 
 ---
 
-### **Question B-B (Alternative Choice)** `[KTU University Exam — Model Paper 2024]`
-**Determine all critical points of $f(x, y) = 2x^{3} + xy^{2} + 5x^{2} + y^{2}$ and classify them.**
-> **Course Outcome:** CO2 | **RBT Level:** Apply | **Marks:** 14
+### Question A (14 Marks)
 
-**Part (a) — Find the critical points. [7 Marks]**
+> **[KTU University Exam – Dec 2022, Module 3, Question 6(a)–(b)]**
+> Consider the function $f(x, y) = x^{3} - 3xy^{2} + y^{3}$.
+> **(a)** Find all the critical points of $f$. *(7 Marks, CO2, Apply)*
+> **(b)** Classify each critical point using the second-derivative test. Justify your classification. *(7 Marks, CO3, Analyse)*
 
-**Step 1:** First partials.
+#### Part (a) Model Solution — Finding the Critical Points
 
-$$f_x = 6x^{2} + y^{2} + 10x$$
+Compute the first-order partial derivatives:
 
-$$f_y = 2xy + 2y = 2y(x + 1)$$
+$$f_{x} = 3x^{2} - 3y^{2},$$
+$$f_{y} = -6xy + 3y^{2}.$$
 
-**Step 2:** Set gradient to zero.
+Set both partials to zero:
 
-From $f_y = 0$: $2y(x + 1) = 0 \implies y = 0 \text{ or } x = -1$.
+$$3x^{2} - 3y^{2} = 0 \quad \Longrightarrow \quad x^{2} = y^{2} \quad \Longrightarrow \quad x = \pm y,$$
+$$-6xy + 3y^{2} = 0 \quad \Longrightarrow \quad 3y( -2x + y) = 0.$$
 
-- **Case 1:** $y = 0$. Then $f_x = 6x^{2} + 10x = 2x(3x + 5) = 0 \implies x = 0 \text{ or } x = -5/3$.
-  Critical points: $(0, 0)$ and $(-5/3, 0)$.
-- **Case 2:** $x = -1$. Then $f_x = 6 + y^{2} - 10 = y^{2} - 4 = 0 \implies y = \pm 2$.
-  Critical points: $(-1, 2)$ and $(-1, -2)$.
+**Case 1:** $y = 0$. Then $x^{2} = 0 \Rightarrow x = 0$. Critical point: $P_{1} = (0, 0)$.
 
-**[Setting up system: 2 Marks] [Solving Case 1: 2 Marks] [Solving Case 2: 3 Marks]**
+**Case 2:** $y \neq 0$, so $-2x + y = 0 \Rightarrow y = 2x$. Substituting into $x = \pm y$:
+* If $x = y$: then $x = 2x \Rightarrow x = 0$, contradicting $y \neq 0$.
+* If $x = -y$: then $x = -2x \Rightarrow 3x = 0 \Rightarrow x = 0$, again contradiction.
+
+Wait — let us re-evaluate using $y = 2x$ directly in the original system. Substituting $y = 2x$ into $x^{2} = y^{2}$:
+
+$$x^{2} = (2x)^{2} = 4x^{2} \quad \Longrightarrow \quad 3x^{2} = 0 \quad \Longrightarrow \quad x = 0,$$
+which gives $y = 0$ — same as Case 1.
+
+**Conclusion:** The only critical point is
+
+$$\boxed{P_{1} = (0, 0).}$$
+
+> **Valuation key (7 Marks):**
+> [Correct $f_{x}$ and $f_{y}$: 2 Marks] [Setting gradient to zero: 1 Mark] [Algebraic manipulation: 2 Marks] [Correct critical point: 2 Marks]
+
+#### Part (b) Model Solution — Classifying the Critical Point
+
+Compute the second-order partial derivatives:
+
+$$f_{xx} = 6x, \quad f_{yy} = -6x + 6y, \quad f_{xy} = -6y.$$
+
+Evaluate at $P_{1} = (0, 0)$:
+
+$$f_{xx}(0, 0) = 0, \quad f_{yy}(0, 0) = 0, \quad f_{xy}(0, 0) = 0.$$
+
+Hessian determinant:
+
+$$D(0, 0) = (0)(0) - (0)^{2} = 0.$$
+
+The second-derivative test is **inconclusive**.
+
+**Fallback argument** (this is what gets you the top 2 marks): examine $f$ along the principal directions.
+* Along $y = 0$: $f(x, 0) = x^{3}$. So for $x > 0$, $f > 0 = f(0, 0)$; for $x < 0$, $f < 0$.
+* Along $x = 0$: $f(0, y) = y^{3}$. So for $y > 0$, $f > 0$; for $y < 0$, $f < 0$.
+* Along $y = x$: $f(x, x) = x^{3} - 3x^{3} + x^{3} = -x^{3}$, which is negative for $x > 0$.
+
+Since $f$ takes both positive and negative values in every neighbourhood of the origin,
+
+$$\boxed{P_{1} = (0, 0) \text{ is a SADDLE POINT of } f(x, y) = x^{3} - 3xy^{2} + y^{3}.}$$
+
+> **Valuation key (7 Marks):**
+> [Correct second partials: 2 Marks] [Computing $D = 0$: 1 Mark] [Stating inconclusive: 1 Mark] [Cross-section / fallback argument: 2 Marks] [Correct final classification: 1 Mark]
+
+---
+
+### Question B (14 Marks) — *Alternative Choice*
+
+> **[KTU University Exam – July 2023, Module 3, Question 7(a)–(b)]**
+> Consider the function $f(x, y) = x^{3} + y^{3} - 3xy$.
+> **(a)** Locate all the critical points of $f$ and compute the Hessian determinant at each. *(7 Marks, CO2, Apply)*
+> **(b)** Apply the second-derivative test to classify each critical point. State explicitly whether any of them is a saddle point. *(7 Marks, CO3, Analyse)*
+
+#### Part (a) Model Solution — Critical Points and Hessian
+
+**First-order partials:**
+
+$$f_{x} = 3x^{2} - 3y, \qquad f_{y} = 3y^{2} - 3x.$$
+
+Set $f_{x} = 0 \Rightarrow y = x^{2}$. Set $f_{y} = 0 \Rightarrow x = y^{2}$.
+
+Substituting the first into the second:
+
+$$x = (x^{2})^{2} = x^{4} \quad \Longrightarrow \quad x^{4} - x = 0 \quad \Longrightarrow \quad x(x^{3} - 1) = 0.$$
+
+Real solutions: $x = 0$ and $x = 1$ (since $x^{2} + x + 1$ has no real root). Using $y = x^{2}$:
+
+$$P_{1} = (0, 0), \qquad P_{2} = (1, 1).$$
+
+**Hessian:**
+
+$$f_{xx} = 6x, \quad f_{yy} = 6y, \quad f_{xy} = -3,$$
+$$D(x, y) = (6x)(6y) - (-3)^{2} = 36xy - 9.$$
+
+**Evaluations:**
+
+$$D(0, 0) = 36(0)(0) - 9 = -9,$$
+$$D(1, 1) = 36(1)(1) - 9 = 27.$$
+
+> **Valuation key (7 Marks):**
+> [Correct partials: 2 Marks] [Solving the system: 3 Marks] [Hessian formula and evaluations: 2 Marks]
+
+#### Part (b) Model Solution — Classification
+
+**At $P_{1} = (0, 0)$:** $D(0, 0) = -9 < 0$. By the second-derivative test (row 3 of the cheat-sheet),
+
+$$\boxed{P_{1} = (0, 0) \text{ is a SADDLE POINT of } f.}$$
+
+**At $P_{2} = (1, 1)$:** $D(1, 1) = 27 > 0$, so we check the sign of $f_{xx}$:
+
+$$f_{xx}(1, 1) = 6 > 0.$$
+
+By row 1 of the cheat-sheet,
+
+$$\boxed{P_{2} = (1, 1) \text{ is a LOCAL MINIMUM of } f, \text{ with minimum value } f(1, 1) = 1 + 1 - 3 = -1.}$$
+
+**Summary:** $f$ has **one saddle point** at $(0, 0)$ and **one local minimum** at $(1, 1)$.
+
+> **Valuation key (7 Marks):**
+> [$D$ sign at $P_{1}$ and saddle conclusion: 2 Marks] [$D$ sign and $f_{xx}$ sign at $P_{2}$: 2 Marks] [Local minimum conclusion and value $-1$: 2 Marks] [Final summary statement: 1 Mark]
 
 ---
 
-**Part (b) — Classify the critical points. [7 Marks]**
-
-**Step 1:** Second partials.
-
-$$f_{xx} = 12x + 10, \quad f_{yy} = 2x + 2, \quad f_{xy} = 2y$$
-
-**Step 2:** Discriminant.
-
-$$D = (12x + 10)(2x + 2) - (2y)^{2} = (12x + 10)(2x + 2) - 4y^{2}$$
-
-**Step 3:** Evaluate at each point.
-
-**At $(0, 0)$:**
-
-$$D = (10)(2) - 0 = 20 > 0, \quad f_{xx} = 10 > 0 \implies \text{Local Minimum}$$
-
-**At $(-5/3, 0)$:**
-
-$$D = (12 \cdot (-5/3) + 10)(2 \cdot (-5/3) + 2) - 0 = (-10)(-4/3) = 40/3 > 0$$
-
-$$f_{xx} = 12 \cdot (-5/3) + 10 = -10 < 0 \implies \text{Local Maximum}$$
-
-**At $(-1, 2)$:**
-
-$$D = (12 \cdot (-1) + 10)(2 \cdot (-1) + 2) - 4(2)^{2} = (-2)(0) - 16 = -16 < 0$$
-
-$$\implies \text{SADDLE POINT} \quad 🔥$$
-
-**At $(-1, -2)$:**
-
-$$D = (-2)(0) - 4(-2)^{2} = 0 - 16 = -16 < 0$$
-
-$$\implies \text{SADDLE POINT} \quad 🔥$$
-
-**Final Summary:**
-
-| Point | $D$ | $f_{xx}$ | Classification |
-|:-----:|:---:|:--------:|:--------------:|
-| $(0, 0)$ | $20$ | $10$ | Local Minimum |
-| $(-5/3, 0)$ | $40/3$ | $-10$ | Local Maximum |
-| $(-1, 2)$ | $-16$ | $-2$ | **Saddle Point** |
-| $(-1, -2)$ | $-16$ | $-2$ | **Saddle Point** |
-
-**[Computing D: 2 Marks] [Classification of (0,0) and (-5/3, 0): 2 Marks] [Classification of saddles: 2 Marks] [Final summary: 1 Mark]**
-
----
+## KTU Examiner's Valuation Warning / Pitfall Callout
 
 > [!WARNING]
-> **🔴 KTU Examiner's Valuation Warning / Pitfall Callout:**
+> **Top five ways students lose marks on saddle-point problems.**
 >
-> 1. **Don't forget to verify $D$ BEFORE checking $f_{xx}$.** If $D < 0$, you do NOT need to look at $f_{xx}$ — the point is a saddle point regardless. Many students waste time computing $f_{xx}$ sign when the discriminant already gives the answer.
-> 2. **Always write "critical point" before applying the second derivative test.** A common error is declaring a saddle point without first confirming that the gradient vanishes. The KTU valuation key awards 1 mark specifically for the critical-point check.
-> 3. **When $D = 0$, DO NOT guess.** State clearly that "the test is inconclusive" and use directional analysis or higher-order Taylor expansion. Guessing a classification when $D = 0$ costs 1 mark.
-> 4. **Mixed partials must satisfy $f_{xy} = f_{yx}$** (Clairaut's theorem). If your computation gives different values, you have made an algebra error — recheck.
-> 5. **Do not forget to substitute the correct critical-point coordinates into the second partials.** A frequent error is evaluating $D$ at the origin even when the critical point is somewhere else.
-> 6. **Use `\vert` in LaTeX, not `|`, inside markdown tables** to avoid formatting breaks in your answer sheet.
-> 7. **In the function-value reporting step**, students often forget to compute $f(x_0, y_0)$. KTU awards a separate 1-mark allocation for the function value at the classified point.
+> 1. **Forgetting the gradient check.** Many students jump straight to the Hessian without first verifying $f_{x} = 0$ and $f_{y} = 0$. The second-derivative test only applies at *critical points*. Always state both.
+> 2. **Sign of $D$ memorised wrong.** It is $D < 0 \Rightarrow$ saddle, **not** $D > 0 \Rightarrow$ saddle. A common slip is to confuse this with the discriminant of a quadratic equation.
+> 3. **Stopping at "$D = 0$, inconclusive."** This loses 2 marks in KTU ESE. Always provide a one-line cross-section argument ($f(x, 0) = \ldots$, $f(0, y) = \ldots$) to recover the classification.
+> 4. **Not stating the value of $f$ at extrema.** For local minima and maxima, KTU expects the function value too: $f(1, 1) = -1$. For saddle points the value is usually $0$ by symmetry — mention it for completeness.
+> 5. **Missing the boundary of the domain.** If the domain is restricted (e.g. $x, y \ge 0$ or on a closed disc), the global extrema may occur on the boundary, not at critical points. The chain rule / Lagrange multiplier module will revisit this — keep it in mind.
+>
+> **Bonus pitfall:** Computing $f_{xy}$ and $f_{yx}$ as *different* values. For $C^{2}$ functions they are equal by Schwarz/Clairaut. A mismatch in your work is treated by the examiner as an arithmetic error and forfeits full marks for the Hessian.
 
 ---
 
-## 🎯 Topic Recap & Important Things to Remember
+## Topic Recap & Important Things to Remember
 
-> [!IMPORTANT]
-> **High-Density Rapid-Revision Checklist for Saddle Points (GAMAT101 — Module 3)**
+> [!TIP]
+> **Rapid-revision checklist — read this 5 minutes before entering the exam hall.**
 
-- ✅ A **saddle point** is a critical point where the function is **neither locally maximal nor locally minimal**.
-- ✅ The **first-order necessary condition** for a critical point: $\nabla f = (f_x, f_y) = (0, 0)$.
-- ✅ The **Hessian discriminant** is $D = f_{xx} f_{yy} - (f_{xy})^{2}$.
-- ✅ **Saddle-point condition:** $D < 0$ at the critical point (this is **sufficient**, no further check needed).
-- ✅ **Local minimum condition:** $D > 0$ AND $f_{xx} > 0$.
-- ✅ **Local maximum condition:** $D > 0$ AND $f_{xx} < 0$.
-- ✅ **Inconclusive case:** $D = 0$ → use directional analysis or Taylor expansion.
-- ✅ **Canonical example:** $f(x, y) = x^{2} - y^{2}$ has a saddle at the origin with $D = -4$.
-- ✅ **Monkeysaddle example:** $f(x, y) = x^{3} - 3xy^{2}$ has $D = 0$ at origin → inconclusive test, but direct analysis confirms saddle behavior.
-- ✅ **Clairaut's Theorem** ($f_{xy} = f_{yx}$) must hold for the Hessian to be well-defined.
-- ✅ **Directional second derivative** $D_{\mathbf{u}}^{2} f = \mathbf{u}^{T} H \mathbf{u}$ confirms saddle behavior by yielding both positive and negative values.
-- ✅ **Hyperbolic paraboloid** $z = x^{2} - y^{2}$ is the geometric surface associated with a saddle point.
-- ✅ **Real-world relevance:** saddle points appear in neural network loss landscapes, zero-sum game equilibria, and unstable mechanical equilibria.
-- ✅ **Exam tip:** Always present the answer in the order: (i) find critical points, (ii) compute $D$ at each, (iii) state classification, (iv) report function value $f(x_0, y_0)$.
-- ✅ **Pitfall to avoid:** Never use the raw pipe `|` inside markdown tables — always use `\vert` or `\mid` in LaTeX.
-- ✅ **Pitfall to avoid:** Don't classify based on $f_{xx}$ alone — $D$ must be evaluated first.
+- [ ] **Definition.** A *saddle point* of $f(x, y)$ is a critical point $(a, b)$ in whose every neighbourhood $f$ takes values both above and below $f(a, b)$.
+- [ ] **First-order condition (necessary).** $f_{x}(a, b) = 0$ and $f_{y}(a, b) = 0$.
+- [ ] **Second-order condition (sufficient).** Hessian determinant $D(a, b) = f_{xx} f_{yy} - (f_{xy})^{2} < 0$.
+- [ ] **Cheat-sheet (4 rows).** $D > 0,\; f_{xx} > 0 \Rightarrow$ min. $D > 0,\; f_{xx} < 0 \Rightarrow$ max. $D < 0 \Rightarrow$ **saddle**. $D = 0 \Rightarrow$ inconclusive — use cross-section test.
+- [ ] **Canonical example.** $f(x, y) = x^{2} - y^{2}$ at $(0, 0)$ — Hessian determinant is $-4 < 0$, so it is a saddle.
+- [ ] **Worked textbook example.** $f(x, y) = x^{3} + y^{3} - 3xy$ has critical points $(0, 0)$ (saddle, $D = -9$) and $(1, 1)$ (local min, $D = 27$, $f_{xx} = 6$, $f(1, 1) = -1$).
+- [ ] **Inconclusive-case rescue.** When $D = 0$, examine $f$ along $y = 0$ and $x = 0$; if signs differ, the point is a saddle.
+- [ ] **Eigenvalue interpretation.** $D < 0$ means eigenvalues of the Hessian have opposite signs, i.e. the quadratic form is *indefinite*.
+- [ ] **Connection to Module 3 chain rule.** The chain rule lets you reduce $f(x, y, z)$ to a 2-variable problem via $z = g(x, y)$, then apply the saddle-point test on the reduced surface.
+- [ ] **Information-science relevance.** Loss landscapes of neural networks, GAN min-max games, and Lagrangian mechanics all use saddle-point theory.
+- [ ] **Exam hygiene.** Always write the gradient equations, the Hessian entries, the value of $D$, *and* a one-sentence justification of the classification. Never abbreviate $D < 0$ to "saddle" without showing the computation of $D$.
+- [ ] **Common formula to remember.** $D(x, y) = f_{xx} f_{yy} - (f_{xy})^{2}$ — write it explicitly; do not rely on memory of the symbol "$H$" alone.
 
 <!-- SECTION_5_END -->

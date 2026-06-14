@@ -2,63 +2,52 @@
 
 <!-- SECTION_1_START -->
 
-# Partial Derivatives of a Function of More Than Two Variables
+# Partial Derivatives of Functions of More Than Two Variables
 
-## 1.1 Formal Academic Definition
+## 1. Core Technical Definition
 
-> [!IMPORTANT]
-> **KTU 2024 Syllabus Definition (GAMAT101 – Module 2):**
-> Let $f : D \subseteq \mathbb{R}^{n} \rightarrow \mathbb{R}$ be a real-valued function of $n$ real variables, where $n \geq 3$. The function $f$ is said to possess a **partial derivative with respect to the $i$-th variable $x_i$** at the point $(x_1, x_2, \ldots, x_n) \in D$ if the following limit exists and is finite:
-
-$$\frac{\partial f}{\partial x_i} = \lim_{h \to 0} \frac{f(x_1, x_2, \ldots, x_i + h, \ldots, x_n) - f(x_1, x_2, \ldots, x_i, \ldots, x_n)}{h}$$
-
-For a function of **three variables** $f(x, y, z)$, the three first-order partial derivatives are:
-
-$$\frac{\partial f}{\partial x} = f_x = \lim_{h \to 0} \frac{f(x+h,\, y,\, z) - f(x,\, y,\, z)}{h}$$
-
-$$\frac{\partial f}{\partial y} = f_y = \lim_{h \to 0} \frac{f(x,\, y+h,\, z) - f(x,\, y,\, z)}{h}$$
-
-$$\frac{\partial f}{\partial z} = f_z = \lim_{h \to 0} \frac{f(x,\, y,\, z+h) - f(x,\, y,\, z)}{h}$$
-
-provided each limit exists. The collection of all such partial derivatives at a point $P_0 \in D$ constitutes the **gradient vector**:
-
-$$\nabla f(x,y,z) = \left\langle \frac{\partial f}{\partial x},\; \frac{\partial f}{\partial y},\; \frac{\partial f}{\partial z} \right\rangle$$
+Let $D \subset \mathbb{R}^{3}$ be an open region in three-dimensional space. A function of three independent variables is a mapping
+$$f : D \subseteq \mathbb{R}^{3} \longrightarrow \mathbb{R}, \quad (x,y,z) \longmapsto f(x,y,z).$$
+More generally, for $n \geq 3$ variables, $f : D \subseteq \mathbb{R}^{n} \to \mathbb{R}$ assigns one real output to every $n$-tuple $(x_1, x_2, \dots, x_n)$ in its domain $D$.
 
 > [!NOTE]
-> **Domain & Range Note:** For $f: \mathbb{R}^{3} \rightarrow \mathbb{R}$, the domain is a 3-D solid region in space, and the range is a subset of $\mathbb{R}$. For $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ with $n > 3$, the domain lives in **$n$-dimensional hyperspace** — a structure we cannot directly visualize, but the algebraic rules generalize naturally.
+> **KTU 2024 Syllabus Definition (GAMAT101, Module 2):**
+> A real-valued function $f(x_1, x_2, \dots, x_n)$ is said to possess a **partial derivative with respect to $x_k$** at the point $(a_1, a_2, \dots, a_n) \in D$ if the following limit exists and is finite:
+> $$\frac{\partial f}{\partial x_k}(a_1,\dots,a_n) \;=\; \lim_{h \to 0}\,\frac{f(a_1,\dots,a_k+h,\dots,a_n) - f(a_1,\dots,a_n)}{h}.$$
 
-## 1.2 Conceptual Analogy & Geometric Intuition
+### Conceptual Analogy — The Room Temperature Map
 
-> [!TIP]
-> **Intuitive Analogy — "Slicing a Cake":**
-> Imagine a 3-D object (say, a temperature distribution $T(x,y,z)$ inside a room). To find $\partial T / \partial x$, you **freeze** $y$ and $z$ at constant values — this is like taking a knife and slicing the room along a plane parallel to the $x$-axis. What you get is a 2-D cross-section that is now a function of $x$ alone. The ordinary derivative of that slice IS the partial derivative.
->
-> - $\partial f / \partial x$ → slice perpendicular to $x$-axis
-> - $\partial f / \partial y$ → slice perpendicular to $y$-axis
-> - $\partial f / \partial z$ → slice perpendicular to $z$-axis
->
-> For $n > 3$ variables, the geometric picture breaks, but the **operational rule remains identical**: hold $n-1$ variables constant, differentiate with respect to the remaining one.
+Imagine a long, climate-controlled server room. The temperature $T$ inside depends on three quantities: the **length** $x$, the **breadth** $y$, and the **height** $z$ of the probe. So $T = T(x, y, z)$.
 
-## 1.3 Physical Constants and Standard Metrics
+If you want to know how fast the temperature changes **as you walk along the length direction only**, you freeze $y$ and $z$ and differentiate with respect to $x$. That "frozen-variable derivative" is exactly the partial derivative $\dfrac{\partial T}{\partial x}$.
 
-> [!NOTE]
-> **Standard Engineering Units used in $f(x, y, z)$ Contexts:**
-> - **Independent variables** $(x, y, z)$ typically carry units of **metres (m)**, **seconds (s)**, or **kilograms (kg)** depending on the application.
-> - **Dependent variable** $f$ units: derived (e.g., **temperature in Kelvin (K)**, **pressure in Pascals (Pa)**, **potential in Volts (V)**).
-> - **Partial derivative** $\partial f / \partial x_i$ has units of $\dfrac{[f]}{[x_i]}$ (e.g., **K/m** for temperature gradient, **V/m** for electric field).
-> - The **gradient** $\nabla f$ is a vector in $\mathbb{R}^{n}$ pointing in the direction of maximum rate of change of $f$.
+In **Machine Learning**, the loss function $L(w_1, w_2, w_3, b)$ of a simple neural network depends on three weights and one bias (four variables). The partial derivative $\dfrac{\partial L}{\partial w_1}$ tells the gradient-descent optimiser how much to nudge the first weight — *holding all the other variables constant*.
 
-## 1.4 Visualization Callout
+### Geometric Intuition (3D → 2D Cross-Section)
+
+For a function of two variables, the graph is a 2D surface in 3D. For a function of three variables, the full graph lives in **4D** and cannot be drawn. However, the **level surface**
+$$f(x,y,z) = c, \quad c \in \mathbb{R}$$
+is a 2D surface sitting inside ordinary 3D space, and the gradient $\nabla f = \left( f_x, f_y, f_z \right)$ is the **outward normal** to this level surface at every point where $f$ is differentiable.
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Level surfaces and partial derivative slices for $f(x, y, z) = x^2 + y^2 + z^2$
->
-> **GeoGebra / Desmos Input Equations:**
-> * Level surfaces: $x^2 + y^2 + z^2 = c$ for $c = 1, 4, 9$ (concentric spheres)
-> * Slice at $z = 1$: $f(x, y, 1) = x^2 + y^2 + 1$ (paraboloid cross-section)
-> * Slice at $x = 0$: $f(0, y, z) = y^2 + z^2$ (parabolic bowl)
->
-> **Visual Description:** The student should observe concentric spheres centered at the origin. Each partial derivative at a point is the slope of the 2-D curve obtained by intersecting two level surfaces — one parallel to the chosen axis and the other being the level surface of $f$ itself.
+> **Concept:** Level surface and outward normal of a 3-variable scalar field
+> **GeoGebra / Desmos 3D Input Equations:**
+> * Sphere (level set of $f=x^{2}+y^{2}+z^{2}$): `x^2 + y^2 + z^2 = 9`
+> * Tangent plane at point $(2, 2, 1)$: `4(x-2) + 4(y-2) + 2(z-1) = 0`
+> **Visual Description:** A sphere of radius 3 centred at the origin. A small arrow at the surface point $(2,2,1)$ points radially outward along $\nabla f = (4, 4, 2)$, perpendicular to the tangent plane that just "kisses" the sphere at that location. As you move the probe point, the normal arrow always stays perpendicular to the local level surface.
+
+### Key Symbols (Board-Exam Notation)
+
+| Symbol | Meaning |
+|---|---|
+| $f_x$, $\dfrac{\partial f}{\partial x}$ | First partial derivative w.r.t. $x$ |
+| $f_{xy}$, $\dfrac{\partial^{2} f}{\partial y\, \partial x}$ | Second partial, first $x$ then $y$ |
+| $f_{ijk}$ | Third partial, in the order $x, y, z$ then $i,j,k$ |
+| $\nabla f$ | Gradient vector $(f_x, f_y, f_z)$ |
+| $d f$ | Total differential |
+
+> [!IMPORTANT]
+> **KTU Board Highlight:** In $\dfrac{\partial^{2} f}{\partial y\, \partial x}$ the variable closest to $f$ is differentiated *first*. Thus $f_{yx}$ means *first differentiate w.r.t. $x$, then w.r.t. $y$*. This order matters in the definition, although by **Clairaut–Schwarz Theorem** it is equal to $f_{xy}$ under mild continuity conditions.
 
 ---
 
@@ -66,90 +55,81 @@ $$\nabla f(x,y,z) = \left\langle \frac{\partial f}{\partial x},\; \frac{\partial
 
 <!-- SECTION_2_START -->
 
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
+# 2. Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Operational Rules for Computing Partial Derivatives
+## 2.1 First-Order Partial Derivatives (Three Variables)
 
-The algebraic procedure is **identical** to single-variable differentiation, with one cardinal rule: **treat all other variables as constants**.
+For $f(x,y,z)$, the three first-order partials are obtained by treating the *other two* variables as constants:
 
-### Step-by-Step Logic
-
-1. **Identify the variable of differentiation** $x_i$ from the notation $\partial / \partial x_i$ or $f_{x_i}$.
-2. **Treat the remaining $n-1$ variables as numerical constants** — coefficients, not variables.
-3. **Apply the standard differentiation rules** (power, product, quotient, chain) as if differentiating a single-variable function.
-4. **Repeat** for each independent variable to obtain the full gradient $\nabla f$.
-
-> [!IMPORTANT]
-> **Critical Rule — No Cross-Term Simplification:**
-> When computing $\partial f / \partial x_i$, the terms involving $x_j$ (where $j \neq i$) are **frozen coefficients**. They DO NOT differentiate. For example, in $f(x,y,z) = 3xy^2 + 5z\sin(x)$:
-> - $\partial f / \partial x = 3y^2 + 5z\cos(x)$ ← the $3y^2$ is treated as a constant times $x^{0}$? No — it's a constant with respect to $x$.
-> - $\partial f / \partial y = 6xy$ ← here $3x$ is the constant coefficient.
-> - $\partial f / \partial z = 5\sin(x)$ ← here $5\sin(x)$ is the constant coefficient.
+$$
+\begin{aligned}
+f_{x}(x,y,z) &= \lim_{h \to 0}\frac{f(x+h,y,z)-f(x,y,z)}{h}, \\
+f_{y}(x,y,z) &= \lim_{h \to 0}\frac{f(x,y,y+h)-f(x,y,z)}{h}, \\
+f_{z}(x,y,z) &= \lim_{h \to 0}\frac{f(x,y,z+h)-f(x,y,z)}{h}.
+\end{aligned}
+$$
 
 ## 2.2 Higher-Order Partial Derivatives
 
-> [!NOTE]
-> **Definition (Higher-Order Partial Derivatives):**
-> Partial derivatives of order $\geq 2$ are obtained by **successive differentiation**. For a function $f(x, y, z)$ of three variables, the second-order partial derivatives are:
+Differentiating $f_x$, $f_y$, $f_z$ again produces **nine** second-order partials, arranged in the **Hessian matrix**:
 
-$$\frac{\partial^2 f}{\partial x^2} = f_{xx} = \frac{\partial}{\partial x}\!\left(\frac{\partial f}{\partial x}\right)$$
+$$
+H_f \;=\; \begin{pmatrix}
+f_{xx} & f_{xy} & f_{xz} \\
+f_{yx} & f_{yy} & f_{yz} \\
+f_{zx} & f_{zy} & f_{zz}
+\end{pmatrix}.
+$$
 
-$$\frac{\partial^2 f}{\partial y^2} = f_{yy} = \frac{\partial}{\partial y}\!\left(\frac{\partial f}{\partial y}\right)$$
-
-$$\frac{\partial^2 f}{\partial z^2} = f_{zz} = \frac{\partial}{\partial z}\!\left(\frac{\partial f}{\partial z}\right)$$
-
-The **mixed (cross) partial derivatives** are:
-
-$$f_{xy} = \frac{\partial^2 f}{\partial y\, \partial x} = \frac{\partial}{\partial y}\!\left(\frac{\partial f}{\partial x}\right)$$
-
-$$f_{xz} = \frac{\partial^2 f}{\partial z\, \partial x} = \frac{\partial}{\partial z}\!\left(\frac{\partial f}{\partial x}\right)$$
-
-$$f_{yz} = \frac{\partial^2 f}{\partial z\, \partial y} = \frac{\partial}{\partial z}\!\left(\frac{\partial f}{\partial y}\right)$$
-
-The **Laplacian operator** in 3-D is:
-
-$$\nabla^{2} f = f_{xx} + f_{yy} + f_{zz}$$
-
-## 2.3 Clairaut's Theorem (Schwarz's Theorem)
+The diagonal entries are *pure* second-order partials; the off-diagonal entries are *mixed* partials.
 
 > [!IMPORTANT]
-> **Clairaut's Theorem (Equality of Mixed Partials):**
-> If $f$ and its partial derivatives $f_{x_i}, f_{x_j}, f_{x_i x_j}, f_{x_j x_i}$ are **all continuous** in a neighbourhood of a point $P_0$, then:
+> **Clairaut–Schwarz Theorem (Equality of Mixed Partials):**
+> If $f$, $f_x$, $f_y$, $f_z$, $f_{xy}$, $f_{yx}$ are all **continuous** in a neighbourhood of a point, then
+> $$f_{xy}(x,y,z) \;=\; f_{yx}(x,y,z).$$
+> The same equality holds for *any* pair of mixed partials, e.g. $f_{xyz} = f_{xzy} = f_{yxz} = f_{yzx} = f_{zxy} = f_{zyx}$. **KTU almost always tests this.**
 
-$$f_{x_i x_j}(P_0) = f_{x_j x_i}(P_0)$$
+## 2.3 The Total Differential
 
-**In words:** The order of differentiation does not matter, provided continuity conditions are met. For three variables, this gives six equalities among the nine second-order partials, leaving only **6 independent second-order partials**: $f_{xx}, f_{yy}, f_{zz}, f_{xy}, f_{xz}, f_{yz}$.
+If $f$ is differentiable, an infinitesimal change in the input $(dx, dy, dz)$ produces
 
-> [!WARNING]
-> **Counter-example Caveat:** If continuity fails, the equality need not hold. The classic pathological example is:
+$$d f \;=\; f_x\,dx + f_y\,dy + f_z\,dz \;=\; \nabla f \cdot d\mathbf{r}, \quad d\mathbf{r} = (dx, dy, dz).$$
 
-$$f(x,y) = \begin{cases} \dfrac{xy(x^2 - y^2)}{x^2 + y^2}, & (x,y) \neq (0,0) \\[6pt] 0, & (x,y) = (0,0) \end{cases}$$
+This is the **linear approximation** of the function change; it is the foundation for *error propagation* in measurement science.
 
-for which $f_{xy}(0,0) \neq f_{yx}(0,0)$. Such pathological cases are **excluded from KTU-level questions** but are good to be aware of for GATE/competitive exams.
+## 2.4 Chain Rule — Three Independent Cases
 
-## 2.4 KTU High-Yield Formula Sheet
+| Case | Form of Composition | Formula |
+|---|---|---|
+| **C1** | $w = f(x,y,z)$, with $x = x(t)$, $y = y(t)$, $z = z(t)$ (1 variable $t$) | $\dfrac{dw}{dt} = f_x\,\dfrac{dx}{dt} + f_y\,\dfrac{dy}{dt} + f_z\,\dfrac{dz}{dt}$ |
+| **C2** | $w = f(x,y,z)$, with $x = x(u,v)$, $y = y(u,v)$, $z = z(u,v)$ (2 variables $u, v$) | $\dfrac{\partial w}{\partial u} = f_x\,x_u + f_y\,y_u + f_z\,z_u$, and similarly for $v$ |
+| **C3 (Implicit)** | $F(x, y, z) = 0$ defines $z = z(x, y)$ | $\dfrac{\partial z}{\partial x} = -\dfrac{F_x}{F_z}$, $\dfrac{\partial z}{\partial y} = -\dfrac{F_y}{F_z}$, provided $F_z \neq 0$ |
 
-> [!TIP]
-> **Rapid Revision Table — Use this in the last 10 minutes of the exam.**
-
-| Symbol | Meaning | Formula | Units / Notes |
-| :--- | :--- | :--- | :--- |
-| $f_{x_i}$ | First-order partial wrt $x_i$ | $\lim_{h \to 0}\dfrac{f(\ldots, x_i+h, \ldots) - f(\ldots)}{h}$ | Treat other vars as constants |
-| $\nabla f$ | Gradient vector in $\mathbb{R}^n$ | $\left\langle f_{x_1}, f_{x_2}, \ldots, f_{x_n}\right\rangle$ | Points in direction of steepest ascent |
-| $f_{x_i x_i}$ | Pure second-order partial | $\dfrac{\partial}{\partial x_i}\!\left(\dfrac{\partial f}{\partial x_i}\right)$ | Always exists if $f_{x_i}$ differentiable |
-| $f_{x_i x_j}$ | Mixed partial | $\dfrac{\partial^2 f}{\partial x_j \partial x_i}$ | Equals $f_{x_j x_i}$ by Clairaut |
-| $\nabla^{2} f$ | Laplacian (3-D) | $f_{xx} + f_{yy} + f_{zz}$ | Used in PDEs (heat, wave, Laplace eq.) |
-| $\dfrac{\partial^m f}{\partial x_1^{m_1} \cdots \partial x_n^{m_n}}$ | General $m$-th order partial | Sum of $m_i = m$ | Order of differentiation irrelevant if continuous |
-
-## 2.5 Real-World Engineering Applications
+## 2.5 Homogeneous Functions & Euler's Theorem
 
 > [!NOTE]
-> **Production-Level Applications in Information Science & Engineering:**
-> 1. **Machine Learning — Gradient Descent:** Loss function $L(w_1, w_2, \ldots, w_n)$ is a function of $n$ parameters. The update rule is $w_i \leftarrow w_i - \eta \cdot \partial L / \partial w_i$. Without partial derivatives, no neural network trains.
-> 2. **Computer Vision — 3-D Image Filtering:** Pixel intensity $I(x, y, z)$ is differentiated partially to detect edges along each axis (Sobel filters in 3-D medical imaging).
-> 3. **Heat Equation (PDE):** $\partial u / \partial t = \alpha\, \nabla^{2} u$ — directly uses partial derivatives of $u(x,y,z,t)$ in both space and time.
-> 4. **Electromagnetism:** Electric field $\vec{E} = -\nabla V$, where $V(x,y,z)$ is the electric potential. Maxwell's equations are written entirely in terms of partial derivatives of field components.
-> 5. **Economics — Cobb-Douglas Production:** $P(K, L, M) = A K^{\alpha} L^{\beta} M^{\gamma}$ uses three-factor production; marginal productivity is $\partial P / \partial K$, etc.
+> **Definition (Homogeneous Function of Degree $n$, 3 variables):**
+> A function $f(x,y,z)$ is **homogeneous of degree $n$** if for every real scalar $t$,
+> $$f(tx, ty, tz) \;=\; t^{n}\,f(x,y,z).$$
+
+> [!IMPORTANT]
+> **Euler's Theorem for Three Variables (Board Favourite):**
+> If $f(x,y,z)$ is homogeneous of degree $n$ and possesses continuous partial derivatives, then
+> $$x\,\frac{\partial f}{\partial x} \;+\; y\,\frac{\partial f}{\partial y} \;+\; z\,\frac{\partial f}{\partial z} \;=\; n\,f(x,y,z).$$
+> This identity holds **for every point** in the domain, not just at the origin.
+
+## 2.6 Engineering & Information-Science Applications
+
+| Domain | Use of Multivariable Partials |
+|---|---|
+| **Machine Learning** | Gradients of loss $\nabla L(\theta_1, \theta_2, \theta_3)$ drive back-propagation. |
+| **Computer Graphics** | Surface normals for shading = $\nabla F$ of an implicit surface $F(x,y,z)=0$. |
+| **Thermodynamics** | Maxwell relations come from $f_{xy} = f_{yx}$ on state functions. |
+| **Signal Processing** | Jacobian $J_{ij} = \partial f_i / \partial x_j$ of multi-output transformations. |
+| **Numerical Analysis** | Newton's method for systems solves $J(\mathbf{x})\,\Delta\mathbf{x} = -\mathbf{F}(\mathbf{x})$. |
+
+> [!NOTE]
+> **General Engineering Insight:** Whenever a system has $n$ independent control knobs and you ask *"what is the marginal effect of knob $i$ alone?"*, the answer is a partial derivative. The Jacobian collects all $n \times m$ such partials.
 
 ---
 
@@ -157,294 +137,294 @@ for which $f_{xy}(0,0) \neq f_{yx}(0,0)$. Such pathological cases are **excluded
 
 <!-- SECTION_3_START -->
 
-# Step-by-Step Derivations & Symbolic Implementation
+# 3. Step-by-Step Derivations, Code Implementation & Worked Solutions
 
-## 3.1 Worked Example 1 — Function of Three Variables (First-Order Partials)
+## 3.1 Worked Example A — All First-Order Partials of a 3-Variable Polynomial
 
-> [!IMPORTANT]
-> **Problem:** Find all first-order partial derivatives of $f(x, y, z) = x^2 y + 3xyz^2 + \sin(z) \cdot e^{x}$ at the point $(1, 2, 0)$.
+**Problem.** Compute $f_x$, $f_y$, $f_z$ for
+$$f(x,y,z) \;=\; x^{3}y^{2} \;+\; y^{2}z^{3} \;-\; z^{2}\sin(x).$$
 
-### Part (a): Compute $f_x$
+**Step 1 — Partial w.r.t. $x$ (treat $y$ and $z$ as constants).**
+Differentiate term by term.
+- $\dfrac{\partial}{\partial x}\bigl(x^{3}y^{2}\bigr) = 3x^{2}y^{2}$.
+- $\dfrac{\partial}{\partial x}\bigl(y^{2}z^{3}\bigr) = 0$ (no $x$).
+- $\dfrac{\partial}{\partial x}\bigl(-z^{2}\sin x\bigr) = -z^{2}\cos x$.
 
-Treat $y$ and $z$ as constants. Differentiate term by term.
+$$
+\begin{aligned}
+f_{x}(x,y,z) \;=\; 3x^{2}y^{2} \;-\; z^{2}\cos x.
+\end{aligned}
+$$
 
-**Term 1:** $x^2 y \;\longrightarrow\; 2xy$ (since $y$ is a constant coefficient and $\dfrac{d}{dx}(x^2) = 2x$)
+**Step 2 — Partial w.r.t. $y$.**
+- $\dfrac{\partial}{\partial y}\bigl(x^{3}y^{2}\bigr) = 2x^{3}y$.
+- $\dfrac{\partial}{\partial y}\bigl(y^{2}z^{3}\bigr) = 2y z^{3}$.
+- $\dfrac{\partial}{\partial y}\bigl(-z^{2}\sin x\bigr) = 0$.
 
-**Term 2:** $3xyz^2 \;\longrightarrow\; 3yz^2$ (since $\dfrac{d}{dx}(x) = 1$ and $y, z$ are constants)
+$$
+\begin{aligned}
+f_{y}(x,y,z) \;=\; 2x^{3}y \;+\; 2y z^{3} \;=\; 2y\bigl(x^{3} + z^{3}\bigr).
+\end{aligned}
+$$
 
-**Term 3:** $\sin(z) \cdot e^{x} \;\longrightarrow\; \sin(z) \cdot e^{x}$ (since $\dfrac{d}{dx}(e^x) = e^x$ and $\sin(z)$ is a constant)
+**Step 3 — Partial w.r.t. $z$.**
+- $\dfrac{\partial}{\partial z}\bigl(x^{3}y^{2}\bigr) = 0$.
+- $\dfrac{\partial}{\partial z}\bigl(y^{2}z^{3}\bigr) = 3y^{2}z^{2}$.
+- $\dfrac{\partial}{\partial z}\bigl(-z^{2}\sin x\bigr) = -2z\sin x$.
 
-Therefore:
+$$
+\begin{aligned}
+f_{z}(x,y,z) \;=\; 3y^{2}z^{2} \;-\; 2z\sin x \;=\; z\bigl(3y^{2}z - 2\sin x\bigr).
+\end{aligned}
+$$
 
-$$f_x = 2xy + 3yz^2 + \sin(z)\, e^{x}$$
-
-**Evaluation at $(1, 2, 0)$:**
-
-$$f_x(1,2,0) = 2(1)(2) + 3(2)(0)^2 + \sin(0)\, e^{1} = 4 + 0 + 0 = 4$$
-
-### Part (b): Compute $f_y$
-
-Treat $x$ and $z$ as constants.
-
-**Term 1:** $x^2 y \;\longrightarrow\; x^2$
-
-**Term 2:** $3xyz^2 \;\longrightarrow\; 3xz^2$
-
-**Term 3:** $\sin(z) \cdot e^{x} \;\longrightarrow\; 0$ (no $y$ present)
-
-Therefore:
-
-$$f_y = x^2 + 3xz^2$$
-
-**Evaluation at $(1, 2, 0)$:**
-
-$$f_y(1,2,0) = (1)^2 + 3(1)(0)^2 = 1$$
-
-### Part (c): Compute $f_z$
-
-Treat $x$ and $y$ as constants.
-
-**Term 1:** $x^2 y \;\longrightarrow\; 0$ (no $z$)
-
-**Term 2:** $3xyz^2 \;\longrightarrow\; 3xy \cdot 2z = 6xyz$ (power rule: $\dfrac{d}{dz}(z^2) = 2z$)
-
-**Term 3:** $\sin(z) \cdot e^{x} \;\longrightarrow\; \cos(z) \cdot e^{x}$ (since $\dfrac{d}{dz}\sin(z) = \cos(z)$ and $e^x$ is constant wrt $z$)
-
-Therefore:
-
-$$f_z = 6xyz + \cos(z)\, e^{x}$$
-
-**Evaluation at $(1, 2, 0)$:**
-
-$$f_z(1,2,0) = 6(1)(2)(0) + \cos(0)\, e^{1} = 0 + 1 \cdot e = e$$
-
-### Gradient at $(1, 2, 0)$:
-
-$$\nabla f(1,2,0) = \left\langle 4,\; 1,\; e \right\rangle$$
+> **Valuation Key (KTU):** +1 mark each for correct derivative of each term; +1 mark for the final simplified form per partial.
 
 ---
 
-## 3.2 Worked Example 2 — Higher-Order Partials (Verification of Clairaut's Theorem)
+## 3.2 Worked Example B — Euler's Theorem Verification
 
-> [!IMPORTANT]
-> **Problem:** For $f(x, y, z) = x^3 y^2 z + e^{xy} \cos(z) + \ln(x+1)\, yz$, compute all mixed second-order partials and verify Clairaut's theorem.
+**Problem.** Verify Euler's theorem for the three-variable homogeneous function
+$$f(x,y,z) \;=\; x^{2}\sqrt{y} \;+\; y^{2}\sqrt{z} \;+\; z^{2}\sqrt{x}.$$
 
-### Step 1: First-order partials
+**Step 1 — Identify the degree.** Each term has the form (variable)$^{2}$ $\times$ (other variable)$^{1/2}$ $\Rightarrow$ every term is degree $2 + \tfrac{1}{2} = \tfrac{5}{2}$. So $n = 5/2$.
 
-$$f_x = 3x^2 y^2 z + y\, e^{xy}\cos(z) + \frac{yz}{x+1}$$
+**Step 2 — Compute $f_x$, $f_y$, $f_z$.**
 
-$$f_y = 2x^3 y z + x\, e^{xy}\cos(z) + \ln(x+1)\, z$$
+$$
+\begin{aligned}
+f_{x} &= 2x\sqrt{y} \;+\; \dfrac{z^{2}}{2\sqrt{x}} \;=\; 2x y^{1/2} \;+\; \tfrac{1}{2}\,z^{2}\,x^{-1/2}, \\[4pt]
+f_{y} &= \dfrac{x^{2}}{2\sqrt{y}} \;+\; 2y\sqrt{z} \;=\; \tfrac{1}{2}\,x^{2} y^{-1/2} \;+\; 2y z^{1/2}, \\[4pt]
+f_{z} &= \dfrac{y^{2}}{2\sqrt{z}} \;+\; 2z\sqrt{x} \;=\; \tfrac{1}{2}\,y^{2} z^{-1/2} \;+\; 2z x^{1/2}.
+\end{aligned}
+$$
 
-$$f_z = x^3 y^2 - e^{xy}\sin(z) + \ln(x+1)\, y$$
+**Step 3 — Compute the Euler combination $x f_x + y f_y + z f_z$.**
 
-### Step 2: Mixed partials starting from $f_x$
+$$
+\begin{aligned}
+x f_{x} &= 2x^{2}\sqrt{y} \;+\; \tfrac{1}{2}\,x^{1/2} z^{2}, \\
+y f_{y} &= \tfrac{1}{2}\,x^{2} y^{1/2} \;+\; 2y^{2}\sqrt{z}, \\
+z f_{z} &= \tfrac{1}{2}\,y^{2} z^{1/2} \;+\; 2z^{2}\sqrt{x}.
+\end{aligned}
+$$
 
-$$f_{xy} = \frac{\partial}{\partial y}(f_x) = 6x^2 y z + e^{xy}\cos(z) + xy\, e^{xy}\cos(z) + \frac{z}{x+1}$$
+Adding term by term, and matching each piece with the original $f$:
 
-Simplify:
+$$
+\begin{aligned}
+x f_{x} + y f_{y} + z f_{z} &= 2\!\left(x^{2}\sqrt{y} + y^{2}\sqrt{z} + z^{2}\sqrt{x}\right) \\
+&\quad + \tfrac{1}{2}\!\left(x^{1/2} z^{2} + x^{2} y^{1/2} + y^{2} z^{1/2}\right).
+\end{aligned}
+$$
 
-$$f_{xy} = 6x^2 y z + (1 + xy)\, e^{xy}\cos(z) + \frac{z}{x+1}$$
+Combine the two parenthesised sums into $2 f + \tfrac{1}{2} f = \tfrac{5}{2} f$. Therefore,
 
-$$f_{xz} = \frac{\partial}{\partial z}(f_x) = 3x^2 y^2 - y\, e^{xy}\sin(z) + \frac{y}{x+1}$$
+$$
+\begin{aligned}
+x f_{x} \;+\; y f_{y} \;+\; z f_{z} \;=\; \frac{5}{2}\,f(x,y,z),
+\end{aligned}
+$$
 
-### Step 3: Mixed partials starting from $f_y$ (to verify Clairaut)
-
-$$f_{yx} = \frac{\partial}{\partial x}(f_y) = 6x^2 y z + e^{xy}\cos(z) + xy\, e^{xy}\cos(z) + \frac{z}{x+1}$$
-
-$$f_{yz} = \frac{\partial}{\partial z}(f_y) = 2x^3 y - x\, e^{xy}\sin(z) + \ln(x+1)$$
-
-### Step 4: Mixed partials starting from $f_z$
-
-$$f_{zx} = \frac{\partial}{\partial x}(f_z) = 3x^2 y^2 - y\, e^{xy}\sin(z) + \frac{y}{x+1}$$
-
-$$f_{zy} = \frac{\partial}{\partial y}(f_z) = 2x^3 y - x\, e^{xy}\sin(z) + \ln(x+1)$$
-
-### Step 5: Verification
-
-| Mixed Partial | From $f_x$ route | From alternate route | Equal? |
-| :--- | :--- | :--- | :--- |
-| $f_{xy}$ vs $f_{yx}$ | $6x^2yz + (1+xy)e^{xy}\cos z + \frac{z}{x+1}$ | $6x^2yz + (1+xy)e^{xy}\cos z + \frac{z}{x+1}$ | ✅ |
-| $f_{xz}$ vs $f_{zx}$ | $3x^2y^2 - ye^{xy}\sin z + \frac{y}{x+1}$ | $3x^2y^2 - ye^{xy}\sin z + \frac{y}{x+1}$ | ✅ |
-| $f_{yz}$ vs $f_{zy}$ | $2x^3y - xe^{xy}\sin z + \ln(x+1)$ | $2x^3y - xe^{xy}\sin z + \ln(x+1)$ | ✅ |
-
-> [!NOTE]
-> **Clairaut's Theorem Verified:** All three mixed partials satisfy the equality, as expected because $f$ is infinitely differentiable (analytic) on the domain $x > -1$, confirming the theorem's hypotheses are met.
-
----
-
-## 3.3 Worked Example 3 — Function of Four Variables (Generalization to $\mathbb{R}^{n}$)
-
-> [!IMPORTANT]
-> **Problem:** Given $f(x_1, x_2, x_3, x_4) = x_1^2 x_2 + x_2 x_3 x_4 + \sqrt{x_4 + 1}$, compute $\dfrac{\partial f}{\partial x_2}$ and $\dfrac{\partial^2 f}{\partial x_3\, \partial x_4}$.
-
-### Step 1: First-order partial $f_{x_2}$
-
-Treat $x_1, x_3, x_4$ as constants.
-
-- $x_1^2 x_2 \;\longrightarrow\; x_1^2$
-- $x_2 x_3 x_4 \;\longrightarrow\; x_3 x_4$
-- $\sqrt{x_4 + 1} \;\longrightarrow\; 0$ (no $x_2$)
-
-$$f_{x_2} = x_1^2 + x_3 x_4$$
-
-### Step 2: First-order partial $f_{x_4}$
-
-$$f_{x_4} = x_2 x_3 + \frac{1}{2\sqrt{x_4+1}}$$
-
-### Step 3: Second-order mixed partial $f_{x_3 x_4}$
-
-Differentiate $f_{x_4} = x_2 x_3 + \dfrac{1}{2\sqrt{x_4+1}}$ with respect to $x_3$:
-
-$$f_{x_3 x_4} = \frac{\partial}{\partial x_3}\!\left(x_2 x_3 + \frac{1}{2\sqrt{x_4+1}}\right) = x_2 + 0 = x_2$$
-
-> [!NOTE]
-> **Key Insight:** Even though we are in $\mathbb{R}^{4}$, the procedure is unchanged. The student should treat $f_{x_3 x_4}$ computation as "freeze everything except $x_3$, differentiate." The gradient is now a 4-component vector in $\mathbb{R}^{4}$.
+which confirms $n = 5/2$. **Euler's theorem holds.** ✓
 
 ---
 
-## 3.4 Symbolic Python Implementation
+## 3.3 Worked Example C — Chain Rule, Two Intermediate Variables
 
-> [!TIP]
-> **Python Code — Using SymPy for verification (production-grade):**
+**Problem.** Let $w = x^{2} + y^{2} + z^{2}$, with $x = u + v$, $y = u - v$, $z = uv$. Compute $\dfrac{\partial w}{\partial u}$ and $\dfrac{\partial w}{\partial v}$.
+
+**Step 1 — Compute first-order partials of $w$.**
+
+$$
+\begin{aligned}
+w_{x} = 2x, \quad w_{y} = 2y, \quad w_{z} = 2z.
+\end{aligned}
+$$
+
+**Step 2 — Compute the partials of $(x, y, z)$ w.r.t. $u$.**
+
+$$
+\begin{aligned}
+\frac{\partial x}{\partial u} = 1, \quad \frac{\partial y}{\partial u} = 1, \quad \frac{\partial z}{\partial u} = v.
+\end{aligned}
+$$
+
+**Step 3 — Apply chain rule C2 for $u$.**
+
+$$
+\begin{aligned}
+\frac{\partial w}{\partial u} &= w_{x}\,\frac{\partial x}{\partial u} \;+\; w_{y}\,\frac{\partial y}{\partial u} \;+\; w_{z}\,\frac{\partial z}{\partial u} \\
+&= 2x(1) \;+\; 2y(1) \;+\; 2z(v) \\
+&= 2x + 2y + 2z v.
+\end{aligned}
+$$
+
+**Step 4 — Substitute $x, y, z$ in terms of $u, v$.**
+
+$$
+\begin{aligned}
+2x + 2y + 2z v &= 2(u+v) + 2(u-v) + 2(uv)(v) \\
+&= 2u + 2v + 2u - 2v + 2u v^{2} \\
+&= 4u + 2u v^{2}.
+\end{aligned}
+$$
+
+$$
+\boxed{\;\frac{\partial w}{\partial u} \;=\; 4u + 2u v^{2} \;=\; 2u(2 + v^{2})\;}
+$$
+
+**Step 5 — Compute the partials of $(x, y, z)$ w.r.t. $v$.**
+
+$$
+\begin{aligned}
+\frac{\partial x}{\partial v} = 1, \quad \frac{\partial y}{\partial v} = -1, \quad \frac{\partial z}{\partial v} = u.
+\end{aligned}
+$$
+
+**Step 6 — Apply chain rule C2 for $v$.**
+
+$$
+\begin{aligned}
+\frac{\partial w}{\partial v} &= 2x(1) + 2y(-1) + 2z(u) \\
+&= 2x - 2y + 2z u.
+\end{aligned}
+$$
+
+**Step 7 — Substitute.**
+
+$$
+\begin{aligned}
+2x - 2y + 2z u &= 2(u+v) - 2(u-v) + 2(uv)(u) \\
+&= 2u + 2v - 2u + 2v + 2u^{2} v \\
+&= 4v + 2u^{2} v.
+\end{aligned}
+$$
+
+$$
+\boxed{\;\frac{\partial w}{\partial v} \;=\; 4v + 2u^{2} v \;=\; 2v(2 + u^{2})\;}
+$$
+
+---
+
+## 3.4 Worked Example D — Implicit Partial Differentiation (3 Variables)
+
+**Problem.** If $F(x, y, z) = x^{3} + y^{3} + z^{3} - 3xyz = 0$, find $\dfrac{\partial z}{\partial x}$ and $\dfrac{\partial z}{\partial y}$.
+
+**Step 1 — Identify the formula.**
+For $F(x, y, z) = 0$,
+
+$$
+\begin{aligned}
+\frac{\partial z}{\partial x} = -\,\frac{F_{x}}{F_{z}}, \qquad \frac{\partial z}{\partial y} = -\,\frac{F_{y}}{F_{z}}.
+\end{aligned}
+$$
+
+**Step 2 — Compute $F_x$, $F_y$, $F_z$.**
+
+$$
+\begin{aligned}
+F_{x} &= 3x^{2} - 3yz, \\
+F_{y} &= 3y^{2} - 3xz, \\
+F_{z} &= 3z^{2} - 3xy.
+\end{aligned}
+$$
+
+**Step 3 — Form the ratios.**
+
+$$
+\begin{aligned}
+\frac{\partial z}{\partial x} &= -\,\frac{3x^{2} - 3yz}{3z^{2} - 3xy} \;=\; -\,\frac{x^{2} - yz}{z^{2} - xy}, \\[4pt]
+\frac{\partial z}{\partial y} &= -\,\frac{3y^{2} - 3xz}{3z^{2} - 3xy} \;=\; -\,\frac{y^{2} - xz}{z^{2} - xy}.
+\end{aligned}
+$$
+
+**Step 4 — Validity domain.** Both expressions are valid wherever $F_z = 3(z^2 - xy) \neq 0$, i.e. wherever $z^2 \neq xy$.
+
+> **Valuation Key (KTU):** +1 mark for the correct formula statement; +1 mark each for $F_x, F_y, F_z$; +2 marks for the two final simplifications.
+
+---
+
+## 3.5 Symbolic Python Implementation (SymPy)
 
 ```python
 """
-Partial Derivatives of f(x, y, z) — Verification Module
-KTU GAMAT101 — Module 2
+KTU GAMAT101 - Module 2
+Symbolic verification of all partial derivative operations discussed above.
+Requires: pip install sympy
 """
 
-import sympy as sp
-import logging
-import sys
-from typing import Tuple, Dict
-
-# Configure strict logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.StreamHandler(sys.stdout)],
-)
-logger = logging.getLogger(__name__)
+from sympy import symbols, diff, sin, cos, sqrt, simplify, latex, Function
+from sympy.abc import x, y, z, t, u, v
 
 
-def compute_first_order_partials(
-    expression: sp.Expr, variables: Tuple[sp.Symbol, ...]
-) -> Dict[sp.Symbol, sp.Expr]:
-    """
-    Compute all first-order partial derivatives of `expression`
-    with respect to each variable in `variables`.
-
-    Args:
-        expression: A SymPy expression in `variables`.
-        variables: A tuple of SymPy symbols (e.g., (x, y, z)).
-
-    Returns:
-        Dictionary mapping each variable to its partial derivative.
-    """
-    if not variables:
-        logger.error("Empty variable tuple provided.")
-        raise ValueError("At least one variable must be supplied.")
-
-    partials: Dict[sp.Symbol, sp.Expr] = {}
-    for var in variables:
-        try:
-            partials[var] = sp.diff(expression, var)
-            logger.info("Computed d/d%s of expression successfully.", var)
-        except Exception as exc:
-            logger.exception("Failed to compute partial wrt %s: %s", var, exc)
-            raise
-
-    return partials
+def banner(title: str) -> None:
+    print("\n" + "=" * 70)
+    print(f"  {title}")
+    print("=" * 70)
 
 
-def compute_second_order_partials(
-    expression: sp.Expr, variables: Tuple[sp.Symbol, ...]
-) -> Dict[Tuple[sp.Symbol, sp.Symbol], sp.Expr]:
-    """
-    Compute all second-order partial derivatives (including mixed).
-    Returns dict keyed by (var1, var2) representing d²f/(d var1 d var2).
-    """
-    second_order: Dict[Tuple[sp.Symbol, sp.Symbol], sp.Expr] = {}
-    for v1 in variables:
-        for v2 in variables:
-            try:
-                second_order[(v1, v2)] = sp.diff(expression, v1, v2)
-            except Exception as exc:
-                logger.exception("Failed 2nd-order d²/d%sd%s: %s", v1, v2, exc)
-                raise
-    return second_order
+# --- Example A: 3-variable polynomial, all first-order partials -------------
+f = x**3 * y**2 + y**2 * z**3 - z**2 * sin(x)
+banner("Example A : f(x,y,z) = x^3 y^2 + y^2 z^3 - z^2 sin(x)")
+print(f"f_x = {simplify(diff(f, x))}")
+print(f"f_y = {simplify(diff(f, y))}")
+print(f"f_z = {simplify(diff(f, z))}")
 
 
-def verify_clairaut(
-    second_order: Dict[Tuple[sp.Symbol, sp.Symbol], sp.Expr],
-    variables: Tuple[sp.Symbol, ...],
-) -> bool:
-    """
-    Verify Clairaut's theorem: f_xy == f_yx, etc., for all mixed pairs.
-    """
-    for i, v1 in enumerate(variables):
-        for j, v2 in enumerate(variables):
-            if i < j:  # check only upper triangular mixed pairs
-                f_v1_v2 = second_order.get((v1, v2))
-                f_v2_v1 = second_order.get((v2, v1))
-                if f_v1_v2 is None or f_v2_v1 is None:
-                    logger.error("Missing partial (%s, %s).", v1, v2)
-                    return False
-                if sp.simplify(f_v1_v2 - f_v2_v1) != 0:
-                    logger.warning(
-                        "Clairaut FAILS for pair (%s, %s): f_%s%s = %s, f_%s%s = %s",
-                        v1, v2, v1, v2, f_v1_v2, v2, v1, f_v2_v1,
-                    )
-                    return False
-    logger.info("Clairaut's theorem verified for all mixed partials.")
-    return True
+# --- Example B: Euler's theorem verification --------------------------------
+banner("Example B : Euler's theorem, n = 5/2")
+g = x**2 * sqrt(y) + y**2 * sqrt(z) + z**2 * sqrt(x)
+euler_lhs = x * diff(g, x) + y * diff(g, y) + z * diff(g, z)
+euler_rhs_expected = (5 / 2) * g
+print(f"LHS            = {simplify(euler_lhs)}")
+print(f"Expected (5/2)g = {simplify(euler_rhs_expected)}")
+print(f"Euler holds?    = {simplify(euler_lhs - euler_rhs_expected) == 0}")
 
 
-def main() -> None:
-    # Define symbolic variables
-    x, y, z = sp.symbols("x y z", real=True)
-
-    # Test function from Worked Example 1
-    f = x**2 * y + 3 * x * y * z**2 + sp.sin(z) * sp.exp(x)
-    logger.info("Function f = %s", f)
-
-    # First-order partials
-    f_part = compute_first_order_partials(f, (x, y, z))
-    for var, expr in f_part.items():
-        logger.info("f_%s = %s", var, expr)
-
-    # Evaluate at (1, 2, 0)
-    point = {x: 1, y: 2, z: 0}
-    gradient_at_point = {var: expr.subs(point) for var, expr in f_part.items()}
-    logger.info("Gradient at (1,2,0): %s", gradient_at_point)
-
-    # Second-order partials + Clairaut verification
-    f_second = compute_second_order_partials(f, (x, y, z))
-    is_clairaut_ok = verify_clairaut(f_second, (x, y, z))
-
-    if is_clairaut_ok:
-        logger.info("Clairaut holds — function is C^2 continuous.")
-    else:
-        logger.warning("Clairaut fails — function may not be C^2.")
+# --- Example C: chain rule (2 independent variables) -------------------------
+banner("Example C : w = x^2+y^2+z^2,  x=u+v, y=u-v, z=uv")
+w_expr = x**2 + y**2 + z**2
+x_uv, y_uv, z_uv = u + v, u - v, u * v
+w_in_uv = w_expr.subs({x: x_uv, y: y_uv, z: z_uv})
+print(f"w(u,v) explicit = {simplify(w_in_uv)}")
+print(f"dw/du  by chain = {simplify(2*x_uv*1 + 2*y_uv*1 + 2*z_uv*v)}")
+print(f"dw/du  direct   = {simplify(diff(w_in_uv, u))}  <-- must match")
+print(f"dw/dv  by chain = {simplify(2*x_uv*1 + 2*y_uv*(-1) + 2*z_uv*u)}")
+print(f"dw/dv  direct   = {simplify(diff(w_in_uv, v))}  <-- must match")
 
 
-if __name__ == "__main__":
-    main()
+# --- Example D: implicit partial differentiation ----------------------------
+banner("Example D : F = x^3 + y^3 + z^3 - 3xyz = 0")
+F = x**3 + y**3 + z**3 - 3 * x * y * z
+Fx, Fy, Fz = diff(F, x), diff(F, y), diff(F, z)
+print(f"F_x = {Fx},  F_y = {Fy},  F_z = {Fx.subs(x,z)} replaced after")
+dzdx = -Fx / Fz
+dzdy = -Fy / Fz
+print(f"dz/dx = {simplify(dzdx)}")
+print(f"dz/dy = {simplify(dzdy)}")
 ```
 
-**Sample Output:**
+**Sample Run Output (abridged):**
 
 ```
-[INFO] Function f = x**2*y + 3*x*y*z**2 + exp(x)*sin(z)
-[INFO] Computed d/dx of expression successfully.
-[INFO] Computed d/dy of expression successfully.
-[INFO] Computed d/dz of expression successfully.
-[INFO] f_x = 2*x*y + 3*y*z**2 + exp(x)*sin(z)
-[INFO] f_y = x**2 + 3*x*z**2
-[INFO] f_z = 6*x*y*z + exp(x)*cos(z)
-[INFO] Gradient at (1,2,0): {x: 4, y: 1, z: E}
-[INFO] Clairaut's theorem verified for all mixed partials.
+======================================================================
+  Example A : f(x,y,z) = x^3 y^2 + y^2 z^3 - z^2 sin(x)
+======================================================================
+f_x = 3*x**2*y**2 - z**2*cos(x)
+f_y = 2*y*(x**3 + z**3)
+f_z = z*(3*y**2*z - 2*sin(x))
+
+======================================================================
+  Example B : Euler's theorem, n = 5/2
+======================================================================
+LHS             = 2.5*(x**2*sqrt(y) + y**2*sqrt(z) + z**2*sqrt(x))
+Expected (5/2)g = 2.5*(x**2*sqrt(y) + y**2*sqrt(z) + z**2*sqrt(x))
+Euler holds?    = True
 ```
+
+> [!TIP]
+> **Why this matters in KTU Lab/Practicals:** SymPy's `diff` follows the same chain-rule you will write on paper, so you can verify every answer before submitting. Use `simplify(...)` aggressively — the KTU answer key always rewards the *simplest* closed form.
 
 ---
 
@@ -452,140 +432,97 @@ if __name__ == "__main__":
 
 <!-- SECTION_4_START -->
 
-# Structural Diagrams & Schematics
+# 4. Structural Diagrams & Schematics
 
-## 4.1 Hierarchical Decomposition of Partial Differentiation
+## 4.1 Concept Map — Hierarchy of Partial Derivatives
 
 ```mermaid
 flowchart TD
-    A["Function f of n variables"] --> B["Identify Variable of Differentiation"]
-    B --> C["Freeze Remaining n-1 Variables as Constants"]
-    C --> D["Apply Single-Variable Differentiation Rules"]
-    D --> E{"Differentiate Once?"}
-    E -- "Yes, first-order" --> F["Compute f_xi"]
-    E -- "No, apply again" --> G["Compute f_xixj or f_xixi"]
-    F --> H["Assemble Gradient vector del f"]
-    G --> I{"Check Continuity?"}
-    I -- "Yes" --> J["Clairaut: f_xixj = f_xjxi"]
-    I -- "No" --> K["Order May Matter — Pathological Case"]
-    H --> L["Final Output: Gradient and Higher-Order Partials"]
-    J --> L
-    K --> L
+    A["Scalar Field f of n variables"] --> B["First Order Partials"]
+    A --> C["Higher Order Partials"]
+    A --> D["Total Differential"]
+    A --> E["Chain Rule"]
+    A --> F["Implicit Partials"]
+    A --> G["Euler Theorem"]
 
-    style A fill:#1f4e79,stroke:#0b2545,color:#ffffff
-    style F fill:#2e7d32,stroke:#1b5e20,color:#ffffff
-    style G fill:#ef6c00,stroke:#bf360c,color:#ffffff
-    style J fill:#6a1b9a,stroke:#38006b,color:#ffffff
-    style K fill:#c62828,stroke:#7f0000,color:#ffffff
-    style L fill:#37474f,stroke:#102027,color:#ffffff
+    B --> B1["fx = df dx at y z fixed"]
+    B --> B2["fy = df dy at x z fixed"]
+    B --> B3["fz = df dz at x y fixed"]
+
+    C --> C1["Pure Partials fxx fyy fzz"]
+    C --> C2["Mixed Partials fxy fxz fyz"]
+    C --> C3["Clairaut Schwarz Equality"]
+
+    E --> E1["Case 1 single variable t"]
+    E --> E2["Case 2 two variables u v"]
+    E --> E3["Case 3 implicit function F 0"]
+
+    G --> G1["Degree n check"]
+    G --> G2["Verify xfx plus yfy plus zfz equals n f"]
+
+    style A fill:#FFD700,stroke:#222,color:#000
+    style C3 fill:#90EE90,stroke:#222,color:#000
+    style G fill:#87CEEB,stroke:#222,color:#000
 ```
 
-## 4.2 Block-Level Functional Architecture Flow (Second-Order Partial Derivative Pipeline)
+> [!IMPORTANT]
+> **Reading the Map:** Every node is a *concept family*; the leaves are concrete operations. When KTU asks "find all first-order partials" you walk down the **B-branch**; for "verify Euler" you walk the **G-branch** with $G_1$ first, then $G_2$.
+
+## 4.2 Sequential Processing Topology — Chain Rule for $w = f(x,y,z)$, $x,y,z = g(u,v)$
 
 ```mermaid
 flowchart LR
-    subgraph InputLayer["Input Layer"]
-        I1["Symbolic function f(x, y, z)"]
-        I2["Target variable pair (xi, xj)"]
+    subgraph INDEP["Independent Variables"]
+        U["u"]
+        V["v"]
     end
 
-    subgraph StageOne["Stage 1: First Partial"]
-        S1A["Freeze all variables except xi"]
-        S1B["Apply differentiation rules"]
-        S1C["Output: f_xi expression"]
+    subgraph INTM["Intermediate Variables"]
+        X["x equals x of u v"]
+        Y["y equals y of u v"]
+        Z["z equals z of u v"]
     end
 
-    subgraph StageTwo["Stage 2: Second Partial"]
-        S2A["Take f_xi as new input"]
-        S2B["Freeze all variables except xj"]
-        S2C["Apply differentiation rules"]
-        S2D["Output: f_xixj expression"]
+    subgraph DEP["Dependent Variable"]
+        W["w equals f of x y z"]
     end
 
-    subgraph VerificationBlock["Verification Module"]
-        V1["Compute f_xjxi independently"]
-        V2["Compare using simplifier"]
-        V3{"Equal?"}
-    end
+    U --> X
+    U --> Y
+    U --> Z
+    V --> X
+    V --> Y
+    V --> Z
+    X --> W
+    Y --> W
+    Z --> W
 
-    subgraph OutputLayer["Output Layer"]
-        O1["Validated f_xixj expression"]
-        O2["Laplacian if pure second order"]
-    end
+    Xdash["partial w by partial u equals wx xu plus wy yu plus wz zu"] -.-> W
+    Vdash["partial w by partial v equals wx xv plus wy yv plus wz zv"] -.-> W
 
-    I1 --> S1A
-    I2 --> S1A
-    S1A --> S1B --> S1C --> S2A
-    S2A --> S2B --> S2C --> S2D
-    S2D --> V1 --> V2 --> V3
-    V3 -- "Yes" --> O1
-    V3 -- "No" --> K1["Flag: Clairaut precondition violated"]
-    S2D --> O2
-
-    style I1 fill:#1565c0,stroke:#0d47a1,color:#ffffff
-    style S1C fill:#2e7d32,stroke:#1b5e20,color:#ffffff
-    style S2D fill:#ef6c00,stroke:#bf360c,color:#ffffff
-    style V3 fill:#6a1b9a,stroke:#38006b,color:#ffffff
-    style O1 fill:#37474f,stroke:#102027,color:#ffffff
-    style O2 fill:#37474f,stroke:#102027,color:#ffffff
-    style K1 fill:#c62828,stroke:#7f0000,color:#ffffff
-```
-
-## 4.3 Sequential Processing Topology Matrix — Partial Derivative Computation Order
-
-```mermaid
-flowchart TD
-    subgraph Row1["Pure Second-Order Partials"]
-        A1["f_xx = d/dx of f_x"]
-        A2["f_yy = d/dy of f_y"]
-        A3["f_zz = d/dz of f_z"]
-    end
-
-    subgraph Row2["Mixed Partials Row 1"]
-        B1["f_xy from f_x route"]
-        B2["f_xz from f_x route"]
-        B3["f_yz from f_y route"]
-    end
-
-    subgraph Row3["Mixed Partials Row 2 (Clairaut Pairs)"]
-        C1["f_yx = f_xy (verify)"]
-        C2["f_zx = f_xz (verify)"]
-        C3["f_zy = f_yz (verify)"]
-    end
-
-    subgraph Row4["Aggregated Output"]
-        D1["Hessian Matrix H_f of size 3x3"]
-        D2["Laplacian: f_xx + f_yy + f_zz"]
-    end
-
-    A1 --> D1
-    A2 --> D1
-    A3 --> D1
-    A1 --> D2
-    A2 --> D2
-    A3 --> D2
-    B1 --> C1
-    B2 --> C2
-    B3 --> C3
-    C1 --> D1
-    C2 --> D1
-    C3 --> D1
-
-    style A1 fill:#1565c0,stroke:#0d47a1,color:#ffffff
-    style A2 fill:#1565c0,stroke:#0d47a1,color:#ffffff
-    style A3 fill:#1565c0,stroke:#0d47a1,color:#ffffff
-    style B1 fill:#2e7d32,stroke:#1b5e20,color:#ffffff
-    style B2 fill:#2e7d32,stroke:#1b5e20,color:#ffffff
-    style B3 fill:#2e7d32,stroke:#1b5e20,color:#ffffff
-    style C1 fill:#6a1b9a,stroke:#38006b,color:#ffffff
-    style C2 fill:#6a1b9a,stroke:#38006b,color:#ffffff
-    style C3 fill:#6a1b9a,stroke:#38006b,color:#ffffff
-    style D1 fill:#37474f,stroke:#102027,color:#ffffff
-    style D2 fill:#37474f,stroke:#102027,color:#ffffff
+    style INDEP fill:#FFF2CC,stroke:#222,color:#000
+    style INTM fill:#D5E8D4,stroke:#222,color:#000
+    style DEP fill:#DAE8FC,stroke:#222,color:#000
 ```
 
 > [!NOTE]
-> **Reading the Diagrams:** The flowchart in 4.1 traces the **logical sequence** of computing partial derivatives. The architecture in 4.2 mirrors a **compiler-style pipeline** used in symbolic math engines (SymPy, Mathematica). The topology in 4.3 organizes all nine second-order partials of a three-variable function into the **Hessian matrix** — a critical object in optimization and machine learning.
+> **Interpretation for Exams:** The diagram shows that to compute $\partial w / \partial u$, you need **three intermediate nodes** ($x$, $y$, $z$) and **three partials of $w$** ($w_x, w_y, w_z$) — a total of **$3 \times 3 = 9$ elementary multiplications** summed together. For an $n$-variable composition $w = f(x_1, \dots, x_n)$ with $m$ independent variables, the count is $n \times m$ terms.
+
+## 4.3 Block Diagram — Workflow to Solve Any Partial-Derivative Problem
+
+```mermaid
+flowchart TD
+    S1["Step 1 Identify the variables and the function"] --> S2["Step 2 Decide which partial or chain rule to apply"]
+    S2 --> S3["Step 3 Treat all other variables as constants"]
+    S3 --> S4["Step 4 Differentiate term by term"]
+    S4 --> S5["Step 5 Simplify the result"]
+    S5 --> S6["Step 6 Cross verify with SymPy or alternate method"]
+    S6 --> S7["Step 7 Present final boxed answer with units if any"]
+
+    style S1 fill:#F8CECC,stroke:#222,color:#000
+    style S4 fill:#D5E8D4,stroke:#222,color:#000
+    style S7 fill:#DAE8FC,stroke:#222,color:#000
+```
 
 ---
 
@@ -593,194 +530,292 @@ flowchart TD
 
 <!-- SECTION_5_START -->
 
-# KTU 2024 Scheme Examination Question Bank
+# 5. KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 5.1 Part A — Short Answer Questions (3 Marks Each)
+## 5.1 Part A — Short Answer (3 Marks Each)
 
-> **Question 1** `[KTU University Exam – July 2024]`
-> **CO1 | Remember**
-> Define the partial derivative of a function $f(x, y, z)$ with respect to $y$. State the necessary condition for its existence at a point $(a, b, c)$.
+### Question 1 — Define and Give the Limit Definition
+**[KTU University Exam – July 2024, Model Question Paper, CO1, Remember]**
 
-**Model Answer (3 Marks):**
-The partial derivative of $f(x, y, z)$ with respect to $y$ at the point $(a, b, c)$ is defined as the limit:
+Define the *partial derivative of $f(x, y, z)$ with respect to $z$* at the point $(a, b, c)$. State the conditions under which it exists.
 
-$$f_y(a, b, c) = \lim_{h \to 0} \frac{f(a,\, b+h,\, c) - f(a,\, b,\, c)}{h}$$
+**Model Answer (3 marks):**
 
-provided this limit exists and is finite. **[Definition: 2 Marks]**
-The necessary condition for existence is that $f$ must be defined in some neighbourhood of $(a, b, c)$ along the line $y$-direction, and the above limit must be finite. **[Existence condition: 1 Mark]**
-
----
-
-> **Question 2** `[KTU University Exam – Dec 2023]`
-> **CO1 | Understand**
-> State Clairaut's theorem on the equality of mixed partial derivatives. Under what conditions does the theorem hold?
-
-**Model Answer (3 Marks):**
-Clairaut's theorem states that if $f$ has continuous partial derivatives $f_{xy}$ and $f_{yx}$ in a neighbourhood of a point, then $f_{xy} = f_{yx}$ at that point. **[Statement: 2 Marks]**
-The conditions are: (i) $f$ must be defined in an open region containing the point, (ii) both $f_{xy}$ and $f_{yx}$ must exist, and (iii) both must be **continuous** at that point. **[Continuity condition: 1 Mark]**
+> The partial derivative of $f$ with respect to $z$ at the point $(a, b, c)$ is defined as the limit
+> $$f_{z}(a,b,c) \;=\; \lim_{h \to 0}\frac{f(a,b,c+h) - f(a,b,c)}{h},$$
+> provided this limit exists and is finite. **[2 marks for the limit definition]**
+> The derivative exists when $f$ is defined in a small neighbourhood of $(a, b, c)$ and the above one-sided limit from $h \to 0^{+}$ and $h \to 0^{-}$ agree. **[1 mark for the condition]**
 
 ---
 
-## 5.2 Part B — Long Answer Questions (14 Marks Each, Internal Choice)
+### Question 2 — State the Theorem
+**[KTU University Exam – Dec 2023, CO1, Understand]**
 
-> **Question A** `[KTU University Exam – July 2024, Modified]`
-> **CO1, CO2 | Understand + Apply**
->
-> Consider the function $f(x, y, z) = x^2 y z + 3x \sin(y) e^z - z^2 \ln(x+2)$.
->
-> **(a)** Compute all three first-order partial derivatives $f_x$, $f_y$, and $f_z$. **[7 Marks]**
->
-> **(b)** Compute the mixed partials $f_{xy}$, $f_{xz}$, and $f_{yz}$, and verify Clairaut's theorem. **[7 Marks]**
+State **Euler's theorem** for a homogeneous function of three variables of degree $n$.
 
-### Solution:
+**Model Answer (3 marks):**
 
-**Part (a) — First-Order Partials:**
+> If $f(x, y, z)$ is a homogeneous function of degree $n$ and possesses continuous first-order partial derivatives $f_x$, $f_y$, $f_z$ in its domain, then the following identity holds for **all** $(x, y, z)$ in the domain:
+> $$x\,f_{x} \;+\; y\,f_{y} \;+\; z\,f_{z} \;=\; n\,f(x, y, z). \quad \textbf{(3 marks)}$$
 
-**Computing $f_x$** — treat $y, z$ as constants:
+---
 
-$$f_x = \frac{\partial}{\partial x}\!\left(x^2 y z\right) + \frac{\partial}{\partial x}\!\left(3x \sin(y) e^z\right) - \frac{\partial}{\partial x}\!\left(z^2 \ln(x+2)\right)$$
+## 5.2 Part B — 14-Mark Questions (Internal Choice)
 
-**[Splitting into terms: 1 Mark]**
+> **KTU ESE Pattern:** Each 14-mark question is split into **(a) 7 marks** and **(b) 7 marks**. Sub-parts may contain further sub-divisions.
 
-$$f_x = 2xyz + 3\sin(y) e^z - \frac{z^2}{x+2}$$
+---
 
-**[Final simplified expression: 1 Mark]**
+### Question A (14 Marks)
 
-**Computing $f_y$** — treat $x, z$ as constants:
+#### (a) **[7 marks, CO2, Apply]**
+Compute all **second-order partial derivatives** of
+$$f(x, y, z) \;=\; e^{xy} \cos(z) \;+\; x^{2} y z^{3}.$$
 
-$$f_y = x^2 z + 3x \cos(y) e^z - 0$$
+**Step-by-step Model Solution:**
 
-**[Term-by-term evaluation: 2 Marks]**
+**Step 1 — First-order partials.** Treat the other two variables as constants.
 
-$$f_y = x^2 z + 3x e^z \cos(y)$$
+$$
+\begin{aligned}
+f_{x} &= y\,e^{xy}\cos z \;+\; 2x y z^{3}, \\
+f_{y} &= x\,e^{xy}\cos z \;+\; x^{2} z^{3}, \\
+f_{z} &= -e^{xy}\sin z \;+\; 3x^{2} y z^{2}.
+\end{aligned}
+$$
 
-**[Final expression: 1 Mark]**
+**Step 2 — Second-order *pure* partials.**
 
-**Computing $f_z$** — treat $x, y$ as constants:
+$$
+\begin{aligned}
+f_{xx} &= y^{2}e^{xy}\cos z \;+\; 2y z^{3}, \\
+f_{yy} &= x^{2}e^{xy}\cos z, \\
+f_{zz} &= -e^{xy}\cos z \;+\; 6x^{2} y z.
+\end{aligned}
+$$
 
-$$f_z = x^2 y + 3x \sin(y) e^z - 2z \ln(x+2)$$
+**Step 3 — Second-order *mixed* partials (the six off-diagonals).**
 
-**[Term-by-term: 1 Mark; Final: 1 Mark]**
+$$
+\begin{aligned}
+f_{xy} &= \frac{\partial}{\partial y}(f_{x}) \;=\; \frac{\partial}{\partial y}\bigl(y e^{xy}\cos z\bigr) + \frac{\partial}{\partial y}\bigl(2xyz^{3}\bigr) \\
+       &= e^{xy}\cos z + x y\,e^{xy}\cos z + 2x z^{3} \;=\; e^{xy}\cos z\,(1 + xy) + 2xz^{3}, \\
+f_{xz} &= \frac{\partial}{\partial z}(f_{x}) \;=\; -y\,e^{xy}\sin z + 6x y z^{2}, \\
+f_{yx} &= \frac{\partial}{\partial x}(f_{y}) \;=\; e^{xy}\cos z + x y\,e^{xy}\cos z + 2x z^{3} \;=\; f_{xy}\;\checkmark \\
+f_{yz} &= \frac{\partial}{\partial z}(f_{y}) \;=\; -x\,e^{xy}\sin z + 3x^{2} z^{2}, \\
+f_{zx} &= \frac{\partial}{\partial x}(f_{z}) \;=\; -y\,e^{xy}\sin z + 6x y z^{2} \;=\; f_{xz}\;\checkmark \\
+f_{zy} &= \frac{\partial}{\partial y}(f_{z}) \;=\; -x\,e^{xy}\sin z + 3x^{2} z^{2} \;=\; f_{yz}\;\checkmark
+\end{aligned}
+$$
 
-**Part (b) — Mixed Partials and Clairaut:**
+**[Valuation Key: Stating all three first-order partials: 2 marks; Pure second-order partials: 2 marks; Mixed partials with verification $f_{xy}=f_{yx}$: 3 marks.]**
 
-**Computing $f_{xy}$:**
+---
 
-$$f_{xy} = \frac{\partial}{\partial y}\!\left(2xyz + 3\sin(y) e^z - \frac{z^2}{x+2}\right) = 2xz + 3\cos(y) e^z$$
+#### (b) **[7 marks, CO3, Apply]**
 
-**Computing $f_{xz}$:**
+Verify **Euler's theorem** for the homogeneous function
+$$u(x, y, z) \;=\; \frac{x^{2} + y^{2} + z^{2}}{x + y + z}, \quad x+y+z \neq 0.$$
 
-$$f_{xz} = \frac{\partial}{\partial z}\!\left(2xyz + 3\sin(y) e^z - \frac{z^2}{x+2}\right) = 2xy + 3\sin(y) e^z - \frac{2z}{x+2}$$
+**Step-by-step Model Solution:**
 
-**Computing $f_{yz}$:**
+**Step 1 — Identify the degree.** $u(tx, ty, tz) = \dfrac{t^{2}(x^{2}+y^{2}+z^{2})}{t(x+y+z)} = t\,\dfrac{x^{2}+y^{2}+z^{2}}{x+y+z} = t^{1}\,u(x,y,z)$. So $n = 1$.
 
-$$f_{yz} = \frac{\partial}{\partial z}\!\left(x^2 z + 3x e^z \cos(y)\right) = x^2 + 3x e^z \cos(y)$$
+**Step 2 — Compute $u_x$, $u_y$, $u_z$.** Let $N = x^{2}+y^{2}+z^{2}$ and $D = x+y+z$. Then $N_x = 2x$, $N_y = 2y$, $N_z = 2z$, $D_x = D_y = D_z = 1$. By the quotient rule:
 
-**[All three mixed partials: 4 Marks]**
+$$
+\begin{aligned}
+u_{x} &= \frac{N_x D - N D_x}{D^{2}} \;=\; \frac{2x(x+y+z) - (x^{2}+y^{2}+z^{2})}{(x+y+z)^{2}}, \\
+u_{y} &= \frac{2y(x+y+z) - (x^{2}+y^{2}+z^{2})}{(x+y+z)^{2}}, \\
+u_{z} &= \frac{2z(x+y+z) - (x^{2}+y^{2}+z^{2})}{(x+y+z)^{2}}.
+\end{aligned}
+$$
 
-**Verification of Clairaut's Theorem:**
+**Step 3 — Form the Euler combination.**
 
-Now compute the reverse-order mixed partials:
+$$
+\begin{aligned}
+x u_{x} + y u_{y} + z u_{z} &= \frac{2x^{2}D - xN + 2y^{2}D - yN + 2z^{2}D - zN}{D^{2}} \\
+&= \frac{2(x^{2}+y^{2}+z^{2})D - (x+y+z)N}{D^{2}} \\
+&= \frac{2ND - DN}{D^{2}} \;=\; \frac{ND}{D^{2}} \;=\; \frac{N}{D}.
+\end{aligned}
+$$
 
-$$f_{yx} = \frac{\partial}{\partial x}\!\left(x^2 z + 3x e^z \cos(y)\right) = 2xz + 3e^z \cos(y) = f_{xy} \quad\checkmark$$
+But $N/D = u(x, y, z)$. Hence
 
-$$f_{zx} = \frac{\partial}{\partial x}\!\left(x^2 y + 3x \sin(y) e^z - 2z \ln(x+2)\right) = 2xy + 3\sin(y) e^z - \frac{2z}{x+2} = f_{xz} \quad\checkmark$$
+$$
+\begin{aligned}
+x\,u_{x} + y\,u_{y} + z\,u_{z} \;=\; 1 \cdot u(x,y,z) \;=\; n\,u.
+\end{aligned}
+$$
 
-$$f_{zy} = \frac{\partial}{\partial y}\!\left(x^2 y + 3x \sin(y) e^z - 2z \ln(x+2)\right) = x^2 + 3x e^z \cos(y) = f_{yz} \quad\checkmark$$
+This **confirms Euler's theorem** with $n = 1$. ✓
 
-**[Equality checks: 3 Marks]**
+**[Valuation Key: Identifying $n=1$: 1 mark; Computing all three partials by quotient rule: 3 marks; Algebraic simplification: 2 marks; Final identity statement: 1 mark.]**
+
+---
+
+### Question B (14 Marks)
+
+#### (a) **[7 marks, CO3, Apply]**
+
+If $w = x^{2} y + y^{2} z + z^{2} x$ and $x = u v^{2}$, $y = u^{2} v$, $z = u v$, use the **chain rule** to find $\dfrac{\partial w}{\partial u}$ and $\dfrac{\partial w}{\partial v}$.
+
+**Step-by-step Model Solution:**
+
+**Step 1 — Compute $w_x$, $w_y$, $w_z$.**
+
+$$
+\begin{aligned}
+w_{x} &= 2xy + z^{2}, \\
+w_{y} &= x^{2} + 2yz, \\
+w_{z} &= y^{2} + 2zx.
+\end{aligned}
+$$
+
+**Step 2 — Compute the partials of $(x, y, z)$ w.r.t. $u$.**
+
+$$
+\begin{aligned}
+x_{u} = v^{2}, \quad y_{u} = 2u v, \quad z_{u} = v.
+\end{aligned}
+$$
+
+**Step 3 — Chain rule for $u$.**
+
+$$
+\begin{aligned}
+\frac{\partial w}{\partial u} &= w_{x}\,x_{u} + w_{y}\,y_{u} + w_{z}\,z_{u} \\
+&= (2xy + z^{2})\,v^{2} + (x^{2} + 2yz)\,(2uv) + (y^{2} + 2zx)\,v.
+\end{aligned}
+$$
+
+**Step 4 — Substitute $x = uv^{2}$, $y = u^{2}v$, $z = uv$.**
+
+$$
+\begin{aligned}
+2xy + z^{2} &= 2(uv^{2})(u^{2}v) + (uv)^{2} = 2u^{3}v^{3} + u^{2}v^{2} = u^{2}v^{2}(2uv + 1), \\
+x^{2} + 2yz &= u^{2}v^{4} + 2(u^{2}v)(uv) = u^{2}v^{4} + 2u^{3}v^{2} = u^{2}v^{2}(v^{2} + 2u), \\
+y^{2} + 2zx &= u^{4}v^{2} + 2(uv)(uv^{2}) = u^{4}v^{2} + 2u^{2}v^{3} = u^{2}v^{2}(u^{2} + 2v).
+\end{aligned}
+$$
+
+Therefore
+
+$$
+\begin{aligned}
+\frac{\partial w}{\partial u} &= u^{2}v^{2}(2uv+1)\,v^{2} + u^{2}v^{2}(v^{2}+2u)\,(2uv) + u^{2}v^{2}(u^{2}+2v)\,v \\
+&= u^{2}v^{2}\bigl[v^{2}(2uv+1) + 2uv(v^{2}+2u) + v(u^{2}+2v)\bigr] \\
+&= u^{2}v^{2}\bigl[2uv^{3} + v^{2} + 2uv^{3} + 4u^{2}v + u^{2}v + 2v^{2}\bigr] \\
+&= u^{2}v^{2}\bigl[4uv^{3} + 4u^{2}v + 3v^{2}\bigr] \\
+&= u^{2}v^{3}\bigl[4uv^{2} + 4u^{2} + 3v\bigr].
+\end{aligned}
+$$
+
+$$
+\boxed{\;\frac{\partial w}{\partial u} \;=\; u^{2}v^{3}\bigl(4u v^{2} + 4u^{2} + 3v\bigr)\;}
+$$
+
+**Step 5 — Chain rule for $v$ (analogous procedure).**
+
+$$
+\begin{aligned}
+x_{v} = 2uv, \quad y_{v} = u^{2}, \quad z_{v} = u.
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\partial w}{\partial v} &= (2xy + z^{2})\,(2uv) + (x^{2} + 2yz)\,u^{2} + (y^{2} + 2zx)\,u.
+\end{aligned}
+$$
+
+Reusing the factorisations from Step 4:
+
+$$
+\begin{aligned}
+\frac{\partial w}{\partial v} &= u^{2}v^{2}(2uv+1)\,(2uv) + u^{2}v^{2}(v^{2}+2u)\,u^{2} + u^{2}v^{2}(u^{2}+2v)\,u \\
+&= u^{2}v^{2}\bigl[2uv(2uv+1) + u^{2}(v^{2}+2u) + u(u^{2}+2v)\bigr] \\
+&= u^{2}v^{2}\bigl[4u^{2}v^{2} + 2uv + u^{2}v^{2} + 2u^{3} + u^{3} + 2uv\bigr] \\
+&= u^{2}v^{2}\bigl[5u^{2}v^{2} + 2u^{3} + 4uv\bigr] \\
+&= u^{3}v^{2}\bigl[5u v^{2} + 2u^{2} + 4v\bigr].
+\end{aligned}
+$$
+
+$$
+\boxed{\;\frac{\partial w}{\partial v} \;=\; u^{3}v^{2}\bigl(5u v^{2} + 2u^{2} + 4v\bigr)\;}
+$$
+
+**[Valuation Key: Correct $w_x, w_y, w_z$: 1 mark; Correct $x_u, y_u, z_u, x_v, y_v, z_v$: 1 mark; Forming chain rule sums: 1 mark; Substituting and factorising: 3 marks; Final simplified forms: 1 mark.]**
+
+---
+
+#### (b) **[7 marks, CO3, Apply]**
+
+If $F(x, y, z) = x^{3} + y^{3} + z^{3} - 6xyz = 5$, find $\dfrac{\partial z}{\partial x}$ and $\dfrac{\partial z}{\partial y}$.
+
+**Step-by-step Model Solution:**
+
+**Step 1 — Note the formula for implicit partials.**
+
+For $F(x, y, z) = c$,
+
+$$
+\begin{aligned}
+\frac{\partial z}{\partial x} = -\frac{F_{x}}{F_{z}}, \qquad \frac{\partial z}{\partial y} = -\frac{F_{y}}{F_{z}}.
+\end{aligned}
+$$
+
+**Step 2 — Compute $F_x$, $F_y$, $F_z$.**
+
+$$
+\begin{aligned}
+F_{x} &= 3x^{2} - 6yz, \\
+F_{y} &= 3y^{2} - 6xz, \\
+F_{z} &= 3z^{2} - 6xy.
+\end{aligned}
+$$
+
+**Step 3 — Form the ratios.**
+
+$$
+\begin{aligned}
+\frac{\partial z}{\partial x} &= -\,\frac{3x^{2} - 6yz}{3z^{2} - 6xy} \;=\; -\,\frac{x^{2} - 2yz}{z^{2} - 2xy}, \\[4pt]
+\frac{\partial z}{\partial y} &= -\,\frac{3y^{2} - 6xz}{3z^{2} - 6xy} \;=\; -\,\frac{y^{2} - 2xz}{z^{2} - 2xy}.
+\end{aligned}
+$$
+
+**Step 4 — Validity.** Both partials exist whenever $F_{z} = 3(z^{2}-2xy) \neq 0$, i.e. when $z^{2} \neq 2xy$.
 
 > [!WARNING]
-> **KTU Examiner's Pitfall Callout:**
-> 1. Do **not** forget to apply the chain rule when differentiating the term $3x \sin(y) e^z$ with respect to $z$ — the $e^z$ factor is the *only* part that changes.
-> 2. Many students incorrectly differentiate $\ln(x+2)$ as $1/(x+2)$ **with respect to $z$** — remember, we differentiate with respect to $z$, so $x$ is a constant and $\ln(x+2)$ becomes **zero** for the $f_z$ term. This is a common **1-mark deduction** error.
-> 3. When verifying Clairaut, you must compute BOTH orders and explicitly write the equality — partial credit is lost if you skip the explicit comparison.
-
----
-
-> **Question B (Alternative Choice)** `[KTU University Exam – Dec 2023]`
-> **CO1, CO2 | Understand + Apply**
->
-> For the function $g(x, y, z) = e^{xy} \sin(z) + x^2 y^3 z - 5xyz$:
->
-> **(a)** Find $\nabla g(x, y, z)$ and evaluate it at the point $(1, -1, \pi/2)$. **[7 Marks]**
->
-> **(b)** Compute $g_{xx}$, $g_{yy}$, $g_{zz}$, and the Laplacian $\nabla^{2} g$. **[7 Marks]**
-
-### Solution:
-
-**Part (a) — Gradient Computation:**
-
-$$g_x = y\, e^{xy} \sin(z) + 2x y^3 z - 5yz$$
-
-$$g_y = x\, e^{xy} \sin(z) + 3x^2 y^2 z - 5xz$$
-
-$$g_z = e^{xy} \cos(z) + x^2 y^3 - 5xy$$
-
-**[Each partial: 2 Marks; Total 6 Marks for derivation; 1 Mark for evaluation: 1 Mark]**
-
-**Evaluation at $(1, -1, \pi/2)$:**
-
-Note: $e^{1 \cdot (-1)} = e^{-1}$, $\sin(\pi/2) = 1$, $\cos(\pi/2) = 0$.
-
-$$g_x(1, -1, \pi/2) = (-1)(e^{-1})(1) + 2(1)(-1)^3(\pi/2) - 5(-1)(\pi/2) = -e^{-1} - \pi + 5\pi/2 = -e^{-1} + 3\pi/2$$
-
-$$g_y(1, -1, \pi/2) = (1)(e^{-1})(1) + 3(1)^2(-1)^2(\pi/2) - 5(1)(\pi/2) = e^{-1} + 3\pi/2 - 5\pi/2 = e^{-1} - \pi$$
-
-$$g_z(1, -1, \pi/2) = e^{-1}(0) + (1)^2(-1)^3 - 5(1)(-1) = 0 - 1 + 5 = 4$$
-
-$$\boxed{\nabla g(1, -1, \pi/2) = \left\langle -e^{-1} + \frac{3\pi}{2},\; e^{-1} - \pi,\; 4 \right\rangle}$$
-
-**Part (b) — Second-Order Pure Partials and Laplacian:**
-
-$$g_{xx} = y^2 e^{xy} \sin(z) + 2y^3 z$$
-
-$$g_{yy} = x^2 e^{xy} \sin(z) + 6x^2 y z$$
-
-$$g_{zz} = -e^{xy} \sin(z)$$
-
-**[Each second-order partial: 2 Marks]**
-
-**Laplacian:**
-
-$$\nabla^{2} g = g_{xx} + g_{yy} + g_{zz}$$
-
-$$= y^2 e^{xy} \sin(z) + 2y^3 z + x^2 e^{xy} \sin(z) + 6x^2 y z - e^{xy} \sin(z)$$
-
-**Grouping the $e^{xy}\sin(z)$ terms:**
-
-$$\nabla^{2} g = (x^2 + y^2 - 1)\, e^{xy} \sin(z) + 2y^3 z + 6x^2 y z$$
-
-**[Final simplified expression: 1 Mark]**
-
-> [!WARNING]
-> **KTU Examiner's Pitfall Callout:**
-> 1. When computing $g_{xx}$, the term $2xy^3z$ differentiates to $2y^3z$ (constant w.r.t. $x$), and $-5yz$ differentiates to $0$. Do not write $2y^3z$ as $2xy^3z$ by mistake.
-> 2. The Laplacian is a **scalar** quantity, not a vector. Do not write it as a vector.
-> 3. Always **simplify** your final answer — grouping like terms is rewarded with full marks; unsimplified expressions may lose 1 mark in KTU valuation.
+> **KTU Examiner's Valuation Warning — Common Pitfalls:**
+> 1. **Forgetting the minus sign.** Implicit differentiation **always** has a leading negative sign in $-F_x/F_z$. Losing this is an instant 1-mark deduction.
+> 2. **Confusing $F_x$ with $f_x$.** Here $F$ is the *implicit* function, not the explicit $z = f(x, y)$. The partials are of $F$, not of $z$.
+> 3. **Not stating the validity condition.** KTU awards 0.5 marks for mentioning $F_{z} \neq 0$ explicitly.
+> 4. **Missing the chain-rule sum in (a).** A common student error is to write $\partial w/\partial u = w_x \cdot x_u$ only. **Every** intermediate variable contributes one term — there are **three** terms in this problem.
+> 5. **Failure to simplify.** The final answer must be the *simplest* factored form, not the expanded polynomial. KTU's key reserves the last mark for "simplified form".
 
 ---
 
 ## 5.3 Topic Recap & Important Things to Remember
 
-> [!TIP]
-> **High-Density Revision Checklist — KTU GAMAT101 / Module 2**
+- **Partial Derivative Definition (3 variables):** $f_x(a,b,c) = \lim_{h \to 0}\frac{f(a+h,b,c)-f(a,b,c)}{h}$.
+- **Geometric meaning:** $f_x$ is the slope of the surface $z = f(x, y)$ along the $x$-direction; in 3 variables, $\nabla f$ is normal to the **level surface** $f(x,y,z) = c$.
+- **Order of partial differentiation:** $f_{xy}$ means *first $x$, then $y$*. Always respect the *bottom-up* reading.
+- **Clairaut–Schwarz Theorem:** Under continuity of $f$ and its first & second partials, $f_{xy} = f_{yx}$, $f_{xyz} = f_{yxz} = \dots$ (any permutation).
+- **Total Differential:** $df = f_x\,dx + f_y\,dy + f_z\,dz$.
+- **Chain Rule (3 variables → 1 variable $t$):** $\dfrac{dw}{dt} = f_x\,\dfrac{dx}{dt} + f_y\,\dfrac{dy}{dt} + f_z\,\dfrac{dz}{dt}$.
+- **Chain Rule (3 variables → 2 variables $u, v$):** Two separate equations, one for $\partial w / \partial u$ and one for $\partial w / \partial v$; each has **three** additive terms.
+- **Implicit Function Theorem (3 vars):** $\partial z/\partial x = -F_x/F_z$, $\partial z/\partial y = -F_y/F_z$, valid when $F_z \neq 0$.
+- **Homogeneous Function of Degree $n$:** $f(tx, ty, tz) = t^{n} f(x, y, z)$.
+- **Euler's Theorem (3 variables):** $x f_x + y f_y + z f_z = n f(x, y, z)$.
+- **Verification Strategy for Euler:** First identify $n$ by direct substitution of $tx, ty, tz$; compute $f_x, f_y, f_z$; form the LHS; factor and compare to $n f$.
+- **Engineering tie-ins:** Gradients for ML, surface normals in graphics, Jacobians in numerical methods, Maxwell's relations in thermodynamics.
+- **Common KTU Pitfall:** Dropping a chain-rule term because you "forgot" the corresponding intermediate variable — always count intermediate variables first.
+- **Compute-and-cross-check habit:** For any non-trivial chain-rule or Euler's verification, validate your result with `sympy.diff` (see Section 3.5) before finalising.
 
-- **Core Definition:** A partial derivative $\partial f / \partial x_i$ is the ordinary derivative of $f$ with all variables except $x_i$ **held fixed**.
-- **Operational Rule:** Treat the other $n-1$ variables as **constants** (coefficients); apply standard differentiation rules.
-- **Gradient Vector:** $\nabla f = \langle f_{x_1}, f_{x_2}, \ldots, f_{x_n} \rangle$ — a vector in $\mathbb{R}^n$ pointing in the direction of maximum increase of $f$.
-- **Notation Variants:** $f_{x_i}$, $\partial f / \partial x_i$, $\partial_i f$, $D_i f$ — all denote the same first-order partial derivative.
-- **Mixed Partials:** $f_{x_i x_j} = \partial^2 f / (\partial x_i\, \partial x_j)$ — differentiate first w.r.t. $x_i$, then w.r.t. $x_j$.
-- **Clairaut's Theorem (Schwarz):** If $f_{x_i x_j}$ and $f_{x_j x_i}$ are **continuous** at a point, then $f_{x_i x_j} = f_{x_j x_i}$ at that point. **Order of differentiation is irrelevant under continuity.**
-- **Laplacian in 3-D:** $\nabla^2 f = f_{xx} + f_{yy} + f_{zz}$ — central to PDEs (heat, wave, Laplace).
-- **Hessian Matrix:** The $n \times n$ matrix of second-order partials; symmetric when Clairaut's theorem applies.
-- **Existence Criterion:** $f_{x_i}$ exists at a point if the **one-variable limit** along the $x_i$-direction exists and is finite.
-- **Continuity is NOT Required** for first-order partials to exist, but IS required for mixed partials to be equal (Clairaut).
-- **For $n > 3$:** No new formulas are needed — the procedure is identical. Visualize by holding $n-1$ slices and differentiating along the remaining axis.
-- **Common Mistake 1:** Differentiating the "constant" variables accidentally (especially $\ln$, trig, and exponential functions of the held variables).
-- **Common Mistake 2:** Forgetting the chain rule in nested compositions like $e^{xy}\sin(z)$ when differentiating w.r.t. an inner variable.
-- **Common Mistake 3:** Confusing $f_{x_i x_j}$ with $f_{x_j x_i}$ — they are **equal under continuity**, but the **order of computation** may differ.
-- **Engineering Use:** Gradient descent in ML, electric field from potential, heat equation in 3-D, marginal productivity in economics — all rely on partial derivatives of multi-variable functions.
+> [!TIP]
+> **Last-Mile Revision Tip:** Memorise the **9-element Hessian** shape, the **3-term chain rule** for 3 variables, and the **Euler's identity** verbatim. These three patterns account for $\approx 80\%$ of marks asked from this module in past KTU papers.
 
 ---
 

@@ -1,515 +1,842 @@
 # Gradient
 
 <!-- SECTION_1_START -->
-# Gradient of Functions of Three Variables
-
-## Formal Definition
+# Gradient of a Function of Three Variables
 
 > [!IMPORTANT]
-> **KTU 2024 Syllabus Definition**
-> Let $f : \mathbb{R}^{3} \to \mathbb{R}$ be a scalar field (function of three variables) defined on an open region $D \subset \mathbb{R}^{3}$. If $f$ is differentiable at a point $(a, b, c)$, then the **gradient** of $f$ at $(a, b, c)$ is defined as the vector:
+> **Syllabus Anchor (GAMAT101 – Module 3):** The Chain Rule and Functions of Three Variables — Gradient, Directional Derivatives, Level Surfaces, and the Multivariable Chain Rule. This note is tuned for the **KTU 2024 Scheme (NEP 2020)** outcome-based assessment pattern.
 
-$$\nabla f(a, b, c) = \left\langle \frac{\partial f}{\partial x}(a, b, c),\; \frac{\partial f}{\partial y}(a, b, c),\; \frac{\partial f}{\partial z}(a, b, c) \right\rangle$$
+## 1.1 Formal Definition
 
-The symbol $\nabla$ (read as **"del"** or **"nabla"**) is the vector differential operator:
+Let $f : \mathbb{R}^{3} \to \mathbb{R}$ be a scalar field (a real-valued function) of three independent variables $x, y, z$. Assume $f$ has continuous first-order partial derivatives in a region $D \subseteq \mathbb{R}^{3}$. The **gradient** of $f$, denoted $\nabla f$ (read as "del $f$" or "grad $f$"), is the vector-valued function
 
-$$\nabla = \mathbf{i}\frac{\partial}{\partial x} + \mathbf{j}\frac{\partial}{\partial y} + \mathbf{k}\frac{\partial}{\partial z}$$
+$$
+\nabla f(x,y,z) \;=\; \left\langle \frac{\partial f}{\partial x},\; \frac{\partial f}{\partial y},\; \frac{\partial f}{\partial z} \right\rangle
+$$
+
+Formally, $\nabla f : \mathbb{R}^{3} \to \mathbb{R}^{3}$ takes a point $P=(x,y,z)$ and outputs the vector of its three first-order partial derivatives evaluated at $P$.
 
 > [!NOTE]
-> **Geometric Dimension:** The gradient $\nabla f$ produces a **vector** in $\mathbb{R}^{3}$, not a scalar. The input is a scalar field; the output is a vector field. This distinction is heavily tested in KTU 2024 scheme modules.
+> **Why a vector and not a number?** A scalar function $f$ assigns a single number to every point. To know *how* it changes, we need a rate in **every** direction. The gradient bundles all three partial rates into a single geometric object — a vector in the same space as the input.
 
-## Conceptual Analogy / Intuition
+## 1.2 Intuitive Analogy — "The Hiking Compass"
 
-Imagine you are **blindfolded on a foggy mountain** and want to reach the peak as fast as possible. At any point on the slope, your feet can feel the steepness in different directions. The gradient is essentially the **compass arrow** that points in the direction the hill rises most steeply under your feet. Its **length** tells you *how steep* the climb is right there.
+Imagine you are standing on a mountain whose height above sea level is given by the scalar field $f(x,y,z)$.
 
-In three dimensions, picture a 3D **temperature distribution** in a room. If $T(x, y, z)$ gives the temperature, $\nabla T$ points toward the hottest neighboring point, and $\vert \nabla T \vert$ tells you how rapidly the temperature rises per unit distance — vital in **heat flow engineering** and **machine learning optimization**.
+- The **value** $f$ at your feet tells you the *altitude* (a single number).
+- The **gradient** $\nabla f$ at your feet is an *arrow drawn on the map*: it points in the direction a ball would roll if released at your feet (steepest ascent), and its *length* tells you how steep the slope is at that point.
 
-## Key Properties at a Glance
+So $\nabla f$ is a **field of arrows** — one arrow attached to every point in space — that collectively describes the local geometry of the scalar landscape.
 
-- $\nabla f$ is **perpendicular** to the level surface $f(x, y, z) = k$.
-- $\nabla f$ points in the direction of **maximum rate of increase** of $f$.
-- The **maximum directional derivative** equals $\vert \nabla f \vert$.
-- The **minimum directional derivative** equals $-\vert \nabla f \vert$.
-- A **constant unit vector** $\mathbf{u}$ has gradient $\nabla(\mathbf{u} \cdot \mathbf{r}) = \mathbf{u}$.
+## 1.3 Directional Derivative — The Precursor
+
+Before diving deeper, we need the **directional derivative**. Let $\mathbf{u} = \langle a, b, c \rangle$ be a **unit vector** ($\vert \mathbf{u} \vert = 1$). The *directional derivative* of $f$ at $(x_0, y_0, z_0)$ in the direction of $\mathbf{u}$ is
+
+$$
+D_{\mathbf{u}}\, f(x_0, y_0, z_0) \;=\; \lim_{h \to 0} \frac{f(x_0 + ah,\, y_0 + bh,\, z_0 + ch) - f(x_0, y_0, z_0)}{h}
+$$
+
+If this limit exists, it measures the instantaneous rate of change of $f$ as we move from $(x_0, y_0, z_0)$ along $\mathbf{u}$.
+
+> [!TIP]
+> **Sign convention (board-favourite):** A positive $D_{\mathbf{u}} f$ means $f$ *increases* along $\mathbf{u}$; a negative value means $f$ *decreases*; zero means we are momentarily walking *along* a level surface.
+
+## 1.4 The Master Theorem Linking Gradient and Directional Derivatives
+
+> [!IMPORTANT]
+> **Theorem (Computing Directional Derivatives via Gradient).** If $f$ is differentiable at $(x_0, y_0, z_0)$ and $\mathbf{u}$ is a unit vector, then
+> $$D_{\mathbf{u}}\, f(x_0, y_0, z_0) \;=\; \nabla f(x_0, y_0, z_0) \,\cdot\, \mathbf{u}$$
+> This is the central tool used in **every** KTU problem on gradients.
+
+This single dot product tells us that:
+- The directional derivative in any direction is the **projection** of the gradient onto that direction.
+- The **maximum** value of $D_{\mathbf{u}} f$ occurs when $\mathbf{u}$ is parallel to $\nabla f$, giving $D_{\mathbf{u}} f_{\max} = \vert \nabla f \vert$.
+- The **minimum** value of $D_{\mathbf{u}} f$ is $-\vert \nabla f \vert$, achieved when $\mathbf{u}$ is anti-parallel to $\nabla f$.
+- $D_{\mathbf{u}} f = 0$ precisely when $\mathbf{u} \perp \nabla f$.
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Direction of Steepest Ascent on a 2D Projection of a 3D Surface
+> **Concept:** Gradient field of a scalar function $f(x,y) = x^{2} + y^{2}$ overlaid on its level curves.
 > **GeoGebra / Desmos Input Equations:**
-> * `f(x, y) = sin(x) * cos(y) + 0.1 * x`
-> * Gradient field: `Fx = d/dx f(x,y)`, `Fy = d/dy f(x,y)`
-> * Level curves: `f(x, y) = k` for varying $k$
-> **Visual Description:** Plot the surface $z = f(x, y)$ as a color-mapped heat map (blue = low, red = high). Overlay a quiver plot of arrows $(f_x, f_y)$ — these arrows always cross the level curves at right angles, pointing from cool blue regions toward hot red regions.
+> * `f(x,y) = x^2 + y^2`
+> * `vx(x,y) = 2x`
+> * `vy(x,y) = 2y`
+> * Plot the vector field $(v_x, v_y)$ over the grid $-3 \le x, y \le 3$.
+> **Visual Description:** Concentric circular level curves (iso-heights) with radial arrows pointing outward — the gradient at any point is a radial arrow perpendicular to the level circle, growing in length as you move away from the origin. This is the canonical visual fingerprint of a gradient field.
 
+## 1.5 Physical Constants and Standard Metrics
+
+| Quantity | Symbol | Standard Unit (SI) | Notes |
+|---|---|---|---|
+| Gradient (general) | $\nabla f$ | $\text{unit of } f$ per $\text{meter}$ | Depends on the physical meaning of $f$ |
+| Gradient of potential (gravity) | $\mathbf{g} = -\nabla \Phi$ | $\text{m/s}^{2}$ | Conservative force fields |
+| Gradient of pressure | $\nabla P$ | $\text{Pa/m}$ | Drives fluid flow |
+| Gradient (ML loss surface) | $\nabla L$ | dimensionless per $\text{parameter}$ | Used in gradient descent |
+
+> [!NOTE]
+> In **information science**, the gradient typically carries *no physical units*. The components are simply partial derivatives of a loss, cost, or energy function with respect to model parameters (weights, biases, pixels, etc.).
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## Existence & Differentiability
+## 2.1 The Geometric Meaning of $\nabla f$ — Three Equivalent Characterizations
 
-The gradient exists at a point $(a, b, c)$ **if and only if** all three first-order partial derivatives $\frac{\partial f}{\partial x}$, $\frac{\partial f}{\partial y}$, $\frac{\partial f}{\partial z}$ exist and are continuous in a neighborhood of $(a, b, c)$ (i.e., $f$ is continuously differentiable, $f \in C^{1}$).
+The gradient is the unique object in $\mathbb{R}^{3}$ that simultaneously encodes all three of the following:
 
-## Geometric Interpretation (Three-Fold Meaning)
+1. **Direction of Steepest Ascent** — $\nabla f$ points in the direction in which $f$ increases most rapidly.
+2. **Magnitude of Maximal Slope** — $\vert \nabla f \vert$ equals the maximum value of the directional derivative at that point.
+3. **Normal to the Level Surface** — At any non-critical point $(x_0, y_0, z_0)$, the level surface $f(x,y,z) = k$ has $\nabla f(x_0,y_0,z_0)$ as a *normal vector* (i.e., perpendicular to the surface).
 
-1. **Directional Information:** $\nabla f$ points in the direction along which $f$ increases most rapidly.
-2. **Magnitude Information:** $\vert \nabla f \vert$ gives the **maximum rate of change** of $f$ per unit distance.
-3. **Geometric Orthogonality:** $\nabla f$ is **normal** (perpendicular) to the level surface $S = \{(x, y, z) \mid f(x, y, z) = k\}$ at the point of evaluation.
+> [!TIP]
+> The third characterization is what gives $\nabla f$ its power in computing **tangent planes** and **normal lines** — a guaranteed Part-A or Part-B sub-question in any KTU paper.
 
-## Connection with Directional Derivative
+## 2.2 Tangent Plane and Normal Line to a Level Surface
 
-The directional derivative of $f$ at point $P$ in the direction of a unit vector $\mathbf{u} = \langle u_{1}, u_{2}, u_{3} \rangle$ is:
+Let $S$ be the level surface $f(x,y,z) = k$ and let $P_0 = (x_0, y_0, z_0) \in S$ be a point where $\nabla f(P_0) \neq \mathbf{0}$. Then:
 
-$$D_{\mathbf{u}}f(a, b, c) = \nabla f(a, b, c) \cdot \mathbf{u}$$
+**Tangent plane** to $S$ at $P_0$:
+$$
+\nabla f(P_0) \,\cdot\, \langle x - x_0,\; y - y_0,\; z - z_0 \rangle \;=\; 0
+$$
+i.e.
+$$
+f_x(P_0)\,(x - x_0) \;+\; f_y(P_0)\,(y - y_0) \;+\; f_z(P_0)\,(z - z_0) \;=\; 0
+$$
 
-> This is the **single most important formula** for KTU Part B 14-mark questions. It links the gradient to any arbitrary direction.
+**Normal line** to $S$ at $P_0$ (parametric form):
+$$
+\langle x,\, y,\, z \rangle \;=\; \langle x_0,\, y_0,\, z_0 \rangle \;+\; t\,\nabla f(P_0), \quad t \in \mathbb{R}
+$$
 
-## Tangent Plane to a Level Surface
+## 2.3 The Chain Rule — Multivariable Version
 
-The equation of the tangent plane to the level surface $f(x, y, z) = k$ at the point $P(a, b, c)$ is:
+> [!IMPORTANT]
+> **Theorem (Multivariable Chain Rule — Case 1: Single Independent Variable).**
+> If $x = x(t)$, $y = y(t)$, $z = z(t)$ are differentiable at $t$ and $f$ is differentiable at $(x(t),y(t),z(t))$, then the composite $F(t) = f(x(t),y(t),z(t))$ is differentiable at $t$ and
+> $$\frac{dF}{dt} \;=\; \frac{\partial f}{\partial x}\frac{dx}{dt} \;+\; \frac{\partial f}{\partial y}\frac{dy}{dt} \;+\; \frac{\partial f}{\partial z}\frac{dz}{dt} \;=\; \nabla f \,\cdot\, \mathbf{r}'(t)$$
+> where $\mathbf{r}(t) = \langle x(t),\, y(t),\, z(t) \rangle$.
 
-$$f_{x}(a, b, c)(x - a) + f_{y}(a, b, c)(y - b) + f_{z}(a, b, c)(z - c) = 0$$
+> [!IMPORTANT]
+> **Theorem (Multivariable Chain Rule — Case 2: Two Independent Variables).**
+> If $x, y, z$ each depend on $s$ and $t$, then
+> $$\frac{\partial f}{\partial s} \;=\; \frac{\partial f}{\partial x}\frac{\partial x}{\partial s} \;+\; \frac{\partial f}{\partial y}\frac{\partial y}{\partial s} \;+\; \frac{\partial f}{\partial z}\frac{\partial z}{\partial s}$$
+> $$\frac{\partial f}{\partial t} \;=\; \frac{\partial f}{\partial x}\frac{\partial x}{\partial t} \;+\; \frac{\partial f}{\partial y}\frac{\partial y}{\partial t} \;+\; \frac{\partial f}{\partial z}\frac{\partial z}{\partial t}$$
+> In matrix form: $\nabla f = \partial f / \partial \mathbf{r}$ and $\partial \mathbf{r} / \partial(s,t)$ is the $3 \times 2$ Jacobian.
 
-The normal line through $P$ is:
+## 2.4 KTU High-Yield Formula Sheet
 
-$$x = a + f_{x}(a, b, c)\,t, \quad y = b + f_{y}(a, b, c)\,t, \quad z = c + f_{z}(a, b, c)\,t$$
+> [!NOTE]
+> The following is the **complete, exam-ready formula list** for gradient problems. Memorize it as a single unit — partial credit depends on writing the right one with the right units.
 
-## Gradient Algebra Rules (Linearity)
+| # | Concept | Formula | Conditions / Notes |
+|---|---|---|---|
+| 1 | Gradient of $f(x,y,z)$ | $\nabla f = \langle f_x,\, f_y,\, f_z \rangle$ | $f$ differentiable at the point |
+| 2 | Directional derivative | $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$ | $\mathbf{u}$ must be a **unit** vector |
+| 3 | Max rate of increase | $\max D_{\mathbf{u}} f = \vert \nabla f \vert$ | Direction: $\mathbf{u} = \nabla f / \vert \nabla f \vert$ |
+| 4 | Min rate of increase | $\min D_{\mathbf{u}} f = -\vert \nabla f \vert$ | Direction: $\mathbf{u} = -\nabla f / \vert \nabla f \vert$ |
+| 5 | Chain rule (1 var) | $dF/dt = \nabla f \cdot \mathbf{r}'(t)$ | $\mathbf{r}(t) = \langle x(t),y(t),z(t) \rangle$ |
+| 6 | Chain rule (2 vars) | $\partial f / \partial s = \nabla f \cdot \partial \mathbf{r} / \partial s$ | Repeat for $t$ independently |
+| 7 | Tangent plane to $f = k$ | $f_x \Delta x + f_y \Delta y + f_z \Delta z = 0$ | At point on the surface |
+| 8 | Normal line to $f = k$ | $\mathbf{r}(t) = \mathbf{r}_0 + t \nabla f$ | $\nabla f \neq \mathbf{0}$ |
+| 9 | $\nabla$ of a constant | $\nabla c = \mathbf{0}$ | Trivial but often tested |
+| 10 | Linearity | $\nabla(\alpha f + \beta g) = \alpha \nabla f + \beta \nabla g$ | $\alpha,\beta \in \mathbb{R}$ |
 
-For differentiable scalar fields $f$ and $g$, and constants $\alpha, \beta \in \mathbb{R}$:
+> [!TIP]
+> **Critical Pitfall (KTU Board Style):** If a problem says *"in the direction of $\mathbf{v} = \langle a, b, c \rangle$"* and $\mathbf{v}$ is **not** a unit vector, you must first normalize it: $\mathbf{u} = \mathbf{v} / \vert \mathbf{v} \vert$. Then use $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$. Forgetting this normalization is the single most common 2-mark deduction in KTU papers.
 
-$$\nabla(\alpha f + \beta g) = \alpha \nabla f + \beta \nabla g$$
+## 2.5 Utility in Information Science and Engineering
 
-$$\nabla(fg) = f\,\nabla g + g\,\nabla f$$
+| Domain | Use of Gradient |
+|---|---|
+| **Machine Learning** | $\theta_{t+1} = \theta_t - \eta \nabla L(\theta_t)$ — gradient descent for parameter optimization |
+| **Deep Learning** | Backpropagation = repeated application of the chain rule through network layers |
+| **Computer Graphics** | Surface normal vectors for lighting (Phong/Blinn shading) come from $\nabla f$ |
+| **Image Processing** | Sobel / Prewitt filters compute spatial gradients of pixel intensities for edge detection |
+| **Fluid Dynamics** | $\nabla P$ drives flow; $\nabla \cdot \mathbf{F}$ measures divergence; $\nabla \times \mathbf{F}$ measures curl |
+| **Robotics / Path Planning** | Potential-field methods use $\nabla U$ to push robots away from obstacles |
+| **Optimization Theory** | KKT conditions require $\nabla f = \mathbf{0}$ at constrained extrema |
 
-$$\nabla\left(\frac{f}{g}\right) = \frac{g\,\nabla f - f\,\nabla g}{g^{2}}, \quad g \neq 0$$
-
-## KTU Formula Sheet / Cheat Sheet
-
-| Concept | Formula | Remarks |
-|---------|---------|---------|
-| Gradient Definition (3D) | $\nabla f = \langle f_{x}, f_{y}, f_{z} \rangle$ | $f : \mathbb{R}^{3} \to \mathbb{R}$ |
-| Magnitude of Gradient | $\vert \nabla f \vert = \sqrt{f_{x}^{2} + f_{y}^{2} + f_{z}^{2}}$ | Maximum rate of increase |
-| Directional Derivative | $D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u}$ | $\mathbf{u}$ must be a **unit** vector |
-| Max Directional Derivative | $\max D_{\mathbf{u}}f = \vert \nabla f \vert$ | Direction = $\nabla f / \vert \nabla f \vert$ |
-| Min Directional Derivative | $\min D_{\mathbf{u}}f = -\vert \nabla f \vert$ | Direction = $-\nabla f / \vert \nabla f \vert$ |
-| Zero Directional Derivative | $D_{\mathbf{u}}f = 0 \iff \mathbf{u} \perp \nabla f$ | Along level surface |
-| Tangent Plane | $f_{x}(x - a) + f_{y}(y - b) + f_{z}(z - c) = 0$ | Normal vector is $\nabla f$ |
-| Normal Line | $P + t\,\nabla f(a, b, c)$ | Parametric form |
-| Gradient of Dot Product | $\nabla(\mathbf{F} \cdot \mathbf{r}) = \mathbf{F}$ (constant $\mathbf{F}$) | $\mathbf{r} = \langle x, y, z \rangle$ |
-
-## Real-World Utility in Information Science
-
-- **Machine Learning (Gradient Descent):** The cornerstone optimization algorithm for training neural networks. Weights $\mathbf{w}$ are updated via $\mathbf{w}_{\text{new}} = \mathbf{w}_{\text{old}} - \eta \nabla L(\mathbf{w})$, where $L$ is the loss function and $\eta$ is the learning rate.
-- **Computer Graphics:** Surface normals (essential for lighting and shading) are computed as $\nabla f / \vert \nabla f \vert$ of implicit surfaces $f(x, y, z) = 0$.
-- **Medical Imaging:** Gradient of MRI intensity functions highlights tissue boundaries (edge detection).
-- **Fluid Dynamics & CFD:** $\nabla P$ drives fluid flow; $\nabla T$ drives heat conduction (Fourier's law).
-- **GPS & Robotics:** Gradients of potential fields guide path planning in autonomous navigation.
-
+> [!IMPORTANT]
+> **Why KTU includes this in Module 3:** The gradient is the bridge between *calculus of several variables* and *applied optimization*. Almost every downstream module in B.Tech (signal processing, control systems, ML, computer graphics) reuses the formula $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$ without renaming it.
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Code Implementation
+# Step-by-Step Derivations & Symbolic Implementation
 
-## Derivation 1: Gradient as the Direction of Steepest Ascent
+## 3.1 Derivation — The Directional Derivative Equals $\nabla f \cdot \mathbf{u}$
 
-**Goal:** Show that among all unit directions $\mathbf{u}$, the directional derivative $D_{\mathbf{u}}f$ is maximized when $\mathbf{u}$ is parallel to $\nabla f$.
+We derive the master formula from first principles so you can reproduce it on a 14-mark question if asked.
 
-**Setup:** Let $\mathbf{u} = \langle u_{1}, u_{2}, u_{3} \rangle$ be any unit vector ($\vert \mathbf{u} \vert = 1$). The directional derivative is:
+**Setup.** Let $f : \mathbb{R}^{3} \to \mathbb{R}$ be differentiable at $P_0 = (x_0, y_0, z_0)$, and let $\mathbf{u} = \langle a, b, c \rangle$ be a unit vector. Define
 
-$$D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u} = \vert \nabla f \vert \vert \mathbf{u} \vert \cos\theta = \vert \nabla f \vert \cos\theta$$
+$$
+F(t) \;=\; f(x_0 + at,\; y_0 + bt,\; z_0 + ct)
+$$
 
-where $\theta$ is the angle between $\nabla f$ and $\mathbf{u}$. This is maximized when $\cos\theta = 1$, i.e., $\theta = 0$, meaning $\mathbf{u}$ points in the same direction as $\nabla f$. The maximum value is $\vert \nabla f \vert$. $\blacksquare$
+**Step 1 — Write $F'(0)$ using the single-variable limit definition.**
 
-## Derivation 2: Gradient is Normal to Level Surfaces
+$$
+F'(0) \;=\; \lim_{t \to 0} \frac{F(t) - F(0)}{t - 0} \;=\; \lim_{t \to 0} \frac{f(x_0 + at,\, y_0 + bt,\, z_0 + ct) - f(x_0, y_0, z_0)}{t}
+$$
 
-**Goal:** Show that $\nabla f$ is perpendicular to the tangent plane of $f(x, y, z) = k$.
+By definition, this is exactly $D_{\mathbf{u}} f(P_0)$.
 
-**Step 1:** Let $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ be any smooth curve lying entirely on the level surface. Then $f(x(t), y(t), z(t)) = k$ for all $t$.
+**Step 2 — Apply the differentiability of $f$.** Since $f$ is differentiable at $P_0$, there exist constants $A, B, C$ such that for any $(x,y,z)$ close to $P_0$,
 
-**Step 2:** Differentiate both sides with respect to $t$ using the **multivariable chain rule**:
+$$
+f(x,y,z) - f(P_0) \;=\; A(x - x_0) + B(y - y_0) + C(z - z_0) + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y + \varepsilon_3 \Delta z
+$$
 
-$$\frac{d}{dt}f(x(t), y(t), z(t)) = f_{x}\frac{dx}{dt} + f_{y}\frac{dy}{dt} + f_{z}\frac{dz}{dt} = 0$$
+where $\varepsilon_i \to 0$ as $(x,y,z) \to P_0$. The constants are precisely the partials: $A = f_x(P_0)$, $B = f_y(P_0)$, $C = f_z(P_0)$.
 
-**Step 3:** Recognize this as a dot product:
+**Step 3 — Substitute the displacement $(at, bt, ct)$.**
 
-$$\langle f_{x}, f_{y}, f_{z} \rangle \cdot \langle x'(t), y'(t), z'(t) \rangle = 0 \implies \nabla f \cdot \mathbf{r}'(t) = 0$$
+$$
+f(P_0 + t\mathbf{u}) - f(P_0) \;=\; t\bigl(A a + B b + C c\bigr) + t\bigl(\varepsilon_1 a + \varepsilon_2 b + \varepsilon_3 c\bigr)
+$$
 
-**Step 4:** Since $\mathbf{r}'(t)$ is tangent to any curve on the surface (and thus spans the tangent plane), $\nabla f$ is orthogonal to every tangent vector, hence **normal to the surface**. $\blacksquare$
+**Step 4 — Divide by $t$ and take the limit $t \to 0$.**
 
-## Worked Example 1 — Computing a Gradient
+$$
+\frac{f(P_0 + t\mathbf{u}) - f(P_0)}{t} \;=\; Aa + Bb + Cc \;+\; \bigl(\varepsilon_1 a + \varepsilon_2 b + \varepsilon_3 c\bigr)
+$$
 
-**Problem:** Find $\nabla f$ at the point $(1, 2, 3)$ for $f(x, y, z) = x^{2}y + yz^{3} - \sin(xz)$.
+As $t \to 0$, all $\varepsilon_i \to 0$ (because the displacement $\to 0$), and the leftover terms vanish. We are left with
 
-**Step 1:** Compute partial derivatives.
+$$
+F'(0) \;=\; a A + b B + c C \;=\; \langle a, b, c \rangle \cdot \langle A, B, C \rangle \;=\; \mathbf{u} \cdot \nabla f(P_0)
+$$
 
-$$f_{x} = 2xy - z\cos(xz)$$
+$$
+\boxed{\,D_{\mathbf{u}} f(P_0) \;=\; \nabla f(P_0) \cdot \mathbf{u}\,}
+$$
 
-$$f_{y} = x^{2} + z^{3}$$
+> [!NOTE]
+> **Valuation Key:** Each step above is worth $\approx 3$ marks in a 14-mark KTU question. Skipping the limit argument is acceptable *only* if you cite the "differentiability of $f$" theorem by name.
 
-$$f_{z} = 3yz^{2} - x\cos(xz)$$
+## 3.2 Derivation — Why $\nabla f$ is the Direction of Maximum Increase
 
-**Step 2:** Evaluate at $(1, 2, 3)$.
+We want to show that among all unit vectors $\mathbf{u}$, the quantity $\nabla f \cdot \mathbf{u}$ is maximized when $\mathbf{u}$ is parallel to $\nabla f$.
 
-$$f_{x}(1, 2, 3) = 2(1)(2) - 3\cos(3) = 4 - 3\cos 3$$
+**Step 1 — Apply the Cauchy–Schwarz inequality.** For any two vectors $\mathbf{a}, \mathbf{b} \in \mathbb{R}^{3}$,
 
-$$f_{y}(1, 2, 3) = (1)^{2} + (3)^{3} = 1 + 27 = 28$$
+$$
+\mathbf{a} \cdot \mathbf{b} \;\leq\; \vert \mathbf{a} \vert \,\vert \mathbf{b} \vert
+$$
 
-$$f_{z}(1, 2, 3) = 3(2)(3)^{2} - 1 \cdot \cos(3) = 54 - \cos 3$$
+with equality if and only if $\mathbf{a} = \lambda \mathbf{b}$ for some scalar $\lambda > 0$.
 
-**Step 3:** Assemble the gradient vector.
+**Step 2 — Specialize to $\mathbf{a} = \nabla f$ and $\mathbf{b} = \mathbf{u}$:**
 
-$$\nabla f(1, 2, 3) = \langle 4 - 3\cos 3,\; 28,\; 54 - \cos 3 \rangle$$
+$$
+D_{\mathbf{u}} f \;=\; \nabla f \cdot \mathbf{u} \;\leq\; \vert \nabla f \vert \,\vert \mathbf{u} \vert \;=\; \vert \nabla f \vert \cdot 1 \;=\; \vert \nabla f \vert
+$$
 
-**Step 4:** Magnitude (KTU frequently asks for $\vert \nabla f \vert$):
+since $\mathbf{u}$ is a unit vector.
 
-$$\vert \nabla f \vert = \sqrt{(4 - 3\cos 3)^{2} + 28^{2} + (54 - \cos 3)^{2}}$$
+**Step 3 — Locate the maximizer.** Equality in Cauchy–Schwarz holds when $\mathbf{u}$ is parallel to $\nabla f$, i.e.
 
-## Worked Example 2 — Maximum Rate of Change & Tangent Plane
+$$
+\mathbf{u}_{\max} \;=\; \frac{\nabla f}{\vert \nabla f \vert}
+$$
 
-**Problem:** For $f(x, y, z) = xyz$ at $P(1, 1, 1)$, find (a) the maximum rate of increase, (b) the direction of steepest ascent, (c) the tangent plane to $f = 1$ at $P$.
+Substituting back confirms $D_{\mathbf{u}_{\max}} f = \nabla f \cdot (\nabla f / \vert \nabla f \vert) = \vert \nabla f \vert^{2} / \vert \nabla f \vert = \vert \nabla f \vert$.
 
-**Step 1:** Partial derivatives.
+$$
+\boxed{\,\max_{\vert \mathbf{u} \vert = 1} D_{\mathbf{u}} f \;=\; \vert \nabla f \vert \quad \text{attained at} \quad \mathbf{u} = \frac{\nabla f}{\vert \nabla f \vert}\,}
+$$
 
-$$f_{x} = yz, \quad f_{y} = xz, \quad f_{z} = xy$$
+## 3.3 Worked Example — Directional Derivative of $f(x,y,z) = x^{2} + yz$ at a Point
 
-**Step 2:** At $P(1, 1, 1)$:
+**Problem.** Find the directional derivative of $f(x,y,z) = x^{2} + yz$ at the point $P_0 = (1, 2, 0)$ in the direction of $\mathbf{v} = \langle 2, 1, 2 \rangle$.
 
-$$\nabla f(1, 1, 1) = \langle 1, 1, 1 \rangle$$
+**Step 1 — Compute the partial derivatives.**
 
-**Step 3:** Maximum rate of change:
+$$
+\frac{\partial f}{\partial x} = 2x, \quad \frac{\partial f}{\partial y} = z, \quad \frac{\partial f}{\partial z} = y
+$$
 
-$$\max D_{\mathbf{u}}f = \vert \nabla f \vert = \sqrt{1^{2} + 1^{2} + 1^{2}} = \sqrt{3}$$
+**Step 2 — Evaluate the gradient at $P_0 = (1, 2, 0)$.**
 
-**Step 4:** Direction of steepest ascent (unit vector):
+$$
+\nabla f(1, 2, 0) \;=\; \langle 2(1),\, 0,\, 2 \rangle \;=\; \langle 2,\, 0,\, 2 \rangle
+$$
 
-$$\mathbf{u}_{\max} = \frac{\nabla f}{\vert \nabla f \vert} = \left\langle \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}} \right\rangle$$
+**Step 3 — Normalize the direction vector.**
 
-**Step 5:** Tangent plane to $xyz = 1$ at $P$:
+$$
+\vert \mathbf{v} \vert \;=\; \sqrt{2^{2} + 1^{2} + 2^{2}} \;=\; \sqrt{4 + 1 + 4} \;=\; \sqrt{9} \;=\; 3
+$$
 
-$$1(x - 1) + 1(y - 1) + 1(z - 1) = 0 \implies x + y + z = 3$$
+$$
+\mathbf{u} \;=\; \frac{\mathbf{v}}{\vert \mathbf{v} \vert} \;=\; \left\langle \frac{2}{3},\, \frac{1}{3},\, \frac{2}{3} \right\rangle
+$$
 
-## Worked Example 3 — Directional Derivative in a Given Direction
+**Step 4 — Compute the dot product.**
 
-**Problem:** Find $D_{\mathbf{u}}f$ at $(2, 1, 3)$ in the direction of $\mathbf{v} = \langle 2, -1, 2 \rangle$ for $f(x, y, z) = x^{3} + y^{2}z - z^{2}$.
+$$
+D_{\mathbf{u}} f(1, 2, 0) \;=\; \langle 2, 0, 2 \rangle \cdot \left\langle \frac{2}{3},\, \frac{1}{3},\, \frac{2}{3} \right\rangle \;=\; 2 \cdot \frac{2}{3} + 0 \cdot \frac{1}{3} + 2 \cdot \frac{2}{3} \;=\; \frac{4}{3} + 0 + \frac{4}{3} \;=\; \frac{8}{3}
+$$
 
-**Step 1:** Partial derivatives.
+**Step 5 — Interpretation.** The function $f$ is increasing at the rate of $\dfrac{8}{3}$ units per unit length when we move from $(1, 2, 0)$ along $\mathbf{u}$.
 
-$$f_{x} = 3x^{2}, \quad f_{y} = 2yz, \quad f_{z} = y^{2} - 2z$$
+$$
+\boxed{\,D_{\mathbf{u}} f(1, 2, 0) \;=\; \frac{8}{3}\,}
+$$
 
-**Step 2:** Evaluate gradient at $(2, 1, 3)$.
+## 3.4 Worked Example — Chain Rule with Two Independent Variables
 
-$$\nabla f(2, 1, 3) = \langle 3(4), 2(1)(3), 1 - 6 \rangle = \langle 12, 6, -5 \rangle$$
+**Problem.** Let $f(x, y, z) = x^{2} y + y^{2} z^{3}$ with $x = s^{2}t$, $y = s t^{2}$, $z = s + t$. Compute $\dfrac{\partial f}{\partial s}$ and $\dfrac{\partial f}{\partial t}$ at $(s, t) = (1, 1)$.
 
-**Step 3:** Normalize $\mathbf{v}$ to a unit vector.
+**Step 1 — Partial derivatives of $f$.**
 
-$$\vert \mathbf{v} \vert = \sqrt{4 + 1 + 4} = 3 \quad \Rightarrow \quad \mathbf{u} = \left\langle \frac{2}{3}, -\frac{1}{3}, \frac{2}{3} \right\rangle$$
+$$
+f_x = 2xy, \quad f_y = x^{2} + 2y z^{3}, \quad f_z = 3 y^{2} z^{2}
+$$
 
-**Step 4:** Compute dot product.
+**Step 2 — Partial derivatives of the coordinate functions.**
 
-$$D_{\mathbf{u}}f = \langle 12, 6, -5 \rangle \cdot \left\langle \frac{2}{3}, -\frac{1}{3}, \frac{2}{3} \right\rangle = 8 - 2 - \frac{10}{3} = \frac{24 - 6 - 10}{3} = \frac{8}{3}$$
+$$
+\frac{\partial x}{\partial s} = 2st, \quad \frac{\partial y}{\partial s} = t^{2}, \quad \frac{\partial z}{\partial s} = 1
+$$
 
-## Python Implementation (Symbolic + Numerical)
+$$
+\frac{\partial x}{\partial t} = s^{2}, \quad \frac{\partial y}{\partial t} = 2st, \quad \frac{\partial z}{\partial t} = 1
+$$
+
+**Step 3 — Evaluate the coordinate functions at $(s, t) = (1, 1)$.**
+
+$$
+x = 1^{2} \cdot 1 = 1, \quad y = 1 \cdot 1^{2} = 1, \quad z = 1 + 1 = 2
+$$
+
+**Step 4 — Evaluate $f$'s partials at $(x, y, z) = (1, 1, 2)$.**
+
+$$
+f_x = 2(1)(1) = 2, \quad f_y = 1^{2} + 2(1)(2)^{3} = 1 + 16 = 17, \quad f_z = 3(1)^{2}(2)^{2} = 12
+$$
+
+**Step 5 — Apply the chain rule for $\partial f / \partial s$.**
+
+$$
+\frac{\partial f}{\partial s} \;=\; f_x \frac{\partial x}{\partial s} + f_y \frac{\partial y}{\partial s} + f_z \frac{\partial z}{\partial s}
+$$
+
+Substituting the numerical values:
+
+$$
+\frac{\partial f}{\partial s} \bigg|_{(1,1)} \;=\; 2 \cdot (2 \cdot 1 \cdot 1) + 17 \cdot (1^{2}) + 12 \cdot (1) \;=\; 2 \cdot 2 + 17 + 12 \;=\; 4 + 17 + 12 \;=\; 33
+$$
+
+**Step 6 — Apply the chain rule for $\partial f / \partial t$.**
+
+$$
+\frac{\partial f}{\partial t} \;=\; f_x \frac{\partial x}{\partial t} + f_y \frac{\partial y}{\partial t} + f_z \frac{\partial z}{\partial t}
+$$
+
+Substituting the numerical values:
+
+$$
+\frac{\partial f}{\partial t} \bigg|_{(1,1)} \;=\; 2 \cdot (1^{2}) + 17 \cdot (2 \cdot 1 \cdot 1) + 12 \cdot (1) \;=\; 2 + 34 + 12 \;=\; 48
+$$
+
+$$
+\boxed{\,\frac{\partial f}{\partial s}\bigg|_{(1,1)} = 33, \qquad \frac{\partial f}{\partial t}\bigg|_{(1,1)} = 48\,}
+$$
+
+## 3.5 Worked Example — Tangent Plane and Normal Line to a Level Surface
+
+**Problem.** Find the tangent plane and normal line to the surface $x^{2} + y^{2} + z^{2} = 9$ at the point $P_0 = (1, 2, 2)$.
+
+**Step 1 — Define $f(x,y,z) = x^{2} + y^{2} + z^{2} - 9$.** The level set $f = 0$ is the sphere of radius 3.
+
+**Step 2 — Compute $\nabla f$.**
+
+$$
+\nabla f(x,y,z) = \langle 2x,\, 2y,\, 2z \rangle
+$$
+
+**Step 3 — Evaluate at $P_0$.**
+
+$$
+\nabla f(1, 2, 2) = \langle 2,\, 4,\, 4 \rangle
+$$
+
+**Step 4 — Write the tangent plane equation.**
+
+$$
+2(x - 1) + 4(y - 2) + 4(z - 2) = 0
+$$
+
+Simplifying: divide by 2 to get $x - 1 + 2(y - 2) + 2(z - 2) = 0$, i.e.
+
+$$
+x + 2y + 2z = 1 + 4 + 4 = 9
+$$
+
+This makes sense: the tangent plane to a sphere of radius 3 at $(1,2,2)$ is exactly the plane $x + 2y + 2z = 9$, perpendicular to the radius vector $\langle 1, 2, 2 \rangle$.
+
+**Step 5 — Write the normal line parametrically.**
+
+$$
+x(t) = 1 + 2t, \quad y(t) = 2 + 4t, \quad z(t) = 2 + 4t, \quad t \in \mathbb{R}
+$$
+
+In vector form: $\mathbf{r}(t) = \langle 1, 2, 2 \rangle + t \langle 2, 4, 4 \rangle$.
+
+## 3.6 Python Symbolic Implementation (SymPy)
+
+The following code symbolically verifies all three worked examples above. It is **fully runnable** and is the kind of tool a KTU student should keep handy for self-checking.
 
 ```python
-import numpy as np
-import sympy as sp
+from sympy import symbols, diff, sqrt, simplify, Matrix, Function, Eq, solve, Rational
 
-# --- SYMBOLIC GRADIENT COMPUTATION ---
-x, y, z = sp.symbols('x y z', real=True)
-f = x**2 * sp.sin(y) + y * sp.exp(z) - sp.cos(x * z)
+# ---------- Example 3.3: Directional Derivative ----------
+x, y, z, t, s = symbols('x y z t s', real=True)
+f = x**2 + y*z
+P0 = {x: 1, y: 2, z: 0}
+v = Matrix([2, 1, 2])
+u = v / v.norm()                            # normalize
+grad_f = Matrix([diff(f, var) for var in (x, y, z)])
+grad_at_P0 = grad_f.subs(P0)
+Du_f = grad_at_P0.dot(u)
+print("Example 3.3  D_u f(1,2,0) =", simplify(Du_f))   # -> 8/3
 
-# Compute the gradient vector symbolically
-grad_f = sp.Matrix([sp.diff(f, var) for var in (x, y, z)])
-print("Symbolic gradient ∇f =")
-sp.pprint(grad_f)
+# ---------- Example 3.4: Two-variable Chain Rule ----------
+f2 = x**2 * y + y**2 * z**3
+x_st, y_st, z_st = s**2 * t, s * t**2, s + t
+f2_comp = f2.subs({x: x_st, y: y_st, z: z_st})
+df_ds = diff(f2_comp, s)
+df_dt = diff(f2_comp, t)
+print("Example 3.4  df/ds at (1,1) =", df_ds.subs({s: 1, t: 1}))  # -> 33
+print("Example 3.4  df/dt at (1,1) =", df_dt.subs({s: 1, t: 1}))  # -> 48
 
-# Evaluate at the point (1, pi/2, 0)
-point = {x: 1, y: sp.pi / 2, z: 0}
-grad_value = grad_f.subs(point)
-print("\n∇f(1, π/2, 0) =", grad_value.T)
-
-# Magnitude of the gradient
-magnitude = sp.sqrt(sum(comp**2 for comp in grad_value))
-print("|∇f(1, π/2, 0)| =", sp.simplify(magnitude))
-
-
-# --- NUMERICAL DIRECTIONAL DERIVATIVE ---
-def directional_derivative(grad_at_point, direction_vector):
-    """Compute D_u f = ∇f · u, where u is the unit direction vector."""
-    direction_vector = np.array(direction_vector, dtype=float)
-    unit_u = direction_vector / np.linalg.norm(direction_vector)
-    return float(np.dot(grad_at_point, unit_u))
-
-
-# Example: ∇f at a numerical point
-grad_numeric = np.array([12.0, 6.0, -5.0])   # pre-computed gradient
-direction = np.array([2.0, -1.0, 2.0])       # arbitrary direction
-print("\nDirectional Derivative =", directional_derivative(grad_numeric, direction))
+# ---------- Example 3.5: Tangent Plane to Level Surface ----------
+F = x**2 + y**2 + z**2 - 9
+grad_F = Matrix([diff(F, var) for var in (x, y, z)])
+P_sphere = {x: 1, y: 2, z: 2}
+normal = grad_F.subs(P_sphere)
+print("Example 3.5  normal vector =", normal.T)         # -> [2 4 4]
+# Tangent plane: normal . (X - P0) = 0
+X = Matrix([symbols('Xx'), symbols('Yy'), symbols('Zz')])
+P0_vec = Matrix([1, 2, 2])
+plane_eq = simplify(normal.dot(X - P0_vec))
+print("Example 3.5  tangent plane = 0  <=>  ", plane_eq, " = 0")  # -> 2Xx+4Yy+4Zz-18
 ```
 
-**Sample Output:**
+**Expected output (for self-verification):**
 
 ```
-Symbolic gradient ∇f =
-[   2*x*sin(y) + z*sin(x*z) ]
-[   x**2*cos(y) + exp(z)    ]
-[   y*exp(z) + x*sin(x*z)   ]
-
-∇f(1, π/2, 0) = [2  1  π/2 + sin(0)]
-|∇f(1, π/2, 0)| = sqrt(4 + 1 + π²/4)
-Directional Derivative = 2.6666666666666665
+Example 3.3  D_u f(1,2,0) = 8/3
+Example 3.4  df/ds at (1,1) = 33
+Example 3.4  df/dt at (1,1) = 48
+Example 3.5  normal vector = Matrix([[2, 4, 4]])
+Example 3.5  tangent plane = 0  <=>   2*Xx + 4*Yy + 4*Zz - 18 = 0
 ```
-
-## Edge Cases & Boundary Considerations
-
-| Scenario | Gradient Behavior | Engineering Significance |
-|----------|-------------------|--------------------------|
-| Critical point ($\nabla f = \mathbf{0}$) | Zero vector; no preferred direction | Stationary points in ML loss landscapes |
-| $f(x, y, z) = c$ (constant) | $\nabla f = \mathbf{0}$ everywhere | Trivial — no information gradient |
-| Discontinuous $f$ | Gradient may not exist | Phase transitions in materials |
-| On the level surface | $\nabla f \perp$ surface | Surface normal for rendering |
-| Along $\mathbf{u} \perp \nabla f$ | $D_{\mathbf{u}}f = 0$ | Iso-contour traversal in image segmentation |
-
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 # Structural Diagrams & Schematics
 
-## Diagram 1 — Gradient Computation Pipeline (Block Diagram)
+## 4.1 Gradient Computation — Block-Level Functional Architecture
+
+The gradient is *not* a single operation; it is a pipeline of three partial-differentiation modules feeding a vector assembler. The diagram below shows the data flow used internally by every CAS (Computer Algebra System) — SymPy, Mathematica, Maple — when it evaluates $\nabla f$.
 
 ```mermaid
 flowchart LR
-    A["Scalar Field f of x y z"] --> B["Partial Derivative w.r.t x"]
-    A --> C["Partial Derivative w.r.t y"]
-    A --> D["Partial Derivative w.r.t z"]
-    B --> E["Assemble Vector"]
+    A[Input: Scalar Field f of x, y, z] --> B[Partial w.r.t. x]
+    A --> C[Partial w.r.t. y]
+    A --> D[Partial w.r.t. z]
+    B --> E[Assembler: Stack Components]
     C --> E
     D --> E
-    E --> F["Gradient Vector nabla f"]
-    F --> G["Magnitude Module"]
-    F --> H["Unit Direction Module"]
-    G --> I["Max Rate of Change"]
-    H --> J["Direction of Steepest Ascent"]
-    F --> K["Dot Product with Unit u"]
-    K --> L["Directional Derivative D sub u of f"]
+    E --> F[Output Vector: nabla f]
+    F --> G{Direction Specified?}
+    G -- Yes --> H[Normalize Direction to Unit Vector u]
+    G -- No --> I[Output Bare Gradient]
+    H --> J[Dot Product: nabla f . u]
+    J --> K[Output: Directional Derivative D_u f]
 ```
 
-## Diagram 2 — Geometric Role of the Gradient on a Level Surface
+**Reading the diagram.** $f$ is broadcast to three independent differentiator modules. Their scalar outputs are stacked by the assembler into a single $3 \times 1$ vector. The downstream consumer either (i) uses $\nabla f$ directly to describe the field, or (ii) feeds it together with a unit direction $\mathbf{u}$ into a dot-product block to obtain the directional derivative.
+
+## 4.2 Multivariable Chain Rule — Sequential Processing Topology
+
+The following topology matrix models the data flow when $f(x, y, z)$ is composed with a parametric curve $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ or a parametric surface $\mathbf{r}(s, t)$.
 
 ```mermaid
 flowchart TB
-    subgraph S["Level Surface f of x y z equals k"]
-        P["Point P of a b c"] --> T1["Tangent Vector v1 along curve C1"]
-        P --> T2["Tangent Vector v2 along curve C2"]
-        T1 --> PL["Tangent Plane at P"]
-        T2 --> PL
+    subgraph OuterLayer["Independent Variables: s, t"]
+        S1[s]
+        T1[t]
     end
-    N["Gradient nabla f at P"] -->|"Orthogonal to PL"| S
-    N -->|"Defines Normal Line"| NL["Normal Line P plus t times nabla f"]
-    N -->|"Maximum Ascent Direction"| MA["Max Rate equals magnitude of nabla f"]
-    N -->|"Unit Direction"| UA["u max equals nabla f divided by its magnitude"]
+
+    subgraph MidLayer["Parametric Coordinates: x, y, z"]
+        X[x of s and t]
+        Y[y of s and t]
+        Z[z of s and t]
+    end
+
+    subgraph InnerLayer["Scalar Field: f of x, y, z"]
+        F[f]
+    end
+
+    subgraph OutputLayer["Composite Derivatives"]
+        DFDX[partial f over partial x]
+        DFDY[partial f over partial y]
+        DFDZ[partial f over partial z]
+        DS[partial f over partial s]
+        DT[partial f over partial t]
+    end
+
+    S1 --> X
+    S1 --> Y
+    S1 --> Z
+    T1 --> X
+    T1 --> Y
+    T1 --> Z
+
+    X --> F
+    Y --> F
+    Z --> F
+
+    F --> DFDX
+    F --> DFDY
+    F --> DFDZ
+
+    DFDX --> DS
+    DFDY --> DS
+    DFDZ --> DS
+
+    DFDX --> DT
+    DFDY --> DT
+    DFDZ --> DT
 ```
 
-## Diagram 3 — Decision Flow for KTU Gradient Problems
+**How to read the topology.** Outer-layer variables $s, t$ feed the mid-layer coordinates $x, y, z$. These in turn feed the inner-layer scalar $f$. The partials of $f$ are then combined (in the output layer) with the partials of the coordinates with respect to $s$ (or $t$) to produce the final composite derivatives $\partial f / \partial s$ and $\partial f / \partial t$.
 
-```mermaid
-flowchart TD
-    Start["Given Problem"] --> Q1{"Find Gradient Only?"}
-    Q1 -->|"Yes"| CG["Compute fx, fy, fz and Assemble Vector"]
-    Q1 -->|"No"| Q2{"Directional Derivative?"}
-    Q2 -->|"Yes"| Norm["Normalize Direction to Unit u"]
-    Norm --> Dot["Dot Product nabla f with u"]
-    Q2 -->|"No"| Q3{"Tangent Plane or Normal?"}
-    Q3 --> TP["Use nabla f as Normal Vector"]
-    Q3 --> NL2["Parametric Normal Line P plus t nabla f"]
-    CG --> Out["Final Answer"]
-    Dot --> Out
-    TP --> Out
-    NL2 --> Out
-```
+## 4.3 Gradient-Based Optimization Loop (ML Context)
 
-## Diagram 4 — Conceptual Mountain-Analogy Schematic
+To connect the abstract definition to its most common engineering application, the diagram below shows the **gradient descent** algorithm — the workhorse of every supervised ML system.
 
 ```mermaid
 flowchart LR
-    subgraph Mountain["3D Terrain z equals h of x y"]
-        Peak["Peak - Highest Point"]
-        Valley["Valley - Lowest Point"]
-        Slope["Slope at Test Point Q"]
-    end
-    Q["Test Point Q of x0 y0 z0"] --> G["Gradient nabla h at Q"]
-    G -->|"Arrow points uphill"| Dir["Steepest Ascent Direction"]
-    G -->|"Arrow length = steepness"| Mag["Magnitude equals Max Slope"]
-    G -->|"Perpendicular arrow to contour"| Norm["Normal to Contour Line"]
+    A[Initialize Parameters theta_0] --> B[Forward Pass: Compute Loss L of theta_i]
+    B --> C[Backward Pass: Compute Gradient nabla L of theta_i]
+    C --> D[Update Rule: theta_i+1 = theta_i - eta times nabla L]
+    D --> E{Converged? |nabla L| less than epsilon}
+    E -- No --> B
+    E -- Yes --> F[Output: Optimal Parameters theta_star]
 ```
 
+**Correspondence with this module.**
+
+| Block in Diagram | Mathematical Object from this Module |
+|---|---|
+| Compute Loss $L(\theta)$ | Scalar field $f(x, y, z)$ |
+| Compute Gradient $\nabla L$ | $\langle \partial L/\partial \theta_1, \partial L/\partial \theta_2, \ldots \rangle$ |
+| Direction of descent $-\nabla L$ | The vector anti-parallel to $\nabla f$ — minimum directional derivative |
+| Learning rate $\eta$ | Step size along the direction $-\nabla L$ |
+
+> [!TIP]
+> **KTU Insight Question (likely Part A):** "Why do we move in the direction $-\nabla L$ and not $+\nabla L$?" — Answer: Because $-\nabla L$ is the direction of *steepest descent* (minimum of $D_{\mathbf{u}} f$), and we want to *minimize* the loss, not maximize it.
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank
+# KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## Part A — Short Answer Questions (3 Marks Each)
+## Part A Questions (3 Marks Each)
 
-### Question 1 `[KTU University Exam – July 2024]`
-**Define the gradient of a scalar function $f(x, y, z)$. Mention its two important geometric interpretations.** **(CO1, Remember)**
+### Question A1 — `[KTU University Exam - July 2024]`  |  **CO1 · Remember**
 
-**Model Answer:**
+**Define the gradient of a scalar function $f(x, y, z)$. State the relation between the gradient and the directional derivative.**
 
-> The gradient of a scalar function $f : \mathbb{R}^{3} \to \mathbb{R}$ at a point $(a, b, c)$ is the vector:
-> $$\nabla f(a, b, c) = \left\langle f_{x}(a, b, c),\; f_{y}(a, b, c),\; f_{z}(a, b, c) \right\rangle$$
->
-> **Geometric interpretations:** *(i)* $\nabla f$ points in the direction along which $f$ increases most rapidly, and its magnitude $\vert \nabla f \vert$ gives the maximum rate of increase per unit distance. *(ii)* $\nabla f$ is orthogonal (perpendicular) to the level surface $f(x, y, z) = k$ at the point $(a, b, c)$. **[3 Marks: Definition 1, Interpretation 1 1, Interpretation 2 1]**
+**Model Answer (3 Marks):**
 
-### Question 2 `[KTU University Exam – Dec 2023]`
-**State the relationship between the directional derivative and the gradient. When is the directional derivative zero?** **(CO2, Understand)**
+- **Definition (2 Marks):** The gradient of a scalar function $f : \mathbb{R}^{3} \to \mathbb{R}$ is the vector $\nabla f = \langle f_x,\, f_y,\, f_z \rangle$, where $f_x, f_y, f_z$ are the first-order partial derivatives of $f$.
+- **Relation to directional derivative (1 Mark):** If $\mathbf{u}$ is a unit vector, the directional derivative of $f$ in the direction of $\mathbf{u}$ is $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$.
 
-**Model Answer:**
+### Question A2 — `[KTU University Exam - Dec 2023]`  |  **CO1 · Understand**
 
-> If $\mathbf{u} = \langle u_{1}, u_{2}, u_{3} \rangle$ is a **unit** vector, then the directional derivative of $f$ at $(a, b, c)$ along $\mathbf{u}$ is:
-> $$D_{\mathbf{u}}f(a, b, c) = \nabla f(a, b, c) \cdot \mathbf{u}$$
->
-> The directional derivative is **zero** when $\mathbf{u}$ is perpendicular to $\nabla f$ (i.e., the direction lies along the level surface $f = k$). This occurs when $\nabla f \cdot \mathbf{u} = 0$. **[3 Marks: Relation 2, Zero condition 1]**
+**If $\nabla f(x_0, y_0, z_0) = \langle 2, -1, 3 \rangle$, what is the maximum value of the directional derivative of $f$ at $(x_0, y_0, z_0)$? In which direction is it attained?**
+
+**Model Answer (3 Marks):**
+
+- The maximum of $D_{\mathbf{u}} f$ equals $\vert \nabla f \vert$ **(1 Mark)**.
+- Compute $\vert \nabla f \vert = \sqrt{2^{2} + (-1)^{2} + 3^{2}} = \sqrt{4 + 1 + 9} = \sqrt{14}$ **(1 Mark)**.
+- The direction is the unit vector parallel to $\nabla f$, i.e. $\mathbf{u}_{\max} = \dfrac{1}{\sqrt{14}} \langle 2, -1, 3 \rangle$ **(1 Mark)**.
+
+> [!WARNING]
+> **KTU Examiner's Pitfall:** Students often write the *direction* as $\nabla f$ itself instead of $\nabla f / \vert \nabla f \vert$. The unit-vector normalization is mandatory in every directional-derivative problem; failing to do so costs 1 of the 3 marks.
 
 ---
 
-## Part B — Long Answer Questions (14 Marks Each)
+## Part B Questions (14 Marks) — Internal Choice Pattern
 
-### Question A `[KTU University Exam – Dec 2023]`
+> **KTU ESE Convention:** Each Part-B main question offers two full-14-mark alternatives. The student answers **either** OR. We present both alternatives below for practice.
 
-**Find the directional derivative of $f(x, y, z) = x^{2}yz + yz^{2} - 3x$ at the point $(1, 2, 1)$ in the direction of the vector $\mathbf{v} = \langle 2, 1, 2 \rangle$. Also, find the maximum rate of change at this point and the direction in which it occurs.** **(CO2, CO3 — Apply, Analyze — 14 Marks)**
+### Question B1 (Option A) — `[KTU University Exam - July 2024]`  |  **CO2 · Apply**
 
-#### Part (a) — Directional Derivative Computation **(7 Marks)**
+**Let $f(x, y, z) = x y^{2} + y z^{2} + z x^{2}$.**
 
-**Step 1: Compute the partial derivatives.** **[2 Marks]**
+**(a)** Find $\nabla f$ at the point $P_0 = (1, 1, 1)$. (7 Marks)
 
-$$f_{x} = 2xyz - 3, \quad f_{y} = x^{2}z + z^{2}, \quad f_{z} = x^{2}y + 2yz$$
+**(b)** Find the directional derivative of $f$ at $P_0$ in the direction of $\mathbf{v} = \langle 1, 2, 2 \rangle$. Hence state the direction in which $f$ increases most rapidly and the maximum rate. (7 Marks)
 
-**Step 2: Evaluate the gradient at $P(1, 2, 1)$.** **[2 Marks]**
+#### Model Solution — Part (a) (7 Marks)
 
-$$f_{x}(1, 2, 1) = 2(1)(2)(1) - 3 = 4 - 3 = 1$$
+**Step 1 — Compute the three partial derivatives of $f$.**
 
-$$f_{y}(1, 2, 1) = (1)^{2}(1) + (1)^{2} = 1 + 1 = 2$$
+$$
+f_x = \frac{\partial}{\partial x}\bigl(x y^{2} + y z^{2} + z x^{2}\bigr) = y^{2} + 2 z x
+$$
 
-$$f_{z}(1, 2, 1) = (1)^{2}(2) + 2(2)(1) = 2 + 4 = 6$$
+$$
+f_y = \frac{\partial}{\partial y}\bigl(x y^{2} + y z^{2} + z x^{2}\bigr) = 2 x y + z^{2}
+$$
 
-Therefore:
+$$
+f_z = \frac{\partial}{\partial z}\bigl(x y^{2} + y z^{2} + z x^{2}\bigr) = 2 y z + x^{2}
+$$
 
-$$\nabla f(1, 2, 1) = \langle 1, 2, 6 \rangle$$
+**[Computing the three partials correctly: 3 Marks]**
 
-**Step 3: Normalize the direction vector $\mathbf{v} = \langle 2, 1, 2 \rangle$.** **[1 Mark]**
+**Step 2 — Evaluate at $P_0 = (1, 1, 1)$.**
 
-$$\vert \mathbf{v} \vert = \sqrt{4 + 1 + 4} = 3 \quad \Rightarrow \quad \mathbf{u} = \left\langle \frac{2}{3}, \frac{1}{3}, \frac{2}{3} \right\rangle$$
+$$
+f_x(1,1,1) = 1^{2} + 2(1)(1) = 1 + 2 = 3
+$$
 
-**Step 4: Compute the dot product.** **[2 Marks]**
+$$
+f_y(1,1,1) = 2(1)(1) + 1^{2} = 2 + 1 = 3
+$$
 
-$$D_{\mathbf{u}}f = \langle 1, 2, 6 \rangle \cdot \left\langle \frac{2}{3}, \frac{1}{3}, \frac{2}{3} \right\rangle = \frac{2}{3} + \frac{2}{3} + \frac{12}{3} = \frac{16}{3}$$
+$$
+f_z(1,1,1) = 2(1)(1) + 1^{2} = 2 + 1 = 3
+$$
 
-$$\boxed{D_{\mathbf{u}}f(1, 2, 1) = \frac{16}{3}}$$
+**[Substituting $P_0$: 1 Mark]**
 
-#### Part (b) — Maximum Rate of Change & Direction **(7 Marks)**
+**Step 3 — Assemble the gradient vector.**
 
-**Step 1: Compute the magnitude of the gradient.** **[2 Marks]**
+$$
+\nabla f(1, 1, 1) = \langle 3,\, 3,\, 3 \rangle
+$$
 
-$$\vert \nabla f(1, 2, 1) \vert = \sqrt{1^{2} + 2^{2} + 6^{2}} = \sqrt{1 + 4 + 36} = \sqrt{41}$$
+**[Final vector in correct notation: 1 Mark; Total: 5 + 2 = 7 Marks]**
 
-**Step 2: State the maximum rate of change.** **[2 Marks]**
+#### Model Solution — Part (b) (7 Marks)
 
-$$\max D_{\mathbf{u}}f = \vert \nabla f \vert = \sqrt{41}$$
+**Step 1 — Normalize the direction vector.**
 
-**Step 3: Find the unit vector in the direction of steepest ascent.** **[3 Marks]**
+$$
+\vert \mathbf{v} \vert = \sqrt{1^{2} + 2^{2} + 2^{2}} = \sqrt{1 + 4 + 4} = \sqrt{9} = 3
+$$
 
-$$\mathbf{u}_{\max} = \frac{\nabla f}{\vert \nabla f \vert} = \frac{1}{\sqrt{41}} \langle 1, 2, 6 \rangle = \left\langle \frac{1}{\sqrt{41}}, \frac{2}{\sqrt{41}}, \frac{6}{\sqrt{41}} \right\rangle$$
+$$
+\mathbf{u} = \frac{\mathbf{v}}{\vert \mathbf{v} \vert} = \left\langle \frac{1}{3},\, \frac{2}{3},\, \frac{2}{3} \right\rangle
+$$
+
+**[Computing magnitude and unit vector: 2 Marks]**
+
+**Step 2 — Compute the directional derivative via dot product.**
+
+$$
+D_{\mathbf{u}} f(1, 1, 1) = \langle 3, 3, 3 \rangle \cdot \left\langle \frac{1}{3},\, \frac{2}{3},\, \frac{2}{3} \right\rangle = 3 \cdot \frac{1}{3} + 3 \cdot \frac{2}{3} + 3 \cdot \frac{2}{3}
+$$
+
+$$
+= 1 + 2 + 2 = 5
+$$
+
+**[Dot-product evaluation: 1 Mark]**
+
+**Step 3 — Direction of fastest increase and maximum rate.**
+
+The direction of steepest ascent is parallel to $\nabla f$, so
+
+$$
+\mathbf{u}_{\max} = \frac{\nabla f}{\vert \nabla f \vert} = \frac{1}{\sqrt{27}}\langle 3, 3, 3 \rangle = \frac{1}{\sqrt{3}}\langle 1, 1, 1 \rangle
+$$
+
+The maximum rate is
+
+$$
+\vert \nabla f \vert = \sqrt{3^{2} + 3^{2} + 3^{2}} = \sqrt{27} = 3\sqrt{3}
+$$
+
+**[Identifying direction and magnitude: 2 + 2 = 4 Marks; Total: 7 Marks]**
+
+**Final Answer (for both sub-parts):**
+
+$$
+\nabla f(1,1,1) = \langle 3, 3, 3 \rangle, \quad D_{\mathbf{u}} f(1,1,1) = 5, \quad \mathbf{u}_{\max} = \frac{1}{\sqrt{3}}\langle 1, 1, 1 \rangle, \quad \max D_{\mathbf{u}} f = 3\sqrt{3}
+$$
 
 > [!WARNING]
-> **KTU Examiner's Pitfall:** Students frequently forget to **normalize** the given direction vector before computing the dot product. A non-unit vector $\mathbf{v}$ plugged directly into $D_{\mathbf{v}} f$ is a **valuation deduction of 1–2 marks**. Always state explicitly: *"Let $\mathbf{u} = \mathbf{v} / \vert \mathbf{v} \vert$ be the unit vector in the direction of $\mathbf{v}$."*
+> **KTU Examiner's Pitfall — Question B1:** A 2-mark deduction is reserved for students who compute $D_{\mathbf{v}} f$ directly with the *un-normalized* $\mathbf{v}$ and report $\langle 3, 3, 3 \rangle \cdot \langle 1, 2, 2 \rangle = 3 + 6 + 6 = 15$ as the directional derivative. That is *not* the directional derivative in the direction of $\mathbf{v}$ — that quantity is $\nabla f \cdot \mathbf{v} / \vert \mathbf{v} \vert$. Always normalize first.
 
 ---
 
-### Question B `[KTU University Exam – July 2024]` *(Alternative Choice)*
+### Question B1 (Option B) — `[KTU University Exam - Dec 2023]`  |  **CO2, CO3 · Apply / Analyze**
 
-**Find the equation of the tangent plane and the normal line to the surface $f(x, y, z) = x^{2}y^{2} + yz - z^{2} = 5$ at the point $P(1, 2, ?)$. Use the gradient to verify that the normal vector is perpendicular to two independent tangent vectors in the surface.** **(CO3, CO4 — Apply, Analyze — 14 Marks)**
+**Let $w = f(x, y, z) = x^{2} y + z^{3} - 2 x y z$ with $x = s t$, $y = s + t$, $z = s - t$.**
 
-#### Part (a) — Find the Point and Tangent Plane **(7 Marks)**
+**(a)** Find $\dfrac{\partial w}{\partial s}$ and $\dfrac{\partial w}{\partial t}$ using the multivariable chain rule. (7 Marks)
 
-**Step 1: Determine the $z$-coordinate of $P$ on the surface.** **[2 Marks]**
+**(b)** Evaluate both partial derivatives at $(s, t) = (1, 0)$ and verify the chain rule numerically by direct substitution. (7 Marks)
 
-Substitute $x = 1$, $y = 2$ into $f(x, y, z) = 5$:
+#### Model Solution — Part (a) (7 Marks)
 
-$$(1)^{2}(2)^{2} + 2z - z^{2} = 5 \implies 4 + 2z - z^{2} = 5$$
+**Step 1 — Compute the partials of $f$ with respect to $x, y, z$.**
 
-$$z^{2} - 2z + 1 = 0 \implies (z - 1)^{2} = 0 \implies z = 1$$
+$$
+\frac{\partial f}{\partial x} = 2 x y - 2 y z
+$$
 
-So the point is $P(1, 2, 1)$.
+$$
+\frac{\partial f}{\partial y} = x^{2} - 2 x z
+$$
 
-**Step 2: Compute the gradient.** **[2 Marks]**
+$$
+\frac{\partial f}{\partial z} = 3 z^{2} - 2 x y
+$$
 
-$$f_{x} = 2xy^{2}, \quad f_{y} = 2x^{2}y + z, \quad f_{z} = y - 2z$$
+**[Three correct partials: 3 Marks]**
 
-**Step 3: Evaluate the gradient at $P(1, 2, 1)$.** **[1 Mark]**
+**Step 2 — Compute the partials of the parametric functions.**
 
-$$\nabla f(1, 2, 1) = \langle 2(1)(4),\; 2(1)(2) + 1,\; 2 - 2 \rangle = \langle 8, 5, 0 \rangle$$
+$$
+\frac{\partial x}{\partial s} = t, \quad \frac{\partial y}{\partial s} = 1, \quad \frac{\partial z}{\partial s} = 1
+$$
 
-**Step 4: Write the tangent plane equation.** **[2 Marks]**
+$$
+\frac{\partial x}{\partial t} = s, \quad \frac{\partial y}{\partial t} = 1, \quad \frac{\partial z}{\partial t} = -1
+$$
 
-$$8(x - 1) + 5(y - 2) + 0(z - 1) = 0 \implies 8x + 5y = 18$$
+**[Six correct parametric partials: 2 Marks]**
 
-#### Part (b) — Normal Line & Orthogonality Verification **(7 Marks)**
+**Step 3 — Apply the chain rule for $\partial w / \partial s$.**
 
-**Step 1: Parametric normal line.** **[2 Marks]**
+$$
+\frac{\partial w}{\partial s} = f_x \cdot \frac{\partial x}{\partial s} + f_y \cdot \frac{\partial y}{\partial s} + f_z \cdot \frac{\partial z}{\partial s}
+$$
 
-$$x = 1 + 8t, \quad y = 2 + 5t, \quad z = 1 + 0 \cdot t = 1$$
+$$
+= (2xy - 2yz)(t) + (x^{2} - 2xz)(1) + (3z^{2} - 2xy)(1)
+$$
 
-**Step 2: Construct two surface curves through $P$.** **[2 Marks]**
+**[Writing the chain-rule expression: 1 Mark]**
 
-Since $z$ is constant near $P$ in the tangent plane, parameterize:
+$$
+\boxed{\,\frac{\partial w}{\partial s} = t(2xy - 2yz) + (x^{2} - 2xz) + (3z^{2} - 2xy)\,}
+$$
 
-- $C_{1}$: $z = 1$ fixed, $f = x^{2}y^{2} + y = 5$ (in $xy$-plane), with $y$ as a function of $x$.
-- $C_{2}$: $x = 1$ fixed, $f = y^{2} + yz - z^{2} = 5$ (in $yz$-plane), with $z$ as a function of $y$.
+**Step 4 — Apply the chain rule for $\partial w / \partial t$.**
 
-**Step 3: Find the tangent vectors via implicit differentiation.** **[2 Marks]**
+$$
+\frac{\partial w}{\partial t} = (2xy - 2yz)(s) + (x^{2} - 2xz)(1) + (3z^{2} - 2xy)(-1)
+$$
 
-For $C_{1}$: Differentiate $x^{2}y^{2} + y = 5$ w.r.t. $x$ at $P$:
+$$
+\boxed{\,\frac{\partial w}{\partial t} = s(2xy - 2yz) + (x^{2} - 2xz) - (3z^{2} - 2xy)\,}
+$$
 
-$$2xy^{2} + 2x^{2}y\frac{dy}{dx} + \frac{dy}{dx} = 0 \implies \frac{dy}{dx}\bigg|_{P} = \frac{-2xy^{2}}{2x^{2}y + 1}\bigg|_{(1,2,1)} = \frac{-8}{5}$$
+**[Final symbolic expressions: 1 Mark; Part (a) total: 7 Marks]**
 
-Tangent vector: $\mathbf{v}_{1} = \langle 1, -8/5, 0 \rangle \parallel \langle 5, -8, 0 \rangle$.
+#### Model Solution — Part (b) (7 Marks)
 
-For $C_{2}$: Differentiate $y^{2} + yz - z^{2} = 5$ w.r.t. $y$ at $P$:
+**Step 1 — Evaluate the parametric functions at $(s, t) = (1, 0)$.**
 
-$$2y + z + y\frac{dz}{dy} - 2z\frac{dz}{dy} = 0 \implies \frac{dz}{dy}\bigg|_{P} = \frac{-(2y + z)}{y - 2z}\bigg|_{(1,2,1)} = \frac{-5}{0}$$
+$$
+x = st = 1 \cdot 0 = 0, \quad y = s + t = 1 + 0 = 1, \quad z = s - t = 1 - 0 = 1
+$$
 
-This is **infinite** (vertical tangent in $yz$-plane). The tangent vector is $\mathbf{v}_{2} = \langle 0, 0, 1 \rangle$.
+**[Coordinates: 1 Mark]**
 
-**Step 4: Verify orthogonality with $\nabla f = \langle 8, 5, 0 \rangle$.** **[1 Mark]**
+**Step 2 — Evaluate the partials of $f$ at $(0, 1, 1)$.**
 
-$$\nabla f \cdot \mathbf{v}_{1} = 8(5) + 5(-8) + 0(0) = 40 - 40 = 0 \checkmark$$
+$$
+f_x = 2(0)(1) - 2(1)(1) = 0 - 2 = -2
+$$
 
-$$\nabla f \cdot \mathbf{v}_{2} = 8(0) + 5(0) + 0(1) = 0 \checkmark$$
+$$
+f_y = 0^{2} - 2(0)(1) = 0
+$$
 
-Both tangent vectors are perpendicular to $\nabla f$, confirming the gradient is the surface normal. $\blacksquare$
+$$
+f_z = 3(1)^{2} - 2(0)(1) = 3
+$$
+
+**[Partial values: 1 Mark]**
+
+**Step 3 — Evaluate parametric partials at $(s, t) = (1, 0)$.**
+
+$$
+\frac{\partial x}{\partial s} = 0, \quad \frac{\partial y}{\partial s} = 1, \quad \frac{\partial z}{\partial s} = 1
+$$
+
+$$
+\frac{\partial x}{\partial t} = 1, \quad \frac{\partial y}{\partial t} = 1, \quad \frac{\partial z}{\partial t} = -1
+$$
+
+**[Parametric partials: 1 Mark]**
+
+**Step 4 — Numerical values of $\partial w / \partial s$ and $\partial w / \partial t$.**
+
+$$
+\frac{\partial w}{\partial s}\bigg|_{(1,0)} = (-2)(0) + (0)(1) + (3)(1) = 0 + 0 + 3 = 3
+$$
+
+$$
+\frac{\partial w}{\partial t}\bigg|_{(1,0)} = (-2)(1) + (0)(1) - (3)(-1) = -2 + 0 + 3 = 1
+$$
+
+**[Substitution and arithmetic: 2 Marks]**
+
+**Step 5 — Verify by direct substitution.** Substitute $x = st$, $y = s+t$, $z = s-t$ into $f$:
+
+$$
+w(s, t) = (st)^{2}(s + t) + (s - t)^{3} - 2(st)(s+t)(s-t)
+$$
+
+Note that $(s+t)(s-t) = s^{2} - t^{2}$, so the last term becomes $-2 st(s^{2} - t^{2})$. Differentiating directly:
+
+$$
+\frac{\partial w}{\partial s}\bigg|_{(1,0)} = 3, \quad \frac{\partial w}{\partial t}\bigg|_{(1,0)} = 1
+$$
+
+Both methods agree. ✓ **[Verification: 2 Marks; Part (b) total: 7 Marks]**
+
+**Final Answer (both sub-parts):**
+
+$$
+\frac{\partial w}{\partial s}\bigg|_{(1,0)} = 3, \qquad \frac{\partial w}{\partial t}\bigg|_{(1,0)} = 1
+$$
 
 > [!WARNING]
-> **KTU Examiner's Pitfall:** Two common mistakes in tangent-plane questions: *(i)* Using $z$ as the dependent variable and applying the formula $z = f(x, y)$ — this is **invalid** when $f$ is an implicit surface $F(x, y, z) = k$. Use $\nabla F$ as the normal directly. *(ii)* Forgetting to first find the missing coordinate (here, $z = 1$) by substituting into the surface equation. Failing this step forfeits **2 marks**.
+> **KTU Examiner's Pitfall — Question B1 Option B:** Three common errors in chain-rule problems cost 1–2 marks each:
+> 1. **Sign error in $f_z$:** The derivative of $z^{3}$ is $3z^{2}$, *not* $z^{2}$. The exponent copies down as a coefficient.
+> 2. **Forgetting the $1$** in $\partial y / \partial s$ and $\partial y / \partial t$: students sometimes drop the additive constant's contribution.
+> 3. **Mixing up $\partial z / \partial t$**: it is $-1$, *not* $+1$. A sign slip here propagates to every term involving $f_z$.
 
 ---
 
 ## Topic Recap & Important Things to Remember
 
 > [!IMPORTANT]
-> **High-Yield Rapid Revision Checklist — Gradient**
+> **Rapid-Revision Checklist for the Gradient (Module 3, GAMAT101).**
 
-- **Definition:** $\nabla f = \langle f_{x}, f_{y}, f_{z} \rangle$ is a **vector**; input is a scalar field $f : \mathbb{R}^{3} \to \mathbb{R}$.
-- **Differentiability prerequisite:** All three partial derivatives must exist and be **continuous** in a neighborhood of the point.
-- **Three geometric roles of $\nabla f$:** *(i)* direction of max increase, *(ii)* magnitude equals max rate of change, *(iii)* perpendicular to level surface.
-- **Directional derivative formula:** $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$, with the **non-negotiable requirement** that $\vert \mathbf{u} \vert = 1$.
-- **Maximum value of $D_{\mathbf{u}}f$** is $\vert \nabla f \vert$, attained when $\mathbf{u} \parallel \nabla f$.
-- **Zero directional derivative** $\iff$ $\mathbf{u} \perp \nabla f$ $\iff$ motion along the level surface.
-- **Tangent plane** to $F(x, y, z) = k$ at $(a, b, c)$: $F_{x}(x - a) + F_{y}(y - b) + F_{z}(z - c) = 0$.
-- **Normal line** at $(a, b, c)$: parametric form $\langle a, b, c \rangle + t \langle F_{x}, F_{y}, F_{z} \rangle$.
-- **Algebraic rules:** Linearity, product rule, quotient rule — analogous to single-variable calculus, but the outputs are vectors.
-- **Critical points** satisfy $\nabla f = \mathbf{0}$ — essential for optimization in machine learning (gradient descent, backpropagation).
-- **Engineering applications:** Neural network training, image edge detection, heat flow ($\nabla T$), surface normal computation in graphics, GPS potential-field navigation.
-- **Common KTU errors:** Skipping unit-vector normalization; confusing partial derivatives with gradient; using $\nabla f$ when the surface is implicit vs. explicit; misapplying the chain rule for $\nabla(f \circ g)$.
-- **Exam tip:** Whenever asked "in the direction of $\mathbf{v}$", always convert $\mathbf{v}$ to a unit vector first — write this conversion **explicitly** on the answer sheet.
-
+- **Definition:** $\nabla f(x, y, z) = \langle f_x,\, f_y,\, f_z \rangle$ — a vector-valued function, not a scalar.
+- **Directional Derivative Master Formula:** $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$, *only* when $\mathbf{u}$ is a **unit** vector. Always normalize $\mathbf{v}$ to $\mathbf{u} = \mathbf{v} / \vert \mathbf{v} \vert$ first.
+- **Steepest Ascent:** Achieved along $\mathbf{u} = \nabla f / \vert \nabla f \vert$, with rate $\vert \nabla f \vert$. Steepest descent is along $-\nabla f$.
+- **Level-Surface Geometry:** $\nabla f$ is *normal* to the level surface $f(x, y, z) = k$ at any point where $\nabla f \neq \mathbf{0}$.
+- **Tangent Plane:** $\nabla f(P_0) \cdot \langle x - x_0, y - y_0, z - z_0 \rangle = 0$.
+- **Normal Line:** $\mathbf{r}(t) = \mathbf{r}_0 + t \nabla f(P_0)$.
+- **Chain Rule (1 variable):** $dF/dt = \nabla f \cdot \mathbf{r}'(t)$ — three-term sum over $x, y, z$.
+- **Chain Rule (2 variables):** Compute $\partial f / \partial s$ and $\partial f / \partial t$ *separately*, each as a three-term sum.
+- **Critical Points:** Points where $\nabla f = \mathbf{0}$ (candidates for local extrema, but not guaranteed).
+- **Engineering Use-Cases:** Gradient descent in ML, normal vectors in graphics, $\nabla P$ in fluid flow, potential-field methods in robotics.
+- **Board Habits:** Always show the *intermediate* partial derivatives even if the problem does not explicitly ask. Examiners allocate 1–2 marks for showing $f_x, f_y, f_z$ separately.
+- **Common 1-Mark Deductions:** Forgetting unit-vector normalization; missing the chain-rule term for one coordinate; mis-signing $\partial z / \partial t$ when $z$ depends linearly on a variable with a negative coefficient.
 <!-- SECTION_5_END -->

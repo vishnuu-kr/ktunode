@@ -1,0 +1,15 @@
+{
+  "course_name": "OPERATING SYSTEMS LAB",
+  "course_code": "PCCSL407",
+  "module_number": 5,
+  "module_title": "Write a program to add two integers received via the command line and c",
+  "topics_generated": [
+    {
+      "title": "Write a program to add two integers (received via the command line) and compile it to an executable named “ myadder ”. Now write another program that creates a new process using a fork system call. Make the child process add two integers by replacing its image with the “ myadder ” image using execvp system call.",
+      "slug": "write-a-program-to-add-two-integers-received-via-the-command-line-and-compile-it-to-an-executable",
+      "path": "write-a-program-to-add-two-integers-received-via-the-command-line-and-compile-it-to-an-executable/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

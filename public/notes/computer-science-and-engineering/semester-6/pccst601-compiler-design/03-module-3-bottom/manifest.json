@@ -1,0 +1,99 @@
+{
+  "course_name": "COMPILER DESIGN",
+  "course_code": "PCCST601",
+  "module_number": 3,
+  "module_title": "Bottom",
+  "topics_generated": [
+    {
+      "title": "Bottom-Up Parsing - Shift Reduce Parser",
+      "slug": "bottom-up-parsing-shift-reduce-parser",
+      "path": "bottom-up-parsing-shift-reduce-parser/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The LR(1) Parsing Algorithm",
+      "slug": "the-lr-1-parsing-algorithm",
+      "path": "the-lr-1-parsing-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Building LR(1) Tables",
+      "slug": "building-lr-1-tables",
+      "path": "building-lr-1-tables/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Errors in the Table Construction",
+      "slug": "errors-in-the-table-construction",
+      "path": "errors-in-the-table-construction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Reducing the Size of LR (1) Tables",
+      "slug": "reducing-the-size-of-lr-1-tables",
+      "path": "reducing-the-size-of-lr-1-tables/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hands-on:  Building a calculator with YACC",
+      "slug": "hands-on-building-a-calculator-with-yacc",
+      "path": "hands-on-building-a-calculator-with-yacc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Intermediate Representations: An IR Taxonomy",
+      "slug": "intermediate-representations-an-ir-taxonomy",
+      "path": "intermediate-representations-an-ir-taxonomy/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graphical IRs - Syntax-Related Trees",
+      "slug": "graphical-irs-syntax-related-trees",
+      "path": "graphical-irs-syntax-related-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graphs",
+      "slug": "graphs",
+      "path": "graphs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear IRs - Stack-Machine Code - Three-Address Code - Representing Linear Codes",
+      "slug": "linear-irs-stack-machine-code-three-address-code-representing-linear-codes",
+      "path": "linear-irs-stack-machine-code-three-address-code-representing-linear-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Syntax-Driven Translation:  Introduction",
+      "slug": "syntax-driven-translation-introduction",
+      "path": "syntax-driven-translation-introduction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Translating Expressions",
+      "slug": "translating-expressions",
+      "path": "translating-expressions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Translating Control-Flow Statements",
+      "slug": "translating-control-flow-statements",
+      "path": "translating-control-flow-statements/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    }
+  ]
+}

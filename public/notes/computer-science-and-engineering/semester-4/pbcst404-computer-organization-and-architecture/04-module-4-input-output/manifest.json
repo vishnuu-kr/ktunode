@@ -1,0 +1,50 @@
+{
+  "course_name": "COMPUTER ORGANIZATION AND ARCHITECTURE",
+  "course_code": "PBCST404",
+  "module_number": 4,
+  "module_title": "Input output",
+  "topics_generated": [
+    {
+      "title": "Input / Output -  External Devices",
+      "slug": "input-output-external-devices",
+      "path": "input-output-external-devices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "I/O Modules",
+      "slug": "i-o-modules",
+      "path": "i-o-modules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Programmed I/O",
+      "slug": "programmed-i-o",
+      "path": "programmed-i-o/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interrupt Driven I/O",
+      "slug": "interrupt-driven-i-o",
+      "path": "interrupt-driven-i-o/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Direct Memory Access",
+      "slug": "direct-memory-access",
+      "path": "direct-memory-access/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Embedded I/O Systems - Embedded I/O, General Purpose I/O, Serial I/O, Other Peripherals.",
+      "slug": "embedded-i-o-systems-embedded-i-o-general-purpose-i-o-serial-i-o-other-peripherals",
+      "path": "embedded-i-o-systems-embedded-i-o-general-purpose-i-o-serial-i-o-other-peripherals/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "course_name": "MACHINE LEARNING",
+  "course_code": "PCCST503",
+  "module_number": 1,
+  "module_title": "Introduction to ml",
+  "topics_generated": [
+    {
+      "title": "Introduction to ML :-",
+      "slug": "introduction-to-ml",
+      "path": "introduction-to-ml/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Machine Learning vs. Traditional Programming",
+      "slug": "machine-learning-vs-traditional-programming",
+      "path": "machine-learning-vs-traditional-programming/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Machine learning paradigms - supervised, semi-supervised, unsupervised,  reinforcement learning.",
+      "slug": "machine-learning-paradigms-supervised-semi-supervised-unsupervised-reinforcement-learning",
+      "path": "machine-learning-paradigms-supervised-semi-supervised-unsupervised-reinforcement-learning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parameter Estimation - Maximum likelihood estimation (MLE) and maximum aposteriori estimation (MAP)",
+      "slug": "parameter-estimation-maximum-likelihood-estimation-mle-and-maximum-aposteriori-estimation-map",
+      "path": "parameter-estimation-maximum-likelihood-estimation-mle-and-maximum-aposteriori-estimation-map/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Bayesian formulation.",
+      "slug": "bayesian-formulation",
+      "path": "bayesian-formulation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Supervised Learning :-",
+      "slug": "supervised-learning",
+      "path": "supervised-learning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Feature Representation and Problem Formulation",
+      "slug": "feature-representation-and-problem-formulation",
+      "path": "feature-representation-and-problem-formulation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Role of loss functions and optimization",
+      "slug": "role-of-loss-functions-and-optimization",
+      "path": "role-of-loss-functions-and-optimization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Regression - Linear regression with one variable",
+      "slug": "regression-linear-regression-with-one-variable",
+      "path": "regression-linear-regression-with-one-variable/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear regression with multiple variables : solution using gradient descent algorithm and matrix method.",
+      "slug": "linear-regression-with-multiple-variables-solution-using-gradient-descent-algorithm-and-matrix",
+      "path": "linear-regression-with-multiple-variables-solution-using-gradient-descent-algorithm-and-matrix/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

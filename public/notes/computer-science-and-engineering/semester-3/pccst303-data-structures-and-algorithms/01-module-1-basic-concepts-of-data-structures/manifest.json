@@ -2,40 +2,96 @@
   "course_name": "DATA STRUCTURES AND ALGORITHMS",
   "course_code": "PCCST303",
   "module_number": 1,
-  "module_title": "Basic Concepts of Data Structures",
+  "module_title": "Basic concepts of data structures",
   "topics_generated": [
     {
-      "title": "Definitions and Data Abstraction",
-      "slug": "definitions-and-data-abstraction",
-      "path": "definitions-and-data-abstraction/notes.md",
+      "title": "Basic Concepts of Data Structures",
+      "slug": "basic-concepts-of-data-structures",
+      "path": "basic-concepts-of-data-structures/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Performance Analysis: Time & Space Complexity, Asymptotic Notations ($O$, $\\Omega$, $\\Theta$)",
-      "slug": "performance-analysis-time-space-complexity-asymptotic-notations-o-omega-theta",
-      "path": "performance-analysis-time-space-complexity-asymptotic-notations-o-omega-theta/notes.md",
+      "title": "Definitions",
+      "slug": "definitions",
+      "path": "definitions/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Polynomial representation using Arrays, Sparse matrix (Tuple representation)",
-      "slug": "polynomial-representation-using-arrays-sparse-matrix-tuple-representation",
-      "path": "polynomial-representation-using-arrays-sparse-matrix-tuple-representation/notes.md",
+      "title": "Data Abstraction",
+      "slug": "data-abstraction",
+      "path": "data-abstraction/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Stacks and Queues: Stacks, Multi-Stacks, Queues, Circular Queues, Double Ended Queues (Deques)",
-      "slug": "stacks-and-queues-stacks-multi-stacks-queues-circular-queues-double-ended-queues-deques",
-      "path": "stacks-and-queues-stacks-multi-stacks-queues-circular-queues-double-ended-queues-deques/notes.md",
+      "title": "Performance Analysis - Time & Space Complexity, Asymptotic Notations",
+      "slug": "performance-analysis-time-space-complexity-asymptotic-notations",
+      "path": "performance-analysis-time-space-complexity-asymptotic-notations/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Evaluation of Expressions: Infix to Postfix conversion, Evaluating Postfix Expressions",
-      "slug": "evaluation-of-expressions-infix-to-postfix-conversion-evaluating-postfix-expressions",
-      "path": "evaluation-of-expressions-infix-to-postfix-conversion-evaluating-postfix-expressions/notes.md",
+      "title": "Polynomial representation using Arrays",
+      "slug": "polynomial-representation-using-arrays",
+      "path": "polynomial-representation-using-arrays/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sparse matrix ( Tuple representation )",
+      "slug": "sparse-matrix-tuple-representation",
+      "path": "sparse-matrix-tuple-representation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Stacks and Queues - Stacks",
+      "slug": "stacks-and-queues-stacks",
+      "path": "stacks-and-queues-stacks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Multi-Stacks",
+      "slug": "multi-stacks",
+      "path": "multi-stacks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Queues",
+      "slug": "queues",
+      "path": "queues/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Circular Queues",
+      "slug": "circular-queues",
+      "path": "circular-queues/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Double Ended Queues",
+      "slug": "double-ended-queues",
+      "path": "double-ended-queues/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluation of Expressions- Infix to Postfix",
+      "slug": "evaluation-of-expressions-infix-to-postfix",
+      "path": "evaluation-of-expressions-infix-to-postfix/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluating Postfix Expressions",
+      "slug": "evaluating-postfix-expressions",
+      "path": "evaluating-postfix-expressions/notes.md",
       "has_mermaid": true,
       "has_math": true
     }

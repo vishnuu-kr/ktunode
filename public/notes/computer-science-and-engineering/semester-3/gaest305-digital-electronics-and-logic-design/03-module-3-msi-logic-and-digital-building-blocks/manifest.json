@@ -1,0 +1,43 @@
+{
+  "course_name": "DIGITAL ELECTRONICS AND LOGIC DESIGN",
+  "course_code": "GAEST305",
+  "module_number": 3,
+  "module_title": "Msi logic and digital building blocks",
+  "topics_generated": [
+    {
+      "title": "MSI Logic and Digital Building Blocks",
+      "slug": "msi-logic-and-digital-building-blocks",
+      "path": "msi-logic-and-digital-building-blocks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "MSI logic - Decoders (One-Hot decoder, 7 segment display decoder), Encoders, Multiplexers, Demultiplexers",
+      "slug": "msi-logic-decoders-one-hot-decoder-7-segment-display-decoder-encoders-multiplexers-demultiplexers",
+      "path": "msi-logic-decoders-one-hot-decoder-7-segment-display-decoder-encoders-multiplexers-demultiplexers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Digital Building Blocks - Arithmetic Circuits - Half adder, Full adder, half subtractor, full subtractor",
+      "slug": "digital-building-blocks-arithmetic-circuits-half-adder-full-adder-half-subtractor-full-subtractor",
+      "path": "digital-building-blocks-arithmetic-circuits-half-adder-full-adder-half-subtractor-full-subtractor/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Comparators.",
+      "slug": "comparators",
+      "path": "comparators/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Structural design and hierarchy - lower level module instantiation, gate level primitives, user defined primitives, adding delay to primitives.",
+      "slug": "structural-design-and-hierarchy-lower-level-module-instantiation-gate-level-primitives-user-defined",
+      "path": "structural-design-and-hierarchy-lower-level-module-instantiation-gate-level-primitives-user-defined/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

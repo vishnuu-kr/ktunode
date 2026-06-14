@@ -1,0 +1,85 @@
+{
+  "course_name": "DEEP LEARNING",
+  "course_code": "PECST632",
+  "module_number": 3,
+  "module_title": "Cnn",
+  "topics_generated": [
+    {
+      "title": "CNN-Architectural Overview",
+      "slug": "cnn-architectural-overview",
+      "path": "cnn-architectural-overview/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Motivation",
+      "slug": "motivation",
+      "path": "motivation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Layers",
+      "slug": "layers",
+      "path": "layers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Filters",
+      "slug": "filters",
+      "path": "filters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parameter sharing",
+      "slug": "parameter-sharing",
+      "path": "parameter-sharing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Regularization",
+      "slug": "regularization",
+      "path": "regularization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Popular CNN Architectures: ResNet, Alexnet –Applications",
+      "slug": "popular-cnn-architectures-resnet-alexnet-applications",
+      "path": "popular-cnn-architectures-resnet-alexnet-applications/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Recurrent Neural Networks",
+      "slug": "recurrent-neural-networks",
+      "path": "recurrent-neural-networks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Bidirectional RNNs",
+      "slug": "bidirectional-rnns",
+      "path": "bidirectional-rnns/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Encoder –decoder sequence to sequence architectures – BPTT for training RNN",
+      "slug": "encoder-decoder-sequence-to-sequence-architectures-bptt-for-training-rnn",
+      "path": "encoder-decoder-sequence-to-sequence-architectures-bptt-for-training-rnn/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Long Short Term Memory Networks.",
+      "slug": "long-short-term-memory-networks",
+      "path": "long-short-term-memory-networks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

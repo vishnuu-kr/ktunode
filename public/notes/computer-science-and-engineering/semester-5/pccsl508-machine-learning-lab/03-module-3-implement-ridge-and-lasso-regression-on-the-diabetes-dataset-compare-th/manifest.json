@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 3,
+  "module_title": "Implement ridge and lasso regression on the diabetes dataset compare th",
+  "topics_generated": [
+    {
+      "title": "Implement Ridge and Lasso regression on the Diabetes dataset. Compare the performance of these regularized models with standard linear regression.",
+      "slug": "implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-the-performance-of-these",
+      "path": "implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-the-performance-of-these/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the dataset.",
+      "slug": "load-and-preprocess-the-dataset",
+      "path": "load-and-preprocess-the-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement Ridge and Lasso regression.",
+      "slug": "implement-ridge-and-lasso-regression",
+      "path": "implement-ridge-and-lasso-regression/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tune hyperparameters using cross-validation.",
+      "slug": "tune-hyperparameters-using-cross-validation",
+      "path": "tune-hyperparameters-using-cross-validation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compare performance metrics (MSE, R-squared) with standard linear regression.",
+      "slug": "compare-performance-metrics-mse-r-squared-with-standard-linear-regression",
+      "path": "compare-performance-metrics-mse-r-squared-with-standard-linear-regression/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

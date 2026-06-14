@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPUTER NETWORKS",
+  "course_code": "PCCST501",
+  "module_number": 3,
+  "module_title": "Data",
+  "topics_generated": [
+    {
+      "title": "Data-Link Layer: Data link control (DLC), Multiple access protocols (MAC), Link-layer addressing, Ethernet protocol, Connecting devices (Book 1 Ch 5)",
+      "slug": "data-link-layer-data-link-control-dlc-multiple-access-protocols-mac-link-layer-addressing-ethernet",
+      "path": "data-link-layer-data-link-control-dlc-multiple-access-protocols-mac-link-layer-addressing-ethernet/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Wireless LANs, Mobile IP (Book 1 Ch 6)",
+      "slug": "wireless-lans-mobile-ip-book-1-ch-6",
+      "path": "wireless-lans-mobile-ip-book-1-ch-6/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hands-on: Datalink Provider Interface, SOCK_PACKET and PF_PACKET (Book 2 Ch 29)",
+      "slug": "hands-on-datalink-provider-interface-sock-packet-and-pf-packet-book-2-ch-29",
+      "path": "hands-on-datalink-provider-interface-sock-packet-and-pf-packet-book-2-ch-29/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

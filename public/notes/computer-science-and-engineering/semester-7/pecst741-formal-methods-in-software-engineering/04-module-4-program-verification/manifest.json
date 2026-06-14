@@ -1,0 +1,50 @@
+{
+  "course_name": "FORMAL METHODS IN SOFTWARE ENGINEERING",
+  "course_code": "PECST741",
+  "module_number": 4,
+  "module_title": "Program verification",
+  "topics_generated": [
+    {
+      "title": "Program Verification:-",
+      "slug": "program-verification",
+      "path": "program-verification/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Inter-procedure verification of programs in VCC",
+      "slug": "inter-procedure-verification-of-programs-in-vcc",
+      "path": "inter-procedure-verification-of-programs-in-vcc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "function contracts",
+      "slug": "function-contracts",
+      "path": "function-contracts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "pure functions",
+      "slug": "pure-functions",
+      "path": "pure-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "loop invariants",
+      "slug": "loop-invariants",
+      "path": "loop-invariants/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "proving total correctness of programs in VCC.",
+      "slug": "proving-total-correctness-of-programs-in-vcc",
+      "path": "proving-total-correctness-of-programs-in-vcc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

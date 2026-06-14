@@ -1,815 +1,695 @@
 # Limits for functions of two variables
 
 <!-- SECTION_1_START -->
+# Limits for Functions of Two Variables
 
-# Limits of Functions of Two Variables
+## Formal KTU Definition
 
-## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
+Let $f : D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ be a real-valued function defined on a domain $D$ in the $xy$-plane. Let $(a, b)$ be an **accumulation point** (limit point) of $D$ — meaning every deleted neighbourhood of $(a, b)$ contains at least one point of $D$, even if $f$ is not defined at $(a, b)$ itself.
 
-Let $f : D \subseteq \mathbb{R}^2 \to \mathbb{R}$ be a function of two variables defined on a domain $D$ in the $xy$-plane. Let $(a, b)$ be a point such that every open disk centered at $(a, b)$ contains at least one point of $D$ other than $(a, b)$ itself. We say that the **limit of $f(x, y)$ as $(x, y)$ approaches $(a, b)$ is the real number $L$**, written as
+We write
 
 $$\lim_{(x, y) \to (a, b)} f(x, y) = L$$
 
-if for every $\epsilon > 0$, there exists a corresponding $\delta > 0$ such that for all $(x, y) \in D$,
+if for every number $\varepsilon > 0$ (no matter how small), there exists a corresponding number $\delta > 0$ such that
 
-$$0 < \sqrt{(x - a)^2 + (y - b)^2} < \delta \quad \Longrightarrow \quad \vert f(x, y) - L \vert < \epsilon$$
+$$0 < \sqrt{(x - a)^{2} + (y - b)^{2}} < \delta \quad \Longrightarrow \quad \vert f(x, y) - L \vert < \varepsilon$$
+
+for all $(x, y) \in D$ that satisfy the hypothesis. The number $L \in \mathbb{R}$ is called the **limit of the function $f$ as $(x, y)$ tends to $(a, b)$**.
 
 > [!IMPORTANT]
-> **Core KTU Definition:** The limit $L$ depends on the value the function *approaches*, **not on the actual value $f(a,b)$**. The point $(a,b)$ itself need not even be in the domain of $f$ — what matters is the *behavior of $f$ at points arbitrarily close to $(a, b)$*.
+> **KTU Syllabus Highlight (GAMAT101 – Module 2):** The limit of a function of two variables, unlike single-variable calculus, requires the value $L$ to be *the same* along **every possible path** of approach toward $(a, b)$. If two different paths produce two different values, the two-variable limit **does not exist** (DNE). This is the central conceptual pivot of Module 2.
+
+## Conceptual Analogy — The Mountain Peak Problem
+
+Imagine you are standing on a vast, smooth hilly terrain described by a height function $z = f(x, y)$. You want to estimate the height of a specific landmark point $(a, b)$ by walking toward it from far away.
+
+* If, **no matter which trail you take** — straight along the east trail, the north trail, a diagonal trail, a curved spiral trail, a zig-zag trail — the altitude reading on your barometer **always converges to the same height $L$**, then the two-variable limit exists and equals $L$.
+* If, however, one trail reports "altitude = 120 m" and another reports "altitude = 80 m" as you converge on the same spot, then the terrain has a discontinuity (a cliff, a crevasse, or a vertical wall) and the limit **does not exist**.
+
+The quantity $\sqrt{(x - a)^{2} + (y - b)^{2}} < \delta$ is simply the radius of a tiny disc of tolerance around the target point $(a, b)$ — you must lie *inside* this disc for the inequality on $f$ to apply.
 
 > [!NOTE]
-> **Geometric Meaning of $\delta$:** The quantity $\delta$ defines a "punctured disk" $0 < \sqrt{(x - a)^2 + (y - b)^2} < \delta$ centered at $(a, b)$. The implication says: *every point inside this tiny disk (except the center) must map to within an $\epsilon$-tube around $L$*.
+> **Why $\sqrt{(x-a)^2 + (y-b)^2}$?** Because in $\mathbb{R}^{2}$ the natural distance is the **Euclidean distance** from the point $(x, y)$ to $(a, b)$. This $\delta$-disc is the two-variable analogue of the one-dimensional interval $(a - \delta, a + \delta)$.
 
-## 1.2 Intuitive Analogy — A 3D Surface "Zooming In"
+## The Accumulation Point Prerequisite
 
-Imagine the graph of $f(x, y)$ as a flexible rubber sheet stretched over the $xy$-plane, creating a 3D landscape. The value $L$ is the **elevation** that the landscape "settles toward" as you walk on the sheet and converge toward the fixed point $(a, b)$ from *every possible direction*.
+The point $(a, b)$ need not belong to $D$. The function may be undefined at $(a, b)$, yet the limit can still exist. What is required is **approachability**: there must be points of $D$ arbitrarily close to $(a, b)$.
 
-- A limit **exists** if the surface, no matter which path you take to approach $(a, b)$, always flattens out at the same height $L$.
-- A limit **fails to exist** if the surface bends toward *different heights* depending on which slope you approach from — like a sharp peak, a creased ridge, or an infinite cliff.
+> [!TIP]
+> **Quick Test:** If the deleted disc $0 < \sqrt{(x - a)^{2} + (y - b)^{2}} < r$ contains no points of $D$ for some $r > 0$, then $(a, b)$ is isolated in $D$ and $\lim_{(x, y) \to (a, b)} f(x, y)$ is **not defined** (in the standard KTU sense). The limit object itself does not exist in this case — it is not zero, not infinity, just undefined.
 
-> [!NOTE]
-> **Real-World Analogy (Atmospheric Pressure):** Atmospheric pressure at a point is a function of latitude and longitude, $P(x, y)$. As your position $(x, y)$ converges toward the city center $(a, b)$, the pressure reading converges to a single true value $L = P(a, b)$, regardless of which road you take into the city. But near a *weather front*, approaching from the north and from the south could yield very different "tendency" values — illustrating non-existence.
-
-## 1.3 Distinction from Single-Variable Calculus
-
-| Aspect | One Variable $f(x)$ | Two Variables $f(x, y)$ |
-|---|---|---|
-| Approach directions | Only **2**: from left ($x \to a^{-}$) and from right ($x \to a^{+}$) | **Infinitely many**: along any curve in the $xy$-plane |
-| Geometric domain of approach | A 1-D interval $(a - \delta, a + \delta)$ | A 2-D punctured disk $0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta$ |
-| Distance metric | $\vert x - a \vert < \delta$ | $\sqrt{(x-a)^2 + (y-b)^2} < \delta$ |
-| Method to test existence | Check left and right limits | Must check **all** paths (or use polar) |
-
-> [!WARNING]
-> **KTU Examiner's Pitfall:** Many students naively try to evaluate a 2-D limit by "plugging in" $(a, b)$ and call it a day. **This only works if $f$ is continuous at $(a, b)$**. Otherwise, the limit might exist even when $f(a, b)$ is undefined, or it might not exist at all.
-
-## 1.4 Continuity at a Point (Consequence of Limits)
-
-A function $f$ is **continuous at $(a, b)$** if the following three conditions are simultaneously satisfied:
-
-$$\text{(i) } f(a, b) \text{ is defined}, \quad \text{(ii) } \lim_{(x,y) \to (a,b)} f(x,y) \text{ exists}, \quad \text{(iii) } \lim_{(x,y) \to (a,b)} f(x,y) = f(a, b)$$
+## GeoGebra / Desmos Visualisation
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Punctured disk approach to a limit point in the $xy$-plane.
-> **GeoGebra / Desmos Input Equations (Conceptual Setup):**
-> * Implicit curve: $f(x, y) = L$ drawn as a horizontal plane
-> * Boundary circle: $(x - a)^2 + (y - b)^2 = \delta^2$ (excluded center)
-> * Test curve through the disk: $y - b = m(x - a)$ (a line with slope $m$)
-> **Visual Description:** On the graph, you should see a horizontal plane $z = L$ slicing through a 3D surface $z = f(x, y)$. As the radius $\delta$ shrinks to zero, the portion of the surface inside the disk must be trapped inside the band $L - \epsilon < z < L + \epsilon$.
-
----
+> **Concept:** Two-variable limit along different approach paths on the surface $z = f(x, y)$.
+> **GeoGebra / Desmos Input Equations:**
+> * Surface: $f(x, y) = \dfrac{x \cdot y}{x^{2} + y^{2}}$ (with $f(0, 0) = 0$ assigned)
+> * Path 1 (x-axis): $(t, 0)$ with parameter $t$
+> * Path 2 (y-axis): $(0, t)$ with parameter $t$
+> * Path 3 (line $y = x$): $(t, t)$ with parameter $t$
+> * Path 4 (parabola $y = x^{2}$): $(t, t^{2})$ with parameter $t$
+> **Visual Description:** Plot the surface $z = f(x, y)$ over the square $-2 \le x \le 2$, $-2 \le y \le 2$. You will see a "saddle-ridge" that lifts to height $1/2$ along the line $y = x$, but flattens to $0$ along either axis. The surface has no single value at the origin — visually confirming path-dependence.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Algebra (Limit Laws) for Two-Variable Limits
+## 1. The Three Path-Based Test Tools
 
-If $\lim_{(x,y) \to (a,b)} f(x,y) = L$ and $\lim_{(x,y) \to (a,b)} g(x,y) = M$ (both finite), then:
+When you face a two-variable limit problem in a KTU exam, you have three primary analytical instruments:
 
-$$\lim_{(x,y) \to (a,b)} \bigl[f(x,y) + g(x,y)\bigr] = L + M$$
+### Tool A — Substitution (Algebraic Simplification)
+If $f(x, y)$ is a *quotient of polynomials* (or composites of continuous elementary functions) and direct substitution $(a, b)$ yields a determinate value (i.e., not the indeterminate form $\frac{0}{0}$), then
 
-$$\lim_{(x,y) \to (a,b)} \bigl[f(x,y) - g(x,y)\bigr] = L - M$$
-
-$$\lim_{(x,y) \to (a,b)} \bigl[f(x,y) \cdot g(x,y)\bigr] = L \cdot M$$
-
-$$\lim_{(x,y) \to (a,b)} \frac{f(x,y)}{g(x,y)} = \frac{L}{M}, \quad \text{provided } M \neq 0$$
-
-$$\lim_{(x,y) \to (a,b)} \bigl[c \cdot f(x,y)\bigr] = c \cdot L, \quad c \in \mathbb{R}$$
-
-$$\lim_{(x,y) \to (a,b)} \bigl[f(x,y)\bigr]^n = L^n, \quad n \in \mathbb{Z}^{+}$$
-
-> [!NOTE]
-> These laws mirror the one-variable case **identically**. The proof is identical in structure because $\delta$ in $\mathbb{R}^2$ behaves like $\delta$ in $\mathbb{R}$ — both guarantee "closeness" to the limit point. The difficulty in two variables is **pathology**, not arithmetic.
-
-## 2.2 Substitution Principle for Continuous Functions
-
-If $f(x, y)$ is a **continuous function** at $(a, b)$, then the limit is computed by direct substitution:
-
-$$\lim_{(x,y) \to (a,b)} f(x, y) = f(a, b)$$
-
-This applies to:
-- **Polynomials** in $x, y$ (e.g., $x^2 + 3xy - 5y^2$)
-- **Rational functions** $\dfrac{P(x, y)}{Q(x, y)}$ wherever $Q(a, b) \neq 0$
-- **Compositions of continuous functions** (sums, products, compositions of elementary continuous functions)
-- Elementary functions: $\sin(x+y)$, $e^{xy}$, $\ln(x^2 + y^2)$, $\sqrt{x^2 + y^2}$
-
-## 2.3 The Three-Tier Decision Strategy (Critical for KTU Problems)
-
-When you encounter $\displaystyle\lim_{(x,y) \to (a,b)} f(x, y)$:
-
-| Tier | Strategy | When to Use |
-|---|---|---|
-| **Tier 1** | Direct substitution (continuity) | When $f$ is continuous at $(a, b)$ — i.e., polynomials, rationals with non-zero denominators, well-behaved composites |
-| **Tier 2** | Algebraic simplification | When substitution gives $\frac{0}{0}$ or $\frac{\infty}{\infty}$ — factor, multiply by conjugate, or use known limits |
-| **Tier 3** | Path analysis or polar coordinates | When simplification does not collapse the indeterminate form — the limit may not exist |
-
-## 2.4 Path Analysis (The Workhorse for Non-Existence Proofs)
+$$\lim_{(x, y) \to (a, b)} f(x, y) = f(a, b)$$
 
 > [!IMPORTANT]
-> **KTU High-Yield Theorem (Path Test):** If two different straight-line paths (or any two different curves) through $(a, b)$ produce **two different finite limits**, then the limit $\displaystyle\lim_{(x,y) \to (a,b)} f(x, y)$ **does not exist**.
+> **KTU Theorem (Algebra of Limits):** If $\lim_{(x, y) \to (a, b)} f(x, y) = L$ and $\lim_{(x, y) \to (a, b)} g(x, y) = M$, then
+> * $\lim (f \pm g) = L \pm M$
+> * $\lim (f \cdot g) = L \cdot M$
+> * $\lim (c \cdot f) = cL$ for any constant $c$
+> * $\lim (f / g) = L / M$, provided $M \neq 0$
 
-Standard path families to test (where $m, k$ are real parameters):
+### Tool B — Path Inspection (Counter-Example Method)
+If the function reduces to a $\frac{0}{0}$ indeterminate form, attempt to convert to single-variable limits by substituting a path $y = \phi(x)$ with $\phi(a) = b$. If **two distinct paths** give two different values, the limit **DNE**. This is the workhorse technique for KTU Module 2.
 
-$$\text{Path 1: } y = b \quad \text{(horizontal axis)}$$
+### Tool C — Polar Coordinate Conversion
+Substitute $x = a + r \cos \theta$, $y = b + r \sin \theta$ where $r \to 0^{+}$. The limit exists and equals $L$ if the resulting expression becomes independent of $\theta$ as $r \to 0$ and converges to a single number. Otherwise, the expression must depend on $\theta$ for the limit to be path-dependent.
 
-$$\text{Path 2: } x = a \quad \text{(vertical axis)}$$
+## 2. Path Catalogue — Standard Approach Directions
 
-$$\text{Path 3: } y - b = m(x - a) \quad \text{(lines through $(a,b)$ with slope $m$)}$$
+The most frequently tested paths in KTU papers are:
 
-$$\text{Path 4: } y - b = k(x - a)^2 \quad \text{(parabolic curves)}$$
-
-$$\text{Path 5: } y - b = (x - a)^n \quad \text{(power-law paths)}$$
+| Path Name | Parameterisation | Use Case |
+|---|---|---|
+| Along the $x$-axis | $y = 0$ | Eliminate $y$ from the expression |
+| Along the $y$-axis | $x = 0$ | Eliminate $x$ from the expression |
+| Straight line $y = m x + c$ | $y - b = m(x - a)$ | Test linear family |
+| Curve $y = m x^{n}$ (parabola) | $y = m x^{2}$ | Distinguish quadratic behaviour |
+| Curve $y = k x^{1/2}$ | $y = k \sqrt{x}$ | Distinguish root behaviour |
+| Along $x^{2} = y$ | $y = x^{2}$ | Test "ridge" vs "valley" |
+| Polar line $\theta = \alpha$ | $y - b = \tan(\alpha)(x - a)$ | Test all radial directions |
 
 > [!WARNING]
-> **Caution:** Showing that the limit is *the same* along infinitely many paths does **not** prove existence — there could still be a "twisted" path that breaks it. To *prove* existence, you typically need polar coordinates or the Squeeze Theorem.
+> **Examiner's Trap:** Finding that two paths give the *same* value is **not a proof** that the limit exists. You must either (a) check *all* paths — including the polar sweep — or (b) rigorously apply the $\varepsilon$–$\delta$ definition or polar conversion.
 
-## 2.5 Polar Coordinate Transformation (The Gold-Standard Existence Proof)
+## 3. The Squeeze (Sandwich) Theorem for Two Variables
 
-When the limit point is the origin $(0, 0)$, substitute
+If $g(x, y) \le f(x, y) \le h(x, y)$ for all $(x, y)$ sufficiently close to $(a, b)$ (excluding $(a, b)$ itself) and
 
-$$x = r\cos\theta, \quad y = r\sin\theta, \quad r = \sqrt{x^2 + y^2} \geq 0$$
+$$\lim_{(x, y) \to (a, b)} g(x, y) = \lim_{(x, y) \to (a, b)} h(x, y) = L$$
 
-As $(x, y) \to (0, 0)$, we have $r \to 0^{+}$ regardless of $\theta$. So:
+then $\lim_{(x, y) \to (a, b)} f(x, y) = L$.
 
-$$\lim_{(x,y) \to (0,0)} f(x, y) = \lim_{r \to 0^{+}} f(r\cos\theta, r\sin\theta)$$
+The two-variable squeeze theorem is the most powerful tool to **prove existence** of a limit when direct evaluation is messy.
 
-**Existence Test:**
+## 4. Continuity at a Point
 
-$$\text{If } f(r\cos\theta, r\sin\theta) \to L \text{ uniformly in } \theta, \text{ then the limit exists and equals } L$$
+$f$ is **continuous at $(a, b)$** if and only if all three conditions hold simultaneously:
 
-> [!IMPORTANT]
-> If the resulting expression still depends on $\theta$ even after $r \to 0$ (e.g., $\to \sin\theta$ or $\to \cos^2\theta$), then the limit **does not exist**.
+1. $f(a, b)$ is defined
+2. $\lim_{(x, y) \to (a, b)} f(x, y)$ exists (as a finite real number)
+3. $\lim_{(x, y) \to (a, b)} f(x, y) = f(a, b)$
 
-## 2.6 The Squeeze Theorem (Two-Variable Version)
-
-If $g(x, y) \leq f(x, y) \leq h(x, y)$ for all $(x, y)$ near $(a, b)$ (excluding $(a, b)$ itself), and
-
-$$\lim_{(x,y) \to (a,b)} g(x, y) = \lim_{(x,y) \to (a,b)} h(x, y) = L$$
-
-then
-
-$$\lim_{(x,y) \to (a,b)} f(x, y) = L$$
-
-## 2.7 KTU High-Yield Formula Sheet
-
-| # | Formula / Property | Mathematical Statement | Where Used |
-|---|---|---|---|
-| 1 | $\varepsilon$-$\delta$ definition | $\forall \epsilon > 0, \exists \delta > 0 : 0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta \Rightarrow \vert f(x,y) - L \vert < \epsilon$ | Rigorous proofs |
-| 2 | Limit of sum | $\lim [f + g] = L + M$ | Polynomial limits |
-| 3 | Limit of product | $\lim [f \cdot g] = L \cdot M$ | Products of continuous functions |
-| 4 | Limit of quotient | $\lim [f / g] = L / M$, $M \neq 0$ | Rational functions |
-| 5 | Continuity $\Rightarrow$ substitution | $\lim_{(x,y) \to (a,b)} f(x,y) = f(a,b)$ if $f$ continuous | Tier 1 evaluation |
-| 6 | Path-test non-existence | Two paths $\to$ different values $\Rightarrow$ no limit | Tier 3 (disprove) |
-| 7 | Polar substitution | $x = r\cos\theta, y = r\sin\theta$ | Tier 3 (prove existence) |
-| 8 | Squeeze Theorem | $g \leq f \leq h, g, h \to L \Rightarrow f \to L$ | Bounded oscillatory functions |
-| 9 | $\lim_{(x,y) \to (0,0)} \dfrac{x^2 y}{x^2 + y^2}$ | $0$ (via Squeeze, since $\vert y \vert \leq \sqrt{x^2 + y^2}$) | Standard trick |
-| 10 | $\lim_{(x,y) \to (0,0)} \dfrac{x^2 + y^2}{x^2 + y^2}$ | $1$ for $(x,y) \neq (0,0)$ | Identity (limit at origin) |
-| 11 | Iterated limits | $\lim_{x \to a} \lim_{y \to b} f(x, y)$ vs. $\lim_{y \to b} \lim_{x \to a} f(x, y)$ | Order-of-limit check |
-| 12 | $\sin$ / $\cos$ boundedness | $\vert \sin\theta \vert \leq 1, \vert \cos\theta \vert \leq 1$ | Squeeze in polar |
-
-## 2.8 Real-World Engineering Utility
+If any one of these fails, $f$ is **discontinuous** at $(a, b)$.
 
 > [!NOTE]
-> **Why Study 2-Variable Limits?**
-> - **Image processing:** Edge detection in a 2D pixel grid requires limits of intensity functions as the neighborhood shrinks toward a point.
-> - **Computer graphics:** Smooth shading (Gouraud/Phong) relies on the gradient — a 2-D limit — of the lighting function across a polygonal surface.
-> - **Machine learning:** Loss landscapes are functions of multiple weights $J(w_1, w_2, \ldots, w_n)$; convergence analysis uses multi-dimensional limits.
-> - **Thermodynamics / Physics:** Field quantities like temperature, pressure, and electric potential are functions of position; their values at a point are limits of nearby measurements.
+> **Polynomials, rationals (where defined), and elementary functions** $\sin$, $\cos$, $\exp$, $\log$ are continuous on their natural domains. Therefore, for any $(a, b)$ in the domain of such a function, $\lim_{(x, y) \to (a, b)} f = f(a, b)$ by direct substitution.
 
----
+## 5. KTU Formula Sheet / Cheat Sheet
+
+| Concept | Formula / Statement | Notes |
+|---|---|---|
+| $\varepsilon$-$\delta$ Definition | $0 < \sqrt{(x-a)^{2} + (y-b)^{2}} < \delta \Rightarrow \vert f(x, y) - L \vert < \varepsilon$ | $L$ must be unique |
+| Limit along path $y = m(x - a) + b$ | Substitute and take $\lim_{x \to a}$ | $m$ is the slope |
+| Polar form of limit | $x = a + r \cos \theta, \; y = b + r \sin \theta, \; r \to 0^{+}$ | Independent of $\theta \Rightarrow$ limit exists |
+| Squeeze Theorem | $g \le f \le h, \; \lim g = \lim h = L \Rightarrow \lim f = L$ | Existence proof |
+| Continuity | $\lim_{(x, y) \to (a, b)} f(x, y) = f(a, b)$ | All three sub-conditions |
+| Iterated Limit (order matters) | $\lim_{x \to a} \lim_{y \to b} f(x, y) \neq \lim_{y \to b} \lim_{x \to a} f(x, y)$ generally | May differ from joint limit |
+| Distance from $(a, b)$ | $d = \sqrt{(x - a)^{2} + (y - b)^{2}}$ | Euclidean metric on $\mathbb{R}^{2}$ |
+| Indeterminate form | $\dfrac{0}{0}, \; \dfrac{\infty}{\infty}, \; 0 \cdot \infty, \; \infty - \infty$ | Needs special technique |
+
+## 6. Real-World Engineering Utility
+
+Two-variable limits underpin several production-grade systems:
+
+* **Computer Vision Edge Detection** — the Sobel and Prewitt kernels compute directional gradients $\partial f / \partial x$ and $\partial f / \partial y$, which are the per-axis components of the multivariable limit of the image intensity function.
+* **Machine Learning Backpropagation** — computing $\nabla L(w, b)$ in a neural network is a *vector* of partial derivatives; each partial derivative is itself a two-variable limit of the loss function $L(w + h, b)$ as $h \to 0$.
+* **Geodesy & GPS Triangulation** — the local elevation function $E(x, y)$ has a well-defined gradient only where the multivariable limit exists; on cliff edges the elevation function is discontinuous.
+* **Heat Diffusion Models** — temperature $T(x, y, t)$ in 2-D plates is governed by PDEs whose solutions are validated by checking the joint limit $T \to T_{0}$ as $(x, y) \to (x_{0}, y_{0})$.
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
+# Step-by-Step Derivations & Code / Symbolic Implementation
 
-# Step-by-Step Derivations & Code/Symbolic Implementation
+## Worked Example 1 — Limit That Exists (Path-Independent)
 
-## 3.1 Worked Example 1 — Tier 1: Direct Substitution
+**Problem:** Evaluate $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{x^{2} y}{x^{2} + y^{2}}$.
 
-**Problem:** Evaluate $\displaystyle\lim_{(x,y) \to (2, -1)} \left( 3x^2 y + 5xy^2 - 7 \right)$.
+### Step 1 — Test Direct Substitution
+At $(0, 0)$, the expression becomes $\dfrac{0 \cdot 0}{0 + 0} = \dfrac{0}{0}$, which is the indeterminate form. We must investigate further.
 
-**Solution:** The function $f(x,y) = 3x^2y + 5xy^2 - 7$ is a polynomial in $x$ and $y$, hence continuous everywhere in $\mathbb{R}^2$. By Tier 1, we substitute directly:
+### Step 2 — Apply the Polar Substitution
+Let $x = r \cos \theta$ and $y = r \sin \theta$, with $r > 0$ and $\theta \in [0, 2\pi)$. Then
 
-$$\lim_{(x,y) \to (2,-1)} \left( 3x^2y + 5xy^2 - 7 \right) = 3(2)^2(-1) + 5(2)(-1)^2 - 7$$
+$$f(r, \theta) = \frac{(r \cos \theta)^{2} \cdot (r \sin \theta)}{(r \cos \theta)^{2} + (r \sin \theta)^{2}}$$
 
-$$= 3 \cdot 4 \cdot (-1) + 5 \cdot 2 \cdot 1 - 7 = -12 + 10 - 7 = -9$$
+### Step 3 — Simplify the Denominator
+$(r \cos \theta)^{2} + (r \sin \theta)^{2} = r^{2}(\cos^{2} \theta + \sin^{2} \theta) = r^{2} \cdot 1 = r^{2}$
 
-> [!NOTE]
-> **Answer:** $\boxed{-9}$ — No path analysis required. Polarity in $xy$ are safe to substitute.
+### Step 4 — Simplify the Numerator
+$(r \cos \theta)^{2} \cdot (r \sin \theta) = r^{3} \cos^{2} \theta \sin \theta$
 
----
+### Step 5 — Form the Ratio
+$$f(r, \theta) = \frac{r^{3} \cos^{2} \theta \sin \theta}{r^{2}} = r \cdot \cos^{2} \theta \sin \theta$$
 
-## 3.2 Worked Example 2 — Tier 2: Algebraic Simplification
+### Step 6 — Take the Limit as $r \to 0^{+}$
+Since $\cos^{2} \theta \sin \theta$ is bounded (its maximum magnitude is roughly $0.385$), we have
 
-**Problem:** Evaluate $\displaystyle\lim_{(x,y) \to (0, 0)} \frac{x^2 - y^2}{x^2 + y^2}$.
+$$\lim_{r \to 0^{+}} r \cdot \cos^{2} \theta \sin \theta = 0 \cdot (\text{bounded quantity}) = 0$$
 
-**Solution:** Substitution gives $\frac{0}{0}$, an indeterminate form. Let us try the **path method** first.
+independent of $\theta$. Therefore the limit exists and
 
-**Path 1: $y = 0$ (x-axis):**
+$$\lim_{(x, y) \to (0, 0)} \frac{x^{2} y}{x^{2} + y^{2}} = 0$$
 
-$$\lim_{x \to 0} \frac{x^2 - 0^2}{x^2 + 0^2} = \lim_{x \to 0} \frac{x^2}{x^2} = \lim_{x \to 0} 1 = 1$$
-
-**Path 2: $x = 0$ (y-axis):**
-
-$$\lim_{y \to 0} \frac{0^2 - y^2}{0^2 + y^2} = \lim_{y \to 0} \frac{-y^2}{y^2} = \lim_{y \to 0} (-1) = -1$$
-
-Since two distinct paths yield two distinct limits ($1 \neq -1$), the limit **does not exist**.
-
-> [!NOTE]
-> **Answer:** **DNE (Does Not Exist).** Note that $\frac{x^2 - y^2}{x^2 + y^2}$ can be written as $\cos(2\theta)$ in polar, which clearly depends on $\theta$, confirming non-existence.
+**Valuation Key:** Polar substitution setup — 2 marks; simplification of denominator using $\sin^{2} + \cos^{2} = 1$ — 2 marks; simplification to $r \cos^{2} \theta \sin \theta$ — 3 marks; bounded-factor argument — 2 marks; final answer $0$ — 1 mark. **[Total 10/10 model]**
 
 ---
 
-## 3.3 Worked Example 3 — Tier 3: Polar Coordinate Existence Proof
+## Worked Example 2 — Limit That Does Not Exist (Path-Dependent)
 
-**Problem:** Evaluate $\displaystyle\lim_{(x,y) \to (0,0)} \frac{x^2 y}{x^2 + y^2}$.
+**Problem:** Investigate the existence of $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{x y}{x^{2} + y^{2}}$.
 
-**Solution:** Substitution gives $\frac{0}{0}$. Let us test a few paths first:
+### Step 1 — Test Direct Substitution
+Substituting $(0, 0)$ gives $\dfrac{0}{0}$. Indeterminate. Continue.
 
-**Path 1: $y = 0$:**
+### Step 2 — Path 1: Along the $x$-axis ($y = 0$)
+$$\lim_{x \to 0} \frac{x \cdot 0}{x^{2} + 0^{2}} = \lim_{x \to 0} \frac{0}{x^{2}} = 0$$
 
-$$\lim_{x \to 0} \frac{x^2 \cdot 0}{x^2 + 0} = 0$$
+### Step 3 — Path 2: Along the $y$-axis ($x = 0$)
+$$\lim_{y \to 0} \frac{0 \cdot y}{0^{2} + y^{2}} = \lim_{y \to 0} \frac{0}{y^{2}} = 0$$
 
-**Path 2: $x = 0$:**
+### Step 4 — Path 3: Along the line $y = x$
+$$\lim_{x \to 0} \frac{x \cdot x}{x^{2} + x^{2}} = \lim_{x \to 0} \frac{x^{2}}{2 x^{2}} = \lim_{x \to 0} \frac{1}{2} = \frac{1}{2}$$
 
-$$\lim_{y \to 0} \frac{0 \cdot y}{0 + y^2} = 0$$
+### Step 5 — Compare Path Values
+Path 1 gives $0$, Path 2 gives $0$, but Path 3 gives $\frac{1}{2}$. The values disagree.
 
-**Path 3: $y = mx$ (line with slope $m$):**
+### Step 6 — Conclude
+Two different approach paths yield two different limit values. Therefore
 
-$$\lim_{x \to 0} \frac{x^2 (mx)}{x^2 + (mx)^2} = \lim_{x \to 0} \frac{mx^3}{x^2(1 + m^2)} = \lim_{x \to 0} \frac{mx}{1 + m^2} = 0$$
+$$\lim_{(x, y) \to (0, 0)} \frac{x y}{x^{2} + y^{2}} \quad \text{does not exist (DNE)}$$
 
-All straight-line paths give 0, but this is *not enough* — we must use **polar coordinates** to be rigorous.
-
-**Polar substitution:** $x = r\cos\theta$, $y = r\sin\theta$. Then $x^2 + y^2 = r^2$, so:
-
-$$\frac{x^2 y}{x^2 + y^2} = \frac{(r\cos\theta)^2 (r\sin\theta)}{r^2} = \frac{r^3 \cos^2\theta \sin\theta}{r^2} = r \cos^2\theta \sin\theta$$
-
-Now apply limits as $r \to 0^{+}$:
-
-$$\lim_{r \to 0^{+}} r \cos^2\theta \sin\theta$$
-
-Since $\cos^2\theta \sin\theta$ is **bounded** for all $\theta$ (specifically, $\vert \cos^2\theta \sin\theta \vert \leq 1$), we have:
-
-$$\vert r \cos^2\theta \sin\theta \vert \leq \vert r \vert \cdot 1 = r \to 0$$
-
-By the Squeeze Theorem, the limit is $0$ for **every** $\theta$, uniformly.
-
-> [!NOTE]
-> **Answer:** $\boxed{0}$ — the limit **exists** and equals 0.
-
-**Alternative Squeeze Proof (without polar):** Since $\vert y \vert \leq \sqrt{x^2 + y^2}$, we have:
-
-$$\left\vert \frac{x^2 y}{x^2 + y^2} \right\vert = \frac{x^2 \vert y \vert}{x^2 + y^2} \leq \frac{(x^2 + y^2) \sqrt{x^2 + y^2}}{x^2 + y^2} = \sqrt{x^2 + y^2} \to 0$$
-
-So the limit is $0$ by Squeeze. ✓
+> [!WARNING]
+> **Common Student Mistake:** Many students test only the $x$-axis and $y$-axis, see that both give $0$, and conclude the limit is $0$. This is **wrong**. The diagonal path $y = x$ is the classic counter-example, and the KTU examiner's favourite trap.
 
 ---
 
-## 3.4 Worked Example 4 — Iterated vs Simultaneous Limits
+## Worked Example 3 — Squeeze Theorem Application
 
-**Problem:** Investigate $\displaystyle\lim_{(x,y) \to (0,0)} \frac{x^2}{x^2 + y^2}$ using both iterated and simultaneous limits.
+**Problem:** Evaluate $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{x^{2} y^{2}}{x^{2} + y^{2}}$.
 
-**Iterated Limit 1:** $\lim_{x \to 0} \lim_{y \to 0}$:
+### Step 1 — Recognise Symmetry
+The expression is symmetric in $x$ and $y$. Try the polar substitution.
 
-$$\lim_{x \to 0} \left[ \lim_{y \to 0} \frac{x^2}{x^2 + y^2} \right] = \lim_{x \to 0} \frac{x^2}{x^2} = \lim_{x \to 0} 1 = 1$$
+### Step 2 — Apply Polar Substitution
+With $x = r \cos \theta$, $y = r \sin \theta$:
 
-**Iterated Limit 2:** $\lim_{y \to 0} \lim_{x \to 0}$:
+$$\frac{r^{2} \cos^{2} \theta \cdot r^{2} \sin^{2} \theta}{r^{2}} = r^{2} \cos^{2} \theta \sin^{2} \theta$$
 
-$$\lim_{y \to 0} \left[ \lim_{x \to 0} \frac{x^2}{x^2 + y^2} \right] = \lim_{y \to 0} \frac{0}{y^2} = 0$$
+### Step 3 — Bound the Expression
+Note that $\cos^{2} \theta \sin^{2} \theta = \dfrac{1}{4} \sin^{2}(2\theta) \le \dfrac{1}{4}$.
 
-Since the two iterated limits are **unequal** ($1 \neq 0$), the simultaneous (joint) limit **does not exist**.
+### Step 4 — Apply the Squeeze
+$$0 \le \left| \frac{x^{2} y^{2}}{x^{2} + y^{2}} \right| \le \frac{1}{4} r^{2} = \frac{1}{4} (x^{2} + y^{2})$$
 
-**Confirmation via polar:** $x = r\cos\theta, y = r\sin\theta$:
+As $(x, y) \to (0, 0)$, both bounding quantities tend to $0$. By the squeeze theorem,
 
-$$\frac{x^2}{x^2 + y^2} = \frac{r^2 \cos^2\theta}{r^2} = \cos^2\theta$$
-
-As $r \to 0^{+}$, the value tends to $\cos^2\theta$, which depends on $\theta$. So the limit DNE. ✓
-
-> [!NOTE]
-> **Answer:** The simultaneous limit **does not exist**, although the iterated limits exist (but unequal). This is a classic KTU trap question.
-
----
-
-## 3.5 Worked Example 5 — Path-Dependent Indeterminate Form
-
-**Problem:** Show that $\displaystyle\lim_{(x,y) \to (0,0)} \frac{xy}{x^2 + y^2}$ does not exist.
-
-**Solution:**
-
-**Path 1: $y = 0$:**
-
-$$\lim_{x \to 0} \frac{x \cdot 0}{x^2 + 0} = 0$$
-
-**Path 2: $x = 0$:**
-
-$$\lim_{y \to 0} \frac{0 \cdot y}{0 + y^2} = 0$$
-
-**Path 3: $y = mx$ (non-zero slope):**
-
-$$\lim_{x \to 0} \frac{x \cdot mx}{x^2 + m^2 x^2} = \lim_{x \to 0} \frac{mx^2}{x^2(1 + m^2)} = \frac{m}{1 + m^2}$$
-
-For $m = 1$: $\frac{1}{2} = 0.5$. For $m = 2$: $\frac{2}{5} = 0.4$. These are different from $0$.
-
-Since the $x$-axis gives $0$ and the line $y = x$ gives $\frac{1}{2}$, the limit **does not exist**.
-
-**Polar confirmation:** $\frac{xy}{x^2 + y^2} = \frac{r^2 \cos\theta \sin\theta}{r^2} = \cos\theta \sin\theta = \frac{1}{2}\sin(2\theta)$, which depends on $\theta$. ✓
-
-> [!NOTE]
-> **Answer:** **DNE.** Any two paths with different slopes will produce different limits.
+$$\lim_{(x, y) \to (0, 0)} \frac{x^{2} y^{2}}{x^{2} + y^{2}} = 0$$
 
 ---
 
-## 3.6 Python Symbolic Implementation (SymPy)
+## Worked Example 4 — $\varepsilon$-$\delta$ Proof (Full Rigour)
+
+**Problem:** Prove that $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{3 x^{2} y}{x^{2} + y^{2}} = 0$ using the $\varepsilon$–$\delta$ definition.
+
+### Step 1 — Set Up the $\varepsilon$–$\delta$ Statement
+We need: given $\varepsilon > 0$, find $\delta > 0$ such that
+
+$$0 < \sqrt{x^{2} + y^{2}} < \delta \quad \Longrightarrow \quad \left| \frac{3 x^{2} y}{x^{2} + y^{2}} - 0 \right| < \varepsilon$$
+
+### Step 2 — Bound the Expression
+Since $x^{2} \le x^{2} + y^{2}$, we have $\dfrac{x^{2}}{x^{2} + y^{2}} \le 1$. Also, $\vert y \vert \le \sqrt{x^{2} + y^{2}}$. Combining:
+
+$$\left| \frac{3 x^{2} y}{x^{2} + y^{2}} \right| = 3 \cdot \frac{x^{2}}{x^{2} + y^{2}} \cdot \vert y \vert \le 3 \cdot 1 \cdot \sqrt{x^{2} + y^{2}}$$
+
+### Step 3 — Choose $\delta$
+We want $3 \sqrt{x^{2} + y^{2}} < \varepsilon$. Choosing $\delta = \varepsilon / 3$ guarantees that whenever $\sqrt{x^{2} + y^{2}} < \delta$,
+
+$$\left| \frac{3 x^{2} y}{x^{2} + y^{2}} \right| \le 3 \sqrt{x^{2} + y^{2}} < 3 \cdot \frac{\varepsilon}{3} = \varepsilon$$
+
+### Step 4 — Conclude
+The required $\delta = \varepsilon / 3$ exists, so by definition the limit is $0$. $\blacksquare$
+
+> [!NOTE]
+> **Valuation Pattern (KTU):** $\varepsilon$–$\delta$ proofs carry high marks. Always state "Let $\varepsilon > 0$ be given. Choose $\delta = \ldots$" up front. The clever bounding step is worth 4 of the 7 marks by itself.
+
+---
+
+## Worked Example 5 — Continuity Classification
+
+**Problem:** Determine whether $f(x, y) = \dfrac{x^{2} - y^{2}}{x^{2} + y^{2}}$ is continuous at $(0, 0)$.
+
+### Step 1 — Check Whether $f(0, 0)$ Is Defined
+The function value at the origin is $\dfrac{0 - 0}{0 + 0} = \dfrac{0}{0}$, which is undefined. Therefore, $f$ is **not even defined** at $(0, 0)$ in the usual sense.
+
+### Step 2 — Test the Path-Dependence of the Limit
+Along $y = 0$: $\lim_{x \to 0} \dfrac{x^{2}}{x^{2}} = 1$.
+Along $x = 0$: $\lim_{y \to 0} \dfrac{-y^{2}}{y^{2}} = -1$.
+
+### Step 3 — Conclude
+Two paths give $1$ and $-1$. The joint limit **does not exist**, and $f$ is undefined at the origin. Hence $f$ is **discontinuous** at $(0, 0)$ (in fact, $f$ is discontinuous *everywhere* on the line $x = 0$ for the same reason, by symmetry).
+
+---
+
+## Python Symbolic Implementation
+
+The following Python code uses `sympy` to evaluate two-variable limits along multiple paths automatically — useful for cross-checking your KTU solutions.
 
 ```python
 import sympy as sp
-import numpy as np
 
-def evaluate_limit_2d(expression_str, x0, y0, var='x', var2='y'):
+def investigate_limit_2d(expr_func, point, paths):
     """
-    Evaluate a 2-variable limit using SymPy's symbolic engine.
-    Falls back to 'DNE' if SymPy cannot resolve the path-dependence.
+    Investigate a two-variable limit by probing several approach paths.
+
+    Parameters
+    ----------
+    expr_func : sympy expression in (x, y)
+        The function f(x, y) whose limit is to be investigated.
+    point : tuple (a, b)
+        The target point of approach.
+    paths : list of dict
+        Each dict has keys 'name' (str) and 'param' (tuple of (sym, expr, limit_pt))
+        describing a parameterisation.
+
+    Returns
+    -------
+    dict mapping path name to limit value or sympy.nan if indeterminate.
     """
-    x, y = sp.symbols('x y', real=True)
-    f = sp.sympify(expression_str)
+    x, y, t = sp.symbols('x y t', real=True)
+    a, b = point
+    results = {}
 
-    try:
-        L = sp.limit(sp.limit(f, y, y0), x, x0)
-        if L == sp.zoo or L == sp.nan or L == sp.oo or L == -sp.oo:
-            return f"DNE or INFINITE (iterated: {L})"
-        return f"Limit (iterated y then x) = {L}"
-    except Exception as e:
-        return f"SymPy error: {e}"
+    print(f"Investigating limit of f(x, y) = {expr_func} as (x, y) -> ({a}, {b})\n")
 
+    for path in paths:
+        name = path['name']
+        x_sub, y_sub, t_lim = path['param']
+        x_t = x_sub.subs(t, t_lim) if hasattr(x_sub, 'subs') else x_sub
+        y_t = y_sub.subs(t, t_lim) if hasattr(y_sub, 'subs') else y_sub
+        f_sub = expr_func.subs({x: x_sub, y: y_sub})
+        try:
+            lim_val = sp.limit(f_sub, t, t_lim)
+        except Exception as e:
+            lim_val = sp.nan
+        results[name] = lim_val
+        print(f"  Along {name:25s}: f -> {lim_val}")
 
-def path_test(expression_str, x0, y0, path_type, param_val=0):
-    """
-    Test the limit along a parametric path.
-    path_type options: 'x_axis', 'y_axis', 'line', 'parabola', 'polar'
-    param_val: slope 'm' for line, or exponent for parabola, or theta for polar
-    """
-    x, y, t, r, theta = sp.symbols('x y t r theta', real=True)
-    f = sp.sympify(expression_str)
-
-    if path_type == 'x_axis':
-        # y = 0
-        g = f.subs(y, 0)
-        L = sp.limit(g, x, x0)
-    elif path_type == 'y_axis':
-        # x = 0
-        g = f.subs(x, 0)
-        L = sp.limit(g, y, y0)
-    elif path_type == 'line':
-        # y = y0 + m*(x - x0)
-        m = sp.Symbol('m', real=True)
-        g = f.subs(y, y0 + param_val * (x - x0))
-        L = sp.limit(g, x, x0)
-    elif path_type == 'parabola':
-        # y = y0 + (x - x0)^n
-        n = param_val
-        g = f.subs(y, y0 + (x - x0)**n)
-        L = sp.limit(g, x, x0)
-    elif path_type == 'polar':
-        # x = r*cos(theta), y = r*sin(theta)
-        g = f.subs({x: r * sp.cos(theta), y: r * sp.sin(theta)})
-        L = sp.limit(g, r, 0, '+')
+    distinct = {v for v in results.values() if v != sp.nan and v.is_finite is not False}
+    if len(distinct) == 1:
+        print(f"\nCONCLUSION: All probed paths agree on {distinct.pop()}.")
+        print("  Suggest further proof (polar / epsilon-delta) that limit exists.")
+    elif len(distinct) > 1:
+        print("\nCONCLUSION: At least two paths disagree -> limit DNE.")
     else:
-        return "Unknown path_type"
+        print("\nCONCLUSION: All probed paths returned indeterminate or non-finite values.")
+        print("  Further algebraic manipulation required.")
 
-    return f"Limit along {path_type} (param={param_val}) = {L}"
+    return results
 
 
-# --- Example usage ---
-if __name__ == "__main__":
-    # Example 3: x^2 * y / (x^2 + y^2)
-    expr = "x**2 * y / (x**2 + y**2)"
+# Example 1: Limit that exists
+print("=" * 60)
+print("EXAMPLE 1: f(x, y) = x^2 * y / (x^2 + y^2)")
+print("=" * 60)
+x, y, t = sp.symbols('x y t', real=True)
+f1 = (x**2 * y) / (x**2 + y**2)
+paths1 = [
+    {'name': 'x-axis (y = 0)',       'param': (t, 0*t,    0)},
+    {'name': 'y-axis (x = 0)',       'param': (0*t, t,    0)},
+    {'name': 'line y = x',           'param': (t, t,      0)},
+    {'name': 'parabola y = x^2',     'param': (t, t**2,   0)},
+    {'name': 'line y = 2x',          'param': (t, 2*t,    0)},
+]
+investigate_limit_2d(f1, (0, 0), paths1)
 
-    print("EXAMPLE 3 ANALYSIS")
-    print("=" * 50)
-    print(path_test(expr, 0, 0, 'x_axis'))
-    print(path_test(expr, 0, 0, 'y_axis'))
-    print(path_test(expr, 0, 0, 'line', param_val=1))
-    print(path_test(expr, 0, 0, 'line', param_val=2))
-    print(path_test(expr, 0, 0, 'polar', param_val=0))
-    print()
+# Example 2: Limit that does not exist
+print("\n" + "=" * 60)
+print("EXAMPLE 2: f(x, y) = x*y / (x^2 + y^2)")
+print("=" * 60)
+f2 = (x * y) / (x**2 + y**2)
+paths2 = [
+    {'name': 'x-axis (y = 0)',       'param': (t, 0*t,    0)},
+    {'name': 'y-axis (x = 0)',       'param': (0*t, t,    0)},
+    {'name': 'line y = x',           'param': (t, t,      0)},
+    {'name': 'parabola y = x^2',     'param': (t, t**2,   0)},
+]
+investigate_limit_2d(f2, (0, 0), paths2)
 
-    # Example 5: x*y / (x^2 + y^2) -- known DNE
-    expr2 = "x*y / (x**2 + y**2)"
-    print("EXAMPLE 5 ANALYSIS")
-    print("=" * 50)
-    print(path_test(expr2, 0, 0, 'x_axis'))
-    print(path_test(expr2, 0, 0, 'y_axis'))
-    print(path_test(expr2, 0, 0, 'line', param_val=1))
-    print(path_test(expr2, 0, 0, 'line', param_val=2))
+# Example 3: Direct sympy 2D limit
+print("\n" + "=" * 60)
+print("EXAMPLE 3: Direct sympy 2D limit evaluation")
+print("=" * 60)
+print("limit of x^2*y/(x^2+y^2) at (0,0) =",
+      sp.limit(f1, x, 0, y, 0))
+print("limit of x*y/(x^2+y^2) at (0,0)   =",
+      sp.limit(f2, x, 0, y, 0))
 ```
 
-**Sample Output (Example 3):**
+**Expected Output (truncated):**
+
 ```
-EXAMPLE 3 ANALYSIS
-==================================================
-Limit along x_axis (param=0) = 0
-Limit along y_axis (param=0) = 0
-Limit along line (param=1) = 0
-Limit along line (param=2) = 0
-Limit along polar (param=0) = 0
+EXAMPLE 1: f(x, y) = x^2 * y / (x^2 + y^2)
+  Along x-axis (y = 0)         : f -> 0
+  Along y-axis (x = 0)         : f -> 0
+  Along line y = x             : f -> 0
+  Along parabola y = x^2       : f -> 0
+  Along line y = 2x            : f -> 0
+
+CONCLUSION: All probed paths agree on 0.
+
+EXAMPLE 2: f(x, y) = x*y / (x^2 + y^2)
+  Along x-axis (y = 0)         : f -> 0
+  Along y-axis (x = 0)         : f -> 0
+  Along line y = x             : f -> 1/2
+
+CONCLUSION: At least two paths disagree -> limit DNE.
 ```
 
-> [!NOTE]
-> **Code Note:** SymPy's `limit()` evaluates **one path at a time**. To *prove non-existence*, you must inspect at least two distinct path outcomes. To *prove existence*, examine the polar form to confirm $\theta$-independence.
-
----
-
-## 3.7 Exhaustive Derivation — $\varepsilon$-$\delta$ Proof Template
-
-**Claim:** $\displaystyle\lim_{(x,y) \to (0,0)} \frac{3x^2 y}{x^2 + y^2} = 0$.
-
-**Proof Strategy:** We must show that for any $\epsilon > 0$, there exists $\delta > 0$ such that
-
-$$0 < \sqrt{x^2 + y^2} < \delta \quad \Longrightarrow \quad \left\vert \frac{3x^2 y}{x^2 + y^2} - 0 \right\vert < \epsilon$$
-
-**Step 1 — Bound the expression.** Using the inequality $\vert y \vert \leq \sqrt{x^2 + y^2}$:
-
-$$\left\vert \frac{3x^2 y}{x^2 + y^2} \right\vert = \frac{3x^2 \vert y \vert}{x^2 + y^2}$$
-
-Since $x^2 \leq x^2 + y^2$:
-
-$$\frac{3x^2 \vert y \vert}{x^2 + y^2} \leq \frac{3(x^2 + y^2) \vert y \vert}{x^2 + y^2} = 3 \vert y \vert \leq 3 \sqrt{x^2 + y^2}$$
-
-**Step 2 — Choose $\delta$.** Given $\epsilon > 0$, let $\delta = \dfrac{\epsilon}{3}$. Then whenever $0 < \sqrt{x^2 + y^2} < \delta$:
-
-$$\left\vert \frac{3x^2 y}{x^2 + y^2} \right\vert \leq 3 \sqrt{x^2 + y^2} < 3 \cdot \frac{\epsilon}{3} = \epsilon$$
-
-**Conclusion:** By the $\varepsilon$-$\delta$ definition, $\displaystyle\lim_{(x,y) \to (0,0)} \frac{3x^2 y}{x^2 + y^2} = 0$. $\blacksquare$
-
-> [!NOTE]
-> **Valuation Key Points for $\varepsilon$-$\delta$ Proofs (KTU Pattern):**
-> 1. State the claim: **[1 Mark]**
-> 2. Set up the bound / use the "given $\epsilon$, choose $\delta$" template: **[2 Marks]**
-> 3. Algebraic chain of inequalities: **[3 Marks]**
-> 4. Final conclusion statement: **[1 Mark]**
-
----
+> [!TIP]
+> **Pro Tip:** Sympy's `sp.limit(f, x, 0, y, 0)` performs the iterated limit. It can disagree with the joint two-variable limit. Always cross-check with the path-based tool above.
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-
 # Structural Diagrams & Schematics
 
-## 4.1 Mermaid Diagram — Limit Evaluation Decision Tree
+## Diagram 1 — Decision Flowchart for Limit Existence Test
 
 ```mermaid
 flowchart TD
-    A[START: Given limit L of f x,y as x,y approaches a,b] --> B{Is f continuous at a,b?}
-    B -- YES --> C[Tier 1: Direct Substitution]
-    C --> C1[Compute f of a,b]
-    C1 --> C2[Answer L = f of a,b]
-    B -- NO --> D{Does substitution yield 0/0 or infinity/infinity?}
-    D -- NO --> E[Check: Is the form well-defined?]
-    E -- YES --> C1
-    E -- NO --> F[Limit is INFINITE or UNDEFINED]
-    D -- YES --> G[Tier 2: Algebraic Simplification]
-    G --> G1[Factor / Multiply by conjugate / Use known limits]
-    G1 --> H{Does it resolve to a definite value?}
-    H -- YES --> I[Answer L = simplified value]
-    H -- NO --> J[Tier 3: Path Analysis OR Polar]
-    J --> J1[Test Path 1: y = b]
-    J1 --> J2[Test Path 2: x = a]
-    J2 --> J3[Test Path 3: y = b + m x - a]
-    J3 --> K{Do all paths give the SAME value?}
-    K -- NO --> L[LIMIT DOES NOT EXIST - DNE]
-    K -- YES --> M[Substitute x = r cos theta, y = r sin theta]
-    M --> N{Is the polar result independent of theta?}
-    N -- YES --> O[Answer L = polar limit as r goes to 0]
-    N -- NO --> L
+    A["Start: Two-variable limit problem<br/>limit of f at point a b"] --> B{"Substitution yields<br/>determinate value?"}
+    B -- "Yes" --> C["Apply Algebra of Limits<br/>Answer = f a b"]
+    B -- "No, form 0 by 0" --> D{"Is function<br/>polynomial or continuous?"}
+    D -- "Yes" --> E["Direct Substitution<br/>f a b = value"]
+    D -- "No" --> F["Apply Path Test<br/>Choose 2 or 3 standard paths"]
+    F --> G{"Path values<br/>all agree?"}
+    G -- "Yes" --> H["Suspicious: Apply Polar or<br/>Epsilon-Delta proof"]
+    H --> I{"Polar result<br/>independent of theta?"}
+    I -- "Yes" --> J["Limit EXISTS and equals L"]
+    I -- "No" --> K["Limit DNE<br/>Path-dependent"]
+    G -- "No" --> K
+    H -.->|"Use Squeeze Theorem<br/>for existence proof"| J
+    C --> Z["Done"]
+    E --> Z
+    J --> Z
+    K --> Z
 
-    style A fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px
-    style C fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px
-    style G fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-    style J fill:#ffccbc,stroke:#bf360c,stroke-width:2px
-    style L fill:#ffcdd2,stroke:#b71c1c,stroke-width:3px
-    style O fill:#b2dfdb,stroke:#004d40,stroke-width:2px
+    style A fill:#1f4e79,color:#ffffff,stroke:#0b2545,stroke-width:2px
+    style B fill:#f4b400,color:#000000,stroke:#7a5c00,stroke-width:1px
+    style D fill:#f4b400,color:#000000,stroke:#7a5c00,stroke-width:1px
+    style G fill:#f4b400,color:#000000,stroke:#7a5c00,stroke-width:1px
+    style I fill:#f4b400,color:#000000,stroke:#7a5c00,stroke-width:1px
+    style C fill:#2e7d32,color:#ffffff,stroke:#1b5e20,stroke-width:1px
+    style E fill:#2e7d32,color:#ffffff,stroke:#1b5e20,stroke-width:1px
+    style J fill:#2e7d32,color:#ffffff,stroke:#1b5e20,stroke-width:1px
+    style K fill:#c62828,color:#ffffff,stroke:#7f0000,stroke-width:1px
+    style Z fill:#37474f,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
 
-## 4.2 Mermaid Diagram — Path-Family Test Schematic
+## Diagram 2 — Path Catalogue Tree
 
 ```mermaid
-graph LR
-    subgraph PATHS[Path Families Through Origin 0,0]
-        P1["Path 1: y = 0\nx-axis horizontal"]
-        P2["Path 2: x = 0\ny-axis vertical"]
-        P3["Path 3: y = m*x\nlinear slope m"]
-        P4["Path 4: y = k*x^2\nparabolic"]
-        P5["Path 5: y = x^3\ncubic curve"]
-    end
+flowchart LR
+    R["Approach Path<br/>Catalogue"] --> R1["Linear Paths"]
+    R --> R2["Curved Paths"]
+    R --> R3["Polar Paths"]
 
-    subgraph ANALYSIS[Path Test Workflow]
-        S1[Step 1: Substitute path into f]
-        S2[Step 2: Reduce to single-variable limit]
-        S3[Step 3: Compute the limit]
-        S4[Step 4: Record the value]
-    end
+    R1 --> R1a["x-axis y=0"]
+    R1 --> R1b["y-axis x=0"]
+    R1 --> R1c["y equals m x"]
+    R1 --> R1d["y equals m x plus c"]
 
-    subgraph DECISION[Final Decision]
-        D1{All recorded values equal?}
-        D2["YES, identical for all paths\n=> Tentative existence\n=> Proceed to polar proof"]
-        D3["NO, two paths disagree\n=> LIMIT DOES NOT EXIST"]
-    end
+    R2 --> R2a["Parabola y equals x squared"]
+    R2 --> R2b["Parabola x equals y squared"]
+    R2 --> R2c["Root y equals sqrt x"]
+    R2 --> R2d["Hyperbola x y equals k"]
 
-    P1 --> S1
-    P2 --> S1
-    P3 --> S1
-    P4 --> S1
-    P5 --> S1
-    S1 --> S2 --> S3 --> S4
-    S4 --> D1
-    D1 -- YES --> D2
-    D1 -- NO --> D3
+    R3 --> R3a["Radial line theta constant"]
+    R3 --> R3b["Spiral r equals theta"]
+    R3 --> R3c["Full angular sweep<br/>theta from 0 to 2 pi"]
 
-    style PATHS fill:#e1f5fe,stroke:#01579b,stroke-width:1px
-    style ANALYSIS fill:#fff3e0,stroke:#e65100,stroke-width:1px
-    style DECISION fill:#f3e5f5,stroke:#4a148c,stroke-width:1px
-    style D3 fill:#ffcdd2,stroke:#b71c1c,stroke-width:2px
-    style D2 fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px
+    R1a --> USE["Used to identify<br/>path-dependence"]
+    R1b --> USE
+    R1c --> USE
+    R1d --> USE
+    R2a --> USE
+    R2b --> USE
+    R2c --> USE
+    R2d --> USE
+    R3a --> USE
+    R3b --> USE
+    R3c --> USE
+
+    style R fill:#0d47a1,color:#ffffff,stroke:#002171,stroke-width:2px
+    style R1 fill:#1565c0,color:#ffffff,stroke:#003c8f,stroke-width:1px
+    style R2 fill:#1565c0,color:#ffffff,stroke:#003c8f,stroke-width:1px
+    style R3 fill:#1565c0,color:#ffffff,stroke:#003c8f,stroke-width:1px
+    style USE fill:#43a047,color:#ffffff,stroke:#1b5e20,stroke-width:2px
 ```
 
-## 4.3 Mermaid Diagram — Limit Concept Visualisation (3D Surface View)
+## Diagram 3 — Sequential Processing Topology (Block Architecture for Limit Evaluation)
 
 ```mermaid
-graph TB
-    subgraph PLANE[XY-Plane Approach]
-        P0["Target Point (a, b)\nPunctured disk radius delta"]
-        AP1["Approach direction 1\ny = b line"]
-        AP2["Approach direction 2\nx = a line"]
-        AP3["Approach direction 3\ny = b + m(x-a)"]
-        AP4["Approach direction 4\ncurved path"]
+flowchart TB
+    subgraph IN["INPUT STAGE"]
+        I1["Receive function f x y"]
+        I2["Receive target point a b"]
+        I3["Receive path catalogue"]
     end
 
-    subgraph SURFACE[3D Surface z = f x,y]
-        Z0["Limit height L\nHorizontal plane z = L"]
-        EPS["Epsilon tube\nL-epsilon < z < L+epsilon"]
-        F1["Surface traces path AP1"]
-        F2["Surface traces path AP2"]
-        F3["Surface traces path AP3"]
-        F4["Surface traces path AP4"]
+    subgraph PROC["PROCESSING STAGE"]
+        P1["Normaliser<br/>Substitute and simplify"]
+        P2["Path Engine<br/>Apply each path<br/>Compute single-variable limit"]
+        P3["Comparator<br/>Check agreement of all path values"]
+        P4["Polar Engine<br/>Polar substitution and theta check"]
+        P5["Epsilon-Delta Engine<br/>Rigorous proof constructor"]
     end
 
-    P0 --> AP1 --> F1
-    P0 --> AP2 --> F2
-    P0 --> AP3 --> F3
-    P0 --> AP4 --> F4
-    F1 --> Z0
-    F2 --> Z0
-    F3 --> Z0
-    F4 --> Z0
-    Z0 -.within.-> EPS
+    subgraph OUT["OUTPUT STAGE"]
+        O1["Report: limit value L"]
+        O2["Report: limit DNE"]
+        O3["Confidence Level:<br/>High or Needs Proof"]
+    end
 
-    style PLANE fill:#e3f2fd,stroke:#0d47a1
-    style SURFACE fill:#fff8e1,stroke:#ff6f00
-    style Z0 fill:#a5d6a7,stroke:#1b5e20,stroke-width:2px
-    style EPS fill:#ffe0b2,stroke:#e65100
+    I1 --> P1
+    I2 --> P1
+    I3 --> P2
+    P1 --> P2
+    P2 --> P3
+    P3 -->|"Agree"| P4
+    P3 -->|"Disagree"| O2
+    P4 -->|"theta-independent"| P5
+    P4 -->|"theta-dependent"| O2
+    P5 -->|"Valid proof"| O1
+    P5 -->|"Counter-example"| O2
+    O1 --> O3
+    O2 --> O3
+
+    style IN fill:#e3f2fd,stroke:#1565c0,stroke-width:1px
+    style PROC fill:#fff8e1,stroke:#f57c00,stroke-width:1px
+    style OUT fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style I1 fill:#bbdefb,color:#000000
+    style I2 fill:#bbdefb,color:#000000
+    style I3 fill:#bbdefb,color:#000000
+    style P1 fill:#ffe082,color:#000000
+    style P2 fill:#ffe082,color:#000000
+    style P3 fill:#ffe082,color:#000000
+    style P4 fill:#ffe082,color:#000000
+    style P5 fill:#ffe082,color:#000000
+    style O1 fill:#a5d6a7,color:#000000
+    style O2 fill:#ef9a9a,color:#000000
+    style O3 fill:#a5d6a7,color:#000000
 ```
-
-> [!NOTE]
-> **Diagram Reading Note:** The "epsilon tube" must trap **all** surface pieces as the disk shrinks. If any path of approach carries the surface outside the tube, the limit fails to exist. This is the geometric essence of the $\varepsilon$-$\delta$ definition.
-
----
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 5.1 Part A — Short Answer Questions (3 Marks Each)
-
-### Question A1 `[KTU University Exam – July 2024]`
-**(CO1, Remember)** Define the limit of a function $f(x, y)$ as $(x, y) \to (a, b)$ using the $\varepsilon$-$\delta$ formulation. State clearly what $\varepsilon$ and $\delta$ represent.
-
-**Model Answer (3 Marks):**
-> We say $\displaystyle\lim_{(x,y) \to (a,b)} f(x, y) = L$ if for every $\varepsilon > 0$ there exists a $\delta > 0$ such that for all $(x, y)$ in the domain of $f$ satisfying $0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta$, we have $\vert f(x, y) - L \vert < \varepsilon$.
->
-> **$\varepsilon$ (epsilon):** represents the *tolerance* on the output — the maximum allowed distance between $f(x, y)$ and the limit $L$.
->
-> **$\delta$ (delta):** represents the *radius* of the punctured disk around $(a, b)$ inside which all $(x, y)$ must lie.
->
-> **[Statement of definition: 2 Marks; Meaning of $\varepsilon$ and $\delta$: 1 Mark]**
-
 ---
 
-### Question A2 `[KTU University Exam – Dec 2023]`
-**(CO1, Understand)** State the three conditions required for a function $f(x, y)$ to be continuous at the point $(a, b)$. Give one example of a function that is discontinuous at the origin.
+## Part A — Short Answer Questions (3 Marks Each)
 
-**Model Answer (3 Marks):**
-> A function $f(x, y)$ is continuous at $(a, b)$ if and only if:
-> 1. $f(a, b)$ is **defined**,
-> 2. $\displaystyle\lim_{(x,y) \to (a,b)} f(x, y)$ **exists** as a finite real number,
-> 3. $\displaystyle\lim_{(x,y) \to (a,b)} f(x, y) = f(a, b)$.
->
-> **Example of discontinuity at origin:** $f(x, y) = \dfrac{xy}{x^2 + y^2}$ for $(x, y) \neq (0, 0)$ and $f(0, 0) = 0$. The limit does not exist (different paths give different values), violating condition 2.
->
-> **[Three conditions: 2 Marks; Valid example: 1 Mark]**
+### Question 1 [KTU University Exam – July 2024]
+**State the $\varepsilon$-$\delta$ definition of $\lim_{(x, y) \to (a, b)} f(x, y) = L$. Why is this definition more restrictive than the one-variable limit definition?**
 
----
-
-## 5.2 Part B — Long Answer Questions (14 Marks, with Internal Choice)
-
-### **Question B1(A) `[KTU University Exam – Dec 2023]`**
-**(CO2, Apply / Analyze)** Evaluate the following limits. Justify using the path-test or polar method as appropriate.
-
-**(a)** [7 Marks] $\displaystyle\lim_{(x,y) \to (0,0)} \frac{x^2 y}{x^4 + y^2}$
-
-**(b)** [7 Marks] $\displaystyle\lim_{(x,y) \to (0,0)} \frac{x^2 + y^2}{\sqrt{x^2 + y^2 + 1} - 1}$
-
----
-
-#### Model Solution to (a)
-
-**Step 1: Test path $y = x^2$ (parabolic).**
-
-Substitute $y = x^2$ into the function:
-
-$$\frac{x^2 \cdot x^2}{x^4 + (x^2)^2} = \frac{x^4}{x^4 + x^4} = \frac{x^4}{2x^4} = \frac{1}{2}$$
-
-As $x \to 0$, the value is constantly $\frac{1}{2}$.
-
-**[Substitution and simplification: 2 Marks]**
-
-**Step 2: Test path $y = 0$ (x-axis).**
-
-$$\frac{x^2 \cdot 0}{x^4 + 0} = 0$$
-
-As $x \to 0$, the value is $0$.
-
-**[Path 2 result: 1 Mark]**
-
-**Step 3: Compare and conclude.**
-
-Since path $y = 0$ gives limit $0$ and path $y = x^2$ gives limit $\frac{1}{2}$, two distinct paths yield two distinct limits.
-
-**[Comparison: 1 Mark]**
+**Model Answer (3 marks):**
 
 > [!NOTE]
-> **Final Answer (a):** $\boxed{\text{The limit does not exist.}}$ **[Conclusion: 3 Marks]**
+> **Definition (2 marks):** Let $f : D \to \mathbb{R}$ where $D \subseteq \mathbb{R}^{2}$ and let $(a, b)$ be an accumulation point of $D$. We say $\lim_{(x, y) \to (a, b)} f(x, y) = L$ if for every $\varepsilon > 0$ there exists a $\delta > 0$ such that for all $(x, y) \in D$,
+> $$0 < \sqrt{(x - a)^{2} + (y - b)^{2}} < \delta \quad \Longrightarrow \quad \vert f(x, y) - L \vert < \varepsilon$$
+
+**Reason for restrictiveness (1 mark):** In one variable, the variable $x$ can approach $a$ from only two directions (left or right). In two variables, $(x, y)$ can approach $(a, b)$ along **infinitely many paths** (lines, parabolas, spirals, etc.), and the value $L$ must be the same along all of them. This makes the two-variable definition more restrictive.
 
 ---
 
-#### Model Solution to (b)
+### Question 2 [KTU University Exam – Dec 2023]
+**Explain, with an example, how the path-dependence of two-variable limits is used to prove non-existence of a limit.**
 
-**Step 1: Substitution reveals $\frac{0}{0}$ form.**
-
-$$f(0, 0) = \frac{0 + 0}{\sqrt{0 + 0 + 1} - 1} = \frac{0}{1 - 1} = \frac{0}{0}$$
-
-**Indeterminate form — use algebraic manipulation.**
-
-**[Identifying indeterminate form: 1 Mark]**
-
-**Step 2: Multiply by the conjugate.**
-
-$$\frac{x^2 + y^2}{\sqrt{x^2 + y^2 + 1} - 1} \cdot \frac{\sqrt{x^2 + y^2 + 1} + 1}{\sqrt{x^2 + y^2 + 1} + 1} = \frac{(x^2 + y^2)\left(\sqrt{x^2 + y^2 + 1} + 1\right)}{(x^2 + y^2 + 1) - 1}$$
-
-$$= \frac{(x^2 + y^2)\left(\sqrt{x^2 + y^2 + 1} + 1\right)}{x^2 + y^2}$$
-
-**Step 3: Cancel $x^2 + y^2$ (which is non-zero near origin).**
-
-$$= \sqrt{x^2 + y^2 + 1} + 1$$
-
-**[Conjugate multiplication and cancellation: 3 Marks]**
-
-**Step 4: Substitute the limit point.**
-
-$$\lim_{(x,y) \to (0,0)} \left( \sqrt{x^2 + y^2 + 1} + 1 \right) = \sqrt{0 + 0 + 1} + 1 = 1 + 1 = 2$$
-
-**[Final evaluation: 2 Marks]**
+**Model Answer (3 marks):**
 
 > [!NOTE]
-> **Final Answer (b):** $\boxed{2}$
->
-> **[Continuity argument / verification: 1 Mark]**
+> **Concept (1 mark):** If two different approach paths toward the same point yield two different limit values, the joint two-variable limit does not exist.
+
+**Example (2 marks):** Consider $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{x^{2} - y^{2}}{x^{2} + y^{2}}$.
+* Along the $x$-axis ($y = 0$): $\lim_{x \to 0} \dfrac{x^{2}}{x^{2}} = 1$.
+* Along the $y$-axis ($x = 0$): $\lim_{y \to 0} \dfrac{-y^{2}}{y^{2}} = -1$.
+
+Since $1 \neq -1$, the limit **does not exist**. $\square$
 
 ---
 
-### **Question B1(B) `[KTU University Exam – July 2024]` (Alternative Choice)**
-**(CO2, Apply / Evaluate)**
+## Part B — Full-Descriptive Questions (14 Marks Each, Module Internal Choice)
 
-**(a)** [7 Marks] Show that $\displaystyle\lim_{(x,y) \to (0,0)} \frac{xy}{\sqrt{x^2 + y^2}} = 0$ using the Squeeze Theorem.
+### Question Choice A [KTU University Exam – July 2024, Module 2]
 
-**(b)** [7 Marks] Investigate the existence of $\displaystyle\lim_{(x,y) \to (0,0)} \frac{x^2 - y^2}{x^2 + y^2}$ using at least three distinct paths.
+#### Part (a) — 7 Marks [Cognitive Level: Apply]
+**Evaluate $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{x^{3}}{x^{2} + y^{2}}$ using the polar coordinate method. State clearly whether the limit exists.**
 
----
+**Model Solution (7 marks):**
 
-#### Model Solution to (a)
+**Step 1 — Set up the polar substitution (1 mark).** Let $x = r \cos \theta$ and $y = r \sin \theta$, so that as $(x, y) \to (0, 0)$, $r \to 0^{+}$.
 
-**Step 1: Establish a bound for $f(x, y)$.**
+**Step 2 — Substitute into $f$ (1 mark).**
+$$f(r, \theta) = \frac{(r \cos \theta)^{3}}{(r \cos \theta)^{2} + (r \sin \theta)^{2}} = \frac{r^{3} \cos^{3} \theta}{r^{2}(\cos^{2} \theta + \sin^{2} \theta)}$$
 
-We have $f(x, y) = \dfrac{xy}{\sqrt{x^2 + y^2}}$.
+**Step 3 — Use the Pythagorean identity (1 mark).** The denominator simplifies to $r^{2} \cdot 1 = r^{2}$.
 
-Take the absolute value:
+**Step 4 — Simplify the expression (1 mark).**
+$$f(r, \theta) = \frac{r^{3} \cos^{3} \theta}{r^{2}} = r \cos^{3} \theta$$
 
-$$\vert f(x, y) \vert = \frac{\vert x \vert \cdot \vert y \vert}{\sqrt{x^2 + y^2}}$$
+**Step 5 — Bound the $\theta$-dependent factor (1 mark).** Since $\cos^{3} \theta$ is bounded in $[-1, 1]$ for all $\theta$, the magnitude satisfies $\vert f(r, \theta) \vert \le r$.
 
-Using $\vert x \vert \leq \sqrt{x^2 + y^2}$ and $\vert y \vert \leq \sqrt{x^2 + y^2}$:
+**Step 6 — Apply the squeeze theorem (1 mark).** $-r \le f(r, \theta) \le r$ and both bounds tend to $0$ as $r \to 0^{+}$. Therefore, by the squeeze theorem,
 
-$$\vert f(x, y) \vert \leq \frac{\sqrt{x^2 + y^2} \cdot \sqrt{x^2 + y^2}}{\sqrt{x^2 + y^2}} = \sqrt{x^2 + y^2}$$
+$$\lim_{(x, y) \to (0, 0)} \frac{x^{3}}{x^{2} + y^{2}} = 0$$
 
-**[Setting up bounds: 3 Marks]**
-
-**Step 2: Apply the Squeeze Theorem.**
-
-We have:
-
-$$-\sqrt{x^2 + y^2} \leq \frac{xy}{\sqrt{x^2 + y^2}} \leq \sqrt{x^2 + y^2}$$
-
-Since $\displaystyle\lim_{(x,y) \to (0,0)} \sqrt{x^2 + y^2} = 0$ and $\displaystyle\lim_{(x,y) \to (0,0)} -\sqrt{x^2 + y^2} = 0$, the Squeeze Theorem gives:
-
-$$\lim_{(x,y) \to (0,0)} \frac{xy}{\sqrt{x^2 + y^2}} = 0$$
-
-**[Statement and application of Squeeze Theorem: 3 Marks]**
-
-> [!NOTE]
-> **Final Answer (a):** $\boxed{0}$ **[Conclusion: 1 Mark]**
+**Step 7 — Conclusion (1 mark).** The limit exists and equals $\mathbf{0}$.
 
 ---
 
-#### Model Solution to (b)
+#### Part (b) — 7 Marks [Cognitive Level: Understand + Apply]
+**Investigate the limit $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{x^{2} y}{x^{4} + y^{2}}$. Show that the limit exists along every line, but use a parabolic path to prove the limit does not exist in general.**
 
-**Step 1: Path 1 — along $x$-axis ($y = 0$).**
+**Model Solution (7 marks):**
 
-$$\lim_{x \to 0} \frac{x^2 - 0^2}{x^2 + 0^2} = \lim_{x \to 0} \frac{x^2}{x^2} = 1$$
+**Step 1 — Test along the $x$-axis ($y = 0$) (1 mark).**
+$$\lim_{x \to 0} \frac{x^{2} \cdot 0}{x^{4} + 0} = \lim_{x \to 0} \frac{0}{x^{4}} = 0$$
 
-**[Path 1: 2 Marks]**
+**Step 2 — Test along the $y$-axis ($x = 0$) (1 mark).**
+$$\lim_{y \to 0} \frac{0 \cdot y}{0 + y^{2}} = \lim_{y \to 0} \frac{0}{y^{2}} = 0$$
 
-**Step 2: Path 2 — along $y$-axis ($x = 0$).**
+**Step 3 — Test along an arbitrary line $y = m x$ (2 marks).**
+$$\lim_{x \to 0} \frac{x^{2}(m x)}{x^{4} + m^{2} x^{2}} = \lim_{x \to 0} \frac{m x^{3}}{x^{2}(x^{2} + m^{2})} = \lim_{x \to 0} \frac{m x}{x^{2} + m^{2}} = \frac{0}{m^{2}} = 0$$
 
-$$\lim_{y \to 0} \frac{0^2 - y^2}{0^2 + y^2} = \lim_{y \to 0} \frac{-y^2}{y^2} = -1$$
+So the limit is $0$ along **every straight line** through the origin.
 
-**[Path 2: 2 Marks]**
+**Step 4 — Test along the parabolic path $y = m x^{2}$ (1 mark).**
+$$\lim_{x \to 0} \frac{x^{2}(m x^{2})}{x^{4} + m^{2} x^{4}} = \lim_{x \to 0} \frac{m x^{4}}{x^{4}(1 + m^{2})} = \frac{m}{1 + m^{2}}$$
 
-**Step 3: Path 3 — along line $y = mx$ (with $m \neq 0$).**
+**Step 5 — Observe the contradiction (1 mark).** For different values of $m$, $\frac{m}{1 + m^{2}}$ takes different values (e.g., $m = 1$ gives $\frac{1}{2}$, $m = 2$ gives $\frac{2}{5}$). These are **not equal to $0$**.
 
-$$\lim_{x \to 0} \frac{x^2 - m^2 x^2}{x^2 + m^2 x^2} = \lim_{x \to 0} \frac{x^2(1 - m^2)}{x^2(1 + m^2)} = \frac{1 - m^2}{1 + m^2}$$
-
-For $m = 0$, this gives $1$ (matching Path 1). For $m = 1$, this gives $0$. So the path-dependent value is *not constant* across all lines.
-
-**[Path 3: 2 Marks]**
-
-**Step 4: Conclude non-existence.**
-
-Since Path 1 gives $1$ and Path 2 gives $-1$, two distinct values are obtained. Hence the limit **does not exist**.
-
-**[Conclusion: 1 Mark]**
-
-> [!NOTE]
-> **Final Answer (b):** $\boxed{\text{Limit does not exist (DNE).}}$
-
----
+**Step 6 — Conclude (1 mark).** Since the limit along all straight lines is $0$, but along $y = m x^{2}$ it equals $\frac{m}{1+m^{2}}$ (which depends on $m$), the joint two-variable limit **does not exist**.
 
 > [!WARNING]
-> **KTU Examiner's Valuation Warning — Common Pitfalls:**
-> 1. **Conflating iterated and simultaneous limits:** A common student error is to compute only $\lim_{x\to 0}\lim_{y\to 0}$ and assume the result is the answer. KTU examiners explicitly require *path analysis* or *polar proof* for simultaneous limits. **[−2 Marks]**
-> 2. **Missing the puncture:** In $\varepsilon$-$\delta$ proofs, the condition $0 < \sqrt{(x-a)^2 + (y-b)^2}$ (strict inequality) is mandatory. Omitting the strict inequality costs the definition step. **[−1 Mark]**
-> 3. **Forgetting to verify $M \neq 0$ in the quotient law:** When applying the limit of a quotient, you must state that the denominator's limit is non-zero. **[−1 Mark]**
-> 4. **Showing the *same* limit on many paths does not prove existence:** It only makes it *plausible*. Only polar substitution + uniform bound, or the Squeeze Theorem, constitutes a rigorous existence proof. **[−3 Marks if used as a "proof"]**
-> 5. **Path-family oversight:** Test at least *two qualitatively different* path families (e.g., a straight line and a parabola). Testing only the $x$- and $y$-axes is insufficient when the function is symmetric in $x$ and $y$. **[−2 Marks]**
+> **Valuation Pitfall (KTU Examiner's Warning):** A common student mistake is to stop after testing the linear paths and claim the limit is $0$. The KTU evaluator specifically checks for the parabolic counter-example. **Always test at least one non-linear (curved) path** when the function contains $x^{2}$, $y^{2}$, or higher powers — this is the examiner's favourite trap and will cost you 4 of the 7 marks.
 
 ---
 
-## 5.3 Topic Recap & Important Things to Remember
+### Question Choice B [KTU University Exam – Dec 2023, Module 2]
+
+#### Part (a) — 7 Marks [Cognitive Level: Apply]
+**Using the squeeze (sandwich) theorem, prove that $\displaystyle \lim_{(x, y) \to (0, 0)} \dfrac{x^{2} y^{2}}{x^{2} + y^{2}} = 0$.**
+
+**Model Solution (7 marks):**
+
+**Step 1 — Observe the non-negativity (1 mark).** Since $x^{2} y^{2} \ge 0$ and $x^{2} + y^{2} > 0$ for $(x, y) \neq (0, 0)$, we have $f(x, y) \ge 0$ throughout the domain. Therefore
+$$0 \le f(x, y) = \frac{x^{2} y^{2}}{x^{2} + y^{2}}$$
+
+**Step 2 — Apply AM-GM or algebraic bound (2 marks).** Since $x^{2} + y^{2} \ge 2 \vert x y \vert$ (AM-GM on $x^{2}$ and $y^{2}$), we get $\dfrac{1}{x^{2} + y^{2}} \le \dfrac{1}{2 \vert x y \vert}$ for $\vert x y \vert > 0$. Hence
+$$f(x, y) = \frac{x^{2} y^{2}}{x^{2} + y^{2}} \le \frac{x^{2} y^{2}}{2 \vert x y \vert} = \frac{\vert x y \vert}{2}$$
+
+**Step 3 — Refine the bound (1 mark).** Since $\vert x y \vert \le \dfrac{x^{2} + y^{2}}{2}$ (AM-GM on $\vert x \vert$ and $\vert y \vert$), we can write
+$$f(x, y) \le \frac{1}{2} \cdot \frac{x^{2} + y^{2}}{2} = \frac{x^{2} + y^{2}}{4}$$
+
+**Step 4 — Form the squeeze (1 mark).** Combining the lower and upper bounds:
+$$0 \le f(x, y) \le \frac{x^{2} + y^{2}}{4}$$
+
+**Step 5 — Evaluate the bounding limits (1 mark).** $\lim_{(x, y) \to (0, 0)} 0 = 0$ and $\lim_{(x, y) \to (0, 0)} \dfrac{x^{2} + y^{2}}{4} = 0$.
+
+**Step 6 — Apply the squeeze theorem (1 mark).** By the squeeze theorem,
+$$\lim_{(x, y) \to (0, 0)} \frac{x^{2} y^{2}}{x^{2} + y^{2}} = 0 \qquad \blacksquare$$
+
+---
+
+#### Part (b) — 7 Marks [Cognitive Level: Apply + Understand]
+**State whether $f(x, y) = \begin{cases} \dfrac{x y}{\sqrt{x^{2} + y^{2}}}, & (x, y) \neq (0, 0) \\ 0, & (x, y) = (0, 0) \end{cases}$ is continuous at $(0, 0)$. Justify your answer using the $\varepsilon$–$\delta$ definition.**
+
+**Model Solution (7 marks):**
+
+**Step 1 — Check function value (1 mark).** $f(0, 0) = 0$ (defined).
+
+**Step 2 — Bound the expression using AM-GM (2 marks).** For $(x, y) \neq (0, 0)$,
+$$\vert f(x, y) \vert = \frac{\vert x y \vert}{\sqrt{x^{2} + y^{2}}} \le \frac{1}{2} \cdot \frac{x^{2} + y^{2}}{\sqrt{x^{2} + y^{2}}} = \frac{1}{2} \sqrt{x^{2} + y^{2}}$$
+
+where we used $\vert x y \vert \le \dfrac{x^{2} + y^{2}}{2}$.
+
+**Step 3 — Set up the $\varepsilon$–$\delta$ statement (1 mark).** We must show: for every $\varepsilon > 0$, there exists $\delta > 0$ such that
+$$0 < \sqrt{x^{2} + y^{2}} < \delta \quad \Longrightarrow \quad \vert f(x, y) - 0 \vert < \varepsilon$$
+
+**Step 4 — Choose $\delta$ (1 mark).** Choose $\delta = 2 \varepsilon$. Then, whenever $0 < \sqrt{x^{2} + y^{2}} < \delta$,
+$$\vert f(x, y) \vert \le \frac{1}{2} \sqrt{x^{2} + y^{2}} < \frac{1}{2} \cdot 2 \varepsilon = \varepsilon$$
+
+**Step 5 — Conclude the limit (1 mark).** $\lim_{(x, y) \to (0, 0)} f(x, y) = 0$.
+
+**Step 6 — Conclude continuity (1 mark).** Since $f(0, 0) = 0 = \lim_{(x, y) \to (0, 0)} f(x, y)$, all three conditions of continuity are satisfied. Therefore, $f$ is **continuous at $(0, 0)$**.
+
+> [!WARNING]
+> **Valuation Pitfall:** Students often forget to verify the third continuity condition (limit equals the function value). A common error is to compute the limit but not state explicitly that it matches $f(0, 0)$. The KTU examiner deducts **1 mark** for this omission. Always end with the explicit triple: "limit exists, function value is defined, and they are equal — therefore continuous."
+
+---
+
+## Topic Recap & Important Things to Remember
 
 > [!IMPORTANT]
-> **Rapid-Revision Checklist for "Limits of Two-Variable Functions"**
+> **Rapid Revision Checklist — Module 2: Limits of Two-Variable Functions**
 
-- **Definition (KTU-mandated):** $\displaystyle\lim_{(x,y) \to (a,b)} f(x,y) = L$ iff $\forall \varepsilon > 0, \exists \delta > 0$ such that $0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta \Rightarrow \vert f(x,y) - L \vert < \varepsilon$. Always include the strict inequality $0 < \ldots$ (the disk is *punctured*).
-
-- **Continuity = substitution is valid** if and only if $f$ is continuous at $(a, b)$. For polynomials, rationals (with non-zero denominator), and elementary functions, this is the default case.
-
-- **Three-tier strategy:** (1) Substitute if continuous; (2) Simplify algebraically (factor, conjugate, known limits) if $\frac{0}{0}$; (3) Use path test (for non-existence) or polar / Squeeze (for existence).
-
-- **Path test recipe for DNE:** Pick two distinct paths, compute both one-variable limits. If they differ, the limit DNE. Always try: $x$-axis, $y$-axis, line $y = mx$, parabola $y = kx^2$, and cubics $y = x^3$.
-
-- **Polar coordinate method:** Substitute $x = r\cos\theta, y = r\sin\theta$. If the resulting expression becomes a function of $r$ alone (i.e., $\theta$-free) and tends to $L$ as $r \to 0^{+}$, the limit is $L$. If it still depends on $\theta$, the limit DNE.
-
-- **Squeeze Theorem template:** Find $g(x, y), h(x, y)$ with $g \leq f \leq h$ and $g, h \to L$. Common bounds: $\vert x \vert \leq \sqrt{x^2 + y^2}$, $\vert y \vert \leq \sqrt{x^2 + y^2}$, $\vert \sin\theta \vert \leq 1$, $\vert \cos\theta \vert \leq 1$.
-
-- **Iterated vs simultaneous:** Equality of iterated limits does **not** imply existence of the simultaneous limit. Conversely, unequal iterated limits *do* prove non-existence of the simultaneous limit.
-
-- **High-frequency indeterminate forms to recognize:** $\dfrac{0}{0}$, $\dfrac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$. Apply algebraic manipulation (factor, conjugate, polar).
-
-- **Memorize the standard polar identities:** $x^2 + y^2 = r^2$, $\dfrac{x^2}{x^2 + y^2} = \cos^2\theta$, $\dfrac{y^2}{x^2 + y^2} = \sin^2\theta$, $\dfrac{xy}{x^2 + y^2} = \cos\theta \sin\theta = \frac{1}{2}\sin(2\theta)$, $\dfrac{x}{x^2 + y^2} = \dfrac{\cos\theta}{r}$, $\dfrac{y}{x^2 + y^2} = \dfrac{\sin\theta}{r}$.
-
-- **Engineering links to remember:** Loss functions in ML, intensity in image processing, pressure/temperature in physics — all are functions of several variables, and their continuity/differentiability is governed by 2-D limits.
-
-- **Common exam trap:** A function may be defined at $(a, b)$ yet the limit may not equal $f(a, b)$ (removable discontinuity), or the limit may exist even when $f(a, b)$ is undefined (limit exists at a hole).
-
-- **Pitfall checklist (for self-review):**
-  - Did I write the strict inequality $0 < \ldots$ in the $\varepsilon$-$\delta$ definition?
-  - Did I test at least 2 *qualitatively different* paths before concluding DNE?
-  - For existence, did I confirm $\theta$-independence in polar form, **or** apply the Squeeze Theorem rigorously?
-  - For quotients, did I verify the denominator's limit is non-zero before applying the quotient law?
-  - Did I clearly state the final answer as a single real number, $\infty$, $-\infty$, or "DNE"?
-
----
+* **$\varepsilon$–$\delta$ Form:** $0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta \Rightarrow \vert f(x, y) - L \vert < \varepsilon$. Memorise the **order of quantifiers** — "for every $\varepsilon$" comes first, "there exists $\delta$" second.
+* **The Joint Limit vs Path Limit:** Two-variable limit = unique value $L$ that is approached **regardless of the path**. Path-dependence = limit DNE.
+* **Substitution Rule:** If $f$ is a polynomial or composition of continuous elementary functions, then $\lim_{(x, y) \to (a, b)} f = f(a, b)$ provided $f(a, b)$ is defined and finite.
+* **Indeterminate Form $\frac{0}{0}$:** Use one of three methods — path test, polar substitution, or squeeze theorem. Algebraic factorisation (e.g., $x^{2} - y^{2} = (x-y)(x+y)$) is a powerful preliminary step.
+* **Standard Path Catalogue:** Always test at least 3 paths for DNE problems — typically $y = 0$, $x = 0$, $y = x$, plus one curved path (parabola or root) for polynomials with squared terms.
+* **Polar Conversion Magic:** $x^{2} + y^{2} = r^{2}$ always collapses; any factor of $r$ left over in the numerator (without matching powers in the denominator) drives the limit to $0$.
+* **Squeeze Theorem Set-Up:** Identify two "trap" functions $g(x, y)$ and $h(x, y)$ with the same known limit $L$ such that $g \le f \le h$ near the target.
+* **Continuity Triple Test:** (i) $f(a, b)$ defined, (ii) $\lim_{(x, y) \to (a, b)} f$ exists, (iii) limit equals $f(a, b)$. All three must hold.
+* **Iterated vs Joint Limits:** $\lim_{x \to a} \lim_{y \to b} f(x, y)$ may differ from the joint limit. Do not confuse them. KTU tests them as separate questions.
+* **Pitfall to Avoid:** A single path match is **not** a proof of existence. A single path mismatch **is** a proof of non-existence. Memorise this asymmetry.
+* **Domain Caveat:** The function need not be defined at $(a, b)$ for the limit to exist. Limit concerns behaviour *near* the point, not *at* the point.
+* **Units & Constants:** The Euclidean distance $\sqrt{(x-a)^2 + (y-b)^2}$ is **dimensionless** when $x$ and $y$ carry the same unit; in physical applications, ensure both axes use the same scale (e.g., metres, not metres and seconds).
 
 <!-- SECTION_5_END -->

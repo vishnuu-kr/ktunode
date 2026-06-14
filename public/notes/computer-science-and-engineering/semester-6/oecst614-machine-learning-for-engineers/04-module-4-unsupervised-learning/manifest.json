@@ -1,0 +1,64 @@
+{
+  "course_name": "MACHINE LEARNING FOR ENGINEERS",
+  "course_code": "OECST614",
+  "module_number": 4,
+  "module_title": "Unsupervised learning",
+  "topics_generated": [
+    {
+      "title": "Unsupervised Learning",
+      "slug": "unsupervised-learning",
+      "path": "unsupervised-learning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Clustering  - Similarity measures",
+      "slug": "clustering-similarity-measures",
+      "path": "clustering-similarity-measures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hierarchical Clustering - Agglomerative Clustering, partitional clustering, K-means clustering",
+      "slug": "hierarchical-clustering-agglomerative-clustering-partitional-clustering-k-means-clustering",
+      "path": "hierarchical-clustering-agglomerative-clustering-partitional-clustering-k-means-clustering/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dimensionality reduction  - Principal Component Analysis",
+      "slug": "dimensionality-reduction-principal-component-analysis",
+      "path": "dimensionality-reduction-principal-component-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Multidimensional scaling",
+      "slug": "multidimensional-scaling",
+      "path": "multidimensional-scaling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Ensemble methods - bagging, boosting",
+      "slug": "ensemble-methods-bagging-boosting",
+      "path": "ensemble-methods-bagging-boosting/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Resampling methods  - Bootstrapping, Cross Validation.",
+      "slug": "resampling-methods-bootstrapping-cross-validation",
+      "path": "resampling-methods-bootstrapping-cross-validation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Practical aspects - Bias-Variance trade-off",
+      "slug": "practical-aspects-bias-variance-trade-off",
+      "path": "practical-aspects-bias-variance-trade-off/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

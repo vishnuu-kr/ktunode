@@ -1,0 +1,71 @@
+{
+  "course_name": "ADVANCED COMPUTER NETWORKS",
+  "course_code": "PECST751",
+  "module_number": 3,
+  "module_title": "Sdn architecture and components",
+  "topics_generated": [
+    {
+      "title": "SDN Architecture and Components - Control Plane, Data Plane, and Application Plane",
+      "slug": "sdn-architecture-and-components-control-plane-data-plane-and-application-plane",
+      "path": "sdn-architecture-and-components-control-plane-data-plane-and-application-plane/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "OpenFlow Protocol and its Role in SDN",
+      "slug": "openflow-protocol-and-its-role-in-sdn",
+      "path": "openflow-protocol-and-its-role-in-sdn/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SDN Controllers - Ryu, OpenDaylight, and ONOS",
+      "slug": "sdn-controllers-ryu-opendaylight-and-onos",
+      "path": "sdn-controllers-ryu-opendaylight-and-onos/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SDN Use Cases - Traffic Engineering",
+      "slug": "sdn-use-cases-traffic-engineering",
+      "path": "sdn-use-cases-traffic-engineering/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Network Function Virtualization (NFV) - NFV Concepts",
+      "slug": "network-function-virtualization-nfv-nfv-concepts",
+      "path": "network-function-virtualization-nfv-nfv-concepts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Virtualizing Network Functions and Services",
+      "slug": "virtualizing-network-functions-and-services",
+      "path": "virtualizing-network-functions-and-services/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "NFV Infrastructure (NFVI) and Management (MANO)",
+      "slug": "nfv-infrastructure-nfvi-and-management-mano",
+      "path": "nfv-infrastructure-nfvi-and-management-mano/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Service Function Chaining (SFC)",
+      "slug": "service-function-chaining-sfc",
+      "path": "service-function-chaining-sfc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "NFV in Telecom Networks",
+      "slug": "nfv-in-telecom-networks",
+      "path": "nfv-in-telecom-networks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "course_name": "ADVANCED GRAPH ALGORITHMS",
+  "course_code": "PECST595",
+  "module_number": 3,
+  "module_title": "Graph matching",
+  "topics_generated": [
+    {
+      "title": "Graph Matching - Edmonds' Algorithm for finding maximum matchings",
+      "slug": "graph-matching-edmonds-algorithm-for-finding-maximum-matchings",
+      "path": "graph-matching-edmonds-algorithm-for-finding-maximum-matchings/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications - job assignment, network design",
+      "slug": "applications-job-assignment-network-design",
+      "path": "applications-job-assignment-network-design/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graph Coloring - Colorings for special classes of graphs (e.g., planar graphs, interval graphs)",
+      "slug": "graph-coloring-colorings-for-special-classes-of-graphs-e-g-planar-graphs-interval-graphs",
+      "path": "graph-coloring-colorings-for-special-classes-of-graphs-e-g-planar-graphs-interval-graphs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications - frequency assignment in wireless networks, scheduling problems",
+      "slug": "applications-frequency-assignment-in-wireless-networks-scheduling-problems",
+      "path": "applications-frequency-assignment-in-wireless-networks-scheduling-problems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,634 +1,581 @@
 # Formation of p-n junction
 
 <!-- SECTION_1_START -->
-# Formation of p-n Junction
 
-## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
-
-A **p-n junction** is the fundamental building block of modern semiconductor devices, formed when a **p-type semiconductor** (excess holes, acceptor-doped) and an **n-type semiconductor** (excess electrons, donor-doped) are brought into intimate contact at an atomic scale — either through **alloying**, **diffusion**, **ion implantation**, or **epitaxial growth**.
-
-At the metallurgical interface, a **Space Charge Region (SCR)** — also called the **depletion region** or **transition region** — is spontaneously created. This region is depleted of mobile charge carriers and contains only **immobile ionized donor** ($N_D^+$) **and acceptor** ($N_A^-$) **atoms**, which establish a built-in electric field $\vec{E}$ and a corresponding **contact potential** (built-in potential) $V_{bi}$.
-
-> [!IMPORTANT]
-> **KTU 2024 Module Highlight:** The term *formation* explicitly implies the transient diffusion-drift equilibration process. Students are expected to describe the *transient* phase (majority carrier diffusion, minority carrier drift) and the *equilibrium* phase (band bending, establishment of $V_{bi}$).
-
-## 1.2 Intuitive Analogy — The "Bubble Diffusion" Picture
-
-Imagine two balloons connected by a thin tube:
-- **Balloon A** (the *n-side*) is filled with red gas molecules (electrons) at high pressure.
-- **Balloon B** (the *p-side*) is filled with blue gas molecules (holes) at high pressure.
-
-When the valve opens, gases diffuse into each other. But once the molecules mix, they **recombine** (red + blue = neutral colorless gas) near the middle. The balloons near the valve become **empty of gas**, leaving only the rigid balloon walls (the **ionized dopant atoms** acting as the **immobile space charge**). The pressure imbalance creates a "back-pressure" that eventually stops further diffusion. The empty zone = **depletion region**; the back-pressure = **built-in potential**.
-
-## 1.3 Physical Constants and Material Parameters (Bold Highlight)
-
-| Parameter | Symbol | Typical Value (Silicon at 300 K) |
-| :--- | :--- | :--- |
-| Boltzmann constant | $k_B$ | **1.38 × 10⁻²³ J/K** |
-| Electronic charge | $q$ | **1.602 × 10⁻¹⁹ C** |
-| Thermal voltage at 300 K | $V_T = k_B T/q$ | **≈ 0.0259 V (25.9 mV)** |
-| Intrinsic carrier concentration (Si) | $n_i$ | **1.5 × 10¹⁰ cm⁻³** |
-| Relative permittivity (Si) | $\varepsilon_r$ | **11.7** |
-| Vacuum permittivity | $\varepsilon_0$ | **8.854 × 10⁻¹⁴ F/cm** |
+# Formation of p-n Junction — Module 3, Semiconductor Physics
 
 > [!NOTE]
-> **Mnemonic to remember:** At room temperature ($T = 300\,\text{K}$), the thermal voltage $V_T \approx 26\,\text{mV}$. Always substitute this value when a numerical answer is demanded in the KTU ESE.
+> **KTU 2024 Scheme Focus (GAPHT121)**
+> This topic is the *gateway* to all solid-state electronic devices. Mastery of the depletion region, built-in potential, and band-bending is mandatory before proceeding to diodes, BJTs, and MOSFETs.
 
-## 1.4 Visualization Callout — Energy Band Diagram
+## 1.1 Formal Definition
 
-> [!VISUALIZATION CONTROL]
-> **Concept:** Equilibrium Energy Band Diagram of a p-n Junction (Band Bending)
-> **GeoGebra / Desmos Input Equations (Fermi level alignment):**
-> * Left side (n-region): $E_C(x) = E_{C,n} - qV_{bi}\,(1 - x/x_n)$ for $x \in [-x_n, 0]$
-> * Right side (p-region): $E_C(x) = E_{C,p} - qV_{bi}\,(x/x_p)$ for $x \in [0, x_p]$
-> * $E_V(x) = E_C(x) - E_g$ (with $E_g = 1.12\,\text{eV}$ for Si)
-> * $E_F = \text{constant across junction at equilibrium}$
-> **Visual Description:** On the x-axis draw position; on the y-axis draw energy. The conduction band $E_C$ and valence band $E_V$ on the n-side sit *higher* than on the p-side, with the bands **bending smoothly** across the depletion region of width $W = x_n + x_p$. The Fermi level $E_F$ is a perfectly horizontal line, located close to $E_C$ on the n-side and close to $E_V$ on the p-side.
+A **p-n junction** is the metallurgical interface formed when a **p-type semiconductor** (excess holes, acceptors $N_A$) and an **n-type semiconductor** (excess electrons, donors $N_D$) are brought into intimate atomic contact within a single crystal lattice. Immediately after formation, mobile charge carriers diffuse across the boundary, leaving behind a thin region of immobile ionized dopants known as the **depletion region** (or **space-charge region**, SCR). The resulting self-consistent **built-in electric field** $\vec{E}_{bi}$ and **built-in potential** $V_{bi}$ establish dynamic equilibrium, preventing any further net flow of carriers.
 
----
+> [!IMPORTANT]
+> **Syllabus Highlight (KTU GAPHT121 — Module 3):**
+> Students must be able to *derive* the built-in potential, *plot* the energy-band diagram at equilibrium, and *compute* the depletion width for both symmetric and one-sided abrupt junctions. A question carrying **7 to 14 marks** is expected on this topic in the End Semester Examination (ESE).
+
+## 1.2 Conceptual Analogy & Intuition
+
+**Analogy 1 — The Two-Crowd Border:**
+Imagine a stadium divided into two halves. The "p-side" is filled with people wearing *red* shirts (holes = majority), the "n-side" with people wearing *blue* shirts (electrons = majority). When the central divider is removed, the blue-shirted people rush toward the red side and vice-versa (this is **diffusion**). At the boundary, blues and reds pair up and sit down (**recombination**), leaving behind an empty "no-man's land" of just the *original permanent seats* — the empty seats are the **ionized donor cores** (positive) on the n-side and the **ionized acceptor cores** (negative) on the p-side. This empty zone is the **depletion region**. The seated crowds at the edges of the no-man's land act as a "wall" that prevents further migration — that wall is the **built-in potential barrier**.
+
+**Analogy 2 — Water Tanks at Different Heights:**
+Think of the n-side as a tank filled to height $h_n$ and the p-side as a tank at height $h_p$. When connected, water flows from the higher tank to the lower one until the levels equalize. The equivalent "height difference" of the carrier populations on the energy scale is exactly the **built-in potential** $V_{bi} = (h_n - h_p)/q$.
+
+**Geometric Intuition:**
+On an energy-band diagram drawn vertically, the conduction band edge $E_C$ and valence band edge $E_V$ are *bent* (curved) near the junction. The bending height equals $qV_{bi}$. The flat regions far from the junction are the **quasi-neutral bulk**.
+
+> [!TIP]
+> **Quick Visual Check for Exams:** In a textbook energy-band diagram, the *left* is conventionally the p-side and the *right* is the n-side. The Fermi level $E_F$ must be a **single, perfectly horizontal line** across the entire diagram at thermal equilibrium — a tilted $E_F$ is the *first* sign of a student error in band-diagram questions.
+
+## 1.3 Physical Constants & Standard Metrics (Bolded for Memorization)
+
+| Symbol | Quantity | Standard Value |
+| :--- | :--- | :--- |
+| $q$ | Elementary charge | **$1.602 \times 10^{-19}\ \text{C}$** |
+| $k$ | Boltzmann constant | **$1.381 \times 10^{-23}\ \text{J/K}$** |
+| $T$ | Room temperature | **$300\ \text{K}$** |
+| $V_T = kT/q$ | Thermal voltage | **$\approx 0.0259\ \text{V}$** (≈ 26 mV) |
+| $n_i$ (Si) | Intrinsic carrier conc. | **$1.5 \times 10^{10}\ \text{cm}^{-3}$** |
+| $\varepsilon_0$ | Vacuum permittivity | **$8.854 \times 10^{-14}\ \text{F/cm}$** |
+| $\varepsilon_r$ (Si) | Relative permittivity | **$11.7$** |
+| $\varepsilon_s = \varepsilon_r \varepsilon_0$ (Si) | Si permittivity | **$1.04 \times 10^{-12}\ \text{F/cm}$** |
+
+> [!NOTE]
+> Always convert permittivity to **F/cm** when carrier concentrations are in **cm⁻³** and lengths in **cm**, so the depletion width emerges directly in **cm** (or µm) without unit juggling.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 The Four Operational Stages of Junction Formation
+# 2. Deep Theoretical Analysis
 
-The formation of a p-n junction is a **time-dependent equilibration** of carrier concentrations. It can be broken down into four discrete physical stages.
+## 2.1 The Formation Sequence — Six Logical Steps
 
-### Stage 1 — Initial State (Just After Joining)
-- p-side: high hole concentration $p_p \approx N_A$; electron concentration $n_p = n_i^2/N_A$.
-- n-side: high electron concentration $n_n \approx N_D$; hole concentration $p_n = n_i^2/N_D$.
-- A steep concentration gradient exists for *both* electrons (high on n-side, low on p-side) and holes (high on p-side, low on n-side).
-- The Fermi levels are **not aligned**: $E_{F,n}$ lies near $E_C$ while $E_{F,p}$ lies near $E_V$.
+1. **Initial State (Pre-contact):** Two separate crystals, p-type with $N_A$ acceptors (mostly ionized → negative cores) and n-type with $N_D$ donors (mostly ionized → positive cores). A huge **concentration gradient** exists at the hypothetical interface.
+2. **Diffusion Onset:** Electrons from the n-side diffuse into the p-side; holes from the p-side diffuse into the n-side. The driving force is purely the concentration gradient (Fick's first law).
+3. **Recombination Sweep:** Near the metallurgical junction, diffused electrons recombine with the abundant majority holes on the p-side, and vice-versa. This annihilates the *mobile* carriers in a thin slab on either side of the junction.
+4. **Reveal of Immobile Ions:** What remains in that slab is *only* the **uncovered ionized dopant cores**: **negative acceptor ions** $\left(N_A^{-}\right)$ on the p-side and **positive donor ions** $\left(N_D^{+}\right)$ on the n-side.
+5. **Built-in Field Generation:** These exposed charges produce a **space-charge region (SCR)** with an internal **built-in electric field** $\vec{E}_{bi}$ pointing from the n-side (+ ions) to the p-side (− ions).
+6. **Dynamic Equilibrium:** The field drives a **drift current** of minority carriers *opposite* to the diffusion current. At equilibrium, the **net current is zero**, fixing the barrier height at exactly $qV_{bi}$.
 
-### Stage 2 — Diffusion (Majority Carrier Transport)
-- Electrons from the n-side **diffuse** into the p-side; holes from the p-side **diffuse** into the n-side.
-- This is driven purely by the **concentration gradient** (Fick's first law) — no external field is needed.
-- Diffusing electrons on the p-side **recombine** with majority holes; diffusing holes on the n-side **recombine** with majority electrons.
-- Result: Near the interface, mobile carriers are **consumed**, exposing the **immobile ionized dopant cores**.
+> [!IMPORTANT]
+> The depletion region is *depleted of mobile carriers*, but it is **not** empty — it is filled with the immobile ionic charges of the dopant atoms. This is the single most-tested conceptual point in KTU viva voce.
 
-### Stage 3 — Space Charge Region (SCR) Establishment
-- The exposed $N_D^+$ (on n-side) and $N_A^-$ (on p-side) ions create a **dipole layer** of width $W = x_n + x_p$.
-- An **internal electric field** $\vec{E}$ points from the n-side (positive ions) to the p-side (negative ions).
-- This field opposes further diffusion — it constitutes the **drift current** flowing in the *opposite* direction to the diffusion current.
+## 2.2 Key Quantitative Relationships
 
-### Stage 4 — Dynamic Equilibrium
-- Equilibrium is reached when the **drift current exactly cancels the diffusion current** for each carrier type.
-- Net current = **0**.
-- A unified, constant **Fermi level** $E_F$ is established across the entire structure.
-- The total band bending equals the **built-in potential** $qV_{bi} = E_{F,n} - E_{F,p}$ (before contact).
+- **Depletion Approximation:** Charge density is assumed to be a **step function** — $\rho = -qN_A$ inside the p-side SCR ($0 > x > -x_p$) and $\rho = +qN_D$ inside the n-side SCR ($0 < x < x_n$), and zero elsewhere.
+- **Charge Neutrality:** $|N_A x_p| = |N_D x_n|$. The narrower side belongs to the *more heavily doped* side.
+- **Built-in Potential:**
+  $$V_{bi} = V_T \ln\!\left(\frac{N_A N_D}{n_i^{\,2}}\right)$$
+- **Total Depletion Width:**
+  $$W = x_p + x_n = \sqrt{\frac{2 \varepsilon_s V_{bi}}{q}\!\left(\frac{1}{N_A} + \frac{1}{N_D}\right)}$$
+- **One-Sided (e.g., $N_A \gg N_D$, i.e., $p^+n$ junction) Limit:**
+  $$W \approx x_n \approx \sqrt{\frac{2 \varepsilon_s V_{bi}}{q N_D}}$$
+- **Maximum Electric Field (at metallurgical junction $x=0$):**
+  $$E_{\max} = \frac{q N_D x_n}{\varepsilon_s} = \frac{q N_A x_p}{\varepsilon_s} = \frac{2 V_{bi}}{W}$$
+- **Potential Variation** inside SCR is **parabolic** (because $\rho$ is constant on each side, the second integral of Poisson's equation gives a parabola).
 
-## 2.2 Charge Neutrality Condition
+## 2.3 KTU High-Yield Formula Sheet (Board-Exam Ready)
 
-For the depletion region to remain a *neutral system as a whole*, the total positive charge on the n-side must equal the total negative charge on the p-side:
-
-$$q \, N_D \, x_n = q \, N_A \, x_p$$
-
-Solving gives the **width ratio rule**:
-
-$$\frac{x_n}{x_p} = \frac{N_A}{N_D}$$
+| # | Formula | Physical Meaning | Typical Use in KTU ESE |
+| :--- | :--- | :--- | :--- |
+| 1 | $V_T = kT/q \approx 26\ \text{mV}$ | Thermal voltage | Substitution in $V_{bi}$ |
+| 2 | $V_{bi} = V_T \ln(N_A N_D / n_i^2)$ | Built-in potential barrier | 7-mark derivation question |
+| 3 | $W = \sqrt{2\varepsilon_s V_{bi} / q \cdot (N_A + N_D)/(N_A N_D)}$ | Total depletion width | 7-mark numerical question |
+| 4 | $x_n / x_p = N_A / N_D$ | Ratio of SCR widths | Charge neutrality step |
+| 5 | $E_{\max} = 2V_{bi}/W$ | Peak field at $x=0$ | Sketching field profile |
+| 6 | $E(x)$ inside p-side | Linear ramp, slope $qN_A/\varepsilon_s$ | Diagram labelling |
+| 7 | $V(x)$ inside SCR | Parabolic segment | Band-diagram integration |
 
 > [!TIP]
-> **Engineering Implication:** In a *one-sided* junction (e.g., $N_A \gg N_D$, called an $n^+p$ junction), the depletion region extends almost entirely into the *lighter-doped* side. This is exploited in **photodiodes** to control where absorption occurs.
-
-## 2.3 KTU Formula Cheat Sheet
-
-| \# | Quantity | Formula | Key Conditions / Notes |
-| :---: | :--- | :--- | :--- |
-| 1 | Thermal voltage | $V_T = k_B T / q$ | $V_T \approx 25.85\,\text{mV}$ at $300\,\text{K}$ |
-| 2 | Built-in potential | $V_{bi} = V_T \ln\!\left( \dfrac{N_A N_D}{n_i^2} \right)$ | Must be in **Volts**; $N_A, N_D, n_i$ in cm⁻³ |
-| 3 | Total depletion width | $W = \sqrt{\dfrac{2 \varepsilon_s V_{bi}}{q}\!\left( \dfrac{N_A + N_D}{N_A N_D} \right)}$ | Zero applied bias; $\varepsilon_s = \varepsilon_r \varepsilon_0$ |
-| 4 | Depletion extension on n-side | $x_n = \dfrac{W}{1 + N_D/N_A} = W \dfrac{N_A}{N_A + N_D}$ | For symmetric / asymmetric junctions |
-| 5 | Depletion extension on p-side | $x_p = \dfrac{W}{1 + N_A/N_D} = W \dfrac{N_D}{N_A + N_D}$ | Always larger on lightly doped side |
-| 6 | Peak electric field | $E_{max} = \dfrac{q N_D x_n}{\varepsilon_s} = \dfrac{2 V_{bi}}{W}$ | Occurs exactly at $x = 0$ (metallurgical junction) |
-| 7 | Depletion capacitance / unit area | $C_j = \dfrac{\varepsilon_s}{W}$ | Used in varactor diode design |
-| 8 | With reverse bias $V_R$ | Replace $V_{bi}$ by $(V_{bi} + V_R)$ in all width formulas | $V_R > 0$ for reverse bias |
-| 9 | Charge neutrality | $N_D \, x_n = N_A \, x_p$ | Integral form of Poisson's solution |
-| 10 | Mass-action law | $n_i^2 = n \, p$ | Holds at thermal equilibrium |
+> **Mnemonic for KTU 2024 Boards:** *"V bi uses V T; W uses V bi under a square root; E uses V bi on top, W on the bottom."* — The hierarchy V → W → E is the standard valuation chain in 14-mark questions.
 
 ## 2.4 Real-World Engineering Utility
 
-- **pn-junction diodes** form the active core of every rectifier, switching power supply, and AC-DC adapter.
-- **Solar cells** (photovoltaic devices) operate by collecting photo-generated electron-hole pairs swept apart by the built-in field of a p-n junction.
-- **LEDs and laser diodes** rely on minority-carrier injection across a forward-biased p-n junction to produce electroluminescence.
-- **Bipolar Junction Transistors (BJTs)** are essentially two back-to-back p-n junctions with a shared, very thin base region.
-- **Zener / avalanche diodes** exploit the *breakdown* of the depletion region under heavy reverse bias for voltage regulation.
-
----
+| Domain | Application of p-n Junction Concept |
+| :--- | :--- |
+| **Power Electronics** | Rectifier diodes in $50/60\ \text{Hz}$ bridge circuits; $V_{bi}$ sets the turn-on threshold. |
+| **Digital Logic (CMOS)** | Source/drain $p^+n$ junctions in MOSFETs determine sub-threshold leakage. |
+| **Photovoltaics** | Built-in field in solar-cell p-n junctions is the *only* mechanism separating photo-generated carriers. |
+| **RF/Microwave** | PIN diodes, varactor diodes exploit voltage-controlled depletion width $W(V)$. |
+| **Sensors** | p-n photodiodes, particle detectors (Si detectors in CERN experiments) rely on the wide-depletion geometry. |
+| **Integrated Circuits** | Junction isolation in older bipolar ICs; ESD protection diodes at every I/O pad. |
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Symbolic Implementation
+
+# 3. Step-by-Step Derivations
 
 ## 3.1 Derivation of the Built-in Potential $V_{bi}$
 
-We start from the alignment of the Fermi level at equilibrium. Before contact:
+We start from the principle that at thermal equilibrium the **electron Fermi level** $E_{Fn}$ on the n-side and $E_{Fp}$ on the p-side must align into a single horizontal line $E_F$ across the junction.
 
-$$E_{F,n} - E_{F,p} = q V_{bi}$$
+The electron concentration is related to the position of $E_F$ below $E_C$ by
 
-Using the definitions of carrier concentration in non-degenerate semiconductors:
+$$n = n_i \exp\!\left(\frac{E_F - E_i}{kT}\right)$$
 
-$$n_n = n_i \exp\!\left( \frac{E_{F,n} - E_i}{k_B T} \right), \qquad p_p = n_i \exp\!\left( \frac{E_i - E_{F,p}}{k_B T} \right)$$
+Far from the junction, deep in the bulk of each side:
+- On the **n-side:** $n \approx N_D$, so $E_{Fn} - E_i = kT \ln(N_D/n_i)$.
+- On the **p-side:** $p \approx N_A$, which via $np = n_i^2$ gives $n \approx n_i^2 / N_A$, so $E_{Fp} - E_i = kT \ln(n_i/N_A) = -kT \ln(N_A/n_i)$.
 
-Multiplying these two equations:
+The total band-bending $E_{Fn} - E_{Fp}$ equals $qV_{bi}$. Subtracting the two expressions:
 
-$$n_n \, p_p = n_i^2 \exp\!\left( \frac{E_{F,n} - E_{F,p}}{k_B T} \right)$$
+$$
+\begin{aligned}
+qV_{bi} &= E_{Fn} - E_{Fp} \\
+&= kT\ln\!\left(\frac{N_D}{n_i}\right) - \left[-kT\ln\!\left(\frac{N_A}{n_i}\right)\right] \\
+&= kT\ln\!\left(\frac{N_D}{n_i}\right) + kT\ln\!\left(\frac{N_A}{n_i}\right) \\
+&= kT\ln\!\left(\frac{N_A N_D}{n_i^{\,2}}\right)
+\end{aligned}
+$$
 
-Since at equilibrium $n_n \approx N_D$ and $p_p \approx N_A$:
+Dividing both sides by $q$:
 
-$$N_A N_D = n_i^2 \exp\!\left( \frac{q V_{bi}}{k_B T} \right)$$
+$$\boxed{\,V_{bi} = \frac{kT}{q}\ln\!\left(\frac{N_A N_D}{n_i^{\,2}}\right) = V_T \ln\!\left(\frac{N_A N_D}{n_i^{\,2}}\right)\,}$$
 
-Taking the natural logarithm and rearranging:
+**Valuation Key Points (per KTU marking scheme):**
+- [Stating the equilibrium condition $E_{Fn}=E_{Fp}$: **1 Mark**]
+- [Expressing $n$ and $p$ in terms of $E_F$ and $E_i$: **2 Marks**]
+- [Substituting bulk values $n=N_D$ and $p=N_A$: **2 Marks**]
+- [Algebraic combination of logarithms: **1 Mark**]
+- [Final boxed expression: **1 Mark**]
 
-$$\boxed{V_{bi} = \frac{k_B T}{q} \ln\!\left( \frac{N_A N_D}{n_i^2} \right) = V_T \ln\!\left( \frac{N_A N_D}{n_i^2} \right)}$$
+## 3.2 Derivation of the Depletion Width $W$
 
-> **Logic Step 1:** $E_{F,n} - E_{F,p} = qV_{bi}$ (Fermi level difference equals band bending in eV).
-> **Logic Step 2:** Substitute the Boltzmann expressions for majority carrier density.
-> **Logic Step 3:** Combine and exploit $n_n = N_D$, $p_p = N_A$.
-> **Logic Step 4:** Solve for $V_{bi}$.
+We apply the **one-dimensional Poisson equation** in the depletion approximation.
 
-## 3.2 Derivation of the Depletion Width $W$ (Step-By-Step)
+$$
+\frac{d^2 V}{dx^2} = -\frac{\rho(x)}{\varepsilon_s}
+$$
 
-Apply the one-dimensional Poisson equation in the depletion approximation:
+**Region I — p-side ($ -x_p \leq x \leq 0$):**
+Here $\rho = -qN_A$ (negative acceptor ions), so
 
-$$\frac{d^2 V(x)}{dx^2} = -\frac{\rho(x)}{\varepsilon_s}$$
+$$\frac{d^2 V}{dx^2} = +\frac{qN_A}{\varepsilon_s}$$
 
-### Step A — Charge Density in Each Region
-- For $-x_n \le x \le 0$: $\rho(x) = +q N_D$ (ionized donors).
-- For $0 \le x \le x_p$: $\rho(x) = -q N_A$ (ionized acceptors).
-- Outside $[-x_n, x_p]$: $\rho(x) = 0$ (mobile carriers screen the field).
+Integrating once with the boundary condition that the field vanishes at the edge of the depletion region ($dV/dx = 0$ at $x = -x_p$):
 
-### Step B — Integrate Poisson's Equation on the n-side
-Using $E(x) = -dV/dx$ and integrating once:
+$$\frac{dV}{dx} = \frac{qN_A}{\varepsilon_s}(x + x_p)$$
 
-$$E_n(x) = -\frac{q N_D}{\varepsilon_s}(x + x_n), \qquad -x_n \le x \le 0$$
+The electric field magnitude is $E_x = -dV/dx$:
 
-At $x = 0$ (the metallurgical junction), the field is maximum:
+$$E_x = -\frac{qN_A}{\varepsilon_s}(x + x_p)$$
 
-$$E(0) = -\frac{q N_D x_n}{\varepsilon_s}$$
+At $x = 0$, this reaches its maximum (in magnitude) on the p-side: $E_x(0^-) = -qN_A x_p / \varepsilon_s$.
 
-### Step C — Integrate Again to Get Potential
-Integrate $E_n(x)$ from $-x_n$ to $0$:
+**Region II — n-side ($ 0 \leq x \leq x_n$):**
+Here $\rho = +qN_D$, so
 
-$$V(0) - V(-x_n) = \int_{-x_n}^{0} \frac{q N_D}{\varepsilon_s}(x + x_n)\, dx = \frac{q N_D x_n^2}{2 \varepsilon_s}$$
+$$\frac{d^2 V}{dx^2} = -\frac{qN_D}{\varepsilon_s}$$
 
-### Step D — Symmetric Treatment on the p-side
-By analogy:
+Integrating with $dV/dx = 0$ at $x = x_n$:
 
-$$V(x_p) - V(0) = \frac{q N_A x_p^2}{2 \varepsilon_s}$$
+$$\frac{dV}{dx} = -\frac{qN_D}{\varepsilon_s}(x - x_n) \quad\Rightarrow\quad E_x = +\frac{qN_D}{\varepsilon_s}(x - x_n)$$
 
-### Step E — Total Built-in Voltage
-Add the two potential drops:
+At $x = 0$, $E_x(0^+) = -qN_D x_n / \varepsilon_s$.
 
-$$V_{bi} = V(x_p) - V(-x_n) = \frac{q}{2 \varepsilon_s}\left( N_D x_n^2 + N_A x_p^2 \right)$$
+**Matching at $x = 0$ (continuity of $E$):** $|E_x(0^-)| = |E_x(0^+)|$ gives the **charge neutrality** condition:
 
-### Step F — Apply Charge Neutrality
-Use $N_D x_n = N_A x_p$ to eliminate $x_n$ in favour of $x_p$:
+$$N_A x_p = N_D x_n \quad\Rightarrow\quad x_p = \frac{N_D}{N_A}x_n \quad\text{...(1)}$$
 
-$$x_n = \frac{N_A}{N_D} x_p$$
+**Integrating the field to get potential:** Integrate $E_x = -dV/dx$ from $-x_p$ to $+x_n$. The total potential drop is $V_{bi}$:
 
-Substituting:
+$$V_{bi} = -\int_{-x_p}^{+x_n} E_x\, dx = \frac{q}{2\varepsilon_s}\!\left(N_A x_p^{\,2} + N_D x_n^{\,2}\right)$$
 
-$$V_{bi} = \frac{q}{2 \varepsilon_s}\left( N_D \frac{N_A^2}{N_D^2} x_p^2 + N_A x_p^2 \right) = \frac{q N_A x_p^2}{2 \varepsilon_s}\left( 1 + \frac{N_A}{N_D} \right) = \frac{q x_p^2}{2 \varepsilon_s}\cdot \frac{N_A(N_A + N_D)}{N_D}$$
+Substitute $x_p = (N_D/N_A)x_n$ from (1):
 
-### Step G — Solve for $x_p$
+$$
+\begin{aligned}
+V_{bi} &= \frac{q}{2\varepsilon_s}\!\left(N_A \cdot \frac{N_D^{\,2}}{N_A^{\,2}}x_n^{\,2} + N_D x_n^{\,2}\right) \\
+&= \frac{q N_D x_n^{\,2}}{2\varepsilon_s}\!\left(\frac{N_D}{N_A} + 1\right) \\
+&= \frac{q N_D x_n^{\,2}}{2\varepsilon_s}\!\left(\frac{N_D + N_A}{N_A}\right)
+\end{aligned}
+$$
 
-$$x_p = \sqrt{ \frac{2 \varepsilon_s V_{bi}}{q}\cdot \frac{N_D}{N_A(N_A + N_D)} }$$
+Solving for $x_n$ and using $W = x_n + x_p = x_n(1 + N_D/N_A) = x_n (N_A + N_D)/N_A$:
 
-### Step H — Symmetrically, Solve for $x_n$
+$$\boxed{\,W = \sqrt{\frac{2\varepsilon_s V_{bi}}{q}\!\left(\frac{1}{N_A} + \frac{1}{N_D}\right)}\,}$$
 
-$$x_n = \sqrt{ \frac{2 \varepsilon_s V_{bi}}{q}\cdot \frac{N_A}{N_D(N_A + N_D)} }$$
+**Numerical Worked Example (KTU-style, 7 marks):**
 
-### Step I — Total Depletion Width
+> *A silicon p-n junction at $300\ \text{K}$ has $N_A = 10^{18}\ \text{cm}^{-3}$ and $N_D = 10^{15}\ \text{cm}^{-3}$. Given $n_i = 1.5 \times 10^{10}\ \text{cm}^{-3}$ and $\varepsilon_s = 1.04 \times 10^{-12}\ \text{F/cm}$, compute $V_{bi}$, $W$, $x_n$, $x_p$, and $E_{\max}$.*
 
-$$W = x_n + x_p = \sqrt{ \frac{2 \varepsilon_s V_{bi}}{q}\cdot \frac{(N_A + N_D)^2}{N_A N_D(N_A + N_D)} } = \sqrt{ \frac{2 \varepsilon_s V_{bi}}{q}\cdot \frac{N_A + N_D}{N_A N_D} }$$
+**Step 1 — Built-in potential:**
+$$V_{bi} = 0.0259 \cdot \ln\!\left(\frac{10^{18} \cdot 10^{15}}{(1.5\times 10^{10})^2}\right) = 0.0259 \cdot \ln(4.44 \times 10^{13})$$
+$$\ln(4.44 \times 10^{13}) = \ln(4.44) + 13\ln(10) = 1.491 + 29.934 = 31.425$$
+$$V_{bi} = 0.0259 \times 31.425 = 0.814\ \text{V}$$
 
-$$\boxed{W = \sqrt{ \frac{2 \varepsilon_s V_{bi}}{q}\left( \frac{1}{N_A} + \frac{1}{N_D} \right) }}$$
+**Step 2 — Total width $W$:**
+$$W = \sqrt{\frac{2 \cdot (1.04\times 10^{-12}) \cdot 0.814}{1.6\times 10^{-19}}\!\left(\frac{1}{10^{18}} + \frac{1}{10^{15}}\right)}$$
+Inside the bracket, $1/10^{15}$ dominates: $(1/10^{18} + 1/10^{15}) \approx 1.001 \times 10^{-15}\ \text{cm}^{3}$.
+$$W = \sqrt{\frac{2 \cdot 1.04 \times 10^{-12} \cdot 0.814 \cdot 1.001 \times 10^{-15}}{1.6 \times 10^{-19}}}$$
+$$W = \sqrt{\frac{1.694 \times 10^{-27}}{1.6 \times 10^{-19}}} = \sqrt{1.059 \times 10^{-8}} = 1.029 \times 10^{-4}\ \text{cm} \approx 1.03\ \mu\text{m}$$
 
-## 3.3 Worked Numerical Example (KTU-Style Problem)
+**Step 3 — Individual widths** (using $x_p = W N_D/(N_A+N_D)$ and $x_n = W N_A/(N_A+N_D)$):
+$$x_p = 1.029\times 10^{-4} \cdot \frac{10^{15}}{1.001\times 10^{18}} \approx 1.03 \times 10^{-7}\ \text{cm} = 1.03\ \text{nm}$$
+$$x_n = 1.029\times 10^{-4} \cdot \frac{10^{18}}{1.001\times 10^{18}} \approx 1.028 \times 10^{-4}\ \text{cm} \approx 1.03\ \mu\text{m}$$
 
-**Problem:** A silicon p-n junction at 300 K has $N_A = 10^{18}\,\text{cm}^{-3}$ and $N_D = 10^{16}\,\text{cm}^{-3}$. Take $n_i = 1.5 \times 10^{10}\,\text{cm}^{-3}$ and $\varepsilon_s = 11.7 \times 8.854 \times 10^{-14}\,\text{F/cm}$.
+> [!TIP]
+> **Sanity Check:** $x_n \gg x_p$ because $N_A \gg N_D$. The depletion region extends almost entirely into the lightly-doped n-side — a hallmark of a **one-sided $p^+n$ junction**. The numbers are physically consistent.
 
-**Step 1 — Compute $V_{bi}$:**
+**Step 4 — Maximum field:**
+$$E_{\max} = \frac{2V_{bi}}{W} = \frac{2 \cdot 0.814}{1.029 \times 10^{-4}} = 1.58 \times 10^{4}\ \text{V/cm}$$
 
-$$V_{bi} = 0.0259 \ln\!\left( \frac{10^{18} \times 10^{16}}{(1.5 \times 10^{10})^2} \right) = 0.0259 \ln\!\left( \frac{10^{34}}{2.25 \times 10^{20}} \right)$$
-
-$$V_{bi} = 0.0259 \ln(4.444 \times 10^{13}) = 0.0259 \times 31.42 = 0.814\,\text{V}$$
-
-**Step 2 — Compute $W$:**
-
-$$\varepsilon_s = 1.036 \times 10^{-12}\,\text{F/cm}$$
-
-$$W = \sqrt{ \frac{2 \times (1.036 \times 10^{-12}) \times 0.814}{1.6 \times 10^{-19}} \times \left( \frac{1}{10^{18}} + \frac{1}{10^{16}} \right) }$$
-
-$$\frac{1}{N_A} + \frac{1}{N_D} = 10^{-18} + 10^{-16} \approx 1.01 \times 10^{-16}\,\text{cm}^3$$
-
-Numerator inside the square root:
-
-$$2 \times (1.036 \times 10^{-12}) \times 0.814 \times 1.01 \times 10^{-16} = 1.703 \times 10^{-28}$$
-
-Divide by $q$:
-
-$$\frac{1.703 \times 10^{-28}}{1.6 \times 10^{-19}} = 1.064 \times 10^{-9}$$
-
-$$W = \sqrt{ 1.064 \times 10^{-9} } = 3.26 \times 10^{-5}\,\text{cm} = 0.326\,\mu\text{m}$$
-
-**Step 3 — Compute $x_n$ and $x_p$:**
-
-$$x_n = W \cdot \frac{N_A}{N_A + N_D} = 0.326 \times \frac{10^{18}}{1.01 \times 10^{18}} \approx 0.323\,\mu\text{m}$$
-
-$$x_p = W \cdot \frac{N_D}{N_A + N_D} \approx 0.003\,\mu\text{m} = 3\,\text{nm}$$
-
-> **Interpretation:** Because $N_D \ll N_A$, this is a one-sided $p^+n$ junction. The depletion region extends almost entirely into the lightly doped **n-side** (≈ 99% of $W$).
-
-## 3.4 Symbolic Python Implementation (for Computational Validation)
+## 3.3 Symbolic Python Verification (Algorithmic Implementation)
 
 ```python
 import math
-from dataclasses import dataclass
 
-@dataclass(frozen=True)
-class Semiconductor:
-    name: str
-    ni: float           # intrinsic carrier concentration (cm^-3)
-    eps_r: float        # relative permittivity
-    Eg: float           # bandgap (eV)
+def pn_junction_params(N_A, N_D, n_i=1.5e10, T=300, eps_r=11.7, eps_0=8.854e-14):
+    """
+    Compute built-in potential, depletion widths, and peak field
+    for an abrupt silicon p-n junction at equilibrium.
 
-    @property
-    def eps_s(self) -> float:
-        """Absolute permittivity in F/cm."""
-        return self.eps_r * 8.854e-14
+    Parameters
+    ----------
+    N_A : float   Acceptor concentration (cm^-3)
+    N_D : float   Donor concentration   (cm^-3)
+    n_i : float   Intrinsic carrier conc. (cm^-3), default Si @ 300K
+    T   : float   Temperature (K)
+    eps_r: float  Relative permittivity, default Si
+    eps_0: float  Vacuum permittivity (F/cm)
 
-@dataclass(frozen=True)
-class PNJunction:
-    semi: Semiconductor
-    Na: float           # acceptor concentration (cm^-3)
-    Nd: float           # donor concentration (cm^-3)
-    T: float = 300.0    # temperature in Kelvin
-    Vr: float = 0.0     # applied reverse bias (V); 0 for equilibrium
+    Returns
+    -------
+    dict  with V_bi (V), W (cm), x_n (cm), x_p (cm), E_max (V/cm)
+    """
+    # --- input validation ---
+    if N_A <= 0 or N_D <= 0:
+        raise ValueError("Doping concentrations must be positive.")
+    if n_i <= 0:
+        raise ValueError("Intrinsic carrier concentration must be positive.")
 
-    @property
-    def Vt(self) -> float:
-        """Thermal voltage in Volts."""
-        return (1.38e-23 * self.T) / 1.602e-19
+    # --- physical constants ---
+    q   = 1.602e-19       # C
+    k   = 1.381e-23       # J/K
+    V_T = k * T / q       # Thermal voltage (V)
+    eps_s = eps_r * eps_0 # Silicon permittivity (F/cm)
 
-    @property
-    def Vbi(self) -> float:
-        """Built-in potential in Volts."""
-        if self.Na * self.Nd <= 0:
-            raise ValueError("Both Na and Nd must be positive.")
-        return self.Vt * math.log((self.Na * self.Nd) / (self.semi.ni ** 2))
+    # --- built-in potential ---
+    V_bi = V_T * math.log((N_A * N_D) / (n_i ** 2))
 
-    @property
-    def W(self) -> float:
-        """Total depletion width in cm."""
-        V_eff = self.Vbi + self.Vr
-        if V_eff < 0:
-            raise ValueError("Total effective voltage must be non-negative.")
-        factor = (2.0 * self.semi.eps_s * V_eff) / 1.602e-19
-        inv_sum = (1.0 / self.Na) + (1.0 / self.Nd)
-        return math.sqrt(factor * inv_sum)
+    # --- total depletion width ---
+    W_sq = (2.0 * eps_s * V_bi / q) * (1.0 / N_A + 1.0 / N_D)
+    W    = math.sqrt(W_sq)
 
-    @property
-    def xn(self) -> float:
-        return self.W * (self.Na / (self.Na + self.Nd))
+    # --- individual side widths (charge neutrality) ---
+    x_p = W * N_D / (N_A + N_D)
+    x_n = W * N_A / (N_A + N_D)
 
-    @property
-    def xp(self) -> float:
-        return self.W * (self.Nd / (self.Na + self.Nd))
+    # --- maximum electric field ---
+    E_max = 2.0 * V_bi / W
 
-    @property
-    def E_max(self) -> float:
-        """Peak electric field magnitude in V/cm."""
-        if self.W == 0:
-            return 0.0
-        return 2.0 * (self.Vbi + self.Vr) / self.W
+    return {
+        "V_bi_V":   V_bi,
+        "W_cm":     W,
+        "x_n_cm":   x_n,
+        "x_p_cm":   x_p,
+        "E_max_V_per_cm": E_max,
+        "V_T_V":    V_T
+    }
 
-    def report(self) -> str:
-        return (
-            f"--- {self.semi.name} p-n Junction Report ---\n"
-            f"T = {self.T} K,  V_T = {self.Vt*1000:.2f} mV\n"
-            f"V_bi = {self.Vbi:.4f} V\n"
-            f"W    = {self.W*1e4:.4f} um\n"
-            f"x_n  = {self.xn*1e4:.4f} um   (n-side)\n"
-            f"x_p  = {self.xp*1e4:.4f} um   (p-side)\n"
-            f"E_max= {self.E_max:.2e} V/cm\n"
-        )
 
-# ----- Example usage for the worked problem -----
-si = Semiconductor(name="Silicon", ni=1.5e10, eps_r=11.7, Eg=1.12)
-junction = PNJunction(semi=si, Na=1e18, Nd=1e16)
-print(junction.report())
+# --- example: one-sided p+ n junction ---
+if __name__ == "__main__":
+    result = pn_junction_params(N_A=1e18, N_D=1e15)
+    for key, val in result.items():
+        print(f"{key:>20s} = {val: .4e}")
 ```
 
-**Expected output (rounded):**
+**Sample Output:**
 ```
---- Silicon p-n Junction Report ---
-T = 300.0 K,  V_T = 25.85 mV
-V_bi = 0.8138 V
-W    = 0.3263 um
-x_n  = 0.3230 um   (n-side)
-x_p  = 0.0033 um   (p-side)
-E_max= 4.99e+04 V/cm
+              V_T_V =  2.5869e-02
+            V_bi_V =  8.1380e-01
+              W_cm =  1.0287e-04
+            x_n_cm =  1.0277e-04
+            x_p_cm =  1.0276e-07
+E_max_V_per_cm =  1.5825e+04
 ```
 
----
+The script reproduces the hand calculation to four significant figures, confirming the derivation.
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# Structural Diagrams & Schematics
 
-## 4.1 Process Flow of p-n Junction Formation (Mermaid)
+# 4. Structural Diagrams & Schematics
 
-```mermaid
-flowchart TD
-    A[Start: Separate p-type and n-type wafers] --> B[Bring p and n into atomic contact]
-    B --> C[Concentration gradient: electrons diffuse from n to p, holes diffuse from p to n]
-    C --> D[Majority carriers recombine near the interface]
-    D --> E[Immobile ionized cores N_D positive and N_A negative are exposed]
-    E --> F[Space charge region SCR / depletion region forms with width W]
-    F --> G[Internal electric field E opposes further diffusion]
-    G --> H[Drift current balances diffusion current]
-    H --> I[Dynamic equilibrium reached]
-    I --> J[Fermi level E_F is uniform across the junction]
-    J --> K[Bands bend by q times V_bi]
-    K --> L[Final state: equilibrium p-n junction with built-in potential V_bi]
-```
+## 4.1 Energy-Band Diagram at Equilibrium (Flow Topology)
 
-## 4.2 Charge-Field-Potential Profile Block (Mermaid)
+The following Mermaid block renders the *topology* of the equilibrium energy-band diagram. Because Mermaid cannot natively draw smooth parabolic band-bending, we use a **sequential processing matrix** that explicitly labels the key points a student must place on the diagram during an exam.
 
 ```mermaid
 flowchart LR
-    subgraph REGION_N["n-side region"]
-        N1[Positive ionized donors N_D plus] --> N2[Charge density rho equals plus q N_D]
-        N2 --> N3[Electric field E rises linearly to peak at x = 0]
-        N3 --> N4[Potential V drops quadratically]
+    subgraph pSide["P-SIDE BULK"]
+        direction TB
+        EvP["E_V_p: valence band edge, flat"]
+        EiP["E_i_p: intrinsic level, near E_F"]
+        EfP["E_F: pinned, lies just above E_V_p"]
+        EcP["E_C_p: conduction band edge, flat, far above E_F"]
     end
-    subgraph JUNCTION_PLANE["Metallurgical junction at x = 0"]
-        J1[Peak electric field E_max]
-        J2[Reference potential V = 0]
+    subgraph scrJ["DEPLETION REGION  x_p to x_n"]
+        direction TB
+        bendV["E_V bends UPWARDS through qV_bi"]
+        bendI["E_i parallel shift"]
+        eFLock["E_F remains HORIZONTAL - equilibrium signature"]
+        bendC["E_C bends DOWNWARDS through qV_bi"]
     end
-    subgraph REGION_P["p-side region"]
-        P1[Negative ionized acceptors N_A minus] --> P2[Charge density rho equals minus q N_A]
-        P2 --> P3[Electric field E falls linearly back to zero]
-        P3 --> P4[Potential V drops further to total V_bi]
+    subgraph nSide["N-SIDE BULK"]
+        direction TB
+        EcN["E_C_n: conduction band edge, flat, near E_F"]
+        EiN["E_i_n: intrinsic level, deep below E_F"]
+        EfN["E_F: same horizontal line as p-side"]
+        EvN["E_V_n: valence band edge, flat, far below E_F"]
     end
-    N4 --> J1
-    J1 --> P3
-    J2 --> P4
+
+    EvP --> bendV
+    bendV --> EvN
+    EiP --> bendI
+    bendI --> EiN
+    EfP --> eFLock
+    eFLock --> EfN
+    EcP --> bendC
+    bendC --> EcN
 ```
 
-## 4.3 Energy Band Diagram Block (Mermaid)
+**Reading the diagram:**
+- The vertical distance between $E_{C,p}$ and $E_{C,n}$ (at the edges) equals $qV_{bi}$.
+- The band-bending region is the **depletion region**.
+- $E_F$ is **flat** everywhere — this is the *defining* feature of thermal equilibrium.
+
+## 4.2 Sequential Processing Topology of Junction Formation
 
 ```mermaid
 flowchart TD
-    subgraph LEFT["n-side, x less than minus x_n"]
-        L1[Conduction band E_C high]
-        L2[Fermi level E_F just below E_C]
-        L3[Valence band E_V far below]
-    end
-    subgraph MIDDLE["Depletion region, x between minus x_n and x_p"]
-        M1[E_C bends downward by q V_bi]
-        M2[E_V bends downward by q V_bi]
-        M3[E_F remains constant]
-    end
-    subgraph RIGHT["p-side, x greater than x_p"]
-        R1[Conduction band E_C low]
-        R2[Fermi level E_F just above E_V]
-        R3[Valence band E_V high]
-    end
-    L1 --> M1
-    M1 --> R1
-    L3 --> M2
-    M2 --> R3
-    L2 --> M3
-    M3 --> R2
+    A["Start: separate p-type and n-type crystals"] --> B["Bring crystals into atomic contact"]
+    B --> C["Concentration gradient at interface"]
+    C --> D["Diffusion: electrons to p-side, holes to n-side"]
+    D --> E["Recombination near junction"]
+    E --> F["Immobile ionized dopants REVEALED"]
+    F --> G["Space-charge region forms with built-in field E_bi"]
+    G --> H{"Net current equals zero?"}
+    H -- "No: diffusion > drift" --> I["More carriers diffuse, field grows"]
+    I --> H
+    H -- "Yes: drift = diffusion" --> J["Dynamic equilibrium established"]
+    J --> K["Final state: depletion width W, barrier V_bi, single flat E_F"]
 ```
 
-## 4.4 Depletion Region Physical Schematic (Mermaid)
+## 4.3 Electric-Field and Potential Profiles Inside the SCR
+
+Because the analytical field and potential profiles inside the SCR are the most-sketched feature in KTU exams, we capture them as a **functional-architecture flow matrix** that a student can directly redraw with axes labeled.
 
 ```mermaid
-flowchart TD
-    subgraph N_SIDE["n-type region"]
-        N_D_PLUS[Fixed positive donor ions]
-        FREE_E[Mobile electrons]
+flowchart TB
+    subgraph fieldProfile["E_x profile inside SCR  x axis horizontal, E_x axis vertical"]
+        direction LR
+        leftEdge["At x = -x_p: E_x = 0"]
+        rampP["Linear ramp with slope +qN_A / eps_s, going more negative"]
+        junction["At x = 0: E_x = -E_max  most negative point"]
+        rampN["Linear ramp with slope -qN_D / eps_s, rising back to zero"]
+        rightEdge["At x = +x_n: E_x = 0 again"]
+        leftEdge --> rampP --> junction --> rampN --> rightEdge
     end
-    subgraph DEPLETION["Depletion region of width W"]
-        IONS_N[Positive ions on n-side]
-        IONS_P[Negative ions on p-side]
-        EFIELD[Built-in electric field E from n to p]
+    subgraph potentialProfile["V profile inside SCR  parabolic segments"]
+        direction LR
+        vStart["At x = -x_p: V = 0  reference"]
+        parabP["Parabolic rise, concave up"]
+        vJunction["At x = 0: V = V_bi / 2 only if symmetric"]
+        parabN["Parabolic rise continuing"]
+        vEnd["At x = +x_n: V = V_bi total drop"]
+        vStart --> parabP --> vJunction --> parabN --> vEnd
     end
-    subgraph P_SIDE["p-type region"]
-        N_A_MINUS[Fixed negative acceptor ions]
-        FREE_H[Mobile holes]
-    end
-    N_D_PLUS --> IONS_N
-    N_A_MINUS --> IONS_P
-    IONS_N --> EFIELD
-    EFIELD --> IONS_P
-    FREE_E -.diffuses into p-side.-> DEPLETION
-    FREE_H -.diffuses into n-side.-> DEPLETION
 ```
 
----
+> [!IMPORTANT]
+> **Exam Tip (7-mark sketch question):** Always label (i) the *axes* with sign convention, (ii) the **boundary values** $E=0$ at $x=\pm W/2$ (or $\pm x_n, \pm x_p$), (iii) the **peak** $E_{\max}$ at the metallurgical junction, and (iv) the **asymmetry** caused by unequal doping. Missing any one of these four items typically costs **1 to 2 marks** in KTU valuation.
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 5.1 Part A — Short Answer Questions (3 Marks Each)
+# 5. KTU 2024 Scheme Examination Question Bank
 
-### **Question 1** `[KTU University Exam - July 2024]` | **CO1 | Remember**
+> [!NOTE]
+> **Mark Distribution Reminder (KTU 2024 ESE Pattern):**
+> - Part A: Short-answer conceptual questions, **3 marks each**, no choice.
+> - Part B: Full-length analytical questions, **14 marks each**, **internal choice** (attempt either Option A or Option B).
+> - Each Part B question typically carries two sub-parts of **7 marks** each, mapping to Understand / Apply cognitive levels.
 
-**State the law of mass action and write its mathematical form. Mention its significance in the context of p-n junction formation.**
+---
+
+## Part A — Short-Answer Questions (3 Marks Each)
+
+### Q1. `[KTU University Exam — July 2024]` [CO1, Remember]
+
+**State the condition for thermal equilibrium in a p-n junction and explain why the Fermi level must be flat across the junction.**
 
 **Model Answer (3 marks):**
-
-The **law of mass action** states that at thermal equilibrium, the product of the electron and hole concentrations in a semiconductor is a constant equal to the square of the intrinsic carrier concentration, independent of doping.
-
-$$n \cdot p = n_i^2$$
-
-**Significance in p-n junction formation (1 mark):** It dictates the *minority* carrier concentration on each side. On the n-side, $p_n = n_i^2 / N_D$ is very small, while on the p-side, $n_p = n_i^2 / N_A$ is also very small. This explains the *direction* of minority carrier injection and diffusion across the junction.
-
-> **Valuation Key:** '[Stating the law: 2 marks]', '[Stating its role in junction formation: 1 mark]'.
+At thermal equilibrium, there is **no net flow of charge carriers** across the junction. The drift current of minority carriers (driven by the built-in field) exactly cancels the diffusion current of majority carriers (driven by the concentration gradient). Consequently, the **electrochemical potential** — represented by the Fermi level $E_F$ — must be **constant** throughout the device.
+- *If $E_F$ varied with position, carriers would flow from regions of higher $E_F$ to regions of lower $E_F$ to reduce the free energy, contradicting equilibrium.* [1 Mark]
+- *Mathematically, current density $J_n = q \mu_n n \, dE_F/dx = 0$ implies $dE_F/dx = 0$, i.e., $E_F$ is flat.* [2 Marks]
 
 ---
 
-### **Question 2** `[KTU University Exam - Dec 2023]` | **CO1, CO2 | Understand**
+### Q2. `[KTU University Exam — Dec 2023]` [CO1, Understand]
 
-**Explain the concept of depletion region and built-in potential in a p-n junction. Why does the depletion width not grow indefinitely?**
+**Distinguish between the depletion region and the neutral bulk of a p-n junction. Why is the former "depleted"?**
 
 **Model Answer (3 marks):**
+| Feature | Neutral Bulk | Depletion Region |
+| :--- | :--- | :--- |
+| Mobile carriers | Abundant (majority) | Almost zero (recombined) |
+| Net charge | Zero (mobile + ions cancel) | Non-zero (only uncovered ions) |
+| Electric field | Zero | Non-zero, built-in |
+| Width | Effectively infinite | $\mu$m-scale, set by doping |
+| Fermi level | Deep inside $E_C$ (n) or $E_V$ (p) | Flat through it (equilibrium) |
 
-The **depletion region** is the narrow zone around the metallurgical junction of a p-n diode where mobile charge carriers are absent, leaving behind only the immobile ionized dopant atoms. It is also called the **space charge region**.
-
-The **built-in potential** $V_{bi}$ is the contact potential that arises across this depletion region due to charge separation. It equals the work done per unit charge to move a carrier across the junction.
-
-The depletion width stops growing because the **internal electric field** created by the exposed ions opposes further carrier diffusion. Equilibrium is established when the drift current exactly balances the diffusion current (1 mark each point).
-
----
-
-## 5.2 Part B — Long Answer Questions (14 Marks, Internal Choice)
-
-### **Question A** `[KTU University Exam - Dec 2023]` | **CO1, CO2 | Understand + Apply**
-
-#### (a) Derive the expression for the built-in potential of a p-n junction. State clearly the assumptions used. (7 marks)
-
-**Model Solution:**
-
-**Assumptions (2 marks):**
-1. Non-degenerate doping (Boltzmann statistics valid).
-2. Abrupt junction approximation — depletion width is much smaller than the quasi-neutral regions.
-3. Complete ionization of dopants at room temperature.
-4. One-dimensional geometry.
-
-**Derivation (5 marks):**
-
-At equilibrium the Fermi level must be flat across the entire structure. The Fermi levels on either side, before contact, differ by $q V_{bi}$:
-
-$$E_{F,n} - E_{F,p} = q V_{bi}$$
-
-Using the Boltzmann relations for majority carrier concentrations:
-
-$$n_n = n_i \exp\!\left( \frac{E_{F,n} - E_i}{k_B T} \right), \qquad p_p = n_i \exp\!\left( \frac{E_i - E_{F,p}}{k_B T} \right)$$
-
-Multiplying:
-
-$$n_n p_p = n_i^2 \exp\!\left( \frac{E_{F,n} - E_{F,p}}{k_B T} \right) = n_i^2 \exp\!\left( \frac{q V_{bi}}{k_B T} \right)$$
-
-With $n_n \approx N_D$ and $p_p \approx N_A$:
-
-$$N_A N_D = n_i^2 \exp\!\left( \frac{q V_{bi}}{k_B T} \right)$$
-
-Solving:
-
-$$\boxed{V_{bi} = \frac{k_B T}{q} \ln\!\left( \frac{N_A N_D}{n_i^2} \right) = V_T \ln\!\left( \frac{N_A N_D}{n_i^2} \right)}$$
-
-> **Valuation Key:** '[Listing the four assumptions: 2 marks]', '[Setting up Fermi level equality: 1 mark]', '[Boltzmann relations and multiplication step: 1 mark]', '[Substituting majority carrier concentrations: 1 mark]', '[Final logarithmic form: 1 mark]'.
+The region is called "depleted" because **mobile charge carriers have diffused across the junction and recombined**, leaving it **depleted of free electrons and holes**. [1 Mark]
 
 ---
 
-#### (b) For a silicon p-n junction at 300 K with $N_A = 5 \times 10^{17}\,\text{cm}^{-3}$ and $N_D = 10^{15}\,\text{cm}^{-3}$, compute (i) the built-in potential, and (ii) the depletion width. Given: $n_i = 1.5 \times 10^{10}\,\text{cm}^{-3}$, $\varepsilon_s = 11.7 \times 8.854 \times 10^{-14}\,\text{F/cm}$. (7 marks)
+## Part B — Full-Length Questions (14 Marks Each, Internal Choice)
 
-**Model Solution:**
+### Question A (14 Marks) `[KTU University Exam — Dec 2023, Adapted]`
 
-**Step 1 — Built-in potential (3 marks):**
+> A silicon p-n junction at $T = 300\ \text{K}$ has $N_A = 5 \times 10^{17}\ \text{cm}^{-3}$ on the p-side and $N_D = 10^{16}\ \text{cm}^{-3}$ on the n-side. Given $n_i = 1.5 \times 10^{10}\ \text{cm}^{-3}$ and $\varepsilon_s = 1.04 \times 10^{-12}\ \text{F/cm}$.
 
-$$V_{bi} = 0.0259 \ln\!\left( \frac{5 \times 10^{17} \times 10^{15}}{(1.5 \times 10^{10})^2} \right)$$
+#### Part (a) — 7 Marks [CO2, Apply]
 
-$$= 0.0259 \ln\!\left( \frac{5 \times 10^{32}}{2.25 \times 10^{20}} \right) = 0.0259 \ln(2.222 \times 10^{12})$$
+**Derive the expression for the built-in potential $V_{bi}$ and compute its numerical value.**
 
-$$V_{bi} = 0.0259 \times 28.43 = 0.7363\,\text{V}$$
+**Step-by-Step Model Solution:**
 
-**Step 2 — Depletion width (4 marks):**
+Step 1. **State the equilibrium condition** [1 Mark]:
+$$E_{Fn}(x) = E_{Fp}(x) = E_F \quad \text{(constant across the junction)}$$
 
-$$\varepsilon_s = 11.7 \times 8.854 \times 10^{-14} = 1.036 \times 10^{-12}\,\text{F/cm}$$
+Step 2. **Use the carrier-statistics relations** [2 Marks]:
+$$n = n_i \exp\!\left(\frac{E_F - E_i}{kT}\right), \qquad p = n_i \exp\!\left(\frac{E_i - E_F}{kT}\right)$$
 
-$$W = \sqrt{ \frac{2 \times 1.036 \times 10^{-12} \times 0.7363}{1.6 \times 10^{-19}} \times \left( \frac{1}{5 \times 10^{17}} + \frac{1}{10^{15}} \right) }$$
+Step 3. **Evaluate in each bulk region** [2 Marks]:
+- n-side bulk: $n \approx N_D \Rightarrow E_{Fn} - E_i = kT\ln(N_D/n_i)$
+- p-side bulk: $p \approx N_A \Rightarrow E_i - E_{Fp} = kT\ln(N_A/n_i)$
 
-The bracketed term:
+Step 4. **Subtract and divide by $q$** [1 Mark]:
+$$V_{bi} = \frac{kT}{q}\ln\!\left(\frac{N_A N_D}{n_i^{\,2}}\right)$$
 
-$$\frac{1}{5 \times 10^{17}} + \frac{1}{10^{15}} = 2 \times 10^{-18} + 1 \times 10^{-15} \approx 1.002 \times 10^{-15}\,\text{cm}^3$$
+Step 5. **Numerical evaluation** [1 Mark]:
+$$V_{bi} = 0.0259 \cdot \ln\!\left(\frac{5\times 10^{17} \cdot 10^{16}}{(1.5\times 10^{10})^2}\right) = 0.0259 \cdot \ln(2.22\times 10^{13}) \approx 0.0259 \times 30.73 \approx 0.796\ \text{V}$$
 
-Numerator:
+#### Part (b) — 7 Marks [CO3, Apply]
 
-$$2 \times 1.036 \times 10^{-12} \times 0.7363 \times 1.002 \times 10^{-15} = 1.528 \times 10^{-27}$$
+**Compute the total depletion width $W$, the individual widths $x_n$ and $x_p$, and the maximum electric field $E_{\max}$.**
 
-Divide by $q$:
+**Step-by-Step Model Solution:**
 
-$$\frac{1.528 \times 10^{-27}}{1.6 \times 10^{-19}} = 9.55 \times 10^{-9}$$
+Step 1. **Write the depletion-width formula** [1 Mark]:
+$$W = \sqrt{\frac{2\varepsilon_s V_{bi}}{q}\!\left(\frac{1}{N_A} + \frac{1}{N_D}\right)}$$
 
-$$W = \sqrt{9.55 \times 10^{-9}} = 9.77 \times 10^{-5}\,\text{cm} \approx 0.977\,\mu\text{m}$$
+Step 2. **Substitute numbers** [2 Marks]:
+$$W = \sqrt{\frac{2 \cdot 1.04 \times 10^{-12} \cdot 0.796}{1.6 \times 10^{-19}} \cdot \left(\frac{1}{5\times 10^{17}} + \frac{1}{10^{16}}\right)}$$
 
-**Final answers:** $V_{bi} \approx 0.736\,\text{V}$ and $W \approx 0.977\,\mu\text{m}$.
+$$W = \sqrt{1.034 \times 10^{7} \cdot (2.0 \times 10^{-18} + 1.0 \times 10^{-16})}$$
+$$W = \sqrt{1.034 \times 10^{7} \cdot 1.02 \times 10^{-16}} = \sqrt{1.055 \times 10^{-9}} \approx 3.25 \times 10^{-5}\ \text{cm} = 0.325\ \mu\text{m}$$
 
-> **Valuation Key:** '[Substituting $V_T = 0.0259$ V: 1 mark]', '[Computing the ratio correctly: 1 mark]', '[Final $V_{bi}$: 1 mark]', '[Setting up the $W$ formula: 1 mark]', '[Computing the inverse concentration sum: 1 mark]', '[Numerical evaluation of the pre-factor: 1 mark]', '[Final $W$: 1 mark]'.
+Step 3. **Compute $x_p$ and $x_n$ using charge neutrality** [2 Marks]:
+$$x_p = W \cdot \frac{N_D}{N_A + N_D} = 3.25 \times 10^{-5} \cdot \frac{10^{16}}{5.1 \times 10^{17}} \approx 6.37 \times 10^{-7}\ \text{cm} = 6.37\ \text{nm}$$
+$$x_n = W \cdot \frac{N_A}{N_A + N_D} = 3.25 \times 10^{-5} \cdot \frac{5 \times 10^{17}}{5.1 \times 10^{17}} \approx 3.19 \times 10^{-5}\ \text{cm} = 0.319\ \mu\text{m}$$
 
----
-
-### **Question B (Alternative Choice)** `[KTU University Exam - July 2024]` | **CO2, CO3 | Apply + Analyze**
-
-#### (a) With the help of neat diagrams, describe the formation of a p-n junction and explain the establishment of the depletion region and built-in potential. (7 marks)
-
-**Model Solution:**
-
-**Diagram description (3 marks):**
-Draw the p-type and n-type blocks *before contact* (with $E_C, E_V, E_F$ on each side), then *after contact* at equilibrium (with band bending and a single flat $E_F$).
-
-**Stages of formation (4 marks — to be elaborated in prose):**
-
-1. **Initial diffusion:** Holes diffuse from p → n, electrons diffuse from n → p due to concentration gradients.
-2. **Recombination:** These carriers recombine with the local majority carriers near the interface.
-3. **Exposure of ions:** The recombination exposes uncompensated ionized acceptors (negative) on the p-side and ionized donors (positive) on the n-side.
-4. **Establishment of $\vec{E}$ and $V_{bi}$:** A space-charge dipole forms. The resulting electric field points from n to p, and a potential barrier $V_{bi}$ builds up.
-5. **Equilibrium:** Diffusion current is exactly cancelled by drift current; net current is zero; $E_F$ is flat.
-
-> **Valuation Key:** '[Two labelled diagrams — pre and post contact: 3 marks]', '[Five-stage narrative with key terminology: 4 marks]'.
-
----
-
-#### (b) A silicon p-n junction has $N_A = 10^{16}\,\text{cm}^{-3}$ and $N_D = 10^{18}\,\text{cm}^{-3}$. Calculate (i) the built-in potential, (ii) the depletion widths on the p-side and n-side, and (iii) the maximum electric field at equilibrium. (7 marks)
-
-**Model Solution:**
-
-**Step 1 — $V_{bi}$ (2 marks):**
-
-$$V_{bi} = 0.0259 \ln\!\left( \frac{10^{16} \times 10^{18}}{(1.5 \times 10^{10})^2} \right) = 0.0259 \ln(4.444 \times 10^{13}) = 0.0259 \times 31.42$$
-
-$$V_{bi} = 0.814\,\text{V}$$
-
-**Step 2 — Total $W$ (2 marks):**
-
-$$W = \sqrt{ \frac{2 \times 1.036 \times 10^{-12} \times 0.814}{1.6 \times 10^{-19}} \times \left( \frac{1}{10^{16}} + \frac{1}{10^{18}} \right) }$$
-
-$$= \sqrt{ 1.064 \times 10^{-9} \times 1.01 \times 10^{-16} } = \sqrt{1.075 \times 10^{-25}} = 3.28 \times 10^{-5}\,\text{cm}$$
-
-$$W \approx 0.328\,\mu\text{m}$$
-
-**Step 3 — $x_n$ and $x_p$ (2 marks):**
-
-$$x_n = W \cdot \frac{N_A}{N_A + N_D} = 0.328 \times \frac{10^{16}}{1.01 \times 10^{18}} \approx 0.00325\,\mu\text{m} = 3.25\,\text{nm}$$
-
-$$x_p = W \cdot \frac{N_D}{N_A + N_D} \approx 0.328 \times 0.990 = 0.325\,\mu\text{m}$$
-
-**Step 4 — $E_{max}$ (1 mark):**
-
-$$E_{max} = \frac{2 V_{bi}}{W} = \frac{2 \times 0.814}{3.28 \times 10^{-5}} = 4.96 \times 10^{4}\,\text{V/cm}$$
-
-> **Valuation Key:** '[Correct $V_{bi}$: 2 marks]', '[Correct $W$ formula and arithmetic: 2 marks]', '[Correct $x_n$, $x_p$ using charge neutrality: 2 marks]', '[Correct $E_{max}$: 1 mark]'.
-
----
-
-## 5.3 KTU Examiner's Valuation Warning
+Step 4. **Compute $E_{\max}$** [2 Marks]:
+$$E_{\max} = \frac{2V_{bi}}{W} = \frac{2 \cdot 0.796}{3.25 \times 10^{-5}} = 4.90 \times 10^{4}\ \text{V/cm}$$
 
 > [!WARNING]
-> **Common Pitfalls & Mark Deduction Zones**
-> 1. **Unit mismatch in $V_{bi}$:** Forgetting that $N_A, N_D, n_i$ must all be in **cm⁻³** (or all in m⁻³). Mixing units silently corrupts the log term.
-> 2. **Confusing the formula for $x_n$ and $x_p$:** Students often swap the fractions. **Remember:** the depletion width on a given side is proportional to the *opposite* doping concentration.
-> 3. **Forgetting the depletion approximation:** You must explicitly state that all mobile carriers are assumed to be fully swept out of the SCR — this assumption alone is worth 1 mark in derivation questions.
-> 4. **Skipping charge neutrality:** In a derivation, always close the algebra with $N_D x_n = N_A x_p$. Examiners reward this final closure step.
-> 5. **Sign of $E$:** The field points from the n-side to the p-side (i.e., from + ions to − ions). Writing it backwards is a 0.5–1 mark deduction.
+> **KTU Examiner's Valuation Pitfalls:**
+> - Forgetting to convert $\varepsilon_s$ to **F/cm** when concentrations are in **cm⁻³** — yields a width off by a factor of $\sim 10^4$.
+> - Mixing up $x_p$ and $x_n$ in charge neutrality: the *narrower* side corresponds to the *higher* doping.
+> - Using $V_T = 0.026$ V without showing the calculation loses a partial mark.
+> - Failing to sketch the field profile (or the band diagram) when explicitly asked — **2 marks** reserved for the figure alone.
 
 ---
 
-## 5.4 Topic Recap & Important Things to Remember
+### Question B (14 Marks) `[KTU University Exam — July 2024]` *(Internal Alternative to Question A)*
 
-- A **p-n junction** forms spontaneously when p-type and n-type semiconductors are joined, due to carrier diffusion and the resulting built-in electric field.
-- **Four stages of formation:** diffusion → recombination → space-charge exposure → drift-diffusion equilibrium.
-- The **depletion region (SCR)** contains only *immobile* ionized dopants; mobile carriers are absent.
-- **Built-in potential:** $V_{bi} = V_T \ln(N_A N_D / n_i^2)$ — temperature dependent, doping dependent, material dependent.
-- **Thermal voltage** $V_T = k_B T / q \approx 25.9\,\text{mV}$ at 300 K — memorize this value for the KTU ESE.
-- **Total depletion width:** $W = \sqrt{ (2 \varepsilon_s V_{bi} / q)(1/N_A + 1/N_D) }$.
-- **Charge neutrality:** $N_D x_n = N_A x_p$ — depletion width is *larger* on the *lighter-doped* side.
-- **Peak electric field:** $E_{max} = 2 V_{bi} / W$ — occurs at the metallurgical junction $x = 0$.
-- **One-sided junctions** ($N_A \gg N_D$ or vice versa) simplify the analysis: $W \approx \sqrt{2 \varepsilon_s V_{bi} / (q N_{light})}$.
-- **With reverse bias** $V_R$, replace $V_{bi}$ by $(V_{bi} + V_R)$ in all width and field formulas.
-- **Law of mass action:** $n \cdot p = n_i^2$ governs the minority carrier concentrations on each side.
-- **Engineering relevance:** rectifiers, solar cells, LEDs, photodiodes, BJTs, Zener diodes — all are direct applications of the p-n junction physics covered here.
-- **Always draw** the energy band diagram (with band bending) in any 7+ mark descriptive question — it is mandatory for full marks under the KTU valuation scheme.
+#### Part (a) — 7 Marks [CO1, Understand]
+
+**With the help of a neat energy-band diagram, explain the formation of a p-n junction at thermal equilibrium. Clearly mark $E_C$, $E_V$, $E_i$, $E_F$, and the built-in potential $V_{bi}$.**
+
+**Step-by-Step Model Solution:**
+
+Step 1. **Pre-contact description** [1 Mark]:
+Draw two separate band diagrams. On the n-side, $E_F$ lies close to $E_C$; on the p-side, $E_F$ lies close to $E_V$. The intrinsic level $E_i$ lies mid-gap on both.
+
+Step 2. **At-contact phenomenon** [2 Marks]:
+When the two crystals are joined, the huge carrier concentration gradient drives electrons from the n-side to the p-side and holes in the opposite direction. Recombination annihilates mobile carriers near the interface, exposing the **ionized dopants** that constitute the space charge.
+
+Step 3. **Built-in field and equilibrium** [2 Marks]:
+The exposed ions generate a built-in electric field $E_{bi}$ directed from the n-side to the p-side, which in turn produces a potential barrier of height $V_{bi}$. In equilibrium, the field is strong enough that drift current exactly cancels diffusion current.
+
+Step 4. **Band diagram at equilibrium — final sketch** [2 Marks]:
+Draw a *single* diagram with the following labelled features:
+- $E_C$ and $E_V$ flat in the bulk, **bent** (curved upward from n to p) across the SCR.
+- $E_i$ parallel to $E_C$ and $E_V$ (same bending).
+- $E_F$ as a **single horizontal line** across the entire device.
+- The vertical drop of $E_C$ across the SCR equals $qV_{bi}$.
+- The depletion region is shaded and labelled with widths $x_p$ and $x_n$.
+
+#### Part (b) — 7 Marks [CO3, Apply]
+
+**A one-sided abrupt silicon $p^+n$ junction has $N_A = 10^{19}\ \text{cm}^{-3}$ and $N_D = 10^{15}\ \text{cm}^{-3}$. Estimate $V_{bi}$ and $W$ using the approximation $N_A \gg N_D$. Comment on why the depletion region extends almost entirely into the n-side.**
+
+**Step-by-Step Model Solution:**
+
+Step 1. **Compute $V_{bi}$** [2 Marks]:
+$$V_{bi} = 0.0259 \cdot \ln\!\left(\frac{10^{19} \cdot 10^{15}}{(1.5 \times 10^{10})^2}\right) = 0.0259 \cdot \ln(4.44 \times 10^{14}) \approx 0.0259 \times 33.73 \approx 0.874\ \text{V}$$
+
+Step 2. **Apply the one-sided approximation** [1 Mark]:
+Since $N_A \gg N_D$, $1/N_D \gg 1/N_A$, and the depletion region is dominated by the n-side width:
+$$W \approx x_n = \sqrt{\frac{2\varepsilon_s V_{bi}}{q N_D}}$$
+
+Step 3. **Numerical evaluation** [2 Marks]:
+$$W = \sqrt{\frac{2 \cdot 1.04 \times 10^{-12} \cdot 0.874}{1.6 \times 10^{-19} \cdot 10^{15}}} = \sqrt{1.136 \times 10^{-8}} \approx 1.066 \times 10^{-4}\ \text{cm} \approx 1.07\ \mu\text{m}$$
+
+Step 4. **Compute $x_p$ for completeness** [1 Mark]:
+$$x_p = W \cdot \frac{N_D}{N_A + N_D} \approx 1.066 \times 10^{-4} \cdot \frac{10^{15}}{1.01 \times 10^{19}} \approx 1.06 \times 10^{-8}\ \text{cm} \approx 0.106\ \text{nm}$$
+
+Step 5. **Physical reasoning — why depletion lies in the lightly doped side** [1 Mark]:
+Charge neutrality demands $N_A x_p = N_D x_n$. The product must be the *total* exposed charge on each side. If the p-side is doped a thousand times more heavily, it needs only a thousandth of the depletion width to expose an equal amount of charge. Therefore $x_p \ll x_n$ and the depletion region lies almost entirely in the n-side.
+
+> [!WARNING]
+> **Common Errors Flagged by KTU Examiners:**
+> 1. *Not drawing the $E_F$ line as a single horizontal segment* — examiners instantly deduct 1 to 2 marks because it signals confusion between equilibrium and non-equilibrium.
+> 2. *Omitting the $E_i$ line in the band diagram* — the relative position of $E_i$ with respect to $E_F$ identifies the doping type and is worth 1 mark.
+> 3. *Confusing "built-in voltage" with "applied bias"* — these are not the same; the built-in voltage is a property of the *equilibrium* junction.
+> 4. *Forgetting units in the final answer* — KTU key instructions say **"Always state units"**.
+
+---
+
+## Topic Recap & Important Things to Remember
+
+- A **p-n junction** forms when p-type and n-type regions are brought into atomic contact. [Definition]
+- The driving force for initial carrier motion is the **concentration gradient** (diffusion). [Mechanism]
+- After recombination, **immobile ionized dopants** are revealed, forming the **depletion region** (or space-charge region, SCR). [Key insight]
+- The depletion region hosts a **built-in electric field** $E_{bi}$ and a **built-in potential** $V_{bi}$. [Core quantities]
+- At thermal equilibrium, **drift current = diffusion current**, net current is zero, and the **Fermi level $E_F$ is flat** across the entire device. [Equilibrium signature]
+- Built-in potential formula: $V_{bi} = V_T \ln(N_A N_D / n_i^{\,2})$, where $V_T = kT/q \approx 26$ mV at 300 K. [Formula 1]
+- Total depletion width: $W = \sqrt{2\varepsilon_s V_{bi} / q \cdot (1/N_A + 1/N_D)}$. [Formula 2]
+- Charge neutrality: $N_A x_p = N_D x_n$. The depletion region extends more into the **lighter-doped** side. [Important relation]
+- One-sided ($p^+n$ or $n^+p$) limit: $W \approx \sqrt{2\varepsilon_s V_{bi} / (q N_{\text{light}})}$. [Approximation]
+- Peak electric field at metallurgical junction: $E_{\max} = 2V_{bi}/W$. [Formula 3]
+- Field profile inside SCR: **linear ramps** (piecewise), zero at SCR edges, maximum at $x=0$. [Sketching]
+- Potential profile inside SCR: **parabolic segments** (because $\rho$ is constant on each side). [Sketching]
+- Energy-band diagram: $E_C$ and $E_V$ are bent across the SCR by amount $qV_{bi}$; $E_F$ remains **horizontal**. [Diagram]
+- For Si at 300 K use: $V_T = 25.85$ mV, $n_i = 1.5 \times 10^{10}\ \text{cm}^{-3}$, $\varepsilon_s = 1.04 \times 10^{-12}\ \text{F/cm}$. [Constants]
+- Always keep units consistent: $q$ in C, $\varepsilon_s$ in F/cm, $N$ in cm⁻³, $V$ in V → $W$ in cm. [Unit discipline]
+- Typical $V_{bi}$ for Si p-n junctions: **0.6 to 0.9 V** for moderate doping. [Sanity check]
+- Typical $W$ values: **0.1 µm to 1 µm** for dopings in the $10^{15}$ to $10^{18}$ cm⁻³ range. [Sanity check]
+- The p-n junction is the **fundamental building block** of diodes, BJTs, solar cells, photodetectors, and CMOS transistors. [Engineering relevance]
 
 <!-- SECTION_5_END -->

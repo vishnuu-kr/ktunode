@@ -1,0 +1,71 @@
+{
+  "course_name": "DIGITAL SIGNAL PROCESSING",
+  "course_code": "PECST526",
+  "module_number": 1,
+  "module_title": "Definition of a digital signal processing system",
+  "topics_generated": [
+    {
+      "title": "Definition of a digital signal processing system",
+      "slug": "definition-of-a-digital-signal-processing-system",
+      "path": "definition-of-a-digital-signal-processing-system/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sampling",
+      "slug": "sampling",
+      "path": "sampling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sampling rate",
+      "slug": "sampling-rate",
+      "path": "sampling-rate/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "DFT and IDFT (Properties of DFT)",
+      "slug": "dft-and-idft-properties-of-dft",
+      "path": "dft-and-idft-properties-of-dft/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear Convolution using Circular Convolution",
+      "slug": "linear-convolution-using-circular-convolution",
+      "path": "linear-convolution-using-circular-convolution/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Convolution of long data sequences- Overlap add method",
+      "slug": "convolution-of-long-data-sequences-overlap-add-method",
+      "path": "convolution-of-long-data-sequences-overlap-add-method/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "overlap save method",
+      "slug": "overlap-save-method",
+      "path": "overlap-save-method/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear filtering methods based on DFT – FFT (DIT-FFT only) – efficient computation of the DFT of a 2N point real sequences – correlation – use of FFT in linear filtering and correlation",
+      "slug": "linear-filtering-methods-based-on-dft-fft-dit-fft-only-efficient-computation-of-the-dft-of-a-2n",
+      "path": "linear-filtering-methods-based-on-dft-fft-dit-fft-only-efficient-computation-of-the-dft-of-a-2n/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Symmetries in the DFT",
+      "slug": "symmetries-in-the-dft",
+      "path": "symmetries-in-the-dft/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

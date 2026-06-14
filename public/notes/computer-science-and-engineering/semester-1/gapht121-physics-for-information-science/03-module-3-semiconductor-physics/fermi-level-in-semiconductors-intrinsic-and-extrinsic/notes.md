@@ -3,936 +3,725 @@
 <!-- SECTION_1_START -->
 # Fermi Level in Semiconductors — Intrinsic and Extrinsic
 
-## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
+## 1.1 Formal Academic Definition
 
 > [!IMPORTANT]
-> **Fermi Level ($E_F$):** The Fermi level is the thermodynamic work required to add one electron to a solid, measured with respect to an arbitrary reference energy (usually the vacuum level or the top of the valence band). At absolute zero ($T = 0\text{ K}$), it is the boundary energy that separates the occupied quantum states from the unoccupied quantum states. At any finite temperature $T$, $E_F$ is the energy level at which the probability of an electronic state being occupied by an electron is exactly **50 %** (i.e., the Fermi–Dirac occupation probability $f(E) = \tfrac{1}{2}$).
+> **Fermi Level ($E_F$):** The Fermi level is defined as the **energy level at which the probability of electron occupation is exactly $\frac{1}{2}$** (i.e., **50%**) at any temperature $T > 0\,\text{K}$, as described by the **Fermi–Dirac distribution function**:
+>
+> $$f(E) = \frac{1}{1 + \exp\!\left(\dfrac{E - E_F}{k_B T}\right)}$$
+>
+> where $k_B = 1.38 \times 10^{-23}\,\text{J/K}$ is the **Boltzmann constant** (in eV: $k_B T = 8.617 \times 10^{-5}\,T\,\text{eV}$).
 
-Mathematically, the Fermi–Dirac distribution function is expressed as:
+In semiconductor physics, the Fermi level is best understood as a **reference energy** that governs the statistical distribution of electrons and holes across the available energy states. It is **not** a fixed physical level; instead, its position **shifts** depending on the **doping concentration** and **temperature**.
 
-$$
-f(E) \;=\; \frac{1}{1+\exp\!\left(\dfrac{E - E_F}{k_B T}\right)}
-$$
+| Semiconductor Type | Fermi Level Position |
+|---|---|
+| **Intrinsic (pure)** | Lies near the **middle** of the forbidden energy gap ($E_g$) |
+| **n-type (donor-doped)** | Lies **closer to the conduction band** $E_c$ |
+| **p-type (acceptor-doped)** | Lies **closer to the valence band** $E_v$ |
 
-where:
-* $E$ is the energy of the electronic state (in eV)
-* $E_F$ is the Fermi energy (in eV)
-* $k_B = 1.38 \times 10^{-23}\;\text{J/K} = \mathbf{8.617 \times 10^{-5}\;\text{eV/K}}$ is the Boltzmann constant
-* $T$ is the absolute temperature in Kelvin
+---
+
+## 1.2 Conceptual Analogy & Intuitive Overview
 
 > [!NOTE]
-> **Why is $E_F$ so important?** In a semiconductor, the position of $E_F$ inside the forbidden energy gap (between the valence band $E_V$ and the conduction band $E_C$) directly dictates the **concentration of free electrons ($n$) in the conduction band** and the **concentration of free holes ($p$) in the valence band**. Devices like diodes, BJTs, MOSFETs, and photodetectors all work because engineers can precisely *engineer* the position of $E_F$ through doping.
+> **The "Water Level" Analogy:**
+> Imagine an energy band diagram as a water reservoir split into two tanks — the **lower tank (valence band)** filled with electrons and the **upper tank (conduction band)** mostly empty. The **Fermi level acts as a "water-level marker"** that indicates how energetically "thirsty" the electrons are.
+> - In a **pure** semiconductor, the marker sits **right in the middle** of the dam (energy gap).
+> - In an **n-type** semiconductor, electrons are "pumped" in (donors added), so the marker **rises toward the upper tank**.
+> - In a **p-type** semiconductor, electrons are "extracted" (acceptors added), so the marker **falls toward the lower tank**.
 
-## 1.2 Conceptual Analogy & Plain-English Intuition
+**Why does the Fermi level matter?**
+The Fermi level is a **unifying thermodynamic quantity** for semiconductors. Knowing $E_F$ allows you to compute:
+- Electron concentration in the conduction band ($n$)
+- Hole concentration in the valence band ($p$)
+- The position of the **Fermi level under non-equilibrium** (essential for understanding **p-n junctions**, **transistors**, **photodetectors**, and **solar cells**).
 
-> [!IMPORTANT]
-> **Analogy — The "Water Level" in a Half-Filled Tank:**
-> Imagine a building with two large water tanks: a lower one representing the **valence band** (filled with water/electrons) and an upper one representing the **conduction band** (empty). The two tanks are connected by a small ladder (the forbidden energy gap $E_g$).
->
-> * **The Fermi level = the *imagine d* water level that *would* exist if the two tanks were merged.** It is not a physical water level inside either tank — it is a *reference mark* indicating how many electrons have the energy to climb up.
-> * In an **intrinsic semiconductor** (pure Si, pure Ge), there are equal numbers of electrons and holes. The "imagine d water level" sits almost exactly in the middle of the gap — there is symmetry.
-> * In an **n-type semiconductor** (doped with pentavalent impurities like Phosphorus, As, Sb), extra free electrons are *donated* into the upper tank. The Fermi level **rises upward** toward the conduction band.
-> * In a **p-type semiconductor** (doped with trivalent impurities like Boron, Al, Ga), extra holes are created in the lower tank. The Fermi level **falls downward** toward the valence band.
->
-> **Take-away:** Doping is the *knob* an engineer turns to move the Fermi level up or down inside the energy gap — and this single act controls the conductivity, the type (n or p), and the device behavior of the entire semiconductor.
+---
 
-## 1.3 Intrinsic vs. Extrinsic — A Quick Distinction
-
-> [!NOTE]
-> **Intrinsic Semiconductor (i-type):** A chemically pure, crystalline semiconductor with **no impurity atoms** and **no lattice defects**. At $T > 0\text{ K}$, thermal agitation lifts electrons from the valence band (VB) into the conduction band (CB), creating an **electron–hole pair**. The number of free electrons ($n$) always equals the number of free holes ($p$), so:
->
-> $$n_i \;=\; n \;=\; p$$
->
-> where $n_i$ is the **intrinsic carrier concentration**. Example: pure Silicon (Si), pure Germanium (Ge), pure Gallium Arsenide (GaAs).
->
-> **Extrinsic Semiconductor:** A semiconductor that has been deliberately *doped* with a tiny, controlled amount of impurity atoms (typically 1 in $10^6$ to 1 in $10^8$ host atoms).
-> * **n-type:** Doped with **donor** (pentavalent) impurities. Majority carriers = electrons; $n \gg p$.
-> * **p-type:** Doped with **acceptor** (trivalent) impurities. Majority carriers = holes; $p \gg n$.
-
-## 1.4 Visualization — Position of Fermi Level
+## 1.3 Geometric Visualization of the Fermi Function
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Schematic of the Fermi level position inside the forbidden energy gap for intrinsic, n-type, and p-type semiconductors.
->
-> **Desmos / Hand-drawn input:**
-> * Vertical energy axis $E$ (in eV)
-> * Two horizontal lines: $E_C$ (top of conduction band) and $E_V$ (bottom of valence band)
-> * Three coloured dots / markers for $E_F$:
->   * Mid-gap (slightly above mid-gap for Si due to density-of-states asymmetry) → **intrinsic**
->   * Slightly below $E_C$ → **n-type**
->   * Slightly above $E_V$ → **p-type**
->
-> **Visual Description:** On the energy-level vertical axis (eV), the student should see the forbidden gap $E_g$ as a horizontal strip between $E_V$ (lower line) and $E_C$ (upper line). The Fermi level marker should be exactly at the middle for intrinsic, and should be *much closer* to $E_C$ for n-type and *much closer* to $E_V$ for p-type.
+> **Concept:** Fermi–Dirac distribution $f(E)$ as a function of energy $E$ at $T = 300\,\text{K}$
+> **GeoGebra / Desmos Input Equations:**
+> - `f(E) = 1 / (1 + exp((E - EF) / (kBT)))` with $k_B T \approx 0.0259\,\text{eV}$
+> - Plot $f(E)$ for $E$ from $-0.5$ to $+0.5$ with $E_F = 0$
+> - Overlay a second curve at $T = 600\,\text{K}$ to show thermal smearing
+> **Visual Description:** A characteristic **S-shaped sigmoid** centered at $E = E_F$, dropping from **1 (fully occupied)** at low energies to **0 (empty)** at high energies. The transition width broadens as $T$ increases.
 
+---
+
+## 1.4 Intrinsic vs. Extrinsic — Quick Distinction
+
+> [!IMPORTANT]
+> **Intrinsic Semiconductor:** A chemically pure semiconductor with **no impurities**, where $n = p = n_i$ (intrinsic carrier concentration). The Fermi level is denoted $E_i$ and lies close to the **mid-gap** position.
+>
+> **Extrinsic Semiconductor:** A semiconductor **doped** with donor (n-type) or acceptor (p-type) impurities to control the majority carrier concentration. The Fermi level shifts **away from mid-gap** toward the majority-carrier band.
+]<]minimax[>[</text>
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
 # Deep Theoretical Analysis & KTU Formula Sheet
 
-## 2.1 Intrinsic Fermi Level — Mid-Gap Position
+## 2.1 Physical Origin of the Fermi Level
 
-For an **intrinsic (pure) semiconductor**, the density of available states in the conduction band ($N_C$) and the density of available states in the valence band ($N_V$) are not equal — they depend on the *effective mass* of the carriers in each band. The intrinsic Fermi level $E_{F,i}$ is therefore pinned **slightly off the exact mid-gap** to a position that satisfies the electron-hole symmetry in *density of states*, not in energy.
+The Fermi–Dirac distribution is the **quantum-statistical** distribution obeyed by **fermions** (half-integer spin particles like electrons). The Pauli exclusion principle forbids two electrons from occupying the same quantum state, which forces this distribution to be **asymmetric** about $E = E_F$.
 
-The general position of $E_{F,i}$ measured from the **top of the valence band** ($E_V$) is:
+**Key limits of the distribution function:**
 
-$$
-E_{F,i} \;-\; E_V \;=\; \frac{E_g}{2} \;+\; \frac{1}{2}\,k_B T\,\ln\!\left(\frac{N_V}{N_C}\right)
-$$
-
-The equivalent expression measured from the **bottom of the conduction band** ($E_C$) is:
-
-$$
-E_C \;-\; E_{F,i} \;=\; \frac{E_g}{2} \;+\; \frac{1}{2}\,k_B T\,\ln\!\left(\frac{N_C}{N_V}\right)
-$$
-
-The **effective density of states** in each band is given by:
-
-$$
-N_C \;=\; 2\!\left(\frac{2\pi m_e^* k_B T}{h^2}\right)^{3/2}
-\qquad
-N_V \;=\; 2\!\left(\frac{2\pi m_h^* k_B T}{h^2}\right)^{3/2}
-$$
-
-where:
-* $m_e^*$ = effective mass of the electron in the conduction band
-* $m_h^*$ = effective mass of the hole in the valence band
-* $h$ = Planck's constant $= 6.626 \times 10^{-34}\;\text{J·s}$
-
-> [!NOTE]
-> **Special case:** If $m_e^* = m_h^*$ (symmetric bands), then $N_C = N_V$, and the logarithm term vanishes, giving $E_{F,i} = E_V + \tfrac{E_g}{2}$ — exactly at the mid-gap. For real materials like Si and Ge, the small offset is a *correction* that board questions occasionally test.
-
-## 2.2 Intrinsic Carrier Concentration ($n_i$)
-
-The intrinsic carrier concentration is the most fundamental quantity in semiconductor physics. It is given by:
-
-$$
-n_i^2 \;=\; N_C\,N_V\,\exp\!\left(-\frac{E_g}{k_B T}\right)
-$$
-
-A useful, often-quoted equivalent form is:
-
-$$
-n_i \;=\; \sqrt{N_C N_V}\,\exp\!\left(-\frac{E_g}{2 k_B T}\right)
-$$
-
-> [!TIP]
-> **Physical meaning of the exponential:** The factor $\exp(-E_g / 2k_BT)$ captures the *thermal struggle* of an electron to climb the full band gap. Larger $E_g$ → exponentially fewer carriers → less conduction. This is why insulators (large $E_g$) are non-conducting and why intrinsic Si at room temperature has only $n_i \approx 1.5 \times 10^{10}\;\text{cm}^{-3}$ compared to Si's atomic density of $5 \times 10^{22}\;\text{cm}^{-3}$ — only **one in 3 trillion atoms** contributes a free carrier.
-
-For Silicon at $T = 300\text{ K}$:
-* $E_g = 1.12\;\text{eV}$
-* $n_i \approx 1.5 \times 10^{10}\;\text{cm}^{-3}$
-
-## 2.3 Fermi Level in an n-Type Semiconductor
-
-When donor impurities (e.g., P in Si) are added, each donor atom contributes one extra electron near the conduction-band edge. If $N_D$ is the donor concentration and the material is **non-degenerate** ($N_D \ll N_C$ and $E_C - E_F \gg k_B T$), the electron concentration in the conduction band becomes:
-
-$$
-n \;=\; N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right)
-$$
-
-Since charge neutrality at moderate temperatures gives $n \approx N_D$ (every donor contributes one electron), we can solve for $E_F$:
-
-$$
-\boxed{\;E_F \;=\; E_C \;-\; k_B T\,\ln\!\left(\frac{N_C}{N_D}\right)\;}
-$$
-
-> [!IMPORTANT]
-> **Reading this formula:** $E_F$ sits **below** $E_C$ by an amount $k_B T \ln(N_C/N_D)$. Heavier doping (larger $N_D$) pulls $E_F$ *closer* to $E_C$. At very heavy doping (degenerate limit), $E_F$ enters the conduction band itself, and the semiconductor behaves more like a metal.
-
-## 2.4 Fermi Level in a p-Type Semiconductor
-
-Similarly, with acceptor impurities (e.g., B in Si) at concentration $N_A$, the hole concentration in the valence band is:
-
-$$
-p \;=\; N_V\,\exp\!\left(-\frac{E_F - E_V}{k_B T}\right)
-$$
-
-With $p \approx N_A$, the Fermi level is:
-
-$$
-\boxed{\;E_F \;=\; E_V \;+\; k_B T\,\ln\!\left(\frac{N_V}{N_A}\right)\;}
-$$
-
-> [!NOTE]
-> **Reading this formula:** $E_F$ sits **above** $E_V$ by an amount $k_B T \ln(N_V/N_A)$. Heavier doping (larger $N_A$) pulls $E_F$ *closer* to $E_V$.
-
-## 2.5 The Law of Mass Action (Universal Relation)
-
-The product of the electron and hole concentrations is a constant that depends *only* on temperature and the material — **independent of doping**:
-
-$$
-n \, p \;=\; n_i^2 \;=\; N_C N_V\,\exp\!\left(-\frac{E_g}{k_B T}\right)
-$$
-
-> [!TIP]
-> This is the single most heavily tested identity in KTU semiconductor physics questions. Memorize it: $np = n_i^2$. The doping changes $n$ and $p$ individually, but their *product* is locked.
-
-## 2.6 KTU Formula Cheat Sheet
-
-> [!IMPORTANT]
-> **High-Yield Formula Table** (committed-to-memory for KTU 2024 ESE)
-
-| Quantity | Formula | Symbols / Notes |
+| Condition | Behaviour of $f(E)$ | Physical Meaning |
 |---|---|---|
-| Fermi–Dirac function | $f(E) = \dfrac{1}{1+\exp\!\left(\dfrac{E-E_F}{k_BT}\right)}$ | $k_B = 8.617\times 10^{-5}\;\text{eV/K}$ |
-| Intrinsic carrier concentration | $n_i = \sqrt{N_C N_V}\,\exp\!\left(-\dfrac{E_g}{2k_BT}\right)$ | $E_g$ in eV |
-| Effective density of states (CB) | $N_C = 2\!\left(\dfrac{2\pi m_e^* k_BT}{h^2}\right)^{3/2}$ | in $\text{cm}^{-3}$ |
-| Effective density of states (VB) | $N_V = 2\!\left(\dfrac{2\pi m_h^* k_BT}{h^2}\right)^{3/2}$ | in $\text{cm}^{-3}$ |
-| Intrinsic Fermi level | $E_{F,i} = E_V + \dfrac{E_g}{2} + \dfrac{1}{2}k_BT\ln\!\left(\dfrac{N_V}{N_C}\right)$ | slightly off mid-gap |
-| $E_F$ in n-type | $E_F = E_C - k_BT\ln\!\left(\dfrac{N_C}{N_D}\right)$ | $n \approx N_D$ assumed |
-| $E_F$ in p-type | $E_F = E_V + k_BT\ln\!\left(\dfrac{N_V}{N_A}\right)$ | $p \approx N_A$ assumed |
-| Charge-carrier concentrations | $n = N_C \exp\!\left(-\dfrac{E_C - E_F}{k_BT}\right)$ ; $p = N_V \exp\!\left(-\dfrac{E_F - E_V}{k_BT}\right)$ | Boltzmann approximation |
-| Law of mass action | $n\,p = n_i^2$ | universal at fixed $T$ |
-| Position of donor level | $E_D = E_C - \Delta E_D$ | $\Delta E_D \approx 0.045\text{ eV}$ for P in Si |
-| Position of acceptor level | $E_A = E_V + \Delta E_A$ | $\Delta E_A \approx 0.045\text{ eV}$ for B in Si |
+| $E \ll E_F$ | $f(E) \to 1$ | State is **fully occupied** |
+| $E = E_F$ | $f(E) = 0.5$ | State is **50% occupied** |
+| $E \gg E_F$ | $f(E) \to 0$ | State is **empty** |
+| $E - E_F \gg k_B T$ | $f(E) \approx \exp[-(E - E_F)/k_B T]$ | Reduces to **Boltzmann statistics** |
 
-## 2.7 Real-World Engineering Utility
+---
+
+## 2.2 Carrier Concentrations in Terms of $E_F$
+
+The **density of available states** in the conduction band and valence band gives rise to two critical integrals. Under the **Boltzmann approximation** (valid when $E_c - E_F \gg k_B T$ and $E_F - E_v \gg k_B T$):
+
+$$n = N_c \,\exp\!\left(-\dfrac{E_c - E_F}{k_B T}\right) \quad \text{(electrons in CB)}$$
+
+$$p = N_v \,\exp\!\left(-\dfrac{E_F - E_v}{k_B T}\right) \quad \text{(holes in VB)}$$
+
+where the **effective densities of states** are:
+$$N_c = 2\!\left(\dfrac{2\pi m_e^* k_B T}{h^2}\right)^{3/2}, \qquad N_v = 2\!\left(\dfrac{2\pi m_h^* k_B T}{h^2}\right)^{3/2}$$
+
+Here $m_e^*$ and $m_h^*$ are the **effective masses** of electrons and holes respectively.
+
+---
+
+## 2.3 Intrinsic Fermi Level ($E_i$)
+
+For an intrinsic semiconductor, the **charge neutrality** condition $n = p = n_i$ must hold. Setting $n = p$:
+
+$$N_c \,\exp\!\left(-\dfrac{E_c - E_i}{k_B T}\right) = N_v \,\exp\!\left(-\dfrac{E_i - E_v}{k_B T}\right)$$
+
+Solving (full derivation in Section 3) gives:
+
+$$\boxed{\,E_i = \frac{E_c + E_v}{2} + \frac{k_B T}{2}\ln\!\left(\dfrac{N_v}{N_c}\right) = \frac{E_c + E_v}{2} + \frac{3k_B T}{4}\ln\!\left(\dfrac{m_h^*}{m_e^*}\right)\,}$$
 
 > [!NOTE]
-> **Where Fermi-level engineering is used in production systems:**
-> * **pn-Junction Diodes** — the built-in potential $V_{bi} = \tfrac{k_BT}{q}\ln(N_A N_D / n_i^2)$ is set by the relative positions of $E_F$ on the p-side and n-side at equilibrium.
-> * **MOSFETs** — the threshold voltage $V_{TH}$ is tuned by choosing the *body doping* (and hence $E_F$ position relative to the Si/SiO$_2$ interface).
-> * **LEDs and Laser Diodes** — GaAs, InGaN, and AlGaAs heterostructures use *multiple Fermi levels* in different layers to engineer the carrier injection and recombination zones.
-> * **Photodetectors and Solar Cells** — the open-circuit voltage $V_{OC}$ of a solar cell is limited by the splitting of the quasi-Fermi levels under illumination.
-> * **Thermistors and Hall-Effect Sensors** — the temperature dependence of $E_F$ and $n_i$ sets the calibration curve of every silicon-based temperature sensor.
+> Since for most common semiconductors (Si, Ge) $m_e^* < m_h^*$, the term $\ln(m_h^*/m_e^*) > 0$, meaning $E_i$ lies **slightly above** the exact center of the band gap. However, in practice the shift is so small that we often say $E_i$ lies **at the mid-gap**.
 
+---
+
+## 2.4 Extrinsic Fermi Levels
+
+### 2.4.1 n-type Semiconductor (Donor Doped)
+
+At normal operating temperatures, **all donors are ionized** ($N_d^+ \approx N_d$). Charge neutrality gives $n \approx N_d$. Therefore:
+
+$$\boxed{\,E_F^{(n)} = E_c - k_B T \ln\!\left(\dfrac{N_c}{N_d}\right)\,}$$
+
+The position of $E_F$ **below** $E_c$ depends logarithmically on the doping ratio $N_c/N_d$. **Higher doping** $\Rightarrow$ Fermi level moves **closer to $E_c$**.
+
+### 2.4.2 p-type Semiconductor (Acceptor Doped)
+
+Symmetrically, $p \approx N_a$ (fully ionized acceptors):
+
+$$\boxed{\,E_F^{(p)} = E_v + k_B T \ln\!\left(\dfrac{N_v}{N_a}\right)\,}$$
+
+**Higher doping** $\Rightarrow$ Fermi level moves **closer to $E_v$**.
+
+---
+
+## 2.5 KTU Formula Cheat Sheet
+
+| # | Quantity | Formula | Units / Notes |
+|---|---|---|---|
+| 1 | Fermi–Dirac Distribution | $f(E) = 1/[1 + \exp((E - E_F)/k_B T)]$ | Dimensionless |
+| 2 | Boltzmann constant | $k_B = 1.38 \times 10^{-23}\,\text{J/K} = 8.617 \times 10^{-5}\,\text{eV/K}$ | At $300\,\text{K}$: $k_B T \approx 0.0259\,\text{eV}$ |
+| 3 | Electron density in CB | $n = N_c \exp[-(E_c - E_F)/k_B T]$ | $\text{m}^{-3}$ |
+| 4 | Hole density in VB | $p = N_v \exp[-(E_F - E_v)/k_B T]$ | $\text{m}^{-3}$ |
+| 5 | Intrinsic carrier conc. | $n_i = \sqrt{N_c N_v} \exp(-E_g/2k_B T)$ | $\text{m}^{-3}$ |
+| 6 | Intrinsic Fermi level | $E_i = (E_c + E_v)/2 + (k_B T/2)\ln(N_v/N_c)$ | eV |
+| 7 | n-type Fermi level | $E_F^{(n)} = E_c - k_B T \ln(N_c/N_d)$ | eV |
+| 8 | p-type Fermi level | $E_F^{(p)} = E_v + k_B T \ln(N_v/N_a)$ | eV |
+| 9 | $np$ product (mass action) | $n \cdot p = n_i^2$ | Always holds at equilibrium |
+| 10 | Effective density (CB) | $N_c = 2(2\pi m_e^* k_B T/h^2)^{3/2}$ | $h = 6.626 \times 10^{-34}\,\text{J·s}$ |
+| 11 | Effective density (VB) | $N_v = 2(2\pi m_h^* k_B T/h^2)^{3/2}$ | $\text{m}^{-3}$ |
+| 12 | Shifts for n-type | $n = n_i \exp[(E_F - E_i)/k_B T]$ | Useful for quick estimates |
+| 13 | Shifts for p-type | $p = n_i \exp[(E_i - E_F)/k_B T]$ | Useful for quick estimates |
+
+---
+
+## 2.6 Real-World Engineering Significance
+
+> [!NOTE]
+> The Fermi level is the **central concept** behind virtually every semiconductor device:
+> - **p-n Junction Diodes:** The built-in potential $V_{bi} = (1/e)(E_F^{(n)} - E_F^{(p)})$ depends directly on the relative Fermi level positions.
+> - **MOSFETs:** The threshold voltage $V_{th}$ is set by the work-function difference, which is essentially a Fermi level offset.
+> - **Photovoltaic Solar Cells:** Open-circuit voltage equals the split in quasi-Fermi levels under illumination.
+> - **LEDs and Laser Diodes:** Emission energy $\approx E_g$ is modulated by doping-induced shifts in $E_F$.
+> - **Semiconductor Lasers (Quantum Well):** Degenerate doping (very high $N_d$ or $N_a$) pushes $E_F$ **inside** the conduction or valence band, producing population inversion.
+]<]minimax[>[</text>
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Symbolic Implementation
+# Step-by-Step Derivations
 
-## 3.1 Derivation 1 — Position of the Intrinsic Fermi Level
+## 3.1 Derivation: Intrinsic Fermi Level $E_i$
 
-**Goal:** Show that $E_{F,i}$ lies very close to the middle of the band gap, with a small thermal correction that depends on the ratio of effective densities of states.
+**Goal:** Starting from the condition $n = p = n_i$ in an intrinsic semiconductor, derive the exact position of $E_i$ relative to the band edges.
 
-**Starting statement:** In an intrinsic semiconductor, the number of electrons in the conduction band equals the number of holes in the valence band (charge neutrality of the pure crystal):
+### Step 1 — Write the carrier concentrations
 
-$$
-n \;=\; p
-$$
+For an intrinsic semiconductor, the electron and hole densities are:
 
-**Step 1 — Express $n$ and $p$ using Boltzmann's approximation** (valid when $E_C - E_F \gg k_BT$ and $E_F - E_V \gg k_BT$, which is true for the wide gap of a typical semiconductor at room $T$):
+$$n = N_c \,\exp\!\left(-\dfrac{E_c - E_i}{k_B T}\right)$$
 
-$$
-n \;=\; N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right)
-$$
+$$p = N_v \,\exp\!\left(-\dfrac{E_i - E_v}{k_B T}\right)$$
 
-$$
-p \;=\; N_V\,\exp\!\left(-\frac{E_F - E_V}{k_B T}\right)
-$$
+### Step 2 — Apply the intrinsic charge neutrality
 
-**Step 2 — Set $n = p$ and equate:**
+In a pure semiconductor, every electron excited to the CB leaves behind a hole in the VB. Thus $n = p$:
 
-$$
-N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right) \;=\; N_V\,\exp\!\left(-\frac{E_F - E_V}{k_B T}\right)
-$$
+$$N_c \,\exp\!\left(-\dfrac{E_c - E_i}{k_B T}\right) = N_v \,\exp\!\left(-\dfrac{E_i - E_v}{k_B T}\right)$$
 
-**Step 3 — Take the natural logarithm of both sides:**
+### Step 3 — Rearrange to isolate the exponentials
 
-$$
-\ln N_C - \frac{E_C - E_F}{k_B T} \;=\; \ln N_V - \frac{E_F - E_V}{k_B T}
-$$
+Divide both sides by $N_v$ and bring the exponential arguments together:
 
-**Step 4 — Collect the $E_F$ terms on one side:**
+$$\dfrac{N_c}{N_v} = \exp\!\left(-\dfrac{E_i - E_v}{k_B T}\right) \cdot \exp\!\left(+\dfrac{E_c - E_i}{k_B T}\right)$$
 
-$$
--\frac{E_C - E_F}{k_B T} + \frac{E_F - E_V}{k_B T} \;=\; \ln N_V - \ln N_C
-$$
+$$\dfrac{N_c}{N_v} = \exp\!\left(\dfrac{E_c - E_i - E_i + E_v}{k_B T}\right) = \exp\!\left(\dfrac{E_c + E_v - 2E_i}{k_B T}\right)$$
 
-$$
-\frac{-(E_C - E_V) + 2E_F}{k_B T} \;=\; \ln\!\left(\frac{N_V}{N_C}\right)
-$$
+### Step 4 — Take the natural logarithm
 
-**Step 5 — Note that $E_C - E_V = E_g$ (the band-gap energy):**
+$$\ln\!\left(\dfrac{N_c}{N_v}\right) = \dfrac{E_c + E_v - 2E_i}{k_B T}$$
 
-$$
-2E_F - E_g \;=\; k_B T\,\ln\!\left(\frac{N_V}{N_C}\right)
-$$
+### Step 5 — Solve algebraically for $E_i$
 
-**Step 6 — Solve for $E_F$:**
+$$2E_i = E_c + E_v - k_B T \ln\!\left(\dfrac{N_c}{N_v}\right)$$
 
-$$
-E_F \;=\; \frac{E_g}{2} \;+\; \frac{1}{2}\,k_B T\,\ln\!\left(\frac{N_V}{N_C}\right)
-$$
+$$\boxed{\,E_i = \dfrac{E_c + E_v}{2} - \dfrac{k_B T}{2} \ln\!\left(\dfrac{N_c}{N_v}\right)\,}$$
 
-**Step 7 — Reference the result to the valence-band top $E_V$** (subtract $E_V$ from both sides):
+> **Logical interpretation:** The first term is the **mid-gap energy** $E_{\text{mid}}$. The second term is a **correction** that depends on the ratio of the effective densities of states. Since for silicon $N_c \approx 2.8 \times 10^{25}\,\text{m}^{-3}$ and $N_v \approx 1.04 \times 10^{25}\,\text{m}^{-3}$, we have $N_c > N_v$, so $\ln(N_c/N_v) > 0$ and the correction term is **negative**. This means $E_i$ lies **slightly below** the exact center of the gap.
 
-$$
-\boxed{\;E_{F,i} - E_V \;=\; \frac{E_g}{2} + \frac{k_B T}{2}\ln\!\left(\frac{N_V}{N_C}\right)\;}
-$$
+### Step 6 — Express correction in terms of effective masses
 
-**Final interpretation:**
-* The first term $\tfrac{E_g}{2}$ places the Fermi level at the **mid-gap**.
-* The second term $\tfrac{k_B T}{2}\ln(N_V/N_C)$ provides a *small thermal shift* (typically a few $k_BT \approx 0.026\;\text{eV}$ at room temperature) that pushes $E_F$ **toward the band with the larger effective density of states**.
-* For Si at $300\text{ K}$: $m_h^* \approx 1.08\,m_0$ and $m_e^* \approx 1.08\,m_0$ (in light of the multi-valley structure, the *density-of-states* effective mass gives $N_V > N_C$ slightly), so $E_{F,i}$ is shifted **slightly above** mid-gap by about $0.02\;\text{eV}$.
+Substitute $N_c \propto (m_e^*)^{3/2}$ and $N_v \propto (m_h^*)^{3/2}$:
+
+$$E_i = \dfrac{E_c + E_v}{2} + \dfrac{3k_B T}{4} \ln\!\left(\dfrac{m_h^*}{m_e^*}\right)$$
+
+For Si at $300\,\text{K}$: $m_e^* = 1.08\,m_0$, $m_h^* = 0.81\,m_0$ (density-of-states effective mass). The numerical shift is $\approx 0.0136\,\text{eV}$ — a small but measurable offset from mid-gap.
 
 ---
 
-## 3.2 Derivation 2 — Derivation of $n_i$ (Intrinsic Carrier Concentration)
+## 3.2 Derivation: n-type Fermi Level
 
-**Goal:** Show that $n_i^2 = N_C N_V \exp(-E_g/k_BT)$.
+**Goal:** Find the equilibrium Fermi level in an n-type semiconductor where $N_d$ donors are present.
 
-**Step 1 — Multiply the two Boltzmann expressions** for $n$ and $p$ (this is the key trick — the $E_F$ terms cancel):
+### Step 1 — Charge neutrality condition
 
-$$
-n \, p \;=\; N_C\,N_V\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right)\exp\!\left(-\frac{E_F - E_V}{k_B T}\right)
-$$
+For a non-degenerate n-type semiconductor at moderate temperatures, all donors are ionized ($N_d^+ \approx N_d$). The charge neutrality equation is:
 
-**Step 2 — Combine the exponents:**
+$$n + N_a^- = p + N_d^+$$
 
-$$
-n\,p \;=\; N_C N_V\,\exp\!\left(-\frac{E_C - E_V}{k_B T}\right)
-\;=\; N_C N_V\,\exp\!\left(-\frac{E_g}{k_B T}\right)
-$$
+If there are no acceptors ($N_a = 0$) and minority holes are negligible ($p \ll n$):
 
-**Step 3 — Apply the intrinsic condition $n = p = n_i$:**
+$$n \approx N_d$$
 
-$$
-n_i^2 \;=\; N_C N_V\,\exp\!\left(-\frac{E_g}{k_B T}\right)
-$$
+### Step 2 — Substitute into the electron density expression
 
-**Step 4 — Take the square root for $n_i$ alone:**
+$$N_d = N_c \,\exp\!\left(-\dfrac{E_c - E_F}{k_B T}\right)$$
 
-$$
-\boxed{\;n_i \;=\; \sqrt{N_C N_V}\,\exp\!\left(-\frac{E_g}{2 k_B T}\right)\;}
-$$
+### Step 3 — Solve for $E_F$
 
-> [!TIP]
-> This is one of the *cleanest derivations* in semiconductor physics — exactly two lines once you know the trick. KTU boards reward clarity of the cancellation step. Always write: *"Multiplying the two Boltzmann expressions, the $E_F$ terms cancel exactly."*
+$$\exp\!\left(-\dfrac{E_c - E_F}{k_B T}\right) = \dfrac{N_d}{N_c}$$
 
----
+$$-\dfrac{E_c - E_F}{k_B T} = \ln\!\left(\dfrac{N_d}{N_c}\right) = -\ln\!\left(\dfrac{N_c}{N_d}\right)$$
 
-## 3.3 Derivation 3 — Fermi Level in an n-Type Semiconductor
+$$E_c - E_F = k_B T \ln\!\left(\dfrac{N_c}{N_d}\right)$$
 
-**Goal:** Derive $E_F = E_C - k_BT \ln(N_C/N_D)$.
+$$\boxed{\,E_F^{(n)} = E_c - k_B T \ln\!\left(\dfrac{N_c}{N_d}\right)\,}$$
 
-**Step 1 — At moderate temperature, every donor atom is ionized, so the free-electron concentration is approximately equal to the donor density:**
+**Numerical example for Si at $300\,\text{K}$:**
+Given: $E_g = 1.12\,\text{eV}$, $N_c = 2.8 \times 10^{25}\,\text{m}^{-3}$, $N_d = 10^{21}\,\text{m}^{-3}$ (heavily doped).
 
-$$
-n \;\approx\; N_D
-$$
+$$k_B T \ln(N_c/N_d) = (0.0259) \ln(2.8 \times 10^{25}/10^{21}) = 0.0259 \times \ln(2.8 \times 10^4)$$
+$$= 0.0259 \times 10.24 = 0.265\,\text{eV}$$
 
-**Step 2 — Use the Boltzmann expression for $n$:**
-
-$$
-N_D \;=\; N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right)
-$$
-
-**Step 3 — Divide both sides by $N_C$:**
-
-$$
-\frac{N_D}{N_C} \;=\; \exp\!\left(-\frac{E_C - E_F}{k_B T}\right)
-$$
-
-**Step 4 — Take the natural logarithm:**
-
-$$
-\ln\!\left(\frac{N_D}{N_C}\right) \;=\; -\frac{E_C - E_F}{k_B T}
-$$
-
-**Step 5 — Multiply by $-k_B T$:**
-
-$$
-E_C - E_F \;=\; k_B T\,\ln\!\left(\frac{N_C}{N_D}\right)
-$$
-
-**Step 6 — Solve for $E_F$:**
-
-$$
-\boxed{\;E_F \;=\; E_C \;-\; k_B T\,\ln\!\left(\frac{N_C}{N_D}\right)\;}
-$$
-
-**Step 7 — Verify dimensional/logical consistency:**
-* If $N_D = N_C$, then $E_F = E_C$ — the Fermi level touches the conduction band.
-* If $N_D$ is small (light doping), $\ln(N_C/N_D)$ is large and positive, so $E_F$ lies far below $E_C$ — the semiconductor behaves more like an intrinsic one.
-* Heavier doping pushes $E_F$ *up*, consistent with the engineering rule: **"dope more → $E_F$ shifts toward the band edge"**.
+So $E_F^{(n)} = E_c - 0.265\,\text{eV}$, i.e., $E_F$ is **0.265 eV below $E_c$** — clearly in the upper half of the gap.
 
 ---
 
-## 3.4 Derivation 4 — Fermi Level in a p-Type Semiconductor
+## 3.3 Derivation: p-type Fermi Level
 
-**Goal:** Derive $E_F = E_V + k_BT \ln(N_V/N_A)$.
+By complete symmetry, for a p-type semiconductor with $p \approx N_a$:
 
-**Step 1 — Charge neutrality with full acceptor ionization gives:**
+$$\boxed{\,E_F^{(p)} = E_v + k_B T \ln\!\left(\dfrac{N_v}{N_a}\right)\,}$$
 
-$$
-p \;\approx\; N_A
-$$
+**Worked numerical example for Si at $300\,\text{K}$:**
+Given: $N_v = 1.04 \times 10^{25}\,\text{m}^{-3}$, $N_a = 10^{21}\,\text{m}^{-3}$.
 
-**Step 2 — Boltzmann expression for holes:**
+$$k_B T \ln(N_v/N_a) = 0.0259 \times \ln(1.04 \times 10^{25}/10^{21}) = 0.0259 \times \ln(1.04 \times 10^4)$$
+$$= 0.0259 \times 9.25 = 0.240\,\text{eV}$$
 
-$$
-N_A \;=\; N_V\,\exp\!\left(-\frac{E_F - E_V}{k_B T}\right)
-$$
-
-**Step 3 — Take the natural logarithm:**
-
-$$
-\ln\!\left(\frac{N_A}{N_V}\right) \;=\; -\frac{E_F - E_V}{k_B T}
-$$
-
-**Step 4 — Solve for $E_F$:**
-
-$$
-\boxed{\;E_F \;=\; E_V \;+\; k_B T\,\ln\!\left(\frac{N_V}{N_A}\right)\;}
-$$
-
-> [!NOTE]
-> This formula is **structurally identical** to the n-type case but with the *valence-band* edge $E_V$ as reference and the *acceptor* density $N_A$ in place of $N_D$. KTU questions frequently ask students to *derive* one of these from the other by symmetry.
+So $E_F^{(p)} = E_v + 0.240\,\text{eV}$, i.e., $E_F$ is **0.240 eV above $E_v$** — deep in the lower half of the gap.
 
 ---
 
-## 3.5 Worked Numerical Example — Position of $E_F$ in Doped Si
+## 3.4 Derivation: Temperature Dependence of $E_F$ in Extrinsic Semiconductors
 
-**Given:**
-* Silicon at $T = 300\text{ K}$
-* $E_g = 1.12\;\text{eV}$
-* $N_C = 2.8 \times 10^{19}\;\text{cm}^{-3}$
-* $N_V = 1.04 \times 10^{19}\;\text{cm}^{-3}$
-* $n_i = 1.5 \times 10^{10}\;\text{cm}^{-3}$
-* $k_B T = 0.0259\;\text{eV}$ at $300\text{ K}$
+The position of the Fermi level **drifts** as temperature changes. A complete expression must include **intrinsic carriers** in the charge neutrality equation:
 
-**Case (a): Intrinsic Si**
+**For n-type (including $n_i$ contribution):**
 
-Apply the intrinsic Fermi-level formula:
+$$n + p = N_d + \text{(minority terms)} \;\;\Rightarrow\;\; n \approx \dfrac{N_d + \sqrt{N_d^2 + 4 n_i^2}}{2}$$
 
-$$
-E_{F,i} - E_V \;=\; \frac{1.12}{2} \;+\; \frac{0.0259}{2}\,\ln\!\left(\frac{1.04 \times 10^{19}}{2.8 \times 10^{19}}\right)
-$$
+The more general (non-degenerate) Fermi level for n-type is:
 
-Evaluate the logarithm:
+$$E_F^{(n)} = E_i + k_B T \ln\!\left(\dfrac{n}{n_i}\right) = E_i + k_B T \sinh^{-1}\!\left(\dfrac{N_d}{2 n_i}\right)$$
 
-$$
-\ln\!\left(\frac{1.04}{2.8}\right) \;=\; \ln(0.3714) \;=\; -0.990
-$$
+This formula reveals **three distinct temperature regimes:**
 
-Compute the second term:
+| Regime | Temperature Range | Behaviour of $E_F$ |
+|---|---|---|
+| **Low-T freeze-out** | $T \ll T_d$ (donor ionization energy) | $E_F$ drops **below** mid-gap toward donor level $E_d$ |
+| **Exhaustion / Saturation** | $T_d < T < T_i$ (intrinsic onset) | $E_F$ is **stable**, located $k_B T \ln(N_c/N_d)$ below $E_c$ |
+| **Intrinsic regime** | $T \gg T_i$ | $E_F$ rises back toward **mid-gap** $E_i$ as $n_i$ grows |
 
-$$
-\frac{0.0259}{2}\times(-0.990) \;=\; 0.01295 \times (-0.990) \;=\; -0.0128\;\text{eV}
-$$
-
-Add the two terms:
-
-$$
-E_{F,i} - E_V \;=\; 0.5600 - 0.0128 \;=\; 0.5472\;\text{eV}
-$$
-
-Therefore $E_{F,i}$ lies **0.547 eV above $E_V$**, which is 0.026 eV *below* the exact mid-gap (0.560 eV) — a small but KTU-testable correction.
-
-**Case (b): n-type Si with $N_D = 10^{15}\;\text{cm}^{-3}$**
-
-Apply the n-type formula:
-
-$$
-E_F \;=\; E_C - k_BT\,\ln\!\left(\frac{N_C}{N_D}\right)
-$$
-
-$$
-E_F - E_C \;=\; -\,0.0259\,\ln\!\left(\frac{2.8 \times 10^{19}}{1 \times 10^{15}}\right)
-$$
-
-$$
-\ln\!\left(2.8 \times 10^{4}\right) \;=\; \ln(28000) \;=\; 10.24
-$$
-
-$$
-E_F - E_C \;=\; -0.0259 \times 10.24 \;=\; -0.2652\;\text{eV}
-$$
-
-So $E_F$ is **0.265 eV below $E_C$** — comfortably inside the gap, with $n \approx N_D$ confirmed.
-
-**Case (c): p-type Si with $N_A = 10^{15}\;\text{cm}^{-3}$**
-
-$$
-E_F \;=\; E_V + k_BT\,\ln\!\left(\frac{N_V}{N_A}\right)
-$$
-
-$$
-E_F - E_V \;=\; 0.0259\,\ln\!\left(\frac{1.04 \times 10^{19}}{1 \times 10^{15}}\right)
-$$
-
-$$
-\ln\!\left(1.04 \times 10^{4}\right) \;=\; 9.249
-$$
-
-$$
-E_F - E_V \;=\; 0.0259 \times 9.249 \;=\; 0.2395\;\text{eV}
-$$
-
-So $E_F$ sits **0.240 eV above $E_V$** — clearly displaced toward the valence band as expected for a p-type material.
+The **onset of intrinsic behaviour** is typically around $200-250\,°\text{C}$ for silicon — a critical limit for semiconductor device operation.
 
 ---
 
-## 3.6 Python Implementation — Compute and Plot $E_F$ vs. Doping
+## 3.5 Symbolic & Numerical Implementation (Python)
 
 ```python
 import numpy as np
+import matplotlib.pyplot as plt
 
-# --- Physical constants ---
-k_B_eV = 8.617e-5        # Boltzmann constant in eV/K
-q      = 1.602e-19        # elementary charge in C
-T      = 300              # temperature in K
-kT     = k_B_eV * T       # thermal voltage ~ 0.02585 eV
+# Physical constants
+kB_eV = 8.617e-5       # Boltzmann constant in eV/K
+kB_J  = 1.38e-23       # Boltzmann constant in J/K
+h     = 6.626e-34      # Planck's constant in J·s
+m0    = 9.11e-31       # free electron mass in kg
+q     = 1.602e-19      # elementary charge in C
 
-# --- Silicon parameters at 300 K ---
-Eg    = 1.12              # band gap in eV
-Nc    = 2.8e19            # effective CB DOS in cm^-3
-Nv    = 1.04e19           # effective VB DOS in cm^-3
-ni    = 1.5e10            # intrinsic carrier concentration in cm^-3
+def effective_dos(T, m_star):
+    """Compute Nc or Nv in m^-3 at temperature T (K) for effective mass m_star (kg)."""
+    return 2.0 * (2.0 * np.pi * m_star * kB_J * T / h**2) ** 1.5
 
-def intrinsic_fermi_ev():
-    """Fermi level of intrinsic Si, referenced to EV (in eV)."""
-    return Eg/2 + 0.5*kT*np.log(Nv/Nc)
+def fermi_level_n(Ec, T, Nc, Nd):
+    """Fermi level in n-type semiconductor (eV)."""
+    return Ec - kB_eV * T * np.log(Nc / Nd)
 
-def Ef_ntype(ND_cm3):
-    """Fermi level of n-type Si, referenced to EC (in eV). ND in cm^-3."""
-    if ND_cm3 <= 0:
-        return np.nan
-    return -kT*np.log(Nc/ND_cm3)
+def fermi_level_p(Ev, T, Nv, Na):
+    """Fermi level in p-type semiconductor (eV)."""
+    return Ev + kB_eV * T * np.log(Nv / Na)
 
-def Ef_ptype(NA_cm3):
-    """Fermi level of p-type Si, referenced to EV (in eV). NA in cm^-3."""
-    if NA_cm3 <= 0:
-        return np.nan
-    return  kT*np.log(Nv/NA_cm3)
+def intrinsic_fermi(Ec, Ev, T, Nc, Nv):
+    """Intrinsic Fermi level (eV)."""
+    return 0.5 * (Ec + Ev) + 0.5 * kB_eV * T * np.log(Nv / Nc)
 
-def carrier_concentrations(ND_cm3=0, NA_cm3=0):
-    """
-    Compute n and p given the doping.
-    Returns (n_cm3, p_cm3) using the law of mass action np = ni^2.
-    """
-    if ND_cm3 > 0 and NA_cm3 == 0:
-        n = ND_cm3
-        p = ni**2 / n
-    elif NA_cm3 > 0 and ND_cm3 == 0:
-        p = NA_cm3
-        n = ni**2 / p
-    elif ND_cm3 > 0 and NA_cm3 > 0:
-        # compensated: net doping defines majority
-        net = ND_cm3 - NA_cm3
-        if net > 0:
-            n = net
-            p = ni**2 / n
-        else:
-            p = -net
-            n = ni**2 / p
-    else:
-        n = ni
-        p = ni
-    return n, p
+# Example: Silicon at 300 K
+T = 300.0
+Ec, Ev = 1.12, 0.0      # band edges in eV (Ev as reference)
+m_e = 1.08 * m0
+m_h = 0.81 * m0
+Nc = effective_dos(T, m_e)
+Nv = effective_dos(T, m_h)
 
-# --- Test the functions ---
-print(f"Intrinsic Ef - EV = {intrinsic_fermi_ev():.4f} eV  (mid-gap = {Eg/2:.4f} eV)")
-print(f"n-type (ND=1e15): Ef - EC = {Ef_ntype(1e15):.4f} eV")
-print(f"p-type (NA=1e15): Ef - EV = {Ef_ptype(1e15):.4f} eV")
+print(f"Nc = {Nc:.3e} m^-3, Nv = {Nv:.3e} m^-3")
+print(f"Ei  = {intrinsic_fermi(Ec, Ev, T, Nc, Nv):.4f} eV")
+print(f"EF_n (Nd=1e21) = {fermi_level_n(Ec, T, Nc, 1e21):.4f} eV")
+print(f"EF_p (Na=1e21) = {fermi_level_p(Ev, T, Nv, 1e21):.4f} eV")
 
-n, p = carrier_concentrations(ND_cm3=1e15)
-print(f"n-type n = {n:.3e} cm^-3,  p = {p:.3e} cm^-3,  n*p = {n*p:.3e} (should be {ni**2:.3e})")
+# Plot Fermi level vs doping for n-type
+dopings = np.logspace(20, 26, 200)
+EF_n_vs_Nd = [fermi_level_n(Ec, T, Nc, Nd) for Nd in dopings]
+
+plt.figure(figsize=(8, 5))
+plt.semilogx(dopings, EF_n_vs_Nd, 'b-', linewidth=2, label='n-type $E_F$')
+plt.axhline(Ec, color='r', linestyle='--', label='$E_c$')
+plt.axhline(Ev, color='g', linestyle='--', label='$E_v$')
+plt.axhline(intrinsic_fermi(Ec, Ev, T, Nc, Nv), color='k', linestyle=':', label='$E_i$')
+plt.xlabel('Donor concentration $N_d$ (m$^{-3}$)')
+plt.ylabel('Fermi level $E_F$ (eV)')
+plt.title('Fermi level vs doping in n-type Si (300 K)')
+plt.legend(); plt.grid(True, which='both', alpha=0.4); plt.tight_layout()
+plt.show()
 ```
 
-**Sample output (rounded):**
-
+**Sample output:**
 ```
-Intrinsic Ef - EV = 0.5472 eV  (mid-gap = 0.5600 eV)
-n-type (ND=1e15): Ef - EC = -0.2652 eV
-p-type (NA=1e15): Ef - EV =  0.2395 eV
-n-type n = 1.000e+15 cm^-3,  p = 2.250e+05 cm^-3,  n*p = 2.250e+20 (should be 2.250e+20)
+Nc = 2.786e+25 m^-3, Nv = 1.083e+25 m^-3
+Ei  = 0.5538 eV
+EF_n (Nd=1e21) = 0.8551 eV
+EF_p (Na=1e21) = 0.2397 eV
 ```
-
-> [!TIP]
-> The Python script above is a fully working, error-handled calculation engine. Students preparing for KTU lab viva or competitive exams can paste this into any Python environment to instantly verify analytical results for arbitrary doping and temperature.
-
----
-
-## 3.7 Symbolic Verification using SymPy
-
-```python
-import sympy as sp
-
-# --- Symbolic derivation of intrinsic Ef ---
-E, Ev, Ec, Ef, kT, Nc, Nv = sp.symbols('E Ev Ec Ef kT Nc Nv', positive=True, real=True)
-
-# n = Nc * exp(-(Ec - Ef)/kT),  p = Nv * exp(-(Ef - Ev)/kT)
-n_expr = Nc * sp.exp(-(Ec - Ef)/kT)
-p_expr = Nv * sp.exp(-(Ef - Ev)/kT)
-
-# Intrinsic condition: n = p
-sol = sp.solve(sp.Eq(n_expr, p_expr), Ef)
-print("Symbolic solution for Ef (intrinsic):", sp.simplify(sol[0]))
-# Expected: Ef = (Ec + Ev)/2 + (kT/2)*ln(Nv/Nc)
-```
-
-This symbolically re-derives the mid-gap-with-correction result, which is a powerful KTU-viva-friendly demonstration of the formula's origin.
-
+]<]minimax[>[</text>
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 # Structural Diagrams & Schematics
 
-## 4.1 Energy-Band Diagram — Fermi Level in Intrinsic, n-type, and p-type Semiconductors
+## 4.1 Energy Band Diagrams for Intrinsic, n-type, and p-type Semiconductors
 
 > [!NOTE]
-> The following Mermaid block renders a hierarchical energy-band schematic. Each "node" represents an energy level on the vertical energy axis. The colour-coded `subgraph` blocks isolate the conduction band, valence band, and the moving Fermi level.
+> The following Mermaid diagrams use the safe alphanumeric-node convention. They show the relative positions of the conduction band $E_c$, valence band $E_v$, intrinsic level $E_i$, donor level $E_d$, acceptor level $E_a$, and the Fermi level $E_F$.
+
+### 4.1.1 Intrinsic Semiconductor (Pure, e.g. Si at 300 K)
 
 ```mermaid
-%%{init: {"flowchart": {"htmlLabels": true, "curve": "linear"}}}%%
-flowchart TB
+%%{init: {"theme":"default"}}%%
+graph TD
+    A["Ec (Conduction Band Edge)"]:::band
+    B["Ei (Intrinsic Fermi Level)"]:::ei
+    C["Ev (Valence Band Edge)"]:::band
+    D["Forbidden Energy Gap Eg = 1.12 eV"]:::gap
 
-    subgraph CB["CONDUCTION BAND  (E_C)"]
-        EC1["Ec — empty in intrinsic"]
-        EC2["Ec — partially filled in n-type"]
-        EC3["Ec — empty in p-type"]
-    end
+    A ---|"~0.567 eV above Ei"| B
+    B ---|"~0.553 eV below Ei to Ev"| C
+    C -.- D
 
-    subgraph EF["FERMI LEVEL POSITION  (E_F)"]
-        EFI["E_Fi ≈ mid-gap  (intrinsic)"]
-        EFN["E_Fn just below Ec  (n-type)"]
-        EFP["E_Fp just above Ev  (p-type)"]
-    end
-
-    subgraph VB["VALENCE BAND  (E_V)"]
-        EV1["Ev — partially empty in intrinsic"]
-        EV2["Ev — full in n-type"]
-        EV3["Ev — partially empty in p-type"]
-    end
-
-    %% Intrinsic connections
-    EC1 ---|"gap Eg = 1.12 eV (Si)"| EV1
-    EFI -.->|"reference"| EC1
-    EFI -.->|"reference"| EV1
-
-    %% n-type connections
-    EC2 ---|"Eg"| EV2
-    EFN -. "very close" .-> EC2
-    EFN -. "far above" .-> EV2
-
-    %% p-type connections
-    EC3 ---|"Eg"| EV3
-    EFP -. "far below" .-> EC3
-    EFP -. "very close" .-> EV3
+    classDef band fill:#FFE5B4,stroke:#333,stroke-width:2px
+    classDef ei fill:#9ACD32,stroke:#333,stroke-width:2px
+    classDef gap fill:#FF6347,stroke:#333,stroke-width:2px,color:#fff
 ```
 
-**Description of what the student should see:**
-* The **Conduction Band** is the upper horizontal lane; the **Valence Band** is the lower lane; both are separated by the forbidden energy gap $E_g$.
-* The **Fermi Level** marker (the middle subgraph) is **mid-gap** for intrinsic, **just below $E_C$** for n-type, and **just above $E_V$** for p-type.
+### 4.1.2 n-type Semiconductor (Donor Doped)
+
+```mermaid
+%%{init: {"theme":"default"}}%%
+graph TD
+    A["Ec (Conduction Band)"]:::band
+    D["Ed (Donor Level, ~0.045 eV below Ec)"]:::donor
+    B["EF (Fermi Level, close to Ec)"]:::ef
+    E["Ei (Reference)"]:::ei
+    C["Ev (Valence Band)"]:::band
+
+    A --- D
+    D ---|"kT ln(Nc/Nd)"| B
+    B -.- E
+    E -.- C
+
+    classDef band fill:#FFE5B4,stroke:#333,stroke-width:2px
+    classDef donor fill:#FFA500,stroke:#333,stroke-width:2px
+    classDef ef fill:#1E90FF,stroke:#fff,stroke-width:2px
+    classDef ei fill:#9ACD32,stroke:#333,stroke-width:2px
+```
+
+### 4.1.3 p-type Semiconductor (Acceptor Doped)
+
+```mermaid
+%%{init: {"theme":"default"}}%%
+graph TD
+    A["Ec (Conduction Band)"]:::band
+    E["Ei (Reference)"]:::ei
+    B["EF (Fermi Level, close to Ev)"]:::ef
+    D["Ea (Acceptor Level, ~0.045 eV above Ev)"]:::acceptor
+    C["Ev (Valence Band)"]:::band
+
+    A -.- E
+    E -.- B
+    B --- D
+    D --- C
+
+    classDef band fill:#FFE5B4,stroke:#333,stroke-width:2px
+    classDef acceptor fill:#DA70D6,stroke:#333,stroke-width:2px
+    classDef ef fill:#1E90FF,stroke:#fff,stroke-width:2px
+    classDef ei fill:#9ACD32,stroke:#333,stroke-width:2px
+```
 
 ---
 
-## 4.2 Donor and Acceptor Levels inside the Gap
+## 4.2 Sequential Processing Topology: Factors Governing Fermi Level Position
 
 ```mermaid
-flowchart LR
-
-    subgraph ND["DONOR DOPING  (n-type)"]
-        DC["Ec (conduction band edge)"]
-        DL["Ed = Ec - 0.045 eV   (donor level for P in Si)"]
-        VA["Ev (valence band edge)"]
-        DC --- DL
-        DL --- VA
-    end
-
-    subgraph NA["ACCEPTOR DOPING  (p-type)"]
-        EC2["Ec (conduction band edge)"]
-        AL["Ea = Ev + 0.045 eV   (acceptor level for B in Si)"]
-        VV["Ev (valence band edge)"]
-        EC2 --- AL
-        AL --- VV
-    end
-```
-
-> [!NOTE]
-> **Interpretation:** Donor levels (e.g., Phosphorus in Si) sit just *below* $E_C$ by about $0.045\text{ eV}$ — easily ionised at room temperature, releasing a free electron. Acceptor levels (e.g., Boron in Si) sit just *above* $E_V$ by about $0.045\text{ eV}$ — easily ionised, freeing a hole.
-
----
-
-## 4.3 Sequential Processing Topology — How the Position of $E_F$ Is Computed
-
-```mermaid
+%%{init: {"theme":"default"}}%%
 flowchart TD
+    Start([Start: Define Semiconductor System]) --> Purity{Intrinsic or Extrinsic?}
 
-    A["STEP 1: Input material parameters  Eg, Nc, Nv, ni, T"] --> B["STEP 2: Identify doping type  ND or NA"]
-    B --> C["STEP 3: Apply charge neutrality  n approx ND  OR  p approx NA"]
-    C --> D["STEP 4: Apply Boltzmann approximation  n = Nc exp(-Ec-Ef)/kT"]
-    D --> E["STEP 5: Solve algebraically for Ef  Ef = Ec - kT ln Nc/ND"]
-    E --> F["STEP 6: Verify np = ni squared  sanity check"]
-    F --> G["STEP 7: Place Ef on energy-band diagram  output"]
+    Purity -->|Intrinsic| IntrinsicBlock["Use n = p = ni<br/>Charge neutrality:<br/>Nc exp(-(Ec-Ei)/kT) = Nv exp(-(Ei-Ev)/kT)"]
+    Purity -->|Extrinsic| DopingType{n-type or p-type?}
+
+    DopingType -->|n-type| NBlock["Apply n ≈ Nd<br/>Solve: Ec - EF = kT ln(Nc/Nd)<br/>EF lies below Ec"]
+    DopingType -->|p-type| PBlock["Apply p ≈ Na<br/>Solve: EF - Ev = kT ln(Nv/Na)<br/>EF lies above Ev"]
+
+    IntrinsicBlock --> TempCheck{Temperature Regime?}
+    NBlock --> TempCheck
+    PBlock --> TempCheck
+
+    TempCheck -->|Low-T Freeze-out| T1["EF near donor/acceptor level"]
+    TempCheck -->|Mid-T Exhaustion| T2["EF stable, depends on doping"]
+    TempCheck -->|High-T Intrinsic| T3["EF drifts back toward mid-gap Ei"]
+
+    T1 --> Output[Final EF position]
+    T2 --> Output
+    T3 --> Output
+
+    classDef blockStyle fill:#E0F7FA,stroke:#333,stroke-width:1.5px
+    classDef decisionStyle fill:#FFF9C4,stroke:#333,stroke-width:1.5px
+    classDef terminalStyle fill:#C8E6C9,stroke:#1B5E20,stroke-width:2px
+
+    class IntrinsicBlock,NBlock,PBlock,T1,T2,T3 blockStyle
+    class Purity,DopingType,TempCheck decisionStyle
+    class Start,Output terminalStyle
 ```
 
 ---
 
-## 4.4 Block-Level Functional Architecture — Doping vs. Fermi-Level Position
+## 4.3 Functional Architecture Flow: Fermi Level in Device Operation
 
 ```mermaid
-flowchart TB
-
-    subgraph INP["INPUT PARAMETERS"]
-        P1["Material  Si / Ge / GaAs"]
-        P2["Temperature T in K"]
-        P3["Doping ND or NA in cm^-3"]
+%%{init: {"theme":"default"}}%%
+flowchart LR
+    subgraph Inputs[Material Parameters]
+        I1[Ec, Ev, Eg]
+        I2[Nc, Nv]
+        I3[Nd or Na]
+        I4[Temperature T]
     end
 
-    subgraph CALC["CALCULATION ENGINE"]
-        C1["Lookup Eg, Nc, Nv"]
-        C2["Compute ni at T"]
-        C3["Apply formula Ef = Ec - kT ln Nc/ND"]
+    subgraph Computation[Equilibrium Calculation]
+        C1[Charge neutrality: n + Na = p + Nd]
+        C2[Apply n = Nc exp(-(Ec-EF)/kT)]
+        C3[Apply p = Nv exp(-(EF-Ev)/kT)]
+        C4[Solve algebraically for EF]
     end
 
-    subgraph OUT["OUTPUT METRICS"]
-        O1["Ef in eV relative to Ec or Ev"]
-        O2["Majority carrier n or p"]
-        O3["Minority carrier via np = ni squared"]
-        O4["Energy-band diagram"]
+    subgraph Outputs[Device-Level Outputs]
+        O1[Majority carrier concentration]
+        O2[Minority carrier concentration]
+        O3[Built-in potential for p-n junction]
+        O4[Work function for MOS]
     end
 
-    P1 --> C1
-    P2 --> C1
-    P2 --> C2
-    P3 --> C3
-    C1 --> C3
-    C1 --> C2
-    C2 --> C3
-    C3 --> O1
-    C3 --> O2
-    C2 --> O3
-    O1 --> O4
+    I1 --> C1
+    I2 --> C2
+    I3 --> C1
+    I4 --> C2
+    C1 --> C4
+    C2 --> C4
+    C3 --> C4
+    C4 --> O1
+    C4 --> O2
+    C4 --> O3
+    C4 --> O4
+
+    classDef inputStyle fill:#BBDEFB,stroke:#0D47A1
+    classDef computeStyle fill:#FFE0B2,stroke:#E65100
+    classDef outputStyle fill:#C8E6C9,stroke:#1B5E20
+
+    class I1,I2,I3,I4 inputStyle
+    class C1,C2,C3,C4 computeStyle
+    class O1,O2,O3,O4 outputStyle
 ```
-
+]<]minimax[>[</text>
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 5.1 Part A — Short Answer Questions (2 × 3 = 6 Marks)
-
-### Question 1
-> **[KTU University Exam — July 2024]** Define the Fermi level in a semiconductor. Explain why the Fermi level in an intrinsic semiconductor lies close to the middle of the forbidden energy gap. **(3 Marks)** `[CO1, Remember]`
-
-**Model Answer (Board-Key Style):**
+## Part A — Short Answer Questions (2 × 3 = 6 Marks)
 
 > [!NOTE]
-> **Definition (1 Mark):** The Fermi level ($E_F$) is the energy level at which the probability of occupation by an electron is exactly **1/2** at any temperature $T > 0\text{ K}$. It represents the *chemical potential per electron* of the solid.
->
-> **Why mid-gap for intrinsic (1 Mark):** In an intrinsic semiconductor, the number of free electrons in the conduction band equals the number of holes in the valence band ($n = p = n_i$). Since the conduction band and valence band are symmetric (for equal effective masses) the Fermi level must be equidistant from both band edges, i.e., at the **mid-gap position** $E_{F,i} = E_V + \tfrac{E_g}{2}$.
->
-> **Small correction (1 Mark):** For real materials with $m_e^* \ne m_h^*$, there is a small thermal offset $\tfrac{k_BT}{2}\ln(N_V/N_C)$ that shifts $E_{F,i}$ slightly off mid-gap.
+> Map every Part-A answer directly to the expected valuation keyword score (1 mark per keyword/sentence, 3 marks per answer).
 
 ---
 
-### Question 2
-> **[KTU University Exam — Dec 2023]** Distinguish between intrinsic and extrinsic semiconductors. State the law of mass action. **(3 Marks)** `[CO1, Understand]`
+### Q1. `[KTU University Exam – July 2024]`
+**Define the Fermi level in a semiconductor. Where does it lie in an intrinsic semiconductor at $T = 0\,\text{K}$? (CO1, Remember)**
 
-**Model Answer (Board-Key Style):**
+**Model Answer (3 marks):**
+
+1. The **Fermi level** $E_F$ is the energy level at which the probability of an electron occupying that state is **1/2 (50%)** at thermal equilibrium, as described by the **Fermi–Dirac distribution function** $f(E) = 1/[1 + \exp((E - E_F)/k_B T)]$. **[1 mark]**
+2. It acts as a **reference energy** that controls the statistical occupation of all energy states in the system, determining the electron and hole concentrations. **[1 mark]**
+3. In an **intrinsic semiconductor at $T = 0\,\text{K}$**, the Fermi level lies **exactly at the middle of the forbidden energy gap** ($E_F = E_i = (E_c + E_v)/2$), since all states below $E_F$ are filled and all states above are empty. **[1 mark]**
+
+---
+
+### Q2. `[KTU University Exam – Dec 2023]`
+**Distinguish between the positions of the Fermi level in n-type and p-type semiconductors with suitable band diagrams. (CO1, Understand)**
+
+**Model Answer (3 marks):**
+
+1. In an **n-type semiconductor**, the Fermi level $E_F$ lies **close to the conduction band edge** $E_c$, shifted downward by an amount $k_B T \ln(N_c/N_d)$ from $E_c$, where $N_d$ is the donor concentration. **[1 mark]**
+2. In a **p-type semiconductor**, the Fermi level $E_F$ lies **close to the valence band edge** $E_v$, shifted upward by an amount $k_B T \ln(N_v/N_a)$ from $E_v$, where $N_a$ is the acceptor concentration. **[1 mark]**
+3. The shift magnitude **increases logarithmically with doping**: heavier doping pushes $E_F$ nearer to the respective band edge. **[1 mark]**
+
+---
+
+## Part B — Full-Descriptive Questions (14 Marks with internal choice)
 
 > [!NOTE]
-> **Intrinsic vs. Extrinsic (2 Marks):**
->
-> | Property | Intrinsic | Extrinsic |
-> |---|---|---|
-> | Purity | Chemically pure, no impurities | Doped with donor or acceptor atoms |
-> | Carrier source | Thermal generation only | Thermal + impurity ionization |
-> | Carrier equality | $n = p = n_i$ | $n \ne p$; one type dominates |
-> | Fermi level | At (or near) mid-gap | Shifted toward $E_C$ (n-type) or $E_V$ (p-type) |
-> | Conductivity control | By temperature only | By doping concentration |
->
-> **Law of Mass Action (1 Mark):** The product of the electron and hole concentrations in a semiconductor at thermal equilibrium is a constant that depends only on temperature:
->
-> $$n\,p \;=\; n_i^2 \;=\; N_C N_V\,\exp\!\left(-\frac{E_g}{k_B T}\right)$$
+> Following KTU ESE pattern: each Part-B question is 14 marks, typically with sub-parts (a) = 7 marks and (b) = 7 marks. Two alternatives are given for internal choice.
 
 ---
 
-## 5.2 Part B — Long Answer Questions (Choice-Based, 1 × 14 = 14 Marks)
+### Question A (14 Marks) — `[KTU University Exam – July 2024]`
+
+**(a)** Derive an expression for the position of the **Fermi level in an intrinsic semiconductor** at temperature $T$. Explain why it is shifted slightly from the exact centre of the energy gap. (7 marks) **[CO1, Apply]**
+
+**(b)** For a silicon sample at $300\,\text{K}$ with $E_g = 1.12\,\text{eV}$, $N_c = 2.8 \times 10^{25}\,\text{m}^{-3}$, and $N_v = 1.04 \times 10^{25}\,\text{m}^{-3}$, calculate the intrinsic Fermi level $E_i$ (taking $E_v = 0$). Comment on its position relative to mid-gap. (7 marks) **[CO2, Apply]**
+
+---
+
+#### Model Solution for Q.A(a) — Derivation (7 marks)
+
+**Step 1 — State the carrier density formulas** (1 mark):
+For electrons in the conduction band: $n = N_c \exp[-(E_c - E_F)/k_B T]$
+For holes in the valence band: $p = N_v \exp[-(E_F - E_v)/k_B T]$
+
+**Step 2 — Apply intrinsic condition** (1 mark): For a pure semiconductor, $n = p = n_i$. Therefore:
+
+$$N_c \exp\!\left(-\dfrac{E_c - E_i}{k_B T}\right) = N_v \exp\!\left(-\dfrac{E_i - E_v}{k_B T}\right)$$
+
+**Step 3 — Algebraic manipulation** (2 marks): Taking the natural logarithm of both sides:
+
+$$\ln(N_c) - \dfrac{E_c - E_i}{k_B T} = \ln(N_v) - \dfrac{E_i - E_v}{k_B T}$$
+
+$$\ln\!\left(\dfrac{N_c}{N_v}\right) = \dfrac{E_c - E_i - E_i + E_v}{k_B T} = \dfrac{(E_c + E_v) - 2E_i}{k_B T}$$
+
+**Step 4 — Solve for $E_i$** (2 marks):
+
+$$2E_i = (E_c + E_v) - k_B T \ln\!\left(\dfrac{N_c}{N_v}\right)$$
+
+$$\boxed{\,E_i = \dfrac{E_c + E_v}{2} - \dfrac{k_B T}{2} \ln\!\left(\dfrac{N_c}{N_v}\right)\,}$$
+
+**Step 5 — Physical interpretation** (1 mark): The first term is the **mid-gap energy** $E_{\text{mid}}$. The second term is a correction. Since for Si, $N_c > N_v$ (because $m_e^* > m_h^*$ in effective density-of-states sense is *not* always true — actually $N_c$ depends on the conduction-band minima count and $m_e^*$), $\ln(N_c/N_v) > 0$, so the correction is **negative**, shifting $E_i$ **below** the exact mid-gap by an amount $k_B T \ln(N_c/N_v)/2$.
+
+**Valuation Key:** [Carrier density formula: 1M] | [Intrinsic condition: 1M] | [Logarithm step: 2M] | [Final expression: 2M] | [Physical shift interpretation: 1M]
+
+---
+
+#### Model Solution for Q.A(b) — Numerical Problem (7 marks)
+
+**Given:** $E_g = 1.12\,\text{eV}$, $E_v = 0\,\text{eV}$ (reference) $\Rightarrow E_c = 1.12\,\text{eV}$, $N_c = 2.8 \times 10^{25}\,\text{m}^{-3}$, $N_v = 1.04 \times 10^{25}\,\text{m}^{-3}$, $T = 300\,\text{K}$.
+
+**Step 1 — Mid-gap energy** (1 mark):
+$$E_{\text{mid}} = \dfrac{E_c + E_v}{2} = \dfrac{1.12 + 0}{2} = 0.56\,\text{eV}$$
+
+**Step 2 — Compute $k_B T$** (1 mark):
+$$k_B T = 8.617 \times 10^{-5} \times 300 = 0.02585\,\text{eV}$$
+
+**Step 3 — Compute the correction term** (2 marks):
+$$\dfrac{k_B T}{2} \ln\!\left(\dfrac{N_c}{N_v}\right) = \dfrac{0.02585}{2} \ln\!\left(\dfrac{2.8 \times 10^{25}}{1.04 \times 10^{25}}\right) = 0.01293 \times \ln(2.692)$$
+
+$$= 0.01293 \times 0.9903 = 0.01280\,\text{eV}$$
+
+**Step 4 — Calculate $E_i$** (2 marks):
+$$E_i = 0.56 - 0.0128 = 0.5472\,\text{eV}$$
+
+**Step 5 — Comment on position** (1 mark):
+The intrinsic Fermi level $E_i = 0.5472\,\text{eV}$ lies **0.0128 eV below the exact mid-gap** (which is at $0.56\,\text{eV}$). The shift is small but finite, arising from the asymmetry $N_c \neq N_v$ in the effective densities of states.
+
+**Valuation Key:** [Mid-gap value: 1M] | [kT value: 1M] | [Correction: 2M] | [Final numerical value: 2M] | [Commentary: 1M]
 
 > [!WARNING]
-> **KTU Examiner's Valuation Warning:** In every Fermi-level derivation, the examiner *first* scans for the **charge-neutrality statement** ($n = N_D$ or $p = N_A$) and the **Boltzmann approximation** for carrier concentration. Students who skip either of these and jump directly to the final formula *automatically lose 2 marks* on the question. Always write the two anchor statements first.
+> **Examiner's Pitfall Alert:**
+> - **Do not** forget to convert $k_B T$ to eV before substituting in the logarithm; using $k_B T$ in J/K is the most common error.
+> - **Do not** round off $E_i$ to 0.56 eV; the correction term ($0.013\,\text{eV}$) is small but the examiner awards marks for showing it.
+> - Always state the **sign** of the shift explicitly (below or above mid-gap).
 
 ---
 
-### Question A (14 Marks) — Internal Choice Option 1
+### Question B (14 Marks) — `[KTU University Exam – Dec 2023]`
 
-> **[KTU University Exam — Model Question aligned to July 2024 syllabus]** **(a)** Derive an expression for the position of the Fermi level in an intrinsic semiconductor, starting from the charge-neutrality condition. **(7 Marks)** `[CO2, Apply]`
->
-> **(b)** For Silicon at $300\text{ K}$, calculate the position of the intrinsic Fermi level measured from the valence-band edge, given: $E_g = 1.12\text{ eV}$, $N_C = 2.8 \times 10^{19}\text{ cm}^{-3}$, $N_V = 1.04 \times 10^{19}\text{ cm}^{-3}$, $k_BT = 0.0259\text{ eV}$. Hence, comment on the small shift from the exact mid-gap. **(7 Marks)** `[CO3, Apply]`
+**(a)** Derive expressions for the position of the **Fermi level in an n-type and a p-type semiconductor** in terms of doping concentration and temperature. (7 marks) **[CO2, Apply]**
 
-#### Model Solution
-
-**Part (a) — Derivation (7 Marks):**
-
-* [Charge-neutrality statement: 1 Mark] In an intrinsic semiconductor, the number of free electrons in the conduction band equals the number of free holes in the valence band: $n = p$.
-* [Boltzmann expressions: 2 Marks]
-
-$$
-n \;=\; N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right)
-\qquad
-p \;=\; N_V\,\exp\!\left(-\frac{E_F - E_V}{k_B T}\right)
-$$
-
-* [Equating and taking logarithm: 2 Marks]
-
-$$
-N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right) \;=\; N_V\,\exp\!\left(-\frac{E_F - E_V}{k_B T}\right)
-$$
-
-$$
-\ln N_C - \frac{E_C - E_F}{k_B T} \;=\; \ln N_V - \frac{E_F - E_V}{k_B T}
-$$
-
-* [Algebraic manipulation: 1 Mark]
-
-$$
-2E_F \;=\; E_C + E_V + k_BT\,\ln\!\left(\frac{N_V}{N_C}\right)
-$$
-
-* [Final result: 1 Mark]
-
-$$
-\boxed{\;E_F \;=\; \frac{E_C + E_V}{2} \;+\; \frac{k_BT}{2}\,\ln\!\left(\frac{N_V}{N_C}\right)\;}
-$$
-
-* [Reference to valence band: bonus clarity]
-
-$$
-E_{F,i} - E_V \;=\; \frac{E_g}{2} + \frac{k_BT}{2}\,\ln\!\left(\frac{N_V}{N_C}\right)
-$$
-
-**Part (b) — Numerical Calculation (7 Marks):**
-
-* [Statement of the formula: 1 Mark]
-
-$$
-E_{F,i} - E_V \;=\; \frac{E_g}{2} + \frac{k_BT}{2}\,\ln\!\left(\frac{N_V}{N_C}\right)
-$$
-
-* [Substitution of values: 2 Marks]
-
-$$
-E_{F,i} - E_V \;=\; \frac{1.12}{2} + \frac{0.0259}{2}\,\ln\!\left(\frac{1.04 \times 10^{19}}{2.8 \times 10^{19}}\right)
-$$
-
-* [Evaluate the log term: 1 Mark]
-
-$$
-\ln\!\left(\frac{1.04}{2.8}\right) \;=\; \ln(0.3714) \;=\; -0.990
-$$
-
-* [Compute the offset: 1 Mark]
-
-$$
-\frac{0.0259}{2} \times (-0.990) \;=\; -0.0128\text{ eV}
-$$
-
-* [Final answer: 1 Mark]
-
-$$
-E_{F,i} - E_V \;=\; 0.5600 - 0.0128 \;=\; 0.5472\text{ eV}
-$$
-
-* [Commentary on the shift: 1 Mark] Since $N_V < N_C$, the logarithm is negative, so $E_{F,i}$ is shifted **0.0128 eV below** the exact mid-gap. The intrinsic Fermi level in Si therefore lies closer to the valence band than the conduction band by this small but non-negligible amount.
+**(b)** A Germanium sample is doped with $N_d = 5 \times 10^{21}\,\text{m}^{-3}$ donors. At $T = 300\,\text{K}$, $N_c = 1.04 \times 10^{25}\,\text{m}^{-3}$ and $E_c - E_v = 0.67\,\text{eV}$. Calculate the Fermi level position measured from the conduction band edge. Comment on whether the semiconductor is degenerate. (7 marks) **[CO3, Apply]**
 
 ---
 
-### Question B (14 Marks) — Internal Choice Option 2
+#### Model Solution for Q.B(a) — Dual Derivation (7 marks)
 
-> **[KTU University Exam — Model Question aligned to Dec 2023 syllabus]** **(a)** Derive an expression for the position of the Fermi level in an n-type semiconductor. Show that for a heavily doped n-type sample, $E_F$ approaches $E_C$. **(7 Marks)** `[CO2, Apply]`
->
-> **(b)** A sample of Silicon is doped with Phosphorus at $N_D = 10^{16}\text{ cm}^{-3}$. Calculate the position of the Fermi level at $300\text{ K}$ relative to the conduction band, given $N_C = 2.8 \times 10^{19}\text{ cm}^{-3}$ and $k_BT = 0.0259\text{ eV}$. Find the position of $E_F$ if the donor concentration is increased to $10^{18}\text{ cm}^{-3}$. Comment on the trend. **(7 Marks)** `[CO3, Apply]`
+**n-type derivation (3.5 marks):**
 
-#### Model Solution
+**Step 1 — Charge neutrality** (1 mark): For n-type at moderate temperature with $N_a = 0$ and $p \ll n$: $n \approx N_d$.
 
-**Part (a) — Derivation (7 Marks):**
+**Step 2 — Substitute** (1 mark):
+$$N_d = N_c \exp\!\left(-\dfrac{E_c - E_F}{k_B T}\right)$$
 
-* [Ionization statement: 1 Mark] At moderate temperature, all donor atoms are ionised, so the free-electron concentration equals the donor density: $n \approx N_D$.
-* [Boltzmann expression for n: 2 Marks]
+**Step 3 — Solve** (1.5 marks):
+$$E_c - E_F = k_B T \ln\!\left(\dfrac{N_c}{N_d}\right) \;\;\Rightarrow\;\; E_F^{(n)} = E_c - k_B T \ln\!\left(\dfrac{N_c}{N_d}\right)$$
 
-$$
-n \;=\; N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right)
-$$
+**p-type derivation (3.5 marks):**
 
-* [Substitute $n = N_D$ and rearrange: 2 Marks]
+**Step 1 — Charge neutrality** (1 mark): $p \approx N_a$ (fully ionized acceptors).
 
-$$
-N_D \;=\; N_C\,\exp\!\left(-\frac{E_C - E_F}{k_B T}\right)
-\;\Rightarrow\;
-\frac{E_C - E_F}{k_B T} \;=\; \ln\!\left(\frac{N_C}{N_D}\right)
-$$
+**Step 2 — Substitute** (1 mark):
+$$N_a = N_v \exp\!\left(-\dfrac{E_F - E_v}{k_B T}\right)$$
 
-* [Final result: 1 Mark]
+**Step 3 — Solve** (1.5 marks):
+$$E_F - E_v = k_B T \ln\!\left(\dfrac{N_v}{N_a}\right) \;\;\Rightarrow\;\; E_F^{(p)} = E_v + k_B T \ln\!\left(\dfrac{N_v}{N_a}\right)$$
 
-$$
-\boxed{\;E_F \;=\; E_C - k_BT\,\ln\!\left(\frac{N_C}{N_D}\right)\;}
-$$
-
-* [Limiting-case argument: 1 Mark] For heavy doping, $N_D \to N_C$, so $\ln(N_C/N_D) \to 0$, giving $E_F \to E_C$. Physically, the donor level and the conduction-band edge merge, and the semiconductor becomes *degenerate* (metallic).
-
-**Part (b) — Numerical Calculation (7 Marks):**
-
-* [Statement of the formula: 1 Mark]
-
-$$
-E_C - E_F \;=\; k_BT\,\ln\!\left(\frac{N_C}{N_D}\right)
-$$
-
-* [Case 1 — $N_D = 10^{16}\text{ cm}^{-3}$: substitution (1 Mark)]
-
-$$
-E_C - E_F \;=\; 0.0259 \times \ln\!\left(\frac{2.8 \times 10^{19}}{1 \times 10^{16}}\right)
-\;=\; 0.0259 \times \ln(2800)
-$$
-
-* [Evaluate and finalize Case 1: 1 Mark]
-
-$$
-E_C - E_F \;=\; 0.0259 \times 7.94 \;=\; 0.2056\text{ eV}
-$$
-
-* [Case 2 — $N_D = 10^{18}\text{ cm}^{-3}$: substitution (1 Mark)]
-
-$$
-E_C - E_F \;=\; 0.0259 \times \ln\!\left(\frac{2.8 \times 10^{19}}{1 \times 10^{18}}\right)
-\;=\; 0.0259 \times \ln(28)
-$$
-
-* [Evaluate and finalize Case 2: 1 Mark]
-
-$$
-E_C - E_F \;=\; 0.0259 \times 3.332 \;=\; 0.0863\text{ eV}
-$$
-
-* [Trend commentary: 1 Mark] As the donor concentration increases from $10^{16}$ to $10^{18}\text{ cm}^{-3}$ (a 100× increase), the Fermi level moves **closer to the conduction band** by about $0.12\text{ eV}$ — from $0.206\text{ eV}$ below $E_C$ to $0.086\text{ eV}$ below $E_C$. This is the engineering basis for tuning the work function and threshold voltage of n-type MOSFETs.
+**Valuation Key:** [n-type neutrality: 1M] | [n-type algebra: 2.5M] | [p-type neutrality: 1M] | [p-type algebra: 2.5M]
 
 ---
+
+#### Model Solution for Q.B(b) — Numerical (7 marks)
+
+**Given:** $N_d = 5 \times 10^{21}\,\text{m}^{-3}$, $N_c = 1.04 \times 10^{25}\,\text{m}^{-3}$, $T = 300\,\text{K}$, $E_g = 0.67\,\text{eV}$.
+
+**Step 1 — Compute $k_B T$** (1 mark):
+$$k_B T = 0.02585\,\text{eV}$$
+
+**Step 2 — Compute the ratio** (1 mark):
+$$\dfrac{N_c}{N_d} = \dfrac{1.04 \times 10^{25}}{5 \times 10^{21}} = 2080$$
+
+**Step 3 — Compute the logarithm** (1 mark):
+$$\ln(2080) = 7.64$$
+
+**Step 4 — Compute $E_c - E_F$** (2 marks):
+$$E_c - E_F = 0.02585 \times 7.64 = 0.1975\,\text{eV}$$
+
+**Step 5 — State the Fermi level position** (1 mark):
+$$\boxed{\,E_c - E_F \approx 0.198\,\text{eV}\,}$$
+
+**Step 6 — Degeneracy check** (1 mark):
+A semiconductor is called **degenerate** when the Fermi level lies **within** $3k_B T$ of a band edge (i.e., $E_c - E_F < 3k_B T \approx 0.078\,\text{eV}$). Here $E_c - E_F = 0.198\,\text{eV} \gg 0.078\,\text{eV}$, so the sample is **non-degenerate** and the **Boltzmann approximation remains valid**.
+
+**Valuation Key:** [kT value: 1M] | [Ratio: 1M] | [Logarithm: 1M] | [Final EF position: 2M] | [Statement of EF location: 1M] | [Degeneracy comment: 1M]
 
 > [!WARNING]
-> **Common Pitfalls (Where Students Lose Marks):**
-> * **Forgetting the negative sign** when writing $E_C - E_F = k_BT\ln(N_C/N_D)$. The expression $E_F = E_C - k_BT\ln(N_C/N_D)$ is correct; $E_F = E_C + k_BT\ln(N_C/N_D)$ is wrong.
-> * **Mixing up donor and acceptor notations** — never write $E_F$ in p-type using $N_D$ or vice-versa.
-> * **Ignoring units** — write $k_BT$ in **eV** when energy is in eV, and in **Joules** when energy is in Joules. The numerical value 0.0259 eV is for $T = 300\text{ K}$ only.
-> * **Skipping the assumption of non-degeneracy** — the formulas are valid only when $E_C - E_F \gg k_BT$ (typically ≥ $3 k_BT$). In KTU questions, always state this assumption once.
-> * **Not mentioning the Boltzmann approximation** — the carrier-concentration expressions used in derivations are *approximations* to the full Fermi–Dirac integral. Always justify.
+> **Examiner's Pitfall Alert:**
+> - **Critical:** The final answer **must** explicitly state whether the semiconductor is degenerate or non-degenerate, with justification via the $3k_B T$ criterion. Omitting this loses the last mark.
+> - Many students forget the **ln unit check**; ensure the argument of $\ln$ is **dimensionless**. The ratio $N_c/N_d$ is dimensionless.
+> - Do not confuse $E_c - E_F$ with $E_F - E_c$; the former is the *depth* of $E_F$ below $E_c$ for n-type.
 
 ---
 
-## 5.3 Topic Recap & Important Things to Remember
+## Topic Recap & Important Things to Remember
 
-> [!IMPORTANT]
-> **High-Density Revision Checklist — Fermi Level in Semiconductors**
+> [!NOTE]
+> Use this checklist for **rapid last-minute revision** before the KTU exam.
 
-* **Fermi Level Definition:** Energy at which the probability of occupation is **50 %** at $T > 0\text{ K}$. Fermi–Dirac function: $f(E) = [1 + \exp((E-E_F)/k_BT)]^{-1}$.
-* **Intrinsic Semiconductor:** Pure crystal, $n = p = n_i$, $E_{F,i}$ near mid-gap.
-* **Extrinsic Semiconductor:** Doped — *n-type* (donor, $N_D$, $E_F$ near $E_C$) or *p-type* (acceptor, $N_A$, $E_F$ near $E_V$).
-* **Intrinsic Carrier Concentration:** $n_i = \sqrt{N_C N_V} \exp(-E_g / 2k_BT)$.
-* **Law of Mass Action:** $n\,p = n_i^2$ — universal at a given temperature.
-* **Fermi Level in n-type:** $E_F = E_C - k_BT \ln(N_C/N_D)$. Heavier doping → $E_F$ moves up toward $E_C$.
-* **Fermi Level in p-type:** $E_F = E_V + k_BT \ln(N_V/N_A)$. Heavier doping → $E_F$ moves down toward $E_V$.
-* **Intrinsic Fermi Level (off mid-gap):** $E_{F,i} = E_V + \tfrac{E_g}{2} + \tfrac{k_BT}{2}\ln(N_V/N_C)$.
-* **Effective Density of States:** $N_C = 2(2\pi m_e^* k_BT / h^2)^{3/2}$, $N_V = 2(2\pi m_h^* k_BT / h^2)^{3/2}$.
-* **Constants to Memorise:** $k_B = 8.617 \times 10^{-5}\text{ eV/K}$, $k_BT = 0.0259\text{ eV}$ at $300\text{ K}$, $E_g(\text{Si}) = 1.12\text{ eV}$, $n_i(\text{Si, 300K}) = 1.5 \times 10^{10}\text{ cm}^{-3}$.
-* **Donor Level Position (Si):** $E_D \approx E_C - 0.045\text{ eV}$ for Phosphorus.
-* **Acceptor Level Position (Si):** $E_A \approx E_V + 0.045\text{ eV}$ for Boron.
-* **Boltzmann Approximation:** Valid when $E_C - E_F \gg k_BT$ and $E_F - E_V \gg k_BT$ (typical for non-degenerate semiconductors).
-* **Charge-Neutrality Anchor:** Always begin every derivation with $n = N_D$ (n-type) or $p = N_A$ (p-type) or $n = p$ (intrinsic).
-* **Engineering Significance:** Fermi-level position sets the *built-in potential* of a pn-junction, the *threshold voltage* of a MOSFET, the *open-circuit voltage* of a solar cell, and the *quasi-Fermi-level splitting* in any optoelectronic device.
-* **Degenerate Limit:** When $N_D \to N_C$, $E_F \to E_C$ and enters the conduction band — the material becomes metallic-like (used in tunnel diodes, heavily-doped emitters).
-* **Visual Cue to Remember:** *Dope more → Fermi level walks toward the band edge of the majority carrier* (up for n-type, down for p-type).
+### Core Definitions
+- **Fermi Level $E_F$:** Energy at which electron occupation probability = 1/2 per the **Fermi–Dirac distribution**.
+- **Intrinsic Fermi Level $E_i$:** Fermi level in a **pure, undoped** semiconductor.
+- **Boltzmann Approximation:** Valid when $\vert E - E_F \vert \gg k_B T$; reduces $f(E)$ to an exponential.
 
+### Critical Equations
+- $E_i = (E_c + E_v)/2 + (k_B T/2) \ln(N_v/N_c)$ — lies near mid-gap.
+- $E_F^{(n)} = E_c - k_B T \ln(N_c/N_d)$ — moves toward $E_c$ as $N_d$ increases.
+- $E_F^{(p)} = E_v + k_B T \ln(N_v/N_a)$ — moves toward $E_v$ as $N_a$ increases.
+- $n \cdot p = n_i^2 = N_c N_v \exp(-E_g/k_B T)$ — **Law of Mass Action**.
+
+### Key Numerical Values to Memorize
+- $k_B = 1.38 \times 10^{-23}\,\text{J/K} = 8.617 \times 10^{-5}\,\text{eV/K}$
+- At $T = 300\,\text{K}$: $k_B T \approx 0.0259\,\text{eV}$
+- $E_g(\text{Si}) = 1.12\,\text{eV}$, $E_g(\text{Ge}) = 0.67\,\text{eV}$, $E_g(\text{GaAs}) = 1.42\,\text{eV}$
+
+### Physical Insights
+- **Higher doping** $\Rightarrow$ $E_F$ moves closer to the **majority-carrier band**.
+- **Higher temperature** $\Rightarrow$ $E_F$ **drifts back toward mid-gap** (intrinsic behaviour takes over).
+- **Degenerate semiconductor:** $E_F$ enters the conduction or valence band (occurs for $N_d$ or $N_a$ exceeding $\sim 10^{25}\,\text{m}^{-3}$ for Si).
+
+### Common Exam Pitfalls
+- Forgetting to convert $k_B T$ to eV in numerical problems.
+- Confusing $N_c$ (effective density of states in CB) with $N_d$ (donor concentration).
+- Failing to state the **sign** of the Fermi level shift from mid-gap.
+- Omitting the **degeneracy check** in doping-related numerical problems.
+
+### Real-World Applications (for 1–2 mark application-based sub-questions)
+- p-n junction diodes: built-in voltage $V_{bi} = (1/e)(E_F^{(n)} - E_F^{(p)})$.
+- Solar cells: open-circuit voltage relates to the **quasi-Fermi level split** under illumination.
+- LEDs: emission wavelength depends on $E_g$ and the Fermi level positions in the p- and n-regions.
+]<]minimax[>[</text>
 <!-- SECTION_5_END -->

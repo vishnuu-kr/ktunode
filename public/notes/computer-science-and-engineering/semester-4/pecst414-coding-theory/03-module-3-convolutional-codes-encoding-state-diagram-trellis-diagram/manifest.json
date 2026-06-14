@@ -1,0 +1,36 @@
+{
+  "course_name": "CODING THEORY",
+  "course_code": "PECST414",
+  "module_number": 3,
+  "module_title": "Convolutional codes encoding state diagram trellis diagram",
+  "topics_generated": [
+    {
+      "title": "Convolutional codes: Encoding, state diagram, trellis diagram",
+      "slug": "convolutional-codes-encoding-state-diagram-trellis-diagram",
+      "path": "convolutional-codes-encoding-state-diagram-trellis-diagram/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Classification, realization, distance properties.",
+      "slug": "classification-realization-distance-properties",
+      "path": "classification-realization-distance-properties/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Viterbi algorithm, BCJR algorithm.",
+      "slug": "viterbi-algorithm-bcjr-algorithm",
+      "path": "viterbi-algorithm-bcjr-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance bounds for convolutional codes",
+      "slug": "performance-bounds-for-convolutional-codes",
+      "path": "performance-bounds-for-convolutional-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

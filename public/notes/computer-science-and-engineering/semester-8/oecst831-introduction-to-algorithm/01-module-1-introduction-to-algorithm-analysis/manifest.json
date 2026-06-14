@@ -1,0 +1,43 @@
+{
+  "course_name": "INTRODUCTION TO ALGORITHM",
+  "course_code": "OECST831",
+  "module_number": 1,
+  "module_title": "Introduction to algorithm analysis",
+  "topics_generated": [
+    {
+      "title": "Introduction to Algorithm Analysis",
+      "slug": "introduction-to-algorithm-analysis",
+      "path": "introduction-to-algorithm-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Time and Space Complexity- Asymptotic notation",
+      "slug": "time-and-space-complexity-asymptotic-notation",
+      "path": "time-and-space-complexity-asymptotic-notation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Elementary operations and Computation of Time Complexity-Best, worst and Average Case Complexities",
+      "slug": "elementary-operations-and-computation-of-time-complexity-best-worst-and-average-case-complexities",
+      "path": "elementary-operations-and-computation-of-time-complexity-best-worst-and-average-case-complexities/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Complexity Calculation of simple algorithms",
+      "slug": "complexity-calculation-of-simple-algorithms",
+      "path": "complexity-calculation-of-simple-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Recurrence Equations: Solution of Recurrence Equations – Iteration Method and Recursion Tree Methods",
+      "slug": "recurrence-equations-solution-of-recurrence-equations-iteration-method-and-recursion-tree-methods",
+      "path": "recurrence-equations-solution-of-recurrence-equations-iteration-method-and-recursion-tree-methods/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

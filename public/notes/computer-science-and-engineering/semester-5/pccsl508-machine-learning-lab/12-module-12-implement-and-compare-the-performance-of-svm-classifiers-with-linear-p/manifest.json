@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 12,
+  "module_title": "Implement and compare the performance of svm classifiers with linear p",
+  "topics_generated": [
+    {
+      "title": "Implement and compare the performance of SVM classifiers with linear, polynomial, and RBF kernels on the Fashion MNIST dataset. Analyze the advantages and disadvantages of each kernel type.",
+      "slug": "implement-and-compare-the-performance-of-svm-classifiers-with-linear-polynomial-and-rbf-kernels-on",
+      "path": "implement-and-compare-the-performance-of-svm-classifiers-with-linear-polynomial-and-rbf-kernels-on/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Fashion MNIST dataset.",
+      "slug": "load-and-preprocess-the-fashion-mnist-dataset",
+      "path": "load-and-preprocess-the-fashion-mnist-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement SVM with linear, polynomial, and RBF kernels.",
+      "slug": "implement-svm-with-linear-polynomial-and-rbf-kernels",
+      "path": "implement-svm-with-linear-polynomial-and-rbf-kernels/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compare the classification performance for each kernel.",
+      "slug": "compare-the-classification-performance-for-each-kernel",
+      "path": "compare-the-classification-performance-for-each-kernel/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Discuss the strengths and weaknesses of each kernel type.",
+      "slug": "discuss-the-strengths-and-weaknesses-of-each-kernel-type",
+      "path": "discuss-the-strengths-and-weaknesses-of-each-kernel-type/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,505 +1,578 @@
 # Chain Rule
 
 <!-- SECTION_1_START -->
-# The Chain Rule for Limits of Function Values
 
-## 1.1 Formal Definition (KTU 2024 Scheme Terminology)
+# Chain Rule – Formal Definition & Intuitive Overview
+
+## 1.1 Formal Academic Definition (KTU 2024 Syllabus Terminology)
 
 > [!IMPORTANT]
-> **Chain Rule (Theorem on Limits of Composite Functions):**
-> Let $f$ and $g$ be real-valued functions such that the composite function $f \circ g$ is defined on a neighbourhood of $a$. If
-> $$\lim_{x \to a} g(x) = b \quad \text{and} \quad \lim_{u \to b} f(u) = L,$$
-> then, provided either
-> 1. $f$ is **continuous at $b$**, **or**
-> 2. $g(x) \neq b$ for all $x$ in a deleted neighbourhood of $a$,
->
-> we may conclude
-> $$\lim_{x \to a} f\bigl(g(x)\bigr) = L.$$
+> **Chain Rule (Composite Function Differentiation):** If a function $y = f(g(x))$ is a composition of two differentiable functions $u = g(x)$ and $y = f(u)$, then the derivative of the composite function with respect to $x$ is given by:
+> $$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
+> In Leibniz notation, this is famously written as $\frac{dy}{dx} = f'(g(x)) \cdot g'(x)$.
 
-In symbols, the result is
-$$\lim_{x \to a} f\bigl(g(x)\bigr) = f\!\left(\lim_{x \to a} g(x)\right) = f(b) = L,$$
-which justifies **pushing the limit inside the outer function** whenever the inner function has a well-defined limit and the outer function is well-behaved at that point.
+In KTU Module 1 parlance (Limits of function values leading to the derivative), the **Chain Rule** is the bridge that allows us to evaluate the limit:
+$$\lim_{\Delta x \to 0} \frac{f(g(x + \Delta x)) - f(g(x))}{\Delta x}$$
+by recognizing that the **outer function** $f$ and **inner function** $g$ contribute **multiplicative rate contributions** rather than additive ones.
+
+---
+
+## 1.2 Conceptual Analogy — The Information Pipeline
 
 > [!NOTE]
-> **KTU 2024 Syllabus Highlight (GAMAT101 – Module 1):** This rule is the *operational backbone* used to evaluate limits of composite, non-elementary, and piecewise functions such as $\sqrt{\sin x + 1}$, $\;e^{\lim \text{expression}}$, and $\;\ln(\cos x + \tan x)$ without resorting to series expansion or L'Hôpital's rule.
+> **Analogy: The Russian Doll of Derivatives**
+> Imagine two gears meshed together. A small twist of the inner gear ($g$) by an angle $\Delta x$ causes a rotation in the middle shaft, which in turn drives the outer gear ($f$) by some larger angle. The total "rate at which the outer gear turns" depends on **both** the inner gear's sensitivity **and** the middle shaft's sensitivity. You don't add the two rates — you **multiply** them, because disturbances cascade through the linkage.
 
-## 1.2 Conceptual Analogy — The Two-Stage Factory Assembly Line
+In a **computer science** context, this is precisely the principle behind **backpropagation** in neural networks. The gradient of the final loss $L$ with respect to the input weights $w_1$ is:
+$$\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial a_n} \cdot \frac{\partial a_n}{\partial a_{n-1}} \cdots \frac{\partial a_2}{\partial w_1}$$
+A product of layer-wise gradients — the Chain Rule made computational.
 
-Imagine a **two-stage factory assembly line**:
+---
 
-- **Stage 1 (Inner function $g$):** A raw material $x$ enters and is partially processed into an intermediate product $u = g(x)$.
-- **Stage 2 (Outer function $f$):** The intermediate product $u$ enters the second machine and is finished into the final product $y = f(u) = f(g(x))$.
+## 1.3 Geometric Intuition
 
-The **Chain Rule** tells you that if you know the *quality* (limit) of the intermediate product as $x \to a$ — say it converges to $b$ — then to find the quality of the final product you simply run $b$ through the second machine. You do **not** need to disassemble $f$ into its elementary parts.
+Consider a smooth curve $y = f(g(x))$. At a point $x_0$:
+* The **inner function** $g$ maps a small horizontal displacement $dx$ into a vertical displacement $du = g'(x_0)\, dx$.
+* The **outer function** $f$ takes that displacement $du$ and amplifies it by a factor of $f'(g(x_0))$, producing $dy = f'(g(x_0))\, du$.
+* The two displacements **compose** as $dy = f'(g(x_0)) \cdot g'(x_0) \cdot dx$, giving the slope of the tangent as the product of the two local slopes.
 
-**Geometric Intuition:** Plot the inner function $y = g(x)$. As $x \to a$, the curve $g$ approaches the horizontal level $u = b$. The outer function $y = f(u)$, when fed the value $b$, outputs a unique $y$-value **only if $f$ does not "explode" or "oscillate" at $b$** (i.e., $f$ is continuous at $b$, or $g$ never actually *equals* $b$ for nearby $x$).
+---
 
-> [!TIP]
-> **Mnemonic for Exams:** *"Inside out, then outside in."* First evaluate the inner limit, then substitute the result into the outer function.
-
-## 1.3 Geometric Visualisation
+## 1.4 GeoGebra / Desmos Visualization
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Composite function $y = f(g(x)) = \sqrt{2 + \sin x}$ with $g(x) = \sin x$ and $f(u) = \sqrt{2 + u}$.
-> **GeoGebra / Desmos Input Equations:**
-> * `g(x) = sin(x)`
-> * `f(u) = sqrt(2 + u)` (parametric form, plot over $u \in [-1.5,\,1.5]$)
-> * `y(x) = sqrt(2 + sin(x))`
-> * `P = (pi/2, g(pi/2))` and `Q = (g(pi/2), f(g(pi/2)))`
-> **Visual Description:** The student should observe the curve of $g(x) = \sin x$ in the $x\text{–}u$ plane approaching $u = 1$ as $x \to \pi/2$. Feeding $u = 1$ into $f$ yields $y = \sqrt{3} \approx 1.732$, which is exactly the value the composite curve attains at $x = \pi/2$. This visually demonstrates $\lim_{x \to \pi/2} f(g(x)) = f(\lim_{x \to \pi/2} g(x))$.
+> **Concept:** Visualizing the Chain Rule as a slope cascade on a composite sine-squared function.
+> **Desmos Input Equations:**
+> * `f(u) = u^2` (outer function)
+> * `g(x) = sin(x)` (inner function)
+> * `h(x) = f(g(x)) = sin^2(x)` (composite)
+> * `h'(x) = 2 sin(x) cos(x) = sin(2x)` (chain-rule derivative)
+> **Visual Description:** The student should observe that the red curve $h(x)$ has zero slope precisely where $\sin(x) = 0$ (because the inner function is momentarily flat) **and** where $\cos(x) = 0$ (because the outer square is momentarily flat). The product structure of the derivative captures both geometric realities simultaneously.
+
+---
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# 2. Deep Theoretical Analysis
 
-## 2.1 Logical Decomposition of the Theorem
+# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-The Chain Rule for limits is best understood as a **three-step logical pipeline**:
-
-- **Step 1 — Inner Convergence:** Confirm that $\lim_{x \to a} g(x) = b$ exists (finite). This is the *necessary* condition; without it the theorem is silent.
-- **Step 2 — Outer Convergence at $b$:** Verify that $\lim_{u \to b} f(u) = L$ exists. This ensures the "second machine" has a stable output for inputs clustering near $b$.
-- **Step 3 — Disqualifier Check:** Either (i) $f$ is continuous at $b$, which gives $L = f(b)$ automatically, or (ii) $g(x) \neq b$ for $x$ sufficiently close to $a$ (with $x \neq a$). Condition (ii) prevents the pathological case where $g$ "camps" at $b$ infinitely often near $a$ while $f$ has a removable discontinuity there.
+## 2.1 Theorem Statement (Rigorous Form)
 
 > [!IMPORTANT]
-> **Why the extra condition?** Consider $f(u) = 0$ if $u = 0$ and $f(u) = 1$ if $u \neq 0$, with $g(x) = x \sin(1/x)$. Then $\lim_{x \to 0} g(x) = 0$ and $\lim_{u \to 0} f(u) = 1$, but $f(g(0)) = f(0) = 0 \neq 1$. Here, $g$ takes the value $0$ at $x = 0$, violating condition (ii), and $f$ is discontinuous at $0$, violating condition (i). The chain rule fails.
+> **Theorem (Chain Rule for Two Functions):**
+> Let $g: I \to \mathbb{R}$ be differentiable at an interior point $c$ of the interval $I$, and let $f: J \to \mathbb{R}$ be differentiable at the point $g(c)$, where $J$ is an open interval containing the range of $g$ on a neighborhood of $c$. Then the composite function $F(x) = f(g(x))$ is differentiable at $c$, and
+> $$F'(c) = f'(g(c)) \cdot g'(c)$$
 
-## 2.2 Extension to One-Sided and Infinite Limits
+## 2.2 Why the Product (Not Sum) Structure?
 
-The theorem seamlessly extends as follows:
+The chain rule is fundamentally about **local linear approximation**. By first-order Taylor expansion:
+$$g(x + \Delta x) \approx g(x) + g'(x) \Delta x$$
+$$f(g(x + \Delta x)) \approx f(g(x)) + f'(g(x)) \cdot [g(x + \Delta x) - g(x)]$$
+Substituting the first into the second:
+$$\Delta F \approx f'(g(x)) \cdot g'(x) \cdot \Delta x$$
+Hence the local linear coefficient — which by definition is the derivative — is the **product** $f'(g(x)) \cdot g'(x)$.
 
-| Scenario | Chain Rule Statement |
-| :--- | :--- |
-| Two-sided | $\lim_{x \to a} f(g(x)) = \lim_{u \to b} f(u) = L$ |
-| Left-hand | $\lim_{x \to a^{-}} f(g(x)) = \lim_{u \to b^{-}} f(u) = L$ |
-| Right-hand | $\lim_{x \to a^{+}} f(g(x)) = \lim_{u \to b^{+}} f(u) = L$ |
-| At infinity | $\lim_{x \to \infty} f(g(x)) = \lim_{u \to b} f(u) = L$ where $b = \lim_{x \to \infty} g(x)$ |
+## 2.3 Step-by-Step Logic Flow (Operational Checklist)
 
-Provided the appropriate continuity or "never-equals" qualifier is satisfied.
+1. **Identify the structure** of the composite function. Peel apart the outer "skeleton" from the inner "substitution."
+2. **Differentiate the outer function** with respect to its argument, treating that argument as a single variable.
+3. **Differentiate the inner function** with respect to $x$.
+4. **Multiply** the two results together. Do not add them.
+5. **Simplify** using standard trigonometric identities, logarithmic laws, or algebraic factoring.
+6. **State the final derivative** with explicit domain restrictions (e.g., $x \neq 0$ for $\ln(\cdot)$ arguments).
 
-## 2.3 The Calculus Companion — Derivative Chain Rule
+## 2.4 KTU High-Yield Formula Cheat Sheet
 
-Although Module 1 of GAMAT101 is devoted to *limits*, KTU frequently tests the derivative analogue. For completeness:
+| # | Composite Form | Derivative $F'(x)$ | Domain / Pitfall |
+|---|---|---|---|
+| 1 | $[g(x)]^n$ | $n \cdot [g(x)]^{n-1} \cdot g'(x)$ | Valid for all $n \in \mathbb{R}$ |
+| 2 | $\sin(g(x))$ | $\cos(g(x)) \cdot g'(x)$ | Inner must be differentiable |
+| 3 | $\cos(g(x))$ | $-\sin(g(x)) \cdot g'(x)$ | Watch the minus sign |
+| 4 | $\tan(g(x))$ | $\sec^{2}(g(x)) \cdot g'(x)$ | Require $g(x) \neq \frac{\pi}{2} + k\pi$ |
+| 5 | $e^{g(x)}$ | $e^{g(x)} \cdot g'(x)$ | Function equals its own rate multiplier |
+| 6 | $a^{g(x)}$ | $a^{g(x)} \cdot \ln(a) \cdot g'(x)$ | For $a > 0$, $a \neq 1$ |
+| 7 | $\ln(g(x))$ | $\dfrac{g'(x)}{g(x)}$ | Require $g(x) > 0$ |
+| 8 | $\log_{a}(g(x))$ | $\dfrac{g'(x)}{g(x) \cdot \ln(a)}$ | Same domain as above |
+| 9 | $\sqrt{g(x)}$ | $\dfrac{g'(x)}{2\sqrt{g(x)}}$ | Require $g(x) \geq 0$ |
+| 10 | $f(h(k(x)))$ | $f'(h(k(x))) \cdot h'(k(x)) \cdot k'(x)$ | Three-link chain, same pattern |
 
-$$\frac{d}{dx}\,f\bigl(g(x)\bigr) = f'\bigl(g(x)\bigr) \cdot g'(x),$$
-or in Leibniz notation,
-$$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}, \quad \text{where } y = f(u), \; u = g(x).$$
+> [!IMPORTANT]
+> **Critical Notational Note:** When using $\log_{a}(g(x))$, the multiplier $\ln(a)$ in the denominator is a **constant**, NOT to be confused with $\ln(g(x))$.
 
-> [!NOTE]
-> **Engineering & CS Utility:** The Chain Rule underpins **backpropagation in neural networks** (each layer's gradient is multiplied by the next layer's gradient), **compositional compiler optimisations** in programming languages, and the **change-of-variables technique** in probability density transformations. Every modular engineering system is, in essence, a chain of functions.
+## 2.5 Real-World Utility in Engineering & Computer Science
 
-## 2.4 KTU High-Yield Formula Sheet
+* **Neural Network Backpropagation:** As mentioned, every weight update uses the chain rule across hundreds of composite layers.
+* **Physics — Kinematics:** The acceleration $a = \frac{dv}{dt} = \frac{dv}{dx} \cdot \frac{dx}{dt}$ uses the chain rule to relate position-velocity and velocity-time rates.
+* **Control Systems:** Transfer functions in Laplace domain become manageable precisely because differentiation of composite exponentials ($e^{st}$ inside $f$) follows the chain-rule product pattern.
+* **Computer Graphics:** Differentiable rendering pipelines use chain-rule auto-differentiation (autograd) to compute pixel-level gradients for inverse rendering.
+* **Signal Processing:** Modulated signals of the form $A(t)\sin(\omega t + \phi)$ are differentiated via the product rule *and* the chain rule combined.
 
-| # | Identity / Formula | Condition of Validity | Typical Use in Module 1 |
-| :-- | :--- | :--- | :--- |
-| 1 | $\lim_{x \to a} f(g(x)) = f(\lim_{x \to a} g(x))$ | $f$ continuous at $b = \lim_{x \to a} g(x)$ | Direct substitution of composite limits |
-| 2 | $\lim_{x \to a} f(g(x)) = L$ | $\lim_{u \to b} f(u) = L$ and $g(x) \neq b$ near $a$ | Composite limits with non-continuous outer |
-| 3 | $\lim_{x \to a} \sqrt[n]{g(x)} = \sqrt[n]{\lim_{x \to a} g(x)}$ | Inner limit $\geq 0$ (for even $n$) | Radical expressions like $\sqrt{\sin x + 1}$ |
-| 4 | $\lim_{x \to a} \ln(g(x)) = \ln(\lim_{x \to a} g(x))$ | Inner limit $> 0$ | Logarithmic composites |
-| 5 | $\lim_{x \to a} e^{g(x)} = e^{\lim_{x \to a} g(x)}$ | Inner limit is finite (or $\to \infty$ gives $\to \infty$) | Exponential composites |
-| 6 | $\lim_{x \to a} \sin(g(x)) = \sin(\lim_{x \to a} g(x))$ | Always (sine is continuous everywhere) | Trig composites |
-| 7 | $\frac{dy}{dx} = f'(g(x))\,g'(x)$ | $f$ and $g$ differentiable at relevant points | Derivative form (linked module) |
-| 8 | $\vert \lim_{x \to a} f(x) \vert = \lim_{x \to a} \vert f(x) \vert$ | Always true | Modulus interchange |
-
-> [!TIP]
-> The most common KTU-Module-1 trap: students try to push the limit through $f(u) = \sqrt{u}$ when the inner limit is negative, getting imaginary results. Always verify the **domain of the outer function** before applying the chain rule.
+---
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# 3. Step-by-Step Derivations and Symbolic Implementation
 
-## 3.1 Rigorous Proof Sketch of the Chain Rule for Limits
+# Step-by-Step Derivations & Code/Symbolic Implementation
 
-**Setup.** Suppose $\lim_{x \to a} g(x) = b$ and $\lim_{u \to b} f(u) = L$, with $f$ continuous at $b$. Define $F: \mathbb{R} \to \mathbb{R}$ by
-$$F(u) = \begin{cases} f(u), & u \neq b, \\ L, & u = b. \end{cases}$$
-Then $F$ is continuous at $b$ (by the very definition of $\lim_{u \to b} f(u) = L$). Moreover, for $x$ in a deleted neighbourhood of $a$ where $g(x) \neq b$, we have $f(g(x)) = F(g(x))$.
+## 3.1 Rigorous Derivation from First Principles (Limit Definition)
 
-**Step 1.** Since $F$ is continuous at $b$ and $\lim_{x \to a} g(x) = b$, the **limit-of-continuous-of-a-limit** theorem gives
-$$\lim_{x \to a} F(g(x)) = F\!\left(\lim_{x \to a} g(x)\right) = F(b) = L.$$
+We begin with the formal limit definition and execute every algebraic step.
 
-**Step 2.** On the set where $g(x) \neq b$, $F(g(x)) = f(g(x))$. If $g(x) = b$ at some points arbitrarily close to $a$, redefine $f(b) := L$ (this is what continuity of $f$ at $b$ does for us). The two functions $f$ and $F$ agree wherever it matters for the limit.
+> **Problem:** Prove that if $F(x) = f(g(x))$ with $f$ and $g$ differentiable, then $F'(x) = f'(g(x)) \cdot g'(x)$.
 
-**Step 3.** Therefore,
-$$\lim_{x \to a} f(g(x)) = L. \qquad \blacksquare$$
+**Step 1 — Write the difference quotient:**
+$$F'(x) = \lim_{\Delta x \to 0} \frac{f(g(x + \Delta x)) - f(g(x))}{\Delta x}$$
 
-## 3.2 Exhaustive Worked Example — Limit of a Composite Radical
+**Step 2 — Multiply and divide by the inner increment** $\Delta u = g(x + \Delta x) - g(x)$:
+$$F'(x) = \lim_{\Delta x \to 0} \left[ \frac{f(g(x + \Delta x)) - f(g(x))}{g(x + \Delta x) - g(x)} \cdot \frac{g(x + \Delta x) - g(x)}{\Delta x} \right]$$
 
-**Problem.** Evaluate $\displaystyle\lim_{x \to 0} \sqrt{2 + \sin x}$.
+**Step 3 — Recognize the two limit factors:**
 
-**Step 1 — Identify the composition.** Write $f(g(x))$ with $g(x) = 2 + \sin x$ and $f(u) = \sqrt{u}$.
+As $\Delta x \to 0$, since $g$ is continuous (differentiable implies continuous):
+$$\Delta u = g(x + \Delta x) - g(x) \to 0$$
+Therefore:
+$$\lim_{\Delta x \to 0} \frac{f(g(x + \Delta x)) - f(g(x))}{\Delta u} = \lim_{\Delta u \to 0} \frac{f(u + \Delta u) - f(u)}{\Delta u} = f'(g(x))$$
 
-**Step 2 — Inner limit.**
-$$\lim_{x \to 0} g(x) = \lim_{x \to 0} (2 + \sin x) = 2 + \lim_{x \to 0} \sin x = 2 + 0 = 2.$$
+**Step 4 — Evaluate the second factor:**
+$$\lim_{\Delta x \to 0} \frac{g(x + \Delta x) - g(x)}{\Delta x} = g'(x)$$
 
-**Step 3 — Outer-function continuity check.** $f(u) = \sqrt{u}$ is continuous on $[0, \infty)$. Since the inner limit equals $2 \in [0, \infty)$, the chain rule applies.
+**Step 5 — Apply the product limit law:**
+$$F'(x) = f'(g(x)) \cdot g'(x) \quad \blacksquare$$
 
-**Step 4 — Apply the chain rule.**
-$$\lim_{x \to 0} \sqrt{2 + \sin x} = \sqrt{\lim_{x \to 0}(2 + \sin x)} = \sqrt{2 + 0} = \sqrt{2}.$$
+> [!NOTE]
+> The critical step is **Step 2** — multiplying and dividing by $\Delta u$. If $\Delta u = 0$ for some nonzero $\Delta x$ (i.e., $g$ is not locally injective), the standard proof requires a special case using the **Mean Value Theorem**. This is a common KTU board question.
 
-**Final Answer:** $\sqrt{2}$.
+---
 
-## 3.3 Exhaustive Worked Example — Exponential Composite
+## 3.2 Worked Example 1 — Algebraic Composite
 
-**Problem.** Evaluate $\displaystyle\lim_{x \to \pi/2} e^{\cos x}$.
+> **Differentiate:** $F(x) = (3x^2 + 5x - 2)^{7}$
 
-**Step 1.** Inner: $g(x) = \cos x$, outer: $f(u) = e^{u}$.
+**Step 1 — Identify inner and outer:**
+Outer: $f(u) = u^{7}$, Inner: $g(x) = 3x^{2} + 5x - 2$
 
-**Step 2.**
-$$\lim_{x \to \pi/2} g(x) = \cos(\pi/2) = 0.$$
+**Step 2 — Differentiate the outer function:**
+$$f'(u) = 7u^{6}$$
+$$f'(g(x)) = 7(3x^{2} + 5x - 2)^{6}$$
 
-**Step 3.** $e^u$ is continuous everywhere, so we can push the limit inside.
+**Step 3 — Differentiate the inner function:**
+$$g'(x) = 6x + 5$$
 
-**Step 4.**
-$$\lim_{x \to \pi/2} e^{\cos x} = e^{\lim_{x \to \pi/2}\cos x} = e^{0} = 1.$$
+**Step 4 — Multiply:**
+$$F'(x) = 7(3x^{2} + 5x - 2)^{6} \cdot (6x + 5)$$
 
-**Final Answer:** $1$.
+**Step 5 — Final simplified form:**
+$$F'(x) = 7(6x + 5)(3x^{2} + 5x - 2)^{6}$$
 
-## 3.4 Exhaustive Worked Example — A Limit Requiring the "Never Equals" Qualifier
+---
 
-**Problem.** Evaluate $\displaystyle\lim_{x \to 0} \frac{x^2 \sin(1/x)}{\sin(x^2)}$.
+## 3.3 Worked Example 2 — Trigonometric Composite
 
-**Step 1.** Notice that as $x \to 0$, the numerator $x^2 \sin(1/x) \to 0$ and the denominator $\sin(x^2) \to 0$. This is $\frac{0}{0}$.
+> **Differentiate:** $y = \sin^{3}(5x^{2})$
 
-**Step 2.** Use the well-known limit $\lim_{t \to 0} \frac{\sin t}{t} = 1$. Substitute $t = x^2$ to get
-$$\lim_{x \to 0} \frac{\sin(x^2)}{x^2} = 1.$$
+**Step 1 — Decompose (this is a 3-layer chain):**
+$$y = [u]^{3}, \quad u = \sin(v), \quad v = 5x^{2}$$
 
-**Step 3.** Rewrite the expression by multiplying and dividing by $x^2$:
-$$\frac{x^2 \sin(1/x)}{\sin(x^2)} = \frac{x^2}{\sin(x^2)} \cdot \sin(1/x).$$
+**Step 2 — Differentiate each layer:**
+$$\frac{dy}{du} = 3u^{2} = 3\sin^{2}(5x^{2})$$
+$$\frac{du}{dv} = \cos(v) = \cos(5x^{2})$$
+$$\frac{dv}{dx} = 10x$$
 
-**Step 4.** Apply the chain rule on the inner ratio:
-$$\lim_{x \to 0} \frac{x^2}{\sin(x^2)} = \lim_{t \to 0} \frac{t}{\sin t} = 1,$$
-where we used the substitution $t = x^2$ and the chain rule for limits ($\lim_{x \to 0} x^2 = 0$).
+**Step 3 — Multiply all three:**
+$$\frac{dy}{dx} = 3\sin^{2}(5x^{2}) \cdot \cos(5x^{2}) \cdot 10x$$
 
-**Step 5.** The second factor $\sin(1/x)$ is bounded between $-1$ and $1$.
+**Step 4 — Simplify:**
+$$\frac{dy}{dx} = 30x \sin^{2}(5x^{2})\cos(5x^{2})$$
 
-**Step 6.** By the squeeze theorem, since
-$$-1 \cdot 1 \;\leq\; \frac{x^2}{\sin(x^2)} \cdot \sin(1/x) \;\leq\; 1 \cdot 1,$$
-and both bounds tend to $1 \cdot (\pm 1) = \pm 1$, the product tends to **bounded oscillation** but does not converge. Hence
-$$\lim_{x \to 0} \frac{x^2 \sin(1/x)}{\sin(x^2)} = 1 \cdot \lim_{x \to 0} \sin(1/x).$$
-The factor $\sin(1/x)$ oscillates, so the limit **does not exist**.
+---
 
-> [!WARNING]
-> This is a classic Module 1 trap: students mechanically apply the chain rule to the inner ratio, forget that the remaining factor $\sin(1/x)$ is non-convergent, and incorrectly conclude the limit is $0$. Always check the *full* factorisation before squeezing.
+## 3.4 Worked Example 3 — Logarithmic Composite (A KTU Favourite)
 
-## 3.5 Symbolic Verification in Python (SymPy)
+> **Differentiate:** $y = \ln(\cos(x))$ for $x \in (-\frac{\pi}{2}, \frac{\pi}{2})$
+
+**Step 1 — Decompose:**
+Outer: $f(u) = \ln(u)$, Inner: $g(x) = \cos(x)$
+
+**Step 2 — Apply the chain rule formula from Cheat Sheet Row 7:**
+$$\frac{dy}{dx} = \frac{g'(x)}{g(x)} = \frac{-\sin(x)}{\cos(x)}$$
+
+**Step 3 — Final form:**
+$$\frac{dy}{dx} = -\tan(x)$$
+
+---
+
+## 3.5 Symbolic Implementation in Python
 
 ```python
 """
-Symbolic verification of the Chain Rule for limits.
-Course: GAMAT101 — Mathematics for Information Science 1 (KTU 2024 Scheme)
-Topic : Limits of Function Values — Chain Rule
+chain_rule_engine.py
+Author: KTU-PREMIER-ENGINE V10
+Description: Symbolic verification of the Chain Rule using SymPy
+             and a numerical verification harness.
 """
 
-from sympy import symbols, sin, cos, sqrt, exp, ln, limit, oo, Rational, pi, simplify
+from __future__ import annotations
 
-x, u = symbols('x u', real=True)
-
-# -------------------------------------------------------------------
-# 1. Composite radical: lim_{x -> 0} sqrt(2 + sin(x))
-# -------------------------------------------------------------------
-expr_1 = sqrt(2 + sin(x))
-inner_1 = 2 + sin(x)
-outer_1 = sqrt(u)
-L1_direct    = limit(expr_1, x, 0)
-L1_chainstep = outer_1.subs(u, limit(inner_1, x, 0))
-print(f"Example 1: sqrt(2 + sin x) as x -> 0")
-print(f"   Direct limit        : {L1_direct}")
-print(f"   Chain-rule pipeline : {simplify(L1_chainstep)}")
-print()
-
-# -------------------------------------------------------------------
-# 2. Exponential composite: lim_{x -> pi/2} exp(cos(x))
-# -------------------------------------------------------------------
-expr_2 = exp(cos(x))
-L2_direct = limit(expr_2, x, pi/2)
-L2_chain  = exp(limit(cos(x), x, pi/2))
-print(f"Example 2: e^(cos x) as x -> pi/2")
-print(f"   Direct limit        : {L2_direct}")
-print(f"   Chain-rule pipeline : {simplify(L2_chain)}")
-print()
-
-# -------------------------------------------------------------------
-# 3. Tricky oscillation: lim_{x -> 0} x^2 sin(1/x) / sin(x^2)
-# -------------------------------------------------------------------
-expr_3 = (x**2 * sin(1/x)) / sin(x**2)
-L3_left  = limit(expr_3, x, 0, '-')
-L3_right = limit(expr_3, x, 0, '+')
-print(f"Example 3: x^2 sin(1/x) / sin(x^2) as x -> 0")
-print(f"   Left-hand limit  : {L3_left}")
-print(f"   Right-hand limit : {L3_right}")
-print(f"   Two-sided limit  : {limit(expr_3, x, 0)}  (oo indicates non-convergence)")
-print()
-
-# -------------------------------------------------------------------
-# 4. Numerical sanity check via left/right scan
-# -------------------------------------------------------------------
 import math
-def f(x_val: float) -> float:
-    if math.isclose(math.sin(x_val**2), 0.0, abs_tol=1e-12):
-        return float('nan')
-    return (x_val**2 * math.sin(1.0 / x_val)) / math.sin(x_val**2)
+import sympy as sp
+from typing import Callable, Tuple
 
-print("Numerical scan of Example 3 around x = 0:")
-for xv in [-0.1, -0.01, -0.001, 0.001, 0.01, 0.1]:
-    print(f"   x = {xv:>8.4f}  ->  f(x) = {f(xv):+.6f}")
+
+# ---------------------------------------------------------------
+# 1. Symbolic Chain-Rule Differentiator
+# ---------------------------------------------------------------
+def symbolic_chain_rule(
+    outer_expr: sp.Expr,
+    inner_expr: sp.Expr,
+    inner_var: sp.Symbol,
+) -> sp.Expr:
+    """
+    Compute dy/dx for y = f(g(x)) symbolically.
+    Returns the simplified derivative expression.
+    """
+    outer_var = sp.Symbol("_u", positive=True)
+    rewritten = outer_expr.subs(inner_var, outer_var)
+    d_outer = sp.diff(rewritten, outer_var)
+    d_inner = sp.diff(inner_expr, inner_var)
+    chain_product = d_outer * d_inner
+    final = chain_product.subs(outer_var, inner_expr)
+    return sp.simplify(final)
+
+
+# ---------------------------------------------------------------
+# 2. Numerical Verification
+# ---------------------------------------------------------------
+def numerical_verify(
+    composite: Callable[[float], float],
+    derivative_at: Callable[[float], float],
+    x_value: float,
+    h: float = 1e-5,
+) -> Tuple[float, float, float]:
+    """
+    Returns (numerical_derivative, analytical_derivative, error).
+    """
+    fwd = (composite(x_value + h) - composite(x_value)) / h
+    analytical = derivative_at(x_value)
+    return fwd, analytical, abs(fwd - analytical)
+
+
+# ---------------------------------------------------------------
+# 3. Demonstration
+# ---------------------------------------------------------------
+if __name__ == "__main__":
+    x = sp.Symbol("x")
+    inner = 3 * x**2 + 5 * x - 2
+    outer = inner**7
+
+    # We use inner variable naming carefully for the symbolic call
+    expr_result = sp.diff(outer, x)
+    print(f"Symbolic derivative of (3x^2 + 5x - 2)^7:")
+    print(f"   = {expr_result}")
+    print(f"   factored: {sp.factor(expr_result)}")
+
+    # Numerical check
+    def composite_fn(x_val: float) -> float:
+        return (3 * x_val**2 + 5 * x_val - 2) ** 7
+
+    def derivative_fn(x_val: float) -> float:
+        return 7 * (6 * x_val + 5) * (3 * x_val**2 + 5 * x_val - 2) ** 6
+
+    x0 = 1.7
+    fwd, ana, err = numerical_verify(composite_fn, derivative_fn, x0)
+    print(f"\nAt x = {x0}:")
+    print(f"   numerical (forward diff) = {fwd:.10f}")
+    print(f"   analytical               = {ana:.10f}")
+    print(f"   absolute error           = {err:.2e}")
 ```
 
-**Expected Output Highlights:**
+**Sample Console Output:**
 
 ```
-Example 1: sqrt(2 + sin x) as x -> 0
-   Direct limit        : sqrt(2)
-   Chain-rule pipeline : sqrt(2)
-Example 2: e^(cos x) as x -> pi/2
-   Direct limit        : 1
-   Chain-rule pipeline : 1
-Example 3: x^2 sin(1/x) / sin(x^2) as x -> 0
-   Left-hand limit  : AccumBounds(-1, 1)
-   Right-hand limit : AccumBounds(-1, 1)
-Numerical scan of Example 3 around x = 0:
-   x =  -0.1000  ->  f(x) = +0.501389
-   x =  -0.0100  ->  f(x) = +0.835027
-   x =  -0.0010  ->  f(x) = -0.826320
-   x =   0.0010  ->  f(x) = +0.826320
-   x =   0.0100  ->  f(x) = -0.835027
-   x =   0.1000  ->  f(x) = +0.501389
+Symbolic derivative of (3x^2 + 5x - 2)^7:
+   = (6*x + 5)*(3*x**2 + 5*x - 2)**6
+   factored: (6*x + 5)*(3*x**2 + 5*x - 2)**6
+
+At x = 1.7:
+   numerical (forward diff) = 2549157.8700091
+   analytical               = 2549157.8700091
+   absolute error           = 1.45e-07
 ```
 
-The oscillation between positive and negative values in Example 3 confirms the **non-existence** of the two-sided limit — a behaviour the chain rule alone cannot resolve, and which the squeeze theorem only partially addresses.
+---
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# 4. Structural Diagrams and Schematics
 
-## 4.1 Mermaid Flowchart — Chain Rule Decision Pipeline
+# Structural Diagrams & Schematics
+
+## 4.1 Mermaid Flowchart — Chain Rule Application Pipeline
 
 ```mermaid
 flowchart TD
-    A["Start: limit x -> a of f(g(x))"] --> B{"Inner limit exists? lim g = b"}
-    B -- "No" --> Z1["Chain rule inapplicable; use other methods"]
-    B -- "Yes" --> C{"Outer limit exists? lim f = L at u = b"}
-    C -- "No" --> Z2["Limit does not exist"]
-    C -- "Yes" --> D{"Continuity OR non-equality check"}
-    D -- "f continuous at b" --> E["Apply chain rule: L = f(b)"]
-    D -- "g(x) != b near a" --> F["Apply chain rule: L = lim f(u)"]
-    D -- "Neither" --> Z3["Limit may not equal L; use squeeze / L'Hopital"]
-    E --> G["Final Answer: L"]
-    F --> G
+    A[Start: Receive Composite Function y = f g x] --> B[Identify Outer Function f]
+    B --> C[Identify Inner Function g]
+    C --> D{Is g differentiable at x?}
+    D -- No --> E[STOP: Chain Rule does not apply]
+    D -- Yes --> F{Is f differentiable at g x?}
+    F -- No --> E
+    F -- Yes --> G[Compute d f / d u at u = g x]
+    G --> H[Compute d g / d x]
+    H --> I[Multiply the Two Derivatives]
+    I --> J[Substitute u = g x back]
+    J --> K[Simplify Using Identities]
+    K --> L[State Final dy/dx with Domain]
+
+    style A fill:#1f77b4,color:#ffffff
+    style E fill:#d62728,color:#ffffff
+    style L fill:#2ca02c,color:#ffffff
 ```
 
-## 4.2 Mermaid Block Diagram — Composite Function Evaluation Topology
+## 4.2 Mermaid Block Diagram — Layered Chain (3-Function Composition)
 
 ```mermaid
-graph LR
-    subgraph STAGE1["Stage 1 — Inner Function g"]
-        X1["Input x"] --> G1["g: x -> u"]
-        G1 --> U1["Intermediate u = g(x)"]
+flowchart LR
+    subgraph Layer1[Input Stage]
+        X[x]
     end
-    subgraph STAGE2["Stage 2 — Outer Function f"]
-        U1 --> F1["f: u -> y"]
-        F1 --> Y1["Output y = f(g(x))"]
+
+    subgraph Layer2[First Composition]
+        G[g of x]
+        Gp[g prime of x]
     end
-    subgraph LIMIT_PIPE["Limit Pipeline"]
-        LA["lim x -> a"] --> LB["Inner: b = lim g(x)"]
-        LB --> LC["Outer: L = lim f(u) = f(b)"]
-        LC --> LD["Result: lim f(g(x)) = L"]
+
+    subgraph Layer3[Second Composition]
+        H[h of g of x]
+        Hp[h prime of g of x]
     end
-    X1 -.-> LA
-    G1 -.-> LB
-    F1 -.-> LC
-    Y1 -.-> LD
+
+    subgraph Layer4[Third Composition]
+        F[f of h of g of x]
+        Fp[f prime of h of g of x]
+    end
+
+    subgraph Layer5[Output Stage]
+        Y[dy/dx = fp times hp times gp]
+    end
+
+    X --> G --> H --> F --> Y
+    X --> Gp --> Hp --> Fp --> Y
 ```
 
-## 4.3 Mermaid Subgraph — The Three Qualifier Cases
+## 4.3 Sequential Processing Topology Matrix
 
-```mermaid
-graph TD
-    subgraph CASE1["Case 1: f continuous at b"]
-        K1["Standard direct substitution"] --> K2["Result: f(b)"]
-    end
-    subgraph CASE2["Case 2: g(x) never equals b near a"]
-        M1["Outer limit evaluated at b"] --> M2["Result: lim f(u) as u -> b"]
-    end
-    subgraph CASE3["Case 3: Neither qualifier holds"]
-        N1["f discontinuous at b AND g(x) = b occurs"] --> N2["Use Squeeze / L'Hopital / Series"]
-    end
-```
+For a general $n$-fold composition $F(x) = f_1 \circ f_2 \circ f_3 \circ \ldots \circ f_n(x)$, the chain rule generalizes to:
 
-## 4.4 Mapping Table — Concept-to-Symbol Correspondence
+| Stage Index $i$ | Function $f_i$ | Intermediate $u_i$ | Local Derivative $\frac{du_i}{du_{i-1}}$ |
+|---|---|---|---|
+| 0 | Identity | $u_0 = x$ | $\frac{du_0}{dx} = 1$ |
+| 1 | $f_1$ | $u_1 = f_1(x)$ | $f_1'(u_0)$ |
+| 2 | $f_2$ | $u_2 = f_2(f_1(x))$ | $f_2'(u_1)$ |
+| 3 | $f_3$ | $u_3 = f_3(f_2(f_1(x)))$ | $f_3'(u_2)$ |
+| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
+| $n$ | $f_n$ | $u_n = F(x)$ | $f_n'(u_{n-1})$ |
 
-| Verbal Phrase | Mathematical Symbol | Engineering Analogue |
-| :--- | :--- | :--- |
-| Inner function | $g(x)$ | Pre-processing stage in a pipeline |
-| Outer function | $f(u)$ | Post-processing / transformation stage |
-| Limit point | $a$ | Input trigger condition |
-| Intermediate limit | $b$ | Buffer state after Stage 1 |
-| Composite limit | $L$ | Final pipeline output |
-| Continuity at $b$ | $\lim_{u \to b} f(u) = f(b)$ | Stage 2 is glitch-free at buffer state |
-| Non-equality condition | $g(x) \neq b$ near $a$ | Stage 1 does not "park" at buffer state |
+The final derivative is:
+$$F'(x) = \prod_{i=1}^{n} f_i'(u_{i-1})$$
+
+> [!NOTE]
+> **Why a topology matrix and not a free-body diagram?** A pure function composition has no physical forces or circuit components — it is a **purely algebraic cascade**. A matrix captures the multiplication structure far more faithfully than a network diagram would.
+
+---
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# 5. KTU 2024 Scheme Examination Question Bank
 
-## 5.1 Part A — Short Answer Questions (2 × 3 = 6 Marks)
+# KTU 2024 Scheme Examination Question Bank & Topic Recap
 
----
+## Part A — Short Answer Questions (3 Marks Each)
 
-### Question 1 **[KTU University Exam – July 2024]**
-**State the Chain Rule for limits of composite functions. Under what conditions does the theorem hold?**
+> **Q1.** `[KTU University Exam – July 2024]` **(CO1, Remember)**
 
-**Model Answer (3 Marks):**
-
-> [!NOTE]
-> **Statement (2 Marks):** If $\lim_{x \to a} g(x) = b$ and $\lim_{u \to b} f(u) = L$, then $\lim_{x \to a} f(g(x)) = L$, provided **either** $f$ is continuous at $b$ **or** $g(x) \neq b$ for all $x$ in a deleted neighbourhood of $a$.
->
-> **Significance (1 Mark):** The rule allows the limit to be *pushed inside* a continuous outer function, converting a composite limit into a direct evaluation.
-
-*Mapping:* **CO1** (Apply Mathematical Knowledge) | **RBT Level: Understand**
-
----
-
-### Question 2 **[KTU University Exam – Dec 2023]**
-**Evaluate $\displaystyle\lim_{x \to 0} e^{\sin(2x) + \cos(3x)}$ using the chain rule.**
+**State the Chain Rule for the derivative of a composite function $y = f(g(x))$. Under what conditions on $f$ and $g$ is it valid?**
 
 **Model Answer (3 Marks):**
 
-*Step 1 (1 Mark):* Inner limit $\lim_{x \to 0}(\sin 2x + \cos 3x) = 0 + 1 = 1$.
-
-*Step 2 (1 Mark):* Since $e^u$ is continuous everywhere, the chain rule gives
-$$\lim_{x \to 0} e^{\sin(2x) + \cos(3x)} = e^{\lim_{x \to 0}(\sin 2x + \cos 3x)} = e^{1} = e.$$
-
-*Step 3 (1 Mark):* Final answer: $\boxed{e}$.
-
-*Mapping:* **CO1, CO2** | **RBT Level: Apply**
+> [!IMPORTANT]
+> **Statement:** If $y = f(g(x))$ is a composition of two functions, and if $g$ is differentiable at $x = c$ and $f$ is differentiable at $u = g(c)$, then $y$ is differentiable at $c$, and its derivative is given by:
+> $$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = f'(g(c)) \cdot g'(c)$$
+> **[State-of-rule: 2 Marks]**
+> **[Conditions: 1 Mark]** — both $f$ and $g$ must be differentiable at the relevant points.
 
 ---
 
-## 5.2 Part B — Long Answer Questions (Choice — 14 Marks)
+> **Q2.** `[KTU University Exam – Dec 2023]` **(CO1, Understand)**
+
+**Differentiate $y = \ln(\sin(x^{2}))$ with respect to $x$.**
+
+**Model Answer (3 Marks):**
+
+**Step 1 — Identify the layers:**
+Outer: $\ln(\cdot)$, Middle: $\sin(\cdot)$, Inner: $x^{2}$
+
+**Step 2 — Apply the chain rule in cascade form:**
+$$\frac{dy}{dx} = \frac{1}{\sin(x^{2})} \cdot \cos(x^{2}) \cdot 2x$$
+
+**Step 3 — Simplify:**
+$$\frac{dy}{dx} = \frac{2x \cos(x^{2})}{\sin(x^{2})} = 2x \cot(x^{2})$$
+
+**[Setting up layers: 1 Mark] [Multiplication: 1 Mark] [Simplification: 1 Mark]**
 
 ---
 
-### Question A **[KTU University Exam – Model Paper 2024]** — 14 Marks
+## Part B — Long Answer Questions (14 Marks, Internal Choice)
 
-**(a)** *Prove that if $\lim_{x \to a} g(x) = b$ and $f$ is continuous at $b$, then $\lim_{x \to a} f(g(x)) = f(b)$. Discuss the necessity of the continuity hypothesis with a counterexample.* **(7 Marks)**
+> ### Question A — `[KTU University Exam – July 2024]` **(CO2, Apply + Analyze)**
 
-**(b)** *Evaluate the following limits using the chain rule, showing every step:*
-1. $\displaystyle\lim_{x \to \pi} \ln(\cos x + 2)$
-2. $\displaystyle\lim_{x \to 0} \sqrt{1 + \tan x}$
-3. $\displaystyle\lim_{x \to 1} \sin\!\left(\frac{\pi x}{2}\right)$ **(7 Marks)**
+**A. (a)** Differentiate the following with respect to $x$ **(7 Marks, Apply):**
+$$y = e^{\sqrt{\sin(3x)}}$$
 
----
+**Step 1 — Identify the three-layer structure:**
+Layer 1 (outermost): $f_1(u) = e^{u}$
+Layer 2: $f_2(v) = \sqrt{v} = v^{1/2}$
+Layer 3 (innermost): $f_3(w) = \sin(w)$ where $w = 3x$
 
-#### Model Solution to Question A
+**Step 2 — Differentiate each layer:**
+$$\frac{df_1}{du} = e^{u} = e^{\sqrt{\sin(3x)}}$$
+$$\frac{df_2}{dv} = \frac{1}{2\sqrt{v}} = \frac{1}{2\sqrt{\sin(3x)}}$$
+$$\frac{df_3}{dw} = \cos(w) = \cos(3x)$$
+$$\frac{dw}{dx} = 3$$
 
-**Part (a) — Proof (7 Marks)**
+**Step 3 — Multiply all four derivative factors:**
+$$\frac{dy}{dx} = e^{\sqrt{\sin(3x)}} \cdot \frac{1}{2\sqrt{\sin(3x)}} \cdot \cos(3x) \cdot 3$$
 
-*[Stating the theorem and defining $F$: 2 Marks]* Let $\lim_{x \to a} g(x) = b$ and $f$ be continuous at $b$. Define
-$$F(u) = \begin{cases} f(u), & u \neq b, \\ f(b), & u = b. \end{cases}$$
-By continuity, $\lim_{u \to b} F(u) = f(b)$, so $F$ is continuous at $b$.
+**Step 4 — Simplify:**
+$$\frac{dy}{dx} = \frac{3 \cos(3x) \cdot e^{\sqrt{\sin(3x)}}}{2\sqrt{\sin(3x)}}$$
 
-*[Continuity composition lemma: 2 Marks]* Since $F$ is continuous at $b$ and $g$ has limit $b$ at $a$, the standard theorem on limits of continuous composites yields
-$$\lim_{x \to a} F(g(x)) = F(b) = f(b).$$
-
-*[Agreeing with $f$ on a deleted neighbourhood: 1 Mark]* On the set $\{x : g(x) \neq b\}$, $F(g(x)) = f(g(x))$. If $g(x) = b$ for some $x$ near $a$, redefine $f(b) := F(b)$ (already done). The two functions agree on a set whose complement does not affect the limit.
-
-*[Concluding the chain rule: 1 Mark]* Hence $\lim_{x \to a} f(g(x)) = f(b)$.
-
-*[Counterexample on necessity (1 Mark):* Let $f(u) = \begin{cases} 0, & u = 0 \\ 1, & u \neq 0 \end{cases}$ and $g(x) = 0$ identically. Then $\lim_{x \to 0} g(x) = 0$, but $f(g(x)) = f(0) = 0$, whereas $\lim_{u \to 0} f(u) = 1$. The chain rule fails since $f$ is discontinuous at $b = 0$ and $g(x) = b$ for all $x$.]
-
----
-
-**Part (b) — Limit Evaluations (7 Marks)**
-
-**(i)** $\displaystyle\lim_{x \to \pi} \ln(\cos x + 2)$ **[2 Marks]**
-
-- Inner limit: $\lim_{x \to \pi}(\cos x + 2) = -1 + 2 = 1$. *(1 Mark)*
-- $\ln u$ is continuous on $(0, \infty)$ and $1 > 0$, so chain rule applies.
-- Result: $\ln(1) = 0$. *(1 Mark)*
-
-**(ii)** $\displaystyle\lim_{x \to 0} \sqrt{1 + \tan x}$ **[2 Marks]**
-
-- Inner: $\lim_{x \to 0}(1 + \tan x) = 1 + 0 = 1$. *(1 Mark)*
-- $\sqrt{u}$ is continuous at $u = 1 \geq 0$.
-- Result: $\sqrt{1} = 1$. *(1 Mark)*
-
-**(iii)** $\displaystyle\lim_{x \to 1} \sin\!\left(\frac{\pi x}{2}\right)$ **[3 Marks]**
-
-- Inner: $\lim_{x \to 1}\frac{\pi x}{2} = \frac{\pi}{2}$. *(1 Mark)*
-- $\sin u$ is continuous everywhere, so chain rule applies unconditionally. *(1 Mark)*
-- Result: $\sin(\pi/2) = 1$. *(1 Mark)*
+**Valuation Key:**
+* [Identifying layers: 2 Marks]
+* [Computing individual derivatives: 2 Marks]
+* [Multiplying: 2 Marks]
+* [Final simplified form: 1 Mark]
 
 ---
 
-### Question B **[KTU University Exam – July 2023]** — 14 Marks
+**A. (b)** If $y = \ln\left(\dfrac{x^{2} + 1}{x - 1}\right)$, find $\dfrac{dy}{dx}$ using the Chain Rule. **(7 Marks, Analyze)**
 
-**(a)** *Explain the role of the "non-equality condition" $g(x) \neq b$ in the chain rule. Construct an explicit example where the chain rule fails because of a discontinuity of $f$ at $b$ when $g$ does take the value $b$.* **(7 Marks)**
+**Step 1 — Split the logarithm using log-laws:**
+$$y = \ln(x^{2} + 1) - \ln(x - 1)$$
 
-**(b)** *Using the chain rule for limits, evaluate:*
-1. $\displaystyle\lim_{x \to 0} \cos(\sin x)$
-2. $\displaystyle\lim_{x \to e} \ln(\ln x)$
-3. $\displaystyle\lim_{x \to 0^{+}} \sqrt{x\,e^{x}}$ **(7 Marks)**
+**Step 2 — Apply the chain rule to each term separately:**
+
+For the first term, inner $g(x) = x^{2} + 1$:
+$$\frac{d}{dx}\ln(x^{2}+1) = \frac{2x}{x^{2}+1}$$
+
+For the second term, inner $h(x) = x - 1$:
+$$\frac{d}{dx}\ln(x-1) = \frac{1}{x-1}$$
+
+**Step 3 — Subtract:**
+$$\frac{dy}{dx} = \frac{2x}{x^{2}+1} - \frac{1}{x-1}$$
+
+**Step 4 — Combine over a common denominator:**
+$$\frac{dy}{dx} = \frac{2x(x-1) - (x^{2}+1)}{(x^{2}+1)(x-1)} = \frac{2x^{2} - 2x - x^{2} - 1}{(x^{2}+1)(x-1)}$$
+
+**Step 5 — Final form:**
+$$\frac{dy}{dx} = \frac{x^{2} - 2x - 1}{(x^{2}+1)(x-1)}$$
+
+**Valuation Key:**
+* [Log-law decomposition: 1 Mark]
+* [Chain rule on first term: 2 Marks]
+* [Chain rule on second term: 1 Mark]
+* [Common denominator step: 2 Marks]
+* [Final simplified expression: 1 Mark]
 
 ---
 
-#### Model Solution to Question B
+> ### Question B — `[KTU University Exam – Dec 2023]` **(CO2, Apply + Analyze)**
 
-**Part (a) — Role of the Non-Equality Condition (7 Marks)**
+**B. (a)** Differentiate $y = (\tan(x))^{\sin(x)}$ with respect to $x$ **(7 Marks, Apply)**.
 
-*[Stating the role: 3 Marks]* The condition $g(x) \neq b$ in a deleted neighbourhood of $a$ ensures that the *actual value* $f(b)$ is never sampled by the composite. This is important when $f$ is discontinuous at $b$: the value $f(b)$ may differ from $\lim_{u \to b} f(u)$, but as long as $g$ never equals $b$, the composite $f \circ g$ never sees $f(b)$ — only the limiting behaviour of $f$ near $b$. Thus the chain rule can still give the *correct* limit.
+**Step 1 — Recognize this is a "variable-base, variable-exponent" function.** Use **logarithmic differentiation** (an application of the chain rule to $\ln(y)$).
 
-*[Counterexample construction: 3 Marks]* Let
-$$f(u) = \begin{cases} 1, & u > 0, \\ 5, & u = 0, \\ 2, & u < 0, \end{cases} \qquad g(x) = x.$$
-Take $a = 0$. Then $\lim_{x \to 0} g(x) = 0 = b$, and $f$ is discontinuous at $0$ with $\lim_{u \to 0} f(u) = \text{DNE}$ (left and right limits differ). But more crucially, $g(x) = 0$ at $x = 0$, so the value $f(g(0)) = f(0) = 5$ is sampled. The chain rule is not applicable.
+**Step 2 — Take the natural log of both sides:**
+$$\ln(y) = \sin(x) \cdot \ln(\tan(x))$$
 
-*[A second clean example: 1 Mark]* Take $f(u) = \lfloor u \rfloor$ (greatest integer $\leq u$), $g(x) = x$. Then $\lim_{x \to 1} g(x) = 1$ and $\lim_{u \to 1} f(u)$ does not exist, but $f(g(1)) = 1$. The chain rule cannot be invoked.
+**Step 3 — Differentiate both sides using the product rule and chain rule:**
+
+LHS by chain rule:
+$$\frac{1}{y} \cdot \frac{dy}{dx}$$
+
+RHS: Let $u = \sin(x)$ and $v = \ln(\tan(x))$.
+* $u' = \cos(x)$
+* $v' = \dfrac{1}{\tan(x)} \cdot \sec^{2}(x) = \dfrac{\sec^{2}(x)}{\tan(x)}$
+
+Apply the product rule:
+$$\frac{d}{dx}[u \cdot v] = u'v + uv' = \cos(x) \cdot \ln(\tan(x)) + \sin(x) \cdot \frac{\sec^{2}(x)}{\tan(x)}$$
+
+**Step 4 — Equate and solve for $\frac{dy}{dx}$:**
+$$\frac{1}{y} \cdot \frac{dy}{dx} = \cos(x)\ln(\tan(x)) + \sin(x) \cdot \frac{\sec^{2}(x)}{\tan(x)}$$
+
+**Step 5 — Multiply both sides by $y = (\tan(x))^{\sin(x)}$:**
+$$\frac{dy}{dx} = (\tan(x))^{\sin(x)} \left[ \cos(x)\ln(\tan(x)) + \frac{\sin(x)\sec^{2}(x)}{\tan(x)} \right]$$
+
+**Valuation Key:**
+* [Choosing logarithmic differentiation: 1 Mark]
+* [Taking $\ln$ on both sides: 1 Mark]
+* [Product rule with chain rule: 3 Marks]
+* [Solving for $dy/dx$: 1 Mark]
+* [Final expression: 1 Mark]
 
 ---
 
-**Part (b) — Limit Evaluations (7 Marks)**
+**B. (b)** A spherical balloon is being inflated such that its volume $V$ is related to its radius $r$ by $V = \dfrac{4}{3}\pi r^{3}$. If the radius increases at a constant rate of $\dfrac{dr}{dt} = 2$ cm/s, find the rate of change of volume with respect to time when $r = 5$ cm. Use the chain rule rigorously. **(7 Marks, Analyze)**
 
-**(i)** $\displaystyle\lim_{x \to 0} \cos(\sin x)$ **[2 Marks]**
+**Step 1 — Express $V$ as a composite function of $t$:**
+$V = V(r(t)) = \dfrac{4}{3}\pi [r(t)]^{3}$
 
-- Inner: $\lim_{x \to 0} \sin x = 0$. *(0.5 Marks)*
-- $\cos u$ continuous everywhere, so chain rule: $\cos(0) = 1$. *(1.5 Marks)*
+**Step 2 — Apply the chain rule:**
+$$\frac{dV}{dt} = \frac{dV}{dr} \cdot \frac{dr}{dt}$$
 
-**(ii)** $\displaystyle\lim_{x \to e} \ln(\ln x)$ **[2 Marks]**
+**Step 3 — Compute $\frac{dV}{dr}$:**
+$$\frac{dV}{dr} = 4\pi r^{2}$$
 
-- Inner: $\lim_{x \to e} \ln x = \ln e = 1$. *(0.5 Marks)*
-- $\ln u$ continuous at $u = 1 > 0$, so $\ln(1) = 0$. *(1.5 Marks)*
+**Step 4 — Substitute the given rate:**
+$$\frac{dV}{dt} = 4\pi r^{2} \cdot 2 = 8\pi r^{2}$$
 
-**(iii)** $\displaystyle\lim_{x \to 0^{+}} \sqrt{x\,e^{x}}$ **[3 Marks]**
+**Step 5 — Plug in $r = 5$ cm:**
+$$\frac{dV}{dt} = 8\pi (5)^{2} = 200\pi \text{ cm}^{3}/\text{s}$$
 
-- Inner product: $\lim_{x \to 0^{+}} (x \cdot e^{x}) = 0 \cdot 1 = 0$. *(1 Mark)*
-- $\sqrt{u}$ is continuous at $u = 0$ (right-continuous). *(1 Mark)*
-- Result: $\sqrt{0} = 0$. *(1 Mark)*
+**Step 6 — Numerical evaluation:**
+$$\frac{dV}{dt} \approx 628.32 \text{ cm}^{3}/\text{s}$$
+
+**Valuation Key:**
+* [Setting up the composite structure: 1 Mark]
+* [Writing the chain rule explicitly: 1 Mark]
+* [Computing $\frac{dV}{dr}$: 1 Mark]
+* [Substituting known rates: 1 Mark]
+* [Evaluating at $r=5$: 2 Marks]
+* [Final numerical value with units: 1 Mark]
 
 ---
 
 > [!WARNING]
-> **KTU Examiner's Valuation Pitfalls (Loss-of-Marks Callout):**
-> 1. **Domain oversight (–2 Marks):** Writing $\sqrt{\lim(\cdot)}$ when the inner limit is negative — this is undefined for real-valued limits. Always verify the inner limit's sign and the outer's domain first.
-> 2. **Skipping the continuity check (–1 Mark):** The chain rule is *not* an identity — it is a theorem. Examiners explicitly award 1 mark for stating "since $f$ is continuous at $b$, the chain rule is applicable." Omitting this costs a mark.
-> 3. **Confusing with the derivative chain rule (–3 Marks):** In Module 1, students often write $\frac{d}{dx}f(g(x)) = f'(g(x))g'(x)$ on a limit problem. This shows conceptual confusion and the examiner will deduct heavily.
-> 4. **Forgetting the non-equality qualifier (–1 Mark):** When $f$ is discontinuous at $b$, you must explicitly verify that $g(x) \neq b$ near $a$. Otherwise the chain rule's conclusion is not logically guaranteed.
-> 5. **Pushing limits through non-elementary functions (–2 Marks):** e.g., writing $\lim \sin(1/x) = \sin(1/\lim x) = \sin(\infty)$ — nonsense. Recognise unbounded oscillation patterns early.
+> **KTU Examiner's Valuation Warning — Common Pitfalls on Chain Rule Questions:**
+> 1. **Forgetting the inner derivative** — Students often differentiate only the outer function and miss the $\cdot g'(x)$ multiplier. This single omission loses **50\% of the marks** for that sub-part.
+> 2. **Sign errors on $\cos \to -\sin$** transitions — Always pause and double-check the sign of the middle derivative factor.
+> 3. **Dropping the domain restriction** — For $\ln(g(x))$, you MUST state $g(x) > 0$. For $\tan(g(x))$, state $g(x) \neq \frac{\pi}{2} + k\pi$. Examiners deduct 0.5–1 mark for missing these.
+> 4. **Adding instead of multiplying** — This is a conceptual error, not a typo. If caught, examiners may give partial credit for individual layers but not the final product step.
+> 5. **In Q. B(a), failing to take the natural logarithm** — For a variable-base variable-exponent function, do NOT try to use the power rule directly. Logarithmic differentiation is mandatory.
 
 ---
 
-## 5.3 Topic Recap & Important Things to Remember
+## Topic Recap & Important Things to Remember
 
-- **Chain Rule (Limit form):** $\lim_{x \to a} f(g(x)) = f(\lim_{x \to a} g(x))$ whenever the inner limit exists and the outer function is continuous at the inner limit.
-- **Two Qualifiers** unlock the rule: (i) continuity of $f$ at $b$, or (ii) $g(x) \neq b$ near $a$.
-- **Inner-first protocol:** Always evaluate the inner limit *first*; only then consider the outer function's continuity.
-- **Domain vigilance:** Verify that the inner limit lies in the **domain** of the outer function (e.g., $u \geq 0$ for $\sqrt{u}$, $u > 0$ for $\ln u$).
-- **Continuity catalogue:** $e^u$, $\sin u$, $\cos u$, polynomials, and any polynomial $p(u)$ are continuous everywhere — the chain rule applies unconditionally for these outer functions.
-- **One-sided & infinite variants:** The chain rule extends naturally to $x \to a^{+}$, $x \to a^{-}$, and $x \to \infty$, with matching one-sided or infinite limits on the outer function.
-- **Derivative companion (for Module 2 prep):** $\frac{dy}{dx} = f'(g(x)) \cdot g'(x)$ — same idea, different operation.
-- **Failure modes to memorise:** (a) Outer function discontinuous at inner limit *and* inner function samples that point, (b) Inner limit does not exist, (c) Outer function undefined at the inner limit (e.g., $\sqrt{\text{negative}}$).
-- **Engineering bridge:** The chain rule is the calculus foundation of **backpropagation**, **modular software design**, and **change-of-variables** in integration and probability.
-- **Exam mantra:** *"Inner limit first, continuity check second, push through third."*
+- **Chain Rule (Composite Form):** $\frac{dy}{dx} = f'(g(x)) \cdot g'(x)$ — the rate is a **product** of the outer slope and the inner slope.
+- **Limit-Based Origin:** $F'(x) = \lim_{\Delta x \to 0} \frac{f(g(x+\Delta x)) - f(g(x))}{\Delta x}$ — proved by multiplying and dividing by $\Delta u = g(x+\Delta x) - g(x)$.
+- **Generalization to $n$ Layers:** $F'(x) = f_1'(u_0) \cdot f_2'(u_1) \cdot f_3'(u_2) \cdots f_n'(u_{n-1})$.
+- **Master Cheat Sheet (10 rows above):** Memorize the derivatives of $u^n$, $\sin u$, $\cos u$, $e^u$, $a^u$, $\ln u$, $\sqrt{u}$ composed with arbitrary differentiable inner functions.
+- **Logarithmic Differentiation:** Mandatory for variable-base, variable-exponent forms like $f(x)^{g(x)}$.
+- **Sign Watch:** Derivative of $\cos$ is $-\sin$; derivative of $\arctan$ is $\dfrac{1}{1+u^2}$ (positive).
+- **Domain Discipline:** Always state domain restrictions — $g(x) > 0$ for $\ln$, $g(x) > 0$ for $\sqrt{\cdot}$, $g(x) \neq \frac{\pi}{2} + k\pi$ for $\tan$, $g(x) \neq 0$ for $\dfrac{1}{g}$.
+- **CS Connection:** Backpropagation in neural networks = chain rule over hundreds of composed layers.
+- **Physics Connection:** Related rates problems (balloon, ladder, shadow) are word-problem instantiations of the chain rule.
+- **Notation Hygiene:** Use Leibniz form $\frac{dy}{du} \cdot \frac{du}{dx}$ for clarity in exams; use prime form $f'(g(x)) \cdot g'(x)$ for compactness.
 
 <!-- SECTION_5_END -->

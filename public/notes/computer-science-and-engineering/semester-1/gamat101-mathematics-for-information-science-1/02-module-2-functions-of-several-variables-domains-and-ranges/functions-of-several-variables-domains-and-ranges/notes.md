@@ -1,636 +1,565 @@
 # Functions of Several Variables: Domains and Ranges
 
 <!-- SECTION_1_START -->
+# Functions of Several Variables: Domains and Ranges
 
-# Functions of Several Variables — Domains and Ranges
+## 1.1 Formal Academic Definition
 
-> [!NOTE]
-> **KTU 2024 Scheme – GAMAT101 (Module 2)**
-> This topic forms the foundation for partial derivatives, gradient vectors, and multivariable optimization. Every problem in later modules starts by correctly identifying the **domain** of a function of two or more variables.
+A **function of several variables** is a mathematical mapping $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ that assigns to each ordered $n$-tuple $(x_1, x_2, \ldots, x_n) \in D$ a unique real number. For the case of two independent variables, we write:
 
-## 1.1 Formal Definition
+$$f : D \subseteq \mathbb{R}^2 \to \mathbb{R}, \quad (x, y) \mapsto f(x, y) = z$$
 
-A **real-valued function of $n$ real variables** is a rule $f$ that assigns to each ordered $n$-tuple $(x_1, x_2, \dots, x_n)$ in a set $D \subseteq \mathbb{R}^n$ exactly one real number in $\mathbb{R}$. Symbolically,
+The set $D$ is the **domain** of $f$, and the set of all output values
 
-$$f : D \subseteq \mathbb{R}^{n} \longrightarrow \mathbb{R}, \qquad (x_1, x_2, \dots, x_n) \longmapsto f(x_1, x_2, \dots, x_n).$$
+$$R = \{ z \in \mathbb{R} \mid z = f(x, y) \text{ for some } (x, y) \in D \}$$
 
-- The set $D$ is called the **domain** of $f$.
-- The **range** of $f$ is the set $\left\{\, f(x_1, \dots, x_n) \,\middle|\, (x_1, \dots, x_n) \in D \,\right\}$.
-- When $n = 2$, we write $f(x, y)$ and the domain is a subset of the $xy$-plane.
-- When $n = 3$, we write $f(x, y, z)$ and the domain is a subset of 3-D space.
+is the **range** (or image) of $f$.
 
 > [!IMPORTANT]
-> **Natural Domain vs. Restricted Domain**
-> - The **natural domain** of $f$ is the *largest* subset of $\mathbb{R}^n$ on which the defining formula makes sense (e.g., no division by zero, no logarithm of a non-positive number, no even root of a negative number).
-> - The **restricted domain** is a *specified subset* of the natural domain, often imposed by a physical or geometric constraint of the application.
+> **KTU 2024 Syllabus Highlight (GAMAT101 — Module 2):** A function of two variables $z = f(x, y)$ is treated as a **surface** in three-dimensional space $\mathbb{R}^3$. The domain $D$ is the projection of this surface onto the $xy$-plane.
 
-## 1.2 Conceptual Analogy
+## 1.2 Conceptual Analogy / Intuition
 
-Think of a **function of several variables** as a *black-box factory*:
+Imagine a **topographic map** of Kerala. Each point $(x, y)$ on the map represents a geographic location, and the height of the land at that point is $z = f(x, y)$ (the elevation above sea level).
 
-| Component | Mathematical Object | Analogy |
-|---|---|---|
-| $D \subset \mathbb{R}^{n}$ | Domain | The set of *feasible raw-material combinations* the factory accepts |
-| $(x_1, \dots, x_n) \in D$ | Input tuple | One specific shipment of materials, energy, and labor |
-| $f(x_1, \dots, x_n)$ | Output | The unique number of finished goods produced |
-| Range of $f$ | Set of outputs | The catalogue of all possible production levels |
+- The **domain** $D$ is the entire region of the map (Kerala's boundary) — i.e., where you are *allowed* to stand.
+- The **range** is the *set of all possible heights* you could measure across Kerala — from sea level ($z = 0$) up to the Anamudi peak ($z \approx 2695$ m).
+- Different formulas for $f$ give different "shapes" of terrain:
+  * $z = x^2 + y^2$ → a **bowl** (paraboloid) — only low or middle elevations exist; no negative heights.
+  * $z = x^2 - y^2$ → a **saddle** (pass) — heights can be positive, negative, or zero.
+  * $z = \sin(x)\cos(y)$ → a **wavy terrain** (gentle undulations) — bounded between $-1$ and $+1$.
 
-> A **computer vision** engineer evaluating a pixel's grayscale value as a function of its $(x, y)$ position needs to know *which* pixels are valid inputs (the **domain** = image region) and *what* intensities are produced (the **range** $\subset [0, 255]$).
+**Key Constants & Symbols** (used throughout this module):
 
-> [!TIP]
-> **Rule of Thumb for Domain Identification** — Apply these three checks:
-> 1. **Division by zero:** Denominator $\neq 0$.
-> 2. **Even roots:** Radicand $\geq 0$.
-> 3. **Logarithms:** Argument $> 0$ (strict).
-> Take the **intersection** of all valid regions.
+- $\mathbb{R}$ : the set of all real numbers
+- $\mathbb{R}^2$ : the $xy$-plane
+- $\mathbb{N}$ : the set of natural numbers
+- $\partial D$ : the **boundary** of the domain
+- $\text{int}(D)$ : the **interior** of the domain
 
-## 1.3 Geometric Intuition for $n = 2$
+> [!NOTE]
+> **Geometric Reading Rule:** In the KTU 2024 scheme, you are expected to visualize $f(x, y) = z$ as a **surface in $\mathbb{R}^3$**. The **domain** lies in $\mathbb{R}^2$ (the $xy$-plane) and the **range** lies on the $z$-axis (the vertical axis).
 
-A function $f(x, y)$ can be visualized as a **surface** in $\mathbb{R}^3$ sitting above its domain in the $xy$-plane. The domain is the *shadow* cast on the $xy$-plane; the range is the *set of heights* attained by the surface.
+## 1.3 Visualization with GeoGebra
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Paraboloid surface $z = x^2 + y^2$ with its circular level curves (domain = entire $\mathbb{R}^{2}$, range = $[0, \infty)$).
->
-> **Desmos 3-D Input Equations:**
-> * `z = x^2 + y^2`   *(surface)*
-> * `x^2 + y^2 = 1`   *(level curve for $z = 1$)*
-> * `x^2 + y^2 = 4`   *(level curve for $z = 4$)*
-> * `x^2 + y^2 = 9`   *(level curve for $z = 9$)*
->
-> **Visual Description:** A bowl-shaped paraboloid opens upward. Concentric circles in the $xy$-plane project to the surface, each circle at height $z = c$ corresponding to the level set $f(x, y) = c$. As $c$ grows, the circles expand, and the lowest point sits at the origin where $f(0, 0) = 0$.
+> **Concept:** Paraboloid surface $z = x^2 + y^2$ with shaded domain
+> **GeoGebra Input Equations:**
+> * `f(x, y) = x^2 + y^2`
+> * `Surface(f(x, y), x, -3, 3, y, -3, 3)`
+> * `Circle((0,0), 2)`  *(to indicate a circular domain $x^2 + y^2 \le 4$)*
+> **Visual Description:** The student should observe a bowl-shaped surface. The projection of the bowl's rim onto the $xy$-plane forms the circular domain $D = \{(x, y) : x^2 + y^2 \le 4\}$. The range is $0 \le z \le 4$.
+
+## 1.4 Classification of Domains
+
+A domain $D \subseteq \mathbb{R}^2$ is classified along two independent axes:
+
+| Property | Type | Definition | Example |
+|----------|------|------------|---------|
+| **Boundary-wise** | **Open** | $D$ contains no boundary point: $D \cap \partial D = \emptyset$ | $D = \{(x, y) : x^2 + y^2 < 4\}$ |
+| **Boundary-wise** | **Closed** | $D$ contains all its boundary points: $\partial D \subseteq D$ | $D = \{(x, y) : x^2 + y^2 \le 4\}$ |
+| **Size-wise** | **Bounded** | $D$ is enclosed within some disk of finite radius | $D = \{(x, y) : x^2 + y^2 \le 4\}$ |
+| **Size-wise** | **Unbounded** | $D$ extends to infinity in at least one direction | $D = \{(x, y) : x > 0\}$ |
+
+> [!TIP]
+> **Quick Memory Trick:** *"Open means you can walk in but the fence is not part of your land. Closed means the fence is yours."* A region can be **(open, bounded)**, **(open, unbounded)**, **(closed, bounded)** — but **NOT (closed, unbounded) and bounded simultaneously**. Closed + Unbounded *is* possible (e.g., the entire $xy$-plane is closed and unbounded).
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
+# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-# Deep Theoretical Analysis
+## 2.1 Strategy for Finding the Domain of $f(x, y)$
 
-## 2.1 Anatomy of a Function of Two Variables
+The domain is the set of all $(x, y) \in \mathbb{R}^2$ where the **arithmetic expression** is well-defined (i.e., no division by zero, no negative inside an even root, no logarithm of a non-positive number, etc.). For each elementary operation, apply the corresponding **existence condition**:
 
-For $f : D \subseteq \mathbb{R}^{2} \to \mathbb{R}$, we routinely classify domains as:
+| Sub-expression in $f(x,y)$ | Required Condition | Reason |
+|----------------------------|---------------------|--------|
+| $\dfrac{g(x,y)}{h(x,y)}$ | $h(x, y) \neq 0$ | Division by zero undefined |
+| $\sqrt[k]{g(x, y)}$ with $k$ even | $g(x, y) \ge 0$ | Even roots of negatives are not real |
+| $\ln(g(x, y))$ | $g(x, y) > 0$ | Logarithm defined only for positives |
+| $\arctan(g(x, y))$ | none (always defined) | $\arctan : \mathbb{R} \to (-\pi/2, \pi/2)$ |
+| $\arcsin(g(x, y))$ | $-1 \le g(x, y) \le 1$ | Inverse trig domain |
+| $e^{g(x, y)}$ | none (always defined) | Exponential domain is all $\mathbb{R}$ |
+| $\tan(g(x, y))$ | $g(x, y) \neq \dfrac{\pi}{2} + n\pi,\ n \in \mathbb{Z}$ | Tangent asymptotes |
 
-| Domain Type | Description | Example |
-|---|---|---|
-| **Open disk** | Interior of a circle | $\{(x, y) : x^{2} + y^{2} < 1\}$ |
-| **Closed disk** | Disk plus its boundary | $\{(x, y) : x^{2} + y^{2} \leq 1\}$ |
-| **Open region** | Connected open set | $\{(x, y) : x > y\}$ |
-| **Closed region** | Region plus its boundary | $\{(x, y) : x \geq 0,\ y \geq 0\}$ |
-| **Unbounded** | Extends to infinity | $\{(x, y) : x > 0\}$ |
-| **Bounded** | Contained in some large ball | $\{(x, y) : x^{2} + y^{2} \leq 25\}$ |
+The **final domain** is the **intersection** of all individual conditions.
 
-> [!IMPORTANT]
-> **Level Curves and Level Surfaces**
-> The **level curve** (for $n=2$) or **level surface** (for $n=3$) of $f$ at level $c$ is the set
-> $$\{(x, y) \in D \mid f(x, y) = c\}.$$
-> Level sets are crucial for *computer-graphics contour plots*, *topographic maps*, and *isoclines* in machine-learning loss landscapes.
+## 2.2 Strategy for Finding the Range of $f(x, y)$
 
-## 2.2 Standard Constraints Encountered in KTU Problems
+There is no single universal algorithm; KTU 2024 expects three standard techniques:
 
-When asked *"find the domain"*, mechanically apply the rules below and intersect the resulting sets.
+### Technique 1 — Direct Analysis (for simple functions)
+- Identify the minimum and maximum of $f$ over its domain.
+- E.g., for $f(x, y) = x^2 + y^2$, the minimum is $0$ (at the origin) and the function grows without bound, so the range is $[0, \infty)$.
 
-1. **Rational functions** $f(x, y) = \dfrac{P(x, y)}{Q(x, y)}$ require $Q(x, y) \neq 0$.
-2. **Even radicals** $f(x, y) = \sqrt[n]{g(x, y)}$ with $n$ even require $g(x, y) \geq 0$.
-3. **Logarithms** $f(x, y) = \log_a(g(x, y))$ require $g(x, y) > 0$.
-4. **Inverse trig** $f(x, y) = \arcsin(g(x, y))$ requires $-1 \leq g(x, y) \leq 1$.
-5. **Tangent** $f(x, y) = \tan(g(x, y))$ requires $g(x, y) \neq \dfrac{\pi}{2} + k\pi$.
+### Technique 2 — Cross-Section Method (Slice and Trace)
+- Fix $y = c$ to obtain $g_c(x) = f(x, c)$, find its range as a function of $x$.
+- Repeat for arbitrary $c$, then take the union over all $c$.
+- E.g., for $f(x, y) = x^2 + y^2$, fix $y = c$: $g_c(x) = x^2 + c^2 \ge c^2$. Union over all $c \in \mathbb{R}$ gives $[0, \infty)$.
 
-## 2.3 Determining the Range
+### Technique 3 — Level Set Method (Inverse Problem)
+- For a target value $z_0$, ask: does the equation $f(x, y) = z_0$ have at least one solution in $D$?
+- If yes, $z_0$ is in the range. If no, it is not.
+- The level set $f(x, y) = c$ is a **curve** in the $xy$-plane (for 2 variables) or a **surface** in $\mathbb{R}^3$ (for 3 variables).
 
-Common techniques used in KTU university papers to pin down the range:
+## 2.3 KTU Formula Sheet / Cheat Sheet
 
-| Technique | When to Use | Example |
-|---|---|---|
-| **Complete the square** | Sum of squares | $x^{2} + (y - 1)^{2} \geq 0$ |
-| **AM-GM inequality** | Symmetric expressions | $x^{2} + \dfrac{1}{x^{2}} \geq 2$ |
-| **Boundedness of $\sin$, $\cos$** | Trig functions | $-1 \leq \sin x \leq 1$ |
-| **Monotonicity** | One-to-one maps on a domain | $e^{g(x,y)} > 0$ |
-| **Substitution $r = \sqrt{x^{2}+y^{2}}$** | Radial symmetry | Reduces to a 1-D problem |
+| Function $f(x, y)$ | Domain $D$ | Range $R$ | Geometry in $\mathbb{R}^3$ |
+|--------------------|------------|-----------|----------------------------|
+| $x^2 + y^2$ | $\mathbb{R}^2$ | $[0, \infty)$ | Circular paraboloid (bowl) |
+| $\sqrt{x^2 + y^2}$ | $\mathbb{R}^2$ | $[0, \infty)$ | Upper nappe of a cone |
+| $x^2 - y^2$ | $\mathbb{R}^2$ | $\mathbb{R}$ (all reals) | Hyperbolic paraboloid (saddle) |
+| $\sin(x) + \cos(y)$ | $\mathbb{R}^2$ | $[-2, 2]$ | Wavy undulating surface |
+| $\dfrac{1}{x^2 + y^2}$ | $\mathbb{R}^2 \setminus \{(0,0)\}$ | $(0, \infty)$ | Surface with vertical spike at origin |
+| $\ln(x + y)$ | $\{(x, y) : x + y > 0\}$ | $\mathbb{R}$ | Logarithmic "cliff" along line $x + y = 0$ |
+| $\sqrt{9 - x^2 - y^2}$ | $\{(x, y) : x^2 + y^2 \le 9\}$ | $[0, 3]$ | Upper hemisphere of radius 3 |
+| $\dfrac{1}{\sqrt{4 - x^2 - y^2}}$ | $\{(x, y) : x^2 + y^2 < 4\}$ | $[1/2, \infty)$ | Inverted dome with vertical asymptote |
 
-## 2.4 KTU High-Yield Formula Sheet
+> [!NOTE]
+> **Engineering Utility:** Domain-range analysis of several variables is foundational for **machine learning loss surfaces**, **image processing filters** (2-D convolution kernels), **finite element meshes** in CAD, and **error analysis in sensor networks**. Identifying a *bounded closed domain* guarantees existence of maxima/minima (Extreme Value Theorem) — critical in optimization.
 
-> [!IMPORTANT]
-> Use $\vert \cdot \vert$ (typeset as `\vert`) — never the literal pipe `|` — inside markdown tables to avoid breaking the table syntax.
+## 2.4 Level Curves and Level Surfaces
 
-| \# | Function Form | Domain Restriction | Resulting Domain in $\mathbb{R}^{2}$ |
-|---|---|---|---|
-| 1 | $\dfrac{1}{g(x, y)}$ | $g(x, y) \neq 0$ | $\mathbb{R}^{2} \setminus \{g = 0\}$ |
-| 2 | $\sqrt{g(x, y)}$ | $g(x, y) \geq 0$ | $\{g \geq 0\}$ |
-| 3 | $\ln \vert g(x, y) \vert$ | $g(x, y) \neq 0$ | $\mathbb{R}^{2} \setminus \{g = 0\}$ |
-| 4 | $\ln g(x, y)$ | $g(x, y) > 0$ | $\{g > 0\}$ |
-| 5 | $\arcsin g(x, y)$ | $\vert g \vert \leq 1$ | $\{\vert g \vert \leq 1\}$ |
-| 6 | $(g(x, y))^{p/q}$, $q$ even | $g \geq 0$ | $\{g \geq 0\}$ |
-| 7 | $e^{g(x, y)}$ | None | $\mathbb{R}^{2}$ |
-| 8 | $\sin g(x, y)$ / $\cos g(x, y)$ | None | $\mathbb{R}^{2}$ |
-| 9 | Polynomial $P(x, y)$ | None | $\mathbb{R}^{2}$ |
+A **level curve** of $f(x, y)$ at height $c$ is the set
 
-**Real-World Utility.** In **machine learning**, the loss function $J(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n}\left(y_{i} - \mathbf{w}^{\top}\mathbf{x}_{i}\right)^{2}$ is a polynomial in the weight vector $\mathbf{w} \in \mathbb{R}^{d}$ — its domain is *all of* $\mathbb{R}^{d}$ but its range is $[0, \infty)$. Identifying this range is the first step in *convergence analysis* of gradient descent.
+$$L_c = \{ (x, y) \in D : f(x, y) = c \}$$
+
+These are the **contour lines** you see on a topographic map. In $\mathbb{R}^3$, each level curve corresponds to the **horizontal slice** $z = c$ intersecting the surface $z = f(x, y)$. KTU frequently asks to sketch level curves for $c = -2, -1, 0, 1, 2$.
+
+For three variables $f(x, y, z)$, a **level surface** $f(x, y, z) = c$ is a 2-D surface in $\mathbb{R}^3$ (e.g., spheres, ellipsoids, planes, hyperboloids).
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
+# Step-by-Step Derivations & Worked Examples
 
-# Step-by-Step Derivations & Symbolic Implementation
+## 3.1 Example 1 — Domain of a Rational-Radical Function
 
-> [!WARNING]
-> The following derivations are written **in full**. Do not skim — every line is a potential valuation step in the KTU answer key.
+**Problem.** Find the domain of $f(x, y) = \dfrac{\sqrt{x - y}}{x^2 - y^2}$.
 
----
+**Step 1 — Identify sub-expressions and apply conditions:**
 
-## 3.1 Worked Example A — Disk-Shaped Domain
+- Numerator contains $\sqrt{x - y}$ → requires $x - y \ge 0 \;\Rightarrow\; x \ge y$.
+- Denominator $x^2 - y^2 = (x - y)(x + y)$ must not be zero.
 
-**Find the domain and range of** $f(x, y) = \sqrt{1 - x^{2} - y^{2}}$.
+**Step 2 — Combine conditions:**
 
-### Step 1 — Identify the constraint
+The condition $x - y \ge 0$ must hold, AND $(x - y)(x + y) \neq 0$.
 
-The expression under the even root must be non-negative:
+**Step 3 — Split into cases:**
 
-$$1 - x^{2} - y^{2} \geq 0.$$
+- **Case A:** $x - y > 0$. Then $x + y \neq 0$ must also hold. So $D_A = \{ (x, y) : x > y \text{ and } x + y \neq 0 \}$.
+- **Case B:** $x - y = 0$. The numerator is $0$, giving $f = 0 / 0$, which is **undefined**. So $x = y$ is **excluded**.
 
-### Step 2 — Solve the inequality
+**Step 4 — Final answer (clean form):**
 
-Rearrange to expose a familiar geometric form:
+$$D = \{ (x, y) \in \mathbb{R}^2 : x > y \} \setminus \{ (x, y) : x + y = 0 \}$$
 
-$$x^{2} + y^{2} \leq 1.$$
+Equivalently, the open half-plane $x > y$ with the line $x + y = 0$ removed. The line $x = y$ is not even part of the half-plane, so the simplified domain is:
 
-### Step 3 — Interpret geometrically
+$$\boxed{D = \{ (x, y) : x > y,\ x + y \neq 0 \}}$$
 
-This is the **closed unit disk** in the $xy$-plane, including the boundary circle of radius **1**.
+## 3.2 Example 2 — Range of $f(x, y) = x^2 + y^2$
 
-$$\boxed{\,D = \{(x, y) \in \mathbb{R}^{2} : x^{2} + y^{2} \leq 1\}\,}$$
+**Step 1 — Observe the lower bound:** $x^2 \ge 0$ and $y^2 \ge 0$, so $f(x, y) = x^2 + y^2 \ge 0$ with equality at $(0, 0)$.
 
-### Step 4 — Determine the range
+**Step 2 — Show unboundedness:** For any $M > 0$, choose $(x, y) = (\sqrt{M}, 0)$. Then $f(\sqrt{M}, 0) = M$. So $f$ attains every non-negative real value.
 
-Because $0 \leq x^{2} + y^{2} \leq 1$ on $D$,
+**Step 3 — Conclusion:**
 
-$$0 \leq 1 - x^{2} - y^{2} \leq 1 \quad\Longrightarrow\quad 0 \leq f(x, y) \leq 1.$$
+$$\boxed{R = [0, \infty)}$$
 
-$$\boxed{\,\text{Range}(f) = [0, 1]\,}$$
+## 3.3 Example 3 — Domain of $f(x, y) = \dfrac{1}{\sqrt{4 - x^2 - y^2}} + \ln(x^2 + y^2 - 1)$
 
-**Valuation Key (per KTU 2019 paper pattern):**
-* Stating the inequality constraint: **2 Marks**.
-* Recognising the geometric disk: **1 Mark**.
-* Deriving the range via bounds: **1 Mark**.
+**Step 1 — Condition from the square root:** $4 - x^2 - y^2 > 0 \;\Rightarrow\; x^2 + y^2 < 4$ (strict because the denominator cannot be zero).
 
----
+**Step 2 — Condition from the logarithm:** $x^2 + y^2 - 1 > 0 \;\Rightarrow\; x^2 + y^2 > 1$.
 
-## 3.2 Worked Example B — Quotient Excluding a Line
+**Step 3 — Intersect both conditions:**
 
-**Find the domain of** $f(x, y) = \dfrac{x + y}{x - y}$.
+$$1 < x^2 + y^2 < 4$$
 
-### Step 1 — Constraint
+**Step 4 — Geometric description:** This is the **open annulus** (washer-shaped region) centered at the origin, with inner radius $1$ and outer radius $2$. Both bounding circles are **excluded**.
 
-The denominator must not vanish:
+$$\boxed{D = \{ (x, y) : 1 < x^2 + y^2 < 4 \}}$$
 
-$$x - y \neq 0 \quad\Longrightarrow\quad x \neq y.$$
+## 3.4 Example 4 — Range via Level Set Analysis
 
-### Step 2 — Express the domain
+**Problem.** Find the range of $f(x, y) = \dfrac{xy}{x^2 + y^2}$ for $(x, y) \neq (0, 0)$.
 
-The set $\{(x, y) : x = y\}$ is a straight line through the origin with slope **1**. Removing it from $\mathbb{R}^{2}$ leaves two open half-planes.
+**Step 1 — Try a cross-section.** Set $y = tx$ with $t \in \mathbb{R}$ and $x \neq 0$:
 
-$$\boxed{\,D = \mathbb{R}^{2} \setminus \{(x, y) \in \mathbb{R}^{2} : x = y\}\,}$$
+$$f(x, tx) = \frac{x \cdot tx}{x^2 + t^2 x^2} = \frac{tx^2}{x^2(1 + t^2)} = \frac{t}{1 + t^2}$$
 
----
+**Step 2 — Find the range of the single-variable function $g(t) = \dfrac{t}{1 + t^2}$:**
 
-## 3.3 Worked Example C — Logarithm Half-Plane
+Compute the derivative:
 
-**Find the domain of** $f(x, y) = \ln(x + y - 1)$.
+$$g'(t) = \frac{(1 + t^2) - t(2t)}{(1 + t^2)^2} = \frac{1 - t^2}{(1 + t^2)^2}$$
 
-### Step 1 — Constraint
+Set $g'(t) = 0$ to find critical points: $1 - t^2 = 0 \;\Rightarrow\; t = \pm 1$.
 
-The argument of $\ln$ must be strictly positive:
+Evaluate:
+$$g(1) = \frac{1}{2}, \qquad g(-1) = -\frac{1}{2}$$
 
-$$x + y - 1 > 0 \quad\Longrightarrow\quad x + y > 1.$$
+As $t \to \pm \infty$, $g(t) \to 0$. So the range of $g$ is $\left[-\dfrac{1}{2}, \dfrac{1}{2}\right]$.
 
-### Step 2 — Geometric form
+**Step 3 — Conclusion:** Since every value in this interval is achieved, and conversely (by reversing the cross-section), the range of $f$ is the same:
 
-This is the open half-plane **above** the line $x + y = 1$ (intercept form $\frac{x}{1} + \frac{y}{1} = 1$).
+$$\boxed{R = \left[-\frac{1}{2},\ \frac{1}{2}\right]}$$
 
-$$\boxed{\,D = \{(x, y) \in \mathbb{R}^{2} : x + y > 1\}\,}$$
+> [!IMPORTANT]
+> **Observation:** The value $0$ is *included* because at $(x, 0)$ with $x \neq 0$, we have $f(x, 0) = 0$. The endpoints $\pm 1/2$ are achieved at $(x, y) = (1, 1)$ and $(1, -1)$ respectively.
 
----
+## 3.5 Example 5 — Python Implementation for Domain Visualization
 
-## 3.4 Worked Example D — Compound Constraints (Annular Sector)
-
-**Find the domain of**
-$$f(x, y) = \sqrt{4 - x^{2} - y^{2}} \;+\; \ln(x^{2} + y^{2} - 1).$$
-
-### Step 1 — Apply the two constraints simultaneously
-
-**Constraint 1 (even root):** $4 - x^{2} - y^{2} \geq 0 \Rightarrow x^{2} + y^{2} \leq 4.$
-
-**Constraint 2 (logarithm):** $x^{2} + y^{2} - 1 > 0 \Rightarrow x^{2} + y^{2} > 1.$
-
-### Step 2 — Take the intersection
-
-Combining:
-
-$$1 < x^{2} + y^{2} \leq 4.$$
-
-### Step 3 — Geometric interpretation
-
-This is the **closed annular region** between two concentric circles of radii 1 and 2, with the *inner* circle strictly excluded.
-
-$$\boxed{\,D = \{(x, y) \in \mathbb{R}^{2} : 1 < x^{2} + y^{2} \leq 4\}\,}$$
-
----
-
-## 3.5 Worked Example E — Range of a Bounded Function
-
-**Find the range of** $f(x, y) = \dfrac{1}{x^{2} + y^{2} + 1}$.
-
-### Step 1 — Establish bounds on the denominator
-
-For all $(x, y) \in \mathbb{R}^{2}$,
-
-$$0 \leq x^{2} + y^{2} < \infty \quad\Longrightarrow\quad 1 \leq x^{2} + y^{2} + 1 < \infty.$$
-
-### Step 2 — Invert the inequality (reverse direction!)
-
-Since each term is positive, the function is strictly decreasing in $x^{2}+y^{2}$:
-
-$$0 < \frac{1}{x^{2} + y^{2} + 1} \leq \frac{1}{1} = 1.$$
-
-### Step 3 — State the range
-
-$$\boxed{\,\text{Range}(f) = (0, 1]\,}$$
-
----
-
-## 3.6 Worked Example F — Range via Complete the Square
-
-**Find the range of** $f(x, y) = (x - 1)^{2} + (y + 2)^{2} + 3$.
-
-### Step 1 — Recognise the form
-
-The sum of two squares is $\geq 0$:
-
-$$(x - 1)^{2} \geq 0,\qquad (y + 2)^{2} \geq 0.$$
-
-### Step 2 — Lower bound
-
-$$f(x, y) \geq 0 + 0 + 3 = 3,$$
-
-with equality attained at $(1, -2)$.
-
-### Step 3 — Upper bound
-
-As $x$ or $y$ tends to $\pm \infty$, the squares grow without bound, so $f \to \infty$.
-
-$$\boxed{\,\text{Range}(f) = [3, \infty)\,}$$
-
----
-
-## 3.7 Python Implementation — Domain Classifier & Range Visualiser
-
-The following script is fully runnable in any Python 3.9+ environment with `numpy` and `matplotlib`. It visualises a chosen $f(x, y)$ over a region of the $xy$-plane and prints the inferred range bounds.
+For the computer-science track of GAMAT101, here is a fully operational Python script that visualizes the domain of $f(x, y) = \ln(x) \cdot \ln(y)$:
 
 ```python
-"""
-Domain and Range visualiser for a function of two variables.
-Strictly typed. Boundary checks included. Error logging enabled.
-"""
-from __future__ import annotations
-
-import logging
 import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D  # noqa: F401  (registers 3-D projection)
+from matplotlib.colors import LogNorm
 
-# ----------------------------------------------------------------------
-# Configure error logging (mandatory for production-style code)
-# ----------------------------------------------------------------------
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s",
-)
-logger = logging.getLogger(__name__)
+# --- Configuration ---------------------------------------------------------
+X_MIN, X_MAX = 0.01, 5.0   # x > 0 strictly
+Y_MIN, Y_MAX = 0.01, 5.0   # y > 0 strictly
+N = 600                    # grid resolution
 
+# --- Build the meshgrid ----------------------------------------------------
+x = np.linspace(X_MIN, X_MAX, N)
+y = np.linspace(Y_MIN, Y_MAX, N)
+X, Y = np.meshgrid(x, y)
 
-# ----------------------------------------------------------------------
-# Function definition (strict, defensive)
-# ----------------------------------------------------------------------
-def f_xy(x: np.ndarray, y: np.ndarray) -> np.ndarray:
-    """
-    Compute f(x, y) = sqrt(1 - x^2 - y^2) over a meshgrid.
-    Returns NaN outside the natural domain (the closed unit disk).
-    """
-    radicand: np.ndarray = 1.0 - x ** 2 - y ** 2
-    output: np.ndarray = np.where(radicand >= 0, np.sqrt(radicand), np.nan)
-    return output
+# --- Compute f(x, y) safely ------------------------------------------------
+# f(x, y) = ln(x) * ln(y);  valid only for x > 0 and y > 0
+with np.errstate(divide="ignore", invalid="ignore"):
+    Z = np.log(X) * np.log(Y)
 
+# --- Filter NaN / Inf (shouldn't occur here since x, y > 0) ---------------
+Z = np.where(np.isfinite(Z), Z, np.nan)
 
-def classify_domain(
-    x_min: float, x_max: float, y_min: float, y_max: float, samples: int = 400
-) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    """
-    Build a meshgrid and return (X, Y, Z, mask) where mask is True
-    on the natural domain.
-    """
-    if samples <= 0:
-        raise ValueError("samples must be a positive integer.")
-
-    x = np.linspace(x_min, x_max, samples)
-    y = np.linspace(y_min, y_max, samples)
-    X, Y = np.meshgrid(x, y)
-    Z = f_xy(X, Y)
-    mask: np.ndarray = ~np.isnan(Z)
-    logger.info("Domain coverage: %.2f%%", 100.0 * mask.mean())
-    return X, Y, Z, mask
-
-
-def infer_range(Z: np.ndarray) -> tuple[float, float]:
-    """Return (min, max) of f over the natural domain."""
-    finite_vals: np.ndarray = Z[np.isfinite(Z)]
-    if finite_vals.size == 0:
-        raise RuntimeError("No finite function values — domain is empty.")
-    return float(finite_vals.min()), float(finite_vals.max())
-
-
-# ----------------------------------------------------------------------
-# Main
-# ----------------------------------------------------------------------
-def main() -> None:
-    X, Y, Z, mask = classify_domain(-1.5, 1.5, -1.5, 1.5, samples=400)
-    lo, hi = infer_range(Z)
-    logger.info("Inferred range: [%.4f, %.4f]", lo, hi)
-
-    # ---- Surface plot ----
-    fig = plt.figure(figsize=(12, 5))
-
-    ax1 = fig.add_subplot(1, 2, 1, projection="3d")
-    ax1.plot_surface(X, Y, Z, cmap="viridis", edgecolor="none", alpha=0.9)
-    ax1.set_title("Surface: f(x,y) = sqrt(1 - x^2 - y^2)")
-    ax1.set_xlabel("x")
-    ax1.set_ylabel("y")
-    ax1.set_zlabel("f(x, y)")
-
-    # ---- Domain footprint ----
-    ax2 = fig.add_subplot(1, 2, 2)
-    ax2.contourf(X, Y, mask.astype(float), levels=[0, 0.5, 1], colors=["white", "#1f77b4"])
-    ax2.set_aspect("equal")
-    ax2.set_title("Domain in the xy-plane (closed unit disk)")
-    ax2.set_xlabel("x")
-    ax2.set_ylabel("y")
-
-    plt.tight_layout()
-    plt.show()
-
-
-if __name__ == "__main__":
-    main()
+# --- Plot ------------------------------------------------------------------
+fig, ax = plt.subplots(figsize=(7, 6))
+mask = ~np.isnan(Z)
+plot = ax.contourf(X, Y, Z, levels=20, cmap="viridis", norm=LogNorm())
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+ax.set_title("Domain of f(x, y) = ln(x) * ln(y) :  (0, inf) x (0, inf)")
+ax.axhline(0, color="red", linewidth=1.2, label="y = 0  (excluded)")
+ax.axvline(0, color="red", linewidth=1.2, label="x = 0  (excluded)")
+ax.legend(loc="lower right")
+fig.colorbar(plot, ax=ax, label="f(x, y)")
+plt.tight_layout()
+plt.show()
 ```
 
-**Expected Output (truncated):**
+**Boundary-Check Logic Explained:**
 
-```
-2024-... | INFO | Domain coverage: 78.54%
-2024-... | INFO | Inferred range: [0.0000, 1.0000]
-```
-
-The numerical coverage $78.54\% \approx \pi/4$ corresponds to the *area ratio* of the unit disk to the bounding $3 \times 3$ square, confirming the geometric derivation of Section 3.1.
+- The strict inequalities $x > 0$ and $y > 0$ come from the logarithm's domain restriction.
+- The lines $x = 0$ and $y = 0$ are **boundary lines** that must be drawn (red lines in the plot) but are **not part of the domain** — they are excluded because $\ln(0)$ is $-\infty$ (undefined).
+- Hence the domain $D = (0, \infty) \times (0, \infty)$ is **open and unbounded**.
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-
 # Structural Diagrams & Schematics
 
-## 4.1 Block Diagram — Anatomy of a Function of Two Variables
-
-```mermaid
-flowchart LR
-    A["Input Space R^2"] --> B["Domain D subset R^2"]
-    B --> C["Defining Formula f(x,y)"]
-    C --> D["Codomain R"]
-    D --> E["Range subset R"]
-    B -.sketch.-> F["Open region / disk / half-plane / annulus"]
-    E -.sketch.-> G["Interval: open, closed, half-open, unbounded"]
-```
-
-## 4.2 Sequential Decision Topology — Domain Identification Algorithm
+## 4.1 Mermaid Flow — Algorithm for Finding the Domain
 
 ```mermaid
 flowchart TD
-    Start(["Receive f(x,y)"]) --> Q1{"Contains division?"}
-    Q1 -- Yes --> A1["List denominator g(x,y)"]
-    A1 --> C1["Constraint: g != 0"]
-    Q1 -- No --> Q2{"Contains even root?"}
-    C1 --> Q2
-    Q2 -- Yes --> A2["List radicand h(x,y)"]
-    A2 --> C2["Constraint: h >= 0"]
-    Q2 -- No --> Q3{"Contains logarithm?"}
-    C2 --> Q3
-    Q3 -- Yes --> A3["List argument k(x,y)"]
-    A3 --> C3["Constraint: k > 0"]
-    Q3 -- No --> Q4{"Contains arcsin / arccos?"}
-    C3 --> Q4
-    Q4 -- Yes --> C4["Constraint: |m| <= 1"]
-    Q4 -- No --> Done["Domain = R^2"]
-    C4 --> Intersect["Intersect ALL constraints"]
-    Intersect --> Plot["Sketch region in xy-plane"]
-    Plot --> Out(["State D and Range f"])
+    A[Start: Given f of x, y] --> B[Parse the Expression]
+    B --> C{Contains Fraction?}
+    C -- Yes --> C1[Set denominator ≠ 0]
+    C -- No --> D{Contains Even Root?}
+    C1 --> D
+    D -- Yes --> D1[Set radicand ≥ 0]
+    D -- No --> E{Contains Logarithm?}
+    D1 --> E
+    E -- Yes --> E1[Set argument > 0]
+    E -- No --> F{Contains Inverse Trig?}
+    E1 --> F
+    F -- Yes --> F1[Apply arctan, arcsin, arccos domain rules]
+    F -- No --> G[No restriction: all R^2]
+    F1 --> H[Collect All Conditions]
+    G --> H
+    H --> I[Intersect All Conditions]
+    I --> J[Describe Domain Geometrically]
+    J --> K[End]
+
+    stepA[Start: Given f of x, y]:::start
+    stepK[End: Final Domain D]:::end
+    classDef start fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+    classDef end fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1
 ```
 
-## 4.3 Modular Subgraphs — Types of 2-D Domains
-
-```mermaid
-flowchart TB
-    subgraph S1 ["UNBOUNDED DOMAINS"]
-        S1A["Entire plane R^2"]
-        S1B["Half-plane e.g. x + y > 1"]
-        S1C["Quadrant e.g. x > 0, y > 0"]
-    end
-    subgraph S2 ["BOUNDED DOMAINS"]
-        S2A["Open disk x^2 + y^2 < r^2"]
-        S2B["Closed disk x^2 + y^2 <= r^2"]
-        S2C["Rectangle e.g. 0 <= x <= a, 0 <= y <= b"]
-    end
-    subgraph S3 ["DISCONNECTED / PARTIAL DOMAINS"]
-        S3A["Plane minus a line: R^2 \ L"]
-        S3B["Annulus 1 < x^2 + y^2 <= 4"]
-        S3C["Plane minus a point: R^2 \ (a,b)"]
-    end
-    S1 --> Summary["Classify by Open/Closed, Bounded/Unbounded"]
-    S2 --> Summary
-    S3 --> Summary
-```
-
-## 4.4 Geometric Correspondence — Domain, Surface, Range
+## 4.2 Mermaid Block Diagram — Topological Classification of Domains
 
 ```mermaid
 flowchart LR
-    XY["Domain D in xy-plane"] -- "lifts to" --> S["Surface z = f(x,y)"]
-    S -- "vertical projection" --> R["Range on z-axis"]
-    XY -- "level curves f = c" --> LC["Concentric / parallel level sets"]
-    LC -- "stack" --> S
+    subgraph SG1[BOUNDARY CLASSIFICATION]
+        A1[Domain D] --> A2{Contains all boundary points?}
+        A2 -- Yes --> A3[CLOSED Domain]
+        A2 -- No --> A4[OPEN Domain]
+    end
+
+    subgraph SG2[EXTENT CLASSIFICATION]
+        B1[Domain D] --> B2{Enclosed in a finite disk?}
+        B2 -- Yes --> B3[BOUNDED Domain]
+        B2 -- No --> B4[UNBOUNDED Domain]
+    end
+
+    subgraph SG3[COMBINED TYPES]
+        C1[Open + Bounded: e.g., interior of a circle]
+        C2[Open + Unbounded: e.g., upper half-plane]
+        C3[Closed + Bounded: e.g., filled disk]
+        C4[Closed + Unbounded: e.g., whole R^2 or closed half-plane]
+    end
+
+    A3 --> C3
+    A3 --> C4
+    A4 --> C1
+    A4 --> C2
+    B3 --> C1
+    B3 --> C3
+    B4 --> C2
+    B4 --> C4
 ```
 
-> [!TIP]
-> **Mermaid Node-Naming Rule Used:** Every identifier above is alphanumeric (e.g., `Start`, `Q1`, `S1A`). No reserved keyword (`end`, `subgraph`, `graph`, `style`) is used as a standalone node label. All labels with special characters or mathematical symbols are wrapped in double quotes.
+## 4.3 Sequential Processing Topology — Range Determination Pipeline
+
+```mermaid
+flowchart TD
+    R1[Step 1: Identify Symmetries and Special Values] --> R2[Step 2: Compute Critical Points]
+    R2 --> R3[Step 3: Apply Cross Section Method]
+    R3 --> R4[Step 4: Apply Level Set Method]
+    R4 --> R5[Step 5: Combine Bounds and Asymptotes]
+    R5 --> R6[Step 6: Verify with Boundary Behavior]
+    R6 --> R7[Final Range R]
+
+    styleA[Step 1: Identify Symmetries and Special Values]:::proc
+    styleB[Step 2: Compute Critical Points]:::proc
+    styleC[Step 3: Apply Cross Section Method]:::proc
+    styleD[Step 4: Apply Level Set Method]:::proc
+    styleE[Step 5: Combine Bounds and Asymptotes]:::proc
+    styleF[Step 6: Verify with Boundary Behavior]:::proc
+    styleG[Final Range R]:::final
+
+    classDef proc fill:#fff8e1,stroke:#f57c00,stroke-width:1.5px,color:#e65100
+    classDef final fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#4a148c
+```
+
+## 4.4 Matrix — Common Domains at a Glance
+
+| Sub-expression in $f$ | Constraint Equation | Domain Boundary Type | Sample Region Shape |
+|------------------------|---------------------|----------------------|---------------------|
+| $x + y$ | All of $\mathbb{R}^2$ | None | Whole $xy$-plane |
+| $x^2 + y^2 - 4$ | $x^2 + y^2 \ge 4$ | Closed (includes circle of radius 2) | Exterior of a disk |
+| $\dfrac{1}{x^2 + y^2 - 1}$ | $x^2 + y^2 \neq 1$ | Open (excludes unit circle) | $\mathbb{R}^2$ minus a circle |
+| $\sqrt{1 - x^2 - y^2}$ | $x^2 + y^2 \le 1$ | Closed (includes unit disk) | Unit disk |
+| $\ln(x^2 + y^2)$ | $x^2 + y^2 > 0$ | Open (excludes origin) | $\mathbb{R}^2$ minus a point |
+| $\arcsin(x^2 + y^2)$ | $0 \le x^2 + y^2 \le 1$ | Closed (includes boundary) | Closed unit disk |
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
+# KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-# KTU 2024 Scheme Examination Question Bank
+## 5.1 Part A — Short Answer Questions (3 Marks Each)
 
-> [!NOTE]
-> **Mapping legend.** *CO* = Course Outcome, *RBT* = Revised Bloom's Taxonomy level (Remember / Understand / Apply / Analyse / Evaluate / Create). Each sub-question carries a simulated valuation key.
+### Question A1
+**[KTU University Exam — July 2024]**
+Define the *domain* and *range* of a function of two variables $z = f(x, y)$. Illustrate with the example $f(x, y) = \sqrt{1 - x^2 - y^2}$.
 
----
-
-## Part A — Short-Answer Questions (3 Marks each)
-
-### Q1.  `[KTU University Exam — July 2023]`  **\[CO1, Remember]**
-**Define the natural domain of a function of two real variables. Illustrate with one example.**
+**Mapped CO:** CO1 | **RBT Level:** Remember
 
 **Model Answer (3 Marks):**
-The *natural domain* of a function $f(x, y)$ is the largest subset of $\mathbb{R}^{2}$ on which the rule $f$ produces a well-defined real number, *without any extra restriction imposed by the problem statement*. It is obtained by enforcing the standard arithmetic constraints: denominators $\neq 0$, even-root radicands $\geq 0$, and logarithmic arguments $> 0$.
+The **domain** $D$ of $f$ is the set of all input pairs $(x, y) \in \mathbb{R}^2$ for which $f(x, y)$ is defined as a real number. The **range** $R$ is the set of all output values $\{z : z = f(x, y) \text{ for some } (x, y) \in D\}$.
 
-*Example:* For $f(x, y) = \dfrac{1}{x - y}$, the natural domain is
-$$D = \{(x, y) \in \mathbb{R}^{2} \mid x \neq y\},$$
-i.e., the plane with the line $y = x$ removed. *(Valuation: Definition 2 marks, Example 1 mark.)*
+For $f(x, y) = \sqrt{1 - x^2 - y^2}$:
+- **Domain:** $1 - x^2 - y^2 \ge 0 \;\Rightarrow\; D = \{(x, y) : x^2 + y^2 \le 1\}$ — the closed unit disk.
+- **Range:** The expression under the root is at most $1$ (at the origin) and at least $0$ (on the boundary circle). So $R = [0, 1]$.
+
+Geometrically, this is the **upper hemisphere** of radius 1, with $z \ge 0$. **[1 Mark for definition, 1 Mark for domain, 1 Mark for range.]**
 
 ---
 
-### Q2.  `[KTU University Exam — Dec 2022]`  **\[CO1, Understand]**
-**Determine the domain of** $f(x, y) = \sqrt{x - y}$.
+### Question A2
+**[KTU University Exam — Dec 2023]**
+State three conditions that commonly restrict the domain of a real-valued function $f(x, y)$, with one example each.
+
+**Mapped CO:** CO1 | **RBT Level:** Understand
 
 **Model Answer (3 Marks):**
-The radicand must be non-negative:
+1. **Denominator restriction:** $h(x, y) \neq 0$. Example: $f(x, y) = \dfrac{1}{x - y}$ requires $x \neq y$.
+2. **Even-root restriction:** $g(x, y) \ge 0$. Example: $f(x, y) = \sqrt{x + y}$ requires $x + y \ge 0$.
+3. **Logarithm restriction:** $g(x, y) > 0$. Example: $f(x, y) = \ln(x^2 + y^2 - 1)$ requires $x^2 + y^2 > 1$.
 
-$$x - y \geq 0 \quad\Longleftrightarrow\quad y \leq x.$$
-
-The domain is the **closed half-plane on and below** the line $y = x$:
-
-$$D = \{(x, y) \in \mathbb{R}^{2} \mid y \leq x\}.$$
-
-*(Valuation: Constraint 1 mark, Algebraic rearrangement 1 mark, Geometric description 1 mark.)*
+**[1 Mark for each correctly stated condition with example.]**
 
 ---
 
-## Part B — Full-Length Questions (14 Marks each)
+## 5.2 Part B — 14-Mark Questions (Module Internal Choice)
 
-> KTU ESE permits an **internal choice** between two full questions. **Answer ANY ONE** of the following:
+### Question B1 — Option (A)
 
----
+**[KTU University Exam — July 2024 | CO1, CO2 | RBT: Apply, Analyze]**
 
-### Question A (14 Marks)  `[KTU University Exam — June 2024]`
+**(a)** Find the domain of the function $f(x, y) = \dfrac{\sqrt{4 - x^2 - y^2}}{\ln(x^2 + y^2)}$ and describe it geometrically. **[7 Marks]**
 
-**Let**
-$$f(x, y) = \ln\!\left(x^{2} + y^{2} - 1\right) \;+\; \sqrt{4 - x^{2} - y^{2}}.$$
-
-#### (a)  Find the domain of $f$. State whether it is bounded, open, closed, or neither.  **\[CO2, Apply] — 7 Marks**
-
-**Step 1 — Identify the two constraints** *(2 marks)*:
-* $\ln$ requires its argument $> 0$: $\;x^{2} + y^{2} - 1 > 0.$
-* Square root requires its radicand $\geq 0$: $\;4 - x^{2} - y^{2} \geq 0.$
-
-**Step 2 — Simplify each** *(2 marks)*:
-$$x^{2} + y^{2} > 1, \qquad x^{2} + y^{2} \leq 4.$$
-
-**Step 3 — Take the intersection** *(2 marks)*:
-$$1 < x^{2} + y^{2} \leq 4.$$
-
-**Step 4 — Classify** *(1 mark)*:
-$$D = \{(x, y) \in \mathbb{R}^{2} : 1 < x^{2} + y^{2} \leq 4\}$$
-is **bounded**, **not open** (because of the $\leq 4$ boundary), **not closed** (because of the strict $> 1$ inner boundary), and **connected** — an *annular region*.
-
-#### (b)  Hence, or otherwise, find the range of $f$.  **\[CO3, Analyse] — 7 Marks**
-
-**Step 1 — Substitute** $r^{2} = x^{2} + y^{2}$. The domain in $r$ becomes $1 < r^{2} \leq 4$, i.e., $1 < r \leq 2$. *(1 mark)*
-
-**Step 2 — Express $f$ in terms of $r$**:
-
-$$f = \ln(r^{2} - 1) + \sqrt{4 - r^{2}}.$$
-
-**Step 3 — Find the minimum** *(3 marks)*.
-
-Let $u = r^{2}$, with $u \in (1, 4]$. Then
-$$f(u) = \ln(u - 1) + \sqrt{4 - u}, \qquad u \in (1, 4].$$
-Differentiate:
-$$\frac{df}{du} = \frac{1}{u - 1} - \frac{1}{2\sqrt{4 - u}}.$$
-Setting $f'(u) = 0$ and checking endpoints/limits:
-* As $u \to 1^{+}$: $\ln(u-1) \to -\infty$, so $f \to -\infty$. *(no minimum at the inner boundary)*
-* At $u = 4$: $f(4) = \ln 3 + 0 = \ln 3 \approx 1.0986$.
-* Numerically, $f$ attains a local maximum near $u \approx 2.5$.
-
-**Step 4 — Find the supremum** *(2 marks)*. The maximum of $f$ on $(1, 4]$ occurs at the unique critical point; using numerical methods or a KTU-approved graphing utility, the maximum is approximately $f_{\max} \approx 1.20$ at $r^{2} \approx 2.7$. The function is **unbounded below** as $r \to 1^{+}$.
-
-$$\boxed{\,\text{Range}(f) = (-\infty,\; f_{\max}]\ \approx\ (-\infty,\ 1.20]\,}$$
-
-**Valuation Key Summary:**
-* [Setting up the substitution: 1 Mark]
-* [Differentiation of $f(u)$: 1 Mark]
-* [Endpoint behaviour near $u = 1$: 1 Mark]
-* [Endpoint value at $u = 4$: 1 Mark]
-* [Identifying the critical point: 1 Mark]
-* [Final range statement: 1 Mark]
-* [Geometric interpretation: 1 Mark]
+**(b)** Determine the range of $g(x, y) = x^2 + 4y^2 - 2x + 8y + 1$ over its entire domain. **[7 Marks]**
 
 ---
 
-### Question B (14 Marks)  `[KTU University Exam — June 2024]`
+**Solution to B1(a):**
 
-**Let**
-$$f(x, y) = (x^{2} - y)\,\sqrt{x + 1} \;+\; \ln(y - x).$$
+**Step 1 — Condition from the square root (numerator):**
+$$4 - x^2 - y^2 \ge 0 \quad \Rightarrow \quad x^2 + y^2 \le 4$$
 
-#### (a)  Find the domain of $f$.  **\[CO2, Apply] — 7 Marks**
+**Step 2 — Condition from the logarithm (denominator):**
+$$\ln(x^2 + y^2) \neq 0 \quad \Rightarrow \quad x^2 + y^2 \neq 1$$
+Also, logarithm requires $x^2 + y^2 > 0$, so we exclude the origin.
 
-**Step 1 — Constraints** *(2 marks)*:
-* $\sqrt{x + 1}$ requires $x + 1 \geq 0 \;\Rightarrow\; x \geq -1.$
-* $\ln(y - x)$ requires $y - x > 0 \;\Rightarrow\; y > x.$
+**Step 3 — Combine conditions:**
+$$(x^2 + y^2 \le 4) \;\cap\; (x^2 + y^2 \neq 1) \;\cap\; (x, y) \neq (0, 0)$$
 
-**Step 2 — Intersection** *(2 marks)*:
-$$x \geq -1 \quad \text{and} \quad y > x.$$
+**Step 4 — Final domain:**
+$$\boxed{D = \{ (x, y) : 0 < x^2 + y^2 \le 4,\ x^2 + y^2 \neq 1 \}}$$
 
-**Step 3 — Geometric description** *(2 marks)*:
-$$D = \{(x, y) \in \mathbb{R}^{2} \mid x \geq -1,\ y > x\}.$$
-This is the **closed half-strip** to the right of (and including) the vertical line $x = -1$, intersected with the open half-plane strictly above the line $y = x$.
+This is the **closed disk of radius 2**, with the **unit circle removed** and the **origin removed**. **[Stating conditions: 3 Marks | Intersection: 2 Marks | Geometric description: 2 Marks]**
 
-**Step 4 — Sketch the region** *(1 mark)*. (A labelled sketch with the lines $x = -1$ solid, $y = x$ dashed, and the admissible region shaded earns full marks.)
+---
 
-#### (b)  Find the range of** $g(x, y) = \dfrac{1}{2 + x^{2} + y^{2}}$.  **\[CO3, Analyse] — 7 Marks**
+**Solution to B1(b):**
 
-**Step 1 — Bounds on the denominator** *(2 marks)*:
-$$0 \leq x^{2} + y^{2} < \infty \;\Longrightarrow\; 2 \leq 2 + x^{2} + y^{2} < \infty.$$
+**Step 1 — Complete the square:**
+$$g(x, y) = (x^2 - 2x) + (4y^2 + 8y) + 1 = (x - 1)^2 - 1 + 4(y + 1)^2 - 4 + 1$$
 
-**Step 2 — Invert the strict-positive expression** *(2 marks)*: Because $2 + x^{2} + y^{2} \geq 2 > 0$, the reciprocal is bounded above:
-$$0 < g(x, y) = \frac{1}{2 + x^{2} + y^{2}} \leq \frac{1}{2}.$$
+$$g(x, y) = (x - 1)^2 + 4(y + 1)^2 - 4$$
 
-**Step 3 — State the range** *(2 marks)*: The maximum $\frac{1}{2}$ is attained at $(0, 0)$; $0$ is approached but never attained as $x^{2} + y^{2} \to \infty$.
+**Step 2 — Find the minimum:**
+Both squared terms are $\ge 0$, so
+$$g(x, y) \ge -4$$
+with equality when $x = 1$ and $y = -1$. The minimum value is $g(1, -1) = -4$.
 
-$$\boxed{\,\text{Range}(g) = \left(0,\ \tfrac{1}{2}\right]\,}$$
+**Step 3 — Check unboundedness:**
+As $\|(x, y)\| \to \infty$, $g(x, y) \to \infty$. So no upper bound exists.
 
-**Step 4 — Cross-check via 1-D substitution** *(1 mark)*: Let $t = x^{2} + y^{2}$, with $t \geq 0$. Then $g(t) = \frac{1}{2 + t}$ is strictly decreasing for $t \geq 0$ with $g(0) = \frac{1}{2}$ and $\lim_{t \to \infty} g(t) = 0$, confirming the result.
+**Step 4 — Final range:**
+$$\boxed{R = [-4, \infty)}$$
+
+**[Completing the square: 3 Marks | Identifying minimum: 2 Marks | Asymptotic check: 1 Mark | Final answer: 1 Mark]**
+
+---
+
+### Question B1 — Option (B) [Alternative Choice]
+
+**[KTU University Exam — Dec 2023 | CO1, CO2 | RBT: Apply, Analyze]**
+
+**(a)** Determine the domain of $f(x, y) = \arcsin\!\left(\dfrac{x}{x^2 + y^2}\right)$. **[7 Marks]**
+
+**(b)** Sketch the level curves of $f(x, y) = x^2 - y^2$ for $c = -1, 0, 1, 2$ and identify the range. **[7 Marks]**
+
+---
+
+**Solution to B1(B)(a):**
+
+**Step 1 — Apply the $\arcsin$ domain rule:** For $\arcsin(u)$ to be defined, we need $-1 \le u \le 1$.
+
+$$\boxed{-1 \le \dfrac{x}{x^2 + y^2} \le 1}$$
+
+**Step 2 — Avoid $x^2 + y^2 = 0$** (i.e., $(x, y) \neq (0, 0)$), since the denominator vanishes.
+
+**Step 3 — Analyze the right inequality $\dfrac{x}{x^2 + y^2} \le 1$:**
+
+- If $x > 0$: multiply both sides by $x^2 + y^2 > 0$: $x \le x^2 + y^2 \;\Rightarrow\; 0 \le x^2 - x + y^2 \;\Rightarrow\; (x - \tfrac{1}{2})^2 + y^2 \ge \tfrac{1}{4}$.
+- If $x < 0$: the inequality $\dfrac{x}{x^2 + y^2} \le 1$ is automatically true (negative $\le$ positive).
+- If $x = 0$: $0 \le 1$ ✓.
+
+**Step 4 — Analyze the left inequality $-1 \le \dfrac{x}{x^2 + y^2}$:**
+
+- If $x < 0$: $-x \le x^2 + y^2 \;\Rightarrow\; (x + \tfrac{1}{2})^2 + y^2 \ge \tfrac{1}{4}$.
+- If $x > 0$: automatically true.
+- If $x = 0$: $-1 \le 0$ ✓.
+
+**Step 5 — Combine:** The domain is
+$$D = \left(\mathbb{R}^2 \setminus \{(0, 0)\}\right) \setminus \Big[\{x > 0\} \cap \{(x - \tfrac{1}{2})^2 + y^2 < \tfrac{1}{4}\}\Big] \setminus \Big[\{x < 0\} \cap \{(x + \tfrac{1}{2})^2 + y^2 < \tfrac{1}{4}\}\Big]$$
+
+i.e., the plane minus the origin and minus two small open half-disks around $(\tfrac{1}{2}, 0)$ and $(-\tfrac{1}{2}, 0)$. **[Setting up the inequality: 2 Marks | Case analysis: 3 Marks | Geometric description: 2 Marks]**
+
+---
+
+**Solution to B1(B)(b):**
+
+**Step 1 — Level curves:** Setting $x^2 - y^2 = c$ gives the rectangular hyperbola family.
+
+| $c$ | Equation | Curve |
+|-----|----------|-------|
+| $-1$ | $x^2 - y^2 = -1$ | Hyperbola opening vertically (along $y$-axis) |
+| $0$  | $x^2 - y^2 = 0$ | Two lines $y = x$ and $y = -x$ |
+| $1$  | $x^2 - y^2 = 1$ | Hyperbola opening horizontally (along $x$-axis) |
+| $2$  | $x^2 - y^2 = 2$ | Hyperbola opening horizontally, narrower |
+
+**Step 2 — Sketch (using Mermaid-style block representation):**
+
+```mermaid
+graph LR
+    subgraph SC["Level curves of f(x,y) = x^2 - y^2"]
+        L1["c = -1 : y-axis hyperbola"]
+        L2["c = 0  : crossing lines y = ±x"]
+        L3["c = 1  : x-axis hyperbola"]
+        L4["c = 2  : narrower x-axis hyperbola"]
+    end
+```
+
+**Step 3 — Range:** For every $c \in \mathbb{R}$, the equation $x^2 - y^2 = c$ has a real solution (e.g., for $c > 0$, take $(x, y) = (\sqrt{c}, 0)$; for $c < 0$, take $(x, y) = (0, \sqrt{-c})$). Therefore,
+
+$$\boxed{R = \mathbb{R}}$$
+
+**[Identifying equation form: 2 Marks | Curve table: 3 Marks | Range argument: 2 Marks]**
 
 ---
 
 > [!WARNING]
-> **KTU Examiner's Valuation Pitfalls — Read Before You Write!**
-> 1. **Don't forget strict vs. non-strict inequalities.** A *strict* $> 0$ from $\ln$ differs from a *non-strict* $\geq 0$ from $\sqrt{}$. Mixing them costs **1–2 marks** every time.
-> 2. **Always state the geometric shape** of the domain (disk, half-plane, annulus, region between curves). KTU examiners award a separate mark for this.
-> 3. **For range problems, do not stop at "the function is unbounded"** — specify the direction (unbounded above, below, or both) and the *attained* extreme values.
-> 4. **Never write the domain as a single combined inequality with $\le$ and $>$ in the same chain** unless the geometry clearly supports it. Use two separate constraints then intersect.
-> 5. **Skip the "sketch" at your peril.** A small labelled sketch of the domain earns the *visualisation mark* and prevents arithmetic slips during intersection.
+> **KTU Examiner's Valuation Warning — Common Pitfalls:**
+> 1. **Forgetting the strict inequality** in $x^2 + y^2 > 0$ for $\ln$ (origin must be excluded explicitly). *[-1 Mark]*
+> 2. **Confusing closed vs. open boundaries**: $\sqrt{}$ allows $\ge$, but $\ln$ requires $>$. Read the operator, not the variable! *[-1 Mark]*
+> 3. **Range of constant functions**: A function like $f(x, y) = 5$ has domain $\mathbb{R}^2$ and range $\{5\}$ — a *singleton set*, not an interval. *[-0.5 Marks]*
+> 4. **Bounded but not closed**: A domain can be bounded *and* open (e.g., the open unit disk). KTU students often wrongly assume bounded $\Rightarrow$ closed. *[-0.5 Marks]*
+> 5. **Missing the intersection step**: When $f$ has two restrictions, students write only one. The domain is the **intersection** of all constraints, not the union. *[-2 Marks]*
 
 ---
 
-## Topic Recap & Important Things to Remember
+## 5.3 Topic Recap & Important Things to Remember
 
-- A **function of $n$ variables** $f : D \subseteq \mathbb{R}^{n} \to \mathbb{R}$ assigns a single real output to each $n$-tuple input; the *domain* $D$ is the set of valid inputs, the *range* is the set of attained outputs.
-- The **natural domain** is the largest set on which the formula is defined; the **restricted domain** is a problem-imposed subset.
-- Three *universal constraints* govern the natural domain:
-  - **Division:** denominator $\neq 0$.
-  - **Even root:** radicand $\geq 0$.
-  - **Logarithm:** argument $> 0$.
-- Always take the **intersection** of all valid regions to obtain the domain.
-- Classify domains as **open / closed / neither**, **bounded / unbounded**, and **connected / disconnected**.
-- For **range problems**, use *completing the square*, *AM-GM*, *boundedness of trig functions*, or *substitution $r = \sqrt{x^{2}+y^{2}}$* to reduce to a 1-D problem.
-- A function of two variables can be **visualised as a surface** in $\mathbb{R}^{3}$ with **level curves** $f(x, y) = c$ as horizontal cross-sections.
-- Common 2-D domain shapes: **disk** ($x^{2}+y^{2} \leq r^{2}$), **half-plane** ($ax+by > c$), **quadrant** ($x > 0, y > 0$), **annulus** ($a < x^{2}+y^{2} \leq b$), **plane minus a line** ($\mathbb{R}^{2} \setminus \{x = y\}$).
-- Memorise the *natural domain* of elementary functions: polynomials $\to \mathbb{R}^{2}$, $\exp \to \mathbb{R}^{2}$, $\sin/\cos \to \mathbb{R}^{2}$.
-- Real-world link: identifying the **domain** of a loss function is the first step in **machine-learning model design**; identifying the **range** controls **output scaling** and **activation-function choice**.
-- In KTU answers, **always pair each constraint with a clear geometric description** — this is where most of the easy marks live.
+- **Definition of $f$ of several variables:** A rule $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ that assigns a unique real number to each $n$-tuple in $D$.
+- **Domain $D$:** Set of *input* points where the formula is *arithmetically legal* (no $0$ in denominator, no negative under even root, no non-positive in $\ln$, etc.).
+- **Range $R$:** Set of *output* values $z$ that the function actually attains over $D$.
+- **Standard domain restrictions** (must be memorized):
+  * Division by zero is forbidden.
+  * $\sqrt[k]{\cdot}$ with $k$ even requires a non-negative radicand.
+  * $\ln$ and $\log$ require strictly positive arguments.
+  * $\arcsin, \arccos$ require arguments in $[-1, 1]$.
+  * $\tan, \sec, \cot, \csc$ have periodic vertical asymptotes.
+- **Domain classification — 2 axes:**
+  * **Boundary:** Open ($\partial D \cap D = \emptyset$) vs. Closed ($\partial D \subseteq D$).
+  * **Extent:** Bounded (contained in a finite disk) vs. Unbounded.
+- **Geometric interpretation:**
+  * $z = f(x, y)$ is a **surface** in $\mathbb{R}^3$.
+  * Domain $D$ is the **shadow** (projection) of this surface onto the $xy$-plane.
+  * Range $R$ is the **set of heights** reached by the surface.
+- **Range-finding methods:**
+  1. Direct minimum/maximum analysis.
+  2. Cross-section method (fix one variable).
+  3. Level set / inverse problem method.
+- **Common domain shapes (interview-ready):**
+  * Whole plane $\mathbb{R}^2$.
+  * Open/closed half-planes (e.g., $x + y > 0$).
+  * Open/closed disks (e.g., $x^2 + y^2 < 4$).
+  * Open/closed annuli (e.g., $1 < x^2 + y^2 < 4$).
+  * Plane minus a point or minus a curve.
+- **Engineering relevance:** Optimization over bounded closed domains (Extreme Value Theorem), contour analysis in computer vision and GIS, mesh generation in finite element analysis, and gradient-based learning in machine learning.
+- **Valuation tip:** Always *state the condition*, then *write the corresponding inequality*, and finally *describe the region geometrically* — examiners reward explicit reasoning at every step.
 
 <!-- SECTION_5_END -->

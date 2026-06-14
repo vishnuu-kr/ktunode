@@ -1,0 +1,50 @@
+{
+  "course_name": "SOFTWARE TESTING",
+  "course_code": "PECST631",
+  "module_number": 4,
+  "module_title": "Black box testing",
+  "topics_generated": [
+    {
+      "title": "Black Box Testing - Input space partitioning, domain testing, functional testing (equivalence class partitioning, boundary value analysis, decision tables, random testing)",
+      "slug": "black-box-testing-input-space-partitioning-domain-testing-functional-testing-equivalence-class",
+      "path": "black-box-testing-input-space-partitioning-domain-testing-functional-testing-equivalence-class/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Grey Box Testing - Introduction, advantages, and methodologies (matrix testing, regression testing, orthogonal array testing)",
+      "slug": "grey-box-testing-introduction-advantages-and-methodologies-matrix-testing-regression-testing",
+      "path": "grey-box-testing-introduction-advantages-and-methodologies-matrix-testing-regression-testing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance Testing - Network latency testing, browser compatibility, responsive testing across multiple devices (e.g., BrowserStack, LambdaTest)",
+      "slug": "performance-testing-network-latency-testing-browser-compatibility-responsive-testing-across",
+      "path": "performance-testing-network-latency-testing-browser-compatibility-responsive-testing-across/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Introduction to PEX - Symbolic execution, parameterized unit testing, symbolic execution trees, and their application",
+      "slug": "introduction-to-pex-symbolic-execution-parameterized-unit-testing-symbolic-execution-trees-and",
+      "path": "introduction-to-pex-symbolic-execution-parameterized-unit-testing-symbolic-execution-trees-and/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "GenAI in Testing - Advanced use cases for predictive and responsive testing across devices and environments",
+      "slug": "genai-in-testing-advanced-use-cases-for-predictive-and-responsive-testing-across-devices-and",
+      "path": "genai-in-testing-advanced-use-cases-for-predictive-and-responsive-testing-across-devices-and/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case Study- Implementation of black-box, grey-box, and responsive testing using PEX and AI-driven tools",
+      "slug": "case-study-implementation-of-black-box-grey-box-and-responsive-testing-using-pex-and-ai-driven-tools",
+      "path": "case-study-implementation-of-black-box-grey-box-and-responsive-testing-using-pex-and-ai-driven-tools/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

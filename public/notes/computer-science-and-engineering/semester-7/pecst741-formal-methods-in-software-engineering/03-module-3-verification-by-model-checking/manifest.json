@@ -1,0 +1,36 @@
+{
+  "course_name": "FORMAL METHODS IN SOFTWARE ENGINEERING",
+  "course_code": "PECST741",
+  "module_number": 3,
+  "module_title": "Verification by model checking",
+  "topics_generated": [
+    {
+      "title": "Verification by Model Checking :-",
+      "slug": "verification-by-model-checking",
+      "path": "verification-by-model-checking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Verifier for Concurrent C (VCC): a Hoare-Triple- based tool for Verifying Concurrent C",
+      "slug": "verifier-for-concurrent-c-vcc-a-hoare-triple-based-tool-for-verifying-concurrent-c",
+      "path": "verifier-for-concurrent-c-vcc-a-hoare-triple-based-tool-for-verifying-concurrent-c/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "intra procedure verification of programs",
+      "slug": "intra-procedure-verification-of-programs",
+      "path": "intra-procedure-verification-of-programs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "ghost statements.",
+      "slug": "ghost-statements",
+      "path": "ghost-statements/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "course_name": "QUANTUM COMPUTING",
+  "course_code": "PECST638",
+  "module_number": 2,
+  "module_title": "Introduction to quantum information",
+  "topics_generated": [
+    {
+      "title": "Introduction to Quantum Information",
+      "slug": "introduction-to-quantum-information",
+      "path": "introduction-to-quantum-information/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Qubit – Bloch sphere representation",
+      "slug": "qubit-bloch-sphere-representation",
+      "path": "qubit-bloch-sphere-representation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Multiple qubit states",
+      "slug": "multiple-qubit-states",
+      "path": "multiple-qubit-states/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum logic gates – single qubit and multi-qubit",
+      "slug": "quantum-logic-gates-single-qubit-and-multi-qubit",
+      "path": "quantum-logic-gates-single-qubit-and-multi-qubit/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum circuits",
+      "slug": "quantum-circuits",
+      "path": "quantum-circuits/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Density matrix",
+      "slug": "density-matrix",
+      "path": "density-matrix/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum entanglement.",
+      "slug": "quantum-entanglement",
+      "path": "quantum-entanglement/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

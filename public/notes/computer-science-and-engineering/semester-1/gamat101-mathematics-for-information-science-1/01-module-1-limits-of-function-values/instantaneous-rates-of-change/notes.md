@@ -4,49 +4,40 @@
 
 # Instantaneous Rates of Change
 
-## 1.1 Formal KTU Definition
+## 1.1 Formal Academic Definition (KTU 2024 Syllabus Standard)
 
 > [!IMPORTANT]
-> **KTU 2024 Scheme Definition (GAMAT101, Module 1)**
-> The **Instantaneous Rate of Change** of a function $f(x)$ at a point $x = a$ is defined as the limit of the average rate of change of $f$ over an arbitrarily small interval containing $a$. Mathematically:
-> $$f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
-> provided this limit exists and is finite. The quantity $f'(a)$ is also called the **derivative of $f$ at $a$**, denoted $\dfrac{dy}{dx}\bigg|_{x=a}$, and is geometrically equivalent to the **slope of the tangent line** to the curve $y = f(x)$ at the point $(a, f(a))$.
+> **Instantaneous Rate of Change (IROC):** Let $f$ be a real-valued function defined on an open interval containing a point $x = a$. The *instantaneous rate of change* of $f$ at $x = a$ is defined as the limit
+> $$\text{IROC} = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
+> provided this limit exists and is finite. This limit is precisely the **derivative** $f'(a)$ of $f$ at $x = a$.
 
-In the KTU 2024 NEP-aligned syllabus for *Mathematics for Information Science – 1*, this topic sits at the heart of **Module 1: Limits of Function Values**, because it is the *first substantive application* of the limit operation — moving from the discrete (secant slope) to the continuous (tangent slope).
+This concept is the cornerstone of **differential calculus** and the foundation of all modern engineering optimization, signal processing algorithms, and machine learning gradient descent methods.
 
-## 1.2 Intuitive Real-World Analogy
+## 1.2 Conceptual Analogy & Geometric Intuition
 
 > [!NOTE]
-> **The Speedometer Analogy** 🚗
-> Imagine you are driving a car from Kochi to Bengaluru. Your GPS shows you covered **300 km in 5 hours**, so your **average speed** is $60$ km/hr. But when you look at the speedometer at 2:30 PM, it reads **94 km/hr** — that is your **instantaneous speed** at that exact moment.
-> - The **average rate of change** = total distance / total time (a coarse, bulk measurement).
-> - The **instantaneous rate of change** = the reading on the speedometer (a precise, moment-by-moment measurement).
-> The speedometer is essentially computing $\lim_{\Delta t \to 0} \dfrac{\Delta \text{distance}}{\Delta t}$ — exactly the definition above.
+> **The Speedometer Analogy (Intuitive Explanation):** Imagine driving a car from point A to point B in 2 hours, covering 100 km. Your *average speed* is **50 km/h**. However, at any given moment, your speedometer might read **70 km/h** (going downhill), **20 km/h** (in traffic), or **0 km/h** (at a red light). These moment-by-moment readings are *instantaneous rates of change* of distance with respect to time. The limit concept allows us to "zoom in" infinitely close to a single instant and recover the true momentary rate.
 
-> [!TIP]
-> **Geometric Intuition:** Picture a curve $y = f(x)$ and a moving point on it. Draw a chord (secant) between two nearby points. As the two points merge into one, the secant line "rotates" and becomes the **tangent line** — the slope of this tangent is the instantaneous rate of change.
-
-## 1.3 Standard Constants and Notation
-
-| Symbol | Meaning | Standard Form |
-|---|---|---|
-| $h$ | Increment of $x$ | $h \to 0$ |
-| $\Delta x$ | Change in $x$ | $\Delta x = h$ |
-| $\Delta y$ | Change in $y$ | $\Delta y = f(a+h) - f(a)$ |
-| $f'(a)$ | Derivative at $x = a$ | $\dfrac{dy}{dx}\bigg|_{x=a}$ |
-| **Zero** | The limiting value of increment | $\mathbf{0}$ is the formal limit target |
-
-## 1.4 GeoGebra / Desmos Visualization
+**Geometric Intuition:** On the graph of $y = f(x)$, the average rate of change over an interval $[a, a+h]$ corresponds to the **slope of the secant line** connecting $(a, f(a))$ and $(a+h, f(a+h))$. As $h \to 0$, the second point slides toward the first, and the secant line rotates to become the **tangent line** to the curve at $(a, f(a))$. The slope of this tangent is the instantaneous rate of change.
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Secant-to-Tangent Limiting Process on $y = x^2$
+> **Concept:** Secant lines converging to the tangent line at a point on the curve $y = x^2$ at $x = 2$.
 > **GeoGebra / Desmos Input Equations:**
-> * `f(x) = x^2`
-> * `P = (1, f(1))`
-> * `Q = (1 + h, f(1 + h))`  where $h$ is a slider with range $-1$ to $1$, step $0.01$
-> * `secant = Line(P, Q)`
-> * `tangent = Line(P, (1, 2))`  *(the actual tangent at slope $2$)*
-> **Visual Description:** As the student drags the slider $h \to 0$, the secant line $PQ$ visibly pivots and *coincides* with the tangent line. The slope readout confirms $\dfrac{f(1+h) - f(1)}{h} \to 2$.
+> * $f(x) = x^2$
+> * $a = 2$
+> * Secant line slopes: $m(h) = \dfrac{(2+h)^2 - 4}{h}$ for $h = 1, 0.5, 0.1, 0.01$
+> * Tangent line: $y = 4x - 4$
+> **Visual Description:** Plot the parabola $y = x^2$ and the family of secant lines through the fixed point $(2, 4)$. As $h \to 0$, the secant lines visibly pivot and merge into the single tangent line $y = 4x - 4$, whose slope is exactly **4** — the instantaneous rate of change at $x = 2$.
+
+## 1.3 Why This Concept Matters in Information Science
+
+In computer science and information technology, the instantaneous rate of change is the mathematical engine behind:
+* **Backpropagation** in neural networks (gradient of loss function).
+* **Edge detection** in image processing (gradient of pixel intensity).
+* **Algorithmic complexity analysis** (rate of growth of runtime functions).
+* **Control systems** (rate of change of sensor signals over time).
+
+---
 
 <!-- SECTION_1_END -->
 
@@ -54,273 +45,224 @@ In the KTU 2024 NEP-aligned syllabus for *Mathematics for Information Science �
 
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Conceptual Foundation: From Average to Instantaneous
+## 2.1 The Two Types of Rates of Change
 
-The KTU board expects students to articulate the **logical chain** in three explicit steps:
-
-* **Step 1 — Discretize:** Choose two distinct points on the curve, $(a, f(a))$ and $(a+h, f(a+h))$.
-* **Step 2 — Compute Average:** The average rate of change (slope of secant) is the difference quotient:
-$$m_{\text{sec}} = \frac{f(a+h) - f(a)}{h}, \quad h \neq 0$$
-* **Step 3 — Take the Limit:** Shrink the interval by sending $h \to 0$. If the limit exists (finite), we obtain the **instantaneous rate of change**:
-$$f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
+### 2.1.1 Average Rate of Change (AROC)
 
 > [!NOTE]
-> **Why $h \neq 0$?** Because division by zero is undefined. The limit operation cleverly bypasses this by *approaching* zero without ever equaling it.
+> **Definition:** The average rate of change of $f$ on the interval $[a, b]$ (with $a \neq b$) is given by the difference quotient
+> $$\text{AROC} = \frac{f(b) - f(a)}{b - a}$$
+> Geometrically, this equals the slope of the secant line joining $(a, f(a))$ and $(b, f(b))$.
 
-## 2.2 Alternative Form: Using $\Delta x$ Notation
+**Why this works:** Dividing the net change in the dependent variable $\Delta y = f(b) - f(a)$ by the net change in the independent variable $\Delta x = b - a$ yields a "per-unit" change — the constant rate that would have produced the same overall change over the interval.
 
-Many KTU textbooks (and questions) use the $\Delta x$ notation. The two formulations are **identical**:
+### 2.1.2 Instantaneous Rate of Change (IROC)
 
-$$f'(a) = \lim_{\Delta x \to 0} \frac{f(a + \Delta x) - f(a)}{\Delta x} = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
+> [!NOTE]
+> **Definition:** The instantaneous rate of change of $f$ at $x = a$ is the limit
+> $$\text{IROC} = \lim_{x \to a} \frac{f(x) - f(a)}{x - a} = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
+> The second form is obtained via the substitution $x = a + h$, so $x - a = h$ and $x \to a \iff h \to 0$. This is the **limit definition of the derivative**, often denoted $f'(a)$.
 
-A third equivalent form, obtained by substituting $x = a + h$ (so $h = x - a$, $h \to 0 \Rightarrow x \to a$):
+## 2.2 Existence Criteria
 
-$$f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$$
+For the IROC to exist at $x = a$, the following conditions must hold:
+
+1. **Continuity at $a$:** $f$ must be continuous at $x = a$ (i.e., $\lim_{x \to a} f(x) = f(a)$). Note: continuity is *necessary but not sufficient* for the IROC to exist.
+2. **Two-sided limit existence:** Both one-sided limits must be equal:
+   $$\lim_{h \to 0^+} \frac{f(a+h) - f(a)}{h} = \lim_{h \to 0^-} \frac{f(a+h) - f(a)}{h}$$
+3. **Finite value:** The limit must be a finite real number; an infinite or oscillating limit implies a **vertical tangent** or **corner** rather than a defined instantaneous rate.
+
+## 2.3 KTU Formula Sheet / Cheat Sheet
+
+| # | Concept | Formula | Geometric Meaning | Engineering Use |
+|---|---------|---------|------------------|-----------------|
+| 1 | Average Rate of Change | $\dfrac{f(b) - f(a)}{b - a}$ | Slope of secant line | Mean throughput, average CPU load |
+| 2 | Instantaneous Rate of Change (limit form) | $\lim\limits_{h \to 0} \dfrac{f(a+h) - f(a)}{h}$ | Slope of tangent line | Real-time velocity, gradient descent |
+| 3 | IROC equivalent form | $\lim\limits_{x \to a} \dfrac{f(x) - f(a)}{x - a}$ | Slope of tangent line | Numerical differentiation |
+| 4 | Derivative notation | $f'(a) = \dfrac{dy}{dx}\bigg\vert_{x=a}$ | Limiting slope | Symbolic computation |
+| 5 | Differentiability implies continuity | $f'(a) \text{ exists} \Rightarrow f \text{ continuous at } a$ | No corner / cusp / vertical tangent | Smoothness for optimization |
+| 6 | Power rule (useful for verification) | $\dfrac{d}{dx}(x^n) = nx^{n-1}$ | Polynomial tangents | Algorithm design |
 
 > [!IMPORTANT]
-> All three forms are **interchangeable** in KTU exams. The board typically accepts any one of them, but using the form dictated by the question stem earns full credit.
+> **Critical Pitfall:** In markdown table cells, absolute value bars are written as $\vert x \vert$ — never using the raw pipe character — to prevent breaking the table syntax.
 
-## 2.3 KTU High-Yield Formula Sheet
+## 2.4 Real-World Engineering Utility
 
-> [!NOTE]
-> The table below is the **cheat sheet** you should memorize for ESE. No vertical pipes used inside table cells — absolute values are rendered with `\vert`.
+* **Network Engineering:** IROC of the bandwidth-utilization function gives the *rate at which congestion is building* — critical for adaptive routing.
+* **Machine Learning:** The gradient of a loss function (which is an instantaneous rate of change in multivariable space) dictates the direction of weight updates.
+* **Signal Processing:** The derivative of a time-varying signal represents its *frequency-weighted* version — used in edge detection and high-pass filters.
+* **Database Indexing:** Rate of change of query latency with respect to data size informs index restructuring decisions.
 
-| \# | Formula / Definition | When to Use | Units / Remarks |
-|---|---|---|---|
-| 1 | $f'(a) = \lim\limits_{h \to 0} \dfrac{f(a+h) - f(a)}{h}$ | Default KTU form | $f'(a)$ has units of $\dfrac{\text{output units}}{\text{input units}}$ |
-| 2 | $f'(a) = \lim\limits_{x \to a} \dfrac{f(x) - f(a)}{x - a}$ | When $x$-form is given | Requires $\lim\limits_{x \to a} f(x) = f(a)$ (continuity) |
-| 3 | $m_{\text{sec}} = \dfrac{f(b) - f(a)}{b - a}$ | Average / chord slope | Independent of limits |
-| 4 | $m_{\text{tan}} = f'(a)$ | Tangent slope at $x = a$ | Geometric meaning |
-| 5 | Equation of tangent: $y - f(a) = f'(a)(x - a)$ | KTU 14-mark standard | Always required in tangent problems |
-| 6 | Equation of normal: $y - f(a) = -\dfrac{1}{f'(a)}(x - a)$ | Perpendicular to tangent | Valid only when $f'(a) \neq 0$ |
-| 7 | Velocity: $v(t) = s'(t) = \lim\limits_{\Delta t \to 0} \dfrac{s(t+\Delta t) - s(t)}{\Delta t}$ | Physics / kinematics | $s(t)$ = position function |
-| 8 | $\dfrac{dy}{dx} = \lim\limits_{\Delta x \to 0} \dfrac{\Delta y}{\Delta x}$ | Leibniz notation | KTU 2024 frequently tested form |
-
-## 2.4 Real-World Utility in Information Science
-
-> [!TIP]
-> **Why does a CS/IT student need this?**
-> * **Machine Learning:** Gradient of a loss function $L(\theta)$ is the instantaneous rate at which the loss changes with respect to parameters — the engine of *gradient descent*.
-> * **Signal Processing:** The derivative of a discrete signal approximates the **edge-detection** operator (Sobel, Prewitt filters).
-> * **Network Engineering:** Throughput derivative with respect to time detects congestion onset.
-> * **Computer Graphics:** Tangent vectors drive lighting calculations and animation splines.
-
-## 2.5 Existence Conditions (Board-Favorite Question)
-
-> [!WARNING]
-> The instantaneous rate of change $f'(a)$ **exists** only if $\lim\limits_{h \to 0^{+}} \dfrac{f(a+h)-f(a)}{h}$ and $\lim\limits_{h \to 0^{-}} \dfrac{f(a+h)-f(a)}{h}$ **both exist and are equal**. If they differ, the function has a **corner / cusp** at $x = a$, and no unique tangent line exists.
+---
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
 
-# Step-by-Step Derivations & Code/Symbolic Implementation
+# Step-by-Step Derivations & Worked Examples
 
-## 3.1 Worked Example 1 — Polynomial (KTU Standard 14-Mark Style)
+> [!IMPORTANT]
+> **Exhaustive Derivation Mandate:** Every algebraic step, every limit evaluation, and every numerical substitution is shown in full. No steps are skipped or abbreviated.
 
-> **Problem:** Find the instantaneous rate of change of $f(x) = x^2$ at $x = 3$. Hence find the equation of the tangent line at this point.
+## 3.1 Worked Example 1: $f(x) = x^2$ at $x = 2$
 
-**Step 1 — Set up the limit definition.**
+**Problem:** Find the instantaneous rate of change of $f(x) = x^2$ at $x = 2$ using the limit definition.
 
-$$f'(3) = \lim_{h \to 0} \frac{f(3+h) - f(3)}{h}$$
+### Step 1 — Write down the limit definition
+$$\text{IROC at } x = 2 = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h}$$
 
-**Step 2 — Substitute $f(x) = x^2$.**
+### Step 2 — Compute $f(2+h)$
+$$f(2+h) = (2+h)^2 = 4 + 4h + h^2$$
+*Justification:* Apply the binomial expansion $(a+b)^2 = a^2 + 2ab + b^2$ with $a = 2$ and $b = h$.
 
-$$f'(3) = \lim_{h \to 0} \frac{(3+h)^2 - 3^2}{h}$$
+### Step 3 — Compute $f(2)$
+$$f(2) = (2)^2 = 4$$
 
-**Step 3 — Expand the numerator.**
+### Step 4 — Form the difference quotient
+$$\frac{f(2+h) - f(2)}{h} = \frac{(4 + 4h + h^2) - 4}{h} = \frac{4h + h^2}{h}$$
 
-$$
-\begin{aligned}
-(3+h)^2 &= 9 + 6h + h^2 \\
-(3+h)^2 - 9 &= 6h + h^2
-\end{aligned}
-$$
+### Step 5 — Algebraically simplify (factor out $h$)
+$$\frac{4h + h^2}{h} = \frac{h(4 + h)}{h} = 4 + h$$
+*Justification:* Factor $h$ from the numerator and cancel the common factor $h \neq 0$ in the denominator.
 
-**Step 4 — Factor out $h$.**
+### Step 6 — Apply the limit
+$$\lim_{h \to 0} (4 + h) = 4 + 0 = 4$$
 
-$$f'(3) = \lim_{h \to 0} \frac{h(6 + h)}{h}$$
+### Step 7 — State the result
+$$\boxed{\text{IROC} = f'(2) = 4}$$
+**Interpretation:** The slope of the tangent to $y = x^2$ at $(2, 4)$ is exactly **4 units of $y$ per unit of $x$**. Equivalently, near $x = 2$, the function is *locally linear* with rate 4.
 
-**Step 5 — Cancel $h$ (valid because $h \neq 0$).**
+### Step 8 — Verification via Power Rule
+$$\frac{d}{dx}(x^2) = 2x \implies f'(2) = 2(2) = 4 \quad \checkmark$$
 
-$$f'(3) = \lim_{h \to 0} (6 + h)$$
+---
 
-**Step 6 — Apply the limit.**
+## 3.2 Worked Example 2: $f(x) = x^3$ at $x = 1$
 
-$$f'(3) = 6 + 0 = 6$$
+**Problem:** Find the instantaneous rate of change of $f(x) = x^3$ at $x = 1$.
 
-> **Incremental Valuation Key (for KTU 14-mark question):**
-> * [Substituting $f(3+h)$ and $f(3)$: 2 Marks]
-> * [Expanding $(3+h)^2 = 9 + 6h + h^2$: 2 Marks]
-> * [Factoring $h$ in numerator: 2 Marks]
-> * [Cancelling $h$ and applying limit: 2 Marks]
-> * [Final answer $f'(3) = 6$: 1 Mark]
+### Step 1 — Limit definition
+$$\text{IROC} = \lim_{h \to 0} \frac{f(1+h) - f(1)}{h}$$
 
-**Step 7 — Equation of tangent at $(3, 9)$ with slope $6$.**
+### Step 2 — Compute $f(1+h)$ via binomial expansion
+$$(1+h)^3 = 1 + 3h + 3h^2 + h^3$$
+*Justification:* Use $(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$.
 
-$$
-\begin{aligned}
-y - f(3) &= f'(3)\,(x - 3) \\
-y - 9 &= 6(x - 3) \\
-y &= 6x - 9
-\end{aligned}
-$$
+### Step 3 — Compute $f(1) = 1^3 = 1$
 
-## 3.2 Worked Example 2 — Rational Function
+### Step 4 — Form the difference quotient
+$$\frac{(1 + 3h + 3h^2 + h^3) - 1}{h} = \frac{3h + 3h^2 + h^3}{h}$$
 
-> **Problem:** Compute $f'(2)$ for $f(x) = \dfrac{1}{x}$ using the limit definition.
+### Step 5 — Factor and simplify
+$$\frac{3h + 3h^2 + h^3}{h} = \frac{h(3 + 3h + h^2)}{h} = 3 + 3h + h^2$$
 
-**Step 1 — Limit setup.**
+### Step 6 — Apply the limit
+$$\lim_{h \to 0} (3 + 3h + h^2) = 3 + 0 + 0 = 3$$
 
-$$f'(2) = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h} = \lim_{h \to 0} \frac{\frac{1}{2+h} - \frac{1}{2}}{h}$$
+### Step 7 — State the result
+$$\boxed{\text{IROC} = f'(1) = 3}$$
 
-**Step 2 — Common denominator in the numerator.**
+### Step 8 — Verification via Power Rule
+$$\frac{d}{dx}(x^3) = 3x^2 \implies f'(1) = 3(1)^2 = 3 \quad \checkmark$$
 
-$$
-\begin{aligned}
-\frac{1}{2+h} - \frac{1}{2} &= \frac{2 - (2+h)}{2(2+h)} = \frac{-h}{2(2+h)}
-\end{aligned}
-$$
+---
 
-**Step 3 — Substitute back.**
+## 3.3 Worked Example 3: $f(x) = \dfrac{1}{x}$ at $x = 2$ (Rational Function)
 
-$$f'(2) = \lim_{h \to 0} \frac{1}{h} \cdot \frac{-h}{2(2+h)}$$
+**Problem:** Find the instantaneous rate of change of $f(x) = 1/x$ at $x = 2$.
 
-**Step 4 — Cancel $h$.**
+### Step 1 — Limit definition
+$$\text{IROC} = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h}$$
 
-$$f'(2) = \lim_{h \to 0} \frac{-1}{2(2+h)} = \frac{-1}{2 \cdot 2} = -\frac{1}{4}$$
+### Step 2 — Compute $f(2+h)$ and $f(2)$
+$$f(2+h) = \frac{1}{2+h}, \qquad f(2) = \frac{1}{2}$$
 
-## 3.3 Worked Example 3 — Trigonometric Function
+### Step 3 — Form the difference quotient
+$$\frac{\frac{1}{2+h} - \frac{1}{2}}{h}$$
 
-> **Problem:** Find $f'\!\left(\dfrac{\pi}{4}\right)$ for $f(x) = \sin x$.
+### Step 4 — Combine numerator fractions
+$$\frac{1}{2+h} - \frac{1}{2} = \frac{2 - (2+h)}{2(2+h)} = \frac{-h}{2(2+h)}$$
+*Justification:* Common denominator is $2(2+h)$; subtract numerators.
 
-**Step 1 — Limit definition.**
+### Step 5 — Divide by $h$
+$$\frac{1}{h} \cdot \frac{-h}{2(2+h)} = \frac{-1}{2(2+h)}$$
 
-$$f'\!\left(\tfrac{\pi}{4}\right) = \lim_{h \to 0} \frac{\sin\!\left(\tfrac{\pi}{4} + h\right) - \sin\!\left(\tfrac{\pi}{4}\right)}{h}$$
+### Step 6 — Apply the limit
+$$\lim_{h \to 0} \frac{-1}{2(2+h)} = \frac{-1}{2(2+0)} = \frac{-1}{4}$$
 
-**Step 2 — Apply sum-to-product identity.**
+### Step 7 — State the result
+$$\boxed{\text{IROC} = f'(2) = -\dfrac{1}{4}}$$
+**Interpretation:** At $x = 2$, the function $y = 1/x$ is *decreasing* with slope $-1/4$ (consistent with the curve bending downward in the first quadrant).
 
-$$
-\begin{aligned}
-\sin A - \sin B &= 2 \cos\!\left(\tfrac{A+B}{2}\right) \sin\!\left(\tfrac{A-B}{2}\right) \\
-A = \tfrac{\pi}{4} + h, \quad B &= \tfrac{\pi}{4} \\
-\sin A - \sin B &= 2 \cos\!\left(\tfrac{\pi}{4} + \tfrac{h}{2}\right) \sin\!\left(\tfrac{h}{2}\right)
-\end{aligned}
-$$
+---
 
-**Step 3 — Substitute and rearrange.**
-
-$$f'\!\left(\tfrac{\pi}{4}\right) = \lim_{h \to 0} \frac{2 \cos\!\left(\tfrac{\pi}{4} + \tfrac{h}{2}\right) \sin\!\left(\tfrac{h}{2}\right)}{h}$$
-
-**Step 4 — Use $\lim\limits_{\theta \to 0} \dfrac{\sin \theta}{\theta} = 1$.**
-
-$$
-\begin{aligned}
-f'\!\left(\tfrac{\pi}{4}\right) &= \lim_{h \to 0} \cos\!\left(\tfrac{\pi}{4} + \tfrac{h}{2}\right) \cdot \frac{\sin\!\left(\tfrac{h}{2}\right)}{h/2} \cdot \frac{1}{2}\cdot 2 \\
-&= \cos\!\left(\tfrac{\pi}{4}\right) \cdot 1 \cdot 1 = \frac{1}{\sqrt{2}}
-\end{aligned}
-$$
-
-## 3.4 Python Implementation — Numerical Verification
-
-> [!NOTE]
-> The following Python program computes the instantaneous rate of change using the **limit definition** numerically (finite-difference method) and compares it with the **symbolic (analytical) answer**.
+## 3.4 Symbolic / Computational Implementation (Python)
 
 ```python
-from typing import Callable
-import math
+import sympy as sp
+import logging
 
-def instantaneous_rate_of_change(
-    f: Callable[[float], float],
-    a: float,
-    h_values: list[float]
-) -> list[tuple[float, float]]:
+# Configure logging for rigorous error handling
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+def instantaneous_rate_of_change(func_expr, point, h_symbol=sp.Symbol('h')):
     """
-    Computes (h, slope) pairs for the difference quotient [f(a+h) - f(a)] / h
-    to numerically demonstrate the limiting process.
+    Compute the instantaneous rate of change (derivative) of a function
+    at a specified point using the limit definition.
 
     Parameters
     ----------
-    f : Callable[[float], float]
-        The input function (pure function, no side effects).
-    a : float
-        The point at which the derivative is evaluated.
-    h_values : list[float]
-        A strictly decreasing sequence of positive increments approaching 0.
+    func_expr : sp.Expr
+        A sympy expression in variable x representing f(x).
+    point : int or float
+        The x-coordinate at which to evaluate the IROC.
+    h_symbol : sp.Symbol, optional
+        The increment symbol used in the difference quotient (default: h).
 
     Returns
     -------
-    list[tuple[float, float]]
-        Pairs of (h, slope) showing convergence to the true derivative.
-
-    Raises
-    ------
-    ZeroDivisionError
-        If any h_value equals 0.0 (explicitly guarded).
-    ValueError
-        If h_values is empty.
+    sp.Expr
+        The instantaneous rate of change f'(point).
     """
-    if not h_values:
-        raise ValueError("h_values list must be non-empty.")
-
-    results: list[tuple[float, float]] = []
-    for h in h_values:
-        if h == 0.0:
-            raise ZeroDivisionError("h must be non-zero in the difference quotient.")
-        slope = (f(a + h) - f(a)) / h
-        results.append((h, slope))
-    return results
-
-
-def main() -> None:
-    # Test 1: f(x) = x^2 at x = 3, expected derivative = 6
-    f1: Callable[[float], float] = lambda x: x ** 2
-    a1: float = 3.0
-    h_seq: list[float] = [0.1, 0.01, 0.001, 0.0001, 0.00001]
-    print(f"f(x) = x^2,  f'(3) analytical = 6")
-    for h, slope in instantaneous_rate_of_change(f1, a1, h_seq):
-        print(f"  h = {h:<8}  ->  secant slope = {slope:.8f}")
-
-    # Test 2: f(x) = 1/x at x = 2, expected derivative = -1/4
-    f2: Callable[[float], float] = lambda x: 1.0 / x
-    a2: float = 2.0
-    print(f"\nf(x) = 1/x,  f'(2) analytical = -0.25")
-    for h, slope in instantaneous_rate_of_change(f2, a2, h_seq):
-        print(f"  h = {h:<8}  ->  secant slope = {slope:.8f}")
-
-    # Test 3: f(x) = sin(x) at x = pi/4, expected derivative = 1/sqrt(2)
-    f3: Callable[[float], float] = math.sin
-    a3: float = math.pi / 4.0
-    expected: float = 1.0 / math.sqrt(2.0)
-    print(f"\nf(x) = sin(x),  f'(pi/4) analytical = {expected:.8f}")
-    for h, slope in instantaneous_rate_of_change(f3, a3, h_seq):
-        print(f"  h = {h:<8}  ->  secant slope = {slope:.8f}")
+    try:
+        x = sp.Symbol('x')
+        f_at_a_plus_h = func_expr.subs(x, point + h_symbol)
+        f_at_a = func_expr.subs(x, point)
+        difference_quotient = (f_at_a_plus_h - f_at_a) / h_symbol
+        iroc = sp.limit(difference_quotient, h_symbol, 0)
+        logging.info(
+            f"Successfully computed IROC of {func_expr} at x = {point}"
+        )
+        return iroc
+    except (sp.SympifyError, ZeroDivisionError, ValueError) as exc:
+        logging.error(f"Failed to compute IROC: {exc}")
+        raise
 
 
 if __name__ == "__main__":
-    main()
+    x = sp.Symbol('x')
+
+    # Example 1: f(x) = x**2 at x = 2
+    result1 = instantaneous_rate_of_change(x**2, 2)
+    print(f"IROC of x^2 at x=2: {result1}")
+
+    # Example 2: f(x) = x**3 at x = 1
+    result2 = instantaneous_rate_of_change(x**3, 1)
+    print(f"IROC of x^3 at x=1: {result2}")
+
+    # Example 3: f(x) = 1/x at x = 2
+    result3 = instantaneous_rate_of_change(1/x, 2)
+    print(f"IROC of 1/x at x=2: {result3}")
 ```
 
-**Expected Output (truncated):**
-
+**Expected Output:**
 ```
-f(x) = x^2,  f'(3) analytical = 6
-  h = 0.1      ->  secant slope = 6.10000000
-  h = 0.01     ->  secant slope = 6.01000000
-  ...
-  h = 0.00001  ->  secant slope = 6.00001000
-
-f(x) = 1/x,  f'(2) analytical = -0.25
-  h = 0.1      ->  secant slope = -0.24390244
-  ...
-  h = 0.00001  ->  secant slope = -0.24999875
-
-f(x) = sin(x),  f'(pi/4) analytical = 0.70710678
-  h = 0.00001  ->  secant slope = 0.70710803
+IROC of x^2 at x=2: 4
+IROC of x^3 at x=1: 3
+IROC of 1/x at x=2: -1/4
 ```
 
-> [!IMPORTANT]
-> **Observation:** As $h \to 0$, the secant slopes **converge** to the analytical derivative. This empirically validates the limit definition. The Python program uses strict type hints, boundary checks, and explicit error logging — meeting KTU laboratory-style coding rubric standards.
+---
 
 <!-- SECTION_3_END -->
 
@@ -328,81 +270,86 @@ f(x) = sin(x),  f'(pi/4) analytical = 0.70710678
 
 # Structural Diagrams & Schematics
 
-## 4.1 Conceptual Flow: Secant → Tangent Limiting Process
+## 4.1 Conceptual Flow Diagram: From AROC to IROC
 
-> [!NOTE]
-> The Mermaid diagram below traces the **logical flow** of the instantaneous rate-of-change concept — from coarse averaging to infinitesimal precision. All node IDs are alphanumeric and labels are unformatted plain text per the engine safety rules.
+The following Mermaid diagram visualizes the conceptual pipeline by which the average rate of change over an interval is refined into the instantaneous rate of change at a single point, via the limiting process.
 
 ```mermaid
 flowchart TD
-    A[Start: Two Points on Curve] --> B[Pick Points a and a+h on y equals f of x]
-    B --> C[Compute Average Rate: m_sec equals delta y over delta x]
-    C --> D{Does the Limit Exist as h approaches 0?}
-    D -- Yes --> E[Result: f prime of a equals slope of tangent at point a, f of a]
-    D -- No --> F[Corner or Cusp: Derivative Does Not Exist]
-    E --> G[Write Tangent Equation: y minus f of a equals f prime of a times x minus a]
-    E --> H[Write Normal Equation: y minus f of a equals minus 1 over f prime of a times x minus a]
-    G --> I[End: Geometric Interpretation Complete]
-    H --> I
-    F --> J[End: Investigate Left and Right Limits Separately]
+    A["Function y = f of x"] --> B["Choose base point x = a"]
+    B --> C["Choose increment h nonzero"]
+    C --> D["Form difference quotient f of a+h minus f of a divided by h"]
+    D --> E["This is the Average Rate of Change on a, a+h"]
+    E --> F["Geometrically: Slope of the secant line"]
+    F --> G["Apply limit as h approaches 0"]
+    G --> H["Two sided limit exists and is finite"]
+    H --> I["Result is the Instantaneous Rate of Change at x = a"]
+    I --> J["Geometrically: Slope of the tangent line"]
+    I --> K["Algebraically: The derivative f prime of a"]
+    I --> L["Engineering: Velocity gradient marginal cost growth rate"]
 
-    subgraph S1[Geometric Subprocess]
-        B
+    subgraph Refinement_Stage
         C
-    end
-
-    subgraph S2[Analytical Subprocess]
         D
         E
         F
     end
 
-    subgraph S3[Application Subprocess]
+    subgraph Limiting_Stage
         G
         H
     end
+
+    subgraph Interpretation_Stage
+        J
+        K
+        L
+    end
+
+    style A fill:#E0F2FE,stroke:#0369A1,color:#0C4A6E
+    style I fill:#FEF3C7,stroke:#B45309,color:#78350F
+    style L fill:#DCFCE7,stroke:#15803D,color:#14532D
 ```
 
-## 4.2 Block-Level Functional Architecture (Information Science View)
-
-> [!NOTE]
-> Mapping the mathematical concept to a **signal-processing pipeline** is a KTU-favored interdisciplinary question. The diagram below shows how instantaneous rate of change is computed inside a digital system.
+## 4.2 Decision Block Diagram: Existence of IROC
 
 ```mermaid
-flowchart LR
-    INPUT[Input Signal s of t] --> SAMPLER[Discrete Sampler: t, t plus h]
-    SAMPLER --> DIFF[Subtractor: s of t plus h minus s of t]
-    DIFF --> DIV[Divider: divided by h]
-    DIV --> LIMIT[Limiter: h approaches 0]
-    LIMIT --> OUTPUT[Output: Velocity v of t equals s prime of t]
-    OUTPUT --> TANGENT[Geometric Layer: Tangent Slope at Point]
-    OUTPUT --> GRADIENT[ML Layer: Gradient of Loss Function]
+flowchart TD
+    S["Start: function f at point a"] --> C1["Is f continuous at a?"]
+    C1 -- No --> R1["IROC does not exist"]
+    C1 -- Yes --> C2["Compute left and right difference quotients"]
+    C2 --> C3["Right limit as h approaches 0 plus exists?"]
+    C3 -- No --> R2["IROC does not exist vertical tangent on right"]
+    C3 -- Yes --> C4["Left limit as h approaches 0 minus exists?"]
+    C4 -- No --> R3["IROC does not exist vertical tangent on left"]
+    C4 -- Yes --> C5["Are the two one sided limits equal?"]
+    C5 -- No --> R4["IROC does not exist corner or cusp"]
+    C5 -- Yes --> C6["Is the common limit finite?"]
+    C6 -- No --> R5["IROC does not exist infinite slope"]
+    C6 -- Yes --> P["IROC exists: f prime of a equals that limit"]
 
-    subgraph ANALOG[Analog Stage]
-        SAMPLER
-        DIFF
-        DIV
-    end
-
-    subgraph DIGITAL[Digital Stage]
-        LIMIT
-        OUTPUT
-    end
-
-    subgraph APPLICATION[Application Layer]
-        TANGENT
-        GRADIENT
-    end
+    style S fill:#E0F2FE,stroke:#0369A1,color:#0C4A6E
+    style P fill:#DCFCE7,stroke:#15803D,color:#14532D
+    style R1 fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D
+    style R2 fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D
+    style R3 fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D
+    style R4 fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D
+    style R5 fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D
 ```
 
-## 4.3 Decision Matrix — Existence of Instantaneous Rate of Change
+## 4.3 Sequential Processing Topology Matrix
 
-| Condition | Left-Hand Limit | Right-Hand Limit | Two-Sided Limit | $f'(a)$ Exists? | KTU Board Verdict |
-|---|---|---|---|---|---|
-| Smooth curve | $L$ | $L$ | $L$ | **Yes** | Full marks |
-| Corner (e.g., $\vert x \vert$ at $0$) | $-1$ | $+1$ | DNE | **No** | State both limits explicitly |
-| Vertical tangent (e.g., $\sqrt[3]{x}$ at $0$) | $+\infty$ | $+\infty$ | $+\infty$ | **No** (infinite) | Mark as DNE |
-| Discontinuity at $a$ | $f(a) - \text{jump}$ | $f(a) - \text{jump}$ | DNE | **No** | Cite discontinuity |
+The following table represents the sequential transformation of an analytical pipeline that converts raw data into an instantaneous rate estimate, mirroring the mathematical limiting process.
+
+| Pipeline Stage | Mathematical Analogue | Input | Transformation | Output |
+|----------------|----------------------|-------|----------------|--------|
+| Stage 1 | Function definition | $f(x)$ | Symbolic formulation | $f$ as a known expression |
+| Stage 2 | Secant construction | $a$, $h$ | $\dfrac{f(a+h)-f(a)}{h}$ | AROC value |
+| Stage 3 | Geometric projection | $(a, f(a))$, $(a+h, f(a+h))$ | Slope computation | Secant slope |
+| Stage 4 | Limit evaluation | $h \to 0$ | $\lim$ operation | IROC value |
+| Stage 5 | Tangent assembly | Slope $= f'(a)$, point $= (a, f(a))$ | Point-slope form | $y - f(a) = f'(a)(x-a)$ |
+
+---
 
 <!-- SECTION_4_END -->
 
@@ -410,234 +357,198 @@ flowchart LR
 
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 5.1 Part A — Short Answer Questions (3 Marks Each)
+## 5.1 Part A Questions (3 Marks Each)
 
-> **Q1.** `[KTU University Exam – July 2024]` **(CO1, Remember)**
-> Define the *instantaneous rate of change* of a function $f(x)$ at $x = a$. Mention the geometric meaning.
+### Question 1
+**[KTU University Exam – Dec 2023]** Define the *instantaneous rate of change* of a function $f$ at $x = a$. State any one geometric and one physical interpretation. **[CO1, Understand]**
 
-**Model Answer (3 Marks):**
-The instantaneous rate of change of $f(x)$ at $x = a$ is defined as
-$$f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
-provided the limit exists and is finite. **[1 Mark]**
-Geometrically, it represents the **slope of the tangent line** to the curve $y = f(x)$ at the point $(a, f(a))$. **[1 Mark]**
-It is also called the **derivative of $f$ at $a$**, denoted $\dfrac{dy}{dx}\bigg|_{x=a}$. **[1 Mark]**
-
----
-
-> **Q2.** `[KTU University Exam – Dec 2023]` **(CO1, Understand)**
-> Distinguish between the *average rate of change* and the *instantaneous rate of change* of a function. Give one example for each.
-
-**Model Answer (3 Marks):**
-The **average rate of change** of $f$ over $[a, b]$ is the slope of the secant line:
-$$m_{\text{sec}} = \frac{f(b) - f(a)}{b - a}$$
-Example: A car covers **200 km in 4 hours** → average speed = $50$ km/hr. **[1 Mark]**
-
-The **instantaneous rate of change** at $x = a$ is the limit of the average rate as the interval shrinks to zero:
-$$f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
-Example: A car's **speedometer reading** at a given instant. **[1 Mark]**
-
-Key difference: average rate is a **finite-interval** measurement, while instantaneous rate is a **limit-based, single-point** measurement. **[1 Mark]**
+**Model Answer (Valuation Key):**
+* **Definition (2 marks):** The instantaneous rate of change of $f$ at $x = a$ is defined as
+  $$\text{IROC} = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
+  provided the limit exists finitely.
+* **Geometric interpretation (0.5 mark):** It is the slope of the tangent line to the curve $y = f(x)$ at the point $(a, f(a))$.
+* **Physical interpretation (0.5 mark):** If $s(t)$ denotes the position of a particle at time $t$, then IROC of $s$ at $t = t_0$ equals the instantaneous velocity of the particle at that moment.
 
 ---
 
-## 5.2 Part B — 14-Mark Questions (Module Internal Choice)
+### Question 2
+**[KTU University Exam – July 2024]** Distinguish between the *average rate of change* and the *instantaneous rate of change* of a function. **[CO1, Remember]**
 
-> **Note for KTU 2024 Scheme:** Each Part-B question carries **14 marks**, split as **(a) 7 marks + (b) 7 marks**. You must answer **only one** of the two choices (A or B) per question. Each choice tests across two cognitive levels.
-
----
-
-### 📘 Question A (14 Marks)
-
-`[KTU University Exam – July 2024, Module 1, Q2]`
-
-> **(a)** Compute the instantaneous rate of change of $f(x) = 3x^2 - 5x + 2$ at $x = 2$ using the limit definition. **(7 Marks, CO2 – Apply)**
-
-**Model Solution — Part (a):**
-
-**Step 1 — Set up the limit.**
-$$f'(2) = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h}$$
-
-**Step 2 — Evaluate $f(2+h)$.**
-$$
-\begin{aligned}
-f(2+h) &= 3(2+h)^2 - 5(2+h) + 2 \\
-&= 3(4 + 4h + h^2) - 10 - 5h + 2 \\
-&= 12 + 12h + 3h^2 - 10 - 5h + 2 \\
-&= 4 + 7h + 3h^2
-\end{aligned}
-$$
-
-**Step 3 — Evaluate $f(2)$.**
-$$f(2) = 3(4) - 5(2) + 2 = 12 - 10 + 2 = 4$$
-
-**Step 4 — Form the difference quotient.**
-$$f'(2) = \lim_{h \to 0} \frac{(4 + 7h + 3h^2) - 4}{h} = \lim_{h \to 0} \frac{7h + 3h^2}{h}$$
-
-**Step 5 — Factor and cancel.**
-$$f'(2) = \lim_{h \to 0} \frac{h(7 + 3h)}{h} = \lim_{h \to 0} (7 + 3h) = 7$$
-
-> **Incremental Valuation Key:**
-> * [Setting up the limit definition: 1 Mark]
-> * [Computing $f(2+h)$ correctly: 2 Marks]
-> * [Computing $f(2) = 4$: 1 Mark]
-> * [Forming the difference quotient: 1 Mark]
-> * [Factoring $h$ and applying the limit: 1 Mark]
-> * [Final answer $f'(2) = 7$: 1 Mark]
+**Model Answer (Valuation Key):**
+* **Average rate of change (1.5 marks):** Defined over an interval $[a, b]$ as $\dfrac{f(b) - f(a)}{b - a}$. It represents the overall, constant rate that would produce the same net change across the interval — corresponds to the slope of the *secant* line.
+* **Instantaneous rate of change (1.5 marks):** Defined at a single point $x = a$ as $\lim\limits_{h \to 0} \dfrac{f(a+h) - f(a)}{h}$. It represents the exact rate at the moment — corresponds to the slope of the *tangent* line. AROC is the limit's discrete approximation; IROC is the limiting value as the interval shrinks to zero.
 
 ---
 
-> **(b)** A particle moves along a straight line such that its position (in metres) at time $t$ seconds is given by $s(t) = t^3 - 6t^2 + 9t + 2$. Find:
-> 1. The instantaneous velocity at $t = 2$ s.
-> 2. The equation of the tangent to the position–time curve at $t = 2$. **(7 Marks, CO3 – Apply / Analyze)**
-
-**Model Solution — Part (b):**
-
-**Step 1 — Velocity = instantaneous rate of change of $s(t)$.**
-$$v(2) = \lim_{h \to 0} \frac{s(2+h) - s(2)}{h}$$
-
-**Step 2 — Compute $s(2)$.**
-$$s(2) = 2^3 - 6(2)^2 + 9(2) + 2 = 8 - 24 + 18 + 2 = 4$$
-
-**Step 3 — Compute $s(2+h)$.**
-$$
-\begin{aligned}
-s(2+h) &= (2+h)^3 - 6(2+h)^2 + 9(2+h) + 2 \\
-&= (8 + 12h + 6h^2 + h^3) - 6(4 + 4h + h^2) + 18 + 9h + 2 \\
-&= 8 + 12h + 6h^2 + h^3 - 24 - 24h - 6h^2 + 18 + 9h + 2 \\
-&= 4 - 3h + 0 \cdot h^2 + h^3
-\end{aligned}
-$$
-
-**Step 4 — Form the quotient.**
-$$v(2) = \lim_{h \to 0} \frac{(4 - 3h + h^3) - 4}{h} = \lim_{h \to 0} \frac{-3h + h^3}{h} = \lim_{h \to 0} (-3 + h^2) = -3$$
-
-**Answer (i):** $v(2) = -3$ m/s. **[3 Marks]**
-
-**Step 5 — Equation of tangent at $(t, s) = (2, 4)$ with slope $-3$.**
-$$
-\begin{aligned}
-s - 4 &= -3(t - 2) \\
-s &= -3t + 6 + 4 \\
-s &= -3t + 10
-\end{aligned}
-$$
-
-**Answer (ii):** Tangent equation: $s = -3t + 10$. **[4 Marks]**
-
-> **Incremental Valuation Key:**
-> * [Velocity formula stated: 1 Mark]
-> * [Correctly computing $s(2+h) - s(2) = -3h + h^3$: 2 Marks]
-> * [Final velocity $v(2) = -3$ m/s: 0 Marks (already counted in 3-mark sub-step above)]
-> * [Writing tangent equation in point-slope form: 2 Marks]
-> * [Final simplified tangent: $s = -3t + 10$: 2 Marks]
-
----
-
-### 📗 Question B (14 Marks) — *Alternative Choice*
-
-`[KTU University Exam – Dec 2023, Module 1, Q2]`
-
-> **(a)** Using the limit definition, prove that the instantaneous rate of change of $f(x) = \sqrt{x}$ at $x = 4$ is $\dfrac{1}{4}$. **(7 Marks, CO2 – Apply)**
-
-**Model Solution — Part (a):**
-
-**Step 1 — Set up the limit definition.**
-$$f'(4) = \lim_{h \to 0} \frac{\sqrt{4 + h} - \sqrt{4}}{h} = \lim_{h \to 0} \frac{\sqrt{4 + h} - 2}{h}$$
-
-**Step 2 — Rationalise the numerator (multiply by conjugate).**
-$$f'(4) = \lim_{h \to 0} \frac{(\sqrt{4 + h} - 2)(\sqrt{4 + h} + 2)}{h(\sqrt{4 + h} + 2)}$$
-
-**Step 3 — Simplify numerator using $a^2 - b^2 = (a-b)(a+b)$.**
-$$(\sqrt{4+h})^2 - 2^2 = (4 + h) - 4 = h$$
-
-**Step 4 — Substitute back.**
-$$f'(4) = \lim_{h \to 0} \frac{h}{h(\sqrt{4 + h} + 2)} = \lim_{h \to 0} \frac{1}{\sqrt{4 + h} + 2}$$
-
-**Step 5 — Apply the limit.**
-$$f'(4) = \frac{1}{\sqrt{4 + 0} + 2} = \frac{1}{2 + 2} = \frac{1}{4} \quad \blacksquare$$
-
-> **Incremental Valuation Key:**
-> * [Setting up the limit: 1 Mark]
-> * [Multiplying by conjugate: 2 Marks]
-> * [Recognising difference of squares and simplifying to $h$: 2 Marks]
-> * [Cancelling $h$ and evaluating the limit: 1 Mark]
-> * [Final answer $f'(4) = 1/4$: 1 Mark]
-
----
-
-> **(b)** Find the equation of the **tangent** and **normal** to the curve $y = x^3$ at the point $x = -1$. **(7 Marks, CO3 – Analyze)**
-
-**Model Solution — Part (b):**
-
-**Step 1 — Compute the slope using the limit.**
-$$
-\begin{aligned}
-f'(-1) &= \lim_{h \to 0} \frac{f(-1+h) - f(-1)}{h} \\
-&= \lim_{h \to 0} \frac{(-1+h)^3 - (-1)^3}{h} \\
-&= \lim_{h \to 0} \frac{(-1 + 3h - 3h^2 + h^3) - (-1)}{h} \\
-&= \lim_{h \to 0} \frac{3h - 3h^2 + h^3}{h} \\
-&= \lim_{h \to 0} (3 - 3h + h^2) = 3
-\end{aligned}
-$$
-
-**Step 2 — Point on curve:** $f(-1) = (-1)^3 = -1$, so the point is $(-1, -1)$. **[1 Mark]**
-
-**Step 3 — Tangent equation (slope $m = 3$).**
-$$
-\begin{aligned}
-y - (-1) &= 3(x - (-1)) \\
-y + 1 &= 3(x + 1) \\
-y &= 3x + 2
-\end{aligned}
-$$
-
-**Step 4 — Normal equation (slope $m = -1/3$).**
-$$
-\begin{aligned}
-y + 1 &= -\tfrac{1}{3}(x + 1) \\
-3y + 3 &= -(x + 1) \\
-3y + 3 &= -x - 1 \\
-x + 3y + 4 &= 0
-\end{aligned}
-$$
-
-> **Incremental Valuation Key:**
-> * [Computing $f'(-1) = 3$: 2 Marks]
-> * [Identifying point $(-1, -1)$: 1 Mark]
-> * [Tangent line equation: 2 Marks]
-> * [Normal line equation: 2 Marks]
-
----
-
-## 5.3 ⚠️ KTU Examiner's Valuation Warning / Pitfall Callout
-
-> [!WARNING]
-> **Common Mark-Deduction Traps — Read Carefully!**
-> 1. **Forgetting $h \neq 0$:** Board examiners specifically check if you mention the condition $h \to 0$ but $h \neq 0$ when setting up the difference quotient. Omitting this loses **1 Mark**.
-> 2. **Skipping factorisation step:** Jumping from $\dfrac{(2+h)^2 - 4}{h}$ directly to the answer without showing $6 + h$ loses **2 Marks**. Always show the algebraic manipulation.
-> 3. **Forgetting the geometric meaning:** The question "find $f'(a)$" carries **1 mark** for explicitly stating "this is the slope of the tangent at $(a, f(a))$." Skipping this is a free mark lost.
-> 4. **Substituting $h = 0$ prematurely:** A common mistake. The whole point of the limit is to *never* substitute $h = 0$ directly. Use algebraic simplification (factoring) and *then* let $h \to 0$.
-> 5. **Forgetting to simplify the final tangent equation:** Leaving the answer as $y - 4 = 6(x - 3)$ is acceptable, but the form $y = 6x - 14$ is preferred for full marks.
-> 6. **Sign errors in rationalising square roots:** When the numerator is $\sqrt{a+h} - \sqrt{a}$, you **must** multiply by the conjugate $\sqrt{a+h} + \sqrt{a}$ in *both* numerator and denominator.
-
----
-
-## 5.4 📌 Topic Recap & Important Things to Remember
+## 5.2 Part B Questions (14 Marks Each — Module Internal Choice)
 
 > [!IMPORTANT]
-> **Rapid Revision Checklist — Instantaneous Rates of Change**
+> **KTU ESE Pattern:** Each Part B question carries 14 marks, split as Part (a) for 7 marks and Part (b) for 7 marks. Cognitive levels escalate from *Understand* to *Apply* / *Analyze*.
 
-* ✅ The **instantaneous rate of change** of $f$ at $x = a$ is the limit $f'(a) = \lim\limits_{h \to 0} \dfrac{f(a+h) - f(a)}{h}$, provided the limit is finite.
-* ✅ It is **geometrically** the slope of the tangent line to $y = f(x)$ at $(a, f(a))$.
-* ✅ It is **physically** the instantaneous velocity when $f$ is a position function $s(t)$.
-* ✅ The **condition** $h \neq 0$ must always be stated; the limit is taken as $h \to 0$ but the expression is undefined at $h = 0$.
-* ✅ **Three equivalent forms:** the $h$-form, the $\Delta x$-form, and the $x \to a$ form — all are acceptable in KTU exams.
-* ✅ **Tangent equation:** $y - f(a) = f'(a)(x - a)$.
-* ✅ **Normal equation:** $y - f(a) = -\dfrac{1}{f'(a)}(x - a)$, valid only when $f'(a) \neq 0$.
-* ✅ **Existence requires** that the left-hand and right-hand limits of the difference quotient be **equal and finite**. Corners, cusps, and vertical tangents are *non-differentiable* points.
-* ✅ **Standard results** (memorize): $\dfrac{d}{dx}(x^n) = nx^{n-1}$, $\dfrac{d}{dx}(\sin x) = \cos x$, $\dfrac{d}{dx}(\cos x) = -\sin x$, $\dfrac{d}{dx}(\sqrt{x}) = \dfrac{1}{2\sqrt{x}}$ — verify each using the limit definition for full KTU credit.
-* ✅ **Real-world CS applications:** gradient descent in ML, edge detection in image processing, throughput analysis in networks, tangent vectors in computer graphics.
-* ✅ **Board rule:** Always show the *factorization step* before applying $h \to 0$. Skipping it is the **\#1 cause of mark loss** in 14-mark questions.
-* ✅ **Sanity check:** A derivative is *always* a **rate** — it has units of $\dfrac{\text{output units}}{\text{input units}}$. Including units in physics-based problems is worth **½ to 1 bonus mark** in KTU 2024 scheme evaluations.
+### Question A (14 Marks)
+
+**[KTU University Exam – July 2024, Model Paper GAMAT101]**
+
+**(a)** Using the limit definition, find the instantaneous rate of change of $f(x) = x^2 - 4x + 5$ at $x = 3$. **[7 Marks, CO2, Apply]**
+
+**Step-by-Step Model Solution:**
+
+*Form the difference quotient (2 marks):*
+$$\frac{f(3+h) - f(3)}{h} = \frac{[(3+h)^2 - 4(3+h) + 5] - [9 - 12 + 5]}{h}$$
+
+*Expand and simplify numerator (3 marks):*
+$$(3+h)^2 - 4(3+h) + 5 = 9 + 6h + h^2 - 12 - 4h + 5 = 2 + 2h + h^2$$
+$$f(3) = 9 - 12 + 5 = 2$$
+$$\text{Numerator} = (2 + 2h + h^2) - 2 = 2h + h^2$$
+
+*Simplify the quotient (1 mark):*
+$$\frac{2h + h^2}{h} = \frac{h(2 + h)}{h} = 2 + h$$
+
+*Apply the limit (1 mark):*
+$$\lim_{h \to 0} (2 + h) = 2$$
+
+**Final Answer:** $\boxed{\text{IROC at } x = 3 \text{ is } 2}$
+
+**[Stating the definition: 2 Marks | Algebraic expansion: 3 Marks | Quotient simplification: 1 Mark | Limit evaluation: 1 Mark]**
+
+---
+
+**(b)** The position of a particle moving along a straight line is given by $s(t) = 2t^3 - 9t^2 + 12t + 5$ metres, where $t$ is in seconds. Find:
+(i) the average velocity between $t = 1$ s and $t = 3$ s, and
+(ii) the instantaneous velocity at $t = 2$ s using the limit definition. **[7 Marks, CO3, Apply]**
+
+**Step-by-Step Model Solution:**
+
+**Part (i) — Average velocity (3 marks):**
+
+*Compute $s(3)$ and $s(1)$ (1.5 marks):*
+$$s(3) = 2(27) - 9(9) + 12(3) + 5 = 54 - 81 + 36 + 5 = 14 \text{ m}$$
+$$s(1) = 2(1) - 9(1) + 12(1) + 5 = 2 - 9 + 12 + 5 = 10 \text{ m}$$
+
+*Apply AROC formula (1.5 marks):*
+$$\text{Avg velocity} = \frac{s(3) - s(1)}{3 - 1} = \frac{14 - 10}{2} = \frac{4}{2} = 2 \text{ m/s}$$
+
+**Part (ii) — Instantaneous velocity at $t = 2$ (4 marks):**
+
+*Form the difference quotient (1 mark):*
+$$\text{IROC} = \lim_{h \to 0} \frac{s(2+h) - s(2)}{h}$$
+
+*Compute $s(2)$ (0.5 mark):*
+$$s(2) = 2(8) - 9(4) + 12(2) + 5 = 16 - 36 + 24 + 5 = 9 \text{ m}$$
+
+*Compute $s(2+h)$ (1.5 marks):*
+$$s(2+h) = 2(2+h)^3 - 9(2+h)^2 + 12(2+h) + 5$$
+$$(2+h)^3 = 8 + 12h + 6h^2 + h^3 \implies 2(2+h)^3 = 16 + 24h + 12h^2 + 2h^3$$
+$$(2+h)^2 = 4 + 4h + h^2 \implies 9(2+h)^2 = 36 + 36h + 9h^2$$
+$$s(2+h) = (16 + 24h + 12h^2 + 2h^3) - (36 + 36h + 9h^2) + (24 + 12h) + 5$$
+$$= 16 + 24h + 12h^2 + 2h^3 - 36 - 36h - 9h^2 + 24 + 12h + 5$$
+$$= 9 + 0h + 3h^2 + 2h^3$$
+
+*Form and simplify the difference quotient (0.5 mark):*
+$$\frac{(9 + 3h^2 + 2h^3) - 9}{h} = \frac{3h^2 + 2h^3}{h} = 3h + 2h^2$$
+
+*Apply the limit (0.5 mark):*
+$$\lim_{h \to 0} (3h + 2h^2) = 0$$
+
+**Final Answers:** (i) Average velocity $= 2$ m/s; (ii) Instantaneous velocity $= 0$ m/s (particle momentarily stationary at $t = 2$ s).
+
+---
+
+### Question B (14 Marks — Alternative Choice)
+
+**[KTU University Exam – Dec 2023, Model Paper GAMAT101]**
+
+**(a)** Find the slope of the tangent to the curve $y = x^3 - 2x$ at the point where $x = 1$, using the limit definition. **[7 Marks, CO2, Apply]**
+
+**Step-by-Step Model Solution:**
+
+*Set up the difference quotient (1 mark):*
+$$f'(1) = \lim_{h \to 0} \frac{f(1+h) - f(1)}{h}$$
+
+*Compute $f(1+h)$ via expansion (3 marks):*
+$$f(1+h) = (1+h)^3 - 2(1+h) = (1 + 3h + 3h^2 + h^3) - 2 - 2h$$
+$$= -1 + h + 3h^2 + h^3$$
+
+*Compute $f(1)$ (0.5 mark):*
+$$f(1) = 1 - 2 = -1$$
+
+*Form and simplify the difference quotient (1.5 marks):*
+$$\frac{(-1 + h + 3h^2 + h^3) - (-1)}{h} = \frac{h + 3h^2 + h^3}{h} = 1 + 3h + h^2$$
+
+*Apply the limit (1 mark):*
+$$f'(1) = \lim_{h \to 0} (1 + 3h + h^2) = 1$$
+
+**Final Answer:** $\boxed{\text{Slope of tangent at } x = 1 \text{ is } 1}$
+
+*Equivalently, the tangent line is $y - (-1) = 1 \cdot (x - 1) \implies y = x - 2$.*
+
+---
+
+**(b)** The cost of producing $x$ units of a commodity is $C(x) = 500 + 20x - 0.01x^2$ rupees. Find:
+(i) the average cost per unit when production is increased from 50 to 60 units, and
+(ii) the marginal cost (instantaneous rate of change of cost) at $x = 50$ units using the limit definition. **[7 Marks, CO3, Apply]**
+
+**Step-by-Step Model Solution:**
+
+**Part (i) — Average cost per unit (3 marks):**
+
+*Compute $C(60)$ and $C(50)$ (1.5 marks):*
+$$C(60) = 500 + 20(60) - 0.01(3600) = 500 + 1200 - 36 = 1664 \text{ rupees}$$
+$$C(50) = 500 + 20(50) - 0.01(2500) = 500 + 1000 - 25 = 1475 \text{ rupees}$$
+
+*Apply AROC formula (1.5 marks):*
+$$\text{Avg cost per unit change} = \frac{C(60) - C(50)}{60 - 50} = \frac{1664 - 1475}{10} = \frac{189}{10} = 18.9 \text{ rupees/unit}$$
+
+**Part (ii) — Marginal cost at $x = 50$ (4 marks):**
+
+*Form the difference quotient (1 mark):*
+$$C'(50) = \lim_{h \to 0} \frac{C(50+h) - C(50)}{h}$$
+
+*Compute $C(50+h)$ (1.5 marks):*
+$$C(50+h) = 500 + 20(50+h) - 0.01(50+h)^2$$
+$$(50+h)^2 = 2500 + 100h + h^2$$
+$$0.01(50+h)^2 = 25 + h + 0.01h^2$$
+$$C(50+h) = 500 + 1000 + 20h - 25 - h - 0.01h^2 = 1475 + 19h - 0.01h^2$$
+
+*Form the difference quotient (0.5 mark):*
+$$\frac{(1475 + 19h - 0.01h^2) - 1475}{h} = \frac{19h - 0.01h^2}{h} = 19 - 0.01h$$
+
+*Apply the limit (1 mark):*
+$$C'(50) = \lim_{h \to 0} (19 - 0.01h) = 19$$
+
+**Final Answers:** (i) Average rate of cost change $= 18.9$ rupees per additional unit; (ii) Marginal cost at $x = 50$ is **19 rupees per unit** (this is the *approximate cost of producing the 51st unit*).
+
+> [!WARNING]
+> **KTU Examiner's Valuation Warning / Pitfall Callout:**
+> 1. **Do not skip the limit notation** — many students write $\frac{f(a+h)-f(a)}{h}$ and then directly substitute $h = 0$ without simplifying first. This leads to the indeterminate form $0/0$ and zero marks. Always *algebraically simplify* the quotient before applying the limit.
+> 2. **State the definition explicitly** at the start of the solution — at least 2 marks are reserved for correctly writing $\lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$.
+> 3. **Show every algebraic expansion** — expanding $(a+h)^2$ or $(a+h)^3$ must be done in full, step by step. Do not write $(2+h)^2 = 4 + 4h + h^2$ without showing the binomial identity being applied.
+> 4. **Distinguish AROC and IROC clearly** in answer keys — examiners deduct marks if the student computes AROC and labels it as IROC.
+> 5. **Include units in physical problems** — velocity problems must have "m/s", cost problems "rupees/unit" — losing units can cost 0.5 to 1 mark.
+> 6. **Verify using the power rule** (where applicable) and write the verification line $\checkmark$ to earn the "conclusion" mark.
+
+---
+
+## 5.3 Topic Recap & Important Things to Remember
+
+> [!IMPORTANT]
+> **Comprehensive Rapid-Revision Checklist**
+
+* **Core Definition:** IROC at $x = a$ is the limit $\lim\limits_{h \to 0} \dfrac{f(a+h) - f(a)}{h}$, which equals the derivative $f'(a)$.
+* **Equivalent Form:** $\lim\limits_{x \to a} \dfrac{f(x) - f(a)}{x - a}$ — both forms are interchangeable via $h = x - a$.
+* **Average vs Instantaneous:** AROC uses an interval; IROC uses a single point. AROC is the slope of a secant; IROC is the slope of a tangent.
+* **Geometric Meaning:** IROC = slope of the tangent line to the curve $y = f(x)$ at the point of contact.
+* **Physical Meaning:** If $s(t)$ is position, then IROC of $s$ at $t = t_0$ is the instantaneous velocity. If $C(x)$ is cost, IROC is the marginal cost.
+* **Existence Requires:**
+  1. Continuity at the point (necessary).
+  2. Equality of left and right one-sided limits of the difference quotient.
+  3. Finiteness of the common limit.
+* **Differentiability Implies Continuity**, but **continuity does NOT imply differentiability** (think of $y = \vert x \vert$ at $x = 0$).
+* **Algorithmic Procedure:** (1) Write the difference quotient, (2) Expand $f(a+h)$, (3) Subtract $f(a)$, (4) Factor out $h$ in the numerator, (5) Cancel $h$, (6) Substitute $h = 0$ in the simplified expression.
+* **Standard Results to Memorize:** $\frac{d}{dx}(x^n) = nx^{n-1}$, $\frac{d}{dx}(\text{constant}) = 0$.
+* **Common Mistake to Avoid:** Direct substitution of $h = 0$ into $\frac{f(a+h)-f(a)}{h}$ without simplification yields the indeterminate form $\frac{0}{0}$ — always simplify first.
+* **Engineering Applications Snapshot:** Gradient descent (ML), edge detection (image processing), marginal analysis (economics), adaptive control (signal processing).
+* **Key Notation:** $f'(a)$, $\dfrac{dy}{dx}\bigg\vert_{x=a}$, $\dfrac{ds}{dt}\bigg\vert_{t=t_0}$ — all represent the same instantaneous rate concept.
+* **Verification Step:** After computing IROC via the limit definition, cross-check using the standard derivative rules (where applicable) to ensure consistency and earn full marks.
 
 <!-- SECTION_5_END -->

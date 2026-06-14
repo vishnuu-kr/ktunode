@@ -1,0 +1,50 @@
+{
+  "course_name": "FOUNDATIONS OF COMPUTING: FROM HARDWARE ESSENTIALS TO WEB DESIGN",
+  "course_code": "GXEST203",
+  "module_number": 1,
+  "module_title": "Computer hardware cpu",
+  "topics_generated": [
+    {
+      "title": "Computer Hardware – CPU",
+      "slug": "computer-hardware-cpu",
+      "path": "computer-hardware-cpu/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Memory - Memory hierarchy: registers, cache, RAM, virtual memory",
+      "slug": "memory-memory-hierarchy-registers-cache-ram-virtual-memory",
+      "path": "memory-memory-hierarchy-registers-cache-ram-virtual-memory/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Motherboard - Computer Peripherals - I/O devices",
+      "slug": "motherboard-computer-peripherals-i-o-devices",
+      "path": "motherboard-computer-peripherals-i-o-devices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Storage devices- HDDs, SSDs, optical drives",
+      "slug": "storage-devices-hdds-ssds-optical-drives",
+      "path": "storage-devices-hdds-ssds-optical-drives/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "I/O communication and device management",
+      "slug": "i-o-communication-and-device-management",
+      "path": "i-o-communication-and-device-management/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interface cards – Buses – Firmware - Boot process",
+      "slug": "interface-cards-buses-firmware-boot-process",
+      "path": "interface-cards-buses-firmware-boot-process/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

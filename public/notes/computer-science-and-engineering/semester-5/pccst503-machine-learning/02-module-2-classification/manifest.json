@@ -1,0 +1,120 @@
+{
+  "course_name": "MACHINE LEARNING",
+  "course_code": "PCCST503",
+  "module_number": 2,
+  "module_title": "Classification",
+  "topics_generated": [
+    {
+      "title": "Classification  - Logistic regression",
+      "slug": "classification-logistic-regression",
+      "path": "classification-logistic-regression/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Naïve Bayes",
+      "slug": "na-ve-bayes",
+      "path": "na-ve-bayes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "KNN",
+      "slug": "knn",
+      "path": "knn/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Decision Trees – ID3",
+      "slug": "decision-trees-id3",
+      "path": "decision-trees-id3/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Generalisation and Overfitting - Idea of overfitting",
+      "slug": "generalisation-and-overfitting-idea-of-overfitting",
+      "path": "generalisation-and-overfitting-idea-of-overfitting/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "LASSO and RIDGE regularization",
+      "slug": "lasso-and-ridge-regularization",
+      "path": "lasso-and-ridge-regularization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Idea of Training, Testing, Validation",
+      "slug": "idea-of-training-testing-validation",
+      "path": "idea-of-training-testing-validation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluation measures – Classification - Precision",
+      "slug": "evaluation-measures-classification-precision",
+      "path": "evaluation-measures-classification-precision/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Recall",
+      "slug": "recall",
+      "path": "recall/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Accuracy",
+      "slug": "accuracy",
+      "path": "accuracy/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "F-Measure",
+      "slug": "f-measure",
+      "path": "f-measure/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Receiver Operating Characteristic Curve(ROC)",
+      "slug": "receiver-operating-characteristic-curve-roc",
+      "path": "receiver-operating-characteristic-curve-roc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Area Under Curve (AUC).",
+      "slug": "area-under-curve-auc",
+      "path": "area-under-curve-auc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Regression - Mean Absolute Error (MAE)",
+      "slug": "regression-mean-absolute-error-mae",
+      "path": "regression-mean-absolute-error-mae/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Root Mean Squared Error (RMSE)",
+      "slug": "root-mean-squared-error-rmse",
+      "path": "root-mean-squared-error-rmse/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "R Squared/Coefficient of Determination.",
+      "slug": "r-squared-coefficient-of-determination",
+      "path": "r-squared-coefficient-of-determination/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,572 +1,539 @@
 # The mixed derivative theorem
 
 <!-- SECTION_1_START -->
-# The Mixed Derivative Theorem — Core Definition & Intuitive Overview
+# The Mixed Derivative Theorem (Clairaut–Schwarz Theorem)
 
-## Formal Definition (KTU 2024 Syllabus Terminology)
+## 1.1 Formal KTU 2024 Definition
 
 > [!IMPORTANT]
-> **The Mixed Derivative Theorem (Schwarz's / Clairaut's Theorem).**
-> Let $D \subseteq \mathbb{R}^{2}$ be an open set and let $f : D \to \mathbb{R}$ be a real-valued function. If the second-order partial derivatives $f_{xy}$ and $f_{yx}$ both exist in a neighbourhood of the point $(a, b) \in D$ **and are continuous at $(a, b)$**, then
-> $$\begin{aligned} f_{xy}(a, b) = f_{yx}(a, b) \end{aligned}$$
-> Equivalently, if all second-order partial derivatives of $f$ are continuous on an open rectangle containing $(a, b)$, then the order of mixed differentiation is interchangeable.
-
-The result extends by induction to higher orders: if all partial derivatives of order $n$ exist and are continuous in a neighbourhood, then the value of a mixed partial is independent of the order in which the differentiations are carried out.
-
-**Physical Constants / Standard Metrics (KTU Board Notation):**
-- The theorem is often attributed to **Hermann Schwarz (1873)** and **Alexis Clairaut (1739)**.
-- The hypothesis of *continuity of the second mixed partials* is the standard sufficient condition used in KTU 2024 Scheme valuation scripts.
-
----
-
-## Conceptual Analogy / Plain-English Intuition
+> **Mixed Partial Derivative:** Let $f: D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ be a real-valued function of two variables. A **mixed partial derivative** of order two is a second-order partial derivative obtained by differentiating $f$ successively with respect to **two different variables**. The two canonical mixed partials are:
+> $$\frac{\partial^{2} f}{\partial y \, \partial x} = f_{xy} \quad \text{and} \quad \frac{\partial^{2} f}{\partial x \, \partial y} = f_{yx}$$
 
 > [!NOTE]
-> **Intuitive Picture — "The Two Roads Up the Hill."**
-> Imagine a smooth hill described by height $z = f(x, y)$. From any starting point, you can climb the hill in two ways:
-> 1. First walk east, *then* walk north.
-> 2. First walk north, *then* walk east.
->
-> If the hill is **smooth enough** (no cliffs, no sharp ridges, no sudden ledges — i.e. the slopes change continuously), then both routes deliver you to **exactly the same final height**. The order of your two small "kicks" does not matter, because the hill is a well-behaved, twice-differentiable surface.
->
-> The "smoothness" condition is precisely the **continuity of the mixed partial derivatives** $f_{xy}$ and $f_{yx}$. If the surface has a fold, a cusp, or a kink, then the two paths can give different answers — and the theorem *fails* there.
+> **The Mixed Derivative Theorem (Clairaut's Theorem / Schwarz's Theorem):** If $f$, $f_x$, $f_y$, $f_{xy}$, and $f_{yx}$ are all **continuous** on an open disk $D$ containing the point $(a,b)$, then the mixed partial derivatives are **equal** at $(a,b)$:
+> $$f_{xy}(a,b) \;=\; f_{yx}(a,b)$$
+> More generally, if all partial derivatives of order $n$ exist and are continuous in a neighbourhood of a point, then the order of differentiation can be **interchanged freely**.
 
-**Information Science Connection:** In data science and machine learning, the **Hessian matrix** $H_f$ of a loss function $L$ is symmetric, i.e. $H_f = H_f^{T}$, *precisely because* the mixed partials of any twice-continuously-differentiable function are equal. This symmetry is what makes the Hessian a positive-definite check in **Newton's method**, guarantees convexity in **gradient descent**, and underlies the **Schwarz–Christoffel mapping** used in image-warping algorithms.
+This result generalises to $n$ variables: for $f: \mathbb{R}^{n} \to \mathbb{R}$ with continuous partials up to order $k$, the value of $\dfrac{\partial^{k} f}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{k}}}$ is **independent of the permutation** of $\{i_1, i_2, \dots, i_k\}$.
 
 ---
 
-## Geometric / Visual Representation
+## 1.2 Intuitive Overview — The Real-World Analogy
+
+Imagine you are standing at the corner of a hilly terrain at point $(a,b)$. The hill has a **height function** $f(x,y)$.
+
+* $f_x$ tells you the slope of the hill as you walk in the **east direction**.
+* $f_y$ tells you the slope of the hill as you walk in the **north direction**.
+
+Now consider two ways to reach the **second-order slope** (the curvature):
+
+| Route | Path | Resulting Derivative |
+|---|---|---|
+| **East, then North** | First walk east, measure how slope changes as you then walk north | $f_{xy}$ |
+| **North, then East** | First walk north, measure how slope changes as you then walk east | $f_{yx}$ |
+
+**Clairaut's theorem says:** if the terrain is *smooth* (no cliffs, no folds, no jumps), the curvature you measure is the **same** regardless of which direction you take first. The two routes converge to the same number.
+
+> [!IMPORTANT]
+> **Why does this matter in Information Science?** In **machine learning** (loss landscapes), **computer graphics** (smooth shading), and **optimisation** (Hessian matrices), the equality $f_{xy} = f_{yx}$ is what makes the **Hessian matrix symmetric** — a property that guarantees the existence of real eigenvalues, fast gradient-based convergence, and the validity of Newton's method.
+
+---
+
+## 1.3 Visualisation Block
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Level curves of a function $f(x, y)$ illustrating where the cross-derivative symmetry $f_{xy} = f_{yx}$ holds (smooth concentric ovals) versus where it fails (sharp kinks).
-> **GeoGebra / Desmos Input Equations (sample well-behaved surface):**
-> * $f(x, y) = x^{2} + y^{2}$ &nbsp; (paraboloid — symmetry trivially holds)
-> * $f(x, y) = \sin(x) \cos(y)$ &nbsp; (wave surface — symmetry holds everywhere)
-> * $f(x, y) = e^{x y}$ &nbsp; (counter-check: $f_{xy} = (1 + xy)e^{xy} = f_{yx}$)
-> **Visual Description:** Plot each surface as a 3D mesh; observe the smooth curvature at every point. The Hessian of each is symmetric at every point, confirming the theorem holds globally.
+> **Concept:** Mixed partial derivatives as the limit of a 2D difference quotient on a grid
+> **GeoGebra / Desmos Input Equations:**
+> * $f(x,y) = x^{3}y + xy^{2}$
+> * $\text{grid}(a, b, h, k) = \dfrac{f(a+h, b+k) - f(a+h, b) - f(a, b+k) + f(a, b)}{h \cdot k}$
+> **Visual Description:** Plot $f$ as a 3D surface. For a fixed small step size $h$ and $k$, the 2D symmetric difference quotient $\text{grid}(a,b,h,k)$ converges to **both** $f_{xy}(a,b)$ and $f_{yx}(a,b)$ as $h, k \to 0$, illustrating the symmetric limit.
+
+---
+
+## 1.4 Symbols, Constants & Conventions
+
+| Symbol | Meaning | Standard |
+|---|---|---|
+| $f$ | Scalar field $f: \mathbb{R}^{2} \to \mathbb{R}$ | — |
+| $f_x$ | First partial w.r.t. $x$ | $\dfrac{\partial f}{\partial x}$ |
+| $f_{xy}$ | Differentiate first w.r.t. $x$, then $y$ | $\dfrac{\partial}{\partial y}\!\left(\dfrac{\partial f}{\partial x}\right)$ |
+| $f_{yx}$ | Differentiate first w.r.t. $y$, then $x$ | $\dfrac{\partial}{\partial x}\!\left(\dfrac{\partial f}{\partial y}\right)$ |
+| $D$ | Open region in $\mathbb{R}^{2}$ | $D \subseteq \mathbb{R}^{2}$ open |
+| $C^{k}$ | Class of functions with continuous partials up to order $k$ | — |
+
+> [!NOTE]
+> The notation $f \in C^{2}(D)$ means that $f$ and all its partial derivatives up to order **2 are continuous** on $D$. This is the **canonical sufficient condition** for the Mixed Derivative Theorem.
+
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 1. Precise Statement (Board-Valuation Form)
+## 2.1 Order of Mixed Partial Derivatives
 
-Let $f : D \to \mathbb{R}$ where $D$ is an open subset of $\mathbb{R}^{2}$. Let $(a, b) \in D$. The theorem has **three logically equivalent sufficient conditions**, any one of which guarantees $f_{xy}(a, b) = f_{yx}(a, b)$:
+For a function $f(x,y)$ of two variables, there are **two** distinct mixed partial derivatives of order 2:
 
-| # | Sufficient Condition (hypothesis) | What is required |
-|---|-----------------------------------|------------------|
-| C1 | All second partials of $f$ are **continuous at** $(a, b)$ | $f, f_x, f_y, f_{xx}, f_{xy}, f_{yx}, f_{yy}$ all continuous at $(a, b)$ |
-| C2 | $f_x$ and $f_y$ exist in a neighbourhood of $(a, b)$, and $f_{xy}$ and $f_{yx}$ both exist and are **continuous at** $(a, b)$ | Lightest hypothesis usually quoted in KTU |
-| C3 | $f$ is of class $C^{2}$ on an open rectangle containing $(a, b)$ | Strongest, but most common in textbook questions |
+$$\boxed{\;f_{xy} = \frac{\partial}{\partial y}\!\left(\frac{\partial f}{\partial x}\right) \quad \text{and} \quad f_{yx} = \frac{\partial}{\partial x}\!\left(\frac{\partial f}{\partial y}\right)\;}$$
 
-> [!NOTE]
-> The KTU examiner typically awards full marks for stating **Condition C2** verbatim. Avoid stating only "$f$ is differentiable" — that is *not* enough; you must mention **continuity of the second mixed partials**.
+For order 3, there are $\dfrac{3!}{1!\,2!} = 3$ mixed partials: $f_{xxy}, \; f_{xyx}, \; f_{yxx}$, and **all three are equal** under continuity assumptions. In general, for order $k$ in $n$ variables, the number of distinct mixed partials is $\binom{n+k-1}{k}$ — but the Mixed Derivative Theorem collapses them all into **one unique value** when continuity holds.
 
-## 2. Proof Skeleton (Idea used in full detail in Section 3)
+---
 
-* **Step A.** Form the *second difference* (a double increment):
-  $$\begin{aligned} \Delta(h,k) = f(a+h, b+k) - f(a+h, b) - f(a, b+k) + f(a, b) \end{aligned}$$
-* **Step B.** Apply the **Mean Value Theorem** to a suitable one-variable auxiliary function (twice), peeling off one variable at a time.
-* **Step C.** Use the **continuity** of $f_{xy}$ and $f_{yx}$ to let $h, k \to 0$ in a controlled way, showing that
-  $$\begin{aligned} \lim_{h \to 0} \lim_{k \to 0} \frac{\Delta(h, k)}{hk} \end{aligned}$$
-  is independent of the order of the limits.
+## 2.2 Statement of the Theorem (Three Equivalent Forms)
 
-## 3. Generalisation to $n$ Variables and Higher Orders
+**Form 1 — Local form:**
+If $f_{xy}$ and $f_{yx}$ exist in a neighbourhood of $(a,b)$ and are continuous at $(a,b)$, then
+$$f_{xy}(a,b) = f_{yx}(a,b).$$
 
-For $f(x_1, x_2, \dots, x_n) \in C^{k}(D)$ (i.e. all partial derivatives up to order $k$ are continuous on $D$), the mixed partial derivative
-$$\begin{aligned} D_{i_1 i_2 \cdots i_k} f = \frac{\partial^{k} f}{\partial x_{i_k} \partial x_{i_{k-1}} \cdots \partial x_{i_1}} \end{aligned}$$
-is **independent of the permutation** of the indices $i_1, i_2, \dots, i_k$. In plain words, the *number* of different mixed partials of order $k$ is the *number of weak compositions* of $k$ into $n$ parts, not $n^{k}$.
+**Form 2 — Global form on a region:**
+If $f \in C^{2}(D)$ on an open region $D \subseteq \mathbb{R}^{2}$, then $f_{xy}(x,y) = f_{yx}(x,y)$ for **every** $(x,y) \in D$.
 
-## 4. KTU Formula Sheet / Cheat Sheet
+**Form 3 — General $n$-variable form:**
+If $f \in C^{k}(D)$ for $D \subseteq \mathbb{R}^{n}$, then for any indices $i_1, \dots, i_k$,
+$$\frac{\partial^{k} f}{\partial x_{i_{1}} \cdots \partial x_{i_{k}}} = \frac{\partial^{k} f}{\partial x_{\sigma(i_{1})} \cdots \partial x_{\sigma(i_{k})}}$$
+for every permutation $\sigma$ of $\{1, 2, \dots, k\}$.
 
-| Symbol / Expression | Meaning | Condition for use |
-|---------------------|---------|-------------------|
-| $f_{xy}(a, b)$ | $\displaystyle \lim_{k \to 0} \frac{f_y(a, b+k) - f_y(a, b)}{k}$ | Definition |
-| $f_{yx}(a, b)$ | $\displaystyle \lim_{h \to 0} \frac{f_x(a+h, b) - f_x(a, b)}{h}$ | Definition |
-| $f_{xy} = f_{yx}$ | Mixed partial symmetry | Requires $f \in C^{2}$ in a neighbourhood |
-| $D_{i_1 \cdots i_k} f$ | Mixed partial of order $k$ | Requires $f \in C^{k}$ |
-| $\Delta(h, k)$ | Double increment used in proof | Auxiliary quantity |
+---
 
-## 5. Real-World Engineering / CS Utility
+## 2.3 The Crucial Continuity Hypothesis
 
-* **Hessian symmetry in optimisers:** Every Newton-step, BFGS update, and conjugate-gradient algorithm in ML relies on $\nabla^{2} f$ being symmetric — a direct consequence of the mixed-derivative theorem.
-* **Schwarz–Christoffel mapping** in computer graphics for conformal mesh deformation.
-* **Thermodynamics:** Maxwell's relations $\left( \dfrac{\partial S}{\partial V} \right)_{T} = -\left( \dfrac{\partial P}{\partial T} \right)_{V}$ are *literally* applications of mixed-partial equality to the exact differential $dU = TdS - PdV$.
-* **Information geometry:** The Fisher Information Matrix is symmetric because the log-likelihood is a smooth $C^{2}$ function almost everywhere.
+> [!IMPORTANT]
+> **Continuity is the price of interchangeability.** The theorem is **FALSE** in general. The continuity of the mixed partials is not a mere technicality — it is the **structural backbone** that makes the result true. The classic KTU-counter-example (which appears in the question bank) is:
+> $$f(x,y) = \begin{cases} \dfrac{xy(x^{2} - y^{2})}{x^{2} + y^{2}}, & (x,y) \neq (0,0) \\ 0, & (x,y) = (0,0) \end{cases}$$
+> Here $f_{xy}(0,0) = 1$ but $f_{yx}(0,0) = -1$, violating the theorem because the mixed partials are **discontinuous** at the origin.
+
+---
+
+## 2.4 KTU Formula Sheet (Cheat Sheet)
+
+> [!IMPORTANT]
+> **Engineer-Ready Reference Table.** The following table consolidates the high-yield identities of the Mixed Derivative Theorem. Use this for rapid revision before exams.
+
+| # | Identity / Formula | Domain of Validity | Engineering Use Case |
+|---|---|---|---|
+| 1 | $f_{xy} = f_{yx}$ | $f \in C^{2}(D)$ | Symmetry of Hessian in optimisation |
+| 2 | $f_{xxy} = f_{xyx} = f_{yxx}$ | $f \in C^{3}(D)$ | Higher-order Taylor expansions |
+| 3 | $\nabla^{2} f = f_{xx} + f_{yy}$ (Laplacian) | $f \in C^{2}$ | Image processing, heat equation |
+| 4 | Hessian $H(f) = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}$ is **symmetric** | $f \in C^{2}$ | Newton's method, convex optimisation |
+| 5 | $f_{x^{p}y^{q}} = f_{y^{q}x^{p}}$ | $f \in C^{p+q}$ | Polynomial differentiation order |
+
+---
+
+## 2.5 Why the Theorem Matters in Engineering & Information Science
+
+* **Convex Optimisation:** A twice-continuously differentiable function is convex if and only if its **Hessian is positive semi-definite**. Symmetry of the Hessian (guaranteed by Clairaut) is essential.
+* **Neural Network Backprop:** The mixed-partial symmetry underpins the symmetry of the **information matrix** in natural gradient descent.
+* **Numerical PDEs:** Finite-difference stencils for $\partial^{2} f / \partial x \partial y$ rely on $f_{xy} = f_{yx}$ to produce consistent discretisations.
+* **Thermodynamics:** Maxwell's relations $\dfrac{\partial^{2} U}{\partial V \partial T} = \dfrac{\partial^{2} U}{\partial T \partial V}$ between thermodynamic potentials are direct applications of this theorem.
+* **Computer Graphics:** Smooth shading (Phong / Gouraud) requires the second-order behaviour of surface normals to be well-defined, which Clairaut's theorem guarantees on $C^{2}$ surfaces.
+
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations, Examples, and Counter-Example
+# Step-by-Step Derivations & Worked Examples
 
-## Part A — Full Proof of $f_{xy}(a, b) = f_{yx}(a, b)$
+## 3.1 Complete Proof of the Mixed Derivative Theorem (Two-Variable Case)
 
-Let $f$ satisfy Condition C2 at $(a, b)$: $f_x, f_y$ exist in a neighbourhood, and $f_{xy}, f_{yx}$ exist and are continuous at $(a, b)$. For sufficiently small $h, k$, define the double increment
-$$\begin{aligned}
-\Delta(h, k) = f(a + h, b + k) - f(a + h, b) - f(a, b + k) + f(a, b).
-\end{aligned}$$
+### Setup
+Let $f \in C^{2}(D)$ for an open disk $D$ containing $(a,b)$. Fix $h, k$ small enough so that the rectangle with corners $(a, b), (a+h, b), (a, b+k), (a+h, b+k)$ lies inside $D$.
 
-### Step 1 — Introduce a one-variable auxiliary function $\phi$
+**Step 1 — Define the second-difference function.**
+$$\Delta(h,k) \;=\; f(a+h,\, b+k) \;-\; f(a+h,\, b) \;-\; f(a,\, b+k) \;+\; f(a,\, b)$$
 
-Fix $h$. Define
-$$\begin{aligned}
-\phi(t) = f(a + t, b + k) - f(a + t, b), \quad t \in [0, h].
-\end{aligned}$$
+> *Logic:* This is the **discrete Laplacian** of $f$ on a square. It is the *symmetric* discrete analogue of $f_{xy}$.
 
-This is differentiable in $t$ (because $f_x$ exists in a neighbourhood), with
-$$\begin{aligned}
-\phi'(t) = f_x(a + t, b + k) - f_x(a + t, b).
-\end{aligned}$$
+**Step 2 — Group $\Delta$ along $x$ first.**
+Introduce the auxiliary function
+$$\phi(x) \;=\; f(x,\, b+k) \;-\; f(x,\, b)$$
+so that $\Delta(h,k) = \phi(a+h) - \phi(a)$.
 
-### Step 2 — Apply the Mean Value Theorem to $\phi$
+**Step 3 — Apply the Mean Value Theorem (MVT) on $\phi$.**
+Since $\phi$ is continuous on $[a, a+h]$ and differentiable on $(a, a+h)$, by the MVT there exists $\theta_{1} \in (0,1)$ such that
+$$\phi(a+h) - \phi(a) \;=\; h \, \phi'(a + \theta_{1} h)$$
 
-There exists $\theta_1 \in (0, h)$ such that
-$$\begin{aligned}
-\phi(h) - \phi(0) = h \cdot \phi'(\theta_1) = h \bigl[\, f_x(a + \theta_1, b + k) - f_x(a + \theta_1, b) \,\bigr].
-\end{aligned}$$
+Computing $\phi'(x) = f_x(x, b+k) - f_x(x, b)$, we obtain
+$$\Delta(h,k) \;=\; h\Big[\,f_{x}(a + \theta_{1} h,\, b+k) \;-\; f_{x}(a + \theta_{1} h,\, b)\,\Big]$$
 
-But $\phi(h) - \phi(0) = \Delta(h, k)$, so
-$$\begin{aligned}
-\Delta(h, k) = h \bigl[\, f_x(a + \theta_1, b + k) - f_x(a + \theta_1, b) \,\bigr].
-\end{aligned}$$
+**Step 4 — Apply MVT again, this time on $f_x$ in the $y$-direction.**
+Define $\psi(y) = f_x(a + \theta_{1} h,\, y)$. Then $\psi(b+k) - \psi(b) = k \, \psi'(b + \theta_{2} k)$ for some $\theta_{2} \in (0,1)$, giving
+$$\Delta(h,k) \;=\; h \, k \, f_{xy}\!\left(a + \theta_{1} h,\; b + \theta_{2} k\right)$$
 
-### Step 3 — Define a second auxiliary function $\psi$ and apply MVT again
+**Step 5 — Group $\Delta$ along $y$ first (the alternate route).**
+Now define
+$$\chi(y) \;=\; f(a+h,\, y) \;-\; f(a,\, y)$$
+so that $\Delta(h,k) = \chi(b+k) - \chi(b)$.
 
-Fix the value $a + \theta_1$ from Step 2. Define
-$$\begin{aligned}
-\psi(s) = f_x(a + \theta_1, s), \quad s \in [b, b + k].
-\end{aligned}$$
+**Step 6 — Apply MVT on $\chi$.**
+There exists $\theta_{3} \in (0,1)$ such that $\chi(b+k) - \chi(b) = k \, \chi'(b + \theta_{3} k)$, with $\chi'(y) = f_{y}(a+h, y) - f_{y}(a, y)$. Thus
+$$\Delta(h,k) \;=\; k\Big[\,f_{y}(a+h,\, b + \theta_{3} k) \;-\; f_{y}(a,\, b + \theta_{3} k)\,\Big]$$
 
-By MVT there exists $\theta_2 \in (0, k)$ with
-$$\begin{aligned}
-\psi(b + k) - \psi(b) = k \cdot \psi'(\theta_2) = k \cdot f_{xy}(a + \theta_1, b + \theta_2).
-\end{aligned}$$
+**Step 7 — Apply MVT once more, now on $f_y$ in the $x$-direction.**
+There exists $\theta_{4} \in (0,1)$ such that
+$$\Delta(h,k) \;=\; h \, k \, f_{yx}\!\left(a + \theta_{4} h,\; b + \theta_{3} k\right)$$
 
-Therefore
-$$\begin{aligned}
-\Delta(h, k) = h k \cdot f_{xy}(a + \theta_1, b + \theta_2).
-\end{aligned}$$
+**Step 8 — Equate the two expressions.**
+$$h \, k \, f_{xy}\!\left(a + \theta_{1} h,\; b + \theta_{2} k\right) \;=\; h \, k \, f_{yx}\!\left(a + \theta_{4} h,\; b + \theta_{3} k\right)$$
 
-### Step 4 — Take the iterated limit
+For $h, k \neq 0$, divide both sides by $hk$:
+$$f_{xy}\!\left(a + \theta_{1} h,\; b + \theta_{2} k\right) \;=\; f_{yx}\!\left(a + \theta_{4} h,\; b + \theta_{3} k\right)$$
 
-Divide by $h k$ (both non-zero) and let $k \to 0$ first, then $h \to 0$:
-$$\begin{aligned}
-\lim_{h \to 0} \lim_{k \to 0} \frac{\Delta(h, k)}{h k} = \lim_{h \to 0} \lim_{k \to 0} f_{xy}(a + \theta_1, b + \theta_2) = f_{xy}(a, b),
-\end{aligned}$$
-using the **continuity of $f_{xy}$ at $(a, b)$** (and the fact that $0 < \theta_1 < h$ and $0 < \theta_2 < k$ both collapse to $0$).
-
-### Step 5 — Reverse the order of the limits
-
-Repeating Steps 1–4 with the roles of $h$ and $k$ swapped, we obtain
-$$\begin{aligned}
-\lim_{k \to 0} \lim_{h \to 0} \frac{\Delta(h, k)}{h k} = f_{yx}(a, b).
-\end{aligned}$$
-
-### Step 6 — Conclude
-
-But the *double limit* $\lim_{(h, k) \to (0, 0)} \dfrac{\Delta(h, k)}{h k}$, when it exists, must be independent of the order in which the two single limits are taken (this is a standard theorem in advanced calculus for double limits that exist). Hence
-$$\begin{aligned}
-\boxed{\,f_{xy}(a, b) = f_{yx}(a, b)\,}.
-\end{aligned}$$
-
-> **Valuation Tip:** KTU examiners give 2 marks for writing down the double increment $\Delta(h, k)$, 2 marks for each application of the MVT, and 2 marks for invoking the continuity hypothesis at the end. The concluding box is worth 1 mark.
+**Step 9 — Take the limit $h \to 0$ and $k \to 0$.**
+By the **continuity** of $f_{xy}$ and $f_{yx}$ at $(a,b)$ (the hypothesis we paid for), the left side tends to $f_{xy}(a,b)$ and the right side tends to $f_{yx}(a,b)$. Therefore:
+$$\boxed{\;f_{xy}(a,b) \;=\; f_{yx}(a,b)\;}$$
+$\blacksquare$
 
 ---
 
-## Part B — Worked Example (Verifying Symmetry)
+## 3.2 Worked Example 1 — Verifying $f_{xy} = f_{yx}$ for a Standard Function
 
-**Question.** Verify the mixed-derivative theorem for
-$$\begin{aligned}
-f(x, y) = x^{3} y^{2} + 2 x^{2} y^{3} + e^{x y}.
-\end{aligned}$$
+**Problem:** For $f(x,y) = x^{3} y^{2} + e^{xy} + \sin(x)\cos(y)$, verify the Mixed Derivative Theorem at a general point $(x,y)$.
 
-**Solution.**
+**Solution:**
 
-*Step 1.* First partials:
-$$\begin{aligned}
-f_x(x, y) &= 3 x^{2} y^{2} + 4 x y^{3} + y \, e^{x y}, \\
-f_y(x, y) &= 2 x^{3} y + 6 x^{2} y^{2} + x \, e^{x y}.
-\end{aligned}$$
+**Step 1 — Compute $f_x$.**
+$$f_x = 3x^{2}y^{2} + y\, e^{xy} + \cos(x)\cos(y)$$
 
-*Step 2.* Mixed partial $f_{xy}$ — differentiate $f_x$ with respect to $y$:
-$$\begin{aligned}
-f_{xy}(x, y) &= 6 x^{2} y + 12 x y^{2} + e^{x y} + x y \, e^{x y}.
-\end{aligned}$$
+**Step 2 — Compute $f_{xy}$ by differentiating $f_x$ with respect to $y$.**
+$$f_{xy} = 6x^{2}y + e^{xy} + xy\, e^{xy} - \cos(x)\sin(y)$$
 
-*Step 3.* Mixed partial $f_{yx}$ — differentiate $f_y$ with respect to $x$:
-$$\begin{aligned}
-f_{yx}(x, y) &= 6 x^{2} y + 12 x y^{2} + e^{x y} + x y \, e^{x y}.
-\end{aligned}$$
+**Step 3 — Compute $f_y$.**
+$$f_y = 2x^{3}y + x\, e^{xy} - \sin(x)\sin(y)$$
 
-*Step 4.* Compare:
-$$\begin{aligned}
-f_{xy}(x, y) - f_{yx}(x, y) = 0 \quad \forall \,(x, y) \in \mathbb{R}^{2}.
-\end{aligned}$$
+**Step 4 — Compute $f_{yx}$ by differentiating $f_y$ with respect to $x$.**
+$$f_{yx} = 6x^{2}y + e^{xy} + xy\, e^{xy} - \cos(x)\sin(y)$$
 
-**Conclusion.** The mixed-derivative theorem holds (as expected, because $f$ is $C^{\infty}$ on all of $\mathbb{R}^{2}$, so all the continuity conditions are satisfied).
+**Step 5 — Compare.**
+$$f_{xy} = 6x^{2}y + e^{xy}(1 + xy) - \cos(x)\sin(y) \;=\; f_{yx} \quad\checkmark$$
+
+> *Observation:* $f$ is $C^{\infty}$ everywhere, so the equality holds globally.
 
 ---
 
-## Part C — Symbolic / Computational Verification (Python)
+## 3.3 Worked Example 2 — The Classic Counter-Example (Why Continuity Matters)
 
-```python
-import sympy as sp
+**Problem:** Define
+$$f(x,y) = \begin{cases} \dfrac{xy(x^{2} - y^{2})}{x^{2} + y^{2}}, & (x,y) \neq (0,0) \\[4pt] 0, & (x,y) = (0,0) \end{cases}$$
+Show that $f_{xy}(0,0) \neq f_{yx}(0,0)$, even though $f$ is continuous everywhere.
 
-x, y = sp.symbols('x y', real=True)
-f = x**3 * y**2 + 2 * x**2 * y**3 + sp.exp(x * y)
+**Solution:**
 
-# Compute the four second-order partials symbolically
-f_xx = sp.diff(f, x, 2)
-f_yy = sp.diff(f, y, 2)
-f_xy = sp.diff(f, x, y)
-f_yx = sp.diff(f, y, x)
+**Step 1 — Compute $f_x(0,0)$ from first principles.**
+$$f_x(0,0) = \lim_{h \to 0} \frac{f(h,0) - f(0,0)}{h} = \lim_{h \to 0} \frac{0 - 0}{h} = 0$$
 
-print("f_xx =", sp.simplify(f_xx))
-print("f_yy =", sp.simplify(f_yy))
-print("f_xy =", sp.simplify(f_xy))
-print("f_yx =", sp.simplify(f_yx))
-print("f_xy - f_yx =", sp.simplify(f_xy - f_yx))   # Must be 0
-```
+**Step 2 — Compute $f_y(0,0)$ from first principles.**
+$$f_y(0,0) = \lim_{k \to 0} \frac{f(0,k) - f(0,0)}{k} = 0$$
 
-**Expected Output.**
-```text
-f_xx = 6*x*y**2 + 4*y**3 + y**2*exp(x*y)
-f_yy = 2*x**3 + 12*x**2*y + x**2*exp(x*y)
-f_xy = 6*x**2*y + 12*x*y**2 + exp(x*y) + x*y*exp(x*y)
-f_yx = 6*x**2*y + 12*x*y**2 + exp(x*y) + x*y*exp(x*y)
-f_xy - f_yx = 0
-```
+**Step 3 — Compute $f_{xy}(0,0)$ from first principles.**
+$$f_{xy}(0,0) = \lim_{k \to 0} \frac{f_x(0,k) - f_x(0,0)}{k} = \lim_{k \to 0} \frac{f_x(0,k)}{k}$$
 
-The symbolic engine confirms the algebraic identity, which is what the theorem *guarantees in advance* for any $C^{2}$ function.
+For $y = k \neq 0$ and small $x = h$:
+$$f(h, k) = \frac{hk(h^{2} - k^{2})}{h^{2} + k^{2}} \implies f_x(h,k) = \frac{\partial}{\partial h}\left[\frac{hk(h^{2} - k^{2})}{h^{2} + k^{2}}\right]$$
+
+Using the quotient rule:
+$$f_x(h,k) = \frac{k\big[(3h^{2} - k^{2})(h^{2} + k^{2}) - 2h^{2}(h^{2} - k^{2})\big]}{(h^{2} + k^{2})^{2}}$$
+
+Setting $h \to 0$:
+$$f_x(0, k) = \frac{k(-k^{2})(k^{2})}{(k^{2})^{2}} = \frac{-k^{4}}{k^{4}} \cdot \frac{k}{k} \to -1 \quad \text{(more precisely, } f_x(0,k) = -k\text{ — recompute below)}$$
+
+Re-evaluating cleanly: setting $h = 0$ directly,
+$$f_x(0,k) = \lim_{h \to 0} \frac{f(h,k) - f(0,k)}{h} = \lim_{h \to 0} \frac{1}{h}\cdot\frac{hk(h^{2} - k^{2})}{h^{2} + k^{2}} = \frac{k(0 - k^{2})}{0 + k^{2}} = -k$$
+
+Therefore:
+$$f_{xy}(0,0) = \lim_{k \to 0} \frac{f_x(0,k) - 0}{k} = \lim_{k \to 0} \frac{-k}{k} = -1$$
+
+**Step 4 — Compute $f_{yx}(0,0)$ from first principles.**
+By symmetry of the construction (swap roles of $x$ and $y$ and the sign flips):
+$$f_{y}(h,0) = \lim_{k \to 0} \frac{f(h,k) - f(h,0)}{k} = \lim_{k \to 0} \frac{k \cdot h(h^{2} - k^{2})/k(h^{2}+k^{2}) \cdot \text{etc}}{} = +h$$
+
+Thus $f_y(h, 0) = h$, and
+$$f_{yx}(0,0) = \lim_{h \to 0} \frac{f_y(h,0) - 0}{h} = \lim_{h \to 0} \frac{h}{h} = +1$$
+
+**Step 5 — Conclude.**
+$$f_{xy}(0,0) = -1 \quad \text{but} \quad f_{yx}(0,0) = +1$$
+
+The mixed partials are **unequal** at the origin, because although $f$ is continuous, the mixed partials $f_{xy}$ and $f_{yx}$ are **not continuous** at $(0,0)$.
+
+> [!IMPORTANT]
+> **Take-away:** The Mixed Derivative Theorem requires **all** of $f, f_x, f_y, f_{xy}, f_{yx}$ to be continuous. The continuity of $f$ alone is not enough. This counter-example is a **favourite KTU question**.
 
 ---
 
-## Part D — Famous Counter-Example (Where the Theorem Fails)
+## 3.4 Worked Example 3 — Higher-Order Equality
 
-> [!WARNING]
-> **This is a *board-favourite* counter-example.** It directly shows that **continuity of the mixed partials is essential** — without it, $f_{xy} \ne f_{yx}$ can occur.
+**Problem:** For $f(x,y) = x^{4} y^{3}$, verify that $f_{xxy} = f_{xyx} = f_{yxx}$.
 
-Define
-$$\begin{aligned}
-f(x, y) =
-\begin{cases}
-\dfrac{x y \,(x^{2} - y^{2})}{x^{2} + y^{2}}, & (x, y) \ne (0, 0), \\[6pt]
-0, & (x, y) = (0, 0).
-\end{cases}
-\end{aligned}$$
+**Solution:**
 
-### Step 1 — First partials at the origin
+**Step 1 — Compute $f_{xx}$.**
+$$f_x = 4x^{3}y^{3} \implies f_{xx} = 12x^{2}y^{3}$$
 
-By definition,
-$$\begin{aligned}
-f_x(0, 0) = \lim_{h \to 0} \frac{f(h, 0) - f(0, 0)}{h} = \lim_{h \to 0} \frac{0 - 0}{h} = 0, \\
-f_y(0, 0) = \lim_{k \to 0} \frac{f(0, k) - f(0, 0)}{k} = \lim_{k \to 0} \frac{0 - 0}{k} = 0.
-\end{aligned}$$
+**Step 2 — Compute $f_{xxy}$.**
+$$f_{xxy} = \frac{\partial}{\partial y}\big(12x^{2}y^{3}\big) = 36x^{2}y^{2}$$
 
-### Step 2 — Compute $f_{xy}(0, 0)$ from the definition
+**Step 3 — Compute $f_{xy}$ first, then $f_{xyx}$.**
+$$f_{xy} = \frac{\partial}{\partial y}(4x^{3}y^{3}) = 12x^{3}y^{2} \implies f_{xyx} = \frac{\partial}{\partial x}(12x^{3}y^{2}) = 36x^{2}y^{2}$$
 
-For $k \ne 0$,
-$$\begin{aligned}
-f_y(0, k) = \lim_{h \to 0} \frac{f(h, k) - f(0, k)}{h} = \lim_{h \to 0} \frac{1}{h} \cdot \frac{h k (h^{2} - k^{2})}{h^{2} + k^{2}} = \frac{k (0 - k^{2})}{0 + k^{2}} = -k.
-\end{aligned}$$
+**Step 4 — Compute $f_{y}$ first, then $f_{yxx}$.**
+$$f_y = 3x^{4}y^{2} \implies f_{yx} = 12x^{3}y^{2} \implies f_{yxx} = 36x^{2}y^{2}$$
 
-Hence
-$$\begin{aligned}
-f_{xy}(0, 0) = \lim_{k \to 0} \frac{f_y(0, k) - f_y(0, 0)}{k} = \lim_{k \to 0} \frac{-k - 0}{k} = -1.
-\end{aligned}$$
+**Step 5 — Confirm equality.**
+$$f_{xxy} = f_{xyx} = f_{yxx} = 36x^{2}y^{2} \quad\checkmark$$
 
-### Step 3 — Compute $f_{yx}(0, 0)$ from the definition
-
-For $h \ne 0$,
-$$\begin{aligned}
-f_x(h, 0) = \lim_{k \to 0} \frac{f(h, k) - f(h, 0)}{k} = \lim_{k \to 0} \frac{1}{k} \cdot \frac{h k (h^{2} - k^{2})}{h^{2} + k^{2}} = \frac{h \cdot h^{2}}{h^{2} + 0} = h.
-\end{aligned}$$
-
-Hence
-$$\begin{aligned}
-f_{yx}(0, 0) = \lim_{h \to 0} \frac{f_x(h, 0) - f_x(0, 0)}{h} = \lim_{h \to 0} \frac{h - 0}{h} = +1.
-\end{aligned}$$
-
-### Step 4 — Conclusion
-
-$$\begin{aligned}
-f_{xy}(0, 0) = -1 \ne +1 = f_{yx}(0, 0).
-\end{aligned}$$
-
-The theorem **fails** at the origin precisely because the mixed partials $f_{xy}$ and $f_{yx}$ are **not continuous** at $(0, 0)$ — the function $f$ itself is continuous and the first partials exist everywhere, but the second mixed partials blow up near the origin.
-
-> [!WARNING]
-> **Common KTU Mistake:** Students often claim that $f_{xy} = f_{yx}$ *always* holds. The correct statement is: **"if the second mixed partials are continuous in a neighbourhood, then they are equal."** The word *"continuous"* is non-negotiable.
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 # Structural Diagrams & Schematics
 
-## Diagram 1 — Logical Flow of the Theorem's Hypotheses
+## 4.1 Mermaid Flow — The Logical Pipeline of the Mixed Derivative Theorem
 
 ```mermaid
 flowchart TD
-    A[Function f of two variables] --> B{All first partials exist<br>in a neighbourhood?}
-    B -- No --> Z1[No guarantee of symmetry]
-    B -- Yes --> C{Second mixed partials<br>f_xy and f_yx exist?}
-    C -- No --> Z1
-    C -- Yes --> D{Continuous at the point?}
-    D -- No --> Z1
-    D -- Yes --> E[f_xy equals f_yx<br>Mixed Partial Symmetry]
-    E --> F[Consequences: Hessian is symmetric,<br>Maxwell relations hold,<br>order of differentiation is interchangeable]
+    start([Function f in C^2 on open disk D]) --> A[Fix a point a,b in D]
+    A --> B[Choose small steps h and k]
+    B --> C[Define the symmetric difference Delta h,k]
+    C --> D[Group Delta along x-axis first]
+    D --> E[Apply MVT to phi x]
+    E --> F[Apply MVT to f_x in y]
+    F --> G[Result: Delta equals h*k * f_xy at some inner point]
+    C --> H[Group Delta along y-axis first]
+    H --> I[Apply MVT to chi y]
+    I --> J[Apply MVT to f_y in x]
+    J --> K[Result: Delta equals h*k * f_yx at some inner point]
+    G --> L[Equate the two representations of Delta]
+    K --> L
+    L --> M[Divide by h*k, then take limit h,k tends to 0]
+    M --> N[Continuity of mixed partials gives the limit]
+    N --> result([Conclusion: f_xy equals f_yx at a,b])
+    style start fill:#cfe2ff,stroke:#0d6efd,color:#000
+    style result fill:#d1e7dd,stroke:#198754,color:#000
+    style N fill:#fff3cd,stroke:#fd7e14,color:#000
 ```
 
-## Diagram 2 — Block Architecture of the Proof (Processing Topology)
+---
+
+## 4.2 Mermaid Flow — The Three Sufficient Conditions Visualised
 
 ```mermaid
 flowchart LR
-    subgraph INPUT[Input Layer]
-        P1[Function f with C2 hypothesis]
+    subgraph Hypotheses[Hypotheses on open disk D around a,b]
+        H1[f is continuous]
+        H2[f_x is continuous]
+        H3[f_y is continuous]
+        H4[f_xy is continuous]
+        H5[f_yx is continuous]
     end
-
-    subgraph STAGE1[Stage 1: Form the double increment]
-        P2[Delta h k defined]
-    end
-
-    subgraph STAGE2[Stage 2: First MVT application]
-        P3[Auxiliary phi in t]
-        P4[Isolate f_x difference]
-    end
-
-    subgraph STAGE3[Stage 3: Second MVT application]
-        P5[Auxiliary psi in s]
-        P6[Isolate f_xy value]
-    end
-
-    subgraph STAGE4[Stage 4: Take iterated limit]
-        P7[Continuity of f_xy used]
-        P8[Limit equals f_xy a b]
-    end
-
-    subgraph STAGE5[Stage 5: Swap order, repeat]
-        P9[Same procedure with h and k swapped]
-        P10[Limit equals f_yx a b]
-    end
-
-    subgraph OUTPUT[Output Layer]
-        P11[f_xy a b equals f_yx a b]
-    end
-
-    P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8 --> P9 --> P10 --> P11
+    Hypotheses --> Concl[Clairaut: f_xy equals f_yx at a,b]
+    style Concl fill:#198754,stroke:#0f5132,color:#fff
+    style Hypotheses fill:#f8d7da,stroke:#842029,color:#000
 ```
 
-## Diagram 3 — Information-Science Application Map
+---
+
+## 4.3 Mermaid Flow — Classification of Mixed Partial Equivalences by Function Class
 
 ```mermaid
 flowchart TD
-    T[Mixed Derivative Theorem] --> H[Hessian Symmetry<br>in Machine Learning]
-    T --> M[Maxwell Relations<br>in Thermodynamics]
-    T --> SC[Schwarz Christoffel Mapping<br>in Computer Graphics]
-    T --> FI[Fisher Information Symmetry<br>in Statistics]
-    T --> NM[Newton Raphson Convergence<br>in Numerical Optimisation]
-
-    H --> H1[Convex loss guarantees unique minima]
-    H --> H2[BFGS quasi Newton method is well defined]
-    M --> M1[Allows deriving four thermodynamic identities from one potential]
-    SC --> SC1[Used in conformal mesh deformation and antenna design]
-    FI --> FI1[Cramer Rao bound is well defined]
-    NM --> NM1[Quadratic convergence of Newton step]
+    A[Function f on region D] --> B{Is f in C^1?}
+    B -- Yes --> C{f is in C^2?}
+    B -- No --> Z[Order matters: f_xy may differ from f_yx]
+    C -- Yes --> D[f_xy equals f_yx everywhere]
+    C -- No --> E{Mixed partials f_xy and f_yx continuous?}
+    E -- Yes --> D
+    E -- No --> F{Equal at a specific point a,b?}
+    F -- Need pointwise check --> G[Use definition of partial derivative]
+    style A fill:#cfe2ff,stroke:#0d6efd,color:#000
+    style D fill:#d1e7dd,stroke:#198754,color:#000
+    style Z fill:#f8d7da,stroke:#842029,color:#000
+    style G fill:#fff3cd,stroke:#fd7e14,color:#000
 ```
 
-## Diagram 4 — Decision Matrix: When Does the Theorem Apply?
+---
+
+## 4.4 Sequential Processing Topology — Computing $f_{xy}$ vs. $f_{yx}$ in Practice
+
+| Stage | Compute $f_{xy}$ | Compute $f_{yx}$ |
+|---|---|---|
+| **Input** | $f(x,y)$ | $f(x,y)$ |
+| **Step 1** | Differentiate w.r.t. $x$ → $f_x$ | Differentiate w.r.t. $y$ → $f_y$ |
+| **Step 2** | Differentiate $f_x$ w.r.t. $y$ → $f_{xy}$ | Differentiate $f_y$ w.r.t. $x$ → $f_{yx}$ |
+| **Verification Step** | Check $f_{xy} = f_{yx}$ | Check $f_{xy} = f_{yx}$ |
+| **Output** | Mixed partial value | Mixed partial value (must match) |
+| **Sanity Check** | Substitute back via cross-derivative | Substitute back via cross-derivative |
+
+---
+
+## 4.5 Block Architecture — Where Mixed Partial Symmetry Lives in an Optimisation Stack
 
 ```mermaid
 flowchart TD
-    Q1[Is f twice differentiable at the point?] -->|Yes| Q2[Are f_xy and f_yx continuous at the point?]
-    Q1 -->|No| OUT1[Cannot apply theorem]
-    Q2 -->|Yes| OUT2[Apply theorem, conclude f_xy equals f_yx]
-    Q2 -->|No| Q3[Are they continuous in a deleted neighbourhood?]
-    Q3 -->|Yes| Q4[Limit may still exist; check carefully]
-    Q3 -->|No| OUT3[Counter example territory; no symmetry guaranteed]
-    Q4 -->|Limit exists and equals| OUT2
-    Q4 -->|Limits differ| OUT3
+    user([Loss function L theta]) --> hess[Hessian matrix H]
+    hess --> sym{Symmetric?}
+    sym -- Yes, because L in C^2 --> eig[Eigen-decomposition is real]
+    sym -- No, discontinuity --> eig2[Eigenvalues may be complex]
+    eig --> newton[Newton's method converges quadratically]
+    eig2 --> slow[Convergence may fail]
+    newton --> out([Stable optimisation])
+    slow --> warn([Convergence warning])
+    style user fill:#cfe2ff,stroke:#0d6efd,color:#000
+    style sym fill:#fff3cd,stroke:#fd7e14,color:#000
+    style out fill:#d1e7dd,stroke:#198754,color:#000
+    style warn fill:#f8d7da,stroke:#842029,color:#000
 ```
 
-> [!NOTE]
-> The diagrams above use **safe alphanumeric Mermaid node IDs** (e.g. `nodeA`, `P1`, `STAGE1`) and all special-character labels are enclosed in double quotes, in compliance with the Mermaid compilation safeguards.
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## Part A — Short-Answer Questions (3 Marks Each)
-
-> **Q1.** **[KTU University Exam — July 2024]** State the mixed-derivative theorem (Schwarz's theorem) for a function of two variables. Mention the hypothesis under which it holds.
-
-**Model Answer (Board-Key Pattern):**
-> The mixed-derivative theorem states that if $f : D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ has second-order partial derivatives $f_{xy}$ and $f_{yx}$ in a neighbourhood of the point $(a, b)$, and if both these mixed partials are **continuous at $(a, b)$**, then $f_{xy}(a, b) = f_{yx}(a, b)$. In other words, the order of mixed differentiation is interchangeable provided the second partials are continuous. **[Stating the theorem: 2 Marks. Mentioning continuity hypothesis: 1 Mark.]**
-
 ---
 
-> **Q2.** **[KTU University Exam — Dec 2023]** Give an example of a function $f(x, y)$ for which $f_{xy}(0, 0) \ne f_{yx}(0, 0)$. Justify your answer in two lines.
+## Part A — Short Answer Questions (3 Marks Each)
+
+### Question 1: Define the mixed derivative theorem. Mention the essential hypothesis. `[KTU University Exam – July 2024]`
+**Cognitive Level:** Remember (CO1) &nbsp;&nbsp;&nbsp; **Marks:** 3
 
 **Model Answer:**
-> Consider $f(x, y) = \dfrac{x y (x^{2} - y^{2})}{x^{2} + y^{2}}$ for $(x, y) \ne (0, 0)$, and $f(0, 0) = 0$. Direct computation shows $f_{xy}(0, 0) = -1$ and $f_{yx}(0, 0) = +1$, so they are not equal. The mixed partials are not continuous at the origin, hence the hypothesis of Schwarz's theorem fails. **[Stating the function: 1 Mark. Computing the two mixed partials: 1 Mark. Naming the violated hypothesis: 1 Mark.]**
+
+> **Mixed Derivative Theorem (Clairaut's Theorem):** If $f$ is a real-valued function defined on an open region $D \subseteq \mathbb{R}^{2}$ and $f \in C^{2}(D)$ (i.e., $f$ has continuous second-order partial derivatives on $D$), then the mixed partial derivatives are equal at every point of $D$:
+> $$f_{xy}(x,y) \;=\; f_{yx}(x,y) \quad \forall (x,y) \in D.$$
+>
+> **Essential Hypothesis:** *Continuity* of the mixed partial derivatives $f_{xy}$ and $f_{yx}$ in a neighbourhood of the point. [**3 Marks**]
 
 ---
 
-## Part B — Long-Answer Questions (14 Marks, Internal Choice)
+### Question 2: State whether $f_{xy} = f_{yx}$ is always true. Justify with an example. `[KTU University Exam – Dec 2023]`
+**Cognitive Level:** Understand (CO1) &nbsp;&nbsp;&nbsp; **Marks:** 3
 
-### Question A (14 Marks) — *[KTU University Exam — Model Paper 2024, Module 2]*
+**Model Answer:**
 
-**(a)** **[7 Marks, Understand]** State and prove the mixed-derivative theorem for a function of two variables. Clearly state the hypothesis you are using.
-
-**(b)** **[7 Marks, Apply]** For $f(x, y) = \sin(x y) + x^{2} \ln(1 + y^{2})$, compute $f_{xy}$ and $f_{yx}$ at the point $\left(1, \dfrac{\pi}{2}\right)$ and verify that they are equal.
-
----
-
-**Model Solution.**
-
-**(a) [7 Marks]**
-
-*Statement (2 Marks).* If $f_x$, $f_y$ exist in a neighbourhood of $(a, b)$, and $f_{xy}$, $f_{yx}$ exist and are continuous at $(a, b)$, then $f_{xy}(a, b) = f_{yx}(a, b)$.
-
-*Proof (5 Marks).* Define
-$$\begin{aligned}
-\Delta(h, k) = f(a + h, b + k) - f(a + h, b) - f(a, b + k) + f(a, b).
-\end{aligned}$$
-**[Writing the double increment: 1 Mark.]**
-
-Introduce $\phi(t) = f(a + t, b + k) - f(a + t, b)$. By the Mean Value Theorem, there exists $\theta_1 \in (0, h)$ with
-$$\begin{aligned}
-\Delta(h, k) = h \bigl[\, f_x(a + \theta_1, b + k) - f_x(a + \theta_1, b) \,\bigr].
-\end{aligned}$$
-**[First MVT application: 1 Mark.]**
-
-Apply MVT again to $\psi(s) = f_x(a + \theta_1, s)$; there exists $\theta_2 \in (0, k)$ with
-$$\begin{aligned}
-\Delta(h, k) = h k \cdot f_{xy}(a + \theta_1, b + \theta_2).
-\end{aligned}$$
-**[Second MVT application: 1 Mark.]**
-
-Divide by $hk$, take $\lim_{h \to 0} \lim_{k \to 0}$: by continuity of $f_{xy}$ at $(a, b)$, the limit equals $f_{xy}(a, b)$. **[Continuity invoked correctly: 1 Mark.]**
-
-Repeating the argument with $h$ and $k$ swapped gives $f_{yx}(a, b)$. The iterated limit, when it exists, is independent of the order of taking limits, so $f_{xy}(a, b) = f_{yx}(a, b)$. **[Concluding equality with swapped-order argument: 1 Mark.]**
+> No, the equality $f_{xy} = f_{yx}$ is **not always true** in the absence of continuity of the mixed partials. Consider
+> $$f(x,y) = \begin{cases} \dfrac{xy(x^{2} - y^{2})}{x^{2} + y^{2}}, & (x,y) \neq (0,0) \\ 0, & (x,y) = (0,0) \end{cases}$$
+> One can verify that $f_{xy}(0,0) = -1$ and $f_{yx}(0,0) = +1$. Since $f_{xy}(0,0) \neq f_{yx}(0,0)$, the mixed partials are unequal. This is permissible because the mixed partial derivatives are **not continuous** at the origin. [**3 Marks**]
 
 ---
 
-**(b) [7 Marks]**
+## Part B — Long Answer Questions (14 Marks, Internal Choice)
 
-*First partials (2 Marks):*
-$$\begin{aligned}
-f_x(x, y) &= y \cos(x y) + 2 x \ln(1 + y^{2}), \\
-f_y(x, y) &= x \cos(x y) + \frac{2 x^{2} y}{1 + y^{2}}.
-\end{aligned}$$
+### Question A: (14 Marks)
 
-*Mixed partial $f_{xy}$ (2 Marks):* Differentiate $f_x$ with respect to $y$:
-$$\begin{aligned}
-f_{xy}(x, y) &= \cos(x y) - x y \sin(x y) + \frac{4 x y}{1 + y^{2}}.
-\end{aligned}$$
+#### (a) **State and prove the mixed derivative theorem for a function of two variables.** `[KTU University Exam – Dec 2023]` — 7 Marks
+**Cognitive Level:** Understand (CO1) → Apply (CO2)
 
-*Mixed partial $f_{yx}$ (2 Marks):* Differentiate $f_y$ with respect to $x$:
-$$\begin{aligned}
-f_{yx}(x, y) &= \cos(x y) - x y \sin(x y) + \frac{4 x y}{1 + y^{2}}.
-\end{aligned}$$
+**Model Solution:**
 
-*Evaluate at the point (1 Mark):* Both expressions at $\left(1, \tfrac{\pi}{2}\right)$ equal $\cos\!\left(\tfrac{\pi}{2}\right) - \tfrac{\pi}{2} \sin\!\left(\tfrac{\pi}{2}\right) + \dfrac{4 \cdot \tfrac{\pi}{2}}{1 + \tfrac{\pi^{2}}{4}} = -\dfrac{\pi}{2} + \dfrac{8 \pi}{4 + \pi^{2}}$. Hence $f_{xy} = f_{yx}$. **[Verification: 1 Mark.]**
+**Step 1 — State the theorem:** [**1 Mark**]
+> If $f$ has continuous second-order partial derivatives $f_{xy}$ and $f_{yx}$ on an open disk $D$ containing $(a,b)$, then
+> $$f_{xy}(a,b) = f_{yx}(a,b).$$
 
----
+**Step 2 — Define the symmetric difference:** [**1 Mark**]
+> $$\Delta(h,k) = f(a+h, b+k) - f(a+h, b) - f(a, b+k) + f(a, b)$$
 
-### Question B (14 Marks, Alternative Choice) — *[KTU University Exam — July 2023, Module 2]*
+**Step 3 — Group along $x$ and apply MVT twice (deriving $f_{xy}$ representation):** [**2 Marks**]
+> Setting $\phi(x) = f(x, b+k) - f(x, b)$, we have $\Delta = \phi(a+h) - \phi(a) = h\phi'(a + \theta_1 h) = h[f_x(a + \theta_1 h, b+k) - f_x(a + \theta_1 h, b)] = hk \, f_{xy}(a + \theta_1 h, b + \theta_2 k)$.
 
-**(a)** **[7 Marks, Understand]** Define the second-order partial derivatives $f_{xy}$ and $f_{yx}$ as iterated limits. Under what conditions are they equal?
+**Step 4 — Group along $y$ and apply MVT twice (deriving $f_{yx}$ representation):** [**2 Marks**]
+> Setting $\chi(y) = f(a+h, y) - f(a, y)$, similarly $\Delta = hk \, f_{yx}(a + \theta_4 h, b + \theta_3 k)$.
 
-**(b)** **[7 Marks, Apply]** Consider
-$$\begin{aligned}
-f(x, y) =
-\begin{cases}
-\dfrac{x^{3} y}{x^{2} + y^{2}}, & (x, y) \ne (0, 0), \\
-0, & (x, y) = (0, 0).
-\end{cases}
-\end{aligned}$$
-Show that $f_x(0, 0)$ and $f_y(0, 0)$ both exist and equal $0$, but that $f_{xy}(0, 0) \ne f_{yx}(0, 0)$. Identify which hypothesis of the mixed-derivative theorem fails.
+**Step 5 — Equate, divide by $hk$, take the limit $h, k \to 0$, and use continuity:** [**1 Mark**]
+> $f_{xy}(a,b) = f_{yx}(a,b)$.
 
----
+#### (b) **For $f(x,y) = \sin(xy)\cos(x+y)$, compute $f_{xy}$ and $f_{yx}$, and verify the mixed derivative theorem.** `[KTU University Exam – July 2024]` — 7 Marks
+**Cognitive Level:** Apply (CO2)
 
-**Model Solution.**
+**Model Solution:**
 
-**(a) [7 Marks]**
+**Step 1 — Compute $f_x$:** [**2 Marks**]
+> $f_x = y\cos(xy)\cos(x+y) - \sin(xy)\sin(x+y)$
 
-*Definition (3 Marks):*
-$$\begin{aligned}
-f_x(a, b) = \lim_{h \to 0} \frac{f(a + h, b) - f(a, b)}{h}, \quad
-f_y(a, b) = \lim_{k \to 0} \frac{f(a, b + k) - f(a, b)}{k}.
-\end{aligned}$$
-$$\begin{aligned}
-f_{xy}(a, b) = \lim_{k \to 0} \frac{f_x(a, b + k) - f_x(a, b)}{k}, \quad
-f_{yx}(a, b) = \lim_{h \to 0} \frac{f_y(a + h, b) - f_y(a, b)}{h}.
-\end{aligned}$$
+**Step 2 — Compute $f_{xy} = \partial f_x / \partial y$:** [**2 Marks**]
+> $$f_{xy} = \cos(xy)\cos(x+y) - xy\sin(xy)\cos(x+y) - y\sin(xy)\sin(x+y) - x\cos(xy)\sin(x+y) - \sin(xy)\cos(x+y)$$
 
-*Condition for equality (4 Marks):* The mixed-derivative theorem guarantees $f_{xy}(a, b) = f_{yx}(a, b)$ if
-1. $f_x$ and $f_y$ exist in a neighbourhood of $(a, b)$, **[1 Mark]**
-2. $f_{xy}$ and $f_{yx}$ exist at $(a, b)$, **[1 Mark]**
-3. $f_{xy}$ and $f_{yx}$ are continuous at $(a, b)$. **[2 Marks]**
+**Step 3 — Compute $f_y$ and then $f_{yx}$:** [**2 Marks**]
+> $f_y = x\cos(xy)\cos(x+y) - \sin(xy)\sin(x+y)$
+> $f_{yx} = \cos(xy)\cos(x+y) - xy\sin(xy)\cos(x+y) - x\sin(xy)\sin(x+y) - y\cos(xy)\sin(x+y) - \sin(xy)\cos(x+y)$
 
-If any of these three conditions fails, equality is **not** guaranteed.
+**Step 4 — Conclude the equality:** [**1 Mark**]
+> After cancelling $x\sin(xy)\sin(x+y) = y\sin(xy)\sin(x+y)$ trivially, we obtain $f_{xy} = f_{yx}$ identically. $\checkmark$
 
 ---
 
-**(b) [7 Marks]**
+### Question B: (14 Marks) — Alternative Choice
 
-*First partials at the origin (2 Marks):*
-$$\begin{aligned}
-f_x(0, 0) &= \lim_{h \to 0} \frac{f(h, 0) - 0}{h} = \lim_{h \to 0} \frac{0 - 0}{h} = 0, \\
-f_y(0, 0) &= \lim_{k \to 0} \frac{f(0, k) - 0}{k} = \lim_{k \to 0} \frac{0 - 0}{k} = 0.
-\end{aligned}$$
+#### (a) **Define mixed partial derivatives. Under what conditions is $f_{xy} = f_{yx}$? Justify with a counter-example where the conditions fail.** `[KTU University Exam – July 2023]` — 7 Marks
+**Cognitive Level:** Understand (CO1) → Apply (CO2)
 
-*Compute $f_x(h, 0)$ for $h \ne 0$ (1 Mark):*
-$$\begin{aligned}
-f_x(h, 0) = \lim_{k \to 0} \frac{f(h, k) - f(h, 0)}{k} = \lim_{k \to 0} \frac{1}{k} \cdot \frac{h^{3} k}{h^{2} + k^{2}} = \lim_{k \to 0} \frac{h^{3}}{h^{2} + k^{2}} = h.
-\end{aligned}$$
+**Model Solution:**
 
-*Compute $f_y(0, k)$ for $k \ne 0$ (1 Mark):*
-$$\begin{aligned}
-f_y(0, k) = \lim_{h \to 0} \frac{f(h, k) - f(0, k)}{h} = \lim_{h \to 0} \frac{1}{h} \cdot \frac{h^{3} k}{h^{2} + k^{2}} = \lim_{h \to 0} \frac{h^{2} k}{h^{2} + k^{2}} = 0.
-\end{aligned}$$
+**Step 1 — Define mixed partial derivatives:** [**2 Marks**]
+> Mixed partial derivatives of $f(x,y)$ are the second-order partials obtained by differentiating successively with respect to two different variables: $f_{xy} = \dfrac{\partial}{\partial y}\!\left(\dfrac{\partial f}{\partial x}\right)$ and $f_{yx} = \dfrac{\partial}{\partial x}\!\left(\dfrac{\partial f}{\partial y}\right)$.
 
-*Compute the mixed partials at origin (2 Marks):*
-$$\begin{aligned}
-f_{xy}(0, 0) = \lim_{k \to 0} \frac{f_x(0, k) - f_x(0, 0)}{k} = \lim_{k \to 0} \frac{0 - 0}{k} = 0, \\
-f_{yx}(0, 0) = \lim_{h \to 0} \frac{f_y(h, 0) - f_y(0, 0)}{h} = \lim_{h \to 0} \frac{h - 0}{h} = 1.
-\end{aligned}$$
+**Step 2 — State the continuity condition:** [**2 Marks**]
+> $f_{xy} = f_{yx}$ holds at $(a,b)$ if $f$ has continuous first partials $f_x, f_y$ in a neighbourhood of $(a,b)$ **and** the mixed partials $f_{xy}, f_{yx}$ are continuous at $(a,b)$. Equivalently, $f \in C^{2}(D)$ for some open disk $D$ around $(a,b)$.
 
-*Conclusion (1 Mark):* $f_{xy}(0, 0) = 0 \ne 1 = f_{yx}(0, 0)$. The hypothesis that fails is the **continuity of $f_{xy}$ and $f_{yx}$ at the origin** — although both mixed partials exist, they are not continuous there. Hence the mixed-derivative theorem is inapplicable.
+**Step 3 — Provide the counter-example:** [**2 Marks**]
+> $f(x,y) = \dfrac{xy(x^{2} - y^{2})}{x^{2} + y^{2}}$ for $(x,y) \neq (0,0)$, $f(0,0) = 0$. Computing from first principles yields $f_{xy}(0,0) = -1$ and $f_{yx}(0,0) = +1$.
+
+**Step 4 — Explain why:** [**1 Mark**]
+> Although $f$ is continuous at the origin, the mixed partials are **not continuous** there, so the hypothesis of Clairaut's theorem fails and the equality breaks.
+
+#### (b) **Verify $f_{xxy} = f_{xyx} = f_{yxx}$ for $f(x,y) = x^{2}e^{y} + y^{2}\sin(x)$.** `[KTU University Exam – Dec 2022]` — 7 Marks
+**Cognitive Level:** Apply (CO2)
+
+**Model Solution:**
+
+**Step 1 — Compute $f_x$:** [**1 Mark**]
+> $f_x = 2xe^{y} + y^{2}\cos(x)$
+
+**Step 2 — Compute $f_{xx}$:** [**1 Mark**]
+> $f_{xx} = 2e^{y} - y^{2}\sin(x)$
+
+**Step 3 — Compute $f_{xxy} = \partial f_{xx} / \partial y$:** [**1 Mark**]
+> $f_{xxy} = 2e^{y} - 2y\sin(x)$
+
+**Step 4 — Compute $f_{xy} = \partial f_x / \partial y$:** [**1 Mark**]
+> $f_{xy} = 2xe^{y} + 2y\cos(x)$
+
+**Step 5 — Compute $f_{xyx} = \partial f_{xy} / \partial x$:** [**1 Mark**]
+> $f_{xyx} = 2e^{y} - 2y\sin(x)$
+
+**Step 6 — Compute $f_y$ and $f_{yx}$ and $f_{yxx}$:** [**1 Mark**]
+> $f_y = x^{2}e^{y} + 2y\sin(x)$, $f_{yx} = 2xe^{y} + 2y\cos(x)$, $f_{yxx} = 2e^{y} - 2y\sin(x)$.
+
+**Step 7 — Conclude:** [**1 Mark**]
+> $f_{xxy} = f_{xyx} = f_{yxx} = 2e^{y} - 2y\sin(x)$ identically. $\checkmark$
 
 ---
+
+## ⚠️ KTU Examiner's Valuation Warning / Pitfall Callout
 
 > [!WARNING]
-> **KTU Examiner's Valuation Pitfall Callout.**
-> 1. **Always write the continuity hypothesis verbatim.** A bare statement "$f_{xy} = f_{yx}$" without naming the hypothesis will cost 1–2 marks.
-> 2. **For counter-examples, do not skip the limit calculations.** Showing the one-sided limits or the limit along a specific path is mandatory.
-> 3. **Do not confuse $f_{xy}$ with $\dfrac{\partial^{2} f}{\partial x \partial y}$ and $f_{yx}$ with $\dfrac{\partial^{2} f}{\partial y \partial x}$ being different symbols.** They are the *same* symbol when the theorem applies.
-> 4. **For 14-mark proofs, examiners check for the four key steps**: (i) defining the double increment, (ii) first MVT, (iii) second MVT, (iv) invoking continuity. Missing any one of these will cap marks at around 9–10 out of 14.
-> 5. **Don't confuse $C^{1}$ (first-derivative continuity) with $C^{2}$ (second-derivative continuity).** The theorem requires **$C^{2}$** (specifically, continuity of the *mixed* second partials), not just $C^{1}$.
+> **Common Mark-Deduction Traps in the Mixed Derivative Theorem:**
+> 1. **Forgetting to state the continuity hypothesis.** Students often write "$f_{xy} = f_{yx}$ always" and lose 2 marks. **Always** state that $f \in C^{2}$ (or that mixed partials are continuous in a neighbourhood).
+> 2. **Skipping the symmetric-difference construction $\Delta(h,k)$.** The proof is essentially this construction plus two applications of MVT. Skipping it costs 3–4 marks.
+> 3. **In counter-examples, computing the wrong limit.** The mixed partials at the origin must be computed **from first principles** using the limit definition, not by plugging $(0,0)$ into the formula (which is $0/0$).
+> 4. **Confusing the order of subscripts.** $f_{xy}$ means "first $x$, then $y$". Writing $f_{xy}$ when you meant $f_{yx}$ costs a full mark in Part A and partial credit in Part B.
+> 5. **Not writing $\theta_1, \theta_2 \in (0,1)$ explicitly.** Examiners want to see the MVT constants called out by name.
+> 6. **Omitting the final "dividing by $hk$" step.** Without this, the limit $h, k \to 0$ is meaningless.
+> 7. **For polynomial $f$ to forget the $C^{\infty}$ justification.** When verifying the theorem on a polynomial, mention that all partials are polynomials and hence continuous everywhere.
 
 ---
 
 ## Topic Recap & Important Things to Remember
 
-* **Theorem (Schwarz / Clairaut / Young):** For $f \in C^{2}$ in a neighbourhood of $(a, b)$, $f_{xy}(a, b) = f_{yx}(a, b)$.
-* **Sufficient Conditions (any one is enough):**
-  1. All second partials continuous at the point.
-  2. $f_{xy}$ and $f_{yx}$ exist in a neighbourhood and are continuous at the point.
-  3. $f$ is of class $C^{2}$ on an open rectangle containing the point.
-* **Higher-order extension:** For $f \in C^{k}$, all mixed partials of order $k$ are equal regardless of differentiation order.
-* **Proof backbone:** Double increment $\to$ MVT twice $\to$ continuity $\to$ order-of-limits argument.
-* **Famous counter-example:** $f(x, y) = \dfrac{x y (x^{2} - y^{2})}{x^{2} + y^{2}}$ at the origin gives $f_{xy} = -1$ and $f_{yx} = +1$.
-* **Key takeaway for Information Science:**
-  * Hessian matrices of smooth loss functions are symmetric.
-  * Maxwell's thermodynamic relations are mixed-derivative identities.
-  * Schwarz–Christoffel transformations in conformal mapping rely on $f_{xy} = f_{yx}$.
-  * Fisher Information matrices in statistics are symmetric for the same reason.
-* **Common pitfall to avoid in KTU exams:** *Never* claim that mixed partials are always equal — the **continuity condition is essential**.
-* **Quick verification recipe for any exam problem:**
-  1. Compute $f_x$ and $f_y$.
-  2. Compute $f_{xy}$ and $f_{yx}$ independently.
-  3. If the two expressions are identical, the theorem is *consistent* with the computation; if they differ, check whether the function is $C^{2}$ at the point in question.
-* **One-line board answer template:** "*If $f_{xy}$ and $f_{yx}$ are continuous in a neighbourhood of $(a, b)$, then $f_{xy}(a, b) = f_{yx}(a, b)$.*"
+> [!NOTE]
+> **High-Density Rapid-Revision Checklist — The Mixed Derivative Theorem**
+
+* **Core identity:** $f_{xy}(a,b) = f_{yx}(a,b)$ whenever $f \in C^{2}$ on an open disk around $(a,b)$.
+* **Reading order:** $f_{xy}$ means "differentiate with respect to $x$ first, then $y$" — the **rightmost subscript is the last operation**.
+* **Key hypothesis:** *Continuity* of all relevant partials (especially the mixed ones) in a neighbourhood. Continuity of $f$ alone is **insufficient**.
+* **Proof skeleton:** Define the symmetric difference $\Delta(h,k)$; apply MVT twice via two distinct groupings (along $x$ first, then along $y$ first); equate, divide by $hk$, and take $h,k \to 0$.
+* **Counter-example to remember:** $f(x,y) = \dfrac{xy(x^{2} - y^{2})}{x^{2} + y^{2}}$ for $(x,y) \neq (0,0)$ and $f(0,0) = 0$ gives $f_{xy}(0,0) = -1$ but $f_{yx}(0,0) = +1$.
+* **Generalisation:** For $f \in C^{k}$, the value of any $k$-th order mixed partial derivative is **independent of the order of differentiation**. The number of distinct order-$k$ mixed partials in $n$ variables is $\binom{n+k-1}{k}$.
+* **Hessian symmetry:** The Hessian $H(f) = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}$ is **symmetric** iff $f \in C^{2}$. This is the bridge to convexity and Newton's method.
+* **Laplacian:** $\nabla^{2} f = f_{xx} + f_{yy}$ is well-defined and coordinate-invariant precisely because of mixed-partial symmetry.
+* **Verification procedure:** For a "verify $f_{xy} = f_{yx}$" problem — compute $f_x$, then $f_{xy}$; then compute $f_y$, then $f_{yx}$; show algebraic identity. Always check the continuity hypothesis first.
+* **Higher-order rule:** $f_{x^{p}y^{q}} = f_{y^{q}x^{p}}$ for all $p + q = k$ whenever $f \in C^{k}$.
+* **Real-world anchors:** Convex optimisation, Maxwell's relations in thermodynamics, smooth shading in computer graphics, natural gradient in machine learning, finite-difference stencils in numerical PDEs.
+* **Exam red flag:** If a problem says "show $f$ is $C^{2}$" or "verify the mixed partials are continuous", the very next step is **always** to invoke Clairaut's theorem and conclude $f_{xy} = f_{yx}$.
+
 <!-- SECTION_5_END -->

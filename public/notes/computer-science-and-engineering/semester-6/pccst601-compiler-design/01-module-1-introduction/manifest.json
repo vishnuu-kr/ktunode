@@ -1,0 +1,78 @@
+{
+  "course_name": "COMPILER DESIGN",
+  "course_code": "PCCST601",
+  "module_number": 1,
+  "module_title": "Introduction",
+  "topics_generated": [
+    {
+      "title": "Introduction - Compiler Structure",
+      "slug": "introduction-compiler-structure",
+      "path": "introduction-compiler-structure/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Overview of Translation: The Front End",
+      "slug": "overview-of-translation-the-front-end",
+      "path": "overview-of-translation-the-front-end/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The Optimizer",
+      "slug": "the-optimizer",
+      "path": "the-optimizer/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The Back End",
+      "slug": "the-back-end",
+      "path": "the-back-end/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Scanners - Recognizing Words",
+      "slug": "scanners-recognizing-words",
+      "path": "scanners-recognizing-words/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Regular Expressions",
+      "slug": "regular-expressions",
+      "path": "regular-expressions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "From Regular Expression to Scanner: FSA (Brush-up only)",
+      "slug": "from-regular-expression-to-scanner-fsa-brush-up-only",
+      "path": "from-regular-expression-to-scanner-fsa-brush-up-only/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implementing Scanners",
+      "slug": "implementing-scanners",
+      "path": "implementing-scanners/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hands-on:  Recognizing Words with Lex",
+      "slug": "hands-on-recognizing-words-with-lex",
+      "path": "hands-on-recognizing-words-with-lex/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Regular Expressions in Lex",
+      "slug": "regular-expressions-in-lex",
+      "path": "regular-expressions-in-lex/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

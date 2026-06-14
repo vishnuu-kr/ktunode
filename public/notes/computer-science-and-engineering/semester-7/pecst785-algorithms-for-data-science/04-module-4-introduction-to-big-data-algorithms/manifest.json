@@ -1,0 +1,50 @@
+{
+  "course_name": "ALGORITHMS FOR DATA SCIENCE",
+  "course_code": "PECST785",
+  "module_number": 4,
+  "module_title": "Introduction to big data algorithms",
+  "topics_generated": [
+    {
+      "title": "Introduction to Big Data Algorithms - Overview of big data challenges and processing techniques",
+      "slug": "introduction-to-big-data-algorithms-overview-of-big-data-challenges-and-processing-techniques",
+      "path": "introduction-to-big-data-algorithms-overview-of-big-data-challenges-and-processing-techniques/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Distributed computing frameworks - Hadoop, Spark",
+      "slug": "distributed-computing-frameworks-hadoop-spark",
+      "path": "distributed-computing-frameworks-hadoop-spark/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "MapReduce paradigm - concepts and applications",
+      "slug": "mapreduce-paradigm-concepts-and-applications",
+      "path": "mapreduce-paradigm-concepts-and-applications/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Scalable Data Processing Algorithms - Algorithms for large-scale data processing : sorting, searching, filtering",
+      "slug": "scalable-data-processing-algorithms-algorithms-for-large-scale-data-processing-sorting-searching",
+      "path": "scalable-data-processing-algorithms-algorithms-for-large-scale-data-processing-sorting-searching/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data partitioning and shuffling techniques in distributed systems",
+      "slug": "data-partitioning-and-shuffling-techniques-in-distributed-systems",
+      "path": "data-partitioning-and-shuffling-techniques-in-distributed-systems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Handling data with memory constraints - external memory algorithms",
+      "slug": "handling-data-with-memory-constraints-external-memory-algorithms",
+      "path": "handling-data-with-memory-constraints-external-memory-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

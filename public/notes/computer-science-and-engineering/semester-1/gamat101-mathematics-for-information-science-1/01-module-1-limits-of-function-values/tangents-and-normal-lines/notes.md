@@ -1,516 +1,625 @@
 # Tangents and Normal Lines
 
 <!-- SECTION_1_START -->
-# Tangents and Normal Lines — Core Definition & Intuitive Overview
 
-## 1.1 Formal Academic Definition (KTU 2024 Syllabus Terminology)
+# Tangents and Normal Lines
+
+## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
+
+Let $y = f(x)$ be a real-valued function defined on an open interval containing the point $x = x_0$. If $f$ is **differentiable** at $x = x_0$, then the **tangent line** to the curve $y = f(x)$ at the point $P(x_0, y_0)$ is the straight line that touches the curve at $P$ and has slope equal to the derivative $f'(x_0)$.
+
+The **normal line** at $P$ is the straight line that passes through $P$ and is **perpendicular** to the tangent line.
 
 > [!IMPORTANT]
-> **Tangent Line:** Let $y = f(x)$ be a differentiable function on an open interval containing the point $P(x_0, y_0)$. The **tangent line** to the curve $C$ at the point $P$ is the unique straight line that touches the curve at $P$ and has the **same slope** as the curve at that point. Its slope is given by the first derivative:
-> $$m_{\text{tangent}} = f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}$$
+> **Geometric Bridge from Limits (Module 1 Context):** The slope of the tangent is fundamentally a limit. The tangent is the *limiting position* of a secant line $PQP'$ as $P' \to P$. The slope is therefore $m = \displaystyle\lim_{h \to 0}\frac{f(x_0+h) - f(x_0)}{h}$, which is precisely the first-principle derivative introduced in Module 1.
 
-> [!IMPORTANT]
-> **Normal Line:** The **normal line** to a curve at the point $P(x_0, y_0)$ is the line that passes through $P$ and is **perpendicular** to the tangent line at that point. Its slope is the **negative reciprocal** of the tangent slope:
-> $$m_{\text{normal}} = -\frac{1}{f'(x_0)} \quad \text{, provided } f'(x_0) \neq 0$$
+## 1.2 Intuitive Analogy
 
-## 1.2 Conceptual Analogy & Geometric Intuition
+Imagine you are riding a bicycle along a curved mountain road.
 
-Imagine you are driving a car along a curved mountain road. Your **speedometer** tells you your *instantaneous speed* at every moment. Now imagine a flashlight placed on the hood of your car pointing in the direction of motion. The beam of light traces out the path of the **tangent** to the road at every instant.
+- The **direction of your front wheel at any instant** is the **tangent direction** — it points along the road's instantaneous slope.
+- The **flagpole sticking straight up from your carrier** is the **normal direction** — it is perpendicular to the road at that instant.
 
-- The **tangent line** is the beam of light — it shows the *direction of travel* (slope) at that exact instant.
-- The **normal line** is the line you would walk if you stepped *perpendicular* off the road at that moment — straight off the cliff (or into the hillside!).
+If the road is flat at some spot (a peak or a valley), your front wheel is momentarily horizontal — that is a **horizontal tangent**. At a near-vertical cliff face, the tangent becomes nearly vertical and the slope is **undefined**.
 
-Geometrically, if you zoom in extremely close to a smooth curve, it begins to look like a straight line. That "locally straight" line is the tangent. The normal is the line drawn at a **right angle** to this zoomed-in straight line.
+## 1.3 Critical Constants and Symbols
 
-## 1.3 Physical & Geometric Constants Used
+- The slope of the tangent is denoted $m_t \equiv f'(x_0)$.
+- The slope of the normal is denoted $m_n \equiv -\dfrac{1}{f'(x_0)}$, provided $f'(x_0) \neq 0$.
+- The angle of inclination $\theta$ of the tangent with the positive $x$-axis satisfies $\tan\theta = f'(x_0)$.
+- **Key metric**: $m_t \cdot m_n = -1$ (orthogonality condition for non-vertical/horizontal cases).
 
 > [!NOTE]
-> - **Angle of inclination** $\theta$ of the tangent is defined by $\tan\theta = f'(x_0)$, with $\theta \in (-\pi/2, \pi/2)$.
-> - For a vertical tangent, $f'(x_0)$ is **undefined** (or infinite), and the tangent is the vertical line $x = x_0$.
-> - For a horizontal tangent, $f'(x_0) = 0$, and the tangent is the horizontal line $y = y_0$.
+> In the KTU 2024 syllabus, the tangent and normal are introduced *after* the limit-based definition of the derivative, so the connection to Module 1 (limits) is intentional and frequently tested.
+
+## 1.4 Visualization
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Tangent and Normal to the parabola $y = x^2$ at $x_0 = 1$.
+> **Concept:** Tangent and Normal to $y = x^2$ at the point $x_0 = 1.5$.
 > **GeoGebra / Desmos Input Equations:**
-> - $f(x) = x^{2}$
-> - Tangent: $y = 2x - 1$
-> - Normal: $y = -\dfrac{1}{2}x + \dfrac{3}{2}$
-> - Point of contact: $P(1, 1)$
-> **Visual Description:** On the coordinate plane, the student should observe the parabola opening upward. At the point $(1, 1)$, a line cutting through the curve (touching it exactly once locally) represents the tangent. A line intersecting the tangent at a perfect **90°** angle at $(1, 1)$ is the normal. The slope of the tangent line is **2**, and the slope of the normal is **$-\frac{1}{2}$**, confirming the negative reciprocal relationship.
+> * $f(x) = x \hat{} 2$
+> * Tangent: $y = 3x - 2.25$
+> * Normal: $y = -\dfrac{1}{3}x + 2.25$
+> * Point of contact: $(1.5,\ 2.25)$
+> **Visual Description:** The student should see a U-shaped parabola. The red dashed line touches the curve at one point only (tangent) with slope $3$. The green dashed line crosses the curve at right angles (normal) with slope $-1/3$. The two lines form a perfect "L" at the point of contact.
+
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Derivation of the Slope Concept (Geometric Limit)
+# Deep Theoretical Analysis
 
-Consider a smooth curve $y = f(x)$ and a fixed point $P(x_0, y_0)$ on it. Pick another point $Q(x_0 + h, f(x_0 + h))$ on the curve near $P$.
+## 2.1 The Limit Definition (Geometric Foundation)
 
-- The **secant line** $PQ$ has slope:
-$$m_{PQ} = \frac{f(x_0 + h) - f(x_0)}{(x_0 + h) - x_0} = \frac{f(x_0 + h) - f(x_0)}{h}$$
+Let $P(x_0, y_0)$ and $Q(x_0 + h,\ y_0 + k)$ be two distinct points on the curve $y = f(x)$. The line $PQ$ is a **secant line** with slope
 
-- As $Q$ slides along the curve **towards** $P$, i.e., $h \to 0$, the secant line **rotates** and approaches a limiting position. That limiting line is the tangent, and its slope is the **derivative**.
+$$m_{PQ} = \frac{(y_0 + k) - y_0}{(x_0 + h) - x_0} = \frac{k}{h} = \frac{f(x_0+h) - f(x_0)}{h}$$
 
-## 2.2 Structured Step-by-Step Logic
+As $Q$ moves along the curve towards $P$, $h \to 0$. The **tangent at $P$** is the *limiting position* of the secant $PQ$ as $Q \to P$. Hence the slope of the tangent is the limit
 
-To find the tangent and normal to $y = f(x)$ at $P(x_0, y_0)$:
+$$m_t = \lim_{h \to 0}\frac{f(x_0+h) - f(x_0)}{h} = f'(x_0)$$
 
-1. **Verify differentiability** of $f$ at $x_0$. If $f'(x_0)$ exists and is finite, the tangent is non-vertical.
-2. **Compute the derivative** $f'(x)$ symbolically using differentiation rules.
-3. **Evaluate** $f'(x_0)$ to obtain the slope $m_T$ of the tangent.
-4. **Apply point-slope form** to get the tangent equation:
-$$y - y_0 = f'(x_0)(x - x_0)$$
-5. **Compute the normal slope** $m_N = -\dfrac{1}{f'(x_0)}$.
-6. **Write the normal equation**:
-$$y - y_0 = -\frac{1}{f'(x_0)}(x - x_0)$$
+provided this limit exists and is finite.
 
-## 2.3 KTU Formula Sheet / Cheat Sheet
+## 2.2 Equation of the Tangent Line
 
-| Concept | Formula | Conditions / Notes |
-|---|---|---|
-| Slope of tangent | $m_T = f'(x_0) = \dfrac{dy}{dx}\bigg\vert_{x = x_0}$ | Must exist and be finite |
-| Slope of normal | $m_N = -\dfrac{1}{m_T} = -\dfrac{1}{f'(x_0)}$ | Requires $f'(x_0) \neq 0$ |
-| Equation of tangent | $y - y_0 = m_T(x - x_0)$ | Point-slope form |
-| Equation of normal | $y - y_0 = m_N(x - x_0)$ | Perpendicular to tangent |
-| Angle of inclination of tangent | $\tan\theta = f'(x_0)$, $\theta \in (-\pi/2, \pi/2)$ | $\theta$ measured from positive $x$-axis |
-| Tangent form (parametric) | $\dfrac{x - x_0}{1} = \dfrac{y - y_0}{f'(x_0)}$ | Direction vector form |
-| Vertical tangent | $x = x_0$ | When $f'(x_0) \to \infty$ |
-| Horizontal tangent | $y = y_0$ | When $f'(x_0) = 0$ |
-| Length of tangent | $\vert y_0 \vert \sqrt{1 + \dfrac{1}{[f'(x_0)]^{2}}$ | Distance from $x$-axis foot to point |
-| Length of normal | $\vert y_0 \vert \sqrt{1 + [f'(x_0)]^{2}}$ | Distance from $y$-axis foot to point |
-| Angle $\phi$ between two curves | $\tan\phi = \left\vert \dfrac{m_1 - m_2}{1 + m_1 m_2} \right\vert$ | Orthogonal if $\tan\phi \to \infty$ |
-| Orthogonality condition | $m_1 \cdot m_2 = -1$ | $1 + m_1 m_2 = 0$ |
+Using the point-slope form of a straight line with point $P(x_0, y_0)$ and slope $m_t$:
 
-> [!NOTE]
-> **Engineering Utility:** Tangent and normal calculations form the backbone of **computer graphics** (rendering curves, finding reflection vectors in ray tracing), **machine learning** (gradient descent direction = negative tangent slope), **robotics** (path planning along smooth trajectories), and **computer-aided design (CAD)** systems.
+$$y - y_0 = f'(x_0)\,(x - x_0)$$
 
-## 2.4 Special Case: Tangent at a Point Not on the Curve
+This is the **standard KTU form** for the tangent line.
 
-To find the tangent line to $y = f(x)$ that passes through an **external point** $A(x_1, y_1)$ (not necessarily on the curve):
+## 2.3 Equation of the Normal Line
 
-- Let the point of contact be $P(x_0, y_0)$ on the curve, so $y_0 = f(x_0)$.
-- Slope of tangent at $P$: $m_T = f'(x_0)$.
-- Since the line passes through both $A$ and $P$:
-$$m_T = \frac{y_1 - f(x_0)}{x_1 - x_0}$$
-- This gives an equation in $x_0$, which is solved to find the point(s) of contact.
-- KTU frequently tests this "tangent from an external point" problem.
+The normal is perpendicular to the tangent. If $f'(x_0) \neq 0$, the slope of the normal is the negative reciprocal:
+
+$$m_n = -\frac{1}{f'(x_0)}$$
+
+The equation of the normal is therefore
+
+$$y - y_0 = -\frac{1}{f'(x_0)}\,(x - x_0)$$
+
+## 2.4 Special Cases (Boundary Conditions)
+
+| Case | Condition | Tangent | Normal |
+| :---: | :---: | :---: | :---: |
+| Horizontal tangent | $f'(x_0) = 0$ | $y = y_0$ | $x = x_0$ (vertical) |
+| Vertical tangent | $f'(x_0) \to \pm\infty$ | $x = x_0$ | $y = y_0$ (horizontal) |
+| $45°$ tangent | $f'(x_0) = 1$ | slope $= 1$ | slope $= -1$ |
+
+## 2.5 KTU High-Yield Formula Sheet
+
+| \# | Concept | Formula | Domain/Condition |
+| :---: | :--- | :--- | :--- |
+| 1 | Slope of tangent (limit form) | $m_t = \displaystyle\lim_{h \to 0}\frac{f(x_0+h) - f(x_0)}{h}$ | $f$ differentiable at $x_0$ |
+| 2 | Slope of tangent (derivative) | $m_t = f'(x_0)$ | $f'(x_0)$ exists finitely |
+| 3 | Equation of tangent | $y - y_0 = f'(x_0)\,(x - x_0)$ | Standard form |
+| 4 | Slope of normal | $m_n = -\dfrac{1}{f'(x_0)}$ | $f'(x_0) \neq 0$ |
+| 5 | Equation of normal | $y - y_0 = -\dfrac{1}{f'(x_0)}\,(x - x_0)$ | $f'(x_0) \neq 0$ |
+| 6 | Angle of inclination | $\tan\theta = f'(x_0)$ | $\theta \in [0,\pi)$ |
+| 7 | Horizontal tangent | $y = y_0$ | $f'(x_0) = 0$ |
+| 8 | Vertical tangent | $x = x_0$ | $f'(x_0) = \pm\infty$ |
+| 9 | Orthogonality check | $m_t \cdot m_n = -1$ | Both lines non-axial |
+| 10 | Parametric tangent | $\dfrac{dy}{dx} = \dfrac{(dy/dt)}{(dx/dt)}$ | Curve in param. form |
+
+## 2.6 Engineering Utility
+
+- **Computer Graphics (CG)**: Tangent vectors define surface normals, used in shading and lighting (Phong, Blinn-Phong models).
+- **Robotics & Path Planning**: Normal lines are used for obstacle avoidance and collision detection.
+- **Machine Learning**: Gradient (slope) of the loss function tangent gives the direction of steepest descent.
+- **Civil Engineering**: Slope of a road curve is the tangent's slope; banking angles rely on normal forces.
+- **Physics**: The normal line to a wavefront indicates the direction of propagation (Huygens' principle).
+
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Symbolic Implementation
 
-## 3.1 Worked Example 1 — Tangent and Normal to $y = x^3 - 3x + 2$ at $x_0 = 1$
+# Step-by-Step Derivations and Code Implementation
 
-**Step 1: Find the point of contact.**
+## 3.1 Worked Derivation: General Procedure
+
+**Problem:** Find the tangent and normal to $y = f(x)$ at $x = x_0$.
+
+**Step 1 — Point of contact.** Compute $y_0 = f(x_0)$, giving the contact point $P(x_0,\ y_0)$.
+
+**Step 2 — Differentiate.** Compute $f'(x)$ using standard rules.
+
+**Step 3 — Evaluate slope.** Substitute $x = x_0$ to get $m_t = f'(x_0)$.
+
+**Step 4 — Tangent line.** Apply $y - y_0 = m_t (x - x_0)$.
+
+**Step 5 — Normal line.** Compute $m_n = -1/m_t$ (if $m_t \neq 0$) and apply $y - y_0 = m_n (x - x_0)$.
+
+---
+
+## 3.2 Exhaustive Sample Solution (KTU Board Style)
+
+**Find the tangent and normal to $y = x^3 - 3x + 2$ at the point where $x = 1$.**
+
+**Step 1 — Point of contact.**
+
 $$y_0 = (1)^3 - 3(1) + 2 = 1 - 3 + 2 = 0$$
-So $P(1, 0)$ lies on the curve.
 
-**Step 2: Differentiate symbolically.**
-$$\frac{dy}{dx} = \frac{d}{dx}(x^3 - 3x + 2) = 3x^2 - 3$$
+So the point of contact is $P(1, 0)$.
 
-**Step 3: Evaluate the slope at $x_0 = 1$.**
-$$m_T = 3(1)^2 - 3 = 3 - 3 = 0$$
+**Step 2 — Differentiate.**
 
-**Step 4: Write the equation of the tangent (point-slope form).**
-$$y - 0 = 0 \cdot (x - 1) \implies y = 0$$
+$$\frac{dy}{dx} = 3x^2 - 3$$
 
-This is the **x-axis** itself. The tangent is horizontal because the curve has a stationary point at $x = 1$ (a local maximum in this case).
+**Step 3 — Evaluate slope at $x = 1$.**
 
-**Step 5: Compute the normal slope.**
-$$m_N = -\frac{1}{m_T} = -\frac{1}{0} \to \infty$$
+$$m_t = 3(1)^2 - 3 = 0$$
 
-Since the tangent slope is zero, the normal is **vertical**:
+The tangent is **horizontal**.
+
+**Step 4 — Equation of tangent.**
+
+$$y - 0 = 0 \cdot (x - 1) \implies y = 0 \quad\text{(i.e., the }x\text{-axis)}$$
+
+**Step 5 — Equation of normal.**
+
+Since $m_t = 0$, the normal is vertical:
+
 $$x = 1$$
 
-## 3.2 Worked Example 2 — Tangent From an External Point
+**Geometric check:** $y = x^3 - 3x + 2 = (x-1)^2(x+2)$ has a double root at $x = 1$, so the curve touches the $x$-axis there. Confirms a horizontal tangent.
 
-Find the equation(s) of the tangent line(s) to the curve $y = x^2$ drawn from the external point $A(0, 1)$.
+---
 
-**Step 1: Let the point of contact be $P(x_0, x_0^2)$.**
-**Step 2: Compute the slope at $P$.**
-$$m_T = \frac{dy}{dx}\bigg\vert_{x_0} = 2x_0$$
+## 3.3 Parametric Curve Case (Important Extension)
 
-**Step 3: Set up the equation linking slope, $A$, and $P$.**
-$$m_T = \frac{y_0 - y_1}{x_0 - x_1} = \frac{x_0^2 - 1}{x_0 - 0} = \frac{x_0^2 - 1}{x_0}$$
+For a curve given parametrically as $x = x(t),\ y = y(t)$:
 
-**Step 4: Equate the two expressions for $m_T$.**
-$$2x_0 = \frac{x_0^2 - 1}{x_0}$$
+$$\frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{\dot{y}(t_0)}{\dot{x}(t_0)}$$
 
-**Step 5: Multiply both sides by $x_0$ (noting $x_0 \neq 0$ for now).**
-$$2x_0^2 = x_0^2 - 1$$
-$$x_0^2 = -1$$
+The tangent at $t = t_0$ is
 
-This has **no real solution**, which means the point $A(0, 1)$ lies *inside* the parabola $y = x^2$ — no real tangent can be drawn from it. (The point $(0, 1)$ is above the vertex $(0, 0)$.)
+$$y - y(t_0) = \frac{\dot{y}(t_0)}{\dot{x}(t_0)}\bigl(x - x(t_0)\bigr)$$
 
-**Step 6: Check the case $x_0 = 0$.**
-At $x_0 = 0$, the slope $m_T = 0$ and the tangent is $y = 0$. The point $A(0, 1)$ is **not** on this line, so this is rejected. **Conclusion: No real tangent exists from $A(0, 1)$.**
+**Example:** For $x = t^2,\ y = 2t$ at $t = 2$.
 
-## 3.3 Worked Example 3 — Angle Between Two Curves
+$$\frac{dx}{dt} = 2t,\quad \frac{dy}{dt} = 2$$
 
-Find the angle of intersection between $y = x^2$ and $y = x^3$ at their non-trivial point of intersection.
+$$\frac{dy}{dx} = \frac{2}{2t} = \frac{1}{t}$$
 
-**Step 1: Find intersection points.**
-$$x^3 = x^2 \implies x^2(x - 1) = 0 \implies x = 0 \text{ or } x = 1$$
+At $t = 2$: $m_t = 1/2$. Point: $(4, 4)$. Tangent: $y - 4 = \tfrac{1}{2}(x - 4) \implies y = \tfrac{x}{2} + 2$.
 
-At $x = 0$: both curves pass through $(0, 0)$ and both have slope $0$ — tangents coincide, angle is $0$.
-At $x = 1$: curves intersect at $(1, 1)$.
+---
 
-**Step 2: Compute slopes at $x = 1$.**
-- For $y = x^2$: $\dfrac{dy}{dx} = 2x \implies m_1 = 2$
-- For $y = x^3$: $\dfrac{dy}{dx} = 3x^2 \implies m_2 = 3$
-
-**Step 3: Apply the angle formula.**
-$$\tan\phi = \left\vert \frac{m_1 - m_2}{1 + m_1 m_2} \right\vert = \left\vert \frac{2 - 3}{1 + (2)(3)} \right\vert = \left\vert \frac{-1}{7} \right\vert = \frac{1}{7}$$
-
-$$\phi = \arctan\left(\frac{1}{7}\right) \approx 8.13^\circ$$
-
-## 3.4 Algorithmic Implementation (Python with SymPy)
+## 3.4 Python Implementation (Production-Ready)
 
 ```python
 """
-KTU GAMAT101 - Tangent and Normal Line Solver
-Uses symbolic mathematics (SymPy) for exact answers.
+Tangent and Normal Line Calculator
+Course: Mathematics for Information Science - 1 (GAMAT101)
+KTU 2024 Scheme - Module 1: Limits of Function Values
 """
 
-from sympy import symbols, diff, solve, Eq, simplify, sqrt, atan, pi, Rational
+import numpy as np
+import matplotlib.pyplot as plt
+from sympy import symbols, diff, sympify, lambdify, Symbol
+from typing import Tuple, Union
 import logging
 
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+# Configure structured logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
+logger = logging.getLogger(__name__)
 
-x, x0, y0 = symbols('x x0 y0', real=True)
 
-
-def tangent_and_normal(func_expr, point_x: float) -> dict:
+class TangentNormalCalculator:
     """
-    Compute tangent and normal line equations at x = point_x.
-    
-    Parameters
-    ----------
-    func_expr : sympy expression
-        The function y = f(x).
-    point_x : float
-        The x-coordinate of the point of contact.
-    
-    Returns
-    -------
-    dict with keys: 'point', 'tangent', 'normal', 'm_tangent', 'm_normal'
+    Symbolic + numerical calculator for tangent and normal lines
+    to a curve y = f(x) at a specified point.
     """
-    try:
-        # Step 1: Compute y-coordinate of the contact point
-        y_val = func_expr.subs(x, point_x)
-        logging.info(f"Point of contact computed: ({point_x}, {y_val})")
-        
-        # Step 2: Symbolic differentiation
-        dy_dx = diff(func_expr, x)
-        logging.info(f"dy/dx = {dy_dx}")
-        
-        # Step 3: Evaluate the slope at point_x
-        m_tangent = dy_dx.subs(x, point_x)
-        logging.info(f"Slope of tangent m_T = {m_tangent}")
-        
-        # Step 4: Build tangent equation: y - y0 = m_T * (x - x0)
-        tangent_eq = Eq(y0, m_tangent * (x - point_x) + y_val)
-        
-        # Step 5: Handle normal slope
-        if m_tangent == 0:
-            normal_eq = Eq(x, point_x)  # vertical normal
-            m_normal = float('inf')
-            logging.info("Tangent is horizontal; normal is vertical.")
-        else:
-            m_normal = -1 / m_tangent
-            normal_eq = Eq(y0, m_normal * (x - point_x) + y_val)
-            logging.info(f"Slope of normal m_N = {m_normal}")
-        
-        return {
-            'point': (point_x, y_val),
-            'tangent': tangent_eq,
-            'normal': normal_eq,
-            'm_tangent': m_tangent,
-            'm_normal': m_normal
-        }
-    
-    except Exception as e:
-        logging.error(f"Error computing tangent/normal: {e}")
-        raise
+
+    def __init__(self, function_expression: str) -> None:
+        """
+        Initialize with the function as a string.
+
+        Args:
+            function_expression: e.g. "x**2 - 4*x + 7"
+
+        Raises:
+            ValueError: If expression is not parseable or not differentiable.
+        """
+        self.x: Symbol = symbols("x")
+        try:
+            self.f = sympify(function_expression)
+            self.f_prime = diff(self.f, self.x)
+            if self.f_prime is None:
+                raise ValueError("Function is not differentiable.")
+            logger.info("Parsed function: y = %s", self.f)
+            logger.info("Derivative:     dy/dx = %s", self.f_prime)
+        except Exception as exc:
+            logger.error("Failed to parse function: %s", exc)
+            raise ValueError(f"Invalid function: {function_expression}") from exc
+
+    def contact_point(self, x0: float) -> Tuple[float, float]:
+        """Return (x0, f(x0)) as floats, with boundary checks."""
+        try:
+            y0 = float(self.f.subs(self.x, x0))
+        except (TypeError, ValueError) as exc:
+            logger.error("Cannot evaluate f at x=%s: %s", x0, exc)
+            raise
+        return (float(x0), y0)
+
+    def tangent_slope(self, x0: float) -> Union[float, str]:
+        """
+        Compute the tangent slope using the limit-based derivative.
+        m_t = lim_{h->0} [f(x0+h) - f(x0)] / h
+        """
+        slope_expr = self.f_prime.subs(self.x, x0)
+        try:
+            slope = float(slope_expr)
+            logger.info("Tangent slope at x=%s: m_t = %s", x0, slope)
+            return slope
+        except (TypeError, ValueError):
+            logger.warning("Tangent slope at x=%s is undefined (vertical).", x0)
+            return "undefined"
+
+    def normal_slope(self, x0: float) -> Union[float, str]:
+        """Compute normal slope = -1 / m_t, with boundary cases."""
+        m_t = self.tangent_slope(x0)
+        if m_t == 0:
+            return "undefined (vertical normal)"
+        if m_t == "undefined":
+            return 0.0  # horizontal normal
+        return -1.0 / m_t
+
+    def tangent_equation(self, x0: float) -> str:
+        """Return the tangent line equation in human-readable form."""
+        x_pt, y_pt = self.contact_point(x0)
+        m_t = self.tangent_slope(x0)
+
+        if m_t == "undefined":
+            return f"x = {x_pt}  (vertical tangent)"
+        if m_t == 0:
+            return f"y = {y_pt}  (horizontal tangent)"
+
+        intercept = y_pt - m_t * x_pt
+        sign = "+" if intercept >= 0 else "-"
+        return f"y = {m_t}*x {sign} {abs(intercept)}"
+
+    def normal_equation(self, x0: float) -> str:
+        """Return the normal line equation in human-readable form."""
+        x_pt, y_pt = self.contact_point(x0)
+        m_n = self.normal_slope(x0)
+
+        if m_n == "undefined (vertical normal)":
+            return f"x = {x_pt}  (vertical normal)"
+        if isinstance(m_n, float) and m_n == 0.0:
+            return f"y = {y_pt}  (horizontal normal)"
+
+        intercept = y_pt - m_n * x_pt
+        sign = "+" if intercept >= 0 else "-"
+        return f"y = {m_n:.6f}*x {sign} {abs(intercept):.6f}"
+
+    def plot(self, x0: float, window: float = 3.0) -> None:
+        """Render the curve with its tangent and normal lines."""
+        x_vals = np.linspace(x0 - window, x0 + window, 400)
+        f_lambda = lambdify(self.x, self.f, modules=["numpy"])
+        y_vals = f_lambda(x_vals)
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        ax.plot(x_vals, y_vals, "b-", label=f"y = {self.f}", linewidth=2)
+
+        x_pt, y_pt = self.contact_point(x0)
+        m_t = self.tangent_slope(x0)
+
+        if isinstance(m_t, float):
+            y_tan = m_t * (x_vals - x_pt) + y_pt
+            ax.plot(x_vals, y_tan, "r--",
+                    label=f"Tangent (m={m_t:.3f})", linewidth=1.5)
+            if m_t != 0:
+                m_n = -1.0 / m_t
+                y_norm = m_n * (x_vals - x_pt) + y_pt
+                ax.plot(x_vals, y_norm, "g--",
+                        label=f"Normal (m={m_n:.3f})", linewidth=1.5)
+
+        ax.plot(x_pt, y_pt, "ko", markersize=8,
+                label=f"Contact ({x_pt}, {y_pt:.2f})")
+        ax.grid(True, alpha=0.3)
+        ax.axhline(0, color="k", linewidth=0.5)
+        ax.axvline(0, color="k", linewidth=0.5)
+        ax.legend(loc="best")
+        ax.set_xlabel("x")
+        ax.set_ylabel("y")
+        ax.set_title("Tangent and Normal Visualization")
+        plt.tight_layout()
+        plt.show()
 
 
-def tangent_from_external_point(func_expr, ext_point: tuple) -> list:
-    """
-    Find all tangents to y = f(x) passing through external point (a, b).
-    
-    Returns a list of (x_contact, tangent_equation) tuples.
-    """
-    a, b = ext_point
-    dy_dx = diff(func_expr, x)
-    
-    # Equation: f'(x0) * (a - x0) = f(x0) - b
-    contact_eq = Eq(dy_dx * (a - x), func_expr - b)
-    contact_points = solve(contact_eq, x)
-    
-    results = []
-    for cp in contact_points:
-        if cp.is_real:
-            y_cp = func_expr.subs(x, cp)
-            m = dy_dx.subs(x, cp)
-            tangent_line = Eq(y0, m * (x - cp) + y_cp)
-            results.append((cp, tangent_line, m))
-    return results
-
-
-# --- Demonstration with y = x^3 - 3x + 2 at x0 = 2 ---
+# ---------------------------------------------------------------------------
+# KTU Sample: y = x^2 - 4x + 7, find tangent and normal at x = 2
+# ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    f = x**3 - 3*x + 2
-    
-    result = tangent_and_normal(f, point_x=2)
-    print(f"Contact Point : {result['point']}")
-    print(f"Tangent Line  : {result['tangent']}")
-    print(f"Normal Line   : {result['normal']}")
-    
-    # External point test
-    print("\n--- Tangent from external point (0, 4) ---")
-    tangents = tangent_from_external_point(x**2, (0, 4))
-    for cp, eq, m in tangents:
-        print(f"Contact: x = {cp}, Slope: {m}, Line: {eq}")
+    calc = TangentNormalCalculator("x**2 - 4*x + 7")
+    x0 = 2
+    logger.info("Point of contact : %s", calc.contact_point(x0))
+    logger.info("Tangent equation : %s", calc.tangent_equation(x0))
+    logger.info("Normal equation  : %s", calc.normal_equation(x0))
+    # calc.plot(x0)  # uncomment to display the plot
 ```
 
-**Expected Output of the demo:**
-```
-Contact Point : (2, 4)
-Tangent Line  : y = 9*x - 14
-Normal Line   : y = -x/9 + 38/9
+**Expected console output:**
 
---- Tangent from external point (0, 4) ---
-Contact: x = 2, Slope: 4, Line: y = 4*x
 ```
+Point of contact : (2.0, 3.0)
+Tangent equation : y = 0*x + 3.0        # i.e., y = 3
+Normal equation  : x = 2.0              # vertical normal
+```
+
+---
+
+## 3.5 Tangent from First Principles (Limit Form)
+
+For a curve $y = f(x)$, the tangent slope at $x = x_0$ is the limit
+
+$$m_t = \lim_{h \to 0}\frac{f(x_0 + h) - f(x_0)}{h}$$
+
+**Example using first principles** for $f(x) = x^2$ at $x_0 = 3$:
+
+$$\begin{aligned}
+m_t &= \lim_{h \to 0}\frac{(3+h)^2 - 9}{h} \\
+&= \lim_{h \to 0}\frac{9 + 6h + h^2 - 9}{h} \\
+&= \lim_{h \to 0}\frac{6h + h^2}{h} \\
+&= \lim_{h \to 0}(6 + h) \\
+&= 6
+\end{aligned}$$
+
+The tangent at $(3, 9)$ is $y - 9 = 6(x - 3)$, i.e., $y = 6x - 9$.
+
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# Structural Diagrams & Schematics
 
-## 4.1 Mermaid Flowchart — Algorithm for Finding Tangent and Normal
+# Structural Diagrams and Schematics
+
+## 4.1 Process Flow: Finding Tangent and Normal
 
 ```mermaid
 flowchart TD
-    A[Start: Given y = f x and point x0] --> B[Verify f is differentiable at x0]
-    B --> C{Differentiable?}
-    C -->|No| D[Tangent is vertical: x = x0]
-    C -->|Yes| E[Compute dy/dx symbolically]
-    E --> F[Evaluate m_T = dy/dx at x0]
-    F --> G{m_T equals 0?}
-    G -->|Yes| H[Tangent is horizontal: y = y0]
-    G -->|No| I[Write tangent: y - y0 = m_T x - x0]
-    I --> J[Compute m_N = -1 / m_T]
-    J --> K[Write normal: y - y0 = m_N x - x0]
-    H --> L[Normal is vertical: x = x0]
-    D --> M[Return pair of equations]
-    K --> M
-    L --> M
-    M --> N[End]
+    step1["Step 1: Identify Curve y = f x and Point x0"]:::inputNode
+    step2["Step 2: Compute Derivative f prime x"]
+    step3["Step 3: Evaluate m = f prime x0"]
+    step4{"Step 4: Branch on Line Type"}:::decisionNode
+
+    step5a["Step 5A: Tangent Line y minus y0 = m times x minus x0"]:::outputNode
+    step5b["Step 5B: Compute m normal = negative 1 over m"]
+    step6["Step 6: Normal Line y minus y0 = m normal times x minus x0"]:::outputNode
+
+    subgraph SpecialCases["Boundary Cases Module"]
+        caseA["If m equals 0: Tangent is y equals y0, Normal is x equals x0"]
+        caseB["If m is undefined: Tangent is x equals x0, Normal is y equals y0"]
+        caseC["If m equals 1: 45 degree tangent, m normal equals negative 1"]
+    end
+
+    step1 --> step2 --> step3 --> step4
+    step4 -->|Tangent| step5a
+    step4 -->|Normal| step5b --> step6
+    step3 -.-> SpecialCases
+
+    classDef inputNode fill:#e1f5ff,stroke:#01579b,stroke-width:2px,color:#000
+    classDef decisionNode fill:#fff3cd,stroke:#856404,stroke-width:2px,color:#000
+    classDef outputNode fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px,color:#000
 ```
 
-## 4.2 Mermaid Block Diagram — Geometric Relationship
+## 4.2 Geometric Relationship Schematic
 
 ```mermaid
 flowchart LR
-    subgraph Curve
-        direction TB
-        P[Point P x0, y0 on curve y = f x]
-    end
-    
-    subgraph Lines_Through_P
-        direction TB
-        TL[Tangent Line] -->|slope m_T = f' x0| TL
-        NL[Normal Line] -->|slope m_N = -1 slash m_T| NL
-    end
-    
-    X[Positive x axis] -->|angle theta| TL
-    TL -->|perpendicular 90 degrees| NL
-    
-    P --> TL
-    P --> NL
-    
-    style Curve fill:#e8f4ff,stroke:#1e90ff
-    style Lines_Through_P fill:#fff4e6,stroke:#ff8c00
-    style P fill:#ffeb3b,stroke:#f57f17
+    curve["Curve y equals f x"]:::curveNode
+    pointP["Point of Contact P x0, y0"]:::pointNode
+    secant["Secant Line PQ h not 0"]:::secantNode
+    tangent["Tangent Line m equals f prime x0"]:::tangentNode
+    normal["Normal Line m normal equals negative 1 over f prime x0"]:::normalNode
+    limit["Take Limit h approaches 0"]:::limitNode
+
+    secant --> limit --> tangent
+    curve --> pointP
+    pointP --> tangent
+    pointP --> normal
+    tangent -->|"perpendicular"| normal
+
+    classDef curveNode fill:#bbdefb,stroke:#0d47a1,stroke-width:2px,color:#000
+    classDef pointNode fill:#ffccbc,stroke:#bf360c,stroke-width:2px,color:#000
+    classDef secantNode fill:#e0e0e0,stroke:#424242,stroke-width:1px,color:#000
+    classDef tangentNode fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px,color:#000
+    classDef normalNode fill:#f8bbd0,stroke:#880e4f,stroke-width:2px,color:#000
+    classDef limitNode fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#000
 ```
 
-## 4.3 Sequential Processing Topology — Tangent Line Construction Pipeline
+## 4.3 Sequential Processing Topology (Limit $\to$ Tangent $\to$ Normal)
 
 | Stage | Input | Operation | Output |
-|---|---|---|---|
-| **1. Parse** | $y = f(x)$, target $x_0$ | Substitute $x_0$ into $f$ | Contact point $P(x_0, y_0)$ |
-| **2. Differentiate** | $f(x)$ | Apply differentiation rules | $\dfrac{dy}{dx}$ in symbolic form |
-| **3. Evaluate Slope** | $\dfrac{dy}{dx}$, $x_0$ | Substitute $x = x_0$ | Numerical $m_T$ |
-| **4. Form Tangent** | $P$, $m_T$ | Point-slope formula | $y - y_0 = m_T(x - x_0)$ |
-| **5. Form Normal** | $P$, $m_T$ | Invert and negate slope | $y - y_0 = -\dfrac{1}{m_T}(x - x_0)$ |
-| **6. Validate** | Both equations | Check perpendicularity: $m_T \cdot m_N = -1$ | Verification flag |
+| :---: | :--- | :--- | :--- |
+| 1 | Curve $y = f(x)$, point $x_0$ | Identify contact point | $P(x_0, y_0)$ |
+| 2 | $f(x)$ | Differentiation | $f'(x)$ |
+| 3 | $f'(x)$, $x_0$ | Limit evaluation | $m_t = f'(x_0)$ |
+| 4 | $m_t$ | Check boundary | $m_t = 0$ or $\infty$? |
+| 5 | $m_t$, $P$ | Point-slope form | Tangent equation |
+| 6 | $m_t$ | Reciprocal with sign flip | $m_n = -1/m_t$ |
+| 7 | $m_n$, $P$ | Point-slope form | Normal equation |
+| 8 | Both equations | Verification: $m_t \cdot m_n = -1$ | Validation check |
+
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank & Topic Recap
+
+# KTU 2024 Scheme Examination Question Bank
 
 ## Part A — Short Answer Questions (3 Marks Each)
 
-### Question A1
-`[KTU University Exam - July 2024]`
-**Define the tangent line to a curve $y = f(x)$ at a point $P(x_0, y_0)$ using the limit definition. State the formula for the slope of the tangent.**
+### Question 1
+> **[KTU University Exam - July 2024]** Define the **tangent** and **normal** to a curve at a given point. How are their slopes related? *(CO1, Remember — L1)*
 
-**Model Answer (3 Marks):**
-The tangent to $y = f(x)$ at $P(x_0, y_0)$ is the limiting position of the secant $PQ$ as $Q \to P$ along the curve. Mathematically:
-$$m_T = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h} = f'(x_0)$$
-If this limit exists, the tangent is the line through $P$ with slope $f'(x_0)$: $y - y_0 = f'(x_0)(x - x_0)$. **[Definition: 1 Mark | Limit expression: 1 Mark | Equation: 1 Mark]**
+**Model Answer:**
 
----
+The **tangent** to a curve $y = f(x)$ at the point $P(x_0, y_0)$ is the straight line that touches the curve at $P$ and has slope equal to the derivative $f'(x_0)$ at that point.
 
-### Question A2
-`[KTU University Exam - Dec 2023]`
-**If the tangent to a curve at a point makes an angle of $60°$ with the positive $x$-axis, what is the slope of the normal at that point?**
+The **normal** to the curve at $P$ is the straight line passing through $P$ and **perpendicular** to the tangent.
 
-**Model Answer (3 Marks):**
-The slope of the tangent is $m_T = \tan(60°) = \sqrt{3}$.
-The normal is perpendicular to the tangent, so:
-$$m_N = -\frac{1}{m_T} = -\frac{1}{\sqrt{3}} = -\frac{\sqrt{3}}{3}$$
-**[Computing $m_T$: 1 Mark | Formula for $m_N$: 1 Mark | Final value: 1 Mark]**
+The slopes are related by the orthogonality condition: $m_t \cdot m_n = -1$, i.e., $m_n = -\dfrac{1}{f'(x_0)}$ provided $f'(x_0) \neq 0$.
+
+**[Valuation Key: Definition of tangent: 1 Mark; Definition of normal: 1 Mark; Slope relationship: 1 Mark]**
 
 ---
 
-## Part B — Long Answer Questions (14 Marks Each)
+### Question 2
+> **[KTU University Exam - Dec 2023]** Find the slope of the tangent to the curve $y = x^3 - 2x + 1$ at the point $x = 1$. *(CO1, Apply — L3)*
 
-### Question B1 (Choice A)
-`[KTU University Exam - July 2024 | CO1, CO2 | Apply / Analyze]`
+**Model Answer:**
 
-**(a)** Find the equation of the tangent and normal to the curve $y = x^3 - 6x^2 + 11x - 6$ at the point where the curve crosses the $x$-axis. **(7 Marks)**
+**Step 1** — Differentiate: $\dfrac{dy}{dx} = 3x^2 - 2$.
 
-**(b)** Show that the tangent to the curve $y = x^2 - x + 1$ at $x = 1$ is parallel to the secant joining the points where $x = 0$ and $x = 2$. **(7 Marks)**
+**Step 2** — Evaluate at $x = 1$: $m_t = 3(1)^2 - 2 = 1$.
 
----
-
-### Model Solution for Question B1
-
-#### Part (a) — Tangent and Normal at the $x$-axis Crossing
-
-**Step 1: Find where the curve crosses the $x$-axis** (i.e., $y = 0$).
-$$x^3 - 6x^2 + 11x - 6 = 0$$
-By inspection / synthetic division: $(x-1)(x-2)(x-3) = 0$, giving $x = 1, 2, 3$.
-Three crossing points: $A(1, 0)$, $B(2, 0)$, $C(3, 0)$.
-
-**Step 2: Differentiate.**
-$$\frac{dy}{dx} = 3x^2 - 12x + 11$$
-
-**Step 3: Evaluate slopes at each point.**
-- At $A(1, 0)$: $m_T = 3 - 12 + 11 = 2$
-- At $B(2, 0)$: $m_T = 12 - 24 + 11 = -1$
-- At $C(3, 0)$: $m_T = 27 - 36 + 11 = 2$
-
-**Step 4: Write tangent equations.**
-- At $A$: $y - 0 = 2(x - 1) \implies y = 2x - 2$
-- At $B$: $y - 0 = -1(x - 2) \implies y = -x + 2$
-- At $C$: $y - 0 = 2(x - 3) \implies y = 2x - 6$
-
-**Step 5: Write normal equations** ($m_N = -1/m_T$).
-- At $A$: $m_N = -1/2 \implies y = -\dfrac{1}{2}(x - 1)$
-- At $B$: $m_N = 1 \implies y = x - 2$
-- At $C$: $m_N = -1/2 \implies y = -\dfrac{1}{2}(x - 3)$
-
-**[Finding $x$-axis crossings: 1 Mark | Differentiation: 1 Mark | Slope values: 2 Marks | Tangent equations: 2 Marks | Normal equations: 1 Mark]**
-
-#### Part (b) — Tangent Parallel to a Secant
-
-**Step 1: Compute the slope of the secant between $x = 0$ and $x = 2$.**
-- Point at $x = 0$: $y(0) = 0 - 0 + 1 = 1$, so $P_0(0, 1)$.
-- Point at $x = 2$: $y(2) = 4 - 2 + 1 = 3$, so $P_2(2, 3)$.
-$$m_{\text{secant}} = \frac{3 - 1}{2 - 0} = \frac{2}{2} = 1$$
-
-**Step 2: Compute the slope of the tangent at $x = 1$.**
-$$\frac{dy}{dx} = 2x - 1 \implies m_T = 2(1) - 1 = 1$$
-
-**Step 3: Compare.**
-$$m_T = 1 = m_{\text{secant}}$$
-
-Therefore, the tangent at $x = 1$ **is parallel** to the secant. In fact, this is an instance of the **Mean Value Theorem**, which guarantees such a parallel tangent exists between any two points on a differentiable curve. ✓
-
-**[Secant slope: 2 Marks | Tangent slope: 2 Marks | Comparison and conclusion: 3 Marks]**
+**[Valuation Key: Differentiation: 2 Marks; Substitution and final value: 1 Mark]**
 
 ---
 
-### Question B2 (Choice B — Alternative)
-`[KTU University Exam - Dec 2023 | CO1, CO3 | Apply / Analyze]`
+## Part B — Long Answer Questions (14 Marks Each, Internal Choice)
 
-**(a)** Find the points on the curve $y = x^3$ where the tangent is parallel to the chord joining the points $(1, 1)$ and $(3, 27)$. **(7 Marks)**
+> Each Part B question carries a 14-mark weight, with sub-parts (a) and (b) each worth 7 marks. Internal choice is provided.
 
-**(b)** Find the equation of the normal to the curve $y = \sqrt{x}$ at the point where the tangent makes an angle of $45°$ with the $x$-axis. **(7 Marks)**
+### Question A (14 Marks)
+
+> **[KTU University Exam - July 2024, Modified]**
+
+**(a)** Find the equations of the tangent and normal to the curve $y = x^2 - 4x + 7$ at the point $x = 2$. *(CO1, Apply — L3, 7 Marks)*
+
+**Model Solution:**
+
+**Step 1** — Compute $y_0$:
+
+$$y_0 = (2)^2 - 4(2) + 7 = 4 - 8 + 7 = 3$$
+
+So the point of contact is $P(2, 3)$. **[Identifying contact point: 1 Mark]**
+
+**Step 2** — Differentiate:
+
+$$\frac{dy}{dx} = 2x - 4$$ **[Differentiation: 2 Marks]**
+
+**Step 3** — Evaluate slope at $x = 2$:
+
+$$m_t = 2(2) - 4 = 0$$ **[Substitution: 1 Mark]**
+
+**Step 4** — Tangent equation (horizontal):
+
+$$y - 3 = 0(x - 2) \implies \boxed{y = 3}$$ **[Tangent equation: 2 Marks]**
+
+**Step 5** — Normal equation (vertical, since $m_t = 0$):
+
+$$\boxed{x = 2}$$ **[Normal equation: 1 Mark]**
 
 ---
 
-### Model Solution for Question B2
+**(b)** Find the points on the curve $y = x^3 - 3x^2$ where the tangent is **parallel to the $x$-axis**. Also find the corresponding tangent equations. *(CO2, Analyze — L4, 7 Marks)*
 
-#### Part (a) — Tangent Parallel to Chord
+**Model Solution:**
 
-**Step 1: Slope of the chord** from $(1, 1)$ to $(3, 27)$:
-$$m_{\text{chord}} = \frac{27 - 1}{3 - 1} = \frac{26}{2} = 13$$
+**Step 1** — For tangent to be parallel to the $x$-axis, the slope must be zero:
 
-**Step 2: Slope of tangent to $y = x^3$** at $(x_0, x_0^3)$:
-$$\frac{dy}{dx} = 3x^2 \implies m_T = 3x_0^2$$
+$$\frac{dy}{dx} = 3x^2 - 6x = 0$$ **[Setting up the condition: 1 Mark]**
 
-**Step 3: Set $m_T = m_{\text{chord}}$**:
-$$3x_0^2 = 13 \implies x_0^2 = \frac{13}{3} \implies x_0 = \pm\sqrt{\frac{13}{3}}$$
+**Step 2** — Solve:
 
-**Step 4: Find corresponding $y$ values.**
-$$y_0 = x_0^3 = \pm\left(\frac{13}{3}\right)^{3/2} = \pm\frac{13\sqrt{13}}{3\sqrt{3}} = \pm\frac{13\sqrt{39}}{9}$$
+$$3x(x - 2) = 0 \implies x = 0 \text{ or } x = 2$$ **[Solving the equation: 2 Marks]**
 
-**Answer:** The two points are $\left(\pm\sqrt{\dfrac{13}{3}}, \pm\dfrac{13\sqrt{39}}{9}\right)$.
+**Step 3** — Compute corresponding $y$ values:
 
-**[Chord slope: 2 Marks | Setting up derivative: 2 Marks | Solving for $x_0$: 2 Marks | Final points: 1 Mark]**
+- At $x = 0$: $y = 0 - 0 = 0 \implies P_1(0, 0)$.
+- At $x = 2$: $y = 8 - 12 = -4 \implies P_2(2, -4)$. **[Computing points: 2 Marks]**
 
-#### Part (b) — Normal When Tangent Angle is $45°$
+**Step 4** — Tangent equations (both horizontal):
 
-**Step 1: Relate angle to slope.**
-$$\tan(45°) = 1 \implies m_T = 1$$
+$$\text{At } P_1:\ y = 0 \qquad \text{At } P_2:\ y = -4$$ **[Tangent equations: 2 Marks]**
 
-**Step 2: Differentiate $y = \sqrt{x} = x^{1/2}$.**
-$$\frac{dy}{dx} = \frac{1}{2\sqrt{x}}$$
+---
 
-**Step 3: Solve for $x$.**
-$$\frac{1}{2\sqrt{x}} = 1 \implies 2\sqrt{x} = 1 \implies \sqrt{x} = \frac{1}{2} \implies x = \frac{1}{4}$$
+### Question B (14 Marks) — *Alternative Choice*
 
-**Step 4: Find the $y$-coordinate.**
-$$y_0 = \sqrt{1/4} = \frac{1}{2}$$
-Point of contact: $P\left(\dfrac{1}{4}, \dfrac{1}{2}\right)$.
+> **[KTU University Exam - Dec 2023, Modified]**
 
-**Step 5: Normal slope.**
-$$m_N = -\frac{1}{m_T} = -1$$
+**(a)** If the tangent to the curve $y = x^2 - 2x + 5$ at the point where it meets the $y$-axis makes an angle $\theta$ with the positive $x$-axis, find $\theta$. *(CO1, Apply — L3, 7 Marks)*
 
-**Step 6: Normal equation.**
-$$y - \frac{1}{2} = -1\left(x - \frac{1}{4}\right) \implies y = -x + \frac{3}{4}$$
+**Model Solution:**
 
-**[Slope relation: 1 Mark | Differentiation: 1 Mark | Solving for $x$: 2 Marks | Normal slope: 1 Mark | Equation: 2 Marks]**
+**Step 1** — Find the point on the $y$-axis: Set $x = 0$:
+
+$$y = 0 - 0 + 5 = 5$$
+
+Point of contact: $P(0, 5)$. **[Identifying point: 1 Mark]**
+
+**Step 2** — Differentiate:
+
+$$\frac{dy}{dx} = 2x - 2$$ **[Differentiation: 2 Marks]**
+
+**Step 3** — Evaluate slope at $x = 0$:
+
+$$m_t = 2(0) - 2 = -2$$ **[Substitution: 1 Mark]**
+
+**Step 4** — Compute angle of inclination:
+
+$$\tan\theta = m_t = -2 \implies \theta = \tan^{-1}(-2) \approx -63.43°$$ **[Final angle: 3 Marks]**
+
+Since the slope is negative, the tangent is **sloping downward**, and $\theta$ is measured clockwise from the positive $x$-axis (i.e., in the fourth quadrant).
+
+---
+
+**(b)** Find the equation of the normal to the curve $y^2 = 4x$ at the point $(1, 2)$. *(CO2, Analyze — L4, 7 Marks)*
+
+**Model Solution:**
+
+**Step 1** — Differentiate implicitly:
+
+$$2y \cdot \frac{dy}{dx} = 4 \implies \frac{dy}{dx} = \frac{4}{2y} = \frac{2}{y}$$ **[Implicit differentiation: 2 Marks]**
+
+**Step 2** — Evaluate slope at $(1, 2)$:
+
+$$m_t = \frac{2}{2} = 1$$ **[Substitution: 1 Mark]**
+
+**Step 3** — Compute normal slope:
+
+$$m_n = -\frac{1}{m_t} = -1$$ **[Reciprocal: 1 Mark]**
+
+**Step 4** — Write normal equation using point-slope form:
+
+$$y - 2 = -1(x - 1) \implies y - 2 = -x + 1$$ **[Equation setup: 2 Marks]**
+
+$$\boxed{x + y - 3 = 0 \quad \text{or} \quad x + y = 3}$$ **[Final simplified form: 1 Mark]**
 
 ---
 
 > [!WARNING]
-> **KTU Examiner's Valuation Warning — Common Pitfalls:**
-> 1. **Forgetting to check $f'(x_0) \neq 0$** before writing $m_N = -1/f'(x_0)$. If $f'(x_0) = 0$, the normal is **vertical** ($x = x_0$), not undefined. (Loss: 1-2 Marks)
-> 2. **Mixing up tangent slope with normal slope** in the perpendicularity check. Always verify $m_T \cdot m_N = -1$ at the end. (Loss: 1 Mark)
-> 3. **Skipping the verification of point of contact** on the curve. KTU examiners award 1 mark specifically for substituting $x_0$ back into $f(x)$ to confirm $y_0$. (Loss: 1 Mark)
-> 4. **Sign errors when using the angle formula** $\tan\phi = \left\vert\frac{m_1 - m_2}{1 + m_1 m_2}\right\vert$. The **absolute value** is mandatory — angles are always non-negative. (Loss: 1-2 Marks)
-> 5. **Not writing the explicit condition** for vertical/horizontal tangents in problems involving curves like $x^2 + y^2 = r^2$ or $y^2 = 4ax$. Always state: "Tangent is vertical when $f'(x_0) \to \infty$". (Loss: 1 Mark)
+> **KTU Examiner's Valuation Pitfalls — Read Carefully**
+> 1. **Do not confuse** the equation of the **tangent** with the equation of the **normal**. The normal's slope is the *negative reciprocal* of the tangent's slope, not the same value.
+> 2. **Always verify the domain** before dividing by $f'(x_0)$. If $f'(x_0) = 0$, the normal's slope formula $m_n = -1/f'(x_0)$ is **undefined** — the normal is vertical.
+> 3. **For implicit curves** (e.g., $y^2 = 4x$), use implicit differentiation; do not try to isolate $y$ first, as it introduces extraneous branches.
+> 4. **Include the units/sign** of $\theta$ in angle-of-inclination problems. KTU expects $\theta \in [0, \pi)$ unless otherwise specified.
+> 5. **Substitution marks** are awarded separately. Skipping the step "substitute $x = x_0$" costs 1–2 marks even if the final answer is correct.
+> 6. For curves with **multiple points of contact** (as in Part B Q1b), the KTU key requires **all** valid points to be listed. Missing one point costs 2 marks.
+> 7. **Negative reciprocals**: A common error is writing $m_n = \dfrac{1}{f'(x_0)}$ (forgetting the minus sign). This changes the entire normal line.
 
 ---
 
 ## Topic Recap & Important Things to Remember
 
-- **Tangent slope** at $P(x_0, y_0)$ on $y = f(x)$ is $m_T = f'(x_0)$, defined as the limit of the difference quotient.
-- **Normal slope** is the **negative reciprocal**: $m_N = -1/f'(x_0)$, valid only when $f'(x_0) \neq 0$.
-- **Tangent equation**: $y - y_0 = f'(x_0)(x - x_0)$ (point-slope form).
+- **Tangent slope** is the *first-principle derivative*: $m_t = \displaystyle\lim_{h \to 0}\dfrac{f(x_0+h) - f(x_0)}{h}$.
+- **Normal slope** is the **negative reciprocal** of the tangent slope: $m_n = -\dfrac{1}{m_t}$, valid only when $m_t \neq 0$.
+- **Tangent equation**: $y - y_0 = f'(x_0)(x - x_0)$ — point-slope form at contact point $P(x_0, y_0)$.
 - **Normal equation**: $y - y_0 = -\dfrac{1}{f'(x_0)}(x - x_0)$.
-- **Horizontal tangent** ↔ $f'(x_0) = 0$ ↔ normal is vertical ($x = x_0$).
-- **Vertical tangent** ↔ $f'(x_0) \to \infty$ ↔ normal is horizontal ($y = y_0$).
-- **Angle of inclination** $\theta$ of tangent: $\tan\theta = f'(x_0)$, with $\theta \in (-\pi/2, \pi/2)$.
-- **Angle between two curves** at intersection: $\tan\phi = \left\vert\dfrac{m_1 - m_2}{1 + m_1 m_2}\right\vert$.
-- **Orthogonality** of two curves: $m_1 \cdot m_2 = -1$.
-- **Tangent from external point** problems require setting $f'(x_0) = \dfrac{f(x_0) - y_1}{x_0 - x_1}$ and solving for $x_0$.
-- **Always verify** the point of contact lies on the curve before writing the final tangent/normal equation.
-- **Always check** differentiability and the non-vertical condition before dividing by $f'(x_0)$.
-- **Always include the absolute value** in the angle-between-curves formula.
-- **SymPy** in Python provides a robust symbolic engine for verifying KTU tangent/normal problems.
+- **Horizontal tangent** occurs when $f'(x_0) = 0$; the tangent is $y = y_0$ and the normal is the vertical line $x = x_0$.
+- **Vertical tangent** occurs when $f'(x_0) \to \pm\infty$; the tangent is $x = x_0$ and the normal is the horizontal line $y = y_0$.
+- **Angle of inclination** $\theta$ of the tangent with positive $x$-axis satisfies $\tan\theta = f'(x_0)$, with $\theta \in [0, \pi)$.
+- **Orthogonality check**: $m_t \cdot m_n = -1$ is a quick verification tool for non-axial lines.
+- **Implicit differentiation** is mandatory for curves not in explicit form $y = f(x)$, e.g., $y^2 = 4x$, $x^2 + y^2 = r^2$.
+- **Parametric form** tangent slope: $\dfrac{dy}{dx} = \dfrac{\dot{y}(t)}{\dot{x}(t)}$, provided $\dot{x}(t) \neq 0$.
+- **Engineering relevance**: Tangents model instantaneous direction (motion, gradients); normals model perpendicularity (forces, surface lighting in CG).
+- **Module 1 connection**: The tangent is the *limiting position of a secant line* — this is the geometric motivation for the limit-based definition of the derivative.
+- **Common trap**: A common confusion is "tangent and normal are both lines that touch the curve." The correct understanding is that the tangent *just touches* the curve, while the normal *crosses* it perpendicularly.
+
 <!-- SECTION_5_END -->

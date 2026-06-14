@@ -1,0 +1,15 @@
+{
+  "course_name": "OPERATING SYSTEMS LAB",
+  "course_code": "PCCSL407",
+  "module_number": 9,
+  "module_title": "Input a list of processes their cpu burst times integral values arrival",
+  "topics_generated": [
+    {
+      "title": "Input a list of processes, their CPU burst times (integral values), arrival times, and priorities. Then simulate FCFS, SRTF, non-preemptive priority (a larger priority number implies a higher priority), and RR (quantum = 3 units) scheduling algorithms on the process mix, determining which algorithm results in the minimum average waiting time (over all processes).",
+      "slug": "input-a-list-of-processes-their-cpu-burst-times-integral-values-arrival-times-and-priorities-then",
+      "path": "input-a-list-of-processes-their-cpu-burst-times-integral-values-arrival-times-and-priorities-then/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

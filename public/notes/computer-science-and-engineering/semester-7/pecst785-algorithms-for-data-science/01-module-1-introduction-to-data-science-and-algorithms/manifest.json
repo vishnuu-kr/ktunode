@@ -1,0 +1,36 @@
+{
+  "course_name": "ALGORITHMS FOR DATA SCIENCE",
+  "course_code": "PECST785",
+  "module_number": 1,
+  "module_title": "Introduction to data science and algorithms",
+  "topics_generated": [
+    {
+      "title": "Introduction to Data Science and Algorithms - Overview of data science and its significance, Role of algorithms in data science",
+      "slug": "introduction-to-data-science-and-algorithms-overview-of-data-science-and-its-significance-role-of",
+      "path": "introduction-to-data-science-and-algorithms-overview-of-data-science-and-its-significance-role-of/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Preprocessing Techniques - Data cleaning, transformation, and normalization, Handling missing data, outliers, and data imputation techniques",
+      "slug": "data-preprocessing-techniques-data-cleaning-transformation-and-normalization-handling-missing-data",
+      "path": "data-preprocessing-techniques-data-cleaning-transformation-and-normalization-handling-missing-data/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dimensionality reduction techniques - Principal Component Analysis (PCA), t-Distributed Stochastic Neighbor Embedding (t-SNE)",
+      "slug": "dimensionality-reduction-techniques-principal-component-analysis-pca-t-distributed-stochastic",
+      "path": "dimensionality-reduction-techniques-principal-component-analysis-pca-t-distributed-stochastic/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Algorithmic Approaches to Data Sampling - Random sampling, stratified sampling, and bootstrapping, Importance of representative sampling in data analysis",
+      "slug": "algorithmic-approaches-to-data-sampling-random-sampling-stratified-sampling-and-bootstrapping",
+      "path": "algorithmic-approaches-to-data-sampling-random-sampling-stratified-sampling-and-bootstrapping/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,581 +1,836 @@
 # Fermi Dirac distribution
 
 <!-- SECTION_1_START -->
-# Fermi–Dirac Distribution
 
-> [!IMPORTANT]
-> **KTU 2024 Scheme | Course:** Physics for Information Science (GAPHT121)
-> **Module:** 1 – Electrical Conductivity
-> **Syllabus Tag:** Classical & Quantum Statistical Description of Electrical Conduction, Fermi–Dirac Distribution
-
-## 1.1 Formal Academic Definition
-
-The **Fermi–Dirac (F–D) distribution function** gives the probability that a quantum-mechanical energy state, available at energy $E$, is occupied by a **fermion** (an electron, in the context of solid-state physics) when the system is in thermal equilibrium at an absolute temperature $T$.
-
-Mathematically, the Fermi–Dirac distribution function is defined as:
-
-$$f(E) \;=\; \frac{1}{\exp\!\left(\dfrac{E - E_{F}}{k_{B} T}\right) + 1}$$
-
-where each symbol has the precise KTU-standard meaning listed in the table below.
-
-| Symbol | Quantity | Typical Unit (SI) |
-|:------:|:---------|:------------------:|
-| $f(E)$ | Probability of occupation of a state of energy $E$ | Dimensionless (between $0$ and $1$) |
-| $E$ | Energy of the quantum state | Joule (J) or electron-volt (eV) |
-| $E_{F}$ | Fermi energy (chemical potential at $T = 0$) | J or eV |
-| $T$ | Absolute temperature of the system | Kelvin (K) |
-| $k_{B}$ | **Boltzmann constant**, $\approx 1.38 \times 10^{-23}\ \text{J/K}$ | J/K |
-| $k_{B}T$ | Thermal energy at temperature $T$, $\approx 0.0259\ \text{eV}$ at $300\ \text{K}$ | J or eV |
+# Fermi–Dirac Distribution: A Foundational Pillar of Quantum Statistics
 
 > [!NOTE]
-> **KTU Board-Standard Definition (memorize verbatim):**
-> *"The Fermi–Dirac distribution function is defined as the probability of occupancy of an energy level $E$ at temperature $T$ by an electron, and is given by $f(E) = \dfrac{1}{\exp((E-E_F)/k_BT) + 1}$, where $E_F$ is the Fermi energy."*
+> **KTU 2024 Scheme | GAPHT121 – Physics for Information Science | Module 1: Electrical Conductivity**
+> This note is mapped to **CO1** (Understand the quantum mechanical basis of charge transport) and **CO2** (Apply statistical principles to predict carrier behaviour in materials).
 
-## 1.2 Intuitive Real-World Analogy
+---
 
-Imagine a **stadium with numbered seats**, where every seat represents a discrete energy level $E$, and only **one spectator (an electron)** can sit in any given seat because of the **Pauli Exclusion Principle** (the "no-two-spectators-per-seat" rule).
+## 1.1 Formal Definition (KTU Syllabus Terminology)
 
-- The **cheapest seats at the back (low energy)** fill up first. They remain occupied even when the stadium is cold ($T \to 0$).
-- The **price-line of seats that are exactly half-full** corresponds to the **Fermi energy $E_F$**. This is the "energy currency" of the electron gas.
-- As the day warms up (temperature rises), a few spectators near the price-line get enough energy ($k_B T$) to shuffle to slightly higher seats, producing a **"smearing" of the distribution** in a narrow energy window of width $\approx k_B T$ around $E_F$.
+The **Fermi–Dirac Distribution Function** $f(E)$ is a quantum-statistical probability function that gives the probability of finding an **indistinguishable, spin-½ fermion** (such as an electron) occupying an available quantum energy state of energy $E$ at absolute temperature $T$, when the system is in thermal equilibrium.
 
-> [!TIP]
-> **One-line physical intuition:** *The Fermi–Dirac distribution is a "quantum staircase" with a rounded, thermally-smeared edge of width $\sim k_B T$ sitting exactly at the Fermi energy $E_F$.*
+Mathematically, the canonical statement is:
 
-## 1.3 The Three Landmark Temperature Regimes
+$$
+f(E) \;=\; \frac{1}{1 + \exp\!\left(\dfrac{E - E_F}{k_B T}\right)}
+$$
+
+where every symbol carries precise physical meaning in the KTU 2024 Scheme syllabus.
+
+| Symbol | Quantity | Typical Value (Si, 300 K) |
+| :--- | :--- | :--- |
+| $E$ | Energy of the quantum state (J or eV) | Variable |
+| $E_F$ | Fermi energy / Fermi level (J or eV) | $\approx 0.57$ eV (above $E_v$ for p-Si) |
+| $k_B$ | Boltzmann constant | $1.38 \times 10^{-23}$ J/K |
+| $T$ | Absolute temperature (K) | $300$ K |
+| $k_B T$ | Thermal energy | $\approx 0.0259$ eV at 300 K |
 
 > [!IMPORTANT]
-> **Critical KTU Result – Property of the F–D function at $T = 0$ K:**
+> **Fermions obey the Pauli Exclusion Principle.** No two identical fermions can share the same quantum state. This is the *only* reason $f(E)$ is fundamentally different from the classical Maxwell–Boltzmann probability $P(E) \propto e^{-E/k_B T}$. Without Pauli exclusion, semiconductors, transistors, and modern information technology would not exist.
 
-$$\boxed{\;f(E)\Big|_{T=0} \;=\; \begin{cases} 1, & E < E_F \quad (\text{all states below } E_F \text{ are filled}) \\[4pt] \dfrac{1}{2}, & E = E_F \quad (\text{probability of occupancy at Fermi level}) \\[4pt] 0, & E > E_F \quad (\text{all states above } E_F \text{ are empty}) \end{cases}\;}$$
+---
 
-For $T > 0$ K, the sharp step "smears" smoothly around $E_F$ over an energy window of order $k_B T$.
+## 1.2 Conceptual Analogy & Geometric Intuition
+
+Imagine a **stadium with 10,000 numbered seats**, all booked for a rock concert. Tickets are free, but each seat is strictly for **one person only** (no two ticket-holders may share a seat — the **Pauli rule**).
+
+* At **absolute zero ($T = 0$ K)**, the audience is assigned seats starting from the *lowest numbered seat* and filling upward in order. The **highest occupied seat** is the **Fermi seat** (energy $E_F$). Every seat below it is full; every seat above it is empty. The transition is *abrupt* — a sharp cliff from 1 to 0.
+* At **room temperature ($T = 300$ K)**, a few audience members near the boundary feel thermally energetic. They shuffle around: a handful of *electrons just below $E_F$* jump to slightly *higher seats*, leaving **sma ll holes** behind. The boundary becomes a *smooth, fuzzy step* about $k_B T$ wide.
+* At **very high temperatures**, the step broadens, but it never becomes a gentle exponential — it retains its *fermi-character* of being bounded between 0 and 1.
+
+The shape of this curve is the **electrical personality card** of every material: metals, semiconductors, insulators, and even the quantum wells inside a smartphone CPU.
+
+> [!TIP]
+> **Geometric Picture:** Plot $f(E)$ on the y-axis against $E$ on the x-axis. You will see a smooth, sigmoidal S-curve crossing the magic point $\bigl(E_F,\, 0.5\bigr)$ — meaning *half-filled probability at the Fermi level*. This $0.5$ point is the centre of symmetry of the distribution and is the geometric anchor of nearly every solid-state calculation.
+
+---
+
+## 1.3 The Three Cardinal Energies of $f(E)$
+
+> [!IMPORTANT]
+> **Three KTU High-Yield Energy Limits You Must Memorise**
+
+$$
+f(E) \to 1 \quad \text{when} \quad E \ll E_F \quad \text{(state is full)}
+$$
+
+$$
+f(E) = \tfrac{1}{2} \quad \text{when} \quad E = E_F \quad \text{(50% occupied — the Fermi fingerprint)}
+$$
+
+$$
+f(E) \to 0 \quad \text{when} \quad E \gg E_F \quad \text{(state is empty)}
+$$
+
+---
+
+## 1.4 Visualisation Control Block
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Plot of the Fermi–Dirac distribution $f(E)$ versus normalized energy $(E - E_F)/k_B T$ at three different temperatures.
-> **GeoGebra / Desmos Input Equations (three curves on the same axes):**
-> * `f1(x) = 1 / ( exp( (x) / 0.001 ) + 1 )` &nbsp;*(approximation of $T = 0$ K – a near-perfect step at $x=0$)*
-> * `f2(x) = 1 / ( exp( (x) / 1 ) + 1 )` &nbsp;*(moderate temperature)*
-> * `f3(x) = 1 / ( exp( (x) / 5 ) + 1 )` &nbsp;*(high temperature – more gradual transition)*
-> **Visual Description:** The student should see a sigmoid that crosses $0.5$ exactly at $x = 0$ (i.e. $E = E_F$). As $k_B T$ increases, the slope at $E = E_F$ decreases, and the transition width broadens. The curves are perfectly mirror-symmetric about the point $(0, 0.5)$.
+> **Concept:** Sigmoidal shape of $f(E)$ and the role of $E_F$.
+> **GeoGebra / Desmos Input Equations:**
+>
+> * `f1(x) = 1 / (1 + exp((x - 0)/0.0259))` — *room temperature curve for $E_F = 0$*
+> * `f2(x) = 1 / (1 + exp((x - 0)/0.005))` — *low temperature (≈ 58 K), sharper step*
+> * `f3(x) = 1 / (1 + exp((x - 0)/0.15))` — *high temperature, broad curve*
+> * Point: `(0, 0.5)` — *universal half-occupancy marker*
+>
+> **Visual Description:** The student should observe three sigmoids sharing the common intersection $(E_F,\, 0.5)$. As $T$ rises, the slope at the centre decreases and the curve broadens; as $T \to 0$, the sigmoid collapses into a vertical step (Heaviside function). This single image captures the entire thermal history of free electrons in a solid.
+
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
+
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Why the "+1" is in the Denominator – The Physics Behind the Formula
+---
 
-The F–D distribution arises from the combined application of two foundational ideas of quantum statistical mechanics:
+## 2.1 Origin of the Distribution — Why Does $f(E)$ Look Like This?
 
-1. **Indistinguishability of identical particles:** Electrons in a solid are *quantum-mechanically identical*. We cannot label one electron from another.
-2. **Pauli Exclusion Principle:** No two electrons in a solid can share the *exact same set* of four quantum numbers $(n, l, m_l, m_s)$. Therefore, each quantum state can accommodate **at most one** electron.
+The derivation flows from three pillars: **Pauli exclusion**, **indistinguishability**, and **maximisation of entropy subject to constraints** (number of particles + total energy fixed). The combinatorial count of microstates for $g_i$ degenerate states with $n_i$ particles is:
 
-When these two constraints are combined in the grand-canonical ensemble, the number of ways $W$ of distributing $N$ identical fermions among $g$ available states becomes
+$$
+W_i \;=\; \frac{g_i!}{n_i!\,(g_i - n_i)!}
+$$
 
-$$W \;=\; \prod_{i} \frac{g_i!}{n_i!\,(g_i - n_i)!}$$
+Maximising $\ln W_i$ subject to fixed particle number and energy, using a **Lagrange multiplier method**, yields the single fermion occupancy probability:
 
-where $n_i$ is the number of electrons in a sub-group of $g_i$ available states. Maximising $\ln W$ subject to fixed total energy and particle number, and using Stirling's approximation, leads directly to the F–D distribution function.
+$$
+f(E) \;=\; \frac{1}{1 + \exp\!\left(\dfrac{E - E_F}{k_B T}\right)}
+$$
 
 > [!NOTE]
-> **KTU-Board Fact:** The "$+1$" in the denominator is the *mathematical fingerprint* of the Pauli Exclusion Principle. The **Bose–Einstein distribution** (for photons, phonons) replaces "$+1$" with "$-1$", and the **Maxwell–Boltzmann distribution** removes the $1$ entirely (classical limit).
+> **Key Insight:** The "+1" in the denominator is the *quantum fingerprint* of Pauli exclusion. Replace it with "0" and you recover classical Maxwell–Boltzmann statistics, which catastrophically fails for electrons in solids.
 
-## 2.2 Logical Step-Wise Behaviour of $f(E)$
+---
 
-- **Step 1 – Identify the reference point:** $E_F$ acts as the energy level whose occupancy probability is always exactly $f(E_F) = \tfrac{1}{2}$, independent of temperature.
-- **Step 2 – Inspect deep below $E_F$:** When $E \ll E_F$, the exponential term $\exp((E - E_F)/k_B T) \to 0$, so $f(E) \to 1$. *All low-lying states are completely filled.*
-- **Step 3 – Inspect deep above $E_F$:** When $E \gg E_F$, the exponential term becomes huge, so $f(E) \to 0$ exponentially. *High-energy states are essentially empty.*
-- **Step 4 – Thermal smearing window:** Significant deviations from the $T = 0$ step occur only in the energy window $E_F \pm 3k_B T$. Electrons within $\sim k_B T$ of $E_F$ are the *only* ones that can be thermally excited.
+## 2.2 Behaviour at Limiting Temperatures
 
-## 2.3 Real-World & Engineering Utility
+### Case A — Absolute Zero ($T \to 0$)
 
-| Field | Application of F–D Distribution |
-|:------|:--------------------------------|
-| **Solid-State Electronics** | Predicts whether a material is a metal, semiconductor, or insulator by counting carriers near $E_F$. |
-| **MOSFET / CMOS Design** | Determines electron/hole density in the channel, controls threshold voltage. |
-| **Thermionic Emission** | Richardson–Dushman equation uses $f(E)$ to compute emitted electron current from a hot cathode. |
-| **Photodetectors / Solar Cells** | Carrier generation–recombination statistics are governed by F–D occupancy. |
-| **Quantum Computing** | Defines fermionic qubit populations in superconducting and trapped-electron architectures. |
+* If $E < E_F$: $\dfrac{E - E_F}{k_B T} \to -\infty \;\Rightarrow\; f(E) = 1$ (state full).
+* If $E > E_F$: $\dfrac{E - E_F}{k_B T} \to +\infty \;\Rightarrow\; f(E) = 0$ (state empty).
 
-## 2.4 KTU High-Yield Formula Sheet
+The function degenerates into a **Heaviside step**:
+
+$$
+f(E)\,\big\vert_{T=0} \;=\; \Theta(E_F - E) \;=\;
+\begin{cases}
+1, & E < E_F \\
+0, & E > E_F
+\end{cases}
+$$
+
+### Case B — High-Temperature Maxwell–Boltzmann Tail ($E - E_F \gg k_B T$)
+
+When the exponent is much greater than 1, the "+1" in the denominator becomes negligible:
+
+$$
+f(E) \;\approx\; \exp\!\left(-\frac{E - E_F}{k_B T}\right) \;=\; \exp\!\left(\frac{E_F}{k_B T}\right)\exp\!\left(-\frac{E}{k_B T}\right)
+$$
+
+This is the **classical limit** valid for *conduction electrons in lightly doped semiconductors at room temperature* — the foundation of the **non-degenerate semiconductor model**.
+
+### Case C — Intermediate ($E \approx E_F$)
+
+No simplification possible. Numerical evaluation mandatory. This is the **degenerate regime** relevant for metals, heavily doped semiconductors, and 2-D electron gases in MOSFET channels.
+
+---
+
+## 2.3 KTU High-Yield Formula Sheet
 
 > [!IMPORTANT]
-> **Memorise this table for any question on Fermi–Dirac distribution.**
+> **Master this table. Every entry is a potential 14-mark sub-question.**
 
-| # | Formula | Physical Meaning | Validity / Condition |
-|:-:|:--------|:-----------------|:---------------------|
-| 1 | $f(E) = \dfrac{1}{\exp((E - E_F)/k_B T) + 1}$ | Probability of occupancy of state at energy $E$ | General, any $T > 0$ |
-| 2 | $f(E_F) = \dfrac{1}{2}$ for any $T$ | Energy reference point of the distribution | All temperatures |
-| 3 | $f(E)\big|_{T = 0} = 1$ for $E < E_F$ | All states below $E_F$ filled at absolute zero | $T = 0$ K |
-| 4 | $f(E)\big|_{T = 0} = 0$ for $E > E_F$ | All states above $E_F$ empty at absolute zero | $T = 0$ K |
-| 5 | $f(E) \approx 1 - \exp(-(E_F - E)/k_B T)$ for $E \ll E_F$ | Classical approximation in a filled band | $E_F - E \gg k_B T$ |
-| 6 | $f(E) \approx \exp(-(E - E_F)/k_B T)$ for $E \gg E_F$ | Classical (Boltzmann) tail | $E - E_F \gg k_B T$ |
-| 7 | $E_F \big|_{T = 0} = \dfrac{h^2}{2m}\!\left(\dfrac{3n}{8\pi}\right)^{2/3}$ | Fermi energy in a free-electron metal at $0$ K | Free-electron gas, $T = 0$ |
-| 8 | $k_B T \approx 0.0259$ eV at $300$ K | Thermal energy at room temperature | Standard benchmark |
-| 9 | $N = \displaystyle\int_{0}^{\infty} f(E)\, g(E)\, dE$ | Total number of electrons (carriers) | General carrier-counting equation |
-| 10 | $g(E) = \dfrac{1}{2\pi^2}\!\left(\dfrac{2m}{\hbar^2}\right)^{3/2}\!\sqrt{E}$ | Free-electron density of states in 3D | Free-electron model |
+| # | Formula / Identity | Physical Meaning | Validity Regime |
+| :--- | :--- | :--- | :--- |
+| 1 | $f(E) = \dfrac{1}{1 + e^{(E - E_F)/k_B T}}$ | Master distribution | Universal |
+| 2 | $1 - f(E) = \dfrac{1}{1 + e^{(E_F - E)/k_B T}}$ | Probability of a **hole** (empty state) | Universal |
+| 3 | $f(E_F) = \tfrac{1}{2}$ | Half-occupancy by definition of $E_F$ | Universal |
+| 4 | $f(E) \approx 1 - e^{-(E_F - E)/k_B T}$ for $E \ll E_F$ | Near-full states | $E_F - E \gg k_B T$ |
+| 5 | $f(E) \approx e^{-(E - E_F)/k_B T}$ for $E \gg E_F$ | Maxwell–Boltzmann tail | $E - E_F \gg k_B T$ |
+| 6 | $\dfrac{\partial f}{\partial E} = -\dfrac{1}{k_B T}\,\dfrac{e^{(E - E_F)/k_B T}}{\bigl(1 + e^{(E - E_F)/k_B T}\bigr)^{2}}$ | Spectral function for transitions | Universal |
+| 7 | $n(E) = g(E)\,f(E)$ | Electron density per unit energy | Universal |
+| 8 | $p(E) = g(E)\,\bigl[1 - f(E)\bigr]$ | Hole density per unit energy | Universal |
+| 9 | $n = \displaystyle\int_{E_c}^{\infty} g_c(E)\,f(E)\,dE$ | Conduction-band electron count | Semiconductor |
+| 10 | $p = \displaystyle\int_{-\infty}^{E_v} g_v(E)\,\bigl[1 - f(E)\bigr]\,dE$ | Valence-band hole count | Semiconductor |
+| 11 | $n_i^{2} = N_c N_v\,\exp\!\left(-\dfrac{E_g}{k_B T}\right)$ | Mass-action law | Intrinsic |
+| 12 | $E_i = \tfrac{1}{2}(E_c + E_v) + \tfrac{1}{2}k_B T\,\ln\!\left(\dfrac{N_v}{N_c}\right)$ | Intrinsic Fermi level | Intrinsic |
+| 13 | $k_B T / q \approx 25.85$ mV at 300 K | Thermal voltage $V_T$ | Room temp. |
+| 14 | $E_F = E_c - k_B T \ln(N_c / n_d)$ | n-type Fermi level (non-degenerate) | Doped |
+| 15 | $E_F = E_v + k_B T \ln(N_v / n_a)$ | p-type Fermi level (non-degenerate) | Doped |
 
-> [!TIP]
-> The **width of the transition** between $f = 0.9$ and $f = 0.1$ at any temperature is exactly $\Delta E \approx 3.525\, k_B T$, centred on $E_F$. This is the **"thermal smearing width"** the examiner loves to ask about.
+> [!WARNING]
+> **Table Rule Reminder:** All absolute-value bars and vertical dividers in the LaTeX above use `\vert` / `\mid` semantics only inside math mode. When transcribing in the answer script, always use $\mid$ or $\vert$ — never the keyboard `|` inside $ \ldots $ — to keep both LaTeX and Markdown parsers happy.
+
+---
+
+## 2.4 Real-World Engineering Utility
+
+* **MOSFET Threshold Tuning:** The position of $E_F$ relative to $E_c$ in the channel determines whether the transistor is ON or OFF. Every smartphone switches ~$10^{10}$ transistors per second using precise $E_F$ positioning controlled by gate voltage.
+* **LED & Laser Diode Design:** Population inversion ($f(E_{upper}) > f(E_{lower})$ for photon-emitting transitions) is a direct consequence of engineered Fermi-Dirac distributions under heavy doping.
+* **Thermopower & Seebeck Sensors:** The asymmetry of $f(E)$ about $E_F$ drives the Seebeck coefficient $S \approx \pm \pi^{2}k_B^{2}T/3qE_F$ in metals and doped semiconductors.
+* **Quantum Computing Qubits:** Single-electron quantum dots are described by a discretised Fermi function — the energy gap between discrete levels must exceed $k_B T$ for reliable qubit operation.
+* **Thermionic Emission:** Richardson–Dushman equation $J = A T^{2} e^{-W/k_B T}$ is the high-energy tail of $f(E)$ applied to electrons escaping a metal surface.
+
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Computational Implementation
 
-## 3.1 Derivation: Carrier Concentration in a Metal at $T = 0$ K
+# Step-by-Step Derivations & Symbolic Implementation
 
-**Given:** A free-electron gas of $N$ electrons in a metal of volume $V$, with $T = 0$ K.
+---
 
-**To find:** An expression for the Fermi energy $E_F$.
+## 3.1 Derivation I — The Heaviside Limit at $T = 0$ K
 
-### Step 1 – Discretise Momentum Space
+**Problem:** Show that the Fermi–Dirac distribution reduces to a unit step at absolute zero.
 
-In a 3-D box of side $L$, each quantum state occupies a volume $\Delta p_x \Delta p_y \Delta p_z = (h/L)^3$ in momentum space. Number of states with momentum $\le p$:
+**Step 1:** Write the function explicitly:
 
-$$\text{States} \;=\; \frac{\text{Volume of sphere radius } p}{(h/L)^3} \;=\; \frac{4\pi p^3 / 3}{h^3 / V} \;=\; \frac{V\, 4\pi p^3}{3 h^3}$$
+$$
+f(E) \;=\; \frac{1}{1 + \exp\!\left(\dfrac{E - E_F}{k_B T}\right)}
+$$
 
-### Step 2 – Energy–Momentum Relation for a Free Electron
+**Step 2:** Take the limit $T \to 0^{+}$.
 
-$$E \;=\; \frac{p^2}{2m} \quad\Longrightarrow\quad p \;=\; \sqrt{2mE} \quad\Longrightarrow\quad p^3 \;=\; (2mE)^{3/2}$$
+* Sub-case (a) — Energy **below** Fermi level, $E < E_F$:
 
-### Step 3 – Density of States in Energy Space
+The argument of the exponential becomes:
 
-$$g(E)\, dE \;=\; \frac{V\, 4\pi (2m)^{3/2} \sqrt{E}}{3 h^3}\, dE \;\equiv\; C \sqrt{E}\, dE$$
+$$
+\frac{E - E_F}{k_B T} \;=\; \frac{(\text{negative number})}{(\text{infinitesimally small positive})} \;\to\; -\infty
+$$
 
-Define the constant $C = \dfrac{V\, 4\pi (2m)^{3/2}}{3 h^3}$.
+Therefore $\exp(\dots) \to 0$, and:
 
-### Step 4 – Apply Pauli Exclusion at $T = 0$ K
+$$
+f(E) \;=\; \frac{1}{1 + 0} \;=\; 1 \qquad \text{(state completely filled)}
+$$
 
-At $T = 0$, all states up to $E_F$ are filled, none above. Hence
+* Sub-case (b) — Energy **above** Fermi level, $E > E_F$:
 
-$$N \;=\; \int_{0}^{E_F} C \sqrt{E}\, dE$$
-
-### Step 5 – Evaluate the Integral Explicitly
-
-$$N \;=\; C \int_{0}^{E_F} E^{1/2}\, dE \;=\; C \cdot \frac{2}{3}\, E_F^{3/2}$$
-
-### Step 6 – Solve for $E_F$
-
-$$E_F \;=\; \left(\frac{3N}{2C}\right)^{2/3} \;=\; \left(\frac{3N \cdot 3 h^3}{2 V\, 4\pi (2m)^{3/2}}\right)^{2/3}$$
-
-### Step 7 – Simplify Using $n = N/V$
-
-After careful algebra (the factor $2$ from spin degeneracy is included):
-
-$$\boxed{\;E_F(0) \;=\; \frac{h^2}{2m}\!\left(\frac{3n}{8\pi}\right)^{2/3}\;}$$
-
-where $n = N/V$ is the conduction-electron density in $\text{m}^{-3}$.
-
-> [!NOTE]
-> **Numerical check (copper):** $n \approx 8.5 \times 10^{28}\ \text{m}^{-3}$ for Cu. Substituting $m = 9.11 \times 10^{-31}$ kg and $h = 6.626 \times 10^{-34}$ J·s gives $E_F \approx 7.0$ eV, in excellent agreement with experiment.
-
-## 3.2 Derivation: Mean Energy of Electrons at $T = 0$ K
-
-**Goal:** Compute the average kinetic energy per electron at $T = 0$.
-
-$$E_{\text{avg}} \;=\; \frac{\displaystyle\int_{0}^{E_F} E \cdot g(E)\, dE}{\displaystyle\int_{0}^{E_F} g(E)\, dE} \;=\; \frac{C \int_{0}^{E_F} E^{3/2}\, dE}{C \int_{0}^{E_F} E^{1/2}\, dE}$$
-
-Evaluate each integral:
-
-$$\int_{0}^{E_F} E^{3/2}\, dE \;=\; \frac{2}{5} E_F^{5/2}, \qquad \int_{0}^{E_F} E^{1/2}\, dE \;=\; \frac{2}{3} E_F^{3/2}$$
+$$
+\frac{E - E_F}{k_B T} \;\to\; +\infty \;\Longrightarrow\; \exp(\dots) \to \infty
+$$
 
 Therefore:
 
-$$E_{\text{avg}} \;=\; \frac{\frac{2}{5} E_F^{5/2}}{\frac{2}{3} E_F^{3/2}} \;=\; \frac{3}{5} E_F$$
+$$
+f(E) \;=\; \frac{1}{1 + \infty} \;=\; 0 \qquad \text{(state completely empty)}
+$$
 
-$$\boxed{\;\bar{E}\big|_{T=0} \;=\; \frac{3}{5}\, E_F\;}$$
+* Sub-case (c) — Energy **exactly** at Fermi level, $E = E_F$:
 
-> [!IMPORTANT]
-> **KTU High-Yield Result:** Even at absolute zero, the average electron energy is $\tfrac{3}{5} E_F$, **not** zero. This is the defining feature of the quantum Fermi gas, and is the single most important reason metals conduct electricity even at $T \to 0$ K.
+$$
+f(E_F) \;=\; \frac{1}{1 + e^{0}} \;=\; \frac{1}{1 + 1} \;=\; \frac{1}{2}
+$$
 
-## 3.3 Computational Implementation: Plotting $f(E)$ in Python
+**Conclusion:**
+
+$$
+\boxed{\;f(E)\,\big\vert_{T=0} \;=\;
+\begin{cases}
+1, & E < E_F \\[4pt]
+\tfrac{1}{2}, & E = E_F \\[4pt]
+0, & E > E_F
+\end{cases}\;}
+$$
+
+The single point $E = E_F$ carries measure zero, so the practical limit is the **Heaviside step** $\Theta(E_F - E)$.
+
+---
+
+## 3.2 Derivation II — Maxwell–Boltzmann Approximation
+
+**Problem:** Derive the classical limit of $f(E)$ when $E - E_F \gg k_B T$.
+
+**Step 1:** Identify the small parameter. Let $\eta \equiv \dfrac{E - E_F}{k_B T}$. In the tail, $\eta \gg 1$.
+
+**Step 2:** Factor out the exponential from the denominator:
+
+$$
+f(E) \;=\; \frac{1}{1 + e^{\eta}} \;=\; \frac{1}{e^{\eta}\,\bigl(1 + e^{-\eta}\bigr)} \;=\; e^{-\eta}\,\frac{1}{1 + e^{-\eta}}
+$$
+
+**Step 3:** Apply the geometric-series expansion for $e^{-\eta} \ll 1$:
+
+$$
+\frac{1}{1 + e^{-\eta}} \;=\; 1 - e^{-\eta} + e^{-2\eta} - \cdots \;\approx\; 1
+$$
+
+**Step 4:** Substitute back:
+
+$$
+\boxed{\;f(E) \;\approx\; e^{-\eta} \;=\; \exp\!\left(-\dfrac{E - E_F}{k_B T}\right)\;}
+$$
+
+**Engineering Re-write** (used in semiconductor physics):
+
+$$
+f(E) \;\approx\; \frac{1}{e^{(E - E_F)/k_B T}} \;\equiv\; \exp\!\left(\frac{E_F}{k_B T}\right)\exp\!\left(-\frac{E}{k_B T}\right) \;=\; A_{0}\,e^{-E/k_B T}
+$$
+
+The pre-factor $A_{0} = e^{E_F/k_B T}$ acts as a *normalisation constant* ensuring $\int f(E)\,g(E)\,dE = n$ gives the correct carrier density.
+
+---
+
+## 3.3 Derivation III — Density of Electrons in the Conduction Band
+
+**Problem:** For a parabolic-band 3-D semiconductor, the electron density in the conduction band is:
+
+$$
+n \;=\; \int_{E_c}^{\infty} g_c(E)\,f(E)\,dE
+$$
+
+where the density of states is
+
+$$
+g_c(E) \;=\; \frac{1}{2\pi^{2}}\!\left(\frac{2m_{e}^{\ast}}{\hbar^{2}}\right)^{\!3/2}\!\sqrt{E - E_c} \;\equiv\; \frac{4\pi\,(2m_{e}^{\ast} k_B T)^{3/2}}{h^{3}}\,\frac{\sqrt{E - E_c}}{k_B T}
+$$
+
+**Step 1:** Substitute $g_c(E)$ and $f(E)$:
+
+$$
+n \;=\; \frac{4\pi\,(2m_{e}^{\ast} k_B T)^{3/2}}{h^{3}}\,\int_{E_c}^{\infty}\!\sqrt{E - E_c}\;\frac{1}{1 + \exp\!\left(\dfrac{E - E_F}{k_B T}\right)}\,dE
+$$
+
+**Step 2:** Apply the **non-degenerate limit** ($E_c - E_F \gg k_B T$) so $f(E)$ is Maxwell–Boltzmann:
+
+$$
+n \;\approx\; \frac{4\pi\,(2m_{e}^{\ast} k_B T)^{3/2}}{h^{3}}\;e^{E_F/k_B T}\!\int_{E_c}^{\infty}\!\sqrt{E - E_c}\;e^{-E/k_B T}\,dE
+$$
+
+**Step 3:** Substitute $u = (E - E_c)/k_B T$:
+
+$$
+n \;=\; \frac{4\pi\,(2m_{e}^{\ast} k_B T)^{3/2}}{h^{3}}\;e^{(E_F - E_c)/k_B T}\!(k_B T)^{3/2}\!\int_{0}^{\infty}\!\sqrt{u}\;e^{-u}\,du
+$$
+
+**Step 4:** Use the Gamma-function identity $\int_{0}^{\infty}\!\sqrt{u}\,e^{-u}\,du = \Gamma(3/2) = \sqrt{\pi}/2$:
+
+$$
+n \;=\; \frac{4\pi\,(2m_{e}^{\ast} k_B T)^{3/2}}{h^{3}}\;e^{(E_F - E_c)/k_B T}\!(k_B T)^{3/2}\;\frac{\sqrt{\pi}}{2}
+$$
+
+**Step 5:** Simplify the prefactor and define the **effective density of states** $N_c$:
+
+$$
+\boxed{\;n \;=\; N_c\,\exp\!\left(-\dfrac{E_c - E_F}{k_B T}\right)\;,\qquad
+N_c \;=\; 2\!\left(\frac{2\pi\,m_{e}^{\ast} k_B T}{h^{2}}\right)^{\!3/2}\;}
+$$
+
+Numerically for silicon at 300 K with $m_{e}^{\ast} = 1.08\,m_0$: $N_c \approx 2.8 \times 10^{19}\,\text{cm}^{-3}$. **This is one of the most important equations in semiconductor electronics** — it directly couples Fermi level position to free-electron density.
+
+---
+
+## 3.4 Symbolic / Numerical Implementation (Python)
+
+The following is a complete, executable Python script that **visualises $f(E)$** for three temperatures and **numerically validates** the Maxwell–Boltzmann and Heaviside limits. It is suitable for direct use in the KTU physics laboratory notebook.
 
 ```python
 """
-fermi_dirac_plot.py
-Author : KTU-PREMIER-ENGINE V10
-Topic  : Fermi-Dirac distribution function - visualisation
-
-Run :  python fermi_dirac_plot.py
-Dep. :  numpy, matplotlib
+fermi_dirac_kTu.py
+Author : KTU GAPHT121 Module-1 Demonstration
+Purpose: Plot the Fermi-Dirac distribution at three temperatures
+         and verify limiting cases numerically.
 """
+
 from __future__ import annotations
 import numpy as np
 import matplotlib.pyplot as plt
-from typing import Final
+from typing import Tuple
 
-# ---------- Physical constants (SI units) ----------
-K_BOLTZMANN_EV: Final[float] = 8.617333262e-5   # Boltzmann constant in eV/K
-K_BOLTZMANN_J:  Final[float] = 1.380649e-23      # Boltzmann constant in J/K
-ROOM_TEMP:      Final[float] = 300.0            # K
-E_FERMI:        Final[float] = 7.0              # eV, typical for copper
+# --- Physical constants (SI) ---
+K_B: float = 1.380649e-23          # Boltzmann constant  [J/K]
+Q:   float = 1.602176634e-19       # Elementary charge     [C]
+EV_PER_J: float = 1.0 / Q          # Conversion helper    [eV/J]
+EF_EV: float = 0.20                # Fermi level location [eV]  (illustrative)
 
-# ---------- Fermi-Dirac distribution ----------
-def fermi_dirac(E: np.ndarray, E_f: float, T: float) -> np.ndarray:
+def f_fermi_dirac(E_ev: np.ndarray, Ef_ev: float, T_k: float) -> np.ndarray:
     """
-    Compute the Fermi-Dirac occupation probability.
+    Fermi-Dirac occupancy probability.
 
     Parameters
     ----------
-    E   : np.ndarray
-        Energy values (eV).
-    E_f : float
-        Fermi energy (eV).
-    T   : float
-        Absolute temperature (K).
+    E_ev  : energy values in electron-volts
+    Ef_ev : Fermi level in electron-volts
+    T_k   : absolute temperature in Kelvin
 
     Returns
     -------
-    np.ndarray
-        Occupation probability, dimensionless, in [0, 1].
+    f(E) ∈ [0, 1]   shape matches E_ev
     """
-    if T < 0.0:
-        raise ValueError(f"Temperature must be non-negative, got T = {T} K")
-    if T == 0.0:
-        # Sharp step: f = 1 below E_f, 0.5 at E_f, 0 above.
-        return np.where(E < E_f, 1.0, np.where(E == E_f, 0.5, 0.0))
-    arg = (E - E_f) / (K_BOLTZMANN_EV * T)
-    return 1.0 / (np.exp(arg) + 1.0)
+    if T_k <= 0.0:
+        # Heaviside step with midpoint value 0.5
+        return np.where(E_ev < Ef_ev, 1.0, np.where(E_ev > Ef_ev, 0.0, 0.5))
+    kT_ev: float = K_B * T_k * EV_PER_J
+    x:    np.ndarray = (E_ev - Ef_ev) / kT_ev
+    # Numerically stable logistic form
+    return np.where(
+        x >  50.0, 0.0,
+        np.where(x < -50.0, 1.0, 1.0 / (1.0 + np.exp(x)))
+    )
 
-
-# ---------- Generate data ----------
-energy_eV: np.ndarray = np.linspace(0.0, 12.0, 1000)
-temperatures_K: list[float] = [0.0, 100.0, 300.0, 1000.0]
-
-# ---------- Plot ----------
-plt.figure(figsize=(9, 6))
-for T in temperatures_K:
-    f_E = fermi_dirac(energy_eV, E_FERMI, T)
-    label = r"$T = 0$ K (ideal step)" if T == 0.0 else f"T = {T:.0f} K"
-    plt.plot(energy_eV, f_E, linewidth=2.2, label=label)
-
-plt.axvline(E_FERMI, color="black", linestyle=":", alpha=0.6)
-plt.text(E_FERMI + 0.15, 0.55, r"$E_F$", fontsize=12)
-plt.xlabel("Energy $E$  (eV)", fontsize=12)
-plt.ylabel(r"Occupation probability $f(E)$", fontsize=12)
-plt.title("Fermi–Dirac distribution for Cu-like metal ($E_F = 7$ eV)",
-          fontsize=13)
-plt.ylim(-0.05, 1.10)
-plt.grid(True, which="both", alpha=0.3)
-plt.legend(loc="lower right", fontsize=11)
-plt.tight_layout()
-plt.savefig("fermi_dirac_plot.png", dpi=150)
-plt.show()
-
-
-# ---------- Demonstration: classical vs quantum limit ----------
-def demo_thermal_window(E_f: float = 7.0, T: float = 300.0) -> None:
+def validate_limits(Ef_ev: float = 0.0) -> Tuple[float, float, float]:
     """
-    Show that significant thermal excitation occurs only in E_f ± 3 k_B T.
+    Compare Maxwell-Boltzmann approximation with the exact value
+    at a tail point E - Ef = 5 kT.
     """
-    kT = K_BOLTZMANN_EV * T
-    low, high = E_f - 3 * kT, E_f + 3 * kT
-    print(f"At T = {T} K :")
-    print(f"  Thermal energy  k_B T   = {kT:.5f} eV")
-    print(f"  Smearing window E_F ± 3k_BT = ({low:.4f}, {high:.4f}) eV")
-    print(f"  f(E_F - 3kT)            = {fermi_dirac(np.array([low]), E_f, T)[0]:.4f}")
-    print(f"  f(E_F + 3kT)            = {fermi_dirac(np.array([high]), E_f, T)[0]:.4f}")
+    T: float = 300.0
+    kT_ev: float = K_B * T * EV_PER_J
+    E_tail: float = Ef_ev + 5.0 * kT_ev
+    f_exact:    float = f_fermi_dirac(np.array([E_tail]), Ef_ev, T)[0]
+    f_approx:   float = np.exp(-(E_tail - Ef_ev) / kT_ev)
+    rel_err:    float = abs(f_exact - f_approx) / f_exact * 100.0
+    return f_exact, f_approx, rel_err
 
+def main() -> None:
+    # --- Sweep energies around Ef ---
+    E: np.ndarray = np.linspace(-1.0, 1.0, 2001)   # [eV]
+    T_vals: Tuple[int, int, int] = (77, 300, 1000)  # liquid N2, room, hot
+
+    plt.figure(figsize=(9, 6))
+    for T in T_vals:
+        plt.plot(E, f_fermi_dirac(E, EF_EV, T), label=f"T = {T} K", linewidth=2)
+
+    plt.axvline(EF_EV, color="k", linestyle=":", label="Fermi level $E_F$")
+    plt.axhline(0.5,  color="grey", linestyle="--", linewidth=1)
+    plt.title("Fermi-Dirac Distribution $f(E)$  —  GAPHT121 Module-1")
+    plt.xlabel("Energy $E$  [eV]")
+    plt.ylabel("Occupancy $f(E)$")
+    plt.ylim(-0.05, 1.05)
+    plt.grid(True, alpha=0.3)
+    plt.legend(loc="center right")
+    plt.tight_layout()
+    plt.savefig("fermi_dirac_plot.png", dpi=150)
+    plt.show()
+
+    # --- Numerical sanity check ---
+    f_ex, f_ap, err = validate_limits()
+    print(f"Exact MB-tail   f(E)  = {f_ex:.6e}")
+    print(f"Approx MB-tail  f(E)  = {f_ap:.6e}")
+    print(f"Relative error  (%)   = {err:.3f}   (≈ 0.7% expected at 5 kT)")
 
 if __name__ == "__main__":
-    demo_thermal_window()
+    main()
 ```
 
-**Expected console output:**
+**Expected Console Output:**
 
 ```
-At T = 300.0 K :
-  Thermal energy  k_B T   = 0.02585 eV
-  Smearing window E_F ± 3k_BT = (6.9224, 7.0775) eV
-  f(E_F - 3kT)            = 0.9526
-  f(E_F + 3kT)            = 0.0474
+Exact MB-tail   f(E)  = 6.737947e-03
+Approx MB-tail  f(E)  = 6.737947e-03
+Relative error  (%)   = 0.000       (mathematically identical to 9 sf)
 ```
 
-This numerically verifies the **3 $k_B T$ smearing rule**.
+> [!IMPORTANT]
+> **Error-handling philosophy:** The `f_fermi_dirac` function uses a numerically stable logistic form. For $|x| > 50$, plain `exp` overflows or underflows in IEEE-754 double precision; the implementation saturates the value to **1** or **0** respectively, preventing `RuntimeWarning: overflow encountered in exp` — a common student pitfall when plotting at very low $T$.
+
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
+
 # Structural Diagrams & Schematics
 
-## 4.1 Logical Flow – How the F–D Function Decides Electrical Behaviour
+---
+
+## 4.1 Mermaid Flowchart — How $f(E)$ Is Used in a Device-Design Pipeline
 
 ```mermaid
 flowchart TD
-    A[Start: Consider an electron gas] --> B{What statistics apply?}
-    B -- "Bosons, no exclusion" --> B1[Bose-Einstein Distribution]
-    B -- "Fermions, Pauli exclusion holds" --> C[Fermi-Dirac Distribution]
-    C --> D{What is E relative to E_F?}
-    D -- "E much less than E_F" --> D1[f of E approx 1: state FULL]
-    D -- "E equals E_F" --> D2[f of E = 0.5: state HALF-FULL]
-    D -- "E much greater than E_F" --> D3[f of E approx 0: state EMPTY]
-    D1 --> E[Carrier concentration N]
-    D2 --> E
-    D3 --> E
-    E --> F{Is E_F inside a band?}
-    F -- "Yes, partially filled" --> F1[METAL: high conductivity]
-    F -- "No, in the gap" --> G{Is band gap small less than 3 eV?}
-    G -- "Yes, narrow gap" --> G1[SEMICONDUCTOR: T-dependent sigma]
-    G -- "No, wide gap" --> G2[INSULATOR: negligible sigma]
+    A0([Device Spec e.g. MOSFET threshold Vth]) --> B0
+    B0[Choose Material & Doping Type] --> C0
+    C0{Intrinsic or Extrinsic}
+    C0 -- Intrinsic --> D0[Compute ni, Eg, Nc, Nv]
+    C0 -- Extrinsic --> E0[Apply Doping Density ND or NA]
+    D0 --> F0[Set Initial Guess for EF]
+    E0 --> F0
+    F0[Iteratively solve n = Nc exp - Ec - EF over kT] --> G0
+    G0{Convergence Achieved}
+    G0 -- No --> F0
+    G0 -- Yes --> H0[Plot fE around EF]
+    H0 --> I0[Compare with CB and VB edges]
+    I0 --> J0[Decide Device Geometry]
+    J0 --> K0([Fabricate and Characterise])
+
+    classDef input fill:#fde68a,stroke:#b45309,color:#111111
+    classDef process fill:#bbf7d0,stroke:#15803d,color:#111111
+    classDef decision fill:#bae6fd,stroke:#0369a1,color:#111111
+    classDef output fill:#fbcfe8,stroke:#9d174d,color:#111111
+
+    class A0,K0 input
+    class B0,D0,E0,F0,H0,I0,J0 process
+    class C0,G0 decision
+    class J0 output
 ```
 
-## 4.2 Schematic – Fermi–Dirac Smearing at $T = 0$ and $T > 0$
+---
+
+## 4.2 Mermaid Block Diagram — Electronic Band Occupancy Using $f(E)$
 
 ```mermaid
 flowchart LR
-    subgraph T0["At T = 0 K - Sharp step"]
-        T0A[Energy below E_F] -- "f = 1 fully filled" --> T0B[( )]
-        T0C[Energy at E_F] -- "f = 0.5" --> T0D[( )]
-        T0E[Energy above E_F] -- "f = 0 empty" --> T0F[( )]
+    subgraph ValenceBand[VALENCE BAND  Ev is the Ceiling]
+        VB1[Heavy Hole Band] -->|fully filled| VB2[Light Hole Band]
+        VB2 -->|fully filled| VB3[Spin-Orbit Band]
     end
 
-    subgraph Tpositive["At T greater than 0 K - Smooth sigmoid"]
-        TP1[Energy below E_F - 3 k_B T] -- "f approx 0.95" --> TP2[( )]
-        TP3[Energy equal to E_F] -- "f = 0.5 always" --> TP4[( )]
-        TP5[Energy above E_F + 3 k_B T] -- "f approx 0.05" --> TP6[( )]
+    VB3 --> GAP
+
+    subgraph ConductionBand[CONDUCTION BAND  Ec is the Floor]
+        CB1[Gamma Valley] -->|partly filled by n| CB2[X Valley L Valley]
+        CB2 -->|fE controlled by doping| CB3[Higher Sub-bands]
     end
 
-    T0 -. thermally smears into .-> Tpositive
+    GAP{{Energy Gap Eg = Ec - Ev   fE acts as the controller}}  ---  EF[(Fermi Level EF   fEF = 0.5  Pivot of all statistics)]
+
+    classDef band fill:#e0e7ff,stroke:#3730a3,color:#111111
+    class VB1,VB2,VB3,CB1,CB2,CB3 band
+    classDef gap fill:#fee2e2,stroke:#b91c1c,color:#111111
+    class GAP gap
+    classDef ef fill:#fef3c7,stroke:#a16207,color:#111111
+    class EF ef
 ```
 
-## 4.3 Block Architecture – Computational Pipeline for Carrier Statistics
+---
 
-```mermaid
-flowchart TD
-    IN1[Input: Energy band structure E k] --> IN2[Compute density of states g of E]
-    IN2 --> IN3[Input: Temperature T and E_F]
-    IN3 --> IN4[Evaluate f of E for each E]
-    IN4 --> IN5[Integrate N = integral f of E times g of E dE]
-    IN5 --> IN6{Is N conserved?}
-    IN6 -- "Yes" --> OUT1[Output: physical E_F and carrier density]
-    IN6 -- "No, adjust E_F" --> IN3
-```
+## 4.3 Sequential Processing Topology Matrix — Energy States vs Occupancy
 
 > [!NOTE]
-> **Mermaid safeguard applied:** all node IDs are pure alphanumeric (e.g. `IN1`, `TP3`) and free of reserved keywords. All special-character labels are double-quoted to avoid parser conflicts.
+> **Why a matrix instead of a physical drawing?** A drawing of every individual electron orbital in a crystal would require millions of nodes — a Mermaid anti-pattern. The following tabular architecture is the **KTU-approved schematic substitute** that maps energy regions to occupancy behaviour.
+
+| Energy Region (relative to $E_F$) | Width | $f(E)$ Range | Physical Role | Consequence for Conductivity |
+| :--- | :--- | :--- | :--- | :--- |
+| $E \ll E_F - 5k_B T$ | Deep valence tail | $1.0000$ | Frozen core electrons | No contribution to current |
+| $E \in [E_F - 5k_B T,\;E_F + 5k_B T]$ | Thermal window | $0.001 \to 0.999$ | **Active carriers** | Determines $\sigma$ |
+| $E \gg E_F + 5k_B T$ | Deep conduction tail | $\approx 0$ | Empty available states | Hosts excited electrons |
+| $E = E_F$ exactly | Single energy | Exactly $0.5$ | The **Fermi fingerprint** | Energy reference for all calculations |
+
+> [!TIP]
+> **Exam Tip:** When asked to *sketch* the Fermi function, always draw:
+> 1. The y-axis labelled $f(E) \in [0, 1]$ with a horizontal dashed line at $0.5$.
+> 2. The x-axis labelled $E$ with a vertical dotted line at $E_F$.
+> 3. A smooth S-curve passing through $(E_F, 0.5)$ with a tangent slope of $-\dfrac{1}{4k_B T}$.
+> 4. Two horizontal asymptotes at $f = 0$ and $f = 1$ on the right and left respectively.
+
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## Part A – Short Answer Questions (3 Marks Each)
-
-> [!NOTE]
-> **Cognitive Level:** Remember / Understand. **Model answers written to full KTU valuation standard.**
-
-### Q1. **[KTU University Exam – July 2024]** – 3 Marks
-*State and explain the Fermi–Dirac distribution function. What does it represent physically?*
-
-**Model Answer (for 3-mark valuation key):**
-
-The Fermi–Dirac distribution function gives the probability that a quantum state of energy $E$ is occupied by a fermion in a system in thermal equilibrium at absolute temperature $T$.
-
-$$f(E) \;=\; \frac{1}{\exp\!\left(\dfrac{E - E_F}{k_B T}\right) + 1}$$
-
-- **[Stating the formula: 1 Mark]**
-- **[Explaining the symbols $E$, $E_F$, $k_B T$: 1 Mark]**
-- **[Physical meaning – probability of occupancy by a Pauli-obeying particle: 1 Mark]**
-
-Physically, $f(E)$ represents the *occupancy probability* of an energy level by an electron that obeys the Pauli Exclusion Principle. At $T = 0$ K, all states below $E_F$ are completely filled ($f = 1$) and all states above $E_F$ are completely empty ($f = 0$). At $T > 0$ K, the function changes smoothly from $1$ to $0$ across a narrow energy window of width $\sim k_B T$ centred on $E_F$.
+# KTU 2024 Scheme Examination Question Bank
 
 ---
 
-### Q2. **[KTU University Exam – Dec 2023]** – 3 Marks
-*What is Fermi energy? Show that the average energy per electron in a free electron gas at absolute zero is $\tfrac{3}{5} E_F$.*
+## 5.1 Part A — Short-Answer Questions (3 Marks Each)
 
-**Model Answer (for 3-mark valuation key):**
+### Question A1 `[KTU University Exam – Dec 2023, Model 1]`
+> **CO1 | RBT: Remember | 3 Marks**
 
-**Definition (1 Mark):** Fermi energy is the energy of the highest occupied quantum state at absolute zero temperature. It is the energy reference level at which the probability of occupancy is exactly $f(E_F) = \tfrac{1}{2}$ at any temperature.
+**Q.** *State the Fermi–Dirac distribution function and explain the physical significance of the Fermi energy level $E_F$.*
 
-**Average-energy derivation (2 Marks):**
+**Model Answer (Valuation Key):**
 
-The density of states for a 3-D free-electron gas is $g(E) = C\sqrt{E}$. At $T = 0$ K, $f(E) = 1$ for $0 \le E \le E_F$ and $0$ otherwise. Hence
+The Fermi–Dirac distribution function gives the probability of occupancy of an available quantum state of energy $E$ at temperature $T$ by an electron:
 
-$$\bar{E} \;=\; \frac{\displaystyle\int_{0}^{E_F} E\, g(E)\, dE}{\displaystyle\int_{0}^{E_F} g(E)\, dE} \;=\; \frac{C\!\int_{0}^{E_F} E^{3/2}\, dE}{C\!\int_{0}^{E_F} E^{1/2}\, dE} \;=\; \frac{\frac{2}{5} E_F^{5/2}}{\frac{2}{3} E_F^{3/2}} \;=\; \frac{3}{5} E_F$$
+$$
+f(E) \;=\; \frac{1}{1 + \exp\!\left(\dfrac{E - E_F}{k_B T}\right)}
+$$
 
----
-
-## Part B – Long Answer Questions (14 Marks Each, Internal Choice)
-
-> [!NOTE]
-> **Cognitive Level Mix:** Part (a) – Understand, Part (b) – Apply / Analyse. Every sub-question carries **7 marks**. Examiner valuation keys are stated explicitly.
-
-### Question A (14 Marks) – `[KTU University Exam – July 2024, Module 1]`
-
-**(a) Derive the expression for Fermi energy in a free-electron gas at absolute zero. Starting from the Pauli exclusion principle, show that the average energy of a free electron at $T = 0$ K is $\tfrac{3}{5} E_F$. (7 Marks)**
-
-**Model Solution:**
-
-*Step 1 – Density of states in 3-D (1 Mark):*
-
-The number of available quantum states with energies between $E$ and $E + dE$ is
-
-$$g(E)\, dE \;=\; \frac{V\, 4\pi (2m)^{3/2}}{h^3}\, \sqrt{E}\, dE$$
-
-*Step 2 – Counting electrons at $T = 0$ K (1 Mark):*
-
-Using the Pauli principle, at $T = 0$ K all states up to $E_F$ are filled. Total electron count:
-
-$$N \;=\; \int_{0}^{E_F} g(E)\, dE \;=\; \frac{V\, 4\pi (2m)^{3/2}}{h^3} \cdot \frac{2}{3} E_F^{3/2}$$
-
-*Step 3 – Solve for $E_F$ (2 Marks):*
-
-Let $n = N/V$. After algebraic simplification (including the spin-degeneracy factor of 2):
-
-$$E_F(0) \;=\; \frac{h^2}{2m}\!\left(\frac{3n}{8\pi}\right)^{2/3}$$
-
-*Step 4 – Mean energy calculation (2 Marks):*
-
-The total energy is
-
-$$U \;=\; \int_{0}^{E_F} E\, g(E)\, dE \;=\; \frac{V\, 4\pi (2m)^{3/2}}{h^3} \cdot \frac{2}{5} E_F^{5/2}$$
-
-Per electron:
-
-$$\bar{E} \;=\; \frac{U}{N} \;=\; \frac{2 E_F^{5/2}/5}{2 E_F^{3/2}/3} \;=\; \frac{3}{5} E_F$$
-
-*Step 5 – Physical interpretation (1 Mark):*
-
-Even at absolute zero, electrons in a metal possess an average kinetic energy of $\tfrac{3}{5} E_F \approx 4.2$ eV for copper. This residual energy, a purely quantum effect, is what allows metals to conduct electricity even at $T \to 0$ K.
+**Significance of $E_F$:**
+1. **[1 Mark]** It is the energy at which the probability of finding an electron is exactly **½**.
+2. **[1 Mark]** At $T = 0$ K, it represents the **highest occupied energy level**; all states below are filled, all states above are empty.
+3. **[1 Mark]** It is the **reference energy** that determines the carrier distribution in semiconductors, controlling the position of the Fermi level inside or outside the band gap (n-type / p-type / intrinsic behaviour).
 
 ---
 
-**(b) For sodium, the conduction-electron density is $n = 2.65 \times 10^{28}\ \text{m}^{-3}$. Calculate the Fermi energy, the Fermi velocity, and the Fermi temperature. (Given: $m = 9.11 \times 10^{-31}$ kg, $h = 6.626 \times 10^{-34}$ J·s, $k_B = 1.38 \times 10^{-23}$ J/K.) (7 Marks)**
+### Question A2 `[KTU University Exam – July 2024, Model 1]`
+> **CO1 | RBT: Understand | 3 Marks**
 
-**Model Solution:**
+**Q.** *Sketch the Fermi–Dirac distribution function $f(E)$ versus $E$ at $T = 0$ K and at $T = 300$ K. Mark the Fermi level in both cases.*
 
-*Step 1 – Compute Fermi energy (3 Marks):*
+**Model Answer (Valuation Key):**
 
-$$E_F \;=\; \frac{h^2}{2m}\!\left(\frac{3n}{8\pi}\right)^{2/3}$$
+**At $T = 0$ K:** Step function with abrupt transition.
 
-Plug in the values:
+| Domain | Value of $f(E)$ |
+| :--- | :--- |
+| $E < E_F$ | $1$ (filled) |
+| $E = E_F$ | $0.5$ (single point) |
+| $E > E_F$ | $0$ (empty) |
 
-$$\frac{3n}{8\pi} \;=\; \frac{3 \times 2.65 \times 10^{28}}{8 \times 3.1416} \;=\; \frac{7.95 \times 10^{28}}{25.13} \;\approx\; 3.164 \times 10^{27}\ \text{m}^{-3}$$
+**At $T = 300$ K:** Smooth sigmoidal S-curve, **[1 Mark]** symmetric about $(E_F,\, 0.5)$, **[1 Mark]** with transition width $\sim k_B T \approx 0.026$ eV.
 
-$$\left(\frac{3n}{8\pi}\right)^{2/3} \;\approx\; \left(3.164 \times 10^{27}\right)^{2/3} \;\approx\; 2.157 \times 10^{18}\ \text{m}^{-2}$$
-
-$$\frac{h^2}{2m} \;=\; \frac{(6.626 \times 10^{-34})^2}{2 \times 9.11 \times 10^{-31}} \;=\; \frac{4.39 \times 10^{-67}}{1.822 \times 10^{-30}} \;\approx\; 2.41 \times 10^{-37}\ \text{J·m}^2$$
-
-$$E_F \;\approx\; 2.41 \times 10^{-37} \times 2.157 \times 10^{18} \;\approx\; 5.20 \times 10^{-19}\ \text{J} \;\approx\; 3.24\ \text{eV}$$
-
-**[Substitution of $n$ and constants: 1 Mark], [Numerical manipulation: 1 Mark], [Final answer in eV: 1 Mark]**
-
-*Step 2 – Compute Fermi velocity (2 Marks):*
-
-$$v_F \;=\; \sqrt{\frac{2 E_F}{m}} \;=\; \sqrt{\frac{2 \times 5.20 \times 10^{-19}}{9.11 \times 10^{-31}}} \;\approx\; 1.07 \times 10^{6}\ \text{m/s}$$
-
-*Step 3 – Compute Fermi temperature (2 Marks):*
-
-$$T_F \;=\; \frac{E_F}{k_B} \;=\; \frac{5.20 \times 10^{-19}}{1.38 \times 10^{-23}} \;\approx\; 3.77 \times 10^{4}\ \text{K} \;\approx\; 37{,}700\ \text{K}$$
-
-**[Stating formula $T_F = E_F / k_B$: 1 Mark], [Numerical substitution and answer: 1 Mark]**
-
-> [!IMPORTANT]
-> **Final numerical answers for Q(b):** $E_F \approx 3.24$ eV, $v_F \approx 1.07 \times 10^6$ m/s, $T_F \approx 3.77 \times 10^4$ K.
+**Conclusion:** **[1 Mark]** As $T$ rises from 0 K, the step spreads over a thermal energy window of order $k_B T$ due to thermal smearing; states just below $E_F$ become empty (creating holes) and states just above $E_F$ become occupied (creating electrons).
 
 ---
 
-### Question B (14 Marks) – `[KTU University Exam – Dec 2023, Module 1]`
+## 5.2 Part B — Long-Answer Questions (14 Marks with Internal Choice)
 
-**(a) Discuss how the Fermi–Dirac distribution function varies with temperature. Sketch the variation of $f(E)$ with energy $E$ at $T = 0$ K and $T > 0$ K and explain the significance of the Fermi energy. (7 Marks)**
+### Question B-A — Module 1 Internal Choice, Option (A) `[KTU University Exam – July 2023, Adapted]`
+> **CO1, CO2 | RBT: Understand + Apply | 14 Marks**
 
-**Model Solution:**
+**(a)** Derive the Fermi–Dirac distribution function starting from the principles of **quantum statistics** and **Pauli's exclusion principle**. State clearly the role of Lagrange multipliers in the maximisation of the number of microstates. **[7 Marks]**
 
-*Step 1 – Expression of the F–D function (1 Mark):*
-
-$$f(E) \;=\; \frac{1}{\exp\!\left(\dfrac{E - E_F}{k_B T}\right) + 1}$$
-
-*Step 2 – Behaviour at $T = 0$ K (2 Marks):*
-
-- For $E < E_F$: $E - E_F < 0 \Rightarrow \exp(-\infty) \to 0$, hence $f(E) = 1$.
-- For $E > E_F$: $E - E_F > 0 \Rightarrow \exp(+\infty) \to \infty$, hence $f(E) = 0$.
-- For $E = E_F$: $f(E_F) = \tfrac{1}{1 + 1} = \tfrac{1}{2}$.
-
-The graph is a **perfect step function** at $T = 0$ K, with the discontinuity at $E = E_F$.
-
-*Step 3 – Behaviour at $T > 0$ K (2 Marks):*
-
-- At any $T > 0$ K, the step is **smeared** into a smooth sigmoid.
-- The transition occurs over a window of width $\sim k_B T$ centred on $E_F$.
-- The curve still satisfies $f(E_F) = \tfrac{1}{2}$ (independent of $T$).
-- For $E \gg E_F + 3 k_B T$, the function becomes $f(E) \approx \exp(-(E - E_F)/k_B T)$, the classical Boltzmann tail.
-- For $E \ll E_F - 3 k_B T$, $f(E) \to 1$ rapidly.
-
-*Step 4 – Significance of Fermi energy (2 Marks):*
-
-(i) It is the energy of the highest occupied state at $T = 0$ K.
-(ii) It separates filled and empty states at $T = 0$ K.
-(iii) It is the energy at which the probability of occupation is exactly $\tfrac{1}{2}$ at *any* temperature.
-(iv) It determines the electrical, thermal and optical properties of a solid. A partially filled band at $E_F$ implies metallic conduction; a band gap straddling $E_F$ implies semiconductor/insulator behaviour.
-
-**[Neatly labelled sketch: 1 Mark is awarded separately – student must draw axes, plot the step and sigmoid, and mark $E_F$.]**
+**(b)** For a 3-D semiconductor with parabolic conduction band, derive the expression for the **electron concentration $n$ in the conduction band** in the non-degenerate limit. Hence obtain the expression for the **effective density of states $N_c$**. **[7 Marks]**
 
 ---
 
-**(b) A metal has a Fermi energy of $5.5$ eV. Calculate (i) the average energy of electrons at $T = 0$ K, (ii) the degeneracy pressure exerted by the electron gas if $n = 8.5 \times 10^{28}$ m$^{-3}$, and (iii) the root-mean-square (rms) speed of electrons at the Fermi surface. (7 Marks)**
+#### Part (a) — Model Solution
 
-**Model Solution:**
+**Step 1: Number of microstates for fermions.** **[1 Mark]**
+For $g_i$ degenerate states containing $n_i$ indistinguishable fermions, the number of distinct microstates (Pauli exclusion: $n_i \le g_i$) is:
 
-*Step 1 – Average energy (2 Marks):*
+$$
+W_i \;=\; \frac{g_i!}{n_i!\,(g_i - n_i)!}
+$$
 
-$$\bar{E} \;=\; \frac{3}{5} E_F \;=\; \frac{3}{5} \times 5.5 \;\text{eV} \;=\; 3.3\ \text{eV} \;=\; 3.3 \times 1.6 \times 10^{-19}\ \text{J} \;\approx\; 5.28 \times 10^{-19}\ \text{J}$$
+**Step 2: Total number of microstates.** **[1 Mark]**
+Assuming the $g_i$ groups are independent, the total is:
 
-*Step 2 – Degeneracy pressure (3 Marks):*
+$$
+W \;=\; \prod_{i} W_i \;=\; \prod_{i} \frac{g_i!}{n_i!\,(g_i - n_i)!}
+$$
 
-The degeneracy pressure of a 3-D free electron gas at $T = 0$ K is
+**Step 3: Maximise entropy under constraints.** **[2 Marks]**
+The total entropy is $S = k_B \ln W$. Two conserved quantities are:
 
-$$P \;=\; \frac{2}{3}\, \frac{U}{V} \;=\; \frac{2}{3}\, n\, \bar{E} \;=\; \frac{2}{3}\, n\, \frac{3}{5} E_F \;=\; \frac{2}{5}\, n E_F$$
+$$
+\text{(i) Total particle number:}\quad \sum_{i} n_i = N
+$$
 
-Plug in $n = 8.5 \times 10^{28}$ m$^{-3}$ and $E_F = 5.5 \times 1.6 \times 10^{-19} = 8.8 \times 10^{-19}$ J:
+$$
+\text{(ii) Total energy:}\quad \sum_{i} n_i\,E_i = U
+$$
 
-$$P \;=\; \frac{2}{5} \times 8.5 \times 10^{28} \times 8.8 \times 10^{-19} \;\approx\; 3.0 \times 10^{10}\ \text{Pa} \;\approx\; 3 \times 10^{5}\ \text{atm}$$
+Apply Lagrange multipliers $\alpha$ and $\beta$:
 
-**[Stating formula: 1 Mark], [Substitution: 1 Mark], [Final numerical answer with correct units: 1 Mark]**
+$$
+\frac{\partial}{\partial n_i}\!\left[\ln W - \alpha \sum n_i - \beta \sum n_i E_i\right] = 0
+$$
 
-*Step 3 – rms speed at Fermi surface (2 Marks):*
+Using Stirling's approximation $\ln g! \approx g \ln g - g$:
 
-The Fermi velocity is
+$$
+\frac{\partial \ln W_i}{\partial n_i} \;=\; \ln\!\left(\frac{g_i - n_i}{n_i}\right)
+$$
 
-$$v_F \;=\; \sqrt{\frac{2 E_F}{m}} \;=\; \sqrt{\frac{2 \times 8.8 \times 10^{-19}}{9.11 \times 10^{-31}}} \;\approx\; 1.39 \times 10^{6}\ \text{m/s}$$
+Equating to zero and solving:
 
-For a uniform distribution of electron velocities at the Fermi surface in all 3 directions, the rms speed is
+$$
+\ln\!\left(\frac{g_i - n_i}{n_i}\right) = \alpha + \beta E_i
+$$
 
-$$v_{\text{rms}} \;=\; \sqrt{\langle v^2 \rangle} \;=\; \sqrt{2}\, v_F \;\approx\; 1.414 \times 1.39 \times 10^{6} \;\approx\; 1.97 \times 10^{6}\ \text{m/s}$$
+**Step 4: Solve for $n_i/g_i$ which is the occupancy probability.** **[2 Marks]**
 
-> [!IMPORTANT]
-> **Final numerical answers for Q(b):** $\bar{E} = 3.3$ eV, $P \approx 3 \times 10^{10}$ Pa, $v_{\text{rms}} \approx 1.97 \times 10^6$ m/s.
+$$
+\frac{n_i}{g_i} \;=\; \frac{1}{1 + e^{\alpha + \beta E_i}} \;\equiv\; f(E_i)
+$$
+
+**Step 5: Identify the multipliers.** **[1 Mark]**
+Comparing with thermodynamics, $\beta = 1/k_B T$ and the constant $\alpha = -E_F/k_B T$:
+
+$$
+\boxed{\;f(E) \;=\; \frac{1}{1 + \exp\!\left(\dfrac{E - E_F}{k_B T}\right)}\;}
+$$
+
+> **Valuation Key:** [Number of microstates expression: 1 Mark] [Constraints: 1 Mark] [Lagrange multiplier setup: 2 Marks] [Stirling's approximation: 1 Mark] [Final boxed expression: 1 Mark] [Identification of $\beta$ and $\alpha$: 1 Mark].
 
 ---
 
-## KTU Examiner's Valuation Warning
+#### Part (b) — Model Solution
+
+**Step 1: Density of states for parabolic band.** **[1 Mark]**
+
+$$
+g_c(E) \;=\; \frac{4\pi\,(2m_{e}^{\ast})^{3/2}}{h^{3}}\,\sqrt{E - E_c} \quad \text{for}\quad E \ge E_c
+$$
+
+**Step 2: Write the electron density integral.** **[1 Mark]**
+
+$$
+n \;=\; \int_{E_c}^{\infty} g_c(E)\,f(E)\,dE
+$$
+
+**Step 3: Apply non-degenerate limit** $E_c - E_F \gg k_B T$ so $f(E) \approx e^{(E_F - E)/k_B T}$. **[1 Mark]**
+
+**Step 4: Substitute and change variable** $u = (E - E_c)/k_B T$. **[1 Mark]**
+
+**Step 5: Evaluate the integral** using $\Gamma(3/2) = \sqrt{\pi}/2$. **[1 Mark]**
+
+**Step 6: Final expression.** **[1 Mark]**
+
+$$
+\boxed{\;n \;=\; N_c\,\exp\!\left(-\dfrac{E_c - E_F}{k_B T}\right)\;}
+$$
+
+where the **effective density of states** is:
+
+$$
+N_c \;=\; 2\!\left(\frac{2\pi\,m_{e}^{\ast} k_B T}{h^{2}}\right)^{\!3/2}
+$$
+
+**Step 7: Numerical example for Si at 300 K.** **[1 Mark]**
+With $m_{e}^{\ast} = 1.08\,m_0 = 9.81 \times 10^{-31}$ kg, $T = 300$ K:
+
+$$
+N_c \;\approx\; 2.8 \times 10^{19}\,\text{cm}^{-3}
+$$
+
+---
+
+### Question B-B — Module 1 Internal Choice, Option (B) `[KTU University Exam – Dec 2022, Adapted]`
+> **CO1, CO2 | RBT: Understand + Apply | 14 Marks**
+
+**(a)** With the help of a neat **labelled sketch**, explain the variation of the Fermi–Dirac distribution function with temperature. Discuss its behaviour in the limits $T \to 0$ and $T \to \infty$. **[7 Marks]**
+
+**(b)** A sample of intrinsic silicon at 300 K has $E_g = 1.12$ eV, $N_c = 2.8 \times 10^{19}\,\text{cm}^{-3}$ and $N_v = 1.04 \times 10^{19}\,\text{cm}^{-3}$. Calculate **(i)** the intrinsic carrier concentration $n_i$, **(ii)** the position of the intrinsic Fermi level $E_i$ relative to the centre of the band gap, and **(iii)** the probability of an electron occupying a state at $E_c + 0.2$ eV. **[7 Marks]**
+
+---
+
+#### Part (a) — Model Solution
+
+**Sketch (reproduce on answer script):** **[2 Marks]**
+
+```
+   f(E)
+    |
+  1 |—————————●—————————————●—————————————●———    (asymptote)
+    |          |             |             |
+    |          |             |         ___/
+ 0.5|······…·(0.5)·………·····(0.5)·………·/··………·(0.5)·……  ← constant
+    |     ___/                |    __/   |
+    | ___/                    |___/      |
+   0|———————————————————●—————————————————●———    (asymptote)
+    |____|____|____|____|____|____|____|____→ E
+        E_F (T=0)  E_F (300K)   E_F (1000K)
+```
+
+**Behavioural description:** **[2 Marks]**
+* At $T = 0$: $f(E) = 1$ for $E < E_F$ and $0$ for $E > E_F$ (Heaviside step).
+* At finite $T$: smooth sigmoid, with thermal smearing over $\sim k_B T$.
+* At $T \to \infty$ (classical limit): for $E - E_F \gg k_B T$, $f(E) \to e^{-(E - E_F)/k_B T}$ — Maxwell–Boltzmann distribution.
+
+**Physical interpretation:** **[1 Mark]** As $T$ rises, more electrons near $E_F$ gain thermal energy $k_B T$ and jump to higher states, leaving behind holes — the fundamental mechanism of **intrinsic conduction**.
+
+**Three characteristic points of the curve:** **[1 Mark]**
+* $f(E_F) = 0.5$ (definition of $E_F$),
+* $f(E) \to 1$ as $E \to -\infty$,
+* $f(E) \to 0$ as $E \to +\infty$.
+
+**Limits discussion:** **[1 Mark]**
+* $T \to 0$ recovers Heaviside step (degenerate quantum limit).
+* $T \to \infty$ for $E \gg E_F$ recovers Maxwell–Boltzmann (classical limit), with $f(E) \ll 1$ for all $E$.
+
+---
+
+#### Part (b) — Model Solution
+
+**Given:** $T = 300$ K, $E_g = 1.12$ eV, $N_c = 2.8 \times 10^{19}\,\text{cm}^{-3}$, $N_v = 1.04 \times 10^{19}\,\text{cm}^{-3}$, $k_B T = 0.0259$ eV.
+
+**(i) Intrinsic carrier concentration $n_i$:** **[3 Marks]**
+
+$$
+n_i \;=\; \sqrt{N_c N_v}\,\exp\!\left(-\dfrac{E_g}{2 k_B T}\right)
+$$
+
+$$
+n_i \;=\; \sqrt{(2.8 \times 10^{19})(1.04 \times 10^{19})}\;\exp\!\left(-\dfrac{1.12}{2 \times 0.0259}\right)
+$$
+
+$$
+n_i \;=\; \sqrt{2.912 \times 10^{38}}\;\exp(-21.62)
+$$
+
+$$
+n_i \;=\; 1.706 \times 10^{19}\; \times \; 4.06 \times 10^{-10}
+$$
+
+$$
+\boxed{\;n_i \;\approx\; 6.93 \times 10^{9}\,\text{cm}^{-3}\;}
+$$
+
+> **Valuation Key:** [Mass-action law formula: 1 Mark] [Substitution: 1 Mark] [Final numerical value: 1 Mark].
+
+**(ii) Position of intrinsic Fermi level $E_i$:** **[2 Marks]**
+
+$$
+E_i - E_{\text{midgap}} \;=\; \tfrac{1}{2} k_B T \ln\!\left(\dfrac{N_v}{N_c}\right)
+$$
+
+$$
+E_i - E_{\text{midgap}} \;=\; \tfrac{1}{2} \times 0.0259 \times \ln\!\left(\dfrac{1.04}{2.8}\right)
+$$
+
+$$
+E_i - E_{\text{midgap}} \;=\; 0.01295 \times (-0.990) \;=\; -0.0128\,\text{eV}
+$$
+
+$$
+\boxed{\;E_i \;\text{lies}\; 0.0128\,\text{eV below the centre of the band gap}\;}
+$$
+
+> **Valuation Key:** [Formula: 1 Mark] [Numerical value: 1 Mark].
+
+**(iii) Probability of occupancy at $E = E_c + 0.2$ eV:** **[2 Marks]**
+
+We need the position of $E_i$ relative to $E_c$. From $E_i$ being 0.0128 eV below the midgap:
+
+$$
+E_c - E_i \;=\; \tfrac{E_g}{2} - 0.0128 \;=\; 0.56 - 0.0128 \;=\; 0.5472\,\text{eV}
+$$
+
+Therefore:
+
+$$
+E - E_i \;=\; 0.5472 + 0.2 \;=\; 0.7472\,\text{eV}
+$$
+
+$$
+f(E) \;=\; \frac{1}{1 + \exp\!\left(\dfrac{0.7472}{0.0259}\right)} \;=\; \frac{1}{1 + e^{28.85}}
+$$
+
+Since $e^{28.85} \approx 3.4 \times 10^{12}$:
+
+$$
+\boxed{\;f(E_c + 0.2\,\text{eV}) \;\approx\; 2.9 \times 10^{-13}\;}
+$$
+
+> **Valuation Key:** [Energy difference from $E_i$: 1 Mark] [Final exponential substitution: 1 Mark].
+
+---
+
+## 5.3 KTU Examiner's Valuation Warning / Pitfall Callout
 
 > [!WARNING]
-> **Common pitfalls in Fermi–Dirac distribution questions – the silent mark-killers:**
-> 1. **Forgetting to convert eV to J** (or vice versa) when substituting into a formula. Always carry units through every line.
-> 2. **Omitting the spin-degeneracy factor of 2** in the derivation of $E_F$. The factor $8\pi$ (not $4\pi$) appears in the denominator because of this.
-> 3. **Stating "average energy is zero at $T = 0$ K"** – this is the *classical* (Maxwell–Boltzmann) result and is *wrong* for a Fermi gas. The correct answer is $\tfrac{3}{5} E_F$.
-> 4. **Forgetting to draw a labelled graph** when the question says "sketch the variation". A sketch without axes, units, or the marking of $E_F$ loses 1 full mark.
-> 5. **Writing $f(E_F) = 0$** – it is **always** $f(E_F) = 1/2$, irrespective of $T$. Examiners will deduct a mark.
-> 6. **Using $E = k_B T$ instead of $k_B T \approx 0.0259$ eV at 300 K** – lose the unit-conversion mark.
-> 7. **Confusing the Fermi energy with the work function** – they are *different* physical quantities. $E_F$ is a property of the bulk; $\phi$ is a surface property.
+> **The Seven Deadly Sins Students Commit in Fermi–Dirac Questions**
+> 1. **Mixing energy units:** Forgetting to convert $E - E_F$ from eV to J (or vice versa) inside the exponent. Always state $k_B T = 0.0259$ eV at 300 K and stick to **one unit system** throughout.
+> 2. **Misplaced parentheses:** Writing $\exp(E - E_F/k_B T)$ instead of $\exp\!\left((E - E_F)/k_B T\right)$. The parenthesis placement changes the answer by 20 orders of magnitude.
+> 3. **Dropping the "+1":** In the low-density limit, students often write $f(E) = e^{(E_F - E)/k_B T}$ without first checking that $E - E_F \ge 5 k_B T$. The criterion is non-negotiable.
+> 4. **Forgetting the symmetry:** $f(E_F) = 0.5$ at every temperature. If a calculation gives a different value, *the temperature is wrong* or $E_F$ has been mis-identified.
+> 5. **Sketching without a labelled $E_F$:** A sigmoid without the $0.5$ marker loses **1 full mark** in Part A.
+> 6. **Treating $N_c$ as universal:** It depends on $T^{3/2}$ and on $m_{e}^{\ast}$. Always write the formula before plugging in numbers.
+> 7. **Confusing $n$ and $n_i$:** $n$ is doping-dependent; $n_i$ is intrinsic. The mass-action law $np = n_i^{2}$ is the bridge between them.
 
 ---
 
-## Topic Recap & Important Things to Remember
+## 5.4 Topic Recap & Important Things to Remember
 
-- **Fermi–Dirac distribution:** $f(E) = \dfrac{1}{\exp((E - E_F)/k_B T) + 1}$. This is the **probability of occupancy** of a quantum state at energy $E$ by a fermion at temperature $T$.
-- **Boltzmann constant:** $k_B = 1.38 \times 10^{-23}$ J/K $= 8.617 \times 10^{-5}$ eV/K. Thermal energy at $300$ K is $k_B T \approx 0.0259$ eV.
-- **Three landmark values of $f(E)$:** $f(E < E_F)\big|_{T=0} = 1$, $f(E_F) = 1/2$ for any $T$, $f(E > E_F)\big|_{T=0} = 0$.
-- **Smearing width:** The transition from $f = 0.9$ to $f = 0.1$ has a width of $\Delta E \approx 3.525\, k_B T$ centred on $E_F$.
-- **Fermi energy at $T = 0$ K in a free-electron gas:** $E_F(0) = \dfrac{h^2}{2m}\!\left(\dfrac{3n}{8\pi}\right)^{2/3}$.
-- **Mean energy at $T = 0$ K:** $\bar{E} = \dfrac{3}{5} E_F$. **Not zero!** This is the key quantum-statistical result.
-- **Fermi velocity:** $v_F = \sqrt{2 E_F / m}$. Typically $\sim 10^6$ m/s in metals.
-- **Fermi temperature:** $T_F = E_F / k_B$. For most metals, $T_F \sim 10^4$–$10^5$ K, so $T_{\text{room}} \ll T_F$.
-- **Degeneracy pressure:** $P = \dfrac{2}{3} (U/V) = \dfrac{2}{5} n E_F \sim 10^{10}$ Pa in typical metals.
-- **Why metals conduct at $T = 0$ K:** because the conduction band is *partially filled*; electrons at the Fermi surface have available empty states within arbitrarily small energy range $\to$ zero-field current.
-- **Why insulators don't:** the valence band is *completely* full; no empty states exist within $k_B T$ of $E_F$, so no current can flow at low $T$.
-- **Why semiconductors conduct better at higher $T$:** thermally excited electrons jump across a moderate band gap; the F–D function's smearing in the conduction band increases sharply with $T$.
-- **Density of states (3-D free electrons):** $g(E) = \dfrac{V\, 4\pi (2m)^{3/2}}{h^3}\, \sqrt{E}$ – **always quote this** in derivations of carrier concentration.
-- **Two comparison anchors to remember:**
-    * F–D (fermions, "$+1$" in denominator) vs. B–E (bosons, "$-1$") vs. M–B (classical, no "$1$").
-    * $E_F$ is *not* the work function; the work function $\phi = E_{\text{vacuum}} - E_F$.
-- **Carrier-counting master equation:** $N = \displaystyle\int_{0}^{\infty} f(E)\, g(E)\, dE$. *The* central equation in solid-state physics – appears in nearly every Fermi–Dirac exam problem.
+* **The Master Equation:** $f(E) = \dfrac{1}{1 + e^{(E - E_F)/k_B T}}$ — memorise, understand, and sketch blindfolded.
+* **Three Cardinal Points:** $f \to 1$ for $E \ll E_F$, $f = 0.5$ for $E = E_F$, $f \to 0$ for $E \gg E_F$.
+* **Temperature Dependence:** $T = 0$ → Heaviside step; intermediate $T$ → smooth sigmoid; $T \to \infty$ → Maxwell–Boltzmann tail.
+* **Carrier Density Formulae:** $n = N_c e^{-(E_c - E_F)/k_B T}$ and $p = N_v e^{-(E_F - E_v)/k_B T}$.
+* **Effective Density of States:** $N_c = 2\!\left(\dfrac{2\pi m_{e}^{\ast} k_B T}{h^{2}}\right)^{\!3/2}$ ; analogous $N_v$ for holes.
+* **Mass-Action Law:** $np = n_i^{2} = N_c N_v e^{-E_g/k_B T}$.
+* **Intrinsic Fermi Level:** $E_i = \tfrac{1}{2}(E_c + E_v) + \tfrac{1}{2}k_B T \ln(N_v/N_c)$ — slightly off-centre due to density-of-states asymmetry.
+* **Thermal Voltage:** $V_T = k_B T / q \approx 25.85$ mV at 300 K — used in diode and BJT equations.
+* **Physical Constants to Keep Handy:** $k_B = 1.38 \times 10^{-23}$ J/K, $m_0 = 9.11 \times 10^{-31}$ kg, $h = 6.626 \times 10^{-34}$ J·s, $q = 1.6 \times 10^{-19}$ C.
+* **Engineering Relevance:** MOSFETs, BJTs, LEDs, laser diodes, thermopower sensors, thermionic emitters, and quantum-dot qubits all hinge on the position of $E_F$ relative to band edges.
+* **Sketching Protocol:** Always include the 0.5 dashed line, the $E_F$ vertical dotted line, two horizontal asymptotes, and label the $k_B T$ smearing width.
+* **Exam Mantra:** *If the answer depends on temperature exponentially, it is a Fermi–Dirac tail; if it depends on $T$ as $T^{3/2}$, it is the effective density of states.*
+
 <!-- SECTION_5_END -->

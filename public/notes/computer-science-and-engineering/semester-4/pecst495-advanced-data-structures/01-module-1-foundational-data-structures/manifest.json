@@ -1,0 +1,71 @@
+{
+  "course_name": "ADVANCED DATA STRUCTURES",
+  "course_code": "PECST495",
+  "module_number": 1,
+  "module_title": "Foundational data structures",
+  "topics_generated": [
+    {
+      "title": "Foundational Data Structures- Overview of Arrays and Linked Lists",
+      "slug": "foundational-data-structures-overview-of-arrays-and-linked-lists",
+      "path": "foundational-data-structures-overview-of-arrays-and-linked-lists/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "implementation of pointers and objects",
+      "slug": "implementation-of-pointers-and-objects",
+      "path": "implementation-of-pointers-and-objects/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Representing rooted trees",
+      "slug": "representing-rooted-trees",
+      "path": "representing-rooted-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hashing - Hash Tables",
+      "slug": "hashing-hash-tables",
+      "path": "hashing-hash-tables/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hash functions",
+      "slug": "hash-functions",
+      "path": "hash-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cuckoo Hashing",
+      "slug": "cuckoo-hashing",
+      "path": "cuckoo-hashing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Bloom Filters - Count-Min Sketch",
+      "slug": "bloom-filters-count-min-sketch",
+      "path": "bloom-filters-count-min-sketch/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications to Networks - Click Stream Processing using Bloom Filters",
+      "slug": "applications-to-networks-click-stream-processing-using-bloom-filters",
+      "path": "applications-to-networks-click-stream-processing-using-bloom-filters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications to Data Science - Heavy Hitters and count-min structures",
+      "slug": "applications-to-data-science-heavy-hitters-and-count-min-structures",
+      "path": "applications-to-data-science-heavy-hitters-and-count-min-structures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

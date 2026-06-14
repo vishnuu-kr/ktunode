@@ -1,0 +1,29 @@
+{
+  "course_name": "APPROXIMATION ALGORITHMS",
+  "course_code": "PECST749",
+  "module_number": 1,
+  "module_title": "Basics of approximation algorithms",
+  "topics_generated": [
+    {
+      "title": "Basics of Approximation Algorithms - Introduction to approximation algorithms, Performance guarantees: approximation ratio and factor, Examples of approximation problems. (Chapter 1)",
+      "slug": "basics-of-approximation-algorithms-introduction-to-approximation-algorithms-performance-guarantees",
+      "path": "basics-of-approximation-algorithms-introduction-to-approximation-algorithms-performance-guarantees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Greedy Algorithms - Introduction to greedy algorithms, Set cover problem, Vertex cover problem. (Chapter 2)",
+      "slug": "greedy-algorithms-introduction-to-greedy-algorithms-set-cover-problem-vertex-cover-problem-chapter-2",
+      "path": "greedy-algorithms-introduction-to-greedy-algorithms-set-cover-problem-vertex-cover-problem-chapter-2/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Local Search Algorithms - Local search techniques, k-Median and k-Center problems, Analysis of local search algorithms. (Chapter 3)",
+      "slug": "local-search-algorithms-local-search-techniques-k-median-and-k-center-problems-analysis-of-local",
+      "path": "local-search-algorithms-local-search-techniques-k-median-and-k-center-problems-analysis-of-local/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,643 +1,472 @@
 # Absolute Maxima and Minima on Closed Bounded Regions
 
 <!-- SECTION_1_START -->
+
 # Absolute Maxima and Minima on Closed Bounded Regions
 
-## 1.1 Formal Academic Definition (KTU 2024 Syllabus Terminology)
-
 > [!IMPORTANT]
-> **Absolute (Global) Maxima and Minima — Rigorous Definition**
->
-> Let $f: D \subseteq \mathbb{R}^{2} \to \mathbb{R}$ be a real-valued function defined on a region $D$. The function $f$ attains an **absolute maximum** at the point $(x_{0}, y_{0}) \in D$ if
->
-> $$f(x_{0}, y_{0}) \geq f(x, y) \quad \text{for all } (x, y) \in D.$$
->
-> Similarly, $f$ attains an **absolute minimum** at $(x_{1}, y_{1}) \in D$ if
->
-> $$f(x_{1}, y_{1}) \leq f(x, y) \quad \text{for all } (x, y) \in D.$$
->
-> The points $(x_{0}, y_{0})$ and $(x_{1}, y_{1})$ are called the **global extreme points** of $f$ on $D$.
+> **KTU 2024 Syllabus Anchor (GAMAT101 – Module 3):** Application of partial derivatives to locate absolute extrema of multivariable functions defined over closed bounded regions in $\mathbb{R}^3$, with the chain rule driving the boundary curve and surface analysis.
+
+## 1.1 Formal Academic Definition
+
+Let $f : \mathcal{R} \subseteq \mathbb{R}^3 \rightarrow \mathbb{R}$ be a real-valued function defined on a **closed bounded region** $\mathcal{R}$ in $\mathbb{R}^3$. A point $P_0 = (x_0, y_0, z_0) \in \mathcal{R}$ is said to be an **absolute maximum point** of $f$ on $\mathcal{R}$ if
+$$f(x_0, y_0, z_0) \geq f(x, y, z) \quad \text{for every } (x, y, z) \in \mathcal{R}.$$
+The corresponding value $f(x_0, y_0, z_0)$ is the **absolute maximum** of $f$ on $\mathcal{R}$. Analogously, $P_0$ is an **absolute minimum point** if
+$$f(x_0, y_0, z_0) \leq f(x, y, z) \quad \text{for every } (x, y, z) \in \mathcal{R}.$$
+A point that yields either an absolute maximum or an absolute minimum is called an **absolute extremum**.
 
 > [!NOTE]
-> **Closed Bounded Region (Compact Set in $\mathbb{R}^{2}$)**
->
-> A region $R \subset \mathbb{R}^{2}$ is called a **closed bounded region** if it is:
-> 1. **Closed:** It contains all of its boundary points, and
-> 2. **Bounded:** It can be enclosed within a disk of finite radius $r > 0$.
->
-> In KTU notation, such regions are typically written as $R = \{(x, y) : a \leq x \leq b, \, c \leq y \leq d\}$ for a rectangle, or any polygon with finite area.
+> **Extreme Value Theorem (EVT) for $f(x, y, z)$:** If $f$ is **continuous** on a **closed** (contains all its boundary points) and **bounded** (lies inside some ball of finite radius) region $\mathcal{R} \subset \mathbb{R}^3$, then $f$ **must attain** an absolute maximum and an absolute minimum on $\mathcal{R}$. This theorem is the bedrock that guarantees the existence of extrema before we go hunting for them.
 
-## 1.2 Conceptual Analogy — The "Island & Mountain" Intuition
+## 1.2 The Two Key Topological Ingredients
 
-Imagine you are standing on a **hilly island** of finite size (a closed bounded region). The terrain is described by a height function $f(x, y)$ — the elevation at each point on the island.
+A region $\mathcal{R} \subset \mathbb{R}^3$ is **closed** if it contains its entire boundary $\partial \mathcal{R}$, and **bounded** if it is contained within some sphere of finite radius centred at the origin. A rectangular box, a solid sphere, and a solid tetrahedron are all classic closed bounded regions in $\mathbb{R}^3$.
 
-* The **highest peak** on the island is the **absolute maximum** of $f$.
-* The **deepest valley** is the **absolute minimum** of $f$.
-* The island has both **interior regions** (open plains inside) and a **coastline** (the boundary).
+| Region Type | Closed? | Bounded? | EVT Applies? |
+| :--- | :---: | :---: | :---: |
+| Open ball $x^2 + y^2 + z^2 < 1$ | No | Yes | No |
+| Closed ball $x^2 + y^2 + z^2 \leq 1$ | Yes | Yes | **Yes** |
+| Upper half-space $z \geq 0$ | Yes | No | No |
+| Closed box $[0,a] \times [0,b] \times [0,c]$ | Yes | Yes | **Yes** |
+| Plane $\mathbb{R}^2 \times \{0\}$ | Yes | No | No |
 
-To find the highest peak, you must check:
-1. **Interior hilltops** (where the slope is zero in every direction — a true summit).
-2. **Coastline peaks** (a cliff that drops directly into the sea).
-3. **Corners** of irregular coastlines (where two cliffs meet).
-
-This is precisely the algorithm for finding absolute extrema on a closed bounded region.
+## 1.3 Intuition Through Analogy
 
 > [!TIP]
-> **Why this matters in Computer Science:** Finding global maxima/minima of cost functions over constrained regions is the backbone of **optimization algorithms** in machine learning (loss landscapes), **resource allocation** in operations research, and **signal processing** (filter design over bounded frequency bands).
+> **Conceptual Analogy – The Island Climber.** Imagine a hiker dropped onto a finite, fenced island. The hiker can walk on flat ground, climb hills, and descend valleys, but cannot leave the island's boundary. Because the island is **bounded** (finite in extent) and the elevation function is **continuous** (no sudden teleportation), the hiker is *guaranteed* to find both a single highest peak (absolute maximum) and a single lowest dip (absolute minimum) somewhere on the island. Drop the fence (open region) and the hiker might walk off infinitely far in search of a lower valley — no minimum exists. Remove the boundary and keep the island infinite (unbounded) and the hiker might never find the highest peak.
+
+For a function of three variables, the "island" is a 3D solid, and the "elevation" is the value of $f$. Our task is to find every candidate point, then read off the highest and lowest elevations.
+
+## 1.4 Visualization Hook
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Paraboloid surface $f(x, y) = x^{2} + 2y^{2}$ over a square region with a tilted plane showing the global minimum.
+> **Concept:** Level surfaces of $f(x, y, z) = xyz$ and the optimal corner of the box $[0,3] \times [0,2] \times [0,1]$.
 > **GeoGebra / Desmos Input Equations:**
-> * Surface: `f(x, y) = x^2 + 2y^2 - 4x - 4y + 5`
-> * Contour projection on $xy$-plane: set of points $(x, y)$ with $f(x, y) = c$ — nested ellipses centered at $(2, 1)$.
-> **Visual Description:** Students should observe concentric elliptical level curves shrinking toward the interior point $(2, 1)$, which is the bowl's bottom (the absolute minimum), and corners $(0, 4)$ and $(4, 4)$ shooting upward as the absolute maximum.
-
----
-
-## 1.3 The Extreme Value Theorem (Weierstrass) — The Guarantee
-
-> [!IMPORTANT]
-> **Theorem: Extreme Value Theorem for Functions of Two Variables**
->
-> If $f$ is **continuous** on a **closed bounded region** $R \subset \mathbb{R}^{2}$, then $f$ attains both an **absolute maximum** value and an **absolute minimum** value on $R$.
->
-> *This theorem is non-constructive — it guarantees existence but does not tell us WHERE the extrema occur. We need an algorithm to locate them.*
-
-The three conditions — **continuity**, **closedness**, and **boundedness** — are all essential. Dropping any one of them can cause the extrema to fail to exist (think of $\tan(x)$ near $\pi/2$, or $f(x) = x$ on the open interval $(0, 1)$).
+> * `f(x, y, z) = x*y*z` (level surface family: $xyz = c$ for various $c$)
+> * `Box(0, 0, 0, 3, 2, 1)` to render the closed rectangular region
+> * `Point(3, 2, 1)` highlighted in red as the absolute maximum location
+> **Visual Description:** The student should see the box with one distinguished red corner at $(3, 2, 1)$ and the doubly-saddle-shaped level surfaces $xyz = c$ draped through the interior. As $c$ increases, the level surfaces bulge outward, and the last surface to touch the box is the one with $c = 6$, kissing the corner $(3, 2, 1)$.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 The Three-Step Search Strategy
+# Deep Theoretical Analysis & KTU Formula Sheet
 
-To systematically locate absolute extrema on a closed bounded region, we partition the problem into three disjoint sets of candidate points:
+## 2.1 The Candidate-Point Algorithm
 
-### Step 1 — Interior Critical Points (Open Region)
-
-A point $(x_{0}, y_{0})$ is a **critical point** of $f$ if:
-
-$$\nabla f(x_{0}, y_{0}) = \mathbf{0} \quad \Longleftrightarrow \quad f_{x}(x_{0}, y_{0}) = 0 \text{ and } f_{y}(x_{0}, y_{0}) = 0$$
-
-**OR** if one of the partial derivatives $f_{x}$ or $f_{y}$ **fails to exist** at $(x_{0}, y_{0})$.
-
-Only critical points lying **strictly inside** the region (not on the boundary) are considered here.
-
-### Step 2 — Boundary Critical Points (1D Optimization)
-
-The boundary $\partial R$ is a **one-dimensional curve**. We have two equivalent techniques:
-
-**Method A: Direct Parameterization**
-Express the boundary as $\mathbf{r}(t) = (x(t), y(t))$ for $t \in [a, b]$, and reduce to a single-variable problem:
-
-$$g(t) = f(x(t), y(t)), \quad \text{find critical points where } g'(t) = 0.$$
-
-**Method B: Lagrange Multipliers (Advanced)**
-For an implicit boundary $g(x, y) = 0$, solve the system:
-
-$$\nabla f = \lambda \, \nabla g, \quad g(x, y) = 0.$$
-
-### Step 3 — Vertices / Corner Points
-
-For a **polygonal** region, the **vertices** (corners) are also candidate points because the boundary is not smooth there.
-
-> [!NOTE]
-> **The "Is the point inside?" Test**
->
-> A point $(x_{0}, y_{0})$ lies inside the region $R$ if there exists $\varepsilon > 0$ such that the open disk $B_{\varepsilon}(x_{0}, y_{0})$ is fully contained in $R$. Boundary points fail this test — no matter how small $\varepsilon$ is, the disk pokes outside $R$.
-
-## 2.2 KTU Formula Sheet — Complete Reference
-
-> [!TIP]
-> Memorize this table — every KTU question on absolute extrema is a direct application of these formulas.
-
-| Concept | Formula / Condition | Geometric Meaning | Used In |
-|---|---|---|---|
-| Gradient vector | $\nabla f = \langle f_{x}, f_{y} \rangle$ | Direction of steepest ascent | All critical point problems |
-| Interior critical point | $f_{x} = 0$ and $f_{y} = 0$ | Horizontal tangent plane | Step 1 of algorithm |
-| Boundary via parameterization | $g'(t) = f_{x} \cdot x'(t) + f_{y} \cdot y'(t) = 0$ | Chain rule applied along curve | Step 2 — Method A |
-| Lagrange condition | $f_{x} = \lambda \, g_{x}$ and $f_{y} = \lambda \, g_{y}$ | $\nabla f \parallel \nabla g$ | Step 2 — Method B |
-| Second Derivative Test | $D = f_{xx} f_{yy} - (f_{xy})^{2}$ | Classifies critical points | Pre-screening interior points |
-| Absolute max/min values | $\max/\min \{f(P_{i})\}$ over all candidates $P_{i}$ | Compare function values | Final step |
+The EVT guarantees that absolute extrema exist, but it does not tell us *where*. The following systematic procedure locates every candidate.
 
 > [!IMPORTANT]
-> **The Second Derivative Test (Pre-Check)**
->
-> At a critical point $(a, b)$ where $f_{x} = f_{y} = 0$:
->
-> $$\text{Let } D(a, b) = f_{xx}(a, b) \cdot f_{yy}(a, b) - \left[ f_{xy}(a, b) \right]^{2}.$$
->
-> * If $D > 0$ and $f_{xx}(a, b) > 0$: **local minimum** at $(a, b)$.
-> * If $D > 0$ and $f_{xx}(a, b) < 0$: **local maximum** at $(a, b)$.
-> * If $D < 0$: **saddle point** — not an extremum.
-> * If $D = 0$: **test inconclusive** — use other methods.
+> **The Six-Step Master Procedure for Absolute Extrema on Closed Bounded Regions**
+> 1. **Verify the Hypotheses:** Check that $f$ is continuous and that $\mathcal{R}$ is closed and bounded.
+> 2. **Interior Critical Points:** Solve $\nabla f = \mathbf{0}$, i.e. $f_x = f_y = f_z = 0$, inside $\mathcal{R}$. Also note where partial derivatives fail to exist.
+> 3. **Boundary Surface Critical Points:** On each face (2D surface piece) of $\partial \mathcal{R}$, reduce $f$ to a two-variable function and find its critical points using the chain rule.
+> 4. **Boundary Edge Critical Points:** On each edge (1D curve) of $\partial \mathcal{R}$, parametrize the curve and apply the single-variable chain rule $\dfrac{df}{dt} = f_x \dfrac{dx}{dt} + f_y \dfrac{dy}{dt} + f_z \dfrac{dz}{dt}$.
+> 5. **Vertex Values:** Evaluate $f$ at every vertex (0D corner) of $\partial \mathcal{R}$.
+> 6. **Compare and Declare:** The largest value among all candidates is the absolute maximum; the smallest is the absolute minimum.
 
-## 2.3 Real-World Engineering Utility
+## 2.2 The Role of the Chain Rule on the Boundary
 
-This algorithm is foundational in:
+When $\mathcal{R}$ has curved or piecewise-flat boundaries, the chain rule is the engine that drives the search.
 
-* **Machine Learning:** Loss function minimization over a constrained weight region (L2 regularization = minimize loss over a closed ball).
-* **Computer Vision:** Template matching where the optimal position is found by searching a closed bounded region of pixel coordinates.
-* **Operations Research:** Resource allocation where variables have explicit upper and lower bounds.
-* **Signal Processing:** Filter design where frequency responses are optimized over closed rectangular regions in the $z$-plane.
-* **Robotics:** Trajectory optimization with bounded actuator torques (closed cube in $\mathbb{R}^{n}$).
+* **Restriction to a smooth curve** $\mathbf{r}(t) = \bigl(x(t), y(t), z(t)\bigr)$:
+  $$\frac{d}{dt} f\bigl(\mathbf{r}(t)\bigr) = f_x \frac{dx}{dt} + f_y \frac{dy}{dt} + f_z \frac{dz}{dt}.$$
+  Setting this equal to zero gives a necessary condition for an extremum on the curve.
+
+* **Restriction to a smooth surface** $z = g(x, y)$: define the composite
+  $$F(x, y) = f\bigl(x, y, g(x, y)\bigr).$$
+  Then
+  $$F_x = f_x + f_z \, g_x, \qquad F_y = f_y + f_z \, g_y.$$
+  Setting $F_x = F_y = 0$ gives the chain-rule conditions for an extremum on the surface.
+
+## 2.3 KTU Formula Sheet & Cheat Code
 
 > [!NOTE]
-> **KTU 2024 Module 3 Connection**
-> This topic sits at the intersection of **partial differentiation** (Module 3) and **constrained optimization** (a recurring theme in Module 5 / Optimization electives). The Chain Rule you studied earlier is the workhorse for boundary parameterization.
+> Every formula in this table is examinable for GAMAT101. The pipe symbol $\vert$ is rendered as $\mid$ to preserve Markdown table integrity.
+
+| Symbol / Identity | Meaning / Formula | Use Case |
+| :--- | :--- | :--- |
+| $\nabla f = (f_x, f_y, f_z)$ | Gradient vector of $f(x, y, z)$ | Interior critical point condition |
+| $\nabla f = \mathbf{0}$ | $f_x = f_y = f_z = 0$ | Candidate inside $\mathcal{R}$ |
+| $\dfrac{df}{dt} = \nabla f \cdot \mathbf{r}'(t)$ | Chain rule along a curve | Edge critical points |
+| $F(x, y) = f(x, y, g(x, y))$ | Composite through a surface | Face critical points |
+| $F_x = f_x + f_z g_x$, $F_y = f_y + f_z g_y$ | Two-variable chain rule on $z = g(x, y)$ | Surface restriction |
+| $f(P_0) = M = \max_{\mathcal{R}} f$ | Absolute maximum value | Final comparison |
+| $f(P_0) = m = \min_{\mathcal{R}} f$ | Absolute minimum value | Final comparison |
+| $\partial \mathcal{R}$ | Boundary of the region $\mathcal{R}$ | Where edge / face analysis happens |
+| $D \subset \mathcal{R}$ | Interior of $\mathcal{R}$ | Where $\nabla f = \mathbf{0}$ is checked |
+| $f \in C(\mathcal{R})$ | $f$ is continuous on $\mathcal{R}$ | Hypotheses of the EVT |
+
+## 2.4 Real-World Engineering Utility
+
+* **Machine Learning:** Empirical risk minimisation over a bounded parameter cube (e.g. weight clipping) uses exactly this algorithm. The model loss $L(\mathbf{w})$ is continuous on a closed hyper-rectangle, so a global optimum is guaranteed.
+* **Computer Graphics & CAD:** When shading or normalising a function-valued surface patch, engineers need the extreme values of the surface height over a closed 3D mesh to assign colour mapping scales.
+* **Operations Research:** Maximising a profit function $P(x, y, z)$ subject to bounded resources (e.g. $0 \leq x \leq 100$ units) reduces to a closed-region absolute-extrema problem in $\mathbb{R}^3$.
+* **Thermodynamics & Physics:** Finding the maximum of entropy $S(U, V, N)$ over a closed bounded region of the state space is foundational in equilibrium statistical mechanics.
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Worked Example — Complete Derivation
 
-> [!IMPORTANT]
-> **Model Question Pattern (KTU 2024 Scheme)**
->
-> Find the absolute maximum and minimum values of the function $f(x, y) = x^{2} + 2y^{2} - 4x - 4y + 5$ on the closed rectangular region
->
-> $$R = \{(x, y) \in \mathbb{R}^{2} \mid 0 \leq x \leq 4, \; 0 \leq y \leq 4\}.$$
+# Step-by-Step Derivation & Worked Model Solution
 
-## 3.1 Step 1 — Verify Preconditions and Compute Interior Critical Points
+## 3.1 The Canonical KTU Board-Style Problem
 
-**Continuity check:** $f$ is a polynomial in $x$ and $y$, hence continuous everywhere.
+> **Problem (KTU University Exam – July 2024 pattern):** Find the absolute maximum and minimum values of
+> $$f(x, y, z) = xyz$$
+> on the closed rectangular box
+> $$\mathcal{R} = [0, 3] \times [0, 2] \times [0, 1].$$
 
-**Closed bounded region check:** $R$ is a closed rectangle — both closed (includes edges) and bounded (fits inside a disk of radius $4\sqrt{2}$). ✓
+**Step 1 — Verify the Hypotheses of the EVT.**
 
-By the **Extreme Value Theorem**, absolute extrema exist.
+The function $f(x, y, z) = xyz$ is a polynomial, hence continuous on all of $\mathbb{R}^3$. The region $\mathcal{R}$ is a closed rectangular box, hence closed and bounded. By the EVT, $f$ attains both an absolute maximum and an absolute minimum on $\mathcal{R}$.
 
-**Compute partial derivatives:**
+**Step 2 — Locate the Interior Critical Points.**
 
-$$f_{x}(x, y) = \frac{\partial}{\partial x}\left( x^{2} + 2y^{2} - 4x - 4y + 5 \right) = 2x - 4$$
+Compute the three partial derivatives:
+$$f_x(x, y, z) = yz, \qquad f_y(x, y, z) = xz, \qquad f_z(x, y, z) = xy.$$
 
-$$f_{y}(x, y) = \frac{\partial}{\partial y}\left( x^{2} + 2y^{2} - 4x - 4y + 5 \right) = 4y - 4$$
+A critical point in the interior requires
+$$f_x = 0, \quad f_y = 0, \quad f_z = 0 \;\;\Longleftrightarrow\;\; yz = 0, \;\; xz = 0, \;\; xy = 0.$$
 
-**Set partials to zero simultaneously:**
+The simultaneous system $yz = xz = xy = 0$ implies that **at least two** of the three variables $x, y, z$ are zero. Hence every solution lies on one of the coordinate planes $x = 0$, $y = 0$, or $z = 0$, which are part of the **boundary**, not the interior. Therefore:
 
-$$\begin{aligned}
-2x - 4 &= 0 \quad \Longrightarrow \quad x = 2, \\
-4y - 4 &= 0 \quad \Longrightarrow \quad y = 1.
-\end{aligned}$$
+> **No interior critical point exists inside $\mathcal{R}$.** [Stating absence of interior critical points: 2 Marks]
 
-**Interior test:** The candidate point is $(2, 1)$. Since $0 < 2 < 4$ and $0 < 1 < 4$, this point lies strictly inside $R$. ✓
+**Step 3 — Analyse Each of the Six Boundary Faces.**
 
-**Function value at the interior critical point:**
+The boundary $\partial \mathcal{R}$ consists of six faces. On every face, $f$ reduces to a function of two variables.
 
-$$\begin{aligned}
-f(2, 1) &= (2)^{2} + 2(1)^{2} - 4(2) - 4(1) + 5 \\
-&= 4 + 2 - 8 - 4 + 5 \\
-&= -1.
-\end{aligned}$$
+**Face $F_1 : x = 0$, with $0 \leq y \leq 2$, $0 \leq z \leq 1$.**  
+Restriction: $f(0, y, z) = 0 \cdot yz = 0$ identically.
 
-> [!NOTE]
-> **Valuation Key Point:** A student skipping the interior test loses **1 mark** even if the point is correct. Always verify the candidate lies *strictly* inside the region.
+**Face $F_2 : x = 3$, with $0 \leq y \leq 2$, $0 \leq z \leq 1$.**  
+Restriction: $f(3, y, z) = 3yz$.  
+Critical points: $\dfrac{\partial}{\partial y}(3yz) = 3z = 0$ and $\dfrac{\partial}{\partial z}(3yz) = 3y = 0$, giving $y = 0$ and $z = 0$.  
+The only critical point on $F_2$ is $(3, 0, 0)$, with $f(3, 0, 0) = 0$.
 
-## 3.2 Step 2 — Boundary Analysis (Four Sides of the Rectangle)
+**Face $F_3 : y = 0$, with $0 \leq x \leq 3$, $0 \leq z \leq 1$.**  
+Restriction: $f(x, 0, z) = 0$ identically.
 
-### Boundary Edge 1: Bottom — $y = 0$, $x \in [0, 4]$
+**Face $F_4 : y = 2$, with $0 \leq x \leq 3$, $0 \leq z \leq 1$.**  
+Restriction: $f(x, 2, z) = 2xz$.  
+Critical points: $\dfrac{\partial}{\partial x}(2xz) = 2z = 0$ and $\dfrac{\partial}{\partial z}(2xz) = 2x = 0$, giving $(x, z) = (0, 0)$.  
+The only critical point on $F_4$ is $(0, 2, 0)$, with $f(0, 2, 0) = 0$.
 
-**Substitute $y = 0$ into $f$:**
+**Face $F_5 : z = 0$, with $0 \leq x \leq 3$, $0 \leq y \leq 2$.**  
+Restriction: $f(x, y, 0) = 0$ identically.
 
-$$f(x, 0) = x^{2} + 0 - 4x - 0 + 5 = x^{2} - 4x + 5$$
+**Face $F_6 : z = 1$, with $0 \leq x \leq 3$, $0 \leq y \leq 2$.**  
+Restriction: $f(x, y, 1) = xy$.  
+Critical points: $\dfrac{\partial}{\partial x}(xy) = y = 0$ and $\dfrac{\partial}{\partial y}(xy) = x = 0$, giving $(x, y) = (0, 0)$.  
+The only critical point on $F_6$ is $(0, 0, 1)$, with $f(0, 0, 1) = 0$.
 
-**Reduce to a single-variable function:** Let $g_{1}(x) = x^{2} - 4x + 5$ on $[0, 4]$.
+> **Summary of face analysis:** Every critical point on the six faces yields the value $f = 0$. [Tabulating face critical points: 3 Marks]
 
-**Differentiate and set to zero:**
+**Step 4 — Analyse Each of the Twelve Boundary Edges.**
 
-$$g_{1}'(x) = 2x - 4 = 0 \quad \Longrightarrow \quad x = 2.$$
+The boundary of each face is composed of edges. We parametrise each edge as a line segment and apply the single-variable chain rule.
 
-**Confirm $x = 2 \in [0, 4]$.** ✓
+By symmetry of the function $f(x, y, z) = xyz$ in the sense that fixing any two variables leaves the third multiplicative factor linear in the remaining variable, the only non-trivial edges are those that bind together the **upper** faces of the box.
 
-**Function values:**
+Consider the edge $E_4$ defined by $x = 3$, $y = 2$, $0 \leq z \leq 1$. Parametrise as $z = t$, with $t \in [0, 1]$. Then
+$$f(3, 2, t) = 3 \cdot 2 \cdot t = 6t.$$
+Differentiate using the chain rule:
+$$\frac{df}{dt} = 6.$$
+The derivative is never zero on $(0, 1)$, so the extrema of $f$ on $E_4$ occur at the endpoints. The values are
+$$f(3, 2, 0) = 0, \qquad f(3, 2, 1) = 6.$$
 
-$$\begin{aligned}
-g_{1}(2) &= (2)^{2} - 4(2) + 5 = 4 - 8 + 5 = 1, \\
-g_{1}(0) &= 0 - 0 + 5 = 5, \\
-g_{1}(4) &= 16 - 16 + 5 = 5.
-\end{aligned}$$
+By analogous chain-rule arguments:
+* On $E_8$ ($x = 3$, $z = 1$, $0 \leq y \leq 2$): $f(3, y, 1) = 3y$, $\dfrac{df}{dy} = 3 \neq 0$, endpoints give $0$ and $6$.
+* On $E_{12}$ ($y = 2$, $z = 1$, $0 \leq x \leq 3$): $f(x, 2, 1) = 2x$, $\dfrac{df}{dx} = 2 \neq 0$, endpoints give $0$ and $6$.
+* On every other edge (which fixes at least one of $x$, $y$, or $z$ to $0$): $f$ is identically zero.
 
-> [!NOTE]
-> **Boundary Edge 1 candidates:** $(2, 0)$ with $f = 1$, $(0, 0)$ with $f = 5$, $(4, 0)$ with $f = 5$.
+> **Summary of edge analysis:** The maximum candidate on edges is $f = 6$ at the corner $(3, 2, 1)$. [Analysing non-trivial edges with chain rule: 3 Marks]
 
-### Boundary Edge 2: Top — $y = 4$, $x \in [0, 4]$
+**Step 5 — Evaluate at the Eight Vertices.**
 
-**Substitute $y = 4$ into $f$:**
+| Vertex | $f(x, y, z) = xyz$ |
+| :--- | :---: |
+| $(0, 0, 0)$ | $0$ |
+| $(3, 0, 0)$ | $0$ |
+| $(0, 2, 0)$ | $0$ |
+| $(0, 0, 1)$ | $0$ |
+| $(3, 2, 0)$ | $0$ |
+| $(3, 0, 1)$ | $0$ |
+| $(0, 2, 1)$ | $0$ |
+| $(3, 2, 1)$ | $\mathbf{6}$ |
 
-$$f(x, 4) = x^{2} + 2(16) - 4x - 4(4) + 5 = x^{2} - 4x + 21$$
+**Step 6 — Compare All Candidates and Declare the Extrema.**
 
-**Let $g_{2}(x) = x^{2} - 4x + 21$ on $[0, 4]$.**
+| Source of candidate | Maximum value | Minimum value |
+| :--- | :---: | :---: |
+| Interior of $\mathcal{R}$ | (none) | (none) |
+| Six boundary faces | $0$ | $0$ |
+| Twelve boundary edges | $6$ | $0$ |
+| Eight vertices | $6$ | $0$ |
 
-$$g_{2}'(x) = 2x - 4 = 0 \quad \Longrightarrow \quad x = 2.$$
+Therefore:
+$$\boxed{\;f_{\max} = 6 \text{ attained at } (3, 2, 1), \qquad f_{\min} = 0 \text{ attained at every point with at least one of } x = 0, y = 0, z = 0.\;}$$
+[Final consolidated comparison and box: 2 Marks]
 
-**Function values:**
+## 3.2 Algorithmic Python Implementation (Symbolic Verification)
 
-$$\begin{aligned}
-g_{2}(2) &= 4 - 8 + 21 = 17, \\
-g_{2}(0) &= 0 - 0 + 21 = 21, \\
-g_{2}(4) &= 16 - 16 + 21 = 21.
-\end{aligned}$$
+```python
+import numpy as np
+from itertools import product
 
-> [!NOTE]
-> **Boundary Edge 2 candidates:** $(2, 4)$ with $f = 17$, $(0, 4)$ with $f = 21$, $(4, 4)$ with $f = 21$.
+def absolute_extrema_box(f_scalar, box_bounds, grid_density=400):
+    """
+    Finds absolute extrema of a continuous function f(x, y, z)
+    on a closed rectangular box [xmin, xmax] x [ymin, ymax] x [zmin, zmax].
 
-### Boundary Edge 3: Left — $x = 0$, $y \in [0, 4]$
+    Parameters
+    ----------
+    f_scalar : callable
+        Function f(x, y, z) -> float. Must be continuous.
+    box_bounds : tuple of 6 floats
+        (xmin, xmax, ymin, ymax, zmin, zmax).
+    grid_density : int
+        Density of the interior search grid.
 
-**Substitute $x = 0$ into $f$:**
+    Returns
+    -------
+    dict with keys 'maximum', 'minimum' (each a dict with 'value' and 'point').
+    """
+    if len(box_bounds) != 6:
+        raise ValueError("box_bounds must contain exactly 6 floats.")
+    xmin, xmax, ymin, ymax, zmin, zmax = box_bounds
 
-$$f(0, y) = 0 + 2y^{2} - 0 - 4y + 5 = 2y^{2} - 4y + 5$$
+    # --- Step 1: Sample the interior densely ---
+    xs = np.linspace(xmin, xmax, grid_density)
+    ys = np.linspace(ymin, ymax, grid_density)
+    zs = np.linspace(zmin, zmax, grid_density)
+    X, Y, Z = np.meshgrid(xs, ys, zs, indexing="ij")
 
-**Let $g_{3}(y) = 2y^{2} - 4y + 5$ on $[0, 4]$.**
+    with np.errstate(all="ignore"):
+        F = f_scalar(X, Y, Z)
+    if not np.all(np.isfinite(F)):
+        raise ValueError("f is not continuous on the supplied box.")
 
-$$g_{3}'(y) = 4y - 4 = 0 \quad \Longrightarrow \quad y = 1.$$
+    idx_max = np.unravel_index(np.argmax(F), F.shape)
+    idx_min = np.unravel_index(np.argmin(F), F.shape)
+    max_val, min_val = float(F[idx_max]), float(F[idx_min])
+    max_pt = (float(X[idx_max]), float(Y[idx_max]), float(Z[idx_max]))
+    min_pt = (float(X[idx_min]), float(Y[idx_min]), float(Z[idx_min]))
 
-**Function values:**
+    # --- Step 2: Enumerate every vertex of the box exactly ---
+    vertices = list(product(
+        (xmin, xmax), (ymin, ymax), (zmin, zmax)
+    ))
+    for vx, vy, vz in vertices:
+        val = f_scalar(vx, vy, vz)
+        if val > max_val:
+            max_val, max_pt = val, (vx, vy, vz)
+        if val < min_val:
+            min_val, min_pt = val, (vx, vy, vz)
 
-$$\begin{aligned}
-g_{3}(1) &= 2 - 4 + 5 = 3, \\
-g_{3}(0) &= 0 - 0 + 5 = 5, \\
-g_{3}(4) &= 32 - 16 + 5 = 21.
-\end{aligned}$$
+    return {
+        "maximum": {"value": max_val, "point": max_pt},
+        "minimum": {"value": min_val, "point": min_pt},
+    }
 
-> [!NOTE]
-> **Boundary Edge 3 candidates:** $(0, 1)$ with $f = 3$, $(0, 0)$ with $f = 5$, $(0, 4)$ with $f = 21$.
 
-### Boundary Edge 4: Right — $x = 4$, $y \in [0, 4]$
-
-**Substitute $x = 4$ into $f$:**
-
-$$f(4, y) = 16 + 2y^{2} - 16 - 4y + 5 = 2y^{2} - 4y + 5$$
-
-**Let $g_{4}(y) = 2y^{2} - 4y + 5$ on $[0, 4]$.**
-
-$$g_{4}'(y) = 4y - 4 = 0 \quad \Longrightarrow \quad y = 1.$$
-
-**Function values:**
-
-$$\begin{aligned}
-g_{4}(1) &= 2 - 4 + 5 = 3, \\
-g_{4}(0) &= 0 - 0 + 5 = 5, \\
-g_{4}(4) &= 32 - 16 + 5 = 21.
-\end{aligned}$$
-
-> [!NOTE]
-> **Boundary Edge 4 candidates:** $(4, 1)$ with $f = 3$, $(4, 0)$ with $f = 5$, $(4, 4)$ with $f = 21$.
-
-## 3.3 Step 3 — Compile All Candidates and Determine the Winner
-
-**Master Candidate Table (computed above):**
-
-| # | Point $(x, y)$ | Source | $f(x, y)$ |
-|---|---|---|---|
-| 1 | $(2, 1)$ | Interior critical point | $-1$ |
-| 2 | $(2, 0)$ | Bottom edge | $1$ |
-| 3 | $(0, 0)$ | Corner / Edge endpoints | $5$ |
-| 4 | $(4, 0)$ | Corner / Edge endpoints | $5$ |
-| 5 | $(2, 4)$ | Top edge | $17$ |
-| 6 | $(0, 4)$ | Corner / Top-Left | $21$ |
-| 7 | $(4, 4)$ | Corner / Top-Right | $21$ |
-| 8 | $(0, 1)$ | Left edge | $3$ |
-| 9 | $(4, 1)$ | Right edge | $3$ |
-
-**Identify the global extremum by simple comparison:**
-
-$$\text{Maximum} = \max\{-1, 1, 5, 5, 17, 21, 21, 3, 3\} = 21$$
-
-$$\text{Minimum} = \min\{-1, 1, 5, 5, 17, 21, 21, 3, 3\} = -1$$
-
-## 3.4 Final Answer
-
-> [!IMPORTANT]
-> **Absolute Maximum Value:** $f_{\max} = 21$, attained at the points $(0, 4)$ and $(4, 4)$.
->
-> **Absolute Minimum Value:** $f_{\min} = -1$, attained at the interior point $(2, 1)$.
-
-**Verification via Second Derivative Test at $(2, 1)$:**
-
-$$\begin{aligned}
-f_{xx} &= 2, \quad f_{yy} = 4, \quad f_{xy} = 0, \\
-D(2, 1) &= (2)(4) - (0)^{2} = 8 > 0 \text{ and } f_{xx} = 2 > 0.
-\end{aligned}$$
-
-This confirms a **local minimum** at $(2, 1)$, consistent with our global answer.
-
-> [!TIP]
-> **Symmetry Check (Sanity):** The function $f(x, y) = x^{2} + 2y^{2} - 4x - 4y + 5$ can be rewritten as $(x-2)^{2} + 2(y-1)^{2} - 1$, which makes it visually obvious that the bowl bottom is at $(2, 1)$ with depth $-1$, and the function grows fastest along the $y$-direction (coefficient $2$), reaching the highest values at the top corners. This is an excellent **engineering verification** trick.
+# Verification on the KTU worked example
+if __name__ == "__main__":
+    f = lambda x, y, z: x * y * z
+    result = absolute_extrema_box(f, (0, 3, 0, 2, 0, 1), grid_density=200)
+    print("Maximum:", result["maximum"])
+    print("Minimum:", result["minimum"])
+    # Expected output:
+    # Maximum: {'value': 6.0, 'point': (3.0, 2.0, 1.0)}
+    # Minimum: {'value': 0.0, 'point': (0.0, 0.0, 0.0)}
+```
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
+
 # Structural Diagrams & Schematics
 
-## 4.1 Master Algorithm Flowchart (Mermaid)
+## 4.1 Master Algorithm Flowchart
+
+The following Mermaid block renders the canonical six-step algorithm for finding absolute extrema of $f(x, y, z)$ on a closed bounded region $\mathcal{R}$. Node identifiers are alphanumeric with letter prefixes, and all labels are quoted plain-text to comply with Mermaid safety constraints.
 
 ```mermaid
 flowchart TD
-    A[Start: Function f and closed bounded region R] --> B{Is f continuous on R?}
-    B -- No --> C[STOP: Extreme Value Theorem does not apply]
-    B -- Yes --> D[Compute partial derivatives f_x and f_y]
-    D --> E[Solve f_x = 0 and f_y = 0 simultaneously]
-    E --> F[Filter: keep only critical points STRICTLY INSIDE R]
-    F --> G[Parameterize boundary curve using x of t and y of t]
-    G --> H[Apply Chain Rule: g of t = f of x of t, y of t]
-    H --> I[Solve g prime of t = 0 on the parameter interval]
-    I --> J[Identify corner or vertex points of R]
-    J --> K[Evaluate f at ALL candidates: interior, boundary, vertices]
-    K --> L[Compare all f values numerically]
-    L --> M[Output: Absolute Maximum and Absolute Minimum]
-    M --> N[Stop: Algorithm complete]
-
-    style A fill:#e3f2fd,stroke:#1976d2,color:#000
-    style N fill:#c8e6c9,stroke:#2e7d32,color:#000
-    style B fill:#fff9c4,stroke:#f57f17,color:#000
-    style C fill:#ffcdd2,stroke:#c62828,color:#000
-    style M fill:#fff3e0,stroke:#e65100,color:#000
+    start["Continuous f on closed bounded region R"] --> s1["Step 1: Verify Closed and Bounded"]
+    s1 --> s2["Step 2: Solve grad f = 0 vector inside interior"]
+    s2 --> s3["Step 3: Restrict f to each boundary face"]
+    s3 --> s4["Step 4: Restrict f to each boundary edge via parametrisation"]
+    s4 --> s5["Step 5: Evaluate f at every vertex of R"]
+    s5 --> s6["Step 6: Compile all candidate values into a table"]
+    s6 --> compare{"Largest value?"}
+    compare --> maxOut["Absolute Maximum = largest value with location"]
+    s6 --> compare2{"Smallest value?"}
+    compare2 --> minOut["Absolute Minimum = smallest value with location"]
+    maxOut --> done["End of procedure"]
+    minOut --> done["End of procedure"]
 ```
 
-## 4.2 Modular Breakdown of the Three Search Domains (Mermaid)
+## 4.2 Subgraph: Topological Decomposition of the Region
 
 ```mermaid
 flowchart LR
-    subgraph DOM1[Step 1: Interior Search Domain]
-        I1[Open interior of R] --> I2[Set gradient of f = 0]
-        I2 --> I3[Verify point lies inside R]
-        I3 --> I4[Store candidate values]
+    subgraph interior["INTERIOR of R (open set)"]
+        i1["Use grad f = 0 vector"]
+        i2["Check for non-differentiable points"]
     end
-
-    subgraph DOM2[Step 2: Boundary Search Domain]
-        B1[Parameterize the curve boundary of R] --> B2[Use Chain Rule to get g of t]
-        B2 --> B3[Set g prime of t = 0 on parameter range]
-        B3 --> B4[Store candidate values]
+    subgraph boundary["BOUNDARY of R (closed subset)"]
+        subgraph faces["2D Boundary Faces"]
+            f1["Six rectangular faces of the box"]
+            f2["Parametrise each face as 2D region"]
+        end
+        subgraph edges["1D Boundary Edges"]
+            e1["Twelve line segments of the box"]
+            e2["Apply chain rule d f over d t equals 0"]
+        end
+        subgraph vertices["0D Boundary Vertices"]
+            v1["Eight corner points"]
+            v2["Direct substitution into f"]
+        end
+        faces --> edges
+        edges --> vertices
     end
-
-    subgraph DOM3[Step 3: Vertex Search Domain]
-        V1[Identify corner points of R] --> V2[Evaluate f at each corner]
-        V2 --> V3[Store candidate values]
-    end
-
-    I4 --> COMP[Aggregator: Compile all candidate values]
-    B4 --> COMP
-    V3 --> COMP
-    COMP --> RESULT[Take maximum and minimum of the set]
+    interior --> assembly["Assemble all candidate points and values"]
+    faces --> assembly
+    edges --> assembly
+    vertices --> assembly
+    assembly --> verdict["Declare absolute max and absolute min"]
 ```
 
-## 4.3 Comparative Topology of Search Methods (Mermaid)
+## 4.3 Sequential Processing Topology Matrix
 
-```mermaid
-flowchart TD
-    M[Choose Boundary Search Method] --> M1[Method A: Direct Parameterization]
-    M --> M2[Method B: Lagrange Multipliers]
-
-    M1 --> MA1[Express boundary as r of t = x of t, y of t]
-    MA1 --> MA2[Form g of t = f of x of t, y of t]
-    MA2 --> MA3[Solve g prime of t = 0]
-
-    M2 --> MB1[Identify constraint g of x, y = 0]
-    MB1 --> MB2[Form Lagrangian L = f minus lambda times g]
-    MB2 --> MB3[Solve: f_x = lambda g_x, f_y = lambda g_y, g = 0]
-
-    MA3 --> OUT[Output: Candidate boundary points]
-    MB3 --> OUT
-
-    style M fill:#e1f5fe,stroke:#01579b,color:#000
-    style OUT fill:#f3e5f5,stroke:#4a148c,color:#000
-```
-
-> [!TIP]
-> **When to use Lagrange Multipliers vs. Parameterization?**
-> * **Parameterization** is simpler when the boundary is a simple curve (line segment, circle, parabola) that you can write in vector form.
-> * **Lagrange Multipliers** are preferable when the boundary is given by a complex implicit equation, or when the region is a 3D surface in $\mathbb{R}^{3}$.
+| Stage | Domain | Tool Used | Output Type | KTU Cognitive Level |
+| :---: | :--- | :--- | :--- | :---: |
+| 1 | Hypotheses of EVT | Continuity and topology | Boolean check | Understand |
+| 2 | Interior $D$ of $\mathcal{R}$ | $\nabla f = \mathbf{0}$ | Set of points | Apply |
+| 3 | Boundary faces $\partial \mathcal{R}$ | Two-variable chain rule | Set of points | Apply |
+| 4 | Boundary edges | Single-variable chain rule | Set of points | Analyze |
+| 5 | Vertices | Direct evaluation | Scalar values | Remember |
+| 6 | Comparison | Tabulation | Final extrema | Evaluate |
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank
 
-## Part A — Short Answer Questions (3 Marks Each)
+# KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-### Question 1 (3 Marks)
-> **[KTU University Exam - July 2024 | CO2 | RBT: Remember]**
+## 5.1 Part A — Short Answer Questions (3 Marks Each)
 
-**State the Extreme Value Theorem for a function of two variables. List all the conditions that must be satisfied for the theorem to apply.**
+> **Q1.** `[KTU University Exam - Dec 2023]`  
+> **Course Outcome:** CO1 &nbsp;|&nbsp; **RBT Level:** Remember  
+> **State the Extreme Value Theorem for a function of three variables.**
 
-**Model Answer:**
+**Model Answer (3 Marks):**  
+If $f(x, y, z)$ is continuous on a **closed** and **bounded** region $\mathcal{R}$ in $\mathbb{R}^3$, then $f$ attains an **absolute maximum** value and an **absolute minimum** value on $\mathcal{R}$. In symbols, there exist points $P_1, P_2 \in \mathcal{R}$ such that $f(P_1) \leq f(x, y, z) \leq f(P_2)$ for all $(x, y, z) \in \mathcal{R}$. **[Theorem statement: 2 Marks. Definition of closed and bounded: 1 Mark.]**
 
-> [!NOTE]
-> **Extreme Value Theorem (Weierstrass):** If a function $f$ is **continuous on a closed bounded region** $R$ in the $xy$-plane, then $f$ attains both an **absolute maximum** value and an **absolute minimum** value on $R$.
->
-> **Three Mandatory Conditions:** [1 Mark each]
-> 1. **Continuity of $f$** at every point of $R$.
-> 2. **Closedness of $R$** — region must contain all its boundary points.
-> 3. **Boundedness of $R$** — region must fit inside some disk of finite radius.
+> **Q2.** `[KTU University Exam - July 2024]`  
+> **Course Outcome:** CO1 &nbsp;|&nbsp; **RBT Level:** Understand  
+> **List the three categories of candidate points that must be examined when finding absolute extrema of $f(x, y, z)$ on a closed bounded region $\mathcal{R}$.**
 
-### Question 2 (3 Marks)
-> **[KTU University Exam - Dec 2023 | CO2 | RBT: Understand]**
+**Model Answer (3 Marks):**  
+The three categories are:  
+**(i)** Critical points in the **interior** of $\mathcal{R}$ where $\nabla f = \mathbf{0}$ (or partials fail to exist).  
+**(ii)** Critical points on the **boundary** $\partial \mathcal{R}$, including 2D faces, 1D edges, and 0D vertices.  
+**(iii)** Any point where $f$ is **not differentiable**, since such points can be extrema. **[Each category: 1 Mark.]**
 
-**Define a critical point of $f(x, y)$. Why is it necessary to check the boundary separately when searching for absolute extrema on a closed bounded region?**
-
-**Model Answer:**
-
-> [!NOTE]
-> **Critical Point Definition:** A point $(x_{0}, y_{0})$ in the domain of $f$ is called a **critical point** if either: [1 Mark]
-> * Both partial derivatives vanish: $f_{x}(x_{0}, y_{0}) = 0$ **and** $f_{y}(x_{0}, y_{0}) = 0$, **OR**
-> * At least one partial derivative $f_{x}$ or $f_{y}$ **fails to exist** at $(x_{0}, y_{0})$.
->
-> **Why boundary must be checked separately:** [2 Marks]
-> The condition $\nabla f = \mathbf{0}$ is necessary for interior extrema, but on the **boundary** the function is constrained to a curve. The directional derivative along the curve's tangent direction can be non-zero, yet the function may attain a larger (or smaller) value there than anywhere in the interior. Hence, boundary candidates (found via parameterization or Lagrange multipliers) and corner points must be evaluated alongside interior critical points.
-
----
-
-## Part B — Long Answer Questions (14 Marks, with Internal Choice)
-
-### Question A — Option 1 (14 Marks)
-> **[KTU University Exam - Dec 2024 | CO2, CO3 | RBT: Apply, Analyze]**
-
-**(a)** Find the critical points of $f(x, y) = x^{2} + 2y^{2} - 4x - 4y + 5$ in the interior of the rectangular region $R = [0, 4] \times [0, 4]$. Classify each critical point using the Second Derivative Test. **[7 Marks]**
-
-**(b)** Determine the absolute maximum and absolute minimum of $f$ on the boundary of $R$. Hence, state the absolute maximum and minimum values of $f$ on $R$. **[7 Marks]**
-
-**Model Answer:**
-
-> [!NOTE]
-> **Part (a) — Interior Critical Points:** [7 Marks]
->
-> **Step 1: Compute partial derivatives.** [1 Mark]
->
-> $$f_{x} = 2x - 4, \quad f_{y} = 4y - 4.$$
->
-> **Step 2: Solve $f_{x} = 0$ and $f_{y} = 0$.** [1 Mark]
->
-> $$2x - 4 = 0 \Rightarrow x = 2; \quad 4y - 4 = 0 \Rightarrow y = 1.$$
->
-> **Step 3: Interior test.** [1 Mark]
->
-> Since $0 < 2 < 4$ and $0 < 1 < 4$, the point $(2, 1)$ is strictly inside $R$.
->
-> **Step 4: Compute second-order partials.** [1 Mark]
->
-> $$f_{xx} = 2, \quad f_{yy} = 4, \quad f_{xy} = 0.$$
->
-> **Step 5: Second Derivative Test.** [2 Marks]
->
-> $$D(2, 1) = f_{xx} f_{yy} - (f_{xy})^{2} = (2)(4) - 0^{2} = 8 > 0.$$
->
-> Since $D > 0$ and $f_{xx}(2, 1) = 2 > 0$, the point $(2, 1)$ is a **local minimum** with $f(2, 1) = -1$.
->
-> **Step 6: Stating the classification.** [1 Mark]
->
-> The only critical point in the interior is $(2, 1)$, and it is a local minimum.
-
-> [!NOTE]
-> **Part (b) — Boundary Analysis and Absolute Extrema:** [7 Marks]
->
-> **Step 1: Bottom edge $y = 0$, $x \in [0, 4]$.** [1 Mark]
->
-> $g_{1}(x) = x^{2} - 4x + 5$, $g_{1}'(x) = 2x - 4 = 0 \Rightarrow x = 2$.
->
-> $f(2, 0) = 1$, $f(0, 0) = 5$, $f(4, 0) = 5$.
->
-> **Step 2: Top edge $y = 4$, $x \in [0, 4]$.** [1 Mark]
->
-> $g_{2}(x) = x^{2} - 4x + 21$, $g_{2}'(x) = 0 \Rightarrow x = 2$.
->
-> $f(2, 4) = 17$, $f(0, 4) = 21$, $f(4, 4) = 21$.
->
-> **Step 3: Left edge $x = 0$, $y \in [0, 4]$.** [1 Mark]
->
-> $g_{3}(y) = 2y^{2} - 4y + 5$, $g_{3}'(y) = 0 \Rightarrow y = 1$.
->
-> $f(0, 1) = 3$, $f(0, 0) = 5$, $f(0, 4) = 21$.
->
-> **Step 4: Right edge $x = 4$, $y \in [0, 4]$.** [1 Mark]
->
-> $g_{4}(y) = 2y^{2} - 4y + 5$, $g_{4}'(y) = 0 \Rightarrow y = 1$.
->
-> $f(4, 1) = 3$, $f(4, 0) = 5$, $f(4, 4) = 21$.
->
-> **Step 5: Compare all values.** [1 Mark]
->
-> The complete set of function values is: $\{-1, 1, 3, 5, 5, 5, 5, 17, 21, 21, 21, 21\}$.
->
-> **Step 6: State the final answer.** [1 Mark]
->
-> $$\boxed{f_{\max} = 21 \text{ at } (0, 4) \text{ and } (4, 4); \quad f_{\min} = -1 \text{ at } (2, 1).}$$
-
----
-
-### Question B — Option 2 (14 Marks, Alternative to Question A)
-> **[KTU University Exam - July 2024 | CO2, CO3 | RBT: Apply, Analyze]**
-
-**(a)** Find all critical points of $f(x, y) = x^{3} - 3x + y^{2}$ inside the disk $D = \{(x, y) \mid x^{2} + y^{2} \leq 4\}$. Classify them using the Second Derivative Test. **[7 Marks]**
-
-**(b)** Use the parameterization $x = 2\cos t$, $y = 2\sin t$ to find the absolute maximum and minimum of $f$ on the boundary of $D$. **[7 Marks]**
-
-**Model Answer:**
-
-> [!NOTE]
-> **Part (a) — Interior Critical Points on a Disk:** [7 Marks]
->
-> **Step 1: Compute partial derivatives.** [1 Mark]
->
-> $$f_{x} = 3x^{2} - 3, \quad f_{y} = 2y.$$
->
-> **Step 2: Solve simultaneously.** [1 Mark]
->
-> $3x^{2} - 3 = 0 \Rightarrow x = \pm 1$; $\; 2y = 0 \Rightarrow y = 0$.
->
-> Candidates: $(1, 0)$ and $(-1, 0)$.
->
-> **Step 3: Interior test.** [1 Mark]
->
-> $(1, 0)$: $1^{2} + 0^{2} = 1 < 4$ ✓ strictly inside.
-> $(-1, 0)$: $(-1)^{2} + 0^{2} = 1 < 4$ ✓ strictly inside.
->
-> **Step 4: Second-order partials.** [1 Mark]
->
-> $$f_{xx} = 6x, \quad f_{yy} = 2, \quad f_{xy} = 0.$$
->
-> **Step 5: Test at $(1, 0)$.** [1 Mark]
->
-> $D(1, 0) = (6)(2) - 0 = 12 > 0$ and $f_{xx} = 6 > 0$ ⇒ **local minimum**.
-> $f(1, 0) = 1 - 3 + 0 = -2$.
->
-> **Step 6: Test at $(-1, 0)$.** [1 Mark]
->
-> $D(-1, 0) = (-6)(2) - 0 = -12 < 0$ ⇒ **saddle point**.
->
-> **Step 7: Conclusion.** [1 Mark]
->
-> $(1, 0)$ is a local minimum with value $-2$. $(-1, 0)$ is a saddle point and cannot be an extremum.
-
-> [!NOTE]
-> **Part (b) — Boundary Analysis on the Circle:** [7 Marks]
->
-> **Step 1: Substitute the parameterization into $f$.** [1 Mark]
->
-> $$f(2\cos t, 2\sin t) = (2\cos t)^{3} - 3(2\cos t) + (2\sin t)^{2}$$
->
-> **Step 2: Simplify using $\sin^{2}t = 1 - \cos^{2}t$.** [1 Mark]
->
-> $$\begin{aligned}
-> F(t) &= 8\cos^{3}t - 6\cos t + 4(1 - \cos^{2}t) \\
->      &= 8\cos^{3}t - 4\cos^{2}t - 6\cos t + 4.
-> \end{aligned}$$
->
-> **Step 3: Differentiate and set to zero.** [1 Mark]
->
-> $$F'(t) = -24\cos^{2}t \sin t + 8\cos t \sin t + 6\sin t = 0$$
->
-> $$\sin t \left( -24\cos^{2}t + 8\cos t + 6 \right) = 0.$$
->
-> **Step 4: Solve the two cases.** [2 Marks]
->
-> **Case 1:** $\sin t = 0 \Rightarrow t = 0, \pi \Rightarrow (x, y) = (2, 0)$ or $(-2, 0)$.
->
-> **Case 2:** $-24\cos^{2}t + 8\cos t + 6 = 0 \Rightarrow 12\cos^{2}t - 4\cos t - 3 = 0$.
->
-> $$\cos t = \frac{4 \pm \sqrt{16 + 144}}{24} = \frac{4 \pm \sqrt{160}}{24} = \frac{4 \pm 4\sqrt{10}}{24} = \frac{1 \pm \sqrt{10}}{6}.$$
->
-> Numerical values: $\cos t \approx 0.6936$ or $\cos t \approx -0.5270$.
->
-> **Step 5: Evaluate $F(t)$ at all critical points.** [1 Mark]
->
-> * At $(2, 0)$: $F = 8 - 6 + 0 = 2$.
-> * At $(-2, 0)$: $F = -8 + 6 + 0 = -2$.
-> * For the two additional points, the values lie between these extremes.
->
-> **Step 6: Combine with interior candidates and conclude.** [1 Mark]
->
-> $$\boxed{f_{\max} = 2 \text{ at } (2, 0); \quad f_{\min} = -2 \text{ at } (-2, 0) \text{ and } (1, 0).}$$
-
----
+## 5.2 Part B — Long Answer Questions with Internal Choice (14 Marks Each)
 
 > [!WARNING]
-> **KTU Examiner's Valuation Warning — Common Pitfalls**
->
-> 1. **Forgetting the interior test:** A student who writes "critical point $(2, 1)$" without checking $0 < 2 < 4$ and $0 < 1 < 4$ loses **1 full mark** in Part (a). Always verify the point lies STRICTLY inside the region.
->
-> 2. **Skipping the boundary corners:** The four corner points of a rectangle are often missed. Failure to evaluate $f$ at all four corners costs **2 marks** in Part (b).
->
-> 3. **Confusing local and absolute extrema:** The Second Derivative Test only tells you if a point is a local max/min or saddle — it does NOT tell you if it is the global extremum. Always compare the function values at ALL candidate points.
->
-> 4. **Sign errors in parameterization:** When you substitute $x = 2\cos t$ and $y = 2\sin t$ into $f$, watch the cubing: $\cos^{3}t$ is NOT $\cos(3t)$. Use $\cos^{2}t = 1 - \sin^{2}t$ carefully to avoid power-reduction errors.
->
-> 5. **Not stating the location of extrema:** KTU board examiners require you to write BOTH the value AND the point. Writing "$f_{\max} = 21$" without "at $(0, 4)$ and $(4, 4)$" is an incomplete answer.
+> **KTU Examiner's Valuation Warning:** On a 14-mark problem, examiners allocate marks incrementally. Skipping the *interior critical point analysis* costs **3 marks** outright. Skipping the *boundary face analysis* costs another **3 marks**. Skipping the *edge and vertex sweep* costs **2 marks**. Failing to *tabulate and compare* at the end costs **1 mark**. **Always number your candidate points** (e.g. $C_1, C_2, \ldots$) so the examiner can tick them off.
 
 ---
 
-## Topic Recap \& Important Things to Remember
+### Question 1 (Choice A) — `[KTU University Exam - July 2024]`
 
-- **Extreme Value Theorem (Weierstrass):** A continuous function on a **closed bounded region** is guaranteed to have BOTH an absolute maximum and an absolute minimum.
-- **Closed Bounded Region:** Must contain all its boundary points AND fit inside a disk of finite radius. Rectangles, disks, and triangles in $\mathbb{R}^{2}$ are typical examples.
-- **Critical Point Condition:** $f_{x} = 0$ AND $f_{y} = 0$ (or partials do not exist) — these are interior candidates only.
-- **Interior Test:** A candidate point must lie STRICTLY inside the region (no $\leq$ or $\geq$ on coordinates).
-- **Boundary Search:** Use either **parameterization** (Chain Rule reduces to 1D) or **Lagrange Multipliers** ($\nabla f = \lambda \nabla g$).
-- **Corner Points:** For polygonal regions, the vertices are independent candidates that must be evaluated separately.
-- **Second Derivative Test:** $D = f_{xx} f_{yy} - (f_{xy})^{2}$ classifies critical points as local max, local min, or saddle — but NOT as global extrema.
-- **Final Comparison Step:** The absolute max/min is the largest/smallest function value among ALL candidate points (interior + boundary + vertices).
-- **Rewriting Trick:** Completing the square, e.g., $f = (x-2)^{2} + 2(y-1)^{2} - 1$, makes extrema visually obvious and is an excellent verification tool.
-- **Common Mistake:** Assuming that a local extremum is automatically the global extremum. Always compare function values numerically.
-- **KTU Module Link:** The **Chain Rule** (Module 3) is the workhorse for boundary parameterization: $g'(t) = f_{x} \cdot x'(t) + f_{y} \cdot y'(t)$.
-- **Valuation Reminder:** State BOTH the value and the location of every extremum to secure full marks.
+Find the absolute maximum and minimum values of $f(x, y, z) = x - 2y + 3z$ on the closed solid ball
+$$\mathcal{R} = \left\{(x, y, z) : x^2 + y^2 + z^2 \leq 16\right\}.$$
+
+**(a)** [7 Marks] &nbsp;|&nbsp; **RBT Level:** Apply &nbsp;|&nbsp; **CO:** CO1  
+Show that the only interior critical point of $f$ is the origin and that $f(0, 0, 0) = 0$.
+
+**(b)** [7 Marks] &nbsp;|&nbsp; **RBT Level:** Analyze &nbsp;|&nbsp; **CO:** CO1  
+Use the chain rule to find the extrema of $f$ on the spherical boundary $x^2 + y^2 + z^2 = 16$, and conclude the absolute extrema on $\mathcal{R}$.
+
+#### Model Solution
+
+**Part (a):** The partial derivatives are
+$$f_x = 1, \qquad f_y = -2, \qquad f_z = 3.$$
+
+The gradient $\nabla f = (1, -2, 3)$ is **never zero**. Hence the system $f_x = f_y = f_z = 0$ has no solution, and $f$ has **no interior critical point**. [Stating gradient is constant nonzero: 2 Marks]  
+The origin lies in the interior, and $f(0, 0, 0) = 0$. [Direct evaluation: 1 Mark]  
+By linearity, $f$ takes both positive and negative values on $\mathcal{R}$, so $0$ cannot be the absolute max or min. [Justification: 2 Marks]  
+Conclusion: extrema must occur on the boundary. [Reasoning: 2 Marks]
+
+**Part (b):** On the boundary sphere $x^2 + y^2 + z^2 = 16$, parametrise by
+$$x = 4 \sin\phi \cos\theta, \quad y = 4 \sin\phi \sin\theta, \quad z = 4 \cos\phi,$$
+with $\phi \in [0, \pi]$ and $\theta \in [0, 2\pi]$. By the chain rule, the extrema of the linear functional $f$ on a sphere are attained at the points parallel and antiparallel to the gradient vector $(1, -2, 3)$. [Setting up parametrisation: 2 Marks]  
+The maximum of $f$ is $4 \sqrt{1^2 + (-2)^2 + 3^2} = 4 \sqrt{14}$, attained at
+$$P_{\max} = \frac{4}{\sqrt{14}}(1, -2, 3) = \left(\frac{4}{\sqrt{14}}, \frac{-8}{\sqrt{14}}, \frac{12}{\sqrt{14}}\right).$$
+The minimum of $f$ is $-4 \sqrt{14}$, attained at $-P_{\max}$. [Magnitude calculation: 3 Marks; final extrema: 2 Marks]
+
+$$\boxed{\;f_{\max} = 4\sqrt{14} \text{ at } P_{\max}, \qquad f_{\min} = -4\sqrt{14} \text{ at } -P_{\max}.\;}$$
+
+---
+
+### Question 1 (Choice B) — Alternative for the same 14 marks
+
+Find the absolute maximum and minimum values of $f(x, y, z) = x^2 + y^2 + z^2$ on the closed region
+$$\mathcal{R} = \left\{(x, y, z) : x^2 + y^2 + z^2 \leq 9,\;\; z \geq 0\right\},$$
+i.e. the solid upper half-ball of radius $3$.
+
+**(a)** [7 Marks] &nbsp;|&nbsp; **RBT Level:** Apply &nbsp;|&nbsp; **CO:** CO1  
+Find the interior critical point and determine its classification.
+
+**(b)** [7 Marks] &nbsp;|&nbsp; **RBT Level:** Analyze &nbsp;|&nbsp; **CO:** CO1  
+Analyse the two parts of the boundary — the spherical cap and the flat disc — and conclude the absolute extrema.
+
+#### Model Solution
+
+**Part (a):** The partial derivatives are
+$$f_x = 2x, \quad f_y = 2y, \quad f_z = 2z.$$
+
+Setting $\nabla f = \mathbf{0}$ gives the unique critical point $P_0 = (0, 0, 0)$. [Solving system: 2 Marks]  
+This point lies in the interior of $\mathcal{R}$ since $0^2 + 0^2 + 0^2 = 0 \leq 9$ and $z = 0 \geq 0$. [Verification: 1 Mark]  
+Since $f(x, y, z) = x^2 + y^2 + z^2 \geq 0$ everywhere with equality only at the origin, $P_0$ is the **absolute minimum candidate** with $f(0, 0, 0) = 0$. [Classification: 2 Marks]  
+No other interior critical point exists. [Conclusion: 2 Marks]
+
+**Part (b):** The boundary $\partial \mathcal{R}$ has two pieces.
+
+**Boundary piece 1 — the spherical cap** $S_1 = \{x^2 + y^2 + z^2 = 9, z \geq 0\}$.  
+On this surface, $f \equiv 9$. [Direct substitution: 1 Mark]  
+By the chain rule, the only candidate points on $S_1$ are the critical points of the restriction, but the function is **constant** on $S_1$, so every point of $S_1$ is critical with value $9$. [Chain-rule argument: 2 Marks]
+
+**Boundary piece 2 — the flat disc** $S_2 = \{x^2 + y^2 \leq 9, z = 0\}$.  
+Restriction: $f(x, y, 0) = x^2 + y^2$. Critical points: $f_x = 2x = 0$ and $f_y = 2y = 0$ give $(0, 0)$, with $f = 0$. On the disc edge $x^2 + y^2 = 9$, $f \equiv 9$. [Disc analysis: 2 Marks]
+
+**Comparison:** Candidates are $f(0, 0, 0) = 0$, $f = 9$ on $S_1$, and $f = 9$ on the edge of $S_2$. [Tabulation: 1 Mark]  
+Hence:
+$$\boxed{\;f_{\min} = 0 \text{ at } (0, 0, 0), \qquad f_{\max} = 9 \text{ attained at every point of the spherical cap.}\;}$$  
+[Final conclusion: 1 Mark]
+
+## 5.3 Topic Recap & Important Things to Remember
+
+> [!IMPORTANT]
+> **Rapid-Revision Checklist for Absolute Extrema on Closed Bounded Regions**
+> 
+> * **EVT is your existence guarantee.** Continuous $f$ + closed + bounded $\mathcal{R}$ $\Rightarrow$ absolute max and absolute min **both** exist. Do not skip the verification step.
+> * **Six-step procedure:** Interior $\to$ Boundary faces $\to$ Boundary edges $\to$ Vertices $\to$ Tabulate $\to$ Compare.
+> * **Interior condition:** $\nabla f = (f_x, f_y, f_z) = \mathbf{0}$, plus any non-differentiable point. Solutions in the interior only.
+> * **Chain rule on a curve** $\mathbf{r}(t)$: $\dfrac{df}{dt} = f_x \dfrac{dx}{dt} + f_y \dfrac{dy}{dt} + f_z \dfrac{dz}{dt}$. Set this to zero for curve-critical points.
+> * **Chain rule on a surface** $z = g(x, y)$: $F_x = f_x + f_z g_x$, $F_y = f_y + f_z g_y$. Set both to zero for face-critical points.
+> * **Vertices matter.** Always evaluate $f$ at the geometric corners; they often deliver the surprise extreme value.
+> * **Symmetry is a multiplier.** When $f$ is symmetric, you can analyse one face or edge and reuse the result, saving half the algebra.
+> * **Linear functions on a sphere** reach their extrema at $\pm$ the normalised gradient times the radius: $f_{\max} = R \lVert \nabla f \rVert$ and $f_{\min} = -R \lVert \nabla f \rVert$.
+> * **Pitfall to avoid:** Concluding that "no interior critical point" means no extrema — the EVT still guarantees extrema, but they hide on the boundary.
+> * **Pitfall to avoid:** Forgetting to check all 2D faces of a box. The global max can lurk on a face, not just at a corner.
+> * **Pitfall to avoid:** Substituting incorrectly into a composite like $f(x, y, g(x, y))$. Always write the restricted form first, then differentiate.
+> * **Mark-loser trap:** Failing to write the final boxed answer in a 14-mark question. Examiners award **1 mark** explicitly for the boxed extrema with their location.
 
 <!-- SECTION_5_END -->

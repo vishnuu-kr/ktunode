@@ -1,0 +1,43 @@
+{
+  "course_name": "TOPICS IN THEORETICAL COMPUTER SCIENCE",
+  "course_code": "PECST795",
+  "module_number": 1,
+  "module_title": "Spectral graph theory",
+  "topics_generated": [
+    {
+      "title": "Spectral Graph Theory - Introduction to Spectral Graph Theory",
+      "slug": "spectral-graph-theory-introduction-to-spectral-graph-theory",
+      "path": "spectral-graph-theory-introduction-to-spectral-graph-theory/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graph Laplacians: Definition and Properties",
+      "slug": "graph-laplacians-definition-and-properties",
+      "path": "graph-laplacians-definition-and-properties/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Eigenvalues and Eigenvectors of Laplacian matrices",
+      "slug": "eigenvalues-and-eigenvectors-of-laplacian-matrices",
+      "path": "eigenvalues-and-eigenvectors-of-laplacian-matrices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cheeger’s Inequality",
+      "slug": "cheeger-s-inequality",
+      "path": "cheeger-s-inequality/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graph Partitioning.",
+      "slug": "graph-partitioning",
+      "path": "graph-partitioning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

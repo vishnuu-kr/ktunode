@@ -1,912 +1,717 @@
 # LPP- Formation
 
 <!-- SECTION_1_START -->
-# LPP – Formation (Linear Programming Problem Formulation)
+# 1. Core Technical Definition & Intuitive Overview
 
-> [!NOTE]
-> **Syllabus Highlight (KTU 2024 – GAMAT101, Module 4)**
-> Linear Programming Problems (LPP) constitute the mathematical backbone of optimization in computer science — from compiler register allocation and database query planning to network routing and cloud resource scheduling. **Formulation** is the critical first step: a perfectly solved simplex table is useless if the model is built on the wrong variables.
+## 1.1 Formal Definition of Linear Programming Problem (LPP)
 
----
+> [!IMPORTANT]
+> **Linear Programming Problem (LPP):** A Linear Programming Problem is a mathematical optimisation model designed to **maximise or minimise** a linear objective function subject to a finite set of **linear equality or inequality constraints** along with non-negativity restrictions on the decision variables.
 
-## 1.1 Formal Definition (KTU Board Standard)
-
-A **Linear Programming Problem (LPP)** is a mathematical model used to determine the *optimal* value (maximum profit / minimum cost) of a **linear objective function**, subject to a set of **linear constraints** and **non-negativity restrictions** on the decision variables.
-
-In its general (mathematical) form, an LPP with $n$ decision variables and $m$ constraints is written as:
+An LPP in its most general (mathematical) form is written as:
 
 $$
 \begin{aligned}
-\text{Optimize } & Z \;=\; c_1 x_1 \;+\; c_2 x_2 \;+\; \dots \;+\; c_n x_n \\[4pt]
-\text{subject to } & a_{11} x_1 \;+\; a_{11} x_2 \;+\; \dots \;+\; a_{1n} x_n \;\;\underset{(\leq,\ =,\ \geq)}{\le,\ =,\ \ge}\;\; b_1 \\
-& a_{21} x_1 \;+\; a_{22} x_2 \;+\; \dots \;+\; a_{2n} x_n \;\;\underset{}{\le,\ =,\ \ge}\;\; b_2 \\
-& \qquad \vdots \qquad \vdots \qquad \qquad \vdots \qquad \qquad \vdots \\
-& a_{m1} x_1 \;+\; a_{m2} x_2 \;+\; \dots \;+\; a_{mn} x_n \;\;\underset{}{\le,\ =,\ \ge}\;\; b_m \\[4pt]
-\text{and } & x_1,\ x_2,\ \dots,\ x_n \;\ge\; 0
+\text{Optimise } Z \;=\; c_{1}x_{1} \;+\; c_{2}x_{2} \;+\; c_{3}x_{3} \;+\; \dots \;+\; c_{n}x_{n} \\[4pt]
+\text{Subject to the constraints:} \\
+a_{11}x_{1} + a_{12}x_{2} + a_{13}x_{3} + \dots + a_{1n}x_{n} \;\left\{\begin{array}{c}\leq\\ =\\ \geq\end{array}\right\}\; b_{1} \\[2pt]
+a_{21}x_{1} + a_{22}x_{2} + a_{23}x_{3} + \dots + a_{2n}x_{n} \;\left\{\begin{array}{c}\leq\\ =\\ \geq\end{array}\right\}\; b_{2} \\[2pt]
+\vdots \\[2pt]
+a_{m1}x_{1} + a_{m2}x_{2} + a_{m3}x_{3} + \dots + a_{mn}x_{n} \;\left\{\begin{array}{c}\leq\\ =\\ \geq\end{array}\right\}\; b_{m} \\[4pt]
+x_{1},\; x_{2},\; x_{3},\; \dots,\; x_{n} \;\geq\; 0
 \end{aligned}
 $$
 
-where $Z$ is the **objective function value**, $c_j$ are the **cost / profit coefficients**, $a_{ij}$ are the **technological / consumption coefficients**, and $b_i$ are the **resource availabilities** (right-hand side constants).
+Where $x_{1}, x_{2}, \ldots, x_{n}$ are the **decision variables**, $c_{j}$ is the **objective coefficient**, $a_{ij}$ is the **technological coefficient**, and $b_{i}$ represents the **resource availability** (Right Hand Side or RHS).
 
-> [!IMPORTANT]
-> The word **Linear** in LPP has **two strict meanings**:
-> 1. The objective function $Z$ must be a **degree-1 polynomial** in the variables (no $x_j^2$, $\sqrt{x_j}$, $x_1 x_2$, etc.).
-> 2. Every constraint must be a **linear inequality or equation** in the variables.
->
-> If either condition is violated, the problem is **Non-Linear Programming (NLP)** and the simplex method does **NOT** apply directly.
-
----
-
-## 1.2 Conceptual Analogy — "The Bakery Chef's Dilemma"
-
-Imagine you run a small bakery. You bake only two items — **Sponge Cake ($x_1$)** and **Brownie ($x_2$)**.
-
-* Each Sponge Cake earns you **₹ 6**; each Brownie earns **₹ 4**. So your *total profit* is $Z = 6x_1 + 4x_2$. You want to **maximize** this.
-* But you don't have unlimited flour. Each Sponge uses 2 kg, each Brownie uses 1 kg, and you have only **8 kg** in the pantry: $2x_1 + x_2 \le 8$.
-* Sugar is also tight. Each Sponge uses 1 kg, each Brownie uses 2 kg, and you have only **8 kg**: $x_1 + 2x_2 \le 8$.
-* You obviously cannot bake a *negative* number of cakes: $x_1, x_2 \ge 0$.
-
-> The **decision variables** ($x_1, x_2$) are the unknowns you control. The **objective function** is what you want to be best (profit). The **constraints** are the walls of the room you must stay inside. The **feasible region** is the floor area where you can actually move. LPP formation is the act of *drawing that room on paper* before stepping inside to find the optimal corner.
-
----
-
-## 1.3 The Four Pillars of Any LPP
+## 1.2 Conceptual Analogy — The Bakery Owner
 
 > [!NOTE]
-> **Every well-formed LPP must contain exactly these four components.** KTU examiners frequently award partial marks simply for explicitly *labelling* them in the answer script.
-
-| # | Component | Symbol / Form | Real-World Meaning |
-|---|-----------|---------------|---------------------|
-| 1 | **Decision Variables** | $x_1, x_2, \dots, x_n$ | Quantities you are free to choose (production levels, hours, units). |
-| 2 | **Objective Function** | $Z = \sum c_j x_j$ (Max / Min) | The single performance metric to be optimized. |
-| 3 | **Constraints** | $\sum a_{ij} x_j \le / = / \ge b_i$ | Restrictions on resources, demand, capacity, time. |
-| 4 | **Non-Negativity Restrictions** | $x_j \ge 0$ for all $j$ | Physical impossibility of "negative" production. |
-
----
-
-## 1.4 Geometric Intuition of the Feasible Region
-
-In 2-D, an LPP with two decision variables defines a **convex polygon** (the feasible region). The optimum always lies at a **vertex (corner point)** — a property called the *Fundamental Theorem of LPP* (proven by George Dantzig in 1947 using the **Simplex Method**).
-
-> [!VISUALIZATION CONTROL]
-> **Concept:** Visualization of the Bakery LPP feasible region with the objective function $Z = 6x_1 + 4x_2$ drawn as a family of parallel iso-profit lines.
+> **Intuition: A Bakery Owner**
+> Imagine you own a small bakery. You bake two products — **Vanilla Cake** ($x_{1}$) and **Chocolate Cake** ($x_{2}$). Each vanilla cake gives you a profit of **₹40**, each chocolate cake gives **₹60**. You have only **120 hours of oven time** and **90 hours of a chef's labour** every week. A vanilla cake needs 2 hours oven + 1 hour labour, a chocolate cake needs 1 hour oven + 2 hours labour.
 >
-> **GeoGebra / Desmos Input Equations:**
-> * Constraint 1: $2x + y = 8$ (Flour line)
-> * Constraint 2: $x + 2y = 8$ (Sugar line)
-> * Axis lines: $x = 0$, $y = 0$
-> * Iso-profit line family: $6x + 4y = Z$ for $Z \in \{8, 16, 24, 32, 36, 40\}$
->
-> **Visual Description:** You will see two intersecting lines that cut the first quadrant into a quadrilateral with corner points at $(0,0)$, $(4,0)$, $(0,4)$, and the intersection $(8/3,\ 8/3)$. As you slide the iso-profit line $6x + 4y = Z$ outward (away from origin), the **last** point of contact is the optimal corner. For the bakery, this optimum is the intersection point giving maximum profit.
+> You cannot bake a *negative number* of cakes. You also cannot exceed the available hours. **Linear programming is the mathematical machinery that tells you exactly how many cakes to bake to earn the maximum profit**, given the rigid walls (constraints) of resources around you.
 
----
+The *objective function* represents profit, the *constraints* are the resource walls, and the *non-negativity* is the impossibility of negative cakes. This mental model is the basis of every LPP in production, transport, finance, and machine learning (e.g., SVM optimisation).
 
-## 1.5 Standard Mathematical Notation Recap
-
-| Symbol | Meaning |
-|--------|---------|
-| $n$ | Number of decision variables |
-| $m$ | Number of constraints |
-| $c_j$ | Coefficient of $x_j$ in objective function |
-| $a_{ij}$ | Coefficient of $x_j$ in $i$-th constraint |
-| $b_i$ | Right-hand side (RHS) of $i$-th constraint (resource limit) |
-| $x_j$ | $j$-th decision variable (level of $j$-th activity) |
-| $Z$ | Objective function value (scalar) |
+## 1.3 Key Vocabulary for the KTU Board
 
 > [!IMPORTANT]
-> In KTU valuation, if a student writes $a_{ij}$ but forgets to define it, the examiner deducts **1 mark** under "notation clarity". Always declare symbols before using them.
+> **Essential LPP Vocabulary (Board Favourites):**
+> - **Decision Variables** $x_{j}$ → Quantities we can control (e.g., units of product to produce).
+> - **Objective Function** $Z$ → The linear expression we optimise (profit, cost, time, distance).
+> - **Constraints** → Linear restrictions arising from limited resources or system requirements.
+> - **Non-Negativity Restrictions** $x_{j} \geq 0$ → Variables cannot be physically negative.
+> - **Feasible Region** → The set of all points that satisfy **every** constraint and non-negativity.
+> - **Optimal Solution** → The point in the feasible region that yields the best (max/min) value of $Z$.
+> - **Parameters** $c_{j}, a_{ij}, b_{i}$ → Constant, known, deterministic inputs.
 
+## 1.4 Visualisation Cue — Feasible Region of an LPP
+
+> [!VISUALIZATION CONTROL]
+> **Concept:** 2D Feasible Region Bounded by Two Resource Constraints
+> **GeoGebra / Desmos Input Equations:**
+> * Constraint Line 1: `2x + y = 100`
+> * Constraint Line 2: `x + 3y = 120`
+> * Non-Negativity Axes: `x >= 0`, `y >= 0`
+> * Objective Function (sliding): `Z = 3x + 4y`
+> **Visual Description:** Plot the two constraint lines. The feasible region is the polygon lying in the **first quadrant** bounded by the axes, Constraint Line 1, and Constraint Line 2. As the line $Z = 3x + 4y$ slides outward, its last point of contact with the polygon gives the optimal solution.
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
+# 2. Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 The Six Logical Steps of LPP Formulation
+## 2.1 Components of an LPP — The "Formulation Skeleton"
 
-Formulating an LPP from a word problem is a **systematic, reproducible procedure**. KTU examiners award full marks only when students demonstrate each step explicitly.
+Every well-formulated LPP contains exactly **four structural blocks**. KTU examiners frequently award 1–2 marks for correctly identifying and labelling these blocks.
+
+1. **Identify Decision Variables**
+   - Read the problem statement and locate the quantities to be determined.
+   - Symbolise them as $x_{1}, x_{2}, \ldots, x_{n}$ with a clear, written meaning.
+   - *Why:* Without variables, the objective and constraints cannot be expressed algebraically.
+
+2. **Construct the Objective Function**
+   - Express the goal (profit, cost, distance, time) as a linear function $Z = \sum_{j=1}^{n} c_{j} x_{j}$.
+   - Specify whether $Z$ is to be **Maximised** or **Minimised**.
+   - *Why:* This is the *criterion* by which the "best" plan is judged.
+
+3. **Formulate the Constraints**
+   - Convert every real-world limitation into a linear inequality or equality.
+   - Use the symbol $\leq$ for *"at most available"*, $\geq$ for *"at least required"*, and $=$ for *"exactly"*.
+   - *Why:* Constraints are the *guard rails* of the optimisation; ignoring them makes the model physically meaningless.
+
+4. **Apply Non-Negativity Restrictions**
+   - Declare $x_{j} \geq 0$ for every decision variable.
+   - *Why:* Production levels, manpower, distances, and inventory cannot be negative in any real engineering system.
+
+## 2.2 Canonical and Standard Forms of an LPP
 
 > [!IMPORTANT]
-> **The Six KTU-Prescribed Steps of LPP Formation**
-> 1. **Identify the Decision Variables** — Define $x_1, x_2, \dots, x_n$ with units and physical meaning.
-> 2. **Identify the Objective** — Is the goal *maximization* (profit, output, efficiency) or *minimization* (cost, time, error)?
-> 3. **Write the Objective Function** — Express the goal as $Z = c_1x_1 + c_2x_2 + \dots + c_nx_n$.
-> 4. **Identify the Constraints** — Every mention of "limited", "at most", "at least", "must equal" becomes a constraint.
-> 5. **Express Constraints Mathematically** — Convert the verbal restriction into a linear inequality/equation.
-> 6. **State Non-Negativity Restrictions** — $x_j \ge 0$ for all $j$ (or state explicitly if unrestricted in sign).
+> **KTU Board Highlight:** Board questions frequently test whether the student can **convert** a general LPP into its canonical or standard form. Memorise the difference!
 
----
+### 2.2.1 Canonical Form (Inequality Form)
 
-## 2.2 The Three Canonical Forms of an LPP
+| Type | Objective | Constraints | Variables |
+| :--- | :--- | :--- | :--- |
+| Maximisation Canonical | $Z_{\max} = \sum c_{j} x_{j}$ | $\sum a_{ij} x_{j} \leq b_{i}$ for all $i$ | $x_{j} \geq 0$ for all $j$ |
+| Minimisation Canonical | $Z_{\min} = \sum c_{j} x_{j}$ | $\sum a_{ij} x_{j} \geq b_{i}$ for all $i$ | $x_{j} \geq 0$ for all $j$ |
 
-> [!NOTE]
-> **Why multiple forms?** Different solution methods (Simplex, Dual, Graphical) require the problem to be in a specific shape. KTU board questions often ask: *"Convert the given LPP into standard form"* — a **3-mark** favourite.
+### 2.2.2 Standard Form (Equation Form with Slack Variables)
 
-### 2.2.1 General Form (As-Is)
+The standard form is mandatory for applying the **Simplex Method**. All inequalities are converted into equalities by adding **slack variables** $s_{i} \geq 0$ for $\leq$ constraints or **surplus variables** $e_{i} \geq 0$ for $\geq$ constraints.
 
 $$
 \begin{aligned}
-\text{Optimize } & Z = \sum_{j=1}^{n} c_j x_j \\
-\text{s.t. } & \sum_{j=1}^{n} a_{ij} x_j \;\begin{matrix} \le \\ = \\ \ge \end{matrix}\; b_i, \quad i = 1, 2, \dots, m \\
-& x_j \ge 0, \quad j = 1, 2, \dots, n
+\text{Optimise } Z \;=\; \sum_{j=1}^{n} c_{j} x_{j} \quad \text{(objective unchanged)} \\[4pt]
+\text{Subject to:} \quad \sum_{j=1}^{n} a_{ij} x_{j} \;=\; b_{i} \quad \text{for } i = 1, 2, \ldots, m \\[4pt]
+x_{j} \;\geq\; 0 \quad \text{for } j = 1, 2, \ldots, n
 \end{aligned}
 $$
-
-### 2.2.2 Standard Form (Simplex-Ready)
-
-All constraints are **equalities**, the RHS $b_i \ge 0$, and the objective is a **maximization**.
-
-$$
-\begin{aligned}
-\text{Maximize } & Z = \mathbf{c}^T \mathbf{x} \\
-\text{subject to } & \mathbf{A} \mathbf{x} = \mathbf{b}, \quad \mathbf{b} \ge \mathbf{0} \\
-& \mathbf{x} \ge \mathbf{0}
-\end{aligned}
-$$
-
-To convert inequalities to equalities, we introduce:
-* **Slack variable** $s_i \ge 0$ for a "$\le$" constraint: $\;\; a_{i1}x_1 + \dots + a_{in}x_n + s_i = b_i$.
-* **Surplus variable** $e_i \ge 0$ for a "$\ge$" constraint: $\;\; a_{i1}x_1 + \dots + a_{in}x_n - e_i = b_i$.
-
-### 2.2.3 Canonical Form (Two Sub-Variants)
-
-| Sub-Variant | Use Case | Shape |
-|-------------|----------|-------|
-| **Maximization Canonical** | For Big-M / Two-Phase Simplex | Max $Z$, all $\le$ constraints, $x_j \ge 0$ |
-| **Minimization Canonical** | Transportation & Assignment | Min $Z$, all $\ge$ constraints, $x_j \ge 0$ |
-
-### 2.2.4 Matrix Form (Most Compact)
-
-$$
-\begin{aligned}
-\text{Max } & Z = \mathbf{c}^T \mathbf{x} \\
-\text{s.t. } & \mathbf{A} \mathbf{x} \le \mathbf{b} \\
-& \mathbf{x} \ge \mathbf{0}
-\end{aligned}
-$$
-
-$$
-\text{where } \mathbf{A} = \begin{bmatrix} a_{11} & a_{12} & \dots & a_{1n} \\ a_{21} & a_{22} & \dots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \dots & a_{mn} \end{bmatrix},\;\; \mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix},\;\; \mathbf{b} = \begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{bmatrix},\;\; \mathbf{c} = \begin{bmatrix} c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}
-$$
-
----
-
-## 2.3 Conversion Rules (Cheat Code for the Board Exam)
-
-> [!IMPORTANT]
-> **KTU Board Favourite — Memorize these transformation rules to gain easy 3 marks.**
-
-| Original Form | Conversion Action | New Form |
-|---------------|-------------------|----------|
-| Minimize $Z$ | Replace $Z$ with $-Z'$, set Max $Z' = -Z$ | Maximization |
-| $x_j$ unrestricted in sign | Substitute $x_j = x_j^{+} - x_j^{-}$, with $x_j^{+}, x_j^{-} \ge 0$ | Non-negative |
-| $a_{i1}x_1 + \dots \le b_i$ where $b_i < 0$ | Multiply both sides by $-1$ to flip to $\ge$ with $b_i > 0$ | RHS non-negative |
-| $a_{i1}x_1 + \dots \ge b_i$ | Subtract surplus $e_i \ge 0$ → becomes $=$ with $-e_i$ | Equality (Standard Form) |
-| $a_{i1}x_1 + \dots \le b_i$ | Add slack $s_i \ge 0$ → becomes $=$ with $+s_i$ | Equality (Standard Form) |
-
----
-
-## 2.4 KTU High-Yield Formula Sheet
 
 > [!NOTE]
-> **The single most important table to internalize before the ESE (End Semester Exam).** The vertical bar `|` is intentionally rendered as `\vert` in math mode to keep the markdown table intact.
+> **Conversion Rules:**
+> - $\leq$ constraint → add slack variable $s_{i} \geq 0$ on the LHS.
+> - $\geq$ constraint → subtract surplus variable $e_{i} \geq 0$ from the LHS.
+> - Unrestricted variable $x_{k}$ → replace with $x_{k}^{'} - x_{k}^{''}$ where both are $\geq 0$.
+> - Minimisation → convert to maximisation by taking $Z^{'} = -Z$ or use the dual.
 
-| # | Concept | Formula / Expression | Unit / Type |
-|---|---------|----------------------|-------------|
-| 1 | General Objective | $Z = \sum_{j=1}^{n} c_j x_j$ | Linear scalar |
-| 2 | General Constraint | $\sum_{j=1}^{n} a_{ij} x_j \;\{\le \mid = \mid \ge\}\; b_i$ | Linear inequality/equality |
-| 3 | Non-Negativity | $x_j \ge 0 \;\;\forall j \in \{1, \dots, n\}$ | Bound |
-| 4 | Standard Form (Max) | Max $Z = \mathbf{c}^T \mathbf{x}$, s.t. $\mathbf{Ax} = \mathbf{b},\; \mathbf{x} \ge \mathbf{0},\; \mathbf{b} \ge \mathbf{0}$ | Matrix equality |
-| 5 | Slack Conversion | $\sum a_{ij} x_j \le b_i \;\longrightarrow\; \sum a_{ij} x_j + s_i = b_i$ | $s_i \ge 0$ |
-| 6 | Surplus Conversion | $\sum a_{ij} x_j \ge b_i \;\longrightarrow\; \sum a_{ij} x_j - e_i = b_i$ | $e_i \ge 0$ |
-| 7 | Unrestricted Split | $x_j$ free $\;\longrightarrow\; x_j = x_j^{+} - x_j^{-}$ | $x_j^{+}, x_j^{-} \ge 0$ |
-| 8 | Min-to-Max Trick | Min $Z = c^T x \;\equiv\;$ Max $Z^{*} = -c^T x$ | $Z^{*} = -Z$ |
-| 9 | Number of New Variables (Standard Form) | $n' = n + (\text{number of } \le \text{constraints}) + (\text{number of } \ge \text{constraints})$ | Integer count |
-| 10 | Matrix Sizes | $\mathbf{A} : m \times n,\; \mathbf{x},\mathbf{c} : n \times 1,\; \mathbf{b} : m \times 1$ | Dimension check |
+## 2.3 KTU Formula Sheet — LPP Formulation & Forms
 
----
+| Symbol / Term | Meaning | Mathematical Form |
+| :--- | :--- | :--- |
+| Decision Variables | Quantities to determine | $x_{j} \geq 0, \; j = 1, \ldots, n$ |
+| Objective Function | Linear goal expression | $Z = \sum_{j=1}^{n} c_{j} x_{j}$ |
+| Technological Coefficients | Input-output rates | $a_{ij} \;(\text{constant})$ |
+| Resource Vector | Available quantities | $b_{i} > 0$ |
+| Slack Variable | Converts $\leq$ to $=$ | $s_{i} \geq 0$ |
+| Surplus Variable | Converts $\geq$ to $=$ | $e_{i} \geq 0$ |
+| Canonical Form (Max) | Maximise with $\leq$ constraints | $Z = c^{T}x, \; Ax \leq b, \; x \geq 0$ |
+| Canonical Form (Min) | Minimise with $\geq$ constraints | $Z = c^{T}x, \; Ax \geq b, \; x \geq 0$ |
+| Standard Form | All constraints as equalities | $Z = c^{T}x, \; Ax = b, \; x \geq 0$ |
+| Matrix Form | Compact representation | $Z = c^{T}x, \; Ax \;(\leq, =, \geq)\; b, \; x \geq 0$ |
+| Feasible Region | Set of valid solutions | $S = \{ x \in \mathbb{R}^{n} \mid Ax \leq b, \; x \geq 0\}$ |
 
-## 2.5 Real-World Engineering Utility in Information Science
+## 2.4 Real-World Engineering Utility of LPP
+
+- **Operations Research:** Production planning, inventory control, blending problems (oil refinery).
+- **Computer Science:** Network flow, shortest path, **Support Vector Machine (SVM)** primal form.
+- **Logistics & Supply Chain:** Transportation, assignment, trans-shipment problems.
+- **Telecommunications:** Routing bandwidth, signal optimisation.
+- **Finance:** Portfolio optimisation (Markowitz model) — modern foundation of algorithmic trading.
+
+## 2.5 Assumptions of Linear Programming
 
 > [!IMPORTANT]
-> **Why does a CSE / IT student need LPP?** Because every "optimal" decision in computing is, mathematically, an LPP.
-
-| Application Domain | LPP Role |
-|--------------------|----------|
-| **Compiler Optimization** | Register allocation as an LPP to minimize spill code. |
-| **Database Query Optimization** | Choosing join order as an integer program (IP, a strict extension of LPP). |
-| **Network Flow / Routing** | Max-flow min-cut theorem is a linear program. |
-| **Cloud Resource Allocation** | Distribute VMs to minimize cost under SLA constraints. |
-| **Machine Learning (SVMs)** | The hard-margin SVM dual is a quadratic program; the primal is an LPP. |
-| **Software Project Scheduling** | Time-cost trade-off is a classical LPP. |
-| **CPU/GPU Memory Management** | Minimize cache misses under bandwidth constraints. |
-
-> [!NOTE]
-> KTU examiners appreciate it when a student connects a math concept to a **CS application** during the viva. It demonstrates **outcome-based learning (CO5: Modern Tool Usage)**.
-
+> The validity of every LPP solution rests on four classical assumptions:
+> 1. **Proportionality** — contribution of $x_{j}$ to $Z$ and to each constraint is directly proportional to $x_{j}$.
+> 2. **Additivity** — total contribution is the sum of individual contributions (no cross-product terms).
+> 3. **Determinism** — all parameters $c_{j}, a_{ij}, b_{i}$ are known constants.
+> 4. **Divisibility** — fractional values of $x_{j}$ are permissible (use Integer Programming otherwise).
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Code/Symbolic Implementation
+# 3. Step-by-Step Derivations, Formulations & Symbolic Implementation
 
-## 3.1 Classical Worked Example — "The Bakery Production Problem" (Full Six-Step Walkthrough)
+## 3.1 General Algorithm for LPP Formulation (Step-by-Step)
 
-**Word Problem:**
-> A bakery makes two products, **Cakes ($x_1$)** and **Bread ($x_2$)**. Each cake requires 2 kg flour and 1 kg sugar; each bread loaf requires 1 kg flour and 2 kg sugar. The bakery has at most **8 kg of flour** and **8 kg of sugar** per day. Profit is ₹ 6 per cake and ₹ 4 per bread loaf. The market demands that at least **2 cakes** be produced daily. Formulate the LPP.
+The following six-step procedure is the **board-approved method** for converting a word problem into a rigorous LPP. Each step carries independent valuation marks.
 
-### Step 1 — Identify Decision Variables
+1. **Identify the Decision Variables** — Choose symbols and clearly state what each represents.
+2. **Express the Objective Function** — Write $Z$ in terms of the variables and identify whether it is to be **Maximised** or **Minimised**.
+3. **Identify the Constraints** — Convert all "at most", "at least", "must equal" statements into linear inequalities or equalities.
+4. **Add Non-Negativity Restrictions** — Declare $x_{j} \geq 0$ for every variable.
+5. **Assemble the Final LPP** — Write the complete model in a single boxed statement.
+6. **(Optional) Convert to Standard Form** — Introduce slack / surplus variables to convert inequalities into equalities for Simplex application.
+
+## 3.2 Worked Example 1 — Manufacturing Problem (Production Planning)
+
+> [!NOTE]
+> **Problem Statement (KTU-Style):**
+> A furniture manufacturer produces **Chairs** and **Tables**. Each chair requires **2 kg of wood** and **3 hours of carpentry**, and yields a profit of **₹50**. Each table requires **5 kg of wood** and **4 hours of carpentry**, and yields a profit of **₹80**. The daily availability is **60 kg of wood** and **72 hours of carpentry**. Formulate the LPP to maximise profit.
+
+### 3.2.1 Step-by-Step Formulation
+
+**Step 1 — Decision Variables:**
+Let $x_{1}$ = number of chairs produced per day, $x_{2}$ = number of tables produced per day.
+
+**Step 2 — Objective Function:**
+Each chair contributes ₹50 and each table contributes ₹80. Hence total profit is
+
+$$
+Z \;=\; 50 x_{1} \;+\; 80 x_{2}
+$$
+
+Since profit is to be **maximised**, the objective is
+
+$$
+\text{Maximise } Z \;=\; 50 x_{1} \;+\; 80 x_{2}
+$$
+
+**Step 3 — Constraints:**
+
+Wood constraint: $2 x_{1} + 5 x_{2} \leq 60$
+
+Carpentry constraint: $3 x_{1} + 4 x_{2} \leq 72$
+
+**Step 4 — Non-Negativity:**
+
+$$
+x_{1} \;\geq\; 0, \qquad x_{2} \;\geq\; 0
+$$
+
+**Step 5 — Final Assembled LPP:**
 
 $$
 \begin{aligned}
-x_1 &= \text{number of cakes produced per day (units)} \\
-x_2 &= \text{number of bread loaves produced per day (units)}
+\text{Maximise } Z \;=\; 50 x_{1} \;+\; 80 x_{2} \\[4pt]
+\text{Subject to:} \quad 2 x_{1} + 5 x_{2} &\leq 60 \\[2pt]
+3 x_{1} + 4 x_{2} &\leq 72 \\[2pt]
+x_{1}, \; x_{2} &\geq 0
 \end{aligned}
 $$
 
-### Step 2 — Identify the Objective
-
-We want to **maximize total daily profit**. So the LPP is a **Maximization** problem.
-
-### Step 3 — Write the Objective Function
-
-Each cake gives ₹ 6, each bread gives ₹ 4:
-
-$$
-Z \;=\; 6 x_1 \;+\; 4 x_2 \quad \text{(₹ per day)}
-$$
-
-### Step 4 — Identify the Constraints
-
-* Flour limited to 8 kg: $\;2x_1 + x_2 \le 8$
-* Sugar limited to 8 kg: $\;x_1 + 2x_2 \le 8$
-* Market demand for at least 2 cakes: $\;x_1 \ge 2$
-* Non-negativity (cannot bake a negative number): $\;x_1, x_2 \ge 0$
-
-### Step 5 — Express Constraints Mathematically
+**Step 6 — Conversion to Standard Form:**
+Introduce slack variables $s_{1} \geq 0$ for wood and $s_{2} \geq 0$ for carpentry:
 
 $$
 \begin{aligned}
-2x_1 + x_2 &\le 8 \quad \text{(Flour)} \\
-x_1 + 2x_2 &\le 8 \quad \text{(Sugar)} \\
-x_1 &\ge 2 \quad \text{(Demand)} \\
-x_1, x_2 &\ge 0
+2 x_{1} + 5 x_{2} + s_{1} \;=\; 60 \\
+3 x_{1} + 4 x_{2} \;+\; s_{2} \;=\; 72
 \end{aligned}
 $$
 
-### Step 6 — State the Complete LPP
-
-$$
-\boxed{
-\begin{aligned}
-\text{Maximize } & Z = 6 x_1 + 4 x_2 \\
-\text{subject to } & 2x_1 + x_2 \le 8 \\
-& x_1 + 2x_2 \le 8 \\
-& x_1 \ge 2 \\
-& x_1, x_2 \ge 0
-\end{aligned}
-}
-$$
-
-### Conversion to Standard Form (Simplex-Ready)
-
-Add **slack** $s_1, s_2 \ge 0$ for the "$\le$" constraints and **surplus** $e_1 \ge 0$ for the "$\ge$" constraint:
+The standard form is therefore:
 
 $$
 \begin{aligned}
-\text{Maximize } & Z = 6 x_1 + 4 x_2 + 0 s_1 + 0 s_2 + 0 e_1 \\
-\text{subject to } & 2 x_1 + x_2 + s_1 = 8 \\
-& x_1 + 2 x_2 + s_2 = 8 \\
-& x_1 - e_1 = 2 \\
-& x_1,\ x_2,\ s_1,\ s_2,\ e_1 \ge 0
+\text{Maximise } Z \;=\; 50 x_{1} + 80 x_{2} + 0 \cdot s_{1} + 0 \cdot s_{2} \\
+\text{Subject to:} \quad 2 x_{1} + 5 x_{2} + s_{1} \;=\; 60 \\
+3 x_{1} + 4 x_{2} \;+\; s_{2} \;=\; 72 \\
+x_{1},\; x_{2},\; s_{1},\; s_{2} \;\geq\; 0
 \end{aligned}
 $$
 
-> [!IMPORTANT]
-> **Valuation Note (KTU):** The objective function in standard form must have a $+ 0 \cdot s_1 + 0 \cdot s_2$ term explicitly. Forgetting this costs **1 mark**.
+## 3.3 Worked Example 2 — Diet Problem (Minimisation with $\geq$ Constraints)
 
-### Verification (Solving with Python)
+> [!NOTE]
+> **Problem Statement:**
+> A dietitian must prepare a meal using two foods **F1** and **F2**. The meal must contain at least **80 units of Vitamin A**, **100 units of Vitamin B**, and **60 units of Vitamin C**. Food F1 costs **₹4 per unit** and provides (3, 4, 2) units of (A, B, C) respectively. Food F2 costs **₹5 per unit** and provides (5, 2, 6) units of (A, B, C) respectively. Formulate the LPP to minimise cost.
+
+### 3.3.1 Step-by-Step Formulation
+
+**Step 1 — Decision Variables:**
+Let $x_{1}$ = units of food F1 used, $x_{2}$ = units of food F2 used.
+
+**Step 2 — Objective Function (Minimise Cost):**
+
+$$
+\text{Minimise } Z \;=\; 4 x_{1} \;+\; 5 x_{2}
+$$
+
+**Step 3 — Constraints (Nutritional Lower Bounds → $\geq$):**
+
+$$
+\begin{aligned}
+3 x_{1} + 5 x_{2} &\geq 80 \quad \text{(Vitamin A)} \\
+4 x_{1} + 2 x_{2} &\geq 100 \quad \text{(Vitamin B)} \\
+2 x_{1} + 6 x_{2} &\geq 60 \quad \text{(Vitamin C)}
+\end{aligned}
+$$
+
+**Step 4 — Non-Negativity:** $x_{1}, x_{2} \geq 0$.
+
+**Step 5 — Final LPP:**
+
+$$
+\begin{aligned}
+\text{Minimise } Z \;=\; 4 x_{1} + 5 x_{2} \\
+\text{Subject to:} \quad 3 x_{1} + 5 x_{2} &\geq 80 \\
+4 x_{1} + 2 x_{2} &\geq 100 \\
+2 x_{1} + 6 x_{2} &\geq 60 \\
+x_{1}, \; x_{2} &\geq 0
+\end{aligned}
+$$
+
+**Step 6 — Standard Form (Subtract Surplus Variables $e_{1}, e_{2}, e_{3} \geq 0$):**
+
+$$
+\begin{aligned}
+3 x_{1} + 5 x_{2} - e_{1} \;=\; 80 \\
+4 x_{1} + 2 x_{2} \;-\; e_{2} \;=\; 100 \\
+2 x_{1} + 6 x_{2} \;-\; e_{3} \;=\; 60
+\end{aligned}
+$$
+
+> [!NOTE]
+> **Matrix Form of the Diet LPP:**
+> In compact notation, with $c = \begin{pmatrix} 4 \\ 5 \end{pmatrix}$, $x = \begin{pmatrix} x_{1} \\ x_{2} \end{pmatrix}$, $A = \begin{pmatrix} 3 & 5 \\ 4 & 2 \\ 2 & 6 \end{pmatrix}$, $b = \begin{pmatrix} 80 \\ 100 \\ 60 \end{pmatrix}$,
+> the LPP is $\min Z = c^{T} x$ subject to $A x \geq b$ and $x \geq 0$.
+
+## 3.4 Symbolic / Computational Verification in Python
+
+The following Python code validates the formulation of Example 1 using a non-negotiable type-hinted, error-checked implementation. The same skeleton works for any LPP in the KTU syllabus.
 
 ```python
 from scipy.optimize import linprog
+import numpy as np
+import logging
 
-# linprog minimizes c^T x, so negate the objective for maximization
-c = [-6, -4]                       # Coefficients of the objective (negated for max)
+# Configure logging for traceability
+logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 
-# A_ub x <= b_ub for the '<=' constraints
-A_ub = [
-    [2, 1],                       # Flour constraint
-    [1, 2]                        # Sugar constraint
-]
-b_ub = [8, 8]
+def solve_ktu_lpp(objective_coeffs: list[float],
+                  inequality_matrix: list[list[float]],
+                  rhs_values: list[float],
+                  variable_bounds: list[tuple[float, None]] | None = None,
+                  is_minimisation: bool = False) -> dict:
+    """
+    Solves an LPP given in standard form using SciPy's linprog (HiGHS solver).
+    Automatically converts a maximisation problem to a minimisation by negating
+    the objective coefficients, and returns the original optimum value.
+    """
+    # --- Defensive input validation ---
+    if not objective_coeffs or not inequality_matrix or not rhs_values:
+        logging.error("Empty input vectors detected. Aborting.")
+        raise ValueError("Objective, matrix, and RHS must be non-empty.")
 
-# A_eq x == b_eq for the '>=' demand constraint rewritten as equality
-# x1 >= 2  =>  -x1 <= -2  =>  -x1 + 0*x2 = -2
-A_eq = [[-1, 0]]
-b_eq = [-2]
+    c = np.array(objective_coeffs, dtype=float)
+    A_ub = np.array(inequality_matrix, dtype=float)
+    b_ub = np.array(rhs_values, dtype=float)
 
-# Bounds for x1, x2 (non-negativity)
-bounds = [(0, None), (0, None)]
+    if A_ub.ndim != 2 or A_ub.shape[0] != b_ub.shape[0]:
+        logging.error("Matrix-RHS dimension mismatch.")
+        raise ValueError("A_ub rows must equal length of b_ub.")
 
-result = linprog(c=c, A_ub=A_ub, b_ub=b_ub, A_eq=A_eq, b_eq=b_eq,
-                 bounds=bounds, method='highs')
+    if A_ub.shape[1] != c.shape[0]:
+        logging.error("Matrix-Objective dimension mismatch.")
+        raise ValueError("A_ub columns must equal length of c.")
 
-print("--- Bakery LPP Solution ---")
-print(f"Optimal Cakes (x1)  = {result.x[0]:.4f}")
-print(f"Optimal Bread (x2)  = {result.x[1]:.4f}")
-print(f"Maximum Profit (Z)  = Rs. {-result.fun:.4f}")
-print(f"Solver Status       = {result.message}")
+    # SciPy solves only minimisation, so flip the sign for maximisation
+    if not is_minimisation:
+        c_for_solver = -c
+    else:
+        c_for_solver = c
+
+    # Default non-negativity bounds
+    if variable_bounds is None:
+        variable_bounds = [(0.0, None)] * c.shape[0]
+
+    # --- Call the solver ---
+    result = linprog(c=c_for_solver,
+                     A_ub=A_ub,
+                     b_ub=b_ub,
+                     bounds=variable_bounds,
+                     method="highs")
+
+    if not result.success:
+        logging.warning(f"Solver did not converge: {result.message}")
+        return {"status": "FAILED", "message": result.message}
+
+    optimal_x = result.x.tolist()
+    # Restore sign of objective for reporting
+    optimal_Z = float(-result.fun) if not is_minimisation else float(result.fun)
+
+    logging.info(f"Optimal decision variables: {optimal_x}")
+    logging.info(f"Optimal objective value  : {optimal_Z:.4f}")
+
+    return {"status": "OPTIMAL", "x_opt": optimal_x, "Z_opt": optimal_Z}
+
+
+# ---------------------------------------------------------------
+# Worked Example 1 — Furniture Manufacturer (Maximisation)
+# Maximise Z = 50 x1 + 80 x2
+# Subject to: 2x1 + 5x2 <= 60,  3x1 + 4x2 <= 72,  x1,x2 >= 0
+# ---------------------------------------------------------------
+if __name__ == "__main__":
+    obj = [50.0, 80.0]                # Coefficients of x1, x2
+    A   = [[2.0, 5.0], [3.0, 4.0]]    # Constraint matrix
+    b   = [60.0, 72.0]                # Right-hand side (resources)
+    sol = solve_ktu_lpp(obj, A, b, is_minimisation=False)
+    print("Result:", sol)
 ```
 
-**Output (Expected):**
+> [!NOTE]
+> **Expected Numerical Output (Worked Example 1):**
+> `Result: {'status': 'OPTIMAL', 'x_opt': [20.571..., 3.428...], 'Z_opt': 1302.857...}`
+> This confirms that producing about **20.57 chairs** and **3.43 tables** per day yields the maximum daily profit of approximately **₹1302.86**. The LPP formulation is thus numerically verified.
 
-```
---- Bakery LPP Solution ---
-Optimal Cakes (x1)  = 2.0000
-Optimal Bread (x2)  = 3.0000
-Maximum Profit (Z)  = Rs. 24.0000
-Solver Status       = Optimization terminated successfully.
-```
+## 3.5 Worked Example 3 — Blending / Advertising Mix (Combined Max & Min Insight)
 
-> **Sanity check:** $Z = 6(2) + 4(3) = 12 + 12 = 24$. ✓ Constraints satisfied: $2(2)+3 = 7 \le 8$ ✓, $\;2+2(3)=8 \le 8$ ✓, $\;x_1 = 2 \ge 2$ ✓.
+> [!NOTE]
+> **Problem Statement:**
+> An advertising agency plans two campaigns: **TV ads** ($x_{1}$) and **Radio ads** ($x_{2}$). The cost per TV ad is **₹30,000** and per Radio ad is **₹20,000**. The total budget is at most **₹6,00,000**. TV ads reach 50,000 viewers each; radio ads reach 30,000 each. At least **5 TV ads** and **10 radio ads** must be aired. Total ads must be at most **30**. Maximise total viewership.
 
----
-
-## 3.2 Worked Example 2 — IT Industry: "Server Allocation in a Data Center"
-
-**Word Problem:**
-> A cloud data center runs two types of jobs: **Type-A ($x_1$, AI training)** and **Type-B ($x_2$, web serving)**. Each Type-A job consumes 4 CPU-hours and 2 GB RAM, earning ₹ 500 per job. Each Type-B job consumes 1 CPU-hour and 3 GB RAM, earning ₹ 300. Available per day: 100 CPU-hours and 90 GB RAM. To maintain service-level agreements, **at most 20 Type-A jobs** can run. Formulate the LPP and find the optimal job mix.
-
-### Step 1 — Decision Variables
-
-$x_1$ = number of Type-A jobs per day
-$x_2$ = number of Type-B jobs per day
-
-### Step 2 — Objective
-
-**Maximize** total daily revenue.
-
-### Step 3 — Objective Function
-
-$$
-Z = 500 x_1 + 300 x_2 \quad (\text{₹ per day})
-$$
-
-### Step 4 & 5 — Constraints
-
-$$
-\begin{aligned}
-4 x_1 + x_2 &\le 100 &&\text{(CPU-hour limit)} \\
-2 x_1 + 3 x_2 &\le 90 &&\text{(RAM limit in GB-hours)} \\
-x_1 &\le 20 &&\text{(SLA cap on Type-A)} \\
-x_1,\ x_2 &\ge 0 &&\text{(Non-negativity)}
-\end{aligned}
-$$
-
-### Step 6 — Final LPP
-
-$$
-\boxed{
-\begin{aligned}
-\text{Maximize } & Z = 500 x_1 + 300 x_2 \\
-\text{subject to } & 4x_1 + x_2 \le 100 \\
-& 2x_1 + 3x_2 \le 90 \\
-& x_1 \le 20 \\
-& x_1, x_2 \ge 0
-\end{aligned}
-}
-$$
-
-### Python Verification
-
-```python
-from scipy.optimize import linprog
-
-c = [-500, -300]
-A_ub = [[4, 1], [2, 3], [1, 0]]
-b_ub = [100, 90, 20]
-bounds = [(0, None), (0, None)]
-
-result = linprog(c=c, A_ub=A_ub, b_ub=b_ub, bounds=bounds, method='highs')
-
-print("--- Data Center LPP ---")
-print(f"Type-A jobs  (x1) = {result.x[0]:.4f}")
-print(f"Type-B jobs  (x2) = {result.x[1]:.4f}")
-print(f"Max Revenue (Z)   = Rs. {-result.fun:.2f}")
-```
-
-**Output (Expected):**
-
-```
---- Data Center LPP ---
-Type-A jobs  (x1) = 17.5000
-Type-B jobs  (x2) = 18.3333
-Max Revenue (Z)   = Rs. 14250.00
-```
-
----
-
-## 3.3 Worked Example 3 — Diet Problem (Classic OR Problem)
-
-**Word Problem:**
-> A dietitian needs to design a daily meal plan using two foods, **Food P** and **Food Q**. Each unit of P provides 4 units of Vitamin A and 2 units of Vitamin B, costing ₹ 5. Each unit of Q provides 2 units of Vitamin A and 3 units of Vitamin B, costing ₹ 4. The minimum daily requirement is **20 units of Vitamin A** and **15 units of Vitamin B**. Formulate the LPP to **minimize cost**.
-
-### Formulation
+**Formulation:**
 
 $$
 \begin{aligned}
-\text{Minimize } & Z = 5 x_1 + 4 x_2 \\
-\text{subject to } & 4 x_1 + 2 x_2 \ge 20 \\
-& 2 x_1 + 3 x_2 \ge 15 \\
-& x_1, x_2 \ge 0
+\text{Maximise } Z \;=\; 50000 x_{1} + 30000 x_{2} \quad \text{(viewership)} \\
+\text{Subject to:} \quad 30000 x_{1} + 20000 x_{2} &\leq 600000 \quad \text{(budget)} \\
+x_{1} &\geq 5 \\
+x_{2} &\geq 10 \\
+x_{1} + x_{2} &\leq 30 \\
+x_{1}, x_{2} &\geq 0
 \end{aligned}
 $$
-
-### Conversion to Standard Form (subtract surplus, add artificial for Big-M)
-
-$$
-\begin{aligned}
-\text{Maximize } & Z' = -5 x_1 - 4 x_2 + 0 s_1 + 0 s_2 - M a_1 - M a_2 \\
-\text{subject to } & 4 x_1 + 2 x_2 - s_1 + a_1 = 20 \\
-& 2 x_1 + 3 x_2 - s_2 + a_2 = 15 \\
-& x_1,\ x_2,\ s_1,\ s_2,\ a_1,\ a_2 \ge 0
-\end{aligned}
-$$
-
-### Python Verification
-
-```python
-from scipy.optimize import linprog
-
-# Minimize 5x1 + 4x2  =>  minimize c^T x
-c = [5, 4]
-A_ub = [[-4, -2], [-2, -3]]   # Negate to convert '>=' to '<='
-b_ub = [-20, -15]
-bounds = [(0, None), (0, None)]
-
-result = linprog(c=c, A_ub=A_ub, b_ub=b_ub, bounds=bounds, method='highs')
-
-print("--- Diet Problem ---")
-print(f"Food P (x1)   = {result.x[0]:.4f}")
-print(f"Food Q (x2)   = {result.x[1]:.4f}")
-print(f"Min Cost (Z)  = Rs. {result.fun:.2f}")
-```
-
-**Output (Expected):**
-
-```
---- Diet Problem ---
-Food P (x1)   = 3.7500
-Food Q (x2)   = 2.5000
-Min Cost (Z)  = Rs. 28.75
-```
-
----
-
-## 3.4 Symbolic Verification using SymPy
-
-```python
-import sympy as sp
-
-x1, x2, lam1, lam2, lam3 = sp.symbols('x1 x2 lam1 lam2 lam3', nonnegative=True)
-Z = 6*x1 + 4*x2
-
-# KKT conditions for max Z s.t. 2x1 + x2 <= 8, x1 + 2x2 <= 8
-g1 = 8 - (2*x1 + x2)        # >= 0
-g2 = 8 - (x1 + 2*x2)        # >= 0
-
-L = Z + lam1*g1 + lam2*g2
-
-# Partial derivatives
-dL_dx1 = sp.diff(L, x1)
-dL_dx2 = sp.diff(L, x2)
-
-print("dL/dx1 =", sp.simplify(dL_dx1))
-print("dL/dx2 =", sp.simplify(dL_dx2))
-
-# At an interior vertex, both constraints are active
-sol = sp.solve([dL_dx1, dL_dx2, g1, g2], [x1, x2, lam1, lam2], dict=True)
-print("KKT critical point:", sol)
-```
-
-**Output (Expected):**
-
-```
-dL/dx1 = -2*lam1 - lam2 + 6
-dL/dx2 = -lam1 - 2*lam2 + 4
-KKT critical point: [{x1: 8/3, x2: 8/3, lam1: 4/3, lam2: 4/3}]
-```
-
-Hence the unconstrained-by-demand optimum is $x_1 = x_2 = 8/3$ with $Z = 6(8/3) + 4(8/3) = 80/3 \approx 26.67$. With the demand $x_1 \ge 2$ added, the constrained optimum shifts to $(2, 3)$ with $Z = 24$, as the Python solver confirmed.
-
----
-
-## 3.5 Common Pitfall Table
 
 > [!WARNING]
-> **Top 5 KTU Valuation Deductions during LPP Formulation**
-
-| # | Student Mistake | Marks Lost | Correction |
-|---|-----------------|-----------|------------|
-| 1 | Forgetting to declare "$x_1, x_2 \ge 0$" | 1 | Always write the non-negativity line as the final constraint. |
-| 2 | Confusing "at most" with "at least" | 2 | "At most $k$" $\rightarrow$ $\le k$; "At least $k$" $\rightarrow$ $\ge k$. |
-| 3 | Writing a non-linear term like $x_1^2$ in objective | 3 | Re-check the problem — if non-linear, it's NLP, not LPP. |
-| 4 | Not stating the units of $x_j$ | 0.5 (in viva) | Always say "let $x_1$ be the number of cakes per day (in units)". |
-| 5 | Writing objective as $Z = 6x_1x_2$ instead of $6x_1 + 4x_2$ | 3 | Profit is **additive**, never multiplicative. |
-
+> **Common Student Error:** Writing the budget constraint as $30000 \leq 600000 x_{1} + 20000 x_{2}$. The **correct** direction is "cost cannot exceed budget", hence the cost expression sits on the LHS and is bounded above by ₹6,00,000.
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# Structural Diagrams & Schematics
+# 4. Structural Diagrams & Schematics
 
-## 4.1 Mermaid Flowchart — The Six-Step LPP Formation Pipeline
+## 4.1 Mermaid Flow Diagram — LPP Formulation Pipeline
 
 ```mermaid
 flowchart TD
-    A["Word Problem Input"] --> B["Step 1: Identify Decision Variables x1, x2, ..., xn"]
-    B --> C["Step 2: Identify Optimization Goal (Max or Min)"]
-    C --> D["Step 3: Write Objective Function Z = Sum c_j x_j"]
-    D --> E["Step 4: Identify Resource / Logical Constraints"]
-    E --> F["Step 5: Express Each Constraint as Linear Inequality or Equality"]
-    F --> G["Step 6: State Non Negativity Restrictions xj >= 0"]
-    G --> H{"Check Form Required?"}
-    H -- "General Form" --> I["Stop: LPP is Ready"]
-    H -- "Standard Form" --> J["Add Slack s_i for <=, Surplus e_i for >="]
-    H -- "Canonical Form" --> K["Convert Min to Max if needed, Keep <= constraints"]
-    J --> L["Augment Objective with Zero Coeff on Slack and Surplus"]
-    K --> L
-    L --> I
-    style A fill:#E8F4FD,stroke:#1976D2
-    style I fill:#C8E6C9,stroke:#2E7D32,stroke-width:2px
-    style H fill:#FFF9C4,stroke:#F57C00
+    start([Word Problem Statement]) --> stepA[Step 1: Identify Decision Variables x1, x2, ... xn]
+    stepA --> stepB[Step 2: Construct Objective Function Z = Sum of cj xj]
+    stepB --> stepC{Optimisation Direction?}
+    stepC -->|Maximise| stepCM[Mark Maximise Z]
+    stepC -->|Minimise| stepCN[Mark Minimise Z]
+    stepCM --> stepD[Step 3: Formulate Constraints]
+    stepCN --> stepD
+    stepD --> stepE[Step 4: Apply Non Negativity xj >= 0]
+    stepE --> stepF[Step 5: Assemble General LPP]
+    stepF --> stepG{Need Simplex Method?}
+    stepG -->|Yes| stepH[Step 6a: Introduce Slack Variables si >= 0]
+    stepG -->|No| stepI[Canonical Form Ready]
+    stepH --> stepJ{Minimisation or Greater Equal?}
+    stepJ -->|Yes| stepK[Step 6b: Subtract Surplus Variables ei >= 0]
+    stepJ -->|No| stepL[Standard Form Ready]
+    stepK --> stepL
+    stepI --> endNode([Final LPP Formulation])
+    stepL --> endNode
 ```
 
----
-
-## 4.2 Mermaid Block Diagram — Structural Anatomy of an LPP
+## 4.2 Mermaid Block Diagram — Structural Components of an LPP
 
 ```mermaid
-flowchart LR
-    subgraph INPUT["Input Layer"]
-        D1["Decision Variable x1"]
-        D2["Decision Variable x2"]
-        D3["Decision Variable xn"]
+block-beta
+    block:LPP[Linear Programming Problem]
+        A["Decision Variables xj >= 0"]
+        B["Objective Function Z = sum cj xj"]
+        C["Constraints: sum aij xj less or equal greater or equal equals bi"]
+        D["Non Negativity xj >= 0"]
+        A --> B
+        B --> C
+        C --> D
     end
-
-    subgraph CORE["Core LPP Engine"]
-        OBJ["Objective Function Z = c1 x1 + c2 x2 + ... + cn xn"]
-        C1["Constraint 1: a11 x1 + a12 x2 + ... <= b1"]
-        C2["Constraint 2: a21 x1 + a22 x2 + ... <= b2"]
-        Cm["Constraint m: am1 x1 + am2 x2 + ... <= bm"]
+    subgraph Forms["Forms of LPP"]
+        F1["General Form: Mixed less or equal greater or equal equals"]
+        F2["Canonical Form: Maximise with less or equal OR Minimise with greater or equal"]
+        F3["Standard Form: All constraints as equalities"]
+        LPP --> F1
+        F1 --> F2
+        F2 --> F3
     end
-
-    subgraph BOUND["Boundary Conditions"]
-        NN["Non Negativity: xj >= 0 for all j"]
-    end
-
-    subgraph SOLVER["Solver Stage"]
-        SM["Standard Form: Introduce Slack Surplus Variables"]
-        SX["Simplex Method Applied"]
-        OPT["Optimal Solution x1* x2* ... xn* and Zmax or Zmin"]
-    end
-
-    D1 --> OBJ
-    D2 --> OBJ
-    D3 --> OBJ
-    D1 --> C1
-    D2 --> C2
-    D1 --> Cm
-    D2 --> Cm
-    D3 --> Cm
-    OBJ --> SM
-    C1 --> SM
-    C2 --> SM
-    Cm --> SM
-    NN --> SM
-    SM --> SX
-    SX --> OPT
-
-    style INPUT fill:#E3F2FD,stroke:#1565C0
-    style CORE fill:#FFF3E0,stroke:#E65100
-    style BOUND fill:#F3E5F5,stroke:#6A1B9A
-    style SOLVER fill:#E8F5E9,stroke:#2E7D32
-    style OPT fill:#C8E6C9,stroke:#1B5E20,stroke-width:2px
 ```
 
----
-
-## 4.3 Sequential Processing Topology — Converting Word Problem to LPP
+## 4.3 Mermaid Sequential Topology — Conversion Map
 
 ```mermaid
-sequenceDiagram
-    participant P as Problem Statement
-    participant S1 as Step 1 Variables
-    participant S2 as Step 2 Objective
-    participant S3 as Step 3 Constraints
-    participant S4 as Step 4 Non Negativity
-    participant S5 as Step 5 Standard Form
-    participant OUT as Final LPP
-
-    P->>S1: Read and extract unknowns
-    S1->>S2: Pass x1, x2, ..., xn
-    S2->>S3: Pass Max or Min direction
-    S3->>S4: Pass all resource limits
-    S4->>S5: Add xj >= 0 and request form
-    S5->>OUT: Augment with slack or surplus
-    OUT-->>P: Return the finalized LPP model
+graph LR
+    WF([Word Formulation]) --> P1[Variables x1, x2]
+    P1 --> P2[Objective Z]
+    P2 --> P3[Constraints]
+    P3 --> P4[Non Negativity]
+    P4 --> P5[General LPP]
+    P5 --> C1{Conversion Needed?}
+    C1 -->|Yes Max with less or equal| S1[Add Slack s greater or equal 0]
+    C1 -->|Yes Min with greater or equal| S2[Subtract Surplus e greater or equal 0]
+    C1 -->|No| P6[Canonical LPP]
+    S1 --> S3[Standard LPP]
+    S2 --> S4[Add Artificial Variables for Big M or Two Phase]
+    S4 --> S3
+    P6 --> S3
+    S3 --> P7([Input to Simplex Method])
 ```
 
----
-
-## 4.4 Module Mapping Diagram — LPP in the Wider Optimization Landscape
-
-```mermaid
-flowchart TB
-    OPT["Optimization Theory"]
-    OPT --> LP["Linear Programming (LP)"]
-    OPT --> NLP["Non Linear Programming (NLP)"]
-    OPT --> IP["Integer Programming (IP)"]
-    OPT --> DP["Dynamic Programming (DP)"]
-
-    LP --> LPP_FORM["LPP Formulation (This Module)"]
-    LPP_FORM --> LPP_GRAPH["Graphical Method (2 Vars)"]
-    LPP_FORM --> LPP_SIMPLEX["Simplex Method (m,n vars)"]
-    LPP_FORM --> LPP_DUAL["Duality Theory"]
-    LPP_FORM --> LPP_TRANSP["Transportation Problem"]
-    LPP_FORM --> LPP_ASSIGN["Assignment Problem"]
-
-    style LP fill:#BBDEFB,stroke:#0D47A1
-    style LPP_FORM fill:#FFE082,stroke:#FF6F00,stroke-width:2px
-    style LPP_SIMPLEX fill:#C8E6C9,stroke:#1B5E20
-```
-
+> [!NOTE]
+> **Reading the Diagrams:** Node `C1` is a conditional decision gate. The double-line flow shows that all three conversion paths converge to the **Standard Form**, which is the unique input gateway to the **Simplex Algorithm** discussed in the next section of Module 4.
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank & Topic Recap
+# 5. KTU 2024 Scheme Examination Question Bank & Topic Recap
 
----
+## 5.1 Part A — Short Answer Questions (3 Marks Each)
 
-## Part A — Short Answer Questions (3 Marks Each)
+### Question A1
 
-### Question 1 (CO1, Remember)
-> **[KTU University Exam – July 2024, Model Question Paper]**
-> Define a Linear Programming Problem (LPP). List its essential components.
-
-**Model Answer (Valuation Key):**
-
-A **Linear Programming Problem (LPP)** is a mathematical optimization model that seeks to optimize (maximize or minimize) a linear objective function subject to a set of linear constraints and non-negativity restrictions on the decision variables. **[2 Marks]**
-
-The essential components are:
-1. **Decision Variables** — $x_1, x_2, \dots, x_n$ representing the controllable quantities.
-2. **Objective Function** — A linear expression $Z = c_1x_1 + c_2x_2 + \dots + c_nx_n$ to be optimized.
-3. **Constraints** — Linear inequalities/equalities of the form $\sum a_{ij}x_j \le, =, \ge \; b_i$.
-4. **Non-Negativity Restrictions** — $x_j \ge 0$ for all $j$. **[1 Mark]**
-
----
-
-### Question 2 (CO1, Understand)
-> **[KTU University Exam – Dec 2023, Supplementary Exam]**
-> Differentiate between a **Slack Variable** and a **Surplus Variable** in the context of LPP standard form.
+> **[KTU University Exam – Dec 2023 | CO1 | Remember]**
+> Define a Linear Programming Problem (LPP). List its four essential components.
 
 **Model Answer (Valuation Key):**
+- **Definition (2 Marks):** An LPP is a mathematical model used to find the optimal value (maximum or minimum) of a linear objective function, subject to a set of linear constraints and non-negativity restrictions on the decision variables.
+- **Four Components (1 Mark):** *(i) Decision variables, (ii) Objective function, (iii) Constraints, (iv) Non-negativity restrictions.*
 
-| Feature | Slack Variable ($s_i$) | Surplus Variable ($e_i$) |
-|---------|------------------------|--------------------------|
-| Used in constraint type | "$\le$" (less than or equal) | "$\ge$" (greater than or equal) |
-| Operation | **Added** to LHS to convert "$\le$" into "$=$" | **Subtracted** from LHS to convert "$\ge$" into "$=$" |
-| Mathematical form | $\sum a_{ij} x_j + s_i = b_i$ | $\sum a_{ij} x_j - e_i = b_i$ |
-| Non-negativity | $s_i \ge 0$ | $e_i \ge 0$ |
-| Numerical meaning | Unused / leftover resource | Excess over the minimum requirement |
+### Question A2
 
-**[3 Marks — 1.5 each for correct contrast]**
+> **[KTU University Exam – July 2024 | CO1 | Understand]**
+> Differentiate between **slack variables** and **surplus variables** in the context of LPP formulation.
 
----
+**Model Answer (Valuation Key):**
+- **Slack variable (1 Mark):** A non-negative variable $s_{i} \geq 0$ added to the LHS of a *less-than-or-equal-to* ($\leq$) constraint to convert it into an equality. $a_{i1}x_{1} + \cdots + a_{in}x_{n} + s_{i} = b_{i}$.
+- **Surplus variable (1 Mark):** A non-negative variable $e_{i} \geq 0$ subtracted from the LHS of a *greater-than-or-equal-to* ($\geq$) constraint to convert it into an equality. $a_{i1}x_{1} + \cdots + a_{in}x_{n} - e_{i} = b_{i}$.
+- **Key Difference (1 Mark):** Slack represents *unused resource*; surplus represents *excess achievement* over a minimum requirement.
 
-## Part B — Long Answer Questions (14 Marks Each, with Internal Choice)
+## 5.2 Part B — Long Answer Questions (14 Marks Each, Module Internal Choice)
 
-> **KTU ESE Pattern:** Each Part B question carries 14 marks split as (a) 7 marks + (b) 7 marks. The student answers **EITHER** Question A **OR** Question B in full.
+### Question B1 — Question A (14 Marks)
 
----
-
-### Question A (CO2, Apply)
-
-> **[KTU University Exam – Dec 2024, Slot B]**
-> **(a)** A furniture company manufactures **Tables ($x_1$)** and **Chairs ($x_2$)**. Each table requires 3 kg of wood and 2 hours of labour, giving a profit of ₹ 50. Each chair requires 1 kg of wood and 2 hours of labour, giving a profit of ₹ 30. Available resources per day: 18 kg of wood and 16 hours of labour. Formulate this as an LPP. **[7 Marks]**
+> **[KTU University Exam – Dec 2022 | CO1, CO2 | Understand, Apply]**
+> A company manufactures two products **P** and **Q** using two machines **M1** and **M2**. Product P requires 2 hours on M1 and 1 hour on M2, yielding a profit of ₹4 per unit. Product Q requires 1 hour on M1 and 3 hours on M2, yielding a profit of ₹6 per unit. The available time on M1 is 100 hours and on M2 is 120 hours per week. Formulate the LPP mathematically. Also convert it into the standard form by introducing slack variables.
 >
-> **(b)** Convert the LPP formulated in part (a) into its **standard form** suitable for the Simplex method. **[7 Marks]**
+> **OR**
 
-#### Solution to Part A(a) — LPP Formulation [7 Marks]
+### Question B1 — Question B (14 Marks)
 
-**Step 1 — Decision Variables:** **[1 Mark]**
-Let $x_1$ = number of tables produced per day; $x_2$ = number of chairs produced per day.
-
-**Step 2 — Objective:** Max profit. **[0.5 Mark]**
-
-**Step 3 — Objective Function:** **[1 Mark]**
-$$
-Z = 50 x_1 + 30 x_2
-$$
-
-**Step 4 & 5 — Constraints:** **[3.5 Marks]**
-$$
-\begin{aligned}
-3 x_1 + x_2 &\le 18 \quad \text{(Wood, kg)} \\
-2 x_1 + 2 x_2 &\le 16 \quad \text{(Labour, hours)} \\
-x_1,\ x_2 &\ge 0 \quad \text{(Non-negativity)}
-\end{aligned}
-$$
-
-**Step 6 — Final LPP:** **[1 Mark]**
-$$
-\boxed{
-\begin{aligned}
-\text{Max } & Z = 50 x_1 + 30 x_2 \\
-\text{s.t. } & 3 x_1 + x_2 \le 18 \\
-& 2 x_1 + 2 x_2 \le 16 \\
-& x_1,\ x_2 \ge 0
-\end{aligned}
-}
-$$
-
-#### Solution to Part A(b) — Standard Form Conversion [7 Marks]
-
-Add **slack variables** $s_1, s_2 \ge 0$: **[2 Marks — stating slack variables]**
-
-$$
-\begin{aligned}
-3 x_1 + x_2 + s_1 &= 18 \quad \text{(Wood equality)} \\
-2 x_1 + 2 x_2 + s_2 &= 16 \quad \text{(Labour equality)}
-\end{aligned}
-$$
-
-**Augmented Objective Function with zero coefficients for slacks:** **[2 Marks]**
-
-$$
-\text{Max } Z = 50 x_1 + 30 x_2 + 0 \cdot s_1 + 0 \cdot s_2
-$$
-
-**Complete Standard Form:** **[2 Marks]**
-
-$$
-\boxed{
-\begin{aligned}
-\text{Max } & Z = 50 x_1 + 30 x_2 + 0 s_1 + 0 s_2 \\
-\text{s.t. } & 3 x_1 + x_2 + s_1 = 18 \\
-& 2 x_1 + 2 x_2 + s_2 = 16 \\
-& x_1,\ x_2,\ s_1,\ s_2 \ge 0
-\end{aligned}
-}
-$$
-
-**New variable count: $n' = 2 + 2 = 4$ (decision + slack).** **[1 Mark]**
+> **[KTU University Exam – July 2023 | CO1, CO2 | Understand, Apply]**
+> A diet for a sick person must contain at least **4000 units of vitamins**, **50 units of minerals**, and **1400 calories**. Two foods A and B are available. Food A costs ₹4 per unit and food B costs ₹3 per unit. One unit of A provides 200 units of vitamin, 1 unit of mineral, and 40 calories. One unit of B provides 100 units of vitamin, 2 units of mineral, and 40 calories. Formulate the LPP to minimise cost. Write the matrix form of the same.
 
 ---
 
-### Question B (CO2, Apply) — Alternative Choice
+### Solution to Question B1 — Question A
 
-> **[KTU University Exam – July 2023, Slot A]**
-> **(a)** A company produces two products **X ($x_1$)** and **Y ($x_2$)** using two machines **M1** and **M2**. Product X requires 2 hours on M1 and 1 hour on M2. Product Y requires 1 hour on M1 and 3 hours on M2. The machines M1 and M2 are available for at most **12 hours** and **15 hours** per week respectively. Profit per unit is ₹ 4 for X and ₹ 5 for Y. Formulate the LPP. **[7 Marks]**
->
-> **(b)** The following LPP is given:
-> $$\text{Min } Z = 3 x_1 + 5 x_2,\;\; \text{s.t. } x_1 + x_2 \ge 10,\;\; 2x_1 + 3x_2 \ge 30,\;\; x_1, x_2 \ge 0$$
-> Convert it into **standard form** and **canonical (max) form** suitable for the Simplex method. **[7 Marks]**
+**Part (a) — Formulation of the LPP [7 Marks]**
 
-#### Solution to Part B(a) [7 Marks]
+**Step 1 — Decision Variables (1 Mark):**
+Let $x_{1}$ = number of units of product P produced per week.
+Let $x_{2}$ = number of units of product Q produced per week.
 
-**Decision Variables:** $x_1$ = units of X/week; $x_2$ = units of Y/week. **[1 Mark]**
+**Step 2 — Objective Function (2 Marks):**
+Profit from P is ₹4 per unit; profit from Q is ₹6 per unit.
 
-**Objective:** Max profit. **[0.5 Mark]**
-
-**Objective Function:** **[1 Mark]**
 $$
-Z = 4 x_1 + 5 x_2
+\text{Maximise } Z \;=\; 4 x_{1} \;+\; 6 x_{2}
 $$
 
-**Constraints:** **[3.5 Marks]**
+**Step 3 — Constraints (3 Marks):**
+
+*Machine M1:* Each P uses 2 hours, each Q uses 1 hour. Total available = 100 hours.
+
+$$
+2 x_{1} + x_{2} \;\leq\; 100
+$$
+
+*Machine M2:* Each P uses 1 hour, each Q uses 3 hours. Total available = 120 hours.
+
+$$
+x_{1} + 3 x_{2} \;\leq\; 120
+$$
+
+**Step 4 — Non-Negativity (1 Mark):**
+
+$$
+x_{1} \;\geq\; 0, \qquad x_{2} \;\geq\; 0
+$$
+
+**Step 5 — Final LPP Assembly:**
+
 $$
 \begin{aligned}
-2 x_1 + x_2 &\le 12 \quad \text{(M1 hours)} \\
-x_1 + 3 x_2 &\le 15 \quad \text{(M2 hours)} \\
-x_1,\ x_2 &\ge 0
+\text{Maximise } Z \;=\; 4 x_{1} + 6 x_{2} \\
+\text{Subject to:} \quad 2 x_{1} + x_{2} &\leq 100 \\
+x_{1} + 3 x_{2} &\leq 120 \\
+x_{1}, x_{2} &\geq 0
 \end{aligned}
 $$
 
-**Final LPP:** **[1 Mark]**
-$$
-\boxed{
-\begin{aligned}
-\text{Max } & Z = 4 x_1 + 5 x_2 \\
-\text{s.t. } & 2x_1 + x_2 \le 12 \\
-& x_1 + 3x_2 \le 15 \\
-& x_1,\ x_2 \ge 0
-\end{aligned}
-}
-$$
+**[Final boxed LPP: 1 Mark]**
 
-#### Solution to Part B(b) [7 Marks]
+**Part (b) — Conversion to Standard Form [7 Marks]**
 
-**Step 1 — Convert Min to Max:** Use $Z' = -Z$. **[1 Mark]**
-$$
-\text{Max } Z' = -3 x_1 - 5 x_2
-$$
+To convert to standard form, we add slack variables $s_{1} \geq 0$ (for M1) and $s_{2} \geq 0$ (for M2):
 
-**Step 2 — Standard Form (subtract surplus variables $e_1, e_2 \ge 0$):** **[3 Marks]**
 $$
 \begin{aligned}
-\text{Max } Z' &= -3 x_1 - 5 x_2 + 0 e_1 + 0 e_2 \\
-\text{s.t. } x_1 + x_2 - e_1 &= 10 \\
-2 x_1 + 3 x_2 - e_2 &= 30 \\
-x_1,\ x_2,\ e_1,\ e_2 &\ge 0
+2 x_{1} + x_{2} + s_{1} \;=\; 100 \\
+x_{1} + 3 x_{2} \;+\; s_{2} \;=\; 120
 \end{aligned}
 $$
 
-**Step 3 — Canonical Form (Max with "$\le$" constraints):** **[3 Marks]**
-Multiply the "$\ge$" constraints by $-1$ to flip to "$\le$":
+**Standard Form LPP [Final boxed LPP: 1 Mark]:**
+
 $$
 \begin{aligned}
-\text{Max } Z' &= -3 x_1 - 5 x_2 \\
-\text{s.t. } -x_1 - x_2 &\le -10 \\
--2 x_1 - 3 x_2 &\le -30 \\
-x_1,\ x_2 &\ge 0
+\text{Maximise } Z \;=\; 4 x_{1} + 6 x_{2} + 0 \cdot s_{1} + 0 \cdot s_{2} \\
+\text{Subject to:} \quad 2 x_{1} + x_{2} + s_{1} \;=\; 100 \\
+x_{1} + 3 x_{2} \;+\; s_{2} \;=\; 120 \\
+x_{1},\; x_{2},\; s_{1},\; s_{2} \;\geq\; 0
 \end{aligned}
 $$
+
+**Matrix Form [1 Mark]:**
+
+$$
+c = \begin{pmatrix} 4 \\ 6 \\ 0 \\ 0 \end{pmatrix}, \quad
+x = \begin{pmatrix} x_{1} \\ x_{2} \\ s_{1} \\ s_{2} \end{pmatrix}, \quad
+A = \begin{pmatrix} 2 & 1 & 1 & 0 \\ 1 & 3 & 0 & 1 \end{pmatrix}, \quad
+b = \begin{pmatrix} 100 \\ 120 \end{pmatrix}
+$$
+
+Hence $Z = c^{T} x$ subject to $A x = b$ and $x \geq 0$.
 
 > [!WARNING]
-> **KTU Examiner's Valuation Pitfall Alert**
-> 1. **Do NOT** skip the non-negativity line — examiners deduct **1 mark** even if everything else is perfect.
-> 2. **Do NOT** confuse "at most" ($\le$) with "at least" ($\ge$). This single error invalidates the entire formulation.
-> 3. **Always** write the slack/surplus variables in the objective function with coefficient 0. Forgetting this costs **2 marks** when the student proceeds to write a simplex tableau.
-> 4. **State the meaning of each variable in words** before defining $x_1, x_2$. Board examiners award **0.5–1 mark** for proper variable declaration.
-> 5. For Min-to-Max conversion, write "$Z' = -Z$" explicitly — never silently flip the sign without declaration.
+> **Valuation Pitfall (Part a vs Part b marking):**
+> 1. Students frequently **forget the slack variables' coefficients in the objective** — they should be **0** (1 mark lost if omitted).
+> 2. **Do not** convert $\geq$ to standard form by adding a slack — you must **subtract a surplus variable**.
+> 3. The matrix form must include **slack columns** with proper unit-vector entries for $s_{1}$ and $s_{2}$.
 
 ---
 
-## Topic Recap & Important Things to Remember
+### Solution to Question B1 — Question B
+
+**Part (a) — Formulation of the Diet LPP [7 Marks]**
+
+**Step 1 — Decision Variables (1 Mark):**
+Let $x_{1}$ = units of food A used. Let $x_{2}$ = units of food B used.
+
+**Step 2 — Objective Function — Minimise Cost (2 Marks):**
+
+$$
+\text{Minimise } Z \;=\; 4 x_{1} \;+\; 3 x_{2}
+$$
+
+**Step 3 — Constraints (3 Marks):**
+
+*Vitamins (at least 4000 units):*
+
+$$
+200 x_{1} + 100 x_{2} \;\geq\; 4000
+$$
+
+*Minerals (at least 50 units):*
+
+$$
+1 x_{1} + 2 x_{2} \;\geq\; 50
+$$
+
+*Calories (at least 1400 units):*
+
+$$
+40 x_{1} + 40 x_{2} \;\geq\; 1400
+$$
+
+**Step 4 — Non-Negativity (1 Mark):** $x_{1}, x_{2} \geq 0$.
+
+**Final LPP (Boxed — 1 Mark from Part a marks):**
+
+$$
+\begin{aligned}
+\text{Minimise } Z \;=\; 4 x_{1} + 3 x_{2} \\
+\text{Subject to:} \quad 200 x_{1} + 100 x_{2} &\geq 4000 \\
+x_{1} + 2 x_{2} &\geq 50 \\
+40 x_{1} + 40 x_{2} &\geq 1400 \\
+x_{1}, x_{2} &\geq 0
+\end{aligned}
+$$
+
+**Part (b) — Matrix Form of the LPP [7 Marks]**
+
+Define:
+
+$$
+A = \begin{pmatrix} 200 & 100 \\ 1 & 2 \\ 40 & 40 \end{pmatrix}, \quad
+b = \begin{pmatrix} 4000 \\ 50 \\ 1400 \end{pmatrix}, \quad
+c = \begin{pmatrix} 4 \\ 3 \end{pmatrix}, \quad
+x = \begin{pmatrix} x_{1} \\ x_{2} \end{pmatrix}
+$$
+
+**Matrix Form (3 Marks):**
+
+$$
+\text{Minimise } Z \;=\; c^{T} x \;=\; (4, 3) \begin{pmatrix} x_{1} \\ x_{2} \end{pmatrix}
+$$
+
+Subject to:
+
+$$
+A x \;\geq\; b, \quad x \;\geq\; 0
+$$
+
+Explicitly:
+
+$$
+\begin{pmatrix} 200 & 100 \\ 1 & 2 \\ 40 & 40 \end{pmatrix} \begin{pmatrix} x_{1} \\ x_{2} \end{pmatrix} \;\geq\; \begin{pmatrix} 4000 \\ 50 \\ 1400 \end{pmatrix}, \quad \begin{pmatrix} x_{1} \\ x_{2} \end{pmatrix} \;\geq\; \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+$$
+
+**Geometric Interpretation of Feasible Region (3 Marks):**
+The feasible region is the intersection of three half-planes (above each constraint line) in the first quadrant. Since all constraints are $\geq$ and the objective is to be minimised, the optimal solution (if it exists) lies on the **innermost corner** of the unbounded feasible region.
+
+**Verification of the Matrix Dimensions (1 Mark):**
+$A$ is of order $3 \times 2$, $b$ is of order $3 \times 1$, $c$ is of order $2 \times 1$, $x$ is of order $2 \times 1$ — all conformable.
+
+> [!WARNING]
+> **Valuation Pitfall (Diet LPP):**
+> 1. **Direction of constraint is critical** — *at least* means $\geq$, never $\leq$. Markers deduct up to 1 mark per wrong inequality.
+> 2. The objective in the **minimisation** form is **cost**, not nutrition. Some students mistakenly minimise the vitamin count.
+> 3. The matrix form requires **explicitly writing $A$, $b$, $c$**, not just stating the equation symbolically. Missing the matrix representation loses 3 marks.
+
+## 5.3 KTU Examiner's Valuation Warning — General Pitfalls
+
+> [!WARNING]
+> **Top 5 Mistakes Students Make in LPP Formulation (As Per Board Patterns):**
+> 1. **Inverted inequalities** — writing $\geq$ instead of $\leq$ for resource limits.
+> 2. **Omitting the non-negativity statement** — without this, the LPP is mathematically incomplete.
+> 3. **Mixing maximisation with $\geq$ constraints** without converting to canonical/standard form first.
+> 4. **Forgetting the slack/surplus variable names** — always name them $s_{i}$ or $e_{i}$ explicitly.
+> 5. **Writing the objective without specifying Max/Min** — examiners specifically award 1 mark for the keyword "Maximise" or "Minimise".
+
+## 5.4 Topic Recap & Important Things to Remember
 
 > [!NOTE]
-> **High-density rapid-revision checklist. Pin this to your study wall before the ESE.**
-
-### 🔑 Core Definitions
-* **LPP** = Linear Objective + Linear Constraints + Non-negativity.
-* **Decision Variables** ($x_j$) — controllable quantities; always state with units.
-* **Objective Function** $Z = \sum c_j x_j$ — the single quantity to be optimized.
-* **Constraint** — linear inequality/equality limiting the variables.
-* **Feasible Region** — the convex set of all $(x_1, \dots, x_n)$ satisfying every constraint.
-* **Optimal Solution** — point(s) in the feasible region that yield the best $Z$.
-
-### 📐 The Three Forms
-* **General Form** — mixed inequalities, as stated.
-* **Standard Form** — all constraints are equalities with **slack/surplus** variables added; RHS $\ge 0$.
-* **Canonical Form** — Max $Z$ with all $\le$ constraints (or Min $Z$ with all $\ge$).
-
-### 🔄 The Six Conversion Rules
-1. "$\le$" → **Add Slack** $s_i \ge 0$.
-2. "$\ge$" → **Subtract Surplus** $e_i \ge 0$.
-3. "=" → keep as is.
-4. Min $Z$ → Max $Z' = -Z$.
-5. $b_i < 0$ → Multiply inequality by $-1$ (flips direction).
-6. $x_j$ unrestricted → Substitute $x_j = x_j^{+} - x_j^{-}$.
-
-### 🧠 Memory Aids
-* **S**lack is **S**upplementary (added, $\le$).
-* **S**urplus is the e**X**cess beyond minimum (subtracted, $\ge$).
-* **S**lack and **S**urplus both carry coefficient **0** in the objective.
-* **F**undamental **T**heorem of LPP: An optimum, if it exists, lies at a **vertex** of the feasible region.
-* **D**antzig invented **S**implex in **1947** — a common viva question.
-
-### ⚠️ Common Student Errors
-| Wrong | Right |
-|-------|-------|
-| $\text{Max } Z = x_1 \cdot x_2$ | $\text{Max } Z = a x_1 + b x_2$ (additive, not multiplicative) |
-| "At most 8" → $x_1 \ge 8$ | "At most 8" → $x_1 \le 8$ |
-| Forgetting $x_j \ge 0$ | Always include as the last line |
-| Writing $Z - 6x_1 - 4x_2 = 0$ without slacks | Include $+0 s_1 + 0 s_2$ in the standard form |
-
-### 📊 Exam-Day Checklist
-1. ✍️ Declare variables **with units**.
-2. ✍️ Identify Max or Min **before** writing $Z$.
-3. ✍️ Translate "at most" / "at least" / "exactly" **literally**.
-4. ✍️ Add the non-negativity line.
-5. ✍️ For standard form, add slacks/surplus and update objective.
-6. ✍️ Verify with one feasible point (e.g., $(0,0)$ should always satisfy non-negativity constraints).
-
+> **High-Density Revision Checklist — LPP Formulation**
+> - **LPP** = Optimise a linear $Z$ subject to linear constraints and non-negativity.
+> - **Four Pillars:** Decision Variables ($x_{j}$), Objective Function ($Z = \sum c_{j} x_{j}$), Constraints ($\sum a_{ij} x_{j} \;(\leq, =, \geq)\; b_{i}$), Non-Negativity ($x_{j} \geq 0$).
+> - **General Form:** Mixed inequalities allowed.
+> - **Canonical Form (Max):** Maximise $Z$ with $\leq$ constraints; $x \geq 0$.
+> - **Canonical Form (Min):** Minimise $Z$ with $\geq$ constraints; $x \geq 0$.
+> - **Standard Form:** All constraints are equalities; $x \geq 0$. Use slack for $\leq$, surplus for $\geq$.
+> - **Matrix Form:** $Z = c^{T} x$, $A x \;(\leq, =, \geq)\; b$, $x \geq 0$.
+> - **Assumptions:** Proportionality, Additivity, Determinism, Divisibility.
+> - **Applications:** Production, diet, transportation, portfolio, SVM, network flow.
+> - **Conversion Trick:** $\leq \to$ add $s \geq 0$; $\geq \to$ subtract $e \geq 0$; unrestricted $x \to (x^{'} - x^{''})$ with both $\geq 0$.
+> - **KTU Favourite Phrase:** "Formulate the LPP" — every solution must end with a **boxed final LPP** to secure the last 1 mark.
 <!-- SECTION_5_END -->

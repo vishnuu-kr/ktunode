@@ -1,0 +1,85 @@
+{
+  "course_name": "INFORMATION SECURITY",
+  "course_code": "PECST744",
+  "module_number": 2,
+  "module_title": "Software vulnerabilities",
+  "topics_generated": [
+    {
+      "title": "Software Vulnerabilities - Buffer and Stack Overflow",
+      "slug": "software-vulnerabilities-buffer-and-stack-overflow",
+      "path": "software-vulnerabilities-buffer-and-stack-overflow/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cross-site Scripting (XSS) and vulnerabilities",
+      "slug": "cross-site-scripting-xss-and-vulnerabilities",
+      "path": "cross-site-scripting-xss-and-vulnerabilities/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SQL Injection and vulnerabilities",
+      "slug": "sql-injection-and-vulnerabilities",
+      "path": "sql-injection-and-vulnerabilities/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Phishing",
+      "slug": "phishing",
+      "path": "phishing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Malwares - Viruses",
+      "slug": "malwares-viruses",
+      "path": "malwares-viruses/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Worms and Trjans",
+      "slug": "worms-and-trjans",
+      "path": "worms-and-trjans/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Topological worms",
+      "slug": "topological-worms",
+      "path": "topological-worms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Trapdoors",
+      "slug": "trapdoors",
+      "path": "trapdoors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Salami attack",
+      "slug": "salami-attack",
+      "path": "salami-attack/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Man-in-the-middle attacks",
+      "slug": "man-in-the-middle-attacks",
+      "path": "man-in-the-middle-attacks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Covert channels.",
+      "slug": "covert-channels",
+      "path": "covert-channels/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

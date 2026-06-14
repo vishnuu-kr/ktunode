@@ -1,736 +1,678 @@
 # Interpretation of the Directional Derivative
 
 <!-- SECTION_1_START -->
-
 # Interpretation of the Directional Derivative
 
-## 1.1 Formal Academic Definition (KTU 2024 Syllabus)
+## Formal Academic Definition (KTU 2024 Syllabus Terminology)
 
-Let $f : \mathbb{R}^3 \to \mathbb{R}$ be a real-valued function of three variables. Let $\mathbf{u} = (a, b, c)$ be a **unit vector** in $\mathbb{R}^3$ (i.e., $\vert \mathbf{u} \vert = 1$). The **directional derivative of $f$ at the point $P(x_0, y_0, z_0)$ in the direction of $\mathbf{u}$** is defined as the limit:
-
-$$
-D_{\mathbf{u}} f(x_0, y_0, z_0) = \lim_{h \to 0} \frac{f(x_0 + ah,\; y_0 + bh,\; z_0 + ch) - f(x_0, y_0, z_0)}{h}
-$$
-
-provided the limit exists. In vector notation, this compactly becomes:
-
-$$
-D_{\mathbf{u}} f \Big\vert_{P} = \lim_{h \to 0} \frac{f(P + h\mathbf{u}) - f(P)}{h}
-$$
+Let $f: \mathbb{R}^{3} \to \mathbb{R}$ be a real-valued function defined on an open set $U \subset \mathbb{R}^{3}$, and let $P = (x_0, y_0, z_0)$ be a point in $U$. Let $\mathbf{u} = \langle u_1, u_2, u_3 \rangle$ be a **unit vector** in $\mathbb{R}^{3}$ (so that $\lVert \mathbf{u} \rVert = 1$).
 
 > [!IMPORTANT]
-> **KTU 2024 Syllabus Highlight:** For a function of three variables $f(x, y, z)$, the directional derivative in the direction of any non-zero vector $\mathbf{v}$ is computed as $D_{\mathbf{v}} f = \nabla f \cdot \hat{\mathbf{v}}$, where $\hat{\mathbf{v}}$ is the **unit vector** in the direction of $\mathbf{v}$. A directional derivative is **undefined** for the zero vector $\mathbf{0}$.
+> **Directional Derivative (Board Definition):**
+> The **directional derivative** of $f$ at $P$ in the direction of $\mathbf{u}$, denoted $D_{\mathbf{u}}f(P)$, is defined by the limit
+> $$D_{\mathbf{u}}f(x_0, y_0, z_0) = \lim_{h \to 0} \frac{f(x_0 + h u_1,\; y_0 + h u_2,\; z_0 + h u_3) - f(x_0, y_0, z_0)}{h}$$
+> provided this limit exists. The quantity $D_{\mathbf{u}}f(P)$ represents the **instantaneous rate of change** of $f$ at $P$ per unit distance, measured along the ray emanating from $P$ in the direction of $\mathbf{u}$.
 
-## 1.2 Conceptual Analogy & Geometric Intuition
+If $f$ is **differentiable** at $P$, the limit can be compactly evaluated using the **gradient operator** $\nabla f = \langle f_x, f_y, f_z \rangle$ as
+$$D_{\mathbf{u}}f(P) = \nabla f(P) \cdot \mathbf{u} = f_x(P)\,u_1 + f_y(P)\,u_2 + f_z(P)\,u_3$$
+
+---
+
+## Conceptual Analogy & Intuitive Overview
 
 > [!NOTE]
-> **Real-World Analogy — The Mountain Hike**
-> Imagine you are standing on a mountain whose height at coordinate $(x, y, z)$ is given by $h(x, y, z)$. If you walk **due North** (some specific direction), the rate at which your altitude changes per unit distance walked is the directional derivative in that direction. If instead you walk in the direction of the **steepest ascent** of the mountain, the directional derivative reaches its **maximum possible value**, and that value equals the magnitude of the gradient $\vert \nabla h \vert$.
+> **The Mountain Hiker Analogy (Geometric Intuition)**
+> Imagine you are standing on a mountainous terrain whose altitude at the point $(x, y, z)$ is described by the scalar field $f(x, y, z)$ — for instance, a 3-D surface defined by the temperature $T(x, y, z)$ measured at every point in a room, or the altitude $h(x, y, z)$ of a hill.
+>
+> The **partial derivatives** $f_x$, $f_y$, and $f_z$ tell you the slope of the terrain only when you walk along the **coordinate axes** (East, North, or Up). But what if you want to know how fast you are climbing when you walk in an **arbitrary direction** $\mathbf{u}$ — say, Northeast and slightly upward, all at once? That is exactly what the directional derivative answers.
+>
+> - If $D_{\mathbf{u}}f > 0$ → $f$ is **increasing** in direction $\mathbf{u}$ (you are going uphill).
+> - If $D_{\mathbf{u}}f < 0$ → $f$ is **decreasing** in direction $\mathbf{u}$ (you are going downhill).
+> - If $D_{\mathbf{u}}f = 0$ → $f$ is **constant** to first order in direction $\mathbf{u}$ (you are on a level tangent path).
 
-**Plain English Interpretation:**
-- The **partial derivatives** $f_x, f_y, f_z$ are directional derivatives along the **coordinate axes** (i.e., $\hat{i}, \hat{j}, \hat{k}$).
-- The directional derivative generalizes this: it answers the question, *"How fast is $f$ changing if I move in direction $\mathbf{u}$?"*
-- The **gradient** $\nabla f$ is the special direction in which $f$ increases the fastest, and its **magnitude** is the maximum possible rate of change.
+### Physical Interpretations Across Information Science
 
-## 1.3 Physical Constants & Standard Metrics
+| Discipline | Scalar Field $f$ | Directional Derivative Meaning |
+|---|---|---|
+| **Thermal Engineering** | Temperature $T(x,y,z)$ | Heat flow rate per unit length in a chosen direction |
+| **Computer Graphics** | Light intensity / Z-buffer depth | Rate of brightness change across a 3-D surface |
+| **Machine Learning** | Loss function $L(\theta_1, \theta_2, \theta_3)$ | Rate of loss change along a chosen update vector $\mathbf{u}$ |
+| **Electromagnetics** | Electric potential $V(x,y,z)$ | Component of the electric field along $\mathbf{u}$ |
+| **Data Science / Heat Maps** | Probability density $p(x,y,z)$ | Local steepness along a given sampling direction |
 
-| Constant / Metric | Symbol | Value / Description |
-| :--- | :---: | :--- |
-| Unit vector in $\mathbb{R}^3$ | $\hat{\mathbf{u}}$ | $\hat{\mathbf{u}} = \frac{\mathbf{v}}{\vert \mathbf{v} \vert}$, $\vert \hat{\mathbf{u}} \vert = \mathbf{1}$ |
-| Gradient operator (del) | $\nabla$ | $\nabla = \hat{i}\dfrac{\partial}{\partial x} + \hat{j}\dfrac{\partial}{\partial y} + \hat{k}\dfrac{\partial}{\partial z}$ |
-| Zero vector (undefined direction) | $\mathbf{0}$ | $(\mathbf{0},\mathbf{0},\mathbf{0})$ — **directional derivative not defined** |
-| Range of $D_{\mathbf{u}} f$ | $\big[-\vert \nabla f \vert, \vert \nabla f \vert \big]$ | Bounded by magnitude of gradient |
+> [!TIP]
+> **Why $\mathbf{u}$ MUST be a unit vector?**
+> Because the denominator $h$ measures the **actual geometric distance** traveled along the ray. If $\lVert \mathbf{u} \rVert \neq 1$, then the quantity $h u_i$ would be measuring something other than a true Euclidean displacement, and the limit would no longer represent a "rate per unit length". KTU examiners specifically check whether you have **normalized** the direction vector — this is a common 1-mark deduction point.
+
+---
+
+## GeoGebra / Desmos Visualization Callout
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** 3D Surface $f(x,y,z) = x^2 + y^2 + z^2$ with gradient and directional vectors at point $P(1, 1, 1)$.
+> **Concept:** Directional derivative on a 3-D scalar surface $f(x, y, z) = x^2 + y^2 + z^2$ at the point $P = (1, 1, 1)$.
 >
-> **GeoGebra / Desmos 3D Input Equations:**
-> * Surface: $f(x, y, z) = x^2 + y^2 + z^2$
-> * Point of interest: $P = (1, 1, 1)$
-> * Gradient vector: $\nabla f = (2, 2, 2)$ — direction of steepest ascent
-> * Custom unit vector: $\mathbf{u}_1 = \left(\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}\right)$ — same as gradient direction
-> * Custom unit vector: $\mathbf{u}_2 = (0, 1, 0)$ — partial derivative direction
-> * Custom unit vector: $\mathbf{u}_3 = \left(\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}, 0\right)$ — direction perpendicular to gradient
+> **GeoGebra / Desmos Input Equations (use 3-D Graphing mode):**
+> * Surface: `f(x, y, z) = x^2 + y^2 + z^2`
+> * Point: `P = (1, 1, 1)`
+> * Direction unit vector: `u = (1/√3, 1/√3, 1/√3)` (the normalized diagonal)
+> * Gradient at P: `grad_f = (2, 2, 2)`
+> * Directional derivative: `D_u f = dot(grad_f, u) = 2·(1/√3) + 2·(1/√3) + 2·(1/√3) = 2√3`
 >
-> **Visual Description:** The student should observe a paraboloid opening upward, with the gradient vector at $P$ pointing radially outward (the steepest uphill direction). The directional derivative is **maximum** along $\mathbf{u}_1$ (value $2\sqrt{3}$), **intermediate** along $\mathbf{u}_2$ (value $2$), and **zero** along $\mathbf{u}_3$ (since $\mathbf{u}_3 \perp \nabla f$).
+> **Visual Description:** The student should observe a paraboloid opening upward. From $P = (1,1,1)$, the gradient $\nabla f$ points radially outward. The directional derivative $D_{\mathbf{u}} f$ reaches its **maximum value** ($= 2\sqrt{3}$) when $\mathbf{u}$ is chosen **parallel** to the gradient, and its **minimum value** ($= -2\sqrt{3}$) when $\mathbf{u}$ is **antiparallel** to the gradient.
 
+---
+
+## Position Within Module 3 (KTU 2024 Scheme Context)
+
+This sub-topic directly extends the **chain rule for functions of three variables** by providing a geometric interpretation: as a particle moves along a smooth curve $\mathbf{r}(t)$ embedded in $\mathbb{R}^{3}$, the rate of change of a scalar field $f$ along the path is precisely the **directional derivative** in the direction of the unit tangent vector $\mathbf{T} = \dfrac{\mathbf{r}'(t)}{\lVert \mathbf{r}'(t) \rVert}$. This is a high-weight topic in KTU ESE questions (typically 7 to 14 marks).
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Operational Logic — Step-by-Step Breakdown
+## Step-by-Step Theoretical Decomposition
 
-The directional derivative in three variables follows a clear computational pipeline. Each step is essential for KTU board-level answers.
+### Step 1 — Why a New Concept Was Needed
+Partial derivatives $f_x$, $f_y$, $f_z$ only capture rates of change along coordinate axes. In information science, the natural "axis" is rarely aligned with $x$, $y$, or $z$. We need a tool to measure change along **any** direction.
 
-**Step 1 — Identify the function and the point of evaluation.**
-*Why:* The directional derivative is a *local* property; it is computed *at a specific point* in the domain.
-*How:* Read off $f(x, y, z)$ and the point $P(x_0, y_0, z_0)$ from the problem statement.
+### Step 2 — The Limit Definition (Foundation)
+The directional derivative is built from the same delta-quotient idea as a 1-variable derivative, but the increment is now a vector of size $h$ scaled by $\mathbf{u}$:
+$$D_{\mathbf{u}}f(P) = \lim_{h \to 0} \frac{f(P + h\mathbf{u}) - f(P)}{h}$$
+The directional derivative is essentially a **one-variable derivative** of the composite function $g(h) = f(P + h\mathbf{u})$ evaluated at $h = 0$. That is,
+$$D_{\mathbf{u}}f(P) = g'(0), \quad \text{where } g(h) = f(x_0 + h u_1,\; y_0 + h u_2,\; z_0 + h u_3)$$
 
-**Step 2 — Normalize the direction vector into a unit vector.**
-*Why:* The definition of $D_{\mathbf{u}} f$ requires $\mathbf{u}$ to be a unit vector to measure the *rate per unit distance*.
-*How:* Given a direction vector $\mathbf{v} = (v_1, v_2, v_3)$, compute
-$$\hat{\mathbf{u}} = \frac{\mathbf{v}}{\vert \mathbf{v} \vert} = \left(\frac{v_1}{\sqrt{v_1^2+v_2^2+v_3^2}},\; \frac{v_2}{\sqrt{v_1^2+v_2^2+v_3^2}},\; \frac{v_3}{\sqrt{v_1^2+v_2^2+v_3^2}}\right)$$
+### Step 3 — The Gradient Shortcut (Computational Engine)
+Applying the multivariable chain rule to $g(h)$:
+$$g'(h) = f_x \cdot \frac{dx}{dh} + f_y \cdot \frac{dy}{dh} + f_z \cdot \frac{dz}{dh} = f_x u_1 + f_y u_2 + f_z u_3$$
+Setting $h = 0$ gives the **dot-product form**:
+$$\boxed{D_{\mathbf{u}}f(P) = \nabla f(P) \cdot \mathbf{u}}$$
 
-**Step 3 — Compute the gradient $\nabla f$ at the given point.**
-*Why:* The gradient encodes the full first-order information of $f$ in a single vector.
-*How:*
-$$\nabla f = \left(\frac{\partial f}{\partial x},\; \frac{\partial f}{\partial y},\; \frac{\partial f}{\partial z}\right) \Bigg\vert_{P}$$
+### Step 4 — Directional Cosines Form
+If $\mathbf{u}$ makes angles $\alpha, \beta, \gamma$ with the positive $x$-, $y$-, $z$-axes respectively, then $u_1 = \cos \alpha$, $u_2 = \cos \beta$, $u_3 = \cos \gamma$, and
+$$D_{\mathbf{u}}f = f_x \cos \alpha + f_y \cos \beta + f_z \cos \gamma$$
 
-**Step 4 — Take the dot product $\nabla f \cdot \hat{\mathbf{u}}$.**
-*Why:* This is the master formula combining all the geometric information.
-*How:* $D_{\hat{\mathbf{u}}} f = f_x \cdot u_1 + f_y \cdot u_2 + f_z \cdot u_3$.
+### Step 5 — Three Key Geometric Identities (Board Favorites)
+By the Cauchy–Schwarz inequality applied to $\nabla f \cdot \mathbf{u}$:
+1. **Maximum** directional derivative occurs when $\mathbf{u} \parallel \nabla f$: $\max D_{\mathbf{u}} f = \lVert \nabla f \rVert$, attained at $\mathbf{u} = \dfrac{\nabla f}{\lVert \nabla f \rVert}$.
+2. **Minimum** directional derivative occurs when $\mathbf{u} \parallel -\nabla f$: $\min D_{\mathbf{u}} f = -\lVert \nabla f \rVert$.
+3. **Zero** directional derivative occurs for any $\mathbf{u} \perp \nabla f$ (i.e., tangent to the **level surface** $f = c$ passing through $P$).
 
-**Step 5 — Interpret the sign of the result.**
-* Positive: $f$ **increases** in the direction of $\mathbf{u}$.
-* Negative: $f$ **decreases** in the direction of $\mathbf{u}$.
-* Zero: $\mathbf{u}$ is **perpendicular** to $\nabla f$, and $f$ is momentarily constant along that direction.
+> [!IMPORTANT]
+> **Geometric Statement (KTU High-Yield):**
+> The gradient $\nabla f(P)$ is **perpendicular to the level surface** $f(x, y, z) = c$ at $P$, and it points in the direction of **steepest ascent** of $f$.
 
-## 2.2 KTU Formula Sheet / Cheat Sheet
+### Step 6 — Why the Differentiability Assumption Matters
+The dot-product formula $D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u}$ is **valid only when $f$ is differentiable** at $P$. If $f$ is merely continuous, the limit definition must be used directly. KTU questions often include a "verify differentiability" sub-step before computing the directional derivative.
 
-> [!NOTE]
-> The following table consolidates **all** formulas needed for Part A and Part B questions on this topic.
+---
 
-| # | Formula / Theorem | Mathematical Statement | When to Use |
-| :---: | :--- | :--- | :--- |
-| 1 | Directional Derivative (Definition) | $D_{\mathbf{u}} f = \displaystyle\lim_{h \to 0} \frac{f(P + h\mathbf{u}) - f(P)}{h}$ | When verifying from first principles |
-| 2 | Directional Derivative (Gradient Form) | $D_{\mathbf{u}} f = \nabla f \cdot \hat{\mathbf{u}}$ | The **standard KTU** computation method |
-| 3 | Unit Vector Normalization | $\hat{\mathbf{u}} = \dfrac{\mathbf{v}}{\vert \mathbf{v} \vert}$ | To convert a direction into unit form |
-| 4 | Gradient in $\mathbb{R}^3$ | $\nabla f = (f_x, f_y, f_z)$ | Foundation of every problem |
-| 5 | Maximum Directional Derivative | $\max D_{\mathbf{u}} f = \vert \nabla f \vert$ | When asked: *"direction of steepest ascent"* |
-| 6 | Minimum Directional Derivative | $\min D_{\mathbf{u}} f = -\vert \nabla f \vert$ | When asked: *"direction of steepest descent"* |
-| 7 | Direction of Max Increase | $\hat{\mathbf{u}}_{\max} = \dfrac{\nabla f}{\vert \nabla f \vert}$ | Vector along which $f$ rises fastest |
-| 8 | Direction of Max Decrease | $\hat{\mathbf{u}}_{\min} = -\dfrac{\nabla f}{\vert \nabla f \vert}$ | Vector along which $f$ falls fastest |
-| 9 | Zero Directional Derivative | $D_{\mathbf{u}} f = 0 \iff \nabla f \perp \mathbf{u}$ | Level-curve / level-surface tangents |
-| 10 | Range of $D_{\mathbf{u}} f$ | $\big[-\vert \nabla f \vert,\; \vert \nabla f \vert \big]$ | Bounded-rate property |
-| 11 | Cauchy–Schwarz Bound | $\vert D_{\mathbf{u}} f \vert \le \vert \nabla f \vert \cdot \vert \hat{\mathbf{u}} \vert = \vert \nabla f \vert$ | Justification of maximum principle |
-| 12 | Chain Rule (3-Variable) | $\dfrac{df}{dt} = \nabla f \cdot \dfrac{d\mathbf{r}}{dt}$ | When $f$ is composed with $\mathbf{r}(t)$ |
+## KTU Formula Sheet / Cheat Sheet
 
-## 2.3 Real-World Utility in Engineering & Computer Science
+| **Formula / Identity** | **Statement** | **Conditions / Units** |
+|---|---|---|
+| Limit definition | $D_{\mathbf{u}}f = \displaystyle\lim_{h \to 0} \dfrac{f(P+h\mathbf{u}) - f(P)}{h}$ | Requires $\lVert \mathbf{u} \rVert = 1$ |
+| Gradient form | $D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u} = f_x u_1 + f_y u_2 + f_z u_3$ | $f$ differentiable at $P$ |
+| Direction cosines | $D_{\mathbf{u}}f = f_x \cos\alpha + f_y \cos\beta + f_z \cos\gamma$ | $\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1$ |
+| Maximum | $\max D_{\mathbf{u}}f = \lVert \nabla f \rVert = \sqrt{f_x^2 + f_y^2 + f_z^2}$ | Direction $\mathbf{u}_{\max} = \dfrac{\nabla f}{\lVert \nabla f \rVert}$ |
+| Minimum | $\min D_{\mathbf{u}}f = -\lVert \nabla f \rVert$ | Direction $\mathbf{u}_{\min} = -\dfrac{\nabla f}{\lVert \nabla f \rVert}$ |
+| Zero derivative | $D_{\mathbf{u}}f = 0 \iff \mathbf{u} \perp \nabla f$ | $\mathbf{u}$ lies in the tangent plane of the level surface |
+| Gradient magnitude | $\lVert \nabla f \rVert = \sqrt{f_x^2 + f_y^2 + f_z^2}$ | Units: change in $f$ per unit length |
+| Unit vector normalization | $\mathbf{u} = \dfrac{\langle a, b, c \rangle}{\sqrt{a^2 + b^2 + c^2}}$ | Required before using $D_{\mathbf{u}}f$ formula |
+| Chain rule link | $\dfrac{d}{dt} f(\mathbf{r}(t)) = \nabla f \cdot \mathbf{r}'(t) = \lVert \nabla f \rVert \dfrac{d s}{dt} \cos \theta$ | $s$ = arc length, $\theta$ = angle between $\nabla f$ and $\mathbf{r}'(t)$ |
 
-* **Machine Learning / Deep Learning:** The **gradient descent** algorithm literally uses the negative gradient $-\nabla f$ to minimize a loss function $f(\mathbf{w})$ in the weight space $\mathbb{R}^n$. The directional derivative guarantees this is the *fastest* descent direction.
-* **Computer Graphics:** Surface normal vectors, lighting calculations, and bump mapping rely on gradients of height functions $h(x, y, z)$.
-* **Fluid Dynamics / Heat Transfer:** The heat flux vector is $-\nabla T$ where $T(x, y, z)$ is temperature; the directional derivative $D_{\mathbf{u}} T$ tells us the temperature change along any line in space.
-* **Optimization (Production Systems):** Constrained optimization, max-flow/min-cut problems in networks, and engineering design problems all use the directional derivative as a sensitivity measure.
-* **Robotics & Path Planning:** A robot moving on a terrain $z = f(x, y)$ uses directional derivatives to compute the steepest uphill / downhill direction for path planning.
+---
 
+## Real-World Engineering Utility
+
+- **Optimization algorithms (Gradient Descent):** In machine learning, we update weights $\boldsymbol{\theta}$ using $\boldsymbol{\theta}_{n+1} = \boldsymbol{\theta}_n - \eta \nabla L(\boldsymbol{\theta}_n)$. This moves the parameters in the direction of **steepest descent** of the loss — a direct application of the directional derivative interpretation.
+- **Heat conduction (Fourier's Law):** The heat flux $\mathbf{q} = -k \nabla T$ flows in the direction of steepest temperature descent. The directional derivative of temperature gives the local heat flow rate.
+- **Computer vision / Edge detection:** The image intensity gradient $\nabla I$ points perpendicular to edges; the directional derivative detects edge strength in any chosen direction.
+- **Robotics path planning:** The directional derivative of a potential field guides the robot to climb toward the goal while avoiding obstacles.
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-
 # Step-by-Step Derivations & Symbolic Implementation
 
-## 3.1 Exhaustive Derivation: From Limit Definition to $\nabla f \cdot \hat{\mathbf{u}}$
+## Derivation 1 — From the Limit Definition to the Gradient Dot-Product Form
 
-**Theorem:** If $f(x, y, z)$ is differentiable at $P(x_0, y_0, z_0)$ and $\mathbf{u} = (a, b, c)$ is a unit vector, then
+We want to show rigorously that
+$$D_{\mathbf{u}}f(x_0, y_0, z_0) = \lim_{h \to 0} \frac{f(x_0 + h u_1,\; y_0 + h u_2,\; z_0 + h u_3) - f(x_0, y_0, z_0)}{h} = \nabla f \cdot \mathbf{u}$$
 
-$$
-D_{\mathbf{u}} f \Big\vert_{P} = \nabla f \cdot \mathbf{u} = a\, f_x + b\, f_y + c\, f_z
-$$
+### Step 1: Apply the Total Differential Approximation
+Since $f$ is differentiable at $P = (x_0, y_0, z_0)$, the total differential gives the linear approximation
+$$f(x_0 + \Delta x,\; y_0 + \Delta y,\; z_0 + \Delta z) - f(x_0, y_0, z_0) \approx f_x \,\Delta x + f_y \,\Delta y + f_z \,\Delta z$$
+where $\Delta x = h u_1$, $\Delta y = h u_2$, $\Delta z = h u_3$.
 
-**Proof (Step-by-Step):**
+### Step 2: Substitute the Increments
+$$f(P + h\mathbf{u}) - f(P) \approx f_x (h u_1) + f_y (h u_2) + f_z (h u_3) = h(f_x u_1 + f_y u_2 + f_z u_3)$$
 
-Let $P = (x_0, y_0, z_0)$ and consider the auxiliary function
+### Step 3: Form the Difference Quotient
+$$\frac{f(P + h\mathbf{u}) - f(P)}{h} \approx f_x u_1 + f_y u_2 + f_z u_3$$
 
-$$
-g(h) = f(x_0 + ah,\; y_0 + bh,\; z_0 + ch)
-$$
+### Step 4: Take the Limit as $h \to 0$
+$$\lim_{h \to 0} \frac{f(P + h\mathbf{u}) - f(P)}{h} = f_x u_1 + f_y u_2 + f_z u_3 = \langle f_x, f_y, f_z \rangle \cdot \langle u_1, u_2, u_3 \rangle$$
 
-By the definition of the directional derivative:
+### Step 5: Final Compact Form
+$$\boxed{D_{\mathbf{u}}f(P) = \nabla f(P) \cdot \mathbf{u}}$$
 
-$$
-D_{\mathbf{u}} f = \lim_{h \to 0} \frac{g(h) - g(0)}{h}
-$$
-
-Applying the **multivariable chain rule** to $g(h)$:
-
-$$
-g'(h) = \frac{\partial f}{\partial x}\cdot \frac{dx}{dh} + \frac{\partial f}{\partial y}\cdot \frac{dy}{dh} + \frac{\partial f}{\partial z}\cdot \frac{dz}{dh}
-$$
-
-Since $x = x_0 + ah$, $y = y_0 + bh$, $z = z_0 + ch$, we have $\dfrac{dx}{dh} = a$, $\dfrac{dy}{dh} = b$, $\dfrac{dz}{dh} = c$. Substituting:
-
-$$
-g'(h) = a\, \frac{\partial f}{\partial x} + b\, \frac{\partial f}{\partial y} + c\, \frac{\partial f}{\partial z}
-$$
-
-Taking the limit as $h \to 0$ (the point approaches $P$):
-
-$$
-D_{\mathbf{u}} f \Big\vert_{P} = a\, f_x(P) + b\, f_y(P) + c\, f_z(P) = \nabla f(P) \cdot \mathbf{u}
-$$
-
-This completes the proof. $\blacksquare$
+The error term $o(h)$ in the differentiability definition vanishes in the limit, validating the formula.
 
 ---
 
-## 3.2 Worked Example — Direction of Steepest Ascent and Descent
+## Derivation 2 — Connection to the Chain Rule (Module 3 Anchor)
 
-**Problem:** Find the directional derivative of $f(x, y, z) = x^2 + y^2 + z^2$ at $P(1, 1, 1)$ in the direction of the vector $\mathbf{v} = (2, -1, 2)$. Also find the direction of steepest ascent at $P$.
+Let $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ be a smooth curve passing through $P$ at $t = t_0$, with $\mathbf{r}(t_0) = P$, and let $\mathbf{T} = \dfrac{\mathbf{r}'(t_0)}{\lVert \mathbf{r}'(t_0) \rVert}$ be its unit tangent vector. By the chain rule,
+$$\frac{d}{dt} f(\mathbf{r}(t))\bigg|_{t=t_0} = f_x \frac{dx}{dt} + f_y \frac{dy}{dt} + f_z \frac{dz}{dt}\bigg|_{t=t_0} = \nabla f(P) \cdot \mathbf{r}'(t_0)$$
 
-**Solution — Step 1: Normalize the direction vector.**
+Now rewrite using arc-length parameterization $s(t)$ with $\dfrac{ds}{dt} = \lVert \mathbf{r}'(t_0) \rVert$:
+$$\frac{d}{dt} f(\mathbf{r}(t))\bigg|_{t=t_0} = \lVert \nabla f(P) \rVert \cdot \lVert \mathbf{r}'(t_0) \rVert \cdot \cos\theta = \frac{df}{ds} \cdot \lVert \mathbf{r}'(t_0) \rVert$$
 
-$$
-\vert \mathbf{v} \vert = \sqrt{2^2 + (-1)^2 + 2^2} = \sqrt{4 + 1 + 4} = \sqrt{9} = 3
-$$
+Dividing both sides by $\lVert \mathbf{r}'(t_0) \rVert$ gives
+$$\frac{df}{ds}\bigg|_{P} = \nabla f(P) \cdot \mathbf{T} = D_{\mathbf{T}} f(P)$$
 
-$$
-\hat{\mathbf{u}} = \frac{\mathbf{v}}{\vert \mathbf{v} \vert} = \left(\frac{2}{3},\; -\frac{1}{3},\; \frac{2}{3}\right)
-$$
-
-**Step 2: Compute the partial derivatives.**
-
-$$
-f_x = 2x, \quad f_y = 2y, \quad f_z = 2z
-$$
-
-**Step 3: Evaluate the gradient at $P(1, 1, 1)$.**
-
-$$
-\nabla f(1, 1, 1) = (2(1),\; 2(1),\; 2(1)) = (2, 2, 2)
-$$
-
-**Step 4: Take the dot product with $\hat{\mathbf{u}}$.**
-
-$$
-D_{\hat{\mathbf{u}}} f = (2, 2, 2) \cdot \left(\frac{2}{3},\; -\frac{1}{3},\; \frac{2}{3}\right)
-$$
-
-$$
-= 2 \cdot \frac{2}{3} + 2 \cdot \left(-\frac{1}{3}\right) + 2 \cdot \frac{2}{3}
-$$
-
-$$
-= \frac{4}{3} - \frac{2}{3} + \frac{4}{3} = \frac{6}{3} = 2
-$$
-
-**Step 5: Direction of steepest ascent.**
-
-The magnitude of the gradient gives the maximum rate:
-
-$$
-\vert \nabla f(1, 1, 1) \vert = \sqrt{2^2 + 2^2 + 2^2} = \sqrt{12} = 2\sqrt{3}
-$$
-
-The unit vector in this direction is:
-
-$$
-\hat{\mathbf{u}}_{\max} = \frac{\nabla f}{\vert \nabla f \vert} = \left(\frac{1}{\sqrt{3}},\; \frac{1}{\sqrt{3}},\; \frac{1}{\sqrt{3}}\right)
-$$
-
-**Final Answer:** $D_{\hat{\mathbf{u}}} f = 2$. The direction of steepest ascent is $\left(\dfrac{1}{\sqrt{3}}, \dfrac{1}{\sqrt{3}}, \dfrac{1}{\sqrt{3}}\right)$ with maximum rate $2\sqrt{3}$. The direction of steepest descent is $\left(-\dfrac{1}{\sqrt{3}}, -\dfrac{1}{\sqrt{3}}, -\dfrac{1}{\sqrt{3}}\right)$ with rate $-2\sqrt{3}$.
+> [!NOTE]
+> **Interpretation:** The directional derivative $D_{\mathbf{u}}f$ is exactly the rate of change of $f$ with respect to arc length $s$ along a curve whose unit tangent vector at $P$ equals $\mathbf{u}$.
 
 ---
 
-## 3.3 Symbolic Computation Using Python
+## Worked Example — Full Numerical Walkthrough
+
+**Problem:** Let $f(x, y, z) = x^2 y + y z^2 - z x$. Compute the directional derivative of $f$ at $P = (1, -1, 2)$ in the direction of the vector $\mathbf{v} = \langle 2, -1, 2 \rangle$.
+
+### Step 1: Compute the Partial Derivatives
+$$f_x = \frac{\partial}{\partial x}(x^2 y + y z^2 - z x) = 2xy - z$$
+$$f_y = \frac{\partial}{\partial y}(x^2 y + y z^2 - z x) = x^2 + z^2$$
+$$f_z = \frac{\partial}{\partial z}(x^2 y + y z^2 - z x) = 2yz - x$$
+
+### Step 2: Evaluate the Gradient at $P = (1, -1, 2)$
+$$f_x(1, -1, 2) = 2(1)(-1) - 2 = -2 - 2 = -4$$
+$$f_y(1, -1, 2) = (1)^2 + (2)^2 = 1 + 4 = 5$$
+$$f_z(1, -1, 2) = 2(-1)(2) - 1 = -4 - 1 = -5$$
+
+So
+$$\nabla f(1, -1, 2) = \langle -4,\; 5,\; -5 \rangle$$
+
+### Step 3: Normalize the Direction Vector
+$$\lVert \mathbf{v} \rVert = \sqrt{2^2 + (-1)^2 + 2^2} = \sqrt{4 + 1 + 4} = \sqrt{9} = 3$$
+$$\mathbf{u} = \frac{\mathbf{v}}{\lVert \mathbf{v} \rVert} = \left\langle \frac{2}{3},\; -\frac{1}{3},\; \frac{2}{3} \right\rangle$$
+
+> [!WARNING]
+> **Common Mistake:** Forgetting the normalization step. KTU examiners deduct **1 mark** if you use $\mathbf{v}$ directly without dividing by $\lVert \mathbf{v} \rVert$.
+
+### Step 4: Compute the Dot Product
+$$D_{\mathbf{u}}f(1, -1, 2) = \langle -4, 5, -5 \rangle \cdot \left\langle \frac{2}{3}, -\frac{1}{3}, \frac{2}{3} \right\rangle$$
+$$= (-4)\left(\frac{2}{3}\right) + (5)\left(-\frac{1}{3}\right) + (-5)\left(\frac{2}{3}\right)$$
+$$= -\frac{8}{3} - \frac{5}{3} - \frac{10}{3}$$
+$$= -\frac{23}{3}$$
+
+### Step 5: Final Answer and Interpretation
+$$\boxed{D_{\mathbf{u}}f(1, -1, 2) = -\frac{23}{3} \approx -7.667}$$
+
+**Interpretation:** The function $f$ is **decreasing** at the rate of $\dfrac{23}{3}$ units per unit length as we move from $P$ in the direction of $\mathbf{v}$. Equivalently, walking in the opposite direction $-\mathbf{v}$ would cause $f$ to **increase** at $\dfrac{23}{3}$ units per unit length.
+
+### Step 6 (Optional): Maximum Directional Derivative
+$$\lVert \nabla f(1, -1, 2) \rVert = \sqrt{(-4)^2 + 5^2 + (-5)^2} = \sqrt{16 + 25 + 25} = \sqrt{66}$$
+The maximum rate of increase is $\sqrt{66}$, occurring in the direction $\mathbf{u}_{\max} = \dfrac{1}{\sqrt{66}}\langle -4, 5, -5 \rangle$.
+
+---
+
+## Python Symbolic Implementation
 
 ```python
 import numpy as np
-from typing import Tuple
+import sympy as sp
 
-def gradient_three_var(f_partials: Tuple[float, float, float]) -> np.ndarray:
-    """
-    Construct the gradient vector from evaluated partial derivatives.
-    
-    Parameters
-    ----------
-    f_partials : tuple of (f_x, f_y, f_z) evaluated at a point P.
-    
-    Returns
-    -------
-    grad : np.ndarray of shape (3,), the gradient vector at P.
-    """
-    grad = np.array(f_partials, dtype=float)
-    if grad.shape != (3,):
-        raise ValueError("Exactly 3 partial derivatives (f_x, f_y, f_z) are required.")
-    return grad
+# --- Step 1: Define symbols and the scalar field ---
+x, y, z = sp.symbols('x y z', real=True)
+f = x**2 * y + y * z**2 - z * x
 
+# --- Step 2: Compute the gradient symbolically ---
+grad_f = sp.Matrix([sp.diff(f, var) for var in (x, y, z)])
+print("Gradient (symbolic):")
+sp.pprint(grad_f)
 
-def unit_vector(v: np.ndarray) -> np.ndarray:
-    """
-    Normalize a non-zero 3D vector into a unit vector.
-    Raises an error if v is the zero vector.
-    """
-    v = np.asarray(v, dtype=float)
-    norm = np.linalg.norm(v)
-    if norm == 0.0:
-        raise ZeroDivisionError(
-            "Directional derivative is UNDEFINED for the zero vector."
-        )
-    return v / norm
+# --- Step 3: Evaluate the gradient at P = (1, -1, 2) ---
+P = {x: 1, y: -1, z: 2}
+grad_at_P = grad_f.subs(P)
+print(f"\nGradient at P = (1, -1, 2): {tuple(grad_at_P)}")
 
+# --- Step 4: Normalize the direction vector ---
+v = sp.Matrix([2, -1, 2])
+v_norm = v.norm()
+u = v / v_norm
+print(f"Unit vector u = {tuple(u)}")
 
-def directional_derivative(
-    grad_at_P: np.ndarray,
-    direction: np.ndarray
-) -> float:
-    """
-    Compute D_u f = grad_f . u_hat, where u_hat is the unit direction.
-    
-    Parameters
-    ----------
-    grad_at_P : np.ndarray of shape (3,)
-    direction  : np.ndarray of shape (3,)  (will be normalized internally)
-    
-    Returns
-    -------
-    D_u f as a Python float.
-    """
-    u_hat = unit_vector(direction)
-    return float(np.dot(grad_at_P, u_hat))
+# --- Step 5: Compute the directional derivative ---
+D_u_f = grad_at_P.dot(u)
+print(f"\nDirectional derivative D_u f(P) = {D_u_f} = {float(D_u_f):.6f}")
 
-
-def max_and_min_directional(grad_at_P: np.ndarray) -> Tuple[float, float, np.ndarray, np.ndarray]:
-    """
-    Return (max_rate, min_rate, u_max, u_min) at the given point.
-    """
-    magnitude = np.linalg.norm(grad_at_P)
-    if magnitude == 0.0:
-        raise ValueError("Gradient is zero; all directional derivatives are 0.")
-    u_max = grad_at_P / magnitude
-    u_min = -u_max
-    return magnitude, -magnitude, u_max, u_min
-
-
-# ---------- Demonstration: f(x,y,z) = x^2 + y^2 + z^2 at P(1,1,1) ----------
-if __name__ == "__main__":
-    # Gradient at P(1,1,1) is (2, 2, 2)
-    grad_P = gradient_three_var((2.0, 2.0, 2.0))
-    
-    # Direction v = (2, -1, 2)
-    v = np.array([2.0, -1.0, 2.0])
-    
-    D_u = directional_derivative(grad_P, v)
-    print(f"Directional derivative in direction (2,-1,2): {D_u:.4f}")
-    
-    max_rate, min_rate, u_max, u_min = max_and_min_directional(grad_P)
-    print(f"Maximum rate  |grad f|       = {max_rate:.4f}  (along {u_max})")
-    print(f"Minimum rate  -|grad f|      = {min_rate:.4f}  (along {u_min})")
-    
-    # Perpendicular direction: dot product must be 0
-    u_perp = np.array([1.0, -1.0, 0.0]) / np.sqrt(2)
-    D_perp = directional_derivative(grad_P, u_perp)
-    print(f"Directional derivative in perpendicular direction: {D_perp:.4f}")
+# --- Step 6: Compute the maximum directional derivative ---
+grad_magnitude = grad_at_P.norm()
+print(f"Maximum directional derivative ||grad f|| = {sp.simplify(grad_magnitude)}")
+print(f"Direction of steepest ascent: u_max = {tuple(grad_at_P / grad_magnitude)}")
 ```
 
 **Expected Output:**
-
 ```
-Directional derivative in direction (2,-1,2): 2.0000
-Maximum rate  |grad f|       = 3.4641  (along [0.5774 0.5774 0.5774])
-Minimum rate  -|grad f|      = -3.4641  (along [-0.5774 -0.5774 -0.5774])
-Directional derivative in perpendicular direction: 0.0000
+Gradient (symbolic):
+Matrix([[2*x*y - z], [x**2 + z**2], [2*y*z - x]])
+
+Gradient at P = (1, -1, 2): (-4, 5, -5)
+Unit vector u = (2/3, -1/3, 2/3)
+
+Directional derivative D_u f(P) = -23/3 = -7.666667
+Maximum directional derivative ||grad f|| = sqrt(66)
+Direction of steepest ascent: u_max = (-4/sqrt(66), 5/sqrt(66), -5/sqrt(66))
 ```
 
 ---
 
-## 3.4 Worked Example — Finding a Direction with Zero Derivative
+## Derivation 3 — Maximum Rate of Change Theorem
 
-**Problem:** Find a unit vector $\mathbf{u}$ at $P(2, -1, 3)$ such that $D_{\mathbf{u}} f = 0$ for $f(x, y, z) = 3x^2 - y^2 + 4z^2$.
+**Claim:** $\max_{\lVert \mathbf{u} \rVert = 1} D_{\mathbf{u}}f = \lVert \nabla f \rVert$, attained at $\mathbf{u} = \dfrac{\nabla f}{\lVert \nabla f \rVert}$.
 
-**Solution:**
-
-**Step 1: Compute the gradient.**
-
-$$
-f_x = 6x, \quad f_y = -2y, \quad f_z = 8z
-$$
-
-**Step 2: Evaluate at $P(2, -1, 3)$.**
-
-$$
-\nabla f(2, -1, 3) = (6(2),\; -2(-1),\; 8(3)) = (12, 2, 24)
-$$
-
-**Step 3: Set up the condition $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u} = 0$.**
-
-Let $\mathbf{u} = (a, b, c)$ with $a^2 + b^2 + c^2 = 1$ and $12a + 2b + 24c = 0$.
-
-We must find a unit vector perpendicular to $\nabla f$. Choose $a = 1, c = -1$ (trial), then:
-$$
-12(1) + 2b + 24(-1) = 0 \Rightarrow 12 + 2b - 24 = 0 \Rightarrow b = 6
-$$
-
-Raw vector: $(1, 6, -1)$, magnitude $\sqrt{1 + 36 + 1} = \sqrt{38}$.
-
-$$
-\mathbf{u} = \left(\frac{1}{\sqrt{38}},\; \frac{6}{\sqrt{38}},\; -\frac{1}{\sqrt{38}}\right)
-$$
-
-**Verification:** $12 \cdot \frac{1}{\sqrt{38}} + 2 \cdot \frac{6}{\sqrt{38}} + 24 \cdot \left(-\frac{1}{\sqrt{38}}\right) = \frac{12 + 12 - 24}{\sqrt{38}} = 0$ ✓
-
-**Note:** There are infinitely many such directions — they form a **plane** perpendicular to $\nabla f$.
-
+**Proof:** By the Cauchy–Schwarz inequality,
+$$D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u} \leq \lVert \nabla f \rVert \cdot \lVert \mathbf{u} \rVert = \lVert \nabla f \rVert \cdot 1 = \lVert \nabla f \rVert$$
+Equality holds iff $\mathbf{u}$ is parallel to $\nabla f$ and has unit length, i.e., $\mathbf{u} = \dfrac{\nabla f}{\lVert \nabla f \rVert}$ (assuming $\nabla f \neq \mathbf{0}$). $\blacksquare$
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-
 # Structural Diagrams & Schematics
 
-## 4.1 Conceptual Flow — From Function to Directional Derivative
+## Diagram 1 — Conceptual Flow of Directional Derivative Computation
 
 ```mermaid
 flowchart TD
-    A["Input: f of x,y,z"] --> B["Step 1: Compute partials f_x, f_y, f_z"]
-    B --> C["Step 2: Evaluate gradient at P"]
-    C --> D["nabla f at P equals fx_P, fy_P, fz_P"]
-    D --> E{"Is direction a unit vector?"}
-    E -- "No" --> F["Normalize: u_hat = v divided by norm v"]
-    E -- "Yes" --> G["Use u directly"]
-    F --> H["Step 3: Dot product"]
-    G --> H["Step 3: Dot product"]
-    H --> I["D_u f equals nabla f dot u_hat"]
-    I --> J{"Interpret Sign"}
-    J -- "Positive" --> K["Function INCREASES along u"]
-    J -- "Negative" --> L["Function DECREASES along u"]
-    J -- "Zero" --> M["u is PERPENDICULAR to nabla f"]
-    K --> N["Final Answer: Scalar Rate of Change"]
-    L --> N
-    M --> N
+    A[Scalar field f of three variables<br/>f: R cubed to R] --> B[Pick a point P = x0, y0, z0]
+    B --> C[Pick a direction vector v in R cubed]
+    C --> D[Normalize v to unit vector u<br/>u = v divided by norm of v]
+    D --> E[Compute partial derivatives fx, fy, fz]
+    E --> F[Evaluate gradient at P<br/>grad f P equals fx, fy, fz]
+    F --> G[Form dot product<br/>D sub u f equals grad f dot u]
+    G --> H{Result interpretation}
+    H -->|Positive| I[f is INCREASING in direction u<br/>Uphill motion]
+    H -->|Negative| J[f is DECREASING in direction u<br/>Downhill motion]
+    H -->|Zero| K[f is CONSTANT in direction u<br/>Tangent to level surface]
+
+    style A fill:#FFE4B5,stroke:#8B4513
+    style D fill:#FFB6C1,stroke:#8B0000
+    style F fill:#98FB98,stroke:#006400
+    style G fill:#87CEEB,stroke:#00008B
+    style H fill:#DDA0DD,stroke:#4B0082
 ```
 
-## 4.2 Geometric Topology — Gradient as Steepest Ascent Operator
+## Diagram 2 — Gradient Geometry at a Point on a Level Surface
 
 ```mermaid
-graph LR
-    subgraph SG1["Input Domain R3"]
-        P1["Point P: x0, y0, z0"]
-        V1["Direction v: a, b, c"]
+flowchart LR
+    subgraph LevelSurface [Level Surface f equals constant c]
+        LS1[Curved surface in 3D space]
     end
-    subgraph SG2["Normalization Module"]
-        N1["Compute norm v = sqrt a2+b2+c2"]
-        N2["u_hat = v divided by norm v"]
-        N1 --> N2
+
+    subgraph PointP [At Point P]
+        P1[Point P lies on the level surface]
     end
-    subgraph SG3["Gradient Module"]
-        G1["f_x at P"]
-        G2["f_y at P"]
-        G3["f_z at P"]
-        G4["nabla f = fx, fy, fz at P"]
-        G1 --> G4
-        G2 --> G4
-        G3 --> G4
+
+    subgraph GradientDirection [Gradient Vector Geometry]
+        G1[grad f at P points OUTWARD<br/>perpendicular to surface]
+        G2[Direction of STEEPEST ASCENT]
+        G3[All vectors u perpendicular to grad f<br/>are TANGENT to surface]
+        G4[Direction -grad f is STEEPEST DESCENT]
     end
-    subgraph SG4["Output Module"]
-        D1["D_u f = nabla f dot u_hat"]
-        D2["Max rate = norm nabla f"]
-        D3["Direction of max ascent = nabla f divided by norm nabla f"]
-        D1 --> D2
-        D1 --> D3
-    end
-    P1 --> G4
-    V1 --> N1
-    N2 --> D1
-    G4 --> D1
+
+    LS1 --> P1
+    P1 --> G1
+    G1 --> G2
+    G1 --> G3
+    G1 --> G4
+
+    style LevelSurface fill:#FFF8DC,stroke:#B8860B
+    style PointP fill:#FAFAD2,stroke:#808000
+    style GradientDirection fill:#E0FFFF,stroke:#008B8B
+    style G1 fill:#90EE90,stroke:#006400
+    style G2 fill:#FFA07A,stroke:#8B0000
+    style G3 fill:#ADD8E6,stroke:#00008B
+    style G4 fill:#FFB6C1,stroke:#8B0000
 ```
 
-## 4.3 Property Mapping — Directional Derivative Behavior Table
+## Diagram 3 — Chain Rule Bridge (Module 3 Connection)
+
+```mermaid
+flowchart TD
+    R1[Curve r of t in R cubed] --> R2[Compute tangent vector r prime of t]
+    R2 --> R3[Normalize to unit tangent T<br/>T equals r prime divided by its norm]
+    R3 --> R4[Apply chain rule<br/>d by dt f of r of t equals grad f dot r prime of t]
+    R4 --> R5[Convert to arc length form<br/>df by ds equals grad f dot T]
+    R5 --> R6[FINAL: df by ds equals D sub T f<br/>Directional derivative in tangent direction]
+    R6 --> R7[Geometric meaning: rate of change of f<br/>per unit arc length along the curve]
+
+    style R1 fill:#FFE4E1,stroke:#8B0000
+    style R3 fill:#FFFACD,stroke:#B8860B
+    style R5 fill:#E6E6FA,stroke:#4B0082
+    style R6 fill:#98FB98,stroke:#006400
+    style R7 fill:#F0E68C,stroke:#808000
+```
+
+## Diagram 4 — Numerical Processing Topology (Block Architecture)
 
 ```mermaid
 flowchart TB
-    subgraph M1["Key Theorems Block"]
-        T1["Theorem 1: D_u f = nabla f dot u_hat"]
-        T2["Theorem 2: max D_u f = norm nabla f"]
-        T3["Theorem 3: D_u f = 0 iff u perp nabla f"]
-        T4["Theorem 4: Range of D_u f is in closed interval negative norm nabla f, positive norm nabla f"]
+    subgraph InputLayer [INPUT BLOCK]
+        I1[Function f of x, y, z]
+        I2[Point P = x0, y0, z0]
+        I3[Direction vector v = a, b, c]
     end
-    subgraph M2["Engineering Application Block"]
-        A1["Gradient Descent in ML: use negative nabla f to minimize loss"]
-        A2["Heat Flux in PDE: flux = negative nabla T"]
-        A3["Surface Normals in Graphics: n = nabla f divided by norm nabla f"]
-        A4["Path Planning in Robotics: climb along nabla h"]
+
+    subgraph Preprocess [PREPROCESSING BLOCK]
+        P1[Compute fx, fy, fz from f]
+        P2[Substitute P into partials]
+        P3[Compute norm of v]
     end
-    T1 --> A1
-    T2 --> A2
-    T3 --> A3
-    T4 --> A4
+
+    subgraph ComputeBlock [COMPUTATION BLOCK]
+        C1[Form gradient grad f at P]
+        C2[Form unit vector u = v divided by norm of v]
+        C3[Dot product: D sub u f = grad f dot u]
+    end
+
+    subgraph OutputLayer [OUTPUT BLOCK]
+        O1[Scalar value of D sub u f]
+        O2[Geometric interpretation: increase, decrease, or constant]
+        O3[Maximum: norm of grad f, direction = grad f divided by its norm]
+    end
+
+    I1 --> P1 --> P2 --> C1
+    I3 --> P3 --> C2
+    C1 --> C3
+    C2 --> C3
+    C3 --> O1 --> O2
+    C1 --> O3
+
+    style InputLayer fill:#FFF0F5,stroke:#8B008B
+    style Preprocess fill:#F0FFF0,stroke:#228B22
+    style ComputeBlock fill:#FFFAF0,stroke:#FF8C00
+    style OutputLayer fill:#F0F8FF,stroke:#4682B4
 ```
 
-## 4.4 Algorithmic Decision Matrix — Choosing the Right Direction
+## Diagram 5 — Decision Tree for Sign of Directional Derivative
 
 ```mermaid
 flowchart TD
-    Q1["What does the question ask?"] --> Q2{"Goal of the problem"}
-    Q2 -- "Rate of change along v" --> R1["Compute D_u f = nabla f dot v normalized"]
-    Q2 -- "Steepest ascent direction" --> R2["Answer: nabla f divided by norm nabla f, rate = norm nabla f"]
-    Q2 -- "Steepest descent direction" --> R3["Answer: negative nabla f divided by norm nabla f, rate = negative norm nabla f"]
-    Q2 -- "Direction with zero change" --> R4["Find any unit u with nabla f dot u = 0"]
-    Q2 -- "Verify from first principles" --> R5["Use limit definition with parameter h"]
+    Start[Compute D sub u f at point P] --> CheckNorm{Is the direction<br/>vector normalized?}
+    CheckNorm -- No --> NormStep[Divide v by its norm<br/>to get u]
+    CheckNorm -- Yes --> DotStep[Compute dot product<br/>grad f at P dot u]
+    NormStep --> DotStep
+    DotStep --> SignCheck{What is the sign?}
+    SignCheck -- Positive, greater than 0 --> Up[Uphill: f INCREASES<br/>Angle theta less than 90 degrees]
+    SignCheck -- Negative, less than 0 --> Down[Downhill: f DECREASES<br/>Angle theta greater than 90 degrees]
+    SignCheck -- Zero --> Flat[Level: f CONSTANT<br/>Angle theta equals 90 degrees<br/>u perpendicular to grad f]
+
+    style Start fill:#FFE4B5,stroke:#8B4513
+    style NormStep fill:#FFB6C1,stroke:#8B0000
+    style DotStep fill:#98FB98,stroke:#006400
+    style Up fill:#90EE90,stroke:#006400
+    style Down fill:#FFA07A,stroke:#8B0000
+    style Flat fill:#ADD8E6,stroke:#00008B
 ```
 
+> [!TIP]
+> **How to use these diagrams for KTU revision:**
+> - Diagram 1 → the **algorithmic skeleton** for solving any ESE problem.
+> - Diagram 2 → the **geometric core** (the 14-mark favorite).
+> - Diagram 3 → ties this topic back to **Module 3's chain rule**.
+> - Diagram 4 → the **exam-time checklist** (Input → Preprocess → Compute → Output).
+> - Diagram 5 → the **interpretation rubric** that examiners look for in 3-mark questions.
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
+
+---
 
 ## Part A — Short Answer Questions (3 Marks Each)
 
-### Question 1
-> **[KTU University Exam – July 2024, Model Question Bank]**
-> Define the directional derivative of $f(x, y, z)$ at a point $P$ in the direction of a unit vector $\mathbf{u}$. State the relation between the directional derivative and the gradient.
-> **\[CO1, Remember/Understand\]**
+### Question A1 (3 Marks)
+**[KTU University Exam – Dec 2023 | CO2 | RBT: Remember]**
+**Define the directional derivative of a function $f(x, y, z)$ at a point $P$ in the direction of a unit vector $\mathbf{u}$. State the gradient form of the same.**
 
 **Model Answer:**
 
-The directional derivative of $f$ at $P(x_0, y_0, z_0)$ in the direction of a unit vector $\mathbf{u} = (a, b, c)$ is:
+> [!NOTE]
+> **Definition (2 Marks):**
+> The directional derivative of $f$ at $P = (x_0, y_0, z_0)$ in the direction of a unit vector $\mathbf{u} = \langle u_1, u_2, u_3 \rangle$ is
+> $$D_{\mathbf{u}}f(x_0, y_0, z_0) = \lim_{h \to 0} \frac{f(x_0 + h u_1,\; y_0 + h u_2,\; z_0 + h u_3) - f(x_0, y_0, z_0)}{h}$$
+> provided the limit exists.
 
-$$
-D_{\mathbf{u}} f(x_0, y_0, z_0) = \lim_{h \to 0} \frac{f(x_0 + ah,\; y_0 + bh,\; z_0 + ch) - f(x_0, y_0, z_0)}{h}
-$$
-
-provided the limit exists. The fundamental relation is:
-
-$$
-\boxed{D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u} = a\, f_x + b\, f_y + c\, f_z}
-$$
-
-where $\nabla f = (f_x, f_y, f_z)$ is the gradient of $f$ evaluated at $P$.
-
-**[Valuation Key: Definition statement: 2 Marks. Gradient relation: 1 Mark.]**
+> [!NOTE]
+> **Gradient Form (1 Mark):**
+> If $f$ is differentiable at $P$, then
+> $$D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u} = f_x u_1 + f_y u_2 + f_z u_3$$
 
 ---
 
-### Question 2
-> **[KTU University Exam – Dec 2023, Model Question Bank]**
-> If $\nabla f(P) = (4, -3, 0)$ at a point $P$, what is the maximum value of the directional derivative at $P$? In which direction does it occur?
-> **\[CO2, Apply\]**
+### Question A2 (3 Marks)
+**[KTU University Exam – July 2024 | CO2 | RBT: Understand]**
+**If $\nabla f(1, 2, 3) = \langle 6, -3, 2 \rangle$, find the directional derivative of $f$ at $(1, 2, 3)$ in the direction of $\mathbf{v} = \langle 2, 2, -1 \rangle$. Comment on the rate of change.**
 
 **Model Answer:**
 
-The maximum value of the directional derivative equals the magnitude of the gradient:
+> [!NOTE]
+> **[Step 1: Normalize v (1 Mark)]**
+> $$\lVert \mathbf{v} \rVert = \sqrt{4 + 4 + 1} = 3 \implies \mathbf{u} = \left\langle \frac{2}{3}, \frac{2}{3}, -\frac{1}{3} \right\rangle$$
 
-$$
-\max D_{\mathbf{u}} f = \vert \nabla f \vert = \sqrt{4^2 + (-3)^2 + 0^2} = \sqrt{16 + 9 + 0} = \sqrt{25} = 5
-$$
+> [!NOTE]
+> **[Step 2: Dot Product (1 Mark)]**
+> $$D_{\mathbf{u}}f = \langle 6, -3, 2 \rangle \cdot \left\langle \frac{2}{3}, \frac{2}{3}, -\frac{1}{3} \right\rangle = 4 - 2 - \frac{2}{3} = \frac{4}{3}$$
 
-The direction of maximum increase is the unit vector along the gradient:
-
-$$
-\hat{\mathbf{u}}_{\max} = \frac{\nabla f}{\vert \nabla f \vert} = \left(\frac{4}{5},\; -\frac{3}{5},\; 0\right)
-$$
-
-The maximum directional derivative is $\mathbf{5}$, occurring along $\left(\dfrac{4}{5}, -\dfrac{3}{5}, 0\right)$.
-
-**[Valuation Key: Magnitude calculation: 2 Marks. Unit vector: 1 Mark.]**
+> [!NOTE]
+> **[Step 3: Interpretation (1 Mark)]**
+> Since $D_{\mathbf{u}}f = \frac{4}{3} > 0$, the function $f$ is **increasing** at the rate of $\frac{4}{3}$ units per unit length in the direction of $\mathbf{v}$ at the point $(1, 2, 3)$.
 
 ---
 
-## Part B — Long Answer Questions (14 Marks Each, Internal Choice)
+## Part B — Long Answer Questions (14 Marks Each, with Internal Choice)
 
-### Question A (14 Marks)
-
-> **[KTU University Exam – July 2024, Model Question Bank]**
-> Consider $f(x, y, z) = x^3 + y^2 z - 4xz^2 + 5$.
->
-> **(a)** Find the directional derivative of $f$ at the point $P(1, 2, -1)$ in the direction of the vector $\mathbf{v} = (1, -2, 2)$.    **(7 Marks)**  **\[CO2, Apply\]**
->
-> **(b)** Find the direction in which $f$ increases most rapidly at $P$, and compute the maximum rate of increase. Also find the directional derivative along the direction $(2, 0, -1)$. **(7 Marks)**  **\[CO3, Apply/Analyze\]**
-
-**Model Solution to Part A(a):**
-
-**Step 1 — Normalize the direction vector.**
-$$
-\vert \mathbf{v} \vert = \sqrt{1^2 + (-2)^2 + 2^2} = \sqrt{1 + 4 + 4} = \sqrt{9} = 3
-$$
-$$
-\hat{\mathbf{u}} = \left(\frac{1}{3},\; -\frac{2}{3},\; \frac{2}{3}\right)
-$$
-**[Normalization: 2 Marks]**
-
-**Step 2 — Compute the partial derivatives.**
-$$
-f_x = 3x^2 - 4z^2, \quad f_y = 2yz, \quad f_z = y^2 - 8xz
-$$
-**[Partials correctly stated: 1 Mark]**
-
-**Step 3 — Evaluate the partials at $P(1, 2, -1)$.**
-$$
-f_x(1,2,-1) = 3(1) - 4(1) = 3 - 4 = -1
-$$
-$$
-f_y(1,2,-1) = 2(2)(-1) = -4
-$$
-$$
-f_z(1,2,-1) = (2)^2 - 8(1)(-1) = 4 + 8 = 12
-$$
-$$
-\nabla f(1, 2, -1) = (-1, -4, 12)
-$$
-**[Gradient evaluation: 2 Marks]**
-
-**Step 4 — Take the dot product.**
-$$
-D_{\hat{\mathbf{u}}} f = (-1, -4, 12) \cdot \left(\frac{1}{3},\; -\frac{2}{3},\; \frac{2}{3}\right)
-$$
-$$
-= (-1)\cdot\frac{1}{3} + (-4)\cdot\left(-\frac{2}{3}\right) + 12\cdot\frac{2}{3}
-$$
-$$
-= -\frac{1}{3} + \frac{8}{3} + \frac{24}{3} = \frac{31}{3}
-$$
-**[Final computation: 2 Marks]**
-
-**Final Answer:** $D_{\hat{\mathbf{u}}} f(1, 2, -1) = \dfrac{31}{3}$
+> [!IMPORTANT]
+> **KTU ESE Pattern:** Each Part-B question carries **14 marks** split into two sub-parts of **7 marks each**. Internal choice is **module-scoped** — both alternatives must belong to the same module. Students must answer **one full question** (either A or B).
 
 ---
 
-**Model Solution to Part A(b):**
+### Question A (14 Marks) — **[KTU University Exam – Dec 2023 | CO2, CO3 | RBT: Apply, Analyze]**
 
-**Step 1 — Magnitude of the gradient (already computed):**
-$$
-\nabla f(1, 2, -1) = (-1, -4, 12)
-$$
-$$
-\vert \nabla f \vert = \sqrt{(-1)^2 + (-4)^2 + 12^2} = \sqrt{1 + 16 + 144} = \sqrt{161}
-$$
-**[Magnitude: 2 Marks]**
+**(a)** Find the directional derivative of $f(x, y, z) = x y^2 + y z^2 + z x^2$ at the point $P = (1, 1, 1)$ in the direction of the vector $\mathbf{v} = \langle 1, 2, 3 \rangle$. Also find the maximum directional derivative at $P$ and the direction in which it occurs. **(7 Marks)**
 
-**Step 2 — Direction of steepest ascent (unit vector along gradient):**
-$$
-\hat{\mathbf{u}}_{\max} = \frac{1}{\sqrt{161}}(-1, -4, 12) = \left(\frac{-1}{\sqrt{161}},\; \frac{-4}{\sqrt{161}},\; \frac{12}{\sqrt{161}}\right)
-$$
-**[Unit vector: 1 Mark]**
-
-The maximum rate of increase is $\vert \nabla f \vert = \sqrt{161}$.
-**[Final numerical value: 1 Mark]**
-
-**Step 3 — Directional derivative along $\mathbf{w} = (2, 0, -1)$.**
-$$
-\vert \mathbf{w} \vert = \sqrt{4 + 0 + 1} = \sqrt{5}, \quad \hat{\mathbf{w}} = \left(\frac{2}{\sqrt{5}},\; 0,\; -\frac{1}{\sqrt{5}}\right)
-$$
-$$
-D_{\hat{\mathbf{w}}} f = (-1, -4, 12) \cdot \left(\frac{2}{\sqrt{5}},\; 0,\; -\frac{1}{\sqrt{5}}\right)
-$$
-$$
-= \frac{-2}{\sqrt{5}} + 0 + \frac{-12}{\sqrt{5}} = \frac{-14}{\sqrt{5}}
-$$
-**[Directional derivative computation: 3 Marks]**
-
-**Final Answer:** Steepest ascent direction: $\left(\dfrac{-1}{\sqrt{161}}, \dfrac{-4}{\sqrt{161}}, \dfrac{12}{\sqrt{161}}\right)$. Maximum rate: $\sqrt{161}$. Directional derivative along $(2, 0, -1)$: $\dfrac{-14}{\sqrt{5}}$.
+**(b)** A scalar field is given by $T(x, y, z) = 3 x^2 + 2 y^2 - z^2$ representing the temperature (in °C) at a point $(x, y, z)$ meters from the origin. A particle moves along the curve $\mathbf{r}(t) = \langle t^2, 2t, t^3 \rangle$ meters. Find the rate of change of temperature with respect to arc length at $t = 1$. **(7 Marks)**
 
 ---
 
-### Question B (14 Marks) — *Alternative Choice*
+#### Model Solution to (a) — 7 Marks
 
-> **[KTU University Exam – Dec 2023, Model Question Bank]**
-> Consider $f(x, y, z) = x\,y + y\,z^2 - x^2 z + 7$.
->
-> **(a)** Find $\nabla f$ at the point $Q(2, 1, 1)$ and hence compute the directional derivative of $f$ at $Q$ in the direction of $\mathbf{a} = (3, 4, 0)$. **(7 Marks)** **\[CO2, Apply\]**
->
-> **(b)** Determine the direction in which $f$ decreases most rapidly at $Q$ and find a unit vector $\mathbf{v}$ such that $D_{\mathbf{v}} f(Q) = 0$. **(7 Marks)** **\[CO3, Apply/Analyze\]**
+**[Step 1: Compute Partial Derivatives (2 Marks)]**
+$$f_x = y^2 + 2zx, \quad f_y = 2xy + z^2, \quad f_z = 2yz + x^2$$
 
-**Model Solution to Part B(a):**
+**[Step 2: Gradient at P = (1, 1, 1) (1 Mark)]**
+$$f_x(1,1,1) = 1 + 2 = 3, \quad f_y(1,1,1) = 2 + 1 = 3, \quad f_z(1,1,1) = 2 + 1 = 3$$
+$$\nabla f(1, 1, 1) = \langle 3, 3, 3 \rangle$$
 
-**Step 1 — Compute the partial derivatives.**
-$$
-f_x = y - 2xz, \quad f_y = x + z^2, \quad f_z = 2yz - x^2
-$$
-**[Partials: 1 Mark]**
+**[Step 3: Normalize v (1 Mark)]**
+$$\lVert \mathbf{v} \rVert = \sqrt{1 + 4 + 9} = \sqrt{14}$$
+$$\mathbf{u} = \frac{1}{\sqrt{14}} \langle 1, 2, 3 \rangle$$
 
-**Step 2 — Evaluate at $Q(2, 1, 1)$.**
-$$
-f_x(2,1,1) = 1 - 2(2)(1) = 1 - 4 = -3
-$$
-$$
-f_y(2,1,1) = 2 + 1 = 3
-$$
-$$
-f_z(2,1,1) = 2(1)(1) - 4 = 2 - 4 = -2
-$$
-$$
-\nabla f(2, 1, 1) = (-3, 3, -2)
-$$
-**[Gradient evaluation: 2 Marks]**
+**[Step 4: Dot Product (1 Mark)]**
+$$D_{\mathbf{u}}f(1, 1, 1) = \frac{1}{\sqrt{14}}(3 + 6 + 9) = \frac{18}{\sqrt{14}} = \frac{18\sqrt{14}}{14} = \frac{9\sqrt{14}}{7}$$
 
-**Step 3 — Normalize the direction vector $\mathbf{a} = (3, 4, 0)$.**
-$$
-\vert \mathbf{a} \vert = \sqrt{9 + 16 + 0} = \sqrt{25} = 5
-$$
-$$
-\hat{\mathbf{a}} = \left(\frac{3}{5},\; \frac{4}{5},\; 0\right)
-$$
-**[Normalization: 1 Mark]**
+**[Step 5: Maximum Directional Derivative (1 Mark)]**
+$$\lVert \nabla f(1, 1, 1) \rVert = \sqrt{9 + 9 + 9} = 3\sqrt{3}$$
 
-**Step 4 — Take the dot product.**
-$$
-D_{\hat{\mathbf{a}}} f = (-3, 3, -2) \cdot \left(\frac{3}{5},\; \frac{4}{5},\; 0\right)
-$$
-$$
-= \frac{-9}{5} + \frac{12}{5} + 0 = \frac{3}{5}
-$$
-**[Final computation: 3 Marks]**
+**[Step 6: Direction of Maximum (1 Mark)]**
+$$\mathbf{u}_{\max} = \frac{\nabla f}{\lVert \nabla f \rVert} = \frac{1}{3\sqrt{3}} \langle 3, 3, 3 \rangle = \left\langle \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}} \right\rangle$$
 
-**Final Answer:** $\nabla f(2, 1, 1) = (-3, 3, -2)$ and $D_{\hat{\mathbf{a}}} f(2, 1, 1) = \dfrac{3}{5}$.
+**Valuation Key Summary:**
+- [Stating partial derivatives: 2 Marks]
+- [Gradient evaluation: 1 Mark]
+- [Normalization of direction: 1 Mark]
+- [Final dot product answer: 1 Mark]
+- [Maximum value: 1 Mark]
+- [Direction vector: 1 Mark]
 
 ---
 
-**Model Solution to Part B(b):**
+#### Model Solution to (b) — 7 Marks
 
-**Step 1 — Direction of steepest decrease (negative gradient direction).**
-$$
-\nabla f(2, 1, 1) = (-3, 3, -2)
-$$
-$$
-\vert \nabla f \vert = \sqrt{9 + 9 + 4} = \sqrt{22}
-$$
-$$
-\hat{\mathbf{u}}_{\min} = -\frac{\nabla f}{\vert \nabla f \vert} = \left(\frac{3}{\sqrt{22}},\; -\frac{3}{\sqrt{22}},\; \frac{2}{\sqrt{22}}\right)
-$$
-**[Magnitude and unit vector: 2 Marks]**
+**[Step 1: Compute Gradient of T (1 Mark)]**
+$$T_x = 6x, \quad T_y = 4y, \quad T_z = -2z$$
+$$\nabla T(x, y, z) = \langle 6x, 4y, -2z \rangle$$
 
-The maximum rate of *decrease* is $-\sqrt{22}$. **[Value: 1 Mark]**
+**[Step 2: Find r(t) at t = 1 and Tangent Vector (1 Mark)]**
+$$\mathbf{r}(1) = \langle 1, 2, 1 \rangle$$
+$$\mathbf{r}'(t) = \langle 2t, 2, 3t^2 \rangle \implies \mathbf{r}'(1) = \langle 2, 2, 3 \rangle$$
 
-**Step 2 — Find a unit vector $\mathbf{v}$ with $D_{\mathbf{v}} f(Q) = 0$.**
+**[Step 3: Evaluate Gradient at r(1) (1 Mark)]**
+$$\nabla T(1, 2, 1) = \langle 6, 8, -2 \rangle$$
 
-We require $\nabla f \cdot \mathbf{v} = 0$, i.e., $-3v_1 + 3v_2 - 2v_3 = 0$, with $v_1^2 + v_2^2 + v_3^2 = 1$.
+**[Step 4: Apply Chain Rule to get dT/dt (1 Mark)]**
+$$\frac{dT}{dt} = \nabla T \cdot \mathbf{r}'(1) = \langle 6, 8, -2 \rangle \cdot \langle 2, 2, 3 \rangle = 12 + 16 - 6 = 22 \;\; ^\circ\text{C}/\text{sec}$$
 
-Choose $v_1 = 1, v_2 = 1$ as a trial. Then $-3(1) + 3(1) - 2v_3 = 0 \Rightarrow v_3 = 0$. But we also need the normalization: $\sqrt{1 + 1 + 0} = \sqrt{2}$, so:
+**[Step 5: Compute arc-length derivative ds/dt (1 Mark)]**
+$$\frac{ds}{dt} = \lVert \mathbf{r}'(1) \rVert = \sqrt{4 + 4 + 9} = \sqrt{17} \;\; \text{m/sec}$$
 
-$$
-\mathbf{v} = \left(\frac{1}{\sqrt{2}},\; \frac{1}{\sqrt{2}},\; 0\right)
-$$
+**[Step 6: Compute dT/ds (1 Mark)]**
+$$\frac{dT}{ds} = \frac{dT/dt}{ds/dt} = \frac{22}{\sqrt{17}} \;\; ^\circ\text{C}/\text{m}$$
 
-**Verification:** $(-3, 3, -2) \cdot \left(\dfrac{1}{\sqrt{2}}, \dfrac{1}{\sqrt{2}}, 0\right) = \dfrac{-3 + 3}{\sqrt{2}} + 0 = 0$ ✓
-**[Setup and solution: 3 Marks]**
+**[Step 7: Final Answer and Interpretation (1 Mark)]**
+$$\boxed{\frac{dT}{ds}\bigg|_{t=1} = \frac{22}{\sqrt{17}} \approx 5.336 \;\; ^\circ\text{C}/\text{m}}$$
+The temperature is **increasing** at approximately $5.34$ °C per meter of arc length traveled along the curve at $t = 1$.
 
-**Final Answer:** Steepest descent direction: $\left(\dfrac{3}{\sqrt{22}}, -\dfrac{3}{\sqrt{22}}, \dfrac{2}{\sqrt{22}}\right)$. One such zero-derivative unit vector: $\left(\dfrac{1}{\sqrt{2}}, \dfrac{1}{\sqrt{2}}, 0\right)$.
+---
+
+### Question B (14 Marks) — Alternative Choice — **[KTU University Exam – July 2024 | CO2, CO3 | RBT: Apply, Analyze]**
+
+**(a)** For the function $f(x, y, z) = x^3 + y^3 + z^3 - 3xyz$, find the directional derivative at $P = (1, 2, 3)$ in the direction pointing from $P$ to the point $Q = (4, 6, 5)$. In which direction does $f$ increase most rapidly at $P$? **(7 Marks)**
+
+**(b)** Find a unit vector $\mathbf{u}$ at the point $P = (1, 1, 1)$ for the function $f(x, y, z) = x^2 + 2y^2 + 3z^2$ such that the directional derivative in the direction $\mathbf{u}$ is zero. Give a geometric interpretation of your answer. **(7 Marks)**
+
+---
+
+#### Model Solution to B(a) — 7 Marks
+
+**[Step 1: Direction Vector from P to Q (1 Mark)]**
+$$\overrightarrow{PQ} = \langle 4 - 1, 6 - 2, 5 - 3 \rangle = \langle 3, 4, 2 \rangle$$
+
+**[Step 2: Normalize (1 Mark)]**
+$$\lVert \overrightarrow{PQ} \rVert = \sqrt{9 + 16 + 4} = \sqrt{29}$$
+$$\mathbf{u} = \frac{1}{\sqrt{29}} \langle 3, 4, 2 \rangle$$
+
+**[Step 3: Partial Derivatives (1 Mark)]**
+$$f_x = 3x^2 - 3yz, \quad f_y = 3y^2 - 3xz, \quad f_z = 3z^2 - 3xy$$
+
+**[Step 4: Gradient at P = (1, 2, 3) (1 Mark)]**
+$$f_x(1,2,3) = 3 - 18 = -15, \quad f_y(1,2,3) = 12 - 9 = 3, \quad f_z(1,2,3) = 27 - 6 = 21$$
+$$\nabla f(1, 2, 3) = \langle -15, 3, 21 \rangle$$
+
+**[Step 5: Directional Derivative (1 Mark)]**
+$$D_{\mathbf{u}}f(1, 2, 3) = \frac{1}{\sqrt{29}}\left[(-15)(3) + (3)(4) + (21)(2)\right] = \frac{-45 + 12 + 42}{\sqrt{29}} = \frac{9}{\sqrt{29}} = \frac{9\sqrt{29}}{29}$$
+
+**[Step 6: Direction of Maximum Increase (1 Mark)]**
+$$\lVert \nabla f(1, 2, 3) \rVert = \sqrt{225 + 9 + 441} = \sqrt{675} = 15\sqrt{3}$$
+$$\mathbf{u}_{\max} = \frac{1}{15\sqrt{3}} \langle -15, 3, 21 \rangle = \left\langle -\frac{1}{\sqrt{3}}, \frac{1}{5\sqrt{3}}, \frac{7}{5\sqrt{3}} \right\rangle$$
+
+**[Step 7: Maximum Value (1 Mark)]**
+$$\max D_{\mathbf{u}} f = 15\sqrt{3} \approx 25.98$$
+
+---
+
+#### Model Solution to B(b) — 7 Marks
+
+**[Step 1: Partial Derivatives (1 Mark)]**
+$$f_x = 2x, \quad f_y = 4y, \quad f_z = 6z$$
+
+**[Step 2: Gradient at P = (1, 1, 1) (1 Mark)]**
+$$\nabla f(1, 1, 1) = \langle 2, 4, 6 \rangle$$
+
+**[Step 3: Condition D_u f = 0 (1 Mark)]**
+$$D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u} = 0$$
+$$\langle 2, 4, 6 \rangle \cdot \langle u_1, u_2, u_3 \rangle = 2u_1 + 4u_2 + 6u_3 = 0$$
+
+**[Step 4: Solve with Unit Constraint (1 Mark)]**
+Let $u_1 = a$, $u_2 = b$, $u_3 = c$. We need $a + 2b + 3c = 0$ and $a^2 + b^2 + c^2 = 1$.
+
+Choose $a = 0, b = -3, c = 2$ (solving $2b + 3c = 0 \implies b = -3k, c = 2k$).
+
+**[Step 5: Normalize (1 Mark)]**
+$$\lVert \langle 0, -3, 2 \rangle \rVert = \sqrt{0 + 9 + 4} = \sqrt{13}$$
+$$\mathbf{u} = \frac{1}{\sqrt{13}} \langle 0, -3, 2 \rangle$$
+
+**Alternative solutions:** Any unit vector perpendicular to $\langle 2, 4, 6 \rangle$ works. For instance, $\mathbf{u} = \frac{1}{\sqrt{5}} \langle 2, -1, 0 \rangle$ (verify: $2(2) + 4(-1) + 6(0) = 4 - 4 + 0 = 0$ ✓ and $\frac{1}{\sqrt{5}}\sqrt{4+1+0} = 1$ ✓).
+
+**[Step 6: Geometric Interpretation (2 Marks)]**
+Since $D_{\mathbf{u}}f = 0$ for any $\mathbf{u}$ perpendicular to $\nabla f$, the unit vector $\mathbf{u}$ lies in the **tangent plane** to the level surface $f(x, y, z) = 6$ (the ellipsoid $x^2 + 2y^2 + 3z^2 = 6$) at the point $P = (1, 1, 1)$. Geometrically, moving along this direction causes **no first-order change** in $f$ — we are walking along a "level curve" of the surface at that point.
+
+**Valuation Key Summary:**
+- [Partial derivatives and gradient: 2 Marks]
+- [Setting up orthogonality equation: 1 Mark]
+- [Choosing a valid solution: 1 Mark]
+- [Normalization: 1 Mark]
+- [Geometric interpretation (tangent plane to level surface): 2 Marks]
+
+---
+
+## KTU Examiner's Valuation Warning / Pitfall Callout
 
 > [!WARNING]
-> **KTU Examiner's Valuation Warning — Common Pitfalls**
+> **Top 5 Mistakes Students Make in Directional Derivative Problems:**
 >
-> 1. **Forgetting to Normalize:** A major error is computing $D_{\mathbf{v}} f = \nabla f \cdot \mathbf{v}$ directly **without** first converting $\mathbf{v}$ to a unit vector. Always write the explicit normalization step $\hat{\mathbf{u}} = \dfrac{\mathbf{v}}{\vert \mathbf{v} \vert}$ before the dot product. *Penalty: up to 2 marks lost per occurrence.*
+> 1. **Forgetting to normalize the direction vector** — Always divide by $\lVert \mathbf{v} \rVert$ before computing the dot product. **[-1 Mark deduction]**
+> 2. **Confusing $D_{\mathbf{u}}f$ with $f_{\mathbf{u}}$** — Some texts use different notation. Stick to $D_{\mathbf{u}}f$ for KTU answers.
+> 3. **Writing partial derivatives as $f_x$, $f_y$ without evaluation at the given point** — Always substitute the point $P$ values explicitly. **[-1 Mark deduction]**
+> 4. **Stating the maximum directional derivative as $\nabla f$ instead of $\lVert \nabla f \rVert$** — Remember: $\max D_{\mathbf{u}}f = \lVert \nabla f \rVert$, a **scalar**, not a vector.
+> 5. **Skipping the geometric interpretation in 7-mark questions** — A complete answer must include the meaning of the sign of $D_{\mathbf{u}}f$ and the connection to level surfaces. **[-2 Marks deduction]**
 >
-> 2. **Confusing the Direction of Maximum with the Gradient itself:** Students often write "the direction of steepest ascent is $\nabla f$" — this is **wrong** by 1 mark. The correct statement is "the direction of steepest ascent is the **unit vector** along $\nabla f$," i.e., $\hat{\mathbf{u}} = \dfrac{\nabla f}{\vert \nabla f \vert}$.
->
-> 3. **Skipping the Evaluation Step:** Writing $\nabla f$ in symbolic form but failing to substitute the point's coordinates is a frequent KTU valuation error. Always show **plugging in** the values of $(x_0, y_0, z_0)$.
->
-> 4. **Sign Errors in the Dot Product:** A sign slip in any component of $\nabla f$ cascades to a wrong final answer. Double-check partial derivatives **before** taking the dot product.
->
-> 5. **Stating "Directional Derivative" Without a Direction:** A directional derivative is *always* tied to a specific direction. An answer like "$D_{\mathbf{u}} f = -4$" without specifying $\mathbf{u}$ loses 1 mark.
+> **Bonus Pitfall:** When the question says "from $P$ **towards** $Q$", use $\mathbf{v} = Q - P$ (not $P - Q$). The direction matters!
 
 ---
 
 ## Topic Recap & Important Things to Remember
 
-> [!NOTE]
-> **Rapid Revision Checklist — Directional Derivative (3-Variable Case)**
+> [!TIP]
+> **Rapid Revision Checklist — Directional Derivative for 3-Variable Functions**
 
-* **Definition (Limit Form):** $D_{\mathbf{u}} f = \lim_{h \to 0} \dfrac{f(P + h\mathbf{u}) - f(P)}{h}$; $\mathbf{u}$ must be a unit vector.
-* **Gradient Form (Master Formula):** $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u} = f_x\, u_1 + f_y\, u_2 + f_z\, u_3$.
-* **Unit Vector Normalization:** $\hat{\mathbf{u}} = \dfrac{\mathbf{v}}{\vert \mathbf{v} \vert}$ — **mandatory** before the dot product; **undefined** for $\mathbf{v} = \mathbf{0}$.
-* **Gradient in $\mathbb{R}^3$:** $\nabla f = (f_x, f_y, f_z)$; encodes all first-order partial information.
-* **Maximum Rate of Increase:** $\max D_{\mathbf{u}} f = \vert \nabla f \vert$, attained along $\hat{\mathbf{u}} = \dfrac{\nabla f}{\vert \nabla f \vert}$.
-* **Maximum Rate of Decrease:** $\min D_{\mathbf{u}} f = -\vert \nabla f \vert$, attained along $-\dfrac{\nabla f}{\vert \nabla f \vert}$.
-* **Zero Directional Derivative:** $D_{\mathbf{u}} f = 0 \iff \nabla f \perp \mathbf{u}$ (i.e., the direction lies in the level surface $f = \text{const}$).
-* **Cauchy–Schwarz Bound:** $\vert D_{\mathbf{u}} f \vert \le \vert \nabla f \vert$ — this is why $\vert \nabla f \vert$ is the absolute maximum.
-* **Range:** $D_{\mathbf{u}} f \in \big[-\vert \nabla f \vert,\; \vert \nabla f \vert \big]$ for all unit vectors $\mathbf{u}$.
-* **Geometric Meaning:** $\nabla f$ is **normal** to the level surface $f(x, y, z) = c$ at every point.
-* **Coordinate-Axis Special Cases:** $D_{\hat{i}} f = f_x$, $D_{\hat{j}} f = f_y$, $D_{\hat{k}} f = f_z$ (directional derivatives reduce to partials).
-* **Existence Condition:** $D_{\mathbf{u}} f$ exists at $P$ whenever $f$ is **differentiable** at $P$ (sufficient condition).
-* **Engineering Applications:** Gradient descent (ML), heat flux (PDEs), surface normals (graphics), path planning (robotics).
-* **Computational Pipeline:** Identify $f$ and $P$ $\to$ normalize $\mathbf{v}$ $\to$ compute $\nabla f \vert_P$ $\to$ dot product $\to$ interpret sign.
-* **Infinitely Many Zero-Derivative Directions:** All directions perpendicular to $\nabla f$ — these form a **plane** through $P$ (the tangent plane to the level surface).
+### Core Definition
+- $D_{\mathbf{u}}f(P) = \lim_{h \to 0} \dfrac{f(P+h\mathbf{u}) - f(P)}{h}$ with $\lVert \mathbf{u} \rVert = 1$.
+- Equivalent to $g'(0)$ where $g(h) = f(P + h\mathbf{u})$.
+- Gradient form: $D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u}$ (requires differentiability of $f$ at $P$).
 
+### Essential Computations
+- Compute $f_x$, $f_y$, $f_z$.
+- Substitute the point $P$ to get $\nabla f(P) = \langle f_x(P), f_y(P), f_z(P) \rangle$.
+- Normalize the given direction vector: $\mathbf{u} = \mathbf{v} / \lVert \mathbf{v} \rVert$.
+- Take the dot product: $D_{\mathbf{u}}f = \nabla f(P) \cdot \mathbf{u}$.
+
+### Key Theorems (High-Yield for KTU)
+- **Maximum:** $\max D_{\mathbf{u}}f = \lVert \nabla f \rVert$ at $\mathbf{u} = \dfrac{\nabla f}{\lVert \nabla f \rVert}$.
+- **Minimum:** $\min D_{\mathbf{u}}f = -\lVert \nabla f \rVert$ at $\mathbf{u} = -\dfrac{\nabla f}{\lVert \nabla f \rVert}$.
+- **Zero:** $D_{\mathbf{u}}f = 0 \iff \mathbf{u} \perp \nabla f$, i.e., $\mathbf{u}$ is tangent to the level surface $f = c$.
+- $\nabla f$ is **normal to the level surface** $f(x,y,z) = c$ at $P$.
+
+### Module 3 (Chain Rule) Connection
+- $\dfrac{d}{dt} f(\mathbf{r}(t)) = \nabla f \cdot \mathbf{r}'(t)$.
+- $\dfrac{df}{ds} = \nabla f \cdot \mathbf{T} = D_{\mathbf{T}}f$ where $\mathbf{T}$ is the unit tangent.
+- Directional derivative = rate of change of $f$ per unit arc length.
+
+### Engineering / Information Science Applications
+- **Gradient descent:** $\boldsymbol{\theta}_{n+1} = \boldsymbol{\theta}_n - \eta \nabla L$ moves in steepest descent direction.
+- **Heat flux:** $\mathbf{q} = -k \nabla T$ flows in steepest temperature descent direction.
+- **Edge detection:** $\nabla I$ points perpendicular to image edges.
+- **Robot navigation:** Steepest ascent of potential field guides path planning.
+
+### Common Pitfalls to Avoid
+- Always **normalize** the direction vector.
+- Always **substitute the point** into the gradient.
+- State the **interpretation** (increasing/decreasing/constant).
+- Specify the **direction of maximum** as a unit vector, not just the value.
+- Mention **differentiability assumption** when using the gradient shortcut.
+
+### Quick-Reference Symbolic Values to Memorize
+$$\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1$$
+$$\lVert \nabla f \rVert = \sqrt{f_x^2 + f_y^2 + f_z^2}$$
+$$D_{\mathbf{u}}f = f_x \cos\alpha + f_y \cos\beta + f_z \cos\gamma$$
 <!-- SECTION_5_END -->

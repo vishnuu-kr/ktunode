@@ -1,5 +1,1328 @@
 [
   {
+    "id": "cs-8-oecst831-introduction-to-algorithm",
+    "code": "OECST831-INTRODUCTION-TO-ALGORITHM",
+    "name": "OECST831 INTRODUCTION TO ALGORITHM",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis",
+        "title": "Module 1: Introduction to algorithm analysis",
+        "topics": [
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-complexity-calculation-of-simple-algorithms",
+            "title": "Complexity Calculation of simple algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-elementary-operations-and-computation-of-time-complexity-best-worst-and-average-case-complexities",
+            "title": "Elementary operations and Computation of Time Complexity-Best, worst and Average Case Complexities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-introduction-to-algorithm-analysis",
+            "title": "Introduction to Algorithm Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-recurrence-equations-solution-of-recurrence-equations-iteration-method-and-recursion-tree-methods",
+            "title": "Recurrence Equations: Solution of Recurrence Equations – Iteration Method and Recursion Tree Methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-time-and-space-complexity-asymptotic-notation",
+            "title": "Time and Space Complexity- Asymptotic notation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees",
+        "title": "Module 2: Trees",
+        "topics": [
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-bfs-and-dfs-analysis-not-required",
+            "title": "BFS and DFS (analysis not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-binary-search-tree-creation-insertion-and-deletion-and-search-operations-applications",
+            "title": "Binary search tree – creation, insertion and deletion and search operations, applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-complete-binary-tree-representation-using-array",
+            "title": "complete-binary tree representation using array",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-graphs-representation-of-graphs",
+            "title": "Graphs – representation of graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-topological-sorting",
+            "title": "Topological Sorting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-tree-traversals-recursive-and-non-recursive-applications",
+            "title": "tree traversals (Recursive and non-recursive), applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-trees-binary-trees-level-and-height-of-the-tree",
+            "title": "Trees - Binary Trees – level and height of the tree",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer",
+        "title": "Module 3: Divide and conquer",
+        "topics": [
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-binary-search",
+            "title": "Binary Search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-costs-associated-element-comparisons-and-index-comparisons",
+            "title": "Costs associated element comparisons and index comparisons",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-divide-and-conquer-control-abstraction",
+            "title": "Divide and Conquer - Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-finding-maximum-and-minimum",
+            "title": "Finding Maximum and Minimum",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-fractional-knapsack-problem",
+            "title": "Fractional Knapsack Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-greedy-strategy-control-abstraction",
+            "title": "Greedy Strategy - Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-kruskal-s-algorithm",
+            "title": "Kruskal’s Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-merge-sort-refinements",
+            "title": "Merge Sort - Refinements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-minimum-cost-spanning-trees-prim-s-algorithm",
+            "title": "Minimum Cost Spanning Trees – PRIM’s Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-quick-sort",
+            "title": "Quick Sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-single-source-shortest-path-algorithm-dijkstra-s-algorithm",
+            "title": "Single Source Shortest Path Algorithm - Dijkstra’s Algorithm",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming",
+        "title": "Module 4: Dynamic programming",
+        "topics": [
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-all-pairs-shortest-path-algorithm-floyd-warshall-algorithm",
+            "title": "All Pairs Shortest Path Algorithm - Floyd-Warshall Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-branch-and-bound-algorithm-for-travelling-salesman-problem",
+            "title": "Branch and Bound Algorithm for Travelling Salesman Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-dynamic-programming-the-control-abstraction-the-optimality-principle",
+            "title": "Dynamic Programming - The Control Abstraction- The Optimality Principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-matrix-chain-multiplication-analysis",
+            "title": "Matrix Chain Multiplication, Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-the-control-abstraction-of-backtracking-the-n-queens-problem",
+            "title": "The Control Abstraction of Backtracking – The N-Queens Problem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst832-web-programming",
+    "code": "OECST832-WEB-PROGRAMMING",
+    "name": "OECST832 WEB PROGRAMMING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5",
+        "title": "Module 1: Creating web page using html5",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-absolute-positioning",
+            "title": "Absolute Positioning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-backgrounds",
+            "title": "Backgrounds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-box-model-and-text-flow",
+            "title": "Box Model and Text Flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-creating-web-page-using-html5-introduction",
+            "title": "Creating Web Page using HTML5  - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-document-type-definitions-dtds",
+            "title": "Document Type Definitions (DTDs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-drop-down-menus",
+            "title": "Drop-Down Menus",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-element-dimensions",
+            "title": "Element Dimensions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-embedded-style-sheets",
+            "title": "Embedded Style Sheets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-extensible-markup-language-introduction",
+            "title": "Extensible Markup Language  - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-first-html5-example",
+            "title": "First HTML5 example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-forms",
+            "title": "Forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-headings",
+            "title": "Headings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-html5-form-input-types",
+            "title": "HTML5 Form input Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-images",
+            "title": "Images",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-inline-styles",
+            "title": "Inline Styles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-input-and-datalist-elements-and-autocomplete-attribute",
+            "title": "Input and datalist Elements and autocomplete Attribute",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-internal-linking",
+            "title": "Internal Linking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-linking",
+            "title": "Linking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-linking-external-style-sheets",
+            "title": "Linking External Style Sheets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-lists",
+            "title": "Lists",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-media-types-and-media-queries",
+            "title": "Media Types and Media Queries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-meta-elements",
+            "title": "meta Elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-page-structure-elements",
+            "title": "Page-Structure Elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-positioning-elements",
+            "title": "Positioning Elements:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-positioning-elements-relative-positioning",
+            "title": "Positioning Elements: Relative Positioning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-span",
+            "title": "span",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-special-characters-and-horizontal-rules",
+            "title": "Special Characters and Horizontal Rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-structuring-data",
+            "title": "Structuring Data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-styling-web-page-using-css-introduction",
+            "title": "Styling Web Page using CSS  - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-tables",
+            "title": "Tables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-xml-basics",
+            "title": "XML Basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-xml-namespaces",
+            "title": "XML Namespaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-xml-vocabularies",
+            "title": "XML Vocabularies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-creating-web-page-using-html5-z-index",
+            "title": "z-index",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language",
+        "title": "Module 2: Scripting language",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-arrays",
+            "title": "Arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-asynchronous-javascript-and-xml-ajax-making-asynchronous-requests",
+            "title": "Asynchronous JavaScript and XML - AJAX : Making Asynchronous Requests",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-common-element-manipulations-in-jquery",
+            "title": "Common Element Manipulations in jQuery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-complete-control-over-ajax",
+            "title": "Complete Control over AJAX",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-conditionals",
+            "title": "Conditionals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-cross-origin-resource-sharing",
+            "title": "Cross-Origin Resource Sharing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-data-types",
+            "title": "Data Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-document-object",
+            "title": "Document Object",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-element-node-object",
+            "title": "Element Node Object",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-event-handling-in-jquery",
+            "title": "Event Handling in jQuery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-event-types",
+            "title": "Event Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-function-declarations-vs-function-expressions",
+            "title": "Function Declarations vs. Function Expressions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-javascript-library-jquery-jquery-foundations-including-jquery",
+            "title": "JavaScript library - jQuery - jQuery Foundations - Including jQuery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-jquery-selectors",
+            "title": "jQuery Selectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-loops",
+            "title": "Loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-nested-functions",
+            "title": "Nested Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-objects",
+            "title": "Objects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-scripting-language-client-side-scripting",
+            "title": "Scripting language  - Client-Side Scripting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-selection-methods",
+            "title": "Selection Methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-scripting-language-the-document-object-model-dom-nodes-and-nodelists",
+            "title": "The Document Object Model (DOM) - Nodes and NodeLists",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs",
+        "title": "Module 3: Javascript runtime environment nodejs",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-adding-express-to-node-js",
+            "title": "Adding Express to Node.js",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-arrays",
+            "title": "Arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-built-in-components",
+            "title": "Built- in components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-classes-and-objects-in-php",
+            "title": "Classes and Objects in PHP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-differences-between-function-and-class-components",
+            "title": "Differences between Function and Class Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-function-components",
+            "title": "Function Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-functions",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-javascript-runtime-environment-node-js-the-architecture-of-node-js",
+            "title": "JavaScript runtime environment : Node.js -  The Architecture of Node.js",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-object-oriented-design",
+            "title": "Object-Oriented Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-program-control",
+            "title": "Program Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-quick-tour-of-php",
+            "title": "Quick tour of PHP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-rendering-html-react-reactjs-foundations-the-philosophy-of-react",
+            "title": "Rendering HTML :  React - ReactJS Foundations : The Philosophy of React",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-server-side-programming-language-php-what-is-server-side-development",
+            "title": "Server-side programming language : PHP  - What Is Server-Side Development?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-user-defined-components-types-of-components",
+            "title": "User- defined components - Types of components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-what-is-a-component",
+            "title": "What is a component?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-javascript-runtime-environment-nodejs-working-with-node-js",
+            "title": "Working with Node.js",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics",
+        "title": "Module 4: Spa basics",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-accessing-mysql-in-php",
+            "title": "Accessing MySQL in PHP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-an-example-web-service",
+            "title": "An Example Web Service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-angular-js",
+            "title": "Angular JS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-database-apis",
+            "title": "Database APIs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-principle-of-layering",
+            "title": "Principle of Layering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-rest-services",
+            "title": "REST Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-software-design-patterns-in-the-web-context",
+            "title": "Software Design Patterns in the Web Context",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-spa-basics",
+            "title": "SPA – Basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-sql",
+            "title": "SQL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-testing",
+            "title": "Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-web-application-design-real-world-web-software-design",
+            "title": "Web Application Design  - Real World Web Software Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-web-server-hosting-options",
+            "title": "Web server - hosting options",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-web-services-overview-of-web-services-soap-services",
+            "title": "Web services   - Overview of Web Services - SOAP Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-spa-basics-working-with-databases-databases-and-web-development",
+            "title": "Working with databases  - Databases and Web Development",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst833-software-testing",
+    "code": "OECST833-SOFTWARE-TESTING",
+    "name": "OECST833 SOFTWARE TESTING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation",
+        "title": "Module 1: Introduction to software testing automation",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-automation-in-testing-introduction-to-automation-tools-e-g-selenium-cypress-junit",
+            "title": "Automation in Testing - Introduction to automation tools (e.g., Selenium, Cypress, JUnit)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-case-study-automation-of-unit-testing-and-mutation-testing-using-junit",
+            "title": "Case Study- Automation of Unit Testing and Mutation Testing using JUnit.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-industry-trends-ai-in-test-case-automation-introduction-to-genai-in-testing",
+            "title": "Industry Trends - AI in test case automation, Introduction to GenAI in testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-introduction-to-software-testing-automation",
+            "title": "Introduction to Software Testing & Automation:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-introduction-to-software-testing-concepts-importance-of-testing-software-quality-and-real-world",
+            "title": "Introduction to Software Testing - Concepts, importance of testing, software quality, and real-world failures (e.g., Ariane 5, Therac 25)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-software-testing-processes-levels-of-thinking-in-testing",
+            "title": "Software Testing Processes - Levels of thinking in testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-testing-methods-black-box-white-box-and-grey-box-testing",
+            "title": "Testing Methods - Black-Box, White-Box, and Grey-Box Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-testing-terminologies-verification-validation-fault-error-bug-test-cases-and-coverage-criteria",
+            "title": "Testing Terminologies - Verification, validation, fault, error, bug, test cases, and coverage criteria",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-introduction-to-software-testing-automation-types-of-testing-unit-integration-system-acceptance-performance-stress-usability-regression-and",
+            "title": "Types of Testing - Unit, Integration, System, Acceptance, Performance (stress, usability, regression), and Security Testing",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai",
+        "title": "Module 2: Unit testing mutation testing ai",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai-ai-in-testing-genai-for-test-case-generation-and-optimization-impact-on-automation",
+            "title": "AI in Testing - GenAI for test case generation and optimization, impact on automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai-case-study-mutation-testing-using-junit-ai-enhanced-test-case-automation",
+            "title": "Case Study - Mutation testing using JUnit, AI-enhanced test case automation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai-industry-tools-application-of-ai-driven-testing-tools-in-automation-and-predictive-testing",
+            "title": "Industry Tools - Application of AI-driven testing tools in automation and predictive testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai-junit-framework-automation-of-unit-testing-frameworks-for-testing-in-real-world-projects",
+            "title": "JUnit Framework - Automation of unit testing, frameworks for testing in real-world projects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai-mutation-testing-mutation-operators-mutants-mutation-score-and-modern-mutation-testing-tools-e-g",
+            "title": "Mutation Testing- Mutation operators, mutants, mutation score, and modern mutation testing tools (e.g., Muclipse)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai-unit-testing-mutation-testing-ai-driven-automation",
+            "title": "Unit Testing, Mutation Testing & AI-Driven Automation:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-unit-testing-mutation-testing-ai-unit-testing-static-and-dynamic-unit-testing-control-flow-testing-data-flow-testing-domain-testing",
+            "title": "Unit Testing- Static and Dynamic Unit Testing, control flow testing, data flow testing, domain testing",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing",
+        "title": "Module 3: Advanced white box testing security testing",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-advanced-white-box-testing-security-testing",
+            "title": "Advanced White Box Testing & Security Testing:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-case-study-application-of-graph-based-testing-and-security-testing-using-industry-standard-tools",
+            "title": "Case Study - Application of graph based testing and security testing using industry standard tools.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-data-flow-criteria-du-paths-du-pairs-subsumption-relationships",
+            "title": "Data Flow Criteria - du paths, du pairs, subsumption relationships",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-graph-coverage-criteria-node-edge-and-path-coverage",
+            "title": "Graph Coverage Criteria - Node, edge, and path coverage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-graph-coverage-for-code-control-flow-graphs-cfgs-for-complex-structures-e-g-loops-exceptions",
+            "title": "Graph Coverage for Code - Control flow graphs (CFGs) for complex structures (e.g., loops, exceptions)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-graph-coverage-for-design-elements-call-graphs-class-inheritance-testing-and-coupling-data-flow",
+            "title": "Graph Coverage for Design Elements - Call graphs, class inheritance testing, and coupling data-flow pairs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-prime-path-and-round-trip-coverage",
+            "title": "prime path and round trip coverage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-advanced-white-box-testing-security-testing-security-testing-fundamentals-tools-owasp-burp-suite-and-their-role-in-protecting-modern",
+            "title": "Security Testing - Fundamentals, tools (OWASP, Burp Suite), and their role in protecting modern applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing",
+        "title": "Module 4: Black box testing grey box testing and responsive testing",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing-black-box-testing-grey-box-testing-and-responsive-testing",
+            "title": "Black Box Testing, Grey Box Testing, and Responsive Testing:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing-black-box-testing-input-space-partitioning-domain-testing-functional-testing-equivalence-class",
+            "title": "Black Box Testing - Input space partitioning, domain testing, functional testing (equivalence class partitioning, boundary value analysis, decision tables, random testing)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing-case-study-implementation-of-black-box-grey-box-and-responsive-testing-using-pex-and-ai-driven-tools",
+            "title": "Case Study- Implementation of black-box, grey-box, and responsive testing using PEX and AI-driven tools.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing-genai-in-testing-advanced-use-cases-for-predictive-and-responsive-testing-across-devices-and",
+            "title": "GenAI in Testing - Advanced use cases for predictive and responsive testing across devices and environments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing-grey-box-testing-introduction-advantages-and-methodologies-matrix-testing-regression-testing",
+            "title": "Grey Box Testing - Introduction, advantages, and methodologies (matrix testing, regression testing, orthogonal array testing)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing-introduction-to-pex-symbolic-execution-parameterized-unit-testing-symbolic-execution-trees-and",
+            "title": "Introduction to PEX - Symbolic execution, parameterized unit testing, symbolic execution trees, and their application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-black-box-testing-grey-box-testing-and-responsive-testing-performance-testing-network-latency-testing-browser-compatibility-responsive-testing-across",
+            "title": "Performance Testing - Network latency testing, browser compatibility, responsive testing across multiple devices (e.g., BrowserStack, LambdaTest)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst834-internet-of-things",
+    "code": "OECST834-INTERNET-OF-THINGS",
+    "name": "OECST834 INTERNET OF THINGS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot",
+        "title": "Module 1: Introduction to iot",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot-agriculture",
+            "title": "Agriculture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot-domain-specific-iot-home-automation",
+            "title": "Domain Specific IoT- Home automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot-energy",
+            "title": "Energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot-health-and-lifestyle",
+            "title": "Health and lifestyle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot-introduction-to-iot-physical-design-of-iot",
+            "title": "Introduction to IoT - Physical Design of IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot-iot-levels-and-deployment-templates",
+            "title": "IoT levels and Deployment templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-introduction-to-iot-logical-design-of-iot",
+            "title": "Logical Design of IoT",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m",
+        "title": "Module 2: Iot and m2m",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-cellular-3gpp-and-non-3gpp-standards",
+            "title": "Cellular (3GPP) and Non 3GPP standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-comparison-of-various-protocols-like-sigfox",
+            "title": "Comparison of various protocols like Sigfox",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-difference-between-iot-and-m2m",
+            "title": "Difference between IoT and M2M",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-iot-and-m2m-m2m",
+            "title": "IoT and M2M-M2M",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-lora",
+            "title": "LoRA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-lorawan",
+            "title": "LoRAWAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-lpwan-lpwan-applications",
+            "title": "LPWAN -  LPWAN applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-lpwan-technologies",
+            "title": "LPWAN technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-lte-m",
+            "title": "LTE-M",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-nb-iot",
+            "title": "NB-IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-need-for-iot-system-management",
+            "title": "Need for IoT System Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-netconf",
+            "title": "NETCONF",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-network-function-virtualization",
+            "title": "Network Function virtualization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-simple-network-management-protocol-snmp",
+            "title": "Simple Network Management Protocol (SNMP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-software-defined-networking",
+            "title": "Software Defined Networking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-weightless",
+            "title": "Weightless",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-iot-and-m2m-yang",
+            "title": "YANG",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot",
+        "title": "Module 3: Developing iot",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-case-study-on-iot-system-for-weather-monitoring",
+            "title": "Case study on IoT system for weather monitoring",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-developing-iot-iot-design-methodology",
+            "title": "Developing IoT - IoT design methodology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-httplib-urllib",
+            "title": "HTTPlib & URLLib",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-iot-system-logical-design-using-python",
+            "title": "IoT-system Logical design using python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-motivations-for-using-python",
+            "title": "Motivations for using python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-python-packages-of-interest-for-iot-json",
+            "title": "Python Packages of Interest for IoT - JSON",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-smtplib",
+            "title": "SMTPLib",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-developing-iot-xml",
+            "title": "XML",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst834-internet-of-things-04-module-4-programming-raspberry-pi-with-python",
+        "title": "Module 4: Programming raspberry pi with python",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-programming-raspberry-pi-with-python-beagle-bone-black",
+            "title": "Beagle bone Black",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-programming-raspberry-pi-with-python-cubieboard",
+            "title": "Cubieboard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-programming-raspberry-pi-with-python-data-analytics-for-iot",
+            "title": "Data Analytics for IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-programming-raspberry-pi-with-python-interfacing-an-led-and-switch-with-raspberry-pi",
+            "title": "Interfacing an LED and switch with Raspberry Pi",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-programming-raspberry-pi-with-python-other-iot-devices-pcdino",
+            "title": "Other IoT devices- PcDino",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-programming-raspberry-pi-with-python-programming-raspberry-pi-with-python-controlling-led-with-raspberry-pi",
+            "title": "Programming Raspberry Pi with Python-Controlling LED with Raspberry Pi",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst835-computer-graphics",
+    "code": "OECST835-COMPUTER-GRAPHICS",
+    "name": "OECST835 COMPUTER GRAPHICS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics",
+        "title": "Module 1: Basics of computer graphics",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-basics-of-computer-graphics-basics-of-computer-graphics-and-its-applications",
+            "title": "Basics of Computer graphics - Basics of Computer Graphics and its applications.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-circle-drawing-algorithms-midpoint-circle-generation-algorithm-bresenham-s-circle-drawing-algorithm",
+            "title": "Circle drawing algorithms - Midpoint Circle generation algorithm, Bresenham’s Circle drawing algorithm.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-line-and-circle-drawing-algorithms-line-drawing-algorithms-bresenham-s-algorithm-liang-barsky",
+            "title": "Line and Circle drawing Algorithms - Line drawing algorithms- Bresenham’s algorithm, Liang-Barsky Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-random-and-raster-scan-displays-and-systems",
+            "title": "Random and  Raster scan displays and systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-video-display-devices-led-oled-lcd-pdp-and-fed-and-reflective-displays",
+            "title": "Video Display devices - LED, OLED, LCD, PDP and FED and reflective displays.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations",
+        "title": "Module 2: Geometric transformations",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-filled-area-primitives-scan-line-polygon-filling-boundary-filling-and-flood-filling",
+            "title": "Filled Area Primitives - Scan line polygon filling, Boundary filling and flood filling.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-geometric-transformations-2d-and-3d-basic-transformations-translation-rotation-scaling-reflection",
+            "title": "Geometric transformations - 2D and 3D basic transformations - Translation, Rotation, Scaling, Reflection and Shearing, Matrix representations and homogeneous coordinates.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms",
+        "title": "Module 3: Transformations and clipping algorithms",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-cohen-sutherland-and-midpoint-subdivision-line-clipping-algorithms-sutherland-hodgeman-and-weiler",
+            "title": "Cohen Sutherland and Midpoint subdivision line clipping algorithms, Sutherland Hodgeman and Weiler Atherton Polygon clipping algorithms.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-transformations-and-clipping-algorithms-window-to-viewport-transformation",
+            "title": "Transformations and Clipping Algorithms - Window to viewport transformation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics",
+        "title": "Module 4: Three dimensional graphics",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-projections-parallel-and-perspective-projections",
+            "title": "Projections- Parallel and Perspective projections.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-three-dimensional-graphics-three-dimensional-viewing-pipeline",
+            "title": "Three dimensional graphics - Three dimensional viewing pipeline.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-visible-surface-detection-algorithms-back-face-detection-depth-buffer-algorithm-scan-line-algorithm",
+            "title": "Visible surface detection algorithms- Back face detection, Depth buffer algorithm, Scan line algorithm, A buffer algorithm.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cs-8-oecst83a-open-elective-iii-automated-system-verification-tools",
     "code": "OECST83A-OPEN-ELECTIVE-III-AUTOMATED-SYSTEM-VERIFICATION-TOOLS",
     "name": "OECST83A OPEN ELECTIVE III AUTOMATED SYSTEM VERIFICATION TOOLS",
@@ -1153,6 +2476,1632 @@
           {
             "id": "cs-8-pecst809-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms-server-side-rendering-ssr-caching-strategies-tools-metrics-calculations-metrics-performance-profiles-layout",
             "title": "Server side rendering (SSR) caching strategies tools metrics calculations metrics performance profiles layout",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst861-software-architectures",
+    "code": "PECST861-SOFTWARE-ARCHITECTURES",
+    "name": "PECST861 SOFTWARE ARCHITECTURES",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst861-software-architectures-01-module-1-introduction-to-software-architecture-definition-and-importance",
+        "title": "Module 1: Introduction to software architecture definition and importance",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-introduction-to-software-architecture-definition-and-importance-architecture-in-the-life-cycle",
+            "title": "Architecture in the Life Cycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-introduction-to-software-architecture-definition-and-importance-introduction-to-software-architecture-definition-and-importance",
+            "title": "Introduction to Software Architecture:  Definition and Importance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-introduction-to-software-architecture-definition-and-importance-requirements-engineering-stakeholders-concerns-and-types-of-requirements",
+            "title": "Requirements engineering: Stakeholders, Concerns, and Types of Requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-introduction-to-software-architecture-definition-and-importance-role-of-the-architect-vs-engineer",
+            "title": "Role of the Architect vs. Engineer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-introduction-to-software-architecture-definition-and-importance-use-cases-and-tactics",
+            "title": "Use Cases and Tactics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst861-software-architectures-02-module-2-architectural-patterns-and-styles-architectural-patterns",
+        "title": "Module 2: Architectural patterns and styles architectural patterns",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-02-module-2-architectural-patterns-and-styles-architectural-patterns-applying-patterns-and-choosing-a-style",
+            "title": "Applying Patterns and Choosing a Style",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-02-module-2-architectural-patterns-and-styles-architectural-patterns-architectural-patterns-and-styles-architectural-patterns-overview-of-patterns-and-styles",
+            "title": "Architectural Patterns and Styles:   Architectural Patterns- Overview of Patterns and Styles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-02-module-2-architectural-patterns-and-styles-architectural-patterns-concurrency-problems",
+            "title": "Concurrency Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-02-module-2-architectural-patterns-and-styles-architectural-patterns-patterns-for-enterprise-applications-enterprise-applications-and-layered-patterns",
+            "title": "Patterns for Enterprise Applications: Enterprise Applications and Layered Patterns",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst861-software-architectures-03-module-3-components-contracts-and-service",
+        "title": "Module 3: Components contracts and service",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-03-module-3-components-contracts-and-service-components-contracts-and-service-oriented-architectures-component-software-nature-of-components-and",
+            "title": "Components, Contracts, and Service-Oriented Architectures:  Component Software- Nature of Components and Reuse",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-03-module-3-components-contracts-and-service-design-by-contract-contracts-polymorphism-inheritance-and-delegation",
+            "title": "Design by Contract- Contracts, Polymorphism, Inheritance, and Delegation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-03-module-3-components-contracts-and-service-service-oriented-architectures-standards-technologies-and-security",
+            "title": "Service-Oriented Architectures- Standards, Technologies, and Security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-03-module-3-components-contracts-and-service-uml-and-components",
+            "title": "UML and Components",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst861-software-architectures-04-module-4-architecture-evaluation-and-description-describing-architectures-and-vi",
+        "title": "Module 4: Architecture evaluation and description describing architectures and vi",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-04-module-4-architecture-evaluation-and-description-describing-architectures-and-vi-architectural-description-languages-adls-overview-and-applications",
+            "title": "Architectural Description Languages (ADLs)- Overview and Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-04-module-4-architecture-evaluation-and-description-describing-architectures-and-vi-architecture-evaluation-and-description-describing-architectures-and-viewpoints",
+            "title": "Architecture Evaluation and Description:  Describing Architectures and Viewpoints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-04-module-4-architecture-evaluation-and-description-describing-architectures-and-vi-evaluating-architectures",
+            "title": "Evaluating Architectures",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst862-natural-language-processing",
+    "code": "PECST862-NATURAL-LANGUAGE-PROCESSING",
+    "name": "PECST862 NATURAL LANGUAGE PROCESSING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst862-natural-language-processing-01-module-1-introduction-to-natural-language-processing",
+        "title": "Module 1: Introduction to natural language processing",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-introduction-to-natural-language-processing-basic-text-processing-techniques",
+            "title": "Basic Text Processing techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-introduction-to-natural-language-processing-common-nlp-tasks",
+            "title": "Common NLP Tasks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-introduction-to-natural-language-processing-evaluation-precision-recall-and-f-measure-test-sets-and-cross-validation",
+            "title": "Evaluation-Precision, Recall and F-measure-Test sets and cross validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-introduction-to-natural-language-processing-introduction-to-natural-language-processing-various-stages-of-traditional-nlp-challenges",
+            "title": "Introduction to Natural Language Processing - Various stages of traditional NLP – Challenges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-introduction-to-natural-language-processing-n-gram-language-models",
+            "title": "N-gram Language Models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-introduction-to-natural-language-processing-naive-bayes-for-text-classification-and-sentiment-analysis",
+            "title": "Naive Bayes for Text Classification, and Sentiment Analysis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst862-natural-language-processing-02-module-2-annotating-linguistic-structures",
+        "title": "Module 2: Annotating linguistic structures",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-02-module-2-annotating-linguistic-structures-annotating-linguistic-structures",
+            "title": "Annotating Linguistic Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-02-module-2-annotating-linguistic-structures-context-free-grammars-constituency-parsing-ambiguity-cyk-parsing",
+            "title": "Context-Free Grammars, Constituency Parsing, Ambiguity, CYK Parsing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-02-module-2-annotating-linguistic-structures-dependency-parsing-transition-based-dependency-parsing-graph-based-dependency-parsing-evaluation",
+            "title": "Dependency Parsing - Transition-Based Dependency Parsing, Graph-Based Dependency Parsing, Evaluation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst862-natural-language-processing-03-module-3-word-representations",
+        "title": "Module 3: Word representations",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-word-representations-evaluating-vector-models",
+            "title": "Evaluating Vector Models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-word-representations-feedforward-neural-networks-for-text-classification",
+            "title": "Feedforward Neural Networks for Text Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-word-representations-lexical-semantics-vector-semantics-tf-idf-pointwise-mutual-information-pmi",
+            "title": "Lexical Semantics, Vector Semantics, TF-IDF, Pointwise Mutual Information (PMI)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-word-representations-neural-word-embeddings-word2vec-glove-contextual-word-embeddings",
+            "title": "Neural Word embeddings - Word2vec, GloVe, Contextual Word Embeddings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-word-representations-word-representations",
+            "title": "Word representations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst862-natural-language-processing-04-module-4-sequence-modelling",
+        "title": "Module 4: Sequence modelling",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-04-module-4-sequence-modelling-encoder-decoder-model-with-rnns-attention-models-transformers",
+            "title": "Encoder-Decoder Model with RNNs, Attention models, Transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-04-module-4-sequence-modelling-introduction-to-large-language-models",
+            "title": "Introduction to Large Language Models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-04-module-4-sequence-modelling-nlp-applications-machine-translation-question-answering-and-information-retrieval",
+            "title": "NLP Applications - Machine Translation, Question Answering and Information Retrieval",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-04-module-4-sequence-modelling-sequence-modelling-recurrent-neural-networks-rnns-as-language-models-rnns-for-nlp-tasks-stacked-and",
+            "title": "Sequence Modelling - Recurrent Neural Networks, RNNs as Language Models, RNNs for NLP tasks, Stacked and Bidirectional RNN architectures, Recursive Neural Networks, LSTM & GRU, Common RNN NLP Architectures",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst864-computational-complexity",
+    "code": "PECST864-COMPUTATIONAL-COMPLEXITY",
+    "name": "PECST864 COMPUTATIONAL COMPLEXITY",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory",
+        "title": "Module 1: Introduction to complexity theory",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-complexity-classes-p-and-np-definitions-and-examples-of-p-and-np",
+            "title": "Complexity Classes P and NP - Definitions and examples of P and NP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-computational-models",
+            "title": "computational models.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-deterministic-and-nondeterministic-models",
+            "title": "Deterministic and nondeterministic models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-examples-of-np-complete-problems",
+            "title": "Examples of NP-complete problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-introduction-to-complexity-theory-basic-concepts-and-motivations",
+            "title": "Introduction to Complexity Theory - Basic concepts and motivations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-np-complete-problems",
+            "title": "NP-complete problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-np-completeness-and-the-cook-levin-theorem",
+            "title": "NP-completeness and the Cook-Levin theorem.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-polynomial-time-algorithms",
+            "title": "Polynomial-time algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-reductions-and-completeness-polynomial-time-reductions",
+            "title": "Reductions and Completeness - Polynomial-time reductions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-their-significance",
+            "title": "their significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-introduction-to-complexity-theory-turing-machines",
+            "title": "Turing machines",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst864-computational-complexity-02-module-2-space-complexity",
+        "title": "Module 2: Space complexity",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-space-complexity-complete-problems-for-each-level-of-ph",
+            "title": "Complete problems for each level of PH",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-space-complexity-polynomial-hierarchy-and-alternation-definition-of-the-polynomial-hierarchy-ph",
+            "title": "Polynomial Hierarchy and Alternation - Definition of the polynomial hierarchy (PH)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-space-complexity-pspace-completeness",
+            "title": "PSPACE-completeness.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-space-complexity-relationship-between-ph-and-other-classes",
+            "title": "Relationship between PH and other classes.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-space-complexity-savitch-s-theorem-and-nl-completeness",
+            "title": "Savitch's theorem and NL-completeness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-space-complexity-space-complexity-space-complexity-classes-l-nl-pspace",
+            "title": "Space Complexity - Space complexity classes: L, NL, PSPACE",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst864-computational-complexity-03-module-3-interactive-proofs",
+        "title": "Module 3: Interactive proofs",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-interactive-proofs-applications-in-hardness-of-approximation",
+            "title": "Applications in hardness of approximation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-interactive-proofs-interactive-proofs-definition-and-examples-of-interactive-proofs",
+            "title": "Interactive Proofs - Definition and examples of interactive proofs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-interactive-proofs-ip-pspace-theorem",
+            "title": "IP = PSPACE theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-interactive-proofs-pcp-theorem-and-implications",
+            "title": "PCP theorem and implications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-interactive-proofs-probabilistically-checkable-proofs-pcps-introduction-to-pcps",
+            "title": "Probabilistically Checkable Proofs (PCPs) - Introduction to PCPs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-interactive-proofs-zero-knowledge-proofs",
+            "title": "Zero-knowledge proofs.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity",
+        "title": "Module 4: Circuit complexity",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-circuit-complexity-boolean-circuits-and-circuit-complexity",
+            "title": "Circuit Complexity - Boolean circuits and circuit complexity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-circuit-lower-bounds",
+            "title": "Circuit lower bounds",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-complexity-of-specific-functions",
+            "title": "Complexity of specific functions.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-quantum-algorithms-and-their-complexity",
+            "title": "Quantum algorithms and their complexity.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-quantum-complexity-basics-of-quantum-computation",
+            "title": "Quantum Complexity - Basics of quantum computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-quantum-complexity-classes-bqp-qma",
+            "title": "Quantum complexity classes: BQP, QMA",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst865-next-generation-interaction-design",
+    "code": "PECST865-NEXT-GENERATION-INTERACTION-DESIGN",
+    "name": "PECST865 NEXT GENERATION INTERACTION DESIGN",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr",
+        "title": "Module 1: Introduction to interaction design and arvr",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr-human-computer-interaction-hci-basics",
+            "title": "Human-computer interaction (HCI) basics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr-introduction-to-ar-and-vr-overview-of-ar-and-vr-technologies-key-differences-and-application",
+            "title": "Introduction to AR and VR - Overview of AR and VR technologies (Key differences and Application)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr-introduction-to-interaction-design-and-ar-vr-fundamentals-of-interaction-design",
+            "title": "Introduction to Interaction Design and AR/VR :- Fundamentals of Interaction Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr-overview-of-ar-vr-hardware-headsets-controllers-sensors",
+            "title": "Overview of AR/VR hardware (headsets, controllers, sensors)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr-principles-of-interaction-design",
+            "title": "Principles of interaction design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr-software-tools-and-platforms-for-ar-vr-development",
+            "title": "Software tools and platforms for AR/VR development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-introduction-to-interaction-design-and-arvr-user-experience-ux-design-principles",
+            "title": "User experience (UX) design principles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user",
+        "title": "Module 2: User",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-contextual-inquiry-for-ar-vr",
+            "title": "Contextual inquiry for AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-designing-for-ar-vr-environments",
+            "title": "Designing for AR/VR Environments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-immersion-and-presence-in-ar-vr",
+            "title": "Immersion and presence in AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-iterative-design-and-feedback-loops",
+            "title": "Iterative design and feedback loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-personas-and-user-journey-mapping",
+            "title": "Personas and user journey mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-prototyping-and-testing-rapid-prototyping-technique",
+            "title": "Prototyping and Testing - Rapid prototyping technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-spatial-design-principles",
+            "title": "Spatial design principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-usability-testing-methods",
+            "title": "Usability testing methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-user-centered-design-and-prototyping-understanding-user-needs-and-context-user-research-methods",
+            "title": "User-Centered Design and Prototyping :- Understanding User Needs and Context - User research methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-user-user-interface-ui-design-for-ar-vr",
+            "title": "User interface (UI) design for AR/VR",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques",
+        "title": "Module 3: Advanced interaction techniques",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-advanced-interaction-techniques-gesture-designing-for-gesture-based-interaction",
+            "title": "Advanced Interaction Techniques :- Gesture - Designing for gesture-based interaction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-eye-gaze-designing-and-integrating-eye-gaze-in-vr",
+            "title": "Eye Gaze - Designing and integrating Eye Gaze in VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-haptic-feedback-and-sensory-augmentation-understanding-haptic-feedback-and-tactile-interactions",
+            "title": "Haptic Feedback and Sensory Augmentation - Understanding haptic feedback and tactile interactions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-implementing-gesture-controls-in-ar-vr-applications",
+            "title": "Implementing gesture controls in AR/VR applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-integrating-voice-commands-in-ar-vr",
+            "title": "Integrating voice commands in AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-microinteraction",
+            "title": "Microinteraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-motion-capture-and-tracking-technologies",
+            "title": "Motion capture and tracking technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-natural-language-interaction-and-conversational-interfaces",
+            "title": "Natural Language Interaction and conversational interfaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-spatial-audio",
+            "title": "Spatial Audio",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-type-of-iot-sensors-and-uses",
+            "title": "Type of IoT sensors and uses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-advanced-interaction-techniques-voice-voice-recognition-technologies",
+            "title": "Voice - Voice recognition technologies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends",
+        "title": "Module 4: Implementation evaluation and future trends",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-analyzing-user-feedback",
+            "title": "Analyzing user feedback",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-case-studies-of-successful-ar-vr-projects",
+            "title": "Case studies of successful AR/VR projects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-collaborative-design-and-development",
+            "title": "Collaborative design and development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-ethical-implications-of-ar-vr",
+            "title": "Ethical implications of AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-evaluating-ar-vr-experiences-evaluation-methods-and-metrics",
+            "title": "Evaluating AR/VR Experiences - Evaluation methods and metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-future-directions-in-interaction-design-for-ar-vr",
+            "title": "Future directions in interaction design for AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-future-trends-and-ethical-considerations-emerging-technologies-in-ar-vr",
+            "title": "Future Trends and Ethical Considerations- Emerging technologies in AR/VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-implementation-evaluation-and-future-trends-developing-ar-vr-projects-project-planning-and",
+            "title": "Implementation, Evaluation, and Future Trends :- Developing AR/VR Projects - Project planning and management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-implementation-evaluation-and-future-trends-refining-and-improving-ar-vr-applications",
+            "title": "Refining and improving AR/VR applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst866-speech-and-audio-processing",
+    "code": "PECST866-SPEECH-AND-AUDIO-PROCESSING",
+    "name": "PECST866 SPEECH AND AUDIO PROCESSING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production",
+        "title": "Module 1: Speech production",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-discrete-model-for-speech-production",
+            "title": "Discrete model for speech production",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-frequency-domain-parameters-filter-bank-analysis",
+            "title": "Frequency domain parameters - Filter bank analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-short-time-speech-analysis",
+            "title": "Short-Time Speech Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-source-filter-model-pitch-formant",
+            "title": "Source/Filter model - Pitch, Formant",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-spectrogram-wide-and-narrow-band-spectrogram",
+            "title": "Spectrogram- Wide and narrow band spectrogram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-speech-production-acoustic-theory-of-speech-production",
+            "title": "Speech Production :- Acoustic theory of speech production",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-stft",
+            "title": "STFT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-stft-analysis",
+            "title": "STFT Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-time-domain-parameters-short-time-energy-short-time-zero-crossing-rate-acf",
+            "title": "Time domain parameters (Short time energy, short time zero crossing Rate, ACF)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-speech-production-windowing",
+            "title": "Windowing",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-mel",
+        "title": "Module 2: Mel",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-mel-auto-correlation-method-levinson-durbin-algorithm",
+            "title": "Auto correlation method - Levinson Durbin Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-mel-cepstral-analysis-pitch-and-formant-estimation-using-cepstral-analysis",
+            "title": "Cepstral analysis - Pitch and Formant estimation using cepstral analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-mel-lpc-analysis-lpc-model",
+            "title": "LPC Analysis  - LPC model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-mel-mel-frequency-cepstral-coefficient-mfcc-computation",
+            "title": "Mel-frequency cepstral coefficient (MFCC)- Computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-mel-pitch-estimation-acf-amdf-approaches",
+            "title": "Pitch Estimation ACF/AMDF approaches",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement",
+        "title": "Module 3: Speech enhancement",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-adaptive-transform-coding",
+            "title": "adaptive transform coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-class-of-coders-time-domain-spectral-domain-vocoders",
+            "title": "class of coders : Time domain/spectral domain/vocoders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-harmonic-filtering",
+            "title": "Harmonic filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-language-identification-implicit-and-explicit-models",
+            "title": "Language identification - Implicit and explicit models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-log-likelihood",
+            "title": "log-likelihood",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-machine-learning-models-in-speaker-recognition",
+            "title": "Machine learning models in Speaker Recognition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-parametric-resynthesis",
+            "title": "Parametric resynthesis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-phase-vocoder",
+            "title": "phase vocoder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-speaker-recognition-speaker-verification-and-speaker-identification",
+            "title": "Speaker Recognition :- Speaker verification and speaker identification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-speech-coding-fundamentals",
+            "title": "Speech coding - fundamentals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-speech-enhancement-spectral-subtraction-and-filtering",
+            "title": "Speech Enhancement :-   Spectral subtraction and Filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-speech-enhancement-sub-band-coding",
+            "title": "Sub band coding",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception",
+        "title": "Module 4: Signal processing models of audio perception",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-absolute-threshold-of-hearing",
+            "title": "Absolute Threshold of Hearing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-basilar-membrane-behaviour",
+            "title": "Basilar membrane behaviour",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-critical-band-structure",
+            "title": "Critical Band Structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-masking-simultaneous-masking",
+            "title": "Masking - Simultaneous Masking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-models-of-speech-perception",
+            "title": "Models of speech perception",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-signal-processing-models-of-audio-perception-basic-anatomy-of-hearing-system",
+            "title": "Signal Processing models of audio perception - Basic anatomy of hearing System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-sound-perception-auditory-filter-banks",
+            "title": "Sound perception -  Auditory Filter Banks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-signal-processing-models-of-audio-perception-temporal-masking",
+            "title": "Temporal Masking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst867-storage-systems",
+    "code": "PECST867-STORAGE-SYSTEMS",
+    "name": "PECST867 STORAGE SYSTEMS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies",
+        "title": "Module 1: Storage technologies",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-charged-coupled-devices-ccds",
+            "title": "Charged Coupled Devices - CCDs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-computer-storage-technologies-magnetic-bubble-memories",
+            "title": "Computer storage technologies-Magnetic bubble memories",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-flash-memories",
+            "title": "Flash memories",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-hybrid-raid",
+            "title": "Hybrid RAID.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-local-snapshot-redundant-arrays-of-independent-disks-raid-raid0",
+            "title": "Local Snapshot Redundant Arrays of Independent Disks (RAID) - RAID0",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-micro-electro-mechanical-systems-mems",
+            "title": "Micro-Electro-Mechanical Systems - MEMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-optical-storage-data-deduplication-in-storage-systems",
+            "title": "Optical storage - Data deduplication in storage systems.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-processing-in-memory-pim",
+            "title": "Processing In Memory - PIM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-raid2",
+            "title": "RAID2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-raid3",
+            "title": "RAID3",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-raid4",
+            "title": "RAID4",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-raid5",
+            "title": "RAID5",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-raid6",
+            "title": "RAID6",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-replication",
+            "title": "Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-storage-arrays-architectural-principles",
+            "title": "Storage Arrays- Architectural Principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-storage-technologies-storage-technologies",
+            "title": "Storage technologies:-",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking",
+        "title": "Module 2: Data storage networking",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-api-access",
+            "title": "API Access",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-data-storage-networking",
+            "title": "Data Storage Networking:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-fibre-channel-san-fc-san-components",
+            "title": "Fibre Channel SAN- FC SAN Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-iscsi-san-iscsi-names",
+            "title": "iSCSI SAN- iSCSI names",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-isns",
+            "title": "iSNS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-metadata",
+            "title": "metadata",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-nas-arrays",
+            "title": "NAS Arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-nas-performance-object-storage-objects-and-object-ids",
+            "title": "NAS Performance Object Storage - Objects and Object IDs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-network-attached-storage-nas-protocols",
+            "title": "Network Attached Storage - NAS Protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-san-topologies",
+            "title": "SAN Topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-data-storage-networking-sessions",
+            "title": "Sessions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery",
+        "title": "Module 3: Business continuity backup and recovery",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-application",
+            "title": "Application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-application-aware-backups",
+            "title": "Application-Aware Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-asynchronous-replication",
+            "title": "Asynchronous Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-backup-methods-hot-backups",
+            "title": "Backup Methods- Hot Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-backup-types-full-backups",
+            "title": "Backup Types- Full Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-business-continuity-backup-and-recovery",
+            "title": "Business Continuity, Backup and Recovery:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-differential-backups",
+            "title": "Differential Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-incremental-backups",
+            "title": "Incremental Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-lan-based-backups",
+            "title": "LAN-Based Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-lan-free-backups-san-based",
+            "title": "LAN-Free Backups (SAN Based)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-layer-replication",
+            "title": "Layer Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-logical-volume-manager-based-replication",
+            "title": "Logical Volume Manager–Based Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-ndmp",
+            "title": "NDMP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-offline-backups",
+            "title": "Offline Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-replication-synchronous-replication",
+            "title": "Replication- Synchronous Replication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-serverless-backups",
+            "title": "Serverless Backups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-business-continuity-backup-and-recovery-synthetic-full-backups",
+            "title": "Synthetic Full Backups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management",
+        "title": "Module 4: Storage management",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-capacity-management-capacity-reporting",
+            "title": "Capacity Management- Capacity Reporting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-deduplication-and-compression",
+            "title": "Deduplication and Compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-factors-affecting-storage-performance",
+            "title": "Factors Affecting Storage Performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-iops",
+            "title": "IOPS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-management-protocols-and-interfaces",
+            "title": "Management Protocols and Interfaces.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-mbps-and-transfer-rate",
+            "title": "MBps and Transfer Rate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-performance-management-latency-response-time",
+            "title": "Performance Management- Latency/Response Time",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-quotas-and-archiving",
+            "title": "Quotas and Archiving",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-showback-and-chargeback",
+            "title": "Showback and Chargeback",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-storage-management",
+            "title": "Storage Management:-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-management-thin-provisioning-considerations",
+            "title": "Thin Provisioning Considerations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst868-prompt-engineering",
+    "code": "PECST868-PROMPT-ENGINEERING",
+    "name": "PECST868 PROMPT ENGINEERING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst868-prompt-engineering-01-module-1-introduction-to-prompt-engineering-and-language-models",
+        "title": "Module 1: Introduction to prompt engineering and language models",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-01-module-1-introduction-to-prompt-engineering-and-language-models-explore-various-language-models-using-platforms-like-openai-hugging-face-or-google-colab",
+            "title": "Explore various language models using platforms like OpenAI, Hugging Face, or Google Colab; Experimenting with basic prompts to understand the impact of phrasing and context on model outputs.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-01-module-1-introduction-to-prompt-engineering-and-language-models-fundamentals-of-natural-language-processing-nlp-overview-of-language-models-from-rule-based-systems",
+            "title": "Fundamentals of Natural Language Processing (NLP) - Overview of Language Models: From Rule-Based Systems to Transformer Architectures (e.g., GPT, BERT) - Understanding Prompts: Definition, Importance, and Applications - Introduction to Prompt Engineering: Techniques and Use Cases - Ethical Considerations in Prompt Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-01-module-1-introduction-to-prompt-engineering-and-language-models-introduction-to-prompt-engineering-and-language-models",
+            "title": "Introduction to Prompt Engineering and Language Models :-",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst868-prompt-engineering-02-module-2-techniques-and-strategies-in-prompt-engineering",
+        "title": "Module 2: Techniques and strategies in prompt engineering",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-02-module-2-techniques-and-strategies-in-prompt-engineering-crafting-and-optimizing-prompts-for-specific-tasks-e-g-text-generation-summarization-q-a-using",
+            "title": "Crafting and optimizing prompts for specific tasks (e.g., text generation, summarization, Q&A); Using prompt engineering to fine-tune pre-trained models on specific datasets or tasks.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-02-module-2-techniques-and-strategies-in-prompt-engineering-designing-effective-prompts-best-practices-and-common-pitfalls-prompt-tuning-and-fine-tuning",
+            "title": "Designing Effective Prompts - Best Practices and Common Pitfalls; Prompt Tuning and Fine-Tuning Language Model; Using Zero-Shot, Few-Shot, and Multi-Shot Learning in Prompts; Exploring the Role of Context, Repetition, and Specificity in Prompt Responses; Advanced Prompt Engineering Techniques: Prompt Chaining, Iterative Prompting.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-02-module-2-techniques-and-strategies-in-prompt-engineering-techniques-and-strategies-in-prompt-engineering",
+            "title": "Techniques and Strategies in Prompt Engineering :-",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst868-prompt-engineering-03-module-3-applications-of-prompt-engineering",
+        "title": "Module 3: Applications of prompt engineering",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-03-module-3-applications-of-prompt-engineering-applications-of-prompt-engineering",
+            "title": "Applications of Prompt Engineering :-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-03-module-3-applications-of-prompt-engineering-developing-a-simple-chatbot-using-prompt-engineering-techniques-case-study-analysis-and",
+            "title": "Developing a simple chatbot using prompt engineering techniques, Case study analysis and reproduction of real-world prompt engineering applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-03-module-3-applications-of-prompt-engineering-prompt-engineering-in-chatbots-and-conversational-ai-content-generation-creative-writing-code",
+            "title": "Prompt Engineering in Chatbots and Conversational AI; Content Generation: Creative Writing, Code Generation, and Data Augmentation; Prompt Engineering for Sentiment Analysis, Classification, and Translation; Integration of Prompt Engineering with Other AI Technologies (e.g., Computer Vision, Data Science); Real-World Case Studies and Industry Applications",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst868-prompt-engineering-04-module-4-challenges-future-trends-and-research-in-prompt-engineering",
+        "title": "Module 4: Challenges future trends and research in prompt engineering",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-04-module-4-challenges-future-trends-and-research-in-prompt-engineering-challenges-future-trends-and-research-in-prompt-engineering",
+            "title": "Challenges, Future Trends, and Research in Prompt Engineering :-",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-04-module-4-challenges-future-trends-and-research-in-prompt-engineering-challenges-in-prompt-engineering-ambiguity-bias-and-misinterpretation-evaluating-and-improving",
+            "title": "Challenges in Prompt Engineering: Ambiguity, Bias, and Misinterpretation; Evaluating and Improving Prompt Performance: Metrics and Benchmarks; Future Trends: Emerging Techniques and the Evolution of Language Models;",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-04-module-4-challenges-future-trends-and-research-in-prompt-engineering-working-on-a-capstone-project-to-solve-a-real-world-problem-using-prompt-engineering",
+            "title": "Working on a capstone project to solve a real-world problem using prompt engineering",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst869-computational-number-theory",
+    "code": "PECST869-COMPUTATIONAL-NUMBER-THEORY",
+    "name": "PECST869 COMPUTATIONAL NUMBER THEORY",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory",
+        "title": "Module 1: Introduction to number theory",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-algorithms-for-integer-factorization",
+            "title": "Algorithms for integer factorization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-applications-of-modular-arithmetic",
+            "title": "Applications of modular arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-basic-algorithms-algorithms-for-modular-arithmetic",
+            "title": "Basic Algorithms - Algorithms for modular arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-fast-exponentiation-techniques",
+            "title": "Fast exponentiation techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-greatest-common-divisor-gcd-and-euclidean-algorithm",
+            "title": "Greatest common divisor (GCD) and Euclidean algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-integer-factorization-prime-numbers-and-factorization",
+            "title": "Integer Factorization - Prime numbers and factorization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-introduction-to-number-theory-basic-concepts-and-definitions",
+            "title": "Introduction to Number Theory - Basic concepts and definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-introduction-to-number-theory-modular-arithmetic-congruences-and-modular-arithmetic",
+            "title": "Modular Arithmetic - Congruences and modular arithmetic",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst869-computational-number-theory-02-module-2-advanced-factorization-algorithms",
+        "title": "Module 2: Advanced factorization algorithms",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-advanced-factorization-algorithms-advanced-factorization-algorithms-pollard-s-rho-algorithm",
+            "title": "Advanced Factorization Algorithms - Pollard’s rho algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-advanced-factorization-algorithms-algorithms-for-elliptic-curve-cryptosystems",
+            "title": "Algorithms for elliptic curve cryptosystems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-advanced-factorization-algorithms-elliptic-curve-cryptography-introduction-to-elliptic-curves",
+            "title": "Elliptic Curve Cryptography - Introduction to elliptic curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-advanced-factorization-algorithms-elliptic-curve-factorization",
+            "title": "Elliptic curve factorization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-advanced-factorization-algorithms-public-key-cryptography-rsa-algorithm",
+            "title": "Public-Key Cryptography - RSA algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-advanced-factorization-algorithms-security-analysis-of-rsa",
+            "title": "Security analysis of RSA",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst869-computational-number-theory-03-module-3-public-key-cryptography",
+        "title": "Module 3: Public key cryptography",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-public-key-cryptography-cryptographic-protocols-key-exchange-protocols",
+            "title": "Cryptographic Protocols - Key exchange protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-public-key-cryptography-digital-signatures-and-authentication",
+            "title": "Digital signatures and authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-public-key-cryptography-elliptic-curve-cryptography-basics-of-elliptic-curves",
+            "title": "Elliptic Curve Cryptography - Basics of elliptic curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-public-key-cryptography-elliptic-curve-cryptosystems",
+            "title": "Elliptic curve cryptosystems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-public-key-cryptography-public-key-cryptography-rsa-algorithm-and-its-implementation",
+            "title": "Public Key Cryptography - RSA algorithm and its implementation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-public-key-cryptography-security-aspects-and-cryptanalysis",
+            "title": "Security aspects and cryptanalysis",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst869-computational-number-theory-04-module-4-algebraic-number-theory",
+        "title": "Module 4: Algebraic number theory",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-algebraic-number-theory-algebraic-number-theory-algebraic-integers-and-number-fields",
+            "title": "Algebraic Number Theory - Algebraic integers and number fields",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-algebraic-number-theory-applications-in-computational-algebra",
+            "title": "Applications in computational algebra",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-algebraic-number-theory-computational-methods-algorithms-for-solving-diophantine-equations",
+            "title": "Computational Methods - Algorithms for solving Diophantine equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-algebraic-number-theory-factorization-in-number-fields",
+            "title": "Factorization in number fields",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-algebraic-number-theory-recent-developments-and-applications-applications-in-modern-cryptography-and-coding-theory",
+            "title": "Recent Developments and Applications - Applications in modern cryptography and coding theory",
             "content": "",
             "pyqs": []
           }

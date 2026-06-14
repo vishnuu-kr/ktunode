@@ -1,0 +1,43 @@
+{
+  "course_name": "MOBILE APPLICATION DEVELOPMENT",
+  "course_code": "OECST725",
+  "module_number": 3,
+  "module_title": "Advanced flutter development",
+  "topics_generated": [
+    {
+      "title": "Advanced Flutter Development:",
+      "slug": "advanced-flutter-development",
+      "path": "advanced-flutter-development/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "State Management in Flutter: Provider, Riverpod, and BLoC",
+      "slug": "state-management-in-flutter-provider-riverpod-and-bloc",
+      "path": "state-management-in-flutter-provider-riverpod-and-bloc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Networking in Flutter: HTTP Requests, JSON Parsing, RESTful APIs",
+      "slug": "networking-in-flutter-http-requests-json-parsing-restful-apis",
+      "path": "networking-in-flutter-http-requests-json-parsing-restful-apis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Persistence: SQLite, SharedPreferences, Hive",
+      "slug": "data-persistence-sqlite-sharedpreferences-hive",
+      "path": "data-persistence-sqlite-sharedpreferences-hive/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Asynchronous Programming with Dart: Futures, async/await, and Streams",
+      "slug": "asynchronous-programming-with-dart-futures-async-await-and-streams",
+      "path": "asynchronous-programming-with-dart-futures-async-await-and-streams/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

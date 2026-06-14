@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 6,
+  "module_title": "Implement a logistic regression model to predict the likelihood of a di",
+  "topics_generated": [
+    {
+      "title": "Implement a logistic regression model to predict the likelihood of a disease using the Pima Indians Diabetes dataset. Compare the performance with and without feature scaling.",
+      "slug": "implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-disease-using-the-pima-indians",
+      "path": "implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-disease-using-the-pima-indians/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Pima Indians Diabetes dataset.",
+      "slug": "load-and-preprocess-the-pima-indians-diabetes-dataset",
+      "path": "load-and-preprocess-the-pima-indians-diabetes-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement logistic regression for binary classification.",
+      "slug": "implement-logistic-regression-for-binary-classification",
+      "path": "implement-logistic-regression-for-binary-classification/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluate model performance with and without feature scaling.",
+      "slug": "evaluate-model-performance-with-and-without-feature-scaling",
+      "path": "evaluate-model-performance-with-and-without-feature-scaling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Analyze metrics such as accuracy, precision, recall, and F1-score.",
+      "slug": "analyze-metrics-such-as-accuracy-precision-recall-and-f1-score",
+      "path": "analyze-metrics-such-as-accuracy-precision-recall-and-f1-score/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

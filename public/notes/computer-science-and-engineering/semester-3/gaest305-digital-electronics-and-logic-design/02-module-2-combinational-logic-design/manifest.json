@@ -1,0 +1,64 @@
+{
+  "course_name": "DIGITAL ELECTRONICS AND LOGIC DESIGN",
+  "course_code": "GAEST305",
+  "module_number": 2,
+  "module_title": "Combinational logic design",
+  "topics_generated": [
+    {
+      "title": "Combinational Logic Design: –",
+      "slug": "combinational-logic-design",
+      "path": "combinational-logic-design/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Boolean Algebra - Operations, Axioms, Theorems",
+      "slug": "boolean-algebra-operations-axioms-theorems",
+      "path": "boolean-algebra-operations-axioms-theorems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Combinational logic analysis - Canonical SOP  and POS, Minterm and Maxterm equivalence",
+      "slug": "combinational-logic-analysis-canonical-sop-and-pos-minterm-and-maxterm-equivalence",
+      "path": "combinational-logic-analysis-canonical-sop-and-pos-minterm-and-maxterm-equivalence/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Logic minimization - Algebraic minimization, K-map minimization, Dont cares, Code convertors.",
+      "slug": "logic-minimization-algebraic-minimization-k-map-minimization-dont-cares-code-convertors",
+      "path": "logic-minimization-algebraic-minimization-k-map-minimization-dont-cares-code-convertors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Modeling concurrent functionality in Verilog:-",
+      "slug": "modeling-concurrent-functionality-in-verilog",
+      "path": "modeling-concurrent-functionality-in-verilog/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Continuous assignment - Continuous Assignment with logical operators",
+      "slug": "continuous-assignment-continuous-assignment-with-logical-operators",
+      "path": "continuous-assignment-continuous-assignment-with-logical-operators/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Continuous assignment with conditional operators",
+      "slug": "continuous-assignment-with-conditional-operators",
+      "path": "continuous-assignment-with-conditional-operators/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Continuous assignment with delay.",
+      "slug": "continuous-assignment-with-delay",
+      "path": "continuous-assignment-with-delay/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

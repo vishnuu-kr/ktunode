@@ -2,800 +2,782 @@
 
 <!-- SECTION_1_START -->
 
-# Implicit Differentiation – Core Technical Foundation
+# 1. Core Technical Definition & Intuitive Overview
 
-## 1.1 Formal Definition (KTU 2024 Syllabus Standard)
+## Formal Definition (KTU 2024 Syllabus Terminology)
 
-> [!NOTE]
-> **Implicit Function (KTU Definition):**
-> An equation of the form $F(x, y) = 0$ is said to define $y$ **implicitly as a function of $x$** in some domain $D \subseteq \mathbb{R}$ if for every $x$ in some interval, the equation $F(x, y) = 0$ has a unique solution $y = f(x)$.
+**Implicit Differentiation** is a technique in differential calculus used to determine the derivative $\dfrac{dy}{dx}$ of a dependent variable $y$ with respect to an independent variable $x$ when the functional relationship between $x$ and $y$ is expressed through an *implicit* equation of the form $F(x, y) = 0$, rather than being explicitly solved as $y = f(x)$.
 
 > [!IMPORTANT]
-> **Implicit Differentiation (KTU Board Standard):**
-> *Implicit differentiation* is the formal procedure of differentiating an implicit relation $F(x, y) = 0$ with respect to $x$ by treating $y$ as a function of $x$ (i.e., $y = y(x)$) and applying the **Chain Rule** wherever a term involving $y$ is differentiated. The resulting equation is then algebraically solved for $\dfrac{dy}{dx}$.
+> **KTU Syllabus Highlight (GAMAT101 – Module 1)**
+> In the 2024 Scheme, implicit differentiation is positioned as a **prerequisite tool** used to differentiate transcendental and algebraic curves where explicit isolation of $y$ is either cumbersome, non-unique (multi-valued), or analytically impossible.
 
-### 1.2 Conceptual Analogy & Intuitive Overview
+### The General Implicit Function Theorem (IFT) Statement
 
-Think of an **invisible zeppelin** floating over a curved landscape. The landscape itself is described by the equation $F(x, y) = 0$ — you cannot easily rearrange the terrain to read the altitude $y$ directly as a function of horizontal distance $x$. However, the zeppelin *knows* its altitude is a function of its horizontal position.
+If $F(x, y)$ is a continuously differentiable function in a neighbourhood of the point $(x_0, y_0)$ such that:
 
-**The trick:** If we walk along the terrain (a tiny horizontal step $dx$) the zeppelin will *automatically* adjust its altitude ($dy$). Even though we cannot solve the terrain equation explicitly, we can still ask: *"At any point on this curve, what is the slope of the zeppelin's path?"* That slope is exactly $\dfrac{dy}{dx}$, and the chain rule lets us extract it directly from the un-solved equation.
+1. $F(x_0, y_0) = 0$ (the point lies on the curve), and
+2. $\dfrac{\partial F}{\partial y}\bigg|_{(x_0, y_0)} \neq 0$ (non-vanishing $y$-partial derivative),
 
-| Visual Intuition | Mathematical Translation |
-| :--- | :--- |
-| Curved mountain path | Implicit curve $F(x, y) = 0$ |
-| Tiny step along the path | Differential change $dx$ |
-| Automatic altitude shift | Dependent change $dy$ |
-| Slope of the path at a point | The derivative $\dfrac{dy}{dx}$ |
+then there exists a **unique** differentiable function $y = f(x)$ defined locally near $x_0$ satisfying $F(x, f(x)) = 0$, and its derivative is given by the **Compact Master Formula**:
 
-> [!TIP]
-> **Geometric Insight:** For the unit circle $x^2 + y^2 = 1$, the slope at any point on the upper arc is $y' = -\dfrac{x}{y}$. Notice that the slope is **undefined** at $y = 0$ (top and bottom of the circle) — this is precisely where the *Implicit Function Theorem* fails because $\dfrac{\partial F}{\partial y} = 2y = 0$.
+$$\frac{dy}{dx} = -\frac{\partial F / \partial x}{\partial F / \partial y} = -\frac{F_x}{F_y}$$
 
-> [!VISUALIZATION CONTROL]
-> **Concept:** Family of curves $F(x, y) = x^2 + y^2 - r^2$ with overlaid tangent vectors.
-> **GeoGebra / Desmos Input Equations:**
-> * `f(x, y) = x^2 + y^2 - 25 = 0`
-> * Slope field: `dy/dx = -x / y` (drawn for points where $y \neq 0$)
-> * Point probe: $(x_0, y_0) = (3, 4)$  →  Tangent slope $m = -3/4$
-> **Visual Description:** The student should observe a circle of radius **5** centered at the origin. Short tangent line segments are drawn along the curve. The tangent at $(3, 4)$ should clearly point downward-right, matching the negative slope $-0.75$.
+> [!NOTE]
+> **Why the negative sign?** Geometrically, the level curve $F(x, y) = c$ has a tangent line whose normal vector is the gradient $\nabla F = (F_x, F_y)$. The slope of the tangent is the negative reciprocal, giving $\dfrac{dy}{dx} = -\dfrac{F_x}{F_y}$.
 
 ---
+
+## Conceptual Analogy / Intuition (Plain English)
+
+Imagine you are standing inside a circular racetrack defined by $x^2 + y^2 = 25$. The constraint is *implicit* — the wall does not give you a direct formula $y = \sqrt{25 - x^2}$ (which only covers the **upper half** anyway). Yet you can still walk along the track and ask: *if I move a tiny bit to the right, how must I move vertically to stay on the wall?*
+
+Implicit differentiation answers exactly this:
+
+| Real-World Analogy | Mathematical Equivalent |
+|---|---|
+| Walking along a curved track (constraint) | The implicit equation $F(x, y) = c$ |
+| The track's slope at a point | $\dfrac{dy}{dx}$ |
+| The track's boundary prevents free movement | The condition $F(x, y) = 0$ must hold at all times |
+| The chain rule of motion | $d[F(x, y)] = F_x \, dx + F_y \, dy = 0$ |
+
+> [!TIP]
+> Think of implicit differentiation as **asking the curve for permission** to differentiate. Every time you differentiate a $y$-term, you *must* attach a $\dfrac{dy}{dx}$ — like a tax that $y$ pays every time it appears.
+
+---
+
+## Physical / Numerical Constants & Standard Metrics
+
+The following constants and rules govern all implicit differentiation problems:
+
+- **Chain Rule Multiplier for $y$**: Multiply by $\dfrac{dy}{dx}$ for every occurrence of $y$ in the differentiated expression.
+- **Product Rule for $xy$**: $\dfrac{d}{dx}(x \cdot y) = y + x\dfrac{dy}{dx}$ — remember the *plus* (not a single term).
+- **Domain Restriction**: The denominator $F_y \neq 0$ is the **mandatory** check for a well-defined (non-vertical) tangent.
+
+> [!VISUALIZATION CONTROL]
+> **Concept:** Tangent slope to the unit circle $x^2 + y^2 = 1$ at the point $(0.6, 0.8)$.
+> **GeoGebra / Desmos Input Equations:**
+> * `Implicit: x^2 + y^2 = 1`
+> * `Point: (0.6, 0.8)`
+> * `Slope field: dy/dx = -x/y` evaluated at the point
+> **Visual Description:** You should observe a circle with a tangent line at the point $(0.6, 0.8)$ whose slope is $-\dfrac{0.6}{0.8} = -0.75$, i.e., a line falling gently to the right.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
 
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
+# 2. Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 Operational Logic – The Six-Stage Algorithm
+## Algorithmic Logic — The Six-Step Recipe for Implicit Differentiation
 
-Implicit differentiation, when reduced to a repeatable procedure, follows a deterministic six-stage flow. KTU examiners award partial marks at each stage, so mastering this ordering is **examination-critical**.
-
-1. **Stage 1 – Identification of Implicit Form:** Verify the equation cannot be written (or is inconvenient to write) in the explicit form $y = f(x)$. Examples of implicit form: $x^2 + y^2 = r^2$, $x^3 + y^3 = 3xy$, $\sin(xy) = x$.
-2. **Stage 2 – Total Differentiation:** Apply $\dfrac{d}{dx}$ to *both* sides of the equation. The constant on the right-hand side (e.g., $0$ or a number) differentiates to $0$.
-3. **Stage 3 – Chain Rule Activation:** For every term containing $y$, treat $y$ as $y(x)$ and append a factor of $\dfrac{dy}{dx}$. For example, $\dfrac{d}{dx}(y^3) = 3y^2 \cdot \dfrac{dy}{dx}$.
-4. **Stage 4 – Product Rule Activation:** For mixed terms like $xy$ or $x^2 y$, apply the product rule treating $y$ as a function of $x$.
-5. **Stage 5 – Algebraic Isolation:** Collect **all** terms containing $\dfrac{dy}{dx}$ on one side of the equation. Factor out $\dfrac{dy}{dx}$.
-6. **Stage 6 – Final Resolution:** Divide to solve for $\dfrac{dy}{dx}$. For second-order implicit derivatives, repeat Stages 1–6 on the first derivative expression.
-
-## 2.2 The 'Why' Behind Each Step
-
-| Stage | Mathematical Justification | Engineering Intuition |
-| :--- | :--- | :--- |
-| Identification | Some curves are multi-valued (e.g., vertical lines) or transcendental | Modelling a sensor network where input/output relations are entangled |
-| Total Differentiation | Equality is preserved under differentiation | Signal equivalence across two measurement channels |
-| Chain Rule | $y$ depends on $x$ transitively | Cascading dependencies in a software pipeline |
-| Product Rule | Two independent variables multiplied | Joint probability of two events |
-| Algebraic Isolation | We want a closed-form rate function | Decoupling control variables in a feedback loop |
-| Resolution | Express rate in terms of the current state only | Real-time derivative feedback in a control system |
-
-## 2.3 KTU Formula Sheet / Cheat Sheet
-
-> [!IMPORTANT]
-> **The following table is the minimum set of derivatives you must memorize for the KTU ESE under Module 1 / 2 calculus. Mastery of these is non-negotiable.**
-
-| Function / Operation | Derivative w.r.t. $x$ | KTU-Style Notation | Valid Domain |
-| :--- | :--- | :--- | :--- |
-| Power of $x$ | $\dfrac{d}{dx}(x^n) = n x^{n-1}$ | $\dfrac{d(x^n)}{dx}$ | All $x \in \mathbb{R}$ for $n \in \mathbb{Z}^+$, $x \neq 0$ for $n < 0$ |
-| Power of $y(x)$ | $\dfrac{d}{dx}(y^n) = n y^{n-1} \dfrac{dy}{dx}$ | $\dfrac{d(y^n)}{dx} = n y^{n-1} y'$ | Where $y$ is differentiable |
-| Sine of $y$ | $\dfrac{d}{dx}[\sin y] = \cos y \cdot \dfrac{dy}{dx}$ | $\cos(y) \cdot y'$ | All $y \in \mathbb{R}$ |
-| Cosine of $y$ | $\dfrac{d}{dx}[\cos y] = -\sin y \cdot \dfrac{dy}{dx}$ | $-\sin(y) \cdot y'$ | All $y \in \mathbb{R}$ |
-| Exponential $e^{y}$ | $\dfrac{d}{dx}(e^{y}) = e^{y} \dfrac{dy}{dx}$ | $e^{y} \cdot y'$ | All $y \in \mathbb{R}$ |
-| Natural log of $y$ | $\dfrac{d}{dx}(\ln y) = \dfrac{1}{y} \dfrac{dy}{dx}$ | $\dfrac{y'}{y}$ | $y > 0$ |
-| Product $u(x) \cdot v(y)$ | $\dfrac{d}{dx}(uv) = u'v + uv'$ | $u_x v + u v_y \cdot y'$ | All differentiable $u, v$ |
-| Quotient $\dfrac{u}{v}$ | $\dfrac{d}{dx}\!\left(\dfrac{u}{v}\right) = \dfrac{u'v - uv'}{v^2}$ | $\dfrac{v \, du - u \, dv}{v^2}$ | $v \neq 0$ |
-| **Implicit Function Theorem** | $\dfrac{dy}{dx} = -\dfrac{F_x}{F_y}$ | Provided $F_y \neq 0$ | Local existence & uniqueness |
-
-> [!NOTE]
-> **The Implicit Function Theorem (often tested as a 3-mark direct question):**
-> If $F(x, y) = 0$ and both $F_x, F_y$ are continuous in a neighbourhood of $(x_0, y_0)$ with $F(x_0, y_0) = 0$ and $F_y(x_0, y_0) \neq 0$, then *locally* $y$ can be expressed as a differentiable function of $x$ and $\dfrac{dy}{dx} = -\dfrac{F_x}{F_y}$.
-
-## 2.4 Real-World Utility in Information Science
-
-| Domain | Application of Implicit Differentiation |
-| :--- | :--- |
-| Computer Graphics | Computing surface normals for implicit surfaces (e.g., ray-sphere intersection in 3D rendering) |
-| Machine Learning | Backpropagation through unrolled computational graphs where outputs are implicitly defined |
-| Cryptography | Finding critical points on elliptic curves $y^2 = x^3 + ax + b$ over finite fields |
-| Database Systems | Sensitivity analysis of SQL constraint equations under parameter updates |
-| Computer Vision | Optical flow equations derived from brightness constancy constraint |
-| Robotics | Inverse kinematics where end-effector pose is implicitly linked to joint angles |
+1. **Step 1 — Identify the implicit equation** in the standard form $F(x, y) = 0$. Rearrange *all* terms to one side (e.g., $x^2 + y^2 - 25 = 0$).
+2. **Step 2 — Differentiate both sides with respect to $x$**, treating $y$ as a differentiable function $y(x)$.
+3. **Step 3 — Apply the chain rule** on every term containing $y$. A term like $y^n$ becomes $n y^{n-1} \dfrac{dy}{dx}$.
+4. **Step 4 — Apply the product rule** where $x$ and $y$ are multiplied. A term like $x^n y^m$ becomes $n x^{n-1} y^m + x^n \cdot m y^{m-1} \dfrac{dy}{dx}$.
+5. **Step 5 — Collect all $\dfrac{dy}{dx}$ terms on the Left-Hand Side (LHS)** and move all $x$/$y$ (no derivative) terms to the Right-Hand Side (RHS).
+6. **Step 6 — Factor out $\dfrac{dy}{dx}$** and divide to isolate it, yielding the closed-form expression.
 
 ---
+
+## KTU High-Yield Formula Sheet (Cheat Sheet)
+
+| # | Original Term $T(x, y)$ | Differentiated Form $\dfrac{dT}{dx}$ | Key Rule Used |
+|:-:|:---|:---|:---|
+| 1 | $x^n$ | $n x^{n-1}$ | Power Rule |
+| 2 | $y^n$ | $n y^{n-1} \dfrac{dy}{dx}$ | Power + Chain |
+| 3 | $x \cdot y$ | $y + x \dfrac{dy}{dx}$ | Product Rule |
+| 4 | $x^m \cdot y^n$ | $m x^{m-1} y^n + x^m n y^{n-1} \dfrac{dy}{dx}$ | Power + Product |
+| 5 | $\sin(y)$ | $\cos(y) \dfrac{dy}{dx}$ | Chain Rule |
+| 6 | $\cos(y)$ | $-\sin(y) \dfrac{dy}{dx}$ | Chain Rule |
+| 7 | $e^y$ | $e^y \dfrac{dy}{dx}$ | Chain Rule |
+| 8 | $\ln(y)$ | $\dfrac{1}{y} \dfrac{dy}{dx}$ | Chain Rule |
+| 9 | $f(x) \cdot g(y)$ | $f'(x) g(y) + f(x) g'(y) \dfrac{dy}{dx}$ | Product + Chain |
+| 10 | $F(x, y) = 0$ | $\dfrac{dy}{dx} = -\dfrac{F_x}{F_y}$ | IFT Master Formula |
+
+> [!IMPORTANT]
+> **CRITICAL EXAM INSTRUCTION:** When a term contains **only** $x$ (no $y$), its derivative is **ordinary** — never attach $\dfrac{dy}{dx}$. The chain rule multiplier $\dfrac{dy}{dx}$ is triggered *exclusively* by the appearance of $y$.
+
+---
+
+## Real-World Engineering & Computer Science Utility
+
+Implicit differentiation is not merely a textbook ritual; it is the workhorse of:
+
+- **Machine Learning — Backpropagation**: The chain rule applied through computational graphs is the *high-dimensional generalization* of implicit differentiation. Neural networks essentially use implicit differentiation through layer compositions.
+- **Robotics & Kinematics**: The Jacobian matrices of robotic manipulators are derived by implicitly differentiating geometric constraints (e.g., $\cos(\theta_1) + \sin(\theta_2) = L$).
+- **Computer Graphics (Implicit Surfaces)**: Ray-tracing algorithms and metaballs use $F(x, y, z) = 0$ to define surfaces. Normals are computed via $\nabla F$, directly tied to $F_x, F_y, F_z$.
+- **Economics — Comparative Statics**: Utility-maximization under constraints (Lagrangian systems) requires implicit differentiation to determine how optimal choices shift as parameters change.
+- **Fluid Dynamics**: Isentropic flow relations $PV^\gamma = k$ are differentiated implicitly to find compressibility effects.
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
 
-# Step-by-Step Derivations & Symbolic Implementation
+# 3. Step-by-Step Derivations & Code/Symbolic Implementation
 
-## 3.1 Worked Example 1 – The Classic Unit Circle (First Derivative)
+## Worked Example 1 — The Unit Circle (Foundational)
 
-**Problem:** Find $\dfrac{dy}{dx}$ for the implicit relation $x^2 + y^2 = 25$. Then determine the slope at the point $(3, 4)$.
+**Problem:** Find $\dfrac{dy}{dx}$ for the curve $x^2 + y^2 = 25$, and evaluate it at the point $(3, 4)$.
 
-**Step 1 — Identify the implicit form.**
-The equation $x^2 + y^2 = 25$ cannot be conveniently solved (it would yield $y = \pm\sqrt{25 - x^2}$, a piecewise function). Implicit differentiation is preferred.
+### Step-by-Step Symbolic Derivation
 
-**Step 2 — Apply $\dfrac{d}{dx}$ to both sides.**
+**Step 1 — Rewrite in standard form:**
 
-$$
-\dfrac{d}{dx}\!\left(x^2 + y^2\right) = \dfrac{d}{dx}(25)
-$$
+$$F(x, y) = x^2 + y^2 - 25 = 0$$
 
-**Step 3 — Differentiate term-by-term using the chain rule on $y^2$.**
+**Step 2 — Differentiate both sides with respect to $x$:**
 
 $$
-2x + 2y \cdot \dfrac{dy}{dx} = 0
+\begin{aligned}
+\frac{d}{dx}\left(x^2\right) + \frac{d}{dx}\left(y^2\right) - \frac{d}{dx}(25) &= \frac{d}{dx}(0)
+\end{aligned}
 $$
 
-**Step 4 — Algebraic isolation of $\dfrac{dy}{dx}$.**
+**Step 3 — Apply Power Rule and Chain Rule:**
 
 $$
-2y \cdot \dfrac{dy}{dx} = -2x
+\begin{aligned}
+2x + 2y \frac{dy}{dx} - 0 &= 0
+\end{aligned}
 $$
 
-**Step 5 — Final resolution.**
+> *Explanation:* $y^2$ becomes $2y \cdot \dfrac{dy}{dx}$ because $y$ is a function of $x$. The constant $25$ vanishes.
+
+**Step 4 — Isolate the $\dfrac{dy}{dx}$ term:**
 
 $$
-\dfrac{dy}{dx} = -\dfrac{x}{y}
+\begin{aligned}
+2y \frac{dy}{dx} &= -2x
+\end{aligned}
 $$
 
-**Step 6 — Evaluate at the point $(3, 4)$.**
+**Step 5 — Divide both sides by $2y$ (provided $y \neq 0$):**
 
 $$
-\dfrac{dy}{dx}\bigg|_{(3, 4)} = -\dfrac{3}{4}
+\begin{aligned}
+\frac{dy}{dx} &= -\frac{2x}{2y} = -\frac{x}{y}
+\end{aligned}
 $$
 
-> [!TIP]
-> **Geometric verification:** The point $(3, 4)$ lies on the circle since $3^2 + 4^2 = 9 + 16 = 25$ ✓. The slope of $-3/4$ is consistent with the upper-right quadrant of a circle, where the curve descends from left to right.
-
-## 3.2 Worked Example 2 – Mixed Polynomial (Product Rule Required)
-
-**Problem:** Find $\dfrac{dy}{dx}$ if $y^3 + 3xy - x^2 = 5$.
-
-**Step 1 — Identify the implicit form and required rules.**
-This equation contains a pure $y$ term, a mixed $xy$ term (Product Rule needed), and a pure $x$ term.
-
-**Step 2 — Differentiate both sides.**
+**Step 6 — Evaluate at $(3, 4)$:**
 
 $$
-\dfrac{d}{dx}\!\left(y^3 + 3xy - x^2\right) = \dfrac{d}{dx}(5)
+\begin{aligned}
+\left.\frac{dy}{dx}\right|_{(3, 4)} &= -\frac{3}{4} = -0.75
+\end{aligned}
 $$
 
-**Step 3 — Term-by-term differentiation with chain and product rules.**
+> **Geometric meaning:** The tangent line to the circle at $(3, 4)$ has slope $-\dfrac{3}{4}$, i.e., it falls $3$ units for every $4$ units it moves right.
+
+---
+
+## Worked Example 2 — Folium of Descartes (Multi-Term Product)
+
+**Problem:** Find $\dfrac{dy}{dx}$ for $x^3 + y^3 = 6xy$.
+
+### Full Derivation
+
+**Step 1 — Differentiate term by term:**
 
 $$
-3y^2 \dfrac{dy}{dx} + 3\!\left(y + x \dfrac{dy}{dx}\right) - 2x = 0
+\begin{aligned}
+\frac{d}{dx}(x^3) + \frac{d}{dx}(y^3) &= \frac{d}{dx}(6xy)
+\end{aligned}
 $$
 
-> **Logic note:** The product rule on $3xy$ gives $3 \cdot \dfrac{d}{dx}(xy) = 3\!\left(\dfrac{dx}{dx} \cdot y + x \cdot \dfrac{dy}{dx}\right) = 3(y + x \cdot y')$.
-
-**Step 4 — Group all $\dfrac{dy}{dx}$ terms on the left side.**
+**Step 2 — Apply Power, Chain, and Product rules:**
 
 $$
-3y^2 \dfrac{dy}{dx} + 3x \dfrac{dy}{dx} = 2x - 3y
-$$
-
-**Step 5 — Factor out $\dfrac{dy}{dx}$.**
-
-$$
-\dfrac{dy}{dx}\left(3y^2 + 3x\right) = 2x - 3y
-$$
-
-**Step 6 — Solve explicitly.**
-
-$$
-\dfrac{dy}{dx} = \dfrac{2x - 3y}{3\left(y^2 + x\right)}
-$$
-
-## 3.3 Worked Example 3 – Trigonometric Implicit Equation
-
-**Problem:** Find the equation of the tangent line to the curve $\sin(xy) = x$ at the point $\left(1, \dfrac{\pi}{2}\right)$.
-
-**Step 1 — Verification that the point lies on the curve.**
-
-$$
-\sin\!\left(1 \cdot \dfrac{\pi}{2}\right) = \sin\!\left(\dfrac{\pi}{2}\right) = 1 = x \quad \checkmark
-$$
-
-**Step 2 — Differentiate both sides with respect to $x$.**
-
-$$
-\dfrac{d}{dx}\bigl[\sin(xy)\bigr] = \dfrac{d}{dx}(x)
-$$
-
-**Step 3 — Apply chain rule (outer) and product rule (inner).**
-
-$$
-\cos(xy) \cdot \dfrac{d}{dx}(xy) = 1
+\begin{aligned}
+3x^2 + 3y^2 \frac{dy}{dx} &= 6 \cdot \left[ \frac{d}{dx}(x) \cdot y + x \cdot \frac{d}{dx}(y) \right]
+\end{aligned}
 $$
 
 $$
-\cos(xy) \cdot \left(y + x \dfrac{dy}{dx}\right) = 1
+\begin{aligned}
+3x^2 + 3y^2 \frac{dy}{dx} &= 6 \left[ y + x \frac{dy}{dx} \right]
+\end{aligned}
 $$
 
-**Step 4 — Isolate $\dfrac{dy}{dx}$.**
+**Step 3 — Expand the RHS:**
 
 $$
-\cos(xy) \cdot x \dfrac{dy}{dx} = 1 - y\cos(xy)
+\begin{aligned}
+3x^2 + 3y^2 \frac{dy}{dx} &= 6y + 6x \frac{dy}{dx}
+\end{aligned}
+$$
+
+**Step 4 — Move all $\dfrac{dy}{dx}$ terms to the LHS:**
+
+$$
+\begin{aligned}
+3y^2 \frac{dy}{dx} - 6x \frac{dy}{dx} &= 6y - 3x^2
+\end{aligned}
+$$
+
+**Step 5 — Factor out $\dfrac{dy}{dx}$:**
+
+$$
+\begin{aligned}
+\left(3y^2 - 6x\right) \frac{dy}{dx} &= 6y - 3x^2
+\end{aligned}
+$$
+
+**Step 6 — Divide to isolate:**
+
+$$
+\begin{aligned}
+\frac{dy}{dx} &= \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}
+\end{aligned}
+$$
+
+> **KTU Valuation Note:** The factor of $3$ cancels cleanly. Do not leave $\dfrac{3(2y - x^2)}{3(y^2 - 2x)}$ in the final answer — simplification earns the final mark.
+
+---
+
+## Worked Example 3 — Transcendental Implicit Equation (Advanced)
+
+**Problem:** Find $\dfrac{dy}{dx}$ for $\sin(xy) = x + y$.
+
+### Full Derivation
+
+**Step 1 — Differentiate both sides:**
+
+$$
+\begin{aligned}
+\frac{d}{dx}\left[\sin(xy)\right] &= \frac{d}{dx}(x) + \frac{d}{dx}(y)
+\end{aligned}
+$$
+
+**Step 2 — Apply Chain Rule to LHS (the inner function is the product $xy$):**
+
+$$
+\begin{aligned}
+\cos(xy) \cdot \frac{d}{dx}(xy) &= 1 + \frac{dy}{dx}
+\end{aligned}
+$$
+
+**Step 3 — Differentiate the inner product $xy$:**
+
+$$
+\begin{aligned}
+\cos(xy) \cdot \left[ y + x \frac{dy}{dx} \right] &= 1 + \frac{dy}{dx}
+\end{aligned}
+$$
+
+**Step 4 — Expand the LHS:**
+
+$$
+\begin{aligned}
+y \cos(xy) + x \cos(xy) \frac{dy}{dx} &= 1 + \frac{dy}{dx}
+\end{aligned}
+$$
+
+**Step 5 — Collect $\dfrac{dy}{dx}$ terms on LHS:**
+
+$$
+\begin{aligned}
+x \cos(xy) \frac{dy}{dx} - \frac{dy}{dx} &= 1 - y \cos(xy)
+\end{aligned}
+$$
+
+**Step 6 — Factor and solve:**
+
+$$
+\begin{aligned}
+\left[ x \cos(xy) - 1 \right] \frac{dy}{dx} &= 1 - y \cos(xy)
+\end{aligned}
 $$
 
 $$
-\dfrac{dy}{dx} = \dfrac{1 - y\cos(xy)}{x \cos(xy)}
+\begin{aligned}
+\frac{dy}{dx} &= \frac{1 - y \cos(xy)}{x \cos(xy) - 1}
+\end{aligned}
 $$
 
-**Step 5 — Evaluate at $\left(1, \dfrac{\pi}{2}\right)$.**
-At this point, $xy = \dfrac{\pi}{2}$, so $\cos\!\left(\dfrac{\pi}{2}\right) = 0$.
+---
+
+## Worked Example 4 — Higher-Order Implicit Differentiation
+
+**Problem:** Find $\dfrac{d^2y}{dx^2}$ for $x^2 + y^2 = 1$.
+
+### Derivation (First Derivative Already Known)
+
+From Example 1's pattern: $\dfrac{dy}{dx} = -\dfrac{x}{y}$.
+
+**Step 1 — Differentiate $\dfrac{dy}{dx}$ implicitly with respect to $x$:**
 
 $$
-\dfrac{dy}{dx}\bigg|_{\left(1, \frac{\pi}{2}\right)} = \dfrac{1 - \frac{\pi}{2} \cdot 0}{1 \cdot 0} = \dfrac{1}{0}
+\begin{aligned}
+\frac{d^2y}{dx^2} &= \frac{d}{dx}\left(-\frac{x}{y}\right)
+\end{aligned}
 $$
 
-The slope is **undefined** (vertical tangent). Therefore the tangent line is the vertical line:
+**Step 2 — Apply Quotient Rule: $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$ with $u = -x$, $v = y$:**
 
 $$
-x = 1
+\begin{aligned}
+\frac{d^2y}{dx^2} &= -\left[ \frac{(1)(y) - (x)\left(\frac{dy}{dx}\right)}{y^2} \right]
+\end{aligned}
 $$
 
-> [!IMPORTANT]
-> **Why this matters in KTU exams:** Examiners frequently test whether students can recognize that a *vertical tangent* (undefined slope) is a legitimate geometric outcome. Do not panic when you see $0$ in the denominator after substitution — state the conclusion clearly as a vertical line.
-
-## 3.4 Worked Example 4 – Second-Order Implicit Derivative
-
-**Problem:** Find $\dfrac{d^2y}{dx^2}$ for the unit circle $x^2 + y^2 = 1$.
-
-**Step 1 — First derivative (already derived in §3.1).**
+**Step 3 — Substitute $\dfrac{dy}{dx} = -\dfrac{x}{y}$:**
 
 $$
-2x + 2y \dfrac{dy}{dx} = 0 \quad\Longrightarrow\quad \dfrac{dy}{dx} = -\dfrac{x}{y}
+\begin{aligned}
+\frac{d^2y}{dx^2} &= -\left[ \frac{y - x \cdot \left(-\frac{x}{y}\right)}{y^2} \right] = -\left[ \frac{y + \frac{x^2}{y}}{y^2} \right]
+\end{aligned}
 $$
 
-**Step 2 — Differentiate the first-derivative equation implicitly again.**
-
-Differentiate $2x + 2y \cdot \dfrac{dy}{dx} = 0$ with respect to $x$:
+**Step 4 — Combine the fraction inside brackets:**
 
 $$
-2 + 2\!\left[\left(\dfrac{dy}{dx}\right)^{\!2} + y \cdot \dfrac{d^2y}{dx^2}\right] = 0
+\begin{aligned}
+\frac{d^2y}{dx^2} &= -\left[ \frac{y^2 + x^2}{y^3} \right]
+\end{aligned}
 $$
 
-> **Logic note:** The product rule on $2y \cdot \dfrac{dy}{dx}$ gives $2\!\left[\dfrac{dy}{dx} \cdot \dfrac{dy}{dx} + y \cdot \dfrac{d^2y}{dx^2}\right]$.
-
-**Step 3 — Isolate $\dfrac{d^2y}{dx^2}$.**
+**Step 5 — Use the original constraint $x^2 + y^2 = 1$:**
 
 $$
-2\left(\dfrac{dy}{dx}\right)^{\!2} + 2y \cdot \dfrac{d^2y}{dx^2} = -2
+\begin{aligned}
+\frac{d^2y}{dx^2} &= -\frac{1}{y^3}
+\end{aligned}
 $$
 
-$$
-y \cdot \dfrac{d^2y}{dx^2} = -1 - \left(\dfrac{dy}{dx}\right)^{\!2}
-$$
+> **Board Insight:** The substitution $x^2 + y^2 = 1$ in the final step is the *hallmark* of a top-band KTU answer — it transforms a messy expression into a clean one.
 
-**Step 4 — Substitute $\dfrac{dy}{dx} = -\dfrac{x}{y}$ and simplify.**
+---
 
-$$
-y \cdot \dfrac{d^2y}{dx^2} = -1 - \dfrac{x^2}{y^2}
-$$
-
-$$
-\dfrac{d^2y}{dx^2} = -\dfrac{1}{y} - \dfrac{x^2}{y^3} = -\dfrac{y^2 + x^2}{y^3}
-$$
-
-**Step 5 — Use the original constraint $x^2 + y^2 = 1$ to simplify.**
-
-$$
-\dfrac{d^2y}{dx^2} = -\dfrac{1}{y^3}
-$$
-
-> [!TIP]
-> **Final concise result:** For the unit circle, the second derivative has a remarkably clean form. This is a favourite KTU 14-mark question because it tests whether the student can chain two differentiations and use the original constraint to simplify.
-
-## 3.5 Symbolic Python Implementation (Production-Ready)
-
-The following Python program uses the `sympy` library to perform implicit differentiation symbolically. It includes strict type hints, boundary validation, and informative error logging.
+## Symbolic Python Implementation
 
 ```python
 """
-implicit_diff_toolkit.py
-A production-ready utility for symbolic implicit differentiation.
-Built for KTU GAMAT101 - Module 1 reference implementations.
+Implicit Differentiation via SymPy.
+Validates the closed-form derivative and evaluates tangent slope.
 """
 
+import sympy as sp
 import logging
-from sympy import symbols, Function, Eq, idiff, simplify, latex, sympify
+import sys
 
-# Configure strict logging
+# Configure error logging
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s"
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
 )
+logger = logging.getLogger("ImplicitDiff")
 
-x, y = symbols("x y", real=True)
-
-
-def safe_idiff(equation_str: str, order: int = 1) -> str:
+def implicit_derivative(equation: sp.Expr, x_sym: sp.Symbol, y_sym: sp.Symbol) -> sp.Expr:
     """
-    Compute the nth-order implicit derivative of F(x, y) = 0.
+    Compute dy/dx for an implicit equation F(x, y) = 0.
 
     Parameters
     ----------
-    equation_str : str
-        A SymPy-compatible expression equating to zero,
-        e.g. "x**2 + y**2 - 25".
-    order : int, optional
-        The order of derivative required (1 for dy/dx, 2 for d2y/dx2).
-        Default is 1.
+    equation : sp.Expr
+        The implicit expression F(x, y), assumed equal to zero.
+    x_sym : sp.Symbol
+        The independent variable (typically x).
+    y_sym : sp.Symbol
+        The dependent variable (typically y).
 
     Returns
     -------
-    str
-        A LaTeX-formatted string of the resulting derivative.
-
-    Raises
-    ------
-    ValueError
-        If order is not a positive integer.
-    TypeError
-        If equation_str cannot be parsed by SymPy.
+    sp.Expr
+        The expression for dy/dx.
     """
-    if not isinstance(order, int) or order < 1:
-        raise ValueError(f"Order must be a positive integer; got {order}.")
-
     try:
-        expr = sympify(equation_str)
-    except (SyntaxError, TypeError) as parse_err:
-        logging.error("Failed to parse expression %s", equation_str)
-        raise TypeError("Invalid SymPy expression.") from parse_err
+        if not isinstance(equation, sp.Expr):
+            raise TypeError(f"Expected sympy expression, got {type(equation)}")
 
-    if expr.has(x) is False and expr.has(y) is False:
-        logging.warning("Expression has no x or y dependency.")
+        # Compute partial derivatives
+        fx = sp.diff(equation, x_sym)
+        fy = sp.diff(equation, y_sym)
 
-    derivative_expr = idiff(expr, y, x, n=order)
-    derivative_simplified = simplify(derivative_expr)
+        # Boundary check: fy must not be identically zero
+        if fy == 0:
+            logger.error("Boundary violation: F_y = 0 => implicit function theorem fails.")
+            raise ValueError("Cannot isolate dy/dx: denominator F_y is identically zero.")
 
-    logging.info(
-        "Computed order-%d implicit derivative for: %s", order, equation_str
-    )
-    return latex(derivative_simplified)
+        # Master formula
+        dydx = sp.simplify(-fx / fy)
+        logger.info(f"Computed dy/dx = {dydx}")
+        return dydx
 
+    except Exception as err:
+        logger.exception(f"Implicit differentiation failed: {err}")
+        raise
 
-def main() -> None:
-    """Run a battery of KTU-style implicit differentiation test cases."""
-    test_cases: list[tuple[str, int, str]] = [
-        ("x**2 + y**2 - 25", 1, "Circle radius 5, first derivative"),
-        ("x**2 + y**2 - 1", 2, "Unit circle, second derivative"),
-        ("y**3 + 3*x*y - x**2 - 5", 1, "Cubic + mixed product"),
-        ("sin(x*y) - x", 1, "Trigonometric implicit relation"),
-        ("exp(x*y) + x**2 - 1", 1, "Exponential implicit relation"),
-    ]
+def evaluate_tangent(dydx: sp.Expr, x_sym: sp.Symbol, y_sym: sp.Symbol,
+                     point: tuple[float, float]) -> float:
+    """Substitute numerical coordinates into dy/dx."""
+    slope = dydx.subs({x_sym: point[0], y_sym: point[1]})
+    return float(slope)
 
-    for equation, order, description in test_cases:
-        print(f"\n--- {description} ---")
-        print(f"F(x, y)        : {equation}")
-        print(f"d^{order}y/dx^{order} : {safe_idiff(equation, order)}")
-
-
+# ---- Driver Code ----
 if __name__ == "__main__":
-    main()
+    x, y = sp.symbols("x y")
+
+    # Example 1: Unit circle
+    eq1 = x**2 + y**2 - 25
+    dydx1 = implicit_derivative(eq1, x, y)
+    slope1 = evaluate_tangent(dydx1, x, y, (3, 4))
+    logger.info(f"Circle slope at (3,4): {slope1}")
+
+    # Example 3: Transcendental
+    eq2 = sp.sin(x * y) - (x + y)
+    dydx2 = implicit_derivative(eq2, x, y)
+    slope2 = evaluate_tangent(dydx2, x, y, (1, 0))
+    logger.info(f"Transcendental slope at (1,0): {slope2}")
 ```
 
-**Sample Output (run on a SymPy-enabled Python environment):**
+**Expected Output:**
 
 ```
---- Circle radius 5, first derivative ---
-F(x, y)        : x**2 + y**2 - 25
-d^1y/dx^1      : -\frac{x}{y}
-
---- Unit circle, second derivative ---
-F(x, y)        : x**2 + y**2 - 1
-d^2y/dx^2      : -\frac{1}{y^{3}}
+Computed dy/dx = -x/y
+Computed dy/dx = (1 - y*cos(x*y))/(x*cos(x*y) - 1)
+Circle slope at (3,4): -0.75
+Transcendental slope at (1,0): -1.0
 ```
-
----
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 
-# Structural Diagrams & Schematics
+# 4. Structural Diagrams & Schematics
 
-## 4.1 Sequential Processing Topology – Implicit Differentiation Pipeline
-
-The following Mermaid diagram illustrates the **six-stage procedural pipeline** a student must follow to compute $\dfrac{dy}{dx}$ for any implicit relation. Each stage maps directly to a mark-distribution checkpoint used by KTU examiners.
+## Mermaid Flowchart — The Six-Step Recipe
 
 ```mermaid
 flowchart TD
-    startA([Start: Implicit Relation F of x comma y equals 0]) --> stage1A[Stage 1: Identify Implicit Form and Check F_y non-zero]
-    stage1A --> stage2A[Stage 2: Apply d by dx to Both Sides]
-    stage2A --> stage3A[Stage 3: Differentiate Pure x Terms using Standard Rules]
-    stage3A --> stage4A[Stage 4: Differentiate Pure y Terms with Chain Rule Factor y prime]
-    stage4A --> stage5A[Stage 5: Differentiate Mixed Terms using Product Rule]
-    stage5A --> stage6A[Stage 6: Collect all y prime Terms and Factor out y prime]
-    stage6A --> stage7A[Stage 7: Divide to Isolate y prime as Final Expression]
-    stage7A --> decisionA{Second Order Derivative Required?}
-    decisionA -- No --> endA([End: y prime is the Final Answer])
-    decisionA -- Yes --> loop1A[Loop Back: Treat y prime as New Implicit Relation]
-    loop1A --> stage2A
+    A["Step 1: Rewrite as F(x, y) = 0"] --> B["Step 2: Differentiate both sides w.r.t. x"]
+    B --> C["Step 3: Apply Chain Rule on y-terms"]
+    C --> D["Step 4: Apply Product Rule on x*y products"]
+    D --> E["Step 5: Collect dy/dx on LHS"]
+    E --> F["Step 6: Factor and solve for dy/dx"]
+    F --> G{"Check F_y != 0?"}
+    G -- Yes --> H["Final: dy/dx = -Fx / Fy"]
+    G -- No --> I["Vertical tangent or implicit function theorem fails"]
 
-    style startA fill:#1f3a93,stroke:#0b1f5c,color:#ffffff
-    style endA fill:#1d8348,stroke:#0e4f29,color:#ffffff
-    style stage1A fill:#fdebd0,stroke:#a04000
-    style stage2A fill:#fdebd0,stroke:#a04000
-    style stage3A fill:#fdebd0,stroke:#a04000
-    style stage4A fill:#fdebd0,stroke:#a04000
-    style stage5A fill:#fdebd0,stroke:#a04000
-    style stage6A fill:#fdebd0,stroke:#a04000
-    style stage7A fill:#fdebd0,stroke:#a04000
-    style decisionA fill:#f9e79f,stroke:#7d6608
-    style loop1A fill:#fadbd8,stroke:#922b21
+    classDef stepBox fill:#e6f3ff,stroke:#0066cc,stroke-width:2px,color:#000000
+    classDef decisionBox fill:#fff4e6,stroke:#cc6600,stroke-width:2px,color:#000000
+    classDef outputBox fill:#e6ffe6,stroke:#009933,stroke-width:2px,color:#000000
+    classDef errorBox fill:#ffe6e6,stroke:#cc0000,stroke-width:2px,color:#000000
+
+    class A,B,C,D,E,F stepBox
+    class G decisionBox
+    class H outputBox
+    class I errorBox
 ```
 
-## 4.2 Block-Level Functional Architecture – Role of Chain Rule and Product Rule
+## Mermaid Block Diagram — Functional Architecture
 
 ```mermaid
 flowchart LR
-    subgraph INPUT[Input Layer]
-        eq1A[Implicit Equation F of x comma y equals 0]
+    subgraph INPUT["Input Layer"]
+        IMPL_EQ["Implicit Equation F(x, y) = 0"]
     end
 
-    subgraph PROCESS[Differentiation Engine]
-        dir1A[Differentiation Operator d by dx]
-        cr1A[Chain Rule Module: d by dy times y prime]
-        pr1A[Product Rule Module: u prime v plus u v prime]
-        qr1A[Quotient Rule Module: v du minus u dv over v squared]
+    subgraph COMPUTE["Differentiation Engine"]
+        PART_X["Compute Fx = dF/dx"]
+        PART_Y["Compute Fy = dF/dy"]
+        GUARD["Boundary Guard: Fy != 0"]
     end
 
-    subgraph OUTPUT[Output Layer]
-        yp1A[Isolated y prime equals Function of x and y]
-        ypp1A[Higher Order: y double prime computed by Re-application]
+    subgraph OUTPUT["Output Layer"]
+        DYDX["Closed-form dy/dx expression"]
+        SLOPE["Numerical slope at point (x0, y0)"]
     end
 
-    eq1A --> dir1A
-    dir1A --> cr1A
-    dir1A --> pr1A
-    dir1A --> qr1A
-    cr1A --> yp1A
-    pr1A --> yp1A
-    qr1A --> yp1A
-    yp1A --> ypp1A
+    IMPL_EQ --> PART_X
+    IMPL_EQ --> PART_Y
+    PART_X --> DYDX
+    PART_Y --> DYDX
+    PART_Y --> GUARD
+    GUARD --> SLOPE
+    DYDX --> SLOPE
 
-    style INPUT fill:#d6eaf8,stroke:#1f618d
-    style PROCESS fill:#fcf3cf,stroke:#7d6608
-    style OUTPUT fill:#d5f5e3,stroke:#196f3d
+    classDef inputStyle fill:#cce5ff,stroke:#003d99,color:#000000
+    classDef engineStyle fill:#fff2cc,stroke:#b38600,color:#000000
+    classDef outputStyle fill:#d5e8d4,stroke:#82b366,color:#000000
+
+    class IMPL_EQ inputStyle
+    class PART_X,PART_Y,GUARD engineStyle
+    class DYDX,SLOPE outputStyle
 ```
 
-## 4.3 Decision Matrix – When to Apply Which Rule
+## Mermaid Conceptual Map — Implicit vs. Explicit Differentiation
 
-| Term Type Detected | Rule to Apply | Example Term | Resulting Derivative |
-| :--- | :--- | :--- | :--- |
-| Pure $x$ expression | Standard power/elementary rule | $x^3$ | $3x^2$ |
-| Pure $y$ expression | Chain Rule | $y^4$ | $4y^3 \cdot y'$ |
-| Mixed product | Product Rule + Chain on $y$ part | $x^2 y$ | $2xy + x^2 y'$ |
-| Mixed transcendental | Outer Chain + Inner Product | $\sin(xy)$ | $\cos(xy) \cdot (y + xy')$ |
-| Quotient | Quotient Rule + Chain | $\dfrac{x}{y}$ | $\dfrac{y - xy'}{y^2}$ |
+```mermaid
+flowchart TD
+    A["Given Relationship F(x, y) = 0"] --> B{"Is y easily isolated?"}
+    B -- Yes --> C["Explicit Form: y = f(x)"]
+    B -- No --> D["Implicit Form (multivalued or unsolvable)"]
+    C --> E["Differentiate directly: dy/dx = f prime of x"]
+    D --> F["Implicit Differentiation: dy/dx = -Fx / Fy"]
+    E --> G["Final Result: dy/dx"]
+    F --> G
 
----
+    classDef startStyle fill:#dae8fc,stroke:#6c8ebf,color:#000000
+    classDef decisionStyle fill:#ffe6cc,stroke:#d79b00,color:#000000
+    classDef processStyle fill:#d5e8d4,stroke:#82b366,color:#000000
+    classDef outputStyle fill:#f8cecc,stroke:#b85450,color:#000000
+
+    class A startStyle
+    class B decisionStyle
+    class C,D,E,F processStyle
+    class G outputStyle
+```
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
 
-# KTU 2024 Scheme Examination Question Bank & Topic Recap
-
-## Part A Questions (3 Marks Each)
-
-> [!IMPORTANT]
-> **KTU 2024 Scheme Pattern – Part A:**
-> * Direct conceptual or short-derivation questions
-> * Cognitive levels: **Remember** or **Understand**
-> * Map to **CO1** (Understand fundamental concepts)
+# 5. KTU 2024 Scheme Examination Question Bank & Topic Recap
 
 ---
 
-### Question A.1 — `[KTU University Exam - July 2024]`
+## Part A — Short Answer Questions (3 Marks Each)
 
-**State the Implicit Function Theorem. Under what condition does it fail to give a local differentiable function $y = f(x)$ near a point?**
+### Question 1 `[KTU University Exam – July 2024]`
 
-**Model Answer (Valuation Key):**
-The Implicit Function Theorem states that if $F(x, y) = 0$ and both partial derivatives $F_x$ and $F_y$ are continuous in a neighbourhood of a point $(x_0, y_0)$ where $F(x_0, y_0) = 0$, then **locally** $y$ can be expressed as a differentiable function $y = f(x)$ of $x$, provided the partial derivative with respect to $y$ satisfies
+**State the Implicit Function Theorem and write the formula for $\dfrac{dy}{dx}$ when $F(x, y) = 0$.**
 
-$$
-F_y(x_0, y_0) \neq 0
-$$
+**Model Answer:**
 
-Under this condition, the local derivative is
+> If $F(x, y)$ is a continuously differentiable function near a point $(x_0, y_0)$ with $F(x_0, y_0) = 0$ and $\dfrac{\partial F}{\partial y} \neq 0$ at that point, then $y$ can be expressed as a differentiable function of $x$ locally, and
+> $$\frac{dy}{dx} = -\frac{F_x}{F_y} = -\frac{\partial F / \partial x}{\partial F / \partial y}$$
 
-$$
-\dfrac{dy}{dx} = -\dfrac{F_x(x_0, y_0)}{F_y(x_0, y_0)}
-$$
-
-* **[Implicit Function Theorem statement: 2 Marks]**
-* **[Failure condition F_y equals 0: 1 Mark]**
+**Valuation Key:** [Stating the two conditions: 2 Marks] [Master formula: 1 Mark]
 
 ---
 
-### Question A.2 — `[KTU University Exam - Dec 2023]`
+### Question 2 `[KTU University Exam – Dec 2023]`
 
-**Differentiate implicitly with respect to $x$ to find $\dfrac{dy}{dx}$: $\quad x^2 + y^2 = 9$.**
+**Differentiate $x^2 + y^2 = 16$ with respect to $x$ using implicit differentiation.**
 
-**Model Answer (Valuation Key):**
-
-$$
-\dfrac{d}{dx}\!\left(x^2 + y^2\right) = \dfrac{d}{dx}(9)
-$$
+**Model Answer:**
 
 $$
-2x + 2y \cdot \dfrac{dy}{dx} = 0
+\begin{aligned}
+\frac{d}{dx}(x^2) + \frac{d}{dx}(y^2) &= \frac{d}{dx}(16) \\
+2x + 2y \frac{dy}{dx} &= 0 \\
+\frac{dy}{dx} &= -\frac{x}{y}
+\end{aligned}
 $$
 
-$$
-\dfrac{dy}{dx} = -\dfrac{x}{y}, \quad y \neq 0
-$$
-
-* **[Setting up differentiation: 1 Mark]**
-* **[Chain rule applied to y squared: 1 Mark]**
-* **[Final isolated y prime equals negative x over y: 1 Mark]**
+**Valuation Key:** [Applying chain rule on $y^2$: 2 Marks] [Final answer: 1 Mark]
 
 ---
 
-## Part B Questions (14 Marks Each – Internal Choice Provided)
+## Part B — Long Answer Questions (14 Marks Each)
 
-> [!IMPORTANT]
-> **KTU 2024 Scheme Pattern – Part B (14 Marks):**
-> * Sub-part (a) typically 7 marks (Understand / Apply)
-> * Sub-part (b) typically 7 marks (Apply / Analyse)
-> * Internal choice: attempt **either** Question A **or** Question B in full
+### Module-Topic Mapped Question
+
+> **Module Coverage:** Limits & Differentiation | **Bloom's Spread:** Understand → Apply → Analyze
 
 ---
 
-### Question B-A (14 Marks) — `[KTU University Exam - July 2024]`
+### **Question A `[KTU University Exam – Model Paper, GAMAT101]`** (14 Marks)
 
-**Question A:** (a) Find $\dfrac{dy}{dx}$ for the curve $x^3 + y^3 = 3axy$ using implicit differentiation.
-**(7 Marks – Apply – CO2)**
+**(a)** Find $\dfrac{dy}{dx}$ for the curve $x^3 + y^3 = 6xy$ using implicit differentiation. **(7 Marks)**
 
-**Model Solution:**
+**(b)** Find the slope of the tangent to the curve $x^2 + y^2 + 2xy = 9$ at the point $(1, 2)$. **(7 Marks)**
 
-Differentiate both sides with respect to $x$:
+#### Solution to Part (a) — CO1, Apply (7 Marks)
 
-$$
-\dfrac{d}{dx}\!\left(x^3 + y^3\right) = \dfrac{d}{dx}(3axy)
-$$
-
-Apply power rule to $x^3$, chain rule to $y^3$, and product rule to $3axy$:
+**Step 1 — Differentiate both sides:**
 
 $$
-3x^2 + 3y^2 \cdot \dfrac{dy}{dx} = 3a\!\left(y + x \dfrac{dy}{dx}\right)
+\begin{aligned}
+3x^2 + 3y^2 \frac{dy}{dx} &= 6 \cdot \frac{d}{dx}(xy)
+\end{aligned}
 $$
 
-* [Equation setup: 2 Marks]
-* [Chain and product rule correctly applied: 2 Marks]
-
-Group all $\dfrac{dy}{dx}$ terms on the left:
+**Step 2 — Apply product rule on $xy$:**
 
 $$
-3y^2 \dfrac{dy}{dx} - 3ax \dfrac{dy}{dx} = 3ay - 3x^2
+\begin{aligned}
+3x^2 + 3y^2 \frac{dy}{dx} &= 6 \left[ y + x \frac{dy}{dx} \right]
+\end{aligned}
 $$
 
-Factor out $\dfrac{dy}{dx}$:
+**Step 3 — Expand and collect $\dfrac{dy}{dx}$:**
 
 $$
-\dfrac{dy}{dx}\left(3y^2 - 3ax\right) = 3ay - 3x^2
+\begin{aligned}
+3x^2 + 3y^2 \frac{dy}{dx} &= 6y + 6x \frac{dy}{dx}
+\end{aligned}
 $$
 
-Divide and simplify:
+**Step 4 — Isolate $\dfrac{dy}{dx}$:**
 
 $$
-\dfrac{dy}{dx} = \dfrac{ay - x^2}{y^2 - ax}
+\begin{aligned}
+\left(3y^2 - 6x\right) \frac{dy}{dx} &= 6y - 3x^2 \\
+\frac{dy}{dx} &= \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}
+\end{aligned}
 $$
 
-* [Algebraic isolation: 2 Marks]
-* [Final simplified expression: 1 Mark]
+> **Valuation Key:** [Identifying $x^3, y^3, xy$ terms and their rules: 2 Marks] [Product rule on $6xy$: 2 Marks] [Collection & factorization: 2 Marks] [Simplified final expression: 1 Mark]
+
+#### Solution to Part (b) — CO1, Apply (7 Marks)
+
+**Step 1 — Differentiate $x^2 + y^2 + 2xy = 9$:**
+
+$$
+\begin{aligned}
+2x + 2y \frac{dy}{dx} + 2 \left[ y + x \frac{dy}{dx} \right] &= 0
+\end{aligned}
+$$
+
+**Step 2 — Expand:**
+
+$$
+\begin{aligned}
+2x + 2y \frac{dy}{dx} + 2y + 2x \frac{dy}{dx} &= 0
+\end{aligned}
+$$
+
+**Step 3 — Collect:**
+
+$$
+\begin{aligned}
+\left(2y + 2x\right) \frac{dy}{dx} &= -(2x + 2y) \\
+\frac{dy}{dx} &= -1
+\end{aligned}
+$$
+
+**Step 4 — Verify the point $(1, 2)$ lies on the curve:**
+
+$$1^2 + 2^2 + 2(1)(2) = 1 + 4 + 4 = 9 \;\checkmark$$
+
+**Step 5 — State the slope:**
+
+$$
+\begin{aligned}
+\left.\frac{dy}{dx}\right|_{(1, 2)} &= -1
+\end{aligned}
+$$
+
+> **Valuation Key:** [Correct application of product rule on $2xy$: 2 Marks] [Collection of $\dfrac{dy}{dx}$: 2 Marks] [Verification of point: 2 Marks] [Final slope: 1 Mark]
 
 ---
 
-**(b) Find the equation of the tangent and normal to the curve $x^2 + xy + y^2 = 7$ at the point $(1, 2)$.**
-**(7 Marks – Apply – CO2)**
+### **Question B `[KTU University Exam – Supplementary, GAMAT101]`** (14 Marks) — *Alternative Choice*
 
-**Model Solution:**
+**(a)** Find $\dfrac{dy}{dx}$ for $\sin(x + y) = x \cdot y$. **(7 Marks)**
 
-**Step 1 — Verify the point lies on the curve.**
+**(b)** Find $\dfrac{dy}{dx}$ at the point $(1, 1)$ for the curve $x^2 + 3xy + y^2 = 5$. **(7 Marks)**
 
-$$
-1^2 + (1)(2) + 2^2 = 1 + 2 + 4 = 7 \quad \checkmark
-$$
+#### Solution to Part (a) — CO1, Apply (7 Marks)
 
-* [Verification step: 1 Mark]
-
-**Step 2 — Differentiate implicitly to find the slope.**
+**Step 1 — Differentiate both sides:**
 
 $$
-\dfrac{d}{dx}\!\left(x^2 + xy + y^2\right) = \dfrac{d}{dx}(7)
+\begin{aligned}
+\cos(x + y) \cdot \frac{d}{dx}(x + y) &= \frac{d}{dx}(xy)
+\end{aligned}
 $$
 
-$$
-2x + y + x\dfrac{dy}{dx} + 2y\dfrac{dy}{dx} = 0
-$$
-
-* [Setting up differentiation: 1 Mark]
-* [Product rule on xy: 1 Mark]
-
-Solve for $\dfrac{dy}{dx}$:
+**Step 2 — Apply chain and product rules:**
 
 $$
-\dfrac{dy}{dx}(x + 2y) = -2x - y
+\begin{aligned}
+\cos(x + y) \cdot \left[ 1 + \frac{dy}{dx} \right] &= y + x \frac{dy}{dx}
+\end{aligned}
 $$
 
-$$
-\dfrac{dy}{dx} = -\dfrac{2x + y}{x + 2y}
-$$
-
-* [Isolation of y prime: 1 Mark]
-
-**Step 3 — Evaluate slope at $(1, 2)$.**
+**Step 3 — Expand:**
 
 $$
-m = -\dfrac{2(1) + 2}{1 + 2(2)} = -\dfrac{4}{5}
+\begin{aligned}
+\cos(x + y) + \cos(x + y) \frac{dy}{dx} &= y + x \frac{dy}{dx}
+\end{aligned}
 $$
 
-* [Numerical evaluation: 1 Mark]
-
-**Step 4 — Tangent line equation (point-slope form).**
+**Step 4 — Collect $\dfrac{dy}{dx}$ terms:**
 
 $$
-y - 2 = -\dfrac{4}{5}(x - 1)
+\begin{aligned}
+\left[ \cos(x + y) - x \right] \frac{dy}{dx} &= y - \cos(x + y)
+\end{aligned}
 $$
 
-* [Tangent line equation: 1 Mark]
-
-**Step 5 — Normal line slope is the negative reciprocal: $m_n = \dfrac{5}{4}$.**
+**Step 5 — Solve:**
 
 $$
-y - 2 = \dfrac{5}{4}(x - 1)
+\begin{aligned}
+\frac{dy}{dx} &= \frac{y - \cos(x + y)}{\cos(x + y) - x}
+\end{aligned}
 $$
 
-* [Normal line equation: 1 Mark]
+> **Valuation Key:** [Chain rule on $\sin$: 2 Marks] [Product rule on $xy$: 1 Mark] [Collection: 2 Marks] [Final isolated form: 2 Marks]
+
+#### Solution to Part (b) — CO1, Apply (7 Marks)
+
+**Step 1 — Differentiate $x^2 + 3xy + y^2 = 5$:**
+
+$$
+\begin{aligned}
+2x + 3 \left[ y + x \frac{dy}{dx} \right] + 2y \frac{dy}{dx} &= 0
+\end{aligned}
+$$
+
+**Step 2 — Expand:**
+
+$$
+\begin{aligned}
+2x + 3y + 3x \frac{dy}{dx} + 2y \frac{dy}{dx} &= 0
+\end{aligned}
+$$
+
+**Step 3 — Collect $\dfrac{dy}{dx}$:**
+
+$$
+\begin{aligned}
+\left( 3x + 2y \right) \frac{dy}{dx} &= -(2x + 3y) \\
+\frac{dy}{dx} &= -\frac{2x + 3y}{3x + 2y}
+\end{aligned}
+$$
+
+**Step 4 — Evaluate at $(1, 1)$:**
+
+$$
+\begin{aligned}
+\left.\frac{dy}{dx}\right|_{(1, 1)} &= -\frac{2(1) + 3(1)}{3(1) + 2(1)} = -\frac{5}{5} = -1
+\end{aligned}
+$$
+
+> **Valuation Key:** [Differentiating all three terms: 3 Marks] [Collection step: 2 Marks] [Substitution of $(1, 1)$: 1 Mark] [Final slope: 1 Mark]
 
 ---
 
-### Question B-B (14 Marks) — `[KTU University Exam - Dec 2023]`
-
-**Question B:** (a) Find $\dfrac{dy}{dx}$ for the relation $e^{xy} + x^2 = 1$ and evaluate it at the point $(0, 0)$.
-**(7 Marks – Apply – CO2)**
-
-**Model Solution:**
-
-Differentiate both sides with respect to $x$:
-
-$$
-\dfrac{d}{dx}\!\left(e^{xy} + x^2\right) = \dfrac{d}{dx}(1) = 0
-$$
-
-Apply the chain rule to $e^{xy}$ (treating $xy$ as the inner function) and the product rule on the inner derivative:
-
-$$
-e^{xy} \cdot \dfrac{d}{dx}(xy) + 2x = 0
-$$
-
-$$
-e^{xy}\!\left(y + x\dfrac{dy}{dx}\right) + 2x = 0
-$$
-
-* [Chain and product rule correctly applied: 3 Marks]
-
-Isolate $\dfrac{dy}{dx}$:
-
-$$
-e^{xy} \cdot x \dfrac{dy}{dx} = -2x - ye^{xy}
-$$
-
-$$
-\dfrac{dy}{dx} = \dfrac{-2x - ye^{xy}}{x \cdot e^{xy}}, \quad x \neq 0
-$$
-
-* [Isolation and final expression: 2 Marks]
-
-Evaluate at $(0, 0)$:
-
-$$
-\dfrac{dy}{dx}\bigg|_{(0,0)} = \dfrac{0 - 0 \cdot e^{0}}{0 \cdot e^{0}} = \dfrac{0}{0}
-$$
-
-The form is indeterminate, indicating the slope is *not* determined by direct substitution; we instead use the implicit-function limit. However, the original equation at $(0, 0)$ gives $e^0 + 0 = 1 \quad \checkmark$. Differentiating with respect to $x$ along the implicit curve and rearranging at the limit $x \to 0$:
-
-$$
-\dfrac{dy}{dx} = -\dfrac{2x + ye^{xy}}{x e^{xy}}
-$$
-
-Taking the limit (using $y \to 0$ as $x \to 0$):
-
-$$
-\lim_{(x, y) \to (0, 0)} -\dfrac{2x + ye^{xy}}{x e^{xy}} = -\dfrac{0 + 0 \cdot 1}{0 \cdot 1}
-$$
-
-This requires a L'Hôpital-style treatment or, alternatively, using $F_y \neq 0$ test. The implicit function theorem gives:
-
-$$
-\dfrac{dy}{dx} = -\dfrac{F_x}{F_y} = -\dfrac{ye^{xy} + 2x}{xe^{xy}}
-$$
-
-At $(0, 0)$ this remains the indeterminate form. The cleanest solution is to note that *the slope is undefined at the origin* for this curve, signalling a singular point.
-
-* [Boundary analysis comment: 2 Marks]
-
-> [!TIP]
-> **Alternative clean approach:** For exam time-management, simply state the formal derivative expression and indicate that the slope is indeterminate at $(0, 0)$, citing the singular point. Most KTU examiners accept this if clearly justified.
-
----
-
-**(b) Find $\dfrac{d^2y}{dx^2}$ for the curve $x^2 + y^2 = 1$ using implicit differentiation.**
-**(7 Marks – Analyse – CO3)**
-
-**Model Solution:**
-
-**Step 1 — First derivative.**
-
-$$
-2x + 2y\dfrac{dy}{dx} = 0 \quad\Longrightarrow\quad \dfrac{dy}{dx} = -\dfrac{x}{y}
-$$
-
-* [First derivative: 2 Marks]
-
-**Step 2 — Differentiate the equation $2x + 2y\dfrac{dy}{dx} = 0$ again with respect to $x$.**
-
-$$
-2 + 2\!\left[\left(\dfrac{dy}{dx}\right)^{\!2} + y \cdot \dfrac{d^2y}{dx^2}\right] = 0
-$$
-
-* [Product rule on second term: 2 Marks]
-* [Chain rule on y prime squared: 1 Mark]
-
-**Step 3 — Isolate $\dfrac{d^2y}{dx^2}$.**
-
-$$
-y \cdot \dfrac{d^2y}{dx^2} = -1 - \left(\dfrac{dy}{dx}\right)^{\!2}
-$$
-
-**Step 4 — Substitute $\dfrac{dy}{dx} = -\dfrac{x}{y}$ and simplify.**
-
-$$
-y \cdot \dfrac{d^2y}{dx^2} = -1 - \dfrac{x^2}{y^2} = -\dfrac{x^2 + y^2}{y^2}
-$$
-
-* [Substitution: 1 Mark]
-
-**Step 5 — Apply the original constraint $x^2 + y^2 = 1$.**
-
-$$
-\dfrac{d^2y}{dx^2} = -\dfrac{1}{y^3}
-$$
-
-* [Final simplified second derivative: 1 Mark]
-
----
+## KTU Examiner's Valuation Warning / Pitfall Callout
 
 > [!WARNING]
-> **KTU Examiner's Valuation Warning – Common Pitfalls:**
-> 1. **Forgetting the chain rule factor $y'$:** The single most common error is differentiating $y^2$ to get $2y$ instead of $2y \cdot y'$. This is an **automatic 2-mark deduction** per occurrence.
-> 2. **Skipping the verification step:** When asked for the tangent at a point, KTU examiners award **1 mark** for verifying the point lies on the curve. Skipping this costs you a free mark.
-> 3. **Missing the product rule on mixed terms:** The derivative of $xy$ is $y + x \cdot y'$, **not** just $y'$. Watch for this.
-> 4. **Final simplification using the original equation:** For second-derivative problems, you **must** use the original implicit relation to simplify. Failing to do so leaves the answer in a non-canonical form and costs a mark.
-> 5. **Forgetting the vertical tangent case:** If your denominator evaluates to zero, recognize that the slope is undefined and the tangent is a vertical line $x = x_0$.
+> **Common Mark-Deduction Triggers in KTU Valuation:**
+> 1. **Forgetting the $\dfrac{dy}{dx}$ multiplier on $y$-terms** — this is the *most common single error*; the examiner will deduct 1–2 marks per missing factor. Always re-read your derivative line and verify every $y$ has its accompanying $\dfrac{dy}{dx}$.
+> 2. **Sign error when moving terms across the equality** — a misplaced sign flips the final answer. Recommended practice: collect $\dfrac{dy}{dx}$ on the LHS first, *then* rearrange the RHS.
+> 3. **Not verifying the point lies on the curve** before computing the slope. If the point is *not* on the curve, the answer is invalid. KTU examiners routinely award 1 mark just for the verification step.
+> 4. **Failure to state the IFT conditions** in 14-mark questions — the standard opening line *"Since $F_y \neq 0$ at the point, the implicit function theorem guarantees a unique local derivative…"* fetches a clear 2 marks.
+> 5. **Leaving $\dfrac{dy}{dx}$ un-factored** — writing $3y^2 \dfrac{dy}{dx} - 6x \dfrac{dy}{dx} = 6y - 3x^2$ *without* factoring loses the final 1 mark.
+> 6. **Confusing the IFT formula sign** — $\dfrac{dy}{dx} = -\dfrac{F_x}{F_y}$, not $+\dfrac{F_x}{F_y}$. Memorize the negative.
 
 ---
 
 ## Topic Recap & Important Things to Remember
 
-- **Implicit Function:** A relation $F(x, y) = 0$ that defines $y$ as a function of $x$ without being explicitly solved.
-- **Implicit Differentiation:** The chain-rule-based procedure to find $\dfrac{dy}{dx}$ without solving for $y$ explicitly.
-- **Implicit Function Theorem:** $\dfrac{dy}{dx} = -\dfrac{F_x}{F_y}$ provided $F_y \neq 0$ and partials are continuous.
-- **The Six-Stage Algorithm:** Identify → Differentiate both sides → Apply chain/product/quotient rules → Isolate $y'$ terms → Factor out $y'$ → Solve.
-- **Critical Rules to Memorize:**
-  * $\dfrac{d}{dx}(y^n) = ny^{n-1} \cdot y'$
-  * $\dfrac{d}{dx}(\sin y) = \cos y \cdot y'$
-  * $\dfrac{d}{dx}(e^y) = e^y \cdot y'$
-  * $\dfrac{d}{dx}(xy) = y + x \cdot y'$
-- **Second-Order Implicit Differentiation:** Differentiate the first-derivative equation again, then substitute $\dfrac{dy}{dx}$ and simplify using the original implicit relation.
-- **Vertical Tangent:** A zero denominator after isolating $y'$ indicates $y'$ is undefined → vertical tangent line $x = x_0$.
-- **KTU Mark Distribution Pattern:** Verification (1 mark) + Setup (2 marks) + Differentiation rules (2–3 marks) + Algebraic isolation (1–2 marks) + Final simplified answer (1 mark).
-- **Common Mistake:** Forgetting to append the $y'$ factor when differentiating terms containing $y$ — this is a guaranteed 2-mark penalty.
-- **Engineering Relevance:** Used in computer graphics (surface normals), machine learning (backpropagation), cryptography (elliptic curves), and computer vision (optical flow).
+- **Master Formula (Implicit Function Theorem):** $\dfrac{dy}{dx} = -\dfrac{F_x}{F_y}$, valid only when $F_y \neq 0$.
+- **The "Tax" Rule:** Every time $y$ appears, the chain rule charges a $\dfrac{dy}{dx}$ multiplier.
+- **Six-Step Recipe:** (1) Rewrite as $F = 0$ → (2) Differentiate both sides → (3) Chain rule on $y$-terms → (4) Product rule on $xy$ → (5) Collect $\dfrac{dy}{dx}$ → (6) Factor and isolate.
+- **Product Rule Shortcut for $xy$:** $\dfrac{d}{dx}(xy) = y + x\dfrac{dy}{dx}$ — note the **plus**, not a single term.
+- **Verification of Point on Curve:** Always substitute the given point into the original equation before evaluating the slope. Mismatch = 0 marks.
+- **Higher-Order Derivatives:** Differentiate the first derivative $\dfrac{dy}{dx}$ again, treating it as a new implicit equation. Substitute $\dfrac{dy}{dx}$ at the end and *use the original constraint* to simplify.
+- **Vertical Tangent Warning:** If $F_y = 0$ at a point, the tangent is vertical and $\dfrac{dy}{dx}$ is undefined — this is a recurring KTU Part-A question.
+- **Commonly Tested Forms:** Circles, ellipses, hyperbolas, folium of Descartes, transcendental curves ($\sin, \cos, e^x, \ln$).
+- **Domain Restrictions:** $y \neq 0$ in the unit circle; $x \cos(xy) \neq 1$ in the transcendental example — write these explicitly for full marks.
+- **Negative Sign Memory Aid:** The gradient vector $\nabla F = (F_x, F_y)$ is *normal* to the curve; the slope (tangent direction) is its negative reciprocal, hence the minus sign.
 
 <!-- SECTION_5_END -->

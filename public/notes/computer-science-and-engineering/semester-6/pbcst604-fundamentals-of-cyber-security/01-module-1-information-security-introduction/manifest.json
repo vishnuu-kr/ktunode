@@ -1,0 +1,71 @@
+{
+  "course_name": "FUNDAMENTALS OF CYBER SECURITY",
+  "course_code": "PBCST604",
+  "module_number": 1,
+  "module_title": "Information security introduction",
+  "topics_generated": [
+    {
+      "title": "Information Security Introduction",
+      "slug": "information-security-introduction",
+      "path": "information-security-introduction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Threats to Information Systems",
+      "slug": "threats-to-information-systems",
+      "path": "threats-to-information-systems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cyber Security and Security risk analysis",
+      "slug": "cyber-security-and-security-risk-analysis",
+      "path": "cyber-security-and-security-risk-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Information Gathering- Reconnaissance",
+      "slug": "information-gathering-reconnaissance",
+      "path": "information-gathering-reconnaissance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Reco-ng",
+      "slug": "reco-ng",
+      "path": "reco-ng/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Software Vulnerabilities- Buffer Overflow",
+      "slug": "software-vulnerabilities-buffer-overflow",
+      "path": "software-vulnerabilities-buffer-overflow/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Stack Overflow",
+      "slug": "stack-overflow",
+      "path": "stack-overflow/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Format String",
+      "slug": "format-string",
+      "path": "format-string/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Vulnerability Assessment and Penetration Testing- Burpsuite, Metasploit.",
+      "slug": "vulnerability-assessment-and-penetration-testing-burpsuite-metasploit",
+      "path": "vulnerability-assessment-and-penetration-testing-burpsuite-metasploit/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

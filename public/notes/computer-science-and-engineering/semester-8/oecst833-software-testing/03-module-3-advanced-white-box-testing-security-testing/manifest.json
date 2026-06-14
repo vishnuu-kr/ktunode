@@ -1,0 +1,64 @@
+{
+  "course_name": "SOFTWARE TESTING",
+  "course_code": "OECST833",
+  "module_number": 3,
+  "module_title": "Advanced white box testing security testing",
+  "topics_generated": [
+    {
+      "title": "Advanced White Box Testing & Security Testing:-",
+      "slug": "advanced-white-box-testing-security-testing",
+      "path": "advanced-white-box-testing-security-testing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graph Coverage Criteria - Node, edge, and path coverage",
+      "slug": "graph-coverage-criteria-node-edge-and-path-coverage",
+      "path": "graph-coverage-criteria-node-edge-and-path-coverage/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "prime path and round trip coverage",
+      "slug": "prime-path-and-round-trip-coverage",
+      "path": "prime-path-and-round-trip-coverage/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Flow Criteria - du paths, du pairs, subsumption relationships",
+      "slug": "data-flow-criteria-du-paths-du-pairs-subsumption-relationships",
+      "path": "data-flow-criteria-du-paths-du-pairs-subsumption-relationships/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graph Coverage for Code - Control flow graphs (CFGs) for complex structures (e.g., loops, exceptions)",
+      "slug": "graph-coverage-for-code-control-flow-graphs-cfgs-for-complex-structures-e-g-loops-exceptions",
+      "path": "graph-coverage-for-code-control-flow-graphs-cfgs-for-complex-structures-e-g-loops-exceptions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graph Coverage for Design Elements - Call graphs, class inheritance testing, and coupling data-flow pairs",
+      "slug": "graph-coverage-for-design-elements-call-graphs-class-inheritance-testing-and-coupling-data-flow",
+      "path": "graph-coverage-for-design-elements-call-graphs-class-inheritance-testing-and-coupling-data-flow/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Security Testing - Fundamentals, tools (OWASP, Burp Suite), and their role in protecting modern applications",
+      "slug": "security-testing-fundamentals-tools-owasp-burp-suite-and-their-role-in-protecting-modern",
+      "path": "security-testing-fundamentals-tools-owasp-burp-suite-and-their-role-in-protecting-modern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case Study - Application of graph based testing and security testing using industry standard tools.",
+      "slug": "case-study-application-of-graph-based-testing-and-security-testing-using-industry-standard-tools",
+      "path": "case-study-application-of-graph-based-testing-and-security-testing-using-industry-standard-tools/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

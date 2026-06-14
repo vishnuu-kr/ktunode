@@ -1,0 +1,36 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 20,
+  "module_title": "Investigate the bias",
+  "topics_generated": [
+    {
+      "title": "Investigate the bias-variance tradeoff using polynomial regression on the Boston Housing dataset. Plot the training and validation errors for various polynomial degrees and discuss the tradeoff between bias and variance.",
+      "slug": "investigate-the-bias-variance-tradeoff-using-polynomial-regression-on-the-boston-housing-dataset",
+      "path": "investigate-the-bias-variance-tradeoff-using-polynomial-regression-on-the-boston-housing-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Boston Housing dataset.",
+      "slug": "load-and-preprocess-the-boston-housing-dataset",
+      "path": "load-and-preprocess-the-boston-housing-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement polynomial regression with varying degrees.",
+      "slug": "implement-polynomial-regression-with-varying-degrees",
+      "path": "implement-polynomial-regression-with-varying-degrees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

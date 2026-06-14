@@ -1,0 +1,43 @@
+{
+  "course_name": "PARALLEL ALGORITHMS",
+  "course_code": "PECST759",
+  "module_number": 1,
+  "module_title": "Introduction to parallel computing",
+  "topics_generated": [
+    {
+      "title": "Introduction to Parallel Computing - Overview of parallel computing and its importance",
+      "slug": "introduction-to-parallel-computing-overview-of-parallel-computing-and-its-importance",
+      "path": "introduction-to-parallel-computing-overview-of-parallel-computing-and-its-importance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Types of parallelism: data parallelism, task parallelism",
+      "slug": "types-of-parallelism-data-parallelism-task-parallelism",
+      "path": "types-of-parallelism-data-parallelism-task-parallelism/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel computing architectures: SIMD, MIMD, shared memory, distributed memory.",
+      "slug": "parallel-computing-architectures-simd-mimd-shared-memory-distributed-memory",
+      "path": "parallel-computing-architectures-simd-mimd-shared-memory-distributed-memory/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel Programming Models - Parallel programming models: Parallel Random Access Machine (PRAM), bulk synchronous parallel (BSP), LogP, Shared memory vs. distributed memory models",
+      "slug": "parallel-programming-models-parallel-programming-models-parallel-random-access-machine-pram-bulk",
+      "path": "parallel-programming-models-parallel-programming-models-parallel-random-access-machine-pram-bulk/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance Metrics - Performance metrics for parallel algorithms: speedup, efficiency, scalability, Amdahl's Law and Gustafson's Law.",
+      "slug": "performance-metrics-performance-metrics-for-parallel-algorithms-speedup-efficiency-scalability",
+      "path": "performance-metrics-performance-metrics-for-parallel-algorithms-speedup-efficiency-scalability/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

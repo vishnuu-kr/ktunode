@@ -1,0 +1,50 @@
+{
+  "course_name": "COMPUTATIONAL COMPLEXITY",
+  "course_code": "PECST864",
+  "module_number": 4,
+  "module_title": "Circuit complexity",
+  "topics_generated": [
+    {
+      "title": "Circuit Complexity - Boolean circuits and circuit complexity",
+      "slug": "circuit-complexity-boolean-circuits-and-circuit-complexity",
+      "path": "circuit-complexity-boolean-circuits-and-circuit-complexity/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Circuit lower bounds",
+      "slug": "circuit-lower-bounds",
+      "path": "circuit-lower-bounds/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Complexity of specific functions.",
+      "slug": "complexity-of-specific-functions",
+      "path": "complexity-of-specific-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum Complexity - Basics of quantum computation",
+      "slug": "quantum-complexity-basics-of-quantum-computation",
+      "path": "quantum-complexity-basics-of-quantum-computation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum complexity classes: BQP, QMA",
+      "slug": "quantum-complexity-classes-bqp-qma",
+      "path": "quantum-complexity-classes-bqp-qma/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum algorithms and their complexity.",
+      "slug": "quantum-algorithms-and-their-complexity",
+      "path": "quantum-algorithms-and-their-complexity/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

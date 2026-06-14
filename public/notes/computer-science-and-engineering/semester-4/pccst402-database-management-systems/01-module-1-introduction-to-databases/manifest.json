@@ -1,0 +1,29 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS",
+  "course_code": "PCCST402",
+  "module_number": 1,
+  "module_title": "Introduction to databases",
+  "topics_generated": [
+    {
+      "title": "Introduction to Databases :- Database System Concepts and Architecture- Data Models, Schemas and Instances, Three-Schema Architecture and Data Independence, Database Languages and Interfaces, Centralized and Client/Server Architectures for DBMSs.",
+      "slug": "introduction-to-databases-database-system-concepts-and-architecture-data-models-schemas-and",
+      "path": "introduction-to-databases-database-system-concepts-and-architecture-data-models-schemas-and/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Conceptual Data Modelling and Database Design:-  Data Modelling Using the Entity, Relationship (ER) Model - Entity Types, Entity Sets, Attributes, and Keys, Relationship Types, Relationship Sets, Roles, and Structural Constraints, Weak Entity Types.",
+      "slug": "conceptual-data-modelling-and-database-design-data-modelling-using-the-entity-relationship-er-model",
+      "path": "conceptual-data-modelling-and-database-design-data-modelling-using-the-entity-relationship-er-model/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Refining the ER Design for the COMPANY Database.",
+      "slug": "refining-the-er-design-for-the-company-database",
+      "path": "refining-the-er-design-for-the-company-database/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

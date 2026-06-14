@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 13,
+  "module_title": "Implement and train a multilayer feed",
+  "topics_generated": [
+    {
+      "title": "Implement and train a Multilayer Feed-Forward Network (MLP) on the Wine Quality dataset. Experiment with different numbers of hidden layers and neurons, and discuss how these choices affect the network’s performance.",
+      "slug": "implement-and-train-a-multilayer-feed-forward-network-mlp-on-the-wine-quality-dataset-experiment",
+      "path": "implement-and-train-a-multilayer-feed-forward-network-mlp-on-the-wine-quality-dataset-experiment/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Wine Quality dataset.",
+      "slug": "load-and-preprocess-the-wine-quality-dataset",
+      "path": "load-and-preprocess-the-wine-quality-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Design and implement an MLP with varying architectures (different hidden layers and neurons).",
+      "slug": "design-and-implement-an-mlp-with-varying-architectures-different-hidden-layers-and-neurons",
+      "path": "design-and-implement-an-mlp-with-varying-architectures-different-hidden-layers-and-neurons/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Train and evaluate the network.",
+      "slug": "train-and-evaluate-the-network",
+      "path": "train-and-evaluate-the-network/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Discuss the impact of architecture choices on performance.",
+      "slug": "discuss-the-impact-of-architecture-choices-on-performance",
+      "path": "discuss-the-impact-of-architecture-choices-on-performance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 19,
+  "module_title": "Implement bagging and boosting ensemble methods on the titanic dataset",
+  "topics_generated": [
+    {
+      "title": "Implement bagging and boosting ensemble methods on the Titanic dataset. Compare the performance of both methods in terms of accuracy, precision, recall, and F1-score. Discuss how each method improves model performance and their respective strengths and weaknesses.",
+      "slug": "implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-compare-the-performance-of",
+      "path": "implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-compare-the-performance-of/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Titanic dataset.",
+      "slug": "load-and-preprocess-the-titanic-dataset",
+      "path": "load-and-preprocess-the-titanic-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement bagging using a base classifier (e.g., decision tree) and evaluate performance.",
+      "slug": "implement-bagging-using-a-base-classifier-e-g-decision-tree-and-evaluate-performance",
+      "path": "implement-bagging-using-a-base-classifier-e-g-decision-tree-and-evaluate-performance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement boosting using a boosting algorithm (e.g., AdaBoost) and evaluate performance.",
+      "slug": "implement-boosting-using-a-boosting-algorithm-e-g-adaboost-and-evaluate-performance",
+      "path": "implement-boosting-using-a-boosting-algorithm-e-g-adaboost-and-evaluate-performance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compare performance metrics and discuss the strengths and weaknesses of each method.",
+      "slug": "compare-performance-metrics-and-discuss-the-strengths-and-weaknesses-of-each-method",
+      "path": "compare-performance-metrics-and-discuss-the-strengths-and-weaknesses-of-each-method/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "course_name": "DIGITAL FORENSICS",
+  "course_code": "PECST754",
+  "module_number": 1,
+  "module_title": "Introduction to digital forensics",
+  "topics_generated": [
+    {
+      "title": "Introduction to Digital Forensics -  Principles in Digital Forensics",
+      "slug": "introduction-to-digital-forensics-principles-in-digital-forensics",
+      "path": "introduction-to-digital-forensics-principles-in-digital-forensics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Stages in Digital Forensics Investigation- Forensics Imaging & Cloning",
+      "slug": "stages-in-digital-forensics-investigation-forensics-imaging-cloning",
+      "path": "stages-in-digital-forensics-investigation-forensics-imaging-cloning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Concept of Chain of Custody",
+      "slug": "concept-of-chain-of-custody",
+      "path": "concept-of-chain-of-custody/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Digital Evidence Handling at Crime Scene",
+      "slug": "digital-evidence-handling-at-crime-scene",
+      "path": "digital-evidence-handling-at-crime-scene/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Collection/Acquisition and Preservation of Digital Evidence",
+      "slug": "collection-acquisition-and-preservation-of-digital-evidence",
+      "path": "collection-acquisition-and-preservation-of-digital-evidence/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Processing & Analysis",
+      "slug": "processing-analysis",
+      "path": "processing-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compilation of Findings & Reporting",
+      "slug": "compilation-of-findings-reporting",
+      "path": "compilation-of-findings-reporting/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Expansion of Stages in Digital Investigation",
+      "slug": "expansion-of-stages-in-digital-investigation",
+      "path": "expansion-of-stages-in-digital-investigation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Types of Storage Media - Hard Disk Drives (HDD)",
+      "slug": "types-of-storage-media-hard-disk-drives-hdd",
+      "path": "types-of-storage-media-hard-disk-drives-hdd/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Solid State Drives (SSD)",
+      "slug": "solid-state-drives-ssd",
+      "path": "solid-state-drives-ssd/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "USB Flash Drives",
+      "slug": "usb-flash-drives",
+      "path": "usb-flash-drives/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Optical Discs",
+      "slug": "optical-discs",
+      "path": "optical-discs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Memory Cards",
+      "slug": "memory-cards",
+      "path": "memory-cards/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cloud Storage",
+      "slug": "cloud-storage",
+      "path": "cloud-storage/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Drive Geometry",
+      "slug": "drive-geometry",
+      "path": "drive-geometry/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cylinders",
+      "slug": "cylinders",
+      "path": "cylinders/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Heads",
+      "slug": "heads",
+      "path": "heads/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sectors",
+      "slug": "sectors",
+      "path": "sectors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Logical Block Addressing (LBA)",
+      "slug": "logical-block-addressing-lba",
+      "path": "logical-block-addressing-lba/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Expansion of Types of Storage Medium",
+      "slug": "expansion-of-types-of-storage-medium",
+      "path": "expansion-of-types-of-storage-medium/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Overview of File Systems - Introduction to File Systems",
+      "slug": "overview-of-file-systems-introduction-to-file-systems",
+      "path": "overview-of-file-systems-introduction-to-file-systems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "File Systems in Digital Forensics",
+      "slug": "file-systems-in-digital-forensics",
+      "path": "file-systems-in-digital-forensics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "FAT (File Allocation Table)",
+      "slug": "fat-file-allocation-table",
+      "path": "fat-file-allocation-table/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Structure and Characteristics : FAT12",
+      "slug": "structure-and-characteristics-fat12",
+      "path": "structure-and-characteristics-fat12/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "FAT16",
+      "slug": "fat16",
+      "path": "fat16/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "FAT32",
+      "slug": "fat32",
+      "path": "fat32/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "NTFS (New Technology File System)",
+      "slug": "ntfs-new-technology-file-system",
+      "path": "ntfs-new-technology-file-system/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Structure and Characteristics",
+      "slug": "structure-and-characteristics",
+      "path": "structure-and-characteristics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Master File Table (MFT)",
+      "slug": "master-file-table-mft",
+      "path": "master-file-table-mft/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "EXT (Extended File System)",
+      "slug": "ext-extended-file-system",
+      "path": "ext-extended-file-system/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "EXT2",
+      "slug": "ext2",
+      "path": "ext2/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "EXT3",
+      "slug": "ext3",
+      "path": "ext3/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "EXT4",
+      "slug": "ext4",
+      "path": "ext4/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Journaling in EXT3 and EXT4",
+      "slug": "journaling-in-ext3-and-ext4",
+      "path": "journaling-in-ext3-and-ext4/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "HFS (Hierarchical File System)",
+      "slug": "hfs-hierarchical-file-system",
+      "path": "hfs-hierarchical-file-system/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "HFS and HFS+ Structure and Characteristics",
+      "slug": "hfs-and-hfs-structure-and-characteristics",
+      "path": "hfs-and-hfs-structure-and-characteristics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Metadata and Attributes",
+      "slug": "metadata-and-attributes",
+      "path": "metadata-and-attributes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

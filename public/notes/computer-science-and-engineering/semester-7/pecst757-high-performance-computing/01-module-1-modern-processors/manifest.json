@@ -1,0 +1,99 @@
+{
+  "course_name": "HIGH PERFORMANCE COMPUTING",
+  "course_code": "PECST757",
+  "module_number": 1,
+  "module_title": "Modern processors",
+  "topics_generated": [
+    {
+      "title": "Modern processors",
+      "slug": "modern-processors",
+      "path": "modern-processors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Stored-program computer architecture- General-purpose cache-based microprocessor architecture",
+      "slug": "stored-program-computer-architecture-general-purpose-cache-based-microprocessor-architecture",
+      "path": "stored-program-computer-architecture-general-purpose-cache-based-microprocessor-architecture/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance metrics and benchmarks -Moore’s Law",
+      "slug": "performance-metrics-and-benchmarks-moore-s-law",
+      "path": "performance-metrics-and-benchmarks-moore-s-law/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pipelining",
+      "slug": "pipelining",
+      "path": "pipelining/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Super scalarity",
+      "slug": "super-scalarity",
+      "path": "super-scalarity/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SIMD",
+      "slug": "simd",
+      "path": "simd/notes.md",
+      "has_mermaid": false,
+      "has_math": true
+    },
+    {
+      "title": "Memory hierarchies",
+      "slug": "memory-hierarchies",
+      "path": "memory-hierarchies/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cache ,  Cache mapping, Prefetch, Multicore processors",
+      "slug": "cache-cache-mapping-prefetch-multicore-processors",
+      "path": "cache-cache-mapping-prefetch-multicore-processors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Multithreaded processors",
+      "slug": "multithreaded-processors",
+      "path": "multithreaded-processors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Vector processors",
+      "slug": "vector-processors",
+      "path": "vector-processors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Design principles",
+      "slug": "design-principles",
+      "path": "design-principles/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Maximum performance estimates",
+      "slug": "maximum-performance-estimates",
+      "path": "maximum-performance-estimates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Programming for vector architectures.",
+      "slug": "programming-for-vector-architectures",
+      "path": "programming-for-vector-architectures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

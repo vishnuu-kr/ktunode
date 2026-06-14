@@ -1,0 +1,169 @@
+{
+  "course_name": "DIGITAL FORENSICS",
+  "course_code": "PECST754",
+  "module_number": 2,
+  "module_title": "Windows forensics",
+  "topics_generated": [
+    {
+      "title": "Windows Forensics - OS Artefacts",
+      "slug": "windows-forensics-os-artefacts",
+      "path": "windows-forensics-os-artefacts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Registry Analysis",
+      "slug": "registry-analysis",
+      "path": "registry-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Analysis of USB Connections",
+      "slug": "analysis-of-usb-connections",
+      "path": "analysis-of-usb-connections/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Event Logs",
+      "slug": "event-logs",
+      "path": "event-logs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications",
+      "slug": "applications",
+      "path": "applications/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Slack Space",
+      "slug": "slack-space",
+      "path": "slack-space/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Overwritten Files",
+      "slug": "overwritten-files",
+      "path": "overwritten-files/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Recovery Techniques",
+      "slug": "data-recovery-techniques",
+      "path": "data-recovery-techniques/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Volatile and Non-Volatile Data",
+      "slug": "volatile-and-non-volatile-data",
+      "path": "volatile-and-non-volatile-data/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hibernation file analysis",
+      "slug": "hibernation-file-analysis",
+      "path": "hibernation-file-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pagefile analysis",
+      "slug": "pagefile-analysis",
+      "path": "pagefile-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "prefetch files",
+      "slug": "prefetch-files",
+      "path": "prefetch-files/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "thumbnails",
+      "slug": "thumbnails",
+      "path": "thumbnails/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Timestamps",
+      "slug": "timestamps",
+      "path": "timestamps/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "File Signatures",
+      "slug": "file-signatures",
+      "path": "file-signatures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "File System Analysis Tools",
+      "slug": "file-system-analysis-tools",
+      "path": "file-system-analysis-tools/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Techniques for Recovering Deleted Files",
+      "slug": "techniques-for-recovering-deleted-files",
+      "path": "techniques-for-recovering-deleted-files/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "File Carving",
+      "slug": "file-carving",
+      "path": "file-carving/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Memory Forensics - RAM dump and  analysis",
+      "slug": "memory-forensics-ram-dump-and-analysis",
+      "path": "memory-forensics-ram-dump-and-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linux and MAC Forensics",
+      "slug": "linux-and-mac-forensics",
+      "path": "linux-and-mac-forensics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Anti Forensics Methods - Steganography",
+      "slug": "anti-forensics-methods-steganography",
+      "path": "anti-forensics-methods-steganography/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Encryption",
+      "slug": "encryption",
+      "path": "encryption/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Alternate Data Streams",
+      "slug": "alternate-data-streams",
+      "path": "alternate-data-streams/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

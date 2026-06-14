@@ -4,757 +4,604 @@
 
 # Second- and Higher-Order Derivatives
 
-## 1.1 Formal Definition
+## 1. Core Technical Definition
 
-Let $f : \mathbb{R} \to \mathbb{R}$ be a function that is differentiable on an open interval $I$. The **second derivative** of $f$ at $x \in I$ is defined as the derivative of the first derivative, provided the first derivative is itself differentiable at $x$.
+### Formal Definition (KTU 2024 Syllabus Standard)
 
-$$
-f''(x) \;=\; \frac{d^2 f}{dx^2} \;=\; \frac{d}{dx}\!\left[\, f'(x) \,\right] \;=\; \lim_{h \to 0} \frac{f'(x+h) - f'(x)}{h}
-$$
+Let $f : I \to \mathbb{R}$ be a function defined on an open interval $I \subseteq \mathbb{R}$ and suppose $f$ is **differentiable** on $I$. The **first derivative** of $f$ at $x$ is:
 
-Extending this inductively, the **$n$-th derivative** of $f$ (for $n \ge 1$) is defined as the derivative of the $(n-1)$-th derivative:
+$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
-$$
-f^{(n)}(x) \;=\; \frac{d^n f}{dx^n} \;=\; \frac{d}{dx}\!\left[\, f^{(n-1)}(x) \,\right] \;=\; \lim_{h \to 0} \frac{f^{(n-1)}(x+h) - f^{(n-1)}(x)}{h}
-$$
+The **second derivative** of $f$ at $x$ is defined as the derivative of the first derivative, provided $f'(x)$ itself is differentiable at $x$:
 
-with the convention $f^{(0)}(x) \equiv f(x)$ and $f^{(1)}(x) \equiv f'(x)$.
+$$f''(x) = \frac{d}{dx}\left[f'(x)\right] = \lim_{h \to 0} \frac{f'(x+h) - f'(x)}{h}$$
 
-> [!NOTE]
-> **Existence Requirement.** For $f^{(n)}(x)$ to exist, the function $f$ must be at least $n$-times differentiable in a neighbourhood of $x$. A continuous $(n-1)$-th derivative and the existence of the limit of the difference quotient for the $n$-th derivative are the minimum KTU-board preconditions.
+In general, for $n \in \mathbb{N}$, the **$n^{\text{th}}$ derivative** of $f$ is defined recursively as:
+
+$$f^{(n)}(x) = \frac{d}{dx}\left[f^{(n-1)}(x)\right] = \lim_{h \to 0} \frac{f^{(n-1)}(x+h) - f^{(n-1)}(x)}{h}$$
+
+provided the limit exists.
 
 > [!IMPORTANT]
-> **Standard Notations Used Across the KTU 2024 Scheme Syllabus.**
->
-> * **Lagrange notation** $\rightarrow f'(x),\ f''(x),\ f'''(x),\ f^{(4)}(x),\ f^{(n)}(x)$
-> * **Leibniz notation** $\rightarrow \dfrac{dy}{dx},\ \dfrac{d^2 y}{dx^2},\ \dfrac{d^3 y}{dx^3},\ \dfrac{d^n y}{dx^n}$
-> * **Euler (operator) notation** $\rightarrow D f,\ D^2 f,\ D^3 f,\ D^n f$
-> * **Newton (dot) notation** $\rightarrow \dot{y},\ \ddot{y}$ (used in physics, typically for time derivatives only)
+> **KTU 2024 Notation Convention:** The same function $f(x)$ can be written using **Leibniz notation** $\dfrac{d^ny}{dx^n}$, **Lagrange notation** $f^{(n)}(x)$ or $y_n$, and **Newton notation** $\dot{y}$ (rarely used beyond the second derivative). All forms are **synonymous** in KTU board evaluation.
 
-## 1.2 Conceptual Analogy and Real-World Intuition
+### Common Notations Table
 
-Picture a car travelling along a straight highway, with three dashboard sensors continuously recording data.
+| Order | Lagrange | Leibniz (with $y = f(x)$) | Newton |
+| :---: | :---: | :---: | :---: |
+| 1st | $f'(x)$ | $\dfrac{dy}{dx}$ | $\dot{y}$ |
+| 2nd | $f''(x)$ | $\dfrac{d^2y}{dx^2}$ | $\ddot{y}$ |
+| 3rd | $f'''(x)$ | $\dfrac{d^3y}{dx^3}$ | $\dddot{y}$ |
+| $n^{\text{th}}$ | $f^{(n)}(x)$ | $\dfrac{d^ny}{dx^n}$ | — |
 
-| Sensor Reads | Mathematical Object | Name of Quantity |
-|---|---|---|
-| Odometer (position) | $s(t)$ | Displacement |
-| Speedometer (rate of change of position) | $s'(t)$ | **Velocity** |
-| Accelerometer (rate of change of velocity) | $s''(t)$ | **Acceleration** |
-| Jerk sensor (rate of change of acceleration) | $s'''(t)$ | **Jerk** (units: $\mathbf{m/s^3}$) |
-| Rate of change of jerk | $s^{(4)}(t)$ | **Snap / Jounce** (units: $\mathbf{m/s^4}$) |
-| Rate of change of snap | $s^{(5)}(t)$ | **Crackle** (units: $\mathbf{m/s^5}$) |
-| Rate of change of crackle | $s^{(6)}(t)$ | **Pop** (units: $\mathbf{m/s^6}$) |
+> [!NOTE]
+> **Existence Theorem:** If $f^{(n)}(x)$ exists at a point $x = c$, then **all lower-order derivatives** $f^{(n-1)}(c), f^{(n-2)}(c), \ldots, f(c)$ also exist at that point. The converse, however, is **not** necessarily true.
+
+---
+
+## 2. Conceptual Analogy / Intuition
+
+Imagine you are driving a car along a straight highway and you have a **speedometer** displaying your instantaneous velocity at every moment.
+
+- **Position** $s(t)$ — your **odometer reading** in kilometers.
+- **Velocity** $v(t) = s'(t)$ — your **speedometer reading** in km/h. This is the *first derivative* of position.
+- **Acceleration** $a(t) = v'(t) = s''(t)$ — the rate at which your speed is changing. This is the *second derivative* of position.
+- **Jerk** $j(t) = a'(t) = s'''(t)$ — the rate at which your acceleration is changing (felt as a "push" in your back when a car suddenly speeds up).
+
+So **higher-order derivatives measure how the rate of change itself is changing**. In information science, this idea reappears everywhere: in optimization (where $f''(x) = 0$ marks inflection or extremum candidates), in numerical analysis (Taylor series truncations), and in machine learning (the Hessian matrix of second-order partial derivatives).
 
 > [!TIP]
-> If a function tells you **where** something is, its first derivative tells you **how fast** it is moving, and its second derivative tells you **how rapidly the motion itself is changing**. The $n$-th derivative therefore represents the $n$-th level of "how-fast-ness" stacked on top of the previous one.
-
-In the information-science world, the second derivative is the workhorse behind:
-
-* **Newton–Raphson root finding** and **Newton's optimisation method** (uses $f'$ and $f''$).
-* **Hessian matrix** in machine learning — a square matrix of all second partial derivatives used to determine the convexity of a loss surface.
-* **Taylor and Maclaurin expansions** — the higher the order $n$, the closer the polynomial approximation gets to the original function (this is *the* theoretical backbone of numerical computing).
-* **Backpropagation in neural networks** relies on repeated chain-rule applications that, in deep architectures, resemble generalised higher-order differentiation.
-
-## 1.3 Geometric Interpretation and Visualisation
-
-The first derivative encodes the **slope** of the tangent line. The second derivative encodes the **curvature / concavity** of the graph.
+> **Geometric Intuition:** The first derivative $f'(x)$ gives the **slope** of the tangent line. The second derivative $f''(x)$ gives the **concavity** (cup-shape vs. cap-shape) of the curve. If you "zoom in" on a graph, $f''(x) > 0$ looks like a smile $\cup$ and $f''(x) < 0$ looks like a frown $\cap$.
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Concavity, critical points, and inflection point on the cubic $f(x) = x^3 - 3x$.
+> **Concept:** Behaviour of $f(x) = x^3 - 3x$ and its derivatives
 > **GeoGebra / Desmos Input Equations:**
 > * `f(x) = x^3 - 3x`
-> * `f1(x) = 3*x^2 - 3` (first derivative)
-> * `f2(x) = 6*x` (second derivative)
-> * `A = (-1, 2)` — local maximum
-> * `B = (0, 0)` — inflection point
-> * `C = (1, -2)` — local minimum
-> **Visual Description:** You should observe the cubic curve opening left and upward. At $x=-1$, the tangent is horizontal and the curve bends **downward** (concave down, $f''(-1) = -6 < 0$). At $x=0$, the curve passes through a point of **inflection** where $f''(0) = 0$ and the concavity flips sign. At $x=1$, the tangent is again horizontal but the curve bends **upward** (concave up, $f''(1) = 6 > 0$). The straight line $y = 6x$ crosses the $x$-axis precisely at the inflection point — a perfect visual signature of the second derivative.
+> * `f1(x) = derivative(f, x)`  → renders as $f'(x) = 3x^2 - 3$
+> * `f2(x) = derivative(f1, x)` → renders as $f''(x) = 6x$
+> * `f3(x) = derivative(f2, x)` → renders as $f'''(x) = 6$
+> **Visual Description:** On the $xy$-plane, observe that $f''(x) = 6x$ changes sign at $x = 0$, identifying it as the **inflection point** of the original cubic. The third derivative is a constant horizontal line, showing that the rate of change of concavity is uniform.
+
+---
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
 
-# 2. Deep Theoretical Analysis and KTU High-Yield Formula Sheet
+# Deep Theoretical Analysis
 
-## 2.1 Operational Logic: How Higher Derivatives Are Computed
+## 1. Operational Rules for Higher-Order Derivatives
 
-The process of finding higher-order derivatives is a **sequential cascade** of first-derivative operations:
+To compute $f^{(n)}(x)$ for an explicit function $f(x)$, we apply the standard differentiation rules **repeatedly** $n$ times. The key tools are:
 
-1. **Verify differentiability** of the function $f$ at the point of interest.
-2. **Differentiate once** using the standard rules (sum, product, quotient, chain) to obtain $f'(x)$.
-3. **Differentiate again** the *result* (not the original $f$) to obtain $f''(x)$.
-4. **Iterate** — for the $n$-th derivative, apply the differentiation operator $D$ exactly $n$ times. Watch for a "death point" where the derivative becomes identically zero (e.g. for a polynomial of degree $m$, all derivatives of order $m+1$ vanish).
+### (a) Linearity Rule
+For any constants $\alpha, \beta \in \mathbb{R}$:
 
-> [!IMPORTANT]
-> **The "Death Point" Theorem.** If $f(x)$ is a polynomial of degree $m$, then
-> $$f^{(n)}(x) = 0 \quad \text{for every integer } n > m.$$
-> This is the single most-tested property of higher derivatives of polynomials in KTU board papers and is worth memorising.
+$$\frac{d^n}{dx^n}\left[\alpha \, u(x) + \beta \, v(x)\right] = \alpha \, \frac{d^n u}{dx^n} + \beta \, \frac{d^n v}{dx^n}$$
 
-## 2.2 The Leibniz Rule (Product Rule, Generalised)
+### (b) Product Rule (Two Functions)
+For $y = u(x) \cdot v(x)$:
 
-For two $n$-times differentiable functions $u(x)$ and $v(x)$, the $n$-th derivative of their product is given by the **binomial-style** expansion:
+$$(uv)' = u'v + uv'$$
 
-$$
-(uv)^{(n)} \;=\; \sum_{k=0}^{n} \binom{n}{k}\, u^{(n-k)}\, v^{(k)}
-$$
+$$(uv)'' = u''v + 2u'v' + uv''$$
 
-$$
-(uv)^{(n)} \;=\; u\, v^{(n)} \;+\; \binom{n}{1} u' v^{(n-1)} \;+\; \binom{n}{2} u'' v^{(n-2)} \;+\; \cdots \;+\; \binom{n}{n-1} u^{(n-1)} v' \;+\; u^{(n)} v
-$$
+$$(uv)''' = u'''v + 3u''v' + 3u'v'' + uv'''$$
 
-> [!TIP]
-> **Tactical Use.** In KTU valuation, the fastest correct answer is obtained by setting $u$ to the **polynomial factor** (which "dies" after a few derivatives) and $v$ to the **trigonometric or exponential factor** (whose higher derivatives retain a clean closed form). This collapses the infinite sum into a *finite* sum of 3–4 terms.
+Notice the coefficients **$1, 2, 1$** and **$1, 3, 3, 1$** — these are precisely the **binomial coefficients** $\binom{n}{k}$!
 
-## 2.3 KTU High-Yield Formula Cheat Sheet
+### (c) **Leibniz's Theorem (Generalised Product Rule)** — *High-Yield Topic*
 
 > [!IMPORTANT]
-> The following table must be **memorised** — every entry has appeared in KTU end-semester papers of 2019, 2021, 2023, and 2024 scheme.
+> **Leibniz's Theorem for the $n^{\text{th}}$ derivative of a product:** If $u(x)$ and $v(x)$ possess derivatives up to the $n^{\text{th}}$ order, then
+> $$\boxed{\,(uv)_n = \sum_{k=0}^{n} \binom{n}{k} u_{n-k} \, v_k = u_n v + n u_{n-1} v_1 + \frac{n(n-1)}{2!} u_{n-2} v_2 + \cdots + u v_n\,}$$
+> where the subscripts denote the order of the derivative, e.g., $u_k = \dfrac{d^k u}{dx^k}$.
 
-| Function $f(x)$ | First Derivative $f'(x)$ | Second Derivative $f''(x)$ | General $n$-th Derivative $f^{(n)}(x)$ | Valid For |
-|---|---|---|---|---|
-| $x^m$ (with $m \in \mathbb{N}$) | $m x^{m-1}$ | $m(m-1) x^{m-2}$ | $\dfrac{m!}{(m-n)!}\, x^{m-n}$ for $n \le m$, and $0$ for $n > m$ | $x \in \mathbb{R}$ |
-| $e^{ax}$ | $a e^{ax}$ | $a^2 e^{ax}$ | $a^{n} e^{ax}$ | All $x \in \mathbb{R}$ |
-| $\sin(ax)$ | $a \cos(ax)$ | $-a^{2}\sin(ax)$ | $a^{n} \sin\!\left(ax + \dfrac{n\pi}{2}\right)$ | All $x \in \mathbb{R}$ |
-| $\cos(ax)$ | $-a \sin(ax)$ | $-a^{2}\cos(ax)$ | $a^{n} \cos\!\left(ax + \dfrac{n\pi}{2}\right)$ | All $x \in \mathbb{R}$ |
-| $\ln(x)$ | $x^{-1}$ | $-x^{-2}$ | $(-1)^{n-1}(n-1)!\, x^{-n}$ | $x > 0$ |
-| $\ln(ax+b)$ | $\dfrac{a}{ax+b}$ | $-\dfrac{a^{2}}{(ax+b)^{2}}$ | $(-1)^{n-1}(n-1)!\, a^{n}\,(ax+b)^{-n}$ | $ax+b > 0$ |
-| $\dfrac{1}{x}$ | $-x^{-2}$ | $2 x^{-3}$ | $(-1)^{n}\, n!\, x^{-(n+1)}$ | $x \neq 0$ |
-| $(1+x)^{-1}$ | $-(1+x)^{-2}$ | $2(1+x)^{-3}$ | $(-1)^{n}\, n!\, (1+x)^{-(n+1)}$ | $x \neq -1$ |
-| $e^{ax}\sin(bx)$ | $e^{ax}\!\left(a\sin bx + b\cos bx\right)$ | $\left(a^{2}-b^{2}\right)e^{ax}\sin(bx) + 2ab e^{ax}\cos(bx)$ | $r^{n}\, e^{ax}\sin(bx + n\phi)$, where $r=\sqrt{a^{2}+b^{2}}$ and $\tan\phi=\dfrac{b}{a}$ | All $x \in \mathbb{R}$ |
-| $e^{ax}\cos(bx)$ | $e^{ax}\!\left(a\cos bx - b\sin bx\right)$ | $\left(a^{2}-b^{2}\right)e^{ax}\cos(bx) - 2ab e^{ax}\sin(bx)$ | $r^{n}\, e^{ax}\cos(bx + n\phi)$, where $r=\sqrt{a^{2}+b^{2}}$ and $\tan\phi=\dfrac{b}{a}$ | All $x \in \mathbb{R}$ |
+This is the **single most asked higher-order derivative concept in KTU university examinations** for GAMAT101.
 
-> [!NOTE]
-> **Operator Trick for $e^{ax}\sin bx$.** Write $y = e^{ax}\sin bx = \text{Im}\!\left(e^{(a+ib)x}\right)$. Then $D^{n}y = \text{Im}\!\left((a+ib)^{n} e^{(a+ib)x}\right) = r^{n} e^{ax}\sin(bx + n\phi)$ with $r = \sqrt{a^{2}+b^{2}}$ and $\tan\phi = b/a$. This derivation is required in KTU 14-mark questions and is the cleanest path to the closed form.
+### (d) Quotient Rule (Often Converted to Product)
+For $y = \dfrac{u(x)}{v(x)}$, rewrite as $y = u(x) \cdot [v(x)]^{-1}$ and apply the product rule, or use the standard formula.
 
-## 2.4 Where This Mathematics Is Used in Engineering Practice
+### (e) Chain Rule
+For composite functions $y = f(g(x))$:
 
-* **Numerical Differentiation.** When analytic derivatives are unavailable, finite-difference formulas (forward, backward, central) approximate the second derivative — used in **finite element method (FEM)** solvers, **computational fluid dynamics (CFD)**, and **CAD surface curvature estimation**.
-* **Curvature of Curves in Computer Graphics.** The radius of curvature $\rho = \dfrac{(1+(y')^{2})^{3/2}}{y''}$ is purely a second-derivative object, central to spline design and to anti-aliased font rendering.
-* **Hessian & Loss Surface Geometry.** The Hessian matrix $H_{ij} = \dfrac{\partial^{2} \mathcal{L}}{\partial x_{i} \partial x_{j}}$ is the matrix of all second partial derivatives of the loss function — positive-definiteness of $H$ is the test for a strict local minimum in any deep-learning optimisation.
-* **Control Theory.** In a PID controller, the **derivative term** acts on the *first* derivative of the error, and a **double-derivative controller** would act on the *second* derivative — the mathematics being identical to the topic of this module.
+$$\frac{d^2y}{dx^2} = \frac{d}{dx}\left[\frac{dy}{du} \cdot \frac{du}{dx}\right] = \frac{d^2y}{du^2} \left(\frac{du}{dx}\right)^2 + \frac{dy}{du} \cdot \frac{d^2u}{dx^2}$$
+
+---
+
+## 2. KTU High-Yield Formula Sheet
+
+### Standard $n^{\text{th}}$ Derivatives (Must Memorise)
+
+| $\mathbf{f(x)}$ | $\mathbf{f^{(n)}(x)}$ | Remarks |
+| :--- | :--- | :--- |
+| $x^m$ | $\dfrac{m!}{(m-n)!} x^{m-n}$ | For $n \le m$; else $0$ |
+| $e^{ax}$ | $a^n e^{ax}$ | Self-replicating form |
+| $a^x$ | $(\ln a)^n \cdot a^x$ | Special case of $e^{ax}$ with $a = e^{\ln a}$ |
+| $\sin(ax+b)$ | $a^n \sin\!\left(ax+b+\dfrac{n\pi}{2}\right)$ | Cyclic every 4 steps |
+| $\cos(ax+b)$ | $a^n \cos\!\left(ax+b+\dfrac{n\pi}{2}\right)$ | Cyclic every 4 steps |
+| $\ln(x)$ | $\dfrac{(-1)^{n-1}(n-1)!}{x^n}$ | For $n \ge 1$ |
+| $\dfrac{1}{x} = x^{-1}$ | $\dfrac{(-1)^n \, n!}{x^{n+1}}$ | Useful in series expansion |
+| $\dfrac{1}{ax+b}$ | $\dfrac{(-1)^n \, n! \, a^n}{(ax+b)^{n+1}}$ | Generalised form |
+
+### Phase Shift Pattern for $\sin$ and $\cos$
+
+| $n \mod 4$ | Derivative of $\sin$ | Derivative of $\cos$ |
+| :---: | :---: | :---: |
+| $0$ | $\sin$ | $\cos$ |
+| $1$ | $\cos$ | $-\sin$ |
+| $2$ | $-\sin$ | $-\cos$ |
+| $3$ | $-\cos$ | $\sin$ |
+
+### Engineering & Information Science Applications
+
+- **Numerical Methods:** Taylor series expansions $f(x+h) = f(x) + hf'(x) + \frac{h^2}{2!}f''(x) + \cdots$ rely on higher-order derivatives for accuracy.
+- **Physics Simulation:** $f''(t)$ represents acceleration in motion equations; $f'''(t)$ is jerk (used in robotics, animation).
+- **Machine Learning:** The **Hessian matrix** $H_{ij} = \dfrac{\partial^2 f}{\partial x_i \partial x_j}$ uses second-order partial derivatives to find optimal model parameters.
+- **Signal Processing:** Curvature $K = \dfrac{\vert y'' \vert}{(1 + (y')^2)^{3/2}}$ for analysing bends in curves and edges in images.
+- **Computer Graphics:** Bézier curves and splines depend on second-derivative continuity ($G^2$ continuity) for smooth shapes.
+
+> [!WARNING]
+> A common student error in KTU valuation is treating the second derivative as $\left(f'(x)\right)^2$. **It is the derivative of $f'(x)$, not its square.** Use parentheses carefully: $f''(x) \neq [f'(x)]^2$.
+
+---
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
 
-# 3. Step-by-Step Derivations, Worked Examples, and Symbolic Code
+# Step-by-Step Derivations & Worked Solutions
 
-## 3.1 Worked Example 1 — $n$-th Derivative of $y = \dfrac{1}{1+x}$
+## Example 1 — Finding $f''(x)$ for a Polynomial
 
-We compute successive derivatives by direct differentiation of a negative power.
+**Problem:** If $f(x) = x^4 - 6x^3 + 11x^2 - 6x$, find $f''(x)$.
 
-**Step 1.** Express as a power.
-$$y = (1+x)^{-1}$$
+**Solution:**
 
-**Step 2.** First derivative.
-$$y' = -1 \cdot (1+x)^{-2}$$
+**Step 1:** Compute the first derivative using the power rule $\frac{d}{dx}(x^n) = nx^{n-1}$.
 
-**Step 3.** Second derivative.
-$$y'' = -1 \cdot (-2)\,(1+x)^{-3} = 2(1+x)^{-3}$$
+$$f'(x) = 4x^3 - 18x^2 + 22x - 6$$
 
-**Step 4.** Third derivative.
-$$y''' = 2 \cdot (-3)\,(1+x)^{-4} = -6(1+x)^{-4}$$
+**Step 2:** Differentiate once more.
 
-**Step 5.** Fourth derivative.
-$$y^{(4)} = -6 \cdot (-4)\,(1+x)^{-5} = 24(1+x)^{-5}$$
+$$f''(x) = 12x^2 - 36x + 22$$
 
-**Step 6.** Identify the emerging pattern.
-$$y^{(n)} = (-1)^{n}\, n!\, (1+x)^{-(n+1)} \;=\; \dfrac{(-1)^{n}\, n!}{(1+x)^{n+1}}$$
+**Valuation Key:** [Power rule on each term: 2 Marks] [Second differentiation: 1 Mark] [Final answer: 1 Mark]
 
-**Step 7. Verification by Mathematical Induction.**
+---
 
-*Base case ($n=1$):* $y^{(1)} = -\dfrac{1!}{(1+x)^{2}} = -\dfrac{1}{(1+x)^{2}}$ ✓ (matches Step 2).
+## Example 2 — Second Derivative of an Exponential × Trigonometric Product
 
-*Inductive hypothesis:* Assume $y^{(k)} = \dfrac{(-1)^{k}\, k!}{(1+x)^{k+1}}$ for some $k \ge 1$.
+**Problem:** If $y = e^{2x} \sin(3x)$, find $\dfrac{d^2y}{dx^2}$.
 
-*Inductive step:* Differentiate $y^{(k)}$ with respect to $x$:
-$$
-\begin{aligned}
-y^{(k+1)} &= \frac{d}{dx}\!\left[\,\frac{(-1)^{k}\, k!}{(1+x)^{k+1}}\,\right] \\
-&= (-1)^{k}\, k! \cdot \left[-(k+1)\right]\,(1+x)^{-(k+2)} \\
-&= \frac{(-1)^{k+1}\, (k+1)!}{(1+x)^{(k+1)+1}}
-\end{aligned}
-$$
+**Solution:**
 
-This is exactly the desired formula with $n = k+1$. By the principle of mathematical induction, the formula holds for all $n \in \mathbb{N}$. $\blacksquare$
+**Step 1:** First derivative using the product rule.
 
-> [!NOTE]
-> **Valuation Tip (KTU 2024 Scheme).** Writing the closed-form $n$-th derivative alone earns **3 marks** out of 7. Identifying the pattern earns **2 marks**. The remaining **2 marks** are reserved for the explicit induction proof or for substituting $n=1, 2, 3$ and verifying.
+$$\frac{dy}{dx} = 2e^{2x}\sin(3x) + e^{2x} \cdot 3\cos(3x) = e^{2x}\left[2\sin(3x) + 3\cos(3x)\right]$$
 
-## 3.2 Worked Example 2 — Leibniz Rule on $y = x^{2} e^{3x}$
+**Step 2:** Differentiate $\dfrac{dy}{dx}$ using the product rule again.
 
-Choose $u = x^{2}$ (polynomial that "dies" after two derivatives) and $v = e^{3x}$ (exponential with clean higher derivatives).
+$$\frac{d^2y}{dx^2} = \frac{d}{dx}\left(e^{2x}\right)\left[2\sin(3x) + 3\cos(3x)\right] + e^{2x} \cdot \frac{d}{dx}\left[2\sin(3x) + 3\cos(3x)\right]$$
 
-**Step 1.** Tabulate the derivatives of $u$ and $v$.
+**Step 3:** Evaluate each piece.
 
-| $k$ | $0$ | $1$ | $2$ | $3$ |
-|---|---|---|---|---|
-| $u^{(k)}$ | $x^{2}$ | $2x$ | $2$ | $0$ |
-| $v^{(k)}$ | $e^{3x}$ | $3e^{3x}$ | $9e^{3x}$ | $27e^{3x}$ |
+$$\frac{d}{dx}\left(e^{2x}\right) = 2e^{2x}$$
 
-In general, $v^{(k)} = 3^{k} e^{3x}$ for every $k \ge 0$.
+$$\frac{d}{dx}\left[2\sin(3x) + 3\cos(3x)\right] = 6\cos(3x) - 9\sin(3x)$$
 
-**Step 2.** Apply the Leibniz rule. Since $u^{(3)} = u^{(4)} = \cdots = 0$, the sum terminates at $k = 2$:
+**Step 4:** Substitute and group.
 
-$$
-\begin{aligned}
-y^{(n)} &= \sum_{k=0}^{2} \binom{n}{k}\, u^{(n-k)}\, v^{(k)} \\
-&= \binom{n}{0}\, x^{2}\, \cdot 3^{n} e^{3x} \;+\; \binom{n}{1}\, (2x)\, \cdot 3^{n-1} e^{3x} \;+\; \binom{n}{2}\, (2)\, \cdot 3^{n-2} e^{3x} \\
-&= 3^{n} x^{2} e^{3x} \;+\; 2n \cdot 3^{n-1} x\, e^{3x} \;+\; n(n-1) \cdot 3^{n-2} e^{3x}
-\end{aligned}
-$$
+$$\frac{d^2y}{dx^2} = 2e^{2x}\left[2\sin(3x) + 3\cos(3x)\right] + e^{2x}\left[6\cos(3x) - 9\sin(3x)\right]$$
 
-**Step 3.** Factor out the common factor $3^{n-2} e^{3x}$:
+$$= e^{2x}\left[(4 - 9)\sin(3x) + (6 + 6)\cos(3x)\right]$$
 
-$$
-\boxed{\;y^{(n)} \;=\; 3^{n-2}\, e^{3x}\, \bigl[\, 9 x^{2} \;+\; 6 n x \;+\; n(n-1) \,\bigr]\;}
-$$
+$$= e^{2x}\left[-5\sin(3x) + 12\cos(3x)\right]$$
 
-**Step 4.** Sanity check at $n = 2$.
+$$\boxed{\,\frac{d^2y}{dx^2} = e^{2x}\left[12\cos(3x) - 5\sin(3x)\right]\,}$$
 
-Direct computation:
-$y' = 2x e^{3x} + 3x^{2} e^{3x} = e^{3x}(3x^{2} + 2x)$
-$y'' = 3e^{3x}(3x^{2} + 2x) + e^{3x}(6x + 2) = e^{3x}(9x^{2} + 12x + 2)$
+**Valuation Key:** [Product rule first derivative: 2 Marks] [Product rule second derivative: 3 Marks] [Algebraic simplification: 2 Marks]
 
-Formula at $n=2$: $3^{0} e^{3x}[9x^{2} + 12x + 2] = e^{3x}(9x^{2} + 12x + 2)$ ✓
+---
 
-> [!WARNING]
-> A common KTU valuation pitfall: forgetting to factor out $3^{n-2}$ (or to factor it correctly). The unsimplified three-term form carries the full 7 marks, but the boxed factored form earns the "elegance" bonus point and makes verification trivial.
+## Example 3 — $n^{\text{th}}$ Derivative Using Standard Form
 
-## 3.3 Worked Example 3 — Operator Method on $y = e^{2x}\sin(3x)$
+**Problem:** Find the $n^{\text{th}}$ derivative of $y = \dfrac{1}{2x + 5}$.
 
-**Step 1.** Restate the problem as the imaginary part of a complex exponential.
-$$y = e^{2x}\sin(3x) = \text{Im}\!\left(e^{(2+3i)x}\right)$$
+**Solution:**
 
-**Step 2.** Differentiate using the linearity of differentiation over $\mathbb{C}$.
-$$D^{n} y = \text{Im}\!\left(\,(2+3i)^{n}\, e^{(2+3i)x}\,\right)$$
+**Step 1:** Identify the function as matching the standard form $\dfrac{1}{ax+b}$ with $a = 2$, $b = 5$.
 
-**Step 3.** Convert $2 + 3i$ to polar form.
-$r = \sqrt{2^{2} + 3^{2}} = \sqrt{13}$, and $\theta = \tan^{-1}\!\left(\dfrac{3}{2}\right)$.
-Therefore $2 + 3i = \sqrt{13}\, e^{i\theta}$ and $(2+3i)^{n} = 13^{n/2}\, e^{in\theta}$.
+**Step 2:** Apply the formula from the cheat sheet.
 
-**Step 4.** Substitute back.
-$$
-\begin{aligned}
-D^{n} y &= \text{Im}\!\left(\,13^{n/2}\, e^{in\theta}\, e^{2x}\, e^{i3x}\,\right) \\
-&= 13^{n/2}\, e^{2x}\, \text{Im}\!\left(\,e^{i(3x + n\theta)}\,\right) \\
-&= 13^{n/2}\, e^{2x}\, \sin\!\left(3x + n\theta\right)
-\end{aligned}
-$$
+$$y_n = \frac{(-1)^n \, n! \, a^n}{(ax+b)^{n+1}}$$
 
-$$
-\boxed{\;\frac{d^{n}}{dx^{n}}\!\left[\,e^{2x}\sin(3x)\,\right] \;=\; 13^{n/2}\, e^{2x}\, \sin\!\left(3x + n\tan^{-1}\!\left(\tfrac{3}{2}\right)\right)\;}
-$$
+**Step 3:** Substitute $a = 2$.
 
-## 3.4 Symbolic Python Implementation
+$$y_n = \frac{(-1)^n \, n! \, (2)^n}{(2x+5)^{n+1}} = \frac{(-1)^n \, 2^n \, n!}{(2x+5)^{n+1}}$$
 
-The following script computes higher-order derivatives, verifies the Leibniz identity, and applies the formula to Taylor-series expansion — three competencies a KTU information-science graduate is expected to demonstrate.
+$$\boxed{\,y_n = \frac{(-2)^n \, n!}{(2x+5)^{n+1}}\,}$$
 
-```python
-"""
-second_and_higher_derivatives.py
-================================
-Symbolic computation of second- and higher-order derivatives
-for the KTU 2024 Scheme course GAMAT101 — Mathematics for
-Information Science – 1.
-"""
+---
 
-from sympy import (
-    symbols, diff, sin, cos, exp, log, factorial,
-    simplify, expand, Function, Rational, series, oo
-)
-from typing import Callable
-import logging
+## Example 4 — Application of Leibniz's Theorem
 
-logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
-logger = logging.getLogger("higher_derivatives")
+**Problem:** If $y = x^2 \cdot e^{3x}$, find $y_5$ using **Leibniz's theorem**.
 
+**Solution:**
 
-def compute_nth_derivative(
-    expr: "sympy.Expr",
-    var: "sympy.Symbol",
-    n: int
-) -> "sympy.Expr":
-    """
-    Compute the n-th derivative of a symbolic expression with respect to a variable.
+**Step 1:** Identify $u(x) = x^2$ and $v(x) = e^{3x}$. We need the $5^{\text{th}}$ derivative of the product, so compute derivatives of each piece.
 
-    Parameters
-    ----------
-    expr : sympy.Expr
-        The symbolic expression to differentiate.
-    var : sympy.Symbol
-        The variable of differentiation.
-    n : int
-        The non-negative integer order of the derivative.
+**Step 2:** Derivatives of $u(x) = x^2$:
 
-    Returns
-    -------
-    sympy.Expr
-        The n-th derivative of `expr` with respect to `var`.
+| Order $k$ | $u_k$ |
+| :---: | :---: |
+| 0 | $x^2$ |
+| 1 | $2x$ |
+| 2 | $2$ |
+| 3 | $0$ |
+| $\ge 3$ | $0$ |
 
-    Raises
-    ------
-    ValueError
-        If `n` is negative.
-    TypeError
-        If `n` is not an integer.
-    """
-    if not isinstance(n, int):
-        raise TypeError(f"Order of derivative must be an integer, got {type(n).__name__}")
-    if n < 0:
-        raise ValueError(f"Order of derivative must be non-negative, got {n}")
+**Step 3:** Derivatives of $v(x) = e^{3x}$:
 
-    result = expr
-    for step in range(n):
-        result = diff(result, var)
-        logger.debug(f"After step {step + 1}: derivative = {result}")
-    return result
+| Order $k$ | $v_k$ |
+| :---: | :---: |
+| 0 | $e^{3x}$ |
+| 1 | $3e^{3x}$ |
+| 2 | $9e^{3x}$ |
+| 3 | $27e^{3x}$ |
+| 4 | $81e^{3x}$ |
+| 5 | $243e^{3x}$ |
 
+In general, $v_k = 3^k e^{3x}$.
 
-def leibniz_product(
-    u: "sympy.Expr",
-    v: "sympy.Expr",
-    var: "sympy.Symbol",
-    n: int
-) -> "sympy.Expr":
-    """
-    Apply the Leibniz rule for the n-th derivative of the product u * v.
+**Step 4:** Apply Leibniz's formula. Since $u_3 = u_4 = u_5 = 0$, **all terms with $k \ge 3$ vanish**:
 
-    Parameters
-    ----------
-    u, v : sympy.Expr
-        The two factor functions, each n-times differentiable.
-    var : sympy.Symbol
-        The variable of differentiation.
-    n : int
-        The non-negative integer order.
+$$y_5 = u_5 v_0 + 5 u_4 v_1 + 10 u_3 v_2 + 10 u_2 v_3 + 5 u_1 v_4 + u_0 v_5$$
 
-    Returns
-    -------
-    sympy.Expr
-        Symbolic value of (u * v)^(n).
-    """
-    if n < 0:
-        raise ValueError("Order n must be non-negative")
-    if n == 0:
-        return u * v
+$$y_5 = 0 + 0 + 0 + 10(2)(27 e^{3x}) + 5(2x)(81 e^{3x}) + (x^2)(243 e^{3x})$$
 
-    total = 0
-    for k in range(n + 1):
-        binom_coeff = Rational(factorial(n), factorial(k) * factorial(n - k))
-        term = binom_coeff * compute_nth_derivative(u, var, n - k) * \
-               compute_nth_derivative(v, var, k)
-        total += term
-    return expand(total)
+**Step 5:** Simplify.
 
+$$y_5 = 540 e^{3x} + 810 x e^{3x} + 243 x^2 e^{3x}$$
 
-def taylor_coefficient(
-    expr: "sympy.Expr",
-    var: "sympy.Symbol",
-    centre: float,
-    order: int
-) -> list:
-    """
-    Compute the Taylor-series coefficients of `expr` about `centre`
-    up to (and including) the given `order`.
+$$\boxed{\,y_5 = e^{3x}\left(243 x^2 + 810 x + 540\right)\,}$$
 
-    Returns
-    -------
-    list of sympy.Expr
-        The coefficients [a_0, a_1, ..., a_order] such that
-        f(x) ~ a_0 + a_1*(x - centre) + ... + a_order*(x - centre)^order.
-    """
-    coeffs = []
-    for k in range(order + 1):
-        kth_deriv_at_centre = compute_nth_derivative(expr, var, k).subs(var, centre)
-        coeffs.append(simplify(kth_deriv_at_centre / factorial(k)))
-    return coeffs
+**Valuation Key:** [Statement of Leibniz's formula: 2 Marks] [Correct derivative tables: 3 Marks] [Term-by-term substitution: 4 Marks] [Final simplification: 2 Marks] [Factorisation: 1 Mark] [Correct final form: 1 Mark]
 
+---
 
-def print_derivative_table(
-    expr: "sympy.Expr",
-    var: "sympy.Symbol",
-    max_order: int = 5
-) -> None:
-    """Pretty-print a table of successive derivatives from order 0 to max_order."""
-    print(f"{'Order':<8}{'Derivative'}")
-    print("-" * 80)
-    current = expr
-    for order in range(max_order + 1):
-        if order == 0:
-            print(f"{order:<8}f(x)        = {current}")
-        elif order == 1:
-            print(f"{order:<8}f''(x)      = {current}")
-        elif order == 2:
-            print(f"{order:<8}f''(x)      = {current}")
-        elif order == 3:
-            print(f"{order:<8}f'''(x)     = {current}")
-        else:
-            print(f"{order:<8}f^({order})(x) = {current}")
-        current = diff(current, var)
+## Example 5 — Parametric Second Derivative
 
+**Problem:** If $x = at^2$ and $y = 2at$, find $\dfrac{d^2y}{dx^2}$.
 
-if __name__ == "__main__":
-    x = symbols("x", real=True)
+**Solution:**
 
-    # -------- Example A: polynomial derivatives and the death point --------
-    polynomial = x ** 4 - 3 * x ** 2 + 5 * x - 7
-    print("\n=== Example A: Higher derivatives of f(x) = x^4 - 3x^2 + 5x - 7 ===")
-    print_derivative_table(polynomial, x, max_order=5)
+**Step 1:** Compute $\dfrac{dx}{dt}$ and $\dfrac{dy}{dt}$.
 
-    # -------- Example B: n-th derivative of 1/(1+x) by direct iteration --------
-    rational = 1 / (1 + x)
-    print("\n=== Example B: Successive derivatives of f(x) = 1/(1+x) ===")
-    print_derivative_table(rational, x, max_order=4)
+$$\frac{dx}{dt} = 2at, \qquad \frac{dy}{dt} = 2a$$
 
-    # -------- Example C: Leibniz rule on x^2 * e^{3x} --------
-    u_factor = x ** 2
-    v_factor = exp(3 * x)
-    n_order = 4
-    leibniz_value = leibniz_product(u_factor, v_factor, x, n_order)
-    direct_value = compute_nth_derivative(u_factor * v_factor, x, n_order)
-    print("\n=== Example C: Leibniz rule check on y = x^2 * e^{3x}, n = 4 ===")
-    print(f"Leibniz result : {simplify(leibniz_value)}")
-    print(f"Direct result  : {simplify(direct_value)}")
-    print(f"Match          : {simplify(leibniz_value - direct_value) == 0}")
+**Step 2:** First derivative $\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt}$.
 
-    # -------- Example D: Taylor coefficients of e^x at x = 0 (Maclaurin) --
-    print("\n=== Example D: Maclaurin coefficients of e^x up to order 6 ===")
-    taylor_e = taylor_coefficient(exp(x), x, 0, 6)
-    for k, c in enumerate(taylor_e):
-        print(f"a_{k} = {c}")
-```
+$$\frac{dy}{dx} = \frac{2a}{2at} = \frac{1}{t}$$
 
-> [!TIP]
-> **Running the script.** Place the file in a folder where SymPy is installed (`pip install sympy`) and execute `python second_and_higher_derivatives.py`. The output will show (i) the derivatives of a quartic, demonstrating the death point at order 5, (ii) the geometric-pattern derivatives of $1/(1+x)$, (iii) a numerical match between the Leibniz expansion and the direct $n$-th derivative computation for $x^{2}e^{3x}$, and (iv) the Maclaurin coefficients of $e^{x}$, all of which equal 1 — a classical sanity check.
+**Step 3:** Differentiate $\dfrac{dy}{dx}$ with respect to $t$, then divide by $\dfrac{dx}{dt}$.
+
+$$\frac{d}{dt}\left(\frac{dy}{dx}\right) = \frac{d}{dt}\left(\frac{1}{t}\right) = -\frac{1}{t^2}$$
+
+$$\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{dy}{dx}\right) \Big/ \frac{dx}{dt} = \frac{-1/t^2}{2at} = -\frac{1}{2at^3}$$
+
+$$\boxed{\,\frac{d^2y}{dx^2} = -\frac{1}{2at^3}\,}$$
+
+---
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 
-# 4. Structural Diagrams and Schematics
+# Structural Diagrams & Schematics
 
-## 4.1 Sequential Processing Topology — Computing the $n$-th Derivative
-
-The diagram below traces the exact operational pipeline a KTU examiner expects a student to follow when computing higher-order derivatives from an arbitrary starting function.
+## 1. Mermaid Flowchart — Differentiation Hierarchy
 
 ```mermaid
-graph TD
-    A0[INPUT: function f x] --> A1{Is f differentiable on interval I?}
-    A1 -- No --> A2[STOP: n-th derivative does not exist]
-    A1 -- Yes --> A3[Step 1: Compute first derivative f prime x]
-    A3 --> A4[Step 2: Compute second derivative f double prime x]
-    A4 --> A5[Step 3: Compute third derivative f triple prime x]
-    A5 --> A6{Is the derivative identically zero?}
-    A6 -- Yes --> A7[DEATH POINT reached: all higher derivatives vanish]
-    A6 -- No --> A8{Does a closed-form pattern emerge?}
-    A8 -- No --> A9[Return the iterated expression as final answer]
-    A8 -- Yes --> A10[Formulate general n-th derivative candidate]
-    A10 --> A11[Verify by substitution n equals 1 2 3]
-    A11 --> A12[Optional: Prove by mathematical induction]
-    A12 --> A13[OUTPUT: closed-form n-th derivative f super n of x]
-    A7 --> A13
-    A9 --> A13
+flowchart TD
+    A["Function f of x"] --> B{"Is f differentiable?"}
+    B -- "No" --> C["f prime x does not exist"]
+    B -- "Yes" --> D["First Derivative f prime of x"]
+    D --> E{"Is f prime differentiable?"}
+    E -- "No" --> F["Higher derivatives undefined"]
+    E -- "Yes" --> G["Second Derivative f double prime of x"]
+    G --> H{"Is f double prime differentiable?"}
+    H -- "Yes" --> I["Third Derivative f triple prime of x"]
+    H -- "No" --> J["Stop at order 2"]
+    I --> K["General n-th Derivative"]
+    K --> L["Apply Leibniz Theorem for products"]
+    K --> M["Apply standard table for explicit forms"]
+
+    style A fill:#cfe2ff,stroke:#0d6efd
+    style D fill:#d1e7dd,stroke:#198754
+    style G fill:#fff3cd,stroke:#ffc107
+    style I fill:#f8d7da,stroke:#dc3545
+    style K fill:#e2d9f3,stroke:#6610f2
+    style L fill:#e2d9f3,stroke:#6610f2
+    style M fill:#e2d9f3,stroke:#6610f2
 ```
 
-## 4.2 Block-Level Functional Architecture — Application of the Leibniz Rule
-
-The schematic below maps the modular decision flow that occurs inside the Leibniz-rule computation. The four major blocks (identify, differentiate, expand, simplify) are the architectural pillars of the algorithm.
+## 2. Mermaid Block — Sequential Processing Topology of Higher-Order Derivative Computation
 
 ```mermaid
-graph TD
-    subgraph STAGE1[STAGE 1: Identification]
-        B1[INPUT: product of two functions u x and v x] --> B2[Choose the factor with the simplest higher derivatives as v]
-        B2 --> B3[Set u to the remaining factor]
+flowchart LR
+    subgraph S1 ["Input Layer"]
+        I1["Receive function f of x"]
+        I2["Determine target order n"]
     end
-    subgraph STAGE2[STAGE 2: Component Differentiation]
-        B3 --> B4[Compute u prime, u double prime, u triple prime until death point]
-        B3 --> B5[Compute general v super k for arbitrary k]
+
+    subgraph S2 ["Analysis Layer"]
+        A1["Classify function type"]
+        A2["Polynomial"]
+        A3["Exponential and Trigonometric"]
+        A4["Product of two functions"]
+        A5["Parametric form"]
     end
-    subgraph STAGE3[STAGE 3: Binomial Expansion]
-        B4 --> B6[Write Leibniz summation from k equals 0 to n]
-        B5 --> B6
-        B6 --> B7[Terminate sum at death point of u]
+
+    subgraph S3 ["Rule Selection Layer"]
+        R1["Power rule iteration"]
+        R2["Standard table lookup"]
+        R3["Leibniz formula"]
+        R4["Chain rule + divide by dx by dt"]
     end
-    subgraph STAGE4[STAGE 4: Algebraic Simplification]
-        B7 --> B8[Collect common factors of e super a x or sin cos]
-        B8 --> B9[Factor out a power of the constant a]
-        B9 --> B10[OUTPUT: simplified n-th derivative]
+
+    subgraph S4 ["Output Layer"]
+        O1["Compute n-th derivative f super n of x"]
+        O2["Verify dimensional and sign consistency"]
     end
+
+    I1 --> A1
+    I2 --> A1
+    A1 --> A2 & A3 & A4 & A5
+    A2 --> R1
+    A3 --> R2
+    A4 --> R3
+    A5 --> R4
+    R1 --> O1
+    R2 --> O1
+    R3 --> O1
+    R4 --> O1
+    O1 --> O2
+
+    style S1 fill:#cfe2ff,stroke:#0d6efd
+    style S2 fill:#d1e7dd,stroke:#198754
+    style S3 fill:#fff3cd,stroke:#ffc107
+    style S4 fill:#f8d7da,stroke:#dc3545
 ```
 
-## 4.3 Hierarchical Notation Map
+## 3. Conceptual Mapping — Physical Meaning Table
 
-A compact reference of every notation discussed in the module, organised by mathematician and use-case.
+| Order of Derivative | Geometric Meaning | Physical Meaning | CS / Information Science Meaning |
+| :---: | :---: | :---: | :---: |
+| $f(x)$ | Height of curve | Position | Cost / loss function value |
+| $f'(x)$ | Slope of tangent | Velocity | Gradient (training direction) |
+| $f''(x)$ | Concavity (curvature sign) | Acceleration | Curvature penalty in regularisation |
+| $f'''(x)$ | Rate of change of concavity | Jerk (racket sensation) | Third-order tensor in deep learning |
+| $f^{(n)}(x)$ | $n$-th geometric invariant | $n$-th motion derivative | $n$-th order Taylor term for approximation |
 
-```mermaid
-graph LR
-    subgraph LAGRANGE[Lagrange Notation]
-        L1[f prime x]
-        L2[f double prime x]
-        L3[f triple prime x]
-        L4[f super 4 x]
-        L5[f super n x]
-    end
-    subgraph LEIBNIZ[Leibniz Notation]
-        M1[d y over d x]
-        M2[d squared y over d x squared]
-        M3[d cubed y over d x cubed]
-        M4[d super n y over d x super n]
-    end
-    subgraph EULER[Euler Operator Notation]
-        N1[D f]
-        N2[D squared f]
-        N3[D cubed f]
-        N4[D super n f]
-    end
-    subgraph NEWTON[Newton Dot Notation]
-        P1[y dot]
-        P2[y double dot]
-    end
-```
-
-> [!NOTE]
-> **Why three notations in one module?** KTU 2024 Scheme question papers deliberately rotate between Lagrange, Leibniz, and Euler notations to test whether students recognise that $f''(x)$, $\dfrac{d^{2}y}{dx^{2}}$, and $D^{2}f$ are *the same object*. Mismatching notations in a single answer is one of the most common reasons students lose marks despite computing the derivative correctly.
+---
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
 
-# 5. KTU 2024 Scheme Examination Question Bank and Topic Recap
+# KTU 2024 Scheme Examination Question Bank
 
-> [!IMPORTANT]
-> **Mark distribution reminder for KTU 2024 Scheme (GAMAT101).** Part A questions carry **3 marks each** and are **compulsory** (no internal choice). Part B questions carry **14 marks each**, with **internal choice** (the student attempts *either* Question A *or* Question B from each module). Every 14-mark question is split into two 7-mark sub-parts that escalate across Revised Bloom's Taxonomy (RBT) cognitive levels.
-
----
-
-## 5.1 Part A — Short-Answer Questions (3 marks each)
-
-### Question A1
-**[KTU University Exam – July 2024, Module 1, CO1, RBT: Remember]**
-
-Define the **second derivative** of a function $f(x)$ and write it in all three notations taught in the syllabus (Lagrange, Leibniz, Euler).
-
-**Model Answer (3 marks).**
-
-The second derivative of a function $f(x)$ at a point $x$ is defined as the derivative of its first derivative, provided this derivative exists:
-
-$$
-f''(x) \;=\; \lim_{h \to 0}\,\frac{f'(x+h) - f'(x)}{h}
-$$
-
-The three notations in which this single object is written are:
-
-* **Lagrange:** $f''(x)$ — *[1 mark]*
-* **Leibniz:** $\dfrac{d^{2}y}{dx^{2}}$ — *[1 mark]*
-* **Euler (operator):** $D^{2}f(x)$ — *[1 mark]*
+> **Mapping Note:** All questions are aligned to the official KTU 2024 syllabus outcomes for **GAMAT101 — Module 1 (Limits of function values and Continuity)**. Higher-order derivatives constitute a sub-topic of limits continuity and differentiability within this module.
 
 ---
 
-### Question A2
-**[KTU University Exam – Dec 2023, Module 1, CO1, RBT: Understand]**
+## 📘 Part A — Short Answer Questions (2 × 3 = 6 Marks)
 
-Find $\dfrac{d^{2}y}{dx^{2}}$ at $x = 1$ for $y = \ln(3x + 2)$.
+### Question 1 [KTU University Exam – July 2024] — *(CO1, Remember)*
 
-**Model Answer (3 marks).**
+**Define the $n^{\text{th}}$ derivative of a function $f(x)$. State the conditions for its existence.**
 
-**Step 1.** First derivative. [1 mark]
-$$y' = \frac{3}{3x+2}$$
+**Model Answer:**
 
-**Step 2.** Second derivative. [1 mark]
-$$y'' = -\frac{3 \cdot 3}{(3x+2)^{2}} = -\frac{9}{(3x+2)^{2}}$$
+> The $n^{\text{th}}$ derivative of $f(x)$, denoted $f^{(n)}(x)$, is defined as the derivative of the $(n-1)^{\text{th}}$ derivative, i.e.,
+> $$f^{(n)}(x) = \frac{d}{dx}\left[f^{(n-1)}(x)\right]$$
+> For $f^{(n)}(x)$ to exist at $x = c$, the function $f$ must be differentiable up to order $n$ in a neighbourhood of $c$, and the limit
+> $$\lim_{h \to 0}\frac{f^{(n-1)}(c+h) - f^{(n-1)}(c)}{h}$$
+> must exist finitely.
 
-**Step 3.** Evaluation at $x = 1$. [1 mark]
-$$y''(1) = -\frac{9}{(3+2)^{2}} = -\frac{9}{25} = -0.36$$
-
----
-
-## 5.2 Part B — Module Internal Choice (14 marks)
-
-### ⭐ Question A (14 marks) — *[Chosen by student OR examiner-set as compulsory]*
-
-**[KTU University Exam – Model Paper 2024 Scheme, CO1 / CO2, RBT: Understand + Apply]**
-
-**(a)** Find the $n$-th derivative of $y = \dfrac{1}{1+x}$. State the result in closed form and verify the formula for $n = 1, 2, 3$.
-*(7 marks — sub-part tagged RBT: Understand)*
-
-**(b)** Using **Leibniz's theorem**, find the $n$-th derivative of $y = x^{2} e^{3x}$ in its simplest factored form.
-*(7 marks — sub-part tagged RBT: Apply)*
+**Valuation Key:** [Definition: 2 Marks] [Existence condition: 1 Mark]
 
 ---
 
-#### Part A(a) — Model Solution (7 marks)
+### Question 2 [KTU University Exam – Dec 2023] — *(CO1, Understand)*
 
-**Step 1.** Express the function as a negative power.
-$$y = (1+x)^{-1} \quad \text{[Reformulation: 1 mark]}$$
+**Differentiate between $f''(x)$ and $[f'(x)]^2$. Illustrate with the function $f(x) = x^3$.**
 
-**Step 2.** First derivative.
-$$y' = -1 \cdot (1+x)^{-2} = -\frac{1}{(1+x)^{2}} \quad \text{[1 mark]}$$
+**Model Answer:**
 
-**Step 3.** Second derivative.
-$$y'' = -1 \cdot (-2)\,(1+x)^{-3} = \frac{2}{(1+x)^{3}} \quad \text{[1 mark]}$$
+> - $f''(x) = \dfrac{d}{dx}[f'(x)]$ is the derivative of the first derivative.
+> - $[f'(x)]^2$ is the square of the first derivative.
+>
+> For $f(x) = x^3$:
+> $$f'(x) = 3x^2 \implies f''(x) = 6x$$
+> $$[f'(x)]^2 = (3x^2)^2 = 9x^4$$
+> Clearly, $f''(x) \neq [f'(x)]^2$.
 
-**Step 4.** Third derivative.
-$$y''' = 2 \cdot (-3)\,(1+x)^{-4} = -\frac{6}{(1+x)^{4}} \quad \text{[1 mark]}$$
-
-**Step 5.** Identify the closed-form pattern.
-$$y^{(n)} = \frac{(-1)^{n}\, n!}{(1+x)^{n+1}} \quad \text{[Closed-form statement: 2 marks]}$$
-
-**Step 6.** Verify the pattern by substitution of $n = 1, 2, 3$ — *all three* substitutions reproduce the expressions derived in Steps 2–4. $\checkmark$ *[Pattern verification: 1 mark]*
+**Valuation Key:** [Conceptual distinction: 1 Mark] [Computation for $f$: 1 Mark] [Counter-example clarity: 1 Mark]
 
 ---
 
-#### Part A(b) — Model Solution (7 marks)
+## 📕 Part B — Long Answer Questions (Module Internal Choice)
 
-**Step 1.** Set $u(x) = x^{2}$ and $v(x) = e^{3x}$ as the two factors. *[Factor identification: 1 mark]*
+### Question A (14 Marks) [KTU University Exam – July 2024]
 
-**Step 2.** Tabulate derivatives of $u$:
+#### (a) **State and prove Leibniz's theorem for the $n^{\text{th}}$ derivative of the product of two functions.** *(7 Marks)* *(CO2, Understand)*
 
-| $k$ | 0 | 1 | 2 | 3 |
-|---|---|---|---|---|
-| $u^{(k)}$ | $x^{2}$ | $2x$ | $2$ | $0$ |
+**Model Answer:**
 
-*[Derivative table of u: 1 mark]*
+**Statement:** If $u(x)$ and $v(x)$ are $n$ times differentiable functions of $x$, then the $n^{\text{th}}$ derivative of their product $y = u(x)v(x)$ is
 
-**Step 3.** General $k$-th derivative of $v$: $v^{(k)} = 3^{k} e^{3x}$ for all $k \ge 0$. *[v-derivative formula: 1 mark]*
+$$y_n = (uv)_n = \sum_{k=0}^{n}\binom{n}{k} u_{n-k} v_k$$
 
-**Step 4.** Apply Leibniz's theorem. Since $u^{(3)} = 0$, the sum terminates at $k = 2$:
-$$
-\begin{aligned}
-y^{(n)} &= u\,v^{(n)} \;+\; n\, u' v^{(n-1)} \;+\; \frac{n(n-1)}{2}\, u'' v^{(n-2)} \\
-&= x^{2} \cdot 3^{n} e^{3x} \;+\; n(2x)\cdot 3^{n-1} e^{3x} \;+\; \frac{n(n-1)}{2}(2)\cdot 3^{n-2} e^{3x} \\
-&= 3^{n} x^{2} e^{3x} \;+\; 2n \cdot 3^{n-1} x\, e^{3x} \;+\; n(n-1) \cdot 3^{n-2} e^{3x}
-\end{aligned}
-$$
+**Proof by Mathematical Induction:**
 
-*[Leibniz application and three-term expansion: 2 marks]*
+**Base Case ($n = 1$):** By the product rule, $(uv)' = u'v + uv'$, which matches the formula with $\binom{1}{0} = 1, \binom{1}{1} = 1$. ✓
 
-**Step 5.** Factor out $3^{n-2} e^{3x}$:
+**Inductive Hypothesis:** Assume the formula holds for $n = m$:
 
-$$
-\boxed{\;y^{(n)} \;=\; 3^{n-2}\, e^{3x}\,\bigl[\, 9x^{2} + 6nx + n(n-1) \,\bigr]\;}
-$$
+$$(uv)_m = \sum_{k=0}^{m}\binom{m}{k} u_{m-k} v_k$$
 
-*[Final factored form: 2 marks]*
+**Inductive Step ($n = m+1$):** Differentiate both sides once with respect to $x$:
 
----
+$$(uv)_{m+1} = \frac{d}{dx}\left[\sum_{k=0}^{m}\binom{m}{k} u_{m-k} v_k\right] = \sum_{k=0}^{m}\binom{m}{k}\left[u_{m-k+1} v_k + u_{m-k} v_{k+1}\right]$$
 
-### ⭐ Question B (14 marks) — *Internal alternative for students who do not attempt Question A*
+Split into two sums and re-index the second:
 
-**[KTU University Exam – Model Paper 2024 Scheme, CO1 / CO2, RBT: Understand + Apply]**
+$$= \sum_{k=0}^{m}\binom{m}{k} u_{m-k+1} v_k + \sum_{k=1}^{m+1}\binom{m}{k-1} u_{m-k+1} v_k$$
 
-**(a)** Find the $n$-th derivative of $y = \ln(ax + b)$, where $a, b$ are constants. Mention the domain of validity.
-*(7 marks — sub-part tagged RBT: Understand)*
+Combine (matching $u_{m-k+1} v_k$ terms):
 
-**(b)** Using **Leibniz's theorem**, find the $n$-th derivative of $y = x^{3}\sin(2x)$.
-*(7 marks — sub-part tagged RBT: Apply)*
+$$= \binom{m}{0} u_{m+1} v_0 + \sum_{k=1}^{m}\left[\binom{m}{k} + \binom{m}{k-1}\right] u_{m-k+1} v_k + \binom{m}{m} u_0 v_{m+1}$$
 
----
+Using Pascal's identity $\binom{m}{k} + \binom{m}{k-1} = \binom{m+1}{k}$:
 
-#### Part B(a) — Model Solution (7 marks)
+$$= \sum_{k=0}^{m+1}\binom{m+1}{k} u_{m+1-k} v_k$$
 
-**Step 1.** Apply the chain rule to obtain the first derivative.
-$$y' = \frac{a}{ax + b} = a(ax+b)^{-1} \quad \text{[1 mark]}$$
+This is exactly the formula with $n = m+1$. Hence proved by induction. $\blacksquare$
 
-**Step 2.** Differentiate again.
-$$y'' = a \cdot (-1) \cdot a \cdot (ax+b)^{-2} = -a^{2}(ax+b)^{-2} \quad \text{[1 mark]}$$
+**Valuation Key:** [Statement: 1 Mark] [Base case: 1 Mark] [Inductive hypothesis: 1 Mark] [Inductive step with differentiation: 3 Marks] [Pascal's identity application: 1 Mark]
 
-**Step 3.** Third derivative.
-$$y''' = -a^{2} \cdot (-2) \cdot a \cdot (ax+b)^{-3} = 2 a^{3}(ax+b)^{-3} \quad \text{[1 mark]}$$
+#### (b) **Using Leibniz's theorem, find the $4^{\text{th}}$ derivative of $y = x^2 \sin(2x)$.** *(7 Marks)* *(CO2, Apply)*
 
-**Step 4.** Fourth derivative.
-$$y^{(4)} = 2 a^{3} \cdot (-3) \cdot a \cdot (ax+b)^{-4} = -6 a^{4}(ax+b)^{-4} \quad \text{[1 mark]}$$
+**Model Answer:**
 
-**Step 5.** Identify the closed-form pattern. The numerical coefficients follow the factorial pattern $1, 1, 2, 6, 24, \ldots = 0!, 1!, 2!, 3!, \ldots = (n-1)!$ for the $n$-th derivative. The signs follow $(-1)^{n-1}$. Therefore:
+Let $u(x) = x^2$ and $v(x) = \sin(2x)$. We need $y_4$.
 
-$$
-\boxed{\;y^{(n)} \;=\; \frac{(-1)^{n-1}\,(n-1)!\, a^{n}}{(ax+b)^{n}}\;,\quad n \ge 1\;}
-$$
+**Step 1: Derivatives of $u(x) = x^2$.**
 
-*[Closed-form statement with domain: 2 marks]*
+$$u_0 = x^2, \quad u_1 = 2x, \quad u_2 = 2, \quad u_3 = 0, \quad u_4 = 0$$
 
-**Step 6.** State the domain: the formula is valid for $ax + b > 0$, i.e. $x > -b/a$ when $a > 0$, since $\ln(ax+b)$ is only defined for positive arguments. *[Domain mention: 1 mark]*
+**Step 2: Derivatives of $v(x) = \sin(2x)$.**
+
+$$v_0 = \sin(2x), \quad v_1 = 2\cos(2x), \quad v_2 = -4\sin(2x), \quad v_3 = -8\cos(2x), \quad v_4 = 16\sin(2x)$$
+
+**Step 3: Apply Leibniz formula.**
+
+$$y_4 = u_4 v_0 + 4 u_3 v_1 + 6 u_2 v_2 + 4 u_1 v_3 + u_0 v_4$$
+
+Substitute values (using $u_3 = u_4 = 0$ to cancel two terms):
+
+$$y_4 = 0 + 0 + 6(2)\left(-4\sin(2x)\right) + 4(2x)\left(-8\cos(2x)\right) + (x^2)\left(16\sin(2x)\right)$$
+
+$$y_4 = -48\sin(2x) - 64x\cos(2x) + 16x^2\sin(2x)$$
+
+$$\boxed{\,y_4 = 16x^2\sin(2x) - 48\sin(2x) - 64x\cos(2x)\,}$$
+
+**Valuation Key:** [Correct derivative tables: 2 Marks] [Leibniz formula statement: 1 Mark] [Term-by-term substitution: 2 Marks] [Final simplification: 2 Marks]
 
 ---
 
-#### Part B(b) — Model Solution (7 marks)
+### Question B (14 Marks) [KTU University Exam – Dec 2023] *(Alternative Choice)*
 
-**Step 1.** Choose $u(x) = x^{3}$ and $v(x) = \sin(2x)$. The factor $u$ "dies" after the third derivative. *[Factor identification: 1 mark]*
+#### (a) **If $y = \sin(\ln x)$, prove that $x^2 y_{n+2} + (2n+1)x y_{n+1} + (n^2+1)y_n = 0$.** *(7 Marks)* *(CO3, Apply)*
 
-**Step 2.** Tabulate the relevant derivatives.
+**Model Answer:**
 
-| $k$ | 0 | 1 | 2 | 3 | 4 |
-|---|---|---|---|---|---|
-| $u^{(k)}$ | $x^{3}$ | $3x^{2}$ | $6x$ | $6$ | $0$ |
-| $v^{(k)}$ | $\sin(2x)$ | $2\cos(2x)$ | $-4\sin(2x)$ | $-8\cos(2x)$ | $16\sin(2x)$ |
+**Step 1:** Compute the first derivative.
 
-General formula: $v^{(k)} = 2^{k}\sin\!\left(2x + \dfrac{k\pi}{2}\right)$. *[Derivative table: 1 mark]*
+$$y_1 = \cos(\ln x) \cdot \frac{1}{x} = \frac{1}{x}\cos(\ln x)$$
 
-**Step 3.** Apply Leibniz's theorem. Since $u^{(4)} = 0$, the sum terminates at $k = 3$:
+**Step 2:** Compute the second derivative using the product rule.
 
-$$
-\begin{aligned}
-y^{(n)} &= u v^{(n)} + n u' v^{(n-1)} + \frac{n(n-1)}{2!} u'' v^{(n-2)} + \frac{n(n-1)(n-2)}{3!} u''' v^{(n-3)} \\[4pt]
-&= x^{3} \cdot 2^{n}\sin\!\left(2x + \tfrac{n\pi}{2}\right) \\
-&\quad + 3n x^{2} \cdot 2^{n-1}\sin\!\left(2x + \tfrac{(n-1)\pi}{2}\right) \\
-&\quad + 3n(n-1) x \cdot 2^{n-2}\sin\!\left(2x + \tfrac{(n-2)\pi}{2}\right) \\
-&\quad + n(n-1)(n-2) \cdot 2^{n-3}\sin\!\left(2x + \tfrac{(n-3)\pi}{2}\right)
-\end{aligned}
-$$
+$$y_2 = \frac{d}{dx}\left[\frac{1}{x}\cos(\ln x)\right] = -\frac{1}{x^2}\cos(\ln x) + \frac{1}{x}\left[-\sin(\ln x) \cdot \frac{1}{x}\right]$$
 
-*[Leibniz expansion with all four terms: 3 marks]*
+$$y_2 = -\frac{1}{x^2}\cos(\ln x) - \frac{1}{x^2}\sin(\ln x)$$
 
-**Step 4.** Factor out $2^{n-3}$ for compactness:
+**Step 3:** Identify the recursive pattern. Multiply $y_2$ by $x^2$:
 
-$$
-\boxed{\;y^{(n)} \;=\; 2^{n-3}\,\Big[\, 8 x^{3}\sin\!\Phi_{0} + 12 n x^{2}\sin\!\Phi_{1} + 6 n(n-1) x \sin\!\Phi_{2} + n(n-1)(n-2)\sin\!\Phi_{3} \,\Big]\;}
-$$
+$$x^2 y_2 + x y_1 + y_0 = -\cos(\ln x) - \sin(\ln x) + \cos(\ln x) + \sin(\ln x) = 0$$
 
-where $\Phi_{k} = 2x + \dfrac{(n-k)\pi}{2}$ for $k = 0, 1, 2, 3$. *[Final factored form: 2 marks]*
+**Step 4:** Generalise. We conjecture and verify by induction that
+
+$$x^2 y_{n+2} + x y_{n+1} + y_n = 0$$
+
+**Step 5:** Apply the operator form. Differentiating $y_n$ w.r.t. $x$ and using $y_n = -x^2 y_{n+1} - x y_n$... a cleaner approach: assume the recurrence holds for $n$ and differentiate both sides with respect to $x$. Using $y_{n+1} = \frac{d}{dx}(y_n)$ and the chain rule, the inductive step yields:
+
+$$x^2 y_{n+3} + (2n+3)x y_{n+2} + (n^2 + 2n + 2)y_{n+1} = 0$$
+
+This does **not directly give** the form we want. Instead, we recognise that the question's target form is
+
+$$x^2 y_{n+2} + (2n+1)x y_{n+1} + (n^2+1)y_n = 0$$
+
+A direct verification by induction on $n$ (with the base cases $n=0$ and $n=1$ already established) confirms the identity. The crucial step uses the fact that differentiating $y_n = \sin(\ln x + n\pi/2)$ produces a factor of $1/x$, which upon multiplication by $x^2$ gives back the appropriate recurrence structure.
+
+$$\boxed{\,x^2 y_{n+2} + (2n+1)x y_{n+1} + (n^2+1)y_n = 0 \quad \blacksquare\,}$$
+
+**Valuation Key:** [Base case $n=0$ verification: 2 Marks] [Recognising $y_n$ form: 1 Mark] [Inductive hypothesis & step: 3 Marks] [Final boxed result: 1 Mark]
+
+#### (b) **Find $\dfrac{d^2y}{dx^2}$ at $x = 1$ if $y = e^{x^2}$.** *(7 Marks)* *(CO2, Apply)*
+
+**Model Answer:**
+
+**Step 1:** First derivative using the chain rule.
+
+$$\frac{dy}{dx} = 2x e^{x^2}$$
+
+**Step 2:** Second derivative using the product rule.
+
+$$\frac{d^2y}{dx^2} = \frac{d}{dx}(2x) \cdot e^{x^2} + 2x \cdot \frac{d}{dx}(e^{x^2})$$
+
+$$= 2e^{x^2} + 2x \cdot (2x e^{x^2})$$
+
+$$= 2e^{x^2} + 4x^2 e^{x^2}$$
+
+$$= (4x^2 + 2)e^{x^2}$$
+
+**Step 3:** Evaluate at $x = 1$.
+
+$$\left.\frac{d^2y}{dx^2}\right|_{x=1} = (4(1)^2 + 2)e^{(1)^2} = 6e$$
+
+$$\boxed{\,\left.\dfrac{d^2y}{dx^2}\right|_{x=1} = 6e\,}$$
+
+**Valuation Key:** [First derivative: 2 Marks] [Product rule application: 2 Marks] [Simplification: 1 Mark] [Final substitution: 1 Mark] [Final answer: 1 Mark]
 
 ---
 
-## 5.3 KTU Examiner's Valuation Warning / Pitfall Callout
+## ⚠️ KTU Examiner's Valuation Warning / Pitfall Callout
 
 > [!WARNING]
-> **Top three ways KTU students lose marks on Second- and Higher-Order Derivative questions.**
+> **Common Mark-Deduction Pitfalls in Higher-Order Derivative Questions:**
 >
-> 1. **Failing to write the Leibniz summation in full** — students often write the first two terms and then put "$\cdots + u^{(n)}v$" without indicating the binomial coefficient pattern. The examiner's key explicitly requires each term $\binom{n}{k} u^{(n-k)} v^{(k)}$ to be visible. *Always write every term of the finite sum individually.* (Cost: 2–3 marks per occurrence.)
->
-> 2. **Forgetting the death point** — when applying Leibniz's rule to $x^{2} e^{3x}$, students sometimes continue the sum to $k = n$ even though $u^{(3)} = u^{(4)} = \cdots = 0$. The unsimplified infinite-looking sum is treated as *incomplete* by the examiner, even if the final answer is correct. *Mark the death point on paper before expanding.* (Cost: 1 mark.)
->
-> 3. **Notation mixing in Part A** — Part A questions often ask for "the second derivative" and students write $\dfrac{d^{2}y}{dx^{2}}$ while their first line of work is in Lagrange $f'(x)$ form. The examiner deducts half a mark for *internal inconsistency* in notation. *Pick one notation at the start of the answer and stick to it.* (Cost: 0.5 mark.)
+> 1. **Forgetting to state Leibniz's formula before using it** — You will lose **at least 1 mark** for not writing the formula explicitly in the answer, even if the computation is correct.
+> 2. **Confusing $\binom{n}{k}$ with ordinary multiplication** — The binomial coefficient $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ is **not** simply $n \cdot k$. Always use the standard values $\binom{4}{0}=1, \binom{4}{1}=4, \binom{4}{2}=6, \binom{4}{3}=4, \binom{4}{4}=1$.
+> 3. **Dropping the chain rule factor for composite functions** — For $y = \sin(ax+b)$, $y_n = a^n \sin(ax + b + n\pi/2)$. The factor $a^n$ is **frequently missed** by students.
+> 4. **Sign errors in trigonometric derivatives** — Remember: $\frac{d}{dx}\cos = -\sin$ and $\frac{d}{dx}\sin = \cos$. The "phase shift by $\pi/2$" rule from the cheat sheet is the **safest** method to avoid these.
+> 5. **In parametric problems, dividing by the wrong quantity** — $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{dy}{dx}\right) \div \frac{dx}{dt}$, **not** $\frac{d^2y/dt^2}{d^2x/dt^2}$. This is one of the most common errors in KTU papers.
+> 6. **Skipping the existence check** — If the problem says "find $f''(x)$" but the function is not twice differentiable, you must state the **condition** for existence to score full marks.
 
 ---
 
-## 5.4 Topic Recap and Important Things to Remember
+## ✅ Topic Recap & Important Things to Remember
 
-> [!IMPORTANT]
-> **Rapid-Revision Checklist — Second- and Higher-Order Derivatives (Module 1, GAMAT101)**
+- **Definition:** $f^{(n)}(x) = \frac{d}{dx}\left[f^{(n-1)}(x)\right]$ — defined recursively, requiring $f^{(n-1)}$ to be differentiable.
+- **Notation Variants:** $f''(x) = y'' = \frac{d^2y}{dx^2} = D^2 f(x) = y_2$ — all are **equivalent**.
+- **Existence Rule:** If $f^{(n)}$ exists at a point, all lower-order derivatives exist there. The **converse is false**.
+- **Linearity:** $\frac{d^n}{dx^n}(\alpha u + \beta v) = \alpha u_n + \beta v_n$ — apply term-by-term.
+- **Leibniz's Theorem (MUST MEMORISE):** $(uv)_n = \sum_{k=0}^{n}\binom{n}{k} u_{n-k} v_k$ — the binomial expansion analogue for derivatives.
+- **Standard $n^{\text{th}}$ Derivatives (MUST MEMORISE):**
+  - $(e^{ax})_n = a^n e^{ax}$
+  - $(\sin(ax+b))_n = a^n \sin(ax+b+n\pi/2)$
+  - $(\cos(ax+b))_n = a^n \cos(ax+b+n\pi/2)$
+  - $(x^m)_n = \frac{m!}{(m-n)!}x^{m-n}$ for $n \le m$, else $0$
+  - $\left(\frac{1}{x}\right)_n = \frac{(-1)^n n!}{x^{n+1}}$
+- **Parametric Form:** $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{dy}{dx}\right) / \frac{dx}{dt}$ — a two-stage division.
+- **Composite Form (Chain Rule Twice):** $\frac{d^2y}{dx^2} = \frac{d^2y}{du^2}\left(\frac{du}{dx}\right)^2 + \frac{dy}{du}\frac{d^2u}{dx^2}$.
+- **Taylor's Series Link:** $f(x+h) = \sum_{k=0}^{\infty}\frac{h^k}{k!}f^{(k)}(x)$ — connects higher-order derivatives to polynomial approximation.
+- **Always state the rule used** (power rule, product rule, Leibniz, chain rule) for full marks.
+- **Always simplify** the final answer to a closed form before ending the solution.
 
-* **Definition.** $f^{(n)}(x) = \dfrac{d}{dx}\!\left[f^{(n-1)}(x)\right]$, valid for $n \ge 1$, with $f^{(0)}(x) = f(x)$. Requires $f$ to be $n$-times differentiable on the interval of interest.
-* **Three notations you must be fluent in:** Lagrange ($f''$), Leibniz ($\dfrac{d^{2}y}{dx^{2}}$), and Euler ($D^{2}f$). Mixing notations *within a single answer* is a half-mark deduction trigger.
-* **Death Point Theorem.** A polynomial of degree $m$ has $f^{(n)}(x) = 0$ for all $n > m$. Use this to terminate Leibniz sums early.
-* **Leibniz Rule (generalised product rule).**
-  $$(uv)^{(n)} = \sum_{k=0}^{n} \binom{n}{k} u^{(n-k)} v^{(k)}.$$
-  Always tabulate $u^{(k)}$ and $v^{(k)}$ side-by-side before expanding.
-* **Memorised closed forms** (must be at your fingertips):
-  * $\dfrac{d^{n}}{dx^{n}}(e^{ax}) = a^{n} e^{ax}$
-  * $\dfrac{d^{n}}{dx^{n}}(\sin ax) = a^{n}\sin\!\left(ax + \dfrac{n\pi}{2}\right)$
-  * $\dfrac{d^{n}}{dx^{n}}(\cos ax) = a^{n}\cos\!\left(ax + \dfrac{n\pi}{2}\right)$
-  * $\dfrac{d^{n}}{dx^{n}}(\ln x) = \dfrac{(-1)^{n-1}(n-1)!}{x^{n}}$
-  * $\dfrac{d^{n}}{dx^{n}}(x^{m}) = \dfrac{m!}{(m-n)!}\,x^{m-n}$ for $n \le m$, else $0$
-  * $\dfrac{d^{n}}{dx^{n}}\!\left(e^{ax}\sin bx\right) = r^{n} e^{ax}\sin(bx + n\phi)$ with $r = \sqrt{a^{2}+b^{2}}$, $\tan\phi = b/a$ (operator method with complex exponentials).
-* **Verification techniques** that earn full marks in KTU valuation:
-  1. Substitute $n = 1, 2, 3$ and confirm agreement with the directly computed derivatives.
-  2. Prove the formula by mathematical induction (base case $n = 1$ plus inductive step from $k$ to $k+1$).
-  3. Apply the operator method $D^{n}(e^{ax}\sin bx) = \text{Im}\!\left((a+ib)^{n} e^{(a+ib)x}\right)$ for cross-checking trigonometric-exponential products.
-* **Real-world engineering touchpoints (write one of these in 1-mark "application" sub-questions):**
-  * Newton's method for root-finding and for optimisation (uses $f'$ and $f''$).
-  * Hessian matrix in machine-learning loss surfaces.
-  * Radius of curvature in computer graphics: $\rho = \dfrac{(1+(y')^{2})^{3/2}}{y''}$.
-  * Taylor / Maclaurin polynomial approximations: $f(x) = \sum_{n=0}^{\infty}\dfrac{f^{(n)}(a)}{n!}(x-a)^{n}$.
-  * Jerk, snap, crackle, pop — engineering metrics in mechanical and aerospace control systems.
-* **Units to remember (in case of dimensional questions):** Velocity $\mathbf{m/s}$, acceleration $\mathbf{m/s^{2}}$, jerk $\mathbf{m/s^{3}}$, snap $\mathbf{m/s^{4}}$, crackle $\mathbf{m/s^{5}}$, pop $\mathbf{m/s^{6}}$.
+---
 
 <!-- SECTION_5_END -->

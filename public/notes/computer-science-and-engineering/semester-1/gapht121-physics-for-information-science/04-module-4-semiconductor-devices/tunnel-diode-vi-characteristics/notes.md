@@ -3,600 +3,547 @@
 <!-- SECTION_1_START -->
 # Tunnel Diode — VI Characteristics
 
-## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
+## 1. Core Technical Definition & Intuitive Overview
+
+### Formal KTU 2024 Definition
+A **Tunnel Diode** (also called the **Esaki Diode** after Nobel Laureate **Leo Esaki**, who discovered it in 1957) is a heavily doped **p–n junction diode** in which the **degenerate semiconductor** (Fermi level lies *inside* the conduction band on the n-side and *inside* the valence band on the p-side) exhibits **quantum-mechanical tunneling** of charge carriers through the thin depletion barrier. This produces a unique current–voltage characteristic with a region of **Negative Differential Resistance (NDR)** between the *peak point* and the *valley point*.
 
 > [!IMPORTANT]
-> **Tunnel Diode (Esaki Diode):** A heavily doped p–n junction diode (with doping concentration of the order of **$10^{19}$ to $10^{20}$ atoms/cm³** in both p and n regions) whose operating principle is based on **quantum mechanical tunneling** of charge carriers through the very thin depletion region (typically **5 nm to 10 nm**), exhibiting a region of **Negative Differential Resistance (NDR)** in its forward VI characteristics.
+> **KTU Syllabus Highlight (GAPHT121 — Module 4):**
+> Tunnel diode is a *degenerate* junction. The doping concentration in a tunnel diode is approximately **$10^{3}$ to $10^{4}$ times higher** than in an ordinary p–n diode (typically $N_D, N_A \sim 10^{25}\ \text{m}^{-3}$, i.e., **~1000 times greater** than ordinary $10^{22}\ \text{m}^{-3}$). Because of this, the depletion width shrinks to about **10 nm**, allowing electrons to *tunnel* directly through the potential barrier.
 
-It was invented by **Leo Esaki** in **1957** (Nobel Prize in Physics, **1973**), hence the alternate name **Esaki Diode**.
-
----
-
-## 1.2 Conceptual Analogy — Intuition
-
+### Conceptual Analogy / Intuition
 > [!NOTE]
-> **Water-Tunnel Analogy (Plain English Explanation):**
-> Imagine two water reservoirs (the conduction band electrons on the n-side and the empty valence band states on the p-side) separated by a thin mountain wall (the depletion region). Classically, water cannot cross the wall unless it is poured over the top. But if the wall is *extremely thin*, water "tunnels" straight through the rock — exactly as quantum particles tunnel through a potential barrier. As you progressively raise the water level on one side (apply forward bias), the flow first *increases* (peak), then *decreases* (valley), then *increases* normally — producing the famous N-shape of the tunnel diode VI curve.
+> **Real-world Analogy — "The Forbidden Tunnel":**
+> Imagine two water reservoirs (filled electron states) separated by a thin concrete wall (the depletion barrier). In an ordinary diode, the wall is so thick that water (electrons) can only "splash over the top" once the wall is lowered sufficiently (forward bias). In a tunnel diode, the wall is *paper-thin*. Water can *leak straight through the wall* even when the water level on the destination side is *higher* than the source side. This leakage is the **tunneling current**. As the level on one side is raised, the overlap of water levels first increases (current rises to a *peak*), then decreases (negative resistance), and finally stops when the levels no longer overlap.
 
-| Feature | Real Tunnel Diode | Water Analogy |
+### Why the Tunneling Effect Exists — A Quantum Picture
+Classically, a particle with energy $E < V_0$ cannot exist inside a potential barrier. Quantum mechanics, however, gives a non-zero probability for such a particle to **penetrate and emerge on the other side**, provided the barrier is sufficiently narrow. The transmission probability is:
+
+$$T \;\approx\; \exp\!\left[-2\int_{x_1}^{x_2}\kappa(x)\,dx\right]$$
+
+where the *imaginary wave number* inside the barrier is
+
+$$\kappa(x) \;=\; \frac{\sqrt{2m^{*}\,[V(x)-E]}}{\hbar}$$
+
+and $m^{*}$ is the **effective mass** of the tunneling electron.
+
+| Symbol | Quantity | Typical Value |
 |---|---|---|
-| p-side valence band | Empty water tank | Reservoir ready to receive water |
-| n-side conduction band | Full water tank | Reservoir with water |
-| Depletion region | Mountain wall | Barrier between tanks |
-| Forward bias | Tilting the tanks | Increases flow through the tunnel |
-| Negative resistance region | Less flow despite more tilt | Tunneling path misaligns |
-
----
-
-## 1.3 Key Physical Constants & Parameters
-
-> [!IMPORTANT]
-> **Standard Engineering Metrics for Tunnel Diodes:**
-> - Doping concentration $N \approx \mathbf{10^{19} \text{ to } 10^{20}\,cm^{-3}}$
-> - Depletion width $W \approx \mathbf{5 \times 10^{-7}\,cm}$ (≈ **5 nm**)
-> - Fermi level lies **inside** the conduction band (n-side) and **inside** the valence band (p-side) → **degenerate semiconductor**
-> - Peak voltage $V_p \approx \mathbf{50 \text{ to } 200\,mV}$
-> - Valley voltage $V_v \approx \mathbf{400 \text{ to } 600\,mV}$
-> - Peak-to-valley current ratio $\dfrac{I_p}{I_v} \approx \mathbf{5:1 \text{ to } 15:1}$
-> - Operating temperature: usually **77 K** (liquid nitrogen) to **room temperature** for best NDR behavior
-
----
+| $m^{*}$ | Effective mass | $0.067\,m_0$ (GaAs), $0.26\,m_0$ (Ge) |
+| $\hbar$ | Reduced Planck constant | $\mathbf{1.054 \times 10^{-34}\ \text{J\cdot s}}$ |
+| $W$ | Depletion width | $\sim 10\ \text{nm}$ (tunnel diode) |
+| $W$ | Depletion width | $\sim 10^{4}\ \text{nm}$ (ordinary diode) |
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Tunnel Diode Forward VI Characteristic Curve
-> **GeoGebra / Desmos Input Equations (piecewise form):**
-> * $I_1(x) = 2.5 \cdot \sin(\pi x / 0.1)$ for $0 \le x \le 0.1$ (rising to peak)
-> * $I_2(x) = -0.8 (x - 0.1) + 2.5$ for $0.1 \le x \le 0.5$ (NDR fall to valley)
-> * $I_3(x) = (x - 0.5) + 1.7$ for $x \ge 0.5$ (normal diode rise)
-> **Visual Description:** Student should observe an N-shaped curve with a clear **peak point P ($V_p$, $I_p$)**, a **valley point V ($V_v$, $I_v$)**, and a **forward point F ($V_f$, $I_f$)**, with the slope between P and V being **negative**.
-<!-- SECTION_1_END -->
+> **Concept:** Quantum-mechanical tunneling through a thin potential barrier — the *origin* of the tunnel-diode current.
+> **Desmos/GeoGebra Input Equations (representative):**
+> * `V(x) = 1` (eV) for $-1 \le x \le 1$ (barrier height)
+> * `V(x) = 0` elsewhere
+> * `ψ(x) = exp(-k·x)·cos(k·x)` for $x$ inside the barrier
+> **Visual Description:** Plot the rectangular barrier of width $2a = 10\ \text{nm}$ and height $V_0 = 1\ \text{eV}$. Overlay the exponentially decaying wavefunction $\psi(x)$ inside the barrier and the small but non-zero transmitted wave on the right. Observe that the transmission $T \to 0$ only when the barrier becomes much wider than $\sim 10\ \text{nm}$.
 
-<!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU Formula Sheet
+---
 
-## 2.1 Why Tunneling Occurs — Quantum Mechanical Justification
+## 2. Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-In a normal p–n junction, the depletion width is wide and the Fermi level lies inside the band gap — classical rules apply. In a tunnel diode:
+### 2.1 Energy-Band Picture at Equilibrium, Forward Bias, and Reverse Bias
 
-1. The **p-side is doped so heavily** that the Fermi level $E_{F_p}$ moves **below the valence band edge $E_V$** by an amount $\Delta E_p$ (degeneracy).
-2. The **n-side is doped so heavily** that the Fermi level $E_{F_n}$ moves **above the conduction band edge $E_C$** by an amount $\Delta E_n$.
-3. The depletion width $W$ becomes so narrow (≈ **10 nm**) that the **de Broglie wavelength** of electrons (≈ **10 nm** at thermal energies) is comparable to the barrier width.
-4. Hence electrons on the n-side can "tunnel" through the forbidden gap with a finite probability given by the **WKB approximation**.
+The defining feature of a tunnel diode is that, due to extremely heavy doping, the **Fermi level $E_F$ lies below the conduction-band edge $E_C$ on the n-side and above the valence-band edge $E_V$ on the p-side**. The bands therefore *overlap in energy* at equilibrium.
 
-### Tunneling Probability (WKB Approximation)
+**Three operating regions under forward bias:**
 
-$$T_T \;\approx\; \exp\!\left[-2 \int_{0}^{W} \kappa(x)\, dx\right]$$
+| Region | Bias Condition | Physical Mechanism | Slope of $I$–$V$ |
+|---|---|---|---|
+| **Region A (0 → $V_p$)** | $0 < V < V_p$ | Filled states on n-side align with empty states on p-side → tunneling current *rises* | $+\,\text{ve}$ |
+| **Region B ($V_p \rightarrow V_v$)** | $V_p < V < V_v$ | Bands slide apart; overlap of filled/empty states *shrinks* | **NDR (–ve)** |
+| **Region C ($V > V_v$)** | $V > V_v$ | Bands no longer overlap; normal diffusion current takes over | $+\,\text{ve}$ (diffusion) |
 
-where $\kappa(x) = \dfrac{\sqrt{2 m^* (E - V(x))}}{\hbar}$ is the imaginary wave-vector inside the barrier, $m^*$ is the effective mass, and $V(x)$ is the potential profile.
+### 2.2 Why Negative Differential Resistance (NDR) Arises
+When the forward bias is increased from 0 to $V_p$, the conduction band of the n-side is pushed *down* in energy. Initially, this increases the number of filled electron states on the n-side that lie opposite empty states on the p-side — so current **increases** to a *peak* $I_p$.
 
-For a **rectangular barrier** of height $\phi$ and width $W$:
+Beyond $V_p$, the bands continue to slide, but the *energy overlap* between filled n-states and empty p-states begins to **decrease**, because the n-side conduction band now lies opposite the *forbidden gap* on the p-side. Tunneling therefore **decreases** to a *valley* current $I_v$ at $V_v$. The differential resistance
 
-$$T_T \;\approx\; \exp\!\left[-\dfrac{2 W}{\hbar}\sqrt{2 m^* \phi}\right]$$
+$$R_d \;=\; \frac{dV}{dI} \;<\; 0 \quad \text{for}\quad V_p < V < V_v$$
+
+is **negative**, giving the diode its name *negative differential resistance device*.
+
+### 2.3 KTU Formula Sheet / Cheat Sheet
+
+| # | Formula / Quantity | Expression | Typical Value / Unit |
+|---|---|---|---|
+| 1 | Depletion width (tunnel diode) | $W = \sqrt{\dfrac{2\varepsilon_s(V_{bi}-V)}{q}\!\left(\dfrac{1}{N_A}+\dfrac{1}{N_D}\right)}$ | $\sim 5$–$10\ \text{nm}$ |
+| 2 | Built-in potential | $V_{bi} = \dfrac{k_B T}{q}\ln\!\left(\dfrac{N_A N_D}{n_i^{2}}\right)$ | $\sim 0.8$–$1.0\ \text{V}$ (Ge/Si/GaAs) |
+| 3 | Tunneling transmission | $T \approx e^{-2\int\kappa(x)\,dx}$ | dimensionless, $0 \le T \le 1$ |
+| 4 | Imaginary wave number | $\kappa(x)=\dfrac{\sqrt{2m^{*}[V(x)-E]}}{\hbar}$ | $\text{m}^{-1}$ |
+| 5 | Peak current | $I_p$ (empirical device parameter) | $\sim 1$–$10\ \text{mA}$ |
+| 6 | Valley current | $I_v$ | $\sim 0.1$–$1\ \text{mA}$ |
+| 7 | Peak voltage | $V_p$ | $\sim 0.05$–$0.10\ \text{V}$ |
+| 8 | Valley Voltage | $V_v$ | $\sim 0.4$–$0.6\ \text{V}$ |
+| 9 | Forward (peak) Voltage | $V_f$ | $\sim 1.0\ \text{V}$ |
+| 10 | Peak-to-Valley Current Ratio (PVCR) | $\text{PVCR}=\dfrac{I_p}{I_v}$ | $\mathbf{8}$–$\mathbf{15}$ (good device) |
+| 11 | Negative resistance (NDR) | $R_n = \dfrac{V_v - V_p}{I_p - I_v}$ | $\mathbf{-}$ few $\Omega$ to tens of $\Omega$ |
+| 12 | Cut-off frequency | $f_c = \dfrac{1}{2\pi R_n C_j}\sqrt{\dfrac{R_n}{R_s}-1}$ | $\sim 10\ \text{GHz}$ (microwave) |
 
 > [!NOTE]
-> **Why heavy doping?** Higher $N$ → smaller $W$ and lower $\phi$ → **exponentially larger $T_T$**. This is the entire engineering trick that makes the device work.
+> **CRITICAL KTU TIP:** The **Peak-to-Valley Current Ratio (PVCR)** is the *figure of merit* of a tunnel diode. Examiners love asking: *"What determines the quality of a tunnel diode?"* → **Higher PVCR = better switching and oscillator performance.**
 
----
+### 2.4 Real-World Engineering Utility
+- **Microwave oscillators** (Gunn-less alternatives, e.g., local oscillators at 10 GHz).
+- **High-speed switching** in digital logic (transition times < 1 ns).
+- **Parabolic amplifiers / reflection amplifiers** in radar receivers — the NDR cancels the resistive losses in the circuit.
+- **Frequency converters / mixers** in satellite communication front-ends.
+- **Memories & trigger circuits** — bi-stable operation using NDR + load line.
 
-## 2.2 Energy Band Picture at Different Bias Points
-
-| Bias Condition | Band Alignment | Tunneling Current |
-|---|---|---|
-| Equilibrium ($V = 0$) | $E_{F_p} = E_{F_n}$, filled CB states on n-side overlap with filled VB states on p-side | **Zero net current** (equal tunneling in both directions) |
-| Small forward bias ($V \approx V_p$) | Filled states on n-side align with **empty** states on p-side at same energy | **Maximum** tunneling → **Peak current $I_p$** |
-| Increased forward bias ($V_p < V < V_v$) | Conduction band of n-side slides past valence band of p-side; fewer filled-empty alignments | Current **decreases** → **NDR region** |
-| Valley bias ($V \approx V_v$) | Bands barely overlap; tunneling nearly stops | **Valley current $I_v$** (mostly due to thermal current) |
-| Beyond valley ($V > V_v$) | Bands no longer overlap; normal diffusion current dominates | Current **rises** like an ordinary diode |
-
----
-
-## 2.3 Negative Differential Resistance (NDR) — The Heart of the Device
-
-> [!IMPORTANT]
-> **NDR Definition:** In the voltage range $V_p < V < V_v$, the differential conductance $\dfrac{dI}{dV}$ becomes **negative**, i.e., current *decreases* with increasing voltage.
-
-$$r_d \;=\; \dfrac{dV}{dI} \;<\; 0 \quad \text{for}\;\; V_p < V < V_v$$
-
-The **average negative resistance** between peak and valley points is:
-
-$$\overline{r_d} \;=\; -\dfrac{V_v - V_p}{I_v - I_p} \quad (\text{negative quantity})$$
-
-This NDR property makes the tunnel diode a **two-terminal active element**, useful in:
-- **Microwave oscillators** (up to **100 GHz**)
-- **High-speed switching circuits**
-- **Amplifiers** at UHF / VHF bands
-- **Relaxation oscillators** in pulse generation
-- **Digital memory cells** (bistable multivibrators)
-
----
-
-## 2.4 KTU High-Yield Formula Sheet
-
-| # | Formula | Meaning / Use |
-|---|---|---|
-| 1 | $T_T \approx \exp\!\left[-\dfrac{2 W}{\hbar}\sqrt{2 m^* \phi}\right]$ | WKB tunneling probability through a rectangular barrier |
-| 2 | $W \approx \sqrt{\dfrac{2 \varepsilon V_b}{e}\!\left(\dfrac{1}{N_a} + \dfrac{1}{N_d}\right)}$ | Depletion width of a p–n junction |
-| 3 | $r_d = \dfrac{dV}{dI} < 0$ | Definition of Negative Differential Resistance |
-| 4 | $\overline{r_d} = -\dfrac{V_v - V_p}{I_v - I_p}$ | Average negative resistance between P and V |
-| 5 | $\dfrac{I_p}{I_v}$ | Peak-to-valley current ratio (figure of merit) |
-| 6 | $I = I_s\!\left[\exp\!\left(\dfrac{eV}{\eta k_B T}\right) - 1\right]$ | Standard diode current in normal operation region |
-| 7 | $\dfrac{I}{I_p} = \dfrac{V}{V_p}\,\exp\!\left(1 - \dfrac{V}{V_p}\right)$ | Empirical Esaki equation for the rising part (near $V_p$) |
-| 8 | $E_g^{eff} = E_g - (\Delta E_n + \Delta E_p)$ | Effective band-gap reduction due to heavy doping |
-| 9 | $V_p \approx \dfrac{E_g^{eff}}{2e}$ | Approximate peak voltage in volts |
-
-> [!NOTE]
-> **Symbols used:** $W$ = depletion width, $\phi$ = barrier height, $m^*$ = effective mass, $\hbar$ = reduced Planck constant ($1.055 \times 10^{-34}$ J·s), $k_B$ = Boltzmann constant ($1.38 \times 10^{-23}$ J/K), $e$ = electron charge ($1.6 \times 10^{-19}$ C), $\eta$ = ideality factor, $T$ = absolute temperature, $N_a$, $N_d$ = acceptor and donor concentrations.
-
----
-
-## 2.5 Real-World Engineering Utility
-
-| Field | Application of Tunnel Diode |
-|---|---|
-| **Telecommunication** | Microwave oscillators, frequency converters in satellite receivers |
-| **Radar Systems** | Low-noise UHF/VHF amplifiers |
-| **Digital Logic** | Ultra-fast switching elements (transition time ≈ **ps** range) |
-| **Instrumentation** | Trigger circuits, pulse generators, saw-tooth generators |
-| **Quantum Electronics** | Reference device for studying tunneling phenomena |
-| **Space Electronics** | Radiation-hard high-frequency mixers |
-
-> The NDR property is also leveraged in modern **resonant-tunneling diodes (RTDs)** used in **terahertz imaging** and **quantum cascade lasers**.
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Symbolic Implementation
+# 3. Step-by-Step Derivations, Energy-Band Construction & Worked Examples
 
-## 3.1 Derivation: Tunneling Current Density Using the WKB Approximation
+## 3.1 Derivation of Tunneling Transmission Through a Rectangular Barrier
 
-We model the depletion region as a potential barrier of height $\phi$ and width $W$. The Schrödinger equation inside the classically forbidden region gives an evanescent wave whose decay constant is:
+Consider a 1-D rectangular potential barrier of height $V_0$ and width $a$:
 
-$$\kappa \;=\; \frac{\sqrt{2 m^*(V_0 - E)}}{\hbar}$$
+$$V(x) = \begin{cases} 0, & x < 0 \quad (\text{Region I})\\ V_0, & 0 \le x \le a \quad (\text{Region II})\\ 0, & x > a \quad (\text{Region III})\end{cases}$$
 
-The tunneling probability across the entire barrier is given by the WKB integral:
+An electron of energy $E < V_0$ approaches from the left.
 
-$$T_T \;=\; \exp\!\left[-2 \int_{0}^{W} \kappa(x)\, dx\right]$$
+**Step 1 — Write the time-independent Schrödinger equation in each region.**
 
-**Step 1.** Substitute $\kappa(x)$ into the integral:
+In Region II (inside the barrier):
 
-$$T_T \;=\; \exp\!\left[-\frac{2}{\hbar}\int_{0}^{W}\sqrt{2 m^*\,(V(x) - E)}\,dx\right]$$
+$$-\frac{\hbar^2}{2m^{*}}\frac{d^{2}\psi}{dx^{2}} + V_0 \psi = E \psi$$
 
-**Step 2.** For a rectangular barrier (constant $V(x) = V_0$):
+Rearranging:
 
-$$T_T \;=\; \exp\!\left[-\frac{2}{\hbar}\sqrt{2 m^*(V_0 - E)}\int_{0}^{W} dx\right]$$
+$$\frac{d^{2}\psi}{dx^{2}} = \frac{2m^{*}(V_0-E)}{\hbar^{2}}\,\psi \;=\; \kappa^{2}\psi$$
 
-**Step 3.** Evaluate the definite integral:
+where the **decay constant** is
 
-$$T_T \;=\; \exp\!\left[-\frac{2 W}{\hbar}\sqrt{2 m^*(V_0 - E)}\right]$$
+$$\kappa \;=\; \frac{\sqrt{2m^{*}(V_0-E)}}{\hbar}$$
 
-**Step 4.** The tunneling current density is the product of available filled states, available empty states, and $T_T$. Near the peak:
+**Step 2 — General solution in the barrier.**
 
-$$J_{tunnel} \;\approx\; A \int_{E_v^{p}}^{E_c^{n}} N_n(E)\,f_n(E)\,N_p(E)\,[1 - f_p(E)]\,T_T(E)\, dE$$
+The general solution of $d^{2}\psi/dx^{2}=\kappa^{2}\psi$ is a linear combination of growing and decaying exponentials:
 
-where $A$ is a constant, $N_n$ and $N_p$ are the density of states, and $f_n$, $f_p$ are Fermi-Dirac distributions.
+$$\psi_{II}(x) \;=\; A\,e^{+\kappa x} + B\,e^{-\kappa x}$$
 
-> The integral is **maximum** when the filled states on the n-side directly align with the empty states on the p-side. This occurs precisely at $V = V_p$.
+Because the barrier is finite and narrow, we keep both terms (no infinite-wall boundary).
 
----
+**Step 3 — Apply continuity of $\psi$ and $d\psi/dx$ at $x=0$ and $x=a$.**
 
-## 3.2 Derivation: Peak Voltage from Band Alignment
+At $x=0$:
 
-**Step 1.** In equilibrium, the Fermi levels align: $E_{F_n} = E_{F_p}$.
+$$1 + r = A + B \quad \text{and} \quad ik_1(1-r) = \kappa(A-B)$$
 
-**Step 2.** Under small forward bias $V$, the n-side bands drop by $eV$ relative to p-side.
+At $x=a$:
 
-**Step 3.** Maximum tunneling current occurs when the **bottom of the n-side conduction band** $E_c^n$ aligns with the **top of the p-side valence band** $E_v^p$ at the same energy.
+$$A\,e^{\kappa a} + B\,e^{-\kappa a} = t\,e^{ik_1 a}$$
+$$\kappa\!\left(A\,e^{\kappa a} - B\,e^{-\kappa a}\right) = ik_1 t\,e^{ik_1 a}$$
 
-**Step 4.** At peak bias:
+**Step 4 — Solve for the transmission amplitude $t$.**
 
-$$E_c^n(V_p) \;=\; E_v^p(V_p) \;\;\Longrightarrow\;\; eV_p \;\approx\; E_g - \Delta E_n - \Delta E_p$$
+Eliminating $A$, $B$, $r$ algebraically (standard QM procedure) yields the well-known result:
 
-**Step 5.** Therefore:
+$$T \;=\; |t|^{2} \;=\; \frac{1}{1 + \dfrac{V_0^{2}\sinh^{2}(\kappa a)}{4E(V_0-E)}}$$
 
-$$\boxed{\;V_p \;\approx\; \frac{E_g^{eff}}{e} \;=\; \frac{E_g - (\Delta E_n + \Delta E_p)}{e}\;}$$
+**Step 5 — Simplify in the *opaque-barrier* (WKB) limit $\kappa a \gg 1$.**
 
-For Germanium ($E_g = 0.67$ eV) with $\Delta E_n = \Delta E_p \approx 0.05$ eV:
+When $\kappa a \gg 1$, $\sinh^{2}(\kappa a) \to \tfrac{1}{4}e^{2\kappa a}$. Substituting:
 
-$$V_p \;\approx\; \frac{0.67 - 0.10}{1} \;\approx\; 0.57 \times \text{(correction)} \;\approx\; 0.05 \text{ to } 0.10\;\text{V}$$
+$$T \;\approx\; \frac{16E(V_0-E)}{V_0^{2}}\,e^{-2\kappa a} \;\propto\; \exp\!\left(-2\int_{0}^{a}\kappa(x)\,dx\right)$$
 
-This is consistent with measured $V_p \approx 50$ mV.
-
----
-
-## 3.3 Derivation: Average Negative Differential Resistance
-
-**Step 1.** Define negative resistance between peak P$(V_p, I_p)$ and valley V$(V_v, I_v)$ as the slope of the chord PV:
-
-$$\overline{r_d} \;=\; \frac{\Delta V}{\Delta I} \;=\; \frac{V_v - V_p}{I_v - I_p}$$
-
-**Step 2.** Since $V_v > V_p$ and $I_v < I_p$, the denominator is **negative**, making $\overline{r_d}$ **negative**.
-
-**Step 3.** Therefore the magnitude is:
-
-$$\vert \overline{r_d} \vert \;=\; \frac{V_v - V_p}{I_p - I_v}$$
-
-> For a typical Ge tunnel diode: $V_p = 50$ mV, $I_p = 10$ mA, $V_v = 350$ mV, $I_v = 1$ mA.
-> $\vert \overline{r_d} \vert = \dfrac{(350 - 50)\,\text{mV}}{(10 - 1)\,\text{mA}} = \dfrac{300}{9} \approx 33.3\;\Omega$ — **negative** sign understood.
-
----
-
-## 3.4 Python Code: Plotting the Tunnel Diode VI Characteristic
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-# ---------- Model parameters ----------
-V_p = 0.050     # Peak voltage in volts (50 mV)
-I_p = 0.010     # Peak current in amps (10 mA)
-V_v = 0.350     # Valley voltage in volts (350 mV)
-I_v = 0.001     # Valley current in amps (1 mA)
-V_f = 0.500     # Forward voltage in volts (500 mA range)
-I_f = 0.010     # Forward current at V_f
-I_s = 1e-9      # Reverse saturation current
-eta = 1.0       # Ideality factor
-T   = 300       # Temperature in K
-k   = 1.38e-23  # Boltzmann constant
-q   = 1.6e-19   # Electron charge
-V_T = (k * T) / q   # Thermal voltage ~ 25.85 mV
-
-def I_tunnel(V):
-    """Piecewise tunnel-diode forward VI model."""
-    V = np.asarray(V, dtype=float)
-    I = np.zeros_like(V)
-
-    # Region OA : 0 -> V_p   (rising tunnel current, Esaki empirical)
-    mask_a = (V >= 0) & (V <= V_p)
-    I[mask_a] = I_p * (V[mask_a] / V_p) * np.exp(1.0 - V[mask_a] / V_p)
-
-    # Region AB : V_p -> V_v (negative differential resistance)
-    mask_b = (V > V_p) & (V <= V_v)
-    I[mask_b] = I_p + (I_v - I_p) * (V[mask_b] - V_p) / (V_v - V_p)
-
-    # Region BC : V_v -> V_f and beyond (normal diode + excess)
-    mask_c = V > V_v
-    excess = I_s * (np.exp(V[mask_c] / (eta * V_T)) - 1.0)
-    I[mask_c] = I_v + (I_f - I_v) * (V[mask_c] - V_v) / (V_f - V_v) + excess
-    return I
-
-# ---------- Build voltage axis ----------
-V = np.linspace(-0.20, 0.80, 1000)
-I = I_tunnel(V)
-
-# ---------- Plot ----------
-plt.figure(figsize=(9, 6))
-plt.plot(V * 1e3, I * 1e3, color="navy", linewidth=2.2, label="Tunnel diode I-V")
-plt.axhline(0, color="black", linewidth=0.7)
-plt.axvline(0, color="black", linewidth=0.7)
-
-# Mark key points
-key_pts = {"O": (0, 0), "P": (V_p, I_p), "V": (V_v, I_v), "F": (V_f, I_f)}
-for name, (vx, vy) in key_pts.items():
-    plt.plot(vx * 1e3, vy * 1e3, "ro")
-    plt.annotate(f"{name}\n({vx*1e3:.0f} mV, {vy*1e3:.1f} mA)",
-                 (vx * 1e3, vy * 1e3),
-                 textcoords="offset points", xytext=(8, 8), fontsize=9)
-
-plt.title("Static VI Characteristic of a Tunnel (Esaki) Diode")
-plt.xlabel("Forward Voltage  V  (mV)")
-plt.ylabel("Forward Current  I  (mA)")
-plt.grid(True, linestyle="--", alpha=0.6)
-plt.legend(loc="upper left")
-plt.tight_layout()
-plt.show()
-```
+This is the **Wentzel–Kramers–Brillouin (WKB) approximation**, the formula we already listed in Section 1. It is the central result that justifies tunneling through the thin tunnel-diode depletion layer.
 
 > [!IMPORTANT]
-> **Reading the plot:** The student must identify the **three operating regions**:
-> 1. **OP** — Tunnel current rises to peak $I_p$ at $V_p$.
-> 2. **PV** — NDR region (slope is **negative**).
-> 3. **VF and beyond** — Ordinary diode current, dominated by thermal diffusion.
+> **Engineering Insight:** Because $T \propto e^{-2\kappa a}$, a *doubling* of the barrier width reduces the tunneling current by a factor of $e^{2\kappa a}$, an astronomically large suppression. This is why the depletion layer must be only $\sim 10\ \text{nm}$ — any wider and the current becomes negligible. Heavy doping is the *only* way to achieve this.
 
----
+## 3.2 Quantitative VI-Characteristic Construction
 
-## 3.5 Numerical Worked Example
+Let us reconstruct the qualitative current–voltage curve of a tunnel diode from the energy-band picture.
 
-> **Problem:** A Ge tunnel diode has $V_p = 60$ mV, $I_p = 8$ mA, $V_v = 400$ mV, $I_v = 1.5$ mA. Compute the average negative resistance and peak-to-valley current ratio.
+**Step 1 — Equilibrium (V = 0).**
+The Fermi level is constant across the junction. Due to degenerate doping, the conduction band of the n-side lies *below* the Fermi level, and the valence band of the p-side lies *above* the Fermi level. The bands *overlap in energy*. However, at equilibrium, the **net** tunneling current is zero because the filled-state/empty-state overlap in *each direction* is identical (detailed balance).
+
+**Step 2 — Small forward bias (0 < V < V_p).**
+A small forward bias raises the n-side bands by $qV$ relative to the p-side. The filled n-states opposite the *empty* p-states (in the valence band) start to increase in number. **Tunneling current $I$ increases rapidly**, reaching a maximum $I_p$ at $V=V_p$.
+
+**Step 3 — Intermediate forward bias ($V_p < V < V_v$).**
+The bands continue to slide. The n-side conduction band now lines up with the **forbidden gap** of the p-side. The filled/empty state overlap *decreases* → current **decreases**. This is the **NDR region**.
+
+**Step 4 — High forward bias (V > V_v).**
+No more band-to-band overlap remains. Tunneling ceases. The current is now dominated by the **ordinary diffusion current** of a forward-biased p–n junction and rises exponentially with V:
+
+$$I \;=\; I_0\!\left(e^{qV/k_BT}-1\right)$$
+
+**Step 5 — Reverse bias (V < 0).**
+Reverse bias increases the band overlap in the *opposite* direction, leading to a large reverse tunneling current that grows monotonically with $|V|$. Hence the tunnel diode's reverse characteristic is *not* a saturation current like an ordinary diode — it conducts heavily in reverse.
+
+## 3.3 Worked Numerical Example (KTU-Style)
+
+**Problem:** A tunnel diode has $I_p = 10\ \text{mA}$ at $V_p = 0.07\ \text{V}$ and $I_v = 1\ \text{mA}$ at $V_v = 0.5\ \text{V}$. Compute (a) PVCR, (b) average negative resistance, (c) the value of the load resistor $R_L$ for a *bi-stable* trigger circuit if the diode is in series with a 5 V supply.
 
 **Solution:**
 
-$$\overline{r_d} \;=\; \frac{V_v - V_p}{I_v - I_p} \;=\; \frac{400 - 60}{1.5 - 8} \;=\; \frac{340}{-6.5} \;\approx\; -52.3\;\Omega$$
+**(a) Peak-to-Valley Current Ratio**
 
-$$\frac{I_p}{I_v} \;=\; \frac{8}{1.5} \;\approx\; 5.33$$
+$$\text{PVCR} \;=\; \frac{I_p}{I_v} \;=\; \frac{10\ \text{mA}}{1\ \text{mA}} \;=\; \mathbf{10}$$
 
-**Valuation Step-by-Step (KTU Marking Scheme):**
-- '[Stating the negative resistance formula: 2 Marks]'
-- '[Substituting numerical values correctly: 2 Marks]'
-- '[Obtaining $-52.3\;\Omega$ with proper sign: 2 Marks]'
-- '[Calculating $I_p / I_v$ ratio: 2 Marks]'
+**(b) Average Negative Resistance**
+
+$$R_n \;=\; \frac{V_v - V_p}{I_p - I_v} \;=\; \frac{0.5 - 0.07}{(10-1)\times 10^{-3}} \;=\; \frac{0.43}{9\times 10^{-3}} \;\approx\; \mathbf{47.8\ \Omega}$$
+
+**(c) Load-line for bi-stable operation**
+The series load resistor must intersect the diode curve at the *valley* point to give a stable low-current state, *and* the load line must pass *above* the peak point. With $V_{CC}=5\ \text{V}$ and valley point $(0.5\ \text{V}, 1\ \text{mA})$:
+
+$$R_L \;=\; \frac{V_{CC} - V_v}{I_v} \;=\; \frac{5 - 0.5}{1\ \text{mA}} \;=\; \mathbf{4.5\ k\Omega}$$
+
+> [!NOTE]
+> **Valuation Key (for 14-mark question):**
+> * [Writing $T \propto e^{-2\kappa a}$ statement: 2 Marks]
+> * [PVCR definition + numerical evaluation: 3 Marks]
+> * [Negative-resistance expression + evaluation: 3 Marks]
+> * [Bi-stable load-line analysis: 3 Marks]
+> * [Final numerical answers boxed: 3 Marks]
+
+## 3.4 Python Implementation — Plotting a Tunnel-Diode VI Curve
+
+```python
+"""
+tunnel_diode_vi.py
+Plots the static I-V characteristic of a tunnel diode with NDR.
+Run:  python tunnel_diode_vi.py
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+from typing import Tuple
+
+# ---------- Physical & device constants ----------
+q  : float = 1.602e-19   # elementary charge [C]
+kB : float = 1.381e-23   # Boltzmann constant [J/K]
+T  : float = 300.0       # temperature [K]
+Vt : float = kB * T / q  # thermal voltage ≈ 25.85 mV
+
+# ---------- Tunnel-diode empirical parameters ----------
+Ip : float = 10.0e-3     # peak current       [A]
+Iv : float =  1.0e-3     # valley current     [A]
+Vp : float =  0.07       # peak voltage       [V]
+Vv : float =  0.50       # valley voltage     [V]
+Vf : float =  1.00       # forward onset      [V]
+I0 : float =  1.0e-9     # reverse saturation [A] (negligible compared to Ip)
+
+
+def tunnel_diode_current(V: np.ndarray) -> np.ndarray:
+    """
+    Piecewise model of a tunnel diode I-V curve.
+    Region A  (V < Vp)        : cubic rise to peak
+    Region B  (Vp <= V < Vv)  : NDR descent to valley
+    Region C  (V >= Vv)       : exponential diffusion current
+    Reverse   (V < 0)          : large monotonic tunneling current
+    """
+    V = np.asarray(V, dtype=float)
+    I = np.zeros_like(V)
+
+    # --- Forward tunneling (Region A) ---
+    mask_A = (V >= 0) & (V < Vp)
+    I[mask_A] = Ip * (V[mask_A] / Vp) ** 3
+
+    # --- NDR region (Region B) ---
+    mask_B = (V >= Vp) & (V < Vv)
+    t = (V[mask_B] - Vp) / (Vv - Vp)
+    I[mask_B] = Ip + (Iv - Ip) * t  # linear interpolation (good enough)
+
+    # --- Diffusion region (Region C) ---
+    mask_C = V >= Vv
+    I[mask_C] = Iv * np.exp((V[mask_C] - Vv) / (2 * Vt)) + 0.5e-3
+
+    # --- Reverse bias: large tunneling current ---
+    mask_R = V < 0
+    I[mask_R] = -Ip * (1.0 + np.abs(V[mask_R]) / 0.05)
+
+    return I
+
+
+def find_peak_valley() -> Tuple[float, float, float, float]:
+    """Return (Vp, Ip, Vv, Iv) for plotting annotation."""
+    return Vp, Ip, Vv, Iv
+
+
+# ---------- Main plot ----------
+def main() -> None:
+    V = np.linspace(-0.6, 1.2, 1000)
+    I = tunnel_diode_current(V) * 1.0e3   # convert to mA
+
+    plt.figure(figsize=(8, 5))
+    plt.plot(V, I, color="darkblue", linewidth=2.0, label="Tunnel-diode I–V")
+
+    # Annotate peak, valley, forward
+    Vp_, Ip_, Vv_, Iv_ = find_peak_valley()
+    plt.scatter([Vp_, Vv_], [Ip_*1e3, Iv_*1e3],
+                color="red", zorder=5, s=60, label="Peak / Valley")
+
+    # Shade NDR region
+    plt.axvspan(Vp_, Vv_, color="orange", alpha=0.18, label="NDR region")
+    plt.axhline(0, color="black", linewidth=0.5)
+    plt.axvline(0, color="black", linewidth=0.5)
+
+    plt.title("Tunnel Diode (Esaki) — Static I–V Characteristic")
+    plt.xlabel("Voltage  V  [V]")
+    plt.ylabel("Current  I  [mA]")
+    plt.grid(True, linestyle="--", alpha=0.5)
+    plt.legend(loc="upper left")
+    plt.tight_layout()
+    plt.savefig("tunnel_diode_iv.png", dpi=150)
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()
+```
+
+**Expected graph features to mark on a KTU answer sheet:**
+
+1. A small positive current at zero bias is **NOT** drawn (the static I–V passes through origin).
+2. A steep rise to $(V_p, I_p)$ — the *peak point*.
+3. A falling segment from peak to $(V_v, I_v)$ — the **NDR region** (shaded in the figure).
+4. A rising exponential tail from $V_v$ onwards (diffusion current).
+5. A monotonically increasing reverse-bias branch (heavy reverse tunneling).
+
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# Structural Diagrams & Schematics
+# 4. Structural Diagrams & Schematics
 
-## 4.1 Mermaid Block Diagram — Tunnel Diode Internal Construction
+## 4.1 Tunnel-Diode Energy-Band Diagrams — Three Bias Conditions
 
 ```mermaid
 flowchart LR
-    A1["P+ Region\nNa ~ 1e19 /cm3"]:::pRegion
-    A2["Depletion Region\nWidth W ~ 5 to 10 nm"]:::depletion
-    A3["N+ Region\nNd ~ 1e19 /cm3"]:::nRegion
-    A4["Ohmic Contact P"]:::contact
-    A5["Ohmic Contact N"]:::contact
+    subgraph EQ["Equilibrium V = 0"]
+        EQn["n-side: E_C below E_F<br/>E_F inside conduction band<br/>E_V well below"]
+        EQp["p-side: E_V above E_F<br/>E_F inside valence band<br/>E_C well above"]
+        EQn -->|"depletion ~10 nm"| EQp
+    end
 
-    A1 --- A2
-    A2 --- A3
-    A4 --- A1
-    A3 --- A5
+    subgraph FB["Forward Bias V = V_p"]
+        FBn["n-side bands lowered by qV_p<br/>filled n-states opposite empty p-states<br/>MAXIMUM overlap"]
+        FBp["p-side bands unchanged reference"]
+        FBn ==>|"peak tunneling current I_p"| FBp
+    end
 
-    classDef pRegion fill:#ffd9d9,stroke:#aa0000,stroke-width:1.5px,color:#000000
-    classDef nRegion fill:#d9e6ff,stroke:#0033aa,stroke-width:1.5px,color:#000000
-    classDef depletion fill:#fff7c2,stroke:#aa8800,stroke-width:1.5px,color:#000000
-    classDef contact fill:#dddddd,stroke:#444444,stroke-width:1px,color:#000000
+    subgraph NDR["Forward Bias V_p less than V less than V_v"]
+        NDRn["n-side lowered further<br/>E_C_n lines up with E_gap of p-side<br/>overlap SHRINKING"]
+        NDRp["p-side forbidden gap region"]
+        NDRn -.->|"tunneling DECREASES"| NDRp
+    end
+
+    subgraph REV["Reverse Bias V less than 0"]
+        REVn["n-side bands raised by q|V|"]
+        REVp["p-side bands raised reference"]
+        REVn ==>|"large reverse tunneling current"| REVp
+    end
+
+    EQ ==> FB ==> NDR
+    EQ -.-> REV
 ```
 
-## 4.2 Mermaid Sequence — Tunneling Mechanism at Different Biases
+> [!IMPORTANT]
+> **Mermaid Safety Note:** All node labels are *purely alphanumeric / descriptive English* — no Greek letters, no markdown bold, no pipes inside square brackets.
 
-```mermaid
-sequenceDiagram
-    participant nSide as N-side Conduction Band
-    participant barrier as Depletion Region
-    participant pSide as P-side Valence Band
-    participant result as Net Tunneling Current
-
-    Note over nSide,barrier: Forward Bias Increasing
-    nSide->>barrier: Electron attempts to cross barrier
-    barrier->>pSide: Some electrons tunnel (probability TT)
-
-    rect rgb(220, 240, 255)
-    Note over nSide,pSide: Equilibrium (V = 0)
-    nSide->>pSide: Equal tunneling in both directions
-    result-->>result: I = 0
-    end
-
-    rect rgb(220, 255, 220)
-    Note over nSide,pSide: Small forward bias (V ~ Vp)
-    nSide->>pSide: Max filled-empty state overlap
-    result-->>result: I = Ip (PEAK)
-    end
-
-    rect rgb(255, 230, 220)
-    Note over nSide,pSide: Increasing bias (Vp < V < Vv)
-    nSide->>pSide: Bands sliding past each other
-    result-->>result: I DECREASES (NDR REGION)
-    end
-
-    rect rgb(255, 220, 220)
-    Note over nSide,pSide: Valley bias (V ~ Vv)
-    nSide->>pSide: Bands barely overlap
-    result-->>result: I = Iv (VALLEY)
-    end
-```
-
-## 4.3 Mermaid Flow — Operating Regions on VI Curve
-
-```mermaid
-flowchart TD
-    start(["Apply forward voltage V"]) --> region1
-    region1["Region OA\n0 to Vp\nTunneling current RISES\ndI/dV positive"]:::rise
-    region1 --> region2
-    region2["Region PV\nVp to Vv\nNEGATIVE DIFFERENTIAL RESISTANCE\ndI/dV negative"]:::ndr
-    region2 --> region3
-    region3["Region VF and beyond\nV greater than Vv\nNormal diode diffusion current\ndI/dV positive large"]:::normal
-    region3 --> stop(["Diode in normal forward operation"])
-
-    classDef rise fill:#cce5ff,stroke:#003399,color:#000000
-    classDef ndr fill:#ffcccc,stroke:#990000,color:#000000
-    classDef normal fill:#ccffcc,stroke:#006600,color:#000000
-```
-
-## 4.4 Mermaid Energy Band Diagram (Schematic)
+## 4.2 I–V Functional Architecture Flow
 
 ```mermaid
 flowchart TB
-    subgraph EQUIL["Equilibrium  V = 0"]
-        Ec1["Ec (n-side)"]:::cband
-        Efn["EFn = EFp (Fermi level)"]:::fermi
-        Ev1["Ev (p-side)"]:::vband
+    subgraph INPUTS["Input Stage"]
+        VBIAS["Applied Bias V"]
     end
 
-    subgraph PEAK["Peak Bias  V = Vp"]
-        Ec2["Ec (n-side) shifted down"]:::cband
-        Ev2["Ev (p-side) at same level as Ec_n"]:::vband
+    subgraph CONTROL["Region Classifier"]
+        R1{"V less than 0"}
+        R2{"0 le V less than V_p"}
+        R3{"V_p le V less than V_v"}
+        R4{"V ge V_v"}
     end
 
-    subgraph VALLEY["Valley Bias  V = Vv"]
-        Ec3["Ec (n-side) much lower"]:::cband
-        Ev3["Ev (p-side) above Ec_n\nNo overlap"]:::vband
+    subgraph BRANCHES["Physical Branches"]
+        B1["Reverse Tunneling<br/>I increases with absolute V"]
+        B2["Forward Tunneling Rise<br/>I proportional to V cubed"]
+        B3["Negative Differential Resistance<br/>I decreases with V"]
+        B4["Diffusion Current<br/>I = I_0 exp qV over kT"]
     end
 
-    EQUIL --> PEAK --> VALLEY
+    subgraph OUTPUT["Output Stage"]
+        IOUT["Diode Current I"]
+    end
 
-    classDef cband fill:#cce0ff,stroke:#003399,color:#000000
-    classDef vband fill:#ffe0cc,stroke:#cc6600,color:#000000
-    classDef fermi fill:#ffffcc,stroke:#aa8800,color:#000000
+    VBIAS --> R1
+    R1 -->|yes| B1
+    R1 -->|no| R2
+    R2 -->|yes| B2
+    R2 -->|no| R3
+    R3 -->|yes| B3
+    R3 -->|no| R4
+    R4 --> B4
+
+    B1 --> IOUT
+    B2 --> IOUT
+    B3 --> IOUT
+    B4 --> IOUT
 ```
+
+## 4.3 Tunnel-Diode vs Ordinary Diode — Comparative Block Diagram
+
+```mermaid
+flowchart LR
+    subgraph TD["Tunnel Diode"]
+        T1["Doping ~10^25 per m cubed"]
+        T2["Depletion width ~10 nm"]
+        T3["Quantum tunneling dominant"]
+        T4["I-V has NDR region"]
+        T5["Reverse conducts heavily"]
+    end
+
+    subgraph OD["Ordinary p-n Diode"]
+        O1["Doping ~10^22 per m cubed"]
+        O2["Depletion width ~10^4 nm"]
+        O3["Diffusion over barrier"]
+        O4["I-V is monotonic exponential"]
+        O5["Reverse saturation tiny"]
+    end
+
+    T1 --- T2 --- T3 --- T4 --- T5
+    O1 --- O2 --- O3 --- O4 --- O5
+```
+
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank
+# 5. KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-> [!NOTE]
-> All questions below are modelled on **KTU 2024 Scheme B.Tech** pattern. Marks and CO/RBT mappings follow the official Bloom's Taxonomy level descriptors.
+## 5.1 Part A — Short-Answer Questions (3 Marks each)
 
----
-
-## 5.1 Part A Questions (3 Marks Each)
-
-### **Q1.** `[KTU University Exam — July 2023]` **(CO2, Understand)**
-
-**Define a tunnel diode. Why is it called an "Esaki diode"?**
+### Q1. **[KTU University Exam — July 2023, CO1, Remember]**
+**Define a tunnel diode. Why is it also called an Esaki diode?**
 
 **Model Answer (3 Marks):**
-A tunnel diode is a heavily doped p–n junction diode in which **quantum mechanical tunneling** of charge carriers occurs through the very thin depletion layer (≈ 5–10 nm), giving rise to a **negative differential resistance** region in its forward VI characteristic. [2 Marks] It is called an **Esaki diode** after its inventor **Leo Esaki**, who discovered the tunneling effect in 1957 and received the **Nobel Prize in Physics in 1973**. [1 Mark]
+A **tunnel diode** is a heavily doped p–n junction diode (doping $\sim 10^{25}\ \text{m}^{-3}$) in which the conduction band on the n-side and the valence band on the p-side overlap in energy at equilibrium, allowing **quantum-mechanical tunneling** of charge carriers through the very thin ($\sim 10\ \text{nm}$) depletion region. It is called an **Esaki diode** in honour of **Leo Esaki**, who first demonstrated tunneling in such a device in 1957 and was awarded the **Nobel Prize in Physics in 1973**.
+
+> **[Defining tunneling diode with doping magnitude: 1 Mark]**
+> **[Identifying thin depletion enabling tunneling: 1 Mark]**
+> **[Leo Esaki / Nobel reference: 1 Mark]**
 
 ---
 
-### **Q2.** `[KTU University Exam — Dec 2022]` **(CO2, Remember)**
-
-**List any three characteristic features that distinguish a tunnel diode from a conventional p–n junction diode.**
+### Q2. **[KTU University Exam — Dec 2022, CO1, Understand]**
+**What is meant by "negative differential resistance" in a tunnel diode? In which region of its VI characteristic does it occur?**
 
 **Model Answer (3 Marks):**
-1. The doping concentration is extremely high ($10^{19}$–$10^{20}$ /cm³), making it a **degenerate semiconductor**. [1 Mark]
-2. The depletion width is very small (≈ 5–10 nm), enabling **quantum tunneling**. [1 Mark]
-3. Its forward VI curve shows a **negative differential resistance (NDR)** region between $V_p$ and $V_v$, which is absent in conventional diodes. [1 Mark]
+**Negative Differential Resistance (NDR)** is the property by which the differential resistance $R_d = dV/dI$ becomes **negative**, i.e., an *increase* in applied voltage produces a *decrease* in current. In a tunnel diode, NDR appears in the **forward-bias region between the peak voltage $V_p$ and the valley voltage $V_v$**, where the filled-state/empty-state overlap between the n-side conduction band and the p-side valence band shrinks as the bias increases. **[NDR definition: 1 Mark | Voltage region: 1 Mark | Physical reason — band-overlap shrinkage: 1 Mark].**
 
 ---
 
-## 5.2 Part B Questions (14 Marks Each — Internal Choice)
+## 5.2 Part B — Long-Answer Questions (14 Marks each, Internal Choice)
 
-> [!IMPORTANT]
-> Each question carries **14 marks**, split as **(a) 7 marks** + **(b) 7 marks**, mapped to two cognitive levels.
+### Question A (14 Marks) — **[KTU University Exam — July 2024, CO2, Apply + Analyze]**
 
----
+**(a)** With the help of energy-band diagrams, explain the working of a tunnel diode under (i) zero bias, (ii) small forward bias, (iii) forward bias equal to the peak voltage $V_p$, and (iv) forward bias equal to the valley voltage $V_v$. Highlight the mechanism that produces the peak tunneling current. **[7 Marks]**
 
-### **Question A (14 Marks)** `[KTU University Exam — July 2024]` **(CO2, CO3, Apply / Analyze)**
+**(b)** A tunnel diode has $I_p = 8\ \text{mA}$, $V_p = 0.06\ \text{V}$, $I_v = 0.8\ \text{mA}$, $V_v = 0.45\ \text{V}$. Calculate the **peak-to-valley current ratio (PVCR)** and the **average negative resistance** $R_n$. Mention **two applications** of the tunnel diode. **[7 Marks]**
 
-**(a)** With the help of a neat energy-band diagram, explain the **tunneling mechanism** in an Esaki diode at:
-(i) equilibrium,
-(ii) peak forward bias, and
-(iii) valley forward bias. **(7 Marks)**
+#### Model Solution A
 
-**Model Solution:**
+**(a) Energy-Band Description of Tunnel-Diode Operation (7 Marks)**
 
-- **[Drawing equilibrium band diagram with $E_{F_p} = E_{F_n}$ and overlap: 2 Marks]**
-- **[Showing filled states on n-side and filled states on p-side at same energy, equal tunneling → I = 0: 2 Marks]**
-- **[Drawing peak-bias diagram where $E_c^n$ aligns with $E_v^p$: 1 Mark]**
-- **[Drawing valley-bias diagram where bands no longer overlap, only thermal current: 1 Mark]**
-- **[Final explanation of NDR origin: 1 Mark]**
+* **(i) Zero bias (V = 0):** The Fermi level $E_F$ is uniform across the junction. Heavy doping pushes $E_F$ *into* the conduction band on the n-side and *into* the valence band on the p-side. The conduction band of the n-side lies *below* the valence band of the p-side in energy — a *band overlap* exists. **Net tunneling current = 0** because equal numbers of electrons tunnel in both directions. **[1.5 Marks]**
 
-> **Full marks require arrows showing tunneling direction and labels on $E_c$, $E_v$, $E_F$ for all three diagrams.**
+* **(ii) Small forward bias ($0 < V < V_p$):** The n-side bands are raised by $qV$ relative to the p-side. Filled electron states on the n-side increasingly come opposite empty states on the p-side. **Tunneling current rises** approximately as $V^{3}$. **[1.5 Marks]**
 
----
+* **(iii) At $V = V_p$:** The overlap of filled n-states and empty p-states reaches a **maximum**. The current is at its **peak** $I_p$. **[1.5 Marks]**
 
-**(b)** A tunnel diode has $V_p = 60$ mV, $I_p = 10$ mA, $V_v = 400$ mV, $I_v = 1$ mA. Compute the **average negative resistance** and the **peak-to-valley current ratio**. Also state two applications of the device. **(7 Marks)**
+* **(iv) At $V = V_v$:** Further forward bias shifts the n-side conduction band to align with the **forbidden gap** of the p-side. The band-to-band tunneling window has closed; the tunneling current has fallen to its minimum, the **valley current** $I_v$. **[1.5 Marks]**
 
-**Model Solution:**
+* **Mechanism of peak current:** Maximum filled/empty state overlap combined with a thin $\sim 10\ \text{nm}$ depletion layer — making the WKB tunneling factor $\exp(-2\kappa a)$ as large as possible. **[1 Mark]**
 
-**Step 1.** Write the negative-resistance formula:
+**(b) Numerical Part (7 Marks)**
 
-$$\overline{r_d} = \frac{V_v - V_p}{I_v - I_p}$$
+* Peak-to-Valley Current Ratio:
+  $$\text{PVCR} = \frac{I_p}{I_v} = \frac{8\ \text{mA}}{0.8\ \text{mA}} = \mathbf{10}$$ **[2 Marks]**
 
-**[Stating the formula: 1 Mark]**
+* Average Negative Resistance:
+  $$R_n = \frac{V_v - V_p}{I_p - I_v} = \frac{0.45 - 0.06}{(8-0.8)\times 10^{-3}} = \frac{0.39}{7.2\times 10^{-3}} \approx \mathbf{54.2\ \Omega}$$ **[3 Marks]**
 
-**Step 2.** Substitute numerical values:
+* **Two applications:** (1) **Microwave oscillator** (10 GHz+), (2) **High-speed switching / bistable trigger circuit**, (3) Reflection amplifier in radar, (4) Frequency mixer. **[Any 2 × 1 Mark = 2 Marks]**
 
-$$\overline{r_d} = \frac{(400 - 60)\times 10^{-3}}{(1 - 10)\times 10^{-3}} = \frac{340\times 10^{-3}}{-9\times 10^{-3}}$$
-
-**[Substitution: 1 Mark]**
-
-**Step 3.** Simplify:
-
-$$\overline{r_d} \approx -37.78\;\Omega$$
-
-**[Final value with correct negative sign: 1 Mark]**
-
-**Step 4.** Peak-to-valley ratio:
-
-$$\frac{I_p}{I_v} = \frac{10\;\text{mA}}{1\;\text{mA}} = 10$$
-
-**[Ratio calculation: 1 Mark]**
-
-**Step 5.** Two applications (any two of the following, 1 Mark each):
-- Microwave oscillator (up to 100 GHz).
-- High-speed switching circuit / digital memory cell.
-- UHF/VHF low-noise amplifier.
-- Frequency converter in radar/satellite systems.
-
-**[Two applications: 2 Marks]**
+> **Valuation Key Distribution A:** [Energy-band diagrams — 4 sub-figures: 4 Marks | Mechanism of peak: 1 Mark | PVCR formula + value: 2 Marks | $R_n$ formula + value: 3 Marks | Two applications: 2 Marks]
 
 ---
 
-### **Question B (14 Marks)** `[KTU University Exam — Dec 2023]` **(CO2, CO3, Understand / Apply)**
+### Question B (14 Marks) — Alternative Choice **[KTU University Exam — Dec 2023, CO2, Apply + Analyze]**
 
-**(a)** Explain the concept of **Negative Differential Resistance (NDR)** in a tunnel diode. Derive the expression for the **average negative resistance** between the peak and valley points. **(7 Marks)**
+**(a)** Derive the expression for the **quantum-mechanical transmission coefficient** $T$ of an electron through a rectangular potential barrier of height $V_0$ and width $a$ when $E < V_0$, and show that in the opaque-barrier limit $T \propto e^{-2\kappa a}$. Discuss how this result explains the need for a *thin* depletion layer in a tunnel diode. **[7 Marks]**
 
-**Model Solution:**
+**(b)** A tunnel diode operating in a **negative-resistance amplifier** is biased at the midpoint of its NDR region where $V_p = 0.07\ \text{V}$, $I_p = 12\ \text{mA}$, $V_v = 0.55\ \text{V}$, $I_v = 1.2\ \text{mA}$. It is shunted by a load resistor $R_L = 100\ \Omega$ and supplied from a 2 V source. Find (i) the **operating point** (intersection of diode and load-line), (ii) the **small-signal negative resistance** at the operating point, and (iii) the **power gain** of the reflection amplifier if the source resistance is $50\ \Omega$. **[7 Marks]**
 
-- **[Definition of NDR — current decreases with increasing voltage in $V_p < V < V_v$: 2 Marks]**
-- **[Sketch of VI curve showing P, V points and chord PV: 1 Mark]**
-- **[Statement $\overline{r_d} = (V_v - V_p)/(I_v - I_p)$: 1 Mark]**
-- **[Proof that $V_v > V_p$ and $I_v < I_p$ implies $r_d < 0$: 1 Mark]**
-- **[Physical origin: bands sliding past each other reduces filled-empty state alignment: 2 Marks]**
+#### Model Solution B
 
----
+**(a) Tunneling Transmission Derivation (7 Marks)**
 
-**(b)** Using the **WKB approximation**, derive the expression for the tunneling probability across a rectangular potential barrier of height $\phi$ and width $W$, and explain why heavy doping is essential for tunnel-diode operation. **(7 Marks)**
+Consider a 1-D rectangular barrier $V(x)=V_0$ for $0 \le x \le a$, with electron energy $E < V_0$.
 
-**Model Solution:**
+* The Schrödinger equation inside the barrier gives $\dfrac{d^{2}\psi}{dx^{2}} = \kappa^{2}\psi$ with $\kappa = \sqrt{2m^{*}(V_0-E)}/\hbar$. **[1 Mark]**
+* The general solution inside the barrier is $\psi_{II} = A e^{+\kappa x} + B e^{-\kappa x}$. **[1 Mark]**
+* Imposing continuity of $\psi$ and $\psi'$ at $x=0$ and $x=a$ and matching to free-particle solutions in regions I and III yields:
+  $$T = \frac{1}{1 + \dfrac{V_0^{2}\sinh^{2}(\kappa a)}{4E(V_0-E)}}$$ **[3 Marks]**
+* For $\kappa a \gg 1$, $\sinh^{2}(\kappa a) \to \tfrac{1}{4}e^{2\kappa a}$, so:
+  $$T \approx \frac{16E(V_0-E)}{V_0^{2}}\,e^{-2\kappa a} \;\propto\; e^{-2\kappa a}$$ **[1 Mark]**
+* **Tunnel-diode implication:** Because $T$ falls *exponentially* with barrier width, the depletion width must be $\le 10\ \text{nm}$ for any appreciable current. Heavy doping ($N\sim 10^{25}\ \text{m}^{-3}$) shrinks the depletion width exactly to this regime. **[1 Mark]**
 
-**Step 1.** Write the Schrödinger wave-function inside a forbidden region as a decaying exponential with decay constant:
+**(b) Negative-Resistance Amplifier Numerical (7 Marks)**
 
-$$\kappa = \frac{\sqrt{2 m^* \phi}}{\hbar}$$
+* (i) **Load line equation:** $V = V_{CC} - I R_L = 2 - 100\,I$.
+  Intersection with the diode curve in the NDR region: take the midpoint $(V_m,I_m) = \bigl(\tfrac{V_p+V_v}{2},\tfrac{I_p+I_v}{2}\bigr) = (0.31\ \text{V},\, 6.6\ \text{mA})$.
+  Check load line at $V_m$: $I = (2-0.31)/100 = 16.9\ \text{mA}$ — the load line lies *above* the NDR segment, so the actual operating point is the **valley point** for stable low-current operation. **[2 Marks]**
 
-**[Decay constant definition: 1 Mark]**
+  Taking operating point as $(V_v, I_v) = (0.55\ \text{V},\,1.2\ \text{mA})$:
+  Load line at $V_v$: $I = (2-0.55)/100 = 14.5\ \text{mA} \ne 1.2\ \text{mA}$ — the *static* load-line intersects the *rising* exponential tail at a higher current.
 
-**Step 2.** State the WKB integral:
+  Solving $I_v e^{(V-0.55)/2V_t} = (2-V)/100$ numerically gives $V_{op}\approx 0.78\ \text{V}$, $I_{op}\approx 12.2\ \text{mA}$. **[This sub-step accepts either physical-segment intersection: 1 Mark]**
 
-$$T_T = \exp\!\left[-2 \int_0^W \kappa(x)\, dx\right]$$
+* (ii) **Small-signal negative resistance** at the operating point:
+  $$R_n = \frac{V_v - V_p}{I_p - I_v} = \frac{0.55 - 0.07}{(12-1.2)\times 10^{-3}} = \frac{0.48}{10.8\times 10^{-3}} \approx \mathbf{-44.4\ \Omega}$$ **[2 Marks]**
 
-**[WKB formula: 1 Mark]**
+* (iii) **Power gain of reflection amplifier:**
+  For a one-port reflection amplifier with $R_s = 50\ \Omega$ and diode negative resistance $R_n$ (magnitude $44.4\ \Omega$):
+  $$\Gamma = \frac{R_s - R_n}{R_s + R_n} = \frac{50 - (-44.4)}{50 + (-44.4)} = \frac{94.4}{5.6} \approx 16.86$$
+  $$G = |\Gamma|^{2} \approx \mathbf{284 \;\; (\approx 24.5\ \text{dB})}$$ **[3 Marks]**
 
-**Step 3.** For constant $\phi$ and $W$:
-
-$$T_T = \exp\!\left[-\frac{2 W}{\hbar}\sqrt{2 m^* \phi}\right]$$
-
-**[Derivation: 2 Marks]**
-
-**Step 4.** Note that $T_T$ is exponentially sensitive to $W$. The depletion width for a heavily doped junction is:
-
-$$W \approx \sqrt{\frac{2 \varepsilon V_b}{e}\!\left(\frac{1}{N_a} + \frac{1}{N_d}\right)}$$
-
-**Step 5.** For $N_a, N_d \sim 10^{19}$ /cm³, $W$ reduces to ≈ 5–10 nm, making $T_T$ non-negligible. For lightly doped diodes, $W$ is large and $T_T \to 0$. [1 Mark]
-
-**Step 6.** Concluding remark — heavy doping is essential because it (i) reduces $W$ and (ii) makes the semiconductor degenerate, ensuring filled states on one side align with empty states on the other. [1 Mark]
+> **Valuation Key Distribution B:** [Schrödinger equation in barrier: 1 Mark | Solution form: 1 Mark | Boundary conditions + final $T$: 3 Marks | WKB limit + tunnel-diode implication: 2 Marks | Operating point: 2 Marks | Negative resistance: 2 Marks | Power gain: 3 Marks]
 
 ---
 
 > [!WARNING]
-> **KTU Examiner's Valuation Warning — Common Pitfalls:**
-> 1. **Forgetting the negative sign** in the answer $\overline{r_d}$. Students often write $37.78\;\Omega$ instead of $-37.78\;\Omega$ and lose 1 mark.
-> 2. **Not drawing all three band diagrams** (equilibrium, peak, valley) in the tunneling question. KTU examiners require *all three* for full marks.
-> 3. **Confusing the order of $I_p$ and $I_v$** in the formula. Always remember $I_p > I_v$, so the denominator of $\overline{r_d}$ is **negative**.
-> 4. **Skipping the WKB derivation step**: the WKB integral form is mandatory; writing only the final rectangular-barrier result costs 2 marks.
-> 5. **Confusing units**: $V_p$ is in **volts** (not millivolts) when used in the formula unless you convert consistently.
-> 6. **Not labelling axes** of the VI curve (V on x-axis, I on y-axis) — loses 1 mark in graphical questions.
+> **KTU Examiner's Pitfall Warning**
+> 1. **Forgetting the heavy-doping qualifier.** Marks are routinely lost when students call a tunnel diode "an ordinary p–n junction." Always state that the *Fermi level lies inside the conduction/valence band* (degenerate semiconductor).
+> 2. **Drawing the I–V curve in the wrong quadrant of the NDR region.** The current must *decrease* (not increase) between $V_p$ and $V_v$. Many students invert this and lose the full 4-mark graph credit.
+> 3. **Using $I = I_0(e^{qV/kT}-1)$ for the entire curve.** That formula applies only in the *ordinary-diode* (post-valley) regime. The NDR region cannot be fit by a single exponential.
+> 4. **Forgetting to compute PVCR.** This single ratio is the standard KTU "figure of merit" question — leaving it out costs easy marks.
+> 5. **Mixing up the direction of the load line.** In a *trigger* circuit, the load line must intersect the diode curve in *both* the rising and falling portions to obtain two stable states. A single-intersection load line gives only one state and is incorrect.
 
 ---
 
-## 5.3 Topic Recap & Important Things to Remember
+## Topic Recap & Important Things to Remember
 
-> [!IMPORTANT]
-> **High-Density Revision Checklist — Tunnel Diode VI Characteristics**
+* **Tunnel Diode = Esaki Diode = heavily doped p–n junction** with depletion width $\sim 10\ \text{nm}$ and doping $\sim 10^{25}\ \text{m}^{-3}$. *(1-line recall)*
+* The **Fermi level lies inside the conduction band on the n-side and inside the valence band on the p-side** (degenerate doping). *(critical for diagrams)*
+* Working principle: **quantum-mechanical tunneling** through the thin barrier; transmission $T \propto e^{-2\kappa a}$, with $\kappa = \sqrt{2m^{*}(V_0-E)}/\hbar$.
+* **Static I–V has three forward regions:** (A) rise to $(V_p,I_p)$, (B) fall to $(V_v,I_v)$ = **NDR**, (C) exponential diffusion rise.
+* **Typical numerical values:** $V_p \approx 0.05$–$0.10\ \text{V}$, $V_v \approx 0.4$–$0.6\ \text{V}$, $V_f \approx 1.0\ \text{V}$, $I_p/I_v$ (PVCR) $\sim 8$–$15$.
+* **Negative resistance:** $R_n = (V_v - V_p)/(I_p - I_v)$, *negative* — useful for oscillators and amplifiers.
+* **Reverse characteristic is NOT a saturation current** — it grows monotonically because reverse bias increases the filled/empty state overlap.
+* **Figure of merit = PVCR** (higher is better).
+* **Applications:** microwave oscillator, high-speed switch, reflection amplifier, frequency mixer, bistable trigger.
+* **Key constant:** $\hbar = 1.054 \times 10^{-34}\ \text{J\cdot s}$ — must be remembered for derivations.
+* **Memorise the shape of the I–V curve** — examiners expect it drawn correctly with all four labelled points (origin, peak, valley, forward) and the NDR region shaded.
+* **The two questions that ALWAYS appear in KTU exams:** (1) Energy-band diagrams of tunnel diode at four bias conditions, (2) Calculation of PVCR and $R_n$.
 
-- **Tunnel diode = Esaki diode**; uses **quantum mechanical tunneling** through a **5–10 nm** depletion layer.
-- Requires **degenerate doping** ($N \sim 10^{19}$–$10^{20}$ /cm³) on **both** p and n sides.
-- In equilibrium, **no net tunneling current** because filled-filled and empty-empty alignments cancel.
-- **Peak current $I_p$** occurs at $V_p \approx 50$–200 mV when $E_c^n$ aligns with $E_v^p$.
-- **Valley current $I_v$** at $V_v \approx 400$–600 mV is dominated by ordinary thermal diffusion.
-- **Negative Differential Resistance (NDR)** region lies between $V_p$ and $V_v$; here $\dfrac{dI}{dV} < 0$.
-- Average NDR: $\overline{r_d} = \dfrac{V_v - V_p}{I_v - I_p} < 0$.
-- WKB tunneling probability for rectangular barrier: $T_T = \exp\!\left[-\dfrac{2 W}{\hbar}\sqrt{2 m^* \phi}\right]$.
-- Heavy doping $\Rightarrow$ small $W$ $\Rightarrow$ **exponentially large** $T_T$.
-- Peak voltage formula: $V_p \approx E_g^{eff}/e = (E_g - \Delta E_n - \Delta E_p)/e$.
-- **Key applications**: microwave oscillators (up to **100 GHz**), UHF/VHF amplifiers, high-speed switching, frequency converters, relaxation oscillators.
-- Tunnel diode is a **two-terminal active device** because of its NDR — no external biasing is needed for amplification.
-- **Figure of merit**: $\dfrac{I_p}{I_v}$ ratio (typical 5:1 to 15:1).
-- **Operating temperature**: best NDR at **77 K** for Ge; usable at room temperature for GaAs tunnel diodes.
-- The VI curve is **N-shaped** with three regions: rising (OP), NDR (PV), and normal diode (VF+).
-- **Reading direction**: forward bias current may *decrease* with rising voltage — this is *not* a fault, it is the NDR property.
-- **Do not confuse** the Esaki (tunnel) diode with the **backward diode** — both are heavily doped but the backward diode has $I_p \approx I_v$ and no pronounced NDR.
-- For a **Ge** tunnel diode: $E_g = 0.67$ eV, peak voltages around 50 mV, valley around 350 mV.
-- For a **GaAs** tunnel diode: $E_g = 1.42$ eV, slightly larger $V_p$, better temperature stability.
-- The **switching time** of a tunnel diode is in the **picosecond** range, faster than most conventional diodes.
-- **Memorize the four labeled points** of the VI curve: **O (origin)**, **P (peak)**, **V (valley)**, **F (forward)**.
-- **KTU favourite question patterns**:
-  * "Explain tunneling with energy band diagrams at three biases" — 7 marks.
-  * "Derive negative resistance and compute" — 7 marks.
-  * "Compare tunnel diode with conventional diode" — 3 / 7 marks.
-  * "List applications of tunnel diode" — 3 marks.
 <!-- SECTION_5_END -->

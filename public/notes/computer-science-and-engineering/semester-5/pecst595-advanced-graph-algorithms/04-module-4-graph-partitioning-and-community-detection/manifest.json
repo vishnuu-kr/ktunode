@@ -1,0 +1,43 @@
+{
+  "course_name": "ADVANCED GRAPH ALGORITHMS",
+  "course_code": "PECST595",
+  "module_number": 4,
+  "module_title": "Graph partitioning and community detection",
+  "topics_generated": [
+    {
+      "title": "Graph Partitioning and Community Detection - Kernighan-Lin Algorithm",
+      "slug": "graph-partitioning-and-community-detection-kernighan-lin-algorithm",
+      "path": "graph-partitioning-and-community-detection-kernighan-lin-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Spectral Partitioning",
+      "slug": "spectral-partitioning",
+      "path": "spectral-partitioning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications - social network community detection, large-scale data clustering",
+      "slug": "applications-social-network-community-detection-large-scale-data-clustering",
+      "path": "applications-social-network-community-detection-large-scale-data-clustering/notes.md",
+      "has_mermaid": false,
+      "has_math": true
+    },
+    {
+      "title": "Parameterized Algorithms for Graph Problems - Fixed-parameter tractability for vertex cover, feedback vertex set",
+      "slug": "parameterized-algorithms-for-graph-problems-fixed-parameter-tractability-for-vertex-cover-feedback",
+      "path": "parameterized-algorithms-for-graph-problems-fixed-parameter-tractability-for-vertex-cover-feedback/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications -  network security, bioinformatics",
+      "slug": "applications-network-security-bioinformatics",
+      "path": "applications-network-security-bioinformatics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

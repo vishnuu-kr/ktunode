@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 17,
+  "module_title": "Implement and apply k",
+  "topics_generated": [
+    {
+      "title": "Implement and apply K-means clustering to the Digits dataset. Experiment with different numbers of clusters and evaluate the clustering results using metrics such as inertia and silhouette score. Analyze how the choice of K affects clustering performance.",
+      "slug": "implement-and-apply-k-means-clustering-to-the-digits-dataset-experiment-with-different-numbers-of",
+      "path": "implement-and-apply-k-means-clustering-to-the-digits-dataset-experiment-with-different-numbers-of/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Digits dataset.",
+      "slug": "load-and-preprocess-the-digits-dataset",
+      "path": "load-and-preprocess-the-digits-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement K-means clustering with various numbers of clusters.",
+      "slug": "implement-k-means-clustering-with-various-numbers-of-clusters",
+      "path": "implement-k-means-clustering-with-various-numbers-of-clusters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluate clustering performance using inertia and silhouette score.",
+      "slug": "evaluate-clustering-performance-using-inertia-and-silhouette-score",
+      "path": "evaluate-clustering-performance-using-inertia-and-silhouette-score/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Analyze the impact of the number of clusters on clustering quality.",
+      "slug": "analyze-the-impact-of-the-number-of-clusters-on-clustering-quality",
+      "path": "analyze-the-impact-of-the-number-of-clusters-on-clustering-quality/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

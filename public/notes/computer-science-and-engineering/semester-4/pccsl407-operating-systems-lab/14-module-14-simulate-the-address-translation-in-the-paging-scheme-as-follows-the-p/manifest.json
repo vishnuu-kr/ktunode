@@ -1,0 +1,43 @@
+{
+  "course_name": "OPERATING SYSTEMS LAB",
+  "course_code": "PCCSL407",
+  "module_number": 14,
+  "module_title": "Simulate the address translation in the paging scheme as follows the p",
+  "topics_generated": [
+    {
+      "title": "Simulate the address translation in the paging scheme as follows: The program receives three command line arguments in the order",
+      "slug": "simulate-the-address-translation-in-the-paging-scheme-as-follows-the-program-receives-three-command",
+      "path": "simulate-the-address-translation-in-the-paging-scheme-as-follows-the-program-receives-three-command/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "● size of the virtual address space (in megabytes)",
+      "slug": "size-of-the-virtual-address-space-in-megabytes",
+      "path": "size-of-the-virtual-address-space-in-megabytes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "● page size (in kilobytes)",
+      "slug": "page-size-in-kilobytes",
+      "path": "page-size-in-kilobytes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "● a virtual address (in decimal notation)",
+      "slug": "a-virtual-address-in-decimal-notation",
+      "path": "a-virtual-address-in-decimal-notation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The output should be the physical address corresponding to the virtual address in <frame number, offset> format. You may assume that the page table is implemented as an array indexed by page numbers. (NB: If the page table has no index for the page number determined from the virtual address, you may just declare a page table miss!)",
+      "slug": "the-output-should-be-the-physical-address-corresponding-to-the-virtual-address-in-frame-number",
+      "path": "the-output-should-be-the-physical-address-corresponding-to-the-virtual-address-in-frame-number/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "course_name": "ADVANCED GRAPH ALGORITHMS",
+  "course_code": "PECST595",
+  "module_number": 2,
+  "module_title": "Strongly connected components scc",
+  "topics_generated": [
+    {
+      "title": "Strongly Connected Components (SCC) - Tarjan's Algorithm",
+      "slug": "strongly-connected-components-scc-tarjan-s-algorithm",
+      "path": "strongly-connected-components-scc-tarjan-s-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Kosaraju's Algorithm",
+      "slug": "kosaraju-s-algorithm",
+      "path": "kosaraju-s-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications - analyzing web page link structures, understanding connected components in social networks",
+      "slug": "applications-analyzing-web-page-link-structures-understanding-connected-components-in-social",
+      "path": "applications-analyzing-web-page-link-structures-understanding-connected-components-in-social/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dynamic Graph Connectivity - Dynamic connectivity algorithms",
+      "slug": "dynamic-graph-connectivity-dynamic-connectivity-algorithms",
+      "path": "dynamic-graph-connectivity-dynamic-connectivity-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Eulerian and Hamiltonian paths",
+      "slug": "eulerian-and-hamiltonian-paths",
+      "path": "eulerian-and-hamiltonian-paths/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications - real-time network monitoring, dynamic route planning",
+      "slug": "applications-real-time-network-monitoring-dynamic-route-planning",
+      "path": "applications-real-time-network-monitoring-dynamic-route-planning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

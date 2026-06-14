@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 4,
+  "module_title": "Estimate the parameters of a logistic regression model using mle and ma",
+  "topics_generated": [
+    {
+      "title": "Estimate the parameters of a logistic regression model using MLE and MAP on the Breast Cancer Wisconsin dataset. Compare the results and discuss the effects of regularization.",
+      "slug": "estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-map-on-the-breast-cancer",
+      "path": "estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-map-on-the-breast-cancer/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the dataset.",
+      "slug": "load-and-preprocess-the-dataset",
+      "path": "load-and-preprocess-the-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement logistic regression with MLE.",
+      "slug": "implement-logistic-regression-with-mle",
+      "path": "implement-logistic-regression-with-mle/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Apply MAP estimation with different regularization priors (L1 and L2 regularization).",
+      "slug": "apply-map-estimation-with-different-regularization-priors-l1-and-l2-regularization",
+      "path": "apply-map-estimation-with-different-regularization-priors-l1-and-l2-regularization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compare the performance and parameter estimates with MLE and MAP.",
+      "slug": "compare-the-performance-and-parameter-estimates-with-mle-and-map",
+      "path": "compare-the-performance-and-parameter-estimates-with-mle-and-map/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

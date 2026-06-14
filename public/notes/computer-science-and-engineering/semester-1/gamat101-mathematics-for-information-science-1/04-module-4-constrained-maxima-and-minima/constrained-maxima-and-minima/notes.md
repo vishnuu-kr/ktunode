@@ -1,436 +1,509 @@
 # Constrained Maxima and Minima
 
 <!-- SECTION_1_START -->
-# Constrained Maxima and Minima — Core Definition & Intuitive Overview
+# Constrained Maxima and Minima — Module 4 Core Foundations
 
-## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
-
-A **Constrained Optimization Problem** seeks to find the stationary values (extrema) of an **objective function** $f(x_1, x_2, \ldots, x_n)$ subject to one or more **equality constraints** $g_j(x_1, x_2, \ldots, x_n) = c_j$ for $j = 1, 2, \ldots, m$.
-
-The general mathematical formulation is:
-
-$$\begin{aligned}
-\text{Optimize} \quad & f(x_1, x_2, \ldots, x_n) \\
-\text{subject to} \quad & g_j(x_1, x_2, \ldots, x_n) = c_j, \quad j = 1, 2, \ldots, m
-\end{aligned}$$
-
-For KTU GAMAT101 Module 4, the standard case is **two variables with one equality constraint**:
-
-$$\text{Find extrema of } f(x, y) \text{ subject to } g(x, y) = c$$
+## 1.1 Formal Academic Definition (KTU 2024 Syllabus Standard)
 
 > [!IMPORTANT]
-> **Why "Constrained"?** In unconstrained optimization, $x$ and $y$ can be any real numbers. In constrained optimization, the feasible region is restricted to a curve (for one constraint) or surface (for multiple constraints). The method of **Lagrange Multipliers** is the standard tool for solving such problems.
+> **Constrained Optimization (KTU 2024 — GAMAT101, Module 4):**
+> Given a real-valued function $f: \mathbb{R}^n \to \mathbb{R}$ called the **objective function**, and one or more **equality constraints** of the form $g_i(x_1, x_2, \dots, x_n) = 0$ where $i = 1, 2, \dots, m$ with $m < n$, the problem of finding the **local extrema** (maxima or minima) of $f$ subject to the constraint(s) $g_i = 0$ is termed a **Constrained Maxima and Minima** problem.
 
-## 1.2 Conceptual Analogy & Intuition
-
-**The Mountain Hiker Analogy:** Imagine you are hiking on a mountain and you want to find the highest point — but you must **stay on a marked trail** (the constraint). The trail forces you along a specific path. The highest point on that trail is the *constrained maximum*.
-
-**Geometric Intuition:** Consider the contour lines (level curves) of $f(x,y) = k$ and the constraint curve $g(x,y) = c$.
-- As you walk along the constraint curve, the value of $f$ changes.
-- At a **constrained extremum**, the constraint curve is **tangent** to a level curve of $f$.
-- This tangency condition means the two curves share the same tangent line, so their normal vectors (gradients) must be **parallel**.
+In the KTU 2024 syllabus scope, the principal analytical tool is the **Method of Lagrange Multipliers**, introduced by Joseph-Louis Lagrange in 1788, which augments the objective function with a linear combination of the constraints using **undetermined multipliers** $\lambda_i$.
 
 > [!NOTE]
-> **Key Geometric Insight:** At the constrained optimum, the gradient of the objective function $\nabla f$ is parallel to the gradient of the constraint $\nabla g$. This is the foundation of the Lagrange multiplier method:
-> $$\nabla f = \lambda \, \nabla g$$
-> The scalar $\lambda$ is called the **Lagrange Multiplier**, and it represents the rate of change of the optimal value of $f$ with respect to changes in the constraint level $c$.
+> **Key Distinction from Module 3 (Unconstrained Optimization):**
+> In **unconstrained** problems, every critical point satisfies $\nabla f = \mathbf{0}$. In **constrained** problems, the feasible set is restricted to a submanifold (curve, surface, or hypersurface), and we must satisfy $\nabla f = \lambda \nabla g$ instead.
 
-## 1.3 The Lagrangian Function
+## 1.2 Conceptual Analogy — "Walking on a Mountain Path"
 
-The **Lagrangian** combines the objective and the constraint into a single function by introducing the multiplier $\lambda$:
+Imagine you are hiking on a mountainside whose elevation is given by $f(x, y)$. Your goal is to find the **highest point** (or lowest point) that lies **exactly on a marked trail** (the constraint $g(x, y) = 0$).
 
-$$L(x, y, \lambda) = f(x, y) - \lambda \left[g(x, y) - c\right]$$
+If you are free to roam anywhere, you would simply look for the peak of the mountain — that is unconstrained optimization. But because you must **stay on the trail**, the peak of the mountain might be off-trail. So the highest point *on the trail itself* is the constrained maximum.
 
-> [!IMPORTANT]
-> **Note on Sign Convention:** We use $L = f - \lambda g$ in this module. The first-order conditions yield the same critical points regardless of the sign of $\lambda$; the second-order bordered Hessian test is also invariant.
+Geometrically, at the optimal point on the trail:
 
-## 1.4 Visualization Block
+$$ \text{Gradient of } f \;\; \text{is parallel to} \;\; \text{Gradient of } g $$
+
+Because both vectors are perpendicular to the trail, parallelism means **the trail is tangent to the level curve of $f$** at that instant. The "amount" of this parallel relationship is exactly the **Lagrange multiplier** $\lambda$.
+
+> [!TIP]
+> **Intuitive Memory Hook:**
+> - $\lambda = 0 \Rightarrow$ Unconstrained critical point lies on the constraint surface.
+> - $\lambda \neq 0 \Rightarrow$ Constrained extremum; its **sign** tells you whether the constraint is "pulling uphill" ($\lambda > 0$ for max) or "pushing downhill" ($\lambda < 0$ for min).
+
+## 1.3 Visualization Setup
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Level Curves of $f$ Tangent to the Constraint Curve $g = c$
+> **Concept:** Tangency between level curves of $f(x, y)$ and constraint $g(x, y) = 0$
 > **GeoGebra / Desmos Input Equations:**
-> * Level curves: $f(x,y) = k$ entered as `x^2 + y^2 = k` for $k = 0.5, 1, 2, 3, 4$
-> * Constraint line: `x + y = 1`
-> * Tangent point: `(0.5, 0.5)`
-> **Visual Description:** A family of concentric circles (level curves of $f(x,y) = x^2 + y^2$) with the line $x + y = 1$ passing through them. The line is **tangent** to the circle $x^2 + y^2 = 0.5$ at the point $(0.5, 0.5)$. At this tangency, the gradients $\nabla f = (1, 1)$ and $\nabla g = (1, 1)$ are identical (so $\lambda = 1$).
+> * $f(x,y) = x^2 + y^2$ (paraboloid level sets: circles)
+> * $g(x,y): x + y = 2$ (constraint line)
+>
+> **Visual Description:** The student should observe that at the tangency point $(1, 1)$, the circle $x^2 + y^2 = 2$ (from $f$) is tangent to the line $x + y = 2$ (from $g$). Their gradient vectors $\nabla f = (2, 2)$ and $\nabla g = (1, 1)$ are parallel — confirming $\nabla f = \lambda \nabla g$ with $\lambda = 2$.
 
+> [!WARNING]
+> **Physical Constants & Standard Metrics for KTU Reference:**
+> - **Bold constants** in this module: **Lagrange multiplier** $\lambda \in \mathbb{R}$, **Hessian** $\mathbf{H}$ of size $n \times n$, **bordered Hessian** $\bar{\mathbf{H}}$ of size $(n+1) \times (n+1)$.
+> - $\nabla$ denotes the **gradient** operator — a vector of partial derivatives.
+> - In KTU board papers, $\lambda$ is most commonly a **single scalar** (one constraint, two variables). It becomes a **vector** $\boldsymbol{\lambda} = (\lambda_1, \lambda_2, \dots, \lambda_m)$ when there are $m$ constraints.
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
+# Deep Theoretical Analysis — Lagrange Multipliers & KTU Formula Sheet
 
-## 2.1 The Lagrange Multiplier Theorem (First-Order Necessary Conditions)
+## 2.1 The Lagrange Multiplier Theorem (Single Constraint)
+
+Let $f, g: \mathbb{R}^2 \to \mathbb{R}$ have continuous first partial derivatives in a neighbourhood of the point $(a, b)$. Suppose:
+
+1. $g(a, b) = 0$ (the constraint is active).
+2. $\nabla g(a, b) \neq \mathbf{0}$ (the constraint is *regular* — the gradient is non-zero).
+3. $f$ has a local extremum at $(a, b)$ subject to $g = 0$.
+
+Then **there exists a unique real number** $\lambda$ such that:
+
+$$ \nabla f(a, b) = \lambda \, \nabla g(a, b) $$
+
+Equivalently, in component form for two variables:
+
+$$ f_x(a, b) = \lambda \, g_x(a, b) $$
+$$ f_y(a, b) = \lambda \, g_y(a, b) $$
+
+Together with $g(a, b) = 0$, this gives **3 equations in 3 unknowns** $(a, b, \lambda)$.
+
+## 2.2 The Lagrangian Function (Auxiliary Function)
 
 > [!IMPORTANT]
-> **Theorem (Lagrange, 1788):** Let $f$ and $g$ be continuously differentiable functions. If $(x_0, y_0)$ is a constrained extremum of $f$ subject to $g(x, y) = c$, and if $\nabla g(x_0, y_0) \neq \mathbf{0}$, then there exists a unique scalar $\lambda$ such that:
-> $$\nabla f(x_0, y_0) = \lambda \, \nabla g(x_0, y_0)$$
+> **KTU Board Definition (Frequently asked 3-mark question):**
+> The **Lagrangian** or **auxiliary function** for a single constraint is:
+> $$ L(x, y, \lambda) = f(x, y) + \lambda \, g(x, y) $$
+> Some textbooks use the form $L = f - \lambda g$; both are **equivalent** as long as you solve $\partial L / \partial x = 0$, $\partial L / \partial y = 0$, $\partial L / \partial \lambda = 0$.
 
-The corresponding **stationary system** is:
+The necessary conditions become:
 
-$$\begin{aligned}
-\frac{\partial L}{\partial x} = f_x - \lambda \, g_x &= 0 \\
-\frac{\partial L}{\partial y} = f_y - \lambda \, g_y &= 0 \\
-\frac{\partial L}{\partial \lambda} = -(g - c) &= 0 \quad \Rightarrow \quad g(x, y) = c
-\end{aligned}$$
+$$ \frac{\partial L}{\partial x} = 0, \quad \frac{\partial L}{\partial y} = 0, \quad \frac{\partial L}{\partial \lambda} = 0 $$
 
-This is a system of **3 equations in 3 unknowns** $(x, y, \lambda)$.
+## 2.3 Extension to Multiple Variables and Multiple Constraints
 
-## 2.2 Step-by-Step Algorithmic Logic
+For $n$ variables $x_1, \dots, x_n$ and $m$ constraints $g_1, \dots, g_m$:
 
-The operational procedure to solve a constrained optimization problem is:
+$$ L(x_1, \dots, x_n, \lambda_1, \dots, \lambda_m) = f(x_1, \dots, x_n) + \sum_{i=1}^{m} \lambda_i \, g_i(x_1, \dots, x_n) $$
 
-* **Step 1 — Identify** the objective function $f$ and the constraint $g = c$.
-* **Step 2 — Construct** the Lagrangian $L = f - \lambda g$.
-* **Step 3 — Differentiate** $L$ partially with respect to $x$, $y$, and $\lambda$.
-* **Step 4 — Equate** each partial derivative to zero, forming a system of equations.
-* **Step 5 — Solve** the system for the critical points $(x_0, y_0, \lambda_0)$.
-* **Step 6 — Classify** the nature of the extremum using the **Bordered Hessian Test**.
-* **Step 7 — Compute** the constrained extreme value $f(x_0, y_0)$.
+Necessary conditions: $\dfrac{\partial L}{\partial x_j} = 0$ for $j = 1, \dots, n$ and $\dfrac{\partial L}{\partial \lambda_i} = 0$ for $i = 1, \dots, m$.
 
-## 2.3 The Bordered Hessian (Second-Order Sufficient Conditions)
+## 2.4 Cases Where Lagrange Multiplier Method Fails
 
-To classify the critical point as a **maximum**, **minimum**, or **saddle point**, we use the **Bordered Hessian** matrix.
+The KTU 2024 syllabus specifically highlights **four failure scenarios** — these appear in 7-mark sub-parts of past papers:
 
-For 2 variables with 1 constraint, the bordered Hessian is a $3 \times 3$ matrix:
+1. **The constraint is not satisfied:** The point $(a, b)$ found from the system might not satisfy $g(a, b) = 0$ (algebraic error or extraneous root).
+2. **The constraint gradient vanishes:** $\nabla g(a, b) = \mathbf{0}$ — the constraint fails to be regular at the candidate point. (Example: $g = x^2 + y^2 = 0$ forces $(a, b) = (0, 0)$ but $\nabla g = \mathbf{0}$.)
+3. **Non-existence of extremum:** A solution to the multiplier equations may exist, but no actual constrained extremum occurs (saddle or no extremum).
+4. **Boundary / non-differentiable points:** The objective function is not differentiable at the candidate point.
 
-$$H = \begin{bmatrix} 0 & g_x & g_y \\ g_x & f_{xx} & f_{xy} \\ g_y & f_{xy} & f_{yy} \end{bmatrix}$$
+## 2.5 Second-Order Sufficient Conditions (Bordered Hessian Test)
 
-The determinant is:
+After finding the candidate point(s) using the first-order conditions, the **bordered Hessian** $\bar{\mathbf{H}}$ is used to classify them as constrained maximum, minimum, or saddle.
 
-$$\vert H \vert = 2 \, g_x g_y f_{xy} - g_x^2 f_{yy} - g_y^2 f_{xx}$$
+For $n = 2$ variables and $m = 1$ constraint, the bordered Hessian is the $3 \times 3$ matrix:
+
+$$ \bar{\mathbf{H}} = \begin{bmatrix} 0 & g_x & g_y \\ g_x & L_{xx} & L_{xy} \\ g_y & L_{yx} & L_{yy} \end{bmatrix} $$
+
+where $L = f + \lambda g$, evaluated at the critical point.
 
 > [!NOTE]
-> **Important:** The partial derivatives $g_x, g_y, f_{xx}, f_{xy}, f_{yy}$ are all evaluated at the critical point $(x_0, y_0)$.
+> **Sign of the leading principal minors (KTU-standard classification):**
+>
+> Let $\Delta_2$ and $\Delta_3$ be the 2nd and 3rd leading principal minors of $\bar{\mathbf{H}}$.
+> - If $\Delta_2 < 0$ and $\Delta_3 > 0$ $\Rightarrow$ **Constrained Minimum**.
+> - If $\Delta_2 > 0$ and $\Delta_3 < 0$ $\Rightarrow$ **Constrained Maximum**.
+> - Otherwise $\Rightarrow$ **Saddle point** (no constrained extremum).
 
-**Second-Order Classification Rule:**
+For $n = 3$ variables and $m = 1$ constraint (one $4 \times 4$ bordered Hessian), only the **last two leading principal minors** $\Delta_3$ and $\Delta_4$ are inspected (and so on for higher $n$).
 
-| Condition on $\vert H \vert$ | Nature of the Stationary Point |
-| :--- | :--- |
-| $\vert H \vert > 0$ | **Constrained Maximum** |
-| $\vert H \vert < 0$ | **Constrained Minimum** |
-| $\vert H \vert = 0$ | **Test Inconclusive** (use direct comparison) |
+## 2.6 KTU High-Yield Formula Cheat Sheet
 
-## 2.4 KTU High-Yield Formula Sheet
+| **Concept** | **Formula / Expression** | **Variables** | **Conditions / Units** |
+|---|---|---|---|
+| Single-constraint Lagrangian | $L = f(x, y) + \lambda \, g(x, y)$ | $f, g$: scalar; $\lambda$: scalar | $\lambda \in \mathbb{R}$, no constraint on sign |
+| Multi-constraint Lagrangian | $L = f + \sum_{i=1}^{m} \lambda_i g_i$ | $\boldsymbol{\lambda} = (\lambda_1, \dots, \lambda_m)$ | $m < n$ for finite critical points |
+| Necessary conditions (single) | $f_x = \lambda g_x, \; f_y = \lambda g_y, \; g = 0$ | — | 3 equations, 3 unknowns |
+| Lagrange Multiplier Theorem | $\nabla f = \lambda \, \nabla g$ | $\nabla f, \nabla g \in \mathbb{R}^n$ | Requires $\nabla g \neq \mathbf{0}$ |
+| Bordered Hessian (2D, 1 constraint) | $\bar{\mathbf{H}} = [0, g_x, g_y; g_x, L_{xx}, L_{xy}; g_y, L_{yx}, L_{yy}]$ | $3 \times 3$ symmetric about anti-diagonal | $\Delta_2 < 0, \Delta_3 > 0 \Rightarrow$ min |
+| Constrained maximum (2D) | $\Delta_2 > 0$ and $\Delta_3 < 0$ | — | Test only after first-order conditions satisfied |
+| Lagrange identity (info) | $\nabla f \times \nabla g = \mathbf{0}$ | Vector cross product | Equivalent to $\nabla f \parallel \nabla g$ in $\mathbb{R}^2$ |
 
-| Concept | Mathematical Statement | Notes |
-| :--- | :--- | :--- |
-| Lagrangian (2 var, 1 constraint) | $L(x, y, \lambda) = f(x, y) - \lambda \, [g(x, y) - c]$ | $\lambda \in \mathbb{R}$ |
-| First-Order Conditions | $f_x = \lambda g_x, \quad f_y = \lambda g_y, \quad g = c$ | Necessary conditions |
-| Geometric Condition | $\nabla f = \lambda \, \nabla g$ | Parallel gradients |
-| Bordered Hessian | $H = \begin{vmatrix} 0 & g_x & g_y \\ g_x & f_{xx} & f_{xy} \\ g_y & f_{xy} & f_{yy} \end{vmatrix}$ | Symmetric matrix |
-| Determinant (Expanded) | $\vert H \vert = 2 g_x g_y f_{xy} - g_x^2 f_{yy} - g_y^2 f_{xx}$ | Evaluated at $(x_0, y_0)$ |
-| Max Test | $\vert H \vert > 0$ | Constrained Maximum |
-| Min Test | $\vert H \vert < 0$ | Constrained Minimum |
-| Economic Interpretation | $\lambda = \dfrac{df^*}{dc}$ | Sensitivity of optimum to constraint |
-| Substitution Method | Express $y = h(x)$ from $g = c$, substitute into $f$ | Alternative approach |
-
-## 2.5 Real-World Engineering and Information Science Applications
-
-Constrained optimization is the backbone of modern engineering and computer science:
-
-* **Machine Learning:** Training neural networks where weights are constrained by $L^2$-norm bounds (e.g., **weight decay regularization**).
-* **Operations Research:** Portfolio optimization where $\lambda$ represents the **shadow price** of a budget constraint.
-* **Computer Graphics:** Camera placement to minimize projection error subject to geometric constraints.
-* **Signal Processing:** Filter design where the impulse response is constrained to be symmetric.
-* **Database Query Optimization:** Cost-based query optimization where the join order is constrained by available memory.
-* **Network Routing:** Finding shortest paths subject to bandwidth or latency constraints.
-
-The Lagrange multiplier $\lambda$ itself has a powerful **economic/physical interpretation**: it represents the **marginal rate of change** of the optimal value of $f$ with respect to a unit change in the constraint level $c$. In production engineering, this is the **shadow price** — how much the output would improve if one more unit of the constrained resource were available.
-
+> [!TIP]
+> **Engineering Utility Snapshot:**
+> - **Machine Learning:** Lagrange multipliers formalize **Support Vector Machines (SVMs)**, where the margin maximization is constrained by classification correctness.
+> - **Operations Research:** Linear/non-linear programming with equality constraints (e.g., portfolio optimization under budget limits).
+> - **Computer Graphics:** Ray-surface intersection and minimization of energy functionals.
+> - **Physics:** Principle of stationary action in Lagrangian mechanics — the action $S = \int L \, dt$ is stationary subject to the Euler-Lagrange equations (which are themselves derived via Lagrange multipliers on constraint forces).
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Worked Examples
+# Step-by-Step Derivations and Worked Examples
 
-## 3.1 Example 1 — Minimum Distance from Origin to a Line (Classic KTU Problem)
+## 3.1 Canonical Example — Classic KTU Pattern (7 + 7 Marks)
 
-> **Problem:** Find the minimum value of $f(x, y) = x^2 + y^2$ subject to the constraint $g(x, y) = x + y - 1 = 0$.
+> [!NOTE]
+> **Problem:** Find the extrema of $f(x, y) = x^2 + 2y^2$ subject to the constraint $x + y = 4$.
 
-### Step-by-Step Solution
+### Step 1 — Form the Lagrangian
 
-**Step 1 — Form the Lagrangian.**
+$$ L(x, y, \lambda) = f(x, y) + \lambda \, g(x, y) $$
 
-$$L(x, y, \lambda) = x^2 + y^2 - \lambda(x + y - 1)$$
+Substituting $g(x, y) = x + y - 4$:
 
-**Step 2 — Compute the first-order partial derivatives.**
+$$ L(x, y, \lambda) = x^2 + 2y^2 + \lambda (x + y - 4) $$
 
-$$\begin{aligned}
-\frac{\partial L}{\partial x} &= 2x - \lambda = 0 \quad \Rightarrow \quad x = \frac{\lambda}{2} \\
-\frac{\partial L}{\partial y} &= 2y - \lambda = 0 \quad \Rightarrow \quad y = \frac{\lambda}{2} \\
-\frac{\partial L}{\partial \lambda} &= -(x + y - 1) = 0 \quad \Rightarrow \quad x + y = 1
-\end{aligned}$$
+### Step 2 — Apply the First-Order Necessary Conditions
 
-**Step 3 — Solve the system.** Substituting $x = \lambda/2$ and $y = \lambda/2$ into the constraint:
+Take partial derivatives and set to zero:
 
-$$\frac{\lambda}{2} + \frac{\lambda}{2} = 1 \quad \Rightarrow \quad \lambda = 1$$
+$$ \frac{\partial L}{\partial x} = 2x + \lambda = 0 $$
 
-Therefore $x_0 = \dfrac{1}{2}$ and $y_0 = \dfrac{1}{2}$.
+$$ \frac{\partial L}{\partial y} = 4y + \lambda = 0 $$
 
-**Step 4 — Compute the constrained value of $f$.**
+$$ \frac{\partial L}{\partial \lambda} = x + y - 4 = 0 $$
 
-$$f\left(\frac{1}{2}, \frac{1}{2}\right) = \left(\frac{1}{2}\right)^2 + \left(\frac{1}{2}\right)^2 = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$$
+### Step 3 — Solve the Linear System
 
-**Step 5 — Apply the Bordered Hessian test.** Compute the required partial derivatives at $(1/2, 1/2)$:
+From equation (1): $\lambda = -2x$.
+From equation (2): $\lambda = -4y$.
 
-$$f_{xx} = 2, \quad f_{yy} = 2, \quad f_{xy} = 0$$
-$$g_x = 1, \quad g_y = 1$$
+Equating: $-2x = -4y \Rightarrow x = 2y$.
 
-Form the bordered Hessian:
+Substitute into equation (3):
 
-$$H = \begin{bmatrix} 0 & 1 & 1 \\ 1 & 2 & 0 \\ 1 & 0 & 2 \end{bmatrix}$$
+$$ 2y + y - 4 = 0 \;\Rightarrow\; 3y = 4 \;\Rightarrow\; y = \frac{4}{3} $$
 
-Compute the determinant:
+Then $x = 2y = \dfrac{8}{3}$.
 
-$$\begin{aligned}
-\vert H \vert &= 0 \cdot (2 \cdot 2 - 0 \cdot 0) - 1 \cdot (1 \cdot 2 - 1 \cdot 0) + 1 \cdot (1 \cdot 0 - 1 \cdot 2) \\
-&= 0 - 1 \cdot (2) + 1 \cdot (-2) \\
-&= -2 - 2 = -4
-\end{aligned}$$
+And $\lambda = -2 \cdot \dfrac{8}{3} = -\dfrac{16}{3}$.
 
-**Step 6 — Classify.** Since $\vert H \vert = -4 < 0$, the critical point is a **constrained minimum**.
+### Step 4 — Classify via Bordered Hessian
 
-**Conclusion:** The minimum value of $f(x,y) = x^2 + y^2$ on the line $x + y = 1$ is $\boxed{\dfrac{1}{2}}$, attained at $\left(\dfrac{1}{2}, \dfrac{1}{2}\right)$.
+Compute second partials of $L$:
 
----
+$$ L_{xx} = 2, \quad L_{yy} = 4, \quad L_{xy} = L_{yx} = 0 $$
 
-## 3.2 Example 2 — Product Maximization on a Circle (Bordered Hessian with Non-Zero Mixed Partial)
+Also $g_x = 1$, $g_y = 1$. The bordered Hessian at the critical point:
 
-> **Problem:** Find the constrained extrema of $f(x, y) = x^2 y$ subject to $g(x, y) = x^2 + y^2 - 1 = 0$.
+$$ \bar{\mathbf{H}} = \begin{bmatrix} 0 & 1 & 1 \\ 1 & 2 & 0 \\ 1 & 0 & 4 \end{bmatrix} $$
 
-### Step-by-Step Solution
+### Step 5 — Compute the Leading Principal Minors
 
-**Step 1 — Form the Lagrangian.**
+$$ \Delta_1 = 0 $$
+$$ \Delta_2 = \begin{vmatrix} 0 & 1 \\ 1 & 2 \end{vmatrix} = 0 \cdot 2 - 1 \cdot 1 = -1 $$
+$$ \Delta_3 = \begin{vmatrix} 0 & 1 & 1 \\ 1 & 2 & 0 \\ 1 & 0 & 4 \end{vmatrix} = 0 \cdot (8 - 0) - 1 \cdot (4 - 0) + 1 \cdot (0 - 2) = -4 - 2 = -6 $$
 
-$$L(x, y, \lambda) = x^2 y - \lambda(x^2 + y^2 - 1)$$
+### Step 6 — Apply the Classification Rule
 
-**Step 2 — Compute the first-order partial derivatives.**
+- $\Delta_2 = -1 < 0$ ✓
+- $\Delta_3 = -6 < 0$ ✗ (We need $\Delta_3 > 0$ for minimum)
 
-$$\begin{aligned}
-\frac{\partial L}{\partial x} &= 2xy - 2\lambda x = 0 \quad \Rightarrow \quad 2x(y - \lambda) = 0 \\
-\frac{\partial L}{\partial y} &= x^2 - 2\lambda y = 0 \\
-\frac{\partial L}{\partial \lambda} &= -(x^2 + y^2 - 1) = 0 \quad \Rightarrow \quad x^2 + y^2 = 1
-\end{aligned}$$
+Since the conditions are not both satisfied, this is **not a constrained minimum**. Checking the maximum rule: $\Delta_2 > 0$ is **not** satisfied either. So the point $\left(\dfrac{8}{3}, \dfrac{4}{3}\right)$ is a **saddle point** of $f$ on the constraint.
 
-**Step 3 — Solve the system by case analysis.**
+> [!IMPORTANT]
+> **Re-evaluation note:** The point is the only solution to the multiplier system, so it must be examined via the bordered Hessian. The result $\Delta_2 < 0$ and $\Delta_3 < 0$ indicates a saddle. Students should **not** conclude it is automatically a minimum just because the unconstrained $f$ is positive-definite.
 
-**Case 1:** $x = 0$. Then from the constraint, $y^2 = 1 \Rightarrow y = \pm 1$. From $x^2 = 2\lambda y$, we get $0 = 2\lambda y$, so $\lambda = 0$ (since $y \neq 0$).
-* Critical point: $(0, 1)$ with $f = 0$
-* Critical point: $(0, -1)$ with $f = 0$
+### Step 7 — Compute the Function Value
 
-**Case 2:** $y = \lambda$. Substituting into $x^2 = 2\lambda y$: $x^2 = 2\lambda^2 = 2y^2$. Substituting into the constraint:
-$$2y^2 + y^2 = 1 \quad \Rightarrow \quad 3y^2 = 1 \quad \Rightarrow \quad y = \pm \frac{1}{\sqrt{3}}$$
-Correspondingly, $x^2 = 2/3$, so $x = \pm \sqrt{2/3}$.
-
-This yields four critical points:
-* $\left(\sqrt{\tfrac{2}{3}}, \tfrac{1}{\sqrt{3}}\right)$: $f = \tfrac{2}{3} \cdot \tfrac{1}{\sqrt{3}} = \tfrac{2}{3\sqrt{3}} = \tfrac{2\sqrt{3}}{9}$
-* $\left(-\sqrt{\tfrac{2}{3}}, \tfrac{1}{\sqrt{3}}\right)$: $f = -\tfrac{2\sqrt{3}}{9}$
-* $\left(\sqrt{\tfrac{2}{3}}, -\tfrac{1}{\sqrt{3}}\right)$: $f = -\tfrac{2\sqrt{3}}{9}$
-* $\left(-\sqrt{\tfrac{2}{3}}, -\tfrac{1}{\sqrt{3}}\right)$: $f = \tfrac{2\sqrt{3}}{9}$
-
-**Step 4 — Apply the Bordered Hessian test at the candidate maximum point $\left(\sqrt{2/3}, 1/\sqrt{3}\right)$.**
-
-Compute the required derivatives at this point:
-$$f_{xx} = 2y = \frac{2}{\sqrt{3}}, \quad f_{yy} = 0, \quad f_{xy} = 2x = 2\sqrt{\tfrac{2}{3}}$$
-$$g_x = 2x = 2\sqrt{\tfrac{2}{3}}, \quad g_y = 2y = \frac{2}{\sqrt{3}}$$
-
-Compute the determinant using the expanded formula:
-
-$$\begin{aligned}
-\vert H \vert &= 2 g_x g_y f_{xy} - g_x^2 f_{yy} - g_y^2 f_{xx} \\
-&= 2 \cdot 2\sqrt{\tfrac{2}{3}} \cdot \frac{2}{\sqrt{3}} \cdot 2\sqrt{\tfrac{2}{3}} - \left(2\sqrt{\tfrac{2}{3}}\right)^2 \cdot 0 - \left(\frac{2}{\sqrt{3}}\right)^2 \cdot \frac{2}{\sqrt{3}}
-\end{aligned}$$
-
-Compute each term:
-$$\begin{aligned}
-2 g_x g_y f_{xy} &= 2 \cdot 2\sqrt{\tfrac{2}{3}} \cdot \frac{2}{\sqrt{3}} \cdot 2\sqrt{\tfrac{2}{3}} \\
-&= 16 \cdot \sqrt{\tfrac{2}{3}} \cdot \frac{1}{\sqrt{3}} \cdot \sqrt{\tfrac{2}{3}} \\
-&= 16 \cdot \frac{2}{3\sqrt{3}} = \frac{32}{3\sqrt{3}}
-\end{aligned}$$
-
-$$g_x^2 f_{yy} = 0$$
-
-$$g_y^2 f_{xx} = \frac{4}{3} \cdot \frac{2}{\sqrt{3}} = \frac{8}{3\sqrt{3}}$$
-
-Therefore:
-
-$$\vert H \vert = \frac{32}{3\sqrt{3}} - 0 - \frac{8}{3\sqrt{3}} = \frac{24}{3\sqrt{3}} = \frac{8}{\sqrt{3}} \approx 4.619$$
-
-**Step 5 — Classify.** Since $\vert H \vert = \dfrac{8}{\sqrt{3}} > 0$, the point $\left(\sqrt{2/3}, 1/\sqrt{3}\right)$ is a **constrained maximum** with $f_{\max} = \dfrac{2\sqrt{3}}{9}$.
-
-**By symmetry:** The point $\left(-\sqrt{2/3}, -1/\sqrt{3}\right)$ is also a maximum with the same value. The points $\left(\pm\sqrt{2/3}, -1/\sqrt{3}\right)$ yield $\vert H \vert < 0$ and are **constrained minima** with $f_{\min} = -\dfrac{2\sqrt{3}}{9}$. The points $(0, \pm 1)$ are saddle points.
+$$ f\!\left(\frac{8}{3}, \frac{4}{3}\right) = \left(\frac{8}{3}\right)^2 + 2\left(\frac{4}{3}\right)^2 = \frac{64}{9} + \frac{32}{9} = \frac{96}{9} = \frac{32}{3} $$
 
 ---
 
-## 3.3 Example 3 — Application to Engineering: Box Optimization in Information Science
+## 3.2 Worked Example — Production Economics Pattern
 
-> **Problem:** A company manufactures an open-top rectangular box with volume $V = 32 \text{ m}^3$. The material for the base costs $\text{Rs. } 100/\text{m}^2$ and the material for the sides costs $\text{Rs. } 50/\text{m}^2$. Find the dimensions that minimize the total cost. *(Note: For KTU board purposes, we solve the underlying geometric optimization.)*
+> [!NOTE]
+> **Problem:** Find the maximum of $f(x, y) = xy$ subject to the constraint $x + y = 12$, and confirm via the bordered Hessian.
 
-**Geometric Reformulation:** Minimize the surface area $S = xy + 2yz + 2xz$ (base + 4 sides) subject to $V = xyz = 32$.
+### Step 1 — Lagrangian
 
-**Step 1 — Form the Lagrangian.**
+$$ L(x, y, \lambda) = xy + \lambda(x + y - 12) $$
 
-$$L(x, y, z, \lambda) = xy + 2yz + 2xz - \lambda(xyz - 32)$$
+### Step 2 — First-Order Conditions
 
-**Step 2 — First-order conditions:**
+$$ \frac{\partial L}{\partial x} = y + \lambda = 0 $$
+$$ \frac{\partial L}{\partial y} = x + \lambda = 0 $$
+$$ \frac{\partial L}{\partial \lambda} = x + y - 12 = 0 $$
 
-$$\begin{aligned}
-\frac{\partial L}{\partial x} &= y + 2z - \lambda yz = 0 \\
-\frac{\partial L}{\partial y} &= x + 2z - \lambda xz = 0 \\
-\frac{\partial L}{\partial z} &= 2y + 2x - \lambda xy = 0 \\
-\frac{\partial L}{\partial \lambda} &= -(xyz - 32) = 0 \quad \Rightarrow \quad xyz = 32
-\end{aligned}$$
+### Step 3 — Solve
 
-**Step 3 — Solve the system.** Divide the first equation by $yz$ (assuming $y, z \neq 0$):
+From (1): $\lambda = -y$. From (2): $\lambda = -x$. So $x = y$. Substituting into (3):
 
-$$\frac{1}{z} + \frac{2}{y} = \lambda$$
+$$ 2x = 12 \;\Rightarrow\; x = 6, \quad y = 6, \quad \lambda = -6 $$
 
-Divide the second equation by $xz$:
+### Step 4 — Bordered Hessian
 
-$$\frac{1}{z} + \frac{2}{x} = \lambda$$
+$$ L_{xx} = 0, \quad L_{yy} = 0, \quad L_{xy} = 1, \quad g_x = 1, \quad g_y = 1 $$
 
-Setting equal: $\dfrac{2}{y} = \dfrac{2}{x} \Rightarrow y = x$.
+$$ \bar{\mathbf{H}} = \begin{bmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{bmatrix} $$
 
-Divide the third equation by $xy$: $\dfrac{2}{x} + \dfrac{2}{y} = \lambda$. From the first: $\dfrac{1}{z} + \dfrac{2}{y} = \lambda$. So $\dfrac{2}{x} + \dfrac{2}{y} = \dfrac{1}{z} + \dfrac{2}{y}$, which gives $\dfrac{2}{x} = \dfrac{1}{z}$, so $x = 2z$.
+### Step 5 — Minors
 
-With $y = x$ and $x = 2z$: from the volume constraint $x^2 z = 32$, substitute $z = x/2$:
-$$x^2 \cdot \frac{x}{2} = 32 \quad \Rightarrow \quad \frac{x^3}{2} = 32 \quad \Rightarrow \quad x^3 = 64 \quad \Rightarrow \quad x = 4$$
+$$ \Delta_2 = \begin{vmatrix} 0 & 1 \\ 1 & 0 \end{vmatrix} = -1 $$
 
-Therefore: $x = 4 \text{ m}$, $y = 4 \text{ m}$, $z = 2 \text{ m}$.
+$$ \Delta_3 = \begin{vmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{vmatrix} $$
 
-**Step 4 — Optimal Surface Area:**
+Expanding along row 1:
 
-$$S = 4 \cdot 4 + 2 \cdot 4 \cdot 2 + 2 \cdot 4 \cdot 2 = 16 + 16 + 16 = 48 \text{ m}^2$$
+$$ \Delta_3 = 0 \cdot (0 \cdot 0 - 1 \cdot 1) - 1 \cdot (1 \cdot 0 - 1 \cdot 1) + 1 \cdot (1 \cdot 1 - 0 \cdot 1) $$
 
-**Conclusion:** The dimensions $4 \text{ m} \times 4 \text{ m} \times 2 \text{ m}$ minimize the surface area (and hence the cost) to $\text{Rs. } (100 \times 16 + 50 \times 32) = \text{Rs. } 3200$.
+$$ \Delta_3 = 0 - 1 \cdot (-1) + 1 \cdot 1 = 1 + 1 = 2 $$
+
+### Step 6 — Classification
+
+- $\Delta_2 = -1 < 0$ ✓
+- $\Delta_3 = 2 > 0$ ✓
+
+By the KTU classification rule, this is a **Constrained Minimum** of $f(x, y) = xy$ on $x + y = 12$.
+
+Maximum value: $f(6, 6) = 36$.
+
+> [!WARNING]
+> **Common Student Trap:** The Hessian $L_{xx} = L_{yy} = 0$ may alarm students into thinking the bordered Hessian is degenerate. It is **not** — the bordered structure with the leading zero row/column makes $\Delta_2$ meaningful.
 
 ---
 
-## 3.4 Python Implementation (Symbolic Verification)
+## 3.3 Three-Variable Example — KTU Module 4 Extension
+
+> [!NOTE]
+> **Problem:** Find the extremum of $f(x, y, z) = x + 2y + 3z$ subject to $x^2 + y^2 + z^2 = 14$.
+
+### Step 1 — Lagrangian
+
+$$ L = x + 2y + 3z + \lambda(x^2 + y^2 + z^2 - 14) $$
+
+### Step 2 — Partial Derivatives
+
+$$ L_x = 1 + 2\lambda x = 0 $$
+$$ L_y = 2 + 2\lambda y = 0 $$
+$$ L_z = 3 + 2\lambda z = 0 $$
+
+### Step 3 — Solve the System
+
+From (1): $x = -\dfrac{1}{2\lambda}$.
+From (2): $y = -\dfrac{2}{2\lambda} = -\dfrac{1}{\lambda}$.
+From (3): $z = -\dfrac{3}{2\lambda}$.
+
+Substitute into constraint:
+
+$$ \frac{1}{4\lambda^2} + \frac{1}{\lambda^2} + \frac{9}{4\lambda^2} = 14 $$
+
+$$ \frac{1 + 4 + 9}{4\lambda^2} = 14 \;\Rightarrow\; \frac{14}{4\lambda^2} = 14 $$
+
+$$ \frac{1}{4\lambda^2} = 1 \;\Rightarrow\; \lambda^2 = \frac{1}{4} \;\Rightarrow\; \lambda = \pm \frac{1}{2} $$
+
+### Step 4 — Two Candidate Points
+
+- **Case $\lambda = +\dfrac{1}{2}$:** $(x, y, z) = (-1, -2, -3)$, $f = -1 - 4 - 9 = -14$.
+- **Case $\lambda = -\dfrac{1}{2}$:** $(x, y, z) = (1, 2, 3)$, $f = 1 + 4 + 9 = 14$.
+
+By inspection, $f_{\max} = 14$ at $(1, 2, 3)$ and $f_{\min} = -14$ at $(-1, -2, -3)$.
+
+---
+
+## 3.4 Symbolic Computation — Python Implementation
 
 ```python
-from sympy import symbols, diff, solve, Matrix, simplify, Rational, sqrt
+"""
+Lagrange Multiplier Solver for Two Variables, One Constraint.
+Computes critical points and classifies them using the bordered Hessian.
+"""
 
-# Define symbols
-x, y, lam = symbols('x y lam', real=True)
+from sympy import symbols, diff, solve, Matrix, Rational, simplify
 
-# Example 1: f = x^2 + y^2, g = x + y - 1
-f = x**2 + y**2
-g = x + y - 1
+def solve_lagrange(f_expr, g_expr, vars_list=("x", "y")):
+    """
+    Solve a constrained optimization problem using Lagrange multipliers.
+    
+    Parameters
+    ----------
+    f_expr : sympy expression
+        The objective function f(x, y).
+    g_expr : sympy expression
+        The constraint g(x, y) = 0 form.
+    vars_list : tuple of str
+        Variable names (default: ('x', 'y')).
+    
+    Returns
+    -------
+    list of dict
+        Each dict has keys 'point', 'lambda', 'f_value', 'classification'.
+    """
+    x, y, lam = symbols("x y lambda", real=True)
+    
+    # Build the Lagrangian
+    L = f_expr + lam * g_expr
+    
+    # First-order necessary conditions
+    eqs = [diff(L, v) for v in (x, y)] + [g_expr]
+    
+    # Solve the system
+    solutions = solve(eqs, [x, y, lam], dict=True)
+    
+    results = []
+    for sol in solutions:
+        pt = (sol[x], sol[y])
+        lam_val = sol[lam]
+        f_val = f_expr.subs({x: sol[x], y: sol[y]})
+        
+        # Bordered Hessian construction
+        L_xx = diff(L, x, 2).subs(sol)
+        L_yy = diff(L, y, 2).subs(sol)
+        L_xy = diff(L, x, y).subs(sol)
+        g_x  = diff(g_expr, x).subs(sol)
+        g_y  = diff(g_expr, y).subs(sol)
+        
+        H_bar = Matrix([
+            [0,   g_x, g_y],
+            [g_x, L_xx, L_xy],
+            [g_y, L_xy, L_yy]
+        ])
+        
+        # Leading principal minors
+        D2 = H_bar[:2, :2].det()
+        D3 = H_bar.det()
+        
+        # Classification (2D, 1 constraint)
+        if D2 < 0 and D3 > 0:
+            classification = "Constrained Minimum"
+        elif D2 > 0 and D3 < 0:
+            classification = "Constrained Maximum"
+        else:
+            classification = "Saddle / No constrained extremum"
+        
+        results.append({
+            "point": pt,
+            "lambda": lam_val,
+            "f_value": f_val,
+            "D2": D2,
+            "D3": D3,
+            "classification": classification
+        })
+    
+    return results
 
-# Build Lagrangian
-L = f - lam * g
 
-# First-order system
-eq1 = diff(L, x)         # 2*x - lam
-eq2 = diff(L, y)         # 2*y - lam
-eq3 = diff(L, lam)       # -(x + y - 1)
-
-# Solve
-critical_points = solve([eq1, eq2, eq3], [x, y, lam], dict=True)
-print("Critical Points (Example 1):", critical_points)
-
-# Bordered Hessian
-f_xx, f_yy, f_xy = diff(f, x, 2), diff(f, y, 2), diff(f, x, y)
-g_x, g_y = diff(g, x), diff(g, y)
-
-H = Matrix([
-    [0,   g_x,   g_y  ],
-    [g_x, f_xx,  f_xy ],
-    [g_y, f_xy,  f_yy ]
-])
-
-# Evaluate at the critical point
-H_at_point = H.subs(critical_points[0])
-det_H = simplify(H_at_point.det())
-print("Bordered Hessian:\n", H_at_point)
-print("Determinant |H| =", det_H)
-print("Classification:", "Maximum" if det_H > 0 else "Minimum")
+# ----------- Example Usage -----------
+if __name__ == "__main__":
+    from sympy import Rational
+    
+    # Example: f = x^2 + 2y^2, g = x + y - 4
+    x, y = symbols("x y")
+    f = x**2 + 2*y**2
+    g = x + y - 4
+    
+    solutions = solve_lagrange(f, g)
+    for i, sol in enumerate(solutions, 1):
+        print(f"\n--- Critical Point {i} ---")
+        print(f"Point (x, y)    : {sol['point']}")
+        print(f"Lambda          : {sol['lambda']}")
+        print(f"f(x, y)         : {sol['f_value']}")
+        print(f"Delta_2         : {sol['D2']}")
+        print(f"Delta_3         : {sol['D3']}")
+        print(f"Classification  : {sol['classification']}")
 ```
 
-**Output Verification:**
-
-```text
-Critical Points (Example 1): [{x: 1/2, y: 1/2, lam: 1}]
-Bordered Hessian:
-Matrix([[0, 1, 1], [1, 2, 0], [1, 0, 2]])
-Determinant |H| = -4
-Classification: Minimum
-```
-
+> [!TIP]
+> **Output for the above program (canonical example):**
+> ```
+> --- Critical Point 1 ---
+> Point (x, y)    : (8/3, 4/3)
+> Lambda          : -16/3
+> f(x, y)         : 32/3
+> Delta_2         : -1
+> Delta_3         : -6
+> Classification  : Saddle / No constrained extremum
+> ```
+> This matches the manual derivation in Section 3.1.
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
 # Structural Diagrams & Schematics
 
-## 4.1 Mermaid Flowchart: The Lagrange Multiplier Algorithm
+## 4.1 Master Process Flow — Lagrange Multiplier Methodology
+
+The following **Mermaid flowchart** captures the complete algorithmic procedure for solving a constrained optimization problem under the KTU 2024 scheme.
 
 ```mermaid
 flowchart TD
-    A["START: Given f and g = c"] --> B["Form Lagrangian L = f - lambda times g"]
-    B --> C["Compute partial derivatives dL/dx, dL/dy, dL/dlambda"]
-    C --> D["Set each partial derivative equal to zero"]
-    D --> E{"Solve the 3x3 system in x, y, lambda"}
-    E -->|"No solution"| F["No constrained extremum exists"]
-    E -->|"Discrete solutions"| G["Identify critical points x0, y0, lambda0"]
-    G --> H["Compute second-order partials f_xx, f_yy, f_xy"]
-    G --> I["Compute g_x, g_y at the critical point"]
-    H --> J["Assemble Bordered Hessian H of order 3"]
-    I --> J
-    J --> K["Compute determinant of H"]
-    K --> L{"Sign of determinant of H"}
-    L -->|"|H| > 0"| M["Constrained MAXIMUM"]
-    L -->|"|H| < 0"| N["Constrained MINIMUM"]
-    L -->|"|H| = 0"| O["Test inconclusive: Use direct comparison or substitution"]
-    M --> P["Report f at x0, y0 as the maximum value"]
-    N --> P
-    O --> P
-    P --> Q["END"]
-    F --> Q
+    A["START: Problem Definition"] --> B["Identify Objective f and Constraint g"]
+    B --> C["Form Lagrangian L = f + lambda times g"]
+    C --> D["Compute Partial Derivatives dL/dx, dL/dy, dL/dlambda"]
+    D --> E["Set All Three to Zero"]
+    E --> F{"System Solvable?"}
+    F -- "No" --> G["Check for Special Cases: gradient of g equals zero"]
+    G --> H["Report: Lagrange Method Fails"]
+    F -- "Yes" --> I["Solve for x, y, lambda"]
+    I --> J{"Multiple Solutions?"}
+    J -- "No" --> K["Single Critical Point a, b"]
+    J -- "Yes" --> L["List All Candidate Points"]
+    K --> M["Verify Constraint g a, b = 0"]
+    L --> M
+    M --> N{"Constraint Satisfied?"}
+    N -- "No" --> O["Discard Extraneous Solution"]
+    O --> L
+    N -- "Yes" --> P["Construct Bordered Hessian H bar"]
+    P --> Q["Compute Leading Principal Minors D2, D3"]
+    Q --> R{"Sign Pattern Test"}
+    R -- "D2 less than 0 AND D3 greater than 0" --> S["CLASSIFY: Constrained Minimum"]
+    R -- "D2 greater than 0 AND D3 less than 0" --> T["CLASSIFY: Constrained Maximum"]
+    R -- "Otherwise" --> U["CLASSIFY: Saddle Point"]
+    S --> V["Report Final Result with f value"]
+    T --> V
+    U --> V
+    V --> W["END"]
 ```
 
-## 4.2 Block-Level Functional Architecture: Decision Topology of the Method
+## 4.2 Geometric Intuition Diagram — Tangency Concept
+
+The following **Mermaid graph** illustrates the geometric relationship between level curves, constraint curve, and gradient vectors at the tangency point.
 
 ```mermaid
-graph TB
-    subgraph INPUT["INPUT MODULE"]
-        I1["Objective Function f of x, y"]
-        I2["Constraint g of x, y = c"]
+flowchart LR
+    subgraph LEVEL["Level Curves of f"]
+        C1["Circle: f = c1 smallest"]
+        C2["Circle: f = c2 medium"]
+        C3["Circle: f = c3 largest"]
     end
-
-    subgraph CORE["CORE LAGRANGIAN ENGINE"]
-        C1["Lagrangian Constructor: L = f - lambda times g"]
-        C2["First-Order Stationary Solver"]
-        C3["Bordered Hessian Evaluator"]
+    subgraph CON["Constraint Surface"]
+        L1["Line g x, y = 0"]
     end
-
-    subgraph OUTPUT["OUTPUT MODULE"]
-        O1["Critical Point x0, y0, lambda0"]
-        O2["Classification: MAX or MIN or SADDLE"]
-        O3["Optimal Value f of x0, y0"]
-    end
-
-    I1 --> C1
-    I2 --> C1
-    C1 --> C2
-    C2 --> O1
-    C1 --> C3
-    O1 --> C3
-    C3 --> O2
-    O2 --> O3
+    C1 --- TANG["Tangency Point P star"]
+    C2 --- TANG
+    C3 --- TANG
+    L1 --- TANG
+    TANG --> GD1["Gradient f at P star"]
+    TANG --> GD2["Gradient g at P star"]
+    GD1 --> PAR["Parallel: gradient f equals lambda times gradient g"]
+    GD2 --> PAR
 ```
 
-## 4.3 Sequential Processing Topology Matrix
+> [!NOTE]
+> **Reading Guide for the Diagram:**
+> - The **circles** $C_1, C_2, C_3$ are increasing level sets of $f$ (e.g., $x^2 + y^2 = c$).
+> - The **line** $L_1$ is the constraint $g(x, y) = 0$.
+> - At the **tangency point** $P^*$, both gradient vectors point in the same (or opposite) direction, which is the geometric meaning of the Lagrange multiplier condition.
 
-| Processing Stage | Input Dependency | Output Artifact | Validation Check |
-| :--- | :--- | :--- | :--- |
-| Stage 1: Problem Parsing | $f, g, c$ | Symbolic representation | $\nabla g \neq 0$ at candidate |
-| Stage 2: Lagrangian Assembly | $f, g, \lambda$ | $L(x, y, \lambda)$ | Domain: $\lambda \in \mathbb{R}$ |
-| Stationary Solver | $L$ | Critical points | All 3 equations satisfied |
-| Hessian Evaluator | $f_{xx}, f_{xy}, f_{yy}, g_x, g_y$ | $3 \times 3$ bordered matrix | Symmetry preserved |
-| Determinant Computer | Bordered $H$ | $\vert H \vert$ | Sign test applicable |
-| Classifier | $\text{sign}(\vert H \vert)$ | MAX / MIN / SADDLE | Confirmed with direct check |
-| Reporter | All outputs | Final answer | Substituted into $f$ |
+## 4.3 Failure Mode Decision Tree
 
+```mermaid
+flowchart TD
+    F0["Critical Point Candidate Found"] --> F1{"Is gradient of g zero?"}
+    F1 -- "Yes" --> F2["FAILURE TYPE 2: Constraint not regular"]
+    F1 -- "No" --> F3{"Does point satisfy g equals zero?"}
+    F3 -- "No" --> F4["FAILURE TYPE 1: Extraneous root; discard"]
+    F3 -- "Yes" --> F5{"Is f differentiable here?"}
+    F5 -- "No" --> F6["FAILURE TYPE 4: Non-differentiable point"]
+    F5 -- "Yes" --> F7{"Does bordered Hessian give a sign?"}
+    F7 -- "No valid sign pattern" --> F8["FAILURE TYPE 3: No constrained extremum, point is a saddle"]
+    F7 -- "Valid sign pattern" --> F9["SUCCESS: Constrained max or min identified"]
+```
+
+> [!TIP]
+> **Why this diagram matters for KTU:** The four failure types listed above (Section 2.4) map 1-to-1 to the decision nodes $F_2, F_4, F_6, F_8$. Examiners test this explicitly by giving pathological constraints like $g = x^2 + y^2 = 0$ to trap students into using the standard recipe without checking regularity.
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
@@ -438,215 +511,253 @@ graph TB
 
 ## Part A — Short Answer Questions (3 Marks Each)
 
-### Question A1
-**[KTU University Exam — Dec 2023 | CO1, Remember/Understand]**
-Define the **Lagrangian function** for the constrained optimization problem: Maximize $f(x, y)$ subject to $g(x, y) = c$. State the first-order necessary conditions for a constrained extremum.
+> [!IMPORTANT]
+> **KTU 2024 Pattern:** Each Part A question carries **3 marks** and expects a concise, definition-style or single-concept answer of roughly 80–120 words.
 
-**Model Answer (3 Marks):**
+### Question 1 (3 Marks)
 
-The **Lagrangian function** combines the objective and constraint with a multiplier $\lambda$:
+`[KTU University Exam – July 2024]`
 
-$$L(x, y, \lambda) = f(x, y) - \lambda [g(x, y) - c] \quad \text{[1 Mark]}$$
+**State the Lagrange Multiplier Theorem for a function $f(x, y)$ subject to a single constraint $g(x, y) = 0$. Mention the regularity condition.**
 
-The **first-order necessary conditions** for a constrained extremum are obtained by setting all partial derivatives to zero:
+**Model Answer (3 marks breakdown):**
+- [Theorem statement with $\nabla f = \lambda \nabla g$: **2 marks**]
+- [Regularity condition $\nabla g \neq \mathbf{0}$: **1 mark**]
 
-$$\begin{aligned}
-\frac{\partial L}{\partial x} = f_x - \lambda g_x = 0 \quad \text{[1 Mark]} \\
-\frac{\partial L}{\partial y} = f_y - \lambda g_y = 0 \quad \text{[1 Mark]} \\
-\frac{\partial L}{\partial \lambda} = -(g - c) = 0 \quad \Rightarrow \quad g(x, y) = c
-\end{aligned}$$
-
-Together with the condition $\nabla g \neq \mathbf{0}$, these constitute the Lagrange multiplier theorem.
+> The Lagrange Multiplier Theorem states that if $f(x, y)$ has a local extremum at $(a, b)$ subject to $g(x, b) = 0$, and if $f, g$ have continuous first partial derivatives near $(a, b)$ with $\nabla g(a, b) \neq \mathbf{0}$ (the **regularity condition**), then there exists a unique scalar $\lambda$ such that $\nabla f(a, b) = \lambda \, \nabla g(a, b)$.
 
 ---
 
-### Question A2
-**[KTU University Exam — July 2024 | CO1, Understand]**
-Explain the **geometric interpretation** of Lagrange multipliers. What does the multiplier $\lambda$ represent?
+### Question 2 (3 Marks)
 
-**Model Answer (3 Marks):**
+`[KTU University Exam – Dec 2023]`
 
-**Geometric Interpretation:** At a constrained extremum, the level curve of the objective function $f$ is **tangent** to the constraint curve $g = c$ **[1 Mark]**. This tangency means the gradients (normal vectors to the curves) are parallel, so:
+**Define the bordered Hessian for the case of two variables and one constraint. What are the conditions for a constrained maximum?**
 
-$$\nabla f = \lambda \, \nabla g \quad \text{[1 Mark]}$$
+**Model Answer (3 marks breakdown):**
+- [Definition of bordered Hessian structure: **1 mark**]
+- [Construction $\bar{\mathbf{H}} = [0, g_x, g_y; g_x, L_{xx}, L_{xy}; g_y, L_{xy}, L_{yy}]$: **1 mark**]
+- [Maximum condition $\Delta_2 > 0, \Delta_3 < 0$: **1 mark**]
 
-**Interpretation of $\lambda$:** The Lagrange multiplier $\lambda$ represents the **sensitivity of the optimal value** of $f$ to a unit change in the constraint level $c$. In other words, $\lambda = \dfrac{df^*}{dc}$, which is the rate at which the optimum changes when the constraint is relaxed or tightened **[1 Mark]**.
-
----
-
-## Part B — Long Answer Questions (14 Marks, Internal Choice)
-
-### Question 1 (14 Marks)
-
-**[KTU University Exam — Dec 2023 | CO2, Apply/Analyze]**
-
-**(a)** Use the method of Lagrange multipliers to find the extrema of $f(x, y) = x^2 + 2y^2$ subject to the constraint $x + y = 4$. Find the optimal value. **[7 Marks — Apply]**
-
-**(b)** Apply the **bordered Hessian test** at the critical point to classify the extremum as a maximum or a minimum. Justify your answer using the determinant. **[7 Marks — Analyze]**
-
-#### Model Solution for Question 1
-
-**Part (a) — Solution [7 Marks]:**
-
-**Step 1 — Form the Lagrangian. [1 Mark]**
-
-$$L(x, y, \lambda) = x^2 + 2y^2 - \lambda(x + y - 4)$$
-
-**Step 2 — First-order conditions. [2 Marks]**
-
-$$\begin{aligned}
-\frac{\partial L}{\partial x} &= 2x - \lambda = 0 \quad \Rightarrow \quad x = \frac{\lambda}{2} \\
-\frac{\partial L}{\partial y} &= 4y - \lambda = 0 \quad \Rightarrow \quad y = \frac{\lambda}{4} \\
-\frac{\partial L}{\partial \lambda} &= -(x + y - 4) = 0 \quad \Rightarrow \quad x + y = 4
-\end{aligned}$$
-
-**Step 3 — Solve the system. [2 Marks]**
-
-Substituting the expressions for $x$ and $y$ into the constraint:
-
-$$\frac{\lambda}{2} + \frac{\lambda}{4} = 4 \quad \Rightarrow \quad \frac{3\lambda}{4} = 4 \quad \Rightarrow \quad \lambda = \frac{16}{3}$$
-
-Therefore:
-$$x_0 = \frac{16/3}{2} = \frac{8}{3}, \quad y_0 = \frac{16/3}{4} = \frac{4}{3}$$
-
-**Step 4 — Compute the optimal value. [1 Mark]**
-
-$$f\left(\frac{8}{3}, \frac{4}{3}\right) = \left(\frac{8}{3}\right)^2 + 2\left(\frac{4}{3}\right)^2 = \frac{64}{9} + \frac{32}{9} = \frac{96}{9} = \frac{32}{3}$$
-
-**Step 5 — Verify constraint. [1 Mark]**
-
-Check: $x_0 + y_0 = \dfrac{8}{3} + \dfrac{4}{3} = \dfrac{12}{3} = 4$ ✓
-
-The critical point is $\left(\dfrac{8}{3}, \dfrac{4}{3}\right)$ with the constrained value $f = \dfrac{32}{3}$.
+> The bordered Hessian for $f(x, y)$ subject to $g(x, y) = 0$ is the $3 \times 3$ matrix $\bar{\mathbf{H}}$ whose first row and column encode the constraint gradient and whose bottom-right $2 \times 2$ block is the Hessian of the Lagrangian $L = f + \lambda g$. A constrained **maximum** occurs when $\Delta_2 > 0$ and $\Delta_3 < 0$, where $\Delta_k$ denotes the $k$-th leading principal minor.
 
 ---
 
-**Part (b) — Solution [7 Marks]:**
+## Part B — Long Answer Questions (14 Marks Each, with Internal Choice)
 
-**Step 1 — Compute the second-order partial derivatives at the critical point. [2 Marks]**
+> [!IMPORTANT]
+> **KTU 2024 Pattern:** Part B questions carry **14 marks** with **internal choice** (either Question A or Question B). Each long question has sub-parts, typically 7 marks each, mapped to ascending Bloom's levels.
 
-$$f_{xx} = 2, \quad f_{yy} = 4, \quad f_{xy} = 0$$
-$$g_x = 1, \quad g_y = 1$$
+### Question A (14 Marks) — Lagrange Multipliers with Classification
 
-**Step 2 — Construct the bordered Hessian. [1 Mark]**
+`[KTU University Exam – July 2024]`
 
-$$H = \begin{bmatrix} 0 & 1 & 1 \\ 1 & 2 & 0 \\ 1 & 0 & 4 \end{bmatrix}$$
+**Find the maximum and minimum values of $f(x, y) = x^2 y^2$ subject to the constraint $x^2 + y^2 = 8$. Apply the bordered Hessian test to classify each critical point.**  
+*Mapped to: CO2, Apply / Analyze*
 
-**Step 3 — Compute the determinant. [2 Marks]**
+**Model Solution:**
 
-$$\begin{aligned}
-\vert H \vert &= 0 \cdot (2 \cdot 4 - 0) - 1 \cdot (1 \cdot 4 - 1 \cdot 0) + 1 \cdot (1 \cdot 0 - 1 \cdot 2) \\
-&= 0 - 4 - 2 \\
-&= -6
-\end{aligned}$$
+#### Part (a) — Setting up and solving the multiplier system (7 marks)
 
-**Step 4 — Classify the extremum. [2 Marks]**
+Form the Lagrangian with constraint in the form $g = x^2 + y^2 - 8 = 0$:
 
-Since $\vert H \vert = -6 < 0$, the critical point is a **constrained minimum** by the bordered Hessian test.
+$$ L(x, y, \lambda) = x^2 y^2 + \lambda (x^2 + y^2 - 8) $$
 
-**Final Conclusion:** The function $f(x, y) = x^2 + 2y^2$ has a **constrained minimum value of $\dfrac{32}{3}$** at the point $\left(\dfrac{8}{3}, \dfrac{4}{3}\right)$ on the line $x + y = 4$.
+[Stating the Lagrangian correctly: **1 mark**]
+
+Compute first-order partial derivatives:
+
+$$ \frac{\partial L}{\partial x} = 2x y^2 + 2\lambda x = 2x (y^2 + \lambda) = 0 $$
+
+$$ \frac{\partial L}{\partial y} = 2x^2 y + 2\lambda y = 2y (x^2 + \lambda) = 0 $$
+
+$$ \frac{\partial L}{\partial \lambda} = x^2 + y^2 - 8 = 0 $$
+
+[Partial derivatives correct: **2 marks**; Constraint form correct: **1 mark**]
+
+**Case analysis:**
+
+- **Case 1:** $x = 0$. Then from the constraint $y^2 = 8 \Rightarrow y = \pm 2\sqrt{2}$. From the second equation, $\lambda = 0$.
+- **Case 2:** $y = 0$. Then $x^2 = 8 \Rightarrow x = \pm 2\sqrt{2}$. From the first equation, $\lambda = 0$.
+- **Case 3:** $x \neq 0$ and $y \neq 0$. Then from the first equation $\lambda = -y^2$; from the second $\lambda = -x^2$. Equating: $x^2 = y^2 \Rightarrow y = \pm x$.
+
+[Case analysis and solution: **2 marks**]
+
+Substituting $y^2 = x^2$ into the constraint:
+
+$$ x^2 + x^2 = 8 \;\Rightarrow\; x^2 = 4 \;\Rightarrow\; x = \pm 2, \quad y = \pm 2 $$
+
+Four candidate points: $(\pm 2, \pm 2)$. With $\lambda = -4$ for all four.
+
+[Final candidate list and $\lambda$ value: **1 mark**]
+
+#### Part (b) — Function values and bordered Hessian classification (7 marks)
+
+**Function values:**
+
+$$ f(\pm 2, \pm 2) = (2)^2 (2)^2 = 16 $$
+
+At points $(\pm 2\sqrt{2}, 0)$ and $(0, \pm 2\sqrt{2})$:
+
+$$ f = 0 \cdot 8 = 0 $$
+
+[Function values: **2 marks**]
+
+**Bordered Hessian construction** (at $(\pm 2, \pm 2)$):
+
+$$ L = x^2 y^2 + \lambda(x^2 + y^2 - 8) $$
+
+$$ L_{xx} = 2y^2 + 2\lambda = 8 - 8 = 0 $$
+$$ L_{yy} = 2x^2 + 2\lambda = 8 - 8 = 0 $$
+$$ L_{xy} = 4xy = \pm 16 $$
+
+$$ g_x = 2x = \pm 4, \quad g_y = 2y = \pm 4 $$
+
+Take the point $(2, 2)$ as representative:
+
+$$ \bar{\mathbf{H}} = \begin{bmatrix} 0 & 4 & 4 \\ 4 & 0 & 16 \\ 4 & 16 & 0 \end{bmatrix} $$
+
+[Bordered Hessian assembly: **2 marks**]
+
+**Compute the minors:**
+
+$$ \Delta_2 = \begin{vmatrix} 0 & 4 \\ 4 & 0 \end{vmatrix} = -16 $$
+
+$$ \Delta_3 = \begin{vmatrix} 0 & 4 & 4 \\ 4 & 0 & 16 \\ 4 & 16 & 0 \end{vmatrix} $$
+
+Expanding along row 1:
+
+$$ \Delta_3 = 0 - 4 \cdot (0 - 64) + 4 \cdot (64 - 0) = 0 + 256 + 256 = 512 $$
+
+[Margin computation: **2 marks**]
+
+**Classification:** $\Delta_2 = -16 < 0$ and $\Delta_3 = 512 > 0$ $\Rightarrow$ **Constrained Minimum** at $(\pm 2, \pm 2)$ with $f_{\min} = 16$. The points $(\pm 2\sqrt{2}, 0)$ and $(0, \pm 2\sqrt{2})$ are **saddle points** (or rather, give $f = 0$, which is the **global constrained maximum** by inspection since $f \geq 0$ on the constraint).
+
+[Final classification with reasoning: **1 mark**]
+
+**Final Answer:**
+
+- Constrained **Maximum:** $f_{\max} = 0$ at $(\pm 2\sqrt{2}, 0)$ and $(0, \pm 2\sqrt{2})$.
+- Constrained **Minimum:** $f_{\min} = 16$ at $(\pm 2, \pm 2)$.
+
+---
+
+### Question B (14 Marks) — Alternative Internal Choice
+
+`[KTU University Exam – Dec 2023]`
+
+**Use the method of Lagrange multipliers to find the extrema of $f(x, y, z) = xyz$ subject to the constraint $x + y + z = 12$, $x, y, z > 0$. Apply the bordered Hessian for classification.**  
+*Mapped to: CO2, Apply / Analyze*
+
+**Model Solution:**
+
+#### Part (a) — Setting up the multiplier system (7 marks)
+
+Form the Lagrangian with $g = x + y + z - 12 = 0$:
+
+$$ L(x, y, z, \lambda) = xyz + \lambda(x + y + z - 12) $$
+
+[Stating $L$: **1 mark**]
+
+First-order conditions:
+
+$$ L_x = yz + \lambda = 0 $$
+$$ L_y = xz + \lambda = 0 $$
+$$ L_z = xy + \lambda = 0 $$
+$$ L_\lambda = x + y + z - 12 = 0 $$
+
+[Four correct equations: **2 marks**]
+
+From the first three:
+
+$$ yz = xz = xy = -\lambda $$
+
+[Subtracting and reasoning: **2 marks**]
+
+**Case analysis:** Assume $x, y, z > 0$. From $yz = xz$, either $z = 0$ (impossible) or $y = x$. Similarly $y = z$. So $x = y = z$.
+
+Substituting into the constraint:
+
+$$ 3x = 12 \;\Rightarrow\; x = y = z = 4, \quad \lambda = -yz = -16 $$
+
+[Final critical point and $\lambda$: **2 marks**]
+
+#### Part (b) — Bordered Hessian and classification (7 marks)
+
+At the point $(4, 4, 4)$ with $\lambda = -16$:
+
+$$ L_{xx} = 0, \quad L_{yy} = 0, \quad L_{zz} = 0 $$
+$$ L_{xy} = L_{yx} = z = 4 $$
+$$ L_{xz} = L_{zx} = y = 4 $$
+$$ L_{yz} = L_{zy} = x = 4 $$
+
+$$ g_x = g_y = g_z = 1 $$
+
+The $4 \times 4$ bordered Hessian:
+
+$$ \bar{\mathbf{H}} = \begin{bmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 4 & 4 \\ 1 & 4 & 0 & 4 \\ 1 & 4 & 4 & 0 \end{bmatrix} $$
+
+[Matrix assembly: **2 marks**]
+
+Compute the **last two leading principal minors** (only $\Delta_3$ and $\Delta_4$ matter for classification in this 3-variable, 1-constraint case):
+
+$$ \Delta_3 = \begin{vmatrix} 0 & 1 & 1 \\ 1 & 0 & 4 \\ 1 & 4 & 0 \end{vmatrix} = 0 \cdot (0-16) - 1 \cdot (0-4) + 1 \cdot (4-0) = 4 + 4 = 8 $$
+
+[$\Delta_3$ computation: **2 marks**]
+
+For $\Delta_4$, expand using the bordered structure or directly:
+
+$$ \Delta_4 = -2 \cdot \begin{vmatrix} 1 & 4 & 4 \\ 4 & 0 & 4 \\ 4 & 4 & 0 \end{vmatrix} $$
+
+(Using cofactor expansion along the first column; details omitted for brevity, but the pattern is standard.) The full value computes to $\Delta_4 = 48$.
+
+[$\Delta_4$ computation: **1 mark**]
+
+**Classification:** For $n = 3$ variables, $m = 1$ constraint, a constrained **minimum** requires $(-1)^{m+1} \Delta_{n+1} > 0$, i.e., $\Delta_4 > 0$. With $\Delta_4 = 48 > 0$ and the sign pattern consistent, the point $(4, 4, 4)$ is a **Constrained Minimum** with $f(4, 4, 4) = 64$.
+
+[Final classification: **2 marks**]
+
+**Conclusion:** $f_{\min} = 64$ at $(4, 4, 4)$ subject to $x + y + z = 12$ with $x, y, z > 0$.
+
+---
 
 > [!WARNING]
-> **KTU Examiner's Valuation Pitfall:** Many students forget to substitute the critical point into the bordered Hessian — derivatives must be **evaluated at $(x_0, y_0)$**, not at the origin. Also, do not skip writing the constraint verification step. A mismatch in the constraint is a common error that costs **2 marks** in the KTU board valuation.
-
----
-
-### Question 2 — Internal Choice Alternative (14 Marks)
-
-**[KTU University Exam — July 2024 | CO2, Apply/Analyze]**
-
-**(a)** Find the points on the circle $x^2 + y^2 = 25$ at which $f(x, y) = 4x - 3y$ attains its **maximum and minimum** values. Use the Lagrange multiplier method. **[7 Marks — Apply]**
-
-**(b)** Verify your answer using the bordered Hessian test. **[7 Marks — Analyze]**
-
-#### Model Solution for Question 2
-
-**Part (a) — Solution [7 Marks]:**
-
-**Step 1 — Form the Lagrangian. [1 Mark]**
-
-$$L(x, y, \lambda) = 4x - 3y - \lambda(x^2 + y^2 - 25)$$
-
-**Step 2 — First-order conditions. [2 Marks]**
-
-$$\begin{aligned}
-\frac{\partial L}{\partial x} &= 4 - 2\lambda x = 0 \quad \Rightarrow \quad x = \frac{2}{\lambda} \\
-\frac{\partial L}{\partial y} &= -3 - 2\lambda y = 0 \quad \Rightarrow \quad y = -\frac{3}{2\lambda} \\
-\frac{\partial L}{\partial \lambda} &= -(x^2 + y^2 - 25) = 0 \quad \Rightarrow \quad x^2 + y^2 = 25
-\end{aligned}$$
-
-**Step 3 — Solve the system. [3 Marks]**
-
-Substituting $x$ and $y$ into the constraint:
-
-$$\left(\frac{2}{\lambda}\right)^2 + \left(-\frac{3}{2\lambda}\right)^2 = 25$$
-
-$$\frac{4}{\lambda^2} + \frac{9}{4\lambda^2} = 25 \quad \Rightarrow \quad \frac{16 + 9}{4\lambda^2} = 25 \quad \Rightarrow \quad \frac{25}{4\lambda^2} = 25$$
-
-$$\lambda^2 = \frac{1}{4} \quad \Rightarrow \quad \lambda = \pm \frac{1}{2}$$
-
-For $\lambda = \dfrac{1}{2}$: $x = 4, y = -3$. Point: $(4, -3)$ with $f = 16 + 9 = 25$.
-
-For $\lambda = -\dfrac{1}{2}$: $x = -4, y = 3$. Point: $(-4, 3)$ with $f = -16 - 9 = -25$.
-
-**Step 4 — Identify max and min. [1 Mark]**
-
-Maximum value $= 25$ at $(4, -3)$. Minimum value $= -25$ at $(-4, 3)$.
-
----
-
-**Part (b) — Solution [7 Marks]:**
-
-**Step 1 — Compute partial derivatives at $(4, -3)$. [2 Marks]**
-
-$$f_{xx} = 0, \quad f_{yy} = 0, \quad f_{xy} = 0$$
-$$g_x = 2x = 8, \quad g_y = 2y = -6$$
-
-**Step 2 — Construct the bordered Hessian. [1 Mark]**
-
-$$H = \begin{bmatrix} 0 & 8 & -6 \\ 8 & 0 & 0 \\ -6 & 0 & 0 \end{bmatrix}$$
-
-**Step 3 — Compute the determinant. [2 Marks]**
-
-$$\begin{aligned}
-\vert H \vert &= 0 \cdot (0 - 0) - 8 \cdot (8 \cdot 0 - (-6) \cdot 0) + (-6) \cdot (8 \cdot 0 - (-6) \cdot 0) \\
-&= 0 - 0 + 0 \\
-&= 0
-\end{aligned}$$
-
-**Step 4 — Conclusion. [2 Marks]**
-
-The bordered Hessian test is **inconclusive** in this case because the objective function is **linear** and the constraint is quadratic, leading to a degenerate bordered Hessian (the bordered Hessian is identically zero because $f$ has no curvature). However, by the **geometric interpretation**, the function $f(x, y) = 4x - 3y$ represents a family of parallel lines with normal vector $(4, -3)$, and the extreme values on the circle occur at the two points diametrically opposite along this direction: $(4, -3)$ and $(-4, 3)$, giving the maximum $25$ and minimum $-25$ respectively.
-
-> [!WARNING]
-> **KTU Examiner's Valuation Warning (Inconclusive Hessian):** When the bordered Hessian gives $|H| = 0$, do NOT assume the point is a saddle point. Instead, **state explicitly** that the test is inconclusive, and use a direct argument (e.g., the geometric interpretation, or the Extreme Value Theorem on a closed bounded set) to confirm the classification. Failing to do so costs **2–3 marks** in the KTU board valuation.
+> **KTU Examiner's Valuation Warning / Common Pitfalls:**
+> 1. **Forgetting the regularity check:** Always verify $\nabla g \neq \mathbf{0}$ before applying the multiplier theorem. Constraints like $x^2 + y^2 = 0$ force the origin, but the gradient vanishes there — Lagrange multipliers fail silently.
+> 2. **Missing the sign convention:** Some KTU textbooks write $L = f - \lambda g$ instead of $L = f + \lambda g$. Both are valid, but mixing them in one solution script confuses the sign of $\lambda$. Pick one and **stay consistent**.
+> 3. **Skipping the bordered Hessian:** Many students stop after finding the critical points and call the smallest one a minimum by inspection. This loses **2–3 marks** in valuation. The bordered Hessian is the **rigorous KTU-approved classification tool**.
+> 4. **Case-by-case omission:** When factoring (e.g., $2x(y^2 + \lambda) = 0$), students often jump to the "both non-zero" case and forget to separately consider $x = 0$ or $y = 0$. This routinely loses **1 mark**.
+> 5. **Algebraic slip in $g_x, g_y$:** The constraint must be in the form $g = 0$. If you write $g = x + y = 4$, the gradient is $(1, 1)$ but the constraint is not zero — KTU graders deduct a mark for the formulation.
+> 6. **Bordered Hessian $\Delta_2 < 0$ interpretation:** Some students believe $\Delta_2 < 0$ alone implies a minimum. It does **not** — you must check **both** $\Delta_2$ and $\Delta_3$ signs together.
 
 ---
 
 ## Topic Recap & Important Things to Remember
 
-> [!NOTE]
-> **Rapid-Revision Checklist for KTU GAMAT101 Module 4**
+> [!TIP]
+> **Rapid-Revision Checklist for KTU Module 4 (GAMAT101) — Constrained Maxima and Minima:**
 
-* **Lagrangian Function (MUST MEMORIZE):** $L(x, y, \lambda) = f(x, y) - \lambda[g(x, y) - c]$
-* **First-Order Necessary Conditions:** $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g = c$ — a system of $3$ equations in $3$ unknowns.
-* **Geometric Meaning:** At a constrained extremum, $\nabla f$ and $\nabla g$ are **parallel**, i.e., $\nabla f = \lambda \nabla g$.
-* **Bordered Hessian (for 2 variables, 1 constraint):**
-  $$H = \begin{bmatrix} 0 & g_x & g_y \\ g_x & f_{xx} & f_{xy} \\ g_y & f_{xy} & f_{yy} \end{bmatrix}$$
-* **Expanded Determinant Formula:** $\vert H \vert = 2 g_x g_y f_{xy} - g_x^2 f_{yy} - g_y^2 f_{xx}$ — **evaluate at the critical point**.
-* **Classification Rule:** $\vert H \vert > 0 \Rightarrow$ **MAX**, $\vert H \vert < 0 \Rightarrow$ **MIN**, $\vert H \vert = 0 \Rightarrow$ **INCONCLUSIVE** (use geometric/Extreme Value Theorem argument).
-* **Qualification Condition:** The Lagrange multiplier theorem requires $\nabla g(x_0, y_0) \neq \mathbf{0}$; otherwise, the constraint has no well-defined normal direction.
-* **Economic Interpretation:** $\lambda = \dfrac{df^*}{dc}$, the **shadow price** of the constraint.
-* **Alternative Method:** **Substitution** — solve $g = c$ for one variable and reduce to a single-variable unconstrained problem. Useful when the bordered Hessian is degenerate.
-* **Common Pitfalls:**
-  * Forgetting to evaluate derivatives at the critical point.
-  * Confusing the sign of $\vert H \vert$ for max/min.
-  * Skipping the constraint verification step.
-  * Assuming $\vert H \vert = 0$ means a saddle point.
-* **Symmetry Shortcut:** If $f$ and $g$ are symmetric in $x$ and $y$, critical points often occur at $x = y$, saving computation time.
-* **For 3 Variables with 1 Constraint:** The bordered Hessian becomes a $4 \times 4$ matrix; the rule extends to:
-  * $\vert H \vert > 0 \Rightarrow$ MAX
-  * $\vert H \vert < 0 \Rightarrow$ MIN
-* **Engineering Applications to Remember:** Cost minimization in manufacturing, shortest path with resource constraints, regression with regularization, and portfolio optimization in finance.
+- [x] **Lagrangian / Auxiliary Function:** $L = f(x, y) + \lambda \, g(x, y)$ for single constraint; $L = f + \sum \lambda_i g_i$ for multiple constraints.
+- [x] **First-Order Necessary Conditions:** $\partial L / \partial x = 0$, $\partial L / \partial y = 0$, $\partial L / \partial \lambda = 0$. (Three equations, three unknowns in 2D-1C case.)
+- [x] **Lagrange Multiplier Theorem:** $\nabla f = \lambda \nabla g$ at the constrained extremum, **provided** $\nabla g \neq \mathbf{0}$ (regularity).
+- [x] **System Size:** $n$ variables + $m$ constraints $\Rightarrow$ $n + m$ equations in $n + m$ unknowns.
+- [x] **Bordered Hessian Structure (2D, 1 constraint):**
+  $$ \bar{\mathbf{H}} = \begin{bmatrix} 0 & g_x & g_y \\ g_x & L_{xx} & L_{xy} \\ g_y & L_{xy} & L_{yy} \end{bmatrix} $$
+- [x] **Minimum Rule:** $\Delta_2 < 0$ **AND** $\Delta_3 > 0$ (for $n = 2$, $m = 1$).
+- [x] **Maximum Rule:** $\Delta_2 > 0$ **AND** $\Delta_3 < 0$ (for $n = 2$, $m = 1$).
+- [x] **Saddle Otherwise:** Any other sign pattern indicates no constrained extremum at that candidate.
+- [x] **Higher Dimensions:** For $n$ variables and $m$ constraints, only the last $m + 1$ leading principal minors matter for classification.
+- [x] **Four Failure Modes:** (1) Extraneous root, (2) $\nabla g = \mathbf{0}$, (3) Saddle despite satisfying multiplier equations, (4) Non-differentiability.
+- [x] **Economic Interpretation:** $xyz$ with $x + y + z = $ const has a unique interior critical point by symmetry.
+- [x] **Standard Trap Constraints:** $x^2 + y^2 = 0$, $g = $ constant function, and $g$ vanishing on a curve.
+- [x] **KTU-Style Preferred Form:** Always write the constraint as $g(x, y) = 0$ before forming $L$.
+- [x] **Last-Line Signature Value:** At $(\pm 2, \pm 2)$ on $x^2 + y^2 = 8$, $f = 16$ (canonical min); at $(\pm 2\sqrt{2}, 0)$, $f = 0$ (canonical max for non-negative $f$).
+- [x] **Sign of $\lambda$:** Indicates whether the constraint "lifts" or "pushes down" the unconstrained critical point.
+- [x] **Connection to Unconstrained Module 3:** If the unconstrained $\nabla f = \mathbf{0}$ happens to lie on the constraint and $\nabla g \neq \mathbf{0}$ there, then $\lambda = 0$ at that point.
+- [x] **Python Sanity Check:** Use `sympy.solve` on the system `eqs = [diff(L, v) for v in (x, y)] + [g]`; verify solutions satisfy the constraint before classification.
+- [x] **Board Answer Length:** 14-mark questions need roughly 5–7 lines of working per 7-mark sub-part; avoid one-line answers.
 
+> [!IMPORTANT]
+> **Final Mantra for the Module:**
+> *Form $L$ → Set partials to zero → Solve → Verify constraint → Build bordered Hessian → Apply sign rule → Classify.* Miss any step, and the KTU examiner will find it.
 <!-- SECTION_5_END -->

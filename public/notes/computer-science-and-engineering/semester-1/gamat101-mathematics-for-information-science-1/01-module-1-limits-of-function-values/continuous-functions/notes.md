@@ -1,652 +1,858 @@
 # Continuous Functions
 
 <!-- SECTION_1_START -->
-# Continuous Functions — Core Definition & Intuition
 
-## Formal Definition (KTU 2024 Syllabus Terminology)
+# Continuous Functions – Core Technical Definition & Intuitive Overview
 
-Let $f: D \to \mathbb{R}$ be a real-valued function defined on a domain $D \subseteq \mathbb{R}$. The function $f$ is said to be **continuous at a point** $c \in D$ if, and only if, the following three conditions are **simultaneously** satisfied:
-
-1. **Existence of the value:** $f(c)$ is well-defined (i.e., $c \in D$).
-2. **Existence of the limit:** $\displaystyle\lim_{x \to c} f(x)$ exists as a finite real number.
-3. **Limit equals the function value:** $\displaystyle\lim_{x \to c} f(x) = f(c)$.
+## 1.1 Formal Definition (KTU 2024 Syllabus Terminology)
 
 > [!NOTE]
-> **Canonical Continuity Identity**
-> $$f \text{ is continuous at } c \iff \lim_{x \to c} f(x) = f(c) = f\!\left(\lim_{x \to c} x\right)$$
+> **Continuity at a Point ($x = c$)**
+> A function $f : D \to \mathbb{R}$ defined on a domain $D \subseteq \mathbb{R}$ is said to be **continuous at a point** $x = c$ if the following three conditions are satisfied simultaneously:
+>
+> **(i) Existence Condition:** $f(c)$ is defined (i.e., $c \in D$).
+>
+> **(ii) Limit Existence Condition:** $\lim_{x \to c} f(x)$ exists finitely (i.e., both $\lim_{x \to c^{-}} f(x)$ and $\lim_{x \to c^{+}} f(x)$ exist and are equal).
+>
+> **(iii) Equality Condition:** $\lim_{x \to c} f(x) = f(c)$.
 
-If $f$ is continuous **at every point** $c \in D$, then $f$ is called a **continuous function on $D$**. If $D = (a, b)$ (an open interval) or $[a, b]$ (a closed interval), the phrasing becomes "continuous on $(a, b)$" or "continuous on $[a, b]$" respectively.
+Mathematically, this is expressed in the **$\varepsilon$-$\delta$ form** (Cauchy, 1821):
+
+$$\lim_{x \to c} f(x) = f(c) \quad \iff \quad \forall \, \varepsilon > 0,\ \exists \, \delta > 0 \text{ such that } \vert x - c \vert < \delta \implies \vert f(x) - f(c) \vert < \varepsilon$$
 
 > [!IMPORTANT]
-> The single most board-tested identity in Module 1 of **GAMAT101** is the equivalence:
-> $$\boxed{\;f \text{ continuous at } c \;\Longleftrightarrow\; \lim_{x \to c} f(x) = f(c)\;}$$
-> Failure of *any one* of the three conditions produces a **discontinuity** at $c$.
+> **Continuity on an Interval $[a, b]$**
+> A function $f$ is said to be **continuous on a closed interval $[a, b]$** if it is continuous at every interior point of $[a, b]$, continuous from the right at $a$, and continuous from the left at $b$. The set of all such functions is denoted $C([a, b])$ or $C^{0}([a, b])$.
 
-## Conceptual Analogy — The "Unbroken Pen" Test
+---
 
-Imagine tracing the graph $y = f(x)$ on a sheet of paper using a pen.
+## 1.2 Conceptual Analogy / Intuition
 
-- **Continuous road analogy:** A smooth, freshly paved highway. Your car (the pen) glides through the point $c$ without ever leaving the asphalt. This is what a *continuous* function looks like near $c$.
-- **Discontinuous road analogy:** A road with a **pothole** (removable discontinuity), a **wall** (jump discontinuity), a **cliff** (infinite discontinuity), or a **speed-breaker that bounces** (oscillating discontinuity). The car physically cannot pass smoothly.
+Imagine you are **drawing the graph of $f$** on a piece of paper using a single, uninterrupted stroke of a pen — without ever lifting the pen off the page. The resulting curve is continuous.
 
-A more *analytic* analogy: think of the function as a faithful messenger. Continuity at $c$ means that as the *message* (input value $x$) approaches the destination $c$, the *response* (output $f(x)$) also smoothly approaches the expected reply $f(c)$. Any mismatch is a discontinuity.
+Conversely, any curve where you must **lift your pen**, **teleport**, or **draw a vertical jump** is **discontinuous**. A continuous function has no "holes," "jumps," or "infinite spikes" in its graph at the point of interest.
 
 > [!TIP]
-> A useful geometric intuition: **the graph of $f$ has no "breaks" near $c$**. Any break — a hole, a vertical asymptote, a jump, or wild oscillation — disqualifies continuity at that point.
+> **Engineering Analogy (Signal Processing):**
+> In electrical engineering, a continuous signal is one that can be transmitted through an analog channel without sudden voltage drops. A discontinuity would correspond to a **glitch or impulse noise** — the kind that breaks circuits and corrupts data packets. The $\varepsilon$-$\delta$ condition is precisely the formal guarantee that the output signal stays within tolerable bounds when the input stays within tolerable bounds.
 
-## The Epsilon–Delta (ε–δ) Definition — Rigor Layer
+---
 
-The fully rigorous (topological) reformulation of the three-condition definition is:
-
-$$\forall\, \epsilon > 0,\ \exists\, \delta > 0 \text{ such that } 0 < \vert x - c \vert < \delta \;\Longrightarrow\; \vert f(x) - f(c) \vert < \epsilon$$
-
-This is the form expected in KTU 14-mark *proof-based* sub-parts. The interpretation: **we can make the output deviation $\vert f(x) - f(c) \vert$ as small as we like (less than any prescribed $\epsilon$) by forcing the input deviation $\vert x - c \vert$ to be sufficiently small (less than some $\delta$ that depends on $\epsilon$).**
+## 1.3 Visualization of the Three Conditions
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Epsilon–delta visualization for $f(x) = x^2$ at $c = 2$
->
+> **Concept:** Visualizing the three continuity conditions at $x = c$
 > **GeoGebra / Desmos Input Equations:**
-> * `f(x) = x^2`
-> * `c = 2`, `fc = 4`
-> * `epsilon_slider = 0.5`
-> * `y_lower(x) = fc - epsilon_slider`
-> * `y_upper(x) = fc + epsilon_slider`
+> * Define a piecewise function: $f(x) = \begin{cases} x^2 + 1 & x < 1 \\ 2 & x = 1 \\ \sqrt{x} + 1 & x > 1 \end{cases}$
+> * Plot: `f(x) = If[x < 1, x^2 + 1, If[x > 1, sqrt(x) + 1, 2]]`
+> **Visual Description:** Observe the smooth approach from both left and right toward the single point $(1, 2)$. The left branch and right branch meet exactly at the filled point, confirming $\lim_{x \to 1} f(x) = f(1) = 2$.
+
+---
+
+## 1.4 Standard Reference Function: Continuity Mastery Map
+
+> [!IMPORTANT]
+> The following functions are **continuous everywhere on their natural domains** — this is a KTU 2024 high-yield fact table:
+
+| Function Family | Expression | Natural Domain | Continuity Domain |
+|---|---|---|---|
+| Constant | $f(x) = k$ | $\mathbb{R}$ | $\mathbb{R}$ |
+| Identity | $f(x) = x$ | $\mathbb{R}$ | $\mathbb{R}$ |
+| Polynomial | $P(x) = a_{n}x^{n} + \dots + a_0$ | $\mathbb{R}$ | $\mathbb{R}$ |
+| Rational | $R(x) = \dfrac{P(x)}{Q(x)}$ | $\mathbb{R} \setminus \{Q(x) = 0\}$ | $\mathbb{R} \setminus \{Q(x) = 0\}$ |
+| Exponential | $f(x) = e^{x}$ | $\mathbb{R}$ | $\mathbb{R}$ |
+| Logarithmic | $f(x) = \ln(x)$ | $(0, \infty)$ | $(0, \infty)$ |
+| Trigonometric | $\sin x,\ \cos x$ | $\mathbb{R}$ | $\mathbb{R}$ |
+| Trigonometric | $\tan x,\ \sec x$ | $\mathbb{R} \setminus \{(2k+1)\tfrac{\pi}{2}\}$ | $\mathbb{R} \setminus \{(2k+1)\tfrac{\pi}{2}\}$ |
+| Square root | $f(x) = \sqrt{x}$ | $[0, \infty)$ | $[0, \infty)$ |
+
+---
+
+## 1.5 One-Sided Continuity (Preliminaries)
+
+> [!NOTE]
+> **Right-Continuity at $c$:** $f$ is right-continuous at $c$ if $\lim_{x \to c^{+}} f(x) = f(c)$.
+> **Left-Continuity at $c$:** $f$ is left-continuous at $c$ if $\lim_{x \to c^{-}} f(x) = f(c)$.
 >
-> **Visual Description:** Plot the parabola $y = x^2$. Place a horizontal **green band** of vertical half-width $\epsilon$ centered at $y = 4$ (so $3.5 \le y \le 4.5$). Find the **largest horizontal window** of half-width $\delta$ centered at $x = 2$ that, when mapped through the parabola, stays entirely inside the green band. As the slider $\epsilon$ shrinks toward $0$, the corresponding $\delta$ shrinks toward $0$ as well — this is the geometric heart of continuity.
+> A function is continuous at an **endpoint** of a closed interval $[a, b]$ if and only if it is **right-continuous at $a$** and **left-continuous at $b$**.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
+
 # Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## The Three Condition Checklist (Board Pattern)
+## 2.1 The Continuity Checklist – A Structured Decision Logic
 
-Whenever a KTU question asks "check the continuity of $f$ at $x = c$", the valuation key demands you explicitly verify the three steps in this exact order:
+To rigorously verify whether $f$ is continuous at $x = c$, a KTU examiner expects the student to follow this **three-step checklist** in this exact order:
 
-| Step | Condition | Symbolically | Marks Weightage |
-|:----:|:----------|:-------------|:---------------:|
-| 1 | $f(c)$ exists | $f(c) \in \mathbb{R}$ | 2 |
-| 2 | $\displaystyle\lim_{x \to c} f(x)$ exists | LHL = RHL = $L$ | 3 |
-| 3 | $\displaystyle\lim_{x \to c} f(x) = f(c)$ | $L = f(c)$ | 2 |
+**Step 1 — Value Check (1 Mark in valuation key):**
+Compute $f(c)$. If $f(c)$ is **undefined** (e.g., $0$ in denominator, $\ln(0)$, $\sqrt{\text{negative}}$), the function is **automatically discontinuous** at $c$. Stop here.
 
-> Skipping Step 1 is the **#1 reason students lose 2 marks** in continuity-check questions. Always begin by computing $f(c)$ explicitly.
+**Step 2 — Limit Check (2 Marks in valuation key):**
+Evaluate the **left-hand limit** $\lim_{x \to c^{-}} f(x)$ and the **right-hand limit** $\lim_{x \to c^{+}} f(x)$. If these two one-sided limits exist but are **unequal**, then the two-sided limit does not exist. Function is discontinuous (jump type). If they are equal, the two-sided limit $L = \lim_{x \to c} f(x)$ exists.
 
-## Continuity on an Interval (Module-1 Definition Set)
+**Step 3 — Equality Check (1 Mark in valuation key):**
+Compare the limit value $L$ with $f(c)$. Continuity holds **if and only if** $L = f(c)$.
 
-* $f$ is **continuous on the open interval** $(a, b)$ if it is continuous at every $c \in (a, b)$.
-* $f$ is **continuous on the closed interval** $[a, b]$ if it is continuous on $(a, b)$ *and*
-  $$\lim_{x \to a^+} f(x) = f(a) \quad \text{and} \quad \lim_{x \to b^-} f(x) = f(b).$$
-  (Right-continuity at $a$ and left-continuity at $b$.)
+---
 
-## Continuity of Standard Functions (Memorize This Block)
-
-* **Polynomials:** Every polynomial $P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_0$ is continuous on $\mathbb{R}$.
-* **Rational functions:** $R(x) = \dfrac{P(x)}{Q(x)}$ is continuous at every $c$ where $Q(c) \neq 0$.
-* **Trigonometric:** $\sin x$, $\cos x$ are continuous on $\mathbb{R}$; $\tan x$, $\sec x$, $\cot x$, $\csc x$ are continuous on their respective domains.
-* **Exponential and logarithmic:** $e^x$, $a^x$ (with $a > 0$) are continuous on $\mathbb{R}$; $\ln x$ is continuous on $(0, \infty)$.
-
-## Algebra of Continuous Functions (Theorem Bank)
-
-If $f$ and $g$ are both continuous at $c$, then the following composite functions are also continuous at $c$:
-
-| # | Operation | Continuity Statement | Required Pre-condition |
-|:-:|:----------|:---------------------|:-----------------------|
-| 1 | Sum | $\displaystyle\lim_{x \to c}(f + g)(x) = f(c) + g(c)$ | Both continuous at $c$ |
-| 2 | Difference | $\displaystyle\lim_{x \to c}(f - g)(x) = f(c) - g(c)$ | Both continuous at $c$ |
-| 3 | Product | $\displaystyle\lim_{x \to c}(f \cdot g)(x) = f(c) \cdot g(c)$ | Both continuous at $c$ |
-| 4 | Quotient | $\displaystyle\lim_{x \to c}\!\left(\dfrac{f}{g}\right)(x) = \dfrac{f(c)}{g(c)}$ | $g(c) \neq 0$ |
-| 5 | Scalar multiple | $\displaystyle\lim_{x \to c}(k f)(x) = k f(c)$ | $f$ continuous at $c$ |
-| 6 | Power | $\displaystyle\lim_{x \to c} f(x)^n = (f(c))^n$ | $n \in \mathbb{N}$ |
-| 7 | Composition | $\displaystyle\lim_{x \to c} f(g(x)) = f(g(c))$ | $g$ continuous at $c$, $f$ continuous at $g(c)$ |
-
-## Types of Discontinuities (Classification — 7-Mark Sub-Part Favourite)
-
-| Type | Behaviour of $\displaystyle\lim_{x \to c} f(x)$ | Redefinition Possible? | Example |
-|:-----|:------------------------------------------------|:----------------------:|:--------|
-| **Removable** | Finite limit $L$ exists but $f(c) \neq L$ (or $f(c)$ undefined) | Yes, by setting $f(c) = L$ | $f(x) = \dfrac{x^2-1}{x-1}$ at $x=1$ |
-| **Jump** | LHL $\neq$ RHL (both finite) | No | $f(x) = \begin{cases} 1, & x \ge 0 \\ 0, & x < 0 \end{cases}$ at $x=0$ |
-| **Infinite** | At least one side tends to $\pm\infty$ | No | $f(x) = \dfrac{1}{x-2}$ at $x=2$ |
-| **Oscillating** | Limit does not exist due to wild oscillation | No | $f(x) = \sin\!\left(\dfrac{1}{x}\right)$ at $x=0$ |
-
-## The Two Great Theorems (Closed-Interval Machinery)
+## 2.2 Types of Discontinuities (Mandatory KTU Theory)
 
 > [!IMPORTANT]
-> **Theorem 1 — Intermediate Value Theorem (IVT)**
-> If $f$ is continuous on $[a, b]$ and $k$ is any real number strictly between $f(a)$ and $f(b)$, then there exists at least one $c \in (a, b)$ such that $f(c) = k$.
+> A function $f$ that is NOT continuous at $c$ exhibits one of the following four types of discontinuities:
+
+### 2.2.1 Removable Discontinuity
+$\lim_{x \to c} f(x)$ exists finitely, but either $f(c)$ is undefined, or $\lim_{x \to c} f(x) \neq f(c)$. The "hole" can be **removed** by redefining $f(c) = \lim_{x \to c} f(x)$.
+
+**Classic Example:** $f(x) = \dfrac{\sin x}{x}$ at $x = 0$ (limit is $1$, but $f(0)$ is undefined).
+
+### 2.2.2 Jump Discontinuity
+The left-hand limit and right-hand limit both exist finitely but are **unequal**. The graph "jumps" from one value to another.
+
+**Classic Example:** $f(x) = \begin{cases} x^2 & x < 1 \\ x + 1 & x \geq 1 \end{cases}$ at $x = 1$ (LHL $= 1$, RHL $= 2$).
+
+### 2.2.3 Infinite Discontinuity (Essential Discontinuity)
+At least one of the one-sided limits is $\pm \infty$. The graph shoots off to infinity (a **vertical asymptote**).
+
+**Classic Example:** $f(x) = \dfrac{1}{x}$ at $x = 0$ (both LHL and RHL are infinite in magnitude).
+
+### 2.2.4 Oscillating Discontinuity
+The limit does not exist because the function **oscillates** between two or more values as $x \to c$. The limit is not unique.
+
+**Classic Example:** $f(x) = \sin\!\left(\dfrac{1}{x}\right)$ at $x = 0$ (oscillates between $-1$ and $+1$).
+
+---
+
+## 2.3 Algebraic Continuity Theorems (Algebra of Continuous Functions)
 
 > [!IMPORTANT]
-> **Theorem 2 — Extreme Value Theorem (EVT)**
-> If $f$ is continuous on a closed bounded interval $[a, b]$, then $f$ attains both a global maximum and a global minimum on $[a, b]$. That is, $\exists\, c_1, c_2 \in [a, b]$ such that
-> $$f(c_1) \le f(x) \le f(c_2) \quad \text{for all } x \in [a, b].$$
+> **Theorem 2.3.1 (Sum Rule):** If $f$ and $g$ are continuous at $c$, then $(f + g)(x) = f(x) + g(x)$ is continuous at $c$.
+>
+> **Theorem 2.3.2 (Scalar Multiple Rule):** If $f$ is continuous at $c$ and $k \in \mathbb{R}$, then $(kf)(x) = k f(x)$ is continuous at $c$.
+>
+> **Theorem 2.3.3 (Product Rule):** If $f$ and $g$ are continuous at $c$, then $(f \cdot g)(x) = f(x) \cdot g(x)$ is continuous at $c$.
+>
+> **Theorem 2.3.4 (Quotient Rule):** If $f$ and $g$ are continuous at $c$ and $g(c) \neq 0$, then $\left(\dfrac{f}{g}\right)(x) = \dfrac{f(x)}{g(x)}$ is continuous at $c$.
+>
+> **Theorem 2.3.5 (Composition Rule):** If $f$ is continuous at $c$ and $g$ is continuous at $f(c)$, then $(g \circ f)(x) = g(f(x))$ is continuous at $c$.
 
-## KTU High-Yield Formula Cheat Sheet
+---
 
-| # | Concept | Master Equation / Statement | Domain Constraint |
-|:-:|:--------|:----------------------------|:------------------|
-| 1 | Continuity (3-form) | $\lim_{x \to c} f(x) = f(c)$ | $c \in D_f$ |
-| 2 | Epsilon–delta | $\forall \epsilon>0,\ \exists \delta>0: \vert x - c \vert < \delta \Rightarrow \vert f(x) - f(c) \vert < \epsilon$ | $c \in D_f$ |
-| 3 | Left-continuity | $\lim_{x \to c^-} f(x) = f(c)$ | Right-hand approach |
-| 4 | Right-continuity | $\lim_{x \to c^+} f(x) = f(c)$ | Left-hand approach |
-| 5 | Continuity of polynomial | $P(x)$ continuous on $\mathbb{R}$ | Always true |
-| 6 | Continuity of $\sin x$ | Continuous on $\mathbb{R}$ | $\forall x \in \mathbb{R}$ |
-| 7 | Continuity of $\ln x$ | Continuous on $(0, \infty)$ | $x > 0$ |
-| 8 | Continuity of composition | $f \circ g$ continuous at $c$ if $g$ cont. at $c$ and $f$ cont. at $g(c)$ | Chain rule for continuity |
-| 9 | IVT | $\exists\, c \in (a,b): f(c) = k$ for $k$ between $f(a), f(b)$ | $f$ continuous on $[a,b]$ |
-| 10 | EVT | $\max f, \min f$ both attained | $f$ continuous on closed $[a,b]$ |
+## 2.4 KTU Formula Sheet / Continuity Cheat Sheet
 
-## Real-World Engineering Utility
+> [!NOTE]
+> The following table consolidates every continuity-related formula, theorem, and condition required for the KTU 2024 ESE (End Semester Examination).
 
-Continuous functions are the **mathematical backbone of digital signal processing, computer graphics, and numerical simulation** — the three pillars of information science.
+| Sl. No. | Concept | Mathematical Statement | Domain / Condition |
+|:---:|---|---|---|
+| 1 | Continuity at a point | $\lim_{x \to c} f(x) = f(c)$ | $c$ must be a limit point of $\text{Dom}(f)$ |
+| 2 | $\varepsilon$-$\delta$ definition | $\forall \varepsilon > 0,\ \exists \delta > 0 \mid \vert x - c \vert < \delta \Rightarrow \vert f(x) - f(c) \vert < \varepsilon$ | $x, c \in \text{Dom}(f)$ |
+| 3 | Sequential criterion | $f$ continuous at $c$ $\iff$ for every sequence $x_n \to c$, $f(x_n) \to f(c)$ | $x_n \in \text{Dom}(f)\setminus\{c\}$ |
+| 4 | Removable discontinuity | $\lim_{x \to c} f(x)$ exists but $\neq f(c)$ (or $f(c)$ undefined) | $L = \lim_{x \to c} f(x) \in \mathbb{R}$ |
+| 5 | Jump discontinuity | $\lim_{x \to c^{-}} f(x) \neq \lim_{x \to c^{+}} f(x)$ | Both one-sided limits finite |
+| 6 | Infinite discontinuity | $\lim_{x \to c^{-}} f(x) = \pm \infty$ or $\lim_{x \to c^{+}} f(x) = \pm \infty$ | Vertical asymptote at $x = c$ |
+| 7 | IVT (Bolzano) | If $f \in C([a,b])$ and $k$ lies between $f(a)$ and $f(b)$, then $\exists c \in (a,b)$ with $f(c) = k$ | $f$ continuous on $[a,b]$ |
+| 8 | EVT (Weierstrass) | If $f \in C([a,b])$, then $f$ attains its global maximum and minimum on $[a,b]$ | $[a,b]$ is **closed and bounded** |
+| 9 | Polynomial continuity | $P(x) = a_{n}x^{n} + \dots + a_0$ is continuous on $\mathbb{R}$ | All $a_i \in \mathbb{R}$ |
+| 10 | Rational continuity | $R(x) = P(x)/Q(x)$ continuous on $\mathbb{R} \setminus \{x \mid Q(x) = 0\}$ | $Q(x) \neq 0$ |
 
-* **Image rendering:** A continuous function defines a smooth colour gradient; discontinuities produce visible "edges" (used in feature-detection algorithms like the Canny edge detector).
-* **Audio processing:** Sound waves are modelled as continuous-time functions; sampling a continuous signal requires the Nyquist–Shannon theorem, which itself relies on continuity of the underlying band-limited signal.
-* **Machine learning activation functions:** $\mathrm{ReLU}(x) = \max(0, x)$ is *continuous everywhere* and differentiable almost everywhere — a deliberate engineering trade-off. $\tanh$ and $\sigma(x) = \frac{1}{1 + e^{-x}}$ are continuous on $\mathbb{R}$.
-* **Numerical root-finding:** The Bisection Method (used in `scipy.optimize.brentq`) is a direct *algorithmic implementation* of the IVT. Without continuity guarantees, bisection cannot start.
-* **Computer-aided geometric design (CAGD):** Bézier curves and splines are continuous by construction; the entire parametric surface of a 3D model is a continuous vector-valued function of two parameters.
+---
+
+## 2.5 Real-World Engineering Applications
+
+> [!TIP]
+> **Where does continuity matter in the real engineering world?**
+>
+> 1. **Computer Graphics & Animation:** Bezier curves and B-splines are constructed from piecewise continuous polynomial segments. Discontinuities would cause visible "kinks" in animated models.
+>
+> 2. **Digital Signal Processing (DSP):** A signal that is continuous in time (analog) is sampled at discrete points. The Shannon–Nyquist sampling theorem assumes underlying signal continuity.
+>
+> 3. **Control Systems:** A continuous control input (e.g., smooth steering of a self-driving car) requires the controller's transfer function to be continuous; otherwise, the vehicle "jerks."
+>
+> 4. **Machine Learning Activation Functions:** Sigmoid $\sigma(x) = \frac{1}{1 + e^{-x}}$ is continuous on $\mathbb{R}$, ensuring smooth gradient propagation in backpropagation. Discontinuities (e.g., ReLU at $0$) are carefully studied to handle their non-differentiable point.
+>
+> 5. **Network Stability:** The Intermediate Value Theorem is used in root-finding algorithms (bisection method) to locate fault points in circuits.
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Symbolic / Computational Implementation
 
-## Derivation 1 — Epsilon–Delta Proof that $f(x) = x^2$ is Continuous at any $c \in \mathbb{R}$
+# Step-by-Step Derivations & Symbolic Implementation
 
-This is the most-board-expected ε–δ proof for a polynomial. The technique is **"bound the expression, factor the difference, then choose δ = min(1, ε / bound)"**.
+## 3.1 Solved Example 1 – KTU Standard Problem (Piecewise Continuity)
 
-**Goal:** Show that for every $\epsilon > 0$, there exists a $\delta > 0$ such that
+> [!NOTE]
+> **Problem:** Examine the continuity of $f(x) = \begin{cases} \dfrac{x^2 - 9}{x - 3}, & x \neq 3 \\ 5, & x = 3 \end{cases}$ at $x = 3$.
 
-$$\vert x - c \vert < \delta \;\Longrightarrow\; \vert x^2 - c^2 \vert < \epsilon.$$
+**Step 1 — Value Check:**
 
-**Step 1 — Factor the difference of squares.**
+$$f(3) = 5 \quad \text{[defined, passes the existence condition]}$$
 
-We factor the left-hand side of the implication:
+**Step 2 — Limit Check:**
 
-$$\vert x^2 - c^2 \vert = \vert (x - c)(x + c) \vert = \vert x - c \vert \cdot \vert x + c \vert.$$
+$$\lim_{x \to 3} f(x) = \lim_{x \to 3} \frac{x^2 - 9}{x - 3}$$
 
-**Step 2 — Restrict δ to a convenient bound.** We do not yet know how large $\vert x + c \vert$ is, so we first *force* $x$ to stay within distance $1$ of $c$ by choosing $\delta \le 1$. This is the standard "**preliminary δ-cutoff**" technique.
+Factor the numerator using the difference of squares identity $a^2 - b^2 = (a-b)(a+b)$:
 
-Assume $\delta \le 1$. Then $\vert x - c \vert < 1$, which gives
+$$x^2 - 9 = (x-3)(x+3)$$
 
-$$\vert x \vert = \vert x - c + c \vert \le \vert x - c \vert + \vert c \vert < 1 + \vert c \vert.$$
+Substitute back into the limit:
 
-Hence,
+$$\lim_{x \to 3} \frac{(x-3)(x+3)}{x-3}$$
 
-$$\vert x + c \vert \le \vert x \vert + \vert c \vert < (1 + \vert c \vert) + \vert c \vert = 1 + 2 \vert c \vert.$$
+Since $x \neq 3$, the $(x-3)$ factor cancels:
 
-**Step 3 — Bound the target expression.** Using the factorisation from Step 1 and the bound from Step 2:
+$$\lim_{x \to 3} (x+3) = 3 + 3 = 6$$
 
-$$\vert x^2 - c^2 \vert = \vert x - c \vert \cdot \vert x + c \vert < \delta \cdot (1 + 2 \vert c \vert).$$
+**Step 3 — Equality Check:**
 
-**Step 4 — Choose δ explicitly.** We need $\delta \cdot (1 + 2 \vert c \vert) \le \epsilon$, so the natural choice is
+$$L = \lim_{x \to 3} f(x) = 6, \quad f(3) = 5$$
 
-$$\delta = \min\!\left(1,\ \frac{\epsilon}{1 + 2 \vert c \vert}\right).$$
+Since $L \neq f(3)$, the equality condition **fails**.
 
-**Step 5 — Conclude.** With this δ, whenever $\vert x - c \vert < \delta$, we have $\delta \le 1$ (so Step 2 holds) and also $\delta \le \dfrac{\epsilon}{1 + 2 \vert c \vert}$ (so Step 3 yields $\vert x^2 - c^2 \vert < \epsilon$). Therefore $f(x) = x^2$ is continuous at $c$. $\blacksquare$
-
-> [!TIP]
-> The pattern to remember: **factor → bound → solve for δ**. The bound is always obtained by first assuming $\delta \le 1$.
+**Conclusion:** $f$ is **discontinuous** at $x = 3$ with a **removable discontinuity** (the value $5$ can be changed to $6$ to make it continuous).
 
 ---
 
-## Derivation 2 — Three-Condition Check for a Piecewise Function
+## 3.2 Solved Example 2 – Jump Discontinuity Analysis
 
-Let
+> [!NOTE]
+> **Problem:** Find the values of $a$ and $b$ such that $f(x) = \begin{cases} 3x + 2, & x \leq 1 \\ ax + b, & 1 < x < 4 \\ 5x - 6, & x \geq 4 \end{cases}$ is continuous everywhere.
 
-$$f(x) = \begin{cases} \dfrac{x^2 - 4}{x - 2}, & x \neq 2 \\[6pt] 5, & x = 2. \end{cases}$$
+**Step 1 — Continuity at $x = 1$:**
 
-We check continuity at $c = 2$.
+For continuity, the left-hand limit must equal the right-hand limit, and both must equal $f(1)$.
 
-**Step 1 — Value at $c$.** By direct substitution into the second branch:
+$$\text{LHL} = \lim_{x \to 1^{-}} (3x + 2) = 3(1) + 2 = 5$$
 
-$$f(2) = 5.$$
+$$\text{RHL} = \lim_{x \to 1^{+}} (ax + b) = a(1) + b = a + b$$
 
-So $f(c)$ exists and is finite. ✓
+$$f(1) = 3(1) + 2 = 5$$
 
-**Step 2 — Limit at $c$.** For $x \neq 2$, we simplify the expression:
+Setting LHL $= f(1)$:
 
-$$\frac{x^2 - 4}{x - 2} = \frac{(x - 2)(x + 2)}{x - 2} = x + 2 \quad (\text{for } x \neq 2).$$
+$$a + b = 5 \quad \cdots (i)$$
 
-Hence,
+**Step 2 — Continuity at $x = 4$:**
 
-$$\lim_{x \to 2} f(x) = \lim_{x \to 2} (x + 2) = 4.$$
+$$\text{LHL} = \lim_{x \to 4^{-}} (ax + b) = 4a + b$$
 
-We can also write this as LHL = RHL = 4. ✓
+$$\text{RHL} = \lim_{x \to 4^{+}} (5x - 6) = 5(4) - 6 = 14$$
 
-**Step 3 — Compare.** The limit $L = 4$ but the value $f(2) = 5$. Since $L \neq f(c)$:
+$$f(4) = 5(4) - 6 = 14$$
 
-$$\lim_{x \to 2} f(x) = 4 \;\neq\; 5 = f(2).$$
+Setting LHL $= f(4)$:
 
-**Conclusion:** $f$ is **not continuous at $x = 2$**; the discontinuity is of the **removable** type because the limit $L = 4$ exists and is finite. If we redefine $f(2) = 4$, continuity is restored.
+$$4a + b = 14 \quad \cdots (ii)$$
+
+**Step 3 — Solve the Linear System:**
+
+Subtract equation $(i)$ from equation $(ii)$:
+
+$$(4a + b) - (a + b) = 14 - 5$$
+
+$$3a = 9 \quad \Rightarrow \quad a = 3$$
+
+Substitute $a = 3$ into $(i)$:
+
+$$3 + b = 5 \quad \Rightarrow \quad b = 2$$
+
+**Conclusion:** $a = 3$ and $b = 2$ make $f$ continuous on $\mathbb{R}$.
 
 ---
 
-## Python Implementation — Programmatic Continuity Checker
+## 3.3 Solved Example 3 – Intermediate Value Theorem Application
 
-This script implements the **three-condition check** algorithmically and also numerically samples a function near a point of interest.
+> [!NOTE]
+> **Problem:** Show that the equation $x^3 - 4x + 1 = 0$ has a root in the interval $(1, 2)$.
+
+**Step 1 — Define the function:**
+
+$$g(x) = x^3 - 4x + 1$$
+
+**Step 2 — Verify the conditions of IVT:**
+
+$g(x)$ is a polynomial, hence **continuous on $\mathbb{R}$** (by Theorem 2.3.1 applied to identity and constant functions).
+
+In particular, $g$ is continuous on the closed interval $[1, 2]$.
+
+**Step 3 — Check the sign change:**
+
+$$g(1) = (1)^3 - 4(1) + 1 = 1 - 4 + 1 = -2$$
+
+$$g(2) = (2)^3 - 4(2) + 1 = 8 - 8 + 1 = 1$$
+
+Since $g(1) = -2 < 0 < 1 = g(2)$, the value $0$ lies strictly between $g(1)$ and $g(2)$.
+
+**Step 4 — Apply IVT:**
+
+By the Intermediate Value Theorem, there exists some $c \in (1, 2)$ such that $g(c) = 0$.
+
+Therefore, the equation $x^3 - 4x + 1 = 0$ has at least one root in the open interval $(1, 2)$. $\blacksquare$
+
+---
+
+## 3.4 Python Symbolic Implementation (Type-Hinted, Boundary-Safe)
 
 ```python
 """
-KTU GAMAT101 — Module 1: Continuous Functions
-Programmatic verification of continuity (three-condition check)
-plus numerical sampling for visual confirmation.
+Continuity Analyzer for a given function f at point c.
+Uses SymPy for symbolic limit evaluation and classifies the type of discontinuity.
 """
 
-from __future__ import annotations
-import math
-from typing import Callable, Tuple
+from sympy import symbols, limit, oo, Symbol, sin, Rational, sqrt, simplify, Piecewise
+from sympy.calculus.util import continuous_domain
+from sympy import S
+import logging
+import sys
+import traceback
 
-# ---------- Symbolic / Piecewise Definition ----------
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    stream=sys.stdout
+)
 
-def piecewise_f(x: float) -> float:
-    """f(x) = (x^2 - 4) / (x - 2) for x != 2,  and  f(2) = 5."""
-    if abs(x - 2.0) < 1e-12:           # exact handling of x = 2
-        return 5.0
-    return (x * x - 4.0) / (x - 2.0)
-
-
-def piecewise_g(x: float) -> float:
-    """g(x) = 1 / (x - 3) — exhibits an infinite discontinuity at x = 3."""
-    return 1.0 / (x - 3.0)
+x: Symbol = symbols("x", real=True)
 
 
-# ---------- Continuity Checker (Three-Condition Logic) ----------
-
-def check_continuity(
-    func: Callable[[float], float],
-    c: float,
-    h: float = 1e-4,
-) -> Tuple[bool, str]:
+def analyze_continuity(f_expr, c_val: float, tol: float = 1e-9) -> dict:
     """
-    Returns (is_continuous, diagnostic_string).
+    Analyzes the continuity of a SymPy expression `f_expr` at the point `c_val`.
 
-    Step 1: f(c) exists.
-    Step 2: LHL and RHL are both finite AND equal.
-    Step 3: LHL == RHL == f(c).
+    Parameters
+    ----------
+    f_expr : sympy.Expr
+        The function expression in variable x.
+    c_val : float
+        The point at which continuity is to be tested.
+    tol : float, optional
+        Numerical tolerance for the equality check (default 1e-9).
+
+    Returns
+    -------
+    dict
+        A structured report containing the three condition values
+        and the final continuity verdict.
     """
-    report_lines: list[str] = []
-
-    # ---- Step 1: f(c) exists ----
     try:
-        fc: float = func(c)
-        report_lines.append(f"[Step 1] f({c}) = {fc}  -> exists.")
-    except (ZeroDivisionError, ValueError) as exc:
-        return (False, f"[Step 1] f({c}) UNDEFINED ({exc}). Function NOT continuous.")
-    except Exception as exc:                       # pragma: no cover
-        return (False, f"[Step 1] Unexpected error at c: {exc}.")
+        report: dict = {
+            "point": c_val,
+            "f_at_c": None,
+            "left_limit": None,
+            "right_limit": None,
+            "two_sided_limit": None,
+            "verdict": "Undetermined",
+            "discontinuity_type": "None"
+        }
 
-    # ---- Step 2: One-sided limits ----
-    try:
-        lhl: float = func(c - h)
-        rhl: float = func(c + h)
-    except (ZeroDivisionError, ValueError):
-        return (False, f"[Step 2] One-sided limit is unbounded. NOT continuous.")
-
-    if not (math.isfinite(lhl) and math.isfinite(rhl)):
-        return (False, f"[Step 2] LHL={lhl}, RHL={rhl} -> infinite discontinuity.")
-
-    if abs(lhl - rhl) > 1e-6:
-        return (False, f"[Step 2] LHL={lhl:.6f}, RHL={rhl:.6f} -> jump discontinuity.")
-
-    limit_value: float = (lhl + rhl) / 2.0
-    report_lines.append(f"[Step 2] LHL = RHL = {limit_value:.6f}  -> limit exists.")
-
-    # ---- Step 3: Limit equals function value ----
-    if abs(limit_value - fc) > 1e-6:
-        return (
-            False,
-            f"[Step 3] limit={limit_value:.6f} != f(c)={fc} -> removable discontinuity.",
-        )
-    report_lines.append(f"[Step 3] limit = f(c) = {fc}  -> condition satisfied.")
-
-    return (True, "\n".join(report_lines))
-
-
-# ---------- Numerical Sampling (visual aid) ----------
-
-def sample_neighbourhood(
-    func: Callable[[float], float],
-    c: float,
-    radius: float = 0.5,
-    steps: int = 11,
-) -> None:
-    """Print f(x) for x values around c to expose holes / jumps visually."""
-    print(f"\n--- Sampling f(x) near x = {c} ---")
-    xs = [c - radius + (2 * radius * i / (steps - 1)) for i in range(steps)]
-    for x in xs:
-        marker: str = "  <-- point of interest" if abs(x - c) < 1e-12 else ""
+        # Step 1: Compute f(c) if defined
         try:
-            y = func(x)
-            print(f"  f({x:+.4f}) = {y:+.6f}{marker}")
-        except ZeroDivisionError:
-            print(f"  f({x:+.4f}) = UNDEFINED (vertical asymptote){marker}")
+            f_at_c: object = f_expr.subs(x, c_val)
+            report["f_at_c"] = float(f_at_c) if f_at_c.is_number else None
+            logging.info(f"f({c_val}) = {report['f_at_c']}")
+        except Exception as inner_err:
+            logging.error(f"f({c_val}) is undefined: {inner_err}")
+            report["f_at_c"] = None
+
+        # Step 2: Compute left and right limits
+        left_lim: object = limit(f_expr, x, c_val, "-")
+        right_lim: object = limit(f_expr, x, c_val, "+")
+        report["left_limit"] = float(left_lim) if left_lim.is_number else str(left_lim)
+        report["right_limit"] = float(right_lim) if right_lim.is_number else str(right_lim)
+        logging.info(f"LHL = {report['left_limit']}, RHL = {report['right_limit']}")
+
+        # Step 3: Determine two-sided limit and discontinuity type
+        if left_lim == right_lim and left_lim not in (oo, -oo, S.NaN):
+            report["two_sided_limit"] = float(left_lim)
+            report["discontinuity_type"] = "None (Continuous)"
+
+            # Step 4: Apply the equality condition
+            if report["f_at_c"] is None:
+                report["verdict"] = "Discontinuous (Removable - f(c) undefined)"
+                report["discontinuity_type"] = "Removable"
+            elif abs(report["f_at_c"] - report["two_sided_limit"]) < tol:
+                report["verdict"] = "Continuous at c"
+                report["discontinuity_type"] = "None"
+            else:
+                report["verdict"] = "Discontinuous (Removable - value mismatch)"
+                report["discontinuity_type"] = "Removable"
+        elif left_lim in (oo, -oo) or right_lim in (oo, -oo):
+            report["verdict"] = "Discontinuous (Infinite/Essential)"
+            report["discontinuity_type"] = "Infinite"
+        else:
+            report["verdict"] = "Discontinuous (Jump)"
+            report["discontinuity_type"] = "Jump"
+
+        return report
+
+    except Exception as err:
+        logging.error(f"Failed to analyze continuity: {err}")
+        traceback.print_exc()
+        return {"verdict": "Error", "error_message": str(err)}
 
 
-# ---------- Main Execution ----------
-
+# ---------------- DEMONSTRATION ----------------
 if __name__ == "__main__":
-    print("=" * 60)
-    print("Test 1: f(x) piecewise at c = 2")
-    print("=" * 60)
-    cont, msg = check_continuity(piecewise_f, c=2.0)
-    print(msg)
-    print(f"\nVERDICT: f is {'CONTINUOUS' if cont else 'DISCONTINUOUS'} at x = 2.")
-    sample_neighbourhood(piecewise_f, c=2.0)
+    # Example 1: Removable discontinuity (sin x / x at x = 0)
+    f1 = sin(x) / x
+    print("--- Example 1: f(x) = sin(x)/x at x = 0 ---")
+    print(analyze_continuity(f1, 0.0))
 
-    print("\n" + "=" * 60)
-    print("Test 2: g(x) = 1/(x-3) at c = 3")
-    print("=" * 60)
-    cont, msg = check_continuity(piecewise_g, c=3.0)
-    print(msg)
-    print(f"\nVERDICT: g is {'CONTINUOUS' if cont else 'DISCONTINUOUS'} at x = 3.")
-    sample_neighbourhood(piecewise_g, c=3.0, radius=0.4)
+    # Example 2: Jump discontinuity
+    f2 = Piecewise((3 * x + 2, x <= 1), (5 * x - 4, x > 1))
+    print("\n--- Example 2: Piecewise jump at x = 1 ---")
+    print(analyze_continuity(f2, 1.0))
+
+    # Example 3: Infinite discontinuity
+    f3 = 1 / x
+    print("\n--- Example 3: f(x) = 1/x at x = 0 ---")
+    print(analyze_continuity(f3, 0.0))
 ```
 
-**Sample Output (for the piecewise function at $c = 2$):**
+**Expected Output (Abbreviated):**
 
+```text
+--- Example 1: f(x) = sin(x)/x at x = 0 ---
+{'point': 0.0, 'f_at_c': None, 'left_limit': 1.0, 'right_limit': 1.0,
+ 'two_sided_limit': 1.0, 'verdict': 'Discontinuous (Removable - f(c) undefined)',
+ 'discontinuity_type': 'Removable'}
+
+--- Example 2: Piecewise jump at x = 1 ---
+{'point': 1.0, 'f_at_c': 5.0, 'left_limit': 5.0, 'right_limit': 1.0,
+ 'verdict': 'Discontinuous (Jump)', 'discontinuity_type': 'Jump'}
+
+--- Example 3: f(x) = 1/x at x = 0 ---
+{'point': 0.0, 'f_at_c': None, 'left_limit': -inf, 'right_limit': inf,
+ 'verdict': 'Discontinuous (Infinite/Essential)', 'discontinuity_type': 'Infinite'}
 ```
-[Step 1] f(2) = 5.0  -> exists.
-[Step 2] LHL = RHL = 4.000000  -> limit exists.
-[Step 3] limit = f(c) = 5 -> condition NOT satisfied.
 
-VERDICT: f is DISCONTINUOUS at x = 2.
-  f(+1.5000) = +3.500000
-  f(+1.6000) = +3.600000
-  ...
-  f(+1.9999) = +3.999900
-  f(+2.0000) = +5.000000  <-- point of interest
-  f(+2.0001) = +4.000100
-  ...
+---
+
+## 3.5 Numerical Epsilon-Delta Verification
+
+```python
+def verify_epsilon_delta(f_numeric, c: float, L: float, eps: float = 0.01,
+                        delta_search_range: float = 1.0, steps: int = 10000) -> dict:
+    """
+    Numerically searches for a delta > 0 such that |x - c| < delta implies |f(x) - L| < eps.
+    Used to verify the epsilon-delta definition of continuity.
+    """
+    import numpy as np
+    xs = np.linspace(c - delta_search_range, c + delta_search_range, steps)
+    xs = xs[xs != c]  # remove the point c itself
+    fx = np.array([f_numeric(xi) for xi in xs])
+
+    # Find largest delta such that the epsilon condition holds
+    abs_diff_x = np.abs(xs - c)
+    abs_diff_f = np.abs(fx - L)
+    valid_mask = abs_diff_f < eps
+
+    if not np.any(valid_mask):
+        return {"status": "FAIL", "max_valid_delta": 0.0,
+                "message": f"No x in search range satisfies |f(x)-L|<{eps}"}
+
+    max_delta = float(np.max(abs_diff_x[valid_mask]))
+    return {
+        "status": "PASS",
+        "max_valid_delta": max_delta,
+        "epsilon": eps,
+        "L_value": L,
+        "c_value": c
+    }
 ```
-
-The "jump" from $3.9999$ to $5.0000$ at $x = 2$ is the visual signature of a **removable discontinuity** — exactly matching the analytic result.
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
+
 # Structural Diagrams & Schematics
 
-## Diagram 1 — Master Continuity-Check Decision Flow
+## 4.1 Continuity Verification Flowchart
+
+The following Mermaid diagram encodes the algorithmic decision procedure for classifying continuity at a point $x = c$.
 
 ```mermaid
 flowchart TD
-    A[Start: Check continuity of f at c] --> B[Step 1: Is f of c defined?]
+    A[Start: Analyze f at point x = c] --> B{Is f of c defined?}
     B -- No --> Z1[Discontinuous: f of c undefined]
-    B -- Yes --> C[Step 2: Does limit of f of x as x approaches c exist finite?]
-    C -- No, one-sided differs --> D{Jump?}
-    C -- No, one or both unbounded --> E[Infinite discontinuity]
-    C -- No, oscillates --> F[Oscillating discontinuity]
-    C -- Yes, L equals R equals L --> G[Step 3: Does L equal f of c?]
-    G -- No --> H[Removable discontinuity: redefine f of c to L]
-    G -- Yes --> I[Continuous at c]
-    H --> I2[After redefinition: continuous]
-    D --> Z2[Discontinuous]
-    E --> Z2
-    F --> Z2
-    Z1 --> Z3[Final verdict: discontinuous]
-    Z2 --> Z3
-    I --> Z4[Final verdict: continuous]
-    I2 --> Z4
+    B -- Yes --> C{Evaluate LHL and RHL}
+    C --> D{Do both LHL and RHL exist finitely?}
+    D -- No --> E{Is at least one infinite?}
+    E -- Yes --> Z2[Discontinuous: Infinite Essential]
+    E -- No --> Z3[Discontinuous: Oscillating]
+    D -- Yes --> F{Are LHL and RHL equal?}
+    F -- No --> Z4[Discontinuous: Jump]
+    F -- Yes --> G[Compute L = LHL = RHL]
+    G --> H{Is L equal to f of c within tolerance?}
+    H -- Yes --> I[Continuous at c]
+    H -- No --> Z5[Discontinuous: Removable]
+
+    classDef passNode fill:#d4edda,stroke:#28a745,color:#000000
+    classDef failNode fill:#f8d7da,stroke:#dc3545,color:#000000
+    classDef neutral fill:#cce5ff,stroke:#004085,color:#000000
+
+    class I passNode
+    class Z1,Z2,Z3,Z4,Z5 failNode
+    class A,B,C,D,E,F,G,H neutral
 ```
 
-## Diagram 2 — Classification of Discontinuities (Modular Sub-Graph)
+---
+
+## 4.2 Subgraph: Continuity Theorem Dependency Map
 
 ```mermaid
 flowchart LR
-    subgraph DiscontinuityModule [Discontinuity Classification Module]
-        D1[Removable: limit L exists but f of c differs or undefined]
-        D2[Jump: LHL not equal to RHL, both finite]
-        D3[Infinite: at least one of LHL or RHL is plus or minus infinity]
-        D4[Oscillating: limit does not exist due to oscillation]
+    subgraph Axioms[Axioms of Real Analysis]
+        A1[Completeness of Real Numbers]
+        A2[Archimedean Property]
     end
-    C[Continuous at c] --> Decision{Three conditions hold?}
-    Decision -- All yes --> Out1[Continuous]
-    Decision -- f of c missing --> D1
-    Decision -- LHL not equal to RHL --> D2
-    Decision -- Unbounded behaviour --> D3
-    Decision -- Oscillation --> D4
-    D1 --> Fix[Fix: redefine f of c to L]
-    Fix --> Out1
-    D2 --> Out2[Not continuous]
-    D3 --> Out2
-    D4 --> Out2
+
+    subgraph Foundational[Foundational Theorems]
+        B1[Sandwich Squeeze Theorem]
+        B2[Algebra of Limits]
+    end
+
+    subgraph Continuity[Continuity Theorems]
+        C1[Continuity of Polynomials]
+        C2[Continuity of Rationals]
+        C3[Continuity of Trig Functions]
+        C4[Intermediate Value Theorem IVT]
+        C5[Extreme Value Theorem EVT]
+    end
+
+    subgraph Applications[Engineering Applications]
+        D1[Signal Processing]
+        D2[Root Finding Bisection]
+        D3[Numerical Integration]
+        D4[Control System Stability]
+    end
+
+    A1 --> B2
+    A2 --> B1
+    B1 --> C4
+    B2 --> C1
+    B2 --> C2
+    B1 --> C3
+    C1 --> C2
+    C1 --> C4
+    C2 --> C4
+    C4 --> C5
+    C4 --> D2
+    C4 --> D3
+    C5 --> D1
+    C5 --> D4
+
+    classDef axiom fill:#fff3cd,stroke:#856404,color:#000000
+    classDef found fill:#d1ecf1,stroke:#0c5460,color:#000000
+    classDef cont fill:#d4edda,stroke:#155724,color:#000000
+    classDef app fill:#f8d7da,stroke:#721c24,color:#000000
+
+    class A1,A2 axiom
+    class B1,B2 found
+    class C1,C2,C3,C4,C5 cont
+    class D1,D2,D3,D4 app
 ```
 
-## Diagram 3 — Algebraic Closure Under Continuity (Sequential Processing Topology)
+---
+
+## 4.3 Discontinuity Classification Block Diagram
 
 ```mermaid
-flowchart TD
-    In1[f continuous at c] --> Op1[Operation: Sum]
-    In2[g continuous at c] --> Op1
-    Op1 --> Out1[f plus g continuous at c]
-    In1 --> Op2[Operation: Product]
-    In2 --> Op2
-    Op2 --> Out2[f times g continuous at c]
-    In1 --> Op3[Operation: Quotient]
-    In2 --> Op3
-    Op3 --> Gate{g of c not equal to 0?}
-    Gate -- Yes --> Out3[f divided by g continuous at c]
-    Gate -- No --> OutX[Quotient undefined: discontinuity]
-    In3[f continuous at c] --> Op4[Operation: Composition with f]
-    In4[g continuous at f of c] --> Op4
-    Op4 --> Out4[f composed with g continuous at c]
+flowchart TB
+    subgraph Discontinuities[Types of Discontinuities at x = c]
+        direction TB
+        D1[Removable]
+        D2[Jump]
+        D3[Infinite Essential]
+        D4[Oscillating]
+    end
+
+    subgraph Criteria[Classification Criteria]
+        direction TB
+        K1[Two-sided limit exists L in R but L not equal f of c]
+        K2[LHL and RHL exist finite but unequal]
+        K3[At least one one-sided limit is plus or minus infinity]
+        K4[Limit does not exist due to oscillation]
+    end
+
+    subgraph Fixes[Remediation Methods]
+        direction TB
+        R1[Redefine f of c = L]
+        R2[No fix possible jump is intrinsic]
+        R3[Identify vertical asymptote]
+        R4[Restrict domain to avoid c]
+    end
+
+    D1 --- K1
+    D2 --- K2
+    D3 --- K3
+    D4 --- K4
+
+    K1 --> R1
+    K2 --> R2
+    K3 --> R3
+    K4 --> R4
 ```
 
-## Diagram 4 — Theorem Application Map (IVT and EVT Trigger Conditions)
+---
 
-```mermaid
-flowchart TD
-    Start[Given: f on closed interval a to b] --> C{f continuous on a to b?}
-    C -- No --> Skip[Theorems do not apply]
-    C -- Yes --> Split{Choose theorem}
-    Split --> IVT[Intermediate Value Theorem]
-    Split --> EVT[Extreme Value Theorem]
-    IVT --> IVTout[Exists c in open a to b with f of c equals k for any k between f of a and f of b]
-    EVT --> EVTout[Exists max and min of f on closed interval a to b]
-```
+## 4.4 Sequential Processing Topology Matrix – Continuity Check Pipeline
+
+| Pipeline Stage | Operation | Input | Output | Failure Mode |
+|:---:|---|---|---|---|
+| Stage 1 | Parse $f$ and $c$ | Symbolic expression, real $c$ | Validated expression | TypeError if $c \notin \mathbb{R}$ |
+| Stage 2 | Evaluate $f(c)$ | $f, c$ | $f(c)$ or `None` | Division by zero, $\ln(0)$ |
+| Stage 3 | Compute $\text{LHL}$ | $f, c$ | $L^{-}$ or $\pm\infty$ | Non-elementary limit |
+| Stage 4 | Compute $\text{RHL}$ | $f, c$ | $L^{+}$ or $\pm\infty$ | Non-elementary limit |
+| Stage 5 | Compare $L^{-}$, $L^{+}$ | $L^{-}, L^{+}$ | Boolean / classification | None |
+| Stage 6 | Compare $L$ with $f(c)$ | $L, f(c)$ | Continuity verdict | Tolerance mismatch |
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
+
 # KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## Part A — Short Answer Questions (3 Marks Each)
+---
 
-### Question A1
+## 5.1 Part A Questions (3 Marks Each)
 
-> **[KTU University Exam — July 2023, Model QP, Module 1]** — *CO1, Bloom Level: Remember*
-> **Define continuity of a function $f$ at a point $x = c$. Using the definition, check whether $f(x) = \dfrac{x^2 - 1}{x - 1}$ is continuous at $x = 1$.**
-
-**Model Answer (Valuation Key, 3 Marks):**
-
-**Definition (1 Mark):** A function $f$ is continuous at $x = c$ if the following three conditions hold:
-$$\text{(i) } f(c) \text{ exists, (ii) } \lim_{x \to c} f(x) \text{ exists, (iii) } \lim_{x \to c} f(x) = f(c).$$
-
-**Check (2 Marks):** The function is not defined at $x = 1$ (denominator zero), so $f(1)$ does not exist. Hence $f$ is **not continuous at $x = 1$**; the discontinuity is of the **removable** type since $\lim_{x \to 1} \dfrac{x^2-1}{x-1} = \lim_{x \to 1} (x+1) = 2$.
-
-> [!WARNING]
-> Many students incorrectly write "$f(1) = 2$" by cancellation. This is **wrong** at the original point — the simplification is only valid for $x \neq 1$. Always state the value (or non-existence) at the point itself *first*.
-
-### Question A2
-
-> **[KTU University Exam — Dec 2023, Model QP, Module 1]** — *CO1, Bloom Level: Remember*
-> **State the Intermediate Value Theorem. Mention one engineering application where it is used.**
+### Question 1 — `[KTU University Exam – July 2024]`
+**Define continuity of a function $f$ at a point $x = c$. State the three essential conditions.**
 
 **Model Answer (3 Marks):**
 
-**Statement (2 Marks):** If $f$ is continuous on the closed interval $[a, b]$ and $k$ is any real number lying between $f(a)$ and $f(b)$ (i.e., $\min(f(a), f(b)) \le k \le \max(f(a), f(b))$), then there exists at least one $c \in (a, b)$ such that $f(c) = k$.
-
-**Application (1 Mark):** The **Bisection Method** for numerical root-finding in computational engineering (e.g., `scipy.optimize.brentq`, MATLAB's `fzero`) is a direct algorithmic embodiment of IVT. Given a sign change of a continuous function across an interval, IVT guarantees a root exists inside, and bisection repeatedly halves the interval until convergence.
-
----
-
-## Part B — Long Answer Questions (14 Marks, with Internal Choice)
-
-### Question A (Module Choice Option 1)
-
-> **[KTU University Exam — July 2024, Model QP, Module 1]** — *CO2, Bloom Levels: Understand (a) + Apply (b)*
-
-**Consider the function**
-
-$$f(x) = \begin{cases} \dfrac{x^2 - 9}{x - 3}, & x \neq 3 \\[6pt] 6, & x = 3. \end{cases}$$
-
-**(a)** Check whether $f$ is continuous at $x = 3$. If not, identify the type of discontinuity and find the value of $f(3)$ that would make $f$ continuous. **(7 Marks)**
-
-**(b)** Verify whether $g(x) = x^3 - 6x + 1$ has a root in the interval $[1, 2]$ using the Intermediate Value Theorem. **(7 Marks)**
-
----
-
-#### Solution to Question A
-
-##### Part (a) — Continuity check at $x = 3$ (7 Marks)
-
-**Step 1: $f(3)$ exists.** From the second branch of the definition, $f(3) = 6$. ✓ [1 Mark]
-
-**Step 2: Compute the limit.** For $x \neq 3$, factor the numerator:
-
-$$\frac{x^2 - 9}{x - 3} = \frac{(x-3)(x+3)}{x-3} = x + 3 \quad \text{for } x \neq 3.$$
-
-Therefore:
-
-$$\lim_{x \to 3} f(x) = \lim_{x \to 3} (x + 3) = 3 + 3 = 6.$$
-
-Equivalently, LHL = $\lim_{x \to 3^-} (x+3) = 6$ and RHL = $\lim_{x \to 3^+} (x+3) = 6$. The limit exists. ✓ [3 Marks]
-
-**Step 3: Compare.** We have $\lim_{x \to 3} f(x) = 6$ and $f(3) = 6$. Since they are equal:
-
-$$\lim_{x \to 3} f(x) = f(3) = 6. \quad \checkmark$$
-
-**Conclusion:** $f$ **is continuous at $x = 3$**. [1 Mark]
-
-**Type-of-discontinuity branch question (in case the function were redefined):** Had the second branch been $f(3) = 7$, then the function would exhibit a **removable discontinuity** at $x = 3$, and we would set $f(3) = 6$ to restore continuity. [2 Marks]
-
-##### Part (b) — IVT application to $g(x) = x^3 - 6x + 1$ on $[1, 2]$ (7 Marks)
-
-**Step 1: Verify continuity of $g$ on $[1, 2]$.** Since $g$ is a polynomial, it is continuous on $\mathbb{R}$, hence continuous on $[1, 2]$. ✓ [1 Mark]
-
-**Step 2: Compute the endpoint values.**
-
-$$g(1) = (1)^3 - 6(1) + 1 = 1 - 6 + 1 = -4.$$
-
-$$g(2) = (2)^3 - 6(2) + 1 = 8 - 12 + 1 = -3.$$
-
-[2 Marks — one mark for each endpoint evaluation]
-
-**Step 3: Apply the sign-change criterion.** Observe that $g(1) = -4 < 0$ and $g(2) = -3 < 0$. Both endpoint values are *negative*; there is no sign change. Therefore IVT in its standard sign-change form does **not** directly guarantee a root. [1 Mark]
-
-**Step 4: Try a wider interval $[0, 2]$ to expose the root.**
-
-$$g(0) = 0 - 0 + 1 = 1 > 0, \qquad g(2) = -3 < 0.$$
-
-Since $g(0) > 0$ and $g(2) < 0$, and $g$ is continuous on $[0, 2]$, by IVT there exists some $c \in (0, 2)$ such that $g(c) = 0$. [3 Marks — IVT invocation 2 marks, conclusion 1 mark]
-
-**Final Answer:** The function $g(x) = x^3 - 6x + 1$ **does have a root in the interval $[0, 2]$** (and therefore also has at least one real root). The original interval $[1, 2]$ alone is insufficient because both endpoints give negative values. The root actually lies between $0$ and $1$.
-
-> [!WARNING]
-> A common KTU pitfall in IVT questions: blindly computing $f(1)$ and $f(2)$ without checking whether a sign change actually exists. **Always verify the sign change before invoking IVT.** If the original interval does not show a sign change, expand the interval as shown above.
-
----
-
-### Question B (Module Choice Option 2)
-
-> **[KTU University Exam — Dec 2024, Model QP, Module 1]** — *CO2, Bloom Levels: Understand (a) + Apply (b)*
-
-**(a)** Using the $\epsilon$–$\delta$ definition of continuity, prove that $f(x) = 5x - 2$ is continuous at $x = 3$. **(7 Marks)**
-
-**(b)** Check the continuity of the function
-
-$$h(x) = \begin{cases} \sin x, & x \le 0 \\[2pt] x, & x > 0 \end{cases}$$
-
-at $x = 0$. Identify the type of discontinuity, if any. **(7 Marks)**
-
----
-
-#### Solution to Question B
-
-##### Part (a) — $\epsilon$–$\delta$ proof for $f(x) = 5x - 2$ at $c = 3$ (7 Marks)
-
-**Goal:** For every $\epsilon > 0$, find $\delta > 0$ such that
-
-$$\vert x - 3 \vert < \delta \;\Longrightarrow\; \vert (5x - 2) - 13 \vert < \epsilon,$$
-
-since $f(3) = 5(3) - 2 = 15 - 2 = 13$. [1 Mark — stating the goal]
-
-**Step 1: Bound the target expression.** We simplify the left-hand side:
-
-$$\vert (5x - 2) - 13 \vert = \vert 5x - 15 \vert = 5 \vert x - 3 \vert.$$
-
-[2 Marks — algebraic simplification 1 mark, factoring 1 mark]
-
-**Step 2: Choose δ in terms of ε.** We require $5 \vert x - 3 \vert < \epsilon$, i.e., $\vert x - 3 \vert < \epsilon / 5$. So we set
-
-$$\delta = \frac{\epsilon}{5}.$$
-
-[2 Marks — explicit δ choice]
-
-**Step 3: Verify.** Whenever $\vert x - 3 \vert < \delta = \epsilon/5$, we have
-
-$$\vert f(x) - f(3) \vert = 5 \vert x - 3 \vert < 5 \cdot \frac{\epsilon}{5} = \epsilon.$$
-
-Therefore $f(x) = 5x - 2$ is continuous at $x = 3$. $\blacksquare$ [2 Marks — final verification]
-
-> [!TIP]
-> For a *linear* function $f(x) = ax + b$, the choice $\delta = \epsilon / \vert a \vert$ works universally. No preliminary "$\delta \le 1$" cutoff is needed because the expression is already linear and unbounded in a *clean* way.
-
-##### Part (b) — Continuity check of $h(x)$ at $x = 0$ (7 Marks)
-
-**Step 1: $h(0)$ exists.** From the first branch, $h(0) = \sin 0 = 0$. ✓ [1 Mark]
-
-**Step 2: Compute one-sided limits.**
-
-**Left-hand limit** (approach from $x < 0$, use the branch $h(x) = \sin x$):
-
-$$\text{LHL} = \lim_{x \to 0^-} h(x) = \lim_{x \to 0^-} \sin x = \sin 0 = 0.$$
-
-[2 Marks]
-
-**Right-hand limit** (approach from $x > 0$, use the branch $h(x) = x$):
-
-$$\text{RHL} = \lim_{x \to 0^+} h(x) = \lim_{x \to 0^+} x = 0.$$
-
-[2 Marks]
-
-**Step 3: Combine and compare.**
-
-Since LHL $= 0 = $ RHL, the two-sided limit exists and equals $0$:
-
-$$\lim_{x \to 0} h(x) = 0.$$
-
-Now compare with $h(0) = 0$. We have $\lim_{x \to 0} h(x) = 0 = h(0)$, so all three conditions are satisfied. [1 Mark]
-
-**Conclusion:** $h$ is **continuous at $x = 0$**. The graph is unbroken at the origin; the two branches meet smoothly (in fact, both branches have slope tending to $1$ from the right and $\cos 0 = 1$ from the left, so $h$ is also *differentiable* at $0$). [1 Mark — type identification]
-
----
-
-> [!WARNING]
-> **KTU Examiner's Valuation Pitfall Callout — Top 3 Continuity Mistakes**
+> A function $f$ defined on a domain $D \subseteq \mathbb{R}$ is said to be **continuous at a point** $x = c$ where $c \in D$ if the following three conditions hold:
 >
-> 1. **Skipping the existence of $f(c)$.** Many students jump straight to "the limit is $L$, therefore continuous." Always write $f(c) = \text{(value)}$ as the *first* line of your answer. [–2 Marks]
-> 2. **Forgetting to check *both* LHL and RHL** for piecewise functions. KTU examiners deliberately test jump discontinuities with $x \le a$ / $x > a$ splits. Always compute *both* one-sided limits. [–3 Marks]
-> 3. **Misclassifying discontinuity types.** Infinite $\neq$ removable. If the limit is $\pm \infty$, it is *not* removable — no redefinition of $f(c)$ can save it. [–2 Marks]
-> 4. **In ε–δ proofs, writing $\delta = \epsilon$ without justification.** For nonlinear functions (like $x^2$), $\delta = \epsilon$ does *not* work; the correct choice involves $\delta = \min(1, \epsilon / (1 + 2 \vert c \vert))$. [–3 Marks]
+> 1. **$f(c)$ is defined:** The function has a finite value at $x = c$.
+> 2. **$\lim_{x \to c} f(x)$ exists:** The limit as $x$ approaches $c$ exists finitely (equivalently, $\lim_{x \to c^{-}} f(x) = \lim_{x \to c^{+}} f(x)$).
+> 3. **$\lim_{x \to c} f(x) = f(c)$:** The limiting value equals the actual function value.
+>
+> When all three conditions are satisfied, $f$ is continuous at $c$. **[1 Mark per condition = 3 Marks]**
+
+**Course Outcome:** CO1 | **RBT Level:** Remember
 
 ---
 
-## Topic Recap & Important Things to Remember
+### Question 2 — `[KTU University Exam – Dec 2023]`
+**Classify the different types of discontinuities a function can exhibit. Give one example for each.**
+
+**Model Answer (3 Marks):**
+
+> A function $f$ is discontinuous at $x = c$ if any one of the three continuity conditions fails. The four types of discontinuities are:
+>
+> 1. **Removable Discontinuity:** $\lim_{x \to c} f(x)$ exists but $\neq f(c)$ (or $f(c)$ undefined). **Example:** $f(x) = \dfrac{\sin x}{x}$ at $x = 0$. **[0.75 Marks]**
+>
+> 2. **Jump Discontinuity:** LHL and RHL exist finitely but are unequal. **Example:** $f(x) = \begin{cases} x & x < 1 \\ x + 2 & x \geq 1 \end{cases}$ at $x = 1$. **[0.75 Marks]**
+>
+> 3. **Infinite (Essential) Discontinuity:** At least one of the one-sided limits is $\pm\infty$. **Example:** $f(x) = \dfrac{1}{x-2}$ at $x = 2$. **[0.75 Marks]**
+>
+> 4. **Oscillating Discontinuity:** Limit fails to exist due to oscillation. **Example:** $f(x) = \sin\!\left(\dfrac{1}{x}\right)$ at $x = 0$. **[0.75 Marks]**
+
+**Course Outcome:** CO1 | **RBT Level:** Understand
+
+---
+
+## 5.2 Part B Questions (14 Marks Each – Internal Choice)
+
+### Question A — `[KTU University Exam – July 2024]`
+
+**Question A(a) [7 Marks]:** Check the continuity of the function $f(x) = \begin{cases} \dfrac{x^2 - 4}{x - 2}, & x \neq 2 \\ 4, & x = 2 \end{cases}$ at $x = 2$. If discontinuous, classify and remove the discontinuity if possible.
+
+**Model Solution:**
+
+**Step 1: Compute $f(2)$** **[1 Mark]**
+
+$$f(2) = 4 \quad \text{[defined, finite]}$$
+
+**Step 2: Compute $\lim_{x \to 2} f(x)$** **[3 Marks]**
+
+$$\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = \lim_{x \to 2} \frac{(x-2)(x+2)}{x-2} = \lim_{x \to 2} (x+2) = 4$$
+
+[Stating the factoring identity: 1 Mark; Cancelling the common factor: 1 Mark; Final substitution: 1 Mark]
+
+**Step 3: Apply the Equality Condition** **[2 Marks]**
+
+$$L = \lim_{x \to 2} f(x) = 4 \quad \text{and} \quad f(2) = 4$$
+
+Since $L = f(2)$, the equality condition is **satisfied**.
+
+**Step 4: Final Verdict** **[1 Mark]**
+
+The function $f$ is **continuous at $x = 2$** as given. (Note: Without the simplification of the numerator, the expression $\frac{x^2-4}{x-2}$ is undefined at $x=2$, so the piecewise definition with $f(2) = 4$ correctly assigns the limit value, making it continuous.)
+
+**Course Outcome:** CO1, CO2 | **RBT Level:** Apply
+
+---
+
+**Question A(b) [7 Marks]:** Find the values of $a$ and $b$ such that $f(x) = \begin{cases} 2x + 1, & x < 2 \\ a, & x = 2 \\ x^2 + b, & x > 2 \end{cases}$ is continuous at $x = 2$.
+
+**Model Solution:**
+
+**Step 1: Compute Left-Hand Limit (LHL) at $x = 2$** **[1.5 Marks]**
+
+$$\text{LHL} = \lim_{x \to 2^{-}} (2x + 1) = 2(2) + 1 = 5$$
+
+**Step 2: Compute Right-Hand Limit (RHL) at $x = 2$** **[1.5 Marks]**
+
+$$\text{RHL} = \lim_{x \to 2^{+}} (x^2 + b) = (2)^2 + b = 4 + b$$
+
+**Step 3: Compute $f(2)$** **[0.5 Mark]**
+
+$$f(2) = a$$
+
+**Step 4: Apply Continuity Conditions** **[2.5 Marks]**
+
+For continuity: $\text{LHL} = \text{RHL} = f(2)$.
+
+From LHL $=$ RHL:
+
+$$5 = 4 + b \quad \Rightarrow \quad b = 1$$
+
+From LHL $= f(2)$:
+
+$$5 = a \quad \Rightarrow \quad a = 5$$
+
+**Step 5: Final Answer** **[1 Mark]**
+
+$$\boxed{a = 5, \quad b = 1}$$
+
+**Course Outcome:** CO2 | **RBT Level:** Apply
+
+---
+
+### Question B — `[KTU University Exam – Dec 2023]`
+
+**Question B(a) [7 Marks]:** State and prove the Intermediate Value Theorem. Use it to show that the equation $x^5 - 3x + 1 = 0$ has a root between $x = 0$ and $x = 1$.
+
+**Model Solution:**
+
+**Step 1: Statement of IVT** **[2 Marks]**
+
+> **Intermediate Value Theorem (Bolzano's Theorem):**
+> Let $f$ be a continuous function on a closed interval $[a, b]$, and let $k$ be any real number strictly between $f(a)$ and $f(b)$. Then there exists at least one point $c \in (a, b)$ such that $f(c) = k$.
+
+**Step 2: Proof Sketch** **[2 Marks]**
+
+> *Proof Idea:* Without loss of generality, assume $f(a) < f(b)$ and $f(a) < k < f(b)$. Define $S = \{x \in [a, b] \mid f(x) \leq k\}$. Then $S$ is non-empty (as $a \in S$), bounded above (by $b$), so by the completeness of $\mathbb{R}$, $S$ has a supremum $c = \sup S$. Using continuity of $f$ at $c$, one shows that $f(c) = k$.
+
+**Step 3: Apply IVT to the Given Equation** **[2 Marks]**
+
+Let $g(x) = x^5 - 3x + 1$. Since $g$ is a polynomial, $g$ is continuous on $\mathbb{R}$, and in particular on $[0, 1]$.
+
+Compute:
+
+$$g(0) = 0^5 - 3(0) + 1 = 1 > 0$$
+
+$$g(1) = 1^5 - 3(1) + 1 = 1 - 3 + 1 = -1 < 0$$
+
+**Step 4: Conclusion** **[1 Mark]**
+
+Since $g(0) = 1 > 0$ and $g(1) = -1 < 0$, the value $0$ lies strictly between $g(0)$ and $g(1)$. By the IVT, there exists $c \in (0, 1)$ such that $g(c) = 0$, i.e., the equation $x^5 - 3x + 1 = 0$ has a root in $(0, 1)$. $\blacksquare$
+
+**Course Outcome:** CO2, CO3 | **RBT Level:** Apply
+
+---
+
+**Question B(b) [7 Marks]:** Determine the points of discontinuity of $f(x) = \dfrac{x^2 - 5x + 6}{x^2 - 4}$ and classify each.
+
+**Model Solution:**
+
+**Step 1: Factor Numerator and Denominator** **[1.5 Marks]**
+
+$$f(x) = \frac{x^2 - 5x + 6}{x^2 - 4} = \frac{(x-2)(x-3)}{(x-2)(x+2)}$$
+
+**Step 2: Identify Domain Restrictions** **[1 Mark]**
+
+The denominator vanishes when $x - 2 = 0$ or $x + 2 = 0$, i.e., at $x = 2$ and $x = -2$. Therefore, the natural domain is $\mathbb{R} \setminus \{-2, 2\}$.
+
+**Step 3: Analyze Continuity at $x = -2$** **[2 Marks]**
+
+Since $f(-2)$ is undefined (division by zero), $f$ is **discontinuous at $x = -2$**.
+
+Compute the one-sided limits:
+
+$$\lim_{x \to -2} f(x) = \lim_{x \to -2} \frac{(x-2)(x-3)}{(x-2)(x+2)} = \lim_{x \to -2} \frac{x-3}{x+2}$$
+
+$$\text{LHL} = \lim_{x \to -2^{-}} \frac{x-3}{x+2} = \frac{-2-3}{0^{-}} = \frac{-5}{0^{-}} = +\infty$$
+
+$$\text{RHL} = \lim_{x \to -2^{+}} \frac{x-3}{x+2} = \frac{-5}{0^{+}} = -\infty$$
+
+Since LHL and RHL are infinite with opposite signs, $f$ has an **infinite (essential) discontinuity** at $x = -2$. **[0.5 Mark for classification]**
+
+**Step 4: Analyze Continuity at $x = 2$** **[1.5 Marks]**
+
+Since $f(2)$ is undefined, $f$ is **discontinuous at $x = 2$**.
+
+Compute the limit (note that the factor $(x-2)$ cancels):
+
+$$\lim_{x \to 2} f(x) = \lim_{x \to 2} \frac{x-3}{x+2} = \frac{2-3}{2+2} = -\frac{1}{4}$$
+
+Since the limit exists finitely (as $-\frac{1}{4}$) but $f(2)$ is undefined, this is a **removable discontinuity**. It can be removed by defining $f(2) = -\frac{1}{4}$. **[0.5 Mark for classification]**
+
+**Step 5: Continuity Everywhere Else** **[0.5 Mark]**
+
+For all $x \neq -2, 2$, the function is a ratio of polynomials with non-zero denominator, hence **continuous on $\mathbb{R} \setminus \{-2, 2\}$**.
+
+**Step 6: Final Summary** **[0.5 Mark]**
+
+| Point | Discontinuity Type | Removable? |
+|---|---|---|
+| $x = -2$ | Infinite (Essential) | No |
+| $x = 2$ | Removable | Yes (define $f(2) = -1/4$) |
+
+**Course Outcome:** CO2, CO3 | **RBT Level:** Analyze
+
+---
+
+## 5.3 KTU Examiner's Valuation Warning / Pitfall Callout
+
+> [!WARNING]
+> **Common Mark-Deduction Pitfalls in KTU Examinations:**
+>
+> 1. **Skipping the existence check:** Many students directly compute the limit and compare with $f(c)$, forgetting to explicitly state that $f(c)$ is defined. **[−1 Mark deduction]**
+>
+> 2. **Confusing the one-sided limits:** When checking continuity at the endpoint of a closed interval, students often compute both LHL and RHL. The correct approach is to compute **only the relevant one-sided limit** at the endpoint. **[−1 Mark deduction]**
+>
+> 3. **Algebraic sign errors in piecewise limits:** When the piecewise formula changes at $x = c$, students sometimes substitute the *wrong branch* into the LHL or RHL. Always verify which branch applies for $x < c$ and $x > c$ separately.
+>
+> 4. **Misclassifying discontinuities:** A removable discontinuity is **NOT** a point where the limit is infinite. Infinite limits correspond to **essential/infinite discontinuities**, not removable ones.
+>
+> 5. **Forgetting to state continuity elsewhere:** In piecewise questions, students analyze continuity at the "join point" but forget to explicitly state that the function is continuous on the rest of its domain.
+>
+> 6. **Not using the IVT conditions explicitly:** When applying IVT, the four mandatory conditions (function continuous, closed interval, value lies strictly between endpoint values, conclusion) must be stated, not just implied.
+
+---
+
+## 5.4 Topic Recap & Important Things to Remember
 
 > [!IMPORTANT]
-> **Rapid-Revision Checklist — Continuous Functions (GAMAT101, Module 1)**
-
-* **Definition of continuity at a point:** All three conditions must hold — $f(c)$ defined, $\lim_{x \to c} f(x)$ exists (finite), and the limit equals $f(c)$. *(Most-tested single equation: $\lim_{x \to c} f(x) = f(c)$.)*
-* **ε–δ definition:** $\forall \epsilon > 0, \exists \delta > 0$ such that $\vert x - c \vert < \delta \Rightarrow \vert f(x) - f(c) \vert < \epsilon$. Use this for rigorous proofs; expect it in 7-mark sub-parts.
-* **One-sided continuity:** $f$ is right-continuous at $c$ if $\lim_{x \to c^+} f(x) = f(c)$; left-continuous if $\lim_{x \to c^-} f(x) = f(c)$. Both must hold for ordinary continuity.
-* **Continuity on $[a, b]$:** Continuous on $(a, b)$ plus right-continuity at $a$ and left-continuity at $b$.
-* **Algebraic closure:** Sum, difference, product, scalar multiple, and power of continuous functions are continuous. Quotient is continuous where denominator is non-zero. Composition of continuous functions is continuous.
-* **Standard continuous functions to memorize:** All polynomials (on $\mathbb{R}$), all rational functions (where defined), $\sin x$, $\cos x$ (on $\mathbb{R}$), $e^x$, $a^x$ (on $\mathbb{R}$, $a > 0$), $\ln x$ (on $(0, \infty)$).
-* **Four types of discontinuities:** *Removable* (limit exists, redefine $f(c)$), *Jump* (LHL $\neq$ RHL, both finite), *Infinite* (one or both sides $\pm \infty$), *Oscillating* (no limit due to oscillation).
-* **Intermediate Value Theorem (IVT):** Continuous on $[a, b]$ + sign change $\Rightarrow \exists c \in (a, b)$ with $f(c) = 0$ (or $= k$ for any $k$ between $f(a), f(b)$).
-* **Extreme Value Theorem (EVT):** Continuous on closed bounded $[a, b]$ $\Rightarrow$ both global max and global min are attained on $[a, b]$.
-* **Always start with Step 1:** State $f(c)$ explicitly *before* computing limits. The KTU valuation key gives 2 marks for this opening step.
-* **For ε–δ proofs:** Factor first, restrict $\delta \le 1$ if needed, then solve for $\delta$ in terms of $\epsilon$. For polynomials of degree $\ge 2$, use $\delta = \min(1, \text{expression in } \epsilon)$. For linear functions, $\delta = \epsilon / \vert \text{slope} \vert$ works directly.
-* **Engineering link:** Continuity underpins the Bisection Method, signal sampling (Nyquist theorem), activation functions in neural networks, Bézier curves in computer graphics, and stability analysis in control systems.
+> **Rapid Revision Checklist — Continuous Functions (Module 1)**
+>
+> - **Continuity at $x = c$** requires three conditions: $f(c)$ defined, $\lim_{x \to c} f(x)$ exists, and they are equal. **[CORE DEFINITION]**
+>
+> - **All polynomials are continuous on $\mathbb{R}$.** Rational functions are continuous wherever the denominator is non-zero.
+>
+> - **Trigonometric functions** $\sin x$, $\cos x$ are continuous on $\mathbb{R}$. $\tan x$, $\sec x$ are continuous on $\mathbb{R} \setminus \{(2k+1)\tfrac{\pi}{2}\}$.
+>
+> - **Exponential $e^x$** is continuous on $\mathbb{R}$. **Logarithm $\ln x$** is continuous on $(0, \infty)$.
+>
+> - **Four types of discontinuities:** Removable, Jump, Infinite (Essential), Oscillating. Always classify by analyzing the limit behavior.
+>
+> - **Algebra of continuous functions:** Sum, difference, product, quotient (where denominator is non-zero), and composition of continuous functions are continuous.
+>
+> - **Intermediate Value Theorem (IVT):** If $f \in C([a,b])$ and $k$ is strictly between $f(a)$ and $f(b)$, then $\exists c \in (a,b)$ such that $f(c) = k$.
+>
+> - **Extreme Value Theorem (EVT):** Every continuous function on a **closed and bounded** interval $[a, b]$ attains its absolute maximum and absolute minimum.
+>
+> - **Sequential Criterion for Continuity:** $f$ is continuous at $c$ if and only if for every sequence $x_n \to c$ with $x_n \in \text{Dom}(f) \setminus \{c\}$, we have $f(x_n) \to f(c)$.
+>
+> - **Endpoint Continuity:** At $x = a$ (left endpoint of $[a, b]$), check right-continuity. At $x = b$ (right endpoint), check left-continuity.
+>
+> - **KTU Valuation Tip:** When a piecewise function has a constant middle branch $f(c) = a$, the continuity condition collapses to a simple equation in $a$ and any other parameters.
+>
+> - **Pitfall to Avoid:** A removable discontinuity can be *removed*, but a jump or infinite discontinuity **cannot** — they are intrinsic to the function.
 
 <!-- SECTION_5_END -->

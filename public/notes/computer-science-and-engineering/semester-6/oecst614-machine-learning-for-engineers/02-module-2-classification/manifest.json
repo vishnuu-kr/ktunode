@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING FOR ENGINEERS",
+  "course_code": "OECST614",
+  "module_number": 2,
+  "module_title": "Classification",
+  "topics_generated": [
+    {
+      "title": "Classification  - Naïve Bayes, KNN",
+      "slug": "classification-na-ve-bayes-knn",
+      "path": "classification-na-ve-bayes-knn/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Generalisation and Overfitting  - Idea of overfitting",
+      "slug": "generalisation-and-overfitting-idea-of-overfitting",
+      "path": "generalisation-and-overfitting-idea-of-overfitting/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "LASSO and RIDGE regularization",
+      "slug": "lasso-and-ridge-regularization",
+      "path": "lasso-and-ridge-regularization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Idea of Training, Testing, Validation",
+      "slug": "idea-of-training-testing-validation",
+      "path": "idea-of-training-testing-validation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluation measures  – Classification - Precision, Recall, Accuracy, F-Measure, Receiver Operating Characteristic Curve(ROC), Area Under Curve (AUC).",
+      "slug": "evaluation-measures-classification-precision-recall-accuracy-f-measure-receiver-operating",
+      "path": "evaluation-measures-classification-precision-recall-accuracy-f-measure-receiver-operating/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Regression - Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R Squared/Coefficient of Determination.",
+      "slug": "regression-mean-absolute-error-mae-root-mean-squared-error-rmse-r-squared-coefficient-of",
+      "path": "regression-mean-absolute-error-mae-root-mean-squared-error-rmse-r-squared-coefficient-of/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

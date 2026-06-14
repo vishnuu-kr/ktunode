@@ -1,0 +1,43 @@
+{
+  "course_name": "DATA STRUCTURES LAB",
+  "course_code": "PCCSL307",
+  "module_number": 10,
+  "module_title": "We have three containers whose sizes are 10 litres 7 litres and 4 litr",
+  "topics_generated": [
+    {
+      "title": "We have three containers whose sizes are 10 litres, 7 litres, and 4 litres, respectively.",
+      "slug": "we-have-three-containers-whose-sizes-are-10-litres-7-litres-and-4-litres-respectively",
+      "path": "we-have-three-containers-whose-sizes-are-10-litres-7-litres-and-4-litres-respectively/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The 7-litre and 4-litre containers start out full of water, but the 10-litre container is initially empty.",
+      "slug": "the-7-litre-and-4-litre-containers-start-out-full-of-water-but-the-10-litre-container-is-initially",
+      "path": "the-7-litre-and-4-litre-containers-start-out-full-of-water-but-the-10-litre-container-is-initially/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "We are allowed one type of operation: pouring the contents of one container into another, stopping only when the source container is empty or the destination container is full.",
+      "slug": "we-are-allowed-one-type-of-operation-pouring-the-contents-of-one-container-into-another-stopping",
+      "path": "we-are-allowed-one-type-of-operation-pouring-the-contents-of-one-container-into-another-stopping/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "We want to know if there is a sequence of pourings that leaves exactly 2 litres in the 7 or 4-litre container.",
+      "slug": "we-want-to-know-if-there-is-a-sequence-of-pourings-that-leaves-exactly-2-litres-in-the-7-or-4-litre",
+      "path": "we-want-to-know-if-there-is-a-sequence-of-pourings-that-leaves-exactly-2-litres-in-the-7-or-4-litre/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Model this as a graph problem and solve.",
+      "slug": "model-this-as-a-graph-problem-and-solve",
+      "path": "model-this-as-a-graph-problem-and-solve/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

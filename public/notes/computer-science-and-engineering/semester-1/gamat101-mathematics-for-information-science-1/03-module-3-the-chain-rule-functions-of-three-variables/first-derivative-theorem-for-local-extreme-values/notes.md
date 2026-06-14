@@ -1,669 +1,639 @@
 # First derivative theorem for local extreme values
 
 <!-- SECTION_1_START -->
-# First Derivative Theorem for Local Extreme Values
+## Core Technical Definition & Intuitive Overview
 
-## Formal Definition (KTU 2024 Syllabus Terminology)
+### Formal Academic Definition (KTU 2024 Syllabus Terminology)
 
 > [!IMPORTANT]
-> **First Derivative Test (Local Extrema – Multivariable Setting):** Let $f : D \subseteq \mathbb{R}^{n} \to \mathbb{R}$ be a differentiable function on an open domain $D$. Let $P_0 = (a_1, a_2, \dots, a_n)$ be a **critical point** of $f$, i.e.,
-> $$\nabla f(P_0) = \mathbf{0} \quad \Longleftrightarrow \quad \frac{\partial f}{\partial x_i}\bigg|_{P_0} = 0 \;\;\text{for every}\;\; i = 1, 2, \dots, n.$$
-> The point $P_0$ is a **local extremum** (max / min) if and only if the directional behaviour of $f$ around $P_0$ — measured by the sign changes of the first-order partial derivatives — is consistent in **every** direction. The First Derivative Theorem provides the sign-flip criterion that confirms or rejects the extremum.
+> **Fermat's Theorem (First Derivative Theorem for Local Extreme Values — Multivariable Form):**
+> Let $f : D \subseteq \mathbb{R}^3 \to \mathbb{R}$ be a real-valued function defined on an open set $D$. Suppose $f$ attains a **local extremum** (local maximum or local minimum) at an **interior point** $\mathbf{c} = (a, b, c) \in D$. If the first-order partial derivatives $f_x$, $f_y$, and $f_z$ exist at $\mathbf{c}$, then
+> $$\nabla f(\mathbf{c}) = \mathbf{0} \quad \Longleftrightarrow \quad f_x(a, b, c) = f_y(a, b, c) = f_z(a, b, c) = 0$$
+> where $\nabla f = (f_x, f_y, f_z)$ is the gradient vector. The point $\mathbf{c}$ is called a **stationary point** or **critical point** of $f$.
 
-For the two-variable function $f(x, y)$ with critical point $(a, b)$:
+### Conceptual Analogy — The Mountain Climber's Intuition
 
-| Condition on $f_x(x, b)$ | Condition on $f_y(a, y)$ | Conclusion |
-| :--- | :--- | :--- |
-| $+\,\to\, -$ (sign change) | $+\,\to\, -$ (sign change) | **Local Maximum** at $(a, b)$ |
-| $-\,\to\, +$ (sign change) | $-\,\to\, +$ (sign change) | **Local Minimum** at $(a, b)$ |
-| No sign change in at least one partial | No sign change in at least one partial | **No extremum** (often a **saddle**) |
-
----
-
-## Intuitive Overview — The "Hilltop Compass" Analogy
-
-Imagine you are standing blindfolded on a mountain landscape modelled by $z = f(x, y)$. You have a small compass that tells you the **slope** in the $x$-direction ($f_x$) and the $y$-direction ($f_y$).
-
-- If at your current spot the slope in the $x$-direction is positive just to the **west** and negative just to the **east**, the terrain goes **up then down** along the east–west line — you are on top of a ridge running east–west.
-- If the same happens in the north–south direction, then the terrain peaks in **both** principal directions ⇒ you are at a **local maximum (peak)**.
-- If both directions are "down then up", you are at a **local minimum (valley)**.
-- If one direction is "up then down" but the other is "down then up" (or flat), the slopes conflict — the terrain is shaped like a **saddle** (think a horse saddle: high in front, low in back).
+Imagine you are standing on a vast 3-D terrain whose height at location $(x, y)$ is given by $z = f(x, y)$. If you are standing at the **peak of a mountain** (local maximum) or at the **bottom of a deep valley** (local minimum), and you carefully place a marble on the ground, the marble must not roll away — meaning the ground around you is **locally flat in every direction**. If the slope were nonzero in any direction, the marble would roll toward a higher or lower elevation, contradicting the fact that you are already at an extreme height. Mathematically, this "flatness in every direction" condition is exactly $\nabla f = \mathbf{0}$.
 
 > [!NOTE]
-> **Why study this in Information Science?** Loss functions in machine learning (e.g., $L(w_1, w_2, \dots, w_n)$) are multivariable scalar functions. Critical points correspond to candidate optima (best model parameters). The first-derivative sign test is the **conceptual foundation** for gradient-based optimizers (Gradient Descent, Adam) — they *search* for points where all partial derivatives flip sign from negative to positive, i.e., a **local minimum** of the loss.
+> **Why "First Derivative" Theorem?** Because the conclusion depends solely on the **first-order** partial derivatives being zero. It tells us *where* to look for extrema but **not** whether the critical point is a maximum, minimum, or neither — that classification requires the **Second Derivative Test** (Hessian analysis).
+
+> [!WARNING]
+> **The converse is FALSE.** A point where $\nabla f = \mathbf{0}$ is *not necessarily* an extremum. It could be a **saddle point** (e.g., $f(x, y) = x^2 - y^2$ at the origin). Therefore, the First Derivative Theorem provides only a **necessary condition**, never a sufficient one.
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Contour map of $f(x, y) = x^2 + y^2$ near its critical point at the origin — illustrates a **local minimum** where both $f_x$ and $f_y$ change from negative to positive.
+> **Concept:** A 3-D paraboloid (bowl) showing a unique local minimum at the origin where the tangent plane is perfectly horizontal.
 > **GeoGebra / Desmos Input Equations:**
-> * `f(x, y) = x^2 + y^2`
-> * `g(x, y) = x^2 - y^2` *(saddle example for comparison)*
-> **Visual Description:** Closed, concentric, ellipse-shaped level curves centred at the origin, all bending **upwards** in every direction from $(0,0)$ — hallmark of a strict local minimum.
+> * `f(x, y) = x^2 + y^2` *(paraboloid — local minimum)*
+> * `g(x, y) = x^2 - y^2` *(saddle — counter-example to converse)*
+> **Visual Description:** The student should observe that at the origin of $f$, the surface is bowl-shaped with a horizontal tangent plane (gradient is zero). For $g$, the origin looks like a horse-saddle — flat in the $x$-direction but tilted in the $y$-direction, yet $\nabla g(0,0) = (0, 0)$ still holds. This visualizes why $\nabla f = 0$ is necessary but not sufficient.
 
 ---
 
-## Where this Theorem Sits in the Calculus Hierarchy
-
-$$
-\boxed{\;
-\begin{aligned}
-\text{Extremum Search Hierarchy:}\quad
-&\textbf{Step 1: Necessary Condition} \;\; \nabla f = \mathbf{0}\\[2pt]
-&\textbf{Step 2: Sufficient Condition via First Derivatives} \;\; \text{(sign-flip test)}\\[2pt]
-&\textbf{Step 3: Sufficient Condition via Second Derivatives} \;\; \text{(Hessian test)}
-\end{aligned}\;}
-$$
-
-The **First Derivative Theorem** is *Step 2*. It is the *bridge* between mere critical-point identification and a definitive classification.
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
+## Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 The Theoretical Engine — Why the Sign-Flip Works
+### Structured Logical Breakdown of the Theorem
 
-The first derivative test is a **direct translation** of the single-variable first derivative test to higher dimensions, applied **along coordinate axes** (and, when needed, along arbitrary directions).
+The First Derivative Theorem is a **direct generalization of the single-variable Fermat's Theorem** to functions of multiple variables. Its logic unfolds in three rigorous layers:
 
-### For a Single-Variable Function $y = f(x)$
+- **Step 1 — Reduction to single-variable analysis.**
+  To analyze $f(x, y, z)$ near the point $(a, b, c)$, we **freeze** the other two variables and study the resulting single-variable function. For instance, along the $x$-axis through $(a, b, c)$:
+  $$g(t) = f(t, b, c)$$
+  If $f$ has a local extremum at $(a, b, c)$, then $g$ has a local extremum at $t = a$.
+
+- **Step 2 — Application of single-variable Fermat's Theorem.**
+  Since $g$ attains a local extremum at $t = a$ and $g$ is differentiable there, the single-variable theorem forces:
+  $$g'(a) = 0 \quad \Longleftrightarrow \quad f_x(a, b, c) = 0$$
+
+- **Step 3 — Symmetric argument along every coordinate axis.**
+  Repeating Step 1 and Step 2 for the $y$- and $z$-directions yields $f_y(a, b, c) = 0$ and $f_z(a, b, c) = 0$. Combining all three gives:
+  $$\nabla f(a, b, c) = (0, 0, 0)$$
+
+### Why This Theorem Matters in Engineering and Information Science
+
+- **Machine Learning:** The back-propagation algorithm finds **critical points of the loss function** $L(\mathbf{w})$ in high-dimensional weight space by setting $\nabla L = \mathbf{0}$. The First Derivative Theorem is the *theoretical foundation* for why minima must occur at flat regions of the loss landscape.
+- **Computer Graphics:** Vertex shaders optimize energy functions over 3-D coordinates; local extrema correspond to stable equilibria.
+- **Operations Research:** Cost-minimization in 3-variable production problems uses this theorem as the first analytical step.
+- **Signal Processing:** Variational problems with three parameters (frequency, phase, amplitude) require critical-point analysis.
+
+### KTU Formula Sheet / Cheat Sheet
+
+> [!IMPORTANT]
+> The following table contains the **high-yield results** a KTU 2024 student must memorize for the End Semester Examination (ESE).
+
+| **Concept** | **Mathematical Statement** | **Conditions / Remarks** |
+|---|---|---|
+| Fermat's Theorem (1st Derivative) | $\nabla f(\mathbf{c}) = \mathbf{0}$ | Necessary (not sufficient) for local extremum at interior $\mathbf{c}$ |
+| Critical Point Definition | $f_x = f_y = f_z = 0$ | Where $\nabla f$ is zero or undefined |
+| Gradient Vector | $\nabla f = (f_x, f_y, f_z)$ | First-order vector operator |
+| Directional Derivative Link | $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$ | If $\nabla f = \mathbf{0}$, all directional derivatives vanish |
+| Second Derivative Test (3-D) | Let $H = \nabla^2 f$ at $\mathbf{c}$ | If $H$ is positive definite → local min; negative definite → local max; indefinite → saddle |
+| Hessian Determinant (3-D) | $D = f_{xx} f_{yy} f_{zz} + 2 f_{xy} f_{xz} f_{yz} - f_{xx} f_{yz}^2 - f_{yy} f_{xz}^2 - f_{zz} f_{xy}^2$ | Sign of $D$ classifies the critical point |
+| Boundary Behavior | $\nabla f$ need NOT be zero | On the boundary, extrema occur via Lagrange multipliers or direct comparison |
+| Sign of $f$ at Critical Point | $f(x, y, z) - f(\mathbf{c})$ analysis | Definitive test when Hessian is zero (inconclusive) |
+
+### Critical Distinctions Every KTU Examiner Expects
 
 > [!NOTE]
-> Let $f$ be continuous on $(a - \delta, a + \delta)$ and differentiable on $(a - \delta, a) \cup (a, a + \delta)$, with $f'(a) = 0$. Then:
-> * If $f'(x) > 0$ for $x < a$ and $f'(x) < 0$ for $x > a$ $\Rightarrow$ $f$ has a **local maximum** at $x = a$.
-> * If $f'(x) < 0$ for $x < a$ and $f'(x) > 0$ for $x > a$ $\Rightarrow$ $f$ has a **local minimum** at $x = a$.
-> * If $f'(x)$ has the same sign on both sides $\Rightarrow$ $f$ has **no extremum** at $x = a$.
-
-The justification rests on the **Mean Value Theorem (MVT)**: $f(a + h) - f(a) = f'(\xi)\,h$ for some $\xi$ between $a$ and $a + h$. The sign of $f'(\xi)$ then dictates whether $f(a+h)$ is greater or smaller than $f(a)$.
-
-### Generalisation to $f(x, y)$
-
-At a critical point $(a, b)$ where $\nabla f(a, b) = (0, 0)$:
-
-**Step A — Analyse along the line $y = b$ (varying $x$ alone):**
-Define $\phi(x) = f(x, b)$. Then $\phi'(x) = f_x(x, b)$, and $\phi'(a) = 0$. Apply the single-variable first derivative test to $\phi$ at $x = a$.
-
-**Step B — Analyse along the line $x = a$ (varying $y$ alone):**
-Define $\psi(y) = f(a, y)$. Then $\psi'(y) = f_y(a, y)$, and $\psi'(b) = 0$. Apply the single-variable first derivative test to $\psi$ at $y = b$.
-
-**Step C — Combine the conclusions:**
-
-$$
-\boxed{\;
-\begin{aligned}
-\text{Local MAX at }(a,b) \;\;\Longleftrightarrow\;\; &\phi'(x) \text{ goes } +\to - \textbf{ AND } \psi'(y) \text{ goes } +\to - \\
-\text{Local MIN at }(a,b) \;\;\Longleftrightarrow\;\; &\phi'(x) \text{ goes } -\to + \textbf{ AND } \psi'(y) \text{ goes } -\to + \\
-\text{Saddle / No extremum} \;\;\Longleftrightarrow\;\; &\text{at least one of } \phi', \psi' \text{ has no sign flip}
-\end{aligned}\;}
-$$
-
-> [!IMPORTANT]
-> **Saddle Point Criterion:** A *saddle point* is detected when $f_x$ and $f_y$ change sign in **opposite** directions, or when one of them does **not** change sign at all. In optimisation theory, saddle points are notorious — they satisfy $\nabla f = \mathbf{0}$ but are *not* optima. Gradient descent can stall here without momentum terms.
-
-### Generalisation to $f(x, y, z)$
-
-The first-derivative test extends naturally: at critical point $(a, b, c)$, study three slices:
-
-$$
-\begin{aligned}
-\phi(x) &= f(x, b, c) \;\;\Rightarrow\;\; \phi'(x) = f_x(x, b, c)\\
-\psi(y) &= f(a, y, c) \;\;\Rightarrow\;\; \psi'(y) = f_y(a, y, c)\\
-\chi(z) &= f(a, b, z) \;\;\Rightarrow\;\; \chi'(z) = f_z(a, b, z)
-\end{aligned}
-$$
-
-A **local max** requires all three to flip $+\to -$, a **local min** requires all three to flip $-\to +$, and any mismatch $\Rightarrow$ saddle (or degenerate) behaviour.
+> 1. **Interior vs Boundary:** The theorem applies **only at interior points** of the domain. On a closed bounded boundary, extrema can occur where $\nabla f \neq \mathbf{0}$ (handled by Lagrange multipliers or parametric boundary analysis).
+> 2. **Existence of Partial Derivatives:** The theorem requires $f_x$, $f_y$, $f_z$ to **exist**. If they don't exist (e.g., at a cusp), the theorem does not apply, but an extremum can still exist.
+> 3. **Necessary vs Sufficient:** This is the **#1 most-tested distinction** in KTU valuations. Memorize: *"$ \nabla f = 0$ is necessary but not sufficient."*
 
 ---
 
-## 2.2 KTU Formula Sheet / Cheat Sheet
-
-> [!IMPORTANT]
-> Memorise this table — it carries the **majority of the 14-mark problems** in the KTU ESE.
-
-| # | Concept | Formula / Condition | Test Direction |
-| :--- | :--- | :--- | :--- |
-| 1 | Critical point | $\nabla f = (f_x, f_y, f_z) = (0, 0, 0)$ | All partials vanish |
-| 2 | First derivative along $x$ | $\phi'(x) = f_x(x, b, c, \dots)$ | Vary $x$, fix others |
-| 3 | First derivative along $y$ | $\psi'(y) = f_y(a, y, c, \dots)$ | Vary $y$, fix others |
-| 4 | First derivative along $z$ | $\chi'(z) = f_z(a, b, z, \dots)$ | Vary $z$, fix others |
-| 5 | Local MAX condition | All $\phi', \psi', \chi'$ go $+\to -$ | Sign flip **positive to negative** |
-| 6 | Local MIN condition | All $\phi', \psi', \chi'$ go $-\to +$ | Sign flip **negative to positive** |
-| 7 | Saddle / No extremum | At least one partial has no sign flip OR flips in opposite sense | Inconsistent sign pattern |
-| 8 | Absolute MAX on closed bounded region $D$ | Compare $f$ at all critical points in $\text{int}(D)$ and on $\partial D$ | Global search |
-| 9 | Second-derivative backup (Hessian) | $D = f_{xx} f_{yy} - (f_{xy})^{2}$ | $D>0,\; f_{xx}>0 \Rightarrow$ MIN |
-| 10 | Directional derivative (extra test) | $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$ | Sign-flip along $\mathbf{u}$ |
-
-> [!NOTE]
-> **Threshold / Boundary conditions:** When the partial derivatives are *undefined* (e.g., $\frac{1}{x}$ at $x=0$, or $\sqrt{x}$ at boundary), the critical-point analysis must be **extended** to the boundary of the domain. KTU problems frequently include such cases.
-
----
-
-## 2.3 Real-World Engineering Utility
-
-> [!IMPORTANT]
-> **Production deployment in Information Science:**
-> * **Logistic regression** — the cross-entropy loss is a function of weights $(w_1, w_2, \dots, w_n)$ with critical points at $\nabla L = 0$. The first-derivative sign test ensures the algorithm converges to a *minimum* (not a saddle).
-> * **Portfolio optimisation** — risk-adjusted return surfaces in $\mathbb{R}^{3}$ (return, volatility, drawdown) have critical points; the first-derivative test classifies efficient frontiers.
-> * **Computer vision (optical flow)** — brightness constancy constraints form Lagrangian surfaces whose extrema (corner points) are detected by first-derivative zero-crossings (Harris corner detector).
-
----
-
-## 2.4 Limitations & When to Fall Back to the Second Derivative Test
-
-The first-derivative test is **definitive but laborious** — it requires evaluating $f_x$ on *both sides* of the critical point, which is not always algebraically clean. The **second derivative test** (Hessian) gives a one-shot classification but **fails** when the Hessian determinant is zero. Hence, the first-derivative test remains the *conceptual bedrock*.
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations & Worked Examples
+## Step-by-Step Derivations, Proof, and Code Implementation
+
+### 3.1 Exhaustive Proof of the First Derivative Theorem
 
 > [!NOTE]
-> **Worked Example 1 — Two-Variable Local Maximum (KTU Pattern Problem)**
-> Find and classify the critical points of $f(x, y) = -x^2 - y^2 + 4x + 6y - 13$.
+> **Theorem Statement (Restated):** Let $f : D \subseteq \mathbb{R}^3 \to \mathbb{R}$, where $D$ is open. If $f$ has a local maximum or minimum at the interior point $\mathbf{c} = (a, b, c)$ and the partial derivatives exist at $\mathbf{c}$, then $f_x(a, b, c) = f_y(a, b, c) = f_z(a, b, c) = 0$.
 
-### Step 1: Compute the First Partial Derivatives
+**Proof (by reduction to single-variable Fermat's Theorem):**
 
-$$
-\begin{aligned}
-f_x(x, y) &= \frac{\partial}{\partial x}\!\left(-x^2 - y^2 + 4x + 6y - 13\right) = -2x + 4 \\
-f_y(x, y) &= \frac{\partial}{\partial y}\!\left(-x^2 - y^2 + 4x + 6y - 13\right) = -2y + 6
-\end{aligned}
-$$
+Without loss of generality, assume $f$ has a local **maximum** at $\mathbf{c} = (a, b, c)$. (The proof for a local minimum is identical by symmetry.)
 
-### Step 2: Set $\nabla f = \mathbf{0}$ to Locate Critical Points
+**Step 1:** Define an auxiliary single-variable function by holding $y$ and $z$ constant at the values $b$ and $c$:
 
-$$
-\begin{aligned}
-f_x = 0 \;\;\Rightarrow\;\; -2x + 4 &= 0 \;\;\Rightarrow\;\; x = 2 \\
-f_y = 0 \;\;\Rightarrow\;\; -2y + 6 &= 0 \;\;\Rightarrow\;\; y = 3
-\end{aligned}
-$$
+$$g(t) = f(t, b, c), \quad t \in \mathbb{R}$$
 
-**Critical point:** $(a, b) = (2, 3)$.
+**Step 2:** Since $f$ has a local maximum at $(a, b, c)$, by definition there exists $\delta_1 > 0$ such that for all $t$ with $\vert t - a \vert < \delta_1$:
 
-### Step 3: Apply the First Derivative Theorem — Slice Along $y = 3$
+$$f(t, b, c) \le f(a, b, c) \quad \Longleftrightarrow \quad g(t) \le g(a)$$
 
-Define the slice function
-$$\phi(x) = f(x, 3) = -x^2 - 9 + 4x + 18 - 13 = -x^2 + 4x - 4.$$
+Therefore, $g$ has a local maximum at $t = a$.
 
-Its derivative with respect to $x$ is
-$$\phi'(x) = f_x(x, 3) = -2x + 4.$$
+**Step 3:** Because the partial derivative $f_x(a, b, c)$ exists, $g$ is differentiable at $t = a$, with:
 
-**Sign analysis around $x = 2$:**
+$$g'(a) = \lim_{t \to a} \frac{g(t) - g(a)}{t - a} = \lim_{t \to a} \frac{f(t, b, c) - f(a, b, c)}{t - a} = f_x(a, b, c)$$
 
-$$
-\begin{aligned}
-&\text{For } x < 2:\;\; \phi'(x) = -2x + 4 > 0 \quad \text{(e.g., } x=1 \Rightarrow \phi'(1) = +2 \text{)} \\
-&\text{For } x > 2:\;\; \phi'(x) = -2x + 4 < 0 \quad \text{(e.g., } x=3 \Rightarrow \phi'(3) = -2 \text{)}
-\end{aligned}
-$$
+**Step 4:** By the single-variable Fermat's Theorem, since $g$ has a local extremum at $t = a$ and $g$ is differentiable there, $g'(a) = 0$. Therefore:
 
-**Conclusion:** $\phi'(x)$ goes from **positive to negative** as $x$ crosses $2$ ⇒ $f$ has a **local maximum** in the $x$-direction at $(2, 3)$.
+$$f_x(a, b, c) = 0$$
 
-### Step 4: Apply the First Derivative Theorem — Slice Along $x = 2$
+**Step 5:** Repeating Steps 1–4 with the auxiliary functions $h(t) = f(a, t, c)$ and $k(t) = f(a, b, t)$, we obtain:
 
-Define the slice function
-$$\psi(y) = f(2, y) = -4 - y^2 + 8 + 6y - 13 = -y^2 + 6y - 9.$$
+$$f_y(a, b, c) = 0 \quad \text{and} \quad f_z(a, b, c) = 0$$
 
-Its derivative with respect to $y$ is
-$$\psi'(y) = f_y(2, y) = -2y + 6.$$
+**Conclusion:** All three first-order partial derivatives vanish, so $\nabla f(a, b, c) = (0, 0, 0)$. $\blacksquare$
 
-**Sign analysis around $y = 3$:**
+---
 
-$$
-\begin{aligned}
-&\text{For } y < 3:\;\; \psi'(y) = -2y + 6 > 0 \quad \text{(e.g., } y=2 \Rightarrow \psi'(2) = +2 \text{)} \\
-&\text{For } y > 3:\;\; \psi'(y) = -2y + 6 < 0 \quad \text{(e.g., } y=4 \Rightarrow \psi'(4) = -2 \text{)}
-\end{aligned}
-$$
+### 3.2 Worked Example 1 — Three-Variable Paraboloid
 
-**Conclusion:** $\psi'(y)$ goes from **positive to negative** as $y$ crosses $3$ ⇒ $f$ has a **local maximum** in the $y$-direction at $(2, 3)$.
+**Problem:** Find all critical points of
+$$f(x, y, z) = x^2 + y^2 + z^2 - 2x - 4y - 6z + 7$$
+using the First Derivative Theorem. Classify the critical point.
 
-### Step 5: Combine — Apply the First Derivative Theorem
+**Step-by-Step Solution:**
 
-$$
-\boxed{\;
-\begin{aligned}
-&\phi'(x) \text{ flips } +\to - \quad \text{AND} \quad \psi'(y) \text{ flips } +\to - \\
-&\Downarrow \\
-&f(x, y) \text{ has a LOCAL MAXIMUM at } (2, 3).
-\end{aligned}\;}
-$$
+**Step 1 — Compute the first partial derivatives:**
 
-The maximum value is
-$$f(2, 3) = -4 - 9 + 8 + 18 - 13 = 0.$$
+$$f_x(x, y, z) = \frac{\partial}{\partial x}\!\left[x^2 + y^2 + z^2 - 2x - 4y - 6z + 7\right] = 2x - 2$$
 
-> [!NOTE]
-> **Worked Example 2 — Saddle Point Detection (Critical for Information Science)**
-> Classify the critical points of $f(x, y) = x^2 - y^2$.
+$$f_y(x, y, z) = \frac{\partial}{\partial y}\!\left[x^2 + y^2 + z^2 - 2x - 4y - 6z + 7\right] = 2y - 4$$
 
-### Step 1: First Partials
+$$f_z(x, y, z) = \frac{\partial}{\partial z}\!\left[x^2 + y^2 + z^2 - 2x - 4y - 6z + 7\right] = 2z - 6$$
 
-$$
-f_x = 2x, \qquad f_y = -2y.
-$$
+**[Valuation Tip — KTU 2024 Key:]** *Showing the differentiation of each term explicitly with the power rule: 1 Mark per derivative = 3 Marks total.*
 
-### Step 2: Critical Point
+**Step 2 — Apply Fermat's Theorem by setting each partial to zero:**
 
-$$2x = 0 \;\;\text{and}\;\; -2y = 0 \;\;\Rightarrow\;\; (a, b) = (0, 0).$$
+$$\nabla f = \mathbf{0} \quad \Longleftrightarrow \quad \begin{cases} 2x - 2 = 0 \\ 2y - 4 = 0 \\ 2z - 6 = 0 \end{cases}$$
 
-### Step 3: Sliced Sign Analysis
+**Step 3 — Solve the linear system:**
 
-$$
-\begin{aligned}
-&\phi'(x) = f_x(x, 0) = 2x \\
-&\text{For } x < 0: \phi' < 0;\quad \text{For } x > 0: \phi' > 0 \;\;\Rightarrow\;\; \phi' \text{ flips } -\to + \;\; \text{(local MIN in } x \text{ direction).} \\
-&\psi'(y) = f_y(0, y) = -2y \\
-&\text{For } y < 0: \psi' > 0;\quad \text{For } y > 0: \psi' < 0 \;\;\Rightarrow\;\; \psi' \text{ flips } +\to - \;\; \text{(local MAX in } y \text{ direction).}
-\end{aligned}
-$$
+$$2x = 2 \;\Rightarrow\; x = 1, \qquad 2y = 4 \;\Rightarrow\; y = 2, \qquad 2z = 6 \;\Rightarrow\; z = 3$$
 
-### Step 4: Apply the Theorem
+**Step 4 — State the unique critical point:**
 
-The two principal directions give **opposing** sign patterns ($-\to+$ in $x$ but $+\to-$ in $y$). By the First Derivative Theorem:
+$$\mathbf{c} = (1, 2, 3)$$
 
-$$
-\boxed{\;(0, 0) \text{ is a SADDLE POINT of } f(x, y) = x^2 - y^2.\;}
-$$
+**[Valuation Tip — KTU 2024 Key:]** *Correctly identifying the critical point with full coordinates: 1 Mark.*
 
-> [!WARNING]
-> **Valuation Pitfall:** Do **not** state "since $\phi'$ flips sign, there is a minimum" without checking the *other* principal direction. Saddle points are the most common misclassification in KTU answers.
+**Step 5 — Classify using the Second Derivative Test (3-D Hessian):**
+
+The Hessian matrix of $f$ is constant everywhere:
+
+$$H_f(x, y, z) = \begin{pmatrix} f_{xx} & f_{xy} & f_{xz} \\ f_{yx} & f_{yy} & f_{yz} \\ f_{zx} & f_{zy} & f_{zz} \end{pmatrix} = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{pmatrix}$$
+
+**Step 6 — Compute the eigenvalues of the Hessian (or test positive-definiteness):**
+
+The Hessian equals $2 I_3$, whose eigenvalues are all $\lambda_1 = \lambda_2 = \lambda_3 = 2 > 0$. Since **all eigenvalues are strictly positive**, the Hessian is **positive definite**. Therefore, by the Second Derivative Test, $f$ has a **strict local minimum** at $\mathbf{c} = (1, 2, 3)$.
+
+**Step 7 — Compute the minimum value:**
+
+$$f(1, 2, 3) = 1^2 + 2^2 + 3^2 - 2(1) - 4(2) - 6(3) + 7 = 1 + 4 + 9 - 2 - 8 - 18 + 7 = -7$$
+
+$$\boxed{f_{\min} = -7 \text{ at the critical point } \mathbf{c} = (1, 2, 3)}$$
+
+---
+
+### 3.3 Worked Example 2 — Saddle Point Counter-Example in 3 Variables
+
+**Problem:** Apply the First Derivative Theorem to
+$$f(x, y, z) = x^2 - y^2 - z^2$$
+and show that the resulting critical point is a **saddle point** (not an extremum).
+
+**Step-by-Step Solution:**
+
+**Step 1 — Compute partial derivatives:**
+
+$$f_x = 2x, \qquad f_y = -2y, \qquad f_z = -2z$$
+
+**Step 2 — Set $\nabla f = \mathbf{0}$:**
+
+$$2x = 0 \;\Rightarrow\; x = 0, \qquad -2y = 0 \;\Rightarrow\; y = 0, \qquad -2z = 0 \;\Rightarrow\; z = 0$$
+
+**Step 3 — Identify the critical point:** $\mathbf{c} = (0, 0, 0)$, with $f(\mathbf{c}) = 0$.
+
+**Step 4 — Form the Hessian matrix:**
+
+$$H_f = \begin{pmatrix} f_{xx} & f_{xy} & f_{xz} \\ f_{yx} & f_{yy} & f_{yz} \\ f_{zx} & f_{zy} & f_{zz} \end{pmatrix} = \begin{pmatrix} 2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}$$
+
+**Step 5 — Examine the eigenvalues:** $\lambda_1 = 2 > 0$, $\lambda_2 = -2 < 0$, $\lambda_3 = -2 < 0$.
+
+**Step 6 — Conclusion:** Since the Hessian has **both positive and negative eigenvalues**, it is **indefinite**. The critical point $(0, 0, 0)$ is a **saddle point**, **not an extremum**.
 
 > [!NOTE]
-> **Worked Example 3 — Three-Variable Function (Module 3 Specialisation)**
-> Classify the critical point of $f(x, y, z) = x^2 + y^2 + z^2 - 2x - 4y - 6z + 14$.
+> **Counter-example verification:** Along the $x$-axis ($y = z = 0$), $f(x, 0, 0) = x^2 \ge 0 = f(\mathbf{c})$, so $f$ increases away from the origin. Along the $y$-axis ($x = z = 0$), $f(0, y, 0) = -y^2 \le 0 = f(\mathbf{c})$, so $f$ decreases away from the origin. This **bidirectional behavior** confirms the saddle classification.
 
-### Step 1: First Partials in All Three Variables
+---
 
-$$
-f_x = 2x - 2, \qquad f_y = 2y - 4, \qquad f_z = 2z - 6.
-$$
+### 3.4 Worked Example 3 — Critical Point on a Closed Bounded Domain
 
-### Step 2: Locate the Critical Point
+**Problem:** Find the absolute maximum and minimum of
+$$f(x, y, z) = x + 2y + 3z$$
+subject to the constraint $x^2 + y^2 + z^2 = 1$ (the unit sphere).
 
-$$
-2x - 2 = 0 \;\Rightarrow\; x = 1; \quad 2y - 4 = 0 \;\Rightarrow\; y = 2; \quad 2z - 6 = 0 \;\Rightarrow\; z = 3.
-$$
+**Step-by-Step Solution:**
 
-**Critical point:** $(1, 2, 3)$.
+**Step 1 — Apply the First Derivative Theorem to the unconstrained problem (interior of sphere):**
 
-### Step 3: Three Independent Slice Tests
+Since the interior of the unit ball contains no critical points in the strict sense (the level sets of $f$ are planes that never equal a constant in the open ball's interior where all $\partial f/\partial x_i = (1, 2, 3) \neq \mathbf{0}$), extrema must occur on the **boundary** $x^2 + y^2 + z^2 = 1$.
 
-Define three slice functions:
+**Step 2 — Use Lagrange multipliers (boundary case):**
 
-$$
-\phi(x) = f(x, 2, 3), \quad \psi(y) = f(1, y, 3), \quad \chi(z) = f(1, 2, z).
-$$
+Set $\nabla f = \lambda \nabla g$ where $g(x, y, z) = x^2 + y^2 + z^2 - 1$:
 
-The corresponding first derivatives are
+$$(1, 2, 3) = \lambda (2x, 2y, 2z) \quad \Longrightarrow \quad x = \frac{1}{2\lambda},\; y = \frac{1}{\lambda},\; z = \frac{3}{2\lambda}$$
 
-$$
-\phi'(x) = f_x(x, 2, 3) = 2x - 2, \quad \psi'(y) = 2y - 4, \quad \chi'(z) = 2z - 6.
-$$
+**Step 3 — Substitute into the constraint $x^2 + y^2 + z^2 = 1$:**
 
-**Sign-flip analysis (each is linear, so check one side of the critical value):**
+$$\frac{1}{4\lambda^2} + \frac{1}{\lambda^2} + \frac{9}{4\lambda^2} = 1 \quad \Longrightarrow \quad \frac{1 + 4 + 9}{4\lambda^2} = 1 \quad \Longrightarrow \quad \frac{14}{4\lambda^2} = 1 \quad \Longrightarrow \quad \lambda^2 = \frac{7}{2}$$
 
-$$
-\begin{aligned}
-&\phi'(x):\; x < 1 \Rightarrow \phi' < 0;\; x > 1 \Rightarrow \phi' > 0 \;\;\Rightarrow\;\; \text{flips } -\to + \\
-&\psi'(y):\; y < 2 \Rightarrow \psi' < 0;\; y > 2 \Rightarrow \psi' > 0 \;\;\Rightarrow\;\; \text{flips } -\to + \\
-&\chi'(z):\; z < 3 \Rightarrow \chi' < 0;\; z > 3 \Rightarrow \chi' > 0 \;\;\Rightarrow\;\; \text{flips } -\to + \\
-\end{aligned}
-$$
+**Step 4 — Solve for the two critical points:**
 
-### Step 4: Apply the First Derivative Theorem in $\mathbb{R}^3$
+$$\lambda = \pm \sqrt{\tfrac{7}{2}} = \pm \tfrac{\sqrt{14}}{2}$$
 
-All three sliced first derivatives exhibit the **same** sign-flip pattern ($-\to +$). Therefore:
+For $\lambda = \tfrac{\sqrt{14}}{2}$: $\quad (x, y, z) = \left(\tfrac{1}{\sqrt{14}},\; \tfrac{2}{\sqrt{14}},\; \tfrac{3}{\sqrt{14}}\right)$, giving $f = \tfrac{1+4+9}{\sqrt{14}} = \tfrac{14}{\sqrt{14}} = \sqrt{14}$.
 
-$$
-\boxed{\;f(x, y, z) \text{ has a strict LOCAL MINIMUM at } (1, 2, 3) \text{ with } f(1, 2, 3) = 0.\;}
-$$
+For $\lambda = -\tfrac{\sqrt{14}}{2}$: $\quad (x, y, z) = -\left(\tfrac{1}{\sqrt{14}},\; \tfrac{2}{\sqrt{14}},\; \tfrac{3}{\sqrt{14}}\right)$, giving $f = -\sqrt{14}$.
 
-> [!IMPORTANT]
-> **Engineering Insight:** This is exactly the structure of a **quadratic loss landscape** in a 3-parameter model (e.g., linear regression with 3 weights after centering). The unique minimum is where gradient descent converges.
+**Step 5 — Conclusion:** $f_{\max} = \sqrt{14}$ and $f_{\min} = -\sqrt{14}$.
 
-### Python Symbolic Verification (Industry-Ready Snippet)
+---
+
+### 3.5 Symbolic Python Implementation (SymPy)
 
 ```python
-from sympy import symbols, diff, solve, Rational
+"""
+first_derivative_theorem.py
+----------------------------
+Symbolic implementation of the First Derivative Theorem
+for functions of three variables f(x, y, z).
+Finds all critical points by solving ∇f = 0 and classifies them
+using the Hessian matrix and its eigenvalues.
+"""
 
-x, y, z = symbols("x y z", real=True)
-f = x**2 + y**2 + z**2 - 2*x - 4*y - 6*z + 14
+from __future__ import annotations
+import sympy as sp
+from sympy import symbols, diff, Matrix, solve, Rational, simplify, sqrt, hessian
 
-grad = [diff(f, v) for v in (x, y, z)]
-crit_points = solve(grad, (x, y, z), dict=True)
-print("Critical point(s):", crit_points)        # [{x: 1, y: 2, z: 3}]
 
-# First-derivative sign-flip test (sign of phi'(x) on either side of a)
-a, b, c = 1, 2, 3
-phi_prime  = grad[0].subs({y: b, z: c})          # 2*x - 2
-psi_prime  = grad[1].subs({x: a, z: c})          # 2*y - 4
-chi_prime  = grad[2].subs({x: a, y: b})          # 2*z - 6
+def find_critical_points(
+    f_expr: sp.Expr,
+    vars_tuple: tuple[sp.Symbol, sp.Symbol, sp.Symbol],
+) -> list[dict]:
+    """
+    Find all critical points of a three-variable function f(x, y, z)
+    by applying the First Derivative Theorem (∇f = 0).
 
-print("phi'(a - 1) =", phi_prime.subs(x, a - 1),  "  phi'(a + 1) =", phi_prime.subs(x, a + 1))
-print("psi'(b - 1) =", psi_prime.subs(y, b - 1),  "  psi'(b + 1) =", psi_prime.subs(y, b + 1))
-print("chi'(c - 1) =", chi_prime.subs(z, c - 1),  "  chi'(c + 1) =", chi_prime.subs(z, c + 1))
+    Parameters
+    ----------
+    f_expr : sp.Expr
+        Symbolic expression of f(x, y, z).
+    vars_tuple : tuple of 3 sympy.Symbol
+        The variables (x, y, z).
 
-# Output:
-# phi'(0) = -2   phi'(2) = 2     -> sign flip - to +
-# psi'(1) = -2   psi'(3) = 2     -> sign flip - to +
-# chi'(2) = -2   chi'(4) = 2     -> sign flip - to +
-# All three slices flip - to +  =>  LOCAL MINIMUM  [Consistent with theorem]
+    Returns
+    -------
+    list[dict]
+        Each dict contains:
+          - 'point': tuple (x0, y0, z0)
+          - 'gradient': tuple (fx, fy, fz) at the point
+          - 'hessian': 3x3 sympy.Matrix at the point
+          - 'eigenvalues': list of symbolic eigenvalues
+          - 'classification': str ('Local Min', 'Local Max', 'Saddle', or 'Inconclusive')
+          - 'function_value': f evaluated at the point
+    """
+    x, y, z = vars_tuple
+
+    # --- Step 1: Compute the gradient (First Derivative Theorem setup) ---
+    grad = Matrix([diff(f_expr, v) for v in (x, y, z)])
+    print(f"Gradient ∇f = ({grad[0]}, {grad[1]}, {grad[2]})")
+
+    # --- Step 2: Solve the system ∇f = 0 ---
+    raw_solutions = solve(grad, (x, y, z), dict=True)
+    print(f"Raw critical point candidates: {raw_solutions}")
+
+    # --- Step 3: Build the Hessian and classify each candidate ---
+    H = hessian(f_expr, (x, y, z))
+    print(f"Hessian H = \n{H}\n")
+
+    results: list[dict] = []
+    for sol in raw_solutions:
+        # Substitute the candidate coordinates
+        x0, y0, z0 = sol[x], sol[y], sol[z]
+        H_at_pt = H.subs(sol)
+        grad_at_pt = grad.subs(sol)
+        f_val = simplify(f_expr.subs(sol))
+
+        # Eigenvalue analysis for 3x3 Hessian
+        eigenvals = [simplify(ev) for ev in H_at_pt.eigenvals().keys()]
+
+        # Classification logic (definiteness test)
+        all_positive = all(ev > 0 for ev in eigenvals)
+        all_negative = all(ev < 0 for ev in eigenvals)
+        if all_positive:
+            classification = "Local Minimum"
+        elif all_negative:
+            classification = "Local Maximum"
+        elif any(ev > 0 for ev in eigenvals) and any(ev < 0 for ev in eigenvals):
+            classification = "Saddle Point (NOT an extremum)"
+        else:
+            classification = "Inconclusive (use direct comparison)"
+
+        results.append({
+            "point": (x0, y0, z0),
+            "gradient": tuple(grad_at_pt),
+            "hessian": H_at_pt,
+            "eigenvalues": eigenvals,
+            "classification": classification,
+            "function_value": f_val,
+        })
+    return results
+
+
+# ----------------- DEMO RUN -----------------
+if __name__ == "__main__":
+    x, y, z = symbols("x y z", real=True)
+
+    print("=" * 70)
+    print("DEMO 1: f(x,y,z) = x^2 + y^2 + z^2 - 2x - 4y - 6z + 7")
+    print("=" * 70)
+    f1 = x**2 + y**2 + z**2 - 2*x - 4*y - 6*z + 7
+    for r in find_critical_points(f1, (x, y, z)):
+        print(f"Point: {r['point']}, Classification: {r['classification']}, "
+              f"f = {r['function_value']}\n")
+
+    print("=" * 70)
+    print("DEMO 2: f(x,y,z) = x^2 - y^2 - z^2  (saddle counter-example)")
+    print("=" * 70)
+    f2 = x**2 - y**2 - z**2
+    for r in find_critical_points(f2, (x, y, z)):
+        print(f"Point: {r['point']}, Classification: {r['classification']}, "
+              f"f = {r['function_value']}\n")
 ```
+
+**Expected Output (Truncated):**
+
+```
+Gradient ∇f = (2*x - 2, 2*y - 4, 2*z - 6)
+Hessian H =
+Matrix([[2, 0, 0], [0, 2, 0], [0, 0, 2]])
+Point: (1, 2, 3), Classification: Local Minimum, f = -7
+
+Gradient ∇f = (2*x, -2*y, -2*z)
+Point: (0, 0, 0), Classification: Saddle Point (NOT an extremum), f = 0
+```
+
+---
+
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# Structural Diagrams & Schematics
+## Structural Diagrams & Schematics
 
-## 4.1 Algorithm Flow — Applying the First Derivative Theorem
+### 4.1 Algorithmic Flowchart for Applying the First Derivative Theorem
 
-```mermaid
-flowchart TD
-    startA([Start: Given f of n variables]) --> pA[Step 1: Compute all first partial derivatives]
-    pA --> pB[Step 2: Solve grad f equals zero vector]
-    pB --> pC{Critical points exist?}
-    pC -- No --> pD([No extrema possible])
-    pC -- Yes --> pE[Step 3: For each critical point P0, build n sliced functions along each coordinate axis]
-    pE --> pF[Step 4: For each sliced function, evaluate the sign of the first derivative on the LEFT and RIGHT of P0]
-    pF --> pG{All slices flip + to -?}
-    pG -- Yes --> pH([Conclude: LOCAL MAXIMUM at P0])
-    pG -- No --> pI{All slices flip - to +?}
-    pI -- Yes --> pJ([Conclude: LOCAL MINIMUM at P0])
-    pI -- No --> pK([Conclude: SADDLE POINT or DEGENERATE at P0])
-    pK --> pL[Optional: Fall back to Second Derivative Test with Hessian for confirmation]
-```
-
-## 4.2 Sequential Processing Topology — Decision Matrix
-
-```mermaid
-flowchart LR
-    subgraph S1[Phase 1: Necessary Conditions]
-        dirA1[Input f of x,y,z] --> dirA2[Compute grad f]
-        dirA2 --> dirA3[Solve grad f = 0]
-        dirA3 --> dirA4[List critical points]
-    end
-
-    subgraph S2[Phase 2: First Derivative Test]
-        dirB1[Pick critical point P0]
-        dirB2[Slice 1: f_x along x, others fixed]
-        dirB3[Slice 2: f_y along y, others fixed]
-        dirB4[Slice 3: f_z along z, others fixed]
-        dirB1 --> dirB2
-        dirB1 --> dirB3
-        dirB1 --> dirB4
-    end
-
-    subgraph S3[Phase 3: Sign Pattern Aggregation]
-        dirC1{Same sign flip pattern in all slices?}
-        dirC2[Yes and is plus to minus: MAX]
-        dirC3[Yes and is minus to plus: MIN]
-        dirC4[No or conflicting: SADDLE]
-    end
-
-    S1 --> S2
-    S2 --> S3
-    dirB2 --> dirC1
-    dirB3 --> dirC1
-    dirB4 --> dirC1
-    dirC1 -- Pattern A --> dirC2
-    dirC1 -- Pattern B --> dirC3
-    dirC1 -- Pattern C --> dirC4
-```
-
-## 4.3 Geometric Decision Tree — Local Extrema in $\mathbb{R}^2$
+> [!IMPORTANT]
+> The following Mermaid flowchart codifies the **KTU-expected algorithm** for finding and classifying extrema of a three-variable function $f(x, y, z)$. This flowchart structure is itself a high-yield KTU question — students are often asked to draw or describe it.
 
 ```mermaid
 flowchart TD
-    G1([Critical point at a, b]) --> G2{Sign of f_x LEFT of a}
-    G2 -- Positive --> G3{Sign of f_x RIGHT of a}
-    G2 -- Negative --> G4{Sign of f_x RIGHT of a}
-    G2 -- Zero or Undefined --> G5[Use second derivative or non axial test]
+    A[Start: Given f of x, y, z] --> B{Is the domain<br/>open and bounded?}
+    B -- Yes --> C[Compute gradient<br/>∇f = fx, fy, fz]
+    B -- No ClosedBounded --> D[Handle boundary separately<br/>Lagrange multipliers]
+    C --> E[Set ∇f equals zero vector<br/>Solve 3 equations]
+    E --> F{Solutions<br/>exist?}
+    F -- No --> G[No interior critical points<br/>Check boundary only]
+    F -- Yes --> H[Record critical point c]
+    H --> I[Compute Hessian matrix H at c]
+    I --> J{All eigenvalues<br/>of H strictly positive?}
+    J -- Yes --> K[Local Minimum at c<br/>Positive Definite H]
+    J -- No --> L{All eigenvalues<br/>of H strictly negative?}
+    L -- Yes --> M[Local Maximum at c<br/>Negative Definite H]
+    L -- No --> N{Signed mix of<br/>positive and negative?}
+    N -- Yes --> O[Saddle Point at c<br/>Not an extremum]
+    N -- No --> P[H has a zero eigenvalue<br/>Inconclusive]
+    P --> Q[Use direct comparison<br/>f near c minus f at c]
+    D --> R[Build Lagrangian L equals f minus lambda g]
+    R --> S[Solve ∇L equals zero]
+    S --> T[Evaluate f at all candidates<br/>Pick global max and min]
 
-    G3 -- Negative --> G6{Local MAX in x direction}
-    G3 -- Positive --> G7{No extremum in x direction}
-    G4 -- Positive --> G8{Local MIN in x direction}
-    G4 -- Negative --> G7
-
-    G6 --> H1{Same pattern in y direction?}
-    H1 -- Yes --> H2([LOCAL MAXIMUM at a, b])
-    H1 -- No --> H3([SADDLE POINT at a, b])
-    G8 --> H4{Same pattern in y direction?}
-    H4 -- Yes --> H5([LOCAL MINIMUM at a, b])
-    H4 -- No --> H3
+    style A fill:#1f4e79,color:#ffffff,stroke:#000000
+    style K fill:#2e7d32,color:#ffffff,stroke:#000000
+    style M fill:#c62828,color:#ffffff,stroke:#000000
+    style O fill:#f9a825,color:#000000,stroke:#000000
+    style P fill:#6a1b9a,color:#ffffff,stroke:#000000
+    style Q fill:#455a64,color:#ffffff,stroke:#000000
 ```
 
-## 4.4 Conceptual Block Diagram — Connection to Machine-Learning Optimisation
+### 4.2 Sequential Processing Topology Matrix
 
-```mermaid
-flowchart LR
-    subgraph Optim[Gradient Descent Loop]
-        opA[Model weights w1, w2, w3] --> opB[Compute loss L]
-        opB --> opC[Compute grad L]
-        opC --> opD{Sign flip of partial derivatives?}
-        opD -- All flip minus to plus --> opE[Converging to local minimum]
-        opD -- Conflicting signs --> opF[Stalled at saddle point]
-        opD -- All flip plus to minus --> opG[Converging to local maximum]
-    end
-```
+This matrix provides an alternative tabular representation of the same algorithm, useful for KTU short-answer or fill-in-the-blank questions.
+
+| **Stage** | **Operation** | **Input** | **Output** | **Failure Mode** |
+|---|---|---|---|---|
+| 1 | Verify domain openness | Domain $D$ | Boolean | Boundary case → switch to Stage 7 |
+| 2 | Compute $\nabla f$ | $f(x, y, z)$ | $(f_x, f_y, f_z)$ | Non-differentiable → no theorem |
+| 3 | Solve $\nabla f = \mathbf{0}$ | Gradient vector | Set of critical points $\mathbf{c}_i$ | No solution → no interior extrema |
+| 4 | Validate $\mathbf{c}_i \in D$ | Candidate set | Subset $\mathbf{c}_i \in \text{int}(D)$ | Out-of-domain → discard |
+| 5 | Build Hessian $H$ | Second partials | $3 \times 3$ matrix | — |
+| 6 | Eigenvalue test on $H$ | Hessian | Signature $(+,+,+)$ etc. | Zero eigenvalue → inconclusive |
+| 7 | Boundary via Lagrange | Constraint $g$ | Lagrangian critical points | — |
+| 8 | Global comparison | All candidates | $\max f$, $\min f$ | — |
+
+---
+
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme Examination Question Bank & Topic Recap
+## KTU 2024 Scheme Examination Question Bank & Topic Recap
+
+### Part A — Short Answer Questions (3 Marks Each)
 
 > [!IMPORTANT]
-> The questions below are modelled on the **KTU 2024 Scheme ESE pattern** for GAMAT101 (Mathematics for Information Science – 1), Module 3, with the standard 3-mark and 14-mark distributions and mandatory internal choice.
+> **KTU 2024 ESE Pattern:** Part A carries 3 marks per question. The expected answer length is **3–5 lines** with the final boxed result. Avoid lengthy derivations.
 
 ---
 
-## Part A — Short Answer Questions (3 Marks Each)
+**A1. [KTU University Exam — July 2024 Model Question]**
 
-### Question 1: [KTU University Exam – July 2024]
-**State the First Derivative Test for local extrema of a function of two variables. What conclusion is drawn if the partial derivatives do not change sign at the critical point?**
+**State Fermat's Theorem (First Derivative Test) for functions of three variables. Mention one important caveat about its converse.**
+
+**Model Answer (3 Marks — Board Standard):**
+
+> **Statement:** Let $f : D \subseteq \mathbb{R}^3 \to \mathbb{R}$ be defined on an open set $D$. If $f$ attains a local extremum at an interior point $\mathbf{c} = (a, b, c)$ and the partial derivatives $f_x$, $f_y$, $f_z$ exist at $\mathbf{c}$, then
+> $$\nabla f(\mathbf{c}) = (0, 0, 0)$$
+> i.e., $f_x(a, b, c) = f_y(a, b, c) = f_z(a, b, c) = 0$. **[2 Marks]**
+>
+> **Caveat:** The converse is **not true**: a point where $\nabla f = \mathbf{0}$ need not be an extremum (it may be a saddle point, e.g., $f(x, y) = x^2 - y^2$ at $(0,0)$). Hence, the theorem gives only a **necessary condition**, not a sufficient one. **[1 Mark]**
+
+**Mapping:** CO1 — Remember & Understand
+
+---
+
+**A2. [KTU University Exam — Dec 2023 Model Question]**
+
+**Define a critical point of $f(x, y, z)$. Is the origin a critical point of $f(x, y, z) = x^3 + y^3 + z^3$? Justify.**
 
 **Model Answer (3 Marks):**
 
-> **Statement (2 Marks):** Let $f(x, y)$ be differentiable near a critical point $(a, b)$ where $f_x(a, b) = 0$ and $f_y(a, b) = 0$. If $f_x(x, b)$ changes from **positive to negative** and $f_y(a, y)$ changes from **positive to negative** as we cross the critical point, then $f$ has a **local maximum** at $(a, b)$. If both flip from **negative to positive**, it is a **local minimum**.
-> **Conclusion when no sign change (1 Mark):** If at least one of the partial derivatives does not change sign, the point is **not an extremum**; it is a **saddle point** (or a degenerate critical point).
+> **Definition:** A point $\mathbf{c} = (a, b, c)$ in the domain of $f$ is called a **critical point** (or stationary point) if $\nabla f(\mathbf{c}) = \mathbf{0}$ or if one or more partial derivatives do not exist at $\mathbf{c}$. **[1 Mark]**
+>
+> **Check:** For $f(x, y, z) = x^3 + y^3 + z^3$,
+> $$f_x = 3x^2, \quad f_y = 3y^2, \quad f_z = 3z^2$$
+> At the origin $(0, 0, 0)$:
+> $$\nabla f(0, 0, 0) = (3 \cdot 0^2,\; 3 \cdot 0^2,\; 3 \cdot 0^2) = (0, 0, 0)$$
+> Therefore, $\nabla f(0,0,0) = \mathbf{0}$, so **the origin is a critical point**. **[2 Marks]**
+
+**Mapping:** CO1 — Apply
 
 ---
 
-### Question 2: [KTU University Exam – Dec 2023]
-**Find the critical points of $f(x, y) = x^3 + y^3 - 3xy$ and determine, using the First Derivative Test, whether the origin is a local maximum, local minimum, or neither.**
-
-**Model Answer (3 Marks):**
-
-**Step 1 (1 Mark):** Compute partial derivatives
-$$f_x = 3x^2 - 3y, \qquad f_y = 3y^2 - 3x.$$
-
-**Step 2 (1 Mark):** Set $\nabla f = (0, 0)$
-$$3x^2 - 3y = 0 \;\;\Rightarrow\;\; y = x^2, \quad 3y^2 - 3x = 0 \;\;\Rightarrow\;\; x = y^2.$$
-Substituting $y = x^2$ into $x = y^2$ gives $x = x^4$, so $x(x^3 - 1) = 0$, yielding $x = 0$ and $x = 1$. The critical points are $(0, 0)$ and $(1, 1)$.
-
-**Step 3 (1 Mark) — First Derivative Test at $(0, 0)$:**
-Along $y = 0$: $f_x(x, 0) = 3x^2 \geq 0$ for all $x$ (no sign change). Hence $(0, 0)$ is **not an extremum** — it is a **saddle point**.
-
----
-
-## Part B — Long Answer Questions (14 Marks Each, with Internal Choice)
-
-### Question A (14 Marks): [KTU University Exam – Model Paper 2024]
-
-**(a)** Find the critical points of $f(x, y) = x^3 - 3x + y^2$ and use the **First Derivative Theorem** to classify them.  **(7 Marks)**
-
-**(b)** For $f(x, y, z) = x^2 + 2y^2 + 3z^2 - 2x - 4y - 6z + 7$, locate the critical point and apply the **First Derivative Theorem in $\mathbb{R}^3$** to classify it. Compute the extremum value.  **(7 Marks)**
-
----
-
-#### Model Solution — Part (a) [7 Marks]
-
-**Step 1 [Computing partials: 1 Mark]**
-$$f_x = 3x^2 - 3, \qquad f_y = 2y.$$
-
-**Step 2 [Solving $\nabla f = \mathbf{0}$: 1 Mark]**
-$$3x^2 - 3 = 0 \Rightarrow x = \pm 1, \quad 2y = 0 \Rightarrow y = 0.$$
-Critical points: $(-1, 0)$ and $(1, 0)$.
-
-**Step 3 [Slice test at $(1, 0)$ — sign of $f_x$ around $x = 1$: 1 Mark]**
-$$f_x(x, 0) = 3x^2 - 3.$$
-* For $x < 1$ (e.g. $x = 0$): $f_x(0, 0) = -3 < 0$.
-* For $x > 1$ (e.g. $x = 2$): $f_x(2, 0) = 9 > 0$.
-**Conclusion:** $f_x$ flips $-\to +$ along the $x$-direction ⇒ **local minimum** in $x$-direction.
-
-**Step 4 [Slice test at $(1, 0)$ — sign of $f_y$ around $y = 0$: 1 Mark]**
-$$f_y(1, y) = 2y.$$
-* For $y < 0$: $f_y < 0$. * For $y > 0$: $f_y > 0$.
-**Conclusion:** $f_y$ flips $-\to +$ ⇒ **local minimum** in $y$-direction.
-
-**Step 5 [Apply First Derivative Theorem: 1 Mark]**
-Both slices flip from negative to positive in the same direction ⇒ **Local Minimum at $(1, 0)$**.
-
-**Step 6 [Slice test at $(-1, 0)$: 1 Mark]**
-$$f_x(x, 0) = 3x^2 - 3.$$
-* For $x < -1$ (e.g. $x = -2$): $f_x(-2, 0) = 9 > 0$.
-* For $-1 < x < 1$ (e.g. $x = 0$): $f_x(0, 0) = -3 < 0$.
-**Sign-flip in $x$-direction:** $+\to -$.
-Along $y$-direction, $f_y(-1, y) = 2y$ again flips $-\to +$.
-The two principal directions give **opposite** sign-flip patterns ⇒ **Saddle point at $(-1, 0)$**. **[Classification: 1 Mark]**
-
----
-
-#### Model Solution — Part (b) [7 Marks]
-
-**Step 1 [Partial derivatives: 1 Mark]**
-$$f_x = 2x - 2, \quad f_y = 4y - 4, \quad f_z = 6z - 6.$$
-
-**Step 2 [Locate critical point: 1 Mark]**
-$$2x - 2 = 0 \Rightarrow x = 1; \quad 4y - 4 = 0 \Rightarrow y = 1; \quad 6z - 6 = 0 \Rightarrow z = 1.$$
-Unique critical point: $(1, 1, 1)$.
-
-**Step 3 [Three independent slice tests: 3 Marks]**
-Define slices
-$$\phi(x) = f(x, 1, 1), \;\; \psi(y) = f(1, y, 1), \;\; \chi(z) = f(1, 1, z).$$
-Their derivatives are
-$$\phi'(x) = 2x - 2, \quad \psi'(y) = 4y - 4, \quad \chi'(z) = 6z - 6.$$
-
-Sign analysis (each linear in its own variable, with zero at the critical coordinate):
-
-| Slice | Sign for variable < critical | Sign for variable > critical | Pattern |
-| :--- | :--- | :--- | :--- |
-| $\phi'(x)$ at $x = 1$ | negative | positive | $-\to +$ |
-| $\psi'(y)$ at $y = 1$ | negative | positive | $-\to +$ |
-| $\chi'(z)$ at $z = 1$ | negative | positive | $-\to +$ |
-
-**Step 4 [Apply First Derivative Theorem in $\mathbb{R}^3$: 1 Mark]**
-All three slice derivatives flip from negative to positive in the *same* direction. By the First Derivative Theorem extended to three variables, $f$ has a **strict local minimum** at $(1, 1, 1)$.
-
-**Step 5 [Compute the minimum value: 1 Mark]**
-$$f(1, 1, 1) = 1 + 2 + 3 - 2 - 4 - 6 + 7 = \mathbf{1}.$$
-
----
-
-### Question B (14 Marks) — Internal Choice: [KTU University Exam – Dec 2023 Pattern]
-
-**(a)** State and prove the **First Derivative Theorem for local extreme values** for a function of two variables. Use it to verify that $f(x, y) = 4x^2 + y^2 - 4x - 2y + 3$ has a local minimum at $\left(\frac{1}{2}, 1\right)$. **(7 Marks)**
-
-**(b)** Show, using the First Derivative Test, that the origin is a **saddle point** of $f(x, y) = x^2 - 3xy + y^2$. State the maximum and minimum values, if any, of $f$ on the closed triangular region with vertices $(0, 0)$, $(2, 0)$, $(0, 2)$. **(7 Marks)**
-
----
-
-#### Model Solution — Part (a) [7 Marks]
-
-**Step 1 [Statement of the Theorem: 2 Marks]**
-
-> **Theorem (First Derivative Test — Two Variables):** Let $f$ be defined on an open disk $D$ containing $(a, b)$, with $f_x$ and $f_y$ continuous and vanishing at $(a, b)$. If $f_x(x, b)$ is **positive for $x < a$** and **negative for $x > a$**, and similarly $f_y(a, y)$ is **positive for $y < b$** and **negative for $y > b$**, then $f$ has a **local maximum** at $(a, b)$. The reverse sign-flip in both gives a **local minimum**; a conflict indicates a **saddle**.
-
-**Step 2 [Proof sketch: 2 Marks]**
-Apply the single-variable MVT to $\phi(x) = f(x, b)$ on $[x_1, a]$ with $x_1 < a$:
-$$f(x_1, b) - f(a, b) = \phi'(c_1)(x_1 - a) = f_x(c_1, b)(x_1 - a), \quad c_1 \in (x_1, a).$$
-Since $f_x > 0$ and $x_1 - a < 0$, the RHS is **negative**, so $f(x_1, b) < f(a, b)$. A symmetric MVT on $[a, x_2]$ with $f_x < 0$ and $x_2 - a > 0$ again gives $f(x_2, b) < f(a, b)$. Hence $f(a, b) \geq f(x, b)$ for all $x$ near $a$. The same argument applied to $\psi(y) = f(a, y)$ completes the proof in the $y$-direction. Combined: $f(a, b) \geq f(x, y)$ for $(x, y)$ near $(a, b)$ ⇒ **local maximum**. (Replace with the $-\to +$ sign-flip for minimum.)
-
-**Step 3 [Verification on $f(x, y) = 4x^2 + y^2 - 4x - 2y + 3$ at $(1/2, 1)$: 3 Marks]**
-
-Compute partials:
-$$f_x = 8x - 4, \qquad f_y = 2y - 2.$$
-
-At $(1/2, 1)$:
-$$f_x(1/2, 1) = 8 \cdot \tfrac{1}{2} - 4 = 0, \qquad f_y(1/2, 1) = 2 \cdot 1 - 2 = 0.$$
-
-Slice along $y = 1$: $\phi'(x) = 8x - 4$.
-* $x < 1/2$: $\phi' < 0$.
-* $x > 1/2$: $\phi' > 0$.
-**Sign-flip in $x$-direction: $-\to+$** ⇒ local minimum in $x$.
-
-Slice along $x = 1/2$: $\psi'(y) = 2y - 2$.
-* $y < 1$: $\psi' < 0$.
-* $y > 1$: $\psi' > 0$.
-**Sign-flip in $y$-direction: $-\to+$** ⇒ local minimum in $y$.
-
-Both slices flip in the same $-\to+$ pattern ⇒ **local minimum** confirmed. The minimum value is
-$$f(1/2, 1) = 4 \cdot \tfrac{1}{4} + 1 - 2 - 2 + 3 = 1.$$
-
----
-
-#### Model Solution — Part (b) [7 Marks]
-
-**Step 1 [Locate critical point of $f(x, y) = x^2 - 3xy + y^2$: 1 Mark]**
-$$f_x = 2x - 3y, \quad f_y = -3x + 2y.$$
-$\nabla f = 0 \Rightarrow 2x = 3y$ and $3x = 2y$. Solving: $4x = 6y$ and $9x = 6y$ gives $4x = 9x \Rightarrow x = 0 \Rightarrow y = 0$. Critical point: $(0, 0)$.
-
-**Step 2 [First Derivative Test at $(0, 0)$: 2 Marks]**
-Slice along $y = 0$: $\phi'(x) = f_x(x, 0) = 2x$. Sign-flip: $-\to+$ as $x$ crosses $0$.
-Slice along $x = 0$: $\psi'(y) = f_y(0, y) = 2y$. Sign-flip: $-\to+$ as $y$ crosses $0$.
-Wait — both flip in the **same** direction. Re-examination: $\phi'$ flips $-\to +$ ⇒ minimum in $x$; $\psi'$ flips $-\to +$ ⇒ minimum in $y$. So this suggests a **local minimum**. *However*, we must also check a non-axial direction. The First Derivative Theorem along coordinate axes is **necessary but not always sufficient** when the Hessian is degenerate. Testing along $y = x$: $f(x, x) = x^2 - 3x^2 + x^2 = -x^2 < 0$ for $x \neq 0$, so $f(x, x) < f(0, 0) = 0$. This conflicts with the minimum claim. **Conclusion:** The origin is a **saddle point**, confirmed by the diagonal slice contradicting the axial slices.
-
-> [!WARNING]
-> **Critical KTU Pitfall:** The First Derivative Theorem, when applied *only* along coordinate axes, can give a **misleading** answer if the function has curvature in oblique directions. Always cross-check with at least one diagonal slice (e.g., $y = x$ or $y = -x$) when the axial slices agree. For a **definitively correct** answer, follow up with the Hessian test.
-
-**Step 3 [Hessian confirmation: 1 Mark]**
-$$f_{xx} = 2, \quad f_{yy} = 2, \quad f_{xy} = -3.$$
-$$D = f_{xx} f_{yy} - (f_{xy})^2 = 4 - 9 = -5 < 0.$$
-Since $D < 0$, the Hessian test confirms the origin is a **saddle point**.
-
-**Step 4 [Global extrema on the triangular region: 3 Marks]**
-Vertices: $A = (0, 0)$, $B = (2, 0)$, $C = (0, 2)$.
-* $f(0, 0) = 0$
-* $f(2, 0) = 4$
-* $f(0, 2) = 4$
-
-On edge $AB$ ($y = 0$, $0 \leq x \leq 2$): $f = x^2 \Rightarrow$ max at $B$ with $f = 4$.
-On edge $AC$ ($x = 0$, $0 \leq y \leq 2$): $f = y^2 \Rightarrow$ max at $C$ with $f = 4$.
-On edge $BC$ ($x + y = 2 \Rightarrow y = 2 - x$):
-$$f = x^2 - 3x(2 - x) + (2 - x)^2 = x^2 - 6x + 3x^2 + 4 - 4x + x^2 = 5x^2 - 10x + 4.$$
-$f'(x) = 10x - 10 = 0 \Rightarrow x = 1$, giving $f(1, 1) = 5 - 10 + 4 = -1$.
-At endpoints $x = 0$ and $x = 2$: $f = 4$.
-
-**Global Results:** $\boxed{\text{Maximum value} = 4 \text{ at } (2, 0) \text{ and } (0, 2);\;\; \text{Minimum value} = -1 \text{ at } (1, 1).}$
-
----
-
-## KTU Examiner's Valuation Warning / Pitfall Callout
-
-> [!WARNING]
-> **Where students lose marks on this topic — and how to avoid it:**
-> 1. **Forgetting to set $f_y = 0$:** Many students compute $f_x = 0$ but skip the $f_y$ (or $f_z$) equation, losing **1–2 marks** immediately. Always solve the *full* system $\nabla f = \mathbf{0}$.
-> 2. **Conflating "critical point" with "extremum":** A critical point is a *necessary* condition, not a *sufficient* one. State the First Derivative Theorem explicitly to justify the classification. Skipping this loses the **1-mark "statement" component** in 14-mark answers.
-> 3. **Ignoring non-axial directions:** When the axial slices agree (both say "minimum"), but the diagonal slice contradicts, the point is a saddle. Always test at least one non-axial direction if the answer seems suspicious.
-> 4. **Wrong sign convention:** Writing "$+\to -$ means minimum" instead of "maximum" is a single-character error that flips the entire classification. Use the cheatsheet table from SECTION_2 verbatim.
-> 5. **Skipping the value:** KTU board examiners award 1 mark explicitly for the *extremum value* (e.g., $f(1, 2, 3) = 0$). Always compute it.
-
----
-
-## Topic Recap & Important Things to Remember
+### Part B — Long Answer Questions (14 Marks Each, with Internal Choice)
 
 > [!IMPORTANT]
-> **Rapid Revision Checklist — First Derivative Theorem for Local Extreme Values**
+> **KTU 2024 ESE Pattern:** Each Part B question carries **14 marks**, split typically as 7 + 7 between sub-parts. The student must attempt **ONE** of the two alternatives (A or B). Sub-parts map to escalating Bloom's levels: (a) Understand/Apply, (b) Apply/Analyze.
 
-* **Critical Point Definition:** $\nabla f(P_0) = \mathbf{0}$ (all first partial derivatives vanish simultaneously).
-* **Necessary Condition:** A local extremum of a differentiable function *must* be a critical point. (The converse is *false* — saddle points are counter-examples.)
-* **First Derivative Theorem (Two Variables):** At a critical point $(a, b)$:
-  * **Local MAX** $\Leftrightarrow$ $f_x$ flips $+\to-$ AND $f_y$ flips $+\to-$.
-  * **Local MIN** $\Leftrightarrow$ $f_x$ flips $-\to+$ AND $f_y$ flips $-\to+$.
-  * **Saddle** $\Leftrightarrow$ any other (mismatched or no) sign-flip pattern.
-* **First Derivative Theorem ($n$ Variables):** Generalises to $n$ slice tests along each coordinate axis; consistency in sign-flip direction across *all* $n$ slices is required.
-* **Slice Function Construction:** $\phi_i(t) = f(\dots, t, \dots)$ with $t$ in the $i$-th slot and the rest held at the critical coordinates. Then $\phi_i'(t) = f_{x_i}(\dots, t, \dots)$.
-* **Linear Slices Shortcut:** When $\phi_i'(t)$ is **linear** in $t$ and vanishes at the critical coordinate, the sign is immediately read off the slope — no algebra needed.
-* **Saddle-Point Trap:** The test along coordinate axes can *falsely* suggest a minimum if oblique directions are ignored. **Always verify with a diagonal slice** (e.g., $y = x$, $y = -x$, or use the Hessian $D = f_{xx} f_{yy} - (f_{xy})^{2}$).
-* **Comparison with Second Derivative Test:** The Hessian test is *one-shot* and fast, but **fails** when $D = 0$ (inconclusive). The First Derivative Test is *definitive* but requires sign evaluation on both sides of the critical point.
-* **Engineering / Information-Science Connection:** Loss surfaces in ML, Lagrangian surfaces in CV, and risk-return landscapes in finance are all *multivariable functions*. The First Derivative Theorem is the theoretical foundation of **gradient-based optimisation** (Gradient Descent, SGD, Adam).
-* **Standard 14-Mark Format for KTU 2024:** (i) Compute partials, (ii) solve $\nabla f = \mathbf{0}$, (iii) state the theorem, (iv) perform sign-flip tests along each axis, (v) combine into classification, (vi) compute extremum value.
-* **Standard 3-Mark Format for KTU 2024:** (i) State theorem (1–2 marks), (ii) Apply to a single critical point (1 mark).
-* **Absolute vs Local:** The First Derivative Theorem classifies **local** extrema. For **global (absolute)** extrema on a closed bounded region, evaluate $f$ at *all* critical points **and** on the boundary, then compare values.
-* **Unitless / Dimensionless Note:** When the variables have units (e.g., $x$ in metres, $y$ in seconds), the partial derivatives $f_x, f_y$ carry *inverse* units — the sign-flip logic is unit-agnostic and only depends on **direction** of change.
+---
+
+### Part B — Question A (14 Marks)
+
+**[KTU University Exam — July 2024 Model Question]**
+**Q.A.** (a) State and prove the First Derivative Theorem for local extreme values of a function of three variables. **[7 Marks]**
+&emsp;&emsp;(b) Find and classify all critical points of $f(x, y, z) = x^2 + y^2 + z^2 - 2x - 4y - 6z + 7$ using the First Derivative Theorem and the Second Derivative Test. **[7 Marks]**
+
+#### Model Solution — Part A(a) [7 Marks]
+
+**Statement of the Theorem [2 Marks]:**
+
+Let $f : D \subseteq \mathbb{R}^3 \to \mathbb{R}$ be defined on an open set $D$. If $f$ attains a local maximum or local minimum at an interior point $\mathbf{c} = (a, b, c)$ of $D$, and if the partial derivatives $f_x$, $f_y$, $f_z$ exist at $\mathbf{c}$, then
+
+$$f_x(a, b, c) = f_y(a, b, c) = f_z(a, b, c) = 0$$
+
+Equivalently, $\nabla f(\mathbf{c}) = \mathbf{0}$.
+
+**Proof [5 Marks]:**
+
+*Assume $f$ has a local maximum at $(a, b, c)$.* *(The minimum case is analogous.)*
+
+**Step 1:** Define the auxiliary function $g(t) = f(t, b, c)$ for $t$ near $a$. **[1 Mark]**
+
+**Step 2:** Since $f$ has a local maximum at $(a, b, c)$, there exists $\delta > 0$ such that for $\vert t - a \vert < \delta$:
+$$f(t, b, c) \le f(a, b, c) \quad \Rightarrow \quad g(t) \le g(a)$$
+So $g$ has a local maximum at $t = a$. **[1 Mark]**
+
+**Step 3:** Because $f_x(a, b, c)$ exists, $g$ is differentiable at $a$, with $g'(a) = f_x(a, b, c)$. **[1 Mark]**
+
+**Step 4:** By the single-variable Fermat's Theorem, $g'(a) = 0 \Rightarrow f_x(a, b, c) = 0$. **[1 Mark]**
+
+**Step 5:** Repeating the same argument with $h(t) = f(a, t, c)$ and $k(t) = f(a, b, t)$ gives $f_y(a, b, c) = 0$ and $f_z(a, b, c) = 0$. **[1 Mark]**
+
+$$\therefore \nabla f(a, b, c) = (0, 0, 0). \qquad \blacksquare$$
+
+---
+
+#### Model Solution — Part A(b) [7 Marks]
+
+**Step 1 — Compute the gradient:** **[2 Marks]**
+
+$$f_x = 2x - 2, \qquad f_y = 2y - 4, \qquad f_z = 2z - 6$$
+
+**Step 2 — Apply the First Derivative Theorem ($\nabla f = \mathbf{0}$):** **[1 Mark]**
+
+$$2x - 2 = 0 \Rightarrow x = 1, \quad 2y - 4 = 0 \Rightarrow y = 2, \quad 2z - 6 = 0 \Rightarrow z = 3$$
+
+**Step 3 — Critical point:** $\mathbf{c} = (1, 2, 3)$. **[1 Mark]**
+
+**Step 4 — Build the Hessian matrix:** **[1 Mark]**
+
+$$H_f(\mathbf{c}) = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{pmatrix}$$
+
+**Step 5 — Eigenvalue analysis (or Sylvester's criterion):** **[1 Mark]**
+
+Eigenvalues: $\lambda_1 = \lambda_2 = \lambda_3 = 2 > 0$. The Hessian is **positive definite**.
+
+**Step 6 — Conclusion + minimum value:** **[1 Mark]**
+
+$$\boxed{\text{Local minimum at } (1, 2, 3) \text{ with } f_{\min} = -7}$$
+
+---
+
+### Part B — Question B (14 Marks) — *Alternative Choice*
+
+**[KTU University Exam — Dec 2023 Model Question]**
+**Q.B.** (a) Explain with a suitable counter-example why the First Derivative Theorem gives only a necessary (not sufficient) condition for a local extremum. **[7 Marks]**
+&emsp;&emsp;(b) For $f(x, y, z) = x^2 - y^2 - z^2 + 4x$, find all critical points and classify them. **[7 Marks]**
+
+#### Model Solution — Part B(a) [7 Marks]
+
+**Explanation [3 Marks]:**
+
+The First Derivative Theorem states that **if** $f$ has a local extremum at an interior point $\mathbf{c}$, **then** $\nabla f(\mathbf{c}) = \mathbf{0}$. This makes $\nabla f = \mathbf{0}$ a *necessary* condition. However, the converse "if $\nabla f(\mathbf{c}) = \mathbf{0}$ then $\mathbf{c}$ is a local extremum" is **false** in general.
+
+**Counter-Example [4 Marks]:**
+
+Consider $f(x, y) = x^2 - y^2$ defined on $\mathbb{R}^2$.
+
+- Compute the partial derivatives: $f_x = 2x$, $f_y = -2y$.
+- At the origin: $\nabla f(0, 0) = (0, 0)$, so the First Derivative Theorem *would allow* $(0, 0)$ to be a candidate extremum.
+- However, examine the behavior along two paths:
+  * Along the $x$-axis ($y = 0$): $f(x, 0) = x^2 \ge 0 = f(0, 0)$ for all $x$.
+  * Along the $y$-axis ($x = 0$): $f(0, y) = -y^2 \le 0 = f(0, 0)$ for all $y$.
+- Since $f$ takes values both **above and below** $f(0, 0)$ in every neighborhood of the origin, $(0, 0)$ is **not** a local extremum — it is a **saddle point**.
+
+**Conclusion [included in 4 Marks]:**
+
+This counter-example demonstrates that the First Derivative Theorem provides a **necessary but not sufficient** condition for an extremum. Classification requires the **Second Derivative Test** (Hessian analysis).
+
+---
+
+#### Model Solution — Part B(b) [7 Marks]
+
+**Step 1 — Compute the gradient:** **[1 Mark]**
+
+$$f_x = 2x + 4, \qquad f_y = -2y, \qquad f_z = -2z$$
+
+**Step 2 — Apply the First Derivative Theorem:** **[1 Mark]**
+
+$$2x + 4 = 0 \Rightarrow x = -2, \quad -2y = 0 \Rightarrow y = 0, \quad -2z = 0 \Rightarrow z = 0$$
+
+**Step 3 — Critical point:** $\mathbf{c} = (-2, 0, 0)$. **[1 Mark]**
+
+**Step 4 — Build the Hessian:** **[1 Mark]**
+
+$$H_f(\mathbf{c}) = \begin{pmatrix} 2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}$$
+
+**Step 5 — Eigenvalue analysis:** **[1 Mark]**
+
+Eigenvalues: $\lambda_1 = 2 > 0$, $\lambda_2 = -2 < 0$, $\lambda_3 = -2 < 0$. The Hessian is **indefinite**.
+
+**Step 6 — Conclusion:** **[1 Mark]**
+
+$$\boxed{\text{Saddle Point at } (-2, 0, 0) \text{ — NOT a local extremum}}$$
+
+**Step 7 — Verification [Optional, +1 Mark for KTU depth]:** At $\mathbf{c}$, $f(-2, 0, 0) = 4 - 0 - 0 - 8 = -4$. For $(x, y, z) = (-2 + \epsilon, 0, 0)$, $f = (-2+\epsilon)^2 - 4(-2+\epsilon) = 4 - 4\epsilon + \epsilon^2 + 8 - 4\epsilon = 12 - 8\epsilon + \epsilon^2 > -4$ for small $\epsilon > 0$ (since $12 - 8\epsilon + \epsilon^2 \approx 12 > -4$). For $(-2, \epsilon, 0)$: $f = 4 + 8 - \epsilon^2 = 12 - \epsilon^2 > -4$. For $(−2, 0, 0)$ vs $(-2, 0, \epsilon)$: $f = 4 + 8 - \epsilon^2 = 12 - \epsilon^2 > -4$. Hmm, the function actually *increases* in all directions from $-2$ value... let me recompute:
+
+$f(-2, 0, 0) = (-2)^2 - 0 - 0 + 4(-2) = 4 - 8 = -4$.
+For $(-2 + \epsilon, 0, 0)$: $f = 4 - 4\epsilon + \epsilon^2 + 8 - 4\epsilon = 12 - 8\epsilon + \epsilon^2$.
+For small $\epsilon > 0$, $f \approx 12 - 8\epsilon$, which is greater than $-4$. So $f$ increases.
+For $(−2, \epsilon, 0)$: $f = 4 − \epsilon^2 + 8 − 4\epsilon... $ wait, recompute. $f(-2, \epsilon, 0) = (-2)^2 - \epsilon^2 - 0 + 4(-2) = 4 - \epsilon^2 - 8 = -4 - \epsilon^2 < -4$.
+So along the $y$-direction, $f$ **decreases** below $-4$. This confirms a **saddle** — increase in $x$, decrease in $y$.
+
+---
+
+### KTU Examiner's Valuation Warning / Pitfall Callout
+
+> [!WARNING]
+> **Common Mistakes That Cost Marks in KTU 2024 ESE:**
+>
+> 1. **Forgetting to state the "interior point" condition** (–1 Mark). The theorem *fails* on the boundary. Always write "Let $\mathbf{c}$ be an interior point of $D$."
+> 2. **Conflating necessary with sufficient** (–2 Marks). The most common conceptual error. Memorize: $\nabla f = 0$ is necessary, never sufficient.
+> 3. **Skipping the existence clause** (–1 Mark). Always write "if $f_x, f_y, f_z$ exist at $\mathbf{c}$."
+> 4. **In Proof questions, writing "by Fermat's Theorem" without specifying single-variable** (–1 Mark). Be explicit: "By the single-variable Fermat's Theorem applied to $g(t) = f(t, b, c)$."
+> 5. **Forgetting to substitute the critical point into the Hessian** (–1 Mark). The Hessian must be evaluated at the specific critical point $\mathbf{c}$.
+> 6. **Treating a saddle point as a local min or max** (–2 Marks). Always check the definiteness signature.
+> 7. **Not mentioning saddle counter-examples** when asked to explain the "necessary not sufficient" caveat (–1 Mark).
+
+---
+
+### Topic Recap & Important Things to Remember
+
+- **Theorem Name:** Fermat's Theorem on Stationary Points (First Derivative Theorem for Local Extreme Values).
+- **Core Statement:** If $f$ has a local extremum at interior $\mathbf{c}$ and partials exist, then $\nabla f(\mathbf{c}) = \mathbf{0}$, i.e., $f_x = f_y = f_z = 0$.
+- **Nature of Condition:** Necessary but **not sufficient**.
+- **Domain Requirement:** Open set $D$; the point $\mathbf{c}$ must be **interior**.
+- **Critical Point Definition:** A point where $\nabla f = \mathbf{0}$ **OR** one or more partial derivatives do **not exist**.
+- **Proof Technique:** Reduce to single-variable Fermat by freezing the other variables.
+- **Converse is FALSE:** Counter-example — $f(x, y) = x^2 - y^2$ has $\nabla f(0,0) = 0$ but $(0,0)$ is a saddle, not an extremum.
+- **Classification Tool:** After finding critical points, use the **Second Derivative Test** (Hessian matrix and its eigenvalues).
+- **Hessian Signatures (3-D):**
+  * All eigenvalues $> 0$ → **Local Minimum** (positive definite $H$).
+  * All eigenvalues $< 0$ → **Local Maximum** (negative definite $H$).
+  * Mixed signs → **Saddle Point** (indefinite $H$).
+  * Zero eigenvalue → **Inconclusive** (use direct comparison).
+- **Boundary Case:** Extrema can occur on the boundary where $\nabla f \neq \mathbf{0}$ — use **Lagrange multipliers** for constrained optimization.
+- **Standard Test Function:** $f = x^2 + y^2 + z^2 - 2x - 4y - 6z + 7$ has unique critical point $(1, 2, 3)$ which is a local minimum with $f = -7$.
+- **Standard Saddle Test Function:** $f = x^2 - y^2 - z^2$ at origin is a saddle; do not classify as extremum.
+- **Application Domains:** Machine learning loss optimization, computer graphics equilibrium, signal processing variational methods, operations research cost minimization.
+- **KTU Keyword Map:** "Find critical points" → set $\nabla f = 0$ → solve. "Classify critical points" → build Hessian → check eigenvalues.
+
 <!-- SECTION_5_END -->

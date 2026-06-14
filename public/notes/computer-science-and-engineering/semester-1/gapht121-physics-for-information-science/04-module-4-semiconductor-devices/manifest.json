@@ -2,54 +2,75 @@
   "course_name": "PHYSICS FOR INFORMATION SCIENCE",
   "course_code": "GAPHT121",
   "module_number": 4,
-  "module_title": "Semiconductor Devices",
+  "module_title": "Semiconductor devices",
   "topics_generated": [
     {
-      "title": "Rectifiers",
-      "slug": "rectifiers",
-      "path": "rectifiers/notes.md",
+      "title": "Semiconductor Devices",
+      "slug": "semiconductor-devices",
+      "path": "semiconductor-devices/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Zener diode",
-      "slug": "zener-diode",
-      "path": "zener-diode/notes.md",
+      "title": "Semiconductor devices- Rectifiers- Full wave and Half wave.",
+      "slug": "semiconductor-devices-rectifiers-full-wave-and-half-wave",
+      "path": "semiconductor-devices-rectifiers-full-wave-and-half-wave/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Tunnel diode",
-      "slug": "tunnel-diode",
-      "path": "tunnel-diode/notes.md",
+      "title": "Zener diode-VI characteristics",
+      "slug": "zener-diode-vi-characteristics",
+      "path": "zener-diode-vi-characteristics/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Semiconductor Laser",
-      "slug": "semiconductor-laser",
-      "path": "semiconductor-laser/notes.md",
+      "title": "Tunnel diode-VI characteristics",
+      "slug": "tunnel-diode-vi-characteristics",
+      "path": "tunnel-diode-vi-characteristics/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Photodetectors",
-      "slug": "photodetectors",
-      "path": "photodetectors/notes.md",
+      "title": "Semiconductor Laser (Construction and working)",
+      "slug": "semiconductor-laser-construction-and-working",
+      "path": "semiconductor-laser-construction-and-working/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Solar cells",
-      "slug": "solar-cells",
-      "path": "solar-cells/notes.md",
+      "title": "Photonic devices (Qualitative treatment only) - Photo detectors (Junction and PIN photodiodes)",
+      "slug": "photonic-devices-qualitative-treatment-only-photo-detectors-junction-and-pin-photodiodes",
+      "path": "photonic-devices-qualitative-treatment-only-photo-detectors-junction-and-pin-photodiodes/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "LEDs",
-      "slug": "leds",
-      "path": "leds/notes.md",
+      "title": "Solar cells- IV Characteristics, Efficiency, Stringing of Solar cells to solar panel",
+      "slug": "solar-cells-iv-characteristics-efficiency-stringing-of-solar-cells-to-solar-panel",
+      "path": "solar-cells-iv-characteristics-efficiency-stringing-of-solar-cells-to-solar-panel/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Light Emitting Diode",
+      "slug": "light-emitting-diode",
+      "path": "light-emitting-diode/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications",
+      "slug": "applications",
+      "path": "applications/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications",
+      "slug": "applications",
+      "path": "applications/notes.md",
       "has_mermaid": true,
       "has_math": true
     }

@@ -1,0 +1,43 @@
+{
+  "course_name": "SPEECH AND AUDIO PROCESSING",
+  "course_code": "PECST866",
+  "module_number": 2,
+  "module_title": "Mel",
+  "topics_generated": [
+    {
+      "title": "Mel-frequency cepstral coefficient (MFCC)- Computation",
+      "slug": "mel-frequency-cepstral-coefficient-mfcc-computation",
+      "path": "mel-frequency-cepstral-coefficient-mfcc-computation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pitch Estimation ACF/AMDF approaches",
+      "slug": "pitch-estimation-acf-amdf-approaches",
+      "path": "pitch-estimation-acf-amdf-approaches/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cepstral analysis - Pitch and Formant estimation using cepstral analysis",
+      "slug": "cepstral-analysis-pitch-and-formant-estimation-using-cepstral-analysis",
+      "path": "cepstral-analysis-pitch-and-formant-estimation-using-cepstral-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "LPC Analysis  - LPC model",
+      "slug": "lpc-analysis-lpc-model",
+      "path": "lpc-analysis-lpc-model/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Auto correlation method - Levinson Durbin Algorithm",
+      "slug": "auto-correlation-method-levinson-durbin-algorithm",
+      "path": "auto-correlation-method-levinson-durbin-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

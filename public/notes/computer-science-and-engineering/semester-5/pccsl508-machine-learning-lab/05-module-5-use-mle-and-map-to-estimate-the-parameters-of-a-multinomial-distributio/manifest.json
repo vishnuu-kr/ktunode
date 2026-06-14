@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 5,
+  "module_title": "Use mle and map to estimate the parameters of a multinomial distributio",
+  "topics_generated": [
+    {
+      "title": "Use MLE and MAP to estimate the parameters of a multinomial distribution on the 20 Newsgroups dataset. Explore the impact of different priors on the estimation.",
+      "slug": "use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distribution-on-the-20-newsgroups",
+      "path": "use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distribution-on-the-20-newsgroups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the dataset.",
+      "slug": "load-and-preprocess-the-dataset",
+      "path": "load-and-preprocess-the-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement MLE for multinomial distribution parameter estimation.",
+      "slug": "implement-mle-for-multinomial-distribution-parameter-estimation",
+      "path": "implement-mle-for-multinomial-distribution-parameter-estimation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Apply MAP estimation with various priors (e.g., Dirichlet priors).",
+      "slug": "apply-map-estimation-with-various-priors-e-g-dirichlet-priors",
+      "path": "apply-map-estimation-with-various-priors-e-g-dirichlet-priors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compare results and evaluate the effect of different priors.",
+      "slug": "compare-results-and-evaluate-the-effect-of-different-priors",
+      "path": "compare-results-and-evaluate-the-effect-of-different-priors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

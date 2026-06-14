@@ -1,0 +1,29 @@
+{
+  "course_name": "DATA COMMUNICATION",
+  "course_code": "OECST612",
+  "module_number": 4,
+  "module_title": "Digital data communication techniques",
+  "topics_generated": [
+    {
+      "title": "Digital data communication techniques - Asynchronous transmission, Synchronous transmission.",
+      "slug": "digital-data-communication-techniques-asynchronous-transmission-synchronous-transmission",
+      "path": "digital-data-communication-techniques-asynchronous-transmission-synchronous-transmission/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Detecting and correcting errors - Types of errors, Parity check, Checksum, Cyclic Redundancy Check (CRC), Forward Error Correction (FEC), Hamming distance, Hamming code.",
+      "slug": "detecting-and-correcting-errors-types-of-errors-parity-check-checksum-cyclic-redundancy-check-crc",
+      "path": "detecting-and-correcting-errors-types-of-errors-parity-check-checksum-cyclic-redundancy-check-crc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Basic principles of switching - Circuit switching, Packet switching, Message switching.",
+      "slug": "basic-principles-of-switching-circuit-switching-packet-switching-message-switching",
+      "path": "basic-principles-of-switching-circuit-switching-packet-switching-message-switching/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

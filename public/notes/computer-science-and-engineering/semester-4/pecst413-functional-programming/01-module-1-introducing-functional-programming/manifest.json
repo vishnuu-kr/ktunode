@@ -1,0 +1,43 @@
+{
+  "course_name": "FUNCTIONAL PROGRAMMING",
+  "course_code": "PECST413",
+  "module_number": 1,
+  "module_title": "Introducing functional programming",
+  "topics_generated": [
+    {
+      "title": "Introducing Functional Programming",
+      "slug": "introducing-functional-programming",
+      "path": "introducing-functional-programming/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Getting Started with Haskell and GHCi",
+      "slug": "getting-started-with-haskell-and-ghci",
+      "path": "getting-started-with-haskell-and-ghci/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Basic Types and Definitions",
+      "slug": "basic-types-and-definitions",
+      "path": "basic-types-and-definitions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Designing and Writing Programs",
+      "slug": "designing-and-writing-programs",
+      "path": "designing-and-writing-programs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Types, Tuples and Lists",
+      "slug": "data-types-tuples-and-lists",
+      "path": "data-types-tuples-and-lists/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

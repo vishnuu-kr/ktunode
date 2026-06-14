@@ -1,0 +1,71 @@
+{
+  "course_name": "MATHEMATICS FOR COMPUTER AND INFORMATION SCIENCE-4",
+  "course_code": "GAMAT401",
+  "module_number": 3,
+  "module_title": "Trees",
+  "topics_generated": [
+    {
+      "title": "Trees- properties",
+      "slug": "trees-properties",
+      "path": "trees-properties/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pendant vertices",
+      "slug": "pendant-vertices",
+      "path": "pendant-vertices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Distance and centres in a tree",
+      "slug": "distance-and-centres-in-a-tree",
+      "path": "distance-and-centres-in-a-tree/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Rooted and binary trees",
+      "slug": "rooted-and-binary-trees",
+      "path": "rooted-and-binary-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Counting trees",
+      "slug": "counting-trees",
+      "path": "counting-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Spanning trees",
+      "slug": "spanning-trees",
+      "path": "spanning-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Prim's algorithm and Kruskal's algorithm",
+      "slug": "prim-s-algorithm-and-kruskal-s-algorithm",
+      "path": "prim-s-algorithm-and-kruskal-s-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Dijkstra's shortest path algorithm",
+      "slug": "dijkstra-s-shortest-path-algorithm",
+      "path": "dijkstra-s-shortest-path-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Floyd-Warshall shortest path algorithm",
+      "slug": "floyd-warshall-shortest-path-algorithm",
+      "path": "floyd-warshall-shortest-path-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 7,
+  "module_title": "Implement a nave bayes classifier to categorize text documents into top",
+  "topics_generated": [
+    {
+      "title": "Implement a Naïve Bayes classifier to categorize text documents into topics using the 20 Newsgroups dataset. Compare the performance of Multinomial Naïve Bayes with Bernoulli Naïve Bayes.",
+      "slug": "implement-a-na-ve-bayes-classifier-to-categorize-text-documents-into-topics-using-the-20-newsgroups",
+      "path": "implement-a-na-ve-bayes-classifier-to-categorize-text-documents-into-topics-using-the-20-newsgroups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the 20 Newsgroups dataset.",
+      "slug": "load-and-preprocess-the-20-newsgroups-dataset",
+      "path": "load-and-preprocess-the-20-newsgroups-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement Multinomial Naïve Bayes and Bernoulli Naïve Bayes classifiers.",
+      "slug": "implement-multinomial-na-ve-bayes-and-bernoulli-na-ve-bayes-classifiers",
+      "path": "implement-multinomial-na-ve-bayes-and-bernoulli-na-ve-bayes-classifiers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluate and compare the performance of both models using metrics such as accuracy and F1-score.",
+      "slug": "evaluate-and-compare-the-performance-of-both-models-using-metrics-such-as-accuracy-and-f1-score",
+      "path": "evaluate-and-compare-the-performance-of-both-models-using-metrics-such-as-accuracy-and-f1-score/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Discuss the strengths and weaknesses of each Naïve Bayes variant for text classification.",
+      "slug": "discuss-the-strengths-and-weaknesses-of-each-na-ve-bayes-variant-for-text-classification",
+      "path": "discuss-the-strengths-and-weaknesses-of-each-na-ve-bayes-variant-for-text-classification/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

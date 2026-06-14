@@ -1,0 +1,57 @@
+{
+  "course_name": "DIGITAL SIGNAL PROCESSING",
+  "course_code": "PECST526",
+  "module_number": 3,
+  "module_title": "Realization structures for fir filters",
+  "topics_generated": [
+    {
+      "title": "Realization structures for FIR filters- direct, cascade, parallel",
+      "slug": "realization-structures-for-fir-filters-direct-cascade-parallel",
+      "path": "realization-structures-for-fir-filters-direct-cascade-parallel/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "IIR Filter realization structures (Direct form I, II, cascade and Parallel and  transposed structures)",
+      "slug": "iir-filter-realization-structures-direct-form-i-ii-cascade-and-parallel-and-transposed-structures",
+      "path": "iir-filter-realization-structures-direct-form-i-ii-cascade-and-parallel-and-transposed-structures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Computational accuracy in DSP implementation- Number formats for signals and coefficients in DSP systems",
+      "slug": "computational-accuracy-in-dsp-implementation-number-formats-for-signals-and-coefficients-in-dsp",
+      "path": "computational-accuracy-in-dsp-implementation-number-formats-for-signals-and-coefficients-in-dsp/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dynamic range and precision",
+      "slug": "dynamic-range-and-precision",
+      "path": "dynamic-range-and-precision/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sources of error in DSP implementation - A/D conversion error",
+      "slug": "sources-of-error-in-dsp-implementation-a-d-conversion-error",
+      "path": "sources-of-error-in-dsp-implementation-a-d-conversion-error/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "DSP computational error",
+      "slug": "dsp-computational-error",
+      "path": "dsp-computational-error/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "D/A Conversion error",
+      "slug": "d-a-conversion-error",
+      "path": "d-a-conversion-error/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "course_name": "DIGITAL LAB",
+  "course_code": "PCCSL308",
+  "module_number": 1,
+  "module_title": "Study of basic digital ics and verification of boolean theorems using d",
+  "topics_generated": [
+    {
+      "title": "Study of basic digital ICs and verification of Boolean theorems using digital logic gates.",
+      "slug": "study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-digital-logic-gates",
+      "path": "study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-digital-logic-gates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Familiarisation of the working of circuit simulation software.",
+      "slug": "familiarisation-of-the-working-of-circuit-simulation-software",
+      "path": "familiarisation-of-the-working-of-circuit-simulation-software/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Realize the basic logic gates and analyze their waveforms",
+      "slug": "realize-the-basic-logic-gates-and-analyze-their-waveforms",
+      "path": "realize-the-basic-logic-gates-and-analyze-their-waveforms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Realize a given Boolean function using basic gates and verify the waveform with the truth table.",
+      "slug": "realize-a-given-boolean-function-using-basic-gates-and-verify-the-waveform-with-the-truth-table",
+      "path": "realize-a-given-boolean-function-using-basic-gates-and-verify-the-waveform-with-the-truth-table/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using",
+      "slug": "familiarisation-of-verilog-hdl-modelling-of-the-basic-gates-using",
+      "path": "familiarisation-of-verilog-hdl-modelling-of-the-basic-gates-using/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "gate level modelling",
+      "slug": "gate-level-modelling",
+      "path": "gate-level-modelling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "behavioural modelling",
+      "slug": "behavioural-modelling",
+      "path": "behavioural-modelling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "structural modelling",
+      "slug": "structural-modelling",
+      "path": "structural-modelling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "dataflow modelling",
+      "slug": "dataflow-modelling",
+      "path": "dataflow-modelling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Realization of an SOP and its corresponding POS expression using NAND gates alone and NOR gates alone (to be do on breadboard and simulated using software)",
+      "slug": "realization-of-an-sop-and-its-corresponding-pos-expression-using-nand-gates-alone-and-nor-gates",
+      "path": "realization-of-an-sop-and-its-corresponding-pos-expression-using-nand-gates-alone-and-nor-gates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Model a given Boolean function (SOP and POS) in Verilog using",
+      "slug": "model-a-given-boolean-function-sop-and-pos-in-verilog-using",
+      "path": "model-a-given-boolean-function-sop-and-pos-in-verilog-using/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "continuous assignment with logical operators",
+      "slug": "continuous-assignment-with-logical-operators",
+      "path": "continuous-assignment-with-logical-operators/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "continuous assignment with conditional operators",
+      "slug": "continuous-assignment-with-conditional-operators",
+      "path": "continuous-assignment-with-conditional-operators/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "using gate level primitives",
+      "slug": "using-gate-level-primitives",
+      "path": "using-gate-level-primitives/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

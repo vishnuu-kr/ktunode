@@ -2,26 +2,82 @@
   "course_name": "PHYSICS FOR INFORMATION SCIENCE",
   "course_code": "GAPHT121",
   "module_number": 3,
-  "module_title": "Semiconductor Physics",
+  "module_title": "Semiconductor physics",
   "topics_generated": [
     {
-      "title": "Intrinsic semiconductors",
-      "slug": "intrinsic-semiconductors",
-      "path": "intrinsic-semiconductors/notes.md",
+      "title": "Semiconductor Physics",
+      "slug": "semiconductor-physics",
+      "path": "semiconductor-physics/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Carrier concentrations",
-      "slug": "carrier-concentrations",
-      "path": "carrier-concentrations/notes.md",
+      "title": "Intrinsic semiconductor",
+      "slug": "intrinsic-semiconductor",
+      "path": "intrinsic-semiconductor/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Fermi level in semiconductors",
-      "slug": "fermi-level-in-semiconductors",
-      "path": "fermi-level-in-semiconductors/notes.md",
+      "title": "Derivation of density of electrons in conduction band and density of holes in valence band",
+      "slug": "derivation-of-density-of-electrons-in-conduction-band-and-density-of-holes-in-valence-band",
+      "path": "derivation-of-density-of-electrons-in-conduction-band-and-density-of-holes-in-valence-band/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Intrinsic carrier concentration",
+      "slug": "intrinsic-carrier-concentration",
+      "path": "intrinsic-carrier-concentration/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Variation of Intrinsic carrier concentration with temperature",
+      "slug": "variation-of-intrinsic-carrier-concentration-with-temperature",
+      "path": "variation-of-intrinsic-carrier-concentration-with-temperature/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Extrinsic semiconductor (qualitative)",
+      "slug": "extrinsic-semiconductor-qualitative",
+      "path": "extrinsic-semiconductor-qualitative/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Formation of p-n junction",
+      "slug": "formation-of-p-n-junction",
+      "path": "formation-of-p-n-junction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Fermi level in semiconductors-intrinsic and extrinsic",
+      "slug": "fermi-level-in-semiconductors-intrinsic-and-extrinsic",
+      "path": "fermi-level-in-semiconductors-intrinsic-and-extrinsic/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Energy band diagram of p-n junction - Qualitative description of charge flow across a p-n junction - Forward and reverse biased p-n junctions",
+      "slug": "energy-band-diagram-of-p-n-junction-qualitative-description-of-charge-flow-across-a-p-n-junction",
+      "path": "energy-band-diagram-of-p-n-junction-qualitative-description-of-charge-flow-across-a-p-n-junction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Diode equation (Derivation)",
+      "slug": "diode-equation-derivation",
+      "path": "diode-equation-derivation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "I-V Characteristics of p-n junction",
+      "slug": "i-v-characteristics-of-p-n-junction",
+      "path": "i-v-characteristics-of-p-n-junction/notes.md",
       "has_mermaid": true,
       "has_math": true
     }

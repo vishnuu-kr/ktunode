@@ -1,0 +1,29 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS",
+  "course_code": "PCCST402",
+  "module_number": 3,
+  "module_title": "Database design theory normalization",
+  "topics_generated": [
+    {
+      "title": "Database Design Theory & Normalization  - Functional Dependencies - Basic definition; Normalization- First, Second, and Third normal forms.",
+      "slug": "database-design-theory-normalization-functional-dependencies-basic-definition-normalization-first",
+      "path": "database-design-theory-normalization-functional-dependencies-basic-definition-normalization-first/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transaction Management -  Transaction Processing : Introduction , problems and failures in transaction , Desirable properties of transaction , Characterizing schedules based on recoverability and serializability;",
+      "slug": "transaction-management-transaction-processing-introduction-problems-and-failures-in-transaction",
+      "path": "transaction-management-transaction-processing-introduction-problems-and-failures-in-transaction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Concurrency Control with Two-Phase Locking Techniques- Database Recovery management: Deferred update-immediate update- shadow paging.",
+      "slug": "concurrency-control-with-two-phase-locking-techniques-database-recovery-management-deferred-update",
+      "path": "concurrency-control-with-two-phase-locking-techniques-database-recovery-management-deferred-update/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "course_name": "COMPUTER NETWORKS",
+  "course_code": "PCCST501",
+  "module_number": 2,
+  "module_title": "Transport layer services protocols udp tcp book 1 ch 3",
+  "topics_generated": [
+    {
+      "title": "Transport Layer: Services, Protocols, UDP, TCP  (Book 1 Ch 3).",
+      "slug": "transport-layer-services-protocols-udp-tcp-book-1-ch-3",
+      "path": "transport-layer-services-protocols-udp-tcp-book-1-ch-3/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hands-on: Sockets Introduction, Elementary TCP Sockets, TCP Client/Server Example, I/O Multiplexing: The select and poll Functions (Book 2 Ch 3 to 6), Elementary UDP Sockets (Book 2 Ch 8), Advanced I/O Functions (Book 2 Ch 14)",
+      "slug": "hands-on-sockets-introduction-elementary-tcp-sockets-tcp-client-server-example-i-o-multiplexing-the",
+      "path": "hands-on-sockets-introduction-elementary-tcp-sockets-tcp-client-server-example-i-o-multiplexing-the/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Network Layer: Introduction, Network-layer protocols, Unicast routing, Multicast routing - Multicasting Basics, Intra domain and inter-domain routing,  Next generation IP (Book 1 Ch 4), Quality of Service (Book 1 Ch 8)",
+      "slug": "network-layer-introduction-network-layer-protocols-unicast-routing-multicast-routing-multicasting",
+      "path": "network-layer-introduction-network-layer-protocols-unicast-routing-multicast-routing-multicasting/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hands-on: Linux Kernel Implementation of Routing Table and Caches, Routing Cache Implementation Overview, Adding new entry in the Routing Table using ip command (Book 3 Ch 14)",
+      "slug": "hands-on-linux-kernel-implementation-of-routing-table-and-caches-routing-cache-implementation",
+      "path": "hands-on-linux-kernel-implementation-of-routing-table-and-caches-routing-cache-implementation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

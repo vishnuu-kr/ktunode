@@ -1,0 +1,64 @@
+{
+  "course_name": "SOFTWARE TESTING",
+  "course_code": "PECST631",
+  "module_number": 1,
+  "module_title": "Introduction to software testing",
+  "topics_generated": [
+    {
+      "title": "Introduction to Software Testing - Concepts, importance of testing, software quality, and real-world failures (e.g., Ariane 5, Therac 25)",
+      "slug": "introduction-to-software-testing-concepts-importance-of-testing-software-quality-and-real-world",
+      "path": "introduction-to-software-testing-concepts-importance-of-testing-software-quality-and-real-world/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Software Testing Processes - Levels of thinking in testing",
+      "slug": "software-testing-processes-levels-of-thinking-in-testing",
+      "path": "software-testing-processes-levels-of-thinking-in-testing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Testing Terminologies - Verification, validation, fault, error, bug, test cases, and coverage criteria",
+      "slug": "testing-terminologies-verification-validation-fault-error-bug-test-cases-and-coverage-criteria",
+      "path": "testing-terminologies-verification-validation-fault-error-bug-test-cases-and-coverage-criteria/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Types of Testing - Unit, Integration, System, Acceptance, Performance (stress, usability, regression), and Security Testing",
+      "slug": "types-of-testing-unit-integration-system-acceptance-performance-stress-usability-regression-and",
+      "path": "types-of-testing-unit-integration-system-acceptance-performance-stress-usability-regression-and/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Industry Trends - AI in test case automation, Introduction to GenAI in testing",
+      "slug": "industry-trends-ai-in-test-case-automation-introduction-to-genai-in-testing",
+      "path": "industry-trends-ai-in-test-case-automation-introduction-to-genai-in-testing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Testing Methods - Black-Box, White-Box, and Grey-Box Testing",
+      "slug": "testing-methods-black-box-white-box-and-grey-box-testing",
+      "path": "testing-methods-black-box-white-box-and-grey-box-testing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Automation in Testing - Introduction to automation tools (e.g., Selenium, Cypress, JUnit)",
+      "slug": "automation-in-testing-introduction-to-automation-tools-e-g-selenium-cypress-junit",
+      "path": "automation-in-testing-introduction-to-automation-tools-e-g-selenium-cypress-junit/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case Study- Automation of Unit Testing and Mutation Testing using JUnit",
+      "slug": "case-study-automation-of-unit-testing-and-mutation-testing-using-junit",
+      "path": "case-study-automation-of-unit-testing-and-mutation-testing-using-junit/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

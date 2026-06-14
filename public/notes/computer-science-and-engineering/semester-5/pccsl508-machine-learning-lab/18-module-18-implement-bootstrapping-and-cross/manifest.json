@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 18,
+  "module_title": "Implement bootstrapping and cross",
+  "topics_generated": [
+    {
+      "title": "Implement bootstrapping and cross-validation on the Iris dataset. Compare the model performance metrics (e.g., accuracy, F1-score) obtained using these resampling methods. Discuss the advantages and disadvantages of each method.",
+      "slug": "implement-bootstrapping-and-cross-validation-on-the-iris-dataset-compare-the-model-performance",
+      "path": "implement-bootstrapping-and-cross-validation-on-the-iris-dataset-compare-the-model-performance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Iris dataset.",
+      "slug": "load-and-preprocess-the-iris-dataset",
+      "path": "load-and-preprocess-the-iris-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement bootstrapping to generate multiple samples and evaluate the model.",
+      "slug": "implement-bootstrapping-to-generate-multiple-samples-and-evaluate-the-model",
+      "path": "implement-bootstrapping-to-generate-multiple-samples-and-evaluate-the-model/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement k-fold cross-validation and evaluate the model.",
+      "slug": "implement-k-fold-cross-validation-and-evaluate-the-model",
+      "path": "implement-k-fold-cross-validation-and-evaluate-the-model/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Compare the performance metrics and discuss the pros and cons of each resampling method.",
+      "slug": "compare-the-performance-metrics-and-discuss-the-pros-and-cons-of-each-resampling-method",
+      "path": "compare-the-performance-metrics-and-discuss-the-pros-and-cons-of-each-resampling-method/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

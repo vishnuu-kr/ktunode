@@ -1,0 +1,57 @@
+{
+  "course_name": "OPERATING SYSTEMS LAB",
+  "course_code": "PCCSL407",
+  "module_number": 7,
+  "module_title": "Inter",
+  "topics_generated": [
+    {
+      "title": "Inter-process Communication (https://www.linuxdoc.org/LDP/lpg/node7.html)",
+      "slug": "inter-process-communication-https-www-linuxdoc-org-ldp-lpg-node7-html",
+      "path": "inter-process-communication-https-www-linuxdoc-org-ldp-lpg-node7-html/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "(a) Using Pipe – Evaluate the expression",
+      "slug": "a-using-pipe-evaluate-the-expression",
+      "path": "a-using-pipe-evaluate-the-expression/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": ". The first process evaluates",
+      "slug": "the-first-process-evaluates",
+      "path": "the-first-process-evaluates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": ". The second process evaluates",
+      "slug": "the-second-process-evaluates",
+      "path": "the-second-process-evaluates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "and sends it to the first process which evaluates the final expression and displays it.",
+      "slug": "and-sends-it-to-the-first-process-which-evaluates-the-final-expression-and-displays-it",
+      "path": "and-sends-it-to-the-first-process-which-evaluates-the-final-expression-and-displays-it/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "(b) Using Message Queue - The first process sends a string to the second process. The second process reverses the received string and sends it back to the first process. The first process compares the original string and the reversed string received from the second one and then prints whether the string is a palindrome or not.",
+      "slug": "b-using-message-queue-the-first-process-sends-a-string-to-the-second-process-the-second-process",
+      "path": "b-using-message-queue-the-first-process-sends-a-string-to-the-second-process-the-second-process/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "(c) Using Shared Memory - The first process sends three strings to the second process. The second process concatenates them to a single string (with whitespace being inserted between the two individual strings) and sends it back to the first process. The first process prints the concatenated string in the flipped case, that is if the concatenated string is “ Hello S4 Students ”, the final output should be “ hELLO s4 sTUDENTS ”",
+      "slug": "c-using-shared-memory-the-first-process-sends-three-strings-to-the-second-process-the-second",
+      "path": "c-using-shared-memory-the-first-process-sends-three-strings-to-the-second-process-the-second/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

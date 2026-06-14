@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 8,
+  "module_title": "Implement the k",
+  "topics_generated": [
+    {
+      "title": "Implement the K-Nearest Neighbors (KNN) algorithm for image classification using the Fashion MNIST dataset. Experiment with different values of K and analyze their impact on model performance.",
+      "slug": "implement-the-k-nearest-neighbors-knn-algorithm-for-image-classification-using-the-fashion-mnist",
+      "path": "implement-the-k-nearest-neighbors-knn-algorithm-for-image-classification-using-the-fashion-mnist/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Fashion MNIST dataset.",
+      "slug": "load-and-preprocess-the-fashion-mnist-dataset",
+      "path": "load-and-preprocess-the-fashion-mnist-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implement KNN for multi-class classification.",
+      "slug": "implement-knn-for-multi-class-classification",
+      "path": "implement-knn-for-multi-class-classification/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Experiment with different values of K and evaluate performance.",
+      "slug": "experiment-with-different-values-of-k-and-evaluate-performance",
+      "path": "experiment-with-different-values-of-k-and-evaluate-performance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Discuss the impact of different K values on model accuracy and computational efficiency.",
+      "slug": "discuss-the-impact-of-different-k-values-on-model-accuracy-and-computational-efficiency",
+      "path": "discuss-the-impact-of-different-k-values-on-model-accuracy-and-computational-efficiency/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

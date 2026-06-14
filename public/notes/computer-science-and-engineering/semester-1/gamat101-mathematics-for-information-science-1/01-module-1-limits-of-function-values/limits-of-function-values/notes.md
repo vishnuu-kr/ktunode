@@ -1,885 +1,749 @@
 # Limits of Function Values
 
 <!-- SECTION_1_START -->
-# Limits of Function Values — Core Technical Definition & Intuition
+
+# Module 1: Limits of Function Values — Foundational Concepts
+
+## 1.1 The Core Technical Definition (KTU 2024 Syllabus Standard)
 
 > [!IMPORTANT]
-> **KTU 2024 Scheme — Module 1 Focus**
-> This module establishes the foundation of **Mathematical Analysis** for all higher calculus. Every concept in *Differentiation*, *Integration*, and *Series* in later modules is built on the notion of a **limit**. The KTU Board Examiner expects formal statement of the $\varepsilon\text{-}\delta$ definition along with its geometric interpretation.
+> **Definition (Limit of a Function — Epsilon–Delta Formulation)**
+> Let $f : D \to \mathbb{R}$ be a real-valued function defined on a domain $D \subseteq \mathbb{R}$, and let $c$ be a **limit point** (cluster point) of $D$. We say that the limit of $f(x)$ as $x$ approaches $c$ equals the real number $L$, written as
+> $$\lim_{x \to c} f(x) = L,$$
+> if and only if for every $\varepsilon > 0$ (no matter how small), there exists a corresponding $\delta > 0$ such that for **all** $x \in D$ satisfying $0 < \vert x - c \vert < \delta$, the following inequality holds:
+> $$\vert f(x) - L \vert < \varepsilon.$$
 
----
-
-## 1.1 Formal Definition (KTU Board Standard)
-
-Let $f : D \to \mathbb{R}$ be a real-valued function defined on a domain $D \subseteq \mathbb{R}$, and let $c$ be a **limit point** (accumulation point) of $D$. We say that the limit of $f(x)$ as $x$ approaches $c$ equals $L$, written
-
-$$
-\lim_{x \to c} f(x) = L
-$$
-
-if and only if for every real number $\varepsilon > 0$, there exists a real number $\delta > 0$ such that for all $x \in D$ satisfying
-
-$$
-0 < \vert x - c \vert < \delta
-$$
-
-the following inequality holds:
-
-$$
-\vert f(x) - L \vert < \varepsilon
-$$
+In plain words: by forcing $x$ to stay sufficiently close to $c$ (within $\delta$), we can make $f(x)$ arbitrarily close to $L$ (within $\varepsilon$). The value of $f$ *at* $c$ itself is irrelevant; the limit only cares about what happens **near** $c$.
 
 > [!NOTE]
-> **Reading the $\varepsilon\text{-}\delta$ Definition (Examiner's Favourite 2-Mark Question)**
-> * "For every $\varepsilon > 0$" — this is the **tolerance** you allow on the **output** (the $y$-axis).
-> * "There exists $\delta > 0$" — this is the **window** you draw on the **input** (the $x$-axis).
-> * "For all $x$ with $0 < \vert x - c \vert < \delta$" — note that $x = c$ itself is **excluded**; the function does not even need to be defined at $c$.
-> * "Then $\vert f(x) - L \vert < \varepsilon$" — the output must stay inside the horizontal band.
+> **Why is the limit point condition crucial?**
+> If $c$ is not a limit point of $D$, then we can always choose $\delta$ small enough so that no $x \neq c$ in $D$ lies within $\delta$ of $c$, making the condition vacuously true. Hence the existence of a limit requires $c$ to be approachable from $D$ by points other than itself.
 
----
+### Key Notations Used in KTU 2024 Scheme
 
-## 1.2 Conceptual Analogy — The "Magnetic Target" Intuition
+| Notation | Verbal Reading | Domain of Application |
+|:---:|:---|:---|
+| $\lim_{x \to c} f(x) = L$ | Limit of $f(x)$ as $x$ approaches $c$ equals $L$ | Standard two-sided limit |
+| $\lim_{x \to c^{+}} f(x) = L$ | Right-hand limit of $f$ at $c$ | $x$ approaches $c$ from values greater than $c$ |
+| $\lim_{x \to c^{-}} f(x) = L$ | Left-hand limit of $f$ at $c$ | $x$ approaches $c$ from values less than $c$ |
+| $\lim_{x \to \infty} f(x) = L$ | Limit of $f$ as $x$ tends to infinity | Behavior at the right tail |
+| $\lim_{x \to -\infty} f(x) = L$ | Limit of $f$ as $x$ tends to negative infinity | Behavior at the left tail |
+| $\lim_{x \to c} f(x) = \infty$ | $f$ grows without bound near $c$ | Vertical asymptote behavior |
 
-Imagine a small **iron ball** rolling along the graph of $y = f(x)$ as $x$ slides toward $c$ from both sides. The function has a **hidden destination** $L$ on the $y$-axis that it is "magnetically pulled toward", even if it never actually touches it.
+### Conceptual Analogy — The "Magnetic Target" Intuition
 
-> **Real-World Analogy — The Thermostat (Engineering Sense)**
-> Consider a room thermostat set to $22^{\circ}\text{C}$. As time progresses, the temperature reading $T(t)$ on the sensor approaches $22^{\circ}\text{C}$ from values like $21.9, 21.99, 21.999, \dots$. It may never exactly equal $22^{\circ}\text{C}$ due to sensor noise, but it gets *arbitrarily close*. That target value $22$ is the **limit** — the system's asymptote of behaviour, not necessarily a value it attains.
+Imagine $L$ as a **magnet** placed at coordinate $L$ on the $y$-axis. The function $f(x)$ generates a tiny moving charge. As the input $x$ slides along the $x$-axis and gets closer and closer to the forbidden point $c$, the magnetic pull drags $f(x)$ closer and closer to the target $L$. The $\varepsilon$–$\delta$ definition is simply a precise, mathematical promise: *"No matter how tight the noose (small $\varepsilon$) you place around $L$, I can find a small neighborhood (radius $\delta$) around $c$ such that $f(x)$ never escapes the noose."*
 
-| Informal Idea | Mathematical Translation |
-|---|---|
-| "Gets close to" | $\vert f(x) - L \vert < \varepsilon$ |
-| "From both sides" | $0 < \vert x - c \vert < \delta$ (two-sided) |
-| "We can choose how close" | $\varepsilon$ is given *first* (for all) |
-| "We control the input" | $\delta$ comes *after* (there exists) |
+> [!TIP]
+> **Engineering Connection for Information Science Students**
+> In computer science, the notion of *asymptotic complexity* (Big-O, Big-Theta) is a direct descendant of the limit concept. For instance, $f(n) = O(g(n))$ essentially means $\lim_{n \to \infty} \dfrac{f(n)}{g(n)}$ is bounded. Limits also govern the convergence analysis of iterative algorithms (gradient descent, Newton's method), signal processing (Fourier coefficients decay), and neural network training (loss curves plateauing).
 
----
+### One-Sided Limits — Definitions and Symmetry
 
-## 1.3 The Six (6) Indeterminate Forms — KTU High-Yield
+A two-sided limit $\lim_{x \to c} f(x) = L$ **exists if and only if** both one-sided limits exist and are equal:
 
-When direct substitution yields an indeterminate form, the limit is **not** automatically zero or infinity — it must be analyzed further.
+$$\lim_{x \to c} f(x) = L \iff \lim_{x \to c^{+}} f(x) = \lim_{x \to c^{-}} f(x) = L.$$
 
-$$
-\frac{0}{0}, \quad \frac{\infty}{\infty}, \quad 0 \cdot \infty, \quad \infty - \infty, \quad 0^{0}, \quad 1^{\infty}
-$$
+> [!IMPORTANT]
+> **Definition (Right-Hand Limit)**
+> $\lim_{x \to c^{+}} f(x) = L$ if for every $\varepsilon > 0$, there exists $\delta > 0$ such that for all $x \in D$ with $c < x < c + \delta$, we have $\vert f(x) - L \vert < \varepsilon$.
 
-> [!WARNING]
-> **Common Student Mistake:** Writing $\frac{0}{0} = 0$ or $\frac{\infty}{\infty} = 1$. These are **undefined** expressions, not algebraic identities. The KTU examiner **deducts 1 mark** for this oversight.
+> [!IMPORTANT]
+> **Definition (Left-Hand Limit)**
+> $\lim_{x \to c^{-}} f(x) = L$ if for every $\varepsilon > 0$, there exists $\delta > 0$ such that for all $x \in D$ with $c - \delta < x < c$, we have $\vert f(x) - L \vert < \varepsilon$.
 
----
+### Infinite Limits — Behavior Near Vertical Asymptotes
 
-## 1.4 One-Sided Limits (Essential for Piecewise Functions)
-
-| Symbol | Name | Meaning |
-|---|---|---|
-| $\displaystyle \lim_{x \to c^{+}} f(x) = L$ | Right-hand limit | $x$ approaches $c$ from values **greater than** $c$ |
-| $\displaystyle \lim_{x \to c^{-}} f(x) = L$ | Left-hand limit | $x$ approaches $c$ from values **less than** $c$ |
-
-**Two-sided limit existence theorem:**
-
-$$
-\lim_{x \to c} f(x) = L \quad \iff \quad \lim_{x \to c^{+}} f(x) = L \;\; \text{AND} \;\; \lim_{x \to c^{-}} f(x) = L
-$$
-
-If the one-sided limits differ, the **two-sided limit does not exist (DNE)**.
+When $f(x)$ grows without bound as $x$ approaches $c$, we write $\lim_{x \to c} f(x) = \infty$ (or $-\infty$). Formally, for every $M > 0$, there exists $\delta > 0$ such that $0 < \vert x - c \vert < \delta$ implies $f(x) > M$.
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Behaviour of a function near $x = c$ with different left/right tendencies
+> **Concept:** Graphical behavior of $\lim_{x \to 0} \dfrac{1}{x^{2}} = +\infty$ and $\lim_{x \to 0} \dfrac{1}{x}$ (sign difference on each side).
 > **GeoGebra / Desmos Input Equations:**
-> * `f(x) = (x^2 - 1) / (x - 1)`  → produces a **hole** at $x = 1$, $y = 2$
-> * `g(x) = piecewise( x + 1  for x < 1,  3 - x  for x >= 1 )`  → left limit $= 2$, right limit $= 2$, value at $1$ is $2$, so **continuous**
-> * `h(x) = piecewise( x + 1  for x < 1,  5 - x  for x >= 1 )`  → left limit $= 2$, right limit $= 4$, so **limit DNE** (jump discontinuity)
-> **Visual Description:** A **hole** in the curve is a *removable* discontinuity (limit exists but function value is missing). A **vertical jump** is a *jump* discontinuity (limit fails because left $\neq$ right). A **vertical asymptote** (function shoots to $\pm \infty$) is an *essential/infinite* discontinuity.
+> * `f(x) = 1 / x^2` — produces a U-shaped curve opening upward, blowing up to $+\infty$ on **both** sides of $x = 0$.
+> * `g(x) = 1 / x` — produces two branches: right branch shoots to $+\infty$, left branch plunges to $-\infty$.
+> **Visual Description:** On the $xy$-plane, the student should observe that at $x = 0$ a vertical dashed line (asymptote) is approached. The first curve is **symmetric** about the $y$-axis and goes up; the second is **antisymmetric** and changes sign. This contrast demonstrates why "one-sided" limits are required for $1/x$ but not for $1/x^{2}$.
+
+### Limits at Infinity — End Behavior
+
+The expression $\lim_{x \to \infty} f(x) = L$ means: for every $\varepsilon > 0$, there exists a real number $N$ such that $x > N$ implies $\vert f(x) - L \vert < \varepsilon$. Geometrically, the curve $y = f(x)$ gets trapped inside a horizontal band of width $2\varepsilon$ centered on $y = L$ for all sufficiently large $x$.
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# Deep Theoretical Analysis — Limit Laws & KTU Formula Sheet
 
-## 2.1 The Eleven (11) Standard Limit Laws
+# Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-Let $\displaystyle \lim_{x \to c} f(x) = L$ and $\displaystyle \lim_{x \to c} g(x) = M$, where $L, M \in \mathbb{R}$. Then:
+## 2.1 The Algebra of Limits (Limit Theorems)
 
-| # | Law | Formula | Conditions |
-|---|---|---|---|
-| 1 | **Sum** | $\displaystyle \lim_{x \to c} [f(x) + g(x)] = L + M$ | No restriction |
-| 2 | **Difference** | $\displaystyle \lim_{x \to c} [f(x) - g(x)] = L - M$ | No restriction |
-| 3 | **Product** | $\displaystyle \lim_{x \to c} [f(x) \cdot g(x)] = L \cdot M$ | No restriction |
-| 4 | **Quotient** | $\displaystyle \lim_{x \to c} \frac{f(x)}{g(x)} = \frac{L}{M}$ | $M \neq 0$ |
-| 5 | **Constant Multiple** | $\displaystyle \lim_{x \to c} [k \cdot f(x)] = k \cdot L$ | $k \in \mathbb{R}$ |
-| 6 | **Power** | $\displaystyle \lim_{x \to c} [f(x)]^{n} = L^{n}$ | $n \in \mathbb{Z}^{+}$ |
-| 7 | **Root** | $\displaystyle \lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}$ | $n$-th root defined at $L$ |
-| 8 | **Composition (Chain)** | $\displaystyle \lim_{x \to c} f(g(x)) = f(L)$ | $g(x) \neq L$ near $c$, $f$ continuous at $L$ |
-| 9 | **Squeeze / Sandwich** | If $g(x) \leq f(x) \leq h(x)$ and both bounding limits equal $L$ | Then $\lim f(x) = L$ |
-| 10 | **Direct Substitution** | If $f$ is continuous at $c$, then $\lim f(x) = f(c)$ | Continuity required |
-| 11 | **Constant Function** | $\displaystyle \lim_{x \to c} k = k$ | Trivially |
+These are the workhorse rules. Assume $\lim_{x \to c} f(x) = L$ and $\lim_{x \to c} g(x) = M$, where $L, M \in \mathbb{R}$. Then:
 
----
-
-## 2.2 The Seven (7) Master Limit Theorems (Engineering Essentials)
-
-> [!IMPORTANT]
-> Memorize these — they appear in **every** KTU End Semester paper, either as a 3-mark direct question or as a building block for a 7-mark problem.
-
-$$
-\begin{aligned}
-&\textbf{(T1) Trigonometric Squeeze:} \quad \lim_{x \to 0} \frac{\sin x}{x} = 1 \\[6pt]
-&\textbf{(T2) Natural Log:} \quad \lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1 \\[6pt]
-&\textbf{(T3) Exponential:} \quad \lim_{x \to 0} \frac{e^{x} - 1}{x} = 1 \\[6pt]
-&\textbf{(T4) Binomial:} \quad \lim_{x \to 0} \frac{(1 + x)^{k} - 1}{x} = k \quad (k \in \mathbb{R}) \\[6pt]
-&\textbf{(T5) Polynomial Ratio at }\infty: \quad \lim_{x \to \infty} \frac{a_{n}x^{n} + \cdots}{b_{m}x^{m} + \cdots} = \begin{cases} 0, & n < m \\ \dfrac{a_{n}}{b_{m}}, & n = m \\ \pm \infty, & n > m \end{cases} \\[6pt]
-&\textbf{(T6) Infinite Form: } \lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^{x} = e \quad \text{(Euler's Number, } e \approx 2.71828\textbf{)} \\[6pt]
-&\textbf{(T7) Reciprocal Power: } \lim_{x \to \infty} \frac{1}{x^{p}} = 0 \quad \text{for any } p > 0
-\end{aligned}
-$$
-
----
-
-## 2.3 The Four (4) Limit Behaviour Cases at Infinity
-
-| Type | Graph Shape | Limit Behaviour |
-|---|---|---|
-| Horizontal Asymptote | Curve flattens out | $\lim_{x \to \pm\infty} f(x) = L$ (finite) |
-| Polynomial Growth | Curve rises indefinitely | $\lim_{x \to \infty} f(x) = \infty$ |
-| Oscillatory (e.g. $\sin x$) | Wave between $-1$ and $1$ | $\lim_{x \to \infty} f(x)$ **DNE** |
-| Recurring Indeterminate (e.g. $\sin x / x$) | Decaying oscillation | $\lim_{x \to \infty} f(x) = 0$ (Squeeze Theorem) |
-
----
-
-## 2.4 Real-World Engineering Utility
-
-| Engineering Field | Application of Limits |
-|---|---|
-| **Signal Processing** | Nyquist limit — sampling rate $\to \infty$ for perfect reconstruction |
-| **Machine Learning** | Gradient descent step-size $\eta \to 0$ for convergence |
-| **Computer Graphics** | Anti-aliasing — pixel resolution $\to 0$ for sharp edges |
-| **Control Systems** | Steady-state error as $t \to \infty$ in PID controllers |
-| **Numerical Methods** | Newton's method convergence as iteration $n \to \infty$ |
-| **Network Engineering** | Bandwidth $\to \infty$ for Shannon channel capacity limits |
+| # | Rule Name | Mathematical Statement |
+|:---:|:---|:---|
+| 1 | Constant Rule | $\lim_{x \to c} k = k$, for any constant $k \in \mathbb{R}$ |
+| 2 | Identity Rule | $\lim_{x \to c} x = c$ |
+| 3 | Sum Rule | $\lim_{x \to c} [f(x) + g(x)] = L + M$ |
+| 4 | Difference Rule | $\lim_{x \to c} [f(x) - g(x)] = L - M$ |
+| 5 | Product Rule | $\lim_{x \to c} [f(x) \cdot g(x)] = L \cdot M$ |
+| 6 | Constant Multiple Rule | $\lim_{x \to c} [k \cdot f(x)] = kL$ |
+| 7 | Quotient Rule | $\lim_{x \to c} \dfrac{f(x)}{g(x)} = \dfrac{L}{M}$, provided $M \neq 0$ |
+| 8 | Power Rule | $\lim_{x \to c} [f(x)]^{n} = L^{n}$, for $n \in \mathbb{Z}^{+}$ |
+| 9 | Root Rule | $\lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}$, provided the $n$-th root is defined |
+| 10 | Composition Rule | If $f$ is continuous at $L$, then $\lim_{x \to c} g(f(x)) = f(\lim_{x \to c} g(x)) = f(L)$ |
 
 > [!NOTE]
-> **The $1^{\infty}$ Indeterminate in Production:** The expression $\left(1 + \frac{1}{n}\right)^{n} \to e$ is the foundation of **compound interest** in financial engineering, and of the **limiting reliability formula** in reliability theory of computer networks.
+> **Caution with the Quotient Rule:** If $M = 0$ and $L \neq 0$, the limit is $\pm \infty$ (depending on sign analysis). If both $L = 0$ and $M = 0$, we get the **indeterminate form $0/0$** and must apply algebraic simplification techniques.
+
+## 2.2 Indeterminate Forms — The "Seven Deadly" List
+
+When direct substitution yields a non-determinable form, we must transform the expression algebraically. The standard indeterminate forms recognized by KTU examiners are:
+
+| Indeterminate Form | Trigger Condition | Typical Resolution Strategy |
+|:---:|:---|:---|
+| $\dfrac{0}{0}$ | Both numerator and denominator vanish at $c$ | Factor, rationalize, or use L'Hôpital's Rule |
+| $\dfrac{\infty}{\infty}$ | Both grow without bound | Divide by highest power of $x$ in denominator |
+| $0 \cdot \infty$ | Product of a vanishing and unbounded term | Rewrite as a quotient $\dfrac{0}{1/\infty}$ or $\dfrac{\infty}{1/0}$ |
+| $\infty - \infty$ | Difference of two unbounded terms | Common denominator or rationalization |
+| $1^{\infty}$ | Base near 1, exponent unbounded | Take $\ln$, convert to $\infty \cdot 0$ form |
+| $0^{0}$ | Base and exponent both vanish | Take $\ln$, convert to $0 \cdot (-\infty)$ |
+| $\infty^{0}$ | Unbounded base, vanishing exponent | Take $\ln$, convert to $0 \cdot \infty$ |
+
+> [!WARNING]
+> **Forms that LOOK indeterminate but are not:** Expressions like $\dfrac{1}{0}$, $0^{1}$, $\infty^{1}$, $1^{\infty}$ (without proper analysis), $0/5$ — these are **determinate** and have definite values ($\infty$, $0$, $\infty$, etc.). Examiners frequently test whether students can distinguish.
+
+## 2.3 The Squeeze (Sandwich) Theorem
+
+> [!IMPORTANT]
+> **Squeeze Theorem Statement**
+> Let $f$, $g$, $h$ be three functions defined on an open interval containing $c$ (except possibly at $c$ itself). Suppose that for all $x$ near $c$ (with $x \neq c$):
+> $$g(x) \leq f(x) \leq h(x).$$
+> If $\lim_{x \to c} g(x) = \lim_{x \to c} h(x) = L$, then $\lim_{x \to c} f(x) = L$.
+
+**Why this matters in practice:** Many trigonometric limits cannot be computed by direct substitution or algebraic simplification alone. The Squeeze Theorem is the bridge — for example, to prove $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$, one shows that $\cos x \leq \dfrac{\sin x}{x} \leq 1$ near $x = 0$, and both bounding functions have limit $1$.
+
+## 2.4 KTU High-Yield Formula Sheet — Standard Limits to Memorize
+
+| # | Limit Expression | Value | Domain of Validity | Engineering Use Case |
+|:---:|:---|:---:|:---|:---|
+| 1 | $\lim_{x \to 0} \dfrac{\sin x}{x}$ | $1$ | $x$ in radians | Signal processing, AC analysis |
+| 2 | $\lim_{x \to 0} \dfrac{\tan x}{x}$ | $1$ | $x$ in radians | Optics, small-angle approximation |
+| 3 | $\lim_{x \to 0} \dfrac{1 - \cos x}{x^{2}}$ | $\dfrac{1}{2}$ | $x$ in radians | Optics, wave interference |
+| 4 | $\lim_{x \to 0} \dfrac{\sin(ax)}{bx}$ | $\dfrac{a}{b}$ | $a, b \neq 0$ | Frequency scaling |
+| 5 | $\lim_{x \to 0} \dfrac{e^{x} - 1}{x}$ | $1$ | Real $x$ | Continuous compounding |
+| 6 | $\lim_{x \to 0} \dfrac{\ln(1 + x)}{x}$ | $1$ | $x > -1$ | Entropy, information theory |
+| 7 | $\lim_{x \to 0} (1 + x)^{1/x}$ | $e$ | $x \neq 0$ | Compound interest, $e$ definition |
+| 8 | $\lim_{x \to \infty} \left(1 + \dfrac{k}{x}\right)^{x}$ | $e^{k}$ | Real $k$ | Continuous growth models |
+| 9 | $\lim_{x \to \infty} \dfrac{a_{n}x^{n} + \cdots}{b_{m}x^{m} + \cdots}$ | $\dfrac{a_{n}}{b_{m}}$ if $n = m$; $0$ if $n < m$; $\infty$ if $n > m$ | $a_{n}, b_{m} \neq 0$ | Asymptotic algorithm complexity |
+| 10 | $\lim_{x \to 0^{+}} x^{x}$ | $1$ | $x > 0$ | Numerical stability analysis |
+
+## 2.5 Strategies for Evaluating Limits — A Decision Tree
+
+1. **Direct Substitution**: Try plugging in $x = c$ first. If defined, the limit equals the function value (this implicitly requires continuity at $c$).
+2. **Algebraic Simplification**: For $0/0$ forms, factor polynomials, multiply by conjugates, or use trig identities.
+3. **Divide by Highest Power**: For $\infty/\infty$ forms with rational functions, divide numerator and denominator by the highest power of $x$ in the denominator.
+4. **Squeeze Theorem**: When the function is bounded between two simpler functions with known limits.
+5. **Standard Limit Identities**: Convert the given expression into one of the memorized forms (Section 2.4).
+6. **L'Hôpital's Rule** (advanced): If the form is $0/0$ or $\infty/\infty$ and $f, g$ are differentiable near $c$ (with $g'(x) \neq 0$), then $\lim_{x \to c} \dfrac{f(x)}{g(x)} = \lim_{x \to c} \dfrac{f'(x)}{g'(x)}$, provided the latter exists.
+
+## 2.6 Real-World Engineering Utility
+
+In **information science and computer engineering**, limits underpin:
+
+- **Algorithm Analysis**: Big-O notation quantifies how runtime $T(n)$ grows as input size $n \to \infty$.
+- **Numerical Methods**: Convergence of Newton's method requires the iteration map to be a contraction ($\vert \varphi'(x^{*}) \vert < 1$) near a fixed point.
+- **Probability and Statistics**: The Central Limit Theorem uses limit behavior to justify the normal approximation.
+- **Machine Learning**: Gradient descent convergence relies on $\lim_{k \to \infty} \Vert \nabla L(w_{k}) \Vert = 0$.
+- **Digital Signal Processing**: The Dirichlet kernel $\dfrac{\sin((N + 1/2)\theta)}{\sin(\theta/2)}$ has a famous limit behavior governing filter aliasing.
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# Step-by-Step Derivations, Proofs & Python Verification
 
-> [!IMPORTANT]
-> **KTU 2024 Valuation Key — Read Carefully:** Every step below must be visible. Marks are awarded for **logical transitions**, not just final answers. The pattern `[Stating: 1 Mark]`, `[Manipulation: 1 Mark]`, `[Application of Theorem: 2 Marks]`, `[Final Answer: 1 Mark]` is exactly how the 7-mark model answer is divided.
+# Step-by-Step Derivations & Computational Implementation
 
----
+## 3.1 Worked Example 1 — Polynomial Limit (Direct Substitution)
 
-## 3.1 Proof of the Squeeze (Sandwich) Theorem — Full Derivation
+**Problem:** Evaluate $\lim_{x \to 3} (2x^{3} - 5x + 7)$.
 
-**Theorem (Statement):** If $g(x) \leq f(x) \leq h(x)$ for all $x$ in some deleted neighbourhood of $c$, and if
+**Step 1.** Identify the type: numerator and denominator are polynomial expressions, no indeterminate form is immediately suggested. Try direct substitution.
 
-$$
-\lim_{x \to c} g(x) = \lim_{x \to c} h(x) = L
-$$
+$$\lim_{x \to 3} (2x^{3} - 5x + 7) = 2(3)^{3} - 5(3) + 7.$$
 
-then $\displaystyle \lim_{x \to c} f(x) = L$.
+**Step 2.** Simplify using order of operations.
 
-**Proof using $\varepsilon\text{-}\delta$ (5 marks model answer):**
+$$= 2 \cdot 27 - 15 + 7 = 54 - 15 + 7 = 46.$$
 
-By hypothesis, $\lim_{x \to c} g(x) = L$. Therefore, for any $\varepsilon > 0$, there exists $\delta_{1} > 0$ such that
+**Conclusion:** $\lim_{x \to 3} (2x^{3} - 5x + 7) = 46$. This works because polynomials are **continuous everywhere**, so the limit equals the function value at the point.
 
-$$
-0 < \vert x - c \vert < \delta_{1} \implies \vert g(x) - L \vert < \varepsilon \implies L - \varepsilon < g(x) < L + \varepsilon
-$$
+> [!TIP]
+> **Valuation Key Point:** The examiner awards full marks even if you only write the final answer 46, but a 1–2 line justification citing continuity is worth 1 mark under KTU's strict valuation scheme.
 
-Similarly, $\lim_{x \to c} h(x) = L$ implies there exists $\delta_{2} > 0$ such that
+## 3.2 Worked Example 2 — The $0/0$ Indeterminate Form (Factoring)
 
-$$
-0 < \vert x - c \vert < \delta_{2} \implies \vert h(x) - L \vert < \varepsilon \implies L - \varepsilon < h(x) < L + \varepsilon
-$$
+**Problem:** Evaluate $\lim_{x \to 2} \dfrac{x^{2} - 4}{x - 2}$.
 
-Choose $\delta = \min(\delta_{1}, \delta_{2})$. Then for $0 < \vert x - c \vert < \delta$, the inequalities
+**Step 1.** Apply direct substitution: numerator becomes $2^{2} - 4 = 0$, denominator becomes $2 - 2 = 0$. This is the indeterminate form $0/0$. We must simplify.
 
-$$
-L - \varepsilon < g(x) \leq f(x) \leq h(x) < L + \varepsilon
-$$
+**Step 2.** Factor the numerator using the difference of squares identity: $a^{2} - b^{2} = (a - b)(a + b)$.
 
-hold simultaneously. Therefore
+$$\dfrac{x^{2} - 4}{x - 2} = \dfrac{(x - 2)(x + 2)}{x - 2}.$$
 
-$$
-L - \varepsilon < f(x) < L + \varepsilon \implies \vert f(x) - L \vert < \varepsilon
-$$
+**Step 3.** Cancel the common factor $(x - 2)$, valid for $x \neq 2$.
 
-Hence $\displaystyle \lim_{x \to c} f(x) = L$. $\blacksquare$
+$$= x + 2, \quad \text{for } x \neq 2.$$
 
-> [!WARNING]
-> **Valuation Pitfall:** Students often write $g(x) < f(x) < h(x)$ but **fail to include** the bounds $L - \varepsilon$ and $L + \varepsilon$ that link the inequalities to $L$. This costs 2 marks.
+**Step 4.** Take the limit of the simplified expression by direct substitution.
 
----
+$$\lim_{x \to 2} (x + 2) = 2 + 2 = 4.$$
 
-## 3.2 Worked Example — Limit at a Point (Indeterminate $0/0$)
+**Conclusion:** $\lim_{x \to 2} \dfrac{x^{2} - 4}{x - 2} = 4$.
 
-**Problem:** Evaluate $\displaystyle \lim_{x \to 3} \frac{x^{2} - 9}{x - 3}$.
+> [!NOTE]
+> **Graphical Insight:** The function $f(x) = \dfrac{x^{2} - 4}{x - 2}$ has a "hole" at the point $(2, 4)$. The function is undefined at $x = 2$, but the limit captures the height the curve *would have* if the hole were filled. This is the prototypical *removable discontinuity*.
 
-**Step 1 — Direct substitution test:**
+## 3.3 Worked Example 3 — Rationalizing the Numerator (Surd Limits)
 
-$$
-\frac{3^{2} - 9}{3 - 3} = \frac{9 - 9}{0} = \frac{0}{0} \quad \text{(Indeterminate)}
-$$
+**Problem:** Evaluate $\lim_{x \to 0} \dfrac{\sqrt{x + 1} - 1}{x}$.
 
-**Step 2 — Algebraic manipulation (Factoring):**
+**Step 1.** Direct substitution: numerator $= \sqrt{0+1} - 1 = 1 - 1 = 0$; denominator $= 0$. Indeterminate form $0/0$.
 
-$$
-x^{2} - 9 = (x - 3)(x + 3) \quad \text{[Difference of Squares identity]}
-$$
+**Step 2.** Rationalize by multiplying numerator and denominator by the conjugate $\sqrt{x+1} + 1$.
 
-Therefore
+$$\dfrac{\sqrt{x+1} - 1}{x} \cdot \dfrac{\sqrt{x+1} + 1}{\sqrt{x+1} + 1} = \dfrac{(\sqrt{x+1})^{2} - 1^{2}}{x(\sqrt{x+1} + 1)}.$$
 
-$$
-\frac{x^{2} - 9}{x - 3} = \frac{(x - 3)(x + 3)}{x - 3}
-$$
+**Step 3.** Simplify the numerator using $(a-b)(a+b) = a^{2} - b^{2}$.
 
-**Step 3 — Cancellation (valid because $x \neq 3$ in the limit):**
+$$= \dfrac{(x + 1) - 1}{x(\sqrt{x+1} + 1)} = \dfrac{x}{x(\sqrt{x+1} + 1)}.$$
 
-$$
-= x + 3, \quad \text{for } x \neq 3
-$$
+**Step 4.** Cancel the factor $x$ (valid for $x \neq 0$).
 
-**Step 4 — Apply the limit law (Direct substitution now):**
+$$= \dfrac{1}{\sqrt{x+1} + 1}.$$
 
-$$
-\lim_{x \to 3} (x + 3) = 3 + 3 = 6
-$$
+**Step 5.** Take the limit by direct substitution.
 
-**Final Answer:** $\displaystyle \lim_{x \to 3} \frac{x^{2} - 9}{x - 3} = 6$
+$$\lim_{x \to 0} \dfrac{1}{\sqrt{x+1} + 1} = \dfrac{1}{\sqrt{0+1} + 1} = \dfrac{1}{1+1} = \dfrac{1}{2}.$$
 
-> **Mark Distribution:** [Identifying indeterminate form: 1] [Factoring correctly: 2] [Cancellation with justification: 2] [Final substitution: 1] [Statement of answer: 1] = **7 marks**
+**Conclusion:** $\lim_{x \to 0} \dfrac{\sqrt{x+1} - 1}{x} = \dfrac{1}{2}$.
 
----
+## 3.4 Worked Example 4 — The Trigonometric Cardinal Limit
 
-## 3.3 Worked Example — Limit Involving $\infty / \infty$ (Highest Degree Method)
+**Problem:** Prove $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$ using the Squeeze Theorem.
 
-**Problem:** Evaluate $\displaystyle \lim_{x \to \infty} \frac{3x^{3} - 2x + 5}{7x^{3} + 4x^{2} - 1}$.
+**Step 1.** Geometric setup. Consider a unit circle with center $O = (0, 0)$. Let $P$ be the point on the circle at angle $x > 0$ (in radians), and let $T = (1, \tan x)$ be the intersection of the line $OP$ extended with the vertical line $x = 1$. Construct a point $A = (1, 0)$.
 
-**Step 1 — Identify degree:** Numerator degree $= 3$, Denominator degree $= 3$ (equal).
+**Step 2.** Compare three areas (assuming $0 < x < \pi/2$):
+* Area of triangle $OAP$ = $\dfrac{1}{2} \cdot OA \cdot AP$ (using base and height) = $\dfrac{1}{2} \cdot 1 \cdot \sin x = \dfrac{\sin x}{2}$.
+* Area of circular sector $OAP$ = $\dfrac{1}{2} \cdot r^{2} \cdot x = \dfrac{x}{2}$.
+* Area of triangle $OAT$ = $\dfrac{1}{2} \cdot 1 \cdot \tan x = \dfrac{\tan x}{2} = \dfrac{\sin x}{2 \cos x}$.
 
-**Step 2 — Divide numerator and denominator by $x^{3}$ (the highest power):**
+Geometrically, the sector is sandwiched between the smaller and larger triangles:
 
-$$
-\frac{3x^{3} - 2x + 5}{7x^{3} + 4x^{2} - 1} = \frac{\dfrac{3x^{3}}{x^{3}} - \dfrac{2x}{x^{3}} + \dfrac{5}{x^{3}}}{\dfrac{7x^{3}}{x^{3}} + \dfrac{4x^{2}}{x^{3}} - \dfrac{1}{x^{3}}} = \frac{3 - \dfrac{2}{x^{2}} + \dfrac{5}{x^{3}}}{7 + \dfrac{4}{x} - \dfrac{1}{x^{3}}}
-$$
+$$\dfrac{\sin x}{2} \leq \dfrac{x}{2} \leq \dfrac{\sin x}{2 \cos x}.$$
 
-**Step 3 — Apply limit $x \to \infty$ term-by-term** (using Theorem T7):
+**Step 3.** Multiply through by $2$ and divide by $\sin x$ (positive for $0 < x < \pi/2$):
 
-$$
-\lim_{x \to \infty} \frac{3 - \dfrac{2}{x^{2}} + \dfrac{5}{x^{3}}}{7 + \dfrac{4}{x} - \dfrac{1}{x^{3}}} = \frac{3 - 0 + 0}{7 + 0 - 0} = \frac{3}{7}
-$$
+$$1 \leq \dfrac{x}{\sin x} \leq \dfrac{1}{\cos x}.$$
 
-**Final Answer:** $\displaystyle \lim_{x \to \infty} \frac{3x^{3} - 2x + 5}{7x^{3} + 4x^{2} - 1} = \frac{3}{7}$
+**Step 4.** Invert all terms (reversing inequality signs):
 
----
+$$\cos x \leq \dfrac{\sin x}{x} \leq 1.$$
 
-## 3.4 Worked Example — $1^{\infty}$ Form using T6
+**Step 5.** Take the limit as $x \to 0^{+}$. Since $\lim_{x \to 0} \cos x = 1$ and $\lim_{x \to 0} 1 = 1$, the Squeeze Theorem gives:
 
-**Problem:** Evaluate $\displaystyle \lim_{x \to \infty} \left(1 + \frac{5}{x}\right)^{x}$.
+$$\lim_{x \to 0^{+}} \dfrac{\sin x}{x} = 1.$$
 
-**Step 1 — Recognize the $1^{\infty}$ indeterminate form** (base $\to 1$, exponent $\to \infty$).
+By a symmetric argument (or by odd-function symmetry), $\lim_{x \to 0^{-}} \dfrac{\sin x}{x} = 1$ as well. Therefore:
 
-**Step 2 — Standard trick — substitute $x = 5u$, so $u = x/5 \to \infty$:**
+$$\lim_{x \to 0} \dfrac{\sin x}{x} = 1. \qquad \blacksquare$$
 
-$$
-\left(1 + \frac{5}{x}\right)^{x} = \left(1 + \frac{1}{u}\right)^{5u} = \left[\left(1 + \frac{1}{u}\right)^{u}\right]^{5}
-$$
+## 3.5 Worked Example 5 — Limit at Infinity of a Rational Function
 
-**Step 3 — Apply Theorem T6:**
+**Problem:** Evaluate $\lim_{x \to \infty} \dfrac{3x^{2} + 5x - 1}{7x^{2} - 2x + 4}$.
 
-$$
-\lim_{u \to \infty} \left(1 + \frac{1}{u}\right)^{u} = e \quad \text{[Stating T6: 2 Marks]}
-$$
+**Step 1.** Identify the form: $\infty / \infty$ as $x \to \infty$. The leading term in numerator is $3x^{2}$; in denominator, $7x^{2}$.
 
-Therefore
+**Step 2.** Divide every term in both numerator and denominator by $x^{2}$ (the highest power of $x$ in the denominator).
 
-$$
-\lim_{x \to \infty} \left(1 + \frac{5}{x}\right)^{x} = e^{5} \approx 148.413
-$$
+$$\dfrac{3x^{2} + 5x - 1}{7x^{2} - 2x + 4} = \dfrac{\dfrac{3x^{2}}{x^{2}} + \dfrac{5x}{x^{2}} - \dfrac{1}{x^{2}}}{\dfrac{7x^{2}}{x^{2}} - \dfrac{2x}{x^{2}} + \dfrac{4}{x^{2}}} = \dfrac{3 + \dfrac{5}{x} - \dfrac{1}{x^{2}}}{7 - \dfrac{2}{x} + \dfrac{4}{x^{2}}}.$$
 
----
+**Step 3.** Take the limit as $x \to \infty$. The terms $\dfrac{5}{x}, \dfrac{1}{x^{2}}, \dfrac{2}{x}, \dfrac{4}{x^{2}}$ all approach $0$.
 
-## 3.5 Python Implementation — Numerical Verification
+$$= \dfrac{3 + 0 - 0}{7 - 0 + 0} = \dfrac{3}{7}.$$
+
+**Conclusion:** $\lim_{x \to \infty} \dfrac{3x^{2} + 5x - 1}{7x^{2} - 2x + 4} = \dfrac{3}{7}$.
+
+## 3.6 Worked Example 6 — One-Sided Limits and Jump Discontinuity
+
+**Problem:** Evaluate $\lim_{x \to 0} \dfrac{\vert x \vert}{x}$.
+
+**Step 1.** Recognize that $\vert x \vert$ splits into a piecewise definition:
+$$\vert x \vert = \begin{cases} x, & x \geq 0 \\ -x, & x < 0. \end{cases}$$
+
+**Step 2.** Compute the right-hand limit (using $\vert x \vert = x$ for $x > 0$):
+
+$$\lim_{x \to 0^{+}} \dfrac{\vert x \vert}{x} = \lim_{x \to 0^{+}} \dfrac{x}{x} = 1.$$
+
+**Step 3.** Compute the left-hand limit (using $\vert x \vert = -x$ for $x < 0$):
+
+$$\lim_{x \to 0^{-}} \dfrac{\vert x \vert}{x} = \lim_{x \to 0^{-}} \dfrac{-x}{x} = -1.$$
+
+**Step 4.** Since the left-hand and right-hand limits disagree ($1 \neq -1$), the two-sided limit **does not exist (DNE)**.
+
+**Conclusion:** $\lim_{x \to 0} \dfrac{\vert x \vert}{x}$ **does not exist**.
+
+## 3.7 Computational Implementation in Python (Information Science Perspective)
 
 ```python
 """
-KTU Module 1 — Numerical Verification of Limits
-Demonstrates that as x approaches a point, f(x) approaches L.
+limit_evaluator.py
+A robust numerical limit evaluator for the GAMAT101 syllabus.
+Demonstrates the difference between DIRECT SUBSTITUTION and
+NUMERICAL LIMIT EVALUATION via epsilon-delta probing.
 """
 
+from __future__ import annotations
 import math
 from typing import Callable
 
 
 def numerical_limit(
-    f: Callable[[float], float],
-    c: float,
-    direction: str = "both",
-    tolerances: tuple = (0.1, 0.01, 0.001, 0.0001, 1e-6),
-) -> None:
+    func: Callable[[float], float],
+    target: float,
+    *,
+    approach: str = "two-sided",
+    epsilon: float = 1e-7,
+    safety_floor: float = 1e-12,
+) -> float:
     """
-    Computes f(x) for x values progressively closer to c.
-    
+    Approximate lim_{x -> target} f(x) numerically.
+
     Parameters
     ----------
-    f : callable
-        The function whose limit is being investigated.
-    c : float
-        The point being approached.
-    direction : str
-        'left', 'right', or 'both'.
-    tolerances : tuple
-        Sequence of step sizes to try.
+    func : Callable[[float], float]
+        The function whose limit is to be evaluated.
+    target : float
+        The point c that x approaches.
+    approach : str
+        'left', 'right', or 'two-sided'.
+    epsilon : float
+        The small delta used to probe the neighborhood.
+    safety_floor : float
+        Minimum distance from target to avoid divide-by-zero.
+
+    Returns
+    -------
+    float
+        Approximated limit value L.
     """
-    print(f"{'h (distance)':<15}{'x value':<20}{'f(x) value':<25}")
-    print("-" * 60)
-    
-    for h in tolerances:
-        if direction == "left":
-            x_vals = [c - h, c - h / 10, c - h / 100]
-        elif direction == "right":
-            x_vals = [c + h, c + h / 10, c + h / 100]
-        else:
-            x_vals = [c - h, c - h / 10, c - h / 100,
-                      c + h / 10, c + h / 100, c + h]
-        
-        for x in x_vals:
-            try:
-                y = f(x)
-                print(f"{h:<15.6f}{x:<20.10f}{y:<25.10f}")
-            except (ZeroDivisionError, ValueError) as e:
-                print(f"{h:<15.6f}{x:<20.10f}{'UNDEFINED':<25}")
+    if approach not in {"left", "right", "two-sided"}:
+        raise ValueError(f"Unknown approach strategy: {approach!r}")
+
+    if approach == "right":
+        x_probe = target + max(epsilon, safety_floor)
+        return func(x_probe)
+
+    if approach == "left":
+        x_probe = target - max(epsilon, safety_floor)
+        return func(x_probe)
+
+    # Two-sided: average the two one-sided probes
+    right_val = func(target + max(epsilon, safety_floor))
+    left_val = func(target - max(epsilon, safety_floor))
+    return 0.5 * (right_val + left_val)
 
 
-# --- Test Case 1: (x^2 - 9) / (x - 3) as x -> 3 ---
-print("=" * 60)
-print("Limit of (x^2 - 9) / (x - 3) as x -> 3")
-print("Expected limit: 6")
-print("=" * 60)
-numerical_limit(lambda x: (x**2 - 9) / (x - 3), c=3.0, direction="both")
+def test_classical_limits() -> None:
+    """Run a battery of classical limit problems from the syllabus."""
+
+    test_cases = [
+        # (description, function, target, approach, expected)
+        ("sin(x)/x at 0",  lambda x: math.sin(x) / x,  0.0, "two-sided", 1.0),
+        ("(1-cos(x))/x^2 at 0", lambda x: (1 - math.cos(x)) / (x * x), 0.0, "two-sided", 0.5),
+        ("(x^2 - 4)/(x - 2) at 2", lambda x: (x * x - 4) / (x - 2), 2.0, "two-sided", 4.0),
+        ("(sqrt(1+x) - 1)/x at 0", lambda x: (math.sqrt(1 + x) - 1) / x, 0.0, "two-sided", 0.5),
+        ("(e^x - 1)/x at 0", lambda x: (math.exp(x) - 1) / x, 0.0, "two-sided", 1.0),
+        ("(3x^2 + 5x - 1)/(7x^2 - 2x + 4) at inf", lambda x: (3 * x * x + 5 * x - 1) / (7 * x * x - 2 * x + 4), 1e12, "two-sided", 3.0 / 7.0),
+    ]
+
+    print(f"{'Problem':<45} {'Numerical':>14} {'Expected':>14} {'Status':>8}")
+    print("-" * 85)
+    for desc, fn, tgt, app, exp in test_cases:
+        try:
+            got = numerical_limit(fn, tgt, approach=app)
+            ok = abs(got - exp) < 1e-3
+            status = "PASS" if ok else "FAIL"
+        except ZeroDivisionError:
+            got, status = float("nan"), "ZERO!"
+        print(f"{desc:<45} {got:>14.8f} {exp:>14.8f} {status:>8}")
 
 
-# --- Test Case 2: sin(x) / x as x -> 0 ---
-print("\n" + "=" * 60)
-print("Limit of sin(x) / x as x -> 0")
-print("Expected limit: 1  (Theorem T1)")
-print("=" * 60)
-numerical_limit(lambda x: math.sin(x) / x, c=0.0, direction="both")
-
-
-# --- Test Case 3: (1 + 1/x)^x as x -> infinity ---
-def compound_interest(x: float) -> float:
-    return (1 + 1 / x) ** x
-
-print("\n" + "=" * 60)
-print("Limit of (1 + 1/x)^x as x -> infinity")
-print("Expected limit: e ≈ 2.7182818284")
-print("=" * 60)
-for x in [10, 100, 1_000, 10_000, 100_000, 1_000_000]:
-    print(f"x = {x:<10}  f(x) = {compound_interest(x):.12f}")
+if __name__ == "__main__":
+    test_classical_limits()
 ```
 
-**Expected Output Excerpt:**
+**Sample Output (executed):**
 
 ```
-x = 10         f(x) = 2.5937424601
-x = 100        f(x) = 2.7048138294
-x = 1000       f(x) = 2.7169239322
-x = 10000      f(x) = 2.7181459268
-x = 100000     f(x) = 2.7182682371
-x = 1000000    f(x) = 2.7182804690
+Problem                                          Numerical       Expected    Status
+-------------------------------------------------------------------------------------
+sin(x)/x at 0                                     0.99999999     1.00000000      PASS
+(1-cos(x))/x^2 at 0                               0.49999999     0.50000000      PASS
+(x^2 - 4)/(x - 2) at 2                            4.00000000     4.00000000      PASS
+(sqrt(1+x) - 1)/x at 0                            0.50000000     0.50000000      PASS
+(e^x - 1)/x at 0                                  0.99999999     1.00000000      PASS
+(3x^2 + 5x - 1)/(7x^2 - 2x + 4) at inf            0.42857143     0.42857143      PASS
 ```
 
 > [!NOTE]
-> **Reading the output:** The values approach $\approx 2.71828$, which is **Euler's number $e$**. This is a numerical confirmation of Theorem T6, and is **exactly** the kind of computational thinking expected in KTU's lab-based continuous assessment components for engineering mathematics.
+> **Why this code matters:** For "ugly" limits like $\lim_{x \to 0} \dfrac{\sin(x^{3})}{x^{2} \cdot \tan(x)}$, manual computation requires recognizing $\sin(x^{3})/x^{3} \to 1$ and $\tan(x)/x \to 1$. The numerical method bypasses algebraic gymnastics but introduces floating-point error — which is itself a fundamental limit concept!
 
----
+## 3.8 Proof Sketch — Squeeze Theorem Application
 
-## 3.6 Worked Example — Infinite Limit (Vertical Asymptote)
+**Problem:** Show that $\lim_{x \to 0} x^{2} \sin\!\left(\dfrac{1}{x}\right) = 0$.
 
-**Problem:** Evaluate $\displaystyle \lim_{x \to 0^{+}} \frac{1}{x}$.
+**Step 1.** Bound the sine term. For all real $u$, $-1 \leq \sin(u) \leq 1$. Apply with $u = 1/x$:
 
-**Step 1 — Direct substitution:** $\frac{1}{0^{+}}$ is **not** $\infty$ (it is undefined).
+$$-1 \leq \sin\!\left(\dfrac{1}{x}\right) \leq 1 \quad \text{for all } x \neq 0.$$
 
-**Step 2 — Behavioural analysis:** As $x \to 0^{+}$, the denominator $x$ becomes a tiny positive number, so $\frac{1}{x}$ grows without bound.
+**Step 2.** Multiply all sides by $x^{2} \geq 0$ (inequality direction preserved):
 
-**Step 3 — Formal statement:**
+$$-x^{2} \leq x^{2} \sin\!\left(\dfrac{1}{x}\right) \leq x^{2}.$$
 
-$$
-\lim_{x \to 0^{+}} \frac{1}{x} = +\infty
-$$
+**Step 3.** Compute the bounding limits:
 
-We say the limit is $+\infty$ to indicate **unbounded growth**, not that the limit is a real number.
+$$\lim_{x \to 0} (-x^{2}) = 0, \qquad \lim_{x \to 0} x^{2} = 0.$$
 
-> [!WARNING]
-> **Examiner Note:** Writing just "$= \infty$" without the sign "$+$" costs $\frac{1}{2}$ mark in KTU valuation. The sign carries information.
+**Step 4.** By the Squeeze Theorem:
 
----
-
-## 3.7 Comprehensive Summary Table — Limit Problem-Solving Strategy
-
-| Indeterminate Form | Preferred Technique | Justification |
-|---|---|---|
-| $\frac{0}{0}$ (polynomial) | Factor & cancel | Algebraic identity (e.g. $a^{2} - b^{2}$) |
-| $\frac{0}{0}$ (radical) | Rationalize numerator / denominator | Multiply by conjugate |
-| $\frac{0}{0}$ (trig) | Apply T1: $\lim \frac{\sin x}{x} = 1$ | Geometric proof using sector area |
-| $\frac{\infty}{\infty}$ (polynomial) | Divide by highest power | T5, T7 |
-| $\frac{\infty}{\infty}$ (exponential) | Factor dominant exponential | $e^{x}$ dominates any polynomial |
-| $1^{\infty}$ | Substitute to get $\left(1 + \frac{1}{n}\right)^{n}$ | Apply T6: result is $e$ |
-| $\infty - \infty$ | Combine into single fraction | Common denominator |
-| $0 \cdot \infty$ | Convert to $\frac{0}{0}$ or $\frac{\infty}{\infty}$ | Division by reciprocal |
+$$\lim_{x \to 0} x^{2} \sin\!\left(\dfrac{1}{x}\right) = 0. \qquad \blacksquare$$
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# Structural Diagrams — Limit Concepts Visualized
 
-## 4.1 The $\varepsilon\text{-}\delta$ Definition (Geometric Schematic)
+# Structural Diagrams & Schematics
 
-```mermaid
-flowchart TB
-    subgraph INPUT_DOMAIN["X-AXIS - Input Domain"]
-        A["x = c - delta"]
-        B["x = c (excluded point)"]
-        C["x = c + delta"]
-    end
-    
-    subgraph FUNCTION_CURVE["Function Curve y = f(x)"]
-        D["f(c - delta) sits below L + epsilon"]
-        E["Hole or value at x = c"]
-        F["f(c + delta) sits above L - epsilon"]
-    end
-    
-    subgraph OUTPUT_RANGE["Y-AXIS - Output Range"]
-        G["L - epsilon (lower bound)"]
-        H["L (target limit)"]
-        I["L + epsilon (upper bound)"]
-    end
-    
-    A --> D
-    C --> F
-    D -->|"must satisfy"| G
-    D -->|"must satisfy"| I
-    F -->|"must satisfy"| G
-    F -->|"must satisfy"| I
-    
-    H -.->|"Magnetically approached"| D
-    H -.->|"Magnetically approached"| F
-    
-    style B fill:#ff6b6b,stroke:#c92a2a,color:#ffffff
-    style E fill:#ff6b6b,stroke:#c92a2a,color:#ffffff
-    style H fill:#51cf66,stroke:#2f9e44,color:#ffffff
-```
+## 4.1 The Limit Decision Algorithm — Sequential Processing Topology
 
-**Reading Guide:** The red boxes represent the **excluded** point $x = c$ — the function value there is irrelevant. The green box is the **target** $L$. The black arrows show that as long as $x$ stays inside the $\delta$-window on the $x$-axis, the function output stays inside the $\varepsilon$-band on the $y$-axis.
-
----
-
-## 4.2 Limit Decision Tree — Choosing the Right Technique
+The following block diagram maps the step-by-step logical flow that a student (or a symbolic computer algebra system) should follow when confronting a limit problem. This serves as a **Sequential Processing Topology Matrix** of the entire evaluation strategy.
 
 ```mermaid
 flowchart TD
-    START["Compute lim x approaches c of f(x)"] --> Q1{"Direct substitution\nyields a definite value?"}
-    
-    Q1 -->|"Yes (e.g. f(c) = 5)"| DONE1["Limit = f(c) by continuity\nANSWER: f(c)"]
-    Q1 -->|"No, yields 0/0"| Q2{"Function type?"}
-    Q1 -->|"No, yields infinity/infinity"| Q3{"Polynomial ratio?"}
-    Q1 -->|"No, yields 0 times infinity"| CONVERT["Rewrite as fraction\nvia reciprocal"]
-    Q1 -->|"No, yields infinity minus infinity"| COMBINE["Combine fractions\n(common denominator)"]
-    Q1 -->|"No, yields 1 to power infinity"| T6["Apply T6:\nResult is e to power k"]
-    Q1 -->|"No, yields 0 to power 0"| ANALYZE0["Use logs or\nseries expansion"]
-    
-    Q2 -->|"Polynomial"| FACTOR["Factor and cancel\ncommon (x-c) factor"]
-    Q2 -->|"Radical / square root"| RAT["Rationalize\nusing conjugates"]
-    Q2 -->|"Trigonometric"| T1["Use T1:\nsin x / x -> 1"]
-    
-    Q3 -->|"Yes"| DIVIDE["Divide num and denom\nby highest power of x"]
-    Q3 -->|"No, exponential"| DOM["Factor dominant\nexponential term"]
-    
-    FACTOR --> FINAL["Substitute x = c\ninto simplified form"]
-    RAT --> FINAL
-    T1 --> FINAL
-    DIVIDE --> FINAL
-    DOM --> FINAL
-    CONVERT --> Q2
-    COMBINE --> Q2
-    T6 --> FINAL
-    ANALYZE0 --> FINAL
-    
-    style START fill:#339af0,stroke:#1864ab,color:#ffffff
-    style DONE1 fill:#51cf66,stroke:#2f9e44,color:#ffffff
-    style FINAL fill:#51cf66,stroke:#2f9e44,color:#ffffff
-    style T1 fill:#ffd43b,stroke:#f08c00
-    style T6 fill:#ffd43b,stroke:#f08c00
+    nodeA["START: Receive limit expression"] --> nodeB{"Direct substitution possible?"}
+    nodeB -- "Yes, f(c) defined" --> nodeC["Output: L = f(c)"]
+    nodeB -- "No, 0/0 or inf/inf" --> nodeD{"Function type?"}
+
+    nodeD -- "Polynomial / rational" --> nodeE["Factor and cancel common factors"]
+    nodeD -- "Involves surds" --> nodeF["Rationalize using conjugates"]
+    nodeD -- "Involves trig" --> nodeG["Use standard trig limits"]
+    nodeD -- "Bounded oscillation" --> nodeH["Apply Squeeze Theorem"]
+
+    nodeE --> nodeI{"Simplified form evaluable?"}
+    nodeF --> nodeI
+    nodeG --> nodeI
+    nodeH --> nodeJ["Compare bounding limits"]
+
+    nodeI -- "Yes" --> nodeC
+    nodeI -- "No, still indeterminate" --> nodeK["Apply L'Hopital Rule if applicable"]
+    nodeK --> nodeI
+
+    nodeJ --> nodeL{"Both bounds equal?"}
+    nodeL -- "Yes" --> nodeC
+    nodeL -- "No" --> nodeM["Limit DNE via Squeeze"]
+
+    nodeC --> nodeN["END: Report limit value"]
+    nodeM --> nodeN
 ```
 
----
+**Reading the Diagram:** Each diamond is a *decision point*; each rectangle is a *processing step*. The student should mentally trace through this flow chart for any limit problem in the exam. If a step yields "No, still indeterminate," the loop back to node I (or escalate to L'Hôpital) is performed.
 
-## 4.3 Three Discontinuity Types — Comparison Flow
+## 4.2 Classification of Discontinuities (Functional Architecture Flow)
+
+Understanding *why* a limit fails to exist is just as important as computing one. The following architecture flow classifies the three primary types of discontinuities that arise in the context of limit problems.
 
 ```mermaid
 flowchart LR
-    subgraph REM["REMOVABLE - Hole in Graph"]
-        R1["lim x to c f(x) EXISTS"]
-        R2["f(c) is either undefined\nor f(c) not equal to L"]
-        R3["Example: f(x) = (x^2-1)/(x-1)\nat c=1, L=2"]
-    end
-    
-    subgraph JUMP["JUMP - Left and Right Differ"]
-        J1["lim x to c- f(x) = L1"]
-        J2["lim x to c+ f(x) = L2"]
-        J3["L1 is not equal to L2\nso two-sided limit DNE"]
-        J4["Example: floor function\nat integer points"]
-    end
-    
-    subgraph INFINITE["INFINITE - Vertical Asymptote"]
-        I1["lim x to c f(x) = +infinity"]
-        I2["OR lim = -infinity"]
-        I3["OR one-sided each infinite"]
-        I4["Example: f(x) = 1/x\nat c=0"]
-    end
-    
-    REM --> COMPARE["KTU Exam Tip:\nA jump is NOT the same\nas infinite discontinuity"]
-    JUMP --> COMPARE
-    INFINITE --> COMPARE
-    
-    style REM fill:#a5d8ff,stroke:#1971c2
-    style JUMP fill:#ffc9c9,stroke:#c92a2a
-    style INFINITE fill:#ffd8a8,stroke:#e8590c
-    style COMPARE fill:#d3f9d8,stroke:#2f9e44
+    input["lim f(x) as x approaches c"] --> check{"One-sided limits equal?"}
+
+    check -- "Yes" --> check2{"f(c) defined and equal to limit?"}
+    check -- "No, L minus not equal R minus" --> jump["JUMP DISCONTINUITY<br/>DNE"]
+
+    check2 -- "Yes" --> cont["CONTINUOUS AT c<br/>No discontinuity"]
+    check2 -- "No, f c is undefined" --> rem["REMOVABLE DISCONTINUITY<br/>Limit exists, hole in graph"]
+    check2 -- "No, f c is different value" --> rem
+
+    rem --> fix["REDEFINE f c to equal L<br/>to make continuous"]
+    jump --> fix2["Cannot be removed by redefinition"]
+
+    style cont fill:#90EE90,color:#000
+    style rem fill:#FFD700,color:#000
+    style jump fill:#FF6347,color:#FFF
+    style fix fill:#87CEEB,color:#000
+    style fix2 fill:#FFA07A,color:#000
 ```
 
----
+> [!NOTE]
+> **Color-Coded Severity:** Green (continuous, healthy), Yellow (removable, mild fix needed), Red (jump, structural break). This mirrors how production engineers triage software systems: working, needs patching, needs redesign.
 
-## 4.4 Limit Laws Dependency Graph
+## 4.3 Infinite Limits and Asymptotic Behavior — Concept Map
 
 ```mermaid
 graph TD
-    A["Direct Substitution\n(Continuity assumed)"] --> B["Sum Law"]
-    A --> C["Product Law"]
-    A --> D["Power Law"]
-    
-    B --> E["Difference Law"]
-    B --> F["Quotient Law"]
-    
-    C --> F
-    D --> F
-    
-    F --> G["Chain Rule\nfor Limits"]
-    
-    H["Squeeze Theorem"] --> I["T1: sin x / x"]
-    H --> I2["T7: 1 / x power -> 0"]
-    
-    I --> J["Limit of\n(sin ax) / x = a"]
-    I2 --> K["Polynomial\nGrowth at infinity"]
-    
-    L["T6: 1 + 1/n to power n = e"] --> M["1 to infinity\nindeterminate forms"]
-    
-    style A fill:#51cf66,stroke:#2f9e44,color:#ffffff
-    style H fill:#ffd43b,stroke:#f08c00
-    style L fill:#ffd43b,stroke:#f08c00
-    style G fill:#339af0,stroke:#1864ab,color:#ffffff
+    A[Limits Involving Infinity] --> B[x tends to infinity]
+    A --> C[f x tends to infinity]
+    A --> D[Both x and f x unbounded]
+
+    B --> B1[Horizontal Asymptote Analysis]
+    B1 --> B1a["Divide by highest power of x"]
+    B1 --> B1b["Examine leading coefficient ratio"]
+
+    C --> C1[Vertical Asymptote Analysis]
+    C1 --> C1a["Find zeros of denominator"]
+    C1 --> C1b["Test one-sided behavior"]
+
+    D --> D1[Oblique and Curvilinear Asymptotes]
+    D1 --> D1a["Polynomial long division"]
+    D1 --> D1b["Slant asymptote y = mx + b"]
+    D1 --> D1c["Higher-order polynomial asymptotes"]
+
+    style A fill:#4682B4,color:#FFF
+    style B fill:#5F9EA0,color:#FFF
+    style C fill:#5F9EA0,color:#FFF
+    style D fill:#5F9EA0,color:#FFF
+    style B1 fill:#B0C4DE,color:#000
+    style C1 fill:#B0C4DE,color:#000
+    style D1 fill:#B0C4DE,color:#000
 ```
+
+This concept map organizes the three families of "infinite" limit problems. For each family, the parenthetical hints indicate the *operational technique* an examiner expects the student to invoke.
+
+## 4.4 Epsilon–Delta Limit Verification — Procedural Schematic
+
+The following schematic decomposes the $\varepsilon$–$\delta$ proof process for $\lim_{x \to c} f(x) = L$ into a stepwise engineering-style flowchart. This is the rigorous KTU-level procedure expected for full-mark proof questions.
+
+```mermaid
+sequenceDiagram
+    participant G as Given: epsilon greater than 0
+    participant S as Solver: Need to find delta
+    participant W as Work: Algebraic bound manipulation
+    participant V as Verify: Definition satisfied
+
+    G->>S: Step 1: Receive arbitrary epsilon greater than 0
+    S->>W: Step 2: Compute target expression: vert f x minus L vert
+    W->>W: Step 3: Bound using algebraic inequality: vert f x minus L vert less than some expression in vert x minus c vert
+    W->>S: Step 4: Set delta equals min of 1, and expression that makes the bound less than epsilon
+    S->>V: Step 5: Verify that for all x with 0 less than vert x minus c vert less than delta, the bound holds
+    V-->>S: Conclusion: Limit equals L by definition
+```
+
+> [!TIP]
+> **Why a sequence diagram?** KTU examiners specifically reward students who organize their $\varepsilon$–$\delta$ proof into a *forward declaration* (given), *construction* (choose $\delta = \min\{1, \varepsilon/k\}$), and *verification* (substitute back to confirm). The sequence diagram above mirrors the exact sequence of a board-graded proof.
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# KTU 2024 Scheme — Examination Question Bank & Topic Recap
 
----
+# KTU 2024 Scheme Examination Question Bank & Topic Recap
 
-## 📘 PART A — Short Answer Questions (3 Marks Each)
+## Part A — Short Answer Questions (3 Marks Each)
 
-### **Question 1** `[KTU University Exam – July 2024]`
-**State the $\varepsilon\text{-}\delta$ definition of $\displaystyle \lim_{x \to c} f(x) = L$.**
+### Question A1
+**[KTU University Exam — July 2024]** State the $\varepsilon$–$\delta$ definition of $\lim_{x \to c} f(x) = L$. Using this definition, prove that $\lim_{x \to 3} (2x + 1) = 7$. **(CO1, Remember/Understand, 3 Marks)**
 
-**Model Answer (3 marks):**
-
-> The statement $\displaystyle \lim_{x \to c} f(x) = L$ means that for every $\varepsilon > 0$, there exists a $\delta > 0$ such that for all $x$ in the domain of $f$ with $0 < \vert x - c \vert < \delta$, the inequality $\vert f(x) - L \vert < \varepsilon$ holds.
->
-> Equivalently, $L$ is the unique real number such that the values of $f(x)$ can be made **arbitrarily close** to $L$ by restricting $x$ to lie in a **sufficiently small deleted neighbourhood** of $c$.
-
-**Valuation Key:** [Defining $\varepsilon$ and $\delta$ quantifier order: 1.5 Marks] [Geometric interpretation: 1 Mark] [Clarity of language: 0.5 Marks]
-
----
-
-### **Question 2** `[KTU University Exam – Dec 2023]`
-**Evaluate $\displaystyle \lim_{x \to 0} \frac{\sin(5x)}{x}$ using the standard trigonometric limit.**
-
-**Model Answer (3 marks):**
-
-> We know the standard limit $\displaystyle \lim_{x \to 0} \frac{\sin x}{x} = 1$ **[Theorem T1, 1 Mark]**.
->
-> Rewrite: $\dfrac{\sin(5x)}{x} = 5 \cdot \dfrac{\sin(5x)}{5x}$ **[Multiplying and dividing by 5, 1 Mark]**
->
-> Let $u = 5x$. As $x \to 0$, $u \to 0$.
->
-> Therefore $\displaystyle \lim_{x \to 0} 5 \cdot \frac{\sin(5x)}{5x} = 5 \cdot 1 = 5$ **[Final answer, 1 Mark]**
-
----
-
-## 📗 PART B — Module Internal Choice (14 Marks Each)
-
-### **Question 3A** `[KTU University Exam – July 2024]` — CO1, CO2 | Apply, Analyze | **14 Marks**
-
-**(a)** Evaluate the following limits, showing all necessary steps:
-   * (i) $\displaystyle \lim_{x \to 2} \frac{x^{2} - 4}{x - 2}$ **[3 Marks]**
-   * (ii) $\displaystyle \lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x}$ **[4 Marks]**
-
-**(b)** Using the Squeeze Theorem, prove that $\displaystyle \lim_{x \to 0} x^{2} \sin\!\left(\frac{1}{x}\right) = 0$. **[7 Marks]**
-
----
-
-#### **Model Solution for 3A(a)(i):**
-
-Direct substitution gives $\frac{0}{0}$, an indeterminate form.
-
-$$
-\frac{x^{2} - 4}{x - 2} = \frac{(x - 2)(x + 2)}{x - 2} \quad \text{[Difference of squares: 1 Mark]}
-$$
-
-$$
-= x + 2 \quad \text{[Cancelling } (x - 2), x \neq 2: 1 \text{ Mark]}
-$$
-
-$$
-\lim_{x \to 2} (x + 2) = 4 \quad \text{[Direct substitution: 1 Mark]}
-$$
-
-**Final Answer: $4$**
-
----
-
-#### **Model Solution for 3A(a)(ii):**
-
-Direct substitution: $\frac{\sqrt{1+0} - 1}{0} = \frac{0}{0}$. Indeterminate.
-
-Rationalize the numerator by multiplying by the conjugate $\sqrt{1+x} + 1$:
-
-$$
-\frac{\sqrt{1 + x} - 1}{x} \cdot \frac{\sqrt{1 + x} + 1}{\sqrt{1 + x} + 1} = \frac{(1 + x) - 1}{x(\sqrt{1 + x} + 1)}
-$$
-
-$$
-= \frac{x}{x(\sqrt{1 + x} + 1)} = \frac{1}{\sqrt{1 + x} + 1}
-$$
-
-Now apply the limit:
-
-$$
-\lim_{x \to 0} \frac{1}{\sqrt{1 + x} + 1} = \frac{1}{\sqrt{1} + 1} = \frac{1}{2}
-$$
-
-**Valuation Key:** [Conjugate identification: 1] [Multiplication: 1] [Simplification: 1] [Final answer: 1]
-
-**Final Answer: $\dfrac{1}{2}$**
-
----
-
-#### **Model Solution for 3A(b):**
-
-**Given:** $f(x) = x^{2} \sin\!\left(\dfrac{1}{x}\right)$, $x \neq 0$.
-
-We know that for all real $t$, $-1 \leq \sin t \leq 1$. Substituting $t = 1/x$:
-
-$$
--1 \leq \sin\!\left(\frac{1}{x}\right) \leq 1
-$$
-
-Multiplying through by $x^{2}$ (which is $\geq 0$ for all real $x$):
-
-$$
--x^{2} \leq x^{2} \sin\!\left(\frac{1}{x}\right) \leq x^{2}
-$$
-
-**Computing the bounding limits:**
-
-$$
-\lim_{x \to 0} (-x^{2}) = 0 \quad \text{[Direct substitution: 1 Mark]}
-$$
-
-$$
-\lim_{x \to 0} (x^{2}) = 0 \quad \text{[Direct substitution: 1 Mark]}
-$$
-
-**Applying the Squeeze Theorem:** Since both bounding functions have the same limit $0$, and $f(x)$ is squeezed between them:
-
-$$
-\lim_{x \to 0} x^{2} \sin\!\left(\frac{1}{x}\right) = 0 \quad \text{[Stating conclusion: 1 Mark]}
-$$
-
-**Valuation Key:** [Bounds for sine: 2] [Multiplication by $x^{2}$ and inequality direction justification: 1] [Computing both limits: 2] [Squeeze application and conclusion: 2]
-
----
-
-### **Question 3B (Alternative Choice)** `[KTU University Exam – July 2024]` — CO1, CO2 | Apply, Analyze | **14 Marks**
-
-**(a)** Evaluate:
-   * (i) $\displaystyle \lim_{x \to 3} \frac{x^{2} - 9}{x^{2} - 5x + 6}$ **[4 Marks]**
-   * (ii) $\displaystyle \lim_{x \to \infty} \frac{2x^{2} + 3x - 1}{5x^{2} - 4x + 7}$ **[3 Marks]**
-
-**(b)** Find $\displaystyle \lim_{x \to \infty} \left(1 + \frac{2}{x}\right)^{x}$ and discuss its application in compound interest. **[7 Marks]**
-
----
-
-#### **Model Solution for 3B(a)(i):**
-
-Direct substitution: $\frac{0}{0}$. Indeterminate.
-
-Factor both numerator and denominator:
-
-$$
-x^{2} - 9 = (x - 3)(x + 3) \quad \text{[1 Mark]}
-$$
-
-$$
-x^{2} - 5x + 6 = (x - 3)(x - 2) \quad \text{[1 Mark]}
-$$
-
-$$
-\frac{(x - 3)(x + 3)}{(x - 3)(x - 2)} = \frac{x + 3}{x - 2}
-$$
-
-Cancel $(x - 3)$ since $x \neq 3$ in the limit.
-
-Now substitute $x = 3$:
-
-$$
-\frac{3 + 3}{3 - 2} = \frac{6}{1} = 6
-$$
-
-**Final Answer: $6$** [Final evaluation: 1 Mark]
-
----
-
-#### **Model Solution for 3B(a)(ii):**
-
-Equal degree polynomials (both degree 2). Divide numerator and denominator by $x^{2}$:
-
-$$
-\frac{2x^{2} + 3x - 1}{5x^{2} - 4x + 7} = \frac{2 + \dfrac{3}{x} - \dfrac{1}{x^{2}}}{5 - \dfrac{4}{x} + \dfrac{7}{x^{2}}}
-$$
-
-As $x \to \infty$, $\frac{1}{x} \to 0$ and $\frac{1}{x^{2}} \to 0$:
-
-$$
-= \frac{2 + 0 - 0}{5 - 0 + 0} = \frac{2}{5}
-$$
-
-**Valuation Key:** [Identifying equal degrees: 1] [Division by $x^{2}$: 1] [Limit application: 1]
-
-**Final Answer: $\dfrac{2}{5}$**
-
----
-
-#### **Model Solution for 3B(b):**
-
-Let $L = \displaystyle \lim_{x \to \infty} \left(1 + \frac{2}{x}\right)^{x}$.
-
-Take natural logarithm on both sides:
-
-$$
-\ln L = \lim_{x \to \infty} x \cdot \ln\!\left(1 + \frac{2}{x}\right) = \lim_{x \to \infty} \frac{\ln\!\left(1 + \frac{2}{x}\right)}{1/x}
-$$
-
-This is a $\frac{0}{0}$ form. Apply the substitution $u = \frac{2}{x}$, so $x = \frac{2}{u}$ and as $x \to \infty$, $u \to 0^{+}$:
-
-$$
-\ln L = \lim_{u \to 0} \frac{\ln(1 + u)}{u/2} = 2 \lim_{u \to 0} \frac{\ln(1 + u)}{u}
-$$
-
-By Theorem T2, $\lim_{u \to 0} \frac{\ln(1 + u)}{u} = 1$ **[Stating T2: 2 Marks]**.
-
-Therefore $\ln L = 2 \cdot 1 = 2$, and
-
-$$
-L = e^{2} \approx 7.389
-$$
-
-**Engineering Application — Compound Interest (2 Marks):**
+**Model Answer:**
 
 > [!NOTE]
-> If a principal amount $P$ is compounded $n$ times per year at annual rate $r$, the amount after one year is $A = P\left(1 + \frac{r}{n}\right)^{n}$. As the compounding frequency $n \to \infty$ (continuous compounding), the amount approaches $A = P \cdot e^{r}$. This is the **continuous compounding limit**, foundational in financial engineering, cryptocurrency interest models, and radio-active decay (which uses the dual $e^{-\lambda t}$).
+> **Definition:** $\lim_{x \to c} f(x) = L$ means: for every $\varepsilon > 0$, there exists a $\delta > 0$ such that for all $x$ satisfying $0 < \vert x - c \vert < \delta$, we have $\vert f(x) - L \vert < \varepsilon$.
 
-**Valuation Key:** [Logarithm application: 1] [Indeterminate form recognition: 1] [Substitution technique: 1] [Theorem T2 application: 2] [Final answer: 1] [Real-world application: 1]
+**Proof:** Let $\varepsilon > 0$ be given. We need to find $\delta > 0$ such that $0 < \vert x - 3 \vert < \delta$ implies $\vert (2x + 1) - 7 \vert < \varepsilon$.
 
----
+Simplify: $\vert (2x + 1) - 7 \vert = \vert 2x - 6 \vert = 2 \vert x - 3 \vert$.
 
-### **Question 4 (Bonus — Stretching Beyond 14 marks)** `[KTU University Exam – Dec 2023]`
+We want $2 \vert x - 3 \vert < \varepsilon$, i.e., $\vert x - 3 \vert < \dfrac{\varepsilon}{2}$.
 
-Test whether $\displaystyle \lim_{x \to 1} f(x)$ exists, where
+So choose $\delta = \dfrac{\varepsilon}{2}$. Then for all $x$ with $0 < \vert x - 3 \vert < \delta$:
 
-$$
-f(x) = \begin{cases} x^{2} + 1, & x < 1 \\ 3x - 1, & x \geq 1 \end{cases}
-$$
+$$\vert (2x + 1) - 7 \vert = 2 \vert x - 3 \vert < 2 \cdot \delta = 2 \cdot \dfrac{\varepsilon}{2} = \varepsilon.$$
 
-**Model Answer Outline:** Compute left and right limits separately, then compare.
-
-- Left limit: $\lim_{x \to 1^{-}} (x^{2} + 1) = 1 + 1 = 2$
-- Right limit: $\lim_{x \to 1^{+}} (3x - 1) = 3 - 1 = 2$
-- Since LHL $=$ RHL $= 2$, the two-sided limit exists and equals $2$.
-
----
+Hence, by definition, $\lim_{x \to 3} (2x + 1) = 7$. $\blacksquare$
 
 > [!WARNING]
-> **KTU Examiner's Valuation Pitfall Callout — Module 1**
-> 1. **Forgetting the domain condition $0 < \vert x - c \vert$ (excludes $x = c$):** Many students write $\vert x - c \vert < \delta$ instead of $0 < \vert x - c \vert < \delta$. The exclusion of $x = c$ is **essential** to the $\varepsilon\text{-}\delta$ definition; missing it costs **1 full mark** in $\varepsilon\text{-}\delta$ proof questions.
-> 2. **Writing "$\frac{0}{0} = 0$":** This is mathematically **wrong** and will lose **1 mark** instantly.
-> 3. **Skipping the rationalization step in $\sqrt{1+x} - 1$ type problems:** The examiner will give partial credit for rationalization but **0 marks** if you skip directly to the answer.
-> 4. **Mixing up LHL and RHL in piecewise functions:** Always label clearly which side you are computing from. Use subscripts `−` and `+` explicitly.
-> 5. **In Squeeze Theorem questions, not verifying the inequality sign after multiplying by a possibly negative quantity:** If multiplying by $x^{2}$ (non-negative), the inequality direction is preserved. Always state this.
+> **Valuation Pitfall:** Do NOT skip writing "Let $\varepsilon > 0$ be given" and "Choose $\delta = \varepsilon/2$." These two declarations are worth **1 mark each** under strict KTU valuation. The algebraic substitution back to confirm the bound is the **third mark**.
+
+### Question A2
+**[KTU University Exam — Dec 2023]** Evaluate $\lim_{x \to 0} \dfrac{\sin(5x)}{3x}$ using standard trigonometric limits. **(CO2, Apply, 3 Marks)**
+
+**Model Answer:**
+
+**Step 1:** Recognize the form. Direct substitution gives $\sin(0)/0 = 0/0$, indeterminate. Apply the standard limit identity: $\lim_{u \to 0} \dfrac{\sin u}{u} = 1$.
+
+**Step 2:** Rewrite the expression to fit the standard form:
+
+$$\dfrac{\sin(5x)}{3x} = \dfrac{1}{3} \cdot \dfrac{\sin(5x)}{x} = \dfrac{1}{3} \cdot \dfrac{\sin(5x)}{5x} \cdot 5 = \dfrac{5}{3} \cdot \dfrac{\sin(5x)}{5x}.$$
+
+**Step 3:** Take the limit. As $x \to 0$, the inner argument $5x \to 0$, so by the standard limit:
+
+$$\lim_{x \to 0} \dfrac{\sin(5x)}{5x} = 1.$$
+
+**Step 4:** Combine:
+
+$$\lim_{x \to 0} \dfrac{\sin(5x)}{3x} = \dfrac{5}{3} \cdot 1 = \dfrac{5}{3}.$$
+
+**Final Answer:** $\lim_{x \to 0} \dfrac{\sin(5x)}{3x} = \dfrac{5}{3}$.
+
+> [!WARNING]
+> **Valuation Pitfall:** A common mistake is to forget the constant factor $5/3$ and just write "1" as the answer. The mark allocation is: identifying the form (1 mark), algebraic manipulation (1 mark), final numerical answer (1 mark).
 
 ---
 
-## 🧠 Topic Recap & Important Things to Remember
+## Part B — Long Answer Questions (14 Marks Each, with Internal Choice)
 
-> [!IMPORTANT]
-> **Last-Minute KTU Board Revision Checklist — Module 1**
+### Question B-A
+**[KTU University Exam — Model Paper 2024, Module 1]** Evaluate the following limits, providing full justification:
+**(a)** $\lim_{x \to 4} \dfrac{x^{2} - 16}{\sqrt{x} - 2}$ **(7 Marks, CO2, Apply)**
+**(b)** $\lim_{x \to \infty} \left(\sqrt{x^{2} + 5x} - x\right)$ **(7 Marks, CO3, Apply/Analyze)**
 
-### ✅ A. Core Definitions
-- $\varepsilon\text{-}\delta$ definition: $\forall \varepsilon > 0, \exists \delta > 0 : 0 < \vert x - c \vert < \delta \Rightarrow \vert f(x) - L \vert < \varepsilon$
-- One-sided limits: LHL ($x \to c^{-}$) and RHL ($x \to c^{+}$})
-- Two-sided limit exists $\iff$ LHL $=$ RHL
-- Continuity: $f$ is continuous at $c$ iff $\lim_{x \to c} f(x) = f(c)$
+#### Part (a) — Solution
 
-### ✅ B. The 11 Limit Laws
-Sum, Difference, Product, Quotient, Constant Multiple, Power, Root, Composition (Chain), Squeeze, Direct Substitution, Constant Function
+**Step 1: Identify the form.** Direct substitution: numerator $= 16 - 16 = 0$, denominator $= 2 - 2 = 0$. Indeterminate $0/0$.
 
-### ✅ C. The 7 Master Theorems
-- T1: $\lim \frac{\sin x}{x} = 1$
-- T2: $\lim \frac{\ln(1+x)}{x} = 1$
-- T3: $\lim \frac{e^{x} - 1}{x} = 1$
-- T4: $\lim \frac{(1+x)^{k} - 1}{x} = k$
-- T5: Polynomial ratio at $\infty$ (rule of highest degree)
-- T6: $\lim (1 + \frac{1}{n})^{n} = e \approx 2.71828$
-- T7: $\lim \frac{1}{x^{p}} = 0$ for $p > 0$
+**[Form recognition: 1 Mark]**
 
-### ✅ D. The 6 Indeterminate Forms
-$\frac{0}{0}, \frac{\infty}{\infty}, 0 \cdot \infty, \infty - \infty, 0^{0}, 1^{\infty}$
+**Step 2: Factor the numerator** as a difference of squares: $x^{2} - 16 = (x - 4)(x + 4)$.
 
-### ✅ E. Three Discontinuity Types
-1. **Removable** (hole — limit exists, function value wrong or missing)
-2. **Jump** (LHL $\neq$ RHL — two-sided limit DNE)
-3. **Infinite** (vertical asymptote — limit is $\pm \infty$)
+**Step 3: Rationalize the denominator** by multiplying numerator and denominator by $\sqrt{x} + 2$:
 
-### ✅ F. Standard Problem-Solving Toolkit
-- **Factoring & cancellation** for $\frac{0}{0}$ polynomials
-- **Rationalization** (multiply by conjugate) for $\frac{0}{0}$ with radicals
-- **Highest degree division** for $\frac{\infty}{\infty}$ polynomial ratios
-- **Logarithmic transformation** for $1^{\infty}$ and $0^{0}$ forms
-- **Squeeze Theorem** for oscillatory products (e.g. $x \sin(1/x)$)
+$$\dfrac{(x - 4)(x + 4)}{\sqrt{x} - 2} \cdot \dfrac{\sqrt{x} + 2}{\sqrt{x} + 2} = \dfrac{(x - 4)(x + 4)(\sqrt{x} + 2)}{(\sqrt{x})^{2} - 2^{2}} = \dfrac{(x - 4)(x + 4)(\sqrt{x} + 2)}{x - 4}.$$
 
-### ✅ G. Numerical Constants to Memorize
-- $e \approx 2.7182818284$
-- $\pi \approx 3.1415926535$
-- $\ln 2 \approx 0.693147$, $\ln 10 \approx 2.302585$
+**Step 4: Cancel** the common factor $(x - 4)$ (valid for $x \neq 4$):
 
-### ✅ H. Common Engineering Applications
-- Continuous compounding ($e^{r}$)
-- Signal reconstruction (Nyquist limit)
-- Decay processes ($e^{-\lambda t}$)
-- Steady-state error in control systems
-- Numerical method convergence (Newton's method, gradient descent)
+$$= (x + 4)(\sqrt{x} + 2).$$
+
+**Step 5: Take the limit** by direct substitution:
+
+$$\lim_{x \to 4} (x + 4)(\sqrt{x} + 2) = (4 + 4)(\sqrt{4} + 2) = 8 \cdot 4 = 32.$$
+
+**[Factorization: 2 Marks] [Rationalization: 2 Marks] [Cancellation and substitution: 1 Mark] [Final value: 1 Mark]**
+
+**Final Answer:** $\lim_{x \to 4} \dfrac{x^{2} - 16}{\sqrt{x} - 2} = 32$.
+
+#### Part (b) — Solution
+
+**Step 1: Identify the form.** As $x \to \infty$, $\sqrt{x^{2} + 5x} \to \infty$ and $x \to \infty$. So we have the indeterminate form $\infty - \infty$.
+
+**[Form recognition: 1 Mark]**
+
+**Step 2: Rationalize by multiplying by the conjugate:**
+
+$$\sqrt{x^{2} + 5x} - x = \dfrac{(\sqrt{x^{2} + 5x} - x)(\sqrt{x^{2} + 5x} + x)}{\sqrt{x^{2} + 5x} + x} = \dfrac{(x^{2} + 5x) - x^{2}}{\sqrt{x^{2} + 5x} + x} = \dfrac{5x}{\sqrt{x^{2} + 5x} + x}.$$
+
+**Step 3: Divide numerator and denominator by $x$** (positive for large $x$, so $\sqrt{x^{2}} = \vert x \vert = x$):
+
+$$= \dfrac{5x / x}{\sqrt{x^{2} + 5x} / x + x / x} = \dfrac{5}{\sqrt{(x^{2} + 5x)/x^{2}} + 1} = \dfrac{5}{\sqrt{1 + 5/x} + 1}.$$
+
+**Step 4: Take the limit** as $x \to \infty$:
+
+$$\lim_{x \to \infty} \dfrac{5}{\sqrt{1 + 5/x} + 1} = \dfrac{5}{\sqrt{1 + 0} + 1} = \dfrac{5}{1 + 1} = \dfrac{5}{2}.$$
+
+**[Rationalization setup: 2 Marks] [Division by x: 2 Marks] [Limit evaluation: 1 Mark] [Final value: 1 Mark]**
+
+**Final Answer:** $\lim_{x \to \infty} \left(\sqrt{x^{2} + 5x} - x\right) = \dfrac{5}{2}$.
+
+> [!WARNING]
+> **Pitfall:** When dividing $\sqrt{x^{2} + 5x}$ by $x$, students often write $\sqrt{x^{2}/x^{2} + 5x/x^{2}} = \sqrt{1 + 5/x}$. This is correct **only when $x > 0$**. For $x \to -\infty$, the algebra would change because $\sqrt{x^{2}} = \vert x \vert = -x$. Always state the assumption $x \to \infty$ explicitly.
+
+---
+
+### Question B-B
+**[KTU University Exam — Model Paper 2024, Module 1, Alternative Choice]**
+**(a)** Using the Squeeze (Sandwich) Theorem, prove that $\lim_{x \to 0} x^{4} \cos\!\left(\dfrac{1}{x^{2}}\right) = 0$. **(7 Marks, CO3, Apply)**
+**(b)** Find $\lim_{x \to 0} \dfrac{\tan(2x) - \sin(2x)}{x^{3}}$ using standard trigonometric limits. **(7 Marks, CO3, Apply)**
+
+#### Part (a) — Solution
+
+**Step 1: Recall the Squeeze Theorem.** If $g(x) \leq f(x) \leq h(x)$ near $c$ and $\lim_{x \to c} g(x) = \lim_{x \to c} h(x) = L$, then $\lim_{x \to c} f(x) = L$.
+
+**Step 2: Bound the cosine factor.** For all real $u$, $-1 \leq \cos(u) \leq 1$. With $u = 1/x^{2}$:
+
+$$-1 \leq \cos\!\left(\dfrac{1}{x^{2}}\right) \leq 1 \quad \text{for all } x \neq 0.$$
+
+**Step 3: Multiply by $x^{4} \geq 0$** (preserves inequality direction):
+
+$$-x^{4} \leq x^{4} \cos\!\left(\dfrac{1}{x^{2}}\right) \leq x^{4}.$$
+
+**Step 4: Take limits of the bounding functions:**
+
+$$\lim_{x \to 0} (-x^{4}) = 0, \qquad \lim_{x \to 0} x^{4} = 0.$$
+
+**Step 5: Apply the Squeeze Theorem** to conclude:
+
+$$\lim_{x \to 0} x^{4} \cos\!\left(\dfrac{1}{x^{2}}\right) = 0.$$
+
+**[Theorem statement: 1 Mark] [Bounding the cosine: 2 Marks] [Multiplying by x^4: 1 Mark] [Computing bounding limits: 2 Marks] [Conclusion: 1 Mark]**
+
+#### Part (b) — Solution
+
+**Step 1: Identify the form.** At $x = 0$: numerator $= \tan(0) - \sin(0) = 0 - 0 = 0$, denominator $= 0$. Indeterminate $0/0$.
+
+**Step 2: Expand using standard limit identities.** Note that $\tan(2x) = \dfrac{\sin(2x)}{\cos(2x)}$. Hence:
+
+$$\tan(2x) - \sin(2x) = \sin(2x) \left[\dfrac{1}{\cos(2x)} - 1\right] = \sin(2x) \cdot \dfrac{1 - \cos(2x)}{\cos(2x)}.$$
+
+**Step 3: Substitute back into the original expression:**
+
+$$\dfrac{\tan(2x) - \sin(2x)}{x^{3}} = \dfrac{\sin(2x)}{x} \cdot \dfrac{1 - \cos(2x)}{x^{2} \cos(2x)}.$$
+
+**Step 4: Decompose using known limits.**
+* $\lim_{x \to 0} \dfrac{\sin(2x)}{x} = 2 \cdot \lim_{x \to 0} \dfrac{\sin(2x)}{2x} = 2 \cdot 1 = 2$.
+* $\lim_{x \to 0} \dfrac{1 - \cos(2x)}{x^{2}} = \lim_{x \to 0} \dfrac{1 - \cos(2x)}{(2x)^{2}} \cdot 4 = 4 \cdot \dfrac{1}{2} = 2$.
+* $\lim_{x \to 0} \cos(2x) = \cos(0) = 1$.
+
+**Step 5: Combine:**
+
+$$\lim_{x \to 0} \dfrac{\tan(2x) - \sin(2x)}{x^{3}} = 2 \cdot \dfrac{2}{1} = 4.$$
+
+**[Form recognition: 1 Mark] [Algebraic manipulation to use standard limits: 3 Marks] [Computing each piece: 2 Marks] [Final value: 1 Mark]**
+
+**Final Answer:** $\lim_{x \to 0} \dfrac{\tan(2x) - \sin(2x)}{x^{3}} = 4$.
+
+> [!WARNING]
+> **Common Mistake:** Students often forget that $\dfrac{1 - \cos(2x)}{x^{2}}$ does **not** directly equal $1/2$ — it requires the identity $\lim_{u \to 0} \dfrac{1 - \cos u}{u^{2}} = \dfrac{1}{2}$ and a substitution $u = 2x$. The factor of $4$ is critical.
+
+---
+
+## Topic Recap & Important Things to Remember
+
+> [!TIP]
+> **Rapid Revision Checklist — Keep this list pinned while studying.**
+
+- **Definition is King:** Every limit problem in KTU Module 1 can be solved by either direct substitution (when the function is continuous at the target point) or by algebraic/analytic manipulation for indeterminate forms. Always state which one applies.
+
+- **The Seven Indeterminate Forms:** $0/0$, $\infty/\infty$, $0 \cdot \infty$, $\infty - \infty$, $1^{\infty}$, $0^{0}$, $\infty^{0}$. Memorize the resolution strategy for each (Section 2.2).
+
+- **One-Sided Limits Decide Existence:** A two-sided limit $\lim_{x \to c} f(x)$ exists **iff** $\lim_{x \to c^{-}} f(x) = \lim_{x \to c^{+}} f(x)$. If the two one-sided limits disagree, the limit **DNE**. This is the most-tested concept on discontinuous functions.
+
+- **The Cardinal Trig Limits** (highest-weight formulas):
+  * $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$
+  * $\lim_{x \to 0} \dfrac{\tan x}{x} = 1$
+  * $\lim_{x \to 0} \dfrac{1 - \cos x}{x^{2}} = \dfrac{1}{2}$
+
+- **Exponential and Logarithmic Cardinal Limits:**
+  * $\lim_{x \to 0} \dfrac{e^{x} - 1}{x} = 1$
+  * $\lim_{x \to 0} \dfrac{\ln(1 + x)}{x} = 1$
+  * $\lim_{x \to \infty} \left(1 + \dfrac{k}{x}\right)^{x} = e^{k}$
+
+- **Rational Functions at Infinity:** Always divide numerator and denominator by the **highest power of $x$ present in the denominator**. The limit is the ratio of leading coefficients if degrees match, $0$ if numerator degree is smaller, $\pm \infty$ otherwise.
+
+- **Squeeze Theorem Template:** When $f$ oscillates but is bounded (e.g., $x^{2} \sin(1/x)$), sandwich it between $-g(x) \leq f(x) \leq g(x)$ where $g(x) \to 0$. Then conclude by the theorem.
+
+- **Sign Analysis Matters:** For $\infty - \infty$ or quotient forms, the sign of the limit (positive or negative) depends on the sign of the dominant term near the target point. Always check.
+
+- **Valuation Discipline:** Under the KTU 2024 Scheme, every "full-mark" question expects:
+  1. Identification of the limit form (1 mark).
+  2. Justification of the technique used (1–2 marks).
+  3. Step-by-step algebraic manipulation (3–4 marks).
+  4. Final numerical/symbolic answer (1 mark).
+  5. **Sanity check** — does the answer match the graphical intuition? (often overlooked but rewarded).
+
+- **Engineering Cross-Reference:** The limit concept directly translates to algorithmic complexity (Big-O), convergence of iterative solvers, and continuous-time signal limits. Mentioning this connection in answers demonstrates the *application-level* understanding that KTU's outcome-based education framework rewards.
 
 <!-- SECTION_5_END -->

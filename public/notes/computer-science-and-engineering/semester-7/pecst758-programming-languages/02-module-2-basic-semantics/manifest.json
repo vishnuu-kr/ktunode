@@ -1,0 +1,141 @@
+{
+  "course_name": "PROGRAMMING LANGUAGES",
+  "course_code": "PECST758",
+  "module_number": 2,
+  "module_title": "Basic semantics",
+  "topics_generated": [
+    {
+      "title": "Basic Semantics- Attributes, Binding, and Semantic Functions",
+      "slug": "basic-semantics-attributes-binding-and-semantic-functions",
+      "path": "basic-semantics-attributes-binding-and-semantic-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Declarations, Blocks, and Scope",
+      "slug": "declarations-blocks-and-scope",
+      "path": "declarations-blocks-and-scope/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The Symbol Table",
+      "slug": "the-symbol-table",
+      "path": "the-symbol-table/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Name Resolution and Overloading",
+      "slug": "name-resolution-and-overloading",
+      "path": "name-resolution-and-overloading/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Allocation, Lifetimes, and the Environment",
+      "slug": "allocation-lifetimes-and-the-environment",
+      "path": "allocation-lifetimes-and-the-environment/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Variables and Constants",
+      "slug": "variables-and-constants",
+      "path": "variables-and-constants/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Aliases",
+      "slug": "aliases",
+      "path": "aliases/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dangling References, and Garbage",
+      "slug": "dangling-references-and-garbage",
+      "path": "dangling-references-and-garbage/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case Study: Initial Static Semantic Analysis of TinyAda.",
+      "slug": "case-study-initial-static-semantic-analysis-of-tinyada",
+      "path": "case-study-initial-static-semantic-analysis-of-tinyada/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Types -  Data Types and Type Information",
+      "slug": "data-types-data-types-and-type-information",
+      "path": "data-types-data-types-and-type-information/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simple Types",
+      "slug": "simple-types",
+      "path": "simple-types/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Type Constructors",
+      "slug": "type-constructors",
+      "path": "type-constructors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Type Nomenclature in Sample Languages",
+      "slug": "type-nomenclature-in-sample-languages",
+      "path": "type-nomenclature-in-sample-languages/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Type Equivalence",
+      "slug": "type-equivalence",
+      "path": "type-equivalence/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Type Checking",
+      "slug": "type-checking",
+      "path": "type-checking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Type Conversion",
+      "slug": "type-conversion",
+      "path": "type-conversion/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Polymorphic Type Checking",
+      "slug": "polymorphic-type-checking",
+      "path": "polymorphic-type-checking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Explicit Polymorphism",
+      "slug": "explicit-polymorphism",
+      "path": "explicit-polymorphism/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Case Study: Type Checking in TinyAda.",
+      "slug": "case-study-type-checking-in-tinyada",
+      "path": "case-study-type-checking-in-tinyada/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

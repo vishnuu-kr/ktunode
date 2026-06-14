@@ -1,0 +1,50 @@
+{
+  "course_name": "MACHINE LEARNING LAB",
+  "course_code": "PCCSL508",
+  "module_number": 15,
+  "module_title": "Implement and perform hyperparameter tuning for a neural network on th",
+  "topics_generated": [
+    {
+      "title": "Implement and perform hyperparameter tuning for a neural network on the Fashion MNIST dataset. Experiment with different learning rates, batch sizes, and epochs, and discuss the impact on model performance.",
+      "slug": "implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-the-fashion-mnist-dataset",
+      "path": "implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-the-fashion-mnist-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tasks:",
+      "slug": "tasks",
+      "path": "tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load and preprocess the Fashion MNIST dataset.",
+      "slug": "load-and-preprocess-the-fashion-mnist-dataset",
+      "path": "load-and-preprocess-the-fashion-mnist-dataset/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Experiment with different hyperparameters (learning rate, batch size, epochs).",
+      "slug": "experiment-with-different-hyperparameters-learning-rate-batch-size-epochs",
+      "path": "experiment-with-different-hyperparameters-learning-rate-batch-size-epochs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Train and evaluate the network.",
+      "slug": "train-and-evaluate-the-network",
+      "path": "train-and-evaluate-the-network/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Discuss how hyperparameter choices affect model performance.",
+      "slug": "discuss-how-hyperparameter-choices-affect-model-performance",
+      "path": "discuss-how-hyperparameter-choices-affect-model-performance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

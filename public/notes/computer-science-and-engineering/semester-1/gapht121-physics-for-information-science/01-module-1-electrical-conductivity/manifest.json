@@ -2,19 +2,110 @@
   "course_name": "PHYSICS FOR INFORMATION SCIENCE",
   "course_code": "GAPHT121",
   "module_number": 1,
-  "module_title": "Electrical Conductivity",
+  "module_title": "Electrical conductivity",
   "topics_generated": [
     {
-      "title": "Electrical conductivity of metals",
-      "slug": "electrical-conductivity-of-metals",
-      "path": "electrical-conductivity-of-metals/notes.md",
+      "title": "Electrical conductivity",
+      "slug": "electrical-conductivity",
+      "path": "electrical-conductivity/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Fermi energy and Fermi-Dirac statistics",
-      "slug": "fermi-energy-and-fermi-dirac-statistics",
-      "path": "fermi-energy-and-fermi-dirac-statistics/notes.md",
+      "title": "Classical free electron theory",
+      "slug": "classical-free-electron-theory",
+      "path": "classical-free-electron-theory/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Electrical conductivity in metals",
+      "slug": "electrical-conductivity-in-metals",
+      "path": "electrical-conductivity-in-metals/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Fermi Dirac distribution",
+      "slug": "fermi-dirac-distribution",
+      "path": "fermi-dirac-distribution/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Variation of Fermi function with temperature",
+      "slug": "variation-of-fermi-function-with-temperature",
+      "path": "variation-of-fermi-function-with-temperature/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Fermi Energy",
+      "slug": "fermi-energy",
+      "path": "fermi-energy/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Energy bands",
+      "slug": "energy-bands",
+      "path": "energy-bands/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Classification of materials into conductor, semiconductor and insulator.",
+      "slug": "classification-of-materials-into-conductor-semiconductor-and-insulator",
+      "path": "classification-of-materials-into-conductor-semiconductor-and-insulator/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Superconductivity",
+      "slug": "superconductivity",
+      "path": "superconductivity/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transition temperature",
+      "slug": "transition-temperature",
+      "path": "transition-temperature/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Critical field",
+      "slug": "critical-field",
+      "path": "critical-field/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Meissner effect",
+      "slug": "meissner-effect",
+      "path": "meissner-effect/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Type I and Type II Super conductors.",
+      "slug": "type-i-and-type-ii-super-conductors",
+      "path": "type-i-and-type-ii-super-conductors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "BCS Theory",
+      "slug": "bcs-theory",
+      "path": "bcs-theory/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Applications of superconductors.",
+      "slug": "applications-of-superconductors",
+      "path": "applications-of-superconductors/notes.md",
       "has_mermaid": true,
       "has_math": true
     }

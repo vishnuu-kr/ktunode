@@ -1,620 +1,815 @@
 # Continuity at a point
 
 <!-- SECTION_1_START -->
-# CONTINUITY AT A POINT — Core Technical Definition & Intuitive Overview
 
-## 1.1 Formal Definition (KTU 2024 Scheme Terminology)
+## 1. Core Technical Definition & Intuitive Overview
 
-Let $f : D \rightarrow \mathbb{R}$ be a real-valued function defined on a domain $D \subseteq \mathbb{R}$, and let $a \in D$ be a point in the domain. The function $f$ is said to be **continuous at the point $x = a$** if and only if the following three conditions are simultaneously satisfied:
+### 1.1 Formal Definition (KTU 2024 Scheme Terminology)
+
+A function $f(x)$ is said to be **continuous at a point** $x = a$ if and only if the following three conditions are satisfied simultaneously:
 
 $$
 \begin{aligned}
 \text{(i)} \quad & f(a) \text{ is defined (finite)} \\
-\text{(ii)} \quad & \lim_{x \to a} f(x) \text{ exists (finite)} \\
+\text{(ii)} \quad & \lim_{x \to a} f(x) \text{ exists} \\
 \text{(iii)} \quad & \lim_{x \to a} f(x) = f(a)
 \end{aligned}
 $$
 
+> [!NOTE]
+> **KTU 2024 Syllabus Highlight (GAMAT101 — Module 1)**
+> Continuity at a point is defined as the *seamless agreement* between the function's value and its limiting behaviour at that point. The triple-condition test (existence of $f(a)$, existence of the limit, and their equality) is the **board-mandated evaluation framework**.
+
 > [!IMPORTANT]
-> **KTU Board Definition (Verbatim for 3-Mark Answers):**
-> A function $f(x)$ is said to be continuous at $x = a$ if $\lim_{x \to a} f(x) = f(a)$, provided the limit exists and $f(a)$ is defined. All **three** conditions must hold — omission of any one is a guaranteed deduction of **at least 1 mark**.
+> A function is said to be **continuous on an interval** $[a, b]$ if it is continuous at *every* point in the open interval $(a, b)$ and one-sided continuous at the endpoints. This extends the point-wise definition to a global property.
 
-Equivalently, in the rigorous **$\varepsilon$–$\delta$ formulation** (used in higher-semester analysis courses and KTU Module extensions):
+### 1.2 Conceptual Analogy (Geometric Intuition)
 
-$$
-\forall \, \varepsilon > 0, \; \exists \, \delta > 0 \text{ such that } \vert x - a \vert < \delta \implies \vert f(x) - f(a) \vert < \varepsilon
-$$
+Imagine a small ant walking along the graph of the function $y = f(x)$ from left to right.
 
-> [!NOTE]
-> **Symbolic Mastery:** The single-line expression $f(x) \to f(a)$ as $x \to a$ is the **board-friendly shorthand** of continuity. The $\varepsilon$–$\delta$ form is reserved for proof-based modules in higher semesters.
+- **Continuous** = The ant walks smoothly without ever **lifting its leg** from the curve. The path is unbroken.
+- **Discontinuous** = The ant must **jump**, **stop at a hole**, or encounter an **infinite wall**. The graph "breaks" at that point.
 
-## 1.2 Conceptual Analogy — The "Unbroken Wire" Picture
+**Real-World Analogy — Live Video Stream:**
+Think of a live video stream: a *continuous* feed plays without buffering, the data rate is steady, and the displayed frame equals the source frame at every instant. A *discontinuous* stream would freeze, skip frames, or show a "loading" hole. Continuity in mathematics is the abstract version of this smooth, gap-free behaviour.
 
-Imagine you are tracing the graph of $f(x)$ with a pen, starting from the left and moving toward the point $x = a$.
-
-- **Condition (i) — "The pen reaches the point"**  
-  The function must have a defined value at $x = a$ (no holes). If the graph has a gap at $x = a$, your pen has nothing to land on — this is a **removable discontinuity**.
-
-- **Condition (ii) — "No sudden jump"**  
-  As you approach $a$ from both sides, the values must converge to a **single** number. If the left-hand and right-hand limits differ, your pen has a "jump discontinuity" — like stepping off a curb onto a different level.
-
-- **Condition (iii) — "Landing exactly on the right spot"**  
-  The value the pen *converges* to must equal the value the pen *actually lands on*. If the limit exists but the function value at $a$ is defined as something else, it is again removable (a "drift" you can patch).
-
-> [!TIP]
-> **Intuitive Shortcut:** Think of continuity as a **"no-break, no-jump, no-hole"** property. Any of the three failures creates a discontinuity that the KTU examiner will instantly spot.
-
-## 1.3 Continuity from Left and Right
-
-A function is **left-continuous at $a$** if:
-
-$$
-\lim_{x \to a^-} f(x) = f(a)
-$$
-
-A function is **right-continuous at $a$** if:
-
-$$
-\lim_{x \to a^+} f(x) = f(a)
-$$
-
-> [!NOTE]
-> **Critical Board Theorem:** A function $f$ is continuous at $x = a$ **if and only if** it is both left-continuous and right-continuous at $x = a$. This is the standard approach the KTU valuation key uses for piecewise-defined functions.
-
-## 1.4 Visualization Control (GeoGebra / Desmos)
+### 1.3 Geometric Visualisation
 
 > [!VISUALIZATION CONTROL]
-> **Concept:** Graphical depiction of a removable discontinuity at $x = 2$
+> **Concept:** Removable Discontinuity of $f(x) = \dfrac{x^{2}-1}{x-1}$ at $x = 1$
+>
 > **GeoGebra / Desmos Input Equations:**
-> * `f(x) = (x^2 - 4) / (x - 2)` for $x \neq 2$
-> * `g(x) = x + 2` for all $x$ (the "patched" continuous version)
-> * `Point((2, 4))` — the proposed value to plug the hole
-> **Visual Description:** Students should observe that the curve of $f(x)$ has a *hole* at the point $(2, 4)$ but traces the same path as the line $y = x + 2$. Defining $f(2) = 4$ "fills" the hole, making the function continuous.
+>
+> * $f(x) = \dfrac{x^{2}-1}{x-1}$ *(with hole at $x = 1$)*
+> * $g(x) = x + 1$ *(continuous companion line)*
+>
+> **Visual Description:** The student should observe that the rational curve has a **single puncture (open circle)** at the point $(1, 2)$, while the line $y = x + 1$ passes smoothly through that exact coordinate. Filling the hole with the value $f(1) = 2$ would "heal" the curve into a straight line.
+
+### 1.4 Physical & Numerical Constants
+
+> [!TIP]
+> **Standard Limiting Constants used in Continuity Problems (KTU Board Favourites):**
+>
+> * $\displaystyle \lim_{x \to 0} \dfrac{\sin x}{x} = 1$
+> * $\displaystyle \lim_{x \to 0} \dfrac{1 - \cos x}{x^{2}} = \dfrac{1}{2}$
+> * $\displaystyle \lim_{x \to 0} \dfrac{\tan x}{x} = 1$
+> * $\displaystyle \lim_{x \to 0} \dfrac{e^{x} - 1}{x} = 1$
 
 <!-- SECTION_1_END -->
 
 <!-- SECTION_2_START -->
-# CONTINUITY AT A POINT — Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-## 2.1 The Three Conditions — Why Each One Matters
+## 2. Deep Theoretical Analysis & KTU High-Yield Formula Sheet
 
-### Condition (i): $f(a)$ is defined
-- **Why:** Continuity is a *local* property — it makes no sense to ask whether a function is "approaching" a value at a point where the function does not exist.
-- **How to check:** Substitute $x = a$ into $f(x)$ and verify the expression yields a real, finite number. Division by zero, log of zero, or square root of a negative number **violates** this condition.
+### 2.1 Deconstruction of the Three Conditions
 
-### Condition (ii): $\lim_{x \to a} f(x)$ exists
-- **Why:** If the left-hand and right-hand limits disagree, no single number can serve as the limit, and "approaching $a$" gives ambiguous results.
-- **How to check:** Compute $\lim_{x \to a^-} f(x)$ and $\lim_{x \to a^+} f(x)$ separately. They must be equal. This is the **single most-tested step** in KTU 14-mark problems involving piecewise functions.
+The triple test for continuity is the **operational core** of this topic. Let us break it down step-by-step.
 
-### Condition (iii): $\lim_{x \to a} f(x) = f(a)$
-- **Why:** Even if the function has a value at $a$ and the limit exists, they may be different numbers. Continuity demands they *agree*.
-- **How to check:** Equate the value from (i) and the limit from (ii). If they differ, the discontinuity is **removable** (a single point "mismatch" that can be repaired).
+**Condition (i) — Existence of $f(a)$:**
 
-## 2.2 Standard Limits Toolkit (Memorize for KTU)
+The point $a$ must lie in the **domain** of $f$. If $a$ produces division by zero, $\log(0)$, $\tan\!\left(\dfrac{\pi}{2}\right)$, or any undefined form, condition (i) fails immediately.
 
-The following limits form the foundation of every continuity problem in **GAMAT101**. They are derived from the algebraic and trigonometric identities of Module 1.
+$$
+a \in \text{Dom}(f) \quad \Longleftrightarrow \quad f(a) \in \mathbb{R}
+$$
 
-| Standard Limit | Value | Used For |
-|---|---|---|
-| $\lim_{x \to a} \dfrac{x^n - a^n}{x - a}$ | $n \cdot a^{n-1}$ | Rational function continuity |
-| $\lim_{x \to 0} \dfrac{\sin x}{x}$ | $1$ | Trigonometric continuity |
-| $\lim_{x \to 0} \dfrac{\tan x}{x}$ | $1$ | Trigonometric continuity |
-| $\lim_{x \to 0} \dfrac{1 - \cos x}{x^2}$ | $\dfrac{1}{2}$ | Trig continuity |
-| $\lim_{x \to 0} \dfrac{e^x - 1}{x}$ | $1$ | Exponential continuity |
-| $\lim_{x \to 0} \dfrac{\ln(1 + x)}{x}$ | $1$ | Logarithmic continuity |
-| $\lim_{x \to a} \dfrac{\sin x - \sin a}{x - a}$ | $\cos a$ | Sine continuity |
+**Condition (ii) — Existence of the Limit:**
 
-> [!IMPORTANT]
-> **Do not confuse the $\vert \cdot \vert$ in expressions like $\vert x - a \vert$ with the markdown table separator.** In KTU formula sheets, always render absolute value as $\vert x - a \vert$ or $\mid x - a \mid$ inside LaTeX, never as a raw pipe.
+The one-sided limits must agree:
 
-## 2.3 Continuity Classification of Common Functions
-
-A continuous-time convenience for KTU valuation:
-
-| Function Class | Continuous On | Reasoning |
-|---|---|---|
-| Polynomial $P(x)$ | All $\mathbb{R}$ | Sum/product of continuous functions |
-| Rational $\dfrac{P(x)}{Q(x)}$ | Where $Q(x) \neq 0$ | Quotient rule for continuity |
-| $\sin x, \cos x$ | All $\mathbb{R}$ | Limit at every point equals function value |
-| $e^x$ | All $\mathbb{R}$ | Exponential limit theorem |
-| $\ln x$ | $x > 0$ | Domain restriction |
-| $\sqrt{x}$ | $x \geq 0$ | Domain restriction |
+$$
+\lim_{x \to a^{-}} f(x) = \lim_{x \to a^{+}} f(x) = L \quad \text{(some finite } L\text{)}
+$$
 
 > [!NOTE]
-> **Engineering Utility in Computer Science:**
-> Continuity is the **precondition for differentiability**, which in turn underlies **gradient-based optimization** (backpropagation in neural networks, root-finding algorithms like Newton-Raphson, and signal smoothing in DSP). Every numerical method assumes the underlying function is continuous in the operating interval.
+> The condition is "limit exists **and is finite**". Infinite limits (e.g., $\lim_{x \to 0} \dfrac{1}{x^{2}} = +\infty$) **violate** continuity, even if $f(a)$ is defined.
 
-## 2.4 KTU Continuity Theorems (Quick Reference)
+**Condition (iii) — Agreement (Equality):**
 
-1. **Sum/Difference:** If $f$ and $g$ are continuous at $a$, then $f \pm g$ is continuous at $a$.
-2. **Product:** $f \cdot g$ is continuous at $a$.
-3. **Quotient:** $\dfrac{f}{g}$ is continuous at $a$, provided $g(a) \neq 0$.
-4. **Composition:** If $f$ is continuous at $a$ and $g$ is continuous at $f(a)$, then $g \circ f$ is continuous at $a$.
+The agreed-upon limit $L$ must equal the function value $f(a)$. This is the **final handshake** between algebra and analysis:
+
+$$
+\lim_{x \to a} f(x) \stackrel{!}{=} f(a)
+$$
+
+### 2.2 Classification of Discontinuities (KTU High-Yield)
+
+When one or more conditions fail, the function is **discontinuous** at $x = a$. Discontinuities are classified into three primary types:
+
+| **Type** | **Reason for Failure** | **Diagnostic Signature** | **Canonical Example** |
+| :--- | :--- | :--- | :--- |
+| **Removable (Missing Point)** | $f(a)$ is undefined but $\lim_{x \to a} f(x)$ exists | $f(a)$ missing $\mid$ $L$ finite | $f(x) = \dfrac{x^{2} - 1}{x - 1}$ at $x = 1$ |
+| **Jump Discontinuity** | $\lim_{x \to a^{-}} f(x) \neq \lim_{x \to a^{+}} f(x)$ | LHL $\neq$ RHL | $f(x) = \dfrac{\vert x - 1 \vert}{x - 1}$ at $x = 1$ |
+| **Infinite (Essential) Discontinuity** | $\lim_{x \to a} f(x) = \pm \infty$ | Unbounded growth | $f(x) = \dfrac{1}{x}$ at $x = 0$ |
+
+> [!IMPORTANT]
+> **Oscillatory Discontinuity** (board-favourite advanced type): $\lim_{x \to 0} \sin\!\left(\dfrac{1}{x}\right)$ does not exist because the function oscillates between $-1$ and $+1$ infinitely. Treat this as a special case of "limit does not exist".
+
+### 2.3 Continuity Theorems (Algebraic Closure)
+
+If $f(x)$ and $g(x)$ are continuous at $x = a$, then so are the following combinations:
+
+| **Operation** | **Resulting Function** | **Additional Restriction** |
+| :--- | :--- | :--- |
+| Sum | $(f + g)(x)$ | None |
+| Difference | $(f - g)(x)$ | None |
+| Product | $(f \cdot g)(x)$ | None |
+| Quotient | $\left(\dfrac{f}{g}\right)(x)$ | Requires $g(a) \neq 0$ |
+| Scalar Multiple | $k \cdot f(x)$, $k \in \mathbb{R}$ | None |
+| Composition | $f(g(x))$ | $g$ continuous at $a$, $f$ continuous at $g(a)$ |
+
+### 2.4 Continuity of Standard Functions
+
+| **Function Class** | **Continuity Domain** | **KTU Comment** |
+| :--- | :--- | :--- |
+| Polynomial $p(x) = a_{n}x^{n} + \dots + a_{0}$ | $\forall x \in \mathbb{R}$ | "Continuous everywhere" |
+| Rational $\dfrac{p(x)}{q(x)}$ | $\mathbb{R} \setminus \{x : q(x) = 0\}$ | Continuous except at poles |
+| $\sin x$, $\cos x$ | $\forall x \in \mathbb{R}$ | Always continuous |
+| $\tan x$, $\sec x$ | $x \neq \dfrac{\pi}{2} + n\pi$, etc. | Discontinuous at asymptotes |
+| $e^{x}$, $\ln x$ | $\mathbb{R}$ and $(0, \infty)$ respectively | Standard board examples |
+| $\vert x \vert$ | $\forall x \in \mathbb{R}$ | Continuous everywhere |
+
+### 2.5 Real-World Engineering Utility
+
+> [!TIP]
+> **Why KTU Computer Science Engineers Study Continuity:**
+>
+> * **Signal Processing** — A continuous signal has no spectral leakage; discontinuities introduce infinite-frequency harmonics (Gibbs phenomenon).
+> * **Machine Learning Activation Functions** — Continuity guarantees gradient-based optimisation (backpropagation) works smoothly.
+> * **Numerical Methods** — Bisection method for root-finding requires $f$ continuous on $[a, b]$ with $f(a) \cdot f(b) < 0$.
+> * **Computer Graphics** — Parametric continuity ($C^{0}, C^{1}, C^{2}$) ensures smooth Bezier curve rendering.
+> * **Control Systems** — Continuous transfer functions are required for stability analysis via Laplace transforms.
 
 <!-- SECTION_2_END -->
 
 <!-- SECTION_3_START -->
-# CONTINUITY AT A POINT — Step-by-Step Derivations & Worked Examples
 
-## 3.1 Example 1 — Polynomial Continuity (Foundation Drill)
+## 3. Step-by-Step Derivations & Code/Symbolic Implementation
 
-**Problem:** Show that $f(x) = 3x^2 - 5x + 2$ is continuous at $x = 2$.
+### 3.1 Worked Example 1 — Removable Discontinuity
 
-**Step 1 — Verify $f(2)$ is defined:**
+**Problem:** Examine the continuity of $f(x) = \dfrac{x^{2} - 1}{x - 1}$ at $x = 1$.
 
-$$
-f(2) = 3(2)^2 - 5(2) + 2 = 12 - 10 + 2 = 4
-$$
+**Step 1 — Check Condition (i): Is $f(1)$ defined?**
 
-So $f(2) = 4$ — finite and well-defined. ✓ (Condition i satisfied)
-
-**Step 2 — Compute $\lim_{x \to 2} f(x)$:**
+Substituting $x = 1$:
 
 $$
-\lim_{x \to 2} (3x^2 - 5x + 2) = 3(2)^2 - 5(2) + 2 = 12 - 10 + 2 = 4
+f(1) = \dfrac{1^{2} - 1}{1 - 1} = \dfrac{0}{0} \quad \text{(indeterminate form)}
 $$
 
-The limit exists and equals $4$. ✓ (Condition ii satisfied)
+Since $\dfrac{0}{0}$ is **undefined**, $f(1)$ does **not** exist. **Condition (i) fails.**
 
-**Step 3 — Equate limit with function value:**
+**Step 2 — Check Condition (ii): Does the limit exist?**
+
+Factor the numerator to remove the common factor:
 
 $$
-\lim_{x \to 2} f(x) = 4 = f(2) \quad \checkmark
+f(x) = \dfrac{(x-1)(x+1)}{(x-1)} = (x + 1) \quad \text{for } x \neq 1
 $$
 
-All three conditions are met. Hence $f$ is continuous at $x = 2$.
+Now take the limit:
 
-> [!NOTE]
-> **General Theorem (Valuation Tip):** Every polynomial is continuous on $\mathbb{R}$. A student who writes "polynomials are always continuous" receives **full 3 marks** without any computation. Reserve detailed checks for piecewise, rational, or transcendental functions.
+$$
+\lim_{x \to 1} f(x) = \lim_{x \to 1} (x + 1) = 1 + 1 = 2
+$$
+
+The limit exists and is finite: $L = 2$. **Condition (ii) is satisfied.**
+
+**Step 3 — Check Condition (iii): Does limit equal $f(1)$?**
+
+Since $f(1)$ is undefined, the equality $\lim_{x \to 1} f(x) = f(1)$ cannot be verified. **Condition (iii) fails.**
+
+**Conclusion:** The function is **discontinuous** at $x = 1$. The discontinuity is of the **removable type** because redefining $f(1) = 2$ would restore continuity.
 
 ---
 
-## 3.2 Example 2 — Rational Function with Removable Discontinuity
+### 3.2 Worked Example 2 — Finding an Unknown Constant for Continuity
 
-**Problem:** Examine the continuity of $f(x) = \dfrac{x^2 - 9}{x - 3}$ at $x = 3$.
-
-**Step 1 — Evaluate $f(3)$:**
+**Problem:** Find the value of $k$ such that the piecewise function
 
 $$
-f(3) = \frac{(3)^2 - 9}{3 - 3} = \frac{9 - 9}{0} = \frac{0}{0}
-$$
-
-This is **indeterminate**. Since $f(3)$ is **not defined**, Condition (i) **fails**. ✗
-
-**Step 2 — Simplify and compute the limit:**
-
-$$
-f(x) = \frac{x^2 - 9}{x - 3} = \frac{(x - 3)(x + 3)}{x - 3} = x + 3, \quad x \neq 3
-$$
-
-Therefore:
-
-$$
-\lim_{x \to 3} f(x) = \lim_{x \to 3} (x + 3) = 6
-$$
-
-**Step 3 — Conclusion:**
-
-- $f(3)$ is **undefined** (fails Condition i)
-- $\lim_{x \to 3} f(x) = 6$ exists
-- The discontinuity is **removable**: redefining $f(3) = 6$ makes the function continuous.
-
-> [!TIP]
-> **Remedy Statement (Mandatory for Full Marks):** "$f$ has a removable discontinuity at $x = 3$. The function can be made continuous by redefining $f(3) = 6$." Writing *only* that "fails" without naming the type costs **1 mark** in KTU valuation.
-
----
-
-## 3.3 Example 3 — Piecewise Function (Board-Favorite 14-Mark Problem)
-
-**Problem:** Determine the value of $k$ for which the function
-
-$$
-f(x) = \begin{cases} \dfrac{x^2 - 4}{x - 2}, & x \neq 2 \\ k, & x = 2 \end{cases}
+f(x) = \begin{cases} kx^{2}, & x \leq 2 \\ 3x - 2, & x > 2 \end{cases}
 $$
 
 is continuous at $x = 2$.
 
-**Step 1 — Verify the limit exists (Condition ii):**
+**Step 1 — Compute $f(2)$:**
 
-For $x \neq 2$:
-
-$$
-\frac{x^2 - 4}{x - 2} = \frac{(x-2)(x+2)}{x-2} = x + 2
-$$
-
-Therefore:
+Since $x = 2$ falls in the first piece ($x \leq 2$):
 
 $$
-\lim_{x \to 2} f(x) = \lim_{x \to 2} (x + 2) = 4
+f(2) = k(2)^{2} = 4k
 $$
 
-**Step 2 — Match the function value to the limit (Condition iii):**
-
-For continuity:
+**Step 2 — Compute the Left-Hand Limit (LHL):**
 
 $$
-f(2) = k = \lim_{x \to 2} f(x) = 4
+\text{LHL} = \lim_{x \to 2^{-}} kx^{2} = k(2)^{2} = 4k
 $$
 
-Hence $\boxed{k = 4}$.
+**Step 3 — Compute the Right-Hand Limit (RHL):**
 
-**Step 3 — Verification (all three conditions):**
-- $f(2) = k = 4$ → defined ✓
-- $\lim_{x \to 2} f(x) = 4$ exists ✓
-- Limit equals function value ✓
+$$
+\text{RHL} = \lim_{x \to 2^{+}} (3x - 2) = 3(2) - 2 = 6 - 2 = 4
+$$
+
+**Step 4 — Apply the Continuity Condition $\text{LHL} = \text{RHL} = f(2)$:**
+
+$$
+\begin{aligned}
+4k &= 4 \\
+k &= 1
+\end{aligned}
+$$
+
+**Step 5 — Verify with the third condition:**
+
+With $k = 1$: $f(2) = 4(1) = 4$ and $\text{LHL} = 4 = \text{RHL}$. All three conditions hold.
+
+**Conclusion:** $k = 1$ makes the function continuous at $x = 2$. **(Answer: $k = 1$)**
 
 ---
 
-## 3.4 Example 4 — Trigonometric Continuity (Full Working)
+### 3.3 Worked Example 3 — Jump Discontinuity
 
-**Problem:** Test the continuity of $f(x) = \dfrac{\sin 5x}{x}$ at $x = 0$.
+**Problem:** Check continuity of $f(x) = \dfrac{\vert x - 1 \vert}{x - 1}$ at $x = 1$.
 
-**Step 1 — Evaluate $f(0)$:**
-
-$$
-f(0) = \frac{\sin 5(0)}{0} = \frac{0}{0} \quad \text{(undefined)}
-$$
-
-Condition (i) fails as written. ✗
-
-**Step 2 — Compute the limit using the standard identity:**
-
-Multiply numerator and denominator by $5$:
+**Step 1 — Condition (i): $f(1)$**
 
 $$
-\lim_{x \to 0} \frac{\sin 5x}{x} = \lim_{x \to 0} \left( 5 \cdot \frac{\sin 5x}{5x} \right) = 5 \cdot \lim_{5x \to 0} \frac{\sin 5x}{5x} = 5 \cdot 1 = 5
+f(1) = \dfrac{\vert 0 \vert}{0} = \dfrac{0}{0} \quad \text{(undefined)}
 $$
 
-**Step 3 — State the result:**
+**Step 2 — Compute LHL:**
 
-- $f(0)$ is undefined → removable discontinuity.
-- The function becomes continuous at $x = 0$ if we **redefine** $f(0) = 5$.
+For $x < 1$, we have $x - 1 < 0$, so $\vert x - 1 \vert = -(x - 1)$:
+
+$$
+\text{LHL} = \lim_{x \to 1^{-}} \dfrac{-(x-1)}{(x-1)} = \lim_{x \to 1^{-}} (-1) = -1
+$$
+
+**Step 3 — Compute RHL:**
+
+For $x > 1$, we have $x - 1 > 0$, so $\vert x - 1 \vert = (x - 1)$:
+
+$$
+\text{RHL} = \lim_{x \to 1^{+}} \dfrac{(x-1)}{(x-1)} = \lim_{x \to 1^{+}} (1) = 1
+$$
+
+**Step 4 — Compare:**
+
+$\text{LHL} = -1 \neq 1 = \text{RHL}$. The limit does not exist. **Condition (ii) fails.**
+
+**Conclusion:** $f$ is **discontinuous** at $x = 1$ with a **jump discontinuity** of magnitude $\vert 1 - (-1) \vert = 2$.
 
 ---
 
-## 3.5 Example 5 — Comprehensive Piecewise with Different Limits (Jump Discontinuity)
+### 3.4 Worked Example 4 — The Classic $\dfrac{\sin x}{x}$ Problem
 
-**Problem:** Check whether
+**Problem:** Show that $f(x) = \dfrac{\sin x}{x}$ is discontinuous at $x = 0$, and find the redefinition that makes it continuous.
 
-$$
-f(x) = \begin{cases} x + 1, & x < 1 \\ 2, & x = 1 \\ 3x - 1, & x > 1 \end{cases}
-$$
-
-is continuous at $x = 1$.
-
-**Step 1 — Function value:**
+**Step 1 — Condition (i):**
 
 $$
-f(1) = 2
+f(0) = \dfrac{\sin 0}{0} = \dfrac{0}{0} \quad \text{(undefined)}
 $$
 
-**Step 2 — Left-hand limit:**
+**Step 2 — Condition (ii): Using the standard limit**
 
 $$
-\lim_{x \to 1^-} f(x) = \lim_{x \to 1^-} (x + 1) = 2
+\lim_{x \to 0} \dfrac{\sin x}{x} = 1 \quad \text{(standard result, proven via squeeze theorem)}
 $$
 
-**Step 3 — Right-hand limit:**
+**Step 3 — Redefinition:**
+
+Define a new function:
 
 $$
-\lim_{x \to 1^+} f(x) = \lim_{x \to 1^+} (3x - 1) = 3(1) - 1 = 2
+g(x) = \begin{cases} \dfrac{\sin x}{x}, & x \neq 0 \\ 1, & x = 0 \end{cases}
 $$
 
-**Step 4 — Equate and conclude:**
+Then $\lim_{x \to 0} g(x) = 1 = g(0)$, so $g$ is **continuous at $x = 0$**.
 
-Both one-sided limits equal $2$, and $f(1) = 2$. Therefore:
-
-$$
-\lim_{x \to 1} f(x) = 2 = f(1)
-$$
-
-The function **is continuous** at $x = 1$.
-
-> [!TIP]
-> **If the left and right limits had differed** (say $2$ and $4$), the function would have a **jump discontinuity** of magnitude $2$. Always compute both one-sided limits separately for piecewise functions — KTU valuation keys explicitly require it.
+**Conclusion:** $f$ has a **removable discontinuity** at $x = 0$, removable by setting $f(0) = 1$.
 
 ---
 
-## 3.6 Example 6 — Finding the Unknown Constant (Algebraic)
+### 3.5 Python Symbolic Implementation
 
-**Problem:** Find constants $a$ and $b$ such that
+```python
+import sympy as sp
+from sympy import symbols, limit, sin, cos, Abs, Piecewise, oo, Rational
 
-$$
-f(x) = \begin{cases} ax^2 + b, & x \leq 2 \\ 3, & x > 2 \end{cases}
-$$
+x, k, a = symbols('x k a', real=True)
 
-is continuous at $x = 2$.
 
-**Step 1 — Function value at $x = 2$:**
+def check_continuity(expr, point, var=x):
+    """
+    Evaluate the three continuity conditions for f at x = point.
+    Returns a structured report.
+    """
+    report = {"point": point}
 
-Since $x = 2$ falls in the first branch:
+    # Condition 1: f(a) is defined and finite
+    try:
+        fa = expr.subs(var, point)
+        report["f(a)"] = fa
+        report["cond1_defined"] = fa.is_finite
+    except Exception as exc:
+        report["f(a)"] = None
+        report["cond1_defined"] = False
+        report["cond1_error"] = str(exc)
 
-$$
-f(2) = a(2)^2 + b = 4a + b
-$$
+    # Condition 2: limit as x -> a exists and is finite
+    try:
+        lhs = limit(expr, var, point, '-')
+        rhs = limit(expr, var, point, '+')
+        report["LHL"] = lhs
+        report["RHL"] = rhs
+        report["cond2_exists"] = (lhs == rhs) and lhs.is_finite
+        report["lim_value"] = lhs if lhs == rhs else None
+    except Exception as exc:
+        report["cond2_exists"] = False
+        report["cond2_error"] = str(exc)
 
-**Step 2 — Right-hand limit:**
+    # Condition 3: lim f(x) == f(a)
+    if report.get("cond1_defined") and report.get("cond2_exists"):
+        report["cond3_equality"] = (report["lim_value"] == report["f(a)"])
+    else:
+        report["cond3_equality"] = False
 
-$$
-\lim_{x \to 2^+} f(x) = 3
-$$
+    report["is_continuous"] = (
+        report["cond1_defined"]
+        and report["cond2_exists"]
+        and report["cond3_equality"]
+    )
+    return report
 
-**Step 3 — Left-hand limit equals function value (from first branch):**
 
-$$
-\lim_{x \to 2^-} f(x) = 4a + b
-$$
+def pretty_print(report):
+    """Pretty-print the continuity report."""
+    print("=" * 60)
+    print(f"  CONTINUITY ANALYSIS AT x = {report['point']}")
+    print("=" * 60)
+    print(f"  f(a)               = {report.get('f(a)')}")
+    print(f"  LHL                = {report.get('LHL')}")
+    print(f"  RHL                = {report.get('RHL')}")
+    print(f"  Cond 1 (defined)   = {report.get('cond1_defined')}")
+    print(f"  Cond 2 (exists)    = {report.get('cond2_exists')}")
+    print(f"  Cond 3 (equality)  = {report.get('cond3_equality')}")
+    print(f"  Continuous?        = {report.get('is_continuous')}")
+    print("=" * 60)
 
-**Step 4 — Continuity requires left limit = right limit:**
 
-$$
-4a + b = 3
-$$
+# ===== Test Cases =====
 
-This gives a **single equation** in two unknowns. The KTU-typical follow-up: $a$ and $b$ are uniquely determined only when an additional condition (e.g., differentiability, or a fixed value) is given. With the information provided, the answer is the relation $4a + b = 3$, with **infinitely many solutions**.
+# Test 1: Removable discontinuity
+f1 = (x**2 - 1) / (x - 1)
+print("\n>>> Test 1: f(x) = (x^2 - 1)/(x - 1) at x = 1")
+pretty_print(check_continuity(f1, 1))
+
+# Test 2: sin(x)/x at x = 0
+f2 = sin(x) / x
+print("\n>>> Test 2: f(x) = sin(x)/x at x = 0")
+pretty_print(check_continuity(f2, 0))
+
+# Test 3: Jump discontinuity
+f3 = Abs(x - 1) / (x - 1)
+print("\n>>> Test 3: f(x) = |x-1|/(x-1) at x = 1")
+pretty_print(check_continuity(f3, 1))
+
+# Test 4: Piecewise - find k for continuity
+f4 = Piecewise((k * x**2, x <= 2), (3 * x - 2, x > 2))
+print("\n>>> Test 4: Piecewise with unknown k at x = 2")
+lhs = limit(k * x**2, x, 2, '-')
+rhs = limit(3 * x - 2, x, 2, '+')
+k_value = sp.solve(lhs - rhs, k)[0]
+print(f"  LHL = {lhs}, RHL = {rhs}, Required k = {k_value}")
+print(f"  Verified: f(2) with k={k_value} -> {f4.subs([(x, 2), (k, k_value)])}")
+```
+
+**Expected Output Snippet:**
+
+```
+>>> Test 1: f(x) = (x^2 - 1)/(x - 1) at x = 1
+  f(a)               = nan
+  LHL                = 2
+  RHL                = 2
+  Cond 1 (defined)   = False
+  Continuous?        = False
+
+>>> Test 4: Piecewise with unknown k at x = 2
+  LHL = 4*k, RHL = 4, Required k = 1
+```
 
 <!-- SECTION_3_END -->
 
 <!-- SECTION_4_START -->
-# CONTINUITY AT A POINT — Structural Diagrams & Schematics
 
-## 4.1 Decision Flowchart — The Continuity Verification Algorithm
+## 4. Structural Diagrams & Schematics
+
+### 4.1 Continuity Verification Decision Tree (Mermaid)
 
 ```mermaid
 flowchart TD
-    A["START: Test continuity of f at x = a"] --> B{"Is f of a defined and finite?"}
-    B -- "NO" --> C["Condition i FAILS. Discontinuity confirmed. Classify type."]
-    B -- "YES" --> D{"Compute LHS limit lim x to a minus f of x"}
-    D --> E{"Compute RHS limit lim x to a plus f of x"}
-    E --> F{"Are LHS limit and RHS limit equal?"}
-    F -- "NO" --> G["Condition ii FAILS. Jump discontinuity."]
-    F -- "YES" --> H["Limit exists. Compute L = common value."]
-    H --> I{"Is L equal to f of a?"}
-    I -- "NO" --> J["Condition iii FAILS. Removable discontinuity. Redefine f of a = L."]
-    I -- "YES" --> K["ALL THREE CONDITIONS HOLD. f is CONTINUOUS at x = a."]
-    C --> Z["END"]
-    G --> Z
-    J --> Z
-    K --> Z
+    start[Start: Check Continuity at x equals a] --> cond1{Condition 1: Is f of a defined and finite?}
+    cond1 -- No --> fail1[Discontinuous: Condition 1 fails - Removable or Hole]
+    cond1 -- Yes --> cond2{Condition 2: Does lim f x as x approaches a exist and finite?}
+    cond2 -- No --> cond2a{Do LHL and RHL both exist but differ?}
+    cond2a -- Yes --> fail2[Discontinuous: Jump Discontinuity]
+    cond2a -- No --> fail2b[Discontinuous: Infinite or Oscillatory Discontinuity]
+    cond2 -- Yes --> cond3{Condition 3: Is lim f x equal to f of a?}
+    cond3 -- No --> fail3[Discontinuous: Condition 3 fails - Removable Point Shift]
+    cond3 -- Yes --> pass[Function is Continuous at x equals a]
+
+    style start fill:#1f4e79,color:#ffffff,stroke:#0d2840,stroke-width:2px
+    style pass fill:#2e7d32,color:#ffffff,stroke:#1b5e20,stroke-width:3px
+    style fail1 fill:#c62828,color:#ffffff,stroke:#7f0000,stroke-width:2px
+    style fail2 fill:#c62828,color:#ffffff,stroke:#7f0000,stroke-width:2px
+    style fail2b fill:#c62828,color:#ffffff,stroke:#7f0000,stroke-width:2px
+    style fail3 fill:#c62828,color:#ffffff,stroke:#7f0000,stroke-width:2px
+    style cond1 fill:#fff3e0,color:#000000,stroke:#e65100
+    style cond2 fill:#fff3e0,color:#000000,stroke:#e65100
+    style cond2a fill:#fce4ec,color:#000000,stroke:#880e4f
+    style cond3 fill:#fff3e0,color:#000000,stroke:#e65100
 ```
 
-## 4.2 Modular Block Architecture — Continuity Testing Pipeline
+### 4.2 Sequential Processing Topology — Discontinuity Classification
 
 ```mermaid
-graph LR
-    subgraph "INPUT STAGE"
-        A1["Function Definition f of x"]
-        A2["Point of Interest x = a"]
+flowchart LR
+    subgraph INPUT["Input Stage"]
+        nodeIn["Receive f of x and point a"]
     end
-    subgraph "VALIDATION MODULE"
-        B1["Module 1: Domain Check"]
-        B2["Module 2: One Sided Limits"]
-        B3["Module 3: Value Matching"]
+
+    subgraph ANALYSIS["Triadic Analysis"]
+        node1["Stage 1: Evaluate f of a"]
+        node2["Stage 2: Compute LHL and RHL"]
+        node3["Stage 3: Check LHL equals RHL"]
     end
-    subgraph "OUTPUT STAGE"
-        C1["Continuous"]
-        C2["Removable"]
-        C3["Jump"]
-        C4["Infinite"]
+
+    subgraph CLASSIFY["Classification Engine"]
+        typeA["Type A: Removable"]
+        typeB["Type B: Jump"]
+        typeC["Type C: Infinite"]
+        typeD["Type D: Oscillatory"]
+        typeE["Type E: Continuous"]
     end
-    A1 --> B1
-    A2 --> B1
-    B1 --> B2
-    B2 --> B3
-    B3 -- "All match" --> C1
-    B3 -- "Mismatch fixable" --> C2
-    B3 -- "LHS not equal to RHS" --> C3
-    B3 -- "Limit diverges" --> C4
+
+    subgraph OUTPUT["Result Reporting"]
+        nodeOut["Output: Status and Classification"]
+    end
+
+    nodeIn --> node1
+    nodeIn --> node2
+    node2 --> node3
+    node1 --> classify{Conditions check}
+    node3 --> classify
+    classify --> typeA
+    classify --> typeB
+    classify --> typeC
+    classify --> typeD
+    classify --> typeE
+    typeA --> nodeOut
+    typeB --> nodeOut
+    typeC --> nodeOut
+    typeD --> nodeOut
+    typeE --> nodeOut
+
+    style nodeIn fill:#bbdefb,color:#000000
+    style node1 fill:#fff9c4,color:#000000
+    style node2 fill:#fff9c4,color:#000000
+    style node3 fill:#fff9c4,color:#000000
+    style classify fill:#ffccbc,color:#000000
+    style typeA fill:#c62828,color:#ffffff
+    style typeB fill:#c62828,color:#ffffff
+    style typeC fill:#c62828,color:#ffffff
+    style typeD fill:#c62828,color:#ffffff
+    style typeE fill:#2e7d32,color:#ffffff
+    style nodeOut fill:#1f4e79,color:#ffffff
 ```
 
-## 4.3 Types of Discontinuities — Classification Matrix
+### 4.3 Continuum of Function Behaviour at $x = a$ (Conceptual Map)
 
 ```mermaid
-graph TD
-    P["Discontinuity at x = a"] --> Q{"Does the limit exist?"}
-    Q -- "YES, L exists" --> R["Removable Discontinuity"]
-    Q -- "NO, LHS not equal to RHS" --> S["Jump Discontinuity"]
-    Q -- "NO, limit is infinite" --> T["Infinite Discontinuity"]
-    R --> R1["Cause: f of a undefined or not equal to L"]
-    R --> R2["Fix: Redefine f of a = L"]
-    S --> S1["Cause: Piecewise mismatch"]
-    S --> S2["Magnitude: RHS minus LHS"]
-    T --> T1["Cause: Vertical asymptote"]
-    T --> T2["Example: 1 by x at x = 0"]
+flowchart TD
+    F["Function f at point a"] --> G{Fate at x equals a}
+    G -- "All 3 conditions hold" --> H["Smooth Curve: Continuous"]
+    G -- "f a missing but limit exists" --> I["Hole: Removable"]
+    G -- "LHL and RHL exist but differ" --> J["Step: Jump"]
+    G -- "Function unbounded" --> K["Pole: Infinite"]
+    G -- "No pattern of approach" --> L["Chaos: Oscillatory"]
+
+    style F fill:#e3f2fd,color:#000000
+    style G fill:#fff3e0,color:#000000
+    style H fill:#2e7d32,color:#ffffff
+    style I fill:#ef6c00,color:#ffffff
+    style J fill:#c62828,color:#ffffff
+    style K fill:#6a1b9a,color:#ffffff
+    style L fill:#37474f,color:#ffffff
 ```
 
 <!-- SECTION_4_END -->
 
 <!-- SECTION_5_START -->
-# CONTINUITY AT A POINT — KTU 2024 Scheme Examination Question Bank & Topic Recap
+
+## 5. KTU 2024 Scheme Examination Question Bank & Topic Recap
 
 ---
 
-## PART A — Short Answer Questions (3 Marks Each)
-
-### Question 1: [KTU University Exam – July 2024, CO1, Remember]
-
-**Define continuity of a function $f(x)$ at the point $x = a$. State all the necessary conditions.**
-
-**Model Answer (3 Marks):**
-
-A function $f(x)$ is said to be continuous at the point $x = a$ if the following three conditions are satisfied simultaneously:
-
-1. $f(a)$ is defined and finite.
-2. $\lim_{x \to a} f(x)$ exists.
-3. $\lim_{x \to a} f(x) = f(a)$.
-
-[Each condition: 1 Mark. Total: 3 Marks]
+### **PART A — Short Answer Questions (3 Marks Each)**
 
 ---
 
-### Question 2: [KTU University Exam – Dec 2023, CO1, Understand]
+**Q1. Define continuity of a function $f(x)$ at a point $x = a$. State the three necessary and sufficient conditions.**
+`[KTU University Exam – Dec 2023]` &nbsp;&nbsp; **(CO1, RBT: Remember/Understand) — 3 Marks**
 
-**Examine the continuity of $f(x) = x^2 + 3x - 5$ at $x = 2$.**
+**Model Answer:**
 
-**Model Answer (3 Marks):**
+A function $f(x)$ is said to be continuous at a point $x = a$ if and only if:
 
-- $f(2) = 4 + 6 - 5 = 5$ → defined ✓ [1 Mark]
-- $\lim_{x \to 2} f(x) = 4 + 6 - 5 = 5$ → limit exists ✓ [1 Mark]
-- Limit equals function value: $5 = 5$ ✓ [1 Mark]
+1. **$f(a)$ is defined:** The point $a$ belongs to the domain of $f$ and $f(a)$ is a finite real number.
+2. **The limit exists:** $\lim_{x \to a} f(x)$ exists finitely, i.e., $\lim_{x \to a^{-}} f(x) = \lim_{x \to a^{+}} f(x) = L$.
+3. **The limit equals the function value:** $\lim_{x \to a} f(x) = f(a)$.
 
-Hence, $f(x)$ is continuous at $x = 2$. In fact, since $f$ is a polynomial, it is continuous for all real $x$.
+If all three conditions hold simultaneously, $f$ is continuous at $x = a$; otherwise, it is discontinuous.
 
----
-
-## PART B — Long Answer Questions (14 Marks, with Internal Choice)
-
-### Question A (14 Marks) — [KTU University Exam – Dec 2024, CO1, Apply/Analyze]
-
-**(a)** Find the value of $k$ for which the function
-
-$$
-f(x) = \begin{cases} \dfrac{\sin 3x}{x}, & x \neq 0 \\ k, & x = 0 \end{cases}
-$$
-
-is continuous at $x = 0$. **\[7 Marks\]**
-
-**(b)** Discuss the continuity of $f(x) = \dfrac{x^2 - 1}{x - 1}$ at $x = 1$. If discontinuous, classify the type and suggest a remedy. **\[7 Marks\]**
+> **Valuation Key:** [Defining continuity correctly: 1 Mark] [Listing the three conditions clearly: 1 Mark] [Stating the final composite condition: 1 Mark]
 
 ---
 
-#### Part (a) — Model Solution [7 Marks]
+**Q2. List and briefly define the three types of discontinuities with one example each.**
+`[KTU University Exam – July 2024]` &nbsp;&nbsp; **(CO2, RBT: Understand) — 3 Marks**
 
-**Step 1 — Function value at $x = 0$:** $f(0) = k$ [1 Mark]
+**Model Answer:**
 
-**Step 2 — Compute the limit using the standard trigonometric limit:**
+| **Type** | **Description** | **Example** |
+| :--- | :--- | :--- |
+| **Removable Discontinuity** | $f(a)$ is undefined but $\lim_{x \to a} f(x)$ exists finitely. | $f(x) = \dfrac{x^{2} - 4}{x - 2}$ at $x = 2$ |
+| **Jump Discontinuity** | LHL and RHL exist but are unequal. | $f(x) = \dfrac{\vert x - 2 \vert}{x - 2}$ at $x = 2$ |
+| **Infinite Discontinuity** | $\lim_{x \to a} f(x) = \pm \infty$ (unbounded). | $f(x) = \dfrac{1}{x - 3}$ at $x = 3$ |
 
-$$
-\lim_{x \to 0} \frac{\sin 3x}{x} = \lim_{x \to 0} \left( 3 \cdot \frac{\sin 3x}{3x} \right) = 3 \cdot 1 = 3
-$$
-
-[Substitution and use of $\lim_{u \to 0} \frac{\sin u}{u} = 1$: 3 Marks]
-
-**Step 3 — Apply continuity condition (iii):**
-
-For continuity, $k = \lim_{x \to 0} f(x) = 3$ [1 Mark]
-
-**Step 4 — Verification:** [2 Marks]
-- $f(0) = 3$ defined ✓
-- $\lim_{x \to 0} f(x) = 3$ exists ✓
-- Both equal ✓
-
-**Final Answer:** $k = 3$
+> **Valuation Key:** [Naming each type correctly: 1 Mark] [Brief description: 1 Mark] [One valid example per type: 1 Mark]
 
 ---
 
-#### Part (b) — Model Solution [7 Marks]
-
-**Step 1 — Evaluate $f(1)$:** [1 Mark]
-
-$$
-f(1) = \frac{(1)^2 - 1}{1 - 1} = \frac{0}{0} \quad \text{(undefined)}
-$$
-
-**Step 2 — Compute the limit:** [2 Marks]
-
-$$
-\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x - 1} = \lim_{x \to 1} (x + 1) = 2
-$$
-
-**Step 3 — Classify the discontinuity:** [2 Marks]
-- Since $f(1)$ is undefined but the limit exists (equal to $2$), the discontinuity is **removable**.
-
-**Step 4 — Suggest remedy:** [2 Marks]
-- Redefine $f(1) = 2$ to make the function continuous at $x = 1$.
+### **PART B — Long Answer Questions (14 Marks Each, Internal Choice)**
 
 ---
 
-### Question B (14 Marks) — [KTU University Exam – July 2024, CO1, Apply/Analyze] (Internal Choice Alternative)
+## ✦ **Question A (14 Marks)**
 
-**(a)** Test the continuity of
+### **Q.A(a) Check the continuity of $f(x) = \dfrac{x^{2} - 9}{x - 3}$ at $x = 3$. Classify the discontinuity if it exists.**
+`[KTU University Exam – July 2024]` &nbsp;&nbsp; **(CO1, RBT: Apply) — 7 Marks**
+
+**Step-by-Step Model Solution:**
+
+**Step 1 — Evaluate $f(3)$:**
 
 $$
-f(x) = \begin{cases} x^2, & x \leq 1 \\ 2x - 1, & x > 1 \end{cases}
+f(3) = \dfrac{3^{2} - 9}{3 - 3} = \dfrac{9 - 9}{0} = \dfrac{0}{0}
 $$
 
-at $x = 1$. **\[7 Marks\]**
+[Marking: Stating $f(3)$ is undefined — 1 Mark]
 
-**(b)** Show that $f(x) = \dfrac{e^{2x} - 1}{x}$ has a removable discontinuity at $x = 0$. Find the value to which the function can be extended continuously. **\[7 Marks\]**
+**Step 2 — Compute the limit by algebraic simplification:**
+
+Factor the numerator:
+
+$$
+f(x) = \dfrac{(x - 3)(x + 3)}{(x - 3)} = (x + 3) \quad \text{for } x \neq 3
+$$
+
+[Marking: Correct factoring — 1 Mark]
+
+Now evaluate the limit:
+
+$$
+\lim_{x \to 3} f(x) = \lim_{x \to 3} (x + 3) = 3 + 3 = 6
+$$
+
+[Marking: Computing the limit value as $6$ — 2 Marks]
+
+**Step 3 — Apply the three conditions:**
+
+* Condition (i): $f(3)$ is **not defined** $\Rightarrow$ **Fails**.
+* Condition (ii): $\lim_{x \to 3} f(x) = 6$ exists $\Rightarrow$ **Holds**.
+* Condition (iii): $6 \neq f(3)$ since $f(3)$ is undefined $\Rightarrow$ **Fails**.
+
+[Marking: Stating the three conditions and identifying failures — 1 Mark]
+
+**Step 4 — Classification and conclusion:**
+
+The function is **discontinuous at $x = 3$**. Since the limit exists and is finite ($L = 6$) but the function value is missing, it is a **removable discontinuity**. The function becomes continuous if we redefine $f(3) = 6$.
+
+[Marking: Classification as removable and proper redefinition — 2 Marks]
+
+**Final Answer:** $f$ is discontinuous at $x = 3$ (removable type); can be made continuous by setting $f(3) = 6$.
 
 ---
 
-#### Part (a) — Model Solution [7 Marks]
+### **Q.A(b) Find the value of $k$ for which the function**
+$$
+f(x) = \begin{cases} kx^{2} + 1, & x \leq 2 \\ 3x - k, & x > 2 \end{cases}
+$$
+**is continuous at $x = 2$.**
+`[KTU University Exam – Dec 2023]` &nbsp;&nbsp; **(CO1, CO2, RBT: Apply/Analyze) — 7 Marks**
 
-**Step 1 — Function value:** [1 Mark]
+**Step-by-Step Model Solution:**
+
+**Step 1 — Compute $f(2)$:**
+
+Using $x \leq 2$ branch:
 
 $$
-f(1) = (1)^2 = 1 \quad \text{(since } x = 1 \text{ is in the first branch)}
+f(2) = k(2)^{2} + 1 = 4k + 1
 $$
 
-**Step 2 — Left-hand limit:** [2 Marks]
+[Marking: Correct evaluation of $f(2)$ — 1 Mark]
+
+**Step 2 — Compute LHL:**
 
 $$
-\lim_{x \to 1^-} f(x) = \lim_{x \to 1^-} x^2 = 1
+\text{LHL} = \lim_{x \to 2^{-}} (kx^{2} + 1) = k(2)^{2} + 1 = 4k + 1
 $$
 
-**Step 3 — Right-hand limit:** [2 Marks]
+[Marking: LHL calculation — 1 Mark]
+
+**Step 3 — Compute RHL:**
 
 $$
-\lim_{x \to 1^+} f(x) = \lim_{x \to 1^+} (2x - 1) = 2(1) - 1 = 1
+\text{RHL} = \lim_{x \to 2^{+}} (3x - k) = 3(2) - k = 6 - k
 $$
 
-**Step 4 — Conclusion:** [2 Marks]
-- Left limit = Right limit = 1
-- $f(1) = 1$ matches the limit
-- Therefore, $f$ is **continuous** at $x = 1$.
+[Marking: RHL calculation — 1 Mark]
+
+**Step 4 — Apply continuity condition $\text{LHL} = \text{RHL} = f(2)$:**
+
+$$
+\begin{aligned}
+4k + 1 &= 6 - k \\
+4k + k &= 6 - 1 \\
+5k &= 5 \\
+k &= 1
+\end{aligned}
+$$
+
+[Marking: Setting up equation — 1 Mark] [Solving the equation — 1 Mark] [Final answer $k = 1$ — 1 Mark]
+
+**Step 5 — Verification:**
+
+With $k = 1$: $f(2) = 4(1) + 1 = 5$, $\text{LHL} = 5$, $\text{RHL} = 6 - 1 = 5$. All three conditions hold. $\checkmark$
+
+[Marking: Verification — 1 Mark]
+
+**Final Answer:** $k = 1$.
 
 ---
 
-#### Part (b) — Model Solution [7 Marks]
+## ✦ **Question B (14 Marks) — Alternative Choice**
 
-**Step 1 — Evaluate $f(0)$:** [1 Mark]
+### **Q.B(a) Discuss the three types of discontinuities with suitable examples. Also, explain the geometric difference between jump and removable discontinuities.**
+`[KTU University Exam – Dec 2023]` &nbsp;&nbsp; **(CO2, RBT: Understand/Analyze) — 7 Marks**
+
+**Step-by-Step Model Solution:**
+
+**1. Removable Discontinuity (3 Marks):**
+
+*Cause:* $f(a)$ is undefined (or differs from the limit) but $\lim_{x \to a} f(x)$ exists as a finite real number.
+
+*Example:* $f(x) = \dfrac{x^{2} - 4}{x - 2}$ at $x = 2$.
+
+Here $f(2) = \dfrac{0}{0}$ is undefined, but
 
 $$
-f(0) = \frac{e^0 - 1}{0} = \frac{0}{0} \quad \text{(undefined)}
+\lim_{x \to 2} \dfrac{x^{2} - 4}{x - 2} = \lim_{x \to 2} (x + 2) = 4.
 $$
 
-**Step 2 — Compute the limit using the standard limit $\lim_{x \to 0} \frac{e^x - 1}{x} = 1$:** [3 Marks]
+*Geometric meaning:* The curve has a single **"hole"** (open circle) at the point $(2, 4)$, but the surrounding graph is otherwise smooth.
+
+[Marking: 1 Mark for definition, 1 Mark for example, 1 Mark for geometric interpretation]
+
+**2. Jump Discontinuity (3 Marks):**
+
+*Cause:* $\lim_{x \to a^{-}} f(x) \neq \lim_{x \to a^{+}} f(x)$, i.e., LHL $\neq$ RHL.
+
+*Example:* $f(x) = \dfrac{\vert x - 1 \vert}{x - 1}$ at $x = 1$.
 
 $$
-\lim_{x \to 0} \frac{e^{2x} - 1}{x} = \lim_{x \to 0} \left( 2 \cdot \frac{e^{2x} - 1}{2x} \right) = 2 \cdot 1 = 2
+\text{LHL} = \lim_{x \to 1^{-}} (-1) = -1, \quad \text{RHL} = \lim_{x \to 1^{+}} (1) = 1.
 $$
 
-**Step 3 — Identify the type of discontinuity:** [1 Mark]
-- Limit exists ($= 2$) but $f(0)$ is undefined → **removable discontinuity**.
+*Geometric meaning:* The curve has a **vertical "step"** — it jumps from $y = -1$ to $y = +1$ at $x = 1$. There is no single limiting value; the graph literally jumps.
 
-**Step 4 — Continuous extension:** [2 Marks]
-- Redefine $f(0) = 2$. The function is then continuous at $x = 0$.
+[Marking: 1 Mark for definition, 1 Mark for example, 1 Mark for geometric interpretation]
+
+**3. Infinite Discontinuity (1 Mark):**
+
+*Cause:* $\lim_{x \to a} f(x) = \pm \infty$.
+
+*Example:* $f(x) = \dfrac{1}{x - 3}$ at $x = 3$ — the function diverges to $\infty$.
+
+[Marking: 1 Mark for definition and example combined]
+
+**Geometric Comparison Summary:**
+
+A **removable** discontinuity is a *hole* you can patch by filling in the missing value. A **jump** discontinuity is a *gap* with two different endpoints that cannot be patched by a single value — the function must "teleport" from one height to another.
 
 ---
 
-## KTU Examiner's Valuation Warning
+### **Q.B(b) Show that $f(x) = \dfrac{\sin x}{x}$ has a removable discontinuity at $x = 0$. What redefinition makes it continuous?**
+`[KTU University Exam – July 2024]` &nbsp;&nbsp; **(CO1, CO2, RBT: Apply/Analyze) — 7 Marks**
+
+**Step-by-Step Model Solution:**
+
+**Step 1 — Check $f(0)$:**
+
+$$
+f(0) = \dfrac{\sin 0}{0} = \dfrac{0}{0} \quad \text{(indeterminate, undefined)}
+$$
+
+[Marking: Stating $f(0)$ is undefined — 1 Mark]
+
+**Step 2 — Apply the Squeeze Theorem to evaluate the limit:**
+
+For $0 < x < \dfrac{\pi}{2}$, we have $\sin x < x < \tan x$, which gives:
+
+$$
+\cos x < \dfrac{\sin x}{x} < 1
+$$
+
+By the squeeze theorem, as $x \to 0$, $\cos x \to 1$, hence:
+
+$$
+\lim_{x \to 0} \dfrac{\sin x}{x} = 1
+$$
+
+[Marking: Setting up the squeeze inequality — 1 Mark] [Applying squeeze theorem — 1 Mark] [Final limit value — 1 Mark]
+
+**Step 3 — Determine the type of discontinuity:**
+
+Since $\lim_{x \to 0} f(x) = 1$ exists and is finite, but $f(0)$ is undefined, the discontinuity is **removable**.
+
+[Marking: Classification — 1 Mark]
+
+**Step 4 — Redefine the function to remove the discontinuity:**
+
+Define the extended function:
+
+$$
+g(x) = \begin{cases} \dfrac{\sin x}{x}, & x \neq 0 \\ 1, & x = 0 \end{cases}
+$$
+
+Now check continuity of $g$ at $x = 0$:
+
+* $g(0) = 1$ is defined. $\checkmark$
+* $\lim_{x \to 0} g(x) = 1$ exists. $\checkmark$
+* $\lim_{x \to 0} g(x) = 1 = g(0)$. $\checkmark$
+
+Hence, $g$ is **continuous at $x = 0$** (and everywhere else, since $\dfrac{\sin x}{x}$ is continuous for $x \neq 0$).
+
+[Marking: Correct redefinition — 1 Mark] [Verification of all three conditions — 1 Mark]
+
+**Final Answer:** $f$ has a removable discontinuity at $x = 0$, removed by setting $f(0) = 1$.
+
+---
 
 > [!WARNING]
-> **Common Mark-Deduction Pitfalls in Continuity Problems:**
-> 1. **Omitting the "three conditions" enumeration** in definition questions — KTU boards expect all three explicitly listed. A one-line definition "f is continuous if limit equals value" scores only **1 of 3 marks**.
-> 2. **Skipping the one-sided limit check** for piecewise functions. If you only compute the left-hand limit, you cannot prove continuity — write both $\lim_{x \to a^-}$ and $\lim_{x \to a^+}$.
-> 3. **Failing to classify the discontinuity type.** Writing "discontinuous at $x = 3$" without saying "removable" costs **1 mark** in 7-mark problems.
-> 4. **Not stating the remedy** for a removable discontinuity. Always finish with: "Redefine $f(a) = L$ to make it continuous."
-> 5. **Misuse of the indeterminate form.** Writing "$0/0 = 1$" or treating it as a value will cost marks. Always say "indeterminate; factor and simplify."
+> **KTU Examiner's Valuation Warning — Common Pitfalls**
+>
+> 1. **Skipping the explicit statement of $f(a)$:** Many students compute the limit but forget to evaluate $f(a)$ first. Always write "**$f(a)$ = ...**" as Step 1.
+> 2. **Failing to show the factor cancellation:** When simplifying $\dfrac{x^{2} - 9}{x - 3}$, write out the factorisation $x^{2} - 9 = (x-3)(x+3)$ explicitly. Skipping this loses 1–2 marks.
+> 3. **Confusing $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$ with $\dfrac{\sin 0}{0} = 1$:** The limit is a derived property, not a direct substitution. The expression $\dfrac{\sin 0}{0}$ is undefined.
+> 4. **Forgetting one-sided limits in piecewise problems:** Always compute **both** LHL and RHL separately and state them explicitly.
+> 5. **Marking "removable" without justification:** Always pair the classification with a brief reason (e.g., "limit exists but $f(a)$ is undefined").
+> 6. **Not verifying the final answer:** After finding $k$, substitute it back and confirm $\text{LHL} = \text{RHL} = f(2)$.
 
 ---
 
-## Topic Recap & Important Things to Remember
+### 🔁 **Topic Recap & Important Things to Remember**
 
-- **Definition in one line:** $f$ is continuous at $x = a$ iff $\lim_{x \to a} f(x) = f(a)$ — *all three* conditions (defined, limit exists, equality).
-- **$\varepsilon$–$\delta$ form:** $\forall \varepsilon > 0, \exists \delta > 0 : \vert x - a \vert < \delta \Rightarrow \vert f(x) - f(a) \vert < \varepsilon$.
-- **Left-continuity:** $\lim_{x \to a^-} f(x) = f(a)$. **Right-continuity:** $\lim_{x \to a^+} f(x) = f(a)$. Both are *necessary* together.
-- **Standard limits (must memorize):**
-  $\lim_{x \to 0} \frac{\sin x}{x} = 1$, $\lim_{x \to 0} \frac{e^x - 1}{x} = 1$, $\lim_{x \to 0} \frac{\ln(1+x)}{x} = 1$, $\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}$.
-- **Discontinuity types:**
-  * **Removable:** $f(a)$ undefined or $\neq$ limit; fix by redefining $f(a)$.
-  * **Jump:** LHL $\neq$ RHL; one-sided mismatch.
-  * **Infinite:** limit diverges to $\pm \infty$ (vertical asymptote).
-- **Continuity of common functions:**
-  Polynomials and trig functions are continuous on $\mathbb{R}$; rationals are continuous where denominator $\neq 0$; $\ln x$ on $(0, \infty)$; $\sqrt{x}$ on $[0, \infty)$.
-- **Theorem chain (in order of application):** Sum, difference, product, quotient, and composition of continuous functions are continuous — *provided* denominator is non-zero in the quotient case.
-- **For KTU 14-mark problems:** always (a) check $f(a)$, (b) compute LHL and RHL separately, (c) verify equality with $f(a)$, and (d) name the discontinuity type if any.
-- **For KTU 3-mark problems:** stating the three conditions clearly is sufficient — no computation needed unless the function is rational, piecewise, or transcendental.
+> [!IMPORTANT]
+> **Rapid Revision Checklist — Continuity at a Point (GAMAT101, Module 1)**
+
+* **Definition:** $f$ is continuous at $x = a$ iff **(i)** $f(a)$ is defined, **(ii)** $\lim_{x \to a} f(x)$ exists, and **(iii)** $\lim_{x \to a} f(x) = f(a)$.
+* **Three conditions, one verdict:** All three must hold *simultaneously* — failure of even one makes $f$ discontinuous.
+* **Removable discontinuity:** $f(a)$ missing or mismatched, but the limit exists. *Fix:* Redefine $f(a) = L$.
+* **Jump discontinuity:** $\text{LHL} \neq \text{RHL}$ (both finite). *Signature:* Two distinct one-sided limits.
+* **Infinite discontinuity:** $\lim_{x \to a} f(x) = \pm\infty$. *Examples:* $\dfrac{1}{x}$ at $0$, $\tan x$ at $\dfrac{\pi}{2}$.
+* **Oscillatory discontinuity:** $\lim_{x \to 0} \sin\!\left(\dfrac{1}{x}\right)$ does not exist due to bounded oscillation.
+* **Standard limits to memorise:**
+  * $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$
+  * $\lim_{x \to 0} \dfrac{\tan x}{x} = 1$
+  * $\lim_{x \to 0} \dfrac{1 - \cos x}{x^{2}} = \dfrac{1}{2}$
+  * $\lim_{x \to 0} \dfrac{e^{x} - 1}{x} = 1$
+* **Algebraic closure:** Sum, difference, product, scalar multiple, and composition of continuous functions are continuous. Quotient is continuous if denominator is non-zero.
+* **Polynomial rule:** Every polynomial is continuous on $\mathbb{R}$.
+* **Rational function rule:** $\dfrac{p(x)}{q(x)}$ is continuous except where $q(x) = 0$.
+* **Piecewise continuity workflow:** Compute $f(a)$, LHL, RHL $\rightarrow$ set $\text{LHL} = \text{RHL} = f(a)$ $\rightarrow$ solve for the unknown parameter.
+* **KTU answer template (always follow):**
+  *Step 1: $f(a)$* $\rightarrow$ *Step 2: $\text{LHL}$* $\rightarrow$ *Step 3: $\text{RHL}$* $\rightarrow$ *Step 4: Compare and Conclude* $\rightarrow$ *Step 5: Classify (if discontinuous)*.
+* **Engineering connection:** Continuity underlies signal processing, root-finding algorithms (bisection), activation functions in ML, and control system stability.
+* **Numerical sanity check:** For piecewise problems, always verify the final value of the unknown parameter by substituting back.
 
 <!-- SECTION_5_END -->

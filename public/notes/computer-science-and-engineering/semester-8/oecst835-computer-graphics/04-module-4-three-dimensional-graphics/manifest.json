@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPUTER GRAPHICS",
+  "course_code": "OECST835",
+  "module_number": 4,
+  "module_title": "Three dimensional graphics",
+  "topics_generated": [
+    {
+      "title": "Three dimensional graphics - Three dimensional viewing pipeline.",
+      "slug": "three-dimensional-graphics-three-dimensional-viewing-pipeline",
+      "path": "three-dimensional-graphics-three-dimensional-viewing-pipeline/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Projections- Parallel and Perspective projections.",
+      "slug": "projections-parallel-and-perspective-projections",
+      "path": "projections-parallel-and-perspective-projections/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Visible surface detection algorithms- Back face detection, Depth buffer algorithm, Scan line algorithm, A buffer algorithm.",
+      "slug": "visible-surface-detection-algorithms-back-face-detection-depth-buffer-algorithm-scan-line-algorithm",
+      "path": "visible-surface-detection-algorithms-back-face-detection-depth-buffer-algorithm-scan-line-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

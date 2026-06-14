@@ -2,33 +2,96 @@
   "course_name": "DISCRETE MATHEMATICS",
   "course_code": "PCCST205",
   "module_number": 2,
-  "module_title": "Mathematical Logic and Proofs",
+  "module_title": "Mathematical logic and proofs",
   "topics_generated": [
     {
-      "title": "Propositional Logic: Propositions, logical connectives, truth tables, tautologies, logical equivalences",
-      "slug": "propositional-logic-propositions-logical-connectives-truth-tables-tautologies-logical-equivalences",
-      "path": "propositional-logic-propositions-logical-connectives-truth-tables-tautologies-logical-equivalences/notes.md",
+      "title": "Mathematical logic and proofs",
+      "slug": "mathematical-logic-and-proofs",
+      "path": "mathematical-logic-and-proofs/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Predicates & Quantifiers: existential and universal quantifiers, binding variables, translating natural language",
-      "slug": "predicates-quantifiers-existential-and-universal-quantifiers-binding-variables-translating-natural-language",
-      "path": "predicates-quantifiers-existential-and-universal-quantifiers-binding-variables-translating-natural-language/notes.md",
+      "title": "Propositional Logic",
+      "slug": "propositional-logic",
+      "path": "propositional-logic/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Rules of Inference: Valid arguments in propositional and predicate logic",
-      "slug": "rules-of-inference-valid-arguments-in-propositional-and-predicate-logic",
-      "path": "rules-of-inference-valid-arguments-in-propositional-and-predicate-logic/notes.md",
+      "title": "Applications of Propositional Logic",
+      "slug": "applications-of-propositional-logic",
+      "path": "applications-of-propositional-logic/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Proof Techniques: Direct proofs, contraposition, contradiction, counterexamples",
-      "slug": "proof-techniques-direct-proofs-contraposition-contradiction-counterexamples",
-      "path": "proof-techniques-direct-proofs-contraposition-contradiction-counterexamples/notes.md",
+      "title": "Propositional Equivalences",
+      "slug": "propositional-equivalences",
+      "path": "propositional-equivalences/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Predicates and Quantifiers",
+      "slug": "predicates-and-quantifiers",
+      "path": "predicates-and-quantifiers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Nested Quantifiers",
+      "slug": "nested-quantifiers",
+      "path": "nested-quantifiers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Rules of Inference",
+      "slug": "rules-of-inference",
+      "path": "rules-of-inference/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Introduction to Proofs",
+      "slug": "introduction-to-proofs",
+      "path": "introduction-to-proofs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Methods of Proving Theorems - Direct proof",
+      "slug": "methods-of-proving-theorems-direct-proof",
+      "path": "methods-of-proving-theorems-direct-proof/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Indirect proof (Proof by Contraposition)",
+      "slug": "indirect-proof-proof-by-contraposition",
+      "path": "indirect-proof-proof-by-contraposition/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Proof by Contradiction",
+      "slug": "proof-by-contradiction",
+      "path": "proof-by-contradiction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Proof by counter examples",
+      "slug": "proof-by-counter-examples",
+      "path": "proof-by-counter-examples/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The Pigeonhole Principle.",
+      "slug": "the-pigeonhole-principle",
+      "path": "the-pigeonhole-principle/notes.md",
       "has_mermaid": true,
       "has_math": true
     }
