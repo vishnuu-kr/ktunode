@@ -35,12 +35,6 @@
             "pyqs": []
           },
           {
-            "id": "ce-2-civil-engineering-drafting-lab-civil-engineering-drafting-lab-01-module-1-introduction-to-civil-engineering-drawing-manual-and-computer-aided-drafting",
-            "title": "Manual and Computer Aided Drafting",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ce-2-civil-engineering-drafting-lab-civil-engineering-drafting-lab-01-module-1-introduction-to-civil-engineering-drawing-plan",
             "title": "Plan",
             "content": "",
@@ -64,12 +58,6 @@
           {
             "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shocks",
             "title": "Demonstrate the precautionary steps adopted in case of Electrical shocks.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-identify-different-types-of-cables-wires-switches-fuses-fuse-carriers-mcb-elcb-and-mccb-familiarise",
-            "title": "Identify different types of cables, wires, switches, fuses, fuse carriers, MCB, ELCB and MCCB, familiarise the ratings.",
             "content": "",
             "pyqs": []
           }
@@ -142,54 +130,12 @@
         ]
       },
       {
-        "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-07-module-7-familiarization-of-rheostats-measurement-of-potential-across-resistance",
-        "title": "Module 7: Familiarization of rheostats measurement of potential across resistance",
-        "topics": [
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-07-module-7-familiarization-of-rheostats-measurement-of-potential-across-resistance-familiarization-of-rheostats-measurement-of-potential-across-resistance-elements-and-introducing",
-            "title": "Familiarization of rheostats, measurement of potential across resistance elements and introducing the concept of relative potential using a DC circuit.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-08-module-8-identify-battery-specifications-using-different-types-of-batterieslead",
         "title": "Module 8: Identify battery specifications using different types of batterieslead",
         "topics": [
           {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-08-module-8-identify-battery-specifications-using-different-types-of-batterieslead-familiarize-different-types-of-earthing-pipe-plate-earthing-mat-schemes-and-ground-enhancing",
-            "title": "Familiarize different types of earthing (Pipe, Plate Earthing, Mat Schemes) and ground enhancing materials (GEM).",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-08-module-8-identify-battery-specifications-using-different-types-of-batterieslead-identify-battery-specifications-using-different-types-of-batteries-lead-acid-li-ion-nicd-etc",
             "title": "Identify battery specifications using different types of batteries.(Lead acid, Li Ion, NiCd etc.)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-09-module-9-familiarizationidentification-of-electronic-components-with-specificati",
-        "title": "Module 9: Familiarizationidentification of electronic components with specificati",
-        "topics": [
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-09-module-9-familiarizationidentification-of-electronic-components-with-specificati-familiarization-identification-of-electronic-components-with-specification-functionality-type-size",
-            "title": "Familiarization/Identification of electronic components with specification (Functionality, type, size, colour coding, package, symbol and cost of -Active, Passive, Electrical, Electronic, Electro-mechanical, Wires, Cables, Connectors, Fuses, Switches, Relays, Crystals, Displays, Fasteners, Heat sink etc.)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-10-module-10-drawing-of-electronic-circuit-diagrams-using-bisieee-symbols-and-inter",
-        "title": "Module 10: Drawing of electronic circuit diagrams using bisieee symbols and inter",
-        "topics": [
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-10-module-10-drawing-of-electronic-circuit-diagrams-using-bisieee-symbols-and-inter-drawing-of-electronic-circuit-diagrams-using-bis-ieee-symbols-and-interpret-data-sheets-of-discrete",
-            "title": "Drawing of electronic circuit diagrams using BIS/IEEE symbols and Interpret data sheets of discrete components and IC’s",
             "content": "",
             "pyqs": []
           }
@@ -204,30 +150,6 @@
             "title": "Familiarization/Application of testing instruments and commonly used tools.",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-11-module-11-familiarizationapplication-of-testing-instruments-and-commonly-used-to-multimeter-function-generator-power-supply-cro-dso",
-            "title": "Multimeter, Function generator, Power supply, CRO, DSO.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-11-module-11-familiarizationapplication-of-testing-instruments-and-commonly-used-to-soldering-iron-desoldering-pump-pliers-cutters-wire-strippers-screw-drivers-tweezers-crimping-tool",
-            "title": "Soldering iron, Desoldering pump, Pliers, Cutters, Wire strippers, Screw drivers, Tweezers, Crimping tool, Hot air soldering and de- soldering station",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-12-module-12-testing-of-electronic-components-using-multimeter",
-        "title": "Module 12: Testing of electronic components using multimeter",
-        "topics": [
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-12-module-12-testing-of-electronic-components-using-multimeter-testing-of-electronic-components-using-multimeter-resistor-capacitor-diode-transistor-and-jfet",
-            "title": "Testing of electronic components using multimeter - Resistor, Capacitor, Diode, Transistor and JFET.",
-            "content": "",
-            "pyqs": []
           }
         ]
       },
@@ -240,12 +162,6 @@
             "title": "Design and fabrication of a single sided PCB for a simple circuit.",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-13-module-13-printed-circuit-boards-pcb-printed-circuit-boards-pcb-types-single-sided-double-sided-pth-processing-methods",
-            "title": "Printed circuit boards (PCB) - Types, Single sided, Double sided, PTH, Processing methods.",
-            "content": "",
-            "pyqs": []
           }
         ]
       },
@@ -253,12 +169,6 @@
         "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-14-module-14-inter",
         "title": "Module 14: Inter",
         "topics": [
-          {
-            "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-14-module-14-inter-bread-board-wrapping-crimping-soldering-types-selection-of-materials-and-safety-precautions",
-            "title": "Bread board, Wrapping, Crimping, Soldering - types - selection of materials and safety precautions. Soldering practice in connectors and general-purpose PCB, Crimping.",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "ce-2-gzesl208-basic-electrical-and-electronics-engineering-workshop-14-module-14-inter-inter-connection-methods-and-soldering-practice",
             "title": "Inter-connection methods and soldering practice.",
@@ -341,86 +251,14 @@
         "title": "Module 1: Generation of alternating voltages",
         "topics": [
           {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-ac-circuits-purely-resistive-inductive-and-capacitive-circuits",
-            "title": "AC circuits : Purely resistive, inductive and capacitive circuits",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-active-reactive-and-apparent-power-in-single-phase-and-three-phase-system-simple-numerical-problems",
-            "title": "active, reactive and apparent power in single phase and three phase system. (Simple numerical problems)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-dc-circuits-resistance-in-series-and-parallel",
-            "title": "DC Circuits : Resistance in Series and Parallel",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-elementary-generator",
             "title": "Elementary Generator",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-generation-of-alternating-voltage",
-            "title": "Generation of Alternating Voltage",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-generation-of-alternating-voltages-faradays-laws-of-electromagnetic-induction",
-            "title": "Generation of alternating voltages : - Faradays laws of Electromagnetic induction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-inductive-and-capacitive-reactance-concept-of-impedance-simple-numerical-problems",
-            "title": "Inductive and capacitive reactance, concept of impedance. (Simple numerical problems)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-ohms-law-and-kirchhoff-s-laws",
-            "title": "Ohms Law and Kirchhoff’s laws",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-power-in-ac-circuits-power-factor",
-            "title": "Power in AC circuits – Power factor",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-representation-of-ac-voltage-and-currents",
             "title": "Representation of ac voltage and currents",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-sinusoidal-waveforms-frequency-period-average-rms-values-and-form-factor-of-waveform-simple",
-            "title": "sinusoidal waveforms: frequency, period average, RMS values and form factor of waveform; (Simple numerical problems)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-star-and-delta-connections-balanced-only-relation-between-line-and-phase-voltages-line-and-phase",
-            "title": "star and  delta connections (balanced only), relation between line and phase voltages, line and phase currents",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-three-phase-ac-systems-representation-of-three-phase-voltages",
-            "title": "Three phase AC systems : Representation of three phase voltages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-01-module-1-generation-of-alternating-voltages-voltage-and-current-divider-rule-simple-numerical-problems",
-            "title": "Voltage and current divider rule (Simple numerical problems)",
             "content": "",
             "pyqs": []
           }
@@ -431,86 +269,8 @@
         "title": "Module 2: Generation of electrical energy conventional sources hydro thermal nucl",
         "topics": [
           {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-ac-power-supply-scheme-single-phase-and-three-phase-system-three-phase-3-wire-and-4-wire-systems",
-            "title": "AC power supply scheme: Single phase and three phase system, Three phase 3 wire and 4 wire systems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-classification-and-different-type-of-dc-and-ac-motors-common-applications-principle-of-traction-and",
-            "title": "Classification and different type of dc and ac motors, common applications: Principle of traction and applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-distribution-system-feeder-distributor-service-mains-types-of-motors-principle-of-operation-block",
-            "title": "Distribution system: Feeder, distributor, service mains Types of Motors – Principle of Operation: Block diagram showing power stages, losses and efficiency (electrical and mechanical and overall efficiency); Simple numerical efficiency",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-earthing-need-for-earthing-types-of-earthing-pipe-earthing-plate",
-            "title": "Earthing: need for earthing, Types of earthing; pipe earthing, plate",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-generation-of-electrical-energy-conventional-sources-hydro-thermal-nuclear-plants-block-diagram",
-            "title": "Generation of electrical energy: Conventional Sources: Hydro, thermal, nuclear plants (Block diagram description)",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-introduction-to-different-types-of-dc-and-ac-motors",
             "title": "Introduction to different types of DC and AC motors.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-introduction-to-non-conventional-energy-sources-solar-wind-small-hydro-plants-pv-system-for",
-            "title": "Introduction to non-conventional energy sources : solar, wind, small hydro plants, PV system for domestic application",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-02-module-2-generation-of-electrical-energy-conventional-sources-hydro-thermal-nucl-transformers-principle-of-operation-step-up-and-step-down-transformers",
-            "title": "Transformers. Principle of operation, step-up and step-down transformers",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "ce-2-gzest204-basic-electrical-electronics-engineering-03-module-3-introduction-to-semiconductor-devices",
-        "title": "Module 3: Introduction to semiconductor devices",
-        "topics": [
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-03-module-3-introduction-to-semiconductor-devices-amplifiers-transistor-as-an-amplifier-block-diagram-of-public",
-            "title": "Amplifiers: - Transistor as an amplifier, Block diagram of Public",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-03-module-3-introduction-to-semiconductor-devices-basic-electronic-circuits-rectifiers-and-power-supplies-block-diagram-description-of-a-dc-power",
-            "title": "Basic electronic circuits: - Rectifiers and power supplies: Block diagram description of a dc power supply, working of a full wave bridge rectifier, capacitor filter (no analysis), working of simple zener voltage regulator",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-03-module-3-introduction-to-semiconductor-devices-bipolar-junction-transistors-pnp-and-npn-structures-principle-of-operation",
-            "title": "Bipolar Junction Transistors: PNP and NPN structures, Principle of operation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-03-module-3-introduction-to-semiconductor-devices-digital-electronics-binary-number-system-boolean-algebra-and-logic-gates-universal-gates",
-            "title": "Digital Electronics: -Binary number system, Boolean algebra and Logic Gates, Universal gates",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-2-gzest204-basic-electrical-electronics-engineering-03-module-3-introduction-to-semiconductor-devices-pn-junction-diode-principle-of-operation-v-i-characteristics",
-            "title": "PN Junction diode: - Principle of operation, V-I characteristics",
             "content": "",
             "pyqs": []
           }

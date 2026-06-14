@@ -1,284 +1,5 @@
 [
   {
-    "id": "cs-2-gamat201-mathematics-for-information-science-2",
-    "code": "GAMAT201-MATHEMATICS-FOR-INFORMATION-SCIENCE-2",
-    "name": "GAMAT201 MATHEMATICS FOR INFORMATION SCIENCE 2",
-    "branchId": "cs",
-    "semester": 2,
-    "modules": [
-      {
-        "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations",
-        "title": "Module 1: Linear systems of equations",
-        "topics": [
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations-diagonalization-of-matrices",
-            "title": "Diagonalization of matrices.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations-eigen-values-and-eigen-vectors-of-matrices",
-            "title": "Eigen values and Eigen vectors of matrices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations-fundamental-theorem-for-linear-systems-homogeneous-and-non-homogeneous-without-proof",
-            "title": "Fundamental theorem for linear systems - homogeneous and non-homogeneous (without proof)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations-linear-systems-of-equations",
-            "title": "Linear systems of equations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations-row-echelon-form-and-rank-of-a-matrix",
-            "title": "Row echelon form and rank of a matrix",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-of-equations-solution-by-gauss-elimination",
-            "title": "Solution by Gauss elimination",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces",
-        "title": "Module 2: Vector spaces",
-        "topics": [
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-basis-for-a-vector-space",
-            "title": "Basis for a vector space",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-change-of-basis-in-rn-transition-matrix-without-proof",
-            "title": "Change of basis in Rn : Transition Matrix (without proof).",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-coordinate-representation-in-rn",
-            "title": "Coordinate representation in Rn",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-examples-as-subspaces-of-rn-and-mmxn",
-            "title": "Examples as subspaces of Rn and Mmxn",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-examples-of-vector-space-rn-and-mmxn-only",
-            "title": "Examples of vector space – Rn and Mmxn only",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-linear-combinations-of-vectors-in-a-vector-space",
-            "title": "Linear combinations of vectors in a vector space",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-linear-dependence-and-independence",
-            "title": "Linear dependence and independence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-spanning-sets",
-            "title": "Spanning sets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-subspaces",
-            "title": "Subspaces",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-the-dimension-of-vector-space",
-            "title": "The dimension of vector space",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-vector-spaces",
-            "title": "Vector Spaces",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector",
-        "title": "Module 3: Vector length and unit vector",
-        "topics": [
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-definitions-of-length-distance-and-angle",
-            "title": "Definitions of length, distance and angle",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-dot-product-and-angle-between-two-vectors",
-            "title": "Dot product and angle between two vectors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-examples-as-rn-and-m2x2",
-            "title": "Examples as Rn and M2x2",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-gram-schmidt-orthonormalization-process-without-proof",
-            "title": "Gram-Schmidt orthonormalization process (without proof)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-inner-product",
-            "title": "Inner product",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-orthogonal-and-orthonormal-basis",
-            "title": "Orthogonal and orthonormal basis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-orthogonal-and-orthonormal-sets",
-            "title": "Orthogonal and orthonormal sets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-orthogonal-projections-in-inner-product-spaces",
-            "title": "Orthogonal projections in inner product spaces",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-projection-onto-a-subspace",
-            "title": "Projection onto a Subspace",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-properties-of-inner-products",
-            "title": "Properties of inner products",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-solving-the-least-square-problems",
-            "title": "Solving the least square problems.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-the-cauchy-schwarz-inequality",
-            "title": "The Cauchy- Schwarz Inequality",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-the-least-squares-problem",
-            "title": "The least squares problem",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-vector-length-and-unit-vector-vector-length-and-unit-vector",
-            "title": "Vector length and unit vector",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations",
-        "title": "Module 4: Linear transformations",
-        "topics": [
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-kernel-of-a-linear-transformation-and-its-basis",
-            "title": "Kernel of a Linear Transformation and its basis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-linear-transformation-given-by-a-matrix",
-            "title": "Linear Transformation given by a matrix",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-linear-transformations",
-            "title": "Linear Transformations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-matrices-for-linear-transformations",
-            "title": "Matrices for Linear Transformations.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-projection-in-r3",
-            "title": "Projection in R3",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-properties-of-linear-transformations",
-            "title": "Properties of linear transformations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-range-of-a-linear-transformation-and-its-basis",
-            "title": "Range of a Linear Transformation and its basis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-rank-and-nullity-of-a-linear-transformation",
-            "title": "Rank and Nullity of a Linear Transformation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-rotation-in-r2",
-            "title": "Rotation in R2",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-sum-of-rank-and-nullity-without-proof",
-            "title": "Sum of Rank and Nullity (without proof)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design",
     "code": "GXEST203-FOUNDATIONS-OF-COMPUTING-FROM-HARDWARE-ESSENTIALS-TO-WEB-DESIGN",
     "name": "GXEST203 FOUNDATIONS OF COMPUTING FROM HARDWARE ESSENTIALS TO WEB DESIGN",
@@ -356,12 +77,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-instruction-format-and-assembly-language-basics-only-fetch-execute-cycle-and-instruction-execution",
-            "title": "Instruction format and assembly language (basics only) Fetch-execute cycle and instruction execution.",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-integer-representation",
             "title": "Integer Representation",
             "content": "",
@@ -380,20 +95,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-basics-of-ip-addresses-dhcp-nat-network-security-desktop-perimeter-dns-vpn-routers-client-server",
-            "title": "Basics of IP addresses, DHCP, NAT, Network Security (Desktop & Perimeter), DNS, VPN, Routers, Client-Server, Internet, WWW, Web servers.",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-client-server-networks",
             "title": "Client/Server networks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-computer-communications-lan-man-wan",
-            "title": "Computer Communications – LAN, MAN, WAN",
             "content": "",
             "pyqs": []
           },
@@ -406,12 +109,6 @@
           {
             "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-peer-to-peer-networks",
             "title": "Peer-to-Peer networks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-shell-scripting-bash",
-            "title": "Shell scripting (bash)",
             "content": "",
             "pyqs": []
           },
@@ -479,26 +176,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-break-continue",
-            "title": "break & continue",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-c-fundamentals-character-set",
-            "title": "C Fundamentals -  Character Set",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-constants",
             "title": "Constants",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-control-statements-if",
-            "title": "Control Statements - if",
             "content": "",
             "pyqs": []
           },
@@ -563,12 +242,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-statements-input-and-output-statements",
-            "title": "Statements - Input and Output statements",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-structure-of-a-c-program",
             "title": "Structure of a C program",
             "content": "",
@@ -611,12 +284,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-arrays-single-dimensional-arrays",
-            "title": "Arrays - Single dimensional arrays",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-bubble-sort",
             "title": "Bubble sort",
             "content": "",
@@ -653,24 +320,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-string-related-library-functions-programs-for-string-matching",
-            "title": "String related library functions – Programs for string matching.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-strings-declaring-a-string-variable",
-            "title": "Strings - Declaring a string variable",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-two-dimensional-arrays-defining-a-two-dimensional-array",
-            "title": "Two-dimensional arrays – Defining a two-dimensional array",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-type-definition",
             "title": "Type Definition",
             "content": "",
@@ -701,12 +350,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-external-and-register",
-            "title": "external and register.",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-function-call",
             "title": "Function call",
             "content": "",
@@ -715,18 +358,6 @@
           {
             "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-function-prototype",
             "title": "Function prototype",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-functions-function-definition",
-            "title": "Functions - Function definition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-macros-defining-and-calling-macros",
-            "title": "Macros - Defining and calling macros",
             "content": "",
             "pyqs": []
           },
@@ -751,24 +382,6 @@
           {
             "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-recursion",
             "title": "Recursion",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-static",
-            "title": "static",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-storage-class-storage-classes-associated-with-variables-automatic",
-            "title": "Storage Class - Storage Classes associated with variables: automatic",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-structures-defining-a-structure-variable",
-            "title": "Structures - Defining a Structure variable",
             "content": "",
             "pyqs": []
           },
@@ -803,12 +416,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-files-different-types-of-files-in-c",
-            "title": "Files- Different types of files in C",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fread",
             "title": "fread()",
             "content": "",
@@ -823,18 +430,6 @@
           {
             "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fwrite",
             "title": "fwrite().",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-library-functions-related-to-file-fseek",
-            "title": "Library functions related to file – fseek()",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-opening-closing-a-file",
-            "title": "Opening & Closing a file",
             "content": "",
             "pyqs": []
           },
@@ -869,12 +464,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointers-declaration",
-            "title": "Pointers - Declaration",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-processing-files",
             "title": "Processing files",
             "content": "",
@@ -883,363 +472,6 @@
           {
             "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-processing-strings-using-pointers",
             "title": "Processing strings using pointers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-writing-to-and-reading-from-a-file",
-            "title": "Writing to and Reading from a file",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cs-2-pccst205-discrete-mathematics",
-    "code": "PCCST205-DISCRETE-MATHEMATICS",
-    "name": "PCCST205 DISCRETE MATHEMATICS",
-    "branchId": "cs",
-    "semester": 2,
-    "modules": [
-      {
-        "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets",
-        "title": "Module 1: Sets and subsets",
-        "topics": [
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-cantor-diagonalization-argument",
-            "title": "Cantor diagonalization argument",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-cardinality-of-sets",
-            "title": "Cardinality of Sets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-composition-of-relations",
-            "title": "Composition of relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-compositions-of-functions",
-            "title": "Compositions of Functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-equivalence-classes",
-            "title": "Equivalence Classes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-equivalence-relations",
-            "title": "Equivalence Relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-function-definition",
-            "title": "Function definition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-generalized-unions-and-intersections",
-            "title": "Generalized Unions and Intersections",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-hasse-diagrams",
-            "title": "Hasse Diagrams",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-injections",
-            "title": "Injections",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-inverse-functions",
-            "title": "Inverse Functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-lattices",
-            "title": "Lattices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-maximal-and-minimal-elements",
-            "title": "Maximal and Minimal Elements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-n-ary-relations",
-            "title": "n-ary Relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-partial-orderings",
-            "title": "Partial Orderings",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-relations-and-their-properties",
-            "title": "Relations and Their Properties",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-representing-relations-using-matrices",
-            "title": "Representing Relations Using Matrices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-set-identities",
-            "title": "Set Identities",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-set-operations",
-            "title": "Set Operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-sets-and-subsets",
-            "title": "Sets and Subsets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-surjections-and-bijections",
-            "title": "Surjections and Bijections",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-the-principle-of-inclusion-exclusion-basic-and-generalized-versions-and-applications",
-            "title": "The Principle of Inclusion-Exclusion (Basic and Generalized versions), and applications.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-and-subsets-venn-diagrams",
-            "title": "Venn Diagrams",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs",
-        "title": "Module 2: Mathematical logic and proofs",
-        "topics": [
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-applications-of-propositional-logic",
-            "title": "Applications of Propositional Logic",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-indirect-proof-proof-by-contraposition",
-            "title": "Indirect proof (Proof by Contraposition)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-introduction-to-proofs",
-            "title": "Introduction to Proofs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-mathematical-logic-and-proofs",
-            "title": "Mathematical logic and proofs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-methods-of-proving-theorems-direct-proof",
-            "title": "Methods of Proving Theorems - Direct proof",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-nested-quantifiers",
-            "title": "Nested Quantifiers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-predicates-and-quantifiers",
-            "title": "Predicates and Quantifiers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-proof-by-contradiction",
-            "title": "Proof by Contradiction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-proof-by-counter-examples",
-            "title": "Proof by counter examples",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-propositional-equivalences",
-            "title": "Propositional Equivalences",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-propositional-logic",
-            "title": "Propositional Logic",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-rules-of-inference",
-            "title": "Rules of Inference",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-the-pigeonhole-principle",
-            "title": "The Pigeonhole Principle.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences",
-        "title": "Module 3: Induction and recurrences",
-        "topics": [
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-generating-functions",
-            "title": "Generating Functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-induction-and-recurrences",
-            "title": "Induction and Recurrences",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-mathematical-induction",
-            "title": "Mathematical Induction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-modeling-with-recurrence-relations",
-            "title": "Modeling with Recurrence Relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-recursive-inductive-definitions-and-recurrence-relations",
-            "title": "Recursive (Inductive) definitions and recurrence relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-solving-linear-recurrence-relations-homogeneous-and-nonhomogeneous",
-            "title": "Solving Linear Recurrence Relations (homogeneous and nonhomogeneous)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-using-generating-functions-to-solve-recurrence-relations",
-            "title": "Using Generating Functions to Solve Recurrence Relations.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-induction-and-recurrences-weak-and-strong-induction",
-            "title": "Weak and Strong induction",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory",
-        "title": "Module 4: Group theory",
-        "topics": [
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-abelian-group",
-            "title": "Abelian group",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-cosets-and-lagrange-s-theorem",
-            "title": "Cosets and Lagrange's Theorem",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-cyclic-groups",
-            "title": "Cyclic Groups",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-group-theory",
-            "title": "Group theory",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-groups-definition-examples-and-elementary-properties",
-            "title": "Groups - Definition, Examples, and Elementary Properties",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-homomorphisms",
-            "title": "Homomorphisms",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-isomorphisms",
-            "title": "Isomorphisms",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-permutation-group",
-            "title": "Permutation group",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-group-theory-subgroup",
-            "title": "Subgroup",
             "content": "",
             "pyqs": []
           }
@@ -1259,12 +491,6 @@
         "title": "Module 1: Introduction to logic propositional logic",
         "topics": [
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-conditional-propositions-and-logical-equivalence",
-            "title": "Conditional propositions and Logical Equivalence",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-introduction-to-logic-propositional-logic",
             "title": "Introduction to Logic: Propositional Logic",
             "content": "",
@@ -1273,12 +499,6 @@
           {
             "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-negation-of-quantifiers",
             "title": "Negation of Quantifiers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-predicates-and-quantifiers-universal-quantifier-and-existential-quantifier",
-            "title": "Predicates and Quantifiers: Universal quantifier and Existential quantifier",
             "content": "",
             "pyqs": []
           },
@@ -1379,12 +599,6 @@
         "title": "Module 3: Relations functions and algebraic structures sets",
         "topics": [
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-complimented-and-distributive-lattices",
-            "title": "Complimented and Distributive lattices",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-equivalence-relations",
             "title": "Equivalence Relations",
             "content": "",
@@ -1481,26 +695,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-homogeneous",
-            "title": "homogeneous",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-non-homogeneous-solution",
-            "title": "non-homogeneous Solution",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-recurrence-relations-first-order-linear-recurrence-relations-with-constant-coefficients-homogeneous",
             "title": "Recurrence Relations: First-order linear recurrence relations with constant coefficients – homogeneous, non-homogeneous Solution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-second-order-linear-recurrence-relations-with-constant-coefficients",
-            "title": "Second-order linear recurrence relations with constant coefficients",
             "content": "",
             "pyqs": []
           }

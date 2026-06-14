@@ -11,32 +11,8 @@
         "title": "Module 1: Introduction to graphs",
         "topics": [
           {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-application-of-graphs",
-            "title": "Application of graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-basic-definitions-applications-of-graphs-finite-and-infinite-graphs",
             "title": "Basic definitions, Applications of graphs, Finite and infinite graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-connected-graphs",
-            "title": "Connected graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-disconnected-graphs-and-components",
-            "title": "Disconnected graphs and components",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-finite-and-infinite-graphs",
-            "title": "finite and infinite graphs",
             "content": "",
             "pyqs": []
           },
@@ -47,122 +23,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-incidence-and-degree",
-            "title": "Incidence and Degree",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-incidence-and-degree-of-a-vertex-isolated-vertex-pendant-vertex-and-null-graph",
             "title": "Incidence and Degree of a vertex, Isolated vertex, Pendant vertex, and Null graph",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-introduction-to-graphs-basic-definition",
-            "title": "Introduction to Graphs - Basic definition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-isolated-vertex",
-            "title": "Isolated vertex",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-isomorphism",
-            "title": "Isomorphism",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-paths-and-circuits",
-            "title": "Paths and circuits",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-pendant-vertex-and-null-graph",
-            "title": "Pendant vertex and Null graph",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-sub-graphs",
-            "title": "Sub graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-walks",
-            "title": "Walks",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-01-module-1-introduction-to-graphs-walks-paths-and-circuits-connected-graphs-disconnected-graphs-and-components",
             "title": "Walks, Paths, and Circuits, Connected graphs, Disconnected graphs, and Components",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs",
-        "title": "Module 2: Euler graphs",
-        "topics": [
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-connectivity",
-            "title": "Connectivity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-directed-graphs",
-            "title": "Directed graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-edge-connectivity",
-            "title": "Edge connectivity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-euler-graphs",
-            "title": "Euler graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-hamiltonian-paths-and-circuits",
-            "title": "Hamiltonian paths and circuits",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-operations-on-graphs",
-            "title": "Operations on Graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-travelling-salesman-problem",
-            "title": "Travelling Salesman Problem",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-types-of-directed-graphs",
-            "title": "Types of directed graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-vertex-connectivity",
-            "title": "Vertex connectivity",
             "content": "",
             "pyqs": []
           }
@@ -187,66 +55,6 @@
           {
             "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-02-module-2-euler-graphs-hamiltonian-graphs-and-digraphs-hamiltonian-paths-and-circuits-the-travelling-salesman-problem-tsp",
             "title": "Hamiltonian paths and circuits, The Travelling Salesman Problem (TSP)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees",
-        "title": "Module 3: Trees",
-        "topics": [
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-counting-trees",
-            "title": "Counting trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-dijkstra-s-shortest-path-algorithm",
-            "title": "Dijkstra's shortest path algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-distance-and-centres-in-a-tree",
-            "title": "Distance and centres in a tree",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-floyd-warshall-shortest-path-algorithm",
-            "title": "Floyd-Warshall shortest path algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-pendant-vertices",
-            "title": "Pendant vertices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-prim-s-algorithm-and-kruskal-s-algorithm",
-            "title": "Prim's algorithm and Kruskal's algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-rooted-and-binary-trees",
-            "title": "Rooted and binary trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-spanning-trees",
-            "title": "Spanning trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-03-module-3-trees-trees-properties",
-            "title": "Trees- properties",
             "content": "",
             "pyqs": []
           }
@@ -305,60 +113,6 @@
             "pyqs": []
           }
         ]
-      },
-      {
-        "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs",
-        "title": "Module 4: Matrix representation of graphs",
-        "topics": [
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-chromatic-number",
-            "title": "Chromatic number",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-chromatic-polynomial",
-            "title": "Chromatic polynomial",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-circuit-matrix",
-            "title": "Circuit Matrix",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-coloring",
-            "title": "Coloring",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-greedy-colouring-algorithm",
-            "title": "Greedy colouring algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-incidence-matrix",
-            "title": "Incidence Matrix",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-matrix-representation-of-graphs-adjacency-matrix",
-            "title": "Matrix representation of graphs- Adjacency matrix",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-gamat401-mathematics-for-computer-and-information-science-4-04-module-4-matrix-representation-of-graphs-path-matrix",
-            "title": "Path Matrix",
-            "content": "",
-            "pyqs": []
-          }
-        ]
       }
     ]
   },
@@ -369,60 +123,6 @@
     "branchId": "cs",
     "semester": 4,
     "modules": [
-      {
-        "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units",
-        "title": "Module 1: Basic structure of computers functional units",
-        "topics": [
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-basic-structure-of-computers-functional-units-basic-operational-concepts",
-            "title": "Basic Structure of computers :– Functional units - Basic operational concepts",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-cisc-vs-risc-architectures-risc-introduction-assembly-language-assembler-directives-assembling",
-            "title": "CISC vs RISC architectures:- RISC Introduction - Assembly Language, Assembler directives, Assembling.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-endianness",
-            "title": "Endianness.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-evolution-of-the-risc-architecture",
-            "title": "Evolution of the RISC Architecture.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-instruction-execution-cycle",
-            "title": "Instruction execution cycle.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-machine-language-instructions-addressing-modes-stored-program-concept",
-            "title": "Machine language - Instructions, addressing modes, Stored program concept.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-memory-map",
-            "title": "Memory map",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-basic-structure-of-computers-functional-units-programming-concepts-program-flow-branching-conditional-statements-loops-arrays-function-calls",
-            "title": "Programming concepts - Program flow, Branching, Conditional statements, Loops, Arrays, Function calls",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
       {
         "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-computer-systems-evolution-endianness-and-isa-layouts",
         "title": "Module 1: Computer systems evolution endianness and isa layouts",
@@ -448,48 +148,6 @@
           {
             "id": "cs-4-pbcst404-computer-organization-and-architecture-01-module-1-computer-systems-evolution-endianness-and-isa-layouts-stack-management-stack-pointer-sp-operations-stack-frames-leaf-vs-non-leaf-subroutine-calls",
             "title": "Stack Management: Stack pointer (sp) operations, Stack frames, Leaf vs Non-leaf subroutine calls, recursive procedures",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pbcst404-computer-organization-and-architecture-02-module-2-microarchitecture",
-        "title": "Module 2: Microarchitecture",
-        "topics": [
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-02-module-2-microarchitecture-hazards",
-            "title": "Hazards",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-02-module-2-microarchitecture-microarchitecture-introduction",
-            "title": "Microarchitecture -  Introduction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-02-module-2-microarchitecture-performance-analysis",
-            "title": "Performance Analysis.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-02-module-2-microarchitecture-pipelined-processor-pipelined-data-path-pipelined-control",
-            "title": "Pipelined Processor - Pipelined Data Path, Pipelined Control",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-02-module-2-microarchitecture-single-cycle-processor-single-cycle-datapath-single-cycle-control",
-            "title": "Single-Cycle Processor - Single Cycle Datapath, Single Cycle Control",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-02-module-2-microarchitecture-solving-data-control-hazards",
-            "title": "Solving Data/Control Hazards",
             "content": "",
             "pyqs": []
           }
@@ -562,66 +220,6 @@
         ]
       },
       {
-        "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction",
-        "title": "Module 3: Memory systems introduction",
-        "topics": [
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-caches-basic-concepts-cache-mapping-cache-replacement-multiple-level-caches",
-            "title": "Caches - basic concepts, Cache mapping, Cache replacement, Multiple-Level Caches",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-memory-protection",
-            "title": "Memory Protection.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-memory-systems-introduction",
-            "title": "Memory Systems: Introduction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-page-table",
-            "title": "Page Table",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-performance-analysis",
-            "title": "performance analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-reducing-miss-rate",
-            "title": "Reducing Miss Rate",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-translation-lookaside-buffer",
-            "title": "Translation Lookaside Buffer",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-virtual-memory-address-translation",
-            "title": "Virtual Memory - Address Translation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-03-module-3-memory-systems-introduction-write-policy",
-            "title": "Write Policy",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-i-o-data-transfers-dma-peripheral-interfacing-and-future-tech",
         "title": "Module 4: I o data transfers dma peripheral interfacing and future tech",
         "topics": [
@@ -650,48 +248,6 @@
             "pyqs": []
           }
         ]
-      },
-      {
-        "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-input-output",
-        "title": "Module 4: Input output",
-        "topics": [
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-input-output-direct-memory-access",
-            "title": "Direct Memory Access",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-input-output-embedded-i-o-systems-embedded-i-o-general-purpose-i-o-serial-i-o-other-peripherals",
-            "title": "Embedded I/O Systems - Embedded I/O, General Purpose I/O, Serial I/O, Other Peripherals.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-input-output-i-o-modules",
-            "title": "I/O Modules",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-input-output-input-output-external-devices",
-            "title": "Input / Output -  External Devices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-input-output-interrupt-driven-i-o",
-            "title": "Interrupt Driven I/O",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pbcst404-computer-organization-and-architecture-04-module-4-input-output-programmed-i-o",
-            "title": "Programmed I/O",
-            "content": "",
-            "pyqs": []
-          }
-        ]
       }
     ]
   },
@@ -702,18 +258,6 @@
     "branchId": "cs",
     "semester": 4,
     "modules": [
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-01-module-1-familiarisation-with-basic-linux-programming-commands-ps-strace-gdb-str",
-        "title": "Module 1: Familiarisation with basic linux programming commands ps strace gdb str",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-01-module-1-familiarisation-with-basic-linux-programming-commands-ps-strace-gdb-str-familiarisation-with-basic-linux-programming-commands-ps-strace-gdb-strings-objdump-nm-file-od-xxd",
-            "title": "Familiarisation with basic Linux programming commands: ps, strace,  gdb, strings, objdump, nm, file, od, xxd, time, fuser, top",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
       {
         "id": "cs-4-pccsl407-operating-systems-lab-01-module-1-operating-systems-lab-experiments",
         "title": "Module 1: Operating systems lab experiments",
@@ -809,276 +353,6 @@
             "pyqs": []
           }
         ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-02-module-2-use-proc-file-system-to-gather-basic-information-about-your-machine-a-n",
-        "title": "Module 2: Use proc file system to gather basic information about your machine a n",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-02-module-2-use-proc-file-system-to-gather-basic-information-about-your-machine-a-n-b-total-memory-and-the-fraction-of-free-memory",
-            "title": "(b) Total memory and the fraction of free memory",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-02-module-2-use-proc-file-system-to-gather-basic-information-about-your-machine-a-n-c-number-of-processes-currently-running",
-            "title": "(c) Number of processes currently running.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-02-module-2-use-proc-file-system-to-gather-basic-information-about-your-machine-a-n-d-number-of-processes-in-the-running-and-blocked-states",
-            "title": "(d) Number of processes in the running and blocked states.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-02-module-2-use-proc-file-system-to-gather-basic-information-about-your-machine-a-n-e-number-of-processes-forked-since-the-last-bootup-how-do-you-compare-this-value-with-the-one-in-c",
-            "title": "(e) Number of processes forked since the last bootup. How do you compare this value with the one in (c) above?",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-02-module-2-use-proc-file-system-to-gather-basic-information-about-your-machine-a-n-f-the-number-of-context-switches-performed-since-the-last-bootup-for-a-particular-process",
-            "title": "(f) The number of context switches performed since the last bootup for a particular process.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-02-module-2-use-proc-file-system-to-gather-basic-information-about-your-machine-a-n-use-proc-file-system-to-gather-basic-information-about-your-machine-a-number-of-cpu-cores",
-            "title": "Use /proc file system to gather basic information about your machine: (a) Number of CPU cores",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-03-module-3-write-a-simple-program-to-print-the-system-time-and-execute-it-then-use",
-        "title": "Module 3: Write a simple program to print the system time and execute it then use",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-03-module-3-write-a-simple-program-to-print-the-system-time-and-execute-it-then-use-write-a-simple-program-to-print-the-system-time-and-execute-it-then-use-the-proc-file-system-to",
-            "title": "Write a simple program to print the system time and execute it. Then use the / proc file system to determine how long this program (in the strict sense, the corresponding process) ran in user and kernel modes.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-04-module-4-create-a-new-process-using-a-fork-system-call-print-the-parent-and-chil",
-        "title": "Module 4: Create a new process using a fork system call print the parent and chil",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-04-module-4-create-a-new-process-using-a-fork-system-call-print-the-parent-and-chil-create-a-new-process-using-a-fork-system-call-print-the-parent-and-child-process-ids-use-the-pstree",
-            "title": "Create a new process using a fork system call. Print the parent and child process IDs. Use the pstree command to find the process tree for the child process starting from the init process.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-05-module-5-write-a-program-to-add-two-integers-received-via-the-command-line-and-c",
-        "title": "Module 5: Write a program to add two integers received via the command line and c",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-05-module-5-write-a-program-to-add-two-integers-received-via-the-command-line-and-c-write-a-program-to-add-two-integers-received-via-the-command-line-and-compile-it-to-an-executable",
-            "title": "Write a program to add two integers (received via the command line) and compile it to an executable named “ myadder ”. Now write another program that creates a new process using a fork system call. Make the child process add two integers by replacing its image with the “ myadder ” image using execvp system call.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-06-module-6-create-a-new-process-using-a-fork-system-call-the-child-process-should",
-        "title": "Module 6: Create a new process using a fork system call the child process should",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-06-module-6-create-a-new-process-using-a-fork-system-call-the-child-process-should-create-a-new-process-using-a-fork-system-call-the-child-process-should-print-the-string-pccsl407",
-            "title": "Create a new process using a fork system call. The child process should print the string “PCCSL407 ” and the parent process should print the string “ Operating Systems Lab ”. Use a wait system call to ensure that the output displayed is “ PCCSL407 Operating Systems Lab ”",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter",
-        "title": "Module 7: Inter",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter-a-using-pipe-evaluate-the-expression",
-            "title": "(a) Using Pipe – Evaluate the expression",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter-and-sends-it-to-the-first-process-which-evaluates-the-final-expression-and-displays-it",
-            "title": "and sends it to the first process which evaluates the final expression and displays it.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter-b-using-message-queue-the-first-process-sends-a-string-to-the-second-process-the-second-process",
-            "title": "(b) Using Message Queue - The first process sends a string to the second process. The second process reverses the received string and sends it back to the first process. The first process compares the original string and the reversed string received from the second one and then prints whether the string is a palindrome or not.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter-c-using-shared-memory-the-first-process-sends-three-strings-to-the-second-process-the-second",
-            "title": "(c) Using Shared Memory - The first process sends three strings to the second process. The second process concatenates them to a single string (with whitespace being inserted between the two individual strings) and sends it back to the first process. The first process prints the concatenated string in the flipped case, that is if the concatenated string is “ Hello S4 Students ”, the final output should be “ hELLO s4 sTUDENTS ”",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter-inter-process-communication-https-www-linuxdoc-org-ldp-lpg-node7-html",
-            "title": "Inter-process Communication (https://www.linuxdoc.org/LDP/lpg/node7.html)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter-the-first-process-evaluates",
-            "title": ". The first process evaluates",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-07-module-7-inter-the-second-process-evaluates",
-            "title": ". The second process evaluates",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-08-module-8-write-a-multithreaded-program-that-calculates-the-mean-median-and-stand",
-        "title": "Module 8: Write a multithreaded program that calculates the mean median and stand",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-08-module-8-write-a-multithreaded-program-that-calculates-the-mean-median-and-stand-write-a-multithreaded-program-that-calculates-the-mean-median-and-standard-deviation-for-a-list-of",
-            "title": "Write a multithreaded program that calculates the mean, median, and standard deviation for a list of integers. This program should receive a series of integers on the command line and will then create three separate worker threads. The first thread will determine the mean value, the second will determine the median and the third will calculate the standard deviation of the integers. The variables representing the mean, median, and standard deviation values will be stored globally. The worker threads will set these values, and the parent thread will output the values once the workers have exited.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-09-module-9-input-a-list-of-processes-their-cpu-burst-times-integral-values-arrival",
-        "title": "Module 9: Input a list of processes their cpu burst times integral values arrival",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-09-module-9-input-a-list-of-processes-their-cpu-burst-times-integral-values-arrival-input-a-list-of-processes-their-cpu-burst-times-integral-values-arrival-times-and-priorities-then",
-            "title": "Input a list of processes, their CPU burst times (integral values), arrival times, and priorities. Then simulate FCFS, SRTF, non-preemptive priority (a larger priority number implies a higher priority), and RR (quantum = 3 units) scheduling algorithms on the process mix, determining which algorithm results in the minimum average waiting time (over all processes).",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-10-module-10-use-semaphores-to-solve-the-readers",
-        "title": "Module 10: Use semaphores to solve the readers",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-10-module-10-use-semaphores-to-solve-the-readers-use-semaphores-to-solve-the-readers-writers-problem-with-writers-being-given-priority-over-readers",
-            "title": "Use semaphores to solve the readers-writers problem with writers being given priority over readers.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-11-module-11-obtain-a-deadlock",
-        "title": "Module 11: Obtain a deadlock",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-11-module-11-obtain-a-deadlock-obtain-a-deadlock-free-process-mix-and-simulate-the-banker-s-algorithm-to-determine-a-safe",
-            "title": "Obtain a (deadlock-free) process mix and simulate the banker’s algorithm to determine a safe execution sequence.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-12-module-12-obtain-a-process-mix-and-determine-if-the-system-is-deadlocked",
-        "title": "Module 12: Obtain a process mix and determine if the system is deadlocked",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-12-module-12-obtain-a-process-mix-and-determine-if-the-system-is-deadlocked-obtain-a-process-mix-and-determine-if-the-system-is-deadlocked",
-            "title": "Obtain a process mix and determine if the system is deadlocked.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-13-module-13-implement-the-deadlock",
-        "title": "Module 13: Implement the deadlock",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-13-module-13-implement-the-deadlock-implement-the-deadlock-free-semaphore-based-solution-for-the-dining-philosopher-s-problem",
-            "title": "Implement the deadlock-free semaphore-based solution for the dining philosopher’s problem.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-14-module-14-simulate-the-address-translation-in-the-paging-scheme-as-follows-the-p",
-        "title": "Module 14: Simulate the address translation in the paging scheme as follows the p",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-14-module-14-simulate-the-address-translation-in-the-paging-scheme-as-follows-the-p-a-virtual-address-in-decimal-notation",
-            "title": "● a virtual address (in decimal notation)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-14-module-14-simulate-the-address-translation-in-the-paging-scheme-as-follows-the-p-page-size-in-kilobytes",
-            "title": "● page size (in kilobytes)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-14-module-14-simulate-the-address-translation-in-the-paging-scheme-as-follows-the-p-simulate-the-address-translation-in-the-paging-scheme-as-follows-the-program-receives-three-command",
-            "title": "Simulate the address translation in the paging scheme as follows: The program receives three command line arguments in the order",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-14-module-14-simulate-the-address-translation-in-the-paging-scheme-as-follows-the-p-size-of-the-virtual-address-space-in-megabytes",
-            "title": "● size of the virtual address space (in megabytes)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-14-module-14-simulate-the-address-translation-in-the-paging-scheme-as-follows-the-p-the-output-should-be-the-physical-address-corresponding-to-the-virtual-address-in-frame-number",
-            "title": "The output should be the physical address corresponding to the virtual address in <frame number, offset> format. You may assume that the page table is implemented as an array indexed by page numbers. (NB: If the page table has no index for the page number determined from the virtual address, you may just declare a page table miss!)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-15-module-15-simulate-the-fifo-lru-and-optimal-page",
-        "title": "Module 15: Simulate the fifo lru and optimal page",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-15-module-15-simulate-the-fifo-lru-and-optimal-page-simulate-the-fifo-lru-and-optimal-page-replacement-algorithms-as-follows-first-generate-a-random",
-            "title": "Simulate the FIFO, LRU, and optimal page-replacement algorithms as follows: First, generate a random page-reference string where page numbers range from 0 to 9. Apply the random page-reference string to each algorithm, and record the number of page faults incurred by each algorithm. Assume that demand paging is used. The length of the reference string and the number of page frames (varying from 1 to 7) are to be received as command line arguments.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccsl407-operating-systems-lab-16-module-16-simulate-the-sstf-look-and-cscan-disk",
-        "title": "Module 16: Simulate the sstf look and cscan disk",
-        "topics": [
-          {
-            "id": "cs-4-pccsl407-operating-systems-lab-16-module-16-simulate-the-sstf-look-and-cscan-disk-simulate-the-sstf-look-and-cscan-disk-scheduling-algorithms-as-follows-your-program-will-service-a",
-            "title": "Simulate the SSTF, LOOK, and CSCAN disk-scheduling algorithms as follows: Your program will service a disk with 5,000 cylinders numbered 0 to 4,999. The program will generate a random series of 10 cylinder requests and service them according to each of the algorithms listed earlier. The program will be passed the initial position of the disk head (as a parameter on the command line) and will report the total number of head movements required by each algorithm.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
       }
     ]
   },
@@ -1118,12 +392,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-creation-of-database-schema-ddl-create-tables-set-constraints-enforce-relationships-create-indices",
-            "title": "Creation of database schema - DDL (create tables, set constraints, enforce relationships, create indices, delete and modify tables).",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-creation-of-database-schema-using-ddl",
             "title": "Creation of database schema using DDL",
             "content": "",
@@ -1144,12 +412,6 @@
           {
             "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-export-er-diagram-from-the-database",
             "title": "Export ER diagram from the database",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-export-er-diagram-from-the-database-and-verify-relationships-with-the-er-diagram-designed-in-step-1",
-            "title": "Export ER diagram from the database and verify relationships (with the ER diagram designed in step 1).",
             "content": "",
             "pyqs": []
           },
@@ -1200,12 +462,6 @@
             "title": "Database initialization",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-database-initialization-data-insert-data-import-to-a-database-bulk-import-using-ui-and-sql-commands",
-            "title": "Database initialization - Data insert, Data import to a database (bulk import using UI and SQL Commands).",
-            "content": "",
-            "pyqs": []
           }
         ]
       },
@@ -1228,12 +484,6 @@
           {
             "id": "cs-4-pccsl408-dbms-lab-04-module-4-practice-sql-commands-for-dml-insertion-updating-altering-deletion-of-d-practice-sql-commands-for-dml-insertion-of-data",
             "title": "Practice SQL commands for DML - insertion of data",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-04-module-4-practice-sql-commands-for-dml-insertion-updating-altering-deletion-of-d-practice-sql-commands-for-dml-insertion-updating-altering-deletion-of-data-and-viewing-querying",
-            "title": "Practice SQL commands for DML (insertion, updating, altering, deletion of data, and viewing/querying records based on condition in databases).",
             "content": "",
             "pyqs": []
           },
@@ -1278,12 +528,6 @@
             "title": "Implementation of various aggregate functions",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-05-module-5-implementation-of-various-aggregate-functions-order-by-group-by-having-implementation-of-various-aggregate-functions-order-by-group-by-having-clause-in-sql",
-            "title": "Implementation of various aggregate functions, Order By, Group By & Having clause in SQL.",
-            "content": "",
-            "pyqs": []
           }
         ]
       },
@@ -1308,12 +552,6 @@
             "title": "Implementation of set operators",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-06-module-6-implementation-of-set-operators-nested-queries-and-join-queries-implementation-of-set-operators-nested-queries-and-join-queries",
-            "title": "Implementation of set operators nested queries, and join queries.",
-            "content": "",
-            "pyqs": []
           }
         ]
       },
@@ -1321,12 +559,6 @@
         "id": "cs-4-pccsl408-dbms-lab-07-module-7-practice-of-sql-tcl-dcl-commands-like-rollback-commit-savepoint",
         "title": "Module 7: Practice of sql tcl dcl commands like rollback commit savepoint",
         "topics": [
-          {
-            "id": "cs-4-pccsl408-dbms-lab-07-module-7-practice-of-sql-tcl-dcl-commands-like-rollback-commit-savepoint-practice-of-sql-dcl-commands-for-granting-and-revoking-user-privileges",
-            "title": "Practice of SQL DCL commands for granting and revoking user privileges.",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "cs-4-pccsl408-dbms-lab-07-module-7-practice-of-sql-tcl-dcl-commands-like-rollback-commit-savepoint-practice-of-sql-dcl-commands-for-granting-user-privileges",
             "title": "Practice of SQL DCL commands for granting user privileges",
@@ -1356,12 +588,6 @@
             "title": "Practice of SQL TCL commands - Savepoint",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-07-module-7-practice-of-sql-tcl-dcl-commands-like-rollback-commit-savepoint-practice-of-sql-tcl-dcl-commands-like-rollback-commit-savepoint",
-            "title": "Practice of SQL TCL DCL commands like Rollback, Commit, Savepoint",
-            "content": "",
-            "pyqs": []
           }
         ]
       },
@@ -1380,12 +606,6 @@
             "title": "Practice of SQL commands for creation of views",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-08-module-8-practice-of-sql-commands-for-creation-of-views-and-assertions-practice-of-sql-commands-for-creation-of-views-and-assertions",
-            "title": "Practice of SQL commands for creation of views and assertions.",
-            "content": "",
-            "pyqs": []
           }
         ]
       },
@@ -1402,12 +622,6 @@
           {
             "id": "cs-4-pccsl408-dbms-lab-09-module-9-creation-of-procedures-triggers-and-functions-creation-of-procedures",
             "title": "Creation of Procedures",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-09-module-9-creation-of-procedures-triggers-and-functions-creation-of-procedures-triggers-and-functions",
-            "title": "Creation of Procedures, Triggers and Functions.",
             "content": "",
             "pyqs": []
           },
@@ -1432,12 +646,6 @@
           {
             "id": "cs-4-pccsl408-dbms-lab-10-module-10-creation-of-packages-and-cursors-creation-of-packages",
             "title": "Creation of Packages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-10-module-10-creation-of-packages-and-cursors-creation-of-packages-and-cursors",
-            "title": "Creation of Packages and cursors.",
             "content": "",
             "pyqs": []
           }
@@ -1465,12 +673,6 @@
         "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra",
         "title": "Module 12: Perform basic crud create read update delete operations on a cassandra",
         "topics": [
-          {
-            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-table",
-            "title": "Perform basic CRUD (Create, Read, Update, Delete) operations on a Cassandra table.",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-create-operations-on-a-cassandra-table",
             "title": "Perform Create operations on a Cassandra table",
@@ -1504,12 +706,6 @@
           {
             "id": "cs-4-pccsl408-dbms-lab-13-module-13-write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
             "title": "Execute CQL queries to retrieve specific data from Cassandra tables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-13-module-13-write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
-            "title": "Write and execute CQL queries to retrieve specific data from Cassandra tables",
             "content": "",
             "pyqs": []
           },
@@ -1579,30 +775,6 @@
         ]
       },
       {
-        "id": "cs-4-pccst402-database-management-systems-01-module-1-introduction-to-databases",
-        "title": "Module 1: Introduction to databases",
-        "topics": [
-          {
-            "id": "cs-4-pccst402-database-management-systems-01-module-1-introduction-to-databases-conceptual-data-modelling-and-database-design-data-modelling-using-the-entity-relationship-er-model",
-            "title": "Conceptual Data Modelling and Database Design:-  Data Modelling Using the Entity, Relationship (ER) Model - Entity Types, Entity Sets, Attributes, and Keys, Relationship Types, Relationship Sets, Roles, and Structural Constraints, Weak Entity Types.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst402-database-management-systems-01-module-1-introduction-to-databases-introduction-to-databases-database-system-concepts-and-architecture-data-models-schemas-and",
-            "title": "Introduction to Databases :- Database System Concepts and Architecture- Data Models, Schemas and Instances, Three-Schema Architecture and Data Independence, Database Languages and Interfaces, Centralized and Client/Server Architectures for DBMSs.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst402-database-management-systems-01-module-1-introduction-to-databases-refining-the-er-design-for-the-company-database",
-            "title": "Refining the ER Design for the COMPANY Database.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pccst402-database-management-systems-02-module-2-relational-model-er-to-relational-mapping-and-sql",
         "title": "Module 2: Relational model er to relational mapping and sql",
         "topics": [
@@ -1639,24 +811,6 @@
         ]
       },
       {
-        "id": "cs-4-pccst402-database-management-systems-02-module-2-the-relational-data-model-and-sql",
-        "title": "Module 2: The relational data model and sql",
-        "topics": [
-          {
-            "id": "cs-4-pccst402-database-management-systems-02-module-2-the-relational-data-model-and-sql-assertions-triggers-views-relational-database-design-using-er-to-relational-mapping",
-            "title": "Assertions, Triggers, views,  Relational Database Design Using ER-to-Relational Mapping.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst402-database-management-systems-02-module-2-the-relational-data-model-and-sql-the-relational-data-model-and-sql-the-relational-data-model-and-relational-database-constraints",
-            "title": "The Relational Data Model and SQL  - The Relational Data Model and Relational Database Constraints-Relational Algebra and Relational Calculus - Structured Query Language (SQL)-Data Definition Language,  Data Manipulation Language,",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pccst402-database-management-systems-03-module-3-database-design-theory-and-normalization",
         "title": "Module 3: Database design theory and normalization",
         "topics": [
@@ -1681,48 +835,6 @@
           {
             "id": "cs-4-pccst402-database-management-systems-03-module-3-database-design-theory-and-normalization-schema-decomposition-properties-lossless-join-property-and-dependency-preservation-property",
             "title": "Schema Decomposition Properties: Lossless-join property and Dependency preservation property",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccst402-database-management-systems-03-module-3-database-design-theory-normalization",
-        "title": "Module 3: Database design theory normalization",
-        "topics": [
-          {
-            "id": "cs-4-pccst402-database-management-systems-03-module-3-database-design-theory-normalization-concurrency-control-with-two-phase-locking-techniques-database-recovery-management-deferred-update",
-            "title": "Concurrency Control with Two-Phase Locking Techniques- Database Recovery management: Deferred update-immediate update- shadow paging.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst402-database-management-systems-03-module-3-database-design-theory-normalization-database-design-theory-normalization-functional-dependencies-basic-definition-normalization-first",
-            "title": "Database Design Theory & Normalization  - Functional Dependencies - Basic definition; Normalization- First, Second, and Third normal forms.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst402-database-management-systems-03-module-3-database-design-theory-normalization-transaction-management-transaction-processing-introduction-problems-and-failures-in-transaction",
-            "title": "Transaction Management -  Transaction Processing : Introduction , problems and failures in transaction , Desirable properties of transaction , Characterizing schedules based on recoverability and serializability;",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccst402-database-management-systems-04-module-4-introduction-to-nosql-concepts",
-        "title": "Module 4: Introduction to nosql concepts",
-        "topics": [
-          {
-            "id": "cs-4-pccst402-database-management-systems-04-module-4-introduction-to-nosql-concepts-introduction-to-nosql-concepts-types-of-nosql-databases-cap-theorem-base-properties-use-cases-and",
-            "title": "Introduction To NoSQL Concepts  - types of NoSQL databases- CAP Theorem- BASE properties-  Use Cases and limitations of NoSQL.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst402-database-management-systems-04-module-4-introduction-to-nosql-concepts-sql-architectural-patterns-key-value-stores-graph-stores-column-family-stores-and-document-stores",
-            "title": "SQL architectural Patterns  - Key value Stores, Graph Stores, Column Family stores and Document Stores.",
             "content": "",
             "pyqs": []
           }
@@ -1774,144 +886,6 @@
     "semester": 4,
     "modules": [
       {
-        "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems",
-        "title": "Module 1: Introduction to operating systems",
-        "topics": [
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-case-study-linux-kernel-process-management",
-            "title": "Case study : Linux kernel process management",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-case-study-the-linux-completely-fair-scheduler-cfs",
-            "title": "Case study:  The Linux Completely Fair Scheduler (CFS)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-case-study-the-linux-implementation-of-threads",
-            "title": "Case study:  The Linux Implementation of Threads",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-context-switching",
-            "title": "context switching",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-data-structures",
-            "title": "Data Structures",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-introduction-to-operating-systems",
-            "title": "Introduction to Operating Systems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-linux-versus-classic-unix-kernels",
-            "title": "Linux Versus Classic Unix Kernels",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-multithreading-benefits",
-            "title": "Multithreading benefits",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-multithreading-models",
-            "title": "Multithreading models",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-operating-system-services",
-            "title": "Operating System Services",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-overview-of-operating-systems-and-kernels",
-            "title": "Overview of Operating Systems and Kernels",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-preemption-and-context-switching",
-            "title": "Preemption and Context Switching",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-process-api",
-            "title": "Process API",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-process-concepts",
-            "title": "Process concepts:",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-process-creation",
-            "title": "Process Creation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-process-scheduling-concepts-and-basic-algorithms",
-            "title": "Process scheduling : Concepts and basic algorithms",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-process-states",
-            "title": "Process States",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-sharing-processor-among-processes-user-and-kernel-modes",
-            "title": "Sharing processor among processes - user and kernel modes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-system-boot-sequence",
-            "title": "System boot sequence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-the-linux-scheduling-implementation",
-            "title": "The Linux Scheduling Implementation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-the-multilevel-feedback-queue-basic-rules",
-            "title": "The Multilevel Feedback Queue: Basic Rules",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-01-module-1-introduction-to-operating-systems-threads-and-concurrency-concept-of-a-thread",
-            "title": "Threads and Concurrency : Concept of a thread",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pccst403-operating-systems-01-module-1-os-structures-process-management-and-cpu-scheduling",
         "title": "Module 1: Os structures process management and cpu scheduling",
         "topics": [
@@ -1948,114 +922,6 @@
         ]
       },
       {
-        "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization",
-        "title": "Module 2: Concurrency and synchronization",
-        "topics": [
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-binary-semaphores",
-            "title": "Binary Semaphores",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-building-spin-locks-with-test-and-set",
-            "title": "Building Spin Locks with Test-And-Set",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-case-study-linux-kernel-synchronization-methods-spin-locks",
-            "title": "Case study : Linux Kernel Synchronization Methods - Spin Locks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-compare-and-swap",
-            "title": "Compare and Swap",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-concurrency",
-            "title": "Concurrency:",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-concurrency-and-synchronization-basic-principles",
-            "title": "Concurrency and Synchronization  - Basic principles",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-deadlock-and-starvation-deadlock-characterization",
-            "title": "Deadlock and Starvation - Deadlock Characterization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-deadlock-detection-and-recovery",
-            "title": "Deadlock Detection and recovery",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-deadlock-prevention-and-avoidance",
-            "title": "Deadlock Prevention and Avoidance",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-dining-philosophers-problem-and-its-solution",
-            "title": "Dining Philosophers Problem and its solution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-mechanisms-locks-the-basic-idea",
-            "title": "Mechanisms - Locks: The Basic Idea",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-mutexes",
-            "title": "Mutexes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-reader-writer-locks",
-            "title": "Reader-Writer Locks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-semaphores",
-            "title": "Semaphores",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-semaphores-definition",
-            "title": "Semaphores - Definition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-the-producer-consumer-bounded-buffer-problem-and-its-solution-using-semaphores",
-            "title": "The Producer/Consumer (Bounded Buffer) Problem and its solution using semaphores",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-02-module-2-concurrency-and-synchronization-using-queues-sleeping-instead-of-spinning",
-            "title": "Using Queues: Sleeping Instead Of Spinning",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pccst403-operating-systems-02-module-2-process-concurrency-synchronization-and-deadlocks",
         "title": "Module 2: Process concurrency synchronization and deadlocks",
         "topics": [
@@ -2086,132 +952,6 @@
         ]
       },
       {
-        "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management",
-        "title": "Module 3: Memory management",
-        "topics": [
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-address-translation-an-example",
-            "title": "Address Translation - An Example",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-address-translation-in-segmentation",
-            "title": "Address translation in segmentation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-dynamic-hardware-based-relocation",
-            "title": "Dynamic (Hardware-based) Relocation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-example-accessing-an-array",
-            "title": "Example: Accessing An Array",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-generalized-base-bounds",
-            "title": "Generalized Base/Bounds",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-going-beyond-physical-memory-swap-space",
-            "title": "Going beyond physical memory   -  Swap space",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-handling-tlb-misses",
-            "title": "Handling TLB misses",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-memory-api",
-            "title": "Memory API",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-memory-management-address-space",
-            "title": "Memory management  - Address Space",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-page-fault-and-its-control-flow",
-            "title": "page fault and its control flow",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-page-replacement-policies",
-            "title": "page replacement policies",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-page-tables-and-hardware-support",
-            "title": "page tables and hardware support",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-reducing-the-page-table-size",
-            "title": "Reducing the page table size",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-segmentation",
-            "title": "Segmentation:",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-support-for-sharing",
-            "title": "Support for Sharing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-thrashing",
-            "title": "Thrashing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-tlb-hits-and-misses",
-            "title": "- TLB hits and misses",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-tlb-structure",
-            "title": "TLB structure",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-tlbs",
-            "title": "TLBs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-virtual-memory-paging-introduction",
-            "title": "Virtual memory  - Paging: Introduction",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-and-virtual-memory",
         "title": "Module 3: Memory management and virtual memory",
         "topics": [
@@ -2236,144 +976,6 @@
           {
             "id": "cs-4-pccst403-operating-systems-03-module-3-memory-management-and-virtual-memory-virtual-memory-demand-paging-page-fault-execution-cycles-performance-analysis-of-demand-paging",
             "title": "Virtual Memory: Demand Paging, Page fault execution cycles, Performance analysis of demand paging",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pccst403-operating-systems-04-module-4-io-system",
-        "title": "Module 4: Io system",
-        "topics": [
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-case-study-linux-i-o-schedulers-elevator",
-            "title": "Case study : Linux I/O schedulers - Elevator",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-case-study-vfs-objects-and-their-data-structures-the-inode-object",
-            "title": "Case study:  VFS Objects and Their Data Structures - The Inode Object",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-complete-fair-queuing",
-            "title": "Complete Fair Queuing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-creating-reading-and-deleting-directories",
-            "title": "Creating, reading and deleting directories",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-device-interaction-methods",
-            "title": "Device interaction methods",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-disk-scheduling",
-            "title": "disk scheduling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-dma",
-            "title": "DMA",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-file-organization-the-inode",
-            "title": "File Organization : The Inode",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-files-and-directories-the-file-system-interface-file-descriptor",
-            "title": "Files and Directories : The File System Interface - File descriptor",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-geometry",
-            "title": "Geometry",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-hard-disk",
-            "title": "Hard disk:",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-i-o-system",
-            "title": "I/O system:",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-inode-operations",
-            "title": "Inode Operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-interrupts",
-            "title": "Interrupts",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-modern-system-architecture",
-            "title": "Modern System architecture",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-mounting-a-file-system",
-            "title": "Mounting a file system",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-permission-bits-and-access-control-lists",
-            "title": "Permission bits and Access Control Lists",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-programmed-i-o",
-            "title": "Programmed I/O",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-reading-and-writing-files-sequential-and-random-access",
-            "title": "reading and writing files (sequential and random access)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-removing-files-hard-links-and-symbolic-links",
-            "title": "Removing files - Hard links and Symbolic links",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-the-device-driver",
-            "title": "The Device Driver",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccst403-operating-systems-04-module-4-io-system-the-multi-level-index",
-            "title": "The Multi-Level Index",
             "content": "",
             "pyqs": []
           }
@@ -2418,42 +1020,6 @@
     "branchId": "cs",
     "semester": 4,
     "modules": [
-      {
-        "id": "cs-4-pecst411-software-engineering-01-module-1-introduction-to-software-engineering-and-process-models",
-        "title": "Module 1: Introduction to software engineering and process models",
-        "topics": [
-          {
-            "id": "cs-4-pecst411-software-engineering-01-module-1-introduction-to-software-engineering-and-process-models-case-study-srs-for-college-library-management-software",
-            "title": "Case study:  SRS for College Library Management Software",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-01-module-1-introduction-to-software-engineering-and-process-models-introduction-to-software-engineering-and-process-models-software-engineering-software",
-            "title": "Introduction to Software Engineering and Process Models - Software engineering, Software characteristics and types, Layers of Software Engineering-Process, Methods, Tools and Quality focus.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-01-module-1-introduction-to-software-engineering-and-process-models-requirement-elicitation-techniques-requirement-validation-feasibility-analysis-and-its-types-srs",
-            "title": "Requirement elicitation techniques, Requirement validation, Feasibility analysis and its types, SRS document characteristics and its structure.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-01-module-1-introduction-to-software-engineering-and-process-models-requirement-engineering-functional-non-functional-system-and-user-requirements",
-            "title": "Requirement engineering - Functional, Non-functional, System and User requirements.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-01-module-1-introduction-to-software-engineering-and-process-models-software-process-models-waterfall-prototype-spiral-incremental-agile-model-values-and-principles",
-            "title": "Software Process models – Waterfall, Prototype, Spiral, Incremental, Agile model – Values and Principles.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
       {
         "id": "cs-4-pecst411-software-engineering-01-module-1-software-process-models",
         "title": "Module 1: Software process models",
@@ -2503,96 +1069,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst411-software-engineering-02-module-2-software-design",
-        "title": "Module 2: Software design",
-        "topics": [
-          {
-            "id": "cs-4-pecst411-software-engineering-02-module-2-software-design-behavioral-design-pattern",
-            "title": "Behavioral Design Pattern",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-02-module-2-software-design-case-studies-voice-mail-system-atm-example",
-            "title": "Case Studies : Voice mail system, ATM Example",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-02-module-2-software-design-case-study-ariane-launch-failure",
-            "title": "Case study:  Ariane launch failure",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-02-module-2-software-design-object-oriented-software-design-uml-diagrams-and-relationships-static-and-dynamic-models-class",
-            "title": "Object Oriented Software Design -  UML diagrams and relationships– Static and dynamic models, Class diagram, State diagram, Use case diagram, Sequence diagram",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-02-module-2-software-design-software-design-software-architecture-and-its-importance-software-architecture-patterns-component",
-            "title": "Software design -  Software architecture and its importance, Software architecture patterns: Component and Connector, Layered, Repository, Client-Server, Publish-Subscribe, Functional independence – Coupling and Cohesion",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-02-module-2-software-design-software-pattern-model-view-controller-creational-design-pattern-types-factory-method-abstract",
-            "title": "Software pattern -  Model View Controller, Creational Design Pattern types – Factory method, Abstract Factory method, Singleton method, Prototype method, Builder method.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-02-module-2-software-design-structural-design-pattern-and-its-types-adapter-bridge-proxy-composite-decorator-fa-ade-flyweight",
-            "title": "Structural Design Pattern and its types – Adapter, Bridge, Proxy, Composite, Decorator, Façade, Flyweight.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst411-software-engineering-03-module-3-coding-testing-and-maintenance",
-        "title": "Module 3: Coding testing and maintenance",
-        "topics": [
-          {
-            "id": "cs-4-pecst411-software-engineering-03-module-3-coding-testing-and-maintenance-boehm-s-maintenance-models-both-legacy-and-non-legacy",
-            "title": "Boehm’s maintenance models (both legacy and non-legacy)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-03-module-3-coding-testing-and-maintenance-coding-guidelines-code-review-code-walkthrough-and-code-inspection-code-debugging-and-its-methods",
-            "title": "Coding guidelines  - Code review, Code walkthrough and Code inspection, Code debugging and its methods.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-03-module-3-coding-testing-and-maintenance-coding-testing-and-maintenance",
-            "title": "Coding, Testing and Maintenance:",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-03-module-3-coding-testing-and-maintenance-overview-of-devops-and-code-management-code-management-devops-automation-continuous-integration",
-            "title": "Overview of DevOps and Code Management  - Code management, DevOps automation, Continuous Integration, Delivery, and Deployment (CI/CD/CD), Case study  – Netflix.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-03-module-3-coding-testing-and-maintenance-software-maintenance-and-its-types-adaptive-preventive-corrective-and-perfective-maintenance",
-            "title": "Software maintenance and its types-  Adaptive, Preventive, Corrective and Perfective maintenance.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-03-module-3-coding-testing-and-maintenance-testing-unit-testing-integration-testing-system-testing-and-its-types-black-box-testing-and-white",
-            "title": "Testing - Unit testing , Integration testing, System testing and its types, Black box testing and White box testing, Regression testing",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst411-software-engineering-03-module-3-software-implementation-construction",
         "title": "Module 3: Software implementation construction",
         "topics": [
@@ -2611,54 +1087,6 @@
           {
             "id": "cs-4-pecst411-software-engineering-03-module-3-software-implementation-construction-refactoring-methods-identifying-design-code-smells",
             "title": "Refactoring methods, identifying design code smells",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management",
-        "title": "Module 4: Software project management",
-        "topics": [
-          {
-            "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management-cloud-based-software-virtualisation-and-containers-everything-as-a-service-iaas-paas-software-as-a",
-            "title": "Cloud-based Software - Virtualisation and containers, Everything as a service (IaaS, PaaS), Software as a service.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management-cost-estimation-using-basic-cocomo",
-            "title": "Cost estimation using Basic COCOMO.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management-microservices-architecture-microservices-microservices-architecture-microservice-deployment",
-            "title": "Microservices Architecture - Microservices, Microservices architecture, Microservice deployment.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management-risk-management-risk-and-its-types-risk-monitoring-and-management-model",
-            "title": "Risk management: Risk and its types, Risk monitoring and management model",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management-software-configuration-management-and-its-phases-software-quality-management-iso-9000-cmm-six-sigma",
-            "title": "Software Configuration Management and its phases, Software Quality Management – ISO 9000, CMM, Six Sigma for software engineering.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management-software-project-management-planning-staffing-organizational-structures-scheduling-using-gantt-chart",
-            "title": "Software Project Management - Planning, Staffing, Organizational structures, Scheduling using Gantt chart.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst411-software-engineering-04-module-4-software-project-management-software-project-management-project-size-metrics-loc-function-points-and-object-points",
-            "title": "Software Project Management -  Project size metrics – LOC, Function points and Object points.",
             "content": "",
             "pyqs": []
           }
@@ -2704,30 +1132,6 @@
     "semester": 4,
     "modules": [
       {
-        "id": "cs-4-pecst412-pattern-recognition-01-module-1-introduction-to-pattern-recognition",
-        "title": "Module 1: Introduction to pattern recognition",
-        "topics": [
-          {
-            "id": "cs-4-pecst412-pattern-recognition-01-module-1-introduction-to-pattern-recognition-introduction-to-pattern-recognition-definitions-and-applications-of",
-            "title": "Introduction to Pattern Recognition - Definitions and applications of",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst412-pattern-recognition-01-module-1-introduction-to-pattern-recognition-non-parametric-methods-k-nearest-neighbors-parzen-windows-text-2",
-            "title": "Non-Parametric Methods - k-Nearest neighbors, Parzen windows   (Text 2,",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst412-pattern-recognition-01-module-1-introduction-to-pattern-recognition-statistical-pattern-recognition-bayes-decision-theory-parametric",
-            "title": "Statistical Pattern Recognition - Bayes decision theory, Parametric",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst412-pattern-recognition-01-module-1-statistical-decision-theory",
         "title": "Module 1: Statistical decision theory",
         "topics": [
@@ -2746,24 +1150,6 @@
           {
             "id": "cs-4-pecst412-pattern-recognition-01-module-1-statistical-decision-theory-pattern-recognition-systems-overview-architectures",
             "title": "Pattern recognition systems overview architectures",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst412-pattern-recognition-02-module-2-feature-extraction",
-        "title": "Module 2: Feature extraction",
-        "topics": [
-          {
-            "id": "cs-4-pecst412-pattern-recognition-02-module-2-feature-extraction-feature-extraction-importance-of-feature-extraction-techniques-for",
-            "title": "Feature Extraction - Importance of feature extraction, Techniques for",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst412-pattern-recognition-02-module-2-feature-extraction-feature-selection-importance-of-feature-selection-techniques-for-feature",
-            "title": "Feature Selection - Importance of feature selection, Techniques for feature",
             "content": "",
             "pyqs": []
           }
@@ -2812,48 +1198,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst412-pattern-recognition-03-module-3-supervised-learning",
-        "title": "Module 3: Supervised learning",
-        "topics": [
-          {
-            "id": "cs-4-pecst412-pattern-recognition-03-module-3-supervised-learning-supervised-learning-basics-of-supervised-learning-linear-classifiers",
-            "title": "Supervised Learning - Basics of supervised learning, Linear classifiers:",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst412-pattern-recognition-03-module-3-supervised-learning-unsupervised-learning-basics-of-unsupervised-learning-clustering",
-            "title": "Unsupervised Learning - Basics of unsupervised learning, Clustering",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst412-pattern-recognition-04-module-4-hidden-markov-models-hmms",
-        "title": "Module 4: Hidden markov models hmms",
-        "topics": [
-          {
-            "id": "cs-4-pecst412-pattern-recognition-04-module-4-hidden-markov-models-hmms-applications-and-case-studies-real-world-applications-of-pattern",
-            "title": "Applications and Case Studies - Real-world applications of pattern",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst412-pattern-recognition-04-module-4-hidden-markov-models-hmms-ensemble-methods-basics-of-ensemble-methods-bagging-boosting-and",
-            "title": "Ensemble Methods - Basics of ensemble methods, Bagging, boosting, and",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst412-pattern-recognition-04-module-4-hidden-markov-models-hmms-hidden-markov-models-hmms-basics-of-hmms-hmm-for-sequence",
-            "title": "Hidden Markov Models (HMMs) - Basics of HMMs, HMM for sequence",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst412-pattern-recognition-04-module-4-structural-pattern-recognition-applications",
         "title": "Module 4: Structural pattern recognition applications",
         "topics": [
@@ -2887,42 +1231,6 @@
     "semester": 4,
     "modules": [
       {
-        "id": "cs-4-pecst413-functional-programming-01-module-1-introducing-functional-programming",
-        "title": "Module 1: Introducing functional programming",
-        "topics": [
-          {
-            "id": "cs-4-pecst413-functional-programming-01-module-1-introducing-functional-programming-basic-types-and-definitions",
-            "title": "Basic Types and Definitions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-01-module-1-introducing-functional-programming-data-types-tuples-and-lists",
-            "title": "Data Types, Tuples and Lists",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-01-module-1-introducing-functional-programming-designing-and-writing-programs",
-            "title": "Designing and Writing Programs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-01-module-1-introducing-functional-programming-getting-started-with-haskell-and-ghci",
-            "title": "Getting Started with Haskell and GHCi",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-01-module-1-introducing-functional-programming-introducing-functional-programming",
-            "title": "Introducing Functional Programming",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst413-functional-programming-01-module-1-lambda-calculus-declarative-code-patterns",
         "title": "Module 1: Lambda calculus declarative code patterns",
         "topics": [
@@ -2947,36 +1255,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst413-functional-programming-02-module-2-programming-with-lists",
-        "title": "Module 2: Programming with lists",
-        "topics": [
-          {
-            "id": "cs-4-pecst413-functional-programming-02-module-2-programming-with-lists-defining-functions-over-lists",
-            "title": "Defining Functions over Lists",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-02-module-2-programming-with-lists-playing-the-game-i-o-in-haskell",
-            "title": "Playing the Game: I/O in Haskell",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-02-module-2-programming-with-lists-programming-with-lists",
-            "title": "Programming with Lists",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-02-module-2-programming-with-lists-reasoning-about-programs",
-            "title": "Reasoning about Programs",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst413-functional-programming-02-module-2-type-systems-lazy-evaluation",
         "title": "Module 2: Type systems lazy evaluation",
         "topics": [
@@ -2989,36 +1267,6 @@
           {
             "id": "cs-4-pecst413-functional-programming-02-module-2-type-systems-lazy-evaluation-polymorphic-type-tracking-systems-hindley-milner-type-inference-structures",
             "title": "Polymorphic type tracking systems, Hindley-Milner type inference structures",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst413-functional-programming-03-module-3-generalization-patterns-of-computation",
-        "title": "Module 3: Generalization patterns of computation",
-        "topics": [
-          {
-            "id": "cs-4-pecst413-functional-programming-03-module-3-generalization-patterns-of-computation-developing-higher-order-programs",
-            "title": "Developing Higher-order Programs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-03-module-3-generalization-patterns-of-computation-generalization-patterns-of-computation",
-            "title": "Generalization: Patterns of Computation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-03-module-3-generalization-patterns-of-computation-higher-order-functions",
-            "title": "Higher-order Functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-03-module-3-generalization-patterns-of-computation-overloading-type-classes-and-type-checking",
-            "title": "Overloading, Type Classes and Type Checking",
             "content": "",
             "pyqs": []
           }
@@ -3043,42 +1291,6 @@
           {
             "id": "cs-4-pecst413-functional-programming-03-module-3-monads-functors-abstractions-state-computation-wrappers-implementations-inside-functional-blocks-frameworks",
             "title": "State computation wrappers implementations inside functional blocks frameworks",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst413-functional-programming-04-module-4-algebraic-types",
-        "title": "Module 4: Algebraic types",
-        "topics": [
-          {
-            "id": "cs-4-pecst413-functional-programming-04-module-4-algebraic-types-abstract-data-types",
-            "title": "Abstract Data Types",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-04-module-4-algebraic-types-algebraic-types",
-            "title": "Algebraic Types",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-04-module-4-algebraic-types-case-study-huffman-codes",
-            "title": "Case Study - Huffman Codes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-04-module-4-algebraic-types-lazy-programming",
-            "title": "Lazy Programming",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst413-functional-programming-04-module-4-algebraic-types-time-and-space-behaviour",
-            "title": "Time and Space Behaviour",
             "content": "",
             "pyqs": []
           }
@@ -3118,42 +1330,6 @@
     "semester": 4,
     "modules": [
       {
-        "id": "cs-4-pecst414-coding-theory-01-module-1-binary-block-codes-minimum-distance-error",
-        "title": "Module 1: Binary block codes minimum distance error",
-        "topics": [
-          {
-            "id": "cs-4-pecst414-coding-theory-01-module-1-binary-block-codes-minimum-distance-error-binary-block-codes-minimum-distance-error-detecting-capability-and-error-correcting-capability",
-            "title": "Binary block codes, Minimum distance, Error-detecting capability and error-correcting capability.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-01-module-1-binary-block-codes-minimum-distance-error-distance-properties-of-linear-block-codes",
-            "title": "Distance properties of linear block codes.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-01-module-1-binary-block-codes-minimum-distance-error-introduction-to-linear-block-codes-generator-matrix-and-parity-check-matrix",
-            "title": "Introduction to linear block codes, generator matrix and parity check matrix.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-01-module-1-binary-block-codes-minimum-distance-error-properties-of-linear-block-codes-syndrome-error-detection",
-            "title": "Properties of linear block codes: Syndrome, error detection.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-01-module-1-binary-block-codes-minimum-distance-error-single-parity-check-codes-hamming-codes-reed-muller-codes",
-            "title": "Single parity check codes, Hamming codes, Reed Muller codes.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst414-coding-theory-01-module-1-linear-block-codes",
         "title": "Module 1: Linear block codes",
         "topics": [
@@ -3190,30 +1366,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst414-coding-theory-02-module-2-cyclic-codes-generator-and-parity",
-        "title": "Module 2: Cyclic codes generator and parity",
-        "topics": [
-          {
-            "id": "cs-4-pecst414-coding-theory-02-module-2-cyclic-codes-generator-and-parity-cyclic-codes-generator-and-parity-check-matrices-of-cyclic-codes",
-            "title": "Cyclic Codes : Generator and Parity-Check Matrices of Cyclic Codes.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-02-module-2-cyclic-codes-generator-and-parity-decoding-of-cyclic-codes-cyclic-hamming-codes-shortened-cyclic-codes",
-            "title": "Decoding of Cyclic Codes, Cyclic Hamming Codes, Shortened Cyclic Codes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-02-module-2-cyclic-codes-generator-and-parity-encoding-of-cyclic-codes-syndrome-computation-and-error-detection",
-            "title": "Encoding of Cyclic Codes, Syndrome Computation and Error Detection",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst414-coding-theory-03-module-3-burst-error-correction-frameworks",
         "title": "Module 3: Burst error correction frameworks",
         "topics": [
@@ -3232,36 +1384,6 @@
           {
             "id": "cs-4-pecst414-coding-theory-03-module-3-burst-error-correction-frameworks-mds-codes-parameters-check-lines-structural-boundaries-matrices-specifications",
             "title": "MDS codes parameters check lines structural boundaries matrices specifications",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst414-coding-theory-03-module-3-convolutional-codes-encoding-state-diagram-trellis-diagram",
-        "title": "Module 3: Convolutional codes encoding state diagram trellis diagram",
-        "topics": [
-          {
-            "id": "cs-4-pecst414-coding-theory-03-module-3-convolutional-codes-encoding-state-diagram-trellis-diagram-classification-realization-distance-properties",
-            "title": "Classification, realization, distance properties.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-03-module-3-convolutional-codes-encoding-state-diagram-trellis-diagram-convolutional-codes-encoding-state-diagram-trellis-diagram",
-            "title": "Convolutional codes: Encoding, state diagram, trellis diagram",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-03-module-3-convolutional-codes-encoding-state-diagram-trellis-diagram-performance-bounds-for-convolutional-codes",
-            "title": "Performance bounds for convolutional codes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-03-module-3-convolutional-codes-encoding-state-diagram-trellis-diagram-viterbi-algorithm-bcjr-algorithm",
-            "title": "Viterbi algorithm, BCJR algorithm.",
             "content": "",
             "pyqs": []
           }
@@ -3290,36 +1412,6 @@
             "pyqs": []
           }
         ]
-      },
-      {
-        "id": "cs-4-pecst414-coding-theory-04-module-4-turbo-codes-turbo-decoding-distance-properties-of-turbo-codes",
-        "title": "Module 4: Turbo codes turbo decoding distance properties of turbo codes",
-        "topics": [
-          {
-            "id": "cs-4-pecst414-coding-theory-04-module-4-turbo-codes-turbo-decoding-distance-properties-of-turbo-codes-applications-of-linear-codes",
-            "title": "Applications of linear codes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-04-module-4-turbo-codes-turbo-decoding-distance-properties-of-turbo-codes-automatic-repeat-request-schemes",
-            "title": "Automatic repeat request schemes.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-04-module-4-turbo-codes-turbo-decoding-distance-properties-of-turbo-codes-convergence-of-turbo-codes",
-            "title": "Convergence of turbo codes.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst414-coding-theory-04-module-4-turbo-codes-turbo-decoding-distance-properties-of-turbo-codes-turbo-codes-turbo-decoding-distance-properties-of-turbo-codes",
-            "title": "Turbo codes: Turbo decoding, Distance properties of turbo codes",
-            "content": "",
-            "pyqs": []
-          }
-        ]
       }
     ]
   },
@@ -3330,138 +1422,6 @@
     "branchId": "cs",
     "semester": 4,
     "modules": [
-      {
-        "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design",
-        "title": "Module 1: Cmos fundamentals for digital vlsi design",
-        "topics": [
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-cmos",
-            "title": "CMOS",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-cmos-fundamentals-for-digital-vlsi-design",
-            "title": "CMOS Fundamentals for Digital VLSI Design :",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-cmos-inverter",
-            "title": "CMOS Inverter",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-cmos-logic-gates",
-            "title": "CMOS logic gates",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-combinational-circuits-timing-rise-time",
-            "title": "Combinational Circuits Timing - Rise Time",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-cpn-junction",
-            "title": "CPN junction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-fall-time",
-            "title": "Fall time",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-flip-flops-and-latches",
-            "title": "flip-flops and latches",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-frequency-of-operation",
-            "title": "Frequency of Operation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-hold-time",
-            "title": "Hold Time",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-introduction-to-sequential-logic-circuits",
-            "title": "Introduction to sequential logic circuits",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-mos-transistor-theory-and-operation",
-            "title": "MOS transistor theory and operation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-nmos",
-            "title": "NMOS",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-pipelining",
-            "title": "Pipelining",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-pmos",
-            "title": "PMOS",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-propagation-delay",
-            "title": "Propagation Delay",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-static-and-dynamic-timing-analysis",
-            "title": "Static and Dynamic Timing Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-timing-analysis-set-up-time",
-            "title": "Timing analysis - Set-up time",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-tristate-buffer",
-            "title": "Tristate buffer",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-tristate-inverter",
-            "title": "Tristate Inverter",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-01-module-1-cmos-fundamentals-for-digital-vlsi-design-voltage-transfer-curve",
-            "title": "Voltage Transfer Curve",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
       {
         "id": "cs-4-pecst415-vlsi-design-01-module-1-mos-transistor-theory",
         "title": "Module 1: Mos transistor theory",
@@ -3529,78 +1489,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics",
-        "title": "Module 2: Introduction to integrated circuits ics",
-        "topics": [
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-a-system-perspective",
-            "title": "A System Perspective",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-array-based-design",
-            "title": "array based design",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-behavioural-synthesis",
-            "title": "Behavioural Synthesis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-cmos-fabrication-process-overview-photolithography",
-            "title": "CMOS fabrication process overview-  Photolithography",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-example-video-compression",
-            "title": "example Video compression",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-functional-specification-to-rtl",
-            "title": "Functional Specification to RTL",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-hardware-software-partitioning",
-            "title": "Hardware – Software Partitioning",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-introduction-to-integrated-circuits-ics",
-            "title": "Introduction to Integrated Circuits (ICs):",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-semi-custom-design",
-            "title": "Semi-custom design",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-structure-of-an-integrated-circuit",
-            "title": "Structure of an Integrated Circuit",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-02-module-2-introduction-to-integrated-circuits-ics-types-of-design-flow-custom-design",
-            "title": "Types of Design flow - Custom design",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst415-vlsi-design-03-module-3-combinational-logic-circuits",
         "title": "Module 3: Combinational logic circuits",
         "topics": [
@@ -3625,156 +1513,6 @@
           {
             "id": "cs-4-pecst415-vlsi-design-03-module-3-combinational-logic-circuits-static-cmos-logic-gates-design",
             "title": "Static CMOS logic gates design",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst415-vlsi-design-03-module-3-semi",
-        "title": "Module 3: Semi",
-        "topics": [
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-abstraction-in-vlsi-design-flow-gajski-kuhn-s-y-chart",
-            "title": "Abstraction in VLSI Design Flow- Gajski-Kuhn’s Y-chart",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-design-verification-simulation-using-testbench",
-            "title": "Design Verification- Simulation using Testbench",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-equivalence-checking",
-            "title": "Equivalence Checking",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-floor-plan",
-            "title": "Floor plan-",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-global-and-detailed-placement",
-            "title": "Global and  Detailed Placement",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-global-and-detailed-routing",
-            "title": "Global and Detailed Routing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-hardware-design-using-hardware-description-languages",
-            "title": "Hardware design using hardware description Languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-logic-synthesis",
-            "title": "Logic Synthesis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-micro-project",
-            "title": "Micro project*",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-physical-design-min-cut-partitioning",
-            "title": "Physical Design- Min-cut Partitioning",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-property-checking",
-            "title": "Property Checking",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-semi-custom-design-flow",
-            "title": "Semi-custom Design flow",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-03-module-3-semi-static-timing-analysis",
-            "title": "Static Timing Analysis",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models",
-        "title": "Module 4: Finite state machines fsms mealy and moore models",
-        "topics": [
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-field-programmable-gate-arrays-fpgas",
-            "title": "Field Programmable Gate Arrays (FPGAs)  :",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-finite-state-machines-fsms-mealy-and-moore-models",
-            "title": "Finite State Machines (FSMs):  Mealy and Moore models",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-fpga-architecture-programming-technology",
-            "title": "FPGA Architecture- Programming Technology",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-fpga-design-flow",
-            "title": "FPGA  Design Flow",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-micro-project",
-            "title": "Micro project*",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-programmable-i-o-blocks",
-            "title": "Programmable I/O blocks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-programmable-interconnects",
-            "title": "Programmable Interconnects",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-programmable-logical-blocks",
-            "title": "Programmable logical blocks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-soc-design-on-fpga",
-            "title": "SoC Design on FPGA",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst415-vlsi-design-04-module-4-finite-state-machines-fsms-mealy-and-moore-models-verilog-hdl-design-and-implementation-of-risc-stored-programmed-machine",
-            "title": "Verilog HDL Design and implementation of RISC stored programmed Machine",
             "content": "",
             "pyqs": []
           }
@@ -3820,174 +1558,6 @@
     "semester": 4,
     "modules": [
       {
-        "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals",
-        "title": "Module 1: 1d signals",
-        "topics": [
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-1d-signals-a-general-introduction-to-real-time-signals-ct-and-dt-signals",
-            "title": "1D Signals  - A general introduction to real time signals - CT and DT signals",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-analog-frequency-and-digital-frequency",
-            "title": "Analog frequency and Digital frequency.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-bounded-sequences",
-            "title": "Bounded Sequences.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-complex-exponential-sequences",
-            "title": "Complex Exponential Sequences.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-dtfs-determining-the-fourier-series-representation-of-a-sequence",
-            "title": "DTFS - Determining the Fourier-Series Representation of a Sequence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-duality",
-            "title": "Duality",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-elementary-sequences-real-sinusoidal-sequences",
-            "title": "Elementary sequences- Real Sinusoidal Sequences",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-energy-and-power-signals",
-            "title": "Energy and Power signals.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-even-odd-symmetry",
-            "title": "Even/Odd symmetry",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-modulation-frequency-shifting",
-            "title": "Modulation (Frequency Shifting)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-operations-on-signals-time-shifting-translation",
-            "title": "Operations on Signals  - Time shifting (Translation)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-parseval-s-relation",
-            "title": "Parseval’s Relation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-periodic-and-non-periodic-signal",
-            "title": "Periodic and non periodic signal",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-periodicity-and-symmetry-property-of-dt-signals",
-            "title": "Periodicity and Symmetry property of DT signals",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-properties-of-discrete-time-fourier-series-linearity",
-            "title": "Properties of Discrete-Time Fourier Series - Linearity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-properties-of-dt-signals-even-and-odd",
-            "title": "Properties of DT Signals  - Even and Odd",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-real-sequence",
-            "title": "Real sequence.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-reflection-time-reversal",
-            "title": "Reflection (Time Reversal)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-representation-of-discrete-time-signals-graphical-representation-functional-representation-sequence",
-            "title": "Representation of discrete time signals- (Graphical representation, Functional representation, Sequence representation)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-sampling-and-aliasing-concept-only",
-            "title": "Sampling and Aliasing (Concept only)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-sinusoids",
-            "title": "Sinusoids",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-spectrum-representation",
-            "title": "Spectrum representation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-support-of-sequences",
-            "title": "support of sequences",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-time-reversal-reflection",
-            "title": "Time Reversal (Reflection)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-time-scaling-upsampling-and-downsampling",
-            "title": "Time scaling - Upsampling and downsampling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-translation-time-shifting",
-            "title": "Translation (Time Shifting)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-01-module-1-1d-signals-unit-impulse-step-and-ramp-sequences",
-            "title": "Unit impulse, step and ramp sequences",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst416-signals-and-systems-01-module-1-signal-classification-lti-systems",
         "title": "Module 1: Signal classification lti systems",
         "topics": [
@@ -4012,102 +1582,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete",
-        "title": "Module 2: Discrete",
-        "topics": [
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-bandwidth-of-sequences",
-            "title": "Bandwidth of Sequences",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-characterizing-lti-systems-using-the-fourier-transform",
-            "title": "Characterizing LTI Systems Using the Fourier Transform.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-conjugation",
-            "title": "Conjugation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-differencing",
-            "title": "Differencing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-discrete-time-fourier-transform-for-aperiodic-sequences-properties-of-the-discrete-time-fourier",
-            "title": "Discrete-Time Fourier Transform for Aperiodic Sequences - Properties of the Discrete-Time Fourier Transform (Periodicity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-dtft-of-periodic-sequences-frequency-spectra-of-sequences",
-            "title": "DTFT of periodic sequences - Frequency Spectra of Sequences",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-energy-density-spectra",
-            "title": "Energy density spectra",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-even-odd-symmetry",
-            "title": "Even/Odd symmetry",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-frequency-domain-differentiation",
-            "title": "Frequency-Domain Differentiation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-linearity",
-            "title": "Linearity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-modulation-frequency-domain-shifting",
-            "title": "Modulation (Frequency-Domain Shifting)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-multiplication",
-            "title": "Multiplication",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-parseval-s-theorem",
-            "title": "Parseval's theorem",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-real-sequences",
-            "title": "real sequences)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-02-module-2-discrete-translation-time-shifting",
-            "title": "Translation (Time Shifting)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst416-signals-and-systems-02-module-2-transform-domain-analysis",
         "title": "Module 2: Transform domain analysis",
         "topics": [
@@ -4126,90 +1600,6 @@
           {
             "id": "cs-4-pecst416-signals-and-systems-02-module-2-transform-domain-analysis-z-transform-properties-system-functions-determination-stability-assessments",
             "title": "Z-transform properties: System functions determination, stability assessments",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems",
-        "title": "Module 3: Discrete time systems",
-        "topics": [
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-bibo-stability",
-            "title": "BIBO Stability",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-characterizing-lti-systems-and-convolution-impulse-response-of-an-lti-system",
-            "title": "Characterizing LTI Systems and Convolution - Impulse  response of an LTI system",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-difference-equation",
-            "title": "Difference equation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-discrete-time-lti-systems-discrete-time-convolution",
-            "title": "Discrete time LTI systems - Discrete time convolution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-discrete-time-systems-block-diagram-representation-and-mathematical-representation-of-discrete-time",
-            "title": "Discrete time systems - Block diagram representation and mathematical representation of discrete-time systems-Some common elements of Discrete-time systems (adder, constant multiplier, signal multiplier, unit delay, unit advance)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-eigen-sequences-eigen-functions-for-discrete-time-lti-systems",
-            "title": "Eigen Sequences/ eigen functions for discrete-Time LTI Systems.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-invertibility",
-            "title": "Invertibility",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-linearity-and-time-invariance-property-of-a-dt-system",
-            "title": "Linearity and time invariance property of a DT system.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-memory",
-            "title": "Memory",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-properties-of-an-lti-system-causality",
-            "title": "Properties of an LTI system - Causality",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-properties-of-convolution",
-            "title": "Properties of Convolution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-recursive-dt-systems-and-non-recursive-discrete-time-systems",
-            "title": "Recursive DT systems and non recursive discrete time systems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-03-module-3-discrete-time-systems-relaxed-system",
-            "title": "Relaxed system",
             "content": "",
             "pyqs": []
           }
@@ -4262,132 +1652,6 @@
             "pyqs": []
           }
         ]
-      },
-      {
-        "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform",
-        "title": "Module 4: Z transform",
-        "topics": [
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-block-diagram-representation-of-discrete-time-lti-systems",
-            "title": "Block Diagram Representation of Discrete-Time LTI Systems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-characterizing-lti-systems-using-z-transform",
-            "title": "Characterizing LTI systems using z transform",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-complex-modulation-z-domain-scaling",
-            "title": "Complex Modulation (z-Domain Scaling)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-conjugation",
-            "title": "Conjugation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-convolution",
-            "title": "Convolution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-determination-of-the-inverse-z-transform",
-            "title": "Determination of the Inverse z Transform",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-differencing",
-            "title": "Differencing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-downsampling",
-            "title": "Downsampling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-initial-and-final-value-theorems",
-            "title": "Initial and Final Value Theorems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-interconnection-of-lti-systems",
-            "title": "Interconnection of LTI systems.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-lti-systems-and-difference-equations",
-            "title": "LTI systems and difference equations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-properties-of-z-transform-translation-time-shifting",
-            "title": "Properties of z transform - Translation (Time Shifting)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-region-of-convergence-for-the-z-transform",
-            "title": "Region of Convergence for the z Transform.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-relationship-between-z-transform-and-discrete-time-fourier-transform",
-            "title": "Relationship Between z Transform and Discrete-Time Fourier Transform",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-solving-difference-equations-using-the-unilateral-z-transform",
-            "title": "Solving Difference Equations Using the Unilateral z Transform",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-time-reversal",
-            "title": "Time Reversal",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-transfer-function-of-an-lti-system",
-            "title": "Transfer function of an LTI system.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-upsampling-time-expansion",
-            "title": "Upsampling (Time Expansion",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-z-domain-differentiation",
-            "title": "z- Domain Differentiation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst416-signals-and-systems-04-module-4-z-transform-z-transform-motivation-for-z-transform",
-            "title": "Z transform  - motivation for z transform",
-            "content": "",
-            "pyqs": []
-          }
-        ]
       }
     ]
   },
@@ -4423,144 +1687,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing",
-        "title": "Module 1: Introduction to soft computing",
-        "topics": [
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-adaptive-linear-neuron-architecture-training-and-testing-algorithm",
-            "title": "Adaptive Linear Neuron– Architecture, Training and testing algorithm.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-applications-of-soft-computing",
-            "title": "Applications of Soft Computing.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-artificial-neurons-vs-biological-neurons",
-            "title": "Artificial Neurons Vs Biological Neurons.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-basic-models-of-artificial-neural-networks-connections-learning-activation-functions",
-            "title": "Basic models of artificial neural networks – Connections, Learning, Activation Functions.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-difference-between-hard-computing-soft-computing",
-            "title": "Difference between Hard Computing & Soft Computing.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-hebb-network",
-            "title": "Hebb network",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-introduction-to-soft-computing",
-            "title": "Introduction to Soft Computing.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-mcculloch-and-pitts-neuron",
-            "title": "McCulloch and Pitts Neuron.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-01-module-1-introduction-to-soft-computing-perceptron-networks-learning-rule-training-and-testing-algorithm",
-            "title": "Perceptron Networks– Learning rule, Training and testing algorithm.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic",
-        "title": "Module 2: Fuzzy logic",
-        "topics": [
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-defuzzification-lamda-cuts",
-            "title": "Defuzzification– Lamda cuts",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-defuzzification-methods",
-            "title": "Defuzzification methods.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-features-of-fuzzy-membership-functions",
-            "title": "Features of Fuzzy membership functions.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-fuzy-if-then-rules",
-            "title": "Fuzy If-Then Rules",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-fuzzification",
-            "title": "Fuzzification",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-fuzzy-inference-mechanism-mamdani-and-sugeno-types",
-            "title": "Fuzzy Inference mechanism - Mamdani and Sugeno types.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-fuzzy-logic",
-            "title": "Fuzzy logic",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-fuzzy-membership-functions",
-            "title": "Fuzzy membership functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-fuzzy-sets-properties",
-            "title": "Fuzzy sets – Properties",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-linguistic-hedges-fuzzy-relations",
-            "title": "Linguistic hedges Fuzzy Relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-linguistic-variables",
-            "title": "Linguistic variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-02-module-2-fuzzy-logic-operations-on-fuzzy-set",
-            "title": "operations on fuzzy set.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst417-soft-computing-02-module-2-genetic-algorithms",
         "title": "Module 2: Genetic algorithms",
         "topics": [
@@ -4585,60 +1711,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing",
-        "title": "Module 3: Evolutionary computing",
-        "topics": [
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-concepts-of-genetic-algorithm",
-            "title": "Concepts of genetic algorithm.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-cross-over",
-            "title": "cross over",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-evolutionary-computing",
-            "title": "Evolutionary Computing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-mutation",
-            "title": "mutation.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-operators-in-genetic-algorithm-coding",
-            "title": "Operators in genetic algorithm - coding",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-selection",
-            "title": "selection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-stopping-condition-for-genetic-algorithm",
-            "title": "Stopping condition for genetic algorithm.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-03-module-3-evolutionary-computing-terminologies-of-evolutionary-computing",
-            "title": "Terminologies of Evolutionary Computing",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst417-soft-computing-03-module-3-neuro-fuzzy-systems-integration",
         "title": "Module 3: Neuro fuzzy systems integration",
         "topics": [
@@ -4657,66 +1729,6 @@
           {
             "id": "cs-4-pecst417-soft-computing-03-module-3-neuro-fuzzy-systems-integration-fuzzy-neural-networks-tracking-structure-initialization-setups-rules",
             "title": "Fuzzy neural networks tracking structure initialization setups rules",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst417-soft-computing-04-module-4-multi",
-        "title": "Module 4: Multi",
-        "topics": [
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-ant-colony-optimization",
-            "title": "Ant Colony Optimization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-biological-self-organization",
-            "title": "Biological Self-Organization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-collective-systems",
-            "title": "Collective Systems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-dominance-and-pareto-optimality",
-            "title": "Dominance and pareto-optimality.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-multi-objective-optimization-problem",
-            "title": "Multi-objective optimization problem.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-optimality-conditions",
-            "title": "Optimality conditions.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-particle-swarm-optimization",
-            "title": "Particle Swarm Optimization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-principles-of-multi-objective-optimization",
-            "title": "Principles of Multi- objective optimization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst417-soft-computing-04-module-4-multi-swarm-robotics",
-            "title": "Swarm Robotics.",
             "content": "",
             "pyqs": []
           }
@@ -4774,150 +1786,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry",
-        "title": "Module 1: Introduction to computational geometry",
-        "topics": [
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-basic-geometric-primitives-points-lines-segments-polygons-text-1-chapters-1-2",
-            "title": "Basic geometric primitives: points, lines, segments, polygons (Text 1, Chapters 1, 2)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-bentley-ottmann-algorithm-text-3-chapter-7",
-            "title": "Bentley-Ottmann algorithm (Text 3, Chapter 7)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-convex-hulls-definition-and-properties-of-convex-hulls",
-            "title": "Convex Hulls  - Definition and properties of convex hulls",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-divide-and-conquer-algorithm-for-convex-hulls-text-2-section-33-3",
-            "title": "Divide and conquer algorithm for convex hulls (Text 2, Section 33.3)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-geometric-objects-and-their-representations",
-            "title": "Geometric objects, and their representations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-graham-s-scan-algorithm",
-            "title": "Graham's scan algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-introduction-to-computational-geometry-basics-of-computational-geometry-introduction-and",
-            "title": "Introduction to Computational Geometry:-  Basics of Computational Geometry  - Introduction and applications of computational geometry",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-jarvis-s-march-gift-wrapping-algorithm",
-            "title": "Jarvis's march (gift wrapping) algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-line-segment-intersection-problem-definition-and-applications",
-            "title": "Line Segment Intersection  - Problem definition and applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-01-module-1-introduction-to-computational-geometry-plane-sweep-algorithm",
-            "title": "Plane sweep algorithm",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams",
-        "title": "Module 2: Polygon triangulation and voronoi diagrams",
-        "topics": [
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-bowyer-watson-algorithm",
-            "title": "Bowyer-Watson algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-chazelle-s-algorithm-text-1-chapter-3",
-            "title": "Chazelle's algorithm (Text 1, Chapter 3)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-delaunay-triangulations-definition-and-properties",
-            "title": "Delaunay Triangulations  - Definition and properties",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-ear-clipping-method",
-            "title": "Ear clipping method",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-fortune-s-sweep-line-algorithm-text-1-chapter-7",
-            "title": "Fortune's sweep line algorithm (Text 1, Chapter 7)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-incremental-construction-algorithm",
-            "title": "Incremental construction algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-lawson-s-flip-algorithm-text-1-chapter-9",
-            "title": "Lawson's flip algorithm (Text 1,  Chapter 9)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-polygon-triangulation-and-voronoi-diagrams",
-            "title": "Polygon Triangulation and Voronoi Diagrams:-",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-polygon-triangulation-definition-and-applications",
-            "title": "Polygon Triangulation  - Definition and applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-relationship-with-voronoi-diagrams",
-            "title": "Relationship with Voronoi diagrams",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-triangulation-of-monotone-polygons",
-            "title": "Triangulation of monotone polygons",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-02-module-2-polygon-triangulation-and-voronoi-diagrams-voronoi-diagrams-definition-and-properties",
-            "title": "Voronoi Diagrams  - Definition and properties",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst418-computational-geometry-02-module-2-triangulations-proximity",
         "title": "Module 2: Triangulations proximity",
         "topics": [
@@ -4954,144 +1822,6 @@
           {
             "id": "cs-4-pecst418-computational-geometry-03-module-3-delaunay-triangulations-range-searching-orthogonal-range-searching-structures-kd-trees-initialization-range-trees-query-tracking-loops",
             "title": "Orthogonal range searching structures: Kd-trees initialization, range trees query tracking loops",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location",
-        "title": "Module 3: Range searching and point location",
-        "topics": [
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-1-dimensional-range-searching",
-            "title": "1-dimensional range searching",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-binary-space-partitioning-definition-and-applications",
-            "title": "Binary Space Partitioning  - Definition and applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-bsp-trees-construction-and-properties",
-            "title": "BSP trees construction and properties",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-fractional-cascading-text-1-chapter-5",
-            "title": "Fractional cascading (Text 1, Chapter 5)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-k-dimensional-range-trees",
-            "title": "K-dimensional range trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-kirkpatrick-s-point-location-algorithm-text-1-chapter-6",
-            "title": "Kirkpatrick’s point location algorithm (Text 1, Chapter 6)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-point-location-problem-definition-and-applications",
-            "title": "Point Location  - Problem definition and applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-range-searching-and-point-location",
-            "title": "Range Searching and Point Location :-",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-range-searching-problem-definition-and-applications",
-            "title": "Range Searching  - Problem definition and applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-trapezoidal-map-and-randomized-incremental-algorithm",
-            "title": "Trapezoidal map and randomized incremental algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-03-module-3-range-searching-and-point-location-use-in-computer-graphics-and-collision-detection-text-1-chapter-12",
-            "title": "Use in computer graphics and collision detection (Text 1, Chapter 12)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications",
-        "title": "Module 4: Advanced topics and applications",
-        "topics": [
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-advanced-topics-and-applications",
-            "title": "Advanced Topics and Applications :-",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-applications-in-robotics-computer-graphics-gis-text-3-chapters-9-10",
-            "title": "Applications in robotics, computer graphics, GIS (Text 3, Chapters 9, 10)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-arrangements-of-lines-and-duality-arrangements-of-lines-and-complexity",
-            "title": "Arrangements of Lines and Duality  - Arrangements of lines and complexity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-art-gallery-problem",
-            "title": "Art gallery problem",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-computational-geometry-in-practice-computational-geometry-libraries-and-software",
-            "title": "Computational Geometry in Practice  - Computational geometry libraries and software",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-duality-transform-and-its-applications-text-1-chapter-8",
-            "title": "Duality transform and its applications (Text 1, Chapter 8)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-linear-programming-in-geometry-text-1-chapters-10-11",
-            "title": "Linear programming in geometry (Text 1, Chapters 10, 11)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-motion-planning-and-geometric-optimization-problem-definition-and-applications",
-            "title": "Motion Planning and Geometric Optimization  - Problem definition and applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-visibility-graphs-and-shortest-path-problems",
-            "title": "Visibility graphs and shortest path problems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst418-computational-geometry-04-module-4-advanced-topics-and-applications-zone-theorem",
-            "title": "Zone theorem",
             "content": "",
             "pyqs": []
           }
@@ -5153,32 +1883,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-01-module-1-fundamentals-of-cyber-law-and-cyber-space-cyberspace-web-space",
-            "title": "Cyberspace- Web space",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-01-module-1-fundamentals-of-cyber-law-and-cyber-space-evidence-aspects-in-cyber-law",
             "title": "Evidence aspects in cyber law",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-01-module-1-fundamentals-of-cyber-law-and-cyber-space-fundamentals-of-cyber-law-and-cyber-space-introduction-to-cyber-law",
-            "title": "Fundamentals of Cyber Law and Cyber Space:-  Introduction to cyber law",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-01-module-1-fundamentals-of-cyber-law-and-cyber-space-intellectual-property-aspects-in-cyber-law",
             "title": "Intellectual property aspects in cyber law",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-01-module-1-fundamentals-of-cyber-law-and-cyber-space-intellectual-property-aspects-in-cyber-law-and-evidence-aspects-in-cyber-law",
-            "title": "Intellectual property aspects in cyber law and Evidence aspects in cyber law",
             "content": "",
             "pyqs": []
           },
@@ -5237,20 +1949,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-artificial-intelligence-ethics-ethical-issues-in-ai-and-core-principles",
-            "title": "Artificial Intelligence Ethics- Ethical Issues in AI and core Principles",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-block-chain-ethics",
             "title": "Block chain Ethics",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-block-chain-ethics-definition-and-description",
-            "title": "Block chain Ethics- Definition and Description.",
             "content": "",
             "pyqs": []
           },
@@ -5261,32 +1961,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-cyber-crime-and-cyber-ethics-cyber-crime-and-cyber-ethics-introduction-to-cybercrime-definition-and",
-            "title": "Cyber crime and Cyber Ethics:- Cyber crime and Cyber Ethics:- Introduction to cybercrime- Definition and Origins of Cyber crime-Classifications of Cybercrime",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-cyber-ethics",
             "title": "Cyber Ethics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-cyber-ethics-the-importance-of-cyber-law",
-            "title": "Cyber Ethics:  The Importance of Cyber Law",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-cyber-offences",
             "title": "Cyber Offences",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-cyber-offences-strategic-attacks",
-            "title": "Cyber Offences- Strategic Attacks",
             "content": "",
             "pyqs": []
           },
@@ -5381,12 +2063,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-03-module-3-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-in-cyberspace",
-            "title": "Data Protection and Privacy Concerns in Cyberspace : Need to protect data in cyberspace",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-03-module-3-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-data-protection-bill-an-overview",
             "title": "Data protection bill -an overview",
             "content": "",
@@ -5453,12 +2129,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-information-security-standards-iso",
-            "title": "Information Security Standards- ISO",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-information-technology-act-2000",
             "title": "Information Technology Act, 2000",
             "content": "",
@@ -5505,12 +2175,6 @@
             "title": "Right to Information Act, 2005",
             "content": "",
             "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-security-policies-and-information-technology-act-need-for-an-information-security-policy",
-            "title": "Security Policies and Information Technology Act Need for an Information Security policy",
-            "content": "",
-            "pyqs": []
           }
         ]
       }
@@ -5523,66 +2187,6 @@
     "branchId": "cs",
     "semester": 4,
     "modules": [
-      {
-        "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures",
-        "title": "Module 1: Foundational data structures",
-        "topics": [
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-applications-to-data-science-heavy-hitters-and-count-min-structures",
-            "title": "Applications to Data Science - Heavy Hitters and count-min structures",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-applications-to-networks-click-stream-processing-using-bloom-filters",
-            "title": "Applications to Networks - Click Stream Processing using Bloom Filters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-bloom-filters-count-min-sketch",
-            "title": "Bloom Filters - Count-Min Sketch",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-cuckoo-hashing",
-            "title": "Cuckoo Hashing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-foundational-data-structures-overview-of-arrays-and-linked-lists",
-            "title": "Foundational Data Structures- Overview of Arrays and Linked Lists",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-hash-functions",
-            "title": "Hash functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-hashing-hash-tables",
-            "title": "Hashing - Hash Tables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-implementation-of-pointers-and-objects",
-            "title": "implementation of pointers and objects",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-01-module-1-foundational-data-structures-representing-rooted-trees",
-            "title": "Representing rooted trees",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
       {
         "id": "cs-4-pecst495-advanced-data-structures-01-module-1-self-balancing-trees",
         "title": "Module 1: Self balancing trees",
@@ -5626,60 +2230,6 @@
         ]
       },
       {
-        "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures",
-        "title": "Module 2: Advanced tree data structures",
-        "topics": [
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-advanced-tree-data-structures-balanced-trees-avl-trees-review",
-            "title": "Advanced Tree Data Structures  - Balanced Trees - AVL Trees (review)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-applications-to-information-retrieval-and-www-autocomplete-using-tries",
-            "title": "Applications to information Retrieval and WWW -   AutoComplete using Tries",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-fibonacci-heaps",
-            "title": "Fibonacci Heaps",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-heaps-and-related-structures-binomial-heap",
-            "title": "Heaps and Related Structures – Binomial heap",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-merkle-trees",
-            "title": "Merkle Trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-red-black-trees",
-            "title": "Red-Black Trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-segment-trees",
-            "title": "Segment Trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-02-module-2-advanced-tree-data-structures-suffix-trees-and-arrays",
-            "title": "Suffix Trees and Arrays",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-4-pecst495-advanced-data-structures-03-module-3-spatial-multidimensional-indexing",
         "title": "Module 3: Spatial multidimensional indexing",
         "topics": [
@@ -5698,120 +2248,6 @@
           {
             "id": "cs-4-pecst495-advanced-data-structures-03-module-3-spatial-multidimensional-indexing-segment-trees-interval-tracking-frameworks-complexity-metrics-calculations-tracking",
             "title": "Segment trees interval tracking frameworks complexity metrics calculations tracking",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures",
-        "title": "Module 3: Specialized data structures",
-        "topics": [
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-applications-to-data-science-approximate-nearest-neighbor-search",
-            "title": "Applications to Data Science - Approximate nearest neighbor search",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-applications-to-information-retrieval-and-www",
-            "title": "Applications to information Retrieval and WWW",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-k-d-trees-k-dimensional-tree",
-            "title": "K-D Trees (k-dimensional tree)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-posting-list-intersection",
-            "title": "Posting List intersection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-r-trees",
-            "title": "R-trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-retroactivity",
-            "title": "Retroactivity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-search-and-optimization-trees-skip-list",
-            "title": "Search and Optimization Trees – Skip List",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-specialized-data-structures-spatial-data-structures-quadtree",
-            "title": "Specialized Data Structures - Spatial Data Structures – Quadtree",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-tango-trees",
-            "title": "Tango Trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-03-module-3-specialized-data-structures-temporal-data-structures-persistence",
-            "title": "Temporal Data Structures- Persistence",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications",
-        "title": "Module 4: Data structure applications",
-        "topics": [
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications-consistent-hashing",
-            "title": "Consistent Hashing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications-cryptographic-applications-hashing",
-            "title": "Cryptographic Applications – Hashing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications-data-compression-and-transformations-burrows-wheeler-transform",
-            "title": "Data Compression and Transformations - Burrows-Wheeler Transform",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications-data-structure-applications-distributed-and-parallel-data-structures-distributed-hash-tables-dhts",
-            "title": "Data Structure applications - Distributed and Parallel Data Structures - Distributed Hash Tables (DHTs)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications-distributed-bst",
-            "title": "Distributed BST",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications-histogram",
-            "title": "Histogram",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pecst495-advanced-data-structures-04-module-4-data-structure-applications-wavelet-trees",
-            "title": "Wavelet Trees",
             "content": "",
             "pyqs": []
           }
@@ -6029,12 +2465,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost",
-            "title": "Social cost, private cost",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-sunk-cost",
             "title": "Sunk cost",
             "content": "",
@@ -6217,12 +2647,6 @@
           {
             "id": "cs-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value",
             "title": "Cost Value",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value-exchange-value-use-value-esteem-value",
-            "title": "Cost Value, Exchange Value, Use Value, Esteem Value",
             "content": "",
             "pyqs": []
           },
