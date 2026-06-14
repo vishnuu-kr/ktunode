@@ -1,5 +1,617 @@
 [
   {
+    "id": "cs-8-pecst864-computational-complexity",
+    "code": "PECST864-COMPUTATIONAL-COMPLEXITY",
+    "name": "PECST864 COMPUTATIONAL COMPLEXITY",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst864-computational-complexity-01-module-1-complexity-hierarchy-foundations",
+        "title": "Module 1: Complexity Hierarchy Foundations",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-complexity-hierarchy-foundations-deterministic-space-metrics-configuration-structural-models-dspace-nspace-boundary-metrics",
+            "title": "Deterministic space metrics configuration structural models: DSPACE, NSPACE boundary metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-complexity-hierarchy-foundations-savitch-s-theorem-matrix-expansion-formulation-proof-calculation-equations-algorithms-structures",
+            "title": "Savitch's theorem matrix expansion formulation proof calculation equations algorithms structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-01-module-1-complexity-hierarchy-foundations-the-polynomial-hierarchy-ph-collapse-conditions-tracking-configuration-parameters-loops-setups",
+            "title": "The Polynomial Hierarchy (PH) collapse conditions tracking configuration parameters loops setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst864-computational-complexity-02-module-2-completeness-alternations",
+        "title": "Module 2: Completeness & Alternations",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-completeness-alternations-pspace-complete-verification-criteria-configurations-setups-templates-patterns-profiles-parameters",
+            "title": "PSPACE-complete verification criteria configurations setups templates patterns profiles parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-02-module-2-completeness-alternations-alternating-turing-machine-atm-state-transition-structures-frameworks-layouts-parameters-models",
+            "title": "Alternating Turing Machine (ATM) state transition structures frameworks layouts parameters models",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst864-computational-complexity-03-module-3-probabilistic-complexity-classes",
+        "title": "Module 3: Probabilistic Complexity Classes",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-probabilistic-complexity-classes-randomized-execution-class-profiles-setups-metrics-bpp-rp-zpp-structural-boundary-rules",
+            "title": "Randomized execution class profiles setups metrics: BPP, RP, ZPP structural boundary rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-probabilistic-complexity-classes-error-reduction-amplification-lemmas-derivations-calculations-formulas-loops-tracking-metrics-profiling",
+            "title": "Error reduction amplification lemmas derivations calculations formulas loops tracking metrics profiling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-03-module-3-probabilistic-complexity-classes-polynomial-identity-matching-complexity-ratio-verifications-parameters-profiles-tracking-configurations",
+            "title": "Polynomial identity matching complexity ratio verifications parameters profiles tracking configurations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-bound-systems",
+        "title": "Module 4: Circuit Complexity Bound Systems",
+        "topics": [
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-bound-systems-boolean-circuit-depth-size-parameters-calculation-equations-profiles-classifications-configurations",
+            "title": "Boolean circuit depth size parameters calculation equations profiles classifications configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-bound-systems-shannon-s-circuit-lower-bound-evaluation-proofs-matrix-processing-rules-validation-paths-scales-checks",
+            "title": "Shannon's circuit lower bound evaluation proofs matrix processing rules validation paths scales checks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst864-computational-complexity-04-module-4-circuit-complexity-bound-systems-parity-function-restrictions-checking-tools-metrics-performance-profiles-validation-monitoring-workflows",
+            "title": "Parity function restrictions checking tools metrics performance profiles validation monitoring workflows",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst869-computational-number-theory",
+    "code": "PECST869-COMPUTATIONAL-NUMBER-THEORY",
+    "name": "PECST869 COMPUTATIONAL NUMBER THEORY",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst869-computational-number-theory-01-module-1-primality-testing-implementations",
+        "title": "Module 1: Primality Testing Implementations",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-primality-testing-implementations-modular-arithmetic-equations-polynomial-rings-transformations-structural-layouts-models-formulas",
+            "title": "Modular arithmetic equations polynomial rings transformations structural layouts models formulas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-primality-testing-implementations-miller-rabin-randomized-primality-testing-computational-loops-optimization-metrics-setups",
+            "title": "Miller-Rabin randomized primality testing computational loops optimization metrics setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-01-module-1-primality-testing-implementations-aks-deterministic-primality-verification-polynomial-expansion-process-algorithms-templates-profiles",
+            "title": "AKS deterministic primality verification polynomial expansion process algorithms templates profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst869-computational-number-theory-02-module-2-integer-factorization-infrastructure",
+        "title": "Module 2: Integer Factorization Infrastructure",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-integer-factorization-infrastructure-pollard-s-rho-factorization-framework-computational-processes-validation-paths-templates-processing",
+            "title": "Pollard's rho factorization framework computational processes validation paths templates processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-02-module-2-integer-factorization-infrastructure-quadratic-sieve-structure-vector-space-optimization-parameters-formulas-transformations-templates",
+            "title": "Quadratic Sieve structure vector space optimization parameters formulas transformations templates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst869-computational-number-theory-03-module-3-discrete-logarithms-foundations-core",
+        "title": "Module 3: Discrete Logarithms Foundations Core",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-discrete-logarithms-foundations-core-discrete-logarithm-lookup-transformations-algebraic-algorithms-optimizations-parameters-rules-constraints",
+            "title": "Discrete logarithm lookup transformations algebraic algorithms optimizations parameters rules constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-discrete-logarithms-foundations-core-baby-step-giant-step-computation-steps-verification-metrics-performance-profiles-layout-metrics",
+            "title": "Baby-step Giant-step computation steps verification metrics performance profiles layout metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-03-module-3-discrete-logarithms-foundations-core-index-calculus-processing-methodologies-matrices-profiles-configurations-parameters-tracking-metrics-validation",
+            "title": "Index calculus processing methodologies matrices profiles configurations parameters tracking metrics validation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst869-computational-number-theory-04-module-4-lattice-based-cryptographic-primitives-systems",
+        "title": "Module 4: Lattice Based Cryptographic Primitives Systems",
+        "topics": [
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-lattice-based-cryptographic-primitives-systems-shortest-vector-problem-svp-complexity-constraints-ratio-verification-tracking-algorithms-rules",
+            "title": "Shortest Vector Problem (SVP) complexity constraints ratio verification tracking algorithms rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-lattice-based-cryptographic-primitives-systems-lll-lattice-base-reduction-computational-loops-execution-metrics-performance-profiles-verification-metrics",
+            "title": "LLL lattice base reduction computational loops execution metrics performance profiles verification metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst869-computational-number-theory-04-module-4-lattice-based-cryptographic-primitives-systems-post-quantum-cryptographic-algorithms-setup-validation-profiles-metrics-performance-profiles-configurations",
+            "title": "Post-quantum cryptographic algorithms setup validation profiles metrics performance profiles configurations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst835-computer-graphics",
+    "code": "OECST835-COMPUTER-GRAPHICS",
+    "name": "OECST835 COMPUTER GRAPHICS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics",
+        "title": "Module 1: Basics of computer graphics",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-basics-of-computer-graphics",
+            "title": "Basics of Computer Graphics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-applications-of-computer-graphics",
+            "title": "Applications of Computer Graphics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-video-display-devices",
+            "title": "Video Display devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-led-displays",
+            "title": "LED displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-oled-displays",
+            "title": "OLED displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-lcd-displays",
+            "title": "LCD displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-pdp-displays",
+            "title": "PDP displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-fed-displays",
+            "title": "FED displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-reflective-displays",
+            "title": "Reflective displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-random-scan-displays-and-systems",
+            "title": "Random scan displays and systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-raster-scan-displays-and-systems",
+            "title": "Raster scan displays and systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-line-drawing-algorithms",
+            "title": "Line drawing algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-bresenham-s-line-drawing-algorithm",
+            "title": "Bresenham's line drawing algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-liang-barsky-algorithm",
+            "title": "Liang-Barsky Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-circle-drawing-algorithms",
+            "title": "Circle drawing algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-midpoint-circle-generation-algorithm",
+            "title": "Midpoint Circle generation algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-01-module-1-basics-of-computer-graphics-bresenham-s-circle-drawing-algorithm",
+            "title": "Bresenham's Circle drawing algorithm",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations",
+        "title": "Module 2: Geometric transformations",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-geometric-transformations",
+            "title": "Geometric transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-2d-basic-transformations",
+            "title": "2D basic transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-3d-basic-transformations",
+            "title": "3D basic transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-translation",
+            "title": "Translation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-rotation",
+            "title": "Rotation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-scaling",
+            "title": "Scaling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-reflection",
+            "title": "Reflection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-shearing",
+            "title": "Shearing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-matrix-representations",
+            "title": "Matrix representations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-homogeneous-coordinates",
+            "title": "Homogeneous coordinates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-filled-area-primitives",
+            "title": "Filled Area Primitives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-scan-line-polygon-filling",
+            "title": "Scan line polygon filling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-boundary-filling",
+            "title": "Boundary filling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-02-module-2-geometric-transformations-flood-filling",
+            "title": "Flood filling",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms",
+        "title": "Module 3: Transformations and clipping algorithms",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-transformations-and-clipping-algorithms",
+            "title": "Transformations and Clipping Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-window-to-viewport-transformation",
+            "title": "Window to viewport transformation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-cohen-sutherland-line-clipping-algorithm",
+            "title": "Cohen Sutherland line clipping algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-midpoint-subdivision-line-clipping-algorithm",
+            "title": "Midpoint subdivision line clipping algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-sutherland-hodgeman-polygon-clipping-algorithm",
+            "title": "Sutherland Hodgeman Polygon clipping algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-03-module-3-transformations-and-clipping-algorithms-weiler-atherton-polygon-clipping-algorithm",
+            "title": "Weiler Atherton Polygon clipping algorithm",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics",
+        "title": "Module 4: Three dimensional graphics",
+        "topics": [
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-three-dimensional-graphics",
+            "title": "Three dimensional graphics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-three-dimensional-viewing-pipeline",
+            "title": "Three dimensional viewing pipeline",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-projections",
+            "title": "Projections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-parallel-projections",
+            "title": "Parallel projections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-perspective-projections",
+            "title": "Perspective projections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-visible-surface-detection-algorithms",
+            "title": "Visible surface detection algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-back-face-detection",
+            "title": "Back face detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-depth-buffer-algorithm",
+            "title": "Depth buffer algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-scan-line-algorithm",
+            "title": "Scan line algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst835-computer-graphics-04-module-4-three-dimensional-graphics-a-buffer-algorithm",
+            "title": "A buffer algorithm",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst834-internet-of-things",
+    "code": "OECST834-INTERNET-OF-THINGS",
+    "name": "OECST834 INTERNET OF THINGS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst834-internet-of-things-01-module-1-iot-messaging-protocols",
+        "title": "Module 1: IoT Messaging Protocols",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-iot-messaging-protocols-iot-system-node-network-interaction-specifications-frameworks-architectures-parameters-design-rules",
+            "title": "IoT system node network interaction specifications frameworks architectures parameters design rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-iot-messaging-protocols-mqtt-publish-subscribe-messaging-broker-state-machines-specifications-paths-layout-configurations",
+            "title": "MQTT publish subscribe messaging broker state machines specifications paths layout configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-01-module-1-iot-messaging-protocols-coap-request-transport-protocols-rest-interface-mapping-procedures-metrics-performance-profiles",
+            "title": "CoAP request transport protocols REST interface mapping procedures metrics performance profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst834-internet-of-things-02-module-2-edge-analytics-integration",
+        "title": "Module 2: Edge Analytics Integration",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-edge-analytics-integration-sensor-node-interface-architectures-hardware-mappings-profiles-routing-tracks-setups-profiles",
+            "title": "Sensor node interface architectures hardware mappings profiles routing tracks setups profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-02-module-2-edge-analytics-integration-edge-computing-data-stream-filtering-tracking-parameters-optimization-loops-definitions-profiles",
+            "title": "Edge computing data stream filtering tracking parameters optimization loops definitions profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst834-internet-of-things-03-module-3-wireless-sensor-network-routing-layers",
+        "title": "Module 3: Wireless Sensor Network Routing Layers",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-wireless-sensor-network-routing-layers-rpl-routing-protocol-destination-oriented-graphs-configurations-benchmarks-parameters-specifications",
+            "title": "RPL routing protocol destination oriented graphs configurations benchmarks parameters specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-wireless-sensor-network-routing-layers-6lowpan-header-adaptation-structures-calculations-parameters-formatting-rules-setups-metrics-profiles",
+            "title": "6LoWPAN header adaptation structures calculations parameters formatting rules setups metrics profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-03-module-3-wireless-sensor-network-routing-layers-energy-aware-routing-routing-loops-paths-optimizations-layouts-formats-matching-profiles-definitions",
+            "title": "Energy aware routing routing loops paths optimizations layouts formats matching profiles definitions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst834-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms",
+        "title": "Module 4: IoT Data Cloud Orchestrations Platforms",
+        "topics": [
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms-time-series-stream-telemetry-ingest-pipelines-cloud-configurations-datasets-schemas-transformations",
+            "title": "Time series stream telemetry ingest pipelines cloud configurations datasets schemas transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms-iot-security-endpoint-authentication-protocols-validation-parameters-metrics-performance-profiles-configurations",
+            "title": "IoT security endpoint authentication protocols validation parameters metrics performance profiles configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst834-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms-industrial-iot-edge-gateway-systems-configurations-tracking-variables-specifications-performance-checking",
+            "title": "Industrial IoT edge gateway systems configurations tracking variables specifications performance checking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cs-8-oecst831-introduction-to-algorithm",
     "code": "OECST831-INTRODUCTION-TO-ALGORITHM",
     "name": "OECST831 INTRODUCTION TO ALGORITHM",
@@ -11,8 +623,14 @@
         "title": "Module 1: Introduction to algorithm analysis",
         "topics": [
           {
-            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-complexity-calculation-of-simple-algorithms",
-            "title": "Complexity Calculation of simple algorithms",
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-introduction-to-algorithm-analysis",
+            "title": "Introduction to Algorithm Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-time-and-space-complexity-asymptotic-notation",
+            "title": "Time and Space Complexity- Asymptotic notation",
             "content": "",
             "pyqs": []
           },
@@ -23,20 +641,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-introduction-to-algorithm-analysis",
-            "title": "Introduction to Algorithm Analysis",
+            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-complexity-calculation-of-simple-algorithms",
+            "title": "Complexity Calculation of simple algorithms",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-recurrence-equations-solution-of-recurrence-equations-iteration-method-and-recursion-tree-methods",
-            "title": "Recurrence Equations: Solution of Recurrence Equations – Iteration Method and Recursion Tree Methods",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-01-module-1-introduction-to-algorithm-analysis-time-and-space-complexity-asymptotic-notation",
-            "title": "Time and Space Complexity- Asymptotic notation",
+            "title": "Recurrence Equations: Solution of Recurrence Equations - Iteration Method and Recursion Tree Methods",
             "content": "",
             "pyqs": []
           }
@@ -47,14 +659,8 @@
         "title": "Module 2: Trees",
         "topics": [
           {
-            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-bfs-and-dfs-analysis-not-required",
-            "title": "BFS and DFS (analysis not required)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-binary-search-tree-creation-insertion-and-deletion-and-search-operations-applications",
-            "title": "Binary search tree – creation, insertion and deletion and search operations, applications",
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-trees-binary-trees-level-and-height-of-the-tree",
+            "title": "Trees - Binary Trees - level and height of the tree",
             "content": "",
             "pyqs": []
           },
@@ -65,26 +671,32 @@
             "pyqs": []
           },
           {
-            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-graphs-representation-of-graphs",
-            "title": "Graphs – representation of graphs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-topological-sorting",
-            "title": "Topological Sorting",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-tree-traversals-recursive-and-non-recursive-applications",
             "title": "tree traversals (Recursive and non-recursive), applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-trees-binary-trees-level-and-height-of-the-tree",
-            "title": "Trees - Binary Trees – level and height of the tree",
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-binary-search-tree-creation-insertion-and-deletion-and-search-operations-applications",
+            "title": "Binary search tree - creation, insertion and deletion and search operations, applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-graphs-representation-of-graphs",
+            "title": "Graphs - representation of graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-bfs-and-dfs-analysis-not-required",
+            "title": "BFS and DFS (analysis not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-02-module-2-trees-topological-sorting",
+            "title": "Topological Sorting",
             "content": "",
             "pyqs": []
           }
@@ -94,18 +706,6 @@
         "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer",
         "title": "Module 3: Divide and conquer",
         "topics": [
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-binary-search",
-            "title": "Binary Search",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-costs-associated-element-comparisons-and-index-comparisons",
-            "title": "Costs associated element comparisons and index comparisons",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-divide-and-conquer-control-abstraction",
             "title": "Divide and Conquer - Control Abstraction",
@@ -119,32 +719,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-fractional-knapsack-problem",
-            "title": "Fractional Knapsack Problem",
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-costs-associated-element-comparisons-and-index-comparisons",
+            "title": "Costs associated element comparisons and index comparisons",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-greedy-strategy-control-abstraction",
-            "title": "Greedy Strategy - Control Abstraction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-kruskal-s-algorithm",
-            "title": "Kruskal’s Algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-merge-sort-refinements",
-            "title": "Merge Sort - Refinements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-minimum-cost-spanning-trees-prim-s-algorithm",
-            "title": "Minimum Cost Spanning Trees – PRIM’s Algorithm",
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-binary-search",
+            "title": "Binary Search",
             "content": "",
             "pyqs": []
           },
@@ -155,8 +737,38 @@
             "pyqs": []
           },
           {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-merge-sort-refinements",
+            "title": "Merge Sort - Refinements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-greedy-strategy-control-abstraction",
+            "title": "Greedy Strategy - Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-fractional-knapsack-problem",
+            "title": "Fractional Knapsack Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-minimum-cost-spanning-trees-prim-s-algorithm",
+            "title": "Minimum Cost Spanning Trees - PRIM's Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-kruskal-s-algorithm",
+            "title": "Kruskal's Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-8-oecst831-introduction-to-algorithm-03-module-3-divide-and-conquer-single-source-shortest-path-algorithm-dijkstra-s-algorithm",
-            "title": "Single Source Shortest Path Algorithm - Dijkstra’s Algorithm",
+            "title": "Single Source Shortest Path Algorithm - Dijkstra's Algorithm",
             "content": "",
             "pyqs": []
           }
@@ -166,18 +778,6 @@
         "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming",
         "title": "Module 4: Dynamic programming",
         "topics": [
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-all-pairs-shortest-path-algorithm-floyd-warshall-algorithm",
-            "title": "All Pairs Shortest Path Algorithm - Floyd-Warshall Algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-branch-and-bound-algorithm-for-travelling-salesman-problem",
-            "title": "Branch and Bound Algorithm for Travelling Salesman Problem",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-dynamic-programming-the-control-abstraction-the-optimality-principle",
             "title": "Dynamic Programming - The Control Abstraction- The Optimality Principle",
@@ -191,8 +791,812 @@
             "pyqs": []
           },
           {
+            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-all-pairs-shortest-path-algorithm-floyd-warshall-algorithm",
+            "title": "All Pairs Shortest Path Algorithm - Floyd-Warshall Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-the-control-abstraction-of-backtracking-the-n-queens-problem",
-            "title": "The Control Abstraction of Backtracking – The N-Queens Problem",
+            "title": "The Control Abstraction of Backtracking - The N-Queens Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst831-introduction-to-algorithm-04-module-4-dynamic-programming-branch-and-bound-algorithm-for-travelling-salesman-problem",
+            "title": "Branch and Bound Algorithm for Travelling Salesman Problem",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst862-natural-language-processing",
+    "code": "PECST862-NATURAL-LANGUAGE-PROCESSING",
+    "name": "PECST862 NATURAL LANGUAGE PROCESSING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst862-natural-language-processing-01-module-1-sequence-labeling-language-syntax-models",
+        "title": "Module 1: Sequence Labeling & Language Syntax Models",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-sequence-labeling-language-syntax-models-part-of-speech-pos-token-classification-tagging-mechanics-initialization-processes-routing",
+            "title": "Part of Speech (POS) token classification tagging mechanics initialization processes routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-sequence-labeling-language-syntax-models-hidden-markov-models-hmm-viterbi-sequence-tracking-states-calculations-formulas-rules",
+            "title": "Hidden Markov Models (HMM) Viterbi sequence tracking states calculations formulas rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-01-module-1-sequence-labeling-language-syntax-models-context-free-grammar-parsing-algorithms-metrics-calculation-structures-cky-parsing-configurations",
+            "title": "Context-Free Grammar parsing algorithms metrics calculation structures: CKY parsing configurations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst862-natural-language-processing-02-module-2-attention-networks-transformers",
+        "title": "Module 2: Attention Networks & Transformers",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-02-module-2-attention-networks-transformers-self-attention-network-matrix-calculations-configurations-setups-models-parameters-optimization",
+            "title": "Self-Attention network matrix calculations configurations setups models parameters optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-02-module-2-attention-networks-transformers-transformer-translation-blocks-decoding-configurations-architectures-layout-specifications-workflows",
+            "title": "Transformer translation blocks decoding configurations architectures layout specifications workflows",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst862-natural-language-processing-03-module-3-dependency-parsing-context-modeling-models",
+        "title": "Module 3: Dependency Parsing Context Modeling Models",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-dependency-parsing-context-modeling-models-transition-based-dependency-parsing-sequences-layout-structural-parsing-routines-frameworks-networks",
+            "title": "Transition-based dependency parsing sequences layout structural parsing routines frameworks networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-dependency-parsing-context-modeling-models-lexical-semantics-checking-word-sense-disambiguation-computational-workflows-execution-options-patterns",
+            "title": "Lexical semantics checking word sense disambiguation computational workflows execution options patterns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-03-module-3-dependency-parsing-context-modeling-models-contextual-word-representation-allocations-variables-transformations-formulas-updates-scripts-parameters-profiles",
+            "title": "Contextual word representation allocations variables transformations formulas updates scripts parameters profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst862-natural-language-processing-04-module-4-large-language-generation-architectures-platforms",
+        "title": "Module 4: Large Language Generation Architectures Platforms",
+        "topics": [
+          {
+            "id": "cs-8-pecst862-natural-language-processing-04-module-4-large-language-generation-architectures-platforms-autoregressive-language-generation-token-processing-adjustments-scripts-options-parameters-loops-models",
+            "title": "Autoregressive language generation token processing adjustments scripts options parameters loops models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-04-module-4-large-language-generation-architectures-platforms-decoding-strategies-parameters-setups-beam-search-optimization-paths-validation-algorithms-templates",
+            "title": "Decoding strategies parameters setups: Beam search optimization paths validation algorithms templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst862-natural-language-processing-04-module-4-large-language-generation-architectures-platforms-language-processing-evaluation-tool-frameworks-metrics-verification-profiles-setups-metrics-performance",
+            "title": "Language processing evaluation tool frameworks metrics verification profiles setups metrics performance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst865-next-generation-interaction-design",
+    "code": "PECST865-NEXT-GENERATION-INTERACTION-DESIGN",
+    "name": "PECST865 NEXT GENERATION INTERACTION DESIGN",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-spatial-gesture-architectures",
+        "title": "Module 1: Spatial & Gesture Architectures",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-spatial-gesture-architectures-spatial-computing-interface-blueprints-layouts-hardware-coordinate-mapping-parameters-tracking",
+            "title": "Spatial computing interface blueprints layouts hardware coordinate mapping parameters tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-spatial-gesture-architectures-gesture-recognition-processing-pipelines-verification-tracking-configurations-setups-profiles-scripts",
+            "title": "Gesture recognition processing pipelines verification tracking configurations setups profiles scripts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-01-module-1-spatial-gesture-architectures-kinematic-track-mapping-modeling-systems-interaction-engineering-paths-validation-routes-setup",
+            "title": "Kinematic track mapping modeling systems interaction engineering paths validation routes setup",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-augmented-reality-ui-layouts",
+        "title": "Module 2: Augmented Reality UI Layouts",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-augmented-reality-ui-layouts-ar-viewport-registration-matrices-tracking-algorithms-configuration-tracks-parameters-setups",
+            "title": "AR viewport registration matrices tracking algorithms configuration tracks parameters setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-02-module-2-augmented-reality-ui-layouts-haptic-rendering-loop-optimization-procedures-verification-metrics-performance-profiles-layout",
+            "title": "Haptic rendering loop optimization procedures verification metrics performance profiles layout",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-brain-computer-interface-signaling-core",
+        "title": "Module 3: Brain Computer Interface Signaling Core",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-brain-computer-interface-signaling-core-eeg-signal-capture-filtering-tracking-procedures-formatting-logic-setups-tracking-systems-parameters",
+            "title": "EEG signal capture filtering tracking procedures formatting logic setups tracking systems parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-brain-computer-interface-signaling-core-neural-feature-classification-filter-mechanisms-configurations-variables-updates-scripts-options-parameters",
+            "title": "Neural feature classification filter mechanisms configurations variables updates scripts options parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-03-module-3-brain-computer-interface-signaling-core-signal-translation-matrix-calculations-templates-optimization-loops-definitions-metrics-profiles-configurations",
+            "title": "Signal translation matrix calculations templates optimization loops definitions metrics profiles configurations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-multimodal-interface-integrations-platforms",
+        "title": "Module 4: Multimodal Interface Integrations Platforms",
+        "topics": [
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-multimodal-interface-integrations-platforms-voice-tracking-fusion-with-gaze-tracking-architectures-parameters-configurations-templates-metrics-profiles",
+            "title": "Voice tracking fusion with gaze tracking architectures parameters configurations templates metrics profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-multimodal-interface-integrations-platforms-contextual-behavior-tracking-processing-pipelines-configurations-parameters-scripts-execution-verification",
+            "title": "Contextual behavior tracking processing pipelines configurations parameters scripts execution verification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst865-next-generation-interaction-design-04-module-4-multimodal-interface-integrations-platforms-interaction-tracking-metrics-validation-metrics-packaging-tracks-validation-metrics-profiles-checking",
+            "title": "Interaction tracking metrics validation metrics packaging tracks validation metrics profiles checking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst868-prompt-engineering",
+    "code": "PECST868-PROMPT-ENGINEERING",
+    "name": "PECST868 PROMPT ENGINEERING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst868-prompt-engineering-01-module-1-in-context-token-optimization-layouts",
+        "title": "Module 1: In-Context Token Optimization Layouts",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-01-module-1-in-context-token-optimization-layouts-in-context-instruction-tuning-parameters-logic-configurations-templates-patterns-profiles-blueprints",
+            "title": "In-context instruction tuning parameters logic configurations templates patterns profiles blueprints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-01-module-1-in-context-token-optimization-layouts-few-shot-token-alignment-strategies-structures-layout-implementations-parameters-profiles-tracking",
+            "title": "Few-shot token alignment strategies structures layout implementations parameters profiles tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-01-module-1-in-context-token-optimization-layouts-chain-of-thought-cot-sequence-prompt-construction-optimization-paths-layout-structures-setups",
+            "title": "Chain of Thought (CoT) sequence prompt construction optimization paths layout structures setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst868-prompt-engineering-02-module-2-automated-prompt-evaluation-workflows",
+        "title": "Module 2: Automated Prompt Evaluation Workflows",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-02-module-2-automated-prompt-evaluation-workflows-prompt-injection-vector-mitigation-templates-frameworks-tracks-systems-parameters-configurations",
+            "title": "Prompt injection vector mitigation templates frameworks tracks systems parameters configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-02-module-2-automated-prompt-evaluation-workflows-re-ranking-semantic-alignment-scores-validation-scripting-templates-runtime-parameters-analytics",
+            "title": "Re-ranking semantic alignment scores validation scripting templates runtime parameters analytics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst868-prompt-engineering-03-module-3-directional-prompt-tuning-abstractions-models",
+        "title": "Module 3: Directional Prompt Tuning Abstractions Models",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-03-module-3-directional-prompt-tuning-abstractions-models-prefix-tuning-optimization-parameter-adjustments-tracking-equations-formulas-calculations-profiles-datasets",
+            "title": "Prefix tuning optimization parameter adjustments tracking equations formulas calculations profiles datasets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-03-module-3-directional-prompt-tuning-abstractions-models-soft-prompt-embedding-mapping-procedures-verification-metrics-performance-profiles-layout-templates-profiles",
+            "title": "Soft prompt embedding mapping procedures verification metrics performance profiles layout templates profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-03-module-3-directional-prompt-tuning-abstractions-models-gradient-guided-token-updates-execution-loops-setups-parameters-metrics-performance-profiles-validation",
+            "title": "Gradient guided token updates execution loops setups parameters metrics performance profiles validation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst868-prompt-engineering-04-module-4-prompt-orchestration-pipeline-frameworks-platforms",
+        "title": "Module 4: Prompt Orchestration Pipeline Frameworks Platforms",
+        "topics": [
+          {
+            "id": "cs-8-pecst868-prompt-engineering-04-module-4-prompt-orchestration-pipeline-frameworks-platforms-retrieval-augmented-generation-rag-configuration-strategies-system-execution-paths-formatting-rules",
+            "title": "Retrieval Augmented Generation (RAG) configuration strategies system execution paths formatting rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-04-module-4-prompt-orchestration-pipeline-frameworks-platforms-multi-agent-prompt-routing-execution-tracking-frameworks-algorithms-execution-paths-tracking-metrics-profiles",
+            "title": "Multi-agent prompt routing execution tracking frameworks algorithms execution paths tracking metrics profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst868-prompt-engineering-04-module-4-prompt-orchestration-pipeline-frameworks-platforms-enterprise-prompt-execution-telemetry-systems-configurations-tracking-variables-specifications-performance-checking",
+            "title": "Enterprise prompt execution telemetry systems configurations tracking variables specifications performance checking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst861-software-architectures",
+    "code": "PECST861-SOFTWARE-ARCHITECTURES",
+    "name": "PECST861 SOFTWARE ARCHITECTURES",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst861-software-architectures-01-module-1-architectural-design-patterns-structures",
+        "title": "Module 1: Architectural Design Patterns Structures",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-architectural-design-patterns-structures-enterprise-software-system-design-architecture-patterns-classification-rules-definition-parameters",
+            "title": "Enterprise software system design architecture patterns classification rules definition parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-architectural-design-patterns-structures-microservice-decoupling-architectures-service-discovery-templates-workflows-verification-protocols",
+            "title": "Microservice decoupling architectures service discovery templates workflows verification protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-01-module-1-architectural-design-patterns-structures-domain-driven-design-ddd-bounded-context-partitioning-blueprints-templates-patterns-profiles",
+            "title": "Domain Driven Design (DDD) bounded context partitioning blueprints templates patterns profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst861-software-architectures-02-module-2-system-tradeoff-evaluation-frameworks",
+        "title": "Module 2: System Tradeoff Evaluation Frameworks",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-02-module-2-system-tradeoff-evaluation-frameworks-architecture-tradeoff-analysis-method-atam-quality-attribute-scenario-testing-matrices",
+            "title": "Architecture Tradeoff Analysis Method (ATAM) quality attribute scenario testing matrices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-02-module-2-system-tradeoff-evaluation-frameworks-event-driven-architecture-streaming-optimization-pipelines-validation-scripting-templates-maps",
+            "title": "Event-driven architecture streaming optimization pipelines validation scripting templates maps",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst861-software-architectures-03-module-3-distributed-cloud-native-topologies-core",
+        "title": "Module 3: Distributed Cloud Native Topologies Core",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-03-module-3-distributed-cloud-native-topologies-core-serverless-operational-workflow-architecture-designs-benchmarks-parameters-specifications-engineering-metrics",
+            "title": "Serverless operational workflow architecture designs benchmarks parameters specifications engineering metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-03-module-3-distributed-cloud-native-topologies-core-event-sourcing-ledger-synchronization-configurations-routing-loops-parameters-configurations-variables-maps",
+            "title": "Event sourcing ledger synchronization configurations routing loops parameters configurations variables maps",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-03-module-3-distributed-cloud-native-topologies-core-data-consistency-synchronization-patterns-tracking-optimization-loops-pipelines-tracking-parameters-options",
+            "title": "Data consistency synchronization patterns tracking optimization loops pipelines tracking parameters options",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst861-software-architectures-04-module-4-architectural-governance-metrics-platforms",
+        "title": "Module 4: Architectural Governance Metrics Platforms",
+        "topics": [
+          {
+            "id": "cs-8-pecst861-software-architectures-04-module-4-architectural-governance-metrics-platforms-structural-dependency-tracing-tools-metrics-calculations-data-exchange-maps-configurations-datasets",
+            "title": "Structural dependency tracing tools metrics calculations data exchange maps configurations datasets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-04-module-4-architectural-governance-metrics-platforms-automated-drift-analysis-execution-tracking-architectures-setups-metrics-performance-profiles-validation",
+            "title": "Automated drift analysis execution tracking architectures setups metrics performance profiles validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst861-software-architectures-04-module-4-architectural-governance-metrics-platforms-system-architecture-validation-check-suites-tracking-variables-metrics-verification-profiles-tracking-setups",
+            "title": "System architecture validation check suites tracking variables metrics verification profiles tracking setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst833-software-testing",
+    "code": "OECST833-SOFTWARE-TESTING",
+    "name": "OECST833 SOFTWARE TESTING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst833-software-testing-01-module-1-black-box-white-box-strategies",
+        "title": "Module 1: Black-Box & White-Box Strategies",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-black-box-white-box-strategies-boundary-value-optimization-test-strategies-layout-definitions-models-parameters",
+            "title": "Boundary value optimization test strategies layout definitions models parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-black-box-white-box-strategies-equivalence-partitioning-maps-layout-structuring-verification-paths-tracks-setups",
+            "title": "Equivalence partitioning maps layout structuring verification paths tracks setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-01-module-1-black-box-white-box-strategies-control-flow-mapping-layout-metrics-definition-cyclomatic-complexity-formulas-setups",
+            "title": "Control flow mapping layout metrics definition cyclomatic complexity formulas setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst833-software-testing-02-module-2-testing-orchestration-frameworks",
+        "title": "Module 2: Testing Orchestration Frameworks",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-testing-orchestration-frameworks-integration-tracking-processes-layout-regression-validation-verification-routing-schedules",
+            "title": "Integration tracking processes layout regression validation verification routing schedules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-02-module-2-testing-orchestration-frameworks-automated-mutation-analysis-checking-tools-execution-templates-frameworks-tracks",
+            "title": "Automated mutation analysis checking tools execution templates frameworks tracks",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst833-software-testing-03-module-3-object-oriented-testing-architectures",
+        "title": "Module 3: Object Oriented Testing Architectures",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-object-oriented-testing-architectures-class-validation-procedures-polymorphism-tracking-interfaces-testing-configurations-layouts",
+            "title": "Class validation procedures polymorphism tracking interfaces testing configurations layouts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-object-oriented-testing-architectures-state-based-system-modeling-test-trace-sequences-execution-workflows-verification-templates",
+            "title": "State based system modeling test trace sequences execution workflows verification templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-03-module-3-object-oriented-testing-architectures-integration-encapsulation-testing-strategies-setups-optimization-loops-definitions-variables",
+            "title": "Integration encapsulation testing strategies setups optimization loops definitions variables",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst833-software-testing-04-module-4-system-security-testing-platforms",
+        "title": "Module 4: System Security Testing Platforms",
+        "topics": [
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-system-security-testing-platforms-fuzzing-test-automation-tool-workflows-parameter-tuning-tracking-configurations-systems",
+            "title": "Fuzzing test automation tool workflows parameter tuning tracking configurations systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-system-security-testing-platforms-vulnerability-parsing-codes-scripts-validation-monitoring-pipelines-frameworks-profiles-metrics",
+            "title": "Vulnerability parsing codes scripts validation monitoring pipelines frameworks profiles metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst833-software-testing-04-module-4-system-security-testing-platforms-testing-frameworks-deployment-checks-packaging-tracks-validation-metrics-profiles-evaluation",
+            "title": "Testing frameworks deployment checks packaging tracks validation metrics profiles evaluation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst866-speech-and-audio-processing",
+    "code": "PECST866-SPEECH-AND-AUDIO-PROCESSING",
+    "name": "PECST866 SPEECH AND AUDIO PROCESSING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-acoustic-feature-extraction-models",
+        "title": "Module 1: Acoustic Feature Extraction Models",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-acoustic-feature-extraction-models-speech-wave-digitization-acoustics-processing-models-transformations-structural-layouts-parameters",
+            "title": "Speech wave digitization acoustics processing models transformations structural layouts parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-acoustic-feature-extraction-models-mel-frequency-cepstral-coefficients-mfcc-feature-extraction-filtering-pipelines-matrices-setups",
+            "title": "Mel-Frequency Cepstral Coefficients (MFCC) feature extraction filtering pipelines matrices setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-01-module-1-acoustic-feature-extraction-models-short-time-fourier-transform-stft-windowing-configuration-parameters-calculations-adjustments",
+            "title": "Short-Time Fourier Transform (STFT) windowing configuration parameters calculations adjustments",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-speech-recognition-decoding-architectures",
+        "title": "Module 2: Speech Recognition Decoding Architectures",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-speech-recognition-decoding-architectures-acoustic-modeling-parameters-network-interactions-patterns-engineering-metrics-performance-profiles",
+            "title": "Acoustic modeling parameters network interactions patterns engineering metrics performance profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-02-module-2-speech-recognition-decoding-architectures-connectionist-temporal-classification-ctc-loss-alignment-algorithms-execution-pathways-tracking",
+            "title": "Connectionist Temporal Classification (CTC) loss alignment algorithms execution pathways tracking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-text-to-speech-synthesis-frameworks-core",
+        "title": "Module 3: Text To Speech Synthesis Frameworks Core",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-text-to-speech-synthesis-frameworks-core-grapheme-to-phoneme-transformation-mapping-procedures-processing-pipelines-specifications-maps-networks",
+            "title": "Grapheme to phoneme transformation mapping procedures processing pipelines specifications maps networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-text-to-speech-synthesis-frameworks-core-neural-vocoder-audio-generation-parameters-configurations-variables-updates-options-scripts-parameters-options",
+            "title": "Neural vocoder audio generation parameters configurations variables updates options scripts parameters options",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-03-module-3-text-to-speech-synthesis-frameworks-core-mel-spectrogram-inversion-structures-loops-configurations-paths-optimization-templates-sorting-paths-templates",
+            "title": "Mel-spectrogram inversion structures loops configurations paths optimization templates sorting paths templates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-audio-source-separation-systems-platforms",
+        "title": "Module 4: Audio Source Separation Systems Platforms",
+        "topics": [
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-audio-source-separation-systems-platforms-independent-component-analysis-ica-signal-isolation-computational-workflows-routing-configurations-metrics",
+            "title": "Independent Component Analysis (ICA) signal isolation computational workflows routing configurations metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-audio-source-separation-systems-platforms-deep-spatial-separation-network-models-configurations-parameters-scripts-execution-validation-metrics-options",
+            "title": "Deep spatial separation network models configurations parameters scripts execution validation metrics options",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst866-speech-and-audio-processing-04-module-4-audio-source-separation-systems-platforms-speech-validation-profiling-tool-frameworks-metrics-execution-parameters-verification-profiles-validation-tracking",
+            "title": "Speech validation profiling tool frameworks metrics execution parameters verification profiles validation tracking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-pecst867-storage-systems",
+    "code": "PECST867-STORAGE-SYSTEMS",
+    "name": "PECST867 STORAGE SYSTEMS",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-pecst867-storage-systems-01-module-1-distributed-storage-architectures-layouts",
+        "title": "Module 1: Distributed Storage Architectures Layouts",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-distributed-storage-architectures-layouts-network-attached-storage-nas-file-lookup-structures-configurations-setups-models-parameters",
+            "title": "Network Attached Storage (NAS) file lookup structures configurations setups models parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-distributed-storage-architectures-layouts-storage-area-network-san-fiber-switch-block-communication-layout-protocols-pathways",
+            "title": "Storage Area Network (SAN) fiber switch block communication layout protocols pathways",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-01-module-1-distributed-storage-architectures-layouts-raid-reliability-equation-arrays-data-recovery-performance-metrics-calculation-formulas-loops",
+            "title": "RAID reliability equation arrays data recovery performance metrics calculation formulas loops",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst867-storage-systems-02-module-2-flash-translation-layers-foundations",
+        "title": "Module 2: Flash Translation Layers Foundations",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-flash-translation-layers-foundations-flash-translation-layer-ftl-wear-leveling-algorithm-parsing-loops-block-management-metadata",
+            "title": "Flash Translation Layer (FTL) wear leveling algorithm parsing loops block management metadata",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-02-module-2-flash-translation-layers-foundations-log-structured-file-systems-data-compaction-procedures-execution-validation-paths-tracks-setups",
+            "title": "Log-structured file systems data compaction procedures execution validation paths tracks setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst867-storage-systems-03-module-3-object-storage-metadata-topologies-models",
+        "title": "Module 3: Object Storage Metadata Topologies Models",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-object-storage-metadata-topologies-models-consistent-hashing-bucket-routing-designs-benchmarks-parameters-specifications-engineering-metrics-definitions",
+            "title": "Consistent hashing bucket routing designs benchmarks parameters specifications engineering metrics definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-object-storage-metadata-topologies-models-metadata-server-decoupling-synchronization-structures-configurations-tables-setups-parameters-verification-rules",
+            "title": "Metadata server decoupling synchronization structures configurations tables setups parameters verification rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-03-module-3-object-storage-metadata-topologies-models-data-replication-consensus-protocol-execution-loops-parameters-metrics-performance-profiles-tracking-maps",
+            "title": "Data replication consensus protocol execution loops parameters metrics performance profiles tracking maps",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-pecst867-storage-systems-04-module-4-storage-telemetry-analytics-platforms",
+        "title": "Module 4: Storage Telemetry Analytics Platforms",
+        "topics": [
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-telemetry-analytics-platforms-iops-telemetry-tracking-analytics-dashboards-configuration-parameters-analytics-tracking-monitoring-loops",
+            "title": "IOPS telemetry tracking analytics dashboards configuration parameters analytics tracking monitoring loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-telemetry-analytics-platforms-automated-tiering-migration-scheduling-optimization-parameters-metrics-performance-profiles-validation-networks",
+            "title": "Automated tiering migration scheduling optimization parameters metrics performance profiles validation networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-pecst867-storage-systems-04-module-4-storage-telemetry-analytics-platforms-storage-verification-benchmarking-tool-suites-tracking-variables-configurations-updates-specifications-performance",
+            "title": "Storage verification benchmarking tool suites tracking variables configurations updates specifications performance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-8-oecst832-web-programming",
+    "code": "OECST832-WEB-PROGRAMMING",
+    "name": "OECST832 WEB PROGRAMMING",
+    "branchId": "cs",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "cs-8-oecst832-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts",
+        "title": "Module 1: Asynchronous Full-Stack Deployments Scripts",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts-asynchronous-engine-design-software-architecture-templates-scripts-processing-patterns-routing",
+            "title": "Asynchronous engine design software architecture templates scripts processing patterns routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts-restful-resource-api-management-structures-configurations-tables-setups-parameters-verification",
+            "title": "RESTful resource API management structures configurations tables setups parameters verification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts-single-page-application-spa-state-hydration-frameworks-configurations-blueprints-layout-templates",
+            "title": "Single Page Application (SPA) state hydration frameworks configurations blueprints layout templates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst832-web-programming-02-module-2-web-security-enforcement-frameworks",
+        "title": "Module 2: Web Security Enforcement Frameworks",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-web-security-enforcement-frameworks-cross-origin-resource-sharing-cors-security-configuration-parameter-rules-setups-scripts",
+            "title": "Cross-Origin Resource Sharing (CORS) security configuration parameter rules setups scripts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-02-module-2-web-security-enforcement-frameworks-json-web-token-jwt-stateless-authorization-payload-signature-tracking-setups-verification-parameters",
+            "title": "JSON Web Token (JWT) stateless authorization payload signature tracking setups verification parameters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst832-web-programming-03-module-3-real-time-websocket-ingest-topologies-core",
+        "title": "Module 3: Real-Time WebSocket Ingest Topologies Core",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-real-time-websocket-ingest-topologies-core-full-duplex-websocket-connection-broker-configurations-loops-tracking-setups-models-specifications-options",
+            "title": "Full-duplex WebSocket connection broker configurations loops tracking setups models specifications options",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-real-time-websocket-ingest-topologies-core-event-transport-subscription-layers-synchronization-configurations-routing-loops-parameters-configurations-variables",
+            "title": "Event transport subscription layers synchronization configurations routing loops parameters configurations variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-03-module-3-real-time-websocket-ingest-topologies-core-push-telemetry-distribution-patterns-tracking-optimization-loops-pipelines-tracking-parameters-profiles-maps",
+            "title": "Push telemetry distribution patterns tracking optimization loops pipelines tracking parameters profiles maps",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-8-oecst832-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms",
+        "title": "Module 4: Web Deployment Orchestration Metrics Platforms",
+        "topics": [
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms-server-side-rendering-ssr-caching-strategies-tools-metrics-calculations-metrics-performance-profiles-layout",
+            "title": "Server side rendering (SSR) caching strategies tools metrics calculations metrics performance profiles layout",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms-content-delivery-network-cdn-edge-cache-replication-tracking-architectures-setups-metrics-performance-checking",
+            "title": "Content Delivery Network (CDN) edge cache replication tracking architectures setups metrics performance checking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-8-oecst832-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms-app-performance-tracking-check-suites-validation-metrics-packaging-tracks-validation-metrics-profiles-evaluation",
+            "title": "App performance tracking check suites validation metrics packaging tracks validation metrics profiles evaluation",
             "content": "",
             "pyqs": []
           }

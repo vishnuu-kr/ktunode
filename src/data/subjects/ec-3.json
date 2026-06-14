@@ -1,0 +1,3617 @@
+[
+  {
+    "id": "ec-3-pcect303-analog-circuits",
+    "code": "PCECT303-ANALOG-CIRCUITS",
+    "name": "PCECT303 ANALOG CIRCUITS",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits",
+        "title": "Module 1: Wave shaping circuits rc differentiating and integrating circuits",
+        "topics": [
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-wave-shaping-circuits-rc-differentiating-circuits",
+            "title": "Wave Shaping Circuits: RC differentiating circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-wave-shaping-circuits-rc-integrating-circuits",
+            "title": "Wave Shaping Circuits: RC integrating circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-analysis-of-first-order-rc-low-pass-filter-for-step-input-rise-time-bandwidth",
+            "title": "Analysis of First order RC low pass filter for step input - rise time, bandwidth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-analysis-of-first-order-rc-high-pass-filter-for-step-input-rise-time-bandwidth",
+            "title": "Analysis of First order RC high pass filter for step input - rise time, bandwidth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-diode-clipping-circuits",
+            "title": "Diode Clipping circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-diode-clamping-circuits",
+            "title": "Diode Clamping circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-bjt-mosfet-biasing-need-for-biasing",
+            "title": "BJT/MOSFET Biasing: Need for biasing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-dc-load-line",
+            "title": "DC load line",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-operating-point",
+            "title": "Operating point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-bjt-biasing-ce-configuration-fixed-bias-design-analysis",
+            "title": "BJT biasing (CE configuration) - fixed bias (Design & analysis)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-bjt-biasing-ce-configuration-voltage-divider-bias-design-analysis",
+            "title": "BJT biasing (CE configuration) - voltage divider bias (Design & analysis)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-01-module-1-wave-shaping-circuits-rc-differentiating-and-integrating-circuits-mosfet-biasing",
+            "title": "MOSFET biasing",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier",
+        "title": "Module 2: Bjt amplifiers design of rc coupled ce amplifier",
+        "topics": [
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-bjt-amplifiers-design-of-rc-coupled-ce-amplifier",
+            "title": "BJT Amplifiers: Design of RC coupled CE amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-small-signal-analysis-of-ce-amplifier-using-hybrid-model-low-and-mid-frequency",
+            "title": "Small signal analysis of CE amplifier using hybrid-π model (low and mid frequency)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-the-high-frequency-hybrid-model-of-bjt",
+            "title": "The high-frequency hybrid-π model of BJT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-miller-effect",
+            "title": "Miller effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-high-frequency-response-of-single-stage-ce-amplifier",
+            "title": "High frequency response of single stage CE amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-short-circuit-current-gain",
+            "title": "Short circuit current gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-cut-off-frequency-f",
+            "title": "Cut-off frequency fβ",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-unity-gain-bandwidth-ft",
+            "title": "Unity gain bandwidth fT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-mosfet-amplifiers-design-of-cs-amplifier",
+            "title": "MOSFET Amplifiers: Design of CS amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-small-signal-analysis-of-cs-amplifier-using-hybrid-model-mid-frequency-only",
+            "title": "Small signal analysis of CS amplifier using hybrid-π model (mid frequency only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-small-signal-voltage-gain-of-cs-amplifier",
+            "title": "Small signal voltage gain of CS amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-input-and-output-impedance-of-cs-amplifier",
+            "title": "Input and output impedance of CS amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-cs-stage-with-current-source-load",
+            "title": "CS stage with current source load",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-cs-stage-with-diode-connected-load",
+            "title": "CS stage with diode connected load",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-multistage-bjt-amplifiers-types-of-multistage-amplifiers",
+            "title": "Multistage BJT Amplifiers: Types of multistage amplifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-effect-of-cascading-on-gain-and-bandwidth",
+            "title": "Effect of cascading on gain and bandwidth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-02-module-2-bjt-amplifiers-design-of-rc-coupled-ce-amplifier-small-signal-voltage-gain-input-output-impedance-of-bjt-cascode-amplifier-using-hybrid-model",
+            "title": "Small signal voltage gain, input & output impedance of BJT cascode amplifier using hybrid-π model",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure",
+        "title": "Module 3: Feedback amplifiers the general feedback structure",
+        "topics": [
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-feedback-amplifiers-the-general-feedback-structure",
+            "title": "Feedback amplifiers: The general feedback structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-effect-of-negative-feedback-on-gain",
+            "title": "Effect of negative feedback on gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-effect-of-negative-feedback-on-bandwidth",
+            "title": "Effect of negative feedback on bandwidth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-effect-of-negative-feedback-on-noise-reduction",
+            "title": "Effect of negative feedback on noise reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-effect-of-negative-feedback-on-distortion",
+            "title": "Effect of negative feedback on distortion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-the-four-basic-feedback-topologies",
+            "title": "The four basic feedback topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-analysis-of-discrete-bjt-circuits-in-voltage-series-feedback-topologies-voltage-gain-input-and-output-impedance",
+            "title": "Analysis of discrete BJT circuits in voltage-series feedback topologies - voltage gain, input and output impedance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-analysis-of-discrete-bjt-circuits-in-voltage-shunt-feedback-topologies-voltage-gain-input-and-output-impedance",
+            "title": "Analysis of discrete BJT circuits in voltage-shunt feedback topologies - voltage gain, input and output impedance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-oscillators-classification",
+            "title": "Oscillators: Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-oscillators-criterion-for-oscillation",
+            "title": "Oscillators: Criterion for oscillation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-wien-bridge-oscillator-working-principle-design-equations-and-analysis",
+            "title": "Wien bridge oscillator (working principle, design equations, and analysis)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-hartley-oscillator-working-principle-and-design-equations",
+            "title": "Hartley oscillator (working principle and design equations)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-03-module-3-feedback-amplifiers-the-general-feedback-structure-crystal-oscillator-working-principle-and-design-equations",
+            "title": "Crystal oscillator (working principle and design equations)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification",
+        "title": "Module 4: Power amplifiers classification",
+        "topics": [
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-power-amplifiers-classification",
+            "title": "Power amplifiers: Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-transformer-coupled-class-a-power-amplifier",
+            "title": "Transformer coupled class A power amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-push-pull-class-b-power-amplifier",
+            "title": "Push pull class B power amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-push-pull-class-ab-power-amplifier",
+            "title": "Push pull class AB power amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-complementary-symmetry-class-b-power-amplifier",
+            "title": "Complementary-symmetry class B power amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-complementary-symmetry-class-ab-power-amplifier",
+            "title": "Complementary-symmetry class AB power amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-class-c-power-amplifier-efficiency-and-distortion-no-analysis-required",
+            "title": "Class C power amplifier - efficiency and distortion (no analysis required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-class-d-power-amplifier-efficiency-and-distortion-no-analysis-required",
+            "title": "Class D power amplifier - efficiency and distortion (no analysis required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-linear-voltage-regulators-types-of-voltage-regulators-series-and-shunt",
+            "title": "Linear Voltage Regulators: Types of voltage regulators - series and shunt",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-series-voltage-regulator-working-and-design",
+            "title": "Series voltage regulator - working and design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-shunt-voltage-regulator-working-and-design",
+            "title": "Shunt voltage regulator - working and design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-load-regulation",
+            "title": "Load regulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-line-regulation",
+            "title": "Line regulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-short-circuit-protection",
+            "title": "Short circuit protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect303-analog-circuits-04-module-4-power-amplifiers-classification-fold-back-protection",
+            "title": "Fold back protection",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-pcecl307-analog-circuits-lab",
+    "code": "PCECL307-ANALOG-CIRCUITS-LAB",
+    "name": "PCECL307 ANALOG CIRCUITS LAB",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif",
+        "title": "Module 1: Rc integrating and differentiating circuits transient analysis with dif",
+        "topics": [
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-rc-integrating-circuit-transient-analysis-with-different-inputs-and-frequency-response",
+            "title": "RC Integrating Circuit (Transient analysis with different inputs and frequency response)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-rc-differentiating-circuit-transient-analysis-with-different-inputs-and-frequency-response",
+            "title": "RC Differentiating Circuit (Transient analysis with different inputs and frequency response)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-diode-clipping-circuit-transient-and-transfer-characteristics",
+            "title": "Diode Clipping Circuit (Transient and transfer characteristics)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-diode-clamping-circuit-transient-and-transfer-characteristics",
+            "title": "Diode Clamping Circuit (Transient and transfer characteristics)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-ce-amplifier-design-for-a-specific-voltage-gain-and-plot-frequency-response-characteristics",
+            "title": "CE Amplifier - Design for a specific voltage gain and plot frequency response characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-cs-mosfet-amplifier-design-for-a-specific-voltage-gain-and-plot-frequency-response-characteristics",
+            "title": "CS MOSFET Amplifier - Design for a specific voltage gain and plot frequency response characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-cascaded-amplifier-ce-ce-design-for-a-specific-voltage-gain-and-plot-frequency-response-characteristics",
+            "title": "Cascaded Amplifier (CE-CE) - Design for a specific voltage gain and plot frequency response characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-cascode-amplifier-design-for-a-specific-voltage-gain-and-plot-frequency-response-characteristics",
+            "title": "Cascode Amplifier - Design for a specific voltage gain and plot frequency response characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-current-series-feedback-amplifier-design-for-a-specific-voltage-gain-and-plot-frequency-response-characteristics",
+            "title": "Current Series Feedback Amplifier - Design for a specific voltage gain and plot frequency response characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-voltage-series-feedback-amplifier-design-for-a-specific-voltage-gain-and-plot-frequency-response-characteristics",
+            "title": "Voltage Series Feedback Amplifier - Design for a specific voltage gain and plot frequency response characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-rc-phase-shift-oscillator",
+            "title": "RC Phase Shift Oscillator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-wien-bridge-oscillator",
+            "title": "Wien Bridge Oscillator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-class-b-power-amplifier-transformerless",
+            "title": "Class B Power Amplifier (Transformerless)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-class-ab-power-amplifier-transformerless",
+            "title": "Class AB Power Amplifier (Transformerless)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-transistor-series-voltage-regulator-with-short-circuit-protection-design-for-a-specific-output-voltage-plot-load-and-line-regulation-characteristics",
+            "title": "Transistor Series Voltage Regulator with Short Circuit Protection - Design for a specific output voltage (plot load and line regulation characteristics)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl307-analog-circuits-lab-01-module-1-rc-integrating-and-differentiating-circuits-transient-analysis-with-dif-transistor-series-voltage-regulator-without-short-circuit-protection-design-for-a-specific-output-voltage-plot-load-and-line-regulation-characteristics",
+            "title": "Transistor Series Voltage Regulator without Short Circuit Protection - Design for a specific output voltage (plot load and line regulation characteristics)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-uchut346-engineering-economics",
+    "code": "UCHUT346-ENGINEERING-ECONOMICS",
+    "name": "UCHUT346 ENGINEERING ECONOMICS",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts",
+        "title": "Module 1: Basic economics concepts",
+        "topics": [
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-basic-economics-concepts",
+            "title": "Basic Economics Concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-basic-economic-problems",
+            "title": "Basic economic problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-production-possibility-curve",
+            "title": "Production Possibility Curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-utility",
+            "title": "Utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-law-of-diminishing-marginal-utility",
+            "title": "Law of diminishing marginal utility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-law-of-demand",
+            "title": "Law of Demand",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-law-of-supply",
+            "title": "Law of supply",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-elasticity",
+            "title": "Elasticity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-measurement-of-elasticity-and-its-applications",
+            "title": "measurement of elasticity and its applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-equilibrium",
+            "title": "Equilibrium",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-changes-in-demand-and-supply-and-its-effects",
+            "title": "Changes in demand and supply and its effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-production-function",
+            "title": "Production function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-law-of-variable-proportion",
+            "title": "Law of variable proportion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-economies-of-scale",
+            "title": "Economies of Scale",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-internal-and-external-economies",
+            "title": "Internal and External Economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-01-module-1-basic-economics-concepts-cobb-douglas-production-function",
+            "title": "Cobb-Douglas Production Function",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts",
+        "title": "Module 2: Cost concepts",
+        "topics": [
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-cost-concepts",
+            "title": "Cost concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-social-cost",
+            "title": "Social cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-private-cost",
+            "title": "private cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-explicit-and-implicit-cost",
+            "title": "Explicit and implicit cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-sunk-cost",
+            "title": "Sunk cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-opportunity-cost",
+            "title": "Opportunity cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-short-run-cost-curves",
+            "title": "short run cost curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-revenue-concepts",
+            "title": "Revenue concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-firms-and-their-objectives",
+            "title": "Firms and their objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-types-of-firms",
+            "title": "Types of firms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-markets",
+            "title": "Markets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-perfect-competition",
+            "title": "Perfect Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-monopoly",
+            "title": "Monopoly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-monopolistic-competition",
+            "title": "Monopolistic Competition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-02-module-2-cost-concepts-oligopoly-features-and-equilibrium-of-a-firm",
+            "title": "Oligopoly (features and equilibrium of a firm)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system",
+        "title": "Module 3: Monetary system",
+        "topics": [
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-monetary-system",
+            "title": "Monetary System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-money",
+            "title": "Money",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-functions",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-central-banking",
+            "title": "Central Banking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-inflation",
+            "title": "Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-causes-and-effects",
+            "title": "Causes and Effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-measures-to-control-inflation",
+            "title": "Measures to Control Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-monetary-and-fiscal-policies",
+            "title": "Monetary and Fiscal policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-deflation",
+            "title": "Deflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-taxation",
+            "title": "Taxation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-direct-and-indirect-taxes-merits-and-demerits",
+            "title": "Direct and Indirect taxes (merits and demerits)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-gst",
+            "title": "GST",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-national-income",
+            "title": "National income",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-concepts",
+            "title": "Concepts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-circular-flow",
+            "title": "Circular Flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-methods-of-estimation-and-difficulties",
+            "title": "Methods of Estimation and Difficulties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-stock-market",
+            "title": "Stock Market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-functions",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-problems-faced-by-the-indian-stock-market",
+            "title": "Problems faced by the Indian stock market",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-demat-account-and-trading-account",
+            "title": "Demat Account and Trading Account",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-stock-market-indicators",
+            "title": "Stock market Indicators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-03-module-3-monetary-system-sensex-and-nifty",
+            "title": "SENSEX and NIFTY",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering",
+        "title": "Module 4: Value analysis and value engineering",
+        "topics": [
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-value-analysis-and-value-engineering",
+            "title": "Value Analysis and value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-cost-value",
+            "title": "Cost Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-exchange-value",
+            "title": "Exchange Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-use-value",
+            "title": "Use Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-esteem-value",
+            "title": "Esteem Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-aims-advantages-and-application-areas-of-value-engineering",
+            "title": "Aims, Advantages and Application areas of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-value-engineering-procedure",
+            "title": "Value Engineering Procedure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-break-even-analysis",
+            "title": "Break-even Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-cost-benefit-analysis",
+            "title": "Cost-Benefit Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-capital-budgeting",
+            "title": "Capital Budgeting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut346-engineering-economics-04-module-4-value-analysis-and-value-engineering-process-planning",
+            "title": "Process planning",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development",
+    "code": "UCHUT347-ENGINEERING-ETHICS-AND-SUSTAINABLE-DEVELOPMENT",
+    "name": "UCHUT347 ENGINEERING ETHICS AND SUSTAINABLE DEVELOPMENT",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics",
+        "title": "Module 1: Fundamentals of ethics",
+        "topics": [
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-fundamentals-of-ethics",
+            "title": "Fundamentals of ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-personal-vs-professional-ethics",
+            "title": "Personal vs. professional ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-civic-virtue",
+            "title": "Civic Virtue",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-respect-for-others",
+            "title": "Respect for others",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-profession-and-professionalism",
+            "title": "Profession and Professionalism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-ingenuity",
+            "title": "Ingenuity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-diligence",
+            "title": "Diligence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-responsibility",
+            "title": "Responsibility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-integrity-in-design-development-and-research-domains",
+            "title": "Integrity in design, development, and research domains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-plagiarism",
+            "title": "Plagiarism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-a-balanced-outlook-on-law",
+            "title": "A balanced outlook on law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-challenges",
+            "title": "Challenges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-case-studies",
+            "title": "Case studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-technology-and-digital-revolution",
+            "title": "Technology and digital revolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-data-information-and-knowledge",
+            "title": "Data, information, and knowledge",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-cybertrust-and-cybersecurity",
+            "title": "Cybertrust and cybersecurity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-data-collection-management",
+            "title": "Data collection & management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-high-technologies",
+            "title": "High technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-connecting-people-and-places",
+            "title": "Connecting people and places",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-accessibility-and-social-impacts",
+            "title": "Accessibility and social impacts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-managing-conflict",
+            "title": "Managing conflict",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-collective-bargaining",
+            "title": "Collective bargaining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-confidentiality",
+            "title": "Confidentiality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-role-of-confidentiality-in-moral-integrity",
+            "title": "Role of confidentiality in moral integrity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-codes-of-ethics",
+            "title": "Codes of Ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-basic-concepts-in-gender-studies",
+            "title": "Basic concepts in Gender Studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-sex",
+            "title": "Sex",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender",
+            "title": "Gender",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-sexuality",
+            "title": "Sexuality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-spectrum-beyond-the-binary",
+            "title": "Gender spectrum: beyond the binary",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-identity",
+            "title": "Gender identity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-expression",
+            "title": "Gender expression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-stereotypes",
+            "title": "Gender stereotypes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-disparity-and-discrimination-in-education",
+            "title": "Gender disparity and discrimination in education",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-disparity-and-discrimination-in-employment",
+            "title": "Gender disparity and discrimination in employment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-disparity-and-discrimination-in-everyday-life",
+            "title": "Gender disparity and discrimination in everyday life",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-history-of-women-in-science-technology",
+            "title": "History of women in Science & Technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gendered-technologies-innovations",
+            "title": "Gendered technologies & innovations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-ethical-values-and-practices-in-connection-with-gender",
+            "title": "Ethical values and practices in connection with gender",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-equity",
+            "title": "Equity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-diversity",
+            "title": "Diversity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-justice",
+            "title": "Gender justice",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-policy-and-women-transgender-empowerment-initiatives",
+            "title": "Gender policy and women/transgender empowerment initiatives",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic",
+        "title": "Module 2: Introduction to environmental ethics definition importance and historic",
+        "topics": [
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-introduction-to-environmental-ethics",
+            "title": "Introduction to Environmental Ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-definition-of-environmental-ethics",
+            "title": "Definition of environmental ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-importance-of-environmental-ethics",
+            "title": "Importance of environmental ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-historical-development-of-environmental-ethics",
+            "title": "Historical development of environmental ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-anthropocentrism-biocentrism-ecocentrism",
+            "title": "Key philosophical theories (anthropocentrism, biocentrism, ecocentrism)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-sustainable-engineering-principles",
+            "title": "Sustainable Engineering Principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-definition-and-scope",
+            "title": "Definition and scope",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-triple-bottom-line-economic-social-and-environmental-sustainability",
+            "title": "Triple bottom line (economic, social and environmental sustainability)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-life-cycle-analysis-and-sustainability-metrics",
+            "title": "Life cycle analysis and sustainability metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-ecosystems-and-biodiversity",
+            "title": "Ecosystems and Biodiversity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-basics-of-ecosystems-and-their-functions",
+            "title": "Basics of ecosystems and their functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-importance-of-biodiversity-and-its-conservation",
+            "title": "Importance of biodiversity and its conservation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-human-impact-on-ecosystems-and-biodiversity-loss",
+            "title": "Human impact on ecosystems and biodiversity loss",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-an-overview-of-various-ecosystems-in-kerala-india-and-its-significance",
+            "title": "An overview of various ecosystems in Kerala/India, and its significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-landscape-and-urban-ecology",
+            "title": "Landscape and Urban Ecology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-principles-of-landscape-ecology",
+            "title": "Principles of landscape ecology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-urbanization-and-its-environmental-impact",
+            "title": "Urbanization and its environmental impact",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-sustainable-urban-planning-and-green-infrastructure",
+            "title": "Sustainable urban planning and green infrastructure",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate",
+        "title": "Module 3: Hydrology and water management basics of hydrology and water cycle wate",
+        "topics": [
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-hydrology-and-water-management",
+            "title": "Hydrology and Water Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-basics-of-hydrology-and-water-cycle",
+            "title": "Basics of hydrology and water cycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-water-scarcity-and-pollution-issues",
+            "title": "Water scarcity and pollution issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-sustainable-water-management-practices",
+            "title": "Sustainable water management practices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-environmental-flow",
+            "title": "Environmental flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-disruptions-and-disasters",
+            "title": "Disruptions and disasters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-zero-waste-concepts-and-practices",
+            "title": "Zero Waste Concepts and Practices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-definition-of-zero-waste-and-its-principles",
+            "title": "Definition of zero waste and its principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-strategies-for-waste-reduction-reuse-reduce-and-recycling",
+            "title": "Strategies for waste reduction, reuse, reduce and recycling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-case-studies-of-successful-zero-waste-initiatives",
+            "title": "Case studies of successful zero waste initiatives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-circular-economy-and-degrowth",
+            "title": "Circular Economy and Degrowth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-introduction-to-the-circular-economy-model",
+            "title": "Introduction to the circular economy model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-differences-between-linear-and-circular-economies",
+            "title": "Differences between linear and circular economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-degrowth-principles",
+            "title": "Degrowth principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-strategies-for-implementing-circular-economy-practices-and-degrowth-principles-in-engineering",
+            "title": "Strategies for implementing circular economy practices and degrowth principles in engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-mobility-and-sustainable-transportation",
+            "title": "Mobility and Sustainable Transportation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-impacts-of-transportation-on-the-environment-and-climate",
+            "title": "Impacts of transportation on the environment and climate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-basic-tenets-of-a-sustainable-transportation-design",
+            "title": "Basic tenets of a Sustainable Transportation design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-sustainable-urban-mobility-solutions",
+            "title": "Sustainable urban mobility solutions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-integrated-mobility-systems",
+            "title": "Integrated mobility systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-e-mobility",
+            "title": "E-Mobility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-existing-and-upcoming-models-of-sustainable-mobility-solutions",
+            "title": "Existing and upcoming models of sustainable mobility solutions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene",
+        "title": "Module 4: Renewable energy and sustainable technologies overview of renewable ene",
+        "topics": [
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-renewable-energy-and-sustainable-technologies",
+            "title": "Renewable Energy and Sustainable Technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-renewable-energy-sources-solar-wind-hydro-biomass",
+            "title": "Overview of renewable energy sources (solar, wind, hydro, biomass)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-sustainable-technologies-in-energy-production-and-consumption",
+            "title": "Sustainable technologies in energy production and consumption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-challenges-and-opportunities-in-renewable-energy-adoption",
+            "title": "Challenges and opportunities in renewable energy adoption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-climate-change-and-engineering-solutions",
+            "title": "Climate Change and Engineering Solutions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-basics-of-climate-change-science",
+            "title": "Basics of climate change science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-impact-of-climate-change-on-natural-and-human-systems",
+            "title": "Impact of climate change on natural and human systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-kerala-india-and-the-climate-crisis",
+            "title": "Kerala/India and the Climate crisis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-engineering-solutions-to-mitigate-adapt-and-build-resilience-to-climate-change",
+            "title": "Engineering solutions to mitigate, adapt and build resilience to climate change",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-environmental-policies-and-regulations",
+            "title": "Environmental Policies and Regulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-key-environmental-policies-and-regulations-national-and-international",
+            "title": "Overview of key environmental policies and regulations (national and international)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-role-of-engineers-in-policy-implementation-and-compliance",
+            "title": "Role of engineers in policy implementation and compliance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-ethical-considerations-in-environmental-policy-making",
+            "title": "Ethical considerations in environmental policy-making",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-case-studies-and-future-directions",
+            "title": "Case Studies and Future Directions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-analysis-of-real-world-case-studies",
+            "title": "Analysis of real-world case studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-emerging-trends-and-future-directions-in-environmental-ethics-and-sustainability",
+            "title": "Emerging trends and future directions in environmental ethics and sustainability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-discussion-on-the-role-of-engineers-in-promoting-a-sustainable-future",
+            "title": "Discussion on the role of engineers in promoting a sustainable future",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science",
+    "code": "GNEST305-INTRODUCTION-TO-ARTIFICIAL-INTELLIGENCE-AND-DATA-SCIENCE",
+    "name": "GNEST305 INTRODUCTION TO ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning",
+        "title": "Module 1: Introduction to AI and Machine Learning - Basics of Machine Learning",
+        "topics": [
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-introduction-to-ai",
+            "title": "Introduction to AI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-introduction-to-machine-learning",
+            "title": "Introduction to Machine Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-basics-of-machine-learning",
+            "title": "Basics of Machine Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-types-of-machine-learning-systems",
+            "title": "Types of Machine Learning systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-challenges-in-ml",
+            "title": "Challenges in ML",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-supervised-learning-model-example",
+            "title": "Supervised learning model example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-regression-models",
+            "title": "Regression models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-classification-model-example",
+            "title": "Classification model example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-logistic-regression",
+            "title": "Logistic regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-unsupervised-model-example",
+            "title": "Unsupervised model example",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-k-means-clustering",
+            "title": "K-means clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-artificial-neural-network",
+            "title": "Artificial Neural Network",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-perceptron",
+            "title": "Perceptron",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-universal-approximation-theorem-statement-only",
+            "title": "Universal Approximation Theorem (statement only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-multi-layer-perceptron",
+            "title": "Multi-Layer Perceptron",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-deep-neural-network",
+            "title": "Deep Neural Network",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-demonstration-of-regression-and-classification-problems-using-mlp-text-2",
+            "title": "Demonstration of regression and classification problems using MLP (Text-2)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra",
+        "title": "Module 2: Mathematical Foundations of AI and Data Science - Role of Linear Algebra",
+        "topics": [
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-mathematical-foundations-of-ai-and-data-science",
+            "title": "Mathematical Foundations of AI and Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-role-of-linear-algebra-in-data-representation-and-analysis",
+            "title": "Role of Linear Algebra in Data Representation and Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-matrix-decomposition",
+            "title": "Matrix decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-singular-value-decomposition-svd",
+            "title": "Singular Value Decomposition (SVD)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-spectral-decomposition",
+            "title": "Spectral decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-dimensionality-reduction-technique",
+            "title": "Dimensionality reduction technique",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-principal-component-analysis-pca-text-1",
+            "title": "Principal Component Analysis (PCA) (Text-1)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability",
+        "title": "Module 3: Applied Probability and Statistics for AI and Data Science - Basics of Probability",
+        "topics": [
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-applied-probability-and-statistics-for-ai-and-data-science",
+            "title": "Applied Probability and Statistics for AI and Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-basics-of-probability",
+            "title": "Basics of probability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-random-variables-and-statistical-measures",
+            "title": "Random variables and statistical measures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-rules-in-probability",
+            "title": "Rules in probability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-bayes-theorem-and-its-applications",
+            "title": "Bayes theorem and its applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-statistical-estimation",
+            "title": "Statistical estimation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-maximum-likelihood-estimator-mle",
+            "title": "Maximum Likelihood Estimator (MLE)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-statistical-summaries",
+            "title": "Statistical summaries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-correlation-analysis",
+            "title": "Correlation analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-linear-correlation-direct-problems-only",
+            "title": "Linear correlation (direct problems only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-regression-analysis",
+            "title": "Regression analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-linear-regression-using-least-square-method-text-book-4",
+            "title": "Linear regression (using least square method) (Text book 4)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science",
+        "title": "Module 4: Basics of Data Science - Benefits of Data Science",
+        "topics": [
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-basics-of-data-science",
+            "title": "Basics of Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-benefits-of-data-science",
+            "title": "Benefits of Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-use-of-statistics-and-machine-learning-in-data-science",
+            "title": "Use of statistics and Machine Learning in Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-data-science-process",
+            "title": "Data science process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-applications-of-machine-learning-in-data-science",
+            "title": "Applications of Machine Learning in Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-modelling-process",
+            "title": "Modelling process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-demonstration-of-ml-applications-in-data-science",
+            "title": "Demonstration of ML applications in Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-big-data-and-data-science",
+            "title": "Big Data and Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-visualization-tools-tableau-powerbi-r-or-python-for-visualization",
+            "title": "Visualization tools: Tableau, PowerBI, R or Python (for visualization)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-machine-learning-implementation-tools-python-matlab-or-r-text-book-5",
+            "title": "Machine Learning implementation tools: Python, MATLAB or R (Text book-5)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-pbect304-logic-circuit-design",
+    "code": "PBECT304-LOGIC-CIRCUIT-DESIGN",
+    "name": "PBECT304 LOGIC CIRCUIT DESIGN",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio",
+        "title": "Module 1: Introduction to digital circuits review of number systems representatio",
+        "topics": [
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-introduction-to-digital-circuits",
+            "title": "Introduction to digital circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-review-of-number-systems-representation",
+            "title": "Review of number systems representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-number-system-conversions",
+            "title": "Number system conversions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-arithmetic-of-binary-number-systems",
+            "title": "Arithmetic of Binary number systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-signed-and-unsigned-numbers",
+            "title": "Signed and unsigned numbers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-bcd",
+            "title": "BCD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-boolean-algebra-theorems",
+            "title": "Boolean algebra theorems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-sum-of-product-and-product-of-sum-simplification",
+            "title": "Sum of product and product of sum simplification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-canonical-forms",
+            "title": "Canonical forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-min-term-and-max-term",
+            "title": "Min term and max term",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-simplification-of-boolean-expressions",
+            "title": "Simplification of Boolean expressions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-karnaugh-map-upto-4-variables",
+            "title": "Karnaugh map (upto 4 variables)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-01-module-1-introduction-to-digital-circuits-review-of-number-systems-representatio-implementation-of-boolean-expressions-using-universal-gates",
+            "title": "Implementation of Boolean expressions using universal gates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits",
+        "title": "Module 2: Combinational logic circuits",
+        "topics": [
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-combinational-logic-circuits",
+            "title": "Combinational logic circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-half-adder-and-full-adders",
+            "title": "Half adder and Full adders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-subtractors",
+            "title": "Subtractors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-bcd-adder",
+            "title": "BCD adder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-ripple-carry-adder",
+            "title": "Ripple carry adder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-carry-look-ahead-adder",
+            "title": "Carry look ahead adder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-decoders",
+            "title": "Decoders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-encoders",
+            "title": "Encoders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-code-converters",
+            "title": "Code converters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-comparators",
+            "title": "Comparators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-parity-generator",
+            "title": "Parity generator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-multiplexers",
+            "title": "Multiplexers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-de-multiplexers",
+            "title": "De-multiplexers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-implementation-of-boolean-algebra-using-mux",
+            "title": "Implementation of Boolean algebra using MUX",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-introduction-to-verilog-hdl",
+            "title": "Introduction to Verilog HDL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-verilog-hdl-basic-language-elements",
+            "title": "Verilog HDL basic language elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-basic-implementation-of-logic-gates-in-verilog",
+            "title": "Basic implementation of logic gates in Verilog",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-02-module-2-combinational-logic-circuits-basic-implementation-of-combinational-circuits-in-verilog",
+            "title": "Basic implementation of combinational circuits in Verilog",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops",
+        "title": "Module 3: Sequential circuits sr latch flip flops",
+        "topics": [
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-sequential-circuits",
+            "title": "Sequential Circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-sr-latch",
+            "title": "SR Latch",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-sr-flip-flop",
+            "title": "SR Flip flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-jk-flip-flop",
+            "title": "JK Flip flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-master-slave-jk-flip-flop",
+            "title": "Master-Slave JK Flip flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-d-flip-flop",
+            "title": "D Flip flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-t-flip-flop",
+            "title": "T Flip flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-conversion-of-flip-flops",
+            "title": "Conversion of Flip flops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-excitation-table",
+            "title": "Excitation table",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-characteristic-equation",
+            "title": "Characteristic equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-shift-registers",
+            "title": "Shift registers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-sipo-shift-register",
+            "title": "SIPO Shift register",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-siso-shift-register",
+            "title": "SISO Shift register",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-piso-shift-register",
+            "title": "PISO Shift register",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-pipo-shift-register",
+            "title": "PIPO Shift register",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-universal-shift-register",
+            "title": "Universal shift register",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-ring-counter",
+            "title": "Ring counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-johnson-counter",
+            "title": "Johnson counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-design-of-asynchronous-counter",
+            "title": "Design of Asynchronous counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-design-of-synchronous-counter",
+            "title": "Design of Synchronous counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-03-module-3-sequential-circuits-sr-latch-flip-flops-design-of-mod-n-counter",
+            "title": "Design of Mod N counter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines",
+        "title": "Module 4: Finite state machines",
+        "topics": [
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-finite-state-machines",
+            "title": "Finite state machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-mealy-model",
+            "title": "Mealy model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-moore-model",
+            "title": "Moore model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-state-graphs",
+            "title": "State graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-state-assignment",
+            "title": "State assignment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-state-table",
+            "title": "State table",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-state-reduction",
+            "title": "State reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-logic-families",
+            "title": "Logic Families",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-electrical-characteristics-of-logic-gates",
+            "title": "Electrical characteristics of logic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-noise-margin",
+            "title": "Noise margin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-fan-in",
+            "title": "Fan-in",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-fan-out",
+            "title": "Fan-out",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-propagation-delay",
+            "title": "Propagation delay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-transition-time",
+            "title": "Transition time",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-power-delay-product",
+            "title": "Power-delay product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-ttl",
+            "title": "TTL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-ecl",
+            "title": "ECL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-cmos",
+            "title": "CMOS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-circuit-description-and-working-of-ttl-inverter",
+            "title": "Circuit description and working of TTL inverter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-circuit-description-and-working-of-cmos-inverter",
+            "title": "Circuit description and working of CMOS inverter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-cmos-nand-gate",
+            "title": "CMOS NAND gate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pbect304-logic-circuit-design-04-module-4-finite-state-machines-cmos-nor-gate",
+            "title": "CMOS NOR gate",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-pcecl308-logic-circuit-design-laboratory",
+    "code": "PCECL308-LOGIC-CIRCUIT-DESIGN-LABORATORY",
+    "name": "PCECL308 LOGIC CIRCUIT DESIGN LABORATORY",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-01-module-1-realization-of-functions-using-basic-and-universal-gates-sop-and-pos-fo",
+        "title": "Module 1: Realization of functions using basic and universal gates sop and pos fo",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-01-module-1-realization-of-functions-using-basic-and-universal-gates-sop-and-pos-fo-realization-of-functions-using-basic-gates",
+            "title": "Realization of functions using basic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-01-module-1-realization-of-functions-using-basic-and-universal-gates-sop-and-pos-fo-realization-of-functions-using-universal-gates",
+            "title": "Realization of functions using universal gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-01-module-1-realization-of-functions-using-basic-and-universal-gates-sop-and-pos-fo-realization-of-functions-in-sop-form",
+            "title": "Realization of functions in SOP form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-01-module-1-realization-of-functions-using-basic-and-universal-gates-sop-and-pos-fo-realization-of-functions-in-pos-form",
+            "title": "Realization of functions in POS form",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat",
+        "title": "Module 2: Design and realization of halffull adder and subtractor using basic gat",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-half-adder-using-basic-gates",
+            "title": "Design and realization of half adder using basic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-full-adder-using-basic-gates",
+            "title": "Design and realization of full adder using basic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-half-subtractor-using-basic-gates",
+            "title": "Design and realization of half subtractor using basic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-full-subtractor-using-basic-gates",
+            "title": "Design and realization of full subtractor using basic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-half-adder-using-universal-gates",
+            "title": "Design and realization of half adder using universal gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-full-adder-using-universal-gates",
+            "title": "Design and realization of full adder using universal gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-half-subtractor-using-universal-gates",
+            "title": "Design and realization of half subtractor using universal gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-02-module-2-design-and-realization-of-halffull-adder-and-subtractor-using-basic-gat-design-and-realization-of-full-subtractor-using-universal-gates",
+            "title": "Design and realization of full subtractor using universal gates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-03-module-3-4-bit-addersubtractor-and-bcd-adder-using-7483",
+        "title": "Module 3: 4 bit addersubtractor and bcd adder using 7483",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-03-module-3-4-bit-addersubtractor-and-bcd-adder-using-7483-4-bit-adder-using-ic-7483",
+            "title": "4-bit adder using IC 7483",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-03-module-3-4-bit-addersubtractor-and-bcd-adder-using-7483-4-bit-subtractor-using-ic-7483",
+            "title": "4-bit subtractor using IC 7483",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-03-module-3-4-bit-addersubtractor-and-bcd-adder-using-7483-4-bit-adder-subtractor-using-ic-7483",
+            "title": "4-bit adder/subtractor using IC 7483",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-03-module-3-4-bit-addersubtractor-and-bcd-adder-using-7483-bcd-adder-using-ic-7483",
+            "title": "BCD adder using IC 7483",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-04-module-4-study-of-flip-flops-s",
+        "title": "Module 4: Study of flip flops s",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-04-module-4-study-of-flip-flops-s-study-of-s-r-flip-flop-using-nand-gates",
+            "title": "Study of S-R flip flop using NAND gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-04-module-4-study-of-flip-flops-s-study-of-d-flip-flop-using-nand-gates",
+            "title": "Study of D flip flop using NAND gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-04-module-4-study-of-flip-flops-s-study-of-t-flip-flop-using-nand-gates",
+            "title": "Study of T flip flop using NAND gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-04-module-4-study-of-flip-flops-s-study-of-jk-flip-flop-using-nand-gates",
+            "title": "Study of JK flip flop using NAND gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-04-module-4-study-of-flip-flops-s-study-of-master-slave-jk-flip-flop-using-nand-gates",
+            "title": "Study of Master Slave JK flip flop using NAND gates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-05-module-5-asynchronous-counter-3-bit-updown-counter-realization-of-mod-n-counter",
+        "title": "Module 5: Asynchronous counter 3 bit updown counter realization of mod n counter",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-05-module-5-asynchronous-counter-3-bit-updown-counter-realization-of-mod-n-counter-asynchronous-3-bit-up-counter",
+            "title": "Asynchronous 3-bit up counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-05-module-5-asynchronous-counter-3-bit-updown-counter-realization-of-mod-n-counter-asynchronous-3-bit-down-counter",
+            "title": "Asynchronous 3-bit down counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-05-module-5-asynchronous-counter-3-bit-updown-counter-realization-of-mod-n-counter-asynchronous-3-bit-up-down-counter",
+            "title": "Asynchronous 3-bit up/down counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-05-module-5-asynchronous-counter-3-bit-updown-counter-realization-of-mod-n-counter-realization-of-mod-n-asynchronous-counter",
+            "title": "Realization of Mod-N asynchronous counter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-06-module-6-synchronous-counter-realization-of-4",
+        "title": "Module 6: Synchronous counter realization of 4",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-06-module-6-synchronous-counter-realization-of-4-realization-of-4-bit-synchronous-up-counter",
+            "title": "Realization of 4-bit synchronous up counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-06-module-6-synchronous-counter-realization-of-4-realization-of-4-bit-synchronous-down-counter",
+            "title": "Realization of 4-bit synchronous down counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-06-module-6-synchronous-counter-realization-of-4-realization-of-4-bit-synchronous-up-down-counter",
+            "title": "Realization of 4-bit synchronous up/down counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-06-module-6-synchronous-counter-realization-of-4-realization-of-mod-n-synchronous-counters",
+            "title": "Realization of Mod-N synchronous counters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-07-module-7-ring-counter-and-johnson-counter",
+        "title": "Module 7: Ring counter and johnson counter",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-07-module-7-ring-counter-and-johnson-counter-ring-counter",
+            "title": "Ring counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-07-module-7-ring-counter-and-johnson-counter-johnson-counter",
+            "title": "Johnson counter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-08-module-8-realization-of-counters-using-ics-7490-7492-7493",
+        "title": "Module 8: Realization of counters using ics 7490 7492 7493",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-08-module-8-realization-of-counters-using-ics-7490-7492-7493-realization-of-counters-using-ic-7490",
+            "title": "Realization of counters using IC 7490",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-08-module-8-realization-of-counters-using-ics-7490-7492-7493-realization-of-counters-using-ic-7492",
+            "title": "Realization of counters using IC 7492",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-08-module-8-realization-of-counters-using-ics-7490-7492-7493-realization-of-counters-using-ic-7493",
+            "title": "Realization of counters using IC 7493",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-09-module-9-realization-of-combinational-circuits-using-mux-demux-using-ics-74150-7",
+        "title": "Module 9: Realization of combinational circuits using mux demux using ics 74150 7",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-09-module-9-realization-of-combinational-circuits-using-mux-demux-using-ics-74150-7-realization-of-combinational-circuits-using-mux-using-ic-74150",
+            "title": "Realization of combinational circuits using MUX using IC 74150",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-09-module-9-realization-of-combinational-circuits-using-mux-demux-using-ics-74150-7-realization-of-combinational-circuits-using-demux-using-ic-74154",
+            "title": "Realization of combinational circuits using DEMUX using IC 74154",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-10-module-10-sequence-generator-detector",
+        "title": "Module 10: Sequence generator detector",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-10-module-10-sequence-generator-detector-sequence-generator",
+            "title": "Sequence Generator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-10-module-10-sequence-generator-detector-sequence-detector",
+            "title": "Sequence Detector",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas",
+        "title": "Module 11: Experiment 1 realization of logic gates and familiarization of fpgas",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-familiarization-of-a-small-fpga-board-and-its-ports-and-interface",
+            "title": "Familiarization of a small FPGA board and its ports and interface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-creation-of-pcf-files-for-the-fpga-board",
+            "title": "Creation of .pcf files for the FPGA board",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-familiarization-of-the-basic-syntax-of-verilog",
+            "title": "Familiarization of the basic syntax of Verilog",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-development-of-verilog-modules-for-basic-gates",
+            "title": "Development of Verilog modules for basic gates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-synthesis-and-implementation-of-basic-gate-verilog-modules-in-fpga-to-verify-truth-tables",
+            "title": "Synthesis and implementation of basic gate Verilog modules in FPGA to verify truth tables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-verification-of-universality-of-nand-gate-by-uploading-the-verilog-file-to-the-fpga-board",
+            "title": "Verification of universality of NAND gate by uploading the Verilog file to the FPGA board",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-verification-of-universality-of-nor-gate-by-uploading-the-verilog-file-to-the-fpga-board",
+            "title": "Verification of universality of NOR gate by uploading the Verilog file to the FPGA board",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-verification-of-non-associativity-of-nand-gate-by-uploading-the-verilog-file-to-the-fpga-board",
+            "title": "Verification of non-associativity of NAND gate by uploading the Verilog file to the FPGA board",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-11-module-11-experiment-1-realization-of-logic-gates-and-familiarization-of-fpgas-verification-of-non-associativity-of-nor-gate-by-uploading-the-verilog-file-to-the-fpga-board",
+            "title": "Verification of non-associativity of NOR gate by uploading the Verilog file to the FPGA board",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-12-module-12-experiment-2-adders-in-verilog",
+        "title": "Module 12: Experiment 2 adders in verilog",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-12-module-12-experiment-2-adders-in-verilog-development-of-verilog-modules-for-half-adder-in-dataflow-modeling",
+            "title": "Development of Verilog modules for half adder in dataflow modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-12-module-12-experiment-2-adders-in-verilog-development-of-verilog-modules-for-half-adder-in-behavioral-modeling",
+            "title": "Development of Verilog modules for half adder in behavioral modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-12-module-12-experiment-2-adders-in-verilog-development-of-verilog-modules-for-half-adder-in-structural-modeling",
+            "title": "Development of Verilog modules for half adder in structural modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-12-module-12-experiment-2-adders-in-verilog-development-of-verilog-modules-for-full-adder-in-structural-modeling-using-half-adder",
+            "title": "Development of Verilog modules for full adder in structural modeling using half adder",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-13-module-13-experiment-3-mux-and-demux-in-verilog",
+        "title": "Module 13: Experiment 3 mux and demux in verilog",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-13-module-13-experiment-3-mux-and-demux-in-verilog-development-of-verilog-modules-for-a-4x1-mux",
+            "title": "Development of Verilog modules for a 4x1 MUX",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-13-module-13-experiment-3-mux-and-demux-in-verilog-development-of-verilog-modules-for-a-1x4-demux",
+            "title": "Development of Verilog modules for a 1x4 DEMUX",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters",
+        "title": "Module 14: Experiment 4 flipflops and counters",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters-development-of-verilog-modules-for-sr-flip-flop",
+            "title": "Development of Verilog modules for SR flip-flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters-development-of-verilog-modules-for-jk-flip-flop",
+            "title": "Development of Verilog modules for JK flip-flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters-development-of-verilog-modules-for-d-flip-flop",
+            "title": "Development of Verilog modules for D flip-flop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters-development-of-verilog-modules-for-binary-counter",
+            "title": "Development of Verilog modules for binary counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters-development-of-verilog-modules-for-decade-counter",
+            "title": "Development of Verilog modules for decade counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters-development-of-verilog-modules-for-johnson-counter",
+            "title": "Development of Verilog modules for Johnson counter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-14-module-14-experiment-4-flipflops-and-counters-development-of-verilog-modules-for-ring-counter",
+            "title": "Development of Verilog modules for Ring counter",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-15-module-15-experiment-5-multiplexer-and-logic-implementation-in-fpga",
+        "title": "Module 15: Experiment 5 multiplexer and logic implementation in fpga",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-15-module-15-experiment-5-multiplexer-and-logic-implementation-in-fpga-gate-level-design-of-an-8-1-multiplexer",
+            "title": "Gate level design of an 8:1 multiplexer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-15-module-15-experiment-5-multiplexer-and-logic-implementation-in-fpga-writing-8-1-multiplexer-design-to-fpga-and-testing-its-functionality",
+            "title": "Writing 8:1 multiplexer design to FPGA and testing its functionality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-15-module-15-experiment-5-multiplexer-and-logic-implementation-in-fpga-realization-of-any-logic-function-using-the-8-1-multiplexer-module",
+            "title": "Realization of any logic function using the 8:1 multiplexer module",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip",
+        "title": "Module 16: Experiment 6 flip",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-gate-level-design-of-j-k-flip-flop-implementation-and-testing-on-fpga",
+            "title": "Gate level design of J-K flip-flop, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-gate-level-design-of-j-k-master-slave-flip-flop-implementation-and-testing-on-fpga",
+            "title": "Gate level design of J-K master-slave flip-flop, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-gate-level-design-of-t-flip-flop-implementation-and-testing-on-fpga",
+            "title": "Gate level design of T flip-flop, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-gate-level-design-of-d-flip-flop-implementation-and-testing-on-fpga",
+            "title": "Gate level design of D flip-flop, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-implementation-and-testing-of-t-to-d-flip-flop-conversion-on-fpga",
+            "title": "Implementation and testing of T to D flip-flop conversion on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-implementation-and-testing-of-d-to-t-flip-flop-conversion-on-fpga",
+            "title": "Implementation and testing of D to T flip-flop conversion on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-implementation-and-testing-of-j-k-to-t-flip-flop-conversion-on-fpga",
+            "title": "Implementation and testing of J-K to T flip-flop conversion on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-16-module-16-experiment-6-flip-implementation-and-testing-of-j-k-to-d-flip-flop-conversion-on-fpga",
+            "title": "Implementation and testing of J-K to D flip-flop conversion on FPGA",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-17-module-17-experiment-7-asynchronous-and-synchronous-counters-in-fpga",
+        "title": "Module 17: Experiment 7 asynchronous and synchronous counters in fpga",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-17-module-17-experiment-7-asynchronous-and-synchronous-counters-in-fpga-design-of-a-4-bit-up-ripple-counter-using-t-flip-flops-implementation-and-testing-on-fpga",
+            "title": "Design of a 4-bit up ripple counter using T flip-flops, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-17-module-17-experiment-7-asynchronous-and-synchronous-counters-in-fpga-design-of-a-4-bit-down-ripple-counter-using-t-flip-flops-implementation-and-testing-on-fpga",
+            "title": "Design of a 4-bit down ripple counter using T flip-flops, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-17-module-17-experiment-7-asynchronous-and-synchronous-counters-in-fpga-design-of-a-4-bit-up-synchronous-counter-using-t-flip-flops-implementation-and-testing-on-fpga",
+            "title": "Design of a 4-bit up synchronous counter using T flip-flops, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-17-module-17-experiment-7-asynchronous-and-synchronous-counters-in-fpga-design-of-a-4-bit-down-synchronous-counter-using-t-flip-flops-implementation-and-testing-on-fpga",
+            "title": "Design of a 4-bit down synchronous counter using T flip-flops, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-18-module-18-experiment-8-universal-shift-register-in-fpga",
+        "title": "Module 18: Experiment 8 universal shift register in fpga",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-18-module-18-experiment-8-universal-shift-register-in-fpga-design-of-a-4-bit-universal-shift-register-using-d-flip-flops-implementation-and-testing-on-fpga",
+            "title": "Design of a 4-bit universal shift register using D flip-flops, implementation and testing on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-18-module-18-experiment-8-universal-shift-register-in-fpga-implementation-of-ring-counter-using-the-4-bit-universal-shift-register-on-fpga",
+            "title": "Implementation of ring counter using the 4-bit universal shift register on FPGA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-18-module-18-experiment-8-universal-shift-register-in-fpga-implementation-of-johnson-counter-using-the-4-bit-universal-shift-register-on-fpga",
+            "title": "Implementation of Johnson counter using the 4-bit universal shift register on FPGA",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcecl308-logic-circuit-design-laboratory-19-module-19-experiment-9-bcd-to-seven-segment-decoder-in-fpga",
+        "title": "Module 19: Experiment 9 bcd to seven segment decoder in fpga",
+        "topics": [
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-19-module-19-experiment-9-bcd-to-seven-segment-decoder-in-fpga-gate-level-design-of-a-bcd-to-seven-segment-decoder",
+            "title": "Gate level design of a BCD to seven segment decoder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-19-module-19-experiment-9-bcd-to-seven-segment-decoder-in-fpga-writing-bcd-to-seven-segment-decoder-to-fpga-and-testing-its-functionality",
+            "title": "Writing BCD to seven segment decoder to FPGA and testing its functionality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcecl308-logic-circuit-design-laboratory-19-module-19-experiment-9-bcd-to-seven-segment-decoder-in-fpga-testing-the-bcd-to-seven-segment-decoder-with-switches-and-seven-segment-display-using-output-ports",
+            "title": "Testing the BCD to seven segment decoder with switches and seven segment display using output ports",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3",
+    "code": "GYMAT301-MATHEMATICS-FOR-ELECTRICAL-SCIENCE-AND-PHYSICAL-SCIENCE-–-3",
+    "name": "GYMAT301 MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE – 3",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral",
+        "title": "Module 1: Fourier integral",
+        "topics": [
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-integral",
+            "title": "Fourier Integral",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-from-fourier-series-to-fourier-integral",
+            "title": "From Fourier series to Fourier Integral",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-cosine-and-sine-integrals",
+            "title": "Fourier Cosine and Sine integrals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-cosine-and-sine-transform",
+            "title": "Fourier Cosine and Sine Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-linearity",
+            "title": "Linearity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-transforms-of-derivatives",
+            "title": "Transforms of Derivatives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-transform-and-its-inverse",
+            "title": "Fourier Transform and its inverse",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-linearity",
+            "title": "Linearity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-transforms-of-derivative",
+            "title": "Transforms of Derivative",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function",
+        "title": "Module 2: Complex function",
+        "topics": [
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-complex-function",
+            "title": "Complex Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-limit",
+            "title": "Limit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-continuity",
+            "title": "Continuity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-derivative",
+            "title": "Derivative",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-analytic-functions",
+            "title": "Analytic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-cauchy-riemann-equations-without-proof",
+            "title": "Cauchy-Riemann Equations (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-laplace-s-equations",
+            "title": "Laplace's Equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-harmonic-functions",
+            "title": "Harmonic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-finding-harmonic-conjugate",
+            "title": "Finding harmonic conjugate",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-conformal-mapping",
+            "title": "Conformal mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-z-2",
+            "title": "Mappings of w = z^2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-e-z",
+            "title": "Mappings of w = e^z",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-cos-z",
+            "title": "Mappings of w = cos z",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-sin-z",
+            "title": "Mappings of w = sin z",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration",
+        "title": "Module 3: Complex integration",
+        "topics": [
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-complex-integration",
+            "title": "Complex Integration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-line-integrals-in-the-complex-plane-definition-basic-properties",
+            "title": "Line integrals in the complex plane (Definition & Basic properties)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-first-evaluation-method",
+            "title": "First evaluation method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-second-evaluation-method",
+            "title": "Second evaluation method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-cauchy-s-integral-theorem-without-proof-on-simply-connected-domain",
+            "title": "Cauchy's integral theorem (without proof) on simply connected domain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-independence-of-path",
+            "title": "Independence of path",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-cauchy-integral-theorem-on-multiply-connected-domain-without-proof",
+            "title": "Cauchy integral theorem on multiply connected domain (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-cauchy-integral-formula-without-proof",
+            "title": "Cauchy Integral formula (without proof)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series",
+        "title": "Module 4: Taylor series and maclaurin series",
+        "topics": [
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-taylor-series-and-maclaurin-series",
+            "title": "Taylor series and Maclaurin series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-laurent-series-without-proof",
+            "title": "Laurent series (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-singularities-and-zeros-isolated-singularity",
+            "title": "Singularities and Zeros - Isolated Singularity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-poles",
+            "title": "Poles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-essential-singularities",
+            "title": "Essential Singularities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-removable-singularities",
+            "title": "Removable singularities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-zeros-of-analytic-functions-poles-and-zeros",
+            "title": "Zeros of Analytic functions - Poles and Zeros",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-formulas-for-residues",
+            "title": "Formulas for Residues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-residue-theorem-without-proof",
+            "title": "Residue theorem (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-residue-integration-integral-of-rational-functions-of-cos-and-sin",
+            "title": "Residue Integration- Integral of Rational Functions of cosθ and sinθ",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ec-3-pcect302-solid-state-devices",
+    "code": "PCECT302-SOLID-STATE-DEVICES",
+    "name": "PCECT302 SOLID STATE DEVICES",
+    "branchId": "ec",
+    "semester": 3,
+    "modules": [
+      {
+        "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions",
+        "title": "Module 1: Review of semiconductor physics equilibrium and steady state conditions",
+        "topics": [
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions",
+            "title": "Review of Semiconductor physics: Equilibrium and steady state conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-concept-of-effective-mass",
+            "title": "Concept of effective mass",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-fermi-level",
+            "title": "Fermi level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-density-of-states",
+            "title": "Density of states",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-effective-density-of-states",
+            "title": "Effective density of states",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-equilibrium-concentration-of-electrons-and-holes",
+            "title": "Equilibrium concentration of electrons and holes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-excess-carriers-in-semiconductors",
+            "title": "Excess carriers in semiconductors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-generation-and-recombination-mechanisms-of-excess-carriers",
+            "title": "Generation and recombination mechanisms of excess carriers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-quasi-fermi-levels",
+            "title": "Quasi-Fermi levels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-carrier-transport-in-semiconductors",
+            "title": "Carrier transport in semiconductors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-drift",
+            "title": "Drift",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-conductivity-and-mobility",
+            "title": "Conductivity and mobility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-variation-of-mobility-with-temperature-and-doping",
+            "title": "Variation of mobility with temperature and doping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-hall-effect",
+            "title": "Hall Effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-diffusion",
+            "title": "Diffusion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-einstein-relations",
+            "title": "Einstein relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-poisson-equations",
+            "title": "Poisson equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-continuity-equations",
+            "title": "Continuity equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-current-flow-equations",
+            "title": "Current flow equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-diffusion-length",
+            "title": "Diffusion length",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-01-module-1-review-of-semiconductor-physics-equilibrium-and-steady-state-conditions-gradient-of-quasi-fermi-level",
+            "title": "Gradient of quasi-Fermi level",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di",
+        "title": "Module 2: Pn junctions contact potential electrical field potential and charge di",
+        "topics": [
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-pn-junctions",
+            "title": "PN junctions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-contact-potential",
+            "title": "Contact potential",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-electrical-field",
+            "title": "Electrical Field",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-potential-and-charge-distribution-at-the-junction",
+            "title": "Potential and Charge distribution at the junction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-biasing-and-energy-band-diagrams",
+            "title": "Biasing and Energy band diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-ideal-diode-equation",
+            "title": "Ideal diode equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-bipolar-junction-transistor",
+            "title": "Bipolar junction transistor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-transistor-action",
+            "title": "Transistor action",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-base-width-modulation",
+            "title": "Base width modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-current-components-in-a-bjt",
+            "title": "Current components in a BJT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-02-module-2-pn-junctions-contact-potential-electrical-field-potential-and-charge-di-derivation-of-current-components",
+            "title": "Derivation of current components",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic",
+        "title": "Module 3: Metal semiconductor contacts electron affinity and work function ohmic",
+        "topics": [
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-metal-semiconductor-contacts",
+            "title": "Metal Semiconductor contacts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-electron-affinity-and-work-function",
+            "title": "Electron affinity and work function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-ohmic-and-rectifying-contacts",
+            "title": "Ohmic and Rectifying Contacts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-current-voltage-characteristics",
+            "title": "Current voltage characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-ideal-mos-capacitor",
+            "title": "Ideal MOS capacitor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-band-diagrams-at-equilibrium",
+            "title": "Band diagrams at equilibrium",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-band-diagrams-at-accumulation",
+            "title": "Band diagrams at accumulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-band-diagrams-at-depletion",
+            "title": "Band diagrams at depletion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-band-diagrams-at-inversion",
+            "title": "Band diagrams at inversion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-surface-potential",
+            "title": "Surface potential",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-cv-characteristics",
+            "title": "CV characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-effects-of-real-surfaces",
+            "title": "Effects of real surfaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-threshold-voltage",
+            "title": "Threshold voltage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-body-effect",
+            "title": "Body effect",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-mosfet-drain-current-equation-of-enhancement-type-mosfet-derivation-linear-and-saturation-region",
+            "title": "MOSFET - Drain current equation of enhancement type MOSFET (derivation) - linear and saturation region",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-drain-characteristics",
+            "title": "Drain characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-03-module-3-metal-semiconductor-contacts-electron-affinity-and-work-function-ohmic-transfer-characteristics",
+            "title": "Transfer characteristics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f",
+        "title": "Module 4: Mosfet scaling need for scaling constant voltage scaling and constant f",
+        "topics": [
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-mosfet-scaling",
+            "title": "MOSFET scaling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-need-for-scaling",
+            "title": "Need for scaling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-constant-voltage-scaling",
+            "title": "Constant voltage scaling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-constant-field-scaling",
+            "title": "Constant field scaling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-sub-threshold-conduction-in-mos",
+            "title": "Sub-threshold conduction in MOS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-short-channel-effects-in-mosfets",
+            "title": "Short channel effects in MOSFETs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-channel-length-modulation",
+            "title": "Channel length modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-drain-induced-barrier-lowering",
+            "title": "Drain Induced Barrier Lowering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-velocity-saturation",
+            "title": "Velocity Saturation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-threshold-voltage-variations",
+            "title": "Threshold Voltage Variations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-hot-carrier-effects",
+            "title": "Hot Carrier Effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-mesfet-structure-operation-and-advantages",
+            "title": "MESFET - Structure, operation and advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-3-pcect302-solid-state-devices-04-module-4-mosfet-scaling-need-for-scaling-constant-voltage-scaling-and-constant-f-finfet-structure-operation-and-advantages",
+            "title": "FinFET - Structure, operation and advantages",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

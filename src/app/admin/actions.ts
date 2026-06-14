@@ -12,6 +12,10 @@ import { readUsers, writeUsers } from "@/lib/users";
 
 const allowedBranchDirs: Record<string, string> = {
   cs: "computer-science-and-engineering",
+  ce: "civil-engineering",
+  ec: "electronics-and-communication-engineering",
+  ee: "electrical-and-electronics-engineering",
+  me: "mechanical-engineering"
 };
 
 async function assertAdminSecret() {

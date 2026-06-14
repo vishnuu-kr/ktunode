@@ -1,8 +1,851 @@
 [
   {
+    "id": "cs-2-pcitt205-discrete-mathematical-structures",
+    "code": "PCITT205-DISCRETE-MATHEMATICAL-STRUCTURES",
+    "name": "PCITT205 DISCRETE MATHEMATICAL STRUCTURES",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic",
+        "title": "Module 1: Introduction to logic propositional logic",
+        "topics": [
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-introduction-to-logic-propositional-logic",
+            "title": "Introduction to Logic: Propositional Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-truth-tables",
+            "title": "Truth tables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-conditional-propositions",
+            "title": "Conditional propositions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-logical-equivalence",
+            "title": "Logical Equivalence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-laws-of-logic",
+            "title": "The laws of Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-principle-of-duality",
+            "title": "The Principle of Duality",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-resolution-proofs",
+            "title": "Resolution proofs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-predicates-and-quantifiers",
+            "title": "Predicates and Quantifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-universal-quantifier",
+            "title": "Universal quantifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-existential-quantifier",
+            "title": "Existential quantifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-negation-of-quantifiers",
+            "title": "Negation of Quantifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-rule-of-universal-specification",
+            "title": "The Rule of Universal Specification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-rule-of-universal-generalizations",
+            "title": "The Rule of Universal Generalizations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-implications-of-quantifiers",
+            "title": "The implications of Quantifiers",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product",
+        "title": "Module 2: Fundamental principles of counting the rules of sum and product",
+        "topics": [
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-fundamental-principles-of-counting-the-rules-of-sum-and-product",
+            "title": "Fundamental Principles of Counting: The Rules of Sum and Product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-permutations",
+            "title": "Permutations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-combinations",
+            "title": "Combinations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-the-binomial-theorem-without-proof",
+            "title": "The Binomial Theorem (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-combinations-with-repetition",
+            "title": "Combinations with Repetition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-principle-of-inclusion-and-exclusion-without-proof",
+            "title": "Principle of Inclusion and Exclusion (without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-derangements",
+            "title": "Derangements",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets",
+        "title": "Module 3: Relations functions and algebraic structures sets",
+        "topics": [
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-relations-functions-and-algebraic-structures-sets",
+            "title": "Relations, Functions and Algebraic Structures: Sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-relations",
+            "title": "Relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-functions",
+            "title": "Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-equivalence-relations",
+            "title": "Equivalence Relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-posets-and-lattices",
+            "title": "Posets and Lattices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-hasse-diagrams",
+            "title": "Hasse Diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-complimented-lattices",
+            "title": "Complimented lattices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-distributive-lattices",
+            "title": "Distributive lattices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-structured-sets-for-binary-operations",
+            "title": "Structured sets for binary operations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-semigroups",
+            "title": "Semigroups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-monoids",
+            "title": "Monoids",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-groups",
+            "title": "Groups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-rings",
+            "title": "Rings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-fields",
+            "title": "Fields",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples",
+        "title": "Module 4: Generating function definitions and examples",
+        "topics": [
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-generating-function-definitions-and-examples",
+            "title": "Generating Function: Definitions and Examples",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-calculation-techniques",
+            "title": "Calculation Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-exponential-generating-function",
+            "title": "Exponential Generating Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-recurrence-relations-first-order-linear-recurrence-relations-with-constant-coefficients-homogeneous-solution",
+            "title": "Recurrence Relations: First-order linear recurrence relations with constant coefficients - homogeneous Solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-recurrence-relations-first-order-linear-recurrence-relations-with-constant-coefficients-non-homogeneous-solution",
+            "title": "Recurrence Relations: First-order linear recurrence relations with constant coefficients - non-homogeneous Solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-second-order-linear-recurrence-relations-with-constant-coefficients-homogeneous-solution",
+            "title": "Second-order linear recurrence relations with constant coefficients - homogeneous Solution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-second-order-linear-recurrence-relations-with-constant-coefficients-non-homogeneous-solution",
+            "title": "Second-order linear recurrence relations with constant coefficients - non-homogeneous Solution",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-pccst205-discrete-mathematics",
+    "code": "PCCST205-DISCRETE-MATHEMATICS",
+    "name": "PCCST205 DISCRETE MATHEMATICS",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-relations-functions-and-lattices",
+        "title": "Module 1: Sets, Relations, Functions, and Lattices",
+        "topics": [
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-relations-functions-and-lattices-set-operations-power-sets-inclusion-exclusion-principle-derangements",
+            "title": "Set Operations: power sets, inclusion-exclusion principle, derangements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-relations-functions-and-lattices-relations-cartesian-products-properties-of-relations-equivalence-relations-classes-compositions",
+            "title": "Relations: Cartesian products, properties of relations, equivalence relations, classes, compositions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-relations-functions-and-lattices-posets-lattices-partial-order-relations-hasse-diagrams-upper-lower-bounds-lattices-distributive-complemented-lattices",
+            "title": "Posets & Lattices: Partial order relations, Hasse diagrams, upper/lower bounds, lattices, distributive/complemented lattices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-01-module-1-sets-relations-functions-and-lattices-functions-one-to-one-onto-bijective-inverse-functions-composition",
+            "title": "Functions: One-to-one, onto, bijective, inverse functions, composition",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs",
+        "title": "Module 2: Mathematical Logic and Proofs",
+        "topics": [
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-propositional-logic-propositions-logical-connectives-truth-tables-tautologies-logical-equivalences",
+            "title": "Propositional Logic: Propositions, logical connectives, truth tables, tautologies, logical equivalences",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-predicates-quantifiers-existential-and-universal-quantifiers-binding-variables-translating-natural-language",
+            "title": "Predicates & Quantifiers: existential and universal quantifiers, binding variables, translating natural language",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-rules-of-inference-valid-arguments-in-propositional-and-predicate-logic",
+            "title": "Rules of Inference: Valid arguments in propositional and predicate logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-02-module-2-mathematical-logic-and-proofs-proof-techniques-direct-proofs-contraposition-contradiction-counterexamples",
+            "title": "Proof Techniques: Direct proofs, contraposition, contradiction, counterexamples",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-pccst205-discrete-mathematics-03-module-3-mathematical-induction-and-recurrences",
+        "title": "Module 3: Mathematical Induction and Recurrences",
+        "topics": [
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-mathematical-induction-and-recurrences-induction-principle-of-mathematical-induction-strong-induction",
+            "title": "Induction: Principle of Mathematical Induction, Strong Induction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-mathematical-induction-and-recurrences-recurrence-relations-formulating-and-solving-linear-homogeneous-and-non-homogeneous-recurrences-with-constant-coefficients",
+            "title": "Recurrence Relations: Formulating and solving linear homogeneous and non-homogeneous recurrences with constant coefficients",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-03-module-3-mathematical-induction-and-recurrences-generating-functions-definition-sequence-calculation-solving-recurrence-relations-via-generating-functions",
+            "title": "Generating Functions: Definition, sequence calculation, solving recurrence relations via generating functions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-pccst205-discrete-mathematics-04-module-4-algebraic-structures-and-group-theory",
+        "title": "Module 4: Algebraic Structures and Group Theory",
+        "topics": [
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-algebraic-structures-and-group-theory-algebraic-systems-binary-operations-semi-groups-monoids-properties",
+            "title": "Algebraic Systems: Binary operations, semi-groups, monoids, properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-algebraic-structures-and-group-theory-group-theory-definitions-and-examples-of-groups-abelian-groups-identity-inverse-properties",
+            "title": "Group Theory: Definitions and examples of groups, abelian groups, identity, inverse properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pccst205-discrete-mathematics-04-module-4-algebraic-structures-and-group-theory-subgroups-cyclic-groups-permutations-symmetric-groups-s-n-cyclic-subgroups-permutation-compositions",
+            "title": "Subgroups & Cyclic Groups: Permutations, symmetric groups ($S_n$), cyclic subgroups, permutation compositions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr",
+    "code": "UCEST206-ENGINEERING-ENTREPRENEURSHIP-AND-IPR",
+    "name": "UCEST206 ENGINEERING ENTREPRENEURSHIP AND IPR",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship",
+        "title": "Module 1: Introduction to ideation innovation entrepreneurship",
+        "topics": [
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-introduction-to-ideation-innovation-entrepreneurship",
+            "title": "Introduction to Ideation, Innovation & Entrepreneurship",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-what-is-ideation",
+            "title": "What is Ideation?",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-understanding-innovation",
+            "title": "Understanding Innovation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-frameworks-for-innovation",
+            "title": "Frameworks for Innovation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-the-entrepreneurial-mindset",
+            "title": "The Entrepreneurial Mindset",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-starting-a-business-types-formation-statutory-compliances",
+            "title": "Starting a Business, types formation statutory compliances.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-resources-for-aspiring-entrepreneurs",
+            "title": "Resources for Aspiring Entrepreneurs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-introduction-to-intellectual-property-rights-ipr",
+            "title": "Introduction to Intellectual Property Rights (IPR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-types-of-ipr-patents-trademarks-copyrights-trade-secrets",
+            "title": "Types of IPR: Patents, trademarks, copyrights, trade secrets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-strategies-for-protecting-intellectual-property-based-on-the-type",
+            "title": "Strategies for protecting intellectual property based on the type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-role-of-ipr-in-securing-funding-and-competitive-advantage",
+            "title": "Role of IPR in securing funding and competitive advantage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-importance-of-building-a-strong-team",
+            "title": "Importance of building a strong team",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-identifying-roles",
+            "title": "Identifying roles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-skill-sets",
+            "title": "Skill sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-team-dynamics",
+            "title": "Team dynamics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-identifying-pain-points-and-problem-statement",
+            "title": "Identifying Pain Points and problem statement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-idea-generation-techniques",
+            "title": "Idea Generation Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-developing-and-refining-ideas",
+            "title": "Developing and Refining Ideas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-develop-strategies-for-bringing-your-innovation-to-life",
+            "title": "Develop strategies for bringing your innovation to life",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation",
+        "title": "Module 2: Problem and solution canvas preparation",
+        "topics": [
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-problem-and-solution-canvas-preparation",
+            "title": "Problem and solution canvas preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-orientation-and-canvas-introduction",
+            "title": "Orientation and canvas introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-needs-assessment",
+            "title": "Customer needs assessment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-segmentation",
+            "title": "Market segmentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-value-proposition",
+            "title": "Value proposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-competitive-analysis",
+            "title": "Competitive analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-entry-strategy",
+            "title": "Market entry strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-validation",
+            "title": "Market validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-regulatory-and-legal-considerations",
+            "title": "Regulatory and legal considerations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-profiling",
+            "title": "Customer profiling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-review-of-market-research",
+            "title": "Review of market research",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-segmentation",
+            "title": "Customer segmentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-profiling",
+            "title": "Customer profiling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-persona-development",
+            "title": "Persona development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-validation-and-feedback",
+            "title": "Validation and feedback",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-prioritization-and-selection",
+            "title": "Prioritization and selection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-communication-and-messaging",
+            "title": "Communication and messaging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-competitor-analysis",
+            "title": "Competitor analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-identify-competitors",
+            "title": "Identify competitors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-competitor-profiling",
+            "title": "Competitor profiling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-swot-analysis",
+            "title": "SWOT analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-positioning",
+            "title": "Market positioning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-feedback-and-reviews",
+            "title": "Customer feedback and reviews",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-pricing-analysis",
+            "title": "Pricing analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-differentiation-strategy",
+            "title": "Differentiation strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-benchmarking-and-improvement",
+            "title": "Benchmarking and improvement",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation",
+        "title": "Module 3: Business plan preparation",
+        "topics": [
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-business-plan-preparation",
+            "title": "Business plan preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-business-plan-framework",
+            "title": "Business plan framework",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-market-analysis",
+            "title": "Market analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-product-service-description",
+            "title": "Product/ service description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-marketing-and-sales-strategy",
+            "title": "Marketing and sales strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-operations-plan",
+            "title": "Operations plan",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-financial-projections",
+            "title": "Financial projections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-risk-management",
+            "title": "Risk management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-prototype-development-plan-preparation",
+            "title": "Prototype development plan preparation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-prototype-requirements-analysis",
+            "title": "Prototype requirements analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-technical-specifications",
+            "title": "Technical specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-development-approach",
+            "title": "Development approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-development-timeline",
+            "title": "Development timeline",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-resource-allocation",
+            "title": "Resource allocation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-testing-and-quality-assurance",
+            "title": "Testing and quality assurance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-iterative-development-and-feedback-loop",
+            "title": "Iterative development and feedback loop",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-documentation-and-version-control",
+            "title": "Documentation and version control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development",
+        "title": "Module 4: Prototype development",
+        "topics": [
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-prototype-development",
+            "title": "Prototype development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-stakeholder-engagement-strategies",
+            "title": "Stakeholder engagement strategies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-investors",
+            "title": "Investors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-partners",
+            "title": "Partners",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-customers",
+            "title": "Customers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-advisors-mentors",
+            "title": "Advisors & Mentors",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design",
-    "code": "GXEST203-FOUNDATIONS-OF-COMPUTING-FROM-HARDWARE-ESSENTIALS-TO-WEB-DESIGN",
-    "name": "GXEST203 FOUNDATIONS OF COMPUTING FROM HARDWARE ESSENTIALS TO WEB DESIGN",
+    "code": "GXEST203-FOUNDATIONS-OF-COMPUTING:-FROM-HARDWARE-ESSENTIALS-TO-WEB-DESIGN",
+    "name": "GXEST203 FOUNDATIONS OF COMPUTING: FROM HARDWARE ESSENTIALS TO WEB DESIGN",
     "branchId": "cs",
     "semester": 2,
     "modules": [
@@ -12,19 +855,7 @@
         "topics": [
           {
             "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-computer-hardware-cpu",
-            "title": "Computer Hardware – CPU",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-i-o-communication-and-device-management",
-            "title": "I/O communication and device management",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-interface-cards-buses-firmware-boot-process",
-            "title": "Interface cards – Buses – Firmware - Boot process",
+            "title": "Computer Hardware - CPU",
             "content": "",
             "pyqs": []
           },
@@ -45,6 +876,18 @@
             "title": "Storage devices- HDDs, SSDs, optical drives",
             "content": "",
             "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-i-o-communication-and-device-management",
+            "title": "I/O communication and device management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-interface-cards-buses-firmware-boot-process",
+            "title": "Interface cards - Buses - Firmware - Boot process",
+            "content": "",
+            "pyqs": []
           }
         ]
       },
@@ -53,20 +896,14 @@
         "title": "Module 2: Binary representation of data and numbers",
         "topics": [
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-ascii-and-unicode",
-            "title": "ASCII and Unicode",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-binary-representation-of-data-and-numbers",
             "title": "Binary representation of data and numbers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-cpu-architecture-and-instruction-set-basic-cpu-architecture-alu-registers-control-unit",
-            "title": "CPU Architecture and Instruction Set: Basic CPU architecture - ALU, registers, control unit",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-integer-representation",
+            "title": "Integer Representation",
             "content": "",
             "pyqs": []
           },
@@ -77,8 +914,26 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-integer-representation",
-            "title": "Integer Representation",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-ascii-and-unicode",
+            "title": "ASCII and Unicode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-cpu-architecture-and-instruction-set-basic-cpu-architecture-alu-registers-control-unit",
+            "title": "CPU Architecture and Instruction Set: Basic CPU architecture - ALU, registers, control unit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-instruction-format-and-assembly-language-basics-only",
+            "title": "Instruction format and assembly language (basics only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-fetch-execute-cycle-and-instruction-execution",
+            "title": "Fetch-execute cycle and instruction execution.",
             "content": "",
             "pyqs": []
           }
@@ -89,20 +944,26 @@
         "title": "Module 3: Computer system software",
         "topics": [
           {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-computer-system-software-operating-systems",
+            "title": "Computer System Software - Operating Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-basic-commands-in-linux-windows",
             "title": "Basic commands in Linux / Windows",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-client-server-networks",
-            "title": "Client/Server networks",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-shell-scripting-bash-computer-communications-lan-man-wan",
+            "title": "Shell scripting (bash). Computer Communications - LAN, MAN, WAN",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-computer-system-software-operating-systems",
-            "title": "Computer System Software - Operating Systems",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-client-server-networks",
+            "title": "Client/Server networks",
             "content": "",
             "pyqs": []
           },
@@ -117,6 +978,36 @@
             "title": "Topologies",
             "content": "",
             "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-basics-of-ip-addresses-dhcp-nat",
+            "title": "Basics of IP addresses, DHCP, NAT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-network-security-desktop-perimeter",
+            "title": "Network Security (Desktop & Perimeter)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-dns-vpn-routers",
+            "title": "DNS, VPN, Routers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-client-server",
+            "title": "Client-Server",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-internet-www-web-servers",
+            "title": "Internet, WWW, Web servers.",
+            "content": "",
+            "pyqs": []
           }
         ]
       },
@@ -125,8 +1016,8 @@
         "title": "Module 4: Web design basics of html css and javascript understanding the web cont",
         "topics": [
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-understanding-cascading-style-sheets",
-            "title": "Understanding Cascading Style Sheets",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-web-design-basics-of-html-css-and-javascript-understanding-the-web-content-delivery",
+            "title": "Web Design (Basics of HTML, CSS, and JavaScript) - Understanding the web content delivery",
             "content": "",
             "pyqs": []
           },
@@ -137,14 +1028,143 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-understanding-javascript",
-            "title": "Understanding JavaScript",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-understanding-cascading-style-sheets",
+            "title": "Understanding Cascading Style Sheets",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-web-design-basics-of-html-css-and-javascript-understanding-the-web-content-delivery",
-            "title": "Web Design (Basics of HTML, CSS, and JavaScript) – Understanding the web content delivery",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-understanding-javascript",
+            "title": "Understanding JavaScript",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-2-gamat201-mathematics-for-information-science-2",
+    "code": "GAMAT201-MATHEMATICS-FOR-INFORMATION-SCIENCE-–-2",
+    "name": "GAMAT201 MATHEMATICS FOR INFORMATION SCIENCE – 2",
+    "branchId": "cs",
+    "semester": 2,
+    "modules": [
+      {
+        "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-and-matrix-diagnostics",
+        "title": "Module 1: Linear Systems and Matrix Diagnostics",
+        "topics": [
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-and-matrix-diagnostics-systems-of-linear-equations-solutions-via-gauss-elimination-method-row-echelon-form",
+            "title": "Systems of linear equations, solutions via Gauss Elimination method, row-echelon form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-and-matrix-diagnostics-matrix-rank-analysis-fundamental-theorem-for-linear-systems-homogeneous-and-non-homogeneous-cases-without-proof",
+            "title": "Matrix rank analysis, Fundamental Theorem for Linear Systems (homogeneous and non-homogeneous cases without proof)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-and-matrix-diagnostics-eigenvalues-and-eigenvectors-for-square-matrices",
+            "title": "Eigenvalues and eigenvectors for square matrices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-01-module-1-linear-systems-and-matrix-diagnostics-diagonalization-process-of-similarity-transformations-p-cdot-d-cdot-p-1-calculating-powers-of-matrices",
+            "title": "Diagonalization process of similarity transformations ($P \\cdot D \\cdot P^{-1}$), calculating powers of matrices",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-and-dimensions",
+        "title": "Module 2: Vector Spaces and Dimensions",
+        "topics": [
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-and-dimensions-introduction-to-vector-spaces-restricted-to-r-n-and-m-m-times-n",
+            "title": "Introduction to Vector Spaces restricted to $R^n$ and $M_{m \\times n}$",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-and-dimensions-subspaces-and-algebraic-properties-using-vector-combinations",
+            "title": "Subspaces and algebraic properties using vector combinations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-and-dimensions-spanning-sets-assessing-linear-independence-vs-linear-dependence-of-vectors",
+            "title": "Spanning sets, assessing linear independence vs linear dependence of vectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-02-module-2-vector-spaces-and-dimensions-basis-for-a-vector-space-dimension-of-a-space-coordinate-representations-in-r-n-change-of-basis-transition-matrices",
+            "title": "Basis for a vector space, dimension of a space, coordinate representations in $R^n$, change-of-basis transition matrices",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-inner-product-spaces-and-projections",
+        "title": "Module 3: Inner Product Spaces and Projections",
+        "topics": [
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-inner-product-spaces-and-projections-vector-length-normalization-unit-vectors-dot-products-angles-between-vectors",
+            "title": "Vector length, normalization, unit vectors, dot products, angles between vectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-inner-product-spaces-and-projections-cauchy-schwarz-inequality-algebraic-definitions-of-inner-product-spaces-in-r-n-and-m-2-times-2",
+            "title": "Cauchy-Schwarz Inequality, algebraic definitions of inner product spaces in $R^n$ and $M_{2 \\times 2}$",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-inner-product-spaces-and-projections-orthogonal-and-orthonormal-sets-bases-gram-schmidt-orthonormalization-process",
+            "title": "Orthogonal and orthonormal sets/bases, Gram-Schmidt orthonormalization process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-03-module-3-inner-product-spaces-and-projections-least-squares-problem-deriving-projections-onto-sub-dimensional-workspaces",
+            "title": "Least Squares problem, deriving projections onto sub-dimensional workspaces",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-and-mappings",
+        "title": "Module 4: Linear Transformations and Mappings",
+        "topics": [
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-and-mappings-linear-transformations-evaluating-transformation-matrices",
+            "title": "Linear transformations, evaluating transformation matrices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-and-mappings-coordinate-rotations-in-r-2-and-projections-in-r-3",
+            "title": "Coordinate rotations in $R^2$ and projections in $R^3$",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-and-mappings-kernel-null-space-and-range-column-space-of-a-linear-transformation-along-with-their-bases",
+            "title": "Kernel (null space) and Range (column space) of a linear transformation along with their bases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gamat201-mathematics-for-information-science-2-04-module-4-linear-transformations-and-mappings-rank-and-nullity-evaluations-the-rank-nullity-theorem",
+            "title": "Rank and Nullity evaluations, the Rank-Nullity Theorem",
             "content": "",
             "pyqs": []
           }
@@ -164,14 +1184,8 @@
         "title": "Module 1: C fundamentals",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-basic-data-types",
-            "title": "Basic Data types",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-bit-wise-operators",
-            "title": "Bit-wise operators",
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-character-set",
+            "title": "Character Set",
             "content": "",
             "pyqs": []
           },
@@ -182,32 +1196,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-do-while",
-            "title": "do-while",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-expressions",
-            "title": "Expressions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-for",
-            "title": "for",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-identifiers",
             "title": "Identifiers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-if-else",
-            "title": "if-else",
             "content": "",
             "pyqs": []
           },
@@ -218,38 +1208,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-nested-if",
-            "title": "nested if",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-nested-loops",
-            "title": "nested loops.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-operators-and-its-precedence",
-            "title": "Operators and its precedence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-simple-programs",
-            "title": "Simple programs.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-structure-of-a-c-program",
-            "title": "Structure of a C program",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-switch",
-            "title": "switch",
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-basic-data-types",
+            "title": "Basic Data types",
             "content": "",
             "pyqs": []
           },
@@ -260,8 +1220,110 @@
             "pyqs": []
           },
           {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-operators-and-its-precedence",
+            "title": "Operators and its precedence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-bit-wise-operators",
+            "title": "Bit-wise operators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-expressions",
+            "title": "Expressions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-statements",
+            "title": "Statements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-input-and-output-statements",
+            "title": "Input and Output statements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-structure-of-a-c-program",
+            "title": "Structure of a C program",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-simple-programs",
+            "title": "Simple programs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-control-statements",
+            "title": "Control Statements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-if",
+            "title": "if",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-if-else",
+            "title": "if-else",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-nested-if",
+            "title": "nested if",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-switch",
+            "title": "switch",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-while",
             "title": "while",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-do-while",
+            "title": "do-while",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-for",
+            "title": "for",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-break",
+            "title": "break",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-continue",
+            "title": "continue",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-nested-loops",
+            "title": "nested loops",
             "content": "",
             "pyqs": []
           }
@@ -272,20 +1334,14 @@
         "title": "Module 2: Arrays",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-accessing-array-elements",
-            "title": "Accessing array elements",
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-arrays",
+            "title": "Arrays",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-array-initialization",
-            "title": "Array initialization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-bubble-sort",
-            "title": "Bubble sort",
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-single-dimensional-arrays",
+            "title": "Single dimensional arrays",
             "content": "",
             "pyqs": []
           },
@@ -296,8 +1352,38 @@
             "pyqs": []
           },
           {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-array-initialization",
+            "title": "Array initialization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-accessing-array-elements",
+            "title": "Accessing array elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-enumerated-data-type",
             "title": "Enumerated data type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-type-definition",
+            "title": "Type Definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-two-dimensional-arrays",
+            "title": "Two-dimensional arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-defining-a-two-dimensional-array",
+            "title": "Defining a two-dimensional array",
             "content": "",
             "pyqs": []
           },
@@ -314,14 +1400,38 @@
             "pyqs": []
           },
           {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-bubble-sort",
+            "title": "Bubble sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-strings",
+            "title": "Strings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-declaring-a-string-variable",
+            "title": "Declaring a string variable",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-reading-and-displaying-strings",
             "title": "Reading and displaying strings",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-type-definition",
-            "title": "Type Definition",
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-string-related-library-functions",
+            "title": "String related library functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-programs-for-string-matching",
+            "title": "Programs for string matching",
             "content": "",
             "pyqs": []
           }
@@ -332,20 +1442,14 @@
         "title": "Module 3: Functions",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-accessing-members",
-            "title": "Accessing members",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-functions",
+            "title": "Functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-array-of-structures",
-            "title": "Array of structures",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-command-line-arguments",
-            "title": "Command line Arguments.",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-function-definition",
+            "title": "Function definition",
             "content": "",
             "pyqs": []
           },
@@ -368,8 +1472,56 @@
             "pyqs": []
           },
           {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-recursion",
+            "title": "Recursion",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-passing-array-to-function",
             "title": "Passing array to function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-macros",
+            "title": "Macros",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-defining-and-calling-macros",
+            "title": "Defining and calling macros",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-command-line-arguments",
+            "title": "Command line Arguments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-structures",
+            "title": "Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-defining-a-structure-variable",
+            "title": "Defining a Structure variable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-accessing-members",
+            "title": "Accessing members",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-array-of-structures",
+            "title": "Array of structures",
             "content": "",
             "pyqs": []
           },
@@ -380,14 +1532,44 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-recursion",
-            "title": "Recursion",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-union",
+            "title": "Union",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-union",
-            "title": "Union.",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-storage-class",
+            "title": "Storage Class",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-storage-classes-associated-with-variables",
+            "title": "Storage Classes associated with variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-automatic-storage-class",
+            "title": "Automatic storage class",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-static-storage-class",
+            "title": "Static storage class",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-external-storage-class",
+            "title": "External storage class",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-register-storage-class",
+            "title": "Register storage class",
             "content": "",
             "pyqs": []
           }
@@ -398,38 +1580,14 @@
         "title": "Module 4: Pointers",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-accessing-array-elements-using-pointers",
-            "title": "Accessing array elements using pointers",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointers",
+            "title": "Pointers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-array-of-pointers",
-            "title": "Array of pointers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-dynamic-memory-allocation",
-            "title": "Dynamic Memory Allocation.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fread",
-            "title": "fread()",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-ftell",
-            "title": "ftell()",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fwrite",
-            "title": "fwrite().",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-declaration",
+            "title": "Declaration",
             "content": "",
             "pyqs": []
           },
@@ -446,8 +1604,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointer-to-function",
-            "title": "Pointer to function",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-accessing-array-elements-using-pointers",
+            "title": "Accessing array elements using pointers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-processing-strings-using-pointers",
+            "title": "Processing strings using pointers",
             "content": "",
             "pyqs": []
           },
@@ -458,8 +1622,62 @@
             "pyqs": []
           },
           {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-array-of-pointers",
+            "title": "Array of pointers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointer-to-function",
+            "title": "Pointer to function",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointer-to-structure",
             "title": "Pointer to structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-dynamic-memory-allocation",
+            "title": "Dynamic Memory Allocation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-files",
+            "title": "Files",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-different-types-of-files-in-c",
+            "title": "Different types of files in C",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-opening-a-file",
+            "title": "Opening a file",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-closing-a-file",
+            "title": "Closing a file",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-writing-to-a-file",
+            "title": "Writing to a file",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-reading-from-a-file",
+            "title": "Reading from a file",
             "content": "",
             "pyqs": []
           },
@@ -470,668 +1688,32 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-processing-strings-using-pointers",
-            "title": "Processing strings using pointers",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-library-functions-related-to-file",
+            "title": "Library functions related to file",
             "content": "",
             "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cs-2-pcitt205-discrete-mathematical-structures",
-    "code": "PCITT205-DISCRETE-MATHEMATICAL-STRUCTURES",
-    "name": "PCITT205 DISCRETE MATHEMATICAL STRUCTURES",
-    "branchId": "cs",
-    "semester": 2,
-    "modules": [
-      {
-        "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic",
-        "title": "Module 1: Introduction to logic propositional logic",
-        "topics": [
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-introduction-to-logic-propositional-logic",
-            "title": "Introduction to Logic: Propositional Logic",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-negation-of-quantifiers",
-            "title": "Negation of Quantifiers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-resolution-proofs",
-            "title": "Resolution proofs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-implications-of-quantifiers",
-            "title": "The implications of Quantifiers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-laws-of-logic",
-            "title": "The laws of Logic",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-principle-of-duality",
-            "title": "The Principle of Duality",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-rule-of-universal-generalizations",
-            "title": "The Rule of Universal Generalizations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-the-rule-of-universal-specification",
-            "title": "The Rule of Universal Specification",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-truth-tables",
-            "title": "Truth tables",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product",
-        "title": "Module 2: Fundamental principles of counting the rules of sum and product",
-        "topics": [
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-combinations",
-            "title": "Combinations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-combinations-with-repetition",
-            "title": "Combinations with Repetition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-derangements",
-            "title": "Derangements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-fundamental-principles-of-counting-the-rules-of-sum-and-product",
-            "title": "Fundamental Principles of Counting: The Rules of Sum and Product",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-permutations",
-            "title": "Permutations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-principle-of-inclusion-and-exclusion-without-proof",
-            "title": "Principle of Inclusion and Exclusion (without proof)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-the-binomial-theorem-without-proof",
-            "title": "The Binomial Theorem (without proof)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets",
-        "title": "Module 3: Relations functions and algebraic structures sets",
-        "topics": [
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-equivalence-relations",
-            "title": "Equivalence Relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-fields",
-            "title": "Fields",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-functions",
-            "title": "Functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-groups",
-            "title": "Groups",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-hasse-diagrams",
-            "title": "Hasse Diagrams",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-monoids",
-            "title": "Monoids",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-posets-and-lattices",
-            "title": "Posets and Lattices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-relations",
-            "title": "Relations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-relations-functions-and-algebraic-structures-sets",
-            "title": "Relations, Functions and Algebraic Structures: Sets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-rings",
-            "title": "Rings",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-semigroups",
-            "title": "Semigroups",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-structured-sets-for-binary-operations",
-            "title": "Structured sets for binary operations",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples",
-        "title": "Module 4: Generating function definitions and examples",
-        "topics": [
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-calculation-techniques",
-            "title": "Calculation Techniques",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-exponential-generating-function",
-            "title": "Exponential Generating Function",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-generating-function-definitions-and-examples",
-            "title": "Generating Function: Definitions and Examples",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-recurrence-relations-first-order-linear-recurrence-relations-with-constant-coefficients-homogeneous",
-            "title": "Recurrence Relations: First-order linear recurrence relations with constant coefficients – homogeneous, non-homogeneous Solution",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr",
-    "code": "UCEST206-ENGINEERING-ENTREPRENEURSHIP-AND-IPR",
-    "name": "UCEST206 ENGINEERING ENTREPRENEURSHIP AND IPR",
-    "branchId": "cs",
-    "semester": 2,
-    "modules": [
-      {
-        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship",
-        "title": "Module 1: Introduction to ideation innovation entrepreneurship",
-        "topics": [
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-develop-strategies-for-bringing-your-innovation-to-life",
-            "title": "Develop strategies for bringing your innovation to life",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-developing-and-refining-ideas",
-            "title": "Developing and Refining Ideas",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-frameworks-for-innovation",
-            "title": "Frameworks for Innovation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-idea-generation-techniques",
-            "title": "Idea Generation Techniques",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-identifying-pain-points-and-problem-statement",
-            "title": "Identifying Pain Points and problem statement",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-identifying-roles",
-            "title": "Identifying roles",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-importance-of-building-a-strong-team",
-            "title": "Importance of building a strong team",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-introduction-to-ideation-innovation-entrepreneurship",
-            "title": "Introduction to Ideation, Innovation & Entrepreneurship",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-introduction-to-intellectual-property-rights-ipr",
-            "title": "Introduction to Intellectual Property Rights (IPR)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-resources-for-aspiring-entrepreneurs",
-            "title": "Resources for Aspiring Entrepreneurs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-role-of-ipr-in-securing-funding-and-competitive-advantage",
-            "title": "Role of IPR in securing funding and competitive advantage",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-skill-sets",
-            "title": "Skill sets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-starting-a-business-types-formation-statutory-compliances",
-            "title": "Starting a Business, types formation statutory compliances.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-strategies-for-protecting-intellectual-property-based-on-the-type",
-            "title": "Strategies for protecting intellectual property based on the type",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-team-dynamics",
-            "title": "Team dynamics",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-the-entrepreneurial-mindset",
-            "title": "The Entrepreneurial Mindset",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-types-of-ipr-patents-trademarks-copyrights-trade-secrets",
-            "title": "Types of IPR: Patents, trademarks, copyrights, trade secrets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-understanding-innovation",
-            "title": "Understanding Innovation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-01-module-1-introduction-to-ideation-innovation-entrepreneurship-what-is-ideation",
-            "title": "What is Ideation?",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation",
-        "title": "Module 2: Problem and solution canvas preparation",
-        "topics": [
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-benchmarking-and-improvement",
-            "title": "Benchmarking and improvement",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-communication-and-messaging",
-            "title": "Communication and messaging",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-competitive-analysis",
-            "title": "Competitive analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-competitor-analysis",
-            "title": "Competitor analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-competitor-profiling",
-            "title": "Competitor profiling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-feedback-and-reviews",
-            "title": "Customer feedback and reviews",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-needs-assessment",
-            "title": "Customer needs assessment",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-profiling",
-            "title": "Customer profiling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-customer-segmentation",
-            "title": "Customer segmentation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-differentiation-strategy",
-            "title": "Differentiation strategy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-identify-competitors",
-            "title": "Identify competitors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-entry-strategy",
-            "title": "Market entry strategy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-positioning",
-            "title": "Market positioning",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-segmentation",
-            "title": "Market segmentation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-market-validation",
-            "title": "Market validation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-orientation-and-canvas-introduction",
-            "title": "Orientation and canvas introduction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-persona-development",
-            "title": "Persona development",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-pricing-analysis",
-            "title": "Pricing analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-prioritization-and-selection",
-            "title": "Prioritization and selection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-problem-and-solution-canvas-preparation",
-            "title": "Problem and  solution canvas preparation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-regulatory-and-legal-considerations",
-            "title": "Regulatory and legal considerations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-review-of-market-research",
-            "title": "Review of market research",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-swot-analysis",
-            "title": "SWOT analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-validation-and-feedback",
-            "title": "Validation and feedback",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-02-module-2-problem-and-solution-canvas-preparation-value-proposition",
-            "title": "Value proposition",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation",
-        "title": "Module 3: Business plan preparation",
-        "topics": [
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-business-plan-framework",
-            "title": "Business plan framework",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-business-plan-preparation",
-            "title": "Business plan preparation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-development-approach",
-            "title": "Development approach",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-development-timeline",
-            "title": "Development timeline",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-documentation-and-version-control",
-            "title": "Documentation and version control",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-financial-projections",
-            "title": "Financial projections",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-iterative-development-and-feedback-loop",
-            "title": "Iterative development and feedback loop",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-market-analysis",
-            "title": "Market analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-marketing-and-sales-strategy",
-            "title": "Marketing and sales strategy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-operations-plan",
-            "title": "Operations plan",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-product-service-description",
-            "title": "Product/ service description",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-prototype-development-plan-preparation",
-            "title": "Prototype development plan preparation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-prototype-requirements-analysis",
-            "title": "Prototype requirements analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-resource-allocation",
-            "title": "Resource allocation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-risk-management",
-            "title": "Risk management",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-technical-specifications",
-            "title": "Technical specifications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-03-module-3-business-plan-preparation-testing-and-quality-assurance",
-            "title": "Testing and quality assurance",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development",
-        "title": "Module 4: Prototype development",
-        "topics": [
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-advisors-mentors",
-            "title": "Advisors & Mentors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-customers",
-            "title": "Customers",
-            "content": "",
-            "pyqs": []
           },
           {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-investors",
-            "title": "Investors",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fseek",
+            "title": "fseek()",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-partners",
-            "title": "Partners",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-ftell",
+            "title": "ftell()",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-prototype-development",
-            "title": "Prototype development",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fread",
+            "title": "fread()",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-ucest206-engineering-entrepreneurship-and-ipr-04-module-4-prototype-development-stakeholder-engagement-strategies",
-            "title": "Stakeholder engagement strategies",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fwrite",
+            "title": "fwrite()",
             "content": "",
             "pyqs": []
           }

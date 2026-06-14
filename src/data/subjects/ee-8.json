@@ -1,0 +1,2939 @@
+[
+  {
+    "id": "ee-8-peeet864-electronic-communication",
+    "code": "PEEET864-ELECTRONIC-COMMUNICATION",
+    "name": "PEEET864 ELECTRONIC COMMUNICATION",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication",
+        "title": "Module 1: Analog communication",
+        "topics": [
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-analog-communication",
+            "title": "Analog Communication:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-introduction-to-communication-systems",
+            "title": "Introduction to communication systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-classification-of-channels",
+            "title": "Classification of channels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-need-for-modulation",
+            "title": "Need for modulation.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-amplitude-modulation",
+            "title": "Amplitude modulation:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-equation-and-frequency-spectrum-of-am-signal",
+            "title": "Equation and frequency spectrum of AM signal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-double-side-band-suppressed-carrier-dsb-sc-modulation",
+            "title": "Double-side band suppressed carrier (DSB-SC) modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-sin-gle-sideband-modulation-ssb",
+            "title": "Sin-gle sideband modulation (SSB)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-comparison-of-spectrum-power-and-effi-ciency-of-all-the-three-variants",
+            "title": "comparison of spectrum, power and effi-ciency of all the three variants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-amplitude-modulator-circuits-balanced-modulator",
+            "title": "Amplitude modulator circuits -balanced modulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-01-module-1-analog-communication-am-demodulators-envelope-detector",
+            "title": "AM demodulators - Envelope detector.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation",
+        "title": "Module 2: Angle modulation",
+        "topics": [
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-angle-modulation",
+            "title": "Angle Modulation:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-frequency-and-phase-modulation",
+            "title": "Frequency and phase modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-narrow-and-wide-band-fm-and-their-spectra",
+            "title": "Narrow and wide band FM and their spectra",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-modulation-and-demodulation-techniques-for-fm",
+            "title": "Modulation and demodulation techniques for FM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-pre-emphasis-and-de-emphasis",
+            "title": "pre-emphasis and de-emphasis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-fm-transmitter-and-receiver",
+            "title": "FM transmitter and receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-noise-in-receivers",
+            "title": "Noise in receivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-noise-figures",
+            "title": "Noise figures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-02-module-2-angle-modulation-performance-of-analog-modulation-schemes-in-awgn-snr-and-figure-of-merit-for-different-schemes",
+            "title": "Performance of analog modulation schemes in AWGN: SNR and figure of merit for different schemes.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication",
+        "title": "Module 3: Digital baseband communication",
+        "topics": [
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-digital-baseband-communication",
+            "title": "Digital baseband communication:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-elements-of-digital-communication-system",
+            "title": "Elements of digital communication system.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-sources-channels-and-receivers",
+            "title": "Sources, channels and receivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-sampling-and-reconstruction-of-analog-signals",
+            "title": "Sampling and Reconstruction of Analog Signals:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-nyquist-sampling-theorem",
+            "title": "Nyquist Sampling Theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-ideal-reconstruction-filter",
+            "title": "Ideal Reconstruction Filter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-pulse-amplitude-modulation-pam",
+            "title": "Pulse Amplitude Modulation (PAM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-time-division-multiplexing-with-pam",
+            "title": "Time division multiplexing with PAM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-pulse-code-modulation-pcm",
+            "title": "Pulse Code Modulation (PCM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-03-module-3-digital-baseband-communication-a-law-and-mu-law-quantization",
+            "title": "A-law and mu-law quantization.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication",
+        "title": "Module 4: Digital bandpass communication",
+        "topics": [
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-digital-bandpass-communication",
+            "title": "Digital bandpass communication :",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-digital-bandpass-communication-system",
+            "title": "Digital bandpass communication system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-bandpass-modulation-techniques",
+            "title": "Bandpass modulation techniques:",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-amplitude-shift-keying",
+            "title": "Amplitude shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-phase-shift-keying",
+            "title": "Phase shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-frequency-shift-keying",
+            "title": "Frequency shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-methods-of-generation-and-detection",
+            "title": "Methods of generation and detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-signal-constellations",
+            "title": "Signal constellations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-m-ary-digital-modulation-schemes",
+            "title": "M-ary digital modulation schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-quadrature-phase-shift-keying",
+            "title": "Quadrature phase shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-minimum-shift-keying",
+            "title": "Minimum shift keying",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet864-electronic-communication-04-module-4-digital-bandpass-communication-quadrature-amplitude-modulation",
+            "title": "Quadrature amplitude modulation.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-peeet862-hvdc-and-facts",
+    "code": "PEEET862-HVDC-AND-FACTS",
+    "name": "PEEET862 HVDC AND FACTS",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission",
+        "title": "Module 1: Introduction to hvdc system comparison of ac and dc transmission",
+        "topics": [
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-introduction-to-hvdc-system",
+            "title": "Introduction to HVDC System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-comparison-of-ac-and-dc-transmission",
+            "title": "Comparison of AC and DC Transmission",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-types-of-hvdc-system",
+            "title": "Types of HVDC system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-current-source-converters",
+            "title": "Current Source Converters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-analysis-without-overlap-period",
+            "title": "Analysis without overlap period",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-analysis-with-overlap-period",
+            "title": "Analysis with overlap period",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-voltage-source-converters-vsc",
+            "title": "Voltage Source Converters (VSC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-vsc-with-ac-current-control",
+            "title": "VSC with AC current control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-vsc-with-ac-voltage-control",
+            "title": "VSC with AC voltage control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-hvdc-controls",
+            "title": "HVDC Controls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-functions-of-hvdc-controls",
+            "title": "Functions of HVDC Controls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-equivalent-circuit-for-a-two-terminal-dc-link",
+            "title": "Equivalent circuit for a two terminal DC Link",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-control-basics-for-a-two-terminal-dc-link",
+            "title": "Control Basics for a two terminal DC Link",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-current-margin-control-method",
+            "title": "Current Margin Control Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-current-control-at-the-rectifier",
+            "title": "Current Control at the Rectifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-inverter-extinction-angle-control",
+            "title": "Inverter Extinction Angle Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-01-module-1-introduction-to-hvdc-system-comparison-of-ac-and-dc-transmission-hierarchy-of-controls",
+            "title": "Hierarchy of Controls",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an",
+        "title": "Module 2: Introduction to facts power flow in power systems voltage regulation an",
+        "topics": [
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-introduction-to-facts",
+            "title": "Introduction to FACTS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-power-flow-in-power-systems",
+            "title": "Power flow in Power Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-voltage-regulation-and-reactive-power-flow-control-in-power-systems",
+            "title": "Voltage regulation and reactive power flow control in Power Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-power-flow-control",
+            "title": "Power flow control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-constraints-of-maximum-transmission-line-loading",
+            "title": "Constraints of maximum transmission line loading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-needs-and-emergence-of-facts",
+            "title": "Needs and emergence of FACTS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-types-of-facts-controllers",
+            "title": "Types of FACTS controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-advantages-and-disadvantages-of-facts",
+            "title": "Advantages and disadvantages of FACTS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-transmission-line-compensation",
+            "title": "Transmission line compensation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-uncompensated-line",
+            "title": "Uncompensated line",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-shunt-compensation",
+            "title": "Shunt compensation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-series-compensation",
+            "title": "Series compensation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-02-module-2-introduction-to-facts-power-flow-in-power-systems-voltage-regulation-an-phase-angle-control",
+            "title": "Phase angle control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator",
+        "title": "Module 3: Shunt and series facts devices static shunt compensator",
+        "topics": [
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-static-shunt-compensator",
+            "title": "Static shunt Compensator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-objectives-of-shunt-compensations",
+            "title": "Objectives of shunt compensations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-variable-impedance-type-var-generators",
+            "title": "Variable impedance type VAR Generators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-tcr-principle-of-operation-and-schematic",
+            "title": "TCR (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-tsr-principle-of-operation-and-schematic",
+            "title": "TSR (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-tsc-principle-of-operation-and-schematic",
+            "title": "TSC (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-fc-tcr-principle-of-operation-and-schematic",
+            "title": "FC-TCR (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-statcom-principle-of-operation-and-schematic",
+            "title": "STATCOM (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-static-series-compensator",
+            "title": "Static Series compensator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-objectives-of-series-compensations",
+            "title": "Objectives of series compensations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-variable-impedance-type-series-compensators",
+            "title": "Variable impedance type series compensators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-gcsc-principle-of-operation-and-schematic",
+            "title": "GCSC (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-tcsc-principle-of-operation-and-schematic",
+            "title": "TCSC (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-tssc-principle-of-operation-and-schematic",
+            "title": "TSSC (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-03-module-3-shunt-and-series-facts-devices-static-shunt-compensator-switching-converter-type-series-compensators-sssc-principle-of-operation-and-schematic",
+            "title": "Switching converter type Series Compensators - SSSC (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati",
+        "title": "Module 4: Upfc and ipfc unified power flow controller circuit arrangement operati",
+        "topics": [
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati-unified-power-flow-controller-upfc-circuit-arrangement",
+            "title": "Unified Power Flow Controller (UPFC): Circuit Arrangement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati-operation-of-upfc",
+            "title": "Operation of UPFC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati-basic-principle-of-p-and-q-control",
+            "title": "Basic principle of P and Q control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati-independent-real-and-reactive-power-flow-control",
+            "title": "Independent real and reactive power flow control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati-applications-of-upfc",
+            "title": "Applications of UPFC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati-introduction-to-interline-power-flow-controller-ipfc-principle-of-operation-and-schematic",
+            "title": "Introduction to Interline Power Flow Controller (IPFC) (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet862-hvdc-and-facts-04-module-4-upfc-and-ipfc-unified-power-flow-controller-circuit-arrangement-operati-thyristor-controlled-voltage-and-phase-angle-regulators-principle-of-operation-and-schematic",
+            "title": "Thyristor controlled Voltage and Phase angle Regulators (Principle of operation and schematic)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-oeeet831-introduction-to-robotics",
+    "code": "OEEET831-INTRODUCTION-TO-ROBOTICS",
+    "name": "OEEET831 INTRODUCTION TO ROBOTICS",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions",
+        "title": "Module 1: Definitions",
+        "topics": [
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-definitions-of-robots",
+            "title": "Definitions of Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-robotics",
+            "title": "Robotics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-types-of-robots",
+            "title": "Types of Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-manipulators",
+            "title": "Manipulators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-mobile-robots-wheeled-robots",
+            "title": "Mobile Robots - Wheeled Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-mobile-robots-legged-robots",
+            "title": "Mobile Robots - Legged Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-aerial-robots",
+            "title": "Aerial Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-anatomy-of-a-robotic-manipulator",
+            "title": "Anatomy of a Robotic Manipulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-links",
+            "title": "Links",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-joints",
+            "title": "Joints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-actuators",
+            "title": "Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-sensors",
+            "title": "Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-controller",
+            "title": "Controller",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-open-kinematic-chain",
+            "title": "Open Kinematic Chain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-closed-kinematic-chain",
+            "title": "Closed Kinematic Chain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-degrees-of-freedom",
+            "title": "Degrees of Freedom",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-robot-considerations-for-an-application",
+            "title": "Robot Considerations for an Application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-number-of-axes",
+            "title": "Number of Axes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-work-volume",
+            "title": "Work Volume",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-capacity-and-speed",
+            "title": "Capacity and Speed",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-stroke-and-reach",
+            "title": "Stroke and Reach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-repeatability",
+            "title": "Repeatability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-precision-and-accuracy",
+            "title": "Precision and Accuracy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-operating-environment",
+            "title": "Operating Environment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-point-to-point-control",
+            "title": "Point to Point Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-01-module-1-definitions-continuous-path-control",
+            "title": "Continuous Path Control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators",
+        "title": "Module 2: Sensors and actuators",
+        "topics": [
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-sensors-and-actuators",
+            "title": "Sensors and Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-sensor-classification",
+            "title": "Sensor Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-touch-sensors",
+            "title": "Touch Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-force-sensors",
+            "title": "Force Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-proximity-sensors",
+            "title": "Proximity Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-vision-sensors",
+            "title": "Vision Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-internal-sensors",
+            "title": "Internal Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-position-sensors",
+            "title": "Position Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-velocity-sensors",
+            "title": "Velocity Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-acceleration-sensors",
+            "title": "Acceleration Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-force-sensors-internal",
+            "title": "Force Sensors (Internal)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-external-sensors",
+            "title": "External Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-contact-type-sensors",
+            "title": "Contact Type Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-non-contact-type-sensors",
+            "title": "Non-contact Type Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-actuators-for-robots",
+            "title": "Actuators for Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-classification-of-actuators",
+            "title": "Classification of Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-electric-actuators",
+            "title": "Electric Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-hydraulic-actuators",
+            "title": "Hydraulic Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-pneumatic-actuators",
+            "title": "Pneumatic Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-advantages-and-disadvantages-of-actuators",
+            "title": "Advantages and Disadvantages of Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-stepper-motors",
+            "title": "Stepper Motors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-dc-motors",
+            "title": "DC Motors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-dc-servo-motors-and-their-drivers",
+            "title": "DC Servo Motors and Their Drivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-ac-motors",
+            "title": "AC Motors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-linear-actuators",
+            "title": "Linear Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-selection-of-motors",
+            "title": "Selection of Motors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-robotic-configurations-and-end-effectors",
+            "title": "Robotic Configurations and End Effectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-robot-configurations",
+            "title": "Robot Configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-ppp-configuration",
+            "title": "PPP Configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-rpp-configuration",
+            "title": "RPP Configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-rrp-configuration",
+            "title": "RRP Configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-rrr-configuration",
+            "title": "RRR Configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-features-of-scara-robots",
+            "title": "Features of SCARA Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-features-of-puma-robots",
+            "title": "Features of PUMA Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-classification-of-robots-based-on-motion-control-methods",
+            "title": "Classification of Robots Based on Motion Control Methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-classification-of-robots-based-on-drive-technologies",
+            "title": "Classification of Robots Based on Drive Technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-3r-concurrent-wrist",
+            "title": "3R Concurrent Wrist",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-classification-of-end-effectors",
+            "title": "Classification of End Effectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-mechanical-grippers",
+            "title": "Mechanical Grippers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-special-tools",
+            "title": "Special Tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-magnetic-grippers",
+            "title": "Magnetic Grippers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-vacuum-grippers",
+            "title": "Vacuum Grippers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-adhesive-grippers",
+            "title": "Adhesive Grippers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-active-grippers",
+            "title": "Active Grippers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-passive-grippers",
+            "title": "Passive Grippers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-02-module-2-sensors-and-actuators-selection-and-design-considerations-of-grippers-in-robot",
+            "title": "Selection and Design Considerations of Grippers in Robot",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning",
+        "title": "Module 3: Kinematics and motion planning",
+        "topics": [
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-kinematics-and-motion-planning",
+            "title": "Kinematics and Motion Planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-robot-coordinate-systems",
+            "title": "Robot Coordinate Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-fundamental-rotations",
+            "title": "Fundamental Rotations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-composite-rotations",
+            "title": "Composite Rotations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-homogeneous-co-ordinates-and-transformations",
+            "title": "Homogeneous Co-ordinates and Transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-kinematic-parameters",
+            "title": "Kinematic Parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-d-h-representation",
+            "title": "D-H Representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-direct-kinematics",
+            "title": "Direct Kinematics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-the-arm-equation",
+            "title": "The Arm Equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-forward-kinematic-analysis-of-robots-up-to-3-dof",
+            "title": "Forward Kinematic Analysis of Robots up to 3 DOF",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-motion-planning",
+            "title": "Motion Planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-joint-space-trajectory-planning",
+            "title": "Joint Space Trajectory Planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-cubic-polynomial-trajectory",
+            "title": "Cubic Polynomial Trajectory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-linear-trajectory-with-parabolic-blends",
+            "title": "Linear Trajectory with Parabolic Blends",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-cartesian-space-planning",
+            "title": "Cartesian Space Planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-point-to-point-path-planning",
+            "title": "Point to Point Path Planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-03-module-3-kinematics-and-motion-planning-continuous-path-planning",
+            "title": "Continuous Path Planning",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots",
+        "title": "Module 4: Dynamics and control of robots",
+        "topics": [
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-dynamics-and-control-of-robots",
+            "title": "Dynamics and Control of Robots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-building-of-a-servo-controlled-robot",
+            "title": "Building of a Servo Controlled Robot",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-1r-two-link-chain",
+            "title": "1R Two Link Chain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-construction-of-link-and-joint",
+            "title": "Construction of Link and Joint",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-mounting-of-encoder-and-actuator",
+            "title": "Mounting of Encoder and Actuator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-dynamics",
+            "title": "Dynamics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-dynamic-model-of-a-robot-using-lagrange-s-equation",
+            "title": "Dynamic Model of a Robot Using Lagrange's Equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-dynamic-modelling-of-1dof-robot-including-motor-and-gearbox",
+            "title": "Dynamic Modelling of 1DOF Robot Including Motor and Gearbox",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-2r-planar-manipulator",
+            "title": "2R Planar Manipulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-control-techniques",
+            "title": "Control Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-transfer-function-representation",
+            "title": "Transfer Function Representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-state-space-representation",
+            "title": "State Space Representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-performance-and-stability-of-feedback-control",
+            "title": "Performance and Stability of Feedback Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-pid-control-of-a-single-link-manipulator",
+            "title": "PID Control of a Single Link Manipulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-selection-of-pid-controller-gains",
+            "title": "Selection of PID Controller Gains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-nonlinear-nature-of-manipulators",
+            "title": "Nonlinear Nature of Manipulators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet831-introduction-to-robotics-04-module-4-dynamics-and-control-of-robots-need-for-nonlinear-control-techniques",
+            "title": "Need for Nonlinear Control Techniques",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-peeet863-mechatronic-systems",
+    "code": "PEEET863-MECHATRONIC-SYSTEMS",
+    "name": "PEEET863 MECHATRONIC SYSTEMS",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste",
+        "title": "Module 1: Introduction to mechatronics introduction examples of mechatronic syste",
+        "topics": [
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-introduction-to-mechatronics-introduction-examples-of-mechatronic-systems",
+            "title": "Introduction to Mechatronics: Introduction, Examples of Mechatronic systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-electric-circuits-and-components",
+            "title": "Electric circuits and components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-semiconductor-electronics",
+            "title": "Semiconductor Electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-transistor-applications",
+            "title": "Transistor Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-sensors-and-transducers-performance-terminology-of-sensors",
+            "title": "Sensors and transducers: Performance terminology of sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-displacement-position-proximity-sensors-i",
+            "title": "Displacement, Position & Proximity Sensors-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-displacement-position-proximity-sensors-ii",
+            "title": "Displacement, Position & Proximity Sensors-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-force-fluid-pressure-liquid-flow-sensors",
+            "title": "Force, Fluid pressure, Liquid flow sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-temperature-light-sensor",
+            "title": "temperature, light sensor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-acceleration-and-vibration-measurement",
+            "title": "Acceleration and Vibration measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-semiconductor-sensor-and-mems",
+            "title": "Semiconductor sensor and MEMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-syste-saw",
+            "title": "SAW",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system",
+        "title": "Module 2: Actuators and mechanisms mechanical actuation system",
+        "topics": [
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-actuators-and-mechanisms-mechanical-actuation-system",
+            "title": "Actuators and mechanisms: Mechanical Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-hydraulic-pneumatic-actuation-system",
+            "title": "Hydraulic & Pneumatic Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-electrical-actuation-system-i",
+            "title": "Electrical Actuation System-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-electrical-actuation-system-ii",
+            "title": "Electrical Actuation System-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-data-presentation-system",
+            "title": "Data Presentation system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-signal-conditioning-introduction-to-signal-processing-op-amp",
+            "title": "Signal conditioning: Introduction to signal processing & Op-Amp",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-op-amp-as-signal-conditioner",
+            "title": "Op-Amp as signal conditioner",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-analogue-to-digital-converter",
+            "title": "Analogue to Digital Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-digital-to-analogue-converter",
+            "title": "Digital to Analogue Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-artificial-intelligence",
+            "title": "Artificial intelligence",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits",
+        "title": "Module 3: Microprocessors and microcontrollers digital circuits",
+        "topics": [
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-microprocessors-and-microcontrollers-digital-circuits-i",
+            "title": "Microprocessors and microcontrollers: Digital circuits-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-digital-circuits-ii",
+            "title": "Digital circuits-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-microprocessor-micro-controller",
+            "title": "Microprocessor Micro Controller",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-programming-of-microcontrollers",
+            "title": "Programming of Microcontrollers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-modeling-and-system-response-mechanical-system-model",
+            "title": "Modeling and system response: Mechanical system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-electrical-system-model",
+            "title": "Electrical system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-fluid-system-model",
+            "title": "Fluid system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-dynamic-response-of-systems",
+            "title": "Dynamic response of systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-03-module-3-microprocessors-and-microcontrollers-digital-circuits-transfer-function-and-frequency-response",
+            "title": "Transfer function and frequency response",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet863-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers",
+        "title": "Module 4: Closed loop controllers p i pid controllers",
+        "topics": [
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers-closed-loop-controllers-p-i-pid-controllers",
+            "title": "Closed loop controllers: P, I, PID Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers-digital-controllers",
+            "title": "Digital Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers-program-logic-controllers",
+            "title": "Program Logic Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers-input-output-communication-systems",
+            "title": "Input/output & Communication systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers-fault-findings",
+            "title": "Fault findings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet863-mechatronic-systems-04-module-4-closed-loop-controllers-p-i-pid-controllers-mechatronics-designs-examples-and-case-studies",
+            "title": "Mechatronics designs, examples and case studies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-oeeet833-mechatronic-systems-and-control",
+    "code": "OEEET833-MECHATRONIC-SYSTEMS-AND-CONTROL",
+    "name": "OEEET833 MECHATRONIC SYSTEMS AND CONTROL",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction",
+        "title": "Module 1: Introduction to mechatronics introduction",
+        "topics": [
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-introduction-to-mechatronics-introduction",
+            "title": "Introduction to Mechatronics: Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-examples-of-mechatronic-systems",
+            "title": "Examples of Mechatronic systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-electric-circuits-and-components",
+            "title": "Electric circuits and components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-semiconductor-electronics",
+            "title": "Semiconductor Electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-transistor-applications",
+            "title": "Transistor Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-sensors-and-transducers-performance-terminology-of-sensors",
+            "title": "Sensors and transducers: Performance terminology of sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-displacement-position-proximity-sensors-i",
+            "title": "Displacement, Position & Proximity Sensors-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-displacement-position-proximity-sensors-ii",
+            "title": "Displacement, Position & Proximity Sensors-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-force",
+            "title": "Force",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-fluid-pressure",
+            "title": "Fluid pressure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-liquid-flow-sensors",
+            "title": "Liquid flow sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-temperature",
+            "title": "temperature",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-light-sensor",
+            "title": "light sensor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-acceleration-and-vibration-measurement",
+            "title": "Acceleration and Vibration measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-semiconductor-sensor-and-mems",
+            "title": "Semiconductor sensor and MEMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-01-module-1-introduction-to-mechatronics-introduction-saw",
+            "title": "SAW",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system",
+        "title": "Module 2: Actuators and mechanisms mechanical actuation system",
+        "topics": [
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-actuators-and-mechanisms-mechanical-actuation-system",
+            "title": "Actuators and mechanisms: Mechanical Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-hydraulic-pneumatic-actuation-system",
+            "title": "Hydraulic & Pneumatic Actuation System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-electrical-actuation-system-i",
+            "title": "Electrical Actuation System-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-electrical-actuation-system-ii",
+            "title": "Electrical Actuation System-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-data-presentation-system",
+            "title": "Data Presentation system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-signal-conditioning-introduction-to-signal-processing-op-amp",
+            "title": "Signal conditioning: Introduction to signal processing & Op-Amp",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-op-amp-as-signal-conditioner",
+            "title": "Op-Amp as signal conditioner",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-analogue-to-digital-converter",
+            "title": "Analogue to Digital Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-digital-to-analogue-converter",
+            "title": "Digital to Analogue Converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-02-module-2-actuators-and-mechanisms-mechanical-actuation-system-artificial-intelligence",
+            "title": "Artificial intelligence",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits",
+        "title": "Module 3: Microprocessors and microcontrollers digital circuits",
+        "topics": [
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-microprocessors-and-microcontrollers-digital-circuits-i",
+            "title": "Microprocessors and microcontrollers: Digital circuits-I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-digital-circuits-ii",
+            "title": "Digital circuits-II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-microprocessor-micro-controller",
+            "title": "Microprocessor Micro Controller",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-programming-of-microcontrollers-model-ing-and-system-response-mechanical-system-model",
+            "title": "Programming of Microcontrollers Model-ing and system response: Mechanical system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-electrical-system-model",
+            "title": "Electrical system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-fluid-system-model",
+            "title": "Fluid system model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-dynamic-response-of-systems",
+            "title": "Dynamic response of systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-03-module-3-microprocessors-and-microcontrollers-digital-circuits-transfer-function-and-frequency-response",
+            "title": "Transfer function and frequency response.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet833-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers",
+        "title": "Module 4: Closed loop controllers p i pid controllers",
+        "topics": [
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers-closed-loop-controllers-p-i-pid-controllers",
+            "title": "Closed loop controllers: P, I, PID Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers-digital-controllers",
+            "title": "Digital Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers-program-logic-controllers",
+            "title": "Program Logic Controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers-input-output-communication-systems",
+            "title": "Input/output & Communication systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers-fault-findings",
+            "title": "Fault findings",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet833-mechatronic-systems-and-control-04-module-4-closed-loop-controllers-p-i-pid-controllers-mechatronics-designs-and-case-studies",
+            "title": "Mechatronics designs and case studies",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-oeeet832-plc-and-automation",
+    "code": "OEEET832-PLC-AND-AUTOMATION",
+    "name": "OEEET832 PLC AND AUTOMATION",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system",
+        "title": "Module 1: Introduction to computer based control system",
+        "topics": [
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-introduction-to-computer-based-control-system",
+            "title": "Introduction to computer based control system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-role-of-computers-in-measurement-and-process-control",
+            "title": "Role of computers in measurement and process control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-basic-components-of-computer-based-measurement-and-control-systems",
+            "title": "Basic components of computer based measurement and control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-architecture-of-computer-based-process-control-system",
+            "title": "Architecture of computer based process control system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-centralised-control-system-architecture",
+            "title": "Centralised control system architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-distributed-control-system-architecture",
+            "title": "Distributed control system architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-hierarchical-control-system-architecture",
+            "title": "Hierarchical control system architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-human-machine-interface-hmi",
+            "title": "Human Machine Interface (HMI)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-hardware-for-computer-based-process-control-system",
+            "title": "Hardware for computer based process control system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-interfacing-computer-system-with-process",
+            "title": "Interfacing computer system with process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-architecture-of-ddc",
+            "title": "Architecture of DDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-architecture-of-scada",
+            "title": "Architecture of SCADA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-architecture-of-dcs",
+            "title": "Architecture of DCS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-programmable-logic-controller-plc-introduction",
+            "title": "Programmable Logic Controller (PLC) - Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-evolution-of-plc",
+            "title": "Evolution of PLC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-01-module-1-introduction-to-computer-based-control-system-relay-vs-plc-vs-computer",
+            "title": "Relay vs PLC vs Computer",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc",
+        "title": "Module 2: Plc",
+        "topics": [
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-plc-hardware",
+            "title": "PLC Hardware",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-plc-internal-architecture",
+            "title": "PLC Internal Architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-plc-input-devices",
+            "title": "PLC Input devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-plc-output-devices",
+            "title": "PLC Output devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-basics-of-ladder-programming",
+            "title": "Basics of Ladder Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-on-off-instructions",
+            "title": "On/Off instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-internal-relay",
+            "title": "Internal relay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-jump-instructions",
+            "title": "Jump instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-data-handling-instructions",
+            "title": "Data handling instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-data-manipulation-instructions",
+            "title": "Data manipulation instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-arithmetic-instructions",
+            "title": "Arithmetic instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-comparison-instructions",
+            "title": "Comparison instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-02-module-2-plc-pid-and-other-important-instructions",
+            "title": "PID and other important instructions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems",
+        "title": "Module 3: Timers and counters in plc problems",
+        "topics": [
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-timers-in-plc",
+            "title": "Timers in PLC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-counters-in-plc",
+            "title": "Counters in PLC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-plc-problems",
+            "title": "PLC Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-design-development-and-simulation-of-plc-program-temperature-control",
+            "title": "Design, Development and Simulation of PLC Program - Temperature control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-design-development-and-simulation-of-plc-program-valve-sequencing",
+            "title": "Design, Development and Simulation of PLC Program - Valve sequencing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-design-development-and-simulation-of-plc-program-conveyor-belt-control",
+            "title": "Design, Development and Simulation of PLC Program - Conveyor belt control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-design-development-and-simulation-of-plc-program-control-of-a-process",
+            "title": "Design, Development and Simulation of PLC Program - Control of a process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-plc-installation",
+            "title": "PLC Installation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-plc-trouble-shooting",
+            "title": "PLC Trouble shooting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-plc-maintenance",
+            "title": "PLC Maintenance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-design-of-alarms-and-interlocks",
+            "title": "Design of Alarms and Interlocks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-networks-of-plc",
+            "title": "Networks of PLC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-distributed-control-system-dcs-evolution",
+            "title": "Distributed Control System (DCS) - Evolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-dcs-various-architectures",
+            "title": "DCS - Various Architectures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-dcs-comparison",
+            "title": "DCS - Comparison",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-03-module-3-timers-and-counters-in-plc-problems-dcs-local-control-unit",
+            "title": "DCS - Local control unit",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs",
+        "title": "Module 4: Dcs",
+        "topics": [
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-dcs-lcu-languages",
+            "title": "DCS - LCU Languages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-process-interfacing-issues",
+            "title": "Process interfacing issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-communication-facilities",
+            "title": "Communication facilities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-operator-interface-low-level",
+            "title": "Operator interface - Low level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-operator-interface-high-level",
+            "title": "Operator interface - High level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-displays",
+            "title": "Displays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-engineering-interfaces-low-level",
+            "title": "Engineering interfaces - Low level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-engineering-interfaces-high-level",
+            "title": "Engineering interfaces - High level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-factors-to-be-considered-in-selecting-dcs",
+            "title": "Factors to be considered in selecting DCS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-other-key-issues-in-dcs",
+            "title": "Other key issues in DCS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-packaging-issues-in-dcs",
+            "title": "Packaging issues in DCS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-oeeet832-plc-and-automation-04-module-4-dcs-power-system-issues-in-dcs",
+            "title": "Power system issues in DCS",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee-8-peeet861-smart-grid-technologies",
+    "code": "PEEET861-SMART-GRID-TECHNOLOGIES",
+    "name": "PEEET861 SMART GRID TECHNOLOGIES",
+    "branchId": "ee",
+    "semester": 8,
+    "modules": [
+      {
+        "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid",
+        "title": "Module 1: Introduction to smart grid evolution of electric grid",
+        "topics": [
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-introduction-to-smart-grid",
+            "title": "Introduction to Smart Grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-evolution-of-electric-grid",
+            "title": "Evolution of electric grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-definitions-of-smart-grid",
+            "title": "Definitions of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-need-for-smart-grid",
+            "title": "Need for smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-smart-grid-drivers",
+            "title": "Smart grid drivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-functions-of-smart-grid",
+            "title": "Functions of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-opportunities-of-smart-grid",
+            "title": "Opportunities of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-barriers-of-smart-grid",
+            "title": "Barriers of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-difference-between-conventional-grid-and-smart-grid",
+            "title": "Difference between conventional grid and smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-concept-of-resilient-grid",
+            "title": "Concept of resilient grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-concept-of-self-healing-grid",
+            "title": "Concept of self-healing grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-components-of-smart-grid",
+            "title": "Components of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-architecture-of-smart-grid",
+            "title": "Architecture of smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-inter-operability",
+            "title": "Inter-operability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-impacts-of-smart-grid-on-system-reliability",
+            "title": "Impacts of smart grid on system reliability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-present-development-in-smart-grid",
+            "title": "Present development in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-international-policies-in-smart-grid",
+            "title": "International policies in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-smart-grid-standards",
+            "title": "Smart grid standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-information-and-communication-technology-in-smart-grid",
+            "title": "Information and Communication Technology in Smart Grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-wired-communication",
+            "title": "Wired communication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-wireless-communication",
+            "title": "Wireless communication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-radio-mesh",
+            "title": "Radio mesh",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-zigbee",
+            "title": "ZIGBEE",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-3g",
+            "title": "3G",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-4g",
+            "title": "4G",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-5g",
+            "title": "5G",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-digital-plc",
+            "title": "Digital PLC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-dsl",
+            "title": "DSL",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-wi-max",
+            "title": "Wi-Max",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-lan",
+            "title": "LAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-nan",
+            "title": "NAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-han",
+            "title": "HAN",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-wi-fi",
+            "title": "Wi-Fi",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-bluetooth",
+            "title": "Bluetooth",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-bluetooth-low-energy-ble",
+            "title": "Bluetooth Low Energy (BLE)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-li-fi",
+            "title": "Li-Fi",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-communication-protocols-in-smart-grid",
+            "title": "Communication Protocols in Smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-introduction-to-iec-61850-standard",
+            "title": "Introduction to IEC 61850 standard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-benefits-of-iec-61850-standard",
+            "title": "Benefits of IEC 61850 standard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-iec-generic-object-oriented-substation-event-goose",
+            "title": "IEC Generic Object-Oriented Substation Event (GOOSE)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-01-module-1-introduction-to-smart-grid-evolution-of-electric-grid-substation-model",
+            "title": "Substation model",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters",
+        "title": "Module 2: Smart grid technologies part i introduction to smart meters",
+        "topics": [
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-smart-grid-technologies-part-i",
+            "title": "Smart grid Technologies Part I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-introduction-to-smart-meters",
+            "title": "Introduction to smart meters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-electricity-tariff",
+            "title": "Electricity tariff",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-real-time-pricing",
+            "title": "Real Time Pricing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-automatic-meter-reading-amr",
+            "title": "Automatic Meter Reading (AMR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-amr-system",
+            "title": "AMR System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-amr-services",
+            "title": "AMR Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-amr-functions",
+            "title": "AMR Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-components-of-amr-systems",
+            "title": "Components of AMR Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-advanced-metering-infrastructure-ami",
+            "title": "Advanced Metering Infrastructure (AMI)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-plug-in-hybrid-electric-vehicles-phev",
+            "title": "Plug in Hybrid Electric Vehicles (PHEV)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-vehicle-to-grid-v2g",
+            "title": "Vehicle to Grid (V2G)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-grid-to-vehicle-g2v",
+            "title": "Grid to Vehicle (G2V)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-smart-sensors",
+            "title": "Smart Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-smart-energy-efficient-end-use-devices",
+            "title": "Smart energy efficient end use devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-home-automation",
+            "title": "Home Automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-building-automation",
+            "title": "Building Automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-intelligent-electronic-devices-ied",
+            "title": "Intelligent Electronic Devices (IED)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-application-of-ied-for-monitoring-and-protection",
+            "title": "Application of IED for monitoring and protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-digital-fault-recorder-dfr",
+            "title": "Digital Fault Recorder (DFR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-digital-protective-relay-dpr",
+            "title": "Digital Protective Relay (DPR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-circuit-breaker-monitor-cbm",
+            "title": "Circuit Breaker Monitor (CBM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-phasor-measurement-unit-pmu",
+            "title": "Phasor Measurement Unit (PMU)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-standards-for-pmu",
+            "title": "Standards for PMU",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-time-synchronization-techniques",
+            "title": "Time synchronization techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-wide-area-monitoring-system-wams",
+            "title": "Wide Area Monitoring System (WAMS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-wams-control-and-protection-systems",
+            "title": "WAMS Control and protection systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-architecture-of-wams",
+            "title": "Architecture of WAMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-components-of-wams",
+            "title": "Components of WAMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-applications-of-wams",
+            "title": "Applications of WAMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-voltage-stability-assessment",
+            "title": "Voltage stability assessment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-frequency-stability-assessment",
+            "title": "Frequency stability assessment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-power-oscillation-assessment",
+            "title": "Power oscillation assessment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-communication-needs-of-wams",
+            "title": "Communication needs of WAMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-02-module-2-smart-grid-technologies-part-i-introduction-to-smart-meters-remedial-action-scheme",
+            "title": "Remedial action scheme",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations",
+        "title": "Module 3: Smart grid technologies part ii smart substations",
+        "topics": [
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-smart-grid-technologies-part-ii",
+            "title": "Smart grid Technologies Part II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-smart-substations",
+            "title": "Smart substations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-substation-automation",
+            "title": "Substation automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-feeder-automation",
+            "title": "Feeder automation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-fault-detection",
+            "title": "Fault detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-isolation",
+            "title": "Isolation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-service-restoration-fdisr",
+            "title": "Service Restoration (FDISR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-geographic-information-system-gis",
+            "title": "Geographic Information System (GIS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-outage-management-system-oms",
+            "title": "Outage Management System (OMS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-introduction-to-smart-distributed-energy-resources",
+            "title": "Introduction to Smart distributed energy resources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-grid-integration-of-distributed-energy-resources",
+            "title": "Grid integration of distributed energy resources",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-smart-inverters",
+            "title": "Smart inverters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-concepts-of-microgrid",
+            "title": "Concepts of microgrid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-need-of-microgrid",
+            "title": "Need of microgrid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-application-of-microgrid",
+            "title": "Application of microgrid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-energy-management-in-microgrid",
+            "title": "Energy Management in microgrid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-role-of-technology-in-demand-response",
+            "title": "Role of technology in demand response",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-demand-side-management",
+            "title": "Demand side management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-demand-side-ancillary-services",
+            "title": "Demand side Ancillary Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-03-module-3-smart-grid-technologies-part-ii-smart-substations-dynamic-line-rating",
+            "title": "Dynamic line rating",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud",
+        "title": "Module 4: Cloud computing in smart grid private public and hybrid cloud",
+        "topics": [
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-cloud-computing-in-smart-grid",
+            "title": "Cloud computing in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-private-cloud",
+            "title": "Private cloud",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-public-cloud",
+            "title": "Public cloud",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-hybrid-cloud",
+            "title": "Hybrid cloud",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-types-of-cloud-computing-services",
+            "title": "Types of cloud computing services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-software-as-a-service-saas",
+            "title": "Software as a Service (SaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-platform-as-a-service-paas",
+            "title": "Platform as a service (PaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-infrastructure-as-a-service-iaas",
+            "title": "Infrastructure as a service (IaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-data-as-a-service-daas",
+            "title": "Data as a service (DaaS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-cloud-architecture-for-smart-grid",
+            "title": "Cloud architecture for smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-cyber-security",
+            "title": "Cyber Security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-cyber-security-challenges-in-smart-grid",
+            "title": "Cyber security challenges in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-cyber-security-solutions-in-smart-grid",
+            "title": "Cyber security solutions in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-cyber-security-risk-assessment",
+            "title": "Cyber security risk assessment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-security-index-computation",
+            "title": "Security index computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-power-quality-management-in-smart-grid",
+            "title": "Power Quality Management in Smart Grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-fundamentals-of-power-quality-management",
+            "title": "Fundamentals of Power Quality Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-power-quality-pq-in-smart-grid",
+            "title": "Power Quality (PQ) in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-electromagnetic-compatibility-emc-in-smart-grid",
+            "title": "Electromagnetic Compatibility (EMC) in smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-power-quality-conditioners-for-smart-grid",
+            "title": "Power quality conditioners for smart grid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-8-peeet861-smart-grid-technologies-04-module-4-cloud-computing-in-smart-grid-private-public-and-hybrid-cloud-case-study-of-smart-grid",
+            "title": "Case study of smart grid",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  }
+]

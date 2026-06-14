@@ -1,5 +1,1118 @@
 [
   {
+    "id": "cs-7-pecst751-advanced-computer-networks",
+    "code": "PECST751-ADVANCED-COMPUTER-NETWORKS",
+    "name": "PECST751 ADVANCED COMPUTER NETWORKS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst751-advanced-computer-networks-01-module-1-software-defined-networking",
+        "title": "Module 1: Software Defined Networking",
+        "topics": [
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-01-module-1-software-defined-networking-software-defined-networking-sdn-structural-models-control-plane-configurations",
+            "title": "Software Defined Networking (SDN) structural models control plane configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-01-module-1-software-defined-networking-openflow-messaging-specifications-interface-setups-architectures-parameters-rules-frameworks",
+            "title": "OpenFlow messaging specifications interface setups architectures parameters rules frameworks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-01-module-1-software-defined-networking-network-function-virtualization-nfv-service-chaining-configurations-paths-layout-structures",
+            "title": "Network Function Virtualization (NFV) service chaining configurations paths layout structures",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst751-advanced-computer-networks-02-module-2-congestion-control-traffic-engineering",
+        "title": "Module 2: Congestion Control & Traffic Engineering",
+        "topics": [
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-02-module-2-congestion-control-traffic-engineering-quality-of-service-qos-queue-mechanisms-tracking-algorithms-parameters-red-wfq-structures",
+            "title": "Quality of Service (QoS) queue mechanisms tracking algorithms parameters: RED, WFQ structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-02-module-2-congestion-control-traffic-engineering-traffic-pacing-engineering-blueprints-mpls-network-integration-protocols-pathways-layouts",
+            "title": "Traffic pacing engineering blueprints MPLS network integration protocols pathways layouts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst751-advanced-computer-networks-03-module-3-data-center-networking-architectures",
+        "title": "Module 3: Data Center Networking Architectures",
+        "topics": [
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-03-module-3-data-center-networking-architectures-fat-tree-data-topologies-layout-performance-configurations-loops-tracking-setups-models",
+            "title": "Fat Tree data topologies layout performance configurations loops tracking setups models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-03-module-3-data-center-networking-architectures-overlay-network-virtualization-architectures-parameters-vxlan-tunnel-configurations-architectures",
+            "title": "Overlay network virtualization architectures parameters: VXLAN tunnel configurations architectures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-03-module-3-data-center-networking-architectures-software-defined-load-optimization-rules-execution-tracking-systems-formats-metrics-profiling",
+            "title": "Software defined load optimization rules execution tracking systems formats metrics profiling",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst751-advanced-computer-networks-04-module-4-next-generation-internet-protocols-systems",
+        "title": "Module 4: Next Generation Internet Protocols Systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-04-module-4-next-generation-internet-protocols-systems-ipv6-transition-strategies-address-translation-schemas-parameters-routes-optimization-tracking",
+            "title": "IPv6 transition strategies address translation schemas parameters routes optimization tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-04-module-4-next-generation-internet-protocols-systems-content-centric-networking-ccn-routing-protocols-frameworks-paths-formats-analytics-profiles",
+            "title": "Content Centric Networking (CCN) routing protocols frameworks paths formats analytics profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst751-advanced-computer-networks-04-module-4-next-generation-internet-protocols-systems-network-safety-automation-platforms-constraints-rules-architectures-validation-setups-frameworks",
+            "title": "Network safety automation platforms constraints rules architectures validation setups frameworks",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst785-algorithms-for-data-science",
+    "code": "PECST785-ALGORITHMS-FOR-DATA-SCIENCE",
+    "name": "PECST785 ALGORITHMS FOR DATA SCIENCE",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst785-algorithms-for-data-science-01-module-1-high-dimensional-sketches-streaming",
+        "title": "Module 1: High-Dimensional Sketches & Streaming",
+        "topics": [
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-01-module-1-high-dimensional-sketches-streaming-frequent-items-sketch-models-matrices-setups-configurations-count-min-algorithms-setups",
+            "title": "Frequent items sketch models matrices setups configurations: Count-Min algorithms setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-01-module-1-high-dimensional-sketches-streaming-dimensionality-reduction-projection-matrices-formulas-transformations-johnson-lindenstrauss-verification-routes",
+            "title": "Dimensionality reduction projection matrices formulas transformations: Johnson-Lindenstrauss verification routes",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst785-algorithms-for-data-science-02-module-2-large-scale-graph-mining",
+        "title": "Module 2: Large Scale Graph Mining",
+        "topics": [
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-02-module-2-large-scale-graph-mining-link-analysis-algorithms-metrics-computation-matrices-configurations-profiles-pagerank-algorithms-optimization",
+            "title": "Link analysis algorithms metrics computation matrices configurations profiles: PageRank algorithms optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-02-module-2-large-scale-graph-mining-massive-graph-clustering-execution-pipelines-layouts-formats-parsing-templates-loops",
+            "title": "Massive graph clustering execution pipelines layouts formats parsing templates loops",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst785-algorithms-for-data-science-03-module-3-matrix-abstractions-dimensions-systems",
+        "title": "Module 3: Matrix Abstractions Dimensions Systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-03-module-3-matrix-abstractions-dimensions-systems-singular-value-decomposition-svd-matrix-calculation-transformations-formulas-adjustments-paths",
+            "title": "Singular Value Decomposition (SVD) matrix calculation transformations formulas adjustments paths",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-03-module-3-matrix-abstractions-dimensions-systems-low-rank-approximation-algorithms-optimization-metrics-setups-configuration-parameters-tracks",
+            "title": "Low rank approximation algorithms optimization metrics setups configuration parameters tracks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-03-module-3-matrix-abstractions-dimensions-systems-randomized-numerical-matrix-processing-computational-loops-frameworks-tracking-metrics-validation",
+            "title": "Randomized numerical matrix processing computational loops frameworks tracking metrics validation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst785-algorithms-for-data-science-04-module-4-optimization-dynamics-learning-models",
+        "title": "Module 4: Optimization Dynamics Learning Models",
+        "topics": [
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-04-module-4-optimization-dynamics-learning-models-stochastic-gradient-descent-sgd-convergence-analysis-tracking-parameters-configurations-rules",
+            "title": "Stochastic Gradient Descent (SGD) convergence analysis tracking parameters configurations rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-04-module-4-optimization-dynamics-learning-models-convex-optimization-routines-calculations-formats-maps-validation-metrics-performance-profiles",
+            "title": "Convex optimization routines calculations formats maps validation metrics performance profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst785-algorithms-for-data-science-04-module-4-optimization-dynamics-learning-models-scale-out-data-validation-tools-execution-parameters-tracking-variables-monitoring-workflows",
+            "title": "Scale out data validation tools execution parameters tracking variables monitoring workflows",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst749-approximation-algorithms",
+    "code": "PECST749-APPROXIMATION-ALGORITHMS",
+    "name": "PECST749 APPROXIMATION ALGORITHMS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst749-approximation-algorithms-01-module-1-combinatorial-approximation-techniques",
+        "title": "Module 1: Combinatorial Approximation Techniques",
+        "topics": [
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-01-module-1-combinatorial-approximation-techniques-greedy-heuristics-verification-bounds-calculation-formulations-optimization-paths-layout-structures",
+            "title": "Greedy heuristics verification bounds calculation formulations optimization paths layout structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-01-module-1-combinatorial-approximation-techniques-vertex-cover-approximation-model-calculations-complexity-ratio-verification-parameters-profiles",
+            "title": "Vertex cover approximation model calculations complexity ratio verification parameters profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst749-approximation-algorithms-02-module-2-lp-relaxation-methods",
+        "title": "Module 2: LP Relaxation Methods",
+        "topics": [
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-02-module-2-lp-relaxation-methods-linear-programming-relaxation-methodologies-bounding-logic-setups-formulations-tracking",
+            "title": "Linear programming relaxation methodologies bounding logic setups formulations tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-02-module-2-lp-relaxation-methods-randomized-rounding-architectures-algorithms-configuration-tracks-parameters-setups-profiles",
+            "title": "Randomized rounding architectures algorithms configuration tracks parameters setups profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst749-approximation-algorithms-03-module-3-primal-dual-computation-schemes",
+        "title": "Module 3: Primal-Dual Computation Schemes",
+        "topics": [
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-03-module-3-primal-dual-computation-schemes-primal-dual-schema-modeling-structures-matching-rules-calculations-formulas-loops-tracking",
+            "title": "Primal dual schema modeling structures matching rules calculations formulas loops tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-03-module-3-primal-dual-computation-schemes-set-cover-approximation-steps-verification-metrics-performance-profiles-layout-templates",
+            "title": "Set cover approximation steps verification metrics performance profiles layout templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-03-module-3-primal-dual-computation-schemes-network-routing-optimizations-configurations-parameters-tracks-constraints-options-parameters-profiles",
+            "title": "Network routing optimizations configurations parameters tracks constraints options parameters profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst749-approximation-algorithms-04-module-4-inapproximability-bounds-complexity-systems",
+        "title": "Module 4: Inapproximability Bounds Complexity Systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-04-module-4-inapproximability-bounds-complexity-systems-hardness-of-approximation-formulations-boundaries-constraints-rules-parameters-definitions-matching",
+            "title": "Hardness of approximation formulations boundaries constraints rules parameters definitions matching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-04-module-4-inapproximability-bounds-complexity-systems-pcp-theorem-implications-validation-logic-tracking-algorithms-templates-patterns-profiles-parameters",
+            "title": "PCP theorem implications validation logic tracking algorithms templates patterns profiles parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst749-approximation-algorithms-04-module-4-inapproximability-bounds-complexity-systems-semidefinite-programming-relaxations-execution-frameworks-tracking-metrics-verification-profiles-setups",
+            "title": "Semidefinite programming relaxations execution frameworks tracking metrics verification profiles setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst743-bioinformatics",
+    "code": "PECST743-BIOINFORMATICS",
+    "name": "PECST743 BIOINFORMATICS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst743-bioinformatics-01-module-1-sequence-alignment-formulations",
+        "title": "Module 1: Sequence Alignment Formulations",
+        "topics": [
+          {
+            "id": "cs-7-pecst743-bioinformatics-01-module-1-sequence-alignment-formulations-dynamic-programming-sequence-comparison-logic-setups-parameters-rules-needleman-wunsch-algorithms",
+            "title": "Dynamic programming sequence comparison logic setups parameters rules: Needleman-Wunsch algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst743-bioinformatics-01-module-1-sequence-alignment-formulations-smith-waterman-local-alignment-process-configuration-matrix-structures-complexity-metrics",
+            "title": "Smith-Waterman local alignment process configuration matrix structures complexity metrics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst743-bioinformatics-02-module-2-phylogenetics-scoring-models",
+        "title": "Module 2: Phylogenetics & Scoring Models",
+        "topics": [
+          {
+            "id": "cs-7-pecst743-bioinformatics-02-module-2-phylogenetics-scoring-models-phylogenetic-tree-construction-strategies-algorithms-metrics-neighbor-joining-templates-profiles",
+            "title": "Phylogenetic tree construction strategies algorithms metrics: Neighbor-Joining templates profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst743-bioinformatics-02-module-2-phylogenetics-scoring-models-substitution-index-matrix-profile-structures-implementations-parameters-rules-setups-blosum-layouts",
+            "title": "Substitution index matrix profile structures implementations parameters rules setups: BLOSUM layouts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst743-bioinformatics-03-module-3-gene-prediction-models-structures",
+        "title": "Module 3: Gene Prediction Models Structures",
+        "topics": [
+          {
+            "id": "cs-7-pecst743-bioinformatics-03-module-3-gene-prediction-models-structures-hidden-markov-model-hmm-sequence-processing-configurations-benchmarks-patterns-engineering",
+            "title": "Hidden Markov Model (HMM) sequence processing configurations benchmarks patterns engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst743-bioinformatics-03-module-3-gene-prediction-models-structures-gene-structural-annotation-blueprints-metrics-tracking-setups-layouts-metrics-definitions",
+            "title": "Gene structural annotation blueprints metrics tracking setups layouts metrics definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst743-bioinformatics-03-module-3-gene-prediction-models-structures-splice-site-localization-loops-calculations-parsing-routines-syntax-structures-verification",
+            "title": "Splice site localization loops calculations parsing routines syntax structures verification",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst743-bioinformatics-04-module-4-protein-folding-analysis-systems",
+        "title": "Module 4: Protein Folding Analysis Systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst743-bioinformatics-04-module-4-protein-folding-analysis-systems-protein-secondary-structure-forecasting-models-transformations-structural-layouts-formulas-templates",
+            "title": "Protein secondary structure forecasting models transformations structural layouts formulas templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst743-bioinformatics-04-module-4-protein-folding-analysis-systems-threading-target-alignments-algorithms-configuration-parameters-tracks-models-performance-metrics",
+            "title": "Threading target alignments algorithms configuration parameters tracks models performance metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst743-bioinformatics-04-module-4-protein-folding-analysis-systems-bioinformatics-software-deployment-tracking-parameters-frameworks-profiles-validation-monitoring-metrics",
+            "title": "Bioinformatics software deployment tracking parameters frameworks profiles validation monitoring metrics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst747-blockchain-and-cryptocurrencies",
+    "code": "PECST747-BLOCKCHAIN-AND-CRYPTOCURRENCIES",
+    "name": "PECST747 BLOCKCHAIN AND CRYPTOCURRENCIES",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-01-module-1-distributed-consensus-paradigms",
+        "title": "Module 1: Distributed Consensus Paradigms",
+        "topics": [
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-01-module-1-distributed-consensus-paradigms-decentralized-ledger-infrastructure-blueprints-layouts-block-configuration-metrics-profiles",
+            "title": "Decentralized ledger infrastructure blueprints layouts block configuration metrics profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-01-module-1-distributed-consensus-paradigms-proof-of-work-pow-cryptography-search-puzzle-algorithms-loops-constraints-profiles",
+            "title": "Proof of Work (PoW) cryptography search puzzle algorithms loops constraints profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-01-module-1-distributed-consensus-paradigms-proof-of-stake-pos-consensus-protocol-logic-state-machines-specifications-paths",
+            "title": "Proof of Stake (PoS) consensus protocol logic state machines specifications paths",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-02-module-2-smart-contracts-evm-mechanics",
+        "title": "Module 2: Smart Contracts & EVM Mechanics",
+        "topics": [
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-02-module-2-smart-contracts-evm-mechanics-solidity-language-scripting-primitives-compiled-code-structural-layout-guidelines-systems",
+            "title": "Solidity language scripting primitives compiled code structural layout guidelines systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-02-module-2-smart-contracts-evm-mechanics-ethereum-virtual-machine-evm-opcode-execution-tracking-rules-verification-tracks-setups",
+            "title": "Ethereum Virtual Machine (EVM) opcode execution tracking rules verification tracks setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-03-module-3-decentralized-finance-tokenization-protocols",
+        "title": "Module 3: Decentralized Finance & Tokenization Protocols",
+        "topics": [
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-03-module-3-decentralized-finance-tokenization-protocols-automated-market-makers-amm-liquidity-pools-verification-equations-formulas-calculations-profiles",
+            "title": "Automated Market Makers (AMM) liquidity pools verification equations formulas calculations profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-03-module-3-decentralized-finance-tokenization-protocols-erc20-and-erc721-smart-token-layout-configurations-protocols-validation-tracking-parameters",
+            "title": "ERC20 and ERC721 smart token layout configurations protocols validation tracking parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-03-module-3-decentralized-finance-tokenization-protocols-decentralized-application-architectures-pipelines-interfaces-metrics-performance-profiles-setups",
+            "title": "Decentralized application architectures pipelines interfaces metrics performance profiles setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-04-module-4-blockchain-scalability-enterprise-infrastructures",
+        "title": "Module 4: Blockchain Scalability & Enterprise Infrastructures",
+        "topics": [
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-04-module-4-blockchain-scalability-enterprise-infrastructures-zero-knowledge-rollups-scalability-frameworks-specifications-benchmarks-validation-paths-structures",
+            "title": "Zero Knowledge Rollups scalability frameworks specifications benchmarks validation paths structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-04-module-4-blockchain-scalability-enterprise-infrastructures-hyperledger-fabric-configuration-channels-orchestration-mechanisms-tracking-setups-matrix-guidelines",
+            "title": "Hyperledger Fabric configuration channels orchestration mechanisms tracking setups matrix guidelines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst747-blockchain-and-cryptocurrencies-04-module-4-blockchain-scalability-enterprise-infrastructures-enterprise-chain-performance-tuning-tracking-parameters-monitoring-metrics-compliance-analytics-validation",
+            "title": "Enterprise chain performance tuning tracking parameters monitoring metrics compliance analytics validation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-oecst722-cloud-computing",
+    "code": "OECST722-CLOUD-COMPUTING",
+    "name": "OECST722 CLOUD COMPUTING",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-oecst722-cloud-computing-01-module-1-virtualization-service-delivery-frameworks",
+        "title": "Module 1: Virtualization & Service Delivery Frameworks",
+        "topics": [
+          {
+            "id": "cs-7-oecst722-cloud-computing-01-module-1-virtualization-service-delivery-frameworks-hypervisor-classification-architectures-topologies-design-rules",
+            "title": "Hypervisor classification architectures topologies design rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst722-cloud-computing-01-module-1-virtualization-service-delivery-frameworks-cloud-service-models-configurations-setups-iaas-paas-saas-delivery-channels-parameters",
+            "title": "Cloud service models configurations setups: IaaS, PaaS, SaaS delivery channels parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst722-cloud-computing-01-module-1-virtualization-service-delivery-frameworks-containerization-workflows-tracking-platforms-docker-micro-kernel-layouts-parameters",
+            "title": "Containerization workflows tracking platforms Docker micro-kernel layouts parameters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst722-cloud-computing-02-module-2-cloud-resource-management",
+        "title": "Module 2: Cloud Resource Management",
+        "topics": [
+          {
+            "id": "cs-7-oecst722-cloud-computing-02-module-2-cloud-resource-management-dynamic-resource-mapping-frameworks-algorithms-tracking-parameters-migration-rules-techniques",
+            "title": "Dynamic resource mapping frameworks algorithms tracking parameters, migration rules techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst722-cloud-computing-02-module-2-cloud-resource-management-cloud-storage-designs-distributed-file-systems-profiles-optimization-loops-definitions",
+            "title": "Cloud storage designs distributed file systems profiles optimization loops definitions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst722-cloud-computing-03-module-3-sla-governance-monitoring-pipelines",
+        "title": "Module 3: SLA Governance & Monitoring Pipelines",
+        "topics": [
+          {
+            "id": "cs-7-oecst722-cloud-computing-03-module-3-sla-governance-monitoring-pipelines-quality-of-service-parameters-tracking-metrics-service-definitions-templates-profiles",
+            "title": "Quality of service parameters tracking metrics service definitions templates profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst722-cloud-computing-03-module-3-sla-governance-monitoring-pipelines-performance-telemetry-logging-systems-configurations-variables-updates-scripts-options",
+            "title": "Performance telemetry logging systems configurations variables updates scripts options",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst722-cloud-computing-03-module-3-sla-governance-monitoring-pipelines-load-balances-algorithm-computational-tracking-loops-optimization-parameters-checkpoints",
+            "title": "Load balances algorithm computational tracking loops optimization parameters checkpoints",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst722-cloud-computing-04-module-4-cloud-identity-security-enforcement",
+        "title": "Module 4: Cloud Identity & Security Enforcement",
+        "topics": [
+          {
+            "id": "cs-7-oecst722-cloud-computing-04-module-4-cloud-identity-security-enforcement-multi-tenancy-isolation-tracking-structures-safety-definitions-rules-validations",
+            "title": "Multi tenancy isolation tracking structures safety definitions rules validations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst722-cloud-computing-04-module-4-cloud-identity-security-enforcement-cloud-cryptography-key-allocation-protocols-validation-scales-execution-tracking-systems",
+            "title": "Cloud cryptography key allocation protocols validation scales execution tracking systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst722-cloud-computing-04-module-4-cloud-identity-security-enforcement-identity-federation-schemes-configurations-frameworks-scripts-parameters-monitoring-metrics",
+            "title": "Identity federation schemes configurations frameworks scripts parameters monitoring metrics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-oecst724-computer-networks",
+    "code": "OECST724-COMPUTER-NETWORKS",
+    "name": "OECST724 COMPUTER NETWORKS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-oecst724-computer-networks-01-module-1-foundations-and-application-layer",
+        "title": "Module 1: Foundations and Application Layer",
+        "topics": [
+          {
+            "id": "cs-7-oecst724-computer-networks-01-module-1-foundations-and-application-layer-network-basics-overview-of-the-internet-protocol-layering-and-the-encapsulation-cycle",
+            "title": "Network Basics: Overview of the Internet, Protocol layering, and the encapsulation cycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-01-module-1-foundations-and-application-layer-application-layer-paradigms-client-server-applications-vs-peer-to-peer-structures",
+            "title": "Application-Layer Paradigms: Client-server applications vs Peer-to-Peer structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-01-module-1-foundations-and-application-layer-core-protocols-world-wide-web-and-http-operation-mechanics-file-transfer-protocol-ftp",
+            "title": "Core Protocols: World Wide Web and HTTP operation mechanics, File Transfer Protocol (FTP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-01-module-1-foundations-and-application-layer-network-services-electronic-mail-smtp-pop3-imap-engines-domain-name-system-dns-architecture",
+            "title": "Network Services: Electronic Mail (SMTP, POP3, IMAP engines), Domain Name System (DNS) architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-01-module-1-foundations-and-application-layer-peer-to-peer-architecture-p2p-networks-and-file-sharing-dynamics-case-study-bittorrent",
+            "title": "Peer-to-Peer Architecture: P2P Networks and file sharing dynamics; Case study: BitTorrent",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst724-computer-networks-02-module-2-transport-layer-and-socket-programming",
+        "title": "Module 2: Transport Layer and Socket Programming",
+        "topics": [
+          {
+            "id": "cs-7-oecst724-computer-networks-02-module-2-transport-layer-and-socket-programming-transport-services-end-to-end-transport-protocols-multiplexing-and-demultiplexing",
+            "title": "Transport Services: End-to-end transport protocols, Multiplexing, and Demultiplexing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-02-module-2-transport-layer-and-socket-programming-connectionless-transport-udp-packet-structures-and-check-summing-fields",
+            "title": "Connectionless Transport: UDP packet structures and check-summing fields",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-02-module-2-transport-layer-and-socket-programming-connection-oriented-transport-tcp-segment-structure-reliable-data-transfer-mechanisms-flow-control-connection-management-and-congestion-control-loops",
+            "title": "Connection-Oriented Transport: TCP segment structure, reliable data transfer mechanisms, flow control, connection management, and congestion control loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-02-module-2-transport-layer-and-socket-programming-socket-architecture-network-socket-introductions-elementary-tcp-sockets-client-server-implementations-i-o-multiplexing-select-poll-elementary-udp-sockets",
+            "title": "Socket Architecture: Network Socket introductions, Elementary TCP Sockets, Client/Server implementations, I/O Multiplexing (select/poll), Elementary UDP Sockets",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst724-computer-networks-03-module-3-network-layer-and-routing-mechanics",
+        "title": "Module 3: Network Layer and Routing Mechanics",
+        "topics": [
+          {
+            "id": "cs-7-oecst724-computer-networks-03-module-3-network-layer-and-routing-mechanics-network-layer-foundations-switching-fabrics-host-to-host-connectivity-models-ipv4-ipv6-addressing-schemes",
+            "title": "Network Layer Foundations: Switching fabrics, Host-to-host connectivity models, IPv4 & IPv6 addressing schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-03-module-3-network-layer-and-routing-mechanics-ip-allocation-subnetting-classless-inter-domain-routing-cidr-design-subnet-masking-and-address-resolution-protocols-arp-rarp",
+            "title": "IP Allocation & Subnetting: Classless Inter-Domain Routing (CIDR) design, Subnet masking, and Address Resolution Protocols (ARP, RARP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-03-module-3-network-layer-and-routing-mechanics-control-traffic-icmp-igmp-and-dynamic-host-configuration-protocol-dhcp-allocation-handshakes",
+            "title": "Control Traffic: ICMP, IGMP, and Dynamic Host Configuration Protocol (DHCP) allocation handshakes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-03-module-3-network-layer-and-routing-mechanics-routing-algorithms-unicast-multicast-routing-intra-domain-vs-inter-domain-topologies-next-generation-ip-qos-guarantees",
+            "title": "Routing Algorithms: Unicast/Multicast routing, Intra-domain vs Inter-domain topologies, Next-generation IP, QoS guarantees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-03-module-3-network-layer-and-routing-mechanics-hands-on-linux-kernel-implementation-of-routing-tables-routing-cache-terminal-ip-command-suite",
+            "title": "Hands-on: Linux Kernel Implementation of Routing Tables, Routing Cache, terminal 'ip' command suite",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst724-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials",
+        "title": "Module 4: Data-Link Layer and Physical Layer Essentials",
+        "topics": [
+          {
+            "id": "cs-7-oecst724-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-data-link-control-dlc-systems-link-layer-addressing-maps-and-error-detection-correction-mechanisms",
+            "title": "Data Link Control (DLC) systems, Link-layer addressing maps, and error detection/correction mechanisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-mac-parameters-random-access-channels-ethernet-802-3-csma-cd-and-logical-link-control",
+            "title": "MAC parameters; Random access channels: Ethernet (802.3), CSMA/CD, and Logical Link Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-interconnecting-hardware-hubs-bridges-layer-2-switches-and-network-connection-parameters",
+            "title": "Interconnecting Hardware: Hubs, Bridges, Layer-2 Switches, and network connection parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-wireless-networks-wireless-lan-structures-802-11-standards-csma-ca-channel-negotiation-and-mobile-ip-routing",
+            "title": "Wireless Networks: Wireless LAN structures (802.11 standards), CSMA/CA channel negotiation, and Mobile IP routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst724-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-interfaces-datalink-provider-interface-packet-capture-via-sock-packet-pf-packet-physical-layer-bit-encoding",
+            "title": "Interfaces: Datalink Provider Interface, packet capture via SOCK_PACKET/PF_PACKET, Physical layer bit-encoding",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst745-computer-vision",
+    "code": "PECST745-COMPUTER-VISION",
+    "name": "PECST745 COMPUTER VISION",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst745-computer-vision-01-module-1-image-feature-extraction",
+        "title": "Module 1: Image Feature Extraction",
+        "topics": [
+          {
+            "id": "cs-7-pecst745-computer-vision-01-module-1-image-feature-extraction-invariant-keypoint-descriptor-extraction-engineering-steps-tracking-structures-sift-feature-tracking",
+            "title": "Invariant keypoint descriptor extraction engineering steps tracking structures: SIFT feature tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst745-computer-vision-01-module-1-image-feature-extraction-scale-space-scale-parameters-analysis-processing-pipelines-matrix-transformations-formulas",
+            "title": "Scale space scale parameters analysis processing pipelines matrix transformations formulas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst745-computer-vision-01-module-1-image-feature-extraction-feature-mapping-correspondence-determination-routing-loops-validation-algorithms-templates",
+            "title": "Feature mapping correspondence determination routing loops validation algorithms templates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst745-computer-vision-02-module-2-structure-from-motion-deep-vision",
+        "title": "Module 2: Structure from Motion & Deep Vision",
+        "topics": [
+          {
+            "id": "cs-7-pecst745-computer-vision-02-module-2-structure-from-motion-deep-vision-epipolar-geometric-configuration-analysis-camera-parameter-transformation-matrices-formulas",
+            "title": "Epipolar geometric configuration analysis camera parameter transformation matrices formulas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst745-computer-vision-02-module-2-structure-from-motion-deep-vision-two-view-stereo-reconstruction-pipelines-workflows-verification-paths-tracks-setups",
+            "title": "Two-view stereo reconstruction pipelines workflows verification paths tracks setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst745-computer-vision-03-module-3-optical-flow-visual-tracking-models",
+        "title": "Module 3: Optical Flow Visual Tracking Models",
+        "topics": [
+          {
+            "id": "cs-7-pecst745-computer-vision-03-module-3-optical-flow-visual-tracking-models-lucas-kanade-dense-visual-tracking-estimation-procedures-formatting-logic-setups-tracking-systems",
+            "title": "Lucas-Kanade dense visual tracking estimation procedures formatting logic setups tracking systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst745-computer-vision-03-module-3-optical-flow-visual-tracking-models-object-tracking-filter-mechanisms-configurations-variables-updates-scripts-options-parameters-profiles",
+            "title": "Object tracking filter mechanisms configurations variables updates scripts options parameters profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst745-computer-vision-03-module-3-optical-flow-visual-tracking-models-motion-vector-segmentation-metrics-calculation-templates-optimization-loops-definitions-metrics-profiles",
+            "title": "Motion vector segmentation metrics calculation templates optimization loops definitions metrics profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst745-computer-vision-04-module-4-object-detection-networks-frameworks",
+        "title": "Module 4: Object Detection Networks Frameworks",
+        "topics": [
+          {
+            "id": "cs-7-pecst745-computer-vision-04-module-4-object-detection-networks-frameworks-region-based-convolutional-networks-r-cnn-spatial-localization-parameters-configurations-templates",
+            "title": "Region-based convolutional networks (R-CNN) spatial localization parameters configurations templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst745-computer-vision-04-module-4-object-detection-networks-frameworks-yolo-architecture-single-stage-object-categorization-processing-pipelines-configurations-parameters",
+            "title": "YOLO architecture single stage object categorization processing pipelines configurations parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst745-computer-vision-04-module-4-object-detection-networks-frameworks-vision-validation-protocols-software-deployments-metrics-verification-profiles-validation-monitoring",
+            "title": "Vision validation protocols software deployments metrics verification profiles validation monitoring",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-oecst721-cyber-security",
+    "code": "OECST721-CYBER-SECURITY",
+    "name": "OECST721 CYBER SECURITY",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-oecst721-cyber-security-01-module-1-vulnerability-assessment-evasion",
+        "title": "Module 1: Vulnerability Assessment & Evasion",
+        "topics": [
+          {
+            "id": "cs-7-oecst721-cyber-security-01-module-1-vulnerability-assessment-evasion-intrusion-signature-classification-criteria-setups-templates-patterns-profiles-parameters",
+            "title": "Intrusion signature classification criteria setups templates patterns profiles parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst721-cyber-security-01-module-1-vulnerability-assessment-evasion-buffer-overflow-vulnerability-interception-procedures-execution-trace-configuration-profiles",
+            "title": "Buffer overflow vulnerability interception procedures execution trace configuration profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst721-cyber-security-01-module-1-vulnerability-assessment-evasion-metasploit-exploit-architecture-configuration-parameters-scripts-implementation-loops-setups",
+            "title": "Metasploit exploit architecture configuration parameters scripts implementation loops setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst721-cyber-security-02-module-2-identity-perimeter-defenses",
+        "title": "Module 2: Identity & Perimeter Defenses",
+        "topics": [
+          {
+            "id": "cs-7-oecst721-cyber-security-02-module-2-identity-perimeter-defenses-multi-factor-validation-handshake-protocol-sequences-layout-safety-definitions",
+            "title": "Multi-factor validation handshake protocol sequences layout safety definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst721-cyber-security-02-module-2-identity-perimeter-defenses-firewall-filtering-tracking-architectures-rule-matching-execution-parsing-routines-systems",
+            "title": "Firewall filtering tracking architectures rule matching execution parsing routines systems",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst721-cyber-security-03-module-3-cryptographic-protocol-implementations-systems",
+        "title": "Module 3: Cryptographic Protocol Implementations Systems",
+        "topics": [
+          {
+            "id": "cs-7-oecst721-cyber-security-03-module-3-cryptographic-protocol-implementations-systems-transport-layer-security-tls-handshake-steps-tracking-algorithms-metrics-performance-parameters",
+            "title": "Transport Layer Security (TLS) handshake steps tracking algorithms metrics performance parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst721-cyber-security-03-module-3-cryptographic-protocol-implementations-systems-public-key-infrastructure-pki-certification-lifecycles-management-execution-verification-frameworks",
+            "title": "Public Key Infrastructure (PKI) certification lifecycles management execution verification frameworks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst721-cyber-security-03-module-3-cryptographic-protocol-implementations-systems-ipsec-tunneling-protocols-configurations-routing-loops-parameters-scripts-parameters-optimizations",
+            "title": "IPSec tunneling protocols configurations routing loops parameters scripts parameters optimizations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst721-cyber-security-04-module-4-incident-mitigation-governance-frameworks",
+        "title": "Module 4: Incident Mitigation Governance Frameworks",
+        "topics": [
+          {
+            "id": "cs-7-oecst721-cyber-security-04-module-4-incident-mitigation-governance-frameworks-threat-containment-playbook-specifications-incident-assessment-tracking-parameters-frameworks-profiles",
+            "title": "Threat containment playbook specifications incident assessment tracking parameters frameworks profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst721-cyber-security-04-module-4-incident-mitigation-governance-frameworks-security-orchestration-automation-response-soar-rules-setups-specifications-metrics-performance",
+            "title": "Security orchestration automation response (SOAR) rules setups specifications metrics performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst721-cyber-security-04-module-4-incident-mitigation-governance-frameworks-compliance-checking-frameworks-standards-validation-monitoring-metrics-evaluation-profiles-validation",
+            "title": "Compliance checking frameworks standards validation monitoring metrics evaluation profiles validation",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst754-digital-forensics",
+    "code": "PECST754-DIGITAL-FORENSICS",
+    "name": "PECST754 DIGITAL FORENSICS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst754-digital-forensics-01-module-1-evidence-acquisition-pipelines",
+        "title": "Module 1: Evidence Acquisition Pipelines",
+        "topics": [
+          {
+            "id": "cs-7-pecst754-digital-forensics-01-module-1-evidence-acquisition-pipelines-digital-evidence-preservation-protocols-legal-structures-integrity-validation-check-lines",
+            "title": "Digital evidence preservation protocols legal structures integrity validation check lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst754-digital-forensics-01-module-1-evidence-acquisition-pipelines-chain-of-custody-verification-log-configuration-rules-database-tables-tracking",
+            "title": "Chain of Custody verification log configuration rules database tables tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst754-digital-forensics-01-module-1-evidence-acquisition-pipelines-disk-imaging-bit-stream-cloning-methodologies-validation-tracking-tools-frameworks-parameters",
+            "title": "Disk imaging Bit-stream cloning methodologies validation tracking tools frameworks parameters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst754-digital-forensics-02-module-2-file-forensics-reconstruction",
+        "title": "Module 2: File Forensics & Reconstruction",
+        "topics": [
+          {
+            "id": "cs-7-pecst754-digital-forensics-02-module-2-file-forensics-reconstruction-file-carver-algorithm-parsing-loops-unallocated-memory-sector-metadata-matching",
+            "title": "File carver algorithm parsing loops unallocated memory sector metadata matching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst754-digital-forensics-02-module-2-file-forensics-reconstruction-registry-artifact-analysis-timeline-mapping-procedures-validation-scripting-templates-runtime",
+            "title": "Registry artifact analysis timeline mapping procedures validation scripting templates runtime",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst754-digital-forensics-03-module-3-network-and-memory-telemetry-analysis",
+        "title": "Module 3: Network and Memory Telemetry Analysis",
+        "topics": [
+          {
+            "id": "cs-7-pecst754-digital-forensics-03-module-3-network-and-memory-telemetry-analysis-volatility-memory-extraction-tool-operations-parameter-tuning-tracking-configurations-structures",
+            "title": "Volatility memory extraction tool operations parameter tuning tracking configurations structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst754-digital-forensics-03-module-3-network-and-memory-telemetry-analysis-network-packet-flow-reconstruction-log-checking-execution-monitoring-pipelines-frameworks-templates",
+            "title": "Network packet flow reconstruction log checking execution monitoring pipelines frameworks templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst754-digital-forensics-03-module-3-network-and-memory-telemetry-analysis-email-header-spoof-detection-tracking-metrics-calculation-templates-transformations-formulas-tracking",
+            "title": "Email header spoof detection tracking metrics calculation templates transformations formulas tracking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst754-digital-forensics-04-module-4-mobile-device-cloud-investigation-platforms",
+        "title": "Module 4: Mobile Device & Cloud Investigation Platforms",
+        "topics": [
+          {
+            "id": "cs-7-pecst754-digital-forensics-04-module-4-mobile-device-cloud-investigation-platforms-logical-physical-application-data-cloning-workflows-layout-data-models-analysis-parameters",
+            "title": "Logical physical application data cloning workflows layout data models analysis parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst754-digital-forensics-04-module-4-mobile-device-cloud-investigation-platforms-cloud-infrastructure-artifact-parsing-procedures-verification-metrics-performance-profiles-verification",
+            "title": "Cloud infrastructure artifact parsing procedures verification metrics performance profiles verification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst754-digital-forensics-04-module-4-mobile-device-cloud-investigation-platforms-forensic-reporting-standards-verification-tracks-platforms-setups-parameters-monitoring-metrics-compliance",
+            "title": "Forensic reporting standards verification tracks platforms setups parameters monitoring metrics compliance",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst746-embedded-systems",
+    "code": "PECST746-EMBEDDED-SYSTEMS",
+    "name": "PECST746 EMBEDDED SYSTEMS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst746-embedded-systems-01-module-1-hardware-software-co-design",
+        "title": "Module 1: Hardware Software Co-Design",
+        "topics": [
+          {
+            "id": "cs-7-pecst746-embedded-systems-01-module-1-hardware-software-co-design-embedded-computational-architectures-design-space-optimization-tradeoffs-parameters-configuration",
+            "title": "Embedded computational architectures design space optimization tradeoffs parameters configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst746-embedded-systems-01-module-1-hardware-software-co-design-bus-communication-protocols-blueprints-profiles-execution-loops-parameters-i2c-spi-hardware-interfaces",
+            "title": "Bus communication protocols blueprints profiles execution loops parameters: I2C, SPI hardware interfaces",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst746-embedded-systems-02-module-2-real-time-interfacing",
+        "title": "Module 2: Real-Time Interfacing",
+        "topics": [
+          {
+            "id": "cs-7-pecst746-embedded-systems-02-module-2-real-time-interfacing-interrupt-latencies-optimization-steps-hardware-signal-processing-handling-routing-setups",
+            "title": "Interrupt latencies optimization steps hardware signal processing handling routing setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst746-embedded-systems-02-module-2-real-time-interfacing-device-driver-software-initialization-sequences-execution-validation-paths-tracks-setups",
+            "title": "Device driver software initialization sequences execution validation paths tracks setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst746-embedded-systems-03-module-3-embedded-operating-systems-scheduling",
+        "title": "Module 3: Embedded Operating Systems Scheduling",
+        "topics": [
+          {
+            "id": "cs-7-pecst746-embedded-systems-03-module-3-embedded-operating-systems-scheduling-task-state-transitions-modeling-kernel-execution-structures-loops-configuration-parameters-tracks",
+            "title": "Task state transitions modeling kernel execution structures loops configuration parameters tracks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst746-embedded-systems-03-module-3-embedded-operating-systems-scheduling-priority-inversion-mitigation-frameworks-tracking-metrics-algorithms-execution-parameters-profiles",
+            "title": "Priority inversion mitigation frameworks tracking metrics algorithms execution parameters profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst746-embedded-systems-03-module-3-embedded-operating-systems-scheduling-context-switching-latencies-analysis-computations-tracking-variables-specifications-profiles-configurations",
+            "title": "Context switching latencies analysis computations tracking variables specifications profiles configurations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst746-embedded-systems-04-module-4-low-power-optimization-architectures",
+        "title": "Module 4: Low Power Optimization Architectures",
+        "topics": [
+          {
+            "id": "cs-7-pecst746-embedded-systems-04-module-4-low-power-optimization-architectures-dynamic-voltage-frequency-scaling-dvfs-procedures-execution-paths-configuration-parameters",
+            "title": "Dynamic voltage frequency scaling (DVFS) procedures execution paths configuration parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst746-embedded-systems-04-module-4-low-power-optimization-architectures-power-down-state-control-parameters-hardware-mappings-profiles-routing-tracks-setups-profiles",
+            "title": "Power down state control parameters hardware mappings profiles routing tracks setups profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst746-embedded-systems-04-module-4-low-power-optimization-architectures-testing-instrumentation-systems-configurations-metrics-verification-profiles-validation-monitoring-workflows",
+            "title": "Testing instrumentation systems configurations metrics verification profiles validation monitoring workflows",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cs-7-pecst741-formal-methods-in-software-engineering",
     "code": "PECST741-FORMAL-METHODS-IN-SOFTWARE-ENGINEERING",
     "name": "PECST741 FORMAL METHODS IN SOFTWARE ENGINEERING",
@@ -11,14 +1124,38 @@
         "title": "Module 1: Introduction",
         "topics": [
           {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-formal-methods-and-tools",
-            "title": "formal methods and tools.",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-stages-in-software-development",
+            "title": "Stages in software development",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-stages-in-software-development",
-            "title": "Stages in software development",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-software-defects",
+            "title": "Software defects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-causes-of-software-defects",
+            "title": "Causes of software defects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-techniques-for-dealing-with-software-defects",
+            "title": "Techniques for dealing with software defects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-testing-and-verification",
+            "title": "Testing and verification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-formal-methods-and-tools",
+            "title": "Formal methods and tools",
             "content": "",
             "pyqs": []
           }
@@ -28,6 +1165,24 @@
         "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase",
         "title": "Module 2: Ensuring reliability in the design phase",
         "topics": [
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-conceptual-modelling",
+            "title": "Conceptual modelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-the-tool-alloy",
+            "title": "The tool Alloy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-conceptual-modelling-in-alloy",
+            "title": "Conceptual modelling in Alloy",
+            "content": "",
+            "pyqs": []
+          },
           {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-analysing-alloy-models",
             "title": "Analysing Alloy models",
@@ -48,7 +1203,7 @@
           },
           {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-show-that-the-konigsberg-bridge-problem-has-no-solution",
-            "title": "Show that the Konigsberg Bridge Problem has no solution.",
+            "title": "Show that the Konigsberg Bridge Problem has no solution",
             "content": "",
             "pyqs": []
           }
@@ -59,14 +1214,26 @@
         "title": "Module 3: Verification by model checking",
         "topics": [
           {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-ghost-statements",
-            "title": "ghost statements.",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-verifier-for-concurrent-c-vcc",
+            "title": "Verifier for Concurrent C (VCC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-a-hoare-triple-based-tool-for-verifying-concurrent-c",
+            "title": "A Hoare-Triple-based tool for Verifying Concurrent C",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-intra-procedure-verification-of-programs",
-            "title": "intra procedure verification of programs",
+            "title": "Intra procedure verification of programs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-ghost-statements",
+            "title": "Ghost statements",
             "content": "",
             "pyqs": []
           }
@@ -77,215 +1244,32 @@
         "title": "Module 4: Program verification",
         "topics": [
           {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-function-contracts",
-            "title": "function contracts",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-inter-procedure-verification-of-programs-in-vcc",
             "title": "Inter-procedure verification of programs in VCC",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-loop-invariants",
-            "title": "loop invariants",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-proving-total-correctness-of-programs-in-vcc",
-            "title": "proving total correctness of programs in VCC.",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-function-contracts",
+            "title": "Function contracts",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-pure-functions",
-            "title": "pure functions",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cs-7-pecst744-information-security",
-    "code": "PECST744-INFORMATION-SECURITY",
-    "name": "PECST744 INFORMATION SECURITY",
-    "branchId": "cs",
-    "semester": 7,
-    "modules": [
-      {
-        "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security",
-        "title": "Module 1: Introduction to information security",
-        "topics": [
-          {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-access-control-matrix",
-            "title": "Access control matrix",
+            "title": "Pure functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-brute-force",
-            "title": "Brute force",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-loop-invariants",
+            "title": "Loop invariants",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-osi-security-architecture",
-            "title": "OSI Security Architecture",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-role-based-access-control",
-            "title": "Role-based access control.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-security-goals",
-            "title": "Security Goals",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-sniffers",
-            "title": "Sniffers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-threats",
-            "title": "Threats",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-timing-attack",
-            "title": "Timing attack",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities",
-        "title": "Module 2: Software vulnerabilities",
-        "topics": [
-          {
-            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-covert-channels",
-            "title": "Covert channels.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-man-in-the-middle-attacks",
-            "title": "Man-in-the-middle attacks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-phishing",
-            "title": "Phishing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-salami-attack",
-            "title": "Salami attack",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-topological-worms",
-            "title": "Topological worms",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-trapdoors",
-            "title": "Trapdoors",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage",
-        "title": "Module 3: Introduction to security of information storage",
-        "topics": [
-          {
-            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-biometric-authentication",
-            "title": "Biometric Authentication",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-multifactor-authentication",
-            "title": "Multifactor Authentication.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-remote-user-authentication",
-            "title": "Remote User Authentication",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks",
-        "title": "Module 4: Security in networks",
-        "topics": [
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-access-controls",
-            "title": "Access Controls",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-content-integrity",
-            "title": "Content Integrity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-encryption",
-            "title": "Encryption",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-honeypots",
-            "title": "Honeypots",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-personal-firewalls",
-            "title": "Personal Firewalls",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-strong-authentication",
-            "title": "Strong Authentication",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-traffic-flow-security",
-            "title": "Traffic flow security",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-wireless-security",
-            "title": "Wireless Security",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-proving-total-correctness-of-programs-in-vcc",
+            "title": "Proving total correctness of programs in VCC",
             "content": "",
             "pyqs": []
           }
@@ -305,26 +1289,242 @@
         "title": "Module 1: Basic fuzzy set theory",
         "topics": [
           {
-            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-crisp-vs-fuzzy-sets",
-            "title": "Crisp vs Fuzzy sets.",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-introduction-uncertainty-imprecision-and-vagueness",
-            "title": "Introduction -  Uncertainty, Imprecision and Vagueness.",
+            "title": "Introduction - Uncertainty, Imprecision and Vagueness",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-membership-functions-types",
-            "title": "Membership Functions – Types",
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-crisp-vs-fuzzy-sets",
+            "title": "Crisp vs Fuzzy sets",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-representation-of-fuzzy-sets",
-            "title": "Representation of Fuzzy sets.",
+            "title": "Representation of Fuzzy sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-membership-functions-types",
+            "title": "Membership Functions - Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-basic-operations-dilation",
+            "title": "Basic operations - dilation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-basic-operations-concentration",
+            "title": "Basic operations - concentration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-basic-operations-normalization",
+            "title": "Basic operations - normalization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-linguistic-hedges",
+            "title": "Linguistic hedges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-properties-of-fuzzy-set",
+            "title": "Properties of fuzzy set",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-level-sets-alpha-cut-representation",
+            "title": "Level Sets - Alpha cut representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-complement",
+            "title": "Operations on fuzzy sets - fuzzy complement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-intersection",
+            "title": "Operations on fuzzy sets - fuzzy intersection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-union",
+            "title": "Operations on fuzzy sets - fuzzy union",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-aggregation-operations",
+            "title": "Aggregation operations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations",
+        "title": "Module 2: Fuzzy relations",
+        "topics": [
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-union",
+            "title": "Operations on Fuzzy relations - union",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-intersection",
+            "title": "Operations on Fuzzy relations - intersection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-complement",
+            "title": "Operations on Fuzzy relations - complement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-cartesian-product",
+            "title": "Operations on Fuzzy relations - cartesian product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-fuzzy-composition-max-min",
+            "title": "Fuzzy composition - Max-min",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-fuzzy-composition-max-product",
+            "title": "Fuzzy composition - Max-product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-extension-principle-fuzzy-arithmetic",
+            "title": "Extension Principle - Fuzzy arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-fuzzy-numbers",
+            "title": "Fuzzy numbers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-arithmetic-operations-on-fuzzy-numbers",
+            "title": "Arithmetic operations on fuzzy numbers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-fuzzy-reasoning-generalized-modus-ponens-gmp",
+            "title": "Fuzzy Reasoning - Generalized Modus Ponens (GMP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-fuzzy-reasoning-generalized-modus-tollens-gmt",
+            "title": "Fuzzy Reasoning - Generalized Modus Tollens (GMT)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods",
+        "title": "Module 3: Fuzzification and defuzzification methods",
+        "topics": [
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-fuzzy-inference-zadeh-rule",
+            "title": "Fuzzy inference - Zadeh rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-fuzzy-inference-mamdani-rule",
+            "title": "Fuzzy inference - Mamdani rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-intuition",
+            "title": "Development of membership Functions - Intuition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-inference",
+            "title": "Development of membership Functions - Inference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-rank-ordering",
+            "title": "Development of membership Functions - Rank ordering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-inductive-reasoning",
+            "title": "Development of membership Functions - Inductive reasoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-max-membership-principle",
+            "title": "Defuzzification to Scalars - Max membership principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-centroid-method",
+            "title": "Defuzzification to Scalars - Centroid method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-weighted-average-method",
+            "title": "Defuzzification to Scalars - Weighted average method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-mean-max-membership",
+            "title": "Defuzzification to Scalars - Mean max membership",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-center-of-sums",
+            "title": "Defuzzification to Scalars - Center of sums",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-center-of-largest-area",
+            "title": "Defuzzification to Scalars - Center of largest area",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-first-or-last-of-maxima",
+            "title": "Defuzzification to Scalars - First (or last) of maxima",
             "content": "",
             "pyqs": []
           }
@@ -335,8 +1535,1178 @@
         "title": "Module 4: Fuzzy inference systems",
         "topics": [
           {
+            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-approximate-reasoning",
+            "title": "Approximate Reasoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-fuzzy-rule-based-systems-multiple-conjunctive-antecedents",
+            "title": "Fuzzy (Rule-Based) Systems - Multiple conjunctive antecedents",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-fuzzy-rule-based-systems-multiple-disjunctive-antecedents",
+            "title": "Fuzzy (Rule-Based) Systems - Multiple disjunctive antecedents",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-aggregation-of-fuzzy-rules",
+            "title": "Aggregation of fuzzy rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-graphical-techniques-of-inference",
-            "title": "Graphical Techniques of Inference.",
+            "title": "Graphical Techniques of Inference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-fuzzy-controllers-mamdani-fis",
+            "title": "Fuzzy Controllers - Mamdani FIS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-fuzzy-controllers-larsen-model",
+            "title": "Fuzzy Controllers - Larsen Model",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst753-game-theory-and-mechanism-design",
+    "code": "PECST753-GAME-THEORY-AND-MECHANISM-DESIGN",
+    "name": "PECST753 GAME THEORY AND MECHANISM DESIGN",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory",
+        "title": "Module 1: Basic fuzzy set theory",
+        "topics": [
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-introduction-uncertainty-imprecision-and-vagueness",
+            "title": "Introduction - Uncertainty, Imprecision and Vagueness",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-crisp-vs-fuzzy-sets",
+            "title": "Crisp vs Fuzzy sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-representation-of-fuzzy-sets",
+            "title": "Representation of Fuzzy sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-membership-functions-types",
+            "title": "Membership Functions - Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-basic-operations-dilation",
+            "title": "Basic operations - dilation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-basic-operations-concentration",
+            "title": "Basic operations - concentration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-basic-operations-normalization",
+            "title": "Basic operations - normalization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-linguistic-hedges",
+            "title": "Linguistic hedges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-properties-of-fuzzy-set",
+            "title": "Properties of fuzzy set",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-level-sets-alpha-cut-representation",
+            "title": "Level Sets - Alpha cut representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-complement",
+            "title": "Operations on fuzzy sets - fuzzy complement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-intersection",
+            "title": "Operations on fuzzy sets - fuzzy intersection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-union",
+            "title": "Operations on fuzzy sets - fuzzy union",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-aggregation-operations",
+            "title": "Aggregation operations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations",
+        "title": "Module 2: Fuzzy relations",
+        "topics": [
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-union",
+            "title": "Operations on Fuzzy relations - union",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-intersection",
+            "title": "Operations on Fuzzy relations - intersection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-complement",
+            "title": "Operations on Fuzzy relations - complement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-cartesian-product",
+            "title": "Operations on Fuzzy relations - cartesian product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-composition-max-min",
+            "title": "Fuzzy composition - Max-min",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-composition-max-product",
+            "title": "Fuzzy composition - Max-product",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-extension-principle-fuzzy-arithmetic",
+            "title": "Extension Principle - Fuzzy arithmetic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-numbers",
+            "title": "Fuzzy numbers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-arithmetic-operations-on-fuzzy-numbers",
+            "title": "Arithmetic operations on fuzzy numbers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-reasoning-generalized-modus-ponens-gmp",
+            "title": "Fuzzy Reasoning - Generalized Modus Ponens (GMP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-reasoning-generalized-modus-tollens-gmt",
+            "title": "Fuzzy Reasoning - Generalized Modus Tollens (GMT)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods",
+        "title": "Module 3: Fuzzification and defuzzification methods",
+        "topics": [
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-fuzzy-inference-zadeh-rule",
+            "title": "Fuzzy inference - Zadeh rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-fuzzy-inference-mamdani-rule",
+            "title": "Fuzzy inference - Mamdani rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-intuition",
+            "title": "Development of membership Functions - Intuition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-inference",
+            "title": "Development of membership Functions - Inference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-rank-ordering",
+            "title": "Development of membership Functions - Rank ordering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-inductive-reasoning",
+            "title": "Development of membership Functions - Inductive reasoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-max-membership-principle",
+            "title": "Defuzzification to Scalars - Max membership principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-centroid-method",
+            "title": "Defuzzification to Scalars - Centroid method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-weighted-average-method",
+            "title": "Defuzzification to Scalars - Weighted average method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-mean-max-membership",
+            "title": "Defuzzification to Scalars - Mean max membership",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-center-of-sums",
+            "title": "Defuzzification to Scalars - Center of sums",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-center-of-largest-area",
+            "title": "Defuzzification to Scalars - Center of largest area",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-first-or-last-of-maxima",
+            "title": "Defuzzification to Scalars - First (or last) of maxima",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems",
+        "title": "Module 4: Fuzzy inference systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-approximate-reasoning",
+            "title": "Approximate Reasoning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-rule-based-systems-multiple-conjunctive-antecedents",
+            "title": "Fuzzy (Rule-Based) Systems - Multiple conjunctive antecedents",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-rule-based-systems-multiple-disjunctive-antecedents",
+            "title": "Fuzzy (Rule-Based) Systems - Multiple disjunctive antecedents",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-aggregation-of-fuzzy-rules",
+            "title": "Aggregation of fuzzy rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-graphical-techniques-of-inference",
+            "title": "Graphical Techniques of Inference",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-controllers-mamdani-fis",
+            "title": "Fuzzy Controllers - Mamdani FIS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-controllers-larsen-model",
+            "title": "Fuzzy Controllers - Larsen Model",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst757-high-performance-computing",
+    "code": "PECST757-HIGH-PERFORMANCE-COMPUTING",
+    "name": "PECST757 HIGH PERFORMANCE COMPUTING",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst757-high-performance-computing-01-module-1-parallel-programming-paradigms",
+        "title": "Module 1: Parallel Programming Paradigms",
+        "topics": [
+          {
+            "id": "cs-7-pecst757-high-performance-computing-01-module-1-parallel-programming-paradigms-shared-memory-thread-orchestration-directives-compile-structures-blueprints-layout-openmp-templates",
+            "title": "Shared memory thread orchestration directives compile structures blueprints layout: OpenMP templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst757-high-performance-computing-01-module-1-parallel-programming-paradigms-message-passing-interface-mpi-link-communication-structures-algorithms-tracking-mpi-clusters-setups",
+            "title": "Message Passing Interface (MPI) link communication structures algorithms tracking: MPI clusters setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst757-high-performance-computing-02-module-2-gpu-accelerations-cuda-architecture",
+        "title": "Module 2: GPU Accelerations & CUDA Architecture",
+        "topics": [
+          {
+            "id": "cs-7-pecst757-high-performance-computing-02-module-2-gpu-accelerations-cuda-architecture-gpu-microarchitecture-hardware-layout-configurations-execution-grids-blocks-metrics-threads",
+            "title": "GPU microarchitecture hardware layout configurations execution grids blocks metrics threads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst757-high-performance-computing-02-module-2-gpu-accelerations-cuda-architecture-cuda-programming-kernel-specifications-memory-indexing-configurations-tracking-optimization-setups",
+            "title": "CUDA programming kernel specifications memory indexing configurations tracking optimization setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst757-high-performance-computing-03-module-3-parallel-matrix-computational-core",
+        "title": "Module 3: Parallel Matrix Computational Core",
+        "topics": [
+          {
+            "id": "cs-7-pecst757-high-performance-computing-03-module-3-parallel-matrix-computational-core-matrix-multiplication-block-tiling-configurations-structures-loops-optimization-tracking-layouts-models",
+            "title": "Matrix multiplication block tiling configurations structures loops optimization tracking layouts models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst757-high-performance-computing-03-module-3-parallel-matrix-computational-core-parallel-linear-solvers-execution-blueprints-metrics-performance-profiles-layout-configurations-setups",
+            "title": "Parallel linear solvers execution blueprints metrics performance profiles layout configurations setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst757-high-performance-computing-03-module-3-parallel-matrix-computational-core-load-balancing-strategies-thread-assignment-scheduling-configurations-tracks-metrics-performance-metrics",
+            "title": "Load balancing strategies thread assignment scheduling configurations tracks metrics performance metrics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst757-high-performance-computing-04-module-4-hpc-scale-out-infrastructure-interconnects",
+        "title": "Module 4: HPC Scale Out Infrastructure Interconnects",
+        "topics": [
+          {
+            "id": "cs-7-pecst757-high-performance-computing-04-module-4-hpc-scale-out-infrastructure-interconnects-infiniband-interconnect-fabrics-routing-configurations-variables-software-setups-metrics-performance",
+            "title": "InfiniBand interconnect fabrics routing configurations variables software setups metrics performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst757-high-performance-computing-04-module-4-hpc-scale-out-infrastructure-interconnects-distributed-memory-directory-access-protocols-verification-parameters-tracking-variables-parameters",
+            "title": "Distributed memory directory access protocols verification parameters tracking variables parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst757-high-performance-computing-04-module-4-hpc-scale-out-infrastructure-interconnects-hpc-performance-benchmarking-systems-configurations-metrics-verification-profiles-monitoring-workflows",
+            "title": "HPC performance benchmarking systems configurations metrics verification profiles monitoring workflows",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst744-information-security",
+    "code": "PECST744-INFORMATION-SECURITY",
+    "name": "PECST744 INFORMATION SECURITY",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security",
+        "title": "Module 1: Introduction to information security",
+        "topics": [
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-introduction-to-information-security",
+            "title": "Introduction to Information Security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-cia-triad",
+            "title": "CIA Triad",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-osi-security-architecture",
+            "title": "OSI Security Architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-security-goals",
+            "title": "Security Goals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-security-services",
+            "title": "Security Services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-security-mechanisms",
+            "title": "Security Mechanisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-threats",
+            "title": "Threats",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-attacks",
+            "title": "Attacks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-malicious-code",
+            "title": "Malicious Code",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-brute-force",
+            "title": "Brute Force",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-timing-attack",
+            "title": "Timing Attack",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-sniffers",
+            "title": "Sniffers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-access-control-mechanisms",
+            "title": "Access Control Mechanisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-access-control",
+            "title": "Access Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-access-control-matrix",
+            "title": "Access Control Matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-access-control-in-os",
+            "title": "Access Control in OS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-discretionary-access-control",
+            "title": "Discretionary Access Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-mandatory-access-control",
+            "title": "Mandatory Access Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-01-module-1-introduction-to-information-security-role-based-access-control",
+            "title": "Role-Based Access Control",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities",
+        "title": "Module 2: Software vulnerabilities",
+        "topics": [
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-software-vulnerabilities",
+            "title": "Software Vulnerabilities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-buffer-overflow",
+            "title": "Buffer Overflow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-stack-overflow",
+            "title": "Stack Overflow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-cross-site-scripting-xss",
+            "title": "Cross-Site Scripting (XSS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-sql-injection",
+            "title": "SQL Injection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-phishing",
+            "title": "Phishing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-malwares",
+            "title": "Malwares",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-viruses",
+            "title": "Viruses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-worms",
+            "title": "Worms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-trojans",
+            "title": "Trojans",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-topological-worms",
+            "title": "Topological Worms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-trapdoors",
+            "title": "Trapdoors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-salami-attack",
+            "title": "Salami Attack",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-man-in-the-middle-attacks",
+            "title": "Man-in-the-Middle Attacks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-covert-channels",
+            "title": "Covert Channels",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage",
+        "title": "Module 3: Introduction to security of information storage",
+        "topics": [
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-introduction-to-security-of-information-storage",
+            "title": "Introduction to Security of Information Storage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-processing",
+            "title": "Processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-transmission",
+            "title": "Transmission",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-information-security-management",
+            "title": "Information Security Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-iso-standards-relating-to-information-security",
+            "title": "ISO Standards Relating to Information Security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-other-information-security-management-frameworks",
+            "title": "Other Information Security Management Frameworks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-security-policies",
+            "title": "Security Policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-security-controls",
+            "title": "Security Controls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-risk-management-process",
+            "title": "Risk Management Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-regulations-and-legal-frameworks",
+            "title": "Regulations and Legal Frameworks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-authentication",
+            "title": "Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-user-authentication",
+            "title": "User Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-token-based-authentication",
+            "title": "Token Based Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-biometric-authentication",
+            "title": "Biometric Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-remote-user-authentication",
+            "title": "Remote User Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-multifactor-authentication",
+            "title": "Multifactor Authentication",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks",
+        "title": "Module 4: Security in networks",
+        "topics": [
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-security-in-networks",
+            "title": "Security in Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-threats-in-networks",
+            "title": "Threats in Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-network-security-controls",
+            "title": "Network Security Controls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-network-security-architecture",
+            "title": "Network Security Architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-encryption",
+            "title": "Encryption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-content-integrity",
+            "title": "Content Integrity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-strong-authentication",
+            "title": "Strong Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-access-controls",
+            "title": "Access Controls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-wireless-security",
+            "title": "Wireless Security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-honeypots",
+            "title": "Honeypots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-traffic-flow-security",
+            "title": "Traffic Flow Security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-firewalls",
+            "title": "Firewalls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-firewall-design",
+            "title": "Firewall Design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-types-of-firewalls",
+            "title": "Types of Firewalls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-personal-firewalls",
+            "title": "Personal Firewalls",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-intrusion-detection-systems-ids",
+            "title": "Intrusion Detection Systems (IDS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-email-security",
+            "title": "Email Security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-pgp",
+            "title": "PGP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-s-mime",
+            "title": "S/MIME",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst755-internet-of-things",
+    "code": "PECST755-INTERNET-OF-THINGS",
+    "name": "PECST755 INTERNET OF THINGS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst755-internet-of-things-01-module-1-iot-messaging-protocols",
+        "title": "Module 1: IoT Messaging Protocols",
+        "topics": [
+          {
+            "id": "cs-7-pecst755-internet-of-things-01-module-1-iot-messaging-protocols-iot-system-node-network-interaction-specifications-frameworks-architectures-parameters-design-rules",
+            "title": "IoT system node network interaction specifications frameworks architectures parameters design rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst755-internet-of-things-01-module-1-iot-messaging-protocols-mqtt-publish-subscribe-messaging-broker-state-machines-specifications-paths-layout-configurations",
+            "title": "MQTT publish subscribe messaging broker state machines specifications paths layout configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst755-internet-of-things-01-module-1-iot-messaging-protocols-coap-request-transport-protocols-rest-interface-mapping-procedures-metrics-performance-profiles",
+            "title": "CoAP request transport protocols REST interface mapping procedures metrics performance profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst755-internet-of-things-02-module-2-edge-analytics-integration",
+        "title": "Module 2: Edge Analytics Integration",
+        "topics": [
+          {
+            "id": "cs-7-pecst755-internet-of-things-02-module-2-edge-analytics-integration-sensor-node-interface-architectures-hardware-mappings-profiles-routing-tracks-setups-profiles",
+            "title": "Sensor node interface architectures hardware mappings profiles routing tracks setups profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst755-internet-of-things-02-module-2-edge-analytics-integration-edge-computing-data-stream-filtering-tracking-parameters-optimization-loops-definitions-profiles",
+            "title": "Edge computing data stream filtering tracking parameters optimization loops definitions profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst755-internet-of-things-03-module-3-wireless-sensor-network-routing-layers",
+        "title": "Module 3: Wireless Sensor Network Routing Layers",
+        "topics": [
+          {
+            "id": "cs-7-pecst755-internet-of-things-03-module-3-wireless-sensor-network-routing-layers-rpl-routing-protocol-destination-oriented-graphs-configurations-benchmarks-parameters-specifications",
+            "title": "RPL routing protocol destination oriented graphs configurations benchmarks parameters specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst755-internet-of-things-03-module-3-wireless-sensor-network-routing-layers-6lowpan-header-adaptation-structures-calculations-parameters-formatting-rules-setups-metrics-profiles",
+            "title": "6LoWPAN header adaptation structures calculations parameters formatting rules setups metrics profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst755-internet-of-things-03-module-3-wireless-sensor-network-routing-layers-energy-aware-routing-routing-loops-paths-optimizations-layouts-formats-matching-profiles-definitions",
+            "title": "Energy aware routing routing loops paths optimizations layouts formats matching profiles definitions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst755-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms",
+        "title": "Module 4: IoT Data Cloud Orchestrations Platforms",
+        "topics": [
+          {
+            "id": "cs-7-pecst755-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms-time-series-stream-telemetry-ingest-pipelines-cloud-configurations-datasets-schemas-transformations",
+            "title": "Time series stream telemetry ingest pipelines cloud configurations datasets schemas transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst755-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms-iot-security-endpoint-authentication-protocols-validation-parameters-metrics-performance-profiles-configurations",
+            "title": "IoT security endpoint authentication protocols validation parameters metrics performance profiles configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst755-internet-of-things-04-module-4-iot-data-cloud-orchestrations-platforms-industrial-iot-edge-gateway-systems-configurations-tracking-variables-specifications-performance-checking",
+            "title": "Industrial IoT edge gateway systems configurations tracking variables specifications performance checking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-oecst725-mobile-application-development",
+    "code": "OECST725-MOBILE-APPLICATION-DEVELOPMENT",
+    "name": "OECST725 MOBILE APPLICATION DEVELOPMENT",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-oecst725-mobile-application-development-01-module-1-mobile-ui-lifecycle-orchestrations",
+        "title": "Module 1: Mobile UI & Lifecycle Orchestrations",
+        "topics": [
+          {
+            "id": "cs-7-oecst725-mobile-application-development-01-module-1-mobile-ui-lifecycle-orchestrations-mobile-runtime-environment-specifications-constraints-parameters-layouts-systems",
+            "title": "Mobile runtime environment specifications constraints parameters layouts systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst725-mobile-application-development-01-module-1-mobile-ui-lifecycle-orchestrations-activity-tracking-state-configurations-frameworks-lifecycle-state-transitions-parsing-loops",
+            "title": "Activity tracking state configurations frameworks lifecycle state transitions parsing loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst725-mobile-application-development-01-module-1-mobile-ui-lifecycle-orchestrations-ui-view-structuring-blueprints-layout-templates-configurations-setups-profiles",
+            "title": "UI view structuring blueprints layout templates configurations setups profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst725-mobile-application-development-02-module-2-data-persistency-sensor-apis",
+        "title": "Module 2: Data Persistency & Sensor APIs",
+        "topics": [
+          {
+            "id": "cs-7-oecst725-mobile-application-development-02-module-2-data-persistency-sensor-apis-local-database-engine-deployments-scripts-sqlite-layout-configurations-tracks",
+            "title": "Local database engine deployments scripts SQLite layout configurations tracks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst725-mobile-application-development-02-module-2-data-persistency-sensor-apis-sensor-api-configurations-hardware-mappings-profiles-routing-tracks-setups-profiles",
+            "title": "Sensor API configurations hardware mappings profiles routing tracks setups profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst725-mobile-application-development-03-module-3-asynchronous-background-processing-operations",
+        "title": "Module 3: Asynchronous Background Processing Operations",
+        "topics": [
+          {
+            "id": "cs-7-oecst725-mobile-application-development-03-module-3-asynchronous-background-processing-operations-intent-service-routing-workers-execution-state-tracking-configurations-formats-parameters",
+            "title": "Intent service routing workers execution state tracking configurations formats parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst725-mobile-application-development-03-module-3-asynchronous-background-processing-operations-broadcast-receiver-parameters-configurations-systems-updates-scripts-options-parameters",
+            "title": "Broadcast receiver parameters configurations systems updates scripts options parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst725-mobile-application-development-03-module-3-asynchronous-background-processing-operations-background-thread-notification-parameters-tracking-optimization-loops-pipelines-frameworks",
+            "title": "Background thread notification parameters tracking optimization loops pipelines frameworks",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst725-mobile-application-development-04-module-4-network-client-integrations-platforms",
+        "title": "Module 4: Network Client Integrations Platforms",
+        "topics": [
+          {
+            "id": "cs-7-oecst725-mobile-application-development-04-module-4-network-client-integrations-platforms-http-rest-client-library-calls-payloads-parsing-routines-tracking-configurations",
+            "title": "HTTP REST client library calls payloads parsing routines tracking configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst725-mobile-application-development-04-module-4-network-client-integrations-platforms-json-serialization-schemas-configurations-data-exchange-maps-format-templates-profiles",
+            "title": "JSON serialization schemas configurations data exchange maps format templates profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst725-mobile-application-development-04-module-4-network-client-integrations-platforms-app-deployment-tracking-parameters-packaging-routes-security-setups-metrics-profiles-checking",
+            "title": "App deployment tracking parameters packaging routes security setups metrics profiles checking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst759-parallel-algorithms",
+    "code": "PECST759-PARALLEL-ALGORITHMS",
+    "name": "PECST759 PARALLEL ALGORITHMS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst759-parallel-algorithms-01-module-1-pram-computing-frameworks",
+        "title": "Module 1: PRAM Computing Frameworks",
+        "topics": [
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-01-module-1-pram-computing-frameworks-parallel-random-access-machine-pram-models-taxonomy-classifications-structures-layouts-models",
+            "title": "Parallel Random Access Machine (PRAM) models taxonomy classifications structures layouts models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-01-module-1-pram-computing-frameworks-erew-crew-crcw-memory-collision-resolution-parameters-optimization-formulations-layouts-rules",
+            "title": "EREW, CREW, CRCW memory collision resolution parameters optimization formulations layouts rules",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst759-parallel-algorithms-02-module-2-parallel-sorting-networks",
+        "title": "Module 2: Parallel Sorting Networks",
+        "topics": [
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-02-module-2-parallel-sorting-networks-odd-even-transposition-sorting-network-configuration-models-routing-loops-paths-optimization",
+            "title": "Odd-Even transposition sorting network configuration models routing loops paths optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-02-module-2-parallel-sorting-networks-bitonic-merge-sort-network-algorithm-state-machines-specifications-paths-layout-configurations",
+            "title": "Bitonic merge sort network algorithm state machines specifications paths layout configurations",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst759-parallel-algorithms-03-module-3-parallel-graph-numerical-solvers-models",
+        "title": "Module 3: Parallel Graph Numerical Solvers Models",
+        "topics": [
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-03-module-3-parallel-graph-numerical-solvers-models-parallel-graph-search-routes-bfs-dfs-acceleration-matrix-calculations-metrics-processing-rules",
+            "title": "Parallel graph search routes BFS DFS acceleration matrix calculations metrics processing rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-03-module-3-parallel-graph-numerical-solvers-models-matrix-vector-multiplication-execution-designs-loops-configurations-paths-optimization-templates-sorting",
+            "title": "Matrix vector multiplication execution designs loops configurations paths optimization templates sorting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-03-module-3-parallel-graph-numerical-solvers-models-prefix-sum-calculation-parallel-routing-procedures-equations-configurations-variables-optimization-parameters",
+            "title": "Prefix sum calculation parallel routing procedures equations configurations variables optimization parameters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst759-parallel-algorithms-04-module-4-mesh-and-hypercube-communication-systems",
+        "title": "Module 4: Mesh and Hypercube Communication Systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-04-module-4-mesh-and-hypercube-communication-systems-mesh-connected-array-data-transfer-mapping-models-configurations-parameters-loops-specifications-paths",
+            "title": "Mesh connected array data transfer mapping models configurations parameters loops specifications paths",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-04-module-4-mesh-and-hypercube-communication-systems-hypercube-topology-packet-routing-routines-validation-metrics-performance-profiles-layout-configurations",
+            "title": "Hypercube topology packet routing routines validation metrics performance profiles layout configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst759-parallel-algorithms-04-module-4-mesh-and-hypercube-communication-systems-complexity-scaling-check-parameters-execution-frameworks-metrics-verification-profiles-testing-optimization",
+            "title": "Complexity scaling check parameters execution frameworks metrics verification profiles testing optimization",
             "content": "",
             "pyqs": []
           }
@@ -356,32 +2726,14 @@
         "title": "Module 1: Introduction",
         "topics": [
           {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-introduction-the-origins-of-programming-languages",
+            "title": "Introduction - The Origins of Programming Languages",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-abstractions-in-programming-languages",
             "title": "Abstractions in Programming Languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-ambiguity",
-            "title": "Ambiguity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-associativity",
-            "title": "Associativity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-c-an-object-oriented-extension-of-c",
-            "title": "C++: An Object-Oriented Extension of C",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-case-study-building-a-syntax-analyzer-for-tinyada",
-            "title": "Case Study: Building a Syntax Analyzer for TinyAda",
             "content": "",
             "pyqs": []
           },
@@ -392,44 +2744,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-context-free-grammars-and-bnfs",
-            "title": "Context-Free Grammars and BNFs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-ebnfs-and-syntax-diagrams",
-            "title": "EBNFs and Syntax Diagrams",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-efficiency",
-            "title": "Efficiency",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-extensibility",
-            "title": "Extensibility",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-introduction-the-origins-of-programming-languages",
-            "title": "Introduction -  The Origins of Programming Languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-language-definition",
             "title": "Language Definition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-language-design-criteria-historical-overview",
-            "title": "Language Design Criteria -  Historical Overview",
             "content": "",
             "pyqs": []
           },
@@ -440,32 +2756,20 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-lexics-vs-syntax-vs-semantics",
-            "title": "Lexics vs. Syntax vs. Semantics",
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-the-future-of-programming-languages",
+            "title": "The Future of Programming Languages",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-parse-trees-and-abstract-syntax-trees",
-            "title": "Parse Trees and Abstract Syntax Trees",
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-language-design-criteria-historical-overview",
+            "title": "Language Design Criteria - Historical Overview",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-parsing-techniques-and-tools",
-            "title": "Parsing Techniques and Tools",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-precedence",
-            "title": "Precedence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-python-a-general-purpose-scripting-language",
-            "title": "Python: A General-Purpose Scripting Language",
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-efficiency",
+            "title": "Efficiency",
             "content": "",
             "pyqs": []
           },
@@ -482,14 +2786,80 @@
             "pyqs": []
           },
           {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-extensibility",
+            "title": "Extensibility",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-c-an-object-oriented-extension-of-c",
+            "title": "C++: An Object-Oriented Extension of C",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-python-a-general-purpose-scripting-language",
+            "title": "Python: A General-Purpose Scripting Language",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-syntax-and-analysis-parsing-lexical-structure-of-programming-languages",
             "title": "Syntax and Analysis Parsing: Lexical Structure of Programming Languages",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-the-future-of-programming-languages",
-            "title": "The Future of Programming Languages",
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-context-free-grammars-and-bnfs",
+            "title": "Context-Free Grammars and BNFs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-parse-trees-and-abstract-syntax-trees",
+            "title": "Parse Trees and Abstract Syntax Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-ambiguity",
+            "title": "Ambiguity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-associativity",
+            "title": "Associativity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-precedence",
+            "title": "Precedence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-ebnfs-and-syntax-diagrams",
+            "title": "EBNFs and Syntax Diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-parsing-techniques-and-tools",
+            "title": "Parsing Techniques and Tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-lexics-vs-syntax-vs-semantics",
+            "title": "Lexics vs. Syntax vs. Semantics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-01-module-1-introduction-case-study-building-a-syntax-analyzer-for-tinyada",
+            "title": "Case Study: Building a Syntax Analyzer for TinyAda",
             "content": "",
             "pyqs": []
           }
@@ -500,44 +2870,8 @@
         "title": "Module 2: Basic semantics",
         "topics": [
           {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-aliases",
-            "title": "Aliases",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-allocation-lifetimes-and-the-environment",
-            "title": "Allocation, Lifetimes, and the Environment",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-basic-semantics-attributes-binding-and-semantic-functions",
             "title": "Basic Semantics- Attributes, Binding, and Semantic Functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-case-study-initial-static-semantic-analysis-of-tinyada",
-            "title": "Case Study: Initial Static Semantic Analysis of TinyAda.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-case-study-type-checking-in-tinyada",
-            "title": "Case Study: Type Checking in TinyAda.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-dangling-references-and-garbage",
-            "title": "Dangling References, and Garbage",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-data-types-data-types-and-type-information",
-            "title": "Data Types -  Data Types and Type Information",
             "content": "",
             "pyqs": []
           },
@@ -548,8 +2882,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-explicit-polymorphism",
-            "title": "Explicit Polymorphism",
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-the-symbol-table",
+            "title": "The Symbol Table",
             "content": "",
             "pyqs": []
           },
@@ -560,8 +2894,38 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-polymorphic-type-checking",
-            "title": "Polymorphic Type Checking",
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-allocation-lifetimes-and-the-environment",
+            "title": "Allocation, Lifetimes, and the Environment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-variables-and-constants",
+            "title": "Variables and Constants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-aliases",
+            "title": "Aliases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-dangling-references-and-garbage",
+            "title": "Dangling References, and Garbage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-case-study-initial-static-semantic-analysis-of-tinyada",
+            "title": "Case Study: Initial Static Semantic Analysis of TinyAda.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-data-types-data-types-and-type-information",
+            "title": "Data Types - Data Types and Type Information",
             "content": "",
             "pyqs": []
           },
@@ -572,32 +2936,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-the-symbol-table",
-            "title": "The Symbol Table",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-type-checking",
-            "title": "Type Checking",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-type-constructors",
             "title": "Type Constructors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-type-conversion",
-            "title": "Type Conversion",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-type-equivalence",
-            "title": "Type Equivalence",
             "content": "",
             "pyqs": []
           },
@@ -608,8 +2948,38 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-variables-and-constants",
-            "title": "Variables and Constants",
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-type-equivalence",
+            "title": "Type Equivalence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-type-checking",
+            "title": "Type Checking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-type-conversion",
+            "title": "Type Conversion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-polymorphic-type-checking",
+            "title": "Polymorphic Type Checking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-explicit-polymorphism",
+            "title": "Explicit Polymorphism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-02-module-2-basic-semantics-case-study-type-checking-in-tinyada",
+            "title": "Case Study: Type Checking in TinyAda.",
             "content": "",
             "pyqs": []
           }
@@ -620,26 +2990,8 @@
         "title": "Module 3: Expressions and statements",
         "topics": [
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-activations",
-            "title": "Activations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-allocation",
-            "title": "Allocation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-case-study-computing-the-values-of-static-expressions-in-tinyada",
-            "title": "Case Study: Computing the Values of Static Expressions in TinyAda.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-case-study-processing-parameter-modes-in-tinyada",
-            "title": "Case Study: Processing Parameter Modes in TinyAda.",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-expressions-and-statements-expressions",
+            "title": "Expressions and Statements - Expressions",
             "content": "",
             "pyqs": []
           },
@@ -650,8 +3002,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-dynamic-memory-management",
-            "title": "Dynamic Memory Management",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-loops-and-variations-on-while",
+            "title": "Loops and Variations on WHILE",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-the-goto-controversy-and-loop-exits",
+            "title": "The GOTO Controversy and Loop Exits",
             "content": "",
             "pyqs": []
           },
@@ -662,20 +3020,20 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-exception-handling-and-environments",
-            "title": "Exception Handling and Environments",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-case-study-computing-the-values-of-static-expressions-in-tinyada",
+            "title": "Case Study: Computing the Values of Static Expressions in TinyAda.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-expressions-and-statements-expressions",
-            "title": "Expressions and Statements -  Expressions",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-procedures-and-environments-procedure-definition-and-activation",
+            "title": "Procedures and Environments- Procedure Definition and Activation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-loops-and-variations-on-while",
-            "title": "Loops and Variations on WHILE",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-procedure-semantics",
+            "title": "Procedure Semantics",
             "content": "",
             "pyqs": []
           },
@@ -692,20 +3050,32 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-procedure-semantics",
-            "title": "Procedure Semantics",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-activations",
+            "title": "Activations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-procedures-and-environments-procedure-definition-and-activation",
-            "title": "Procedures and Environments-  Procedure Definition and Activation",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-allocation",
+            "title": "Allocation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-the-goto-controversy-and-loop-exits",
-            "title": "The GOTO Controversy and Loop Exits",
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-dynamic-memory-management",
+            "title": "Dynamic Memory Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-exception-handling-and-environments",
+            "title": "Exception Handling and Environments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-03-module-3-expressions-and-statements-case-study-processing-parameter-modes-in-tinyada",
+            "title": "Case Study: Processing Parameter Modes in TinyAda.",
             "content": "",
             "pyqs": []
           }
@@ -716,44 +3086,14 @@
         "title": "Module 4: Abstract data types and modules",
         "topics": [
           {
+            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-abstract-data-types-and-modules-the-algebraic-specification-of-abstract-data-types",
+            "title": "Abstract Data Types and Modules- The Algebraic Specification of Abstract Data Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-abstract-data-type-mechanisms-and-modules",
             "title": "Abstract Data Type Mechanisms and Modules",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-abstract-data-types-and-modules-the-algebraic-specification-of-abstract-data-types",
-            "title": "Abstract Data Types and Modules-  The Algebraic Specification of Abstract Data Types",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-ada-packages",
-            "title": "Ada Packages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-c-namespaces-and-java-packages",
-            "title": "C++ Namespaces, and Java Packages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-modules-in-earlier-languages",
-            "title": "Modules in Earlier Languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-modules-in-ml",
-            "title": "Modules in ML",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-problems-with-abstract-data-type-mechanisms",
-            "title": "Problems with Abstract Data Type Mechanisms",
             "content": "",
             "pyqs": []
           },
@@ -764,8 +3104,539 @@
             "pyqs": []
           },
           {
+            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-c-namespaces-and-java-packages",
+            "title": "C++ Namespaces, and Java Packages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-ada-packages",
+            "title": "Ada Packages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-modules-in-ml",
+            "title": "Modules in ML",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-modules-in-earlier-languages",
+            "title": "Modules in Earlier Languages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-problems-with-abstract-data-type-mechanisms",
+            "title": "Problems with Abstract Data Type Mechanisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-7-pecst758-programming-languages-04-module-4-abstract-data-types-and-modules-the-mathematics-of-abstract-data-types",
             "title": "The Mathematics of Abstract Data Types.",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst748-real-time-systems",
+    "code": "PECST748-REAL-TIME-SYSTEMS",
+    "name": "PECST748 REAL TIME SYSTEMS",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst748-real-time-systems-01-module-1-real-time-scheduling-analysis",
+        "title": "Module 1: Real-Time Scheduling Analysis",
+        "topics": [
+          {
+            "id": "cs-7-pecst748-real-time-systems-01-module-1-real-time-scheduling-analysis-hard-vs-soft-real-time-system-classification-metrics-boundaries-specifications-definitions",
+            "title": "Hard vs soft real-time system classification metrics boundaries specifications definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst748-real-time-systems-01-module-1-real-time-scheduling-analysis-rate-monotonic-rm-scheduling-analysis-priority-assignment-equations-calculation-formulas-loops",
+            "title": "Rate Monotonic (RM) scheduling analysis priority assignment equations calculation formulas loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst748-real-time-systems-01-module-1-real-time-scheduling-analysis-earliest-deadline-first-edf-dynamic-scheduling-validation-metrics-utilization-parameters-profiles",
+            "title": "Earliest Deadline First (EDF) dynamic scheduling validation metrics utilization parameters profiles",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst748-real-time-systems-02-module-2-resource-access-protocols",
+        "title": "Module 2: Resource Access Protocols",
+        "topics": [
+          {
+            "id": "cs-7-pecst748-real-time-systems-02-module-2-resource-access-protocols-priority-inversion-hazard-profiling-block-conditions-parameters-structures-scenarios-layout",
+            "title": "Priority inversion hazard profiling block conditions parameters structures scenarios layout",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst748-real-time-systems-02-module-2-resource-access-protocols-priority-ceiling-protocol-pcp-state-machine-resource-locking-validation-routing-loops-metrics",
+            "title": "Priority Ceiling Protocol (PCP) state machine resource locking validation routing loops metrics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst748-real-time-systems-03-module-3-real-time-communication-infrastructure-networks",
+        "title": "Module 3: Real-Time Communication Infrastructure Networks",
+        "topics": [
+          {
+            "id": "cs-7-pecst748-real-time-systems-03-module-3-real-time-communication-infrastructure-networks-timed-token-mac-protocol-configuration-schedules-layouts-patterns-specifications-engineering-metrics",
+            "title": "Timed Token MAC protocol configuration schedules layouts patterns specifications engineering metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst748-real-time-systems-03-module-3-real-time-communication-infrastructure-networks-real-time-transport-protocol-rtp-packet-synchronization-tracking-parameters-configurations-variables",
+            "title": "Real-time transport protocol (RTP) packet synchronization tracking parameters configurations variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst748-real-time-systems-03-module-3-real-time-communication-infrastructure-networks-network-delay-jitter-estimation-procedures-calculations-variables-updates-options-parameters-loops",
+            "title": "Network delay jitter estimation procedures calculations variables updates options parameters loops",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst748-real-time-systems-04-module-4-fault-tolerant-real-time-architectures-platforms",
+        "title": "Module 4: Fault Tolerant Real Time Architectures Platforms",
+        "topics": [
+          {
+            "id": "cs-7-pecst748-real-time-systems-04-module-4-fault-tolerant-real-time-architectures-platforms-task-replication-redundancy-frameworks-validation-checks-metrics-configurations-datasets-schemas",
+            "title": "Task replication redundancy frameworks validation checks metrics configurations datasets schemas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst748-real-time-systems-04-module-4-fault-tolerant-real-time-architectures-platforms-checkpoint-recovery-scheduling-optimization-parameters-metrics-performance-profiles-validation-checking-systems",
+            "title": "Checkpoint recovery scheduling optimization parameters metrics performance profiles validation checking systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst748-real-time-systems-04-module-4-fault-tolerant-real-time-architectures-platforms-rtos-benchmarking-test-suites-tracking-metrics-execution-variables-specifications-monitoring-workflows",
+            "title": "RTOS benchmarking test suites tracking metrics execution variables specifications monitoring workflows",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst752-responsible-artificial-intelligence",
+    "code": "PECST752-RESPONSIBLE-ARTIFICIAL-INTELLIGENCE",
+    "name": "PECST752 RESPONSIBLE ARTIFICIAL INTELLIGENCE",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst752-responsible-artificial-intelligence-01-module-1-algorithmic-fairness-bias-mitigation",
+        "title": "Module 1: Algorithmic Fairness & Bias Mitigation",
+        "topics": [
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-01-module-1-algorithmic-fairness-bias-mitigation-algorithmic-bias-classification-metrics-detection-formulas-profiles-metrics-definition",
+            "title": "Algorithmic bias classification metrics detection formulas profiles metrics definition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-01-module-1-algorithmic-fairness-bias-mitigation-demographic-parity-verification-parameters-equality-of-opportunity-metric-calculation-equations",
+            "title": "Demographic parity verification parameters equality of opportunity metric calculation equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-01-module-1-algorithmic-fairness-bias-mitigation-pre-processing-in-processing-optimization-adjustments-scripts-loops-fairness-constraints-setups",
+            "title": "Pre-processing in-processing optimization adjustments scripts loops fairness constraints setups",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst752-responsible-artificial-intelligence-02-module-2-explainable-ai-frameworks",
+        "title": "Module 2: Explainable AI Frameworks",
+        "topics": [
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-02-module-2-explainable-ai-frameworks-local-interpretable-model-agnostic-explanations-lime-linear-surrogate-models-configurations",
+            "title": "Local Interpretable Model-agnostic Explanations (LIME) linear surrogate models configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-02-module-2-explainable-ai-frameworks-shap-shapley-additive-explanations-game-theoretic-feature-attribution-value-estimations-metrics",
+            "title": "SHAP (Shapley Additive exPlanations) game theoretic feature attribution value estimations metrics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst752-responsible-artificial-intelligence-03-module-3-privacy-preserving-machine-learning-models",
+        "title": "Module 3: Privacy Preserving Machine Learning Models",
+        "topics": [
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-03-module-3-privacy-preserving-machine-learning-models-differential-privacy-parameter-adding-noise-calculus-parameters-bounds-optimization-templates-patterns",
+            "title": "Differential privacy parameter adding noise calculus parameters bounds optimization templates patterns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-03-module-3-privacy-preserving-machine-learning-models-federated-learning-model-sharing-aggregation-frameworks-verification-routes-loops-parameters-metrics",
+            "title": "Federated learning model sharing aggregation frameworks verification routes loops parameters metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-03-module-3-privacy-preserving-machine-learning-models-secure-multi-party-model-verification-tracks-platforms-configurations-setups-parameters-definitions",
+            "title": "Secure multi party model verification tracks platforms configurations setups parameters definitions",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst752-responsible-artificial-intelligence-04-module-4-ai-safety-regulatory-compliance-platforms",
+        "title": "Module 4: AI Safety Regulatory Compliance Platforms",
+        "topics": [
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-04-module-4-ai-safety-regulatory-compliance-platforms-adversarial-attack-protection-model-resilience-evaluation-parameters-tracking-frameworks-constraints",
+            "title": "Adversarial attack protection model resilience evaluation parameters tracking frameworks constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-04-module-4-ai-safety-regulatory-compliance-platforms-model-lineage-audits-configuration-tracking-parameters-rules-templates-updates-scripts-profiles-checking",
+            "title": "Model lineage audits configuration tracking parameters rules templates updates scripts profiles checking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst752-responsible-artificial-intelligence-04-module-4-ai-safety-regulatory-compliance-platforms-responsible-deployment-governance-architectures-verification-frameworks-parameters-profiles-validation-checking",
+            "title": "Responsible deployment governance architectures verification frameworks parameters profiles validation checking",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-oecst723-software-engineering",
+    "code": "OECST723-SOFTWARE-ENGINEERING",
+    "name": "OECST723 SOFTWARE ENGINEERING",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-oecst723-software-engineering-01-module-1-software-process-models",
+        "title": "Module 1: Software Process Models",
+        "topics": [
+          {
+            "id": "cs-7-oecst723-software-engineering-01-module-1-software-process-models-software-engineering-paradigm-life-cycle-models-waterfall-incremental-evolutionary-models",
+            "title": "Software engineering paradigm, life cycle models: Waterfall, Incremental, Evolutionary models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-01-module-1-software-process-models-agile-software-development-scrum-frameworks-sprint-execution-pipelines",
+            "title": "Agile software development: Scrum frameworks, sprint execution pipelines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-01-module-1-software-process-models-requirements-engineering-requirements-elicitation-analysis-documentation-srs-framework",
+            "title": "Requirements engineering: Requirements elicitation, analysis, documentation (SRS framework)",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst723-software-engineering-02-module-2-design-quality-engineering",
+        "title": "Module 2: Design & Quality Engineering",
+        "topics": [
+          {
+            "id": "cs-7-oecst723-software-engineering-02-module-2-design-quality-engineering-design-concepts-abstraction-modularity-cohesion-and-coupling-metrics",
+            "title": "Design concepts: Abstraction, modularity, cohesion, and coupling metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-02-module-2-design-quality-engineering-object-oriented-design-abstractions-using-uml-class-and-sequence-diagrams",
+            "title": "Object-oriented design abstractions using UML class and sequence diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-02-module-2-design-quality-engineering-software-metrics-function-point-fp-analysis-cocomo-estimation-framework-models",
+            "title": "Software metrics: Function Point (FP) analysis, COCOMO estimation framework models",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst723-software-engineering-03-module-3-software-implementation-construction",
+        "title": "Module 3: Software Implementation & Construction",
+        "topics": [
+          {
+            "id": "cs-7-oecst723-software-engineering-03-module-3-software-implementation-construction-coding-styles-guidelines-and-structural-reviews-templates",
+            "title": "Coding styles, guidelines, and structural reviews templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-03-module-3-software-implementation-construction-refactoring-methods-identifying-design-code-smells",
+            "title": "Refactoring methods, identifying design code smells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-03-module-3-software-implementation-construction-model-driven-engineering-principles-code-auto-generation-paths-pipelines",
+            "title": "Model-driven engineering principles, code auto-generation paths pipelines",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-oecst723-software-engineering-04-module-4-software-quality-assurance-maintenance",
+        "title": "Module 4: Software Quality Assurance & Maintenance",
+        "topics": [
+          {
+            "id": "cs-7-oecst723-software-engineering-04-module-4-software-quality-assurance-maintenance-software-inspection-routines-auditing-verification-and-validation-tasks",
+            "title": "Software inspection routines, auditing, verification and validation tasks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-04-module-4-software-quality-assurance-maintenance-capability-maturity-model-integration-cmmi-certification-levels-overview",
+            "title": "Capability Maturity Model Integration (CMMI) certification levels overview",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-04-module-4-software-quality-assurance-maintenance-software-configuration-management-version-control-workflows-dependency-parsing-logic",
+            "title": "Software configuration management, version control workflows, dependency parsing logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-oecst723-software-engineering-04-module-4-software-quality-assurance-maintenance-maintenance-models-re-engineering-methods-legacy-software-encapsulation-patterns",
+            "title": "Maintenance models, re-engineering methods, legacy software encapsulation patterns",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst795-topics-in-theoretical-computer-science",
+    "code": "PECST795-TOPICS-IN-THEORETICAL-COMPUTER-SCIENCE",
+    "name": "PECST795 TOPICS IN THEORETICAL COMPUTER SCIENCE",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst795-topics-in-theoretical-computer-science-01-module-1-advanced-complexity-boundary-systems",
+        "title": "Module 1: Advanced Complexity Boundary Systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-01-module-1-advanced-complexity-boundary-systems-probabilistic-checkable-proofs-pcp-theorem-formulation-axioms-patterns-engineering-metrics",
+            "title": "Probabilistic Checkable Proofs (PCP) theorem formulation axioms patterns engineering metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-01-module-1-advanced-complexity-boundary-systems-interactive-proof-system-configurations-verification-model-communication-channels-layouts-parameters",
+            "title": "Interactive proof system configurations verification model communication channels layouts parameters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst795-topics-in-theoretical-computer-science-02-module-2-quantum-circuit-complexity-models",
+        "title": "Module 2: Quantum Circuit Complexity Models",
+        "topics": [
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-02-module-2-quantum-circuit-complexity-models-quantum-circuit-size-calculations-depth-complexity-boundaries-verification-parameters-tracking",
+            "title": "Quantum circuit size calculations depth complexity boundaries verification parameters tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-02-module-2-quantum-circuit-complexity-models-circuit-lower-bound-evaluation-proofs-matrix-processing-rules-validation-paths-scales-tracks",
+            "title": "Circuit lower bound evaluation proofs matrix processing rules validation paths scales tracks",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst795-topics-in-theoretical-computer-science-03-module-3-communication-complexity-frameworks-models",
+        "title": "Module 3: Communication Complexity Frameworks Models",
+        "topics": [
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-03-module-3-communication-complexity-frameworks-models-two-party-query-communication-model-definitions-strategy-validation-scripts-protocols-parameters-systems",
+            "title": "Two party query communication model definitions strategy validation scripts protocols parameters systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-03-module-3-communication-complexity-frameworks-models-shared-randomness-advantage-configurations-variables-parameters-updates-options-rules-configurations",
+            "title": "Shared randomness advantage configurations variables parameters updates options rules configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-03-module-3-communication-complexity-frameworks-models-lower-bound-derivation-methodologies-matrices-configurations-profiles-calculations-validation-optimization-layouts",
+            "title": "Lower bound derivation methodologies matrices configurations profiles calculations validation optimization layouts",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst795-topics-in-theoretical-computer-science-04-module-4-hardness-amplification-cryptographic-primitives-systems",
+        "title": "Module 4: Hardness Amplification Cryptographic Primitives Systems",
+        "topics": [
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-04-module-4-hardness-amplification-cryptographic-primitives-systems-one-way-function-encryption-frameworks-parameters-design-rules-validation-metrics-performance-profiles",
+            "title": "One-way function encryption frameworks parameters design rules validation metrics performance profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-04-module-4-hardness-amplification-cryptographic-primitives-systems-yao-s-garbled-circuit-optimization-architectures-tracks-parameters-setups-metrics-performance-checking",
+            "title": "Yao's garbled circuit optimization architectures tracks parameters setups metrics performance checking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst795-topics-in-theoretical-computer-science-04-module-4-hardness-amplification-cryptographic-primitives-systems-theoretical-computation-benchmarks-systems-metrics-verification-profiles-validation-monitoring-criteria-metrics",
+            "title": "Theoretical computation benchmarks systems metrics verification profiles validation monitoring criteria metrics",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cs-7-pecst742-web-programming",
+    "code": "PECST742-WEB-PROGRAMMING",
+    "name": "PECST742 WEB PROGRAMMING",
+    "branchId": "cs",
+    "semester": 7,
+    "modules": [
+      {
+        "id": "cs-7-pecst742-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts",
+        "title": "Module 1: Asynchronous Full-Stack Deployments Scripts",
+        "topics": [
+          {
+            "id": "cs-7-pecst742-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts-asynchronous-engine-design-software-architecture-templates-scripts-processing-patterns-routing",
+            "title": "Asynchronous engine design software architecture templates scripts processing patterns routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst742-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts-restful-resource-api-management-structures-configurations-tables-setups-parameters-verification",
+            "title": "RESTful resource API management structures configurations tables setups parameters verification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst742-web-programming-01-module-1-asynchronous-full-stack-deployments-scripts-single-page-application-spa-state-hydration-frameworks-configurations-blueprints-layout-templates",
+            "title": "Single Page Application (SPA) state hydration frameworks configurations blueprints layout templates",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst742-web-programming-02-module-2-web-security-enforcement-frameworks",
+        "title": "Module 2: Web Security Enforcement Frameworks",
+        "topics": [
+          {
+            "id": "cs-7-pecst742-web-programming-02-module-2-web-security-enforcement-frameworks-cross-origin-resource-sharing-cors-security-configuration-parameter-rules-setups-scripts",
+            "title": "Cross-Origin Resource Sharing (CORS) security configuration parameter rules setups scripts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst742-web-programming-02-module-2-web-security-enforcement-frameworks-json-web-token-jwt-stateless-authorization-payload-signature-tracking-setups-verification-parameters",
+            "title": "JSON Web Token (JWT) stateless authorization payload signature tracking setups verification parameters",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst742-web-programming-03-module-3-real-time-websocket-ingest-topologies-core",
+        "title": "Module 3: Real-Time WebSocket Ingest Topologies Core",
+        "topics": [
+          {
+            "id": "cs-7-pecst742-web-programming-03-module-3-real-time-websocket-ingest-topologies-core-full-duplex-websocket-connection-broker-configurations-loops-tracking-setups-models-specifications-options",
+            "title": "Full-duplex WebSocket connection broker configurations loops tracking setups models specifications options",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst742-web-programming-03-module-3-real-time-websocket-ingest-topologies-core-event-transport-subscription-layers-synchronization-configurations-routing-loops-parameters-configurations-variables",
+            "title": "Event transport subscription layers synchronization configurations routing loops parameters configurations variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst742-web-programming-03-module-3-real-time-websocket-ingest-topologies-core-push-telemetry-distribution-patterns-tracking-optimization-loops-pipelines-tracking-parameters-profiles-maps",
+            "title": "Push telemetry distribution patterns tracking optimization loops pipelines tracking parameters profiles maps",
+            "content": "",
+            "pyqs": []
+          }
+        ]
+      },
+      {
+        "id": "cs-7-pecst742-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms",
+        "title": "Module 4: Web Deployment Orchestration Metrics Platforms",
+        "topics": [
+          {
+            "id": "cs-7-pecst742-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms-server-side-rendering-ssr-caching-strategies-tools-metrics-calculations-metrics-performance-profiles-layout",
+            "title": "Server side rendering (SSR) caching strategies tools metrics calculations metrics performance profiles layout",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst742-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms-content-delivery-network-cdn-edge-cache-replication-tracking-architectures-setups-metrics-performance-checking",
+            "title": "Content Delivery Network (CDN) edge cache replication tracking architectures setups metrics performance checking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst742-web-programming-04-module-4-web-deployment-orchestration-metrics-platforms-app-performance-tracking-check-suites-validation-metrics-packaging-tracks-validation-metrics-profiles-evaluation",
+            "title": "App performance tracking check suites validation metrics packaging tracks validation metrics profiles evaluation",
             "content": "",
             "pyqs": []
           }
