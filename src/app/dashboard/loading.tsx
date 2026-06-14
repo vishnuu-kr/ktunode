@@ -30,7 +30,7 @@ export default function DashboardLoading() {
           <div className="h-12 w-full bg-slate-200/50 dark:bg-white/[0.03] rounded-2xl animate-pulse" />
 
           {/* Resume session banner */}
-          <div className="h-32 w-full bg-slate-200/50 dark:bg-white/[0.03] rounded-3xl animate-pulse" />
+          <div className="min-h-[150px] md:h-32 w-full bg-slate-200/50 dark:bg-white/[0.03] rounded-3xl animate-pulse" />
 
           {/* Courses section title */}
           <div className="flex items-center justify-between">
@@ -41,7 +41,7 @@ export default function DashboardLoading() {
           {/* Courses grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {[...Array(4)].map((_, i) => (
-              <div key={i} className="h-36 bg-slate-200/50 dark:bg-white/[0.03] rounded-3xl border border-slate-200/20 dark:border-white/[0.02] p-6 flex flex-col justify-between animate-pulse">
+              <div key={i} className="h-full min-h-[156px] bg-slate-200/50 dark:bg-white/[0.03] rounded-3xl border border-slate-200/20 dark:border-white/[0.02] p-6 flex flex-col justify-between animate-pulse">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
                     <div className="h-3.5 w-16 bg-slate-200/70 dark:bg-white/5 rounded-md" />

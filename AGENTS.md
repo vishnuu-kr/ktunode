@@ -7,7 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **nil-project** (271243 symbols, 272806 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **nil-project** (271254 symbols, 272791 relationships, 298 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -47,3 +47,21 @@ This project is indexed by GitNexus as **nil-project** (271243 symbols, 272806 r
 | Index, status, clean, wiki CLI commands | `.claude/skills/gitnexus/gitnexus-cli/SKILL.md` |
 
 <!-- gitnexus:end -->
+
+<!-- BEGIN:i-have-adhd-rules -->
+# ADHD-Friendly Output Rules (Mandatory)
+
+Shape all responses in this workspace according to the following rules:
+
+1. **Lead with the next action:** The first line must be something the reader can do immediately (command, path, snippet). No preamble or setup text.
+2. **Number multi-step tasks:** Write a numbered list of bounded actions.
+3. **End with one concrete next action:** Conclude with a single task the user can do in under 2 minutes.
+4. **Suppress tangents:** Finish the first issue before presenting other unrelated issues.
+5. **Restate state every turn:** Start the response by explicitly stating the current state of progress (e.g., "State: Step 3 of 5 done...").
+6. **Specific time estimates:** Estimate tasks in minutes or hours; do not use vague terms.
+7. **Make completed work visible:** Show what works in concrete terms without burying progress.
+8. **Matter-of-fact tone for errors:** State the cause and fix directly and neutrally.
+9. **Cap lists at 5 items:** Split list items if they exceed 5.
+10. **No preamble, no recap, no closing pleasantries:** Completely eliminate opening/closing pleasantries (e.g., "Sure!", "Hope this helps").
+<!-- END:i-have-adhd-rules -->
+

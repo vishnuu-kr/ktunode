@@ -1877,7 +1877,7 @@ function DashboardContent() {
                 <FirstTimeChecklist isDashboardView={view === "dashboard"} />
 
                 {hasActivity && resumeTarget && (
-                  <div className={`relative rounded-2xl md:rounded-3xl overflow-hidden bg-white/65 dark:bg-slate-900/65 border transition-all duration-300 backdrop-blur-md p-5 md:p-8 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] group hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] ${resumeTheme.border}`}>
+                  <div className={`relative rounded-2xl md:rounded-3xl overflow-hidden bg-white/65 dark:bg-slate-900/65 border transition-all duration-300 backdrop-blur-md p-5 md:px-8 md:py-0 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.35)] group hover:border-slate-950/[0.12] hover:dark:border-white/[0.12] ${resumeTheme.border} w-full min-h-[150px] md:h-32 flex flex-col justify-center`}>
                     <div className="absolute inset-0 opacity-[0.01] bg-slate-950 pointer-events-none" />
                     
                     {/* Corner gradient glow matching subject theme */}
@@ -1889,13 +1889,13 @@ function DashboardContent() {
                     </div>
 
                     <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-5 md:gap-6">
-                      <div className="space-y-1">
+                      <div className="space-y-1 min-w-0 flex-1">
                         <div className="flex items-center gap-2">
                           <Sparkles className="w-3.5 h-3.5 text-slate-800 dark:text-slate-100 fill-current" />
                           <span className="text-slate-400 dark:text-slate-500 text-[10px] font-black uppercase tracking-widest">UP NEXT IN {resumeTarget.subject.code}</span>
                         </div>
-                        <h3 className="text-lg md:text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight leading-tight">{resumeTarget.topic.title}</h3>
-                        <p className="text-[10px] md:text-xs font-semibold text-slate-400 dark:text-slate-500">{resumeTarget.module.title} • Resume learning session</p>
+                        <h3 className="text-lg md:text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tight leading-tight line-clamp-1" title={resumeTarget.topic.title}>{resumeTarget.topic.title}</h3>
+                        <p className="text-[10px] md:text-xs font-semibold text-slate-400 dark:text-slate-500 line-clamp-1" title={resumeTarget.module.title}>{resumeTarget.module.title} • Resume learning session</p>
                       </div>
                       <MagneticButton
                         onClick={() => goTopic(resumeTarget.topic, resumeTarget.subject)}
@@ -1950,7 +1950,7 @@ function DashboardContent() {
                           <div
                             key={item}
                             id={index === 0 ? "tour-subject-card" : undefined}
-                            className="h-36 rounded-3xl bg-white/60 dark:bg-slate-900/60 border border-slate-950/[0.06] dark:border-white/[0.06] p-6 flex flex-col justify-between shadow-sm backdrop-blur-md animate-pulse"
+                            className="h-full min-h-[156px] rounded-3xl bg-white/60 dark:bg-slate-900/60 border border-slate-950/[0.06] dark:border-white/[0.06] p-6 flex flex-col justify-between shadow-sm backdrop-blur-md animate-pulse"
                           >
                             <div className="flex items-start justify-between gap-4 w-full">
                               <div className="space-y-2 flex-1">
@@ -1987,7 +1987,7 @@ function DashboardContent() {
                               return (
                                 <motion.div
                                   key={subject.id}
-                                  className="relative"
+                                  className="relative h-full"
                                   initial={{ opacity: 0, y: 10 }}
                                   animate={{ opacity: 1, y: 0 }}
                                   transition={{ delay: index * 0.04, duration: 0.3 }}
@@ -2004,7 +2004,7 @@ function DashboardContent() {
                                     }}
                                     onClick={() => !isEditMode && goSubject(subject)}
                                     onKeyDown={(e) => { if (!isEditMode && (e.key === "Enter" || e.key === " ")) goSubject(subject); }}
-                                    className={`group relative flex flex-col justify-between p-6 rounded-3xl text-left transition-all duration-300 backdrop-blur-md overflow-hidden w-full ${
+                                    className={`group relative flex flex-col justify-between p-6 rounded-3xl text-left transition-all duration-300 backdrop-blur-md overflow-hidden w-full h-full min-h-[156px] ${
                                       isEditMode
                                         ? `${scheme.bg} border-2 border-rose-300/60 dark:border-rose-500/40 cursor-default shadow-[0_0_0_4px_rgba(251,113,133,0.08)]`
                                         : `${scheme.bg} border cursor-pointer`
@@ -2100,7 +2100,7 @@ function DashboardContent() {
                                 whileHover={{ y: -4, scale: 1.01 }}
                                 whileTap={{ scale: 0.98 }}
                                 onClick={() => { setAddSubjectOpen(true); setAddSubjectSearch(""); }}
-                                className="group relative flex flex-col items-center justify-center gap-3 p-6 border-2 border-dashed border-violet-300/60 dark:border-violet-500/30 rounded-3xl text-center transition-all duration-300 cursor-pointer backdrop-blur-md bg-violet-50/40 dark:bg-violet-900/10 hover:border-violet-400 hover:bg-violet-50/70 dark:hover:bg-violet-900/20 min-h-[140px]"
+                                className="group relative flex flex-col items-center justify-center gap-3 p-6 border-2 border-dashed border-violet-300/60 dark:border-violet-500/30 rounded-3xl text-center transition-all duration-300 cursor-pointer backdrop-blur-md bg-violet-50/40 dark:bg-violet-900/10 hover:border-violet-400 hover:bg-violet-50/70 dark:hover:bg-violet-900/20 h-full min-h-[156px]"
                                 aria-label="Add course to dashboard"
                               >
                                 <div className="w-12 h-12 rounded-2xl bg-violet-100 dark:bg-violet-900/40 border border-violet-200/60 dark:border-violet-500/30 flex items-center justify-center text-violet-600 group-hover:scale-110 transition-transform">

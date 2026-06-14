@@ -3027,50 +3027,7 @@
             "id": "68bd213f9ece2bdd875f98fe",
             "title": "Parameter passing",
             "content": "",
-            "pyqs": [
-              {
-                "id": "68bd213f9ece2bdd875f98fe-q-1",
-                "year": "2024",
-                "question": "Explain the difference between parameters and arguments in C functions.",
-                "marks": 3
-              },
-              {
-                "id": "68bd213f9ece2bdd875f98fe-q-2",
-                "year": "2024",
-                "question": "What is the primary advantage of pass by value?",
-                "marks": 3
-              },
-              {
-                "id": "68bd213f9ece2bdd875f98fe-q-3",
-                "year": "2024",
-                "question": "How can you achieve \"pass by reference\" functionality in C?",
-                "marks": 3
-              },
-              {
-                "id": "68bd213f9ece2bdd875f98fe-q-4",
-                "year": "2024",
-                "question": "When you pass an array to a function in C, what is actually passed?",
-                "marks": 3
-              },
-              {
-                "id": "68bd213f9ece2bdd875f98fe-q-5",
-                "year": "2024",
-                "question": "Consider the following C code. What will be the output, and why?",
-                "marks": 3
-              },
-              {
-                "id": "68bd213f9ece2bdd875f98fe-q-6",
-                "year": "2024",
-                "question": "Modify the `swap_val` function from the previous question to correctly swap the values of `x` and `y` in `main`. Show the modified function and explain the change.",
-                "marks": 3
-              },
-              {
-                "id": "68bd213f9ece2bdd875f98fe-q-7",
-                "year": "2024",
-                "question": "Write a C function that takes an array of integers and its size as input and returns the sum of all its elements. Explain the parameter passing mechanism used for the array.",
-                "marks": 3
-              }
-            ]
+            "pyqs": []
           },
           {
             "id": "68bd213f9ece2bdd875f98ff",
