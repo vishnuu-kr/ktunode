@@ -1,0 +1,36 @@
+{
+  "course_name": "DATA STRUCTURES AND ALGORITHMS",
+  "course_code": "PCCST303",
+  "module_number": 2,
+  "module_title": "Linked List and Memory Management",
+  "topics_generated": [
+    {
+      "title": "Linked List: Singly Linked List—Operations, Stacks and Queues using Linked List, Polynomial representation using Linked List",
+      "slug": "linked-list-singly-linked-list-operations-stacks-and-queues-using-linked-list-polynomial-representation-using-linked-list",
+      "path": "linked-list-singly-linked-list-operations-stacks-and-queues-using-linked-list-polynomial-representation-using-linked-list/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Doubly Linked List, Circular Linked List",
+      "slug": "doubly-linked-list-circular-linked-list",
+      "path": "doubly-linked-list-circular-linked-list/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Memory Management: Memory allocation—First-fit, Best-fit, and Worst-fit allocation schemes",
+      "slug": "memory-management-memory-allocation-first-fit-best-fit-and-worst-fit-allocation-schemes",
+      "path": "memory-management-memory-allocation-first-fit-best-fit-and-worst-fit-allocation-schemes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Garbage collection and compaction",
+      "slug": "garbage-collection-and-compaction",
+      "path": "garbage-collection-and-compaction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

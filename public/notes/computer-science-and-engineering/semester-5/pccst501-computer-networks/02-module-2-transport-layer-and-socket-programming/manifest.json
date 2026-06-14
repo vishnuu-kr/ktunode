@@ -1,0 +1,36 @@
+{
+  "course_name": "COMPUTER NETWORKS",
+  "course_code": "PCCST501",
+  "module_number": 2,
+  "module_title": "Transport Layer and Socket Programming",
+  "topics_generated": [
+    {
+      "title": "Transport Services: End-to-end transport protocols, Multiplexing, and Demultiplexing",
+      "slug": "transport-services-end-to-end-transport-protocols-multiplexing-and-demultiplexing",
+      "path": "transport-services-end-to-end-transport-protocols-multiplexing-and-demultiplexing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Connectionless Transport: UDP packet structures and check-summing fields",
+      "slug": "connectionless-transport-udp-packet-structures-and-check-summing-fields",
+      "path": "connectionless-transport-udp-packet-structures-and-check-summing-fields/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Connection-Oriented Transport: TCP segment structure, reliable data transfer mechanisms, flow control, connection management, and congestion control loops",
+      "slug": "connection-oriented-transport-tcp-segment-structure-reliable-data-transfer-mechanisms-flow-control-connection-management-and-congestion-control-loops",
+      "path": "connection-oriented-transport-tcp-segment-structure-reliable-data-transfer-mechanisms-flow-control-connection-management-and-congestion-control-loops/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Socket Architecture: Network Socket introductions, Elementary TCP Sockets, Client/Server implementations, I/O Multiplexing (select/poll), Elementary UDP Sockets",
+      "slug": "socket-architecture-network-socket-introductions-elementary-tcp-sockets-client-server-implementations-i-o-multiplexing-select-poll-elementary-udp-sockets",
+      "path": "socket-architecture-network-socket-introductions-elementary-tcp-sockets-client-server-implementations-i-o-multiplexing-select-poll-elementary-udp-sockets/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

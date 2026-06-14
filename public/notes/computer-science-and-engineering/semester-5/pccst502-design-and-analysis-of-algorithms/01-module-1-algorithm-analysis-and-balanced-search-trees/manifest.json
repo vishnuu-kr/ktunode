@@ -1,0 +1,36 @@
+{
+  "course_name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+  "course_code": "PCCST502",
+  "module_number": 1,
+  "module_title": "Algorithm Analysis and Balanced Search Trees",
+  "topics_generated": [
+    {
+      "title": "Performance Analysis: Space complexity, and Time complexity diagnostics (Best, Worst, Average Cases)",
+      "slug": "performance-analysis-space-complexity-and-time-complexity-diagnostics-best-worst-average-cases",
+      "path": "performance-analysis-space-complexity-and-time-complexity-diagnostics-best-worst-average-cases/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Mathematical Tools: Asymptotic Notations ($O$, $\\Omega$, $\\Theta$) properties, tracking time/space bounds for iterative loops",
+      "slug": "mathematical-tools-asymptotic-notations-o-omega-theta-properties-tracking-time-space-bounds-for-iterative-loops",
+      "path": "mathematical-tools-asymptotic-notations-o-omega-theta-properties-tracking-time-space-bounds-for-iterative-loops/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Recursive Analysis: divide-and-conquer recurrences; Iteration, Recursion Tree, Substitution, and Master's Method",
+      "slug": "recursive-analysis-divide-and-conquer-recurrences-iteration-recursion-tree-substitution-and-master-s-method",
+      "path": "recursive-analysis-divide-and-conquer-recurrences-iteration-recursion-tree-substitution-and-master-s-method/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Advanced Data Structures: Balanced Search Trees—AVL Trees (insertion and deletion tracking, single/double rotations)",
+      "slug": "advanced-data-structures-balanced-search-trees-avl-trees-insertion-and-deletion-tracking-single-double-rotations",
+      "path": "advanced-data-structures-balanced-search-trees-avl-trees-insertion-and-deletion-tracking-single-double-rotations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

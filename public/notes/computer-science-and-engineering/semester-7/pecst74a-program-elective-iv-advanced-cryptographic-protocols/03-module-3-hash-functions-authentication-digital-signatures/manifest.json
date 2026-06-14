@@ -1,0 +1,50 @@
+{
+  "course_name": "PROGRAM ELECTIVE IV: ADVANCED CRYPTOGRAPHIC PROTOCOLS",
+  "course_code": "PECST74A",
+  "module_number": 3,
+  "module_title": "Hash Functions, Authentication & Digital Signatures",
+  "topics_generated": [
+    {
+      "title": "Secure Hash Algorithms (SHA-2 and SHA-3)",
+      "slug": "secure-hash-algorithms-sha-2-and-sha-3",
+      "path": "secure-hash-algorithms-sha-2-and-sha-3/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Message Authentication Codes (MAC)",
+      "slug": "message-authentication-codes-mac",
+      "path": "message-authentication-codes-mac/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hash-based Message Authentication Code (HMAC)",
+      "slug": "hash-based-message-authentication-code-hmac",
+      "path": "hash-based-message-authentication-code-hmac/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Authenticated Encryption with Associated Data (AEAD)",
+      "slug": "authenticated-encryption-with-associated-data-aead",
+      "path": "authenticated-encryption-with-associated-data-aead/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Digital signature schemes",
+      "slug": "digital-signature-schemes",
+      "path": "digital-signature-schemes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Mutual authentication protocols",
+      "slug": "mutual-authentication-protocols",
+      "path": "mutual-authentication-protocols/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPUTATIONAL GEOMETRY",
+  "course_code": "PECST408",
+  "module_number": 3,
+  "module_title": "Delaunay Triangulations & Range Searching",
+  "topics_generated": [
+    {
+      "title": "Delaunay triangulations structural properties duality with Voronoi diagrams",
+      "slug": "delaunay-triangulations-structural-properties-duality-with-voronoi-diagrams",
+      "path": "delaunay-triangulations-structural-properties-duality-with-voronoi-diagrams/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Orthogonal range searching structures: Kd-trees initialization, range trees query tracking loops",
+      "slug": "orthogonal-range-searching-structures-kd-trees-initialization-range-trees-query-tracking-loops",
+      "path": "orthogonal-range-searching-structures-kd-trees-initialization-range-trees-query-tracking-loops/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interval trees segment parsing computational paths algorithms tracking throughput",
+      "slug": "interval-trees-segment-parsing-computational-paths-algorithms-tracking-throughput",
+      "path": "interval-trees-segment-parsing-computational-paths-algorithms-tracking-throughput/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

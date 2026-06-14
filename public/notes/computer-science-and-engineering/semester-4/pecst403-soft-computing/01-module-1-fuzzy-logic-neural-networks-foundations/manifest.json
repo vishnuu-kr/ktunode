@@ -1,0 +1,29 @@
+{
+  "course_name": "SOFT COMPUTING",
+  "course_code": "PECST403",
+  "module_number": 1,
+  "module_title": "Fuzzy Logic & Neural Networks Foundations",
+  "topics_generated": [
+    {
+      "title": "Soft computing paradigms contrast with hard computing rules",
+      "slug": "soft-computing-paradigms-contrast-with-hard-computing-rules",
+      "path": "soft-computing-paradigms-contrast-with-hard-computing-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Fuzzy sets: Membership functions, operations, fuzzy relations, defuzzification methods",
+      "slug": "fuzzy-sets-membership-functions-operations-fuzzy-relations-defuzzification-methods",
+      "path": "fuzzy-sets-membership-functions-operations-fuzzy-relations-defuzzification-methods/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Artificial Neural Networks: McCulloch-Pitts neuron model, Perceptron learning rules, Backpropagation algorithms",
+      "slug": "artificial-neural-networks-mcculloch-pitts-neuron-model-perceptron-learning-rules-backpropagation-algorithms",
+      "path": "artificial-neural-networks-mcculloch-pitts-neuron-model-perceptron-learning-rules-backpropagation-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "course_name": "THEORY OF COMPUTATION",
+  "course_code": "PCCST302",
+  "module_number": 3,
+  "module_title": "Context-Free Grammars and Pushdown Automata",
+  "topics_generated": [
+    {
+      "title": "Context-Free Grammars: Formal definition of a context-free grammar (CFG), Designing context-free grammars",
+      "slug": "context-free-grammars-formal-definition-of-a-context-free-grammar-cfg-designing-context-free-grammars",
+      "path": "context-free-grammars-formal-definition-of-a-context-free-grammar-cfg-designing-context-free-grammars/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Leftmost and Rightmost Derivations Using a Grammar, Parse Trees",
+      "slug": "leftmost-and-rightmost-derivations-using-a-grammar-parse-trees",
+      "path": "leftmost-and-rightmost-derivations-using-a-grammar-parse-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Ambiguous Grammars, Resolving ambiguity, Inherent ambiguity, CFGs and programming languages",
+      "slug": "ambiguous-grammars-resolving-ambiguity-inherent-ambiguity-cfgs-and-programming-languages",
+      "path": "ambiguous-grammars-resolving-ambiguity-inherent-ambiguity-cfgs-and-programming-languages/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pushdown Automata: Formal definition of a pushdown automaton (PDA), DPDA and NPDA, Examples",
+      "slug": "pushdown-automata-formal-definition-of-a-pushdown-automaton-pda-dpda-and-npda-examples",
+      "path": "pushdown-automata-formal-definition-of-a-pushdown-automaton-pda-dpda-and-npda-examples/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Equivalence of NPDAs and CFGs (conversions in both directions)",
+      "slug": "equivalence-of-npdas-and-cfgs-conversions-in-both-directions",
+      "path": "equivalence-of-npdas-and-cfgs-conversions-in-both-directions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simplification of CFGs: Elimination of useless symbols, productions, epsilon-productions, unit productions",
+      "slug": "simplification-of-cfgs-elimination-of-useless-symbols-productions-epsilon-productions-unit-productions",
+      "path": "simplification-of-cfgs-elimination-of-useless-symbols-productions-epsilon-productions-unit-productions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Chomsky Normal Form (CNF), Greibach Normal Form (GNF)",
+      "slug": "chomsky-normal-form-cnf-greibach-normal-form-gnf",
+      "path": "chomsky-normal-form-cnf-greibach-normal-form-gnf/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Properties of CFLs: The Pumping Lemma for CFLs (with formal proof), Closure and Decision Properties (with formal proofs)",
+      "slug": "properties-of-cfls-the-pumping-lemma-for-cfls-with-formal-proof-closure-and-decision-properties-with-formal-proofs",
+      "path": "properties-of-cfls-the-pumping-lemma-for-cfls-with-formal-proof-closure-and-decision-properties-with-formal-proofs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

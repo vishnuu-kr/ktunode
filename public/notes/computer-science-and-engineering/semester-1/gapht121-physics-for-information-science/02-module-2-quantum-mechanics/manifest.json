@@ -1,0 +1,36 @@
+{
+  "course_name": "PHYSICS FOR INFORMATION SCIENCE",
+  "course_code": "GAPHT121",
+  "module_number": 2,
+  "module_title": "Quantum Mechanics",
+  "topics_generated": [
+    {
+      "title": "Heisenberg uncertainty principle",
+      "slug": "heisenberg-uncertainty-principle",
+      "path": "heisenberg-uncertainty-principle/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Schrodinger equations",
+      "slug": "schrodinger-equations",
+      "path": "schrodinger-equations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Particle in a 1D box",
+      "slug": "particle-in-a-1d-box",
+      "path": "particle-in-a-1d-box/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum tunneling",
+      "slug": "quantum-tunneling",
+      "path": "quantum-tunneling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

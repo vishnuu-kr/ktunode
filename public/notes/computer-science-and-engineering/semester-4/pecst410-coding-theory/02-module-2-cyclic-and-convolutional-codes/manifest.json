@@ -1,0 +1,22 @@
+{
+  "course_name": "CODING THEORY",
+  "course_code": "PECST410",
+  "module_number": 2,
+  "module_title": "Cyclic and Convolutional Codes",
+  "topics_generated": [
+    {
+      "title": "Cyclic codes properties: Generator polynomials layouts models",
+      "slug": "cyclic-codes-properties-generator-polynomials-layouts-models",
+      "path": "cyclic-codes-properties-generator-polynomials-layouts-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "BCH and Reed-Solomon algebraic architectures, Convolutional state tracking via Viterbi decoding loops",
+      "slug": "bch-and-reed-solomon-algebraic-architectures-convolutional-state-tracking-via-viterbi-decoding-loops",
+      "path": "bch-and-reed-solomon-algebraic-architectures-convolutional-state-tracking-via-viterbi-decoding-loops/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

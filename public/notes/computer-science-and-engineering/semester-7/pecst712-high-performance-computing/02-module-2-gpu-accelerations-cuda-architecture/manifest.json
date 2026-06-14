@@ -1,0 +1,22 @@
+{
+  "course_name": "HIGH PERFORMANCE COMPUTING",
+  "course_code": "PECST712",
+  "module_number": 2,
+  "module_title": "GPU Accelerations & CUDA Architecture",
+  "topics_generated": [
+    {
+      "title": "GPU microarchitecture hardware layout configurations execution grids blocks metrics threads",
+      "slug": "gpu-microarchitecture-hardware-layout-configurations-execution-grids-blocks-metrics-threads",
+      "path": "gpu-microarchitecture-hardware-layout-configurations-execution-grids-blocks-metrics-threads/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "CUDA programming kernel specifications memory indexing configurations tracking optimization setups",
+      "slug": "cuda-programming-kernel-specifications-memory-indexing-configurations-tracking-optimization-setups",
+      "path": "cuda-programming-kernel-specifications-memory-indexing-configurations-tracking-optimization-setups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

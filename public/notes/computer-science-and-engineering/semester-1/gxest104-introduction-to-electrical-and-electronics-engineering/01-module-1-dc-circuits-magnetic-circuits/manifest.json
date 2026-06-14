@@ -1,0 +1,71 @@
+{
+  "course_name": "INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING",
+  "course_code": "GXEST104",
+  "module_number": 1,
+  "module_title": "DC Circuits & Magnetic Circuits",
+  "topics_generated": [
+    {
+      "title": "Current and Voltage Division Rule - Relative potential",
+      "slug": "current-and-voltage-division-rule-relative-potential",
+      "path": "current-and-voltage-division-rule-relative-potential/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Capacitors & Inductors: V-I relations and Energy stored",
+      "slug": "capacitors-inductors-v-i-relations-and-energy-stored",
+      "path": "capacitors-inductors-v-i-relations-and-energy-stored/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Ohms Law and Kirchhoff's laws - numerical problems",
+      "slug": "ohms-law-and-kirchhoff-s-laws-numerical-problems",
+      "path": "ohms-law-and-kirchhoff-s-laws-numerical-problems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Star-delta conversion (resistive networks only - derivation not required) - numerical problems",
+      "slug": "star-delta-conversion-resistive-networks-only-derivation-not-required-numerical-problems",
+      "path": "star-delta-conversion-resistive-networks-only-derivation-not-required-numerical-problems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Mesh current method - matrix representation - Solution of network equations",
+      "slug": "mesh-current-method-matrix-representation-solution-of-network-equations",
+      "path": "mesh-current-method-matrix-representation-solution-of-network-equations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Node voltage methods-matrix representation-solution of network equations by matrix methods - numerical problems",
+      "slug": "node-voltage-methods-matrix-representation-solution-of-network-equations-by-matrix-methods-numerical-problems",
+      "path": "node-voltage-methods-matrix-representation-solution-of-network-equations-by-matrix-methods-numerical-problems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Magnetic Circuits Basic Terminology: MMF, field strength, flux density, reluctance",
+      "slug": "magnetic-circuits-basic-terminology-mmf-field-strength-flux-density-reluctance",
+      "path": "magnetic-circuits-basic-terminology-mmf-field-strength-flux-density-reluctance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Comparison between electric and magnetic circuits",
+      "slug": "comparison-between-electric-and-magnetic-circuits",
+      "path": "comparison-between-electric-and-magnetic-circuits/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Series and parallel magnetic circuits with composite materials (numerical problems not needed)",
+      "slug": "series-and-parallel-magnetic-circuits-with-composite-materials-numerical-problems-not-needed",
+      "path": "series-and-parallel-magnetic-circuits-with-composite-materials-numerical-problems-not-needed/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

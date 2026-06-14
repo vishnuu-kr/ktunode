@@ -1,0 +1,29 @@
+{
+  "course_name": "OPERATING SYSTEMS LAB",
+  "course_code": "PCCSL406",
+  "module_number": 1,
+  "module_title": "Systems Verification Mechanics",
+  "topics_generated": [
+    {
+      "title": "Bash script command strings validation, parameter pipeline setups",
+      "slug": "bash-script-command-strings-validation-parameter-pipeline-setups",
+      "path": "bash-script-command-strings-validation-parameter-pipeline-setups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Process fork mapping, execution tree tracking under changing scheduler rules",
+      "slug": "process-fork-mapping-execution-tree-tracking-under-changing-scheduler-rules",
+      "path": "process-fork-mapping-execution-tree-tracking-under-changing-scheduler-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Memory segment paging tracking, deadlock handling algorithm code runs validation",
+      "slug": "memory-segment-paging-tracking-deadlock-handling-algorithm-code-runs-validation",
+      "path": "memory-segment-paging-tracking-deadlock-handling-algorithm-code-runs-validation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

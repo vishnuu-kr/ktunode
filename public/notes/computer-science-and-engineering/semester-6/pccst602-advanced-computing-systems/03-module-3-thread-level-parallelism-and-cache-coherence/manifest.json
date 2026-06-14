@@ -1,0 +1,36 @@
+{
+  "course_name": "ADVANCED COMPUTING SYSTEMS",
+  "course_code": "PCCST602",
+  "module_number": 3,
+  "module_title": "Thread-Level Parallelism and Cache Coherence",
+  "topics_generated": [
+    {
+      "title": "Multiprocessor Taxonomy: Centralized Shared-Memory architectures and Distributed Shared-Memory setups",
+      "slug": "multiprocessor-taxonomy-centralized-shared-memory-architectures-and-distributed-shared-memory-setups",
+      "path": "multiprocessor-taxonomy-centralized-shared-memory-architectures-and-distributed-shared-memory-setups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cache Coherence Problem: Core reasons for data inconsistency across independent caching nodes",
+      "slug": "cache-coherence-problem-core-reasons-for-data-inconsistency-across-independent-caching-nodes",
+      "path": "cache-coherence-problem-core-reasons-for-data-inconsistency-across-independent-caching-nodes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Coherence Protocols: Snooping-based Protocols (MSI and MESI state machines), and Directory-based cache coherence frameworks",
+      "slug": "coherence-protocols-snooping-based-protocols-msi-and-mesi-state-machines-and-directory-based-cache-coherence-frameworks",
+      "path": "coherence-protocols-snooping-based-protocols-msi-and-mesi-state-machines-and-directory-based-cache-coherence-frameworks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Synchronization & Consistency: Hardware primitives for atomic memory operations, Memory Consistency models",
+      "slug": "synchronization-consistency-hardware-primitives-for-atomic-memory-operations-memory-consistency-models",
+      "path": "synchronization-consistency-hardware-primitives-for-atomic-memory-operations-memory-consistency-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

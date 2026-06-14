@@ -1,0 +1,36 @@
+{
+  "course_name": "MACHINE LEARNING",
+  "course_code": "PCCST503",
+  "module_number": 2,
+  "module_title": "Probabilistic Classification and Logistic Modeling",
+  "topics_generated": [
+    {
+      "title": "Probabilistic Classifiers: Bayes' Theorem, conditional feature independence assumption constraints",
+      "slug": "probabilistic-classifiers-bayes-theorem-conditional-feature-independence-assumption-constraints",
+      "path": "probabilistic-classifiers-bayes-theorem-conditional-feature-independence-assumption-constraints/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Naive Bayes Classifiers: Algorithmic structures, text tokenization, extraction using Bag-of-Words/Count vectorizations",
+      "slug": "naive-bayes-classifiers-algorithmic-structures-text-tokenization-extraction-using-bag-of-words-count-vectorizations",
+      "path": "naive-bayes-classifiers-algorithmic-structures-text-tokenization-extraction-using-bag-of-words-count-vectorizations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Laplace Smoothing (+1 correction) in sparse arrays, Gaussian vs Multinomial vs Bernoulli Naive Bayes variants",
+      "slug": "laplace-smoothing-1-correction-in-sparse-arrays-gaussian-vs-multinomial-vs-bernoulli-naive-bayes-variants",
+      "path": "laplace-smoothing-1-correction-in-sparse-arrays-gaussian-vs-multinomial-vs-bernoulli-naive-bayes-variants/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Logistic Regression: boundary classifications failures; Sigmoid activation function mapping, log-odds ratios derivation, MLE",
+      "slug": "logistic-regression-boundary-classifications-failures-sigmoid-activation-function-mapping-log-odds-ratios-derivation-mle",
+      "path": "logistic-regression-boundary-classifications-failures-sigmoid-activation-function-mapping-log-odds-ratios-derivation-mle/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

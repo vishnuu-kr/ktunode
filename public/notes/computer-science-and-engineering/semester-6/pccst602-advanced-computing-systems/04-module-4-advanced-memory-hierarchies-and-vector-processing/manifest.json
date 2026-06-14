@@ -1,0 +1,29 @@
+{
+  "course_name": "ADVANCED COMPUTING SYSTEMS",
+  "course_code": "PCCST602",
+  "module_number": 4,
+  "module_title": "Advanced Memory Hierarchies and Vector Processing",
+  "topics_generated": [
+    {
+      "title": "Memory Optimization: Advanced cache performance optimizations (Reducing hit time, miss rate, and miss penalty)",
+      "slug": "memory-optimization-advanced-cache-performance-optimizations-reducing-hit-time-miss-rate-and-miss-penalty",
+      "path": "memory-optimization-advanced-cache-performance-optimizations-reducing-hit-time-miss-rate-and-miss-penalty/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Virtualization Hardware: Virtual Memory protection parameters, TLB optimizations, page table memory overhead handling",
+      "slug": "virtualization-hardware-virtual-memory-protection-parameters-tlb-optimizations-page-table-memory-overhead-handling",
+      "path": "virtualization-hardware-virtual-memory-protection-parameters-tlb-optimizations-page-table-memory-overhead-handling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data-Parallel Architectures: SIMD computing models, Vector Processing architectures, GPU microarchitectures",
+      "slug": "data-parallel-architectures-simd-computing-models-vector-processing-architectures-gpu-microarchitectures",
+      "path": "data-parallel-architectures-simd-computing-models-vector-processing-architectures-gpu-microarchitectures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

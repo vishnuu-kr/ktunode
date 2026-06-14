@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPILER DESIGN LAB",
+  "course_code": "PCCSL605",
+  "module_number": 1,
+  "module_title": "Language Translation Tools Lab",
+  "topics_generated": [
+    {
+      "title": "Lexical analyzer definitions using LEX/FLEX specifications rules",
+      "slug": "lexical-analyzer-definitions-using-lex-flex-specifications-rules",
+      "path": "lexical-analyzer-definitions-using-lex-flex-specifications-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Context-free grammar rules layout parsing via YACC/BISON tools templates",
+      "slug": "context-free-grammar-rules-layout-parsing-via-yacc-bison-tools-templates",
+      "path": "context-free-grammar-rules-layout-parsing-via-yacc-bison-tools-templates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Intermediate machine representation generation tracking matrix metrics",
+      "slug": "intermediate-machine-representation-generation-tracking-matrix-metrics",
+      "path": "intermediate-machine-representation-generation-tracking-matrix-metrics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

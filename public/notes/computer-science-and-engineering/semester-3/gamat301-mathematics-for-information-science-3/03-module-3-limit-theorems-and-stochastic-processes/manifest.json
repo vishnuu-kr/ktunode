@@ -1,0 +1,43 @@
+{
+  "course_name": "MATHEMATICS FOR INFORMATION SCIENCE-3",
+  "course_code": "GAMAT301",
+  "module_number": 3,
+  "module_title": "Limit Theorems and Stochastic Processes",
+  "topics_generated": [
+    {
+      "title": "Limit Theorems: Markov's Inequality, Chebyshev's Inequality, Strong Law of Large Numbers (Without proof), and Central Limit Theorem (Without proof)",
+      "slug": "limit-theorems-markov-s-inequality-chebyshev-s-inequality-strong-law-of-large-numbers-without-proof-and-central-limit-theorem-without-proof",
+      "path": "limit-theorems-markov-s-inequality-chebyshev-s-inequality-strong-law-of-large-numbers-without-proof-and-central-limit-theorem-without-proof/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Stochastic Processes: Discrete-time processes and Continuous-time processes",
+      "slug": "stochastic-processes-discrete-time-processes-and-continuous-time-processes",
+      "path": "stochastic-processes-discrete-time-processes-and-continuous-time-processes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Counting Processes",
+      "slug": "counting-processes",
+      "path": "counting-processes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "The Poisson Process",
+      "slug": "the-poisson-process",
+      "path": "the-poisson-process/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interarrival times (Theorems without proof)",
+      "slug": "interarrival-times-theorems-without-proof",
+      "path": "interarrival-times-theorems-without-proof/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

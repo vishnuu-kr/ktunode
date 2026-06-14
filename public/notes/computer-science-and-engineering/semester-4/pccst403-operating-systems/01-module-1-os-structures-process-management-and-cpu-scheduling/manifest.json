@@ -1,0 +1,43 @@
+{
+  "course_name": "OPERATING SYSTEMS",
+  "course_code": "PCCST403",
+  "module_number": 1,
+  "module_title": "OS Structures, Process Management, and CPU Scheduling",
+  "topics_generated": [
+    {
+      "title": "Functions of an Operating System, OS Interfaces, System calls, and Architecture types (Monolithic, Layered, Microkernel, Modular)",
+      "slug": "functions-of-an-operating-system-os-interfaces-system-calls-and-architecture-types-monolithic-layered-microkernel-modular",
+      "path": "functions-of-an-operating-system-os-interfaces-system-calls-and-architecture-types-monolithic-layered-microkernel-modular/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "System Boot Process; Containerization environments (Docker, Linux Kernel features like namespaces and cgroups)",
+      "slug": "system-boot-process-containerization-environments-docker-linux-kernel-features-like-namespaces-and-cgroups",
+      "path": "system-boot-process-containerization-environments-docker-linux-kernel-features-like-namespaces-and-cgroups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Process Concepts: Process states/transitions, PCB, creation using fork(), Context switching, Multi-core thread modeling",
+      "slug": "process-concepts-process-states-transitions-pcb-creation-using-fork-context-switching-multi-core-thread-modeling",
+      "path": "process-concepts-process-states-transitions-pcb-creation-using-fork-context-switching-multi-core-thread-modeling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Threads and Concurrency: Multithreading benefits and models (User-level vs Kernel-level threads)",
+      "slug": "threads-and-concurrency-multithreading-benefits-and-models-user-level-vs-kernel-level-threads",
+      "path": "threads-and-concurrency-multithreading-benefits-and-models-user-level-vs-kernel-level-threads/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "CPU Scheduling: criteria and types; Algorithms: FCFS, SJF, and Round Robin scheduling with problems",
+      "slug": "cpu-scheduling-criteria-and-types-algorithms-fcfs-sjf-and-round-robin-scheduling-with-problems",
+      "path": "cpu-scheduling-criteria-and-types-algorithms-fcfs-sjf-and-round-robin-scheduling-with-problems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

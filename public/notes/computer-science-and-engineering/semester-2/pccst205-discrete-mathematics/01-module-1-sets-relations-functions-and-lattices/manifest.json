@@ -1,0 +1,36 @@
+{
+  "course_name": "DISCRETE MATHEMATICS",
+  "course_code": "PCCST205",
+  "module_number": 1,
+  "module_title": "Sets, Relations, Functions, and Lattices",
+  "topics_generated": [
+    {
+      "title": "Set Operations: power sets, inclusion-exclusion principle, derangements",
+      "slug": "set-operations-power-sets-inclusion-exclusion-principle-derangements",
+      "path": "set-operations-power-sets-inclusion-exclusion-principle-derangements/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Relations: Cartesian products, properties of relations, equivalence relations, classes, compositions",
+      "slug": "relations-cartesian-products-properties-of-relations-equivalence-relations-classes-compositions",
+      "path": "relations-cartesian-products-properties-of-relations-equivalence-relations-classes-compositions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Posets & Lattices: Partial order relations, Hasse diagrams, upper/lower bounds, lattices, distributive/complemented lattices",
+      "slug": "posets-lattices-partial-order-relations-hasse-diagrams-upper-lower-bounds-lattices-distributive-complemented-lattices",
+      "path": "posets-lattices-partial-order-relations-hasse-diagrams-upper-lower-bounds-lattices-distributive-complemented-lattices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Functions: One-to-one, onto, bijective, inverse functions, composition",
+      "slug": "functions-one-to-one-onto-bijective-inverse-functions-composition",
+      "path": "functions-one-to-one-onto-bijective-inverse-functions-composition/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "course_name": "MATHEMATICS FOR INFORMATION SCIENCE – 2",
+  "course_code": "GAMAT201",
+  "module_number": 1,
+  "module_title": "Linear Systems and Matrix Diagnostics",
+  "topics_generated": [
+    {
+      "title": "Systems of linear equations, solutions via Gauss Elimination method, row-echelon form",
+      "slug": "systems-of-linear-equations-solutions-via-gauss-elimination-method-row-echelon-form",
+      "path": "systems-of-linear-equations-solutions-via-gauss-elimination-method-row-echelon-form/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Matrix rank analysis, Fundamental Theorem for Linear Systems (homogeneous and non-homogeneous cases without proof)",
+      "slug": "matrix-rank-analysis-fundamental-theorem-for-linear-systems-homogeneous-and-non-homogeneous-cases-without-proof",
+      "path": "matrix-rank-analysis-fundamental-theorem-for-linear-systems-homogeneous-and-non-homogeneous-cases-without-proof/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Eigenvalues and eigenvectors for square matrices",
+      "slug": "eigenvalues-and-eigenvectors-for-square-matrices",
+      "path": "eigenvalues-and-eigenvectors-for-square-matrices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Diagonalization process of similarity transformations ($P \\cdot D \\cdot P^{-1}$), calculating powers of matrices",
+      "slug": "diagonalization-process-of-similarity-transformations-p-cdot-d-cdot-p-1-calculating-powers-of-matrices",
+      "path": "diagonalization-process-of-similarity-transformations-p-cdot-d-cdot-p-1-calculating-powers-of-matrices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

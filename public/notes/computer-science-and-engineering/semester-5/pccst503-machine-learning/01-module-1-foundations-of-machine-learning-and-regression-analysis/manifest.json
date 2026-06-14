@@ -1,0 +1,36 @@
+{
+  "course_name": "MACHINE LEARNING",
+  "course_code": "PCCST503",
+  "module_number": 1,
+  "module_title": "Foundations of Machine Learning and Regression Analysis",
+  "topics_generated": [
+    {
+      "title": "Core Paradigms: Rule-Based vs Data-Driven; Supervised, Unsupervised, Semi-Supervised, and Reinforcement Learning",
+      "slug": "core-paradigms-rule-based-vs-data-driven-supervised-unsupervised-semi-supervised-and-reinforcement-learning",
+      "path": "core-paradigms-rule-based-vs-data-driven-supervised-unsupervised-semi-supervised-and-reinforcement-learning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Statistical Estimators: Parameter estimation via Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP)",
+      "slug": "statistical-estimators-parameter-estimation-via-maximum-likelihood-estimation-mle-and-maximum-a-posteriori-map",
+      "path": "statistical-estimators-parameter-estimation-via-maximum-likelihood-estimation-mle-and-maximum-a-posteriori-map/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear Regression: MSE objective function, Ordinary Least Squares (OLS) calculus derivation, Multiple Linear Regression",
+      "slug": "linear-regression-mse-objective-function-ordinary-least-squares-ols-calculus-derivation-multiple-linear-regression",
+      "path": "linear-regression-mse-objective-function-ordinary-least-squares-ols-calculus-derivation-multiple-linear-regression/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluation & Splitting: Training vs Testing partitions, validation splits, handling data frames via Pandas, standard datasets",
+      "slug": "evaluation-splitting-training-vs-testing-partitions-validation-splits-handling-data-frames-via-pandas-standard-datasets",
+      "path": "evaluation-splitting-training-vs-testing-partitions-validation-splits-handling-data-frames-via-pandas-standard-datasets/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

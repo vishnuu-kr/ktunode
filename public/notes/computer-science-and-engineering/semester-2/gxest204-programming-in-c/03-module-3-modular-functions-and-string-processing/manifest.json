@@ -1,0 +1,36 @@
+{
+  "course_name": "PROGRAMMING IN C",
+  "course_code": "GXEST204",
+  "module_number": 3,
+  "module_title": "Modular Functions and String Processing",
+  "topics_generated": [
+    {
+      "title": "Modularization: Function definitions, prototypes, local vs global variables, scope",
+      "slug": "modularization-function-definitions-prototypes-local-vs-global-variables-scope",
+      "path": "modularization-function-definitions-prototypes-local-vs-global-variables-scope/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parameter Passing: Pass-by-Value vs Pass-by-Reference, array data transfers into functions",
+      "slug": "parameter-passing-pass-by-value-vs-pass-by-reference-array-data-transfers-into-functions",
+      "path": "parameter-passing-pass-by-value-vs-pass-by-reference-array-data-transfers-into-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Recursion: Coding recursive processes, memory overhead handling",
+      "slug": "recursion-coding-recursive-processes-memory-overhead-handling",
+      "path": "recursion-coding-recursive-processes-memory-overhead-handling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Strings: String arrays, processing actions without built-in library overrides",
+      "slug": "strings-string-arrays-processing-actions-without-built-in-library-overrides",
+      "path": "strings-string-arrays-processing-actions-without-built-in-library-overrides/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

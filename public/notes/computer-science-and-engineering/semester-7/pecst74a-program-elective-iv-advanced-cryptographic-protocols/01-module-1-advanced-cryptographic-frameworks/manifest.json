@@ -1,0 +1,29 @@
+{
+  "course_name": "PROGRAM ELECTIVE IV: ADVANCED CRYPTOGRAPHIC PROTOCOLS",
+  "course_code": "PECST74A",
+  "module_number": 1,
+  "module_title": "Advanced Cryptographic Frameworks",
+  "topics_generated": [
+    {
+      "title": "Elliptic Curve Cryptography (ECC) primitives arithmetic algorithms",
+      "slug": "elliptic-curve-cryptography-ecc-primitives-arithmetic-algorithms",
+      "path": "elliptic-curve-cryptography-ecc-primitives-arithmetic-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Zero-Knowledge Proofs (ZKP) verification models design, Homomorphic encryption runs",
+      "slug": "zero-knowledge-proofs-zkp-verification-models-design-homomorphic-encryption-runs",
+      "path": "zero-knowledge-proofs-zkp-verification-models-design-homomorphic-encryption-runs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum-resistant algorithmic matrices layout setup boundaries",
+      "slug": "quantum-resistant-algorithmic-matrices-layout-setup-boundaries",
+      "path": "quantum-resistant-algorithmic-matrices-layout-setup-boundaries/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

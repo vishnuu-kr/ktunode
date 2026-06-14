@@ -1,0 +1,50 @@
+{
+  "course_name": "OPERATING SYSTEMS LAB",
+  "course_code": "PCCSL406",
+  "module_number": 2,
+  "module_title": "System Algorithms Simulation",
+  "topics_generated": [
+    {
+      "title": "FCFS CPU Scheduling Algorithm",
+      "slug": "fcfs-cpu-scheduling-algorithm",
+      "path": "fcfs-cpu-scheduling-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SJF (Shortest Job First) CPU Scheduling Algorithm",
+      "slug": "sjf-shortest-job-first-cpu-scheduling-algorithm",
+      "path": "sjf-shortest-job-first-cpu-scheduling-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Round Robin CPU Scheduling Algorithm",
+      "slug": "round-robin-cpu-scheduling-algorithm",
+      "path": "round-robin-cpu-scheduling-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Producer-Consumer Problem using Semaphores",
+      "slug": "producer-consumer-problem-using-semaphores",
+      "path": "producer-consumer-problem-using-semaphores/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Banker's Algorithm for Deadlock Avoidance",
+      "slug": "banker-s-algorithm-for-deadlock-avoidance",
+      "path": "banker-s-algorithm-for-deadlock-avoidance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Page Replacement Algorithms (FIFO/LRU)",
+      "slug": "page-replacement-algorithms-fifo-lru",
+      "path": "page-replacement-algorithms-fifo-lru/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

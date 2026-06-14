@@ -1,0 +1,36 @@
+{
+  "course_name": "MATHEMATICS FOR COMPUTER AND INFORMATION SCIENCE-4",
+  "course_code": "GAMAT401",
+  "module_number": 1,
+  "module_title": "Introduction to Graphs",
+  "topics_generated": [
+    {
+      "title": "Basic definitions, Applications of graphs, Finite and infinite graphs",
+      "slug": "basic-definitions-applications-of-graphs-finite-and-infinite-graphs",
+      "path": "basic-definitions-applications-of-graphs-finite-and-infinite-graphs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Incidence and Degree of a vertex, Isolated vertex, Pendant vertex, and Null graph",
+      "slug": "incidence-and-degree-of-a-vertex-isolated-vertex-pendant-vertex-and-null-graph",
+      "path": "incidence-and-degree-of-a-vertex-isolated-vertex-pendant-vertex-and-null-graph/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graph Isomorphism, Subgraphs",
+      "slug": "graph-isomorphism-subgraphs",
+      "path": "graph-isomorphism-subgraphs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Walks, Paths, and Circuits, Connected graphs, Disconnected graphs, and Components",
+      "slug": "walks-paths-and-circuits-connected-graphs-disconnected-graphs-and-components",
+      "path": "walks-paths-and-circuits-connected-graphs-disconnected-graphs-and-components/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

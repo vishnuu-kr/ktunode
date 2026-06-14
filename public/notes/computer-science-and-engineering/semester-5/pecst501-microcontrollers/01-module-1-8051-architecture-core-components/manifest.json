@@ -1,0 +1,29 @@
+{
+  "course_name": "MICROCONTROLLERS",
+  "course_code": "PECST501",
+  "module_number": 1,
+  "module_title": "8051 Architecture & Core Components",
+  "topics_generated": [
+    {
+      "title": "Comparison between microprocessors and microcontrollers",
+      "slug": "comparison-between-microprocessors-and-microcontrollers",
+      "path": "comparison-between-microprocessors-and-microcontrollers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "8051 architectural block diagrams, internal RAM/ROM layout mapping",
+      "slug": "8051-architectural-block-diagrams-internal-ram-rom-layout-mapping",
+      "path": "8051-architectural-block-diagrams-internal-ram-rom-layout-mapping/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Special Function Registers (SFRs), I/O pin configurations, addressing modes syntax structures",
+      "slug": "special-function-registers-sfrs-i-o-pin-configurations-addressing-modes-syntax-structures",
+      "path": "special-function-registers-sfrs-i-o-pin-configurations-addressing-modes-syntax-structures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

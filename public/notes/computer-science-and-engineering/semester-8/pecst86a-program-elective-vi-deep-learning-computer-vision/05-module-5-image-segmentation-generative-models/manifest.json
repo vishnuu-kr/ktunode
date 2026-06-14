@@ -1,0 +1,43 @@
+{
+  "course_name": "PROGRAM ELECTIVE VI: DEEP LEARNING & COMPUTER VISION",
+  "course_code": "PECST86A",
+  "module_number": 5,
+  "module_title": "Image Segmentation & Generative Models",
+  "topics_generated": [
+    {
+      "title": "Semantic vs Instance segmentation",
+      "slug": "semantic-vs-instance-segmentation",
+      "path": "semantic-vs-instance-segmentation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "U-Net",
+      "slug": "u-net",
+      "path": "u-net/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Autoencoders",
+      "slug": "autoencoders",
+      "path": "autoencoders/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "GANs",
+      "slug": "gans",
+      "path": "gans/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Diffusion models",
+      "slug": "diffusion-models",
+      "path": "diffusion-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

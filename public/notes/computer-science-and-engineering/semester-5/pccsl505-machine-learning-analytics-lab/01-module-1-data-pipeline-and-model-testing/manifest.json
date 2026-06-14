@@ -1,0 +1,29 @@
+{
+  "course_name": "MACHINE LEARNING & ANALYTICS LAB",
+  "course_code": "PCCSL505",
+  "module_number": 1,
+  "module_title": "Data Pipeline and Model Testing",
+  "topics_generated": [
+    {
+      "title": "Pandas dataframe structuring rules, cleaning and missing feature parsing",
+      "slug": "pandas-dataframe-structuring-rules-cleaning-and-missing-feature-parsing",
+      "path": "pandas-dataframe-structuring-rules-cleaning-and-missing-feature-parsing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Supervised regression models initialization, metric evaluation tracking",
+      "slug": "supervised-regression-models-initialization-metric-evaluation-tracking",
+      "path": "supervised-regression-models-initialization-metric-evaluation-tracking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SVM separation plane generation boundary plotting, cluster evaluation execution",
+      "slug": "svm-separation-plane-generation-boundary-plotting-cluster-evaluation-execution",
+      "path": "svm-separation-plane-generation-boundary-plotting-cluster-evaluation-execution/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

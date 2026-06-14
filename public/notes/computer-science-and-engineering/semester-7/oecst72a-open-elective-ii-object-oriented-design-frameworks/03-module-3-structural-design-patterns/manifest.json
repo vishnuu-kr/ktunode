@@ -1,0 +1,57 @@
+{
+  "course_name": "OPEN ELECTIVE II: OBJECT-ORIENTED DESIGN FRAMEWORKS",
+  "course_code": "OECST72A",
+  "module_number": 3,
+  "module_title": "Structural Design Patterns",
+  "topics_generated": [
+    {
+      "title": "Adapter Pattern",
+      "slug": "adapter-pattern",
+      "path": "adapter-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Bridge Pattern",
+      "slug": "bridge-pattern",
+      "path": "bridge-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Composite Pattern",
+      "slug": "composite-pattern",
+      "path": "composite-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Decorator Pattern",
+      "slug": "decorator-pattern",
+      "path": "decorator-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Facade Pattern",
+      "slug": "facade-pattern",
+      "path": "facade-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Flyweight Pattern",
+      "slug": "flyweight-pattern",
+      "path": "flyweight-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Proxy Pattern",
+      "slug": "proxy-pattern",
+      "path": "proxy-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

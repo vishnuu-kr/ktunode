@@ -1,0 +1,36 @@
+{
+  "course_name": "HUMANITIES ELECTIVE / HMC CORE: PROJECT LIFECYCLE MANAGEMENT",
+  "course_code": "UEHUT704",
+  "module_number": 2,
+  "module_title": "Time & Cost Management",
+  "topics_generated": [
+    {
+      "title": "CPM/PERT Network Diagrams",
+      "slug": "cpm-pert-network-diagrams",
+      "path": "cpm-pert-network-diagrams/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Resource Scheduling",
+      "slug": "resource-scheduling",
+      "path": "resource-scheduling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cost Estimation",
+      "slug": "cost-estimation",
+      "path": "cost-estimation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Earned Value Management (EVM)",
+      "slug": "earned-value-management-evm",
+      "path": "earned-value-management-evm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

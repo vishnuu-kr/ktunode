@@ -1,0 +1,43 @@
+{
+  "course_name": "INFORMATION SCIENCE PHYSICS LAB",
+  "course_code": "GAPSL128",
+  "module_number": 1,
+  "module_title": "Mechanics, Oscillations, and Optics",
+  "topics_generated": [
+    {
+      "title": "Moment of Inertia",
+      "slug": "moment-of-inertia",
+      "path": "moment-of-inertia/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Torsional Pendulum",
+      "slug": "torsional-pendulum",
+      "path": "torsional-pendulum/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Newton's Rings",
+      "slug": "newton-s-rings",
+      "path": "newton-s-rings/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Spectrometer Prism",
+      "slug": "spectrometer-prism",
+      "path": "spectrometer-prism/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Laser Diffraction",
+      "slug": "laser-diffraction",
+      "path": "laser-diffraction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

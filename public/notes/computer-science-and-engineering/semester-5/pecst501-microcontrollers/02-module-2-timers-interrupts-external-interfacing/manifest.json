@@ -1,0 +1,29 @@
+{
+  "course_name": "MICROCONTROLLERS",
+  "course_code": "PECST501",
+  "module_number": 2,
+  "module_title": "Timers, Interrupts & External Interfacing",
+  "topics_generated": [
+    {
+      "title": "8051 timer/counter operational modes setups programming tracking",
+      "slug": "8051-timer-counter-operational-modes-setups-programming-tracking",
+      "path": "8051-timer-counter-operational-modes-setups-programming-tracking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interrupt structures: Handling routines prioritization algorithms",
+      "slug": "interrupt-structures-handling-routines-prioritization-algorithms",
+      "path": "interrupt-structures-handling-routines-prioritization-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interfacing hardware modules: LCD matrix arrays, stepper motor controllers, ADC/DAC conversions",
+      "slug": "interfacing-hardware-modules-lcd-matrix-arrays-stepper-motor-controllers-adc-dac-conversions",
+      "path": "interfacing-hardware-modules-lcd-matrix-arrays-stepper-motor-controllers-adc-dac-conversions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

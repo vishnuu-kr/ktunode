@@ -1,0 +1,36 @@
+{
+  "course_name": "OPEN ELECTIVE III: AUTOMATED SYSTEM VERIFICATION TOOLS",
+  "course_code": "OECST83A",
+  "module_number": 2,
+  "module_title": "Model Checking Algorithms",
+  "topics_generated": [
+    {
+      "title": "State Transition Systems",
+      "slug": "state-transition-systems",
+      "path": "state-transition-systems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Kripke Structures",
+      "slug": "kripke-structures",
+      "path": "kripke-structures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Explicit-State Model Checking",
+      "slug": "explicit-state-model-checking",
+      "path": "explicit-state-model-checking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Symbolic Model Checking",
+      "slug": "symbolic-model-checking",
+      "path": "symbolic-model-checking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

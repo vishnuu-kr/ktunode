@@ -1,0 +1,29 @@
+{
+  "course_name": "DISCRETE MATHEMATICS",
+  "course_code": "PCCST205",
+  "module_number": 3,
+  "module_title": "Mathematical Induction and Recurrences",
+  "topics_generated": [
+    {
+      "title": "Induction: Principle of Mathematical Induction, Strong Induction",
+      "slug": "induction-principle-of-mathematical-induction-strong-induction",
+      "path": "induction-principle-of-mathematical-induction-strong-induction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Recurrence Relations: Formulating and solving linear homogeneous and non-homogeneous recurrences with constant coefficients",
+      "slug": "recurrence-relations-formulating-and-solving-linear-homogeneous-and-non-homogeneous-recurrences-with-constant-coefficients",
+      "path": "recurrence-relations-formulating-and-solving-linear-homogeneous-and-non-homogeneous-recurrences-with-constant-coefficients/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Generating Functions: Definition, sequence calculation, solving recurrence relations via generating functions",
+      "slug": "generating-functions-definition-sequence-calculation-solving-recurrence-relations-via-generating-functions",
+      "path": "generating-functions-definition-sequence-calculation-solving-recurrence-relations-via-generating-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

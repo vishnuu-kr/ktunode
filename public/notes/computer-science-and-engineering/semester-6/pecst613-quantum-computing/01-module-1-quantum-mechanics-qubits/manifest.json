@@ -1,0 +1,29 @@
+{
+  "course_name": "QUANTUM COMPUTING",
+  "course_code": "PECST613",
+  "module_number": 1,
+  "module_title": "Quantum Mechanics & Qubits",
+  "topics_generated": [
+    {
+      "title": "Quantum state definitions Hilbert space matrix configurations layouts setups",
+      "slug": "quantum-state-definitions-hilbert-space-matrix-configurations-layouts-setups",
+      "path": "quantum-state-definitions-hilbert-space-matrix-configurations-layouts-setups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Qubit processing parameters linear combinations matrix representation formulas rules",
+      "slug": "qubit-processing-parameters-linear-combinations-matrix-representation-formulas-rules",
+      "path": "qubit-processing-parameters-linear-combinations-matrix-representation-formulas-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Quantum logic gates execution pathways matrices setups: Hadamard, CNOT tracking",
+      "slug": "quantum-logic-gates-execution-pathways-matrices-setups-hadamard-cnot-tracking",
+      "path": "quantum-logic-gates-execution-pathways-matrices-setups-hadamard-cnot-tracking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

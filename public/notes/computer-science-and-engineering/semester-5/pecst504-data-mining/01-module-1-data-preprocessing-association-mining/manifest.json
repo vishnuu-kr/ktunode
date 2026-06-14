@@ -1,0 +1,29 @@
+{
+  "course_name": "DATA MINING",
+  "course_code": "PECST504",
+  "module_number": 1,
+  "module_title": "Data Preprocessing & Association Mining",
+  "topics_generated": [
+    {
+      "title": "Knowledge Discovery in Databases (KDD) pipeline processing stages",
+      "slug": "knowledge-discovery-in-databases-kdd-pipeline-processing-stages",
+      "path": "knowledge-discovery-in-databases-kdd-pipeline-processing-stages/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data cleaning, reduction, transformation techniques layouts",
+      "slug": "data-cleaning-reduction-transformation-techniques-layouts",
+      "path": "data-cleaning-reduction-transformation-techniques-layouts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Association rule discovery: Apriori algorithm optimizations, FP-Growth computational matrix models",
+      "slug": "association-rule-discovery-apriori-algorithm-optimizations-fp-growth-computational-matrix-models",
+      "path": "association-rule-discovery-apriori-algorithm-optimizations-fp-growth-computational-matrix-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

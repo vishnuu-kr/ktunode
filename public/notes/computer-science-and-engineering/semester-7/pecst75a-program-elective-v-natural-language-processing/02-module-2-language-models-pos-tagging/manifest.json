@@ -1,0 +1,43 @@
+{
+  "course_name": "PROGRAM ELECTIVE V: NATURAL LANGUAGE PROCESSING",
+  "course_code": "PECST75A",
+  "module_number": 2,
+  "module_title": "Language Models & POS Tagging",
+  "topics_generated": [
+    {
+      "title": "N-gram language models",
+      "slug": "n-gram-language-models",
+      "path": "n-gram-language-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Smoothing techniques",
+      "slug": "smoothing-techniques",
+      "path": "smoothing-techniques/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hidden Markov Models",
+      "slug": "hidden-markov-models",
+      "path": "hidden-markov-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parts-of-Speech (POS) tagging",
+      "slug": "parts-of-speech-pos-tagging",
+      "path": "parts-of-speech-pos-tagging/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Viterbi algorithm",
+      "slug": "viterbi-algorithm",
+      "path": "viterbi-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

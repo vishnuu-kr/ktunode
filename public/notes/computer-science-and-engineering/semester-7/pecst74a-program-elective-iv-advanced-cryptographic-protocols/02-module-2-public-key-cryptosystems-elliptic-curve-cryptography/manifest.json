@@ -1,0 +1,50 @@
+{
+  "course_name": "PROGRAM ELECTIVE IV: ADVANCED CRYPTOGRAPHIC PROTOCOLS",
+  "course_code": "PECST74A",
+  "module_number": 2,
+  "module_title": "Public Key Cryptosystems & Elliptic Curve Cryptography",
+  "topics_generated": [
+    {
+      "title": "Diffie-Hellman key exchange",
+      "slug": "diffie-hellman-key-exchange",
+      "path": "diffie-hellman-key-exchange/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "RSA cryptosystem",
+      "slug": "rsa-cryptosystem",
+      "path": "rsa-cryptosystem/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "ElGamal cryptosystem",
+      "slug": "elgamal-cryptosystem",
+      "path": "elgamal-cryptosystem/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Elliptic Curves over finite fields",
+      "slug": "elliptic-curves-over-finite-fields",
+      "path": "elliptic-curves-over-finite-fields/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Elliptic Curve Diffie-Hellman (ECDH)",
+      "slug": "elliptic-curve-diffie-hellman-ecdh",
+      "path": "elliptic-curve-diffie-hellman-ecdh/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Elliptic Curve Digital Signature Algorithm (ECDSA)",
+      "slug": "elliptic-curve-digital-signature-algorithm-ecdsa",
+      "path": "elliptic-curve-digital-signature-algorithm-ecdsa/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

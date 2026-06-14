@@ -1,0 +1,43 @@
+{
+  "course_name": "OPEN ELECTIVE II: OBJECT-ORIENTED DESIGN FRAMEWORKS",
+  "course_code": "OECST72A",
+  "module_number": 5,
+  "module_title": "Framework Architectures",
+  "topics_generated": [
+    {
+      "title": "Dependency Injection",
+      "slug": "dependency-injection",
+      "path": "dependency-injection/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Model-View-Controller (MVC) Architecture",
+      "slug": "model-view-controller-mvc-architecture",
+      "path": "model-view-controller-mvc-architecture/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Design Pattern Integrations in Java Frameworks",
+      "slug": "design-pattern-integrations-in-java-frameworks",
+      "path": "design-pattern-integrations-in-java-frameworks/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Design Pattern Integrations in C++ Frameworks",
+      "slug": "design-pattern-integrations-in-c-frameworks",
+      "path": "design-pattern-integrations-in-c-frameworks/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Case Studies of Modern Frameworks using Design Patterns",
+      "slug": "case-studies-of-modern-frameworks-using-design-patterns",
+      "path": "case-studies-of-modern-frameworks-using-design-patterns/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

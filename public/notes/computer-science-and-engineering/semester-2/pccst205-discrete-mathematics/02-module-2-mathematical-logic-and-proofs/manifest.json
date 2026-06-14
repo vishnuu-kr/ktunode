@@ -1,0 +1,36 @@
+{
+  "course_name": "DISCRETE MATHEMATICS",
+  "course_code": "PCCST205",
+  "module_number": 2,
+  "module_title": "Mathematical Logic and Proofs",
+  "topics_generated": [
+    {
+      "title": "Propositional Logic: Propositions, logical connectives, truth tables, tautologies, logical equivalences",
+      "slug": "propositional-logic-propositions-logical-connectives-truth-tables-tautologies-logical-equivalences",
+      "path": "propositional-logic-propositions-logical-connectives-truth-tables-tautologies-logical-equivalences/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Predicates & Quantifiers: existential and universal quantifiers, binding variables, translating natural language",
+      "slug": "predicates-quantifiers-existential-and-universal-quantifiers-binding-variables-translating-natural-language",
+      "path": "predicates-quantifiers-existential-and-universal-quantifiers-binding-variables-translating-natural-language/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Rules of Inference: Valid arguments in propositional and predicate logic",
+      "slug": "rules-of-inference-valid-arguments-in-propositional-and-predicate-logic",
+      "path": "rules-of-inference-valid-arguments-in-propositional-and-predicate-logic/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Proof Techniques: Direct proofs, contraposition, contradiction, counterexamples",
+      "slug": "proof-techniques-direct-proofs-contraposition-contradiction-counterexamples",
+      "path": "proof-techniques-direct-proofs-contraposition-contradiction-counterexamples/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "course_name": "PROGRAM ELECTIVE V: NATURAL LANGUAGE PROCESSING",
+  "course_code": "PECST75A",
+  "module_number": 1,
+  "module_title": "Text Vectorization & Semantic Extraction",
+  "topics_generated": [
+    {
+      "title": "Tokenization rules optimization layout parsing pipelines algorithms",
+      "slug": "tokenization-rules-optimization-layout-parsing-pipelines-algorithms",
+      "path": "tokenization-rules-optimization-layout-parsing-pipelines-algorithms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Word embeddings mechanics initialization (Word2Vec, GloVe vectors profiles)",
+      "slug": "word-embeddings-mechanics-initialization-word2vec-glove-vectors-profiles",
+      "path": "word-embeddings-mechanics-initialization-word2vec-glove-vectors-profiles/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transformer sequence processing attention structures validation logic modeling",
+      "slug": "transformer-sequence-processing-attention-structures-validation-logic-modeling",
+      "path": "transformer-sequence-processing-attention-structures-validation-logic-modeling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

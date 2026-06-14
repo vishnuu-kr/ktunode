@@ -1,0 +1,57 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS LAB",
+  "course_code": "PCCSL405",
+  "module_number": 1,
+  "module_title": "SQL Commands and Schema Design",
+  "topics_generated": [
+    {
+      "title": "DDL Commands",
+      "slug": "ddl-commands",
+      "path": "ddl-commands/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "DML Commands",
+      "slug": "dml-commands",
+      "path": "dml-commands/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Constraints",
+      "slug": "constraints",
+      "path": "constraints/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Select Queries",
+      "slug": "select-queries",
+      "path": "select-queries/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Joins",
+      "slug": "joins",
+      "path": "joins/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Group Functions",
+      "slug": "group-functions",
+      "path": "group-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Subqueries",
+      "slug": "subqueries",
+      "path": "subqueries/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    }
+  ]
+}

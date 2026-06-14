@@ -1,0 +1,50 @@
+{
+  "course_name": "PROGRAM ELECTIVE VI: DEEP LEARNING & COMPUTER VISION",
+  "course_code": "PECST86A",
+  "module_number": 4,
+  "module_title": "Image Classification & Object Detection",
+  "topics_generated": [
+    {
+      "title": "Image preprocessing",
+      "slug": "image-preprocessing",
+      "path": "image-preprocessing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Classification tasks",
+      "slug": "classification-tasks",
+      "path": "classification-tasks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sliding window",
+      "slug": "sliding-window",
+      "path": "sliding-window/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "YOLO",
+      "slug": "yolo",
+      "path": "yolo/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SSD",
+      "slug": "ssd",
+      "path": "ssd/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "R-CNN series",
+      "slug": "r-cnn-series",
+      "path": "r-cnn-series/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

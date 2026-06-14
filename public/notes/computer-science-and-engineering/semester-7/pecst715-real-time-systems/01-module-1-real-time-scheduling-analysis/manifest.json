@@ -1,0 +1,29 @@
+{
+  "course_name": "REAL TIME SYSTEMS",
+  "course_code": "PECST715",
+  "module_number": 1,
+  "module_title": "Real-Time Scheduling Analysis",
+  "topics_generated": [
+    {
+      "title": "Hard vs soft real-time system classification metrics boundaries specifications definitions",
+      "slug": "hard-vs-soft-real-time-system-classification-metrics-boundaries-specifications-definitions",
+      "path": "hard-vs-soft-real-time-system-classification-metrics-boundaries-specifications-definitions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Rate Monotonic (RM) scheduling analysis priority assignment equations calculation formulas loops",
+      "slug": "rate-monotonic-rm-scheduling-analysis-priority-assignment-equations-calculation-formulas-loops",
+      "path": "rate-monotonic-rm-scheduling-analysis-priority-assignment-equations-calculation-formulas-loops/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Earliest Deadline First (EDF) dynamic scheduling validation metrics utilization parameters profiles",
+      "slug": "earliest-deadline-first-edf-dynamic-scheduling-validation-metrics-utilization-parameters-profiles",
+      "path": "earliest-deadline-first-edf-dynamic-scheduling-validation-metrics-utilization-parameters-profiles/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

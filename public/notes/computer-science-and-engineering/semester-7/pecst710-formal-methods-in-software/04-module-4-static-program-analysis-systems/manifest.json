@@ -1,0 +1,29 @@
+{
+  "course_name": "FORMAL METHODS IN SOFTWARE",
+  "course_code": "PECST710",
+  "module_number": 4,
+  "module_title": "Static Program Analysis Systems",
+  "topics_generated": [
+    {
+      "title": "Abstract interpretation tracking frameworks data flow trace equations configurations design rules",
+      "slug": "abstract-interpretation-tracking-frameworks-data-flow-trace-equations-configurations-design-rules",
+      "path": "abstract-interpretation-tracking-frameworks-data-flow-trace-equations-configurations-design-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Symbolic execution path optimization tracking parameters criteria patterns profiles verification",
+      "slug": "symbolic-execution-path-optimization-tracking-parameters-criteria-patterns-profiles-verification",
+      "path": "symbolic-execution-path-optimization-tracking-parameters-criteria-patterns-profiles-verification/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Theorem prover platform integrations verification tracks software setups metrics performance analytics",
+      "slug": "theorem-prover-platform-integrations-verification-tracks-software-setups-metrics-performance-analytics",
+      "path": "theorem-prover-platform-integrations-verification-tracks-software-setups-metrics-performance-analytics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

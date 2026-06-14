@@ -1,0 +1,50 @@
+{
+  "course_name": "PROGRAM ELECTIVE VI: DEEP LEARNING & COMPUTER VISION",
+  "course_code": "PECST86A",
+  "module_number": 2,
+  "module_title": "Convolutional Neural Networks",
+  "topics_generated": [
+    {
+      "title": "Convolution operations",
+      "slug": "convolution-operations",
+      "path": "convolution-operations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pooling",
+      "slug": "pooling",
+      "path": "pooling/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Classic architectures AlexNet",
+      "slug": "classic-architectures-alexnet",
+      "path": "classic-architectures-alexnet/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "VGG",
+      "slug": "vgg",
+      "path": "vgg/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "ResNet",
+      "slug": "resnet",
+      "path": "resnet/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transfer learning",
+      "slug": "transfer-learning",
+      "path": "transfer-learning/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

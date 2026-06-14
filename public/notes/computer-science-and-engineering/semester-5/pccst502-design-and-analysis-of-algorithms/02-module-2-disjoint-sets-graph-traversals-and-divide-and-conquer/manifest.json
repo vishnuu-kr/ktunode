@@ -1,0 +1,29 @@
+{
+  "course_name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+  "course_code": "PCCST502",
+  "module_number": 2,
+  "module_title": "Disjoint Sets, Graph Traversals, and Divide-and-Conquer",
+  "topics_generated": [
+    {
+      "title": "Disjoint Set Data Structures: operations, Union and Find, Union by Rank with Path Compression, connected components",
+      "slug": "disjoint-set-data-structures-operations-union-and-find-union-by-rank-with-path-compression-connected-components",
+      "path": "disjoint-set-data-structures-operations-union-and-find-union-by-rank-with-path-compression-connected-components/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Advanced Graph Algorithms: weight representations, Graph Traversals (BFS and DFS complexity analysis), Strongly Connected Components (Kosaraju/Tarjan), and Topological Sorting",
+      "slug": "advanced-graph-algorithms-weight-representations-graph-traversals-bfs-and-dfs-complexity-analysis-strongly-connected-components-kosaraju-tarjan-and-topological-sorting",
+      "path": "advanced-graph-algorithms-weight-representations-graph-traversals-bfs-and-dfs-complexity-analysis-strongly-connected-components-kosaraju-tarjan-and-topological-sorting/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Divide-and-Conquer Strategy: Control Abstraction, Merge Sort mechanics, Strassen's Matrix Multiplication optimization",
+      "slug": "divide-and-conquer-strategy-control-abstraction-merge-sort-mechanics-strassen-s-matrix-multiplication-optimization",
+      "path": "divide-and-conquer-strategy-control-abstraction-merge-sort-mechanics-strassen-s-matrix-multiplication-optimization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

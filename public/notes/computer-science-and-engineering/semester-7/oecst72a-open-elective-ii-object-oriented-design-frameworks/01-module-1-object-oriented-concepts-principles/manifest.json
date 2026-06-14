@@ -1,0 +1,43 @@
+{
+  "course_name": "OPEN ELECTIVE II: OBJECT-ORIENTED DESIGN FRAMEWORKS",
+  "course_code": "OECST72A",
+  "module_number": 1,
+  "module_title": "Object Oriented Concepts & Principles",
+  "topics_generated": [
+    {
+      "title": "Object-Oriented Concepts: Classes, Objects, and Abstraction",
+      "slug": "object-oriented-concepts-classes-objects-and-abstraction",
+      "path": "object-oriented-concepts-classes-objects-and-abstraction/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Inheritance and Polymorphism",
+      "slug": "inheritance-and-polymorphism",
+      "path": "inheritance-and-polymorphism/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "SOLID Principles",
+      "slug": "solid-principles",
+      "path": "solid-principles/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "UML Design Models: Class, Sequence, and Use Case Diagrams",
+      "slug": "uml-design-models-class-sequence-and-use-case-diagrams",
+      "path": "uml-design-models-class-sequence-and-use-case-diagrams/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Introduction to Design Patterns and their significance",
+      "slug": "introduction-to-design-patterns-and-their-significance",
+      "path": "introduction-to-design-patterns-and-their-significance/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    }
+  ]
+}

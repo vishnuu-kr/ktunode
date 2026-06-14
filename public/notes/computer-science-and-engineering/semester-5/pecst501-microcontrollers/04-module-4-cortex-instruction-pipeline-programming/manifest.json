@@ -1,0 +1,29 @@
+{
+  "course_name": "MICROCONTROLLERS",
+  "course_code": "PECST501",
+  "module_number": 4,
+  "module_title": "Cortex Instruction Pipeline & Programming",
+  "topics_generated": [
+    {
+      "title": "Thumb instruction set architecture layouts compilation configurations templates",
+      "slug": "thumb-instruction-set-architecture-layouts-compilation-configurations-templates",
+      "path": "thumb-instruction-set-architecture-layouts-compilation-configurations-templates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Assembly instructions data processing branches loops parsing codes layouts",
+      "slug": "assembly-instructions-data-processing-branches-loops-parsing-codes-layouts",
+      "path": "assembly-instructions-data-processing-branches-loops-parsing-codes-layouts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Embedded C drivers compilation hardware setups peripheral tracking validations",
+      "slug": "embedded-c-drivers-compilation-hardware-setups-peripheral-tracking-validations",
+      "path": "embedded-c-drivers-compilation-hardware-setups-peripheral-tracking-validations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

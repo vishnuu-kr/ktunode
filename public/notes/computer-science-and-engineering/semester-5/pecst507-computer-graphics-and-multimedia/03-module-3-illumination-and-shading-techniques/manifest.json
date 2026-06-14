@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPUTER GRAPHICS AND MULTIMEDIA",
+  "course_code": "PECST507",
+  "module_number": 3,
+  "module_title": "Illumination and Shading Techniques",
+  "topics_generated": [
+    {
+      "title": "Light reflection models equations: Phong illumination shading configuration rules",
+      "slug": "light-reflection-models-equations-phong-illumination-shading-configuration-rules",
+      "path": "light-reflection-models-equations-phong-illumination-shading-configuration-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Surface rendering adjustments routines: Gouraud shading maps layouts templates",
+      "slug": "surface-rendering-adjustments-routines-gouraud-shading-maps-layouts-templates",
+      "path": "surface-rendering-adjustments-routines-gouraud-shading-maps-layouts-templates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Ray tracing basics geometry calculations structures layouts metrics profiles configurations",
+      "slug": "ray-tracing-basics-geometry-calculations-structures-layouts-metrics-profiles-configurations",
+      "path": "ray-tracing-basics-geometry-calculations-structures-layouts-metrics-profiles-configurations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

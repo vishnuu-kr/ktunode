@@ -1,0 +1,36 @@
+{
+  "course_name": "DIGITAL ELECTRONICS & LOGIC DESIGN",
+  "course_code": "GAEST305",
+  "module_number": 1,
+  "module_title": "Introduction to Digital Systems & Core Gate Logic",
+  "topics_generated": [
+    {
+      "title": "Digital Abstraction: Number Systems—Binary, Decimal, Octal, Hexadecimal, Base conversion",
+      "slug": "digital-abstraction-number-systems-binary-decimal-octal-hexadecimal-base-conversion",
+      "path": "digital-abstraction-number-systems-binary-decimal-octal-hexadecimal-base-conversion/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Binary Arithmetic: Addition and subtraction, Unsigned and Signed numbers, Fixed-Point/Floating-Point Systems",
+      "slug": "binary-arithmetic-addition-and-subtraction-unsigned-and-signed-numbers-fixed-point-floating-point-systems",
+      "path": "binary-arithmetic-addition-and-subtraction-unsigned-and-signed-numbers-fixed-point-floating-point-systems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Basic Gates: Buffer, Inverter, AND, OR, NAND, NOR, XOR, XNOR gates",
+      "slug": "basic-gates-buffer-inverter-and-or-nand-nor-xor-xnor-gates",
+      "path": "basic-gates-buffer-inverter-and-or-nand-nor-xor-xnor-gates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Electrical specifications, noise margins, power supplies, Driving loads: gates, resistive loads, and LEDs",
+      "slug": "electrical-specifications-noise-margins-power-supplies-driving-loads-gates-resistive-loads-and-leds",
+      "path": "electrical-specifications-noise-margins-power-supplies-driving-loads-gates-resistive-loads-and-leds/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

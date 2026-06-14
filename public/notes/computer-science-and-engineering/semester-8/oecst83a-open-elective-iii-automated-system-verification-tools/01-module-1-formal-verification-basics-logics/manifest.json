@@ -1,0 +1,36 @@
+{
+  "course_name": "OPEN ELECTIVE III: AUTOMATED SYSTEM VERIFICATION TOOLS",
+  "course_code": "OECST83A",
+  "module_number": 1,
+  "module_title": "Formal Verification Basics & Logics",
+  "topics_generated": [
+    {
+      "title": "Propositional Logic",
+      "slug": "propositional-logic",
+      "path": "propositional-logic/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Predicate Logic",
+      "slug": "predicate-logic",
+      "path": "predicate-logic/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear Temporal Logic (LTL)",
+      "slug": "linear-temporal-logic-ltl",
+      "path": "linear-temporal-logic-ltl/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Computation Tree Logic (CTL)",
+      "slug": "computation-tree-logic-ctl",
+      "path": "computation-tree-logic-ctl/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

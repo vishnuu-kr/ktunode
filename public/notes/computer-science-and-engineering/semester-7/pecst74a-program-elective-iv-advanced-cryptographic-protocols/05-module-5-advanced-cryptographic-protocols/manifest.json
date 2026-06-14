@@ -1,0 +1,36 @@
+{
+  "course_name": "PROGRAM ELECTIVE IV: ADVANCED CRYPTOGRAPHIC PROTOCOLS",
+  "course_code": "PECST74A",
+  "module_number": 5,
+  "module_title": "Advanced Cryptographic Protocols",
+  "topics_generated": [
+    {
+      "title": "Homomorphic encryption",
+      "slug": "homomorphic-encryption",
+      "path": "homomorphic-encryption/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Attribute-based encryption",
+      "slug": "attribute-based-encryption",
+      "path": "attribute-based-encryption/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Functional encryption",
+      "slug": "functional-encryption",
+      "path": "functional-encryption/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Blockchain cryptographic protocols",
+      "slug": "blockchain-cryptographic-protocols",
+      "path": "blockchain-cryptographic-protocols/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

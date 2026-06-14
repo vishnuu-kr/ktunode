@@ -1,0 +1,36 @@
+{
+  "course_name": "MATHEMATICS FOR INFORMATION SCIENCE – 2",
+  "course_code": "GAMAT201",
+  "module_number": 3,
+  "module_title": "Inner Product Spaces and Projections",
+  "topics_generated": [
+    {
+      "title": "Vector length, normalization, unit vectors, dot products, angles between vectors",
+      "slug": "vector-length-normalization-unit-vectors-dot-products-angles-between-vectors",
+      "path": "vector-length-normalization-unit-vectors-dot-products-angles-between-vectors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cauchy-Schwarz Inequality, algebraic definitions of inner product spaces in $R^n$ and $M_{2 \\times 2}$",
+      "slug": "cauchy-schwarz-inequality-algebraic-definitions-of-inner-product-spaces-in-r-n-and-m-2-times-2",
+      "path": "cauchy-schwarz-inequality-algebraic-definitions-of-inner-product-spaces-in-r-n-and-m-2-times-2/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Orthogonal and orthonormal sets/bases, Gram-Schmidt orthonormalization process",
+      "slug": "orthogonal-and-orthonormal-sets-bases-gram-schmidt-orthonormalization-process",
+      "path": "orthogonal-and-orthonormal-sets-bases-gram-schmidt-orthonormalization-process/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Least Squares problem, deriving projections onto sub-dimensional workspaces",
+      "slug": "least-squares-problem-deriving-projections-onto-sub-dimensional-workspaces",
+      "path": "least-squares-problem-deriving-projections-onto-sub-dimensional-workspaces/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

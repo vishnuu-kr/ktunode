@@ -1,0 +1,29 @@
+{
+  "course_name": "ADVANCED DATABASE SYSTEMS",
+  "course_code": "PECST605",
+  "module_number": 4,
+  "module_title": "Database Tuning Security Infrastructure",
+  "topics_generated": [
+    {
+      "title": "Query processing optimizations constraints evaluation metrics optimization tracking parameters",
+      "slug": "query-processing-optimizations-constraints-evaluation-metrics-optimization-tracking-parameters",
+      "path": "query-processing-optimizations-constraints-evaluation-metrics-optimization-tracking-parameters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Relational view physical materialization routes execution setups frameworks scripts",
+      "slug": "relational-view-physical-materialization-routes-execution-setups-frameworks-scripts",
+      "path": "relational-view-physical-materialization-routes-execution-setups-frameworks-scripts/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Database access control models constraints rules setups safety validation frameworks",
+      "slug": "database-access-control-models-constraints-rules-setups-safety-validation-frameworks",
+      "path": "database-access-control-models-constraints-rules-setups-safety-validation-frameworks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "course_name": "OPEN ELECTIVE III: AUTOMATED SYSTEM VERIFICATION TOOLS",
+  "course_code": "OECST83A",
+  "module_number": 4,
+  "module_title": "Program Verification & Hoare Logic",
+  "topics_generated": [
+    {
+      "title": "Hoare Triples",
+      "slug": "hoare-triples",
+      "path": "hoare-triples/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Loop Invariants",
+      "slug": "loop-invariants",
+      "path": "loop-invariants/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Axiomatic Semantics",
+      "slug": "axiomatic-semantics",
+      "path": "axiomatic-semantics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Static Analysis Tools",
+      "slug": "static-analysis-tools",
+      "path": "static-analysis-tools/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Theorem Proving",
+      "slug": "theorem-proving",
+      "path": "theorem-proving/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "course_name": "EMBEDDED SYSTEMS",
+  "course_code": "PECST709",
+  "module_number": 3,
+  "module_title": "Embedded Operating Systems Scheduling",
+  "topics_generated": [
+    {
+      "title": "Task state transitions modeling kernel execution structures loops configuration parameters tracks",
+      "slug": "task-state-transitions-modeling-kernel-execution-structures-loops-configuration-parameters-tracks",
+      "path": "task-state-transitions-modeling-kernel-execution-structures-loops-configuration-parameters-tracks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Priority inversion mitigation frameworks tracking metrics algorithms execution parameters profiles",
+      "slug": "priority-inversion-mitigation-frameworks-tracking-metrics-algorithms-execution-parameters-profiles",
+      "path": "priority-inversion-mitigation-frameworks-tracking-metrics-algorithms-execution-parameters-profiles/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Context switching latencies analysis computations tracking variables specifications profiles configurations",
+      "slug": "context-switching-latencies-analysis-computations-tracking-variables-specifications-profiles-configurations",
+      "path": "context-switching-latencies-analysis-computations-tracking-variables-specifications-profiles-configurations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

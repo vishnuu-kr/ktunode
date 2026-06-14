@@ -1,0 +1,36 @@
+{
+  "course_name": "PROGRAMMING IN C",
+  "course_code": "GXEST204",
+  "module_number": 2,
+  "module_title": "Data Arrays and Sorting Mechanics",
+  "topics_generated": [
+    {
+      "title": "One-Dimensional Arrays: Declaration, memory allocation, structural initialization, index access",
+      "slug": "one-dimensional-arrays-declaration-memory-allocation-structural-initialization-index-access",
+      "path": "one-dimensional-arrays-declaration-memory-allocation-structural-initialization-index-access/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Search & Sort: Sequential Search, Bubble Sort sorting algorithm",
+      "slug": "search-sort-sequential-search-bubble-sort-sorting-algorithm",
+      "path": "search-sort-sequential-search-bubble-sort-sorting-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Matrix Processing: Two-dimensional arrays, row/column iterations, matrix operations",
+      "slug": "matrix-processing-two-dimensional-arrays-row-column-iterations-matrix-operations",
+      "path": "matrix-processing-two-dimensional-arrays-row-column-iterations-matrix-operations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Custom Types: User-defined types via typedef, Enumerated (enum) data types",
+      "slug": "custom-types-user-defined-types-via-typedef-enumerated-enum-data-types",
+      "path": "custom-types-user-defined-types-via-typedef-enumerated-enum-data-types/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

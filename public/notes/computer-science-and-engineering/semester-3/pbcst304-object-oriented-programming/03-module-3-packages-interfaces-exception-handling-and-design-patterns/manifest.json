@@ -1,0 +1,36 @@
+{
+  "course_name": "OBJECT ORIENTED PROGRAMMING",
+  "course_code": "PBCST304",
+  "module_number": 3,
+  "module_title": "Packages, Interfaces, Exception Handling, and Design Patterns",
+  "topics_generated": [
+    {
+      "title": "Packages: Defining a Package, CLASSPATH, Access Protection, Importing Packages",
+      "slug": "packages-defining-a-package-classpath-access-protection-importing-packages",
+      "path": "packages-defining-a-package-classpath-access-protection-importing-packages/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Interfaces: Interfaces vs Abstract classes, defining/implementing an interface, extending interfaces",
+      "slug": "interfaces-interfaces-vs-abstract-classes-defining-implementing-an-interface-extending-interfaces",
+      "path": "interfaces-interfaces-vs-abstract-classes-defining-implementing-an-interface-extending-interfaces/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Exception Handling: Checked/Unchecked Exceptions, try-catch blocks, Multiple catch Clauses, Nested try, throw, throws, finally",
+      "slug": "exception-handling-checked-unchecked-exceptions-try-catch-blocks-multiple-catch-clauses-nested-try-throw-throws-finally",
+      "path": "exception-handling-checked-unchecked-exceptions-try-catch-blocks-multiple-catch-clauses-nested-try-throw-throws-finally/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Java Built-in Exceptions, Custom Exceptions, Introduction to Design Patterns: Singleton and Adapter patterns",
+      "slug": "java-built-in-exceptions-custom-exceptions-introduction-to-design-patterns-singleton-and-adapter-patterns",
+      "path": "java-built-in-exceptions-custom-exceptions-introduction-to-design-patterns-singleton-and-adapter-patterns/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    }
+  ]
+}

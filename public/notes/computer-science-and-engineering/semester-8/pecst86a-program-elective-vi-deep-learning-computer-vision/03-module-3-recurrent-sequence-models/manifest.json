@@ -1,0 +1,50 @@
+{
+  "course_name": "PROGRAM ELECTIVE VI: DEEP LEARNING & COMPUTER VISION",
+  "course_code": "PECST86A",
+  "module_number": 3,
+  "module_title": "Recurrent & Sequence Models",
+  "topics_generated": [
+    {
+      "title": "RNNs",
+      "slug": "rnns",
+      "path": "rnns/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "LSTMs",
+      "slug": "lstms",
+      "path": "lstms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "GRUs",
+      "slug": "grus",
+      "path": "grus/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sequence-to-Sequence",
+      "slug": "sequence-to-sequence",
+      "path": "sequence-to-sequence/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Self-Attention",
+      "slug": "self-attention",
+      "path": "self-attention/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transformer basics",
+      "slug": "transformer-basics",
+      "path": "transformer-basics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

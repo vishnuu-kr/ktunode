@@ -1,0 +1,22 @@
+{
+  "course_name": "ADVANCED GRAPH ALGORITHMS",
+  "course_code": "PECST509",
+  "module_number": 1,
+  "module_title": "Network Flow Frameworks",
+  "topics_generated": [
+    {
+      "title": "Max-Flow Min-Cut theorem parameters optimization formulations rules",
+      "slug": "max-flow-min-cut-theorem-parameters-optimization-formulations-rules",
+      "path": "max-flow-min-cut-theorem-parameters-optimization-formulations-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Ford-Fulkerson computational paths algorithms, Edmonds-Karp optimizations validation tracking parameters",
+      "slug": "ford-fulkerson-computational-paths-algorithms-edmonds-karp-optimizations-validation-tracking-parameters",
+      "path": "ford-fulkerson-computational-paths-algorithms-edmonds-karp-optimizations-validation-tracking-parameters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

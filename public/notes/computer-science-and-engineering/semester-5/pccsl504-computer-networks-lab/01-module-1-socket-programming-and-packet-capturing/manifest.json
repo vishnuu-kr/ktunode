@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPUTER NETWORKS LAB",
+  "course_code": "PCCSL504",
+  "module_number": 1,
+  "module_title": "Socket Programming and Packet Capturing",
+  "topics_generated": [
+    {
+      "title": "TCP client-server sockets",
+      "slug": "tcp-client-server-sockets",
+      "path": "tcp-client-server-sockets/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "UDP client-server",
+      "slug": "udp-client-server",
+      "path": "udp-client-server/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Wire-level packet sniffing using Wireshark",
+      "slug": "wire-level-packet-sniffing-using-wireshark",
+      "path": "wire-level-packet-sniffing-using-wireshark/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

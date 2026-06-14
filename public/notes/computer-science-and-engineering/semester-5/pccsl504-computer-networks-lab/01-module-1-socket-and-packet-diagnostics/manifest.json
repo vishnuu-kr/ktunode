@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPUTER NETWORKS LAB",
+  "course_code": "PCCSL504",
+  "module_number": 1,
+  "module_title": "Socket and Packet Diagnostics",
+  "topics_generated": [
+    {
+      "title": "Client-Server message exchange using primitive TCP/UDP socket calls",
+      "slug": "client-server-message-exchange-using-primitive-tcp-udp-socket-calls",
+      "path": "client-server-message-exchange-using-primitive-tcp-udp-socket-calls/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "I/O multiplexing runtime verification via select/poll functions",
+      "slug": "i-o-multiplexing-runtime-verification-via-select-poll-functions",
+      "path": "i-o-multiplexing-runtime-verification-via-select-poll-functions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Network traffic stream capturing, packet parsing using Wireshark analyzers",
+      "slug": "network-traffic-stream-capturing-packet-parsing-using-wireshark-analyzers",
+      "path": "network-traffic-stream-capturing-packet-parsing-using-wireshark-analyzers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

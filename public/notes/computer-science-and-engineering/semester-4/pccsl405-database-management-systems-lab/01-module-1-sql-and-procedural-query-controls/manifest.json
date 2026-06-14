@@ -1,0 +1,29 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS LAB",
+  "course_code": "PCCSL405",
+  "module_number": 1,
+  "module_title": "SQL and Procedural Query Controls",
+  "topics_generated": [
+    {
+      "title": "DDL/DML command operations, table creation profiles, constraint bindings definitions",
+      "slug": "ddl-dml-command-operations-table-creation-profiles-constraint-bindings-definitions",
+      "path": "ddl-dml-command-operations-table-creation-profiles-constraint-bindings-definitions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Nested subqueries execution tracking, recursive join routes, structural view generation mechanics",
+      "slug": "nested-subqueries-execution-tracking-recursive-join-routes-structural-view-generation-mechanics",
+      "path": "nested-subqueries-execution-tracking-recursive-join-routes-structural-view-generation-mechanics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "PL/SQL procedural loops build-up, trigger execution conditions, NoSQL MongoDB CRUD setups",
+      "slug": "pl-sql-procedural-loops-build-up-trigger-execution-conditions-nosql-mongodb-crud-setups",
+      "path": "pl-sql-procedural-loops-build-up-trigger-execution-conditions-nosql-mongodb-crud-setups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

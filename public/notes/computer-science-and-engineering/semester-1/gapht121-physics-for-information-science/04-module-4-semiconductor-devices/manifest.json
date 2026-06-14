@@ -1,0 +1,57 @@
+{
+  "course_name": "PHYSICS FOR INFORMATION SCIENCE",
+  "course_code": "GAPHT121",
+  "module_number": 4,
+  "module_title": "Semiconductor Devices",
+  "topics_generated": [
+    {
+      "title": "Rectifiers",
+      "slug": "rectifiers",
+      "path": "rectifiers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Zener diode",
+      "slug": "zener-diode",
+      "path": "zener-diode/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Tunnel diode",
+      "slug": "tunnel-diode",
+      "path": "tunnel-diode/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Semiconductor Laser",
+      "slug": "semiconductor-laser",
+      "path": "semiconductor-laser/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Photodetectors",
+      "slug": "photodetectors",
+      "path": "photodetectors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Solar cells",
+      "slug": "solar-cells",
+      "path": "solar-cells/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "LEDs",
+      "slug": "leds",
+      "path": "leds/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

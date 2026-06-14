@@ -1,0 +1,43 @@
+{
+  "course_name": "MACHINE LEARNING & ANALYTICS LAB",
+  "course_code": "PCCSL505",
+  "module_number": 2,
+  "module_title": "Unsupervised Learning and Model Evaluation",
+  "topics_generated": [
+    {
+      "title": "K-Means clustering",
+      "slug": "k-means-clustering",
+      "path": "k-means-clustering/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Principal Component Analysis (PCA)",
+      "slug": "principal-component-analysis-pca",
+      "path": "principal-component-analysis-pca/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Model performance metrics",
+      "slug": "model-performance-metrics",
+      "path": "model-performance-metrics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Confusion Matrix",
+      "slug": "confusion-matrix",
+      "path": "confusion-matrix/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "ROC Curves and AUC",
+      "slug": "roc-curves-and-auc",
+      "path": "roc-curves-and-auc/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

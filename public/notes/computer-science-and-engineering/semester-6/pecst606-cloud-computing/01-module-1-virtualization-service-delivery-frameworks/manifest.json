@@ -1,0 +1,29 @@
+{
+  "course_name": "CLOUD COMPUTING",
+  "course_code": "PECST606",
+  "module_number": 1,
+  "module_title": "Virtualization & Service Delivery Frameworks",
+  "topics_generated": [
+    {
+      "title": "Hypervisor classification architectures topologies design rules",
+      "slug": "hypervisor-classification-architectures-topologies-design-rules",
+      "path": "hypervisor-classification-architectures-topologies-design-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cloud service models configurations setups: IaaS, PaaS, SaaS delivery channels parameters",
+      "slug": "cloud-service-models-configurations-setups-iaas-paas-saas-delivery-channels-parameters",
+      "path": "cloud-service-models-configurations-setups-iaas-paas-saas-delivery-channels-parameters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Containerization workflows tracking platforms Docker micro-kernel layouts parameters",
+      "slug": "containerization-workflows-tracking-platforms-docker-micro-kernel-layouts-parameters",
+      "path": "containerization-workflows-tracking-platforms-docker-micro-kernel-layouts-parameters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

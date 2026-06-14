@@ -1,0 +1,36 @@
+{
+  "course_name": "OBJECT ORIENTED PROGRAMMING",
+  "course_code": "PBCST304",
+  "module_number": 4,
+  "module_title": "SOLID Principles, Swings Framework, and JDBC",
+  "topics_generated": [
+    {
+      "title": "SOLID Principles in Java",
+      "slug": "solid-principles-in-java",
+      "path": "solid-principles-in-java/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Swings Fundamentals: Overview of AWT, Swing vs AWT, Swing Key Features, Model-View-Controller (MVC) architecture",
+      "slug": "swings-fundamentals-overview-of-awt-swing-vs-awt-swing-key-features-model-view-controller-mvc-architecture",
+      "path": "swings-fundamentals-overview-of-awt-swing-vs-awt-swing-key-features-model-view-controller-mvc-architecture/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Swing Controls, Components, Containers, Layout Managers, Event Handling Mechanisms, Delegation Event Model, Listeners",
+      "slug": "swing-controls-components-containers-layout-managers-event-handling-mechanisms-delegation-event-model-listeners",
+      "path": "swing-controls-components-containers-layout-managers-event-handling-mechanisms-delegation-event-model-listeners/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Developing Database Applications using JDBC: JDBC overview, Types, Connection Establishment Fundamentals, CRUD Operations",
+      "slug": "developing-database-applications-using-jdbc-jdbc-overview-types-connection-establishment-fundamentals-crud-operations",
+      "path": "developing-database-applications-using-jdbc-jdbc-overview-types-connection-establishment-fundamentals-crud-operations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

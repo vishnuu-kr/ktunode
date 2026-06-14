@@ -1,0 +1,29 @@
+{
+  "course_name": "HIGH PERFORMANCE COMPUTING",
+  "course_code": "PECST712",
+  "module_number": 3,
+  "module_title": "Parallel Matrix Computational Core",
+  "topics_generated": [
+    {
+      "title": "Matrix multiplication block tiling configurations structures loops optimization tracking layouts models",
+      "slug": "matrix-multiplication-block-tiling-configurations-structures-loops-optimization-tracking-layouts-models",
+      "path": "matrix-multiplication-block-tiling-configurations-structures-loops-optimization-tracking-layouts-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Parallel linear solvers execution blueprints metrics performance profiles layout configurations setups",
+      "slug": "parallel-linear-solvers-execution-blueprints-metrics-performance-profiles-layout-configurations-setups",
+      "path": "parallel-linear-solvers-execution-blueprints-metrics-performance-profiles-layout-configurations-setups/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Load balancing strategies thread assignment scheduling configurations tracks metrics performance metrics",
+      "slug": "load-balancing-strategies-thread-assignment-scheduling-configurations-tracks-metrics-performance-metrics",
+      "path": "load-balancing-strategies-thread-assignment-scheduling-configurations-tracks-metrics-performance-metrics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

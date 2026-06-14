@@ -1,0 +1,29 @@
+{
+  "course_name": "PHYSICS FOR INFORMATION SCIENCE",
+  "course_code": "GAPHT121",
+  "module_number": 3,
+  "module_title": "Semiconductor Physics",
+  "topics_generated": [
+    {
+      "title": "Intrinsic semiconductors",
+      "slug": "intrinsic-semiconductors",
+      "path": "intrinsic-semiconductors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Carrier concentrations",
+      "slug": "carrier-concentrations",
+      "path": "carrier-concentrations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Fermi level in semiconductors",
+      "slug": "fermi-level-in-semiconductors",
+      "path": "fermi-level-in-semiconductors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

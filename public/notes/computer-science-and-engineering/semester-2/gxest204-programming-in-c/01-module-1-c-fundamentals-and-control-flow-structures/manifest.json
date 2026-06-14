@@ -1,0 +1,36 @@
+{
+  "course_name": "PROGRAMMING IN C",
+  "course_code": "GXEST204",
+  "module_number": 1,
+  "module_title": "C Fundamentals and Control Flow Structures",
+  "topics_generated": [
+    {
+      "title": "Lexical Tokens: Character sets, constants, identifiers, keywords, primitive data types (int, char, float, double), memory footprints",
+      "slug": "lexical-tokens-character-sets-constants-identifiers-keywords-primitive-data-types-int-char-float-double-memory-footprints",
+      "path": "lexical-tokens-character-sets-constants-identifiers-keywords-primitive-data-types-int-char-float-double-memory-footprints/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Operators & Expressions: Mathematical, relational, logical, bit-wise operators, precedence rules",
+      "slug": "operators-expressions-mathematical-relational-logical-bit-wise-operators-precedence-rules",
+      "path": "operators-expressions-mathematical-relational-logical-bit-wise-operators-precedence-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Basic I/O: Standard unformatted and formatted console inputs/outputs",
+      "slug": "basic-i-o-standard-unformatted-and-formatted-console-inputs-outputs",
+      "path": "basic-i-o-standard-unformatted-and-formatted-console-inputs-outputs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Control Statements: Conditional branching (if-else, switch), loop mechanisms (while, do-while, for), break, continue",
+      "slug": "control-statements-conditional-branching-if-else-switch-loop-mechanisms-while-do-while-for-break-continue",
+      "path": "control-statements-conditional-branching-if-else-switch-loop-mechanisms-while-do-while-for-break-continue/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "course_name": "FOUNDATIONS OF CRYPTOGRAPHY",
+  "course_code": "PECST610",
+  "module_number": 3,
+  "module_title": "Digital Signatures Hash Paradigms",
+  "topics_generated": [
+    {
+      "title": "Collision resistant hash structures parameters verification routines execution paths tracking",
+      "slug": "collision-resistant-hash-structures-parameters-verification-routines-execution-paths-tracking",
+      "path": "collision-resistant-hash-structures-parameters-verification-routines-execution-paths-tracking/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Digital signature algorithm frameworks specifications verification schedules definitions parameters",
+      "slug": "digital-signature-algorithm-frameworks-specifications-verification-schedules-definitions-parameters",
+      "path": "digital-signature-algorithm-frameworks-specifications-verification-schedules-definitions-parameters/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Message authentication codes configurations layout parameters scripts parameters optimizations",
+      "slug": "message-authentication-codes-configurations-layout-parameters-scripts-parameters-optimizations",
+      "path": "message-authentication-codes-configurations-layout-parameters-scripts-parameters-optimizations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

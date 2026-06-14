@@ -1,0 +1,43 @@
+{
+  "course_name": "DATA STRUCTURES AND ALGORITHMS",
+  "course_code": "PCCST303",
+  "module_number": 3,
+  "module_title": "Trees and Graphs",
+  "topics_generated": [
+    {
+      "title": "Trees: Representation of Trees",
+      "slug": "trees-representation-of-trees",
+      "path": "trees-representation-of-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Binary Trees: Types and Properties, Binary Tree Representation, Tree Operations, Tree Traversals (Inorder, Preorder, Postorder)",
+      "slug": "binary-trees-types-and-properties-binary-tree-representation-tree-operations-tree-traversals-inorder-preorder-postorder",
+      "path": "binary-trees-types-and-properties-binary-tree-representation-tree-operations-tree-traversals-inorder-preorder-postorder/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Expression Trees, Binary Search Trees (BST): Operations",
+      "slug": "expression-trees-binary-search-trees-bst-operations",
+      "path": "expression-trees-binary-search-trees-bst-operations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Binary Heaps: Binary Heap Operations, Priority Queue",
+      "slug": "binary-heaps-binary-heap-operations-priority-queue",
+      "path": "binary-heaps-binary-heap-operations-priority-queue/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Graphs: Definitions and Representation (Adjacency Matrix, Adjacency List), Graph Traversals: DFS and BFS, Applications: Single Source All Destination",
+      "slug": "graphs-definitions-and-representation-adjacency-matrix-adjacency-list-graph-traversals-dfs-and-bfs-applications-single-source-all-destination",
+      "path": "graphs-definitions-and-representation-adjacency-matrix-adjacency-list-graph-traversals-dfs-and-bfs-applications-single-source-all-destination/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

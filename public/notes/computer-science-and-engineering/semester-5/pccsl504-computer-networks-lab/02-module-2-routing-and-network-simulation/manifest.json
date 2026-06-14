@@ -1,0 +1,29 @@
+{
+  "course_name": "COMPUTER NETWORKS LAB",
+  "course_code": "PCCSL504",
+  "module_number": 2,
+  "module_title": "Routing and Network Simulation",
+  "topics_generated": [
+    {
+      "title": "Distance Vector routing simulation",
+      "slug": "distance-vector-routing-simulation",
+      "path": "distance-vector-routing-simulation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Link State routing simulation",
+      "slug": "link-state-routing-simulation",
+      "path": "link-state-routing-simulation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Network topologies using NS2/NS3/Cisco Packet Tracer",
+      "slug": "network-topologies-using-ns2-ns3-cisco-packet-tracer",
+      "path": "network-topologies-using-ns2-ns3-cisco-packet-tracer/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

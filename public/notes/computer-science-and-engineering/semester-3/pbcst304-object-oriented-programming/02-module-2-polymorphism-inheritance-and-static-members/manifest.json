@@ -1,0 +1,36 @@
+{
+  "course_name": "OBJECT ORIENTED PROGRAMMING",
+  "course_code": "PBCST304",
+  "module_number": 2,
+  "module_title": "Polymorphism, Inheritance, and Static Members",
+  "topics_generated": [
+    {
+      "title": "Polymorphism: Method Overloading, Using Objects as Parameters, Returning Objects, Recursion",
+      "slug": "polymorphism-method-overloading-using-objects-as-parameters-returning-objects-recursion",
+      "path": "polymorphism-method-overloading-using-objects-as-parameters-returning-objects-recursion/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Static Members, Final Variables, Inner Classes",
+      "slug": "static-members-final-variables-inner-classes",
+      "path": "static-members-final-variables-inner-classes/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Inheritance: Super Class, Sub Class, Types of Inheritance, The 'super' keyword, protected Members, Calling Order of Constructors",
+      "slug": "inheritance-super-class-sub-class-types-of-inheritance-the-super-keyword-protected-members-calling-order-of-constructors",
+      "path": "inheritance-super-class-sub-class-types-of-inheritance-the-super-keyword-protected-members-calling-order-of-constructors/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Method Overriding, Dynamic Method Dispatch, Using 'final' with Inheritance",
+      "slug": "method-overriding-dynamic-method-dispatch-using-final-with-inheritance",
+      "path": "method-overriding-dynamic-method-dispatch-using-final-with-inheritance/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    }
+  ]
+}

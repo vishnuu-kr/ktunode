@@ -1,0 +1,50 @@
+{
+  "course_name": "MINI PROJECT (DESIGN/SOFTWARE)",
+  "course_code": "PCCSP606",
+  "module_number": 2,
+  "module_title": "Implementation and Software Testing",
+  "topics_generated": [
+    {
+      "title": "Coding",
+      "slug": "coding",
+      "path": "coding/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Unit testing",
+      "slug": "unit-testing",
+      "path": "unit-testing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Integration testing",
+      "slug": "integration-testing",
+      "path": "integration-testing/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Test cases",
+      "slug": "test-cases",
+      "path": "test-cases/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Deployment",
+      "slug": "deployment",
+      "path": "deployment/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Final project documentation",
+      "slug": "final-project-documentation",
+      "path": "final-project-documentation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "course_name": "OPEN ELECTIVE II: OBJECT-ORIENTED DESIGN FRAMEWORKS",
+  "course_code": "OECST72A",
+  "module_number": 2,
+  "module_title": "Creational Design Patterns",
+  "topics_generated": [
+    {
+      "title": "Singleton Pattern",
+      "slug": "singleton-pattern",
+      "path": "singleton-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Factory Method Pattern",
+      "slug": "factory-method-pattern",
+      "path": "factory-method-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Abstract Factory Pattern",
+      "slug": "abstract-factory-pattern",
+      "path": "abstract-factory-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Builder Pattern",
+      "slug": "builder-pattern",
+      "path": "builder-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Prototype Pattern",
+      "slug": "prototype-pattern",
+      "path": "prototype-pattern/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

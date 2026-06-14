@@ -1,0 +1,57 @@
+{
+  "course_name": "PROGRAM ELECTIVE V: NATURAL LANGUAGE PROCESSING",
+  "course_code": "PECST75A",
+  "module_number": 5,
+  "module_title": "Transformers & Applications",
+  "topics_generated": [
+    {
+      "title": "Attention mechanisms",
+      "slug": "attention-mechanisms",
+      "path": "attention-mechanisms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Self-attention",
+      "slug": "self-attention",
+      "path": "self-attention/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "BERT",
+      "slug": "bert",
+      "path": "bert/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "GPT",
+      "slug": "gpt",
+      "path": "gpt/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Named Entity Recognition (NER)",
+      "slug": "named-entity-recognition-ner",
+      "path": "named-entity-recognition-ner/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Sentiment analysis",
+      "slug": "sentiment-analysis",
+      "path": "sentiment-analysis/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Machine translation",
+      "slug": "machine-translation",
+      "path": "machine-translation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

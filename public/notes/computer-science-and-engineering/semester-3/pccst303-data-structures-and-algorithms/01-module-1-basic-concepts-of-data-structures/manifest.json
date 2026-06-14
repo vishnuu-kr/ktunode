@@ -1,0 +1,43 @@
+{
+  "course_name": "DATA STRUCTURES AND ALGORITHMS",
+  "course_code": "PCCST303",
+  "module_number": 1,
+  "module_title": "Basic Concepts of Data Structures",
+  "topics_generated": [
+    {
+      "title": "Definitions and Data Abstraction",
+      "slug": "definitions-and-data-abstraction",
+      "path": "definitions-and-data-abstraction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Performance Analysis: Time & Space Complexity, Asymptotic Notations ($O$, $\\Omega$, $\\Theta$)",
+      "slug": "performance-analysis-time-space-complexity-asymptotic-notations-o-omega-theta",
+      "path": "performance-analysis-time-space-complexity-asymptotic-notations-o-omega-theta/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Polynomial representation using Arrays, Sparse matrix (Tuple representation)",
+      "slug": "polynomial-representation-using-arrays-sparse-matrix-tuple-representation",
+      "path": "polynomial-representation-using-arrays-sparse-matrix-tuple-representation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Stacks and Queues: Stacks, Multi-Stacks, Queues, Circular Queues, Double Ended Queues (Deques)",
+      "slug": "stacks-and-queues-stacks-multi-stacks-queues-circular-queues-double-ended-queues-deques",
+      "path": "stacks-and-queues-stacks-multi-stacks-queues-circular-queues-double-ended-queues-deques/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Evaluation of Expressions: Infix to Postfix conversion, Evaluating Postfix Expressions",
+      "slug": "evaluation-of-expressions-infix-to-postfix-conversion-evaluating-postfix-expressions",
+      "path": "evaluation-of-expressions-infix-to-postfix-conversion-evaluating-postfix-expressions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}
