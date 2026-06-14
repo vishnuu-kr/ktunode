@@ -89,14 +89,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-ucest105-algorithmic-thinking-with-python-01-module-1-problem-creating-and-using-variables-in-python",
-            "title": "Creating and using variables in Python",
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-01-module-1-problem-creating-variables-in-python",
+            "title": "Creating variables in Python",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-ucest105-algorithmic-thinking-with-python-01-module-1-problem-numeric-and-string-data-types-in-python",
-            "title": "Numeric and String data types in Python",
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-01-module-1-problem-using-variables-in-python",
+            "title": "Using variables in Python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-01-module-1-problem-numeric-data-types-in-python",
+            "title": "Numeric data types in Python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-01-module-1-problem-string-data-types-in-python",
+            "title": "String data types in Python",
             "content": "",
             "pyqs": []
           },
@@ -137,8 +149,14 @@
         "title": "Module 2: Algorithm and pseudocode representation",
         "topics": [
           {
-            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-meaning-and-definition-of-pseudocode",
-            "title": "Meaning and Definition of Pseudocode",
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-meaning-of-pseudocode",
+            "title": "Meaning of Pseudocode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-definition-of-pseudocode",
+            "title": "Definition of Pseudocode",
             "content": "",
             "pyqs": []
           },
@@ -161,14 +179,44 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-selection-if-else-structure-case-structure",
-            "title": "Selection (if-else structure, case structure)",
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-selection",
+            "title": "Selection",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-repetition-for-while-repeat-until-loops",
-            "title": "Repetition (for, while, repeat-until loops)",
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-if-else-structure",
+            "title": "if-else structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-case-structure",
+            "title": "case structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-repetition",
+            "title": "Repetition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-for-loops",
+            "title": "for loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-while-loops",
+            "title": "while loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-02-module-2-algorithm-and-pseudocode-representation-repeat-until-loops",
+            "title": "repeat-until loops",
             "content": "",
             "pyqs": []
           },
@@ -311,8 +359,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-ucest105-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python-creating-and-using-arrays-in-python-using-numpy-library",
-            "title": "Creating and using Arrays in Python (using Numpy library)",
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python-creating-arrays-in-python",
+            "title": "Creating Arrays in Python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python-using-arrays-in-python-using-numpy-library",
+            "title": "Using Arrays in Python (using Numpy library)",
             "content": "",
             "pyqs": []
           },
@@ -335,8 +389,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-ucest105-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python-defining-and-using-functions-in-python",
-            "title": "Defining and using functions in Python",
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python-defining-functions-in-python",
+            "title": "Defining functions in Python",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-ucest105-algorithmic-thinking-with-python-03-module-3-selection-and-iteration-using-python-using-functions-in-python",
+            "title": "Using functions in Python",
             "content": "",
             "pyqs": []
           },
@@ -608,8 +668,50 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-cables-wires-switches-fuses-fuse-carriers-mcb-elcb-and-mccb",
-            "title": "Familiarize the ratings of cables, wires, switches, fuses, fuse carriers, MCB, ELCB and MCCB",
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-cables",
+            "title": "Familiarize the ratings of cables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-wires",
+            "title": "Familiarize the ratings of wires",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-switches",
+            "title": "Familiarize the ratings of switches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-fuses",
+            "title": "Familiarize the ratings of fuses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-fuse-carriers",
+            "title": "Familiarize the ratings of fuse carriers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-mcb",
+            "title": "Familiarize the ratings of MCB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-elcb",
+            "title": "Familiarize the ratings of ELCB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-01-module-1-demonstrate-the-precautionary-steps-adopted-in-case-of-electrical-shock-familiarize-the-ratings-of-mccb",
+            "title": "Familiarize the ratings of MCCB",
             "content": "",
             "pyqs": []
           }
@@ -620,8 +722,14 @@
         "title": "Module 2: Wiring of a simple light circuit for light fan point pvc conduit wiring",
         "topics": [
           {
-            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-02-module-2-wiring-of-a-simple-light-circuit-for-light-fan-point-pvc-conduit-wiring-wiring-of-a-simple-light-circuit-for-light-fan-point-pvc-conduit-wiring",
-            "title": "Wiring of a simple light circuit for light/ fan point (PVC conduit wiring)",
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-02-module-2-wiring-of-a-simple-light-circuit-for-light-fan-point-pvc-conduit-wiring-wiring-of-a-simple-light-circuit-for-light-point-pvc-conduit-wiring",
+            "title": "Wiring of a simple light circuit for light point (PVC conduit wiring)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-02-module-2-wiring-of-a-simple-light-circuit-for-light-fan-point-pvc-conduit-wiring-wiring-of-a-simple-light-circuit-for-fan-point-pvc-conduit-wiring",
+            "title": "Wiring of a simple light circuit for fan point (PVC conduit wiring)",
             "content": "",
             "pyqs": []
           },
@@ -1046,20 +1154,20 @@
         "title": "Module 13: Printed circuit boards pcb",
         "topics": [
           {
-            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-13-module-13-printed-circuit-boards-pcb-printed-circuit-boards-pcb-types-single-sided",
-            "title": "Printed circuit boards (PCB) - Types, Single sided",
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-13-module-13-printed-circuit-boards-pcb-single-sided-pcb",
+            "title": "Single sided PCB",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-13-module-13-printed-circuit-boards-pcb-printed-circuit-boards-pcb-types-double-sided",
-            "title": "Printed circuit boards (PCB) - Types, Double sided",
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-13-module-13-printed-circuit-boards-pcb-double-sided-pcb",
+            "title": "Double sided PCB",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-13-module-13-printed-circuit-boards-pcb-printed-circuit-boards-pcb-types-pth-plated-through-hole",
-            "title": "Printed circuit boards (PCB) - Types, PTH (Plated Through Hole)",
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-13-module-13-printed-circuit-boards-pcb-pth-plated-through-hole-pcb",
+            "title": "PTH (Plated Through Hole) PCB",
             "content": "",
             "pyqs": []
           },
@@ -1112,8 +1220,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-14-module-14-inter-soldering-types-selection-of-materials-and-safety-precautions",
-            "title": "Soldering - types, selection of materials and safety precautions",
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-14-module-14-inter-soldering-types",
+            "title": "Soldering - types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-14-module-14-inter-soldering-selection-of-materials",
+            "title": "Soldering - selection of materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-14-module-14-inter-soldering-safety-precautions",
+            "title": "Soldering - safety precautions",
             "content": "",
             "pyqs": []
           },
@@ -1136,8 +1256,14 @@
         "title": "Module 15: Assembling of electronic circuitsystem on general purpose pcb test and",
         "topics": [
           {
-            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-15-module-15-assembling-of-electronic-circuitsystem-on-general-purpose-pcb-test-and-assembling-of-electronic-circuit-system-on-general-purpose-pcb-test-and-show-the-functioning-any-two",
-            "title": "Assembling of electronic circuit/system on general purpose PCB, test and show the functioning (Any two)",
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-15-module-15-assembling-of-electronic-circuitsystem-on-general-purpose-pcb-test-and-assembling-of-electronic-circuit-system-on-general-purpose-pcb",
+            "title": "Assembling of electronic circuit/system on general purpose PCB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxesl106-basic-electrical-and-electronics-engineering-workshop-15-module-15-assembling-of-electronic-circuitsystem-on-general-purpose-pcb-test-and-test-and-show-the-functioning-any-two",
+            "title": "Test and show the functioning (Any two)",
             "content": "",
             "pyqs": []
           },
@@ -1223,44 +1349,116 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electrochemical-cell-electrode-potential-nernst-equation-for-single-electrode-and-cell-numerical-problems",
-            "title": "Electrochemical Cell - Electrode potential- Nernst equation for single electrode and cell (Numerical problems)",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electrochemical-cell",
+            "title": "Electrochemical Cell",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-reference-electrodes-she-calomel-electrode-construction-and-working",
-            "title": "Reference electrodes - SHE & Calomel electrode -Construction and Working",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electrode-potential",
+            "title": "Electrode potential",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electrochemical-series-applications",
-            "title": "Electrochemical series - Applications",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-nernst-equation-for-single-electrode",
+            "title": "Nernst equation for single electrode",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-glass-electrode-ph-measurement",
-            "title": "Glass Electrode & pH Measurement",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-nernst-equation-for-cell",
+            "title": "Nernst equation for cell",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-conductivity-measurement-using-digital-conductivity-meter",
-            "title": "Conductivity- Measurement using Digital conductivity meter",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-numerical-problems",
+            "title": "Numerical problems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-li-ion-battery-h-2-o2-fuel-cell-acid-electrolyte-only-construction-and-working",
-            "title": "Li-ion battery & H 2-O2 fuel cell (acid electrolyte only) construction and working.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-reference-electrodes",
+            "title": "Reference electrodes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-corrosion-electrochemical-corrosion-mechanism-acidic-alkaline-medium",
-            "title": "Corrosion -Electrochemical corrosion mechanism (acidic & alkaline medium)",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-she-construction-and-working",
+            "title": "SHE - Construction and Working",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-calomel-electrode-construction-and-working",
+            "title": "Calomel electrode - Construction and Working",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electrochemical-series",
+            "title": "Electrochemical series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-applications-of-electrochemical-series",
+            "title": "Applications of Electrochemical series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-glass-electrode",
+            "title": "Glass Electrode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-ph-measurement",
+            "title": "pH Measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-conductivity",
+            "title": "Conductivity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-measurement-using-digital-conductivity-meter",
+            "title": "Measurement using Digital conductivity meter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-li-ion-battery-construction-and-working",
+            "title": "Li-ion battery - construction and working",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-h2-o2-fuel-cell-acid-electrolyte-only-construction-and-working",
+            "title": "H2-O2 fuel cell (acid electrolyte only) - construction and working",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-corrosion",
+            "title": "Corrosion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electrochemical-corrosion-mechanism-acidic-medium",
+            "title": "Electrochemical corrosion mechanism (acidic medium)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electrochemical-corrosion-mechanism-alkaline-medium",
+            "title": "Electrochemical corrosion mechanism (alkaline medium)",
             "content": "",
             "pyqs": []
           },
@@ -1271,14 +1469,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-corrosion-control-methods-cathodic-protection-sacrificial-anodic-protection-and-impressed-current-cathodic-protection",
-            "title": "Corrosion control methods - Cathodic Protection - Sacrificial anodic protection and impressed current cathodic protection",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-corrosion-control-methods",
+            "title": "Corrosion control methods",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electroplating-of-copper-electroless-plating-of-copper",
-            "title": "Electroplating of copper - Electroless plating of copper.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-cathodic-protection",
+            "title": "Cathodic Protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-sacrificial-anodic-protection",
+            "title": "Sacrificial anodic protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-impressed-current-cathodic-protection",
+            "title": "Impressed current cathodic protection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electroplating-of-copper",
+            "title": "Electroplating of copper",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-01-module-1-electrochemistry-and-corrosion-science-electroless-plating-of-copper",
+            "title": "Electroless plating of copper",
             "content": "",
             "pyqs": []
           }
@@ -1295,38 +1517,152 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-nanomaterials-classification-based-on-dimension-materials",
-            "title": "Nanomaterials - Classification based on Dimension & Materials",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-nanomaterials",
+            "title": "Nanomaterials",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-synthesis-sol-gel-chemical-reduction-applications-of-nanomaterials-carbon-nanotubes-fullerenes-graphene-carbon-quantum-dots-structure-properties-application",
-            "title": "Synthesis - Sol gel & Chemical Reduction - Applications of nanomaterials - Carbon Nanotubes, Fullerenes, Graphene & Carbon Quantum Dots - structure, properties & application.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-classification-of-nanomaterials-based-on-dimension",
+            "title": "Classification of Nanomaterials based on Dimension",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-polymers-fire-retardant-polymers-halogenated-non-halogenated-polymers-examples-only",
-            "title": "Polymers - Fire Retardant Polymers- Halogenated & Non-halogenated polymers (Examples only)",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-classification-of-nanomaterials-based-on-materials",
+            "title": "Classification of Nanomaterials based on Materials",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-conducting-polymers-classification-polyaniline-polypyrrole-synthesis-properties-and-applications",
-            "title": "Conducting Polymers-Classification- Polyaniline & Polypyrrole-synthesis, properties and applications.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-synthesis-of-nanomaterials",
+            "title": "Synthesis of Nanomaterials",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-organic-electronic-materials-and-devices-construction-working-and-applications-of-organic-light-emitting-diode-oled-dye-sensitized-solar-cells-dssc",
-            "title": "Organic electronic materials and devices - construction, working and applications of Organic Light Emitting Diode (OLED) & Dye-Sensitized Solar Cells (DSSC)",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-sol-gel-method",
+            "title": "Sol gel method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-materials-used-in-quantum-computing-technology-super-capacitors-spintronics",
-            "title": "Materials used in Quantum computing Technology , Super capacitors, Spintronics",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-chemical-reduction-method",
+            "title": "Chemical Reduction method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-applications-of-nanomaterials",
+            "title": "Applications of nanomaterials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-carbon-nanotubes-structure-properties-application",
+            "title": "Carbon Nanotubes - structure, properties & application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-fullerenes-structure-properties-application",
+            "title": "Fullerenes - structure, properties & application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-graphene-structure-properties-application",
+            "title": "Graphene - structure, properties & application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-carbon-quantum-dots-structure-properties-application",
+            "title": "Carbon Quantum Dots - structure, properties & application",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-polymers",
+            "title": "Polymers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-fire-retardant-polymers",
+            "title": "Fire Retardant Polymers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-halogenated-polymers-examples-only",
+            "title": "Halogenated polymers (Examples only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-non-halogenated-polymers-examples-only",
+            "title": "Non-halogenated polymers (Examples only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-conducting-polymers",
+            "title": "Conducting Polymers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-classification-of-conducting-polymers",
+            "title": "Classification of Conducting Polymers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-polyaniline-synthesis-properties-and-applications",
+            "title": "Polyaniline - synthesis, properties and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-polypyrrole-synthesis-properties-and-applications",
+            "title": "Polypyrrole - synthesis, properties and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-organic-electronic-materials-and-devices",
+            "title": "Organic electronic materials and devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-organic-light-emitting-diode-oled-construction-working-and-applications",
+            "title": "Organic Light Emitting Diode (OLED) - construction, working and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-dye-sensitized-solar-cells-dssc-construction-working-and-applications",
+            "title": "Dye-Sensitized Solar Cells (DSSC) - construction, working and applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-materials-used-in-quantum-computing-technology",
+            "title": "Materials used in Quantum computing Technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-materials-used-in-super-capacitors",
+            "title": "Materials used in Super capacitors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-02-module-2-materials-for-electronic-applications-materials-used-in-spintronics",
+            "title": "Materials used in Spintronics",
             "content": "",
             "pyqs": []
           }
@@ -1343,32 +1679,140 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-spectroscopy-types-of-spectra-molecular-energy-levels-beer-lambert-s-law-numerical-problems",
-            "title": "Spectroscopy - Types of spectra- Molecular energy levels - Beer Lambert's law - Numerical problems",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-spectroscopy",
+            "title": "Spectroscopy",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-electronic-spectroscopy-principle-types-of-electronic-transitions-role-of-conjugation-in-absorption-maxima-instrumentation-applications",
-            "title": "Electronic Spectroscopy - Principle, Types of electronic transitions -Role of conjugation in absorption maxima- Instrumentation-Applications",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-types-of-spectra",
+            "title": "Types of spectra",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-vibrational-spectroscopy-principle-number-of-vibrational-modes-vibrational-modes-of-co-2-and-h-2o-applications",
-            "title": "Vibrational spectroscopy - Principle- Number of vibrational modes - Vibrational modes of CO 2 and H 2O - Applications",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-molecular-energy-levels",
+            "title": "Molecular energy levels",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-thermal-analysis-dielectric-thermal-analysis-deta-of-polymers-working-and-application",
-            "title": "Thermal Analysis : Dielectric Thermal Analysis (DETA) of Polymers- Working and Application.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-beer-lambert-s-law",
+            "title": "Beer Lambert's law",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-electron-microscopic-techniques-sem-principle-instrumentation-and-applications",
-            "title": "Electron Microscopic Techniques: SEM - Principle, instrumentation and Applications.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-numerical-problems",
+            "title": "Numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-electronic-spectroscopy",
+            "title": "Electronic Spectroscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-principle-of-electronic-spectroscopy",
+            "title": "Principle of Electronic Spectroscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-types-of-electronic-transitions",
+            "title": "Types of electronic transitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-role-of-conjugation-in-absorption-maxima",
+            "title": "Role of conjugation in absorption maxima",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-instrumentation-of-electronic-spectroscopy",
+            "title": "Instrumentation of Electronic Spectroscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-applications-of-electronic-spectroscopy",
+            "title": "Applications of Electronic Spectroscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-vibrational-spectroscopy",
+            "title": "Vibrational spectroscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-principle-of-vibrational-spectroscopy",
+            "title": "Principle of Vibrational spectroscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-number-of-vibrational-modes",
+            "title": "Number of vibrational modes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-vibrational-modes-of-co2",
+            "title": "Vibrational modes of CO2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-vibrational-modes-of-h2o",
+            "title": "Vibrational modes of H2O",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-applications-of-vibrational-spectroscopy",
+            "title": "Applications of Vibrational spectroscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-thermal-analysis",
+            "title": "Thermal Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-dielectric-thermal-analysis-deta-of-polymers",
+            "title": "Dielectric Thermal Analysis (DETA) of Polymers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-working-of-deta",
+            "title": "Working of DETA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-application-of-deta",
+            "title": "Application of DETA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-electron-microscopic-techniques",
+            "title": "Electron Microscopic Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-03-module-3-molecular-spectroscopy-and-analytical-techniques-sem-principle-instrumentation-and-applications",
+            "title": "SEM - Principle, instrumentation and Applications",
             "content": "",
             "pyqs": []
           }
@@ -1385,44 +1829,200 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-water-characteristics-hardness-types-of-hardness-temporary-and-permanent-disadvantages-of-hard-water-degree-of-hardness-numericals",
-            "title": "Water characteristics - Hardness - Types of hardness- Temporary and Permanent - Disadvantages of hard water -Degree of hardness (Numericals)",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-water-characteristics",
+            "title": "Water characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-water-softening-methods-ion-exchange-process-principle-procedure-and-advantages",
-            "title": "Water softening methods-Ion exchange process- Principle, procedure and advantages.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-hardness",
+            "title": "Hardness",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-reverse-osmosis-principle-process-and-advantages-water-disinfection-methods-chlorination-break-point-chlorination-ozone-and-uv-irradiation",
-            "title": "Reverse osmosis - principle, process and advantages. - Water disinfection methods - chlorination-Break point chlorination, ozone and UV irradiation.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-types-of-hardness",
+            "title": "Types of hardness",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-dissolved-oxygen-do-bod-and-cod-definition-significance",
-            "title": "Dissolved oxygen (DO), BOD and COD- Definition & Significance.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-temporary-hardness",
+            "title": "Temporary hardness",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-waste-management-sewage-water-treatment-primary-secondary-and-tertiary-flow-diagram-trickling-filter-and-uasb-process",
-            "title": "Waste Management : Sewage water treatment- Primary, Secondary and Tertiary - Flow diagram -Trickling filter and UASB process.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-permanent-hardness",
+            "title": "Permanent hardness",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-e-waste-methods-of-disposal-recycle-recovery-and-reuse",
-            "title": "E Waste, Methods of disposal - recycle, recovery and reuse.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-disadvantages-of-hard-water",
+            "title": "Disadvantages of hard water",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-chemistry-of-climate-change-greenhouse-gases-ozone-depletion-sustainable-development-an-introduction-to-sustainable-development-goals",
-            "title": "Chemistry of climate change- Greenhouse Gases- Ozone Depletion-Sustainable Development- an introduction to Sustainable Development Goals.",
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-degree-of-hardness-numericals",
+            "title": "Degree of hardness (Numericals)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-water-softening-methods",
+            "title": "Water softening methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-ion-exchange-process-principle-procedure-and-advantages",
+            "title": "Ion exchange process - Principle, procedure and advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-reverse-osmosis-principle-process-and-advantages",
+            "title": "Reverse osmosis - principle, process and advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-water-disinfection-methods",
+            "title": "Water disinfection methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-chlorination",
+            "title": "Chlorination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-break-point-chlorination",
+            "title": "Break point chlorination",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-ozone",
+            "title": "Ozone",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-uv-irradiation",
+            "title": "UV irradiation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-dissolved-oxygen-do-definition-significance",
+            "title": "Dissolved oxygen (DO) - Definition & Significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-bod-definition-significance",
+            "title": "BOD - Definition & Significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-cod-definition-significance",
+            "title": "COD - Definition & Significance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-waste-management",
+            "title": "Waste Management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-sewage-water-treatment",
+            "title": "Sewage water treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-primary-treatment",
+            "title": "Primary treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-secondary-treatment",
+            "title": "Secondary treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-tertiary-treatment",
+            "title": "Tertiary treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-flow-diagram-of-sewage-water-treatment",
+            "title": "Flow diagram of Sewage water treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-trickling-filter",
+            "title": "Trickling filter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-uasb-process",
+            "title": "UASB process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-e-waste",
+            "title": "E Waste",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-methods-of-disposal-recycle-recovery-and-reuse",
+            "title": "Methods of disposal - recycle, recovery and reuse",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-chemistry-of-climate-change",
+            "title": "Chemistry of climate change",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-greenhouse-gases",
+            "title": "Greenhouse Gases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-ozone-depletion",
+            "title": "Ozone Depletion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-sustainable-development",
+            "title": "Sustainable Development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxcyt122-chemistry-for-information-science-and-electrical-science-04-module-4-environmental-chemistry-introduction-to-sustainable-development-goals",
+            "title": "Introduction to Sustainable Development Goals",
             "content": "",
             "pyqs": []
           }
@@ -1943,8 +2543,44 @@
         "title": "Module 2: Projection of simple solids such as triangular rectangle square pentago",
         "topics": [
           {
-            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-projection-of-simple-solids-prisms-triangular-rectangular-square-pentagonal-and-hexagonal",
-            "title": "Projection of Simple solids - Prisms (Triangular, Rectangular, Square, Pentagonal and Hexagonal)",
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-projection-of-simple-solids",
+            "title": "Projection of Simple solids",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-projection-of-prisms",
+            "title": "Projection of Prisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-triangular-prisms",
+            "title": "Triangular Prisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-rectangular-prisms",
+            "title": "Rectangular Prisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-square-prisms",
+            "title": "Square Prisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-pentagonal-prisms",
+            "title": "Pentagonal Prisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-02-module-2-projection-of-simple-solids-such-as-triangular-rectangle-square-pentago-hexagonal-prisms",
+            "title": "Hexagonal Prisms",
             "content": "",
             "pyqs": []
           },
@@ -2051,8 +2687,50 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-view-and-projections-of-prisms-pyramids-cone-cylinder-sphere-hemisphere-and-their-combinations",
-            "title": "Isometric View and Projections of Prisms, Pyramids, Cone, Cylinder, Sphere, Hemisphere and their combinations",
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-view",
+            "title": "Isometric View",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-projections-of-prisms",
+            "title": "Isometric Projections of Prisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-projections-of-pyramids",
+            "title": "Isometric Projections of Pyramids",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-projections-of-cone",
+            "title": "Isometric Projections of Cone",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-projections-of-cylinder",
+            "title": "Isometric Projections of Cylinder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-projections-of-sphere",
+            "title": "Isometric Projections of Sphere",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-projections-of-hemisphere",
+            "title": "Isometric Projections of Hemisphere",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gmest103-engineering-graphics-and-computer-aided-drawing-04-module-4-isometric-projection-isometric-scale-isometric-projections-of-their-combinations",
+            "title": "Isometric Projections of their combinations",
             "content": "",
             "pyqs": []
           },
@@ -2396,8 +3074,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-uchwt127-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di-meaning-aims-and-objectives-of-yoga",
-            "title": "Meaning, Aims and objectives of yoga",
+            "id": "ee-1-uchwt127-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di-meaning-of-yoga",
+            "title": "Meaning of yoga",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-uchwt127-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di-aims-of-yoga",
+            "title": "Aims of yoga",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-uchwt127-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di-objectives-of-yoga",
+            "title": "Objectives of yoga",
             "content": "",
             "pyqs": []
           },
@@ -2420,8 +3110,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-uchwt127-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di-pranayama-and-its-types",
-            "title": "Pranayama and Its Types",
+            "id": "ee-1-uchwt127-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di-pranayama",
+            "title": "Pranayama",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-uchwt127-health-and-wellness-03-module-3-lifestyle-management-strategies-to-prevent-manage-common-hypokinetic-di-types-of-pranayama",
+            "title": "Types of Pranayama",
             "content": "",
             "pyqs": []
           },
@@ -2504,8 +3200,14 @@
         "title": "Module 4: First aid and principles of first aid primary survey abc airway breathi",
         "topics": [
           {
-            "id": "ee-1-uchwt127-health-and-wellness-04-module-4-first-aid-and-principles-of-first-aid-primary-survey-abc-airway-breathi-first-aid-and-principles-of-first-aid",
-            "title": "First aid and principles of First Aid",
+            "id": "ee-1-uchwt127-health-and-wellness-04-module-4-first-aid-and-principles-of-first-aid-primary-survey-abc-airway-breathi-first-aid",
+            "title": "First aid",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-uchwt127-health-and-wellness-04-module-4-first-aid-and-principles-of-first-aid-primary-survey-abc-airway-breathi-principles-of-first-aid",
+            "title": "Principles of First Aid",
             "content": "",
             "pyqs": []
           },
@@ -2663,14 +3365,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-capacitors-v-i-relations-and-energy-stored",
-            "title": "Capacitors: V-I relations and Energy stored",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-capacitors-v-i-relations",
+            "title": "Capacitors: V-I relations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-inductors-v-i-relations-and-energy-stored",
-            "title": "Inductors: V-I relations and Energy stored",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-capacitors-energy-stored",
+            "title": "Capacitors: Energy stored",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-inductors-v-i-relations",
+            "title": "Inductors: V-I relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-inductors-energy-stored",
+            "title": "Inductors: Energy stored",
             "content": "",
             "pyqs": []
           },
@@ -2735,8 +3449,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-magnetic-circuits-basic-terminology-mmf-field-strength-flux-density-reluctance",
-            "title": "Magnetic Circuits: Basic Terminology - MMF, field strength, flux density, reluctance",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-magnetic-circuits-mmf",
+            "title": "Magnetic Circuits: MMF",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-magnetic-circuits-field-strength",
+            "title": "Magnetic Circuits: field strength",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-magnetic-circuits-flux-density",
+            "title": "Magnetic Circuits: flux density",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-magnetic-circuits-reluctance",
+            "title": "Magnetic Circuits: reluctance",
             "content": "",
             "pyqs": []
           },
@@ -2747,8 +3479,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-series-and-parallel-magnetic-circuits-with-composite-materials-numerical-problems-not-needed",
-            "title": "Series and parallel magnetic circuits with composite materials (numerical problems not needed)",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-series-magnetic-circuits-with-composite-materials-numerical-problems-not-needed",
+            "title": "Series magnetic circuits with composite materials (numerical problems not needed)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-01-module-1-elementary-concepts-of-dc-electric-circuits-parallel-magnetic-circuits-with-composite-materials-numerical-problems-not-needed",
+            "title": "Parallel magnetic circuits with composite materials (numerical problems not needed)",
             "content": "",
             "pyqs": []
           }
@@ -2789,8 +3527,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-self-inductance-and-mutual-inductance",
-            "title": "Self-inductance and mutual inductance",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-self-inductance",
+            "title": "Self-inductance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-mutual-inductance",
+            "title": "Mutual inductance",
             "content": "",
             "pyqs": []
           },
@@ -2813,8 +3557,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-representation-of-sinusoidal-waveforms-frequency-period-average-value-rms-value-and-form-factor-numerical-problems",
-            "title": "Representation of sinusoidal waveforms: frequency, period, average value, RMS value and form factor - numerical problems",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-representation-of-sinusoidal-waveforms-frequency",
+            "title": "Representation of sinusoidal waveforms: frequency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-representation-of-sinusoidal-waveforms-period",
+            "title": "Representation of sinusoidal waveforms: period",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-representation-of-sinusoidal-waveforms-average-value",
+            "title": "Representation of sinusoidal waveforms: average value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-representation-of-sinusoidal-waveforms-rms-value",
+            "title": "Representation of sinusoidal waveforms: RMS value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-representation-of-sinusoidal-waveforms-form-factor-numerical-problems",
+            "title": "Representation of sinusoidal waveforms: form factor - numerical problems",
             "content": "",
             "pyqs": []
           },
@@ -2825,20 +3593,56 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-trigonometric-rectangular-polar-and-complex-forms",
-            "title": "Trigonometric, Rectangular, Polar and complex forms",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-trigonometric-form",
+            "title": "Trigonometric form",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-analysis-of-simple-ac-circuits-purely-resistive-inductive-and-capacitive-circuits",
-            "title": "Analysis of simple AC circuits: Purely resistive, inductive and capacitive circuits",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-rectangular-form",
+            "title": "Rectangular form",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-inductive-and-capacitive-reactance",
-            "title": "Inductive and capacitive reactance",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-polar-form",
+            "title": "Polar form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-complex-forms",
+            "title": "Complex forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-analysis-of-simple-ac-circuits-purely-resistive-circuits",
+            "title": "Analysis of simple AC circuits: Purely resistive circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-analysis-of-simple-ac-circuits-inductive-circuits",
+            "title": "Analysis of simple AC circuits: Inductive circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-analysis-of-simple-ac-circuits-capacitive-circuits",
+            "title": "Analysis of simple AC circuits: Capacitive circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-inductive-reactance",
+            "title": "Inductive reactance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-capacitive-reactance",
+            "title": "Capacitive reactance",
             "content": "",
             "pyqs": []
           },
@@ -2849,14 +3653,44 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-rl-rc-and-rlc-series-circuits",
-            "title": "RL, RC and RLC series circuits",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-rl-series-circuits",
+            "title": "RL series circuits",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-power-factor-active-reactive-and-apparent-power-simple-numerical-problems",
-            "title": "Power factor, active, reactive and apparent power - Simple numerical problems",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-rc-series-circuits",
+            "title": "RC series circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-rlc-series-circuits",
+            "title": "RLC series circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-power-factor",
+            "title": "Power factor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-active-power",
+            "title": "Active power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-reactive-power",
+            "title": "Reactive power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-apparent-power-simple-numerical-problems",
+            "title": "Apparent power - Simple numerical problems",
             "content": "",
             "pyqs": []
           },
@@ -2873,14 +3707,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-star-and-delta-connections-balanced-only",
-            "title": "Star and delta connections (balanced only)",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-star-connections-balanced-only",
+            "title": "Star connections (balanced only)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-relation-between-line-and-phase-voltages-line-and-phase-currents-numerical-problems",
-            "title": "Relation between line and phase voltages, line and phase currents - numerical problems",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-delta-connections-balanced-only",
+            "title": "Delta connections (balanced only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-relation-between-line-and-phase-voltages-numerical-problems",
+            "title": "Relation between line and phase voltages - numerical problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-02-module-2-electromagnetic-induction-relation-between-line-and-phase-currents-numerical-problems",
+            "title": "Relation between line and phase currents - numerical problems",
             "content": "",
             "pyqs": []
           }
@@ -2921,8 +3767,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-zener-diode-and-avalanche-breakdown",
-            "title": "Zener diode and avalanche breakdown",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-zener-diode",
+            "title": "Zener diode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-avalanche-breakdown",
+            "title": "Avalanche breakdown",
             "content": "",
             "pyqs": []
           },
@@ -2939,20 +3791,50 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-circuit-and-working-of-half-wave-full-wave-and-bridge-rectifiers",
-            "title": "Circuit and working of half wave, full wave and bridge rectifiers",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-circuit-and-working-of-half-wave-rectifiers",
+            "title": "Circuit and working of half wave rectifiers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-ripple-factor-with-and-without-capacitor-filters",
-            "title": "Ripple factor (with and without capacitor filters)",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-circuit-and-working-of-full-wave-rectifiers",
+            "title": "Circuit and working of full wave rectifiers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-construction-working-and-v-i-characteristics-of-bjt",
-            "title": "Construction, working and V-I Characteristics of BJT",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-circuit-and-working-of-bridge-rectifiers",
+            "title": "Circuit and working of bridge rectifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-ripple-factor-with-capacitor-filters",
+            "title": "Ripple factor with capacitor filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-ripple-factor-without-capacitor-filters",
+            "title": "Ripple factor without capacitor filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-construction-of-bjt",
+            "title": "Construction of BJT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-working-of-bjt",
+            "title": "Working of BJT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-v-i-characteristics-of-bjt",
+            "title": "V-I Characteristics of BJT",
             "content": "",
             "pyqs": []
           },
@@ -2969,8 +3851,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-concept-of-biasing-and-load-line",
-            "title": "Concept of biasing and load line",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-concept-of-biasing",
+            "title": "Concept of biasing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-load-line",
+            "title": "Load line",
             "content": "",
             "pyqs": []
           },
@@ -2999,8 +3887,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-construction-and-working-of-n-channel-and-p-channel-mosfets",
-            "title": "Construction and working of N-channel and P-Channel MOSFETs",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-construction-and-working-of-n-channel-mosfets",
+            "title": "Construction and working of N-channel MOSFETs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-03-module-3-introduction-to-electronic-devices-construction-and-working-of-p-channel-mosfets",
+            "title": "Construction and working of P-Channel MOSFETs",
             "content": "",
             "pyqs": []
           }
@@ -3029,20 +3923,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-concept-of-am-and-fm-no-derivation-required",
-            "title": "Concept of AM and FM (No derivation required)",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-concept-of-am-no-derivation-required",
+            "title": "Concept of AM (No derivation required)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-block-diagram-of-am-and-fm-super-heterodyne-receiver",
-            "title": "Block diagram of AM and FM super-heterodyne receiver",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-concept-of-fm-no-derivation-required",
+            "title": "Concept of FM (No derivation required)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-basic-concepts-of-wired-and-wireless-communication",
-            "title": "Basic concepts of Wired and Wireless communication",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-block-diagram-of-am-super-heterodyne-receiver",
+            "title": "Block diagram of AM super-heterodyne receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-block-diagram-of-fm-super-heterodyne-receiver",
+            "title": "Block diagram of FM super-heterodyne receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-basic-concepts-of-wired-communication",
+            "title": "Basic concepts of Wired communication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-basic-concepts-of-wireless-communication",
+            "title": "Basic concepts of Wireless communication",
             "content": "",
             "pyqs": []
           },
@@ -3077,14 +3989,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-introduction-to-cro-and-lissajous-patterns",
-            "title": "Introduction to CRO and Lissajous patterns",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-introduction-to-cro",
+            "title": "Introduction to CRO",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-applications-of-modern-electronics-iot-based-smart-homes-healthcare-and-agriculture-case-study-only",
-            "title": "Applications of modern electronics - IoT based smart homes, healthcare and agriculture (Case study only)",
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-lissajous-patterns",
+            "title": "Lissajous patterns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-applications-of-modern-electronics-iot-based-smart-homes-case-study-only",
+            "title": "Applications of modern electronics - IoT based smart homes (Case study only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-applications-of-modern-electronics-iot-based-healthcare-case-study-only",
+            "title": "Applications of modern electronics - IoT based healthcare (Case study only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gxest104-introduction-to-electrical-and-electronics-engineering-04-module-4-modern-electronics-and-its-applications-applications-of-modern-electronics-iot-based-agriculture-case-study-only",
+            "title": "Applications of modern electronics - IoT based agriculture (Case study only)",
             "content": "",
             "pyqs": []
           }
@@ -3152,8 +4082,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-01-module-1-linear-systems-of-equations-gauss-elimination-determining-eigen-values-and-eigen-vectors",
-            "title": "Determining Eigen values and Eigen vectors",
+            "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-01-module-1-linear-systems-of-equations-gauss-elimination-determining-eigen-values",
+            "title": "Determining Eigen values",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-01-module-1-linear-systems-of-equations-gauss-elimination-determining-eigen-vectors",
+            "title": "Determining Eigen vectors",
             "content": "",
             "pyqs": []
           },
@@ -3225,7 +4161,7 @@
           },
           {
             "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-02-module-2-homogeneous-linear-odes-of-second-order-particular-solutions-for-the-function-ke-x",
-            "title": "Particular solutions for the function ke^(γx)",
+            "title": "Particular solutions for the function ke^γx",
             "content": "",
             "pyqs": []
           },
@@ -3249,13 +4185,13 @@
           },
           {
             "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-02-module-2-homogeneous-linear-odes-of-second-order-particular-solutions-for-the-function-ke-x-cos-x",
-            "title": "Particular solutions for the function ke^(αx)cos(ωx)",
+            "title": "Particular solutions for the function ke^αx cos(ωx)",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-02-module-2-homogeneous-linear-odes-of-second-order-particular-solutions-for-the-function-ke-x-sin-x",
-            "title": "Particular solutions for the function ke^(αx)sin(ωx)",
+            "title": "Particular solutions for the function ke^αx sin(ωx)",
             "content": "",
             "pyqs": []
           },
@@ -3399,13 +4335,13 @@
           },
           {
             "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-04-module-4-taylor-series-representation-without-proof-assuming-the-possibility-of-fourier-series-of-2-periodic-functions",
-            "title": "Fourier series of 2π periodic functions",
+            "title": "Fourier series of 2π Periodic functions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-1-gymat101-mathematics-for-electrical-science-and-physical-science-1-04-module-4-taylor-series-representation-without-proof-assuming-the-possibility-of-fourier-series-of-2l-periodic-functions",
-            "title": "Fourier series of 2l periodic functions",
+            "title": "Fourier series of 2l Periodic functions",
             "content": "",
             "pyqs": []
           },

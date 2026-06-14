@@ -29,8 +29,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-01-module-1-clocked-synchronous-networks-state-assignment-and-reduction",
-            "title": "State assignment and reduction",
+            "id": "ec-4-peect416-digital-system-design-01-module-1-clocked-synchronous-networks-state-assignment",
+            "title": "State assignment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-01-module-1-clocked-synchronous-networks-reduction",
+            "title": "Reduction",
             "content": "",
             "pyqs": []
           },
@@ -77,8 +83,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-02-module-2-asm-chart-and-its-realization-state-assignment-problem-and-the-transition-table",
-            "title": "State assignment problem and the transition table",
+            "id": "ec-4-peect416-digital-system-design-02-module-2-asm-chart-and-its-realization-state-assignment-problem",
+            "title": "State assignment problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-02-module-2-asm-chart-and-its-realization-transition-table",
+            "title": "Transition table",
             "content": "",
             "pyqs": []
           }
@@ -89,8 +101,14 @@
         "title": "Module 3: Hazards static and dynamic hazards in combinational networks",
         "topics": [
           {
-            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-hazards-static-and-dynamic-hazards-in-combinational-networks",
-            "title": "Hazards - static and dynamic hazards in combinational networks",
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-static-hazards-in-combinational-networks",
+            "title": "Static hazards in combinational networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-dynamic-hazards-in-combinational-networks",
+            "title": "Dynamic hazards in combinational networks",
             "content": "",
             "pyqs": []
           },
@@ -119,20 +137,44 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-practical-issues-clock-skew-and-jitter",
-            "title": "Practical issues- clock skew and jitter",
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-clock-skew",
+            "title": "Clock skew",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-synchronous-and-asynchronous-inputs",
-            "title": "Synchronous and asynchronous inputs",
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-jitter",
+            "title": "Jitter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-faults-fault-table-method-path-sensitization-method-boolean-difference-method",
-            "title": "Faults: Fault table method - path sensitization method - Boolean difference method",
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-synchronous-inputs",
+            "title": "Synchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-asynchronous-inputs",
+            "title": "Asynchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-fault-table-method",
+            "title": "Fault table method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-path-sensitization-method",
+            "title": "Path sensitization method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-boolean-difference-method",
+            "title": "Boolean difference method",
             "content": "",
             "pyqs": []
           }
@@ -155,26 +197,44 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-data-types-and-objects",
-            "title": "Data types and objects",
+            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-data-types",
+            "title": "Data types",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-different-modelling-styles-in-vhdl-dataflow",
-            "title": "different modelling styles in VHDL - Dataflow",
+            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-objects",
+            "title": "Objects",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-behavioural-and-structural-modelling",
-            "title": "Behavioural and Structural Modelling",
+            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-dataflow-modelling",
+            "title": "Dataflow Modelling",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-vhdl-constructs-and-codes-for-combinational-and-sequential-circuits",
-            "title": "VHDL constructs and codes for combinational and sequential circuits",
+            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-behavioural-modelling",
+            "title": "Behavioural Modelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-structural-modelling",
+            "title": "Structural Modelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-vhdl-constructs-and-codes-for-combinational-circuits",
+            "title": "VHDL constructs and codes for combinational circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect416-digital-system-design-04-module-4-vlsi-design-flow-vhdl-constructs-and-codes-for-sequential-circuits",
+            "title": "VHDL constructs and codes for sequential circuits",
             "content": "",
             "pyqs": []
           }
@@ -224,8 +284,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-01-module-1-clocked-synchronous-networks-state-assignment-and-reduction",
-            "title": "State assignment and reduction",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-01-module-1-clocked-synchronous-networks-state-assignment",
+            "title": "State assignment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-01-module-1-clocked-synchronous-networks-reduction",
+            "title": "Reduction",
             "content": "",
             "pyqs": []
           },
@@ -272,8 +338,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-02-module-2-asynchronous-sequential-circuits-state-assignment-problem-and-the-transition-table",
-            "title": "State assignment problem and the transition table",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-02-module-2-asynchronous-sequential-circuits-state-assignment-problem",
+            "title": "State assignment problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-02-module-2-asynchronous-sequential-circuits-the-transition-table",
+            "title": "The transition table",
             "content": "",
             "pyqs": []
           },
@@ -296,8 +368,20 @@
         "title": "Module 3: Hazards static and dynamic hazards in combinational networks",
         "topics": [
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-hazards-static-and-dynamic-hazards-in-combinational-networks",
-            "title": "Hazards - static and dynamic hazards in combinational networks",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-hazards",
+            "title": "Hazards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-static-hazards-in-combinational-networks",
+            "title": "Static hazards in combinational networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-dynamic-hazards-in-combinational-networks",
+            "title": "Dynamic hazards in combinational networks",
             "content": "",
             "pyqs": []
           },
@@ -326,26 +410,50 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-practical-issues-clock-skew-and-jitter",
-            "title": "Practical issues- clock skew and jitter",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-practical-issues",
+            "title": "Practical issues",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-synchronous-and-asynchronous-inputs",
-            "title": "Synchronous and asynchronous inputs",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-clock-skew",
+            "title": "Clock skew",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-flip-flops-and-simple-flip-flop-applications",
-            "title": "Flip-Flops and Simple Flip-Flop Applications",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-jitter",
+            "title": "Jitter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-synchronous-inputs",
+            "title": "Synchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-asynchronous-inputs",
+            "title": "Asynchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-flip-flops",
+            "title": "Flip-Flops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-simple-flip-flop-applications",
+            "title": "Simple Flip-Flop Applications",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-switch-debouncer",
-            "title": "switch debouncer.",
+            "title": "Switch debouncer",
             "content": "",
             "pyqs": []
           },
@@ -356,8 +464,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-fault-table-method-path-sensitization-method-boolean-difference-method",
-            "title": "Fault table method - path sensitization method - Boolean difference method",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-fault-table-method",
+            "title": "Fault table method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-path-sensitization-method",
+            "title": "Path sensitization method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-boolean-difference-method",
+            "title": "Boolean difference method",
             "content": "",
             "pyqs": []
           },
@@ -368,8 +488,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-automatic-test-pattern-generation-built-in-self-test-bist",
-            "title": "Automatic test pattern generation - Built in Self-Test (BIST)",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-automatic-test-pattern-generation",
+            "title": "Automatic test pattern generation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-built-in-self-test-bist",
+            "title": "Built in Self-Test (BIST)",
             "content": "",
             "pyqs": []
           }
@@ -386,8 +512,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-design-entry-schematic-fsm-hdl",
-            "title": "Design entry: Schematic, FSM & HDL",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-design-entry",
+            "title": "Design entry",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-schematic",
+            "title": "Schematic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-fsm",
+            "title": "FSM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-hdl",
+            "title": "HDL",
             "content": "",
             "pyqs": []
           },
@@ -416,8 +560,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-data-types-and-operators",
-            "title": "Data types and operators",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-data-types",
+            "title": "Data types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-operators",
+            "title": "Operators",
             "content": "",
             "pyqs": []
           },
@@ -434,8 +584,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-behavioral-and-structural-modeling",
-            "title": "Behavioral and Structural Modeling",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-behavioral-modeling",
+            "title": "Behavioral Modeling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-structural-modeling",
+            "title": "Structural Modeling",
             "content": "",
             "pyqs": []
           },
@@ -447,13 +603,19 @@
           },
           {
             "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-simulation",
-            "title": "Simulation.",
+            "title": "Simulation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-vhdl-constructs-and-codes-for-combinational-and-sequential-circuits",
-            "title": "VHDL constructs and codes for combinational and sequential circuits.",
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-vhdl-constructs-and-codes-for-combinational-circuits",
+            "title": "VHDL constructs and codes for combinational circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect415-digital-systems-and-vlsi-design-04-module-4-vlsi-design-flow-vhdl-constructs-and-codes-for-sequential-circuits",
+            "title": "VHDL constructs and codes for sequential circuits",
             "content": "",
             "pyqs": []
           }
@@ -521,8 +683,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-measurement-of-elasticity-and-its-applications",
-            "title": "measurement of elasticity and its applications",
+            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-measurement-of-elasticity",
+            "title": "Measurement of elasticity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-applications-of-elasticity",
+            "title": "Applications of elasticity",
             "content": "",
             "pyqs": []
           },
@@ -533,8 +701,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-demand-and-supply-and-its-effects",
-            "title": "Changes in demand and supply and its effects",
+            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-demand",
+            "title": "Changes in demand",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-supply",
+            "title": "Changes in supply",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-effects-of-changes-in-demand-and-supply",
+            "title": "Effects of changes in demand and supply",
             "content": "",
             "pyqs": []
           },
@@ -557,8 +737,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-internal-and-external-economies",
-            "title": "Internal and External Economies",
+            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-internal-economies",
+            "title": "Internal Economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-external-economies",
+            "title": "External Economies",
             "content": "",
             "pyqs": []
           },
@@ -588,13 +774,19 @@
           },
           {
             "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-private-cost",
-            "title": "private cost",
+            "title": "Private cost",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-explicit-and-implicit-cost",
-            "title": "Explicit and implicit cost",
+            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-explicit-cost",
+            "title": "Explicit cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-implicit-cost",
+            "title": "Implicit cost",
             "content": "",
             "pyqs": []
           },
@@ -612,7 +804,7 @@
           },
           {
             "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-short-run-cost-curves",
-            "title": "short run cost curves",
+            "title": "Short run cost curves",
             "content": "",
             "pyqs": []
           },
@@ -623,8 +815,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-firms-and-their-objectives",
-            "title": "Firms and their objectives",
+            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-firms",
+            "title": "Firms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-objectives-of-firms",
+            "title": "Objectives of firms",
             "content": "",
             "pyqs": []
           },
@@ -659,8 +857,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-oligopoly-features-and-equilibrium-of-a-firm",
-            "title": "Oligopoly (features and equilibrium of a firm)",
+            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-oligopoly-features",
+            "title": "Oligopoly features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-equilibrium-of-a-firm-under-oligopoly",
+            "title": "Equilibrium of a firm under Oligopoly",
             "content": "",
             "pyqs": []
           }
@@ -701,8 +905,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-causes-and-effects",
-            "title": "Causes and Effects",
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-causes-of-inflation",
+            "title": "Causes of Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-effects-of-inflation",
+            "title": "Effects of Inflation",
             "content": "",
             "pyqs": []
           },
@@ -713,8 +923,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-monetary-and-fiscal-policies",
-            "title": "Monetary and Fiscal policies",
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-monetary-policies",
+            "title": "Monetary policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-fiscal-policies",
+            "title": "Fiscal policies",
             "content": "",
             "pyqs": []
           },
@@ -731,8 +947,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-direct-and-indirect-taxes-merits-and-demerits",
-            "title": "Direct and Indirect taxes (merits and demerits)",
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-direct-taxes",
+            "title": "Direct taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-indirect-taxes",
+            "title": "Indirect taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-merits-of-direct-and-indirect-taxes",
+            "title": "Merits of direct and indirect taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-demerits-of-direct-and-indirect-taxes",
+            "title": "Demerits of direct and indirect taxes",
             "content": "",
             "pyqs": []
           },
@@ -761,8 +995,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-methods-of-estimation-and-difficulties",
-            "title": "Methods of Estimation and Difficulties",
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-methods-of-estimation",
+            "title": "Methods of Estimation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-difficulties-in-estimation",
+            "title": "Difficulties in estimation",
             "content": "",
             "pyqs": []
           },
@@ -785,8 +1025,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-demat-account-and-trading-account",
-            "title": "Demat Account and Trading Account",
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-demat-account",
+            "title": "Demat Account",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-trading-account",
+            "title": "Trading Account",
             "content": "",
             "pyqs": []
           },
@@ -797,8 +1043,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-sensex-and-nifty",
-            "title": "SENSEX and NIFTY",
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-sensex",
+            "title": "SENSEX",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-03-module-3-monetary-system-nifty",
+            "title": "NIFTY",
             "content": "",
             "pyqs": []
           }
@@ -809,8 +1061,14 @@
         "title": "Module 4: Value analysis and value engineering",
         "topics": [
           {
-            "id": "ec-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-analysis-and-value-engineering",
-            "title": "Value Analysis and value Engineering",
+            "id": "ec-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-analysis",
+            "title": "Value Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-engineering",
+            "title": "Value Engineering",
             "content": "",
             "pyqs": []
           },
@@ -839,8 +1097,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-aims-advantages-and-application-areas-of-value-engineering",
-            "title": "Aims, Advantages and Application areas of Value Engineering",
+            "id": "ec-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-aims-of-value-engineering",
+            "title": "Aims of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-advantages-of-value-engineering",
+            "title": "Advantages of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-application-areas-of-value-engineering",
+            "title": "Application areas of Value Engineering",
             "content": "",
             "pyqs": []
           },
@@ -896,8 +1166,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-generalized-configurations-and-functional-elements-of-instrumentation-systems",
-            "title": "Generalized Configurations and Functional elements of Instrumentation systems",
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-generalized-configurations-of-instrumentation-systems",
+            "title": "Generalized Configurations of Instrumentation systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-functional-elements-of-instrumentation-systems",
+            "title": "Functional elements of Instrumentation systems",
             "content": "",
             "pyqs": []
           },
@@ -914,8 +1190,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-static-and-dynamic-characteristics-of-measuring-instruments",
-            "title": "Static and Dynamic characteristics of measuring instruments",
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-static-characteristics-of-measuring-instruments",
+            "title": "Static characteristics of measuring instruments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-dynamic-characteristics-of-measuring-instruments",
+            "title": "Dynamic characteristics of measuring instruments",
             "content": "",
             "pyqs": []
           }
@@ -926,20 +1208,62 @@
         "title": "Module 2: Sensors and transducers",
         "topics": [
           {
-            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-sensors-and-transducers",
-            "title": "Sensors and Transducers",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-sensors",
+            "title": "Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-classification-and-selection-criteria-of-transducers",
-            "title": "Classification and selection criteria of Transducers",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-transducers",
+            "title": "Transducers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-principles-of-operation-construction-theory-advantages-and-disadvantages-applications-of-transducers",
-            "title": "Principles of operation, construction, theory, advantages and disadvantages, applications of transducers",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-classification-of-transducers",
+            "title": "Classification of Transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-selection-criteria-of-transducers",
+            "title": "Selection criteria of Transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-principles-of-operation-of-transducers",
+            "title": "Principles of operation of transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-construction-of-transducers",
+            "title": "Construction of transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-theory-of-transducers",
+            "title": "Theory of transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-advantages-of-transducers",
+            "title": "Advantages of transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-disadvantages-of-transducers",
+            "title": "Disadvantages of transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-applications-of-transducers",
+            "title": "Applications of transducers",
             "content": "",
             "pyqs": []
           },
@@ -956,8 +1280,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-strain-gauges-metallic-and-semi-conductor-type",
-            "title": "Strain gauges (metallic and semi-conductor type)",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-metallic-strain-gauges",
+            "title": "Metallic strain gauges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-semi-conductor-type-strain-gauges",
+            "title": "Semi-conductor type strain gauges",
             "content": "",
             "pyqs": []
           },
@@ -1022,38 +1352,74 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-waveform-analyser",
-            "title": "Working principle and applications of waveform analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-of-waveform-analyser",
+            "title": "Working principle of waveform analyser",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-digital-frequency-meter",
-            "title": "Working principle and applications of digital frequency meter",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-applications-of-waveform-analyser",
+            "title": "Applications of waveform analyser",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-harmonic-distortion-meter",
-            "title": "Working principle and applications of harmonic distortion meter",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-of-digital-frequency-meter",
+            "title": "Working principle of digital frequency meter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-harmonic-analyser",
-            "title": "Working principle and applications of harmonic analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-applications-of-digital-frequency-meter",
+            "title": "Applications of digital frequency meter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-spectrum-analyser",
-            "title": "Working principle and applications of spectrum analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-of-harmonic-distortion-meter",
+            "title": "Working principle of harmonic distortion meter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-logic-state-analyser",
-            "title": "Working principle and applications of logic state analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-applications-of-harmonic-distortion-meter",
+            "title": "Applications of harmonic distortion meter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-of-harmonic-analyser",
+            "title": "Working principle of harmonic analyser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-applications-of-harmonic-analyser",
+            "title": "Applications of harmonic analyser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-of-spectrum-analyser",
+            "title": "Working principle of spectrum analyser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-applications-of-spectrum-analyser",
+            "title": "Applications of spectrum analyser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-of-logic-state-analyser",
+            "title": "Working principle of logic state analyser",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-applications-of-logic-state-analyser",
+            "title": "Applications of logic state analyser",
             "content": "",
             "pyqs": []
           },
@@ -1070,8 +1436,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-grounding-and-shielding",
-            "title": "Grounding and Shielding",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-grounding",
+            "title": "Grounding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-shielding",
+            "title": "Shielding",
             "content": "",
             "pyqs": []
           }
@@ -1112,8 +1484,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-plc-timers-and-counters",
-            "title": "PLC Timers and Counters",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-plc-timers",
+            "title": "PLC Timers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-plc-counters",
+            "title": "PLC Counters",
             "content": "",
             "pyqs": []
           },
@@ -1136,26 +1514,56 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-skip-function-and-applications",
-            "title": "Skip function and applications",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-skip-function",
+            "title": "Skip function",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-master-control-relay-function-and-applications",
-            "title": "Master control relay function and applications",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-applications-of-skip-function",
+            "title": "Applications of skip function",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-jump-with-non-return-and-return",
-            "title": "Jump with non-return and return",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-master-control-relay-function",
+            "title": "Master control relay function",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-data-table-register-and-other-move-functions",
-            "title": "Data table, register and other move functions",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-applications-of-master-control-relay",
+            "title": "Applications of master control relay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-jump-with-non-return",
+            "title": "Jump with non-return",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-return",
+            "title": "Return",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-data-table-move-functions",
+            "title": "Data table move functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-register-move-functions",
+            "title": "Register move functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-other-move-functions",
+            "title": "Other move functions",
             "content": "",
             "pyqs": []
           },
@@ -1211,8 +1619,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-input-and-output-resistance-of-differential-amplifier",
-            "title": "Input and Output Resistance of Differential Amplifier",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-input-resistance-of-differential-amplifier",
+            "title": "Input Resistance of Differential Amplifier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-output-resistance-of-differential-amplifier",
+            "title": "Output Resistance of Differential Amplifier",
             "content": "",
             "pyqs": []
           },
@@ -1637,8 +2051,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-lock-and-capture-range",
-            "title": "Phase Locked Loop (PLL) - Lock and Capture Range",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-lock-range",
+            "title": "Phase Locked Loop (PLL) - Lock Range",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-capture-range",
+            "title": "Phase Locked Loop (PLL) - Capture Range",
             "content": "",
             "pyqs": []
           },
@@ -2015,14 +2435,32 @@
         "title": "Module 1: Review supervised unsupervised machine learning techniques",
         "topics": [
           {
-            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-review-supervised-unsupervised-machine-learning-techniques",
-            "title": "Review: supervised, unsupervised machine learning techniques",
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-review-supervised-machine-learning-techniques",
+            "title": "Review: supervised machine learning techniques",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-dimensionality-reduction-techniques-pca-svd",
-            "title": "dimensionality reduction techniques-PCA, SVD",
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-review-unsupervised-machine-learning-techniques",
+            "title": "Review: unsupervised machine learning techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-dimensionality-reduction-techniques",
+            "title": "dimensionality reduction techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-pca",
+            "title": "PCA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-svd",
+            "title": "SVD",
             "content": "",
             "pyqs": []
           },
@@ -2051,32 +2489,86 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-training-batch-and-online-learning",
-            "title": "Training - Batch and Online Learning",
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-training-batch-learning",
+            "title": "Training - Batch Learning",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-challenges-of-machine-learning-data-issues-quality-relevancy",
-            "title": "Challenges of Machine Learning: Data Issues-Quality, Relevancy",
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-online-learning",
+            "title": "Online Learning",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-over-fitting-under-fitting",
-            "title": "Over fitting, under fitting",
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-challenges-of-machine-learning-data-issues",
+            "title": "Challenges of Machine Learning: Data Issues",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-bias-variance",
-            "title": "Bias, variance",
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-quality",
+            "title": "Quality",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-performance-metrics-accuracy-recall-precision-roc-curve",
-            "title": "Performance metrics: Accuracy Recall, Precision, ROC curve",
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-relevancy",
+            "title": "Relevancy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-over-fitting",
+            "title": "Over fitting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-under-fitting",
+            "title": "under fitting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-bias",
+            "title": "Bias",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-variance",
+            "title": "variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-performance-metrics",
+            "title": "Performance metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-accuracy",
+            "title": "Accuracy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-recall",
+            "title": "Recall",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-precision",
+            "title": "Precision",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-01-module-1-review-supervised-unsupervised-machine-learning-techniques-roc-curve",
+            "title": "ROC curve",
             "content": "",
             "pyqs": []
           }
@@ -2087,20 +2579,68 @@
         "title": "Module 2: Regression linear regression logistic regression error functions in reg",
         "topics": [
           {
-            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-regression-linear-regression-logistic-regression-error-functions-in-regression",
-            "title": "Regression: linear regression, logistic regression error functions in regression",
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-regression",
+            "title": "Regression",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-mse-l1-l2-cross-entropy-multivariate-regression",
-            "title": "MSE, L1, L2, Cross entropy multivariate regression",
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-linear-regression",
+            "title": "linear regression",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-classification-naive-bayes-classifier",
-            "title": "Classification: Naive Bayes classifier",
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-logistic-regression",
+            "title": "logistic regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-error-functions-in-regression",
+            "title": "error functions in regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-mse",
+            "title": "MSE",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-l1",
+            "title": "L1",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-l2",
+            "title": "L2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-cross-entropy",
+            "title": "Cross entropy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-multivariate-regression",
+            "title": "multivariate regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-classification",
+            "title": "Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-naive-bayes-classifier",
+            "title": "Naive Bayes classifier",
             "content": "",
             "pyqs": []
           },
@@ -2111,14 +2651,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-decision-trees-random-forests",
-            "title": "Decision trees -random forests",
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-decision-trees",
+            "title": "Decision trees",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-ensemble-methods-boosting-bagging",
-            "title": "Ensemble methods: boosting, bagging",
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-random-forests",
+            "title": "random forests",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-ensemble-methods",
+            "title": "Ensemble methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-boosting",
+            "title": "boosting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-02-module-2-regression-linear-regression-logistic-regression-error-functions-in-reg-bagging",
+            "title": "bagging",
             "content": "",
             "pyqs": []
           }
@@ -2129,8 +2687,32 @@
         "title": "Module 3: Unsupervised learning clustering",
         "topics": [
           {
-            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-unsupervised-learning-clustering-k-means-high-hierarchical-clustering",
-            "title": "Unsupervised learning: Clustering-K-means, High, Hierarchical clustering",
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-unsupervised-learning",
+            "title": "Unsupervised learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-clustering",
+            "title": "Clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-k-means",
+            "title": "K-means",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-high",
+            "title": "High",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-hierarchical-clustering",
+            "title": "Hierarchical clustering",
             "content": "",
             "pyqs": []
           },
@@ -2147,8 +2729,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-euclidean-manhattan-minkowski-distances",
-            "title": "Euclidean, Manhattan, Minkowski Distances",
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-euclidean-distances",
+            "title": "Euclidean Distances",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-manhattan-distances",
+            "title": "Manhattan Distances",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-minkowski-distances",
+            "title": "Minkowski Distances",
             "content": "",
             "pyqs": []
           },
@@ -2159,8 +2753,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-reinforcement-learning-agent-based-learning",
-            "title": "Reinforcement Learning: Agent based learning",
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-reinforcement-learning",
+            "title": "Reinforcement Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-03-module-3-unsupervised-learning-clustering-agent-based-learning",
+            "title": "Agent based learning",
             "content": "",
             "pyqs": []
           },
@@ -2183,8 +2783,14 @@
         "title": "Module 4: Introduction to artificial neural networks biological neuron",
         "topics": [
           {
-            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-introduction-to-artificial-neural-networks-biological-neuron",
-            "title": "Introduction to Artificial Neural Networks: Biological Neuron",
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-introduction-to-artificial-neural-networks",
+            "title": "Introduction to Artificial Neural Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-biological-neuron",
+            "title": "Biological Neuron",
             "content": "",
             "pyqs": []
           },
@@ -2231,20 +2837,56 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-activation-functions-sigmoid-relu-tanh",
-            "title": "Activation Functions-Sigmoid, ReLU, tanh",
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-activation-functions",
+            "title": "Activation Functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-back-propagation-chain-rule",
-            "title": "Back propagation- Chain rule",
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-sigmoid",
+            "title": "Sigmoid",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-regularization-l1-l2",
-            "title": "Regularization- L1, L2",
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-relu",
+            "title": "ReLU",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-tanh",
+            "title": "tanh",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-back-propagation",
+            "title": "Back propagation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-chain-rule",
+            "title": "Chain rule",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-regularization",
+            "title": "Regularization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-l1",
+            "title": "L1",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect413-machine-learning-04-module-4-introduction-to-artificial-neural-networks-biological-neuron-l2",
+            "title": "L2",
             "content": "",
             "pyqs": []
           }
@@ -2270,8 +2912,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-discrete-random-variables-and-their-probability-distributions",
-            "title": "Discrete random variables and their probability distributions",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-discrete-random-variables",
+            "title": "Discrete random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-probability-distributions-of-discrete-random-variables",
+            "title": "Probability distributions of discrete random variables",
             "content": "",
             "pyqs": []
           },
@@ -2288,8 +2936,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-mean-and-variance",
-            "title": "Mean and variance",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-mean",
+            "title": "Mean",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-variance",
+            "title": "Variance",
             "content": "",
             "pyqs": []
           },
@@ -2331,7 +2985,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-expected-value-of-a-function-of-two-discrete-variables",
-            "title": "Expected value of a function of two discrete variables.",
+            "title": "Expected value of a function of two discrete variables",
             "content": "",
             "pyqs": []
           }
@@ -2342,8 +2996,14 @@
         "title": "Module 2: Continuous random variables and their probability distributions",
         "topics": [
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-continuous-random-variables-and-their-probability-distributions",
-            "title": "Continuous random variables and their probability distributions",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-continuous-random-variables",
+            "title": "Continuous random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-probability-distributions-of-continuous-random-variables",
+            "title": "Probability distributions of continuous random variables",
             "content": "",
             "pyqs": []
           },
@@ -2360,14 +3020,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-mean-and-variance",
-            "title": "Mean and variance",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-mean",
+            "title": "Mean",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-uniform-normal-and-exponential-distributions",
-            "title": "Uniform, Normal and Exponential distributions",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-variance",
+            "title": "Variance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-uniform-distributions",
+            "title": "Uniform distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-normal-distributions",
+            "title": "Normal distributions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-exponential-distributions",
+            "title": "Exponential distributions",
             "content": "",
             "pyqs": []
           },
@@ -2391,7 +3069,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-expectation-value-of-a-function-of-two-continuous-variables",
-            "title": "Expectation value of a function of two continuous variables.",
+            "title": "Expectation value of a function of two continuous variables",
             "content": "",
             "pyqs": []
           }
@@ -2414,26 +3092,50 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-confidence-intervals-and-one-side-confidence-intervals-for-a-population-mean-for-large-and",
-            "title": "Confidence Intervals and One-side confidence intervals for a Population Mean for large and",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-confidence-intervals-for-a-population-mean-for-large-samples-normal-distribution",
+            "title": "Confidence Intervals for a Population Mean for large samples (normal distribution)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-small-samples-normal-distribution-and-t-distribution",
-            "title": "small samples (normal distribution and t-distribution)",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-confidence-intervals-for-a-population-mean-for-small-samples-t-distribution",
+            "title": "Confidence Intervals for a Population Mean for small samples (t-distribution)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-hypotheses-and-test-procedures",
-            "title": "Hypotheses and Test Procedures",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-one-side-confidence-intervals-for-a-population-mean-for-large-samples-normal-distribution",
+            "title": "One-side confidence intervals for a Population Mean for large samples (normal distribution)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-i-and-type-ii-error",
-            "title": "Type I and Type II error",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-one-side-confidence-intervals-for-a-population-mean-for-small-samples-t-distribution",
+            "title": "One-side confidence intervals for a Population Mean for small samples (t-distribution)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-hypotheses",
+            "title": "Hypotheses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-test-procedures",
+            "title": "Test Procedures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-i-error",
+            "title": "Type I error",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-ii-error",
+            "title": "Type II error",
             "content": "",
             "pyqs": []
           },
@@ -2450,8 +3152,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-tests-concerning-a-population-proportion-for-large-and-small-samples",
-            "title": "Tests concerning a population proportion for large and small samples.",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-tests-concerning-a-population-proportion-for-large-samples",
+            "title": "Tests concerning a population proportion for large samples",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-tests-concerning-a-population-proportion-for-small-samples",
+            "title": "Tests concerning a population proportion for small samples",
             "content": "",
             "pyqs": []
           }
@@ -2469,7 +3177,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-classification-of-process",
-            "title": "classification of process",
+            "title": "Classification of process",
             "content": "",
             "pyqs": []
           },
@@ -2492,14 +3200,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-stationarity-sss-wss",
-            "title": "Stationarity- SSS, WSS",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-stationarity-sss",
+            "title": "Stationarity- SSS",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-autocorrelation-functions-and-its-properties",
-            "title": "Autocorrelation functions and its properties",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-stationarity-wss",
+            "title": "Stationarity- WSS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-autocorrelation-functions",
+            "title": "Autocorrelation functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-properties-of-autocorrelation-functions",
+            "title": "Properties of autocorrelation functions",
             "content": "",
             "pyqs": []
           },
@@ -2529,7 +3249,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-distribution-ergodic-process",
-            "title": "Distribution Ergodic Process.",
+            "title": "Distribution Ergodic Process",
             "content": "",
             "pyqs": []
           }
@@ -2549,14 +3269,26 @@
         "title": "Module 1: Microcontroller architecture general internal architecture address bus",
         "topics": [
           {
-            "id": "ec-4-pbect404-microcontrollers-01-module-1-microcontroller-architecture-general-internal-architecture-address-bus-microcontroller-architecture-general-internal-architecture-address",
-            "title": "Microcontroller Architecture - General internal architecture, Address",
+            "id": "ec-4-pbect404-microcontrollers-01-module-1-microcontroller-architecture-general-internal-architecture-address-bus-microcontroller-architecture-general-internal-architecture",
+            "title": "Microcontroller Architecture - General internal architecture",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pbect404-microcontrollers-01-module-1-microcontroller-architecture-general-internal-architecture-address-bus-the-microcontroller-8051-features-of-8051-microcontroller-block",
-            "title": "The Microcontroller 8051: Features of 8051 microcontroller, Block",
+            "id": "ec-4-pbect404-microcontrollers-01-module-1-microcontroller-architecture-general-internal-architecture-address-bus-address-bus",
+            "title": "Address bus",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-01-module-1-microcontroller-architecture-general-internal-architecture-address-bus-the-microcontroller-8051-features-of-8051-microcontroller",
+            "title": "The Microcontroller 8051 - Features of 8051 microcontroller",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-01-module-1-microcontroller-architecture-general-internal-architecture-address-bus-block-diagram-of-8051",
+            "title": "Block diagram of 8051",
             "content": "",
             "pyqs": []
           }
@@ -2567,14 +3299,38 @@
         "title": "Module 2: Instruction set of 8051 addressing modes classification of instruction",
         "topics": [
           {
-            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-instruction-set-of-8051-addressing-modes-classification-of",
-            "title": "Instruction Set of 8051 & Addressing modes: Classification of",
+            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-instruction-set-of-8051",
+            "title": "Instruction Set of 8051",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-addressing-modes-types-accessing-the-data-from-internal-and-external",
-            "title": "Addressing modes - Types. Accessing the data from internal and external",
+            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-addressing-modes",
+            "title": "Addressing modes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-classification-of-instructions",
+            "title": "Classification of instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-addressing-modes-types",
+            "title": "Addressing modes - Types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-accessing-the-data-from-internal-memory",
+            "title": "Accessing the data from internal memory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-02-module-2-instruction-set-of-8051-addressing-modes-classification-of-instruction-accessing-the-data-from-external-memory",
+            "title": "Accessing the data from external memory",
             "content": "",
             "pyqs": []
           }
@@ -2585,14 +3341,14 @@
         "title": "Module 3: Programming 8051 using assembly language introduction to 8051 assembly",
         "topics": [
           {
-            "id": "ec-4-pbect404-microcontrollers-03-module-3-programming-8051-using-assembly-language-introduction-to-8051-assembly-programming-8051-using-assembly-language-introduction-to-8051",
-            "title": "Programming 8051 Using Assembly Language: Introduction to 8051",
+            "id": "ec-4-pbect404-microcontrollers-03-module-3-programming-8051-using-assembly-language-introduction-to-8051-assembly-programming-8051-using-assembly-language-introduction-to-8051-assembly-language-programming",
+            "title": "Programming 8051 Using Assembly Language - Introduction to 8051 assembly language programming",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pbect404-microcontrollers-03-module-3-programming-8051-using-assembly-language-introduction-to-8051-assembly-programming-8051-using-embedded-c-language-introduction-to",
-            "title": "Programming 8051 Using Embedded C Language: Introduction to",
+            "id": "ec-4-pbect404-microcontrollers-03-module-3-programming-8051-using-assembly-language-introduction-to-8051-assembly-programming-8051-using-embedded-c-language-introduction-to-embedded-c-programming",
+            "title": "Programming 8051 Using Embedded C Language - Introduction to Embedded C programming",
             "content": "",
             "pyqs": []
           }
@@ -2603,26 +3359,62 @@
         "title": "Module 4: Timer counter in 8051 timer registers",
         "topics": [
           {
-            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-timer-counter-in-8051-timer-registers-timer0-timer1",
-            "title": "Timer / Counter in 8051: Timer registers - Timer0, Timer1.",
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-timer-counter-in-8051-timer-registers-timer0",
+            "title": "Timer/Counter in 8051 - Timer registers - Timer0",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-configuration-of-timer-registers-timer-mode-programming-counter",
-            "title": "Configuration of timer registers. Timer mode programming. Counter",
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-timer-counter-in-8051-timer-registers-timer1",
+            "title": "Timer/Counter in 8051 - Timer registers - Timer1",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-serial-communication-in-8051-serial-communication-modes-and",
-            "title": "Serial Communication in 8051: Serial communication - modes and",
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-configuration-of-timer-registers",
+            "title": "Configuration of timer registers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-programming-the-interrupts-use-external-timer-and-serial-port",
-            "title": "Programming the interrupts: Use external, timer and serial port",
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-timer-mode-programming",
+            "title": "Timer mode programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-counter-programming",
+            "title": "Counter programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-serial-communication-in-8051-serial-communication-modes",
+            "title": "Serial Communication in 8051 - Serial communication modes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-serial-communication-in-8051-serial-communication-programming",
+            "title": "Serial Communication in 8051 - Serial communication programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-programming-the-interrupts-use-of-external-interrupts",
+            "title": "Programming the interrupts - Use of external interrupts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-programming-the-interrupts-use-of-timer-interrupts",
+            "title": "Programming the interrupts - Use of timer interrupts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pbect404-microcontrollers-04-module-4-timer-counter-in-8051-timer-registers-programming-the-interrupts-use-of-serial-port-interrupts",
+            "title": "Programming the interrupts - Use of serial port interrupts",
             "content": "",
             "pyqs": []
           }
@@ -2643,7 +3435,7 @@
         "topics": [
           {
             "id": "ec-4-peect414-object-oriented-programming-01-module-1-introduction-introduction",
-            "title": "Introduction:",
+            "title": "Introduction",
             "content": "",
             "pyqs": []
           },
@@ -2661,7 +3453,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-01-module-1-introduction-case-study-of-automated-fire-alarm-system",
-            "title": "Case Study of Automated Fire Alarm System.",
+            "title": "Case Study of Automated Fire Alarm System",
             "content": "",
             "pyqs": []
           },
@@ -2703,7 +3495,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-01-module-1-introduction-lexical-issues",
-            "title": "Lexical Issues.",
+            "title": "Lexical Issues",
             "content": "",
             "pyqs": []
           }
@@ -2715,7 +3507,7 @@
         "topics": [
           {
             "id": "ec-4-peect414-object-oriented-programming-02-module-2-core-java-fundamentals-core-java-fundamentals",
-            "title": "Core Java Fundamentals:",
+            "title": "Core Java Fundamentals",
             "content": "",
             "pyqs": []
           },
@@ -2739,7 +3531,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-02-module-2-core-java-fundamentals-boolean",
-            "title": "Boolean.",
+            "title": "Boolean",
             "content": "",
             "pyqs": []
           },
@@ -2769,7 +3561,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-02-module-2-core-java-fundamentals-strings-string-handling-functions",
-            "title": "Strings- String Handling functions.",
+            "title": "Strings - String Handling functions",
             "content": "",
             "pyqs": []
           },
@@ -2811,7 +3603,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-02-module-2-core-java-fundamentals-operator-precedence",
-            "title": "Operator Precedence.",
+            "title": "Operator Precedence",
             "content": "",
             "pyqs": []
           },
@@ -2871,7 +3663,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-02-module-2-core-java-fundamentals-method-overloading",
-            "title": "Method Overloading.",
+            "title": "Method Overloading",
             "content": "",
             "pyqs": []
           },
@@ -2901,7 +3693,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-02-module-2-core-java-fundamentals-method-overriding",
-            "title": "Method Overriding.",
+            "title": "Method Overriding",
             "content": "",
             "pyqs": []
           }
@@ -2913,7 +3705,7 @@
         "topics": [
           {
             "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-more-features-of-java",
-            "title": "More features of Java:",
+            "title": "More features of Java",
             "content": "",
             "pyqs": []
           },
@@ -2931,7 +3723,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-importing-packages",
-            "title": "Importing Packages.",
+            "title": "Importing Packages",
             "content": "",
             "pyqs": []
           },
@@ -2948,8 +3740,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-try-block-and-catch-clause",
-            "title": "try Block and catch Clause",
+            "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-try-block",
+            "title": "try Block",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-catch-clause",
+            "title": "catch Clause",
             "content": "",
             "pyqs": []
           },
@@ -2972,8 +3770,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-throws-and-finally",
-            "title": "throws and finally.",
+            "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-throws",
+            "title": "throws",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-finally",
+            "title": "finally",
             "content": "",
             "pyqs": []
           },
@@ -3003,7 +3807,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-03-module-3-more-features-of-java-working-with-files",
-            "title": "Working with Files.",
+            "title": "Working with Files",
             "content": "",
             "pyqs": []
           }
@@ -3015,7 +3819,7 @@
         "topics": [
           {
             "id": "ec-4-peect414-object-oriented-programming-04-module-4-advanced-features-of-java-advanced-features-of-java",
-            "title": "Advanced features of Java:",
+            "title": "Advanced features of Java",
             "content": "",
             "pyqs": []
           },
@@ -3038,8 +3842,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect414-object-oriented-programming-04-module-4-advanced-features-of-java-components-and-containers",
-            "title": "Components and Containers",
+            "id": "ec-4-peect414-object-oriented-programming-04-module-4-advanced-features-of-java-components",
+            "title": "Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect414-object-oriented-programming-04-module-4-advanced-features-of-java-containers",
+            "title": "Containers",
             "content": "",
             "pyqs": []
           },
@@ -3081,7 +3891,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-04-module-4-advanced-features-of-java-jtextfield",
-            "title": "JtextField..",
+            "title": "JTextField",
             "content": "",
             "pyqs": []
           },
@@ -3111,7 +3921,7 @@
           },
           {
             "id": "ec-4-peect414-object-oriented-programming-04-module-4-advanced-features-of-java-select",
-            "title": "select.",
+            "title": "select",
             "content": "",
             "pyqs": []
           }
@@ -3143,26 +3953,50 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-diodes",
-            "title": "Structure and static characteristics of Power diodes",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-of-power-diodes",
+            "title": "Structure of Power diodes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-bjt",
-            "title": "Structure and static characteristics of Power BJT",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-static-characteristics-of-power-diodes",
+            "title": "Static characteristics of Power diodes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-mosfet",
-            "title": "Structure and static characteristics of Power MOSFET",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-of-power-bjt",
+            "title": "Structure of Power BJT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-igbt",
-            "title": "Structure and static characteristics of IGBT",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-static-characteristics-of-power-bjt",
+            "title": "Static characteristics of Power BJT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-of-power-mosfet",
+            "title": "Structure of Power MOSFET",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-static-characteristics-of-power-mosfet",
+            "title": "Static characteristics of Power MOSFET",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-of-igbt",
+            "title": "Structure of IGBT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-static-characteristics-of-igbt",
+            "title": "Static characteristics of IGBT",
             "content": "",
             "pyqs": []
           },
@@ -3359,8 +4193,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-waveforms-and-governing-equations-of-isolated-converters",
-            "title": "Waveforms and governing equations of isolated converters",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-waveforms-of-isolated-converters",
+            "title": "Waveforms of isolated converters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-governing-equations-of-isolated-converters",
+            "title": "Governing equations of isolated converters",
             "content": "",
             "pyqs": []
           }
@@ -3435,13 +4275,25 @@
         "topics": [
           {
             "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-introduction-to-signals-and-systems",
-            "title": "Introduction to signals and systems:",
+            "title": "Introduction to signals and systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-continuous-time-and-discrete-time-signals-elementary-signals",
-            "title": "Continuous time and discrete time signals - Elementary signals",
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-continuous-time-signals",
+            "title": "Continuous time signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-discrete-time-signals",
+            "title": "Discrete time signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals",
+            "title": "Elementary signals",
             "content": "",
             "pyqs": []
           },
@@ -3453,25 +4305,61 @@
           },
           {
             "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-basic-signal-operations",
-            "title": "Basic signal operations.",
+            "title": "Basic signal operations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-continuous-time-and-discrete-time-systems-representation-and",
-            "title": "Continuous time and discrete time systems - Representation and",
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-continuous-time-systems",
+            "title": "Continuous time systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-convolution-integral-and-convolution-sum-operations",
-            "title": "Convolution integral and convolution sum operations.",
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-discrete-time-systems",
+            "title": "Discrete time systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-continuous-time-and-discrete-time-lti-systems-stability-and-causality",
-            "title": "Continuous time and discrete time LTI systems-Stability and causality",
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-representation-of-systems",
+            "title": "Representation of systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-convolution-integral",
+            "title": "Convolution integral",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-convolution-sum",
+            "title": "Convolution sum",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-continuous-time-lti-systems",
+            "title": "Continuous time LTI systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-discrete-time-lti-systems",
+            "title": "Discrete time LTI systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-stability",
+            "title": "Stability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-01-module-1-introduction-to-signals-and-systems-causality",
+            "title": "Causality",
             "content": "",
             "pyqs": []
           }
@@ -3483,19 +4371,37 @@
         "topics": [
           {
             "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-frequency-domain-representation-of-continuous-time-signals",
-            "title": "Frequency domain representation of continuous time signals:",
+            "title": "Frequency domain representation of continuous time signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-continuous-time-fourier-series-e-xponential-fourier-series",
-            "title": "Continuous time Fourier series - E xponential Fourier series",
+            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-continuous-time-fourier-series",
+            "title": "Continuous time Fourier series",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-continuous-time-fourier-transform-convergence-and-gibbs",
-            "title": "Continuous time Fourier transform - Convergence and Gibbs",
+            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-exponential-fourier-series",
+            "title": "Exponential Fourier series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-continuous-time-fourier-transform",
+            "title": "Continuous time Fourier transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-convergence",
+            "title": "Convergence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-gibbs-phenomenon",
+            "title": "Gibbs phenomenon",
             "content": "",
             "pyqs": []
           },
@@ -3512,8 +4418,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-inverse-transform",
-            "title": "Inverse Transform.",
+            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-inverse-fourier-transform",
+            "title": "Inverse Fourier Transform",
             "content": "",
             "pyqs": []
           },
@@ -3530,98 +4436,110 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-relation-of-laplace",
-            "title": "Relation of Laplace",
+            "id": "ec-4-pcect402-signals-and-systems-02-module-2-frequency-domain-representation-of-continuous-time-signals-relation-of-laplace-transform",
+            "title": "Relation of Laplace transform",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d",
-        "title": "Module 3: Sampling of continuous time signals to discrete signals and frequency d",
+        "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals",
+        "title": "Module 3: Sampling of continuous time signals to discrete signals and frequency domain representation of discrete time signals",
         "topics": [
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-sampling-of-continuous-time-signals-to-discrete-signals-and",
-            "title": "Sampling of continuous time signals to discrete signals and",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-sampling-of-continuous-time-signals-to-discrete-signals",
+            "title": "Sampling of continuous time signals to discrete signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-conversion-of-continuous-time-signal-to-discrete-time-signal",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-conversion-of-continuous-time-signal-to-discrete-time-signal",
             "title": "Conversion of continuous time signal to discrete time signal",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-sampling",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-sampling",
             "title": "Sampling",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-nyquist-criteria",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-nyquist-criteria",
             "title": "Nyquist criteria",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-aliasing",
-            "title": "Aliasing.",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-aliasing",
+            "title": "Aliasing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-discrete-time-fourier-series-for-discrete-periodic-signals",
-            "title": "Discrete time Fourier series for discrete periodic signals.",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-discrete-time-fourier-series-for-discrete-periodic-signals",
+            "title": "Discrete time Fourier series for discrete periodic signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-discrete-time-fourier-transform-dtft-convergence-condition",
-            "title": "Discrete time Fourier transform (DTFT)-Convergence condition",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-discrete-time-fourier-transform-dtft",
+            "title": "Discrete time Fourier transform (DTFT)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-dtft",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-convergence-condition",
+            "title": "Convergence condition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-dtft",
             "title": "DTFT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-properties-of-dtft",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-properties-of-dtft",
             "title": "Properties of DTFT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-inverse-transform",
-            "title": "Inverse transform.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-z-transform-roc",
-            "title": "Z transform- ROC",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-properties-proof-not-needed",
-            "title": "Properties (Proof not needed)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-inverse-transform",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-inverse-transform",
             "title": "Inverse transform",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-d-relation-between-dtft-and-z-transform",
-            "title": "Relation between DTFT and Z-Transform.",
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-z-transform",
+            "title": "Z transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-roc",
+            "title": "ROC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-properties-of-z-transform-proof-not-needed",
+            "title": "Properties of Z transform (Proof not needed)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-inverse-z-transform",
+            "title": "Inverse Z transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-03-module-3-sampling-of-continuous-time-signals-to-discrete-signals-and-frequency-domain-representation-of-discrete-time-signals-relation-between-dtft-and-z-transform",
+            "title": "Relation between DTFT and Z-Transform",
             "content": "",
             "pyqs": []
           }
@@ -3629,7 +4547,7 @@
       },
       {
         "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms",
-        "title": "Module 4: Analysis of lti systems using transforms",
+        "title": "Module 4: Analysis of LTI systems using transforms",
         "topics": [
           {
             "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms-analysis-of-lti-systems-using-transforms",
@@ -3638,8 +4556,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms-concept-of-transfer-function-frequency-response",
-            "title": "Concept of transfer function-Frequency response",
+            "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms-concept-of-transfer-function",
+            "title": "Concept of transfer function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms-frequency-response",
+            "title": "Frequency response",
             "content": "",
             "pyqs": []
           },
@@ -3650,8 +4574,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms-analysis-of-continuous-time-lti-systems-using-laplace-and-fourier",
-            "title": "Analysis of Continuous time LTI systems using Laplace and Fourier",
+            "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms-analysis-of-continuous-time-lti-systems-using-laplace-and-fourier-transforms",
+            "title": "Analysis of Continuous time LTI systems using Laplace and Fourier transforms",
             "content": "",
             "pyqs": []
           },
@@ -3663,7 +4587,7 @@
           },
           {
             "id": "ec-4-pcect402-signals-and-systems-04-module-4-analysis-of-lti-systems-using-transforms-stability-and-causality-using-z-transform",
-            "title": "Stability and causality using Z transform.",
+            "title": "Stability and causality using Z transform",
             "content": "",
             "pyqs": []
           }

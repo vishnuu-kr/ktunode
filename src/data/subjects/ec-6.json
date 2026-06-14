@@ -23,8 +23,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-joint-and-conditional-entropy",
-            "title": "Joint and Conditional Entropy",
+            "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-joint-entropy",
+            "title": "Joint Entropy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-conditional-entropy",
+            "title": "Conditional Entropy",
             "content": "",
             "pyqs": []
           },
@@ -65,8 +71,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-uniquely-decodable-and-prefix-free-source-codes",
-            "title": "uniquely decodable and prefix-free source codes.",
+            "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-uniquely-decodable-source-codes",
+            "title": "Uniquely decodable source codes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-prefix-free-source-codes",
+            "title": "Prefix-free source codes",
             "content": "",
             "pyqs": []
           },
@@ -90,7 +102,7 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-operational-meaning-of-entropy",
-            "title": "operational meaning of entropy.",
+            "title": "Operational meaning of entropy",
             "content": "",
             "pyqs": []
           },
@@ -114,7 +126,7 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-01-module-1-entropy-binary-erasure-channels-bec",
-            "title": "Binary Erasure channels (BEC).",
+            "title": "Binary Erasure channels (BEC)",
             "content": "",
             "pyqs": []
           },
@@ -173,20 +185,38 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-error-detecting-and-correcting-capability",
-            "title": "Error detecting and correcting capability.",
+            "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-error-detecting-capability",
+            "title": "Error detecting capability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-error-correcting-capability",
+            "title": "Error correcting capability",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-linear-block-codes",
-            "title": "Linear block codes.",
+            "title": "Linear block codes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-generator-and-parity-check-matrix-systematic-form-only",
-            "title": "Generator and parity-check matrix. (Systematic form only).",
+            "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-generator-matrix",
+            "title": "Generator matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-parity-check-matrix",
+            "title": "Parity-check matrix",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-systematic-form",
+            "title": "Systematic form",
             "content": "",
             "pyqs": []
           },
@@ -198,13 +228,13 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-maximum-likelihood-decoding-of-linear-block-codes",
-            "title": "Maximum likelihood decoding of linear block codes.",
+            "title": "Maximum likelihood decoding of linear block codes",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-bounded-distance-decoding",
-            "title": "Bounded distance decoding.",
+            "title": "Bounded distance decoding",
             "content": "",
             "pyqs": []
           },
@@ -216,37 +246,37 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-standard-array-decoding",
-            "title": "Standard array decoding.",
+            "title": "Standard array decoding",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-convolutional-codes",
-            "title": "Convolutional Codes.",
+            "title": "Convolutional Codes",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-state-diagram",
-            "title": "State diagram.",
+            "title": "State diagram",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-trellis-diagram",
-            "title": "Trellis diagram.",
+            "title": "Trellis diagram",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-maximum-likelihood-decoding",
-            "title": "Maximum likelihood decoding.",
+            "title": "Maximum likelihood decoding",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-02-module-2-channel-capacity-of-awgn-channel-viterbi-algorithm",
-            "title": "Viterbi algorithm.",
+            "title": "Viterbi algorithm",
             "content": "",
             "pyqs": []
           }
@@ -276,7 +306,7 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-paging",
-            "title": "Paging.",
+            "title": "Paging",
             "content": "",
             "pyqs": []
           },
@@ -293,14 +323,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-zig-bee-and-personal-area-networks",
-            "title": "Zig-Bee and Personal Area networks.",
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-zig-bee",
+            "title": "Zig-Bee",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-personal-area-networks",
+            "title": "Personal Area networks",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-broadband-wireless-access-wimax-technology",
-            "title": "Broadband Wireless Access-WiMax Technology.",
+            "title": "Broadband Wireless Access-WiMax Technology",
             "content": "",
             "pyqs": []
           },
@@ -312,7 +348,7 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-standards",
-            "title": "Standards.",
+            "title": "Standards",
             "content": "",
             "pyqs": []
           },
@@ -330,7 +366,7 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-channel-assignment-strategies",
-            "title": "channel assignment strategies",
+            "title": "Channel assignment strategies",
             "content": "",
             "pyqs": []
           },
@@ -341,32 +377,50 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-interference-and-system-capacity",
-            "title": "Interference and system capacity",
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-interference",
+            "title": "Interference",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-trunking-and-grade-off-service",
-            "title": "trunking and grade off service",
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-system-capacity",
+            "title": "System capacity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-improving-coverage-and-capacity-cell-splitting",
-            "title": "improving coverage and capacity - cell splitting",
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-trunking",
+            "title": "Trunking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-grade-of-service",
+            "title": "Grade of service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-improving-coverage-and-capacity",
+            "title": "Improving coverage and capacity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-cell-splitting",
+            "title": "Cell splitting",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-sectoring",
-            "title": "sectoring",
+            "title": "Sectoring",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-03-module-3-introduction-to-wireless-communication-microcells",
-            "title": "microcells",
+            "title": "Microcells",
             "content": "",
             "pyqs": []
           },
@@ -455,26 +509,50 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-delay-spread-and-coherence-bandwidth",
-            "title": "Delay spread and Coherence bandwidth",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-delay-spread",
+            "title": "Delay spread",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-doppler-spread-and-coherence-time",
-            "title": "Doppler spread and Coherence time",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-coherence-bandwidth",
+            "title": "Coherence bandwidth",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-flat-fading-versus-frequency-selective-fading",
-            "title": "Flat fading versus frequency selective fading",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-doppler-spread",
+            "title": "Doppler spread",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-slow-fading-versus-fast-fading",
-            "title": "Slow fading versus fast fading",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-coherence-time",
+            "title": "Coherence time",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-flat-fading",
+            "title": "Flat fading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-frequency-selective-fading",
+            "title": "Frequency selective fading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-slow-fading",
+            "title": "Slow fading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-fast-fading",
+            "title": "Fast fading",
             "content": "",
             "pyqs": []
           },
@@ -492,7 +570,7 @@
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-overlapping-subchannels",
-            "title": "overlapping subchannels",
+            "title": "Overlapping subchannels",
             "content": "",
             "pyqs": []
           },
@@ -503,8 +581,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-discrete-implementation-of-multicarrier-ofdm",
-            "title": "Discrete Implementation of multicarrier - OFDM",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-discrete-implementation-of-multicarrier",
+            "title": "Discrete Implementation of multicarrier",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-ofdm",
+            "title": "OFDM",
             "content": "",
             "pyqs": []
           },
@@ -515,14 +599,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-receiver-diversity-selection-combining-and-maximal-ratio-combining",
-            "title": "Receiver diversity - selection combining and maximal ratio combining.",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-receiver-diversity",
+            "title": "Receiver diversity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-transmitter-diversity-alamouti-scheme-for-2x2-mimo",
-            "title": "Transmitter diversity - Alamouti scheme for 2x2 MIMO.",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-selection-combining",
+            "title": "Selection combining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-maximal-ratio-combining",
+            "title": "Maximal ratio combining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-transmitter-diversity",
+            "title": "Transmitter diversity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-alamouti-scheme-for-2x2-mimo",
+            "title": "Alamouti scheme for 2x2 MIMO",
             "content": "",
             "pyqs": []
           },
@@ -533,14 +635,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-equalization-linear-and-non-linear-equalization",
-            "title": "Equalization - Linear and non-linear equalization",
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-linear-equalization",
+            "title": "Linear equalization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-non-linear-equalization",
+            "title": "Non-linear equalization",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-6-pcect601-advanced-communication-theory-04-module-4-path-loss-and-shadowing-mmse-equalizers",
-            "title": "MMSE equalizers.",
+            "title": "MMSE equalizers",
             "content": "",
             "pyqs": []
           }
@@ -1103,8 +1211,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcecl607-communication-lab-ii-01-module-1-reflex-klystron-mode-characteristics-vswr-and-frequency-measurement",
-            "title": "VSWR and Frequency measurement",
+            "id": "ec-6-pcecl607-communication-lab-ii-01-module-1-reflex-klystron-mode-characteristics-vswr-measurement",
+            "title": "VSWR measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcecl607-communication-lab-ii-01-module-1-reflex-klystron-mode-characteristics-frequency-measurement",
+            "title": "Frequency measurement",
             "content": "",
             "pyqs": []
           },
@@ -1115,8 +1229,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcecl607-communication-lab-ii-01-module-1-reflex-klystron-mode-characteristics-unknown-load-impedance-measurement-using-smith-chart-and-verification-using-transmission-line-equation",
-            "title": "Unknown load impedance measurement using smith chart and verification using transmission line equation",
+            "id": "ec-6-pcecl607-communication-lab-ii-01-module-1-reflex-klystron-mode-characteristics-unknown-load-impedance-measurement-using-smith-chart",
+            "title": "Unknown load impedance measurement using smith chart",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcecl607-communication-lab-ii-01-module-1-reflex-klystron-mode-characteristics-verification-using-transmission-line-equation",
+            "title": "Verification using transmission line equation",
             "content": "",
             "pyqs": []
           },
@@ -1604,8 +1724,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-oeect612-computer-networks-03-module-3-network-layer-datagram-versus-virtual-ipv4-address-assignment-manual-and-dhcp",
-            "title": "IPv4: Address assignment - manual and DHCP",
+            "id": "ec-6-oeect612-computer-networks-03-module-3-network-layer-datagram-versus-virtual-ipv4-address-assignment-manual",
+            "title": "IPv4: Address assignment - manual",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-oeect612-computer-networks-03-module-3-network-layer-datagram-versus-virtual-ipv4-address-assignment-dhcp",
+            "title": "IPv4: Address assignment - DHCP",
             "content": "",
             "pyqs": []
           },
@@ -1748,8 +1874,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-oeect612-computer-networks-04-module-4-link-layer-services-of-link-layer-physical-layer-guided-and-unguided-transmission-media",
-            "title": "Physical Layer: Guided and unguided transmission media",
+            "id": "ec-6-oeect612-computer-networks-04-module-4-link-layer-services-of-link-layer-physical-layer-guided-transmission-media",
+            "title": "Physical Layer: Guided transmission media",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-oeect612-computer-networks-04-module-4-link-layer-services-of-link-layer-physical-layer-unguided-transmission-media",
+            "title": "Physical Layer: Unguided transmission media",
             "content": "",
             "pyqs": []
           },
@@ -2009,8 +2141,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect632-digital-image-processing-03-module-3-image-enhancement-spatial-domain-methods-basic-gray-level-transformatio-frequency-domain-methods-low-pass-filtering",
-            "title": "Frequency domain methods: low pass filtering",
+            "id": "ec-6-peect632-digital-image-processing-03-module-3-image-enhancement-spatial-domain-methods-basic-gray-level-transformatio-frequency-domain-methods",
+            "title": "Frequency domain methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect632-digital-image-processing-03-module-3-image-enhancement-spatial-domain-methods-basic-gray-level-transformatio-low-pass-filtering",
+            "title": "low pass filtering",
             "content": "",
             "pyqs": []
           },
@@ -2039,8 +2177,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect632-digital-image-processing-04-module-4-image-restoration-degradation-model-inverse-filtering-removal-of-blur-caused-by-uniform-linear-motion",
-            "title": "Inverse filtering- removal of blur caused by uniform linear motion",
+            "id": "ec-6-peect632-digital-image-processing-04-module-4-image-restoration-degradation-model-inverse-filtering",
+            "title": "Inverse filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect632-digital-image-processing-04-module-4-image-restoration-degradation-model-removal-of-blur-caused-by-uniform-linear-motion",
+            "title": "removal of blur caused by uniform linear motion",
             "content": "",
             "pyqs": []
           },
@@ -2108,8 +2252,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-oeect611-entertainment-electronics-01-module-1-review-of-analog-television-scanning-horizontal-and-vertical-synchroniz-horizontal-and-vertical-synchronization",
-            "title": "Horizontal and Vertical Synchronization",
+            "id": "ec-6-oeect611-entertainment-electronics-01-module-1-review-of-analog-television-scanning-horizontal-and-vertical-synchroniz-horizontal-synchronization",
+            "title": "Horizontal Synchronization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-oeect611-entertainment-electronics-01-module-1-review-of-analog-television-scanning-horizontal-and-vertical-synchroniz-vertical-synchronization",
+            "title": "Vertical Synchronization",
             "content": "",
             "pyqs": []
           },
@@ -2126,8 +2276,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-oeect611-entertainment-electronics-01-module-1-review-of-analog-television-scanning-horizontal-and-vertical-synchroniz-ntsc-and-pal-standards",
-            "title": "NTSC and PAL standards",
+            "id": "ec-6-oeect611-entertainment-electronics-01-module-1-review-of-analog-television-scanning-horizontal-and-vertical-synchroniz-ntsc-standards",
+            "title": "NTSC standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-oeect611-entertainment-electronics-01-module-1-review-of-analog-television-scanning-horizontal-and-vertical-synchroniz-pal-standards",
+            "title": "PAL standards",
             "content": "",
             "pyqs": []
           },
@@ -2276,8 +2432,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-oeect611-entertainment-electronics-02-module-2-digital-video-broadcasting-dvb-satellite-tv-broadcasting-dvb-dvb-t-carriers-and-system-parameters",
-            "title": "DVB-T Carriers and System Parameters",
+            "id": "ec-6-oeect611-entertainment-electronics-02-module-2-digital-video-broadcasting-dvb-satellite-tv-broadcasting-dvb-dvb-t-carriers",
+            "title": "DVB-T Carriers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-oeect611-entertainment-electronics-02-module-2-digital-video-broadcasting-dvb-satellite-tv-broadcasting-dvb-dvb-t-system-parameters",
+            "title": "DVB-T System Parameters",
             "content": "",
             "pyqs": []
           },
@@ -2360,8 +2522,14 @@
         "title": "Module 3: High definition video and audio pixel resolution comparison with standa",
         "topics": [
           {
-            "id": "ec-6-oeect611-entertainment-electronics-03-module-3-high-definition-video-and-audio-pixel-resolution-comparison-with-standa-high-definition-video-and-audio",
-            "title": "High Definition Video and Audio",
+            "id": "ec-6-oeect611-entertainment-electronics-03-module-3-high-definition-video-and-audio-pixel-resolution-comparison-with-standa-high-definition-video",
+            "title": "High Definition Video",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-oeect611-entertainment-electronics-03-module-3-high-definition-video-and-audio-pixel-resolution-comparison-with-standa-high-definition-audio",
+            "title": "High Definition Audio",
             "content": "",
             "pyqs": []
           },
@@ -2396,8 +2564,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-oeect611-entertainment-electronics-03-module-3-high-definition-video-and-audio-pixel-resolution-comparison-with-standa-horizontal-vertical-blanking-interval",
-            "title": "Horizontal/Vertical blanking interval",
+            "id": "ec-6-oeect611-entertainment-electronics-03-module-3-high-definition-video-and-audio-pixel-resolution-comparison-with-standa-horizontal-blanking-interval",
+            "title": "Horizontal blanking interval",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-oeect611-entertainment-electronics-03-module-3-high-definition-video-and-audio-pixel-resolution-comparison-with-standa-vertical-blanking-interval",
+            "title": "Vertical blanking interval",
             "content": "",
             "pyqs": []
           },
@@ -2591,14 +2765,38 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-colour-image-fundamentals-rgb-cmy-his-models",
-            "title": "Colour image fundamentals-RGB, CMY, HIS models",
+            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-colour-image-fundamentals",
+            "title": "Colour image fundamentals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-2d-sampling-and-quantization",
-            "title": "2D sampling and quantization",
+            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-rgb-models",
+            "title": "RGB models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-cmy-models",
+            "title": "CMY models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-his-models",
+            "title": "HIS models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-2d-sampling",
+            "title": "2D sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect635-image-processing-applications-01-module-1-digital-image-fundamentals-image-representation-quantization",
+            "title": "quantization",
             "content": "",
             "pyqs": []
           }
@@ -2609,8 +2807,14 @@
         "title": "Module 2: 2d image transforms dft properties",
         "topics": [
           {
-            "id": "ec-6-peect635-image-processing-applications-02-module-2-2d-image-transforms-dft-properties-2d-image-transforms-dft-properties",
-            "title": "2D Image transforms: DFT, Properties",
+            "id": "ec-6-peect635-image-processing-applications-02-module-2-2d-image-transforms-dft-properties-2d-image-transforms-dft",
+            "title": "2D Image transforms: DFT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect635-image-processing-applications-02-module-2-2d-image-transforms-dft-properties-properties",
+            "title": "Properties",
             "content": "",
             "pyqs": []
           },
@@ -2657,8 +2861,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect635-image-processing-applications-02-module-2-2d-image-transforms-dft-properties-lossy-lossless-compression",
-            "title": "Lossy, lossless compression",
+            "id": "ec-6-peect635-image-processing-applications-02-module-2-2d-image-transforms-dft-properties-lossy-compression",
+            "title": "Lossy compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect635-image-processing-applications-02-module-2-2d-image-transforms-dft-properties-lossless-compression",
+            "title": "lossless compression",
             "content": "",
             "pyqs": []
           },
@@ -2882,8 +3092,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect602-microwaves-antennas-01-module-1-microwaves-electromagnetic-spectrum-frequency-bands-features-of-microwa-excitation-and-tuning-of-cavity-resonator",
-            "title": "Excitation and Tuning of cavity resonator",
+            "id": "ec-6-pcect602-microwaves-antennas-01-module-1-microwaves-electromagnetic-spectrum-frequency-bands-features-of-microwa-excitation-of-cavity-resonator",
+            "title": "Excitation of cavity resonator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-01-module-1-microwaves-electromagnetic-spectrum-frequency-bands-features-of-microwa-tuning-of-cavity-resonator",
+            "title": "Tuning of cavity resonator",
             "content": "",
             "pyqs": []
           },
@@ -3038,8 +3254,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect602-microwaves-antennas-02-module-2-microwave-tubes-types-structure-and-principles-of-operation-of-two-cavi-reflex-klystron-power-output-and-efficiency",
-            "title": "Reflex Klystron - Power output and efficiency",
+            "id": "ec-6-pcect602-microwaves-antennas-02-module-2-microwave-tubes-types-structure-and-principles-of-operation-of-two-cavi-reflex-klystron-power-output",
+            "title": "Reflex Klystron - Power output",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-02-module-2-microwave-tubes-types-structure-and-principles-of-operation-of-two-cavi-reflex-klystron-efficiency",
+            "title": "Reflex Klystron - Efficiency",
             "content": "",
             "pyqs": []
           },
@@ -3266,20 +3488,38 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-field-of-a-short-dipole-and-half-wave-dipole-far-field-derivation",
-            "title": "Field of a short dipole and half wave dipole (far field derivation)",
+            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-field-of-a-short-dipole-far-field-derivation",
+            "title": "Field of a short dipole (far field derivation)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-directivity-of-a-short-dipole-and-half-wave-dipole",
-            "title": "Directivity of a short dipole and half wave dipole",
+            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-field-of-a-half-wave-dipole-far-field-derivation",
+            "title": "Field of a half wave dipole (far field derivation)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-radiation-resistance-of-a-short-dipole-and-half-wave-dipole",
-            "title": "Radiation resistance of a short dipole and half wave dipole",
+            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-directivity-of-a-short-dipole",
+            "title": "Directivity of a short dipole",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-directivity-of-a-half-wave-dipole",
+            "title": "Directivity of a half wave dipole",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-radiation-resistance-of-a-short-dipole",
+            "title": "Radiation resistance of a short dipole",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-03-module-3-antennas-definition-radiation-mechanism-polarisation-types-applications-radiation-resistance-of-a-half-wave-dipole",
+            "title": "Radiation resistance of a half wave dipole",
             "content": "",
             "pyqs": []
           }
@@ -3392,8 +3632,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-horn-antenna-expressions-for-e-h-and-gain-no-derivation-required",
-            "title": "Horn antenna - Expressions for E, H and gain (no derivation required)",
+            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-horn-antenna-expressions-for-e-no-derivation-required",
+            "title": "Horn antenna - Expressions for E (no derivation required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-horn-antenna-expressions-for-h-no-derivation-required",
+            "title": "Horn antenna - Expressions for H (no derivation required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-horn-antenna-expressions-for-gain-no-derivation-required",
+            "title": "Horn antenna - Expressions for gain (no derivation required)",
             "content": "",
             "pyqs": []
           },
@@ -3410,8 +3662,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-parabolic-dish-antenna-expression-for-e-h-and-gain-without-derivation",
-            "title": "Parabolic dish antenna - Expression for E, H and Gain without derivation",
+            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-parabolic-dish-antenna-expression-for-e-without-derivation",
+            "title": "Parabolic dish antenna - Expression for E without derivation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-parabolic-dish-antenna-expression-for-h-without-derivation",
+            "title": "Parabolic dish antenna - Expression for H without derivation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-pcect602-microwaves-antennas-04-module-4-antenna-arrays-field-of-two-isotropic-point-sources-principle-of-patter-parabolic-dish-antenna-expression-for-gain-without-derivation",
+            "title": "Parabolic dish antenna - Expression for Gain without derivation",
             "content": "",
             "pyqs": []
           },
@@ -3647,8 +3911,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-natural-length-and-short-channel-effects",
-            "title": "Natural length and short channel effects",
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-natural-length",
+            "title": "Natural length",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-short-channel-effects",
+            "title": "Short channel effects",
             "content": "",
             "pyqs": []
           },
@@ -3671,8 +3941,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-fin-height-and-fin-pitch",
-            "title": "Fin Height and Fin Pitch",
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-fin-height",
+            "title": "Fin Height",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-fin-pitch",
+            "title": "Fin Pitch",
             "content": "",
             "pyqs": []
           },
@@ -3707,8 +3983,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-threshold-voltage-and-gate-work-function-requirements",
-            "title": "Threshold Voltage and Gate Work function requirements",
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-threshold-voltage-requirements",
+            "title": "Threshold Voltage requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-gate-work-function-requirements",
+            "title": "Gate Work function requirements",
             "content": "",
             "pyqs": []
           },
@@ -3731,8 +4013,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-mobility-and-strain-engineering",
-            "title": "Mobility and Strain Engineering",
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-mobility-engineering",
+            "title": "Mobility Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-strain-engineering",
+            "title": "Strain Engineering",
             "content": "",
             "pyqs": []
           },
@@ -3743,8 +4031,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-embedded-sige-and-sic-source-and-drain",
-            "title": "Embedded SiGe and SiC Source and Drain",
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-embedded-sige-source-and-drain",
+            "title": "Embedded SiGe Source and Drain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-02-module-2-novel-mos-devices-and-performance-optimization-embedded-sic-source-and-drain",
+            "title": "Embedded SiC Source and Drain",
             "content": "",
             "pyqs": []
           },
@@ -3869,14 +4163,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-quantum-wells-wires-dots",
-            "title": "Quantum wells, wires, dots",
+            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-quantum-wells",
+            "title": "Quantum wells",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-graphene-and-carbon-nanotubes",
-            "title": "Graphene and carbon nanotubes",
+            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-quantum-wires",
+            "title": "Quantum wires",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-quantum-dots",
+            "title": "Quantum dots",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-graphene",
+            "title": "Graphene",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-carbon-nanotubes",
+            "title": "Carbon nanotubes",
             "content": "",
             "pyqs": []
           },
@@ -3911,8 +4223,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-ballistic-and-diffusive-transport",
-            "title": "Ballistic and Diffusive transport",
+            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-ballistic-transport",
+            "title": "Ballistic transport",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-03-module-3-quantum-transport-diffusive-transport",
+            "title": "Diffusive transport",
             "content": "",
             "pyqs": []
           },
@@ -3935,8 +4253,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect634-nanoelectronics-04-module-4-applications-of-quantum-mechanics-and-quantum-devices-tunneling-and-applications-of-quantum-mechanics",
-            "title": "Tunneling and applications of quantum mechanics",
+            "id": "ec-6-peect634-nanoelectronics-04-module-4-applications-of-quantum-mechanics-and-quantum-devices-tunneling",
+            "title": "Tunneling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect634-nanoelectronics-04-module-4-applications-of-quantum-mechanics-and-quantum-devices-applications-of-quantum-mechanics",
+            "title": "Applications of quantum mechanics",
             "content": "",
             "pyqs": []
           },
@@ -4088,122 +4412,140 @@
         "title": "Module 1: Optical fiber communications structure of optical fiber materials gener",
         "topics": [
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-communications-structure-of-optical-fiber",
-            "title": "Optical fiber Communications: Structure of Optical fiber",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-structure-of-optical-fiber",
+            "title": "Structure of Optical fiber",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-communications-materials",
-            "title": "Optical fiber Communications: Materials",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-materials",
+            "title": "Materials",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-communications-general-block-diagram-of-optical-communication-system",
-            "title": "Optical fiber Communications: General block diagram of optical communication system",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-general-block-diagram-of-optical-communication-system",
+            "title": "General block diagram of optical communication system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-communications-advantages",
-            "title": "Optical fiber Communications: Advantages",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-advantages",
+            "title": "Advantages",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-waveguides-principle-of-light-guidance",
-            "title": "Optical fiber waveguides: Principle of light guidance",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-principle-of-light-guidance",
+            "title": "Principle of light guidance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-waveguides-numerical-aperture",
-            "title": "Optical fiber waveguides: Numerical Aperture",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-numerical-aperture",
+            "title": "Numerical Aperture",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-waveguides-v-number",
-            "title": "Optical fiber waveguides: V number",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-v-number",
+            "title": "V number",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-waveguides-step-and-graded-index-fibers",
-            "title": "Optical fiber waveguides: Step and Graded index fibers",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-step-index-fibers",
+            "title": "Step index fibers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-optical-fiber-waveguides-single-and-multi-mode-fibers",
-            "title": "Optical fiber waveguides: Single and Multi mode fibers",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-graded-index-fibers",
+            "title": "Graded index fibers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-transmission-characteristics-attenuation",
-            "title": "Transmission Characteristics: Attenuation",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-single-mode-fibers",
+            "title": "Single mode fibers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-transmission-characteristics-absorption-losses",
-            "title": "Transmission Characteristics: Absorption losses",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-multi-mode-fibers",
+            "title": "Multi mode fibers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-transmission-characteristics-linear-and-non-linear-scattering-losses",
-            "title": "Transmission Characteristics: Linear and Non linear scattering losses",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-attenuation",
+            "title": "Attenuation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-transmission-characteristics-bend-losses",
-            "title": "Transmission Characteristics: Bend losses",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-absorption-losses",
+            "title": "Absorption losses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-intermodal-dispersion",
-            "title": "Dispersion: Intermodal dispersion",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-linear-scattering-losses",
+            "title": "Linear scattering losses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-chromatic-dispersion",
-            "title": "Dispersion: Chromatic dispersion",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-non-linear-scattering-losses",
+            "title": "Non linear scattering losses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-dispersion-modified-fibers",
-            "title": "Dispersion: Dispersion modified fibers",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-bend-losses",
+            "title": "Bend losses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-photonic-crystal-fibers",
-            "title": "Dispersion: Photonic crystal fibers",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-intermodal-dispersion",
+            "title": "Intermodal dispersion",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-polarization-mode-dispersion",
-            "title": "Dispersion: Polarization mode dispersion",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-chromatic-dispersion",
+            "title": "Chromatic dispersion",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-nonlinear-effects",
-            "title": "Dispersion: Nonlinear effects",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-modified-fibers",
+            "title": "Dispersion modified fibers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-dispersion-solitons",
-            "title": "Dispersion: Solitons",
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-photonic-crystal-fibers",
+            "title": "Photonic crystal fibers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-polarization-mode-dispersion",
+            "title": "Polarization mode dispersion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-nonlinear-effects",
+            "title": "Nonlinear effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect636-optical-communication-01-module-1-optical-fiber-communications-structure-of-optical-fiber-materials-gener-solitons",
+            "title": "Solitons",
             "content": "",
             "pyqs": []
           }
@@ -4214,74 +4556,74 @@
         "title": "Module 2: Optical fibers and cables fabrication techniques",
         "topics": [
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fibers-and-cables-fabrication-techniques-double-crucible-method",
-            "title": "Optical fibers and Cables: Fabrication Techniques - Double crucible method",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-fabrication-techniques-double-crucible-method",
+            "title": "Fabrication Techniques - Double crucible method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fibers-and-cables-fabrication-techniques-outside-vapour-phase-oxidation",
-            "title": "Optical fibers and Cables: Fabrication Techniques - Outside Vapour phase oxidation",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-fabrication-techniques-outside-vapour-phase-oxidation",
+            "title": "Fabrication Techniques - Outside Vapour phase oxidation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fibers-and-cables-fabrication-techniques-modified-chemical-vapour-deposition",
-            "title": "Optical fibers and Cables: Fabrication Techniques - Modified Chemical Vapour Deposition",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-fabrication-techniques-modified-chemical-vapour-deposition",
+            "title": "Fabrication Techniques - Modified Chemical Vapour Deposition",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-cables-single-fiber-cables",
-            "title": "Optical Fiber Cables: Single fiber cables",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-single-fiber-cables",
+            "title": "Single fiber cables",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-cables-multi-fiber-cables",
-            "title": "Optical Fiber Cables: Multi fiber cables",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-multi-fiber-cables",
+            "title": "Multi fiber cables",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-connections-splices",
-            "title": "Optical Fiber Connections: Splices",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-splices",
+            "title": "Splices",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-connections-connectors",
-            "title": "Optical Fiber Connections: Connectors",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-connectors",
+            "title": "Connectors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-connections-couplers",
-            "title": "Optical Fiber Connections: Couplers",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-couplers",
+            "title": "Couplers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-measurements-attenuation-measurements",
-            "title": "Optical Fiber Measurements: Attenuation measurements",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-attenuation-measurements",
+            "title": "Attenuation measurements",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-measurements-dispersion-measurements",
-            "title": "Optical Fiber Measurements: Dispersion measurements",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-dispersion-measurements",
+            "title": "Dispersion measurements",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-measurements-mz-interferometer",
-            "title": "Optical Fiber Measurements: MZ interferometer",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-mz-interferometer",
+            "title": "MZ interferometer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-fiber-measurements-optical-time-domain-reflectometer-applications",
-            "title": "Optical Fiber Measurements: Optical Time Domain Reflectometer - Applications",
+            "id": "ec-6-peect636-optical-communication-02-module-2-optical-fibers-and-cables-fabrication-techniques-optical-time-domain-reflectometer-applications",
+            "title": "Optical Time Domain Reflectometer - Applications",
             "content": "",
             "pyqs": []
           }
@@ -4292,68 +4634,74 @@
         "title": "Module 3: Optical sources leds and lds general structures characteristics modulat",
         "topics": [
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-sources-leds-and-lds-general-structures",
-            "title": "Optical sources: LEDs and LDs - General structures",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-leds-and-lds-general-structures",
+            "title": "LEDs and LDs - General structures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-sources-leds-and-lds-characteristics",
-            "title": "Optical sources: LEDs and LDs - Characteristics",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-leds-and-lds-characteristics",
+            "title": "LEDs and LDs - Characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-sources-modulators-using-leds-and-lds",
-            "title": "Optical sources: Modulators using LEDs and LDs",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-modulators-using-leds-and-lds",
+            "title": "Modulators using LEDs and LDs",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-sources-coupling-with-fibres",
-            "title": "Optical sources: Coupling with fibres",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-coupling-with-fibres",
+            "title": "Coupling with fibres",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-detectors-quantum-efficiency-and-responsivity",
-            "title": "Optical detectors: Quantum efficiency and Responsivity",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-quantum-efficiency",
+            "title": "Quantum efficiency",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-detectors-structure-and-working-of-pin",
-            "title": "Optical detectors: Structure and working of PIN",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-responsivity",
+            "title": "Responsivity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-detectors-structure-and-working-of-apd",
-            "title": "Optical detectors: Structure and working of APD",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-structure-and-working-of-pin",
+            "title": "Structure and working of PIN",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-receivers-direct-detection",
-            "title": "Optical Receivers: Direct detection",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-structure-and-working-of-apd",
+            "title": "Structure and working of APD",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-receivers-noise-in-detectors",
-            "title": "Optical Receivers: Noise in detectors",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-direct-detection",
+            "title": "Direct detection",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-receivers-snr",
-            "title": "Optical Receivers: SNR",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-noise-in-detectors",
+            "title": "Noise in detectors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-receivers-ber-analysis",
-            "title": "Optical Receivers: BER analysis",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-snr",
+            "title": "SNR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-ber-analysis",
+            "title": "BER analysis",
             "content": "",
             "pyqs": []
           },
@@ -4364,20 +4712,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-amplifiers-edfa-principle",
-            "title": "Optical Amplifiers: EDFA - Principle",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-edfa-principle",
+            "title": "EDFA - Principle",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-amplifiers-edfa-structure-and-working",
-            "title": "Optical Amplifiers: EDFA - Structure and working",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-edfa-structure-and-working",
+            "title": "EDFA - Structure and working",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-optical-amplifiers-raman-amplifiers",
-            "title": "Optical Amplifiers: Raman amplifiers",
+            "id": "ec-6-peect636-optical-communication-03-module-3-optical-sources-leds-and-lds-general-structures-characteristics-modulat-raman-amplifiers",
+            "title": "Raman amplifiers",
             "content": "",
             "pyqs": []
           }
@@ -4388,92 +4736,92 @@
         "title": "Module 4: Multiplexing strategies otdm scm ofdm wdm and optical cdma concepts com",
         "topics": [
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-otdm-concepts",
-            "title": "Multiplexing Strategies: OTDM - concepts",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-otdm-concepts",
+            "title": "OTDM - concepts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-scm-concepts",
-            "title": "Multiplexing Strategies: SCM - concepts",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-scm-concepts",
+            "title": "SCM - concepts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-ofdm-concepts",
-            "title": "Multiplexing Strategies: OFDM - concepts",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-ofdm-concepts",
+            "title": "OFDM - concepts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-wdm-concepts",
-            "title": "Multiplexing Strategies: WDM - concepts",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-wdm-concepts",
+            "title": "WDM - concepts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-optical-cdma-concepts",
-            "title": "Multiplexing Strategies: Optical CDMA - concepts",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-optical-cdma-concepts",
+            "title": "Optical CDMA - concepts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-components-couplers",
-            "title": "Multiplexing Strategies: Components - Couplers",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-couplers",
+            "title": "Couplers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-components-splitters",
-            "title": "Multiplexing Strategies: Components - Splitters",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-splitters",
+            "title": "Splitters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-components-add-drop-multiplexers",
-            "title": "Multiplexing Strategies: Components - Add/Drop multiplexers",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-add-drop-multiplexers",
+            "title": "Add/Drop multiplexers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-components-fiber-grating-filters",
-            "title": "Multiplexing Strategies: Components - Fiber grating filters",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-fiber-grating-filters",
+            "title": "Fiber grating filters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-multiplexing-strategies-components-tunable-filters",
-            "title": "Multiplexing Strategies: Components - Tunable filters",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-tunable-filters",
+            "title": "Tunable filters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-optical-networks-general-description-of-sonet-sdh",
-            "title": "Optical networks: General description of SONET/SDH",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-general-description-of-sonet-sdh",
+            "title": "General description of SONET/SDH",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-free-space-optics-principle-of-lifi-technology",
-            "title": "Free space optics: Principle of LiFi technology",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-principle-of-lifi-technology",
+            "title": "Principle of LiFi technology",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-free-space-optics-visible-light-communication",
-            "title": "Free space optics: Visible Light Communication",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-visible-light-communication",
+            "title": "Visible Light Communication",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-other-applications-of-optical-fibers-entertainment",
-            "title": "Other applications of optical fibers: Entertainment",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-entertainment",
+            "title": "Entertainment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-other-applications-of-optical-fibers-sensors-types-and-principles",
-            "title": "Other applications of optical fibers: Sensors - Types and principles",
+            "id": "ec-6-peect636-optical-communication-04-module-4-multiplexing-strategies-otdm-scm-ofdm-wdm-and-optical-cdma-concepts-com-sensors-types-and-principles",
+            "title": "Sensors - Types and principles",
             "content": "",
             "pyqs": []
           }
@@ -4523,20 +4871,38 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-functions-of-single-and-two-variables",
-            "title": "Functions of single and two variables",
+            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-functions-of-single-variable",
+            "title": "Functions of single variable",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-convexity-and-concavity-of-functions",
-            "title": "Convexity and concavity of functions",
+            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-functions-of-two-variables",
+            "title": "Functions of two variables",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-definition-of-global-and-local-optima",
-            "title": "Definition of Global and Local optima",
+            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-convexity-of-functions",
+            "title": "Convexity of functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-concavity-of-functions",
+            "title": "Concavity of functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-definition-of-global-optima",
+            "title": "Definition of Global optima",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect637-optimization-techniques-01-module-1-engineering-application-of-optimization-statement-of-an-optimization-pr-definition-of-local-optima",
+            "title": "Definition of Local optima",
             "content": "",
             "pyqs": []
           },
@@ -4739,8 +5105,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-6-peect637-optimization-techniques-04-module-4-modern-methods-of-optimization-metaheuristic-techniques-genetic-algorit-use-of-matlab-scilab-to-solve-optimization-problem",
-            "title": "Use of Matlab/Scilab to solve optimization problem",
+            "id": "ec-6-peect637-optimization-techniques-04-module-4-modern-methods-of-optimization-metaheuristic-techniques-genetic-algorit-use-of-matlab-to-solve-optimization-problem",
+            "title": "Use of Matlab to solve optimization problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-6-peect637-optimization-techniques-04-module-4-modern-methods-of-optimization-metaheuristic-techniques-genetic-algorit-use-of-scilab-to-solve-optimization-problem",
+            "title": "Use of Scilab to solve optimization problem",
             "content": "",
             "pyqs": []
           }

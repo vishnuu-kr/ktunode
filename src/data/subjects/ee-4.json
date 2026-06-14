@@ -47,8 +47,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet416-computer-organization-01-module-1-basic-structure-of-computers-functional-units-instructions-and-instruction-sequencing",
-            "title": "Instructions and instruction sequencing",
+            "id": "ee-4-peeet416-computer-organization-01-module-1-basic-structure-of-computers-functional-units-instructions",
+            "title": "Instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet416-computer-organization-01-module-1-basic-structure-of-computers-functional-units-instruction-sequencing",
+            "title": "Instruction sequencing",
             "content": "",
             "pyqs": []
           },
@@ -275,14 +281,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet416-computer-organization-03-module-3-control-logic-design-hardwired-control-instruction-and-arithmetic-pipelines",
-            "title": "Instruction and arithmetic pipelines",
+            "id": "ee-4-peeet416-computer-organization-03-module-3-control-logic-design-hardwired-control-instruction-pipelines",
+            "title": "Instruction pipelines",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet416-computer-organization-03-module-3-control-logic-design-hardwired-control-hazard-detection-and-resolution",
-            "title": "Hazard detection and resolution",
+            "id": "ee-4-peeet416-computer-organization-03-module-3-control-logic-design-hardwired-control-arithmetic-pipelines",
+            "title": "Arithmetic pipelines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet416-computer-organization-03-module-3-control-logic-design-hardwired-control-hazard-detection",
+            "title": "Hazard detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet416-computer-organization-03-module-3-control-logic-design-hardwired-control-hazard-resolution",
+            "title": "Hazard resolution",
             "content": "",
             "pyqs": []
           }
@@ -377,8 +395,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet416-computer-organization-04-module-4-memory-system-types-of-memory-concepts-only-virtual-memory-content-addr-polling-and-daisy-chaining-schemes",
-            "title": "Polling and daisy chaining schemes",
+            "id": "ee-4-peeet416-computer-organization-04-module-4-memory-system-types-of-memory-concepts-only-virtual-memory-content-addr-polling-schemes",
+            "title": "Polling schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet416-computer-organization-04-module-4-memory-system-types-of-memory-concepts-only-virtual-memory-content-addr-daisy-chaining-schemes",
+            "title": "Daisy chaining schemes",
             "content": "",
             "pyqs": []
           },
@@ -626,8 +650,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-08-module-8-retardation-test-on-a-dc-machine-co3-separate-the-friction-and-windage-losses",
-            "title": "Separate the friction and windage losses",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-08-module-8-retardation-test-on-a-dc-machine-co3-separate-the-friction-losses",
+            "title": "Separate the friction losses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-08-module-8-retardation-test-on-a-dc-machine-co3-separate-the-windage-losses",
+            "title": "Separate the windage losses",
             "content": "",
             "pyqs": []
           },
@@ -680,14 +710,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-10-module-10-oc-and-sc-tests-on-single-predetermine-the-voltage-regulation-at-different-loads-and-power-factors",
-            "title": "Predetermine the voltage regulation at different loads and power factors",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-10-module-10-oc-and-sc-tests-on-single-predetermine-the-voltage-regulation-at-different-loads",
+            "title": "Predetermine the voltage regulation at different loads",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-10-module-10-oc-and-sc-tests-on-single-predetermine-the-efficiency-at-different-loads-and-power-factors",
-            "title": "Predetermine the efficiency at different loads and power factors",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-10-module-10-oc-and-sc-tests-on-single-predetermine-the-voltage-regulation-at-different-power-factors",
+            "title": "Predetermine the voltage regulation at different power factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-10-module-10-oc-and-sc-tests-on-single-predetermine-the-efficiency-at-different-loads",
+            "title": "Predetermine the efficiency at different loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-10-module-10-oc-and-sc-tests-on-single-predetermine-the-efficiency-at-different-power-factors",
+            "title": "Predetermine the efficiency at different power factors",
             "content": "",
             "pyqs": []
           },
@@ -758,14 +800,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-11-module-11-load-test-on-single-determine-the-voltage-regulation-at-different-loads-and-at-unity-power-factor",
-            "title": "Determine the voltage regulation at different loads and at unity power factor",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-11-module-11-load-test-on-single-determine-the-voltage-regulation-at-different-loads",
+            "title": "Determine the voltage regulation at different loads",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-11-module-11-load-test-on-single-determine-the-efficiency-at-different-loads-and-at-unity-power-factor",
-            "title": "Determine the efficiency at different loads and at unity power factor",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-11-module-11-load-test-on-single-determine-the-voltage-regulation-at-unity-power-factor",
+            "title": "Determine the voltage regulation at unity power factor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-11-module-11-load-test-on-single-determine-the-efficiency-at-different-loads",
+            "title": "Determine the efficiency at different loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-11-module-11-load-test-on-single-determine-the-efficiency-at-unity-power-factor",
+            "title": "Determine the efficiency at unity power factor",
             "content": "",
             "pyqs": []
           }
@@ -794,8 +848,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-12-module-12-separation-of-losses-in-a-single-plot-losses-vs-frequency-curves-at-normal-voltage-and-different-frequencies",
-            "title": "Plot losses Vs frequency curves at normal voltage and different frequencies",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-12-module-12-separation-of-losses-in-a-single-plot-losses-vs-frequency-curves-at-normal-voltage",
+            "title": "Plot losses Vs frequency curves at normal voltage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-12-module-12-separation-of-losses-in-a-single-plot-losses-vs-frequency-curves-at-different-frequencies",
+            "title": "Plot losses Vs frequency curves at different frequencies",
             "content": "",
             "pyqs": []
           },
@@ -818,14 +878,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-13-module-13-sumpners-test-co4-predetermine-the-voltage-regulation-at-different-loads-full-load-and-half-full-load-and-power-factors-unity-0-8-lag-and-lead",
-            "title": "Predetermine the voltage regulation at different loads (full-load and half full-load) and power factors (unity, 0.8 lag and lead)",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-13-module-13-sumpners-test-co4-predetermine-the-voltage-regulation-at-different-loads-full-load-and-half-full-load",
+            "title": "Predetermine the voltage regulation at different loads (full-load and half full-load)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-13-module-13-sumpners-test-co4-predetermine-the-efficiency-at-different-loads-full-load-and-half-full-load-and-power-factors-unity-0-8-lag-and-lead",
-            "title": "Predetermine the efficiency at different loads (full-load and half full-load) and power factors (unity, 0.8 lag and lead)",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-13-module-13-sumpners-test-co4-predetermine-the-voltage-regulation-at-different-power-factors-unity-0-8-lag-and-lead",
+            "title": "Predetermine the voltage regulation at different power factors (unity, 0.8 lag and lead)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-13-module-13-sumpners-test-co4-predetermine-the-efficiency-at-different-loads-full-load-and-half-full-load",
+            "title": "Predetermine the efficiency at different loads (full-load and half full-load)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-13-module-13-sumpners-test-co4-predetermine-the-efficiency-at-different-power-factors-unity-0-8-lag-and-lead",
+            "title": "Predetermine the efficiency at different power factors (unity, 0.8 lag and lead)",
             "content": "",
             "pyqs": []
           },
@@ -878,14 +950,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-15-module-15-oc-and-sc-tests-on-3-predetermine-the-voltage-regulation-at-different-loads-full-load-and-half-full-load-and-power-factors-unity-0-8-lag-and-lead",
-            "title": "Predetermine the voltage regulation at different loads (full-load and half full-load) and power factors (unity, 0.8 lag and lead)",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-15-module-15-oc-and-sc-tests-on-3-predetermine-the-voltage-regulation-at-different-loads-full-load-and-half-full-load",
+            "title": "Predetermine the voltage regulation at different loads (full-load and half full-load)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel407-dc-machines-transformers-lab-15-module-15-oc-and-sc-tests-on-3-predetermine-the-efficiency-at-different-loads-full-load-and-half-full-load-and-power-factors-unity-0-8-lag-and-lead",
-            "title": "Predetermine the efficiency at different loads (full-load and half full-load) and power factors (unity, 0.8 lag and lead)",
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-15-module-15-oc-and-sc-tests-on-3-predetermine-the-voltage-regulation-at-different-power-factors-unity-0-8-lag-and-lead",
+            "title": "Predetermine the voltage regulation at different power factors (unity, 0.8 lag and lead)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-15-module-15-oc-and-sc-tests-on-3-predetermine-the-efficiency-at-different-loads-full-load-and-half-full-load",
+            "title": "Predetermine the efficiency at different loads (full-load and half full-load)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel407-dc-machines-transformers-lab-15-module-15-oc-and-sc-tests-on-3-predetermine-the-efficiency-at-different-power-factors-unity-0-8-lag-and-lead",
+            "title": "Predetermine the efficiency at different power factors (unity, 0.8 lag and lead)",
             "content": "",
             "pyqs": []
           },
@@ -935,8 +1019,20 @@
         "title": "Module 1: Number systems and codes binary octal and hexadecimal conversions ascii",
         "topics": [
           {
-            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-number-systems-binary-octal-and-hexadecimal",
-            "title": "Number Systems - binary, octal and hexadecimal",
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-number-systems-binary",
+            "title": "Number Systems - binary",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-number-systems-octal",
+            "title": "Number Systems - octal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-number-systems-hexadecimal",
+            "title": "Number Systems - hexadecimal",
             "content": "",
             "pyqs": []
           },
@@ -977,14 +1073,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-1-s-complement-and-2-s-complement-representation",
-            "title": "1's complement and 2's complement representation",
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-1-s-complement-representation",
+            "title": "1's complement representation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-addition-and-subtraction-using-1-s-and-2-s-complement",
-            "title": "Addition and subtraction using 1's and 2's complement",
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-2-s-complement-representation",
+            "title": "2's complement representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-addition-using-1-s-and-2-s-complement",
+            "title": "Addition using 1's and 2's complement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-subtraction-using-1-s-and-2-s-complement",
+            "title": "Subtraction using 1's and 2's complement",
             "content": "",
             "pyqs": []
           },
@@ -1049,14 +1157,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-k-map-representation-and-simplification-up-to-four-variables",
-            "title": "K-map representation and simplification (up to four variables)",
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-k-map-representation-up-to-four-variables",
+            "title": "K-map representation (up to four variables)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-pairs-quads-and-octets-in-k-map",
-            "title": "Pairs, quads and octets in K-map",
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-k-map-simplification-up-to-four-variables",
+            "title": "K-map simplification (up to four variables)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-pairs-in-k-map",
+            "title": "Pairs in K-map",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-quads-in-k-map",
+            "title": "Quads in K-map",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-01-module-1-number-systems-and-codes-binary-octal-and-hexadecimal-conversions-ascii-octets-in-k-map",
+            "title": "Octets in K-map",
             "content": "",
             "pyqs": []
           },
@@ -1205,8 +1331,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pbeet404-digital-electronics-03-module-3-flip-characteristic-table-and-excitation-table-of-flip-flops",
-            "title": "Characteristic table and excitation table of flip-flops",
+            "id": "ee-4-pbeet404-digital-electronics-03-module-3-flip-characteristic-table-of-flip-flops",
+            "title": "Characteristic table of flip-flops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pbeet404-digital-electronics-03-module-3-flip-excitation-table-of-flip-flops",
+            "title": "Excitation table of flip-flops",
             "content": "",
             "pyqs": []
           },
@@ -1460,8 +1592,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-measurement-of-elasticity-and-its-applications",
-            "title": "Measurement of elasticity and its applications",
+            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-measurement-of-elasticity",
+            "title": "Measurement of elasticity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-applications-of-elasticity",
+            "title": "Applications of elasticity",
             "content": "",
             "pyqs": []
           },
@@ -1472,8 +1610,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-demand-and-supply-and-its-effects",
-            "title": "Changes in demand and supply and its effects",
+            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-demand-and-supply",
+            "title": "Changes in demand and supply",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-effects-of-changes-in-demand-and-supply",
+            "title": "Effects of changes in demand and supply",
             "content": "",
             "pyqs": []
           },
@@ -1496,8 +1640,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-internal-and-external-economies",
-            "title": "Internal and External Economies",
+            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-internal-economies",
+            "title": "Internal Economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-external-economies",
+            "title": "External Economies",
             "content": "",
             "pyqs": []
           },
@@ -1532,8 +1682,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost-explicit-and-implicit-cost-sunk-explicit-and-implicit-cost",
-            "title": "Explicit and implicit cost",
+            "id": "ee-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost-explicit-and-implicit-cost-sunk-explicit-cost",
+            "title": "Explicit cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost-explicit-and-implicit-cost-sunk-implicit-cost",
+            "title": "Implicit cost",
             "content": "",
             "pyqs": []
           },
@@ -1598,8 +1754,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost-explicit-and-implicit-cost-sunk-oligopoly-features-and-equilibrium-of-a-firm",
-            "title": "Oligopoly (features and equilibrium of a firm)",
+            "id": "ee-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost-explicit-and-implicit-cost-sunk-oligopoly-features",
+            "title": "Oligopoly features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost-explicit-and-implicit-cost-sunk-equilibrium-of-a-firm-under-oligopoly",
+            "title": "Equilibrium of a firm under oligopoly",
             "content": "",
             "pyqs": []
           }
@@ -1640,8 +1802,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-causes-and-effects-of-inflation",
-            "title": "Causes and Effects of inflation",
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-causes-of-inflation",
+            "title": "Causes of inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-effects-of-inflation",
+            "title": "Effects of inflation",
             "content": "",
             "pyqs": []
           },
@@ -1652,8 +1820,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-monetary-and-fiscal-policies",
-            "title": "Monetary and Fiscal policies",
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-monetary-policy",
+            "title": "Monetary policy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-fiscal-policy",
+            "title": "Fiscal policy",
             "content": "",
             "pyqs": []
           },
@@ -1670,8 +1844,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-direct-and-indirect-taxes-merits-and-demerits",
-            "title": "Direct and Indirect taxes (merits and demerits)",
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-direct-taxes",
+            "title": "Direct taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-indirect-taxes",
+            "title": "Indirect taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-merits-of-direct-and-indirect-taxes",
+            "title": "Merits of direct and indirect taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-demerits-of-direct-and-indirect-taxes",
+            "title": "Demerits of direct and indirect taxes",
             "content": "",
             "pyqs": []
           },
@@ -1700,8 +1892,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-methods-of-estimation-and-difficulties",
-            "title": "Methods of Estimation and Difficulties",
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-methods-of-estimation-of-national-income",
+            "title": "Methods of Estimation of National income",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-difficulties-in-estimation-of-national-income",
+            "title": "Difficulties in estimation of National income",
             "content": "",
             "pyqs": []
           },
@@ -1724,8 +1922,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-demat-account-and-trading-account",
-            "title": "Demat Account and Trading Account",
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-demat-account",
+            "title": "Demat Account",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-trading-account",
+            "title": "Trading Account",
             "content": "",
             "pyqs": []
           },
@@ -1736,8 +1940,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-sensex-and-nifty",
-            "title": "SENSEX and NIFTY",
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-sensex",
+            "title": "SENSEX",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-03-module-3-monetary-system-money-functions-nifty",
+            "title": "NIFTY",
             "content": "",
             "pyqs": []
           }
@@ -1748,8 +1958,14 @@
         "title": "Module 4: Value analysis and value engineering",
         "topics": [
           {
-            "id": "ee-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-analysis-and-value-engineering",
-            "title": "Value Analysis and value Engineering",
+            "id": "ee-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-analysis",
+            "title": "Value Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-engineering",
+            "title": "Value Engineering",
             "content": "",
             "pyqs": []
           },
@@ -1778,8 +1994,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-aims-advantages-and-application-areas-of-value-engineering",
-            "title": "Aims, Advantages and Application areas of Value Engineering",
+            "id": "ee-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-aims-of-value-engineering",
+            "title": "Aims of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-advantages-of-value-engineering",
+            "title": "Advantages of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-application-areas-of-value-engineering",
+            "title": "Application areas of Value Engineering",
             "content": "",
             "pyqs": []
           },
@@ -1835,8 +2063,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-calibration-methods-static-dynamic-field-traceable-master",
-            "title": "Calibration methods: Static, Dynamic, Field, Traceable, Master",
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-calibration-methods-static",
+            "title": "Calibration methods: Static",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-calibration-methods-dynamic",
+            "title": "Calibration methods: Dynamic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-calibration-methods-field",
+            "title": "Calibration methods: Field",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-calibration-methods-traceable",
+            "title": "Calibration methods: Traceable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-calibration-methods-master",
+            "title": "Calibration methods: Master",
             "content": "",
             "pyqs": []
           },
@@ -1853,20 +2105,44 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-static-and-dynamic-characteristics",
-            "title": "Static and dynamic characteristics",
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-static-characteristics",
+            "title": "Static characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-zeroth-and-first-order-instruments-and-time-responses",
-            "title": "Zeroth and first order instruments and time responses",
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-dynamic-characteristics",
+            "title": "Dynamic characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-resistive-transducers-for-liquid-level-and-humidity",
-            "title": "Resistive transducers for liquid level and humidity",
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-zeroth-order-instruments",
+            "title": "Zeroth order instruments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-first-order-instruments",
+            "title": "First order instruments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-time-responses",
+            "title": "Time responses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-resistive-transducers-for-liquid-level",
+            "title": "Resistive transducers for liquid level",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-resistive-transducers-for-humidity",
+            "title": "Resistive transducers for humidity",
             "content": "",
             "pyqs": []
           },
@@ -1925,8 +2201,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-advantages-and-applications-of-mems",
-            "title": "Advantages and Applications of MEMS",
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-advantages-of-mems",
+            "title": "Advantages of MEMS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-01-module-1-functional-elements-of-electronic-instrumentation-system-calibration-me-applications-of-mems",
+            "title": "Applications of MEMS",
             "content": "",
             "pyqs": []
           },
@@ -1997,8 +2279,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-low-pass-high-pass-band-pass-and-band-rejection-filters",
-            "title": "Low pass, high pass, band pass and band rejection filters",
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-low-pass-filters",
+            "title": "Low pass filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-high-pass-filters",
+            "title": "High pass filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-band-pass-filters",
+            "title": "Band pass filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-band-rejection-filters",
+            "title": "Band rejection filters",
             "content": "",
             "pyqs": []
           },
@@ -2021,8 +2321,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-modulation-methods-pulse-modulation-pulse-amplitude-modulation-pulse-code-modulation",
-            "title": "Modulation methods: Pulse modulation, Pulse amplitude modulation, Pulse code modulation",
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-modulation-methods-pulse-modulation",
+            "title": "Modulation methods: Pulse modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-modulation-methods-pulse-amplitude-modulation",
+            "title": "Modulation methods: Pulse amplitude modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-modulation-methods-pulse-code-modulation",
+            "title": "Modulation methods: Pulse code modulation",
             "content": "",
             "pyqs": []
           },
@@ -2033,8 +2345,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-cable-transmission-of-analog-and-digital-data",
-            "title": "Cable transmission of analog and digital data",
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-cable-transmission-of-analog-data",
+            "title": "Cable transmission of analog data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-cable-transmission-of-digital-data",
+            "title": "Cable transmission of digital data",
             "content": "",
             "pyqs": []
           },
@@ -2045,8 +2363,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-principles-of-time-division-and-frequency-division-multiplexing",
-            "title": "Principles of time division and frequency division multiplexing",
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-principles-of-time-division-multiplexing",
+            "title": "Principles of time division multiplexing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-principles-of-frequency-division-multiplexing",
+            "title": "Principles of frequency division multiplexing",
             "content": "",
             "pyqs": []
           },
@@ -2063,8 +2387,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-protocols-field-bus-profibus-hart",
-            "title": "Protocols: Field Bus, Profibus, HART",
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-protocols-field-bus",
+            "title": "Protocols: Field Bus",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-protocols-profibus",
+            "title": "Protocols: Profibus",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-02-module-2-signal-conditioning-for-instrumentation-systems-voltage-to-current-conv-protocols-hart",
+            "title": "Protocols: HART",
             "content": "",
             "pyqs": []
           }
@@ -2177,8 +2513,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-analog-and-digital-das",
-            "title": "Analog and Digital DAS",
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-analog-das",
+            "title": "Analog DAS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-digital-das",
+            "title": "Digital DAS",
             "content": "",
             "pyqs": []
           },
@@ -2231,8 +2573,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-realization-of-and-or-nand-nor-and-xor-logic",
-            "title": "Realization of AND, OR, NAND, NOR and XOR logic",
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-realization-of-and-logic",
+            "title": "Realization of AND logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-realization-of-or-logic",
+            "title": "Realization of OR logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-realization-of-nand-logic",
+            "title": "Realization of NAND logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-realization-of-nor-logic",
+            "title": "Realization of NOR logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-realization-of-xor-logic",
+            "title": "Realization of XOR logic",
             "content": "",
             "pyqs": []
           },
@@ -2291,14 +2657,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-rtu-and-supervisory-stations",
-            "title": "RTU and Supervisory Stations",
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-rtu",
+            "title": "RTU",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-protocols-iec-60870-5-101-and-dnp3",
-            "title": "Protocols- IEC 60870-5-101 and DNP3",
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-supervisory-stations",
+            "title": "Supervisory Stations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-protocols-iec-60870-5-101",
+            "title": "Protocols- IEC 60870-5-101",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet411-electronic-instrumentation-04-module-4-introduction-to-process-control-protocols-dnp3",
+            "title": "Protocols- DNP3",
             "content": "",
             "pyqs": []
           },
@@ -3137,14 +3515,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-expectation",
-            "title": "Expectation",
+            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-mean",
+            "title": "Mean",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-mean-and-variance",
-            "title": "Mean and variance",
+            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-variance",
+            "title": "Variance",
             "content": "",
             "pyqs": []
           },
@@ -3215,8 +3593,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-mean-and-variance",
-            "title": "Mean and variance",
+            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-mean",
+            "title": "Mean",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-variance",
+            "title": "Variance",
             "content": "",
             "pyqs": []
           },
@@ -3305,8 +3689,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-i-and-type-ii-error",
-            "title": "Type I and Type II error",
+            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-i-error",
+            "title": "Type I error",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-ii-error",
+            "title": "Type II error",
             "content": "",
             "pyqs": []
           },
@@ -3470,8 +3860,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-01-module-1-linear-algebra-systems-of-linear-equations-matrices-solving-systems-of-basis-and-rank",
-            "title": "Basis and Rank",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-01-module-1-linear-algebra-systems-of-linear-equations-matrices-solving-systems-of-basis",
+            "title": "Basis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-01-module-1-linear-algebra-systems-of-linear-equations-matrices-solving-systems-of-rank",
+            "title": "Rank",
             "content": "",
             "pyqs": []
           },
@@ -3494,8 +3890,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-01-module-1-linear-algebra-systems-of-linear-equations-matrices-solving-systems-of-image-and-kernel",
-            "title": "Image and Kernel",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-01-module-1-linear-algebra-systems-of-linear-equations-matrices-solving-systems-of-image",
+            "title": "Image",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-01-module-1-linear-algebra-systems-of-linear-equations-matrices-solving-systems-of-kernel",
+            "title": "Kernel",
             "content": "",
             "pyqs": []
           }
@@ -3530,14 +3932,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-lengths-and-distances",
-            "title": "Lengths and Distances",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-lengths",
+            "title": "Lengths",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-angles-and-orthogonality",
-            "title": "Angles and Orthogonality",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-distances",
+            "title": "Distances",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-angles",
+            "title": "Angles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-orthogonality",
+            "title": "Orthogonality",
             "content": "",
             "pyqs": []
           },
@@ -3578,14 +3992,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-determinant-and-trace",
-            "title": "Determinant and Trace",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-determinant",
+            "title": "Determinant",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-eigenvalues-and-eigenvectors",
-            "title": "Eigenvalues and Eigenvectors",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-trace",
+            "title": "Trace",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-eigenvalues",
+            "title": "Eigenvalues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-eigenvectors",
+            "title": "Eigenvectors",
             "content": "",
             "pyqs": []
           },
@@ -3596,8 +4022,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-eigen-decomposition-and-diagonalization",
-            "title": "Eigen decomposition and Diagonalization",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-eigen-decomposition",
+            "title": "Eigen decomposition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-02-module-2-analytic-geometry-matrix-decompositions-norms-inner-products-lengths-an-diagonalization",
+            "title": "Diagonalization",
             "content": "",
             "pyqs": []
           },
@@ -3632,8 +4064,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-partial-differentiation-and-gradients",
-            "title": "Partial Differentiation and Gradients",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-partial-differentiation",
+            "title": "Partial Differentiation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-gradients",
+            "title": "Gradients",
             "content": "",
             "pyqs": []
           },
@@ -3656,8 +4094,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-back-propagation-and-automatic-differentiation",
-            "title": "Back propagation and Automatic Differentiation",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-back-propagation",
+            "title": "Back propagation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-automatic-differentiation",
+            "title": "Automatic Differentiation",
             "content": "",
             "pyqs": []
           },
@@ -3680,8 +4124,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-linearization-and-multivariate-taylor-series",
-            "title": "Linearization and Multivariate Taylor Series",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-linearization",
+            "title": "Linearization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-03-module-3-vector-calculus-differentiation-of-univariate-functions-multivariate-taylor-series",
+            "title": "Multivariate Taylor Series",
             "content": "",
             "pyqs": []
           }
@@ -3692,8 +4142,14 @@
         "title": "Module 4: Probability and distributions construction of a probability space",
         "topics": [
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-probability-and-distributions",
-            "title": "Probability and Distributions",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-probability",
+            "title": "Probability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-distributions",
+            "title": "Distributions",
             "content": "",
             "pyqs": []
           },
@@ -3704,8 +4160,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-discrete-and-continuous-probabilities",
-            "title": "Discrete and Continuous Probabilities",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-discrete-probabilities",
+            "title": "Discrete Probabilities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-continuous-probabilities",
+            "title": "Continuous Probabilities",
             "content": "",
             "pyqs": []
           },
@@ -3716,8 +4178,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-summary-statistics-and-independence",
-            "title": "Summary Statistics and Independence",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-summary-statistics",
+            "title": "Summary Statistics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-independence",
+            "title": "Independence",
             "content": "",
             "pyqs": []
           },
@@ -3728,14 +4196,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-conjugacy-and-the-exponential-family",
-            "title": "Conjugacy and the Exponential Family",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-conjugacy",
+            "title": "Conjugacy",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-change-of-variables-inverse-transform",
-            "title": "Change of Variables/Inverse Transform",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-exponential-family",
+            "title": "Exponential Family",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-change-of-variables",
+            "title": "Change of Variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-inverse-transform",
+            "title": "Inverse Transform",
             "content": "",
             "pyqs": []
           },
@@ -3758,8 +4238,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-constrained-optimization-and-lagrange-multipliers",
-            "title": "Constrained Optimization and Lagrange Multipliers",
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-constrained-optimization",
+            "title": "Constrained Optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet413-mathematics-for-machine-learning-04-module-4-probability-and-distributions-construction-of-a-probability-space-lagrange-multipliers",
+            "title": "Lagrange Multipliers",
             "content": "",
             "pyqs": []
           },
@@ -3947,8 +4433,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet419-object-oriented-programming-02-module-2-core-java-fundamentals-type-conversion-and-casting",
-            "title": "Type Conversion and Casting",
+            "id": "ee-4-peeet419-object-oriented-programming-02-module-2-core-java-fundamentals-type-conversion",
+            "title": "Type Conversion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet419-object-oriented-programming-02-module-2-core-java-fundamentals-casting",
+            "title": "Casting",
             "content": "",
             "pyqs": []
           },
@@ -4217,8 +4709,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet419-object-oriented-programming-03-module-3-more-features-of-java-try-block-and-catch-clause",
-            "title": "try Block and catch Clause",
+            "id": "ee-4-peeet419-object-oriented-programming-03-module-3-more-features-of-java-try-block",
+            "title": "try Block",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet419-object-oriented-programming-03-module-3-more-features-of-java-catch-clause",
+            "title": "catch Clause",
             "content": "",
             "pyqs": []
           },
@@ -4289,8 +4787,14 @@
         "title": "Module 4: Graphical user interface and database support of java",
         "topics": [
           {
-            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-graphical-user-interface-and-database-support-of-java",
-            "title": "Graphical User Interface and Database support of Java",
+            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-graphical-user-interface",
+            "title": "Graphical User Interface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-database-support-of-java",
+            "title": "Database support of Java",
             "content": "",
             "pyqs": []
           },
@@ -4313,8 +4817,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-components-and-containers",
-            "title": "Components and Containers",
+            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-components",
+            "title": "Components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-containers",
+            "title": "Containers",
             "content": "",
             "pyqs": []
           },
@@ -4379,8 +4889,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-creating-and-executing-queries",
-            "title": "Creating and Executing Queries",
+            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-creating-queries",
+            "title": "Creating Queries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet419-object-oriented-programming-04-module-4-graphical-user-interface-and-database-support-of-java-executing-queries",
+            "title": "Executing Queries",
             "content": "",
             "pyqs": []
           },
@@ -4424,8 +4940,26 @@
         "title": "Module 1: Role of power electronics motivation objectives and challenges",
         "topics": [
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-role-of-power-electronics-motivation-objectives-and-challenges",
-            "title": "Role of Power Electronics, Motivation, Objectives and Challenges",
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-role-of-power-electronics",
+            "title": "Role of Power Electronics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-motivation",
+            "title": "Motivation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-objectives",
+            "title": "Objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-challenges",
+            "title": "Challenges",
             "content": "",
             "pyqs": []
           },
@@ -4436,38 +4970,362 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-ideal-and-real-switches-static-and-dynamic-performance-power-losses-temperature-rise-thermal-analogy-use-of-heat-sinks-need-for-high-efficiency-small-size-high-reliability-and-low-cost-overview-of-applications",
-            "title": "Ideal and real switches- Static and dynamic Performance - Power losses- Temperature rise- Thermal Analogy- Use of Heat sinks- Need for high efficiency, small size, high reliability and low cost- Overview of Applications",
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-ideal-switches",
+            "title": "Ideal switches",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-uncontrolled-switch-power-diodes-types-characteristics-static-and-dynamic-effects-of-reverse-recovery-transient-ratings-schottky-diodes-features-applications",
-            "title": "Uncontrolled Switch: Power Diodes - Types- Characteristics (Static and Dynamic) -Effects of Reverse Recovery Transient- Ratings-Schottky Diodes - Features & Applications",
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-real-switches",
+            "title": "Real switches",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-semi-controlled-switch-scr-thyristor-symbol-structure-characteristics-static-and-dynamic-turn-on-and-turn-off-phenomena-ratings-gate-control-of-scr-gate-pulse-magnitude-and-duration-requirements-typical-gate-drive-circuits-gate-synchronisation-isolated-gate-drives",
-            "title": "Semi-controlled switch: SCR (Thyristor) - Symbol, Structure, Characteristics (Static and dynamic) - Turn-on and Turn-off phenomena - Ratings- Gate control of SCR - Gate pulse magnitude and duration requirements- Typical gate drive circuits - Gate synchronisation - Isolated gate drives",
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-static-performance",
+            "title": "Static Performance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-fully-controlled-switches-mosfets-and-igbts-symbol-structure-characteristics-static-and-dynamic-device-ratings-gate-drive-requirements-typical-gate-drive-circuits",
-            "title": "Fully-controlled switches: MOSFETS and IGBTs: Symbol, Structure, Characteristics (Static and Dynamic) -Device ratings -Gate drive requirements-Typical gate drive circuits",
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-dynamic-performance",
+            "title": "Dynamic Performance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-modern-power-devices-introduction-to-wide-bandgap-devices-sic-mosfet-and-gan-hemt-features-and-advantages",
-            "title": "Modern power devices: Introduction to Wide Bandgap Devices - SiC MOSFET and GaN HEMT - Features and advantages",
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-power-losses",
+            "title": "Power losses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-suggestions-reading-and-interpreting-datasheets-are-to-be-encouraged-to-be-tested-through-assignments-possibility-of-simulation-assignments-homework-may-be-explored-design-of-mosfet-igbt-gate-drives-need-requirement-of-isolation-in-certain-circuits-use-of-pulse-transformers-opto-isolators-sample-circuits-design-assignments-may-be-given-using-popular-driver-ics-for-mosfets-scrs-not-to-be-tested-in-ese",
-            "title": "Suggestions: Reading and interpreting datasheets are to be encouraged [To be tested through assignments] -Possibility of simulation assignments/homework may be explored- Design of MOSFET/IGBT gate drives - need/requirement of isolation in certain circuits- Use of pulse transformers/opto-isolators - sample circuits [Design assignments may be given using popular driver ICs for MOSFETs/SCRs - not to be tested in ESE]",
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-temperature-rise",
+            "title": "Temperature rise",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-thermal-analogy",
+            "title": "Thermal Analogy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-use-of-heat-sinks",
+            "title": "Use of Heat sinks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-need-for-high-efficiency",
+            "title": "Need for high efficiency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-need-for-small-size",
+            "title": "Need for small size",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-need-for-high-reliability",
+            "title": "Need for high reliability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-need-for-low-cost",
+            "title": "Need for low cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-overview-of-applications",
+            "title": "Overview of Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-uncontrolled-switch",
+            "title": "Uncontrolled Switch",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-power-diodes",
+            "title": "Power Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-types-of-power-diodes",
+            "title": "Types of Power Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-static-characteristics-of-power-diodes",
+            "title": "Static Characteristics of Power Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-dynamic-characteristics-of-power-diodes",
+            "title": "Dynamic Characteristics of Power Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-effects-of-reverse-recovery-transient",
+            "title": "Effects of Reverse Recovery Transient",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-ratings-of-power-diodes",
+            "title": "Ratings of Power Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-schottky-diodes",
+            "title": "Schottky Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-features-of-schottky-diodes",
+            "title": "Features of Schottky Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-applications-of-schottky-diodes",
+            "title": "Applications of Schottky Diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-semi-controlled-switch",
+            "title": "Semi-controlled switch",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-scr-thyristor",
+            "title": "SCR (Thyristor)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-symbol-of-scr",
+            "title": "Symbol of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-structure-of-scr",
+            "title": "Structure of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-static-characteristics-of-scr",
+            "title": "Static Characteristics of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-dynamic-characteristics-of-scr",
+            "title": "Dynamic Characteristics of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-turn-on-phenomena-of-scr",
+            "title": "Turn-on phenomena of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-turn-off-phenomena-of-scr",
+            "title": "Turn-off phenomena of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-ratings-of-scr",
+            "title": "Ratings of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-gate-control-of-scr",
+            "title": "Gate control of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-gate-pulse-magnitude-requirements",
+            "title": "Gate pulse magnitude requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-gate-pulse-duration-requirements",
+            "title": "Gate pulse duration requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-typical-gate-drive-circuits-for-scr",
+            "title": "Typical gate drive circuits for SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-gate-synchronisation",
+            "title": "Gate synchronisation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-isolated-gate-drives",
+            "title": "Isolated gate drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-fully-controlled-switches",
+            "title": "Fully-controlled switches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-mosfets",
+            "title": "MOSFETS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-igbts",
+            "title": "IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-symbol-of-mosfets-and-igbts",
+            "title": "Symbol of MOSFETS and IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-structure-of-mosfets-and-igbts",
+            "title": "Structure of MOSFETS and IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-static-characteristics-of-mosfets-and-igbts",
+            "title": "Static Characteristics of MOSFETS and IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-dynamic-characteristics-of-mosfets-and-igbts",
+            "title": "Dynamic Characteristics of MOSFETS and IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-device-ratings-of-mosfets-and-igbts",
+            "title": "Device ratings of MOSFETS and IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-gate-drive-requirements-of-mosfets-and-igbts",
+            "title": "Gate drive requirements of MOSFETS and IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-typical-gate-drive-circuits-for-mosfets-and-igbts",
+            "title": "Typical gate drive circuits for MOSFETS and IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-modern-power-devices",
+            "title": "Modern power devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-introduction-to-wide-bandgap-devices",
+            "title": "Introduction to Wide Bandgap Devices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-sic-mosfet",
+            "title": "SiC MOSFET",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-gan-hemt",
+            "title": "GaN HEMT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-features-of-sic-mosfet-and-gan-hemt",
+            "title": "Features of SiC MOSFET and GaN HEMT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-advantages-of-sic-mosfet-and-gan-hemt",
+            "title": "Advantages of SiC MOSFET and GaN HEMT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-suggestions-reading-and-interpreting-datasheets-are-to-be-encouraged",
+            "title": "Suggestions: Reading and interpreting datasheets are to be encouraged",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-possibility-of-simulation-assignments-homework-may-be-explored",
+            "title": "Possibility of simulation assignments/homework may be explored",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-design-of-mosfet-igbt-gate-drives",
+            "title": "Design of MOSFET/IGBT gate drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-need-requirement-of-isolation-in-certain-circuits",
+            "title": "Need/requirement of isolation in certain circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-use-of-pulse-transformers-opto-isolators",
+            "title": "Use of pulse transformers/opto-isolators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-01-module-1-role-of-power-electronics-motivation-objectives-and-challenges-sample-circuits-using-popular-driver-ics-for-mosfets-scrs",
+            "title": "Sample circuits using popular driver ICs for MOSFETs/SCRs",
             "content": "",
             "pyqs": []
           }
@@ -4478,26 +5336,224 @@
         "title": "Module 2: Controlled rectifiers single phase fully controlled and half",
         "topics": [
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-controlled-rectifiers-single-phase-fully-controlled-and-half-controlled-rectifiers-semi-converter-with-rl-and-rle-loads-rectifier-and-inverter-modes-of-operation-waveforms-continuous-discontinuous-conduction-output-voltage-input-line-current-real-power-power-factor-and-thd-continuous-conduction-ripple-free-current-effect-of-source-inductance-full-converter-in-continuous-conduction-ripple-free-current",
-            "title": "Controlled Rectifiers (Single Phase) - Fully controlled and half-controlled rectifiers (semi-converter)with RL and RLE loads- Rectifier and inverter modes of operation- waveforms (continuous & discontinuous conduction)- Output voltage, Input line current, Real Power, Power factor and THD(Continuous conduction, ripple free current)- Effect of source inductance(Full converter in continuous conduction, ripple free current)",
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-controlled-rectifiers-single-phase",
+            "title": "Controlled Rectifiers (Single Phase)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-controlled-rectifiers-3-phase-fully-controlled-half-controlled-bridge-converter-with-rle-load-continuous-conduction-ripple-free-current-waveforms-output-voltage-equation",
-            "title": "Controlled Rectifiers (3-Phase) - Fully controlled & Half-controlled bridge converter with RLE load (continuous conduction, ripple free current)- Waveforms- Output voltage equation",
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-fully-controlled-rectifiers-single-phase",
+            "title": "Fully controlled rectifiers (Single Phase)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-ac-voltage-controllers-acvc-1-phase-full-wave-acvc-with-r-rl-loads-waveforms-rms-output-voltage-applications",
-            "title": "AC voltage controllers (ACVC) - 1-phase full-wave ACVC with R & RL loads - waveforms - RMS output voltage - applications",
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-half-controlled-rectifiers-semi-converter-single-phase",
+            "title": "Half-controlled rectifiers (semi-converter) (Single Phase)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-dc-dc-switching-regulators-buck-boost-buck-boost-operation-with-continuous-conduction-waveforms-effect-of-non-idealities-such-as-capacitor-esr-and-inductor-resistance-qualitative-treatment-only-design-of-filter-inductance-and-capacitance-selection-of-power-devices",
-            "title": "DC-DC Switching Regulators- Buck, Boost & Buck-Boost- Operation with Continuous conduction Waveforms- Effect of non-idealities such as capacitor ESR and inductor resistance (qualitative treatment only)- Design of filter inductance and capacitance- Selection of power devices",
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-rl-loads",
+            "title": "RL loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-rle-loads",
+            "title": "RLE loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-rectifier-mode-of-operation",
+            "title": "Rectifier mode of operation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-inverter-mode-of-operation",
+            "title": "Inverter mode of operation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-waveforms-in-continuous-conduction",
+            "title": "Waveforms in continuous conduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-waveforms-in-discontinuous-conduction",
+            "title": "Waveforms in discontinuous conduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-output-voltage",
+            "title": "Output voltage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-input-line-current",
+            "title": "Input line current",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-real-power",
+            "title": "Real Power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-power-factor",
+            "title": "Power factor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-thd-continuous-conduction-ripple-free-current",
+            "title": "THD (Continuous conduction, ripple free current)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-effect-of-source-inductance-full-converter-in-continuous-conduction-ripple-free-current",
+            "title": "Effect of source inductance (Full converter in continuous conduction, ripple free current)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-controlled-rectifiers-3-phase",
+            "title": "Controlled Rectifiers (3-Phase)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-fully-controlled-bridge-converter-3-phase",
+            "title": "Fully controlled bridge converter (3-Phase)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-half-controlled-bridge-converter-3-phase",
+            "title": "Half-controlled bridge converter (3-Phase)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-rle-load-continuous-conduction-ripple-free-current",
+            "title": "RLE load (continuous conduction, ripple free current)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-waveforms-of-3-phase-controlled-rectifiers",
+            "title": "Waveforms of 3-Phase Controlled Rectifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-output-voltage-equation-of-3-phase-controlled-rectifiers",
+            "title": "Output voltage equation of 3-Phase Controlled Rectifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-ac-voltage-controllers-acvc",
+            "title": "AC voltage controllers (ACVC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-1-phase-full-wave-acvc-with-r-loads",
+            "title": "1-phase full-wave ACVC with R loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-1-phase-full-wave-acvc-with-rl-loads",
+            "title": "1-phase full-wave ACVC with RL loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-waveforms-of-acvc",
+            "title": "Waveforms of ACVC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-rms-output-voltage-of-acvc",
+            "title": "RMS output voltage of ACVC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-applications-of-acvc",
+            "title": "Applications of ACVC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-dc-dc-switching-regulators",
+            "title": "DC-DC Switching Regulators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-buck-converter",
+            "title": "Buck converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-boost-converter",
+            "title": "Boost converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-buck-boost-converter",
+            "title": "Buck-Boost converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-operation-with-continuous-conduction",
+            "title": "Operation with Continuous conduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-waveforms-of-dc-dc-switching-regulators",
+            "title": "Waveforms of DC-DC Switching Regulators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-effect-of-non-idealities-such-as-capacitor-esr-and-inductor-resistance-qualitative-treatment-only",
+            "title": "Effect of non-idealities such as capacitor ESR and inductor resistance (qualitative treatment only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-design-of-filter-inductance",
+            "title": "Design of filter inductance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-design-of-filter-capacitance",
+            "title": "Design of filter capacitance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-02-module-2-controlled-rectifiers-single-phase-fully-controlled-and-half-selection-of-power-devices",
+            "title": "Selection of power devices",
             "content": "",
             "pyqs": []
           }
@@ -4508,26 +5564,200 @@
         "title": "Module 3: Switch mode dc",
         "topics": [
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-switch-mode-dc-ac-voltage-source-inverters-vsi-single-phase-half-bridge-and-full-bridge-configurations-sinusoidal-pulse-width-modulation-pwm-control-of-fundamental-output-voltage-harmonic-spectrum-bipolar-and-unipolar-pwm-linear-over-modulation-and-square-wave-modes-merits-and-demerits-need-for-blanking-time-dead-time",
-            "title": "Switch mode DC-AC Voltage Source Inverters (VSI)- Single phase Half- Bridge and Full-Bridge configurations- Sinusoidal Pulse Width Modulation (PWM) - Control of Fundamental output voltage- Harmonic spectrum- Bipolar and Unipolar PWM- Linear, Over Modulation and Square wave modes -Merits and demerits- Need for blanking time (dead-time)",
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-switch-mode-dc-ac-voltage-source-inverters-vsi",
+            "title": "Switch mode DC-AC Voltage Source Inverters (VSI)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-three-phase-pulse-width-modulated-vsi-fundamental-output-voltage-linear-over-modulation-and-square-wave-modes-third-harmonic-injection-pwm",
-            "title": "Three-Phase Pulse Width Modulated VSI - Fundamental Output voltage- Linear, Over Modulation and Square wave modes - Third harmonic Injection PWM",
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-half-bridge-configurations-of-vsi",
+            "title": "Single phase Half-Bridge configurations of VSI",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-current-regulated-vsi-tolerance-band-current-control-fixed-frequency-operation-single-phase-current-source-inverters-igbt-based-comparison",
-            "title": "Single phase current regulated VSI -Tolerance band current control- Fixed frequency operation - Single phase current source Inverters (IGBT based)- Comparison",
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-full-bridge-configurations-of-vsi",
+            "title": "Single phase Full-Bridge configurations of VSI",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-need-for-improved-utility-interface-generation-of-current-harmonics-power-factor-harmonics-and-ieee-519-standard-active-shaping-of-the-input-line-current-single-phase-front-end-boost-converter-circuit-diagram-operation-block-diagram-of-the-control-scheme",
-            "title": "Need for improved utility interface- Generation of current harmonics- Power factor- Harmonics and IEEE 519 standard- Active shaping of the input line current- Single-phase front end boost converter(circuit diagram, operation, block diagram of the control scheme)",
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-sinusoidal-pulse-width-modulation-pwm",
+            "title": "Sinusoidal Pulse Width Modulation (PWM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-control-of-fundamental-output-voltage",
+            "title": "Control of Fundamental output voltage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-harmonic-spectrum",
+            "title": "Harmonic spectrum",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-bipolar-pwm",
+            "title": "Bipolar PWM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-unipolar-pwm",
+            "title": "Unipolar PWM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-linear-mode",
+            "title": "Linear mode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-over-modulation-mode",
+            "title": "Over Modulation mode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-square-wave-mode",
+            "title": "Square wave mode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-merits-of-pwm-techniques",
+            "title": "Merits of PWM techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-demerits-of-pwm-techniques",
+            "title": "Demerits of PWM techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-need-for-blanking-time-dead-time",
+            "title": "Need for blanking time (dead-time)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-three-phase-pulse-width-modulated-vsi",
+            "title": "Three-Phase Pulse Width Modulated VSI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-fundamental-output-voltage-of-three-phase-vsi",
+            "title": "Fundamental Output voltage of Three-Phase VSI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-linear-mode-of-three-phase-vsi",
+            "title": "Linear mode of Three-Phase VSI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-over-modulation-mode-of-three-phase-vsi",
+            "title": "Over Modulation mode of Three-Phase VSI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-square-wave-mode-of-three-phase-vsi",
+            "title": "Square wave mode of Three-Phase VSI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-third-harmonic-injection-pwm",
+            "title": "Third harmonic Injection PWM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-current-regulated-vsi",
+            "title": "Single phase current regulated VSI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-tolerance-band-current-control",
+            "title": "Tolerance band current control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-fixed-frequency-operation",
+            "title": "Fixed frequency operation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-current-source-inverters-igbt-based",
+            "title": "Single phase current source Inverters (IGBT based)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-comparison-between-vsi-and-csi",
+            "title": "Comparison between VSI and CSI",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-need-for-improved-utility-interface",
+            "title": "Need for improved utility interface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-generation-of-current-harmonics",
+            "title": "Generation of current harmonics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-power-factor",
+            "title": "Power factor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-harmonics-and-ieee-519-standard",
+            "title": "Harmonics and IEEE 519 standard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-active-shaping-of-the-input-line-current",
+            "title": "Active shaping of the input line current",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-front-end-boost-converter-circuit-diagram",
+            "title": "Single-phase front end boost converter (circuit diagram)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-front-end-boost-converter-operation",
+            "title": "Single-phase front end boost converter (operation)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-03-module-3-switch-mode-dc-single-phase-front-end-boost-converter-block-diagram-of-the-control-scheme",
+            "title": "Single-phase front end boost converter (block diagram of the control scheme)",
             "content": "",
             "pyqs": []
           }
@@ -4538,20 +5768,212 @@
         "title": "Module 4: Introduction to electric drives advantages of adjustable speed electric",
         "topics": [
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-drives-block-diagram-types-of-loads-classification-of-load-torque-motor-torque-load-combination-characteristics-and-dynamic-equation-steady-state-stability",
-            "title": "Introduction to Electric Drives- Advantages of adjustable speed electric drives -Block diagram, Types of loads - Classification of load torque- Motor torque-load combination: characteristics and dynamic equation- Steady state stability",
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-introduction-to-electric-drives",
+            "title": "Introduction to Electric Drives",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-dc-drives-chopper-control-of-separately-excited-dc-drives-sedc-one-quadrant-two-quadrant-and-four-quadrant-chopper-fed-drives-continuous-conduction-only-motoring-and-regenerative-braking-speed-torque-characteristics-speed-control-controlled-rectifier-fed-separately-excited-dc-motor-drive-single-phase-and-three-phase-continuous-conduction-only-speed-torque-characteristics-speed-control-dual-converter-drives-single-phase-circulating-current-type-and-non-circulating-current-static-four-quadrant-operation-with-sedc",
-            "title": "DC Drives- Chopper control of Separately Excited DC drives (SEDC) -One quadrant, Two quadrant and four quadrant Chopper fed drives(Continuous conduction only)- Motoring and Regenerative braking - Speed-Torque characteristics - Speed control- Controlled rectifier fed separately excited DC motor drive- Single phase and three phase (Continuous conduction only)- Speed-Torque characteristics- Speed control -Dual converter drives (single phase) - Circulating current Type and Non-circulating current - Static four-quadrant operation with SEDC",
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-advantages-of-adjustable-speed-electric-drives",
+            "title": "Advantages of adjustable speed electric drives",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-three-phase-vsi-fed-induction-motor-drives-stator-voltage-control-v-f-speed-control-speed-torque-characteristics-speed-control-operation-below-and-above-base-speed-braking-dynamic-and-regenerative",
-            "title": "Three-phase VSI fed induction motor drives: Stator Voltage control - V/F speed control- Speed-Torque characteristics- Speed control - operation below and above base speed - Braking: dynamic and regenerative",
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-block-diagram-of-electric-drives",
+            "title": "Block diagram of Electric Drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-types-of-loads",
+            "title": "Types of loads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-classification-of-load-torque",
+            "title": "Classification of load torque",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-motor-torque-load-combination-characteristics",
+            "title": "Motor torque-load combination: characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-motor-torque-load-combination-dynamic-equation",
+            "title": "Motor torque-load combination: dynamic equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-steady-state-stability",
+            "title": "Steady state stability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-dc-drives",
+            "title": "DC Drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-chopper-control-of-separately-excited-dc-drives-sedc",
+            "title": "Chopper control of Separately Excited DC drives (SEDC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-one-quadrant-chopper-fed-drives",
+            "title": "One quadrant Chopper fed drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-two-quadrant-chopper-fed-drives",
+            "title": "Two quadrant Chopper fed drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-four-quadrant-chopper-fed-drives-continuous-conduction-only",
+            "title": "Four quadrant Chopper fed drives (Continuous conduction only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-motoring",
+            "title": "Motoring",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-regenerative-braking",
+            "title": "Regenerative braking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-speed-torque-characteristics-of-chopper-fed-sedc",
+            "title": "Speed-Torque characteristics of Chopper fed SEDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-speed-control-of-chopper-fed-sedc",
+            "title": "Speed control of Chopper fed SEDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-controlled-rectifier-fed-separately-excited-dc-motor-drive",
+            "title": "Controlled rectifier fed separately excited DC motor drive",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-single-phase-controlled-rectifier-fed-sedc-continuous-conduction-only",
+            "title": "Single phase Controlled rectifier fed SEDC (Continuous conduction only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-three-phase-controlled-rectifier-fed-sedc-continuous-conduction-only",
+            "title": "Three phase Controlled rectifier fed SEDC (Continuous conduction only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-speed-torque-characteristics-of-controlled-rectifier-fed-sedc",
+            "title": "Speed-Torque characteristics of Controlled rectifier fed SEDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-speed-control-of-controlled-rectifier-fed-sedc",
+            "title": "Speed control of Controlled rectifier fed SEDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-dual-converter-drives-single-phase",
+            "title": "Dual converter drives (single phase)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-circulating-current-type-dual-converter",
+            "title": "Circulating current Type Dual converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-non-circulating-current-type-dual-converter",
+            "title": "Non-circulating current Type Dual converter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-static-four-quadrant-operation-with-sedc",
+            "title": "Static four-quadrant operation with SEDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-three-phase-vsi-fed-induction-motor-drives",
+            "title": "Three-phase VSI fed induction motor drives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-stator-voltage-control",
+            "title": "Stator Voltage control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-v-f-speed-control",
+            "title": "V/F speed control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-speed-torque-characteristics-of-vsi-fed-induction-motor",
+            "title": "Speed-Torque characteristics of VSI fed induction motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-speed-control-of-vsi-fed-induction-motor",
+            "title": "Speed control of VSI fed induction motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-operation-below-base-speed",
+            "title": "Operation below base speed",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-operation-above-base-speed",
+            "title": "Operation above base speed",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-braking-dynamic",
+            "title": "Braking: dynamic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet403-power-electronics-and-drives-04-module-4-introduction-to-electric-drives-advantages-of-adjustable-speed-electric-braking-regenerative",
+            "title": "Braking: regenerative",
             "content": "",
             "pyqs": []
           }
@@ -4571,8 +5993,62 @@
         "title": "Module 1: 01 module 1",
         "topics": [
           {
-            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-power-diodes-scr-power-transistors-mosfets-igbts-op-amps-mosfet-drivers-etc-use-of-multimeter-dso-and-data-sheets",
-            "title": "Testing and Troubleshooting- Power diodes, SCR, Power Transistors, MOSFETS, IGBTs, OP-Amps, MOSFET drivers etc - Use of Multimeter, DSO, and Data sheets",
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-of-power-diodes",
+            "title": "Testing and Troubleshooting of Power diodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-of-scr",
+            "title": "Testing and Troubleshooting of SCR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-of-power-transistors",
+            "title": "Testing and Troubleshooting of Power Transistors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-of-mosfets",
+            "title": "Testing and Troubleshooting of MOSFETS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-of-igbts",
+            "title": "Testing and Troubleshooting of IGBTs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-of-op-amps",
+            "title": "Testing and Troubleshooting of OP-Amps",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-testing-and-troubleshooting-of-mosfet-drivers",
+            "title": "Testing and Troubleshooting of MOSFET drivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-use-of-multimeter",
+            "title": "Use of Multimeter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-use-of-dso",
+            "title": "Use of DSO",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-01-module-1-01-module-1-use-of-data-sheets",
+            "title": "Use of Data sheets",
             "content": "",
             "pyqs": []
           },
@@ -4595,8 +6071,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceel408-power-electronics-and-drives-lab-02-module-2-02-module-2-soldering-and-desoldering-practice-through-hole-smd",
-            "title": "Soldering and desoldering Practice - Through-Hole/SMD",
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-02-module-2-02-module-2-soldering-practice-through-hole-smd",
+            "title": "Soldering Practice - Through-Hole/SMD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-02-module-2-02-module-2-desoldering-practice-through-hole-smd",
+            "title": "Desoldering Practice - Through-Hole/SMD",
             "content": "",
             "pyqs": []
           }
@@ -4619,8 +6101,14 @@
         "title": "Module 2: High frequency diode",
         "topics": [
           {
-            "id": "ee-4-pceel408-power-electronics-and-drives-lab-02-module-2-high-frequency-diode-high-frequency-diode-measurement-of-power-loss-and-reverse-recovery-time",
-            "title": "High frequency diode - Measurement of power loss and reverse recovery time",
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-02-module-2-high-frequency-diode-high-frequency-diode-measurement-of-power-loss",
+            "title": "High frequency diode - Measurement of power loss",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceel408-power-electronics-and-drives-lab-02-module-2-high-frequency-diode-high-frequency-diode-measurement-of-reverse-recovery-time",
+            "title": "High frequency diode - Measurement of reverse recovery time",
             "content": "",
             "pyqs": []
           }
@@ -4832,8 +6320,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-fundamentals-and-social-implications-of-renewable-energy",
-            "title": "Fundamentals and social implications of renewable energy",
+            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-fundamentals-of-renewable-energy",
+            "title": "Fundamentals of renewable energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-social-implications-of-renewable-energy",
+            "title": "Social implications of renewable energy",
             "content": "",
             "pyqs": []
           },
@@ -4886,14 +6380,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-classification-of-wecs-horizontal-axis-single-double-and-multi-blade-system",
-            "title": "Classification of WECS - Horizontal axis - single, double and multi-blade system",
+            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-classification-of-wecs-horizontal-axis-single-blade-system",
+            "title": "Classification of WECS - Horizontal axis - single blade system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-classification-of-wecs-vertical-axis-savonius-and-darrieus-types",
-            "title": "Classification of WECS - Vertical axis - Savonius and Darrieus types",
+            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-classification-of-wecs-horizontal-axis-double-blade-system",
+            "title": "Classification of WECS - Horizontal axis - double blade system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-classification-of-wecs-horizontal-axis-multi-blade-system",
+            "title": "Classification of WECS - Horizontal axis - multi-blade system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-classification-of-wecs-vertical-axis-savonius-type",
+            "title": "Classification of WECS - Vertical axis - Savonius type",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-classification-of-wecs-vertical-axis-darrieus-type",
+            "title": "Classification of WECS - Vertical axis - Darrieus type",
             "content": "",
             "pyqs": []
           }
@@ -4916,8 +6428,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-estimation-of-solar-radiation-on-horizontal-and-inclined-surfaces",
-            "title": "Estimation of solar radiation on horizontal and inclined surfaces",
+            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-estimation-of-solar-radiation-on-horizontal-surfaces",
+            "title": "Estimation of solar radiation on horizontal surfaces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-estimation-of-solar-radiation-on-inclined-surfaces",
+            "title": "Estimation of solar radiation on inclined surfaces",
             "content": "",
             "pyqs": []
           },
@@ -4940,8 +6458,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-solar-thermal-systems-concentrating-and-non-concentrating-collectors",
-            "title": "Solar Thermal systems: concentrating and non-concentrating collectors",
+            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-solar-thermal-systems-concentrating-collectors",
+            "title": "Solar Thermal systems: concentrating collectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-solar-thermal-systems-non-concentrating-collectors",
+            "title": "Solar Thermal systems: non-concentrating collectors",
             "content": "",
             "pyqs": []
           },
@@ -4976,8 +6500,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-advantages-disadvantages-and-applications-of-solar-photovoltaic-system",
-            "title": "Advantages, disadvantages and applications of solar photovoltaic system",
+            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-advantages-of-solar-photovoltaic-system",
+            "title": "Advantages of solar photovoltaic system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-disadvantages-of-solar-photovoltaic-system",
+            "title": "Disadvantages of solar photovoltaic system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-02-module-2-solar-energy-fundamentals-solar-radiation-estimation-of-solar-radiation-applications-of-solar-photovoltaic-system",
+            "title": "Applications of solar photovoltaic system",
             "content": "",
             "pyqs": []
           }
@@ -5024,8 +6560,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-tidal-power-tides-and-waves-as-energy-suppliers-and-their-mechanics",
-            "title": "Tidal Power: Tides and waves as energy suppliers and their mechanics",
+            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-tidal-power-tides-as-energy-suppliers",
+            "title": "Tidal Power: Tides as energy suppliers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-tidal-power-waves-as-energy-suppliers",
+            "title": "Tidal Power: Waves as energy suppliers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-tidal-power-mechanics-of-tides",
+            "title": "Tidal Power: Mechanics of tides",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-tidal-power-mechanics-of-waves",
+            "title": "Tidal Power: Mechanics of waves",
             "content": "",
             "pyqs": []
           },
@@ -5048,8 +6602,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-advantages-and-limitations-of-tidal-power",
-            "title": "Advantages and limitations of tidal power",
+            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-advantages-of-tidal-power",
+            "title": "Advantages of tidal power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet412-renewable-energy-sources-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-limitations-of-tidal-power",
+            "title": "Limitations of tidal power",
             "content": "",
             "pyqs": []
           }
@@ -5219,8 +6779,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-peeet417-solid-state-devices-01-module-1-wave-shaping-circuits-first-order-rc-low-pass-and-high-pass-filters-concept-of-dc-and-ac-load-lines",
-            "title": "Concept of DC and AC load lines",
+            "id": "ee-4-peeet417-solid-state-devices-01-module-1-wave-shaping-circuits-first-order-rc-low-pass-and-high-pass-filters-concept-of-dc-load-lines",
+            "title": "Concept of DC load lines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-peeet417-solid-state-devices-01-module-1-wave-shaping-circuits-first-order-rc-low-pass-and-high-pass-filters-concept-of-ac-load-lines",
+            "title": "Concept of AC load lines",
             "content": "",
             "pyqs": []
           },
@@ -5774,8 +7340,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet402-synchronous-induction-machines-01-module-1-principle-of-operation-of-3-coil-span-factor-and-distribution-factor-sinusoidal-flux-distribution-only",
-            "title": "Coil-span factor and distribution factor (sinusoidal flux distribution only)",
+            "id": "ee-4-pceet402-synchronous-induction-machines-01-module-1-principle-of-operation-of-3-coil-span-factor-sinusoidal-flux-distribution-only",
+            "title": "Coil-span factor (sinusoidal flux distribution only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet402-synchronous-induction-machines-01-module-1-principle-of-operation-of-3-distribution-factor-sinusoidal-flux-distribution-only",
+            "title": "Distribution factor (sinusoidal flux distribution only)",
             "content": "",
             "pyqs": []
           },
@@ -5852,8 +7424,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet402-synchronous-induction-machines-01-module-1-principle-of-operation-of-3-oc-and-sc-tests",
-            "title": "OC and SC tests",
+            "id": "ee-4-pceet402-synchronous-induction-machines-01-module-1-principle-of-operation-of-3-oc-test",
+            "title": "OC test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet402-synchronous-induction-machines-01-module-1-principle-of-operation-of-3-sc-test",
+            "title": "SC test",
             "content": "",
             "pyqs": []
           },
@@ -5942,8 +7520,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet402-synchronous-induction-machines-02-module-2-power-flow-equations-in-cylindrical-v-curves-and-inverted-v-curves-synchronous-generator",
-            "title": "V-curves and inverted V curves (synchronous generator)",
+            "id": "ee-4-pceet402-synchronous-induction-machines-02-module-2-power-flow-equations-in-cylindrical-v-curves-synchronous-generator",
+            "title": "V-curves (synchronous generator)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet402-synchronous-induction-machines-02-module-2-power-flow-equations-in-cylindrical-inverted-v-curves-synchronous-generator",
+            "title": "Inverted V curves (synchronous generator)",
             "content": "",
             "pyqs": []
           },
@@ -6050,8 +7634,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet402-synchronous-induction-machines-02-module-2-power-flow-equations-in-cylindrical-v-curves-and-inverted-v-curves-synchronous-motor",
-            "title": "V-curves and inverted V curves (synchronous motor)",
+            "id": "ee-4-pceet402-synchronous-induction-machines-02-module-2-power-flow-equations-in-cylindrical-v-curves-synchronous-motor",
+            "title": "V-curves (synchronous motor)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet402-synchronous-induction-machines-02-module-2-power-flow-equations-in-cylindrical-inverted-v-curves-synchronous-motor",
+            "title": "Inverted V curves (synchronous motor)",
             "content": "",
             "pyqs": []
           }
@@ -6278,8 +7868,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-4-pceet402-synchronous-induction-machines-04-module-4-braking-of-induction-motors-plugging-dynamic-braking-regenerative-braki-torque-slip-characteristics-for-braking-motoring-and-regeneration",
-            "title": "Torque-slip characteristics for braking, motoring and regeneration",
+            "id": "ee-4-pceet402-synchronous-induction-machines-04-module-4-braking-of-induction-motors-plugging-dynamic-braking-regenerative-braki-torque-slip-characteristics-for-braking",
+            "title": "Torque-slip characteristics for braking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet402-synchronous-induction-machines-04-module-4-braking-of-induction-motors-plugging-dynamic-braking-regenerative-braki-torque-slip-characteristics-for-motoring",
+            "title": "Torque-slip characteristics for motoring",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-4-pceet402-synchronous-induction-machines-04-module-4-braking-of-induction-motors-plugging-dynamic-braking-regenerative-braki-torque-slip-characteristics-for-regeneration",
+            "title": "Torque-slip characteristics for regeneration",
             "content": "",
             "pyqs": []
           },

@@ -23,8 +23,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-friis-transmission-equation-and-radar-range-equation",
-            "title": "Friis Transmission Equation and Radar Range Equation",
+            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-friis-transmission-equation",
+            "title": "Friis Transmission Equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-radar-range-equation",
+            "title": "Radar Range Equation",
             "content": "",
             "pyqs": []
           },
@@ -59,14 +65,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-triangular-sheet-and-bow-tie-antenna",
-            "title": "Triangular sheet and Bow-tie antenna",
+            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-triangular-sheet-antenna",
+            "title": "Triangular sheet antenna",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-traveling-wave-and-broadband-antennas",
-            "title": "Traveling Wave and Broadband Antennas",
+            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-bow-tie-antenna",
+            "title": "Bow-tie antenna",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-traveling-wave-antennas",
+            "title": "Traveling Wave Antennas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-01-module-1-antenna-theory-radiation-mechanism-from-an-antenna-broadband-antennas",
+            "title": "Broadband Antennas",
             "content": "",
             "pyqs": []
           },
@@ -113,8 +131,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-02-module-2-microstrip-antennas-radiation-mechanism-rectangular-patch-and-circular-patch",
-            "title": "Rectangular Patch and Circular Patch",
+            "id": "ec-8-peect865-antenna-theory-and-design-02-module-2-microstrip-antennas-radiation-mechanism-rectangular-patch",
+            "title": "Rectangular Patch",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-02-module-2-microstrip-antennas-radiation-mechanism-circular-patch",
+            "title": "Circular Patch",
             "content": "",
             "pyqs": []
           },
@@ -209,8 +233,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-02-module-2-microstrip-antennas-radiation-mechanism-gain-and-directivity",
-            "title": "Gain and Directivity",
+            "id": "ec-8-peect865-antenna-theory-and-design-02-module-2-microstrip-antennas-radiation-mechanism-gain",
+            "title": "Gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-02-module-2-microstrip-antennas-radiation-mechanism-directivity",
+            "title": "Directivity",
             "content": "",
             "pyqs": []
           },
@@ -239,14 +269,50 @@
         "title": "Module 3: Reconfigurable antennas",
         "topics": [
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-reconfigurable-antennas-types-principles-of-frequency-polarisation-and-pattern-reconfigurable-antennas",
-            "title": "Reconfigurable antennas-types- principles of frequency, polarisation and pattern reconfigurable antennas",
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-reconfigurable-antennas-types",
+            "title": "Reconfigurable antennas types",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-metamaterial-based-antennas-fundamentals-of-metamaterials-metasurface-srr",
-            "title": "Metamaterial based antennas- Fundamentals of metamaterials, metasurface, SRR",
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-principles-of-frequency-reconfigurable-antennas",
+            "title": "Principles of frequency reconfigurable antennas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-principles-of-polarisation-reconfigurable-antennas",
+            "title": "Principles of polarisation reconfigurable antennas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-principles-of-pattern-reconfigurable-antennas",
+            "title": "Principles of pattern reconfigurable antennas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-metamaterial-based-antennas",
+            "title": "Metamaterial based antennas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-fundamentals-of-metamaterials",
+            "title": "Fundamentals of metamaterials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-metasurface",
+            "title": "Metasurface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-srr",
+            "title": "SRR",
             "content": "",
             "pyqs": []
           },
@@ -257,8 +323,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-smart-antenna-analogy-smart-antennas-benefits-and-drawbacks",
-            "title": "Smart-Antenna Analogy Smart Antennas' Benefits and drawbacks",
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-smart-antenna-analogy",
+            "title": "Smart-Antenna Analogy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-03-module-3-reconfigurable-antennas-smart-antennas-benefits-and-drawbacks",
+            "title": "Smart Antennas' Benefits and drawbacks",
             "content": "",
             "pyqs": []
           },
@@ -299,8 +371,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect865-antenna-theory-and-design-04-module-4-radio-wave-propagation-space-wave-and-surface-wave",
-            "title": "Space wave and surface wave",
+            "id": "ec-8-peect865-antenna-theory-and-design-04-module-4-radio-wave-propagation-space-wave",
+            "title": "Space wave",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect865-antenna-theory-and-design-04-module-4-radio-wave-propagation-surface-wave",
+            "title": "Surface wave",
             "content": "",
             "pyqs": []
           },
@@ -774,49 +852,55 @@
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-architecture",
-            "title": "architecture",
+            "title": "Architecture",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-elements-of-blockchain",
-            "title": "elements of blockchain",
+            "title": "Elements of blockchain",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-benefits-and-limitations",
-            "title": "benefits and limitations",
+            "title": "Benefits and limitations",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-types-of-blockchain",
-            "title": "types of blockchain.",
+            "title": "Types of blockchain",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-consensus-definition",
-            "title": "Consensus - definition",
+            "title": "Consensus - Definition",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-types",
-            "title": "types",
+            "title": "Types",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-consensus-in-blockchain",
-            "title": "consensus in blockchain.",
+            "title": "Consensus in blockchain",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-decentralization-decentralization-using-blockchain",
-            "title": "Decentralization - Decentralization using blockchain",
+            "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-decentralization",
+            "title": "Decentralization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-decentralization-using-blockchain",
+            "title": "Decentralization using blockchain",
             "content": "",
             "pyqs": []
           },
@@ -834,7 +918,7 @@
           },
           {
             "id": "ec-8-peect867-block-chain-01-module-1-blockchain-definition-blockchain-and-full-ecosystem-decentralization",
-            "title": "Blockchain and full ecosystem decentralization.",
+            "title": "Blockchain and full ecosystem decentralization",
             "content": "",
             "pyqs": []
           }
@@ -851,20 +935,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-crash-fault-tolerance-cft-algorithms-paxos",
-            "title": "Crash fault-tolerance (CFT) algorithms - Paxos",
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-crash-fault-tolerance-cft-algorithms",
+            "title": "Crash fault-tolerance (CFT) algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-paxos",
+            "title": "Paxos",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-raft",
-            "title": "Raft.",
+            "title": "Raft",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-byzantine-fault-tolerance-bft-algorithms-practical-byzantine-fault-tolerance-pbft",
-            "title": "Byzantine fault- tolerance (BFT) algorithms - Practical Byzantine Fault Tolerance (PBFT)",
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-byzantine-fault-tolerance-bft-algorithms",
+            "title": "Byzantine fault-tolerance (BFT) algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-practical-byzantine-fault-tolerance-pbft",
+            "title": "Practical Byzantine Fault Tolerance (PBFT)",
             "content": "",
             "pyqs": []
           },
@@ -882,7 +978,7 @@
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-types-of-pos",
-            "title": "Types of PoS.",
+            "title": "Types of PoS",
             "content": "",
             "pyqs": []
           },
@@ -893,68 +989,98 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-cryptographic-keys-private-keys",
-            "title": "Cryptographic keys - Private keys",
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-cryptographic-keys",
+            "title": "Cryptographic keys",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-private-keys",
+            "title": "Private keys",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-public-keys",
-            "title": "public keys",
+            "title": "Public keys",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-addresses",
-            "title": "addresses.",
+            "title": "Addresses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-transactions-lifecycle",
-            "title": "Transactions - Lifecycle",
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-transactions",
+            "title": "Transactions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-lifecycle",
+            "title": "Lifecycle",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-coinbase-transactions",
-            "title": "coinbase transactions",
+            "title": "Coinbase transactions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-transaction-validation",
-            "title": "transaction validation.",
+            "title": "Transaction validation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-blockchain-the-genesis-block",
-            "title": "Blockchain - The genesis block.",
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-blockchain",
+            "title": "Blockchain",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-mining-tasks-of-miners",
-            "title": "Mining - Tasks of miners",
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-the-genesis-block",
+            "title": "The genesis block",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-mining",
+            "title": "Mining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-tasks-of-miners",
+            "title": "Tasks of miners",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-mining-algorithm",
-            "title": "mining algorithm",
+            "title": "Mining algorithm",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-hash-rate",
-            "title": "hash rate.",
+            "title": "Hash rate",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-wallets-types-of-wallets",
-            "title": "Wallets - Types of wallets.",
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-wallets",
+            "title": "Wallets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-02-module-2-consensus-algorithms-types-of-wallets",
+            "title": "Types of wallets",
             "content": "",
             "pyqs": []
           }
@@ -965,8 +1091,14 @@
         "title": "Module 3: Smart contracts definition",
         "topics": [
           {
-            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-smart-contracts-definition",
-            "title": "Smart Contracts - Definition",
+            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-smart-contracts",
+            "title": "Smart Contracts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-definition",
+            "title": "Definition",
             "content": "",
             "pyqs": []
           },
@@ -990,7 +1122,7 @@
           },
           {
             "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-deploying-smart-contracts",
-            "title": "Deploying smart contracts.",
+            "title": "Deploying smart contracts",
             "content": "",
             "pyqs": []
           },
@@ -1008,13 +1140,19 @@
           },
           {
             "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-decentralized-autonomous-organizations",
-            "title": "Decentralized Autonomous Organizations.",
+            "title": "Decentralized Autonomous Organizations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-use-cases-of-blockchain-technology-government",
-            "title": "Use cases of Blockchain technology - Government",
+            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-use-cases-of-blockchain-technology",
+            "title": "Use cases of Blockchain technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-government",
+            "title": "Government",
             "content": "",
             "pyqs": []
           },
@@ -1032,19 +1170,25 @@
           },
           {
             "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-supply-chain-management",
-            "title": "Supply chain management.",
+            "title": "Supply chain management",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-blockchain-and-allied-technologies-blockchain-and-cloud-computing",
-            "title": "Blockchain and allied technologies - Blockchain and Cloud Computing",
+            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-blockchain-and-allied-technologies",
+            "title": "Blockchain and allied technologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-blockchain-and-cloud-computing",
+            "title": "Blockchain and Cloud Computing",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-03-module-3-smart-contracts-definition-blockchain-and-artificial-intelligence",
-            "title": "Blockchain and Artificial Intelligence.",
+            "title": "Blockchain and Artificial Intelligence",
             "content": "",
             "pyqs": []
           }
@@ -1055,14 +1199,26 @@
         "title": "Module 4: Ethereum the ethereum network",
         "topics": [
           {
-            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-ethereum-the-ethereum-network",
-            "title": "Ethereum - The Ethereum network.",
+            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-ethereum",
+            "title": "Ethereum",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-components-of-the-ethereum-ecosystem-keys-and-addresses",
-            "title": "Components of the Ethereum ecosystem - Keys and addresses",
+            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-the-ethereum-network",
+            "title": "The Ethereum network",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-components-of-the-ethereum-ecosystem",
+            "title": "Components of the Ethereum ecosystem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-keys-and-addresses",
+            "title": "Keys and addresses",
             "content": "",
             "pyqs": []
           },
@@ -1074,7 +1230,7 @@
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-transactions-and-messages",
-            "title": "Transactions and messages.",
+            "title": "Transactions and messages",
             "content": "",
             "pyqs": []
           },
@@ -1086,13 +1242,19 @@
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-blocks-and-blockchain",
-            "title": "Blocks and blockchain.",
+            "title": "Blocks and blockchain",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-the-solidity-language-the-layout-of-a-solidity-source-code",
-            "title": "The Solidity language - The layout of a Solidity source code",
+            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-the-solidity-language",
+            "title": "The Solidity language",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-the-layout-of-a-solidity-source-code",
+            "title": "The layout of a Solidity source code",
             "content": "",
             "pyqs": []
           },
@@ -1104,49 +1266,49 @@
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-variables",
-            "title": "variables",
+            "title": "Variables",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-data-types",
-            "title": "data types",
+            "title": "Data types",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-control-structures",
-            "title": "control structures",
+            "title": "Control structures",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-events",
-            "title": "events",
+            "title": "Events",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-inheritance",
-            "title": "inheritance",
+            "title": "Inheritance",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-libraries",
-            "title": "libraries",
+            "title": "Libraries",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-functions",
-            "title": "functions",
+            "title": "Functions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-error-handling",
-            "title": "error handling.",
+            "title": "Error handling",
             "content": "",
             "pyqs": []
           },
@@ -1158,7 +1320,7 @@
           },
           {
             "id": "ec-8-peect867-block-chain-04-module-4-ethereum-the-ethereum-network-auction",
-            "title": "Auction.",
+            "title": "Auction",
             "content": "",
             "pyqs": []
           }
@@ -1262,8 +1424,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-01-module-1-introduction-security-basics-aspects-of-network-security-target-assets-and-vulnerabilities",
-            "title": "Target Assets and vulnerabilities",
+            "id": "ec-8-peect864-cyber-security-01-module-1-introduction-security-basics-aspects-of-network-security-target-assets",
+            "title": "Target Assets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-01-module-1-introduction-security-basics-aspects-of-network-security-vulnerabilities",
+            "title": "vulnerabilities",
             "content": "",
             "pyqs": []
           },
@@ -1286,8 +1454,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-01-module-1-introduction-security-basics-aspects-of-network-security-intruders-and-hackers",
-            "title": "Intruders and Hackers",
+            "id": "ec-8-peect864-cyber-security-01-module-1-introduction-security-basics-aspects-of-network-security-intruders",
+            "title": "Intruders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-01-module-1-introduction-security-basics-aspects-of-network-security-hackers",
+            "title": "Hackers",
             "content": "",
             "pyqs": []
           },
@@ -1310,8 +1484,14 @@
         "title": "Module 2: Security services and mechanisms os security protection mechanisms auth",
         "topics": [
           {
-            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-security-services-and-mechanisms",
-            "title": "Security services and mechanisms",
+            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-security-services",
+            "title": "Security services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-mechanisms",
+            "title": "mechanisms",
             "content": "",
             "pyqs": []
           },
@@ -1328,8 +1508,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-authentication-access-control",
-            "title": "Authentication & Access control",
+            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-authentication",
+            "title": "Authentication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-access-control",
+            "title": "Access control",
             "content": "",
             "pyqs": []
           },
@@ -1394,8 +1580,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-ids-strengths-and-limitations",
-            "title": "IDS strengths and Limitations",
+            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-ids-strengths",
+            "title": "IDS strengths",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-02-module-2-security-services-and-mechanisms-os-security-protection-mechanisms-auth-ids-limitations",
+            "title": "IDS Limitations",
             "content": "",
             "pyqs": []
           }
@@ -1412,8 +1604,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-03-module-3-cryptography-basic-encryption-decryption-transposition-substitution-cip-basic-encryption-decryption",
-            "title": "Basic Encryption & Decryption",
+            "id": "ec-8-peect864-cyber-security-03-module-3-cryptography-basic-encryption-decryption-transposition-substitution-cip-basic-encryption",
+            "title": "Basic Encryption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-03-module-3-cryptography-basic-encryption-decryption-transposition-substitution-cip-decryption",
+            "title": "Decryption",
             "content": "",
             "pyqs": []
           },
@@ -1484,8 +1682,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-03-module-3-cryptography-basic-encryption-decryption-transposition-substitution-cip-comparison-important-features-of-modern-symmetric-key-algorithms",
-            "title": "Comparison & important features of modern symmetric key algorithms",
+            "id": "ec-8-peect864-cyber-security-03-module-3-cryptography-basic-encryption-decryption-transposition-substitution-cip-comparison-of-modern-symmetric-key-algorithms",
+            "title": "Comparison of modern symmetric key algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-03-module-3-cryptography-basic-encryption-decryption-transposition-substitution-cip-important-features-of-modern-symmetric-key-algorithms",
+            "title": "Important features of modern symmetric key algorithms",
             "content": "",
             "pyqs": []
           },
@@ -1568,8 +1772,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-04-module-4-introduction-to-cyber-crime-and-law-cyber-crimes-types-of-cybercrime-ha-cyberspace-and-criminal-behaviour",
-            "title": "Cyberspace and Criminal Behaviour",
+            "id": "ec-8-peect864-cyber-security-04-module-4-introduction-to-cyber-crime-and-law-cyber-crimes-types-of-cybercrime-ha-cyberspace",
+            "title": "Cyberspace",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-04-module-4-introduction-to-cyber-crime-and-law-cyber-crimes-types-of-cybercrime-ha-criminal-behaviour",
+            "title": "Criminal Behaviour",
             "content": "",
             "pyqs": []
           },
@@ -1640,8 +1850,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect864-cyber-security-04-module-4-introduction-to-cyber-crime-and-law-cyber-crimes-types-of-cybercrime-ha-contaminants-and-destruction-of-data",
-            "title": "Contaminants and Destruction of Data",
+            "id": "ec-8-peect864-cyber-security-04-module-4-introduction-to-cyber-crime-and-law-cyber-crimes-types-of-cybercrime-ha-contaminants",
+            "title": "Contaminants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect864-cyber-security-04-module-4-introduction-to-cyber-crime-and-law-cyber-crimes-types-of-cybercrime-ha-destruction-of-data",
+            "title": "Destruction of Data",
             "content": "",
             "pyqs": []
           },
@@ -1667,14 +1883,26 @@
         "title": "Module 1: Introduction to iot technology definitions of iot",
         "topics": [
           {
-            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-introduction-to-iot-technology-definitions-of-iot",
-            "title": "Introduction to IoT technology: Definitions of IoT",
+            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-introduction-to-iot-technology",
+            "title": "Introduction to IoT technology",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-characteristics-of-iot-devices-power-computational-constraints",
-            "title": "Characteristics of IoT devices - power, computational constraints",
+            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-definitions-of-iot",
+            "title": "Definitions of IoT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-characteristics-of-iot-devices-power",
+            "title": "Characteristics of IoT devices - power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-characteristics-of-iot-devices-computational-constraints",
+            "title": "Characteristics of IoT devices - computational constraints",
             "content": "",
             "pyqs": []
           },
@@ -1697,8 +1925,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-typical-application-areas-of-iot-technology-case-studies-of-at-least-four-domains-energy-management-and-smart-grid",
-            "title": "Typical application areas of IoT technology (case studies of at least four domains) - Energy management and Smart grid",
+            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-typical-application-areas-of-iot-technology-case-studies-of-at-least-four-domains-energy-management",
+            "title": "Typical application areas of IoT technology (case studies of at least four domains) - Energy management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-smart-grid",
+            "title": "Smart grid",
             "content": "",
             "pyqs": []
           },
@@ -1739,8 +1973,14 @@
         "title": "Module 2: Components of iot technology identificationaddressing",
         "topics": [
           {
-            "id": "ec-8-oeect831-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing-components-of-iot-technology-identification-addressing-electronic-product-codes",
-            "title": "Components of IoT technology: Identification/Addressing - Electronic Product Codes",
+            "id": "ec-8-oeect831-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing-components-of-iot-technology",
+            "title": "Components of IoT technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing-identification-addressing-electronic-product-codes",
+            "title": "Identification/Addressing - Electronic Product Codes",
             "content": "",
             "pyqs": []
           },
@@ -1769,14 +2009,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing-sensors-and-actuators",
-            "title": "Sensors and Actuators*",
+            "id": "ec-8-oeect831-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing-sensors",
+            "title": "Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing-actuators",
+            "title": "Actuators",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-oeect831-internet-of-things-02-module-2-components-of-iot-technology-identificationaddressing-iot-hardware",
-            "title": "IoT Hardware**",
+            "title": "IoT Hardware",
             "content": "",
             "pyqs": []
           },
@@ -1817,56 +2063,158 @@
         "title": "Module 3: Communication technologies for iot zigbee",
         "topics": [
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-communication-technologies-for-iot-zigbee-key-features-architecture-limitations",
-            "title": "Communication technologies for IoT : Zigbee - key features, architecture, limitations",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-communication-technologies-for-iot",
+            "title": "Communication technologies for IoT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-bluetooth-technology-bluetooth-stack-piconet-scatternet-limitations",
-            "title": "Bluetooth technology - bluetooth stack, piconet, scatternet, limitations",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-zigbee-key-features",
+            "title": "Zigbee - key features",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-bluetooth-low-energy-key-features-architecture-limitations",
-            "title": "Bluetooth Low Energy (key features, architecture, limitations)",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-zigbee-architecture",
+            "title": "Zigbee architecture",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-wifi-ieee-802-11-technology-key-features-limitations",
-            "title": "Wifi (IEEE 802.11) technology - key features, limitations",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-zigbee-limitations",
+            "title": "Zigbee limitations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-cellular-technology-gsm-3g-4glte-overview-features-limitations",
-            "title": "Cellular technology - GSM, 3G, 4GLTE (overview), features, limitations",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-bluetooth-technology-bluetooth-stack",
+            "title": "Bluetooth technology - bluetooth stack",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-lora-technology-features-lorawan-architecture",
-            "title": "LoRa technology - features, LoRaWAN architecture",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-piconet",
+            "title": "Piconet",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-6lowpan-features-protocol-stack",
-            "title": "6LoWPAN - features, protocol stack",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-scatternet",
+            "title": "Scatternet",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-narrow-band-nb-iot-features-applications",
-            "title": "Narrow Band (NB- IoT) - features, applications",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-bluetooth-limitations",
+            "title": "Bluetooth limitations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-sigfox-features-applications",
-            "title": "Sigfox - features, applications",
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-bluetooth-low-energy-key-features",
+            "title": "Bluetooth Low Energy - key features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-bluetooth-low-energy-architecture",
+            "title": "Bluetooth Low Energy architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-bluetooth-low-energy-limitations",
+            "title": "Bluetooth Low Energy limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-wifi-ieee-802-11-technology-key-features",
+            "title": "Wifi (IEEE 802.11) technology - key features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-wifi-limitations",
+            "title": "Wifi limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-cellular-technology-gsm",
+            "title": "Cellular technology - GSM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-3g",
+            "title": "3G",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-4glte-overview",
+            "title": "4GLTE (overview)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-cellular-technology-features",
+            "title": "Cellular technology features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-cellular-technology-limitations",
+            "title": "Cellular technology limitations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-lora-technology-features",
+            "title": "LoRa technology - features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-lorawan-architecture",
+            "title": "LoRaWAN architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-6lowpan-features",
+            "title": "6LoWPAN - features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-6lowpan-protocol-stack",
+            "title": "6LoWPAN protocol stack",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-narrow-band-nb-iot-features",
+            "title": "Narrow Band (NB- IoT) - features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-narrow-band-nb-iot-applications",
+            "title": "Narrow Band (NB- IoT) applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-sigfox-features",
+            "title": "Sigfox - features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-03-module-3-communication-technologies-for-iot-zigbee-sigfox-applications",
+            "title": "Sigfox applications",
             "content": "",
             "pyqs": []
           }
@@ -1877,8 +2225,56 @@
         "title": "Module 4: Iot data management storage technologies for iot hardware volatile non",
         "topics": [
           {
-            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-volatile-embedded-mtp-otp-external-flash-nand-nor-dram-eflash-ufs-emmc-overview-of-technologies",
-            "title": "IoT Data Management : Storage technologies for IoT hardware - Volatile, Non-volatile, Embedded (MTP/OTP), external flash (NAND/NOR), DRAM, eflash, UFS, eMMC (overview of technologies)",
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-iot-data-management-storage-technologies-for-iot-hardware",
+            "title": "IoT Data Management - Storage technologies for IoT hardware",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-volatile",
+            "title": "Volatile",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-non-volatile",
+            "title": "Non-volatile",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-embedded-mtp-otp",
+            "title": "Embedded (MTP/OTP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-external-flash-nand-nor",
+            "title": "External flash (NAND/NOR)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-dram",
+            "title": "DRAM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-eflash",
+            "title": "eflash",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-ufs",
+            "title": "UFS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-emmc-overview-of-technologies",
+            "title": "eMMC (overview of technologies)",
             "content": "",
             "pyqs": []
           },
@@ -1889,8 +2285,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-cloud-computing-architecture-advantages-of-cloud-computing",
-            "title": "Cloud computing - architecture, advantages of cloud computing",
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-cloud-computing-architecture",
+            "title": "Cloud computing architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-advantages-of-cloud-computing",
+            "title": "Advantages of cloud computing",
             "content": "",
             "pyqs": []
           },
@@ -1913,8 +2315,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-case-study-of-commercial-cloud-computing-platforms-like-microsoft-azure-iot-suite-google-cloud-s-iot-platform-ibm-watson-iot-platform",
-            "title": "Case study of commercial cloud computing platforms like - Microsoft Azure IoT Suite, Google Cloud's IoT Platform, IBM Watson IoT Platform",
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-case-study-of-commercial-cloud-computing-platforms-microsoft-azure-iot-suite",
+            "title": "Case study of commercial cloud computing platforms - Microsoft Azure IoT Suite",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-google-cloud-s-iot-platform",
+            "title": "Google Cloud's IoT Platform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-oeect831-internet-of-things-04-module-4-iot-data-management-storage-technologies-for-iot-hardware-volatile-non-ibm-watson-iot-platform",
+            "title": "IBM Watson IoT Platform",
             "content": "",
             "pyqs": []
           },
@@ -1946,14 +2360,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-01-module-1-physics-of-power-dissipation-in-mosfet-devices-need-for-low-power-circuit-design-mis-structure",
-            "title": "Need for low power circuit design, MIS Structure",
+            "id": "ec-8-peect866-low-power-vlsi-01-module-1-physics-of-power-dissipation-in-mosfet-devices-need-for-low-power-circuit-design",
+            "title": "Need for low power circuit design",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-01-module-1-physics-of-power-dissipation-in-mosfet-devices-deep-submicron-transistor-design-issues-short-channel-effects",
-            "title": "Deep submicron transistor design issues: Short channel effects",
+            "id": "ec-8-peect866-low-power-vlsi-01-module-1-physics-of-power-dissipation-in-mosfet-devices-mis-structure",
+            "title": "MIS Structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-01-module-1-physics-of-power-dissipation-in-mosfet-devices-deep-submicron-transistor-design-issues",
+            "title": "Deep submicron transistor design issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-01-module-1-physics-of-power-dissipation-in-mosfet-devices-short-channel-effects",
+            "title": "Short channel effects",
             "content": "",
             "pyqs": []
           },
@@ -2037,7 +2463,7 @@
           },
           {
             "id": "ec-8-peect866-low-power-vlsi-01-module-1-physics-of-power-dissipation-in-mosfet-devices-emerging-technologies-for-low-power",
-            "title": "Emerging Technologies for Low Power:",
+            "title": "Emerging Technologies for Low Power",
             "content": "",
             "pyqs": []
           },
@@ -2073,13 +2499,19 @@
           },
           {
             "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-dynamic-power-dissipation",
-            "title": "Dynamic Power Dissipation:",
+            "title": "Dynamic Power Dissipation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-short-circuit-power-short-circuit-current-of-inverter",
-            "title": "Short Circuit Power: Short Circuit Current of Inverter",
+            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-short-circuit-power",
+            "title": "Short Circuit Power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-short-circuit-current-of-inverter",
+            "title": "Short Circuit Current of Inverter",
             "content": "",
             "pyqs": []
           },
@@ -2096,8 +2528,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-switching-power-dissipation-switching-power-of-cmos-inverter",
-            "title": "Switching power dissipation: Switching Power of CMOS Inverter",
+            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-switching-power-dissipation",
+            "title": "Switching power dissipation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-switching-power-of-cmos-inverter",
+            "title": "Switching Power of CMOS Inverter",
             "content": "",
             "pyqs": []
           },
@@ -2108,14 +2546,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-glitching-power-glitches-and-its-effect-on-power-dissipation",
-            "title": "Glitching Power: Glitches and its effect on power dissipation",
+            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-glitching-power",
+            "title": "Glitching Power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-glitches-and-its-effect-on-power-dissipation",
+            "title": "Glitches and its effect on power dissipation",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect866-low-power-vlsi-02-module-2-sources-of-power-dissipation-in-digital-ics-static-power-dissipation",
-            "title": "Static Power Dissipation:",
+            "title": "Static Power Dissipation",
             "content": "",
             "pyqs": []
           },
@@ -2145,13 +2589,13 @@
         "topics": [
           {
             "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-low-power-design-approaches",
-            "title": "Low-Power Design Approaches-",
+            "title": "Low-Power Design Approaches",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-supply-voltage-scaling-for-low-power",
-            "title": "Supply Voltage Scaling for Low Power:",
+            "title": "Supply Voltage Scaling for Low Power",
             "content": "",
             "pyqs": []
           },
@@ -2168,20 +2612,38 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-multi-vdd-dynamic-vdd-dynamic-voltage-and-frequency-scaling-dvfs-approaches",
-            "title": "Multi VDD ,Dynamic VDD, Dynamic Voltage and Frequency Scaling (DVFS) Approaches",
+            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-multi-vdd",
+            "title": "Multi VDD",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-architectural-level-approaches-pipelining-and-parallel-processing",
-            "title": "Architectural Level Approaches: Pipelining and Parallel Processing",
+            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-dynamic-vdd",
+            "title": "Dynamic VDD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-dynamic-voltage-and-frequency-scaling-dvfs-approaches",
+            "title": "Dynamic Voltage and Frequency Scaling (DVFS) Approaches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-architectural-level-approaches",
+            "title": "Architectural Level Approaches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-pipelining-and-parallel-processing",
+            "title": "Pipelining and Parallel Processing",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-leakage-power-reduction-techniques",
-            "title": "Leakage power reduction Techniques:",
+            "title": "Leakage power reduction Techniques",
             "content": "",
             "pyqs": []
           },
@@ -2210,8 +2672,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-power-gating-clock-gating-techniques",
-            "title": "Power gating& Clock gating Techniques",
+            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-power-gating-techniques",
+            "title": "Power gating Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-03-module-3-low-clock-gating-techniques",
+            "title": "Clock gating Techniques",
             "content": "",
             "pyqs": []
           }
@@ -2223,31 +2691,49 @@
         "topics": [
           {
             "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-circuit-design-styles-for-low-power",
-            "title": "Circuit Design Styles for Low Power-",
+            "title": "Circuit Design Styles for Low Power",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-non-clocked-circuit-design-style-fully-complementary-logic",
-            "title": "Non clocked circuit design style: Fully Complementary logic",
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-non-clocked-circuit-design-style",
+            "title": "Non clocked circuit design style",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-nmos-and-pseudo-nmos-logic",
-            "title": "NMOS and Pseudo -NMOS logic",
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-fully-complementary-logic",
+            "title": "Fully Complementary logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-nmos-logic",
+            "title": "NMOS logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-pseudo-nmos-logic",
+            "title": "Pseudo-NMOS logic",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-differential-cascode-voltage-switch-logic-dcvs",
-            "title": "Differential Cascode Voltage Switch logic(DCVS)",
+            "title": "Differential Cascode Voltage Switch logic (DCVS)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-clocked-design-style-basic-concept",
-            "title": "Clocked design style: Basic concept",
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-clocked-design-style",
+            "title": "Clocked design style",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-basic-concept",
+            "title": "Basic concept",
             "content": "",
             "pyqs": []
           },
@@ -2270,8 +2756,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-adiabatic-switching-adiabatic-charging",
-            "title": "Adiabatic switching - Adiabatic charging",
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-adiabatic-switching",
+            "title": "Adiabatic switching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect866-low-power-vlsi-04-module-4-circuit-design-styles-for-low-power-adiabatic-charging",
+            "title": "Adiabatic charging",
             "content": "",
             "pyqs": []
           },
@@ -2966,8 +3458,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect862-rf-engineering-02-module-2-rf-filter-design-open-source-or-commercial-em-simulation-software",
-            "title": "Open Source or Commercial EM Simulation Software",
+            "id": "ec-8-peect862-rf-engineering-02-module-2-rf-filter-design-open-source-em-simulation-software",
+            "title": "Open Source EM Simulation Software",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect862-rf-engineering-02-module-2-rf-filter-design-commercial-em-simulation-software",
+            "title": "Commercial EM Simulation Software",
             "content": "",
             "pyqs": []
           }
@@ -3410,14 +3908,38 @@
         "title": "Module 1: Introduction application and challenges of wireless sensor networks wsn",
         "topics": [
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-introduction-application-and-challenges-of-wireless-sensor-networks-wsn",
-            "title": "Introduction, application, and challenges of wireless sensor networks (WSN).",
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-introduction-to-wireless-sensor-networks-wsn",
+            "title": "Introduction to wireless sensor networks (WSN)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-wireless-lans-and-pans-introduction",
-            "title": "Wireless LANS and PANS: Introduction",
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-application-of-wireless-sensor-networks-wsn",
+            "title": "Application of wireless sensor networks (WSN)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-challenges-of-wireless-sensor-networks-wsn",
+            "title": "Challenges of wireless sensor networks (WSN)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-wireless-lans",
+            "title": "Wireless LANs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-wireless-pans",
+            "title": "Wireless PANs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-introduction",
+            "title": "Introduction",
             "content": "",
             "pyqs": []
           },
@@ -3446,8 +3968,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-wireless-wans-and-mans-cellular-architecture",
-            "title": "Wireless WANs and MANs : Cellular architecture",
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-wireless-wans",
+            "title": "Wireless WANs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-wireless-mans",
+            "title": "Wireless MANs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-cellular-architecture",
+            "title": "Cellular architecture",
             "content": "",
             "pyqs": []
           },
@@ -3464,8 +3998,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-ieee-802-15-standard-physical-layer",
-            "title": "IEEE 802.15 Standard: Physical layer",
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-ieee-802-15-standard",
+            "title": "IEEE 802.15 Standard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-01-module-1-introduction-application-and-challenges-of-wireless-sensor-networks-wsn-physical-layer",
+            "title": "Physical layer",
             "content": "",
             "pyqs": []
           },
@@ -3494,14 +4034,26 @@
         "title": "Module 2: Network architecture sensor network scenarios",
         "topics": [
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-network-architecture-sensor-network-scenarios",
-            "title": "Network architecture: Sensor network scenarios",
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-network-architecture",
+            "title": "Network architecture",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-optimization-goals-and-figures-of-merit",
-            "title": "Optimization goals and figures of merit",
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-sensor-network-scenarios",
+            "title": "Sensor network scenarios",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-optimization-goals",
+            "title": "Optimization goals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-figures-of-merit",
+            "title": "Figures of merit",
             "content": "",
             "pyqs": []
           },
@@ -3513,19 +4065,37 @@
           },
           {
             "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-service-interfaces-of-wsns",
-            "title": "Service interfaces of WSNs.",
+            "title": "Service interfaces of WSNs",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-communication-protocols-physical-layer-wireless-channel-and-communication-fundamentals",
-            "title": "Communication Protocols: Physical layer: Wireless channel and communication fundamentals",
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-communication-protocols",
+            "title": "Communication Protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-physical-layer",
+            "title": "Physical layer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-wireless-channel",
+            "title": "Wireless channel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-communication-fundamentals",
+            "title": "Communication fundamentals",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect861-wireless-sensor-networks-02-module-2-network-architecture-sensor-network-scenarios-physical-layer-and-transceiver-design-considerations-in-wsns",
-            "title": "Physical layer and transceiver design considerations in WSNs.",
+            "title": "Physical layer and transceiver design considerations in WSNs",
             "content": "",
             "pyqs": []
           }
@@ -3536,20 +4106,32 @@
         "title": "Module 3: Mobile ad hoc networks and wireless sensor networks",
         "topics": [
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-mobile-ad-hoc-networks-and-wireless-sensor-networks",
-            "title": "Mobile ad hoc networks and wireless sensor networks",
+            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-mobile-ad-hoc-networks",
+            "title": "Mobile ad hoc networks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-field-buses-and-wireless-sensor-networks",
-            "title": "Field buses and wireless sensor networks",
+            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-wireless-sensor-networks",
+            "title": "Wireless sensor networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-field-buses",
+            "title": "Field buses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-wireless-sensor-networks",
+            "title": "Wireless sensor networks",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-enabling-technologies-for-wireless-sensor-networks",
-            "title": "Enabling technologies for wireless sensor networks.",
+            "title": "Enabling technologies for wireless sensor networks",
             "content": "",
             "pyqs": []
           },
@@ -3566,8 +4148,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-tcp-bus-and-ad-hoc-tcp",
-            "title": "TCP-BUS and Ad Hoc TCP",
+            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-tcp-bus",
+            "title": "TCP-BUS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-ad-hoc-tcp",
+            "title": "Ad Hoc TCP",
             "content": "",
             "pyqs": []
           },
@@ -3585,7 +4173,7 @@
           },
           {
             "id": "ec-8-peect861-wireless-sensor-networks-03-module-3-mobile-ad-hoc-networks-and-wireless-sensor-networks-optimising-web-over-wireless",
-            "title": "optimising Web over wireless.",
+            "title": "optimising Web over wireless",
             "content": "",
             "pyqs": []
           }
@@ -3596,8 +4184,20 @@
         "title": "Module 4: Wsn architecture single node architecture hardware components",
         "topics": [
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-wsn-architecture-single-node-architecture-hardware-components",
-            "title": "WSN architecture: Single node architecture: Hardware components",
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-wsn-architecture",
+            "title": "WSN architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-single-node-architecture",
+            "title": "Single node architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-hardware-components",
+            "title": "Hardware components",
             "content": "",
             "pyqs": []
           },
@@ -3614,14 +4214,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-routing-protocols-leach",
-            "title": "Routing protocols-LEACH",
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-routing-protocols",
+            "title": "Routing protocols",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-pegasis-and-rpl",
-            "title": "PEGASIS and RPL",
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-leach",
+            "title": "LEACH",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-pegasis",
+            "title": "PEGASIS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-rpl",
+            "title": "RPL",
             "content": "",
             "pyqs": []
           },
@@ -3632,8 +4244,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-case-study-tinyos-and-nesc-50-other-examples",
-            "title": "Case Study: TinyOS and nesC 50 Other examples.",
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-case-study-tinyos",
+            "title": "Case Study: TinyOS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-nesc",
+            "title": "nesC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-8-peect861-wireless-sensor-networks-04-module-4-wsn-architecture-single-node-architecture-hardware-components-other-examples",
+            "title": "Other examples",
             "content": "",
             "pyqs": []
           }

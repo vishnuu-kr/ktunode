@@ -11,8 +11,14 @@
         "title": "Module 1: Introduction uses of computer networks",
         "topics": [
           {
-            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-introduction-uses-of-computer-networks",
-            "title": "Introduction - Uses of computer networks",
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-introduction",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-uses-of-computer-networks",
+            "title": "Uses of computer networks",
             "content": "",
             "pyqs": []
           },
@@ -23,8 +29,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-network-software-protocol-hierarchies",
-            "title": "Network software - Protocol hierarchies",
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-network-software",
+            "title": "Network software",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-protocol-hierarchies",
+            "title": "Protocol hierarchies",
             "content": "",
             "pyqs": []
           },
@@ -41,8 +53,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-reference-models-the-osi-reference-model",
-            "title": "Reference models - The OSI reference model",
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-reference-models",
+            "title": "Reference models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-the-osi-reference-model",
+            "title": "The OSI reference model",
             "content": "",
             "pyqs": []
           },
@@ -59,14 +77,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-physical-layer-transmission-media-overview-twisted-pair-and-fiber-optics",
-            "title": "Physical Layer -Transmission media overview - Twisted pair and fiber optics",
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-physical-layer",
+            "title": "Physical Layer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-performance-indicators-bandwidth",
-            "title": "Performance indicators - Bandwidth",
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-transmission-media-overview",
+            "title": "Transmission media overview",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-twisted-pair",
+            "title": "Twisted pair",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-fiber-optics",
+            "title": "Fiber optics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-performance-indicators",
+            "title": "Performance indicators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-01-module-1-introduction-uses-of-computer-networks-bandwidth",
+            "title": "Bandwidth",
             "content": "",
             "pyqs": []
           },
@@ -95,14 +137,26 @@
         "title": "Module 2: Data link layer",
         "topics": [
           {
-            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-data-link-layer-data-link-layer-design-issues",
-            "title": "Data link layer - Data link layer design issues",
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-data-link-layer",
+            "title": "Data link layer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-error-detection-and-correction",
-            "title": "Error detection and correction",
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-data-link-layer-design-issues",
+            "title": "Data link layer design issues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-error-detection",
+            "title": "Error detection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-error-correction",
+            "title": "Error correction",
             "content": "",
             "pyqs": []
           },
@@ -125,20 +179,68 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-multiple-access-protocols-csma-collision-free-protocols",
-            "title": "Multiple access protocols - CSMA, Collision free protocols",
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-multiple-access-protocols",
+            "title": "Multiple access protocols",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-ethernet-switched-ethernet-fast-ethernet-and-gigabit-ethernet",
-            "title": "Ethernet - Switched Ethernet, fast Ethernet and gigabit Ethernet",
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-csma",
+            "title": "CSMA",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-wireless-lans-802-11-architecture-and-protocol-stack",
-            "title": "Wireless LANs - 802.11 - Architecture and protocol stack",
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-collision-free-protocols",
+            "title": "Collision free protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-ethernet",
+            "title": "Ethernet",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-switched-ethernet",
+            "title": "Switched Ethernet",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-fast-ethernet",
+            "title": "Fast Ethernet",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-gigabit-ethernet",
+            "title": "Gigabit Ethernet",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-wireless-lans",
+            "title": "Wireless LANs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-802-11",
+            "title": "802.11",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-architecture",
+            "title": "Architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-02-module-2-data-link-layer-protocol-stack",
+            "title": "Protocol stack",
             "content": "",
             "pyqs": []
           },
@@ -191,8 +293,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-routing-algorithms-the-optimality-principle",
-            "title": "Routing algorithms - The Optimality Principle",
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-routing-algorithms",
+            "title": "Routing algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-the-optimality-principle",
+            "title": "The Optimality Principle",
             "content": "",
             "pyqs": []
           },
@@ -227,20 +335,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-congestion-control-algorithms-approaches-to-congestion-control-details-not-required",
-            "title": "Congestion control algorithms - Approaches to congestion control (Details not required)",
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-congestion-control-algorithms",
+            "title": "Congestion control algorithms",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-quality-of-service-qos-requirements",
-            "title": "Quality of Service (QoS) - Requirements",
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-approaches-to-congestion-control",
+            "title": "Approaches to congestion control",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-techniques-for-achieving-good-qos-traffic-shaping",
-            "title": "Techniques for achieving good QoS - Traffic shaping",
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-quality-of-service-qos",
+            "title": "Quality of Service (QoS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-requirements",
+            "title": "Requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-techniques-for-achieving-good-qos",
+            "title": "Techniques for achieving good QoS",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-traffic-shaping",
+            "title": "Traffic shaping",
             "content": "",
             "pyqs": []
           },
@@ -269,8 +395,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-internet-control-protocols-internet-control-message-protocol-icmp",
-            "title": "Internet Control Protocols - Internet Control Message Protocol (ICMP)",
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-internet-control-protocols",
+            "title": "Internet Control Protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-03-module-3-network-layer-design-issues-internet-control-message-protocol-icmp",
+            "title": "Internet Control Message Protocol (ICMP)",
             "content": "",
             "pyqs": []
           },
@@ -311,8 +443,14 @@
         "title": "Module 4: Transport service services provided to the upper layers",
         "topics": [
           {
-            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-transport-service-services-provided-to-the-upper-layers",
-            "title": "Transport service - Services provided to the upper layers",
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-transport-service",
+            "title": "Transport service",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-services-provided-to-the-upper-layers",
+            "title": "Services provided to the upper layers",
             "content": "",
             "pyqs": []
           },
@@ -323,8 +461,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-user-datagram-protocol-udp-introduction",
-            "title": "User Datagram Protocol (UDP) - Introduction",
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-user-datagram-protocol-udp",
+            "title": "User Datagram Protocol (UDP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-introduction-to-udp",
+            "title": "Introduction to UDP",
             "content": "",
             "pyqs": []
           },
@@ -335,8 +479,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-electrical-and-electronics-transmission-control-protocol-tcp-introduction",
-            "title": "ELECTRICAL AND ELECTRONICS Transmission Control Protocol (TCP) - Introduction",
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-transmission-control-protocol-tcp",
+            "title": "Transmission Control Protocol (TCP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-introduction-to-tcp",
+            "title": "Introduction to TCP",
             "content": "",
             "pyqs": []
           },
@@ -359,26 +509,80 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-connection-establishment-release",
-            "title": "Connection establishment & release",
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-connection-establishment",
+            "title": "Connection establishment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-application-layer-domain-name-system-dns-overview-of-dns-name-space-and-name-servers",
-            "title": "Application Layer -Domain Name System (DNS) - overview of DNS name space and Name servers",
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-connection-release",
+            "title": "Connection release",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-electronic-mail-architecture-and-services-smtp-imap-pop3",
-            "title": "Electronic mail - Architecture and services- SMTP - IMAP - POP3",
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-application-layer",
+            "title": "Application Layer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-world-wide-web-www-architectural-overview",
-            "title": "World Wide Web (WWW) - Architectural overview",
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-domain-name-system-dns",
+            "title": "Domain Name System (DNS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-overview-of-dns-name-space",
+            "title": "Overview of DNS name space",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-name-servers",
+            "title": "Name servers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-electronic-mail",
+            "title": "Electronic mail",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-architecture-and-services",
+            "title": "Architecture and services",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-smtp",
+            "title": "SMTP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-imap",
+            "title": "IMAP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-pop3",
+            "title": "POP3",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-world-wide-web-www",
+            "title": "World Wide Web (WWW)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet528-computer-network-systems-04-module-4-transport-service-services-provided-to-the-upper-layers-architectural-overview",
+            "title": "Architectural overview",
             "content": "",
             "pyqs": []
           },
@@ -773,8 +977,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet523-digital-system-design-01-module-1-clocked-synchronous-networks-state-assignment-and-reduction",
-            "title": "State assignment and reduction",
+            "id": "ee-5-peeet523-digital-system-design-01-module-1-clocked-synchronous-networks-state-assignment",
+            "title": "State assignment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-01-module-1-clocked-synchronous-networks-reduction",
+            "title": "Reduction",
             "content": "",
             "pyqs": []
           },
@@ -821,8 +1031,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet523-digital-system-design-02-module-2-asm-chart-and-its-realization-state-assignment-problem-and-the-transition-table",
-            "title": "State assignment problem and the transition table",
+            "id": "ee-5-peeet523-digital-system-design-02-module-2-asm-chart-and-its-realization-state-assignment-problem",
+            "title": "State assignment problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-02-module-2-asm-chart-and-its-realization-transition-table",
+            "title": "Transition table",
             "content": "",
             "pyqs": []
           }
@@ -833,8 +1049,14 @@
         "title": "Module 3: Hazards static and dynamic hazards in combinational networks",
         "topics": [
           {
-            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-hazards-static-and-dynamic-hazards-in-combinational-networks",
-            "title": "Hazards - static and dynamic hazards in combinational networks",
+            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-static-hazards-in-combinational-networks",
+            "title": "Static hazards in combinational networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-dynamic-hazards-in-combinational-networks",
+            "title": "Dynamic hazards in combinational networks",
             "content": "",
             "pyqs": []
           },
@@ -863,14 +1085,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-practical-issues-clock-skew-and-jitter",
-            "title": "Practical issues- clock skew and jitter",
+            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-practical-issues-clock-skew",
+            "title": "Practical issues - clock skew",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-synchronous-and-asynchronous-inputs",
-            "title": "Synchronous and asynchronous inputs",
+            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-practical-issues-jitter",
+            "title": "Practical issues - jitter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-synchronous-inputs",
+            "title": "Synchronous inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-asynchronous-inputs",
+            "title": "Asynchronous inputs",
             "content": "",
             "pyqs": []
           },
@@ -882,7 +1116,7 @@
           },
           {
             "id": "ee-5-peeet523-digital-system-design-03-module-3-hazards-static-and-dynamic-hazards-in-combinational-networks-path-sensitization-method",
-            "title": "path sensitization method",
+            "title": "Path sensitization method",
             "content": "",
             "pyqs": []
           },
@@ -899,8 +1133,14 @@
         "title": "Module 4: Vlsi design flow design entry schematic",
         "topics": [
           {
-            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-vlsi-design-flow-design-entry-schematic",
-            "title": "VLSI Design flow: Design entry: Schematic",
+            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-vlsi-design-flow",
+            "title": "VLSI Design flow",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-design-entry-schematic",
+            "title": "Design entry: Schematic",
             "content": "",
             "pyqs": []
           },
@@ -911,14 +1151,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-different-modelling-styles-in-vhdl-dataflow-behavioural-and-structural-modelling",
-            "title": "different modelling styles in VHDL - Dataflow, Behavioural and Structural Modelling",
+            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-different-modelling-styles-in-vhdl-dataflow-modelling",
+            "title": "Different modelling styles in VHDL - Dataflow Modelling",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-vhdl-constructs-and-codes-for-combinational-and-sequential-circuits",
-            "title": "VHDL constructs and codes for combinational and sequential circuits",
+            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-different-modelling-styles-in-vhdl-behavioural-modelling",
+            "title": "Different modelling styles in VHDL - Behavioural Modelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-different-modelling-styles-in-vhdl-structural-modelling",
+            "title": "Different modelling styles in VHDL - Structural Modelling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-vhdl-constructs-and-codes-for-combinational-circuits",
+            "title": "VHDL constructs and codes for combinational circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet523-digital-system-design-04-module-4-vlsi-design-flow-design-entry-schematic-vhdl-constructs-and-codes-for-sequential-circuits",
+            "title": "VHDL constructs and codes for sequential circuits",
             "content": "",
             "pyqs": []
           }
@@ -1154,8 +1412,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-02-module-2-electric-drive-sensored-and-sensorless-control-block-diagram-only",
-            "title": "Sensored and sensorless control (block diagram only)",
+            "id": "ee-5-peeet522-electric-vehicles-02-module-2-electric-drive-sensored-control-block-diagram-only",
+            "title": "Sensored control (block diagram only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-02-module-2-electric-drive-sensorless-control-block-diagram-only",
+            "title": "Sensorless control (block diagram only)",
             "content": "",
             "pyqs": []
           },
@@ -1196,8 +1460,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-02-module-2-electric-drive-switching-frequency-and-pwm",
-            "title": "Switching frequency and PWM",
+            "id": "ee-5-peeet522-electric-vehicles-02-module-2-electric-drive-switching-frequency",
+            "title": "Switching frequency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-02-module-2-electric-drive-pwm",
+            "title": "PWM",
             "content": "",
             "pyqs": []
           }
@@ -1310,8 +1580,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery-time-and-charge-discharge-cycles",
-            "title": "Time and charge/discharge cycles",
+            "id": "ee-5-peeet522-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery-time-cycles",
+            "title": "Time cycles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery-charge-cycles",
+            "title": "Charge cycles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery-discharge-cycles",
+            "title": "Discharge cycles",
             "content": "",
             "pyqs": []
           },
@@ -1346,8 +1628,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery-determination-of-pack-voltage-range-for-ev",
-            "title": "Determination of pack Voltage, range for EV",
+            "id": "ee-5-peeet522-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery-determination-of-pack-voltage-for-ev",
+            "title": "Determination of pack Voltage for EV",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-03-module-3-battery-based-energy-storage-systems-types-of-battery-determination-of-range-for-ev",
+            "title": "Determination of range for EV",
             "content": "",
             "pyqs": []
           },
@@ -1430,8 +1718,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-ac-level-1-2",
-            "title": "AC Level 1 & 2",
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-ac-level-1",
+            "title": "AC Level 1",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-ac-level-2",
+            "title": "AC Level 2",
             "content": "",
             "pyqs": []
           },
@@ -1454,8 +1748,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-ccs-type1-and-2",
-            "title": "CCS Type1 and 2",
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-ccs-type1",
+            "title": "CCS Type1",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-ccs-type2",
+            "title": "CCS Type2",
             "content": "",
             "pyqs": []
           },
@@ -1466,8 +1766,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-pin-diagrams-and-differences",
-            "title": "PIN diagrams and differences",
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-pin-diagrams",
+            "title": "PIN diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-differences",
+            "title": "Differences",
             "content": "",
             "pyqs": []
           },
@@ -1490,8 +1796,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-functional-architecture-sensors-actuators-path-planning",
-            "title": "Functional architecture-sensors, actuators, path planning",
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-functional-architecture",
+            "title": "Functional architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-sensors",
+            "title": "Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-actuators",
+            "title": "Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-path-planning",
+            "title": "Path planning",
             "content": "",
             "pyqs": []
           },
@@ -1508,14 +1832,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-need-requirements",
-            "title": "Need & requirements",
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-need",
+            "title": "Need",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-functions-of-control-pilot-cp-and-proximity-pilot-pp-pins",
-            "title": "Functions of Control Pilot (CP) and Proximity Pilot (PP) pins",
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-requirements",
+            "title": "Requirements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-functions-of-control-pilot-cp-pin",
+            "title": "Functions of Control Pilot (CP) pin",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet522-electric-vehicles-04-module-4-overview-of-electric-vehicle-battery-chargers-types-of-chargers-functions-of-proximity-pilot-pp-pin",
+            "title": "Functions of Proximity Pilot (PP) pin",
             "content": "",
             "pyqs": []
           },
@@ -2609,8 +2945,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet527-introduction-to-machine-learning-03-module-3-introduction-to-python-for-ml-essential-python-libraries-and-ml-functions",
-            "title": "Essential python libraries and ML functions",
+            "id": "ee-5-peeet527-introduction-to-machine-learning-03-module-3-introduction-to-python-for-ml-essential-python-libraries",
+            "title": "Essential python libraries",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet527-introduction-to-machine-learning-03-module-3-introduction-to-python-for-ml-ml-functions",
+            "title": "ML functions",
             "content": "",
             "pyqs": []
           },
@@ -2645,8 +2987,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-peeet527-introduction-to-machine-learning-03-module-3-introduction-to-python-for-ml-data-cleaning-and-pre-processing-functions",
-            "title": "Data cleaning and pre-processing functions",
+            "id": "ee-5-peeet527-introduction-to-machine-learning-03-module-3-introduction-to-python-for-ml-data-cleaning",
+            "title": "Data cleaning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-peeet527-introduction-to-machine-learning-03-module-3-introduction-to-python-for-ml-pre-processing-functions",
+            "title": "pre-processing functions",
             "content": "",
             "pyqs": []
           },
@@ -2936,8 +3284,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-01-module-1-introduction-to-microprocessors-programs-involving-8-and-16-bit-addition",
-            "title": "Programs involving 8 and 16 bit Addition",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-01-module-1-introduction-to-microprocessors-programs-involving-8-bit-addition",
+            "title": "Programs involving 8-bit Addition",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-01-module-1-introduction-to-microprocessors-programs-involving-16-bit-addition",
+            "title": "Programs involving 16-bit Addition",
             "content": "",
             "pyqs": []
           },
@@ -2948,8 +3302,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-01-module-1-introduction-to-microprocessors-programs-for-memory-reading-and-writing",
-            "title": "Programs for Memory Reading and Writing",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-01-module-1-introduction-to-microprocessors-programs-for-memory-reading",
+            "title": "Programs for Memory Reading",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-01-module-1-introduction-to-microprocessors-programs-for-memory-writing",
+            "title": "Programs for Memory Writing",
             "content": "",
             "pyqs": []
           },
@@ -2978,14 +3338,26 @@
         "title": "Module 2: Stack and subroutines",
         "topics": [
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-stack-and-subroutines",
-            "title": "Stack and Subroutines",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-stack",
+            "title": "Stack",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-call-and-return-instructions",
-            "title": "CALL and RETURN instructions",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-subroutines",
+            "title": "Subroutines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-call-instructions",
+            "title": "CALL instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-return-instructions",
+            "title": "RETURN instructions",
             "content": "",
             "pyqs": []
           },
@@ -3050,8 +3422,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-interfacing-adc-and-dac",
-            "title": "Interfacing ADC and DAC",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-interfacing-adc",
+            "title": "Interfacing ADC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-02-module-2-stack-and-subroutines-interfacing-dac",
+            "title": "Interfacing DAC",
             "content": "",
             "pyqs": []
           }
@@ -3074,20 +3452,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-features-and-characteristics-of-embedded-systems",
-            "title": "Features and characteristics of Embedded Systems",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-features-of-embedded-systems",
+            "title": "Features of Embedded Systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-microprocessors-and-microcontrollers",
-            "title": "Microprocessors and Microcontrollers",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-characteristics-of-embedded-systems",
+            "title": "Characteristics of Embedded Systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-choice-and-suitability-of-microprocessors-and-microcontrollers-for-applications",
-            "title": "Choice and suitability of Microprocessors and Microcontrollers for applications",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-microprocessors",
+            "title": "Microprocessors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-microcontrollers",
+            "title": "Microcontrollers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-choice-and-suitability-of-microprocessors-for-applications",
+            "title": "Choice and suitability of Microprocessors for applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-03-module-3-introduction-to-embedded-systems-choice-and-suitability-of-microcontrollers-for-applications",
+            "title": "Choice and suitability of Microcontrollers for applications",
             "content": "",
             "pyqs": []
           },
@@ -3308,8 +3704,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-04-module-4-arm-advanced-risc-machines-based-embedded-system-design-classification-classification-of-microprocessors-based-on-architecture-and-instruction-set",
-            "title": "Classification of Microprocessors based on architecture and Instruction Set",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-04-module-4-arm-advanced-risc-machines-based-embedded-system-design-classification-classification-of-microprocessors-based-on-architecture",
+            "title": "Classification of Microprocessors based on architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-04-module-4-arm-advanced-risc-machines-based-embedded-system-design-classification-classification-of-microprocessors-based-on-instruction-set",
+            "title": "Classification of Microprocessors based on Instruction Set",
             "content": "",
             "pyqs": []
           },
@@ -3326,8 +3728,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-04-module-4-arm-advanced-risc-machines-based-embedded-system-design-classification-features-and-characteristics-of-arm",
-            "title": "Features and characteristics of ARM",
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-04-module-4-arm-advanced-risc-machines-based-embedded-system-design-classification-features-of-arm",
+            "title": "Features of ARM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pbeet504-microprocessors-and-embedded-systems-04-module-4-arm-advanced-risc-machines-based-embedded-system-design-classification-characteristics-of-arm",
+            "title": "Characteristics of ARM",
             "content": "",
             "pyqs": []
           },
@@ -3480,7 +3888,7 @@
           },
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement-finding-largest-element-in-an-array",
-            "title": "finding largest element in an array.",
+            "title": "finding largest element in an array",
             "content": "",
             "pyqs": []
           },
@@ -3497,14 +3905,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement-multiplication-and-division",
-            "title": "Multiplication and Division.",
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement-multiplication",
+            "title": "Multiplication",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement-comparing-square-and-cube-of-16-bit-numbers",
-            "title": "Comparing square and cube of 16 bit numbers.",
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement-division",
+            "title": "Division",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement-comparing-square-of-16-bit-numbers",
+            "title": "Comparing square of 16 bit numbers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-01-module-1-data-transfer-block-data-movement-comparing-cube-of-16-bit-numbers",
+            "title": "Comparing cube of 16 bit numbers",
             "content": "",
             "pyqs": []
           }
@@ -3515,14 +3935,20 @@
         "title": "Module 2: Alp programming for the implementation of counters hex up and down coun",
         "topics": [
           {
-            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-02-module-2-alp-programming-for-the-implementation-of-counters-hex-up-and-down-coun-alp-programming-for-the-implementation-of-counters-hex-up-and-down-counters",
-            "title": "ALP programming for the implementation of counters: Hex up and down counters",
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-02-module-2-alp-programming-for-the-implementation-of-counters-hex-up-and-down-coun-alp-programming-for-the-implementation-of-counters-hex-up-counters",
+            "title": "ALP programming for the implementation of counters: Hex up counters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-02-module-2-alp-programming-for-the-implementation-of-counters-hex-up-and-down-coun-alp-programming-for-the-implementation-of-counters-hex-down-counters",
+            "title": "ALP programming for the implementation of counters: Hex down counters",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-02-module-2-alp-programming-for-the-implementation-of-counters-hex-up-and-down-coun-bcd-up-down-counters",
-            "title": "BCD up/down counters.",
+            "title": "BCD up/down counters",
             "content": "",
             "pyqs": []
           }
@@ -3534,7 +3960,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-03-module-3-alp-programming-for-implementing-boolean-and-logical-instructions-bit-m-alp-programming-for-implementing-boolean-and-logical-instructions-bit-manipulation",
-            "title": "ALP programming for implementing Boolean and logical instructions: bit manipulation.",
+            "title": "ALP programming for implementing Boolean and logical instructions: bit manipulation",
             "content": "",
             "pyqs": []
           },
@@ -3546,7 +3972,7 @@
           },
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-03-module-3-alp-programming-for-implementing-boolean-and-logical-instructions-bit-m-factorial-of-a-number",
-            "title": "Factorial of a number.",
+            "title": "Factorial of a number",
             "content": "",
             "pyqs": []
           }
@@ -3558,7 +3984,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-04-module-4-alp-program-for-generation-of-delay-alp-program-for-generation-of-delay",
-            "title": "ALP program for Generation of delay.",
+            "title": "ALP program for Generation of delay",
             "content": "",
             "pyqs": []
           }
@@ -3570,7 +3996,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-05-module-5-c-program-for-stepper-motor-control-c-program-for-stepper-motor-control",
-            "title": "C program for stepper motor control.",
+            "title": "C program for stepper motor control",
             "content": "",
             "pyqs": []
           }
@@ -3582,7 +4008,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-06-module-6-c-program-for-dc-motor-direction-and-speed-control-using-pwm-c-program-for-dc-motor-direction-and-speed-control-using-pwm",
-            "title": "C program for DC motor direction and speed control using PWM.",
+            "title": "C program for DC motor direction and speed control using PWM",
             "content": "",
             "pyqs": []
           }
@@ -3594,7 +4020,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-07-module-7-c-program-for-alphanumerical-lcd-panelkeyboard-interface-c-program-for-alphanumerical-lcd-panel-keyboard-interface",
-            "title": "C program for alphanumerical LCD panel/keyboard interface.",
+            "title": "C program for alphanumerical LCD panel/keyboard interface",
             "content": "",
             "pyqs": []
           }
@@ -3606,7 +4032,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-08-module-8-c-program-for-adc-interfacing-c-program-for-adc-interfacing",
-            "title": "C program for ADC interfacing.",
+            "title": "C program for ADC interfacing",
             "content": "",
             "pyqs": []
           }
@@ -3618,7 +4044,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-09-module-9-demo-experiment-using-8051-microcontroller-programming-demo-experiment-using-8051-microcontroller-programming",
-            "title": "Demo experiment using 8051 Microcontroller programming.",
+            "title": "Demo experiment using 8051 Microcontroller programming",
             "content": "",
             "pyqs": []
           },
@@ -3647,8 +4073,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-09-module-9-demo-experiment-using-8051-microcontroller-programming-hexadecimal-to-decimal-and-decimal-to-hexadecimal",
-            "title": "Hexadecimal to Decimal and Decimal to Hexadecimal",
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-09-module-9-demo-experiment-using-8051-microcontroller-programming-hexadecimal-to-decimal",
+            "title": "Hexadecimal to Decimal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-09-module-9-demo-experiment-using-8051-microcontroller-programming-decimal-to-hexadecimal",
+            "title": "Decimal to Hexadecimal",
             "content": "",
             "pyqs": []
           }
@@ -3660,13 +4092,13 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-10-module-10-familiarization-of-aurdino-ide-familiarization-of-aurdino-ide",
-            "title": "Familiarization of Aurdino IDE.",
+            "title": "Familiarization of Aurdino IDE",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-10-module-10-familiarization-of-aurdino-ide-led-blinking-with-different-on-off-delay-timings-with-i-inbuilt-led-ii-externally-interfaced-led",
-            "title": "LED blinking with different ON/OFF delay timings with (i) inbuilt LED (ii) externally interfaced LED.",
+            "title": "LED blinking with different ON/OFF delay timings with (i) inbuilt LED (ii) externally interfaced LED",
             "content": "",
             "pyqs": []
           }
@@ -3678,7 +4110,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-11-module-11-arduino-based-voltage-measurement-of-12-v-solar-pv-module-12-v-battery-arduino-based-voltage-measurement-of-12-v-solar-pv-module-12-v-battery-and-displaying-the-measured-value-using-12c-lcd-display",
-            "title": "Arduino based voltage measurement of 12 V solar PV module /12 V battery and displaying the measured value using 12C LCD display..",
+            "title": "Arduino based voltage measurement of 12 V solar PV module /12 V battery and displaying the measured value using 12C LCD display",
             "content": "",
             "pyqs": []
           }
@@ -3690,7 +4122,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-12-module-12-demo-experiments-on-arduino-raspberry-pi-to-upload-retrieve-temperatur-demo-experiments-on-arduino-raspberry-pi-to-upload-retrieve-temperature-and-humidity-data-to-thing-speak-cloud",
-            "title": "Demo experiments on Arduino / Raspberry Pi to upload /retrieve temperature and humidity data to thing speak cloud.",
+            "title": "Demo experiments on Arduino / Raspberry Pi to upload /retrieve temperature and humidity data to thing speak cloud",
             "content": "",
             "pyqs": []
           }
@@ -3702,7 +4134,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-13-module-13-arduino-based-dc-current-measurement-using-hall-effect-current-sensor-arduino-based-dc-current-measurement-using-hall-effect-current-sensor-displaying-the-value-using-12c-lcd-module",
-            "title": "Arduino based DC current measurement using Hall effect current sensor displaying the value using 12C LCD module.",
+            "title": "Arduino based DC current measurement using Hall effect current sensor displaying the value using 12C LCD module",
             "content": "",
             "pyqs": []
           }
@@ -3714,7 +4146,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-14-module-14-directional-control-of-the-dc-motor-using-arduino-directional-control-of-the-dc-motor-using-arduino",
-            "title": "Directional control of the DC motor using Arduino.",
+            "title": "Directional control of the DC motor using Arduino",
             "content": "",
             "pyqs": []
           }
@@ -3726,7 +4158,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-15-module-15-interfacing-of-the-relay-with-arduino-interfacing-of-the-relay-with-arduino",
-            "title": "Interfacing of the relay with Arduino.",
+            "title": "Interfacing of the relay with Arduino",
             "content": "",
             "pyqs": []
           }
@@ -3738,7 +4170,7 @@
         "topics": [
           {
             "id": "ee-5-pceel508-microprocessors-and-embedded-systems-lab-16-module-16-building-intrusion-detection-system-with-arduino-and-ultrasonic-sensor-building-intrusion-detection-system-with-arduino-and-ultrasonic-sensor",
-            "title": "Building intrusion detection system with Arduino and Ultrasonic sensor.",
+            "title": "Building intrusion detection system with Arduino and Ultrasonic sensor",
             "content": "",
             "pyqs": []
           }
@@ -3758,38 +4190,164 @@
         "title": "Module 1: Generation from renewable and non",
         "topics": [
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-generation-from-renewable-and-non-renewable-sources",
-            "title": "Generation from renewable and non-renewable sources",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-generation-from-renewable-sources",
+            "title": "Generation from renewable sources",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-hydro-power-generation-block-schematic-details-environmental-and-ethical-factors-advantages-disadvantages",
-            "title": "Hydro power generation - block schematic details, environmental and ethical factors, advantages, disadvantages",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-generation-from-non-renewable-sources",
+            "title": "Generation from non-renewable sources",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-thermal-power-generation-block-schematic-details-environmental-and-ethical-factors-advantages-disadvantages",
-            "title": "Thermal power generation - block schematic details, environmental and ethical factors, advantages, disadvantages",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-hydro-power-generation-block-schematic-details",
+            "title": "Hydro power generation - block schematic details",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-nuclear-power-generation-block-schematic-details-environmental-and-ethical-factors-advantages-disadvantages",
-            "title": "Nuclear power generation - block schematic details, environmental and ethical factors, advantages, disadvantages",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-hydro-power-generation-environmental-factors",
+            "title": "Hydro power generation - environmental factors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-solar-power-generation-block-schematic-details-environmental-factors-regulations-advantages-disadvantages",
-            "title": "Solar power generation - block schematic details, environmental factors, regulations, advantages, disadvantages",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-hydro-power-generation-ethical-factors",
+            "title": "Hydro power generation - ethical factors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-wind-power-generation-block-schematic-details-environmental-factors-regulations-advantages-disadvantages",
-            "title": "Wind power generation - block schematic details, environmental factors, regulations, advantages, disadvantages",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-hydro-power-generation-advantages",
+            "title": "Hydro power generation - advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-hydro-power-generation-disadvantages",
+            "title": "Hydro power generation - disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-thermal-power-generation-block-schematic-details",
+            "title": "Thermal power generation - block schematic details",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-thermal-power-generation-environmental-factors",
+            "title": "Thermal power generation - environmental factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-thermal-power-generation-ethical-factors",
+            "title": "Thermal power generation - ethical factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-thermal-power-generation-advantages",
+            "title": "Thermal power generation - advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-thermal-power-generation-disadvantages",
+            "title": "Thermal power generation - disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-nuclear-power-generation-block-schematic-details",
+            "title": "Nuclear power generation - block schematic details",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-nuclear-power-generation-environmental-factors",
+            "title": "Nuclear power generation - environmental factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-nuclear-power-generation-ethical-factors",
+            "title": "Nuclear power generation - ethical factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-nuclear-power-generation-advantages",
+            "title": "Nuclear power generation - advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-nuclear-power-generation-disadvantages",
+            "title": "Nuclear power generation - disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-solar-power-generation-block-schematic-details",
+            "title": "Solar power generation - block schematic details",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-solar-power-generation-environmental-factors",
+            "title": "Solar power generation - environmental factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-solar-power-generation-regulations",
+            "title": "Solar power generation - regulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-solar-power-generation-advantages",
+            "title": "Solar power generation - advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-solar-power-generation-disadvantages",
+            "title": "Solar power generation - disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-wind-power-generation-block-schematic-details",
+            "title": "Wind power generation - block schematic details",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-wind-power-generation-environmental-factors",
+            "title": "Wind power generation - environmental factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-wind-power-generation-regulations",
+            "title": "Wind power generation - regulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-wind-power-generation-advantages",
+            "title": "Wind power generation - advantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-01-module-1-generation-from-renewable-and-non-wind-power-generation-disadvantages",
+            "title": "Wind power generation - disadvantages",
             "content": "",
             "pyqs": []
           },
@@ -3992,14 +4550,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-principle-of-ehvac-and-hvdc",
-            "title": "Principle of EHVAC and HVDC",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-principle-of-ehvac",
+            "title": "Principle of EHVAC",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-advantages-and-disadvantages-of-ehvac-and-hvdc",
-            "title": "Advantages and disadvantages of EHVAC and HVDC",
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-principle-of-hvdc",
+            "title": "Principle of HVDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-advantages-of-ehvac",
+            "title": "Advantages of EHVAC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-disadvantages-of-ehvac",
+            "title": "Disadvantages of EHVAC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-advantages-of-hvdc",
+            "title": "Advantages of HVDC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet501-power-generation-transmission-and-protection-03-module-3-introduction-to-ehvac-and-hvdc-principle-advantagesdisadvantages-disadvantages-of-hvdc",
+            "title": "Disadvantages of HVDC",
             "content": "",
             "pyqs": []
           },
@@ -4253,8 +4835,14 @@
         "title": "Module 1: Introduction to signals and systems elementary signals",
         "topics": [
           {
-            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-introduction-to-signals-and-systems",
-            "title": "Introduction to Signals and Systems",
+            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-introduction-to-signals",
+            "title": "Introduction to Signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-introduction-to-systems",
+            "title": "Introduction to Systems",
             "content": "",
             "pyqs": []
           },
@@ -4265,14 +4853,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-classification-and-representation-of-continuous-time-signals",
-            "title": "Classification and representation of continuous time signals",
+            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-classification-of-continuous-time-signals",
+            "title": "Classification of continuous time signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-classification-and-representation-of-discrete-time-signals",
-            "title": "Classification and representation of discrete time signals",
+            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-representation-of-continuous-time-signals",
+            "title": "Representation of continuous time signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-classification-of-discrete-time-signals",
+            "title": "Classification of discrete time signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet503-signals-and-systems-01-module-1-introduction-to-signals-and-systems-elementary-signals-representation-of-discrete-time-signals",
+            "title": "Representation of discrete time signals",
             "content": "",
             "pyqs": []
           },
@@ -4373,8 +4973,14 @@
         "title": "Module 2: Frequency domain characterization of signals and systems fourier transf",
         "topics": [
           {
-            "id": "ee-5-pceet503-signals-and-systems-02-module-2-frequency-domain-characterization-of-signals-and-systems-fourier-transf-frequency-domain-characterization-of-signals-and-systems",
-            "title": "Frequency domain characterization of Signals and Systems",
+            "id": "ee-5-pceet503-signals-and-systems-02-module-2-frequency-domain-characterization-of-signals-and-systems-fourier-transf-frequency-domain-characterization-of-signals",
+            "title": "Frequency domain characterization of Signals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet503-signals-and-systems-02-module-2-frequency-domain-characterization-of-signals-and-systems-fourier-transf-frequency-domain-characterization-of-systems",
+            "title": "Frequency domain characterization of Systems",
             "content": "",
             "pyqs": []
           },
@@ -4487,8 +5093,14 @@
         "title": "Module 3: Sampled data systems and z",
         "topics": [
           {
-            "id": "ee-5-pceet503-signals-and-systems-03-module-3-sampled-data-systems-and-z-sampled-data-systems-and-z-transform",
-            "title": "Sampled Data Systems and Z-Transform",
+            "id": "ee-5-pceet503-signals-and-systems-03-module-3-sampled-data-systems-and-z-sampled-data-systems",
+            "title": "Sampled Data Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet503-signals-and-systems-03-module-3-sampled-data-systems-and-z-z-transform",
+            "title": "Z-Transform",
             "content": "",
             "pyqs": []
           },
@@ -4595,8 +5207,14 @@
         "title": "Module 4: Dynamic system representation and stability open loop and closed loop s",
         "topics": [
           {
-            "id": "ee-5-pceet503-signals-and-systems-04-module-4-dynamic-system-representation-and-stability-open-loop-and-closed-loop-s-dynamic-system-representation-and-stability",
-            "title": "Dynamic System Representation and Stability",
+            "id": "ee-5-pceet503-signals-and-systems-04-module-4-dynamic-system-representation-and-stability-open-loop-and-closed-loop-s-dynamic-system-representation",
+            "title": "Dynamic System Representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-5-pceet503-signals-and-systems-04-module-4-dynamic-system-representation-and-stability-open-loop-and-closed-loop-s-stability",
+            "title": "Stability",
             "content": "",
             "pyqs": []
           },

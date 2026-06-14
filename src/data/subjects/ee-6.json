@@ -11,8 +11,26 @@
         "title": "Module 1: Transfer function and state space modelling of armature and field contr",
         "topics": [
           {
-            "id": "ee-6-pceel607-control-system-lab-01-module-1-transfer-function-and-state-space-modelling-of-armature-and-field-contr-transfer-function-and-state-space-modelling-of-armature-and-field-controlled-dc-motor",
-            "title": "Transfer Function and State Space Modelling of Armature and Field Controlled DC Motor",
+            "id": "ee-6-pceel607-control-system-lab-01-module-1-transfer-function-and-state-space-modelling-of-armature-and-field-contr-transfer-function-modelling-of-armature-controlled-dc-motor",
+            "title": "Transfer Function Modelling of Armature Controlled DC Motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-01-module-1-transfer-function-and-state-space-modelling-of-armature-and-field-contr-transfer-function-modelling-of-field-controlled-dc-motor",
+            "title": "Transfer Function Modelling of Field Controlled DC Motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-01-module-1-transfer-function-and-state-space-modelling-of-armature-and-field-contr-state-space-modelling-of-armature-controlled-dc-motor",
+            "title": "State Space Modelling of Armature Controlled DC Motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-01-module-1-transfer-function-and-state-space-modelling-of-armature-and-field-contr-state-space-modelling-of-field-controlled-dc-motor",
+            "title": "State Space Modelling of Field Controlled DC Motor",
             "content": "",
             "pyqs": []
           },
@@ -47,8 +65,14 @@
         "title": "Module 3: Synchro transmitter and receiver for open loop position control",
         "topics": [
           {
-            "id": "ee-6-pceel607-control-system-lab-03-module-3-synchro-transmitter-and-receiver-for-open-loop-position-control-synchro-transmitter-and-receiver-for-open-loop-position-control",
-            "title": "Synchro Transmitter and Receiver for open loop position control",
+            "id": "ee-6-pceel607-control-system-lab-03-module-3-synchro-transmitter-and-receiver-for-open-loop-position-control-synchro-transmitter-for-open-loop-position-control",
+            "title": "Synchro Transmitter for open loop position control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-03-module-3-synchro-transmitter-and-receiver-for-open-loop-position-control-synchro-receiver-for-open-loop-position-control",
+            "title": "Synchro Receiver for open loop position control",
             "content": "",
             "pyqs": []
           },
@@ -77,8 +101,14 @@
         "title": "Module 4: Step response and frequency response of a second order system realised",
         "topics": [
           {
-            "id": "ee-6-pceel607-control-system-lab-04-module-4-step-response-and-frequency-response-of-a-second-order-system-realised-step-response-and-frequency-response-of-a-second-order-system-realised-using-passive-components",
-            "title": "Step response and frequency response of a second order system realised using passive components",
+            "id": "ee-6-pceel607-control-system-lab-04-module-4-step-response-and-frequency-response-of-a-second-order-system-realised-step-response-of-a-second-order-system-realised-using-passive-components",
+            "title": "Step response of a second order system realised using passive components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-04-module-4-step-response-and-frequency-response-of-a-second-order-system-realised-frequency-response-of-a-second-order-system-realised-using-passive-components",
+            "title": "Frequency response of a second order system realised using passive components",
             "content": "",
             "pyqs": []
           },
@@ -191,8 +221,14 @@
         "title": "Module 8: System identification and modeling",
         "topics": [
           {
-            "id": "ee-6-pceel607-control-system-lab-08-module-8-system-identification-and-modeling-system-identification-and-modeling",
-            "title": "System Identification and Modeling",
+            "id": "ee-6-pceel607-control-system-lab-08-module-8-system-identification-and-modeling-system-identification",
+            "title": "System Identification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-08-module-8-system-identification-and-modeling-system-modeling",
+            "title": "System Modeling",
             "content": "",
             "pyqs": []
           },
@@ -209,8 +245,14 @@
         "title": "Module 9: Step response and frequency response of a second order system using sim",
         "topics": [
           {
-            "id": "ee-6-pceel607-control-system-lab-09-module-9-step-response-and-frequency-response-of-a-second-order-system-using-sim-step-response-and-frequency-response-of-a-second-order-system-using-simulation",
-            "title": "Step response and frequency response of a second order system using simulation",
+            "id": "ee-6-pceel607-control-system-lab-09-module-9-step-response-and-frequency-response-of-a-second-order-system-using-sim-step-response-of-a-second-order-system-using-simulation",
+            "title": "Step response of a second order system using simulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-09-module-9-step-response-and-frequency-response-of-a-second-order-system-using-sim-frequency-response-of-a-second-order-system-using-simulation",
+            "title": "Frequency response of a second order system using simulation",
             "content": "",
             "pyqs": []
           },
@@ -245,20 +287,50 @@
         "title": "Module 10: Performance analysis using root",
         "topics": [
           {
-            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-performance-analysis-using-root-locus-and-frequency-response-methods-in-matlab-scilab-similar-softwares",
-            "title": "Performance Analysis using Root-Locus and frequency Response Methods in MATLAB/SCILAB/similar softwares",
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-performance-analysis-using-root-locus-methods-in-matlab-scilab-similar-softwares",
+            "title": "Performance Analysis using Root-Locus Methods in MATLAB/SCILAB/similar softwares",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-objective-plot-the-root-locus-bode-plot-nyquist-plot-and-nichols-chart-for-the-given-transfer-functions",
-            "title": "Objective: Plot the root locus, Bode plot, Nyquist plot and Nichols chart for the given transfer functions",
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-performance-analysis-using-frequency-response-methods-in-matlab-scilab-similar-softwares",
+            "title": "Performance Analysis using Frequency Response Methods in MATLAB/SCILAB/similar softwares",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-root-locus-determine-the-critical-gain-frequency-of-oscillation-at-critical-gain",
-            "title": "Root Locus: Determine the critical gain, frequency of oscillation at critical gain",
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-plot-the-root-locus-for-the-given-transfer-functions",
+            "title": "Plot the root locus for the given transfer functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-plot-the-bode-plot-for-the-given-transfer-functions",
+            "title": "Plot the Bode plot for the given transfer functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-plot-the-nyquist-plot-for-the-given-transfer-functions",
+            "title": "Plot the Nyquist plot for the given transfer functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-plot-the-nichols-chart-for-the-given-transfer-functions",
+            "title": "Plot the Nichols chart for the given transfer functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-root-locus-determine-the-critical-gain",
+            "title": "Root Locus: Determine the critical gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-root-locus-determine-the-frequency-of-oscillation-at-critical-gain",
+            "title": "Root Locus: Determine the frequency of oscillation at critical gain",
             "content": "",
             "pyqs": []
           },
@@ -269,8 +341,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-root-locus-determine-the-gain-corresponding-to-a-given-damping-ratio-and-obtain-the-step-response-of-the-system-for-the-corresponding-gain",
-            "title": "Root Locus: Determine the gain corresponding to a given damping ratio and obtain the step response of the system for the corresponding gain",
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-root-locus-determine-the-gain-corresponding-to-a-given-damping-ratio",
+            "title": "Root Locus: Determine the gain corresponding to a given damping ratio",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-root-locus-obtain-the-step-response-of-the-system-for-the-corresponding-gain",
+            "title": "Root Locus: Obtain the step response of the system for the corresponding gain",
             "content": "",
             "pyqs": []
           },
@@ -281,8 +359,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-frequency-response-determination-of-gain-margin-and-phase-margin-stable-and-unstable-minimum-non-minimum-phase-system",
-            "title": "Frequency response: Determination of Gain Margin and Phase Margin (stable and unstable, minimum/non-minimum phase system)",
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-frequency-response-determination-of-gain-margin-stable-and-unstable-minimum-non-minimum-phase-system",
+            "title": "Frequency response: Determination of Gain Margin (stable and unstable, minimum/non-minimum phase system)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-frequency-response-determination-of-phase-margin-stable-and-unstable-minimum-non-minimum-phase-system",
+            "title": "Frequency response: Determination of Phase Margin (stable and unstable, minimum/non-minimum phase system)",
             "content": "",
             "pyqs": []
           },
@@ -299,8 +383,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-frequency-response-determine-the-stability-of-a-given-minimum-and-non-minimum-phase-system-using-nyquist-stability-criterion",
-            "title": "Frequency response: Determine the stability of a given minimum and non-minimum phase system using Nyquist stability criterion",
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-frequency-response-determine-the-stability-of-a-given-minimum-phase-system-using-nyquist-stability-criterion",
+            "title": "Frequency response: Determine the stability of a given minimum phase system using Nyquist stability criterion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-10-module-10-performance-analysis-using-root-frequency-response-determine-the-stability-of-a-given-non-minimum-phase-system-using-nyquist-stability-criterion",
+            "title": "Frequency response: Determine the stability of a given non-minimum phase system using Nyquist stability criterion",
             "content": "",
             "pyqs": []
           },
@@ -377,8 +467,20 @@
         "title": "Module 13: State space model analysis and controller design",
         "topics": [
           {
-            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-state-space-model-analysis-and-controller-design",
-            "title": "State Space Model, Analysis and Controller Design",
+            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-state-space-model",
+            "title": "State Space Model",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-state-space-analysis",
+            "title": "State Space Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-state-space-controller-design",
+            "title": "State Space Controller Design",
             "content": "",
             "pyqs": []
           },
@@ -389,8 +491,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-determine-the-open-loop-stability-controllability-and-observability",
-            "title": "Determine the open loop stability, controllability and observability",
+            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-determine-the-open-loop-stability",
+            "title": "Determine the open loop stability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-determine-the-controllability",
+            "title": "Determine the controllability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel607-control-system-lab-13-module-13-state-space-model-analysis-and-controller-design-determine-the-observability",
+            "title": "Determine the observability",
             "content": "",
             "pyqs": []
           },
@@ -560,8 +674,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-peeet631-digital-protection-of-power-systems-01-module-1-introduction-need-for-protective-systems-current-setting-and-time-setting-in-over-current-relays",
-            "title": "Current setting and time setting in over current relays",
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-01-module-1-introduction-need-for-protective-systems-current-setting-in-over-current-relays",
+            "title": "Current setting in over current relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-01-module-1-introduction-need-for-protective-systems-time-setting-in-over-current-relays",
+            "title": "Time setting in over current relays",
             "content": "",
             "pyqs": []
           },
@@ -578,8 +698,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-peeet631-digital-protection-of-power-systems-01-module-1-introduction-need-for-protective-systems-operating-and-restraining-characteristics-of-differential-relays",
-            "title": "Operating and restraining characteristics of differential relays",
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-01-module-1-introduction-need-for-protective-systems-operating-characteristics-of-differential-relays",
+            "title": "Operating characteristics of differential relays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-01-module-1-introduction-need-for-protective-systems-restraining-characteristics-of-differential-relays",
+            "title": "Restraining characteristics of differential relays",
             "content": "",
             "pyqs": []
           },
@@ -650,14 +776,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-protection-of-transformer-generator-and-motor",
-            "title": "Protection of Transformer, Generator and Motor",
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-protection-of-transformer",
+            "title": "Protection of Transformer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-types-of-faults-in-transformer-generator-and-motor",
-            "title": "Types of faults in Transformer, Generator and Motor",
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-protection-of-generator",
+            "title": "Protection of Generator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-protection-of-motor",
+            "title": "Protection of Motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-types-of-faults-in-transformer",
+            "title": "Types of faults in Transformer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-types-of-faults-in-generator",
+            "title": "Types of faults in Generator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-peeet631-digital-protection-of-power-systems-02-module-2-protection-of-transmission-lines-schemes-of-distance-protection-types-of-faults-in-motor",
+            "title": "Types of faults in Motor",
             "content": "",
             "pyqs": []
           },
@@ -1394,14 +1544,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-01-module-1-awareness-on-is-codes-awareness-on-is-3646-part-1-2",
-            "title": "Awareness on IS 3646-part 1 & 2",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-01-module-1-awareness-on-is-codes-awareness-on-is-3646-part-1",
+            "title": "Awareness on IS 3646-part 1",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-01-module-1-awareness-on-is-codes-awareness-on-is-5216-part-1-2",
-            "title": "Awareness on IS 5216 part 1 & 2",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-01-module-1-awareness-on-is-codes-awareness-on-is-3646-part-2",
+            "title": "Awareness on IS 3646-part 2",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-01-module-1-awareness-on-is-codes-awareness-on-is-5216-part-1",
+            "title": "Awareness on IS 5216 part 1",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-01-module-1-awareness-on-is-codes-awareness-on-is-5216-part-2",
+            "title": "Awareness on IS 5216 part 2",
             "content": "",
             "pyqs": []
           },
@@ -1664,8 +1826,14 @@
         "title": "Module 3: Indoor and outdoor substation",
         "topics": [
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-indoor-and-outdoor-substation",
-            "title": "Indoor and Outdoor substation",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-indoor-substation",
+            "title": "Indoor substation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-outdoor-substation",
+            "title": "Outdoor substation",
             "content": "",
             "pyqs": []
           },
@@ -1748,14 +1916,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-design-of-msb-ssb-including-motor-control-centre-mcc",
-            "title": "Design of MSB & SSB including Motor Control Centre (MCC)",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-design-of-msb",
+            "title": "Design of MSB",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-selection-of-bus-bars-cu-al",
-            "title": "Selection of bus bars (CU & Al)",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-design-of-ssb",
+            "title": "Design of SSB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-motor-control-centre-mcc",
+            "title": "Motor Control Centre (MCC)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-selection-of-bus-bars-cu",
+            "title": "Selection of bus bars (CU)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-03-module-3-indoor-and-outdoor-substation-selection-of-bus-bars-al",
+            "title": "Selection of bus bars (Al)",
             "content": "",
             "pyqs": []
           },
@@ -1832,20 +2018,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-selection-of-elevators-and-lifts",
-            "title": "Selection of elevators and lifts",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-selection-of-elevators",
+            "title": "Selection of elevators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-installation-of-elevators-and-lifts",
-            "title": "Installation of elevators and lifts",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-selection-of-lifts",
+            "title": "Selection of lifts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-earthing-and-soil-resistivity-calculation",
-            "title": "Earthing and Soil Resistivity calculation",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-installation-of-elevators",
+            "title": "Installation of elevators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-installation-of-lifts",
+            "title": "Installation of lifts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-earthing",
+            "title": "Earthing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-soil-resistivity-calculation",
+            "title": "Soil Resistivity calculation",
             "content": "",
             "pyqs": []
           },
@@ -1886,8 +2090,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-substation-earthing-and-design-theory-only",
-            "title": "Substation earthing and design (Theory only)",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-substation-earthing-theory-only",
+            "title": "Substation earthing (Theory only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-substation-design-theory-only",
+            "title": "Substation design (Theory only)",
             "content": "",
             "pyqs": []
           },
@@ -1904,20 +2114,38 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-design-and-installation-of-standalone-solar-pv-system",
-            "title": "Design and installation of standalone Solar PV system",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-design-of-standalone-solar-pv-system",
+            "title": "Design of standalone Solar PV system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-design-and-installation-of-grid-interactive-solar-pv-system",
-            "title": "Design and installation of grid interactive Solar PV system",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-installation-of-standalone-solar-pv-system",
+            "title": "Installation of standalone Solar PV system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-smart-meter-net-meter",
-            "title": "Smart meter/Net meter",
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-design-of-grid-interactive-solar-pv-system",
+            "title": "Design of grid interactive Solar PV system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-installation-of-grid-interactive-solar-pv-system",
+            "title": "Installation of grid interactive Solar PV system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-smart-meter",
+            "title": "Smart meter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceet602-electrical-system-design-and-estimation-04-module-4-standby-dg-systems-with-amf-panel-essential-protections-ups-system-and-net-meter",
+            "title": "Net meter",
             "content": "",
             "pyqs": []
           }
@@ -2909,8 +3137,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-peeet634-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-energy-management-and-smart-grid",
-            "title": "Energy management and Smart grid",
+            "id": "ee-6-peeet634-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-energy-management",
+            "title": "Energy management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-peeet634-internet-of-things-01-module-1-introduction-to-iot-technology-definitions-of-iot-smart-grid",
+            "title": "Smart grid",
             "content": "",
             "pyqs": []
           },
@@ -3404,8 +3638,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet611-introduction-to-control-systems-01-module-1-introduction-to-control-systems-necessity-and-significance",
-            "title": "Necessity and significance",
+            "id": "ee-6-oeeet611-introduction-to-control-systems-01-module-1-introduction-to-control-systems-necessity",
+            "title": "Necessity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet611-introduction-to-control-systems-01-module-1-introduction-to-control-systems-significance",
+            "title": "Significance",
             "content": "",
             "pyqs": []
           },
@@ -3494,14 +3734,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-impulse-response-of-first-and-second-order-systems",
-            "title": "Impulse response of first and second order systems",
+            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-impulse-response-of-first-order-systems",
+            "title": "Impulse response of first order systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-step-response-of-first-and-second-order-systems",
-            "title": "Step response of first and second order systems",
+            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-impulse-response-of-second-order-systems",
+            "title": "Impulse response of second order systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-step-response-of-first-order-systems",
+            "title": "Step response of first order systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-step-response-of-second-order-systems",
+            "title": "Step response of second order systems",
             "content": "",
             "pyqs": []
           },
@@ -3518,8 +3770,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-steady-state-error-analysis-and-static-error-constants",
-            "title": "Steady state error analysis and static error constants",
+            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-steady-state-error-analysis",
+            "title": "Steady state error analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet611-introduction-to-control-systems-02-module-2-performance-analysis-of-control-systems-static-error-constants",
+            "title": "Static error constants",
             "content": "",
             "pyqs": []
           },
@@ -3542,8 +3800,14 @@
         "title": "Module 3: Root locus analysis and controllers",
         "topics": [
           {
-            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-root-locus-analysis-and-controllers",
-            "title": "Root Locus Analysis and Controllers",
+            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-root-locus-analysis",
+            "title": "Root Locus Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-controllers",
+            "title": "Controllers",
             "content": "",
             "pyqs": []
           },
@@ -3566,8 +3830,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-effect-of-addition-of-poles-and-zeros",
-            "title": "Effect of addition of poles and zeros",
+            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-effect-of-addition-of-poles",
+            "title": "Effect of addition of poles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-effect-of-addition-of-zeros",
+            "title": "Effect of addition of zeros",
             "content": "",
             "pyqs": []
           },
@@ -3584,8 +3854,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-types-of-controllers-and-their-control-action",
-            "title": "Types of controllers and their control action",
+            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-types-of-controllers",
+            "title": "Types of controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet611-introduction-to-control-systems-03-module-3-root-locus-analysis-and-controllers-control-action",
+            "title": "Control action",
             "content": "",
             "pyqs": []
           },
@@ -4500,19 +4776,19 @@
         "topics": [
           {
             "id": "ee-6-pceel609-power-system-lab-01-module-1-y-y-bus-formulation",
-            "title": "Y-Bus formulation:",
+            "title": "Y-Bus formulation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-01-module-1-y-aim-i-to-formulate-the-bus-admittance-matrix-of-the-given-power-system-from-its-single-line-diagram-using-basic-matlab-programming",
-            "title": "Aim: (i) To formulate the bus admittance matrix of the given power system from its single line diagram, using basic MATLAB programming.",
+            "id": "ee-6-pceel609-power-system-lab-01-module-1-y-formulation-of-bus-admittance-matrix-of-the-given-power-system-from-its-single-line-diagram-using-basic-matlab-programming",
+            "title": "Formulation of bus admittance matrix of the given power system from its single line diagram using basic MATLAB programming",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-01-module-1-y-ii-to-incorporate-changes-in-basic-topology",
-            "title": "(ii) To incorporate changes in basic topology.",
+            "id": "ee-6-pceel609-power-system-lab-01-module-1-y-incorporating-changes-in-basic-topology",
+            "title": "Incorporating changes in basic topology",
             "content": "",
             "pyqs": []
           }
@@ -4523,14 +4799,32 @@
         "title": "Module 2: Transmission line modelling abcd constants",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants-transmission-line-modelling-abcd-constants",
-            "title": "Transmission Line Modelling: ABCD constants",
+            "id": "ee-6-pceel609-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants-transmission-line-modelling",
+            "title": "Transmission Line Modelling",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants-aim-i-to-model-the-given-medium-transmission-line-using-nominal-t-and-nominal-pi-representation-and-to-derive-the-abcd-constants-using-basic-matlab-programming",
-            "title": "Aim: (i) To model the given medium transmission line using nominal T and nominal pi representation and to derive the ABCD constants using basic MATLAB programming.",
+            "id": "ee-6-pceel609-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants-abcd-constants",
+            "title": "ABCD constants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants-modelling-the-given-medium-transmission-line-using-nominal-t-representation",
+            "title": "Modelling the given medium transmission line using nominal T representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants-modelling-the-given-medium-transmission-line-using-nominal-pi-representation",
+            "title": "Modelling the given medium transmission line using nominal pi representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-02-module-2-transmission-line-modelling-abcd-constants-deriving-the-abcd-constants-using-basic-matlab-programming",
+            "title": "Deriving the ABCD constants using basic MATLAB programming",
             "content": "",
             "pyqs": []
           }
@@ -4541,8 +4835,50 @@
         "title": "Module 3: Load flow analysis gauss",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-load-flow-analysis-gauss-siedel-method-newton-raphson-method-fast-decoupled-method-aim-i-to-conduct-load-flow-analysis-using-gauss-siedel-method-newton-raphson-method-fast-decoupled-method-and-to-study-the-effect-of-change-in-load-generation-schedule",
-            "title": "Load Flow Analysis - Gauss-Siedel Method, Newton - Raphson Method, Fast Decoupled Method - Aim: (i) To conduct load flow analysis using Gauss-Siedel method, Newton-Raphson method, Fast Decoupled method and to study the effect of change in load/generation schedule.",
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-load-flow-analysis",
+            "title": "Load Flow Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-gauss-siedel-method",
+            "title": "Gauss-Siedel Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-newton-raphson-method",
+            "title": "Newton-Raphson Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-fast-decoupled-method",
+            "title": "Fast Decoupled Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-conducting-load-flow-analysis-using-gauss-siedel-method",
+            "title": "Conducting load flow analysis using Gauss-Siedel method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-conducting-load-flow-analysis-using-newton-raphson-method",
+            "title": "Conducting load flow analysis using Newton-Raphson method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-conducting-load-flow-analysis-using-fast-decoupled-method",
+            "title": "Conducting load flow analysis using Fast Decoupled method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-03-module-3-load-flow-analysis-gauss-studying-the-effect-of-change-in-load-generation-schedule",
+            "title": "Studying the effect of change in load/generation schedule",
             "content": "",
             "pyqs": []
           }
@@ -4553,14 +4889,50 @@
         "title": "Module 4: Load flow analysis gauss",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-load-flow-analysis-gauss-siedel-method-newton-raphson-method-fast-decoupled-method",
-            "title": "Load Flow Analysis - Gauss-Siedel Method, Newton - Raphson Method, Fast Decoupled Method",
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-load-flow-analysis",
+            "title": "Load Flow Analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-aim-i-to-conduct-load-flow-analysis-using-gauss-siedel-method-newton-raphson-method-fast-decoupled-method-and-to-study-the-effect-of-change-in-real-power-reactive-power-limits",
-            "title": "Aim: (i) To conduct load flow analysis using Gauss-Siedel method, Newton-Raphson method, Fast Decoupled method and to study the effect of change in real power/reactive power limits.",
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-gauss-siedel-method",
+            "title": "Gauss-Siedel Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-newton-raphson-method",
+            "title": "Newton-Raphson Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-fast-decoupled-method",
+            "title": "Fast Decoupled Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-conducting-load-flow-analysis-using-gauss-siedel-method",
+            "title": "Conducting load flow analysis using Gauss-Siedel method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-conducting-load-flow-analysis-using-newton-raphson-method",
+            "title": "Conducting load flow analysis using Newton-Raphson method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-conducting-load-flow-analysis-using-fast-decoupled-method",
+            "title": "Conducting load flow analysis using Fast Decoupled method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-04-module-4-load-flow-analysis-gauss-studying-the-effect-of-change-in-real-power-reactive-power-limits",
+            "title": "Studying the effect of change in real power/reactive power limits",
             "content": "",
             "pyqs": []
           }
@@ -4571,14 +4943,26 @@
         "title": "Module 5: Short circuit analysis symmetrical faults and unsymmetrical faults",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-05-module-5-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults",
-            "title": "Short Circuit Analysis - Symmetrical Faults and Unsymmetrical Faults",
+            "id": "ee-6-pceel609-power-system-lab-05-module-5-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults-short-circuit-analysis",
+            "title": "Short Circuit Analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-05-module-5-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults-aim-i-to-conduct-short-circuit-analysis-for-symmetrical-and-unsymmetrical-faults",
-            "title": "Aim: (i) To conduct short circuit analysis for symmetrical and unsymmetrical faults.",
+            "id": "ee-6-pceel609-power-system-lab-05-module-5-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults-symmetrical-faults",
+            "title": "Symmetrical Faults",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-05-module-5-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults-unsymmetrical-faults",
+            "title": "Unsymmetrical Faults",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-05-module-5-short-circuit-analysis-symmetrical-faults-and-unsymmetrical-faults-conducting-short-circuit-analysis-for-symmetrical-and-unsymmetrical-faults",
+            "title": "Conducting short circuit analysis for symmetrical and unsymmetrical faults",
             "content": "",
             "pyqs": []
           }
@@ -4595,8 +4979,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-06-module-6-transient-stability-analysis-aim-to-conduct-transient-stability-analysis-of-a-given-system-and-plot-suitable-graphs-using-matlab-simulink-or-dedicated-software-if-available",
-            "title": "Aim: To conduct transient stability analysis of a given system and plot suitable graphs using MATLAB Simulink or dedicated software (if available)",
+            "id": "ee-6-pceel609-power-system-lab-06-module-6-transient-stability-analysis-conducting-transient-stability-analysis-of-a-given-system",
+            "title": "Conducting transient stability analysis of a given system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-06-module-6-transient-stability-analysis-plotting-suitable-graphs-using-matlab-simulink-or-dedicated-software",
+            "title": "Plotting suitable graphs using MATLAB Simulink or dedicated software",
             "content": "",
             "pyqs": []
           }
@@ -4607,14 +4997,26 @@
         "title": "Module 7: Automatic generation control single area two area",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-07-module-7-automatic-generation-control-single-area-two-area-automatic-generation-control-single-area-two-area",
-            "title": "Automatic Generation Control - Single Area, Two Area",
+            "id": "ee-6-pceel609-power-system-lab-07-module-7-automatic-generation-control-single-area-two-area-automatic-generation-control",
+            "title": "Automatic Generation Control",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-07-module-7-automatic-generation-control-single-area-two-area-aim-to-implement-automatic-generation-control-in-matlab-simulink",
-            "title": "Aim: To implement Automatic Generation Control in MATLAB Simulink.",
+            "id": "ee-6-pceel609-power-system-lab-07-module-7-automatic-generation-control-single-area-two-area-single-area",
+            "title": "Single Area",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-07-module-7-automatic-generation-control-single-area-two-area-two-area",
+            "title": "Two Area",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-07-module-7-automatic-generation-control-single-area-two-area-implementing-automatic-generation-control-in-matlab-simulink",
+            "title": "Implementing Automatic Generation Control in MATLAB Simulink",
             "content": "",
             "pyqs": []
           }
@@ -4631,8 +5033,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-08-module-8-automatic-voltage-regulator-aim-to-implement-automatic-voltage-regulator-in-matlab-simulink",
-            "title": "Aim: To implement Automatic Voltage Regulator in MATLAB Simulink.",
+            "id": "ee-6-pceel609-power-system-lab-08-module-8-automatic-voltage-regulator-implementing-automatic-voltage-regulator-in-matlab-simulink",
+            "title": "Implementing Automatic Voltage Regulator in MATLAB Simulink",
             "content": "",
             "pyqs": []
           }
@@ -4643,20 +5045,32 @@
         "title": "Module 9: Ferranti effect and reactive power compensation",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-ferranti-effect-and-reactive-power-compensation",
-            "title": "Ferranti Effect and Reactive Power Compensation",
+            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-ferranti-effect",
+            "title": "Ferranti Effect",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-aim-i-to-exhibit-ferranti-effect-in-a-lightly-loaded-long-transmission-line-in-matlab-simulink-and-to-show-the-effect-of-reactive-power-compensation",
-            "title": "Aim: (i) To exhibit Ferranti effect in a lightly loaded long transmission line in MATLAB Simulink and to show the effect of reactive power compensation.",
+            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-reactive-power-compensation",
+            "title": "Reactive Power Compensation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-ii-to-calculate-surge-impedance-loading-of-the-line",
-            "title": "(ii) To calculate Surge Impedance Loading of the line",
+            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-exhibiting-ferranti-effect-in-a-lightly-loaded-long-transmission-line-in-matlab-simulink",
+            "title": "Exhibiting Ferranti effect in a lightly loaded long transmission line in MATLAB Simulink",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-showing-the-effect-of-reactive-power-compensation",
+            "title": "Showing the effect of reactive power compensation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-09-module-9-ferranti-effect-and-reactive-power-compensation-calculating-surge-impedance-loading-of-the-line",
+            "title": "Calculating Surge Impedance Loading of the line",
             "content": "",
             "pyqs": []
           }
@@ -4667,14 +5081,20 @@
         "title": "Module 10: Plot the iv characteristics of a pv module and determine maximum power",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-10-module-10-plot-the-iv-characteristics-of-a-pv-module-and-determine-maximum-power-plot-the-iv-characteristics-of-a-pv-module-and-determine-maximum-power-point",
-            "title": "Plot the IV characteristics of a PV module and determine Maximum Power Point",
+            "id": "ee-6-pceel609-power-system-lab-10-module-10-plot-the-iv-characteristics-of-a-pv-module-and-determine-maximum-power-plotting-the-iv-characteristics-of-a-pv-module",
+            "title": "Plotting the IV characteristics of a PV module",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-10-module-10-plot-the-iv-characteristics-of-a-pv-module-and-determine-maximum-power-aim-to-plot-the-iv-characteristics-of-a-pv-module-in-matlab-simulink-and-determine-the-maximum-power-point",
-            "title": "Aim: To plot the IV characteristics of a PV module in MATLAB Simulink and determine the Maximum Power Point",
+            "id": "ee-6-pceel609-power-system-lab-10-module-10-plot-the-iv-characteristics-of-a-pv-module-and-determine-maximum-power-determining-the-maximum-power-point",
+            "title": "Determining the Maximum Power Point",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-10-module-10-plot-the-iv-characteristics-of-a-pv-module-and-determine-maximum-power-plotting-iv-characteristics-of-a-pv-module-in-matlab-simulink",
+            "title": "Plotting IV characteristics of a PV module in MATLAB Simulink",
             "content": "",
             "pyqs": []
           }
@@ -4685,8 +5105,20 @@
         "title": "Module 11: High voltage testing power frequency impulse",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-11-module-11-high-voltage-testing-power-frequency-impulse-high-voltage-testing-power-frequency-impulse",
-            "title": "High Voltage Testing - Power frequency /impulse",
+            "id": "ee-6-pceel609-power-system-lab-11-module-11-high-voltage-testing-power-frequency-impulse-high-voltage-testing",
+            "title": "High Voltage Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-11-module-11-high-voltage-testing-power-frequency-impulse-power-frequency",
+            "title": "Power frequency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-11-module-11-high-voltage-testing-power-frequency-impulse-impulse",
+            "title": "Impulse",
             "content": "",
             "pyqs": []
           }
@@ -4697,8 +5129,14 @@
         "title": "Module 12: High voltage testing",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-12-module-12-high-voltage-testing-high-voltage-testing-dc",
-            "title": "High Voltage Testing - DC",
+            "id": "ee-6-pceel609-power-system-lab-12-module-12-high-voltage-testing-high-voltage-testing",
+            "title": "High Voltage Testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-12-module-12-high-voltage-testing-dc",
+            "title": "DC",
             "content": "",
             "pyqs": []
           }
@@ -4709,14 +5147,44 @@
         "title": "Module 13: Relay testing over current relay earth fault electromechanical static",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-relay-testing-over-current-relay-earth-fault-electromechanical-static-numerical",
-            "title": "Relay Testing - Over current Relay / Earth Fault (Electromechanical / Static /Numerical)",
+            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-relay-testing",
+            "title": "Relay Testing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-aim-to-draw-the-characteristics-of-the-given-relay",
-            "title": "Aim: To draw the characteristics of the given relay.",
+            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-over-current-relay",
+            "title": "Over current Relay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-earth-fault",
+            "title": "Earth Fault",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-electromechanical",
+            "title": "Electromechanical",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-static",
+            "title": "Static",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-numerical",
+            "title": "Numerical",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-13-module-13-relay-testing-over-current-relay-earth-fault-electromechanical-static-drawing-the-characteristics-of-the-given-relay",
+            "title": "Drawing the characteristics of the given relay",
             "content": "",
             "pyqs": []
           }
@@ -4727,14 +5195,44 @@
         "title": "Module 14: Relay testing voltage relay impedance relay electromechanicalstaticnum",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-relay-testing-voltage-relay-impedance-relay-electromechanical-static-numerical",
-            "title": "Relay Testing -Voltage relay/ Impedance Relay (Electromechanical/Static/Numerical)",
+            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-relay-testing",
+            "title": "Relay Testing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-aim-to-draw-the-characteristics-of-the-given-relay",
-            "title": "Aim: To draw the characteristics of the given relay.",
+            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-voltage-relay",
+            "title": "Voltage relay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-impedance-relay",
+            "title": "Impedance Relay",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-electromechanical",
+            "title": "Electromechanical",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-static",
+            "title": "Static",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-numerical",
+            "title": "Numerical",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-14-module-14-relay-testing-voltage-relay-impedance-relay-electromechanicalstaticnum-drawing-the-characteristics-of-the-given-relay",
+            "title": "Drawing the characteristics of the given relay",
             "content": "",
             "pyqs": []
           }
@@ -4745,14 +5243,26 @@
         "title": "Module 15: Insulation testing lt ht cable",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-15-module-15-insulation-testing-lt-ht-cable-insulation-testing-lt-ht-cable",
-            "title": "Insulation Testing - LT & HT Cable",
+            "id": "ee-6-pceel609-power-system-lab-15-module-15-insulation-testing-lt-ht-cable-insulation-testing",
+            "title": "Insulation Testing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-15-module-15-insulation-testing-lt-ht-cable-aim-to-determine-the-insulation-resistance-of-the-given-lt-ht-cable",
-            "title": "Aim: To determine the insulation resistance of the given LT & HT cable.",
+            "id": "ee-6-pceel609-power-system-lab-15-module-15-insulation-testing-lt-ht-cable-lt-cable",
+            "title": "LT Cable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-15-module-15-insulation-testing-lt-ht-cable-ht-cable",
+            "title": "HT Cable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-15-module-15-insulation-testing-lt-ht-cable-determining-the-insulation-resistance-of-the-given-lt-ht-cable",
+            "title": "Determining the insulation resistance of the given LT & HT cable",
             "content": "",
             "pyqs": []
           }
@@ -4763,14 +5273,20 @@
         "title": "Module 16: Testing of ct and pt",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-16-module-16-testing-of-ct-and-pt-testing-of-ct-and-pt",
-            "title": "Testing of CT and PT",
+            "id": "ee-6-pceel609-power-system-lab-16-module-16-testing-of-ct-and-pt-testing-of-ct",
+            "title": "Testing of CT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-16-module-16-testing-of-ct-and-pt-aim-to-conduct-ratio-test-of-the-given-ct-and-pt",
-            "title": "Aim: To conduct ratio test of the given CT and PT.",
+            "id": "ee-6-pceel609-power-system-lab-16-module-16-testing-of-ct-and-pt-testing-of-pt",
+            "title": "Testing of PT",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-16-module-16-testing-of-ct-and-pt-conducting-ratio-test-of-the-given-ct-and-pt",
+            "title": "Conducting ratio test of the given CT and PT",
             "content": "",
             "pyqs": []
           }
@@ -4787,8 +5303,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-17-module-17-testing-of-transformer-oil-aim-to-determine-the-dielectric-strength-of-the-given-sample-of-transformer-oil",
-            "title": "Aim: To determine the dielectric strength of the given sample of transformer oil.",
+            "id": "ee-6-pceel609-power-system-lab-17-module-17-testing-of-transformer-oil-determining-the-dielectric-strength-of-the-given-sample-of-transformer-oil",
+            "title": "Determining the dielectric strength of the given sample of transformer oil",
             "content": "",
             "pyqs": []
           }
@@ -4799,14 +5315,20 @@
         "title": "Module 18: Testing of dielectric strength of solid insulating materials",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-18-module-18-testing-of-dielectric-strength-of-solid-insulating-materials-testing-of-dielectric-strength-of-solid-insulating-materials",
-            "title": "Testing of dielectric strength of solid insulating materials",
+            "id": "ee-6-pceel609-power-system-lab-18-module-18-testing-of-dielectric-strength-of-solid-insulating-materials-testing-of-dielectric-strength",
+            "title": "Testing of dielectric strength",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-18-module-18-testing-of-dielectric-strength-of-solid-insulating-materials-aim-to-determine-the-dielectric-strength-of-the-solid-insulating-material-given",
-            "title": "Aim: To determine the dielectric strength of the solid insulating material given.",
+            "id": "ee-6-pceel609-power-system-lab-18-module-18-testing-of-dielectric-strength-of-solid-insulating-materials-solid-insulating-materials",
+            "title": "Solid insulating materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-18-module-18-testing-of-dielectric-strength-of-solid-insulating-materials-determining-the-dielectric-strength-of-the-solid-insulating-material",
+            "title": "Determining the dielectric strength of the solid insulating material",
             "content": "",
             "pyqs": []
           }
@@ -4817,14 +5339,20 @@
         "title": "Module 19: Testing of dielectric strength of air",
         "topics": [
           {
-            "id": "ee-6-pceel609-power-system-lab-19-module-19-testing-of-dielectric-strength-of-air-testing-of-dielectric-strength-of-air",
-            "title": "Testing of dielectric strength of air",
+            "id": "ee-6-pceel609-power-system-lab-19-module-19-testing-of-dielectric-strength-of-air-testing-of-dielectric-strength",
+            "title": "Testing of dielectric strength",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-19-module-19-testing-of-dielectric-strength-of-air-aim-to-determine-the-dielectric-strength-of-air",
-            "title": "Aim: To determine the dielectric strength of air.",
+            "id": "ee-6-pceel609-power-system-lab-19-module-19-testing-of-dielectric-strength-of-air-air",
+            "title": "Air",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-19-module-19-testing-of-dielectric-strength-of-air-determining-the-dielectric-strength-of-air",
+            "title": "Determining the dielectric strength of air",
             "content": "",
             "pyqs": []
           }
@@ -4841,8 +5369,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-pceel609-power-system-lab-20-module-20-power-factor-improvement-aim-to-calculate-the-power-factor-of-the-given-rl-series-circuit-transmission-line-and-design-the-capacitance-required-to-improve-the-power-factor-to-the-desired-value",
-            "title": "Aim: To calculate the power factor of the given RL series circuit (transmission line) and design the capacitance required to improve the power factor to the desired value.",
+            "id": "ee-6-pceel609-power-system-lab-20-module-20-power-factor-improvement-calculating-the-power-factor-of-the-given-rl-series-circuit-transmission-line",
+            "title": "Calculating the power factor of the given RL series circuit (transmission line)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-pceel609-power-system-lab-20-module-20-power-factor-improvement-designing-the-capacitance-required-to-improve-the-power-factor-to-the-desired-value",
+            "title": "Designing the capacitance required to improve the power factor to the desired value",
             "content": "",
             "pyqs": []
           }
@@ -4874,8 +5408,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet613-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-fundamentals-and-social-implications-of-renewable-energy",
-            "title": "Fundamentals and social implications of renewable energy",
+            "id": "ee-6-oeeet613-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-fundamentals-of-renewable-energy",
+            "title": "Fundamentals of renewable energy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet613-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-social-implications-of-renewable-energy",
+            "title": "Social implications of renewable energy",
             "content": "",
             "pyqs": []
           },
@@ -4940,8 +5480,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet613-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-horizontal-axis-wecs-single-double-and-multi-blade-systems",
-            "title": "Horizontal axis WECS - single, double and multi-blade systems",
+            "id": "ee-6-oeeet613-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-horizontal-axis-wecs-single-blade-systems",
+            "title": "Horizontal axis WECS - single blade systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet613-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-horizontal-axis-wecs-double-blade-systems",
+            "title": "Horizontal axis WECS - double blade systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet613-renewable-energy-systems-01-module-1-introduction-principles-of-renewable-energy-energy-and-sustainable-deve-horizontal-axis-wecs-multi-blade-systems",
+            "title": "Horizontal axis WECS - multi-blade systems",
             "content": "",
             "pyqs": []
           },
@@ -5132,8 +5684,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-6-oeeet613-renewable-energy-systems-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-tides-and-waves-as-energy-suppliers-and-their-mechanics",
-            "title": "Tides and waves as energy suppliers and their mechanics",
+            "id": "ee-6-oeeet613-renewable-energy-systems-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-tides-as-energy-suppliers-and-their-mechanics",
+            "title": "Tides as energy suppliers and their mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-6-oeeet613-renewable-energy-systems-03-module-3-biomass-energy-introduction-principle-of-biomass-energy-generation-waves-as-energy-suppliers-and-their-mechanics",
+            "title": "Waves as energy suppliers and their mechanics",
             "content": "",
             "pyqs": []
           },

@@ -104,14 +104,62 @@
         "title": "Module 1: Network Flow Frameworks",
         "topics": [
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-max-flow-min-cut-theorem-parameters-optimization-formulations-rules",
-            "title": "Max-Flow Min-Cut theorem parameters optimization formulations rules",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-max-flow-min-cut-theorem",
+            "title": "Max-Flow Min-Cut theorem",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-ford-fulkerson-computational-paths-algorithms-edmonds-karp-optimizations-validation-tracking-parameters",
-            "title": "Ford-Fulkerson computational paths algorithms, Edmonds-Karp optimizations validation tracking parameters",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-parameters",
+            "title": "Parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-optimization-formulations",
+            "title": "Optimization formulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-rules",
+            "title": "Rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-ford-fulkerson",
+            "title": "Ford-Fulkerson",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-computational-paths-algorithms",
+            "title": "Computational paths algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-edmonds-karp",
+            "title": "Edmonds-Karp",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-optimizations",
+            "title": "Optimizations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-validation",
+            "title": "Validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-01-module-1-network-flow-frameworks-tracking-parameters",
+            "title": "Tracking parameters",
             "content": "",
             "pyqs": []
           }
@@ -122,14 +170,68 @@
         "title": "Module 2: Matchings & Connectivity Layouts",
         "topics": [
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-bipartite-matching-configurations-computational-processes-validation",
-            "title": "Bipartite matching configurations computational processes validation",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-bipartite-matching",
+            "title": "Bipartite matching",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-vertex-connectivity-parameters-calculations-structures-layouts-metrics-profiles",
-            "title": "Vertex connectivity parameters calculations structures layouts metrics profiles",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-configurations",
+            "title": "Configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-computational-processes",
+            "title": "Computational processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-validation",
+            "title": "Validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-vertex-connectivity",
+            "title": "Vertex connectivity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-parameters",
+            "title": "Parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-calculations",
+            "title": "Calculations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-structures",
+            "title": "Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-layouts",
+            "title": "Layouts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-metrics",
+            "title": "Metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-02-module-2-matchings-connectivity-layouts-profiles",
+            "title": "Profiles",
             "content": "",
             "pyqs": []
           }
@@ -140,20 +242,128 @@
         "title": "Module 3: Graph Colorings & Planarity",
         "topics": [
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-vertex-edge-coloring-algorithms-computational-ratio-metrics-specifications-definitions",
-            "title": "Vertex edge coloring algorithms computational ratio metrics specifications definitions",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-vertex-coloring",
+            "title": "Vertex coloring",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-planar-graphs-structural-characteristics-euler-s-theorem-calculation-validation-loops",
-            "title": "Planar graphs structural characteristics Euler's theorem calculation validation loops",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-edge-coloring",
+            "title": "Edge coloring",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-kuratowski-s-graph-reduction-validation-metrics-parameters-profiles-tracking-setups",
-            "title": "Kuratowski's graph reduction validation metrics parameters profiles tracking setups",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-algorithms",
+            "title": "Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-computational-ratio",
+            "title": "Computational ratio",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-metrics",
+            "title": "Metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-specifications",
+            "title": "Specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-definitions",
+            "title": "Definitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-planar-graphs",
+            "title": "Planar graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-structural-characteristics",
+            "title": "Structural characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-euler-s-theorem",
+            "title": "Euler's theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-calculation",
+            "title": "Calculation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-validation",
+            "title": "Validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-loops",
+            "title": "Loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-kuratowski-s-graph",
+            "title": "Kuratowski's graph",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-reduction",
+            "title": "Reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-validation",
+            "title": "Validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-metrics",
+            "title": "Metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-parameters",
+            "title": "Parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-profiles",
+            "title": "Profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-tracking",
+            "title": "Tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-03-module-3-graph-colorings-planarity-setups",
+            "title": "Setups",
             "content": "",
             "pyqs": []
           }
@@ -164,20 +374,116 @@
         "title": "Module 4: Random Walks on Graphs Systems",
         "topics": [
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-random-traversal-path-distributions-matrices-transformations-configurations-setups-formulas",
-            "title": "Random traversal path distributions matrices transformations configurations setups formulas",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-random-traversal",
+            "title": "Random traversal",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-markov-chains-graph-intersections-analytics-processing-algorithms-templates-patterns",
-            "title": "Markov chains graph intersections analytics processing algorithms templates patterns",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-path-distributions",
+            "title": "Path distributions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-spectral-graph-analysis-eigenvalues-parameters-structural-setups-optimizations-checking",
-            "title": "Spectral graph analysis eigenvalues parameters structural setups optimizations checking",
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-matrices",
+            "title": "Matrices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-transformations",
+            "title": "Transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-configurations",
+            "title": "Configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-setups",
+            "title": "Setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-formulas",
+            "title": "Formulas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-markov-chains",
+            "title": "Markov chains",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-graph-intersections",
+            "title": "Graph intersections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-analytics",
+            "title": "Analytics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-processing-algorithms",
+            "title": "Processing algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-templates",
+            "title": "Templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-patterns",
+            "title": "Patterns",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-spectral-graph-analysis",
+            "title": "Spectral graph analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-eigenvalues",
+            "title": "Eigenvalues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-parameters",
+            "title": "Parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-structural-setups",
+            "title": "Structural setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-optimizations",
+            "title": "Optimizations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst595-advanced-graph-algorithms-04-module-4-random-walks-on-graphs-systems-checking",
+            "title": "Checking",
             "content": "",
             "pyqs": []
           }
@@ -197,20 +503,44 @@
         "title": "Module 1: Knowledge Representations Frameworks",
         "topics": [
           {
-            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-propositional-predicate-calculus-logic-evaluation-workflows",
-            "title": "Propositional predicate calculus logic evaluation workflows",
+            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-propositional-logic",
+            "title": "Propositional logic",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-semantic-networks-formats-configurations-scripts-parsing-rules-structures",
-            "title": "Semantic networks formats configurations scripts parsing rules structures",
+            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-predicate-calculus",
+            "title": "Predicate calculus",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-first-order-logic-formulation-paradigms-resolution-inference-tracking-frameworks",
-            "title": "First-order logic formulation paradigms, resolution inference tracking frameworks",
+            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-semantic-networks",
+            "title": "Semantic networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-frames",
+            "title": "Frames",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-first-order-logic",
+            "title": "First-order logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-resolution",
+            "title": "Resolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-01-module-1-knowledge-representations-frameworks-inference",
+            "title": "Inference",
             "content": "",
             "pyqs": []
           }
@@ -221,14 +551,44 @@
         "title": "Module 2: Probabilistic Reasoning & Planning Systems",
         "topics": [
           {
-            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-bayesian-inference-networks-probability-computation-propagation-routes",
-            "title": "Bayesian inference networks probability computation propagation routes",
+            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-bayesian-networks",
+            "title": "Bayesian networks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-strips-representation-schema-models-block-world-tracking-automated-planning-structures",
-            "title": "STRIPS representation schema models, block world tracking automated planning structures",
+            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-inference-in-bayesian-networks",
+            "title": "Inference in Bayesian networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-probability-computation",
+            "title": "Probability computation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-propagation-in-bayesian-networks",
+            "title": "Propagation in Bayesian networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-strips-representation",
+            "title": "STRIPS representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-block-world",
+            "title": "Block world",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-02-module-2-probabilistic-reasoning-planning-systems-automated-planning",
+            "title": "Automated planning",
             "content": "",
             "pyqs": []
           }
@@ -239,20 +599,68 @@
         "title": "Module 3: Expert Systems & Ontological Engineering",
         "topics": [
           {
-            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-rule-based-expert-shell-architecture-logic-verification-parsing-schemas",
-            "title": "Rule-based expert shell architecture logic verification parsing schemas",
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-rule-based-expert-systems",
+            "title": "Rule-based expert systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-ontology-syntax-engineering-components-semantic-web-descriptions-templates-setups-patterns",
-            "title": "Ontology syntax engineering components Semantic Web descriptions templates setups patterns",
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-expert-system-architecture",
+            "title": "Expert system architecture",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-inference-engine-configuration-tracking-parameters-optimization-routines-setup-rules",
-            "title": "Inference engine configuration tracking parameters optimization routines setup rules",
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-logic-verification",
+            "title": "Logic verification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-parsing-schemas",
+            "title": "Parsing schemas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-ontology",
+            "title": "Ontology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-ontological-engineering-components",
+            "title": "Ontological engineering components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-semantic-web",
+            "title": "Semantic Web",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-semantic-web-descriptions",
+            "title": "Semantic Web descriptions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-inference-engine",
+            "title": "Inference engine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-inference-engine-configuration",
+            "title": "Inference engine configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-03-module-3-expert-systems-ontological-engineering-optimization-routines",
+            "title": "Optimization routines",
             "content": "",
             "pyqs": []
           }
@@ -263,20 +671,86 @@
         "title": "Module 4: Natural Language Contexts & Game Play",
         "topics": [
           {
-            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-syntactic-language-context-checking-parsers-algorithms-workflows-benchmarks",
-            "title": "Syntactic language context checking parsers algorithms workflows benchmarks",
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-syntactic-language-processing",
+            "title": "Syntactic language processing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-minimax-game-play-alpha-beta-pruning-heuristics-tuning-parameters-constraints-options",
-            "title": "Minimax game play alpha beta pruning heuristics tuning parameters constraints options",
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-context-checking",
+            "title": "Context checking",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-ai-deployment-constraints-parameters-protocols-documentation-profiles-metrics-checking",
-            "title": "AI deployment constraints parameters protocols documentation profiles metrics checking",
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-parsers",
+            "title": "Parsers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-parsing-algorithms",
+            "title": "Parsing algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-minimax-game-play",
+            "title": "Minimax game play",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-alpha-beta-pruning",
+            "title": "Alpha-beta pruning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-heuristics-tuning",
+            "title": "Heuristics tuning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-game-play-parameters",
+            "title": "Game play parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-game-play-constraints",
+            "title": "Game play constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-ai-deployment",
+            "title": "AI deployment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-ai-deployment-constraints",
+            "title": "AI deployment constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-ai-deployment-protocols",
+            "title": "AI deployment protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-ai-documentation",
+            "title": "AI documentation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst522-artificial-intelligence-04-module-4-natural-language-contexts-game-play-ai-metrics-checking",
+            "title": "AI metrics checking",
             "content": "",
             "pyqs": []
           }
@@ -296,20 +770,38 @@
         "title": "Module 1: Raster Scan Graphics & Clipping Algorithms",
         "topics": [
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-line-drawing-routines-execution-structures-bresenham-s-dda-mathematical-rules",
-            "title": "Line drawing routines execution structures: Bresenham's, DDA mathematical rules",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-bresenham-s-line-drawing",
+            "title": "Bresenham's line drawing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-2d-transformations-matrices-parameters-tracking-translation-scaling-rotation-configurations",
-            "title": "2D transformations matrices parameters tracking: Translation, scaling, rotation configurations",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-dda-line-drawing",
+            "title": "DDA line drawing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-clipping-mechanics-configurations-cohen-sutherland-line-clipping-parsing-logic-algorithms",
-            "title": "Clipping mechanics configurations: Cohen-Sutherland line clipping parsing logic algorithms",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-translation",
+            "title": "Translation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-scaling",
+            "title": "Scaling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-rotation",
+            "title": "Rotation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-01-module-1-raster-scan-graphics-clipping-algorithms-cohen-sutherland-line-clipping",
+            "title": "Cohen-Sutherland line clipping",
             "content": "",
             "pyqs": []
           }
@@ -320,14 +812,32 @@
         "title": "Module 2: 3D Visualizations & Multimedia Formats",
         "topics": [
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-02-module-2-3d-visualizations-multimedia-formats-3d-viewport-transformations-layout-configurations-formulas-projections",
-            "title": "3D viewport transformations layout configurations formulas projections",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-02-module-2-3d-visualizations-multimedia-formats-3d-transformations",
+            "title": "3D transformations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-02-module-2-3d-visualizations-multimedia-formats-multimedia-systems-standards-audio-compression-parameters-layout-profiles-video-sync-formats-structures",
-            "title": "Multimedia systems standards: Audio compression parameters layout profiles, video sync formats structures",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-02-module-2-3d-visualizations-multimedia-formats-3d-viewing-pipeline",
+            "title": "3D viewing pipeline",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-02-module-2-3d-visualizations-multimedia-formats-3d-projections",
+            "title": "3D projections",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-02-module-2-3d-visualizations-multimedia-formats-audio-compression",
+            "title": "Audio compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-02-module-2-3d-visualizations-multimedia-formats-video-synchronization",
+            "title": "Video synchronization",
             "content": "",
             "pyqs": []
           }
@@ -338,20 +848,20 @@
         "title": "Module 3: Illumination and Shading Techniques",
         "topics": [
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-03-module-3-illumination-and-shading-techniques-light-reflection-models-equations-phong-illumination-shading-configuration-rules",
-            "title": "Light reflection models equations: Phong illumination shading configuration rules",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-03-module-3-illumination-and-shading-techniques-phong-illumination-model",
+            "title": "Phong illumination model",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-03-module-3-illumination-and-shading-techniques-surface-rendering-adjustments-routines-gouraud-shading-maps-layouts-templates",
-            "title": "Surface rendering adjustments routines: Gouraud shading maps layouts templates",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-03-module-3-illumination-and-shading-techniques-gouraud-shading",
+            "title": "Gouraud shading",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-03-module-3-illumination-and-shading-techniques-ray-tracing-basics-geometry-calculations-structures-layouts-metrics-profiles-configurations",
-            "title": "Ray tracing basics geometry calculations structures layouts metrics profiles configurations",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-03-module-3-illumination-and-shading-techniques-ray-tracing",
+            "title": "Ray tracing",
             "content": "",
             "pyqs": []
           }
@@ -362,20 +872,32 @@
         "title": "Module 4: Animation & Video Orchestration Systems",
         "topics": [
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-keyframe-animation-frameworks-interpolation-mechanics-configurations-benchmarks",
-            "title": "Keyframe animation frameworks interpolation mechanics configurations benchmarks",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-keyframe-animation",
+            "title": "Keyframe animation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-morphing-processes-layouts-structures-transformations-validation-algorithms-templates-patterns",
-            "title": "Morphing processes layouts structures transformations validation algorithms templates patterns",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-interpolation",
+            "title": "Interpolation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-multimedia-authoring-design-pipelines-execution-verification-tracks-systems-parameters",
-            "title": "Multimedia authoring design pipelines execution verification tracks systems parameters",
+            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-morphing",
+            "title": "Morphing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-transformations",
+            "title": "Transformations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst527-computer-graphics-multimedia-04-module-4-animation-video-orchestration-systems-multimedia-authoring",
+            "title": "Multimedia authoring",
             "content": "",
             "pyqs": []
           }
@@ -395,32 +917,98 @@
         "title": "Module 1: Foundations and Application Layer",
         "topics": [
           {
-            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-network-basics-overview-of-the-internet-protocol-layering-and-the-encapsulation-cycle",
-            "title": "Network Basics: Overview of the Internet, Protocol layering, and the encapsulation cycle",
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-overview-of-the-internet",
+            "title": "Overview of the Internet",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-application-layer-paradigms-client-server-applications-vs-peer-to-peer-structures",
-            "title": "Application-Layer Paradigms: Client-server applications vs Peer-to-Peer structures",
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-protocol-layering",
+            "title": "Protocol layering",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-core-protocols-world-wide-web-and-http-operation-mechanics-file-transfer-protocol-ftp",
-            "title": "Core Protocols: World Wide Web and HTTP operation mechanics, File Transfer Protocol (FTP)",
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-encapsulation-cycle",
+            "title": "Encapsulation cycle",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-network-services-electronic-mail-smtp-pop3-imap-engines-domain-name-system-dns-architecture",
-            "title": "Network Services: Electronic Mail (SMTP, POP3, IMAP engines), Domain Name System (DNS) architecture",
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-client-server-applications",
+            "title": "Client-server applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-peer-to-peer-architecture-p2p-networks-and-file-sharing-dynamics-case-study-bittorrent",
-            "title": "Peer-to-Peer Architecture: P2P Networks and file sharing dynamics; Case study: BitTorrent",
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-peer-to-peer-structures",
+            "title": "Peer-to-Peer structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-world-wide-web",
+            "title": "World Wide Web",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-http-operation-mechanics",
+            "title": "HTTP operation mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-file-transfer-protocol-ftp",
+            "title": "File Transfer Protocol (FTP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-electronic-mail",
+            "title": "Electronic Mail",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-smtp-engines",
+            "title": "SMTP engines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-pop3-engines",
+            "title": "POP3 engines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-imap-engines",
+            "title": "IMAP engines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-domain-name-system-dns-architecture",
+            "title": "Domain Name System (DNS) architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-p2p-networks",
+            "title": "P2P Networks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-file-sharing-dynamics",
+            "title": "File sharing dynamics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-01-module-1-foundations-and-application-layer-case-study-bittorrent",
+            "title": "Case study: BitTorrent",
             "content": "",
             "pyqs": []
           }
@@ -431,26 +1019,92 @@
         "title": "Module 2: Transport Layer and Socket Programming",
         "topics": [
           {
-            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-transport-services-end-to-end-transport-protocols-multiplexing-and-demultiplexing",
-            "title": "Transport Services: End-to-end transport protocols, Multiplexing, and Demultiplexing",
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-end-to-end-transport-protocols",
+            "title": "End-to-end transport protocols",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-connectionless-transport-udp-packet-structures-and-check-summing-fields",
-            "title": "Connectionless Transport: UDP packet structures and check-summing fields",
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-multiplexing",
+            "title": "Multiplexing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-connection-oriented-transport-tcp-segment-structure-reliable-data-transfer-mechanisms-flow-control-connection-management-and-congestion-control-loops",
-            "title": "Connection-Oriented Transport: TCP segment structure, reliable data transfer mechanisms, flow control, connection management, and congestion control loops",
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-demultiplexing",
+            "title": "Demultiplexing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-socket-architecture-network-socket-introductions-elementary-tcp-sockets-client-server-implementations-i-o-multiplexing-select-poll-elementary-udp-sockets",
-            "title": "Socket Architecture: Network Socket introductions, Elementary TCP Sockets, Client/Server implementations, I/O Multiplexing (select/poll), Elementary UDP Sockets",
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-udp-packet-structures",
+            "title": "UDP packet structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-check-summing-fields",
+            "title": "Check-summing fields",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-tcp-segment-structure",
+            "title": "TCP segment structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-reliable-data-transfer-mechanisms",
+            "title": "Reliable data transfer mechanisms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-flow-control",
+            "title": "Flow control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-connection-management",
+            "title": "Connection management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-congestion-control-loops",
+            "title": "Congestion control loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-network-socket-introductions",
+            "title": "Network Socket introductions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-elementary-tcp-sockets",
+            "title": "Elementary TCP Sockets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-client-server-implementations",
+            "title": "Client/Server implementations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-i-o-multiplexing-select-poll",
+            "title": "I/O Multiplexing (select/poll)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-02-module-2-transport-layer-and-socket-programming-elementary-udp-sockets",
+            "title": "Elementary UDP Sockets",
             "content": "",
             "pyqs": []
           }
@@ -461,32 +1115,122 @@
         "title": "Module 3: Network Layer and Routing Mechanics",
         "topics": [
           {
-            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-network-layer-foundations-switching-fabrics-host-to-host-connectivity-models-ipv4-ipv6-addressing-schemes",
-            "title": "Network Layer Foundations: Switching fabrics, Host-to-host connectivity models, IPv4 & IPv6 addressing schemes",
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-switching-fabrics",
+            "title": "Switching fabrics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-ip-allocation-subnetting-classless-inter-domain-routing-cidr-design-subnet-masking-and-address-resolution-protocols-arp-rarp",
-            "title": "IP Allocation & Subnetting: Classless Inter-Domain Routing (CIDR) design, Subnet masking, and Address Resolution Protocols (ARP, RARP)",
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-host-to-host-connectivity-models",
+            "title": "Host-to-host connectivity models",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-control-traffic-icmp-igmp-and-dynamic-host-configuration-protocol-dhcp-allocation-handshakes",
-            "title": "Control Traffic: ICMP, IGMP, and Dynamic Host Configuration Protocol (DHCP) allocation handshakes",
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-ipv4-addressing-schemes",
+            "title": "IPv4 addressing schemes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-routing-algorithms-unicast-multicast-routing-intra-domain-vs-inter-domain-topologies-next-generation-ip-qos-guarantees",
-            "title": "Routing Algorithms: Unicast/Multicast routing, Intra-domain vs Inter-domain topologies, Next-generation IP, QoS guarantees",
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-ipv6-addressing-schemes",
+            "title": "IPv6 addressing schemes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-hands-on-linux-kernel-implementation-of-routing-tables-routing-cache-terminal-ip-command-suite",
-            "title": "Hands-on: Linux Kernel Implementation of Routing Tables, Routing Cache, terminal 'ip' command suite",
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-classless-inter-domain-routing-cidr-design",
+            "title": "Classless Inter-Domain Routing (CIDR) design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-subnet-masking",
+            "title": "Subnet masking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-address-resolution-protocols-arp",
+            "title": "Address Resolution Protocols (ARP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-address-resolution-protocols-rarp",
+            "title": "Address Resolution Protocols (RARP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-icmp",
+            "title": "ICMP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-igmp",
+            "title": "IGMP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-dynamic-host-configuration-protocol-dhcp-allocation-handshakes",
+            "title": "Dynamic Host Configuration Protocol (DHCP) allocation handshakes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-unicast-routing",
+            "title": "Unicast routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-multicast-routing",
+            "title": "Multicast routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-intra-domain-topologies",
+            "title": "Intra-domain topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-inter-domain-topologies",
+            "title": "Inter-domain topologies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-next-generation-ip",
+            "title": "Next-generation IP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-qos-guarantees",
+            "title": "QoS guarantees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-linux-kernel-implementation-of-routing-tables",
+            "title": "Linux Kernel Implementation of Routing Tables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-routing-cache",
+            "title": "Routing Cache",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-03-module-3-network-layer-and-routing-mechanics-terminal-ip-command-suite",
+            "title": "Terminal 'ip' command suite",
             "content": "",
             "pyqs": []
           }
@@ -497,32 +1241,116 @@
         "title": "Module 4: Data-Link Layer and Physical Layer Essentials",
         "topics": [
           {
-            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-data-link-control-dlc-systems-link-layer-addressing-maps-and-error-detection-correction-mechanisms",
-            "title": "Data Link Control (DLC) systems, Link-layer addressing maps, and error detection/correction mechanisms",
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-data-link-control-dlc-systems",
+            "title": "Data Link Control (DLC) systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-mac-parameters-random-access-channels-ethernet-802-3-csma-cd-and-logical-link-control",
-            "title": "MAC parameters; Random access channels: Ethernet (802.3), CSMA/CD, and Logical Link Control",
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-link-layer-addressing-maps",
+            "title": "Link-layer addressing maps",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-interconnecting-hardware-hubs-bridges-layer-2-switches-and-network-connection-parameters",
-            "title": "Interconnecting Hardware: Hubs, Bridges, Layer-2 Switches, and network connection parameters",
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-error-detection-mechanisms",
+            "title": "Error detection mechanisms",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-wireless-networks-wireless-lan-structures-802-11-standards-csma-ca-channel-negotiation-and-mobile-ip-routing",
-            "title": "Wireless Networks: Wireless LAN structures (802.11 standards), CSMA/CA channel negotiation, and Mobile IP routing",
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-error-correction-mechanisms",
+            "title": "Error correction mechanisms",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-interfaces-datalink-provider-interface-packet-capture-via-sock-packet-pf-packet-physical-layer-bit-encoding",
-            "title": "Interfaces: Datalink Provider Interface, packet capture via SOCK_PACKET/PF_PACKET, Physical layer bit-encoding",
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-mac-parameters",
+            "title": "MAC parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-random-access-channels",
+            "title": "Random access channels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-ethernet-802-3",
+            "title": "Ethernet (802.3)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-csma-cd",
+            "title": "CSMA/CD",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-logical-link-control",
+            "title": "Logical Link Control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-hubs",
+            "title": "Hubs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-bridges",
+            "title": "Bridges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-layer-2-switches",
+            "title": "Layer-2 Switches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-network-connection-parameters",
+            "title": "Network connection parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-wireless-lan-structures-802-11-standards",
+            "title": "Wireless LAN structures (802.11 standards)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-csma-ca-channel-negotiation",
+            "title": "CSMA/CA channel negotiation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-mobile-ip-routing",
+            "title": "Mobile IP routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-datalink-provider-interface",
+            "title": "Datalink Provider Interface",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-packet-capture-via-sock-packet-pf-packet",
+            "title": "Packet capture via SOCK_PACKET/PF_PACKET",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst501-computer-networks-04-module-4-data-link-layer-and-physical-layer-essentials-physical-layer-bit-encoding",
+            "title": "Physical layer bit-encoding",
             "content": "",
             "pyqs": []
           }
@@ -542,14 +1370,26 @@
         "title": "Module 1: Exploratory Analytics Frameworks",
         "topics": [
           {
-            "id": "cs-5-pecst523-data-analytics-01-module-1-exploratory-analytics-frameworks-statistical-data-profiling-formulations-sampling-rules-configurations",
-            "title": "Statistical data profiling formulations, sampling rules configurations",
+            "id": "cs-5-pecst523-data-analytics-01-module-1-exploratory-analytics-frameworks-statistical-data-profiling-formulations",
+            "title": "Statistical data profiling formulations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst523-data-analytics-01-module-1-exploratory-analytics-frameworks-exploratory-data-analysis-eda-feature-correlation-analysis-matrix-profiles-setups",
-            "title": "Exploratory Data Analysis (EDA): Feature correlation analysis matrix profiles setups",
+            "id": "cs-5-pecst523-data-analytics-01-module-1-exploratory-analytics-frameworks-sampling-rules-configurations",
+            "title": "Sampling rules configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst523-data-analytics-01-module-1-exploratory-analytics-frameworks-exploratory-data-analysis-eda",
+            "title": "Exploratory Data Analysis (EDA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst523-data-analytics-01-module-1-exploratory-analytics-frameworks-feature-correlation-analysis-matrix-profiles-setups",
+            "title": "Feature correlation analysis matrix profiles setups",
             "content": "",
             "pyqs": []
           }
@@ -560,14 +1400,32 @@
         "title": "Module 2: Predictive Modeling pipelines",
         "topics": [
           {
-            "id": "cs-5-pecst523-data-analytics-02-module-2-predictive-modeling-pipelines-time-series-decomposition-metrics-moving-averages-arima-structural-configurations-forecasting-models",
-            "title": "Time series decomposition metrics: Moving averages, ARIMA structural configurations forecasting models",
+            "id": "cs-5-pecst523-data-analytics-02-module-2-predictive-modeling-pipelines-time-series-decomposition-metrics",
+            "title": "Time series decomposition metrics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst523-data-analytics-02-module-2-predictive-modeling-pipelines-big-data-compute-pipeline-structures-mapreduce-execution-tracking-layers-frameworks",
-            "title": "Big Data compute pipeline structures: MapReduce execution tracking layers frameworks",
+            "id": "cs-5-pecst523-data-analytics-02-module-2-predictive-modeling-pipelines-moving-averages",
+            "title": "Moving averages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst523-data-analytics-02-module-2-predictive-modeling-pipelines-arima-structural-configurations-forecasting-models",
+            "title": "ARIMA structural configurations forecasting models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst523-data-analytics-02-module-2-predictive-modeling-pipelines-big-data-compute-pipeline-structures",
+            "title": "Big Data compute pipeline structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst523-data-analytics-02-module-2-predictive-modeling-pipelines-mapreduce-execution-tracking-layers-frameworks",
+            "title": "MapReduce execution tracking layers frameworks",
             "content": "",
             "pyqs": []
           }
@@ -635,20 +1493,98 @@
         "title": "Module 1: Lossless Encoding Methods",
         "topics": [
           {
-            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-information-theory-basics-entropy-modeling-calculations-equations",
-            "title": "Information theory basics: Entropy modeling calculations equations",
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-information-theory-basics",
+            "title": "Information theory basics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-huffman-coding-optimization-algorithms-rice-coding-formats-templates",
-            "title": "Huffman coding optimization algorithms, Rice coding formats templates",
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-entropy-modeling",
+            "title": "Entropy modeling",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-dictionary-strategies-lz77-lz78-lzw-text-compression-parsing-streams-protocols",
-            "title": "Dictionary strategies: LZ77, LZ78, LZW text compression parsing streams protocols",
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-calculations",
+            "title": "Calculations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-equations",
+            "title": "Equations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-huffman-coding",
+            "title": "Huffman coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-optimization-algorithms",
+            "title": "Optimization algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-rice-coding",
+            "title": "Rice coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-formats",
+            "title": "Formats",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-templates",
+            "title": "Templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-dictionary-strategies",
+            "title": "Dictionary strategies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-lz77",
+            "title": "LZ77",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-lz78",
+            "title": "LZ78",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-lzw-text-compression",
+            "title": "LZW text compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-parsing",
+            "title": "Parsing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-streams",
+            "title": "Streams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-01-module-1-lossless-encoding-methods-protocols",
+            "title": "Protocols",
             "content": "",
             "pyqs": []
           }
@@ -659,14 +1595,50 @@
         "title": "Module 2: Lossy Data Compression Methods",
         "topics": [
           {
-            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-quantization-parameters-scalar-vs-vector-structures-frameworks",
-            "title": "Quantization parameters: Scalar vs vector structures frameworks",
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-quantization-parameters",
+            "title": "Quantization parameters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-transform-coding-configurations-discrete-cosine-transform-dct-engineering-rules-inside-jpeg-standard-layouts",
-            "title": "Transform coding configurations: Discrete Cosine Transform (DCT) engineering rules inside JPEG standard layouts",
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-scalar-vs-vector",
+            "title": "Scalar vs vector",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-structures",
+            "title": "Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-frameworks",
+            "title": "Frameworks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-transform-coding-configurations",
+            "title": "Transform coding configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-discrete-cosine-transform-dct",
+            "title": "Discrete Cosine Transform (DCT)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-engineering-rules",
+            "title": "Engineering rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-02-module-2-lossy-data-compression-methods-jpeg-standard-layouts",
+            "title": "JPEG standard layouts",
             "content": "",
             "pyqs": []
           }
@@ -677,20 +1649,104 @@
         "title": "Module 3: Audio Compression Frameworks",
         "topics": [
           {
-            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-acoustic-masking-constraints-frequency-analysis-processing-algorithms-profiles",
-            "title": "Acoustic masking constraints frequency analysis processing algorithms profiles",
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-acoustic-masking",
+            "title": "Acoustic masking",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-mpeg-audio-layers-specifications-formats-encoding-loops-pipelines-frameworks",
-            "title": "MPEG audio layers specifications formats encoding loops pipelines frameworks",
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-constraints",
+            "title": "Constraints",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-linear-predictive-coding-structural-metrics-voice-tracking-validations-code-configurations",
-            "title": "Linear predictive coding structural metrics voice tracking validations code configurations",
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-frequency-analysis",
+            "title": "Frequency analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-processing",
+            "title": "Processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-algorithms",
+            "title": "Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-profiles",
+            "title": "Profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-mpeg-audio-layers",
+            "title": "MPEG audio layers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-specifications",
+            "title": "Specifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-formats",
+            "title": "Formats",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-encoding-loops",
+            "title": "Encoding loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-pipelines",
+            "title": "Pipelines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-frameworks",
+            "title": "Frameworks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-linear-predictive-coding",
+            "title": "Linear predictive coding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-structural-metrics",
+            "title": "Structural metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-voice-tracking",
+            "title": "Voice tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-validations",
+            "title": "Validations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-03-module-3-audio-compression-frameworks-code-configurations",
+            "title": "Code configurations",
             "content": "",
             "pyqs": []
           }
@@ -701,20 +1757,98 @@
         "title": "Module 4: Video Compression Architectures",
         "topics": [
           {
-            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-motion-compensation-estimation-loops-optimization-tracking-configurations-layouts",
-            "title": "Motion compensation estimation loops optimization tracking configurations layouts",
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-motion-compensation",
+            "title": "Motion compensation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-h-264-standard-profiles-video-compression-syntax-layout-instructions-architectures",
-            "title": "H.264 standard profiles video compression syntax layout instructions architectures",
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-estimation-loops",
+            "title": "Estimation loops",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-streaming-packet-prioritization-formats-setups-validation-models-checking-systems-metrics",
-            "title": "Streaming packet prioritization formats setups validation models checking systems metrics",
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-optimization",
+            "title": "Optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-tracking-configurations",
+            "title": "Tracking configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-layouts",
+            "title": "Layouts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-h-264-standard-profiles",
+            "title": "H.264 standard profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-video-compression",
+            "title": "Video compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-syntax",
+            "title": "Syntax",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-layout-instructions",
+            "title": "Layout instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-architectures",
+            "title": "Architectures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-streaming-packet-prioritization",
+            "title": "Streaming packet prioritization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-formats",
+            "title": "Formats",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-setups",
+            "title": "Setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-validation-models",
+            "title": "Validation models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-checking-systems",
+            "title": "Checking systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst524-data-compression-04-module-4-video-compression-architectures-metrics",
+            "title": "Metrics",
             "content": "",
             "pyqs": []
           }
@@ -740,14 +1874,38 @@
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-data-cleaning-reduction-transformation-techniques-layouts",
-            "title": "Data cleaning, reduction, transformation techniques layouts",
+            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-data-cleaning",
+            "title": "Data cleaning",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-association-rule-discovery-apriori-algorithm-optimizations-fp-growth-computational-matrix-models",
-            "title": "Association rule discovery: Apriori algorithm optimizations, FP-Growth computational matrix models",
+            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-reduction",
+            "title": "reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-transformation-techniques-layouts",
+            "title": "transformation techniques layouts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-association-rule-discovery",
+            "title": "Association rule discovery",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-apriori-algorithm-optimizations",
+            "title": "Apriori algorithm optimizations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst525-data-mining-01-module-1-data-preprocessing-association-mining-fp-growth-computational-matrix-models",
+            "title": "FP-Growth computational matrix models",
             "content": "",
             "pyqs": []
           }
@@ -758,14 +1916,26 @@
         "title": "Module 2: Classification & Advanced Clustering Models",
         "topics": [
           {
-            "id": "cs-5-pecst525-data-mining-02-module-2-classification-advanced-clustering-models-decision-tree-induction-loops-optimization-bayesian-network-models-schemas",
-            "title": "Decision tree induction loops optimization, Bayesian network models schemas",
+            "id": "cs-5-pecst525-data-mining-02-module-2-classification-advanced-clustering-models-decision-tree-induction-loops-optimization",
+            "title": "Decision tree induction loops optimization",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst525-data-mining-02-module-2-classification-advanced-clustering-models-density-based-clustering-algorithms-structures-dbscan-outlier-classification-routing-evaluations",
-            "title": "Density-based clustering algorithms structures (DBSCAN), outlier classification routing evaluations",
+            "id": "cs-5-pecst525-data-mining-02-module-2-classification-advanced-clustering-models-bayesian-network-models-schemas",
+            "title": "Bayesian network models schemas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst525-data-mining-02-module-2-classification-advanced-clustering-models-density-based-clustering-algorithms-structures-dbscan",
+            "title": "Density-based clustering algorithms structures (DBSCAN)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst525-data-mining-02-module-2-classification-advanced-clustering-models-outlier-classification-routing-evaluations",
+            "title": "outlier classification routing evaluations",
             "content": "",
             "pyqs": []
           }
@@ -776,8 +1946,14 @@
         "title": "Module 3: Sequential Pattern & Graph Mining",
         "topics": [
           {
-            "id": "cs-5-pecst525-data-mining-03-module-3-sequential-pattern-graph-mining-sequence-pattern-mining-algorithms-gsp-algorithm-computational-matrix-profiles",
-            "title": "Sequence pattern mining algorithms: GSP algorithm computational matrix profiles",
+            "id": "cs-5-pecst525-data-mining-03-module-3-sequential-pattern-graph-mining-sequence-pattern-mining-algorithms",
+            "title": "Sequence pattern mining algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst525-data-mining-03-module-3-sequential-pattern-graph-mining-gsp-algorithm-computational-matrix-profiles",
+            "title": "GSP algorithm computational matrix profiles",
             "content": "",
             "pyqs": []
           },
@@ -833,26 +2009,146 @@
         "title": "Module 1: Algorithm Analysis and Balanced Search Trees",
         "topics": [
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-performance-analysis-space-complexity-and-time-complexity-diagnostics-best-worst-average-cases",
-            "title": "Performance Analysis: Space complexity, and Time complexity diagnostics (Best, Worst, Average Cases)",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-performance-analysis",
+            "title": "Performance Analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-mathematical-tools-asymptotic-notations-o-omega-theta-properties-tracking-time-space-bounds-for-iterative-loops",
-            "title": "Mathematical Tools: Asymptotic Notations ($O$, $\\Omega$, $\\Theta$) properties, tracking time/space bounds for iterative loops",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-space-complexity",
+            "title": "Space complexity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-recursive-analysis-divide-and-conquer-recurrences-iteration-recursion-tree-substitution-and-master-s-method",
-            "title": "Recursive Analysis: divide-and-conquer recurrences; Iteration, Recursion Tree, Substitution, and Master's Method",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-time-complexity-diagnostics",
+            "title": "Time complexity diagnostics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-advanced-data-structures-balanced-search-trees-avl-trees-insertion-and-deletion-tracking-single-double-rotations",
-            "title": "Advanced Data Structures: Balanced Search Trees—AVL Trees (insertion and deletion tracking, single/double rotations)",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-best-cases",
+            "title": "Best Cases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-worst-cases",
+            "title": "Worst Cases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-average-cases",
+            "title": "Average Cases",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-mathematical-tools",
+            "title": "Mathematical Tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-asymptotic-notations-o-properties",
+            "title": "Asymptotic Notations ($O$) properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-asymptotic-notations-omega-properties",
+            "title": "Asymptotic Notations ($\\Omega$) properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-asymptotic-notations-theta-properties",
+            "title": "Asymptotic Notations ($\\Theta$) properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-tracking-time-space-bounds-for-iterative-loops",
+            "title": "Tracking time/space bounds for iterative loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-recursive-analysis",
+            "title": "Recursive Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-divide-and-conquer-recurrences",
+            "title": "Divide-and-conquer recurrences",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-iteration-method",
+            "title": "Iteration method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-recursion-tree-method",
+            "title": "Recursion Tree method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-substitution-method",
+            "title": "Substitution method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-master-s-method",
+            "title": "Master's Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-advanced-data-structures",
+            "title": "Advanced Data Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-balanced-search-trees",
+            "title": "Balanced Search Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-avl-trees",
+            "title": "AVL Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-insertion-in-avl-trees",
+            "title": "Insertion in AVL Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-deletion-in-avl-trees",
+            "title": "Deletion in AVL Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-single-rotations-in-avl-trees",
+            "title": "Single rotations in AVL Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-double-rotations-in-avl-trees",
+            "title": "Double rotations in AVL Trees",
             "content": "",
             "pyqs": []
           }
@@ -863,20 +2159,116 @@
         "title": "Module 2: Disjoint Sets, Graph Traversals, and Divide-and-Conquer",
         "topics": [
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-disjoint-set-data-structures-operations-union-and-find-union-by-rank-with-path-compression-connected-components",
-            "title": "Disjoint Set Data Structures: operations, Union and Find, Union by Rank with Path Compression, connected components",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-disjoint-set-data-structures",
+            "title": "Disjoint Set Data Structures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-advanced-graph-algorithms-weight-representations-graph-traversals-bfs-and-dfs-complexity-analysis-strongly-connected-components-kosaraju-tarjan-and-topological-sorting",
-            "title": "Advanced Graph Algorithms: weight representations, Graph Traversals (BFS and DFS complexity analysis), Strongly Connected Components (Kosaraju/Tarjan), and Topological Sorting",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-operations",
+            "title": "Operations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-divide-and-conquer-strategy-control-abstraction-merge-sort-mechanics-strassen-s-matrix-multiplication-optimization",
-            "title": "Divide-and-Conquer Strategy: Control Abstraction, Merge Sort mechanics, Strassen's Matrix Multiplication optimization",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-union",
+            "title": "Union",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-find",
+            "title": "Find",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-union-by-rank",
+            "title": "Union by Rank",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-path-compression",
+            "title": "Path Compression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-connected-components",
+            "title": "Connected components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-advanced-graph-algorithms",
+            "title": "Advanced Graph Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-weight-representations",
+            "title": "Weight representations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-graph-traversals",
+            "title": "Graph Traversals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-bfs-complexity-analysis",
+            "title": "BFS complexity analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-dfs-complexity-analysis",
+            "title": "DFS complexity analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-strongly-connected-components-kosaraju-s-algorithm",
+            "title": "Strongly Connected Components (Kosaraju's Algorithm)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-strongly-connected-components-tarjan-s-algorithm",
+            "title": "Strongly Connected Components (Tarjan's Algorithm)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-topological-sorting",
+            "title": "Topological Sorting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-divide-and-conquer-strategy",
+            "title": "Divide-and-Conquer Strategy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-control-abstraction",
+            "title": "Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-merge-sort-mechanics",
+            "title": "Merge Sort mechanics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-02-module-2-disjoint-sets-graph-traversals-and-divide-and-conquer-strassen-s-matrix-multiplication-optimization",
+            "title": "Strassen's Matrix Multiplication optimization",
             "content": "",
             "pyqs": []
           }
@@ -887,32 +2279,116 @@
         "title": "Module 3: Greedy Strategy, Dynamic Programming, and Backtracking",
         "topics": [
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-greedy-strategy-control-abstraction-solving-the-fractional-knapsack-problem",
-            "title": "Greedy Strategy: Control Abstraction, solving the Fractional Knapsack Problem",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-greedy-strategy",
+            "title": "Greedy Strategy",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-spanning-trees-minimum-cost-spanning-tree-construction-kruskal-s-algorithm-and-prim-s-algorithm-optimization",
-            "title": "Spanning Trees: Minimum Cost Spanning Tree construction—Kruskal's Algorithm and Prim's Algorithm optimization",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-control-abstraction",
+            "title": "Control Abstraction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-path-optimization-dijkstra-s-single-source-shortest-path-algorithm-execution-and-state-arrays",
-            "title": "Path Optimization: Dijkstra's Single-Source Shortest Path Algorithm execution and state arrays",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-fractional-knapsack-problem",
+            "title": "Fractional Knapsack Problem",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-dynamic-programming-control-abstraction-optimality-principle-matrix-chain-multiplication-floyd-warshall-all-pairs-shortest-path",
-            "title": "Dynamic Programming: Control Abstraction, Optimality Principle, Matrix Chain Multiplication, Floyd-Warshall All-Pairs Shortest Path",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-spanning-trees",
+            "title": "Spanning Trees",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-backtracking-control-abstraction-constraint-satisfaction-mapping-and-solving-the-n-queens-problem",
-            "title": "Backtracking: Control Abstraction, Constraint Satisfaction mapping, and solving the $N$-Queens Problem",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-minimum-cost-spanning-tree-construction",
+            "title": "Minimum Cost Spanning Tree construction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-kruskal-s-algorithm",
+            "title": "Kruskal's Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-prim-s-algorithm",
+            "title": "Prim's Algorithm",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-path-optimization",
+            "title": "Path Optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-dijkstra-s-single-source-shortest-path-algorithm-execution",
+            "title": "Dijkstra's Single-Source Shortest Path Algorithm execution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-state-arrays",
+            "title": "State arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-dynamic-programming",
+            "title": "Dynamic Programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-control-abstraction",
+            "title": "Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-optimality-principle",
+            "title": "Optimality Principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-matrix-chain-multiplication",
+            "title": "Matrix Chain Multiplication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-floyd-warshall-all-pairs-shortest-path",
+            "title": "Floyd-Warshall All-Pairs Shortest Path",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-backtracking",
+            "title": "Backtracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-control-abstraction",
+            "title": "Control Abstraction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-constraint-satisfaction-mapping",
+            "title": "Constraint Satisfaction mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-n-queens-problem",
+            "title": "N-Queens Problem",
             "content": "",
             "pyqs": []
           }
@@ -923,26 +2399,134 @@
         "title": "Module 4: Branch and Bound, Complexity Classes, and Advanced Algorithms",
         "topics": [
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-branch-and-bound-control-abstraction-bounding-functions-travelling-salesman-problem-tsp-state-space-search",
-            "title": "Branch and Bound: Control Abstraction, Bounding functions, Travelling Salesman Problem (TSP) state space search",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-branch-and-bound",
+            "title": "Branch and Bound",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-complexity-theory-tractable-vs-intractable-problems-deterministic-vs-non-deterministic-computations",
-            "title": "Complexity Theory: Tractable vs Intractable Problems, deterministic vs non-deterministic computations",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-control-abstraction",
+            "title": "Control Abstraction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-complexity-classes-class-p-class-np-np-hard-and-np-complete-parameters-reductions-for-clique-and-vertex-cover-problems",
-            "title": "Complexity Classes: Class P, Class NP, NP-Hard, and NP-Complete parameters, reductions for Clique and Vertex Cover Problems",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-bounding-functions",
+            "title": "Bounding functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-approximation-algorithms-performance-bounds-for-bin-packing-randomized-algorithms-monte-carlo-vs-las-vegas-randomized-quick-sort",
-            "title": "Approximation Algorithms: Performance bounds for Bin Packing, Randomized Algorithms: Monte Carlo vs Las Vegas, Randomized Quick Sort",
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-travelling-salesman-problem-tsp-state-space-search",
+            "title": "Travelling Salesman Problem (TSP) state space search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-complexity-theory",
+            "title": "Complexity Theory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-tractable-problems",
+            "title": "Tractable Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-intractable-problems",
+            "title": "Intractable Problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-deterministic-computations",
+            "title": "Deterministic computations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-non-deterministic-computations",
+            "title": "Non-deterministic computations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-complexity-classes",
+            "title": "Complexity Classes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-class-p",
+            "title": "Class P",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-class-np",
+            "title": "Class NP",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-np-hard",
+            "title": "NP-Hard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-np-complete",
+            "title": "NP-Complete",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-reductions-for-clique-problem",
+            "title": "Reductions for Clique Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-reductions-for-vertex-cover-problem",
+            "title": "Reductions for Vertex Cover Problem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-approximation-algorithms",
+            "title": "Approximation Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-performance-bounds-for-bin-packing",
+            "title": "Performance bounds for Bin Packing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-randomized-algorithms",
+            "title": "Randomized Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-monte-carlo-algorithms",
+            "title": "Monte Carlo Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-las-vegas-algorithms",
+            "title": "Las Vegas Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst502-design-and-analysis-of-algorithms-04-module-4-branch-and-bound-complexity-classes-and-advanced-algorithms-randomized-quick-sort",
+            "title": "Randomized Quick Sort",
             "content": "",
             "pyqs": []
           }
@@ -962,14 +2546,32 @@
         "title": "Module 1: Discrete Fourier Transforms & Optimization",
         "topics": [
           {
-            "id": "cs-5-pecst526-digital-signal-processing-01-module-1-discrete-fourier-transforms-optimization-discrete-fourier-transform-dft-mathematical-operations-properties-evaluation",
-            "title": "Discrete Fourier Transform (DFT) mathematical operations, properties evaluation",
+            "id": "cs-5-pecst526-digital-signal-processing-01-module-1-discrete-fourier-transforms-optimization-discrete-fourier-transform-dft-mathematical-operations",
+            "title": "Discrete Fourier Transform (DFT) mathematical operations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst526-digital-signal-processing-01-module-1-discrete-fourier-transforms-optimization-fast-fourier-transform-fft-algorithms-optimization-radix-2-decimation-in-time-dit-decimation-in-frequency-dif-computing-flows",
-            "title": "Fast Fourier Transform (FFT) algorithms optimization: Radix-2 decimation-in-time (DIT), decimation-in-frequency (DIF) computing flows",
+            "id": "cs-5-pecst526-digital-signal-processing-01-module-1-discrete-fourier-transforms-optimization-dft-properties-evaluation",
+            "title": "DFT properties evaluation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-01-module-1-discrete-fourier-transforms-optimization-fast-fourier-transform-fft-algorithms-optimization",
+            "title": "Fast Fourier Transform (FFT) algorithms optimization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-01-module-1-discrete-fourier-transforms-optimization-radix-2-decimation-in-time-dit-computing-flows",
+            "title": "Radix-2 decimation-in-time (DIT) computing flows",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-01-module-1-discrete-fourier-transforms-optimization-radix-2-decimation-in-frequency-dif-computing-flows",
+            "title": "Radix-2 decimation-in-frequency (DIF) computing flows",
             "content": "",
             "pyqs": []
           }
@@ -980,14 +2582,32 @@
         "title": "Module 2: Digital Filter Configurations",
         "topics": [
           {
-            "id": "cs-5-pecst526-digital-signal-processing-02-module-2-digital-filter-configurations-infinite-impulse-response-iir-filter-architecture-layouts-butterworth-chebyshev-adaptations-techniques",
-            "title": "Infinite Impulse Response (IIR) filter architecture layouts: Butterworth, Chebyshev adaptations techniques",
+            "id": "cs-5-pecst526-digital-signal-processing-02-module-2-digital-filter-configurations-infinite-impulse-response-iir-filter-architecture-layouts",
+            "title": "Infinite Impulse Response (IIR) filter architecture layouts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst526-digital-signal-processing-02-module-2-digital-filter-configurations-finite-impulse-response-fir-structural-designs-windowing-methods-constraints-setups",
-            "title": "Finite Impulse Response (FIR) structural designs: Windowing methods constraints setups",
+            "id": "cs-5-pecst526-digital-signal-processing-02-module-2-digital-filter-configurations-butterworth-adaptations-techniques",
+            "title": "Butterworth adaptations techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-02-module-2-digital-filter-configurations-chebyshev-adaptations-techniques",
+            "title": "Chebyshev adaptations techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-02-module-2-digital-filter-configurations-finite-impulse-response-fir-structural-designs",
+            "title": "Finite Impulse Response (FIR) structural designs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-02-module-2-digital-filter-configurations-windowing-methods-constraints-setups",
+            "title": "Windowing methods constraints setups",
             "content": "",
             "pyqs": []
           }
@@ -998,14 +2618,44 @@
         "title": "Module 3: Realization of Digital Filters Systems",
         "topics": [
           {
-            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-structures-for-iir-realizations-structures-configurations-direct-form-i-and-ii-cascade-layouts",
-            "title": "Structures for IIR realizations structures configurations: Direct form I and II, cascade layouts",
+            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-structures-for-iir-realizations-structures-configurations",
+            "title": "Structures for IIR realizations structures configurations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-structures-for-fir-system-blocks-design-layouts-direct-form-linear-phase-frameworks",
-            "title": "Structures for FIR system blocks design layouts: Direct form, linear phase frameworks",
+            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-direct-form-i",
+            "title": "Direct form I",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-direct-form-ii",
+            "title": "Direct form II",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-cascade-layouts",
+            "title": "Cascade layouts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-structures-for-fir-system-blocks-design-layouts",
+            "title": "Structures for FIR system blocks design layouts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-direct-form",
+            "title": "Direct form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst526-digital-signal-processing-03-module-3-realization-of-digital-filters-systems-linear-phase-frameworks",
+            "title": "Linear phase frameworks",
             "content": "",
             "pyqs": []
           },
@@ -1055,26 +2705,116 @@
         "title": "Module 1: Foundations of Machine Learning and Regression Analysis",
         "topics": [
           {
-            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-core-paradigms-rule-based-vs-data-driven-supervised-unsupervised-semi-supervised-and-reinforcement-learning",
-            "title": "Core Paradigms: Rule-Based vs Data-Driven; Supervised, Unsupervised, Semi-Supervised, and Reinforcement Learning",
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-core-paradigms",
+            "title": "Core Paradigms",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-statistical-estimators-parameter-estimation-via-maximum-likelihood-estimation-mle-and-maximum-a-posteriori-map",
-            "title": "Statistical Estimators: Parameter estimation via Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP)",
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-rule-based-vs-data-driven",
+            "title": "Rule-Based vs Data-Driven",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-linear-regression-mse-objective-function-ordinary-least-squares-ols-calculus-derivation-multiple-linear-regression",
-            "title": "Linear Regression: MSE objective function, Ordinary Least Squares (OLS) calculus derivation, Multiple Linear Regression",
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-supervised-learning",
+            "title": "Supervised Learning",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-evaluation-splitting-training-vs-testing-partitions-validation-splits-handling-data-frames-via-pandas-standard-datasets",
-            "title": "Evaluation & Splitting: Training vs Testing partitions, validation splits, handling data frames via Pandas, standard datasets",
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-unsupervised-learning",
+            "title": "Unsupervised Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-semi-supervised-learning",
+            "title": "Semi-Supervised Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-reinforcement-learning",
+            "title": "Reinforcement Learning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-statistical-estimators",
+            "title": "Statistical Estimators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-parameter-estimation",
+            "title": "Parameter estimation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-maximum-likelihood-estimation-mle",
+            "title": "Maximum Likelihood Estimation (MLE)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-maximum-a-posteriori-map",
+            "title": "Maximum A Posteriori (MAP)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-linear-regression",
+            "title": "Linear Regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-mse-objective-function",
+            "title": "MSE objective function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-ordinary-least-squares-ols-calculus-derivation",
+            "title": "Ordinary Least Squares (OLS) calculus derivation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-multiple-linear-regression",
+            "title": "Multiple Linear Regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-evaluation-splitting",
+            "title": "Evaluation & Splitting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-training-vs-testing-partitions",
+            "title": "Training vs Testing partitions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-validation-splits",
+            "title": "Validation splits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-handling-data-frames-via-pandas",
+            "title": "Handling data frames via Pandas",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-01-module-1-foundations-of-machine-learning-and-regression-analysis-standard-datasets",
+            "title": "Standard datasets",
             "content": "",
             "pyqs": []
           }
@@ -1085,26 +2825,98 @@
         "title": "Module 2: Probabilistic Classification and Logistic Modeling",
         "topics": [
           {
-            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-probabilistic-classifiers-bayes-theorem-conditional-feature-independence-assumption-constraints",
-            "title": "Probabilistic Classifiers: Bayes' Theorem, conditional feature independence assumption constraints",
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-probabilistic-classifiers",
+            "title": "Probabilistic Classifiers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-naive-bayes-classifiers-algorithmic-structures-text-tokenization-extraction-using-bag-of-words-count-vectorizations",
-            "title": "Naive Bayes Classifiers: Algorithmic structures, text tokenization, extraction using Bag-of-Words/Count vectorizations",
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-bayes-theorem",
+            "title": "Bayes' Theorem",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-laplace-smoothing-1-correction-in-sparse-arrays-gaussian-vs-multinomial-vs-bernoulli-naive-bayes-variants",
-            "title": "Laplace Smoothing (+1 correction) in sparse arrays, Gaussian vs Multinomial vs Bernoulli Naive Bayes variants",
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-conditional-feature-independence-assumption-constraints",
+            "title": "Conditional feature independence assumption constraints",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-logistic-regression-boundary-classifications-failures-sigmoid-activation-function-mapping-log-odds-ratios-derivation-mle",
-            "title": "Logistic Regression: boundary classifications failures; Sigmoid activation function mapping, log-odds ratios derivation, MLE",
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-naive-bayes-classifiers",
+            "title": "Naive Bayes Classifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-algorithmic-structures",
+            "title": "Algorithmic structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-text-tokenization",
+            "title": "Text tokenization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-extraction-using-bag-of-words-count-vectorizations",
+            "title": "Extraction using Bag-of-Words/Count vectorizations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-laplace-smoothing-1-correction-in-sparse-arrays",
+            "title": "Laplace Smoothing (+1 correction) in sparse arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-gaussian-naive-bayes",
+            "title": "Gaussian Naive Bayes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-multinomial-naive-bayes",
+            "title": "Multinomial Naive Bayes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-bernoulli-naive-bayes",
+            "title": "Bernoulli Naive Bayes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-logistic-regression",
+            "title": "Logistic Regression",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-boundary-classifications-failures",
+            "title": "Boundary classifications failures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-sigmoid-activation-function-mapping",
+            "title": "Sigmoid activation function mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-log-odds-ratios-derivation",
+            "title": "Log-odds ratios derivation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-02-module-2-probabilistic-classification-and-logistic-modeling-mle",
+            "title": "MLE",
             "content": "",
             "pyqs": []
           }
@@ -1115,26 +2927,110 @@
         "title": "Module 3: Optimization Boundaries, Kernel Projections, and Tree Classifiers",
         "topics": [
           {
-            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-support-vector-machines-svm-geometric-margins-linear-separation-rules-hyperplane-dimensionality-constraints",
-            "title": "Support Vector Machines (SVM): Geometric margins, linear separation rules, hyperplane dimensionality constraints",
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-support-vector-machines-svm",
+            "title": "Support Vector Machines (SVM)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-linear-mechanics-of-svm-weight-coefficients-boundary-support-vectors-hard-margin-lanes-optimization-formulations",
-            "title": "Linear Mechanics of SVM: weight coefficients, boundary support vectors, hard margin lanes optimization formulations",
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-geometric-margins",
+            "title": "Geometric margins",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-soft-margin-modifications-noisy-data-handling-via-slack-variables-regularizing-soft-boundaries-via-c-hyperparameter",
-            "title": "Soft Margin Modifications: noisy data handling via slack variables, regularizing soft boundaries via C hyperparameter",
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-linear-separation-rules",
+            "title": "Linear separation rules",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-the-kernel-trick-polynomial-and-radial-basis-function-rbf-kernels-decision-trees-splitting-entropy-information-gain-gini",
-            "title": "The Kernel Trick: Polynomial and Radial Basis Function (RBF) Kernels, Decision Trees splitting: Entropy, Information Gain, Gini",
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-hyperplane-dimensionality-constraints",
+            "title": "Hyperplane dimensionality constraints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-linear-mechanics-of-svm",
+            "title": "Linear Mechanics of SVM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-weight-coefficients",
+            "title": "Weight coefficients",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-boundary-support-vectors",
+            "title": "Boundary support vectors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-hard-margin-lanes-optimization-formulations",
+            "title": "Hard margin lanes optimization formulations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-soft-margin-modifications",
+            "title": "Soft Margin Modifications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-noisy-data-handling-via-slack-variables",
+            "title": "Noisy data handling via slack variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-regularizing-soft-boundaries-via-c-hyperparameter",
+            "title": "Regularizing soft boundaries via C hyperparameter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-the-kernel-trick",
+            "title": "The Kernel Trick",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-polynomial-kernels",
+            "title": "Polynomial Kernels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-radial-basis-function-rbf-kernels",
+            "title": "Radial Basis Function (RBF) Kernels",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-decision-trees-splitting",
+            "title": "Decision Trees splitting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-entropy",
+            "title": "Entropy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-information-gain",
+            "title": "Information Gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-03-module-3-optimization-boundaries-kernel-projections-and-tree-classifiers-gini",
+            "title": "Gini",
             "content": "",
             "pyqs": []
           }
@@ -1145,26 +3041,116 @@
         "title": "Module 4: Unsupervised Learning, Ensemble Methods, and Validation Techniques",
         "topics": [
           {
-            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-unsupervised-clustering-k-means-clustering-mechanics-optimizing-within-cluster-sum-of-squares-wcss",
-            "title": "Unsupervised Clustering: K-Means Clustering mechanics, optimizing Within-Cluster Sum of Squares (WCSS)",
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-unsupervised-clustering",
+            "title": "Unsupervised Clustering",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-hierarchical-clustering-agglomerative-vs-divisive-algorithms-generating-data-dendrograms-elbow-method-silhouette-scores",
-            "title": "Hierarchical Clustering: Agglomerative vs Divisive algorithms, generating data Dendrograms, Elbow Method, Silhouette Scores",
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-k-means-clustering-mechanics",
+            "title": "K-Means Clustering mechanics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-dimensionality-reduction-principal-component-analysis-pca-vs-multi-dimensional-scaling-mds-structural-footprints",
-            "title": "Dimensionality Reduction: Principal Component Analysis (PCA) vs Multi-Dimensional Scaling (MDS) structural footprints",
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-optimizing-within-cluster-sum-of-squares-wcss",
+            "title": "Optimizing Within-Cluster Sum of Squares (WCSS)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-validation-protocols-k-fold-cross-validation-workflows-bootstrap-sampling-bagging-boosting-adaboost-random-forest",
-            "title": "Validation Protocols: K-Fold Cross-Validation workflows, Bootstrap Sampling, Bagging, Boosting (AdaBoost), Random Forest",
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-hierarchical-clustering",
+            "title": "Hierarchical Clustering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-agglomerative-algorithms",
+            "title": "Agglomerative algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-divisive-algorithms",
+            "title": "Divisive algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-generating-data-dendrograms",
+            "title": "Generating data Dendrograms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-elbow-method",
+            "title": "Elbow Method",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-silhouette-scores",
+            "title": "Silhouette Scores",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-dimensionality-reduction",
+            "title": "Dimensionality Reduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-principal-component-analysis-pca",
+            "title": "Principal Component Analysis (PCA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-multi-dimensional-scaling-mds",
+            "title": "Multi-Dimensional Scaling (MDS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-structural-footprints",
+            "title": "Structural footprints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-validation-protocols",
+            "title": "Validation Protocols",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-k-fold-cross-validation-workflows",
+            "title": "K-Fold Cross-Validation workflows",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-bootstrap-sampling",
+            "title": "Bootstrap Sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-bagging",
+            "title": "Bagging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-boosting-adaboost",
+            "title": "Boosting (AdaBoost)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pccst503-machine-learning-04-module-4-unsupervised-learning-ensemble-methods-and-validation-techniques-random-forest",
+            "title": "Random Forest",
             "content": "",
             "pyqs": []
           }
@@ -2027,14 +4013,44 @@
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-8051-architectural-block-diagrams-internal-ram-rom-layout-mapping",
-            "title": "8051 architectural block diagrams, internal RAM/ROM layout mapping",
+            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-8051-architectural-block-diagrams",
+            "title": "8051 architectural block diagrams",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-special-function-registers-sfrs-i-o-pin-configurations-addressing-modes-syntax-structures",
-            "title": "Special Function Registers (SFRs), I/O pin configurations, addressing modes syntax structures",
+            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-internal-ram-layout-mapping",
+            "title": "Internal RAM layout mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-internal-rom-layout-mapping",
+            "title": "Internal ROM layout mapping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-special-function-registers-sfrs",
+            "title": "Special Function Registers (SFRs)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-i-o-pin-configurations",
+            "title": "I/O pin configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-addressing-modes",
+            "title": "Addressing modes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-01-module-1-8051-architecture-core-components-syntax-structures",
+            "title": "Syntax structures",
             "content": "",
             "pyqs": []
           }
@@ -2045,20 +4061,74 @@
         "title": "Module 2: Timers, Interrupts & External Interfacing",
         "topics": [
           {
-            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-8051-timer-counter-operational-modes-setups-programming-tracking",
-            "title": "8051 timer/counter operational modes setups programming tracking",
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-8051-timer-counter-operational-modes",
+            "title": "8051 timer/counter operational modes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-interrupt-structures-handling-routines-prioritization-algorithms",
-            "title": "Interrupt structures: Handling routines prioritization algorithms",
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-timer-counter-setups",
+            "title": "Timer/counter setups",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-interfacing-hardware-modules-lcd-matrix-arrays-stepper-motor-controllers-adc-dac-conversions",
-            "title": "Interfacing hardware modules: LCD matrix arrays, stepper motor controllers, ADC/DAC conversions",
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-timer-counter-programming",
+            "title": "Timer/counter programming",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-timer-counter-tracking",
+            "title": "Timer/counter tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-interrupt-structures",
+            "title": "Interrupt structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-handling-routines",
+            "title": "Handling routines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-prioritization-algorithms",
+            "title": "Prioritization algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-interfacing-hardware-modules",
+            "title": "Interfacing hardware modules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-lcd-matrix-arrays",
+            "title": "LCD matrix arrays",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-stepper-motor-controllers",
+            "title": "Stepper motor controllers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-adc-conversions",
+            "title": "ADC conversions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-02-module-2-timers-interrupts-external-interfacing-dac-conversions",
+            "title": "DAC conversions",
             "content": "",
             "pyqs": []
           }
@@ -2069,20 +4139,68 @@
         "title": "Module 3: ARM Cortex Architecture Overview",
         "topics": [
           {
-            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-arm-design-philosophy-risc-architecture-features-contrast-with-cisc-options",
-            "title": "ARM design philosophy, RISC architecture features contrast with CISC options",
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-arm-design-philosophy",
+            "title": "ARM design philosophy",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-cortex-m-core-architecture-configuration-block-diagrams-layout-pathways",
-            "title": "Cortex-M core architecture configuration block diagrams layout pathways",
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-risc-architecture-features",
+            "title": "RISC architecture features",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-register-bank-structure-operating-modes-status-flags-tracking-configurations",
-            "title": "Register bank structure operating modes status flags tracking configurations",
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-contrast-with-cisc-options",
+            "title": "Contrast with CISC options",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-cortex-m-core-architecture",
+            "title": "Cortex-M core architecture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-configuration",
+            "title": "Configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-block-diagrams",
+            "title": "Block diagrams",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-layout-pathways",
+            "title": "Layout pathways",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-register-bank-structure",
+            "title": "Register bank structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-operating-modes",
+            "title": "Operating modes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-status-flags",
+            "title": "Status flags",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-03-module-3-arm-cortex-architecture-overview-tracking-configurations",
+            "title": "Tracking configurations",
             "content": "",
             "pyqs": []
           }
@@ -2093,20 +4211,104 @@
         "title": "Module 4: Cortex Instruction Pipeline & Programming",
         "topics": [
           {
-            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-thumb-instruction-set-architecture-layouts-compilation-configurations-templates",
-            "title": "Thumb instruction set architecture layouts compilation configurations templates",
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-thumb-instruction-set-architecture",
+            "title": "Thumb instruction set architecture",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-assembly-instructions-data-processing-branches-loops-parsing-codes-layouts",
-            "title": "Assembly instructions data processing branches loops parsing codes layouts",
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-layouts",
+            "title": "Layouts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-embedded-c-drivers-compilation-hardware-setups-peripheral-tracking-validations",
-            "title": "Embedded C drivers compilation hardware setups peripheral tracking validations",
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-compilation",
+            "title": "Compilation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-configurations",
+            "title": "Configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-templates",
+            "title": "Templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-assembly-instructions",
+            "title": "Assembly instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-data-processing",
+            "title": "Data processing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-branches",
+            "title": "Branches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-loops",
+            "title": "Loops",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-parsing",
+            "title": "Parsing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-codes",
+            "title": "Codes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-layouts",
+            "title": "Layouts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-embedded-c-drivers",
+            "title": "Embedded C drivers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-compilation",
+            "title": "Compilation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-hardware-setups",
+            "title": "Hardware setups",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-peripheral-tracking",
+            "title": "Peripheral tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pbcst504-microcontrollers-04-module-4-cortex-instruction-pipeline-programming-validations",
+            "title": "Validations",
             "content": "",
             "pyqs": []
           }
@@ -2126,14 +4328,50 @@
         "title": "Module 1: Project Evaluation & Scheduling",
         "topics": [
           {
-            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-software-project-evaluation-frameworks-strategic-technical-financial-appraisals",
-            "title": "Software project evaluation frameworks: Strategic, technical, financial appraisals",
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-software-project-evaluation-frameworks",
+            "title": "Software project evaluation frameworks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-activity-planning-models-network-tracking-templates-cpm-pert-charts-calculation-loops",
-            "title": "Activity planning models: Network tracking templates, CPM/PERT charts calculation loops",
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-strategic-appraisals",
+            "title": "Strategic appraisals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-technical-appraisals",
+            "title": "Technical appraisals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-financial-appraisals",
+            "title": "Financial appraisals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-activity-planning-models",
+            "title": "Activity planning models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-network-tracking-templates",
+            "title": "Network tracking templates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-cpm-pert-charts",
+            "title": "CPM/PERT charts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-01-module-1-project-evaluation-scheduling-calculation-loops",
+            "title": "Calculation loops",
             "content": "",
             "pyqs": []
           }
@@ -2144,20 +4382,50 @@
         "title": "Module 2: Risk Monitoring & Agile Team Frameworks",
         "topics": [
           {
-            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-risk-identification-mitigation-tracking-metrics-matrix-structures",
-            "title": "Risk identification, mitigation tracking metrics matrix structures",
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-risk-identification",
+            "title": "Risk identification",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-earned-value-analysis-eva-calculation-equations-for-monitoring-resource-tracking-schemes",
-            "title": "Earned Value Analysis (EVA) calculation equations for monitoring resource tracking schemes",
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-mitigation-tracking",
+            "title": "Mitigation tracking",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-agile-team-organization-frameworks-governance-rules-definitions",
-            "title": "Agile team organization frameworks governance rules definitions",
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-metrics-matrix-structures",
+            "title": "Metrics matrix structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-earned-value-analysis-eva",
+            "title": "Earned Value Analysis (EVA)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-calculation-equations-for-monitoring-resource-tracking-schemes",
+            "title": "Calculation equations for monitoring resource tracking schemes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-agile-team-organization-frameworks",
+            "title": "Agile team organization frameworks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-governance-rules",
+            "title": "Governance rules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-02-module-2-risk-monitoring-agile-team-frameworks-definitions",
+            "title": "Definitions",
             "content": "",
             "pyqs": []
           }
@@ -2168,20 +4436,74 @@
         "title": "Module 3: Resource Allocation & Budgeting Systems",
         "topics": [
           {
-            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-resource-usage-profiles-leveling-strategies-algorithms-tracking-profiles-parameters",
-            "title": "Resource usage profiles leveling strategies algorithms tracking profiles parameters",
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-resource-usage-profiles",
+            "title": "Resource usage profiles",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-cost-estimations-models-bottom-up-staffing-schedules-calculation-matrices-verification",
-            "title": "Cost estimations models bottom-up staffing schedules calculation matrices verification",
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-leveling-strategies",
+            "title": "Leveling strategies",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-critical-path-tracking-configurations-variance-monitoring-checkpoints-implementation-loops",
-            "title": "Critical path tracking configurations variance monitoring checkpoints implementation loops",
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-algorithms",
+            "title": "Algorithms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-tracking-profiles",
+            "title": "Tracking profiles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-parameters",
+            "title": "Parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-cost-estimations-models",
+            "title": "Cost estimations models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-bottom-up-staffing-schedules",
+            "title": "Bottom-up staffing schedules",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-calculation-matrices",
+            "title": "Calculation matrices",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-verification",
+            "title": "Verification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-critical-path-tracking-configurations",
+            "title": "Critical path tracking configurations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-variance-monitoring-checkpoints",
+            "title": "Variance monitoring checkpoints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-03-module-3-resource-allocation-budgeting-systems-implementation-loops",
+            "title": "Implementation loops",
             "content": "",
             "pyqs": []
           }
@@ -2192,20 +4514,86 @@
         "title": "Module 4: Contract Management & High-Performance Governance",
         "topics": [
           {
-            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-software-contract-specifications-service-level-agreements-sla-conditions-metrics",
-            "title": "Software contract specifications service level agreements (SLA) conditions metrics",
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-software-contract-specifications",
+            "title": "Software contract specifications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-supplier-oversight-processes-monitoring-milestones-checks-execution-validation-routing",
-            "title": "Supplier oversight processes monitoring milestones checks execution validation routing",
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-service-level-agreements-sla",
+            "title": "Service level agreements (SLA)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-team-motivation-models-leadership-models-execution-tracking-governance-metrics-templates",
-            "title": "Team motivation models leadership models execution tracking governance metrics templates",
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-conditions",
+            "title": "Conditions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-metrics",
+            "title": "Metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-supplier-oversight-processes",
+            "title": "Supplier oversight processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-monitoring-milestones",
+            "title": "Monitoring milestones",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-checks",
+            "title": "Checks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-execution-validation",
+            "title": "Execution validation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-routing",
+            "title": "Routing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-team-motivation-models",
+            "title": "Team motivation models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-leadership-models",
+            "title": "Leadership models",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-execution-tracking",
+            "title": "Execution tracking",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-governance-metrics",
+            "title": "Governance metrics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-5-pecst521-software-project-management-04-module-4-contract-management-high-performance-governance-templates",
+            "title": "Templates",
             "content": "",
             "pyqs": []
           }

@@ -29,8 +29,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-equation-and-spectrum-of-am-signal",
-            "title": "Equation and spectrum of AM signal",
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-equation-of-am-signal",
+            "title": "Equation of AM signal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-spectrum-of-am-signal",
+            "title": "Spectrum of AM signal",
             "content": "",
             "pyqs": []
           },
@@ -59,8 +65,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-narrow-and-wide-band-fm-and-their-spectra",
-            "title": "Narrow and wide band FM and their spectra",
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-narrow-band-fm-and-its-spectrum",
+            "title": "Narrow band FM and its spectrum",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-wide-band-fm-and-its-spectrum",
+            "title": "Wide band FM and its spectrum",
             "content": "",
             "pyqs": []
           },
@@ -77,8 +89,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-pre-emphasis-and-de-emphasis-filtering",
-            "title": "Pre-emphasis and de-emphasis filtering",
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-pre-emphasis-filtering",
+            "title": "Pre-emphasis filtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-de-emphasis-filtering",
+            "title": "De-emphasis filtering",
             "content": "",
             "pyqs": []
           },
@@ -143,8 +161,14 @@
         "title": "Module 2: Sampling and quantization",
         "topics": [
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-sampling-and-quantization",
-            "title": "Sampling and Quantization",
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-sampling",
+            "title": "Sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-quantization",
+            "title": "Quantization",
             "content": "",
             "pyqs": []
           },
@@ -167,14 +191,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-pcm-transmitter-and-receiver",
-            "title": "PCM Transmitter and receiver",
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-pcm-transmitter",
+            "title": "PCM Transmitter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-dpcm-transmitter-and-receiver",
-            "title": "DPCM transmitter and receiver",
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-pcm-receiver",
+            "title": "PCM Receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-dpcm-transmitter",
+            "title": "DPCM transmitter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-dpcm-receiver",
+            "title": "DPCM receiver",
             "content": "",
             "pyqs": []
           },
@@ -305,26 +341,50 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-system-and-signal-constellation",
-            "title": "BPSK system and signal constellation",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-system",
+            "title": "BPSK system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-transmitter-and-receiver",
-            "title": "BPSK transmitter and receiver",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-signal-constellation",
+            "title": "BPSK signal constellation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-system-and-signal-constellations",
-            "title": "QPSK system and signal constellations",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-transmitter",
+            "title": "BPSK transmitter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-ber-analysis-of-bpsk-and-qpsk-in-erfc",
-            "title": "BER analysis of BPSK and QPSK in erfc",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-receiver",
+            "title": "BPSK receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-system",
+            "title": "QPSK system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-signal-constellation",
+            "title": "QPSK signal constellation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-ber-analysis-of-bpsk-in-erfc",
+            "title": "BER analysis of BPSK in erfc",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-ber-analysis-of-qpsk-in-erfc",
+            "title": "BER analysis of QPSK in erfc",
             "content": "",
             "pyqs": []
           },
@@ -335,14 +395,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-transmitter-and-receiver",
-            "title": "QPSK transmitter and receiver",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-transmitter",
+            "title": "QPSK transmitter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-quadrature-amplitude-modulation-and-signal-constellation",
-            "title": "Quadrature amplitude modulation and signal constellation",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-receiver",
+            "title": "QPSK receiver",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-quadrature-amplitude-modulation",
+            "title": "Quadrature amplitude modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qam-signal-constellation",
+            "title": "QAM signal constellation",
             "content": "",
             "pyqs": []
           }
@@ -380,8 +452,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-manipulating-bits-in-memory-and-io-ports",
-            "title": "manipulating bits in memory and IO ports",
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-manipulating-bits-in-memory",
+            "title": "manipulating bits in memory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-manipulating-bits-in-io-ports",
+            "title": "manipulating bits in IO ports",
             "content": "",
             "pyqs": []
           },
@@ -417,19 +495,43 @@
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-unions",
-            "title": "unions.",
+            "title": "unions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-review-of-computer-organization-memory-cpu-io",
-            "title": "Review of computer organization: Memory, CPU, IO",
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-review-of-computer-organization-memory",
+            "title": "Review of computer organization: Memory",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-introduction-to-arm-cortex-m-architecture-internal-organization-general-purpose-and-special-registers",
-            "title": "Introduction to Arm cortex M architecture: Internal organization-general purpose and special registers",
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-review-of-computer-organization-cpu",
+            "title": "Review of computer organization: CPU",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-review-of-computer-organization-io",
+            "title": "Review of computer organization: IO",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-introduction-to-arm-cortex-m-architecture-internal-organization",
+            "title": "Introduction to Arm cortex M architecture: Internal organization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-introduction-to-arm-cortex-m-architecture-general-purpose-registers",
+            "title": "Introduction to Arm cortex M architecture: general purpose registers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-introduction-to-arm-cortex-m-architecture-special-registers",
+            "title": "Introduction to Arm cortex M architecture: special registers",
             "content": "",
             "pyqs": []
           },
@@ -452,8 +554,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-arm-assembly-language-instruction-format-and-operands",
-            "title": "Arm assembly language instruction format and operands",
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-arm-assembly-language-instruction-format",
+            "title": "Arm assembly language instruction format",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-arm-assembly-language-operands",
+            "title": "Arm assembly language operands",
             "content": "",
             "pyqs": []
           }
@@ -566,8 +674,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-translating-if-then-and-if-then-else-statements-to-assembly",
-            "title": "translating if-then and if-then-else statements to assembly",
+            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-translating-if-then-statements-to-assembly",
+            "title": "translating if-then statements to assembly",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-translating-if-then-else-statements-to-assembly",
+            "title": "translating if-then-else statements to assembly",
             "content": "",
             "pyqs": []
           },
@@ -590,8 +704,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-implementing-functions-function-call-and-return",
-            "title": "Implementing functions: function call and return",
+            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-implementing-functions-function-call",
+            "title": "Implementing functions: function call",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-implementing-functions-return",
+            "title": "Implementing functions: return",
             "content": "",
             "pyqs": []
           },
@@ -638,8 +758,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-thread-and-handler-modes",
-            "title": "thread and handler modes",
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-thread-mode",
+            "title": "thread mode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-handler-mode",
+            "title": "handler mode",
             "content": "",
             "pyqs": []
           },
@@ -662,8 +788,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-priorities-and-nested-exceptions",
-            "title": "priorities and nested exceptions",
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-priorities",
+            "title": "priorities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-nested-exceptions",
+            "title": "nested exceptions",
             "content": "",
             "pyqs": []
           },
@@ -674,14 +806,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-transfer-rate-and-latency",
-            "title": "transfer rate and latency",
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-transfer-rate",
+            "title": "transfer rate",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-buffers-and-queues",
-            "title": "buffers and queues",
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-latency",
+            "title": "latency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-buffers",
+            "title": "buffers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-queues",
+            "title": "queues",
             "content": "",
             "pyqs": []
           },
@@ -716,8 +860,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-cpu-and-vector-table",
-            "title": "cpu and vector table",
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-system-initialization-cpu",
+            "title": "System initialization: cpu",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-system-initialization-vector-table",
+            "title": "System initialization: vector table",
             "content": "",
             "pyqs": []
           },
@@ -767,8 +917,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-manipulating-bits-in-memory-and-io-ports",
-            "title": "Manipulating bits in memory and IO ports",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-manipulating-bits-in-memory",
+            "title": "Manipulating bits in memory",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-manipulating-bits-in-io-ports",
+            "title": "Manipulating bits in IO ports",
             "content": "",
             "pyqs": []
           },
@@ -833,8 +989,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-internal-organization-general-purpose-and-special-registers",
-            "title": "Internal organization - general purpose and special registers",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-internal-organization-general-purpose-registers",
+            "title": "Internal organization - general purpose registers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-internal-organization-special-registers",
+            "title": "Internal organization - special registers",
             "content": "",
             "pyqs": []
           },
@@ -2327,8 +2489,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-01-module-1-basic-concepts-of-data-structures-linear-search-and-binary-search",
-            "title": "Linear Search and Binary Search",
+            "id": "ec-5-peect522-data-structures-01-module-1-basic-concepts-of-data-structures-linear-search",
+            "title": "Linear Search",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-01-module-1-basic-concepts-of-data-structures-binary-search",
+            "title": "Binary Search",
             "content": "",
             "pyqs": []
           },
@@ -2339,8 +2507,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-01-module-1-basic-concepts-of-data-structures-queues-circular-queues",
-            "title": "Queues-Circular Queues",
+            "id": "ec-5-peect522-data-structures-01-module-1-basic-concepts-of-data-structures-queues",
+            "title": "Queues",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-01-module-1-basic-concepts-of-data-structures-circular-queues",
+            "title": "Circular Queues",
             "content": "",
             "pyqs": []
           },
@@ -2387,8 +2561,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-02-module-2-linked-list-singly-linked-list-operations-on-linked-list",
-            "title": "Singly Linked List- Operations on Linked List",
+            "id": "ec-5-peect522-data-structures-02-module-2-linked-list-singly-linked-list",
+            "title": "Singly Linked List",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-02-module-2-linked-list-operations-on-linked-list",
+            "title": "Operations on Linked List",
             "content": "",
             "pyqs": []
           },
@@ -2405,8 +2585,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-02-module-2-linked-list-stacks-and-queues-using-linked-list",
-            "title": "Stacks and Queues using Linked List",
+            "id": "ec-5-peect522-data-structures-02-module-2-linked-list-stacks-using-linked-list",
+            "title": "Stacks using Linked List",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-02-module-2-linked-list-queues-using-linked-list",
+            "title": "Queues using Linked List",
             "content": "",
             "pyqs": []
           },
@@ -2423,8 +2609,14 @@
         "title": "Module 3: Trees and graphs",
         "topics": [
           {
-            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-trees-and-graphs",
-            "title": "Trees and Graphs",
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-trees",
+            "title": "Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-graphs",
+            "title": "Graphs",
             "content": "",
             "pyqs": []
           },
@@ -2435,8 +2627,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-binary-trees-tree-operations",
-            "title": "Binary Trees-Tree Operations",
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-binary-trees",
+            "title": "Binary Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-tree-operations",
+            "title": "Tree Operations",
             "content": "",
             "pyqs": []
           },
@@ -2459,8 +2657,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-trees-binary-search-tree-operations",
-            "title": "Trees- Binary Search Tree Operations",
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-trees",
+            "title": "Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-binary-search-tree-operations",
+            "title": "Binary Search Tree Operations",
             "content": "",
             "pyqs": []
           },
@@ -2477,8 +2681,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-depth-first-search-and-breadth-first-search-on-graphs",
-            "title": "Depth First Search and Breadth First Search on Graphs",
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-depth-first-search-on-graphs",
+            "title": "Depth First Search on Graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-03-module-3-trees-and-graphs-breadth-first-search-on-graphs",
+            "title": "Breadth First Search on Graphs",
             "content": "",
             "pyqs": []
           },
@@ -2495,14 +2705,26 @@
         "title": "Module 4: Sorting and hashing",
         "topics": [
           {
-            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-sorting-and-hashing",
-            "title": "Sorting and Hashing",
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-sorting",
+            "title": "Sorting",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-sorting-techniques-selection-sort",
-            "title": "Sorting Techniques - Selection Sort",
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-hashing",
+            "title": "Hashing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-sorting-techniques",
+            "title": "Sorting Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-selection-sort",
+            "title": "Selection Sort",
             "content": "",
             "pyqs": []
           },
@@ -2519,14 +2741,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-merge-sort-and-heap-sort",
-            "title": "Merge Sort and Heap Sort",
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-merge-sort",
+            "title": "Merge Sort",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-hashing-hashing-techniques",
-            "title": "Hashing- Hashing Techniques",
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-heap-sort",
+            "title": "Heap Sort",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-hashing",
+            "title": "Hashing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-hashing-techniques",
+            "title": "Hashing Techniques",
             "content": "",
             "pyqs": []
           },
@@ -2543,8 +2777,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-hashing-functions-mid-square",
-            "title": "Hashing functions - Mid square",
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-hashing-functions",
+            "title": "Hashing functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect522-data-structures-04-module-4-sorting-and-hashing-mid-square",
+            "title": "Mid square",
             "content": "",
             "pyqs": []
           },
@@ -2582,8 +2822,20 @@
         "title": "Module 1: Review of sampling z",
         "topics": [
           {
-            "id": "ec-5-pbect504-digital-signal-processing-01-module-1-review-of-sampling-z-review-of-sampling-z-transform-and-dtft",
-            "title": "Review of sampling, Z-Transform and DTFT",
+            "id": "ec-5-pbect504-digital-signal-processing-01-module-1-review-of-sampling-z-review-of-sampling",
+            "title": "Review of sampling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-01-module-1-review-of-sampling-z-z-transform",
+            "title": "Z-Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-01-module-1-review-of-sampling-z-dtft",
+            "title": "DTFT",
             "content": "",
             "pyqs": []
           },
@@ -2606,8 +2858,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pbect504-digital-signal-processing-01-module-1-review-of-sampling-z-circular-convolution-linear-convolution-using-circular-convolution",
-            "title": "Circular convolution, linear convolution using circular convolution",
+            "id": "ec-5-pbect504-digital-signal-processing-01-module-1-review-of-sampling-z-circular-convolution",
+            "title": "Circular convolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-01-module-1-review-of-sampling-z-linear-convolution-using-circular-convolution",
+            "title": "Linear convolution using circular convolution",
             "content": "",
             "pyqs": []
           },
@@ -2630,8 +2888,20 @@
         "title": "Module 2: Design of fir filters",
         "topics": [
           {
-            "id": "ec-5-pbect504-digital-signal-processing-02-module-2-design-of-fir-filters-design-of-fir-filters-symmetric-and-anti-symmetric-fir-filters",
-            "title": "Design of FIR Filters - Symmetric and Anti-symmetric FIR Filters",
+            "id": "ec-5-pbect504-digital-signal-processing-02-module-2-design-of-fir-filters-design-of-fir-filters",
+            "title": "Design of FIR Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-02-module-2-design-of-fir-filters-symmetric-fir-filters",
+            "title": "Symmetric FIR Filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-02-module-2-design-of-fir-filters-anti-symmetric-fir-filters",
+            "title": "Anti-symmetric FIR Filters",
             "content": "",
             "pyqs": []
           },
@@ -2678,14 +2948,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-fir-filter-structures-linear-structures-direct-form",
-            "title": "FIR Filter Structures: Linear structures, Direct Form",
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-fir-filter-structures-linear-structures",
+            "title": "FIR Filter Structures: Linear structures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-iir-filter-structures-direct-form-transposed-form-cascade-form-and",
-            "title": "IIR Filter Structures: Direct Form, Transposed Form, Cascade Form and",
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-fir-filter-structures-direct-form",
+            "title": "FIR Filter Structures: Direct Form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-iir-filter-structures-direct-form",
+            "title": "IIR Filter Structures: Direct Form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-iir-filter-structures-transposed-form",
+            "title": "IIR Filter Structures: Transposed Form",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-iir-filter-structures-cascade-form",
+            "title": "IIR Filter Structures: Cascade Form",
             "content": "",
             "pyqs": []
           },
@@ -2696,14 +2984,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-decimation-and-interpolation-time-domain-and-frequency-domain",
-            "title": "Decimation and Interpolation (Time domain and Frequency Domain",
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-decimation",
+            "title": "Decimation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-anti-aliasing-and-anti-imaging-filter",
-            "title": "Anti- aliasing and anti-imaging filter",
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-interpolation",
+            "title": "Interpolation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-time-domain-and-frequency-domain",
+            "title": "Time domain and Frequency Domain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-anti-aliasing-filter",
+            "title": "Anti-aliasing filter",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pbect504-digital-signal-processing-03-module-3-structures-for-the-realization-of-discrete-anti-imaging-filter",
+            "title": "Anti-imaging filter",
             "content": "",
             "pyqs": []
           }
@@ -2790,13 +3096,7 @@
         "topics": [
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-01-module-1-simulation-of-signals-simulation-of-signals",
-            "title": "Simulation of Signals",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-01-module-1-simulation-of-signals-simulate-the-following-signals-using-python",
-            "title": "Simulate the following signals using Python/",
+            "title": "Simulation of signals",
             "content": "",
             "pyqs": []
           },
@@ -2838,25 +3138,25 @@
         "topics": [
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-verification-of-the-properties-of-dft",
-            "title": "Verification of the Properties of DFT",
+            "title": "Verification of the properties of DFT",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-generate-a-dft-matrix-and-apply-it-to-an-example-sequence",
-            "title": "Generate a DFT matrix and apply it to an example sequence.",
+            "title": "Generate a DFT matrix and apply it to an example sequence",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-write-a-function-that-returns-the-n-point-dft-matrix-vn-for-a-given-n",
-            "title": "Write a function that returns the N point DFT matrix VN for a given N.",
+            "title": "Write a function that returns the N point DFT matrix VN for a given N",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-plot-its-real-and-imaginary-parts-of-vn-as-images-using-matshow-or-imshow-commands-in",
-            "title": "Plot its real and imaginary parts of VN as images using matshow or imshow commands (in",
+            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-plot-its-real-and-imaginary-parts-of-vn-as-images-using-matshow-or-imshow-commands",
+            "title": "Plot its real and imaginary parts of VN as images using matshow or imshow commands",
             "content": "",
             "pyqs": []
           },
@@ -2867,26 +3167,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-observe-the-time-of-computations-for-n-2-for-different-values-of-you-may-use",
-            "title": "Observe the time of computations for N = 2σ for different values of σ. (You may use",
+            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-observe-the-time-of-computations-for-n-2-for-different-values-of",
+            "title": "Observe the time of computations for N = 2σ for different values of σ",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-use-some-iterations-to-plot-the-times-of-computation-against-x-plot-and-understand-this",
-            "title": "Use some iterations to plot the times of computation against x. Plot and understand this",
+            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-use-some-iterations-to-plot-the-times-of-computation-against-x",
+            "title": "Use some iterations to plot the times of computation against x",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-circular-convolution",
-            "title": "Circular Convolution.",
+            "title": "Circular Convolution",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-write-a-python-function-circcon-py-that-returns-the-circular-convolution-of-an-n1-point-sequence-and-an-n2-point-sequence-given-at-the-input-the-easiest-way-is-to-convert-a-linear",
-            "title": "Write a python function circcon.py that returns the circular convolution of an N1 point sequence and an N2 point sequence given at the input. The easiest way is to convert a linear",
+            "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-write-a-python-function-circcon-py-that-returns-the-circular-convolution-of-an-n1-point-sequence-and-an-n2-point-sequence-given-at-the-input",
+            "title": "Write a python function circcon.py that returns the circular convolution of an N1 point sequence and an N2 point sequence given at the input",
             "content": "",
             "pyqs": []
           },
@@ -2898,7 +3198,7 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-02-module-2-verification-of-the-properties-of-dft-take-two-complex-random-sequences-x1-n-and-x2-n-and-verify-parseval-s-theorem",
-            "title": "Take two complex random sequences x1[n] and x2[n], and verify Parseval's Theorem.",
+            "title": "Take two complex random sequences x1[n] and x2[n], and verify Parseval's Theorem",
             "content": "",
             "pyqs": []
           }
@@ -2909,20 +3209,20 @@
         "title": "Module 3: Familarization of dsp hardware",
         "topics": [
           {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-03-module-3-familarization-of-dsp-hardware-familarization-of-dsp-hardware",
-            "title": "Familarization of DSP Hardware",
+            "id": "ec-5-pbecl507-digital-signal-processing-lab-03-module-3-familarization-of-dsp-hardware-familiarization-of-dsp-hardware",
+            "title": "Familiarization of DSP Hardware",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-03-module-3-familarization-of-dsp-hardware-familiarization-of-the-code-composer-studio-in-the-case-of-ti-hard-ware",
-            "title": "Familiarization of the code composer studio (in the case of TI hard- ware)",
+            "id": "ec-5-pbecl507-digital-signal-processing-lab-03-module-3-familarization-of-dsp-hardware-familiarization-of-the-code-composer-studio-in-the-case-of-ti-hardware",
+            "title": "Familiarization of the code composer studio (in the case of TI hardware)",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-03-module-3-familarization-of-dsp-hardware-familiarization-of-the-analog-and-digital-input-and-output-ports-of-the-dsp-board",
-            "title": "Familiarization of the analog and digital input and output ports of the DSP board.",
+            "title": "Familiarization of the analog and digital input and output ports of the DSP board",
             "content": "",
             "pyqs": []
           },
@@ -2952,19 +3252,19 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-04-module-4-linear-convolution-write-a-c-function-for-the-linear-convolution-of-two-arrays",
-            "title": "Write a C function for the linear convolution of two arrays.",
+            "title": "Write a C function for the linear convolution of two arrays",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-04-module-4-linear-convolution-the-arrays-may-be-kept-in-different-files-and-downloaded-to-the-dsp-hardware",
-            "title": "The arrays may be kept in different files and downloaded to the DSP hardware.",
+            "title": "The arrays may be kept in different files and downloaded to the DSP hardware",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-04-module-4-linear-convolution-store-the-result-as-a-file-and-observe-the-output",
-            "title": "Store the result as a file and observe the output.",
+            "title": "Store the result as a file and observe the output",
             "content": "",
             "pyqs": []
           }
@@ -2982,31 +3282,31 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-05-module-5-fft-of-signals-write-a-c-function-for-n-point-fft",
-            "title": "Write a C function for N - point FFT.",
+            "title": "Write a C function for N-point FFT",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-05-module-5-fft-of-signals-connect-a-precision-signal-generator-and-apply-1-mv-1-khz-sinusoid-at-the-analog-port",
-            "title": "Connect a precision signal generator and apply 1 mV , 1 kHz sinusoid at the analog port.",
+            "title": "Connect a precision signal generator and apply 1 mV, 1 kHz sinusoid at the analog port",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-05-module-5-fft-of-signals-apply-the-fft-on-the-input-signal-with-appropriate-window-size-and-observe-the-result",
-            "title": "Apply the FFT on the input signal with appropriate window size and observe the result.",
+            "title": "Apply the FFT on the input signal with appropriate window size and observe the result",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-05-module-5-fft-of-signals-connect-microphone-to-the-analog-port-and-read-in-real-time-speech",
-            "title": "Connect microphone to the analog port and read in real time speech.",
+            "title": "Connect microphone to the analog port and read in real time speech",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-05-module-5-fft-of-signals-observe-and-store-the-fft-values",
-            "title": "Observe and store the FFT values.",
+            "title": "Observe and store the FFT values",
             "content": "",
             "pyqs": []
           }
@@ -3024,7 +3324,7 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-06-module-6-ifft-with-fft-use-the-fft-function-in-the-previous-experiment-to-compute-the-ifft-of-the-input-signal",
-            "title": "Use the FFT function in the previous experiment to compute the IFFT of the input signal.",
+            "title": "Use the FFT function in the previous experiment to compute the IFFT of the input signal",
             "content": "",
             "pyqs": []
           },
@@ -3048,25 +3348,25 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-07-module-7-fir-low-pass-filter-use-python-scilab-to-implement-the-fir-filter-response-h-n",
-            "title": "Use Python/scilab to implement the FIR filter response h[n] =",
+            "title": "Use Python/scilab to implement the FIR filter response h[n]",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-07-module-7-fir-low-pass-filter-realize-the-hamming-wh-n-and-kaiser-wk-n-windows",
-            "title": "Realize the hamming ( wH [n]) and kaiser ( wK[n]) windows.",
+            "title": "Realize the hamming (wH[n]) and kaiser (wK[n]) windows",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-07-module-7-fir-low-pass-filter-compute-h-n-w-n-in-both-cases-and-store-as-file",
-            "title": "Compute h[n]w[n] in both cases and store as file.",
+            "title": "Compute h[n]w[n] in both cases and store as file",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-07-module-7-fir-low-pass-filter-observe-the-low-pass-response-in-the-simulator",
-            "title": "Observe the low pass response in the simulator.",
+            "title": "Observe the low pass response in the simulator",
             "content": "",
             "pyqs": []
           },
@@ -3078,7 +3378,7 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-07-module-7-fir-low-pass-filter-test-the-operation-of-the-filters-with-speech-signals",
-            "title": "Test the operation of the filters with speech signals.",
+            "title": "Test the operation of the filters with speech signals",
             "content": "",
             "pyqs": []
           }
@@ -3096,13 +3396,13 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-08-module-8-overlap-save-block-convolution-use-the-file-of-filter-coefficients-from-the-previous-experiment",
-            "title": "Use the file of filter coefficients from the previous experiment.",
+            "title": "Use the file of filter coefficients from the previous experiment",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-08-module-8-overlap-save-block-convolution-realize-the-system-shown-below-for-the-input-speech-signal-x-n",
-            "title": "Realize the system shown below for the input speech signal x[n].",
+            "title": "Realize the system shown below for the input speech signal x[n]",
             "content": "",
             "pyqs": []
           },
@@ -3125,20 +3425,20 @@
         "title": "Module 9: 9 overlap add block convolution",
         "topics": [
           {
-            "id": "ec-5-pbecl507-digital-signal-processing-lab-09-module-9-9-overlap-add-block-convolution-9-overlap-add-block-convolution",
-            "title": "9. Overlap Add Block Convolution",
+            "id": "ec-5-pbecl507-digital-signal-processing-lab-09-module-9-9-overlap-add-block-convolution-overlap-add-block-convolution",
+            "title": "Overlap Add Block Convolution",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-09-module-9-9-overlap-add-block-convolution-use-the-file-of-filter-coefficients-from-the-previous-experiment",
-            "title": "Use the file of filter coefficients from the previous experiment.",
+            "title": "Use the file of filter coefficients from the previous experiment",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-09-module-9-9-overlap-add-block-convolution-realize-the-system-shown-in-the-previous-experiment-for-the-input-speech-signal-x-n",
-            "title": "Realize the system shown in the previous experiment for the input speech signal x[n].",
+            "title": "Realize the system shown in the previous experiment for the input speech signal x[n]",
             "content": "",
             "pyqs": []
           },
@@ -3150,7 +3450,7 @@
           },
           {
             "id": "ec-5-pbecl507-digital-signal-processing-lab-09-module-9-9-overlap-add-block-convolution-implement-the-overlap-add-block-convolution-method",
-            "title": "Implement the overlap add block convolution method.",
+            "title": "Implement the overlap add block convolution method",
             "content": "",
             "pyqs": []
           }
@@ -3236,14 +3536,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-capacitance-and-inductance-of-two-wire-transmission-line",
-            "title": "Derivation of capacitance and inductance of two wire transmission line",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-capacitance-of-two-wire-transmission-line",
+            "title": "Derivation of capacitance of two wire transmission line",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-capacitance-and-inductance-of-coaxial-cable",
-            "title": "Derivation of capacitance and inductance of coaxial cable",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-inductance-of-two-wire-transmission-line",
+            "title": "Derivation of inductance of two wire transmission line",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-capacitance-of-coaxial-cable",
+            "title": "Derivation of capacitance of coaxial cable",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-inductance-of-coaxial-cable",
+            "title": "Derivation of inductance of coaxial cable",
             "content": "",
             "pyqs": []
           },
@@ -3272,8 +3584,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-determination-of-voltage-and-electric-field-using-laplace-and-poisson-s-equation",
-            "title": "Determination of voltage and electric field using Laplace and Poisson's equation",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-determination-of-voltage-using-laplace-and-poisson-s-equation",
+            "title": "Determination of voltage using Laplace and Poisson's equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-determination-of-electric-field-using-laplace-and-poisson-s-equation",
+            "title": "Determination of electric field using Laplace and Poisson's equation",
             "content": "",
             "pyqs": []
           }
@@ -3344,14 +3662,26 @@
         "title": "Module 3: Reflection and refraction of plane electromagnetic waves at boundaries",
         "topics": [
           {
-            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-for-normal-incidence",
-            "title": "Reflection and refraction of plane electromagnetic waves at boundaries for normal incidence",
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-reflection-of-plane-electromagnetic-waves-at-boundaries-for-normal-incidence",
+            "title": "Reflection of plane electromagnetic waves at boundaries for normal incidence",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-for-oblique-incidence",
-            "title": "Reflection and refraction of plane electromagnetic waves at boundaries for oblique incidence",
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-refraction-of-plane-electromagnetic-waves-at-boundaries-for-normal-incidence",
+            "title": "Refraction of plane electromagnetic waves at boundaries for normal incidence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-reflection-of-plane-electromagnetic-waves-at-boundaries-for-oblique-incidence",
+            "title": "Reflection of plane electromagnetic waves at boundaries for oblique incidence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-refraction-of-plane-electromagnetic-waves-at-boundaries-for-oblique-incidence",
+            "title": "Refraction of plane electromagnetic waves at boundaries for oblique incidence",
             "content": "",
             "pyqs": []
           },
@@ -3497,12 +3827,6 @@
         "title": "Module 1: Statistical estimation theory i",
         "topics": [
           {
-            "id": "ec-5-peect527-estimation-and-detection-01-module-1-statistical-estimation-theory-i-statistical-estimation-theory-i",
-            "title": "Statistical Estimation Theory I",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-5-peect527-estimation-and-detection-01-module-1-statistical-estimation-theory-i-fundamentals-of-estimation-theory",
             "title": "Fundamentals of estimation theory",
             "content": "",
@@ -3510,7 +3834,7 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-01-module-1-statistical-estimation-theory-i-the-mathematical-estimation-problem",
-            "title": "the mathematical estimation problem",
+            "title": "The mathematical estimation problem",
             "content": "",
             "pyqs": []
           },
@@ -3522,25 +3846,25 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-01-module-1-statistical-estimation-theory-i-basics-of-cramer-rao-lower-bound",
-            "title": "basics of Cramer-Rao Lower Bound",
+            "title": "Basics of Cramer-Rao Lower Bound",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-01-module-1-statistical-estimation-theory-i-linear-models",
-            "title": "linear models",
+            "title": "Linear models",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-01-module-1-statistical-estimation-theory-i-best-linear-unbiased-estimation",
-            "title": "best linear unbiased estimation",
+            "title": "Best linear unbiased estimation",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-01-module-1-statistical-estimation-theory-i-application-examples",
-            "title": "application examples.",
+            "title": "Application examples",
             "content": "",
             "pyqs": []
           }
@@ -3551,12 +3875,6 @@
         "title": "Module 2: Statistical estimation theory ii",
         "topics": [
           {
-            "id": "ec-5-peect527-estimation-and-detection-02-module-2-statistical-estimation-theory-ii-statistical-estimation-theory-ii",
-            "title": "Statistical Estimation Theory II",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-5-peect527-estimation-and-detection-02-module-2-statistical-estimation-theory-ii-maximum-likelihood-estimation",
             "title": "Maximum likelihood estimation",
             "content": "",
@@ -3564,7 +3882,7 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-02-module-2-statistical-estimation-theory-ii-least-squares",
-            "title": "least squares",
+            "title": "Least squares",
             "content": "",
             "pyqs": []
           },
@@ -3576,13 +3894,13 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-02-module-2-statistical-estimation-theory-ii-minimum-mean-square-error-estimation",
-            "title": "minimum mean square error estimation",
+            "title": "Minimum mean square error estimation",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-02-module-2-statistical-estimation-theory-ii-application-examples",
-            "title": "application examples.",
+            "title": "Application examples",
             "content": "",
             "pyqs": []
           }
@@ -3593,12 +3911,6 @@
         "title": "Module 3: Statistical detection theory i",
         "topics": [
           {
-            "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-statistical-detection-theory-i",
-            "title": "Statistical Detection Theory I",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-fundamentals-of-detection-theory",
             "title": "Fundamentals of detection theory",
             "content": "",
@@ -3606,7 +3918,7 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-the-mathematical-detection-problem",
-            "title": "the mathematical detection problem",
+            "title": "The mathematical detection problem",
             "content": "",
             "pyqs": []
           },
@@ -3618,7 +3930,7 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-classical-approach",
-            "title": "classical approach",
+            "title": "Classical approach",
             "content": "",
             "pyqs": []
           },
@@ -3630,13 +3942,13 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-likelihood-ratio-test",
-            "title": "likelihood ratio test",
+            "title": "Likelihood ratio test",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-receiver-operating-characteristics",
-            "title": "receiver operating characteristics",
+            "title": "Receiver operating characteristics",
             "content": "",
             "pyqs": []
           },
@@ -3648,7 +3960,7 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-minimum-probability-of-error",
-            "title": "minimum probability of error",
+            "title": "Minimum probability of error",
             "content": "",
             "pyqs": []
           },
@@ -3660,7 +3972,7 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-03-module-3-statistical-detection-theory-i-multiple-hypothesis-testing",
-            "title": "multiple hypothesis testing.",
+            "title": "Multiple hypothesis testing",
             "content": "",
             "pyqs": []
           }
@@ -3671,12 +3983,6 @@
         "title": "Module 4: Statistical detection theory ii",
         "topics": [
           {
-            "id": "ec-5-peect527-estimation-and-detection-04-module-4-statistical-detection-theory-ii-statistical-detection-theory-ii",
-            "title": "Statistical Detection Theory II",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-5-peect527-estimation-and-detection-04-module-4-statistical-detection-theory-ii-detection-of-deterministic-signals",
             "title": "Detection of deterministic signals",
             "content": "",
@@ -3684,31 +3990,31 @@
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-04-module-4-statistical-detection-theory-ii-matched-filters",
-            "title": "matched filters",
+            "title": "Matched filters",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-04-module-4-statistical-detection-theory-ii-detection-of-random-signals",
-            "title": "detection of random signals",
+            "title": "Detection of random signals",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-04-module-4-statistical-detection-theory-ii-estimator-correlator",
-            "title": "estimator-correlator",
+            "title": "Estimator-correlator",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-04-module-4-statistical-detection-theory-ii-linear-model",
-            "title": "linear model",
+            "title": "Linear model",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect527-estimation-and-detection-04-module-4-statistical-detection-theory-ii-application-examples",
-            "title": "application examples.",
+            "title": "Application examples",
             "content": "",
             "pyqs": []
           }
@@ -3746,14 +4052,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect526-high-speed-digital-design-01-module-1-high-speed-digital-design-fundamentals-frequency-and-time-four-kinds-of-reactance-ordinary-capacitance-and-inductance",
-            "title": "four kinds of reactance- ordinary capacitance and inductance",
+            "id": "ec-5-peect526-high-speed-digital-design-01-module-1-high-speed-digital-design-fundamentals-frequency-and-time-four-kinds-of-reactance",
+            "title": "four kinds of reactance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect526-high-speed-digital-design-01-module-1-high-speed-digital-design-fundamentals-frequency-and-time-mutual-capacitance-and-inductance",
-            "title": "mutual capacitance and inductance",
+            "id": "ec-5-peect526-high-speed-digital-design-01-module-1-high-speed-digital-design-fundamentals-frequency-and-time-ordinary-capacitance",
+            "title": "ordinary capacitance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect526-high-speed-digital-design-01-module-1-high-speed-digital-design-fundamentals-frequency-and-time-ordinary-inductance",
+            "title": "ordinary inductance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect526-high-speed-digital-design-01-module-1-high-speed-digital-design-fundamentals-frequency-and-time-mutual-capacitance",
+            "title": "mutual capacitance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect526-high-speed-digital-design-01-module-1-high-speed-digital-design-fundamentals-frequency-and-time-mutual-inductance",
+            "title": "mutual inductance",
             "content": "",
             "pyqs": []
           },
@@ -3770,8 +4094,14 @@
         "title": "Module 2: High speed properties of logic gates power quiescent vs active dissipat",
         "topics": [
           {
-            "id": "ec-5-peect526-high-speed-digital-design-02-module-2-high-speed-properties-of-logic-gates-power-quiescent-vs-active-dissipat-high-speed-properties-of-logic-gates-power-quiescent-vs-active-dissipation",
-            "title": "High Speed properties of Logic gates : Power, Quiescent vs active dissipation",
+            "id": "ec-5-peect526-high-speed-digital-design-02-module-2-high-speed-properties-of-logic-gates-power-quiescent-vs-active-dissipat-high-speed-properties-of-logic-gates-power",
+            "title": "High Speed properties of Logic gates : Power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect526-high-speed-digital-design-02-module-2-high-speed-properties-of-logic-gates-power-quiescent-vs-active-dissipat-quiescent-vs-active-dissipation",
+            "title": "Quiescent vs active dissipation",
             "content": "",
             "pyqs": []
           },
@@ -3878,8 +4208,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect526-high-speed-digital-design-03-module-3-transmission-lines-problems-of-point-to-point-wiring-infinite-uniform-transmission-line-ideal-distortion-less-lossless-transmission-line",
-            "title": "Infinite Uniform transmission line; ideal distortion less lossless transmission line",
+            "id": "ec-5-peect526-high-speed-digital-design-03-module-3-transmission-lines-problems-of-point-to-point-wiring-infinite-uniform-transmission-line",
+            "title": "Infinite Uniform transmission line",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect526-high-speed-digital-design-03-module-3-transmission-lines-problems-of-point-to-point-wiring-ideal-distortion-less-lossless-transmission-line",
+            "title": "ideal distortion less lossless transmission line",
             "content": "",
             "pyqs": []
           },
@@ -4061,8 +4397,14 @@
         "title": "Module 1: Introduction to sensors and actuators block diagram of a closed loop co",
         "topics": [
           {
-            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-control-system",
-            "title": "Introduction to Sensors and actuators : Block diagram of a closed loop control System",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-introduction-to-sensors-and-actuators",
+            "title": "Introduction to Sensors and actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-block-diagram-of-a-closed-loop-control-system",
+            "title": "Block diagram of a closed loop control System",
             "content": "",
             "pyqs": []
           },
@@ -4079,8 +4421,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensor-characteristics-transfer-function",
-            "title": "Sensor Characteristics - Transfer Function",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensor-characteristics",
+            "title": "Sensor Characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-transfer-function",
+            "title": "Transfer Function",
             "content": "",
             "pyqs": []
           },
@@ -4152,7 +4500,7 @@
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-resolution",
-            "title": "Resolution.",
+            "title": "Resolution",
             "content": "",
             "pyqs": []
           }
@@ -4163,8 +4511,14 @@
         "title": "Module 2: Position and displacement sensors",
         "topics": [
           {
-            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-position-and-displacement-sensors-potentiometric-sensors",
-            "title": "Position and Displacement Sensors - Potentiometric Sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-position-and-displacement-sensors",
+            "title": "Position and Displacement Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-potentiometric-sensors",
+            "title": "Potentiometric Sensors",
             "content": "",
             "pyqs": []
           },
@@ -4187,8 +4541,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-pressure-sensors-mercury-pressure-sensor",
-            "title": "Pressure Sensors -Mercury Pressure Sensor",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-pressure-sensors",
+            "title": "Pressure Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-mercury-pressure-sensor",
+            "title": "Mercury Pressure Sensor",
             "content": "",
             "pyqs": []
           },
@@ -4199,8 +4559,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-membranes-and-thin-plates",
-            "title": "Membranes, and Thin plates",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-membranes",
+            "title": "Membranes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-thin-plates",
+            "title": "Thin plates",
             "content": "",
             "pyqs": []
           },
@@ -4212,19 +4578,43 @@
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-capacitive-sensors",
-            "title": "Capacitive Sensors.",
+            "title": "Capacitive Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-force-strain-and-tactile-sensors-strain-gauges",
-            "title": "Force, Strain, and Tactile Sensors - Strain Gauges",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-force-sensors",
+            "title": "Force Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-tactile-sensors-switch-sensors",
-            "title": "Tactile Sensors - Switch Sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-strain-sensors",
+            "title": "Strain Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-tactile-sensors",
+            "title": "Tactile Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-strain-gauges",
+            "title": "Strain Gauges",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-tactile-sensors",
+            "title": "Tactile Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-switch-sensors",
+            "title": "Switch Sensors",
             "content": "",
             "pyqs": []
           },
@@ -4260,7 +4650,7 @@
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoelectric-force-sensors",
-            "title": "Piezoelectric Force Sensors.",
+            "title": "Piezoelectric Force Sensors",
             "content": "",
             "pyqs": []
           }
@@ -4271,20 +4661,32 @@
         "title": "Module 3: Flow sensors",
         "topics": [
           {
-            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-flow-sensors-ultrasonic-flow-sensors",
-            "title": "Flow Sensors - Ultrasonic Flow Sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-flow-sensors",
+            "title": "Flow Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-ultrasonic-flow-sensors",
+            "title": "Ultrasonic Flow Sensors",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-electromagnetic-flow-sensors",
-            "title": "Electromagnetic Flow Sensors.",
+            "title": "Electromagnetic Flow Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-temperature-sensors-resistance-temperature-detectors",
-            "title": "Temperature Sensors - Resistance Temperature Detectors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-temperature-sensors",
+            "title": "Temperature Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-resistance-temperature-detectors",
+            "title": "Resistance Temperature Detectors",
             "content": "",
             "pyqs": []
           },
@@ -4296,31 +4698,43 @@
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-thermocouple",
-            "title": "Thermocouple.",
+            "title": "Thermocouple",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-proximity-sensors-pir-sensors",
-            "title": "Proximity Sensors - PIR sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-proximity-sensors",
+            "title": "Proximity Sensors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-pir-sensors",
+            "title": "PIR sensors",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-ultrasonic-proximity-sensors",
-            "title": "Ultrasonic proximity sensors.",
+            "title": "Ultrasonic proximity sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-smart-sensors-block-diagram",
-            "title": "Smart Sensors - Block Diagram",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-smart-sensors",
+            "title": "Smart Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-difference-between-normal-sensor-smart-sensor",
-            "title": "Difference between Normal Sensor & Smart Sensor",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-block-diagram",
+            "title": "Block Diagram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-difference-between-normal-sensor-and-smart-sensor",
+            "title": "Difference between Normal Sensor and Smart Sensor",
             "content": "",
             "pyqs": []
           },
@@ -4331,8 +4745,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-disadvantages-and-applications",
-            "title": "Disadvantages and Applications.",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-disadvantages",
+            "title": "Disadvantages",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           }
@@ -4343,38 +4763,110 @@
         "title": "Module 4: Actuators",
         "topics": [
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-actuators-definition-classification-electric-hydraulic-pneumatic-actuators",
-            "title": "Actuators : - Definition- classification-Electric, Hydraulic, Pneumatic actuators.",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-definition-of-actuators",
+            "title": "Definition of Actuators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-hydraulic-system-physical-components-and-typical-circuit",
-            "title": "Hydraulic System - Physical Components and typical circuit.",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-classification-of-actuators",
+            "title": "Classification of Actuators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-hydraulic-actuators-linear-actuators",
-            "title": "Hydraulic actuators - Linear actuators",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-electric-actuators",
+            "title": "Electric actuators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-rotary-actuators-gear-motor-vane-motor",
-            "title": "Rotary actuators - Gear motor, vane motor.",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-hydraulic-actuators",
+            "title": "Hydraulic actuators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-pneumatic-system-components-and-typical-circuit",
-            "title": "Pneumatic System - Components and typical circuit.",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-pneumatic-actuators",
+            "title": "Pneumatic actuators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-pneumatic-actuators-bellows-actuator",
-            "title": "Pneumatic Actuators - Bellows actuator",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-hydraulic-system",
+            "title": "Hydraulic System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-physical-components-of-hydraulic-system",
+            "title": "Physical Components of Hydraulic System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-typical-circuit-of-hydraulic-system",
+            "title": "Typical circuit of Hydraulic System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-hydraulic-actuators",
+            "title": "Hydraulic actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-linear-actuators",
+            "title": "Linear actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-rotary-actuators",
+            "title": "Rotary actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-gear-motor",
+            "title": "Gear motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-vane-motor",
+            "title": "Vane motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-pneumatic-system",
+            "title": "Pneumatic System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-components-of-pneumatic-system",
+            "title": "Components of Pneumatic System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-typical-circuit-of-pneumatic-system",
+            "title": "Typical circuit of Pneumatic System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-pneumatic-actuators",
+            "title": "Pneumatic Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-bellows-actuator",
+            "title": "Bellows actuator",
             "content": "",
             "pyqs": []
           },
@@ -4386,13 +4878,19 @@
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-diaphragm-actuators-for-industrial-control-valves",
-            "title": "Diaphragm actuators for industrial control valves.",
+            "title": "Diaphragm actuators for industrial control valves",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-electric-actuators-solenoids",
-            "title": "Electric actuators- Solenoids",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-electric-actuators",
+            "title": "Electric actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-solenoids",
+            "title": "Solenoids",
             "content": "",
             "pyqs": []
           },
@@ -4410,19 +4908,25 @@
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-dc-servo-motors",
-            "title": "DC servo motors.",
+            "title": "DC servo motors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-electro-pneumatic-actuator-rotary-output-actuators",
-            "title": "Electro-Pneumatic actuator; rotary output actuators",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-electro-pneumatic-actuator",
+            "title": "Electro-Pneumatic actuator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-rotary-output-actuators",
+            "title": "Rotary output actuators",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-linear-output-actuators",
-            "title": "Linear output actuators.",
+            "title": "Linear output actuators",
             "content": "",
             "pyqs": []
           }

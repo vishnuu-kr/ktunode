@@ -47,8 +47,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet832-3d-printing-and-tooling-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am-benefits-and-challenges-in-am",
-            "title": "Benefits and challenges in AM",
+            "id": "me-8-oemet832-3d-printing-and-tooling-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am-benefits-in-am",
+            "title": "Benefits in AM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet832-3d-printing-and-tooling-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am-challenges-in-am",
+            "title": "Challenges in AM",
             "content": "",
             "pyqs": []
           },
@@ -65,8 +71,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet832-3d-printing-and-tooling-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am-part-orientation-and-support-generation",
-            "title": "Part orientation and support generation",
+            "id": "me-8-oemet832-3d-printing-and-tooling-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am-part-orientation",
+            "title": "Part orientation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet832-3d-printing-and-tooling-01-module-1-introduction-to-additive-manufacturing-am-basic-principle-of-am-support-generation",
+            "title": "Support generation",
             "content": "",
             "pyqs": []
           },
@@ -263,8 +275,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet832-3d-printing-and-tooling-04-module-4-indirect-methods-for-rapid-tool-production-fusible-metallic-core-and-sand-casting",
-            "title": "Fusible Metallic Core and Sand casting",
+            "id": "me-8-oemet832-3d-printing-and-tooling-04-module-4-indirect-methods-for-rapid-tool-production-fusible-metallic-core",
+            "title": "Fusible Metallic Core",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet832-3d-printing-and-tooling-04-module-4-indirect-methods-for-rapid-tool-production-sand-casting",
+            "title": "Sand casting",
             "content": "",
             "pyqs": []
           },
@@ -338,8 +356,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-historical-developments-and-future-trends",
-            "title": "Historical developments and future trends",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-historical-developments",
+            "title": "Historical developments",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-future-trends",
+            "title": "Future trends",
             "content": "",
             "pyqs": []
           },
@@ -362,8 +386,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-methods-for-improving-accuracy-and-productivity",
-            "title": "Methods for improving accuracy and productivity",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-methods-for-improving-accuracy",
+            "title": "Methods for improving accuracy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-methods-for-improving-productivity",
+            "title": "Methods for improving productivity",
             "content": "",
             "pyqs": []
           },
@@ -374,14 +404,38 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-classification-of-cnc-control-systems-open-and-closed-loop-systems",
-            "title": "Classification of CNC control systems Open and Closed loop systems",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-classification-of-cnc-control-systems",
+            "title": "Classification of CNC control systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-types-of-cnc-machine-tools-systems-devices",
-            "title": "Types of CNC Machine Tools systems devices",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-open-loop-systems",
+            "title": "Open loop systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-closed-loop-systems",
+            "title": "Closed loop systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-types-of-cnc-machine-tools",
+            "title": "Types of CNC Machine Tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-systems",
+            "title": "Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-01-module-1-principles-of-numerical-control-structure-of-nc-systems-devices",
+            "title": "Devices",
             "content": "",
             "pyqs": []
           }
@@ -392,8 +446,14 @@
         "title": "Module 2: Encoders and interpolators",
         "topics": [
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-encoders-and-interpolators",
-            "title": "Encoders and interpolators",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-encoders",
+            "title": "Encoders",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-interpolators",
+            "title": "Interpolators",
             "content": "",
             "pyqs": []
           },
@@ -410,14 +470,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-standard-controllers-and-general-programming-features-available-in-cnc-systems",
-            "title": "Standard Controllers and General Programming features available in CNC Systems",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-standard-controllers-available-in-cnc-systems",
+            "title": "Standard Controllers available in CNC Systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-computer-process-monitoring-and-control",
-            "title": "Computer Process monitoring and Control",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-general-programming-features-available-in-cnc-systems",
+            "title": "General Programming features available in CNC Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-computer-process-monitoring",
+            "title": "Computer Process monitoring",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-02-module-2-encoders-and-interpolators-computer-process-control",
+            "title": "Computer Process Control",
             "content": "",
             "pyqs": []
           },
@@ -440,8 +512,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-axis-identification-and-coordinate-systems",
-            "title": "Axis identification and coordinate systems",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-axis-identification",
+            "title": "Axis identification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-coordinate-systems",
+            "title": "Coordinate systems",
             "content": "",
             "pyqs": []
           },
@@ -458,8 +536,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-programming-for-2-and-3-axis-control-systems",
-            "title": "Programming for 2 and 3 axis control systems",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-programming-for-2-axis-control-systems",
+            "title": "Programming for 2 axis control systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-programming-for-3-axis-control-systems",
+            "title": "Programming for 3 axis control systems",
             "content": "",
             "pyqs": []
           },
@@ -488,8 +572,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-sub-routines-and-fixed-cycles",
-            "title": "sub routines and fixed cycles",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-sub-routines",
+            "title": "Sub routines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-03-module-3-nc-part-programming-fixed-cycles",
+            "title": "Fixed cycles",
             "content": "",
             "pyqs": []
           },
@@ -525,7 +615,7 @@
           },
           {
             "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-use-of-canned-cycles",
-            "title": "use of canned cycles",
+            "title": "Use of canned cycles",
             "content": "",
             "pyqs": []
           },
@@ -536,8 +626,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-design-and-implementation-of-post-processors",
-            "title": "Design and implementation of post processors",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-design-of-post-processors",
+            "title": "Design of post processors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-implementation-of-post-processors",
+            "title": "Implementation of post processors",
             "content": "",
             "pyqs": []
           },
@@ -566,20 +662,38 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-swarf-removal-and-safety-considerations",
-            "title": "Swarf removal and safety considerations",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-swarf-removal",
+            "title": "Swarf removal",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-automatic-tool-changers-and-multiple-pallet-systems",
-            "title": "Automatic tool changers and multiple pallet systems",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-safety-considerations",
+            "title": "Safety considerations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-sensors-and-feedback-devices-in-cnc-machines",
-            "title": "Sensors and feedback devices in CNC machines",
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-automatic-tool-changers",
+            "title": "Automatic tool changers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-multiple-pallet-systems",
+            "title": "Multiple pallet systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-sensors-in-cnc-machines",
+            "title": "Sensors in CNC machines",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet866-advanced-numerical-control-in-manufacturing-04-module-4-computer-aided-part-programming-feedback-devices-in-cnc-machines",
+            "title": "Feedback devices in CNC machines",
             "content": "",
             "pyqs": []
           }
@@ -623,8 +737,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-01-module-1-phases-of-the-design-process-typical-program-organization-and-personnel-responsibilities",
-            "title": "Typical program organization and personnel responsibilities",
+            "id": "me-8-pemet865-aircraft-design-01-module-1-phases-of-the-design-process-typical-program-organization",
+            "title": "Typical program organization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-01-module-1-phases-of-the-design-process-personnel-responsibilities",
+            "title": "personnel responsibilities",
             "content": "",
             "pyqs": []
           },
@@ -659,8 +779,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-forces-and-moments",
-            "title": "forces and moments",
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-forces",
+            "title": "forces",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-moments",
+            "title": "moments",
             "content": "",
             "pyqs": []
           },
@@ -677,14 +803,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-aircraft-weight-breakdown-and-definition",
-            "title": "Aircraft weight breakdown and definition",
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-aircraft-weight-breakdown",
+            "title": "Aircraft weight breakdown",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-aircraft-weight-definition",
+            "title": "Aircraft weight definition",
             "content": "",
             "pyqs": []
           },
           {
             "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-basic-aircraft-performance-terminology-flight-in-the-horizontal-and-vertical-planes",
-            "title": "Basic aircraft performance terminology( flight in the horizontal and vertical planes)",
+            "title": "Basic aircraft performance terminology (flight in the horizontal and vertical planes)",
             "content": "",
             "pyqs": []
           },
@@ -695,8 +827,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-factors-influencing-the-aircraft-configuration-size-weight",
-            "title": "Factors influencing the aircraft configuration, size, weight",
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-factors-influencing-the-aircraft-configuration",
+            "title": "Factors influencing the aircraft configuration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-factors-influencing-size",
+            "title": "Factors influencing size",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-factors-influencing-weight",
+            "title": "Factors influencing weight",
             "content": "",
             "pyqs": []
           },
@@ -713,8 +857,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-the-lift-curve-and-parabolic-drag-polar",
-            "title": "The lift curve and parabolic drag polar",
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-the-lift-curve",
+            "title": "The lift curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-02-module-2-basic-aircraft-terminology-and-conventions-parabolic-drag-polar",
+            "title": "parabolic drag polar",
             "content": "",
             "pyqs": []
           }
@@ -725,8 +875,14 @@
         "title": "Module 3: Aircraft performance and fuel fraction estimates",
         "topics": [
           {
-            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-aircraft-performance-and-fuel-fraction-estimates",
-            "title": "Aircraft performance and fuel fraction estimates",
+            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-aircraft-performance",
+            "title": "Aircraft performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-fuel-fraction-estimates",
+            "title": "fuel fraction estimates",
             "content": "",
             "pyqs": []
           },
@@ -743,8 +899,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-manoeuvring-flight-in-the-vertical-and-horizontal-planes",
-            "title": "Manoeuvring flight in the vertical and horizontal planes",
+            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-manoeuvring-flight-in-the-vertical-planes",
+            "title": "Manoeuvring flight in the vertical planes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-manoeuvring-flight-in-the-horizontal-planes",
+            "title": "Manoeuvring flight in the horizontal planes",
             "content": "",
             "pyqs": []
           },
@@ -761,8 +923,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-field-performance-take-off-and-landing",
-            "title": "Field Performance- Take-off and Landing",
+            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-field-performance-take-off",
+            "title": "Field Performance - Take-off",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-03-module-3-aircraft-performance-and-fuel-fraction-estimates-field-performance-landing",
+            "title": "Field Performance - Landing",
             "content": "",
             "pyqs": []
           },
@@ -803,8 +971,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-configuration-trade-studies-configuration-types-tailless-canard-conventional",
-            "title": "Configuration trade studies- Configuration types(tailless, canard, conventional)",
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-configuration-trade-studies",
+            "title": "Configuration trade studies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-configuration-types-tailless",
+            "title": "Configuration types - tailless",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-configuration-types-canard",
+            "title": "Configuration types - canard",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-configuration-types-conventional",
+            "title": "Configuration types - conventional",
             "content": "",
             "pyqs": []
           },
@@ -815,26 +1001,80 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-empennage-configurations-cruciform-t-h-v-cathedral",
-            "title": "Empennage configurations( cruciform, T, H, V, cathedral)",
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-empennage-configurations-cruciform",
+            "title": "Empennage configurations - cruciform",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-engine-placements-single-or-multi-engine",
-            "title": "Engine placements(single or multi engine)",
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-empennage-configurations-t",
+            "title": "Empennage configurations - T",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-landing-gear-type-and-placement-tail-dragger-tricycle-tandem",
-            "title": "Landing gear type and placement(tail dragger, tricycle, tandem)",
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-empennage-configurations-h",
+            "title": "Empennage configurations - H",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-airofoil-selection-packaging-for-storage-transport",
-            "title": "Airofoil selection,packaging for storage/transport",
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-empennage-configurations-v",
+            "title": "Empennage configurations - V",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-empennage-configurations-cathedral",
+            "title": "Empennage configurations - cathedral",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-engine-placements-single-engine",
+            "title": "Engine placements - single engine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-engine-placements-multi-engine",
+            "title": "Engine placements - multi engine",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-landing-gear-type-tail-dragger",
+            "title": "Landing gear type - tail dragger",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-landing-gear-type-tricycle",
+            "title": "Landing gear type - tricycle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-landing-gear-type-tandem",
+            "title": "Landing gear type - tandem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-landing-gear-placement",
+            "title": "Landing gear placement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-airofoil-selection",
+            "title": "Airofoil selection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet865-aircraft-design-04-module-4-propulsion-system-selection-packaging-for-storage-transport",
+            "title": "Packaging for storage/transport",
             "content": "",
             "pyqs": []
           }
@@ -890,8 +1130,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-external-and-internal-factors-affecting-business",
-            "title": "External and Internal Factors affecting Business",
+            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-external-factors-affecting-business",
+            "title": "External Factors affecting Business",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-internal-factors-affecting-business",
+            "title": "Internal Factors affecting Business",
             "content": "",
             "pyqs": []
           },
@@ -908,14 +1154,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-globalization-and-modern-day-business",
-            "title": "Globalization and Modern day Business",
+            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-globalization",
+            "title": "Globalization",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-need-of-business-ethics-and-business-responsibility",
-            "title": "Need of Business Ethics and Business Responsibility",
+            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-modern-day-business",
+            "title": "Modern day Business",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-need-of-business-ethics",
+            "title": "Need of Business Ethics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-01-module-1-introduction-business-responsibility",
+            "title": "Business Responsibility",
             "content": "",
             "pyqs": []
           }
@@ -1046,8 +1304,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-03-module-3-development-establishment-of-business-incorporation-and-registration",
-            "title": "Incorporation and Registration",
+            "id": "me-8-oemet834-business-organization-and-development-03-module-3-development-establishment-of-business-incorporation",
+            "title": "Incorporation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-03-module-3-development-establishment-of-business-registration",
+            "title": "Registration",
             "content": "",
             "pyqs": []
           },
@@ -1076,8 +1340,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-03-module-3-development-establishment-of-business-memorandum-and-articles-of-association",
-            "title": "Memorandum and Articles of Association",
+            "id": "me-8-oemet834-business-organization-and-development-03-module-3-development-establishment-of-business-memorandum-of-association",
+            "title": "Memorandum of Association",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-03-module-3-development-establishment-of-business-articles-of-association",
+            "title": "Articles of Association",
             "content": "",
             "pyqs": []
           },
@@ -1172,20 +1442,38 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-internal-and-external-trades",
-            "title": "Internal and External Trades",
+            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-internal-trades",
+            "title": "Internal Trades",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-import-and-export",
-            "title": "Import and Export",
+            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-external-trades",
+            "title": "External Trades",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-whole-sale-and-retail-system",
-            "title": "Whole sale and Retail System",
+            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-import",
+            "title": "Import",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-export",
+            "title": "Export",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-whole-sale-system",
+            "title": "Whole sale System",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet834-business-organization-and-development-04-module-4-business-channels-retail-system",
+            "title": "Retail System",
             "content": "",
             "pyqs": []
           },
@@ -1301,8 +1589,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet861-cryogenic-engineering-01-module-1-introduction-to-cryogenic-engineering-electric-and-magnetic-properties-of-materials-at-low-temperatures",
-            "title": "Electric and magnetic properties of materials at low temperatures",
+            "id": "me-8-pemet861-cryogenic-engineering-01-module-1-introduction-to-cryogenic-engineering-electric-properties-of-materials-at-low-temperatures",
+            "title": "Electric properties of materials at low temperatures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet861-cryogenic-engineering-01-module-1-introduction-to-cryogenic-engineering-magnetic-properties-of-materials-at-low-temperatures",
+            "title": "Magnetic properties of materials at low temperatures",
             "content": "",
             "pyqs": []
           },
@@ -1445,8 +1739,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet861-cryogenic-engineering-02-module-2-cryogenic-liquefaction-systems-system-performance-parameters-ideal-liqu-ln2-precooled-linde-hampson-and-claude-systems",
-            "title": "LN2 precooled Linde Hampson and Claude systems",
+            "id": "me-8-pemet861-cryogenic-engineering-02-module-2-cryogenic-liquefaction-systems-system-performance-parameters-ideal-liqu-ln2-precooled-linde-hampson-systems",
+            "title": "LN2 precooled Linde Hampson systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet861-cryogenic-engineering-02-module-2-cryogenic-liquefaction-systems-system-performance-parameters-ideal-liqu-ln2-precooled-claude-systems",
+            "title": "LN2 precooled Claude systems",
             "content": "",
             "pyqs": []
           },
@@ -1850,14 +2150,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-ev-transmission-configurations-front-wheel-drive-and-rear-wheel-drive",
-            "title": "EV transmission - configurations - front wheel drive and rear-wheel drive.",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-ev-transmission-configurations-front-wheel-drive",
+            "title": "EV transmission - configurations - front wheel drive",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-traction-motor-characteristics-and-comparison-with-ic-engine-characteristics",
-            "title": "Traction motor characteristics and comparison with IC engine characteristics.",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-rear-wheel-drive",
+            "title": "rear-wheel drive.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-traction-motor-characteristics",
+            "title": "Traction motor characteristics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-comparison-with-ic-engine-characteristics",
+            "title": "comparison with IC engine characteristics.",
             "content": "",
             "pyqs": []
           },
@@ -1892,8 +2204,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-series-parallel-and-complex",
-            "title": "series-parallel and complex",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-series-parallel",
+            "title": "series-parallel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-01-module-1-vehicle-fundamentals-general-description-complex",
+            "title": "complex",
             "content": "",
             "pyqs": []
           },
@@ -1970,8 +2288,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-supercapacitors-and-ultracapacitors",
-            "title": "supercapacitors and ultracapacitors",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-supercapacitors",
+            "title": "supercapacitors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-ultracapacitors",
+            "title": "ultracapacitors",
             "content": "",
             "pyqs": []
           },
@@ -2012,8 +2336,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-ais-156-2020-and-ais-038-rev-2020",
-            "title": "AIS 156 (2020) and AIS 038 Rev (2020).",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-ais-156-2020",
+            "title": "AIS 156 (2020)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-ais-038-rev-2020",
+            "title": "AIS 038 Rev (2020).",
             "content": "",
             "pyqs": []
           },
@@ -2024,8 +2354,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-layout-of-ac-and-dc-chargers",
-            "title": "layout of AC and DC chargers",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-layout-of-ac-chargers",
+            "title": "layout of AC chargers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-02-module-2-energy-storage-battery-basics-layout-of-dc-chargers",
+            "title": "layout of DC chargers",
             "content": "",
             "pyqs": []
           },
@@ -2078,8 +2414,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-basic-principles-and-construction",
-            "title": "basic principles and construction",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-basic-principles",
+            "title": "basic principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-construction",
+            "title": "construction",
             "content": "",
             "pyqs": []
           },
@@ -2102,8 +2444,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-smco-and-ndfeb-types",
-            "title": "SmCo and NdFeB types",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-smco-types",
+            "title": "SmCo types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-ndfeb-types",
+            "title": "NdFeB types",
             "content": "",
             "pyqs": []
           },
@@ -2120,8 +2468,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-basic-principles-and-construction",
-            "title": "basic principles and construction",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-basic-principles",
+            "title": "basic principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-construction",
+            "title": "construction",
             "content": "",
             "pyqs": []
           },
@@ -2132,8 +2486,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-basic-principles-and-construction",
-            "title": "basic principles and construction.",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-basic-principles",
+            "title": "basic principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-03-module-3-electric-propulsion-system-electric-motors-construction",
+            "title": "construction.",
             "content": "",
             "pyqs": []
           },
@@ -2192,8 +2552,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-mosfet-and-igbt",
-            "title": "MOSFET and IGBT",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-mosfet",
+            "title": "MOSFET",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-igbt",
+            "title": "IGBT",
             "content": "",
             "pyqs": []
           },
@@ -2222,14 +2588,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-bldc-motor-controls-torque-control-and-speed-control-methods",
-            "title": "BLDC motor controls - torque control and speed control methods",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-bldc-motor-controls-torque-control-methods",
+            "title": "BLDC motor controls - torque control methods",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-principles-and-block-diagrams",
-            "title": "principles and block diagrams.",
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-speed-control-methods",
+            "title": "speed control methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-principles",
+            "title": "principles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet863-hybrid-and-electric-vehicles-04-module-4-motor-controllers-motor-drive-components-block-diagrams",
+            "title": "block diagrams.",
             "content": "",
             "pyqs": []
           },
@@ -2297,8 +2675,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-selection-and-specification-of-pumps",
-            "title": "Selection and Specification of Pumps",
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-selection-of-pumps",
+            "title": "Selection of Pumps",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-specification-of-pumps",
+            "title": "Specification of Pumps",
             "content": "",
             "pyqs": []
           },
@@ -2321,8 +2705,38 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-selection-specification-and-characteristics-of-linear-and-rotary-actuators",
-            "title": "Selection, Specification and Characteristics of Linear and Rotary Actuators",
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-selection-of-linear-actuators",
+            "title": "Selection of Linear Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-specification-of-linear-actuators",
+            "title": "Specification of Linear Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-characteristics-of-linear-actuators",
+            "title": "Characteristics of Linear Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-selection-of-rotary-actuators",
+            "title": "Selection of Rotary Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-specification-of-rotary-actuators",
+            "title": "Specification of Rotary Actuators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet831-industrial-hydraulics-and-automation-01-module-1-hydraulic-power-generators-selection-and-specification-of-pumps-pump-ch-characteristics-of-rotary-actuators",
+            "title": "Characteristics of Rotary Actuators",
             "content": "",
             "pyqs": []
           }
@@ -2546,8 +2960,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-applications-modular-design-and-topology-customization",
-            "title": "Applications- Modular Design and Topology-Customization",
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-applications",
+            "title": "Applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-modular-design-and-topology",
+            "title": "Modular Design and Topology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-customization",
+            "title": "Customization",
             "content": "",
             "pyqs": []
           },
@@ -2558,8 +2984,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-scalability-design-freedom-in-am-complex-geometries",
-            "title": "Scalability - Design freedom in AM- Complex Geometries",
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-scalability",
+            "title": "Scalability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-design-freedom-in-am",
+            "title": "Design freedom in AM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-complex-geometries",
+            "title": "Complex Geometries",
             "content": "",
             "pyqs": []
           },
@@ -2570,8 +3008,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-material-efficiency-benefits-of-topology-design-freedom-performance-enhancement",
-            "title": "Material Efficiency -Benefits of Topology Design Freedom- Performance Enhancement",
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-material-efficiency",
+            "title": "Material Efficiency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-benefits-of-topology-design-freedom",
+            "title": "Benefits of Topology Design Freedom",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-01-module-1-introduction-to-additive-manufacturing-am-process-performance-enhancement",
+            "title": "Performance Enhancement",
             "content": "",
             "pyqs": []
           },
@@ -2618,8 +3068,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-metal-am-physics-and-processes-pbf",
-            "title": "Metal AM physics and processes - PBF",
+            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-metal-am-physics-and-processes",
+            "title": "Metal AM physics and processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-pbf",
+            "title": "PBF",
             "content": "",
             "pyqs": []
           },
@@ -2642,8 +3098,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-laser-and-extrusion-sls",
-            "title": "Laser and Extrusion - SLS",
+            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-laser-and-extrusion",
+            "title": "Laser and Extrusion",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-sls",
+            "title": "SLS",
             "content": "",
             "pyqs": []
           },
@@ -2684,14 +3146,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-powder-and-sheet-systems",
-            "title": "Powder and Sheet Systems",
+            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-powder-systems",
+            "title": "Powder Systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-sheet-systems",
+            "title": "Sheet Systems",
             "content": "",
             "pyqs": []
           },
           {
             "id": "me-8-pemet867-metal-additive-manufacturing-02-module-2-cad-for-am-metal-am-as-an-extension-of-welding-techniques-gtaw-gmaw",
-            "title": "Metal AM as an Extension of Welding Techniques (GTAW/GMAW).",
+            "title": "Metal AM as an Extension of Welding Techniques (GTAW/GMAW)",
             "content": "",
             "pyqs": []
           }
@@ -2714,14 +3182,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-binder-and-material-jetting-feedstocks",
-            "title": "Binder and Material Jetting Feedstocks",
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-binder-jetting-feedstocks",
+            "title": "Binder Jetting Feedstocks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-metallurgy-and-properties-of-materials-microstructure",
-            "title": "Metallurgy and properties of materials- Microstructure",
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-material-jetting-feedstocks",
+            "title": "Material Jetting Feedstocks",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-metallurgy-and-properties-of-materials",
+            "title": "Metallurgy and properties of materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-microstructure",
+            "title": "Microstructure",
             "content": "",
             "pyqs": []
           },
@@ -2732,14 +3212,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-thermal-and-chemical-properties",
-            "title": "Thermal and Chemical Properties",
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-thermal-properties",
+            "title": "Thermal Properties",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-post-processing-and-testing-heat-treatment",
-            "title": "Post processing and testing - Heat Treatment",
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-chemical-properties",
+            "title": "Chemical Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-post-processing-and-testing",
+            "title": "Post processing and testing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-heat-treatment",
+            "title": "Heat Treatment",
             "content": "",
             "pyqs": []
           },
@@ -2756,8 +3248,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-surface-treatment-and-ndt-methods",
-            "title": "Surface Treatment and NDT Methods.",
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-surface-treatment",
+            "title": "Surface Treatment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-03-module-3-metal-am-physics-and-processes-ndt-methods",
+            "title": "NDT Methods",
             "content": "",
             "pyqs": []
           }
@@ -2780,14 +3278,26 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-simulation-and-analysis",
-            "title": "Simulation and Analysis",
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-simulation",
+            "title": "Simulation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-modelling-for-am-support-structures",
-            "title": "Modelling for AM -Support Structures",
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-analysis",
+            "title": "Analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-modelling-for-am",
+            "title": "Modelling for AM",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-support-structures",
+            "title": "Support Structures",
             "content": "",
             "pyqs": []
           },
@@ -2798,8 +3308,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-value-analysis-cost",
-            "title": "Value analysis - Cost",
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-value-analysis",
+            "title": "Value analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-cost",
+            "title": "Cost",
             "content": "",
             "pyqs": []
           },
@@ -2810,8 +3326,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-performance-and-sustainability-future-of-metal-am",
-            "title": "Performance and Sustainability -Future of metal AM",
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-performance",
+            "title": "Performance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-sustainability",
+            "title": "Sustainability",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet867-metal-additive-manufacturing-04-module-4-reverse-engineering-for-metal-am-future-of-metal-am",
+            "title": "Future of metal AM",
             "content": "",
             "pyqs": []
           }
@@ -2837,14 +3365,62 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-introduction-to-macro-meso-micro-and-nano-manufacturing-classification",
-            "title": "Introduction to macro, meso, micro, and nano manufacturing - Classification",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-introduction-to-macro-manufacturing",
+            "title": "Introduction to macro manufacturing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-traditional-mechanical-micromachining-process-micro-turning-micro-drilling-micro-grinding-high-speed-machining",
-            "title": "Traditional Mechanical Micromachining Process : Micro Turning, Micro Drilling, Micro Grinding, High-Speed Machining",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-introduction-to-meso-manufacturing",
+            "title": "Introduction to meso manufacturing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-introduction-to-micro-manufacturing",
+            "title": "Introduction to micro manufacturing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-introduction-to-nano-manufacturing",
+            "title": "Introduction to nano manufacturing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-classification",
+            "title": "Classification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-traditional-mechanical-micromachining-process",
+            "title": "Traditional Mechanical Micromachining Process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-micro-turning",
+            "title": "Micro Turning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-micro-drilling",
+            "title": "Micro Drilling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-micro-grinding",
+            "title": "Micro Grinding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-high-speed-machining",
+            "title": "High-Speed Machining",
             "content": "",
             "pyqs": []
           },
@@ -2855,20 +3431,62 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-diamond-micro-turning-principle-process-description-and-applications",
-            "title": "Diamond micro turning- principle, process, description and applications",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-diamond-micro-turning-principle",
+            "title": "Diamond micro turning - principle",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-mechanical-type-micromachining-processes-abrasive-based-nano-finishing-process",
-            "title": "Mechanical type micromachining processes - Abrasive based nano finishing process",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-diamond-micro-turning-process",
+            "title": "Diamond micro turning - process",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-introduction-to-beam-energy-based-micro-machining-processes-ultrasonic-micro-machining-focused-ion-beam-machining-laser-beam-micro-machining",
-            "title": "Introduction to beam energy based micro machining processes - Ultrasonic micro machining, Focused Ion Beam machining, Laser Beam micro machining.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-diamond-micro-turning-description",
+            "title": "Diamond micro turning - description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-diamond-micro-turning-applications",
+            "title": "Diamond micro turning - applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-mechanical-type-micromachining-processes",
+            "title": "Mechanical type micromachining processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-abrasive-based-nano-finishing-process",
+            "title": "Abrasive based nano finishing process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-introduction-to-beam-energy-based-micro-machining-processes",
+            "title": "Introduction to beam energy based micro machining processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-ultrasonic-micro-machining",
+            "title": "Ultrasonic micro machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-focused-ion-beam-machining",
+            "title": "Focused Ion Beam machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-laser-beam-micro-machining",
+            "title": "Laser Beam micro machining",
             "content": "",
             "pyqs": []
           },
@@ -2879,8 +3497,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-chemical-and-electro-chemical-type-advanced-machining-processes",
-            "title": "Chemical and Electro-Chemical Type Advanced Machining Processes",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-chemical-type-advanced-machining-processes",
+            "title": "Chemical Type Advanced Machining Processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-01-module-1-introduction-to-precision-engineering-electro-chemical-type-advanced-machining-processes",
+            "title": "Electro-Chemical Type Advanced Machining Processes",
             "content": "",
             "pyqs": []
           }
@@ -2891,38 +3515,176 @@
         "title": "Module 2: Micro forming techniques laser micro",
         "topics": [
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-forming-techniques-laser-micro-bending-micro-deep-drawing-and-micro-extrusion",
-            "title": "Micro forming techniques : laser micro-bending, micro-deep drawing, and micro-extrusion",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-forming-techniques",
+            "title": "Micro forming techniques",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-moulding-processes-injection-moulding-hot-embossing-micromolding-tools-applications",
-            "title": "Micro moulding processes: Injection moulding, hot embossing - micromolding tools-applications.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-laser-micro-bending",
+            "title": "Laser micro-bending",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-welding-and-joining-techniques-laser-micro-welding-electron-beam-micro-welding",
-            "title": "Micro welding and joining techniques: Laser micro welding- Electron Beam Micro welding.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-deep-drawing",
+            "title": "Micro-deep drawing",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-nano-finishing-processes-abrasive-flow-machining-magnetic-abrasive-finishing-magneto-rheological-abrasive-flow-machining-magneto-rheological-finishing-elastic-emission-machining-eem-ionbeam-machining-ibm-chemical-mechanical-polishing-cmp-principle-equipment-and-applications",
-            "title": "Micro/ Nano finishing processes - Abrasive Flow Machining, Magnetic Abrasive Finishing, Magneto Rheological Abrasive Flow Machining, Magneto Rheological Finishing. Elastic Emission machining (EEM), IonBeam Machining (IBM), Chemical Mechanical Polishing (CMP)- principle, equipment and applications",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-extrusion",
+            "title": "Micro-extrusion",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-hybrid-micro-nano-machining-electro-chemical-spark-micro-machining-electro-discharge-grinding-electrolytic-in-process-dressing-grinding",
-            "title": "Hybrid micro/nano machining - Electro Chemical Spark Micro Machining, Electro Discharge Grinding, Electrolytic in Process Dressing Grinding.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-moulding-processes",
+            "title": "Micro moulding processes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-laser-technology-in-micro-manufacturing-practical-lasers-application-of-technology-fundamentals",
-            "title": "Laser technology in micro manufacturing - Practical Lasers, application of technology fundamentals.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-injection-moulding",
+            "title": "Injection moulding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-hot-embossing",
+            "title": "Hot embossing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micromolding-tools",
+            "title": "Micromolding tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-applications-of-micromolding-tools",
+            "title": "Applications of micromolding tools",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-welding-and-joining-techniques",
+            "title": "Micro welding and joining techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-laser-micro-welding",
+            "title": "Laser micro welding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-electron-beam-micro-welding",
+            "title": "Electron Beam Micro welding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-micro-nano-finishing-processes",
+            "title": "Micro/Nano finishing processes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-abrasive-flow-machining",
+            "title": "Abrasive Flow Machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-magnetic-abrasive-finishing",
+            "title": "Magnetic Abrasive Finishing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-magneto-rheological-abrasive-flow-machining",
+            "title": "Magneto Rheological Abrasive Flow Machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-magneto-rheological-finishing",
+            "title": "Magneto Rheological Finishing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-elastic-emission-machining-eem",
+            "title": "Elastic Emission machining (EEM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-ion-beam-machining-ibm",
+            "title": "Ion Beam Machining (IBM)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-chemical-mechanical-polishing-cmp-principle",
+            "title": "Chemical Mechanical Polishing (CMP) - principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-chemical-mechanical-polishing-cmp-equipment",
+            "title": "Chemical Mechanical Polishing (CMP) - equipment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-chemical-mechanical-polishing-cmp-applications",
+            "title": "Chemical Mechanical Polishing (CMP) - applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-hybrid-micro-nano-machining",
+            "title": "Hybrid micro/nano machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-electro-chemical-spark-micro-machining",
+            "title": "Electro Chemical Spark Micro Machining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-electro-discharge-grinding",
+            "title": "Electro Discharge Grinding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-electrolytic-in-process-dressing-grinding",
+            "title": "Electrolytic in Process Dressing Grinding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-laser-technology-in-micro-manufacturing",
+            "title": "Laser technology in micro manufacturing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-practical-lasers",
+            "title": "Practical Lasers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-02-module-2-micro-forming-techniques-laser-micro-application-of-technology-fundamentals",
+            "title": "Application of technology fundamentals",
             "content": "",
             "pyqs": []
           }
@@ -2939,32 +3701,194 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-basics-of-micro-fabrication-integrated-circuit-fabrication",
-            "title": "basics of micro-fabrication, integrated circuit fabrication",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-basics-of-micro-fabrication",
+            "title": "Basics of micro-fabrication",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-crystallography-and-its-effects-silicon-as-substrate-and-structural-material-stress-and-strain-crystal-plane-effects-on-etching-wet-etching-process-reaction-phenomena-anisotropic-etching-isotropic-etch-curves-masking-for-anisotropic-etchants-etching-control-fusion-bonding-of-silicon-on-an-insulator-deep-reactive-ion-etching-fabrication-of-a-cantilever-probe-manufacture-microprocessors-and-applications",
-            "title": "crystallography and its effects, silicon as substrate and structural material, stress and strain, crystal plane effects on etching, wet etching process, reaction phenomena, anisotropic etching, isotropic etch curves, masking for anisotropic etchants, etching control, fusion bonding of silicon on an insulator, deep reactive ion etching, fabrication of a cantilever probe, manufacture, microprocessors and applications",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-integrated-circuit-fabrication",
+            "title": "Integrated circuit fabrication",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-crystallography-and-its-effects",
+            "title": "Crystallography and its effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-silicon-as-substrate-and-structural-material",
+            "title": "Silicon as substrate and structural material",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-stress-and-strain",
+            "title": "Stress and strain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-crystal-plane-effects-on-etching",
+            "title": "Crystal plane effects on etching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-wet-etching-process",
+            "title": "Wet etching process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-reaction-phenomena",
+            "title": "Reaction phenomena",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-anisotropic-etching",
+            "title": "Anisotropic etching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-isotropic-etch-curves",
+            "title": "Isotropic etch curves",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-masking-for-anisotropic-etchants",
+            "title": "Masking for anisotropic etchants",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-etching-control",
+            "title": "Etching control",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-fusion-bonding-of-silicon-on-an-insulator",
+            "title": "Fusion bonding of silicon on an insulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-deep-reactive-ion-etching",
+            "title": "Deep reactive ion etching",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-fabrication-of-a-cantilever-probe",
+            "title": "Fabrication of a cantilever probe",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-manufacture",
+            "title": "Manufacture",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-microprocessors-and-applications",
+            "title": "Microprocessors and applications",
             "content": "",
             "pyqs": []
           },
           {
             "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-problems-with-etching-in-bulk-micromachining",
-            "title": "problems with etching in bulk micromachining.",
+            "title": "Problems with etching in bulk micromachining",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-micro-fabrication-techniques-lithography-thin-film-deposition-and-doping-etching-and-substrate-removal-substrate-bonding-mems-fabrication-techniques-micro-fabrication-using-deposition-techniques-epitaxial-sputtering-chemical-vapour-deposition-cvd-techniques",
-            "title": "Micro fabrication Techniques: Lithography, Thin Film Deposition and Doping, Etching and Substrate Removal, Substrate Bonding, MEMS Fabrication Techniques, Micro-fabrication using deposition techniques: epitaxial, sputtering, chemical vapour deposition (CVD) techniques.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-micro-fabrication-techniques",
+            "title": "Micro fabrication Techniques",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-bulk-micromachining-surface-micromachining-high-aspect-ratio-micromachining-photolithography-liga-process",
-            "title": "Bulk Micromachining, Surface Micromachining, High- Aspect- Ratio Micromachining, Photolithography, LIGA process",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-lithography",
+            "title": "Lithography",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-thin-film-deposition-and-doping",
+            "title": "Thin Film Deposition and Doping",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-etching-and-substrate-removal",
+            "title": "Etching and Substrate Removal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-substrate-bonding",
+            "title": "Substrate Bonding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-mems-fabrication-techniques",
+            "title": "MEMS Fabrication Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-micro-fabrication-using-deposition-techniques-epitaxial",
+            "title": "Micro-fabrication using deposition techniques: epitaxial",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-micro-fabrication-using-deposition-techniques-sputtering",
+            "title": "Micro-fabrication using deposition techniques: sputtering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-micro-fabrication-using-deposition-techniques-chemical-vapour-deposition-cvd-techniques",
+            "title": "Micro-fabrication using deposition techniques: chemical vapour deposition (CVD) techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-bulk-micromachining",
+            "title": "Bulk Micromachining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-surface-micromachining",
+            "title": "Surface Micromachining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-high-aspect-ratio-micromachining",
+            "title": "High-Aspect-Ratio Micromachining",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-photolithography",
+            "title": "Photolithography",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-03-module-3-characterizing-etching-processes-in-bulk-micromachining-liga-process",
+            "title": "LIGA process",
             "content": "",
             "pyqs": []
           }
@@ -2981,44 +3905,266 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-nanofabrication-using-soft-lithography-principle-applications-examples-field-effect-transistor-elastic-stamp-e-beam-nanolithography-important-techniques-introduction-to-nanotechnology",
-            "title": "Nanofabrication using soft lithography - principle, applications - Examples (Field Effect Transistor, Elastic Stamp) e-Beam Nanolithography - important techniques, Introduction to Nanotechnology.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-nanofabrication-using-soft-lithography-principle",
+            "title": "Nanofabrication using soft lithography - principle",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-principle-of-the-soft-lithography-and-applications",
-            "title": "Principle of the soft lithography and applications",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-nanofabrication-using-soft-lithography-applications",
+            "title": "Nanofabrication using soft lithography - applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-principle-of-micro-contact-printing-and-applications",
-            "title": "principle of micro contact printing and applications",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-examples-field-effect-transistor",
+            "title": "Examples: Field Effect Transistor",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-characterizing-the-surface-micromachining-process-isolation-layer-sacrificial-layer-structural-material-selective-etching-properties-stress-stress-measurement-friction",
-            "title": "characterizing the surface micromachining process, isolation layer, sacrificial layer, structural material, selective etching - properties, stress, stress measurement, friction",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-examples-elastic-stamp",
+            "title": "Examples: Elastic Stamp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-wafer-bonding-anodic-and-fusion-bonding",
-            "title": "wafer bonding: anodic and fusion, bonding.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-e-beam-nanolithography-important-techniques",
+            "title": "e-Beam Nanolithography - important techniques",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-manipulative-techniques-process-principle-applications-introduction-tocarbon-nano-materials-properties-and-applications-carbon-nanotubes-transistors-description-only-diamond-properties-and-applications-cvd-diamond-technology",
-            "title": "Manipulative techniques - process principle, applications. Introduction toCarbon nano materials -- properties and applications, Carbon Nanotubes Transistors - (Description only) Diamond - Properties and applications, CVD Diamond Technology.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-introduction-to-nanotechnology",
+            "title": "Introduction to Nanotechnology",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-introduction-to-micro-nano-inspection-and-metrology-scanning-electron-microscopy-principle-and-description-scanning-white-light-interferometry-principle-and-description-optical-microscopy-principle-and-description-scanning-probe-microscopy-scanning-tunnelling-microscopy-principle-description-and-applications-confocal-microscopy-atomic-force-microscopy-principle-and-description-introduction-to-on-machine-metrology",
-            "title": "Introduction to micro-nano inspection and metrology - Scanning electron microscopy- principle and description, Scanning white light interferometry- principle and description. Optical microscopy- principle and description. Scanning probe microscopy, Scanning tunnelling microscopy- principle, description and applications. Confocal microscopy, Atomic force microscopy- principle and description. Introduction to On-machine metrology.",
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-principle-of-the-soft-lithography",
+            "title": "Principle of the soft lithography",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-applications-of-soft-lithography",
+            "title": "Applications of soft lithography",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-principle-of-micro-contact-printing",
+            "title": "Principle of micro contact printing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-applications-of-micro-contact-printing",
+            "title": "Applications of micro contact printing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-characterizing-the-surface-micromachining-process",
+            "title": "Characterizing the surface micromachining process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-isolation-layer",
+            "title": "Isolation layer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-sacrificial-layer",
+            "title": "Sacrificial layer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-structural-material",
+            "title": "Structural material",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-selective-etching-properties",
+            "title": "Selective etching - properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-selective-etching-stress",
+            "title": "Selective etching - stress",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-selective-etching-stress-measurement",
+            "title": "Selective etching - stress measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-selective-etching-friction",
+            "title": "Selective etching - friction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-wafer-bonding",
+            "title": "Wafer bonding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-anodic-bonding",
+            "title": "Anodic bonding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-fusion-bonding",
+            "title": "Fusion bonding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-manipulative-techniques-process-principle",
+            "title": "Manipulative techniques - process principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-manipulative-techniques-applications",
+            "title": "Manipulative techniques - applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-introduction-to-carbon-nano-materials-properties",
+            "title": "Introduction to Carbon nano materials - properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-introduction-to-carbon-nano-materials-applications",
+            "title": "Introduction to Carbon nano materials - applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-carbon-nanotubes-transistors-description-only",
+            "title": "Carbon Nanotubes Transistors (Description only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-diamond-properties",
+            "title": "Diamond - Properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-diamond-applications",
+            "title": "Diamond - applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-cvd-diamond-technology",
+            "title": "CVD Diamond Technology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-introduction-to-micro-nano-inspection-and-metrology",
+            "title": "Introduction to micro-nano inspection and metrology",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-electron-microscopy-principle",
+            "title": "Scanning electron microscopy - principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-electron-microscopy-description",
+            "title": "Scanning electron microscopy - description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-white-light-interferometry-principle",
+            "title": "Scanning white light interferometry - principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-white-light-interferometry-description",
+            "title": "Scanning white light interferometry - description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-optical-microscopy-principle",
+            "title": "Optical microscopy - principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-optical-microscopy-description",
+            "title": "Optical microscopy - description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-probe-microscopy",
+            "title": "Scanning probe microscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-tunnelling-microscopy-principle",
+            "title": "Scanning tunnelling microscopy - principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-tunnelling-microscopy-description",
+            "title": "Scanning tunnelling microscopy - description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-scanning-tunnelling-microscopy-applications",
+            "title": "Scanning tunnelling microscopy - applications",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-confocal-microscopy",
+            "title": "Confocal microscopy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-atomic-force-microscopy-principle",
+            "title": "Atomic force microscopy - principle",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-atomic-force-microscopy-description",
+            "title": "Atomic force microscopy - description",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet864-micro-and-nano-manufacturing-04-module-4-introduction-to-nanofabrication-introduction-to-on-machine-metrology",
+            "title": "Introduction to On-machine metrology",
             "content": "",
             "pyqs": []
           }
@@ -3395,8 +4541,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet868-nanotechnology-02-module-2-fabrication-of-nanomaterials-top-down-and-bottom-up-approaches",
-            "title": "Top-down and Bottom-up approaches",
+            "id": "me-8-pemet868-nanotechnology-02-module-2-fabrication-of-nanomaterials-top-down-approaches",
+            "title": "Top-down approaches",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet868-nanotechnology-02-module-2-fabrication-of-nanomaterials-bottom-up-approaches",
+            "title": "Bottom-up approaches",
             "content": "",
             "pyqs": []
           },
@@ -3419,8 +4571,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet868-nanotechnology-02-module-2-fabrication-of-nanomaterials-chemical-and-lithographic-methods",
-            "title": "Chemical and lithographic methods",
+            "id": "me-8-pemet868-nanotechnology-02-module-2-fabrication-of-nanomaterials-chemical-methods",
+            "title": "Chemical methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet868-nanotechnology-02-module-2-fabrication-of-nanomaterials-lithographic-methods",
+            "title": "Lithographic methods",
             "content": "",
             "pyqs": []
           },
@@ -3509,8 +4667,20 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet868-nanotechnology-03-module-3-carbon-m-xenes-synthesis-properties-and-applications",
-            "title": "M-Xenes synthesis, properties, and applications",
+            "id": "me-8-pemet868-nanotechnology-03-module-3-carbon-m-xenes-synthesis",
+            "title": "M-Xenes synthesis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet868-nanotechnology-03-module-3-carbon-m-xenes-properties",
+            "title": "M-Xenes properties",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet868-nanotechnology-03-module-3-carbon-m-xenes-applications",
+            "title": "M-Xenes applications",
             "content": "",
             "pyqs": []
           }
@@ -3569,8 +4739,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet868-nanotechnology-04-module-4-nanomaterials-for-energy-and-environment-electrochemical-energy-storage-nanobiotechnology-micro-and-nanofluidics",
-            "title": "Nanobiotechnology: Micro and nanofluidics",
+            "id": "me-8-pemet868-nanotechnology-04-module-4-nanomaterials-for-energy-and-environment-electrochemical-energy-storage-nanobiotechnology-micro-fluidics",
+            "title": "Nanobiotechnology: Micro fluidics",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet868-nanotechnology-04-module-4-nanomaterials-for-energy-and-environment-electrochemical-energy-storage-nanobiotechnology-nano-fluidics",
+            "title": "Nanobiotechnology: Nano fluidics",
             "content": "",
             "pyqs": []
           },
@@ -3626,8 +4802,14 @@
         "title": "Module 1: Motivation and applications of numerical methods",
         "topics": [
           {
-            "id": "me-8-oemet833-numerical-techniques-engineering-01-module-1-motivation-and-applications-of-numerical-methods-motivation-and-applications-of-numerical-methods",
-            "title": "Motivation and applications of numerical methods",
+            "id": "me-8-oemet833-numerical-techniques-engineering-01-module-1-motivation-and-applications-of-numerical-methods-motivation-of-numerical-methods",
+            "title": "Motivation of numerical methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet833-numerical-techniques-engineering-01-module-1-motivation-and-applications-of-numerical-methods-applications-of-numerical-methods",
+            "title": "Applications of numerical methods",
             "content": "",
             "pyqs": []
           },
@@ -3638,8 +4820,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet833-numerical-techniques-engineering-01-module-1-motivation-and-applications-of-numerical-methods-accuracy-and-precision",
-            "title": "Accuracy and precision",
+            "id": "me-8-oemet833-numerical-techniques-engineering-01-module-1-motivation-and-applications-of-numerical-methods-accuracy",
+            "title": "Accuracy",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet833-numerical-techniques-engineering-01-module-1-motivation-and-applications-of-numerical-methods-precision",
+            "title": "Precision",
             "content": "",
             "pyqs": []
           },
@@ -4145,8 +5333,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet862-pressure-vessel-and-piping-design-02-module-2-stresses-in-thick-lame-s-equation-for-internal-and-external-pressure",
-            "title": "Lame's equation for internal and external pressure",
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-02-module-2-stresses-in-thick-lame-s-equation-for-internal-pressure",
+            "title": "Lame's equation for internal pressure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-02-module-2-stresses-in-thick-lame-s-equation-for-external-pressure",
+            "title": "Lame's equation for external pressure",
             "content": "",
             "pyqs": []
           },
@@ -4181,8 +5375,14 @@
         "title": "Module 3: Design of tall vessel under wind and seismic load",
         "topics": [
           {
-            "id": "me-8-pemet862-pressure-vessel-and-piping-design-03-module-3-design-of-tall-vessel-under-wind-and-seismic-load-design-of-tall-vessel-under-wind-and-seismic-load",
-            "title": "Design of tall vessel under wind and seismic load",
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-03-module-3-design-of-tall-vessel-under-wind-and-seismic-load-design-of-tall-vessel-under-wind-load",
+            "title": "Design of tall vessel under wind load",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-03-module-3-design-of-tall-vessel-under-wind-and-seismic-load-design-of-tall-vessel-under-seismic-load",
+            "title": "Design of tall vessel under seismic load",
             "content": "",
             "pyqs": []
           },
@@ -4241,8 +5441,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-size-and-wall-thickness-specification",
-            "title": "Size and wall thickness specification",
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-size-specification",
+            "title": "Size specification",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-wall-thickness-specification",
+            "title": "Wall thickness specification",
             "content": "",
             "pyqs": []
           },
@@ -4307,8 +5513,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-sizing-and-thickness-calculation-of-pipes",
-            "title": "Sizing and thickness calculation of pipes",
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-sizing-of-pipes",
+            "title": "Sizing of pipes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-thickness-calculation-of-pipes",
+            "title": "Thickness calculation of pipes",
             "content": "",
             "pyqs": []
           },
@@ -4319,8 +5531,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-allowable-and-displacement-stress-range-for-expected-cyclic-life",
-            "title": "Allowable and displacement stress range for expected cyclic life",
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-allowable-stress-range-for-expected-cyclic-life",
+            "title": "Allowable stress range for expected cyclic life",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-displacement-stress-range-for-expected-cyclic-life",
+            "title": "Displacement stress range for expected cyclic life",
             "content": "",
             "pyqs": []
           },
@@ -4337,8 +5555,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-analysis-as-per-clause-119-7-1-in-code-asme-b31-1-clause-319-4-1-in-asme-b31-3-only",
-            "title": "Analysis as per clause 119.7.1 in Code ASME B31.1/clause 319.4.1 in ASME B31.3 only",
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-analysis-as-per-clause-119-7-1-in-code-asme-b31-1",
+            "title": "Analysis as per clause 119.7.1 in Code ASME B31.1",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-pemet862-pressure-vessel-and-piping-design-04-module-4-pipes-analysis-as-per-clause-319-4-1-in-asme-b31-3-only",
+            "title": "Analysis as per clause 319.4.1 in ASME B31.3 only",
             "content": "",
             "pyqs": []
           }
@@ -5081,8 +6305,14 @@
             "pyqs": []
           },
           {
-            "id": "me-8-oemet835-world-class-manufacturing-04-module-4-world-class-manufacturing-vr-ar",
-            "title": "VR & AR",
+            "id": "me-8-oemet835-world-class-manufacturing-04-module-4-world-class-manufacturing-vr",
+            "title": "VR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "me-8-oemet835-world-class-manufacturing-04-module-4-world-class-manufacturing-ar",
+            "title": "AR",
             "content": "",
             "pyqs": []
           },

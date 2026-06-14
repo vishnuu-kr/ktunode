@@ -12,7 +12,7 @@
         "topics": [
           {
             "id": "ee-3-pbeet304-analog-electronics-01-module-1-review-of-bipolar-junction-transistor-review-of-bipolar-junction-transistor",
-            "title": "Review of Bipolar Junction Transistor",
+            "title": "Review of bipolar junction transistor",
             "content": "",
             "pyqs": []
           },
@@ -47,8 +47,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-01-module-1-review-of-bipolar-junction-transistor-role-of-coupling-capacitors-and-emitter-bypass-capacitor",
-            "title": "Role of coupling capacitors and emitter bypass capacitor",
+            "id": "ee-3-pbeet304-analog-electronics-01-module-1-review-of-bipolar-junction-transistor-role-of-coupling-capacitors",
+            "title": "Role of coupling capacitors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-01-module-1-review-of-bipolar-junction-transistor-role-of-emitter-bypass-capacitor",
+            "title": "Role of emitter bypass capacitor",
             "content": "",
             "pyqs": []
           },
@@ -113,8 +119,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-01-module-1-review-of-bipolar-junction-transistor-class-c-and-class-d-amplifiers",
-            "title": "Class C and Class D amplifiers",
+            "id": "ee-3-pbeet304-analog-electronics-01-module-1-review-of-bipolar-junction-transistor-class-c-amplifiers",
+            "title": "Class C amplifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-01-module-1-review-of-bipolar-junction-transistor-class-d-amplifiers",
+            "title": "Class D amplifiers",
             "content": "",
             "pyqs": []
           }
@@ -197,8 +209,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-02-module-2-introduction-to-jfet-jfet-biasing-circuits-common-source-amplifier-feedback-and-oscillator-circuits",
-            "title": "Feedback and Oscillator circuits",
+            "id": "ee-3-pbeet304-analog-electronics-02-module-2-introduction-to-jfet-jfet-biasing-circuits-common-source-amplifier-feedback-circuits",
+            "title": "Feedback circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-02-module-2-introduction-to-jfet-jfet-biasing-circuits-common-source-amplifier-oscillator-circuits",
+            "title": "Oscillator circuits",
             "content": "",
             "pyqs": []
           },
@@ -269,8 +287,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-differential-amplifiers-and-op-amp-specifications",
-            "title": "Differential amplifiers and Op-Amp Specifications",
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-differential-amplifiers",
+            "title": "Differential amplifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-op-amp-specifications",
+            "title": "Op-Amp Specifications",
             "content": "",
             "pyqs": []
           },
@@ -281,8 +305,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-cmrr-and-slew-rate",
-            "title": "CMRR and slew rate",
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-cmrr",
+            "title": "CMRR",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-slew-rate",
+            "title": "Slew rate",
             "content": "",
             "pyqs": []
           },
@@ -305,8 +335,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-summing-and-difference-amplifiers",
-            "title": "Summing and Difference Amplifiers",
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-summing-amplifiers",
+            "title": "Summing Amplifiers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-difference-amplifiers",
+            "title": "Difference Amplifiers",
             "content": "",
             "pyqs": []
           },
@@ -401,8 +437,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-band-pass-and-notch-filters",
-            "title": "Band pass and notch filters",
+            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-band-pass-filters",
+            "title": "Band pass filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-notch-filters",
+            "title": "Notch filters",
             "content": "",
             "pyqs": []
           },
@@ -1007,8 +1049,14 @@
         "title": "Module 10: Calibration of 1",
         "topics": [
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-10-module-10-calibration-of-1-calibration-of-1-phase-energy-meter-at-various-power-factors-and-phantom-loading-minimum-3-conditions",
-            "title": "Calibration of 1-phase Energy meter at various power factors and phantom loading (minimum 3 conditions)",
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-10-module-10-calibration-of-1-calibration-of-1-phase-energy-meter-at-various-power-factors",
+            "title": "Calibration of 1-phase Energy meter at various power factors",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-10-module-10-calibration-of-1-calibration-of-1-phase-energy-meter-using-phantom-loading-minimum-3-conditions",
+            "title": "Calibration of 1-phase Energy meter using phantom loading (minimum 3 conditions)",
             "content": "",
             "pyqs": []
           }
@@ -1316,8 +1364,26 @@
         "title": "Module 1: Mesh analysis and nodal analysis review only",
         "topics": [
           {
-            "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-mesh-analysis-and-nodal-analysis-review-only-super-mesh-and-super",
-            "title": "Mesh analysis and nodal analysis ( Review only)- super mesh and super",
+            "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-mesh-analysis-review-only",
+            "title": "Mesh analysis (Review only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-nodal-analysis-review-only",
+            "title": "Nodal analysis (Review only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-super-mesh",
+            "title": "Super mesh",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-super-node",
+            "title": "Super node",
             "content": "",
             "pyqs": []
           },
@@ -1329,13 +1395,13 @@
           },
           {
             "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-source-transformation",
-            "title": "source transformation",
+            "title": "Source transformation",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-analysis-with-dc",
-            "title": "analysis with DC",
+            "title": "Analysis with DC",
             "content": "",
             "pyqs": []
           },
@@ -1358,8 +1424,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-analysis-with-dc-and-ac-sinusoidal-excitation-with",
-            "title": "analysis with DC and AC (sinusoidal) excitation with",
+            "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-analysis-with-dc-and-ac-sinusoidal-excitation",
+            "title": "Analysis with DC and AC (sinusoidal) excitation",
             "content": "",
             "pyqs": []
           },
@@ -1371,7 +1437,7 @@
           },
           {
             "id": "ee-3-pceet302-circuits-networks-01-module-1-mesh-analysis-and-nodal-analysis-review-only-application-to-the-analysis-of-dc-circuits",
-            "title": "application to the analysis of DC Circuits.",
+            "title": "Application to the analysis of DC circuits",
             "content": "",
             "pyqs": []
           }
@@ -1388,32 +1454,44 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-series-resonance-resonant-frequency",
-            "title": "series resonance- resonant frequency",
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-series-resonance",
+            "title": "Series resonance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-variations-of",
-            "title": "variations of",
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-resonant-frequency",
+            "title": "Resonant frequency",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-variations-of-impedance-and-current-with-frequency",
+            "title": "Variations of impedance and current with frequency",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-bandwidth",
-            "title": "bandwidth",
+            "title": "Bandwidth",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-quality-factor",
-            "title": "quality factor",
+            "title": "Quality factor",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-parallel-resonance-series-rl-in-parallel-with-c-calculation-of-resonant",
-            "title": "parallel resonance (series RL in parallel with C -calculation of resonant",
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-parallel-resonance-series-rl-in-parallel-with-c",
+            "title": "Parallel resonance (series RL in parallel with C)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-calculation-of-resonant-frequency-for-parallel-resonance",
+            "title": "Calculation of resonant frequency for parallel resonance",
             "content": "",
             "pyqs": []
           },
@@ -1425,31 +1503,43 @@
           },
           {
             "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-complex-power",
-            "title": "complex power",
+            "title": "Complex power",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-active-reactive-and-apparent",
-            "title": "active, reactive and apparent",
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-active-power",
+            "title": "Active power",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-steadystate-analysis-of-3-wire-unbalanced-delta",
-            "title": "steadystate analysis of 3-wire unbalanced delta",
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-reactive-power",
+            "title": "Reactive power",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-steady-state-analysis-of-3-phase-4-wire-and-3-wire-using",
-            "title": "steady state analysis of 3-phase 4-wire and 3-wire (using",
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-apparent-power",
+            "title": "Apparent power",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-steady-state-analysis-of-3-wire-unbalanced-delta",
+            "title": "Steady state analysis of 3-wire unbalanced delta",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-steady-state-analysis-of-3-phase-4-wire-and-3-wire-systems",
+            "title": "Steady state analysis of 3-phase 4-wire and 3-wire systems",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-02-module-2-resonance-neutral-shift",
-            "title": "neutral shift",
+            "title": "Neutral shift",
             "content": "",
             "pyqs": []
           }
@@ -1461,85 +1551,97 @@
         "topics": [
           {
             "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-laplace-transforms-review-only",
-            "title": "Laplace transforms( Review only)",
+            "title": "Laplace transforms (Review only)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-transient-response-of-simple-series-and-parallel-rl-and-rc-circuits-with",
-            "title": "Transient response of simple series and parallel RL and RC circuits with",
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-transient-response-of-simple-series-and-parallel-rl-and-rc-circuits-with-dc-excitation-and-initial-conditions",
+            "title": "Transient response of simple series and parallel RL and RC circuits with DC excitation and initial conditions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-dc-excitation-and-initial-conditions",
-            "title": "DC excitation and initial conditions",
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-natural-response",
+            "title": "Natural response",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-natural-response-and-forced-response",
-            "title": "natural response and forced response",
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-forced-response",
+            "title": "Forced response",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-time-constant",
-            "title": "time constant",
+            "title": "Time constant",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-solution-using-laplace-transforms",
-            "title": "solution using Laplace transforms",
+            "title": "Solution using Laplace transforms",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-transformed-circuits",
-            "title": "transformed circuits",
+            "title": "Transformed circuits",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-solution-using-mesh-analysis-and-nodal-analysis",
-            "title": "solution using mesh analysis and nodal analysis",
+            "title": "Solution using mesh analysis and nodal analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-transient-response-of-series-rlc-circuit-with-dc-excitation-and-initial",
-            "title": "Transient response of series RLC circuit with DC excitation and initial",
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-transient-response-of-series-rlc-circuit-with-dc-excitation-and-initial-conditions",
+            "title": "Transient response of series RLC circuit with DC excitation and initial conditions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-damping",
-            "title": "damping",
+            "title": "Damping",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-overdamped-underdamped-critically-damped-and",
-            "title": "overdamped, underdamped, critically damped and",
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-overdamped",
+            "title": "Overdamped",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-underdamped",
+            "title": "Underdamped",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-critically-damped",
+            "title": "Critically damped",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-solution-using-laplace-transforms",
-            "title": "solution using Laplace transforms",
+            "title": "Solution using Laplace transforms",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-transient-response-of-simple-series-and-parallel-rl-and-rc-circuits-with",
-            "title": "Transient response of simple series and parallel RL and RC circuits with",
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-transient-response-of-simple-series-and-parallel-rl-and-rc-circuits-with-ac-excitation",
+            "title": "Transient response of simple series and parallel RL and RC circuits with AC excitation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-solution-using-laplace",
-            "title": "solution using Laplace",
+            "id": "ee-3-pceet302-circuits-networks-03-module-3-laplace-transforms-review-only-solution-using-laplace-transforms",
+            "title": "Solution using Laplace transforms",
             "content": "",
             "pyqs": []
           }
@@ -1556,68 +1658,98 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-z-y-h-t-parameters",
-            "title": "Z, Y, h, T parameters",
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-z-parameters",
+            "title": "Z parameters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-conditions-for-symmetry-and",
-            "title": "conditions for symmetry and",
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-y-parameters",
+            "title": "Y parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-h-parameters",
+            "title": "h parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-t-parameters",
+            "title": "T parameters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-conditions-for-symmetry-and-reciprocity",
+            "title": "Conditions for symmetry and reciprocity",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-relationship-between-parameters",
-            "title": "relationship between parameters",
+            "title": "Relationship between parameters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-interconnection-of-two-port",
-            "title": "interconnection of two port",
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-interconnection-of-two-port-networks",
+            "title": "Interconnection of two port networks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-series-parallel-and-cascade",
-            "title": "series, parallel and cascade",
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-series-interconnection",
+            "title": "Series interconnection",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-coupled-circuit",
-            "title": "Coupled circuit",
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-parallel-interconnection",
+            "title": "Parallel interconnection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-cascade-interconnection",
+            "title": "Cascade interconnection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-coupled-circuits",
+            "title": "Coupled circuits",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-dot-convention",
-            "title": "dot convention",
+            "title": "Dot convention",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-fixing-of-dots",
-            "title": "fixing of dots",
+            "title": "Fixing of dots",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-coefficient-of-coupling",
-            "title": "coefficient of coupling",
+            "title": "Coefficient of coupling",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-conductively-coupled-equivalent-circuit",
-            "title": "conductively coupled equivalent circuit",
+            "title": "Conductively coupled equivalent circuit",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-sinusoidal-steady-state-analysis-of",
-            "title": "sinusoidal steady state analysis of",
+            "id": "ee-3-pceet302-circuits-networks-04-module-4-two-port-networks-sinusoidal-steady-state-analysis-of-coupled-circuits",
+            "title": "Sinusoidal steady state analysis of coupled circuits",
             "content": "",
             "pyqs": []
           }
@@ -1649,8 +1781,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-lap-and-wave-winding",
-            "title": "Lap and wave winding",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-lap-winding",
+            "title": "Lap winding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-wave-winding",
+            "title": "Wave winding",
             "content": "",
             "pyqs": []
           },
@@ -1757,8 +1895,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-cross-magnetising-and-demagnetising-effect-computation-of-ampere-turns-not-required",
-            "title": "Cross magnetising and demagnetising effect (computation of ampere-turns not required)",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-cross-magnetising-effect-computation-of-ampere-turns-not-required",
+            "title": "Cross magnetising effect (computation of ampere-turns not required)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-demagnetising-effect-computation-of-ampere-turns-not-required",
+            "title": "Demagnetising effect (computation of ampere-turns not required)",
             "content": "",
             "pyqs": []
           },
@@ -1793,8 +1937,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-losses-and-efficiency",
-            "title": "Losses and efficiency",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-losses",
+            "title": "Losses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-efficiency",
+            "title": "Efficiency",
             "content": "",
             "pyqs": []
           },
@@ -1949,8 +2099,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-losses-and-efficiency-of-dc-motor",
-            "title": "Losses and efficiency of DC motor",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-losses-of-dc-motor",
+            "title": "Losses of DC motor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-efficiency-of-dc-motor",
+            "title": "Efficiency of DC motor",
             "content": "",
             "pyqs": []
           },
@@ -2021,8 +2177,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-ideal-and-practical-transformer",
-            "title": "Ideal and practical transformer",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-ideal-transformer",
+            "title": "Ideal transformer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-practical-transformer",
+            "title": "Practical transformer",
             "content": "",
             "pyqs": []
           },
@@ -2033,8 +2195,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-operation-on-no-load-and-on-load",
-            "title": "Operation on no load and on load",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-operation-on-no-load",
+            "title": "Operation on no load",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-operation-on-load",
+            "title": "Operation on load",
             "content": "",
             "pyqs": []
           },
@@ -2063,8 +2231,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-losses-and-efficiency-of-single-phase-transformer",
-            "title": "Losses and efficiency of single phase transformer",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-losses-of-single-phase-transformer",
+            "title": "Losses of single phase transformer",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-efficiency-of-single-phase-transformer",
+            "title": "Efficiency of single phase transformer",
             "content": "",
             "pyqs": []
           },
@@ -2087,8 +2261,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-oc-test-and-sc-test",
-            "title": "OC test and SC test",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-oc-test",
+            "title": "OC test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-sc-test",
+            "title": "SC test",
             "content": "",
             "pyqs": []
           },
@@ -2141,8 +2321,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-different-connections-of-3-phase-transformers-y-y-delta-delta-y-delta-delta-y",
-            "title": "Different connections of 3-phase transformers - Y-Y, Delta-Delta, Y-Delta, Delta-Y",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-y-y-connection-of-3-phase-transformers",
+            "title": "Y-Y connection of 3-phase transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-delta-delta-connection-of-3-phase-transformers",
+            "title": "Delta-Delta connection of 3-phase transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-y-delta-connection-of-3-phase-transformers",
+            "title": "Y-Delta connection of 3-phase transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-delta-y-connection-of-3-phase-transformers",
+            "title": "Delta-Y connection of 3-phase transformers",
             "content": "",
             "pyqs": []
           },
@@ -2177,26 +2375,74 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-vector-groupings-yy0-dd0-yd1-yd11-dy1-dy11",
-            "title": "Vector groupings - Yy0, Dd0, Yd1, Yd11, Dy1, Dy11",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-vector-groupings-yy0",
+            "title": "Vector groupings - Yy0",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-parallel-operation-of-1-phase-and-3-phase-transformers",
-            "title": "Parallel operation of 1-phase and 3-phase transformers",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-vector-groupings-dd0",
+            "title": "Vector groupings - Dd0",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-essential-and-desirable-conditions-for-parallel-operation",
-            "title": "Essential and desirable conditions for parallel operation",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-vector-groupings-yd1",
+            "title": "Vector groupings - Yd1",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-on-load-and-off-load-tap-changers",
-            "title": "On-load and off-load tap-changers",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-vector-groupings-yd11",
+            "title": "Vector groupings - Yd11",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-vector-groupings-dy1",
+            "title": "Vector groupings - Dy1",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-vector-groupings-dy11",
+            "title": "Vector groupings - Dy11",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-parallel-operation-of-1-phase-transformers",
+            "title": "Parallel operation of 1-phase transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-parallel-operation-of-3-phase-transformers",
+            "title": "Parallel operation of 3-phase transformers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-essential-conditions-for-parallel-operation",
+            "title": "Essential conditions for parallel operation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-desirable-conditions-for-parallel-operation",
+            "title": "Desirable conditions for parallel operation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-on-load-tap-changers",
+            "title": "On-load tap-changers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-off-load-tap-changers",
+            "title": "Off-load tap-changers",
             "content": "",
             "pyqs": []
           }
@@ -2222,8 +2468,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-basic-economic-problems-production-possibility-curve",
-            "title": "Basic economic problems - Production Possibility Curve",
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-basic-economic-problems",
+            "title": "Basic economic problems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-production-possibility-curve",
+            "title": "Production Possibility Curve",
             "content": "",
             "pyqs": []
           },
@@ -2258,8 +2510,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-measurement-of-elasticity-and-its-applications",
-            "title": "measurement of elasticity and its applications",
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-measurement-of-elasticity",
+            "title": "Measurement of elasticity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-applications-of-elasticity",
+            "title": "Applications of elasticity",
             "content": "",
             "pyqs": []
           },
@@ -2270,8 +2528,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-demand-and-supply-and-its-effects",
-            "title": "Changes in demand and supply and its effects",
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-demand",
+            "title": "Changes in demand",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-supply",
+            "title": "Changes in supply",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-effects-of-changes-in-demand-and-supply",
+            "title": "Effects of changes in demand and supply",
             "content": "",
             "pyqs": []
           },
@@ -2294,8 +2564,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-internal-and-external-economies",
-            "title": "Internal and External Economies",
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-internal-economies",
+            "title": "Internal Economies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-external-economies",
+            "title": "External Economies",
             "content": "",
             "pyqs": []
           },
@@ -2318,14 +2594,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost",
-            "title": "Social cost, private cost",
+            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost",
+            "title": "Social cost",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-explicit-and-implicit-cost",
-            "title": "Explicit and implicit cost",
+            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-private-cost",
+            "title": "Private cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-explicit-cost",
+            "title": "Explicit cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-implicit-cost",
+            "title": "Implicit cost",
             "content": "",
             "pyqs": []
           },
@@ -2343,7 +2631,7 @@
           },
           {
             "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-short-run-cost-curves",
-            "title": "short run cost curves",
+            "title": "Short run cost curves",
             "content": "",
             "pyqs": []
           },
@@ -2390,8 +2678,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-oligopoly-features-and-equilibrium-of-a-firm",
-            "title": "Oligopoly (features and equilibrium of a firm)",
+            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-oligopoly-features",
+            "title": "Oligopoly - features",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-oligopoly-equilibrium-of-a-firm",
+            "title": "Oligopoly - equilibrium of a firm",
             "content": "",
             "pyqs": []
           }
@@ -2414,8 +2708,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-functions",
-            "title": "Functions",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-functions-of-money",
+            "title": "Functions of Money",
             "content": "",
             "pyqs": []
           },
@@ -2432,8 +2726,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-causes-and-effects",
-            "title": "Causes and Effects",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-causes-of-inflation",
+            "title": "Causes of Inflation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-effects-of-inflation",
+            "title": "Effects of Inflation",
             "content": "",
             "pyqs": []
           },
@@ -2444,8 +2744,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-monetary-and-fiscal-policies",
-            "title": "Monetary and Fiscal policies",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-monetary-policies",
+            "title": "Monetary policies",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-fiscal-policies",
+            "title": "Fiscal policies",
             "content": "",
             "pyqs": []
           },
@@ -2462,8 +2768,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-direct-and-indirect-taxes-merits-and-demerits",
-            "title": "Direct and Indirect taxes (merits and demerits)",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-direct-taxes",
+            "title": "Direct taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-indirect-taxes",
+            "title": "Indirect taxes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-merits-and-demerits-of-taxes",
+            "title": "Merits and demerits of taxes",
             "content": "",
             "pyqs": []
           },
@@ -2480,8 +2798,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-concepts",
-            "title": "Concepts",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-concepts-of-national-income",
+            "title": "Concepts of National income",
             "content": "",
             "pyqs": []
           },
@@ -2492,8 +2810,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-methods-of-estimation-and-difficulties",
-            "title": "Methods of Estimation and Difficulties",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-methods-of-estimation",
+            "title": "Methods of Estimation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-difficulties-in-estimation",
+            "title": "Difficulties in estimation",
             "content": "",
             "pyqs": []
           },
@@ -2504,8 +2828,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-functions",
-            "title": "Functions",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-functions-of-stock-market",
+            "title": "Functions of Stock Market",
             "content": "",
             "pyqs": []
           },
@@ -2516,8 +2840,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-demat-account-and-trading-account",
-            "title": "Demat Account and Trading Account",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-demat-account",
+            "title": "Demat Account",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-trading-account",
+            "title": "Trading Account",
             "content": "",
             "pyqs": []
           },
@@ -2528,8 +2858,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-sensex-and-nifty",
-            "title": "SENSEX and NIFTY",
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-sensex",
+            "title": "SENSEX",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-03-module-3-monetary-system-nifty",
+            "title": "NIFTY",
             "content": "",
             "pyqs": []
           }
@@ -2540,20 +2876,56 @@
         "title": "Module 4: Value analysis and value engineering",
         "topics": [
           {
-            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-analysis-and-value-engineering",
-            "title": "Value Analysis and value Engineering",
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-analysis",
+            "title": "Value Analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value-exchange-value-use-value-esteem-value",
-            "title": "Cost Value, Exchange Value, Use Value, Esteem Value",
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-value-engineering",
+            "title": "Value Engineering",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-aims-advantages-and-application-areas-of-value-engineering",
-            "title": "Aims, Advantages and Application areas of Value Engineering",
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value",
+            "title": "Cost Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-exchange-value",
+            "title": "Exchange Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-use-value",
+            "title": "Use Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-esteem-value",
+            "title": "Esteem Value",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-aims-of-value-engineering",
+            "title": "Aims of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-advantages-of-value-engineering",
+            "title": "Advantages of Value Engineering",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-application-areas-of-value-engineering",
+            "title": "Application areas of Value Engineering",
             "content": "",
             "pyqs": []
           },
@@ -3404,8 +3776,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-role-of-linear-algebra-in-data-representation-and-analysis",
-            "title": "Role of linear algebra in Data representation and analysis",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-role-of-linear-algebra-in-data-representation",
+            "title": "Role of linear algebra in Data representation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-role-of-linear-algebra-in-data-analysis",
+            "title": "Role of linear algebra in Data analysis",
             "content": "",
             "pyqs": []
           },
@@ -3458,8 +3836,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-random-variables-and-statistical-measures",
-            "title": "Random variables and statistical measures",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-random-variables",
+            "title": "Random variables",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-statistical-measures",
+            "title": "Statistical measures",
             "content": "",
             "pyqs": []
           },
@@ -3470,8 +3854,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-bayes-theorem-and-its-applications",
-            "title": "Bayes theorem and its applications",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-bayes-theorem",
+            "title": "Bayes theorem",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-applications-of-bayes-theorem",
+            "title": "Applications of Bayes theorem",
             "content": "",
             "pyqs": []
           },
@@ -3536,8 +3926,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-use-of-statistics-and-machine-learning-in-data-science",
-            "title": "Use of statistics and Machine Learning in Data Science",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-use-of-statistics-in-data-science",
+            "title": "Use of statistics in Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-use-of-machine-learning-in-data-science",
+            "title": "Use of Machine Learning in Data Science",
             "content": "",
             "pyqs": []
           },
@@ -3566,14 +3962,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-big-data-and-data-science",
-            "title": "Big Data and Data Science",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-big-data",
+            "title": "Big Data",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-software-tools-for-visualization-tableau-powerbi-r-or-python-and-machine-learning-implementation-python-matlab-or-r",
-            "title": "Software tools for visualization (Tableau, PowerBI, R or Python) and Machine Learning implementation (Python, MATLAB or R)",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-data-science",
+            "title": "Data Science",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-software-tools-for-visualization-tableau-powerbi-r-or-python",
+            "title": "Software tools for visualization (Tableau, PowerBI, R or Python)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-machine-learning-implementation-python-matlab-or-r",
+            "title": "Machine Learning implementation (Python, MATLAB or R)",
             "content": "",
             "pyqs": []
           },
@@ -3611,14 +4019,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-cosine-and-sine-integrals",
-            "title": "Fourier Cosine and Sine integrals",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-cosine-integrals",
+            "title": "Fourier Cosine integrals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-cosine-and-sine-transform",
-            "title": "Fourier Cosine and Sine Transform",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-sine-integrals",
+            "title": "Fourier Sine integrals",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-cosine-transform",
+            "title": "Fourier Cosine Transform",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-fourier-sine-transform",
+            "title": "Fourier Sine Transform",
             "content": "",
             "pyqs": []
           },
@@ -3648,7 +4068,7 @@
           },
           {
             "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-01-module-1-fourier-integral-transforms-of-derivative",
-            "title": "Transforms of Derivative.",
+            "title": "Transforms of Derivative",
             "content": "",
             "pyqs": []
           }
@@ -3719,26 +4139,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w",
-            "title": "Mappings of w=𝑧ଶ",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-z",
+            "title": "Mappings of w=z²",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w",
-            "title": "w=𝑒௭",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-e",
+            "title": "Mappings of w=eᶻ",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w",
-            "title": "w=ଵ",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-z",
+            "title": "Mappings of w=z̄",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w",
-            "title": "w=𝑠𝑖𝑛𝑧.",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-sinz",
+            "title": "Mappings of w=sinz",
             "content": "",
             "pyqs": []
           }
@@ -3792,7 +4212,7 @@
           },
           {
             "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-03-module-3-complex-integration-cauchy-integral-formula-without-proof",
-            "title": "Cauchy Integral formula (without proof).",
+            "title": "Cauchy Integral formula (without proof)",
             "content": "",
             "pyqs": []
           }
@@ -3803,8 +4223,14 @@
         "title": "Module 4: Taylor series and maclaurin series",
         "topics": [
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-taylor-series-and-maclaurin-series",
-            "title": "Taylor series and Maclaurin series",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-taylor-series",
+            "title": "Taylor series",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-maclaurin-series",
+            "title": "Maclaurin series",
             "content": "",
             "pyqs": []
           },
@@ -3815,8 +4241,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-singularities-and-zeros-isolated-singularity",
-            "title": "Singularities and Zeros - Isolated Singularity",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-singularities",
+            "title": "Singularities",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-zeros",
+            "title": "Zeros",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-isolated-singularity",
+            "title": "Isolated Singularity",
             "content": "",
             "pyqs": []
           },
@@ -3839,8 +4277,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-zeros-of-analytic-functions-poles-and-zeros",
-            "title": "Zeros of Analytic functions - Poles and Zeros",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-zeros-of-analytic-functions",
+            "title": "Zeros of Analytic functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-poles-and-zeros",
+            "title": "Poles and Zeros",
             "content": "",
             "pyqs": []
           },
@@ -3858,7 +4302,7 @@
           },
           {
             "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-04-module-4-taylor-series-and-maclaurin-series-residue-integration-integral-of-rational-functions-of-cos-and-sin",
-            "title": "Residue Integration- Integral of Rational Functions of cosθ and sinθ.",
+            "title": "Residue Integration- Integral of Rational Functions of cosθ and sinθ",
             "content": "",
             "pyqs": []
           }
