@@ -5,16 +5,58 @@
   "module_title": "Creation of database schema",
   "topics_generated": [
     {
-      "title": "Creation of database schema - DDL (create tables, set constraints, enforce relationships, create indices, delete and modify tables).",
-      "slug": "creation-of-database-schema-ddl-create-tables-set-constraints-enforce-relationships-create-indices",
-      "path": "creation-of-database-schema-ddl-create-tables-set-constraints-enforce-relationships-create-indices/notes.md",
+      "title": "Creation of database schema using DDL",
+      "slug": "creation-of-database-schema-using-ddl",
+      "path": "creation-of-database-schema-using-ddl/notes.md",
       "has_mermaid": true,
       "has_math": true
     },
     {
-      "title": "Export ER diagram from the database and verify relationships (with the ER diagram designed in step 1).",
-      "slug": "export-er-diagram-from-the-database-and-verify-relationships-with-the-er-diagram-designed-in-step-1",
-      "path": "export-er-diagram-from-the-database-and-verify-relationships-with-the-er-diagram-designed-in-step-1/notes.md",
+      "title": "Create tables",
+      "slug": "create-tables",
+      "path": "create-tables/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Set constraints",
+      "slug": "set-constraints",
+      "path": "set-constraints/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Enforce relationships",
+      "slug": "enforce-relationships",
+      "path": "enforce-relationships/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Create indices",
+      "slug": "create-indices",
+      "path": "create-indices/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Delete and modify tables",
+      "slug": "delete-and-modify-tables",
+      "path": "delete-and-modify-tables/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Export ER diagram from the database",
+      "slug": "export-er-diagram-from-the-database",
+      "path": "export-er-diagram-from-the-database/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Verify relationships with the ER diagram designed in step 1",
+      "slug": "verify-relationships-with-the-er-diagram-designed-in-step-1",
+      "path": "verify-relationships-with-the-er-diagram-designed-in-step-1/notes.md",
       "has_mermaid": true,
       "has_math": true
     }

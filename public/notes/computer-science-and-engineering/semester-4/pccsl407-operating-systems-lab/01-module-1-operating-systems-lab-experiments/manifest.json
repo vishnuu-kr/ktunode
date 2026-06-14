@@ -1,0 +1,113 @@
+{
+  "course_name": "OPERATING SYSTEMS LAB",
+  "course_code": "PCCSL407",
+  "module_number": 1,
+  "module_title": "Operating Systems Lab Experiments",
+  "topics_generated": [
+    {
+      "title": "Basic Linux/Unix commands and file system navigation",
+      "slug": "basic-linux-unix-commands-and-file-system-navigation",
+      "path": "basic-linux-unix-commands-and-file-system-navigation/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Shell programming - shell variables, operators, control structures and loops",
+      "slug": "shell-programming-shell-variables-operators-control-structures-and-loops",
+      "path": "shell-programming-shell-variables-operators-control-structures-and-loops/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Process creation and management using fork(), exec(), wait() system calls",
+      "slug": "process-creation-and-management-using-fork-exec-wait-system-calls",
+      "path": "process-creation-and-management-using-fork-exec-wait-system-calls/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of CPU scheduling algorithms - FCFS, SJF, Priority and Round Robin",
+      "slug": "simulation-of-cpu-scheduling-algorithms-fcfs-sjf-priority-and-round-robin",
+      "path": "simulation-of-cpu-scheduling-algorithms-fcfs-sjf-priority-and-round-robin/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of Process Synchronization using Semaphores - Producer-Consumer problem",
+      "slug": "simulation-of-process-synchronization-using-semaphores-producer-consumer-problem",
+      "path": "simulation-of-process-synchronization-using-semaphores-producer-consumer-problem/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of Dining Philosophers problem using Semaphores/Mutex",
+      "slug": "simulation-of-dining-philosophers-problem-using-semaphores-mutex",
+      "path": "simulation-of-dining-philosophers-problem-using-semaphores-mutex/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of Banker's Algorithm for Deadlock Avoidance",
+      "slug": "simulation-of-banker-s-algorithm-for-deadlock-avoidance",
+      "path": "simulation-of-banker-s-algorithm-for-deadlock-avoidance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of Deadlock Detection algorithm",
+      "slug": "simulation-of-deadlock-detection-algorithm",
+      "path": "simulation-of-deadlock-detection-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of Page Replacement algorithms - FIFO, LRU and Optimal",
+      "slug": "simulation-of-page-replacement-algorithms-fifo-lru-and-optimal",
+      "path": "simulation-of-page-replacement-algorithms-fifo-lru-and-optimal/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of Memory Management schemes - First Fit, Best Fit and Worst Fit",
+      "slug": "simulation-of-memory-management-schemes-first-fit-best-fit-and-worst-fit",
+      "path": "simulation-of-memory-management-schemes-first-fit-best-fit-and-worst-fit/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of File Allocation strategies - Sequential, Indexed and Linked allocation",
+      "slug": "simulation-of-file-allocation-strategies-sequential-indexed-and-linked-allocation",
+      "path": "simulation-of-file-allocation-strategies-sequential-indexed-and-linked-allocation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Simulation of Disk Scheduling algorithms - FCFS, SSTF, SCAN and C-SCAN",
+      "slug": "simulation-of-disk-scheduling-algorithms-fcfs-sstf-scan-and-c-scan",
+      "path": "simulation-of-disk-scheduling-algorithms-fcfs-sstf-scan-and-c-scan/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Inter-Process Communication using pipes (anonymous and named/FIFO)",
+      "slug": "inter-process-communication-using-pipes-anonymous-and-named-fifo",
+      "path": "inter-process-communication-using-pipes-anonymous-and-named-fifo/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Thread creation and synchronization using POSIX threads (pthreads)",
+      "slug": "thread-creation-and-synchronization-using-posix-threads-pthreads",
+      "path": "thread-creation-and-synchronization-using-posix-threads-pthreads/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Implementation of Reader-Writer problem using synchronization primitives",
+      "slug": "implementation-of-reader-writer-problem-using-synchronization-primitives",
+      "path": "implementation-of-reader-writer-problem-using-synchronization-primitives/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    }
+  ]
+}

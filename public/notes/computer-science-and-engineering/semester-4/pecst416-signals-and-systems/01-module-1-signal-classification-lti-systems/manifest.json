@@ -1,0 +1,29 @@
+{
+  "course_name": "SIGNALS AND SYSTEMS",
+  "course_code": "PECST416",
+  "module_number": 1,
+  "module_title": "Signal Classification & LTI Systems",
+  "topics_generated": [
+    {
+      "title": "Continuous-time and discrete-time signals: Periodic, even, odd, energy, and power signals",
+      "slug": "continuous-time-and-discrete-time-signals-periodic-even-odd-energy-and-power-signals",
+      "path": "continuous-time-and-discrete-time-signals-periodic-even-odd-energy-and-power-signals/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Basic signal operations: Shifting, scaling, inversion routines",
+      "slug": "basic-signal-operations-shifting-scaling-inversion-routines",
+      "path": "basic-signal-operations-shifting-scaling-inversion-routines/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear Time-Invariant (LTI) systems characterization: Convolution integral and convolution sum metrics",
+      "slug": "linear-time-invariant-lti-systems-characterization-convolution-integral-and-convolution-sum-metrics",
+      "path": "linear-time-invariant-lti-systems-characterization-convolution-integral-and-convolution-sum-metrics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

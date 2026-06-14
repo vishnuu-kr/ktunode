@@ -1,0 +1,29 @@
+{
+  "course_name": "FUNCTIONAL PROGRAMMING",
+  "course_code": "PECST413",
+  "module_number": 3,
+  "module_title": "Monads & Functors Abstractions",
+  "topics_generated": [
+    {
+      "title": "Functors, Applicatives structural patterns layout guidelines design syntax",
+      "slug": "functors-applicatives-structural-patterns-layout-guidelines-design-syntax",
+      "path": "functors-applicatives-structural-patterns-layout-guidelines-design-syntax/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Monadic computation constructs rules definitions: Maybe monad, IO monad operations pipelines",
+      "slug": "monadic-computation-constructs-rules-definitions-maybe-monad-io-monad-operations-pipelines",
+      "path": "monadic-computation-constructs-rules-definitions-maybe-monad-io-monad-operations-pipelines/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "State computation wrappers implementations inside functional blocks frameworks",
+      "slug": "state-computation-wrappers-implementations-inside-functional-blocks-frameworks",
+      "path": "state-computation-wrappers-implementations-inside-functional-blocks-frameworks/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

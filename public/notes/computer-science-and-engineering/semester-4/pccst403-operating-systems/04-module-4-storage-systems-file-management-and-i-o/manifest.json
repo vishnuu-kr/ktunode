@@ -1,0 +1,36 @@
+{
+  "course_name": "OPERATING SYSTEMS",
+  "course_code": "PCCST403",
+  "module_number": 4,
+  "module_title": "Storage Systems, File Management, and I/O",
+  "topics_generated": [
+    {
+      "title": "Mass-Storage Structure: Disk structure, Disk attachment, Disk Scheduling Algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK)",
+      "slug": "mass-storage-structure-disk-structure-disk-attachment-disk-scheduling-algorithms-fcfs-sstf-scan-c",
+      "path": "mass-storage-structure-disk-structure-disk-attachment-disk-scheduling-algorithms-fcfs-sstf-scan-c/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "File Systems: File concept, Access methods, Directory structures, File-system mounting, and Protection matrices",
+      "slug": "file-systems-file-concept-access-methods-directory-structures-file-system-mounting-and-protection",
+      "path": "file-systems-file-concept-access-methods-directory-structures-file-system-mounting-and-protection/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "File System Implementation: Allocation methods (Contiguous, Linked, Indexed) and Free-space management",
+      "slug": "file-system-implementation-allocation-methods-contiguous-linked-indexed-and-free-space-management",
+      "path": "file-system-implementation-allocation-methods-contiguous-linked-indexed-and-free-space-management/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "I/O Systems: I/O hardware, Polling, Interrupts, Direct Memory Access (DMA), Kernel I/O subsystem (Buffering, Caching, Spooling)",
+      "slug": "i-o-systems-i-o-hardware-polling-interrupts-direct-memory-access-dma-kernel-i-o-subsystem-buffering",
+      "path": "i-o-systems-i-o-hardware-polling-interrupts-direct-memory-access-dma-kernel-i-o-subsystem-buffering/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

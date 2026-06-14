@@ -1,0 +1,36 @@
+{
+  "course_name": "OPERATING SYSTEMS",
+  "course_code": "PCCST403",
+  "module_number": 2,
+  "module_title": "Process Concurrency, Synchronization, and Deadlocks",
+  "topics_generated": [
+    {
+      "title": "Concurrency Control: Race conditions, the Critical Section problem, architectural criteria for valid solutions",
+      "slug": "concurrency-control-race-conditions-the-critical-section-problem-architectural-criteria-for-valid",
+      "path": "concurrency-control-race-conditions-the-critical-section-problem-architectural-criteria-for-valid/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Synchronization Tools: Semaphores (Binary and Counting), Mutex locks, Classical synchronization problems (Producer-Consumer, Readers-Writers)",
+      "slug": "synchronization-tools-semaphores-binary-and-counting-mutex-locks-classical-synchronization-problems",
+      "path": "synchronization-tools-semaphores-binary-and-counting-mutex-locks-classical-synchronization-problems/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Deadlocks: Conditions for deadlock occurrence, Resource Allocation Graphs (RAG)",
+      "slug": "deadlocks-conditions-for-deadlock-occurrence-resource-allocation-graphs-rag",
+      "path": "deadlocks-conditions-for-deadlock-occurrence-resource-allocation-graphs-rag/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Deadlock Handling: Prevention, Avoidance (Banker's Algorithm with numerical solutions), and Detection/Recovery techniques",
+      "slug": "deadlock-handling-prevention-avoidance-banker-s-algorithm-with-numerical-solutions-and-detection",
+      "path": "deadlock-handling-prevention-avoidance-banker-s-algorithm-with-numerical-solutions-and-detection/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

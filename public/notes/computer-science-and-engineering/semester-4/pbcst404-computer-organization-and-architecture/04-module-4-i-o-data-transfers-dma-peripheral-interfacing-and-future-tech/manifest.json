@@ -1,0 +1,36 @@
+{
+  "course_name": "COMPUTER ORGANIZATION AND ARCHITECTURE",
+  "course_code": "PBCST404",
+  "module_number": 4,
+  "module_title": "I/O Data Transfers, DMA, Peripheral Interfacing, and Future Tech",
+  "topics_generated": [
+    {
+      "title": "I/O Interfacing: Memory-Mapped I/O vs Isolated I/O schemes, Data transfers: Polling vs Interrupt-Driven I/O",
+      "slug": "i-o-interfacing-memory-mapped-i-o-vs-isolated-i-o-schemes-data-transfers-polling-vs-interrupt",
+      "path": "i-o-interfacing-memory-mapped-i-o-vs-isolated-i-o-schemes-data-transfers-polling-vs-interrupt/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "DMA: Controller operations, Cycle Stealing mode vs Burst Mode configurations",
+      "slug": "dma-controller-operations-cycle-stealing-mode-vs-burst-mode-configurations",
+      "path": "dma-controller-operations-cycle-stealing-mode-vs-burst-mode-configurations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Serial Communication: Synchronous vs Asynchronous transfers, UART synchronization mechanics",
+      "slug": "serial-communication-synchronous-vs-asynchronous-transfers-uart-synchronization-mechanics",
+      "path": "serial-communication-synchronous-vs-asynchronous-transfers-uart-synchronization-mechanics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Introduction to emerging hardware paradigms and potentially disruptive processing technologies",
+      "slug": "introduction-to-emerging-hardware-paradigms-and-potentially-disruptive-processing-technologies",
+      "path": "introduction-to-emerging-hardware-paradigms-and-potentially-disruptive-processing-technologies/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

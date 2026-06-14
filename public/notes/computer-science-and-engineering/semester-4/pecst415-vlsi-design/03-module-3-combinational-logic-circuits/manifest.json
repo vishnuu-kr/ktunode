@@ -1,0 +1,36 @@
+{
+  "course_name": "VLSI DESIGN",
+  "course_code": "PECST415",
+  "module_number": 3,
+  "module_title": "Combinational Logic Circuits",
+  "topics_generated": [
+    {
+      "title": "Static CMOS logic gates design",
+      "slug": "static-cmos-logic-gates-design",
+      "path": "static-cmos-logic-gates-design/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Ratioed circuits, Pseudo-nMOS inverter and gates",
+      "slug": "ratioed-circuits-pseudo-nmos-inverter-and-gates",
+      "path": "ratioed-circuits-pseudo-nmos-inverter-and-gates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dynamic CMOS logic architectures: Domino logic, Zipper CMOS logic structures",
+      "slug": "dynamic-cmos-logic-architectures-domino-logic-zipper-cmos-logic-structures",
+      "path": "dynamic-cmos-logic-architectures-domino-logic-zipper-cmos-logic-structures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Pass transistor logic circuits, Transmission gate logic configurations",
+      "slug": "pass-transistor-logic-circuits-transmission-gate-logic-configurations",
+      "path": "pass-transistor-logic-circuits-transmission-gate-logic-configurations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

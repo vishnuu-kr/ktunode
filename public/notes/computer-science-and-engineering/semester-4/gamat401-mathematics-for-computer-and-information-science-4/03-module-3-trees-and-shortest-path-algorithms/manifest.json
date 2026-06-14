@@ -1,0 +1,36 @@
+{
+  "course_name": "MATHEMATICS FOR COMPUTER AND INFORMATION SCIENCE-4",
+  "course_code": "GAMAT401",
+  "module_number": 3,
+  "module_title": "Trees and Shortest Path Algorithms",
+  "topics_generated": [
+    {
+      "title": "Trees: Properties and structural rules, Pendant vertices, Distance and centers in a tree",
+      "slug": "trees-properties-and-structural-rules-pendant-vertices-distance-and-centers-in-a-tree",
+      "path": "trees-properties-and-structural-rules-pendant-vertices-distance-and-centers-in-a-tree/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Rooted trees and Binary trees, Counting trees, Spanning trees",
+      "slug": "rooted-trees-and-binary-trees-counting-trees-spanning-trees",
+      "path": "rooted-trees-and-binary-trees-counting-trees-spanning-trees/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Minimum Cost Spanning Tree Algorithms: Prim's algorithm and Kruskal's algorithm",
+      "slug": "minimum-cost-spanning-tree-algorithms-prim-s-algorithm-and-kruskal-s-algorithm",
+      "path": "minimum-cost-spanning-tree-algorithms-prim-s-algorithm-and-kruskal-s-algorithm/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Shortest Path Algorithms: Dijkstra's single-source algorithm, Floyd-Warshall all-pairs shortest path algorithm",
+      "slug": "shortest-path-algorithms-dijkstra-s-single-source-algorithm-floyd-warshall-all-pairs-shortest-path",
+      "path": "shortest-path-algorithms-dijkstra-s-single-source-algorithm-floyd-warshall-all-pairs-shortest-path/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

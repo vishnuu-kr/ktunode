@@ -1,0 +1,43 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS",
+  "course_code": "PCCST402",
+  "module_number": 4,
+  "module_title": "Transaction Processing, Recovery, and Modern Database Paradigms",
+  "topics_generated": [
+    {
+      "title": "Transaction Concepts: Transaction states, ACID properties, Serial vs Concurrent schedules, Conflict Serializability",
+      "slug": "transaction-concepts-transaction-states-acid-properties-serial-vs-concurrent-schedules-conflict",
+      "path": "transaction-concepts-transaction-states-acid-properties-serial-vs-concurrent-schedules-conflict/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Concurrency Control: Two-Phase Locking (2PL) protocols and Timestamp Ordering",
+      "slug": "concurrency-control-two-phase-locking-2pl-protocols-and-timestamp-ordering",
+      "path": "concurrency-control-two-phase-locking-2pl-protocols-and-timestamp-ordering/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Database Recovery: Failure classifications, Transaction logging, Write-Ahead Logging (WAL), and Checkpointing",
+      "slug": "database-recovery-failure-classifications-transaction-logging-write-ahead-logging-wal-and",
+      "path": "database-recovery-failure-classifications-transaction-logging-write-ahead-logging-wal-and/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Modern Database Paradigms: NoSQL databases—Types and use cases (Redis, Cassandra, MongoDB, GraphDB)",
+      "slug": "modern-database-paradigms-nosql-databases-types-and-use-cases-redis-cassandra-mongodb-graphdb",
+      "path": "modern-database-paradigms-nosql-databases-types-and-use-cases-redis-cassandra-mongodb-graphdb/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Fundamentals of ETL (Extract, Transform, Load) pipelines, Data Warehousing, and Basic Data Analytics",
+      "slug": "fundamentals-of-etl-extract-transform-load-pipelines-data-warehousing-and-basic-data-analytics",
+      "path": "fundamentals-of-etl-extract-transform-load-pipelines-data-warehousing-and-basic-data-analytics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

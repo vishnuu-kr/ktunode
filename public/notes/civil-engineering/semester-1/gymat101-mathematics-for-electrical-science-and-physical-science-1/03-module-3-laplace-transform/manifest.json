@@ -1,0 +1,78 @@
+{
+  "course_name": "MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL  SCIENCE - 1",
+  "course_code": "GYMAT101",
+  "module_number": 3,
+  "module_title": "Laplace transform",
+  "topics_generated": [
+    {
+      "title": "Laplace Transform",
+      "slug": "laplace-transform",
+      "path": "laplace-transform/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Inverse Laplace Transform",
+      "slug": "inverse-laplace-transform",
+      "path": "inverse-laplace-transform/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linearity property",
+      "slug": "linearity-property",
+      "path": "linearity-property/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "First shifting theorem",
+      "slug": "first-shifting-theorem",
+      "path": "first-shifting-theorem/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transform of derivatives",
+      "slug": "transform-of-derivatives",
+      "path": "transform-of-derivatives/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Solution of Initial value problems by Laplace transform (Second order linear ODE with constant coefficients with initial conditions at t=0 only)",
+      "slug": "solution-of-initial-value-problems-by-laplace-transform-second-order-linear-ode-with-constant",
+      "path": "solution-of-initial-value-problems-by-laplace-transform-second-order-linear-ode-with-constant/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Unit step function",
+      "slug": "unit-step-function",
+      "path": "unit-step-function/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Second shifting theorem",
+      "slug": "second-shifting-theorem",
+      "path": "second-shifting-theorem/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Dirac delta function and its transform (Initial value problems involving unit step function and Dirac delta function are excluded)",
+      "slug": "dirac-delta-function-and-its-transform-initial-value-problems-involving-unit-step-function-and",
+      "path": "dirac-delta-function-and-its-transform-initial-value-problems-involving-unit-step-function-and/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Convolution theorem (without proof) and its application to finding inverse Laplace transform of products of functions.",
+      "slug": "convolution-theorem-without-proof-and-its-application-to-finding-inverse-laplace-transform-of",
+      "path": "convolution-theorem-without-proof-and-its-application-to-finding-inverse-laplace-transform-of/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

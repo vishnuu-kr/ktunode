@@ -5,9 +5,16 @@
   "module_title": "Write and execute cql queries to retrieve specific data from cassandra",
   "topics_generated": [
     {
-      "title": "Write and execute CQL queries to retrieve specific data from Cassandra tables",
-      "slug": "write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
-      "path": "write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables/notes.md",
+      "title": "Write CQL queries to retrieve specific data from Cassandra tables",
+      "slug": "write-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
+      "path": "write-cql-queries-to-retrieve-specific-data-from-cassandra-tables/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Execute CQL queries to retrieve specific data from Cassandra tables",
+      "slug": "execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
+      "path": "execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables/notes.md",
       "has_mermaid": true,
       "has_math": false
     }

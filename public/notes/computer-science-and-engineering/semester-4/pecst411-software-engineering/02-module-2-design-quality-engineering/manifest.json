@@ -1,0 +1,29 @@
+{
+  "course_name": "SOFTWARE ENGINEERING",
+  "course_code": "PECST411",
+  "module_number": 2,
+  "module_title": "Design & Quality Engineering",
+  "topics_generated": [
+    {
+      "title": "Design concepts: Abstraction, modularity, cohesion, and coupling metrics",
+      "slug": "design-concepts-abstraction-modularity-cohesion-and-coupling-metrics",
+      "path": "design-concepts-abstraction-modularity-cohesion-and-coupling-metrics/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Object-oriented design abstractions using UML class and sequence diagrams",
+      "slug": "object-oriented-design-abstractions-using-uml-class-and-sequence-diagrams",
+      "path": "object-oriented-design-abstractions-using-uml-class-and-sequence-diagrams/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Software metrics: Function Point (FP) analysis, COCOMO estimation framework models",
+      "slug": "software-metrics-function-point-fp-analysis-cocomo-estimation-framework-models",
+      "path": "software-metrics-function-point-fp-analysis-cocomo-estimation-framework-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

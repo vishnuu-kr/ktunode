@@ -1,0 +1,36 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS",
+  "course_code": "PCCST402",
+  "module_number": 3,
+  "module_title": "Database Design Theory and Normalization",
+  "topics_generated": [
+    {
+      "title": "Informal design guidelines for relation schemas; Functional Dependencies (FDs)",
+      "slug": "informal-design-guidelines-for-relation-schemas-functional-dependencies-fds",
+      "path": "informal-design-guidelines-for-relation-schemas-functional-dependencies-fds/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Inference rules for FDs; Finding the Minimal Cover of a set of functional dependencies",
+      "slug": "inference-rules-for-fds-finding-the-minimal-cover-of-a-set-of-functional-dependencies",
+      "path": "inference-rules-for-fds-finding-the-minimal-cover-of-a-set-of-functional-dependencies/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Schema Decomposition Properties: Lossless-join property and Dependency preservation property",
+      "slug": "schema-decomposition-properties-lossless-join-property-and-dependency-preservation-property",
+      "path": "schema-decomposition-properties-lossless-join-property-and-dependency-preservation-property/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Normal Forms: First Normal Form (1NF), Second Normal Form (2NF), Third Normal Form (3NF), and Boyce-Codd Normal Form (BCNF)",
+      "slug": "normal-forms-first-normal-form-1nf-second-normal-form-2nf-third-normal-form-3nf-and-boyce-codd",
+      "path": "normal-forms-first-normal-form-1nf-second-normal-form-2nf-third-normal-form-3nf-and-boyce-codd/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

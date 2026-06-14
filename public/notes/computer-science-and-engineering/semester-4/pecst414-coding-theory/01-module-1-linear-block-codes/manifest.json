@@ -1,0 +1,22 @@
+{
+  "course_name": "CODING THEORY",
+  "course_code": "PECST414",
+  "module_number": 1,
+  "module_title": "Linear Block Codes",
+  "topics_generated": [
+    {
+      "title": "Mathematical primitives of error control codes, Galois fields extensions",
+      "slug": "mathematical-primitives-of-error-control-codes-galois-fields-extensions",
+      "path": "mathematical-primitives-of-error-control-codes-galois-fields-extensions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Linear block codes: Generator matrices, parity check structures, syndrome calculations",
+      "slug": "linear-block-codes-generator-matrices-parity-check-structures-syndrome-calculations",
+      "path": "linear-block-codes-generator-matrices-parity-check-structures-syndrome-calculations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

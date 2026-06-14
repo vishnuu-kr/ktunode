@@ -5,9 +5,37 @@
   "module_title": "Database initialization",
   "topics_generated": [
     {
-      "title": "Database initialization - Data insert, Data import to a database (bulk import using UI and SQL Commands).",
-      "slug": "database-initialization-data-insert-data-import-to-a-database-bulk-import-using-ui-and-sql-commands",
-      "path": "database-initialization-data-insert-data-import-to-a-database-bulk-import-using-ui-and-sql-commands/notes.md",
+      "title": "Database initialization",
+      "slug": "database-initialization",
+      "path": "database-initialization/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data insert",
+      "slug": "data-insert",
+      "path": "data-insert/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Data import to a database",
+      "slug": "data-import-to-a-database",
+      "path": "data-import-to-a-database/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Bulk import using UI",
+      "slug": "bulk-import-using-ui",
+      "path": "bulk-import-using-ui/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Bulk import using SQL Commands",
+      "slug": "bulk-import-using-sql-commands",
+      "path": "bulk-import-using-sql-commands/notes.md",
       "has_mermaid": true,
       "has_math": false
     }

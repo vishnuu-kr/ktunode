@@ -1,0 +1,43 @@
+{
+  "course_name": "VLSI DESIGN",
+  "course_code": "PECST415",
+  "module_number": 1,
+  "module_title": "MOS Transistor Theory",
+  "topics_generated": [
+    {
+      "title": "MOS transistor evolution",
+      "slug": "mos-transistor-evolution",
+      "path": "mos-transistor-evolution/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "nMOS and pMOS enhancement transistor structures",
+      "slug": "nmos-and-pmos-enhancement-transistor-structures",
+      "path": "nmos-and-pmos-enhancement-transistor-structures/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Threshold voltage calculation equations",
+      "slug": "threshold-voltage-calculation-equations",
+      "path": "threshold-voltage-calculation-equations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "MOS device IV characteristics: Linear and saturation regions",
+      "slug": "mos-device-iv-characteristics-linear-and-saturation-regions",
+      "path": "mos-device-iv-characteristics-linear-and-saturation-regions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Second-order effects: Body effect, channel length modulation, subthreshold conduction",
+      "slug": "second-order-effects-body-effect-channel-length-modulation-subthreshold-conduction",
+      "path": "second-order-effects-body-effect-channel-length-modulation-subthreshold-conduction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "course_name": "FUNCTIONAL PROGRAMMING",
+  "course_code": "PECST413",
+  "module_number": 1,
+  "module_title": "Lambda Calculus & Declarative Code Patterns",
+  "topics_generated": [
+    {
+      "title": "Functional paradigms principles vs imperative programming side-effects",
+      "slug": "functional-paradigms-principles-vs-imperative-programming-side-effects",
+      "path": "functional-paradigms-principles-vs-imperative-programming-side-effects/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Lambda calculus foundations: Alpha reduction, beta conversion strategies",
+      "slug": "lambda-calculus-foundations-alpha-reduction-beta-conversion-strategies",
+      "path": "lambda-calculus-foundations-alpha-reduction-beta-conversion-strategies/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Core elements: Immutable data states, first-class and high-order functions layout constructs",
+      "slug": "core-elements-immutable-data-states-first-class-and-high-order-functions-layout-constructs",
+      "path": "core-elements-immutable-data-states-first-class-and-high-order-functions-layout-constructs/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

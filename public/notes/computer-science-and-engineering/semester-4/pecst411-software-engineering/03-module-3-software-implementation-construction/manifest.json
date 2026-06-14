@@ -1,0 +1,29 @@
+{
+  "course_name": "SOFTWARE ENGINEERING",
+  "course_code": "PECST411",
+  "module_number": 3,
+  "module_title": "Software Implementation & Construction",
+  "topics_generated": [
+    {
+      "title": "Coding styles, guidelines, and structural reviews templates",
+      "slug": "coding-styles-guidelines-and-structural-reviews-templates",
+      "path": "coding-styles-guidelines-and-structural-reviews-templates/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Refactoring methods, identifying design code smells",
+      "slug": "refactoring-methods-identifying-design-code-smells",
+      "path": "refactoring-methods-identifying-design-code-smells/notes.md",
+      "has_mermaid": true,
+      "has_math": false
+    },
+    {
+      "title": "Model-driven engineering principles, code auto-generation paths pipelines",
+      "slug": "model-driven-engineering-principles-code-auto-generation-paths-pipelines",
+      "path": "model-driven-engineering-principles-code-auto-generation-paths-pipelines/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

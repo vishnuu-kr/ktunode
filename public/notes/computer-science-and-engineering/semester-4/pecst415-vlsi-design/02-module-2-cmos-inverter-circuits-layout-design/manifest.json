@@ -1,0 +1,36 @@
+{
+  "course_name": "VLSI DESIGN",
+  "course_code": "PECST415",
+  "module_number": 2,
+  "module_title": "CMOS Inverter Circuits & Layout Design",
+  "topics_generated": [
+    {
+      "title": "CMOS inverter static characteristics, noise margins",
+      "slug": "cmos-inverter-static-characteristics-noise-margins",
+      "path": "cmos-inverter-static-characteristics-noise-margins/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Inverter switching characteristics: Delay estimation, power dissipation",
+      "slug": "inverter-switching-characteristics-delay-estimation-power-dissipation",
+      "path": "inverter-switching-characteristics-delay-estimation-power-dissipation/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Stick diagrams, Geometric layout design rules (lambda-based rules)",
+      "slug": "stick-diagrams-geometric-layout-design-rules-lambda-based-rules",
+      "path": "stick-diagrams-geometric-layout-design-rules-lambda-based-rules/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "CMOS fabrication process sequences: n-well, p-well, twin-tub configurations",
+      "slug": "cmos-fabrication-process-sequences-n-well-p-well-twin-tub-configurations",
+      "path": "cmos-fabrication-process-sequences-n-well-p-well-twin-tub-configurations/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

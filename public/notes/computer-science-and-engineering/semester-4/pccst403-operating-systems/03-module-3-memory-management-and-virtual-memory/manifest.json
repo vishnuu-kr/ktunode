@@ -1,0 +1,36 @@
+{
+  "course_name": "OPERATING SYSTEMS",
+  "course_code": "PCCST403",
+  "module_number": 3,
+  "module_title": "Memory Management and Virtual Memory",
+  "topics_generated": [
+    {
+      "title": "Memory Management: Logical vs Physical address spaces, Swapping, Contiguous memory allocation (First-fit, Best-fit, Worst-fit), Paging, and Segmentation",
+      "slug": "memory-management-logical-vs-physical-address-spaces-swapping-contiguous-memory-allocation-first",
+      "path": "memory-management-logical-vs-physical-address-spaces-swapping-contiguous-memory-allocation-first/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Advanced Paging: Page table structures, Translation Lookaside Buffers (TLB), Methods for reducing page table size",
+      "slug": "advanced-paging-page-table-structures-translation-lookaside-buffers-tlb-methods-for-reducing-page",
+      "path": "advanced-paging-page-table-structures-translation-lookaside-buffers-tlb-methods-for-reducing-page/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Virtual Memory: Demand Paging, Page fault execution cycles, Performance analysis of demand paging",
+      "slug": "virtual-memory-demand-paging-page-fault-execution-cycles-performance-analysis-of-demand-paging",
+      "path": "virtual-memory-demand-paging-page-fault-execution-cycles-performance-analysis-of-demand-paging/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Page Replacement Algorithms: First-In First-Out (FIFO), Optimal (OPT), Least Recently Used (LRU)",
+      "slug": "page-replacement-algorithms-first-in-first-out-fifo-optimal-opt-least-recently-used-lru",
+      "path": "page-replacement-algorithms-first-in-first-out-fifo-optimal-opt-least-recently-used-lru/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

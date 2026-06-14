@@ -1,0 +1,29 @@
+{
+  "course_name": "SOFTWARE ENGINEERING",
+  "course_code": "PECST411",
+  "module_number": 1,
+  "module_title": "Software Process Models",
+  "topics_generated": [
+    {
+      "title": "Software engineering paradigm, life cycle models: Waterfall, Incremental, Evolutionary models",
+      "slug": "software-engineering-paradigm-life-cycle-models-waterfall-incremental-evolutionary-models",
+      "path": "software-engineering-paradigm-life-cycle-models-waterfall-incremental-evolutionary-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Agile software development: Scrum frameworks, sprint execution pipelines",
+      "slug": "agile-software-development-scrum-frameworks-sprint-execution-pipelines",
+      "path": "agile-software-development-scrum-frameworks-sprint-execution-pipelines/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Requirements engineering: Requirements elicitation, analysis, documentation (SRS framework)",
+      "slug": "requirements-engineering-requirements-elicitation-analysis-documentation-srs-framework",
+      "path": "requirements-engineering-requirements-elicitation-analysis-documentation-srs-framework/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ]
+}

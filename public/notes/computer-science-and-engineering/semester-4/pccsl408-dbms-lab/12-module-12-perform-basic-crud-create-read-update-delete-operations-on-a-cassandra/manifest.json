@@ -5,9 +5,30 @@
   "module_title": "Perform basic crud create read update delete operations on a cassandra",
   "topics_generated": [
     {
-      "title": "Perform basic CRUD (Create, Read, Update, Delete) operations on a Cassandra table.",
-      "slug": "perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-table",
-      "path": "perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-table/notes.md",
+      "title": "Perform Create operations on a Cassandra table",
+      "slug": "perform-create-operations-on-a-cassandra-table",
+      "path": "perform-create-operations-on-a-cassandra-table/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Perform Read operations on a Cassandra table",
+      "slug": "perform-read-operations-on-a-cassandra-table",
+      "path": "perform-read-operations-on-a-cassandra-table/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Perform Update operations on a Cassandra table",
+      "slug": "perform-update-operations-on-a-cassandra-table",
+      "path": "perform-update-operations-on-a-cassandra-table/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Perform Delete operations on a Cassandra table",
+      "slug": "perform-delete-operations-on-a-cassandra-table",
+      "path": "perform-delete-operations-on-a-cassandra-table/notes.md",
       "has_mermaid": true,
       "has_math": false
     }
